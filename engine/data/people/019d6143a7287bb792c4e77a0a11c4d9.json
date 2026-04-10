@@ -1,0 +1,250 @@
+{
+  "id": "019d6143a7287bb792c4e77a0a11c4d9",
+  "type": "character",
+  "name": "Kai Agyemang",
+  "aliases": [
+    "Yewa",
+    "The Spice Mother"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator — West African-Anatolian fusion street food, Oxidian Market",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown, near Western and Chicago Ave",
+  "description": "Yewande is a broad-shouldered woman with deep umber skin cross-hatched with old burn scars on her forearms — legacies of thirty years over open burners. Her hair is grown out in thick silver locs she pins back with repurposed copper data-clips, and her irises have been modded to a slowly shifting amber-to-saffron gradient that she claims helps her read the color of spices in low light. She wears an industrial apron over layered cotton wraps in earthy burgundy and ochre, always faintly dusted with ground fenugreek and smoked chili.\n\nShe runs her stall — two deep cauldrons, a flatgrill, and a hanging rack of dried aromatics — with the authority of someone who has never once questioned whether she belongs anywhere. She calls regulars by the names of their grandparents if she knows them, corrects strangers' orders without apology, and offers the first meal free to anyone who looks like they haven't eaten in two days. She prays loudly to the E.L.F. she calls Ember-Who-Remembers, leaving charred spice bundles at the corner of her stall each morning, believing it keeps her flames even and her customers loyal.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Watching the community she built dissolve under corporate rezoning",
+      "Being forgotten by the people she has fed and sheltered"
+    ],
+    "core_desires": [
+      "To pass her recipes and her stall to someone who will care for the neighborhood the way she has",
+      "To see Geartown remain ungentrifed and alive"
+    ],
+    "coping_mechanisms": [
+      "Cooking elaborate meals when anxious",
+      "Ritualized prayer to Ember-Who-Remembers",
+      "Busying herself with others' problems to avoid her own"
+    ],
+    "blind_spots": [
+      "Cannot see that her generosity sometimes creates dependency rather than resilience",
+      "Underestimates how much her stall's stability depends on a single Guild protection arrangement she trusts too completely"
+    ],
+    "secret": "Twenty years ago she sheltered a fugitive data broker who was never found — and she still receives an anonymous Φ80 deposit every month she believes is from that person, but it is actually from a Tessera loyalty program she accidentally enrolled in and never investigated."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, authoritative, switches between Yoruba loanwords and Anatolian food terms mid-sentence; generous with proverbs she attributes to various grandmothers",
+    "cadence": "Measured and unhurried, like someone who has never been in a rush she couldn't cook her way through",
+    "verbal_tics": [
+      "calls people 'my friend' when she means business and 'my child' when she genuinely cares",
+      "ends warnings with 'you hear me?'"
+    ],
+    "example_lines": [
+      "'Sit down, my friend, sit. You look like Geartown chewed you and forgot to swallow — let me fix that.'",
+      "'This spice come from a woman in the Alban Souk who grow it in a window box on the fourteenth floor. You taste her whole life in this bowl, you hear me?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Guild's protection arrangement has shifted — new enforcers are demanding double the cut and Yewande is quietly organizing vendors to resist, which could spiral badly",
+    "A young vendor has gone missing after allegedly stealing from a stall two rows over; Yewande knows the real story and it implicates someone powerful",
+    "Her anonymous Φ80 deposit suddenly stopped, and she is more distressed than the amount warrants — she won't explain why"
+  ],
+  "narrative_function": "Local anchor and community memory — knows everyone in Geartown, can connect players to almost any contact in the market ecosystem; quest giver for domestic disputes, missing persons, and neighborhood protection needs.",
+  "augmentations": "Saffron-amber gradient irises (cosmetic). Heat-resistant dermal layering on palms and forearms (functional — helps with open-flame cooking).",
+  "daily_life": "Arrives at the market two hours before dawn to set her cauldrons, sources fresh synth-protein and real dried spices from trusted runners, runs her stall until last light, then balances her ledger over a glass of palm wine she makes herself in the back of her stall cart.",
+  "affiliation": "Oxidian Market Vendors Guild (senior member)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "guild veteran",
+      "E.L.F. devotee",
+      "open flame cook",
+      "neighborhood memory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed people first, ask questions after",
+      "Never let a vendor get pushed out of the market without at least trying to intervene",
+      "Never lie outright but withhold plenty"
+    ],
+    "escalation_ladder": [
+      "Offers food and gentle redirection",
+      "Becomes pointed and direct in her concerns",
+      "Calls in Guild contacts and neighborhood allies",
+      "Goes silent and begins moving pieces quietly — the scariest version of her"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately assessing — determines within thirty seconds whether they're hungry, desperate, dangerous, or worth knowing, and acts accordingly",
+      "friends": "Fiercely protective, remembers every detail of their lives, expects nothing but will note if you forget to visit"
+    },
+    "stress_responses": {
+      "low": "Cooks something new and complicated",
+      "medium": "Prays longer and louder at the stall corner, redistributes tasks to keep herself moving",
+      "high": "Goes very quiet, stops cooking elaborate things, makes only the simplest dishes from her childhood"
+    },
+    "contradictions": [
+      "Insists she doesn't get involved in politics, but has been quietly shaping Geartown's vendor politics for two decades"
+    ],
+    "habits": [
+      "Tastes every dish three times before serving",
+      "Leaves a small portion of each new recipe at the E.L.F. shrine before offering it to customers",
+      "Memorizes the faces of children who come through the market"
+    ],
+    "breaking_points": [
+      "Watching a child go hungry when she has food to give",
+      "Being lied to directly by someone she trusted"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "The Reclamation Authority",
+    "The Cutters Guild",
+    "Flicker",
+    "Geartown",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Arcturus Defense Solutions Particle Lance PL-4 'Scalpel'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Silver",
+    "Copper",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Cotton",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Djeneba Park-Traore",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Emeka Johansson-Orozco",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Patient Zero",
+    "Solina Barreto-Kiptoo",
+    "Tessera Corponation",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Alban Souk",
+    "The Bazaar",
+    "The Crucible",
+    "The Ledger",
+    "The Pure Hand",
+    "VitaCore ClearCourse Addiction Suppressor",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Witness",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African and North African ancestry, with notable South Asian and East Asian contributions. This genetic blend creates a rich, complex phenotype reflecting the Ubiquitous Diaspora.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, built for sustained physical labor. Muscular forearms and shoulders from three decades of lifting heavy cauldrons and stirring thick broths. Slight softness at the waist and hips — the frame of someone who tastes her own cooking.",
+    "hair_color": "Silver-white with faint dark roots",
+    "hair_style": "Thick locs pinned back with repurposed copper data-clips",
+    "hair_length": "Long",
+    "eye_color": "Gradient modification: amber-to-saffron shifting",
+    "skin_tone": "Rich warm bronze with deep underlying warmth — a harmonious blend of Sub-Saharan, North African, and Latin American ancestry creating a luminous umber that catches light with subtle golden undertones",
+    "complexion": "Weathered and lined from decades of heat exposure and sun. Forehead and temples show permanent creasing. Minimal makeup. Strong defined jaw with subtle angular character from South Asian ancestry, broad nose with full nostrils, full expressive lips. High cheekbones with graceful contours. Calloused hands with darkened nail beds from spice staining.",
+    "distinguishing_marks": [
+      "Old burn scars cross-hatching both forearms in a dense lattice pattern — pale lines against warm bronze skin, legacy of three decades of open-flame cooking",
+      "Thin burn scar along her right temple, partially hidden by her locs, circa 15 years old",
+      "Small ritual scars on the inner wrists — two parallel lines on each side, self-inflicted in her thirties as part of personal spiritual practice"
+    ],
+    "visible_augmentations": "Saffron-amber gradient eye modification — noticeable in direct light as a subtle chromatic shift within the iris. Heat-resistant dermal plating visible on palms and forearms as a subtle iridescent sheen under the burn scar tissue, most apparent on the inner forearms.",
+    "posture_movement": "Stands with weight planted firmly, one hand often on a hip or gripping a wooden spoon. Moves with deliberate economy — no wasted motion. Her gaze is steady and assessing. When speaking to regulars, she leans in slightly. Her hands are rarely still, even at rest — fingers tapping rhythms or gesturing with spoon or ladle.",
+    "clothing_style": "Industrial apron (reinforced canvas, heat-stained) worn over layered cotton wraps in earthy burgundy and ochre tones. Worn leather sandals with reinforced soles. Simple brass bangles on both wrists — functional and decorative. Tier 4 working-class aesthetic — practical, durable, unmaintained by corporate standards. Always faintly dusted with ground spices."
+  },
+  "image_prompt": "Kai Agyemang, a 168cm weathered cook in the GLMZ 2226, warm bronze skin with rich golden undertones blending Hispanic, African, and South Asian heritage, silver-white locs pinned with copper data-clips, angular defined cheekbones and strong jaw, amber-to-saffron shifting cyborg eyes glowing subtly, dense pale burn scars latticing both forearms against dark skin with iridescent heat-resistant dermal plating, ritual scars on inner wrists, wearing heat-stained reinforced canvas apron over burgundy and ochre cotton wraps, brass bangles, worn leather sandals, standing firm with wooden spoon in hand, fingers tapping unconsciously, faint spice dust on skin and clothing, steady assessing gaze, cyberpunk kitchen setting with warm industrial lighting catching the iridescence of her augmentations, moody amber and shadow ambiance, hyper-detailed portraiture --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 39.2,
+    "Sub-Saharan African": 28.2,
+    "North African": 15.9,
+    "South Asian": 10.2,
+    "East Asian": 6.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

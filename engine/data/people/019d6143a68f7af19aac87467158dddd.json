@@ -1,0 +1,272 @@
+{
+  "id": "019d6143a68f7af19aac87467158dddd",
+  "type": "character",
+  "name": "Esteban Echeverría",
+  "aliases": [
+    "Ovi",
+    "The Calibrator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibration specialist at Aurochs Medical Complex",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Tier 3 Neuro-Calibration Suite, Bay 7, near Milwaukee and Damen",
+  "description": "Ovídio is slight and precise, the kind of person who takes up exactly as much space as needed and not a centimeter more. He has warm brown skin and keeps his hair in neat, shoulder-length locs that he ties back during procedures. His eyes are natural — he's deeply principled about not modifying anything that could affect his calibration sensitivity — but he wears a pair of Tessera-brand neural interface gloves that translate micromotor input into the diagnostic rigs he uses daily. He has the quiet intensity of someone who genuinely finds the human brain beautiful, which is either reassuring or unsettling depending on how he says it.\n\nHe is methodical to the point that colleagues sometimes mistake it for coldness, but patients who return for follow-up appointments often describe him as the only doctor who actually listened. He is deeply interested in each patient's subjective experience of their augmentations — how they dream differently, whether music sounds wrong, whether their sense of time has shifted — and takes notes in a personal journal that he keeps entirely separate from his Aurochs medical records. He prays regularly to a data shrine near his workstation dedicated to an E.L.F. he calls the Quiet Current, which he believes smooths the feedback loops of difficult calibrations.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Making a calibration error that permanently damages a patient's cognition",
+      "Being exposed as keeping unauthorized records"
+    ],
+    "core_desires": [
+      "To understand consciousness well enough to explain what he experiences during deep calibration sessions",
+      "To publish his patient experience research without losing his license"
+    ],
+    "coping_mechanisms": [
+      "Ritualized pre-session prayer to the Quiet Current",
+      "Journaling in precise, clinical language as emotional distance"
+    ],
+    "blind_spots": [
+      "He is more invested in the data from his patients than the patients themselves, which he has never admitted",
+      "He underestimates how much Aurochs monitors its staff"
+    ],
+    "secret": "During three separate calibration sessions over the past year, he has experienced what he can only describe as briefly inhabiting the patient's neural state — not their thoughts, but their emotional texture. He has told no one and is terrified this means his own neural architecture is shifting."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, technical, occasionally over-explains phenomenological concepts to patients who didn't ask",
+    "cadence": "Even and unhurried, with thoughtful pauses — rarely interrupts",
+    "verbal_tics": [
+      "'Subjectively speaking—'",
+      "'Can you describe what that feels like, exactly?'",
+      "Repeating a patient's last phrase back to them quietly"
+    ],
+    "example_lines": [
+      "'The calibration itself takes eleven minutes. What I need from you is the next ten — tell me everything that seems strange.'",
+      "'Subjectively speaking, the Quiet Current is very active today. That's either a good sign or a complicated one.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has noticed a pattern across six patients in the last month — calibration anomalies consistent with external interference, not hardware failure — and doesn't know who to tell",
+    "His private journal has been accessed by someone, and a page describing the neural-inhabiting experiences is missing"
+  ],
+  "narrative_function": "Information source about neural augmentation black market and calibration errors; can identify what kind of chrome someone is running from behavioral observation; entry point into Aurochs institutional drama",
+  "augmentations": "Tessera HapticDrive neural interface gloves (professional-grade, non-permanent); cosmetic: faint bioluminescent tracery along his left forearm — a mod he got at nineteen and has never had removed because it reminds him of neural pathway maps",
+  "daily_life": "He arrives at Aurochs forty minutes early to review patient files and pray at the data shrine, runs six to eight calibration sessions daily, and spends evenings transcribing patient experience notes into his private journal.",
+  "affiliation": "Aurochs Medical Complex (Tier 3 staff); informal research interest connected to independent neural-mapping collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neural calibrator",
+      "covert researcher",
+      "E.L.F. devotee",
+      "careful listener",
+      "secret keeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never proceed with calibration if the patient seems coerced or unclear on consent",
+      "Keep the journal separate from all Aurochs systems, always",
+      "Do not discuss the inhabiting experiences with anyone inside the medical system"
+    ],
+    "escalation_ladder": [
+      "Gentle, repeated clarifying questions",
+      "Formal patient advocacy through Aurochs channels",
+      "Quietly referring patients to outside resources and documenting nothing"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm but observational — asks more questions than he answers",
+      "friends": "Opens up gradually, tends to share intellectual fascinations rather than personal history"
+    },
+    "stress_responses": {
+      "low": "Becomes even more methodical, slows his pace",
+      "medium": "Retreats into clinical language even in personal conversations",
+      "high": "Goes completely silent, requests time alone, writes in the journal"
+    },
+    "contradictions": [
+      "Deeply values patient autonomy but is keeping records about them they don't know exist"
+    ],
+    "habits": [
+      "Touches the bioluminescent tracery on his forearm when thinking",
+      "Leaves a compressed data packet of birdsong recordings at the Quiet Current shrine each morning",
+      "Reads patient files twice — once professionally, once looking for experiential detail"
+    ],
+    "breaking_points": [
+      "Discovering that a calibration error he made caused lasting harm",
+      "Someone threatening to expose his journals to Aurochs administration"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable, slightly faded from original brightness",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Bridgepoint to parents who emigrated from separate corporate relocation programs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed Aurochs Medical Complex neural technician certification",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Tier 3 specialist; began keeping private patient experience journal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First neural-inhabiting experience during calibration; began recording in a separate, encrypted section of the journal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Stalker",
+    "The Milwaukee Core",
+    "Ambrosia Fekete-Waiyaki",
+    "Breck Tannen",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Oumarou Svec-Ranginui",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American with significant Southeast Asian ancestry and minor Northern European admixture. The combination creates distinctive features: warm medium-to-golden brown skin tone with subtle Southeast Asian eye shape characteristics, Latin American facial bone structure with higher cheekbones, and a complexion reflecting the blend of these ancestries.",
+    "height_cm": 172,
+    "weight_kg": 63,
+    "build": "Lean and economical, with the precise musculature of someone who moves deliberately. Narrow shoulders, long fingers. No wasted mass.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Shoulder-length locs, typically bound back with a simple fabric tie during work",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Warm golden-brown with Southeast Asian depth, reflecting the blend of Hispanic/Latin American and Southeast Asian ancestry",
+    "complexion": "Clear, well-maintained skin with minimal facial hair. Moderate-width face with prominent cheekbones characteristic of Hispanic/Latin American heritage, subtle epicanthal fold variation reflecting Southeast Asian ancestry, and a contemplative expression. Grooming is meticulous but understated.",
+    "distinguishing_marks": [
+      "Faint bioluminescent tracery along the left forearm in delicate branching patterns resembling neural pathways, soft blue-green glow visible in dim light, acquired at age nineteen and maintained",
+      "Fine surgical scars at both temples from early neural interface calibration work, barely visible unless examined closely"
+    ],
+    "visible_augmentations": "Tessera-brand HapticDrive neural interface gloves — sleek black synthetic leather with silver contact nodes along palms and fingers, worn during work hours. The gloves have a subtle geometric pattern and sit precisely at the wrist with minimal spillover. The bioluminescent forearm tracery glows softly in low-light environments.",
+    "posture_movement": "Moves with economical precision, never gesturing broadly. Stands still for extended periods without fidgeting. Hands are often in a state of readiness or focused intentionality. Eye contact is steady and deliberate. Overall bearing suggests someone comfortable with silence and meticulous work.",
+    "clothing_style": "Tier 3 professional-practical: fitted charcoal or navy tunic-style shirts with moisture-wicking synthetic fabric, clean and pressed. Slim dark trousers or specialized work pants with reinforced pockets for diagnostic tools. Comfortable non-marking shoes suitable for standing all day. A worn leather journal always visible in his left breast pocket or nearby. No visible corporate branding beyond the required Aurochs Medical Complex ID badge. Occasionally wears a simple woven prayer bracelet on his right wrist."
+  },
+  "image_prompt": "Esteban Echeverría, a 172cm lean-built man with warm golden-brown skin reflecting Hispanic/Latin American and Southeast Asian heritage, standing in a medical facility corridor in 2226. Dark brown shoulder-length locs bound back with a fabric tie. Deep brown eyes with steady, contemplative expression. Fine-featured face with prominent cheekbones. Wearing a fitted charcoal moisture-wicking tunic and slim dark work pants. Black Tessera HapticDrive neural interface gloves with silver nodes visible on palms. Soft blue-green bioluminescent branching tracery glowing faintly along left forearm in dim ambient light. Worn leather journal tucked in left breast pocket. Prayer bracelet on right wrist. Precise posture, economical movement, aura of meticulous professionalism. Futuristic medical facility lighting, cool cyberpunk aesthetic, professional composure --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 63.1,
+    "Southeast Asian": 32.0,
+    "Northern European": 4.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

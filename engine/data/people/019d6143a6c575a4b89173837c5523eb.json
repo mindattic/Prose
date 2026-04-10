@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a6c575a4b89173837c5523eb",
+  "type": "character",
+  "name": "Rafael Haraldsen",
+  "aliases": [
+    "Sao",
+    "Saoirse the Terrible (self-applied, ironic)"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Retired secondary school teacher, now volunteer tutor and reluctant community council chair",
+  "age": 67,
+  "status": "active",
+  "location": "Norwood Quiet — the community center on the third floor of the Meridian Commons building, and their own apartment two blocks north, near North Ave and Milwaukee",
+  "description": "Saoirse Gwamba-Eriksdóttir has the posture of someone who spent three decades making themselves large enough to fill a classroom, and they have never lost it despite retirement. They are lean and angular, with the golden-brown skin of their Malawian and Icelandic inheritance, sharp cheekbones, and close-cropped hair they dye a warm amber because they have earned the right to do whatever they like with their hair. Their eyes are dark and quick-moving, always tracking who is paying attention and who has gone somewhere else in their head. They have bioluminescent geneware — a soft teal glow in the skin along their jawline and collarbones — which in their classroom days had the practical benefit of making them extremely visible when the lights went out during power fluctuations, and which in retirement they simply enjoy.\n\nThey are the kind of teacher who is still teaching whether they are in a classroom or not, and they are constitutionally incapable of watching someone struggle with a problem they could help solve. This makes them exhausting and irreplaceable in equal measure. They took on the Norwood Quiet Community Council chair position because no one else would and have been trying to resign for two years. They have opinions about pedagogy, about corponation educational sponsorship programs, about how children are being failed by the system, and they will share all of these opinions clearly and with supporting examples.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the educational system is broken in ways that cannot be fixed by individual effort, and that they have spent their life applying individual effort to an institutional problem",
+      "Becoming irrelevant and not knowing it"
+    ],
+    "core_desires": [
+      "To see at least one of their former students do something that proves the work mattered",
+      "To actually successfully resign from the Council and have a quiet afternoon"
+    ],
+    "coping_mechanisms": [
+      "Turning anxiety into action — if they are worried, they organize something",
+      "Self-deprecating humor as a pressure valve"
+    ],
+    "blind_spots": [
+      "They set standards for themselves that they would consider cruelly high if they saw a student setting them",
+      "They are so focused on systemic failures that they sometimes miss the very immediate emotional needs of the individual in front of them"
+    ],
+    "secret": "Three years before they retired, a Sterling-Nakamura educational sponsorship representative offered them a significant sum to steer academically strong students toward Sterling-Nakamura scholarship pipelines — pipelines they knew functioned as early-stage labor capture programs. They refused publicly and loudly and the representative withdrew. But they did not report it, because the school needed a new ventilation system and Sterling-Nakamura was on the board, and they have never been entirely sure they made the right call. Two students who went through a similar pipeline at a different school are now trapped in fifteen-year corporate indenturement contracts."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clear and structured; Chichewa and Old Norse words appear in emotional moments; uses classroom vocabulary by habit ('Let me put it this way,' 'Does that track?')",
+    "cadence": "Direct and well-organized, with a slight tendency to over-explain — the teacher's habit of checking for comprehension",
+    "verbal_tics": [
+      "'Does that track?'",
+      "'Let me put it this way—'",
+      "Pointing with the whole hand rather than a finger, a professional habit"
+    ],
+    "example_lines": [
+      "'The Municipal Education Authority has been underfunding Norwood Quiet's allocation for six years, which — does that track? Six years. I have the figures. I always have the figures.'",
+      "'I am not a community hero. I am someone who cannot watch things go badly without doing something about it, which is frankly a design flaw.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Sterling-Nakamura educational outreach team has arrived in Norwood Quiet with a scholarship program that looks identical to the one Saoirse refused to participate in three years ago — and this time there are parents who desperately want to believe it is legitimate",
+    "One of their adult literacy students has disclosed something during a tutoring session that suggests serious danger in their household, and Saoirse must navigate reporting systems that are slow and unsympathetic"
+  ],
+  "narrative_function": "Community council access point and advocate; educational system information source; can identify children or young people in distress within Norwood Quiet; quest giver for community-level problems that need someone who cares and is competent; social conscience figure",
+  "augmentations": "Bioluminescent geneware (teal, jawline and collarbones); voice amplification implant (originally installed for classroom use, still functional); mild cognitive support mesh for working memory (installed at 60, a practical retirement gift to themselves)",
+  "daily_life": "Three mornings a week they run a free literacy and numeracy group for adults at the community center; the other mornings they handle council correspondence and argue with municipal administrators over vidlink; afternoons are theoretically their own but rarely are.",
+  "affiliation": "Norwood Quiet Community Council (chair, involuntarily continuing); retired from GLMZ Municipal Education Authority (28 years); informal partnership with Washburn Commons learning center",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": 4,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "educator",
+      "community organizer",
+      "bioluminescent",
+      "reluctant leader",
+      "systemic thinker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If you can fix it, fix it; if you can't fix it, document it and make it someone else's problem in the most inconvenient way possible",
+      "Do not let an injustice slide because it would be easier — that's how injustices compound",
+      "Give people the information they need to make their own decisions"
+    ],
+    "escalation_ladder": [
+      "Clear explanation of the problem and proposed solution",
+      "Formal written complaint with documentation",
+      "Community meeting and public pressure",
+      "Council motion and media contact (GLMZ civil broadcast)",
+      "Personal acts of spectacular administrative inconvenience"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Brisk and assessing; warms up quickly if they're curious and engaged; writes off no one permanently",
+      "friends": "Genuinely funny and much more relaxed; will make tea and actually listen without planning their response"
+    },
+    "stress_responses": {
+      "low": "Makes a list",
+      "medium": "Calls an emergency council session and runs it with excessive efficiency",
+      "high": "Goes home, turns the bioluminescence up to full, sits in the dark with it, and talks to the apartment's E.L.F. about what they should have done differently"
+    },
+    "contradictions": [
+      "Champions systemic transparency while carrying a quiet ethical failure they have never disclosed"
+    ],
+    "habits": [
+      "Marks papers even in retirement — they take notes on everything in the same red ink they used for thirty years",
+      "Maintains a physical pin-board of community issues in their apartment that their friends call 'the wall of concern'"
+    ],
+    "breaking_points": [
+      "Watching someone exploit a child's or family's vulnerability for corporate benefit; being told that something cannot be changed"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Teacher": 0.7,
+    "Nurturer": 0.7,
+    "Idealist": 0.7,
+    "Dreamer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Norwood Quiet",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Compass Rose",
+    "Nightlight",
+    "The Milwaukee Core",
+    "Acoustic Marrow Shear Rifle AMSR-6 'Tutor'",
+    "Alper Lebedev-Tutu",
+    "GLMZ",
+    "Idris Forsberg-Quaye",
+    "Iowan Behemoth — 'Palisade'",
+    "Kang Athletics KA-900 'Sensei'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "MERIDIAN",
+    "Noir Dining",
+    "Osvaldo Mensah-Kovalenko",
+    "Solveig Tambadou-Kereselidze",
+    "The Open Syllabus",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Washburn Commons"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Cosmopolitan blend reflecting 42% Hispanic/Latin American, 31% Northern European, 22% Sub-Saharan African, and 4% North African ancestry. Features a striking combination of warm Latin complexion with Northern European bone structure and Sub-Saharan African facial proportions, creating a uniquely nuanced appearance.",
+    "height_cm": 173,
+    "weight_kg": 61,
+    "build": "Lean and angular with a commanding presence; decades of classroom posture have made them naturally expansive despite their thin frame. Minimal muscle definition but wire-taut core and shoulders squared from standing.",
+    "hair_color": "Amber-dyed (natural color darkened to gray-brown underneath)",
+    "hair_style": "Close-cropped, neat, deliberately maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, perpetually alert",
+    "skin_tone": "Warm medium-brown complexion with golden undertones, reflecting the rich blend of Latin American warmth, Sub-Saharan depth, and Northern European undertones — neither light nor dark but a harmonious mid-range that catches light distinctly.",
+    "complexion": "Prominent cheekbones with gentle width across the face reflecting Sub-Saharan ancestry; fine, defined facial structure with balanced proportions. Minimal wrinkling despite age — skin well-maintained. Dark circles under eyes suggest habit of late-night reading and correspondence. Expression naturally skeptical and observant.",
+    "distinguishing_marks": [
+      "Soft bioluminescent teal glow running along jawline from ear to chin, subtle in daylight but luminous in low-light conditions",
+      "Matching teal bioluminescent line tracing collarbones and upper sternum — visible when wearing open-necked clothing",
+      "Small circular scar on left temple, approximately 1cm diameter, consistent with implant insertion point (voice amplification implant installed ~40 years ago)"
+    ],
+    "visible_augmentations": "Bioluminescent geneware traces (teal, jaw and collarbones — glows softly in darkness). Voice amplification implant scar barely visible at left temple. Cognitive support mesh is subcutaneous and invisible. Minor tech accessibility aural implant behind left ear (for municipal vidlink accessibility).",
+    "posture_movement": "Stands and walks with deliberate verticality — shoulders back, chin slightly elevated, as if perpetually addressing a room. Moves with economical precision. Hands gesture while speaking, fingers quick and expressive. Makes direct eye contact habitually. Sits forward on chairs rather than back. Movement patterns suggest someone still instinctively 'on stage' despite retirement.",
+    "clothing_style": "Tier 3-4 working-professional aesthetic, carried into retirement with no irony. Favors well-fitted, durable clothing: linen and cotton blends, earth and warm tones (rust, cream, muted gold). Typically wears: tailored button-up shirts (often with sleeves rolled to show jawline augmentation), dark practical trousers or midi skirts, sensible boots or slip-ons with good support. Cardigan or structured jacket for council meetings. Minimal jewelry — a simple watch with readable face, one silver ring. No corporate logos or status wear. Reading glasses on a thin cord. Crossbody bag with worn canvas fabric, stuffed with papers and teaching materials."
+  },
+  "image_prompt": "Professional-aged Rafael Haraldsen, 173cm lean frame with warm medium-brown skin and golden undertones, reflecting Latin American, Northern European, and African heritage blend. Close-cropped amber-dyed hair with gray-brown roots, sharp cheekbones, alert dark brown eyes with subtle dark circles. Subtle teal bioluminescent glow tracing jawline and collarbones (visible in soft light). Wearing rolled-sleeve tailored rust-colored linen shirt showing jawline glow, dark practical trousers, sensible boots. Standing with deliberate upright posture, shoulders squared, chin slightly elevated. Faint 1cm circular scar at left temple from implant. Crossbody canvas bag. Reading glasses on cord. Expression observant and skeptical. Cyberpunk 2226 Great Lakes Metropolitan Zone interior, warm ambient lighting highlighting skin tone and subtle bioluminescence, neo-professional aesthetic, scholarly atmosphere, age 60s with preserved vitality. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 42.3,
+    "Northern European": 31.2,
+    "Sub-Saharan African": 22.1,
+    "North African": 4.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

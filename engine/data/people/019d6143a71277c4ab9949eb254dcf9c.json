@@ -1,0 +1,336 @@
+{
+  "id": "019d6143a71277c4ab9949eb254dcf9c",
+  "type": "character",
+  "name": "Flux Taufa",
+  "aliases": [
+    "Requiem",
+    "The Ghost"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Prototype theft and corporate tech acquisition — tech retriever",
+  "age": 28,
+  "status": "active",
+  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Wacker and State",
+  "description": "Vesna Bergstrom-Konate is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nVesna Bergstrom-Konate has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.42,
+      "ideal": 0.76,
+      "id": 0.2,
+      "shadow": 0.99,
+      "mask": 0.12,
+      "ghost": 0.69
+    },
+    "core_fears": [
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Losing control of their own body to a hacker or malfunctioning cyberware"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Justice — the corporate kind, where the punishment fits the profit margin"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Exercises compulsively — the body must be ready, always",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Vesna Bergstrom-Konate sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
+    ],
+    "example_lines": [
+      "\"Corporate R&D security is built to stop amateurs. I'm a professional.\"",
+      "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
+      "\"I steal things that haven't been invented yet. The future is always in transit.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Vesna Bergstrom-Konate is offered a contract that would clear all their debts — the target is someone they respect",
+    "A corporate black site Vesna Bergstrom-Konate once infiltrated is being reopened, and the people inside know his face",
+    "Vesna Bergstrom-Konate intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Vesna Bergstrom-Konate represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 7
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 10
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.2,
+      "caution": 0.99,
+      "loyalty": 0.92,
+      "greed": 0.85,
+      "empathy": 0.29
+    },
+    "drives": [
+      "survival",
+      "money",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 6,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "tech retriever",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Being publicly exposed — name, face, address, all of it blown",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "related_entities": [
+    "Pale Harbor Anchorage",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Carrion Defense Works Field Surgical Kit FSK-6",
+    "Fanta Popov-Adjei",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "MERIDIAN",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Mika Sorel",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Spire Light on Still Water",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "South Asian and Pacific Islander with Central Asian admixture. The genetic combination creates warm, rich skin tones with subtle golden and bronze undertones — the South Asian ancestry dominates his coloring while Pacific Islander heritage adds depth and warmth. Central Asian ancestry contributes to his angular facial structure.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with corded muscle definition — the physique of someone whose body is a maintained tool rather than incidental cargo. His frame is all efficiency, no excess. Move-by-wire augmentation has eliminated the natural softness of youth; every muscle group maintains tonal readiness even at rest.",
+    "hair_color": "Dark brown with early silver threading at the temples",
+    "hair_style": "Short, practical, minimal maintenance — swept back from the face",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with alert, direct intensity",
+    "skin_tone": "Warm bronze-gold — South Asian foundation with Pacific Islander depth, creating rich undertones that glow with subtle luminescence under neon. The coloring suggests extended heritage from warm climates, with the kind of pigmentation that photographs beautifully in low light.",
+    "complexion": "Angular face with high cheekbones and defined jaw shaped by Central Asian ancestry. Skin is clear but shows the wear of nocturnal living — slight darkness under the eyes that no amount of sleep fully erases. Grooming is meticulous; this is someone who maintains appearance as operational discipline. The warm undertones of his skin create natural definition that catches light in runner environments.",
+    "distinguishing_marks": [
+      "Surgical scar at the base of skull, roughly 2cm, partially hidden by hair — the neural interface jack insertion point",
+      "Thin white scar running along the inside of his left forearm, approximately 8cm, poorly healed — evidence of old trauma or rough field surgery",
+      "Faint tattoo on right inner wrist: a circuit pattern in gray ink, barely visible unless light hits it at an angle"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull is prominently visible — a brushed chrome port the size of a thumbnail, sitting at the C7 vertebra. He makes no effort to conceal it; the jack is part of his professional signature. Move-by-wire system is invisible beneath the skin, but its effects are evident in his unnaturally smooth movements and the predatory precision of his gestures.",
+    "posture_movement": "Stands with minimal wasted position — weight forward on the balls of his feet, ready for quick transition. His movements are economical and controlled, each gesture purposeful. There is a coiled quality to him even at rest, as though the move-by-wire system has encoded constant readiness into muscle memory. He makes eye contact. He doesn't blink as often as baseline humans.",
+    "clothing_style": "Tier 3-4 utilitarian runner aesthetic. Black or dark gray synthetic weave jacket with reinforced panels — not armored, but durable. Understated corporate-adjacent pieces underneath: neutral shirts, fitted but not tailored. Dark pants with cargo pockets. Footwear is serious — matte black smartboots with responsive soles for traction and impact absorption. No visible branding, no flashing chrome accessories. Everything is functional. He dresses like someone who might need to move fast, climb, or fight without warning. Minimal jewelry — only a data-thin bracelet on his left wrist, barely visible unless you're looking for it."
+  },
+  "image_prompt": "Flux Taufa, 178cm tall cyberpunk runner with warm bronze-gold skin tone reflecting South Asian and Pacific Islander ancestry, deep brown alert eyes, dark hair with silver at temples swept back from angular face. Neural chrome interface jack visible at base of skull. Move-by-wire augmentation evident in unnaturally fluid, economical posture — coiled and ready. Wearing black synthetic weave reinforced jacket, dark cargo pants, matte black responsive smartboots. Minimalist utilitarian runner aesthetic. Surgical scar at base of skull partially hidden by hair, white scar on left inner forearm, faint circuit tattoo on right wrist. Standing in neon-lit GLMZ corridors, moody cyberpunk 2226 atmosphere, cool and warm light interplay on bronze skin, focused intense expression, professional operative bearing, cyberpunk aesthetic, cinematic lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 51.2,
+    "Pacific Islander": 39.8,
+    "Central Asian": 9.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

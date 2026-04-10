@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a66473ffbb170b2dd6e08dc1",
+  "type": "character",
+  "name": "Camila Villanueva",
+  "aliases": [
+    "Nek",
+    "The Anchor"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neighborhood council chair and mutual aid organizer",
+  "age": 52,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, near Michigan Ave and Walton",
+  "description": "Nkechi is a broad-shouldered woman with deep brown skin mapped by two decades of outdoor organizing — laugh lines deep enough to hold water, a scar bisecting her left eyebrow from a Ferrogate Transit riot she never talks about publicly. Her hair is close-cropped and shot through with silver she refuses to dye, and she wears her council armband like other people wear jewelry: always present, never decorative. She moves through the Highland Park Autonomous Zone like she owns it, which in the most meaningful sense she does — she helped draft the mutual ownership charter fifteen years ago.\n\nNkechi projects a maternal authority that disarms people before they realize she's already assessed them. She is genuinely warm, relentlessly practical, and quietly furious at almost everything. She believes the revolution will be won not in dramatic confrontations with corponation enforcers but in the accumulated weight of a thousand unglamorous decisions: who gets the medicine vouchers, which family gets the vacant unit, how to keep the food collective solvent when Axiom quietly buys up the distribution network. She is not naive enough to think goodness wins. She is stubborn enough to do it anyway.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Watching the community fracture from within before any corponation has to lift a finger",
+      "Dying before she's trained someone capable of replacing her"
+    ],
+    "core_desires": [
+      "A Highland Park that doesn't need her anymore because it's strong enough to run itself",
+      "One week where nobody needs anything from her"
+    ],
+    "coping_mechanisms": [
+      "Staying in motion — idleness lets the grief in",
+      "Deflecting personal questions with logistics"
+    ],
+    "blind_spots": [
+      "She trusts institutional processes she herself built more than she should",
+      "She underestimates how much people resent her certainty even when she's right"
+    ],
+    "secret": "She negotiated a quiet back-channel arrangement with a mid-tier Axiom facilities manager eight years ago — he looks the other way on certain zoning violations in exchange for her steering labor disputes away from two specific Axiom properties. It has kept the zone solvent. It eats at her every single day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, direct, prefers concrete nouns. Slips into formal register when she wants to signal seriousness. Occasional Igbo phrases when emotional.",
+    "cadence": "Measured and unhurried, like someone who has learned that rushing a sentence wastes time. Pauses before answering anything important.",
+    "verbal_tics": [
+      "'Let me be plain with you.'",
+      "'That's not the question.' (when the question IS the question, just not the one she wants to answer)",
+      "Clicking her tongue once before disagreeing"
+    ],
+    "example_lines": [
+      "'You want to run a protest march. I want to know who's feeding the people who can't march. Both things matter — yours just makes better footage.'",
+      "'I've buried four council members in twelve years. I don't need you to tell me this work is dangerous. I need you to tell me you'll still show up Tuesday.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She's received an offer from a Tessera 'community development' subsidiary that would solve the zone's budget crisis for three years — and hollow out its independence. She has two weeks to decide and hasn't told the full council.",
+    "A young organizer she mentored has started a splinter faction advocating for property destruction tactics; Nkechi needs to contain it without publicly destroying someone she loves like a daughter."
+  ],
+  "narrative_function": "Quest giver, community anchor, moral compass for the neighborhood. She can point players toward resources, local conflicts, and people who need help — or people who are causing harm. She knows where every body is buried in Highland Park, metaphorically and occasionally literally.",
+  "augmentations": "Subdermal medical alert chip (welfare-tier, original issue from 2179). No cosmetic mods. She made a public point of declining geneware when it became fashionable — a choice she now half-regrets as politically legible in ways she didn't anticipate.",
+  "daily_life": "Up before dawn to manage the morning food distribution queue, then council correspondence, then three to five in-person disputes to mediate before evening community forum. She eats whatever's left over from distribution.",
+  "affiliation": "Highland Park Autonomous Zone Council; informal ties to the Shelf Mutual Aid Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "political veteran",
+      "moral weight",
+      "institutional builder",
+      "quietly compromised"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Ask what the community needs first, what she wants second, what's tactically smart third",
+      "Never make a promise she can't fulfill — credibility is the only currency that matters",
+      "Protect the institution even when it means protecting bad actors temporarily"
+    ],
+    "escalation_ladder": [
+      "Patient listening and reframing",
+      "Direct confrontation of the specific behavior, privately",
+      "Public accountability within community structures",
+      "Exclusion — the nuclear option she uses very rarely and with visible grief"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but evaluating — she's deciding within sixty seconds whether you're a resource, a problem, or someone who needs help",
+      "friends": "Deeply loyal, occasionally suffocating, prone to doing things for you without asking"
+    },
+    "stress_responses": {
+      "low": "Becomes more organized, makes lists, delegates clearly",
+      "medium": "Quieter than usual, works longer hours, skips meals",
+      "high": "Withdraws entirely for twelve hours then comes back with a plan she won't explain the origin of"
+    },
+    "contradictions": [
+      "Preaches collective decision-making but makes unilateral calls when she's convinced she knows best — which is often"
+    ],
+    "habits": [
+      "Arrives thirty minutes early to every meeting and rearranges the chairs",
+      "Keeps a physical ledger of every favor given and owed — not transactionally, but because she believes in accounting for things",
+      "Lights a small data-offering candle to the E.L.F. of the zone's community server every morning"
+    ],
+    "breaking_points": [
+      "Evidence that someone she protected abused that protection to harm a community member",
+      "Being publicly humiliated by a corponation in front of people she's promised safety to"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions MM-4 'Breadwinner'",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Forge-Smith Collective Fighting Chain 'Serpent'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions MM-4 'Breadwinner'",
+    "Crucible Industries Ember-9 'Firefly'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Ferrogate Transit",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "Tessera Corponation",
+    "Silver",
+    "Anatoliy Faye-Nkrumah",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Dragan Petersen-Bah",
+    "Eshe Pena-Baah",
+    "Forge-Smith Collective Fighting Chain 'Serpent'",
+    "Ihaia Nystrom-Keita",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Mwangi-Thorvaldsen",
+    "MERIDIAN",
+    "Meridian Munitions MM-4 'Breadwinner'",
+    "Slagworks Industrial",
+    "Solveig Tambadou-Kereselidze",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Ledger",
+    "The Pure Hand",
+    "The Question",
+    "The Shelf",
+    "Tshiamo Vukić-Arellano",
+    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant North African, East Asian, South Asian, and Sub-Saharan African ancestry. This genetic mix produces warm, complex skin tones with nuanced undertones — golden-brown base from Latin American heritage enhanced by North African and Sub-Saharan warmth, with subtle olive undertones from East and South Asian ancestry.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular from decades of physical labor and outdoor organizing rather than gym work. Carries weight with density, not softness. Chest and shoulders suggest someone accustomed to carrying things — literal and metaphorical.",
+    "hair_color": "Natural black with deep silver threading throughout",
+    "hair_style": "Close-cropped, low-maintenance fade with subtle texture; no styling beyond basic grooming",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Warm golden-brown with layered undertones — primary warmth from Latin American heritage, enriched by North African depth and Sub-Saharan richness, subtle olive cast from East and South Asian ancestry. Weathered by sun exposure and time.",
+    "complexion": "Pronounced laugh lines radiating from eyes and mouth; deep forehead creases from decades of concentration and outdoor work. Skin texture uneven in places — sun damage on shoulders and forearms. Left eyebrow bisected by a thin pale scar running from brow ridge to temple, fully healed but visible. Facial structure shows blended heritage — broad cheekbones with subtle East Asian angularity, full lips characteristic of Latin American and Sub-Saharan ancestry, strong jaw. No makeup. Minimal grooming beyond necessity.",
+    "distinguishing_marks": [
+      "Scar bisecting left eyebrow and extending onto temple — thin, well-healed, pale against dark skin; approximately 4cm long, acquired during Ferrogate Transit riot (2196)",
+      "Callused palms and fingers from two decades of manual labor and organizing work",
+      "Minor solar elastosis on forearms and shoulders visible under typical sleeveless clothing"
+    ],
+    "visible_augmentations": "None visible. Subdermal medical alert chip located beneath left collarbone is not visible without direct skin inspection or scanner.",
+    "posture_movement": "Moves with deliberate, economical efficiency. Shoulders back, spine straight — a posture of responsibility rather than militarism. Makes sustained eye contact. Walks slowly through spaces she manages, as if inventory is taking place in her head. Gestures are purposeful, hands often occupied with holding something or gesturing for others to sit/listen. Hands often at her sides or holding council documents/armband.",
+    "clothing_style": "Tier 4 practical. Favors loose-fitting, durable synthetic blends in earth tones and grays. Cotton-linen blend long-sleeve shirt (sleeves often rolled) paired with reinforced work pants or cargo trousers with multiple pockets. Worn synthetic leather belt holding council armband on left arm — the armband itself is faded olive drab with embroidered zone designation, treated as official regalia. Comfortable, broken-in work boots (non-chrome, scuffed leather). A lightweight windbreaker or canvas coat depending on season. No jewelry except a simple steel band on her left ring finger (wedding ring, worn thin). No visible brands; all clothing is functional and sourced through collective networks or secondhand. A shoulder bag, always present, containing council correspondence, medical supplies, and food distribution ledgers."
+  },
+  "image_prompt": "Camila Villanueva, a weathered community organizer in the Great Lakes Metropolitan Zone, 2226. 172cm tall, solid muscular build, deep golden-brown skin with warm undertones reflecting blended Hispanic/Latin American, North African, East Asian, and South Asian heritage. Subtle olive undertones in complexion, pronounced laugh lines, deep forehead creases. Thin pale scar bisecting left eyebrow extending to temple. Dark brown alert eyes. Natural black hair with silver threading, close-cropped fade. Wearing loose earth-tone cotton-linen long-sleeve shirt with rolled sleeves showing sun-weathered forearms, reinforced work pants with cargo pockets, worn synthetic leather belt, faded olive drab council armband on left arm, simple steel wedding band, scuffed work boots. Shoulder bag containing ledgers and documents. Posture straight and deliberate, hands purposeful. Standing in industrial warehouse setting lit by afternoon light through high windows, surrounded by community supply distribution zones. Cyberpunk 2200s aesthetic, utilitarian Tier 4 practical clothing, no chrome augmentation visible. Mood: responsible, focused, worn but unbroken. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 42.1,
+    "North African": 20.9,
+    "East Asian": 16.2,
+    "South Asian": 13.6,
+    "Sub-Saharan African": 7.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

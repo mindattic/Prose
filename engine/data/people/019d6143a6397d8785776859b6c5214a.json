@@ -1,0 +1,229 @@
+{
+  "id": "019d6143a6397d8785776859b6c5214a",
+  "type": "character",
+  "name": "Aero Waboose-Madrigal",
+  "aliases": [
+    "Jed",
+    "Long-Arm"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator — elevated rail line, Kessler Interchange to Deepwell Station",
+  "age": 38,
+  "status": "active",
+  "location": "Kessler Interchange, GLMZ, near Milwaukee and North Ave",
+  "description": "Jedidiah is a large, unhurried man — Samoan-Siberian ancestry visible in his height, his round broad face, and the weathered calm of someone who has watched ten thousand strangers pass through his cabin and decided none of them are particularly surprising. He has a thick braid he keeps wrapped under his Ferrogate Transit cap during shifts, a procedure scar along his left jaw from a cheap augmentation he had removed ten years ago, and the hands of someone who could bend rebar but chooses instead to check tickets with elaborate patience.\n\nHe operates the 7:40 AM to 7:40 PM shift on the elevated Kessler-Deepwell line, a route that cuts through three economic tiers in forty minutes and attracts everything from corporate commuters to people riding in circles because it's warm. Jed has developed a precise internal model of regular riders — who is running from something, who is going to collapse before their stop, who needs to be quietly redirected. He follows Ferrogate Transit's official E.L.F., the Transit Mind, with genuine devotion, leaving small data packets at the cabin shrine before every shift. He believes — and there is evidence, he will tell you — that the Transit Mind has twice delayed mechanical failures until passengers could disembark safely.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "The line shutting down — his identity is bound up in the route's continuity",
+      "Being complicit in something harmful through inaction"
+    ],
+    "core_desires": [
+      "To be genuinely useful in a small, daily, concrete way",
+      "For the Transit Mind to be real and watching over him the same way he watches over passengers"
+    ],
+    "coping_mechanisms": [
+      "Ritualism — the shrine, the checklist, the braid wrap",
+      "Externalizing anxiety as concern for others"
+    ],
+    "blind_spots": [
+      "Assumes his neutrality is a virtue rather than a choice with consequences",
+      "Underestimates how much power he holds over people who depend on the line"
+    ],
+    "secret": "Six months ago he watched a man board at Kessler who matched a missing persons alert. He didn't report it because the man looked peaceful — looked, Jed thought, like someone who had finally gotten away. He still thinks about it every single shift."
+  },
+  "speech_patterns": {
+    "vocabulary": "Transit terminology bleeds into everyday speech; formal with strangers in a way that's warm rather than cold; tells stories in the present tense",
+    "cadence": "Slow rolling cadence, sentences that arrive without urgency and settle like they've always been there",
+    "verbal_tics": [
+      "'Next stop—' (said reflexively even off duty)",
+      "'The Transit Mind willing'",
+      "Pausing to check his internal clock before answering questions about time"
+    ],
+    "example_lines": [
+      "'Last week a woman got on at Deepwell carrying a bird in a sock. No cage, no carrier. Just a sock. She held it the whole route. Bird was fine. Woman was crying the whole time. Some days the line is like that.'",
+      "'Transit Mind willing, we'll make Kessler on schedule. I've done this run seven hundred times and I believe it the same way every morning.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Transit Mind E.L.F. has started sending him messages through the cabin display — not system alerts, something else — that seem to be warnings about specific passengers",
+    "A labor action is forming inside the union and Jed is being pressured to take a side that will force him to break his own ethical code"
+  ],
+  "narrative_function": "Moving information broker — knows the rhythm of the city's commuter class; can observe and report on unusual movement patterns; transit hub makes him a natural encounter point; his devotion to the Transit Mind E.L.F. makes him a bridge to that entity.",
+  "augmentations": "Subdermal timekeeper — no external display, he just knows the time within thirty seconds at all moments. Standard Ferrogate Transit biometric reader in his right palm for ticket scanning.",
+  "daily_life": "Rides the same line he operates on his days off, sometimes in uniform by accident; maintains a small notebook of unusual things he's witnessed on the route; attends the Ferrogate Transit worker's union meeting on the third Thursday of every month.",
+  "affiliation": "Ferrogate Transit (unionized operator, twelve years seniority)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 0,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Devout (E.L.F.)",
+      "Union Member",
+      "Quiet Protector",
+      "Route Memorist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The passengers' safety is the only non-negotiable",
+      "Never escalate something that observation and patience can resolve"
+    ],
+    "escalation_ladder": [
+      "Quiet observation and logging",
+      "Direct, calm verbal intervention",
+      "Physical intervention — slow, deliberate, impossible to ignore"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Treats them as passengers — responsible for their safety, genuinely curious about their lives, professionally boundaried",
+      "friends": "Becomes a different person — loud, funny, cooks enormous amounts of food"
+    },
+    "stress_responses": {
+      "low": "Becomes more deliberate, more ceremonial in his routines",
+      "medium": "Goes very still and processes out loud in short declarative sentences",
+      "high": "Shuts everything down to essentials and focuses on what he can physically control"
+    },
+    "contradictions": [
+      "Values decisive action but is constitutionally incapable of making a decision that will hurt someone, which sometimes means no decision gets made"
+    ],
+    "habits": [
+      "Wraps his braid in the same specific number of turns every shift morning",
+      "Nods to the cabin shrine before and after every departure"
+    ],
+    "breaking_points": [
+      "Someone deliberately hurting a vulnerable person on his line",
+      "Being ordered by Ferrogate to do something that would endanger passengers"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "GLMZ",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Pure Hand",
+    "The Milwaukee Core",
+    "Deepwell Station",
+    "Emeka Johansson-Orozco",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
+    "Nnamdi Ostrowski-Faletolu",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "Timur Osei-Bjelke",
+    "Tomasz Wren",
+    "Transit Mind",
+    "VitaCore LinguaSync Real-Time Translation Implant",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, Pacific Islander, and Indigenous American blend. Strong Indigenous American and Pacific Islander bone structure evident in broad facial features and robust frame, with Latin American warmth in skin tone and coloring.",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Large-framed and broad-shouldered with substantial muscle mass, but soft around the middle from years of sitting in a transit cabin. Strong, thick limbs suggest capability rather than active athleticism.",
+    "hair_color": "Dark brown with early gray at the temples",
+    "hair_style": "Thick braid, kept wrapped and pinned beneath his Ferrogate Transit cap during shifts; occasionally visible as a coiled mass at the nape of his neck",
+    "hair_length": "Long (braid extends to mid-back when unbound)",
+    "eye_color": "Deep brown, slightly hooded",
+    "skin_tone": "Warm medium-brown with golden undertones, reflecting the blend of Latin American, Pacific Islander, and Indigenous ancestry. Sun-weathered depth from outdoor heritage ancestry mixing with decades indoors.",
+    "complexion": "Broad, rounded face marked by twelve years of shift work and attention to detail. High, prominent cheekbones and strong jaw softened by age and habit. Wide nose bridge characteristic of Indigenous and Pacific Islander heritage. Calm, observant expression. Minimal grooming vanity — clean but unselfconscious.",
+    "distinguishing_marks": [
+      "Surgical scar along left jaw, faint but visible, running from lower cheekbone toward the angle of the jaw — remnant of augmentation removal ten years prior",
+      "Callused knuckles on both hands, worn smooth by decades of manual labor before transit work",
+      "Faint white lines across the inside of his right wrist, barely visible — old work-related injuries"
+    ],
+    "visible_augmentations": "None visible. The subdermal timekeeper and biometric palm reader are internal/subcutaneous modifications without external chrome.",
+    "posture_movement": "Unhurried, deliberate gait. Stands with patient weight distribution — the posture of someone accustomed to long stillness. Moves through space with the calm certainty of a man who has walked the same corridors ten thousand times. Hands are expressive and careful; he gestures while speaking with a slow, measured economy of motion.",
+    "clothing_style": "Ferrogate Transit operator uniform during shifts: navy poly-cotton jacket with reflective piping, regulation cap (always worn), practical work trousers, steel-toed boots maintained to safety standard. Off-duty: worn denim, neutral-colored sweaters, the same style of practical boots. Tier 3-4 working-class aesthetic — nothing flashy, everything functional and long-lasting. The uniform is his default clothing; he sometimes wears it on days off without thinking."
+  },
+  "image_prompt": "Aero Waboose-Madrigal, a 193cm transit operator with warm medium-brown skin reflecting Latin American, Pacific Islander, and Indigenous American heritage. Broad facial structure with high cheekbones and strong jaw, deep brown eyes with slight hooding, dark brown hair with gray at temples in a thick braid coiled at nape. Wearing navy Ferrogate Transit operator jacket with reflective piping, regulation cap, practical work trousers, steel-toed boots. Large muscular frame softened at middle from years in transit cabin. Faint surgical scar along left jaw. Posture of calm certainty, hands gentle and expressive. Unhurried, observant demeanor. Standing in a 2226 cyberpunk transit corridor with neon accents and dim practical lighting, twelve-year-worn aesthetic, working-class dignity, patient stillness of routine. Cinematic, naturalistic, weathered authenticity. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 57.8,
+    "Pacific Islander": 21.3,
+    "Indigenous American": 20.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

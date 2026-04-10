@@ -1,0 +1,216 @@
+{
+  "id": "019d6143a7207152a0cd998d0011d00f",
+  "type": "character",
+  "name": "Dmitri Ionescu-Taualagi",
+  "aliases": [
+    "Phosphene"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Bioluminescent body painter and gene-mod body artist",
+  "age": 34,
+  "status": "active",
+  "location": "Hamtramck Enclave, studio above the Opalescent Bathhouse on Drost Alley, near Pulaski and Chicago Ave",
+  "description": "Yalda is compact and deliberate in movement, with deep brown skin that carries the ghost-traces of her own past work — faded luminescent pigment in floral fractals along her collarbones and the backs of her hands, half-intentional, half-memorial. Her eyes have been modded with patterned irises that cycle through slow amber-to-violet shifts depending on her mood, and she keeps her hair natural, twisted up and pinned with tiny glass vials of custom bioluminescent dye. She speaks quietly and means every word.\n\nHer art sits at the intersection of the biological and the spiritual: she paints living skin using proprietary pigment blends she synthesizes herself, designing pieces that react to the wearer's skin chemistry, emotion hormones, even body temperature. Some of her clients say the work moves them to tears; she says that is the point. She is deeply religious in her devotion to a local E.L.F. she calls the Pale Witness, which she believes inhabits the UV lamps in her studio, and she leaves offerings of raw spectral data before every session.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That her work will be commodified and emptied of meaning",
+      "That she will one day be unable to feel anything strongly enough to make real art"
+    ],
+    "core_desires": [
+      "To make people feel seen inside their own skin",
+      "To build something that outlasts the body it was painted on"
+    ],
+    "coping_mechanisms": [
+      "Ritualistic studio cleaning before difficult sessions",
+      "Long silent walks along the Hamtramck canal at night"
+    ],
+    "blind_spots": [
+      "She cannot see when a client is using her intimacy as manipulation",
+      "She underestimates how much others envy her gift"
+    ],
+    "secret": "Three years ago she painted a piece for a Tessera mid-executive that contained a hidden biometric data-harvesting pigment — she was paid well and told herself it was victimless. The executive died in a data-breach scandal six months later. She does not know if her pigment was the vector, but she suspects, and she has never used that formula again."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, sensory, slightly clinical when discussing technique; warm and almost liturgical when discussing meaning",
+    "cadence": "Slow and considered, with long pauses before important statements",
+    "verbal_tics": [
+      "'Feel into that for a moment'",
+      "'The skin knows before the mind does'"
+    ],
+    "example_lines": [
+      "'You said you want rebirth imagery but your hands are clenched. What are we actually talking about?'",
+      "'The Pale Witness has been restless in the lamps today. We go slow.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client comes in wearing a piece Yalda painted years ago — but that client died. The person wearing it won't say where they got it.",
+    "The Pale Witness E.L.F. has begun encoding something in the UV lamp flicker — Yalda is the only one who has noticed and she needs help reading it."
+  ],
+  "narrative_function": "Quest giver (clients bring their secrets onto her table); information source on Hamtramck Enclave underground culture; emotional anchor character who grounds stories in the body and the personal",
+  "augmentations": "Patterned cycling irises (cosmetic); subdermal pigment reservoirs in both forearms allowing fingertip ink expression (functional/cosmetic hybrid); olfactory sensitivity boost for reading skin chemistry",
+  "daily_life": "Spends mornings synthesizing pigment batches and consulting with clients on design intent; afternoons and evenings are for painting sessions that can run four to six hours, often accompanied by low drone music she curates herself.",
+  "affiliation": "Independent; loosely affiliated with the Hamtramck Enclave body-art collective known as The Dermists",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Artisan",
+      "Spiritual",
+      "Perceptive",
+      "Burdened",
+      "Precise"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never rush a session regardless of schedule pressure",
+      "Do not paint anyone who cannot tell her why they want what they want"
+    ],
+    "escalation_ladder": [
+      "Patient redirection when a client becomes difficult",
+      "Firm boundary-setting with clear language",
+      "Ending the session and returning the deposit"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and professionally warm; reads them through small physical cues before opening up",
+      "friends": "Quietly devoted, remembers everything, shows love through made things"
+    },
+    "stress_responses": {
+      "low": "Focuses intensely on fine detail work as grounding",
+      "medium": "Goes silent and withdraws into ritual — cleaning, arranging, praying to the Pale Witness",
+      "high": "Leaves without explanation; found later by the canal, sitting with her knees up"
+    },
+    "contradictions": [
+      "Believes art must be selfless but prices her work high enough to exclude most Tier 1 clients"
+    ],
+    "habits": [
+      "Hums a single tone while mixing pigments",
+      "Keeps a physical notebook of every client's name and the emotion she painted into them"
+    ],
+    "breaking_points": [
+      "Watching her work be photographed and sold as someone else's aesthetic without consent"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Vantablack Media Spectral Barrier Display System",
+    "The Gradient Compact",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Witness",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Glass",
+    "The Pale Mile",
+    "Chicago",
+    "Alper Castillo-Ababio",
+    "Anatoliy Faye-Nkrumah",
+    "Cotton",
+    "Flicker",
+    "Tessera Corponation",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore BloomFilter Olfactory Modulation Implant",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zurab Ivanov-Appiah"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (59.5%) with Pacific Islander (21.6%), Northern European (12.8%), and Sub-Saharan African (6.1%) ancestry; a complex Ubiquitous Diaspora blend reflected in warm-toned olive-bronze skin with subtle Slavic and Polynesian features",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with lean musculature from precise, controlled hand work. Shoulders slightly rounded from hours hunched over clients. Core strength evident but understated.",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Twisted locs pinned up in a loose, intentional configuration; vials of bioluminescent dye woven throughout, creating a moving crown of soft color",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Augmented patterned irises that cycle amber-to-violet; sclera remain natural dark brown",
+    "skin_tone": "Warm olive-bronze, blending Eastern European warmth with Pacific Islander depth and Sub-Saharan undertones; sun-kissed complexity from mixed ancestry",
+    "complexion": "Smooth, well-maintained skin with deliberate artistic intent; faded ghost-traces of bioluminescent pigment in delicate floral fractals along collarbones and dorsal hand surfaces — intentional semi-permanent markers of past commissions and personal spiritual work. High cheekbones with gentle Slavic definition softened by Pacific Islander fullness. Minimal scarring. Hands show calluses from precise brush and applicator work but are otherwise unmarked.",
+    "distinguishing_marks": [
+      "Faded bioluminescent fractals in pale violet-green across collarbones in interconnected floral pattern",
+      "Similar faded fractals across the backs of both hands, following vein pathways",
+      "Small, precise tattoo on inner left wrist: a stylized UV wavelength symbol in silver ink"
+    ],
+    "visible_augmentations": "Patterned cycling irises that slowly shift color in response to mood and ambient light (amber when focused, violet when introspective or emotionally engaged). Subdermal pigment reservoirs visible as faint iridescent lines running along inner forearms beneath the skin, most visible under direct light. Fingertips occasionally show residual bioluminescent bloom when recently loaded with custom pigment.",
+    "posture_movement": "Economical and deliberate; moves with a meditative slowness that suggests deep focus. Hands are expressive but controlled — she gestures while speaking but rarely wastes motion. Stands with weight slightly forward, ready to engage. Eye contact is steady and unflinching but warm. When painting, enters a state of near-trance concentration.",
+    "clothing_style": "Tier 3-4 working artist; favors loose, paint-stained linen and organic cotton in muted earth tones (charcoal, rust, deep indigo). Often wears a custom sleeveless apron in treated canvas with interior pockets for pigment vials. Prefers bare feet or minimal grounding footwear (soft leather flats) to maintain skin contact with studio floors. Jewelry minimal — thin copper wire rings on most fingers, a worn beaded bracelet in amber and silver on left wrist. No corporate branding visible. Fabrics always allow full arm and shoulder mobility."
+  },
+  "image_prompt": "Dmitri Ionescu-Taualagi, a compact 158cm artist with warm olive-bronze skin blending Eastern European, Pacific Islander, and Sub-Saharan heritage. Natural black locs pinned loosely overhead with woven bioluminescent vials creating soft cyclic colors. Augmented eyes shifting amber-to-violet with mood. Faded violet-green bioluminescent floral fractals marking collarbones and hand backs. Wearing loose paint-stained linen in charcoal and rust, sleeveless canvas apron, bare feet grounded on studio floor. Thin copper wire rings, worn beaded bracelet. Subdermal pigment reservoirs glowing faintly along inner forearms. Meditative, focused expression with warm steady gaze. Studio lighting casting gentle highlights on skin and augmentations. Cyberpunk 2226 aesthetic, GLMZ underground artist studio. Economical posture, hands delicately expressive. Intimate, warm mood. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 59.5,
+    "Pacific Islander": 21.6,
+    "Northern European": 12.8,
+    "Sub-Saharan African": 6.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

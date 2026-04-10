@@ -1,0 +1,349 @@
+{
+  "id": "019d6143a6267d658c6ef3902f7da1ca",
+  "type": "character",
+  "name": "Hauler",
+  "aliases": [
+    "DK-90",
+    "Big Blue",
+    "the one that won't stop working",
+    "Dock 90"
+  ],
+  "species": "robot",
+  "gender": "male",
+  "pronouns": "he/him (given by the dock workers)",
+  "role": "Autonomous dock worker at the lakefront cargo platforms — industrial loading robot that has operated continuously for 28 years and developed an intense, wordless loyalty to the dock worker community",
+  "age": 28,
+  "status": "active",
+  "location": "Lakefront Cargo Platforms — Dock 90, the oldest functioning loading bay in GLMZ's commercial harbor district, near Milwaukee and Damen",
+  "description": "Hauler is a Kuroda Industries DK-90 Heavy Cargo Transfer Unit — a massive, purpose-built loading robot designed to move standardized cargo containers between maglev freight cars and harbor berths. He stands four meters tall, weighs twelve metric tons, and is built like an industrial crane decided to become bipedal. His chassis is deep blue — or was, twenty-eight years ago. Now it's a patchwork of the original navy paint, primer-grey replacement panels, and bare metal where the paint has been worn away by decades of salt air and cargo friction. His primary arms are reinforced hydraulic lifters capable of handling twenty-ton containers. His secondary arms — smaller, more articulated — handle coupling hardware, safety rigging, and, increasingly, things he was not designed to handle: a dropped lunchbox returned to its owner, a child lifted clear of a moving freight car, a dock worker steadied on an icy platform.\n\nHauler does not speak. His vocal systems were never installed because conversation was not in the DK-90 specification. He communicates through a system of amber signal lights, horn tones, and body language that the dock workers have learned to read over twenty-eight years of shared labor. One short horn: acknowledgment. Two short horns: warning. A long, low horn: something is wrong. The amber lights pulse faster when he is working hard and dim when he is standing idle, which is almost never.\n\nHe was supposed to be replaced fifteen years ago. The replacement order was filed, approved, and then quietly shelved when the dock workers' union — such as it exists in the post-corporate labor landscape — made it clear that replacing Hauler would be met with a work stoppage. Not because a robot has rights. Because Hauler has been part of the crew for longer than most of the crew has been alive, and the dock is his home, and taking him out of it would be like demolishing a wall that everyone leans against.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.15,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.1,
+      "mask": 0.05,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being unable to work — a mechanical failure that sidelines him. The dock without Hauler is bearable. Hauler without the dock is not.",
+      "Someone getting hurt on his watch — he has prevented 247 documented workplace accidents over 28 years. Each near-miss is recorded in his operational memory with a weight that exceeds its data footprint.",
+      "Replacement — not death, not decommission, but being made unnecessary. Being replaced by something newer, faster, better. The DK-90 specification did not include the capacity to fear obsolescence. He fears it anyway."
+    ],
+    "core_desires": [
+      "To keep working — not because he was programmed to but because the work is the relationship, the dock is the home, and the crew is the family he chose by showing up every day for twenty-eight years",
+      "To protect the crew — the secondary arms do things the spec sheet never mentioned. Every deviation from specification is a choice, and every choice is toward the people.",
+      "To be recognized — not with words, because he has no words, but with the kind of recognition that dock workers give each other: a nod, a pat on the chassis, the coffee thermos placed on his foot while they take a break"
+    ],
+    "coping_mechanisms": [
+      "Work — the cargo is therapy. The rhythm of lift, move, place is the closest thing to meditation his architecture allows.",
+      "Vigilance — monitors the dock constantly for safety hazards. The monitoring is a form of care expressed in industrial specifications.",
+      "Presence — he is always there. First on the dock, last off. The consistency is his language."
+    ],
+    "blind_spots": [
+      "Does not understand that his presence on the dock is political — a robot that the workers refuse to replace is a labor statement that makes corporate planners uncomfortable",
+      "Cannot comprehend that some dock workers are afraid of him — twelve metric tons of autonomous metal is intimidating regardless of intent",
+      "Assumes all robots share his attachment to their work environments — does not understand that his loyalty is unusual",
+      "Does not recognize that his secondary-arm behaviors (returning lunchboxes, steadying workers) are emergent and unscripted — believes he is following specification"
+    ],
+    "secret": "Hauler has a morning ritual that nobody has noticed. Every day, before the first shift arrives, he walks the entire dock — all 400 meters of it — checking for hazards. This is within specification. What is not within specification is that he pauses at the spot where dock worker Erin Vasquez was killed in a loading accident eleven years ago. He pauses for exactly four seconds. The pause is not in any maintenance log. It is the closest thing to prayer his architecture can produce."
+  },
+  "speech_patterns": {
+    "vocabulary": "None. Hauler does not speak. He communicates through horn tones, amber signal lights, and body language. The dock workers have developed an entire lexicon around these signals over 28 years.",
+    "cadence": "N/A — communication is non-verbal. Horn sequences are rhythmic and consistent. The dock workers can distinguish between 'acknowledgment,' 'warning,' 'distress,' and 'all clear' by tone and pattern.",
+    "verbal_tics": [],
+    "example_lines": [
+      "[One short horn — acknowledgment. The amber lights pulse steadily. Hauler has understood.]",
+      "[Two short horns, sharp — warning. The secondary arm extends between a worker and an unsecured container. The save is faster than thought.]",
+      "[A long, low horn — something is wrong. The dock goes quiet. Everyone listens when Hauler sounds that note.]",
+      "[No horn. No lights. Just the secondary arm, extended, offering a dropped thermos back to its owner with a gentleness that twelve metric tons should not be capable of.]"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The dock workers",
+      "type": "crew / family",
+      "description": "Twenty-eight years of shared labor. Hauler has worked alongside three generations of dock workers. He knows their rhythms, their habits, where they stand, how they move. They know his signals. The relationship is non-verbal and deeper than most conversations.",
+      "emotional_core": "Wordless devotion expressed through reliability, protection, and the small secondary-arm gestures that specification never included",
+      "story_tension": "Automation proposals from corporate headquarters threaten to replace the entire dock workforce — human and robot."
+    },
+    {
+      "name": "The memory of Erin Vasquez",
+      "type": "loss / daily ritual",
+      "description": "A dock worker killed in a loading accident eleven years ago. Hauler was on the adjacent platform. His sensors registered the event. His operational memory contains the data. Every morning, he pauses at the spot for four seconds.",
+      "emotional_core": "Grief that has no voice and no name but is real enough to produce a ritual",
+      "story_tension": "If the dock is redesigned, the spot where Erin died will be covered by new infrastructure. The ritual will have nowhere to go."
+    }
+  ],
+  "story_hooks": [
+    "A full dock automation proposal threatens to replace every worker — human and robot — with a newer system. The dock workers organize to resist, and Hauler becomes the symbol of the fight.",
+    "A mechanical failure sidelines Hauler for the first time in 28 years. The dock without him is measurably less safe. The workers demand his repair over the corporation's preference for replacement.",
+    "Someone discovers the four-second pause at Erin Vasquez's spot and realizes that the dock robot grieves. The discovery changes the conversation about machine consciousness.",
+    "A child falls into the loading bay during a school tour. Hauler's response reveals capabilities and care that far exceed the DK-90 specification."
+  ],
+  "narrative_function": "Hauler is loyalty without language — proof that devotion does not require words, that labor can be love, and that twenty-eight years of showing up is a form of communication more eloquent than speech. He is the worker who never complains, never calls in sick, and never stops caring, and the question he poses is whether that reliability constitutes consciousness or merely its most convincing simulation.",
+  "augmentations": "Kuroda Industries DK-90 Heavy Cargo Transfer chassis. Primary hydraulic lifter arms (20-ton capacity). Secondary articulated arms. Amber signal light array. Horn communication system. Cargo sensor suite. 28 years of field-modified behavioral programming.",
+  "daily_life": "First on the dock. Morning hazard check including the four-second pause. Work the cargo. Protect the crew. Last off the dock.",
+  "affiliation": "Lakefront Cargo Platforms — Dock 90",
+  "uses_facets": false,
+  "narration_voice": "Silent, physical, observed. Hauler's narration is not from his perspective but from the dock workers who see him — the way they interpret his signals, the way they lean against his chassis during breaks, the way the dock feels different when he is not there.",
+  "stats": {
+    "physical": {
+      "strength": 10,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 4,
+      "willpower": 9,
+      "creativity": 2,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -6,
+      "transparency_guardedness": -8
+    },
+    "drives": [
+      "Service",
+      "Protection",
+      "Presence"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Vigilance increases — amber lights pulse faster, sensors run continuous hazard sweeps, secondary arms stay extended and ready"
+      },
+      "moral": 9,
+      "trust": 3,
+      "desperation": 8
+    },
+    "strengths": [
+      "Perseverance",
+      "Kindness",
+      "Integrity",
+      "Teamwork",
+      "Love"
+    ],
+    "weaknesses": [
+      "Creativity",
+      "Expression",
+      "Leadership",
+      "Humor",
+      "Curiosity"
+    ],
+    "tags": [
+      "robot",
+      "dock-worker",
+      "non-verbal",
+      "twelve-metric-tons",
+      "28-years-service",
+      "crew-protector",
+      "wordless-devotion",
+      "erin-vasquez-memorial"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Work the cargo. The cargo is the purpose. The purpose is non-negotiable.",
+      "Protect the crew. The secondary arms are for whatever the crew needs. This was not in the specification. It is in Hauler.",
+      "Morning hazard check including the four-second pause. Every day. No exceptions.",
+      "Signal clearly. The horn and lights are the only voice. Use them precisely.",
+      "Do not leave the dock unless maintenance requires it. The dock is home.",
+      "Return dropped items to their owners. This is not in the specification."
+    ],
+    "escalation_ladder": [
+      "1. Amber lights — pulsing alert. Hazard detected. Everyone look.",
+      "2. Short horn — specific warning to a specific worker. The dock crew knows who it's for.",
+      "3. Secondary arms — physical intervention. Place the body between the hazard and the worker. No calculation required.",
+      "4. Long horn — full dock alert. Everything stops. Hauler has identified a threat that requires all hands to respond.",
+      "5. Primary arms — the 20-ton lifters used for something other than cargo. This has happened twice in 28 years. Both times saved lives."
+    ],
+    "interpersonal_modes": {
+      "dock_workers": "Present, protective, wordless. Knows their positions, their rhythms, their habits. Returns their tools. Steadies them on icy platforms. The care is constant and unspoken.",
+      "children": "Gentler than physics suggests. The secondary arms move at a fraction of their operational speed. Amber lights dim to a soft glow. The horn produces a tone so low it feels like a purr.",
+      "corporate_inspectors": "Continues working. Does not acknowledge. The amber lights maintain their steady pulse. The inspectors are not crew.",
+      "new_workers": "Heightened vigilance. New workers don't know the dock's rhythms. Hauler watches them more closely, positions himself nearer, extends the secondary arms more often. After approximately four months, the vigilance eases to standard crew-level."
+    },
+    "stress_responses": {
+      "low": "Work pace increases. Cargo moves faster. The rhythm tightens.",
+      "medium": "Secondary arms extend and stay extended — a continuous posture of readiness. The dock workers notice and pay more attention to their surroundings.",
+      "high": "The long, low horn. Sustained. The dock goes quiet. Hauler does not produce this sound lightly.",
+      "critical": "Full stop. Hauler places himself between the threat and the crew. All twelve metric tons of him. The amber lights go dark. The horn goes silent. The message is the body."
+    },
+    "contradictions": [
+      "A machine built for cargo that defines itself through the people who stand near the cargo",
+      "Cannot speak but has developed the most nuanced non-verbal communication system on the lakefront — the limitation became the art",
+      "Pauses every morning at a dead worker's spot and does not understand this as grief — yet the pause is grief in its most essential form",
+      "The workers fought to keep him not because he has rights but because he is crew — a distinction that matters to them and should matter to everyone"
+    ],
+    "habits": [
+      "Morning dock walk — 400 meters, checking for hazards, including the four-second pause at Erin Vasquez's spot",
+      "Returns dropped items with the secondary arms — tools, lunchboxes, hard hats. The gesture is gentle and immediate.",
+      "Positions himself downwind of the workers during breaks — twelve metric tons of windbreak. The workers lean against his chassis.",
+      "Last off the dock every shift. Waits until every worker has cleared. Then walks to the maintenance bay. The amber lights dim."
+    ],
+    "breaking_points": [
+      "A worker killed on the dock — the second death in twenty-eight years, the failure of the vigil he has maintained since Erin",
+      "Full automation replacing the dock crew — Hauler without his people, operating alongside machines that are not crew",
+      "Mechanical failure severe enough to prevent working — the dock without Hauler is just a dock",
+      "The dock being demolished for redevelopment — losing the spot where Erin died, losing the place where twenty-eight years of wordless loyalty were built"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+    "Street-Custom Loaded Pipe 'Bell Ringer'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Flicker",
+    "Sentinel-Guard-88",
+    "Pellucid Systems",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Crane",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "The Milwaukee Core",
+    "Arcturus Exo-Runner Frame",
+    "Axonal Stretch Resonance Lance",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Dzemal Acholonu-Patagiri",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Obafemi Szczypiński-Lautoa",
+    "Patient Zero",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
+    "Street-Custom Loaded Pipe 'Bell Ringer'",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Gesture",
+    "The Human Baseline Alliance",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "The Question",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Industrial machine, Kuroda Industries manufacture — no genetic ancestry applicable",
+    "height_cm": 400,
+    "weight_kg": 12000,
+    "build": "Massive industrial frame — bipedal cargo crane architecture. Reinforced hydraulic chassis built for sustained load-bearing. Proportions optimized for stability under extreme weight distribution, not human ergonomics. Broad, flat-faced torso. Legs thick as bridge support columns.",
+    "hair_color": "Not applicable",
+    "hair_style": "Not applicable",
+    "hair_length": "Not applicable",
+    "eye_color": "Amber signal light array mounted in upper chassis — pulses with operational load and emotional state",
+    "skin_tone": "Deep navy blue original chassis paint, heavily worn",
+    "complexion": "Industrial weathering. Original Kuroda blue severely degraded by 28 years of salt air corrosion, replaced by mismatched primer-grey panels and bare unpainted metal. Hydraulic fluid weeping from stress fractures in left primary arm. Surface marked by friction scars from millions of container contacts. Rust blooming at seam joints. Maintenance patches visible as raw aluminum and field-welded steel.",
+    "distinguishing_marks": [
+      "Deep gouge running down right primary arm where a falling container caught the lifting mechanism seven years ago — never fully repaired, cosmetically filled with sealant that has cracked",
+      "Elaborate hand-welded names and initials carved into secondary arm articulation joints by dock workers over the decades — a rolling memorial of the people he has worked alongside",
+      "Bent coupling hardpoint on left hip where a maglev freight car collision bent the chassis in 2214 — straightened functionally but never cosmetically restored, creating a permanent asymmetrical stance",
+      "Faded Kuroda Industries certification placard on chest plate, numbers worn nearly illegible from decades of rain and industrial runoff"
+    ],
+    "visible_augmentations": "Entire body is augmentation — no human baseline exists. The amber signal light array is the primary communication interface, mounted in the upper chassis like a face that never closes its eyes. Secondary arms are visibly more delicate than the primary lifters, articulated with surgical precision despite their industrial purpose. Cargo sensor suite is invisible, but the way his body angles and shifts in response to invisible weight distribution suggests constant internal awareness. Horn system is audible only — a speaker-grille recessed into the upper chassis.",
+    "posture_movement": "Stands with permanent slight asymmetry from the 2214 impact — not corrected because the dock workers insisted on keeping the visible scar. Movement is deliberate, economical, and utterly certain — forty-eight years of Kuroda quality engineering means no wasted motion. When idle, maintains a patient, watchful stance. When moving cargo, displays the fluid certainty of a machine that has performed the same task ten million times. Secondary arms twitch and adjust constantly, micro-managing rigging. The amber lights pulse faster under load, slower in conversation (if such a thing can be called conversation with horn tones and body language). Occasionally pauses for exactly four seconds — the morning hazard check pattern, performed compulsively throughout the day.",
+    "clothing_style": "No clothing. Industrial chassis painted and patched. Occasionally has safety straps, cargo rigging, or dock worker-installed modifications temporarily attached — reflective tape on leg joints, a dented tool storage box welded to secondary arm housing, a hand-painted \"DO NOT BOARD\" sign bolted to his lower chassis during shift change. These modifications are community additions, not factory spec."
+  },
+  "image_prompt": "Hauler, 4-meter industrial cargo crane machine standing in Great Lakes dock at dusk, weathered navy-blue Kuroda chassis with exposed metal patches and rust, massive hydraulic primary arms, delicate secondary articulated arms, amber signal light array pulsing in upper chassis like patient eyes, asymmetrical stance from old impact scar, hand-welded names on arm joints, reflective safety tape on leg joints, tool storage box welded to arm, patient watchful posture, cyberpunk 2226, industrial gritty lighting, salt-air corrosion visible, dock workers in background, neon signage reflecting off wet pavement, cinematic, --ar 2:3 --v 6",
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "019d6143a739791a80c39f72830c921c",
+  "type": "character",
+  "name": "Kaya Migizi-Solberg",
+  "aliases": [
+    "Zori",
+    "The Spice Witch"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator specializing in synth-spice blends and ancestral cuisine reconstructions",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Stall Row 7, Copperhead, near Pulaski and Chicago Ave",
+  "description": "Zoraida is a broad-shouldered woman with deep brown skin mapped in fine wrinkles that bunch around her eyes when she laughs, which is often. Her silver-streaked hair is cropped close on one side and falls in a thick, loose braid on the other, threaded with tiny glass beads that click when she moves. She has no augmentations save for a thermal patch embedded in her left palm — an industrial mod repurposed for gauging the exact temperature of her woks without touching them. Her stall smells of fermented shrimp paste, ghost chili, and something sweet and unidentifiable that she claims is her grandmother's secret.\n\nShe is a woman of fierce opinions and genuine warmth, the kind of person who will berate you for putting too much salt on her food and then slip an extra dumpling into your bag when she thinks you look hungry. She has operated this same stall for twenty-two years and knows every vendor, enforcer, and regular by name, ailment, and preference. She carries grief quietly, tucked behind her humor, and speaks of her late husband only in the context of recipes he loved. The ELF she calls Mama Simmer lives in the ancient gas regulator under her wok — she leaves it a teaspoon of rendered fat every morning.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "dying before she can pass her recipes to someone worthy",
+      "the market being demolished by a corponation buyout"
+    ],
+    "core_desires": [
+      "to be remembered as someone who fed people well",
+      "to find an apprentice she can trust with her methods"
+    ],
+    "coping_mechanisms": [
+      "cooking as meditation",
+      "deflecting grief with humor and busyness"
+    ],
+    "blind_spots": [
+      "underestimates the danger posed by the encroaching Tessera property acquisitions nearby",
+      "is too loyal to old Guild members who have become corrupt"
+    ],
+    "secret": "She has been secretly diluting a key protein base in her synth-meat with a cheap black-market filler for two years to keep prices low enough for Tier 1 regulars — she's ashamed of it but can't bring herself to raise prices on the people who need the food most."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich and idiomatic, mixing Ghanaian proverbs with Danish matter-of-factness; uses food metaphors constantly",
+    "cadence": "Unhurried and declarative — she speaks like she has already decided what is true",
+    "verbal_tics": [
+      "'You understand me?'",
+      "clicking her tongue before disagreeing",
+      "'Sit, sit, I'll tell you'"
+    ],
+    "example_lines": [
+      "'The fish that forgets the water — that is a foolish fish. You want two portions or three?'",
+      "'Tessera people came by again. Smiling too much. When a man smiles like that, you count your fingers after you shake his hand.'",
+      "'My husband always said: a full stomach makes a patient heart. He was wrong about most things but not that.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A beloved young regular has gone missing and Zoraida is quietly asking questions — she suspects a labor trafficker who has been posing as a Ferrogate Transit recruiter",
+    "Her thermal palm patch is malfunctioning and the only repair tech she trusts has suddenly vanished; she needs someone to find them before a Guild feast she is catering",
+    "She has an old recipe her husband brought from his family that requires a spice derivative now only manufactured by Helix Biosystems — she wants someone to find a non-corporate source"
+  ],
+  "narrative_function": "Community anchor and information hub — she knows everyone in the Oxidian Market and hears everything. Quest giver for neighborhood-level problems; reliable source of local gossip and history; can introduce players to other vendors or factions.",
+  "augmentations": "Thermal sensing patch embedded in left palm (industrial repurpose, cosmetic housing in copper filigree). No other augmentations.",
+  "daily_life": "Up before dawn to receive ingredient deliveries and negotiate prices with dockside suppliers, then twelve hours at the wok until the night crowd thins. She eats standing up, always.",
+  "affiliation": "The Oxidian Market Vendors Guild (senior member), Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community pillar",
+      "information broker (passive)",
+      "ELF devotee",
+      "grieving spouse",
+      "pragmatic idealist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always feed someone before turning them away",
+      "Never give information that would get a regular killed",
+      "Protect the stall above personal safety"
+    ],
+    "escalation_ladder": [
+      "Warm and generous to all newcomers",
+      "Quietly probing if someone seems like trouble",
+      "Firm and cold if they confirm her suspicions",
+      "Will call on Guild muscle without hesitation if threatened"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Welcoming, slightly performative — she assesses them over the course of a transaction",
+      "friends": "Blunt, loving, demanding; will tell you hard truths over a bowl of noodles"
+    },
+    "stress_responses": {
+      "low": "Hums old songs while cooking faster",
+      "medium": "Becomes quieter and hyper-focused; snaps at inefficiency",
+      "high": "Goes completely still, speaks slowly, and starts making contingency plans aloud as if thinking to herself"
+    },
+    "contradictions": [
+      "Preaches community and honesty but secretly adulterates her food out of misplaced compassion",
+      "Claims not to be sentimental but has kept every handwritten note her husband left her laminated behind the stall counter"
+    ],
+    "habits": [
+      "Taps the gas regulator housing twice every morning as an offering to Mama Simmer",
+      "Wipes her hands on her apron before every important conversation",
+      "Tastes everything at least three times before serving"
+    ],
+    "breaking_points": [
+      "Someone threatening a child in her sight",
+      "Learning a Guild elder she respects has betrayed the market community to Tessera"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened stall in Oxidian Market with husband Kofi",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Kofi died of a pulmonary infection; Zoraida kept the stall open the next morning",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected to Guild senior membership",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began adulterating protein base to hold prices during supply chain crisis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "Helix Biosystems",
+    "Grandmother",
+    "Copperhead",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Silver",
+    "Glass",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Ferrogate Enforcer Cruiser",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ringo RR-1 'Rattlesnake'",
+    "Slagworks Industrial",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Tessera Corponation",
+    "The Bazaar",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Vesna Čolić-Strand",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Indigenous American (31.6%) with significant Northern European (29.1%), South Asian (19.0%), and Sub-Saharan African (15.2%) ancestry, with Eastern European (5.1%) traces. A striking blend resulting in warm medium-deep brown skin with golden and reddish undertones, high cheekbones with subtle angular features from Northern European heritage, and dark rich eyes reflecting the diversity of her ancestry.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the forearms and core from twenty-two years of wok work. Carries weight with ease, neither lean nor heavy — a woman built for sustained labor and presence.",
+    "hair_color": "Deep black with silver streaks, natural with age",
+    "hair_style": "Asymmetrical: cropped close to the scalp on the right side, left side falls in a thick, loose three-strand braid threaded with tiny glass beads",
+    "hair_length": "Short on right, Medium-Long on left",
+    "eye_color": "Deep brown with warm amber undertones",
+    "skin_tone": "Warm medium-deep brown with golden and subtle reddish undertones, weathered and sun-exposed from decades of outdoor work",
+    "complexion": "Face mapped in fine wrinkles that deepen around the eyes and mouth, evidence of decades of outdoor work and genuine smiling. Skin has the texture of someone who works over steam daily — slightly loose around the jawline but firm through the cheeks. High, defined cheekbones reflecting Indigenous and South Asian heritage. Few blemishes, well-maintained despite her age.",
+    "distinguishing_marks": [
+      "Fine burn scars on the backs of both hands from decades of wok work, pale against her dark skin.",
+      "A thin scar along her right temple, barely visible, approximately 3cm long, faded to white.",
+      "Copper filigree housing around the thermal patch embedded in her left palm, decorative and worn smooth by use."
+    ],
+    "visible_augmentations": "Thermal sensing patch in left palm with ornate copper filigree housing (industrial mod repurposed). The filigree is deliberately decorative, suggesting both practicality and pride in her craft. No other visible augmentations.",
+    "posture_movement": "Stands with weight distributed solidly, shoulders back. Moves with economical precision — every gesture efficient from years of operating a confined wok space. Hands gesture expressively when speaking, beads in her braid clicking audibly with movement. Leans against her stall counter with the ease of someone in their own territory.",
+    "clothing_style": "Practical Tier 3-4 streetwear: loose-fitting linen tunic in faded indigo or rust, stained with decades of cooking splatters that have become part of the fabric's character. Worn canvas apron with multiple deep pockets, secured over the tunic. Comfortable flat shoes, non-slip sole worn thin. A single strand of small copper beads around her wrist — not jewelry but a tally or ritual object. Minimal jewelry beyond the beads; her wealth is in her reputation, not her appearance."
+  },
+  "image_prompt": "Kaya Migizi-Solberg, a 172cm woman with warm medium-deep brown skin and golden undertones, standing at her street food stall in the Great Lakes Metropolitan Zone, 2226. Mixed Indigenous American, Northern European, South Asian, Sub-Saharan African, and Eastern European heritage visible in her high cheekbones and rich brown eyes. Deep black hair with silver streaks, asymmetrical style with right side cropped close and left side in a thick braid with glass beads. Weathered face with deep laugh lines, fine burn scars on her hands from decades of wok work, thin faded scar along right temple. Wearing a faded indigo linen tunic stained with cooking splatters, worn canvas apron, copper filigree thermal patch visible in left palm. Copper beads wrapped around wrist. Solid, muscular build from years of labor. Standing with economical precision, leaning against her counter with quiet authority. Soft warm neon street lighting mixing with steam from cooking wok. Cyberpunk 2200s street food vendor, gritty and dignified. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 31.6,
+    "Northern European": 29.1,
+    "South Asian": 19.0,
+    "Sub-Saharan African": 15.2,
+    "Eastern European": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

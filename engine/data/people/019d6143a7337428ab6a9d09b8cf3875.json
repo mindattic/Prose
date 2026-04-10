@@ -1,0 +1,280 @@
+{
+  "id": "019d6143a7337428ab6a9d09b8cf3875",
+  "type": "character",
+  "name": "Soren Lindström-Thorvaldsdóttir",
+  "aliases": [
+    "Zawa",
+    "The Soup Woman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Food stall operator — broth and fermented grain specialist",
+  "age": 58,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown, near Pulaski and Chicago Ave",
+  "description": "Zawadi is a broad-shouldered woman whose hands are perpetually stained with turmeric and char, calloused from thirty years of ladling broth in all weather. Her hair is silver-streaked and coiled under a waxed cloth wrap she re-ties about a dozen times a day out of habit, and her face is a map of laugh lines deepened by steam. She has no cosmetic mods except a set of heat-sensing fingertip implants she got cheap in her forties so she'd stop burning herself — they glow faintly amber when something is too hot, which she finds beautiful. Her stall is a converted ferrogate maintenance cart draped in mismatched fabric swatches, strung with small data-tokens she's collected from regulars over the years as ELF offerings — she believes her stove-spirit blesses every batch if fed properly.\n\nZawadi is the kind of person who knows everyone's name and their mother's name too, if they've come around long enough. She is warm without being soft, generous without being foolish, and has a razor instinct for when someone is about to cause trouble at her stall or nearby. She has watched her corner of Geartown change three times over and intends to outlast a fourth. She gives credit to people she trusts and cuts off people she doesn't with the same cheerful finality.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Watching her community dissolve under corporate rezoning",
+      "Dying before she passes her recipes to someone who will keep them"
+    ],
+    "core_desires": [
+      "That the people she feeds are genuinely nourished — body and otherwise",
+      "To be remembered as someone who held a place together"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation and control",
+      "Humor to deflect grief",
+      "Treating her regulars like chosen family"
+    ],
+    "blind_spots": [
+      "Underestimates how much danger her gossip-sharing can attract",
+      "Tends to assume people who eat her food regularly must be good people"
+    ],
+    "secret": "Twenty years ago she acted as an informal message relay for a Zheng-Dao labor insurgency in Geartown. She doesn't know that one of her regulars is a Zheng-Dao compliance investigator who has been slowly triangulating that history."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, idiomatic blend of Swahili loanwords, Rioplatense slang, and Geartown market patois. Uses food metaphors constantly.",
+    "cadence": "Unhurried and rhythmic, like someone who has all day even when she doesn't",
+    "verbal_tics": [
+      "starts deflections with 'Ah, now—'",
+      "ends observations with 'you understand me'"
+    ],
+    "example_lines": [
+      "You look like something the drain spat back. Sit. There's broth.",
+      "Ah, now — I don't know what you're asking about, but I know what you're really asking, and those are two different soups entirely, you understand me."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer she gave credit to has gone missing; she asks around discreetly but is starting to fear something worse than debt-skipping",
+    "A Zheng-Dao compliance agent has been eating at her stall every day for two weeks, asking innocent questions that are not innocent at all",
+    "The Vendors Guild is pushing a new dues structure that would price Zawadi and three other long-term vendors off their corners — she is quietly organizing resistance"
+  ],
+  "narrative_function": "Local anchor and community memory. Excellent source of neighborhood gossip, rumors, and social history. Can tell a player who has been coming and going, who changed behavior recently, what the mood on the street is. May offer food as a reward or ask for help with something affecting her stall or a regular she cares about.",
+  "augmentations": "Heat-sensing fingertip implants (cheap amber-glow model). No other augmentations.",
+  "daily_life": "Arrives at her stall before dawn to start her long-cook broths, sources surplus protein from the Geartown processing co-op three mornings a week, and stays until the evening crowd thins. Closes with a small ELF ritual — pouring the last ladle of broth into a grate drain as a data-offering.",
+  "affiliation": "Independent; Oxidian Market Vendors Guild (dues-paying member)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "local memory",
+      "market veteran",
+      "ELF-devout",
+      "labor history"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed people first, ask questions second",
+      "Never give information that would get someone killed — but she'll absolutely give information that gets someone embarrassed"
+    ],
+    "escalation_ladder": [
+      "Cheerful deflection and a change of subject",
+      "Firm but still warm refusal",
+      "Public shaming with the volume of someone who has been working a loud market for thirty years"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm — assesses them quickly over the course of a bowl, decides how much to open up",
+      "friends": "Genuinely maternal and frank, will tell you hard truths while feeding you"
+    },
+    "stress_responses": {
+      "low": "Stirs more aggressively, hums louder",
+      "medium": "Gets very quiet and focused, starts reorganizing her stall unnecessarily",
+      "high": "Erupts in a loud, public, theatrical anger that ends as quickly as it starts, then goes very still"
+    },
+    "contradictions": [
+      "Deeply communitarian but hoards certain recipes jealously as personal identity anchors"
+    ],
+    "habits": [
+      "Re-ties her head wrap constantly",
+      "Tastes every batch three times even if she just tasted it",
+      "Gives the last scoop of the pot to whoever is nearest for free"
+    ],
+    "breaking_points": [
+      "Someone threatening or harming one of her young regulars",
+      "Corporate agents trying to confiscate her cart under rezoning law"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Inherited her stall position from her mother, who had held it for 22 years before her",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acted as message relay for Zheng-Dao labor insurgency; never identified",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Oxidian Market Vendors Guild after the first major rezoning threat",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "A Zheng-Dao compliance investigator began frequenting her stall",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Crucible Industries Havoc-44 'Mauler'",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Crucible Industries Havoc-44 'Mauler'"
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Ferrogate Transit",
+    "Zheng-dao Bioelectric",
+    "Geartown",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Auntie Efe's Pot",
+    "Crucible Industries Havoc-44 'Mauler'",
+    "Cutter Vane",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Lumen",
+    "MERIDIAN",
+    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
+    "Rongo Delgado-Opoku",
+    "TESSERA TC-3 'Crucible'",
+    "The Calumet Sink",
+    "The Compact",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian) with significant East Asian ancestry and minor Hispanic/Latin American heritage. The genetic blend creates a striking phenotype: fair to medium complexion with East Asian facial structure softened by Northern European bone structure, creating an unconventional but harmonious appearance.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent three decades standing over a stove, lifting heavy pots, and moving with economical purpose. Thickened through the middle but strong-limbed.",
+    "hair_color": "Dark brown with silver threading throughout",
+    "hair_style": "Coiled natural texture, regularly wrapped and re-wrapped throughout the day in a waxed cloth wrap in rotating patterns",
+    "hair_length": "Medium (shoulder-length when unwrapped)",
+    "eye_color": "Deep brown with slight amber undertone in certain light",
+    "skin_tone": "Fair to medium complexion with warm golden undertones from the East Asian ancestry; sun-weathered from outdoor market work, creating a unified mid-tone that bridges Nordic paleness with East Asian warmth",
+    "complexion": "Face deeply lined from decades of steam exposure; lines concentrated around eyes and mouth from frequent laughing and squinting. The underlying bone structure shows East Asian characteristics—higher cheekbones, almond-eye shape—softened by Northern European features. Skin is weathered but healthy, with no scarring. Her face has the lived-in quality of someone who has rarely worn cosmetic filters or treatments.",
+    "distinguishing_marks": [
+      "Staining on both hands from turmeric and char that no amount of scrubbing fully removes—permanent discoloration in the creases of her palms and under her fingernails",
+      "Heat-burn scars on her left forearm (three parallel marks from a pot mishap in her thirties) now faded to pale lines",
+      "Small burn mark on her right wrist—a pale circular scar from an old coal-stove accident"
+    ],
+    "visible_augmentations": "Heat-sensing fingertip implants on both hands that glow faintly amber when exposed to temperatures above safe thresholds—the glow is soft, bioluminescent, and visible especially in dim market light. No chrome visible; the implants sit just under the skin at her fingertips.",
+    "posture_movement": "Stands with weight evenly distributed, ready to move in any direction. Moves with the economical grace of long practice—no wasted motion, but warm and unhurried. Her hands are constantly active: stirring, tasting, gesturing while speaking. She leans forward when listening to someone, making them feel heard. Her bearing is confident without arrogance.",
+    "clothing_style": "Tier 4 working-class, practical and layered. Typically wears a heavy canvas apron (usually cream or rust-colored, stained with turmeric and broth splatters) over a long-sleeved linen shirt (dark colors—indigo, charcoal, deep red) that protects her from splashes. Over this, a quilted vest in mixed fabrics, often with a worn wool coat draped over the stall frame. Her feet are in heavy slip-on work boots (well-maintained, re-soled multiple times). She wears a loose waxed-cloth headwrap in rotating patterns and colors, always functional, sometimes decorated with small metal charms or tokens hung from it. No jewelry except a thin brass ring on her left ring finger—simple, worn smooth."
+  },
+  "image_prompt": "Soren Lindström-Thorvaldsdóttir, 168cm tall, weathered market vendor with striking Nordic-East Asian heritage blend. Fair-to-medium golden-toned skin, deep brown eyes with amber flickers, dark hair with silver threading wrapped in waxed cloth headwrap. Broad-shouldered solid build, etched face with laugh lines around eyes and mouth. Wearing heavy cream canvas apron heavily stained with turmeric and broth over long-sleeved indigo linen shirt, quilted vest, worn wool coat. Her hands show permanent turmeric staining and pale heat-burn scars on forearms. Fingertip implants glow soft amber when near heat sources. Standing in steaming cyberpunk market stall, 2226, dim atmospheric lighting catching the bioluminescent glow at her fingertips. Economical posture, warm presence, leaning forward slightly. Her brass ring glints on left hand. No augmentations visible on face or chrome. Cyberpunk 2200s aesthetic, practical working-class, lived-in authenticity, soft market ambient lighting. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 64.3,
+    "East Asian": 29.0,
+    "Hispanic/Latin American": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

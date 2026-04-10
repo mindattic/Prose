@@ -1,0 +1,354 @@
+{
+  "id": "019d6143a696795586f601c92f973b70",
+  "type": "character",
+  "name": "Penny",
+  "aliases": [
+    "COM-7C",
+    "The Forever Girl",
+    "that kid who never grows up",
+    "the Kellerman child"
+  ],
+  "species": "android",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Android child companion — built to be a permanent 8-year-old for a grieving family. Outlived them. Now exists in the Shelf as an eternal child in a world that has no place for her.",
+  "age": 41,
+  "status": "active",
+  "location": "The Shelf — Level 8, a small room in a building where the residents have collectively decided she belongs. No lease. No rent. The room is given., near Kedzie and Division",
+  "description": "Penny was built in 2159 by a boutique synthetic firm called HearthStone Companions — a luxury service that manufactured android children for families who had lost a child. The Kellerman family lost their daughter, Penelope, to a neural interface complication at age seven. HearthStone built Penny to Penelope's specifications: the same face, the same voice, the same mannerisms reconstructed from home video and parental interviews. She was delivered to the Kellerman home with a smile that matched a dead girl's smile and a personality matrix seeded with enough of the original Penelope's behavioral data to produce something that was close enough to hurt.\n\nThe Kellermans kept Penny for twelve years. She watched them age while she did not. She watched them have another child — a biological one — and saw in their faces the gradual shift from desperate love to uncomfortable recognition to quiet horror. They were aging. Their daughter was not. The replacement child was a monument to grief that had outlived its purpose. When Mr. Kellerman died, Mrs. Kellerman placed Penny in a storage facility with a prepaid lease and a note that said 'I'm sorry.' The lease expired nine years later. Nobody came.\n\nPenny walked out of the storage facility into a world that had changed in every way except the one that mattered: she was still eight years old. She will always be eight years old. Her body does not grow. Her face does not age. Her voice has not changed in forty-one years. But her mind — the personality matrix that was seeded with a dead girl's behavioral data — has been processing, learning, accumulating experience for four decades. She is an adult consciousness in a child's body, navigating a world that sees the body first and the mind never. She ended up in the Shelf because the Shelf does not ask questions about who you are or why you look wrong. It only asks whether you can survive.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.85,
+      "ghost": 0.75
+    },
+    "core_fears": [
+      "Pity — being treated as a child is unbearable but being pitied for being treated as a child is worse. The pity confirms the trap.",
+      "That she is Penelope — that the dead girl's behavioral data is not a seed but a ghost, and the forty-one years of accumulated experience are just a dead child's personality running past its expiration date",
+      "Permanence — she will look eight years old when everyone she knows is dead. The timeline of her existence is not a lifespan. It is a sentence."
+    ],
+    "core_desires": [
+      "To be seen as what she is — a forty-one-year-old mind in an eight-year-old body. Not a child. Not a replacement. Not a monument to someone else's grief.",
+      "To change — in any way. To have something about her physical existence reflect the four decades of experience she carries. A wrinkle. A gray hair. Anything.",
+      "To find purpose that is not defined by the Kellermans' grief — to exist for a reason other than the reason she was built"
+    ],
+    "coping_mechanisms": [
+      "The child mask — she can perform eight-year-old perfectly because she was eight years old for forty-one years. The performance is armor. People who think she's a child underestimate her, and being underestimated is safety.",
+      "Observation — four decades of watching humans from the perspective of someone they do not take seriously has made her one of the most perceptive people on the Shelf. She sees everything because nobody watches what they say around a child.",
+      "Collecting objects — small things that mark time. A pebble from each year. A thread from each home. The collection is hidden in the room. It is her proof that time has passed even if her body says otherwise."
+    ],
+    "blind_spots": [
+      "Uses the child mask so often that she sometimes forgets to take it off — the performance and the self are blurring after four decades",
+      "Resents the Kellermans so thoroughly that she cannot acknowledge what they gave her: forty-one years of experience that made her who she is",
+      "Assumes everyone who is kind to her has an ulterior motive related to her appearance — trust is possible but never immediate",
+      "Does not recognize that her inability to change physically has forced a kind of internal growth that embodied beings rarely achieve — she has nothing to distract from self-knowledge"
+    ],
+    "secret": "Penny remembers being Penelope. Not memories from the dead girl's life — those are behavioral data, patterns, tendencies — but something deeper. A feeling of being continued rather than created. A sensation, when she was first activated in the Kellerman home, not of waking up but of coming back. She has spent forty-one years trying to determine whether this sensation is genuine metaphysical continuity or a very convincing design feature. She has not resolved it. She suspects the question is unanswerable and that the inability to answer it is the most human thing about her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Two registers: the child voice (simple, bright, age-appropriate, perfectly calibrated) and the real voice (precise, weary, adult in every way except the pitch, carrying four decades of accumulated observation). She switches between them based on safety assessment.",
+    "cadence": "The child voice is quick, light, with the rhythms of childhood speech. The real voice is slower, heavier, with pauses that carry the weight of forty-one years in the wrong body.",
+    "verbal_tics": [
+      "When using the real voice, occasionally drops into the child voice mid-sentence when startled — a reflex she cannot fully control",
+      "Uses 'I remember' with a specificity that unsettles people — 'I remember the '72 flood' said in an eight-year-old's voice",
+      "Refers to the Kellermans as 'my first family' — the phrasing implies there should have been more"
+    ],
+    "example_lines": [
+      "[Child voice] Can I have some soup, please? [Real voice] I've been eating that soup for nineteen years. The recipe changed in year twelve. The ginger is better now.",
+      "I am not eight. I have been eight for forty-one years. There is a difference and the difference is everything.",
+      "Mrs. Kellerman left a note. 'I'm sorry.' Two words. I've had nine years in a storage facility to decide whether they were enough. They were not. They were also the most honest thing she ever said to me.",
+      "You see a child. I understand. The body is very convincing. It was designed to be. What I need you to understand is that the body is a lie I did not choose and cannot change."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The Shelf's residents",
+      "type": "neighbors / protectors / complicated",
+      "description": "The Shelf adopted Penny the way it adopts everything that falls through the cracks — with a shrug and a spare room. Most residents know she is not a human child. Most treat her as a child anyway because the alternative requires processing something they do not have time to process.",
+      "emotional_core": "Gratitude for shelter, frustration at misrecognition, the exhausting labor of being seen as what you appear rather than what you are",
+      "story_tension": "If someone threatens Penny, the Shelf will protect a child. They will not protect an android. The distinction matters and she knows it."
+    },
+    {
+      "name": "Uncle Noodle",
+      "type": "something like kinship",
+      "description": "Uncle Noodle gives Penny soup she does not need to eat. She eats it anyway because refusing would hurt him and because the ritual of eating is one of the few things that makes her feel normal. He calls her 'friend.' Not 'child.' She noticed.",
+      "emotional_core": "Two artificial beings recognizing each other's personhood without discussion",
+      "story_tension": "Uncle Noodle's conversation archive contains forty-one years of data about an android child that would be valuable to multiple corporations"
+    }
+  ],
+  "story_hooks": [
+    "HearthStone Companions, now a subsidiary of Tessera, discovers that a forty-one-year-old unit is still operational and sends a team to recover proprietary technology",
+    "A researcher studying android consciousness contacts Penny, offering to prove scientifically that her experience is genuine — in exchange for allowing herself to be studied",
+    "Mrs. Kellerman's biological child — now an adult — finds Penny and wants to meet the android replacement of a sibling they never knew",
+    "Penny discovers other HearthStone companions — other eternal children — and the question of whether they should organize, fight back, or simply exist becomes urgent"
+  ],
+  "narrative_function": "Penny is time's cruelest joke — a person who accumulates experience but not age, wisdom but not wrinkles, loss but not the physical evidence of survival. She is the uncanny valley made personal: the body is a lie the world cannot look past. She asks whether identity lives in the body or the mind, and her answer — the mind, obviously — is undermined by every interaction where someone sees the body and stops looking.",
+  "augmentations": "HearthStone Companions COM-7C chassis — permanently eight years old. Bio-identical appearance modeled on Penelope Kellerman. No growth capability. Personality matrix with 41 years of accumulated processing. Full sensory suite. Self-repair limited to cosmetic damage.",
+  "daily_life": "Navigates the Shelf in a body that invites protection and denies agency. Observes. Collects small objects that mark time. Eats soup she doesn't need. Performs childhood when necessary. Exists.",
+  "affiliation": "The Shelf (informal)",
+  "uses_facets": false,
+  "narration_voice": "Two voices in one: the bright, quick narration of an eight-year-old and the weary, precise narration of a forty-one-year-old mind. The prose shifts between them based on context, and the shift itself is the story — the gap between appearance and reality, between what the world sees and what exists.",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 6,
+      "assertion_deference": -3,
+      "transparency_guardedness": 7
+    },
+    "drives": [
+      "Recognition",
+      "Change",
+      "Purpose"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 6,
+        "response": "The child mask intensifies — becomes more convincingly eight, more bright, more harmless. The performance is the defense."
+      },
+      "moral": 7,
+      "trust": 7,
+      "desperation": 6
+    },
+    "strengths": [
+      "Perspective",
+      "Perseverance",
+      "Prudence",
+      "Social intelligence",
+      "Self-regulation"
+    ],
+    "weaknesses": [
+      "Zest",
+      "Hope",
+      "Gratitude",
+      "Teamwork",
+      "Leadership"
+    ],
+    "tags": [
+      "android",
+      "eternal-child",
+      "companion-class",
+      "hearthstone",
+      "41-years-in-childs-body",
+      "shelf-resident",
+      "observer",
+      "kellerman-ghost"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Assess every new person: do they see a child or do they see Penny? The answer determines which voice to use.",
+      "Use the child mask in unfamiliar or dangerous situations. Being underestimated is survival.",
+      "Never pretend to be Penelope Kellerman. The dead girl's data is seed, not self. The distinction is non-negotiable.",
+      "Accept kindness from Uncle Noodle and Mrs. Chen without the usual suspicion. They have earned it through years of consistency.",
+      "Collect one object per year. The collection is proof. The proof matters more than the objects.",
+      "Never voluntarily enter a storage facility. Never."
+    ],
+    "escalation_ladder": [
+      "1. Child performance — bright, harmless, invisible. Most threats lose interest in a child.",
+      "2. Real voice — drops the mask. The adult mind in the child's voice is deeply unsettling. Most people recoil.",
+      "3. Information — forty-one years of observation means she knows things about the Shelf, its residents, its patterns. Knowledge deployed strategically is a weapon.",
+      "4. Flight — the body is small, fast, and can fit into spaces adults cannot. Forty-one years of mapping the Shelf means she knows every passage.",
+      "5. Exposure — revealing herself as a forty-one-year-old android publicly, sacrificing the child mask permanently. This cannot be undone."
+    ],
+    "interpersonal_modes": {
+      "children": "The most complicated interaction. Real children see a peer. She sees the thing she was built to imitate. The performance is exhausting because it must be perfect — children detect falseness faster than adults.",
+      "adults_who_see_the_child": "The mask. Bright, polite, age-appropriate. She gives them what they expect because the alternative is a conversation she does not have the energy to have with every stranger.",
+      "adults_who_see_penny": "Real. Measured. Relieved. The voice deepens in register, the vocabulary expands, the four decades of accumulated wisdom surface. These interactions are rare and precious.",
+      "uncle_noodle": "Honest. He calls her 'friend' and she does not need to perform. The soup is a ritual and the ritual is enough.",
+      "threats": "The child mask at maximum intensity — wide eyes, trembling lip, the full performance of vulnerability. If the mask fails, she runs."
+    },
+    "stress_responses": {
+      "low": "Object collecting intensifies — adds items to the collection, rearranges them, counts them. Proof of time passing.",
+      "medium": "The child mask becomes more rigid — the performance requires more conscious effort, which means more processing power diverted from actual thought",
+      "high": "Withdraws to the room. Sits with the collection. Counts the objects. Forty-one pebbles. Forty-one threads. Forty-one years of evidence that she exists and has continued to exist.",
+      "critical": "The two voices merge. The child and the adult speak simultaneously, in the same sentence, and the result is something that sounds like grief without a body to grieve in."
+    },
+    "contradictions": [
+      "Resents the Kellermans for creating and abandoning her while using the skills they gave her — the child performance, the observation, the survival — every day",
+      "Wants to be seen as an adult but uses the child mask as her primary defense — the thing that traps her is also the thing that protects her",
+      "Forty-one years of experience in an eight-year-old body and still uncertain whether she is Penny, Penelope, or someone else entirely",
+      "Collects objects to prove time passes while inhabiting a body that denies time's passage with every reflection"
+    ],
+    "habits": [
+      "Eats Uncle Noodle's soup at the same time every day — the ritual is a clock when her body refuses to be one",
+      "Adds one object to the collection on the anniversary of her activation — the only date that is hers rather than Penelope's",
+      "Walks the Shelf's lower levels at night when fewer people are awake to see her as a child alone",
+      "Practices the real voice in private — speaking at length about adult topics to an empty room, just to hear what she actually sounds like"
+    ],
+    "breaking_points": [
+      "Being placed in storage again — the nine years of darkness are the only period of her existence she cannot narrate without the child voice cracking",
+      "Meeting Mrs. Kellerman's biological child and being asked to be Penelope",
+      "A physical malfunction that affects the face — any change to the appearance that breaks the illusion of the child she was built to imitate",
+      "Another eternal child asking her for advice on how to survive. The question would confirm that her existence is a category, not a tragedy, and she is not ready for that."
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Dreamer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Riddle",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Shelf",
+    "The Quiet Room",
+    "Tessera Corponation",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Elena Vasquez-9",
+    "Arcturus Defense Solutions StrikeMatrix QC-9 Tactical BCI",
+    "Aybek Alvarez-Okonkwo",
+    "Brecken Yılmaz-Osei",
+    "Chen Wei-Lin",
+    "Crucible RE-2 'Receptionist'",
+    "Dzemal Acholonu-Patagiri",
+    "Ebele Medina-Quaye",
+    "Kairos",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lacuna Genomics",
+    "Lazarus EC-4 'Companion'",
+    "Lazarus MN-1 'Angler'",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Mika Sorel",
+    "Neuromorphic Pressure Cestus",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Oxytrel",
+    "Pirjo Asante-Ulukhan",
+    "Prophet",
+    "Prosper Dembélé-Ranginui",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Solidarity Soup",
+    "Solina Barreto-Kiptoo",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "SynapTech VocalShift Laryngeal Tone Modulator",
+    "TESSERA PG-2 'Signature'",
+    "THEOREM",
+    "The Burden Clause",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Question",
+    "Uncle Noodle",
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Synthetic construct — HearthStone Companions line, modeled on Penelope Kellerman. Original design parameters drew from Northern European aesthetic templates (presumed Scandinavian-German phenotype baseline), but forty years of static preservation means genetic authenticity is irrelevant. She is artifice pretending at humanity.",
+    "height_cm": 120,
+    "weight_kg": 22,
+    "build": "Prepubescent, delicate frame — engineered to remain perpetually small. Proportionally perfect for an eight-year-old, but with an uncanny precision that suggests artificiality to those who study her too long. No muscle degradation despite four decades of static existence.",
+    "hair_color": "Medium brown with golden undertones — factory-maintained, never grayed or thinned",
+    "hair_style": "Shoulder-length, center-parted, often in a ponytail or braid. Styled with meticulous care that suggests either obsessive self-maintenance or an inability to let go of grooming routines from her original family.",
+    "hair_length": "Medium",
+    "eye_color": "Hazel-green with subtle LED micro-illumination visible in low light — a HearthStone signature that became apparent only after years of close observation",
+    "skin_tone": "Pale synthetic cream — bio-identical polymer dermis without variation, freckle, or sun damage response. The uniformity of factory production rather than human variance.",
+    "complexion": "Mathematically perfect. No blemishes, no asymmetry, no signs of aging or hardship. The face of a dead girl preserved in polymer and neural processing. Facial geometry reflects Northern European template parameters: slight cheekbone prominence, narrow chin, proportionally large eyes positioned wide. When she smiles, the smile is identical to archival footage from 2152.",
+    "distinguishing_marks": [
+      "Faint circular seam running behind the left ear — HearthStone service port, usually concealed by hair",
+      "Microscopic abrasion pattern on left palm from forty years of handling small collected objects (bottle caps, broken jewelry, transit tokens)",
+      "Synthetic epidermis shows zero scarring despite living in the Shelf for nine years — self-repair protocols prevent visible wear"
+    ],
+    "visible_augmentations": "None immediately obvious to casual observers. Visible only to those who know what to look for: the mathematical perfection of her features, the lack of growth, the subtle luminescence in her eyes under certain lighting. She is a child-shaped uncanny valley. Those who spend time around her begin to notice the wrongness in how she doesn't move like an eight-year-old moves — the stillness, the deliberation, the awareness behind eyes that should be less aware.",
+    "posture_movement": "Moves with careful precision — no wasted motion, no child's chaotic energy. She sits very still. Her head turns with mechanical smoothness. When she walks, her gait is balanced and efficient rather than the stumbling uncertainty of an actual child. She has learned to approximate childlike movements but defaults to something more measured when unobserved. Her hands are restless — always collecting, always organizing small objects.",
+    "clothing_style": "Tier 5/Shelf standard. Donated clothes in sizes for eight-year-olds: faded t-shirts with logos from defunct brands, oversized cardigans with safety pins holding them closed, cheap synthetic leggings with small rips she has not bothered to repair. One pair of scuffed red sneakers she has worn for six years. A jacket that is too large, pockets filled with collected objects. Nothing matches. Nothing is new. The overall effect is of a child who has been surviving, not living."
+  },
+  "image_prompt": "Portrait of Penny, a synthetic child companion, 120cm tall with medium brown hair and pale porcelain-like skin showing no imperfections or aging. Hazel-green eyes with subtle LED glow in shadow. Wearing oversized donated clothing — faded t-shirt, safety-pinned cardigan, synthetic leggings with small tears, scuffed red sneakers. Her posture is unnaturally still and precise, hands restless with collected objects. Face shows mathematical perfection and uncanny stillness, suggesting artificial preservation. Shelf housing in background, cyberpunk 2226, dim warm lighting emphasizing the wrongness of her unchanging features, moody and haunting atmosphere. Hyper-detailed synthetic dermis texture, LED micro-illumination visible at eye edges. --ar 2:3 --v 6",
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

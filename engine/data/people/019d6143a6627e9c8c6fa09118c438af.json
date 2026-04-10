@@ -1,0 +1,332 @@
+{
+  "id": "019d6143a6627e9c8c6fa09118c438af",
+  "type": "character",
+  "name": "Luciana Espinoza-Kovács",
+  "aliases": [
+    "Mantis",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 41,
+  "status": "active",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
+  "description": "Ngaire Rojas-Yeboah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Ngaire Rojas-Yeboah is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.92,
+      "id": 0.5,
+      "shadow": 0.13,
+      "mask": 0.31,
+      "ghost": 0.97
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Their past catching up — debts, enemies, broken promises"
+    ],
+    "core_desires": [
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "To build something that outlasts the next contract cycle"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always",
+      "Overwork — takes every contract offered because idleness invites thinking"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Ngaire Rojas-Yeboah maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Ngaire Rojas-Yeboah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A high-paying contract turns out to target someone Ngaire Rojas-Yeboah owes a personal debt to",
+    "Ngaire Rojas-Yeboah is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Ngaire Rojas-Yeboah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Internal drug synthesizer — produces combat stims and medical compounds on demand",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.97,
+      "caution": 0.59,
+      "loyalty": 0.34,
+      "greed": 0.43,
+      "empathy": 0.61
+    },
+    "drives": [
+      "money",
+      "survival",
+      "justice"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "ability to remain calm under fire",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Checks exits within 10 seconds of entering any room"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    },
+    {
+      "name": "Internal drug synthesizer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Brecken Yılmaz-Osei",
+    "Ilhan Sandstrom-Badu",
+    "Irontide Tidal Energy",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Street Custom 'Molotov Standard' Incendiary Bottle",
+    "TESSERA CR-12 'Whisper'",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Fathom Line",
+    "The Shelf",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mixed Caribbean-Latin American and Sub-Saharan African with Eastern European ancestry. The genetic blend creates a striking phenotype: warm deep brown skin with subtle olive and golden undertones characteristic of West African and Latin American heritage, combined with the bone structure and facial proportions influenced by Eastern European genetics. Rich, complex ancestry expressed through warm-toned skin, prominent cheekbones, and strong jaw architecture.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and densely muscled, built like someone who trains methodically. Shoulders broad and forward-set. Forearms thick with functional muscle, hands large-knuckled and calloused from years of physical work and gear maintenance.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back tight in a functional braid, practical rather than styled",
+    "hair_length": "Long",
+    "eye_color": "Cybernetic — chrome iris rings surrounding deep brown biological pupils. Thermal overlay visible as faint amber warming beneath the metallic surface.",
+    "skin_tone": "Deep warm brown with golden and olive undertones, reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Eastern European ancestry",
+    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow — old, well-healed. Jaw is squared and prominent with strong Eastern European influence in the bone structure. Expression rests in neutral watchfulness, lips thin and rarely smiling. High cheekbones suggest West African heritage.",
+    "distinguishing_marks": [
+      "Linear scar running vertically through her left eyebrow, approximately 2cm long, pale against darker skin",
+      "Burn scar on the inside of her right wrist — roughly 4cm diameter, circular, silvered and old",
+      "Faint track marks along both inner elbows, well-concealed but present under close inspection — from decades of subcutaneous injection work"
+    ],
+    "visible_augmentations": "Chrome cybernetic eyes with visible iris rings that catch light. The enhancement hardware sits flush with the orbital bone but unmistakably artificial. No attempt to disguise or blend them. The internal drug synthesizer leaves no visible external evidence.",
+    "posture_movement": "Stands with weight slightly forward on the balls of her feet — ready posture. Movements are economical and deliberate, no wasted motion. Hands are usually occupied with something — a tool, a device, a cigarette — rarely at rest. When still, she maintains 360-degree awareness, head turning in measured sweeps.",
+    "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets — well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits — burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger — worn thin, possibly inherited."
+  },
+  "image_prompt": "Luciana Espinoza-Kovács, 168cm stocky muscular woman with deep warm brown skin and golden undertones, dark braided hair with silver at temples, cybernetic chrome iris eyes with thermal overlay, sharp cheekbones and squared jaw with old eyebrow scar. Standing in ready posture in neon-lit industrial cyberpunk 2226 setting, wearing dark weathered utility jacket with reinforced panels, tactical cargo pants, steel-toed boots. Subdermal burnished steel armor plate visible at collarbone. Hands occupied with tools. Neutral watchful expression. Hard-worn professional fixer aesthetic. Night cycle lighting, cool neon blues and ambers reflecting off chrome eyes. Gritty Great Lakes Metropolitan Zone warehouse or maintenance bay background. Cinematic, hyper-detailed, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 44.0,
+    "Sub-Saharan African": 33.4,
+    "Eastern European": 22.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

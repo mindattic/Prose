@@ -1,0 +1,339 @@
+{
+  "id": "019d6143a5aa7c13845e9511ea20bcf1",
+  "type": "character",
+  "name": "Kai Nygaard",
+  "aliases": [
+    "Granite",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "High-risk package and data transport — courier",
+  "age": 49,
+  "status": "active",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
+  "description": "Altan Navarro-Afriyie is compact and densely muscled, built low to the ground like something designed to survive impacts. At 49, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Navarro-Afriyie describe her as a precision instrument — point her at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.1,
+      "ideal": 0.34,
+      "id": 0.89,
+      "shadow": 0.62,
+      "mask": 0.85,
+      "ghost": 0.39
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+    ],
+    "coping_mechanisms": [
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+    ],
+    "blind_spots": [
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Altan Navarro-Afriyie once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"I don't look inside the package. I don't ask about the package. I deliver the package.\"",
+      "\"Speed is a skill. Knowing when to slow down is wisdom. I sell both.\"",
+      "\"This route has three checkpoints and a kill zone. I'll be there in twenty minutes.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Altan Navarro-Afriyie's reputation — and a price for silence",
+    "Altan Navarro-Afriyie is offered a contract that would clear all their debts — the target is someone they respect",
+    "A high-paying contract turns out to target someone Altan Navarro-Afriyie owes a personal debt to"
+  ],
+  "narrative_function": "Altan Navarro-Afriyie represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 10
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 4
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.23,
+      "caution": 0.41,
+      "loyalty": 0.5,
+      "greed": 0.31,
+      "empathy": 0.6
+    },
+    "drives": [
+      "reputation",
+      "loyalty",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 8,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "exceptional close-quarters combat",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "chronic insomnia affecting long-term performance",
+      "emotional volatility under extreme stress"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "courier",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Improviser": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "The Gradient Compact",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Ilhan Sandstrom-Badu",
+    "Lazarus LX-2 'Lab Rat'",
+    "Old Harbor",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Scarecrow",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TERMINUS",
+    "TESSERA CR-12 'Whisper'",
+    "The Fathom Line",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Yusra Ntambwe-Cakić",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Southeast Asian (47.7%) with significant Pacific Islander (12%), East Asian (11.4%), Northern European (19%), and Hispanic/Latin American (9.9%) ancestry. Complex phenotype reflecting Ubiquitous Diaspora mixing — warm medium-tan skin with golden-olive undertones, facial structure showing Southeast Asian prominence with secondary Northern European and Pacific Islander features.",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled — low center of gravity, built for impact absorption and explosive movement. No wasted mass; every kilogram serves function. Shoulders and forearms disproportionately developed from climbing work.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, practical braid; functional, not aesthetic",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown, alert and measuring",
+    "skin_tone": "Medium warm tan with golden-olive undertones — Southeast Asian base enriched by Pacific Islander depth and Northern European undertones creating luminous, sun-darkened appearance",
+    "complexion": "Weathered by two decades of field work; fine lines radiating from eyes and mouth. Cheekbones and jaw showing Southeast Asian prominence with broader Pacific Islander influence. Minimal grooming beyond necessity — no cosmetics, no softness. Skin shows minor scarring consistent with urban hazard exposure.",
+    "distinguishing_marks": [
+      "Thin white scar running 4cm along right jawline — impact injury, poorly healed",
+      "Network of faint surgical scars around both wrists and ankles where gecko-grip implants interface with skin",
+      "Burn scar on left inner forearm (8cm long) — chemical exposure, pre-augmentation era",
+      "Small tattoo on right collarbone — abstract geometric pattern, faded, pre-dating chrome work by decades"
+    ],
+    "visible_augmentations": "Wired reflexes visible as faint chrome threading along temples and down the sides of neck — subcutaneous lines catching light. Fingertip and toe-pad gecko-grip implants are visibly metallic at edges where synthetic material meets skin, most obvious on hands when they curl or grip. Adrenaline pump hardware visible as subtle mechanical articulation at base of skull when head is tilted.",
+    "posture_movement": "Economical, predatory grace — moves like someone who has optimized every gesture. Stands with weight balanced on balls of feet, ready for vertical or horizontal movement. Hands at rest near solar plexus. Eyes constantly scanning, cataloging exits and threats. No nervous fidgeting — stillness is absolute or motion is decisive.",
+    "clothing_style": "Tier 3-4 utilitarian: matte-black synthetic jacket with reinforced panels and internal pockets for data storage and small packages. Fitted tactical pants in charcoal with sealed cargo pockets. Magnetically-attached shoulder harness visible under jacket. Steel-toed climbing boots (custom-fitted for gecko-grip work). Minimal jewelry — only a worn titanium wrist cuff, possibly holding encrypted storage. No logos or corp affiliation markers. Everything speaks to function over identity."
+  },
+  "image_prompt": "Kai Nygaard, a 158cm compact figure with dense muscle and predatory grace, cyberpunk 2226. Medium warm tan skin with golden-olive undertones reflecting Southeast Asian, Pacific Islander, and Northern European heritage. Deep brown eyes alert and measuring, dark brown hair with silver at temples pulled tight in a braid. Weathered complexion with fine lines from two decades fieldwork, thin scar along right jawline. Chrome wired reflexes visible along temples and neck, metallic gecko-grip implants at fingertips and toepads catching light. Adrenaline pump hardware subtle at base of skull. Wearing matte-black reinforced synthetic jacket, charcoal tactical pants, steel-toed climbing boots, worn titanium wrist cuff. Standing with economical posture, weight on balls of feet, hands near solar plexus, eyes scanning. Urban industrial setting with neon accent lighting casting shadows across augmented interface points. Mood: focused, dangerous efficiency, ready for vertical movement. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 47.7,
+    "Northern European": 19.0,
+    "Pacific Islander": 12.0,
+    "East Asian": 11.4,
+    "Hispanic/Latin American": 9.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

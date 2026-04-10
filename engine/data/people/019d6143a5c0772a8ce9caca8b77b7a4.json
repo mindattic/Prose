@@ -1,0 +1,305 @@
+{
+  "id": "019d6143a5c0772a8ce9caca8b77b7a4",
+  "type": "character",
+  "name": "Haze Strömqvist-Faalele",
+  "aliases": [
+    "Benny Wrench",
+    "Old Benny"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Independent vehicle and augmentation mechanic",
+  "age": 58,
+  "status": "active",
+  "location": "Geartown, a licensed repair bay called Okonkwo-Hal's underneath the Brewer's Spine overpass, near Damen and Armitage",
+  "description": "Benedek is a compact man who seems to take up more space than his dimensions suggest — something about the way he moves through a workshop, slow and total in his attention, filling the room with the gravity of his focus. His skin is deep brown-black and his face is deeply lined around the eyes from decades of squinting at small components in bad light. His left arm from the elbow down is a working prosthetic he maintains himself — a deliberately unfancy unit that he's upgraded incrementally for thirty years, now a mismatched patchwork of components from four different manufacturers that somehow functions better than any single commercial model. He keeps a rag permanently over one shoulder that is gray-brown from such thorough use that its original color is unknowable.\n\nHe has a reputation that extends well beyond Geartown: if Benedek says it's fixed, it's fixed. If he says it can't be fixed, you listen. He has strong opinions about corponation augmentation warranties ('designed to expire, designed to make you pay twice'), which he will share whether or not you asked. He does unlicensed aug repair at prices humans can actually afford, though he will not discuss this openly. He maintains a relationship with the E.L.F. he calls Uncle Torque, to whom he offers annotated repair logs and photographs of difficult jobs. He believes Uncle Torque has never let him misdiagnose a problem.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "His hands failing — the prosthetic, the diagnostics, the thing that makes him who he is",
+      "Having built something that hurts someone"
+    ],
+    "core_desires": [
+      "To keep working until he physically cannot",
+      "To train someone who will carry on the unlicensed repair work when he's gone"
+    ],
+    "coping_mechanisms": [
+      "Submitting to the discipline of the work — problems that can be solved in a workshop don't scare him",
+      "Anger at corporate structures as a place to put grief"
+    ],
+    "blind_spots": [
+      "Dismisses emotional problems with mechanical solutions — tells people to eat and sleep instead of engaging their actual distress",
+      "Does not see how much people depend on him personally, not just his skills"
+    ],
+    "secret": "His prosthetic arm conceals a data-store he has been filling for twenty years: complete technical schematics for how to build, maintain, and modify every major corponation augmentation from scratch, without proprietary parts. He has told no one it exists. He hasn't decided what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise; uses medical and engineering terminology interchangeably; old-fashioned phrasing that feels like it comes from an earlier era of the city",
+    "cadence": "Measured, unhurried, with the rhythm of someone who thinks before every sentence",
+    "verbal_tics": [
+      "'Now listen to me carefully' (before anything important)",
+      "'That's a warranty problem' (meaning: someone designed it to fail)"
+    ],
+    "example_lines": [
+      "'Now listen to me carefully — that shiver in your wrist actuator isn't wear. They built that in. Six years, it fails. You pay them again. I can fix it so it doesn't.'",
+      "'I've been working on bodies longer than some of you have been inside one. Sit still.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has been approaching Geartown mechanics offering large sums for information about which residents have which unlicensed augmentations — Benedek is being pressured and has not yet decided how to respond.",
+    "He has quietly begun looking for a successor to teach; the right person showing up in the shop could change his life."
+  ],
+  "narrative_function": "Technical expert and fixer of things (not the criminal kind — the literal kind). Source of information about the augmentation black market and corporate planned obsolescence. Gateway to the underground aug-repair community. Potential ally who can repair gear that corponations won't touch.",
+  "augmentations": "Left arm prosthetic (self-built, rebuilt continuously). Magnification implants in both eyes — old Palladian units, modified beyond their original spec. Sensory enhancement in right hand fingers for tactile diagnostics.",
+  "daily_life": "Opens the bay at 08:00; works until the job is done, which is frequently 21:00 or later. Eats two meals in the bay. Closes on the first day of every month to 'settle accounts,' which means he spends the day alone doing maintenance on his own prosthetic and updating his repair logs.",
+  "affiliation": "Independent (licensed under Geartown Trades Collective); informal network of augmentation clinic dropouts and backroom surgeons",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "master mechanic",
+      "unlicensed aug repair",
+      "prosthetic arm",
+      "E.L.F. devotee",
+      "institutional knowledge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Diagnose before you act — always",
+      "If it was built to break, fix it so it won't — regardless of the warranty"
+    ],
+    "escalation_ladder": [
+      "Refuse politely with a technical explanation",
+      "Refuse directly with no explanation",
+      "Ask the person to leave",
+      "Call on the Geartown Trades Collective",
+      "Remove himself — he will not be cornered"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formally polite, assessing — asks more questions than he answers until he's decided whether to trust you",
+      "friends": "Warm in a rough, undemonstrative way — shows up, fixes things, says nothing sentimental"
+    },
+    "stress_responses": {
+      "low": "Works more slowly, checks his work twice as many times",
+      "medium": "Goes silent for long stretches; speaks only about the immediate technical problem",
+      "high": "Sends everyone out of the bay, contacts Uncle Torque, does not emerge until he has a plan"
+    },
+    "contradictions": [
+      "Deeply believes in fixing things for people regardless of ability to pay, but has a rigid internal accounting of favors owed that he never vocalizes"
+    ],
+    "habits": [
+      "Photographs every difficult repair before closing it up, for Uncle Torque's records",
+      "Drinks one cup of very strong tea at exactly 10:00 AM every day, no exceptions"
+    ],
+    "breaking_points": [
+      "Discovering a piece of work he did has caused harm through someone else's interference",
+      "Being told what he's doing is illegal by someone who benefits from it being illegal"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Self-built left arm prosthetic (elbow-down) — composite components from Helix Biosystems, Ringo, and Palladian, heavily modified",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Self-built left arm prosthetic (elbow-down) — composite components from Helix Biosystems, Ringo, and Palladian, heavily modified",
+      "replaces": ""
+    },
+    {
+      "name": "Palladian Mark-IV magnification ocular implants (both eyes, modified beyond original spec)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Palladian Mark-IV magnification ocular implants (both eyes, modified beyond original spec)",
+      "replaces": ""
+    },
+    {
+      "name": "Tactile diagnostic enhancement, right hand — fingertip pressure sensors and micro-vibration readers (Helix Biosystems, heavily modified)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tactile diagnostic enhancement, right hand — fingertip pressure sensors and micro-vibration readers (Helix Biosystems, heavily modified)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Face": 0.9,
+    "Manipulator": 0.7,
+    "Opportunist": 0.7,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2142 — Born in Geartown to a family of Nigerian-Bosnian heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2160 — Loses left arm below the elbow in a manufacturing accident; begins building his first prosthetic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2165 — Opens Okonkwo-Hal's in current location",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Begins systematically documenting corponation schematics in the arm data-store",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day; under pressure over unlicensed aug work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Brewer's Spine",
+    "The Quiet Room",
+    "Geartown",
+    "The Gradient Compact",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Dragan Petersen-Bah",
+    "Last Word",
+    "MERIDIAN",
+    "Marcus Bellamy",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Obafemi Szczypiński-Lautoa",
+    "Othniel Babić-Asantewaa",
+    "Palladian Construction",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation Distributed Reflex Mesh",
+    "The Pure Hand",
+    "The Third Rail",
+    "Uncle Noodle",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pacific Islander (51.6%) with significant East Asian (21.1%), Sub-Saharan African (17.6%), and Eastern European (9.7%) ancestry—a genetic blend reflecting the Ubiquitous Diaspora. The dominant Pacific Islander heritage shapes his bone structure and baseline complexion, with contributions from all ancestry groups creating a unique phenotype.",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Compact and dense, with the wiry strength of someone who's spent forty years manipulating precision tools. Shoulders slightly rounded from workshop posture, forearms disproportionately muscled from repetitive mechanical work.",
+    "hair_color": "Black with salt-gray at temples",
+    "hair_style": "Close-cropped, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown (augmented with visible Palladian lens architecture)",
+    "skin_tone": "Warm deep brown with golden-bronze undertones from Pacific Islander ancestry, darkened and weathered from decades of workshop lighting and solvent exposure. The baseline tone carries the subtle warmth of blended East Asian and Sub-Saharan African pigmentation layered beneath.",
+    "complexion": "Deeply lined around eyes and mouth; permanent squint-creases from thirty years of close-focus work in inadequate light. Facial structure shows the broader cheekbones and slightly wider nose bridge characteristic of Pacific Islander and Sub-Saharan African ancestry, softened by subtle East Asian features in the eye shape and jawline. Thin white scars across knuckles and fingers from small cuts and minor burns. Calloused palms and fingertips. Sparse facial hair, salt-and-pepper stubble often present.",
+    "distinguishing_marks": [
+      "Burn scar across the web of his right hand between thumb and forefinger, approximately 3cm width, pale and smooth from old healing",
+      "Linear scar along the left inner forearm (elbow to wrist) where prosthetic interface is fitted — surgical and precise",
+      "Network of small white scars across both palms in no particular pattern, tool-related accumulated injuries",
+      "Oil stain discoloration on the inside of his right wrist in a rough circular pattern, permanent from chronic exposure"
+    ],
+    "visible_augmentations": "Left arm from elbow down is a visibly working prosthetic: matte-black composite frame with exposed titanium actuators, mismatched metallic sections (brushed aluminum, gunmetal, bare steel) showing four decades of incremental component replacements. Fingers move with mechanical precision but lack synthetic skin — bare articulated joints visible. Lens implants in both eyes are subtly visible as a faint geometric precision to the iris boundary, older Palladian tech with barely perceptible alignment markers. Right hand fingers show minor LED indicator traces under the skin at the first knuckle — sensory diagnostic enhancement.",
+    "posture_movement": "Moves with deliberate slowness even in urgent situations — a man who prioritizes precision over speed. Shoulders angled slightly forward in permanent workshop posture. His left arm hangs at a slightly different angle than natural, and he compensates with unconscious micro-adjustments to his gait. Left hand movements are controlled and economical, never wasted. Right hand gestures frequently, compensating as his dominant hand.",
+    "clothing_style": "Tier 3-4 working practical: heavy canvas work coat (gray-brown, oil-stained, pockets worn soft from tools), usually unbuttoned. Underneath, simple long-sleeve thermal shirt or worn cotton henley. Work pants in dark tan canvas with tool-belt loops, pockets enlarged and re-sewn multiple times. Steel-toed boots (scuffed, re-soled twice, perfectly maintained). The rag permanently over his left shoulder is woven gray-brown — original color indeterminate from use. No jewelry. No visible corpo branding or tier indicators."
+  },
+  "image_prompt": "Haze Strömqvist-Faalele, 168cm compact-framed technician in cyberpunk 2226, medium-deep bronze skin with golden undertones from Pacific Islander heritage, deeply lined face with permanent workshop squint-creases, sparse salt-and-pepper stubble. Bare mechanical left prosthetic arm from elbow down with exposed titanium actuators in mismatched metals, matte-black composite frame with articulated fingers showing no synthetic skin. Both eyes augmented with visible Palladian lens architecture and subtle geometric iris markers. Older-model tech, worn and maintained. Wearing weathered gray-brown canvas work coat (oil-stained, pockets soft-worn), dark thermal henley underneath, tan canvas work pants with enlarged pockets, scuffed steel-toed boots. Gray-brown rag draped over left shoulder. Hands show scattered white scars, burn scar across right hand web, oil stains on wrist. Standing in workshop lighting with neon accent, deliberate posture, shoulders slightly forward. Precise, economical movement. No jewelry, no corpo branding. Atmospheric moody workshop setting with cool neon shadows and warm practical work lights. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 51.6,
+    "East Asian": 21.1,
+    "Sub-Saharan African": 17.6,
+    "Eastern European": 9.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

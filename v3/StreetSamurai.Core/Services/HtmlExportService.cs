@@ -776,7 +776,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             "corponations" => "bi-building",
             "factions" => "bi-shield-exclamation",
-            "characters" => "bi-people",
+            "people" => "bi-people",
             "places" => "bi-geo-alt",
             "technology" => "bi-cpu",
             "automata" => "bi-robot",

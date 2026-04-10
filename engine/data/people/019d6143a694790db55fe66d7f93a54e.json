@@ -1,0 +1,306 @@
+{
+  "id": "019d6143a694790db55fe66d7f93a54e",
+  "type": "character",
+  "name": "Remi Solberg-Tovar",
+  "aliases": [
+    "Pell",
+    "Scrapmouth"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Chop shop operator and parts fence in the Stockyard",
+  "age": 28,
+  "status": "active",
+  "location": "The Stockyard — Bay 7 of the Grainfort vehicle warehouse complex, third sublevel, near sub-level access near State and Van Buren",
+  "description": "Pelé is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nPelé has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.3,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the other arm — losing the craft entirely",
+      "Being trapped in a role they didn't choose for so long that they forget there were other options"
+    ],
+    "core_desires": [
+      "To own a legitimate shop eventually — real, licensed, above ground",
+      "To be recognized as skilled, not just useful"
+    ],
+    "coping_mechanisms": [
+      "Work — the physical absorption of disassembly is the closest thing they have to peace",
+      "The Socket shrine — the ritual of leaving offerings structures their week"
+    ],
+    "blind_spots": [
+      "Assumes everyone who offers help has an angle; misses genuine goodwill frequently",
+      "The prosthetic arm is developing a calibration issue they keep postponing addressing"
+    ],
+    "secret": "Three months ago they found something inside a Ferrogate Transit security hauler they were stripping — an encrypted drive hidden in a shielded compartment that definitely wasn't supposed to be there. They haven't sold it, haven't opened it, have told no one. It's under a floorboard in Bay 7 and they think about it every day."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical, mechanical metaphors for everything. Ukrainian-inflected vowel flattening from a grandparent they never met but whose speech patterns survived in the family. Samoan terms of intensity and emphasis woven through.",
+    "cadence": "Fast when talking about things they know, abrupt full stops when they don't want to continue a subject.",
+    "verbal_tics": [
+      "Taps the prosthetic forearm when thinking",
+      "'Yeah, no' to begin corrections",
+      "Long exhale instead of 'I don't know'"
+    ],
+    "example_lines": [
+      "'Yeah, no, that's a Ferrogate Series Nine transfer housing. You can't just swap it. The whole mount's proprietary. I've got one but it's going to cost you the actual number, not what you think the number is.'",
+      "'The Socket's been warm lately. Usually means someone nearby is in trouble. Could be you.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The encrypted drive under the floorboard — whoever lost it is looking, and they're looking hard enough that Stockyard people are getting visits",
+    "A teenage kid has been hanging around Bay 7 watching Pelé work; Pelé has started teaching them small tasks without acknowledging they're doing it, and the kid is the runaway child of someone with significant reach"
+  ],
+  "narrative_function": "Parts and equipment source, local color, potential ally for characters who need vehicle components or Ferrogate Transit system knowledge; their social network in the Stockyard makes them a useful connector.",
+  "augmentations": "Left arm full prosthetic replacement (matte black, exposed joints — functional grade, self-maintained). Subdermal toolkit implant in right forearm (micro-drill, wire stripper, voltage probe). Bioluminescent geneware — left jaw and cheekbone, copper-toned, activates under stress or exertion (cosmetic, unwanted).",
+  "daily_life": "Down in Bay 7 by 6am to receive incoming vehicles before the Grainfort loading crews arrive for their legitimate shift. Works through the day on disassembly and parts sorting. Afternoons are for buyers — fences, independent mechanics, and the occasional person who asks too few questions about provenance.",
+  "affiliation": "Loosely affiliated with the Stockyard Collective, a decentralized network of chop operators and salvagers who share intel and occasionally muscle; pays the Collective a ten percent cut of high-value jobs",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 4,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Craftsperson",
+      "Guarded",
+      "Street Competent",
+      "Hidden Depth",
+      "Mechanical Savant"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't take vehicles that come with bodies still in them — that's a different business",
+      "Price is price; no negotiating on labor, only on parts",
+      "If something feels wrong about a job, double the price as a screen — if they pay it, it's probably worse than you thought"
+    ],
+    "escalation_ladder": [
+      "Flat refusal",
+      "Refusal with enough technical detail to make clear they know what the job actually involves",
+      "Contacts the Collective to circulate a description"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessment mode — watches them move, watches what they look at, minimal words until calibrated",
+      "friends": "Still terse but the silences are comfortable; occasionally slides into technical enthusiasm that reads as warmth"
+    },
+    "stress_responses": {
+      "low": "Works faster, more noise from the tools",
+      "medium": "Goes completely silent; the bioluminescent patch on their jaw brightens",
+      "high": "Puts down whatever is in their hands, sits, and does not speak until they've decided on an action"
+    },
+    "contradictions": [
+      "Claims not to care about recognition while maintaining meticulous quality standards that serve no purpose in their current work except pride"
+    ],
+    "habits": [
+      "Wipes down tools in a specific order at end of day, every day",
+      "Leaves a burned-out component on the Socket shrine every morning — replaces yesterday's with a fresh one"
+    ],
+    "breaking_points": [
+      "Someone interfering with the shrine — the Socket is where they keep their version of hope"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "developing calibration drift",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "unwanted but functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Stockyard to a Ukrainian-Samoan dockworker family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost the left arm in a warehouse accident at fourteen; received the prosthetic replacement on a payment plan still not fully settled",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started working for a chop operator; demonstrated enough skill to be running their own section within two years",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over Bay 7 independently when the previous operator was arrested",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Sitting on an encrypted Ferrogate drive that is quietly reshaping their risk calculus",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Stockyard",
+    "Grainfort",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Copper",
+    "Tibor Osei-Svanstrom",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Ambrosia Fekete-Waiyaki",
+    "Anatoliy Faye-Nkrumah",
+    "Davi Ousseini-Brătianu",
+    "Doru Fofana-Câmpeanu",
+    "Fanta Kato-Adomako",
+    "Hauler",
+    "Irontide Tidal Energy",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "MERIDIAN",
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "The Collective",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "The Wire Taps",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East Asian (39.4%), Eastern European (36.0%), and Hispanic/Latin American (24.6%) ancestry creates a striking polychromatic blend—warm olive undertones from the Latin heritage, cooler undertones from Eastern European genetics, and the defined bone structure characteristic of East Asian ancestry. The combination produces a uniquely balanced facial architecture.",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined musculature from years of precision hand work; no excess mass, all economy of motion",
+    "hair_color": "Natural black",
+    "hair_style": "Cleanly shaved",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm olive with subtle golden undertones, the result of East Asian and Latin American heritage modified by Eastern European genetics; maintains an even complexion across the face with natural depth",
+    "complexion": "High, prominent cheekbones reflecting East Asian ancestry structure; clean-shaven face revealing the angular jawline; composed expression with eyes set at a slight upward cant; left jaw and cheekbone bear a faint copper bioluminescent geneware visible as a subtle shimmer under tension or exertion",
+    "distinguishing_marks": [
+      "Faint copper bioluminescent tracery across left jaw and cheekbone, most visible under stress",
+      "Subcutaneous toolkit implant visible as linear scarring along right forearm with three distinct anchor points",
+      "Chronic mechanical lubricant stains on hands and forearms that never fully wash clean"
+    ],
+    "visible_augmentations": "Left arm is a full matte-black prosthetic below the elbow with exposed joint mechanisms and articulated finger servos; right forearm bears visible subdermal implant scarring with integrated tool ports (micro-drill, wire stripper, voltage probe accessible at the wrist)",
+    "posture_movement": "Economical and precise; moves like someone who has trained their body for repetitive mechanical work; stands with weight distributed for balance and quick access to tools; hands are rarely still, frequently manipulating objects or making small adjustments; maintains steady eye contact but with a restless quality, as if calculating disassembly sequences even during conversation",
+    "clothing_style": "Mechanics' coverall in faded grey industrial fabric with both sleeves torn off at mid-bicep, exposing the prosthetic and implant work; chest and shoulders covered in salvaged badges, patches, and neighborhood identification markers sewn or pinned directly to the fabric; boots are heavy-treaded work grade, reinforced at the heel and toe; no jewelry or decorative items except the functional patches"
+  },
+  "image_prompt": "Remi Solberg-Tovar, 172cm lean mechanist with striking multiethnic features—prominent cheekbones, warm olive skin with golden undertones blending East Asian structure with Eastern European and Latin American genetics. Cleanly shaved head and face revealing sharp angular jawline. Dark brown eyes with restless, calculating gaze. Sleeveless grey industrial coverall torn at biceps, exposing full matte-black prosthetic left arm with exposed joint mechanisms and articulated servos. Right forearm displays visible subdermal toolkit scarring with integrated tool ports. Hands stained with chronic mechanical lubricant. Faint copper bioluminescent tracery visible across left jaw and cheekbone. Heavy-treaded work boots. Torso covered in salvaged badges and neighborhood patches. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit workshop environment, cool blue and amber lighting casting shadows across augmented limbs, precise posture suggesting nervous energy and mechanical contemplation, hands poised mid-gesture as if deconstructing invisible machinery, photorealistic detail on prosthetic articulation and bioware luminescence --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 39.4,
+    "Eastern European": 36.0,
+    "Hispanic/Latin American": 24.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

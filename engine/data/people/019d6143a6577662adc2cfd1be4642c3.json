@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a6577662adc2cfd1be4642c3",
+  "type": "character",
+  "name": "Omid Quiñones-Najjar",
+  "aliases": [
+    "the Erased",
+    "Maï"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "The Disappeared — former surface archivist who erased herself from all records",
+  "age": 51,
+  "status": "active",
+  "location": "Irkalla, deep shrine level, in a repurposed transit control room she calls the Index, near Halsted and Division",
+  "description": "Maïmouna is a compact, precise woman who moves like she is conscious of leaving no unnecessary impression — small steps, still hands, a habit of placing herself where light doesn't quite reach. Her hair has gone to silver-grey and she wears it very short; her face is sharp-featured, with dark eyes that retain the particular focused quality of someone who spent decades professionally categorizing things. She is fifty-one but looks it honestly, without apology. She has no augmentations and has removed two she previously had, leaving faint scar traces at her temples where a standard cognition-assist had been wired in. The removal of those implants was the last step of erasing herself.\n\nShe was, in her surface life, a senior archivist for a Palladian data governance subsidiary — one of the people who decides what information exists and in what form. She knows how corporate memory works, how records are structured, how deletion operates, and what can and cannot truly be made to disappear. She used that knowledge to vanish twelve years ago, and she now runs the Index: a physical archive of documents, handwritten records, and memorized information that exists nowhere in any network. People come to her to find things that have been deleted from all accessible systems. She charges in labor, not currency.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.7,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "Being found and her Index destroyed",
+      "Having made the wrong call twelve years ago — that what she uncovered was not what she thought it was"
+    ],
+    "core_desires": [
+      "To finish transcribing everything she knows before she dies",
+      "For the Index to outlast her, maintained by someone who understands what it's for"
+    ],
+    "coping_mechanisms": [
+      "Rigid routine as structure against the ambient fear of discovery",
+      "The act of archiving itself — converting chaos into organized knowledge"
+    ],
+    "blind_spots": [
+      "Her expertise in information systems makes her assume she can always detect surveillance; she's underestimated physical, non-digital tracking methods",
+      "She's begun trusting a small number of visitors more than her security protocols justify"
+    ],
+    "secret": "She disappeared because she discovered that Palladian had been systematically erasing records of deaths — workers, mostly, in their deep-infrastructure contracts — and replacing them with falsified transfer documents. She copied what she found before vanishing. The copies are in the Index. She has never told anyone this is why she's here."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal archival language stripped to essentials; precise word choice; has a habit of using the passive voice as a deflection",
+    "cadence": "Measured and even; almost no vocal variation, which makes the rare moments of inflection meaningful",
+    "verbal_tics": [
+      "Pauses before proper nouns as if considering whether to use them",
+      "Says 'it has been noted' instead of 'I remember'"
+    ],
+    "example_lines": [
+      "It has been noted that Palladian's 2186 infrastructure contracts contained certain staffing irregularities. Whether that is what you are looking for remains to be seen.",
+      "The appointment system exists because what is freely offered is freely disrespected. Your mark was on the junction. Come in."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has begun leaving messages at her appointment junction in a cipher she recognizes — it was the internal code language of her former Palladian division, which means someone from her old life has found a breadcrumb trail",
+    "She has agreed to take on an apprentice to continue the Index, but the young person she's chosen is, unknown to her, also being cultivated as an informant by an Undertow faction leader"
+  ],
+  "narrative_function": "Primary source for deleted or buried information — corporate records, disappeared persons, expunged histories; her price (labor, not money) can generate additional story threads; her knowledge of Palladian's data architecture is a resource corporations would kill to control",
+  "augmentations": "None — had a Palladian cognition-assist removed, scarring visible at temples; otherwise unaugmented by choice",
+  "daily_life": "Wakes at the same time every day by internal clock, maintains the Index through a rigorous handwritten cataloguing system, receives visitors by appointment only (appointment means leaving a chalk mark at a specific tunnel junction), spends her evenings transcribing information from memory into permanent physical form.",
+  "affiliation": "Independent; known to the Bore Rat community as a neutral resource",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information-broker",
+      "the-disappeared",
+      "former-corporate",
+      "archivist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The Index's security comes before any individual request, always",
+      "She will not search for information that will be used to harm a person who has disappeared by choice — she considers that a sacred category"
+    ],
+    "escalation_ladder": [
+      "States clearly what she will and will not do",
+      "Closes the session and withdraws into the Index",
+      "Has a disappearance protocol — she has prepared a secondary location and can be gone in two hours if necessary"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal and assessing; gives nothing until she has enough data to form a judgment",
+      "friends": "Marginally warmer — she asks questions that show she remembers everything they've told her, which is both touching and slightly unnerving"
+    },
+    "stress_responses": {
+      "low": "Becomes more formal, not less",
+      "medium": "Begins an unscheduled audit of the Index",
+      "high": "Initiates disappearance protocol review — checks routes, checks supplies — without telling anyone"
+    },
+    "contradictions": [
+      "Has built her entire underground life around the principle that some information should not be found, while maintaining an archive of the most dangerous information she possesses"
+    ],
+    "habits": [
+      "Writes in a micron script so small it requires a loupe to read — a habit from archiving that also functions as security",
+      "Counts ceiling tiles in unfamiliar spaces"
+    ],
+    "breaking_points": [
+      "Discovery that someone has physically photographed or copied pages of the Index without permission — she would close the Index permanently and disappear again"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "scar tissue remains at temples",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to a family with roots in multiple diaspora communities",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior archivist at Palladian data governance subsidiary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to senior archivist; given access to classified infrastructure contracts",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the death-record falsification pattern; copied evidence and erased herself from all systems",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Descended to Irkalla and established the Index",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Index now contains twelve years of handwritten records and her complete professional memory",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "VitaCore SteadyField Precision Motor Implant",
+    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Palladian Construction",
+    "The Gradient Compact",
+    "Irkalla",
+    "ARCHIVE",
+    "The Pure Hand",
+    "Silver",
+    "Slagworks Industrial",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Bashir Quansah-Mehrotra",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Dzintars Ababio-Suleimenov",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Jefferson Switch",
+    "Narrowcast",
+    "Ngaire Kuznetsov-Adu",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Praevex",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Corponation Lattice Whisper Node",
+    "The Chorus of David Park",
+    "The Heritage Vault",
+    "Yannick Tambadou-Reinholt",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed global ancestry: 30.6% Middle Eastern, 25.9% South Asian, 25.6% Hispanic/Latin American, 9.2% Northern European, 8.7% Sub-Saharan African. Features reflect this complex blend—warm brown skin with subtle golden and olive undertones, sharp cheekbones suggesting South Asian and Middle Eastern heritage, narrow jaw with Hispanic/Latin definition.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and precise, almost ascetic — lean without being frail, with the economical musculature of someone who moves deliberately. No excess.",
+    "hair_color": "Silver-grey, natural",
+    "hair_style": "Cropped very short, blunt-cut, styled for minimal maintenance and maximum non-visibility",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm golden-brown with olive and amber undertones, reflecting the blend of Middle Eastern, South Asian, Hispanic, and Sub-Saharan ancestry",
+    "complexion": "Sharp-featured face with high cheekbones characteristic of South Asian and Middle Eastern genetics, narrow jaw with Hispanic definition; skin is clear but shows the fine lines of fifty-one years without cosmetic intervention; expression habitually controlled, eyes carry the focused, cataloguing intensity of a professional archivist",
+    "distinguishing_marks": [
+      "Faint linear scars at both temples where a Palladian cognition-assist was removed, barely visible unless light catches at an angle",
+      "Small, almost invisible burn scar on the inside of her left wrist from document handling fluid — ten millimeters long"
+    ],
+    "visible_augmentations": "None visible. The removal of her neural implants was deliberate; no replacement augmentations. This absence is itself conspicuous to those who know her history.",
+    "posture_movement": "Moves in economical, deliberate steps with minimal displacement of air or attention. Hands remain still until needed. She positions herself in shadows or at the edge of rooms as if conscious of occupying as little space as possible. When she does move, it is purposeful — no wasted motion.",
+    "clothing_style": "Tier 4 utilitarian, worn with precision. Dark grey or black cotton layers — loose long-sleeved shirt over fitted tank, practical cargo pants with multiple pockets for documents and writing implements. Worn leather journal bag across her body. No visible logos or corporate markers. Shoes are scuffed grey canvas, comfortable for the Irkalla tunnels. Everything is maintained but deliberately aged; nothing new enough to draw attention."
+  },
+  "image_prompt": "Omid Quiñones-Najjar, 51-year-old archivist in GLMZ 2226, compact 158cm frame with economical lean musculature. Sharp-featured face with high cheekbones and narrow jaw, warm golden-brown skin with subtle olive undertones reflecting Middle Eastern, South Asian, and Hispanic heritage. Short blunt-cut silver-grey hair, dark unaugmented eyes carrying cataloguing intensity. Faint temple scars from removed neural implants barely visible. Dressed in layered dark grey utilitarian Tier 4 clothing—loose long-sleeved shirt, fitted tank, practical cargo pants, worn leather journal bag. Scuffed grey canvas shoes. Standing in shadow at tunnel edge, posture deliberately minimized, hands still, expression controlled. Dim bioluminescent tunnel lighting, cool color temperature, cinematic cyberpunk atmosphere, no augmentations visible, worn leather and aged fabric textures prominent. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 30.6,
+    "South Asian": 25.9,
+    "Hispanic/Latin American": 25.6,
+    "Northern European": 9.2,
+    "Sub-Saharan African": 8.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

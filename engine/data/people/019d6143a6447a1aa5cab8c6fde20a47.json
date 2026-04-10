@@ -1,0 +1,293 @@
+{
+  "id": "019d6143a6447a1aa5cab8c6fde20a47",
+  "type": "character",
+  "name": "Tarn Johansson",
+  "aliases": [
+    "Kgomo",
+    "The Old Engine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Independent mechanic specializing in legacy vehicle systems, Geartown",
+  "age": 61,
+  "status": "active",
+  "location": "Geartown — owns and operates Arriola's Bay, a three-bay garage on Ironvein Spur Street, near Milwaukee and Damen",
+  "description": "Kgomo is built like something that was designed to take a load and did. He's massive across the shoulders in the way of a man who has been lifting engines since before most people reading this were born, with a belly that has arrived in the last decade and which he regards with philosophical detachment. His Batswana-Norwegian heritage has given him dark brown skin sun-cured to near-black at the forearms, close-cropped white hair, and a beard he maintains with the same precision he applies to torque specifications. His right arm from the elbow down is industrial-grade chrome — a work accident at forty-three that he replaced with the best mechanical limb he could afford (not very, at the time) and has since upgraded three times. It is visibly mismatched: different grades of metal, a panel that's clearly from a different model year. He considers it charming.\n\nKgomo is not warm in the way of someone who performs warmth. He is warm in the way of a specific tool that has been exactly right for the job so many times that you trust it completely. He has opinions about everything, delivers them once, and does not repeat himself. He has been repairing vehicles in Geartown for thirty years and knows which machines can be saved and which are already gone — a judgment he applies, somewhat unsubtly, to people as well.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "The garage failing — being the last thing he built that couldn't be saved",
+      "His body failing before the work is done"
+    ],
+    "core_desires": [
+      "Mastery recognized on its own terms, without having to argue for it",
+      "His apprentice to be better than him — not as good, better"
+    ],
+    "coping_mechanisms": [
+      "Work as identity structure",
+      "Dark humor applied to everything including himself"
+    ],
+    "blind_spots": [
+      "Dismisses problems he can't solve mechanically as problems that probably deserve to exist",
+      "Cannot see when his bluntness shuts people down rather than cutting to the useful truth"
+    ],
+    "secret": "He was present — as a young mechanic doing contract work — when a Ferrogate Transit vehicle was modified illegally, and that modification contributed to a rail accident that killed nine people in 2176. He was not responsible for the modification. He knew about it. He said nothing. He has lived with this for twenty-four years. The Ferrogate grudge is not about money."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with mechanical jargon, proverbs delivered deadpan, occasional Setswana when irritated",
+    "cadence": "Deliberate. Economy of words. Long silences that mean he is deciding whether something is worth saying.",
+    "verbal_tics": [
+      "'Mm.' as a full sentence",
+      "Refers to machines as 'she' regardless of what the machine is"
+    ],
+    "example_lines": [
+      "'She's not dying. She's telling you she's been ignored. Those are different problems and only one of them is yours.'",
+      "'I'll tell you once what I think. After that, you're on your own.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Something came into the bay for repair that he recognized — a vehicle modification he has not seen in twenty-four years. He needs to know who brought it in and where they got the parts.",
+    "His apprentice has gone missing. Kgomo has not reported it to anyone official. He is handling it himself, badly, because he does not trust official."
+  ],
+  "narrative_function": "Mechanical resource and Geartown local authority. Can repair, modify, or assess almost any vehicle or mechanical system. Source of Geartown neighborhood history and old grudges. May hire players for retrieval of parts or information. Has seen enough to be useful as a reluctant informant.",
+  "augmentations": "Right arm prosthetic from elbow down (industrial grade, visibly multi-generation, chrome-and-matte-black mismatched panels); joint reinforcement in both knees (budget medical, done at a clinic in The Narrows).",
+  "daily_life": "Opens the bay at 0600. Works until his knees require it to be otherwise, usually around 1900. Eats lunch at the same Bolivian-Thai cart on Ironvein Spur at 1200 every day. Has an apprentice — a nineteen-year-old he hasn't fired yet, which he considers a compliment.",
+  "affiliation": "Independent; Geartown mechanic's cooperative (informal); old grudge with Ferrogate Transit's maintenance contracting division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "skilled tradesperson",
+      "Geartown fixture",
+      "moral wound",
+      "reluctant witness",
+      "old-school"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it can be fixed, fix it; if it can't, say so clearly and let people grieve",
+      "Never do work he doesn't stand behind — his name is on every repair"
+    ],
+    "escalation_ladder": [
+      "One clear statement of the problem",
+      "Refusing to continue the conversation",
+      "Physical intervention if someone is damaging his property or his people",
+      "Absolute nuclear option: tell someone something true that he has been holding for a long time"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and noncommittal — quotes a price, asks what's wrong, doesn't elaborate on himself",
+      "friends": "Blunt and reliable, shows up without being asked, never says 'I love you' but will drive three hours to bring you a part"
+    },
+    "stress_responses": {
+      "low": "Works more quietly than usual",
+      "medium": "Gets methodical to the point of rigidity — everything in its exact place",
+      "high": "Goes to the garage alone at 0300 and works until it's resolved or he collapses"
+    },
+    "contradictions": [
+      "Claims not to care what people think of him, has a shelf of handwritten notes from satisfied customers that he rereads when no one is watching"
+    ],
+    "habits": [
+      "Tests every tool at the start of a day — not because they need it, because it makes him feel that things are in order",
+      "Keeps a small iron figure of Ogun on the bay wall — old habit from a Geartown neighbor, not his tradition but he's kept it for twenty years"
+    ],
+    "breaking_points": [
+      "Someone hurting his apprentice",
+      "Someone using his garage for something that gets a person killed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown, Batswana-Norwegian heritage",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began working as a mechanic's assistant in Geartown's contract yards",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witness to the illegal Ferrogate modification; says nothing. Nine people die in the subsequent rail accident.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Work accident costs him his right arm; opens Arriola's Bay the following year on insurance and debt",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Takes on his current apprentice",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Widowmaker' Rigged Power Tool"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Heritage Vault",
+    "Geartown",
+    "Ironvein",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Altan Tanaka-Frimpong",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Devraj Solano-Yildirim",
+    "Ferrogate Transit",
+    "Free Assembly",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Marcus Bellamy",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Slagworks Industrial",
+    "Solveig Tambadou-Kereselidze",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "TESSERA CR-12 'Whisper'",
+    "The Narrows",
+    "The Pure Hand",
+    "Toivo Diallo-Achebe",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (63%), East Asian (25%), Pacific Islander (11%), with traces of Hispanic/Latin American heritage. A striking blend that manifests in his dark brown eyes, the robust bone structure of his face, and the particular distribution of muscle and weight across his frame—a combination that speaks to resilience across continents.",
+    "height_cm": 188,
+    "weight_kg": 112,
+    "build": "Massive across the shoulders and chest with the dense muscle of six decades of heavy labor; a prominent belly acquired in the last ten years that he carries without self-consciousness. Thick-limbed, substantial through the torso.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, maintained with geometric precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep warm brown with strong melanin density; darkened to near-charcoal at the forearms and neck from decades of sun exposure; the torso retains richer, slightly lighter brown tones. The variation speaks to countless hours bent over engine work in harsh light.",
+    "complexion": "Weathered, lined face with deep creases around the eyes and mouth from four decades of squinting into engine bays. The facial structure shows the broad cheekbones and defined jawline characteristic of his Sub-Saharan and East Asian heritage, softened by age and the natural fullness that comes with his build. Beard maintained with the same precision as his work—even, salt-and-pepper transitioning to white, roughly 2cm in length. Skin shows old burn marks and grease stains that no amount of scrubbing fully removes.",
+    "distinguishing_marks": [
+      "Deep circular burn scar on the left forearm from an oil-bath incident in his thirties, roughly 8cm in diameter.",
+      "Jagged scar running along the right side of the ribcage, visible when shirtless, from a vehicle shift accident at age 36.",
+      "Fine white lines across the knuckles and back of both hands — occupational wear from decades of manual work.",
+      "Old tattoo on the left shoulder blade: a wrench and hammer crossed, blue-green ink faded to grey-blue, done when he was twenty-two."
+    ],
+    "visible_augmentations": "Right arm from elbow down is industrial-grade chrome prosthetic, visibly multi-generational and mismatched. The forearm is brushed steel; the hand assembly is matte black with exposed hydraulic lines. The elbow joint shows three different generations of metalwork—an earlier segment in dull chrome, a mid-section in polished steel, the newest hand assembly in aerospace-grade aluminum. Seams between sections are visible, some sealed with industrial epoxy. The fingers move with mechanical precision but lack flesh-tone covering. Bilateral knee bracing visible only when he moves—the slight asymmetrical gait and the faint servo whisper when he stands or descends stairs indicate reinforcement.",
+    "posture_movement": "Moves with the deliberate efficiency of someone who has learned to work around chronic pain. Stands with weight shifted to the left; favors his left leg slightly when stationary. When working, he settles into postures as if they are familiar chairs—economical, patient. Carries his right arm slightly lower than his left, as if its weight is a known constant. Does not fidget. Does not waste movement.",
+    "clothing_style": "Tier 4 utilitarian. Workwear: reinforced canvas pants, usually dark grey or black, with multiple thigh pockets and a tool belt that has been his for fifteen years. His shirts are mechanics' shop-branded from various eras—some from corpo garages he worked for decades ago, some from local suppliers. A faded Ferrogate Transit polo from 1997 that he still wears despite the grudge, worn soft. In winter, a synthetic-wool lined jacket, patched at the elbows. His boots are steel-toed, resoled three times, the leather cracked and shaped exactly to his feet. A simple chrome wedding band on his left ring finger, worn thin. No jewelry beyond that. No visible corporate logos he chose voluntarily. Everything functional, nothing aspirational."
+  },
+  "image_prompt": "Tarn Johansson, 188cm tall industrial mechanic in his sixties, deep warm brown skin darkened to charcoal at neck and forearms from decades of labor. Weathered angular face with broad cheekbones, deep creases around dark brown eyes, white close-cropped hair, salt-and-pepper beard. Massive broad-shouldered build with prominent belly, thick-limbed. Wearing faded shop-branded polo shirt and reinforced dark canvas work pants, tool belt worn fifteen years. Industrial-grade chrome prosthetic right arm from elbow down—brushed steel forearm, matte black hand with exposed hydraulic lines, multiple generations of metalwork visible at elbow joint. Bilateral knee bracing visible in asymmetrical gait. Old burn scar on left forearm, faded wrench-and-hammer tattoo on shoulder blade. Standing in dimly lit garage bay with warm overhead work lights, servo whisper audible as he shifts weight. Cyberpunk 2200s, hyper-realistic, weathered, functional, no wasted movement. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 63.0,
+    "East Asian": 25.0,
+    "Pacific Islander": 10.9,
+    "Hispanic/Latin American": 1.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

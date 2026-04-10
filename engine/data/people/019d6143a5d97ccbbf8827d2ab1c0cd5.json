@@ -1,0 +1,333 @@
+{
+  "id": "019d6143a5d97ccbbf8827d2ab1c0cd5",
+  "type": "character",
+  "name": "Ishaan Kulkarni",
+  "aliases": [
+    "Ember",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Evidence removal and scene sanitation — cleaner",
+  "age": 40,
+  "status": "active",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Division",
+  "description": "Chiamaka Akerlund-Mensah-Bonsu is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 40, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a cleaner out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Chiamaka Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.34,
+      "ideal": 0.61,
+      "id": 0.4,
+      "shadow": 0.78,
+      "mask": 0.59,
+      "ghost": 0.69
+    },
+    "core_fears": [
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "Betrayal by someone they trust — the only currency that matters",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Justice — the corporate kind, where the punishment fits the profit margin"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Exercises compulsively — the body must be ready, always",
+      "Humor — deflects everything serious with jokes until the joke becomes the personality"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Chiamaka Akerlund-Mensah-Bonsu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Uses technical jargon for everything, including emotions"
+    ],
+    "example_lines": [
+      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
+      "\"There was never anyone here. There was never anything here. Are we clear?\"",
+      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Chiamaka Akerlund-Mensah-Bonsu intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "Chiamaka Akerlund-Mensah-Bonsu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A corporate black site Chiamaka Akerlund-Mensah-Bonsu once infiltrated is being reopened, and the people inside know his face"
+  ],
+  "narrative_function": "Chiamaka Akerlund-Mensah-Bonsu functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.59,
+      "caution": 0.71,
+      "loyalty": 0.21,
+      "greed": 0.68,
+      "empathy": 0.91
+    },
+    "drives": [
+      "knowledge",
+      "freedom",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 3,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "strategic thinking under pressure"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "overconfidence in specialty areas leading to blind spots"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "cleaner",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible RE-2 'Receptionist'",
+    "Djeneba Park-Traore",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Glenville Sound",
+    "Lazarus LX-2 'Lab Rat'",
+    "Mika Sorel",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA CR-12 'Whisper'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Lattice",
+    "The Quiet Room",
+    "The Shelf",
+    "Veslemøy Achebe-Tursynov",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian, South Asian, Sub-Saharan African, Hispanic/Latin American, and Middle Eastern blend — a genetic cocktail of the Ubiquitous Diaspora reflecting global migration patterns. Facial structure shows Southeast Asian cheekbones with South Asian nose bridge definition, Sub-Saharan African lip fullness, and warm undertones suggesting Latin American and Middle Eastern ancestry contributions.",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Wiry and lean with defined musculature from climbing work; minimal body fat; posture suggests coiled readiness rather than relaxation",
+    "hair_color": "Dark brown with premature silvering at temples",
+    "hair_style": "Close-cropped fade, maintained with precision — functional, unremarkable",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with alert, calculating expression",
+    "skin_tone": "Warm medium brown with golden undertones — deeper in complexion from Sub-Saharan and South Asian ancestry, brightened by Southeast Asian and Latin American heritage blending",
+    "complexion": "Weathered but not scarred visibly on the face; jaw clenches habitually; lines around the eyes from sustained focus work; minimal facial hair, kept clean-shaven for operational anonymity. Cheekbones prominent and defined, suggesting Southeast Asian ancestry; broad nose bridge with warm nostril flare reflecting South Asian heritage; full lips and rich skin depth from Sub-Saharan genetics",
+    "distinguishing_marks": [
+      "Thin white scar running along the left forearm from wrist to elbow — old injury, poorly healed before augmentation",
+      "Small burn mark on right shoulder blade — chemical exposure during early contract work",
+      "Faint tattoo of a geometric pattern on the inner right wrist — personal marker, always covered by clothing or gloves"
+    ],
+    "visible_augmentations": "Chrome pain editor hardware visible at left temple and along the base of the skull — silvered neural interface nodes barely concealed by hair; gecko-grip finger implants visible as subtle textured ridge patterns along fingertips and the soles visible when barefoot; no attempt at concealment",
+    "posture_movement": "Moves with contained efficiency — no wasted motion, economical gestures. At rest, frequently fidgeting or shifting weight between feet. Eyes track exits and potential obstacles habitually. When in motion, flows through space with the precise coordination of someone who climbs vertical surfaces; quick reflexes, minimal deliberation",
+    "clothing_style": "Dual wardrobe: civilian cover wears nondescript Tier 4 streetwear — cheap synthweave jackets, faded dark cargo pants, worn polymer-soled boots from discount chains, nothing that marks him as memorable. On-contract wears tactical gear: reinforced climbing harnesses, adhesive-grip gloves, sealed utility vest with tool distribution for scene work, dark matte finishes, all function over aesthetics. No corporate branding, no gang markers, no persona."
+  },
+  "image_prompt": "Cyberpunk 2226, Ishaan Kulkarni, lean 173cm mixed-heritage operator with warm medium-brown skin blending Southeast Asian, South Asian, Sub-Saharan African, and Latin American genetics; prominent cheekbones, defined nose bridge, full lips, dark eyes with calculating gaze. Close-cropped fade with silver at temples. Chrome neural interface nodes visible at left temple barely concealed by hair. Silvered gecko-grip augmentations visible on fingertips. Wiry muscular build, posture coiled and efficient. Wearing faded nondescript synthweave jacket and dark cargo pants, worn boots, or alternatively tactical climbing harness with sealed matte utility vest. Habitual jaw tension, eyes scanning exits. Urban Great Lakes Metropolitan Zone setting, cool neon lighting casting shadows across augmented features, utilitarian and forgettable presence despite cutting-edge implants. Alert and ready, minimal deliberation. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 25.3,
+    "South Asian": 24.5,
+    "Sub-Saharan African": 23.3,
+    "Hispanic/Latin American": 22.4,
+    "Middle Eastern": 4.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

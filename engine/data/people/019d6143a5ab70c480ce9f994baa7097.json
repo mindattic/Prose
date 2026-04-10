@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a5ab70c480ce9f994baa7097",
+  "type": "character",
+  "name": "Kira Arredondo",
+  "aliases": [
+    "Orion",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Personal security and threat neutralization — bodyguard",
+  "age": 35,
+  "status": "active",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
+  "description": "Altan Tanaka-Frimpong is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Altan Tanaka-Frimpong plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Tanaka-Frimpong describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.35,
+      "ideal": 0.14,
+      "id": 0.8,
+      "shadow": 0.62,
+      "mask": 0.15,
+      "ghost": 0.72
+    },
+    "core_fears": [
+      "Their past catching up — debts, enemies, broken promises",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Betrayal by someone they trust — the only currency that matters"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Ritual — follows the same pre-job routine every time, superstition as structure"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Assumes their skill set is more transferable than it actually is",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Altan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"You're paying me to be the thing between you and everything else. Stay behind me.\"",
+      "\"I don't protect people I don't respect. Lucky for you, I respect your money.\"",
+      "\"The threat you see isn't the one that kills you. Watch my eyes, not my hands.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Altan Tanaka-Frimpong a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "A dead drop Altan Tanaka-Frimpong maintains is found and cleaned out — whoever did it now has leverage",
+    "Altan Tanaka-Frimpong intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Altan Tanaka-Frimpong functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 9
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 6
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.71,
+      "caution": 0.31,
+      "loyalty": 0.11,
+      "greed": 0.41,
+      "empathy": 0.77
+    },
+    "drives": [
+      "money",
+      "survival",
+      "knowledge"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 4,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "physical endurance",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "inability to delegate — must control everything personally",
+      "risk-averse to the point of missed opportunities"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "bodyguard",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Counts ammunition obsessively — knows the exact round count at all times"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Internal air filtration system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Protector": 0.9,
+    "Sentinel": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
+  ],
+  "registered_firearms": [
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
+  ],
+  "related_entities": [
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9",
+    "Chicago",
+    "Arcturus BH-2 'Marrow'",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
+    "Arcturus Exo-Runner Frame",
+    "Bioelectric Muscle Fiber",
+    "Brecken Yılmaz-Osei",
+    "Carrion Defense Works",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Djeneba Park-Traore",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Nnamdi Ostrowski-Faletolu",
+    "Synaptrel",
+    "TERMINUS",
+    "TESSERA CC-6 'Shepherd'",
+    "The Pure Hand",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multicontinental blend: primarily Hispanic/Latin American with substantial Middle Eastern and Southeast Asian ancestry, complemented by South Asian and minor Northern European heritage. The result is a striking convergence of features — warm olive undertones from the Latin American and Middle Eastern mix, refined by Southeast Asian bone structure, with subtle South Asian depth in eye shape and coloration.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Rawboned and efficient — lean muscle over long bones, minimal body fat, the physique of someone who treats their body as functional equipment rather than an investment. No wasted mass.",
+    "hair_color": "Black with premature gray at temples",
+    "hair_style": "Cropped close to the scalp, practical, sharp line fade",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm olive with golden undertones — a complex blend reflecting Latin American, Middle Eastern, and Southeast Asian ancestry. Medium depth with luminous quality.",
+    "complexion": "Sharp, angular features with high prominent cheekbones and defined jaw — Southeast Asian structure refined by Middle Eastern and Latin American heritage. Skin tight over bone, unmarked face suggesting either exceptional care or exceptional luck. Fine lines around the eyes — accumulated squinting, accumulated years. Subtle warmth in skin undertone across the face.",
+    "distinguishing_marks": [
+      "Horizontal scar across the left shoulder blade — old, surgical origin, partially hidden by standard clothing",
+      "Faded tattoo on inside of right wrist — geometric pattern, origin and meaning deliberately obscure",
+      "Thin burn scar running along the left side of the neck, barely visible, consistent with thermal weapon discharge"
+    ],
+    "visible_augmentations": "Surgical chrome around the sternum and upper ribcage — intake vents for the synthetic respiratory system are visible through open-collar shirts as fine metallic lattice work. No attempt to conceal. The legs show minimal external modification but move with uncanny efficiency — synthetic muscle fiber replacement evident only in motion, in the unnatural snap of acceleration and deceleration.",
+    "posture_movement": "Moves with deliberate economy — no flourish, no wasted motion. Stands at angles rather than head-on, shoulders relaxed but never fully slack. Weight balanced on the balls of his feet even when stationary. Eyes track constantly, threat assessment running on automatic. When he walks, there's a mechanical precision to the leg movement, the stride too perfect, too controlled.",
+    "clothing_style": "Tier 4 utilitarian — dark synthetic shell jacket with modular pockets, worn over fitted charcoal compression shirt. Carbon-weave pants, reinforced at knees and thighs. Tactical boots, scuffed, broken in. Minimal branding. No jewelry. All clothing is functional, replaceable, untraceable. Carries a messenger bag across the chest — worn leather, contents unknown."
+  },
+  "image_prompt": "Kira Arredondo, 188cm tall, lean muscular build, cyberpunk 2226. Warm olive skin tone with golden undertones, sharp angular features with high cheekbones and defined jaw, dark brown eyes. Black hair with gray at temples, cropped close fade. Chrome surgical vents visible on sternum and upper ribcage through open charcoal compression shirt. Thin burn scar along left neck. Faded geometric wrist tattoo. Wearing dark synthetic tactical shell jacket, carbon-weave reinforced pants, scuffed boots. Worn leather messenger bag across chest. Posture economical and precise, standing at angle, weight balanced, eyes tracking. Moves with unnatural mechanical snap in legs — synthetic muscle fiber replacement. Minimal branding, no jewelry, all functional untraceable gear. Great Lakes Metropolitan Zone neon-lit industrial setting, cool blue-amber atmospheric lighting, threat-assessment ready stance, cold professional demeanor, cybernetic augmentation visible, utilitarian operator aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 29.4,
+    "Middle Eastern": 27.1,
+    "Southeast Asian": 23.7,
+    "South Asian": 12.1,
+    "Northern European": 7.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

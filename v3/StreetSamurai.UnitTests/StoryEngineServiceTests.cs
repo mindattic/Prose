@@ -77,7 +77,7 @@ public class ConsequenceServiceTests
     public void Setup()
     {
         rootDir = Path.Combine(Path.GetTempPath(), $"ss_consequence_{Guid.NewGuid():N}");
-        var charDir = Path.Combine(rootDir, "engine_data", "characters");
+        var charDir = Path.Combine(rootDir, "engine_data", "people");
         Directory.CreateDirectory(charDir);
         var paths = new TestPathProviderWithRoot(rootDir);
         repo = new CharacterRepository(paths);

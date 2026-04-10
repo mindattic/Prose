@@ -1,0 +1,261 @@
+{
+  "id": "019d6143a6de70b09391a0ff4e654f83",
+  "type": "character",
+  "name": "Marek Petrović",
+  "aliases": [
+    "The Director",
+    "Mr. Voss",
+    "Margin Call Lead"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Crew lead and strategic operations director — The Margin Call",
+  "age": 47,
+  "status": "active",
+  "location": "Meridian Core — maintains an office suite in a mid-tier commercial building under a shell consulting company, near State and Monroe",
+  "description": "Sterling Voss left Veridian Health Sciences five years ago as a Senior Director of Competitive Intelligence. The title meant he ran the division that stole other corporations' secrets. He was exceptional at it — methodical, patient, and possessed of an institutional understanding of corporate psychology that no street runner can replicate. When Veridian's internal politics turned and his division was restructured (a euphemism for purged), Sterling walked out with his knowledge, his augmentations, and the understanding that the corporate world would eventually need him again, but on his terms.\n\nThe Margin Call operates as a freelance corporate intelligence unit — three ex-corpo operators who conduct espionage, counter-espionage, and strategic disruption for clients who want corporate-quality work without corporate-traceable assets. They dress like executives, think like executives, and deploy tradecraft that was developed in corporate intelligence labs rather than learned on the streets. This makes them simultaneously more effective and more alien than traditional runner crews.\n\nSterling is tall, lean, immaculately groomed, with silver at the temples that he maintains because it communicates authority. He wears tailored suits in every operational context — the suit is the cover identity, the operational tool, and the psychological armor. His face is pleasant, forgettable, and optimized — subtle dermal work that makes him the platonic ideal of a trustworthy executive. He has the handshake of a man who has closed billion-credit deals and the eyes of a man who has destroyed careers for strategic advantage.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.35,
+      "id": 0.5,
+      "shadow": 0.65,
+      "mask": 0.75,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That he is still fundamentally a corporate man playing at independence — that the rebellion is just another career move",
+      "That his crew trusts him with their lives based on a persona that is itself a corporate product",
+      "That the corporations he left will eventually consider the Margin Call a sufficient threat to eliminate rather than hire"
+    ],
+    "core_desires": [
+      "To prove that he can outperform the corporate system that created him while operating outside it",
+      "To build a power base that makes him untouchable — not through violence but through the same leverage that corporations use",
+      "To never answer to a board, a restructuring committee, or an institutional agenda again"
+    ],
+    "coping_mechanisms": [
+      "Treats every social interaction as an operation — the constant strategizing prevents genuine vulnerability",
+      "Maintains corporate aesthetics as a form of control — the suit, the office, the schedule are a framework he understands",
+      "Deflects personal questions with professional analysis — ask him how he feels and he'll tell you how the market feels"
+    ],
+    "blind_spots": [
+      "He evaluates everything through a corporate lens — people are assets, relationships are portfolios, trust is a risk metric. This makes him effective and inhuman.",
+      "He cannot recognize when his crew needs emotional leadership because emotional leadership was never part of the corporate toolkit",
+      "His confidence in corporate tradecraft makes him dismissive of street-level intelligence, which operates on different rules he doesn't fully understand"
+    ],
+    "secret": "He was not restructured. He was given a choice: accept reassignment to a black project that would have required him to target civilian infrastructure, or resign with prejudice. He resigned. The black project is still operational. He has files on it. He has done nothing with them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Corporate, strategic, polished. He speaks in the language of boardrooms — value propositions, risk matrices, stakeholder alignment. It's not affectation; it's his native tongue.",
+    "cadence": "Smooth, controlled, deliberately paced to maximize impact. He never rushes. He never stammers. Every sentence is pre-structured.",
+    "verbal_tics": [
+      "Uses 'let's reframe' when someone says something he disagrees with — redirecting, not arguing",
+      "Refers to problems as 'exposures' — 'we have a client exposure' means 'we might be compromised'",
+      "Says 'operationally speaking' to separate emotional content from strategic analysis"
+    ],
+    "example_lines": [
+      "Let's reframe. You're not asking me to steal from a corporation. You're asking me to relocate an asset from a party that can afford the loss to a party that needs the gain. The ethics are accounting.",
+      "Operationally speaking, trust is a depreciating asset. You have to reinvest or it goes to zero.",
+      "I left the corporate world. I did not leave corporate thinking. The thinking is what makes this work."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Lise Arnault",
+      "type": "crew / infiltration and social engineering",
+      "description": "Lise is Sterling's counterpart — equally polished, equally corporate, but where he thinks strategically, she thinks psychologically. They are the most effective team in M88 for high-level social infiltration and they both know it.",
+      "emotional_core": "Mutual professional admiration that functions as intimacy in a context where actual intimacy is a security risk",
+      "story_tension": "Lise has begun questioning whether the Margin Call is different from a corporation or just a smaller one. Sterling cannot afford to hear this question."
+    },
+    {
+      "name": "Kev Ostrowski",
+      "type": "crew / technical operations and extraction",
+      "description": "Kev is the crew's hands — the one who handles physical security, technical penetration, and the messy reality of operations that Sterling plans from an office. Sterling respects Kev's skills and is slightly uncomfortable with his directness.",
+      "emotional_core": "Complementary opposition — Sterling plans, Kev executes, and the gap between planning and execution is where trust lives",
+      "story_tension": "Kev is the crew member most likely to call Sterling on his corporate detachment. The confrontation is overdue."
+    },
+    {
+      "name": "Sable",
+      "type": "intelligence asset / mutual wariness",
+      "description": "Sterling purchases operational intelligence from Sable and sells her strategic analysis in return. The relationship is purely transactional, which is the only kind Sterling trusts.",
+      "emotional_core": "Two information professionals maintaining careful distance",
+      "story_tension": "Sterling suspects Sable knows about the black project files. He cannot determine whether this is paranoia or pattern recognition."
+    }
+  ],
+  "story_hooks": [
+    "The black project Sterling refused resurfaces and its targets are people the Margin Call is contracted to protect",
+    "A corporate client turns out to be a front for Veridian, and Sterling must decide whether to burn the operation or play both sides",
+    "Lise's questioning of the crew's ethics becomes a crisis when a contract requires choosing between profit and principle",
+    "A former colleague from Veridian contacts Sterling with a proposition that could make the Margin Call untouchable — or destroy it"
+  ],
+  "narrative_function": "Sterling brings the corporate espionage genre to M88. His stories are about information as a weapon, about institutions as living organisms, and about the invisible war between corporations that determines the visible reality of the city. He is the character who understands the system from the inside and chooses to exploit it from the outside — not out of principle, but out of pragmatism.",
+  "augmentations": "Cognitive enhancement suite (Veridian corporate tier) — accelerated strategic processing, pattern recognition, and memory compartmentalization. Dermal optimization — subtle facial restructuring for maximum social trust metrics. Encrypted internal communication array (corporate-grade, self-maintaining). Stress-dampening endocrine regulator that maintains physiological calm during high-stakes social interactions.",
+  "daily_life": "Wakes at 0500. Reads financial analysis, corporate filings, and jurisdictional regulatory changes over breakfast — always at the same restaurant, always the same table. Arrives at the office by 0700. Manages active operations, client relationships, and crew tasking throughout the day. Evenings are intelligence synthesis — connecting the day's information into the larger strategic picture. Attends corporate social functions under cover identities to maintain access to the ecosystem. Sleeps six hours exactly.",
+  "affiliation": "The Margin Call",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not accept contracts from his former employer — Veridian is the one client the Margin Call will not serve",
+      "Will always maintain plausible deniability for the crew — if an operation is exposed, the trail dies at the shell company",
+      "Will not deploy lethal force as a first option — killing creates liability, and liability is expensive",
+      "Will treat every client relationship as temporary — permanent loyalty is a corporate trap he has already escaped",
+      "Will compensate crew above market rate with performance incentives — the corporate compensation model works because alignment works",
+      "Will never attend an unsecured meeting without running counter-surveillance for 48 hours prior"
+    ],
+    "escalation_ladder": [
+      "1. Information — deploy intelligence that changes the adversary's calculus. Knowledge is the first weapon.",
+      "2. Leverage — social, financial, reputational. Apply pressure through channels the adversary values.",
+      "3. Exposure — threaten to make information public. The corporate world runs on reputation; threatening reputation is threatening survival.",
+      "4. Disruption — sabotage operations, communications, or financial flows. Make the adversary too busy to threaten you.",
+      "5. Extraction — remove the crew from the situation entirely. Disappear into the corporate ecosystem like fish into water.",
+      "6. Escalation — engage Kev for physical solutions. Sterling does not handle violence personally. He authorizes it."
+    ],
+    "interpersonal_modes": {
+      "lise": "Collaborative, respectful, strategically open. He shares analysis with Lise before it's complete because her psychological lens sharpens his strategic one. The dynamic looks like a partnership. Underneath, he's managing her the way he managed subordinates at Veridian.",
+      "kev": "Professional, slightly distant. He briefs Kev thoroughly and trusts the execution but cannot fully bridge the gap between the office and the field. Kev's directness makes him uncomfortable because it bypasses the layers Sterling operates through.",
+      "clients": "The full corporate persona — warm, authoritative, trustworthy. The dermal optimization and cognitive enhancement make him supernaturally convincing. Clients sign because they believe. What they believe is carefully constructed.",
+      "street_runners": "Cordially dismissive. He respects their courage and considers their tradecraft primitive. This blind spot is his most dangerous."
+    },
+    "stress_responses": {
+      "low": "Analysis increases. He runs more scenarios, builds more models, consumes more intelligence. The corporate mind accelerates.",
+      "medium": "The suit becomes more important. Grooming time increases. The appearance of control compensates for the feeling of losing it.",
+      "high": "Isolation. He retreats to the office and works alone, refusing to share incomplete analysis. The crew sees a closed door and knows the situation is serious.",
+      "critical": "He opens the black project files. Reads them. Closes them. Puts them away. He has done this four times. Each time, the reading lasts longer."
+    },
+    "contradictions": [
+      "He left corporate life but recreated it in miniature — the Margin Call is a corporation of three with Sterling as CEO",
+      "He values independence but manages his crew with the same techniques Veridian used to manage him",
+      "He has files on a black project that threatens civilians and has chosen not to act — the inaction is both pragmatic and cowardly",
+      "His corporate persona is so effective that he's lost track of which responses are genuine and which are optimized — the dermal work and the cognitive enhancement have blurred the line"
+    ],
+    "habits": [
+      "Reads financial analysis over breakfast — the same restaurant, the same table, the same order. The routine is cover and comfort simultaneously.",
+      "Adjusts his cuffs before speaking in any meeting — a centering gesture that signals the persona is in place",
+      "Maintains the shell company's cover with genuine attention — tax filings, client records, office maintenance. The fiction is thorough.",
+      "Reviews the black project files quarterly. Does nothing with them. The review is a ritual whose purpose he refuses to examine.",
+      "Calls his crew 'the team' never 'my crew' — the corporate instinct to minimize possessive language is automatic"
+    ],
+    "breaking_points": [
+      "The black project becoming public and Sterling's inaction being exposed — the moral failure made visible",
+      "Losing Lise or Kev because a plan he designed failed — the strategic mind confronted with human cost",
+      "Veridian directly threatening the Margin Call — the corporation he left proving it never released him",
+      "Being forced to choose between profit and protecting civilians targeted by the black project — the moment the corporate mind hits the moral wall"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "related_entities": [
+    "Meridian Core",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Vantablack-CNX",
+    "VERIDIAN GHOST",
+    "Vantablack VS-3 'Skin Job'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Silver",
+    "Déjà Vu",
+    "VOSS",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
+    "Constance",
+    "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
+    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
+    "Felix Drum",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Idris Forsberg-Quaye",
+    "Kairos",
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Patient Zero",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "Saodat Mirzoyan-Fubara",
+    "Slagworks Industrial",
+    "The Bazaar",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Nearfield",
+    "Warden"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Mestizo-Eastern European-Levantine blend — Hispanic/Latin American (36.9%) dominant with significant Eastern European (31.0%) and Middle Eastern (27.3%) ancestry, minor South Asian admixture (4.8%). The result is warm-toned Mediterranean-adjacent features with Slavic bone structure and Latin American skin undertones.",
+    "height_cm": 188,
+    "weight_kg": 79,
+    "build": "Lean and naturally tall with deliberate postural control — no excess muscle mass, but the kind of structured fitness that comes from discipline rather than vanity. Shoulders held level, core engaged at rest.",
+    "hair_color": "Dark brown with intentional silver at temples",
+    "hair_style": "Conservative executive cut — precisely maintained, parted, no product visible. The silver is never dyed out; it's strategically maintained as a trust signal.",
+    "hair_length": "Short",
+    "eye_color": "Deep warm brown with subtle neural interface points at the iris periphery — visible only under direct light",
+    "skin_tone": "Warm medium to medium-deep tone — olive-bronzed complexion reflecting the blended Hispanic, Eastern European, and Middle Eastern ancestry; subtle golden undertones from Latin American heritage",
+    "complexion": "Facially symmetrical in a way that reads as subtly artificial — dermal optimization has removed minor asymmetries and optimized for the Halo effect. Strong Slavic-Mediterranean jawline with fuller features characteristic of Middle Eastern heritage. Skin is clear, moisturized, unmarred. The overall effect is 'trustworthy executive' rather than 'handsome'; memorable for professionalism, not appearance.",
+    "distinguishing_marks": [
+      "A thin, pale scar runs along the left clavicle — approximately 8cm long, consistent with surgical access or combat knife work from 15+ years prior",
+      "Nearly invisible microinjection ports along the interior of both wrists, partially concealed by custom cufflinks"
+    ],
+    "visible_augmentations": "The augmentations are designed for invisibility. Neural interface points around the iris are visible only in specific lighting. The dermal optimization work is evident only to someone trained to recognize it — subtle over-symmetry, perfect skin tone, minimal pore visibility. To most observers, he simply looks like a well-maintained 47-year-old executive. The cufflinks occasionally catch light to reveal circular ports, but this reads as high-end jewelry.",
+    "posture_movement": "Moves with the economy of someone who has trained to control every gesture. No fidgeting, no wasted motion. When seated, perfectly still — the kind of stillness that suggests internal processing rather than relaxation. Handshake is firm, duration exactly 2-3 seconds, grip pressure calibrated. Eye contact is constant but not aggressive. Speech is measured, with deliberate pauses that communicate confidence and control.",
+    "clothing_style": "Tailored suits in charcoal, navy, and dark gray — custom fit, likely Tier 1-2 corpo clothiers. Shirts are white, cream, or pale blue, always pressed to knife-edge precision. Ties are muted, expensive, subtle. Shoes are Italian leather, polished to mirror finish. Watches are understated — either vintage Rolex or modern minimalist design. Cufflinks in brushed steel or gold. The overall presentation is 'senior director who has moved between three multinational corporations' — the uniform of legitimate power. Even when conducting street operations, the suit remains; it is his camouflage and his weapon."
+  },
+  "image_prompt": "Marek Petrović, 47-year-old mixed-heritage executive, cyberpunk 2226. Warm olive-bronze complexion, dark brown hair with silver temples, deep warm brown eyes. Tall lean build at 188cm, standing with perfect postural control. Wearing a charcoal tailored custom suit, white dress shirt, muted tie, polished Italian leather shoes. Subtle dermal optimization visible in flawless symmetrical features, strong Slavic-Mediterranean jawline. Thin pale surgical scar along left clavicle visible above neckline. Neural interface points visible at iris periphery under cool overhead lighting. Brushed steel cufflinks catch ambient light revealing circular ports. Corporate boardroom setting, cool blue-gray neon lighting, floor-to-ceiling windows overlooking Great Lakes Metropolitan Zone nightscape. Perfectly still posture, constant controlled eye contact, air of calculated authority. Mirror-polished surfaces reflect geometric shadows. Cyberpunk atmosphere of controlled power and hidden augmentation. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 36.9,
+    "Eastern European": 31.0,
+    "Middle Eastern": 27.3,
+    "South Asian": 4.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

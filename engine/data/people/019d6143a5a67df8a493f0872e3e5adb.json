@@ -1,0 +1,267 @@
+{
+  "id": "019d6143a5a67df8a493f0872e3e5adb",
+  "type": "character",
+  "name": "Aurelio Ibarra",
+  "aliases": [
+    "Satu",
+    "Bright Satu"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Childcare worker and unofficial neighborhood children's coordinator, Mexicantown Libre",
+  "age": 27,
+  "status": "active",
+  "location": "Mexicantown Libre — the Libre Community Creche, a converted ground-floor unit on Avenida Ferro, near Pulaski and Chicago Ave",
+  "description": "Satu is small and perpetually in motion, with deep brown skin and natural hair she grows out in a puff that she clips bioluminescent beads into — low-grade geneware, hand-me-downs from a cousin, that pulse softly blue when she's warm or excited and dim to almost nothing when she's exhausted. She has a gap between her front teeth that makes her smile look like a door left open, and she smiles a lot, though never vaguely — there is always something specific she is smiling at. Her clothing is practical and loud: she wears colors like she is trying to argue with the grey of Mexicantown Libre's perpetual lake-fog.\n\nSatu runs the Creche on a combination of municipal micro-stipend, community contribution, and sheer force of organizational will. She is the person who knows which child has been skipping meals and which parent is working three Ferrogate shifts in a row and hasn't slept. Her care is not soft — it is structured and fierce and occasionally exhausting to be on the receiving end of, because she remembers everything she has offered and follows up. She is twenty-seven and already worn at the edges in ways she doesn't acknowledge.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That her care is not enough — that the city is large and hungry and she is too small to hold anything safe",
+      "Being abandoned by the community she has given herself to"
+    ],
+    "core_desires": [
+      "A world where children in Mexicantown Libre are not already tired by age eight",
+      "Someone to take care of her, just once, without her having to ask"
+    ],
+    "coping_mechanisms": [
+      "Overwork as deflection from personal loneliness",
+      "Making lists — she has seventeen active lists at any given time"
+    ],
+    "blind_spots": [
+      "Cannot recognize when her help is smothering rather than supporting",
+      "Assumes goodwill in institutional systems long after evidence suggests otherwise"
+    ],
+    "secret": "One of the children at the Creche — a seven-year-old named Esperanza — is the daughter of someone Satu knows to be involved in something dangerous. She has said nothing because she doesn't want Esperanza removed from the only stable environment she has. She watches the father every pickup with a face that shows nothing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick and warm, mixes Sahel French and Spanglish with English in the same sentence without pause; uses children's-book logic to explain complicated things",
+    "cadence": "Fast when excited, unexpectedly deliberate when something actually matters",
+    "verbal_tics": [
+      "'Okay, so—' to begin any explanation",
+      "Laughs mid-sentence when she's nervous"
+    ],
+    "example_lines": [
+      "'Okay, so — Libre gets Φ340 a month from the municipal cultural fund which, yes, sounds like a lot until you remember it has to cover twelve children and also the building's water recycler is from 2150 and actively threatening to retire.'",
+      "'I'm not worried. I'm just — okay, I'm a little worried. But productively.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A child has not been picked up in thirty-six hours. The emergency contact number is disconnected. Satu has been awake for twenty hours and is now making choices outside her pay grade.",
+    "The building where the Creche is located has been quietly purchased by a Tessera subsidiary. Satu received notice of renovation in a language she had to have translated."
+  ],
+  "narrative_function": "Community pulse-point — she knows the social landscape of Mexicantown Libre at the granular level. Quest giver for problems involving children, families, or neighborhood-level threats. Her genuine warmth makes her an anchor NPC players may want to protect.",
+  "augmentations": "Bioluminescent hair beads (low-grade geneware, inherited; emotive color response). No other augmentations.",
+  "daily_life": "At the Creche by 0630 before the first drop-offs. Runs programming until 1800. Stays late at least three nights a week handling administrative work for the neighborhood council, because no one else will. Eats standing up. Is saving for a cognitive load aug she's been researching for two years.",
+  "affiliation": "Independent; Libre Community Creche; loosely aligned with the Mexicantown Libre neighborhood council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community caretaker",
+      "social intelligence",
+      "overextended idealist",
+      "neighborhood early-warning system"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Children's safety is a hard override on all other considerations",
+      "Always show up, even when showing up costs something"
+    ],
+    "escalation_ladder": [
+      "Bright, organized problem-solving",
+      "Direct asks for help she would normally never make",
+      "Protective fury that surprises people who've only seen the warmth",
+      "Calls in every favor and goodwill marker she's accumulated in seven years"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and assessing simultaneously — she is figuring out if you are useful to the children within forty seconds",
+      "friends": "Deeply present, occasionally overwhelming, will remember your birthday and your mother's name and the thing you mentioned once about being afraid of water"
+    },
+    "stress_responses": {
+      "low": "Makes more lists. Bioluminescent beads dim slightly.",
+      "medium": "Becomes brittle-cheerful — everything is fine, nothing is fine",
+      "high": "Goes very quiet and starts solving the problem surgically, without her usual warmth"
+    },
+    "contradictions": [
+      "Preaches sustainable care to parents and runs herself into depletion monthly"
+    ],
+    "habits": [
+      "Keeps a photo archive of every child who's passed through the Creche — she reviews it when she's doubting herself",
+      "Burns a small data-offering to the E.L.F. she calls the Keeper of Small Things every morning before the children arrive"
+    ],
+    "breaking_points": [
+      "A child being actively harmed while she is present",
+      "Betrayal by someone she vouched for to the community"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Mexicantown Libre, Guinean-Swedish father, Pakistani-Senegalese mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began volunteering at the previous neighborhood creche as a teenager",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the Creche when its previous operator left for a Helix Biosystems relocation package",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined the Mexicantown Libre neighborhood council as community childcare liaison",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Street Custom 'Confession' Modified Industrial Nail Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Mexicantown Libre",
+    "Ferrogate Transit",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Tessera Corponation",
+    "Lazarus IDP-1 'Teeth'",
+    "Chicago",
+    "Adjara Solano-Tuvalu",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Bintou Halvorsen-Osei",
+    "Cryogenic Fracture Disbursement Mine CFDM-4",
+    "Demyan Morozov",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Patient Zero",
+    "Plot 17",
+    "Quilt",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Confession' Modified Industrial Nail Gun"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American with significant East Asian and Sub-Saharan African ancestry; phenotype reflects tri-continental blend with warm medium-to-deep brown skin tone carrying golden undertones, fine-boned facial structure with subtle East Asian eye shape characteristics, and textured hair typical of African heritage",
+    "height_cm": 156,
+    "weight_kg": 52,
+    "build": "Small-framed and wiry with visible muscle definition from constant motion and physical work with children; economical in space and movement",
+    "hair_color": "Natural deep brown-black",
+    "hair_style": "Worn in a full natural puff; threaded throughout with low-grade bioluminescent beads (hand-me-downs, blue wavelength) that pulse with body heat and emotional state",
+    "hair_length": "Medium (approximately 12cm crown length when puffed out)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blended ancestry of Latin American, East Asian, and Sub-Saharan African heritage",
+    "complexion": "Clear but showing fatigue — faint shadows under eyes from chronic sleep deficit; gap between front upper incisors creates distinctive smile; facial structure is fine-boned and expressive with subtle East Asian eye characteristics blended with broader nose bridge typical of African ancestry",
+    "distinguishing_marks": [
+      "Small burn scar on left forearm (childhood geneware accident, faint, barely visible)",
+      "Calluses on palms and fingertips from years of childcare and manual work"
+    ],
+    "visible_augmentations": "Bioluminescent hair beads integrated throughout hair — blue bioluminescence pulses softly when warm or emotionally engaged, dims to near-invisibility when exhausted. No other visible augmentations.",
+    "posture_movement": "Perpetually in motion with economical, purposeful gestures; posture reflects burden-carrying (shoulders slightly forward). Rarely still. When sitting, bounces leg or fidgets with nearby objects. Movement is quick and efficient, rarely wasted",
+    "clothing_style": "Practical Tier 4 workwear in deliberately bright colors: neon and saturated hues (magenta, electric orange, lime, cobalt) worn as defiance against grey industrial surroundings. Mix of hand-me-downs and thrift: reinforced pants with paint stains and marker marks, oversized utility vests, worn sneakers with custom patches. Accessories: cloth bracelets from children, keychain with dozens of keys, small shoulder bag always overstuffed with supplies (snacks, first aid, coloring materials)"
+  },
+  "image_prompt": "Aurelio Ibarra, compact 156cm figure with warm golden-brown skin and fine-boned expressive face showing East Asian and African heritage blend, deep brown eyes with distinctive front-teeth gap smile, natural puffed black hair threaded with pulsing blue bioluminescent beads that glow softly, tired shadows under eyes, always moving. Wearing neon magenta oversized utility vest over reinforced pants stained with paint and marker, electric orange and lime accents, worn patched sneakers, cloth bracelets from children on wrists, overstuffed shoulder bag, keychain with dozens of keys. Small burn scar faint on left forearm, calloused hands, shoulders slightly forward from perpetual burden-carrying. Perpetual motion captured mid-fidget, leg bouncing, economical gestures. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial grey concrete surroundings, neon glow reflecting off skin and hair, warm intimate lighting mixing with harsh industrial LED, defiant bright colors against dystopian backdrop --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 47.6,
+    "East Asian": 30.5,
+    "Sub-Saharan African": 21.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

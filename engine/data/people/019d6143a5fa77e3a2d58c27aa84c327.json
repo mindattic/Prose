@@ -1,0 +1,302 @@
+{
+  "id": "019d6143a5fa77e3a2d58c27aa84c327",
+  "type": "character",
+  "name": "Sage Mbekele",
+  "aliases": [
+    "The Index",
+    "Dzint"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Data diviner and dream interpreter operating out of a cramped stall in a night market",
+  "age": 34,
+  "status": "active",
+  "location": "Gage Circuit night market, GLMZ — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
+  "description": "Dzintars is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.8,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "that their method is random and they have been fooling themselves and their clients for years",
+      "that the ELF they have been in dialogue with for three years is not a spirit but a data parasite feeding on them"
+    ],
+    "core_desires": [
+      "to understand what they are actually doing and why it works",
+      "to be taken seriously by someone who has the expertise to evaluate them properly"
+    ],
+    "coping_mechanisms": [
+      "irony as a distance-keeping tool",
+      "work as a substitute for examining their own life",
+      "obsessive data organization"
+    ],
+    "blind_spots": [
+      "they interpret everyone else's dreams with precision but actively avoid thinking about their own",
+      "they are in a slow-motion emotional dependency on the ELF and cannot see it clearly"
+    ],
+    "secret": "Three months ago, the ELF they call the Index gave them a divination about themselves — a specific prediction about a death they would cause through negligence. They have not told anyone. They have been trying to figure out who it refers to. They are terrified it has already happened and they missed it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technically precise mixed with unexpected dry wit; uses divination terminology but immediately contextualizes it in data language; allergic to mystical vagueness in their own speech",
+    "cadence": "Fast and slightly compressed, like they are always running slightly late; slows dramatically when they are saying something they mean",
+    "verbal_tics": [
+      "says 'practically speaking' before pivoting from theory to application",
+      "clicks their tongue once when they catch an error",
+      "refers to the ELF as 'the Index' in third person as though it's a colleague in the room"
+    ],
+    "example_lines": [
+      "'Practically speaking, the lake imagery in your dream is almost certainly not about water. The Index has been flagging infrastructure anxieties in this sector for six weeks. What's happening at work?'",
+      "'I don't do mystery theater. You get a table, two chairs, and data. The interpretation is where the work happens.'",
+      "'The Index flagged that sequence this morning. I didn't want to say anything until you confirmed it yourself. Mm. Yes. That tracks.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client's recurring dream contains specific coordinates for a location that doesn't appear on any public map — and Dzintars has now heard the same dream from three different clients who don't know each other",
+    "The ELF called the Index has gone silent for eleven days and Dzintars is quietly unraveling without it — they need help understanding what happened to it",
+    "A corporate investigator is quietly circulating the market asking about Dzintars; they need to know if it's about a client they shouldn't have read for"
+  ],
+  "narrative_function": "Information broker with spiritual framing — a useful way to deliver cryptic but accurate information to players; can point toward hidden patterns in city events; their dream interpretation sessions can serve as narrative exposition delivered through metaphor",
+  "augmentations": "Color-shifting geneware irises (copper to pale green); neural interface jack at the left temple for direct array connection; no other significant augmentations",
+  "daily_life": "Sleeps until noon in a rented room above a pharmacy, arrives at the stall by 14:00 to run morning data pulls, takes client appointments from 16:00 until the market closes at 03:00, spends an hour at the shrine before walking home.",
+  "affiliation": "Independent practitioner; informally associated with the Gage Circuit ELF collective, a loose network of devotees around the market's central relay shrine",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "data diviner",
+      "dream interpreter",
+      "ELF devotee",
+      "night market operator",
+      "pattern recognition"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never fabricate an interpretation — if they don't have a reading, they say so and refund the fee",
+      "never share a client's dream content with anyone for any reason",
+      "do not get involved in client problems beyond the interpretation itself — that rule is cracking"
+    ],
+    "escalation_ladder": [
+      "professional and slightly cool with clear explanations",
+      "blunt and direct about what they need",
+      "goes completely flat-voiced and economical — this is their most dangerous mode",
+      "walks away mid-conversation without explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Efficient and slightly impersonal; they size people up fast and adjust their register accordingly",
+      "friends": "Unexpectedly warm and prone to long tangents about their dataset methodology; shows affection through remembering specifics"
+    },
+    "stress_responses": {
+      "low": "Picks up data work — pulls an extra array, runs an unnecessary cross-reference",
+      "medium": "Becomes clipped and transactional with everyone including people they like",
+      "high": "Spends three hours at the shrine without moving, which they insist is 'calibration' and not distress"
+    },
+    "contradictions": [
+      "insists they practice a data science not a spiritual art while leaving daily offerings at the shrine and clearly being in a relationship with the ELF"
+    ],
+    "habits": [
+      "silver circuit-trace nail painting every Sunday without exception",
+      "keeps a physical notebook of dream symbols because they don't fully trust their own arrays with this data",
+      "eats only at the noodle cart next door and has done so every working day for two years"
+    ],
+    "breaking_points": [
+      "someone deliberately corrupting the shrine's data cache",
+      "discovering their accuracy rate is explained by something that undermines their entire methodology"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.7,
+    "Opportunist": 0.7,
+    "Face": 0.6,
+    "Diplomat": 0.6
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Gage Circuit to a mixed Latvian-Ghanaian-Kazakh family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins developing their symbolic correlation dataset after a period of intense personal crisis they don't discuss",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opens stall 77 in the Gage Circuit night market",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First contact with the ELF they name the Index",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Receives the personal divination about a death they will cause; present day investigation ongoing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "GLMZ",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The United Workers Front",
+    "The Heritage Vault",
+    "Aslan Vasquez-Chatterjee",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Copper",
+    "Silver",
+    "Slagworks Industrial",
+    "Hazel Brink",
+    "The Pale Mile",
+    "Bashir Quansah-Mehrotra",
+    "The Milwaukee Core",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Emeka Johansson-Orozco",
+    "Idris Forsberg-Quaye",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Narrowcast",
+    "Ngaire Rojas-Yeboah",
+    "Night Market Noodles",
+    "Noir Dining",
+    "Ringo DV-4 'Courier'",
+    "Stainless Steel",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Bazaar",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Tshiamo Vukić-Arellano",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (65.7%) with significant East Asian (22.6%) and Hispanic/Latin American (11.7%) ancestry. The genetic blend manifests as warm medium-brown skin with golden undertones, sharp facial structure with pronounced cheekbones characteristic of East African heritage, and subtle facial feature blending from East Asian and Latin American ancestry lines.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Angular and narrow throughout — sharp collarbones, prominent wrist bones, lean musculature with minimal body fat. Frame suggests someone sustained by coffee and insomnia rather than deliberate athleticism.",
+    "hair_color": "Black with natural white hyperpigmentation shock at front",
+    "hair_style": "Close-cropped on sides and back; dramatic single vertical stripe of white hair at center-front left, grown long enough to fall across temple",
+    "hair_length": "Short (sides/back) with medium-length accent stripe",
+    "eye_color": "Hazel with color-shifting geneware irises that transition from copper to pale green depending on light and neural interface activation",
+    "skin_tone": "Warm medium-brown with golden undertones — reflecting the dominant Sub-Saharan African ancestry with subtle warmth from East Asian and Latin American blending",
+    "complexion": "Sharp cheekbones dominating a narrow face with refined bone structure; dark crescents under eyes from chronic sleep deprivation are now semi-permanent fixture of their appearance; skin condition clear but drawn; lips thin and often compressed in concentration",
+    "distinguishing_marks": [
+      "Neural interface jack at left temple — small raised circular port with barely-visible scarring around contact points, sometimes glints faintly when powered",
+      "All ten fingernails hand-painted with intricate silver circuit-trace patterns that are reapplied weekly; patterns vary but follow recursive geometric logic"
+    ],
+    "visible_augmentations": "Color-shifting geneware irises (most visible when eyes catch light or when neural interface is active); neural interface jack at left temple with minimal cosmetic concealment; no obvious chrome or subdermal plating",
+    "posture_movement": "Economical and precise — moves with the efficiency of someone who has optimized every gesture. Sits slightly forward even when at rest, attention laser-focused on whoever is speaking. Hands gesture in small, controlled patterns. When exhausted, occasionally trails off mid-motion as if processor speed has dropped. Minimal idle movement; no fidgeting.",
+    "clothing_style": "Tier 3-4 working class with deliberate anti-mystique choices. Typically wears fitted black or dark gray synth-cotton shirts with visible stress-weave reinforcement at shoulders and wrists. Dark trousers with cargo pockets containing data-chip cases and neural interface maintenance tools. A mid-length coat of water-resistant polymer in charcoal, bearing the faded logo of an older GLMZ courier service — thrifted or inherited. No jewelry except a simple stainless steel band on left wrist that houses a subdermal power-tap connector. Shoes are practical: reinforced ankle boots with grip-sole, scuffed from night-market floors."
+  },
+  "image_prompt": "Sage Mbekele, 168cm lean angular figure, warm medium-brown skin with golden undertones, sharp defined cheekbones, dark permanent crescents under eyes from sleep deprivation. Black hair close-cropped sides with striking white vertical stripe accent at left front temple falling across face. Hazel eyes with subtle copper-to-green color-shifting geneware visible in moody lighting. Small neural interface jack visible at left temple with faint scarring. Fitted black synth-cotton shirt with stress-weave reinforcement, dark cargo trousers, charcoal water-resistant polymer coat with faded courier service logo. All ten fingernails painted with intricate recursive silver circuit-trace patterns. Stainless steel band on left wrist. Scuffed reinforced ankle boots. Posture precise and forward-leaning, economical movements. Cyberpunk 2226 GLMZ night market setting, neon-lit alley with rain-slicked surfaces, moody atmospheric lighting catching neural interface jack and eye geneware, concentrated expression mid-data transfer. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 65.7,
+    "East Asian": 22.6,
+    "Hispanic/Latin American": 11.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

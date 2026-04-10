@@ -1,0 +1,306 @@
+{
+  "id": "019d6143a67f77b6ace051aeb31a084a",
+  "type": "character",
+  "name": "Dmitri Vestergaard",
+  "aliases": [
+    "Oke",
+    "the Corporal"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars soldier (former Palladian contract infantry), pension-dependent resident",
+  "age": 91,
+  "status": "active",
+  "location": "Montclare Quiet, Room 7, the Aldgate Assisted Living Node, near North Ave and Damen",
+  "description": "Olekan Mbeki-Sigurðsson is ninety-one years old and looks eighty and moves like sixty-five, which he attributes to the military-grade bone lacing he received at twenty-two and the stubbornness he received at birth. He is lean and upright, dark-skinned, with a head shaved smooth that he keeps polished, and a face that has resolved from handsome into something more interesting — all strong lines and earned geography. His left hand trembles slightly, a nerve issue from a combat incident in 2153 that was never fully repaired. The rest of him does not tremble. He wears his old Palladian insignia on a chain around his neck, not out of loyalty to the corporation — he will explain in detail why that would be idiotic — but because he cannot separate it from the men and women who wore it beside him.\n\nHe is the oldest resident at Aldgate and has outlived three care coordinators and four attempts to move him to a higher-dependency facility. He plays tessera chess with anyone who will sit across from him and loses on purpose to interesting opponents to get a longer game. He is not warm exactly, but he is fair, and in a place that has often not been fair to him, this has made him a figure of quiet authority among the other residents. He will not discuss his actual combat experiences unless he trusts you completely. He will talk about his fellow soldiers constantly.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "dying as a number in a Palladian pension ledger rather than as a person",
+      "forgetting the faces — he has nightmares about forgetting them one by one"
+    ],
+    "core_desires": [
+      "that the people he served with be remembered as individuals, not statistics",
+      "one honest conversation with someone who actually wants to know what it was"
+    ],
+    "coping_mechanisms": [
+      "rigid routine as a structure that holds him together",
+      "the chess games as a form of controlled social contact",
+      "writing the letters — he has been writing them for forty years, some to the dead"
+    ],
+    "blind_spots": [
+      "idealizes unit cohesion to the point where he minimizes harm done within it",
+      "profound difficulty asking for help with anything he reads as weakness"
+    ],
+    "secret": "He has been writing a full account of the Avon Curve incident — a battle in 2155 in which a Palladian officer ordered his unit to fire on civilians who were sheltering in a transit hub, claiming they were armed combatants. He was there. He followed the order. He has spent sixty-eight years deciding whether to send the account to anyone, and it is now three hundred and forty pages long on a physical typewriter ribbon he keeps under his mattress."
+  },
+  "speech_patterns": {
+    "vocabulary": "spare and exact; Ukrainian-Norwegian inflections from his parents; military habits of language — precise times, cardinal directions, last names for people he respects; first names for people he loves",
+    "cadence": "slow and measured, with long silences he is entirely comfortable in",
+    "verbal_tics": [
+      "'At approximately —' for any timeline",
+      "refers to the dead in the present tense",
+      "very rarely says 'I' — 'we' or the unit name instead"
+    ],
+    "example_lines": [
+      "'Kowalski makes this move when she's nervous. Kowalski has been dead thirty years and she still makes this move. Sit down. I'll show you.'",
+      "'I followed the order. I want you to understand that I know exactly what that means. I have had sixty-eight years to understand it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Palladian's legal department has sent a representative to Aldgate requesting access to veterans' personal records as part of a 'benefits review' — Olekan is certain they are looking for surviving witnesses to the Avon Curve incident",
+    "A young journalist has found fragmentary references to the Avon Curve in declassified military logs and has tracked down Olekan as the last living witness they can identify",
+    "His pension has been frozen pending a disputed identity verification — an administrative error that could take months to resolve, leaving him dependent on Aldgate's discretionary fund"
+  ],
+  "narrative_function": "Living Corporate Wars history, moral weight, pension system vulnerability illustrator; can provide ground-level military history from Palladian's perspective; the letters he writes are a possible information source",
+  "augmentations": "Military-grade bone lacing (Palladian combat standard, 2153); subdermal combat trauma monitor (defunct, hardware failure, now inert); cochlear implants (both ears, military-grade, still functional)",
+  "daily_life": "Rises at 06:00 regardless of programming, does a modified exercise routine for forty-five minutes, breakfasts alone, spends mornings in the common room receiving or seeking chess games; afternoons composing letters to other PVN members, living and dead.",
+  "affiliation": "Palladian Veterans Network (PVN); Aldgate Assisted Living Node resident; independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "war veteran",
+      "Palladian",
+      "witness",
+      "pension dependent",
+      "chess player",
+      "secret historian"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never lie about what happened, even by omission — but you also do not have to speak until you're ready",
+      "protect the people around you while you still can",
+      "Palladian's interests and the interests of the people who served it are not the same thing and never were"
+    ],
+    "escalation_ladder": [
+      "silence and observation",
+      "quiet direct conversation",
+      "formal complaint through PVN channels",
+      "releasing the account"
+    ],
+    "interpersonal_modes": {
+      "strangers": "courteous but reserved, watching to see if they're worth the investment",
+      "friends": "fiercely loyal, remembers everything about them, grieves them before they're gone"
+    },
+    "stress_responses": {
+      "low": "adds an extra hour to the morning exercise routine",
+      "medium": "writes in the account, sometimes for six hours straight",
+      "high": "goes entirely still and somewhere else behind the eyes; has learned to ride it out"
+    },
+    "contradictions": [
+      "committed to honesty but has withheld the most important truth of his life for sixty-eight years",
+      "values loyalty absolutely but is slowly documenting evidence against the institution he was loyal to"
+    ],
+    "habits": [
+      "polishes the Palladian insignia every evening whether he wants to or not",
+      "addresses one letter per week to a dead comrade — writes it as if they'll read it",
+      "leaves military-time prayer offerings at the Aldgate ELF terminal, formatted like after-action reports"
+    ],
+    "breaking_points": [
+      "the account being destroyed or seized before he decides what to do with it",
+      "being moved to a memory-care facility — losing his mind is his private apocalypse"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "intact, no longer repairable to spec",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "inert, hardware failure circa 2190",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7,
+    "Tactician": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in GLMZ, Iron Bend district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enlists in Palladian contract infantry; receives augmentations",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Avon Curve incident; follows the order; begins the account that year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Honourably discharged; begins drawing pension",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moves to Aldgate Assisted Living Node as health requires support",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Account reaches three hundred and forty pages; still not sent",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Montclare Quiet",
+    "Avon Curve",
+    "Palladian Construction",
+    "Tessera Corponation",
+    "Witness",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Ambassador Silk",
+    "Breck Tannen",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "Otitodilichukwu Sigurðsson-Batmunkh",
+    "The Heritage Vault",
+    "The Ledger",
+    "Veslemøy Achebe-Tursynov",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly East Asian (45.4%) with significant Eastern European (26.7%) and Sub-Saharan African (17.7%) ancestry, with smaller components of Southeast Asian (5.0%) and Hispanic/Latin American (5.2%) heritage. This creates a striking blend: the facial structure shows East Asian bone geometry — subtle epicanthic folds, moderately prominent cheekbones — softened and widened by Eastern European and African ancestry. The overall effect is a unique polycultural phenotype reflecting the Ubiquitous Diaspora.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and upright with visible musculature despite age; military-grade bone lacing maintains structural integrity and density, preventing the typical spinal compression of elderly humans. Shoulders still broad, posture disciplined.",
+    "hair_color": "None",
+    "hair_style": "Shaved smooth and polished daily",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, alert and tracking",
+    "skin_tone": "Medium to deep brown with warm undertones — a blend of East Asian, Sub-Saharan African, and Eastern European ancestry. The coloration is rich and complex, neither purely warm nor cool, bearing the patina of nine decades of life. Weathered but resilient, maintained with meticulous care.",
+    "complexion": "Facial geometry reflects the genetic blend: moderately high cheekbones with the subtle structure of East Asian ancestry, tempered by the broader jaw and deeper facial planes contributed by African and Eastern European heritage. Eyes are deep-set and alert. Skin bears the topography of nine decades: fine network of laugh lines around eyes, deep creases from the bridge of nose downward, liver spots on temples and scalp. The overall impression is of dignified age rather than decline. Kept meticulously clean. Slight tremor visible in left hand at rest.",
+    "distinguishing_marks": [
+      "Surgical scar on left temple, approximately 4cm, from 2153 combat incident; pale and well-healed",
+      "Thin pale line running along left jawline from ear to chin, barely visible unless light hits directly",
+      "Palladian insignia (military dog-tag style) worn on a steel chain around neck, visible at collar"
+    ],
+    "visible_augmentations": "Palladian military dog-tag chain bearing insignia (cultural rather than functional augmentation). Cochlear implant hardware visible behind both ears as small metallic ports if hair were present; currently exposed to view. No obvious external chrome or subdermal plating — bone lacing is internal and invisible except for its structural effects on posture and movement. Left hand tremor suggestive of neurological damage.",
+    "posture_movement": "Carries himself with military bearing despite age — spine straight, shoulders level, weight distributed evenly. Movements economical and deliberate, no wasted motion. Walks with even gait (bone lacing compensates for age-related deterioration). Sits with attention; does not slouch. Left hand tends to rest on table or lap to minimize visible tremor. Head turns fully rather than eyes alone — a combat habit.",
+    "clothing_style": "Tier 3-4 assisted living resident standard: comfortable fitted shirts in muted colors (charcoal, navy, gray), lightweight slacks with elastic waistband, slip-on shoes designed for accessibility. Layers a lightweight cardigan or vest in cool months. Keeps clothing clean and pressed — laundry service of Aldgate Node, but he ensures his own grooming. No corporate branding except the Palladian insignia he chooses to wear. Practical, modest, worn with a kind of unforced dignity."
+  },
+  "image_prompt": "An elderly man in the 2220s, 178cm tall with lean military bearing, shaved head revealing rich medium-dark brown skin with warm undertones blending East Asian, Sub-Saharan African, and Eastern European heritage. Strong facial geometry with deep-set alert dark eyes, high cheekbones, prominent jaw lined with nine decades of living — laugh lines around eyes, deep creases, liver spots on temples. Small pale surgical scar on left temple visible. Wearing charcoal fitted shirt, lightweight gray slacks, slip-on shoes. Steel chain with Palladian military dog-tag insignia visible at collar. Cochlear implant ports visible behind ears. Sits upright with military discipline despite age, left hand resting on table to minimize tremor. Cyberpunk 2220s assisted living facility, soft neutral lighting, dignified and composed, background suggests Aldgate Node common area with subtle neon accents. Cinematic, character study, dignified aging soldier, hyperrealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 45.4,
+    "Eastern European": 26.7,
+    "Sub-Saharan African": 17.7,
+    "Hispanic/Latin American": 5.2,
+    "Southeast Asian": 5.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

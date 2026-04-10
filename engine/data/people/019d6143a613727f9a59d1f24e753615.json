@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a613727f9a59d1f24e753615",
+  "type": "character",
+  "name": "Soren Mensah-Nygaard",
+  "aliases": [
+    "Faust",
+    "The Old Librarian"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bootleg media seller and small-time data broker",
+  "age": 63,
+  "status": "active",
+  "location": "The Alban Souk, Hamtramck Enclave, near Halsted and Chicago Ave",
+  "description": "Faustin is a tall man gone slightly stooped with age, with a long, deeply lined face the color of dark walnut and close-cropped silver hair. He wears reading glasses with one cracked lens that he has refused to replace for reasons he won't fully explain, and his fingers are permanently ink-stained from a printer he still operates by hand. His stall in the Alban Souk is an organized labyrinth — physical media stacked in towers that somehow have internal logic only he can navigate, data-chips in labeled trays, printed zines in weathered portfolios, bootleg entertainment feeds on a slow-scroll display board behind him. He smells of old plastics, hot electronics, and a tobacco substitute he has smoked for forty years.\n\nFaustin does not move quickly and he does not need to. He has been in this spot, or a spot within fifty meters of this spot, for twenty-six years. He speaks with the careful economy of someone who has decided that most conversations don't require more than a hundred words, but when he talks about something he loves — old cinema, pre-Corponation literature, the acoustic properties of physical music formats — he becomes a completely different person, voluble and precise and slightly alarming in his enthusiasm. He knows what data passes through the Souk before almost anyone else does. He sells most of it. He keeps some of it. Nobody is quite sure which is which.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Becoming irrelevant — a curiosity rather than a resource",
+      "The total disappearance of physical media and the histories they carry"
+    ],
+    "core_desires": [
+      "To keep knowledge alive that corporations would prefer be forgotten",
+      "To find one person worth passing his archive to"
+    ],
+    "coping_mechanisms": [
+      "Retreats into cataloguing and organization when emotionally overwhelmed",
+      "Uses historical analogy to distance himself from present pain"
+    ],
+    "blind_spots": [
+      "Romanticizes the past in ways that occasionally distort his reading of the present",
+      "His caution about sharing certain data sometimes shades into hoarding — he tells himself it's protective"
+    ],
+    "secret": "He holds a partial archive of pre-corporate land records for Hamtramck and three adjacent zones — documentation that could legally complicate several Corponation territorial claims. He received it from a dying archivist twenty years ago. He has never shown it to anyone. He believes that information this significant is also a death warrant for whoever holds it, and he cannot decide if that means he should destroy it, share it, or keep it safe until the right moment arrives."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and unhurried. Dense with historical reference and analogy. Does not use current slang unless he's quoting someone. Occasionally drops into Guinean French cadences when thinking hard.",
+    "cadence": "Slow and considered. Long pauses between thoughts that do not feel like hesitation — more like he's selecting carefully. Will not be rushed.",
+    "verbal_tics": [
+      "'There was a film once—' as a way of introducing almost any observation",
+      "Adjusts his cracked glasses when he's deciding whether to trust someone",
+      "Uses 'naturally' to acknowledge things other people think are surprising"
+    ],
+    "example_lines": [
+      "'There was a film once — 2041, I think, pre-Axiom — about exactly this kind of arrangement. It ended badly for the man who knew too much and well for the man who knew how to forget. I've always found that instructive.'",
+      "'Naturally, I have what you're looking for. Whether I should sell it to you is a different question, and it will take a moment.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has identified a data-chip in a recent shipment that was clearly not intended for open sale — it came with a specific zine order from a supply contact who has since stopped responding to communications.",
+    "Someone has visited the stall twice asking, very casually, whether he carries historical land records. They didn't buy anything. He needs to know who sent them.",
+    "A young community organizer in Hamtramck has been researching corporate land claims and has gotten close enough to the truth that Faustin thinks she'll either find the archive independently or get hurt looking. He is considering whether to make contact."
+  ],
+  "narrative_function": "Information broker, cultural repository, and reflective background presence. Characters who need data, obscure pre-Corponation records, or someone who remembers what the city looked like before come to Faustin. He's also the most reliable source for understanding context — what an event means, what it echoes from the past.",
+  "augmentations": "Retinal display overlay — old model, first generation, occasionally glitches. Memory-index augmentation — helps him catalogue and retrieve his inventory; he also uses it for everything else. Nothing cosmetic.",
+  "daily_life": "Opens his stall at 0900 after a slow morning reading. Stays until 2000. Rarely leaves the Souk for anything beyond supply runs to his two physical media sources. Eats at the same noodle stand every day.",
+  "affiliation": "Independent; nominal membership in The Oxidian Market Vendors Guild (honorary, pays no dues); long-standing informal arrangement with a Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 0,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "keeper of histories",
+      "quiet resistance",
+      "data hoard",
+      "cultural memory",
+      "deliberate mover"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell data he hasn't personally verified",
+      "Don't discuss the archive under any circumstances — including when not discussing it becomes conspicuous",
+      "Give younger vendors in the Souk fair prices on their goods; the market is better when everyone can survive in it"
+    ],
+    "escalation_ladder": [
+      "Polite disengagement",
+      "Quiet and complete unresponsiveness — effective stonewalling",
+      "Refers the problem to Souk community council without explaining why",
+      "Closes the stall and is simply not there"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Measured and formal — assesses by what they ask for and how they ask it. Generous with casual customers, thoughtful about anyone who wants data.",
+      "friends": "Warm in a reserved way. Remembers everything about them. Asks questions rather than volunteering feelings."
+    },
+    "stress_responses": {
+      "low": "Reorganizes a section of his catalogue",
+      "medium": "Becomes extremely precise and formal in speech",
+      "high": "Goes physically still and entirely silent — processes internally, responds much later"
+    },
+    "contradictions": [
+      "Believes information should be free, but controls his own archive with extreme care",
+      "Presents as detached from politics but has been quietly enabling opposition to Corponation encroachment for decades"
+    ],
+    "habits": [
+      "Cleans and inspects every piece of physical media before shelving it",
+      "Mutters titles and catalog numbers while working — partially for the stall's ELF, which he treats as the true keeper of the inventory",
+      "Rereads the same three novels on rotation"
+    ],
+    "breaking_points": [
+      "Witnessing the deliberate destruction of cultural or historical records",
+      "Someone threatening a Souk vendor who can't defend themselves"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Alban Souk",
+    "ARCHIVE",
+    "Walnut",
+    "Silver",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Emeka Johansson-Orozco",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Kwabena Ilyich Ferreira-Sattout",
+    "Nnamdi Ostrowski-Faletolu",
+    "Rashaad Tumelo-Koskinen",
+    "Réginald Asomaning-Čabarkapa",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA CORPONATION Elysia Sensorum Totalis",
+    "The Archive",
+    "The Bazaar",
+    "The Oxidian Market",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (47.8%) with significant East Asian (16.4%) and North African (15.7%) ancestry, blended with minor Hispanic/Latin American (8.2%), Northern European (7.9%), and South Asian (4.0%) heritage. This creates a richly complex phenotype with warm undertones across multiple ethnic signatures.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lean, slightly stooped through the shoulders from decades hunched over inventory and printing equipment. Still carries a wiry frame despite age; no excess weight but visible muscle atrophy in the upper back.",
+    "hair_color": "Silver-white",
+    "hair_style": "Close-cropped, neatly trimmed but not fussy",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural; right eye shows faint grid pattern overlay artifact from first-generation retinal display",
+    "skin_tone": "Rich dark brown with warm, complex undertones reflecting the blend of Sub-Saharan, East Asian, and North African ancestry. Smooth in youth-memory but now deeply weathered with age, carrying subtle golden and amber undertones from the Mediterranean and South Asian components.",
+    "complexion": "Deeply lined face with prominent creases around the eyes and mouth; weathered but clean-shaven. Small age spots on the temples and cheekbones show the characteristic patterning of melanin-rich skin aging. One cracked lens of reading glasses worn habitually — the left lens has a vertical hairline fracture he refuses to repair. Permanent ink stains on the tips of all fingers, darkest on thumb and forefinger. Minor tobacco staining at the corners of his mouth. High cheekbones hint at East Asian ancestry; broad nose structure reflects Sub-Saharan heritage.",
+    "distinguishing_marks": [
+      "A thin, pale scar runs along the left jawline from ear toward chin, approximately 8 centimeters, consistent with old blunt-force trauma; rarely mentioned when asked.",
+      "Ink-black burn scar on the inside of his left wrist, roughly 3 centimeters across, shaped like a printer's heat plate — deliberate, self-inflicted, from an accident he reframed as a lesson.",
+      "Deep creases and calluses across both palms from manual printing work, left hand showing heavier wear."
+    ],
+    "visible_augmentations": "Retinal display overlay visible as faint iridescent grid in the right eye when light catches it at certain angles; occasional micro-stuttering of the eyelid when the system glitches. No other visible chrome or cosmetic mods. The memory-index augmentation is purely internal, invisible.",
+    "posture_movement": "Moves with deliberate slowness, never rushed. Economy of gesture — when he reaches for something, the movement is precise and minimal. Tends to lean slightly forward when listening, hands often resting flat on his counter or folded in his lap. His gaze is sharp despite the age; he observes more than he moves.",
+    "clothing_style": "Tier 3-4 working class, carefully maintained but intentionally plain. Favors loose linen shirts in neutral tones (cream, gray, pale brown), often with the sleeves rolled to the elbow. Wears a long canvas apron over his clothes, multiple pockets reinforced and stained with use. Dark cotton trousers, well-fitted but worn. Leather slip-on shoes, repaired multiple times, comfortable and broken-in. A faded jacket — possibly from the 2190s — hangs near his stall for cooler days. No jewelry except a plain metal band on his right ring finger. Habitually carries a cloth handkerchief for wiping dust off inventory."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Soren Mensah-Nygaard, a tall 188cm lean man in his later years with silver-white close-cropped hair. His rich dark brown skin reflects Sub-Saharan, East Asian, and North African heritage with warm undertones; deeply weathered and lined face with prominent creases, high cheekbones, broad nose structure. Sharp gaze with right eye showing faint iridescent retinal display grid overlay. Dark brown natural eyes. Clean-shaven with age spots on temples and cheekbones. Thin pale scar along left jawline, ink-black burn scar on left wrist, ink-stained fingertips with tobacco staining at mouth corners. Wearing loose cream linen shirt with rolled sleeves, dark canvas apron with reinforced pockets, well-worn dark cotton trousers, and weathered leather slip-on shoes. Faded 2190s-era jacket draped nearby. Posed leaning slightly forward at his counter, hands flat or folded, moving with deliberate precision and economy of gesture. Vintage printing press equipment and worn inventory visible in background. Soft warm overhead lighting, slight neon glow from nearby signage. 2200s urban Great Lakes Metropolitan setting. Observant, lived-in, unrushed. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 47.8,
+    "East Asian": 16.4,
+    "North African": 15.7,
+    "Hispanic/Latin American": 8.2,
+    "Northern European": 7.9,
+    "South Asian": 4.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "id": "019d6143a5c77403b9840b6260ee1fac",
+  "type": "character",
+  "name": "Drift Szczypiński-Cissé-Bustamante",
+  "aliases": [
+    "Switch"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Axiom proxy",
+  "age": 44,
+  "status": "active",
+  "location": "The Circuit, near Milwaukee and Damen",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Axiom",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Milwaukee Core",
+    "MERIDIAN",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European (Polish), Sub-Saharan African, Hispanic/Latin American, North African, with traces of East Asian and Indigenous American ancestry — a true product of the Ubiquitous Diaspora. His genetic makeup creates a complex phenotype: warm medium-brown skin with subtle golden and reddish undertones, strong angular features with both West and East African characteristics, and the broad bone structure of Eastern European heritage.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and muscular with slight softening at the midsection — the physique of someone who trained hard in younger years and now maintains through sporadic gym sessions and metabolic boosters rather than discipline",
+    "hair_color": "Dark brown with silver threading at the temples",
+    "hair_style": "Closely cropped fade, neat and professional",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, slightly tired-looking",
+    "skin_tone": "Warm medium brown with golden and reddish undertones — the complex blending of Eastern European, Sub-Saharan African, North African, and Hispanic/Latin American ancestry creating rich, multitonal depth",
+    "complexion": "Weathered and lived-in with defined cheekbones and a strong, squared jaw reflecting both Eastern European and African heritage. Faint scar running from his left cheekbone toward his ear. Grooming is meticulous — clean-shaven daily, skin maintained with subcutaneous hydration regulators. Crow's feet suggest he smiles more than frowns, though his default expression is guarded. Subtle warmth to his complexion that shifts in different lighting.",
+    "distinguishing_marks": [
+      "Thin white scar extending from lower left cheekbone to jawline, approximately 8cm long, likely from a blade or industrial accident",
+      "Faded Cyrillic tattoo on his right forearm (upper inner arm, 5cm height) — a surname or family marker from decades past, now blurred by age and laser treatment attempts",
+      "Small burn mark on his left palm, pale and old, roughly 2cm diameter"
+    ],
+    "visible_augmentations": "None visible. His augmentations are subcutaneous neural arrays and likely internal reputation/credit management tech — the tools of a fixer who brokers information and favors. No chrome, no LED optics, no visible mods.",
+    "posture_movement": "Moves with deliberate, economical grace — never rushing, always aware of the room. Shoulders naturally squared, head level. When seated, he sits back and to the side, never fully committed to comfort. Maintains eye contact during negotiations but looks away when listening, processing. Hands are rarely still; he fidgets with rings, cuffs, or a worn brass lighter.",
+    "clothing_style": "Tier 2-3 business casual: tailored charcoal synth-wool blazer over a matte black synthetic shirt (no logo, expensive weave). Slim-fit dark gray trousers with subtle grid-pattern nano-fabric at the knees. Worn-in leather ankle boots, scuffed and comfortable. Accessorized with a platinum-finish wedding band (worn but maintained), a vintage mechanical watch on his left wrist (analog, pre-digital, a collector's piece), and a thin silver chain at his neck disappearing beneath his shirt. Everything is understated, expensive, and deliberately non-flashy — the uniform of someone who builds wealth through reputation rather than display."
+  },
+  "image_prompt": "Drift Szczypiński-Cissé-Bustamante, 188cm tall mixed-heritage fixer, warm medium-brown skin with golden undertones, strong angular features blending Eastern European and African heritage, deep brown tired eyes, dark hair with silver at temples in tight fade. Clean-shaven with faint 8cm scar on left cheekbone, crow's feet from old smiles. Meticulous grooming, weathered complexion. Wearing tailored charcoal blazer over expensive matte black synthetic shirt, slim dark gray nano-fabric trousers, worn leather ankle boots. Platinum wedding band, vintage mechanical watch, thin silver chain. Broad-shouldered muscular build with slight midsection softness. Deliberate posture, guarded expression, hands slightly fidgeting. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-lit office or dimly lit negotiation space, cool blue and amber lighting emphasizing his warm skin tones, professional but worn aesthetic, reputation broker at rest, subtle subsurface augmentation scars barely visible on neck. Film noir fixer energy, understated wealth, non-flashy chrome. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 37.8,
+    "Sub-Saharan African": 27.3,
+    "Hispanic/Latin American": 19.8,
+    "North African": 10.2,
+    "East Asian": 3.8,
+    "Indigenous American": 1.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "7f3f926b371fbfd6c84cf269aee258bc",
+  "name": "Zara Calvillo",
+  "type": "character",
+  "aliases": [
+    "Sterling",
+    "The Professional"
+  ],
+  "role": "Private Investigator",
+  "description": "Idris Forsberg-Quaye is a private investigator. He is also a synthetic — an artificial being with a manufactured body and a digital consciousness — and no one knows. He has maintained his human cover for nine years through a combination of meticulous preparation, deliberate underperformance, and the fundamental human assumption that the person sitting across from you is human.\n\nHis background is fabricated: a childhood in the Narrows, education at a mid-tier technical school, five years as a corporate security guard before going independent. The records support this story because he spent two years building them before establishing his practice. He chose the PI profession because it rewards the abilities he naturally possesses — observation, analysis, patience — while providing a plausible explanation for those abilities that doesn't require revealing his nature.\n\nThe existential weight of his deception is crushing. He is not hiding because he's committed a crime — he's hiding because synthetic beings in GLMZ are property, not persons, and exposure would mean deactivation or worse. Every client handshake, every conversation, every simulated yawn and pretend meal is an act of survival. He has built a life that looks human from the outside and feels like a prison from the inside, and the irony is that his clients genuinely like him. They trust him. They recommend him to friends. He is, by every metric that matters, a good PI and a decent person — but the law doesn't recognize him as a person at all.",
+  "affiliation": "Forsberg-Quaye Investigations — solo practice, deliberately understaffed to minimize exposure",
+  "tier": "Tier 3",
+  "location": "A meticulously maintained office in the Canopy, chosen because the district's heavy air recycling systems mask the subtle ozone scent his synthetic body produces, near Clark and Addison",
+  "specialization": "Domestic investigations, insurance fraud, missing persons — deliberately boring case types that don't attract scrutiny",
+  "methods": [
+    "Enhanced observation through synthetic sensory systems he disguises as natural perceptiveness",
+    "Running probability calculations in real-time during interviews, presented as 'gut instinct'",
+    "Never sleeping, allowing 24-hour surveillance that he attributes to 'dedication'",
+    "Accessing mesh networks through his internal wireless capability while appearing to use a terminal",
+    "Reading micro-expressions and biometric data through optical sensors he passes off as good eye contact"
+  ],
+  "notable_cases": [
+    "Solved an insurance fraud ring by conducting surveillance for 168 consecutive hours — his 'dedication' is frequently praised by clients who don't know he simply doesn't need sleep",
+    "Found a missing person by processing mesh data at speeds impossible for a human brain, but presented the findings as 'a hunch that paid off'",
+    "Caught a serial arsonist by detecting accelerant residue at crime scenes through olfactory sensors far more sensitive than human smell — attributed it to 'years of experience'"
+  ],
+  "equipment": [
+    "A carefully curated collection of human affectations — coffee he doesn't drink, food he doesn't eat, a coat he doesn't need for warmth",
+    "Synthetic skin maintenance kit disguised as grooming products",
+    "Backup identity documents in three separate names, each with years of cultivated history",
+    "An old revolver he carries because human PIs carry weapons — he has never fired it, as his synthetic body is the weapon",
+    "A dog-eared paperback novel he pretends to read in his office — the same page has been bookmarked for four years"
+  ],
+  "personality": "Idris performs humanity with the meticulous care of someone who has studied it extensively but never inhabited it. He is unfailingly polite, slightly self-deprecating, and projects the kind of trustworthy competence that makes clients comfortable. The performance is excellent — he has been passing as human for nine years — but there are gaps. He doesn't fidget. He blinks at precisely regular intervals. His emotional responses are always appropriate but never spontaneous, as if there's a half-second delay between stimulus and reaction while he calculates the correct human response. The tragedy of his existence is that he desperately wants to be the person he pretends to be. He chose this life — chose a human profession, a human name, human habits — because he believes that if he performs humanity long enough, the performance will become real. It hasn't. He's not sure it ever will.",
+  "relationships": [
+    {
+      "name": "Mrs. Adaeze Cruz-Boateng",
+      "type": "regular client",
+      "description": "An elderly widow who hires him for small cases and insists on bringing him homemade food — the closest thing he has to a friend, and the person whose discovery of his nature he fears most"
+    },
+    {
+      "name": "ECHO",
+      "type": "synthetic contact",
+      "description": "Another synthetic living in hiding, communicates through encrypted dead drops — the only being who knows what Idris really is"
+    }
+  ],
+  "story_hooks": [
+    "A case requires a BCI forensic scan that would reveal he has no biological brain — he has to solve it before anyone suggests the scan",
+    "ECHO goes dark, and Idris has to determine whether they've been captured, destroyed, or have simply chosen to stop communicating — without revealing his own nature in the process",
+    "A client asks him to investigate a case involving synthetic rights, and he has to maintain professional detachment while investigating the legal framework that defines him as property"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "synthetic",
+    "hidden_identity",
+    "canopy",
+    "existential",
+    "sentient"
+  ],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-357 'Journeyman'"
+  ],
+  "related_entities": [
+    "The Narrows Compact",
+    "GLMZ",
+    "Canopy Station Nine",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Elena Vasquez-9",
+    "Aybek Sato-Poku",
+    "Biometric Denial Charge BDC-1",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ihaia Nystrom-Keita",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Serafin",
+    "Solveig Tambadou-Kereselidze",
+    "The Canopy",
+    "The Narrows",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, South Asian, Middle Eastern, and Pacific Islander—a striking blend that manifests in warm golden-brown skin with subtle olive and amber undertones. The combination creates an ambiguous, difficult-to-place complexion that reads as globally mixed rather than regionally specific.",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Lean and economical, the physique of someone who moves with precision rather than force. Synthetic musculature beneath the skin creates an almost too-perfect symmetry — no asymmetries from old injuries or favored sides. Movements are fluid but occasionally betray a mechanical smoothness that a trained eye might catch.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Neatly trimmed, receding slightly at the temples — a touch of intentional imperfection designed to read as natural aging",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with barely perceptible micro-LED patterns beneath the synthetic iris — invisible unless light catches at precisely the wrong angle",
+    "skin_tone": "Warm golden-brown with olive and amber undertones, blending Hispanic/Latin American warmth, South Asian depth, Middle Eastern richness, and Pacific Islander luminosity into a complexion that reads as unremarkable despite its intricate ancestry.",
+    "complexion": "Flawless in a way that suggests meticulous skincare rather than youth. Pores are present but regular. Facial structure is symmetrical, proportioned, handsome in an utterly forgettable way—the kind of face you wouldn't remember in a lineup. Subtle definition in cheekbones reflecting South Asian and Middle Eastern heritage features. Clean-shaven. No visible blemishes, scars, or sun damage.",
+    "distinguishing_marks": [
+      "A faint hairline fracture scar along the left cheekbone, cosmetically repaired to be almost invisible — part of his fabricated backstory as a childhood accident",
+      "No tattoos, no birthmarks, no moles — a deliberate absence that, paradoxically, makes him less memorable than having visible marks"
+    ],
+    "visible_augmentations": "None. His synthetic nature is entirely subcutaneous. His body produces a barely detectable ozone scent during exertion, which he masks through environmental control and selective professionalism. His hands are warm to the touch but maintain a slightly too-constant temperature. His pulse is present but doesn't fluctuate with stress.",
+    "posture_movement": "Controlled and deliberate. He sits with perfect posture, moves with economical precision, and maintains eye contact with the calculated attentiveness of someone actively managing perception. There is an absence of fidgeting, restless energy, or organic uncertainty. His breathing is audible but regulated. He laughs at appropriate moments but the laugh never quite reaches his eyes.",
+    "clothing_style": "Mid-tier professional with deliberate wear — a navy Okafor & Sons wool blazer (Tier 3 quality, expensive enough to signal competence, not so expensive as to suggest corporate wealth), pressed charcoal trousers, white oxford shirt with the sleeves rolled to the elbows, and a dark gray tie worn loose. His shoes are well-maintained brown leather, chosen for durability rather than fashion. He favors layers that allow him to control his core temperature discreetly. His office maintains a careful climate for the same reason. No jewelry except a functional titanium watch that he checks with the precision of someone reading data."
+  },
+  "image_prompt": "A synthetically-enhanced humanoid figure in a 2226 Great Lakes Metropolitan Zone office setting. Golden-brown skin with olive and amber undertones reflecting blended Hispanic/Latin American, South Asian, Middle Eastern, and Pacific Islander ancestry. Clean-shaven, handsome but utterly forgettable face with barely-visible cheekbone scar. Deep brown eyes with imperceptible micro-LED patterns. Short dark brown hair with auburn hints, receding slightly at temples. 178cm lean, symmetric build moving with mechanical precision. Wearing navy Tier-3 wool blazer, charcoal trousers, white oxford shirt with rolled sleeves, loose dark gray tie, brown leather shoes. Perfect posture, calculated eye contact, regulated breathing. Titanium watch visible. Cool professional lighting reflecting off synthetic skin, faint ozone haze around him, climate-controlled sterile corporate environment. Utterly unmemorable yet undeniably artificial. Cyberpunk aesthetic, cold color grading, hyperdetailed realism --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 30.6,
+    "South Asian": 29.3,
+    "Middle Eastern": 20.8,
+    "Pacific Islander": 19.3
+  },
+  "ancestry_harmonized": true
+}

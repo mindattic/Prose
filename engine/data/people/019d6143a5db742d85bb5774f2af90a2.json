@@ -1,0 +1,321 @@
+{
+  "id": "019d6143a5db742d85bb5774f2af90a2",
+  "type": "character",
+  "name": "Remi Árnason-Faalele",
+  "aliases": [
+    "Chiama",
+    "Clean Hands"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Forensic Technician, Metro Police Evidence Division",
+  "age": 34,
+  "status": "active",
+  "location": "Grand Corridor, near Armitage and Milwaukee",
+  "description": "Chiamaka Vestergaard-Suleimanović is precise in the way that some people are precise — not as a personality choice but as a metabolic fact, a condition of being. They are of moderate height and slight build, with deep brown skin, natural hair grown out to a medium length they wear in a carefully arranged protective style. Their most striking feature is purely cosmetic: bioluminescent freckles across the bridge of their nose and upper cheekbones, in a warm amber-gold, a gift to themselves on their thirtieth birthday. They dress in neat, unremarkable clothing and always, always wear gloves — not from a contamination protocol they've imported home, but because they find the sensation of touching most surfaces without them distracting.\n\nThey are the Metro Police Evidence Division's most technically accomplished analyst and their most quietly difficult employee. They have a gift for finding what the evidence says rather than what the investigation wants it to say, which has produced thirteen cases where their analysis materially contradicted the arresting officer's narrative. Four of those cases resulted in charges being dropped. The other nine resulted in paperwork, meetings, and a standing low-level friction with supervisors that neither side has ever directly addressed. Chiamaka does not care. The evidence is the evidence.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being made complicit in a wrongful conviction through their own analysis being misrepresented",
+      "Losing the clarity of their own judgment — having someone successfully pressure them into seeing what isn't there"
+    ],
+    "core_desires": [
+      "The evidence record to be accurate — always, without exception",
+      "To be understood by at least one person in the institution as an asset rather than a problem"
+    ],
+    "coping_mechanisms": [
+      "Extreme methodological rigor as a form of ethical fortification",
+      "Detailed personal notes kept parallel to official documentation",
+      "The sensory comfort of their gloves and controlled environments"
+    ],
+    "blind_spots": [
+      "Their faith in physical evidence as a corrective to corruption underestimates how thoroughly evidence itself can be manufactured or suppressed before it reaches them",
+      "They can be slow to read interpersonal threat — a skill less exercised than technical analysis"
+    ],
+    "secret": "They have a personal encrypted record of every case where their analysis was materially altered in the official report before going to prosecution — seventeen instances over eight years. They have never used this record. They are not sure who they would give it to. They add to it with the careful precision they apply to everything."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, technical, occasionally formal to the point of seeming stilted. Dislikes vague language intensely and will quietly correct it. Warmer registers emerge slowly in trusted company.",
+    "cadence": "Even and measured. Pauses carefully. Rarely uses filler words.",
+    "verbal_tics": [
+      "'To be specific...' before any correction of someone else's imprecision",
+      "A very small, quiet exhale through the nose when encountering something that will require significant additional work to fix"
+    ],
+    "example_lines": [
+      "The report says 'consistent with.' I need to be specific: 'consistent with' means it doesn't contradict the theory. It does not mean it supports the theory. These are not the same thing.",
+      "I understand what you want the evidence to say. I can't help you with that. I can tell you what it does say, which is different.",
+      "To be specific — and this does matter — this sample was handled after the chain of custody was broken. Anything downstream of that point is inadmissible and potentially fabricated. I'm noting that in my report."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Evidence connected to a player or someone they care about has passed through Chiamaka's lab — and their preliminary analysis does not match the official version of events. They are not sure what to do about this discrepancy and have so far only added it to their private record.",
+    "Chiamaka needs someone to physically retrieve a piece of evidence that was removed from official custody before they could analyze it — it went somewhere the Metro Police cannot follow without generating a record.",
+    "Their encrypted personal record of altered case reports has been detected — not yet traced to them, but they know the system has been probed. They need to get the record out before it disappears along with them."
+  ],
+  "narrative_function": "Technical expert and potential whistleblower — someone who can tell players what the physical evidence actually shows versus what the official record claims. A source of forensic information, a person who can authenticate or discredit evidence, and a character whose professional integrity has made them quietly vulnerable within the institution.",
+  "augmentations": "Haptic sensitivity modulation implants in both hands (reduces ambient tactile input; improves fine-detail analysis precision). Olfactory enhancement mod for trace chemical analysis. Cosmetic: bioluminescent amber-gold freckles across nose and cheekbones.",
+  "daily_life": "Arrives at Grand Corridor Central Processing by 0800, suits up for the lab, works through the evidence queue with methodical focus. Takes lunch outside when weather permits — they need the open air. Returns, finishes the queue, writes reports with a care for language that their supervisors find excessive and that has twice been cited in legal proceedings as unusually exculpatory in its precision.",
+  "affiliation": "GLMZ Metro Police — Evidence Division, Grand Corridor Central Processing",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Technically elite",
+      "Institutionally inconvenient",
+      "Principled",
+      "Quietly dangerous to corruption",
+      "Sensory precise"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The report reflects the evidence, not the investigation's preferred conclusion",
+      "Document everything in parallel — official record and personal record",
+      "Never physically alter or destroy evidence under any instruction or pressure"
+    ],
+    "escalation_ladder": [
+      "Precise verbal documentation of discrepancies in official channels",
+      "Written formal objection attached to official case file",
+      "Private record update — the last resort before direct external disclosure"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite and calibrated — gives exactly what the interaction requires, no more",
+      "friends": "Unexpectedly warm, slightly awkward in endearing ways, remembers small preferences, asks careful questions"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and methodical",
+      "medium": "Verbal output decreases dramatically, retreats into documentation",
+      "high": "Goes completely internal — functional, technically impeccable, emotionally unavailable until safe"
+    },
+    "contradictions": [
+      "Believes absolutely in empirical truth while working in an institution that regularly subordinates truth to outcome",
+      "Maintains meticulous records of institutional wrongdoing they have never acted on"
+    ],
+    "habits": [
+      "Gloves on before touching anything, including at home",
+      "Rewrites any report section that uses imprecise language, even if it takes longer",
+      "Leaves a very small data packet — precisely structured, almost ceremonial — at the building's resident ELF node at the start of each shift"
+    ],
+    "breaking_points": [
+      "Being directly ordered to alter a report or suppress findings",
+      "Discovering that evidence they processed was used to convict someone they have documented as innocent"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Haptic sensitivity modulation implants — both hands",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic sensitivity modulation implants — both hands",
+      "replaces": ""
+    },
+    {
+      "name": "Olfactory enhancement mod (trace chemical analysis)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Olfactory enhancement mod (trace chemical analysis)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent amber-gold freckle modding (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent amber-gold freckle modding (cosmetic)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Con Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 23 — Forensic science certification, joined Metro Police Evidence Division as a junior analyst",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 27 — First case where their analysis materially contradicted the arresting officer; charges eventually dropped",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 28 — Began maintaining parallel encrypted personal case record",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 30 — Bioluminescent freckle modding installed as birthday gift to themselves",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 31 — Formal supervisory review for 'excessive contrariness in case documentation'; outcome inconclusive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 34 — Current: seventeen documented instances of report alteration in personal record",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "related_entities": [
+    "Grand Corridor",
+    "Chronicle",
+    "Chimera-Null",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Stalker",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold",
+    "Elena Vasquez-9",
+    "The Milwaukee Core",
+    "Ambassador Silk",
+    "Ambrogio Waweru-Djordanović",
+    "Bogdan Achebe-Svanstrom",
+    "GLMZ",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Plot 17",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "ShieldTech CLA-3 'Cascade'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech Clarity Pro Neural Interface",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European, Pacific Islander, Eastern European, Hispanic/Latin American, South Asian, and Sub-Saharan African blend. The Pacific Islander and Northern European ancestry (56.3% combined) creates a striking interplay: warm golden-bronze undertones from Pacific Islander heritage mixing with cooler Northern European influence, while Eastern European ancestry adds slight Slavic bone structure definition. The 14% Hispanic/Latin American ancestry contributes warmth to complexion, South Asian ancestry (9.2%) adds subtle depth to eye shape and cheekbone prominence, and Sub-Saharan African ancestry (3.1%) enhances the natural warmth and melanin distribution across their features.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, with the economy of movement that comes from precision work. No excess mass; their frame reads as someone who exists efficiently.",
+    "hair_color": "Natural deep brown",
+    "hair_style": "Protective braids arranged in a crown pattern, meticulously maintained",
+    "hair_length": "Medium (shoulder-length when fully extended)",
+    "eye_color": "Deep brown, alert and focusing",
+    "skin_tone": "Golden-bronze with warm amber undertones—a complex blend of Pacific Islander warmth with Northern European depth, creating a rich medium-to-deep complexion that glows subtly under bioluminescent augmentation",
+    "complexion": "Clear and unblemished with naturally warm undertones reflecting the Pacific Islander-Northern European-South Asian blend. Cheekbone structure shows subtle Slavic prominence from Eastern European ancestry. Minimal makeup or grooming beyond the functional. Face carries the neutrality of someone who does not perform emotion for strangers.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in warm amber-gold across the bridge of nose and upper cheekbones, arranged in a subtle constellation pattern — a thirtieth-birthday modification that pulses faintly under low light",
+      "Faint scarring on the palmar surfaces of both hands consistent with precision work micro-abrasions, nearly invisible"
+    ],
+    "visible_augmentations": "Bioluminescent freckles are the only visible modification. Haptic sensitivity modulation and olfactory enhancement are subcutaneous/internal and show no external signs. Hands are always gloved — nitrile or thin leather — which conceals any implant integration points.",
+    "posture_movement": "Upright, economical, deliberate. They move as if each motion has been calculated for efficiency. Hands are steady; there is no fidgeting or wasted gesture. When focusing on evidence work, they enter a state of complete stillness except for the precise movements required by the task.",
+    "clothing_style": "Tier 3 utilitarian. Clean lab coat (Metro Police issue, well-maintained), neutral underlayers (grays, blacks, dark blues), sturdy flat shoes designed for long standing. No jewelry except a single plain silver ring on their left hand. No visible corpo branding or luxury indicators. Appearance suggests someone who has prioritized function over identity expression."
+  },
+  "image_prompt": "Remi Árnason-Faalele, 168cm tall precision investigator with golden-bronze skin glowing faintly with bioluminescent amber freckles across bridge of nose and cheekbones, deep brown alert eyes, shoulder-length natural brown hair in meticulously maintained protective braids arranged in crown pattern. Wearing clean Metro Police lab coat over neutral gray and black underlayers, sturdy functional shoes, gloved hands steady and deliberate. Faint constellation of warm amber bioluminescence visible on face under low cyberpunk lighting. Upright posture, economical movement, complete stillness when focused. Background: GLMZ crime lab or evidence analysis station, 2226, cool LED ambient lighting with bioluminescent accents. Neutral expression, professional detachment, someone who exists efficiently. Cyberpunk 2200s aesthetic, hyper-detailed face emphasizing the complex ethnic blend of features, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 32.3,
+    "Pacific Islander": 24.0,
+    "Eastern European": 17.4,
+    "Hispanic/Latin American": 14.0,
+    "South Asian": 9.2,
+    "Sub-Saharan African": 3.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

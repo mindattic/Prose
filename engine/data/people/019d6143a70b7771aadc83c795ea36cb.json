@@ -1,0 +1,313 @@
+{
+  "id": "019d6143a70b7771aadc83c795ea36cb",
+  "type": "character",
+  "name": "Bogdana Holm",
+  "aliases": [
+    "Mama Ududu",
+    "the Convener"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Protest coordinator and community council chair",
+  "age": 63,
+  "status": "active",
+  "location": "North Branch Commons, near Milwaukee and North Ave",
+  "description": "Ududu is a small woman who takes up enormous space. Her Igbo-Russian-Malian heritage has settled into deep brown skin mapped with fine lines around the eyes and mouth that come from years of squinting at data and laughing loudly. Her hair is natural, silver-white, pulled back in a style that is functional on weekdays and elaborate on days when she is performing authority, which she does with a theatrical precision that younger organizers study. She wears a retractable claw modification on her right hand — polished brass-tinted — which she had installed at fifty-two for reasons she claims are entirely aesthetic and which she uses to tap surfaces when she wants silence in a room. She always gets it.\n\nUdudu has been organizing in North Branch Commons for thirty-five years and has outlasted every corporate initiative, every city administration reshuffling, and every wave of younger activists who arrived certain they had found the approach that previous generations had missed. She is not bitter about any of this. She is something more interesting: she is genuinely curious about each new generation's theory of change, she steals what's useful, and she discards the rest with a cheerfulness that people find either admirable or maddening. She chairs the North Branch Commons Community Council, coordinates the annual Coalition of the Unzoned solidarity march, and maintains a mental map of every power relationship in three districts that no database has yet replicated.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That the movement outlasts her but not her values — that it becomes something she would not recognize",
+      "That her patience and pragmatism have, in some accounting, cost more than they gained"
+    ],
+    "core_desires": [
+      "To see North Branch Commons achieve genuine self-governance before she dies",
+      "To be honestly known — not the legend, not the institution, but herself"
+    ],
+    "coping_mechanisms": [
+      "The performance of certainty even when she feels none",
+      "Cooking — elaborate, extended cooking projects for large groups"
+    ],
+    "blind_spots": [
+      "Her longevity has made her the reference point for what is possible, which subtly limits what younger organizers propose around her",
+      "She has made pragmatic compromises she has never fully examined, and she actively avoids examining them"
+    ],
+    "secret": "Fifteen years ago, during a crisis that threatened to destroy the Coalition of the Unzoned, she traded information about a rival activist network to a Tessera community affairs officer — not names, but organizational structure and tactical plans. The rival network collapsed six months later in a way she has always told herself was coincidental. She does not allow herself to think about it directly and has built her entire subsequent career as a kind of penance she will not acknowledge as such."
+  },
+  "speech_patterns": {
+    "vocabulary": "Authoritative and precise in public, warmer and more vernacular in private. Occasional Russian diminutives when speaking to people she's fond of. Has a gift for the phrase that ends an argument.",
+    "cadence": "Deliberate and measured in the way of someone who has learned that whoever speaks slowest often controls the room. Long, balanced sentences. Never rushes.",
+    "verbal_tics": [
+      "Taps with the brass claws before major points — one tap, not multiple",
+      "'I have been doing this a long time' as a prelude to institutional memory",
+      "Refers to decades as reference points: 'In the '80s, we tried that, and here is what we learned'"
+    ],
+    "example_lines": [
+      "'I have been doing this a long time, and I have learned that the most dangerous thing you can bring to this work is certainty. Bring conviction. Bring stubbornness. Bring love. But leave certainty at the door, or it will betray you.'",
+      "'You want to know whether I trust you. I trust everyone exactly as much as I have evidence to trust them. You are new. So I trust you with new things, and we see what you do with them. This is not suspicion. This is how community works.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A young Coalition member has begun investigating the collapse of the rival network fifteen years ago and is getting uncomfortably close to the truth; Ududu must decide whether to get ahead of it, suppress it, or finally confess.",
+    "The annual solidarity march route passes through a stretch of North Branch that Ferrogate has quietly rezoned; Ududu needs someone who can work the legal and logistical angles without it becoming a public conflict she's not ready to have."
+  ],
+  "narrative_function": "Elder authority figure and long-game strategist. She provides historical context, access to established networks, and a counterweight to impulsive action. Her approval or disapproval carries genuine political weight in North Branch Commons.",
+  "augmentations": "Retractable brass-tinted claws, right hand — cosmetic, geneware-adjacent mod. A cochlear enhancement that lets her separate voices in crowded rooms — installed in her forties when meetings started getting too loud to follow.",
+  "daily_life": "Council administrative work mornings, community meetings and coalition coordination afternoons, and what she calls 'maintenance' in the evenings — visiting people, maintaining relationships, and listening to the neighborhood in the way that only someone with thirty-five years of context can.",
+  "affiliation": "North Branch Commons Community Council (chair); Coalition of the Unzoned; informal elder status across multiple activist networks",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "elder",
+      "council chair",
+      "strategist",
+      "coalition builder",
+      "long memory",
+      "hidden guilt",
+      "institutional authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The movement survives longer than any single action — protect the institution first",
+      "Never publicly undermine an ally even when wrong; address it privately and directly"
+    ],
+    "escalation_ladder": [
+      "Patient listening and private counsel",
+      "Formal council process — bring it to the table, make it institutional",
+      "Public coalition mobilization — the march, the statement, the coordinated pressure",
+      "The conversation she has never needed to have a fourth step for, which worries her"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but evaluating — she is always figuring out where you fit in the larger map of relationships",
+      "friends": "Deeply nurturing, will feed you regardless of your feelings on the matter, tells hard truths with care"
+    },
+    "stress_responses": {
+      "low": "Becomes more formal and procedural",
+      "medium": "Cooks something elaborate and invites people over",
+      "high": "Goes very quiet, disappears into administrative work, and makes a decision alone that she should probably make with others"
+    },
+    "contradictions": [
+      "Preaches collective process while having made the most consequential decision of her organizing life completely alone",
+      "Performs certainty as a leadership tool while privately living with deep uncertainty about her legacy"
+    ],
+    "habits": [
+      "Taps the brass claws once on any surface before making a major statement",
+      "Keeps a paper calendar on her wall despite all available digital alternatives — 'I need to see the whole year at once'",
+      "Cooks for every significant meeting, insisting people eat before they argue"
+    ],
+    "breaking_points": [
+      "The Tessera secret becoming public",
+      "Watching a younger organizer make the same kind of compromise she made, and recognizing it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in North Branch Commons to a family with roots in Igbo Nigeria, the Russian far east, and the Malian Sahel",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First arrest at age 20 during a housing rights action; spends two days in detention and emerges more committed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected to the North Branch Commons Community Council for the first time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Trades organizational intelligence about a rival network to a Tessera community affairs officer during the Coalition crisis; the rival network collapses six months later",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Has the brass claw modification installed; becomes her signature",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Becomes chair of the North Branch Commons Community Council, a position she has held since",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Tessera TKR-10 'Executor'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "North Branch Commons",
+    "Tender Collapse",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Ferrogate Transit",
+    "The Heritage Vault",
+    "Silver",
+    "Brass",
+    "Compass Rose",
+    "The Milwaukee Core",
+    "Aïda Połczyńska-Ouattara",
+    "Blessed Nkemdirim",
+    "Breck Tannen",
+    "Glenville Sound",
+    "Green Bay Community Table",
+    "Retractable Claw Modification",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Tessera TKR-10 'Executor'",
+    "The Augmentation Rights Coalition",
+    "The Compact",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Quiet Room",
+    "The Wire Taps",
+    "Veslemøy Achebe-Tursynov",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southeast Asian, Eastern European, Central Asian, South Asian, and Sub-Saharan African ancestry in near-equal measure; a true product of the Ubiquitous Diaspora. The blend manifests as warm golden-brown skin with subtle olive and reddish undertones, facial structure reflecting the diverse geographic regions of her lineage.",
+    "height_cm": 157,
+    "weight_kg": 58,
+    "build": "Small-framed and wiry, with the compact density of someone who has moved through crowded rooms for decades. No excess weight; her frame is all functional muscle and bone.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Pulled back tight on weekdays in a practical wrap or braid; on formal occasions, arranged in elaborate braids with silver thread woven through",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, clear and sharp",
+    "skin_tone": "Warm golden-brown with subtle olive and reddish undertones, the result of layered Southeast Asian, Central Asian, South Asian, and African ancestry blending into a unified complexion that catches light warmly",
+    "complexion": "Face mapped with fine laugh lines around the eyes and mouth; high cheekbones and gently tapered facial structure reflecting Central and Southeast Asian heritage, softened by the fuller features from South Asian ancestry. Skin is well-maintained but shows the texture of sun exposure and age without apology. Fine radiating lines around both eyes from decades of squinting at documents and data; laugh lines deeper on the left side. A thin scar barely visible on the back of her left hand. Expression typically alert, occasionally theatrical.",
+    "distinguishing_marks": [
+      "Fine radiating lines around both eyes from decades of squinting at documents and data",
+      "Laugh lines around the mouth, deeper on the left side",
+      "A thin scar on the back of her left hand from an organizing incident in 2187, barely visible"
+    ],
+    "visible_augmentations": "Retractable brass-tinted claw modification on right hand, polished to a soft shine, visible when extended or folded against the palm. No other visible augmentations; cochlear enhancement is subcutaneous.",
+    "posture_movement": "She moves with deliberate economy, never rushed. Stands with her full weight grounded, shoulders back. Her hands are expressive — the right hand claw is a gestural tool she deploys for emphasis. When she wants silence, she taps the claw once against a table or wall; the sound carries authority earned over thirty-five years.",
+    "clothing_style": "Tier 3-4 practical: well-maintained but worn utility-cut pants or long skirts, layered tops in muted earth tones, sometimes with a vest or jacket bearing faded patches from old coalitions. Shoes are always sensible and broken in. On council meeting days, she adds a single statement piece — a silk scarf, a beaded collar, or brass jewelry — that signals 'I am performing authority today.' Her clothing is functional but has texture; she refuses to disappear."
+  },
+  "image_prompt": "Bogdana Holm, 157cm tall, wiry build, silver-white hair pulled back in practical braids with silver thread, warm golden-brown skin with olive and reddish undertones reflecting Southeast Asian, Eastern European, Central Asian, South Asian and Sub-Saharan African heritage. Sharp dark brown eyes with fine radiating laugh lines, high cheekbones, subtle facial features blending multiple continents. Right hand features polished brass-tinted retractable claw modification. Wearing muted earth-tone layered clothing, well-worn utility pants, sensible broken-in shoes, faded coalition patches on vest. Alert expression, theatrical when needed. GLMZ council chamber or organizing space, cyberpunk 2226, neon-lit overhead with warm practical lighting, serious but expressive stance with gestural right hand, refusing to disappear --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 23.8,
+    "Eastern European": 23.8,
+    "Central Asian": 21.3,
+    "South Asian": 16.3,
+    "Sub-Saharan African": 13.5,
+    "East Asian": 1.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "019d6143a6067825becb43733669cfb8",
+  "type": "character",
+  "name": "Briar Baiseitov",
+  "aliases": [
+    "The Judge"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Moral contracts only",
+  "age": 62,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Chicago",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "The Heritage Vault",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African, Central Asian, and Hispanic/Latin American blend; the genetic mix creates rich depth in her features—darker undertones from African ancestry balanced with Central Asian bone structure and Hispanic warmth",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Stocky and broad-shouldered with maintained muscle tone despite age; years of physical work have given her solid, functional frame rather than aesthetic definition",
+    "hair_color": "Steel gray with natural dark roots showing",
+    "hair_style": "Pulled back in a tight, practical braid; functional rather than fashionable",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, sharp and assessing",
+    "skin_tone": "Deep warm brown with subtle golden undertones; rich complexion reflecting the blend of Sub-Saharan, Central Asian, and Latin American ancestry",
+    "complexion": "Weathered and lined, especially around eyes and forehead; minimal makeup; scars on left cheekbone and jawline softened by age but still visible; skin shows sun damage and character; broad facial structure with strong cheekbones characteristic of Central Asian heritage, softened by the rounded fullness from African and Latin ancestry",
+    "distinguishing_marks": [
+      "Thin white scar running from left cheekbone down to jawline, approximately 8cm long",
+      "Small burn scar on inner right wrist, roughly 2cm diameter, pale and old",
+      "Faded tattoo on right forearm: a symbol combining geometric Central Asian and Sub-Saharan motifs, partially obscured by age and fading",
+      "Pronounced calluses on both palms and fingers from decades of handling tools and weapons"
+    ],
+    "visible_augmentations": "None visible; augmentations are strictly subcutaneous if present at all—consistent with her philosophy of discretion",
+    "posture_movement": "Moves with deliberate, economical grace; stands slightly forward on the balls of her feet as if always ready to move. Direct eye contact, minimal unnecessary gesture. Speaks slowly and rarely, but commands full attention when she does.",
+    "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry—only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
+  },
+  "image_prompt": "Briar Baiseitov, 168cm tall weathered woman with deep warm brown skin and steel gray hair pulled back in a practical braid, dark assessing eyes, facial scars on left cheekbone softened by age, strong Central Asian cheekbones softened by African and Latin features, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket, gray thermal layer, heavy canvas pants, black steel-toed boots. Standing with deliberate posture, forward on balls of feet, direct gaze. Mechanical watch visible on wrist. GLMZ cyberpunk 2226 setting, neon-lit industrial background, cool blue and amber lighting, photorealistic, character portrait, weathered and capable presence --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 39.1,
+    "Central Asian": 38.2,
+    "Hispanic/Latin American": 19.2,
+    "East Asian": 3.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

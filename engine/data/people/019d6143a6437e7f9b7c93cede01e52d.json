@@ -1,0 +1,146 @@
+{
+  "id": "019d6143a6437e7f9b7c93cede01e52d",
+  "type": "character",
+  "name": "Layla Sengupta",
+  "aliases": [
+    "Zero"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Fixer - Ghost fixer",
+  "age": 37,
+  "status": "active",
+  "location": "Unknown, near Milwaukee and North Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Unknown",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9,
+    "Ghost": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [],
+  "district": "Meridian Core",
+  "related_entities": [
+    "The Milwaukee Core",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "heritage": "South Asian, Middle Eastern, East Asian, and Sub-Saharan African blend with trace Northern European ancestry. The genetic admixture creates striking phenotypic complexity: warm medium-brown skin with subtle olive and golden undertones from South Asian and Middle Eastern heritage, refined by East Asian bone structure and Sub-Saharan African features. High, prominent cheekbones reflect the South Asian and East Asian contributions, while the broader nasal base and fuller lip structure show Sub-Saharan African heritage. Dark eyes carry the warmth characteristic of South Asian ancestry.",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Lean and efficient, minimal wasted mass. Corded muscle from years of fieldwork rather than gym aesthetics. Moves like someone who conserves energy.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Undercut with textured top, kept short enough for quick maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, alert and assessing",
+    "skin_tone": "Medium warm brown with golden and olive undertones, even sun-exposure coloration suggesting mixed heritage from multiple equatorial and subtropical regions",
+    "complexion": "Clean-shaven, angular features with prominent high cheekbones and refined facial structure. Minimal scarring on face — suggests careful work. Skin shows sun exposure but well-maintained. A small old burn scar visible on left jawline. Subtle definition in cheek and jaw structure reflecting the blended ancestry.",
+    "distinguishing_marks": [
+      "Burn scar (3cm) on left jawline, pale and smooth from old healing",
+      "Faint horizontal scar across right palm, approximately 5cm, consistent with a defensive wound",
+      "Small geometric tattoo (1cm) on inside left wrist — appears to be coordinates or a code in minimalist lines"
+    ],
+    "visible_augmentations": "None visible. Ghost fixers typically run subcutaneous or fully internalized augmentation suites.",
+    "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy — no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
+    "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger — appears functional, possibly a discrete data interface or auth token."
+  },
+  "image_prompt": "Layla Sengupta, cyberpunk 2226, mixed-heritage woman of South Asian, Middle Eastern, and East Asian descent with Sub-Saharan African features. Medium warm brown skin with golden undertones, prominent high cheekbones, deep brown assessing eyes. Black hair with silver at temples, undercut style. 172cm lean build with corded fieldwork muscle. Old burn scar on left jawline, faint defensive scar on right palm. Unmarked grey tech-weave jacket over dark compression shirt, charcoal cargo pants, military boots. Silver ring on index finger. Clean-shaven, angular features. Posture relaxed but alert, eyes tracking surroundings. Ghost fixer aesthetic. Standing in neon-lit GLMZ corridor with rain-slicked surfaces, subtle augmentation tech concealed beneath skin. Cool blue and amber cyberpunk lighting, professional operative mood, minimal expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 33.9,
+    "Middle Eastern": 23.4,
+    "East Asian": 20.9,
+    "Sub-Saharan African": 20.3,
+    "Northern European": 1.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

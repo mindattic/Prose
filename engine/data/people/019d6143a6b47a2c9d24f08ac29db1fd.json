@@ -1,0 +1,331 @@
+{
+  "id": "019d6143a6b47a2c9d24f08ac29db1fd",
+  "type": "character",
+  "name": "Arden Mazurek",
+  "aliases": [
+    "Hardline",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "age": 46,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
+  "description": "Rongo Belov-Ntim is lean and angular, all sharp edges and visible tension. At 46, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRongo Belov-Ntim is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.22,
+      "ideal": 0.9,
+      "id": 0.48,
+      "shadow": 0.52,
+      "mask": 0.55,
+      "ghost": 0.99
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Control — over their body, their schedule, their future",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Overestimates their own abilities in situations outside their specialty",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Rongo Belov-Ntim is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Repeats the last thing someone said back to them before responding — processing or intimidation"
+    ],
+    "example_lines": [
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A crew member from Rongo Belov-Ntim's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A Tier 4 executive offers Rongo Belov-Ntim a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Rongo Belov-Ntim discovers a job they completed last year was a setup for something much larger and much worse"
+  ],
+  "narrative_function": "As a netrunner, Rongo Belov-Ntim embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Freelance — available through Circuit fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.26,
+      "caution": 0.16,
+      "loyalty": 0.75,
+      "greed": 0.32,
+      "empathy": 0.74
+    },
+    "drives": [
+      "knowledge",
+      "freedom",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 6,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "technical expertise with augmentation systems",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "netrunner",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Bone lacing",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7,
+    "Pattern Reader": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "Blessed Nkemdirim",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Fanta Hedlund-Diarra",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'",
+    "Ilhan Sandstrom-Badu",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Mireille Fontaine-Obi",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nneka Lindqvist-Okafor",
+    "Réginald Asomaning-Čabarkapa",
+    "Solveig Tambadou-Kereselidze",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European, South Asian, and East Asian tri-heritage ancestry creating a distinctive phenotype. The combination manifests in his angular facial structure with high, sharp cheekbones characteristic of Eastern European ancestry, layered with the deeper eye-set and facial proportions common to South Asian genetics, and refined further by East Asian skeletal features that contribute to his lean, efficient build.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — the stripped-down frame of someone who carries only functional mass. His shoulders are broad but not heavy; his limbs show the kind of definition that comes from maintenance, not vanity.",
+    "hair_color": "Salt-and-pepper gray with darker roots",
+    "hair_style": "Kept short and practical, sometimes unwashed, combed back without care for styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, often bloodshot from extended jack-in sessions",
+    "skin_tone": "Warm medium-brown with subtle undertones reflecting his mixed ancestry — the natural depth of tri-heritage genetics rendered matte by indoor living, lacking the luminosity of sun exposure. The tone sits at the intersection of Eastern European fairness diluted by South Asian and East Asian melanin distribution.",
+    "complexion": "Gaunt facial structure with prominent, high cheekbones and a sharp jawline reflecting his blended ancestry. Deep-set eyes framed by the eye-fold characteristics of his East and South Asian heritage. Stress lines around the mouth and forehead. Skin shows the wear of age and poor sleep habits — not scarred, but weathered. Three-day stubble is his default state.",
+    "distinguishing_marks": [
+      "Pale surgical scar running from left temple to jawline, approximately 8cm, partially hidden by the angle of his face",
+      "Burn scar on right forearm (wrist to elbow), roughly 12cm in length, from a Jack-in accident three years prior — the skin is waxy and discolored",
+      "Small tattoo on the inner left wrist: a circuit pattern in faded black ink, self-applied, marking his first contract debt"
+    ],
+    "visible_augmentations": "Chrome pain editor visible at left temple and along the left jawline — sleek metallic panels with barely-concealed wiring beneath, no effort made to cosmetically hide it. The augmentation catches light unnaturally. Bone lacing is not visibly apparent but manifests in the unusual density of his frame and the way he moves with efficiency that seems biomechanically optimized.",
+    "posture_movement": "Economical and controlled — no wasted motion. He stands with a slight forward lean, hands often resting near his sides or pockets. Walks with a networker's alertness, eyes tracking patterns and exits. When seated, he's coiled rather than relaxed. His movements suggest he's always calculating distance and angle.",
+    "clothing_style": "Tier 4 utilitarian — functional over fashion. Black or dark gray synth-leather jacket, worn at the cuffs, over an unmarked compression shirt. Loose tactical pants with reinforced pockets and cargo straps, worn matte black. Feet in scuffed runners with custom insoles. A worn braided cord around his wrist (memento or talisman — unclear to outsiders). Everything is practical; nothing is pristine. Occasional neural interface jack visible at the base of his neck, partially hidden by collar."
+  },
+  "image_prompt": "Arden Mazurek, gaunt tri-heritage man of Eastern European, South Asian, and East Asian descent, 178cm lean build, short salt-and-pepper hair, warm medium-brown skin tone, sharp cheekbones, deep-set dark eyes bloodshot from neural jacking. Three-day stubble. Pale surgical scar from left temple to jawline. Burn scar visible on right forearm. Chrome pain editor augmentation visible at left temple with exposed wiring, catching harsh light. Wearing worn black synth-leather jacket over compression shirt, tactical matte-black pants, scuffed runners, braided cord around wrist. Neural interface jack at neck base. Economical posture, coiled alertness. Cyberpunk 2226, Great Lakes Metropolitan Zone, indoor neon-tinged lighting with hard shadows emphasizing his weathered features and chrome augmentations. Mood: tired, calculating, hardened by years of contract work. Sharp angular composition. Gritty, worn aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 34.8,
+    "South Asian": 32.8,
+    "East Asian": 32.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

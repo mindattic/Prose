@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a5a770e384dc80d693fd6a0d",
+  "type": "character",
+  "name": "Aurelio Guerrero-Masoe-Raghavan",
+  "aliases": [
+    "Kos",
+    "the Patcher"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Trauma surgeon, Aurochs Medical Complex emergency rotation and private contract",
+  "age": 41,
+  "status": "active",
+  "location": "Aurochs Medical Complex Trauma Bay 7; off-hours in Copperhead district, near Milwaukee and Damen",
+  "description": "Akosua is tall and rangy with warm ochre-brown skin, natural hair grown high and loose, and the kind of face that is perpetually unreadable to people who have not spent time with them — not unfriendly, simply internal. Their most immediately notable feature is their left arm, which from the elbow down is full chrome: high-grade Helix surgical-grade manipulators, articulated to tolerances no biological hand can match, finished in brushed gunmetal with amber indicator lights at the wrist joints that track grip pressure. They got it after a bus accident seven years ago and accepted the premium model because anything less would compromise their work. They do not discuss the accident.\n\nIn the trauma bay, they are an entirely different creature from the quiet person who buys coffee from the same cart in Copperhead every morning. They become fast, flat, almost frightening in their economy. They do not narrate. They do not comfort. They fix. Outside of work they are thoughtful, prone to long silences that are not uncomfortable, and fond of extremely loud, chaotic music that they listen to on bone-conduction speakers while cooking. They have strong opinions about soup.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing function in the chrome arm and being unable to perform surgery",
+      "Caring about a patient so specifically that losing them breaks the system that keeps them functional"
+    ],
+    "core_desires": [
+      "To operate at the absolute limit of what medicine can do and still have it be enough",
+      "To be known — slowly, on their terms — by someone who is not afraid of the silences"
+    ],
+    "coping_mechanisms": [
+      "Extremely loud music as emotional pressure-release valve",
+      "Cooking as controlled creation after days of controlled destruction",
+      "The chrome arm calibration as ritual — meditates on precision as a form of self-respect"
+    ],
+    "blind_spots": [
+      "They are so skilled that they sometimes pursue the elegant solution over the fast one — in non-trauma contexts this costs time and relationships",
+      "They assume their self-sufficiency is reassuring to others; it often reads as indifference"
+    ],
+    "secret": "The bus accident was not an accident. Someone ran them off the road. They know who — a Helix Biosystems supply-chain manager whose negligence they had reported to a journalist two days before. The arm is a permanent reminder. They have been collecting evidence for seven years and have not yet decided what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal in trauma settings — commands and confirmations only. In conversation, they speak in complete thoughts with occasional unexpected humor",
+    "cadence": "Unhurried; comfortable with gaps in conversation that most people fill nervously",
+    "verbal_tics": [
+      "Long pause before answering anything personal",
+      "'What's the actual question?'"
+    ],
+    "example_lines": [
+      "'The arm does what I tell it. That's more than I can say for most things.'",
+      "'You want to know if I'm alright. The actual question is whether that matters right now. Come back in four hours.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Helix supply-chain manager they have been building a case against has just checked into Aurochs with a cardiac event — and Akosua is the attending surgeon on call",
+    "Someone left a Copperhead clinic patient's file on their cart with the bus accident report clipped to it — someone knows what they know"
+  ],
+  "narrative_function": "Emergency resource, exposition source for the medical-corporate system's failures, potential ally for characters navigating Aurochs bureaucracy; the person you call when someone is dying and you cannot explain how they got hurt",
+  "augmentations": "Full chrome left arm from elbow, surgical-grade Helix manipulators with amber grip-pressure indicators; bone-conduction audio implant; corneal magnification overlay (surgical use)",
+  "daily_life": "Trauma rotation runs thirty-six hours on, twenty-four off. On off-hours they sleep aggressively, cook, and do two hours of calibration exercises with the chrome arm to maintain dexterity tolerances. Once a week they do a free-clinic half-day in Copperhead.",
+  "affiliation": "Aurochs Medical Complex (senior contract surgeon); secondary contract with a Copperhead neighborhood clinic they do not advertise",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 10,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Elite Hands",
+      "Patient Investigator",
+      "Chrome-Armed",
+      "Contained Fury",
+      "Trauma-Hardened"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The patient on the table is the only priority; everything else queues",
+      "Never let anyone see the cost until you are alone",
+      "Collect evidence before acting — always"
+    ],
+    "escalation_ladder": [
+      "Silence and assessment",
+      "Direct, flat statement of the problem",
+      "Removal of cooperation — they stop being helpful",
+      "Action taken unilaterally without warning"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous, emotionally closed; they are not rude, but they offer nothing unprompted",
+      "friends": "Rare and deliberate; once inside they are loyal with the same intensity they bring to surgery"
+    },
+    "stress_responses": {
+      "low": "Narrows focus, becomes very still",
+      "medium": "Chrome arm indicator lights pulse faster — a tell they are unaware of",
+      "high": "Goes completely cold and mechanically perfect, which is more frightening than shouting"
+    },
+    "contradictions": [
+      "They believe in justice and have not acted on the most important injustice in their life; they explain this as strategy and are not entirely wrong"
+    ],
+    "habits": [
+      "Runs chrome arm through a forty-three-point calibration sequence after every shift",
+      "Puts on music at volume before entering their apartment — always, as if resetting the space",
+      "Touches the upper edge of the chrome arm housing when thinking through a problem"
+    ],
+    "breaking_points": [
+      "A patient dying because Helix supply negligence depleted the relevant equipment",
+      "The evidence file being destroyed or stolen"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Copperhead",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Ambrosia Fekete-Waiyaki",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Breck Tannen",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Green Bay Community Table",
+    "Helix Biosystems",
+    "Hepatic Glycogen Depletion Projector",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Oumarou Svec-Ranginui",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA WL-6 'Stacker'",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant South Asian and minor Pacific Islander ancestry; warm brown skin tones reflecting this blend, with features showing the characteristic diversity of the Ubiquitous Diaspora",
+    "height_cm": 187,
+    "weight_kg": 72,
+    "build": "Rangy and lean with defined musculature from precision work and calibration routines; long-limbed, minimal body fat, economical posture that reads as coiled rather than relaxed",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Grown high and loose, worn in a natural crown; maintained but not styled, suggesting function over aesthetics",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, natural; left eye shows faint crystalline overlay at certain angles (corneal magnification augmentation)",
+    "skin_tone": "Warm medium brown with golden undertones characteristic of Hispanic/Latin American and South Asian blending, rich and even across the face and body",
+    "complexion": "Angular face with moderately high cheekbones and south/central Asian influence visible in orbital structure; composed expression, minimal micro-expressions in repose; well-maintained but unstudied grooming; skin shows the texture of someone who prioritizes function over skincare routine",
+    "distinguishing_marks": [
+      "Surgical scar running along left shoulder and upper chest from the bus accident seven years prior, faint but visible under direct light",
+      "Fine network of barely-visible calibration tattoos on the inside of right wrist in pale ink—depth markers for surgical measurement",
+      "A thin white line along the left elbow joint where the chrome arm interfaces with biological tissue"
+    ],
+    "visible_augmentations": "Full chrome left arm from elbow down: brushed gunmetal finish with articulated surgical-grade Helix manipulators; two amber indicator lights embedded at wrist joints that glow faintly with grip pressure feedback; the arm moves with inhuman precision and minimal lag. Bone-conduction audio implant visible as a subtle metallic disc behind the left ear. Corneal magnification overlay occasionally catches light in the left eye.",
+    "posture_movement": "Stands and moves with surgical economy—minimal wasted motion, spine straight, weight centered. Outside trauma bay: slow, deliberate, almost meditative. In surgery: becomes fluid and fast, movements stripped down to pure function. Hands rest in neutral position when not in use. Left chrome arm moves with mechanical precision that is unsettling in its accuracy.",
+    "clothing_style": "Off-duty favors durable, tier 3-4 minimalist pieces: fitted charcoal synthetic shirts that accommodate the chrome arm without bunching, high-quality work trousers with reinforced pockets, worn leather jacket (real leather, well-maintained, a few years old). No jewelry except a functional smartwatch on right wrist. Shoes are practical—good arch support, worn but clean. In the trauma bay: standard surgical blacks under a lab coat with the Aurochs Medical Complex insignia. The coat is tailored to fit the chrome arm without restriction. Zero ornamentation."
+  },
+  "image_prompt": "Aurelio Guerrero-Masoe-Raghavan, 187cm tall surgeon with warm golden-brown skin blending Hispanic/Latin American and South Asian heritage, natural black hair in loose crown, dark eyes with left corneal augmentation overlay catching light. Lean muscular build, coiled posture. Full chrome left arm from elbow down brushed gunmetal with amber wrist indicators glowing faintly, surgical-grade Helix manipulators, subtle bone-conduction implant behind left ear. Faint surgical scar visible on left shoulder/chest, calibration tattoos on right inner wrist, thin white line at left elbow interface. Wearing fitted charcoal synthetic shirt accommodating chrome arm, high-quality work trousers, worn well-maintained leather jacket, practical shoes, functional smartwatch. Cyberpunk 2226 Great Lakes Metropolitan Zone, clinical lighting, meditative off-duty demeanor, minimal wasted motion, zero ornamentation, photorealistic, moody atmospheric --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 81.9,
+    "South Asian": 16.7,
+    "Pacific Islander": 1.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

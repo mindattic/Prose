@@ -1,0 +1,343 @@
+{
+  "id": "019d6143a6ce776f883d58b476636ee6",
+  "type": "character",
+  "name": "Thora Horváth-Holm",
+  "aliases": [
+    "Torque",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Contract broker and resource coordinator — fixer",
+  "age": 26,
+  "status": "active",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Western and Division",
+  "description": "Sinan Navarro-Afriyie is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a fixer out of The Overhang, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Sinan Navarro-Afriyie describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.14,
+      "ideal": 0.65,
+      "id": 0.18,
+      "shadow": 0.23,
+      "mask": 0.57,
+      "ghost": 0.31
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "The quiet — silence means something is about to go very wrong"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "Stability — a place to sleep that's the same place two nights running",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Sinan Navarro-Afriyie sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
+      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
+      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Sinan Navarro-Afriyie on jobs, and the impersonator is better at the work than the original",
+    "Sinan Navarro-Afriyie is offered a contract that would clear all their debts — the target is someone they respect",
+    "A dead drop Sinan Navarro-Afriyie maintains is found and cleaned out — whoever did it now has leverage"
+  ],
+  "narrative_function": "Sinan Navarro-Afriyie is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — known in Old Harbor circles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 8
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 6
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.74,
+      "caution": 0.51,
+      "loyalty": 0.95,
+      "greed": 0.34,
+      "empathy": 0.56
+    },
+    "drives": [
+      "survival",
+      "money",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 7,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "natural leadership presence",
+      "ability to remain calm under fire",
+      "encyclopedic knowledge of GLMZ infrastructure"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "risk-averse to the point of missed opportunities",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "fixer",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Always verifies target identity independently before lethal contracts",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Internal air filtration system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Pragmatist": 0.9,
+    "Opportunist": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+    "Kang-Petrov Arms KPS-7V 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+    "Kang-Petrov Arms KPS-7V 'Verdict'"
+  ],
+  "related_entities": [
+    "Masquerade",
+    "Ironveil Canopy",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
+    "Arcturus ST-4 'Verdict'",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Dzemal Acholonu-Patagiri",
+    "Emeka Johansson-Orozco",
+    "Ezio Kaboré-Malhotra",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Glenville Sound",
+    "Kang-Petrov Arms KPS-7V 'Verdict'",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Narrowcast",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Old Harbor",
+    "Oumarou Svec-Ranginui",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Quiet Room",
+    "Vespid Dynamics",
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European dominant (68%) with Northern European (16%) and Sub-Saharan African (16%) ancestry — genetic blend reflected in facial structure combining Slavic bone geometry with subtle West African feature softening and Northern European fairness undertones in skin",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Rawboned and lean — the kind of frame that reads as either ascetic discipline or chronic resource scarcity. Minimal body fat, visible tendon definition in forearms and neck. Efficient rather than muscular.",
+    "hair_color": "Dark brown, natural with premature silver threading at temples",
+    "hair_style": "Short, practical cut with slight fade — maintained but not groomed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertone — natural, no augmentation",
+    "skin_tone": "Medium tan with warm olive undertones — Eastern European base enriched by Sub-Saharan ancestry, creating subtle golden warmth rather than red undertone. Even melanin distribution with slight burnished quality from environmental exposure",
+    "complexion": "Slavic-influenced high cheekbones with subtle West African feature softening — sharp jaw with slight width across temples. Weathered texture suggesting sun exposure and environmental stress rather than age. Stubble permanent fixture, grooming functional rather than aesthetic. Slight scar tissue around left eye socket from old trauma, white scar crossing left temple to cheekbone roughly 3cm.",
+    "distinguishing_marks": [
+      "Surgical scar running from right inner wrist to mid-forearm where smartgun link was installed, chrome visible at entry point",
+      "Thin white scar crossing left temple to cheekbone, roughly 3cm",
+      "Tattoo on right shoulder blade — geometric circuit pattern in white ink, faded"
+    ],
+    "visible_augmentations": "Right forearm displays chrome smartgun link interface — visible at wrist and mid-forearm as brushed steel panels with subtle LED status indicators. No visible respiratory modifications, but there is a barely-noticeable seam along his ribs where synthetic lung integration occurred.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Slight forward lean when at rest, suggests constant scanning of environment. Right arm carries slightly different tension than left due to chrome weight distribution. Eyes track exits and entry points habitually.",
+    "clothing_style": "Tier 3-4 runner aesthetic. Charcoal synthweave cargo pants with reinforced pockets and concealed weapon rig. Black hooded tech-jacket with integrated temp-regulation — visible wear at collar and cuffs. Neutral colors, practical fabrics, minimal branding. Shoes are worn Yakamaki tactical boots, well-maintained. Wears a discrete wrist-mounted comm unit, older model but reliable."
+  },
+  "image_prompt": "Thora Horváth-Holm, tall Eastern European-descended runner, 188cm lean frame with Slavic bone structure and warm olive-tan skin from mixed ancestry. Dark brown hair with silver threads at temples, short practical cut. Dark eyes tracking environment with predatory focus. Left temple bears 3cm white scar, weathered complexion from environmental stress. Right forearm displays brushed steel smartgun link interface with subtle LED indicators, chrome surgical scar visible at wrist. Shoulder blade shows faded white geometric circuit tattoo. Wearing black hooded tech-jacket with integrated temp-regulation showing collar wear, charcoal synthweave cargo pants with reinforced tactical pockets, worn Yakamaki tactical boots. Wrist-mounted older-model comm unit. Slight forward lean, economical movement. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-ambient lighting, scanning for exits, runner aesthetic, gritty urban environment. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 68.0,
+    "Northern European": 16.2,
+    "Sub-Saharan African": 15.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

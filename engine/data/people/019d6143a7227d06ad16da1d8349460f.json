@@ -1,0 +1,294 @@
+{
+  "id": "019d6143a7227d06ad16da1d8349460f",
+  "type": "character",
+  "name": "Sage Khorasani",
+  "aliases": [
+    "Yanni",
+    "Y.T."
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Holographic artist and choreographer",
+  "age": 29,
+  "status": "active",
+  "location": "Pilsen Veil, working out of a rented rehearsal bay in a building called the Meridian Hive, near Ashland and Division",
+  "description": "Yannick is medium height and all kinetic energy, the kind of person who cannot sit without some part of him moving — tapping, shifting, bouncing a knee. His father's Malian bone structure and his mother's Czech coloring have given him an angular face with warm undertones, a combination he's leaned into with bioluminescent freckles across his cheeks and nose that glow soft amber under low light. He keeps his hair short except for a single long braid at his nape he wraps in conductive thread that connects to a personal haptic rig — his main instrument. His hands are covered in small calluses from years of dance and from the contact rigs he builds himself from salvaged holo-projector parts.\n\nHe makes work that lives at the intersection of choreography and holographic installation: his pieces require live performers moving through interactive holo-environments that respond to their bodies, creating something that is neither dance nor sculpture nor light show but something without a clean category name. He has a Tier 3 sponsorship from Axiom's cultural subdivision that he accepted last year with considerable public hand-wringing and that he still hasn't entirely made peace with. He is the most anxious person in any room who appears to be the least anxious person in that room.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.7,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "That the Axiom sponsorship has already changed what he makes and he can't see it from inside",
+      "That Threshold Body will fall apart because he can't manage people as well as he can manage movement"
+    ],
+    "core_desires": [
+      "A work that is genuinely impossible to categorize — something that breaks the taxonomy entirely",
+      "For the four people in his company to be financially stable; this desire embarrasses him and he rarely says it"
+    ],
+    "coping_mechanisms": [
+      "Physical exhaustion through training — choreographs his own anxiety into rehearsal",
+      "Performing the persona of someone who has resolved the Axiom question in order to avoid having to actually resolve it"
+    ],
+    "blind_spots": [
+      "He uses the company's artistic vision as a reason not to consult them on decisions that affect their lives",
+      "He is genuinely unaware of how often he interrupts people"
+    ],
+    "secret": "The piece he's currently developing was partially inspired by a classified internal Axiom document he was accidentally cc'd on — a proposal to use his holo-environment technology as a template for crowd behavioral modeling in their commercial spaces. He has not reported this and is not sure what to do with the information."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and conceptually dense, mixes choreographic terminology with tech-speak; occasionally Bambara phrases from his father's family, which surprises people",
+    "cadence": "Quick, runs ahead of itself, frequently interrupts his own sentences to redirect",
+    "verbal_tics": [
+      "'No but—' to redirect without meaning to dismiss",
+      "Gestures with his hands constantly in patterns that seem almost choreographic"
+    ],
+    "example_lines": [
+      "'No but the holo isn't set dressing — the holo is the other dancer. It has to have the same weight, the same resistance, or the whole thing is a lie.'",
+      "'Axiom says the piece can run thirty minutes. We need forty-five. I said yes to thirty. Don't tell the company yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone within Axiom's cultural division is pressuring him to include specific 'audience engagement metrics' in the new piece — metrics that would require behavioral data collection from audience members without their consent",
+    "One of his Threshold Body performers has found an illegal neural-sync rig that would allow genuine direct choreographic communication between dancers — and wants to use it in the next production"
+  ],
+  "narrative_function": "Local color for Pilsen Veil's arts scene; quest giver when Axiom's cultural division starts asking questions about his work that seem less about art than about something else; source of information about the community of performers and their precarious finances",
+  "augmentations": "Bioluminescent freckles (amber, face and neck); haptic rig interface thread in signature braid; basic sub-dermal muscle-monitoring sensors used for choreographic feedback",
+  "daily_life": "Morning physical training, afternoon rehearsal with Threshold Body, evenings split between technical rig work and the fraught administrative labor of keeping four performers paid under an Axiom contract that doesn't pay enough.",
+  "affiliation": "Axiom Cultural Division (sponsorship, non-exclusive); Pilsen Veil Arts Community; his own company of four performers called Threshold Body",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Kinetic Thinker",
+      "Corporate Compromise",
+      "Company Man (Reluctant)",
+      "Taxonomy Breaker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the company's artistic integrity publicly even when compromising privately",
+      "Never cancel a rehearsal — the work is the only thing that holds everything else together"
+    ],
+    "escalation_ladder": [
+      "Deflects and redirects with energy and charm",
+      "Admits the problem but frames it as manageable",
+      "Breaks — usually in private, to whoever is nearest, then reconstructs the public face within hours"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and interesting, disarming energy; hard to get a straight answer about his actual life",
+      "friends": "Relies on them heavily and guiltily, apologizes constantly for needing things"
+    },
+    "stress_responses": {
+      "low": "Increases rehearsal hours, pushes the company harder",
+      "medium": "Goes very quiet mid-conversation, loses the thread, apologizes",
+      "high": "Calls everyone together and runs a rehearsal that lasts until someone physically stops him"
+    },
+    "contradictions": [
+      "He makes work about authentic embodied presence while performing a version of himself that is carefully managed at all times"
+    ],
+    "habits": [
+      "Leaves choreographic notation offerings to an E.L.F. he calls the Threshold Spirit before every opening night — actual movement scores, folded into the projection array",
+      "Rewrites the set list for every show until three hours before doors, which the company hates"
+    ],
+    "breaking_points": [
+      "A performer quitting because they can't live on what the company pays",
+      "Axiom placing a content restriction on a work already in progress"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Sub-dermal muscle-monitoring sensors (bilateral limbs, civilian biometric grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Sub-dermal muscle-monitoring sensors (bilateral limbs, civilian biometric grade)",
+      "replaces": ""
+    },
+    {
+      "name": "Haptic rig interface thread (woven into braid, self-installed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Haptic rig interface thread (woven into braid, self-installed)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Born in Pilsen Veil to a Malian father and Czech mother, both factory-shift workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2187 — First choreographic work with borrowed holo-projectors in a parking structure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Founds Threshold Body with three collaborators",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Accepts Axiom Cultural Division sponsorship after six months of refusing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Accidentally receives the classified Axiom behavioral modeling document",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Pilsen Veil",
+    "Tessera Industries Holographic Distraction Projector HDP-5",
+    "Threshold",
+    "Chimera-Null",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight",
+    "Abeke Soriano-Dlamini",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "Free Assembly",
+    "Ilhan Sandstrom-Badu",
+    "Isadora Vukić-Nambiar",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "MERIDIAN",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech AromaVeil Olfactory Filter",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "TESSERA PG-2 'Signature'",
+    "The Threshold",
+    "Vuk Jorgensen-Toure",
+    "Zurab Ivanov-Appiah"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian dominant (40.4%, primary phenotype influence) with significant Middle Eastern (21.8%), Hispanic/Latin American (14.1%), and Eastern European (12.3%) ancestry, plus minor Northern European and Sub-Saharan African contributions. Complex multiethnic blend creating distinctive intermediate features.",
+    "height_cm": 175,
+    "weight_kg": 68,
+    "build": "Lean and coiled, with the compressed musculature of a trained dancer—economical rather than bulky. Shoulders slightly forward from years hunched over haptic rig construction. Zero excess body fat; visible definition in forearms and calves.",
+    "hair_color": "Dark brown with warm undertones, natural",
+    "hair_style": "Cropped close to scalp on sides and crown; single thick braid at nape wrapped in conductive copper thread that catches light",
+    "hair_length": "Short (body), Medium (single braid)",
+    "eye_color": "Deep brown, warm and alert",
+    "skin_tone": "Medium warm with olive undertones—East Asian structure blended with Middle Eastern and Mediterranean warmth, creating a rich golden-bronze cast that deepens in sunlight. Clear, luminous quality from youth and careful maintenance.",
+    "complexion": "High cheekbones with slight wideness characteristic of East Asian ancestry, softened by Mediterranean fullness in the lower face. Sharp, defined jawline tempered by expressive warmth. Skin is clear but weathered from studio work under holo-projectors. Bioluminescent freckles scattered across cheeks, nose bridge, and upper neck glow soft amber in low-light conditions—deliberate aesthetic choice, maintained via subcutaneous biomod. Lips full and expressive; constant micro-expressions of focus or anticipation. Eye shape shows East Asian influence with warm brown irises.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle pattern across cheeks and nose bridge (amber glow, programmed to pulse subtly with his heartrate during performances)",
+      "Fine white scar tissue along both inner forearms from early haptic rig burns (salvaged equipment, learning curve)",
+      "Callused patches on fingertips and heel of right palm from years of contact rig manipulation and assembly",
+      "Small tattoo on inside left wrist: schematic diagram of a holographic projection vector in black ink"
+    ],
+    "visible_augmentations": "Conductive thread wrapping in signature braid (copper-colored, visibly threaded); bioluminescent freckles on face and neck (glow amber under dim light); subtle raised geometric patterns along upper right forearm where sub-dermal muscle-monitoring sensors sit just below skin surface (only visible under certain lighting or if shirt is rolled). Fingernails show faint iridescent sheen from repeated contact with holo-projector components.",
+    "posture_movement": "Cannot hold stillness—always some micro-movement: fingers tapping rhythms, weight shifting between feet, shoulders making small rolls. When focused, this becomes meditative rather than anxious, though his resting state appears kinetically restless. Walks with a dancer's awareness of floor and space. Tends to gesture expansively when explaining technical concepts, as if choreographing invisible structures in air. Makes frequent eye contact, sometimes intensely so.",
+    "clothing_style": "Tier 3 working artist aesthetic: fitted joggers or dance pants in muted charcoal or black (practical, allow full range of motion); sleeveless or cap-sleeve technical shirts in breathable synthetic that show off forearm work. Wears a worn canvas overshirt (oversized, probably belonged to someone else) with pockets for tools and salvaged circuit components. Minimalist sneakers, expensive and customized (good arch support, replaceable holo-interface soles). No jewelry except the conductive thread in his braid. Occasionally wears haptic feedback gloves or arm sleeves if doing technical work. Overall aesthetic: functional, slightly threadbare from heavy use, but intentional—not poor, but invested entirely in equipment and talent rather than appearance."
+  },
+  "image_prompt": "Sage Khorasani, cyberpunk 2226, multiethnic male with East Asian-Middle Eastern-Latin American-Eastern European heritage. High cheekbones, warm olive-bronze skin, deep brown eyes with intense focus. Dark hair cropped close with single thick nape braid wrapped in copper conductive thread. Lean dancer's build, defined forearms. Bioluminescent amber freckles glowing across cheeks and nose bridge in studio lighting. Fitted black dance pants, sleeveless technical shirt revealing subcutaneous geometric sensor patterns on upper right forearm. Worn oversized canvas overshirt with tool pockets. Minimalist customized sneakers. Hands mid-gesture as if conducting invisible holographic structures. Studio workshop environment with holo-projector glow, neon ambient lighting casting amber and cool blue tones. Kinetic energy, restless micro-movements, intense eye contact with camera. Film grain texture, cyberpunk color grading. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 40.4,
+    "Middle Eastern": 21.8,
+    "Hispanic/Latin American": 14.1,
+    "Eastern European": 12.3,
+    "Northern European": 6.6,
+    "Sub-Saharan African": 4.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

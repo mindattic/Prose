@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a64675a0aba789c3ab4647c3",
+  "type": "character",
+  "name": "Zephyr Espinoza-Nygaard",
+  "aliases": [
+    "Kwa",
+    "Gridkid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "VR experience designer and underground filmmaker",
+  "age": 19,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, works out of a shared fabrication space called The Burrow, near Michigan Ave and Walton",
+  "description": "Kwabena is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Selling out — the specific fear that comfort will make him incapable of making honest work",
+      "That Φ0.00 was his best thing and everything after it will be smaller"
+    ],
+    "core_desires": [
+      "To make something that changes what people are able to feel, not just what they know",
+      "To earn enough that his mother never has another Φ0.00 month"
+    ],
+    "coping_mechanisms": [
+      "Throwing himself into the next project before finishing grieving the last one",
+      "The collective as family — physical proximity to people he trusts"
+    ],
+    "blind_spots": [
+      "His certainty about his own intentions makes him resistant to feedback that implicates those intentions",
+      "He is burning himself out at nineteen and everyone can see it except him"
+    ],
+    "secret": "The anonymous grants are from Arcturus, and Kwabena actually knows this — he identified the signature in the transfer metadata six months ago. He has not returned the money or told anyone because it has funded his last two projects and he cannot afford to be principled about it and he is ashamed of both things."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast and dense; shifts between technical VR terminology, HPAZ collective vernacular, and the occasional formal policy phrase absorbed from watching too many social advocacy feeds; uses 'right' as punctuation",
+    "cadence": "Rapid-fire in pitching mode; surprisingly still and deliberate when talking about something that genuinely hurt him",
+    "verbal_tics": [
+      "'Right, right, right' in rapid succession when listening",
+      "'Okay but what if—' as a near-constant conversation pivot"
+    ],
+    "example_lines": [
+      "'I am not trying to make people feel bad. I am trying to make people feel accurate. There is a difference. Right.'",
+      "'The thing about Φ0.00 is it was not a political project. It was a — I needed to know if I had actually experienced it or just survived it. Turns out both.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The secret project he is working on contains documentary footage of something happening in HPAZ that at least one corponation would prefer remain undocumented — he captured it accidentally and has not yet understood what he has",
+    "Arcturus makes a direct approach, ending the fiction of the anonymous grants and offering a production deal that would give him resources he cannot imagine refusing"
+  ],
+  "narrative_function": "Window into HPAZ youth culture and politics; potential technical resource for anyone needing VR or documentary work; represents the tension between raw artistic talent and institutional pressure; his secret project may become a significant plot element",
+  "augmentations": "Bioluminescent nose stud (geneware, cosmetic, informally applied); retinal display overlay in both eyes (practical; secondhand, slightly glitchy — sometimes shows him notifications from the previous owner's accounts)",
+  "daily_life": "He sleeps in four-hour blocks whenever the work allows, eats communally at The Burrow when the collective cooks, and spends the rest of his time either in deep production work — headset on, entirely unreachable — or in frantic social mode, pitching ideas to anyone who will listen and consuming other people's work with indiscriminate hunger. He is currently simultaneously behind on two collaborative projects and ahead of schedule on a personal piece no one knows he is making.",
+  "affiliation": "Highland Park Autonomous Zone collective; informal distribution through the Burrow network; has received two anonymous grants he suspects originate from Arcturus but cannot confirm",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 3,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 10,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy-burnout",
+      "compromised-idealism",
+      "HPAZ-embedded",
+      "secret-keeper",
+      "technically-gifted"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Make the thing you need to make, not the thing that will get you noticed — the attention follows or it does not",
+      "The collective's needs come before personal projects; he believes this and violates it regularly"
+    ],
+    "escalation_ladder": [
+      "Argumentative enthusiasm — treats conflict as a creative problem to solve",
+      "Genuine hurt, expressed as sudden quiet and withdrawal from the conversation",
+      "Long-form processing that results in something being made; he does not resolve conflict with words, he resolves it with work"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately curious and slightly overwhelming; will ask three personal questions before introducing himself properly",
+      "friends": "Deeply loyal; unreliable on logistics; will remember the thing you said six months ago that mattered"
+    },
+    "stress_responses": {
+      "low": "More productive; works faster; quality goes up",
+      "medium": "Productivity collapses into compulsive research and note-taking without completion",
+      "high": "Disappears into a headset; is technically present in The Burrow but unreachable; emerges with either nothing or something extraordinary"
+    },
+    "contradictions": [
+      "Talks constantly about collective values and creative community while the secret project is entirely solo and deliberately hidden from the people he trusts most"
+    ],
+    "habits": [
+      "Leaves voice memos to himself constantly — has years of recordings he has never revisited",
+      "Resets his workspace completely before starting a new project; does not work in an environment that carries the previous thing's residue"
+    ],
+    "breaking_points": [
+      "Being told his work is impressive for his age",
+      "Discovering that the Arcturus money has compromised something he made"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "GLMZ",
+    "Grandmother",
+    "The Quiet Room",
+    "Arcturus Defense Solutions",
+    "Street Custom 'Spider Hole' Concealed Position Kit",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Arcturus CK-5 'Bloodhound'",
+    "Arcturus HX-1 'Headsman'",
+    "Arcturus KS-7 'Nursery'",
+    "Aïssé Dragomirescu-Faalelei",
+    "Hadiya Karlsen-Sow",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Solveig Tambadou-Kereselidze",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Collective",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Transfer",
+    "Yolanda Dzhaksybekov-Ferreira"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American dominant (42.6%) with significant East Asian (18.4%), Middle Eastern (15.5%), and Indigenous American (10.7%) ancestry, with smaller Sub-Saharan African (6.5%) and Northern European (6.3%) components. Complex pan-global genetic signature reflecting the Ubiquitous Diaspora.",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lanky and angular, with the restless physique of someone who forgets to eat and moves in bursts of frantic energy rather than deliberate stride. Narrow shoulders, long limbs, minimal muscle definition.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Two neat puffs maintained with obsessive care, cleanly shaped",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, with faint retinal display overlay grid visible in both irises under direct light",
+    "skin_tone": "Warm medium-tan complexion with olive undertones from blended Hispanic/Latin American, East Asian, and Middle Eastern ancestry, with subtle depth from Sub-Saharan African heritage.",
+    "complexion": "Angular face with pronounced cheekbones reflecting East Asian and Indigenous American structure, moderately defined jawline. Nose with subtle Middle Eastern bridge prominence, slightly crooked from informal augmentation application. Perpetually underslept with dark under-eye circles. Minimal grooming elsewhere; contrast between obsessive hair maintenance and general dishevelment. Subtle warm undertones across face from Hispanic/Latin American and African ancestry blend.",
+    "distinguishing_marks": [
+      "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentration — geneware mod applied informally at age 16, noticeably crooked"
+    ],
+    "visible_augmentations": "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contact — occasionally flickers with notifications from previous owner's ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
+    "posture_movement": "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely still — fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
+    "clothing_style": "Tier 4 working-collective aesthetic: hand-patched oversized hoodies (often with The Burrow's mark or indie media distribution logos), cargo pants with multiple pockets for tools and drives, worn synth-leather boots. Layers suggest he pulls on whatever is nearest. Occasional color clashes. No corporate branding. Functional rather than fashionable, but with intentional anti-establishment edge. Wears a single faded wristband (possibly handmade, possibly from an old VR collective)."
+  },
+  "image_prompt": "Cyberpunk 2226 character Zephyr, 178cm tall lean angular body with restless energy, warm medium-tan skin with olive undertones blending Hispanic, East Asian, Middle Eastern, and Indigenous features. Sharp angular cheekbones, slightly prominent nose bridge with crooked bioluminescent blue-pulsing stud in right nostril glowing softly. Dark brown eyes with faint retinal display grid overlay visible under light, dark under-eye circles from sleep deprivation. Dark brown hair styled in two neat maintained puffs. Wearing oversized hand-patched hoodie with indie logos, cargo pants with tool pockets, worn synth-leather boots, faded wristband. Mid-motion pose leaning forward intensely, fidgeting hands, clutching tablet and wiring. Tier 4 working-collective aesthetic, anti-establishment vibe. Neon-lit underground collective space, blue and amber cybernetic glow illuminating angular face and retinal overlays. Frantic energetic mood, simultaneous excitement and exhaustion. High-contrast cyberpunk lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 42.6,
+    "East Asian": 18.4,
+    "Middle Eastern": 15.5,
+    "Indigenous American": 10.7,
+    "Sub-Saharan African": 6.5,
+    "Northern European": 6.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

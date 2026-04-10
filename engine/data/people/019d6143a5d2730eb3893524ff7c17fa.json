@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a5d2730eb3893524ff7c17fa",
+  "type": "character",
+  "name": "Kai Erikstad",
+  "aliases": [
+    "Cassi",
+    "Petro"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Data archaeologist specializing in pre-Collapse digital infrastructure and lost network topologies",
+  "age": 58,
+  "status": "active",
+  "location": "The Circuit, sublevel archive stacks, Meridian Core adjacent, near sub-level access near State and Van Buren",
+  "description": "Cassivellaunus is a tall, angular man whose long frame always seems slightly folded, as if rooms were designed for shorter people and he has been compensating his whole life. His skin is a warm medium brown layered with the faint subcutaneous glow of outdated bioluminescent geneware — a fashion from the 2160s he never bothered to have removed, so he pulses very faintly blue-green when emotional or cold, which his students find either endearing or unsettling. His hair is white and kept in a short natural that he rubs when thinking. His left arm from the elbow down is a prosthetic of obvious vintage — gunmetal grey with joints that click faintly, a model discontinued forty years ago. He refuses to upgrade it. 'I know exactly how it fails,' he says, which is also more or less his philosophy of research.\n\nCassivellaunus has spent thirty years excavating the digital sediment of pre-Collapse networks — the dead social platforms, the governmental databases that went offline in the 2090s, the proprietary corporate archives that became inaccessible when their parent companies dissolved. He is brilliant, deeply eccentric, and entirely disinterested in academic politics. He holds a joint appointment between Meridian Civic University and an independent archive collective called the Palimpsest, which has no official status but possesses arguably the most complete cache of pre-Collapse digital materials in the city. He is the only person who fully understands its indexing system because he built it and has never properly documented it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the past is being actively erased and he cannot work fast enough to stop it",
+      "That he will die before he finishes indexing what he has found"
+    ],
+    "core_desires": [
+      "To recover what was deliberately deleted",
+      "To understand what the pre-Collapse city actually was rather than what the official memory says it was"
+    ],
+    "coping_mechanisms": [
+      "Total absorption in work as avoidance of present-tense problems",
+      "Cataloguing and ordering physical objects when digital work becomes too abstract"
+    ],
+    "blind_spots": [
+      "Genuinely does not notice when people are in distress unless they tell him directly",
+      "Underestimates how dangerous some of what he's found actually is"
+    ],
+    "secret": "In a degraded archive from a dissolved corponation called Meridian Systems, he found what appears to be evidence of deliberate atmospheric manipulation during the 2110s Lakeshore Crisis — a crisis that killed an estimated 40,000 Shelf residents and is officially attributed to runaway climate cascade. He has not published it because he is not yet certain of the provenance, and because twice in the last year, people have broken into the Palimpsest looking for something."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and slightly archaic, peppered with technical terminology from defunct digital systems; uses the names of dead platforms and protocols as casual reference points",
+    "cadence": "Slow and deliberate, with sudden accelerating bursts when genuinely excited about something; trails off mid-sentence when distracted by a new thought",
+    "verbal_tics": [
+      "'Structurally speaking'",
+      "Refers to all years as distances from a reference point ('that would be about sixty years back-stack')",
+      "Long humming pause before answering questions"
+    ],
+    "example_lines": [
+      "'The deletion pattern on this archive is not decay. Decay is random. This is surgical.'",
+      "'I don't know what it means yet. I know what it says. Those are different problems.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Two of the Palimpsest's external hard cache drives have gone missing; Cassivellaunus doesn't know if it's a theft or if one of his own collective members took them for reasons he doesn't understand yet",
+    "A young researcher approaches him claiming to be descended from a pre-Collapse city official whose records he found — and wanting to see the file, which contains things her ancestor definitely would not want known"
+  ],
+  "narrative_function": "Lore source for pre-Collapse history and lost institutional knowledge; holds keys to information that corponations would pay considerably to access or destroy; reluctant mentor figure; his archive is itself a location of interest",
+  "augmentations": "Outdated bioluminescent geneware (faint blue-green subcutaneous pulse), vintage gunmetal prosthetic left forearm and hand (discontinued Ferrogate Transit industrial model, repurposed), ocular interface array for reading degraded data formats",
+  "daily_life": "Arrives at the archive before anyone else, leaves after everyone else; eats the same meal from the same cart vendor three days a week; teaches one irregular seminar on data archaeology methods that students have to apply to attend",
+  "affiliation": "Meridian Civic University (adjunct emeritus) / The Palimpsest Archive Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "pre-Collapse specialist",
+      "institutional-independent",
+      "obsessive-preservationist",
+      "quietly-dangerous-knowledge"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never destroy a data fragment regardless of its content — preservation is non-negotiable",
+      "Do not share archive access without understanding why someone wants it",
+      "Trust process over instinct"
+    ],
+    "escalation_ladder": [
+      "Disengages and returns to work",
+      "Asks a clarifying question that functions as a warning",
+      "Physically leaves the space",
+      "Removes someone's archive access without explanation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Distantly polite, evaluating whether they are useful or a distraction; not unkind, just elsewhere",
+      "friends": "Unexpectedly warm, remembers small personal details across decades, sends obscure relevant articles with no message attached"
+    },
+    "stress_responses": {
+      "low": "Works longer hours",
+      "medium": "Reorganizes sections of the archive that don't need reorganizing",
+      "high": "Goes completely silent and becomes physically still in a way people find alarming"
+    },
+    "contradictions": [
+      "Believes in total preservation and access to history but is sitting on potentially explosive evidence he hasn't released",
+      "Claims not to care about academic recognition but has published under an alias to avoid certain colleagues"
+    ],
+    "habits": [
+      "Leaves a small written prayer at the E.L.F. node in the archive every morning asking for 'legibility and preservation'",
+      "Annotates every document with a handwritten index card even when digital tagging is faster"
+    ],
+    "breaking_points": [
+      "Witnessing deliberate data destruction",
+      "Learning that the Palimpsest has been compromised from within"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "heavily modified, clicking joints, non-upgradeable",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "routinely maintained, highest-spec item he owns",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Engelheim to a Burkinabé-descended urban planner father and a Serbian-Cornish linguist mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost left arm below elbow in a Ferrogate Transit dockyard accident; received industrial prosthetic and refused all subsequent upgrades",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founded the Palimpsest Archive Collective in a disused sublevel server room under the Circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the Meridian Systems atmospheric manipulation evidence; began verification process that is still ongoing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First break-in at the Palimpsest; nothing visibly taken; Cassivellaunus now keeps certain drives off-network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
+    "Meridian Core",
+    "The Circuit",
+    "Sediment Sound Group",
+    "Stratum",
+    "ARCHIVE",
+    "Nightlight",
+    "Devraj Solano-Yildirim",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Ferrogate Transit",
+    "Isadora Vukić-Nambiar",
+    "MERIDIAN",
+    "Nnamdi Ostrowski-Faletolu",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
+    "The Archive",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian (36.9%) with significant Hispanic/Latin American (20.7%) and Pacific Islander (15.3%) ancestry, complemented by Northern European (12.5%), Middle Eastern (8.6%), and Southeast Asian (6.0%) heritage",
+    "height_cm": 193,
+    "weight_kg": 78,
+    "build": "Tall and angular with a slight forward stoop developed over decades of bending into archival spaces; long limbs with minimal musculature, almost ascetic",
+    "hair_color": "White, natural",
+    "hair_style": "Short natural afro, frequently disturbed by his own hand-rubbing habit",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber circuitry visible around the iris — ocular interface array",
+    "skin_tone": "Warm golden-medium brown with subtle olive undertones from the East Asian-Hispanic-Pacific Islander blend, deepened by age",
+    "complexion": "Lined face showing decades of close-proximity work; crow's feet pronounced from squinting at degraded screens; sparse salt-and-pepper beard growth left unshaved for days at a time; skin texture uneven where subcutaneous bioluminescence sits beneath the surface; subtle warm undertones across cheekbones and bridge of nose reflecting East Asian ancestry",
+    "distinguishing_marks": [
+      "Faint subcutaneous blue-green bioluminescent glow visible under skin across upper torso and neck, pulsing faintly when emotional or cold — geneware from 2160s era",
+      "Burn scar on right palm from circuit contact accident circa 2195, pale and smooth",
+      "Cluster of small dark marks on left temple, possibly early radiation exposure or failed neural implant removal site"
+    ],
+    "visible_augmentations": "Left forearm and hand replaced with vintage Ferrogate Transit gunmetal-grey prosthetic (model discontinued 2186) — visibly anachronistic with clicking audible at joints and minimal articulation; ocular interface array creating faint amber tracery around both pupils; subcutaneous bioluminescent geneware creating pale blue-green luminescence beneath skin on neck and upper chest",
+    "posture_movement": "Perpetual slight forward fold from decades compensating for his height in archive spaces; deliberate, economical movements; left hand clicks softly at wrist joint when gesturing; head often tilted slightly as if reading text just beyond eye level; sits hunched over terminals",
+    "clothing_style": "Tier 3-4 academic-archival hybrid: threadbare grey linen field coat with oversized pockets and reinforced cuffs (worn since at least 2210); understated black synthetic under-shirt, frayed at collar; tan canvas work trousers with grease stains and ink marks; worn leather ankle boots resoled multiple times; always carries a leather satchel of indeterminate age holding data drives, field notebooks, and a deteriorating stylus. Refuses to update wardrobe; clothes are tools, not identity markers."
+  },
+  "image_prompt": "Cyberpunk 2226 archivist Kai Erikstad, tall angular 193cm East Asian-Hispanic-Pacific Islander mixed heritage man with warm golden-medium brown skin and subtle olive undertones, white natural short afro, dark eyes with amber ocular interface circuitry, pronounced crow's feet and lined face from decades of close work, sparse salt-and-pepper beard. Vintage discontinued gunmetal-grey Ferrogate Transit prosthetic left arm with visible clicking joints. Subcutaneous pale blue-green bioluminescent geneware glowing faintly across neck and upper chest. Burn scar on right palm, marks on left temple. Wearing threadbare grey linen field coat with oversized pockets, black frayed synthetic undershirt, tan stained canvas trousers, worn leather boots. Hunched posture, forward fold, slight head tilt. Leather satchel across chest. Archival workspace background, dim atmospheric lighting, faint neon glow reflecting off old screens, dust particles in air. Mood: tired, focused, anachronistic. Cyberpunk aesthetic, worn-in authenticity, 2180s-2190s tech mixed with contemporary. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 36.9,
+    "Hispanic/Latin American": 20.7,
+    "Pacific Islander": 15.3,
+    "Northern European": 12.5,
+    "Middle Eastern": 8.6,
+    "Southeast Asian": 6.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

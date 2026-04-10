@@ -1,0 +1,327 @@
+{
+  "id": "019d6143a6f47fee8627e77c09af0ddb",
+  "type": "character",
+  "name": "Lark Haraldsen",
+  "aliases": [
+    "Teddy",
+    "Old Hinge"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired union leader (Ferrogate Transit Workers' Union); pension-dependent; community council elder",
+  "age": 85,
+  "status": "active",
+  "location": "Montclare Quiet — the Ferrogate Retirees' Lodge, room 4, near Milwaukee and Damen",
+  "description": "Tewodros Halim-Czajkowski is ninety kilograms of sheer persistent presence folded into a body that has clearly decided aging is a negotiation rather than a concession. He uses a cane — a beautiful one, hand-carved composite with an inlaid Ferrogate Transit sigil at the grip that he stripped from a decommissioned station plaque decades ago as an act of deliberate appropriation. His skin is a deep reddish-brown, deeply lined, with a broad nose and heavy brows that give him a permanently skeptical expression even when he's delighted. His hair is white and abundant at the sides, bald at the crown, and he has geneware tiger-lily irises — orange and black — that he got at sixty-five when he decided he'd earned something absurd. He dresses in his union colors when he goes out: a deep red that's faded to rust.\n\nTewodros spent thirty-two years as a transit worker on the Ferrogate lines before rising to lead the Transit Workers' Union through the longest legal labor action in GLMZ history — the Forty-Day Suspension of 2168, which ended with a contract that is still cited as the benchmark for worker protections in the city. He is revered and resented in approximately equal measure by different factions of Meridian labor politics, and he has opinions about all of them. His short-term memory is beginning to fray at the edges, which enrages him, and he compensates with notes, a very organized room, and a studied refusal to appear confused. He knows more about how Ferrogate Transit actually works — the unofficial systems, the unofficial relationships, the hands that have been greased and the ones that haven't — than most current executives.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.8,
+      "id": 0.5,
+      "shadow": 0.6,
+      "mask": 0.3,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing his mind before he can finish passing down what he knows",
+      "That the contract gains of his lifetime will be quietly eroded after he's gone and too dead to make noise about it"
+    ],
+    "core_desires": [
+      "To see one more real labor victory before he dies — something worth the celebration",
+      "To be remembered accurately, not mythologized"
+    ],
+    "coping_mechanisms": [
+      "Structured notes and lists to compensate for memory gaps",
+      "Humor — specifically the kind that makes people forget he's just had a moment of confusion",
+      "Finding a protégé in whoever will sit still long enough"
+    ],
+    "blind_spots": [
+      "Assumes the next generation of organizers should use his methods because they worked once",
+      "Sometimes mistakes stubbornness for principle"
+    ],
+    "secret": "The Forty-Day Suspension that made his reputation was ended not by Ferrogate capitulation but by a back-channel deal he made with a mid-level Ferrogate executive — a deal that involved him quietly dropping a grievance that would have implicated three senior union members in embezzlement. He protected the union and betrayed the workers those members stole from. He tells himself the contract gains outweighed it. Some nights he's not sure."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rhetorical and full-bodied — he spent decades speaking to crowds and it shows; mixes labor history references with vivid profanity; code-switches between formal and extremely informal with total comfort",
+    "cadence": "Expansive and rhythmic when holding court; shorter and more precise when actually thinking through a problem",
+    "verbal_tics": [
+      "'Let me tell you something important'",
+      "'In '68 we—' (launching into a story)",
+      "Tapping his cane twice when making a key point"
+    ],
+    "example_lines": [
+      "'Let me tell you something important: a contract that nobody enforces is just paper with ambition. We learned that the hard way. You will too, if you don't listen.'",
+      "'In '68 we sat down and did not move. You know what Ferrogate called it? Disruption. You know what we called it? Tuesday. The forty-second Tuesday.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A current Ferrogate union rep has come to him with evidence of contract violations that echo the embezzlement situation from the Forty-Day Suspension — and Tewodros recognizes the same people's descendants at the center of it",
+    "His memory is worse than he lets on and he's been writing down everything he knows in a physical journal he's given to no one — and someone has broken into his room looking for it"
+  ],
+  "narrative_function": "Information source for labor history and Ferrogate Transit infrastructure; quest giver for stories involving worker rights, corporate exploitation, or the unofficial economy of the transit system. Can be a political weight thrown behind a cause — his endorsement still means something in certain circles.",
+  "augmentations": "Geneware tiger-lily irises (orange and black; cosmetic). Cardiac stabilizer implant (medical necessity, Tier-2 grade). Hearing amplification in left ear (age-related). No combat or professional augmentations.",
+  "daily_life": "Morning tea in the lodge common room where younger retirees bring him newspapers and he argues with them about headlines; twice-weekly community council meetings where his presence still carries weight; occasional visits to active union halls when he's asked — and sometimes when he isn't.",
+  "affiliation": "Ferrogate Transit Workers' Union (retired, emeritus); Montclare Quiet Community Council; Meridian Labor History Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 5,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "labor leader",
+      "institutional legend",
+      "memory-fading",
+      "moral compromise",
+      "rhetorical authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the collective first, individuals second",
+      "Never cross a picket line — of any kind",
+      "Know when you're the story and when you need to step back and let someone younger be the story"
+    ],
+    "escalation_ladder": [
+      "Asking pointed historical questions that frame the situation",
+      "Public statement or attendance at the relevant gathering",
+      "Calling in every favor he is owed",
+      "Making himself the issue — placing his body and reputation in the way"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing their politics quickly and either warming or cooling accordingly; rarely neutral",
+      "friends": "Expansive, demanding, loving — he will give everything and expect you to be worthy of it"
+    },
+    "stress_responses": {
+      "low": "More loquacious — talks through problems",
+      "medium": "Quieter; organizing, taking notes",
+      "high": "Absolutely still, then decisive — the old strike-leader precision"
+    },
+    "contradictions": [
+      "Champion of full transparency in labor dealings who has kept his deepest compromise private for thirty-two years",
+      "Insists on collective action but is fundamentally, temperamentally a dominant individual personality"
+    ],
+    "habits": [
+      "Taps his cane to emphasize points",
+      "Takes notes on a physical pad after conversations he wants to remember",
+      "Brings a flask of tea to every meeting because lodge tea is, in his words, 'water that has heard a rumor about leaves'"
+    ],
+    "breaking_points": [
+      "Witnessing a worker being told their rights don't apply",
+      "Being condescended to about his age during a dispute he knows more about than anyone in the room"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Mentor": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what was then Kamm's Landing",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First job as Ferrogate line maintenance worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected shop steward",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Rose to Transit Workers' Union general secretary",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The Forty-Day Suspension; private back-channel deal with Ferrogate",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Retired from union position; given emeritus status",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moved to Montclare Quiet Ferrogate Retirees' Lodge",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began noticing memory gaps; started physical journal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Montclare Quiet",
+    "GLMZ",
+    "Sulfur Crown Agriculture",
+    "Volkov-Saito Precision VS-40 'Magistrate'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Irontide Tidal Energy",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Slagworks Industrial",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'",
+    "Rust",
+    "Lead",
+    "The Milwaukee Core",
+    "Anatoliy Faye-Nkrumah",
+    "Brecken Yılmaz-Osei",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "MERIDIAN",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Collective",
+    "The Quiet Room",
+    "The Wire Taps"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Southeast Asian, Northern European, and Hispanic/Latin American blend: warm golden-bronze undertones from Southeast Asian ancestry, cooled by Northern European paleness, enriched by Hispanic/Latin American depth. A rare tri-continental mix resulting in warm amber-brown tones with subtle golden highlights.",
+    "height_cm": 175,
+    "weight_kg": 90,
+    "build": "Broad-shouldered and solid despite age, with softening around the midsection but no fragility. Carries himself like someone accustomed to taking up space and being listened to.",
+    "hair_color": "White with sparse darker patches at the temples",
+    "hair_style": "Full at the sides and back, bald crown; groomed but deliberately unfussy",
+    "hair_length": "Medium",
+    "eye_color": "Tiger-lily geneware: orange irises with black radial striations and amber outer ring",
+    "skin_tone": "Warm amber-bronze with golden undertones, sun-darkened to deep honey-brown in exposed areas. The blend creates an unusually rich, luminous quality—neither purely cool nor purely warm, but harmoniously balanced.",
+    "complexion": "Heavily lined face — forehead, around eyes, deep nasolabial folds shaped by decades of expression. Heavy, prominent brows that naturally furrow. Broad nose with slight bridge break from old injury and flared nostrils characteristic of Southeast Asian and Hispanic ancestry blend. Jaw still defined beneath age. Expression resting into permanent skepticism. Skin textured from decades of sun exposure and urban wear, with slight freckling across cheekbones from mixed heritage photosensitivity.",
+    "distinguishing_marks": [
+      "Diagonal scar across left temple, faded white, approximately 4cm, from a 2156 workplace incident",
+      "Callused palms and fingers from thirty-two years of manual transit work",
+      "Small tattoo on inner left wrist: three interlocking rings in faded black (union solidarity mark from 2140s)"
+    ],
+    "visible_augmentations": "Tiger-lily irises unmistakable at close range — cosmetic geneware, deliberately conspicuous. Hearing aid unit visible in left ear (brass-colored external component, worn openly, not concealed). Hand-carved composite cane with inlaid ferrogate transit sigil at grip — marks both mobility need and deliberate appropriation of defunct infrastructure.",
+    "posture_movement": "Moves deliberately, not slowly — each motion economical and purposeful. Cane is not primarily support but punctuation; he uses it to gesture, tap for emphasis, anchor himself while standing. Leans forward slightly when listening, eyes narrowing. Favors left leg slightly. Sits with one knee crossed, hands folded or gesturing. Presence fills rooms despite physical diminishment.",
+    "clothing_style": "Tier 3-4 retiree with deliberate labor pride. Deep rust-red Ferrogate union colors — cardigan or short-sleeved button-up depending on season, faded but maintained with care. Dark practical trousers, worn leather belt. Scuffed work boots or slip-on shoes. No jewelry except wedding band and a bronze Ferrogate 50-year service pin on his collar. All clothing shows signs of regular wear and careful mending rather than replacement."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Lark Haraldsen, 175cm tall senior man with warm amber-bronze skin tone reflecting Southeast Asian, Northern European, and Hispanic ancestry blend. Deep-set tiger-lily geneware eyes with orange irises and black striations glowing softly in urban shadow. White hair with dark temples, bald crown, medium length, groomed unfussy. Heavily lined face with perpetual skepticism, prominent furrowed brows, broad nose with old break, defined jaw. Visible faded 4cm temple scar. Wearing faded deep rust-red Ferrogate union cardigan over practical dark trousers, scuffed work boots. Hand-carved ferrogate transit cane in hand with visible sigil grip. Brass hearing aid visible in left ear. Bronze 50-year service pin on collar. Callused working hands. Deliberate purposeful posture, leaning slightly forward with cane as punctuation rather than support. Great Lakes Metropolitan Zone megacity background with neon transit signage, retro-industrial architecture, warm amber streetlight, rain-slicked surfaces. Mood: weathered dignity, permanent skepticism, earned authority. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 36.9,
+    "Northern European": 35.0,
+    "Hispanic/Latin American": 28.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "id": "019d6143a6aa7baba48e92462cdceff7",
+  "type": "character",
+  "name": "Sable Appiah-Nygaard",
+  "aliases": [
+    "Raf",
+    "Dustbin Raf"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Bio-waste disposal technician, independent contractor",
+  "age": 41,
+  "status": "active",
+  "location": "Deepwell Station — lives in McKinley Flats in a modest building with structural damp he has stopped reporting, near sub-level access near Dearborn and Jackson",
+  "description": "Rafał is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nRafał has been collecting the city's biological refuse for sixteen years. He moves through GLMZ's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.3,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Being pulled into something that ends his ability to work and support himself",
+      "That the things he has witnessed make him implicated simply by knowing"
+    ],
+    "core_desires": [
+      "A clean conscience about what he has seen",
+      "To be regarded as a person and not furniture by the medical professionals on his route"
+    ],
+    "coping_mechanisms": [
+      "Compartmentalization into routine — the manifests are filed, the route is run, it is someone else's problem to understand",
+      "Old sports footage as emotional reset"
+    ],
+    "blind_spots": [
+      "Underestimates how much he has absorbed and retained — he knows far more than he thinks he knows",
+      "Believes that because he has never actively wronged anyone, he bears no responsibility for what he has witnessed"
+    ],
+    "secret": "He has kept a private logbook — physical, hidden at home — noting irregularities in waste streams over the past six years. Address discrepancies, label mismatches, biological material disposed of under false categories. He started it as a kind of anxious accounting, telling himself he'd know what to do with it eventually. He does not know what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain and direct, working-class GLMZ vernacular with Polish-Zimbabwean idiom showing in his rhythm — phrases like 'that is what it is' functioning as punctuation for things he finds troubling",
+    "cadence": "Unhurried, flat, slightly deliberate — the speech of someone who is used to not being listened to and has stopped performing urgency",
+    "verbal_tics": [
+      "'That is what it is' for things he finds troubling",
+      "Prefacing uncertain information with 'I only drive the truck'"
+    ],
+    "example_lines": [
+      "'I only drive the truck. What's in the containers, that's — that is what it is. I sign the manifest, the manifest says what it says.'",
+      "'You're asking me if I noticed something. I notice things. I don't know what they mean. That's a different job and it's not mine.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His private irregularity logbook contains an address that has been generating unregistered biological waste for over a year — he has no idea what is happening there and is terrified to find out, but equally terrified to keep sitting on the information.",
+    "A medical waste container he collected from a clinic in the Narrows contained material that, based on his enhanced scent detection, was recently alive. He processed it according to manifest. He has not stopped thinking about it."
+  ],
+  "narrative_function": "Crucial civilian information source — knows where every medical facility's waste comes from and has a supernaturally good nose for when something is wrong. Reluctant witness. Represents the invisible labor that holds the city's infrastructure together.",
+  "augmentations": "Enhanced scent glands (geneware — installed for occupational early-detection purposes). Reinforced lumbar support implant (workers' compensation, after a 2193 back injury). UBC supplement card for the months his contracts don't pay on time, which is most months.",
+  "daily_life": "Up at four-thirty to catch the first Ferrogate Transit run to Deepwell Station, first pickup by six, works until two or three in the afternoon across his route, then processes manifests and disposal logs at home before whatever passes for an evening.",
+  "affiliation": "Independent contractor — holds service contracts with four clinics, two pharmacies, and Aurochs Medical Complex peripheral disposal",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "invisible labor",
+      "reluctant witness",
+      "information archive",
+      "working class",
+      "biological hazard specialist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job correctly and document it — the documentation is protection",
+      "Don't volunteer information to people who haven't asked the right question"
+    ],
+    "escalation_ladder": [
+      "'I only drive the truck' deflection",
+      "Admitting he has noticed something without specifying what",
+      "Producing the logbook — the absolute last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Polite, low-key, gives nothing away — has learned that being invisible on the job is safer",
+      "friends": "Comfortable, dry, genuinely warm; enjoys being fed and will talk about basketball for hours"
+    },
+    "stress_responses": {
+      "low": "Becomes slightly more talkative as displacement",
+      "medium": "Goes very quiet; starts doing unnecessary small physical tasks — checking latches, refolding things",
+      "high": "A very specific stillness, and then a decision — he is not a man who escalates gradually, he makes a threshold choice"
+    },
+    "contradictions": [
+      "Claims he doesn't want to be involved in anything larger than his route while meticulously documenting the very things that would involve him",
+      "Performs lack of curiosity while noticing and retaining everything"
+    ],
+    "habits": [
+      "Checks every container latch twice",
+      "Eats lunch in his vehicle alone, always, regardless of weather",
+      "Leaves a weekly data-offering for the E.L.F. he calls The Incinerator — a grim but honest name, he thinks"
+    ],
+    "breaking_points": [
+      "Discovering that something in his waste stream was a person",
+      "Being asked to falsify a manifest by a contractor he depends on financially"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "fair",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in McKinley Flats to a Polish-Zimbabwean couple; father a waste processing worker, mother a transit maintenance worker",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began bio-waste disposal contracting after a decade in general waste infrastructure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Back injury on the job; lumbar implant installed via workers' compensation; payout dispute lasted eleven months",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began keeping private irregularity logbook after the first address discrepancy that troubled him enough to write down",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "McKinley Flats",
+    "Unregistered",
+    "The Narrows Compact",
+    "GLMZ",
+    "TESSERA PA-5 'Attendant'",
+    "Aurochs Medical Complex",
+    "Aïssé Dragomirescu-Faalelei",
+    "Bogdan Achebe-Svanstrom",
+    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ferrogate Transit",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Nurlan Holmberg-Dembele",
+    "Patient Zero",
+    "Quilt",
+    "Slagworks Industrial",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (57.6%) with significant Southeast Asian admixture (38.4%) and minor Hispanic/Latin American heritage (4.0%). Rich melanin-dominant complexion with warm undertones reflecting the depth of West and Central African ancestry, tempered by the lighter, more golden notes of Southeast Asian heritage creating a nuanced medium-to-deep brown skin tone.",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Thickset and muscular through heavy labor, broad shoulders tapering to a functional frame. Chest and forearms show developed muscle from sixteen years of lifting biohazard containers. Beginning to carry weight in the midsection from routine and modest diet, but still functionally strong.",
+    "hair_color": "Faded reddish-brown with early grey at temples",
+    "hair_style": "Pulled back under a work cap most hours; when loose, shoulder length and somewhat matted from perspiration and humidity",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown with amber undertones, slightly bloodshot from early mornings and fluorescent work lighting",
+    "skin_tone": "Deep warm brown with golden undertones, perpetually flushed from physical exertion and the warmth of processing environments. The complexion reflects the blending of Sub-Saharan African depth with Southeast Asian warmth.",
+    "complexion": "Weathered and lined around the eyes and mouth from squinting in harsh light and years of tension. Perpetual five o'clock shadow with darkened facial hair typical of African heritage. Skin shows minor chemical irritation around the hairline and neck from repeated exposure to disinfectant compounds despite protective gear. Facial structure shows balanced admixture: broader nasal base and fuller lips reflecting African ancestry, with slightly higher cheekbones and eye shape influenced by Southeast Asian heritage.",
+    "distinguishing_marks": [
+      "Thick scar running horizontally across lower back (lumbar support surgery scar from 2193 injury, visible when clothing rides up)",
+      "Chemical burn marks on the knuckles and back of both hands — pale, slightly raised tissue from splash exposure despite gloves, standing out against darker skin",
+      "Faint darkening around the eyes suggesting chronic sleep deprivation or allergic reactions to airborne particulates"
+    ],
+    "visible_augmentations": "None visible. Enhanced scent glands and lumbar support implant are subcutaneous/internal.",
+    "posture_movement": "Moves with economical precision developed through repetitive work — minimal wasted motion, slight protective hunch to the shoulders suggesting old back pain. Walks with the heavy-footed gait of someone perpetually carrying weight. Often touches his lower back unconsciously when standing for extended periods. Head tilts slightly when processing information — a subtle listening posture.",
+    "clothing_style": "Tier 4 working-class utility wear. Faded grey or tan work coveralls (Vex-brand, industrial-grade) with multiple pockets and reinforced seams. Underneath: plain cotton undershirt, perpetually damp with perspiration. Steel-toed boots (scuffed, well-maintained). A synthetic parka for transit and outdoor waiting. A cloth work cap, stained and creased. No jewelry. Smells faintly but persistently of medical-grade disinfectant compounds (quaternary ammonium and phenolic derivatives) that no amount of showering fully removes."
+  },
+  "image_prompt": "Sable Appiah-Nygaard, a deep brown-skinned man of mixed Sub-Saharan African and Southeast Asian heritage with warm golden undertones, 178cm tall with a thickset muscular build showing 16 years of industrial labor wear. Faded reddish-brown hair with early grey at temples, pulled under a stained work cap. Dark brown eyes with amber undertones, slightly bloodshot. Weathered face with stronger cheekbones and broader features reflecting his diverse ancestry. Wearing faded grey Vex-brand work coveralls with reinforced seams, plain undershirt visible and damp with perspiration, scuffed steel-toed boots. Chemical burn scars visible on knuckles and hands. Posture shows protective shoulder hunch from old back injury, economical precise movement. Cyberpunk 2226 Great Lakes Metropolitan processing facility, harsh fluorescent overhead lighting casting shadows across weathered features. Industrial environment with faint medical disinfectant smell lingering in the air. Gritty, authentic working-class aesthetic, early morning shift, fatigued but focused expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 57.6,
+    "Southeast Asian": 38.4,
+    "Hispanic/Latin American": 4.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

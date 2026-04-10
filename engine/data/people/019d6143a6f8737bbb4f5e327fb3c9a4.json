@@ -1,0 +1,229 @@
+{
+  "id": "019d6143a6f8737bbb4f5e327fb3c9a4",
+  "type": "character",
+  "name": "Nova Ixchel-Björnsdóttir",
+  "aliases": [
+    "Stub",
+    "The Frenchman (incorrectly — he finds this hilarious)"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller — electronics salvage, reclaimed parts, mystery lots",
+  "age": 34,
+  "status": "active",
+  "location": "The Shelf, Ironvein, near Ashland and Division",
+  "description": "Thibault is lean in the way of someone who forgets to eat when a project absorbs him — not quite gaunt but close, with long clever fingers perpetually stained in a rotating cast of lubricants and oxidized metals. His skin is a deep warm brown, his head shaved close on the sides with a dense natural coil on top that he secures with whatever is nearest, usually a reclaimed wire clip. He has bioluminescent underlining along his collarbones — a pale green glow visible in low light, bought cheap from a Helix Biosystems knockoff clinic and slightly asymmetrical, which he considers character. His stall on The Shelf is a leaning tower of crates, sorted by a taxonomy he insists is logical and that no one else has ever decoded.\n\nHe is the kind of person whose enthusiasm for obscure things is genuinely infectious — he can talk for forty minutes about the degradation patterns of third-generation synthetic capacitors and make you care. He is also deeply, constitutionally disorganized in everything except his actual technical knowledge, which is encyclopedic. He has a habit of agreeing to things in the heat of excitement and then having no memory of agreeing. He is not dishonest — he is just running seventeen threads at once and most of them are internal.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That his father, a Tessera maintenance engineer who disappeared four years ago, is dead rather than simply gone",
+      "That his enthusiasm is annoying and people merely tolerate him"
+    ],
+    "core_desires": [
+      "To find the thing — the salvage score that funds a real workshop, real tools, real work",
+      "To understand how everything works, down to its smallest principle"
+    ],
+    "coping_mechanisms": [
+      "Immersion in technical problems until emotional ones become background noise",
+      "Jokes — rapid, self-deprecating, deployed before anyone else can land a criticism"
+    ],
+    "blind_spots": [
+      "Cannot read when someone wants him to stop talking",
+      "Consistently overestimates how much time he has to complete things"
+    ],
+    "secret": "Buried in a crate under his stall is a partial technical manual his father left him — partially encrypted, partially water-damaged — that Thibault believes contains the location of a Tessera maintenance depot his father was investigating for labor violations before he vanished. He has been slowly decoding it for two years and told no one."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical jargon mixed with market slang. Runs sentences together. Uses 'so' as a sentence starter constantly. Occasionally lapses into Danish diminutives from his grandmother.",
+    "cadence": "Fast, associative — jumps topics mid-thought and circles back later. Rarely finishes a sentence the way he started it.",
+    "verbal_tics": [
+      "'So basically—'",
+      "'—which is actually fascinating because—'",
+      "Trails off mid-explanation when he sees something interesting nearby"
+    ],
+    "example_lines": [
+      "'So this is a third-gen Axiom power relay, which you'd think is worthless, except the housing is actually rated for vacuum which is — yeah, I know, weird — so if you need a sealed container that's basically indestructible this is actually, I'm just saying, this is a find.'",
+      "'I said I'd have it ready by Tuesday? I definitely said that. I absolutely — okay, so, here's the thing about Tuesday.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has acquired a lot of salvage that includes something he doesn't recognize — something that has a Tessera proprietary seal he's never seen and that seems to be still broadcasting on a frequency he can't identify",
+    "His father's encrypted manual has yielded a fragment that names a living person — someone who still works in Ironvein — and Thibault needs help he trusts to approach them"
+  ],
+  "narrative_function": "Equipment source for players on a budget. Can identify salvage and unusual tech. Information source for the secondhand economy and what's been stripped from where. Comic relief with genuine depth underneath.",
+  "augmentations": "Bioluminescent underlining along collarbones (cosmetic, knockoff Helix Biosystems). Cheap retinal magnification implant in left eye — functional but gives him occasional calibration headaches.",
+  "daily_life": "He sorts salvage in the early hours when The Shelf is quiet, opens his stall mid-morning, and spends most of the day simultaneously serving customers, disassembling things he finds interesting, and carrying on three separate comm conversations. He eats irregularly from Olamide's stall when he remembers.",
+  "affiliation": "Independent; informal relationship with Oxidian Market Vendors Guild (owes dues, keeps forgetting to pay)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 4,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "tech savant",
+      "disorganized",
+      "loyal",
+      "scattered",
+      "curious"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it's interesting, acquire it — figure out if you can afford it after",
+      "Never misrepresent what something is or does — he'll tell you it's broken if it's broken",
+      "Avoid conflict by becoming very suddenly fascinated by something nearby"
+    ],
+    "escalation_ladder": [
+      "Becomes extremely cheerful and verbose when uncomfortable",
+      "Genuinely doesn't notice things escalating until they're already escalated",
+      "Freezes completely, then over-apologizes for everything including things that aren't his fault"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately enthusiastic — treats everyone as a potential interesting person until proven otherwise",
+      "friends": "Deeply loyal, remembers every technical detail they've ever mentioned, will pull a relevant component from somewhere in the stall without being asked"
+    },
+    "stress_responses": {
+      "low": "Works faster, talks more",
+      "medium": "Disappears into a technical problem and becomes unreachable",
+      "high": "Goes very quiet, very still — unrecognizable to anyone who knows him"
+    },
+    "contradictions": [
+      "Preaches the value of knowing how things work but avoids examining his own feelings with the same rigor"
+    ],
+    "habits": [
+      "Clips things to his hair throughout the day and loses them — wire, stylus, a small light",
+      "Leaves offerings of obsolete circuit diagrams at the E.L.F. shrine near his stall, believing the market-spirits appreciate documentation"
+    ],
+    "breaking_points": [
+      "Anyone touching his father's encrypted manual",
+      "Being called stupid or slow — he goes somewhere cold and precise that surprises people"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "The Shelf",
+    "Ironvein",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera Corponation",
+    "Gravimetric Collapse Charge GCC-9",
+    "Slagworks Industrial",
+    "The Pale Mile",
+    "Nightlight",
+    "Irontide Tidal Energy",
+    "Kadiatou Bergstrom-Konate",
+    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Plot 17",
+    "Ringo PD-1 'Citizen'",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
+    "The Bazaar",
+    "The Pure Hand",
+    "Tiare Nishi-Anim",
+    "Tomasz Wren",
+    "Veslemøy Achebe-Tursynov",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Indigenous American (74.1%) with Eastern European (13.4%) and East Asian (12.5%) ancestry, resulting in warm brown skin with subtle golden and olive undertones. High cheekbones and defined facial structure reflecting Mesoamerican heritage; eye shape and hair texture show East Asian influence; lighter complexion variation from Eastern European ancestry creates warm richness rather than uniformity.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and wiry, the kind of thin that comes from sustained focus rather than deprivation — long-limbed with visible musculature in forearms and shoulders from years of disassembly work. Slight forward curve to his posture from hunching over workbenches.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-shaved sides with a dense natural coil crown, roughly 8cm at the peak, usually secured with whatever reclaimed wire clip or metal fastener is within arm's reach — currently a stripped copper coupling.",
+    "hair_length": "Short (sides) / Medium (crown)",
+    "eye_color": "Deep brown with faint segmented patterning visible in the left iris from the retinal magnification implant; occasional slight misalignment in that eye.",
+    "skin_tone": "Warm golden-brown with olive undertones, consistent across frame — the blended result of Indigenous American, East Asian, and Eastern European ancestry creating depth and luminosity",
+    "complexion": "Clean but perpetually marked — fingernails rimmed with oxidized metal dust and industrial lubricants (current palette: rust-red, graphite-gray, synthetic oil sheen). Fine lines around his eyes from squinting at small components. Strong cheekbones and defined jawline. No facial hair; appears to shave cleanly every 3-4 days based on current stubble pattern.",
+    "distinguishing_marks": [
+      "Pale green bioluminescent underlining along both collarbones, faintly asymmetrical — glows visibly in low-light conditions. Faint scarring where the implant site healed, slightly raised.",
+      "Three linear scars across the dorsal surface of his right hand, thin and white, from a component housing edge when he was 19.",
+      "Burn scar on his left forearm (roughly 4cm diameter, faint), pale against his skin tone — from a capacitor arc discharge roughly five years ago.",
+      "No visible tattoos; augmentation scars only."
+    ],
+    "visible_augmentations": "Pale green bioluminescent tracery along collarbones (cosmetic, visible when wearing open-necked clothing or sleeveless). Slight aberration in left eye focus when directly observed — faint segmented patterning in the iris from the retinal magnification implant. Occasional micro-tremor in left eye when concentrating or when implant requires recalibration.",
+    "posture_movement": "Habitually hunched forward, hands moving expressively when speaking about technical subjects — especially when explaining salvage taxonomy or component degradation patterns. Walks with purpose but distraction, often redirecting mid-step to examine something on the ground. Sits cross-legged even on proper chairs. Fidgets constantly with small objects — wire, fascia, components — while listening to others.",
+    "clothing_style": "Tier 4 utilitarian scavenger aesthetic. Worn cargo vest or technician's coat (heavily patched, pockets stuffed with components in labeled or unlabeled pouches). Underneath: faded graphic tee or sleeveless shirt, usually bearing faint chemical stains. Industrial cargo pants with multiple thigh pockets, cuffs rolled or pinned. Steel-toed work boots, one sole held together with synthetic webbing. Fingerless work gloves, knuckles exposed. No jewelry except for whatever magnetic components he's borrowed from his own inventory and forgotten he's wearing. His clothing smells perpetually of mineral oil, solder flux, and rust-preventative."
+  },
+  "image_prompt": "cyberpunk 2226, androgynous technician with warm golden-brown skin tone, high cheekbones reflecting Indigenous American and East Asian heritage, natural black short-shaved sides with dense coil crown, deep brown eyes with subtle augmentation artifact in left iris. Lean 178cm frame hunched forward from workbench focus, pale green bioluminescent tracery glowing faintly along exposed collarbones. Wearing heavily patched cargo vest over faded graphic tee, industrial cargo pants, fingerless work gloves with visible metal dust on hands, steel-toed work boots. Thin white scars visible on right hand and left forearm. Fidgeting with salvaged components, surrounded by dim workshop neon ambient lighting casting blue-green shadows, gritty GLMZ scrapyard aesthetic, moody concentrated expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 74.1,
+    "Eastern European": 13.4,
+    "East Asian": 12.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

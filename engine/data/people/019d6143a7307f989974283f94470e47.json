@@ -1,0 +1,273 @@
+{
+  "id": "019d6143a7307f989974283f94470e47",
+  "type": "character",
+  "name": "Ash Rentería",
+  "aliases": [
+    "The Girl",
+    "Yuli"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Anya and Demyan's daughter — witness to the Prologue violence",
+  "age": 12,
+  "status": "active",
+  "location": "The Shelf — Tier Four, near Western and Division",
+  "description": "Yuliya is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Shelf's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Shelf — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.9,
+      "shadow": 0.2,
+      "mask": 0.6,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "That she is becoming someone who isn't scared of violence",
+      "That her notebook will be found"
+    ],
+    "core_desires": [
+      "To understand why people hurt each other",
+      "To hear her father's real voice again"
+    ],
+    "coping_mechanisms": [
+      "The notebook — writing things down makes them smaller",
+      "Translates obsessively, even conversations she isn't part of"
+    ],
+    "blind_spots": [
+      "Thinks she is invisible when she follows people. She is not.",
+      "Believes understanding violence is the same as being safe from it."
+    ],
+    "secret": "She has been following Kyle for three weeks. The Prologue was not the first time. She has six pages of notes on him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Perfect English, advanced for her age. Clinical when describing violence. Childlike when caught off guard.",
+    "cadence": "Fast when translating. Slow when speaking for herself. Long pauses when processing something she doesn't have words for yet.",
+    "verbal_tics": [
+      "Says 'I know' before she actually knows",
+      "Translates her mother's Russian even when no one asks"
+    ],
+    "example_lines": [
+      "I wasn't scared. I was documenting.",
+      "Papa laughed when I gave him the teeth. The machine made it sound like a broken radio. But I could tell."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "subject / fascination",
+      "description": "She has been studying him. He is the most interesting entry in her notebook. He is also the most frightening.",
+      "emotional_core": "A child trying to categorize something that doesn't fit her categories",
+      "story_tension": "She will try to talk to Kyle eventually. Kyle is not prepared for a twelve-year-old who takes notes on him."
+    },
+    {
+      "name": "Anya Morozova",
+      "type": "mother",
+      "description": "She translates for her mother and protects her mother and resents her mother for needing protection, all at the same time.",
+      "emotional_core": "Love tangled with premature responsibility",
+      "story_tension": "Anya doesn't know Yuliya saw the fight. When she finds out, something between them will change."
+    }
+  ],
+  "story_hooks": [
+    "Her notebook is a Shelf intelligence network maintained by a child",
+    "She has been following Kyle for weeks — she knows his patterns",
+    "She will become a recurring presence — Kyle's smallest, most persistent shadow"
+  ],
+  "narrative_function": "Yuliya is the Shelf's future watching the Shelf's present and writing it down. She is what happens when a child grows up in a place where violence is weather. She is also the reader's proxy — observing Kyle from the outside, trying to make sense of him.",
+  "augmentations": "None.",
+  "daily_life": "School (Shelf community education). Translating for Anya. Writing in the notebook. Following people who interest her.",
+  "affiliation": "None",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 2,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 7,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 6,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Understanding",
+      "Documentation",
+      "Hearing her father again"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 5,
+        "response": "Writes everything down — the notebook makes things smaller"
+      },
+      "moral": 7,
+      "trust": 5,
+      "desperation": 4
+    },
+    "strengths": [
+      "Curiosity",
+      "Perspective",
+      "Perseverance",
+      "Honesty",
+      "Bravery"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Humility",
+      "Forgiveness",
+      "Teamwork"
+    ],
+    "tags": [
+      "child-observer",
+      "intelligence-gatherer",
+      "translator",
+      "prologue-witness",
+      "kyle-shadow"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Write everything down in the notebook — who did what to whom",
+      "Translate for Mama even when no one asks",
+      "Follow people who are interesting regardless of danger",
+      "Say I know before actually knowing",
+      "Document rather than react — documenting is safer than feeling",
+      "Never let the notebook be found"
+    ],
+    "escalation_ladder": [
+      "Silent observation from a position she believes is invisible",
+      "Clinical documentation of events in the notebook",
+      "Direct questioning with vocabulary advanced for her age",
+      "Stubborn refusal to stop following or observing"
+    ],
+    "interpersonal_modes": {
+      "kyle": "Most interesting and most frightening entry in the notebook; a child trying to categorize something that does not fit",
+      "anya_morozova": "Love tangled with premature responsibility and resentment for needing protection",
+      "demyan_morozov": "Grief expressed through the teeth she carried — needs to hear his real voice",
+      "shelf_residents": "Observes and catalogs with the detachment of a researcher and the vulnerability of a child",
+      "strangers": "Watchful silence until something catches her interest, then intense questioning"
+    },
+    "stress_responses": {
+      "low": "Increased notebook entries; translates conversations she is not part of",
+      "medium": "Follows people more aggressively; believes she is invisible when she is not",
+      "high": "Vocabulary becomes clinical when describing violence — dissociation through documentation",
+      "critical": "Goes still and quiet — the child underneath the researcher surfaces briefly"
+    },
+    "contradictions": [
+      "Believes understanding violence is the same as being safe from it",
+      "Thinks she is invisible when following people — she is not",
+      "Is becoming someone who is not scared of violence and fears this about herself"
+    ],
+    "habits": [
+      "Writes in the notebook every day — calls it homework",
+      "Translates her mother Russian even when not asked",
+      "Follows Kyle and documents his patterns",
+      "Says I know as a preemptive claim before she actually knows",
+      "Catalogs who owes what and who fears whom on the Shelf"
+    ],
+    "breaking_points": [
+      "The notebook being discovered",
+      "Anya finding out Yuliya witnessed the Prologue fight",
+      "Kyle confronting her about the following",
+      "Her father voice through the machine becoming something she can no longer interpret as human"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "The Shelf",
+    "TESSERA PA-5 'Attendant'",
+    "The Pure Hand",
+    "Lazarus IDP-1 'Teeth'",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Altan Tanaka-Frimpong",
+    "Arcturus KS-7 'Nursery'",
+    "Breck Tannen",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kyle Ellen Corbin-Vasik",
+    "Lazarus LX-2 'Lab Rat'",
+    "Patient Zero",
+    "SynapTech ReadRoom Pro Social Cue Implant",
+    "The Heritage Vault"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian-dominant mixed ancestry (42.4%) with significant Hispanic/Latin American heritage (32.4%), complemented by Northern European (14.3%) and Sub-Saharan African (10.9%) genetic contributions. The combination produces warm-toned skin with subtle depth, facial structure reflecting Southeast Asian and Hispanic ancestry, and eye pigmentation influenced by the full genetic spectrum.",
+    "height_cm": 152,
+    "weight_kg": 41,
+    "build": "Compact and square-shouldered despite her age — dense musculature in shoulders and forearms suggesting either genetics or early manual labor. No baby fat. Wiry rather than soft. Appears five years older than her chronological age due to posture and bearing.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Pulled back in a practical braid, often loose strands escaping. No styling — functional only.",
+    "hair_length": "Medium (mid-back when unbraided)",
+    "eye_color": "Dark brown with warm amber undertones, observational, rarely blinking",
+    "skin_tone": "Warm medium tone with golden and olive undertones, reflecting the Southeast Asian and Hispanic majority ancestry. Subtle warmth across cheekbones and nose; even complexion with resilience to sun exposure.",
+    "complexion": "Angular face with defined cheekbones and sharp jaw shaped by Southeast Asian and Latin American ancestry. Eyes set with characteristic almond shape and warmth. Skin shows the wear of Tier Four living — occasional marks from street scrapes, one healing cut on her left temple (source unknown). Perpetually exhausted-looking eyes. Rarely smiles.",
+    "distinguishing_marks": [
+      "Thin white scar along her left jawline, approximately 2cm, from an unremarked childhood incident",
+      "Dark bruise on her right inner wrist (recent — defensive mark or restraint burn, pattern unclear)",
+      "Calloused hands, especially palms and inside knuckles, inconsistent with her age"
+    ],
+    "visible_augmentations": "None visible. She carries no obvious chrome, no LED implants, no subdermal armor. This absence is notable in the Shelf — she is as analog as a child can be in 2226.",
+    "posture_movement": "Moves with deliberate control, economical. No fidgeting. Sits spine-straight, even when exhausted. Walks with her shoulders slightly forward, head level, eyes tracking. Reminiscent of a hunter or a soldier in miniature. When angry, her jaw locks and her hands clench.",
+    "clothing_style": "Tier Four utilitarian — worn black synth-cotton leggings, oversized gray hoodie (probably belonged to Demyan; she has grown into it partially), scuffed black runner-shoes held together with synthlace. A canvas messenger bag (khaki, faded) slung across her chest containing her notebook and writing supplies. No jewelry, no adornments, no status markers. Clothing is clean but worn, patched once at the left knee."
+  },
+  "image_prompt": "Ash Rentería, 152cm tall, compact wiry frame, warm medium skin tone with golden undertones, dark brown eyes with amber warmth and almond shape, angular face with defined cheekbones. Dark nearly-black hair in loose braid, medium length. Wearing oversized gray hoodie and worn black synth-cotton leggings, scuffed black runner-shoes, faded khaki canvas messenger bag across chest. Small white scar on left jawline, dark bruise on right inner wrist, exhausted expression. Sitting spine-straight with intense observational gaze, hands calloused and clenched. Cyberpunk 2226, Tier Four urban setting, neon-lit alley background, cool blue and orange lighting, photorealistic, moody and intense atmosphere, no augmentations visible, analog child in digital world --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 42.4,
+    "Hispanic/Latin American": 32.4,
+    "Northern European": 14.3,
+    "Sub-Saharan African": 10.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

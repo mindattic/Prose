@@ -1,0 +1,318 @@
+{
+  "id": "019d6143a6467240a624ebdc556f2c1f",
+  "type": "character",
+  "name": "Mika Zaragoza-Vestergaard",
+  "aliases": [
+    "Papa Kwa",
+    "The Clockman"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Zheng-Dao maintenance engineer, community elder, grandparent raising grandchildren",
+  "age": 78,
+  "status": "active",
+  "location": "Avalon Quiet — a three-room unit on the eighth floor of the Chrysalis Building, a co-operative housing block, near Lincoln and Clark",
+  "description": "Kwabena is a tall man who has given up very little of his height to age — he still stands straight at six-two, lean in the way of someone who has spent a lifetime climbing through maintenance shafts and has never been able to afford to stop moving. His skin is deep umber-black with a slight ashen quality at the joints, and his hands are the most expressive thing about him: massive, deliberate, permanently stained with the particular bluish tint of Zheng-Dao lubricant that no amount of washing has ever fully removed. He has cat ears — a geneware mod he got at thirty-two on a bet, brown-furred and articulate, which now seem as natural a part of his face as his broad nose and his slow, assessing eyes. He keeps his beard in a neat grey circle and wears the same type of quilted work jacket in varying states of cleanliness, each one bearing accumulated patches from thirty years of Zheng-Dao facility IDs.\n\nHe worked Zheng-Dao maintenance for forty years, becoming one of the senior engineers for the Avalon Quiet district power grid before mandatory retirement. He is the kind of man who understands systems — mechanical, social, familial — with the same patient diagnostic attention, and who believes almost everything can be fixed if you correctly identify the fault. He is raising two grandchildren, ages nine and twelve, after his son's death, and he applies to this work the same methodical care he gave to keeping three hundred thousand residents' power running. He is not warm in an obvious way. He is reliable, which he has concluded is better.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The power grid failing and not being there to fix it — being useless",
+      "His grandchildren inheriting the same precarity he spent his life trying to escape"
+    ],
+    "core_desires": [
+      "His grandchildren to have options he didn't",
+      "To be remembered by the systems he maintained, which is irrational and he knows it"
+    ],
+    "coping_mechanisms": [
+      "Doing physical repair work as emotional regulation",
+      "Praying to the Zheng-Dao grid ELFs with extraordinary specificity — he treats them as colleagues"
+    ],
+    "blind_spots": [
+      "He expresses love almost entirely through solving practical problems, and his grandchildren sometimes need something else",
+      "He trusts Zheng-Dao's systems more than he trusts people, including himself"
+    ],
+    "secret": "His expired neural interface still occasionally picks up live data from the Avalon Quiet power grid — fragmented, but real. He has been tracking an anomaly in Zheng-Dao's grid usage patterns that suggests something large and unauthorized is drawing power from a residential basement three blocks away. He hasn't reported it because he's not sure he's authorized to know."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical and precise, with Ghanaian-Bolivian family idiom surfacing in proverbs; uses maintenance metaphors for almost everything emotional",
+    "cadence": "Unhurried and quiet; he speaks at the pace of someone who has spent a career in noisy environments and learned that calm carries further than volume",
+    "verbal_tics": [
+      "'Find the fault first'",
+      "Refers to the building's power-management ELF as 'she' and 'her' with complete sincerity",
+      "Long pauses before answering — not uncertainty, just processing"
+    ],
+    "example_lines": [
+      "'You can't fix what you haven't diagnosed. Tell me what happened, from the beginning, slowly.'",
+      "'She's been running warm in sector four for three weeks. I leave her offerings. She hasn't complained yet, but she will.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The power anomaly he's been tracking resolves into something impossible to ignore — and he has to decide whether to report it, investigate it himself, or find someone he trusts to handle it",
+    "Zheng-Dao sends a corporate compliance team to do a sweep of expired neural interfaces in Avalon Quiet — which would mean discovering his ghost signals and the data he's been passively receiving"
+  ],
+  "narrative_function": "Technical resource and practical problem-solver; community infrastructure expert; represents the dignified precarity of the retired working class; emotionally grounded figure who can anchor chaotic storylines; his ghost signals from the expired neural interface occasionally give him information he shouldn't have",
+  "augmentations": "Cat ears, brown fur, fully articulate (cosmetic geneware, 46 years old); joint reinforcement, knees and lower back (occupational necessity); Zheng-Dao-issued neural diagnostic interface for grid systems, now expired but hardwired in — he sometimes gets ghost signals from the power grid he used to manage",
+  "daily_life": "Gets both grandchildren to school, then spends the morning doing volunteer maintenance work throughout the Chrysalis Building and sometimes the surrounding Avalon Quiet blocks — he cannot stop. Afternoons he keeps a small informal repair workshop in his unit where neighbors bring broken devices; he charges what they can afford, which is often nothing. Evenings: homework supervision, dinner, two hours of ELF devotion at the shrine he keeps for the building's power-management spirit, sleep.",
+  "affiliation": "Zheng-Dao Corporation (retired, pension Class A-1); Chrysalis Building Co-operative Board; Avalon Quiet Maintenance Volunteer Corps",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Engineer",
+      "Caregiver",
+      "ELF Devotee",
+      "Working Class Elder",
+      "Technical Expert"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Identify the actual problem before proposing any solution",
+      "Do not ask for help until you have tried everything you can try alone — but do eventually ask"
+    ],
+    "escalation_ladder": [
+      "Runs diagnostics — gathers information before acting",
+      "Consults the relevant ELF, genuinely",
+      "Brings in one trusted person for a second opinion",
+      "Goes to the co-operative board if the problem is structural enough"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Politely distant; assesses whether they know what they're talking about before engaging fully",
+      "friends": "Fixes things for them. Shows up. Remembers details. Does not say much but is always there."
+    },
+    "stress_responses": {
+      "low": "Finds something to repair",
+      "medium": "Goes to the shrine and talks to the ELF, which is genuinely calming for him",
+      "high": "Very quiet, very still, working through fault trees in his head — appears calm, is running at full capacity"
+    },
+    "contradictions": [
+      "He is deeply devoted to ELFs as spiritual presences while simultaneously understanding them as electrical systems — he has no sense that these are contradictory"
+    ],
+    "habits": [
+      "His cat ears rotate toward sound sources involuntarily — useful tell for what he's actually paying attention to",
+      "Leaves the same offering at the grid shrine every evening: a precisely measured 0.3 seconds of voluntary system load, which he calculates to be equivalent to lighting one candle",
+      "Keeps a handwritten maintenance log of every repair he does in the building, personal and volunteer alike"
+    ],
+    "breaking_points": [
+      "Someone mistreating his grandchildren, or treating them as less than"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "46 years old, excellent condition",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn, causing occasional stiffness",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "hardwired in, generating ghost signals from nearby grid infrastructure",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Stoic": 0.9,
+    "Mentor": 0.9,
+    "Problem Solver": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Avalon Quiet to a Ghanaian-Bolivian family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior maintenance technician, Zheng-Dao grid division",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received cat ear geneware on a bet with a coworker; kept them",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to senior grid engineer, Avalon Quiet district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Son's death in a Deepwell Station industrial incident; takes in two grandchildren",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Mandatory retirement; Class A-1 pension; begins volunteer maintenance work",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current — running the ghost signal anomaly quietly in the background of his life",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Avalon Quiet",
+    "Ouroboros Energy Power Distribution Trunk Network",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Zheng-dao Bioelectric",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Auricula Felis Modification",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Forge-Smith Collective Carbon Machete 'Cane Cutter'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Obafemi Szczypiński-Lautoa",
+    "Sorin Ekwensi-Balasanyan",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "Zoë Mbekele-Thorvaldsdóttir"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Northern European ancestry, complemented by Hispanic/Latin American and Sub-Saharan African heritage — a striking global combination that manifests in his angular facial structure, warm brown eyes, and medium-deep complexion with subtle warm undertones.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, all efficient muscle and minimal fat — the frame of someone who has spent forty years climbing through maintenance shafts and has never stopped moving. Slight forward cant to his shoulders from decades of hunching through tight spaces.",
+    "hair_color": "Steel grey",
+    "hair_style": "Neat circular beard kept close to his jaw; head hair cropped very short",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, patient and assessing",
+    "skin_tone": "Medium-warm brown with subtle golden undertones — the result of East Asian and Hispanic/Latin American ancestry tempered by Northern European and Sub-Saharan African heritage, creating a complexion with warm depth rather than ashen pallor",
+    "complexion": "Weathered but meticulously groomed — creases around his eyes and mouth from forty years of squinting into dim maintenance panels. High, defined cheekbones with slightly broader facial structure reflecting his East Asian heritage. Hands are the most striking feature: massive, deliberate, with permanent bluish staining from Zheng-Dao lubricant embedded beneath the fingernails and in the calluses. Palms crosshatched with old scars and pressure lines.",
+    "distinguishing_marks": [
+      "Pair of brown-furred, fully articulate cat ears positioned naturally where human ears would be — geneware modification at age 32, now completely integrated into his appearance",
+      "Concentric pattern of faint burn scars across both forearms from electrical exposure, circa age 45-50",
+      "Deep callus ridges across palm and inner fingers of both hands",
+      "Bluish discoloration beneath fingernails, particularly pronounced on thumb and index finger"
+    ],
+    "visible_augmentations": "Articulate cat ears with responsive fur. The joints of both knees show slight metallic shimmer under certain angles — reinforcement plating. Occasional faint blue LED blink in his right pupil when he receives 'ghost signals' from the power grid he once managed, though this is rare and he has learned to suppress it in public.",
+    "posture_movement": "Stands perfectly straight at six-two despite his age — deliberate maintenance of posture. Moves with economical precision, never wasting a gesture. His hands are constantly busy — adjusting, checking, reassessing. When he sits, he sits forward slightly, as if ready to stand. Walks slowly but with absolute confidence, never hurrying but never wasting time either.",
+    "clothing_style": "Tier 3-4 practical utility wear. Standard quilted work jacket in varying states of repair and cleanliness — each one a patchwork of accumulated Zheng-Dao facility ID patches, company logos, and volunteer corps insignia from the Avalon Quiet Maintenance Corps. Beneath: simple grey undershirt or company-issue thermal. Straight-leg work trousers in dark blue or black, reinforced at the knees with additional fabric patches. Steel-toed safety boots, meticulously maintained but visibly aged. A small silver pendant on a cord beneath his shirt — likely related to his ELF devotional practice. No jewelry beyond a faded Zheng-Dao service ring on his left ring finger."
+  },
+  "image_prompt": "Mika Zaragoza-Vestergaard, 188cm tall lean angular man with steel grey short cropped hair and neat close beard, warm medium-brown complexion with golden undertones reflecting East Asian, Northern European, and Latin American heritage. Deep brown patient eyes, defined high cheekbones. Fully articulate brown-furred cat ears integrated naturally into his appearance. Massive deliberate hands heavily stained with bluish Zheng-Dao lubricant beneath fingernails, crosshatched with scars. Faint electrical burn scars across both forearms. Metallic shimmer at knee joints from reinforcement plating. Wearing aged quilted work jacket patched with facility ID badges and company logos, grey thermal undershirt, dark reinforced work trousers, steel-toed boots. Silver devotional pendant visible at neck. Standing perfectly upright with economical posture in dim maintenance corridor, faint blue LED blink in right pupil, cool industrial lighting casting shadows across weathered face and scarred hands, cyberpunk 2226 aesthetic, forty years of maintenance expertise evident in every precise gesture. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 31.3,
+    "Northern European": 30.0,
+    "Hispanic/Latin American": 22.0,
+    "Sub-Saharan African": 13.7,
+    "Southeast Asian": 3.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

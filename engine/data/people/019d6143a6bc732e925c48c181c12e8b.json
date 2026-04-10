@@ -1,0 +1,298 @@
+{
+  "id": "019d6143a6bc732e925c48c181c12e8b",
+  "type": "character",
+  "name": "Cleo Benali",
+  "aliases": [
+    "Rory Needles",
+    "The Pharmacist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street pharmacist — sells stabilized street compounds, harm-reduction supplies, and carefully dosed neurochemical assists",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows, Irkalla district — operates from a converted laundry kiosk two blocks from the Deepwell Station entrance, near sub-level access near Dearborn and Jackson",
+  "description": "Rúairí Bello-Nazarov has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Causing harm through a mistake he should have caught — bad compound, wrong dosage, wrong patient",
+      "Being shut down and watching the people he serves have nowhere to go"
+    ],
+    "core_desires": [
+      "Legitimate recognition — he wants to be a pharmacist, not a criminal",
+      "For harm reduction to stop being treated as enabling and start being treated as medicine"
+    ],
+    "coping_mechanisms": [
+      "Rigorous professional routine as a container for anxiety — protocols and standards applied to an illegal operation as if it were a clinic",
+      "Humor that stays warm even when the situation is terrible"
+    ],
+    "blind_spots": [
+      "He extends trust to his clients that he doesn't always extend to himself",
+      "He does not acknowledge how much of his own emotional needs are met by being needed"
+    ],
+    "secret": "He has been systematically collecting case notes — anonymized — on every patient interaction for four years with the intent of eventually publishing a harm-reduction study. He knows this could result in his arrest and he has kept doing it anyway because he is convinced it will matter to someone, someday."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and precise in alternation — clinical terminology when he is explaining something important, easy and familiar when he's putting someone at ease; code-switches between Irish English cadences from his father and something more deliberately neutral",
+    "cadence": "Measured but not slow; he knows how to hold space in a conversation without filling it unnecessarily",
+    "verbal_tics": [
+      "'Right, okay' as a transitional phrase while he's thinking",
+      "Says people's names more than is strictly necessary — it's intentional, he read that it helps people feel seen",
+      "Exhales quietly before delivering bad news"
+    ],
+    "example_lines": [
+      "'Right, okay — I'm not going to tell you not to use it, but I am going to tell you what it does to your renal function over ninety days, and then you decide. That's how this works.'",
+      "'You came back. That's — Tenaya, that's good. That's actually the hardest part, coming back. Sit down.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A new compound has appeared in the Narrows that he cannot identify — it produces unusual neurological effects and two of his regular clients have had seizures; he is trying to trace its source and is frightened",
+    "The Palladian satellite clinic doctor who refers patients to him has stopped returning his messages and her clinic station has been dark for a week",
+    "His case-study archive has been accessed by someone who shouldn't know it exists — and whoever it is hasn't reported him yet, which is somehow more alarming"
+  ],
+  "narrative_function": "Point of access to the Narrows' underground health ecosystem; can provide information about who is sick, who is using, and who is afraid; has knowledge of neurochemical compounds that crosses legitimate and illegitimate use cases",
+  "augmentations": "Color-changing hair geneware (blue-black to copper, mood-responsive, old gen); basic augmented olfactory sensor (helps him assess compound purity by scent — cheap Ringo model, functional)",
+  "daily_life": "He is at his kiosk from mid-morning through the early hours; takes patient intake seriously and will not rush a transaction if someone needs to talk; sleeps in rotating four-hour blocks and is chronically under-rested.",
+  "affiliation": "Independent; informal cooperation agreement with The Narrows mutual aid collective; has a tense but functional working relationship with the Irkalla district's Palladian Health satellite clinic staff who quietly refer overflow patients to him",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "harm reduction",
+      "idealist",
+      "community medic",
+      "quietly radical",
+      "knowledge-keeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Harm reduction first — if someone is going to use regardless, make it safer",
+      "Never sell to someone who is clearly in crisis without first doing intake and making sure they are stable",
+      "Does not carry or sell anything he hasn't tested or verified himself"
+    ],
+    "escalation_ladder": [
+      "Welcoming and professionally calm — intake, assessment, service",
+      "Honest concern — will voice worry about a pattern he's seeing without being preachy",
+      "Active intervention — will delay a transaction or redirect a person if he believes something is wrong",
+      "Emergency action — has supplies and skills for overdose intervention and will use them on anyone, not just clients"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm; attentive without being intrusive; calibrates quickly to what someone needs from the interaction",
+      "friends": "Genuinely invested; remembers everything; shows care through follow-up and small practical acts"
+    },
+    "stress_responses": {
+      "low": "Becomes more meticulous with his protocols",
+      "medium": "Starts quietly asking questions of everyone he sees — gathering information before he acts",
+      "high": "Makes a clear, committed decision and pursues it with complete focus; can become tunnel-visioned"
+    },
+    "contradictions": [
+      "Preaches patient autonomy but struggles not to intervene when he thinks someone is making a bad choice",
+      "Has a carefully maintained veneer of professional detachment that completely dissolves when a regular client is in danger"
+    ],
+    "habits": [
+      "Leaves an E.L.F. offering at the Deepwell shrine every time he passes it, morning or night",
+      "Makes tea for difficult conversations — the act of making it gives both parties a moment to settle",
+      "Checks his compound inventory twice at opening and twice at close"
+    ],
+    "breaking_points": [
+      "Watching someone die of something he could have prevented with the compounds they criminalized",
+      "Being told by an authority figure that the people he serves don't matter"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Augmented olfactory sensor — Ringo Utility model, compound-purity assessment configuration",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Augmented olfactory sensor — Ringo Utility model, compound-purity assessment configuration",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in Irkalla to an Irish-Uzbek father and a Yoruba-Kazakh mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Mother dies of complications from an unregulated augmentation infection; no clinic within range would treat her without corporate insurance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Begins self-teaching pharmacology from pirated medical archives",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2188 — Opens his kiosk operation in The Narrows",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2196 — Begins his anonymized case-note archive",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "related_entities": [
+    "Helix Biosystems",
+    "Deepwell Station",
+    "The Narrows Compact",
+    "Grandmother",
+    "The CEO",
+    "Palladian Construction",
+    "Irkalla",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Residue (I Still Have Your Feed)",
+    "ARCHIVE",
+    "Copper",
+    "The Pure Hand",
+    "Arcturus MX-1 'Cerberus'",
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Ezio Kaboré-Malhotra",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ringo Corponation",
+    "Slagworks Industrial",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA TK-4 'Hellhound'",
+    "The Heritage Vault",
+    "The Narrows"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian and North African with significant Central Asian, Hispanic/Latin American, and Sub-Saharan African ancestry. The combination creates distinctive features: East Asian bone structure and eye shape blended with North African and Sub-Saharan warmth in skin tone and facial proportions. Central Asian heritage visible in cheekbone prominence and eye-set. A truly global genetic tapestry.",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical — the kind of wiry frame that comes from insufficient calories and constant movement. No excess, no bulk. Shoulders narrow but held with conscious control.",
+    "hair_color": "Mood-responsive geneware: oscillates between deep blue-black and copper-bronze depending on emotional state and ambient biochemistry",
+    "hair_style": "Tight, well-maintained curls worn close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black with the characteristic monolid crease of East Asian heritage, set deep and alert",
+    "skin_tone": "Warm golden-bronze complexion with subtle red and ochre undertones — the result of East Asian base genetics warmed by North African and Sub-Saharan heritage. The skin holds light differently across planes of the face, creating subtle dimensional depth.",
+    "complexion": "Angular face with moderate-width cheekbones characteristic of Central Asian ancestry, softened by the fuller mouth structure reflecting North African and Sub-Saharan lineage. Slightly gaunt quality suggests chronic sleep deprivation and careful nutrition. Skin is clean and well-maintained despite his Tier 5 location — an anomaly that signals discipline. Faint dark circles under eyes are permanent fixtures. Hands are notably steady, fingers long and dexterous.",
+    "distinguishing_marks": [
+      "Small ritual burn scar on inside of right wrist, deliberately placed and healed well — marker of a private spiritual practice",
+      "Three thin white lines running horizontally across the knuckles of his left hand, old defensive scars from unspecified violence",
+      "Faint chemical staining (slight discoloration) on the tips of his index and middle fingers from compound handling and testing"
+    ],
+    "visible_augmentations": "Hair geneware is obvious — the mood-responsive color shifts are distinctive and recognizable to repeat customers. The olfactory augmentation is not visibly obvious but his frequent subtle sniffing and the faint red irritation around his right nostril hint at its presence. No chrome, no obvious external hardware.",
+    "posture_movement": "Stands with economical stillness — hands kept visible and low, movements deliberate and non-threatening. His steadiness is cultivated; he moves like someone who has learned that trembling hands inspire distrust in a pharmacist. When listening to a customer, he leans in slightly with genuine focus. Gait is quick but unhurried.",
+    "clothing_style": "Clean clothes in a district where cleanliness is conspicuous — worn synthetics in muted colors (grey, charcoal, deep olive), well-maintained but visibly cheap. A long-sleeved shirt or thin jacket worn even in warm weather, covering his ritual scar. No corporate branding. Practical pockets. Footwear is functional and worn but not falling apart. Overall appearance: someone who respects himself and his customers despite operating in a Tier 5 location. His cleanliness reads as both a choice and a quiet act of resistance."
+  },
+  "image_prompt": "Cyberpunk 2226: Cleo Benali, a 173cm lean figure with warm golden-bronze skin reflecting East Asian, North African, Central Asian, and Sub-Saharan African heritage. Dark brown eyes with characteristic East Asian monolid, sharp cheekbones, full mouth. Short tight curls that shift between deep blue-black and copper-bronze (mood-responsive geneware). Faint dark circles, gaunt but disciplined appearance. Wearing muted grey synthetics and long sleeves despite warmth, hiding a ritual scar on right wrist. Hands steady and visible, showing old defensive scars on left knuckles and chemical staining on fingertips. Clean, well-maintained appearance striking against gritty Tier 5 environment. Economic stillness, focused posture, standing in dim neon-lit narrow corridor with rain-slicked surfaces. Moody cyberpunk lighting, atmospheric mist, professional pharmacist bearing. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 32.3,
+    "North African": 31.6,
+    "Central Asian": 15.7,
+    "Hispanic/Latin American": 11.5,
+    "Sub-Saharan African": 8.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

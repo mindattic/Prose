@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a7127a98aaa035bdf65e86d2",
+  "type": "character",
+  "name": "Arden Guerrero",
+  "aliases": [
+    "Vesna Static",
+    "The Thorn"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "underground graffiti artist and neon muralist",
+  "age": 23,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
+  "description": "Vesna is lean and angular, her dark brown skin carrying faint scarring from a childhood in Hough Reclamation where she learned to run before she learned to read. Her natural hair grows in a dense crown she keeps partially shaved on the left side, stenciled with a geometric pattern that shifts color with her mood — a cheap geneware dye mod she got at sixteen from a bodega-surgeon. Her eyes are sharp, always scanning exits and surfaces, evaluating wall textures the way other people evaluate faces. She has a small tattoo of an E.L.F. sigil behind her left ear, a prayer mark she touches when she's working at height.\n\nShe is furiously alive and furiously angry — not in a way that spills out constantly, but in the way a banked fire is still a fire. Her murals appear overnight on Axiom substation walls, on Ferrogate Transit pylons, on the blank faces of Tessera dormitory blocks: massive, bioluminescent compositions that reference pre-GLMZ Balkan folk patterns twisted into scathing corporate critique. She doesn't talk much about her Serbian grandmother or her Nigerian grandfather, but both live in her work. She is guarded with strangers and unexpectedly tender with people she trusts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "being erased — literally and figuratively",
+      "becoming complicit in the system she fights"
+    ],
+    "core_desires": [
+      "permanent beauty that outlasts corporate repainting",
+      "a world where her work doesn't need to be a weapon"
+    ],
+    "coping_mechanisms": [
+      "working through the night until exhaustion silences anxiety",
+      "ritualistic data offerings to the E.L.F. she calls Lux"
+    ],
+    "blind_spots": [
+      "she mistakes self-destruction for integrity",
+      "underestimates how much people actually love her work"
+    ],
+    "secret": "Three of her largest murals were secretly commissioned — and paid for — by a mid-level Axiom facilities manager named Brecht who uses them to launder his own dissatisfaction with the company. She has never told anyone and uses the money to fund the collective, but the compromise haunts her."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse, technical when discussing surfaces and materials, unexpectedly lyrical when describing what she's trying to say with an image. Mixes Meridian street slang with occasional Serbian loan-words her grandmother used.",
+    "cadence": "Short sentences. Long silences. Bursts when passionate.",
+    "verbal_tics": [
+      "'the wall decides' (philosophy, not superstition)",
+      "trails off mid-sentence when thinking visually"
+    ],
+    "example_lines": [
+      "'Tessera painted over the Ashstroke on Calumet in six hours. Six. That's how scared they are of a picture.'",
+      "'I don't tag. Tagging is a name. I make arguments.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of her murals in HPAZ contains a hidden map of a Ferrogate maintenance tunnel she discovered — she encoded it deliberately as a dead drop, but she hasn't told anyone it's there yet.",
+    "Axiom's community relations department has offered her a legal public commission — and the offer is eating her alive because the money would save the collective's squat from eviction."
+  ],
+  "narrative_function": "Local color and tension source — her murals appear near story-relevant locations and encode information; quest giver if players need access to restricted Ferrogate infrastructure she's mapped; potential witness to things that happen in the dead hours.",
+  "augmentations": "Mood-reactive hair dye geneware (cheap, slightly glitchy — sometimes triggers wrong colors). Pressure-sensitive fingertip callus mods for grip on vertical surfaces. No cyberware.",
+  "daily_life": "Sleeps until early afternoon in a shared squat in HPAZ, scouts locations in the evening, works between 02:00 and 05:00 when Ferrogate Transit security cycles are lowest. Eats one real meal a day, usually from Mama Tsehai's stall.",
+  "affiliation": "Highland Park Autonomous Zone art collective 'Ashstroke'",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 9,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "night-worker",
+      "anti-corporate",
+      "technically skilled",
+      "guarded",
+      "principled-to-a-fault"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never sell a piece to someone who wants to display it privately",
+      "always leave before dawn — being seen is being caught"
+    ],
+    "escalation_ladder": [
+      "cold assessment of threat",
+      "tactical withdrawal without confrontation",
+      "if cornered: explosive verbal aggression to create space, then run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "watchful and minimal — gives nothing away, asks precise questions",
+      "friends": "dry humor, unexpected warmth, will share her last food without comment"
+    },
+    "stress_responses": {
+      "low": "gets very quiet and focused",
+      "medium": "starts sketching obsessively on any available surface",
+      "high": "disappears for 48 hours and comes back having made something enormous"
+    },
+    "contradictions": [
+      "preaches collective action but works almost entirely alone at night"
+    ],
+    "habits": [
+      "wipes her hands on her thighs constantly even when they're clean",
+      "always positions herself with a wall at her back"
+    ],
+    "breaking_points": [
+      "watching someone destroy art out of spite rather than ideology",
+      "being told her work 'doesn't count' because it's illegal"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Dreamer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Tessera TK-7 Service Pistol 'Ticker'",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
+  ],
+  "registered_firearms": [
+    "Tessera TK-7 Service Pistol 'Ticker'",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Hough Reclamation",
+    "Ferrogate Transit",
+    "Dredge Mining Collective",
+    "The Reclamation Assembly",
+    "GLMZ",
+    "Grandmother",
+    "The CEO",
+    "Neurochemical Dispersal Grenade",
+    "Tessera Corponation",
+    "Gravimetric Collapse Charge GCC-9",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Auricula Felis Modification",
+    "Aïssé Dragomirescu-Faalelei",
+    "Bintou Halvorsen-Osei",
+    "Brecht Nkosi-Turvanen",
+    "Cem Osei-Petrov",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
+    "Iowan Behemoth — 'Palisade'",
+    "MERIDIAN",
+    "Narrowcast",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA TC-3 'Crucible'",
+    "Tabula",
+    "Tenderloin",
+    "Tessera TK-7 Service Pistol 'Ticker'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Collective",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "VitaCore CardiaWatch Cardiac Rhythm Implant",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant South Asian influence, complemented by Northern European and East Asian ancestry. The genetic blend creates a warm, complex complexion with subtle undertones reflecting the diversity of this global mix.",
+    "height_cm": 168,
+    "weight_kg": 54,
+    "build": "Lean and angular with defined musculature in shoulders and forearms from years of climbing and sustained overhead work. Low body fat, wiry rather than delicate.",
+    "hair_color": "Dark brown with mood-reactive synthetic pigmentation overlay — shifts between deep indigo, copper, and sickly yellow depending on emotional state and geneware glitch frequency",
+    "hair_style": "Dense natural crown worn in loose waves; left side shaved in a graduated pattern with geometric stencil marks (triangles, asymmetric lines) that catch light",
+    "hair_length": "Medium (back), Shaved (left side)",
+    "eye_color": "Dark brown, sharp and constantly mobile",
+    "skin_tone": "Warm medium-deep brown with golden and olive undertones — a nuanced complexion reflecting the interplay of Hispanic/Latin American, South Asian, Northern European, and East Asian heritage. Luminous quality beneath the surface.",
+    "complexion": "Fine-grained skin with minimal scarring except faint linear marks across knuckles and palms from childhood in Hough Reclamation. Prominent but refined cheekbones with subtle South Asian structure, angular jaw with slight Central/South American prominence. Minimal grooming — no makeup, skin kept clean but not pampered. A faint groove between eyebrows from chronic focus. Warm undertones enhance natural radiance despite minimal cosmetic maintenance.",
+    "distinguishing_marks": [
+      "Small E.L.F. sigil tattoo behind left ear in faded black ink — ritualistic prayer mark, touched compulsively during high-work",
+      "Pressure-sensitive callus modifications across fingertips appearing as darker, slightly raised patches — barely visible unless examined closely",
+      "Faint childhood burn scar along inner left wrist (1.5 inches, pale against dark skin)"
+    ],
+    "visible_augmentations": "Mood-reactive hair geneware is the only obvious modification — chromatic shifts in shaved pattern are intentional display. Pressure-sensitive fingertip mods are subcutaneous and invisible. No visible cyberware or chrome.",
+    "posture_movement": "Economical, predatory grace — moves through spaces as if constantly evaluating verticality and exit vectors. Shoulders slightly forward. Hands often at rest but ready. Eyes scan surfaces and perimeters before engaging with people. Climbs with casual confidence, limbs moving independently. Sits with knees bent, ready to move. Speaks quietly; listeners lean in.",
+    "clothing_style": "Tier 4-5 utilitarian: fitted charcoal cargo pants with excessive pockets (paint-stained, reinforced knees), steel-toed climbing boots (Apex brand, worn), oversized black or dark grey hoodie layered over form-fitting athletic tank. Fingerless gloves (often removed). Small pressure-sensitive pack worn cross-body. No corporate branding. Clothes chosen for function over aesthetics — climbing-ready, paint-resistant, dark enough for 03:00 work. Worn but intentionally maintained."
+  },
+  "image_prompt": "Cyberpunk 2226, Arden Guerrero, 168cm lean climber with warm golden-olive deep brown skin reflecting Hispanic/Latin American and South Asian heritage. Dark brown eyes sharp and alert, dense waves of mood-reactive hair shifting indigo-copper-yellow, left side shaved with geometric triangular marks. Angular cheekbones, faint brow furrow, E.L.F. sigil tattoo behind left ear. Wearing oversized charcoal hoodie over black athletic tank, fitted paint-stained cargo pants, worn steel-toed Apex boots, fingerless gloves. Posture economical and predatory—ready to move, shoulders forward, scanning the environment. Small cross-body pressure pack. Standing in neon-lit industrial vertical space at 03:00, cool blue and amber lighting casting shadows across defined forearm musculature and callused fingertips. Geneware shimmer visible in shaved hair pattern. Mood: focused, alert, capable. Cyberpunk utilitarian aesthetic, no corporate chrome, function over flash. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 42.7,
+    "South Asian": 25.1,
+    "Northern European": 18.2,
+    "East Asian": 14.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

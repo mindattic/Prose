@@ -1,0 +1,144 @@
+{
+  "id": "019d6143a71c79cfa40197e01db6c23e",
+  "type": "character",
+  "name": "Viggo Lindström-Zaragoza",
+  "aliases": [
+    "The Wall"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Personal security",
+  "age": 48,
+  "status": "active",
+  "location": "The Spires, near Michigan Ave and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "district": "The Spires",
+  "related_entities": [
+    "Chicago",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Iowan Behemoth — 'Ironclad'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA TC-3 'Crucible'",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "physical_description": {
+    "heritage": "Predominantly Northern European with Hispanic/Latin American and Indigenous American admixture. Genetic expression shows strong Scandinavian baseline with subtle warmth from southern European and indigenous ancestry contributing to undertone complexity.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Athletic and broad-shouldered, muscle definition visible but not excessive; carries weight in chest and forearms from decades of physical work. Frame suggests controlled strength rather than showiness.",
+    "hair_color": "Black with silver threading at temples",
+    "hair_style": "Tight fade, closely clippered on sides with longer texture on crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Fair to medium with warm golden undertones, suggesting mixed Northern European base with Hispanic and Indigenous American ancestry creating subtle olive-amber luminosity beneath surface.",
+    "complexion": "Weathered by sun and stress, minimal facial hair except a neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. High cheekbones with slight fullness suggesting indigenous ancestry. Skin is clear but bears the texture of someone who doesn't prioritize cosmetic treatments. Underlying bone structure reflects Scandinavian ancestry with subtle indigenous facial geometry.",
+    "distinguishing_marks": [
+      "Pale burn scar running from right temple down to jawline, approximately 8cm in length, suggesting old thermal weapon or industrial accident",
+      "Faded tattoo on left forearm: abstract geometric pattern in black ink, approximately 10cm across, style suggests personal rather than commercial design",
+      "Thin white scar bisecting left eyebrow, barely noticeable unless light catches it directly"
+    ],
+    "visible_augmentations": "None visible. Any augmentations are subcutaneous or internal—characteristic of someone who values discretion and maintains a low-profile presence despite their role.",
+    "posture_movement": "Stands with weight balanced evenly, shoulders slightly back. Moves with deliberate efficiency—no wasted motion. Eyes constantly assess surroundings, head turns at controlled intervals. Handshake is firm but not aggressive. Speaks from the chest, voice modulated low.",
+    "clothing_style": "Tier 2-3 professional security aesthetic. Typically wears tailored charcoal or matte-black synthlinen jackets with subtle Φ-laced smart-weave (barely detectable); fitted cargo pants with discrete pockets; reinforced undersuit visible at collar and wrists (ballistic-rated, matte finish). Boots are heavy-soled tactical grade, well-maintained but scuffed from use. Favors brands associated with corpo security (Hexus, Ironclad). No jewelry except a worn digital watch on left wrist with encrypted band."
+  },
+  "image_prompt": "Viggo Lindström-Zaragoza, tall athletic Scandinavian-Latino man with fair warm golden skin and high indigenous cheekbones, short black hair with silver temples, dark brown eyes carrying scars of experience. Pale thermal burn scar from right temple to jawline, trimmed goatee, weathered complexion from decades in field work. Wearing tailored charcoal synthlinen security jacket with smart-weave threading, reinforced undersuit at collar, tactical cargo pants, heavy-soled black boots. Encrypted digital watch on left wrist. Standing in GLMZ neon-lit corporate security corridor, cool blue-purple ambient lighting, shoulders back in controlled alertness, eyes assessing surroundings with constant vigilance. Low-profile corpo security aesthetic, discretion and controlled strength, cyberpunk 2226. Cinematic, professional security operative, moody atmospheric lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 78.3,
+    "Hispanic/Latin American": 18.6,
+    "Indigenous American": 3.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

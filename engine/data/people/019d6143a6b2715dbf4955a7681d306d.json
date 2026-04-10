@@ -1,0 +1,327 @@
+{
+  "id": "019d6143a6b2715dbf4955a7681d306d",
+  "type": "character",
+  "name": "Nneka Diallo",
+  "aliases": [
+    "Old Rod",
+    "Sarge"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars veteran, pension-dependent resident and informal neighborhood watchman",
+  "age": 72,
+  "status": "active",
+  "location": "The Shelf — Block 14, Unit 7, near the Ferrogate Transit overpass, near Ashland and Division",
+  "description": "Rodrigo Seun-Vasarhelyi is a big man who used to be bigger. He carries the memory of his former mass in the way he takes up space — a wide-legged stance, arms that hang a little away from his sides, a way of turning his whole torso instead of just his head that comes from decades of wearing combat plating. His dark brown skin is mapped with synthetic-graft patches along his neck and left arm where the original was burned away in the Menomonee Gulch campaign; the grafts are slightly lighter and have a different texture, which he doesn't bother to hide. His right eye is military-grade steel-grey augmetic, a stark contrast to his warm brown left. He keeps his head shaved and his grey-streaked beard precisely trimmed — two things he can still control.\n\nRodrigo served fourteen years in Arcturus Corporation's private military arm before being discharged when a nerve-suppression injury to his left leg made him operationally unviable. His pension is a Tier 1.5 embarrassment — enough to keep the unit heated, barely. He spends most of his days on the block: watching who comes and goes, intervening in disputes with the particular authority of a man who has seen what disputes can become, and maintaining an informal truce between three rival youth crews that he negotiates with the patience of a man who has nothing left to prove. He doesn't miss combat. He misses the clarity of knowing exactly who he was supposed to protect.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Becoming useless — truly, physically unable to protect anyone",
+      "That the war he fought was entirely without meaning and the kids in his crew are going to repeat it"
+    ],
+    "core_desires": [
+      "To see one generation on this block escape the cycle",
+      "To feel like the years he gave to Arcturus bought something real"
+    ],
+    "coping_mechanisms": [
+      "Routine and physical discipline",
+      "Channeling anxiety into practical action for others",
+      "Deliberate humor about his own limitations"
+    ],
+    "blind_spots": [
+      "Attributes too much of what he survived to personal strength rather than luck",
+      "Has difficulty recognizing when he's intimidating people who need help instead of structure"
+    ],
+    "secret": "During the Menomonee Gulch campaign, he was ordered to clear a civilian shelter that Arcturus command had designated a hostile position. He didn't. He pulled his unit back and filed a falsified report. Seven of his soldiers were court-martialed for the mission failure. He was not — he was the one who wrote the report. Two of those soldiers are dead. One lives two blocks away on The Shelf and has never spoken to him since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct and economical — military habit; uses neighborhood slang with younger residents to signal solidarity, drops it completely when something serious is happening",
+    "cadence": "Slow and even, with significant pauses; raises his voice rarely and to devastating effect",
+    "verbal_tics": [
+      "'Copy that'",
+      "'What's the actual situation here'",
+      "A long exhale before he says something difficult"
+    ],
+    "example_lines": [
+      "'I'm not going to tell you what to do. I'm going to tell you what happens, and then you can decide.'",
+      "'Copy that. Now tell me what you actually need, not what you think I want to hear.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The veteran who lives two blocks away has started talking — specifically to a journalist doing a piece on Arcturus corporate war crimes, and Rodrigo's falsified report is the thread that unravels everything",
+    "One of the youth crew members he's been mentoring has been recruited by a corponation subsidiary, and Rodrigo recognizes the recruitment pipeline for exactly what it is"
+  ],
+  "narrative_function": "Community anchor and low-key quest giver; knows everyone on The Shelf and most of the tensions beneath the surface. Can connect players to Shelf residents, provide military history of the Corporate Wars from the grunt's perspective, or serve as a morally weighted obstacle when the neighborhood's safety conflicts with outside agendas.",
+  "augmentations": "Military-grade right-eye augmetic (Arcturus model, unsupported since discharge — runs on patched firmware); synthetic skin grafts (burn replacement, left arm and neck); nerve-suppression damage in left leg (unaugmented, managed with medication he can't always afford). No geneware.",
+  "daily_life": "Up before dawn to walk the block perimeter — old habit. Morning coffee at the corner vendor with whoever's awake. Afternoons mediating disputes or sitting in on the veterans' mutual aid meetings. Evenings usually involve someone's kid coming to him with a problem they can't take to anyone official.",
+  "affiliation": "Arcturus Corporation (discharged, pension); Meridian Veterans Mutual Aid Society; The Shelf informal community watch",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran",
+      "community protector",
+      "guilt-carrier",
+      "street authority",
+      "pension-dependent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the block first",
+      "Don't involve official channels unless there's no other option",
+      "Take responsibility for outcomes, even bad ones"
+    ],
+    "escalation_ladder": [
+      "Calm direct conversation",
+      "Positioning himself physically between parties",
+      "A single clear warning",
+      "Decisive physical intervention if someone is going to get hurt"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and non-committal — watches before engaging, but not unfriendly once he's decided someone is worth talking to",
+      "friends": "Gruff affection, practical support, shows up without being asked"
+    },
+    "stress_responses": {
+      "low": "Goes quieter, more watchful",
+      "medium": "Becomes very task-focused and directive",
+      "high": "Controlled, cold, and extremely effective — the old professional surfaces"
+    },
+    "contradictions": [
+      "Preaches accountability but has never confessed his biggest failure",
+      "Distrusts corporations absolutely while living off corporate pension bureaucracy"
+    ],
+    "habits": [
+      "Checks all exits when entering a room",
+      "Keeps a small battered photograph of his former unit in his jacket — never looks at it, never throws it away",
+      "Offers food before conversation when someone comes to him with a problem"
+    ],
+    "breaking_points": [
+      "Watching someone be made to feel worthless for asking for help",
+      "Any corponation recruiter operating openly on his block"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded — patched firmware",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Charmer": 0.9,
+    "War Weary": 0.9,
+    "Stoic": 0.9,
+    "Brawler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Hamtramck Enclave",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enlisted in Arcturus PMC",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Menomonee Gulch campaign — the incident with the civilian shelter",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discharged after nerve-suppression injury, Arcturus pension assigned",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moved to The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became de facto mediator for Block 14 disputes",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Helped found Meridian Veterans Mutual Aid Society",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "Street Custom 'Lazarus Wire' Garrote System"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Menomonee Gulch",
+    "TESSERA Widow Mk. III",
+    "SynapTech Clarity Pro Neural Interface",
+    "ARCHIVE",
+    "Cinderblock Ai",
+    "The Shelf",
+    "Arcturus Defense Solutions",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Steel",
+    "Abeke Soriano-Dlamini",
+    "Anatoliy Faye-Nkrumah",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Dragan Asiedu-Kovalchuk",
+    "Dzemal Acholonu-Patagiri",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Lazarus Pharmaceuticals",
+    "MERIDIAN",
+    "Malika Zhukov-Wiredu",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "Osvaldo Mensah-Kovalenko",
+    "Seun Marchetti-Baig",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Lazarus Wire' Garrote System",
+    "TESSERA ES-4 'Perimeter'",
+    "The Belly",
+    "The Underlayer Collective",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (66.1%) with significant Hispanic/Latin American (18.8%) and North African (11.5%) ancestry, with minimal Northern European (3.6%) influence. The result is deep, warm-toned skin with rich melanin saturation and subtle undertones reflecting the West African, Central African, and Maghrebi genetic contributions, with faint warmth from Latin American admixture.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Heavy-framed, formerly muscular, now carrying softness and age in the belly and chest. Still broad across shoulders but with visible loss of mass and definition — the kind of decline that comes from fourteen years of peak conditioning followed by slow atrophy.",
+    "hair_color": "Black with grey at temples and throughout",
+    "hair_style": "Shaved head maintained with precision",
+    "hair_length": "Shaved",
+    "eye_color": "Right eye: military-grade steel-grey augmetic (unflinching, constant luminescence). Left eye: warm brown, naturally aged with crow's feet.",
+    "skin_tone": "Deep warm brown with rich golden-brown undertones from Sub-Saharan and North African heritage, displaying uneven texture — natural dark brown skin contrasted by lighter synthetic-graft patches that interrupt the natural warmth of his complexion.",
+    "complexion": "Heavily lined face with a well-maintained grey beard trimmed close, reflecting age and weathering. Scars visible at the jawline and temple. Synthetic-graft skin on left arm and neck is noticeably smoother and slightly paler than surrounding natural skin (lacking the warm undertones of his natural melanin), with a faint seam-texture visible under direct light. No attempts at cosmetic concealment.",
+    "distinguishing_marks": [
+      "Extensive burn-scar tissue on left arm from wrist to shoulder, replaced with synthetic grafts that are slightly discolored and have different tactile texture",
+      "Synthetic-graft coverage on left side of neck extending from collarbone to jawline, visible as a paler band with subtle seaming",
+      "Deep linear scar along right temple, partially obscured by head shape",
+      "Faded Arcturus corporate tattoo (stylized A in geometric form) on inner right forearm, worn and slightly faded",
+      "Burn marks and scar tissue visible where synthetic grafts meet natural skin, creating visible borderlines"
+    ],
+    "visible_augmentations": "Right eye is unmistakably prosthetic — a steel-grey military-grade optic with faint red circuitry visible at the iris. It does not move in sync with his left eye and emits a faint subsonic hum when scanning. Extensive synthetic-graft patches on left arm and neck are visible as slightly discolored, texturally distinct skin replacements. Walks with a slight leftward lean and favors his right side — evidence of nerve damage in left leg.",
+    "posture_movement": "Wide-legged stance even when standing still. Turns his entire torso rather than just his head — old habit from combat plating. Movements are measured and deliberate, economical. Left leg has a subtle drag at the end of his stride. Sits with his back against walls. Eyes (particularly the augmetic) scan environments methodically. Handshakes are firm but controlled.",
+    "clothing_style": "Tier 3 utilitarian. Well-worn Arcturus Corporation legacy jacket (charcoal synth-leather, faded patches, visible Φ550 price tag from a decade ago still sewn inside). Plain grey thermal underlayer, dark cargo pants with functional pockets and reinforced seams. Boots are military surplus, maintained meticulously. No jewelry. A faded cloth veteran's badge pinned to jacket collar. Clothes are clean and functional but show age — not poor, but not well-maintained by choice. The precision of his grooming contrasts sharply with the wear of his clothing."
+  },
+  "image_prompt": "Nneka Diallo, 188cm tall, deep warm brown skin with golden undertones, shaved head showing grey at temples. Heavily lined face with close-trimmed grey beard. Right eye is steel-grey military augmetic with red circuitry, left eye warm brown. Left arm and neck show pale synthetic-graft patches with visible seaming contrasting against his natural rich brown skin. Scars at jawline and temple. Wearing faded charcoal Arcturus Corporation synth-leather jacket over grey thermal, dark cargo pants, military surplus boots. Veteran's badge on collar. Wide-legged stance, turned toward camera with methodical gaze. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody neon-lit interior, cool blue and amber lighting catching the texture of synthetic grafts against natural skin. Film noir atmosphere, gritty and worn but dignified. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 66.1,
+    "Hispanic/Latin American": 18.8,
+    "North African": 11.5,
+    "Northern European": 3.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

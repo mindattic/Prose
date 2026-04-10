@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a6997633a26cb75d4f8710d2",
+  "type": "character",
+  "name": "Haze Bergqvist",
+  "aliases": [
+    "Pete",
+    "Stonefist Pete"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "age": 52,
+  "status": "active",
+  "location": "The Rampart, GLMZ, near Kedzie and Division",
+  "description": "Petros Waweru-Gjakova is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "that he has spent thirty years making things worse and calling it order",
+      "dying before he's done something that balances the account"
+    ],
+    "core_desires": [
+      "a single deployment where nothing happens because the underlying conditions were addressed",
+      "to be asked his actual opinion by someone with authority to act on it"
+    ],
+    "coping_mechanisms": [
+      "chess — the combination of rules, strategy, and graceful losing",
+      "treating younger unit members as a restoration project for things he couldn't protect before"
+    ],
+    "blind_spots": [
+      "has enormous compassion for the people he suppresses and has never quite connected that to the structural critique it implies",
+      "underestimates how much authority he actually has to do things differently"
+    ],
+    "secret": "During the Hough Reclamation protests of 2193, he received a dispersal order for a crowd that included a significant number of people he knew from the community hall. He deployed at minimum possible force and filed a report indicating full compliance. Command has never reviewed the footage closely. He has reviewed it six hundred times."
+  },
+  "speech_patterns": {
+    "vocabulary": "Slow, working-class Meridian with occasional Swahili phrases he uses as emotional punctuation; uses military-inflected vocabulary from habit but has been shedding it deliberately",
+    "cadence": "Measured and heavy, like someone choosing each word by weight — not slow-witted, but conscious",
+    "verbal_tics": [
+      "Long exhale before difficult statements",
+      "'Ndio, lakini—' (Yes, but—) when he disagrees and is trying to be respectful about it"
+    ],
+    "example_lines": [
+      "'I've been doing this for thirty years. You know what I've learned? That a crowd that's dispersed without being heard comes back. Usually bigger.'",
+      "'I'm not going to tell you what to do. I'm going to tell you what I've seen happen when people do the thing you're thinking about doing. Then you decide.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's being ordered to suppress a demonstration that his community hall contacts tell him is peaceful and legitimate — he's looking for intelligence that would justify refusing the order on procedural grounds",
+    "A junior officer under his command has filed an excessive force report against a peer; Petros is the unofficial pressure point on whether the report goes anywhere",
+    "He has been approached by someone claiming to be a civilian oversight researcher who wants the Hough deployment footage — and he's not sure if they're legitimate or if Command sent them to find out what he filed"
+  ],
+  "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about GLMZ's protest and civil unrest history; potential ally for people working against institutional violence",
+  "augmentations": "Military-grade joint reinforcement (knees and shoulders — medical necessity after a crowd crush incident in 2187); impact-dampening subdermal mesh across torso (department-issue for riot specialists); no cosmetic mods",
+  "daily_life": "Runs unit readiness training at the Rampart most mornings; attends interdepartmental deployment briefings he finds increasingly political; spends evenings at a community hall in Hough Reclamation, playing chess badly with neighborhood elders who knew the area before the last reclamation push.",
+  "affiliation": "GLMZ Metro Police — Civil Response Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran",
+      "reluctant enforcer",
+      "community-rooted",
+      "institutional critic from inside",
+      "moral heavyweight"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never deploy at force level higher than the situation requires, regardless of what command considers standard",
+      "Protect his unit's safety first, and if those two rules conflict, find a third option",
+      "Never give an order he wouldn't explain publicly"
+    ],
+    "escalation_ladder": [
+      "Visible presence with deliberate de-escalatory positioning",
+      "Verbal engagement — seeks dialogue with crowd representatives",
+      "Controlled barrier establishment, minimum footprint",
+      "Deployment of suppression tools as last resort, minimum effective force, always documented"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Careful, slightly formal, gives people the dignity of his full attention from the first moment",
+      "friends": "Deeply warm, dry humor, shows care through small consistent actions rather than words"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, moves to higher ground if possible to read the full environment",
+      "medium": "Takes exactly three seconds to think before any decision, a habit so ingrained it looks like a reflex",
+      "high": "Becomes completely calm in a way that unsettles people — acts with total deliberateness, no visible emotion, decompresses alone afterward"
+    },
+    "contradictions": [
+      "Executes riot suppression deployment while privately opposing the conditions that produce riots",
+      "Commands with authority while systematically undermining the kind of authority he finds unjust"
+    ],
+    "habits": [
+      "Visits the Crowd shrine before every deployment with an unlabeled data chip he's been adding to for years",
+      "Makes very bad chess moves on purpose when playing with elderly neighbors who need the wins"
+    ],
+    "breaking_points": [
+      "A direct order to deploy maximum force on a crowd he knows is unarmed",
+      "One of his junior officers being used as a political instrument by command"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  ],
+  "related_entities": [
+    "The Rampart",
+    "GLMZ",
+    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
+    "Stratum",
+    "The Pure Hand",
+    "Hough Reclamation",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Arcturus LS-5 'Sentinel'",
+    "Arcturus NX-1 'Sandman'",
+    "Bogdan Achebe-Svanstrom",
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Neuromorphic Pressure Cestus",
+    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA TC-3 'Crucible'",
+    "The Reclamation Assembly",
+    "The Whispering Implant",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American (60.5%) with secondary ancestry from Northern Europe (10.5%), Southeast Asia (10.1%), South Asia (9.5%), East Asia (6.0%), and Sub-Saharan African (3.4%) — a complex phenotype reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm brown skin with olive and golden undertones characteristic of Latin American ancestry, subtly enriched by the darker pigmentation from Southeast and South Asian heritage.",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Heavy, barrel-chested with the dense musculature of someone who has spent thirty years bearing weight — not bodybuilder definition, but functional mass. Shoulders and neck thickened by reinforced joint infrastructure. Carries weight forward slightly, a stance that distributes load across reinforced knees.",
+    "hair_color": "Steel grey with dark undertones",
+    "hair_style": "Short, military-standard cut, neat without vanity",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly yellowed at the sclera from age and chemical exposure",
+    "skin_tone": "Warm medium-to-deep brown with olive undertones and golden highlights from Latin American and Southeast Asian ancestry, mottled and weathered by accumulated scar tissue and subcutaneous impact mesh, creating an uneven, lived-in appearance that shifts in intensity across his face and body.",
+    "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with the bone structure influenced by his mixed heritage. Skin textured and rough, bearing the tactile history of three decades of deployment. Cheekbones with definition from Southeast Asian ancestry, softened by age and the weight he carries. No artificial smoothing or cosmetic intervention.",
+    "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen — a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
+    "posture_movement": "Moves with deliberate, economical weight distribution — a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion — eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
+    "clothing_style": "Standard GLMZ Metro Police tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion.",
+    "distinguishing_marks": [
+      "Ragged scar bisecting his left eyebrow, interrupting the brow line — pale tissue from a crowd-control baton strike circa 2195",
+      "Network of crisscrossing pale scars across both forearms, visible from wrist to elbow, with darker impact-pattern marks from riot shield contact",
+      "Long horizontal scar across left collarbone, thick and ropey, from a crush incident in 2187 — the same incident that necessitated joint reinforcement",
+      "Scattered smaller circular burn marks across inner left forearm — chemical exposure, riot dispersal residue"
+    ]
+  },
+  "image_prompt": "Haze Bergqvist, 188cm tall weathered Metro Police officer in off-duty charcoal tactical fatigues and worn leather jacket, 2226 cyberpunk setting. Warm deep brown skin with olive undertones, scarred forearms, prominent scar bisecting left eyebrow, steel grey military-short hair, dark yellowed eyes. Heavy muscular build, forward-leaning posture of controlled readiness, minimal gestures, exhausted resting expression. Mechanical chronometer visible, thin steel wedding band, no cosmetic augmentation. Standing in dim neon-lit GLMZ urban environment, rain-slicked streets, subtle subdermal impact mesh visible under tight fabric at chest, movement economical and precise. Mood: weary veteran, functional rather than polished, three decades of deployment bearing on shoulders. Cinematic cyberpunk lighting, volumetric fog, dystopian metropolitan backdrop. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 60.5,
+    "Northern European": 10.5,
+    "Southeast Asian": 10.1,
+    "South Asian": 9.5,
+    "East Asian": 6.0,
+    "Sub-Saharan African": 3.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

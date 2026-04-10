@@ -1,0 +1,327 @@
+{
+  "id": "019d6143a5e876b588688ff488f9d86c",
+  "type": "character",
+  "name": "Frost Tetteh",
+  "aliases": [
+    "Zephyr",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Cross-district contraband specialist — smuggler",
+  "age": 37,
+  "status": "active",
+  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
+  "description": "Daulet Novak-Tetteh is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Daulet Novak-Tetteh describe him as a precision instrument — point him at a problem and get out of the way.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.22,
+      "ideal": 0.48,
+      "id": 0.11,
+      "shadow": 0.1,
+      "mask": 0.96,
+      "ghost": 0.21
+    },
+    "core_fears": [
+      "Betrayal by someone they trust — the only currency that matters",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Being replaced — younger, faster, cheaper runners coming up behind them"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To find the person who burned them and make it educational",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Daulet Novak-Tetteh has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Daulet Novak-Tetteh once infiltrated is being reopened, and the people inside know his face",
+    "A former associate resurfaces with evidence that could destroy Daulet Novak-Tetteh's reputation — and a price for silence",
+    "Someone is impersonating Daulet Novak-Tetteh on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Daulet Novak-Tetteh is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.64,
+      "caution": 0.64,
+      "loyalty": 0.51,
+      "greed": 0.34,
+      "empathy": 0.1
+    },
+    "drives": [
+      "survival",
+      "freedom",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 4,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "social chameleon — adapts to any environment",
+      "multilingual — speaks 4+ languages fluently"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "old injury that flares under specific conditions",
+      "overconfidence in specialty areas leading to blind spots"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "smuggler",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    },
+    {
+      "name": "Enhanced tendons",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Loaded Pipe 'Bell Ringer'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "GLMZ",
+    "Slagworks Industrial",
+    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
+    "Breck Tannen",
+    "Crucible RE-2 'Receptionist'",
+    "Ilhan Sandstrom-Badu",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Mika Sorel",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Street-Custom Loaded Pipe 'Bell Ringer'",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Fathom Line",
+    "The Pure Hand"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Sub-Saharan African dominant (68.7%) with significant Southeast Asian (14.0%), Middle Eastern (11.3%), and East Asian (6.0%) ancestry. The genetic blend produces rich, complex phenotype: deep Sub-Saharan African bone structure and coloration as foundation, with Southeast Asian and Middle Eastern features softening and refining the angles, East Asian elements contributing subtle eye shape nuance.",
+    "height_cm": 174,
+    "weight_kg": 78,
+    "build": "Lean and economical — muscle definition visible in forearms and shoulders from years of precise, controlled work. No excess mass. Moves like someone who has learned to inhabit minimal space.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, blunt cut — functional. Kept neat. No vanity, pure maintenance.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Rich warm brown with subtle golden undertones from Sub-Saharan African heritage, warmed further by Southeast Asian and Middle Eastern ancestry blend. Sun-darkened from waterfront exposure, creating depth in coloration.",
+    "complexion": "Clean-shaven, angular face with strong, high cheekbones characteristic of Sub-Saharan African ancestry, refined by Southeast Asian and Middle Eastern features into elegant proportions. Weathered around the eyes from six years of squinting at contracts and horizon. Skin shows minor sun damage and one thin scar through left eyebrow (pale, old). Expression deliberately neutral — a mask worn so long it's become the face.",
+    "eye_color_note": "Natural deep brown with subtle warmth from ancestral blend",
+    "distinguishing_marks": [
+      "Thin horizontal scar through left eyebrow, approximately 3cm, pale and well-healed",
+      "Burn scar on right forearm, size of a thumbprint, dark and slightly raised — chemical burn from early cargo mishap",
+      "Faint tattoo on left wrist: a single vertical line with three horizontal marks crossing it — personal code, meaning unknown to outsiders"
+    ],
+    "visible_augmentations": "Cyberears: polished titanium and black polymer construction replacing biological ears, with visible directional microphone arrays and silver accent tuning ports. No attempt to hide them — they're part of his professional toolkit. Enhanced tendons visible as faint seams of darker skin and subtle musculature definition in forearms and calves, particularly around the Achilles tendons — geneware upgrade markers subtle but present to those who know where to look.",
+    "posture_movement": "Stands with weight balanced, never fully committed to one leg. Moves with economical precision — no wasted motion. Hands stay visible and controlled when speaking to others. Head movements precise and deliberate, often angling to use directional microphone pickup. The way he occupies space suggests someone constantly measuring distances and angles.",
+    "clothing_style": "Tier 4 practical: dark, neutral colors — charcoal, black, deep gray. Reinforced cargo pants with multiple sealed pockets (for secure storage of contracts and dataflakes). Matte black synth-leather jacket, worn but well-maintained, fitted close to the body. No logos or corporate affiliations visible. Subdermal armor plating under left shoulder, detectable only as subtle rigidity under fabric. Nondescript mid-tier boots with reinforced soles for dock work. Everything is functional, everything communicates: 'I know what I'm doing and I don't need to tell you about it.'"
+  },
+  "image_prompt": "Frost Tetteh, cyberpunk 2226, portrait of a lean 174cm tall man with rich warm golden-brown skin reflecting Sub-Saharan African and Southeast Asian heritage. Deep brown natural eyes, clean-shaven angular face with strong high cheekbones, weathered expression. Short dark brown hair graying at temples. Polished titanium and black polymer cyberears with visible directional microphone arrays and silver tuning ports. Thin pale scar through left eyebrow, dark chemical burn scar on right forearm. Dark charcoal and black clothing: matte black synth-leather jacket fitted to body, reinforced cargo pants, nondescript boots. Faint tattoo on left wrist (vertical line with three horizontal marks). Economical posture, balanced stance, hands visible and controlled. Hands visible and controlled. Great Lakes Metropolitan dock setting, rain-slicked concrete, cool blue-gray lighting with warm amber streetlight accent, cinematic noir cyberpunk atmosphere, professional and measured, no wasted motion --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 68.7,
+    "Southeast Asian": 14.0,
+    "Middle Eastern": 11.3,
+    "East Asian": 6.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

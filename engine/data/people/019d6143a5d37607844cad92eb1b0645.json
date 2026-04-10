@@ -1,0 +1,144 @@
+{
+  "id": "019d6143a5d37607844cad92eb1b0645",
+  "type": "character",
+  "name": "Luca Hinojosa-Mbekele",
+  "aliases": [
+    "Clockwork"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Fixer - Precision ops only",
+  "age": 35,
+  "status": "active",
+  "location": "The Circuit, near Armitage and Milwaukee",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Milwaukee Core",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Nodar Kuznetsov-Adu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "The Heritage Vault"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly South Asian with significant Sub-Saharan African, Hispanic/Latin American, and Indigenous American ancestry—a striking blend evident in warm brown skin with golden undertones, sharp facial structure suggesting South Asian and Indigenous heritage, and the warm depth from African ancestry. The combination creates distinctive high cheekbones and a defined jawline with subtle warmth across the face.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and angular with corded muscle density — built for precision work rather than raw strength. Shoulders slightly narrower than hips, creating an understated silhouette.",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Cropped close on sides, slightly longer on top — styled back with subtle texture. Low maintenance, high function.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones—the result of South Asian base ancestry blended with Sub-Saharan African warmth and Latin American richness, creating complex depth across face and body",
+    "complexion": "Sharp cheekbones and defined jawline reflecting South Asian and Indigenous American structure, enhanced by African ancestry warmth. Skin is clear and well-maintained but not pampered — the complexion of someone who prioritizes function over aesthetics. Minimal facial hair. Subtle golden luminosity across cheekbones and bridge of nose.",
+    "distinguishing_marks": [
+      "Thin surgical scar along the left temple, barely visible unless light hits it directly",
+      "Small burn mark on the inner right wrist — roughly 2cm diameter, old and faded silver",
+      "Faint tattoo on the back of the neck: geometric circuit pattern in matte black, barely visible under their typical collar line"
+    ],
+    "visible_augmentations": "None visible. Operates on the assumption that visible chrome signals desperation or ego.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed evenly, shoulders relaxed. Eyes constantly scanning. Handshakes are firm but brief. Speech is measured; they listen more than they talk.",
+    "clothing_style": "Tier 3-4 practical wear. Prefers neutral colors: charcoal, black, muted gray. Typical outfit: reinforced cargo pants with multiple hidden pockets, fitted synthweave turtleneck or unmarked tech jacket. Worn-in leather boots with non-slip soles. Minimal branding. A single piece of jewelry — a thin braided bracelet in matte gunmetal, possibly containing subcutaneous tech interface. Dressing room aesthetic: function first, invisibility second."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Luca Hinojosa-Mbekele, 172cm tall with lean angular build. Warm deep brown skin with golden undertones, sharp cheekbones and defined jawline. Black hair cropped close on sides, longer textured on top, styled back. Alert dark brown eyes with calculating gaze. Thin surgical scar along left temple. Faint geometric circuit tattoo on back of neck. Wears charcoal synthweave turtleneck and reinforced cargo pants, worn leather boots. Matte gunmetal braided bracelet. Standing with economical posture, weight distributed evenly, eyes scanning. Cool neon-lit Great Lakes Metropolitan Zone setting, subtle overhead lighting catching the scar and golden skin tones. Minimal visible augmentation aesthetic. Professional infiltrator aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 44.7,
+    "Sub-Saharan African": 25.1,
+    "Hispanic/Latin American": 21.6,
+    "Indigenous American": 8.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

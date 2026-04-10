@@ -1,0 +1,111 @@
+{
+  "id": "2b8d638aedc627fcf9aaf8f021079ccc",
+  "name": "Zephyr Olofsson-Sesay",
+  "type": "character",
+  "aliases": [
+    "Byline",
+    "The Reporter"
+  ],
+  "role": "Private Investigator",
+  "description": "Folake Borg-Darko used to be the name that corporations feared seeing in a byline. For fifteen years she was an investigative journalist of extraordinary tenacity, breaking stories about corporate malfeasance, environmental crimes, and systemic exploitation that earned her industry recognition and corporate enemies in equal measure. Then she went after Zheng-Dao's pharmaceutical division, and Zheng-Dao went after her.\n\nThe details are public record: a coordinated defamation campaign that discredited her sources, questioned her methods, and ultimately got her blacklisted from every major media outlet in GLMZ. The story was true. The sources were real. None of that mattered once the corporate legal machinery engaged. She lost her career, her credibility in mainstream media, and two years of her life fighting legal battles she couldn't afford.\n\nShe survived by becoming a private investigator, applying the same skills to individual cases instead of public stories. She is arguably more effective now than she was as a journalist because she's no longer constrained by editorial oversight, publication schedules, or the pretense of objectivity. Her investigations are thorough to the point of obsession, her source protection is absolute, and her case reports are so detailed and well-constructed that they've been accepted as evidence in corporate arbitration without additional verification. She is still a journalist at heart, and every case is a story she's reporting — just for an audience of one.",
+  "affiliation": "Independent — still maintains journalism contacts despite being blacklisted from every major outlet",
+  "tier": "Tier 2",
+  "location": "A cramped space in the Rookery that serves as office, archive, and occasionally bedroom — walls covered with printed articles and investigation boards, near Western and Division",
+  "specialization": "Investigative journalism methods applied to private investigation — deep research, source cultivation, and narrative reconstruction",
+  "methods": [
+    "Conducting extensive background research using public records, archived news, and corporate filings",
+    "Cultivating deep-cover sources inside organizations through journalistic trust-building techniques",
+    "Narrative reconstruction — building the complete story of events from fragmentary evidence",
+    "Using freedom-of-information requests and public records analysis",
+    "Publishing or threatening to publish findings as leverage — the pen as weapon"
+  ],
+  "notable_cases": [
+    "Exposed a Tier 3 landlord who was systematically poisoning tenants with contaminated water to drive them out and sell the buildings — the story she couldn't publish as a journalist became the case that made her reputation as a PI",
+    "Proved that a 'natural disaster' in the Lattice was actually caused by deliberate infrastructure sabotage by a development company — forced a settlement without ever filing a legal case",
+    "Tracked the ownership chain of a Shelf-level clinic through twelve shell companies to its real owner — a Tier 5 executive who was using it for unauthorized medical experiments"
+  ],
+  "equipment": [
+    "Extensive archive of news articles, corporate filings, and public records spanning twenty years",
+    "Secure communications system for source protection — journalist-grade encryption",
+    "A reputation for keeping sources confidential that is her most valuable professional asset",
+    "Recording equipment — visible, because she's learned that people say more when they know they're being recorded than when they think they might be",
+    "A published portfolio of investigative work that serves as both credential and implicit threat"
+  ],
+  "personality": "Folake is Nigerian-Swedish-Ghanaian, fifty years old, with deep brown skin, close-cut natural hair going gray at the temples, and eyes that are simultaneously kind and scrutinizing. She was one of the best investigative journalists in GLMZ until she published a story that was true, devastating, and aimed at the wrong corporation. The subsequent defamation campaign destroyed her career. She pivoted to private investigation because the skills are identical — find the truth, prove it, present it — but the audience is a paying client instead of the public. She misses journalism with an ache that never fades. She still writes, obsessively, and every case report reads like an article waiting for an editor.",
+  "relationships": [
+    {
+      "name": "Editor Vuk Aguilar-Danquah",
+      "type": "former mentor",
+      "description": "The editor who published her Zheng-Dao story and lost his job for it — they haven't spoken in five years because the guilt is mutual"
+    },
+    {
+      "name": "Hadiya Novak-Tetteh",
+      "type": "information trading partner",
+      "description": "Folake trades research skills for Hadiya's network access — a mutually beneficial relationship built on professional respect"
+    }
+  ],
+  "story_hooks": [
+    "The Zheng-Dao story that destroyed her career turns out to have been bigger than she knew — new evidence emerges suggesting the pharmaceutical crimes were part of something much larger, and she has to decide whether to reopen the investigation that nearly destroyed her",
+    "A source from her journalism days contacts her with information about a new story — but publishing it would require her to return to a world that expelled her",
+    "Someone is systematically discrediting other journalists using the same playbook that was used against her — she recognizes the pattern and can stop it, but only by making herself a target again"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "journalist",
+    "rookery",
+    "research",
+    "anti_corporate",
+    "sentient"
+  ],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
+    "Kang-Petrov Arms KPS-3M 'Mongrel'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
+    "Kang-Petrov Arms KPS-3M 'Mongrel'"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "Zheng-dao Bioelectric",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "ARCHIVE",
+    "Déjà Vu",
+    "Kang-Petrov Arms KPS-3M 'Mongrel'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Street Custom 'Cigarette' Pen Gun",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed heritage reflecting Sub-Saharan African (38.8%), Northern European (35.6%), East Asian (13.1%), and Hispanic/Latin American (12.5%) ancestry. This creates a distinctive phenotype: medium-warm brown skin with subtle golden undertones from the African and Latin American ancestry, balanced by the cooler Nordic pallor from Northern European genetics. East Asian ancestry contributes to slightly higher cheekbones and a refined facial structure. The overall effect is someone whose features don't clearly signal a single geographic origin — a true product of the Ubiquitous Diaspora.",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Lean and angular, all economical muscle with minimal body fat — the physique of someone who runs on coffee and obsession rather than gym discipline. Shoulders slightly hunched from years bent over research terminals.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back in a loose, practical braid or knot; often escaping strands that she doesn't bother retucking",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Brown with amber undertones",
+    "skin_tone": "Medium warm brown with golden undertones — the complexion of someone who spends more time indoors under screens than in natural light. The warmth comes from African and Latin American ancestry, tempered by Northern European genetics creating a subtle richness rather than deep saturation.",
+    "complexion": "Sharp cheekbones and refined jawline with subtle East Asian influence; perpetually tired creases under the eyes; minimal makeup, weathered expression that reads as focused intensity rather than hostility. Skin has the slightly sallow quality of someone who forgets to eat during investigations. The interplay of warm and cool undertones creates a complex, layered appearance.",
+    "distinguishing_marks": [
+      "A thin scar along the left temple, approximately 4cm, from a thrown drink glass during a Zheng-Dao intimidation encounter in 2223",
+      "Faded burn mark on the inside of the right wrist (roughly 2cm diameter) from an old apartment fire in Tier 5 housing, pre-corporate career",
+      "A small dark birthmark below the left collarbone",
+      "Calluses on the fingertips and sides of her hands from decades of typing and handling physical documents"
+    ],
+    "visible_augmentations": "None visible. All augmentations are subcutaneous or internal — she's deliberately avoided chrome visibility that might telegraph her PI work.",
+    "posture_movement": "Moves with economical precision; sits hunched forward when concentrating; has a habit of tapping fingers rhythmically on surfaces while thinking. Walks with purpose, always looking slightly distracted — processing multiple threads of information simultaneously. Direct eye contact, rarely smiles, maintains minimal physical distance comfort zone.",
+    "clothing_style": "Tier 3 working professional aesthetic: well-worn synthetic-leather jacket over layered shirts, practical dark pants with reinforced pockets for recording devices and notepads, steel-toed boots scuffed from years of field work. Favors muted colors (grays, blacks, dark browns) and function over fashion. No visible jewelry or corporate branding. Jacket has coffee stains and the faint smell of cigarette smoke from interviews. Everything is utilitarian and replaceable — nothing so valuable it would make her a target if seized by corporate security."
+  },
+  "image_prompt": "Zephyr Olofsson-Sesay, mixed-heritage private investigator in cyberpunk 2226 GLMZ, medium-warm brown skin with golden undertones, dark brown hair with silver at temples pulled into practical braid, sharp cheekbones and refined jawline, perpetually tired amber-brown eyes, lean angular build 172cm, weathered focused expression. Wearing scuffed synthetic-leather jacket over layered dark shirts, reinforced dark pants, steel-toed boots. Thin scar visible on left temple. Hunched posture over research terminal, tapping fingers on desk, surrounded by holographic data streams and physical case files, dim neon-filtered office lighting casting blue and amber shadows, tired intensity, professional paranoia, cyberpunk noir atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 38.8,
+    "Northern European": 35.6,
+    "East Asian": 13.1,
+    "Hispanic/Latin American": 12.5
+  },
+  "ancestry_harmonized": true
+}

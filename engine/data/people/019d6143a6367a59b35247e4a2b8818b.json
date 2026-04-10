@@ -1,0 +1,148 @@
+{
+  "id": "019d6143a6367a59b35247e4a2b8818b",
+  "type": "character",
+  "name": "Kit Olofsson-Björnsdóttir",
+  "aliases": [
+    "Compass"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Newcomer guide",
+  "age": 30,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Chicago",
+    "Compass Rose",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European (64%) with significant East Asian (20.6%) and Sub-Saharan African (15.4%) ancestry. The combination manifests in her warm, honey-toned complexion—neither pale nor deep, but luminous with golden undertones. Her facial structure shows the broader cheekbones and straighter nose of her Northern European majority, softened by the refined bone structure of her East Asian heritage, with the warmth and fullness in her lips and eyes reflecting her Sub-Saharan African ancestry.",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and angular, with defined shoulders and wiry forearms — built for mobility rather than strength. Suggests someone who moves frequently through tight spaces.",
+    "hair_color": "Deep brown with natural copper undertones",
+    "hair_style": "Pulled back in a practical crown braid, occasionally loose",
+    "hair_length": "Long (below shoulders when unbraided)",
+    "eye_color": "Dark brown with subtle amber flecks",
+    "skin_tone": "Honey-warm mid-tone complexion with golden undertones—the luminous result of mixed Northern European, East Asian, and African ancestry blending into a unified warmth rather than distinct zones",
+    "complexion": "Clear skin with fine laugh lines around her eyes. Minimal makeup — usually just brow definition and a lip stain. A small scar runs through her left eyebrow (old break, never quite healed straight). Her face shows the broader cheekbones typical of her Northern European heritage, refined by East Asian bone structure, with generous lips reflecting her full African ancestry.",
+    "distinguishing_marks": [
+      "Three-line scarification on her right temple, faint but deliberate, likely cultural or ceremonial",
+      "Thin, pale burn scar along her left inner wrist, circa 2cm long — likely accidental or from early chrome work",
+      "A small tattoo of a compass rose on her collarbone, barely visible unless she wears open-neck clothing"
+    ],
+    "visible_augmentations": "None visible. All augmentations are subcutaneous or internal.",
+    "posture_movement": "Upright, alert. She moves with economical grace — no wasted motion. Eyes constantly assess spaces and people. Hands gesture expressively when speaking, especially when explaining routes or deals. Leans in when listening, creating false intimacy to build trust.",
+    "clothing_style": "Tier 3-4 working professional. Favors practical layering: fitted black turtlenecks, worn charcoal cargo vests with multiple pockets, reinforced denim in dark indigo. Boots are always clean but scuffed — good-quality polymer composite, not chrome. A faded denim jacket with hand-stitched patches (different neighborhoods she's guided people through) is her signature piece. Wears a slim Φ-chip reader watch on her right wrist and a thin silver chain with a small key fob (contents unknown) around her neck."
+  },
+  "image_prompt": "Kit Olofsson-Björnsdóttir, woman with honey-warm complexion and golden undertones, mixed Northern European-East Asian-African heritage. Dark brown hair with copper highlights, pulled back in practical crown braid. Dark brown eyes with amber flecks. Fine laugh lines, clear skin, small scar through left eyebrow. Faint three-line scarification on right temple. 172cm tall, lean angular build. Wearing fitted black turtleneck, worn charcoal cargo vest with multiple pockets, dark indigo reinforced denim, scuffed polymer composite boots. Signature faded denim jacket with hand-stitched neighborhood patches. Φ-chip reader watch on right wrist, thin silver chain with key fob. Alert posture, economical movements. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit corridor or rooftop urban environment, cool blue and amber lighting, atmospheric haze. Professional fixer mood, confident and calculating. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 64.0,
+    "East Asian": 20.6,
+    "Sub-Saharan African": 15.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

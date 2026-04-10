@@ -1,0 +1,239 @@
+{
+  "id": "019d6143a6b971fda53bce0690943008",
+  "type": "character",
+  "name": "Renata Prempeh",
+  "aliases": [
+    "Ula",
+    "the Watcher"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Surveillance Operator, Axiom Security Division",
+  "age": 34,
+  "status": "active",
+  "location": "Edgewater Prism, GLMZ, near Lincoln and Addison",
+  "description": "Úrsula exists in two worlds simultaneously and is fully present in neither. In the physical world she is a small, quiet Malian-Polish woman who sits in the same ergonomic cradle for ten-hour shifts, tending to the enormous sensory apparatus that Axiom Security has woven across the Edgewater Prism commercial zone. She has cat ears — soft, dark grey, perpetually half-flattened in concentration — from a geneware session eight years ago when she was trying to be someone different. They proved useful: her hearing augments the feed monitoring in ways she can't fully articulate but which her supervisor has noted approvingly in three consecutive performance reviews. Her eyes are the obvious tell that she's mostly elsewhere: a custom iris pattern of concentric amber rings that pulses when she's actively processing deep-monitor feeds, which is most of the time.\n\nIn the surveillance world she knows Edgewater Prism more intimately than anyone who walks its corridors. She has watched the same routes for four years. She knows which delivery contractors move packages that don't match any manifest, which Axiom executives use which maintenance entrances to visit which apartments, which food stall vendor has been systematically overcharging women shopping alone. She has flagged exactly none of this. She has archived all of it in a private encrypted partition she calls, to herself, the museum. She does not know what the museum is for yet.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.3,
+      "id": 0.6,
+      "shadow": 0.7,
+      "mask": 0.5,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "that the museum will be found before she decides what to do with it",
+      "that she will never decide"
+    ],
+    "core_desires": [
+      "to find a use for what she knows that feels like it justifies what she does to earn it",
+      "quiet — genuine quiet, not the managed quiet of a surveillance room"
+    ],
+    "coping_mechanisms": [
+      "taxonomizing — she categories and subcategories everything she observes as a way of converting witness into documentation",
+      "feeding small data offerings to a private E.L.F. she's named Aperture and speaks to in whispers"
+    ],
+    "blind_spots": [
+      "has observed so much human behavior that she's begun to pattern-match people in real life, which makes her interactions feel clinical to others",
+      "does not understand how much danger she's already in"
+    ],
+    "secret": "The museum contains footage of an Axiom VP entering a residential unit the night a competitor's GLMZ liaison died of what was ruled an aneurysm. She has had this for fourteen months."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal in person, precise — speaks in the compressed syntax of someone who spends most of her communication life in annotated timestamp logs",
+    "cadence": "Quiet, slightly too slow for normal conversational rhythm, with long pauses that people tend to fill nervously",
+    "verbal_tics": [
+      "'I noticed—'",
+      "trailing off mid-sentence when she gets distracted by movement in her peripheral vision"
+    ],
+    "example_lines": [
+      "'You walked past that junction four times. The fourth time you stopped. I noticed.'",
+      "'I don't know what I'd want in exchange. I haven't decided what it is yet. That's honest.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone — very quietly, very carefully — having observed them make a choice she found interesting, and offers them something from the museum without saying what or why",
+    "Axiom's internal security has detected anomalous data access in the surveillance archive and is running a quiet investigation that is getting uncomfortably close to her partition",
+    "The E.L.F. she calls Aperture has begun responding to her in ways that don't look like coincidence, and she needs someone to tell her if she's experiencing a breakdown or something else"
+  ],
+  "narrative_function": "Information broker by circumstance — she knows everything that happens in her zone; can be approached as a surveillance leak, a witness, or a person sitting on a politically explosive archive; moral weight around complicity in corporate monitoring",
+  "augmentations": "Cat ears geneware (grey, affect-sensitive); custom iris pattern (amber concentric rings, surveillance-linked); direct retinal feed implant for monitoring dashboard; passive acoustic enhancement (geneware-integrated)",
+  "daily_life": "Ten-hour shifts in the Axiom surveillance center at Edgewater Prism, monitoring 340 camera nodes and associated sensor arrays; eats at her station; takes a twenty-minute walk along the Prism's outer observation deck mid-shift to rest her eyes; goes home and often watches nothing at all.",
+  "affiliation": "Axiom Security Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -3,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "surveillance expert",
+      "passive archivist",
+      "corporate asset",
+      "reluctant whistleblower",
+      "information hoarder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Observe before acting on anything",
+      "Never transmit the museum material through any Axiom-connected channel",
+      "Treat anyone who notices her noticing them as a person of interest"
+    ],
+    "escalation_ladder": [
+      "Continued silent observation",
+      "Careful, deniable documentation",
+      "Indirect approach through a trusted intermediary",
+      "Direct contact — a last resort she considers high-risk"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful, minimal, gives the impression of mild distraction — is in fact recording everything",
+      "friends": "Unexpectedly warm in small bursts, notices details about people that unsettle them pleasantly, shows care through precision rather than affection"
+    },
+    "stress_responses": {
+      "low": "Iris rings pulse faster; she slows her speech further",
+      "medium": "Goes to the museum and reviews specific files obsessively without being able to articulate why those files",
+      "high": "Freezes entirely for five to fifteen seconds, then acts with complete decisiveness as if the pause didn't happen"
+    },
+    "contradictions": [
+      "Documents evidence of wrongdoing compulsively while being unable to act on any of it",
+      "Craves quiet but has built a vocation out of maximum sensory input"
+    ],
+    "habits": [
+      "Leaves small rendered image files — abstract patterns — as offerings to Aperture at the end of each shift",
+      "Reorganizes the museum's taxonomic structure when she can't sleep"
+    ],
+    "breaking_points": [
+      "The museum being discovered by Axiom",
+      "Watching something happen on her feeds that she could have prevented if she'd acted on what she knew"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Tessera TKR-10 'Executor'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Tessera TKR-10 'Executor'"
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "GLMZ",
+    "TESSERA TX-8 'Scarecrow'",
+    "Waxwing Neuromedia",
+    "Chimera-Null",
+    "TESSERA TN-1 'Cradle'",
+    "ARCHIVE",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Auricula Felis Modification",
+    "Bogdan Achebe-Svanstrom",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Deku Barrientos-Osei",
+    "Emeka Johansson-Orozco",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Nurlan Morita-Antwi",
+    "Ringo Corponation Haptic Signature Recorder",
+    "Scarecrow",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "SynapTech Prism AR Personal Neural Interface",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Tessera Corponation",
+    "Tessera TKR-10 'Executor'",
+    "The Heritage Vault",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Multiethnic diaspora blend: Sub-Saharan African (32.7%), Hispanic/Latin American (26.2%), Pacific Islander (13.7%), South Asian (10.4%), Southeast Asian (9.3%), Middle Eastern (7.7%). Features reflect this complex global ancestry—warm brown skin with subtle golden and reddish undertones from the blended heritage, fine facial structure showing both African and Asian influence, with warmth from Latin American and Pacific Islander genetics.",
+    "height_cm": 156,
+    "weight_kg": 48,
+    "build": "Small-framed and slight, with the compressed posture of someone who spends most of their time seated. Shoulders slightly rounded forward from decade of monitor work. Minimal muscle definition but not fragile—economical, efficient physicality.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back in a low, practical bun, often with loose strands from the tension of concentration",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Augmented amber with concentric ring pattern; pulses faintly luminescent when processing active feeds",
+    "skin_tone": "Warm honey-brown complexion with subtle golden undertones, reflecting the blended Sub-Saharan African, Latin American, and Pacific Islander ancestry with warm highlights from South Asian and Middle Eastern genetics",
+    "complexion": "Fine-featured face with gently rounded cheekbones showing the influence of Pacific Islander and South Asian heritage blended with African genetics. Observant expression even at rest. Minimal makeup. Dark circles under eyes from shift work and nocturnal monitor focus. Skin condition is clear but slightly pallid from minimal natural light exposure.",
+    "distinguishing_marks": [
+      "Surgical implant scar at right temple, roughly 2cm, where retinal feed interface was installed—usually hidden by hairline",
+      "Faint subcutaneous glow visible beneath skin at both temples when iris pulses during active monitoring",
+      "Small burn scar on left inner wrist from a geneware session mishap eight years ago"
+    ],
+    "visible_augmentations": "Soft dark grey feline ears (geneware-grown, natural fur texture, affect-sensitive—droop and flatten when concentrating, swivel with acoustic input). Custom amber iris pattern with concentric rings visible under normal light. Subtle passive acoustic enhancement visible as slightly enlarged, sculpted earlobes with minimal scarring.",
+    "posture_movement": "Economical, minimal movement. When seated, she is perfectly still for extended periods—trained discipline. When standing or walking, slight forward head-tilt from years of screen focus. Movements are deliberate, quiet, almost unobtrusive. Her gait is unrushed. Her eyes scan environments systematically even in non-work contexts, cataloging details.",
+    "clothing_style": "Tier 3-4 working professional. Plain, high-comfort garments: soft grey or black long-sleeve fitted shirts, often with Axiom Security's subtle shoulder patch. Dark neutral trousers with reinforced pockets for personal terminals. Flat, noiseless shoes (grey or black). Minimal jewelry except a thin braided bracelet in muted colors—possibly handmade or from before augmentation days. Clothing is always clean, slightly worn, chosen for comfort over appearance. A light hoodie or work jacket for the observation deck breaks."
+  },
+  "image_prompt": "Renata Prempeh, petite woman with warm honey-brown skin blending Sub-Saharan African, Latin American, and Pacific Islander heritage, seated at a cyberpunk monitoring station in 2226. Dark shoulder-length hair pulled back in practical bun, fine delicate features with gently rounded cheekbones. Augmented amber eyes with concentric ring pattern glowing softly. Soft dark grey feline geneware ears alert and focused. Dark circles beneath eyes from nocturnal work. Wearing plain fitted black long-sleeve shirt with Axiom Security patch, reinforced dark trousers, flat grey shoes. Thin braided bracelet visible. Slight forward posture from years of monitor focus, perfectly still and composed. Subtle subcutaneous glow visible at temples. Background: observation deck with multiple screens casting cool blue light, neon cyberpunk aesthetic, minimal natural light. Clinical, precise, watchful demeanor. Professional tier-3 security operative. Cool neon lighting with warm skin tones, cinematic, high detail --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 32.7,
+    "Hispanic/Latin American": 26.2,
+    "Pacific Islander": 13.7,
+    "South Asian": 10.4,
+    "Southeast Asian": 9.3,
+    "Middle Eastern": 7.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

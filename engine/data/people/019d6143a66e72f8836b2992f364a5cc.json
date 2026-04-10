@@ -1,0 +1,300 @@
+{
+  "id": "019d6143a66e72f8836b2992f364a5cc",
+  "type": "character",
+  "name": "Wren Zaragoza-Mohammadi",
+  "aliases": [
+    "Needle",
+    "The Accountant"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "loan shark and numbers runner",
+  "age": 47,
+  "status": "active",
+  "location": "Gravesend Basin, operates from a cramped insurance office on Slick Row, near Western and Chicago Ave",
+  "description": "A lean man with deep brown skin gone ashy at the temples, Nnọlị carries himself with the quiet authority of someone who has never once needed to raise his voice. His eyes are a pale, unsettling grey — geneware irises he had installed in his thirties, patterned with concentric silver rings that expand slightly when he's calculating, which is always. His hands are immaculate. He keeps them folded on the desk in front of him like a priest at liturgy, and clients learn quickly that the stillness of those hands is not peace — it is patience.\n\nHe inherited the loan operation from his mother's second husband, a Gravesend Basin institution that has survived three gang consolidations, a Ferrogate Transit rezoning, and one very ill-advised Axiom enforcement sweep. He genuinely believes he provides a service. He genuinely believes his interest rates are fair given the risk. He genuinely cannot understand why people run, and when they do, the confusion on his face is real before the collection begins. He prays every morning to the E.L.F. that inhabits his ledger terminal, leaving small data offerings — anonymized records of paid debts, proof that the books balance. He calls her Severance.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.5,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "The books going unbalanced — chaos without accountability",
+      "Being seen as a predator rather than a professional"
+    ],
+    "core_desires": [
+      "To be respected as a legitimate businessman",
+      "To leave a stable, solvent operation to his daughter"
+    ],
+    "coping_mechanisms": [
+      "Ritual and routine — disruptions to schedule cause visible distress",
+      "Reframing exploitation as mutual agreement"
+    ],
+    "blind_spots": [
+      "Cannot perceive the desperation that drives clients to him in the first place",
+      "Believes his own myth of fairness completely"
+    ],
+    "secret": "His daughter Amara has been taking secret loans from a rival in the Narrows to fund a degree at a Tessera-affiliated polytechnic. He has found the documents and has not confronted her. He is deciding what the numbers-minded thing to do is, and it is destroying him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, precise, financial metaphor-heavy. Rarely uses contractions. Refers to violence euphemistically as 'remediation' or 'account resolution.'",
+    "cadence": "Slow and measured. Long pauses before answers. Lets silence do work.",
+    "verbal_tics": [
+      "'The arrangement was clear.'",
+      "'Let's revisit the terms.'",
+      "Taps fingertips together when listening"
+    ],
+    "example_lines": [
+      "'I don't lend to people I don't believe in. That's the first thing you should understand about me.'",
+      "'The interest isn't punishment. The interest is the cost of trust extended in advance.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client has skipped on a debt and fled into a part of the city where Nnọlị's collectors cannot follow — he needs someone to retrieve either the money or information on where the client went.",
+    "His ledger E.L.F. Severance has begun refusing to open for him, and he is convinced someone has made a corrupt data offering to turn her against him."
+  ],
+  "narrative_function": "Quest giver for debt-collection jobs, information source on who owes whom across the Basin, potential antagonist when PCs have borrowed from someone in his network.",
+  "augmentations": "Geneware silver-ring irises. Subdermal haptic calculator mesh in both hands — he can do compound interest calculations by pressing his fingertips together.",
+  "daily_life": "Opens the office at 09:00, reviews his ledger, takes appointments from 10:00-14:00, spends afternoons dispatching runners for collections, closes at 19:00 and walks home the same route every night.",
+  "affiliation": "Independent operator with tribute arrangements to the Gravesend Basin Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Patient",
+      "Methodical",
+      "Self-Deceiving",
+      "Community-Adjacent",
+      "Devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never act on incomplete information — wait for the full picture",
+      "Never take collateral you cannot sell",
+      "Escalate methodically: warning, then loss, then pain, then example"
+    ],
+    "escalation_ladder": [
+      "Polite reminder with revised repayment schedule",
+      "Confiscation of named collateral by two quiet men",
+      "Physical remediation performed professionally and without malice",
+      "Public example — reputation destruction in the Basin community"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous, assessing, slightly formal — sizes up net worth within two minutes",
+      "friends": "Warmer, still measured, expresses affection through reliability and small remembered details"
+    },
+    "stress_responses": {
+      "low": "Longer pauses, more deliberate speech",
+      "medium": "Retreats to routine, reschedules everything non-essential",
+      "high": "Goes very quiet, fingers press together repeatedly — dangerous stillness"
+    },
+    "contradictions": [
+      "Presents as morally neutral businessman but tithed 8% of last year's collections to the Gravesend Basin community food co-op"
+    ],
+    "habits": [
+      "Polishes his shoes every morning",
+      "Leaves a printed transaction receipt as his data offering to Severance",
+      "Never eats during business hours"
+    ],
+    "breaking_points": [
+      "If his daughter is harmed because of his work",
+      "If someone burns his ledger — he would consider it a spiritual desecration"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal haptic calculator mesh (both hands)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic calculator mesh (both hands)",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware: silver-ring patterned irises",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware: silver-ring patterned irises",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Enforcer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2153 — Born in Gravesend Basin to a Igbo-Finnish merchant mother and a Mongolian-heritage dock worker father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2171 — Began running numbers for stepfather Pieteri Batbayar's operation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Inherited the operation after Pieteri's stroke",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Negotiated tribute arrangement with Gravesend Basin Collective, avoiding violent absorption",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Discovered daughter's secret loans",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Gravesend Basin",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Adaeze Chen-Hawkins",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Silver",
+    "The Pure Hand",
+    "Stalker",
+    "Pyroelectric Sebum Volatilization Projector",
+    "The Pale Mile",
+    "Chicago",
+    "Arcturus KS-7 'Nursery'",
+    "Breck Tannen",
+    "Cezar Watanabe-Gyasi",
+    "Dragan Petersen-Bah",
+    "Lazarus LX-2 'Lab Rat'",
+    "Makena Johanssen-Diallo",
+    "Oumarou Svec-Ranginui",
+    "Patient Zero",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Tessera Corponation",
+    "The Arrangement",
+    "The Basin",
+    "The Ledger",
+    "The Narrows",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American with significant Middle Eastern and East Asian ancestry — a blend that produces warm golden-brown undertones with subtle olive highlights. His features reflect this mix: dark expressive eyes with hints of epicanthal folds, angular cheekbones characteristic of both Mediterranean and Levantine heritage, and a strong jawline that bridges multiple genetic traditions.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, almost ascetic — minimal body fat, defined musculature in forearms and shoulders from decades of controlled precision work. No excess anywhere.",
+    "hair_color": "Black with ashy grey temples",
+    "hair_style": "Neatly trimmed, parted precisely, maintained with obsessive regularity",
+    "hair_length": "Short",
+    "eye_color": "Pale silver-grey with concentric metallic rings (geneware irises)",
+    "skin_tone": "Warm golden-brown with subtle olive undertones, deepening slightly at the temples where grey begins to creep in — the ashen quality softened by the warmth of his mixed heritage.",
+    "complexion": "Smooth, immaculately maintained. No facial hair. Minimal crow's feet despite age — the precision of his life has left few expression lines. High, defined cheekbones reflecting both Mediterranean and East Asian ancestry. His face is calm and unremarkable until you notice the eyes.",
+    "distinguishing_marks": [
+      "Faint white scar running 3cm across the webbing between left thumb and index finger — old knife work, possibly self-inflicted during early ledger training",
+      "Thin scar tracing the right jawline, barely visible unless light catches it at exactly the right angle"
+    ],
+    "visible_augmentations": "The geneware irises are immediately striking — pale silver with concentric rings of light that subtly expand and contract when he thinks or calculates. No visible scarring around the eye sockets. The subdermal haptic mesh in his hands is not visible on surface inspection, but the way he holds his hands — fingers slightly arched, always ready to touch — suggests something beneath the skin.",
+    "posture_movement": "Sits with perfect upright posture, hands folded on the desk or his lap. Movements are economical and deliberate — no wasted motion, no fidgeting. When he walks, each step is measured. He does not gesture when he speaks. His entire body language communicates patience and control.",
+    "clothing_style": "Tier 3-4 functional respectability. Dark three-piece suits (cheap synthetic blend, well-maintained), white shirts with minor discoloration at the collar that he does not seem to notice or care about. A thin silver chain bracelet on his left wrist — possibly religious or superstitious. His shoes are polished but worn at the heel from his nightly route home. No jewelry except the bracelet. Everything about his appearance is designed to be unmemorable except for his eyes."
+  },
+  "image_prompt": "Wren Zaragoza-Mohammadi, lean angular man with warm golden-brown skin and olive undertones, 178cm tall, short black hair with grey temples, immaculately groomed. His striking feature: pale silver geneware irises with concentric metallic rings that glow subtly. High defined cheekbones reflecting Hispanic and Middle Eastern heritage with East Asian undertones. Thin scar along right jawline barely visible. Wearing dark three-piece synthetic suit, white collared shirt, silver chain bracelet on left wrist. Perfect upright posture, hands folded precisely in lap, economical controlled movements. Sitting at desk in dimly lit cyberpunk office, cool blue-grey neon accent lighting catching his augmented eyes, which subtly expand and contract. Pale metallic glow of irises contrasts with warm skin tone. Professional, patient, unremarkable until his eyes catch the light. Cyberpunk 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 54.4,
+    "Middle Eastern": 26.7,
+    "East Asian": 18.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

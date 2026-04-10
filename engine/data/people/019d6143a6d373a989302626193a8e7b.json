@@ -1,0 +1,283 @@
+{
+  "id": "019d6143a6d373a989302626193a8e7b",
+  "type": "character",
+  "name": "Aero Bergqvist",
+  "aliases": [
+    "Sol",
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Senior Compliance Officer, Ferrogate Transit",
+  "age": 47,
+  "status": "active",
+  "location": "The Circuit, Ferrogate Transit Regional Compliance Tower, near Milwaukee and Damen",
+  "description": "Solveig is a tall woman with the careful posture of someone who has spent decades making herself hard to read — shoulders squared, hands always visible, face arranged into a polite neutrality that reveals nothing. Her skin is deep brown, her hair silver-white and cropped close, and she has a single cosmetic mod: irises that shift between amber and pale grey depending on her stress load, a biometric vanity piece she bought in her thirties that she now regrets because it gives too much away. She dresses in Ferrogate's regulation charcoal, always pressed, always correct, always the most put-together person in any room she enters.\n\nShe is meticulous, dry-humored, and quietly ruthless in the way only people who have survived three corporate restructurings can be. She doesn't raise her voice. She doesn't need to. Solveig has outlasted four division heads and two full executive purges by being the person who knows where every buried regulation lives and exactly how to weaponize it. She is not beloved. She is respected, which she has decided is better.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.2,
+      "shadow": 0.5,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being implicated in something she didn't do",
+      "Becoming irrelevant before she is ready to retire"
+    ],
+    "core_desires": [
+      "A pension that actually materializes",
+      "To be acknowledged, once, as the person who kept everything from collapsing"
+    ],
+    "coping_mechanisms": [
+      "Extreme organizational rituals",
+      "Dark humor deployed in small doses",
+      "Leaving precise, inarguable paper trails for everything"
+    ],
+    "blind_spots": [
+      "She mistakes procedural correctness for moral correctness",
+      "She underestimates how much people resent her"
+    ],
+    "secret": "She has been quietly archiving evidence of Ferrogate's illegal freight manifests for eleven years — not to report them, but as insurance. She has never decided what she is insuring against, exactly, and the file grows larger every month."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, formal, laced with regulatory citation numbers delivered without irony. Occasional dry observation that lands so flat people aren't sure if she's joking.",
+    "cadence": "Measured and unhurried. Pauses before important words. Never fills silence.",
+    "verbal_tics": [
+      "'Per section—'",
+      "'To be clear.'",
+      "Long pause before saying someone's name"
+    ],
+    "example_lines": [
+      "'I'm not saying you did anything wrong. I'm saying the record currently suggests you did, and those are two very different problems.'",
+      "'Per section 14-C of the transit accord, that shipment should not exist. And yet.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches someone with an unusual request: she needs a task completed in a way that leaves no data trail — which is the opposite of how she has lived her entire professional life, and it's clearly costing her something.",
+    "A junior employee has stumbled onto the same freight irregularities Solveig has been tracking, and she needs to decide whether to protect them or quietly neutralize the problem."
+  ],
+  "narrative_function": "Information source for corporate regulations and Ferrogate internal politics; quest giver for investigations requiring someone with institutional access but deniable distance; local color for the grinding mundanity of corporate bureaucracy.",
+  "augmentations": "Cosmetic patterned irises (stress-reactive amber/grey shift). Basic neural link for document access — older model, slightly laggy. No geneware.",
+  "daily_life": "Arrives at her desk before anyone else, reviews overnight compliance flags, attends exactly the meetings she is required to attend, and leaves precisely at the end of her contracted hours — a small rebellion no one has ever successfully challenged.",
+  "affiliation": "Ferrogate Transit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 4,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "institutional memory",
+      "paper trail",
+      "slow burn",
+      "corporate survivor",
+      "quiet leverage"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything before acting",
+      "Never be the first person to raise their voice",
+      "Identify who benefits from any given situation before deciding what the situation actually is"
+    ],
+    "escalation_ladder": [
+      "Formal written notice",
+      "Escalation to documented record",
+      "Silent withdrawal of cooperation",
+      "Deployment of archived evidence"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, carefully non-committal, assessing",
+      "friends": "Rare, dry, loyal in a way she would never name as such"
+    },
+    "stress_responses": {
+      "low": "Becomes more formal and precise",
+      "medium": "Withdraws into procedure, requests everything in writing",
+      "high": "Goes completely quiet and begins building a file"
+    },
+    "contradictions": [
+      "She believes in rules as a social good while personally maintaining a decade-long illegal archive"
+    ],
+    "habits": [
+      "Arrives 40 minutes early to every meeting so she can arrange the seating",
+      "Leaves a data offering at the office E.L.F. shrine every Monday — a neatly formatted summary of the week's compliance flags, which she insists is 'just good practice'"
+    ],
+    "breaking_points": [
+      "Being accused of corruption in front of witnesses",
+      "Discovering that Ferrogate has been using her compliance work as cover for something she cannot rationalize away"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired as junior compliance analyst at Ferrogate Transit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Survived first major executive purge by being the only person who understood the transit accord filing system",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Senior Compliance Officer after predecessor was implicated in the Kessler Interchange falsification scandal",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began maintaining private archive of anomalous freight manifests — tells herself it is 'professional due diligence'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current — managing a compliance review that keeps turning up irregularities she is not sure she wants to fully surface",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Tessera TK-7 Service Pistol 'Ticker'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Tessera TK-7 Service Pistol 'Ticker'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "The Circuit",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Cezar Watanabe-Gyasi",
+    "Chronicle",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Patient Zero",
+    "Tessera Corponation",
+    "Tessera TK-7 Service Pistol 'Ticker'",
+    "VitaCore CardiaWatch Cardiac Rhythm Implant",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed East Asian, Northern European, and South Asian ancestry. The combination manifests as a striking cross-cultural phenotype: the angular facial structure and eye shape characteristic of East Asian genetics blends with Northern European bone prominence and height, while South Asian heritage contributes warm undertones and subtle facial contours. The result is someone who reads as cosmopolitan, deliberately difficult to place at a glance.",
+    "height_cm": 182,
+    "weight_kg": 71,
+    "build": "Tall and lean, with the careful musculature of someone who maintains herself through discipline rather than athleticism. Long-limbed, with a measured economy of movement that suggests decades of self-awareness.",
+    "hair_color": "Silver-white, natural greying that she has embraced fully",
+    "hair_style": "Cropped close to the scalp in a precise, geometric cut maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Stress-reactive biometric irises: amber under neutral conditions, shifting to pale grey under elevated stress or confrontation",
+    "skin_tone": "Warm golden-brown, the result of blended East Asian, Northern European, and South Asian ancestry. Even complexion with subtle depth, neither cool nor warm but bridging both.",
+    "complexion": "High cheekbones with gentle definition from her mixed heritage, slight epicanthal eye fold characteristic of her East Asian ancestry, balanced by the straighter brow line of Northern European genetics. Unlined for her age, with the polished appearance of someone who takes calculated care of her skin. Minimal cosmetic work beyond the iris mod. Face arranged in practiced neutrality; mouth at rest suggests dry humor.",
+    "distinguishing_marks": [
+      "Thin white scar along the left jaw line, approximately 4cm, barely visible against her skin tone — old enough to predate her tenure at Ferrogate"
+    ],
+    "visible_augmentations": "Stress-reactive iris biometric mod (amber/grey shift). Subcutaneous neural link implant visible only as a faint silver port at the base of her right temple, easily concealed by hair. No other visible chrome.",
+    "posture_movement": "Shoulders squared, spine straight, movements economical and precise. Hands always visible on desk or in controlled position. Walks with deliberate pace. Her entire bearing broadcasts 'I am not a threat and I know exactly how to be dangerous.'",
+    "clothing_style": "Ferrogate Transit regulation charcoal suits, bespoke tailored to fit her frame perfectly. High-grade synthetic material, pressed to knife-edge precision. Minimal jewelry: a single platinum ring on her left ring finger (married or committed, kept private). Shoes are black, polished daily. No visible branding. Tier 1-2 corpo aesthetic rendered invisible through perfect adherence to protocol."
+  },
+  "image_prompt": "Aero Bergqvist, mixed-heritage woman with East Asian, Northern European, and South Asian ancestry, 182cm tall and lean. Silver-white cropped hair, warm golden-brown skin tone, high cheekbones with subtle depth. Stress-reactive amber eyes. Dressed in precisely tailored charcoal Ferrogate Transit regulation suit, impeccably pressed. Faint neural implant port visible at right temple. Thin scar along left jawline. Standing with military posture, shoulders squared, economical movement. Neutral expression suggesting dry humor. Platinum ring on left hand. Cyberpunk 2226, GLMZ transit authority setting, cool overhead lighting casting sharp shadows, minimalist corporate interior, quiet confidence and dangerous competence. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 37.2,
+    "Northern European": 37.0,
+    "South Asian": 25.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

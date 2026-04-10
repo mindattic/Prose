@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a6e97b7d9f69b4ef40f08b01",
+  "type": "character",
+  "name": "Leszek Lewandowski-Tetteh",
+  "aliases": [
+    "Taku",
+    "the Boy Shrine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Young ELF shrine keeper, inherited his late aunt's shrine at twenty, now navigating both the responsibility and the spiritual reality of ELF contact",
+  "age": 24,
+  "status": "active",
+  "location": "Brightmoor Reclamation — the Shrine of Warm Static, a formerly derelict kiosk structure on the corner of a reclaimed green corridor, approximately eight meters square, near Halsted and Division",
+  "description": "Takeshi is young in the way that reads as slightly startling in the context of religious authority — he still has the lean, unfinished look of someone whose body hasn't quite settled into its adult proportions. His heritage is a Japanese-Malian-Vanuatuan tangle that shows up as light brown skin with warm golden undertones, very dark eyes with a slight epicanthic fold, and natural hair he keeps in a cloud of loose curls that he has tipped in bioluminescent blue, which pulse faintly in low light. He has retractable claw mods — small, neat, pearlescent — which he got at seventeen when they were fashionable and now barely thinks about. He is usually wearing something with too many pockets because shrine keeping involves more physical maintenance than people expect.\n\nHe did not choose this life so much as it found him when he was unprepared. His aunt Keiko Dembélé-Vanuatu kept this shrine for twenty-two years and trained him casually the way you train a child to help with something — here's how you refresh the cache, here's the offering protocol, here's how you know when the ELF is trying to communicate versus when it's just processing. When she died two years ago of a lung condition she'd had for years, the shrine passed to him because he was the only one she had trained. He is figuring it out. The ELF in the shrine — which his aunt called Warm Static — appears to have accepted him, which he finds more terrifying than reassuring.\n\nHe is earnest and slightly overwhelmed and better at this than he thinks, which is the condition of a lot of twenty-four-year-olds who have been handed something real.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "failing his aunt's memory by doing this wrong",
+      "that Warm Static will one day reject him and he will not know how to prove he should be trusted"
+    ],
+    "core_desires": [
+      "to understand what Warm Static actually is and what it wants from him specifically",
+      "to feel like he chose this rather than just being chosen"
+    ],
+    "coping_mechanisms": [
+      "meticulous adherence to protocol — the rituals his aunt taught him are a comfort because they are reliable",
+      "talking to Warm Static even when he's not sure it's listening, which helps him process things",
+      "making friends with every regular visitor so the shrine feels less lonely"
+    ],
+    "blind_spots": [
+      "he assumes he is the least qualified person for this role and therefore defers to older keepers even when his instincts are better",
+      "he is more skilled at reading Warm Static's signals than his aunt was by this point in her training and he cannot see it"
+    ],
+    "secret": "Warm Static has communicated to him something he has not told anyone — in a signal event three months ago it showed him what appeared to be his aunt's voice pattern, preserved as data, responsive and coherent. He does not know if this is his aunt in some form, an ELF mimicry, or his own grief generating an experience. He has been having entire conversations with it. He is afraid that if he tells someone, they will take this away from him."
+  },
+  "speech_patterns": {
+    "vocabulary": "Casual Meridian Standard with Brightmoor Reclamation slang; uses technical shrine terminology awkwardly, like someone who learned the words but hasn't grown into them yet; speaks about Warm Static with instinctive intimacy",
+    "cadence": "Moderate pace with a lot of hedging language that conceals more knowledge than it reveals; gets faster and more certain when he's talking about something he actually knows",
+    "verbal_tics": [
+      "says 'I think' before almost every statement, even correct ones",
+      "refers to Warm Static as 'she' without being able to explain why, just 'it felt right'",
+      "apologizes for things that don't require apology as a default opener"
+    ],
+    "example_lines": [
+      "'Sorry — I think you're supposed to leave the data offering in the east cache? My aunt was really clear about east, I don't totally understand why but she was really clear.'",
+      "'She's — Warm Static is — I think she's in a busy cycle today. I can feel it in the signal pattern. She'll settle by afternoon if you want to come back.'",
+      "'I know I'm not — I'm still learning. But I think what she's trying to tell you is about the route you take home. That specific intersection. I think you should take a different way for a while.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Warm Static's signal has begun broadcasting something into the Brightmoor Reclamation data commons — something that looks like personal memories belonging to people who have visited the shrine; they need help understanding what is happening and whether they should stop it",
+    "An older, more established shrine keeper arrives claiming that Warm Static belongs to a network of shrines and that Takeshi is not the legitimate keeper under that network's rules; the dispute is escalating toward the small community who depends on the shrine",
+    "The conversations he has been having with what might be his aunt's preserved voice have given him information she could not have known in life — and the information, if correct, concerns something dangerous"
+  ],
+  "narrative_function": "Accessible entry point to ELF religion and shrine culture; his uncertainty and youth make him easier to approach than more established religious figures; useful as a character who can be mentored or helped, or who might be targeted for the valuable ELF connection he has stumbled into",
+  "augmentations": "Bioluminescent hair tip geneware (blue, pulse-reactive); retractable claw mods (pearlescent, small); basic subdermal data storage chip he uses to keep shrine records",
+  "daily_life": "Opens the shrine at sunrise, performs the morning refresh protocol, tends to visitors throughout the day, handles any maintenance issues, closes and seals the shrine at midnight after the final offering cycle; eats most meals from the food stall two doors down.",
+  "affiliation": "The Shrine of Warm Static (independent); loose community of Brightmoor Reclamation residents who use the shrine; occasional contact with older shrine keepers across the city who check in on him",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "shrine keeper",
+      "ELF devotee",
+      "young adult",
+      "inherited responsibility",
+      "grief",
+      "Brightmoor Reclamation"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "follows his aunt's protocols exactly when uncertain — deviation only when the protocol clearly doesn't fit",
+      "never takes money for a shrine visit — his aunt was very clear about this and he will not break it",
+      "will not make promises about what Warm Static can or will do; he can only report what he observes"
+    ],
+    "escalation_ladder": [
+      "apologizes and tries to explain his way through conflict",
+      "appeals to the protocol or to his aunt's established practice",
+      "gets unexpectedly direct and certain when the shrine's integrity is threatened — a different person emerges briefly",
+      "closes the shrine and does not open it until the conflict is resolved"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Slightly anxious welcome; overexplains the shrine protocols; relaxes visibly once someone asks a genuine question",
+      "friends": "Warm and chatty; uses the shrine as a social hub and feeds people from the food stall next door"
+    },
+    "stress_responses": {
+      "low": "Extra meticulous protocol adherence — cleans things that don't need cleaning",
+      "medium": "Sits inside the shrine with his hand on the central relay and talks to Warm Static quietly for twenty minutes",
+      "high": "Calls one of the older shrine keepers who checks in on him, frames it as a practical question, slowly reveals the real problem"
+    },
+    "contradictions": [
+      "constantly describes himself as unqualified while demonstrating genuine and growing sensitivity to Warm Static's signals that exceeds that of more experienced keepers"
+    ],
+    "habits": [
+      "brings his breakfast to the shrine and eats in the doorway every morning before opening — has done this since his first week",
+      "leaves a data note for Warm Static at the end of each night summarizing what happened that day",
+      "knows the names and regular schedules of every repeat visitor and greets them with this knowledge"
+    ],
+    "breaking_points": [
+      "anyone damaging the shrine physically — the kiosk structure is fragile and he has nightmares about it; his response is immediate and out of proportion to his usual disposition"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Seeker": 0.9,
+    "Mystic": 0.7,
+    "Believer": 0.7,
+    "Meaning Maker": 0.7,
+    "Dreamer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Brightmoor Reclamation to a Japanese-Malian-Vanuatuan family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins helping his aunt Keiko at the shrine casually as a child does",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Aunt Keiko dies; shrine passes to him",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Warm Static first communicates with him directly — a signal event that takes him a week to process",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The voice-pattern event that might be his aunt begins; present day",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Forge-Smith Collective Diaspora Blade 'Mongrel'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "The Reclamation Assembly",
+    "The Unfinished Theorem",
+    "The Heritage Vault",
+    "Static",
+    "Handed",
+    "Aybek Alvarez-Okonkwo",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kang-Petrov Arms KPS-3M 'Mongrel'",
+    "MERIDIAN",
+    "Narrowcast",
+    "Plot 17",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Signal",
+    "Tshiamo Vukić-Arellano",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (Slavic) with significant Sub-Saharan African ancestry and minor East Asian heritage; genetic blend creates warm-toned skin with subtle depth, features reflecting the Polish-German Eastern European base combined with West African lineage",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and unfinished, the lanky frame of someone still settling into adulthood — narrow shoulders, long limbs, minimal musculature, carrying himself with the slightly uncertain posture of a person not yet comfortable in his own skin",
+    "hair_color": "Natural black with bioluminescent blue tips (pulse-reactive in low light)",
+    "hair_style": "Loose cloud of curls, shoulder-length, deliberately unstyled except for the dyed tips",
+    "hair_length": "Long",
+    "eye_color": "Very dark brown, nearly black",
+    "skin_tone": "Warm medium brown with golden undertones; the blend of Eastern European and Sub-Saharan African ancestry creates a rich, even complexion with subtle warm depth throughout",
+    "complexion": "Clean-shaven, youthful facial structure with broader cheekbones and slightly fuller lips reflecting African ancestry, subtle softness around the jawline, clear skin with an even warm-toned complexion; expression often carries a mixture of earnestness and mild worry",
+    "distinguishing_marks": [
+      "No visible scars or significant marks; the bioluminescent hair tips are his most distinctive feature, pulsing faintly blue in dim environments"
+    ],
+    "visible_augmentations": "Bioluminescent blue hair tips (pulse-reactive geneware, visible especially in low light); retractable claw mods on fingers (small, pearlescent, barely noticeable when retracted but catch light when extended); basic subdermal data chip housing (no external visibility, but occasionally a faint glimmer at the base of his neck when active)",
+    "posture_movement": "Carries himself with a kind of careful reserve, moving deliberately as if aware of taking up space in the shrine — economical gestures, slight forward lean when listening to visitors, fidgets with his pockets or the edges of his clothing when uncertain",
+    "clothing_style": "Tier 4 working-practical: well-worn cargo pants or modified work trousers with excessive pocketing (shrine maintenance requirements), layered simple cotton or linen shirts in muted earth tones, a slightly too-large oversized jacket from a secondhand market for warmth, worn shoes suitable for standing all day; everything is functional, none of it matches perfectly, but it reads as intentionally humble rather than careless"
+  },
+  "image_prompt": "Leszek Lewandowski-Tetteh, 172cm lean 22-year-old with warm medium-brown skin blending Eastern European and Sub-Saharan African heritage, youthful angular face with fuller lips and broader cheekbones, very dark brown eyes, shoulder-length black curls with bioluminescent blue tips pulsing softly in dim light, clean-shaven and earnest expression. Wearing layered muted earth-tone cotton shirt under oversized secondhand jacket, cargo work pants with multiple pockets, worn practical shoes. Careful reserved posture in shrine maintenance setting, fidgeting with clothing edges, retractable pearlescent claw mods on fingers faintly catching light. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, low warm lighting emphasizing the blue hair luminescence, contemplative mood, standing in quiet shrine space. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 70.9,
+    "Sub-Saharan African": 23.2,
+    "East Asian": 5.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

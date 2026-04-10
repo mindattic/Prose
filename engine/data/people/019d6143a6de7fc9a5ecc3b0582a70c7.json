@@ -1,0 +1,338 @@
+{
+  "id": "019d6143a6de7fc9a5ecc3b0582a70c7",
+  "type": "character",
+  "name": "Atlas Johansson-Mbekele",
+  "aliases": [
+    "Tectonic",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Corporate espionage and data exfiltration — data thief",
+  "age": 25,
+  "status": "active",
+  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Pulaski and Chicago Ave",
+  "description": "Stanislav Lebedev-Tutu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Stanislav Lebedev-Tutu lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.48,
+      "ideal": 0.58,
+      "id": 0.95,
+      "shadow": 0.21,
+      "mask": 0.36,
+      "ghost": 0.58
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Being replaced — younger, faster, cheaper runners coming up behind them",
+      "Losing control of their own body to a hacker or malfunctioning cyberware"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "To protect the people in their district who can't protect themselves"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Planning — responds to chaos by making detailed contingency plans for everything"
+    ],
+    "blind_spots": [
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Assumes their skill set is more transferable than it actually is"
+    ],
+    "secret": "Stanislav Lebedev-Tutu has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+      "\"I copy things. The original owners rarely appreciate the compliment.\"",
+      "\"Data wants to be free. I just charge a facilitation fee.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Stanislav Lebedev-Tutu once infiltrated is being reopened, and the people inside know his face",
+    "A crew member from Stanislav Lebedev-Tutu's past shows up in GLMZ, carrying old grievances and new chrome",
+    "Stanislav Lebedev-Tutu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Stanislav Lebedev-Tutu functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Smartgun link in right forearm — interfaces directly with compatible weapons",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.25,
+      "caution": 0.66,
+      "loyalty": 0.87,
+      "greed": 0.78,
+      "empathy": 0.22
+    },
+    "drives": [
+      "justice",
+      "reputation",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "chronic insomnia affecting long-term performance",
+      "difficulty with authority figures"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "data thief",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Always verifies target identity independently before lethal contracts",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Discovering their employer deliberately sent them into a death trap",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9,
+    "Thief": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "GLMZ",
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Chicago",
+    "Breck Tannen",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "Crucible RE-2 'Receptionist'",
+    "Djeneba Park-Traore",
+    "Glenville Sound",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Mika Sorel",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
+    "TESSERA WL-6 'Stacker'",
+    "The Heritage Vault",
+    "The Lattice",
+    "The Narrows",
+    "The Quiet Room",
+    "The Shelf",
+    "Tomasz Wren"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Pan-diaspora mixed ancestry: predominantly Sub-Saharan African (52%), with significant Northern European (23.6%), South Asian (14.2%), and Hispanic/Latin American (10.2%) genetic contributions. The blend manifests in rich deep-brown skin with warm undertones, prominent cheekbones with slight South Asian angularity, and the jaw structure reflecting multiple continental lineages. His appearance defies simple categorization—a true product of the Ubiquitous Diaspora.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Athletic and lean with functional musculature—dancer's flexibility married to fighter's efficiency. No wasted mass; every movement economical.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, practical cut kept at regulation length; no styling affectation",
+    "hair_length": "Short",
+    "eye_color": "Pale gray, unaugmented",
+    "skin_tone": "Deep warm brown with rich undertones—darker from the Sub-Saharan majority of his ancestry, with warmth that speaks to the blended heritage running through him. The tone is even and luminous, neither ashy nor ruddy, reflecting the genetic harmony of his mixed background.",
+    "complexion": "Well-defined facial structure with prominent cheekbones inherited from both African and South Asian ancestry, creating sharp definition. Smooth, well-maintained dark skin. Minimal scars on the face itself—most damage is on the body, hidden. Sharp, alert expression; eyes track movement habitually.",
+    "distinguishing_marks": [
+      "Thin surgical scar running down the right side of his neck from clavicle to jaw—nerve bundle realignment for the chrome arm",
+      "Burn scar across the inside of his left forearm, three inches long—old contract gone sideways",
+      "Faint keloid scarring on his right shoulder where the cybernetic arm interfaces with organic tissue"
+    ],
+    "visible_augmentations": "Full replacement cybernetic right arm from shoulder down—industrial chrome with matte finish, slightly heavier than organic flesh, fingers articulate with mechanical precision. The arm bears micro-scratches and wear patterns from heavy use. Forearm houses integrated smartgun link—visible as a discrete panel along the inner wrist, currently dormant but present.",
+    "posture_movement": "Moves with economical precision, weight always balanced. No nervous tics or wasted gestures. When standing, shoulders square but relaxed. When moving, every motion has purpose—he doesn't shuffle or sprawl. Right arm hangs slightly differently than a human's would, the chrome responding to neural input with imperceptible lag.",
+    "clothing_style": "Tier 4 working-class practical: unmarked dark synth-fiber jacket with reinforced shoulders, matte black thermals underneath, cargo pants with too many pockets—most kept stocked with tools and data-storage media. Worn leather gloves on the organic hand only; the chrome arm bare. Boots are scuffed but well-maintained, suitable for climbing scaffolding and quick exits. No logos, no flash, no corp affiliation markers. Everything chosen for function, not fashion."
+  },
+  "image_prompt": "Atlas Johansson-Mbekele, cyberpunk 2226, full-body portrait of a 178cm athletic man with rich deep-brown skin reflecting Sub-Saharan, Northern European, South Asian, and Hispanic ancestry. Sharp cheekbones, pale gray unaugmented eyes, dark hair in short practical cut. Pale gray eyes with sharp alert expression. Full-replacement industrial chrome right arm with matte finish and visible smartgun link panel on inner wrist, mechanical fingers showing wear patterns. Thin surgical scar down right neck, burn scar on left forearm, keloid scarring on right shoulder. Dark synth-fiber jacket with reinforced shoulders over matte black thermals, cargo pants with multiple pockets, scuffed boots, leather glove on organic left hand only. Economical stance, perfectly balanced posture, every movement purposeful. Neon-lit Great Lakes Metropolitan Zone rooftop setting at dusk, chrome arm catching fragmented holographic light, moody cyberpunk atmosphere, high contrast lighting, gritty realism --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 52.0,
+    "Northern European": 23.6,
+    "South Asian": 14.2,
+    "Hispanic/Latin American": 10.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

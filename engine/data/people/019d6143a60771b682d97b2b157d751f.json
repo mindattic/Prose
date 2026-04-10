@@ -1,0 +1,337 @@
+{
+  "id": "019d6143a60771b682d97b2b157d751f",
+  "type": "character",
+  "name": "Wren Johansson",
+  "aliases": [
+    "Slate",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Long-range precision fire specialist — sniper",
+  "age": 31,
+  "status": "active",
+  "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
+  "description": "Eshe Zhukov-Wiredu is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.32,
+      "ideal": 0.16,
+      "id": 0.17,
+      "shadow": 0.31,
+      "mask": 0.54,
+      "ghost": 0.73
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "Knowledge — to understand the systems that grind people down",
+      "To matter to someone for who they are, not what they can do",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Overestimates their own abilities in situations outside their specialty",
+      "Thinks speed can substitute for planning because it's worked so far"
+    ],
+    "secret": "Eshe Zhukov-Wiredu is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"Patience is the weapon. The rifle is just the delivery system.\"",
+      "\"At this distance, the target is already dead. They just don't know it yet.\"",
+      "\"One shot, one outcome. Everything else is theater.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corporate black site Eshe Zhukov-Wiredu once infiltrated is being reopened, and the people inside know his face",
+    "Eshe Zhukov-Wiredu discovers a job they completed last year was a setup for something much larger and much worse",
+    "Eshe Zhukov-Wiredu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Eshe Zhukov-Wiredu represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Chemical analyzer in nasal passages — can identify substances by scent alone. Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.46,
+      "caution": 0.75,
+      "loyalty": 0.68,
+      "greed": 0.35,
+      "empathy": 0.59
+    },
+    "drives": [
+      "power",
+      "reputation",
+      "freedom"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 8,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "social chameleon — adapts to any environment",
+      "strategic thinking under pressure"
+    ],
+    "weaknesses": [
+      "poor impulse control in specific triggers",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "sniper",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
+      "Insists they work alone but performs noticeably better in a team",
+      "Claims not to care about reputation but monitors what people say about them obsessively"
+    ],
+    "habits": [
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Checks exits within 10 seconds of entering any room",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Chemical analyzer in nasal passages",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
+      "replaces": ""
+    },
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Sniper Mind": 0.7,
+    "Ghost": 0.7,
+    "Analyst": 0.7,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Widowmaker' Rigged Power Tool"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Burnside Pocket",
+    "Slagworks Industrial",
+    "Ambassador Silk",
+    "Arcturus KS-11 'Coffin Nail'",
+    "Breck Tannen",
+    "Crucible RE-2 'Receptionist'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Glenville Sound",
+    "Lazarus LX-2 'Lab Rat'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Praevex",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "TERMINUS",
+    "The Fathom Line",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Pacific Islander ancestry, complemented by South Asian, Middle Eastern, Northern European, and Sub-Saharan African heritage — a striking genetic mosaic reflecting the Ubiquitous Diaspora.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — the build of someone who maintains fitness out of necessity rather than vanity. Long-limbed, minimal body fat, shoulders slightly narrower than hips. There's a coiled tension to his frame, like a spring compressed.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Short, practical cut — no styling product, maintained for function. Slight curl at the temples.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm undertones",
+    "skin_tone": "Warm medium-tan with subtle golden and olive undertones — the harmonious blend of East Asian, Pacific Islander, and South Asian ancestry creating a complexion that catches light with natural warmth.",
+    "complexion": "Angular face with high, pronounced cheekbones characteristic of East Asian heritage, a narrow jaw that tapers sharply, and a slightly broader nasal bridge reflecting his diverse ancestry. His face is striking but unrefined — skin shows minor scarring along the left temple (old wound, poorly healed), slight darkness under the eyes from chronic sleep deficit. Facial structure reflects the blend of his heritage groups, with subtle features honoring East Asian, Pacific Islander, and South Asian ancestry. Facial hair is kept minimal, usually a day or two of stubble rather than fully shaved or grown.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward the hairline, approximately 3cm, partially obscured by hair growth",
+      "Faint chemical burn scars on the right side of his neck (approximately 2cm x 1cm) — pale pink, slightly raised, from a volatile extraction gone wrong",
+      "Small tattoo on inner left wrist: a simple crosshair symbol in black ink, barely 1cm diameter"
+    ],
+    "visible_augmentations": "Chrome nasal passages — visible as faint metallic shimmer around his nostrils and the bridge of his nose where the chemical analyzer integrates with natural tissue. The chrome catches light and creates an uncanny reflection. No other visible augmentations, though the pain editor is subcutaneous.",
+    "posture_movement": "He moves with economical precision — no wasted motion. His posture is slightly forward-leaning, as if perpetually tracking something. His head tracks slowly, methodically, eyes registering details. When he sits, he positions himself with clear sight lines to exits. There's a stillness to him when focused, an absence of fidgeting or nervous energy. When not focused, he exhibits minor tremors in his hands — either from stimulant use or the edge that chronic pain-dampening creates.",
+    "clothing_style": "Tier 4 pragmatist. Dark colors — charcoal, black, deep gray. Worn tactical cargo pants with multiple pockets and reinforced seams, synthetic blend that sheds dirt and dries fast. Layered tops: usually a dark long-sleeve compression shirt under a heavier jacket (synthetic leather or ballistic nylon, no visible branding). Boots are military-grade, scuffed, laces double-knotted. A worn canvas messenger bag (faded black, multiple repair patches) carries his essentials. No jewelry except a faded paracord bracelet on his left wrist. His jacket has several deep pockets and one internal pocket where he keeps dead-drop messages. Everything is functional, nothing is fashionable."
+  },
+  "image_prompt": "Wren Johansson, 178cm lean angular cyberpunk operative in 2226 Great Lakes Metropolitan Zone, warm medium-tan skin with golden olive undertones blending East Asian and Pacific Islander heritage, sharp high cheekbones, narrow tapering jaw, deep brown eyes, dark brown almost black short practical hair with slight temple curls, faint scar left temple partially obscured by hair, pale pink chemical burn scars on right neck, chrome metallic nasal passages reflecting light, day-old stubble, minor hand tremors. Wearing dark charcoal tactical cargo pants with reinforced seams, dark long-sleeve compression shirt layered under worn ballistic nylon jacket, military-grade scuffed boots with double-knotted laces, faded black canvas messenger bag with repair patches, faded paracord bracelet on left wrist. Small black crosshair tattoo on inner left wrist. Economical precise posture, slightly forward-leaning, tracking details methodically. Standing in neon-lit urban corner with rain-slicked pavement, moody cyberpunk atmosphere, cool blue and amber lighting, industrial backdrop, coiled tension in frame, absence of nervous energy, professional operative ready for extraction. cinematic lighting, gritty realism, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 36.9,
+    "Pacific Islander": 25.5,
+    "South Asian": 12.1,
+    "Middle Eastern": 10.3,
+    "Northern European": 8.5,
+    "Sub-Saharan African": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

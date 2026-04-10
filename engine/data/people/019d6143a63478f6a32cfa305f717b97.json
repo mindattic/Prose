@@ -1,0 +1,244 @@
+{
+  "id": "019d6143a63478f6a32cfa305f717b97",
+  "type": "character",
+  "name": "Nisha Venkatesh-Tlaloc",
+  "aliases": [
+    "Ifi",
+    "The Shelf Whisperer"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Urban sociologist specializing in Shelf communities and informal governance, independent researcher",
+  "age": 36,
+  "status": "active",
+  "location": "Chatham Flats — lives and works embedded in the community they study, near Ashland and Division",
+  "description": "Iphigenia Tambadou-Szarvas is compact and restless, with warm brown skin, a nose ring that cycles through three colors with their mood (a cheap cosmetic mod they've had since graduate school), and natural hair grown into a large, somewhat chaotic halo they cut themselves with kitchen scissors. They dress exclusively in layers that can be added or removed depending on which district they're moving through — they've gotten very good at reading the visual codes of neighborhoods and adjusting accordingly. Their eyes are unmodified, which in the Shelf reads as either poverty or principle; in Iphigenia's case it is both, worn with quiet stubbornness.\n\nThey have the particular energy of someone who is genuinely fascinated by people — not as subjects but as people — and communities on the Shelf can sense the difference. They've been invited to births, funerals, water-distribution arguments, and at least two ELF-shrine consecrations in districts researchers never get into. They also have a temper they've mostly learned to manage, a sharp tongue when bureaucratic abstraction is used to justify human harm, and a habit of forgetting to eat when they are deep in field notes. They are fiercely protective of the communities they work with and will refuse to share data that could harm them, which has cost them two university positions and one very lucrative Axiom contract.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That their research, however carefully protected, will eventually be weaponized against the communities they love",
+      "That their outsider status means they will always ultimately fail the people who trusted them"
+    ],
+    "core_desires": [
+      "To produce research that materially changes policy in ways communities can actually feel",
+      "To belong somewhere completely, without the observer's notebook between them and the experience"
+    ],
+    "coping_mechanisms": [
+      "Radical busyness — staying in motion prevents rumination",
+      "Community ritual participation (they attend ELF-shrine observances they don't personally believe in because the act of attending matters)",
+      "Calling their grandmother in the Maghreb quarter at irregular hours"
+    ],
+    "blind_spots": [
+      "Their rejection of institutional affiliation has left them without structural protection when powerful interests push back",
+      "Occasionally romanticizes survival and resilience in ways that obscure how exhausting those things are to actually live"
+    ],
+    "secret": "They have a completed manuscript — three years of Shelf fieldwork — that they have not submitted for publication because one chapter contains information that could expose a particular community's informal water-reclamation network to Ferrogate Transit's legal team. They don't know how to excise the chapter without destroying the book's argument, and they don't know how to publish it without potentially destroying the network."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fluid and code-switching — fluent in several Shelf-district registers, academic vocabulary deployed sparingly and sometimes ironically; occasional Pulaar phrases from their grandmother's side",
+    "cadence": "Fast when excited, very slow and deliberate when they want someone to actually hear a specific thing",
+    "verbal_tics": [
+      "'Okay but wait—' (interrupts themselves as often as others)",
+      "'That's doing a lot of work in that sentence' (when someone uses abstract language to avoid specificity)",
+      "Repeating the last word of someone else's sentence as a question"
+    ],
+    "example_lines": [
+      "'You want to understand the Shelf? Stop studying it. Go buy a meal from the woman at the corner of Chatham and Fourth and let her talk to you. That's your methodology.'",
+      "'I know what the data says. I'm telling you what the data is hiding, and that's the part that matters.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They need someone to retrieve a specific recording from a district they've been temporarily barred from after a community dispute — a recording that could unlock the stuck chapter of their manuscript",
+    "Ferrogate Transit has sent a representative to their grant foundation with specific questions about their research scope, and they need help determining if this is routine or targeted",
+    "A community leader they've known for years approaches them asking to document something — and what they're being shown shouldn't exist according to any official record of the district"
+  ],
+  "narrative_function": "Expert guide to Shelf culture, informal economy, and community politics; can open doors in low-tier districts that other academics cannot; quest giver for ethnographic retrieval missions; moral conscience character who challenges players' assumptions about poverty and agency.",
+  "augmentations": "Color-cycling nose ring (cosmetic geneware implant, low-end); nothing else — partly financial, partly they consider it meaningful to move through Shelf spaces without visible chrome.",
+  "daily_life": "Spends mornings walking specific routes through Chatham Flats and adjacent districts, taking informal notes; afternoons conducting interviews or attending community meetings; evenings writing, arguing with their data, and eating whatever is cheapest at the corner stalls.",
+  "affiliation": "Unaffiliated — formerly University Spine Dept. of Social Systems, currently self-funded through a Palladian Research Foundation small grant and per-article journalism fees",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "field-worker",
+      "advocate",
+      "community-embedded",
+      "principled",
+      "volatile-idealism"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Community harm is an absolute veto — no research, no money, no career consideration overrides it",
+      "Always ask permission; always credit sources who want to be credited",
+      "Institutional authority is not the same as legitimacy and should not be treated as such"
+    ],
+    "escalation_ladder": [
+      "Direct conversation",
+      "Documentation and written record",
+      "Going to community leadership rather than institutional authority",
+      "Public writing and journalism",
+      "Destroying their own data rather than allowing it to be seized"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm, curious, asks more questions than they answer, conspicuously non-judgmental in ways that are themselves a kind of judgment",
+      "friends": "Intensely loyal, terrible at maintaining contact when deep in fieldwork, makes up for absences with ferocious attention when present"
+    },
+    "stress_responses": {
+      "low": "Talks faster, takes more notes",
+      "medium": "Goes for long walks through the city at hours that aren't quite safe",
+      "high": "Controlled fury expressed in writing — produces their best prose and their most dangerous decisions under high stress"
+    },
+    "contradictions": [
+      "Claims not to be an activist but has made career-ending choices in defense of communities",
+      "Values presence and embeddedness but is constitutionally incapable of fully belonging to anything"
+    ],
+    "habits": [
+      "Nose ring color-reading — unconsciously checks it in reflective surfaces as a mood check",
+      "Keeps a running handwritten list of everyone who's fed them in the field; considers it a debt ledger",
+      "Prays to the corner ELF-shrine nearest wherever they're working even though they are an atheist"
+    ],
+    "breaking_points": [
+      "Watching a community they documented be displaced and knowing their research contributed data to the process, however indirectly",
+      "Being told by an institution that their refusal to share data makes them 'unreliable' and funding being pulled"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Street Custom 'Backfire' Weaponized Exhaust System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Chatham Flats",
+    "FOUNDATION",
+    "The Shelf",
+    "The Gradient Compact",
+    "Babel",
+    "Nesting Doll",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial",
+    "Arcturus CK-5 'Bloodhound'",
+    "Ambrogio Waweru-Djordanović",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible Industries Long Arm LA-20 'Verdict'",
+    "Focadrin",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Last Word",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Palladian Construction",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Street Custom 'Backfire' Weaponized Exhaust System",
+    "The Collective",
+    "The Ledger",
+    "The Nearfield",
+    "The Pure Hand",
+    "The Reclamation Assembly",
+    "Tobechukwu Papadimitriou-Vásárhelyi",
+    "University Spine",
+    "Vuk Jorgensen-Toure",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian (primary, 58.7%) with significant Sub-Saharan African (22.2%), Indigenous American (14.6%), and Hispanic/Latin American (4.5%) ancestry; the Ubiquitous Diaspora made manifest in sharp facial structure and warm, complex skin undertones",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscular in a lean way from constant walking through the Shelf; restless energy evident in how they hold themselves",
+    "hair_color": "Natural dark brown with scattered gray at temples",
+    "hair_style": "Self-cut into a large, textured halo; uneven layers suggest kitchen scissors and no particular vanity about symmetry",
+    "hair_length": "Long (shoulder-length and beyond)",
+    "eye_color": "Natural warm brown, unaugmented",
+    "skin_tone": "Deep warm brown with golden and reddish undertones from blended ancestry; rich melanin density with subtle warmth from South Asian genetics",
+    "complexion": "Fine-featured with sharp, defined cheekbones and jawline reflecting South Asian structure; dark circles under eyes suggest chronic sleep debt from fieldwork; skin is clear but sun-weathered from outdoor walking; slight warm undertone variation across face reflecting genetic diversity; expression typically alert and slightly intense",
+    "distinguishing_marks": [
+      "Color-cycling mood-ring nostril implant, currently displaying dull amber (low-end geneware, visible as a subtle iridescent glow in the septum)",
+      "Old burn scar on the inside of left forearm, thin and pale, approximately 4cm long — story unknown but handled without self-consciousness",
+      "Calluses on right hand fingers from constant handwriting and note-taking"
+    ],
+    "visible_augmentations": "Only the cosmetic nose ring implant; deliberately minimal chrome presence. The lack of visible augmentation reads as either principled poverty or quiet defiance in Shelf spaces, which they leverage intentionally.",
+    "posture_movement": "Moves with purposeful efficiency; walks slightly forward-leaning as if always mid-thought; hands gesture when talking, often holding imaginary notes. Sits cross-legged in interviews regardless of formality. Fidgets with fabric edges when listening intently.",
+    "clothing_style": "Strictly layered approach: base layer is always worn, functional undershirt (neutral colors); middle layers are oversized cardigans or vests that can be removed; outer layer adapts to district code-reading (Tier 3 corporate casual in certain blocks, Tier 5 survival wear in others). All clothing is thrift-sourced, well-maintained but visibly secondhand. Shoes are good walking boots, scuffed. No jewelry except the nose ring. Small pack always carried containing notebooks, recorder, water bottle, emergency ration bar."
+  },
+  "image_prompt": "Nisha Venkatesh-Tlaloc, 158cm tall mixed-heritage woman with deep warm brown skin and golden undertones, sharp defined cheekbones, natural warm brown eyes. Shoulder-length dark brown hair with gray at temples, styled in textured self-cut halo. Wearing layered thrift clothing: oversized cardigan over functional base layer, scuffed walking boots. Iridescent amber mood-ring nostril implant visible in septum. Thin pale burn scar on left forearm. Dark circles from chronic fieldwork, alert intense expression. Sitting cross-legged, hands gesturing as if mid-explanation. Small worn pack beside her. Cyberpunk 2226 GLMZ aesthetic, Shelf district setting, moody amber and cool neon lighting, minimalist augmentation, documentary photography style --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 58.7,
+    "Sub-Saharan African": 22.2,
+    "Indigenous American": 14.6,
+    "Hispanic/Latin American": 4.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

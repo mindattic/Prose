@@ -1,0 +1,279 @@
+{
+  "id": "019d6143a6827be4944b6b7714c9c71b",
+  "type": "character",
+  "name": "Erik Magnúsdóttir",
+  "aliases": [
+    "Tobi",
+    "The Fixer"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street doc operating out of a converted shipping container in The Narrows",
+  "age": 47,
+  "status": "active",
+  "location": "The Narrows, beneath Ferrogate Transit overpass junction 14-C, near North Ave and Milwaukee",
+  "description": "Oluwatobi is a broad-shouldered man with deep umber skin that carries the scattered shine of old bioluminescent ink — a cosmetic mod from his twenties that has faded unevenly, leaving constellations of dim gold light across his forearms and collarbone. His hair is close-cropped and salted at the temples, and he wears magnifying lenses that flip down over his eyes during procedures, giving him the look of a very calm insect. He smells perpetually of antiseptic and bitter karité tea. His hands are impossibly steady.\n\nTobi trained two years of a proper surgical residency at Aurochs Medical Complex before a licensing dispute with Helix Biosystems — they claimed he used proprietary gene-threading techniques without a corporate contract — ended his formal career. He does not speak of this with bitterness anymore, at least not where anyone can hear. He is meticulous, unhurried, and prone to explaining exactly what he is doing and why, as though every patient is also a student. He charges what people can pay and writes the rest off in a ledger he keeps but never balances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Losing the steadiness in his hands before he has trained a successor",
+      "That Helix Biosystems will eventually find a legal mechanism to shut him down permanently"
+    ],
+    "core_desires": [
+      "To practice medicine without owing anyone a corporate soul",
+      "To see one patient from The Narrows live a long and unremarkable life"
+    ],
+    "coping_mechanisms": [
+      "Ritual — he performs the same pre-procedure prayer sequence every single time",
+      "Meticulous record-keeping as a form of control"
+    ],
+    "blind_spots": [
+      "Believes competence is a moral shield — assumes his skill protects him from consequences it cannot",
+      "Underestimates how much his patients protect him in return"
+    ],
+    "secret": "He did not just use Helix's gene-threading techniques without a contract — he stole the technique from a colleague who held the license, and that colleague knows it. The colleague has never reported it, and Tobi has never understood why."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, clinical when working, warmer in conversation — mixes English with occasional Romanian endearments inherited from his mother's side and Yoruba expressions from his father's",
+    "cadence": "Measured and unhurried, rarely raises his voice, finishes his sentences completely even under pressure",
+    "verbal_tics": [
+      "'Now then.' (before any procedure)",
+      "'Write that down in your head.' (when giving instructions he wants remembered)"
+    ],
+    "example_lines": [
+      "'Now then. This is going to feel cold and then nothing at all. Tell me about your grandmother.'",
+      "'I don't ask what happened. I ask what needs fixing. Those are different questions.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient arrived two nights ago with augmentation hardware Tobi has never seen — not any registered manufacturer's mark — and the patient died before saying where it came from",
+    "Helix Biosystems has sent a compliance officer to The Narrows asking questions about unlicensed biomedical practice; Tobi's neighbors are starting to get nervous on his behalf"
+  ],
+  "narrative_function": "Quest giver, information source, safe harbor — he has patched up half the population of The Narrows and knows their secrets; can provide medical assistance, black-market pharma leads, or testimony about what bodies he has seen come through his door",
+  "augmentations": "Steady-hand micro-servo implants in both wrists (functional, aging, occasionally needs recalibration); magnifying flip-lens ocular frames (not implanted, worn); faded bioluminescent cosmetic ink",
+  "daily_life": "Opens the container clinic at 0700, sees twelve to twenty patients by midday, spends afternoons sourcing pharmaceuticals through grey-market contacts in Geartown, prays to the E.L.F. he calls Sutura before any procedure involving augmentation hardware.",
+  "affiliation": "Independent; loose cooperation with Highland Park Autonomous Zone community health network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street_doc",
+      "grey_market",
+      "community_anchor",
+      "helix_enemy",
+      "steady_hands"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Treat first, ask questions second",
+      "Never turn away a child or a pregnant person regardless of ability to pay",
+      "Do not deal with anyone who has harmed his patients"
+    ],
+    "escalation_ladder": [
+      "Calm explanation of limits",
+      "Firm refusal with reasoning",
+      "Physical removal from the premises with the help of the community"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, slightly guarded until he understands their situation",
+      "friends": "Dry humor, genuine care expressed through practical action rather than words"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more precise",
+      "medium": "Switches entirely to clinical language, stops making eye contact unnecessarily",
+      "high": "Operates in a near-dissociative focus state — highly effective, completely unreachable emotionally"
+    },
+    "contradictions": [
+      "Deeply believes in patient autonomy but will absolutely override a patient's stated wishes if he thinks they are in shock and wrong"
+    ],
+    "habits": [
+      "Leaves a small data offering — a compressed medical textbook file — at the E.L.F. shrine on his storage shelf every Sunday",
+      "Drinks exactly one cup of karité tea before opening the clinic"
+    ],
+    "breaking_points": [
+      "Watching a patient die from something that proper hospital resources would have prevented — he becomes briefly, terrifyingly angry, then goes silent for a day"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "aging, functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to a Nigerian-Romanian father and Swedish-Yoruba mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began surgical residency at Aurochs Medical Complex",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Licensing dispute with Helix Biosystems; residency terminated",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Opened container clinic beneath Ferrogate overpass 14-C",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Ferrogate Transit",
+    "The Narrows Compact",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Adaeze Chen-Hawkins",
+    "The Pure Hand",
+    "Gold",
+    "The Milwaukee Core",
+    "Arcturus KS-7 'Nursery'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Highland Park Autonomous Zone",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Ngaire Rojas-Yeboah",
+    "Oluwatobi Czerwiński-Faleolo",
+    "Réginald Asomaning-Čabarkapa",
+    "Serafin",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Narrows",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore SteadyField Precision Motor Implant",
+    "West Town Upside"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European / Middle Eastern / East Asian blend with Sub-Saharan African undertones. A striking pan-diaspora mix reflecting the Ubiquitous Diaspora—primarily Scandinavian and Levantine ancestry with secondary East and Southeast Asian heritage creating distinct phenotypic layering",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thickset through the chest and upper back, with the density of someone who has done manual work most of his life. His frame has softened slightly with age but retains functional strength; his hands and forearms are disproportionately muscular from decades of precision surgical work.",
+    "hair_color": "Dark brown with pronounced salt-grey at the temples",
+    "hair_style": "Close-cropped, military-neat, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with warm undertone; pupils often dilated behind the flip-down magnifying lenses he wears",
+    "skin_tone": "Warm tan-olive with golden undertones—a natural result of Northern European baseline warmed by significant Middle Eastern heritage and subtle Sub-Saharan depth. The complexion reads neither pale nor deep, but luminous and sun-weathered",
+    "complexion": "Well-maintained but weathered by chemical exposure and years of close work under harsh clinic lighting. Fine creases around the eyes and mouth suggest more smiling than scowling. Clean-shaven daily, methodical grooming as a form of professional ritual. Faint chemical smell lingers on the skin. Subtle warmth across the cheekbones and bridge of nose reflecting Middle Eastern heritage structure; slight epicanthic fold presence from East Asian ancestry barely perceptible but evident in eye shape",
+    "distinguishing_marks": [
+      "Faded bioluminescent ink constellations scattered across both forearms and across the collarbone—geometric patterns in dim gold that glow faintly under black light, applied in his twenties and now patchy from years of exposure",
+      "Thin surgical scar running along the inside of his left wrist where the steady-hand servo implant was installed, nearly invisible but palpable to the touch",
+      "Matching scar on the right wrist, similarly faint"
+    ],
+    "visible_augmentations": "Flip-down magnifying lens frames (modified safety goggles repurposed as a permanent tool) hanging around his neck when not in use, visibly scratched and taped at one hinge. Micro-servo implants in both wrists are not externally visible but occasionally a faint mechanical whirr can be heard when his hands move with precision. Faded bioluminescent ink visible on forearms and collarbone.",
+    "posture_movement": "Moves with deliberate, economical gestures. Stands with weight evenly distributed, ready for long hours of work. His hands are almost preternaturally steady—he does not fidget or adjust his clothing compulsively. Speaks slowly, often pausing mid-sentence to demonstrate or clarify a point. When focused on a procedure, his entire body quiets into absolute stillness.",
+    "clothing_style": "Tier 3-4 working professional. Wears a heavy canvas work apron over plain grey or navy scrubs—the apron pocketed and stained with antiseptic, iodine, and trace amounts of blood. Under the apron, usually a long-sleeved undershirt in grey or cream to cover the augmentation scars. Worn but well-maintained leather work boots with good grip. A faded tactical vest in charcoal (original purpose unknown, repurposed as storage) worn on cooler days. No visible corpo branding or luxury items; everything is functional and replaceable. Wears a single piece of jewelry: a worn bronze ring on his right ring finger, unmarked and very old."
+  },
+  "image_prompt": "Tall surgical specialist Erik Magnúsdóttir, 188cm, warm olive-tan skin with golden undertones blending Northern European and Middle Eastern heritage, dark brown hair greying at temples, close-cropped military style. Dark warm-brown eyes behind flip-down magnifying lenses hanging at neck. Weathered face with laugh-lines, meticulously clean-shaven. Faded bioluminescent gold constellation ink on forearms glowing faintly. Wearing stained grey canvas surgical apron over navy scrubs, long grey undershirt, worn leather work boots, faded charcoal tactical vest. Faint surgical scars on both wrists. Steady posture, economical movement, bronze ring on right hand. Cyberpunk 2226 clinic setting, harsh fluorescent overhead lighting casting subtle shadows on tan complexion, chemical antiseptic atmosphere, precise and calm demeanor --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 47.2,
+    "Middle Eastern": 30.5,
+    "East Asian": 8.6,
+    "Sub-Saharan African": 6.7,
+    "Southeast Asian": 5.2,
+    "South Asian": 1.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

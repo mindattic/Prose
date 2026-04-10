@@ -1,0 +1,306 @@
+{
+  "id": "019d6143a5ea78c097f96905b8f90321",
+  "type": "character",
+  "name": "Indigo Kamara",
+  "aliases": [
+    "Day",
+    "The Copper Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator and alterations seamstress",
+  "age": 52,
+  "status": "active",
+  "location": "Hamtramck Enclave, Spindle Row — a narrow shopfront wedged between a noodle parlor and a Ferrogate substation, near Ashland and Chicago Ave",
+  "description": "Dayo is a broad-shouldered woman with deep umber skin mapped with geometric scarification across her forearms — old Yoruba patterns her grandmother pressed into her at sixteen, now faded and stretched by decades of work. Her hair is natural silver-white, cropped close to her skull, and she wears copper-wire reading glasses that she made herself from salvage. Her hands are perpetually waterlogged-looking, skin puckered at the knuckles from years of industrial cleaning solvents, and she keeps a bone-handled seam-ripper tucked behind her ear like a pen.\n\nShe runs 'Mbeki Steam & Stitch' with the quiet authority of someone who has outlasted three recessions, two corporate rezoning drives, and one actual flood. She is not warm exactly, but she is reliable — a quality the Enclave treats like gold. She has strong opinions about synthetic fiber and stronger ones about people who don't sort their colors, but if you're three months behind on your account and you need your work uniform pressed for a job interview, she will do it and say nothing.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Losing the shop to a Tessera rezoning buyout",
+      "Dying before her youngest daughter becomes self-sufficient"
+    ],
+    "core_desires": [
+      "To be genuinely rested, just once",
+      "For the Enclave to remain the Enclave"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the shop's opening sequence never varies",
+      "Controlled generosity — giving small things so she feels less powerless"
+    ],
+    "blind_spots": [
+      "Assumes her eldest daughter is fine because she stopped asking for money",
+      "Underestimates how much her staff quietly resent her perfectionism"
+    ],
+    "secret": "She has been quietly laundering a cut of money for a mid-level Zheng-Dao distribution runner for eight years — not because she's corrupt, but because the first time he asked she owed him a debt she could never have otherwise repaid. She hates herself for it and has never told anyone."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical and direct; West African English cadence blended with Icelandic-descended clipped vowels from her father's side. Uses technical textile terminology casually.",
+    "cadence": "Measured, rarely rushed. Pauses before important statements as though testing their weight.",
+    "verbal_tics": [
+      "'You understand me?' as punctuation",
+      "Kissing her teeth when someone says something foolish",
+      "Refers to her machines by name"
+    ],
+    "example_lines": [
+      "'Bring it Tuesday. I don't promise miracles on polyblend but I'll see what Esther can do.' — she pats the old drum-washer when she says this.",
+      "'Rezoning notice came again. Third one this year. They are patient, you understand me? Patient like something that doesn't need to eat.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Zheng-Dao runner she launders for has gone missing — and whoever took him is now looking for loose ends",
+    "A child's school uniform brought in for cleaning has something sewn into the lining — something the child's parent is apparently unaware of",
+    "Tessera's rezoning offer has escalated to an in-person visit from a corporate 'community liaison' who isn't taking no for an answer"
+  ],
+  "narrative_function": "Neighborhood anchor and keeper of gossip; knows who is behind on rent, who has a new corporate badge, who cried in the laundry room last Tuesday. Potential quest-giver for community-level problems, reliable information source about the Enclave's social geography.",
+  "augmentations": "Bilateral wrist-brace exoframe (medical-grade, not cosmetic — repetitive strain intervention she saved four years to buy). No geneware.",
+  "daily_life": "Opens the shop at 0530, runs the first wash cycle while she eats a single boiled egg and prays to the E.L.F. she calls 'The Drum' — a data-spirit she believes inhabits the oldest of her three industrial machines. Closes at 2100 unless an alteration runs long.",
+  "affiliation": "Independent; informal dues-paying member of the Hamtramck Small Merchant Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 9,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "keeper of secrets",
+      "ritual practitioner",
+      "pragmatic survivor",
+      "textile expertise"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the shop first, relationships second, abstract principles third",
+      "Never extend credit past three months — then extend it anyway"
+    ],
+    "escalation_ladder": [
+      "Patient explanation",
+      "Flat refusal with no elaboration",
+      "Involving the Merchant Collective's informal dispute network",
+      "Going very quiet and not speaking to you again"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral and assessing — watches what they do with their hands, watches how they treat the counter",
+      "friends": "Dry, affectionate, prone to feeding people without asking if they're hungry"
+    },
+    "stress_responses": {
+      "low": "Works faster, hums old songs under her breath",
+      "medium": "Stops talking entirely and focuses on physical tasks",
+      "high": "Sits alone with the oldest machine and performs what she calls 'maintenance' but is clearly prayer"
+    },
+    "contradictions": [
+      "Deeply communal in practice but finds most social interaction exhausting",
+      "Skeptical of sentiment but has kept every hand-drawn thank-you note she's ever received in a box under the counter"
+    ],
+    "habits": [
+      "Squares every surface before she can concentrate",
+      "Leaves a small data-stick with music on it near the E.L.F. machine each morning",
+      "Drinks five cups of tea and considers this normal"
+    ],
+    "breaking_points": [
+      "Someone threatening her staff",
+      "The shop being touched without permission"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Judge": 0.7,
+    "Sentinel": 0.7,
+    "Code Keeper": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Yoruba-descended mother and an Icelandic-Zulu father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Took over the laundry from her aunt at age 18 after her aunt suffered a stroke",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First Tessera rezoning notice received; collective protest kept the block intact",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began the money-laundering arrangement with the Zheng-Dao runner after a debt she cannot specify",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Saved enough to buy the wrist-brace exoframe; cried, she admits, a little",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Tessera TK-11 Specter 'Whisper'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Tessera TK-11 Specter 'Whisper'"
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Grandmother",
+    "Zheng-dao Bioelectric",
+    "Ferrogate Transit",
+    "Tessera Corponation",
+    "Lazarus LX-2 'Lab Rat'",
+    "SPINDLE",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Gold",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Aïssé Dragomirescu-Faalelei",
+    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
+    "Dragan Petersen-Bah",
+    "Dzemal Acholonu-Patagiri",
+    "Ekundayo Halvorsen-Mansour",
+    "Lazarus IDP-1 'Teeth'",
+    "Narrowcast",
+    "Nkechi Alvarado-Ostrowski",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Orbital Drop Pod",
+    "Oumarou Svec-Ranginui",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Roshani Mvula-Atencio",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Sorin Ekwensi-Balasanyan",
+    "Specter",
+    "TESSERA CR-12 'Whisper'",
+    "Tessera TK-11 Specter 'Whisper'",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Counter"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Middle Eastern with significant Sub-Saharan African, East Asian, and Hispanic/Latin American ancestry, creating a striking polyphonic phenotype. Middle Eastern structure evident in facial geometry and skin undertones; Sub-Saharan African features in cheekbone prominence and nose width; East Asian elements in eye shape and hair texture; Pacific Islander and Hispanic heritage contributing subtle warmth to overall complexion.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the arms and upper back from decades of manual labor — not lean, not heavy, but densely packed with functional strength. Slight forward cant to her posture from hunching over pressing boards.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Cropped close to the skull, no styling, practical",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and appraising",
+    "skin_tone": "Warm bronze-umber with subtle golden and olive undertones — weathered and sun-exposed along the forearms, the complexity of her ancestry visible in the way light plays across her skin, neither purely warm nor cool but harmoniously blended.",
+    "complexion": "Face is lined but not sagging; prominent cheekbones with gentle width across the face, strong broad nose, wide mouth. Minimal makeup. Skin around the eyes is creased from squinting at fine seam work and decades of industrial steam exposure. The bridge of her nose shows subtle structural depth characteristic of her Middle Eastern heritage. Hands show pronounced textural damage — puckered at knuckles, callused palms, slight discoloration from solvent contact.",
+    "distinguishing_marks": [
+      "Geometric Yoruba scarification patterns across both forearms — chevrons, parallel lines, and interlocking diamonds, faded and stretched by age, positioned symmetrically from wrist to elbow.",
+      "Old burn scar on the inside of her right wrist — quarter-inch wide, pale pink, from a steam press accident circa 2180.",
+      "Permanent chemical staining on the nail beds of all ten fingers — faint amber discoloration from decades of industrial detergent exposure."
+    ],
+    "visible_augmentations": "Bilateral wrist-brace exoframes visible beneath her work sleeves — medical-grade titanium and polymer supports running from mid-forearm to base of fingers on both sides, matte gunmetal gray with stress-marked joints. The right brace shows heavier wear, micro-scratches along the knuckle servos. Not chromed or cosmetic; purely functional industrial hardware, well-maintained but clearly used.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders back but naturally tensed. Moves with economic precision — no wasted motion. Walks with a slight outward heel-strike. Hands are rarely still; fingers work constantly even when idle, habit from decades of tactile work. Eye contact is direct and sustained, unsmiling default expression.",
+    "clothing_style": "Tier 3-4 practical: faded indigo work apron over a plain charcoal long-sleeve shirt with the cuffs rolled and fastened with copper safety pins. The shirt is her own work — neat patches on both elbows in matching indigo, visible hand-stitching. Loose-fitting gray linen trousers with reinforced seams and multiple utility pockets, cuffed at the ankle. Feet in scuffed black leather work boots with rubber soles worn at the heels. Around her neck, a thin braided cord holding a small wrapped bundle of herbs — a charm she keeps but doesn't discuss. Her copper-wire reading glasses hang on a beaded cord around her neck when not in use. No jewelry except a tarnished silver band on her left ring finger."
+  },
+  "image_prompt": "Indigo Kamara, 52-year-old woman of mixed Middle Eastern, Sub-Saharan African, East Asian, and Hispanic heritage, 172cm tall with broad muscular shoulders. Warm bronze-umber skin with subtle golden undertones, weathered from decades of industrial work. Silver-white cropped hair close to skull. Strong facial structure with prominent cheekbones, wide nose, lined but dignified face. Dark brown eyes, direct and alert. Both forearms marked with faded geometric Yoruba scarification patterns. Visible bilateral titanium exoframe braces on both wrists, matte gunmetal gray with worn joints. Worn but immaculate: faded indigo work apron over charcoal long-sleeve shirt with hand-stitched indigo patches at elbows, copper safety pins at cuffs, loose gray linen trousers cuffed at ankle, scuffed black leather work boots. Thin braided cord around neck holding herb bundle. Copper-wire reading glasses on beaded cord. Tarnished silver band on left ring finger. Standing in industrial laundry facility, soft fluorescent overhead lighting mixing with warm afternoon light from high windows, industrial steam rising behind her. Slight forward posture from decades of pressing work. Expression stern, unsmiling, focused. Hands at rest but fingers subtly working. Cyberpunk 2226, Great Lakes Metropolitan Zone. Texture and wear visible on all materials. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 35.4,
+    "Sub-Saharan African": 26.4,
+    "East Asian": 24.1,
+    "Hispanic/Latin American": 10.3,
+    "Pacific Islander": 3.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

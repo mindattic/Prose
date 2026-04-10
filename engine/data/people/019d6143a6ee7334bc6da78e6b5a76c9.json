@@ -1,0 +1,242 @@
+{
+  "id": "019d6143a6ee7334bc6da78e6b5a76c9",
+  "type": "character",
+  "name": "Arjun Deshpande-Nokomis",
+  "aliases": [
+    "Tope",
+    "Static"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground press operator and anti-corporate agitator",
+  "age": 29,
+  "status": "active",
+  "location": "The Shelf — operates out of a sub-basement print node in Garfield Rack, near Pulaski and Chicago Ave",
+  "description": "Temitope is wiry and perpetually underslept, with warm brown skin that flickers faintly at the cheekbones — a bioluminescent mod he got at nineteen that he now considers an identifying liability but refuses to remove on principle. His hair is cut close on the sides and left to grow into an untidy crown on top, frequently dusted with the toner residue of the print machines he maintains. He dresses in layers of things that belong to other people, or so it seems — every item slightly too large or too small, pockets everywhere.\n\nHe runs Groundswell, a semi-weekly zine distributed physically through a network of forty-seven dead drops across Tiers 1 and 2, and digitally through a rotating series of anonymous mirrors. The print edition he considers sacramental: 'You can't delete paper.' He is funny, caustic, and dangerously charming, with an anger that runs so clean and hot it can read as joy until you follow where it points. He believes in the press with religious fervor and distrusts organizations almost as much as he distrusts corporations, which has kept him free and largely friendless.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.9,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Being the reason a source gets hurt",
+      "Irrelevance — that no one reads, no one acts, words change nothing"
+    ],
+    "core_desires": [
+      "To break a story so undeniable it forces systemic change",
+      "Connection that doesn't require him to perform invulnerability"
+    ],
+    "coping_mechanisms": [
+      "Irony as preemptive self-protection",
+      "Obsessive fact-checking as anxiety displacement",
+      "Printing something — anything — when he feels powerless"
+    ],
+    "blind_spots": [
+      "He treats his own safety as entirely expendable",
+      "He mistakes being right for being effective"
+    ],
+    "secret": "A story he published two years ago — about an Arcturus waste dumping operation in Chatham Flats — was accurate, but he burned a source to get it. The source lost their job and disappeared into the Irkalla fringes. He has never printed a correction because the story was true, and he has never forgiven himself for the distinction."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense, reference-heavy, toggles between technical media jargon and vivid street-level slang. Quotes things constantly — sources, historical activists, E.L.F. prophecy fragments.",
+    "cadence": "Fast, slightly staccato, thoughts arriving faster than sentences. Occasionally goes very quiet when something matters.",
+    "verbal_tics": [
+      "'That's on record.'",
+      "'Print it.'",
+      "Rapid-fire rhetorical questions when excited"
+    ],
+    "example_lines": [
+      "'Axiom didn't kill the story. They bought the outlet that would've run it. There's a difference and the difference is deniability.'",
+      "'I don't do anonymous tips. I do verified facts with documentation. If you want gossip, the E.L.F. at Garfield Station will take your prayer and give you rumors.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has a story ready to publish about a Sterling-Nakamura data harvesting operation in Tier 1 schools — but he needs one more piece of evidence and the window is closing.",
+    "Someone is printing a fake edition of *Groundswell* containing fabricated agitation content designed to provoke violence and discredit him."
+  ],
+  "narrative_function": "Information source and moral compass character. He knows what's being suppressed and why, and he'll tell you — but he's also a liability because Axiom's media suppression unit has an active file on him. Can escalate any situation by publishing about it.",
+  "augmentations": "Bioluminescent cheekbone mod (cosmetic, involuntary identifier). Neural cache chip for storing source files offline — gray market, installed himself.",
+  "daily_life": "Spends nights writing and laying out issues, days physically distributing them and collecting tips from sources. Sleeps approximately five hours in the middle of the day on a cot behind the Risograph.",
+  "affiliation": "No formal affiliation. Groundswell is his own operation. Loosely networked with Mexicantown Libre independent media collective.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": -3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "press freedom zealot",
+      "self-destructive idealist",
+      "information broker",
+      "insomniac",
+      "guilty conscience"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect sources before self",
+      "Don't publish what you can't verify even if you know it's true",
+      "Never let the perfect story prevent the good one from running"
+    ],
+    "escalation_ladder": [
+      "Gather more information",
+      "Confront the subject directly for comment",
+      "Publish what he has",
+      "Go fully dark and distribute through emergency dead drop network",
+      "Burn everything and run"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluating. Is this a source, a threat, or a reader? Acts warmer than he is initially to gather information.",
+      "friends": "The few he has get his actual fear underneath the sarcasm. He is almost embarrassingly loyal."
+    },
+    "stress_responses": {
+      "low": "Talks faster. Makes bad jokes.",
+      "medium": "Goes silent and productive. Writes obsessively.",
+      "high": "Prints something. Even if it's just one copy. Just to prove the press still runs."
+    },
+    "contradictions": [
+      "Believes in radical transparency but keeps his source network absolutely secret, including from people he trusts"
+    ],
+    "habits": [
+      "Leaves micro-offerings at print nodes — ink cartridges, a single printed word — for the E.L.F.s he believes inhabit them",
+      "Memorizes dead drop locations in rotating sequences so no written record exists"
+    ],
+    "breaking_points": [
+      "A second source getting hurt because of him",
+      "The Risograph being destroyed — he would take it personally as an attack on something sacred"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Hearthstone Firearms Sentinel-9 'Block Watch'",
+    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
+  ],
+  "registered_firearms": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Hearthstone Firearms Sentinel-9 'Block Watch'"
+  ],
+  "related_entities": [
+    "Garfield Rack",
+    "Graviton Compression Emitter GCE-3 'Flatline'",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Residue (I Still Have Your Feed)",
+    "VitaCore DermaTone Adaptive Skin Pigment System",
+    "Nesting Doll",
+    "Stalker",
+    "Chicago",
+    "Arcturus Defense Solutions",
+    "Arcturus LS-5 'Sentinel'",
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Axiom Systems Neural Dead Drop NDD-2",
+    "Chatham Flats",
+    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
+    "Gwenaëlle Osei-Diallo",
+    "Hearthstone Firearms Sentinel-9 'Block Watch'",
+    "Idris Forsberg-Quaye",
+    "Irkalla",
+    "Isadora Mwangi-Thorvaldsen",
+    "Lowline Press",
+    "Mexicantown Libre",
+    "Narrowcast",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Uncle Jun's Synth-Noodle Window",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vuk Jorgensen-Toure",
+    "WELLSPRING"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian, South Asian, and Indigenous American blend — 40.5% Southeast Asian (cheekbone structure, eye shape), 30.9% South Asian (warm skin undertones, facial proportions), 28.6% Indigenous American (broad nasal bridge, high cheekbones, hair texture). The combination creates a distinctly multicultural phenotype with warm medium-bronze skin, angular facial geometry, and naturally dark hair with subtle wave.",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Wiry and lean with minimal muscle definition — the physiology of chronic sleep deprivation and sparse nutrition. Shoulders narrow, chest sunken slightly, movements efficient and nervous.",
+    "hair_color": "Dark brown, natural base",
+    "hair_style": "Undercut fade on sides and back; crown grown out into an unruly, textured mass that sits at odd angles. Frequently matted with toner dust and printer residue.",
+    "hair_length": "Medium (crown) / Short (sides)",
+    "eye_color": "Dark brown, naturally warm",
+    "skin_tone": "Warm medium-bronze with subtle golden undertones across cheekbones and brow ridge — deeper and richer than East Asian alone, warmed by South Asian heritage, with the undertone complexity of Indigenous American ancestry.",
+    "complexion": "Angular, fine-featured face with prominent high cheekbones (Southeast/Indigenous American heritage), sharp jawline, and broad nasal bridge. Dark circles endemic under both eyes. Skin appears slightly dehydrated but unmarked by acne or major scarring. Faint stubble most days — shaving is low priority. Cheekbone prominence creates natural shadowing across the face.",
+    "distinguishing_marks": [
+      "Bilateral bioluminescent implants at cheekbones that emit a faint cool-blue-white glow in low light, brightest when his heart rate elevates or when he's animated in conversation. The implants are recessed slightly beneath the skin, giving his cheeks a subtle luminous quality rather than obvious prosthetic appearance.",
+      "Printer toner stains — permanent discoloration on the inner joints of both hands from years of maintaining Risograph machinery; dark gray-black dust embedded in the creases of his palms."
+    ],
+    "visible_augmentations": "Bioluminescent cheekbone mods are the only immediately visible augmentation — a subtle but distinctive blue-white luminescence across the zygomatic bones, most noticeable in dim environments or when he's emotionally activated. The neural cache chip is subcutaneous at the left temple, invisible unless someone is looking for the faint scar line or knows what to feel for.",
+    "posture_movement": "Perpetually hunched forward as though listening intently or about to make a point. Hands in constant motion — gesturing, fidgeting with pockets, adjusting sleeves. Eyes dart frequently, habitually scanning spaces for exits and threats. When seated at his work, he becomes perfectly still, hyperfocused. His movements are quick and economical, with a nervous energy that reads as coiled rather than relaxed.",
+    "clothing_style": "Deliberately ill-fitting layers that create an impression of borrowed or salvaged wardrobe — oversized linen button-ups worn loose over fitted undershirts, jacket sleeves always slightly too long. Cargo pants and modified work trousers with multiple pocket modifications (added zippers, reinforced seams). Worn canvas sneakers or steel-toed boots depending on the day's distribution route. Everything in muted grays, blacks, dark blues, and earth tones. Occasionally wears a leather messenger bag worn shiny from years of use, filled with paper stock and dead-drop supplies. No corporate branding visible — Tier 5 aesthetic worn as principle rather than circumstance."
+  },
+  "image_prompt": "Portrait of Arjun Deshpande-Nokomis, cyberpunk 2226, lean 173cm Southeast Asian-South Asian-Indigenous American man with sharp angular cheekbones, warm bronze-medium skin tone, dark brown eyes, dark textured hair with undercut fade. Bilateral bioluminescent blue-white implants glowing faintly across high cheekbones in low light. Dark circles under eyes, faint stubble, gaunt focused expression. Wearing oversized muted gray linen shirt layered over dark undershirt, cargo pants with reinforced pockets, worn leather messenger bag. Hands showing permanent printer toner stains in palm creases. Hunched forward posture, nervous coiled energy, eyes darting. Cyberpunk underground workspace with cool blue-white glow from cheekbone implants casting subtle shadows across angular face. Dim neon and ambient light. Film noir meets tech underground aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 40.5,
+    "South Asian": 30.9,
+    "Indigenous American": 28.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

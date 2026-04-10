@@ -1,0 +1,338 @@
+{
+  "id": "019d6143a62170bdb97c4a3d7795dbb6",
+  "type": "character",
+  "name": "Luca Tuivailala",
+  "aliases": [
+    "Surge",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Precision elimination specialist — ghost",
+  "age": 30,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and Division",
+  "description": "Hadiya Hayashi-Amankwah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 30, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a ghost out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHadiya Hayashi-Amankwah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.76,
+      "ideal": 0.32,
+      "id": 0.44,
+      "shadow": 0.1,
+      "mask": 0.63,
+      "ghost": 0.45
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Betrayal by someone they trust — the only currency that matters",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "Knowledge — to understand the systems that grind people down",
+      "A crew worth trusting — people who stay when the shooting starts"
+    ],
+    "coping_mechanisms": [
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Assumes the worst in corporate people, missing the rare ones who could be allies"
+    ],
+    "secret": "Hadiya Hayashi-Amankwah murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
+    ],
+    "example_lines": [
+      "\"I don't exist. Neither will they.\"",
+      "\"Clean means no witnesses, no evidence, no questions. That's three things. I charge for each.\"",
+      "\"The target will stop breathing at the specified time. What you do with that information is your concern.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Hadiya Hayashi-Amankwah's reputation — and a price for silence",
+    "A high-paying contract turns out to target someone Hadiya Hayashi-Amankwah owes a personal debt to",
+    "The fixer who handles Hadiya Hayashi-Amankwah's contracts goes silent — dead, disappeared, or turned"
+  ],
+  "narrative_function": "Hadiya Hayashi-Amankwah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage. Subdermal weapon mount — pop-out blade in each forearm",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "personality": {
+      "aggression": 0.13,
+      "caution": 0.45,
+      "loyalty": 0.2,
+      "greed": 0.2,
+      "empathy": 0.29
+    },
+    "drives": [
+      "survival",
+      "money",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 4,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "ability to remain calm under fire"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "inability to delegate — must control everything personally"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "ghost",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7,
+    "Opportunist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Adaptive Camouflage Skin",
+    "The Narrows Compact",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Burden of Longitude",
+    "Slagworks Industrial",
+    "Breck Tannen",
+    "Chibundo Reinholt-Sarpong",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Mika Sorel",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Pyroelectric Sebum Volatilization Projector",
+    "Quilt",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sorin Ekwensi-Balasanyan",
+    "Spire Light on Still Water",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "The Narrows",
+    "The Shelf",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (56.3%) with substantial Pacific Islander ancestry (35.5%) and Hispanic/Latin American heritage (8.2%) — a complex diaspora blend creating rich warm tones with the robust frame characteristic of equatorial and island populations",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and heavily muscled, density rather than bulk — the physique of someone who trains methodically and carries their weight as functional mass. No wasted frame.",
+    "hair_color": "Black with iridescent chrome undertones where the dermal augmentation spreads up the scalp",
+    "hair_style": "Pulled back tight, secured with a matte-black titanium clasp",
+    "hair_length": "Long — shoulder-length, practical",
+    "eye_color": "Dark brown, natural — no augmentation",
+    "skin_tone": "Deep warm brown with reddish undertones — the rich melanin density of Sub-Saharan and Pacific heritage creates a complexion that catches light with subtle warmth. Visible chromatic patterning from dermal camouflage creates shifting iridescent patches across shoulders, collarbone, and upper chest",
+    "complexion": "Strong cheekbones and defined jaw reflecting Sub-Saharan and Pacific Islander ancestry — facial structure is broad and angular rather than delicate. Skin is clear, methodically maintained, with visible chrome pigment cells creating a subtle oil-slick shimmer across muscular surfaces when light hits at angle. Minimal cosmetics — efficiency over aesthetics.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to ear, legacy of Narrows street work, barely noticeable unless you know to look",
+      "Chromatic dermal patterning across both shoulders and upper back — intentional augmentation, deep iridescent blue-to-green shifts under movement",
+      "Faint linear scarring along both forearms where subdermal weapon mounts interface with skin — visible only under close inspection or when blades deploy"
+    ],
+    "visible_augmentations": "Chromatic skin pigment cells — active dermal camouflage creating subtle iridescent shimmer across shoulders, chest, and upper back. The chrome is visible and deliberate, not hidden. No attempt to blend the augmentation into baseline human appearance.",
+    "posture_movement": "Compact, economical — shoulders slightly forward, weight centered. Moves like someone trained in close-quarters work, every gesture calculated for minimal wasted motion. Stillness is her default state; when she moves, it's with purpose. Eyes track entry/exit points and high-ground positions automatically.",
+    "clothing_style": "Tier 2-3 practical — matte-black reinforced synthweave jacket over fitted base layer, cargo pants with titanium-reinforced pockets, low-profile ankle boots with steel toe caps. No logos or corp insignia. All gear is functional, minimal ornamentation. Colors are blacks, grays, deep blues — nothing that stands out in the Spires or the Shelf. Clothing is designed for mobility and concealment, not status."
+  },
+  "image_prompt": "Luca Tuivailala, cyberpunk 2226, deep warm brown skin with Sub-Saharan and Pacific Islander heritage reflected in strong angular features and broad shoulders, 178cm tall, muscled functional build. Long black hair pulled back tight with titanium clasp, dark natural eyes. Chromatic iridescent dermal augmentation patterning across shoulders and upper chest in blue-to-green shimmer, visible under movement. Thin white temple-to-ear scar barely visible. Wearing matte-black reinforced synthweave jacket over fitted base layer, cargo pants with titanium pockets, steel-toed ankle boots. Compact economical posture, weight centered, eyes tracking environment like trained operative. Great Lakes Metropolitan Zone neon-lit industrial setting, moody cyberpunk lighting casting shadows across chrome-shimmer skin, high-contrast blacks and deep blues, surveillance cameras and megastructure in background, gritty Spires aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 56.3,
+    "Pacific Islander": 35.5,
+    "Hispanic/Latin American": 8.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

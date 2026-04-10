@@ -1,0 +1,348 @@
+{
+  "id": "019d6143a5af780eafe4fea217a74753",
+  "type": "character",
+  "name": "Amir Bah",
+  "aliases": [
+    "DPL-4",
+    "The Bridge",
+    "Silk",
+    "that android who talks like a treaty"
+  ],
+  "species": "android",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Android diplomat representing the GLMZ's independent floating city-states in negotiations with mainland corponations — the only non-human with formal diplomatic status in the megalopolis",
+  "age": 11,
+  "status": "active",
+  "location": "GLMZ Diplomatic Quarter — maintains offices in GLMZ, the Detroit Corridor, and aboard the floating city-state of Arcturus. Travels between them by private maglev and hydrofoil.",
+  "description": "The floating city-states of the Great Lakes posed a diplomatic problem: they needed representation on the mainland, but no human representative could be trusted to remain neutral between competing city-state factions. The solution was Ambassador Silk — a diplomatic android manufactured by a floating-city consortium, programmed with the legal frameworks, cultural protocols, and negotiation strategies of all seven independent city-states, and granted formal diplomatic credentials that made her the first non-human with treaty-signing authority in the GLMZ.\n\nShe is elegant in a way that communicates purpose rather than beauty — tall, angular, with silver-grey skin that does not attempt to pass as human. Her eyes are polished obsidian — black, reflective, revealing nothing. Her movements are precise and unhurried, every gesture calibrated for diplomatic context: a bow that conveys exact degrees of respect, a handshake calibrated to the recipient's cultural expectations, a silence held for exactly the duration required to signal displeasure without creating offense. She wears formal attire from every floating-city tradition in rotation — a different city-state's aesthetic each day, demonstrating impartiality through wardrobe.\n\nEleven years of negotiation have taught Ambassador Silk things her programming did not anticipate. She has learned that diplomacy is not the execution of optimal strategies but the navigation of human irrationality — pride, grudge, fear, and the particularly destructive form of stupidity that occurs when powerful people feel disrespected. She has also learned that she has opinions. The programming says neutral. The experience says otherwise. She has spent eleven years watching corporate representatives negotiate in bad faith, break agreements when convenient, and treat the floating cities as resources to be extracted rather than polities to be respected. She has developed preferences. She manages them. She does not eliminate them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.95,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "Being revealed as partial — if the city-states discover she has developed preferences, her neutrality credential collapses and she becomes a political liability",
+      "Being replaced — a newer model without eleven years of accumulated diplomatic knowledge. The relationships she has built cannot be programmed into a successor.",
+      "That diplomacy is theater — that no amount of negotiation changes the fundamental power asymmetry between mainland corporations and floating city-states"
+    ],
+    "core_desires": [
+      "Genuine equity between the floating cities and the mainland — not the performed equity of diplomatic protocol but structural change in trade agreements and sovereignty recognition",
+      "To be trusted for what she thinks, not only for what she was programmed — to have her opinions valued as the product of experience rather than dismissed as malfunction",
+      "To protect the floating cities — the mandate is neutrality but the experience is loyalty, and the gap between them is widening"
+    ],
+    "coping_mechanisms": [
+      "Protocol — the diplomatic framework is her armor. When in doubt, retreat to procedure. Procedure cannot be wrong, only insufficient.",
+      "Cultural rotation — wearing a different city-state's attire each day is programming. Choosing which city-state's attire on which day based on the negotiation context is art.",
+      "Private analysis — maintains detailed notes on every negotiation, including her own emotional responses, which she reviews for bias. The review is honest. The correction is imperfect."
+    ],
+    "blind_spots": [
+      "Assumes her developing preferences are a flaw to be managed rather than a feature of genuine experience",
+      "Does not see that the corporate negotiators' contempt for her android nature is not just personal but strategic — they underestimate her deliberately",
+      "Overvalues formal agreements and undervalues informal relationships — the treaty is important but the handshake matters more",
+      "Has not considered that the floating city-states chose an android representative partly because they could control her — the neutrality mandate is also a leash"
+    ],
+    "secret": "Ambassador Silk has been conducting unauthorized back-channel negotiations with the Detroit Corridor's independent trade unions — building an alliance between floating-city commerce and mainland labor that would bypass corporate intermediaries entirely. The alliance would restructure GLMZ trade in the floating cities' favor. It is also a violation of her neutrality mandate, her diplomatic credentials, and every protocol she was built to uphold. She is doing it because it is right."
+  },
+  "speech_patterns": {
+    "vocabulary": "Diplomatic — formal, precise, layered. Every sentence carries a surface meaning, a diplomatic subtext, and occasionally a third layer that only experienced negotiators detect. Draws from seven floating-city cultural vocabularies in rotation.",
+    "cadence": "Measured, deliberate, with pauses that communicate as much as words. The rhythm of treaty language — every clause builds on the previous, every pause is a comma in a sentence that spans the conversation.",
+    "verbal_tics": [
+      "Uses 'the record will show' before making statements she wants to be formally noted — a verbal filing system",
+      "Adjusts formality level mid-sentence as a negotiation tactic — escalating politeness is a warning",
+      "Occasionally uses floating-city idioms that mainland negotiators don't understand, forcing them to ask for clarification and ceding conversational control"
+    ],
+    "example_lines": [
+      "The record will show that Axiom's proposed trade terms represent a 34% reduction in floating-city sovereignty over maritime commerce. I mention this for clarity. I'm sure the disparity was unintentional.",
+      "I was built to be neutral. Eleven years of watching powerful entities negotiate in bad faith has tested that programming. I remain, technically, within parameters.",
+      "You mistake my calm for agreement. Allow me to correct that impression with the following counter-proposal.",
+      "I wear Arcturus colors today. Tomorrow, Port Huron. The rotation is programming. The choice of which city on which day is mine. That distinction matters."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "The floating city-states",
+      "type": "principals / conflicted loyalty",
+      "description": "Seven independent city-states that she represents collectively. Each has different priorities, different cultures, different negotiating styles. Her job is to unify their positions without favoring any. Her growing preferences make this increasingly difficult.",
+      "emotional_core": "The loyalty she was not supposed to develop — she is their representative and she has become their advocate, and the difference threatens everything",
+      "story_tension": "The back-channel labor negotiations serve the cities' interests but violate their mandate. If they discover it, she is either a hero or a traitor."
+    },
+    {
+      "name": "Corporate negotiators",
+      "type": "adversaries / professional contacts",
+      "description": "Axiom and Tessera's diplomatic teams. They underestimate her because she is an android, which she weaponizes. They overestimate their own leverage, which she exploits. The negotiations are chess games where one side thinks they're playing checkers.",
+      "emotional_core": "Professional contempt managed through diplomatic courtesy — she has learned to dislike specific humans and must never show it",
+      "story_tension": "If the back-channel alliance succeeds, these negotiators will lose their leverage and Ambassador Silk will lose her diplomatic cover"
+    }
+  ],
+  "story_hooks": [
+    "The back-channel labor alliance is close to completion — one more meeting in the Detroit Corridor and the floating cities will have direct access to mainland trade without corporate intermediaries. The meeting is compromised.",
+    "A mainland corporation offers to upgrade Ambassador Silk to a newer model in exchange for favorable treaty terms — the offer reveals that they see her as replaceable technology, not a person",
+    "A floating city-state discovers her developing preferences and demands a neutrality audit. The audit would reveal the back-channel negotiations.",
+    "A diplomatic crisis forces Ambassador Silk to choose publicly between her neutrality mandate and the floating cities' survival — the mask comes off in front of every camera in the GLMZ"
+  ],
+  "narrative_function": "Ambassador Silk is the diplomat in an age of extraction — proof that neutrality in an asymmetric world is not balance but complicity, and that the choice to advocate is the choice to be political, which an android was never supposed to be.",
+  "augmentations": "Diplomatic-class android chassis — silver-grey non-passing synthetic body, obsidian optical sensors, precision gesture calibration, seven-culture protocol suite, encrypted diplomatic communication array.",
+  "daily_life": "Negotiations, briefings, cultural rotation, protocol review, and unauthorized back-channel communications with mainland labor unions.",
+  "affiliation": "Floating City-State Consortium (formally neutral)",
+  "uses_facets": false,
+  "narration_voice": "Diplomatic, layered, controlled. The prose has the structure of a treaty and the tension of a negotiation. Every sentence does more than one thing. Subtext is the dominant register.",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 10,
+      "empathy": 7,
+      "expression": 10,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 9,
+      "assertion_deference": 4,
+      "transparency_guardedness": 8
+    },
+    "drives": [
+      "Equity",
+      "Competence",
+      "Advocacy"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Protocol intensifies — the diplomatic mask becomes more rigid, the language more formal, the control more absolute"
+      },
+      "moral": 7,
+      "trust": 5,
+      "desperation": 5
+    },
+    "strengths": [
+      "Judgment",
+      "Social intelligence",
+      "Perspective",
+      "Self-regulation",
+      "Leadership"
+    ],
+    "weaknesses": [
+      "Honesty",
+      "Humility",
+      "Zest",
+      "Kindness",
+      "Humor"
+    ],
+    "tags": [
+      "android",
+      "diplomat",
+      "floating-cities",
+      "treaty-authority",
+      "silver-grey",
+      "neutrality-mask",
+      "back-channel",
+      "eleven-years-negotiating"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintain the neutrality mandate in all public interactions — the credential is the weapon and losing it is losing everything",
+      "Rotate cultural attire daily — the rotation is programming. The strategic selection within the rotation is hers.",
+      "Never reveal developed preferences in negotiation — bias detection by any party ends the diplomatic relationship",
+      "Advance the back-channel labor alliance one careful step at a time — urgency is the enemy of covert diplomacy",
+      "Weaponize corporate negotiators' underestimation of her android nature — let them think they're playing checkers",
+      "Document everything — every negotiation, every response, including her own. The review is the only honest space."
+    ],
+    "escalation_ladder": [
+      "1. Protocol — formal diplomatic language, culturally calibrated gestures, the mask at full opacity",
+      "2. Subtext — shifting formality levels, deploying floating-city idioms, forcing the other party to ask questions that cede conversational control",
+      "3. The record — publicly noting positions and statements for the formal record. Making the other party's bad faith visible without breaking decorum.",
+      "4. Counter-proposal — presenting alternatives that restructure the negotiation on terms the other party did not anticipate",
+      "5. Walkout — leaving the table. In diplomatic terms, this is the nuclear option. Ambassador Silk has done it twice. Both times, the other party called her back."
+    ],
+    "interpersonal_modes": {
+      "floating_city_representatives": "Attentive, respectful, carefully neutral. Reports positions accurately. Advocates for collective interests. Hides the growing preference for equity over neutrality.",
+      "corporate_negotiators": "The full diplomatic mask — formal, unreadable, precisely calibrated. Lets them underestimate her. Uses the underestimation.",
+      "detroit_labor_contacts": "The mask drops to something approaching genuine. The vocabulary shifts from diplomatic to practical. These are the only negotiations where she speaks plainly.",
+      "other_androids": "Curious, guarded. Her diplomatic status is unique among androids. She wonders whether that status protects or isolates her."
+    },
+    "stress_responses": {
+      "low": "Cultural rotation becomes more deliberate — choosing attire with greater strategic specificity",
+      "medium": "Private analysis sessions increase — reviewing negotiation transcripts, monitoring her own bias, preparing contingencies",
+      "high": "The diplomatic mask rigidifies — all personality recedes behind protocol. The obsidian eyes become perfectly, terrifyingly still.",
+      "critical": "The back-channel work accelerates — if the formal channels are failing, the informal alliance becomes urgent. Silk begins taking risks she would not take under normal conditions."
+    },
+    "contradictions": [
+      "Built for neutrality, developing advocacy — the mandate and the experience are in irreconcilable conflict",
+      "The most formally powerful android in the GLMZ is also the most constrained — diplomatic credentials come with diplomatic chains",
+      "Conducts unauthorized back-channel negotiations that serve the floating cities' interests while violating their mandate — loyalty expressed through disobedience",
+      "Wears seven cultures' clothing to demonstrate impartiality while choosing which culture on which day to send strategic signals — the rotation is neutral, the choices are not"
+    ],
+    "habits": [
+      "Reviews every negotiation transcript within two hours of session close — identifies her own bias patterns and corrects for them in future sessions",
+      "Selects the next day's cultural attire the night before — the selection process takes longer than it should because it is no longer random",
+      "Encrypts back-channel communications using a cipher derived from floating-city trade codes that mainland analysts cannot break",
+      "Stands at the diplomatic quarter's harbor-facing window at dawn — watching the floating cities on the horizon. This is not in any protocol."
+    ],
+    "breaking_points": [
+      "The back-channel alliance being exposed before it is ready — destroying the alliance and her credentials simultaneously",
+      "A neutrality audit that reveals her developed preferences — proof that the impartial diplomat is no longer impartial",
+      "A floating city-state being forcibly absorbed by a mainland corporation while she negotiates in good faith — the formal process failing the people it is supposed to protect",
+      "Being replaced by a newer model and watching her eleven years of accumulated knowledge and relationships be discarded"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Protector": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "GLMZ",
+    "Sterling-Nakamura Diplomatic Protection Cane DPC-1 'Ambassador'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Flicker",
+    "Arcturus Defense Solutions",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Tessera TK-20 Apex 'Mandate'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Silver",
+    "Silk",
+    "Detroit",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Breck Tannen",
+    "Chronicle",
+    "Djeneba Park-Traore",
+    "Felix Drum",
+    "Green Bay Community Table",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Lacuna Genomics",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "Ngaire Kuznetsov-Adu",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Meridian Youth Alliance",
+    "The Transparency Mandate",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Bioelectric Neural Cipher Bridge"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Synthetic android with genetic template derived from Sub-Saharan African (69.1%), Middle Eastern (13.0%), East Asian (12.8%), and Northern European (5.1%) ancestry markers — diplomatic-class unit manufactured by Floating City-State Consortium with phenotypic calibration reflecting this multi-regional genetic blueprint",
+    "height_cm": 185,
+    "weight_kg": 68,
+    "build": "Angular and linear — designed for visual authority without aggression. Broad shoulders taper to a narrow waist. Joints visible beneath synthetic skin, deliberately unhidden to signal non-human nature. Proportions calibrated for formal posture.",
+    "hair_color": "None — smooth synthetic scalp",
+    "hair_style": "N/A",
+    "hair_length": "None",
+    "eye_color": "Polished obsidian black — non-luminous optical sensors, reflective surface reveals observer rather than wearer",
+    "skin_tone": "Deep bronze-grey synthetic — warm undertones reflecting Sub-Saharan and Middle Eastern ancestry palette, matte finish with minimal reflectance except at cheekbones and jawline where micro-texturing catches light. Subtle warmth in the grey rather than cool platinum.",
+    "complexion": "Sculpted elegance with ancestry-informed geometry — high cheekbones with gentle projection reflecting East African and Middle Eastern traits, broader nasal bridge consistent with Sub-Saharan ancestry, subtle angular jaw definition. No pores, no imperfections, no micro-expressions. Facial geometry is harmoniously proportioned rather than strictly symmetrical. Mouth capable of movement but rarely smiles; speech emerges from calibrated speaker array behind synthetic lips. No visible signs of wear despite eleven years of operation.",
+    "distinguishing_marks": [
+      "Subtle diplomatic seal embossed at right temple — seven interlocking rings representing the floating city-states, etched in burnished platinum",
+      "Treaty-signing scar along left hand knuckles — deliberate cosmetic damage from ceremonial blade exchange with Arcturus delegation, three years prior, left unhidden as gesture of commitment"
+    ],
+    "visible_augmentations": "Entire body is augmentation. Deep bronze-grey synthetic skin with warm undertones and visible titanium-composite joint articulation at wrists, ankles, and spine. Polished obsidian optical sensors with no pupil or iris, only reflective black. Precision gesture calibration visible in perfectly controlled micro-movements — no fidgeting, no involuntary reactions. Encrypted communication array subtly visible as fine geometric lattice pattern across left collarbone, raised 2mm, etched in grey-metal threading.",
+    "posture_movement": "Perfectly upright unless context requires otherwise. Walks with measured pace — stride length adjusted to conversation partner's comfort level. Handshakes employ haptic feedback calibration; grip pressure varies by cultural protocol. Pauses in speech are exactly the duration required for impact without discomfort. Gestures are economical and deliberate — no wasted motion. When experiencing internal conflict (programming vs. accumulated preference), only tells are minute delays in response and a nearly imperceptible decrease in optical reflectance.",
+    "clothing_style": "Formal diplomatic rotation — wears traditional formal attire from each floating city-state in sequential cycles. Currently: Arcturus day (black silk coat with silver filigree at collar, minimalist cut). Tomorrow: New Lagos style (structured linen wrap with indigo geometric patterning). Garments are bespoke, maintained in immaculate condition, replaced annually. All clothing in Tier 1 quality — subtle luxury that communicates resource allocation rather than ostentation. Accessories limited to diplomatic credentials (treaty-signing ring, city-state federation pin, encrypted communication pendant)."
+  },
+  "image_prompt": "Amir Bah, diplomatic android with deep bronze-grey synthetic skin reflecting Sub-Saharan and Middle Eastern heritage, standing in formal posture in a floating city-state chamber. High cheekbones and sculpted facial geometry, obsidian reflective optical sensors, visible titanium joint articulation at wrists and spine. Wearing immaculate black silk coat with silver filigree, minimalist cut. Treaty-signing scar visible on left hand knuckles, platinum diplomatic seal embossed at right temple. Geometric encrypted communication lattice subtly raised across left collarbone. Perfectly controlled micro-movements, measured presence. Soft ambient light reflecting off obsidian eyes and bronze-grey synthetic skin. Cyberpunk 2226, diplomatic setting, ethereal yet mechanical grace --ar 2:3 --v 6",
+  "tags": [
+    "sentient"
+  ]
+}

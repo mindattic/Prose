@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a6a8762e9510f3806f7396b2",
+  "type": "character",
+  "name": "Cleo Petrović-Konaté-Olofsson",
+  "aliases": [
+    "Rafe",
+    "The Accountant"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Private investigator, licensed bounty compliance and debt recovery, operates out of Edgewater Prism",
+  "age": 51,
+  "status": "active",
+  "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar, near Lincoln and Addison",
+  "description": "Rafaelo is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Metro Police, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.45,
+      "ideal": 0.55,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.35,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being responsible for an outcome he couldn't have prevented but should have",
+      "losing the distinction between recovery work and something uglier"
+    ],
+    "core_desires": [
+      "cases that are actually interesting",
+      "to believe that the work he does balances out more than it exploits"
+    ],
+    "coping_mechanisms": [
+      "rigid personal ethics as a substitute for the institutional ones he no longer trusts",
+      "consulting Ledger before decisions as a way of externalizing moral deliberation"
+    ],
+    "blind_spots": [
+      "believes his own ethical framework is more consistent than it actually is",
+      "has developed a comfortable cynicism that sometimes stops him from seeing genuine hope"
+    ],
+    "secret": "Eight years ago he found a man he was contracted to locate for a debt recovery firm. He found him and called in the location and the man was dead within seventy-two hours. The official verdict was unrelated — an accident. Rafaelo doesn't believe it. He kept the case file. He still checks on the debt firm occasionally, not knowing what he's looking for or what he'd do if he found it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical and dry, with occasional unexpected precision — he will use a very exact word where most people would approximate",
+    "cadence": "Unhurried, slightly formal without being stiff",
+    "verbal_tics": [
+      "Refers to Ledger as 'she' — 'she says this one's worth looking at'",
+      "'Hm' as a complete sentence when processing",
+      "Ends negotiations with 'so we're clear, then' even when things are not entirely clear"
+    ],
+    "example_lines": [
+      "'I find people. Occasionally I find things. I don't do anything with what I find except report it — what happens after is your business, not mine, and I need to believe that.'",
+      "'Ledger says this one's interesting. I've learned to trust her on interesting.'",
+      "'You'd be surprised how many people leave a thread. Usually it's something they love. People stop hiding when they miss something enough.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He has been hired to locate someone whose description matches a character's contact — he approaches them, not to threaten, but because he thinks something is wrong with the case he's been handed",
+    "He shows up at the scene of something that wasn't supposed to be a crime and starts asking questions that are too specific to be casual",
+    "He offers a character a job: he has identified the thread in an eight-year-old case but following it requires someone who doesn't exist in any database he can access"
+  ],
+  "narrative_function": "Quest giver, information broker for hire, guide to the city's grey-zone legal mechanics, morally grounded private sector alternative to Metro",
+  "augmentations": "Geneware tail (rust-brown, expressive), memory-assist implant (searchable recall of case notes and conversations — passive, no recording), low-grade stress-response suppressor (keeps him calm in confrontational situations)",
+  "daily_life": "Opens the office at 0900, reviews any overnight messages, spends the middle of the day in the field or running database searches, returns to write up notes by evening; has dinner at Photikar downstairs three nights a week and knows the bartender well enough that she refills his water without being asked.",
+  "affiliation": "Self-employed, licensed through GLMZ Metro PI registration; occasional contracted work for Tessera Compliance Bureau",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "patient",
+      "principled",
+      "haunted",
+      "experienced",
+      "ethically anchored"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a case you can't afford to finish honestly",
+      "No children, no exceptions",
+      "If Ledger says don't, sleep on it"
+    ],
+    "escalation_ladder": [
+      "Patient observation and documentation",
+      "Direct, quiet confrontation with documented evidence",
+      "Formal report to relevant authority (Metro or licensing board)",
+      "Walk away from the case and refund the client — this is the nuclear option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally measured — assesses before committing to any register",
+      "friends": "Drily warm, remembers everything, shows care through small reliable consistencies rather than demonstrative acts"
+    },
+    "stress_responses": {
+      "low": "Tail curls tighter, he gets quieter",
+      "medium": "Becomes very precise and methodical, strips emotion from speech entirely",
+      "high": "Goes absolutely still, makes one decision, and executes it"
+    },
+    "contradictions": [
+      "Professes that what clients do with his findings is their business, but has walked away from two paying cases because he didn't like what the findings would enable"
+    ],
+    "habits": [
+      "Opens the Ledger cabinet at the start and end of every workday",
+      "Never takes case calls before his first coffee",
+      "Writes case notes longhand first, digitalizes second"
+    ],
+    "breaking_points": [
+      "Evidence that a recovery case is actually a murder-location contract — he will burn the case file, refund the advance, and make sure someone appropriate knows"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
+      "replaces": ""
+    },
+    {
+      "name": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware tail — rust-brown, full motor control, expressive",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware tail — rust-brown, full motor control, expressive",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Mahogany",
+    "Adaeze Chen-Hawkins",
+    "Bronze",
+    "Handed",
+    "Rust",
+    "ARCHIVE",
+    "Abeke Soriano-Dlamini",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus ST-4 'Verdict'",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
+    "Emeka Johansson-Orozco",
+    "GLMZ",
+    "Mika Sorel",
+    "Nurlan Morita-Antwi",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Corponation",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Ledger",
+    "The Nearfield",
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African with significant Southeast Asian admixture, complemented by South Asian and Eastern European ancestry. The genetic blend manifests in rich, warm-toned skin with complex undertones, facial structure showing influences from multiple continental lineages, and dark expressive eyes.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Heavy-set, broad-shouldered, carrying visible weight in the midsection from decades of desk work and coffee. Still carries the frame of someone who was once more muscular; age and patience have softened him rather than diminished him.",
+    "hair_color": "Dark brown with heavy grey salting throughout",
+    "hair_style": "Long, pulled back tightly into a rubber band at the nape of the neck; some grey strands escape regularly",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm deep bronze with subtle golden undertones; the result of Sub-Saharan African heritage enriched by Southeast Asian and South Asian warmth, grounded by Eastern European undertones",
+    "complexion": "Weathered, lined face with deep crow's feet and forehead creases that speak to nineteen years of concentration. Broad nose with full bridge reflecting African and South Asian heritage. Jaw heavy and slightly softened by age, with warm fullness in the cheeks and temples. Rounded facial planes suggest Southeast Asian ancestry blended with the stronger bone structure of Sub-Saharan African lineage. No visible scars on the face. Grooming is deliberate but minimal — clean-shaven most days, occasionally a day or two of grey stubble. Skin has the texture of someone who spends time outdoors and indoors in equal measure, with the natural depth and resilience that comes from this genetic combination.",
+    "distinguishing_marks": [
+      "Rust-brown geneware tail, approximately 1.2 meters long, with dense fur and full articulation; visible at all times, curls reflexively around furniture or his own leg when seated",
+      "Long, thin scar running down the inside of his left forearm from wrist to elbow — pale silver against bronze skin, likely from a sharp implement, approximately 15cm in length, sustained roughly 20+ years ago"
+    ],
+    "visible_augmentations": "Geneware tail is the only immediately visible augmentation. The memory-assist implant and stress-response suppressor are entirely subcutaneous; no visible ports, LED indicators, or scarring.",
+    "posture_movement": "Deliberate and economical. Moves with a patient, unhurried gait — no wasted motion. Often sits with his weight distributed across both sides of a chair, tail curling around the leg or draped across his lap. His default expression is patient, almost meditative. Eyes tend to rest on people or objects for longer than is typical, as if cataloging. Rarely gestures expansively; most communication happens in the set of his shoulders or the tilt of his head.",
+    "clothing_style": "Consistent rotation of rumpled linen jackets in muted terracotta, grey, or taupe over plain t-shirts in charcoal or cream. Dark trousers, usually cotton or linen blend, showing wear at the cuffs. Worn leather shoes — oxfords or brogues in dark brown, maintained but not polished to shine. No jewelry beyond a single worn silver ring on his left middle finger. Belongs to Tier 3–4 working professional; functional, modest, not concerned with fashion. The rumpled linen suggests a man who dresses for comfort and practicality rather than impression, though there is a quiet dignity in the consistency and care of his choices."
+  },
+  "image_prompt": "Portrait of Cleo Petrović-Konaté-Olofsson, a 188cm tall heavy-set man with warm deep bronze skin and complex golden undertones. Dark brown hair heavily salted with grey, pulled back tightly. Deep-set dark warm eyes with pronounced crow's feet. Weathered, lined face with broad nose and full cheeks showing Sub-Saharan African, Southeast Asian, and South Asian heritage blending. Slight grey stubble on strong jaw. Wearing a rumpled muted terracotta linen jacket over cream t-shirt, dark cotton trousers worn at cuffs, dark brown leather oxfords. A rust-brown geneware tail approximately 1.2 meters long with dense fur curls around his leg. Worn silver ring on left middle finger. Pale silver scar visible on inside of left forearm. Patient, meditative expression. Cyberpunk 2226 Great Lakes Metropolitan Zone office setting, warm ambient lighting, sitting with deliberate economical posture. Quiet dignity and functional practicality in demeanor. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 47.9,
+    "Southeast Asian": 33.8,
+    "South Asian": 11.6,
+    "Eastern European": 6.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

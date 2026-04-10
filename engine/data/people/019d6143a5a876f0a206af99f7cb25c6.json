@@ -1,0 +1,341 @@
+{
+  "id": "019d6143a5a876f0a206af99f7cb25c6",
+  "type": "character",
+  "name": "Vale Johansson-Björnsdóttir",
+  "aliases": [
+    "Catalyst",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Cross-district contraband specialist — smuggler",
+  "age": 30,
+  "status": "active",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
+  "description": "Alper Inoue-Aidoo is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Alper Inoue-Aidoo is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.81,
+      "id": 0.5,
+      "shadow": 0.73,
+      "mask": 0.4,
+      "ghost": 0.37
+    },
+    "core_fears": [
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "The perfect run — one job so clean it becomes legend",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Assumes their skill set is more transferable than it actually is",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Alper Inoue-Aidoo is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+    ],
+    "example_lines": [
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Alper Inoue-Aidoo's reputation — and a price for silence",
+    "Someone is impersonating Alper Inoue-Aidoo on jobs, and the impersonator is better at the work than the original",
+    "A corporate black site Alper Inoue-Aidoo once infiltrated is being reopened, and the people inside know his face"
+  ],
+  "narrative_function": "Alper Inoue-Aidoo functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Geneware muscle density treatment — looks natural, hits like chrome",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance — available through Circuit fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 8
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.87,
+      "caution": 0.74,
+      "loyalty": 0.17,
+      "greed": 0.44,
+      "empathy": 0.98
+    },
+    "drives": [
+      "freedom",
+      "loyalty",
+      "survival"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 8,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "ability to remain calm under fire",
+      "technical expertise with augmentation systems",
+      "encyclopedic knowledge of GLMZ infrastructure"
+    ],
+    "weaknesses": [
+      "difficulty with authority figures",
+      "poor impulse control in specific triggers",
+      "substance dependency — functional but fragile"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "smuggler",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always verifies target identity independently before lethal contracts"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Maintains a dead drop with emergency supplies in three separate districts"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Smuggler": 0.7,
+    "Risk Taker": 0.7,
+    "Improviser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Shelf",
+    "The Gradient Compact",
+    "Slagworks Industrial",
+    "Gravimetric Collapse Charge GCC-9",
+    "Chicago",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Crucible RE-2 'Receptionist'",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "GLMZ",
+    "Glenville Sound",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Spire Light on Still Water",
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "TERMINUS",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian (68.6%) with East Asian (28.5%) and Sub-Saharan African (2.9%) ancestry. The dominant Southeast Asian heritage shows in facial structure and bone composition, with East Asian eye shape and hair characteristics, and subtle warmth in skin undertones from the African ancestry.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, low center of gravity. Wide shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach or speed. No wasted mass.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Cropped close, military-clean, reveals the shape of his skull",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Warm medium brown with Southeast Asian golden undertones at the cheekbones, subtle olive cast at the jawline from East Asian heritage, deepened slightly by Sub-Saharan ancestry warmth",
+    "complexion": "Weathered and scarred. Severe grooming habits mask poor skin condition underneath. Dark circles under eyes from sleep debt and cycle stimulants. A thin white line runs from left temple to jaw — old blade work. Nose broken at least twice and set without professional care.",
+    "distinguishing_marks": [
+      "Pale scar tissue running from left temple to left jawline, approximately 12cm, thin and surgical-looking — contradicted by the jagged character of the surrounding skin",
+      "Burn marks across the knuckles of both hands, old and faded to pale pink, consistent with repeated exposure to friction or thermal stress",
+      "Small circular scar on right forearm just below the elbow — intervention point for the subdermal blade mount, still visible as a faint raised line despite years of healing",
+      "Matching circular scar on left forearm in identical location",
+      "White stress fracture lines visible under the skin of both forearms where geneware muscle density treatment has been applied — subtle rippling effect under normal lighting"
+    ],
+    "visible_augmentations": "Subdermal weapon mounts in both forearms are visible as faint circular scarring and a subtle ridge of reinforced tissue running the length of each forearm. The chrome is deliberately exposed—no attempt to hide the blade deployment mechanisms. Geneware muscle density treatment is visible as unnatural muscle definition and a subtle shimmer or rippling effect under the skin of the arms and shoulders when he moves.",
+    "posture_movement": "Economical and predatory. Moves from the hips and shoulders, not the limbs. No wasted motion. Stands with weight distributed on the balls of his feet, ready to shift in any direction instantly. Eyes track movement constantly. Default expression is neutral-to-hostile. When at rest, he's coiled rather than relaxed.",
+    "clothing_style": "Tier 4 utilitarian. Black reinforced work pants with cargo pockets and tool loops — worn, maintained, practical. Sleeveless compression undershirt showing off the augmented forearms deliberately. Matte-black tactical jacket with Velcro patch sections for identification — usually blank. Scuffed combat boots, steel-toed, broken in through heavy use. Everything is dark, everything is functional, nothing is decorative. His clothes are designed to survive contact with edges, heat, and blood. No corporate logos, no gang colors, no affiliation markers — deliberate neutrality."
+  },
+  "image_prompt": "Vale Johansson-Björnsdóttir, Southeast Asian heritage (Vietnamese/Thai featured), 168cm compact muscular frame, dark brown eyes, black hair cropped military-short with silver at temples, warm medium brown skin with golden undertones. Cyberpunk 2226, GLMZ. Scarred face — 12cm pale scar temple to jaw, broken nose set rough, dark circles from stim cycle debt. Sleeveless compression shirt exposing augmented forearms with visible subdermal blade mounts (circular scarring, chrome deployment ridges), geneware muscle rippling shimmer. Burn scars on knuckles, forearm intervention scars. Black reinforced tactical jacket (matte, Velcro patch sections blank), cargo pants, steel-toed combat boots. Predatory coiled posture, weight on balls of feet, neutral-hostile expression, economical movement. No corporate logos, no gang colors. Neon-lit industrial GLMZ setting, cool blue-purple shadowplay, gritty rain-slicked urban backdrop, harsh cybernetic lighting revealing augmentation details. Mood: dangerous, professional, lethal calm. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 68.6,
+    "East Asian": 28.5,
+    "Sub-Saharan African": 2.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

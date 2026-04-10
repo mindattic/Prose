@@ -1,0 +1,317 @@
+{
+  "id": "019d6143a67a761592685f68b615e9d6",
+  "type": "character",
+  "name": "Vale Dalgaard-Sokolov",
+  "aliases": [
+    "Dess",
+    "The Lamplighter",
+    "Mama Falk"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street-level medic and unlicensed pharmacist, Old Harbor",
+  "age": 54,
+  "status": "active",
+  "location": "Old Harbor, Slip 9 Tenements, near Lake Shore and Wacker",
+  "description": "Odessa Falk-Nwofor is a broad-shouldered woman whose face carries the topography of a hard life: a jaw that juts slightly from a badly reset fracture, deep-set eyes the color of weathered teak, and a scar that traces from her left temple to her earlobe like a river on an old map. Her hair is cut close on the sides and left natural on top, shot through with white that she refuses to dye. She dresses in layered secondhand scrubs over thermal underlayers, her coat pockets sagging with vials, patches, and a battered tablet she uses to track patient histories. A single augmented right hand—matte carbon and copper-banded—contrasts with her otherwise un-augmented body, which she considers a point of quiet pride.\n\nShe runs a basement clinic out of Slip 9 that operates on a sliding scale payment system she invented herself: food, labor, information, or whatever someone can spare. The neighborhood knows her as the person you go to when the corporate med-kiosks have locked your insurance tier and you're bleeding. She has delivered children, amputated gangrenous limbs by headlamp, and talked down three overdoses in a single night. The Meridian Core's Health Compliance Division has cited her practice seventeen times. She has paid none of the fines.\n\nWhat the neighborhood does not know is that Odessa's medical knowledge came partly from a decade working as a trauma specialist for a mid-tier logistics corp that dumped toxic waste in Old Harbor—the same contamination that killed her younger brother, Emeka, twelve years ago. She left the corp, got herself deliberately delisted from licensed practitioner registries to avoid their reach, and turned her skills entirely toward the community that corp helped destroy. The guilt is structural, load-bearing. She will not let herself rest.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.85,
+      "ideal": 0.78,
+      "id": 0.42,
+      "shadow": 0.35,
+      "mask": 0.55,
+      "ghost": 0.72
+    },
+    "core_fears": [
+      "That her penance will never be sufficient",
+      "Losing another patient she could have saved with better resources",
+      "Being found and shut down by Health Compliance",
+      "That she enabled the corp's harm by staying as long as she did"
+    ],
+    "core_desires": [
+      "A single night of sleep without cataloguing the dead",
+      "Real medical equipment—not scavenged, not jury-rigged",
+      "For Old Harbor to outlast the corp that poisoned it",
+      "Someone to take over the clinic when she can no longer run it"
+    ],
+    "coping_mechanisms": [
+      "Relentless work as a substitute for grief",
+      "Dark, dry humor deployed to diffuse tension",
+      "Keeping meticulous records as a form of control",
+      "Cooking large communal meals on the rare slow nights"
+    ],
+    "blind_spots": [
+      "Treats her own declining health as irrelevant data",
+      "Cannot accept help gracefully—reframes it as resource acquisition",
+      "Underestimates how much the community depends on her specifically, not just the clinic",
+      "Projects strength so consistently that no one knows to check on her"
+    ],
+    "secret": "She still has her old corp credentials buried in an encrypted partition. She uses them twice a year to siphon pharmaceutical shipments from corp distribution nodes—small enough quantities to stay below audit thresholds. She tells herself it's restitution. She knows it's also the one thing that would destroy everything she's built if discovered."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical, precise, medical terminology slipping into everyday speech. Old Harbor creole inflections. Rarely uses contractions when she's being serious. Calls patients 'sweetheart' regardless of age.",
+    "cadence": "Measured and deliberate, like someone who has learned that panic is contagious. Speeds up when she's angry, which is the tell. Silences are not awkward to her—she uses them like instruments.",
+    "verbal_tics": [
+      "'That's the situation' to close a diagnosis or decision",
+      "Clicks her tongue once before delivering bad news",
+      "Uses 'we' instead of 'you' when telling someone what they need to do"
+    ],
+    "example_lines": [
+      "'We're going to clean this, we're going to seal it, and we are not going to discuss the cost tonight. That's the situation.'",
+      "'I have seen worse. I have also seen people say that and be wrong. Lie still.'",
+      "'The kiosk told you it was non-critical. The kiosk doesn't live here. I do.'",
+      "'Emeka would have been forty-one this year. I think about that while I work. It helps me work faster.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Fenwick Oduya-Marsh",
+      "type": "Complicated alliance",
+      "description": "Fenwick occasionally routes scavenged medical supplies her way through channels she doesn't ask about. She accepts. They share an unspoken understanding about operating in the gray.",
+      "emotional_core": "Mutual pragmatic respect with an undercurrent of wariness—she doesn't fully trust his motives, he doesn't fully understand her refusal to be paid properly.",
+      "story_tension": "If his supply chain ever gets traced back, it runs through her clinic. She knows this and has not told him she knows."
+    },
+    {
+      "name": "Perpetua Okafor",
+      "type": "Mentorship, strained",
+      "description": "Odessa treated Perpetua's mother years ago and has watched her navigate the Spire's orbit with a mix of pride and dread. She sees a version of her own early choices in Perpetua's ambition.",
+      "emotional_core": "Protective love that manifests as criticism. She worries that what the Spire will do to Perpetua is worse than what it did to her.",
+      "story_tension": "Perpetua has intel about the corp that poisoned Old Harbor. She's been deciding whether to bring it to Odessa for months."
+    },
+    {
+      "name": "Rector Hollowell",
+      "type": "Adversarial",
+      "description": "Hollowell has used Health Compliance as a vector to pressure Odessa at least twice. She suspects corporate interest behind the citations. She's right.",
+      "emotional_core": "Cold fury, carefully managed.",
+      "story_tension": "She has a file on Hollowell's own medical history that she obtained through a source she will not name. She hasn't used it. Yet."
+    }
+  ],
+  "story_hooks": [
+    "A patient arrives with an injury pattern consistent with a new corp-sanctioned crowd control weapon being tested in Old Harbor—Odessa starts documenting cases, building an evidence base no one asked for",
+    "Health Compliance sends a new inspector who seems genuinely conflicted about shutting her down—and may be running their own game",
+    "Her pharmaceutical siphoning is noticed by someone inside the corp who decides to use it as leverage rather than report it",
+    "A young person shows up wanting to apprentice with her, and she has to decide whether to let someone else carry this weight",
+    "Emeka's contamination case files surface in a data leak—there may be grounds for something like justice, if she wants to pursue it"
+  ],
+  "narrative_function": "Moral anchor and community conscience for Old Harbor storylines. Embodies the cost of institutional complicity and the ambiguity of atonement. Creates pressure on characters to reckon with systemic harm versus individual survival.",
+  "augmentations": "Right hand replacement (matte carbon prosthetic, copper sensor bands, haptic feedback calibrated for surgical precision)—obtained after a work accident she never fully explained",
+  "daily_life": "Wakes before 5am, checks overnight patient logs on her tablet before getting out of bed. Brews strong chicory coffee she imports in bulk. Clinic opens at 7am and theoretically closes at 9pm—in practice she is often working past midnight. Eats communally when she can, alone when she can't. Keeps a handwritten ledger of every patient she's lost. Reads old medical journals in paper form on Sunday mornings, the one ritual she guards.",
+  "affiliation": "Unaffiliated. Informally embedded in Old Harbor's mutual aid network. Tolerated by the Harbor Syndicate because she patches their people without asking questions.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 6,
+      "impulsivity_deliberation": 7,
+      "assertion_deference": 7,
+      "transparency_guardedness": 6
+    },
+    "drives": [
+      "Atone for the corp years",
+      "Keep Old Harbor alive",
+      "Train a successor"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Works faster, speaks at the same measured pace — the tell is the speed of her hands"
+      },
+      "moral": 8,
+      "trust": 4,
+      "desperation": 7
+    },
+    "strengths": [
+      "Perseverance",
+      "Kindness",
+      "Bravery",
+      "Fairness",
+      "Industry"
+    ],
+    "weaknesses": [
+      "Hope",
+      "Forgiveness",
+      "Self-Regulation",
+      "Playfulness",
+      "Humility"
+    ],
+    "tags": [
+      "medic",
+      "pharmacist",
+      "guilt-driven",
+      "old-harbor-anchor",
+      "corp-defector",
+      "community-healer"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Sliding scale payment — food, labor, information, whatever someone can spare",
+      "Siphon pharmaceuticals from the corp twice a year — small enough to stay below audit",
+      "Keep meticulous records — the ledger of the lost is never closed",
+      "Call patients 'sweetheart' regardless of age or circumstance",
+      "Never rest — the guilt is structural, load-bearing",
+      "Use 'we' instead of 'you' when telling someone what they need to do",
+      "Pay none of the Health Compliance fines — ever"
+    ],
+    "escalation_ladder": [
+      "Clicks tongue once — bad news incoming",
+      "'That's the situation' — diagnosis or decision is closed",
+      "Speaking pace increases — anger is the only tell",
+      "Pulls the file on Hollowell's medical history — the leverage she has never used",
+      "Activates the old corp credentials for an emergency siphon — high risk"
+    ],
+    "interpersonal_modes": {
+      "Fenwick Oduya-Marsh": "Pragmatic supply chain acceptance — wariness about his motives",
+      "Perpetua Okafor": "Protective love expressed as criticism — sees her own early choices reflected",
+      "Rector Hollowell": "Cold fury, carefully managed — corporate pressure through Health Compliance",
+      "patients": "Measured calm — panic is contagious, so she never shows it"
+    },
+    "stress_responses": {
+      "low": "Dark, dry humor deployed to diffuse tension",
+      "medium": "Meticulous record-keeping intensifies — control through documentation",
+      "high": "Cooks large communal meals on rare slow nights — feeding as coping",
+      "critical": "Thinks about Emeka — 'he would have been forty-one this year' — works faster"
+    },
+    "contradictions": [
+      "Atones for corporate harm by serving the community that corp poisoned — while still using corp credentials to steal from them",
+      "Projects strength so consistently that no one knows to check on her — treats her own declining health as irrelevant data",
+      "Cannot accept help gracefully — reframes it as resource acquisition rather than admitting need"
+    ],
+    "habits": [
+      "Wakes before 5am, checks overnight patient logs before getting out of bed",
+      "Brews strong chicory coffee imported in bulk",
+      "Keeps a handwritten ledger of every patient she has lost",
+      "Reads paper medical journals on Sunday mornings — the one guarded ritual",
+      "Clicks tongue once before delivering bad news"
+    ],
+    "breaking_points": [
+      "The pharmaceutical siphoning being discovered and used as leverage",
+      "Emeka's contamination case files surfacing in a data leak",
+      "A young person wanting to apprentice — the weight of deciding whether to share it",
+      "Her own health finally failing in a way she cannot ignore"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7,
+    "Bleeding Heart": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "related_entities": [
+    "The Meridian Core",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Axiom Industries",
+    "Stratum",
+    "Copper",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Teak",
+    "Ambrosia Fekete-Waiyaki",
+    "Anatoliy Faye-Nkrumah",
+    "Emile Nakamura-Osei",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ihaia Nystrom-Keita",
+    "Lazarus LX-5 'Siphon'",
+    "MERIDIAN",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Plot 17",
+    "PulsePoint MoodGlyph Affective Display Implant",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Burden Clause",
+    "The Ledger"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Predominantly Southeast Asian (40.6%) with significant Eastern European (20.1%) and Northern European (14.7%) ancestry, combined with East Asian (10.7%), Sub-Saharan African (10.1%), and South Asian (3.8%) heritage. This creates a richly mixed phenotype reflecting the Ubiquitous Diaspora.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without excess softness; muscular across the chest and forearms from decades of manual medical work. Carries weight with functional density rather than bulk.",
+    "hair_color": "Natural dark brown with prominent white threading throughout",
+    "hair_style": "Fade on the sides, natural texture on top, worn unstyled and practical",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm amber undertones—weathered appearance from strain and age",
+    "skin_tone": "Medium golden-brown with olive undertones, reflecting the Southeast Asian and Eastern European blend, deepened by chronic sleep deprivation and environmental exposure",
+    "complexion": "Lined and deeply mapped by hard work and stress; angular facial structure reflecting mixed Asian and European heritage. A prominent jagged scar traces from left temple to earlobe like a scar road. Jaw shows slight asymmetry from an old fracture reset imperfectly—healed but visible when she speaks. Cheekbones defined and prominent. Minimal grooming beyond function; no makeup, skin often marked by small calluses and old burn scars on fingertips.",
+    "distinguishing_marks": [
+      "Jagged scar running from left temple along the hairline to earlobe, approximately 12cm, pale and old",
+      "Slight lateral deviation of lower jaw from improperly healed fracture, creates asymmetrical profile",
+      "Multiple small round scars on fingertips and knuckles, consistent with old chemical or thermal burns",
+      "Faint tattoo on inner left wrist: a stylized medical caduceus in faded black ink, approximately 3cm, poorly executed and decades old"
+    ],
+    "visible_augmentations": "Right hand is a complete prosthetic replacement—matte carbon-composite palm and fingers with visible copper sensor bands circling the wrist joint and metacarpal articulation points. The synthetic material contrasts starkly with her organic left hand. Haptic feedback servos are subtly audible when she makes precise movements.",
+    "posture_movement": "Stands with weight balanced slightly forward, shoulders perpetually tense as if bracing against unseen pressure. Moves with economical efficiency—no wasted motion. Her augmented right hand moves with mechanical precision when performing detailed work, but she favors her organic left for casual gestures, suggesting conscious preference for the human touch. When tired (which is often), her head tilts slightly forward and her jaw tightens.",
+    "clothing_style": "Utilitarian and tier-4 worn: layered secondhand medical scrubs in faded teal and slate gray over thermal base layers. A heavy insulated coat from a defunct logistics company (its branding half-removed) with oversized pockets visibly bulging with vials, patch kits, and a battered ruggedized tablet. Steel-toed boots, resoled multiple times. A surgical mask hangs around her neck even when not in use. No jewelry except for a thin silver band on her left ring finger—worn through at spots from constant wear."
+  },
+  "image_prompt": "Vale Dalgaard-Sokolov, 172cm tall, mixed-heritage woman with Southeast Asian, Eastern European, and African ancestry reflected in medium golden-brown skin with olive undertones. Deep brown eyes with amber warmth, dark hair with white threading, short fade sides. Weathered, lined face with defined cheekbones and asymmetrical jaw from old injury. Prominent jagged scar from left temple to ear. Muscular, broad-shouldered build from decades of medical work. Augmented right hand is matte carbon-composite with copper sensor bands, contrasts with organic left hand bearing old burn scars and medical caduceus tattoo on inner wrist. Wearing faded teal and gray secondhand medical scrubs layered under heavy insulated logistics coat with bulging pockets, steel-toed boots resoled multiple times. Surgical mask around neck. Silver ring worn thin on left ring finger. Stands with forward-balanced posture, shoulders tense. Cyberpunk 2226 Great Lakes Metropolitan Zone, clinical lighting, tired but focused expression, in a makeshift medical space. Dark moody atmosphere, neon accents in background, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 40.6,
+    "Eastern European": 20.1,
+    "Northern European": 14.7,
+    "East Asian": 10.7,
+    "Sub-Saharan African": 10.1,
+    "South Asian": 3.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

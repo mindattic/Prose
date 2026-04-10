@@ -1,0 +1,307 @@
+{
+  "id": "019d6143a6f67959b64afa3c47775a2f",
+  "type": "character",
+  "name": "Ama Petelo",
+  "aliases": [
+    "Thess",
+    "The Budget"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Senior Project Manager, Tessera Infrastructure Division",
+  "age": 38,
+  "status": "active",
+  "location": "Grand Corridor, Tessera Infrastructure Hub — open-plan office, desk seven, near Armitage and Milwaukee",
+  "description": "Thessaly has the kind of face that reads as permanently slightly amused, which is either accurate or a very effective mask depending on the day. They are medium height, compact, with light brown skin and the kind of effortlessly symmetrical features that suggest either genetics or a very good cosmetic package — in fact it's genetics, a fact they find privately funny. Their hair is color-shifting, cycling slowly through dark blues and greens during work hours and switching to a deep amber setting they call 'off-duty mode.' They dress practically: clean lines, nothing that catches on equipment, a jacket with actual pockets. A small silver ring through their left nostril is their only visible jewelry.\n\nThessaly is someone who keeps everything moving — projects, people, conversations, agendas. They have an almost physical intolerance for stagnation and an ability to hold seventeen interdependent variables in their head without apparent effort. They're not charismatic in the conventional sense: they don't perform warmth. But they're fair, they remember everything, and they're reliably the calmest person in any crisis, which generates a particular kind of loyalty in the people who work under them. They grew up in a Tier 3 household in Shorewood Terrace with two working parents who modeled relentless competence, and they absorbed it completely.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "A project failure so public it dismantles the professional identity they've spent fifteen years building",
+      "Being genuinely needed by someone and not being able to deliver"
+    ],
+    "core_desires": [
+      "To build things that last past the quarterly cycle",
+      "To have one relationship — professional or personal — where they don't feel like the only reliable person in the room"
+    ],
+    "coping_mechanisms": [
+      "Converting anxiety into task lists",
+      "Physical exercise — specifically swimming, alone, no audience"
+    ],
+    "blind_spots": [
+      "Mistakes efficiency for care — sometimes solves problems people needed to feel heard about first",
+      "Underestimates how exhausting their baseline competence level is for people around them"
+    ],
+    "secret": "Tessera's current flagship civic integration project — a Ferrogate transit expansion through the Grand Corridor — is running on falsified cost projections that Thessaly didn't create but signed off on under pressure from a divisional VP. The numbers will not survive contact with year-two actuals. They've been quietly preparing a paper trail that positions the VP as solely responsible, which is mostly but not entirely true."
+  },
+  "speech_patterns": {
+    "vocabulary": "Project management vernacular used precisely, not as filler. Comfortable with technical vocabulary across multiple domains. Informal in private, formal in meetings — a switch they flip visibly and without apology.",
+    "cadence": "Brisk but not rushed. Doesn't repeat themselves. Phrases things as decisions, not suggestions.",
+    "verbal_tics": [
+      "'Right, so—' to open any substantive statement",
+      "'That's a separate conversation' to table things they don't have time for"
+    ],
+    "example_lines": [
+      "'The timeline is aggressive. It's also what we agreed to. If you have a new constraint, give me the data and I'll reassess — otherwise we execute on current.'",
+      "'I'm not unsympathetic. I'm also holding four other workstreams right now, so tell me what you actually need.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The falsified cost projections on the transit expansion are starting to attract outside scrutiny — a Ferrogate Transit internal auditor has been asking questions, and Thessaly needs to decide whether to come clean, accelerate the blame-shift, or find a third option.",
+    "A worker on one of their construction sub-sites goes missing under circumstances that a site foreman is trying very hard to keep off the official incident report."
+  ],
+  "narrative_function": "Organizational hub who knows where bodies are buried administratively; quest giver for logistics problems; can provide access or obstacle depending on relationship; grounded, reliable voice of pragmatic institutional knowledge.",
+  "augmentations": "Color-shifting hair mod (blues, greens, amber — self-curated palette). Cortical memory-assist implant for project data retention. Mild haptic feedback overlay in both hands for interface work. No cosmetic eye mods — they specifically declined them, no explanation given.",
+  "daily_life": "In at 07:30, runs three parallel project status meetings before noon, eats lunch at their desk while doing vendor correspondence, spends afternoons on site visits or stakeholder calls, leaves by 19:00 unless something is actively on fire. Has a Ferrogate Transit season pass and reads physical books on the commute — an affectation they're unapologetic about.",
+  "affiliation": "Tessera (Infrastructure Division, Civic Integration Projects)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "reliable",
+      "pragmatic",
+      "ethically pressured",
+      "quietly exhausted",
+      "competent to a fault"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Gather information before acting, but set a hard deadline for the information-gathering phase",
+      "Protect the team first, protect the project second, protect yourself third — except when the third is unavoidable",
+      "Never make a promise you don't intend to keep; it destroys the only currency that matters"
+    ],
+    "escalation_ladder": [
+      "Address the problem directly and privately",
+      "Escalate with documentation to the appropriate authority",
+      "If institutional channels fail, construct a defensive paper trail and proceed unilaterally"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Cordial, efficient, assessing — gives people one chance to demonstrate they're worth further investment",
+      "friends": "Dry, loyal, occasionally unexpectedly tender in a way that surprises both parties"
+    },
+    "stress_responses": {
+      "low": "Tightens their planning documents, adds more contingency lines",
+      "medium": "Becomes more directive in speech, less consultative",
+      "high": "Goes completely quiet, disappears into solo work for several hours, emerges with a restructured plan"
+    },
+    "contradictions": [
+      "Champions institutional accountability while constructing a private cover-your-ass paper trail they're not proud of"
+    ],
+    "habits": [
+      "Updates their personal project journal every evening before leaving the office — a habit kept since their first placement",
+      "Leaves a data offering at the Grand Corridor E.L.F. shrine on the first of every month — always efficiency metrics from completed projects, 'as proof of work'"
+    ],
+    "breaking_points": [
+      "If the falsified projections result in harm to transit workers or residents rather than just budget overruns, they will not be able to contain it"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Shorewood Terrace, Tier 3",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joins Tessera Infrastructure Division as junior coordinator",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Project Manager after successful completion of Kenwood Gate grid upgrade",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Promoted to Senior Project Manager, Civic Integration Projects",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Signs off on falsified cost projections for Grand Corridor transit expansion under VP pressure",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Fang-9 'Switchblade'",
+    "Tessera Micro-PDW TMP-2 'Synapse'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Shorewood Terrace",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "The Milwaukee Core",
+    "Alper Inoue-Aidoo",
+    "Alper Lebedev-Tutu",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries Fang-9 'Switchblade'",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Irontide Tidal Energy",
+    "Liora Mori-Sefa",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Patient Zero",
+    "Plot 17",
+    "TESSERA TC-3 'Crucible'",
+    "Tenderloin",
+    "Tessera Micro-PDW TMP-2 'Synapse'",
+    "The Commute",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Umbraline KeyGuard KG-2 'Fang'",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pacific Islander, Sub-Saharan African, Southeast Asian with Northern European and East Asian admixture",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and efficient, lean muscle without bulk, the kind of frame that suggests regular movement rather than dedicated fitness. Economical posture.",
+    "hair_color": "Color-shifting mod: cycles between deep navy, teal, and forest green during work hours; shifts to warm amber in off-duty mode",
+    "hair_style": "Shoulder-length, blunt-cut, styled for practicality — tucks behind ears when focused, no styling products visible",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, unaugmented, alert and direct",
+    "skin_tone": "Rich warm brown with subtle golden undertones, reflecting the blend of Pacific Islander and Sub-Saharan African ancestry with Southeast Asian warmth",
+    "complexion": "Broad facial structure with well-defined cheekbones and a balanced nose; symmetrical features with a resting expression that reads as faintly amused; minimal grooming theater, well-maintained but unstudied; skin shows no visible scarring or blemish work",
+    "distinguishing_marks": [
+      "Small silver nostril ring, left side — the only jewelry they wear regularly"
+    ],
+    "visible_augmentations": "Color-shifting hair mod with visible palette cycling (blue-green-amber spectrum). No other visible chrome or subcutaneous markers. Mild haptic feedback implants in hands not visually apparent but may manifest as subtle finger micro-gestures during interface work.",
+    "posture_movement": "Economical and grounded. Stands with weight balanced, minimal unnecessary movement. Walks with purpose and steady rhythm. Hands move with precision during conversation, especially when explaining complex systems. Default facial expression hovers between neutral and faintly knowing.",
+    "clothing_style": "Tier 2-3 functional professional: clean-lined merino blend shirts (charcoal, grey, off-white), structured trousers without excess hardware, a well-maintained jacket in dark grey with genuine pockets and reinforced seams. Comfortable low-profile boots suitable for site visits. No logos, no status signaling beyond quality materials and impeccable maintenance. Accessories: the nostril ring and a functional digital watch (understated, probably Tessera-issue)."
+  },
+  "image_prompt": "Ama Petelo, 168cm lean-muscled figure, rich warm brown skin with golden undertones, broad facial structure with defined cheekbones, dark brown alert eyes, small silver nostril ring. Shoulder-length blunt-cut hair cycling through navy-teal-forest green to warm amber. Wearing clean charcoal merino blend shirt and dark grey reinforced jacket, structured trousers, low-profile boots. Standing grounded with economical posture, hands poised with precision. Faintly amused expression. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-adjacent lighting, industrial interior setting with interface panels subtle in background, professional but understudied aesthetic, no chrome or status signaling visible. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 33.6,
+    "Sub-Saharan African": 31.0,
+    "Southeast Asian": 16.4,
+    "Northern European": 6.5,
+    "East Asian": 6.4,
+    "Hispanic/Latin American": 6.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

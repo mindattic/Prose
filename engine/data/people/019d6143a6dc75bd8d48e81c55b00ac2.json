@@ -1,0 +1,218 @@
+{
+  "id": "019d6143a6dc75bd8d48e81c55b00ac2",
+  "type": "character",
+  "name": "Diego Halverson-Calvillo-Chatterjee",
+  "aliases": [
+    "Pip"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Truant message runner, Tier 1",
+  "age": 9,
+  "status": "active",
+  "location": "Blackpipe Corridor, near Milwaukee and Damen",
+  "description": "Sorrel is small even for nine, with the wiry toughness of a child raised on rationed calories and open air. Her skin is a deep warm brown, her hair a wild halo of tight curls she keeps stuffed under a salvaged Ferrogate Transit cap three sizes too large. She has a cosmetic mod she didn't choose — a faint bioluminescent ring around each iris, blue-green, that her mother installed before disappearing, supposedly to help her be seen in the dark tunnels under Blackpipe. She has not decided whether she loves it or hates it.\n\nSorrel runs messages for anyone who pays her two Φ or more per delivery: small-time vendors, people who distrust the comm-net, the occasional ELF-shrine keeper who needs physical tokens carried between altars. She is deeply superstitious and leaves pinches of copper filings at every E.L.F. junction box she passes, convinced this is why she has never been caught. Her emotional range is vast but controlled — she laughs easily and cries silently. She is fiercely loyal to the three other children she sleeps near in a maintenance alcove off Corridor 7, and would walk into a burning block for any of them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "being alone permanently",
+      "losing the three kids she considers family"
+    ],
+    "core_desires": [
+      "to find her mother or at least know what happened",
+      "to have a door that locks from the inside"
+    ],
+    "coping_mechanisms": [
+      "ritualistic ELF offerings",
+      "counting money repeatedly to feel grounded"
+    ],
+    "blind_spots": [
+      "assumes adults who are kind to her have an angle — misses genuine offers of help"
+    ],
+    "secret": "She knows exactly who took her mother — a mid-level Ferrogate Transit enforcer named Osei-something. She saw the badge number. She has said nothing to anyone because she does not know what to do with that information and is afraid that knowing is already dangerous."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped and functional, corridor-slang heavy, occasional Twi loanwords picked up from the shrine-keeper",
+    "cadence": "Fast when nervous, surprisingly deliberate when she's asking for something",
+    "verbal_tics": [
+      "starts sentences with 'Right so—'",
+      "says 'the Lights keep you' as goodbye"
+    ],
+    "example_lines": [
+      "Right so — two quanta, I get it there before the strips go amber, you don't ask what's in it. That's the deal.",
+      "The Lights kept me through the Sump flood so I figure I owe them something back. You got copper filings? Even shavings?"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She delivers a message and the recipient is dead when she arrives — now someone thinks she saw something",
+    "The badge number she memorized matches a Ferrogate official who has just been promoted and is visiting Blackpipe for an inspection"
+  ],
+  "narrative_function": "Local color and information vector — Sorrel has seen and overheard nearly everything that moves through Blackpipe Corridor. She can be a quest-giver by proxy, a warning system, or a way to introduce the neighborhood's texture.",
+  "augmentations": "Bioluminescent irises (cosmetic, installed by parent). No other mods.",
+  "daily_life": "Wakes before the overhead strips cycle to morning-white, eats whatever the shrine-keeper Adaeze leaves out, then runs circuits through Blackpipe picking up and delivering messages until dark-cycle when she returns to the alcove and counts her Quanta.",
+  "affiliation": "Independent; loosely tolerated by the Blackpipe vendor collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -2,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street-smart",
+      "superstitious",
+      "loyal",
+      "observant",
+      "survivor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "always complete the job — reputation is her only currency",
+      "never open a sealed message no matter how tempting"
+    ],
+    "escalation_ladder": [
+      "politely declines suspicious requests",
+      "runs if pressed",
+      "screams names of nearby vendors if cornered — she knows everyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "watchful and transactional, assesses threat within seconds",
+      "friends": "physically affectionate, shares food without being asked"
+    },
+    "stress_responses": {
+      "low": "hums tunelessly",
+      "medium": "fingers the cap brim repeatedly",
+      "high": "goes completely silent and still"
+    },
+    "contradictions": [
+      "fiercely independent but desperately needs the three alcove kids to be nearby to sleep"
+    ],
+    "habits": [
+      "leaves copper filings at every junction box",
+      "checks exit routes the moment she enters any space"
+    ],
+    "breaking_points": [
+      "harm to one of her three alcove companions"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "People Pleaser": 0.9,
+    "Generous Fool": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Aslan Vasquez-Chatterjee",
+    "Copper",
+    "Elena Vasquez-9",
+    "The Milwaukee Core",
+    "Arcturus KS-7 'Nursery'",
+    "Blackmarket",
+    "Ferrogate Enforcer Cruiser",
+    "Kairos",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Noir Dining",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA PG-2 'Signature'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Pure Hand",
+    "The Sump",
+    "Zurab Ivanov-Appiah"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East Asian dominant (56.3%) with significant Hispanic/Latin American (28.4%) and South Asian (15.3%) ancestry, creating a striking pan-Asian blend with warm undertones from the Latin and South Asian components",
+    "height_cm": 125,
+    "weight_kg": 28,
+    "build": "Wiry and slight, all lean muscle and prominent joints from a childhood of sparse meals and constant movement. Her frame is deceptively strong—capable of running rooftops for hours without fatigue.",
+    "hair_color": "Deep black with natural reddish undertones",
+    "hair_style": "Tight, natural curls worn loose and voluminous when uncovered",
+    "hair_length": "Medium (shoulder-length when released from cap)",
+    "eye_color": "Dark brown with bioluminescent blue-green ring around each iris",
+    "skin_tone": "Light to medium warm brown with golden undertones—the East Asian base enriched by South Asian warmth and Latin American sun exposure",
+    "complexion": "Smooth, sun-darkened from outdoor exposure, cheeks slightly hollowed from rationed diet. Clean but weathered, with the restless energy of constant motion written across her features. Her expression is often guarded but her eyes betray quick intelligence and curiosity. Subtle warm undertones across the bridge of nose and cheekbones reflect mixed heritage.",
+    "distinguishing_marks": [
+      "Bioluminescent rings circling both irises in faint blue-green, glowing softly in low light—installed by her mother, involuntary but now a signature feature",
+      "A thin scar across her left knuckle from a message delivery gone wrong, barely visible",
+      "Calluses on her palms and fingertips from gripping rooftop edges and weathered surfaces"
+    ],
+    "visible_augmentations": "The bioluminescent irises are immediately visible—a soft blue-green glow that intensifies in darkness, particularly noticeable in tunnel environments. No other visible cybernetics.",
+    "posture_movement": "Constantly restless, weight always ready to shift. She moves with economical grace—quick, efficient, never wasting motion. Her gait is a runner's gait, even when standing still. Her hands fidget with small objects (copper filings, message tokens) when idle. Her eyes track movement instinctively; situational awareness is habitual. When at rest, she curls inward slightly, taking up minimal space.",
+    "clothing_style": "A salvaged Ferrogate Transit cap three sizes too large that she wears constantly, the brim softened from wear. Underneath: layered hand-me-downs patched with mismatched fabric—thermal undershirt, oversized grey utility jacket with multiple pockets (for messages and copper offerings), cargo pants with reinforced knees from rooftop crawling. Worn synthetic running shoes with taped seams. A single copper wire wrapped around her left wrist as both charm and tool. Tier 5 functional—nothing new, everything salvaged or traded. A small cloth pouch at her hip holds her day's earnings in Φ tokens."
+  },
+  "image_prompt": "Cyberpunk 2226 Great Lakes Metropolitan Zone, Diego Halverson-Calvillo-Chatterjee: 125cm tall wiry frame, East Asian-dominant features with warm golden-brown skin, slight sun-darkened complexion, dark eyes glowing with soft bioluminescent blue-green iris rings in low light, shoulder-length natural black curls with reddish undertones, restless energy coiled in economical movement. Wearing oversized faded Ferrogate Transit cap, layered patched hand-me-downs, grey utility jacket with numerous pockets, cargo pants with reinforced knees, worn taped-seam running shoes, copper wire charm around left wrist. Lean muscles and prominent joints, callused hands fidgeting with message token, guarded expression betraying quick intelligence. Situational awareness etched in tracked-movement eyes. Urban tunnel rooftop environment, neon-contaminated shadow lighting catching the bioluminescent glow, gritty salvage aesthetic, runner's ready posture, minimal space-taking curl, Φ-token pouch visible at hip. Cybernetic-human hybrid child of the Ubiquitous Diaspora, exhausted but alert --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 56.3,
+    "Hispanic/Latin American": 28.4,
+    "South Asian": 15.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

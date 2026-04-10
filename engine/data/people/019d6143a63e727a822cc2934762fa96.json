@@ -1,0 +1,354 @@
+{
+  "id": "019d6143a63e727a822cc2934762fa96",
+  "type": "character",
+  "name": "Nyx Raghavan-Dalgaard",
+  "aliases": [
+    "Pyrite",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Forced entry and close-quarters combat specialist — breacher",
+  "age": 33,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
+  "description": "Kamala Medina-Quaye is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.19,
+      "ideal": 0.49,
+      "id": 0.58,
+      "shadow": 0.51,
+      "mask": 0.17,
+      "ghost": 0.25
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "To build something that outlasts the next contract cycle",
+      "The perfect run — one job so clean it becomes legend",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Planning — responds to chaos by making detailed contingency plans for everything"
+    ],
+    "blind_spots": [
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Kamala Medina-Quaye betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"Doors are polite suggestions. I'm not polite.\"",
+      "\"First through the door, last to flinch. That's the job description.\"",
+      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Kamala Medina-Quaye's contracts goes silent — dead, disappeared, or turned",
+    "Kamala Medina-Quaye discovers a job they completed last year was a setup for something much larger and much worse",
+    "A high-paying contract turns out to target someone Kamala Medina-Quaye owes a personal debt to"
+  ],
+  "narrative_function": "Kamala Medina-Quaye functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — known in Old Harbor circles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 9
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 10
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.15,
+      "caution": 0.96,
+      "loyalty": 0.21,
+      "greed": 0.79,
+      "empathy": 0.71
+    },
+    "drives": [
+      "survival",
+      "freedom",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 3,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "encyclopedic knowledge of GLMZ infrastructure",
+      "technical expertise with augmentation systems"
+    ],
+    "weaknesses": [
+      "difficulty with authority figures",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "breacher",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Claims not to care about reputation but monitors what people say about them obsessively"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "A child being put in danger as leverage against them",
+      "Being forced to choose between a crew member and the mission — and choosing wrong"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Synthetic muscle fiber replacement in legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "replaces": ""
+    },
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7,
+    "Tactician": 0.7,
+    "Risk Taker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "related_entities": [
+    "Bioelectric Muscle Fiber",
+    "GLMZ",
+    "Geartown",
+    "Slagworks Industrial",
+    "The Milwaukee Core",
+    "Arcturus Exo-Runner Frame",
+    "Aybek Sato-Poku",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Chibundo Reinholt-Sarpong",
+    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
+    "Crucible RE-2 'Receptionist'",
+    "Doru Fofana-Câmpeanu",
+    "Glenville Sound",
+    "Inductive Thermal Lance",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Oumarou Svec-Ranginui",
+    "Quilt",
+    "TERMINUS",
+    "TESSERA TC-3 'Crucible'",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "The Peninsula",
+    "The Quiet Room",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yannick Tambadou-Reinholt",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (37.6%), South Asian (29.8%), Southeast Asian (11.6%), Hispanic/Latin American (11.4%), Northern European (9.6%) — a truly global genetic blend that manifests in her high cheekbones and broad facial structure with South Asian undertones, warm medium-to-deep brown skin with subtle golden and copper shifts, and eyes that carry both African and South Asian depth",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with ropy muscle definition. Her frame is all functional tension — minimalist, built for explosive movement rather than mass. Synthetic muscle replacement in both legs gives them a subtly different shape than the rest of her body: smoother curves, too perfect, chrome gleaming under the skin.",
+    "hair_color": "Dark brown, natural base with premature silver threading at the temples",
+    "hair_style": "Pulled back in a tight functional braid, practical and never loose",
+    "hair_length": "Long — reaches mid-back when unbraided, but always secured",
+    "eye_color": "Deep brown with a faint tremor in the iris — side effect of wired reflexes",
+    "skin_tone": "Deep warm brown with golden-copper undertones that shift in light, reflecting the rich blend of Sub-Saharan, South Asian, and Southeast Asian ancestry. The tone is even and luminous, unmarked except for deliberate scars from work and augmentation",
+    "complexion": "High, prominent cheekbones with South Asian structure softened by broader African facial geometry. Angular jaw, refined narrow nose. Skin is weathered in the way of someone who spends time outdoors and doesn't prioritize skincare — small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that's just her baseline intensity.",
+    "distinguishing_marks": [
+      "Surgical scar running the length of her left thigh, visible through the chrome — where the synthetic muscle was installed six years ago",
+      "Matching scar on the right thigh, same vintage",
+      "Network of fine white burn scars across both palms and inner forearms — old industrial incidents or combat, impossible to tell",
+      "Small keloid scar above her left collarbone, the size of a fingernail",
+      "No visible tattoos, though there is a faint subcutaneous marking on her wrist that catches light — possibly a receipt implant or access code"
+    ],
+    "visible_augmentations": "The chrome in both legs is immediately visible — synthetic muscle shows through translucent dermal sheaths as a faint metallic sheen, most pronounced in the calves and quads. The artificial musculature is too perfect, too symmetrical compared to her natural upper body. When she moves, the legs respond a fraction too quickly. Her pupils occasionally dilate and contract unnaturally — the adrenaline pump kicking in and settling.",
+    "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise — no wasted motion. When she walks, there's a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don't quite move in sync with her natural reflexes. In high-stress moments, she twitches — fingers drumming, jaw clenching — the chemical-mechanical hybrid augmentation pushing her toward action.",
+    "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket — the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
+  },
+  "image_prompt": "Nyx Raghavan-Dalgaard, cyberpunk 2226, lean angular 168cm woman with deep golden-brown skin reflecting Sub-Saharan, South Asian, Southeast Asian heritage, high sculpted cheekbones and refined features, dark braided hair with silver threading, intense deep brown eyes with subtle iris tremor. Long sleeveless tank under reinforced industrial jacket, tactical cargo pants, steel-toed boots. Chrome synthetic muscle visible in legs through translucent dermal sheaths, gleaming metallic sheen in calves. Fine white burn scars across palms and forearms, surgical scars on thighs, keloid above collarbone. Coiled spring posture, economical movements, tension in every muscle. Standing in industrial urban setting, neon reflected off chrome augmentations, cool blue and amber lighting, atmospheric ozone haze, worn and functional aesthetic, no makeup, weathered intensity, functional beauty. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 37.6,
+    "South Asian": 29.8,
+    "Southeast Asian": 11.6,
+    "Hispanic/Latin American": 11.4,
+    "Northern European": 9.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

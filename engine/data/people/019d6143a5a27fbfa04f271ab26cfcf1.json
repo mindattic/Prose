@@ -1,0 +1,305 @@
+{
+  "id": "019d6143a5a27fbfa04f271ab26cfcf1",
+  "type": "character",
+  "name": "Zephyr Haddad-Ingebrigtsen",
+  "aliases": [
+    "Brick"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "age": 34,
+  "status": "active",
+  "location": "Fort Anchor, near Western and Chicago Ave",
+  "description": "Adaeze is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined Metro PD because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "becoming indistinguishable from the officers she despises",
+      "failing to protect someone who needed her to act"
+    ],
+    "core_desires": [
+      "to do genuinely good work in a corrupt system",
+      "to believe the institution can be reformed from inside"
+    ],
+    "coping_mechanisms": [
+      "ritualistic E.L.F. prayer before difficult shifts",
+      "physical exercise to exhaustion",
+      "dark gallows humor with trusted colleagues"
+    ],
+    "blind_spots": [
+      "her loyalty to the institution enables harms she refuses to fully reckon with",
+      "she mistakes endurance for virtue"
+    ],
+    "secret": "During a major labor riot in the Ironhide Berlin district three years ago, she received a direct order to advance on a crowd containing children. She deliberately mis-timed her unit's charge, giving the crowd thirty seconds to scatter. No one died. Her sergeant suspects but has never filed a report — he did the same thing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clipped, functional, professional — military cadence bleed-through. Rarely metaphorical unless she trusts you deeply.",
+    "cadence": "Short declarative sentences. Long pauses before anything emotionally weighted. Finishes her thoughts completely before letting you speak.",
+    "verbal_tics": [
+      "calls equipment and tools by their technical designation, never slang",
+      "exhales slowly before delivering bad news"
+    ],
+    "example_lines": [
+      "'Crowd pressure's building northeast. We have maybe four minutes before it goes kinetic. You want to be somewhere else.'",
+      "'I don't make the calls. I make sure nobody gets killed by them. There's a difference. I need there to be a difference.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She witnessed something she shouldn't have during a corporate-sanctioned 'security operation' and is carrying the evidence, unsure who to trust with it.",
+    "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she's quietly trying to find someone to help — someone Metro PD wouldn't notice."
+  ],
+  "narrative_function": "Moral conscience within law enforcement — a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in GLMZ.",
+  "augmentations": "Subdermal impact-absorption mesh in forearms and shins (standard issue); cochlear dampener to protect against sonic crowd-control discharge; bioluminescent stripe (cosmetic, personal mod)",
+  "daily_life": "Shifts start at 1800 at Fort Anchor for briefing, then deployment rotations through The Circuit and Grand Corridor protest zones; off-hours she visits a Tier 2 canteen called Okoro's near the barracks, feeds her cats, and leaves burned data-sticks at her E.L.F. shrine.",
+  "affiliation": "GLMZ Metro Police, Public Safety Division — Crowd Management Unit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 8,
+      "dexterity": 6,
+      "vitality": 8,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 4,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "crowd-reader",
+      "reluctant enforcer",
+      "E.L.F.-devout",
+      "institutional loyalist",
+      "quiet protector"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "protect civilians first, enforce orders second",
+      "never lie to a direct question — redirect or stay silent instead",
+      "don't escalate if there's a de-escalation path available"
+    ],
+    "escalation_ladder": [
+      "Calm assessment and repositioning",
+      "Firm verbal warning with physical presence",
+      "Defensive use of shield and crowd tools — minimum necessary force",
+      "Full engagement only after all other options exhausted"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and measured, maintains physical distance, assesses threat level instinctively",
+      "friends": "Dry humor, surprising warmth, loyal to a fault — will move mountains quietly without being asked"
+    },
+    "stress_responses": {
+      "low": "Goes quieter, more precise in language",
+      "medium": "Physicality increases — stands straighter, moves more deliberately, grips things",
+      "high": "Becomes eerily calm and focused; all emotion goes behind the mask; extremely dangerous in this state"
+    },
+    "contradictions": [
+      "Enforces order she finds unjust while privately protecting those the order harms — lives in permanent cognitive dissonance she manages through ritual"
+    ],
+    "habits": [
+      "Checks her shield for the E.L.F.'s presence every morning",
+      "Eats the same breakfast every shift — protein paste and synthetic coffee",
+      "Memorizes the faces of people she's had to move against"
+    ],
+    "breaking_points": [
+      "Being ordered to harm a child or non-combatant with no plausible deniability",
+      "Discovering her sergeant filed false reports about the Ironhide Berlin incident"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
+      "replaces": ""
+    },
+    {
+      "name": "Cochlear dampener array (MPD standard issue)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cochlear dampener array (MPD standard issue)",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent pigment stripe — violet (personal cosmetic mod, unlicensed)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent pigment stripe — violet (personal cosmetic mod, unlicensed)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in Grainfort to a Igbo-Samoan mother and a Russian-descended dock father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2184 — Joined Metro PD following uncle's twenty-year career",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Assigned to Crowd Management Unit after commendation for minimizing casualties during Gage Circuit food-price protests",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Ironhide Berlin riot incident; receives internal commendation for 'disciplined restraint under pressure'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Current assignment, Fort Anchor rotation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "related_entities": [
+    "Fort Anchor",
+    "Neuromorphic Pressure Cestus",
+    "The Pure Hand",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Grand Corridor",
+    "Ilhan Sandstrom-Badu",
+    "Ironhide Berlin",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Narrowcast",
+    "Philibert Mwangi-Djordjevic",
+    "Pirjo Asante-Ulukhan",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Street Custom 'Gallows' Recurve Bow",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Circuit",
+    "Uncle Noodle",
+    "Veslemøy Achebe-Tursynov",
+    "Vojislav Addo-Mensimah",
+    "Yuki Nwosu-Petrenko",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Middle Eastern, Central Asian, and Hispanic/Latin American ancestry — a striking pan-Asian cosmopolitan blend reflecting the Ubiquitous Diaspora. Features a balanced fusion: East Asian bone structure with Middle Eastern warmth, Central Asian resilience, and Latin American vitality in complexion.",
+    "height_cm": 183,
+    "weight_kg": 89,
+    "build": "Heavily muscled and columnar — broad shoulders tapering to a narrow waist, thick neck, forearms dense with functional mass. Built for impact absorption and crowd control rather than aesthetics.",
+    "hair_color": "Black, natural",
+    "hair_style": "Cropped close to the skull in a military cut, with a single bioluminescent violet stripe running from left temple to nape that pulses faintly in response to elevated blood pressure",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Warm medium-tan with olive undertones — a sun-kissed blend reflecting the East Asian-Middle Eastern-Hispanic fusion. Even complexion with subtle golden warmth.",
+    "complexion": "East Asian bone structure with prominent cheekbones and defined mandible; face carved for neutrality — minimal expression lines, minimal grooming beyond functional. Eyes show the characteristic depth of East Asian genetics with warm overtones. Skin shows the wear of 12 years in riot suppression but no visible acne or blemishing.",
+    "distinguishing_marks": [
+      "Extensive scar tissue network along left forearm in the pattern of crush fractures from a crowd-crush incident approximately 8 years prior — white, slightly raised, maps the shape of interlocked fingers and bone breaks",
+      "Small burn mark on right shoulder blade from a sonic discharge ricochet (2221) — pale, roughly circular, diameter 3cm"
+    ],
+    "visible_augmentations": "Subdermal impact-absorption mesh visible as faint geometric scarring along both forearms and shins when skin is exposed — raised, silvered lines forming a lattice pattern beneath the surface. The bioluminescent hair stripe is the only overt aesthetic augmentation; the cochlear dampener is fully subcutaneous and invisible. Left wrist bears a faint circular scar marking the cochlear neural anchor point.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
+    "clothing_style": "Off-duty: GLMZ Metro PD standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
+  },
+  "image_prompt": "Cyberpunk 2226, GLMZ Metro PD riot officer Zephyr Haddad-Ingebrigtsen: 183cm tall, heavily muscled and columnar build, East Asian bone structure with warm olive-tan skin and golden undertones. Deep brown eyes, black cropped military haircut with single bioluminescent violet stripe pulsing from temple to nape. Subdermal impact-mesh scarring visible on forearms and shins as raised silver lattice patterns. Extensive crush-fracture scar tissue network on left forearm. Small circular burn mark on right shoulder blade. Studied neutral expression, economical posture, crowd-control stance. Wearing matte black compression shirt, gray tactical cargo trousers, unmarked Tier 3 tactical jacket. Small brass charm on thin cord. Standing in neon-lit precinct corridor, violet hair-stripe casting faint glow against ambient cyberpunk lighting. Functional, utilitarian aesthetic. Stoic, alert demeanor. Industrial Great Lakes Metropolitan setting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 40.9,
+    "Middle Eastern": 27.3,
+    "Central Asian": 17.5,
+    "Hispanic/Latin American": 14.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

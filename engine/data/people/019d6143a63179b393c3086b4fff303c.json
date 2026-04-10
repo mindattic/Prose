@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a63179b393c3086b4fff303c",
+  "type": "character",
+  "name": "Abiodun Kristjánsson-Matai",
+  "aliases": [
+    "Midge",
+    "The Knife"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Trauma surgeon, Aurochs Medical Complex",
+  "age": 44,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Calumet Rise, near North Ave and Damen",
+  "description": "Imogen is lean and economical in every sense — short hair the color of old copper kept close to her skull, a jaw that looks like it was designed for clenching, and hands that are almost supernaturally still even when the rest of her is exhausted. Her left eye is a Helix Biosystems surgical optic with a pale gold iris ring that pulses when she's running diagnostics, a perk of her department head position she still resents having accepted. She has a small tattoo of a drowned city on the inside of her right wrist — Lagos Submerged, her grandmother's home — done in blue-green lines so fine they look like circuitry.\n\nShe has the emotional affect of someone who learned empathy the hard way and now rations it like medicine. Residents call her brutal in the OR and quietly miraculous. She does not believe in wasted motion, wasted words, or wasted patients, and she has been known to operate on someone for six hours and never learn their name until after they're stable. She has a complicated relationship with Aurochs administration, a worse one with the Helix Biosystems consultants who keep trying to monetize her trauma ward, and a completely unremarked devotion to a shrine to the E.L.F. Steadhammer that she maintains in the supply closet off Bay 7.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Losing a patient she could have saved if she'd been faster, better, less tired",
+      "Being bought out — that Aurochs will eventually become a Helix subsidiary and she'll become a corporate asset"
+    ],
+    "core_desires": [
+      "A trauma ward that functions the way it should, funded the way it should be",
+      "One full night of sleep that isn't interrupted by her own mind replaying cases"
+    ],
+    "coping_mechanisms": [
+      "Extreme routine and ritual",
+      "Praying to Steadhammer before difficult procedures",
+      "Deliberate emotional compartmentalization she calls 'surgical focus'"
+    ],
+    "blind_spots": [
+      "She genuinely cannot see when her residents are burning out because she normalized burning out decades ago",
+      "She underestimates how frightening she is to people who need warmth from her"
+    ],
+    "secret": "Three years ago she made a triage call that she has never documented correctly — she let a known Arcturus enforcer die on the table while prioritizing a child with worse odds, and she would make the same call again, but the family of the enforcer never stopped looking for answers."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, clipped medical terminology mixed with blunt lay language when she's impatient; occasionally uses Ghanaian Pidgin phrases from her father's side when she's tired or emotional",
+    "cadence": "Short sentences. No filler words. Pauses that feel deliberate rather than hesitant.",
+    "verbal_tics": [
+      "'Again.' when someone repeats a mistake",
+      "'That's not a question.' when someone hedges instead of deciding",
+      "Long exhales through the nose instead of sighs"
+    ],
+    "example_lines": [
+      "'You have thirty seconds to tell me what I'm walking into. Use them.'",
+      "'He's not dying today. I haven't decided that's allowed.'",
+      "'Steadhammer keeps the lights on in this ward. I keep the rest.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A patient was brought in with a wound pattern Imogen has never seen before — not augmentation damage, not conventional ballistics, something that ate through tissue in a way that suggests an engineered pathogen or a weapon that shouldn't exist yet, and she's quietly trying to find out what it is before someone tells her to stop",
+    "She has been quietly funneling medical supplies to the Highland Park Autonomous Zone clinic for two years through a resident she trusts, and a new Aurochs auditor is about to notice the inventory discrepancy"
+  ],
+  "narrative_function": "Emergency resource for characters needing serious medical intervention; moral authority figure in medical settings; source of grim information about who came through the trauma ward and what state they were in; potential quest giver when a patient brings trouble in with them.",
+  "augmentations": "Helix Biosystems surgical optic (left eye, gold iris ring, real-time diagnostic overlay); subdermal vibration dampeners in both hands (surgical precision); standard neural fatigue inhibitor (low-grade, helps with long shifts)",
+  "daily_life": "Arrives before her shift officially starts to review overnight cases, spends 10-14 hours in surgery or triage, stops at the Steadhammer shrine before going home, eats whatever is closest to her apartment in Calumet Rise without really tasting it.",
+  "affiliation": "Aurochs Medical Complex (department head, trauma); informal affiliation with community health co-op in Calumet Rise",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Surgeon",
+      "Institutional Power",
+      "Hidden Compassion",
+      "E.L.F. Devotee",
+      "Moral Anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient survival comes before paperwork, protocol, or politics — always",
+      "Never operate while emotionally compromised — pray first, reset, then cut",
+      "Do not give administrators information they will use against patients"
+    ],
+    "escalation_ladder": [
+      "Silence and redirection when irritated",
+      "Flat factual correction delivered without inflection",
+      "Direct confrontation with specific consequences stated plainly",
+      "Escalation to institutional channels she has spent years cultivating leverage in"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and neutral — she reads people like patients, looking for what's wrong before offering anything",
+      "friends": "Sparse but genuine; shows care through action, not words; remembers details people mentioned months ago"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more precise",
+      "medium": "Works through meals and off-hours, gets slightly curt, prays to Steadhammer more frequently",
+      "high": "Enters a focused cold state that residents describe as terrifying and effective in equal measure; cracks only when alone"
+    },
+    "contradictions": [
+      "She believes medicine is sacred and has almost no patience for the spiritual practices of her patients unless she privately shares them"
+    ],
+    "habits": [
+      "Touches the Steadhammer shrine every morning even on days she doesn't need anything",
+      "Keeps a physical notebook of every patient she's lost — she writes their names in it herself",
+      "Eats standing up"
+    ],
+    "breaking_points": [
+      "A child dying on her table due to equipment failure Aurochs refused to fund repairs for",
+      "Evidence that someone she trusted falsified a patient record"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Helix Biosystems Surgical Optic Mk.IV (left eye)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Helix Biosystems Surgical Optic Mk.IV (left eye)",
+      "replaces": ""
+    },
+    {
+      "name": "Tectus Vibration Dampeners x2 (palmar subdermal)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tectus Vibration Dampeners x2 (palmar subdermal)",
+      "replaces": ""
+    },
+    {
+      "name": "Standard-issue Aurochs Neural Fatigue Inhibitor (NF-7, low grade)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Standard-issue Aurochs Neural Fatigue Inhibitor (NF-7, low grade)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Calumet Rise",
+    "Grandmother",
+    "Copper",
+    "The Pure Hand",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile",
+    "Gold",
+    "Ambrogio Waweru-Djordanović",
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
+    "Crucible TR-7 'Triage'",
+    "Ferrogate Enforcer Cruiser",
+    "Green Bay Community Table",
+    "Halima Gutierrez-Asante",
+    "Lacunal",
+    "Nurlan Holmberg-Dembele",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Slagworks Industrial",
+    "The Iron Lotus",
+    "Volkov-Saito Precision VS-40 'Magistrate'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Youssouf Brennan-Tashkentov",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Cosmopolitan blend: East Asian (25.7%), Sub-Saharan African (21.5%), Pacific Islander (19.8%), Northern European (18.2%), Southeast Asian (14.8%). Features reflect this complex diaspora—warm medium-brown skin with subtle golden undertones, high cheekbones with gentle rounding from Pacific Islander ancestry, and a lean facial structure influenced by East Asian genetics. Copper-oxide red hair with silver threads suggests Northern European recessive traits expressed through the diverse genetic background.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and economical, minimal body fat, cords of muscle in forearms and shoulders from years of precise surgical work. No wasted volume anywhere.",
+    "hair_color": "Copper-oxide red, natural with silver threads at temples",
+    "hair_style": "Cropped close to skull, severe and functional, no styling beyond cleanliness",
+    "hair_length": "Short",
+    "eye_color": "Right eye: warm dark brown with golden flecks. Left eye: pale gold with a faint pulsing ring that cycles during active use (Helix Biosystems surgical optic)",
+    "skin_tone": "Warm medium brown with golden-burnished undertones, the result of blended East Asian, African, and Pacific Islander ancestry creating a luminous, sun-touched quality",
+    "complexion": "Lean-faced with pronounced but gently rounded cheekbones and a defined jaw. Minimal facial scarring. Skin shows the pallor of someone who spends 12+ hours under surgical lighting—a faint washed-out quality under natural light that contrasts with the underlying warmth of the complexion. Small stress lines around mouth corners.",
+    "distinguishing_marks": [
+      "Small, finely-detailed tattoo on the inside of her right wrist: a submerged cityscape (Lagos Submerged) rendered in blue-green lines so precise they resemble circuit traces",
+      "Faint surgical scars on both palms (legacy marks, mostly faded)",
+      "A small burn scar on her left forearm, partially obscured by the sleeve edge"
+    ],
+    "visible_augmentations": "Left eye displays a subtle gold iris ring that pulses intermittently when active (diagnostic mode). Hands show no visible chrome or subdermal plating, but the precision of her movements and the absence of tremor suggests subdermal vibration dampeners. No external neural interface visible.",
+    "posture_movement": "Stands with shoulders squared but not rigid. Moves with surgical economy—no flourishes, no wasted micro-motions. Hands remain almost unnaturally still even during conversation. When tired, her left eye's pulse becomes slightly erratic. She walks like someone checking a mental list with each step.",
+    "clothing_style": "Tier 2-3 professional: high-quality Aurochs Medical Complex-issued surgical scrubs in deep navy (department head privilege), kept immaculate. Outside surgery: fitted grey or black technical wear from mid-range brands (Vertex, Synthesis)—minimal color, maximum function. Worn shoes (Caterpillar utility boots). No jewelry except a thin wedding band worn on her right ring finger (left is reserved for surgical rotation). Shoulder-slung messenger bag in black leather, visibly worn, containing personal case files and a small wrapped object (the Steadhammer shrine token)."
+  },
+  "image_prompt": "Abiodun Kristjánsson-Matai, 168cm lean surgical specialist, standing in sterile Great Lakes Metropolitan Zone medical facility, cyberpunk 2226. Warm medium-brown skin with golden undertones, copper-oxide red hair cropped close with silver threads at temples. Sharp cheekbones, lean face, right eye warm dark brown, left eye augmented pale gold with faint pulsing diagnostic ring. Wearing deep navy surgical scrubs (Aurochs Medical Complex), immaculate condition. Faint subdermal implant precision evident in unnaturally still hands and surgical-economy movements. Small blue-green Lagos Submerged circuit-traced tattoo visible on inside right wrist. Faded surgical palm scars. Posture squared but not rigid, shoulders steady. Overhead surgical lighting casting cool white glow on skin, creating subtle contrast with warm undertones. Atmosphere: focused, methodical, slightly fatigued. Cinematic lighting, high detail on facial features and cybernetic eye, professional but worn aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 25.7,
+    "Sub-Saharan African": 21.5,
+    "Pacific Islander": 19.8,
+    "Northern European": 18.2,
+    "Southeast Asian": 14.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

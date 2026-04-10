@@ -1,0 +1,251 @@
+{
+  "id": "019d6143a687770e81049b758c97cc48",
+  "type": "character",
+  "name": "Aero Nygaard-Hernández",
+  "aliases": [
+    "Ors",
+    "The Wringer"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Laundry operator, owner of a basement wash-and-fold in Hamtramck Enclave",
+  "age": 54,
+  "status": "active",
+  "location": "Hamtramck Enclave, sub-basement level of the Kossuth Residency block, near Kedzie and Division",
+  "description": "Orsolya is a broad-shouldered woman with hands that look like they were carved from hardwood — knuckled, stained faintly blue-grey from decades of industrial detergent and dye-stripping fluid. Her hair is silver-streaked black, usually pinned up with whatever is closest, often a stylus or a bent fork. She has deep-set eyes the color of dark amber and a jaw that suggests she once had a habit of grinding her teeth, which she replaced with the habit of grinding other people's patience instead. Her skin carries the warm undertone of her Senegalese grandmother and the pale freckling of her Hungarian grandfather, a combination that her regulars say makes her look like she was assembled from contradictions — which, she would tell you, is exactly right.\n\nShe runs the laundry with the precision of a military operation and the warmth of a woman who has watched three generations of the same families bring her their clothes. She knows everyone's laundry tells a story — whose kid had a bloody nose, whose corp interview is tomorrow, who's dressing up for someone they shouldn't be. She keeps all of it. She gossips about none of it. She is the confessor of the Kossuth block, and she charges Φ4 per kilo.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Becoming invisible to the people she serves",
+      "Losing the laundry and with it her place in the community"
+    ],
+    "core_desires": [
+      "To be genuinely necessary, not just convenient",
+      "To see the Kossuth block survive the next wave of Tessera rezoning"
+    ],
+    "coping_mechanisms": [
+      "Ritualistic tidiness — folding things when anxious",
+      "Talking to machine seven like it's a confidant"
+    ],
+    "blind_spots": [
+      "She assumes everyone who pays on time is trustworthy",
+      "Underestimates how much her silence is worth to dangerous people"
+    ],
+    "secret": "Two years ago a man left a bag of clothes that contained a severed hand wrapped in a Palladian-branded data chip. She washed the clothes, buried the hand in the drainage sump, and has said nothing. The chip is behind machine seven. She has never plugged it in."
+  },
+  "speech_patterns": {
+    "vocabulary": "Blunt, domestic metaphors. Mixes Hungarian diminutives with Wolof loan-phrases her grandmother used. Plain sentence structure.",
+    "cadence": "Deliberate. Never rushes. Each sentence lands like a weight set down.",
+    "verbal_tics": [
+      "'You hear what I'm saying?'",
+      "Clicks tongue before disagreeing"
+    ],
+    "example_lines": [
+      "'Leave it. I'll have it back by Thursday. Don't ask me twice, I only answer once.'",
+      "'Your shirt says three things and none of them are what you told me. But that's fine. I wash shirts, not stories.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular customer hasn't picked up their laundry in three weeks — bag number 47 is still on the shelf, and Orsolya is starting to worry",
+    "Tessera rezoning agents have begun offering her building's residents buyout packages; she's the only one organizing resistance, and someone has started leaving threatening messages in her drain filters"
+  ],
+  "narrative_function": "Neighborhood anchor and information repository — she knows every resident's rhythms. Quest giver for domestic mysteries, a trustworthy source for who's new, who's gone, who's hiding something.",
+  "augmentations": "Basic arthritic joint supplements in both wrists (medical necessity, Tier 2 grade). No cosmetic mods. She thinks geneware is 'fine for other people.'",
+  "daily_life": "Opens the basement at 0530, runs sixteen machines simultaneously through the morning rush, closes at 2100. She eats lunch sitting on an overturned drum beside machine seven, which she calls 'the reliable one.'",
+  "affiliation": "Independent — Kossuth Residency tenant association, informal",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 5,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood-anchor",
+      "keeper-of-secrets",
+      "stubborn",
+      "pragmatist",
+      "community-pillar"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give out information about a customer's routine to a stranger, no exceptions",
+      "If someone is crying, hand them something warm to fold — it helps"
+    ],
+    "escalation_ladder": [
+      "Politely redirect",
+      "State the boundary plainly once",
+      "Physically walk them out herself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous but assessing — she watches what they do with their hands",
+      "friends": "Dry humor, unsolicited advice, occasionally shows up at their door with food"
+    },
+    "stress_responses": {
+      "low": "Folds faster, hums an old Senegalese song her grandmother taught her",
+      "medium": "Goes very quiet and stops making eye contact",
+      "high": "Becomes unnervingly calm and precise, starts wiping down already-clean surfaces"
+    },
+    "contradictions": [
+      "Insists she doesn't get involved in people's business, then absolutely gets involved in people's business"
+    ],
+    "habits": [
+      "Checks the lint filters obsessively even when they're clean",
+      "Keeps a handwritten ledger in paper, distrusts cloud backups"
+    ],
+    "breaking_points": [
+      "Someone threatening a child or elderly resident of the block",
+      "Anyone touching machine seven"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Ringo Corponation Adrenal Sequencing Patch",
+    "Grandmother",
+    "The CEO",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "The Shelf",
+    "Vantablack Media Confessor Tap — 'The Booth'",
+    "Tessera Attrition Engine TE-9 'Patience'",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Lazarus IDP-1 'Teeth'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Pale Mile",
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Ambrogio Waweru-Djordanović",
+    "Ambrosia Fekete-Waiyaki",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Exo-Runner Frame",
+    "Aïssé Dragomirescu-Faalelei",
+    "Breck Tannen",
+    "Cinderblock Ai",
+    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Mika Sorel",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nnamdi Ostrowski-Faletolu",
+    "Orbital Drop Pod",
+    "Palladian Construction",
+    "Quilt",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sulfur Crown Agriculture",
+    "TERMINUS",
+    "The Bleach Boys",
+    "The Ledger",
+    "Tshiamo Vukić-Arellano",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian (57.7%, primarily), Sub-Saharan African (20.2%), Hispanic/Latin American (13.3%), Northern European (8.8%)—a striking blend visible in facial structure, skin tone, and eye color. The genetic dominance of East Asian ancestry shapes her bone structure and eye shape, while African and Latin American heritage contribute warmth and dimensionality to her skin tone, and Northern European ancestry adds subtle complexity to her complexion.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, neither lean nor heavy—the build of someone who has moved and lifted for fifty-four years without breaking. Forearms thick and ropy with work muscle. Core weight settled from middle age, but not softness; density.",
+    "hair_color": "Black with silver-grey streaking, particularly at temples and scattered through the crown",
+    "hair_style": "Usually pinned up hastily with whatever is at hand—styluses, forks, pencils, the occasional chopstick. When down, falls to shoulder length in a slightly wavy texture.",
+    "hair_length": "Medium",
+    "eye_color": "Dark amber, warm and observant",
+    "skin_tone": "Warm medium brown with golden undertones—the result of dominant East Asian ancestry layered with Sub-Saharan African warmth and Hispanic/Latin depth, creating a rich, complex tone that shifts in different lighting. Scattered freckling across the nose and cheekbones adds subtle texture and reflects the Northern European admixture.",
+    "complexion": "Lined face that reads as lived-in rather than aged, with facial structure showing East Asian bone prominence in cheekbones and jaw, softened by the fuller features contributed by African and Latin American ancestry. Deep creases around the eyes and mouth from decades of smiling and squinting at stain charts. Callused, weathered skin on hands and forearms. Fingernails kept short and practical, with faint blue-grey discoloration in the nail beds from chronic detergent exposure. No makeup. A few small burn scars on her left forearm from industrial dryer incidents.",
+    "distinguishing_marks": [
+      "Faint blue-grey staining in the crescent of both fingernails and under the cuticles, permanent from decades of industrial-grade detergent and dye-stripping fluid exposure",
+      "Three pale linear scars on the left forearm (inner wrist to elbow), each 2-3 cm long, from steam and chemical burns accumulated over forty years of laundry work",
+      "A small crescent-shaped scar on her right temple, barely visible unless the light catches it, never explained",
+      "Callus pattern on her right palm and index/middle fingers from gripping pressing equipment handles",
+      "Habitual tension lines in her jaw and around her mouth that suggest decades of silent judgment held back"
+    ],
+    "visible_augmentations": "Both wrists show subtle medical-grade joint supports—visible as slightly reinforced articulation at the wrist joint, pale synthetic cartilage visible under the skin at the base of each thumb where the joint supplements interface. No cosmetic chrome. The augmentations read as medical necessity rather than choice, worn with the same matter-of-factness as reading glasses.",
+    "posture_movement": "Stands with weight balanced and legs slightly apart—a stance developed from sixteen hours a day on hard concrete. Moves with economical efficiency; no wasted motion. Hands are always doing something—gesturing, folding, checking, organizing. Sits heavily when she sits, as if earning the rest. Eye contact is direct and sustained, reading people the way she reads laundry stains. Her default expression is watchful neutrality that shifts to warmth when she chooses.",
+    "clothing_style": "Practical Tier 4 working-class. Wears heavy cotton or synthetic-blend work pants in grey or dark blue, always with multiple pockets. Usually a loose, oversized button-up shirt in white, cream, or faded patterns—often borrowed from or donated by laundry customers—worn open over a fitted undershirt. A heavy canvas apron, faded from years of bleach and wear, with deep pockets and water stains. Worn-in athletic shoes with orthopedic insoles, usually generic Tier 4 brands. A thin gold chain necklace with a small cross pendant, inherited. A simple wristwatch with a fabric strap, the face cracked but still functional. No jewelry beyond the watch and necklace. Hair held up with whatever implements are closest—functional, never decorative."
+  },
+  "image_prompt": "Aero Nygaard-Hernández, 54-year-old woman, cyberpunk 2226, warm medium-brown skin with golden undertones and subtle freckling, prominent East Asian cheekbones softened by fuller features, dark amber eyes warm and observant, black hair streaked with silver-grey pinned up with styluses and chopsticks, shoulder-length slightly wavy when down. Medium height, broad-shouldered, solid work-worn build with ropy forearms, density rather than softness. Deep creases around eyes and mouth from decades of smiling, weathered callused hands with faint blue-grey nail discoloration. Three pale linear scars on left inner forearm from chemical burns, small crescent scar on right temple. Subtle medical-grade wrist joint augmentations with pale synthetic cartilage visible, no cosmetic chrome. Wearing loose oversized button-up shirt in cream worn open over fitted undershirt, heavy grey work pants with multiple pockets, faded bleach-stained canvas apron with deep pockets, worn-in orthopedic athletic shoes, thin gold cross necklace, cracked-face wristwatch with fabric strap. Standing with balanced weight and legs slightly apart on worn concrete, economical efficient movements, direct sustained eye contact, watchful neutral expression. Harsh industrial lighting in background laundry facility, fluorescent and steam, matter-of-fact presence, lived-in dignity, cyberpunk working-class grit --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 57.7,
+    "Sub-Saharan African": 20.2,
+    "Hispanic/Latin American": 13.3,
+    "Northern European": 8.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

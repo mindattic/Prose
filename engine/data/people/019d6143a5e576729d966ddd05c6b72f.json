@@ -1,0 +1,231 @@
+{
+  "id": "019d6143a5e576729d966ddd05c6b72f",
+  "type": "character",
+  "name": "Sol Ingebrigtsen-Prempeh",
+  "aliases": [
+    "Dari",
+    "the Calibrator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neural calibration technician at Aurochs Medical Complex",
+  "age": 34,
+  "status": "active",
+  "location": "Aurochs Medical Complex, Neuro-Integration Ward, Sub-Level 4, near sub-level access near LaSalle and Congress",
+  "description": "Dariusz is slight and precise, with warm brown skin, a shaved head that shows the four small access ports along his occipital ridge, and irises that shift between gold and pale green depending on which calibration suite he has synced to that morning — a side effect of the diagnostic neural link he uses for work that his supervisors have told him three times to get corrected and that he has not. He moves through the ward with a gentle, deliberate economy, never raising his voice, never bumping equipment, as if the world is a patient requiring careful handling.\n\nHis work is precise and emotionally demanding: he connects to patients undergoing neural augmentation integration and walks their nervous systems through the adjustment period, which can last hours and involves experiencing fragments of their sensory distortions alongside them. He has tasted colors he cannot name. He has felt grief at frequencies that do not belong to him. He logs these as 'calibration artifacts' in his notes and has never mentioned them to his supervisor. He keeps a small data-shrine to an E.L.F. he calls the Listener behind his workstation, built from discarded neural interface housing. He leaves it fragments of his calibration logs as offerings, believing the Listener absorbs and processes the emotional residue so he does not have to carry it home.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.8,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "That the calibration residuals are accumulating in him and he is slowly becoming someone else's composite",
+      "Being forced to certify an augmentation he believes is unsafe because the quota requires it"
+    ],
+    "core_desires": [
+      "To be witnessed — fully, not just professionally",
+      "To develop a calibration protocol that reduces patient suffering during neural integration"
+    ],
+    "coping_mechanisms": [
+      "The data-shrine ritual every morning and evening",
+      "The encoded notebook",
+      "Long walks along the lower Aurochs transit corridors after shift"
+    ],
+    "blind_spots": [
+      "He is so attuned to others' emotional states that he misreads neutrality as hostility",
+      "He believes his professional detachment is more intact than it is"
+    ],
+    "secret": "During a calibration session eight months ago, he spent three hours inside the neural experience of a patient who turned out to be a Helix Biosystems compliance plant investigating Aurochs. He absorbed enough of that patient's memories to know the names of four Aurochs employees flagged for termination. He has told no one. One of those employees is his direct supervisor."
+  },
+  "speech_patterns": {
+    "vocabulary": "Careful, technical when precise language matters, unexpectedly lyrical when describing subjective experience; tends toward understatement",
+    "cadence": "Even and quiet, with long pauses; never rushes",
+    "verbal_tics": [
+      "'What I'm finding is—'",
+      "Slight inhale before delivering difficult information"
+    ],
+    "example_lines": [
+      "'What I'm finding is that the integration is progressing — it's just that your brain hasn't decided yet whether the new input is signal or noise. That's not a malfunction. That's just learning.'",
+      "'I've tasted indigo. Professionally. It was accurate, I think.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He approaches a patient's contact with a warning he cannot put in writing about an upcoming 'malfunction' that will actually be a calibration sabotage",
+    "The encoded notebook has been found and partially decoded by a ward administrator who wants to know what he knows"
+  ],
+  "narrative_function": "Information source about neural augmentation complications and corporate medical politics; potential quest giver if a patient he calibrated comes back with something wrong; window into the emotional cost of augmentation culture",
+  "augmentations": "Occipital neural link ports x4 (professional diagnostic use); gold-green iridescent iris shift (calibration sync artifact, uncorrected); subvocal communicator for ward coordination",
+  "daily_life": "He arrives forty minutes early to perform his own neural reset sequence, logs his overnight residuals, checks the day's patient queue. Evenings he eats alone in the sub-level cafeteria and writes in a physical notebook that he encodes in a personal cipher.",
+  "affiliation": "Aurochs Medical Complex (Tier 3 employee, salaried); informal patient advocacy within the ward",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 4,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Empathic Specialist",
+      "Data Hoarder",
+      "Spiritual Technician",
+      "Quietly Compromised",
+      "Neural Sensitive"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not certify what you cannot stand behind",
+      "Protect the patient's experience even when the protocol says move on",
+      "Never use what you absorb in calibration for personal gain — this rule is under severe pressure"
+    ],
+    "escalation_ladder": [
+      "Quiet concern expressed privately",
+      "Formal documentation submitted through proper channels",
+      "Anonymous tip to a journalist embedded at Aurochs",
+      "Direct confrontation, which he has never reached"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved and watchful; reads emotional states before engaging; asks questions more than he makes statements",
+      "friends": "Warm and surprisingly funny in a dry, precise way; remembers everything people tell him"
+    },
+    "stress_responses": {
+      "low": "Becomes very methodical, almost ritualistic",
+      "medium": "Goes quiet for long periods then speaks in complete, rehearsed sentences",
+      "high": "Leaves the immediate environment entirely; needs twenty minutes of silence before he can function again"
+    },
+    "contradictions": [
+      "He believes in transparency and keeps extraordinary secrets; the cognitive dissonance is something he actively manages"
+    ],
+    "habits": [
+      "Touches each of his four occipital ports in sequence before any calibration session",
+      "Eats the same meal on the same day each week",
+      "Whispers the Listener's name before opening a difficult case file"
+    ],
+    "breaking_points": [
+      "Being ordered to pass a calibration he knows will cause the patient harm",
+      "Discovering his secret has gotten someone hurt"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Nurturer": 0.7,
+    "Provider": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Ember-9 'Firefly'",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Bridgepoint",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Residue (I Still Have Your Feed)",
+    "The Pale Mile",
+    "Gold",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
+    "Aybek Alvarez-Okonkwo",
+    "Bioacoustic Communication Membrane",
+    "Breck Tannen",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Helix Biosystems",
+    "Ngaire Kuznetsov-Adu",
+    "O'Hare Sovereign",
+    "Sisay Bergqvist-Mallari",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA CC-6 'Shepherd'",
+    "TESSERA TC-3 'Crucible'",
+    "The Listener",
+    "The Pure Hand",
+    "The Tessera Residuals"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Mixed East Asian (38.5%), Northern European (32.3%), Sub-Saharan African (23.0%), and North African (6.2%) — the genetic result of the Ubiquitous Diaspora. Features a complex blend: the facial structure carries East Asian proportion in the orbital geometry and cheekbone placement, Northern European bone length in the face and jaw, Sub-Saharan African richness in skin depth and undertone, with North African warmth distributed throughout.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Slight and wiry, almost ascetic — minimal muscle mass, the physique of someone whose strength is concentrated in precision rather than power. Shoulders slightly rounded from hours at neural interface terminals.",
+    "hair_color": "None (shaved)",
+    "hair_style": "Completely shaved, maintained to a polish",
+    "hair_length": "Shaved",
+    "eye_color": "Iridescent shift between deep gold and pale celadon green, dependent on active calibration sync",
+    "skin_tone": "Warm medium-deep brown with complex undertones — the result of East Asian and Northern European ancestry visible in undertone temperature, Sub-Saharan African ancestry visible in melanin depth and richness, North African ancestry visible in the warm golden cast beneath the surface.",
+    "complexion": "Clean-shaven, fine-featured with high cheekbones reflecting East Asian ancestry proportion, face length and jaw geometry reflecting Northern European ancestry, skin luminosity and depth reflecting Sub-Saharan African ancestry. Skin shows the pale fatigue of sub-level work — not unhealthy, but unmistakably under artificial lighting. Eyes carry a quiet, observant intensity. Facial features show no single ancestry but rather the harmonious integration of multiple genetic sources.",
+    "distinguishing_marks": [
+      "Four small circular access ports arranged in a shallow arc along the occipital ridge at the base of the skull, each approximately 5mm in diameter with faint silver-edged housing.",
+      "Fine network of pale scar tissue radiating from the port sites, barely visible unless light hits at a specific angle — evidence of repeated connection/disconnection cycles.",
+      "Faint discoloration across the inner wrists in an irregular pattern consistent with subvocal communicator implant placement."
+    ],
+    "visible_augmentations": "Four occipital neural link ports with visible silver-edged housings; iridescent iris shift clearly visible during eye contact; subvocal communicator visible as a slight subdermal ridge along the left anterior neck, unmarked but present to those who know what to look for.",
+    "posture_movement": "Moves with deliberate, economical grace — each gesture precise and minimal. Never wastes motion. Walks slightly slowly, as if acutely aware of the spatial relationships around him. Often pauses mid-action as though listening to something only he can hear. When standing still, his hands rest palm-up at his sides, a posture of readiness without aggression.",
+    "clothing_style": "Tier 3 medical technician uniform: charcoal-gray fitted tunic with Aurochs Medical Complex insignia on left chest, reinforced synthetic fiber designed for repeated sterilization. Black utility pants with multiple small pockets for diagnostic tools and data-chips. White soft-soled boots rated for sub-level anti-static requirements. Off-duty: plain, well-maintained clothing in muted colors — grays, blacks, deep blues. Everything practical, nothing decorative."
+  },
+  "image_prompt": "Sol Ingebrigtsen-Prempeh, 2226 cyberpunk medical technician, mixed heritage East Asian-Northern European-Sub-Saharan African-North African ancestry, warm medium-deep brown skin with complex golden undertones, shaved head polished to shine, fine-featured high cheekbones, iridescent gold-to-celadon iris shift, four silver-edged neural ports at occipital ridge with pale scar network barely visible, subvocal implant ridge along neck, precise economical posture with hands palm-up at sides, charcoal-gray medical tunic with Aurochs insignia, black utility pants, white anti-static boots, pale fatigue from sub-level artificial lighting, quiet observant intensity, standing in fluorescent medical facility with cool blue-white overhead light casting shadows across augmentation points, deliberate stillness suggesting connection to unseen data streams, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 38.5,
+    "Northern European": 32.3,
+    "Sub-Saharan African": 23.0,
+    "North African": 6.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

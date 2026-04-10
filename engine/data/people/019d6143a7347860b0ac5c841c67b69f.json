@@ -1,0 +1,228 @@
+{
+  "id": "019d6143a7347860b0ac5c841c67b69f",
+  "type": "character",
+  "name": "Marek Petrović-Sengupta",
+  "aliases": [
+    "Zeph",
+    "Zero-Z"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Q-zero ghost — stateless person with no digital identity",
+  "age": 24,
+  "status": "active",
+  "location": "Shifting — currently sheltering in the drainage underbelly of Grand Crossing Gate, near sub-level access near LaSalle and Congress",
+  "description": "Zephyrine exists in a strange category of person: alive but officially absent. Their biometric signature was purged from the city's dataweave three years ago during an administrative error that Axiom's records division declined to reverse because doing so would have required admitting the error existed. They have no Quanta account, no transit pass, no ration allocation, no UBC stipend — nothing. Every scanner they walk past registers a blank. They have adapted to this with a kind of furious ingenuity that reads, from the outside, as almost cheerful.\n\nThey are slender and quick, with a shaved head except for a single forelock dyed an uneven rust-orange. Their skin is dark brown and marked with small geometric stick-and-poke tattoos they did themselves — coordinates, symbols, small records of places they have been. They dress in layers chosen specifically for their lack of reflective surfaces, nothing that catches light or scanner arrays. Their bioluminescent geneware is subtle: a faint blue-green tracery along their collarbones that only shows in full darkness, a cosmetic mod done years ago when they still had an identity to attach it to. They smile easily and the smile never reaches the careful calculation in their eyes.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Permanent erasure — that they will die and no record of their existence will remain",
+      "That the cheerfulness is becoming real and they are losing their anger, which is the only thing that has kept them fighting"
+    ],
+    "core_desires": [
+      "To reclaim their digital identity — or to build a new one so robust it cannot be taken",
+      "To be known by someone who matters"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection",
+      "Obsessive documentation of their own existence through physical means — the stick-and-poke tattoos, notebooks",
+      "Cultivating a very specific list of people who know their real name"
+    ],
+    "blind_spots": [
+      "Trusts other Q-zeros uncritically because shared suffering feels like shared values",
+      "Underestimates how visible their adaptations make them to trained observers"
+    ],
+    "secret": "The administrative error that erased them was not an error. They discovered something they were not supposed to see in an Axiom data cache — a list of names and a project designation they do not understand. They have never told anyone because they do not know if the knowledge is dangerous enough to get them killed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quick and colloquial, heavy with Q-zero slang and the creole of Grand Crossing Gate. Uses 'ghost' as both noun and verb.",
+    "cadence": "Fast, overlapping — talks as if always slightly ahead of the conversation",
+    "verbal_tics": [
+      "'Officially?' (rhetorical, meaning: in reality)",
+      "'I don't exist, remember?'",
+      "Clicks tongue when irritated"
+    ],
+    "example_lines": [
+      "'Officially I'm not standing here, so officially this conversation isn't happening, which means you can say whatever you want to me with no legal consequence. That's the fun part of being a ghost.'",
+      "'Every time I mark my skin it's proof. You understand? Physical proof. They can't wipe leather.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "They approach the players because they need someone with a legal identity to access a specific location — and they have something valuable to trade in exchange.",
+    "The project designation they saw in the Axiom cache three years ago has started appearing on graffiti in the tunnels under Grand Crossing Gate, and they do not know what it means or who is writing it."
+  ],
+  "narrative_function": "Provides access to the city's invisible underclass — the people who have fallen through the system entirely. Can navigate spaces that require no digital trace. Source of information about underground economies and Q-zero networks. Potential ally or object of concern.",
+  "augmentations": "Bioluminescent geneware (collarbones, faint blue-green, only visible in darkness). No cyberware — cyberware requires registration.",
+  "daily_life": "Spends mornings scavenging or running small errands for market vendors who pay in physical goods rather than quanta transfers; afternoons are for the Q-zero community — helping newcomers understand how to survive without a digital footprint.",
+  "affiliation": "No formal affiliation; loose community of Q-zeros at Grand Crossing Gate",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Q-zero",
+      "stateless",
+      "survivor",
+      "information-hoarder",
+      "community anchor"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never give a real name to someone they met that day",
+      "Always have two exit routes from any space",
+      "Do not accept charity from corponation-affiliated individuals, even indirect charity"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor",
+      "Introduce deliberate misinformation",
+      "Ghost — simply vanish from the situation",
+      "If physically cornered, make as much noise as possible and appeal to bystanders"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Bright and quick and charming, offering just enough to seem trustworthy while revealing nothing real",
+      "friends": "Intensely loyal, tends toward oversharing as if catching up for all the anonymity, remembers everything"
+    },
+    "stress_responses": {
+      "low": "Jokes increase in frequency and sharpness",
+      "medium": "Goes very quiet and still, which is jarring given their usual energy",
+      "high": "Runs — physically, immediately, no explanation"
+    },
+    "contradictions": [
+      "Desperately wants to be known and remembered while having systematically made themselves invisible"
+    ],
+    "habits": [
+      "Adds a new tattoo mark on the inside of their wrist each time they survive something they did not expect to",
+      "Carries a water-damaged physical notebook and writes in it every night",
+      "Counts exits before doing anything else in a new space"
+    ],
+    "breaking_points": [
+      "Being called by the wrong name or wrong pronouns deliberately",
+      "Watching someone else get administratively erased"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Grand Crossing Gate",
+    "TESSERA PG-2 'Signature'",
+    "Crucible RE-2 'Receptionist'",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Nesting Doll",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Rust",
+    "CortexDynamics VectorLink Pro Pilot Neural Interface",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Ezio Kaboré-Malhotra",
+    "Kang-Petrov Arms KPM-15R 'Reclaim'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "TESSERA TC-3 'Crucible'",
+    "The Pure Hand",
+    "The Underlayer Collective",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Eastern European (50.5%) with significant South Asian (26.2%), Hispanic/Latin American (15.4%), East Asian (5.4%), and Middle Eastern (2.5%) ancestry. The result is a striking composite: Eastern European bone structure with South Asian warmth, creating features that defy simple categorization",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry, efficient rather than imposing — the body of someone who moves through tight spaces and doesn't waste energy",
+    "hair_color": "Naturally dark brown-black, with rust-orange dye on the forelock",
+    "hair_style": "Shaved close to scalp except for a single forelock left long and deliberately uneven, the orange dye showing water stains and grown-out roots",
+    "hair_length": "Shaved with one long forelock",
+    "eye_color": "Dark brown, alert and restless",
+    "skin_tone": "Warm medium-deep brown with golden undertones — the result of Eastern European baseline tempered by South Asian and Latin American ancestry, creating an olive-tinted warmth that shifts in different light",
+    "complexion": "Clear and unblemished except for self-inflicted tattoo work. Features show Eastern European angularity softened by South Asian fullness — defined cheekbones with fuller lower face, straight nose with subtle bridge, expressive eyes set wide. A habitual micro-expression hovers between a smile and sharp observation. Their expression shifts rapidly — a survival trait.",
+    "distinguishing_marks": [
+      "Geometric stick-and-poke tattoos scattered across shoulders and ribs — crude but intentional coordinate symbols and abstract markers, each one a private map of places they've sheltered",
+      "Faint blue-green bioluminescent tracery running along both collarbones in delicate branching patterns, only visible in complete darkness"
+    ],
+    "visible_augmentations": "Bioluminescent geneware on collarbones (invisible in daylight). No visible cyberware — deliberately avoiding any tech that would require registration or leave a digital footprint.",
+    "posture_movement": "Quick and economical, moving through crowds as if reading the spaces between people. Hands are often occupied — fidgeting, repacking layers, adjusting straps. They stand at angles rather than facing directly forward, a posture that maximizes sightlines and minimizes scanner exposure. When still, there is coiled alertness beneath their easy expression.",
+    "clothing_style": "Deliberately non-reflective layered salvage: matte-black thermal underlayer, charcoal canvas overshirt with the collar cut away to show the collarbones, dark grey cargo pants with numerous small pockets repurposed from reclaimed fabric. All seams are carefully dulled. Boots are military surplus, resoled multiple times. Nothing matches, nothing is new, nothing catches light. Tier 5 survival fashion — practical anti-visibility rather than aesthetic statement."
+  },
+  "image_prompt": "Marek Petrović-Sengupta, 168cm lean frame, warm medium-deep brown skin with olive undertones reflecting Eastern European, South Asian, and Latin American heritage. Dark brown alert eyes, shaved head with single long rust-orange dyed forelock showing water stains and roots. Geometric stick-and-poke tattoos on shoulders and ribs. Charcoal canvas overshirt with cut-away collar exposing collarbones (faint bioluminescent tracery visible in shadows). Matte-black thermal underlayer, dark grey cargo pants, military surplus boots. Standing at an angle, coiled alertness beneath easy expression, hands fidgeting with straps. Anti-reflective salvage clothing, nothing new. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody nighttime urban setting, dim neon-tinted light casting shadows, ultra-realistic portrait emphasizing hybrid features and survival aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 50.5,
+    "South Asian": 26.2,
+    "Hispanic/Latin American": 15.4,
+    "East Asian": 5.4,
+    "Middle Eastern": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

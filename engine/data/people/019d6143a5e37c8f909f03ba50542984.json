@@ -1,0 +1,296 @@
+{
+  "id": "019d6143a5e37c8f909f03ba50542984",
+  "type": "character",
+  "name": "Nisha Baiseitov-Pathak-Migizi",
+  "aliases": [
+    "Dow",
+    "Checkpoint Dow"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Checkpoint Operator, Ferrogate Transit Security",
+  "age": 31,
+  "status": "active",
+  "location": "Kessler Interchange, GLMZ, near Milwaukee and Damen",
+  "description": "Daouda is built wide and compact, the kind of body that came from years of adolescent labor before it settled into something functional and calm. His complexion is a warm chestnut brown, his hair worn in tight, close-cut coils shot through with bioluminescent blue threading — a cheap genemod he got at a Mexicantown Libre parlor for his twenty-fifth birthday that he's maintained ever since because his daughter said it made him look like a hero. He has the patient, half-attentive expression of someone who has processed thirty thousand faces through a chokepoint and is no longer surprised by the human shape, but his eyes quicken when something actually breaks pattern.\n\nHe's not corrupt, which at Kessler Interchange makes him something of an oddity. He takes Φ12 under the table maybe twice a year when someone's biometric is glitching and they're going to miss a hospital appointment, and he has decided that this is what his moral flexibility budget allows. He has a small shrine to the Interchange E.L.F. — locally called 'the Turnstile' — affixed to the inside of his booth, decorated with expired transit tokens and a photo of his daughter printed on glossy plastic. He believes the Turnstile has kept three serious incidents off his shift in three years, and he's probably right that something has.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "His daughter inheriting his tier, his ceiling",
+      "Making a call that gets someone killed — either through action or inaction"
+    ],
+    "core_desires": [
+      "Stability that doesn't require constant vigilance to maintain",
+      "His daughter going to a Tessera-accredited school"
+    ],
+    "coping_mechanisms": [
+      "Routine as dignity — doing the small job well as self-respect",
+      "Talking to the Turnstile E.L.F. during quiet stretches"
+    ],
+    "blind_spots": [
+      "Underestimates how much Ferrogate depends on his not asking questions about cargo shipments on the overnight freight rail"
+    ],
+    "secret": "He's been quietly keeping a log of the freight manifests that don't add up — container weights that don't match declared goods, routing anomalies — not because he intends to do anything with it, but because he can't make himself stop noticing."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, straightforward, laced with Malian-Samoan idioms that come out when he's comfortable. Work-mode voice is neutral and procedural.",
+    "cadence": "Easy rhythm in personal conversation. Clipped and efficient at the checkpoint.",
+    "verbal_tics": [
+      "'Come through.'",
+      "Taps his booth wall twice when he approves a crossing — habit, not signal",
+      "Calls unfamiliar people 'friend' genuinely"
+    ],
+    "example_lines": [
+      "'I'm going to need you to hold still for the scan, friend. Takes three seconds, then you're on your way.'",
+      "'The Turnstile's been quiet today. That's either very good or it's saving something up.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He's noticed a specific cargo container come through Kessler on a routing that doesn't exist in Ferrogate's official network — three times in two months — and is beginning to feel like his silence about it has made him complicit in something.",
+    "His daughter was on a train that experienced a mysterious 'signal fault' that stopped it in the tunnel for two hours; Ferrogate's official explanation doesn't match what Daouda observed on his own terminal that night."
+  ],
+  "narrative_function": "Local color and access point — he controls who moves through Kessler Interchange; information source about transit patterns and irregular commuter behavior; potential ally who can look the other way or flag someone's transit profile; humanizing portrait of low-tier security work.",
+  "augmentations": "Standard Ferrogate-issue biometric scanner integrated into his right palm (reads heat signatures, ID chips, contraband metabolic markers); bioluminescent blue threading in hair (cosmetic genemod). No combat chrome.",
+  "daily_life": "Twelve-hour shifts at Booth 7, Kessler Interchange, processing four to six thousand commuters; he brings a thermos of strong sorghum tea and a physical novel he reads in three-minute windows between surges; picks his daughter up from her afterschool program on days he ends shift before 18:00.",
+  "affiliation": "Ferrogate Transit Security",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 4,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Transit",
+      "Observant",
+      "Principled Low-Tier",
+      "Family-Motivated",
+      "Quiet Whistleblower"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Keep the line moving — delay is its own kind of harm",
+      "Give people the benefit of the doubt until the scanner says otherwise"
+    ],
+    "escalation_ladder": [
+      "Polite procedural request",
+      "Firm, louder procedural request with hand signal for backup",
+      "Locks the booth gate and calls Transit Response — he is not paid to fight"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, makes brief eye contact, treats everyone like they're probably having a hard day",
+      "friends": "Relaxed, genuinely funny, will talk for twenty minutes about his daughter's drawings if you let him"
+    },
+    "stress_responses": {
+      "low": "Gets slightly quieter, more deliberate",
+      "medium": "Focuses entirely on procedure — every step by the book",
+      "high": "Shuts down personal conversation entirely, goes mechanical, prays quietly to the Turnstile during his break"
+    },
+    "contradictions": [
+      "Believes the system is basically fair while privately cataloguing evidence that it isn't"
+    ],
+    "habits": [
+      "Leaves an expired transit token at his E.L.F. shrine every Sunday",
+      "Reads the last page of a novel before starting it — he likes knowing something survives"
+    ],
+    "breaking_points": [
+      "His daughter is endangered as a direct result of something moving through his checkpoint"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate-issue palm biometric scanner — reads ID chips, heat signatures, contraband metabolite markers",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate-issue palm biometric scanner — reads ID chips, heat signatures, contraband metabolite markers",
+      "replaces": ""
+    },
+    {
+      "name": "Bioluminescent hair threading — cosmetic genemod, blue",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Bioluminescent hair threading — cosmetic genemod, blue",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Sentinel": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 19: Joined Ferrogate Transit Security as a platform attendant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 24: Promoted to checkpoint operator after commendation for diffusing a platform altercation without injury",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 26: Daughter Amara born; mother not in the picture",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 29: Started the unofficial freight manifest log",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 31: Currently at Booth 7, Kessler Interchange, three years running",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Tessera TKR-10 'Executor'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Tessera TKR-10 'Executor'"
+  ],
+  "related_entities": [
+    "Kessler Interchange",
+    "Mexicantown Libre",
+    "The Interchange",
+    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
+    "GLMZ",
+    "Ferrogate Transit",
+    "Turnstile",
+    "The Gradient Compact",
+    "The Milwaukee Core",
+    "Arcturus GE-1 'Garrison'",
+    "Breck Tannen",
+    "Ezio Kaboré-Malhotra",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Green Bay Community Table",
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Mika Sorel",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Tessera Corponation",
+    "Tessera TKR-10 'Executor'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Wire Taps",
+    "Tobechukwu Papadimitriou-Vásárhelyi",
+    "Vantablack Media Confessor Tap — 'The Booth'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly South Asian with significant Central Asian and Indigenous American ancestry, complemented by Middle Eastern and Northern European heritage. The genetic blend creates a striking phenotype: deep South Asian bone structure and features, with Central Asian warmth in the skin tone and Indigenous American undertones in facial geometry and eye shape.",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Wide-set and compact, shoulders broad from old labor, chest and torso solid without heaviness. Functional rather than athletic — built to endure, not sprint.",
+    "hair_color": "Black with bioluminescent blue threading",
+    "hair_style": "Tight coils, close-cropped, evenly maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Deep warm amber-brown, with subtle olive undertones from Central Asian and Middle Eastern ancestry blending with South Asian base. Skin has a naturally rich, dimensional quality rather than uniform tone.",
+    "complexion": "Clean-shaven, face weathered lightly by thirty-one years and shift work. Prominent cheekbones reflecting South Asian and Indigenous American ancestry, with slightly broader nasal structure. Crow's lines around eyes from sustained focus. Expression usually neutral, patient — the face of someone who has absorbed tens of thousands of strangers without judgment.",
+    "distinguishing_marks": [
+      "Small, faded burn scar on left forearm (adolescent labor accident, barely visible)"
+    ],
+    "visible_augmentations": "Right palm bears faint subcutaneous grid pattern where Ferrogate biometric scanner integrates with skin — visible only in direct light as hairline geometric scars. Bioluminescent blue threading in hair glows faintly in low-light conditions.",
+    "posture_movement": "Settled and economical. Stands with weight evenly distributed, shoulders relaxed. Moves with deliberate efficiency — no wasted motion from years at the checkpoint. Head often tilted slightly forward, eyes in a state of passive pattern-matching. Quickens noticeably when something breaks routine.",
+    "clothing_style": "Ferrogate Transit Security uniform (Tier 3 standard): charcoal gray regulation shirt with reflective piping, black cargo pants with utility pockets, steel-toed boots maintained but not polished. On cool shifts, a company-issued navy windbreaker. Off-duty: practical, worn jeans, faded band t-shirts, a blue Ferrogate jacket he wears for his daughter. No jewelry except a thin silver band on his left ring finger."
+  },
+  "image_prompt": "Nisha Baiseitov-Pathak-Migizi, thirty-one-year-old transit security officer, cyberpunk 2226. Deep warm amber-brown skin with subtle olive undertones, South Asian bone structure with Indigenous American facial geometry, prominent cheekbones, dark observant eyes with crow's lines. Black hair in tight close-cropped coils with bioluminescent blue threading that glows faintly. Wide-set, compact build from labor, broad shoulders, functional posture. Wearing Ferrogate Transit Security uniform: charcoal gray shirt with reflective piping, black utility cargo pants, steel-toed boots. Right palm shows faint geometric subcutaneous grid pattern from biometric scanner. Clean-shaven, weathered face, neutral patient expression. Standing in low-light checkpoint corridor, passive pattern-matching gaze, economical posture with weight evenly distributed. Subtle sci-fi aesthetic with cyberpunk security detail. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 60.2,
+    "Central Asian": 12.6,
+    "Indigenous American": 11.9,
+    "Middle Eastern": 9.5,
+    "Northern European": 5.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

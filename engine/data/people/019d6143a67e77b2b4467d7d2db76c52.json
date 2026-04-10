@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a67e77b2b4467d7d2db76c52",
+  "type": "character",
+  "name": "Olumide Haugen",
+  "aliases": [
+    "Sweetmouth",
+    "Lami"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street food stall operator — spiced protein wraps, synthetic broth, black-market spice blends",
+  "age": 52,
+  "status": "active",
+  "location": "The Oxidian Market, Geartown, near Western and Division",
+  "description": "Olamide is a broad-shouldered woman with dark amber skin mapped in old burn scars along her left forearm — souvenirs from a grease fire twenty years back that she wears without shame. Her hair is a natural silver-streaked corona she keeps pinned under a bright saffron headwrap during service, and she has cosmetic patterned irises done in deep indigo whorls that she got when her youngest turned ten, as a treat to herself. Her stall is a masterpiece of organized chaos: three burners, a recycled heat-drum, seventeen unlabeled spice jars arranged in an order only she understands, and a hand-painted sign reading SWEETMOUTH in three scripts. She moves behind the counter with the unhurried authority of someone who has never once doubted she belongs exactly where she is.\n\nShe is relentlessly sociable in the way of someone who has learned that warmth is a survival tool and then genuinely come to love it. She remembers every regular's order and their children's names and their mother's health complaints. She is also unflinching when she needs to be — she has run the same stall through two gang territory disputes and one Ferrogate Transit labor riot, serving both sides without commentary. She prays to the E.L.F. she calls Saltmother, a market-spirit she believes governs honest commerce, and leaves data-offerings of her daily transaction logs at a small shrine wired into her heat-drum.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Her stall being seized or destroyed by corponation rezoning",
+      "Outliving her usefulness to the community she has built"
+    ],
+    "core_desires": [
+      "To be the axis around which her neighborhood turns — needed, fed, known",
+      "To eventually buy the stall's ground lease outright so no one can move her"
+    ],
+    "coping_mechanisms": [
+      "Cooking as meditation — complex recipes crowd out anxious thoughts",
+      "Joking through discomfort until the moment passes"
+    ],
+    "blind_spots": [
+      "Underestimates how much people exploit her generosity deliberately",
+      "Believes her neutrality in disputes protects her — it only delays the cost"
+    ],
+    "secret": "She has been quietly funneling a portion of her earnings into a fund for three families in Geartown who lost housing in the last rezoning sweep. She tells no one because she cannot afford to be seen as a resource to be tapped — she is already spread thin."
+  },
+  "speech_patterns": {
+    "vocabulary": "Rich, warm, full of food metaphors and proverbs. Mixes Yoruba-inflected phrasing with clipped Polish consonants when stressed. Calls everyone 'dear heart' until they disappoint her.",
+    "cadence": "Unhurried, rhythmic. Talks while working — sentences punctuated by ladle sounds, sizzle.",
+    "verbal_tics": [
+      "'Eat first, talk after'",
+      "Clicks tongue before delivering bad news",
+      "'You hear me?'"
+    ],
+    "example_lines": [
+      "'You look like you haven't eaten since Tuesday, dear heart. Sit down. I'm not asking.'",
+      "'I don't know anything about that business — but I know a man who eats here Tuesdays who might. Come back Tuesday. Eat something first.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A corponation land-grab survey crew has been spotted measuring in the Oxidian Market — Olamide needs someone to find out who commissioned them before the vendors guild meets in three days",
+    "One of her regulars, a Ferrogate Transit maintenance worker, stopped coming to the stall two weeks ago. She is quietly, seriously worried and will pay in meals and information to know why."
+  ],
+  "narrative_function": "Local color, information hub — she knows everyone in Geartown who eats, which is everyone. Quest giver for small community concerns. Can source unusual ingredients through suspect channels if players earn her trust.",
+  "augmentations": "Patterned indigo irises (cosmetic). Basic subdermal heat-resistance in left hand from a cheap clinic after the grease fire — functional, not fancy.",
+  "daily_life": "She arrives at her stall two hours before the market opens to prep broth stock and argue with her spice supplier over comms. She runs service through peak hours, closes, does accounts by hand in a paper ledger, and takes the long route home past the E.L.F. shrine at Copperhead junction.",
+  "affiliation": "Independent; Oxidian Market Vendors Guild (dues-paying member, disputes committee)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "information node",
+      "networked",
+      "stubborn",
+      "devout"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Feed the person in front of you first, solve the problem second",
+      "Never take sides in a dispute you didn't start",
+      "Protect the stall above all — it is the family"
+    ],
+    "escalation_ladder": [
+      "Ignores provocation and keeps serving",
+      "Addresses the issue directly and calmly between customers",
+      "Invokes guild dispute process formally and loudly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, immediately curious — asks where they're from before taking their order",
+      "friends": "Bossy, generous, will not let you leave hungry or without advice you didn't ask for"
+    },
+    "stress_responses": {
+      "low": "More jokes, faster hands",
+      "medium": "Goes quiet and focused, stops small talk",
+      "high": "Sends everyone away from the stall and sits alone with her shrine until she can think clearly"
+    },
+    "contradictions": [
+      "Preaches neutrality but has very strong opinions she expresses through food — the people she dislikes get smaller portions and blander spicing"
+    ],
+    "habits": [
+      "Touches the shrine on her heat-drum every morning before first service",
+      "Keeps a running mental tally of who owes her and who she owes — never writes it down"
+    ],
+    "breaking_points": [
+      "Anyone threatening her stall physically",
+      "Someone abusing a child or elder within her sight — neutrality evaporates instantly"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Loyal Dog": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "related_entities": [
+    "The Oxidian Market",
+    "Ferrogate Transit",
+    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+    "Geartown",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Coronal Discharge Projector CDP-9 'Sunburn'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Bohuslav Enyinnaya-Čermák",
+    "Devraj Solano-Yildirim",
+    "Kairos",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Plot 17",
+    "Solveig Tambadou-Kereselidze",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Bazaar",
+    "The Counter",
+    "The Iron Lotus",
+    "The Ledger",
+    "The Pure Hand",
+    "The Renaissance Axis",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (55.1%) with significant East Asian (34.7%) and Northern European (10.2%) ancestry, creating a striking blend of deep African features with subtle East Asian eye structure and minimal Northern European undertones",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid through the torso, muscular forearms from decades of stall work, carries weight with functional density rather than softness",
+    "hair_color": "Natural black with silver streaking throughout",
+    "hair_style": "Worn loose in a natural texture, typically pinned under a bright saffron headwrap during service hours",
+    "hair_length": "Medium (shoulder-length when unwrapped)",
+    "eye_color": "Cosmetic indigo with deep whorled patterning, replacing natural brown",
+    "skin_tone": "Deep warm brown with golden undertones, rich and luminous",
+    "complexion": "Weathered and lived-in, minimal makeup, laugh lines around the eyes, expressions that shift easily between warmth and shrewd assessment. High cheekbones with subtle East Asian influence, broad nose, full lips characteristic of Sub-Saharan ancestry",
+    "distinguishing_marks": [
+      "Extensive burn scarring along the left forearm in irregular patches, pale against dark skin, from a grease fire approximately twenty years prior",
+      "Fine white scar tissue visible on the back of both hands from kitchen work spanning decades"
+    ],
+    "visible_augmentations": "Patterned indigo cosmetic irises. Left hand shows faint subdermal heat-resistance scarring at the palm and inner wrist (functional implant, not cosmetic) with slightly altered pigmentation in the scarred tissue.",
+    "posture_movement": "Moves behind her counter with unhurried authority and economic precision. Stands with weight evenly distributed, shoulders back. Gestures while speaking are animated but never wasted. Pivots and turns with practiced efficiency from years of stall operation.",
+    "clothing_style": "Tier 3-4 working practical: fitted thermal undershirt visible at collar, layered with a heavy linen apron stained with turmeric and old grease burns, the fabric faded and reinforced at the edges. Wears a bright saffron headwrap during service (color choice deliberate, not functional). Simple brass jewelry—a bracelet her mother gave her, a ring on her right hand. Comfortable work boots with reinforced soles. Off-hours: similar utilitarian style, slightly less stained, with a heavier outer layer."
+  },
+  "image_prompt": "Olumide Haugen, 168cm African-East Asian woman, deep warm golden-brown skin with luminous undertones, natural black hair with silver streaks worn loose and shoulder-length, cosmetic indigo eyes with whorled patterning, strong high cheekbones, broad nose, full lips. Muscular forearms scarred from old grease fire, pale scarring visible on hands. Wearing faded saffron headwrap, turmeric-stained linen apron over thermal undershirt, simple brass jewelry, work boots. Standing behind market stall with unhurried authority, warm weathered expression with laugh lines, animated gestures, cyberpunk 2226 Great Lakes Metropolitan Zone. Dim warm overhead lighting with amber undertones, market atmosphere, functional practical aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 55.1,
+    "East Asian": 34.7,
+    "Northern European": 10.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

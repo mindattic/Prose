@@ -1,0 +1,337 @@
+{
+  "id": "019d6143a61273afba822b9fe823da16",
+  "type": "character",
+  "name": "Diego Villalobos",
+  "aliases": [
+    "Jasper",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Target acquisition and fugitive recovery — bounty hunter",
+  "age": 27,
+  "status": "active",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Western and Chicago Ave",
+  "description": "Fatoumata Ramos-Mensah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.6,
+      "id": 0.22,
+      "shadow": 0.59,
+      "mask": 0.33,
+      "ghost": 0.75
+    },
+    "core_fears": [
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "That their reputation is built on luck, not skill, and the luck is finite",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "To build something that outlasts the next contract cycle",
+      "Stability — a place to sleep that's the same place two nights running"
+    ],
+    "coping_mechanisms": [
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Cannot accept help without interpreting it as leverage",
+      "Believes their trauma makes them special instead of recognizing it as damage to manage"
+    ],
+    "secret": "Fatoumata Ramos-Mensah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Whispers when angry — the quieter the voice, the worse the situation"
+    ],
+    "example_lines": [
+      "\"Everyone has a pattern. Patterns are addresses waiting to be read.\"",
+      "\"I find people. Whether they're alive when I bring them back depends on their behavior.\"",
+      "\"You can run. It's cardiovascular exercise for both of us.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Fatoumata Ramos-Mensah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A Tier 4 executive offers Fatoumata Ramos-Mensah a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Fatoumata Ramos-Mensah is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Fatoumata Ramos-Mensah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 9
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.39,
+      "caution": 0.29,
+      "loyalty": 0.66,
+      "greed": 0.43,
+      "empathy": 1
+    },
+    "drives": [
+      "protection",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 6,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "physical endurance",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "emotional volatility under extreme stress",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "bounty hunter",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Insists they work alone but performs noticeably better in a team",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    },
+    {
+      "name": "Cranial bomb defuser",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Tactician": 0.7,
+    "Ambusher": 0.7,
+    "Grudge Holder": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "GLMZ",
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Gravimetric Collapse Charge GCC-9",
+    "Chicago",
+    "Ambrosia Fekete-Waiyaki",
+    "Breck Tannen",
+    "Compass Rose",
+    "Crucible RE-2 'Receptionist'",
+    "Glenville Sound",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Ilhan Sandstrom-Badu",
+    "Isadora Mwangi-Thorvaldsen",
+    "Kamala Blomberg-Konadu",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Prophet",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Quiet Room",
+    "Tomasz Wren"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Caribbean-Latin American with significant West African and Northern European ancestry — a genetic blend reflecting the Ubiquitous Diaspora. Predominantly Hispanic/Latin American heritage (65.9%) mixed with Sub-Saharan African (19.3%) and Northern European (14.8%) ancestry creates a warm, complex phenotype.",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with dense muscle — dancer's posture married to fighter's tension. Shoulders broad, hips narrow, no excess. Moves like someone who's spent years in close-quarters combat.",
+    "hair_color": "Natural black with metallic bronze highlights (micro-LED threading)",
+    "hair_style": "Pulled back in a tight, functional braid that exposes her neck and jawline",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — the blended result of Latin American, West African, and Northern European ancestry. Rich enough to catch light, with the warmth of sun-exposed heritage.",
+    "complexion": "Sharp, angular facial structure with high cheekbones and defined jawline — features reflecting both West African and Iberian heritage. Nose is proportionate and refined. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, approximately 8cm, barely visible but catches light",
+      "Burn scar on inner left wrist, 4cm diameter, from a failed incendiary round ricochet — pale and smooth",
+      "Faded tattoo on right shoulder blade: a compass rose in black ink, done by hand in the Narrows"
+    ],
+    "visible_augmentations": "Right forearm features a polished chrome smartgun link port — approximately 12cm of exposed metallic integration at the wrist, with faint neural interface scars radiating upward. The prosthetic is seamless with her skin but unmistakably non-organic. No visible evidence of the cranial bomb defuser, which sits subcutaneous behind her right ear.",
+    "posture_movement": "Stands with weight balanced on the balls of her feet — ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there's a predatory fluidity — someone comfortable in confined spaces and tight corners.",
+    "clothing_style": "Tier 3-4 utilitarian. Black synthetic-leather jacket (water-resistant, scored with small cuts and scuffs), fitted enough to move but loose enough to conceal gear. Charcoal tactical pants with reinforced knees and thigh pockets holding small tools and ammunition. Combat boots, black, scuffed. Underneath: a grey undershirt with discreet ballistic weave. No jewelry except a cracked smart-watch on her left wrist (functional, not fashion). All clothing shows the patina of actual use."
+  },
+  "image_prompt": "Diego Villalobos, 172cm tall, lean athletic build, warm medium-brown skin with golden undertones blending West African and Latin American heritage. Sharp angular features, high cheekbones, dark brown eyes. Long black hair with micro-LED bronze threading pulled back in tight functional braid. Polished chrome smartgun link port on right forearm at wrist. Thin white scar from left temple to cheekbone, pale burn scar on inner left wrist. Black synthetic-leather jacket scored with wear, charcoal tactical pants with reinforced knees, black combat boots. Grey ballistic weave undershirt. Cracked smart-watch on left wrist. Stands with weight on balls of feet, predatory posture, right hand hovering near forearm augmentation. Nocturnal fatigue lines under eyes. Cyberpunk 2226 Great Lakes Metropolitan Zone. Dark moody lighting, industrial background, ready-for-action stance, gritty street fighter aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 65.9,
+    "Sub-Saharan African": 19.3,
+    "Northern European": 14.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

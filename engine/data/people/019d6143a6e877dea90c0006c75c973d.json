@@ -1,0 +1,240 @@
+{
+  "id": "019d6143a6e877dea90c0006c75c973d",
+  "type": "character",
+  "name": "Thora Mbekele",
+  "aliases": [
+    "Taf",
+    "Skinny"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Numbers runner and low-level protection racket enforcer for a Shallowgrave street gang",
+  "age": 19,
+  "status": "active",
+  "location": "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors, near Ashland and Division",
+  "description": "Tafadzwa is all limbs and nervous energy — tall for his age, still growing into his frame, with deep umber skin, a patchy attempt at a beard, and hair grown out in an uneven natural that he picks at when anxious. He has bioluminescent freckles across his cheekbones and nose, a common cosmetic mod he had done at sixteen that glows faint gold when his blood pressure rises, which means they're almost always lit up. His clothes are layered function-over-form: compression underlayer, two hooded shells, pockets everywhere. He moves fast and low and always knows where the exits are.\n\nTaf is fundamentally a kid who fell into the wrong orbit and hasn't yet figured out it's a closed loop. He's quick, funny in a self-deprecating way, and genuinely well-liked by the market vendors whose routes he runs — he remembers names, brings small gifts, actually listens when old women complain about their knees. The violence of his work sits uneasily on him. He's good at the intimidation part only because he's terrified of what happens if he isn't. He's saving money for something he won't name out loud.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "becoming someone his younger sister would be ashamed of",
+      "being made to hurt someone badly enough that they don't get up"
+    ],
+    "core_desires": [
+      "enough money to get his sister out of the Undertow before she's old enough to be recruited",
+      "to be genuinely admired rather than just feared"
+    ],
+    "coping_mechanisms": [
+      "humor as deflection",
+      "fixating on a future goal (sister's relocation) to avoid examining the present"
+    ],
+    "blind_spots": [
+      "does not see how normalized the violence around him has become in his own mind",
+      "convinced he can leave the Skins whenever he wants"
+    ],
+    "secret": "He has been skimming Φ8-12 per collection run for eight months, hiding it in a calorie-bar tin under a loose floor panel. He has Φ890 saved. If the Skins ever count carefully, he's done."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street slang heavy, Shallowgrave dialect, occasional Shona phrases from his grandmother's influence",
+    "cadence": "Fast and jumpy, trailing off mid-thought when nervous, finishing other people's sentences when excited",
+    "verbal_tics": [
+      "'Nah, nah, nah wait—'",
+      "'On my name though'",
+      "Whistle-clicks when something surprises him"
+    ],
+    "example_lines": [
+      "Nah nah nah wait, I'm not saying she's wrong, I'm saying — look, the math doesn't work, on my name though, it just doesn't.",
+      "Old Reena gave me three buns today. Three. You want one? She likes me, man. People like me.",
+      "I'm gonna be gone from here in a year. Maybe less. I got a plan."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He witnessed something during a collection run he absolutely was not supposed to see — a Corponation official paying off Marisol — and he hasn't slept properly since",
+    "His sister has shown up in Shallowgrave looking for him, which is the worst possible thing that could happen",
+    "The skimming has finally been noticed; he has one week to replace the money or explain it away"
+  ],
+  "narrative_function": "Local color and street-level information source — he knows everyone on his routes and overhears everything. Entry point into Shallowgrave's criminal understructure. Potential sympathy figure whose trajectory could go multiple directions.",
+  "augmentations": "Bioluminescent freckles (cosmetic, gold-spectrum); cheap reaction-time neural assist he bought secondhand — it glitches and gives him headaches",
+  "daily_life": "Up at dawn collecting the morning's numbers from vendors and residents, back to the Skins' counting house by midday, afternoon routes for protection collection, evenings free unless Marisol has a job. Spends free evenings watching old sports footage with his squat-mates.",
+  "affiliation": "The Shallowgrave Skins — a mid-tier territorial gang led by a woman named Marisol who he is not allowed to call by her first name",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Numbers Runner",
+      "Street Kid",
+      "Soft Enforcer",
+      "Route Knowledge",
+      "Flight Risk"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always leave a route that has two exits minimum — learned from getting cornered once",
+      "Never threaten someone he actually likes unless a supervisor is watching",
+      "Don't spend the tin money no matter what"
+    ],
+    "escalation_ladder": [
+      "Cheerful reminder that payment is due — keeps it light",
+      "Serious face, references Marisol by title, makes it clear this isn't personal",
+      "Returns with another Skin present as visible backup",
+      "Reports upward — he does not do the next step himself if he can avoid it"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly and fast-talking, sussing out whether they're a mark, a threat, or irrelevant",
+      "friends": "Surprisingly loyal and generous, shares food, remembers details, will do favors he knows he shouldn't"
+    },
+    "stress_responses": {
+      "low": "Talks faster, makes more jokes",
+      "medium": "Goes very quiet, bioluminescent freckles glow bright — he can't hide this and it embarrasses him",
+      "high": "Runs. Literally leaves. Deals with consequences later."
+    },
+    "contradictions": [
+      "Deeply kind-hearted person doing work that requires intimidation and occasional harm",
+      "Claims to be temporary in the Skins while building increasingly deep ties"
+    ],
+    "habits": [
+      "Picks at his hair when nervous or thinking",
+      "Brings something small — a piece of food, a found trinket — to people he visits regularly"
+    ],
+    "breaking_points": [
+      "Being ordered to hurt someone on his route that he genuinely cares about",
+      "His sister being threatened or recruited"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Enforcer": 0.9,
+    "Muscle": 0.9,
+    "Hustler": 0.7,
+    "Provider": 0.7,
+    "People Pleaser": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Forge-454 'Hammerfall'",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Forge-454 'Hammerfall'",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'"
+  ],
+  "related_entities": [
+    "Burnside Pocket",
+    "Shallowgrave",
+    "The Underlayer Collective",
+    "Stratum",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold",
+    "Déjà Vu",
+    "Ambassador Silk",
+    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
+    "Aïssé Dragomirescu-Faalelei",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
+    "Crucible Industries Forge-454 'Hammerfall'",
+    "Ferrogate Enforcer Cruiser",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Renzo Tuiaga-Łukasiewicz",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA TK-4 'Hellhound'",
+    "The Bazaar",
+    "The Undertow",
+    "The Unfinished Theorem",
+    "Vantablack PD-8 'Whistle'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed Sub-Saharan African (36.6%), Northern European (27.0%), Eastern European (20.1%), and North African (16.3%) — genetic ancestry reflects the Ubiquitous Diaspora. Features a complex blend: deep warm-toned skin with subtle golden undertones from North African heritage mixing with Sub-Saharan ancestry, high cheekbones with gentle width reflecting Eastern European genetics, and a nose structure showing Sub-Saharan prominence softened by Northern European influence.",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Lean and angular — all long limbs and knobby joints, still visibly growing into his frame. Chest narrow, shoulders beginning to broaden. Wiry rather than muscular, with the unfinished look of a teenager stretched tall too fast.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Uneven natural — grown out in loose coils, shoulder-length, picked at frequently when anxious. Left side occasionally tucked behind his ear; right side falls loose.",
+    "hair_length": "Long",
+    "eye_color": "Deep brown",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of Sub-Saharan, North African, and Northern European genetic blending. Rich and even across his frame, with subtle luminescence from the bioluminescent implants beneath.",
+    "complexion": "Clean-shaven except for a patchy, sparse attempt at a beard along his jawline — more cosmetic statement than grooming success. His face is still softly rounded at the cheeks with an angular structure underneath, featuring a prominent nose with broad bridge, full lips, and high cheekbones showing the mixed ancestry heritage. Skin is clear and unblemished except for the bioluminescent freckles.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles scattered across both cheekbones and the bridge of his nose, gold-spectrum, installed at age sixteen — glow brighter when his blood pressure rises (which is nearly constant, meaning they are almost always visibly lit).",
+      "Fine white scar along his right jawline, approximately 3cm, from an adolescent street accident — barely noticeable but catches light when his augmentation lights activate."
+    ],
+    "visible_augmentations": "Bioluminescent freckles glow faintly golden across his cheekbones and nose, brighter when stressed or exerted. The reaction-time neural assist is subcutaneous and invisible, though occasional eye-twitches or brief moments of visible disorientation suggest glitching. No visible chrome or external modifications.",
+    "posture_movement": "Moves fast and low — economy of motion learned young. Always aware of exits and sightlines; tends to position himself at angles to walls. Stands with weight forward on the balls of his feet. When anxious (frequent), his fingers fidget — picking at his hair, checking pocket seams, tapping rhythm patterns on his thighs. When nervous, he laughs too quickly and deflects with self-deprecation. Despite the outward confidence of gang affiliation, his body language reads as coiled tension rather than relaxation.",
+    "clothing_style": "Layered function-over-form, Tier 4 (working-class, utilitarian). Base layer is a fitted compression underlayer (usually dark gray or black, visible at wrists and collar). Two hooded shells in muted colors — charcoal, slate, worn navy — worn open and loose for quick shedding. Cargo pants or reinforced denim with excessive pockets, many bearing the wear marks of constant use (folded Φ notes, burner comlinks, counting chips). Boots are scuffed and practical, broken in but not expensive. A thick canvas jacket with faded gang markings on the interior lining. Everything smells faintly of market grime and industrial coolant. No jewelry except a thin brass ring on his left index finger (his grandmother's, a secret talisman he never mentions)."
+  },
+  "image_prompt": "Thora Mbekele, 188cm lean androgynous teenager with warm golden-brown skin and mixed Sub-Saharan, North African, and Northern European heritage. Long shoulder-length dark brown coiled hair, deep brown eyes, prominent nose, high cheekbones, soft rounded face. Glowing golden bioluminescent freckles across cheekbones and nose bridge, brighter with stress. Fine white scar on right jawline. Wearing layered utilitarian cyberpunk gear: dark compression underlayer visible at wrists, loose charcoal and navy hooded shells, worn cargo pants with many pockets, scuffed practical boots, thick canvas jacket with faded interior gang markings. Thin brass ring on left index finger. Posture coiled and tense, standing forward on balls of feet, aware of sightlines. Fidgeting fingers. Cyberpunk 2226 Great Lakes Metropolitan Zone, gritty urban setting, industrial coolant scent, market district lighting, neon accent glow from bioluminescent implants, low-angle composition emphasizing tension and readiness. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.6,
+    "Northern European": 27.0,
+    "Eastern European": 20.1,
+    "North African": 16.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

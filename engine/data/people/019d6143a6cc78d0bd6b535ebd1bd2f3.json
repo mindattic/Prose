@@ -1,0 +1,283 @@
+{
+  "id": "019d6143a6cc78d0bd6b535ebd1bd2f3",
+  "type": "character",
+  "name": "Odalys Tehrani",
+  "aliases": [
+    "The Pelican",
+    "Seyd"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller",
+  "age": 34,
+  "status": "active",
+  "location": "Geartown, near the Ferrogate Transit depot access road, near Milwaukee and North Ave",
+  "description": "Seydou is a lanky man, all elbows and long neck, with warm brown skin dusted gray-white at the temples from years of breathing particulate in Geartown's recycling corridors. He has retractable keratin-reinforced claws — a geneware mod from his teens he got cheap and kept because they're useful for sorting scrap — and his irises are a vivid coral-pink that he insists is natural but is almost certainly a low-grade mod he can't remember getting. His cart is legendary: a three-tier wheeled behemoth welded together from mismatched Ferrogate Transit chassis parts, stacked with stripped augmentation casings, salvaged circuit boards, cracked lenses, defunct E.L.F. housing units, and the occasional inexplicable object he cannot identify but refuses to discard because 'it feels expensive.'\n\nSeydou operates on a philosophy of radical optimism about the utility of broken things. He is gregarious to a fault, remembers every customer's name and approximate circumstances, and maintains a running mental inventory of about six hundred distinct items across his cart and three rented storage lockers he visits in rotation. He laughs easily and loudly, which draws people from two stalls away, and he has an almost supernatural ability to produce exactly the component someone needs from somewhere in the middle tier of the cart, apparently without looking.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being truly alone — not just unloved but irrelevant, invisible, forgotten",
+      "That his cheerfulness is hollow and everyone can tell"
+    ],
+    "core_desires": [
+      "To be genuinely needed, not just useful",
+      "To own a real shop with a door and a sign"
+    ],
+    "coping_mechanisms": [
+      "Constant social engagement to avoid sitting with his own thoughts",
+      "Finding beauty and worth in discarded things — projection, but functional"
+    ],
+    "blind_spots": [
+      "His gregariousness reads as trustworthy but he discloses too much too fast and gets burned by it",
+      "Chronically underprices himself because he wants people to like him"
+    ],
+    "secret": "One of his storage lockers contains a near-complete Axiom-brand personal defense drone he found in a canal drain eighteen months ago. He knows it's probably stolen. He's been incrementally repairing it. He doesn't know what he plans to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Expansive, warm, full of technical scrap terminology mixed with Malian French diminutives and Greek exclamations he picked up from his grandmother",
+    "cadence": "Fast, overlapping itself, trails off into lists of things",
+    "verbal_tics": [
+      "'—no wait, I have that, hold on—'",
+      "Calls everyone 'friend' until he knows their name, then uses it constantly"
+    ],
+    "example_lines": [
+      "'Friend, friend, what you're describing — stripped relay housing, maybe 40mm port? — I had three of those yesterday, sold two, but the third is somewhere in the middle tier, give me a second—'",
+      "'Everything broken used to be something. That's not sad. That's just — everything has a before, you know?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom drone in his locker has started activating on its own at night — broadcasting a signal he can't decode — and someone has been following him",
+    "He knows the Ferrogate depot is scrapping a batch of transit cars that supposedly contain sealed cargo containers from a derailment three years ago, and he's offering to split whatever's inside with anyone who'll help him get there first"
+  ],
+  "narrative_function": "Equipment source, rumor hub, comic relief with hidden competence, can locate obscure parts for a price or a favor",
+  "augmentations": "Retractable keratin-reinforced claws (geneware, cosmetic/functional); coral-pink irises (suspected low-grade mod); no cyberware — can't afford it and doesn't trust installers in his price range",
+  "daily_life": "He wakes at 4am to hit the depot access road before other scrappers, loads the cart, wheels it to his Geartown pitch by 7am, and talks to customers until dark. Three nights a week he visits his storage lockers to rotate stock.",
+  "affiliation": "Independent; friendly arrangement with the Ferrogate Transit depot night-shift workers who tip him off about scheduled scrapping",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 4,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 7,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "scrap savant",
+      "social magnet",
+      "walking inventory",
+      "low-tier fixer adjacent",
+      "accidental possession of dangerous things"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell something he suspects is actively dangerous without saying so",
+      "Always remember what someone told him — it's social currency"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflects",
+      "Gets quieter and more formal, uses full names",
+      "Picks up the heaviest thing within reach and holds it loosely"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, immediately gabby, offering to help before asked",
+      "friends": "The same, but with more truth buried in the jokes"
+    },
+    "stress_responses": {
+      "low": "Talks faster",
+      "medium": "Starts inventorying things with his hands, touching objects on the cart",
+      "high": "Goes totally quiet, which is deeply alarming to anyone who knows him"
+    },
+    "contradictions": [
+      "He insists he loves the freedom of cart life but fantasizes obsessively about a fixed address"
+    ],
+    "habits": [
+      "Pats the side of his cart like it's a pet when he passes it",
+      "Eats the same fried plantain wrap from the stall two spots down every day at noon",
+      "Names particularly interesting pieces of scrap before selling them"
+    ],
+    "breaking_points": [
+      "Someone stealing from the cart",
+      "Being told his work isn't real work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown; father Malian-origin transit worker, mother Greek-Samoan seamstress",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got geneware claws at 14 from a back-alley clinic; spent two months learning not to shred everything he touched",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Started scrapping the Ferrogate depot access road after losing a factory assembly job to automation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Found the Axiom drone in a canal drain during a flood-scrap run",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: established Geartown pitch, drone situation quietly escalating",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Street Custom 'Backfire' Weaponized Exhaust System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Geartown",
+    "Iowan Behemoth Agricultural Platform",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Tin Man",
+    "The Milwaukee Core",
+    "Eshe Pena-Baah",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Orbital Drop Pod",
+    "Pirjo Asante-Ulukhan",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Street Custom 'Backfire' Weaponized Exhaust System",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "TESSERA PA-5 'Attendant'",
+    "Tafara Quiñones-Saarinen",
+    "The Pure Hand",
+    "The Scrap Barons",
+    "Veslemøy Achebe-Tursynov",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Middle Eastern / Hispanic-Latin American / South Asian blend with Sub-Saharan African and Indigenous American heritage. This combination produces warm, complex skin tones with olive and golden undertones, angular facial structure typical of Persian-Mediterranean features mixed with broader cheekbones and nose width from South Asian and Latin American ancestry. The genetic admixture creates rich melanin variation across his frame.",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lanky and angular—all elbows and long neck, with minimal muscle mass but functional lean strength from years of pushing a loaded cart. Chest slightly sunken from occupational posture.",
+    "hair_color": "Dark brown with premature graying at temples",
+    "hair_style": "Short, kept practical and uneven—self-trimmed with whatever sharp tool is handy",
+    "hair_length": "Short",
+    "eye_color": "Vivid coral-pink iris (suspected low-grade geneware mod, though he claims natural)",
+    "skin_tone": "Warm golden-olive brown with subtle reddish undertones—a complex blend that reads as sun-weathered amber in harsh light and deeper honey-bronze in softer conditions. The tone carries warmth across his frame with slight deepening at extremities and jaw.",
+    "complexion": "Weathered and dust-marked. Chronic particulate exposure has left fine gray residue in skin creases around his neck and hairline. Deep laugh lines around his mouth accentuate the blend of Middle Eastern and Hispanic-Latin American facial structure. Perpetual five o'clock shadow. Hands stained with rust and circuit-board residue that never fully washes out. Angular cheekbones and a straight nose bridge reflect Middle Eastern heritage, while full lips and broader nasal base show South Asian and Latin American ancestry.",
+    "distinguishing_marks": [
+      "Fine gray dust permanently embedded in the creases of his neck from Geartown recycling corridor particulate exposure",
+      "A jagged burn scar across the outer edge of his left forearm, roughly 8cm long, from a salvage accident involving a still-hot chassis component",
+      "Calloused fingertips and palms from constant handling of sharp metal edges and scrap",
+      "Ink tattoo on his inner left wrist—a simple three-line mark in a style he won't explain, faded to pale gray from age and sun exposure"
+    ],
+    "visible_augmentations": "Retractable keratin-reinforced claws visible when extended from fingertips—ivory-white, slightly translucent, sharp enough to score soft metals. When retracted, barely visible as slight ridges under the nail beds. The coral-pink irises are immediately striking and read as deliberately modified despite his insistence otherwise.",
+    "posture_movement": "Moves with long, loose strides—economical but unhurried. Often has one hand resting on his cart or gesturing mid-story. His default posture at rest is slightly forward-leaning, as if perpetually in the middle of explaining something. Laughs with his whole body, shoulders shaking. Head tilts when listening—an unconscious habit that makes him appear genuinely interested.",
+    "clothing_style": "Tier 4 working-class scrap merchant. Faded olive-drab canvas pants with deep pockets reinforced with grey stitching, perpetually spotted with rust stains. Layers: a thin thermal base layer visible at the collar under a canvas shirt (khaki, three sizes too large—practical for moving around the cart), topped with a weathered brown synthetic-leather vest studded with random toggle closures and loops for hanging tools. No logos. Worn grey-rubber-soled work boots with visible toe reinforcement. A faded red cloth headwrap tied loosely around his neck—sometimes pulled up to cover his mouth and nose when digging through particularly dusty stock. No jewelry except a simple brass finger ring on his right hand, worn thin from years of wear."
+  },
+  "image_prompt": "Odalys Tehrani, tall lanky scrap merchant in cyberpunk 2226, warm golden-olive brown skin with weathered sun-damage, dark hair graying at temples, striking vivid coral-pink augmented irises. Angular cheekbones and Middle Eastern-influenced facial structure blended with broader South Asian and Latin American features. Perpetual five-o'clock shadow, deep laugh lines, hands stained with rust and circuit residue. Retractable ivory keratin claws visible on fingertips. Wearing oversized khaki canvas shirt under weathered brown synthetic-leather vest with tool loops, faded olive-drab canvas work pants with rust stains, worn gray-soled boots. Loose red cloth headwrap around neck. Simple brass finger ring worn thin. Jagged 8cm burn scar on left forearm. Forward-leaning posture mid-gesture, hand resting on cargo cart. Geartown recycling corridor setting with harsh industrial lighting, metallic scrap and refuse in background, dust particles floating in harsh neon-tinted light. Cyberpunk dystopian atmosphere, working-class street scene. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 46.9,
+    "Hispanic/Latin American": 25.9,
+    "South Asian": 15.5,
+    "Sub-Saharan African": 7.8,
+    "Indigenous American": 3.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

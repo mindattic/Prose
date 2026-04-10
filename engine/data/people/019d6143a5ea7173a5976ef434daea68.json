@@ -1,0 +1,308 @@
+{
+  "id": "019d6143a5ea7173a5976ef434daea68",
+  "type": "character",
+  "name": "Milena Adu-Volkov",
+  "aliases": [
+    "Glitch",
+    "Twitchy",
+    "Day"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew runner — Prologue survivor. Jaw shattered, rebuilt with chrome.",
+  "age": 22,
+  "status": "active",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Dayo Adeyemi came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through GLMZ's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.1,
+      "id": 0.4,
+      "shadow": 0.2,
+      "mask": 0.7,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "Kyle remembering his face",
+      "The clicking sound giving him away",
+      "His mother being right about his father"
+    ],
+    "core_desires": [
+      "To be fast enough next time",
+      "For the clicking to stop",
+      "To make his mother proud without leaving the only life he knows"
+    ],
+    "coping_mechanisms": [
+      "Talks nonstop",
+      "Runs everywhere — practicing",
+      "Sunday dinners with Folake"
+    ],
+    "blind_spots": [
+      "Speed won't save him. Kyle is faster.",
+      "His mother's jollof rice stall is the only thing keeping him human and he doesn't know it"
+    ],
+    "secret": "He saw Yuliya behind the ventilation unit during the fight. He didn't say anything. He doesn't know why. He thinks about it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Four languages worth of slang compressed into rapid English. Lagos inflections surface when he's scared or excited.",
+    "cadence": "Rapid-fire with involuntary pauses when the jaw catches. click mid-sentence.",
+    "verbal_tics": [
+      "*click* interrupts words",
+      "Says 'I'm just saying' after everything",
+      "Switches to Yoruba when startled"
+    ],
+    "example_lines": [
+      "I'm not scared of him, I'm just *click* strategically cautious, I'm just saying.",
+      "Mama's jollof would fix that man. Nobody fights after jollof. *click* That's science."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Folake Adeyemi",
+      "type": "mother",
+      "description": "Jollof rice stall, Tier Four. Feeds the Shelf. Disapproves of everything Dayo does Monday through Saturday.",
+      "emotional_core": "Love expressed as disappointment",
+      "story_tension": "Folake's stall is a Shelf institution. If the crew brings trouble to her door, Dayo breaks."
+    },
+    {
+      "name": "Yuliya Morozova",
+      "type": "unknown",
+      "description": "He saw her hiding. He said nothing. He doesn't understand the impulse and it bothers him.",
+      "emotional_core": "Unexamined mercy",
+      "story_tension": "If Yuliya and Dayo cross paths again, something happens that neither expects."
+    }
+  ],
+  "story_hooks": [
+    "The Yuliya connection — he protected her without knowing why",
+    "Folake's stall as a Shelf hub",
+    "The clicking jaw as audio signature",
+    "Four languages makes him useful to people who need translators"
+  ],
+  "narrative_function": "The mouth. Provides exposition and comic relief through nervous chatter. The clicking jaw is a sound effect that announces the crew's presence in any scene.",
+  "augmentations": "Chrome jaw replacement (poorly fitted, clicks). Speed-boosted leg tendons (pre-existing).",
+  "daily_life": "Running errands for Torque. Talking. Clicking. Running.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 6,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 4,
+      "creativity": 4,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 3
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [
+      "Be fast enough next time",
+      "Make Folake proud",
+      "Survive the crew life"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 4,
+        "response": "Talks faster, runs, fidgets — movement as anxiety management"
+      },
+      "moral": 5,
+      "trust": 5,
+      "desperation": 4
+    },
+    "strengths": [
+      "Zest",
+      "Social intelligence",
+      "Humor",
+      "Bravery",
+      "Curiosity"
+    ],
+    "weaknesses": [
+      "Self-regulation",
+      "Prudence",
+      "Perseverance",
+      "Integrity",
+      "Judgment"
+    ],
+    "tags": [
+      "runner",
+      "crew-member",
+      "chrome-jaw",
+      "multilingual",
+      "Lagos-migrant",
+      "comic-relief",
+      "fast",
+      "nervous"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always talk through fear — silence means the fear has won",
+      "Will never miss Sunday dinner with Folake regardless of crew obligations",
+      "Will always run rather than fight when given the option",
+      "Will never willingly enter the same room as Kyle",
+      "Will always protect his mother's stall from crew business",
+      "Will never admit the clicking jaw bothers him — 'it's a feature'"
+    ],
+    "escalation_ladder": [
+      "Talks faster and louder — nervous energy fills the space",
+      "Switches to Yoruba — instinctive retreat to mother tongue under pressure",
+      "Runs — speed-boosted leg tendons engage, flight over fight",
+      "Freezes — the clicking jaw locks, he goes silent for the first time",
+      "Acts on unexamined instinct — the same impulse that made him protect Yuliya"
+    ],
+    "interpersonal_modes": {
+      "Folake": "Absorbs her disappointment because her love is the only uncomplicated thing in his life",
+      "Yuliya Morozova": "Confused protective instinct he cannot explain or examine",
+      "Kyle": "Primal fear dressed up as 'strategic caution'"
+    },
+    "stress_responses": {
+      "low": "Talks nonstop, clicks increase, runs errands nobody asked him to run",
+      "medium": "Lagos inflections surface, humor becomes forced, keeps touching the jaw",
+      "high": "Speed-runs routes obsessively, stops eating, the clicking becomes constant",
+      "critical": "Goes silent — the absence of chatter is itself the alarm"
+    },
+    "contradictions": [
+      "Talks about not being scared of Kyle while physically unable to be in his presence",
+      "Wants to make his mother proud while being unable to leave the only life he knows",
+      "Protected Yuliya instinctively while serving the crew that hurt her father"
+    ],
+    "habits": [
+      "Talks constantly — the noise proves the jaw still works",
+      "Runs everywhere, always practicing, speed-boosted legs in constant use",
+      "Ends statements with 'I'm just saying'",
+      "Touches the chrome jaw self-consciously when nervous",
+      "Sunday dinners with Folake — the one sacred appointment"
+    ],
+    "breaking_points": [
+      "Crew business reaching Folake's stall on Tier Four",
+      "Kyle recognizing his face from the loading dock fight",
+      "Learning what his father would actually think of him",
+      "Yuliya confronting him about what he saw and did not report"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "ARCHIVE",
+    "The Shelf",
+    "Ashford Signal",
+    "The United Workers Front",
+    "TESSERA PG-2 'Signature'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Kel Adeyemi-Strand",
+    "Slagworks Industrial",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Chicago",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus KS-7 'Nursery'",
+    "Blessed Nkemdirim",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Dzemal Acholonu-Patagiri",
+    "Ekundayo Halvorsen-Mansour",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kyle Ellen Corbin-Vasik",
+    "Lacunal",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Marcus Bellamy",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
+    "TESSERA TN-1 'Cradle'",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Signal",
+    "Timur Osei-Bjelke",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (44.8%) with significant Central Asian (31.7%) ancestry, blended with Sub-Saharan African (12.0%) and Indigenous American (11.5%) heritage. A striking Ubiquitous Diaspora combination creating warm olive-tan undertones with subtle warmth from the African ancestry.",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and wiry with the muscle definition of someone who runs constantly — low body fat, corded forearms and calves from speed-boosted tendons. Bird-boned but functional.",
+    "hair_color": "Black with a faded copper undercut dyed during better weeks",
+    "hair_style": "Short fade on sides, longer crown worn messy and slightly overgrown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm olive-tan with golden undertones from the Eastern European-Central Asian base, enriched by Sub-Saharan and Indigenous American ancestry. Sun-darkened from dock work into a weathered bronze.",
+    "complexion": "Young face with sharp cheekbones and a prominent brow characteristic of Eastern European and Central Asian features, with subtle warmth from African and Indigenous heritage. Skin shows minor acne scars and dock grime that doesn't fully wash out. Expression is perpetually tense — jaw line disrupted by the chrome replacement.",
+    "distinguishing_marks": [
+      "Visible surgical scar along entire jawline where the chrome prosthetic was installed, still pink and poorly healed",
+      "Deep impact bruising on the right temple and orbital bone, fading yellow-green, from the incident with Kyle",
+      "Thin burn scar on the inside of left forearm from a loading dock chemical spill, three inches long",
+      "Faded tattoo on right wrist — three vertical lines in Yoruba style, done by his mother with a needle and ink when he turned twenty-one"
+    ],
+    "visible_augmentations": "Chrome jaw replacement occupies the lower face — gunmetal grey with visible seam lines and mounting bolts at the temples. The jaw is noticeably oversized and sits at a permanent underbite. Micro-servos visible at the hinges. The speed-boosted leg tendons are subcutaneous but create visible hyper-definition in the calves and thighs, with faint scar tissue visible behind the knees.",
+    "posture_movement": "Bounces on his toes constantly — the speed augmentation makes standing still torture. Walks fast and urgently even when there's no reason. Head jerks slightly when the chrome jaw clicks. Hands move when he talks, which is always. Nervous energy barely contained in his frame. Eyes dart to exits and potential threats.",
+    "clothing_style": "Tier 4-5 functional clothing — canvas work pants with reinforced seams, modified with cargo pockets for carrying jobs. Loose-fitting tank top or oversized synthetic shirt, usually sweat-stained and oil-spotted. Worn dock-worker boots with torn laces he keeps meaning to replace. A faded synthetic jacket with the Lower Dock Crew informal patch (home-sewn, crooked). No jewelry except a worn rubber bracelet his mother gave him. Clothing is cheap, practical, and shows the wear of someone who cannot afford to replace things but needs them to survive."
+  },
+  "image_prompt": "Milena Adu-Volkov, 178cm lean cyberpunk dock worker, warm olive-tan skin with golden undertones from mixed Eastern European-Central Asian-African-Indigenous heritage, bronze-darkened from harsh industrial work. Sharp Slavic-Central Asian cheekbones, natural dark brown eyes with perpetually tense expression. Black hair with faded copper undercut, short and messy. Prominent gunmetal chrome jaw prosthetic with visible seams and bolts causing permanent underbite, pink surgical scar along jawline. Hyper-defined legs and calves from speed-boosted tendons with visible scar tissue. Faded Yoruba-style three-line tattoo on right wrist. Deep yellow-green bruising around right temple and eye socket. Nervous energy, bouncing on toes, hands expressive. Wearing sweat-stained oversized synthetic shirt, reinforced canvas work pants with cargo pockets, worn dock boots with torn laces, faded jacket with home-sewn Lower Dock Crew patch. Worn rubber bracelet from mother. Setting: Great Lakes Metropolitan Zone Lower Docks at dusk, neon signs reflecting off wet industrial surfaces, harsh fluorescent dock lighting casting sharp shadows. Mood: wired, anxious, ready to bolt. Eyes scanning for exits and threats. Cyberpunk 2226, gritty urban noir lighting, metallic highlights on chrome jaw. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 44.8,
+    "Central Asian": 31.7,
+    "Sub-Saharan African": 12.0,
+    "Indigenous American": 11.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

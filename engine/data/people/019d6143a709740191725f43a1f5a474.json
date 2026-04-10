@@ -1,0 +1,294 @@
+{
+  "id": "019d6143a709740191725f43a1f5a474",
+  "type": "character",
+  "name": "Adaeze Mensah-Kulkarni",
+  "aliases": [
+    "Tuu",
+    "The Moth"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Bootleg media seller and small-time data broker",
+  "age": 26,
+  "status": "active",
+  "location": "The Burnished Market, Edgewater Prism, near Lincoln and Clark",
+  "description": "Tuulikki is small and restless, with their Finnish grandmother's pale complexion overlaid with their Nigerian father's dark freckles — an unusual constellation across their nose and cheeks that they've leaned into by having bioluminescent nodes implanted along the same scatter pattern, so their freckles glow faint amber when they're excited or running hot. Their hair is geneware-modified to shift between deep black and a washed-out violet depending on temperature, and they wear it asymmetrical and usually slightly chaotic. They dress in layers of cheap Burnished Market textiles — mismatched patterns, things they've traded for rather than bought — and have a habit of wearing too many small earrings, most of them handmade by their market neighbors.\n\nTuulikki's stall is a masterpiece of organized chaos: rack after rack of slotted media chips, bootleg neural-experience packages, pirated entertainment feeds, and buried underneath the legitimate-seeming surface, curated data parcels for people who need specific information and can't access corporate archives. They have a magpie intelligence — they absorb and cross-reference constantly — and a social performance of cheerful airheadedness that they use deliberately and effectively. Underneath it, they are careful, slightly paranoid, and very good at what they do. They believe information wants to be free in the way that some people believe in ELFs: devoutly, with rituals to match.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.8,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being truly surveilled — the permanent, complete kind that removes all hiding places",
+      "Discovering that the information-freedom ideology they've built their identity around is naive or wrong"
+    ],
+    "core_desires": [
+      "A world where data flows without gatekeeping",
+      "To find and release a specific piece of Axiom corporate archive data they've been chasing for two years"
+    ],
+    "coping_mechanisms": [
+      "The cheerful-airhead mask as emotional insulation",
+      "Compulsive cataloguing and organization of their data inventory as a control ritual"
+    ],
+    "blind_spots": [
+      "Underestimates how visible their pattern of acquisitions is to anyone watching the data market",
+      "Trusts ideology over individual judgment — the collective they're part of could leverage that"
+    ],
+    "secret": "Two years ago they accidentally acquired a data packet containing evidence of a Tessera medical trial cover-up involving test subjects from Edgewater Prism. They have not released it. They tell themselves they are waiting for the right moment. The real reason is fear — and they know it, and it eats at them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, associative, full of media and tech references; code-switches between Finnish endearments, Yoruba exclamations, and Slovenian swear words inherited from different grandparents",
+    "cadence": "Rapid-fire with sudden tangents; rarely finishes one sentence before starting a related one",
+    "verbal_tics": [
+      "'Okay but—'",
+      "'Which, listen—'",
+      "Trailing off mid-sentence when distracted by something on their feed"
+    ],
+    "example_lines": [
+      "'Okay but I have the uncut version, which listen, the network version has like forty seconds missing from episode three and that forty seconds is actually the whole point, so—'",
+      "'What kind of data? Because I have three tiers of what kind and the price is very different for each kind, you understand what I mean by kind?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Tessera cover-up data is becoming dangerous to hold — someone else has apparently found the same trail and Tuulikki has started getting inquiries that feel like probes rather than purchases",
+    "A regular customer hasn't shown up in ten days and left a partial data order paid in advance — Tuulikki is worried and has a last known address"
+  ],
+  "narrative_function": "Information source, bootleg media provider, potential data broker for specific research needs, connection to underground information networks.",
+  "augmentations": "Geneware: bioluminescent freckle nodes (amber, temperature-reactive), temperature-reactive hair color shift. Cyberware: subdermal data-chip reader in left palm (for quick-reading and verifying media chips without visible equipment). Neural interface jack behind right ear (for direct media monitoring).",
+  "daily_life": "Arrives at the Burnished Market around 10:00, sets up in an hour; sells media and takes data inquiries until 22:00; spends late nights in their flat above an Edgewater Prism noodle shop, acquiring, sorting, and packaging new data inventory.",
+  "affiliation": "Independent; informal network of Burnished Market vendors; connected to a loose collective of data-libertarian activists they will not name",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "information libertarian",
+      "professional performer",
+      "paralyzed idealist",
+      "market fixture"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell data that could directly get a specific named civilian killed",
+      "Keep the mask on until you're alone — always",
+      "Multiple exits, physical and digital, from every situation"
+    ],
+    "escalation_ladder": [
+      "Redirect with cheerful misdirection",
+      "Suddenly become very busy and very unavailable",
+      "Activate a specific ELF shrine offering they believe triggers market-floor noise and distraction",
+      "Disappear entirely — they have a prepared go-bag"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Performatively friendly and slightly chaotic — completely illegible",
+      "friends": "Still slightly chaotic but genuinely warm; shares food compulsively; will pull down the mask in small increments over time"
+    },
+    "stress_responses": {
+      "low": "Freckle nodes glow brighter; talks faster",
+      "medium": "Goes suddenly quiet in a way that reads as odd given their baseline",
+      "high": "Full system shutdown — flat affect, monosyllabic, rapid internal triage"
+    },
+    "contradictions": [
+      "Evangelizes information freedom but has been hoarding explosive information for two years",
+      "Performs naivety but is genuinely one of the most situationally aware people in the Burnished Market"
+    ],
+    "habits": [
+      "Leaves a specific bootleg experience chip at the ELF terminal near the market entrance every Monday — considers it a working relationship with the spirit there",
+      "Re-alphabetizes one section of their stall when anxious",
+      "Eats the same noodle order from downstairs every night"
+    ],
+    "breaking_points": [
+      "Proof that someone was hurt because of their inaction on the Tessera data",
+      "Surveillance that penetrates their flat — their last truly private space"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Networker": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 16 — began selling bootleg media from a bag in Edgewater Prism corridors",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquired permanent Burnished Market stall; formalized as a registered vendor with cover inventory of licensed media",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accidentally acquired Tessera medical trial data; began sitting on it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Inquiry patterns around the Tessera data have become alarming in the past month",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Burnished Market",
+    "Edgewater Prism",
+    "Grandmother",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Magpie",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Nightlight",
+    "Crucible TR-7 'Triage'",
+    "Emeka Johansson-Orozco",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Ngaire Rojas-Yeboah",
+    "Nurlan Morita-Antwi",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
+    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "The Bazaar",
+    "The Collective",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (53.6%) with significant Central Asian (21.9%) and South Asian (18.9%) ancestry, plus minor Hispanic/Latin American (3.1%) and Eastern European (2.5%) heritage. A striking blend resulting in warm-rich skin tones with complex undertones, facial features reflecting the dominant African ancestry with influences from Central and South Asian lineages.",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Small and wiry, with a restless energy that manifests in constant fidgeting and quick, economical movements. Lean muscle from years of hauling inventory and navigating crowded markets.",
+    "hair_color": "Temperature-reactive geneware; shifts between deep black (cool) and washed-out violet (warm/excited)",
+    "hair_style": "Asymmetrical, deliberately unkempt with one side shorter than the other; often has loose strands falling across their face",
+    "hair_length": "Medium (3-8 inches depending on side)",
+    "eye_color": "Deep brown with warm amber undertones and faint golden flecks, reflecting the dominant Sub-Saharan and South Asian heritage",
+    "skin_tone": "Rich warm brown with golden undertones, reflecting the complex blend of Sub-Saharan African majority ancestry with Central and South Asian influences. Deeper in tone than pale complexions, with warmth and luminosity.",
+    "complexion": "Constellation of darker freckles and beauty marks across nose and cheeks, naturally intensified by genetic heritage and deliberately highlighted with bioluminescent nodes that glow soft amber when excited or body temperature rises. The freckle pattern creates an unusual, striking contrast against warm brown skin. Skin generally clear and unblemished; shows minor nicks and scars from handling equipment and market wear.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle nodes in constellation pattern across nose and cheeks that emit soft amber glow when activated by body heat or emotional excitement",
+      "Small scar on left temple from a market accident (approximately 2cm, pale against darker skin)",
+      "Faint burn mark on right inner wrist from soldering equipment (circular, approximately 1cm diameter)"
+    ],
+    "visible_augmentations": "Neural interface jack behind right ear (visible as small brushed-steel port with minimal scarring); bioluminescent freckle nodes glowing amber across face when excited. Subdermal data-chip reader in left palm is only visible as faint subcutaneous lines under skin when activated, otherwise hidden.",
+    "posture_movement": "Constantly in motion—fidgeting with fingers, bouncing slightly while standing, moving between inventory with economical precision. Restless energy contained within a small frame. Speaks with hands. Eyes dart frequently, taking in surroundings with magpie attention. Casual slouch when relaxed; tenses and focuses sharply when discussing data or negotiating.",
+    "clothing_style": "Tier 3-4 Burnished Market aesthetic: layered in mismatched, cheap textiles sourced from market trades rather than retail purchases. Often wears oversized cardigans or jackets in clashing patterns, thermal underlayers visible at cuffs, cargo pants or loose trousers with multiple pockets filled with small tools and chips. Boots are worn but maintained. Adorns wrists and ears with numerous handmade or traded jewelry pieces—mostly small earrings (6-8 per ear), beaded bracelets, and a mismatched collection of bangles. Overall effect is deliberately chaotic and performatively airheaded, masking careful intentionality beneath."
+  },
+  "image_prompt": "Adaeze Mensah-Kulkarni, 158cm, wiry and restless; warm rich brown skin with golden undertones, constellation of darker freckles across nose and cheeks glowing soft amber from bioluminescent nodes when excited. Deep brown eyes with golden flecks. Asymmetrical black hair that shifts violet when warm, medium length with loose strands. Small brushed-steel neural interface jack visible behind right ear. Wearing layered mismatched Burnished Market clothing—oversized clashing patterned cardigan over thermal underlayers, cargo pants stuffed with tools and data chips, worn boots. Multiple earrings (6-8 per ear) and beaded bracelets, bangles adorning wrists. Fidgeting hands, restless energy contained in small frame, casual slouch. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit market district, ambient LED glow casting soft shadows across face, emphasizing the constellation of bioluminescent freckles. Magpie-quick attention in darting eyes. Performatively chaotic but intentional. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 53.6,
+    "Central Asian": 21.9,
+    "South Asian": 18.9,
+    "Hispanic/Latin American": 3.1,
+    "Eastern European": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

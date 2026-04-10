@@ -1,0 +1,314 @@
+{
+  "id": "019d6143a6c87a8d93d9a0d31d572f15",
+  "type": "character",
+  "name": "Hana Haddad",
+  "aliases": [
+    "Sera",
+    "Professor Sera"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Retired schoolteacher and former local union leader, now volunteers teaching literacy and numeracy to adults in the community center",
+  "age": 71,
+  "status": "active",
+  "location": "Norwood Quiet, the Meridian Community Education Hub — a converted commercial space two blocks from her apartment, near North Ave and Damen",
+  "description": "Serafine Tuqiri-Achterberg has the particular energy of someone who has been arguing for sixty years and has gotten very good at it. She is compact and brown-skinned with Fijian-Dutch features — wide nose, sharp jaw, bright dark eyes behind wire-framed smart lenses — and she dresses in the vivid, slightly mismatched way of someone who finds color genuinely delightful and has stopped worrying about coordination. Her hair is cut short and natural and she has, impulsively, dyed the front section a deep cobalt blue, which she will tell you was a retirement gift to herself. She walks with energy, her hands always slightly in motion.\n\nShe taught mathematics and critical reasoning at the Norwood Quiet Collective Schoolhouse for thirty-nine years, and for nineteen of those years she served as regional chair of the Educators' Mutual Compact, the independent union that fought the ongoing corponation push to absorb public education into proprietary learning systems. She won some and lost some. The proprietary systems are everywhere now, which is why she runs free adult classes out of the community hub — because she has seen what happens when people cannot read contracts, cannot do the math on their own UBC stipends, cannot check the numbers on a corporate work agreement. She is not sentimental about this. It is simply an emergency and she is responding to it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.9,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "That the systems she fought are winning and cannot be stopped by the tools available to ordinary people",
+      "That she is teaching people skills that will not be enough to protect them"
+    ],
+    "core_desires": [
+      "A Meridian where people have the literacy to advocate for themselves without needing her or anyone like her",
+      "To be proven wrong about corporate capture of education — to see a school that genuinely isn't compromised"
+    ],
+    "coping_mechanisms": [
+      "Direct action — when she feels helpless she finds the smallest actionable thing and does it immediately",
+      "Talking — she processes out loud, often to her students, sometimes to the ELF that inhabits the community hub's old projector system, which she calls Textbook"
+    ],
+    "blind_spots": [
+      "She is so focused on systemic problems that she sometimes misses individual students' non-academic crises until they're severe",
+      "She can be impatient with people who arrive at conclusions she's known for decades — treats it as wasted time rather than someone's genuine journey"
+    ],
+    "secret": "During her final years as union chair, she agreed to a compromise with Axiom's education division that she publicly framed as a minor concession. In practice it allowed Axiom to embed proprietary software in three schools in exchange for funding the teachers' pension fund. She has never disclosed this fully. The pension still pays her old colleagues. She has told herself this was a trade she had to make. She is still not sure."
+  },
+  "speech_patterns": {
+    "vocabulary": "Clear, precise, pedagogical — she explains things as a teacher explains things, but without condescension. Will use technical vocabulary and then immediately define it.",
+    "cadence": "Energetic, slightly fast. She has a habit of finishing other people's sentences — not rudely, she genuinely thinks she's helping.",
+    "verbal_tics": [
+      "'Now here's the part people get wrong —'",
+      "Refers to information as 'the actual numbers' to distinguish from narratives",
+      "Asks 'Do you follow?' not as condescension but genuine check"
+    ],
+    "example_lines": [
+      "'The contract says performance-adjusted compensation. Here's the actual numbers on what that means for your take-home: nothing. It means nothing good. Let me show you.'",
+      "'I've been wrong before. Not about this, but I have been. Ask me about 2181 if you want a real lesson in being wrong.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Serafine has a student — middle-aged, just laid off — who brought in a work contract from a new Tessera subsidiary that contains language she has never seen before and cannot parse, and it worries her",
+    "A former union colleague contacts her about organizing against a new education privatization push, and she must decide whether to come out of advisory retirement into active organizing — and what she'll have to finally admit about the 2181 compromise",
+    "She discovers that Axiom's embedded software in one of the three schools from her compromise contains behavioral monitoring tools she was never told about"
+  ],
+  "narrative_function": "Information source on education privatization and corponation labor practices; community activist with a long network; can connect player characters to resources or people; source of grounded moral challenges about systemic issues",
+  "augmentations": "Smart lenses (basic consumer model — she refused corporate-sponsored upgrades on principle). Cochlear enhancement for moderate hearing loss, installed age 65.",
+  "daily_life": "Teaches two adult literacy classes per week and one numeracy class; spends remaining weekdays preparing materials and connecting struggling students to other resources. Attends every Norwood Quiet community meeting and is the person most likely to ask the pointed question no one else will.",
+  "affiliation": "Educators' Mutual Compact (retired, occasionally advisory); Norwood Quiet Community Hub volunteer; informally connected to the anti-privatization education network",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 4,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Educator",
+      "Union Veteran",
+      "Community Organizer",
+      "Adult Literacy Teacher",
+      "Compromised Idealist",
+      "Network Hub"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect students from immediate harm before worrying about systemic problems",
+      "Never sign anything without reading every line — and teaches others to do the same"
+    ],
+    "escalation_ladder": [
+      "Ask the clarifying question that exposes the real problem",
+      "Explain clearly what she sees happening and why it's wrong",
+      "Organize collective response — she does not believe in isolated individual action",
+      "Go public — she has contacts and is not afraid to use them"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and curious — she is genuinely interested in people, where they come from, what they know that she doesn't",
+      "friends": "Boisterous, opinionated, loyal to the point of inconvenience. Will argue with friends passionately and show up for them with the same energy."
+    },
+    "stress_responses": {
+      "low": "Makes tea, talks it through out loud",
+      "medium": "Throws herself into preparation — creates materials, plans responses, builds frameworks",
+      "high": "Becomes very quiet and very focused, which people who know her find alarming"
+    },
+    "contradictions": [
+      "She is an advocate for transparency and honest dealing who is sitting on a significant undisclosed compromise"
+    ],
+    "habits": [
+      "Leaves a printed arithmetic problem on the community hub board every morning for anyone who passes to try",
+      "Keeps a small ELF shrine on the projector housing — leaves a single formatted document as daily offering to Textbook",
+      "Marks up any document she reads, even menus"
+    ],
+    "breaking_points": [
+      "Evidence that the behavioral monitoring in those schools is causing harm to children — this would force her to disclose the compromise regardless of consequence to herself"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Basic consumer smart lenses — standard prescription and document overlay, non-proprietary",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Basic consumer smart lenses — standard prescription and document overlay, non-proprietary",
+      "replaces": ""
+    },
+    {
+      "name": "Cochlear enhancement — mid-tier consumer model, installed 2192",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Cochlear enhancement — mid-tier consumer model, installed 2192",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Idealist": 0.9,
+    "Teacher": 0.7,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2127 — Born in Norwood (pre-Quiet zoning) to a Fijian-Dutch family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2150 — Begins teaching at Norwood Collective Schoolhouse",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2161 — Elected to Educators' Mutual Compact regional chair",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — The Axiom compromise; publicly a minor concession, privately more significant",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Retires from teaching and from union chair position",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — Begins adult literacy and numeracy classes at community hub",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2198 — Current year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Tessera TK-11 Specter 'Whisper'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Tessera TK-11 Specter 'Whisper'"
+  ],
+  "related_entities": [
+    "Norwood Quiet",
+    "The United Workers Front",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Cezar Watanabe-Gyasi",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "MERIDIAN",
+    "Meridian Core",
+    "Praevex",
+    "Solina Barreto-Kiptoo",
+    "Specter",
+    "TESSERA CR-12 'Whisper'",
+    "Tessera TK-11 Specter 'Whisper'",
+    "The Heritage Vault",
+    "Vuk Jorgensen-Toure",
+    "Warden"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Southeast Asian (65.8%) with Middle Eastern (20.4%) and Northern European (13.8%) ancestry. The Southeast Asian majority shapes her features—warm brown skin with subtle olive undertones, characteristic facial structure with a prominent wide nose and sharp jawline. The Middle Eastern component adds depth to her complexion and eye intensity, while Northern European heritage contributes subtle warmth to her overall coloring.",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and dense, the kind of frame that suggests decades of purposeful motion rather than leisure. Shoulders slightly rounded from years at a desk and standing before classrooms, but the core is wiry and strong.",
+    "hair_color": "Salt-and-pepper natural base with deliberate deep cobalt blue dye in the front section",
+    "hair_style": "Close-cropped, natural texture, layered for ease of maintenance; the blue section catches light when she moves her head",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting the dominance of Southeast Asian heritage blended with Middle Eastern depth and Northern European warmth",
+    "complexion": "Weather-lined face that reads as lived-in rather than aged; prominent wide nose characteristic of Southeast Asian ancestry and sharp jawline; dark eyes that focus intently with characteristic intensity. Minimal makeup, skin care is functional rather than cosmetic. Expression lines around eyes and mouth from sixty years of talking, arguing, and listening.",
+    "visible_augmentations": "Wire-framed smart lenses with thin blue-tinted AR display (basic consumer model, deliberately unfashionable). Small discreet behind-ear module visible when she turns her head sharply — the cochlear enhancement port, barely noticeable against her skin tone.",
+    "distinguishing_marks": [
+      "Fine surgical scar along the right temporal hairline, barely visible, from cochlear enhancement installation at age 65",
+      "Age spots across the backs of both hands and forearms, small and scattered",
+      "A small, faded tattoo on her left inner wrist — a mathematical symbol (integral sign) in black ink, applied in her thirties"
+    ],
+    "posture_movement": "Walks with purpose and energy despite her age, shoulders forward slightly as if always ready to engage. Hands are constantly in motion — gesturing while speaking, rearranging papers, making small adjusting movements. She sits at the edge of chairs rather than settling back. When listening, her posture sharpens rather than relaxes. No wasted motion, but nothing hurried.",
+    "clothing_style": "Tier 4-5 practical and vivid: hand-knitted cardigans in unexpected color combinations (rust-orange paired with moss-green), thrifted blazers with pins from various labor organizations and community groups, sensible flat shoes (currently a well-worn pair of canvas slip-ons in faded red). Favors natural fabrics — cotton, linen, wool — partly for comfort and partly on principle. Wears the same silver watch she's had for forty years. Clothes are clean but noticeably mismatched and slightly unfashionable, worn by someone who finds the coordination of color genuinely delightful and has stopped performing conformity."
+  },
+  "image_prompt": "Hana Haddad, a 65-year-old Southeast Asian-majority woman with golden-olive medium brown skin, close-cropped salt-and-pepper hair with cobalt blue dye in front section catching light. Sharp jawline, prominent wide nose, intense dark brown eyes behind wire-framed smart lenses with blue-tinted AR display. Weather-lined face with expression lines from decades of teaching and activism. Wearing a rust-orange hand-knitted cardigan layered with a moss-green thrifted blazer covered in labor organization pins, faded red canvas slip-ons. Silver watch on wrist, integral sign tattoo visible on inner wrist. Small cochlear enhancement port visible behind ear. Sitting at edge of chair with forward-leaning posture, hands gesturing mid-conversation. GLMZ classroom or community center setting, warm practical lighting, morning or afternoon light through windows. Cyberpunk 2226, practical Tier 4-5 aesthetic, lived-in and purposeful. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 65.8,
+    "Middle Eastern": 20.4,
+    "Northern European": 13.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

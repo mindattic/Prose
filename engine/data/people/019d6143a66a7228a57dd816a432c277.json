@@ -1,0 +1,332 @@
+{
+  "id": "019d6143a66a7228a57dd816a432c277",
+  "type": "character",
+  "name": "Britt Dalgaard-Moala-Konaté",
+  "aliases": [
+    "Anvil",
+    "The Specialist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Long-range precision fire specialist — sniper",
+  "age": 43,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
+  "description": "Nneka Lindqvist-Okafor is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a sniper out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNneka Lindqvist-Okafor has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.46,
+      "id": 0.34,
+      "shadow": 0.82,
+      "mask": 0.61,
+      "ghost": 0.14
+    },
+    "core_fears": [
+      "Betrayal by someone they trust — the only currency that matters",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Trusts technology more than people — machines don't betray",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Nneka Lindqvist-Okafor is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "verbal_tics": [
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"Patience is the weapon. The rifle is just the delivery system.\"",
+      "\"At this distance, the target is already dead. They just don't know it yet.\"",
+      "\"One shot, one outcome. Everything else is theater.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Tier 4 executive offers Nneka Lindqvist-Okafor a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Nneka Lindqvist-Okafor discovers a job they completed last year was a setup for something much larger and much worse",
+    "Nneka Lindqvist-Okafor is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Nneka Lindqvist-Okafor represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 6
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.91,
+      "caution": 0.82,
+      "loyalty": 0.7,
+      "greed": 0.97,
+      "empathy": 0.65
+    },
+    "drives": [
+      "survival",
+      "revenge",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 3,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "pain tolerance beyond normal limits",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "poor impulse control in specific triggers",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "sniper",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always has an exit route planned before agreeing to any meeting"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Never drinks anything they didn't see poured or open themselves"
+    ],
+    "breaking_points": [
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal weapon mount",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "replaces": ""
+    },
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sniper Mind": 0.9,
+    "Ghost": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-11 'Coffin Nail'",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "GLMZ",
+    "Glenville Sound",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Mika Sorel",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA CR-12 'Whisper'",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Cosmopolitan mixed ancestry: Northern European (44%), Pacific Islander (21.6%), Sub-Saharan African (13%), Hispanic/Latin American (11.9%), and Southeast Asian (9.5%). Facial structure reflects this complex blend — Northern European bone structure softened by Pacific Islander and African features, with subtle Southeast Asian eye shape and Hispanic/Latin warmth in skin undertones.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Rawboned and efficient — long-limbed with minimal body fat, the kind of frame that reads as either ascetic discipline or chronic deprivation. Shoulders broad but not heavy; chest defined without bulk. Suggests endurance over raw strength.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Kept short and practical, no styling product. Greying at temples.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Warm medium-brown complexion — the result of multiple ancestry streams blending: Nordic paleness tempered by Pacific Islander, African, and Latin warmth, with subtle Southeast Asian undertones creating depth and dimensional richness across the face and body.",
+    "complexion": "Angular face with prominent cheekbones and strong jaw, refined by the interplay of diverse ancestry — cheekbone height suggests Pacific Islander and African heritage, jaw structure reflects Northern European influence. Skin weathered but maintained — signs of sun exposure and stress, minimal scarring on the face itself. Expression defaults to controlled neutrality; eyes rarely betray emotion. Three-day stubble is his baseline grooming state.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone — old blade work, healed clean.",
+      "Burn mark on right shoulder blade — thermal weapon discharge, roughly 8cm diameter, pale and old.",
+      "Linear scarring along both forearms where the subdermal weapon mounts interface with skin — precise surgical lines, professionally installed, visible when arms are exposed."
+    ],
+    "visible_augmentations": "Subdermal weapon mounts visible as faint linear scars along both forearms; chrome catches light when he flexes or extends. The implants themselves are subcutaneous but the interface seams are evident to anyone who knows what to look for. No visible facial augmentation — the neural dampener is completely internal.",
+    "posture_movement": "Moves with economical precision — no wasted motion, weight always balanced. Stands with slight forward lean, as if perpetually in prone position. Hands rarely still; fingers are constantly performing micro-checks on equipment or assessing distance/angles. Eyes track exits and high ground automatically. Speaks quietly; listens more than talks.",
+    "clothing_style": "Tier 3-4 practical wear: worn but maintained tactical jacket (faded charcoal, synthetic polymer blend) over layered base wear. Cargo pants with reinforced thigh pockets and knee articulation — built-in flex panels for fieldwork. Steel-toed boots, scuffed but oiled. No logos or gang colors; everything is matte-finish or weathered to avoid light reflection. A single Φ-silver ring on his left thumb — old-school marker of runner status. No jewellery beyond that. Clothes smell like gun oil and synthetic detergent."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Britt Dalgaard-Moala-Konaté: tall lean 188cm male with warm medium-brown skin blending Nordic, Pacific Islander, African, and Southeast Asian ancestry visible in angular cheekbones and strong jaw. Dark brown short hair with grey at temples, deep brown eyes with controlled neutral expression. Three-day stubble. Thin white scar from left temple to cheekbone, subtle thermal scarring on right shoulder. Wearing faded charcoal tactical jacket over dark base layers, reinforced cargo pants, scuffed steel-toed boots. Φ-silver ring on left thumb. Linear scarring visible on forearms suggesting subdermal weapon augmentation. Posture shows economical military precision, forward lean, hands at rest but ready. Low-key moody lighting, industrial urban background, sharp focus, professional runner aesthetic, no wasted detail, weathered and maintained gear. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 44.0,
+    "Pacific Islander": 21.6,
+    "Sub-Saharan African": 13.0,
+    "Hispanic/Latin American": 11.9,
+    "Southeast Asian": 9.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

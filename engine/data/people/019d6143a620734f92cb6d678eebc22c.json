@@ -1,0 +1,333 @@
+{
+  "id": "019d6143a620734f92cb6d678eebc22c",
+  "type": "character",
+  "name": "Kai Szczypiński-Keïta-Quiñones",
+  "aliases": [
+    "Neon",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Evidence removal and scene sanitation — cleaner",
+  "age": 32,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
+  "description": "Hadiya Arai-Ofori-Atta are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a cleaner out of Steamvent Alley, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Arai-Ofori-Atta operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.71,
+      "id": 0.12,
+      "shadow": 0.27,
+      "mask": 0.34,
+      "ghost": 0.58
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Dying alone in some alley and nobody noticing for weeks",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "Control — over their body, their schedule, their future",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Knowledge — to understand the systems that grind people down"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Fails to notice when their own behavior mirrors the people they despise",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Hadiya Arai-Ofori-Atta is in augmentation debt to a corporate subsidiary — Φ180,000 outstanding — and the interest is compounding. If they miss a payment, a kill team comes."
+  },
+  "speech_patterns": {
+    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
+      "\"There was never anyone here. There was never anything here. Are we clear?\"",
+      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Hadiya Arai-Ofori-Atta discovers a job they completed last year was a setup for something much larger and much worse",
+    "The fixer who handles Hadiya Arai-Ofori-Atta's contracts goes silent — dead, disappeared, or turned",
+    "A corporate black site Hadiya Arai-Ofori-Atta once infiltrated is being reopened, and the people inside know their face"
+  ],
+  "narrative_function": "As a cleaner, Hadiya Arai-Ofori-Atta embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Freelance — Geartown regular",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 5
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.27,
+      "caution": 0.38,
+      "loyalty": 0.8,
+      "greed": 0.35,
+      "empathy": 0.3
+    },
+    "drives": [
+      "survival",
+      "reputation",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 3,
+      "loyalty_break": 9
+    },
+    "strengths": [
+      "photographic memory for faces and layouts",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "difficulty with authority figures",
+      "physical limitation from incomplete augmentation"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "cleaner",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Eats the same meal before every job — superstition masquerading as preference",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Networker": 0.7,
+    "Manipulator": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Milwaukee Core",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Chibundo Reinholt-Sarpong",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Glenville Sound",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "Sorin Ekwensi-Balasanyan",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European (Polish-Scandinavian base with Slavic features) with significant Sub-Saharan African and Hispanic/Latin American ancestry creating a striking phenotypic blend. Genetic mix produces warm-toned brown skin with subtle undertones reflecting the Eastern European paleness beneath, creating a distinctive mid-to-warm brown complexion. Facial structure shows Slavic angularity combined with West African bone structure — high, prominent cheekbones with wider nasal base and fuller lip structure than typical Eastern European features alone would produce.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with corded muscle from sustained physical activity. Minimal body fat, efficient musculature optimized for speed and endurance rather than strength. Restless posture suggests constant low-level kinetic energy.",
+    "hair_color": "Black with synthetic silver threading woven through — practical modification, not aesthetic",
+    "hair_style": "Pulled back in a tight, functional braid. Kept short enough for quick maintenance between jobs.",
+    "hair_length": "Short to medium",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium brown — the genetic blend of Eastern European base with Sub-Saharan and Hispanic ancestry creates a rich, warm undertone rather than cool. Skin has an even tone across the face and body, characteristic of the admixed ancestry.",
+    "complexion": "Sharp cheekbones prominent from Slavic heritage, set in a face with wider bone structure from African ancestry. Angular jaw with subtle fullness in lower face. Skin shows the wear of chemical exposure — faint discoloration around the hairline from repeated contact with industrial solvents. Otherwise clear, with the kind of tight alertness that comes from chronic low-level stress. No grooming excess; functional only.",
+    "distinguishing_marks": [
+      "Visible neural interface jack at base of skull — chrome-plated, rectangular, approximately 3cm across, sits at the C7 vertebra. Shows minor scarring around the edges from repeated insertion cycles.",
+      "Thin scar along inner left forearm, approximately 8cm, pale and old — consistent with early augmentation work or accident.",
+      "Chemical burn marks across the knuckles of both hands — irregular white patches where skin never fully repigmented. Occupational hazard."
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull is the only visible chrome. No limb replacement, no ocular modification, no subdermal plating. Everything else is internal or deliberately hidden.",
+    "posture_movement": "Moves with economical efficiency — no wasted motion. Stands with weight distributed to ball of feet, ready to pivot or run. Hands rest in lap or at sides, never crossed over torso. Default expression: guarded neutrality. Eyes constantly scanning environment. Speaks quietly, listens more than talks.",
+    "clothing_style": "Tier 3-4 utilitarian. Unmarked dark synthfabric cargo pants with multiple pockets for tools and supplies. Reinforced work boots with chemical-resistant soles, scuffed and stained. Sleeveless or short-sleeved tops that expose the jack — a deliberate choice, not accidental. Thin leather gloves (left hand missing two fingers on the glove — modification to accommodate regular neural jack insertion). No corporate branding, no status indicators. Clothing is expendable and replaceable; color palette is grays, blacks, deep greens."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Kai Szczypiński-Keïta-Quiñones, 168cm lean wiry frame, warm medium-brown skin with Eastern European-African-Hispanic ancestry blend visible in sharp Slavic cheekbones set in wider African bone structure, natural dark brown eyes with guarded neutral expression. Black hair in tight functional braid with silver synthetic threading. Sleeveless dark synthfabric top exposing chrome neural interface jack at base of skull (C7), minor scarring around jack edges. Thin pale 8cm scar on inner left forearm. White chemical burn patches across both knuckles from occupational exposure. Leather gloves on hands, left glove missing two fingers. Dark cargo pants, scuffed reinforced boots. Economical posture, weight on balls of feet, hands at sides. Constant environmental scanning. Industrial underground setting, cool neon accent lighting, moody atmospheric shadows. Utilitarian aesthetic, no corporate branding. Cyberpunk gritty realism --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 87.8,
+    "Sub-Saharan African": 5.8,
+    "Hispanic/Latin American": 5.2,
+    "Northern European": 1.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

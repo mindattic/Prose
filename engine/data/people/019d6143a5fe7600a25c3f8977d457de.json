@@ -1,0 +1,138 @@
+{
+  "id": "019d6143a5fe7600a25c3f8977d457de",
+  "type": "character",
+  "name": "Reed Haugen-Holm-Möller",
+  "aliases": [
+    "The Pale Queen"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Pallid Court elder",
+  "age": 44,
+  "status": "active",
+  "location": "The Underworld - B18-B25, near sub-level access near Dearborn and Jackson",
+  "description": "Eira has not seen sunlight in nineteen years. Her skin glows faint blue-white. She speaks for the deep-adapted communities who were born underground.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Pallid Court",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Mentor": 0.9,
+    "Traditionalist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Bathysphere Networks",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Mika Sorel",
+    "Narrowcast",
+    "Rendstone Nuclear",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Northern European admixture, complemented by Southeast Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African heritage. Genetic ancestry reflects the Ubiquitous Diaspora — a complex global blend that creates distinctive features across multiple continents.",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Lean and angular, with atrophied muscle from decades underground. Long-limbed and almost skeletal, adapted to low-gravity work environments and narrow tunnel spaces.",
+    "hair_color": "Black with silver-white streaks from prolonged subcutaneous mineral deposits",
+    "hair_style": "Long, braided with thin copper wire threaded through sections. Kept back from the face with ritual precision.",
+    "hair_length": "Long",
+    "eye_color": "Very pale gray-blue, irises barely visible. Pupils dilated permanently from absence of natural light.",
+    "skin_tone": "Pale golden-beige with cool undertones, showing the East Asian base modified by Northern European and Southeast Asian ancestry. Overlaid with faint blue luminescence beneath the epidermis — a bioluminescent adaptation from nineteen years in the Underworld.",
+    "complexion": "Angular facial structure with pronounced cheekbones and a sharp jawline reflecting East Asian heritage softened by Northern European width. Skin is translucent in places, showing subcutaneous vasculature. No sun damage, but bearing the waxy pallor of someone who has never felt direct sunlight. High cheekbones typical of East and Southeast Asian ancestry. Lips are naturally pale with subtle pigmentation; she sometimes stains them with bioluminescent dye for formal Court occasions.",
+    "distinguishing_marks": [
+      "Ritual scarification across both forearms in geometric patterns — marks of her initiation into the Pallid Court, performed when she was born underground",
+      "A thin, silvery scar along her left temple from a tunnel collapse accident twenty years ago",
+      "Faint bioluminescent tracery visible across her collarbone and sternum — subcutaneous patterns that glow faintly in darkness"
+    ],
+    "visible_augmentations": "None visible. Her bioluminescence is suspected to be a deep biological adaptation rather than a surgical implant, though it may have been cultivated through long-term exposure to Underworld bio-engineering compounds.",
+    "posture_movement": "Moves with deliberate grace and economy of motion — no wasted energy. Her gait is silent, practiced. She often pauses mid-conversation to listen to vibrations in the stone beneath her feet. Her hands move expressively when she speaks, gestures precise and ceremonial.",
+    "clothing_style": "Formal Pallid Court attire: layered robes of deep indigo and black synthetic silk, deliberately concealing her skeletal frame. A copper-embroidered collar marks her as an elder. Wears no jewelry save for a simple ring of pale silver on her right ring finger — a family heirloom from before the Underworld. Her clothing is immaculate but deliberately devoid of bright colors or reflective surfaces; she dresses to absorb light rather than reflect it. Tier 3-4 quality, emphasizing ritual and status within the Court rather than wealth."
+  },
+  "image_prompt": "Reed Haugen-Holm-Möller, 168cm tall lean figure in formal Pallid Court attire, layered deep indigo and black synthetic silk robes with copper-embroidered collar. East Asian-descended features with pale golden undertones, pronounced cheekbones, sharp jawline. Long black hair with silver-white streaks braided with copper wire, pale gray-blue eyes with dilated pupils adapted to darkness. Translucent porcelain skin with faint blue bioluminescent tracery glowing subtly across collarbone and sternum. Ritual scarification in geometric patterns visible on forearms, thin silvery scar on left temple. Silent, graceful posture, hands moving expressively. Cyberpunk 2226 Great Lakes Metropolitan Zone, pale light catching bioluminescent patterns beneath skin, dark stone chamber setting, emphasis on ritual and ancestral connection, mood contemplative and otherworldly --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 54.4,
+    "Northern European": 21.0,
+    "Hispanic/Latin American": 11.2,
+    "Southeast Asian": 5.7,
+    "Sub-Saharan African": 4.7,
+    "Middle Eastern": 3.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

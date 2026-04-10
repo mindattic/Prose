@@ -1,0 +1,263 @@
+{
+  "id": "019d6143a5de73c182be99b8e5b080ad",
+  "type": "character",
+  "name": "Ash Sokolov",
+  "aliases": [
+    "Captain",
+    "The Diver",
+    "Saints Lead"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Crew lead and master diver — Boneyard Saints",
+  "age": 36,
+  "status": "active",
+  "location": "Old Harbor — operates from a converted shipping container on the remaining dry dock, near Michigan Ave South and Cermak",
+  "description": "Corva Lam dives into the drowned ruins of Old Harbor and brings back things that should have stayed buried. Pre-collapse infrastructure, sealed server farms, military hardware that was never officially there — the flooded districts are an archaeological site for technology the corps want recovered and the city wants forgotten. Corva knows these waters better than anyone alive because she grew up on them. Her family ran fishing operations in the harbor before the collapse raised the water level and swallowed everything below the second floor.\n\nShe built the Boneyard Saints from salvage divers and ruin-runners who shared two qualities: the skill to survive Old Harbor's flooded labyrinth and the nerve to go deep when the sonar returns something that shouldn't be there. The ruins are not empty. Pre-collapse automated security systems still operate on backup power in some sections. Marine life has adapted to the submerged infrastructure in ways that marine biologists would find fascinating and divers find terrifying. And then there are the sounds — low-frequency resonance from deep structures that shouldn't be producing sound at all.\n\nCorva is broad-shouldered, weathered by salt water and UV exposure, with short dark hair and the permanently squinting eyes of someone who's spent too many hours in glare. Her hands are scarred from coral cuts and salvage work. She moves with the deliberate economy of a diver — every gesture conserves energy, every step is placed. On land she seems slightly wrong, like a marine creature forced to perform on dry ground.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.5,
+      "id": 0.55,
+      "shadow": 0.45,
+      "mask": 0.35,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That something in the deep ruins is aware of her — that the sounds and the movement patterns are not mechanical",
+      "That she is leading her crew into salvage sites that are more dangerous than she admits because the contracts pay too well to refuse",
+      "That the harbor will never be recovered and her family's world is permanently drowned"
+    ],
+    "core_desires": [
+      "To map every flooded structure in Old Harbor — to know the drowned city completely",
+      "To find the thing her father went looking for on his last dive. He never told her what it was. He never came back.",
+      "To keep the Saints alive in waters that actively resist human presence"
+    ],
+    "coping_mechanisms": [
+      "Dives alone when the pressure gets too heavy — the underwater silence is the only place her mind goes quiet",
+      "Treats every dive as a technical problem rather than an emotional one — the water is physics, not metaphor",
+      "Maintains the container and the dock with obsessive care because the dry land base is the counterweight to the chaos below"
+    ],
+    "blind_spots": [
+      "Her comfort in the water makes her underestimate how alien and terrifying the deep ruins are for her crew",
+      "She treats her father's disappearance as an unsolved puzzle rather than a grief — the emotional processing is submerged, literally",
+      "She cannot admit that some of the deep ruins should remain unexplored because the unknown is the only thing that still excites her"
+    ],
+    "secret": "She found her father's dive gear three years ago in a sealed section of the flooded harbor. The gear was intact. There was no body. The section had been sealed from the inside."
+  },
+  "speech_patterns": {
+    "vocabulary": "Maritime, technical, physical. She describes things in terms of depth, pressure, current. Metaphors are aquatic without affectation.",
+    "cadence": "Measured, calm, with the rhythm of someone who controls their breathing professionally. Gets clipped underwater — short phrases conserve air.",
+    "verbal_tics": [
+      "Says 'surface it' to mean 'explain it clearly' — bringing information up from depth",
+      "Refers to danger levels by depth markers — 'that's a thirty-meter problem' means it's serious",
+      "Goes quiet before making a decision, like she's checking her air supply before committing"
+    ],
+    "example_lines": [
+      "The ruins don't care if you're scared. The water doesn't care if you're brave. Check your gear and surface it — what are we actually dealing with?",
+      "My father went down looking for something. I go down because I can't stop. The difference is I come back.",
+      "That's a thirty-meter problem. We're not equipped for thirty meters today."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Toll Brecker",
+      "type": "crew / heavy salvage specialist",
+      "description": "Toll is the muscle of the Saints — the one who moves the heavy salvage and holds the line when something goes wrong underwater. Corva trusts his strength absolutely and his judgment almost as much.",
+      "emotional_core": "The reliability of a dive partner you'd trust with your air supply",
+      "story_tension": "Toll has been hearing things in the deep ruins that the sonar doesn't explain. Corva has too, but neither will say it first."
+    },
+    {
+      "name": "Wren Isaza",
+      "type": "crew / technical analyst",
+      "description": "Wren handles the technology side — identifying salvage, assessing value, interfacing with pre-collapse systems. She never dives. Corva respects this boundary and privately envies the clarity of someone who knows their limits.",
+      "emotional_core": "Professional respect with an undertone of protectiveness",
+      "story_tension": "Wren's analysis of deep-ruin salvage has revealed patterns in the pre-collapse technology that suggest the flooded sections were not abandoned by accident."
+    },
+    {
+      "name": "Pike Odera",
+      "type": "crew / scout diver",
+      "description": "Pike is the youngest Saint and the fastest swimmer. He scouts new salvage sites and maps routes through the flooded infrastructure. Corva trained him herself and sees too much of her younger self in his eagerness to go deeper.",
+      "emotional_core": "Mentorship weighted with the fear of sending someone where her father went",
+      "story_tension": "Pike wants to explore the deep sections. Corva keeps saying no. The reason she won't give him is the real story."
+    }
+  ],
+  "story_hooks": [
+    "A contract leads the Saints to the sealed section where Corva found her father's gear — someone wants whatever is inside",
+    "The deep-ruin sounds intensify and begin responding to the Saints' sonar — something is listening",
+    "A pre-collapse server farm recovered from the ruins contains data that multiple corps are willing to kill for",
+    "Pike goes on an unauthorized deep dive and doesn't surface on schedule"
+  ],
+  "narrative_function": "Corva drives the treasure-hunt-with-horror-elements stories of the Boneyard Saints. Her world is literally submerged — drowned infrastructure, forgotten technology, things that move in the dark water. She represents the scavenger economy of M88's margins, where the past is more valuable than the present, and recovering it requires going into places that feel actively hostile to human presence.",
+  "augmentations": "Amphibious respiratory system — modified lungs that extract dissolved oxygen from water for up to 90 minutes before requiring surface air. Pressure-compensation implants in inner ear and sinuses. Sonar-processing cortex that interprets underwater acoustic data as spatial mapping. Thermal regulation dermal layer for extended cold-water immersion. Bio-luminescent dermal tattoos on her forearms that activate underwater — functional lighting, not cosmetic.",
+  "daily_life": "Wakes at first light. Checks weather, tides, and water conditions. Reviews salvage contracts and scout reports from the crew. Dives most days — either contract work or reconnaissance for future operations. Returns to the dry dock to catalogue and store salvage. Evenings are maintenance — equipment, augmentations, the container itself. Eats fish she catches herself when possible. Sleeps to the sound of water against the dock pilings because silence makes her uneasy.",
+  "affiliation": "Boneyard Saints",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abort any dive when crew air reserves hit 30% — no salvage is worth a drowning",
+      "Will not send crew into a section she hasn't scouted personally or approved based on Pike's reconnaissance",
+      "Will not salvage human remains or personal effects — the drowned dead are left in peace",
+      "Will destroy pre-collapse weapons rather than sell them — the harbor has enough ghosts",
+      "Will always be the last diver out of a flooded section — the captain surfaces last",
+      "Will not discuss her father's disappearance during operational hours"
+    ],
+    "escalation_ladder": [
+      "1. Assess — sonar sweep, visual scan, current analysis. Know the water before committing.",
+      "2. Signal — alert the crew to change conditions. Underwater communication is limited; every signal must be unambiguous.",
+      "3. Retreat — pull back to a known-safe depth or section. Preserve air, preserve crew.",
+      "4. Seal — close off the dangerous section. Old Harbor has blast doors and emergency bulkheads that still function. Use them.",
+      "5. Surface — abort the dive entirely. Bring everyone up. Regroup on dry dock.",
+      "6. Fight — underwater combat is ugly, slow, and desperate. Corva carries a pneumatic spear gun and a ceramic knife. She has used both against things she cannot adequately describe."
+    ],
+    "interpersonal_modes": {
+      "toll": "Direct, economical. They communicate in the shorthand of dive partners who've survived bad water together. On the surface, they share meals and comfortable silence. Underwater, they move as a unit.",
+      "wren": "Respectful, slightly deferential to Wren's technical knowledge. Corva brings salvage to the surface; Wren tells her what it means. The division of expertise creates mutual dependency.",
+      "pike": "Firm, instructive, warmer than she intends. She teaches by demonstration and corrects by repetition. When Pike pushes for deeper dives, her refusal is absolute and she will not explain why.",
+      "dry_land_contacts": "Slightly uncomfortable. She moves differently on solid ground — more deliberate, less fluid. Social interactions above water feel like operating in a foreign medium."
+    },
+    "stress_responses": {
+      "low": "Dives more frequently. The water is the stress response.",
+      "medium": "Maintenance becomes obsessive — gear checked three times, dock repairs that aren't needed, container organized and reorganized.",
+      "high": "Becomes rigid in command decisions. No flexibility, no improvisation. The rules become absolute because the rules are what keeps people alive.",
+      "critical": "Night dives. Alone. Into sections she hasn't cleared. This is the most dangerous thing she does and the closest thing she has to processing grief."
+    },
+    "contradictions": [
+      "She fears the deep ruins but cannot stop returning to them — the compulsion and the terror are the same impulse",
+      "She protects Pike from the deep sections while secretly hoping he'll eventually be ready, because she needs someone to go where her father went and come back",
+      "She treats the drowned harbor as a professional resource but it is also a grave — her family's world, her father's resting place",
+      "She values crew safety above all else but takes solo night dives that could leave the Saints leaderless"
+    ],
+    "habits": [
+      "Checks tide tables before anything else every morning — the water sets the schedule",
+      "Maintains bio-luminescent tattoos by exposure to specific light frequencies — the maintenance is meditative",
+      "Eats standing at the container's doorway, watching the water — meals are brief, functional, and always accompanied by observation",
+      "Sleeps with a sonar return display active — the rhythmic pulse is her version of white noise",
+      "Keeps her father's dive logbook in a waterproof case bolted to the container wall — she reads it sometimes but has memorized every entry"
+    ],
+    "breaking_points": [
+      "Losing a crew member to the water — especially Pike — would force her to confront the parallel with her father she's been avoiding",
+      "Discovering what happened to her father would either provide closure or open a horror she's not prepared for",
+      "The deep-ruin sounds being conclusively identified as non-mechanical would transform the salvage operation into something she doesn't have a framework for",
+      "Old Harbor being developed or drained by a corporate interest would destroy both her livelihood and her connection to the past"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Protector": 0.9,
+    "Pragmatist": 0.9,
+    "Code Keeper": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "related_entities": [
+    "Tender Collapse",
+    "Dust & Meridian Saints",
+    "The Resonance Communion",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Bathysphere Networks",
+    "The Voltage Saints",
+    "Tibor Osei-Svanstrom",
+    "The Pure Hand",
+    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Breck Tannen",
+    "Carrion",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "CortexDynamics Stratum Entertainment BCI",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Glenville Sound",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Irontide Tidal Energy",
+    "Isadora Mwangi-Thorvaldsen",
+    "Kamala Blomberg-Konadu",
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Noir Dining",
+    "Old Harbor",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Static",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European, Hispanic/Latin American, East Asian, and Northern European ancestry in complex admixture. Phenotype reflects strong East Asian and Eastern European features with warm undertones from Latin American ancestry and fair undertones from Northern European genetics.",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and lean-muscular, built for hydrodynamic efficiency rather than bulk. Developed trapezius and latissimus from years of diving and hauling salvage. Low body fat, dense muscle structure optimized for cold-water endurance.",
+    "hair_color": "Dark brown, salt-bleached at the tips",
+    "hair_style": "Cropped short, often wet or tied back with a faded cordage band",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with permanent squint-lines at the corners; pupils dilate slightly wider than baseline due to sonar-processing implant",
+    "skin_tone": "Warm golden-tan with complex undertones — blend of olive from Eastern European ancestry, golden warmth from Latin American ancestry, and subtle cool undertones from East Asian heritage. Weathered from UV and salt exposure into deep bronze.",
+    "complexion": "Sun-damaged and salt-etched; fine wrinkles around eyes and mouth from constant squinting and twenty-five years of water immersion. Facial structure shows stronger East Asian cheekbone geometry balanced with broader Eastern European jaw and nose bridge. Skin has a slightly matte finish from thermal regulation implants. No cosmetic grooming — practical and functional.",
+    "distinguishing_marks": [
+      "Network of fine white scars across both palms and knuckles from coral cuts and sharp salvage edges",
+      "Long diagonal scar on left forearm (15cm) from a pre-collapse metal edge, pre-dating augmentation",
+      "Bio-luminescent dermal tattoos on both forearms in geometric nautilus-spiral patterns that glow pale blue-green underwater; faintly visible as faint silver subcutaneous lines in daylight",
+      "Small circular burn scar on right shoulder from pressure-compensation implant installation, now nearly invisible",
+      "Salt-bleached eyebrows that appear almost white in strong sunlight"
+    ],
+    "visible_augmentations": "Bio-luminescent forearm tattoos visible as faint subcutaneous silver tracery in daylight, glowing blue-green when wet or activated. Gill-like scarring on neck sides where respiratory system integrates (visible when head tilted). Slight asymmetry in ear lobes where pressure-compensation implants sit. Thermal regulation dermal layer visible as faint iridescent sheen across shoulders and upper back in certain light angles. Sonar-processing cortex visible only as slight irregularity in skull curvature at base of skull — barely noticeable.",
+    "posture_movement": "Moves with deliberate conservation — no wasted motion, every step placed with intention. On land, posture is slightly forward-leaning, as if gravity surprises her. In water, she moves like she was born there. Hands often hang slightly loose at sides, fingers flexing unconsciously as if testing water resistance. Head tilts frequently to process ambient sound. Blinks slowly, like she's reading data.",
+    "clothing_style": "Tier 4 working-class practical: custom-fitted wetsuit jacket (reinforced neoprene, faded black with underarm gussets for mobility), tactical cargo pants in weathered gray synthetic (many pockets, one thigh pocket modified for sonar receiver), steel-toed salvage boots with torn laces. Overshirt when ashore — oversized wool-synthetic blend in dark blue, salt-stained. No visible jewelry except a braided cordage bracelet with a salvaged brass compass. A faded corp-logo baseball cap she wears backward when concentrating. Everything smells like salt and machine oil."
+  },
+  "image_prompt": "Ash Sokolov, 172cm lean-muscular salvage diver, warm golden-bronze skin with complex East Asian, Eastern European, Hispanic and Northern European heritage blend, dark brown salt-bleached short cropped hair, permanent squint lines, strong cheekbones and broader jawline. Faded black neoprene wetsuit jacket with underarm gussets, weathered gray tactical cargo pants, steel-toed salvage boots with torn laces. Oversized dark blue wool-synthetic overshirt, salt-stained. Bio-luminescent blue-green subcutaneous forearm tattoos faintly visible as silver lines, gill-like neck scarring, white scar network on palms and knuckles, 15cm diagonal forearm scar. Thermal regulation iridescent sheen across shoulders. Forward-leaning land posture, fingers flexing unconsciously. Braided cordage bracelet with salvaged brass compass. Faded backward baseball cap. Dim neon-lit Great Lakes dockside at dusk, wet weathered surfaces, oil-slick reflections, cool blue-gray cyberpunk 2226 atmosphere. Salt-spray and machine oil aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 32.2,
+    "Hispanic/Latin American": 27.9,
+    "East Asian": 27.6,
+    "Northern European": 12.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "019d6143a6b27c0f8865089d6603a47f",
+  "type": "character",
+  "name": "Indigo Bustamante-Nygaard-Ingebrigtsen",
+  "aliases": [
+    "Crank",
+    "Cranky",
+    "Rod"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew member — Prologue survivor. Lost fingers, most teeth.",
+  "age": 33,
+  "status": "active",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Rodney Sisk is the angriest person in the Lower Dock Crew and possibly in the Shelf. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0,
+      "id": 0.3,
+      "shadow": 0.8,
+      "mask": 0.3,
+      "ghost": 0
+    },
+    "core_fears": [
+      "Keisha forgetting his face",
+      "Smiling in public",
+      "Being useless"
+    ],
+    "core_desires": [
+      "To hurt Kyle",
+      "To see Keisha",
+      "To feel like he matters to someone"
+    ],
+    "coping_mechanisms": [
+      "Anger — it's the only emotion that doesn't require teeth to express",
+      "The shell casing jar",
+      "Planning solo revenge that will fail"
+    ],
+    "blind_spots": [
+      "Solo action against Kyle is suicide and he doesn't care enough to stop",
+      "The shell casings are not rage — they're grief, and he can't tell the difference"
+    ],
+    "secret": "He writes letters to Keisha that he never sends. They are in a box under his bed next to the jar of shell casings. The letters are gentle, funny, and well-written. Nobody in the crew would believe he wrote them."
+  },
+  "speech_patterns": {
+    "vocabulary": "Angry. Profane. Missing sibilants from the dental work. The lisp undercuts every threat.",
+    "cadence": "Spits words. Literally — the ceramic causes saliva issues.",
+    "verbal_tics": [
+      "Covers mouth when talking",
+      "Whistles on S sounds",
+      "Gets louder when the lisp gets worse"
+    ],
+    "example_lines": [
+      "I'll find him. I'll *whistle* find him and I'll — THTOP LAUGHING.",
+      "Keitha thent me a mesthage. Thaid 'ok.' Jutht 'ok.' *pause* ...That'th enough."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Keisha Sisk",
+      "type": "daughter",
+      "description": "Nine years old. Milwaukee Zone. Single-word messages. Rodney's entire emotional landscape compressed into 'ok' and 'fine' and 'goodnight.'",
+      "emotional_core": "Love that has no delivery mechanism",
+      "story_tension": "If Rodney dies doing something stupid, Keisha's last message will have been 'ok.' Rodney knows this."
+    },
+    {
+      "name": "Trina",
+      "type": "ex",
+      "description": "Relocated to Milwaukee. Does not prevent Keisha's messages. Does not encourage them.",
+      "emotional_core": "Exhaustion",
+      "story_tension": "Trina left because Rodney was already angry. The crew made it worse. Kyle made it unbearable."
+    }
+  ],
+  "story_hooks": [
+    "The shell casing jar is grief disguised as obsession",
+    "The unsent letters are the real Rodney",
+    "Most likely to make a solo move — most likely to die doing it",
+    "The lisp undercuts every threat — dark comedy that eventually becomes tragic"
+  ],
+  "narrative_function": "The angry one. Crank is pure frustrated rage without the hardware or intelligence to do anything with it. His solo revenge attempts will be recurring failures that escalate in ambition and comedy. The shell casing collection is either creepy or sad depending on the light.",
+  "augmentations": "Three industrial salvage fingers (right hand). Tier 1 ceramic dental partial. Nothing else new.",
+  "daily_life": "Being angry. Planning revenge. Practicing threats in the mirror. Whistling involuntarily.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 3,
+      "vitality": 6,
+      "perception": 4
+    },
+    "mental": {
+      "cognition": 4,
+      "willpower": 6,
+      "creativity": 3,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 3,
+      "expression": 4,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 6,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 8,
+      "transparency_guardedness": 2
+    },
+    "drives": [
+      "Revenge",
+      "Fatherhood",
+      "Significance"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 3,
+        "response": "Erupts into loud sibilant rage that undercuts itself"
+      },
+      "moral": 4,
+      "trust": 3,
+      "desperation": 8
+    },
+    "strengths": [
+      "Bravery",
+      "Perseverance",
+      "Love",
+      "Honesty",
+      "Zest"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Forgiveness",
+      "Perspective",
+      "Judgment"
+    ],
+    "tags": [
+      "dock-crew",
+      "prologue-survivor",
+      "angry",
+      "father",
+      "revenge-obsessed"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "If it involves hurting Kyle, do it regardless of odds",
+      "Never smile in public — the teeth are a humiliation",
+      "Read every message from Keisha at least forty times",
+      "Plan solo revenge missions even when they are obviously suicidal",
+      "Cover mouth when speaking to hide the lisp",
+      "Keep the shell casing jar maintained and visible"
+    ],
+    "escalation_ladder": [
+      "Loud profane threats undermined by the lisp",
+      "Physical posturing and thrown objects",
+      "Solo action without informing the crew",
+      "Genuinely dangerous solo confrontation attempt"
+    ],
+    "interpersonal_modes": {
+      "keisha": "Desperate tenderness expressed only in unsent letters",
+      "trina": "Exhausted resentment masking self-blame",
+      "crew_members": "Angry solidarity; loudest voice in any room, least effective",
+      "kyle": "Obsessive hatred indistinguishable from grief",
+      "strangers": "Hostile defensiveness, especially about the teeth"
+    },
+    "stress_responses": {
+      "low": "Grumbling, pacing, practicing threats in the mirror",
+      "medium": "Loud outbursts with increased whistling on sibilants",
+      "high": "Retreats to the shell casing jar; stares at it for hours",
+      "critical": "Goes solo — walks toward Kyle with no plan and maximum anger"
+    },
+    "contradictions": [
+      "The shell casings are grief disguised as obsession and he cannot tell the difference",
+      "His unsent letters reveal a gentle articulate man the crew would never believe exists",
+      "Wants to be present for Keisha but keeps choosing actions that will get him killed"
+    ],
+    "habits": [
+      "Looks at the shell casing jar every night before sleeping",
+      "Writes letters to Keisha he never sends",
+      "Practices threats in the mirror, getting louder as the lisp worsens",
+      "Covers his mouth reflexively during conversation",
+      "Reads Keisha single-word messages dozens of times"
+    ],
+    "breaking_points": [
+      "Keisha stopping her messages entirely",
+      "Being laughed at for the lisp during a serious moment",
+      "Someone finding and reading his unsent letters",
+      "A genuine opportunity to face Kyle alone"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "The Shelf",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Lazarus IDP-1 'Teeth'",
+    "The Milwaukee Core",
+    "Chicago",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus KS-7 'Nursery'",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries CR-9 'Foundry'",
+    "Devraj Solano-Yildirim",
+    "Hearthstone DL-5 'Longshoreman'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Korrath",
+    "Kyle Ellen Corbin-Vasik",
+    "Pitchfork",
+    "Praevex",
+    "Saodat Mirzoyan-Fubara",
+    "The Mirror",
+    "The Pure Hand",
+    "Vantablack PD-8 'Whistle'",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed East Asian, Hispanic/Latin American, Southeast Asian, and North African ancestry — a genetic mosaic reflecting the Ubiquitous Diaspora. Features a blend of angular cheekbones and broader facial structure, with warm undertones across skin and eyes.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and thick through the chest, but lean in the arms and legs — the physique of dock labor, weathered and efficient rather than muscular. Carries tension in his shoulders.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Short, cropped close, practical. No fade or shape — just clipped to regulation length every few weeks at a Tier 4 barbershop.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with warm amber undertones, slightly bloodshot from poor sleep",
+    "skin_tone": "Warm medium brown with golden undertones — a complexion that reflects the blend of East and Southeast Asian warmth, Hispanic sun, and North African depth, weathered by years of humidity and industrial dust rather than sun exposure",
+    "complexion": "Gaunt cheekbones with slightly broader bridge of nose reflecting mixed ancestry, jaw clenched most of the time. A thin scar runs from his left temple to his jawline — old, faded, unrelated to the Prologue. His face is scarred with anger; he looks perpetually on the edge of saying something he'll regret.",
+    "distinguishing_marks": [
+      "Three fingers on right hand (index, middle, ring) are industrial salvage chrome and polymer — thick, blunt, painted matte gray, clearly not original. They move with a slight mechanical whine.",
+      "Upper left canine and bicuspid are mismatched Tier 1 ceramic — too white, slightly too large, creating a visible gap when he tightens his jaw.",
+      "Thin, pale scar running left temple to left jawline, approximately 12cm, pre-Prologue origin.",
+      "Burn mark on inside of right forearm, roughly 5cm diameter, circular — old accident with dock equipment, faded to pale pink."
+    ],
+    "visible_augmentations": "Right hand salvage fingers are immediately visible — industrial-grade, no attempt to disguise or blend with flesh. The dental partial is visible only when he grimaces or speaks with certain vowels. Scars visible on exposed skin. No other augmentations visible; any implants are subcutaneous and invisible.",
+    "posture_movement": "Hunched slightly forward, as if perpetually bracing for impact or leaning into work. His right hand (the salvage one) is held stiffly, claw-like, when at rest. He moves with purpose but without fluidity — economical, efficient, no wasted motion. His left hand fidgets constantly: rubbing his jaw, touching the jar in his pocket, balling into a fist. When standing still, he rocks slightly heel-to-toe, never truly at rest.",
+    "clothing_style": "Tier 4-5 dock worker uniform: reinforced canvas work pants with tool pockets, faded to a grimy gray. Steel-toed boots, scuffed and held together with epoxy and habit. A sleeveless compression vest (black, Tier 3 brand, worn under an oversized gray longshoreman's coat). The coat is missing one button. He wears no jewelry except a fraying cordage bracelet on his left wrist — a gift from Keisha, two years old, unwashed. His hands are perpetually stained with grease and rust. His clothes smell like diesel and desperation."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Indigo Bustamante-Nygaard-Ingebrigtsen, 178cm tall dock worker with warm medium-brown skin reflecting mixed East Asian, Southeast Asian, Hispanic, and North African ancestry. Dark brown eyes with amber warmth, dark hair graying at temples, cropped short. Gaunt cheekbones, perpetually clenched jaw, thin scar running left temple to jawline. Right hand features three industrial chrome salvage fingers (index, middle, ring), matte gray, mechanical. Mismatched white ceramic teeth visible in grimace. Wearing oversized gray longshoreman's coat over black compression vest, reinforced canvas work pants, scuffed steel-toed boots. Fraying cordage bracelet on left wrist. Posture hunched forward, shoulders tense, slight rocking motion. Industrial dock setting with neon-lit containeryard in background, diesel haze and sodium vapor lighting, weathered and exhausted expression. Hands stained with grease and rust. Mood: perpetually braced for impact, economical movement, never at rest. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 37.8,
+    "Hispanic/Latin American": 29.5,
+    "Southeast Asian": 18.7,
+    "North African": 14.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

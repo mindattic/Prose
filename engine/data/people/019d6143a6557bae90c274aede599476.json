@@ -1,0 +1,292 @@
+{
+  "id": "019d6143a6557bae90c274aede599476",
+  "type": "character",
+  "name": "Ember Ibarra-Mensah",
+  "aliases": [
+    "Salt",
+    "Marisol the Mouth"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Protection racket enforcer for a Shallowgrave neighborhood crew",
+  "age": 24,
+  "status": "active",
+  "location": "Shallowgrave — primarily the Copperhead commercial strip and its surrounding residential blocks, near Western and Division",
+  "description": "Marisol is not physically imposing in the way people expect an enforcer to be, which is the first thing she uses against them. She's medium height, wiry, with warm tan-brown skin and long dark hair she usually keeps in a practical braid. Her geneware is a tail — a prehensile, dark-furred tail she had put in at seventeen, not for any practical reason but because she'd always wanted one, and she uses it now to curl around chair legs or flick dismissively while she's talking. She has a vertical scar through her left eyebrow from a collection that went wrong at twenty-two, which she has declined to have repaired. She dresses in layers, practical and dark, and she is almost always in motion — bouncing a heel, turning a coin between her fingers, curling and uncurling the tail.\n\nMarisol is young and aware of it, which means she works harder to project certainty than someone with more experience would need to. She has a mouth that runs faster than her judgment and a genuine talent for reading fear — she knows when someone is about to do something stupid and has developed an instinct for the preemptive move. She is not cruel for its own sake, which she considers a professional virtue, but she is thorough, and the Copperhead merchants who pay the crew's fee understand the distinction. She has a complicated loyalty to her crew boss, Adjoa Temnykh-Vieira, an older woman she admires to the point of distortion.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.8,
+      "shadow": 0.3,
+      "mask": 0.7,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Being seen as weak — specifically by Adjoa",
+      "That she's better at this than she wants to be, and what that means about her"
+    ],
+    "core_desires": [
+      "Adjoa's approval, expressed directly, not implied",
+      "A version of herself that doesn't need the mask of certainty"
+    ],
+    "coping_mechanisms": [
+      "Movement — she cannot process difficult emotions while stationary",
+      "Humor, usually at her own expense before anyone else can aim it at her"
+    ],
+    "blind_spots": [
+      "Her admiration for Adjoa prevents her from seeing that Adjoa is using her specifically because she's young and disposable if something goes wrong",
+      "She reads fear well but reads affection poorly — assumes warmth from others has an angle"
+    ],
+    "secret": "She's been skimming a tiny fraction off collections — not for money, which she has enough of, but as a test. To see if Adjoa notices. To understand how much Adjoa actually pays attention to her specifically. She hasn't decided what she'll do with the answer yet."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, colloquial, Shallowgrave street register — Azerbaijani emphatic constructions folded into Meridian slang, Samoan terms for group/family relationships applied to crew dynamics. Uses humor as punctuation.",
+    "cadence": "Quick and overlapping, like she's always slightly ahead of what she's saying. Slows down only when the situation is actually serious.",
+    "verbal_tics": [
+      "'Okay but' to begin reframes",
+      "Clicks her tongue and flicks the tail when she's made a decision",
+      "'We're fine' as a phrase that means several different things depending on delivery"
+    ],
+    "example_lines": [
+      "'Okay but here's the thing — I'm not the one who decides what happens next. I'm the one who explains it. Those are very different jobs. You want to stay in the explaining stage, yeah?'",
+      "'We're fine. I mean, you're not fine, but that's separate. I'm fine. The crew is fine. This conversation can still end fine. See? Options.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The skimming experiment has produced a result she wasn't prepared for — Adjoa has noticed, and instead of confronting Marisol, has been watching. Marisol doesn't know she's been discovered, but the dynamic between them has shifted in ways she can feel without understanding",
+    "A new business has opened on Copperhead strip that is clearly a front for something larger — when Marisol went to make the standard introduction, whoever runs it wasn't scared of her in the ways people normally are, and she doesn't know what that means yet"
+  ],
+  "narrative_function": "Antagonist, ambiguous ally, or street-level encounter — she's the face of the neighborhood's protection economy; dealing with her is unavoidable for anyone operating on Copperhead strip.",
+  "augmentations": "Prehensile geneware tail (dark fur, fully functional, she can support about 15kg of body weight with it). Subdermal impact padding along forearms and shins — the cheap kind, not military grade, but it helps. No optical or cognitive mods.",
+  "daily_life": "Makes collection rounds on the Copperhead strip Tuesday, Thursday, Saturday. Other days are for handling problems — late payers, new businesses that haven't been approached yet, disputes between crew-adjacent parties that need a neutral-ish arbiter.",
+  "affiliation": "The Copperhead Crew — a mid-tier Shallowgrave protection and distribution operation run by Adjoa Temnykh-Vieira; Marisol is the primary street-level enforcement presence",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 8,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 6,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 7,
+      "expression": 8,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": 0,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Young and Hungry",
+      "Reads the Room",
+      "Crew Loyal",
+      "Fast Talker",
+      "Hiding Uncertainty"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Make the approach casual — let them choose escalation",
+      "Never threaten something the crew isn't prepared to follow through on",
+      "If she doesn't know what to do, keep moving and talking until she does"
+    ],
+    "escalation_ladder": [
+      "Friendly introduction and rate explanation",
+      "Second visit, less friendly, specific timeline",
+      "Physical demonstration, minimal but visible",
+      "Crew-level response — she steps back and lets the machinery move"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and slightly performative — she's always aware she's being read back",
+      "friends": "Genuinely funny and warm, more uncertain, lets the tail do things it doesn't do professionally (curls it around people she likes)"
+    },
+    "stress_responses": {
+      "low": "More jokes, faster movement",
+      "medium": "Jokes stop; she gets very focused and very still except for the tail, which increases activity",
+      "high": "Goes preemptive — acts before she's fully processed, trusts the instinct, processes afterward"
+    },
+    "contradictions": [
+      "Projects absolute certainty while running a constant internal negotiation about whether she's making the right call"
+    ],
+    "habits": [
+      "Flips a Φ5 coin between her fingers during most conversations — it's a tell she thinks she's hiding",
+      "Names every new block she gets assigned to — private names, never shared"
+    ],
+    "breaking_points": [
+      "Direct evidence that Adjoa knew she was expendable and chose her for that reason specifically — the admiration would not survive that cleanly"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "moderate wear",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Shallowgrave to an Azerbaijani-Samoan family; third of five children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began working for the Copperhead Crew at seventeen; geneware tail installed same year",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Scar incident — collection went wrong, she handled it, Adjoa promoted her to primary enforcement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Running the Copperhead strip, skimming test ongoing, watching herself become someone she's not sure she planned to be",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
+  ],
+  "related_entities": [
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Shallowgrave",
+    "Copperhead",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Flicker",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "Nesting Doll",
+    "Slagworks Industrial",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus MX-1 'Cerberus'",
+    "Arcturus PG-3 'Aegis'",
+    "Crucible Industries Cerberus-357 'Hellhound'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ferrogate Enforcer Cruiser",
+    "Idris Forsberg-Quaye",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "MERIDIAN",
+    "Mika Sorel",
+    "Patchwork Scooter",
+    "Patient Zero",
+    "Plot 17",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA TK-4 'Hellhound'",
+    "Tessera Nexus Town Car",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (40.8%), Hispanic/Latin American (40.2%), Pacific Islander (10.6%), East Asian (8.4%) – a striking blend producing warm brown skin with golden undertones, defined facial structure bridging African and Latin features with subtle East Asian eye geometry",
+    "height_cm": 167,
+    "weight_kg": 58,
+    "build": "Wiry and lean with corded muscle in shoulders and forearms from constant motion and street work; no excess fat, efficient frame built for speed and stamina rather than raw power",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Practical braided crown, usually a single thick braid down the back or wrapped around her head for work days; leaves face clear and unobstructed",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Dark brown, alert and constantly scanning",
+    "skin_tone": "Warm golden-brown with rich depth from Sub-Saharan and Pacific Islander ancestry, Latin warmth enhancing the overall bronze-amber cast",
+    "complexion": "Clear, unblemished aside from intentional scar; sharp cheekbones with slight width from Pacific Islander heritage, defined jawline with Latin prominence, expressive mouth that moves constantly when she speaks; no makeup, practical grooming; faint warmth in cheek and temple coloring",
+    "distinguishing_marks": [
+      "Vertical scar bisecting left eyebrow from brow to mid-forehead, deliberately kept unrepaired; pale, thin line about 4cm long indicating a clean blade or wire injury sustained at age twenty-two"
+    ],
+    "visible_augmentations": "Prehensile geneware tail approximately 70-80cm long with dark brown/black fur, emerges from base of spine at tailbone; tail is constantly in motion—curling, uncurling, coiling around chair legs or flicking dismissively. Subdermal impact padding visible as faint hardened ridges along both forearms and shins under skin, most noticeable when she flexes or when light hits at angles; slightly darker or lighter than surrounding skin depending on implant type.",
+    "posture_movement": "Never still—bouncing one heel while standing, fingers perpetually turning a coin or small object, tail in constant micro-movements. Walks with economical precision, shoulders loose, ready to move in any direction. Leans forward when listening, making eye contact that feels aggressive in its intensity. Sits like she might stand up at any moment.",
+    "clothing_style": "Layered, practical, dark colors (charcoal, black, deep gray). Typically: fitted black synth-leather jacket over a dark long-sleeve shirt, cargo pants with reinforced pockets, worn black boots with good traction. Tier 4 working-class gear—functional, durable, not flashy. Silver coin on a thin chain around neck. No corporate branding, no pretense. Clothes fit like she's already mentally discarded them."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Ember Ibarra-Mensah, 167cm lean street operative with warm golden-brown skin reflecting Sub-Saharan African, Hispanic, Pacific Islander, and East Asian heritage. Sharp cheekbones, defined jawline, dark alert eyes with intense focus. Vertical scar bisecting left eyebrow. Long black hair in thick practical braid down back. Dark synth-leather jacket over long-sleeve shirt, cargo pants, worn boots. Thin silver chain with coin at neck. Prehensile dark-furred tail approximately 75cm long coiling behind her, constantly in motion. Subdermal impact padding visible as hardened ridges on forearms and shins. Restless posture, heel bouncing, fingers turning a small object, body ready to move. Never still. Moody neon-lit alley setting, cool blue and amber industrial lighting, gritty urban cyberpunk environment. Close-up portrait, intense and focused, street-smart edge. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 40.8,
+    "Hispanic/Latin American": 40.2,
+    "Pacific Islander": 10.6,
+    "East Asian": 8.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

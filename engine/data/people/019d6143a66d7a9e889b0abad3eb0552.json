@@ -1,0 +1,296 @@
+{
+  "id": "019d6143a66d7a9e889b0abad3eb0552",
+  "type": "character",
+  "name": "Kit Árnason",
+  "aliases": [
+    "Pixel",
+    "the Print Lady"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Bootleg media seller, fake ID vendor",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf, Chatham Flats, near Halsted and Chicago Ave",
+  "description": "Nnenna is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at The Shelf is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nNnenna is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.7,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being locked out — losing access to the networks and tools that give her power in this economy",
+      "That the cheerful persona she performs will eventually hollow out the real person underneath"
+    ],
+    "core_desires": [
+      "To build an archive that survives corporate deletion — something permanent she leaves behind",
+      "Connection — real, chosen family — even though she treats relationships like transactions"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection",
+      "Hyper-productivity when anxious — filling time so there's no room for doubt"
+    ],
+    "blind_spots": [
+      "Genuinely underestimates how serious the ID fabrication charges would be if she were caught",
+      "Mistakes being liked for being known"
+    ],
+    "secret": "She has fabricated an identity for herself — a clean corporate Tier 3 profile under a different name — and has been slowly building financial assets under it for two years. She tells herself it's a contingency escape plan. She hasn't admitted to herself yet that she's also building an entirely different life she's considering stepping into, and she's terrified of what that means about who she is."
+  },
+  "speech_patterns": {
+    "vocabulary": "Fast, contemporary, media-saturated. Drops references to obscure pre-2150 films, blacklisted musicians, and archaic internet slang with equal fluency. Speaks Igbo phrases when flustered.",
+    "cadence": "Rapid-fire with sudden full stops when something hits serious. Hard to interrupt.",
+    "verbal_tics": [
+      "'Okay but listen—'",
+      "Whistles a single low note when she thinks something is going to be complicated",
+      "Uses 'officially' sarcastically"
+    ],
+    "example_lines": [
+      "'Okay but listen — this isn't just a film, this is the director's cut that Zheng-Dao had court-ordered deleted in 2194 and there are maybe forty copies left in the whole city. Forty. I'm practically a museum.'",
+      "'I don't ask what the ID is for. That's not my department. My department is making it so good that even the person checking it believes it.'",
+      "'Officially? I sell nostalgia media. Unofficially? I sell the parts of history someone decided you weren't allowed to have.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has acquired a data archive from a deceased vendor's estate that contains something she didn't expect — what appears to be a documentary record of a Palladian internal incident from 2191 that has been entirely scrubbed from the public record. She doesn't know if it's real or fabricated, and she's not sure which outcome is more dangerous.",
+    "One of her fake ID clients has been arrested — not for the ID itself, but for something else — and under interrogation has given up Nnenna's market location. She has maybe 72 hours before someone official comes to her stall.",
+    "A collective of educators in Chatham Flats wants to hire her to supply a blacklisted technical curriculum to their informal school. It's a cause she believes in. It's also higher-profile than anything she's done before, and the Arcturus content enforcement division has been active in the area."
+  ],
+  "narrative_function": "Access point for restricted information and fabricated documentation. Source for pre-blacklist media that may contain plot-relevant information. Can provide false identities for characters who need them. Represents the city's underground information culture.",
+  "augmentations": "Bioluminescent freckle geneware (self-administered, blue-green). Fiber-optic hair threading (cosmetic, color-changeable). Optical HUD implant — basic model used for document fabrication precision work.",
+  "daily_life": "Sets up mid-morning, operates until late evening, often until the market security shift changes. Eats standing up. Spends two or three hours each night sourcing new bootleg content through darknet channels and updating her fabrication templates.",
+  "affiliation": "Independent; loose network of other bootleg vendors across The Shelf and The Narrows; pays informal tribute to the Chatham Flats block protection cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 5,
+      "creativity": 9,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 9,
+      "integrity": 4
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "media pirate",
+      "forger",
+      "cultural preservationist",
+      "charismatic",
+      "double life"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Don't sell IDs to anyone who seems to be running from violence they caused — only from violence they're escaping",
+      "Always have two exit routes from the stall planned before opening",
+      "If something feels wrong about a transaction, kill it with a joke and a refund"
+    ],
+    "escalation_ladder": [
+      "Deflect with humor and redirect the conversation",
+      "Claim the item/service isn't available right now — come back later (buys time to assess)",
+      "Pack down the most sensitive merchandise and go walkabout through the market",
+      "Activate emergency stall lockdown protocol and contact the block protection cooperative"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Instantly warm, immediately sales-mode. Reads them fast and pitches to what she thinks they want. Genuine interest mixed with commercial intent.",
+      "friends": "Drops the performance enough to be occasionally honest. Still deflects with jokes when things get tender, but the jokes are gentler."
+    },
+    "stress_responses": {
+      "low": "Gets more talkative and referential — buries anxiety under chatter",
+      "medium": "Goes quiet for someone usually loud; works with headphones in, doesn't make eye contact",
+      "high": "Full logistical mode — calm, fast, practical. The humor disappears entirely. People who know her say this version is actually scarier."
+    },
+    "contradictions": [
+      "Sells fake identities while having strong convictions about authentic culture being inalienable",
+      "Craves permanence and roots while quietly building an escape identity she could vanish into tomorrow"
+    ],
+    "habits": [
+      "Changes her fiber-optic hair color every 3-4 days; claims no symbolic meaning to the colors but they track her emotional state accurately",
+      "Keeps a physical notebook of films she wants to find — crosses them off with real satisfaction when she sources them",
+      "Does a full inventory count of her sensitive stock every single night before sleep, no exceptions"
+    ],
+    "breaking_points": [
+      "Watching someone she sold an ID to get caught — the guilt of that would be destabilizing",
+      "The secret identity being discovered by someone who matters to her — forcing her to choose between her lives"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "People Pleaser": 0.9,
+    "Hustler": 0.7,
+    "Provider": 0.7,
+    "Generous Fool": 0.7,
+    "Pragmatist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Age 19 — left Grainfort after a Ringo content enforcement sweep destroyed her family's bootleg video library; relocated to Chatham Flats",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Acquired the Zheng-Dao deleted-film archive from a retiring vendor; became a known source for blacklisted media",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First fake ID commission; discovered it was a lucrative sideline she was naturally talented at",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began building her alternate identity profile — 'just in case'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Current: ID client arrest situation developing; archive acquisition creating new complications",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "Chatham Flats",
+    "The Shelf",
+    "Zheng-dao Bioelectric",
+    "Palladian Construction",
+    "Arcturus Defense Solutions",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "ARCHIVE",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Chicago",
+    "Cinderblock Ai",
+    "Eshe Pena-Baah",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Independent Darknet Node Architecture",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Réginald Asomaning-Čabarkapa",
+    "Slagworks Industrial",
+    "Sterling Voss",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Synaptrel",
+    "Tenderloin",
+    "The Bazaar",
+    "The Narrows",
+    "The Pure Hand",
+    "Veslemøy Achebe-Tursynov",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian (55.8%) with significant Southeast Asian (31.2%) and Sub-Saharan African (13.0%) ancestry. Features reflect the dominant East Asian genetic contribution with warm undertones from African heritage and Southeast Asian facial structure characteristics.",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Angular and compact, lean-muscled from constant movement and standing work. Minimal body fat, wiry rather than athletic — the build of someone who forgets to sit down.",
+    "hair_color": "Natural deep black with fiber-optic threading in rotating chromatic patterns",
+    "hair_style": "Complicated upknot with multiple interwoven sections, threads visible as glowing strands",
+    "hair_length": "Long (gathered up)",
+    "eye_color": "Dark brown, with basic optical HUD implant visible as faint crystalline overlay in low light",
+    "skin_tone": "Warm honey-bronze with subtle warm undertones from blended ancestry; even complexion across face and visible body areas",
+    "complexion": "Clear, youthful skin with bioluminescent freckle patterns across cheekbones and bridge of nose — pale blue-green geneware that pulses faintly in darkness. Facial structure shows East Asian influence with defined cheekbones and slight eye shape characteristics, combined with warmer undertones and subtle Southeast Asian nose structure. No visible scars or damage.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation across cheekbones and nose bridge, blue-green geneware, self-administered at age 19, pulses with low ambient light"
+    ],
+    "visible_augmentations": "Fiber-optic hair threading in color-cycling strands (changes every few days as mood indicator). Basic optical HUD implant visible as crystalline lens artifacts in right eye under direct light. No chrome or external prosthetics.",
+    "posture_movement": "Quick, economical movements. Stands when working, rarely sits. Moves with the restless energy of someone managing multiple transactions simultaneously. Hands are active, expressive — gestures during speech. Eyes track multiple sightlines at once, habitual market vendor awareness.",
+    "clothing_style": "Tier 4 functional fashion. Wide-legged utility trousers in matte gray or black synthetic with cargo pockets and reinforced seams. Tech vest with modular attachment points and snap-closures for rapid equipment changes — typically worn over a fitted long-sleeve base layer in neutral tones. Soft-soled boots rated for all-day standing (likely gray or black, minimal branding). Minimal jewelry except for functional pieces. No corpo-branded gear; everything is practical and pocketable. Overall aesthetic: speed, access, and plausible deniability."
+  },
+  "image_prompt": "Kit Árnason, 158cm petite East Asian-heritage character with warm honey-bronze skin, cyberpunk 2226, standing in market vendor alert pose with restless energy. Sharp facial features with bioluminescent blue-green freckles pulsing across cheekbones and nose bridge in low light. Dark brown eyes with subtle optical HUD implant crystalline artifacts. Long black hair in complicated upknot with glowing fiber-optic threading in rotating color patterns, threads visible. Wearing matte gray wide-legged utility trousers with cargo pockets, dark tech vest over fitted neutral long-sleeve base layer, soft-soled functional boots. Quick, economical posture, expressive hand gestures, tracking multiple sightlines. Minimal jewelry, no branding, everything practical. Great Lakes Metropolitan Zone market environment, neon-ambient lighting emphasizing the bioluminescent geneware, cyberpunk street vendor aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 55.8,
+    "Southeast Asian": 31.2,
+    "Sub-Saharan African": 13.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

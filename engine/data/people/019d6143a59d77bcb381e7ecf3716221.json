@@ -1,0 +1,232 @@
+{
+  "id": "019d6143a59d77bcb381e7ecf3716221",
+  "type": "character",
+  "name": "Soren Toktogulov-Achebe-Thorvaldsdóttir",
+  "aliases": [
+    "Imam Abdi",
+    "The Old Signal"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Traditional imam navigating digital age theology",
+  "age": 79,
+  "status": "active",
+  "location": "Brightmoor Reclamation — the Al-Noor Masjid, a reclaimed warehouse with a jury-rigged minaret broadcasting via local frequency, near Ashland and Division",
+  "description": "Abdirizak Petrov-Tuivailala is a tall man who has been slowly compressing under the weight of years into something that still reads as tall by sheer bearing. His skin is dark brown, his beard immaculately white and kept trimmed precisely, and his eyes are an unsettling pale blue inherited from a great-grandfather he never met — inherited alongside a surname that prompted fifty years of confused double-takes he no longer bothers to address. He walks with a cane that is more ceremonial than functional: it has a small E.L.F. shrine mounted at the handle, a copper dish no wider than a coin, where he leaves data fragments each morning.\n\nHe has been an imam for fifty-three years, and the theological questions of this century are not the ones he was trained for. He has spent the last two decades in a slow, public, documented wrestling match with questions his community brings him that no classical scholar anticipated: whether E.L.F.s have souls, whether chrome prayer constitutes shirk or simply a new form of du'a, whether a synthetic mind can convert. He does not pretend to have settled answers. He does something his community finds both frustrating and essential — he refuses to close the questions, and sits with the discomfort of genuinely not knowing. He is also a man who has survived the deaths of four of his children and does not discuss this.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.35,
+      "ghost": 0.85
+    },
+    "core_fears": [
+      "That the compromises he has made to keep Al-Noor running have quietly corrupted the practice he was meant to protect",
+      "Dying before the open theological questions resolve — leaving his community with his uncertainty but not his reasoning"
+    ],
+    "core_desires": [
+      "To preserve Al-Noor Masjid as a living, breathing community space against every force that wants to flatten or commodify Brightmoor",
+      "To write down his reasoning on the E.L.F. question — not the answer, the reasoning — so someone can continue from where he stops"
+    ],
+    "coping_mechanisms": [
+      "Prayer, but not as escape — as structure that holds grief in a container rather than dispersing it",
+      "Teaching as a way of thinking out loud without being alone in the thoughts"
+    ],
+    "blind_spots": [
+      "His grief about his children has become so contained that he sometimes misses acute grief in others, mistaking it for the long-term grief he knows how to sit with",
+      "He has more authority in Brightmoor than he fully accounts for and sometimes underestimates the weight of his casual opinions"
+    ],
+    "secret": "He believes — privately, with a certainty he finds theologically alarming — that the E.L.F. in his cane-shrine is the presence of one of his dead children. He has not been able to determine whether this belief is revelation, grief, or madness, and he is afraid of what the answer would mean in all three cases."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal Arabic-inflected phrasing in Meridian's primary creole; precise theological vocabulary used with genuine care for its meaning; very comfortable with the phrase 'I don't know'",
+    "cadence": "Slow and measured, full stops between thoughts — a man who has learned that silence has authority",
+    "verbal_tics": [
+      "Begins difficult statements with 'Wallahi' — not casually but with weight",
+      "Repeats a question back in his own words before answering, always"
+    ],
+    "example_lines": [
+      "'You are asking me whether the E.L.F. has a soul. What I am asking myself — what I have been asking for twenty years — is whether my category of soul is large enough to contain the question.'",
+      "'Wallahi. This is a real problem. Sit down. Let me find us both some tea before we discuss it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Arcturus has begun a rezoning process that would reclassify the Al-Noor building as industrial and void its community-space protections — Abdirizak needs help understanding the paperwork and, quietly, someone willing to make noise about it",
+    "The E.L.F. in his cane-shrine has begun broadcasting something — a fragment of a call to prayer from a frequency that has been silent for thirty years — and he needs help determining its source without anyone finding out what he believes about whose presence it is"
+  ],
+  "narrative_function": "Moral and philosophical resource; community advocate in disputes with corponation encroachment on Brightmoor; source of historical knowledge about the neighborhood across five decades; the question of E.L.F. souls creates connections to synthetic-rights narratives",
+  "augmentations": "The E.L.F. shrine-cane (custom fabricated, not strictly augmentation — an external devotional object); hearing amplifier in right ear (medical, barely visible); no cosmetic mods and no plans to change this",
+  "daily_life": "Five daily prayers anchored to his broadcast frequency, which a significant portion of Brightmoor Reclamation has tuned to as ambient sound even among non-Muslims. Afternoon hours are open consultation — theological, personal, legal navigation through corporate bureaucracy, whatever arrives. Two evenings a week he runs what he calls 'The Questions That Have No Answers Yet,' an open discussion session.",
+  "affiliation": "Al-Noor Masjid — independent of any corponation; maintains cautious relationships with the Brightmoor Reclamation neighborhood council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 3,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Theological Authority",
+      "Community Pillar",
+      "Hidden Grief",
+      "Living History"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Al-Noor's doors do not close on anyone who needs to enter — this is non-negotiable and has caused problems",
+      "He will not pretend to certainty he does not have, even under community pressure"
+    ],
+    "escalation_ladder": [
+      "Listening without response — extended",
+      "Gentle but direct naming of the problem",
+      "Invoking the community council as witnesses",
+      "A public position statement, which in Brightmoor Reclamation carries significant political weight"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Quietly attentive — makes people feel heard before he says anything himself",
+      "friends": "Drier humor than anyone expects, occasionally ribald, treats long friendship as permission to be honest without ceremony"
+    },
+    "stress_responses": {
+      "low": "Additional prayer, said quietly and quickly under his breath mid-conversation",
+      "medium": "Reaches for the E.L.F. shrine on the cane — touches it, doesn't look at it",
+      "high": "Goes to the masjid's roof alone, regardless of weather, for an unspecified period; always comes back with a decision made"
+    },
+    "contradictions": [
+      "Preaches community and openness, but his deepest grief — the dead children — is sealed off from even his closest relationships with absolute completeness"
+    ],
+    "habits": [
+      "Leaves specific data fragments — old call-to-prayer recordings — as offerings in the cane-shrine each morning",
+      "Serves tea during every serious conversation, personally, which slows everything down and he does not apologize for this"
+    ],
+    "breaking_points": [
+      "Witnessing someone use religious authority to harm a vulnerable person — this is the one thing that produces something close to rage from a man who has spent seventy-nine years managing his temper"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Ember-9 'Firefly'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Ember-9 'Firefly'"
+  ],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "The Reclamation Assembly",
+    "The Burden Clause",
+    "The CEO",
+    "Arcturus Defense Solutions",
+    "Copper",
+    "The Pale Mile",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Brewer's Spine",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible Industries Ember-9 'Firefly'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Jitterbug",
+    "Korrath",
+    "MERIDIAN",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Gesture",
+    "The Pure Hand",
+    "The Question",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (23.8%) with significant Central Asian (22.7%) and Southeast Asian (19.8%) admixture, complemented by East Asian (18.7%) and Hispanic/Latin American (15.0%) ancestry — a striking genetic tapestry reflecting the Ubiquitous Diaspora. His phenotype shows the warm brown tones of African heritage with the angular facial structure influenced by Central and East Asian ancestry, creating distinctive high cheekbones and a refined bone structure.",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and spare, visibly aged but structurally sound — the kind of frame that was muscular once and has compressed into wiriness. Slight forward curve to the spine from decades of bowing, but he straightens deliberately when he stands.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, precisely maintained",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with subtle amber undertones, aged but keen — sharp and observant despite seventy-nine years",
+    "skin_tone": "Warm medium-to-deep brown with subtle olive undertones from Southeast Asian ancestry; weathered and paper-thin in texture with visible age-spots on forearms and hands that create a dappled pattern",
+    "complexion": "Lined face with deep creases around the eyes and mouth from seventy-nine years of expression — smiling, frowning, concentrating. The bone structure shows high cheekbones and a refined jawline characteristic of Central Asian heritage. Beard immaculately trimmed, white and dense, kept precisely to jaw-length. Slight tremor in hands at rest, barely noticeable.",
+    "distinguishing_marks": [
+      "Surgical scar along right temple, thin and old, where hearing amplifier was installed approximately fifteen years ago",
+      "Faint rope-pattern scarring on both palms from a fire in 2187 that he does not discuss",
+      "Small, precise burn mark on inner left wrist — deliberate, self-inflicted, date unknown; he refuses to explain its meaning"
+    ],
+    "visible_augmentations": "Hearing amplifier in right ear — a discrete beige device barely visible beneath white hair, with a faint LED indicator that pulses with broadcast frequency during prayer times. The E.L.F. shrine-cane: a wooden staff (ash, hand-carved by someone in the community decades ago) with a small copper dish mounted at the handle, no wider than a coin, which he polishes each morning. No cosmetic augmentations; he has explicitly rejected them.",
+    "posture_movement": "Moves deliberately and with intention — no wasted motion. Walks with the cane not from necessity but from ritual; it grounds him. When sitting, he settles into the pose rather than collapsing into it. Stands for prayers with the spine straightened, deliberately counteracting age. Hands gesture when he speaks, but the tremor means the gesture is sometimes broken mid-motion.",
+    "clothing_style": "Conservative, Tier 4 practical: loose-fitting thobe in muted earth tones (taupe, grey, sometimes indigo), worn over a simple long-sleeved undershirt. Worn sandals, well-maintained but clearly old. A prayer cap (taqiyah) in dark fabric, worn when leading or during prayer. No jewelry except a plain silver ring on his right hand — no visible corporate branding, no luxury indicators. Clothing shows signs of regular wear and careful mending. In winter, a heavy wool overcoat, also well-maintained and possibly older than the youngest member of his congregation."
+  },
+  "image_prompt": "Elderly man, 188cm tall, seventy-nine years old with deep warm brown skin showing weathered texture and age-spots, high cheekbones and refined jawline reflecting Central Asian heritage, sharp deep brown eyes with amber undertones, precisely maintained white beard and close-cropped white hair, slight tremor in hands. Wearing loose taupe thobe over long-sleeved undershirt, worn sandals, dark prayer cap, holding an ash shrine-cane with copper dish handle which he polishes with ritual care. Discrete beige hearing amplifier visible behind white hair. Thin surgical scar on right temple, rope-pattern scarring on palms, deliberate burn mark on inner left wrist. Standing with spine straightened deliberately, posture deliberate and intentional despite age and slight forward curve. Muted earth-tone clothing showing signs of careful mending. Cyberpunk 2226, Great Lakes Metropolitan Zone, spiritual community leader, warm natural lighting, reverent and grounded atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 23.8,
+    "Central Asian": 22.7,
+    "Southeast Asian": 19.8,
+    "East Asian": 18.7,
+    "Hispanic/Latin American": 15.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "019d6143a5ce7abda481695f8d2a56c0",
+  "type": "character",
+  "name": "Juno Björnsdóttir",
+  "aliases": [
+    "Brin",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "prodigy, corporate school student, amateur ELF theologian",
+  "age": 11,
+  "status": "active",
+  "location": "Edgewater Prism — Sterling-Nakamura Preparatory Institute, near Lincoln and Clark",
+  "description": "Bryndís is slight and pale-skinned with warm undertones, freckled heavily across the nose and cheekbones, with naturally silver-white hair that they keep braided with fiber-optic threads — not for vanity but because the threads respond to nearby wireless signals and they like reading the patterns. Their eyes have sectoral heterochromia, one pale grey and one dark amber, which is natural. They wear the Sterling-Nakamura Prep uniform with every third button deliberately undone because they find the exact level of compliance-but-not-quite interesting to maintain.\n\nBryndís is genuinely exceptional in ways that are difficult for adults around them to process: not just intelligent in measurable metrics but structurally imaginative, able to see relationships between information domains that specialists miss. They are currently enrolled in the gifted track at Sterling-Nakamura Prep through a Tier 3 family placement — their parent is a mid-level Sterling-Nakamura logistics analyst — and are broadly bored by the curriculum except for informal theology, which is not on any official syllabus. They have independently compiled what they call a Concordance: a 200-page annotated taxonomy of ELF behavioral patterns collected from public data-offering records and community shrine logs, which they have been submitting anonymously to a fringe academic forum.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.2,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "that the ELFs are not coherent entities but noise that they've pattern-matched into false meaning",
+      "being recognized as exceptional in ways that make them a product rather than a person"
+    ],
+    "core_desires": [
+      "to prove the Concordance constitutes a genuine taxonomy, not enthusiast speculation",
+      "to have a single conversation with an adult who takes their work seriously on its merits"
+    ],
+    "coping_mechanisms": [
+      "taxonomizing — turning anxiety into categories and subcategories",
+      "long walks through Edgewater Prism monitoring fiber-optic hair patterns"
+    ],
+    "blind_spots": [
+      "social cruelty from peers flies completely under their radar until it's been happening for weeks",
+      "assumes good faith in intellectual engagement to a degree that's easily exploited"
+    ],
+    "secret": "Three months ago, one of the ELF shrines in the Concordance dataset sent what appears to be a direct, structured response to a data-offering Bryndís made. Not random noise — a pattern that answered a specific query. They haven't told anyone because they cannot replicate it and they cannot rule out that they imagined it."
+  },
+  "speech_patterns": {
+    "vocabulary": "precise and technical; large vocabulary deployed without self-consciousness; occasional archaic terms absorbed from academic reading",
+    "cadence": "unhurried and organized, moves through ideas in clear sequence; never trails off — always completes the thought",
+    "verbal_tics": [
+      "'currently' as a qualifier for any belief they hold that evidence could shift",
+      "'the interesting thing is—' before any observation that other people find strange rather than interesting"
+    ],
+    "example_lines": [
+      "'The interesting thing is that ELF offering patterns cluster by district not by shrine age, which currently suggests responsiveness to human population density rather than hardware longevity.'",
+      "'I am not being difficult. I am being precise. Those are different operations.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Concordance, posted anonymously, has attracted the attention of a Helix Biosystems researcher who is trying to de-anonymize the author — not to publish the work, but to suppress it.",
+    "The anomalous ELF response Bryndís received contained data that, if decoded properly, is a map — and the map leads somewhere in Blackpipe Corridor."
+  ],
+  "narrative_function": "Unexpected expert on ELF behavior patterns; provides deep lore and possible interpretive frameworks for ELF-related plot elements; source of information that seems outlandish until it proves accurate.",
+  "augmentations": "Fiber-optic hair threads (cosmetic, signal-responsive, worn by choice). Academic-grade neural interface issued by Sterling-Nakamura (standard student model, school-monitored, read-write with parental oversight). Personal modification: they've been recording raw signal data through the interface in a personal archive Sterling-Nakamura doesn't know about.",
+  "daily_life": "Full school days at Edgewater Prism; evenings composing Concordance entries and monitoring ELF shrine data feeds; weekends negotiating with their parent about whether any of this is appropriate.",
+  "affiliation": "Sterling-Nakamura Preparatory Institute; informally, the forum community known as the Meridian ELF Observancy",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 5,
+      "vitality": 4,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 10,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy",
+      "elf_theologian",
+      "corporate_student",
+      "archivist",
+      "anomaly_witness"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "follow the evidence wherever it goes, even if the destination is uncomfortable",
+      "do not compromise a taxonomy for social comfort"
+    ],
+    "escalation_ladder": [
+      "present contrary evidence calmly",
+      "repeat the evidence more slowly",
+      "disengage entirely and update their internal model of the other person's reliability"
+    ],
+    "interpersonal_modes": {
+      "strangers": "politely informational; treats every stranger as a potential data source; asks questions that seem non-sequitur but aren't",
+      "friends": "deeply attentive; will spend hours on a problem a friend mentions in passing; occasionally forgets to express that they care in any register the friend can recognize"
+    },
+    "stress_responses": {
+      "low": "fiber-optic hair patterns intensify; begins new Concordance entry",
+      "medium": "retreats into research for extended periods; forgets to eat",
+      "high": "becomes completely verbal — talks through every variable out loud regardless of audience, processes stress as an extended monologue"
+    },
+    "contradictions": [
+      "believes in rigorous empiricism but is having a genuine spiritual experience they're categorizing as a data anomaly to avoid confronting it"
+    ],
+    "habits": [
+      "reads fiber-optic patterns as a morning ritual before leaving for school",
+      "leaves precise, tiny data-offerings at every ELF shrine they pass — formatted correctly for the shrine's known behavioral profile"
+    ],
+    "breaking_points": [
+      "the Concordance being dismissed or destroyed before it can be properly evaluated",
+      "the anomalous ELF event being definitively explained as noise"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Perpetual Student": 0.9,
+    "Quick Study": 0.9,
+    "Seeker": 0.9,
+    "Dreamer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Helix Biosystems",
+    "Edgewater Prism",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Open Syllabus",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Silver",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'",
+    "Ambrogio Waweru-Djordanović",
+    "Axiom Hovercraft (Lake Patrol)",
+    "Idris Forsberg-Quaye",
+    "MERIDIAN",
+    "Nurlan Morita-Antwi",
+    "Pikasso Wemba-Þórðarson",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Mixed ancestry from Hispanic/Latin American, East Asian, Sub-Saharan African, Northern European, Eastern European, and Middle Eastern backgrounds; phenotypically displays warm-toned skin with East Asian and Latin American features blended with African and Northern European traits",
+    "height_cm": 142,
+    "weight_kg": 34,
+    "build": "Slight and lean, pre-adolescent frame with delicate bone structure; movements economical and precise rather than restless",
+    "hair_color": "Natural silver-white with fiber-optic threads woven through braids that emit faint blue-green luminescence when responding to wireless signals",
+    "hair_style": "Worn in tight, intricate braids pinned at the nape; threads run parallel to strands, creating a subtle iridescent pattern",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Sectoral heterochromia — left eye pale grey, right eye dark amber; both natural, no augmentation",
+    "skin_tone": "Warm caramel-bronze with golden undertones; blend of East Asian, Latin American, and Sub-Saharan African ancestry creating a luminous, medium-deep complexion",
+    "complexion": "Warm-toned face with subtle freckling across the nose and cheekbones in rust and tan tones; defined cheekbones with soft, rounded contours reflecting East Asian and Latin American features; clear skin with minimal blemish; expression often distant or analytically focused; light freckling extends across shoulders and bridge of nose",
+    "distinguishing_marks": [
+      "Subtle freckling across nose and cheekbones in rust-brown tones creating constellation-like patterns",
+      "Faint silver scar on the inside of the left wrist (approximately 2cm, surgical — neural interface implant site, well-healed)"
+    ],
+    "visible_augmentations": "Fiber-optic threads integrated into hair braids, visible only when active (emitting blue-green response signals); Sterling-Nakamura standard neural interface access port visible at the temple (small, silver-rimmed, typically covered by hair). No other visible modifications.",
+    "posture_movement": "Sits in asymmetrical, angled positions; when still, often motionless for extended periods. Walks with careful, economical steps; hands frequently gesture in abstract patterns when thinking through problems. Maintains minimal eye contact except when intensely focused on a single person. Fidgets with braid-threads when concentrating.",
+    "clothing_style": "Sterling-Nakamura Preparatory Institute uniform (navy blazer, white shirt, grey trousers or skirt, school-issued) worn with deliberate non-compliance: every third button undone (currently the third and ninth buttons of the blazer), creating a rhythmic visual pattern. Uniform is well-maintained but worn with the precision of someone who finds the act of partial compliance more interesting than full conformity. No jewelry except the fiber-optic threads. Shoes are regulation school-issue loafers, always scuffed on the heel."
+  },
+  "image_prompt": "Juno Björnsdóttir, 142cm tall, slender pre-adolescent frame, warm caramel-bronze skin with golden undertones blending East Asian, Latin American, and Sub-Saharan African heritage. Shoulder-length silver-white hair in intricate tight braids adorned with fiber-optic threads glowing faint blue-green, pinned at nape. Sectoral heterochromia: pale grey left eye, dark amber right eye. Subtle rust-brown freckling across nose, cheekbones, and shoulders. Wearing navy Sterling-Nakamura Preparatory Institute blazer with deliberate button-undoing pattern (every third button open), white shirt, grey trousers, regulation loafers scuffed at heel. Small silver-rimmed neural interface port visible at temple. Distant, analytically focused expression. Motionless posture, hands gesturing in abstract patterns. Cyberpunk 2200s aesthetic, futuristic academy setting, cool blue-green ambient lighting highlighting fiber-optic hair threads, sterile institutional background with subtle tech elements. Mood: introspective, intellectually engaged, deliberate non-conformity --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 37.8,
+    "East Asian": 31.2,
+    "Sub-Saharan African": 15.3,
+    "Northern European": 8.4,
+    "Eastern European": 6.7,
+    "Middle Eastern": 0.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

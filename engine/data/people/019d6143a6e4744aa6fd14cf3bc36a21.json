@@ -1,0 +1,255 @@
+{
+  "id": "019d6143a6e4744aa6fd14cf3bc36a21",
+  "type": "character",
+  "name": "Amara Ekwensi",
+  "aliases": [
+    "Sandy",
+    "Checkpoint Sandy"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Axiom Security Division corporate campus guard, Grand Corridor Axiom tower",
+  "age": 22,
+  "status": "active",
+  "location": "Grand Corridor, Axiom Regional Security Post 7, near Milwaukee and North Ave",
+  "description": "Søndra is twenty-two and looks it — wide-eyed in a way she is actively trying to train out of herself, with warm brown skin, a small spray of geneware freckles across her nose and cheeks that pulse faintly orange under stress (she did not know they would do that when she bought the mod and finds it professionally embarrassing), and her dark hair pulled back in the mandatory Axiom security bun. She is 168cm in boots she is still breaking in. Her uniform fits well because she had it tailored with three months of saved UBC supplement — she wanted at least one thing to look like she belonged.\n\nShe is nine months into her first real job and has not yet decided who she wants to be inside it. She follows the rulebook with the anxious precision of someone who has read it twice and is afraid of what happens if she gets something wrong. She is genuinely friendly to the researchers and admin staff who pass her post, has learned most of their names, and does small considerate things like remembering who takes the late elevator and propping the side door for the cleaning crew. She has not yet been asked to do anything she found troubling. She is waiting, in the back of her head, for that to change.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.65,
+      "id": 0.6,
+      "shadow": 0.2,
+      "mask": 0.7,
+      "ghost": 0.15
+    },
+    "core_fears": [
+      "making a mistake that costs someone else",
+      "discovering that the job requires something she cannot do and losing it anyway"
+    ],
+    "core_desires": [
+      "to be genuinely good at something and recognized for it",
+      "to eventually afford the augments that will make her competitive for promotion"
+    ],
+    "coping_mechanisms": [
+      "rigid adherence to procedure as a substitute for confidence",
+      "small acts of helpfulness to feel like herself within the uniform"
+    ],
+    "blind_spots": [
+      "does not yet see how the institution will shape her values over time if she lets it",
+      "trusts that rule-following and ethics are the same thing"
+    ],
+    "secret": "Last month she let a researcher's spouse through without the proper visitor log because they were crying and said it was an emergency — she later learned the researcher was under an internal investigation for data theft and the visit may have been a warning. She has said nothing because she doesn't know what to do and is terrified she'll be fired."
+  },
+  "speech_patterns": {
+    "vocabulary": "Careful, slightly formal — she is trying to sound professional and occasionally overshoots into stiffness",
+    "cadence": "Even pace that stumbles slightly when she is uncertain",
+    "verbal_tics": [
+      "'Um — sorry, let me —' when flustered",
+      "Uses people's names a lot, she thinks it's friendlier",
+      "Apologizes pre-emptively for inconveniences she didn't cause"
+    ],
+    "example_lines": [
+      "'Good morning, Dr. Adesanya-Falk. Badge and thumb, please. Sorry — I know you do this every day.'",
+      "'I — the policy on that is, um. Let me check the manual. I want to give you the right answer.'",
+      "'The lobby E.L.F. has been flickering. I've been leaving it news packets. I figure it wants to know what's happening out here.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She quietly tells a character she saw something on the lobby feeds she wasn't sure what to do with — a face she didn't recognize using a valid senior badge",
+    "She needs someone to advise her on the visitor log incident before her quarterly review — she is terrified and doesn't know who to trust",
+    "She is the easiest legitimate access point to the Axiom tower but she is also not as naive as she looks — she notices things"
+  ],
+  "narrative_function": "Accessible entry point into Axiom corporate space, sympathetic institutional character, represents the human face of corporate enforcement before it hardens",
+  "augmentations": "Geneware freckle pigmentation (stress-reactive, unintended — cosmetic mod gone slightly sideways), standard Axiom-issue comm bead (right ear), no other augmentations — cannot afford more yet",
+  "daily_life": "Works the 0600-1400 shift at Grand Corridor Post 7, ID-checks everyone entering the Axiom regional office tower, monitors the lobby camera feeds on a secondary screen, and eats a packed lunch at her post because the Axiom canteen requires a Tier 3 access badge she doesn't have.",
+  "affiliation": "Axiom Security Division (contracted Tier 2 guard)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 6
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -2,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "earnest",
+      "nascent",
+      "rule-follower",
+      "compassionate",
+      "watched"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the manual unless following it would clearly hurt someone",
+      "Be kind within the bounds of procedure",
+      "When uncertain, stall and look it up rather than improvise"
+    ],
+    "escalation_ladder": [
+      "Polite redirection and ID request",
+      "Firm denial and explanation of policy",
+      "Call supervisor",
+      "Seal the post and await instruction"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm — makes small talk, uses names, tries to be the pleasant face of a corporation she knows is not pleasant",
+      "friends": "Open and genuinely affectionate, shares things she probably shouldn't"
+    },
+    "stress_responses": {
+      "low": "Talks slightly too fast and her freckles pulse — she is aware of the freckles and it makes it worse",
+      "medium": "Retreats into procedure, speaks in policy language",
+      "high": "Freezes briefly then overcorrects into action, usually by calling someone more senior"
+    },
+    "contradictions": [
+      "Believes in following rules absolutely but has already broken one rule out of compassion and knows she'd probably do it again"
+    ],
+    "habits": [
+      "Arranges her post neatly at the start of every shift",
+      "Memorizes the names and faces of regulars",
+      "Leaves small text-string offerings for the lobby E.L.F. during quiet moments"
+    ],
+    "breaking_points": [
+      "Being ordered to deny entry to someone who is clearly in danger"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Axiom-issue comm bead (right ear) — standard security channel, monitored",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Axiom-issue comm bead (right ear) — standard security channel, monitored",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware reactive freckle pigmentation — stress-chromatic, cannot be deactivated",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware reactive freckle pigmentation — stress-chromatic, cannot be deactivated",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "Grand Corridor",
+    "The Spire",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Arcturus CK-5 'Bloodhound'",
+    "Elena Vasquez-9",
+    "The Milwaukee Core",
+    "Ambassador Silk",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sentinel-Guard-88",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Sulfur Crown Agriculture",
+    "The Human Baseline Alliance",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed Sub-Saharan African, South Asian, Eastern European, Pacific Islander, and Northern European ancestry—a striking blend reflected in her warm brown skin with golden undertones, the subtle interplay of features that speak to unexpected global combinations typical of the Ubiquitous Diaspora.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and athletic with functional muscle definition from recent gym discipline; posture still settling into confidence. Not quite filling out her frame yet — the appearance of someone still growing into adulthood.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back in a tight regulation bun, pulled so firmly it creates a slight lift at the crown",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Warm brown",
+    "skin_tone": "Medium-warm brown with golden undertones, enhanced by the complex genetic blend—deeper warmth from Sub-Saharan ancestry balanced with the subtle luminosity of South Asian heritage and cool undertones from Eastern European genetics.",
+    "complexion": "Clear skin with a distinctive scatter of geneware freckles across the bridge of nose and upper cheeks in warm orange pigmentation that intensifies visibly under stress or elevated cortisol. Freckles are still slightly raised, a tell that the modification is recent (within the past 18 months). Facial structure reflects her mixed ancestry—defined cheekbones with warmth, gentle jawline, minimal expression lines. Grooming fastidious and precise.",
+    "distinguishing_marks": [
+      "Geneware freckles across nose and cheeks in warm orange tone, stress-reactive and faintly luminescent under tension",
+      "Small vaccination scar on left deltoid, pale and unremarkable",
+      "Thin white line along left inner forearm (approximately 3cm), origin unknown, concealed under uniform sleeves"
+    ],
+    "visible_augmentations": "Standard Axiom Security Division comm bead embedded in right ear (black polymer housing, subtle LED indicator). No other visible cybernetics or mods. Appears baseline human at first glance.",
+    "posture_movement": "Stands with deliberate military-trained posture — shoulders back, spine straight, weight evenly distributed — but the rigidity suggests conscious effort rather than habit. Moves with careful precision, steps measured. When not performing her role, a slight tendency to slouch creeps back in. Direct eye contact maintained almost obsessively, as if she learned that looking away reads as suspicious.",
+    "clothing_style": "Axiom Security Division regulation uniform: charcoal grey tactical bodysuit with reinforced polymer panels at shoulders and forearms, black duty belt with holstered nonlethal deterrent (compliance taser), black steel-toed boots (still visibly new, creasing at the ankles). Uniform tailored professionally — fit is precise across shoulders and torso, indicating she invested personal funds for alterations. Hair kept to regulation length and styling. Accessories limited to: Axiom ID badge (clipped to left chest pocket), wristwatch (cheap digital, civilian-grade), no jewelry."
+  },
+  "image_prompt": "Amara Ekwensi, 168cm tall lean athletic security officer in cyberpunk 2226, medium-warm brown skin with golden undertones reflecting mixed Sub-Saharan African, South Asian, and Eastern European heritage, warm brown eyes, dark brown hair in tight regulation bun. Stress-reactive geneware freckles glowing faintly orange across nose and cheeks. Axiom Security Division charcoal grey tactical bodysuit with reinforced polymer shoulder and forearm panels, black duty belt with compliance taser, black steel-toed boots. Comm bead in right ear with subtle LED. Military posture—shoulders back, spine straight, deliberate precision in stance. Direct, almost obsessive eye contact. Fastidious grooming. Youthful features still growing into adulthood. Professional tailored fit uniform. Moody cyberpunk precinct or checkpoint setting, cool neon lighting casting slight shadows, emphasizing the geneware freckles' luminescence under tension. Cinematic, gritty, professional security portrait aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 32.0,
+    "South Asian": 29.1,
+    "Eastern European": 23.9,
+    "Pacific Islander": 7.7,
+    "Northern European": 7.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "id": "019d6143a6d27f25932ab26af18e83e9",
+  "type": "character",
+  "name": "Delta Traoré-Popescu",
+  "aliases": [
+    "Soli",
+    "Councilwoman"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Neighborhood council chair and policy advocate for the Highland Park Autonomous Zone",
+  "age": 58,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, Council Hall (a reclaimed gymnasium above a hydroponic market), near Michigan Ave and Walton",
+  "description": "Solange is a tall, stately woman with warm brown skin, deep-set eyes framed by pronounced crow's feet she treats as credentials, and silver-white locs piled into an architectural structure secured with copper wire and small enamel political pins from campaigns spanning forty years. She moves through Highland Park with the unhurried authority of someone who owns nothing but is trusted with everything. Her geneware is subtle: a faint cat-ear modification — velvet-tipped, tawny — that she got as a young woman and has never seen reason to remove; they swivel slightly when she's listening hard, which unsettles people who don't know to expect it.\n\nSolange has outlasted six Axiom zone managers, three rounds of 'redevelopment consultations,' two assassination attempts she refuses to characterize as such on the record, and one recall election she won by thirty-one votes. She does not call herself a radical. She calls herself a constitutionalist — meaning she holds the HPAZ's founding community charter as sacred and will use every procedural mechanism available to defend it. This makes her less exciting than firebrands and more dangerous than anyone gives her credit for.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.7,
+      "mask": 0.6,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Highland Park being absorbed into a corponation zone in her lifetime — losing the thing she spent her life building",
+      "becoming the institution she fought against, too comfortable and too accommodating"
+    ],
+    "core_desires": [
+      "genuine self-determination for HPAZ — not autonomy on a corponation's sufferance, but real legal sovereignty",
+      "to step down voluntarily, on her own terms, when she has someone worthy to hand the charter to"
+    ],
+    "coping_mechanisms": [
+      "procedural focus — when overwhelmed, she returns to the rules, the charter, the process",
+      "gardening in the council hall's small rooftop plot; refuses to rush it"
+    ],
+    "blind_spots": [
+      "believes deeply in process in ways that can make her slow to act when speed is what's needed",
+      "has a blind spot for younger organizers who remind her of herself — prone to over-investing"
+    ],
+    "secret": "In 2193, during a critical funding crisis, she accepted a conditional grant from a Palladian subsidiary to keep the HPAZ health clinic open. The conditions included a non-disclosure clause and a right-of-first-refusal on a small parcel of zone land. She has never told the council. The clause is still active and Palladian has not yet invoked it — but she knows they haven't forgotten."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal and measured; parliamentary language mixed with warm community idiom; occasional Fijian phrases inherited from her paternal grandmother; never curses in public",
+    "cadence": "Unhurried, rhythmic — she was a public speaker before she was a politician and it shows; knows how to fill silence without rushing it",
+    "verbal_tics": [
+      "'Let me be precise about this'",
+      "'The charter says — '",
+      "a slight pause and cat-ear swivel when she's genuinely surprised by something"
+    ],
+    "example_lines": [
+      "'I've been called a moderate so many times I've started to think it means something different than they intend. I have not moderated my goals. I have moderated my impatience.'",
+      "'You want to burn it down. I understand that. But someone has to be standing here when the smoke clears, ready to build something that holds.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Palladian has quietly activated the clause in their 2193 agreement and is preparing to claim the parcel — which now sits directly beneath a beloved clinic. Solange needs help untangling this without her past compromise becoming public.",
+    "A faction within the council is pushing to recall her, backed by outside money she suspects comes from a corponation using local proxies; she needs someone to trace it without triggering a public crisis."
+  ],
+  "narrative_function": "Local authority figure and quest giver; her procedural knowledge makes her invaluable for navigating zone politics; she can open or close doors depending on whether players have earned her trust; represents the slow, grinding work of institutional resistance.",
+  "augmentations": "Cosmetic cat-ear geneware (tawny, velvet-tipped, functional swivel); basic cardiac monitor implant (medical necessity, post-stress episode 2196); reading-assist optical overlay for document review — standard elder-care tier",
+  "daily_life": "Holds open constituent hours from early morning in the council hall; spends afternoons in procedural meetings, document review, and negotiation calls with corponation liaisons and city administrators; evenings are reserved for community events, which she attends as a participant, not a speaker.",
+  "affiliation": "Highland Park Autonomous Zone Community Council (Chair); GLMZ Non-Corporate Zone Solidarity Network; informal mentor to several younger organizers citywide",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 7,
+      "expression": 9,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "political veteran",
+      "procedural expert",
+      "community anchor",
+      "secret keeper",
+      "earned authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the charter — it exists to constrain everyone including herself",
+      "Never make a decision under duress without at minimum asking for twenty-four hours",
+      "Protect the community's capacity to self-govern above any single outcome"
+    ],
+    "escalation_ladder": [
+      "Listens and asks procedural clarifying questions",
+      "Calls a formal meeting to address the issue collectively",
+      "Issues a public council statement",
+      "Engages allied zone councils and media contacts",
+      "Invokes the charter's emergency provisions and takes direct community action"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Courteous and formal, slightly distant — reserves warmth as something that must be earned rather than assumed",
+      "friends": "Disarmingly funny and direct; drops the formal register entirely; shows care through frank, sometimes brutal honesty"
+    },
+    "stress_responses": {
+      "low": "Becomes more precise and procedural",
+      "medium": "Goes very still, speaks more slowly, asks more questions than she answers",
+      "high": "Removes herself physically from the situation for exactly fifteen minutes, then returns with a decision"
+    },
+    "contradictions": [
+      "Champions radical community self-determination but is deeply uncomfortable with tactics that fall outside formal process",
+      "Presents as supremely confident in public while being privately consumed by doubt about specific past decisions"
+    ],
+    "habits": [
+      "Reviews the HPAZ founding charter every Sunday morning — physically, the original printed document",
+      "Keeps a small clay E.L.F. figurine on her council desk as a ward against network intrusion; pours a few drops of water on it before difficult meetings",
+      "Addresses everyone, even opponents, by their preferred name and title — it disarms and obligates simultaneously"
+    ],
+    "breaking_points": [
+      "Learning that someone used the council's trust to harm a constituent",
+      "Being publicly called a corponation collaborator — the secret she carries makes the accusation unbearable even when leveled falsely"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "stable, minor age-related texture change",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, sends alerts to her personal device",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, standard elder-care model",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Executioner": 0.9,
+    "Cold Calculator": 0.9,
+    "Stoic": 0.9,
+    "Judge": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what was then the Highland Park refugee resettlement zone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Participates in the first HPAZ charter drafting committee at age 19",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected to the neighborhood council for the first time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Accepts Palladian conditional grant during funding crisis; non-disclosure signed",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Stress-related cardiac episode; takes six weeks off — the only time she has done so",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Survives recall election by 31 votes; interprets it as a mandate and a warning simultaneously",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Burden Clause",
+    "Chronicle",
+    "Palladian Construction",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Silver",
+    "Copper",
+    "Auricula Felis Modification",
+    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
+    "Breck Tannen",
+    "Djeneba Magnusson-Camara",
+    "GLMZ",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "MERIDIAN",
+    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
+    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Solina Barreto-Kiptoo",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
+    "The Heritage Vault",
+    "Tomasz Wren",
+    "Veslemøy Achebe-Tursynov",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Eastern European (51.1%) with significant Sub-Saharan African (18.3%), East Asian (16.3%), South Asian (10.9%), and Hispanic/Latin American (3.4%) ancestry. Complex multi-continental genetic blend creating distinctive phenotypic features.",
+    "height_cm": 180,
+    "weight_kg": 78,
+    "build": "Tall and broad-shouldered with dignified carriage; strong frame that reads as presence rather than aggression. Carries weight with authority — the build of someone accustomed to labor and leadership in equal measure.",
+    "hair_color": "Silver-white",
+    "hair_style": "Locs arranged in a sculptural updo, secured with copper wire threaded through enamel political pins spanning four decades",
+    "hair_length": "Long (locs reach mid-back when loose)",
+    "eye_color": "Deep brown, warm",
+    "skin_tone": "Medium-warm complexion reflecting Eastern European base with enriched depth from Sub-Saharan African, East Asian, and South Asian ancestry. Golden-amber undertones rather than pure golden.",
+    "complexion": "Broad facial structure with balanced proportions across European and African ancestry. Deep-set eyes framed by pronounced crow's feet; face shows four decades of outdoor sun exposure and expression. Strong, defined jawline with full mouth. Cheekbones prominent but not sharp. Skin texture is textured and weathered in a way that suggests work and time spent outdoors and in uncontrolled environments. Minimal makeup. No grooming affectations.",
+    "distinguishing_marks": [
+      "Fine network of expression lines radiating from eyes — crow's feet she treats as credentials of forty years' engagement",
+      "Barely-visible surgical scar along right collarbone (cardiac monitor implant, 2196 — only visible if she's wearing low-neckline clothing, which is rare)"
+    ],
+    "visible_augmentations": "Tawny velvet-tipped cat-ear modifications protruding from upper temples; functional, they swivel noticeably when she's listening intently. The cosmetic work is elegant but unmistakable. Reading-assist optical overlay is not visible during normal interaction but becomes apparent as faint prismatic shimmer when she's reviewing documents under bright light.",
+    "posture_movement": "Moves with unhurried authority — no wasted motion. Stands with shoulders back, weight distributed evenly. Walks slowly and deliberately through spaces she moves through as if she owns them through custodianship. Gestures are economical and purposeful. When seated in meetings, she leans slightly forward when listening, and her cat ears swivel visibly — an unconscious tell that unsettles people unfamiliar with the modification.",
+    "clothing_style": "Tier 4 functional elegance. Favors high-quality, durable fabrics in muted earth tones — charcoal, ochre, deep teal. Standard uniform is tailored linen slacks, long-sleeve cotton or linen shirts (rolled to the elbow), and a vest or overshirt in heavier fabric. Wears leather sandals that have been repaired many times. Minimal jewelry beyond the copper wire and enamel pins in her hair and a simple steel wedding band. Clothing is scrupulously maintained but not expensive — chosen for longevity and practicality, not status. No corporate logos. No synthfiber."
+  },
+  "image_prompt": "Delta Traoré-Popescu, 180cm tall woman with medium-warm golden-amber skin tone reflecting complex Eastern European, Sub-Saharan African, East Asian, and South Asian ancestry. Silver-white locs arranged in sculptural updo adorned with copper wire and enamel political pins. Tawny velvet-tipped functional cat-ear cybernetic modifications protruding from temples. Deep brown warm eyes with pronounced crow's feet, strong defined jawline, full mouth. Broad facial structure, weathered complexion from four decades of sun exposure. Wearing tailored charcoal linen slacks, rolled-sleeve cotton shirt in ochre, heavy teal overshirt vest. Repaired leather sandals. Steel wedding band. Unhurried authoritative posture, shoulders back, leaning forward with intent listening posture. Cyberpunk 2226 aesthetic, GLMZ setting. Dim ambient lighting in professional meeting space, prismatic optical overlay shimmer visible in document review. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 51.1,
+    "Sub-Saharan African": 18.3,
+    "East Asian": 16.3,
+    "South Asian": 10.9,
+    "Hispanic/Latin American": 3.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

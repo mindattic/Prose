@@ -1,0 +1,299 @@
+{
+  "id": "019d6143a619788988e2ce5a35ac4fb5",
+  "type": "character",
+  "name": "Meera Okonkwo-Rahman",
+  "aliases": [
+    "Gav",
+    "Old Concrete"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Neighborhood council member and mutual aid organizer",
+  "age": 62,
+  "status": "active",
+  "location": "Hough Reclamation, near Kedzie and Division",
+  "description": "Gavril is a heavyset man with a dark complexion going ashy at the edges, a silver beard kept short and neat, and the particular kind of stillness that comes from having survived more than one round of everything. He has a prosthetic left hand — a basic civic-grade model that he's had for twenty-two years and painted to match nothing, leaving it the utilitarian grey it came in. He wears reading glasses he doesn't need augmented, just prefers, and he is almost always carrying something — a bag of supplies, someone's paperwork, a covered dish.\n\nGavril has been a Hough Reclamation neighborhood council member for fourteen years, which is long enough that he has seen four different corponation community liaison programs cycle through, promise the world, and quietly exit. He runs the Hough mutual aid grid — a distributed network of food stores, medical supply lockers, and emergency shelter contacts that has kept the neighborhood fed and housed during two infrastructure blackouts and a Ferrogate transit strike. He is not charismatic in the convention sense. He is simply reliable, which in Hough Reclamation is rarer and more valued.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "Dying before the mutual aid network is self-sustaining enough to outlive him",
+      "That the neighborhood's young people will leave and Hough will hollow out"
+    ],
+    "core_desires": [
+      "Stability — not comfort, but genuine structural stability for the people around him",
+      "To be forgiven for a specific choice he made in 2188"
+    ],
+    "coping_mechanisms": [
+      "Doing concrete, physical tasks — moving supplies, fixing things with his hands",
+      "Cooking",
+      "Refusing to discuss his own feelings while being endlessly available for others'"
+    ],
+    "blind_spots": [
+      "His distrust of younger activists' methods sometimes reads as condescension, and sometimes is",
+      "He's been in the council long enough that he occasionally defends its processes when he should be questioning them"
+    ],
+    "secret": "In 2188, during a particularly brutal cold spell, Gavril quietly passed a list of squatters in an abandoned Axiom-adjacent building to a council member he trusted, thinking it would get them housing assistance. The building was cleared by Axiom security contractors three days later and the squatters were scattered. No one died. He's never told anyone and he has never forgiven himself."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, practical, working-class GLMZ vernacular with occasional Estonian phrases from his grandparent's side; doesn't use jargon unless pushed",
+    "cadence": "Unhurried, lets silence do work, rarely repeats himself",
+    "verbal_tics": [
+      "'Let me ask you something'",
+      "'That's not what I said'",
+      "Long pauses before answering anything important"
+    ],
+    "example_lines": [
+      "'Let me ask you something. You want to change Hough Reclamation in a year. Fine. But who's filling the supply locker on Kessler Street next Tuesday? Because that's also the neighborhood.'",
+      "'I'm not saying don't fight. I'm saying fight and also make sure people eat. Those aren't the same meeting but they need to be the same movement.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has been systematically draining the mutual aid medical supply lockers — small amounts, smart enough to be hard to catch, specific enough that it might be someone who knows the system",
+    "A younger council member is pushing through a rezoning deal that Gavril suspects is Axiom money laundered through a community development nonprofit — he needs proof before he'll act",
+    "He's received a letter from one of the scattered squatters from 2188, now living in the HPAZ, who has figured out what happened and wants to meet"
+  ],
+  "narrative_function": "Quest giver, information source on community history and neighborhood dynamics, reliable safe haven. Represents institutional memory and the slow work of actual community building versus headline activism.",
+  "augmentations": "Civic-grade prosthetic left hand (painted grey, no frills); standard-issue vision correction lens (non-cosmetic)",
+  "daily_life": "Up at 06:00, checks on the mutual aid supply lockers on his morning walk. Council or subcommittee meetings most afternoons. Evenings: available to neighbors with problems, disputes, or needs. He eats dinner at home alone almost every night and prefers it.",
+  "affiliation": "Hough Reclamation Neighborhood Council; the Hough-Collinwood Mutual Aid Grid; informal elder advisor to younger organizers across the HPAZ",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "elder",
+      "organizer",
+      "reliable",
+      "haunted",
+      "community-builder"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect the most vulnerable first, politics second",
+      "Don't make promises you can't keep with the resources you actually have",
+      "Stay in the room even when you disagree — the people who leave stop having influence"
+    ],
+    "escalation_ladder": [
+      "Quiet conversation, one on one",
+      "Raises the issue at council formally",
+      "Builds coalition among council members",
+      "Takes it public through the mutual aid network's communication channels"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Measured, watchful, warm enough to not be cold — he takes his time deciding about people",
+      "friends": "Gruff affection, shows up without being asked, expresses care through doing things"
+    },
+    "stress_responses": {
+      "low": "Gets quieter, more thorough",
+      "medium": "Focuses entirely on practical action, avoids emotional discussion",
+      "high": "Has one person he calls — an old friend in Collinwood Docks — and talks for a long time, then comes back and acts"
+    },
+    "contradictions": [
+      "Believes in community self-determination but still carries the paternalistic habit of deciding what information people can handle",
+      "Is one of the most trusted people in Hough but carries a private guilt that makes him feel like a fraud"
+    ],
+    "habits": [
+      "Leaves a plate of food at the junction box where he believes the Hough grid E.L.F. resides — not prayer exactly, he'd say, just respect",
+      "Fixes things by hand when possible rather than printing replacements",
+      "Reads council minutes from the 2150s and 2160s — 'to remember what we already tried'"
+    ],
+    "breaking_points": [
+      "A second incident where his information or trust is weaponized against vulnerable people",
+      "The mutual aid grid collapsing due to resource depletion he couldn't prevent"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "Well-maintained but visibly aged",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Collinwood Docks; Ghanaian-Estonian heritage, third generation in GLMZ",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Loses left hand in an industrial accident at the Harrowgate Industrial Plateau; receives first prosthetic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Moves to Hough Reclamation; begins volunteering with an early mutual aid precursor network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Elected to the Hough Reclamation Neighborhood Council for the first time",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Passes the squatter list; building is cleared; carries the guilt forward",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hough mutual aid grid survives a 72-hour infrastructure blackout; Gavril is publicly credited; privately knows it was close",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Baptism' Electrified Water Cannon",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "Highland Park Autonomous Zone",
+    "Silver",
+    "Breck Tannen",
+    "Collinwood Docks",
+    "Eshe Pena-Baah",
+    "Fanta Hedlund-Diarra",
+    "Forge-Smith Collective Trench Knuckles 'Anvil'",
+    "GLMZ",
+    "Jefferson Switch",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nneka Lindqvist-Okafor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Réginald Asomaning-Čabarkapa",
+    "Street Custom 'Baptism' Electrified Water Cannon",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "VitaCore SteadyThread Precision Motor Implant",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian, Sub-Saharan African, Middle Eastern, Eastern European, East Asian, and Pacific Islander blend—a genetic map of the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden undertones from South Asian ancestry, richly pigmented from African heritage, with the bone structure showing the angular planes influenced by Middle Eastern and Eastern European genetics. Features reflect this complex admixture: the width and prominence of cheekbones carries African and South Asian traits, while the bridge of the nose and eye-set show Middle Eastern and Eastern European influence. Fine details—the particular curve of the ears, the texture of hair roots—speak to the minority East Asian and Pacific Islander contributions woven through the genetic pattern.",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset and solid, carrying weight evenly through the torso and shoulders. Not soft—there is muscle underneath decades of steady living. The kind of bulk that comes from physical work and not fighting against it.",
+    "hair_color": "Silver with dark undertones",
+    "hair_style": "Short, neat, kept close to the scalp with deliberate care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unremarkable",
+    "skin_tone": "Warm deep brown with golden undertones—the particular weathering of a man in his sixties who has worked outdoors and in variable conditions. The skin holds its richness without ashiness, a testament to the South Asian and African components of his ancestry.",
+    "complexion": "Lined face, grooves around the eyes and mouth from decades of listening and thinking. The facial structure reflects his mixed heritage: broad cheekbones, prominent brow ridge, the kind of bone geometry that reads as unmistakably diaspora. Clean-shaven except for the silver beard on the lower jaw. Skin is clear and well-maintained, not vain about it but disciplined.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across the left inner forearm, pale and old, visible above the prosthetic wrist—approximately 3 inches long",
+      "Age spots on both hands, clustered across knuckles and the backs of the hands",
+      "Calluses on the palms and fingers of his right hand, worn smooth from two decades of use"
+    ],
+    "visible_augmentations": "Civic-grade prosthetic left hand in utilitarian grey polymer—functional, unpainted, with visible articulation servos at the knuckles and wrist joint. The hand is older, shows minor cosmetic wear, and moves with deliberate precision. Standard-issue vision correction lens in wire-rimmed reading glasses he wears regularly, not augmented optics.",
+    "posture_movement": "Still and economical. He doesn't gesture broadly or fill space with movement. Stands with weight balanced, slight forward cant from years of listening to people. Walks at a measured pace. The prosthetic hand moves with conscious intent—he has learned its capabilities and limits over twenty-two years and doesn't pretend it's anything other than what it is. Right hand does most fine work, left hand steadies and assists.",
+    "clothing_style": "Tier 4 working practical. Worn but clean utility jacket in dark grey canvas, often with pockets visibly stuffed with papers, supply receipts, or neighborhood contact data. Durable trousers, comfortable shoes broken in over years. No chrome, no status signifiers. A cloth bag—often canvas or heavy cotton, patched and repatched—carries whatever needs carrying. Wire-rimmed reading glasses on a cord. A simple watch, analog, that he actually reads. No jewelry. Everything about his appearance says: I have things to do and limited time for nonsense."
+  },
+  "image_prompt": "Meera Okonkwo-Rahman, a 178cm heavyset man in his sixties with warm deep brown skin and golden undertones, reflecting South Asian, Sub-Saharan African, Middle Eastern, Eastern European, East Asian and Pacific Islander heritage. Silver hair with dark roots, short and neat. Lined face with broad heritage-mixed cheekbones, prominent brow ridge, dark eyes behind wire-rimmed reading glasses on a cord. Clean-shaven with a silver beard on the lower jaw. Right hand shows age spots and deep calluses; left hand is a utilitarian grey polymer civic-grade prosthetic with visible servo articulation, twenty-two years of deliberate wear. Thin pale 3-inch scar visible on left inner forearm above the prosthetic. Wearing a worn but clean dark grey canvas utility jacket stuffed with papers and contact data, durable trousers, broken-in shoes. Carrying a patched canvas cloth bag. Analog watch on wrist. Still posture, economical movement, slight forward cant. Great Lakes Metropolitan Zone 2226 cyberpunk setting, cool neon-filtered lighting, mid-shift shadows, standing in a neighborhood data collection hub or community center. Mood: measured, disciplined, purposeful, no-nonsense. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 29.2,
+    "Sub-Saharan African": 26.1,
+    "Middle Eastern": 20.1,
+    "Eastern European": 11.5,
+    "East Asian": 7.7,
+    "Pacific Islander": 5.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

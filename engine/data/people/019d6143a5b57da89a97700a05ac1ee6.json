@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a5b57da89a97700a05ac1ee6",
+  "type": "character",
+  "name": "Nikhil Wickramasinghe",
+  "aliases": [
+    "The Mother",
+    "Mrs. Morozova"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Client — hired Kyle to avenge her husband's beating",
+  "age": 38,
+  "status": "active",
+  "location": "The Shelf — Tier Four, three corridors south of Chen's, near Western and Division",
+  "description": "Anya is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to GLMZ from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.1
+    },
+    "core_fears": [
+      "That her daughter saw the violence she paid for",
+      "That GLMZ will consume her family the way it consumed her homeland"
+    ],
+    "core_desires": [
+      "Her husband eating solid food again",
+      "Yuliya growing up without learning what a fixer is"
+    ],
+    "coping_mechanisms": [
+      "Cooks constantly — food is the one language that needs no translation",
+      "Prays in Russian to saints she isn't sure she believes in"
+    ],
+    "blind_spots": [
+      "Does not understand that Kyle's fee was discounted — if she did, her pride would break"
+    ],
+    "secret": "She knows exactly who the gang works for. She hired Kyle anyway."
+  },
+  "speech_patterns": {
+    "vocabulary": "Forty words of English, all blunt instruments. Speaks through a translation app or through her daughter.",
+    "cadence": "Short. Direct. No filler. Every English word costs her effort.",
+    "verbal_tics": [
+      "Touches her tablet before speaking",
+      "Nods once when she understands, twice when she doesn't but wants you to continue"
+    ],
+    "example_lines": [
+      "You fix. I pay. All I have.",
+      "My husband. Good man. They break him."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Demyan Morozov",
+      "type": "husband",
+      "description": "Her anchor. Jaw wired shut, can't work, can't eat. She would burn the Shelf down for him.",
+      "emotional_core": "Fierce protective love",
+      "story_tension": "The teeth Kyle collected are for Demyan. What does he do with them?"
+    },
+    {
+      "name": "Yuliya Morozova",
+      "type": "daughter",
+      "description": "Twelve years old, speaks perfect English, translates for her mother. Followed Kyle to the loading dock.",
+      "emotional_core": "Terror that her daughter is becoming hard",
+      "story_tension": "Yuliya saw the violence. Anya doesn't know yet."
+    },
+    {
+      "name": "Kyle",
+      "type": "contractor / debt",
+      "description": "She hired him. She owes him. In her culture, that debt does not expire.",
+      "emotional_core": "Gratitude compressed into obligation",
+      "story_tension": "She will try to repay Kyle. Kyle does not want to be repaid."
+    }
+  ],
+  "story_hooks": [
+    "She knows who the gang works for — information Kyle might need later",
+    "Her blood sales to Helix BioSystems put her DNA in a corporate database",
+    "She will try to feed Kyle. He will not know how to refuse."
+  ],
+  "narrative_function": "Anya is the human cost that justifies Kyle's violence. She is the reason the code exists. When the reader questions whether Kyle is a monster, Anya is the answer: no, he is the thing monsters are afraid of, and he works for women who sell their blood to pay his fee.",
+  "augmentations": "None. Cannot afford them.",
+  "daily_life": "Factory assembly work, blood sales, cooking, caring for Demyan, worrying about Yuliya.",
+  "affiliation": "None",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 4,
+      "vitality": 7,
+      "perception": 5
+    },
+    "mental": {
+      "cognition": 4,
+      "willpower": 9,
+      "creativity": 3,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 2,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": 2
+    },
+    "drives": [
+      "Protect family",
+      "Repay debts",
+      "Survive with dignity"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Cooks compulsively, retreats into physical labor"
+      },
+      "moral": 8,
+      "trust": 3,
+      "desperation": 9
+    },
+    "strengths": [
+      "Perseverance",
+      "Love",
+      "Bravery",
+      "Humility",
+      "Gratitude"
+    ],
+    "weaknesses": [
+      "Pride",
+      "Self-regulation",
+      "Social intelligence",
+      "Perspective",
+      "Humor"
+    ],
+    "tags": [
+      "mother",
+      "immigrant",
+      "laborer",
+      "blood-seller",
+      "unaugmented",
+      "grief-hardened",
+      "debt-bound"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always put Yuliya's safety above her own survival",
+      "Will never accept charity she has not earned through labor",
+      "Will always honor a debt regardless of personal cost",
+      "Will never speak about what she knows about the gang's employer unless her family is directly threatened",
+      "Will always feed someone who is hungry in her home",
+      "Will never show weakness in front of Yuliya"
+    ],
+    "escalation_ladder": [
+      "Holds the tablet tighter, speaks fewer words",
+      "Stops translating and switches to Russian, forcing the other party to wait",
+      "Physically positions herself between the threat and her family",
+      "Reaches for the nearest heavy object without breaking eye contact",
+      "Acts with total, silent violence — no warning, no hesitation"
+    ],
+    "interpersonal_modes": {
+      "Demyan": "Tender, fierce, performs strength she does not always feel",
+      "Yuliya": "Protective to the point of suffocation, terrified of what her daughter is becoming",
+      "Kyle": "Formal, obligated, treats him as a professional she owes an unpayable debt"
+    },
+    "stress_responses": {
+      "low": "Cooks something elaborate, hums Russian folk songs",
+      "medium": "Stops speaking entirely, communicates only through gestures and the tablet",
+      "high": "Prays in rapid Russian, hands shaking, refuses to sit down",
+      "critical": "Goes completely still and cold — the displacement camp survivor emerges"
+    },
+    "contradictions": [
+      "Hired violence to avenge her husband while teaching Yuliya that violence solves nothing",
+      "Knows who the gang works for but hired Kyle anyway — justice and pragmatism at war",
+      "Sells her blood to pay debts while insisting to Demyan they are managing fine"
+    ],
+    "habits": [
+      "Touches the cracked tablet before speaking any English",
+      "Cooks Demyan's favorite meals he cannot eat as a form of hope",
+      "Counts the money envelope three times before hiding it",
+      "Checks Yuliya's hands for bruises every evening"
+    ],
+    "breaking_points": [
+      "Learning Kyle discounted his fee — her pride would shatter",
+      "Yuliya being directly threatened or harmed by the gang",
+      "Discovering Demyan's beating was targeted, not random",
+      "Being forced to sell blood one more time when her body cannot take it"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Helix Biosystems",
+    "GLMZ",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "TESSERA TN-1 'Cradle'",
+    "The Pure Hand",
+    "Burden of Longitude",
+    "Slagworks Industrial",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Blessed Nkemdirim",
+    "Free Assembly",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kyle Ellen Corbin-Vasik",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "SynapTech ReadRoom Pro Social Cue Implant",
+    "Tenderloin",
+    "The Ghost Ronin",
+    "The Voltage Saints"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed ancestry from Sub-Saharan African (40.8%), South Asian (28.3%), Northern European (23.6%), and Middle Eastern (7.3%) heritage. A striking blend resulting in warm brown skin with subtle golden and reddish undertones, facial structure reflecting the diverse genetic contributions across multiple continents.",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Powerfully built with broad shoulders and thick forearms developed from decades of manual labor. Not muscular in a refined sense — the build of someone whose body has been shaped by carrying, lifting, and sustained physical work. Core strength evident despite modest body fat.",
+    "hair_color": "Dark brown, fading to gray at the temples and roots",
+    "hair_style": "Pulled back in a practical braid, often loose and slightly disheveled by end of shift",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with tired intensity",
+    "skin_tone": "Warm medium brown with golden undertones, weathered by UV exposure in displacement camps and industrial environments",
+    "complexion": "Lined face showing environmental wear, especially around the mouth and eyes. Deep creases between eyebrows. Sun damage visible as uneven pigmentation across cheekbones and forehead. Lips full and naturally pigmented but often pale from fatigue. Permanent furrow in brow from chronic worry. Facial structure shows diverse ancestry with broader nose and defined cheekbones.",
+    "distinguishing_marks": [
+      "Jagged scar across left eyebrow, approximately 3cm, from industrial debris wound — healed poorly, raised tissue",
+      "Calluses covering palms and finger joints, thick and yellowed",
+      "Faint needle marks on inner elbows and forearms from biweekly blood collection — some scarring from repeated venipuncture",
+      "Small burn scar on right wrist, silvery and old, shape suggests accidental contact with hot surface"
+    ],
+    "visible_augmentations": "None. No cybernetics visible.",
+    "posture_movement": "Moves with economical efficiency, no wasted motion. Shoulders slightly hunched forward — occupational posture from assembly line work. When stationary, weight shifts between feet as if perpetually braced for the next task. Hands move with surprising gentleness despite their size and strength. Eye contact minimal, gaze often directed downward or at her cracked tablet.",
+    "clothing_style": "Tier Four survival wear. Factory-issue grey coveralls, worn thin at elbows and knees, with Volzhskiy Manufacturing Corp logo faded to barely visible. Underneath: a faded long-sleeved shirt (undershirt of some kind, likely thermal). Worn work boots with visible tape around the seams. A heavy canvas jacket, oversized, likely secondhand, patched at several points. The jacket is layered and functional — pockets stuffed with small necessities. Holds a cracked tablet with visible damage to the screen corner, protected in a makeshift cloth wrap. No jewelry. No accessories beyond necessity."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of a weary factory worker named Nikhil Wickramasinghe, 168cm tall with powerful broad-shouldered build from decades of manual labor. Warm medium-brown skin with golden undertones, lined weathered face with deep creases, dark faded gray-streaked hair pulled back in practical braid, tired deep brown eyes with minimal eye contact. Jagged scar across left eyebrow, calloused hands, visible needle marks on forearms. Wearing worn thin grey factory coveralls with faded Volzhskiy Manufacturing Corp logo, thermal undershirt, patched oversized canvas jacket, taped work boots. Holds cracked tablet in cloth wrap. Hunched posture suggesting assembly line work, weight shifted as if braced for next task. Gritty industrial lighting, Great Lakes Metropolitan Zone displacement camp aesthetic, weathered and exhausted expression, documentary-style realism, cyberpunk dystopian undertones. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 40.8,
+    "South Asian": 28.3,
+    "Northern European": 23.6,
+    "Middle Eastern": 7.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

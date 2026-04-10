@@ -1,0 +1,335 @@
+{
+  "id": "019d6143a6d77abe90e7d5a576d32ad8",
+  "type": "character",
+  "name": "Nadira Matai",
+  "aliases": [
+    "Obsidian",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 38,
+  "status": "active",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
+  "description": "Somadina Forsberg-Ofosu is lean and angular, all sharp edges and visible tension. At 38, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a extraction specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSomadina Forsberg-Ofosu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.82,
+      "ideal": 0.47,
+      "id": 0.42,
+      "shadow": 0.12,
+      "mask": 0.78,
+      "ghost": 0.72
+    },
+    "core_fears": [
+      "Dying alone in some alley and nobody noticing for weeks",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Justice — the corporate kind, where the punishment fits the profit margin"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot accept help without interpreting it as leverage",
+      "Cannot see that their independence is actually isolation wearing a better outfit"
+    ],
+    "secret": "Somadina Forsberg-Ofosu sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Swears in three languages, often in the same sentence",
+      "Ends statements with 'yeah?' — not a question, a dare"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A high-paying contract turns out to target someone Somadina Forsberg-Ofosu owes a personal debt to",
+    "Somadina Forsberg-Ofosu intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "Someone is impersonating Somadina Forsberg-Ofosu on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Somadina Forsberg-Ofosu functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Geneware muscle density treatment — looks natural, hits like chrome. Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Freelance — multi-district operator",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "agility": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 4
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 9
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 8
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.44,
+      "caution": 0.99,
+      "loyalty": 0.8,
+      "greed": 0.46,
+      "empathy": 0.14
+    },
+    "drives": [
+      "reputation",
+      "revenge",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 7,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "expert marksman",
+      "photographic memory for faces and layouts",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "emotional volatility under extreme stress",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "physical limitation from incomplete augmentation"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Geneware muscle density treatment",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal camouflage",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Protector": 0.9,
+    "Improviser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Narrows Compact",
+    "Ashfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Chicago",
+    "Adaptive Camouflage Skin",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Cem Lund-Bangura",
+    "Crucible RE-2 'Receptionist'",
+    "GLMZ",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "Nika Svensson-Kone",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Quiet Room",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Pacific Islander and South Asian dominant (74%), with significant Sub-Saharan African and Middle Eastern influence (23%), and minor East Asian ancestry. This creates a phenotype of warm, deep brown tones with the broad facial structure and robust bone geometry of Pacific Islander heritage, combined with the defined cheekbones and angular features of South Asian ancestry, tempered by the warmer skin undertones and fuller lip structure of African and Middle Eastern genetics.",
+    "height_cm": 182,
+    "weight_kg": 74,
+    "build": "Lean and angular with visible muscular definition — wiry strength rather than bulk. The geneware muscle density treatment creates an almost unnaturally efficient frame, all compact power and minimal fat. His shoulders are broad but not wide; his limbs are long and precise.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Close-cropped, utilitarian. He doesn't style it — he cuts it short to reduce variables.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint chromatic iridescence around the pupils — subtle sign of the dermal camouflage system",
+    "skin_tone": "Rich warm brown with golden undertones, reflecting the dominant Pacific Islander and South Asian ancestry. The tone is deep and luminous despite nocturnal living, with no pallor — his melanin density prevents the pale quality that would mark full nocturnal adaptation.",
+    "complexion": "Strong, sculptural facial structure with high cheekbones and angular jaw typical of South Asian heritage, combined with the broader facial geometry and fuller features of Pacific Islander ancestry. His face is weathered but not aged; sleep deprivation and stress have carved fine lines around his eyes. Warm brown skin with subtle golden highlights that catch light, showing the characteristic sheen of someone with higher melanin content living under artificial lighting.",
+    "distinguishing_marks": [
+      "Augmentation scarring around both temples in faint straight lines where neural interface ports were installed — visible but faded",
+      "Augmentation scarring along the jawline on both sides where geneware muscle density treatment was layered into the facial structure — surgical precision but no attempt at cosmetic smoothing",
+      "A thin white scar across his left knuckle — old knife work, probably from the Narrows"
+    ],
+    "visible_augmentations": "Geneware muscle density treatment visible as subtle chrome sheen under the skin when he moves — tendons and muscle fibers catch light unnaturally during exertion. The chromatic skin pigment cells of his dermal camouflage create occasional iridescent shifts across his forearms and neck under certain lighting, particularly blue or ultraviolet. No external chrome limbs; all augmentations are integrated.",
+    "posture_movement": "He moves with economical precision — no wasted motion, every gesture purposeful. His default stance is loose but alert, weight distributed for immediate action. He doesn't fidget or relax into furniture; even sitting, there's coiled tension in his frame. His gaze is tracking, always reading the room. He speaks quietly and rarely, forcing others to lean in or strain to listen — a power dynamic he controls.",
+    "clothing_style": "Tier 4 utilitarian-technical aesthetic. Black tactical pants with reinforced seams and cargo pockets, fitted but not tight. Matte-finish synthetic shirt, usually dark gray or charcoal, with minimal branding — function over identity. A worn composite-weave jacket in slate gray with asymmetrical zipper placements and internal pockets for gear. Lightweight boots with non-reflective soles, broken in but maintained. No jewelry, no corporate logos, no status symbols. Everything is chosen for durability, silence, and low visibility. His clothes are clean but not new; they show professional wear, not poverty."
+  },
+  "image_prompt": "Nadira Matai, a 182cm lean muscular man of Pacific Islander and South Asian heritage, rich deep warm brown skin with golden undertones. High angular cheekbones and defined jawline. Dark brown eyes with subtle chromatic iridescence. Dark brown hair graying at temples, close-cropped. Faded augmentation scarring visible at temples and jawline. Geneware muscle density showing as subtle chrome sheen under skin. Wearing matte dark gray synthetic shirt and slate gray composite jacket, black tactical pants, non-reflective boots. Economical posture, alert stance, quiet intensity. Nocturnal cyberpunk setting, cool blue and ultraviolet lighting catching iridescent shifts on forearms and neck. Low-key professional aesthetic, no status symbols, pure function. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial environment, shadows and synthetic light. Mood: controlled menace, coiled tension. Cinematographic lighting, sharp focus. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 37.5,
+    "South Asian": 36.6,
+    "Sub-Saharan African": 11.7,
+    "Middle Eastern": 11.7,
+    "East Asian": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

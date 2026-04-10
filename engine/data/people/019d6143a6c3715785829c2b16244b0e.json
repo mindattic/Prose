@@ -1,0 +1,233 @@
+{
+  "id": "019d6143a6c3715785829c2b16244b0e",
+  "type": "character",
+  "name": "Stellan Villanueva",
+  "aliases": [
+    "Dot"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Ferrogate Transit bus operator, Deepwell Station to Calumet Rise route",
+  "age": 29,
+  "status": "active",
+  "location": "Deepwell Station (home depot), route runs through Blackpipe Corridor, Ironvein, Calumet Rise, near sub-level access near Dearborn and Jackson",
+  "description": "Saodat has the compact, settled quality of someone who has learned to be comfortable in a small moving space for ten hours at a time. They are medium-height, broad through the shoulders, with skin a warm dark brown and close-cropped natural hair shot through with bioluminescent dye — pale blue at the roots, fading to white at the tips — that they refresh every three weeks from a kit they keep in their locker at Deepwell. They have a cat tail (geneware, black with a white tip) that has its own opinions about traffic: it lashes when the route is running behind and curls quietly when it's smooth.\n\nThey are patient in the way that bus drivers become patient — not serene, but weathered into a steady kind of equanimity. They have seen everything in the seats behind them and learned to distinguish trouble from noise. Off the bus they are louder, funnier, more restless; the job asks for a particular affect and they shed it like a coat at shift end. They are deeply loyal to their regular riders in an anonymous way — they know faces, rhythms, and whether someone looks like they're having the wrong kind of day.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.5,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "the route being automated — Ferrogate keeps threatening it and each year the timeline gets shorter",
+      "becoming someone who only exists in transit, never arriving anywhere"
+    ],
+    "core_desires": [
+      "collective protection — a union strong enough that the company actually blinks",
+      "to feel like the work matters beyond moving bodies from A to B"
+    ],
+    "coping_mechanisms": [
+      "Humor and irreverence as pressure valves — can make anything funny to survive it",
+      "The crossword ritual — soluble, finite problems as a daily reassurance"
+    ],
+    "blind_spots": [
+      "Can read strangers on the bus with uncanny accuracy but is often oblivious to what the people closest to them actually need",
+      "Underestimates how much their own exhaustion is accumulating"
+    ],
+    "secret": "They have been quietly documenting Ferrogate's maintenance failures — photographing worn brake components, logging unreported incidents — in a personal archive they started after a near-miss collision that the company wrote off as operator error. They don't know what to do with the archive yet but they can't stop adding to it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Relaxed and colloquial off-duty, clipped and professional on-duty. Uzbek and Icelandic phrases surface under stress or amusement. Comfortable with profanity but reads the room.",
+    "cadence": "Fast when enjoying themselves, deliberately slow when they want someone to understand something important.",
+    "verbal_tics": [
+      "'Right, so—' as a reset when changing topics",
+      "Refers to the bus as 'she' with genuine affection"
+    ],
+    "example_lines": [
+      "'Right, so — she was running about four minutes behind at the Ironvein split, which means somebody blocked the loading bay again, which means I know exactly who it was and so does the depot log, but nothing will happen.'",
+      "'I've had the same guy fall asleep past his stop three times this week. I wake him up. He thanks me. Next day — same thing. At this point I think I'm just part of his alarm system.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Saodat witnessed a woman board the bus at Blackpipe Corridor, ride silently for seven stops, and disembark carrying a case she didn't have when she boarded — it was under the seat. Two days later the same woman is reported missing in the Enclave community boards.",
+    "The union is being pressured to accept a new contract that includes expanded automation rights in exchange for a modest pay increase. Saodat is the only one who seems to understand what this actually means long-term and is struggling to convince colleagues who just see the number."
+  ],
+  "narrative_function": "Mobile information node — they traverse a long slice of the city daily and observe patterns others miss. Can be a quest enabler (getting someone somewhere unusual), a witness to events along the route, or a low-key union organizing plot thread.",
+  "augmentations": "Bioluminescent hair dye (cosmetic, geneware-adjacent topical treatment). Geneware cat tail (cosmetic). Neural route-overlay (Ferrogate-issued, projects route data and timing directly into peripheral vision — technically company property).",
+  "daily_life": "Three-day-on two-day-off rotation. First run departs Deepwell at 05:45. Between runs they sit in the depot canteen and do crossword puzzles from an old tablet with a cracked screen they refuse to replace. Union meetings on the third Thursday of every month.",
+  "affiliation": "Ferrogate Transit (Union Chapter 7, Deepwell Depot)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 0,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union member",
+      "institutional critic",
+      "observer",
+      "transit-bound",
+      "geneware casual"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Protect regular riders — they are owed safe passage and discretion",
+      "Document everything Ferrogate would prefer undocumented"
+    ],
+    "escalation_ladder": [
+      "Calm announcement, no eye contact",
+      "Direct address, name if known, statement of expectation",
+      "Stop the bus. Full stop. Problem resolves or person exits.",
+      "Call depot control — the nuclear option, avoided for its paperwork cost"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional equilibrium — pleasant, neutral, minimal. Watching from behind the separation screen.",
+      "friends": "Suddenly and disarmingly chaotic. Loud opinions about minor things. Will text you seventeen times about something they find funny at 02:00."
+    },
+    "stress_responses": {
+      "low": "Cat tail lashing, increased precision in speech",
+      "medium": "Goes very still and very quiet — the opposite of their baseline",
+      "high": "Pulls the bus to a legal stop, sits in silence for sixty seconds, then continues"
+    },
+    "contradictions": [
+      "Believes deeply in collective action but hates asking for help personally — will not apply their own politics to their own needs"
+    ],
+    "habits": [
+      "Strokes the tail unconsciously while thinking — treats it like a separate entity whose opinion matters",
+      "Keeps a printed photograph of their route's full map taped inside their locker, annotated with small notes about trouble spots"
+    ],
+    "breaking_points": [
+      "A rider being hurt on the route due to a maintenance failure they already documented",
+      "Being told the route is being automated with thirty days notice"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'"
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Deepwell Station",
+    "Calumet Rise",
+    "The Meridian Compact for Economic Justice",
+    "Hamtramck Enclave",
+    "Ironvein",
+    "The Gradient Compact",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "The Pale Mile",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Breck Tannen",
+    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
+    "Ferrogate Transit",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Plot 17",
+    "Sorin Ekwensi-Balasanyan",
+    "TESSERA TC-3 'Crucible'",
+    "The Archive",
+    "The Compact",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "The Quiet Room",
+    "Vanta Ordnance Phalanx VO-8 'Centurion'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Mixed ancestry: Northern European (36.4%), Hispanic/Latin American (27.1%), East Asian (20.0%), and South Asian (16.5%) — a true Ubiquitous Diaspora blend reflected in warm medium-brown skin with subtle golden undertones, broad facial structure with slight angular cheekbones, and dark expressive eyes",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and broad-shouldered, with the settled solidity of someone built for endurance rather than speed. Muscular through the upper back and arms from years of gripping a steering wheel and managing a large vehicle. No excess weight, but no leanness either — functional.",
+    "hair_color": "Bioluminescent gradient: pale blue at roots fading to white at tips; natural dark brown visible at scalp line",
+    "hair_style": "Close-cropped, meticulously maintained, refreshed every three weeks with bioluminescent treatment kit",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm medium brown with golden undertones, reflecting the blend of Northern European fairness, Latin warmth, East Asian depth, and South Asian richness — skin that catches light with subtle luminosity",
+    "complexion": "Clear skin with a weathered, lived-in quality. Minimal grooming beyond functional cleanliness — no makeup, no adornment. Lines around the eyes from squinting at route displays and reading passengers' body language. Broad, slightly angular facial structure with defined cheekbones. A small scar on the left temple from a childhood accident.",
+    "distinguishing_marks": [
+      "Black cat tail with white tip, geneware implant at base of spine, visible under clothing as subtle spinal ridge when they lean forward",
+      "Small pale scar on left temple, approximately 2cm, from impact injury",
+      "Callus on right palm from decade of steering wheel contact",
+      "Faint Union Chapter 7 tattoo on inside of left wrist: stylized ferrous wheel design, 3cm diameter, done in metallic ink that catches light"
+    ],
+    "visible_augmentations": "Geneware cat tail (black with white tip) visible when wearing typical work attire or casual clothing. Bioluminescent hair dye creates subtle glow in low-light conditions. Neural route-overlay has no visible indicator; implant sits behind left eye but is not apparent unless they remove their work visor.",
+    "posture_movement": "Upright but not rigid. Moves with deliberate efficiency — no wasted motion. Sits with both feet flat on ground, hands usually resting on thighs or table. On the job, posture becomes slightly more braced, shoulders set slightly back. Off the job, they relax into a more casual slouch. Tail moves independently of conscious control: lashes when frustrated or behind schedule, curls contentedly when relaxed.",
+    "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit regulation uniform on the job: navy polyester with reflective piping, company-issued cap (which they wear pushed back slightly), polymer safety shoes rated for twelve-hour shifts. Off-duty: worn denim, oversized hoodies in muted colors (charcoal, olive, faded black), knockoff sneakers, sometimes a vintage transit union jacket from the 2200s with faded patches. Minimal jewelry — only a brass wire ring on right ring finger, handmade by a friend. Practical clothing with no fashion statement beyond function and comfort."
+  },
+  "image_prompt": "Stellan Villanueva, 2226 cyberpunk transit worker, mixed-heritage face with warm medium-brown skin with golden undertones blending Northern European, Hispanic, East Asian, and South Asian features. Dark brown eyes, defined cheekbones, compact muscular build, 168cm tall. Close-cropped dark hair with bioluminescent pale blue to white gradient, subtle glow in low light. Black cat tail geneware with white tip visible beneath worn navy Ferrogate Transit uniform with reflective piping. Faint metallic ferrous wheel tattoo on wrist, small scar on left temple. Weathered, lived-in complexion, direct steady gaze. Standing in dimly-lit transit station or beside large vehicle, posture upright and efficient, hands resting naturally. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, functional workwear, neon signs reflecting off transit infrastructure, moody atmospheric lighting, photorealistic, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 36.4,
+    "Hispanic/Latin American": 27.1,
+    "East Asian": 20.0,
+    "South Asian": 16.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

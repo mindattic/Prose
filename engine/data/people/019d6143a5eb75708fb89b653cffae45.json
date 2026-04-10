@@ -1,0 +1,248 @@
+{
+  "id": "019d6143a5eb75708fb89b653cffae45",
+  "type": "character",
+  "name": "Vale Larsdóttir",
+  "aliases": [
+    "Deck",
+    "The Quiet One"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Ferrogate Transit operator — surface tram line 14, Geartown to Meridian Core loop",
+  "age": 29,
+  "status": "active",
+  "location": "Geartown; lives in a transit-worker dormitory block off the Gage Circuit maintenance yard, near Milwaukee and North Ave",
+  "description": "Deku is lean and angular, with the coiled alertness of someone whose profession requires constant low-grade vigilance. Their heritage shows in the broad flatness of their cheekbones and the dark honey of their complexion — Andean and Ghanaian grandparents converging in a face that strangers consistently find difficult to age or place, which suits them fine. Their hair is kept close-cropped on the sides with a single stripe of color-shifting geneware on top — it cycles through slate blue and deep amber depending on their mood, an involuntary tell they've accepted with resignation. They have a faint tracery of subdermal circuit tattoos along their left forearm — not functional, purely aesthetic, done by a Geartown artist when they were twenty-two.\n\nBehind the tram controls, Deku is a different creature than they are in conversation: fluid, confident, reading the track and the city the way a musician reads a score. Off-duty they become clipped, watchful, someone who holds a great deal behind flat politeness. They are not unfriendly — they are private, which is different. Their passengers know them as reliable and fair; their coworkers know them as someone who will cover a shift without complaint but won't come to the bar after.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.4,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being trapped — in a contract, a relationship, an identity someone else assigned them",
+      "The neural throttle-link being used against them; loss of bodily autonomy through the employer hardware in their head"
+    ],
+    "core_desires": [
+      "To save enough to buy out the throttle-link contract and operate independently",
+      "To be known by at least one person without having to explain themselves first"
+    ],
+    "coping_mechanisms": [
+      "The model-building — intricate, controllable systems with predictable outcomes",
+      "The tram route itself as ritual containment; the loop's familiarity is grounding"
+    ],
+    "blind_spots": [
+      "Mistakes privacy for self-sufficiency; doesn't realize how isolated they've become",
+      "Believes Ferrogate's contract terms are fixed and non-negotiable — hasn't seriously explored legal loopholes"
+    ],
+    "secret": "Six months ago they witnessed a Ferrogate supervisor instruct a maintenance crew to falsify a brake-inspection report on a cargo line. They recorded it. They haven't reported it because they don't know who in the Transit Authority is clean enough to trust — and they're afraid of what happens to whistleblowers on company-leased neural hardware."
+  },
+  "speech_patterns": {
+    "vocabulary": "Economical — uses transit and mechanical terminology naturally, defaults to concrete nouns over abstractions; occasionally slips into a rhythmic Quechua-influenced sentence structure inherited from their Barrientos grandmother, especially when tired.",
+    "cadence": "Short sentences. Pauses in the middle of thoughts. Not halting — deliberate.",
+    "verbal_tics": [
+      "'Copy that' as affirmation even in non-work contexts",
+      "Trails off with '...anyway' when they catch themselves saying more than intended",
+      "Refers to the tram as 'she'"
+    ],
+    "example_lines": [
+      "'Line 14 runs clean. Whatever you saw, it wasn't my stop. ...Anyway.'",
+      "'You want to get to the Core before the shift-change crowd hits? I can tell you which car to board. Copy that?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The brake-inspection recording sits encrypted on a personal chip they carry every shift — someone at Ferrogate may know they have it, because their route got quietly reassigned away from the cargo yards.",
+    "A regular passenger — an elderly woman who rode Line 14 every Tuesday for three years — stopped appearing two months ago; Deku has been quietly trying to find out why.",
+    "The Ferrogate Workers' Mutual is planning an action that could shut down surface transit for 48 hours; Deku is being pressured to participate and is deeply conflicted."
+  ],
+  "narrative_function": "Mobile information source — they move through multiple districts daily and overhear an enormous amount; potential quest hook regarding Ferrogate labor disputes; a quiet, consistent presence who can place players at specific locations or provide transit access.",
+  "augmentations": "Color-shifting geneware hair stripe (mood-reactive, involuntary); subdermal circuit tattoos left forearm (cosmetic only); standard Ferrogate-issue neural throttle-link for tram interface (employer-owned, logged).",
+  "daily_life": "Five shifts a week, 06:00–14:30, running the same 22-kilometer loop through Geartown's industrial fringe into the gleaming brutalism of Meridian Core and back; spends off-hours in the dorm's shared workshop building miniature mechanical models.",
+  "affiliation": "Ferrogate Transit (Line 14 Operator, Tier 2); loosely connected to the Ferrogate Workers' Mutual, an informal union-adjacent organizing body",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Quiet Competence",
+      "Reluctant Witness",
+      "Bodily Autonomy Anxiety",
+      "Mechanical Mind"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job correctly, every time — competence is the one thing no one can take",
+      "Don't volunteer information; answer questions honestly if asked directly",
+      "Never let someone get hurt if you can stop it, even if it costs you"
+    ],
+    "escalation_ladder": [
+      "Flat, polite non-engagement",
+      "Honest verbal boundary-setting, once, quietly",
+      "Physical removal from space — they leave, they don't make others leave"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and neutral, answers questions, doesn't initiate",
+      "friends": "Still quieter than most, but present — shows up, fixes things, leaves food without comment"
+    },
+    "stress_responses": {
+      "low": "Hair stripe cycles faster between colors",
+      "medium": "Goes entirely monosyllabic; retreats to the workshop",
+      "high": "Runs the tram route on a simulator in their bunk until 03:00, mechanically, repeatedly"
+    },
+    "contradictions": [
+      "Deeply wants connection but structures their entire life to prevent it from happening"
+    ],
+    "habits": [
+      "Checks brake pressure manually before every shift even though the system auto-checks",
+      "Keeps a running count of passengers by type in a small notebook — purely observational, no purpose",
+      "Leaves one light on in the dorm room, always, even when sleeping"
+    ],
+    "breaking_points": [
+      "Evidence that Ferrogate has been monitoring their private communications through the throttle-link",
+      "A passenger being hurt due to the falsified maintenance records"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Ferrogate Neural Throttle-Link (employer-owned, tram interface only, GPS-logged)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Ferrogate Neural Throttle-Link (employer-owned, tram interface only, GPS-logged)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Romantic": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "Ferrogate Transit",
+    "The Heritage Vault",
+    "Geartown",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Milwaukee Core",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus ST-4 'Verdict'",
+    "Ebele Larsen-Mensah",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "MERIDIAN",
+    "Meridian Core",
+    "Narrowcast",
+    "Noir Dining",
+    "Pullman Works",
+    "Switchback",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Pure Hand",
+    "Tshiamo Vukić-Arellano",
+    "Veslemøy Achebe-Tursynov",
+    "Volkov-Saito Precision VS-R8 'Verdict'",
+    "Xochitl Adaeze Velarde-Okeke"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Global diaspora blend: Sub-Saharan African (35.6%), East Asian (20.1%), Hispanic/Latin American (19.3%), South Asian (10.8%), Central Asian (9.1%), Southeast Asian (5.1%). Rich phenotypic mosaic reflecting deep ancestry from multiple continents—high cheekbones suggesting East/Southeast Asian ancestry, warm complexion with Sub-Saharan depth, angular features from mixed heritage.",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with minimal body fat; corded forearm musculature from years of fine motor control at the tram throttle. Shoulders slightly narrow, legs long relative to torso.",
+    "hair_color": "Natural deep black base with color-shifting geneware stripe on crown — cycles involuntarily between slate blue and deep amber depending on emotional state",
+    "hair_style": "Close-cropped sides with longer crown stripe; precise, maintained weekly",
+    "hair_length": "Short (sides), Medium (crown stripe)",
+    "eye_color": "Dark brown, sharp and observant",
+    "skin_tone": "Deep warm bronze complexion—a rich blend of Sub-Saharan warmth with East Asian undertones; darker at surface with golden undertones visible in natural light. Reflects the phenotypic complexity of five-continent ancestry.",
+    "complexion": "High, prominent cheekbones with East/Southeast Asian articulation; angular jaw refined by South and Central Asian genetic influence; minimal facial hair (kept smooth); skin clear and unblemished with warm undertone throughout; faint laugh lines around eyes suggesting reserved, infrequent smiling.",
+    "distinguishing_marks": [
+      "Faint tracery of subdermal circuit tattoos along entire left forearm — abstract geometric patterns resembling circuit board pathways, done in silver-grey ink, no functional purpose, executed when age 22"
+    ],
+    "visible_augmentations": "Color-shifting geneware hair stripe (mood-reactive, involuntary — serves as unintended emotional telemetry). Neural throttle-link interface port at base of skull (Ferrogate-issue, employer-owned) — small glossy insertion point visible when hair is pulled back, unmarked and clinical. Subdermal circuit tattoos are visible but cosmetic only.",
+    "posture_movement": "At rest: slightly forward-leaning, coiled alertness suggesting constant low-grade vigilance. Shoulders tense. At the tram controls: fluid, confident, economical micro-adjustments. Off-duty: contained, deliberate, minimal expansive gestures. Walks with even stride, eyes tracking surroundings. Hands often engaged — fidgeting with small objects, unconsciously miming mechanical motions.",
+    "clothing_style": "Ferrogate Transit uniform during shifts: charcoal grey polyweave jumpsuit with reflective safety trim and Tier 2 line badge. Off-duty: functional Tier 3 workwear — fitted synthetic shirts in neutral tones (grey, black, charcoal), well-maintained cargo pants or modified denim, reinforced work boots (currently scuffed Geartown-issue synthleather). No jewelry. A single worn canvas tool vest for workshop time. Everything practical, nothing aspirational. Minor wear and oil stains visible on fingertips — evidence of hobby mechanical work."
+  },
+  "image_prompt": "Vale Larsdóttir, 2226 cyberpunk tram operator. Lean 172cm build, deep warm bronze skin blending Sub-Saharan and East Asian heritage, high angular cheekbones, sharp dark brown eyes. Black hair with mood-reactive color-shifting stripe (currently slate blue) on crown, close-cropped sides. Subdermal silver-grey circuit board tattoos visible on left forearm. Wearing charcoal Ferrogate Transit uniform with reflective trim and neural port visible at base of skull. Intense, focused expression with coiled alertness. Oil-stained fingertips. Standing in dim neon-lit tram control cabin, cool blue and amber lighting reflecting off her face and augmentation port. Cyberpunk 2200s aesthetic, sharp focus, cinematic lighting. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.6,
+    "East Asian": 20.1,
+    "Hispanic/Latin American": 19.3,
+    "South Asian": 10.8,
+    "Central Asian": 9.1,
+    "Southeast Asian": 5.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

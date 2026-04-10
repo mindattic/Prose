@@ -1,0 +1,300 @@
+{
+  "id": "019d6143a6d7774eb5d35f47d8c109d1",
+  "type": "character",
+  "name": "Kai Traoré",
+  "aliases": [
+    "Patch",
+    "The Seamstress"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Identity fabricator and forger operating in The Narrows",
+  "age": 34,
+  "status": "active",
+  "location": "The Narrows, Ironvein sub-district — a basement apartment beneath a legitimate alterations shop, near Damen and Armitage",
+  "description": "Solène is compact and precise, the kind of person whose stillness in a crowded room makes you notice her eventually, like a stone in moving water. Her heritage is Aleutian-Ghanaian, and her face carries both — broad cheekbones, deep brown skin, eyes the color of sea ice that shift to something almost golden in certain lights, a geneware mod she got at nineteen and never bothered reversing. Her hair is natural and enormous, usually pinned up under a faded headscarf when she works. Her hands are her most remarkable feature: surgeon-steady, ink-stained at the cuticles, and capable of replicating any biometric signature with enough reference material and time.\n\nShe does not think of herself as a criminal. She thinks of herself as a documentarian of alternate lives — she makes real what should already be real, papers for people whose papers were stolen, burned, or never issued. She charges a sliding scale that she determines unilaterally and that no one argues with because her work is simply that good. She is funny in a dry, sideways way, and she will feed you while you wait because she believes hungry clients make bad decisions and bad decisions make her work harder.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "That her work will get someone killed instead of saved",
+      "That the documentation systems she fights are ultimately unbeatable"
+    ],
+    "core_desires": [
+      "To give people the ability to start over",
+      "To be recognized someday as having done something that mattered"
+    ],
+    "coping_mechanisms": [
+      "Meticulous craftsmanship as a substitute for control over outcomes",
+      "Humor as distance from emotional investment in clients"
+    ],
+    "blind_spots": [
+      "She vets ideology, not competence — has given papers to principled people who were dangerously reckless",
+      "Her sliding scale is sometimes more punitive toward people she finds irritating than she admits"
+    ],
+    "secret": "Her own identity is fabricated — the real Solène Pribilof-Ankrah died in a Tessera detention facility fourteen years ago, and she has been living in her dead friend's name ever since, a fact that makes every document she creates feel like a prayer and a wound simultaneously"
+  },
+  "speech_patterns": {
+    "vocabulary": "Crisp, educated Meridian Standard with Francophone West African syntax patterns underneath; technical vocabulary for documents, materials, biometrics",
+    "cadence": "Clipped and efficient until she relaxes, then longer sentences with dry asides",
+    "verbal_tics": [
+      "'Technically speaking—'",
+      "Taps the UV-reading finger against her lip when thinking",
+      "'That's a you problem, not a me problem'"
+    ],
+    "example_lines": [
+      "'I don't make fake documents. I make documents that the system hasn't gotten around to issuing yet. The distinction matters to me.'",
+      "'You want to be someone else. Fine. Tell me who you want to be, and I'll tell you if that person is believable. Most people aim too high.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A document she fabricated three years ago has surfaced in a murder investigation — the identity she created is now a suspect, and the real person (her client) has gone silent",
+    "Someone approaches her claiming to be a Tessera auditor who knows what she does and wants not money but a very specific set of papers — for themselves"
+  ],
+  "narrative_function": "Service provider for characters needing new identities, information source about who is hiding and why, moral anchor demonstrating the human cost of documentation systems, quest giver when a client's false identity causes complications",
+  "augmentations": "Golden-shift irises (geneware, cosmetic). Neural steady-hand implant — eliminates tremor, improves fine motor precision. Subdermal UV-reading patch on right index finger.",
+  "daily_life": "Runs the alterations shop upstairs until midday (legitimate, skilled work), descends to the workshop in the afternoon for fabrication jobs, keeps a strict no-visitors-after-dark policy that she enforces with a crossbow she has never had to fire.",
+  "affiliation": "Independent; occasional work for the Narrows Mutual Aid Collective (which does not acknowledge this relationship)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 10,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "master craftsperson",
+      "principled criminal",
+      "secret identity",
+      "community protector",
+      "institutional skeptic"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never fabricate for anyone who can't explain who they're running from in specific terms — vagueness means danger",
+      "Always keep one piece of incomplete leverage on every client without their knowledge",
+      "Feed people before asking them hard questions"
+    ],
+    "escalation_ladder": [
+      "Polite refusal with explanation",
+      "Firm refusal with implied knowledge of their situation",
+      "Activation of leverage (quiet, not theatrical)",
+      "Disappears — new shop, new location, client never finds her again"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional warmth, assessment disguised as hospitality, reveals nothing until she decides they're safe",
+      "friends": "Blunt, funny, fiercely loyal, will work herself half to death for someone she trusts"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more precise in speech",
+      "medium": "Starts cleaning and organizing the workshop compulsively",
+      "high": "Executes the disappearance protocol she has mentally rehearsed ten thousand times"
+    },
+    "contradictions": [
+      "Refuses to fabricate for corporate clients on principle but has done it twice when she needed rent",
+      "Claims not to get attached to clients and remembers every single one of their faces"
+    ],
+    "habits": [
+      "Sews something small and useless every morning before opening — napkins, patches, nothing that matters — to warm up her hands",
+      "Leaves a small data offering at the ELF shrine in the basement: digitized photographs of people she's helped"
+    ],
+    "breaking_points": [
+      "A client being taken because of a flaw in her work",
+      "Someone learning who she actually is"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural steady-hand implant — voluntary motor dampening, eliminates all involuntary movement on command",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Neural steady-hand implant — voluntary motor dampening, eliminates all involuntary movement on command",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal UV-spectrum reader — right index finger, reads security inks and hidden biometric markers",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal UV-spectrum reader — right index finger, reads security inks and hidden biometric markers",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware: golden-shift irises (cosmetic, Alaskan sea ice coloration)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware: golden-shift irises (cosmetic, Alaskan sea ice coloration)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born in what was then the Tessera Residential Zone, Archer's Line",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Tessera detention, released after six months; friend Solène does not come out",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Begins living as Solène Pribilof-Ankrah; teaches herself document fabrication from archived pre-corporate records",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Establishes the alterations shop cover in Ironvein",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Currently considered by the Narrows Mutual Aid Collective to be a 'community resource' they officially have no knowledge of",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Ironvein",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Slagworks Industrial",
+    "The Pure Hand",
+    "Anatoliy Faye-Nkrumah",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sorin Ekwensi-Balasanyan",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Narrows",
+    "The Wire Taps",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European, Sub-Saharan African, Hispanic/Latin American, and Central Asian ancestry — a striking blend resulting in warm deep brown skin with subtle golden undertones, broad Slavic-influenced cheekbones balanced with West African facial structure, and the compact frame characteristic of Central Asian heritage",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with surprising density — the frame of someone who moves with economy and purpose, minimal wasted mass",
+    "hair_color": "Natural black with subtle gray at the temples",
+    "hair_style": "Voluminous natural curls, typically pinned up under a faded headscarf during work; loose, it reaches mid-back",
+    "hair_length": "Long",
+    "eye_color": "Sea-ice blue with golden shift undertones (geneware modification, color intensity varies with light)",
+    "skin_tone": "Warm deep brown with golden undertones, reflecting the complex interplay of Eastern European, Sub-Saharan African, Hispanic/Latin American, and Central Asian ancestry",
+    "complexion": "Calm, deliberate face with broad cheekbones showing Eastern European and Sub-Saharan African structure, sharp jawline with subtle warmth from Hispanic/Latin American heritage; minimal jewelry aside from functional pieces; skin is clear and well-maintained from discipline rather than vanity",
+    "distinguishing_marks": [
+      "Ink staining at the cuticles of both hands from years of precision work — permanent despite regular cleaning",
+      "Fine white scar across the dorsal side of right index finger, barely visible, from an old fabrication accident",
+      "Faint UV-reading patch visible on right index finger only under specific light conditions — subdermal, intentionally subtle"
+    ],
+    "visible_augmentations": "Geneware-modified irises are the only immediately visible augmentation; they shift from cool blue to amber depending on ambient light and viewing angle. The neural steady-hand implant and subdermal UV patch are invisible to casual observation.",
+    "posture_movement": "Moves with deliberate stillness — economical, precise gestures with no wasted motion. Sits very still for extended periods. When she walks, her gait is measured and grounded. Hands are constantly in motion during work, steady as surgical instruments.",
+    "clothing_style": "Tier 3-4 working class with intentional understatement. Upstairs: functional alterations-shop wear — fitted black pants, neutral linen shirts with sleeves rolled, tool apron. Downstairs: looser clothing that allows fine motor work without restriction, often layered sweaters, vintage or thrifted pieces. Faded headscarf in muted colors (indigo, charcoal, rust). Worn boots with good ankle support. No corpo branding, no status markers — the uniform of someone who values function over appearance."
+  },
+  "image_prompt": "Kai Traoré, 158cm tall compact wiry figure, warm deep brown skin with golden undertones blending Eastern European and Sub-Saharan African heritage, voluminous natural black curls pinned under faded indigo headscarf, broad cheekbones and sharp jawline, geneware-modified eyes shifting sea-ice blue to amber. Worn black alterations-shop apron over neutral linen shirt with rolled sleeves, fitted black work pants, vintage layered sweater visible underneath, scuffed boots with ankle support. Hands stained with permanent ink from precision work, subdermal UV patch faintly visible on right index finger. Standing in dim alterations workshop, blue-tinted ambient lighting catching her modified irises mid-shift, surrounded by fabric bolts and fabrication tools, deliberate stillness and measured posture, economy of movement frozen mid-gesture, cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, moody workshop lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 43.6,
+    "Sub-Saharan African": 25.8,
+    "Hispanic/Latin American": 20.0,
+    "Central Asian": 10.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a73475a1aa8e3e9bc0f09e3e",
+  "type": "character",
+  "name": "Sterling Touré-Johansson",
+  "aliases": [
+    "Zef",
+    "Zeroday"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junior hacker, unofficial IT support for Hough Reclamation community network",
+  "age": 17,
+  "status": "active",
+  "location": "Hough Reclamation, near Ashland and Chicago Ave",
+  "description": "Zephyros is built like someone who forgets to eat when he's working — which is often — with a lanky frame, warm medium-brown skin, and his Kovalenko grandmother's sharp nose and high cheekbones. He has cat ears, the affordable kind, a dusty silver-grey that he chose because they were on discount and he has never once admitted this; his hair grows in loose natural coils that he keeps at a medium length and approximately never combs. His eyes are standard-issue brown except for a ring of self-installed retinal AR overlay that occasionally renders visible UI elements at the corner of his vision, which gives him the habit of twitching his gaze sideways to dismiss notifications mid-conversation.\n\nHe is the person in Hough Reclamation that people come to when the community mesh goes down, when their devices are compromised, when someone needs a data trail cleaned or a locked terminal reopened. He does not charge money — he charges favors and information, which he considers more valuable. He is genuinely ideological about this: he believes the mesh belongs to the community and his skills are a form of maintenance, like fixing a pipe. He is also seventeen and sometimes insufferably certain he is the smartest person present, which he often is and which helps no one.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.8,
+      "id": 0.6,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "The community mesh being acquired or shut down by a corponation",
+      "Being genuinely wrong about something important in a way that hurts someone who trusted him"
+    ],
+    "core_desires": [
+      "To build something that outlasts him — a system robust enough that it doesn't need him",
+      "To make contact with the online collective in person and find out if they're what he thinks they are"
+    ],
+    "coping_mechanisms": [
+      "Deep-dive work sessions that last until he passes out",
+      "Sarcasm as a deflection when conversations get personal"
+    ],
+    "blind_spots": [
+      "He has a significant blind spot around the legal exposure he is creating for himself and his community; he genuinely underweights this risk",
+      "He assumes people who aren't technically skilled are less rigorous thinkers in general"
+    ],
+    "secret": "He discovered three months ago that a Sterling-Nakamura data-crawler has been passively mapping the Hough Reclamation mesh, presumably as part of an acquisition assessment. He has been feeding it false topology data. He has not told anyone in the community because he doesn't want to cause panic — and because he's not sure the countermeasure is actually working."
+  },
+  "speech_patterns": {
+    "vocabulary": "Heavy technical jargon that he sometimes forgets to translate; when he does translate, he's actually quite good at finding apt analogies",
+    "cadence": "Fast when explaining something technical, oddly flat when discussing feelings, occasionally trails off mid-sentence when a thought branches",
+    "verbal_tics": [
+      "'Okay, so—' as a universal sentence opener",
+      "Eye-twitch to one side when dismissing a retinal notification"
+    ],
+    "example_lines": [
+      "'Okay, so, it's not a virus exactly — think of it more like someone left a door open and something walked in and started rearranging the furniture. It's slow and polite, which is worse.'",
+      "'I don't charge money. Money is how they track you. You want the fix, you tell me something useful. Information is actual currency.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He contacts someone through an intermediary needing physical backup — the false topology feed to the Sterling-Nakamura crawler just broke down and he needs someone to physically access and destroy a relay node before the real map resolves",
+    "Someone on his community mesh has been receiving what appear to be genuine E.L.F. transmissions — structured data that doesn't match any known protocol — and Zef is equal parts skeptical and completely obsessed with figuring out what it actually is"
+  ],
+  "narrative_function": "Information source, technical resource, moral argument about grassroots infrastructure and community ownership, gateway to underground hacker networks, potential quest giver when his online activities surface problems",
+  "augmentations": "Cosmetic geneware: cat ears (discount silver-grey). Self-modified retinal AR overlay (unlicensed, slightly unstable).",
+  "daily_life": "Sleeps irregular hours, available on the community mesh almost constantly via text; spends mornings doing physical network maintenance (replacing corroded nodes, re-routing dead signal relays), afternoons on his personal rig working on projects he doesn't discuss, evenings actually visible to neighbors when they need help.",
+  "affiliation": "Hough Reclamation community (informal), no formal employer; loosely connected to an online collective he knows only by handles",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 3,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 6,
+      "creativity": 8,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 4,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 1,
+      "assertion_deference": -3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Junior Hacker",
+      "Community Infrastructure",
+      "Ideological",
+      "Tech Savant",
+      "Overconfident"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The mesh's health is the first priority; everything else is secondary",
+      "Never hand over information without getting something of equivalent value — this is principle, not greed"
+    ],
+    "escalation_ladder": [
+      "Explains the problem again, more slowly",
+      "Withdraws to his rig and stops answering messages",
+      "Goes fully dark on the mesh and physically relocates somewhere he considers safe while he figures out what to do"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assesses their technical literacy first, adjusts accordingly; polite but measuring",
+      "friends": "Surprisingly warm once the armor comes off, expresses care through fixing their problems without being asked"
+    },
+    "stress_responses": {
+      "low": "Talks faster and makes more references",
+      "medium": "Goes quiet and starts running diagnostics on things that don't need diagnostics",
+      "high": "Twelve-hour work session, no food, emerges with either a solution or a worse problem"
+    },
+    "contradictions": [
+      "He believes information should be free but maintains intense personal secrecy about his own activities and projects"
+    ],
+    "habits": [
+      "Cat ears flatten when he's concentrating — he doesn't notice he's doing it",
+      "Leaves extremely detailed comments in his own code, written as though explaining to a stranger, which is how he talks through problems"
+    ],
+    "breaking_points": [
+      "The community mesh going down due to corponation interference",
+      "Discovering that someone he trusted used his tools to hurt a neighbor"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Unlicensed self-modified retinal AR overlay (unstable, occasionally renders phantom UI elements)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Unlicensed self-modified retinal AR overlay (unstable, occasionally renders phantom UI elements)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Analyst": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Grandmother",
+    "Vespid Dynamics Reconnaissance Beetle RB-2",
+    "Silver",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Sweeper-11",
+    "Arcturus CK-5 'Bloodhound'",
+    "Chicago",
+    "Alper Lebedev-Tutu",
+    "Ambrosia Fekete-Waiyaki",
+    "Auricula Felis Modification",
+    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
+    "Axonal Stretch Resonance Lance",
+    "Aybek Alvarez-Okonkwo",
+    "Idris Forsberg-Quaye",
+    "Patient Zero",
+    "Plot 17",
+    "Praevex",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southeast Asian / East Asian / Sub-Saharan African blend (50.2% Southeast Asian, 25.9% East Asian, 23.9% Sub-Saharan African); phenotype reflects strong Southeast Asian foundation with East Asian refinement and Sub-Saharan African warmth",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lanky and angular, the lean frame of someone who prioritizes screens over meals; visible rib definition, long limbs with minimal muscle development, slight forward slouch from hours hunched over equipment",
+    "hair_color": "Natural dark brown with subtle warm undertones",
+    "hair_style": "Loose natural coils, shoulder-length, intentionally unkempt and frequently pushed out of his face with whatever is nearest (fingers, wire, ear)",
+    "hair_length": "Medium",
+    "eye_color": "Medium brown (natural) with faint circular retinal overlay circuitry visible under direct light",
+    "skin_tone": "Warm medium-deep brown with golden undertones, the result of Southeast Asian base with East Asian and Sub-Saharan African warmth; slightly paler around the eyes from extended indoor time",
+    "complexion": "Defined cheekbones with Southeast Asian structure; youthful and unlined except for the faint dark circles that are his baseline state; minimal grooming routine, skin otherwise clear; complexion reflects blended ancestry with warm, even tone",
+    "distinguishing_marks": [
+      "Fine network of scar tissue on both inner wrists from self-installing the retinal overlay, approximately 3cm each, partially hidden by the wrist cuff of whatever he's wearing",
+      "Occasional static discharge marks (small burns, healed) on his fingertips from working with unshielded components, barely visible unless closely examined"
+    ],
+    "visible_augmentations": "Pair of discount-grade geneware cat ears, silver-grey with matte finish, positioned slightly too high on his skull (self-installed); occasional visible glitch in his retinal AR overlay manifests as faint cyan UI elements flickering at the edge of his vision, triggering involuntary micro-expressions and sideways eye movements",
+    "posture_movement": "Typically hunched or folded into whatever surface he occupies; walks with economical, slightly distracted gait; hands are always in motion — fidgeting, gesturing, unconsciously mimicking typing; makes frequent micro-adjustments to his cat ears when thinking; prone to freezing mid-conversation when processing notifications only he can see",
+    "clothing_style": "Tier 4-5 practical utility: layered synthetic base layers (thermal regulation, often mismatched), oversized hoodies or canvas jackets with asymmetrical pocket configurations for tools and worn devices, cargo pants with evidence of improvised reinforcement at stress points, footwear is functional and held together with apparent stubbornness; no corporate branding; everything worn into softness; occasional patch of medical tape holding something together"
+  },
+  "image_prompt": "Sterling Touré-Johansson, mixed Southeast Asian/East Asian/Sub-Saharan African heritage, 172cm lean angular frame, warm medium-deep brown skin with golden undertones, dark brown coiled hair shoulder-length unkempt, medium brown eyes with visible faint retinal AR overlay circuitry, sharp defined cheekbones, youthful face with dark circles, silver-grey matte geneware cat ears positioned slightly too high, self-installed. Dressed in mismatched layered synthetic base layers, oversized worn canvas jacket, reinforced cargo pants, functional weathered footwear, medical tape repairs visible. Hunched posture, hands in constant motion fidgeting, micro-adjusting cat ears, lost in thought. Seated in neon-lit GLMZ hacker den, cyan UI glitch elements flickering at edge of vision, dim ambient lighting casting shadows across defined features, cyberpunk 2226 aesthetic, moody introspective moment, gritty functional environment --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 50.2,
+    "East Asian": 25.9,
+    "Sub-Saharan African": 23.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

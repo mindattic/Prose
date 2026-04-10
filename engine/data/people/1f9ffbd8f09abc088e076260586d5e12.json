@@ -1,0 +1,111 @@
+{
+  "id": "1f9ffbd8f09abc088e076260586d5e12",
+  "name": "Kai Tovar-Vestergaard",
+  "type": "character",
+  "aliases": [
+    "The Neuromancer",
+    "Brainprint"
+  ],
+  "role": "Private Investigator",
+  "description": "Ravi Eriksson-Mensah is one of perhaps thirty certified BCI forensic examiners in GLMZ, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
+  "affiliation": "Independent — certified BCI forensic examiner, court-recognized expert",
+  "tier": "Tier 3",
+  "location": "A sterile clinic-office hybrid on Kessler Row, equipped with neural scanning equipment that costs more than most apartments, near Halsted and Chicago Ave",
+  "specialization": "BCI forensics — reading neural data trails, memory fragment recovery, cognitive timeline reconstruction",
+  "methods": [
+    "Deep BCI data extraction — recovering deleted memories and experiences from neural storage",
+    "Cognitive timeline reconstruction — building a minute-by-minute record of what a subject's BCI recorded",
+    "Neural signature analysis — identifying unique brainwave patterns to prove identity or presence",
+    "Ambient BCI data collection — gathering involuntary neural emissions from subjects in proximity",
+    "Cross-referencing BCI data with environmental sensors for corroborative evidence"
+  ],
+  "notable_cases": [
+    "Proved a corporate executive was present at a murder scene by recovering ambient BCI data from three witnesses who didn't know they'd recorded anything",
+    "Exonerated a wrongly accused dockworker by demonstrating that their BCI memory of the crime had been fabricated — planted by someone with access to neural editing tools",
+    "Reconstructed the final 72 hours of a dead man's BCI to identify his killer — the data had been partially corrupted but Ravi recovered enough fragments to build a case"
+  ],
+  "equipment": [
+    "NeuroScan 4400 — a clinical-grade BCI analysis platform capable of deep memory extraction",
+    "Portable neural interface for field work — lower resolution but can read BCI data without clinical setup",
+    "Faraday cage built into his office — prevents external interference during sensitive scans",
+    "Custom analytical software he wrote himself for pattern-matching neural signatures",
+    "Archive of over 40,000 neural signature profiles collected over fifteen years of practice"
+  ],
+  "personality": "Ravi is meticulous to the point of obsession and ethical to the point of inconvenience. He will refuse a case if the client wants him to fabricate findings, and he has testified against his own clients when the evidence pointed in a direction they didn't like. He is quiet, methodical, and uncomfortable in social situations — he relates better to data than to people, which is ironic for someone who spends his life literally inside other people's heads. He has developed an unsettling habit of staring at people's temples when they talk, as if he's trying to read their BCI through their skull. He is deeply troubled by the ethical implications of his work and writes lengthy journal entries about consent and cognitive privacy that nobody reads.",
+  "relationships": [
+    {
+      "name": "Dr. Solene Gutierrez-Appiah",
+      "type": "former colleague",
+      "description": "Axiom Institute neuroscientist who still feeds him research data and worries about his isolation"
+    },
+    {
+      "name": "Magistrate Petros Alvarez-Nwosu",
+      "type": "professional contact",
+      "description": "Corporate arbitration judge who frequently calls on Ravi as an expert witness and trusts his findings implicitly"
+    }
+  ],
+  "story_hooks": [
+    "During a routine scan, Ravi discovers that a subject's BCI contains memories that don't belong to them — memories of events that haven't happened yet",
+    "Someone with neural editing capabilities is planting false memories in witnesses across multiple cases, and Ravi is the only person who can detect the forgeries",
+    "A deep scan goes wrong and Ravi becomes trapped in a dead subject's neural data, experiencing their last hours on loop"
+  ],
+  "tags": [
+    "character",
+    "private_investigator",
+    "bci_forensics",
+    "neuroscience",
+    "kessler_row",
+    "expert_witness",
+    "sentient"
+  ],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Tessera Industries Deep Scan Penetrating Radar DSR-1",
+    "Chimera-Null",
+    "Déjà Vu",
+    "Chicago",
+    "Arcturus KS-7 'Nursery'",
+    "Deniz Salazar-Quansah",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "The Heritage Vault",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European base with significant Hispanic/Latin American warmth, enriched by South Asian and Pacific Islander undertones, with subtle sub-Saharan African complexity in skin depth and feature definition",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and composed, with the posture of someone who spends most of their time seated at high-resolution neural imaging consoles. Shoulders slightly rounded from years hunched over data. Wiry rather than muscular, with the controlled efficiency of movement that comes from minimal wasted gesture.",
+    "hair_color": "Dark brown with silver threading at the temples",
+    "hair_style": "Swept back neatly, kept short at the sides. Precision-groomed, no affectation",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint amber undertones",
+    "skin_tone": "Warm medium brown with golden undertones, blending Scandinavian fairness with Latin American and South Asian richness, deepened subtly by sub-Saharan African undertones that add warmth and dimension",
+    "complexion": "Clean-shaven with refined, slightly angular features reflecting Northern European bone structure softened by South Asian and Hispanic fullness. Faint lines around the eyes from years of close work and concentration. Skin maintains warm, even tone despite clinic-bound pallor. Expression tends toward neutral observation rather than warmth.",
+    "distinguishing_marks": [
+      "Faint surgical scar on the left temple, approximately 3cm long, where a diagnostic neural interface was installed during his Axiom Institute years — barely visible unless light catches at certain angles",
+      "Thin white line across the inner left wrist, partially obscured by his watch, from a research-era accident with equipment"
+    ],
+    "visible_augmentations": "None visible. All implants are subcutaneous or internal. He wears a discrete neural readout device on his left wrist — a thin, matte-black band that syncs with his clinic equipment, but it appears to be ordinary chronometry to casual observation.",
+    "posture_movement": "Precise, measured movements. He walks with purpose but without aggression. Sits very still during interviews — rarely fidgets, rarely blinks noticeably. Tends to hold eye contact slightly longer than social convention, an occupational habit from reading micro-expressions. Speaks in measured tones with minimal hand gestures.",
+    "clothing_style": "Tier 2-3 functional minimalism. Favors high-end athleistic wear in muted grays, blacks, and deep blues — brands like Helios and Kasper that advertise durability and precision over ostentation. Wears well-fitted compression shirts under open jackets, functional clothing that suggests athletic maintenance without athletic pretension. His watch is an expensive Swiss-analog piece, a deliberate rejection of smart devices. Minimal jewelry — a simple silver band on his right ring finger, no other adornment. Everything about his appearance is calibrated to project competence and impartiality rather than personality."
+  },
+  "image_prompt": "Portrait of Kai Tovar-Vestergaard, 2226 cyberpunk neural diagnostician. Warm medium-brown skin with golden undertones, blended Northern European and South Asian features, sharp angular bone structure. Dark brown hair with silver at temples, swept back neatly. Warm amber-brown eyes with slight intensity from years reading micro-expressions. Clean-shaven, faint lines around eyes. Wearing muted gray compression shirt under open black minimalist jacket. Discrete matte-black neural readout band on left wrist. Faint temple scar barely visible in cool clinical lighting. Neutral, composed expression. Precise posture. Soft clinic fluorescent lighting with slight blue accent. Professional, detached demeanor. Cyberpunk 2220s aesthetic. High resolution, sharp focus on face. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 43.2,
+    "Hispanic/Latin American": 23.8,
+    "South Asian": 15.2,
+    "Pacific Islander": 11.3,
+    "Sub-Saharan African": 6.5
+  },
+  "ancestry_harmonized": true
+}

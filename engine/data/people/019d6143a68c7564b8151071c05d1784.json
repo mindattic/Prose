@@ -1,0 +1,156 @@
+{
+  "id": "019d6143a68c7564b8151071c05d1784",
+  "type": "character",
+  "name": "Reed Haugen",
+  "aliases": [
+    "The Priest"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Shrine operator",
+  "age": 57,
+  "status": "active",
+  "location": "The Shelf, near Ashland and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Techno-animist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Chicago",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions AR-7 'Mandate'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Flicker",
+    "Idris Forsberg-Quaye",
+    "Irontide Tidal Energy",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Heritage Vault",
+    "The Pure Hand",
+    "Timur Osei-Bjelke",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American, East Asian, and South Asian ancestry blended — a striking combination yielding warm, complex undertones across skin and features. The structure suggests East Asian bone structure softened by Latin American warmth and South Asian depth.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Stocky and broad-shouldered, carrying weight with deliberate groundedness — the physique of someone who moves through the world with intention rather than haste",
+    "hair_color": "Steel gray with black undertones",
+    "hair_style": "Pulled back in a neat, shoulder-length braid threaded with thin copper wire",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with subtle amber undertones",
+    "skin_tone": "Medium, warm golden-brown — the blended result of Latin American, East Asian, and South Asian heritage. Neither dark nor pale, but richly saturated with olive and amber undertones that shift subtly in different light.",
+    "complexion": "Weathered and lined, with deep creases around the eyes and mouth suggesting decades of intense focus. High cheekbones with subtle East Asian angularity softened by fuller features reflecting Latin American and South Asian ancestry. Neatly groomed beard, salt-and-pepper, kept close to the jaw. Skin carries a faint, perpetual sheen — either ritual oils or subcutaneous moisture regulation.",
+    "distinguishing_marks": [
+      "Ritual scarification along both forearms in geometric patterns — deliberate, ritualistic, not accidental trauma",
+      "A faded birthmark on his left temple, partially obscured by age and pigmentation shift",
+      "Small circular burns on his palms and fingertips, consistent with decades of handling heated or energized objects"
+    ],
+    "visible_augmentations": "None obvious at first glance. However, his eyes occasionally catch ambient light with a faint violet flicker — suggesting subcutaneous neural augmentation tied to perception or sensory processing. His fingertips bear faint luminescent tracery under dim light, barely visible unless he's holding something conductive.",
+    "posture_movement": "Moves with deliberate slowness, almost ritualistic. Each gesture appears weighted with meaning. He stands with feet planted wide, as if rooted. Speaks infrequently but with absolute certainty. His hands are often in motion — not nervous, but conducting some invisible current",
+    "clothing_style": "Tier 3-4 aesthetic: layered linen and synthetic hybrid fabrics in earth tones (rust, charcoal, deep indigo). Wears a long, open-front vest embroidered with hand-stitched circuit patterns and animist glyphs. Underneath, simple cotton undershirt. His belt is woven copper wire and natural fiber. No corporate logos. Functional but ceremonial — clothing as spiritual practice, not status symbol. Worn leather boots, scuffed and purposefully maintained."
+  },
+  "image_prompt": "Cyberpunk 2226, Reed Haugen: a 178cm man with golden-brown skin blending East Asian, Hispanic, and South Asian heritage. Weathered face with deep creases, high cheekbones, warm amber-brown eyes with violet neural augmentation flicker. Steel-gray hair in long shoulder braid threaded with copper wire. Salt-and-pepper beard. Ritual geometric scarification on forearms, subtle luminescent tracery on fingertips. Wearing layered earth-tone linen, long embroidered vest with circuit and animist patterns, woven copper-wire belt, worn leather boots. Posture wide-planted and rooted, hands conducting invisible current. Standing in dim ambient lighting, subcutaneous augmentations subtly glowing. Ritual, grounded, intentional. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 40.3,
+    "East Asian": 37.3,
+    "South Asian": 22.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

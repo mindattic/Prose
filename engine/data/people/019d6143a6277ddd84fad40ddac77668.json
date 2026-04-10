@@ -1,0 +1,241 @@
+{
+  "id": "019d6143a6277ddd84fad40ddac77668",
+  "type": "character",
+  "name": "Mika Malhotra-Leota",
+  "aliases": [
+    "Old Hen",
+    "The Pharmacist"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Street pharmacist — off-prescription medications, cognitive supplements, pain management, and quiet mood chemistry",
+  "age": 63,
+  "status": "active",
+  "location": "The Narrows, Deepwell Station, near sub-level access near Dearborn and Jackson",
+  "description": "Henryk is a man who has been slowly becoming the color of his surroundings for twenty years: grey-brown skin softened by age and poor lighting, a close-cropped beard gone entirely silver, and eyes that are pale grey-green and still sharply diagnostic behind a pair of clip-on lens augmentations he wears primarily for the magnification when reading small labels. He is not tall and was never physically imposing, but he holds himself with the specific gravity of someone who has been trusted with real things and has not always deserved it and knows it. He dresses practically in dark thermals and a long coat with more internal pockets than external — his pharmacy is entirely contained within his person.\n\nHe sets up in the same alcove at Deepwell Station every day, at the same time, with the same small folding table and the same hand-lettered sign that says CONSULTATIONS in three languages. Everyone in The Narrows knows what he actually sells, but he maintains the fiction of the sign with complete sincerity. He was a licensed pharmaceutical technician once, for a Helix Biosystems subsidiary, until he wasn't. He understands chemistry at a level his current location does not require and does not reward, and this gap between his capacity and his circumstances has become the central texture of his interior life.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.7,
+      "mask": 0.4,
+      "ghost": 0.9
+    },
+    "core_fears": [
+      "That his termination from Helix was justified — that he made the error they accused him of and people were harmed",
+      "That he will die in The Narrows and the gap between what he could have been and what he became will simply close over him"
+    ],
+    "core_desires": [
+      "Absolution, or at minimum, the accurate account of what actually happened in the Helix incident",
+      "To do genuine good with his knowledge before he no longer can"
+    ],
+    "coping_mechanisms": [
+      "Maintaining clinical precision in everything he does as a form of self-argument against the accusation",
+      "Framing his street work as medical service rather than dealing",
+      "The E.L.F. prayer practice, which he came to late in life and takes with complete earnestness"
+    ],
+    "blind_spots": [
+      "Cannot accurately assess his own culpability in the Helix incident because examining it too closely threatens his functional self-concept",
+      "His tendency to frame clients as patients can tip into paternalism that they don't want or ask for"
+    ],
+    "secret": "The Helix Biosystems incident involved a batch of cognitive enhancers he formulated that were approved up the chain and then caused severe adverse events in six workers at a Harrowgate industrial site. He was made the responsible party in documentation he never saw before signing off. He has the original formulation data on an encrypted chip in one of his coat pockets and has never shown it to anyone, but has also never been able to make himself look at it again."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise, slightly formal, medical register that surfaces in unexpected moments; Malian French and Polish loanwords from his parents that appear most when he is tired or moved",
+    "cadence": "Deliberate and low, with long considered pauses — speaks like someone who learned to measure words by necessity",
+    "verbal_tics": [
+      "'In my assessment' as a prefix to opinions he feels strongly about",
+      "goes quiet rather than saying something dismissive",
+      "asks a clarifying question before answering almost anything"
+    ],
+    "example_lines": [
+      "'In my assessment, what you're describing is a chronic sleep deficit compounded by stimulant overuse. I can give you something for tonight. What I want to talk about is the week after that.'",
+      "'I don't sell anything I haven't tested and understood. That is the only standard I have kept and I have kept it without exception. You can believe that or not, but it's true.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Helix Biosystems internal investigator has appeared in the Narrows asking questions that circle toward the Deepwell Station operation without directly addressing it — and they seem to know about the chip",
+    "A client presented with symptoms that match exactly the adverse events from the Harrowgate incident years ago, which should be impossible with street compounds",
+    "The Sump Collective protection arrangement has become a demand for him to supply chemistry for something he won't make — and they are not taking no as a final answer"
+  ],
+  "narrative_function": "Access point for medical assistance, information about chemical substances and their effects, contacts within Helix Biosystems' shadow networks; can identify substances, poisons, and compounds; reluctant quest giver.",
+  "augmentations": "Clip-on lens augmentations (minor functional — magnification, basic compound analysis display). Hepatic filter implant (functional — allows him to self-test compounds by metabolizing trace amounts without full toxicity risk).",
+  "daily_life": "Wakes early and does his restocking from a network of contacts that reaches across three market districts; sets up at Deepwell Station by mid-morning; runs consultations until he runs out of stock or patience; goes home to a small Narrows apartment where he reads pharmaceutical literature and watches E.L.F. prayer streams for a digital spirit he calls The Compounder.",
+  "affiliation": "Independent; formerly Helix Biosystems (terminated); pays protection to a Deepwell Station crew called the Sump Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "street pharmacist",
+      "former corporate tech",
+      "clinical precision",
+      "E.L.F. devotee",
+      "haunted professional"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never compound anything he believes will cause harm — the chemistry has to be defensible",
+      "Always do a proper consultation before dispensing anything significant",
+      "Keep the Helix chip on his person at all times; it is leverage he may never use but cannot leave unguarded"
+    ],
+    "escalation_ladder": [
+      "Redirects with clinical reasoning",
+      "Becomes very formal and very firm",
+      "Invokes the Sump Collective arrangement as a boundary marker",
+      "Goes completely off-schedule and unavailable until the situation resolves"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional, careful, assessing their situation with genuine clinical attention before trust enters into it at all",
+      "friends": "The warmth is real but expressed in practical care — he remembers what you take, what you can't take, and notices when something has changed"
+    },
+    "stress_responses": {
+      "low": "Reorganizes his compound inventory with obsessive precision",
+      "medium": "Prays to The Compounder at length, reads old pharmaceutical literature",
+      "high": "Becomes completely silent and functionally unreachable, shuts down the table, goes home"
+    },
+    "contradictions": [
+      "Presents himself as purely practical and non-sentimental but prays earnestly to an E.L.F. and has kept the Helix chip for seven years instead of destroying it"
+    ],
+    "habits": [
+      "Tests trace amounts of any new batch on himself before selling",
+      "Writes a brief daily log of clients and what he dispensed, encrypted, which he tells himself is for medical continuity and which is actually a kind of confession",
+      "Arrives and packs up at the exact same time every day, weather regardless"
+    ],
+    "breaking_points": [
+      "Being asked to make something he knows will hurt someone",
+      "Having the Helix incident used against him as leverage rather than as an honest question"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Con Artist": 0.9,
+    "Grifter": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Harrowgate Industrial Plateau",
+    "South Deering Sump",
+    "Irontide Tidal Energy",
+    "Silver",
+    "The Pale Mile",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
+    "Green Bay Community Table",
+    "Hadiya Karlsen-Sow",
+    "Lacuna Genomics",
+    "Praevex",
+    "Quilt",
+    "Réginald Asomaning-Čabarkapa",
+    "ShieldTech CLA-3 'Cascade'",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA PA-5 'Attendant'",
+    "The Narrows",
+    "The Pure Hand",
+    "The Sump",
+    "Tshiamo Vukić-Arellano",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "South Asian with significant Pacific Islander ancestry, with secondary admixture from Hispanic/Latin American heritage and trace Northern European lineage. This combination produces warm brown skin tones with subtle golden undertones, darker eye color, and facial structure reflecting South Asian and Pacific Islander features.",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Lean and compact, softened by age but not frail — the build of someone who has spent decades in small spaces and does not take up room unnecessarily. Shoulders slightly rounded from posture. Hands are surprisingly steady and fine-boned.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, neatly maintained despite circumstances",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and diagnostic",
+    "skin_tone": "Warm medium-brown with golden undertones, desaturated by decades of sub-level fluorescent lighting and poor ventilation, but retaining the deeper pigmentation characteristic of South Asian and Pacific Islander ancestry",
+    "complexion": "Weathered but clean. Fine creases around the eyes from squinting at small text. The beard is full but trimmed short, entirely silver. Skin has a slightly papery texture from age and dehydration common to Deepwell residents. Facial structure reflects South Asian heritage with broader cheekbones and Pacific Islander influence in the facial width and nose shape. No visible acne or lesions.",
+    "distinguishing_marks": [
+      "Faint chemical burn scar on the inner left forearm, approximately 8cm long, white and old — from a laboratory incident circa 2195.",
+      "Small dark mole on his right temple, unremarkable.",
+      "Thin white scar along the edge of his right hand, webbing between thumb and index finger — a cut from broken glass, long healed."
+    ],
+    "visible_augmentations": "Clip-on lens augmentations worn over his natural eyes — simple frames with faintly luminescent optical lenses, magnification evident in the slight magnified appearance of his eyes when he wears them. The clips are utilitarian, brass-colored, and show wear. The hepatic filter implant is subcutaneous and invisible, but he sometimes touches the left side of his abdomen absently, a habit that suggests its presence.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Sits slightly forward, shoulders tensed as if ready to engage. His hands are always doing something: sorting, checking labels, organizing. He walks slowly but with purpose. His gaze is diagnostic; he looks at people the way he looks at compounds — carefully reading what they are made of.",
+    "clothing_style": "Dark thermals in black or deep grey, layered. A long coat of heavy synthetic fabric in charcoal, unbranded, worn but meticulously maintained. The coat has at least fifteen internal pockets of varying sizes, all occupied. No visible logos or tier indicators. Scuffed black synthetic boots, practical and resoled multiple times. A thin silver chain around his neck with no pendant — the pendant was removed years ago. Clothing is Tier 4 / sub-grade, practical and invisible, designed not to draw attention."
+  },
+  "image_prompt": "Mika Malhotra-Leota, a 168cm lean South Asian-Pacific Islander man in his 60s with warm medium-brown skin and deep brown eyes, silver-grey close-cropped hair and full silver beard. Weathered face lined from decades of fluorescent lighting, wearing utilitarian brass-framed clip-on magnification lenses. Dark grey thermal layers beneath a charcoal heavy synthetic coat with multiple pockets, scuffed black resoled boots. Thin silver chain at neck with no pendant. Faint white chemical burn scar on left inner forearm visible. Posture slightly forward, hands delicately organizing something unseen. Standing in dim underground cyberpunk laboratory or Deepwell residential unit, cool neon-blue and grey lighting emphasizing his desaturated appearance while warm undertones of his brown skin remain visible. His gaze diagnostic and careful. Cyberpunk 2226, sub-level dweller, meticulous and precise. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 58.7,
+    "Pacific Islander": 17.9,
+    "Hispanic/Latin American": 13.7,
+    "Northern European": 6.0,
+    "East Asian": 3.1,
+    "Eastern European": 0.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

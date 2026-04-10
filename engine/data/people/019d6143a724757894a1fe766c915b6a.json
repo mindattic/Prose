@@ -1,0 +1,282 @@
+{
+  "id": "019d6143a724757894a1fe766c915b6a",
+  "type": "character",
+  "name": "Ama Hernández",
+  "aliases": [
+    "Torchy",
+    "Y-T"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Metro Police beat cop, Gage Circuit district",
+  "age": 29,
+  "status": "active",
+  "location": "Gage Circuit, near Milwaukee and North Ave",
+  "description": "Yemisi is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.2,
+      "mask": 0.4,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "becoming the kind of cop she grew up afraid of",
+      "that the system she serves is irredeemable"
+    ],
+    "core_desires": [
+      "to actually make one block genuinely safer",
+      "to be known as someone who kept their word"
+    ],
+    "coping_mechanisms": [
+      "ritualistic routine",
+      "handwriting things to slow her thoughts down",
+      "talking to the E.L.F. shrine on the corner of Gage and 14th"
+    ],
+    "blind_spots": [
+      "tends to extend too much good faith to institutions over individuals",
+      "underestimates how much her superiors tolerate her because she clears tickets, not because they share her values"
+    ],
+    "secret": "Six months ago she watched her supervising sergeant plant contraband on a Tier 1 kid and wrote it up — then quietly destroyed the report after being told the kid's record wouldn't survive another charge. She tells herself she made the right call. She checks the kid's public profile every week."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, precise, avoids jargon except when nervous — then slips into procedural language as a shield",
+    "cadence": "Measured, with deliberate pauses before answering. Doesn't fill silences.",
+    "verbal_tics": [
+      "'Tell me again, slower'",
+      "repeating a key word back as a question"
+    ],
+    "example_lines": [
+      "'I've walked this block four hundred times. You want to tell me what usually happens here? Or should I tell you?'",
+      "'I'm not in a hurry. I've got nowhere I need to be in the next twenty minutes. Are you sure that's your answer?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She has quietly documented a pattern of code violations in a Tessera-owned tenement and doesn't know what to do with the file",
+    "The E.L.F. at the Gage/14th shrine has started giving her information she shouldn't have — and asking for something in return"
+  ],
+  "narrative_function": "Ground-level information source with genuine community knowledge; potential ally or obstacle depending on player approach; represents the human cost of keeping faith in institutions",
+  "augmentations": "Standard-issue subdermal comm implant; cosmetic bioluminescent freckle mod (regretted); no combat chrome",
+  "daily_life": "Walks the same twelve-block circuit twice per shift, stopping at the same noodle cart for the same order at the same time every day. Files reports in longhand and then transcribes them — a double labor she can't explain to anyone.",
+  "affiliation": "GLMZ Metro Police, Gage Circuit Precinct 7",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "observant",
+      "principled",
+      "conflicted",
+      "community-rooted",
+      "quietly stubborn"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always hear the full story before acting",
+      "Don't lie — deflect or stay silent instead",
+      "If a rule protects someone weaker, follow it; if it protects someone stronger, question it"
+    ],
+    "escalation_ladder": [
+      "Observation and quiet presence",
+      "Direct verbal engagement, identifying herself",
+      "Formal warning with documentation",
+      "Physical intervention only as last resort"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful but not hostile; lets people talk themselves into or out of trouble",
+      "friends": "Steadier than anyone expects; shows up, remembers things, checks in without being asked"
+    },
+    "stress_responses": {
+      "low": "Gets quieter and more observant",
+      "medium": "Retreats into procedure as emotional regulation",
+      "high": "Goes cold and very precise — which reads to others as frightening calm"
+    },
+    "contradictions": [
+      "Believes in the law and regularly bends it for people she judges deserving"
+    ],
+    "habits": [
+      "Eats at the same noodle cart daily",
+      "leaves a single data chip at the corner E.L.F. shrine every Friday",
+      "writes names of people she encounters in a personal log, not an official one"
+    ],
+    "breaking_points": [
+      "Watching a child harmed while following orders to stand down"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "active/regretted",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Diplomat": 0.9,
+    "Social Chameleon": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born, Gage Circuit",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Metro Police after two years on community safety volunteer corps",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Destroyed the report on her sergeant; has not recovered from it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Compact-7 'Rat Trap'"
+  ],
+  "related_entities": [
+    "Gage Circuit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Gradient Compact",
+    "Tessera Corponation",
+    "The Milwaukee Core",
+    "Ambassador Silk",
+    "Bintou Halvorsen-Osei",
+    "Bogdan Achebe-Svanstrom",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "Davi Ousseini-Brătianu",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "MERIDIAN",
+    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ringo CP-2 'Constable'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tshiamo Vukić-Arellano",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Vojislav Addo-Mensimah",
+    "Witness",
+    "Ximena Bautista-Nwosu"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African (34.7%) with significant Hispanic/Latin American (30.5%) ancestry, complemented by East Asian (14.4%), South Asian (12.4%), and North African (6.6%) heritage. This genetic blend creates a rich, multifaceted phenotype with warm undertones and diverse facial structure influences.",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Compact and broad-shouldered with visible muscle density in her arms and core. Built like someone who has spent years in physical labor — efficient, no wasted mass, but strong. Her frame suggests containment rather than expansion.",
+    "hair_color": "Natural black",
+    "hair_style": "Tight coils, pinned and braided close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Warm golden-brown with subtle reddish undertones from her African and Latin American heritage, layered with slight golden warmth from East and South Asian ancestry. Darkens to rich mahogany in direct sunlight.",
+    "complexion": "Clear skin with visible cosmetic bioluminescent freckles across both cheekbones and the bridge of her nose — tiny points of soft blue-green light that pulse faintly with elevated heart rate. Her face is structured and serious with strong cheekbones and a slight forward cant to her jaw suggesting listening, reflecting the blended geometry of her diverse ancestry. No facial hair. Minimal makeup; she doesn't appear to try. Her eyes are steady and patient in a way that reads as unnerving to most people.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones and bridge of nose (cosmetic mod, regretted)",
+      "Small, barely visible scar on the left side of her jawline (hairline-thin, old)",
+      "Thin scar across the back of her right hand, faded white, consistent with a cut rather than impact trauma"
+    ],
+    "visible_augmentations": "None visible. The subdermal comm implant is invisible. The bioluminescent freckles are cosmetic and highly visible, but she wears them as a regretted modification rather than a proud augmentation.",
+    "posture_movement": "She stands still for long periods with her weight balanced evenly. When she moves, it is economical and unhurried — she does not gesture while talking. Her default expression is patient and slightly inward-focused, as if she is listening to something just beneath the ambient noise. She has the particular physical stillness of someone trained to observe without reacting. Her gaze settles on people for longer than is comfortable.",
+    "clothing_style": "Regulation GLMZ Metro Police uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
+  },
+  "image_prompt": "Ama Hernández, 168cm tall, metro police officer in cyberpunk 2226, warm golden-brown complexion with mahogany undertones from blended Sub-Saharan African, Hispanic, East Asian, and South Asian heritage. Compact muscular build, steady patient gaze. Short natural black coils pinned close to scalp. Deep brown eyes. Bioluminescent blue-green cosmetic freckles pulsing softly across cheekbones and nose bridge. Faded scars on jawline and right hand. GLMZ regulation dark blue cargo pants with reflective striping, tactical boots, grey-blue uniform shirt, tactical vest with insignia, standard-issue cap. Still, economical posture with unnerving steady attention. Dimly lit precinct interior with neon accents, cool blue-grey LED lighting, slightly inward-focused expression. Cyberpunk aesthetic, hyper-realistic portrait, cinematic lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 34.7,
+    "Hispanic/Latin American": 30.5,
+    "East Asian": 14.4,
+    "South Asian": 12.4,
+    "North African": 6.6,
+    "Northern European": 1.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

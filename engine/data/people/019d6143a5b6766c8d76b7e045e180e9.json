@@ -1,0 +1,147 @@
+{
+  "id": "019d6143a5b6766c8d76b7e045e180e9",
+  "type": "character",
+  "name": "Echo Ingebrigtsen",
+  "aliases": [
+    "The Professor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Academic theft",
+  "age": 61,
+  "status": "active",
+  "location": "The Core, near State and Monroe",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Meridian Core",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Ngaire Kuznetsov-Adu",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "TESSERA PA-5 'Attendant'",
+    "The Heritage Vault",
+    "The Pure Hand"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Northern European (38%), Southeast Asian (30%), Sub-Saharan African (20%), and Hispanic/Latin American (13%) ancestry creates a distinctly multicontinental phenotype. Facial structure shows Southeast Asian cheekbone prominence and eye shape blended with Northern European bone structure. Skin tone reflects this complex mix — warm mid-brown with subtle golden and reddish undertones from the layered ancestry.",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Lean and wiry with the posture of someone accustomed to prolonged sitting. Visible muscle definition in forearms suggests decades of fine motor work. Slight forward curve to shoulders from age and desk labor.",
+    "hair_color": "Salt-and-pepper gray with darker roots",
+    "hair_style": "Close-cropped, precisely maintained with minor fade lines",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with age-related yellowing in the sclera",
+    "skin_tone": "Warm golden-brown with complex undertones — the result of Southeast Asian, Northern European, Sub-Saharan African, and Latin American ancestry blending. Neither uniformly dark nor light, but richly dimensional with subtle warm and cool undertones shifting across the face.",
+    "complexion": "Weathered but well-maintained. Fine lines around eyes and forehead create a map of decades-long concentration. Clean-shaven with occasional five-o'clock shadow. Minor age spots on temples and cheekbones. Slight warmth to cheeks suggesting Southeast Asian and African heritage influence on facial structure.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 3cm along right jawline, partially obscured by stubble",
+      "Faded indigo tattoo on inner left wrist — appears to be archival notation or personal cipher",
+      "Burn mark on back of left hand, roughly 2cm diameter, suggesting old chemical or thermal accident"
+    ],
+    "visible_augmentations": "None visible. However, subtle neural interface port visible at base of skull behind left ear when hair is disturbed — suggests subcutaneous cognitive enhancement or data interface capability.",
+    "posture_movement": "Moves with calculated efficiency, minimal wasted motion. Tends to tilt head slightly when listening, suggesting auditory processing enhancements. Hands often steepled or gesture with precision. Walks with measured pace, favoring the left side slightly.",
+    "clothing_style": "Tier 2-3 hybrid: tailored black wool trousers, fitted charcoal turtleneck or oxford shirt in muted colors. Favors vintage-style leather jacket with reinforced panels (possibly lined with signal-blocking material). Minimal visible branding. Silver-toned accessories — simple watch with analog face, worn wedding band. Carries a worn leather messenger bag with multiple interior pockets."
+  },
+  "image_prompt": "Echo Ingebrigtsen, 178cm lean-muscled older figure with warm golden-brown skin reflecting Southeast Asian, Northern European, African, and Latin heritage blend. Short salt-and-pepper gray hair, deep brown eyes with age-yellowing, weathered face with fine lines and subtle age spots. Northeast Asian cheekbone prominence, Northern European bone structure. Thin surgical scar along right jawline. Faded indigo wrist tattoo visible. Wears tailored black trousers, fitted charcoal turtleneck, vintage leather jacket with reinforced panels. Silver watch, worn wedding band. Subtle neural interface port at base of skull. Slight forward shoulder curve from decades of desk work. Calculated, efficient posture. Cyberpunk 2226, Great Lakes Metropolitan Zone. Dim amber-tinted indoor lighting casting subtle shadows across weathered features. Worn leather messenger bag. Mood: quiet intensity, professional, digitally augmented intellect. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 38.3,
+    "Southeast Asian": 29.5,
+    "Sub-Saharan African": 19.6,
+    "Hispanic/Latin American": 12.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

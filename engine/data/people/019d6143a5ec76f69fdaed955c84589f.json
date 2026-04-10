@@ -1,0 +1,284 @@
+{
+  "id": "019d6143a5ec76f69fdaed955c84589f",
+  "type": "character",
+  "name": "Sable Mbekele",
+  "aliases": [
+    "The Father",
+    "Mr. Morozov",
+    "Wire-Jaw"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Anya's husband — beaten by the gang, jaw wired shut",
+  "age": 41,
+  "status": "active",
+  "location": "The Shelf — Tier Four, bedridden, near Kedzie and Division",
+  "description": "Demyan was a large man before the beating — a cargo handler at the Shelf's loading platforms, the kind of work that builds slabs of muscle across the back and shoulders. He is still large, but the architecture has shifted. His jaw is wired shut with medical-grade titanium pins visible through the skin of his cheeks like rivets in a hull. He communicates through a vocoder pad strapped to his wrist that converts typed text to flat, mechanical speech. His eyes are the part that didn't break — dark, warm, patient. He looks at his wife like she invented sunlight. He looks at his daughter like she is the reason sunlight matters. When Kyle's teeth arrive, delivered by a trembling Yuliya, Demyan will hold them in his palm for a long time. Then he will laugh. The vocoder will translate it as a series of monotone ha-ha-ha sounds. It will be the funniest and saddest thing in the Shelf that night.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.8,
+      "shadow": 0.1,
+      "mask": 0.3,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "That Anya sold something irreplaceable to pay for his revenge",
+      "That he cannot protect his family from his own bed"
+    ],
+    "core_desires": [
+      "To eat solid food",
+      "To carry things again",
+      "To thank the man who did what he could not"
+    ],
+    "coping_mechanisms": [
+      "Types jokes on the vocoder — gallows humor in Russian",
+      "Sketches mechanical designs on a tablet — he was an engineer before the displacement"
+    ],
+    "blind_spots": [
+      "Does not know Anya is selling blood",
+      "Thinks Yuliya is adjusting well"
+    ],
+    "secret": "He recognized one of the gang members. A former colleague from the loading platforms. He has not told Anya."
+  },
+  "speech_patterns": {
+    "vocabulary": "Speaks through a vocoder pad. Flat monotone delivery makes everything sound either profound or absurd.",
+    "cadence": "Types slowly. Deliberate. Each word chosen because typing hurts.",
+    "verbal_tics": [
+      "Ends serious statements with 'ha' — unclear if this is humor or a vocoder glitch"
+    ],
+    "example_lines": [
+      "TEETH. GOOD. HA.",
+      "TELL WIRE MAN I OWE HIM SOUP. WHEN JAW WORKS."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Anya Morozova",
+      "type": "wife",
+      "description": "His world. He knows she is suffering for him. He cannot stop her.",
+      "emotional_core": "Love expressed as helplessness",
+      "story_tension": "When the wires come off, what kind of man will he be?"
+    },
+    {
+      "name": "Kyle",
+      "type": "avenger / stranger",
+      "description": "A man he has never met who broke the people who broke him. Demyan does not know how to feel about this.",
+      "emotional_core": "Confused gratitude",
+      "story_tension": "Demyan wants to meet Kyle. Kyle does not want to be met."
+    }
+  ],
+  "story_hooks": [
+    "He recognized a gang member — former colleague, which means the beating wasn't random",
+    "His engineering background could be useful to someone building or maintaining hardware",
+    "The vocoder creates accidental poetry"
+  ],
+  "narrative_function": "Demyan is what Kyle is fighting for — not as an individual but as a category. A good man broken by people with more chrome and less conscience. His recovery (or failure to recover) is a barometer for whether Kyle's violence actually helps.",
+  "augmentations": "Titanium jaw pins (medical, not elective). Vocoder pad.",
+  "daily_life": "Bedridden. Types. Sketches. Waits for the wires to come off.",
+  "affiliation": "None",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 3,
+      "vitality": 4,
+      "perception": 5
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 7,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": -1,
+      "transparency_guardedness": -1
+    },
+    "drives": [
+      "Recover physically",
+      "Protect family from his bed",
+      "Thank the man who avenged him"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Types gallows humor on the vocoder, sketches mechanical designs"
+      },
+      "moral": 8,
+      "trust": 6,
+      "desperation": 6
+    },
+    "strengths": [
+      "Perseverance",
+      "Love",
+      "Humor",
+      "Gratitude",
+      "Humility"
+    ],
+    "weaknesses": [
+      "Self-regulation",
+      "Prudence",
+      "Leadership",
+      "Zest",
+      "Bravery"
+    ],
+    "tags": [
+      "bedridden",
+      "jaw-wired",
+      "vocoder",
+      "engineer",
+      "husband",
+      "father",
+      "displaced",
+      "cargo-handler"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always use humor through the vocoder — laughter proves he is still alive",
+      "Will never tell Anya he knows about the gang member he recognized",
+      "Will always type slowly and deliberately — each word costs effort and matters",
+      "Will never let Anya see his despair — performs patience for her sake",
+      "Will always sketch designs on his tablet — engineering keeps his mind from breaking",
+      "Will never refuse Yuliya's help even when her maturity frightens him"
+    ],
+    "escalation_ladder": [
+      "Types faster on the vocoder — monotone urgency",
+      "Stops typing jokes — the absence of humor signals genuine distress",
+      "Attempts to stand despite his injuries — the cargo handler's body remembers strength",
+      "Uses the vocoder to say something he has been holding back — flat monotone making it hit harder",
+      "Reveals the gang member he recognized — deploys his one piece of leverage"
+    ],
+    "interpersonal_modes": {
+      "Anya": "Looks at her like she invented sunlight; love expressed as helplessness and gratitude",
+      "Yuliya": "Looks at her like she is the reason sunlight matters; terrified of how fast she is growing up",
+      "Kyle": "Confused gratitude toward a stranger who did what he could not"
+    },
+    "stress_responses": {
+      "low": "Types jokes in Russian on the vocoder, sketches designs",
+      "medium": "Goes quiet on the vocoder, stares at the ceiling, flexes hands that used to carry cargo",
+      "high": "The vocoder stays silent for hours — Anya knows this means the pain is bad",
+      "critical": "Tries to get out of bed — the body rebels, but the spirit of the cargo handler demands action"
+    },
+    "contradictions": [
+      "Wants to meet Kyle but knows Kyle does not want to be met — gratitude with nowhere to go",
+      "Performs patience and humor for his family while recognizing one of his attackers and saying nothing",
+      "Was strong enough to carry anything but now cannot carry himself to the kitchen"
+    ],
+    "habits": [
+      "Ends serious vocoder statements with 'HA' — unclear if humor or glitch",
+      "Sketches mechanical designs on his tablet during sleepless nights",
+      "Types slowly, deliberately, making each word count",
+      "Watches the door whenever Yuliya leaves",
+      "Flexes his hands — the cargo handler's muscles remembering work"
+    ],
+    "breaking_points": [
+      "Learning Anya is selling her blood to pay for his revenge",
+      "The gang member he recognized coming back to finish the job",
+      "Yuliya being hurt or threatened because of what Anya hired Kyle to do",
+      "The wires coming off and discovering his jaw will never work properly again"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Titanium",
+    "IRONLIMB Fortress MK-IV Combat Leg Pair",
+    "Lazarus IDP-1 'Teeth'",
+    "Circadian Compression Therapy",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Kyle Ellen Corbin-Vasik",
+    "Lacunal",
+    "Mika Sorel",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Street Custom 'Gallows' Recurve Bow",
+    "The Patchwork Kitchen",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Unfinished Theorem",
+    "Timur Osei-Bjelke",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Pan-diasporic blend: 37% Sub-Saharan African (deep melanin foundation), 33% Northern European (facial structure refinement), 23% East Asian (eye shape, cheekbone prominence), 7% Pacific Islander (warm undertones). A genetic mosaic reflecting the Great Lakes Metropolitan Zone's ubiquitous mixing.",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick through the torso — cargo handler muscle beginning to atrophy from weeks of bed rest. Strength still visible in the architecture of his frame, but softening at the edges.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Combed back, unkempt from bed confinement",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Rich warm medium-brown with underlying reddish undertones from mixed ancestry. Pallid undertones from prolonged indoor confinement creating an ashen cast over the natural warmth — the contrast between his genetic depth and medical imprisonment visible in every inch.",
+    "complexion": "Weathered face showing the blended architecture of his mixed heritage: broad cheekbones with East Asian prominence, strong defined jaw from Northern European structure, deep-set eyes with warm Sub-Saharan undertones. The pallor of bed rest sits uneasily over naturally rich skin. Deep-set eyes, stubble growth irregular where the wires emerge through skin.",
+    "distinguishing_marks": [
+      "Titanium jaw pins visible as raised metal rivets breaking the skin symmetrically along both cheeks — medical-grade installation, unfinished healing.",
+      "Linear scarring across the left temple and cheekbone consistent with blunt-force trauma.",
+      "Faint bruising still visible along the right side of the face, yellowing at the edges.",
+      "Calloused palms and forearms from years of cargo handling, now idle.",
+      "Surgical incision scars along the angle of the jaw where the wires were anchored internally."
+    ],
+    "visible_augmentations": "Titanium jaw reconstruction pins protruding visibly through cheek tissue. Medical vocoder pad strapped to left wrist — black polymer casing with small speaker grille and flat tactile keyboard. The contrast between brutal injury and utilitarian tech is stark.",
+    "posture_movement": "Bedridden immobility has compressed him into the mattress. When he moves, it is careful, economical — minimal jaw motion. His eyes track with intense focus and warmth. Hands move with precision when typing or sketching; they are the only parts of him still capable of unguarded expression.",
+    "clothing_style": "Worn undershirt or medical gown, Tier 4 basics. When receiving visitors, he may wear a loose button-up over the gown — nothing elaborate. Everything loose-fitting to accommodate the wiring and to avoid pressure on healing tissue. Practical, colorless."
+  },
+  "image_prompt": "Sable Mbekele, 188cm tall, pan-diasporic face with Sub-Saharan warmth, Northern European structure, East Asian cheekbones — rich medium-brown skin drained by weeks of confinement into an ashen pallor. Dark brown eyes intense and focused. Medium dark hair graying at temples, combed back and unkempt. Titanium jaw reconstruction pins protruding visibly through cheek tissue in surgical precision. Linear scarring on left temple, fading bruises yellowing on right cheekbone. Bedridden in medical gown, black vocoder pad on left wrist with tactile keyboard. Hands showing cargo handler calluses, positioned with careful precision. Sterile medical lighting casting shadows across his reconstructed face. Cyberpunk 2226, GLMZ medical facility, utilitarian brutality meets genetic diaspora, economic immobility, eyes burning with unguarded warmth. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 37.1,
+    "Northern European": 32.9,
+    "East Asian": 22.8,
+    "Pacific Islander": 7.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

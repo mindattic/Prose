@@ -1,0 +1,256 @@
+{
+  "id": "019d6143a606797a9b7c8c78c4df1aae",
+  "type": "character",
+  "name": "Ash Lindström",
+  "aliases": [
+    "Bét",
+    "The Archivist"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Forensic evidence handler and chain-of-custody specialist, GLMZ Metro Police",
+  "age": 52,
+  "status": "active",
+  "location": "Fort Anchor, Metro Police Central Evidence Repository, near Halsted and Division",
+  "description": "Erzsébet is a sturdy, meticulous woman with iron-grey locs she keeps pinned up during work hours and lets down everywhere else, and deep brown skin that has picked up the particular pallor of someone who spends most of their life under artificial light. Her hands are always gloved when she is working and bare when she isn't — a transition she makes with a deliberateness that people who know her recognize as the boundary between Erzsébet the professional and Erzsébet the person. She has no cosmetic modifications and regards them with neither judgment nor interest; the question simply never came up for her.\n\nShe has worked Metro's Central Evidence Repository at Fort Anchor for twenty-three years and has survived five departmental reorganizations, three chiefs of police, two corruption purges, and one literal flood that compromised fourteen meters of archival shelving. She knows the repository the way surgeons know bodies — its logic, its failures, its places where things disappear and where they don't. She is the person Metro detectives call when they need to know if something was ever there. She is also, quietly, the person who notices when something that should be there isn't, and she keeps her own records because she stopped trusting Metro's in her eighth year.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.2,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Chain of custody being broken on something that matters — evidence lost, justice denied, permanently",
+      "Being made complicit through inaction in the thing she has spent her career preventing"
+    ],
+    "core_desires": [
+      "For the record to be accurate — not favorable, not useful, just accurate",
+      "For her work to matter in a way that outlasts her"
+    ],
+    "coping_mechanisms": [
+      "Rigorous procedure as moral framework — if the process is sound, the outcome is defensible",
+      "Her private records as a form of institutional conscience-keeping",
+      "Occasional late-evening visits to the Fort Anchor E.L.F. shrine — she leaves fragments of old case numbers as offerings, asking for clarity on things that were never resolved"
+    ],
+    "blind_spots": [
+      "Her faith in procedure can make her slow to act outside it, even when acting outside it is what the situation requires",
+      "Twenty-three years has given her an institutional loyalty that functions as an emotional anchor even when the institution doesn't deserve it"
+    ],
+    "secret": "Her private records — kept on an air-gapped personal drive, updated in longhand in a physical ledger as well — document forty-six instances over twenty-three years where evidence in her repository was accessed, altered, or disappeared by Metro personnel. Eleven of those cases have never been flagged anywhere. She doesn't know what to do with what she has, and she's running out of time to decide."
+  },
+  "speech_patterns": {
+    "vocabulary": "Forensic and procedural vocabulary deployed with absolute ease; in personal conversation, somewhat formal, tends toward precision even in casual contexts",
+    "cadence": "Unhurried and measured, with the patience of someone who has explained things carefully for two decades and knows that hurrying never helps",
+    "verbal_tics": [
+      "The record shows —",
+      "That's a different question.",
+      "In my experience —"
+    ],
+    "example_lines": [
+      "The item was logged, processed, and shelved. If it isn't there now, that is a separate event from my intake and I'd like to know exactly when it became a separate event.",
+      "I don't lose things. When something is lost here, it's because someone made it lost. Those are different verbs."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Evidence from a case that is about to be retried has disappeared — and Erzsébet's private records suggest it was accessed three years ago by someone who shouldn't have had clearance",
+    "She is approached by someone — not Metro, not Axiom — who knows she keeps private records and wants to know what she has on a specific case number from seventeen years ago"
+  ],
+  "narrative_function": "Evidence gatekeeper and institutional memory — the person who knows what Metro has, what it had, and what has gone missing. Quest-critical for any story involving forensic evidence, police corruption, or disappeared case materials.",
+  "augmentations": "Enhanced tactile sensitivity implant in both hands — originally installed for precise material identification, now standard for her work. Reading enhancement overlay (heads-up document display, low-profile). Nothing cosmetic.",
+  "daily_life": "Arrives at the repository before any other staff; processes incoming evidence logs; conducts integrity checks on stored items on a rotating schedule she designed herself; leaves precisely when her shift ends, no earlier, no later.",
+  "affiliation": "GLMZ Metro Police — Central Evidence Repository, Fort Anchor",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 0,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Institutional Memory",
+      "Principled",
+      "Long Game",
+      "Keeper of Secrets She Didn't Ask For"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Document everything — your intake, your doubts, your anomalies",
+      "Procedure is not a shield from responsibility, it is a record of what you chose to do",
+      "Do not release what you are not authorized to release, and know exactly who authorized you"
+    ],
+    "escalation_ladder": [
+      "Flag anomaly in personal log",
+      "Cross-check against Metro official records",
+      "Informal query to a trusted supervisor — of which she currently has none she fully trusts",
+      "Go outside Metro — a decision she has never made and thinks about constantly"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professional and slightly formal — warm enough not to be cold, reserved enough not to be accessible",
+      "friends": "The few people she trusts get a drier, more revealing version of her — she makes quiet jokes and asks careful questions about how people are actually doing"
+    },
+    "stress_responses": {
+      "low": "Retreats into process — runs additional integrity checks, adds to her private records",
+      "medium": "Becomes very still and very precise; speech slows, questions sharpen",
+      "high": "Physical stillness, near silence; has been known to remain at her desk for hours past shift-end working through something in her ledger"
+    },
+    "contradictions": [
+      "Believes in transparency of record while maintaining a secret archive that Metro doesn't know exists"
+    ],
+    "habits": [
+      "Gloves on at the start of work, gloves off at the end — always deliberate",
+      "Physical ledger update every Friday evening, regardless of what's in it",
+      "Late-evening E.L.F. shrine visits at Fort Anchor — case number offerings"
+    ],
+    "breaking_points": [
+      "Being directly ordered to falsify an intake record — an order she has never received and which would end her career in Metro one way or another"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Enhanced tactile sensitivity implant — both hands (forensic-grade, Metro-issued)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Enhanced tactile sensitivity implant — both hands (forensic-grade, Metro-issued)",
+      "replaces": ""
+    },
+    {
+      "name": "Reading enhancement overlay — heads-up document display, low-profile (Metro-issued, personal use augmented)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Reading enhancement overlay — heads-up document display, low-profile (Metro-issued, personal use augmented)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Idealist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "related_entities": [
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Riddle",
+    "Fort Anchor",
+    "Full Clearance (The Erasure Mix)",
+    "Chimera-Null",
+    "The Pure Hand",
+    "Iron",
+    "Alper Inoue-Aidoo",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Cezar Watanabe-Gyasi",
+    "Chronicle",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "GLMZ",
+    "Grainfort",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Plot 17",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TERMINUS",
+    "TESSERA Widow Mk. III",
+    "The Ledger",
+    "The Question",
+    "Vuk Jorgensen-Toure",
+    "Witness",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Cosmopolitan blend of Northern European (29%), Eastern European (24%), Hispanic/Latin American (22%), Sub-Saharan African (20%), and Southeast Asian (5%) ancestry—a typical product of the Ubiquitous Diaspora. This genetic mix manifests in warm deep brown skin with subtle golden undertones, sharp angular cheekbones, and the distinctive eye shape showing Southeast Asian influence alongside African heritage depth.",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Sturdy and compact, with the solid frame of someone who moves deliberately and carries weight without bulk. Broad shoulders, strong forearms from two decades of careful handling work.",
+    "hair_color": "Iron-grey with natural dark undertones",
+    "hair_style": "Thick locs, typically pinned up in a tight, functional crown during work hours; worn loose and full outside the repository",
+    "hair_length": "Long (to mid-back when unbound)",
+    "eye_color": "Deep brown, warm, with slight epicanthic fold suggesting Southeast Asian genetic contribution",
+    "skin_tone": "Warm deep brown with golden undertones, displaying the characteristic rich melanin distribution of mixed African and European heritage; pallid undertone from prolonged exposure to artificial lighting; the quality suggests years spent indoors under LEDs",
+    "complexion": "Unlined face for her age; sharp, angular cheekbones with the defined structure common to Eastern European and Hispanic ancestry; minimal makeup; fastidiously groomed but without vanity. The interplay of her mixed heritage creates subtle warmth in her features despite the cool indoor pallor. Hands are her most distinctive feature—calloused at the fingertips and joints, with precise, economical movements.",
+    "distinguishing_marks": [
+      "Small, pale scar on the inside of her left wrist, barely visible, consistent with early-career injury or implant installation site"
+    ],
+    "visible_augmentations": "None visible externally. She wears nitrile or latex gloves during all evidence work; the gloves are removed with deliberate ceremony when work ends. A faint, nearly imperceptible crystalline shimmer at the corner of her right eye when it catches light—her reading enhancement overlay at rest.",
+    "posture_movement": "Stands with precise posture; moves with minimal wasted motion, each gesture intentional and economical. Her hands are her most expressive feature—they move with surgical precision during work. Off-duty, she carries herself with quiet authority but no apparent tension.",
+    "clothing_style": "Professional but worn-in: grey or navy trousers with deep pockets, button-up shirts in neutral tones (charcoal, cream, pale blue), sensible non-slip shoes with reinforced arches. A Metro Police ID lanyard worn outside her shirt, worn and familiar with her. No jewelry. Off-duty: the same practical aesthetic, comfortable black jeans, well-maintained leather jacket (scuffed, vintage, cared-for). She dresses like someone who doesn't think about clothes but respects the tool-like function of fabric."
+  },
+  "image_prompt": "Ash Lindström, 168cm tall with sturdy compact build, deep warm brown skin with golden undertones from mixed Northern European, Eastern European, Hispanic, African, and Southeast Asian ancestry. Sharp angular cheekbones, deep brown eyes with slight epicanthic fold, unlined face. Iron-grey locs with dark undertones pinned in tight functional crown atop her head. Pale LED-indoor pallor contrasting with rich melanin tones. Wearing charcoal button-up shirt and grey trousers with Metro Police ID lanyard, sensible non-slip shoes. Calloused hands with precise movements, small faint scar on left wrist. Professional posture, quiet authority, minimal wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool blue-grey evidence repository lighting or off-duty scene, vintage scuffed leather jacket visible. Clinical precision in bearing, economical grace. Midjourney cyberpunk aesthetic, cool tones, professional dignity --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 28.8,
+    "Eastern European": 24.1,
+    "Hispanic/Latin American": 21.5,
+    "Sub-Saharan African": 20.3,
+    "Southeast Asian": 5.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

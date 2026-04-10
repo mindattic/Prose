@@ -1,0 +1,264 @@
+{
+  "id": "019d6143a6587d4994a8a0fd5679923c",
+  "type": "character",
+  "name": "Rune Magnúsdóttir-Szabó",
+  "aliases": [
+    "Ghost",
+    "Nobody",
+    "The Face"
+  ],
+  "species": "human",
+  "gender": "non-binary",
+  "pronouns": "they/them",
+  "role": "Infiltration and social engineering specialist — The Thermite Collective",
+  "age": 29,
+  "status": "active",
+  "location": "Milwaukee Core — no fixed address. Rotates between three rented rooms under different names.",
+  "description": "Mika Sorel does not have a face. They have a collection. Dermal sculpting implants allow them to shift bone structure, skin texture, and pigmentation within a biological range — not shapeshifting, but close enough to make identification functionally impossible. They can walk into a building as a maintenance tech, walk out as a mid-level executive, and neither identity will trigger a security flag because both were built from real employee data.\n\nBefore the Thermite Collective, Mika ran solo social engineering jobs — impersonating corporate employees to gain physical access to secured facilities. They were good at it. Too good. The jobs started blurring into each other, and the faces started sticking. There were mornings when they'd look in the mirror and not remember which configuration was the original. Vesper found them during a job that overlapped — Mika was impersonating a Torii Security consultant, and Vesper recognized the credentials as fake because she'd written the real ones. Instead of burning Mika, she offered them a job.\n\nThey are slender, average height, with features that default to a pleasant neutrality — the base state that exists between performances. Their eyes are the only constant: dark brown, watchful, cataloguing. They dress for whichever role is next, but in downtime they wear oversized hoodies and look younger than twenty-nine.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.55,
+      "ideal": 0.4,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.85,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "That there is no original Mika underneath the performances — that the base state is just another mask",
+      "That someone will see through all the faces and find nothing there",
+      "That the dermal sculpting is doing something to their brain that the manufacturer never disclosed"
+    ],
+    "core_desires": [
+      "To be known by someone as themselves, not as a performance",
+      "To find the version of Mika that exists when no one is watching",
+      "To use their gift without being consumed by it"
+    ],
+    "coping_mechanisms": [
+      "Retreats into cover identities when personal emotions become overwhelming — it's easier to feel things as someone else",
+      "Watches old films obsessively because the characters are fixed — they never change between viewings",
+      "Clings to crew dynamics as the one constant — Harlan's jokes, Vesper's schedule, Breck's silence"
+    ],
+    "blind_spots": [
+      "Cannot tell when they're performing versus being genuine — the line dissolved years ago",
+      "Assumes everyone else is also performing, which prevents real connection",
+      "Does not recognize their own emotional states until they manifest physically — headaches, tremors, insomnia"
+    ],
+    "secret": "They have maintained one identity for seven years — a quiet librarian named Elara who volunteers at a Circuit reading room every Thursday. No one in the crew knows. Mika does not know why this identity matters so much."
+  },
+  "speech_patterns": {
+    "vocabulary": "Adapts to context. Base-state Mika uses simple, direct language — almost childlike in its clarity. On the job, they speak in whatever register the identity requires.",
+    "cadence": "In base state: halting, searching for words that feel like theirs. On a job: fluid, confident, perfectly calibrated.",
+    "verbal_tics": [
+      "In base state, starts sentences with 'I think—' and then corrects to 'I mean—' as if uncertain which I is speaking",
+      "Unconsciously mirrors the speech patterns of whoever they talked to most recently",
+      "Goes silent for long stretches and then delivers a single sentence of startling clarity"
+    ],
+    "example_lines": [
+      "I can be anyone you need. That's the sell. The cost is on my invoice, not yours.",
+      "Sometimes I watch a movie twice just to make sure the characters are still the same people the second time.",
+      "I think I liked this song before. I mean — someone I was liked this song. I'm not sure which."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Vesper Kade",
+      "type": "crew lead / stabilizer",
+      "description": "Vesper treats Mika the same way regardless of which face they're wearing. This consistency is more valuable to Mika than any paycheck.",
+      "emotional_core": "Vesper's predictability is the closest thing Mika has to a mirror that doesn't lie",
+      "story_tension": "Mika is terrified that if Vesper ever saw the full depth of their identity dissolution, the professional relationship would become clinical."
+    },
+    {
+      "name": "Harlan Dray",
+      "type": "crewmate / emotional anchor",
+      "description": "Harlan treats Mika like a younger sibling — protective, teasing, uncomplicated. He is the only person who makes Mika laugh without performing laughter first.",
+      "emotional_core": "Genuine affection that bypasses the performance layer",
+      "story_tension": "Mika sometimes performs being okay specifically for Harlan, because his worry is too heavy to carry on top of everything else."
+    },
+    {
+      "name": "Breck Tannen",
+      "type": "crewmate / quiet understanding",
+      "description": "Breck and Mika rarely speak, but Breck once left a note in Mika's gear bag: 'The base state is still you.' Mika carries it.",
+      "emotional_core": "Recognition without intrusion",
+      "story_tension": "Breck sees too much, and Mika isn't sure whether that's comforting or terrifying."
+    }
+  ],
+  "story_hooks": [
+    "One of their discarded identities is spotted on a security feed — someone else is wearing Mika's face",
+    "The Elara identity is threatened when the Circuit reading room faces shutdown, and Mika has to protect it without revealing to the crew why they care",
+    "A target during an extraction recognizes Mika from a previous job — not the face, but the eyes",
+    "The dermal sculpting implant begins glitching, locking them into a face that isn't theirs for hours at a time"
+  ],
+  "narrative_function": "Mika explores identity as a theme — what happens when you can be anyone and the cost is losing yourself. Their stories within the heist framework are about the performances within the performance, the masks within the mask. They are the crew member most at risk of psychological dissolution.",
+  "augmentations": "Dermal sculpting array — subdermal actuators that reshape facial bone structure, skin texture, and pigmentation within a 15% variance range. Voice modulator implant that adjusts pitch, resonance, and accent. Eidetic social memory cortex — perfect recall of names, faces, mannerisms, and conversational patterns for identity construction.",
+  "daily_life": "Mornings are research — building identities from scraped employee databases, social media fragments, and public records. Afternoons are rehearsal — practicing gaits, mannerisms, vocal patterns in front of recording equipment. Evenings are decompression, which looks like sitting in dark rooms watching old films and trying to remember what they actually enjoy versus what a cover identity enjoyed. They eat irregularly and sleep when the faces let them.",
+  "affiliation": "The Thermite Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not impersonate a specific real person without researching them first — sloppy identity work is disrespectful to the original",
+      "Will drop a cover identity immediately if a child is at risk — children can tell when adults are lying and Mika will not lie to a child",
+      "Will follow Vesper's operational plan but will improvise the social engineering component based on live conditions",
+      "Will not maintain a cover that requires genuine cruelty — there are performances they refuse to give",
+      "Will always have an exit identity prepared — a face and a story that gets them out of any building alone"
+    ],
+    "escalation_ladder": [
+      "1. Redirect — become someone with authority. A security supervisor, a building manager. Issue instructions.",
+      "2. Confuse — layer conflicting social signals. Badge says one thing, voice says another. People freeze when data conflicts.",
+      "3. Vanish — drop the current face, go neutral, walk away. Hard to chase someone you can't describe.",
+      "4. Panic — trigger a fire alarm, a gas leak warning, a security lockdown. Create a crowd and disappear into it.",
+      "5. Run — Mika is not a fighter. If it gets physical, they run. They are very fast and very hard to identify afterward."
+    ],
+    "interpersonal_modes": {
+      "vesper": "Compliant, professional, slightly eager to please. Vesper's approval matters more than Mika will admit because it's approval of their work, not a performance.",
+      "harlan": "Relaxed, younger. They let Harlan's warmth wash over them without analyzing it. The only context where they laugh first and think about it later.",
+      "breck": "Quiet proximity. They'll sit in Breck's workspace and not speak for an hour. This is the closest Mika gets to being at rest.",
+      "on_a_job": "Fluid, confident, perfectly inhabited. The anxiety disappears because the self disappears. The performance is the calmest they ever feel.",
+      "alone": "Fragmented. They talk to themselves in different voices. They watch their reflection and cycle through faces. This is not healthy and they know it."
+    },
+    "stress_responses": {
+      "low": "Faces flicker — micro-expressions from cover identities surface involuntarily. Only crew members notice.",
+      "medium": "Speech patterns destabilize — they start borrowing vocabulary and cadence from recent covers without realizing it.",
+      "high": "Dermal sculpting activates involuntarily — their face shifts in subtle, uncontrolled ways. They cover their face with their hands.",
+      "critical": "Catatonia. They go blank — face neutral, voice silent, eyes empty. It lasts minutes to hours. The crew calls it 'going zero.' When they come back, they don't remember which face they were wearing when it started."
+    },
+    "contradictions": [
+      "They are the best at reading people on the crew but cannot read themselves",
+      "The performance makes them feel safe, but the accumulation of performances is destroying them",
+      "They want to be known as themselves but are terrified that 'themselves' is insufficient",
+      "They maintain the Elara identity as a haven of authenticity, but Elara is also a performance — the paradox is the point"
+    ],
+    "habits": [
+      "Checks their reflection compulsively — not vanity, verification",
+      "Keeps a journal in base-state handwriting to anchor their core identity — the handwriting changes when they've been under cover too long",
+      "Sleeps in oversized hoodies regardless of temperature — the uniform of not-performing",
+      "Collects small objects from each cover identity — a keychain, a pen, a receipt. Keeps them in a box they never open.",
+      "Always sits facing the door. Not tactical — they need to see who's coming so they can decide who to be."
+    ],
+    "breaking_points": [
+      "If someone impersonated them — used their real face, their real voice — the identity crisis would be catastrophic",
+      "If the Elara identity were discovered and destroyed, they would lose the last tether to a self they chose",
+      "If the dermal sculpting failed permanently and locked them in a face that wasn't theirs, the psychological damage might be irreversible",
+      "If a crew member died because a cover failed — because Mika's performance wasn't good enough — the guilt would consume every identity they have"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-SL40 'Partisan'",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Petra Glass",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Chimera-Null",
+    "Vesper",
+    "Elena Vasquez-9",
+    "The Milwaukee Core",
+    "Anatoliy Faye-Nkrumah",
+    "Axonal Stretch Resonance Lance",
+    "Breck Tannen",
+    "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
+    "Flicker",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kairos",
+    "Kamala Blomberg-Konadu",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ouroboros Systems Paradox Quantum Processing Array",
+    "Pirjo Asante-Ulukhan",
+    "Prophet",
+    "PulsePoint MoodGlyph Affective Display Implant",
+    "Saodat Mirzoyan-Fubara",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA TC-3 'Crucible'",
+    "Tabula",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "The Mirror",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "The Undertow",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American (63.7%) with Eastern European (23.1%) and Northern European (13.2%) ancestry. Features reflect this primary Latin American heritage with secondary Eastern European influence: warm brown skin tones with subtle olive undertones, dark hair, and facial structure blending Latin American and Central/Eastern European characteristics.",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Slender, wiry frame with minimal musculature — built for misdirection rather than presence. Shoulders slightly narrow, posture naturally unassuming. The kind of body that vanishes in a crowd by design.",
+    "hair_color": "Dark brown, naturally occurring — the default state before modification",
+    "hair_style": "Kept short and unremarkable; styled differently depending on active identity. In downtime, often undone.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly oversaturated — the only constant. Pupils dilate and contract with active recall; tells if you know how to read it.",
+    "skin_tone": "Warm medium brown with olive undertones — the baseline reflection of dominant Hispanic/Latin American ancestry with Eastern European warmth. Capable of shifting 10-15% via dermal sculpting array.",
+    "complexion": "Smooth, intentionally forgettable features. High cheekbones with subtle Latin American bone structure, slightly asymmetrical jawline (asymmetry aids memorability tricks). No blemishes, scars, or natural distinguishing marks — the blank canvas before performance. Skin texture can shift from smooth to subtly textured depending on role requirements.",
+    "distinguishing_marks": [
+      "Faint linear scar on left inner wrist, 4cm long, pale and old — from before the augmentations, before the faces. They don't modify it; it's insurance against forgetting who started this.",
+      "Subdermal implant ports at temples (disguised as natural skin dimples when inactive) — visible only if looking closely or if caught mid-shift."
+    ],
+    "visible_augmentations": "None visible at baseline. The dermal sculpting array is subcutaneous; the voice modulator implant sits behind the larynx. The eidetic cortex implant leaves no external markers. However, subtle tells betray the augmentations: pupils that dilate unnaturally fast during conversation, skin that seems to shimmer faintly under certain light angles, micro-expressions of concentration when accessing implant-stored memories. Anyone trained in reading augmentation signs would clock them immediately.",
+    "posture_movement": "In baseline state: economical movement, minimal gesturing, posture that avoids drawing attention. They move like someone who has learned to exist in spaces without occupying them. In performance: posture shifts radically — slouch becomes confident spine, shuffle becomes purposeful stride. The transition is the tell; they commit entirely to whoever they're being in the moment. Under stress, fingers twitch subtly (implant processing lag), and they blink in patterns that don't align with natural conversation rhythm.",
+    "clothing_style": "In downtime: oversized hoodies (charcoal, black, muted blue), loose-fit pants, worn sneakers — juvenile aesthetic, almost deliberately underdeveloped. Tier 3-4 comfort wear; nothing branded. In active roles: wardrobe rotates per identity — corporate Torii Security consultant one day (tailored blazer, sharp trousers, minimal jewelry), maintenance tech the next (company-issue jumpsuit, utility belt, work boots). All clothing is rented, borrowed, or acquired under false names. Nothing is kept; nothing is traceable."
+  },
+  "image_prompt": "Rune Magnúsdóttir-Szabó, 172cm slender frame, warm medium brown skin with olive undertones reflecting Hispanic/Latin American and Eastern European heritage, dark brown eyes with dilating pupils, short dark brown hair, naturally forgettable features with high cheekbones and slight jawline asymmetry. Baseline downtime state: oversized charcoal hoodie, loose gray pants, worn sneakers, minimal presence posture, economical movement. Faint 4cm pale scar visible on left inner wrist. Cyberpunk 2226 GLMZ setting, neon-lit apartment corner, cool blue-purple lighting catching subtle skin shimmer from subdermal implants at temples, mysterious identity-shifter aesthetic, moody atmospheric lighting, character seemingly dissolving into shadows, augmentation tells visible in micro-expressions, photorealistic cyberpunk portrait --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 63.7,
+    "Eastern European": 23.1,
+    "Northern European": 13.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

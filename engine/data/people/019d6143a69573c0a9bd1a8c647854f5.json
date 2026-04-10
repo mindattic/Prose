@@ -1,0 +1,153 @@
+{
+  "id": "019d6143a69573c0a9bd1a8c647854f5",
+  "type": "character",
+  "name": "Zoya Larsdóttir-Holm-Banerjee",
+  "aliases": [
+    "Cold Open"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Pale Hand middleman",
+  "age": 40,
+  "status": "active",
+  "location": "The Narrows, near Milwaukee and North Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Pale Hand",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Gutter Katana 'Flatline'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Milwaukee Core",
+    "Ambrosia Fekete-Waiyaki",
+    "Iowan Behemoth — 'Palisade'",
+    "MERIDIAN",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "TESSERA PA-5 'Attendant'",
+    "TESSERA Widow Mk. III",
+    "The Gutter Prophets",
+    "The Heritage Vault",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian dominant (48.7%) with East Asian (25.7%), Southeast Asian (13.1%), and Northern European (12.5%) ancestry. Features reflect the complex blend of Indian subcontinent bone structure and coloring with East and Southeast Asian eye shape and skin characteristics, tempered by minimal Northern European influence.",
+    "height_cm": 183,
+    "weight_kg": 79,
+    "build": "Lean and angular with underlying muscle density. Years of stress and irregular sleep have carved definition into his frame rather than bulk.",
+    "hair_color": "Salt-and-pepper grey, natural",
+    "hair_style": "Pulled back into a tight, functional undercut. Sides faded to stubble.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm undertones, characteristic of South and East Asian heritage",
+    "skin_tone": "Warm medium-deep olive-brown, reflecting South Asian and Southeast Asian ancestry with subtle East Asian undertones. Weathered by years in the Narrows.",
+    "complexion": "High, prominent cheekbones with East Asian angularity blended with South Asian facial structure. Gaunt face with deep-set eyes. Perpetual five o'clock shadow across a defined jawline. Deep lines around the eyes and mouth suggest constant calculation. Skin shows minor scarring along the left jawline.",
+    "distinguishing_marks": [
+      "Three parallel burn scars running vertically down the inside of his right forearm, about 8cm long, faded to pale pink",
+      "A thin surgical scar behind his left ear, hidden unless head is tilted — suggests subcutaneous implant",
+      "Knuckle tattoos on both hands: small geometric symbols in black ink, worn but still visible"
+    ],
+    "visible_augmentations": "None immediately apparent. His right hand moves with faint mechanical precision at the wrist — suggests internal servo augmentation, but easily missed. No chrome, no LEDs.",
+    "posture_movement": "Economical and controlled. Rarely gestures broadly. Sits with his back to walls. Moves with the patience of someone who has learned that rushing in the Narrows is fatal. Hands remain visible and still when in neutral territory.",
+    "clothing_style": "Tier 3-4 practical. Worn but well-maintained synthetic leather jacket over a muted grey thermoweave hoodie. Black cargo pants with reinforced pockets and a concealed thigh rig. Scuffed steel-toe boots. A thin chain bracelet of dull silver or recycled platinum on his left wrist — status marker among fixers. No flashy corpo logos, no gang colors. Dresses to move and to blend."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Zoya Larsdóttir-Holm-Banerjee, 183cm tall androgynous fixer with South Asian-dominant ancestry, warm olive-brown skin, deep-set brown eyes, high cheekbones, salt-and-pepper grey pulled back in tight undercut with faded stubble sides. Gaunt weathered face with deep lines, faint scars on left jaw. Wearing worn synthetic leather jacket over grey thermoweave hoodie, black reinforced cargo pants, scuffed steel-toe boots. Thin dull platinum chain bracelet on left wrist. Geometric black tattoos on knuckles. Subtle mechanical precision in right wrist movement. Economical posture, back against wall, hands visible and still. Dim neon-filtered indoor lighting casting sharp shadows across face. Mood: patient, calculating, dangerous. Great Lakes Metropolitan Zone 2226 setting, noir aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 48.7,
+    "East Asian": 25.7,
+    "Southeast Asian": 13.1,
+    "Northern European": 12.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

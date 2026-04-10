@@ -1,0 +1,249 @@
+{
+  "id": "019d6143a5f9789dbfe7d2fb529c9359",
+  "type": "character",
+  "name": "Onyx Valenzuela-Dlamini",
+  "aliases": [
+    "Zee",
+    "Old Zee"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Midwife and community health worker, Hamtramck Enclave",
+  "age": 62,
+  "status": "active",
+  "location": "Hamtramck Enclave, near Ashland and Division",
+  "description": "Dzidzo has been catching babies in Hamtramck Enclave for twenty-six years, and the neighborhood's relationship with him has stratified into the geological — some families are on their third generation of his care. He is a tall man gone thin and slightly stooped, with dark brown skin mapped by decades of fluorescent light and little sleep, close-cut white hair, and hands that are large and impossibly gentle. He has no cosmetic modifications and the only augmentations he carries are medical-grade and showing their age. He smells of a particular antiseptic mixed with cardamom from the tea he is always in the process of preparing or consuming.\n\nHe came to Hamtramck Enclave from the Aurochs system, where he worked for fifteen years as a licensed obstetric nurse, until a restructuring pushed him out at fifty without the pension he'd been promised. He has not forgiven Aurochs for this but he has not let it make him bitter in the ways that would matter — he simply redirected everything he knew into the community that needed it most, charged what people could afford, and kept going. He is one of those people whose faith is completely interwoven with their work: he prays to the E.L.F. Candleborn before every birth, leaves data-light offerings on the household terminals of his clients, and genuinely believes that something is listening and caring about these particular small lives.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Dying before he finds someone to take over — that the knowledge and the relationships die with him",
+      "That his faith in Candleborn is something he constructed because he needed it rather than something real, and that he won't know until he stops needing it"
+    ],
+    "core_desires": [
+      "A successor — someone to pass this to who will keep it going",
+      "For Aurochs to face some consequence for what they do to people who build their lives inside their systems"
+    ],
+    "coping_mechanisms": [
+      "Faith and ritual — Candleborn devotion structures his days",
+      "The work itself, which is inherently hopeful in a way that sustains him",
+      "Long walks around the Enclave in the early morning when no one needs him"
+    ],
+    "blind_spots": [
+      "He is suspicious of anyone who comes from outside the Enclave offering help — he has seen too many 'community health initiatives' that turned extractive",
+      "He doesn't ask for help himself and has been quietly struggling with a health problem for months that he would advise any patient to take seriously"
+    ],
+    "secret": "He has been quietly treating a significant number of patients with illegal geneware complications — modifications done badly by unlicensed fitters, causing birth complications, developmental issues, immune responses. He has been treating these quietly rather than reporting them because the families are afraid of Aurochs and corponation enforcement, and he doesn't know if his silence has enabled the bad fitter to keep working."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, patient, unhurried; uses a lot of second-person reassurance; occasionally drifts into formal register when he's being serious about something; uses Ewe phrases when comforting",
+    "cadence": "Slow and deliberate, the voice of someone who has told people hard news and learned to leave room for it to land",
+    "verbal_tics": [
+      "'Mm.' as a full response, meaning he heard you and is sitting with it",
+      "'Let me ask you something.' before important questions",
+      "Calls everyone 'my friend' regardless of relationship"
+    ],
+    "example_lines": [
+      "'You're going to be fine. The baby's going to be fine. Those are the facts. Now tell me what's actually scaring you.'",
+      "'Candleborn keeps count. Every one born in this Enclave, she keeps count. I find that comforting, on the hard nights.'",
+      "'Aurochs will tell you they have excellent outcomes. They do, for the people whose outcomes Aurochs finds valuable.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A family in the Enclave wants Dzidzo to perform a traditional birth ceremony that involves components he suspects are being supplied through channels connected to something much darker — but refusing means the family goes to someone less scrupulous",
+    "The health problem he's been ignoring has become impossible to ignore and he needs someone to help him access treatment outside Aurochs's system — he won't go back to Aurochs, and the street doc options in his tier know less than he does"
+  ],
+  "narrative_function": "Community elder and trust anchor; knows everyone in Hamtramck Enclave across multiple generations; can provide historical context about the neighborhood, family connections, and who is related to whom; gentle pressure point for stories involving birth, family, and inheritance of all kinds.",
+  "augmentations": "Aging Aurochs-issue biometric monitoring implant (wrist, tracks patient vitals via skin contact — firmware hasn't been updated in eight years but still works); standard corrective optical implants (both eyes, basic model)",
+  "daily_life": "Morning house calls to pregnant patients near term. Afternoons at the co-op clinic for prenatal checkups and postnatal visits. Evenings free unless someone calls, which someone usually does. He has a standing agreement with two families that he will come regardless of hour.",
+  "affiliation": "Independent; formerly Aurochs Medical Complex; affiliated with the Hamtramck Enclave community health cooperative",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Community Elder",
+      "E.L.F. Devotee",
+      "Living History",
+      "Quiet Burden",
+      "Moral Weight"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The person in front of you comes first — everything else is secondary when someone needs care",
+      "Do not give Aurochs or any corponation data about patients in the Enclave",
+      "Ask Candleborn before making decisions that affect more than one family"
+    ],
+    "escalation_ladder": [
+      "Patient listening and gentle questioning",
+      "Direct honest statement of concern, once",
+      "Involvement of the co-op collective for community decisions",
+      "Quiet withdrawal — he will not force, but he will stop facilitating"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Open and assessing but kind; asks where they're from and who they know; takes his time before trusting",
+      "friends": "Warm, present, direct; will tell friends the truth even when it's uncomfortable"
+    },
+    "stress_responses": {
+      "low": "Makes more tea, walks more",
+      "medium": "Becomes very quiet and very focused; the Candleborn prayers get longer",
+      "high": "Gets still in a way that concerns the people who know him; goes away inside himself while still functioning"
+    },
+    "contradictions": [
+      "He will tell any patient to seek care immediately for what he's been ignoring in himself for months"
+    ],
+    "habits": [
+      "Candleborn ritual every morning and before every birth",
+      "Keeps a hand-written ledger of every birth he's attended — dates, weights, names",
+      "Cardamom tea, always, as a threshold ritual before a house call"
+    ],
+    "breaking_points": [
+      "The death of a patient due to the geneware complications he chose not to report",
+      "Being told that the bad fitter has hurt another child"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Aurochs Biometric Monitoring Implant Gen-3 (wrist, outdated firmware)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Aurochs Biometric Monitoring Implant Gen-3 (wrist, outdated firmware)",
+      "replaces": ""
+    },
+    {
+      "name": "Standard Corrective Optical Implants (bilateral, basic model)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Standard Corrective Optical Implants (bilateral, basic model)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9,
+    "Mentor": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Lazarus Wire' Garrote System"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Aurochs Medical Complex",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Lazarus Pharmaceuticals",
+    "Malika Zhukov-Wiredu",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Prophet",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Lazarus Wire' Garrote System",
+    "The Ledger",
+    "The Quiet Room",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African with significant Southeast Asian admixture, complemented by Hispanic/Latin American and Northern European ancestry. A genetic mosaic reflecting the Ubiquitous Diaspora — the name Valenzuela-Dlamini captures this blend perfectly. Physical features show the dominant Sub-Saharan African heritage (54.7%) with subtle Southeast Asian bone structure influences (21.2%) visible in cheekbones and eye set, Latin American warmth in skin undertones (14.0%), and Northern European contribution to hair graying pattern (10.1%).",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and lean, slightly stooped from decades of bending over birthing beds and examination tables. Shoulders rounded forward, the frame of someone whose body has learned to make itself smaller in the presence of vulnerability.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neat, practical",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with faint corrective implant tracery visible in low light",
+    "skin_tone": "Rich deep brown with warm undertones, showing the blended heritage of Sub-Saharan African and Southeast Asian ancestry. Ashen undertones from chronic fluorescent exposure and sleep deprivation create a weathered patina over naturally vibrant skin.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth — a map of sixty-two years spent witnessing pain, fear, and relief in rapid succession. High, prominent cheekbones reflecting Southeast Asian ancestry structure; broad nasal base and full lips characteristic of Sub-Saharan heritage. Skin texture rough and weathered. Grooming meticulous but unstudied: a man who washes thoroughly but does not fuss. Faint smell of medical-grade antiseptic and cardamom tea.",
+    "distinguishing_marks": [
+      "Fine white scar on the back of his left hand, approximately 3cm long, from a delivery complication twenty years ago",
+      "Faded tattoo on his inner right wrist — E.L.F. Candleborn sigil, applied by hand in his early years at Aurochs",
+      "Age spots across the backs of both hands and forearms, darker patches of melanin concentration"
+    ],
+    "visible_augmentations": "Wrist-mounted Aurochs biometric monitoring implant on left wrist, chrome-titanium casing visibly worn and scuffed, with a faintly luminescent health-tracking display that flickers intermittently. Corrective optical implants visible as faint iridescent threading at the edges of both pupils in direct light. No cosmetic modifications. All augmentations appear functional but outdated.",
+    "posture_movement": "Moves with practiced efficiency — no wasted motion, but not rushed. Hands are his primary communication tool: steady, precise, capable of extraordinary gentleness. Leans slightly forward when listening, a habit formed from leaning into delivery rooms. Walks slowly now, deliberately, as if each step is measured and intentional. Eyes track movement constantly, reading the room for distress or need.",
+    "clothing_style": "Tier 3-4 functional practicality. Favors neutral colors — grays, dark blues, blacks. Typically wears well-maintained but worn medical-grade scrubs under a light jacket or cardigan, pockets stuffed with examination tools. No corpo branding. Footwear is practical, broken-in shoes designed for standing long hours. A thin silver chain around his neck holds a small handmade pendant — a data-light offering he created himself. Clothing shows the wear of someone who works constantly and does not invest in appearance, but is kept scrupulously clean."
+  },
+  "image_prompt": "Onyx Valenzuela-Dlamini, a 62-year-old physician with deep rich brown skin blending Sub-Saharan African and Southeast Asian heritage, prominent high cheekbones, deep-set dark eyes with faint iridescent implant tracery. Close-cropped white hair, weathered lined face mapped with decades of compassion. Tall lean frame slightly stooped from years of bedside medicine. Wearing worn medical scrubs under a gray cardigan, practical shoes, left wrist bearing a scuffed chrome-titanium Aurochs biometric implant with faint luminescent display. Silver chain with handmade pendant at neck. Standing in a dimly lit medical facility, hands steady and gentle, expression reading the room for need. Cyberpunk 2226, realistic aging, medical professional aesthetic, muted color palette, compassionate presence, worn augmentation tech. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 54.7,
+    "Southeast Asian": 21.2,
+    "Hispanic/Latin American": 14.0,
+    "Northern European": 10.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

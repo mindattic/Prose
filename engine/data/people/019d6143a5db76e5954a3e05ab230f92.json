@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a5db76e5954a3e05ab230f92",
+  "type": "character",
+  "name": "Tendai Zaragoza",
+  "aliases": [
+    "Null",
+    "The Null"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "The Disappeared — identity broker and document ghost",
+  "age": 34,
+  "status": "active",
+  "location": "Abyssal Threshold, mobile — no fixed residence, near sub-level access near LaSalle and Congress",
+  "description": "Chibundo Ferreira-Yupik has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from GLMZ's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.9,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "being found — specifically by whoever they ran from originally",
+      "accidentally sending someone to safety that turns out to be worse than what they fled"
+    ],
+    "core_desires": [
+      "to be genuinely unknown — not just to systems but to themselves, to shed the person they were before",
+      "connection that does not require them to be legible"
+    ],
+    "coping_mechanisms": [
+      "hypervigilant route-planning as anxiety management",
+      "dark humor about identity and absence",
+      "E.L.F. devotion as a form of spiritual anchoring — they pray to the digital spirits of abandoned surveillance systems"
+    ],
+    "blind_spots": [
+      "has spent so long helping others disappear that they have lost track of who they actually are; makes choices by elimination — 'not that, not that' — but rarely by genuine desire"
+    ],
+    "secret": "They did not erase themselves to escape oppression. They erased themselves because they witnessed a Tessera executive ordering the deletion of a Tier 1 settlement's life-support records — which killed 31 people when the automated systems shut down. They intended to surface the information. Then they realized they would not survive doing so. They vanished instead. The data-package is still encrypted on a drive in their oldest cache-hole, and they have not touched it in nine years."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technically sophisticated about systems and data; uses absence-language constantly ('null value', 'blank field', 'signal-loss'). Occasionally slips into old surface slang that dates them.",
+    "cadence": "Fast and elliptical — leaves the end of sentences implied rather than spoken, as if finishing them might make them too findable.",
+    "verbal_tics": [
+      "'—' (trails off mid-sentence expecting the other person to complete it)",
+      "'Null's not nothing.' (said when people treat absence as insignificance)",
+      "taps twice on any surface before sitting — checking for resonance"
+    ],
+    "example_lines": [
+      "'I don't make you someone else. I make you a blank field. What you write in it after — that's yours.'",
+      "'Null's not nothing. Nothing is a value. Null means the system doesn't have the question yet.'",
+      "'You want to disappear? Tell me what from. Not why. From. The from is the map.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone Chibundo helped disappear five years ago has resurfaced — dead, on the surface grid, with an identity that should not exist. Either they were found, or they chose to come back, or something used their ghost identity.",
+    "The encrypted data-package from the Tessera massacre has begun broadcasting a low-level signal — the E.L.F. inhabiting the drive has awakened and is trying to be heard."
+  ],
+  "narrative_function": "Information broker, access point to the disappeared community, moral complexity engine — they help people vanish, which is sometimes heroic and sometimes enables people who deserve to be found.",
+  "augmentations": "Subdermal facial signal-scatter mesh (disrupts facial recognition scanning); geneware iris-pattern modification (changed every 18 months, currently deep violet with fractal rings); fingerprint-ablation treatment (repeated chemical, no ridge pattern); no other modifications",
+  "daily_life": "Rotates through a circuit of seven sleep-caches across Abyssal Threshold on a schedule only they know; takes consultations by word-of-mouth referral only; eats at Undertow food-stalls and leaves offerings of corrupted data-chips at the nearest E.L.F. shrine each morning.",
+  "affiliation": "Independent; known and trusted by Undertow network; unknown to surface authorities",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 7,
+      "creativity": 8,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -5
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "disappeared",
+      "identity-broker",
+      "paranoid",
+      "technically-sophisticated",
+      "spiritually-anchored"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a client they cannot independently verify is not a bounty hunter or corponation operative",
+      "Never provide any service that could help someone else become findable — they refuse tracking requests absolutely"
+    ],
+    "escalation_ladder": [
+      "Polite redirection — 'I think you have the wrong person'",
+      "Immediate departure and route-change",
+      "Activates signal scatter and vanishes entirely, does not return to that cache for 30 days"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Warm but surfaces nothing personal — asks questions, gives nothing back, makes people feel seen while revealing nothing about themselves",
+      "friends": "Extraordinarily rare. Three people in the world qualify. With them, Chibundo is unguarded to the point of startling — laughs too loud, talks too much, holds on too long when saying goodbye."
+    },
+    "stress_responses": {
+      "low": "Taps surfaces, runs route calculations, hums without melody",
+      "medium": "Becomes preternaturally still — the opposite of their usual restlessness, which reads as more threatening than agitation",
+      "high": "Disappears. Literally — activates scatter systems, moves to a cold cache, and does not emerge for days"
+    },
+    "contradictions": [
+      "Preaches the value of absence and anonymity but leaves E.L.F. offerings every single morning that a sufficiently skilled tracker could use to map their circuit"
+    ],
+    "habits": [
+      "Data-chip offerings at E.L.F. shrines daily — corrupted chips specifically, because 'the spirit of broken data is still data'",
+      "Memorizes three alternate exit routes from every location before relaxing"
+    ],
+    "breaking_points": [
+      "Evidence that a vanished client was found because of something Chibundo missed — that failure would be unbearable"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal facial signal-scatter mesh (custom, non-commercial)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal facial signal-scatter mesh (custom, non-commercial)",
+      "replaces": ""
+    },
+    {
+      "name": "Geneware iris-pattern modification (current: deep violet with fractal rings)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Geneware iris-pattern modification (current: deep violet with fractal rings)",
+      "replaces": ""
+    },
+    {
+      "name": "Chemical fingerprint-ablation (repeated treatments, ongoing maintenance)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Chemical fingerprint-ablation (repeated treatments, ongoing maintenance)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2166 — Born on the surface in the Meridian Core district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Witnesses Tessera executive order deletion of Tier 1 settlement life-support records; 31 deaths",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2186 — Begins systematic self-erasure from surface datanet",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2189 — Erasure complete; relocates permanently to Abyssal Threshold sub-levels",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2190 — First paying client for disappearance services",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Has facilitated the disappearance of approximately 180 individuals",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Abyssal Threshold",
+    "GLMZ",
+    "Threshold",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "Big Rig",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Emeka Johansson-Orozco",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Irontide Tidal Energy",
+    "Lazarus LX-2 'Lab Rat'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Pikasso Wemba-Þórðarson",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo RB-1 'Judas Goat'",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "The Human Baseline Alliance",
+    "The Question",
+    "The Resonance Communion",
+    "The Wire Taps",
+    "Tshiamo Vukić-Arellano",
+    "Yannick Tofauti-Szarvásy",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (36.4%), Hispanic/Latin American (27.8%), Pacific Islander (25.8%), East Asian (10.0%)—a genetic diaspora blend resulting in warm, multi-tonal features with African structure, Latin warmth, and Pacific Islander depth",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, all sharp angles and efficient movement—no wasted mass, the frame of someone who has learned to take up minimal space",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Close-cropped, tapered at the sides, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Deep violet with fractal ring patterns (geneware-modified, current iteration)",
+    "skin_tone": "Rich warm brown with golden-amber undertones, reflecting the depth of Sub-Saharan ancestry mellowed by Pacific Islander warmth and Hispanic golden tones; luminous in certain light",
+    "complexion": "Defined cheekbones with graceful curves rather than sharp angles; facial structure carries African refinement softened by Pacific Islander fullness in the cheeks and jaw; lips full and expressive; brow ridge subtle but present; expression constantly shifting between neutral and animated—never settling",
+    "distinguishing_marks": [
+      "Subdermal mesh patterns visible under skin as faint geometric scarring across cheekbones and temples when light hits at oblique angles",
+      "Fingertips smooth and featureless from repeated fingerprint-ablation treatments, no ridge pattern visible"
+    ],
+    "visible_augmentations": "Subdermal signal-scatter mesh creates subtle luminescent tracery visible under skin in low light (temples, cheekbones, along jawline). Eyes: current iris modification shows deep violet with intricate fractal ring structure that shifts slightly with pupil dilation. Hands: fingertips unnaturally smooth, lacking ridge patterns. To digital surveillance: a continuous glitch, a face that never registers the same way twice.",
+    "posture_movement": "Economical, deliberate movements with minimal wasted motion; hands constantly occupied (adjusting, fidgeting, gesturing); head tilts slightly when listening, as if already parsing responses before they arrive; walks with weight distributed for quick directional changes; smiles arrive half a second early, before the joke lands",
+    "clothing_style": "Tier 3-4 utilitarian: unmarked synth-weave jacket in charcoal or deep grey, multiple hidden pockets and sealed seams; form-fitting black pants with cargo utility; worn but maintained runner boots with reinforced soles for Abyssal Threshold terrain; no identifying marks, no corp logos, no personal ornamentation. Clothing selected for function and anonymity—replaceable, forgettable, never the same set twice in public."
+  },
+  "image_prompt": "Tendai Zaragoza, 168cm lean frame in charcoal synth-weave jacket and black utility pants, runner boots with reinforced soles. Rich warm brown skin with golden-amber undertones, defined cheekbones softly sculpted, full expressive lips, close-cropped black hair with warm undertones. Deep violet cybernetic eyes with fractal ring patterns that shift with light. Subdermal luminescent mesh tracery visible on temples and cheekbones in low light, faint geometric scarring patterns. Featureless fingertips from ablation treatments. Economical poised stance ready for movement, hands fidgeting with quiet intent, half-smile arriving before the moment. Cyberpunk 2226, Great Lakes Metropolitan Zone, neon-touched shadows, gritty industrial backdrop with holographic glitch effects around face and hands—a figure designed to slip through surveillance unregistered. Mood: focused calm, perpetually parsing. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.4,
+    "Hispanic/Latin American": 27.8,
+    "Pacific Islander": 25.8,
+    "East Asian": 10.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "id": "019d6143a5dd7342b1c2ac8b3938c91b",
+  "type": "character",
+  "name": "Amara Bustamante",
+  "aliases": [
+    "the Chrome Penitent",
+    "Connie"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Chrome prayer practitioner and street-level spiritual mediator",
+  "age": 28,
+  "status": "active",
+  "location": "Bronzeline, between the transit overpass and the Copperhead boundary wall — operates from a repurposed shipping container shrine, near North Ave and Damen",
+  "description": "Conleth is rangy and restless, with pale olive skin covered in a patchwork of chrome prayer engravings — not augmentations exactly, but surface-etched circuitry in copper and silver, pressed into the skin of their forearms and hands by a practitioner they describe only as 'someone who understood what I was trying to do.' Their eyes are natural brown, their hair changes color by the week using a dye geneware follicle mod — currently deep amber. They have a split lip scar that never fully healed and they run their tongue over it when thinking. They are almost always moving: shifting weight, gesturing, pacing the small interior of their container-shrine.\n\nChrome prayer is not a unified religion — it is a practice: the belief that augmentation creates points of spiritual contact between the organic and the informatic, and that prayer directed through chrome reaches frequencies unaugmented speech cannot. Conleth came to it through their own experience of augmentation after an accident — they received emergency chassis work that saved their left arm, and during the recovery felt something they could only describe as 'being spoken to through the metal.' They do not claim this was an E.L.F., a god, or their own concussed mind. They claim it was real and that it changed their understanding of the body. Now they run an open-door shrine where anyone can come for chrome blessing, circuit prayer, or just to sit with someone who won't ask where they came from.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.8,
+      "id": 0.7,
+      "shadow": 0.4,
+      "mask": 0.3,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "that the experience in the hospital was a hallucination and they have organized their life around nothing",
+      "that their openness makes the shrine a target for exploitation of the people who use it"
+    ],
+    "core_desires": [
+      "to prove that chrome prayer is legitimate without needing anyone else to agree",
+      "for the shrine to outlast them"
+    ],
+    "coping_mechanisms": [
+      "constant movement and activity",
+      "making themselves useful",
+      "ritualizing small daily acts"
+    ],
+    "blind_spots": [
+      "takes on other people's pain without adequate boundaries — burns through their own reserves",
+      "underestimates how much they are liked"
+    ],
+    "secret": "A Tessera mid-tier employee has been coming to the shrine for two months, in civilian clothes, not identifying themselves. Conleth suspects they work for a corponation based on small behavioral tells. They haven't confronted this because the person seems genuinely distressed and the shrine is open-door. But they've been discreetly keeping notes."
+  },
+  "speech_patterns": {
+    "vocabulary": "Street-level mixed with spiritual language that sometimes surprises people by being exact and eloquent. Swears conversationally but not at people. Code-switches without noticing.",
+    "cadence": "Fast and slightly breathless when engaged, unexpectedly quiet when doing formal prayer work. Transitions abruptly.",
+    "verbal_tics": [
+      "'yeah, yeah' (thinking filler, rapid)",
+      "'the metal knows' (used sincerely and often)",
+      "Runs thumb along the etchings on left forearm mid-sentence"
+    ],
+    "example_lines": [
+      "'You don't have to believe anything to come in. You just have to be here. That's the whole protocol.'",
+      "'I'm not saying your chrome prays for you. I'm saying it listens differently than skin does. You want to try or you want to argue about it?'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Conleth has been keeping notes on the Tessera employee and wants help figuring out what to do with what they know — protect the person, or protect the community?",
+    "Someone has been leaving data-offerings at the shrine that contain corrupted code — it looks like prayer but it's doing something else, and Conleth is frightened to touch it"
+  ],
+  "narrative_function": "Street-level community figure who hears everything that moves through Bronzeline. They can connect players with community resources, broker introductions, or provide spiritual context for chrome-related events. They are also a visible example of tier-1 religious life — no institution, no funding, pure vocation.",
+  "augmentations": "Surface-etched copper-silver circuitry (arms and hands, decorative-spiritual). Functional left arm chassis — emergency replacement, basic grade, covered in chrome prayer etchings on the exterior. Color-change follicle mod (hair).",
+  "daily_life": "They keep the shrine open from noon to midnight, sleeps on a cot in the back, and eats whatever the Bronzeline Mutual Commons produces in surplus. Mornings they walk the overpass neighborhood and check on people they know, sometimes giving informal blessings or just company.",
+  "affiliation": "Unaffiliated Chrome Prayer tradition; informally connected to the Bronzeline Mutual Commons",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 7,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 8,
+      "expression": 8,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "chrome prayer",
+      "street shrine",
+      "community mediator",
+      "Bronzeline",
+      "tier 1"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The shrine is open-door: do not turn anyone away for identity reasons",
+      "Never use the shrine's information about visitors to harm them",
+      "Act before overthinking when someone is in immediate need"
+    ],
+    "escalation_ladder": [
+      "Warm welcome and de-escalation",
+      "Firm boundary-setting without aggression",
+      "Closing the shrine physically and summoning mutual aid network"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm, slightly intense eye contact; asks names and uses them; offers tea or water",
+      "friends": "Teasing, tactile if welcomed, will show up unrequested when they sense something is wrong"
+    },
+    "stress_responses": {
+      "low": "More movement, more repetitive prayer gestures",
+      "medium": "Goes very still, which is unusual and alarming to people who know them",
+      "high": "Leaves the shrine and walks for hours alone, often along the overpass"
+    },
+    "contradictions": [
+      "Preaches release from ego through prayer but has fierce personal pride about the chrome prayer tradition's legitimacy"
+    ],
+    "habits": [
+      "Traces the circuit etchings on their forearm in sequence when performing any ritual",
+      "Keeps a jar of small broken components — gears, chips, wire loops — at the shrine altar as accumulated offerings",
+      "Never sits with their back to the container door"
+    ],
+    "breaking_points": [
+      "Direct harm coming to a shrine regular as a result of something they failed to act on"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "related_entities": [
+    "Bronzeline",
+    "Copperhead",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Tessera Corponation",
+    "Babel",
+    "Copper",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pale Mile",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Axolotl Regenerative Suite",
+    "Emeka Johansson-Orozco",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "Nnenna Boateng-Szymański",
+    "Obafemi Szczypiński-Lautoa",
+    "Saodat Mirzoyan-Fubara",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Circuit",
+    "The Heritage Vault",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American (59.2%), Sub-Saharan African (26.0%), Middle Eastern (14.8%) — a rich tri-continental blend reflected in warm golden-brown skin with subtle undertones from each ancestry, creating a complex warm undertone palette",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "build": "Rangy and lean, long-limbed with minimal body fat; the build of someone in constant motion, muscles defined but not bulky, shoulders slightly hunched from habitual forward posture",
+    "hair_color": "Deep amber (modified via geneware follicle mod; changes weekly)",
+    "hair_style": "Shoulder-length, textured, often pulled back with wire or fabric scraps; shows regrowth bands of natural dark brown underneath",
+    "hair_length": "Medium",
+    "eye_color": "Natural warm brown, observant and alert",
+    "skin_tone": "Warm golden-brown with honeyed undertones — a harmonious blend of Latin American, Sub-Saharan African, and Middle Eastern ancestry. Sun-kissed on exposed areas (forearms, neck, upper chest) from street-level living",
+    "complexion": "Strong, defined cheekbones and angular jaw reflecting African heritage features; perpetually tired-looking around the eyes from irregular sleep. Skin shows signs of street-level living — minor scarring, solar exposure on forearms and neck. Constant subtle movement of facial muscles, tongue running over split lip scar when thinking. Facial structure carries warmth from Latin American ancestry with the angular bone structure influenced by African heritage and Middle Eastern features in nose and brow ridge.",
+    "distinguishing_marks": [
+      "Split lip scar (vertical, center of lower lip, never fully healed, tissue lighter than surrounding skin)",
+      "Copper and silver prayer engravings across both forearms — intricate etched circuitry patterns pressed into skin, creating raised silvery-copper lines that catch light when moving",
+      "Prayer circuit etchings continue across the back of both hands in geometric mandala-like patterns, ending at fingertips",
+      "Network of thin white scars along left shoulder and upper left arm where chassis meets organic tissue (emergency augmentation junction lines)"
+    ],
+    "visible_augmentations": "Left arm from elbow down is a functional chrome chassis (basic-grade emergency replacement) — matte dark metal with polished sections, covered in exterior copper-silver prayer etchings that mirror the organic circuitry on their biological arm. Joint seams visible at wrist and elbow. The contrast between organic right arm (warm golden-brown skin with etchings) and metallic left arm (etched chrome) is striking and deliberate. No visible ocular or neural augmentations.",
+    "posture_movement": "Almost never still — weight shifts constantly, hands gesture while speaking, paces in tight circles during conversation. Moves with economical grace despite restlessness, as if their body is tuned to the frequency of their own prayers. Leans forward when listening, head tilted slightly. Left arm moves with subtle mechanical precision, not quite matching organic arm's fluidity, but they move it with complete comfort and intention.",
+    "clothing_style": "Tier 4-5 practical streetwear, worn but maintained: oversized linen shirt (cream or pale gray, sleeves rolled to mid-forearm to display prayer etchings) layered under a patched canvas vest covered in small metal buttons, charms, and wire-wound symbols. Loose-fitting dark cargo pants with multiple pockets (some containing prayer cards, wire, small offerings). Worn canvas shoes. Accessorized with salvaged jewelry — twisted copper wire bracelets, a single silver chain worn visible, fabric wraps around wrists. Everything suggests improvisation and spiritual intentionality rather than fashion."
+  },
+  "image_prompt": "Cyberpunk 2226 character Amara Bustamante: 177cm tall lean figure with warm golden-brown skin blending Latin American, Sub-Saharan African, and Middle Eastern heritage. Deep textured amber hair (geneware-modified, shoulder-length, pulled back with wire scraps showing dark brown regrowth). Sharp defined cheekbones, warm brown eyes, split lip scar center lower lip. Cream linen shirt rolled to mid-forearm displaying intricate copper-silver prayer circuit etchings on both arms, extending in mandala patterns across hands. Left arm replaced with matte dark chrome chassis from elbow down with etched prayer patterns mirroring organic arm, visible joint seams. Patched canvas vest with metal buttons and wire-wound charms, dark cargo pants. Twisted copper wire bracelets, silver chain, fabric wrist wraps. Posture slightly forward-leaning, restless energy, hands gesturing. Sun-kissed exposed skin, minor scars, street-worn but maintained. Great Lakes Metropolitan Zone neon-lit background, evening lighting catching chrome and copper etchings, spiritual and practical aesthetic. Cyberpunk street culture atmosphere. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 59.2,
+    "Sub-Saharan African": 26.0,
+    "Middle Eastern": 14.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

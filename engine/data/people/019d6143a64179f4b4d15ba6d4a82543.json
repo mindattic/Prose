@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a64179f4b4d15ba6d4a82543",
+  "type": "character",
+  "name": "Atlas Lewandowski-Thorvaldsdóttir",
+  "aliases": [
+    "Oscillate",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Evidence removal and scene sanitation — cleaner",
+  "age": 41,
+  "status": "active",
+  "location": "Geartown — industrial district of chop shops and fabricators, near Damen and Armitage",
+  "description": "Kenji Alvarez-Okonkwo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Kenji Alvarez-Okonkwo plans to keep it that way. He works as a cleaner out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKenji Alvarez-Okonkwo has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.99,
+      "ideal": 0.1,
+      "id": 0.35,
+      "shadow": 0.4,
+      "mask": 0.83,
+      "ghost": 0.72
+    },
+    "core_fears": [
+      "The quiet — silence means something is about to go very wrong",
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
+    ],
+    "core_desires": [
+      "To matter to someone for who they are, not what they can do",
+      "The perfect run — one job so clean it becomes legend",
+      "Power — enough leverage that nobody ever threatens them again"
+    ],
+    "coping_mechanisms": [
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Kenji Alvarez-Okonkwo sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Ends statements with 'yeah?' — not a question, a dare",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
+      "\"There was never anyone here. There was never anything here. Are we clear?\"",
+      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Kenji Alvarez-Okonkwo is offered a contract that would clear all their debts — the target is someone they respect",
+    "A high-paying contract turns out to target someone Kenji Alvarez-Okonkwo owes a personal debt to",
+    "Kenji Alvarez-Okonkwo's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
+  ],
+  "narrative_function": "Kenji Alvarez-Okonkwo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Thermal masking system — body heat signature can be suppressed or spoofed",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — operates through reputation only",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 9
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 6
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 6
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 6
+      }
+    },
+    "personality": {
+      "aggression": 0.52,
+      "caution": 0.64,
+      "loyalty": 0.54,
+      "greed": 0.45,
+      "empathy": 0.87
+    },
+    "drives": [
+      "freedom",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 8,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "ability to remain calm under fire",
+      "natural leadership presence"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "cleaner",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Preaches independence but is desperate for approval from people they respect"
+    ],
+    "habits": [
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Maintains a dead drop with emergency supplies in three separate districts",
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Losing their primary augmentation — the one that defines their professional identity"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    },
+    {
+      "name": "Thermal masking system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Holdout-380 'Ankle Biter'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "The Nearfield",
+    "The Heritage Vault",
+    "Geartown",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible RE-2 'Receptionist'",
+    "Doru Fofana-Câmpeanu",
+    "Ezio Kaboré-Malhotra",
+    "Ilhan Sandstrom-Badu",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Meridian Munitions Holdout-380 'Ankle Biter'",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Oumarou Svec-Ranginui",
+    "Quilt",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "TESSERA PG-2 'Signature'",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European and East Asian dominant with significant Southeast Asian, Hispanic/Latin American, and Sub-Saharan African admixture—a striking genetic convergence producing sharp East Asian bone structure softened by Eastern European depth, with warm golden undertones from the Latin American and African heritage components",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Athletic and lean with functional muscle — the physique of someone who moves deliberately and trains consistently. Shoulders suggest swimmer's development; core is tight. No wasted mass.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Neat, close-cropped. Maintained regularly. No statement, no rebellion — practical.",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings over dark brown pupils — cybernetic enhancement with visible metallic sheen",
+    "skin_tone": "Deep golden-bronze with warm undertones—the result of Eastern European baseline warmed by East Asian and Southeast Asian melanin contribution, further enriched by Hispanic and African heritage, creating a sun-weathered, luminous medium-dark complexion that reads almost burnished",
+    "complexion": "Sharp, refined cheekbones with the clean geometry of East Asian ancestry; defined angular jaw with subtle broadness from Eastern European heritage. Eyes are set with the characteristic almond shape refined by the admixture. Brow ridge suggests Eastern European depth. Minimal facial hair — clean-shaven or very close trim. Skin shows minor scarring consistent with industrial work — nothing theatrical. Expression tends toward neutral observation.",
+    "distinguishing_marks": [
+      "Thermal masking system scar tissue pattern along left collarbone and upper chest — thin silvered lines where subdermal heat-dispersal implants anchor",
+      "Burn scar on right forearm, approximately 8cm length, pale and old — deliberately non-augmented, left unrepaired as if intentional",
+      "Small tattoo on inner left wrist — geometric symbol, dark ink, minimal line work, appears functional rather than decorative"
+    ],
+    "visible_augmentations": "Cybernetic eyes are the primary visible modification — chrome iris rings catch light distinctly, pupils respond to thermal data inputs with slight lag. Eyes appear to refocus differently than baseline human vision. The thermal masking system is invisible unless imaging equipment detects it — body heat signature anomalies are the only tell.",
+    "posture_movement": "Moves with controlled economy — no wasted motion. Appears to be scanning environments constantly, head movements precise. Stands with weight slightly forward, ready to shift direction. Handshakes are firm but measured. Speech patterns are clipped, direct — minimal affect. Resting state is alert.",
+    "clothing_style": "Tier 3-4 functional wear — fitted dark synthweave cargo pants with subtle reinforced seams, technical-grade footwear (non-branded, maintenance-focused). Layered tops allow thermal regulation and concealment — typically dark colors. Minimal branding. Everything is chosen for mobility and durability over fashion. A lightweight jacket with multiple sealed pockets is standard. No jewelry. No personal flair."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Atlas, a 178cm athletic figure with sharp East Asian-inflected cheekbones, strong angular Eastern European jaw structure, and luminous deep golden-bronze skin that catches warm light. Dark close-cropped hair with silver threading at temples. Distinctive chrome cybernetic iris rings catching neon light over dark pupils, creating an unsettling refocused gaze. Clean-shaven with minimal affect expression. Visible thermal masking scar tissue traced along left collarbone in silvered lines. Pale old burn scar on right forearm left unaugmented. Wearing dark technical synthweave cargo pants and layered dark tops with sealed pockets, lightweight reinforced jacket, non-branded maintenance-grade footwear. Standing alert with weight forward, controlled posture, scanning. Moody GLMZ industrial setting with cool blue-white neon and warm amber environmental light. Slight thermal shimmer around shoulders suggesting active masking system. Cinematic cyberpunk lighting, high contrast, sharp focus. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 44.8,
+    "East Asian": 33.5,
+    "Hispanic/Latin American": 8.6,
+    "Southeast Asian": 6.8,
+    "Sub-Saharan African": 6.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "019d6143a5ef794fbe2491587134eedf",
+  "type": "character",
+  "name": "Sable Erikstad-Vasquez-Alfarsi-Valenzuela",
+  "aliases": [
+    "Hardline"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Fixer - Military contracts",
+  "age": 55,
+  "status": "active",
+  "location": "Geartown, near Damen and Armitage",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Arcturus",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "related_entities": [
+    "Geartown",
+    "Arcturus Defense Solutions",
+    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Saodat Mirzoyan-Fubara",
+    "TESSERA PA-5 'Attendant'",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Highly mixed diaspora ancestry: Southeast Asian (30.4%, dominant), Hispanic/Latin American (19.3%), Middle Eastern (16.5%), Sub-Saharan African (12.4%), South Asian (11.5%), Northern European (9.9%). This blend produces warm golden-brown undertones with subtle red and amber notes—a complex, warm olive-bronze complexion that reflects his truly global genetic heritage.",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and thick-necked, muscular but softened by age and desk work. Carries weight in his torso; forearms remain corded and strong.",
+    "hair_color": "Steel gray with residual black at the temples",
+    "hair_style": "Slicked back, pomaded, precise",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Dark brown, shot through with deep gray",
+    "skin_tone": "Warm golden-bronze with amber undertones; weathered from decades of varied climates and urban exposure. The tone reflects his Southeast Asian and Sub-Saharan African heritage dominance, enriched by Middle Eastern and South Asian warmth.",
+    "complexion": "Strong, broad jawline with subtle fullness reflecting his diverse ancestry. Lines around the eyes and mouth from decades of negotiation and command. Slight scar tissue on his left cheekbone. Five o'clock shadow across a face that carries both angular and rounded features—a balanced blend of his ancestral heritage. Meticulous grooming otherwise.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across his left cheekbone, approximately 3cm, from a knife fight in his thirties",
+      "Network of pale burn scars across his right shoulder and upper arm, partially obscured by clothing",
+      "Tattoo on his inner left wrist: a Scandinavian rune (ᚦ, Thurisaz) in faded black ink, likely 30+ years old"
+    ],
+    "visible_augmentations": "Military-grade smartwatch on right wrist with discrete Arcturus corporate logo. Slight neural port scarring behind right ear, barely visible unless hair is pulled back.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Stands with shoulders squared, a habit from military life. Handshakes are firm and brief. Leans back when listening, eyes narrow slightly when calculating.",
+    "clothing_style": "Tier 1-2 corporate military aesthetic: charcoal wool slacks, pressed crisply; gray or black dress shirts with reinforced polymer weave (ballistic-rated). Dark tactical jacket (Arcturus-branded, understated embroidery). Black leather combat boots, polished to mirror finish. Small Φ currency clip on belt. Status conveyed through fabric quality and cuts, not flashiness."
+  },
+  "image_prompt": "Cyberpunk 2226 corporate operative, 178cm tall, golden-bronze complexion with warm amber undertones reflecting Southeast Asian, Hispanic, Middle Eastern, and Sub-Saharan African heritage. Steel-gray hair slicked back, dark brown eyes with gray flecks. Strong jawline with character lines and a thin scar on left cheekbone. Five o'clock shadow, meticulous grooming. Broad shoulders, muscular build softened by age. Wearing crisp charcoal wool slacks, ballistic-rated gray dress shirt, dark Arcturus-branded tactical jacket, mirror-polished black combat boots. Military-grade smartwatch on right wrist. Faded Scandinavian rune tattoo visible on inner left wrist. Standing with squared shoulders in corporate dystopian office or rain-lit GLMZ street, cool blue and amber neon lighting. Serious, calculating expression. High-detail cyberpunk corporate aesthetic, no excessive chrome, understated status. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 30.4,
+    "Hispanic/Latin American": 19.3,
+    "Middle Eastern": 16.5,
+    "Sub-Saharan African": 12.4,
+    "South Asian": 11.5,
+    "Northern European": 9.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

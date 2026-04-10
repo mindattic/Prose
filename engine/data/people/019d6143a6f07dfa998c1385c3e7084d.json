@@ -1,0 +1,326 @@
+{
+  "id": "019d6143a6f07dfa998c1385c3e7084d",
+  "type": "character",
+  "name": "Britt Larsdóttir",
+  "aliases": [
+    "Rubicon",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Aerial extraction and rapid transit pilot — getaway pilot",
+  "age": 40,
+  "status": "active",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Damen and Armitage",
+  "description": "Tenzin Ahlstrom-Quartey is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 40, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a getaway pilot out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Tenzin Ahlstrom-Quartey lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.12,
+      "ideal": 0.44,
+      "id": 0.63,
+      "shadow": 0.24,
+      "mask": 0.22,
+      "ghost": 0.64
+    },
+    "core_fears": [
+      "Losing control of their own body to a hacker or malfunctioning cyberware",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Dying alone in some alley and nobody noticing for weeks"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Cannot distinguish between caution and cowardice in themselves or others",
+      "Overestimates their own abilities in situations outside their specialty"
+    ],
+    "secret": "Tenzin Ahlstrom-Quartey sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"Vertical extraction in thirty seconds. Don't be late.\"",
+      "\"I fly things that aren't supposed to fly in places they aren't supposed to go.\"",
+      "\"Airspace regulations are for people who file flight plans. I don't file flight plans.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Tenzin Ahlstrom-Quartey maintains is found and cleaned out — whoever did it now has leverage",
+    "Tenzin Ahlstrom-Quartey discovers a job they completed last year was a setup for something much larger and much worse",
+    "A Tier 4 executive offers Tenzin Ahlstrom-Quartey a permanent position — the pay is obscene and the strings are invisible until they tighten"
+  ],
+  "narrative_function": "Tenzin Ahlstrom-Quartey functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.97,
+      "caution": 0.96,
+      "loyalty": 0.9,
+      "greed": 0.54,
+      "empathy": 0.14
+    },
+    "drives": [
+      "justice",
+      "power",
+      "revenge"
+    ],
+    "thresholds": {
+      "pain": 7,
+      "stress": 6,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "inability to delegate — must control everything personally",
+      "emotional volatility under extreme stress",
+      "old injury that flares under specific conditions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "getaway pilot",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+    ],
+    "habits": [
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Checks exits within 10 seconds of entering any room",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    },
+    {
+      "name": "Cranial bomb defuser",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Narrows Compact",
+    "The Unfinished Theorem",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Slagworks Industrial",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Brecken Yılmaz-Osei",
+    "Crucible RE-2 'Receptionist'",
+    "GLMZ",
+    "Helix Biosystems Vagal Resonance Dampener",
+    "Ilhan Sandstrom-Badu",
+    "Kamala Blomberg-Konadu",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Nnamdi Ostrowski-Faletolu",
+    "Prophet",
+    "The Narrows",
+    "The Pure Hand"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian) with Southeast Asian and North African admixture — a striking genetic blend resulting in warm-toned skin with subtle olive undertones, high cheekbones from Southeast Asian ancestry, and the angular jaw structure common to Northern European heritage. The combination creates a face that reads as neither fully one ancestry nor another, distinctly cosmopolitan.",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Rawboned and efficient — long-limbed with minimal body fat, the physique of someone who trains for endurance and precision rather than bulk. Shoulders slightly forward from years hunched over flight controls.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical, no styling products",
+    "hair_length": "Long (mid-back when unbraided)",
+    "eye_color": "Gray-brown, direct and unblinking",
+    "skin_tone": "Warm medium brown with olive undertones — the result of blended Scandinavian fairness, Southeast Asian golden warmth, and North African depth. Slightly ashy cast from the chemical air of Steamvent Alley or chronic sleep deprivation, likely both.",
+    "complexion": "Weathered and lined around the eyes; minimal grooming beyond function. Slight scar tissue at left temple. No cosmetics. Skin has the texture of someone who spends time in hot, mineral-rich air without proper skincare. Cheekbones prominent and well-defined, reflecting Southeast Asian ancestry; facial structure balanced between Northern European angularity and softer, warmer tones from mixed heritage.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward jawline — faint, old, possibly from a crash or street fight",
+      "Calluses across knuckles and palms — pilot and combatant's hands",
+      "Tattoo on inner wrist: minimalist targeting reticle in black ink, approximately 3cm diameter",
+      "Small burn scar on right forearm, thin and pale, consistent with old electrical contact"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull — polished chrome with faint circuitry etching visible at the edges, worn without cover or concealment. Slight subcutaneous shimmer at base of neck suggests subcutaneous neural array beneath skin. No visible limb modifications.",
+    "posture_movement": "Economical and controlled. Stands with weight balanced evenly, never fully relaxed. Moves with pilot's precision — efficient, calculated, no wasted motion. Eye movement is quick and systematic, as if still scanning instruments. Speaks sparingly; listens more than she talks.",
+    "clothing_style": "Tier 3-4 functional: reinforced flight jacket (matte black synthleather, multiple pockets, worn at cuffs), fitted gray cargo pants with thigh utility loops, scuffed steel-toed boots. No logos or branding. Wearing a subcutaneous wrist display visible only as faint luminescence under sleeve. One platinum ring on left ring finger — no obvious sentimental value, possibly a dead drop indicator."
+  },
+  "image_prompt": "Britt Larsdóttir, cyberpunk 2226, tall athletic woman with warm medium-brown skin with olive undertones, prominent high cheekbones, gray-brown direct gaze. Dark brown hair with silver at temples pulled in tight functional braid. Thin scar from left temple to jawline, callused pilot's hands. Neural interface jack chrome visible at base of skull. Wearing matte black reinforced flight jacket, gray cargo pants, steel-toed boots. Minimalist targeting reticle tattoo on inner wrist visible. Standing in cool neon-lit industrial corridor, faint subcutaneous circuitry shimmer at neck catching blue light. Economical posture, hands at sides, expression focused and controlled. Steamvent Alley ambiance, mineral-haze air, cyberpunk dystopian setting. Sharp focus on face and augmentations, moody atmospheric lighting, cinematic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 67.4,
+    "Southeast Asian": 16.4,
+    "North African": 16.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

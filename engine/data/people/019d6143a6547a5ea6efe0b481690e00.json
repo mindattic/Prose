@@ -1,0 +1,332 @@
+{
+  "id": "019d6143a6547a5ea6efe0b481690e00",
+  "type": "character",
+  "name": "Rowan Karimov",
+  "aliases": [
+    "The Painter",
+    "Claw",
+    "Red Maren"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Local artist, cautionary tale, unlikely ally",
+  "age": 34,
+  "status": "alive",
+  "location": "The Shelf — three floors below Kyle, near Ashland and Division",
+  "description": "Maren Voss used to paint murals. Enormous ones — entire sides of buildings\non the Shelf transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. The Shelf loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.9,
+      "ideal": 0.8,
+      "id": 0.45,
+      "shadow": 0.6,
+      "mask": 0.35,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the ability to create entirely (the claws breaking, the pigment running out)",
+      "Being forgotten — the murals painted over, the message lost",
+      "That the claws have become more her than the hands ever were",
+      "Becoming the weapon Axiom accidentally made her into"
+    ],
+    "core_desires": [
+      "To paint something so true it cannot be erased",
+      "To be seen as an artist, not a victim or a monster",
+      "To find beauty in what she's become, not despite it",
+      "Quietly — to touch something gently again"
+    ],
+    "coping_mechanisms": [
+      "Painting constantly — walls, floors, scraps of metal, anything",
+      "Physical exhaustion — she works until she drops",
+      "Dark humor about the claws (\"You should see me try to eat noodles\")",
+      "Feeding stray cats (she is very gentle and very careful and very slow)"
+    ],
+    "blind_spots": [
+      "She thinks she's made peace with the loss. She hasn't.",
+      "She doesn't realize how much she frightens people who care about her",
+      "She conflates being needed with being loved",
+      "She believes art redeems everything. It might not."
+    ],
+    "secret": "She can still feel her hands. Phantom sensation. Every night she feels\nherself holding a brush, the soft resistance of oil paint, the texture\nof canvas. She wakes up and sees the claws and has to remember all over\nagain. Every single morning."
+  },
+  "speech_patterns": {
+    "vocabulary": "Art vocabulary mixed with street practicality. She describes the world\nin terms of color, composition, and texture. Violence is discussed in\nthe same tone as a brushstroke — clinically, with attention to form.",
+    "cadence": "Measured, unhurried. She pauses before important words as if choosing\npigment. Sentences tend to be short and declarative. She doesn't\nwaste words, but when she does speak at length, it's about art,\nand her voice changes — warmer, faster, almost excited.",
+    "verbal_tics": [],
+    "example_lines": [
+      "You should see me try to eat noodles. It's a whole performance.",
+      "They took my hands. I grew claws. That's not a metaphor.",
+      "Red is the only honest color. Everything else is pretending.",
+      "I don't paint what I see. I paint what they don't want you to see.",
+      "The scar? Claw slipped. First month. You learn fast when the lesson draws blood.",
+      "I keep the brushes. Don't ask me why. I know why. I just can't say it out loud."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kyle",
+      "type": "neighbor / mutual respect",
+      "description": "They live in the same building on the Shelf. They don't talk much.\nBut there's a recognition — two people who lost something essential\nand rebuilt themselves around the absence. Kyle sees the claws and\nunderstands discipline. Maren sees the katana and understands tools\nthat are also wounds. She once painted his silhouette on a wall\nwithout asking. He never mentioned it. They both know.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Mrs. Chen",
+      "type": "regular customer / quiet friendship",
+      "description": "Mrs. Chen makes Maren special noodles — cut into pieces she can\nmanage with the claws. Neither of them has ever acknowledged this\naccommodation. Mrs. Chen just serves them that way. Maren just\neats them that way.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Pixel",
+      "type": "augment maintenance / unlikely bond",
+      "description": "Pixel maintains Maren's claws. They're fascinated by the military\nhardware and keep offering to add features (retractable blades,\nbuilt-in welding torch). Maren always refuses. The claws are what\nthey are. But she lets Pixel talk while they work, and sometimes\nshe listens.",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Axiom Industries",
+      "type": "enemy / subject matter",
+      "description": "They took her hands. She took their walls. The war is ongoing,\nfought in pigment and blood and claw-marks. Every mural is an act\nof defiance. Every cleanup crew Axiom sends is an admission that\nthe defiance works.",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "Axiom escalates against her — sends a crew to take more than her hands this time",
+    "She asks Kyle to protect her while she paints a piece that will be seen from the Spire",
+    "Her blood supply from the Circuit clinic gets cut off — she needs an alternative",
+    "She paints something that reveals a corporate secret hidden in Old Harbor",
+    "She and Yuki cross paths — two women on opposite sides of the same machine",
+    "The claws malfunction. Pixel can fix them, but the parts are only available from Axiom.",
+    "She paints Kyle's story on a wall. He has to decide if he wants the world to see it."
+  ],
+  "narrative_function": "Maren is the mirror to Kyle's central contradiction, but inverted.\nKyle chose the sword. Maren had the claws forced on her. Kyle clings\nto a romantic philosophy about his weapon. Maren has no romance about\nhers — they are the evidence of what was taken from her.\n\nShe asks the question: what do you do when the thing that defines you\nis also the thing that was done TO you? Kyle's katana is his identity\nby choice. Maren's claws are her identity by violence. But both of them\nhave rebuilt themselves around a tool that is also a wound.\n\nShe also represents art as resistance — the idea that creating something\nbeautiful (or at least true) in an ugly world is its own form of bushido.\nShe would never use that word. But Kyle might recognize it.\n\nAnd there's the unspoken question: if Axiom took Kyle's arms instead of\nMaren's hands, would he have rebuilt himself? Or would he have broken?\nHe doesn't know. That's why he respects her.",
+  "augmentations": "",
+  "daily_life": "System.Collections.Generic.Dictionary`2[System.Object,System.Object]",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 9,
+      "creativity": 10,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 5,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 9,
+      "empathy_detachment": 5,
+      "impulsivity_deliberation": 6,
+      "assertion_deference": 8,
+      "transparency_guardedness": 3
+    },
+    "drives": [
+      "Create truth that cannot be erased",
+      "Defy Axiom",
+      "Find beauty in what she has become"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 8,
+        "response": "Paints faster, harder, more violently — the claws score deeper"
+      },
+      "moral": 7,
+      "trust": 5,
+      "desperation": 8
+    },
+    "strengths": [
+      "Bravery",
+      "Creativity",
+      "Perseverance",
+      "Authenticity",
+      "Zest"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Self-Regulation",
+      "Prudence",
+      "Social Intelligence",
+      "Hope"
+    ],
+    "tags": [
+      "artist",
+      "mutilated",
+      "defiant",
+      "claw-hands",
+      "resistance",
+      "kyle-mirror"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never hide the claws — refusal to conceal what was done",
+      "Paint what they don't want you to see",
+      "Accept no modifications to the claws — they are what they are",
+      "Use blood and industrial pigment — honest materials for honest work",
+      "Never stop creating — the art is the resistance",
+      "Let Pixel maintain the claws but never add features",
+      "Feed the stray cats slowly, gently, carefully"
+    ],
+    "escalation_ladder": [
+      "Dark humor about the claws — deflection through wit",
+      "Paints something pointed about whoever is threatening her",
+      "Direct confrontation — flat calm of someone who has already lost the worst thing",
+      "Asks Kyle for protection — the admission costs her",
+      "Paints something visible from the Spire — maximum defiance, maximum exposure"
+    ],
+    "interpersonal_modes": {
+      "Kyle": "Mutual recognition — two people rebuilt around absence, no need to explain",
+      "Mrs. Chen": "Quiet accommodation neither acknowledges — the noodles are cut smaller",
+      "Pixel": "Tolerates their enthusiasm, listens while they work",
+      "Axiom Industries": "Ongoing war fought in pigment, blood, and claw-marks"
+    },
+    "stress_responses": {
+      "low": "Paints more — walls, floors, scraps of metal, anything available",
+      "medium": "Works until physical exhaustion — drops then sleeps",
+      "high": "Dark humor escalates — 'you should see me try to eat noodles' becomes more bitter",
+      "critical": "Goes to the brushes she keeps. Holds them. Cannot use them. Remembers."
+    },
+    "contradictions": [
+      "Thinks she has made peace with the loss — she wakes every morning feeling phantom hands and has to remember all over again",
+      "Does not realize how much she frightens people who care about her",
+      "Believes art redeems everything — it might not"
+    ],
+    "habits": [
+      "Wears sleeveless shirts so the claws are always visible",
+      "Cuts her own hair with the claws — badly",
+      "Feeds stray cats with extreme gentleness and slowness",
+      "Describes the world in terms of color, composition, and texture",
+      "Keeps the old brushes — never explains why"
+    ],
+    "breaking_points": [
+      "The claws malfunctioning and parts only being available from Axiom",
+      "Axiom sending a second crew to take more than her hands",
+      "Someone painting over her murals — the message lost",
+      "Touching something gently and failing — the phantom hands betraying her"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  ],
+  "related_entities": [
+    "Axiom Industries",
+    "Dredge Mining Collective",
+    "The Circuit",
+    "The Shelf",
+    "The Spire",
+    "Titanium",
+    "Needle",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom",
+    "VOSS",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Arcturus PX-1 'Phantom'",
+    "CHROMEWORKS Phantom Stealth Ocular Recorder",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Hearthstone Firearms Plinker-22 'Tin Can'",
+    "Kyle Ellen Corbin-Vasik",
+    "Nnenna Vásquez-Kuosmanen",
+    "Old Harbor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo RK-2 'Stray'",
+    "Saodat Mirzoyan-Fubara",
+    "Slagworks Industrial",
+    "The Collective",
+    "The Heidelberg Scar",
+    "The Heritage Vault",
+    "The Human Baseline Alliance",
+    "The Mirror",
+    "The Question",
+    "Tomasz Wren",
+    "Vuk Jorgensen-Toure",
+    "Warden",
+    "Yannick Tambadou-Reinholt",
+    "Yuki Tanabe"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian and Central Asian dominant (94.7%), with Sub-Saharan African ancestry (5.3%). The genetic blend manifests in warm undertones beneath the sallow complexion, subtle warmth in cheekbone structure, and natural dark hair. Shelf-tier living has drained the typical richness from her skin, but the underlying genetic heritage shows in bone structure and eye-set.",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Lean and angular, almost skeletal — the result of chronic stress and limited resources. Tight muscle definition in shoulders and core from years of mural work and survival. No excess anywhere.",
+    "hair_color": "Black, natural",
+    "hair_style": "Cropped close to scalp, uneven and jagged — self-cut with the claws, deliberately crude",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, flat and distant",
+    "skin_tone": "Deep warm brown with sallow undertones from Shelf-tier malnutrition and stress. Complexion drained of its natural luminosity but retaining the undertone warmth characteristic of South Asian and Central Asian heritage.",
+    "complexion": "Sharp, high cheekbones with pronounced definition; hollow cheeks; thin-lipped mouth. Bone structure reflects South and Central Asian ancestry — defined jawline, forward-set features. Skin shows old bruising marks and small scars consistent with alley violence. No cosmetic modifications. Haunted expression — eyes that have witnessed amputation and chosen defiance.",
+    "distinguishing_marks": [
+      "Surgical cauterization scars at both wrists where hands were severed, approximately 8cm across each, pale and smooth despite trauma",
+      "Multiple thin white scars on forearms from years of handling caustic paints and sharp tools",
+      "Dried blood stains (intentional) on chest and neck from her own work — some days fresh, some days old",
+      "Faded tattoo on left shoulder blade: a single brushstroke in gray ink, likely self-done"
+    ],
+    "visible_augmentations": "Both arms replaced from elbow down with military-surplus combat prosthetics. Each terminating in three curved titanium digits (40cm+ in length), wickedly sharp, designed for breaching. The joints are exposed hydraulic cylinders with no attempt at cosmetic covering. Dull gunmetal finish with rust blooming at stress points. Hydraulic fluid sometimes weeps from the seals, leaving dark stains on her clothes. The augmentations are grotesque — clearly weapons retrofitted onto an artist's body.",
+    "posture_movement": "Stands with shoulders forward, habitual defensive posture. Moves efficiently, economically — no wasted motion. The claws make her naturally careful; she doesn't gesture wildly. When painting, she becomes trance-like, body loose and focused. Her movements with the claws are deliberate and precise despite their brutal appearance. She favors her left side when resting, as if protecting something.",
+    "clothing_style": "Sleeveless tank tops or cut-off shirts (Tier 5, worn-out second-hand) in dark colors to hide paint stains. Industrial cargo pants, multiple pockets, patched at the knees. No corpo branding. Heavy boots with welded metal plating on the toes. A long, battered duster coat (original color unknown) worn over everything when moving through Tier-1 areas. No jewelry except a corroded silver ring on what remains of her right thumb — possibly a pre-amputation remnant kept as a relic."
+  },
+  "image_prompt": "Rowan Karimov, South Asian and Central Asian heritage, lean 168cm frame with hollow cheeks and sharp bone structure, deep warm brown skin drained by Shelf-tier poverty, dark eyes haunted and distant. Both arms replaced from elbow down with grotesque military-surplus prosthetics—exposed hydraulic cylinders, three curved titanium claws per side, gunmetal finish with rust bloom and weeping hydraulic fluid. Self-cut black hair cropped jagged and crude. Sleeveless dark tank top stained with dried paint and blood, industrial cargo pants with welded metal-toed boots, long weathered duster coat. Standing in defensive posture, trance-like intensity in gaze. Cyberpunk 2226, neon-lit alley, cold industrial lighting casting harsh shadows on scarred wrists and brutal augmentations, mural wall behind with her fresh paint work. Mood: defiant, haunted, dangerous artist. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 53.1,
+    "Central Asian": 41.6,
+    "Sub-Saharan African": 5.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

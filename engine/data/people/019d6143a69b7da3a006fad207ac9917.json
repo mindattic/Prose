@@ -1,0 +1,298 @@
+{
+  "id": "019d6143a69b7da3a006fad207ac9917",
+  "type": "character",
+  "name": "Arden Mbekele",
+  "aliases": [
+    "Driftwood",
+    "Pik"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Numbers runner and low-level bookmaker's courier for an illegal betting syndicate",
+  "age": 19,
+  "status": "active",
+  "location": "The Shelf lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
+  "description": "Pikoi is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Shelf's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.4,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Getting caught and losing everything, leaving his sister alone",
+      "That he is already too deep to ever leave cleanly"
+    ],
+    "core_desires": [
+      "Enough money to feel safe — not rich, just safe",
+      "To be seen as competent and trustworthy by people who matter"
+    ],
+    "coping_mechanisms": [
+      "Humor — jokes to deflect anything serious",
+      "Movement — stays in motion, sitting still makes him anxious"
+    ],
+    "blind_spots": [
+      "Doesn't recognize how much his handlers exploit his loyalty",
+      "Believes his good memory makes him valuable enough to be protected — it makes him a liability"
+    ],
+    "secret": "He has been skimming. Not much — rounding down on collections, Φ8 here, Φ12 there — and putting it into a locked account under his sister's name. He's been doing it for six months and is terrified someone has already noticed."
+  },
+  "speech_patterns": {
+    "vocabulary": "Shelf pidgin heavy, lots of compression and dropped syllables, code-switches into formal speech when nervous as a tell",
+    "cadence": "Fast, runs sentences together, slows only when he's scared or lying",
+    "verbal_tics": [
+      "'Straight, straight—' as a filler",
+      "Laughs a beat too early",
+      "'You didn't hear this from me' even about innocuous things"
+    ],
+    "example_lines": [
+      "'Straight straight, I'm just the one who carries it, what's in the packet is none of my — yeah, okay, fine, what do you need?'",
+      "'She's a good kid, my sister. Bright. She should get out of the Shelf. That's the whole thing, yeah? That's the whole — that's it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Pikoi witnessed a money handoff that connects a Shelf bookie to someone much higher up the food chain — he doesn't understand what he saw but someone knows he was there",
+    "His skimming has been noticed; his handler is giving him a chance to make it right by delivering a package he's been told not to look inside"
+  ],
+  "narrative_function": "Local color, minor information source, potential quest hook through his precarious situation — he knows things he doesn't know he knows, and he's one bad week from making a desperate decision.",
+  "augmentations": "Tide-pattern iris mods (cosmetic). Cheap reflex boost implant in his ankles — low-grade, gives him maybe 15% faster initial reaction time, useful for running.",
+  "daily_life": "Wakes at noon, picks up slips and Quanta bundles from a dead-drop near the Blackpipe water recycler, spends the afternoon making rounds to punters across four sub-levels, returns collections to his handler by evening, eats late, sleeps light.",
+  "affiliation": "Works for a mid-tier bookie operation run loosely under the umbrella of a crew called The Burnside Regulars",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 8,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 4,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 7,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -3,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "runner",
+      "numbers courier",
+      "street-smart",
+      "precarious",
+      "survivalist loyalty"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Move first, think while moving",
+      "Don't lie to the people you work for — deflect, but don't lie",
+      "Keep his sister out of all of it, always"
+    ],
+    "escalation_ladder": [
+      "Jokes and deflection",
+      "Physical removal — just leaves",
+      "Runs, literally",
+      "Frozen panic — rare but total"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly and guarded simultaneously — chatty about nothing, reveals nothing useful",
+      "friends": "Unexpectedly sincere, drops the speed and the jokes, sits still"
+    },
+    "stress_responses": {
+      "low": "More jokes, faster talking",
+      "medium": "Goes quiet, eyes tracking exits",
+      "high": "Compliance — says yes to everything until he can run"
+    },
+    "contradictions": [
+      "Deeply loyal to a crew that doesn't see him as a person",
+      "Clever enough to see his situation clearly but emotionally unable to act on that knowledge"
+    ],
+    "habits": [
+      "Taps his left ankle implant rhythmically when thinking — a nervous habit that also checks the hardware",
+      "Memorizes the day's numbers by inventing a story about them"
+    ],
+    "breaking_points": [
+      "Any direct threat to his sister will cause him to do something completely uncharacteristic and possibly catastrophic",
+      "Being publicly humiliated by his handler will snap his compliance"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Tide-pattern iris mods (cosmetic)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Tide-pattern iris mods (cosmetic)",
+      "replaces": ""
+    },
+    {
+      "name": "Low-grade reflex boost — ankle implants, both legs",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Low-grade reflex boost — ankle implants, both legs",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Cockroach": 0.9,
+    "Safety First": 0.9,
+    "Improviser": 0.9,
+    "Lone Wolf": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2181 — Born on the Shelf, third sub-level, to a dockworker father and a transit operator mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2193 — Mother dies in a Ferrogate Transit maintenance accident; father becomes unreliable",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — Begins running numbers for the Burnside Regulars at 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2199 — Starts skimming; saves Φ340 in his sister's locked account",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2200 — Present day; six months into the skim, increasingly certain someone has counted wrong",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Burnside Pocket",
+    "Grandmother",
+    "The Shelf",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "NeuralPath Cascade Standard Feed BCI",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Chicago",
+    "Arcturus Exo-Runner Frame",
+    "Cezar Watanabe-Gyasi",
+    "Crucible UB-2 'Umbrella'",
+    "Dayo Adeyemi",
+    "Lazarus LX-2 'Lab Rat'",
+    "Neuromorphic Pressure Cestus",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+    "Synaptrel",
+    "The Render",
+    "The Underlayer Collective",
+    "The Wire Taps",
+    "Tooth Fairy"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Complex diaspora blend: Sub-Saharan African base (32%) with substantial Pacific Islander (23%), Northern European (21%), and significant North African, Hispanic/Latin American, and Southeast Asian contributions. Reflects the Ubiquitous Diaspora — genetic heritage independent of surname.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, all lean muscle and angles — the build of someone who runs rather than fights, with minimal fat and functional strength concentrated in his legs and core",
+    "hair_color": "Black, natural",
+    "hair_style": "Chaotic, unmaintained halo of coils; often falls into his eyes",
+    "hair_length": "Medium",
+    "eye_color": "Tide-pattern modded: base brown with concentric rings of blue-green that ripple outward slowly in programmed cycles",
+    "skin_tone": "Medium-deep warm brown with complex undertones — the Sub-Saharan base enriched by olive and amber notes from North African ancestry, with subtle warm undertones from Pacific Islander and Southeast Asian genetics creating a nuanced, sun-kissed depth",
+    "complexion": "Angular face with broad jaw and wide-set eyes showing Pacific Islander structure refined by Northern European cheekbones and Southeast Asian eye shape. The blend creates sharp, distinctive features. Clear skin with the worn appearance of someone who sleeps poorly and eats inconsistently. Thin scar crossing left eyebrow, slightly raised and pale against his skin tone.",
+    "distinguishing_marks": [
+      "Thin scar crossing left eyebrow, approximately 3cm, pale and slightly raised, origin undiscussed"
+    ],
+    "visible_augmentations": "Tide-pattern iris mods — the only immediately visible augmentation; the slow rippling blue-green rings in his eyes are distinctive enough that he's come to regret their visibility for his line of work. Ankle reflex implants are subcutaneous and invisible, but may create slight micro-movements in his lower legs when he's alert.",
+    "posture_movement": "Moves with economical grace through crowds and corridors, weight balanced on the balls of his feet as if perpetually ready to change direction. Habitually scans rooms for exits and sight lines. Fast twitchy movements when nervous or in transit; can appear jittery under pressure. Favors doorways and wall positions in conversation.",
+    "clothing_style": "Tier 4 casual: worn synthweave jacket in charcoal gray with internal pockets for slips and currency bundles, loose thermal underlayer, cargo pants with reinforced pockets, scuffed low-profile runners. Nothing that marks him as wealthy or corpo — everything is functional, easily replaceable, designed not to snag or impede movement. Carries a messenger bag, nondescript dark fabric, worn soft from use."
+  },
+  "image_prompt": "Arden Mbekele, 168cm lean wiry figure with medium chaotic black coils, medium-deep warm brown skin with olive and amber undertones. Angular face, broad jaw, wide-set eyes with rippling blue-green tide-pattern cybernetic iris mods cycling slowly. Pale scar crossing left eyebrow. Worn charcoal synthweave jacket, thermal underlayer, cargo pants, scuffed runners, dark messenger bag. Standing in doorway of neon-lit GLMZ corridor, weight balanced on balls of feet, economical posture, habitually scanning room. Cyberpunk 2226, atmospheric volumetric lighting, reflective wet pavement, cool blue-green neon contrast with warm ambient sodium vapor. Mood: perpetually alert, ready to move. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 31.9,
+    "Pacific Islander": 23.2,
+    "Northern European": 20.8,
+    "Hispanic/Latin American": 10.8,
+    "North African": 7.9,
+    "Southeast Asian": 5.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

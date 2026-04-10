@@ -1,0 +1,337 @@
+{
+  "id": "019d6143a63e77589fbef63e74e91b3a",
+  "type": "character",
+  "name": "Frost Kabwit",
+  "aliases": [
+    "Gravel",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Covert entry and social penetration specialist — infiltrator",
+  "age": 32,
+  "status": "active",
+  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
+  "description": "Kamala Larsen-Mensah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Kamala Larsen-Mensah lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.54,
+      "ideal": 0.39,
+      "id": 0.95,
+      "shadow": 0.28,
+      "mask": 0.96,
+      "ghost": 0.73
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "That they're fundamentally alone and connection is just a vulnerability",
+      "That their reputation is built on luck, not skill, and the luck is finite"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "To prove everyone who dismissed them catastrophically wrong",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Cannot accept help without interpreting it as leverage",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+    ],
+    "secret": "Kamala Larsen-Mensah killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+    ],
+    "example_lines": [
+      "\"The best disguise is being exactly who they expect to see.\"",
+      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
+      "\"Security is a story people tell themselves. I'm the plot twist.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A high-paying contract turns out to target someone Kamala Larsen-Mensah owes a personal debt to",
+    "Kamala Larsen-Mensah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A corporate black site Kamala Larsen-Mensah once infiltrated is being reopened, and the people inside know his face"
+  ],
+  "narrative_function": "As a infiltrator, Kamala Larsen-Mensah embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Internal drug synthesizer — produces combat stims and medical compounds on demand. Internal drug synthesizer — produces combat stims and medical compounds on demand",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 8
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "endurance": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 7,
+        "augmented": 1,
+        "effective": 6
+      },
+      "technical": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 5
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.79,
+      "caution": 0.75,
+      "loyalty": 0.66,
+      "greed": 0.14,
+      "empathy": 0.35
+    },
+    "drives": [
+      "loyalty",
+      "survival",
+      "money"
+    ],
+    "thresholds": {
+      "pain": 9,
+      "stress": 7,
+      "loyalty_break": 8
+    },
+    "strengths": [
+      "pain tolerance beyond normal limits",
+      "encyclopedic knowledge of GLMZ infrastructure"
+    ],
+    "weaknesses": [
+      "substance dependency — functional but fragile",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "infiltrator",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Values loyalty intensely but has betrayed someone in the past to survive",
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+    ],
+    "habits": [
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Checks exits within 10 seconds of entering any room",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Internal drug synthesizer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "replaces": ""
+    },
+    {
+      "name": "Internal drug synthesizer",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Social Chameleon": 0.9,
+    "Charmer": 0.9,
+    "Brawler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  ],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Slagworks Industrial",
+    "Chicago",
+    "Arcturus BH-2 'Marrow'",
+    "Breck Tannen",
+    "Carrion Defense Works",
+    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
+    "Crucible RE-2 'Receptionist'",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Glenville Sound",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Mika Sorel",
+    "Nnamdi Ostrowski-Faletolu",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "TESSERA TC-3 'Crucible'",
+    "The Fathom Line",
+    "The Quiet Room"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multihethnic blend: 35.7% Sub-Saharan African (deep warm undertone foundation), 22.1% Hispanic/Latin American (warm and golden influences), 18.6% Northern European (cool undertone mixing), 14.1% East Asian (cheekbone and eye shape influence), 9.5% Southeast Asian (fine facial structure refinement). Result: complex warm-medium skin with subtle golden and olive undertones, facial architecture showing pronounced cheekbones with slight lateral eye-set from East/Southeast Asian ancestry, broad nose-bridge suggesting African heritage, overall feature blend creates striking angular appearance.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, with the precise musculature of someone who trains systematically rather than for bulk. Long limbs suggest a runner's frame — efficient rather than imposing.",
+    "hair_color": "Dark brown with premature silver at the temples",
+    "hair_style": "Worn short and neat, military-regulation simple",
+    "hair_length": "Short",
+    "eye_color": "Hazel with slight amber undertone",
+    "skin_tone": "Warm medium brown with golden and olive undertones — multi-regional blend creating luminous depth. Reflects Sub-Saharan, Hispanic, and Southeast Asian warmth balanced by Northern European cool undertones.",
+    "complexion": "Sharp cheekbones with slight lateral prominence from East Asian ancestry, defined jawline. Nose bridge broad and straight. Skin is clear but bears the texture of someone who has spent time in rough conditions. Expression is controlled, rarely at rest. Fine lines around the eyes suggest squinting or sustained focus.",
+    "distinguishing_marks": [
+      "Thin white scar along the left temple, barely visible unless light catches it at the right angle — old injury, professionally healed",
+      "Burn scar on the right forearm (inner side, 8cm x 4cm) — pale and mottled, consistent with chemical or thermal contact",
+      "Surgical scar running vertically along the right side of the ribcage (approximately 12cm) — clean, professional closure, approximately 5 years old"
+    ],
+    "visible_augmentations": "Chrome plating visible around the right shoulder and upper chest where the internal drug synthesizer connects to the surface — sleek titanium-alloy engineering with faint bioluminescent indicator lines that pulse softly blue when the synthesizer is active. The chrome is left exposed intentionally, a statement rather than camouflage.",
+    "posture_movement": "Moves with deliberate efficiency — no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
+    "clothing_style": "Favors Tier 3-4 pragmatism — durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers — the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
+  },
+  "image_prompt": "Frost Kabwit, cyberpunk 2226 character portrait. Tall lean angular man, 188cm, medium-warm brown skin with golden undertones, striking sharp cheekbones showing East/Southeast Asian influence. Dark brown hair with silver at temples, cut short and neat. Hazel amber eyes, controlled expression with fine lines from focus. Exposed chrome titanium-alloy augmentation on right shoulder and upper chest with soft blue bioluminescent pulse lines. Visible surgical scar on right ribcage, burn scar on inner forearm, thin temple scar. Fitted dark charcoal longline jacket over black turtleneck, tactical reinforced pants, expensive unmarked shoes. Cool blue-grey cyberpunk urban setting with neon edge lighting casting shadows across his face. Posture rigid and efficient, eyes tracking exits. Cyberpunk noir atmosphere, precise and dangerous aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.7,
+    "Hispanic/Latin American": 22.1,
+    "Northern European": 18.6,
+    "East Asian": 14.1,
+    "Southeast Asian": 9.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

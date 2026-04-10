@@ -1,0 +1,302 @@
+{
+  "id": "019d6143a5e97390bb48ef67cc933db2",
+  "type": "character",
+  "name": "Cyrus Rentería",
+  "aliases": [
+    "Dav",
+    "The Exterminator"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "Bio-waste disposal technician contracted to Aurochs Medical Complex and several smaller Geartown clinics",
+  "age": 28,
+  "status": "active",
+  "location": "Geartown — lives in a worker housing block; operates across Aurochs Medical Complex, Geartown clinic strip, and occasional pickups in The Narrows, near Milwaukee and Damen",
+  "description": "Davorka is compact and sharp-featured, with Croatian-Ghanaian heritage expressed in light brown skin, high cheekbones, and eyes that are a very pale hazel — almost gold — with cat-slit pupils from a geneware mod they got at twenty-two and have never regretted. Their hair is kept shaved on the sides and dyed an aggressive copper on top, the color of old wiring. They are almost always in their work coveralls, which are immaculate — they have a protocol for decontamination that borders on ceremonial and makes their colleagues slightly nervous.\n\nBio-waste disposal for a medical complex is, they will tell you, the most undervalued intelligence-gathering position in the building. What a hospital throws away is a complete record of what it does, and Davorka has been reading that record for six years with increasing fascination. They are not doing anything with the information yet. They are cataloguing it. They have a particular running interest in the discrepancy between what Aurochs Medical Complex's public reporting says it disposes of and what Davorka actually removes — the numbers do not match in ways that do not have an obvious innocent explanation, and Davorka is by temperament someone who finds the non-obvious explanation more interesting.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.4,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.2
+    },
+    "core_fears": [
+      "Being wrong about the disposal discrepancy — they have organized a significant portion of their interior life around this puzzle and if it has an innocent answer they do not know what they are doing",
+      "Being noticed by Aurochs administration before they are ready to do something with what they know"
+    ],
+    "core_desires": [
+      "To understand exactly what the disposal records are concealing and why",
+      "To be taken seriously by someone who has the capacity to act on what they know"
+    ],
+    "coping_mechanisms": [
+      "Meticulous order imposed on physical space as a counterweight to the disorder of what they suspect",
+      "Dark humor about the nature of their work — they have extremely good bio-waste jokes"
+    ],
+    "blind_spots": [
+      "Assumes that gathering information is inherently safer than acting on it — is not sufficiently afraid of the fact that they have copies of documents they should not have",
+      "Underestimates their own visibility — the 'invisible worker' theory of safety is not as reliable as they think"
+    ],
+    "secret": "The disposal discrepancy involves a consistent volume of neural tissue waste — specifically, tissue consistent with augmentation extraction surgery — that does not appear in any patient record or surgical log Davorka has been able to access. The volume suggests this has been happening for at least two years. They have samples. They stored them improperly at first and had to start over, which cost them four months of data."
+  },
+  "speech_patterns": {
+    "vocabulary": "Functional and technical in professional contexts; privately uses a wry, oblique style full of euphemism and analogy — talks around things they find too large to say directly",
+    "cadence": "Even and unhurried, with occasional precise accelerations when they find something genuinely interesting",
+    "verbal_tics": [
+      "'Interesting disposal pattern.' (used as a general expression of suspicious interest in almost any situation)",
+      "Refers to things they find morally troubling as 'non-compliant'"
+    ],
+    "example_lines": [
+      "'You know what you learn doing this job? What people throw away is a better portrait than what they put on their walls.'",
+      "'Interesting disposal pattern. That's the second time this month that shipment's come through with no corresponding surgical log. Non-compliant, technically. Very non-compliant.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Davorka's olfactory enhancement picked up a chemical signature in an Aurochs waste stream last week that matches a banned experimental gene-therapy compound — they have identified it but have no one to tell who they trust",
+    "A Helix Biosystems facility services audit is scheduled for the waste processing department, and Davorka needs to either hide the copied manifests or find someone who can receive what they know before the auditors arrive"
+  ],
+  "narrative_function": "Unexpected information source — knows what Aurochs disposes of and when; can detect chemical or biological anomalies by smell; local color that reveals the infrastructure of medicine nobody thinks about; potential whistleblower or ally for investigations into Aurochs or Helix",
+  "augmentations": "Cat-slit pupil geneware (pale hazel/gold irises); olfactory sensitivity enhancement (professional-grade, for hazardous material detection); chemical exposure dermal barrier (subdermal, medical-grade protection against biological contamination)",
+  "daily_life": "Two early-morning routes covering the Geartown clinic strip, then the main Aurochs Medical Complex pickup cycle by 1000; afternoons doing processing and documentation at the Aurochs waste facility; evenings studying disposal manifests they have retained copies of, which they are not supposed to have.",
+  "affiliation": "Contracted to Aurochs Medical Complex via a Helix Biosystems facility services subsidiary; also holds personal service contracts with three independent Geartown clinics",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": 0,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "bio_waste",
+      "invisible_worker",
+      "information_hoarder",
+      "potential_whistleblower",
+      "helix_adjacent"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do not access anything beyond the waste stream — the documents come to them, they do not go looking for documents",
+      "Share nothing until they understand enough to share something coherent",
+      "If they smell something genuinely dangerous, protocol overrides everything else — they are not dying for a secret"
+    ],
+    "escalation_ladder": [
+      "Oblique conversational probe to assess whether someone might be trustworthy",
+      "Careful partial disclosure to gauge reaction",
+      "Full disclosure to a person or institution they have determined can act — and then complete withdrawal from the situation"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Pleasant, slightly deflecting, categorically not memorable if they can help it",
+      "friends": "Dry, direct, surprisingly warm; will share their bio-waste jokes with you if they trust you"
+    },
+    "stress_responses": {
+      "low": "Increases decontamination protocol rigor",
+      "medium": "Goes very quiet and still, retreats into observational mode",
+      "high": "Extremely calm and precise action — their stress response is almost indistinguishable from their normal operating mode, which they find privately funny"
+    },
+    "contradictions": [
+      "Believes information should eventually be made public but is in practice sitting on the most significant information they have ever gathered with no timeline for acting on it"
+    ],
+    "habits": [
+      "Full decontamination shower before leaving any work site regardless of exposure level — ritual as much as protocol",
+      "Reviews copied disposal manifests each evening in strict chronological order, never skipping ahead"
+    ],
+    "breaking_points": [
+      "Definitive evidence that the neural tissue is coming from patients who are still alive — this is the line they have drawn in their head, past which they will act regardless of personal risk"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Geartown to a Croatian-Bosnian mother and Ghanaian-Fante father",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began work as bio-waste disposal technician; Helix Biosystems facility services subsidiary contract",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First noticed disposal manifest discrepancy; began keeping copies",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost first four months of sample data due to improper storage; restarted collection",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Identified neural tissue waste pattern consistent with augmentation extraction surgery; no corresponding surgical records",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'"
+  ],
+  "related_entities": [
+    "Aurochs Medical Complex",
+    "Helix Biosystems",
+    "Pale Lantern Bioethics",
+    "The Narrows Compact",
+    "TESSERA PG-2 'Signature'",
+    "The Heritage Vault",
+    "Geartown",
+    "The Gradient Compact",
+    "Copper",
+    "The Pale Mile",
+    "Hazel Brink",
+    "Gold",
+    "The Milwaukee Core",
+    "Aminata Vîlcu-Faaleolo",
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Constance",
+    "Crucible LL-4 'Peacekeeper'",
+    "MERIDIAN",
+    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Fathom Line",
+    "The Narrows",
+    "The Pure Hand",
+    "Tiare Nishi-Anim"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic/Latin American with significant Middle Eastern and minor Northern European ancestry; warm-toned brown complexion reflecting the Mediterranean and Levantine mix with Latin American features",
+    "height_cm": 163,
+    "weight_kg": 54,
+    "build": "Compact and wiry, densely muscled from years of handling biohazard containers and processing equipment; economical movements with no excess",
+    "hair_color": "Copper dyed on crown; natural dark brown on sides where regrown stubble shows",
+    "hair_style": "Undercut with aggressive copper dye on top, shaved close on sides",
+    "hair_length": "Short",
+    "eye_color": "Pale hazel-gold with vertical cat-slit pupils (geneware mod, age 22)",
+    "skin_tone": "Warm medium brown with golden undertones, reflecting the blended Hispanic/Latin American majority with Middle Eastern warmth and depth",
+    "complexion": "Angular features with defined cheekbones characteristic of Middle Eastern and Latin American heritage; warm brown skin shows minor chemical scarring on forearms (faded, managed); perpetually clean despite occupation, with a slightly austere appearance",
+    "distinguishing_marks": [
+      "Chemical burn scars along inner forearms in pale lines, partially obscured by dermal barrier subcutaneous implant",
+      "Faint biosafety tattoo on inner right wrist — small hazard symbol with certification number, occupational marker"
+    ],
+    "visible_augmentations": "Vertical cat-slit pupils in pale hazel irises (unmistakable geneware signature). No other visible chrome. Subdermal chemical barrier and olfactory enhancement are invisible.",
+    "posture_movement": "Moves with precision and economy — no wasted motion. Slight forward tilt when concentrating. Hands positioned ready, fingers often alert as though evaluating a space for contamination vectors. Eyes track detail obsessively.",
+    "clothing_style": "Almost exclusively in immaculate work coveralls — Aurochs Medical Complex issue, graphite gray, modified with extra cargo pockets and sealed seams. Decontamination protocol means they are perpetually pristine despite the work. Beneath: plain gray thermals. Worn tactical boots rated for chemical splash. Thin nitrile gloves often tucked into coverall waistband even off-hours. Tier 4 working-class aesthetic with obsessive maintenance."
+  },
+  "image_prompt": "Cyrus Rentería, 163cm compact wiry frame with dense practical muscle, warm medium-brown skin with golden undertones blending Hispanic/Latin American and Middle Eastern heritage. Angular face with defined cheekbones, sharp features. Copper-dyed undercut with dark regrown stubble on shaved sides. Striking pale hazel-gold cat-slit vertical pupils (geneware signature). Minor faded chemical scarring visible on inner forearms. Wearing immaculate graphite gray Aurochs Medical Complex coveralls with extra sealed cargo pockets, pristine despite hazmat work. Plain gray thermal layers beneath. Chemical-splash-rated tactical boots. Thin nitrile gloves tucked at waistband. Biosafety certification tattoo on inner right wrist. Posture precise and economical, hands alert, eyes tracking obsessively. Austere, meticulous appearance. Cyberpunk 2226 Great Lakes Metropolitan Zone biotech facility aesthetic. Cool institutional lighting casting slight shadows across angular face. Professional occupational chrome-minimal worker. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 61.4,
+    "Middle Eastern": 32.2,
+    "Northern European": 6.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

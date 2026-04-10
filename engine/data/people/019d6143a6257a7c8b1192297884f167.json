@@ -1,0 +1,331 @@
+{
+  "id": "019d6143a6257a7c8b1192297884f167",
+  "type": "character",
+  "name": "Quinn Appiah",
+  "aliases": [
+    "Phosphor",
+    "The Contractor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
+  "age": 37,
+  "status": "active",
+  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
+  "description": "Halima Ogawa-Twumasi is slight and easy to overlook, which is exactly the point. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a counterintelligence specialist out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Halima Ogawa-Twumasi is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.14,
+      "ideal": 0.63,
+      "id": 1,
+      "shadow": 0.41,
+      "mask": 0.11,
+      "ghost": 0.84
+    },
+    "core_fears": [
+      "Their past catching up — debts, enemies, broken promises",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "Stability — a place to sleep that's the same place two nights running",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "To prove everyone who dismissed them catastrophically wrong"
+    ],
+    "coping_mechanisms": [
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Exercises compulsively — the body must be ready, always"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Fails to notice when their own behavior mirrors the people they despise"
+    ],
+    "secret": "Halima Ogawa-Twumasi killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "verbal_tics": [
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Swears in three languages, often in the same sentence"
+    ],
+    "example_lines": [
+      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
+      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
+      "\"I find the leak. What happens to the leak after that isn't my department.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone is impersonating Halima Ogawa-Twumasi on jobs, and the impersonator is better at the work than the original",
+    "A Tier 4 executive offers Halima Ogawa-Twumasi a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "The fixer who handles Halima Ogawa-Twumasi's contracts goes silent — dead, disappeared, or turned"
+  ],
+  "narrative_function": "Halima Ogawa-Twumasi is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Reflex boosters wired into spinal column — shaves reaction time by 40ms. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+  "affiliation": "Independent — Lattice territory specialist",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 9
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 4
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 9
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.8,
+      "caution": 0.75,
+      "loyalty": 0.34,
+      "greed": 0.95,
+      "empathy": 0.99
+    },
+    "drives": [
+      "power",
+      "money",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 5,
+      "stress": 4,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "ability to remain calm under fire",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "old injury that flares under specific conditions",
+      "grudge-holding that compromises rational decision-making"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "counterintelligence specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Being publicly exposed — name, face, address, all of it blown"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Reflex boosters wired into spinal column",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
+      "replaces": ""
+    },
+    {
+      "name": "Gecko-grip fingertip implants and toe pads",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Baptism' Electrified Water Cannon",
+    "Street Custom 'Scorpion Tail' Chain Whip"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "The Narrows Compact",
+    "Neuromorphic Pressure Cestus",
+    "Slagworks Industrial",
+    "Arcturus Exo-Runner Frame",
+    "Chibundo Reinholt-Sarpong",
+    "Djeneba Park-Traore",
+    "Ezio Kaboré-Malhotra",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Mika Sorel",
+    "Narrowcast",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Oumarou Svec-Ranginui",
+    "Street Custom 'Baptism' Electrified Water Cannon",
+    "Street Custom 'Scorpion Tail' Chain Whip",
+    "TESSERA PA-5 'Attendant'",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Fathom Line",
+    "The Heritage Vault",
+    "The Narrows",
+    "VitaCore ClearCourse Addiction Suppressor",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Sub-Saharan African (84.2%, predominantly West African) with Middle Eastern (11.4%) and Eastern European (4.4%) ancestry. The genetic blend produces a warm brown complexion with subtle golden undertones, sharp angular features characteristic of West African phenotypes, and an overall appearance that reflects the Ubiquitous Diaspora's genetic recombination.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and compact, almost wiry — minimal fat, dense muscle concentrated in core and legs. Built for confined spaces and vertical movement rather than raw strength. The kind of frame that moves through crowds without displacing air.",
+    "hair_color": "Black with silver threading at temples",
+    "hair_style": "Closely cropped, neat, practical — no vanity in the cut",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly amber-tinted under low-light — pupil dilation optimized for nocturnal work",
+    "skin_tone": "Warm rich brown with golden undertones — complexion reflects West African ancestry dominance blended with subtle Middle Eastern warmth and Eastern European influence in underlying undertones",
+    "complexion": "Sharp cheekbones and narrow jaw characteristic of West African features, angular face that reads as forgettable in daylight but acquires an unsettling precision in shadow. Minimal facial hair — always cleanly shaved. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes.",
+    "distinguishing_marks": [
+      "Surgical scar along the right side of his neck, approximately 4cm, where the reflex booster spinal interface was installed — healed clean but visible",
+      "Faint burn marks on both palms and inner forearms from early gecko-grip implant calibration, now nearly invisible",
+      "Small tattoo on inner left wrist: three vertical lines in blue-black ink — personal significance unknown, kept deliberately small and concealable"
+    ],
+    "visible_augmentations": "Reflex booster hardware visible along the right side of his spine — chromatic plating catches light when he moves, subtle iridescent sheen. Fingertips show faint textural difference under close inspection: gecko-grip pads create almost imperceptible ridging at the fingerprints. No obvious cosmetic work; all augmentation is functional, not flashy.",
+    "posture_movement": "Economical and controlled — no wasted motion. Moves through space like someone mapping exits. Stands in corners or against walls by default. When stationary, his weight shifts to the balls of his feet. Walks with a slight forward lean, shoulders loose but capable of explosive tension. His stillness is active, not passive — the quiet of a coiled spring.",
+    "clothing_style": "Tier 4-5 practical: dark reinforced jacket (synthetic leather, multiple interior pockets), tactical cargo pants in charcoal with ankle reinforcement for the gecko-grip pads. Steel-toed boots, well-maintained. A smart-fabric undershirt with integrated thermal regulation — necessary for the circadian disruption and the tunnel damp. No visible corporate branding. Everything worn and functional, nothing aspirational. The uniform of someone who spends their life in places designed to be forgotten."
+  },
+  "image_prompt": "Quinn Appiah, lean 168cm figure in dark tactical gear, rich warm brown skin with golden undertones reflecting West African ancestry, sharp angular face with minimal facial hair, black hair with silver at temples, dark amber-tinted eyes. Visible chromatic reflex booster hardware along right spine catching iridescent light. Wearing reinforced synthetic leather jacket, charcoal tactical cargo pants, steel-toed boots. Standing in corner position against wall, weight on balls of feet, shoulders loose but coiled. Active stillness. Faint surgical scar on right neck from spinal interface. Small blue-black tattoo on inner left wrist. Urban cyberpunk tunnel environment, recycled air, damp concrete, cool blue-green neon lighting casting shadows across angular features. 2226 GLMZ (Great Lakes Metropolitan Zone) aesthetic. Moody, tactical, forgettable in daylight but precise in shadow. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 84.2,
+    "Middle Eastern": 11.4,
+    "Eastern European": 4.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

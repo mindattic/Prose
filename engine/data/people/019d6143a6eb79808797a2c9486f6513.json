@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a6eb79808797a2c9486f6513",
+  "type": "character",
+  "name": "Obinna Erikstad",
+  "aliases": [
+    "The Archivist",
+    "Blank"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "the disappeared — a man who erased himself from surface records, now keeper of unofficial underworld census and histories",
+  "age": 41,
+  "status": "active",
+  "location": "Deepwell Station, a converted signal relay room he calls the Stack, near sub-level access near LaSalle and Congress",
+  "description": "Tarquin is tall and angular, with the slightly sunken quality of someone who has spent years in recycled air, his complexion a warm brown-olive that has gone ashen from lack of sunlight. He has a shaved head marked by a faint grid of old neural-interface scars along his left temple — the ports are sealed, the hardware removed, the removal itself a statement. He wears clean, plain clothes maintained with obsessive care, which makes him look more out of place underground than rags would. His eyes are pale grey with fracture-line patterning from old cosmetic geneware that he chose not to reverse — the only decoration he kept.\n\nTarquin was a mid-level data analyst at Tessera's logistics division. In 2189 he discovered and documented an internal record of Tessera deliberately rerouting medical supply chains to accelerate attrition in Tier 1 settlements — not malice, just quarterly optimization. He tried the proper channels. Then the improper ones. Then he went underground before Tessera's compliance team finished closing around him. He deleted himself: no biometric records, no credit trace, no registration. He reinvented his purpose — if surface systems record only what serves power, he will record what power ignores. The Stack is filled with handwritten ledgers, carved data-beads, and oral recordings of the people who have no file anywhere.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.2,
+      "shadow": 0.5,
+      "mask": 0.3,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "that his records will be destroyed before anyone can use them",
+      "that he made the wrong choice — that staying at Tessera and fighting from inside would have saved more people than running"
+    ],
+    "core_desires": [
+      "for the archive to outlast him and reach people who can act on it",
+      "to be genuinely unknown — not just unregistered, but free of the identity Tessera built for him"
+    ],
+    "coping_mechanisms": [
+      "intellectualizing — converts personal grief into systematic documentation",
+      "radical routine — the same actions in the same order every day, a structure he controls"
+    ],
+    "blind_spots": [
+      "believes information is sufficient — that documentation alone is a form of justice, and avoids confronting that it may not be"
+    ],
+    "secret": "He still has one active Tessera backdoor credential he never deleted — he tells himself it's an emergency exit, but he also uses it monthly to check whether the supply chain document he found has ever been acted on. It hasn't. He keeps checking anyway."
+  },
+  "speech_patterns": {
+    "vocabulary": "formal, precise, corporate vocabulary that never fully left him — he code-switches into tunnel slang poorly and is aware of it",
+    "cadence": "measured and careful, as if every sentence is being filed for record",
+    "verbal_tics": [
+      "'for the record' (even in casual conversation)",
+      "'that's not documented' (his version of 'I don't believe you')"
+    ],
+    "example_lines": [
+      "'For the record, you were here on the fourteenth. I'll need your name — whatever name you use down here is fine, I don't require the surface one.'",
+      "'Tessera's quarterly reports are very thorough. They just don't include the people in this room. That's what I'm for.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tarquin's archive contains testimony from a disappeared woman that implicates a current Meridian Core official — someone has found out and sent someone underground to negotiate its suppression or destruction",
+    "He has identified a pattern in the census data suggesting people are going missing from three different settlements in a non-random sequence — he needs someone to investigate what he can only document"
+  ],
+  "narrative_function": "Information source of extraordinary depth — he knows who lived where, who disappeared, what communities exist; he also serves as a moral witness figure and can provide exposition on underworld history",
+  "augmentations": "sealed neural interface ports (hardware removed), no active augmentations — he distrusts anything that pings a network",
+  "daily_life": "Receives visitors who want their story recorded, cross-references community census data across settlements, maintains encrypted bead-archive of testimonies; eats whatever Moswen's network sends down.",
+  "affiliation": "independent, trusted by multiple Bore Rat communities, occasional contact with The Undertow",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 5,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 2,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 1,
+      "transparency_guardedness": -4
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "The Disappeared",
+      "Archivist",
+      "Whistleblower",
+      "Idealist",
+      "Self-Erased"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never give a name to someone who didn't give it to you — consent in the archive is absolute",
+      "never connect to a network, any network, for any reason, from this location"
+    ],
+    "escalation_ladder": [
+      "polite refusal and explanation of principles",
+      "physical removal of the person from the Stack",
+      "destruction of current work-in-progress before allowing any seizure — the deep archive is hidden elsewhere"
+    ],
+    "interpersonal_modes": {
+      "strangers": "formally courteous, interviewer-mode — asks questions, volunteers little, observes everything",
+      "friends": "drops the formality and becomes oddly hesitant, as if intimacy is a skill he's relearning"
+    },
+    "stress_responses": {
+      "low": "increases documentation rate — starts noting everything, even irrelevant detail",
+      "medium": "becomes very still and speaks very little",
+      "high": "retreats into a specific protocol: backup the archive, seal the door, wait"
+    },
+    "contradictions": [
+      "committed to radical transparency for others while being deeply personally opaque",
+      "despises corporate data systems and uses their methodology to build his own"
+    ],
+    "habits": [
+      "writes in extremely small, dense script to conserve paper",
+      "touches the sealed interface ports on his temple when thinking, without noticing he's doing it"
+    ],
+    "breaking_points": [
+      "direct physical threat to the archive",
+      "being called by his Tessera employee number — he didn't know it bothered him until someone did it once"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Viper Mk.III 'Copperhead'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Deepwell Station",
+    "Meridian Core",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Corponation",
+    "Irontide Tidal Energy",
+    "ARCHIVE",
+    "The Pale Mile",
+    "Bathysphere Networks",
+    "Chronicle",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible Industries Viper Mk.III 'Copperhead'",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Ihaia Nystrom-Keita",
+    "MERIDIAN",
+    "Makena Johanssen-Diallo",
+    "Narrowcast",
+    "Obinna Czekalski-Fonoti",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "TESSERA TC-3 'Crucible'",
+    "The Archive",
+    "The Deep Archive",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Undertow",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Predominantly East Asian (56%) with significant Southeast Asian (13.8%) and Sub-Saharan African (15.7%) ancestry, with minor Northern European (9.5%) admixture. The genetic blend produces a complexion that bridges East and Southeast Asian phenotypes with deeper undertones from African heritage, creating a warm brown base with subtle golden undertones beneath the institutional pallor.",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and angular, with the stretched leanness of someone undernourished by choice and circumstance. Long-limbed but not athletic — the frame of someone who moves deliberately, conserving effort.",
+    "hair_color": "Natural black, grayed at temples",
+    "hair_style": "Completely shaved, maintained with precision",
+    "hair_length": "None",
+    "eye_color": "Pale grey with visible fracture-line patterns (faint radial scarring from reversed cosmetic geneware)",
+    "skin_tone": "Warm warm golden-brown base with East and Southeast Asian undertones, shifted ashen and desaturated from years of artificial light and recycled air. Underlying tone suggests sun-kissed heritage despite current pallor.",
+    "complexion": "Gaunt, with prominent cheekbones and jaw definition exaggerated by facial thinness. High cheekbones characteristic of East Asian ancestry remain visible despite the thinness. Skin is clear and almost institutional in its cleanliness — no stubble, no grit. The ashen quality overlays a naturally warmer complexion. Fine lines around eyes from squinting at handwritten documents.",
+    "distinguishing_marks": [
+      "Faint grid of thin neural-interface scarring running vertically along left temple, approximately 4cm width and 6cm height, where ports were sealed post-removal",
+      "Hairline fractures visible in sclera of both eyes creating web-like pattern, remnant of reversed cosmetic geneware",
+      "Small whitened scar on inner left wrist, approximately 2cm, location suggests medical extraction point"
+    ],
+    "visible_augmentations": "None visible. Hardware deliberately removed. Only evidence is the sealed port scarring and the eye geneware reversal he kept as a choice. No chrome, no LEDs, no subdermal plates — a deliberate absence that reads louder than presence.",
+    "posture_movement": "Moves with economical precision, as if each gesture is pre-calculated. Sits very still for long periods. Hands are steady and careful. Head tilts slightly when listening — old analyst habit of processing. Rarely makes unnecessary gestures. The posture of someone who has learned to take up minimal space and attention.",
+    "clothing_style": "Deliberately plain and well-maintained: neutral grey or black cotton-weave shirts, dark trousers of non-descript corporate utility cut, worn boots resoled multiple times. All clothing is scrupulously clean and pressed — the uniform of someone who has erased themselves but refuses to visually announce it. No logos, no gang colors, no tier markers."
+  },
+  "image_prompt": "Obinna Erikstad, 188cm tall, lean angular frame, shaved head showing natural black hair grayed at temples. East Asian-dominant heritage with warm golden-brown undertones beneath institutional pallor from years under artificial light. Gaunt face with high prominent cheekbones, pale grey eyes with faint radial fracture patterns from reversed geneware. Thin neural-interface scarring visible on left temple in precise grid pattern. Wearing plain grey cotton-weave shirt and dark corporate utility trousers, worn resoled boots. Sitting perfectly still with economical posture, steady hands, slight head tilt. Pale skin with underlying warm tone, fine lines around eyes. Cyberpunk 2226, Great Lakes Metropolitan Zone, sterile office or archive setting with cool fluorescent lighting, atmospheric depth, deliberate understatement, someone who has chosen to vanish from the chrome and neon world. Clinical precision and calculated stillness. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 56.0,
+    "Sub-Saharan African": 15.7,
+    "Southeast Asian": 13.8,
+    "Northern European": 9.5,
+    "Hispanic/Latin American": 2.7,
+    "Indigenous American": 2.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

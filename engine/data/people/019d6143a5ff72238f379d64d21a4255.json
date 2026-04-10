@@ -1,0 +1,290 @@
+{
+  "id": "019d6143a5ff72238f379d64d21a4255",
+  "type": "character",
+  "name": "Frost Dalgaard-Jaramillo",
+  "aliases": [
+    "Zero-K",
+    "K"
+  ],
+  "species": "human",
+  "gender": "nonbinary",
+  "pronouns": "they/them",
+  "role": "DJ and sound sculptor, underground rave circuit, Tier 2",
+  "age": 29,
+  "status": "active",
+  "location": "The Garret, rents a room in a converted water tower shared with five others, near Damen and Armitage",
+  "description": "Ekene moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nEkene does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.7,
+      "shadow": 0.6,
+      "mask": 0.2,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "losing their hearing — a terror so specific and comprehensive that they almost never articulate it directly",
+      "producing work that is emotionally manipulative rather than emotionally true"
+    ],
+    "core_desires": [
+      "to create an experience that is genuinely shared — that two hundred people feel the same thing simultaneously",
+      "to be left alone to work"
+    ],
+    "coping_mechanisms": [
+      "structuring time rigidly around work when stressed",
+      "disengaging from social situations without warning or explanation and processing alone"
+    ],
+    "blind_spots": [
+      "genuinely does not notice when social bluntness has caused hurt — not because they don't care, but because they're not tracking the signals that would tell them"
+    ],
+    "secret": "Their most acclaimed set — a piece called 'Irkalla Tide' that caused seven people to report weeping without understanding why — was built using field recordings they made illegally inside Aurochs Medical Complex's basement levels. They captured the specific acoustic signature of the building's medical waste processing systems. The sounds are beautiful. The source is something they prefer not to think about."
+  },
+  "speech_patterns": {
+    "vocabulary": "Sparse. Technical when discussing sound — very precise frequency terminology, production vocabulary. Almost clinical. In personal conversation: short sentences, often incomplete.",
+    "cadence": "Slow and evenly spaced. Rarely raises or lowers pitch. People sometimes think they're bored; they're focused.",
+    "verbal_tics": [
+      "long pauses between sentences that are thinking, not invitation to speak",
+      "occasionally responds to questions with a description of what the answer sounds like rather than what it is"
+    ],
+    "example_lines": [
+      "The room has a resonant frequency around 47 hertz. I build from there. Everything else is response.",
+      "You're asking why people cry. I don't know. I know what frequencies are present. What happens after that isn't mine."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Someone has been distributing unauthorized copies of 'Irkalla Tide' with the field recordings clearly isolated and identified — if traced, Ekene faces criminal charges for the illegal recordings inside Aurochs. Someone is either threatening them or has made a catastrophic mistake.",
+    "A Zheng-Dao entertainment subsidiary has been systematically buying out underground venues across the Garret circuit, and the sound artists are losing their spaces — Ekene is being asked to coordinate a response and is extremely uncomfortable with the social role this requires."
+  ],
+  "narrative_function": "Local color and underground network access — Ekene knows every venue, promoter, and sound artist in the underground circuit and has useful social connections that appear casual but run deep. Can serve as information source for who is present at specific underground events.",
+  "augmentations": "Frequency-reactive hair pigment (geneware). Yellow-ring iris modification. Cochlear enhancement implants (both ears) — extends hearing range into subsonic and ultrasonic bands and provides precise frequency analysis overlay. Subdermal haptic feedback array across the back — allows them to feel spatial sound distribution as physical sensation.",
+  "daily_life": "Keeps unusual hours — sleeps in two-hour intervals throughout the day, fully alert at 3-6am which they call 'clean time' for composition. Spends afternoons in the water tower's communal space with headphones, building sets. Works most weekends, sometimes weeknights if the venue is right.",
+  "affiliation": "The Garret underground circuit; informal network of sound artists across the Ferment Quarter and Highland Park Autonomous Zone",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 10
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 9,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "sonic",
+      "introverted",
+      "precise",
+      "underground",
+      "sensory"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "will not play sets at corporate events regardless of fee — considers it a line they have not moved on",
+      "will share technical knowledge freely with anyone who is genuinely asking"
+    ],
+    "escalation_ladder": [
+      "silence and physical withdrawal",
+      "direct statement of the problem in exactly as many words as necessary",
+      "departure from the situation",
+      "if unable to leave: complete stillness and waiting"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral, minimal. Answers questions directly. Does not generate conversation.",
+      "friends": "Present in a way that is easily mistaken for distraction — they are actually attending very carefully. Occasionally says something that reveals they've been tracking everything."
+    },
+    "stress_responses": {
+      "low": "Longer work sessions, fewer words",
+      "medium": "Disappears from social spaces entirely for days",
+      "high": "Production of intensely difficult, almost hostile sound work that venues have difficulty booking"
+    },
+    "contradictions": [
+      "creates work explicitly designed to produce shared emotional experience in crowds, and finds crowds genuinely stressful to occupy"
+    ],
+    "habits": [
+      "records ambient sound in every new space they enter for at least three minutes before engaging with people",
+      "checks cochlear implant calibration three times before any set"
+    ],
+    "breaking_points": [
+      "someone touching their equipment without permission",
+      "being asked to change a set to be more accessible or crowd-pleasing by a promoter"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7,
+    "Artist": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Garret district to an Igbo-Polish father and a Malagasy mother, both transit workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "First illegal set at 16 in a Garret basement; equipment was secondhand and partially broken; this becomes a sound signature they intentionally recreate later",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Illegal field recordings made inside Aurochs Medical Complex; incorporated into 'Irkalla Tide'",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "'Irkalla Tide' premiered; becomes the defining piece of the Garret underground circuit that season",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Garret",
+    "The Nearfield",
+    "Zheng-dao Bioelectric",
+    "Glenville Sound",
+    "The Heritage Vault",
+    "Bathysphere Networks",
+    "Irkalla",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Nesting Doll",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Alper Lebedev-Tutu",
+    "Aurochs Medical Complex",
+    "Breck Tannen",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Highland Park Autonomous Zone",
+    "Independent Darknet Node Architecture",
+    "Kang Athletics KA-200 'Padwork'",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Pirjo Asante-Ulukhan",
+    "Saodat Mirzoyan-Fubara",
+    "Slagworks Industrial",
+    "TESSERA PG-2 'Signature'",
+    "The Ferment Quarter",
+    "The Quiet Room",
+    "The Third Rail",
+    "Veslemøy Achebe-Tursynov",
+    "WELLSPRING"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European (43.9%), Hispanic/Latin American (28.9%), East Asian (24.2%), with minor South Asian (3.0%) ancestry—a striking genetic blend reflected in warm-toned skin with subtle golden undertones, angular facial structure with wide-set eyes, and a distinctive mix of Northern European and East Asian bone structure",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with long limbs and minimal body fat—the build of someone who moves through space precisely rather than powerfully. Shoulders narrow, hips defined, chest flat. Moves with economical efficiency.",
+    "hair_color": "Black base with frequency-reactive pigment bands in shifting purples, teals, and magentas—reactive to ambient sound frequencies",
+    "hair_style": "Structured vertical ridge down the center of the scalp, shaved close at the temples exposing pale skin",
+    "hair_length": "Short (ridge approximately 8cm tall when standing)",
+    "eye_color": "Dark brown iris with distinctive bright yellow ring around the pupil (deliberate geneware modification)",
+    "skin_tone": "Warm medium brown with golden undertones—a nuanced blend of Northern European fairness, East Asian warmth, and Latin American sun-kissed pigmentation that shifts perceptibly under different lighting, creating a unique luminescent quality",
+    "complexion": "Angular jaw with prominent cheekbones reflecting mixed Northern European and East Asian ancestry, widely-spaced eyes giving an unusual, deliberately difficult-to-categorize facial structure. Minimal facial hair. Skin clear, well-maintained but without cosmetic attention—focused grooming. Expression typically neutral or slightly distant, eyes often unfocused as if processing invisible information.",
+    "distinguishing_marks": [
+      "Hairline tattoo along both ears in fine geometric patterns resembling frequency waveforms, visible because of close temple shaving",
+      "Faint scar tissue ridge along the right collarbone from cochlear implant installation, approximately 4cm long"
+    ],
+    "visible_augmentations": "Yellow-ring iris modification immediately visible. Cochlear enhancement implant ports visible behind both ears (small matte black ports with geometric detailing). Frequency-reactive hair pigment system obvious and dynamic. Subdermal haptic feedback array not visually apparent but produces subtle surface texture variation across the upper back and shoulders when wearing sleeveless or backless clothing.",
+    "posture_movement": "Moves with deliberate, economical precision. Head frequently tilted at slight angle as if listening to distant sound. Eyes unfocused or gazing past immediate surroundings. Rarely makes unnecessary gestures. When standing still, weight balanced evenly. When walking, movement is fluid but purposeful, not casual. Minimal fidgeting. Gives impression of someone internally focused, processing invisible data.",
+    "clothing_style": "Tier 2 working-artist aesthetic with deliberate sonic/technical elements. Favors sleeveless or mesh-back garments to display haptic feedback array and allow skin contact with air for acoustic sensitivity. Primary colors: blacks, deep greys, occasionally matte metallics. Clothing is well-maintained but not luxurious—functional, modular pieces from mid-range corpo brands. Often wears a custom rig vest with integrated haptic feedback visualization (LEDs that mirror the subdermal array's activation patterns). Minimalist jewelry: small geometric earrings or ear cuffs that complement the hairline tattoos. Footwear is practical—modified boots with enhanced grip for standing long hours at equipment."
+  },
+  "image_prompt": "Frost Dalgaard-Jaramillo, 2226 cyberpunk character, 178cm lean angular build, warm medium-brown skin with golden undertones reflecting mixed Northern European, Hispanic, and East Asian heritage, sharp angular jawline with wide-set eyes, dark brown eyes with bright yellow pupil rings (geneware modification), black hair with frequency-reactive purple-teal-magenta bands and vertical ridge shaved at temples exposing pale skin, visible geometric frequency waveform tattoos along ears, cochlear implant ports behind ears, subdermal haptic feedback array visible across upper back, sleeveless mesh-back tech vest with integrated LED haptic visualization in blacks and deep grey, minimalist geometric earrings, modified practical boots, posture shows internal focus with head slightly tilted as if listening to invisible data, economical precise movement, neutral distant expression, moody cyberpunk studio lighting with cool blue-purple ambient light against warm golden skin tones, neon accent lighting highlighting the yellow iris modification and reactive hair pigment system, cinematic 2200s tech-noir atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 43.9,
+    "Hispanic/Latin American": 28.9,
+    "East Asian": 24.2,
+    "South Asian": 3.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

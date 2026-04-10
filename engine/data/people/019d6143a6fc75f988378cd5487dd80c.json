@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a6fc75f988378cd5487dd80c",
+  "type": "character",
+  "name": "Rowan Ixchel",
+  "aliases": [
+    "Spire",
+    "The Asset"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Aerial extraction and rapid transit pilot — getaway pilot",
+  "age": 26,
+  "status": "active",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
+  "description": "Tiare Svensson-Kone is lean and angular, all sharp edges and visible tension. At 26, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTiare Svensson-Kone operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.53,
+      "ideal": 0.36,
+      "id": 0.14,
+      "shadow": 0.77,
+      "mask": 0.62,
+      "ghost": 0.46
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Being identified by corporate facial recognition — living off-grid is survival"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "The perfect run — one job so clean it becomes legend",
+      "Control — over their body, their schedule, their future"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Trusts technology more than people — machines don't betray",
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
+    ],
+    "secret": "Tiare Svensson-Kone murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
+    ],
+    "example_lines": [
+      "\"Vertical extraction in thirty seconds. Don't be late.\"",
+      "\"I fly things that aren't supposed to fly in places they aren't supposed to go.\"",
+      "\"Airspace regulations are for people who file flight plans. I don't file flight plans.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Tiare Svensson-Kone's contracts goes silent — dead, disappeared, or turned",
+    "Tiare Svensson-Kone's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Tiare Svensson-Kone is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Tiare Svensson-Kone functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent — maintains network of professional contacts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      },
+      "agility": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 7
+      },
+      "perception": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 4
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 4
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 10
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 9
+      },
+      "deception": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.61,
+      "caution": 0.72,
+      "loyalty": 0.11,
+      "greed": 0.41,
+      "empathy": 0.35
+    },
+    "drives": [
+      "loyalty",
+      "knowledge",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 8,
+      "loyalty_break": 5
+    },
+    "strengths": [
+      "exceptional close-quarters combat",
+      "network of reliable contacts"
+    ],
+    "weaknesses": [
+      "trust issues that limit crew effectiveness",
+      "risk-averse to the point of missed opportunities",
+      "augmentation dependency — performance drops sharply if chrome malfunctions"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "getaway pilot",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not betray a client who paid in full, regardless of better offers"
+    ],
+    "escalation_ladder": [
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
+    ],
+    "interpersonal_modes": {
+      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Insists they work alone but performs noticeably better in a team"
+    ],
+    "habits": [
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Checks exits within 10 seconds of entering any room",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "A child being put in danger as leverage against them"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Move-by-wire system",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
+      "replaces": ""
+    },
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Tombstone' Concrete Block Launcher"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Unfinished Theorem",
+    "The Nearfield",
+    "Ashfield",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Breck Tannen",
+    "Chibundo Reinholt-Sarpong",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Glenville Sound",
+    "Ilhan Sandstrom-Badu",
+    "Independent Micro-Grid Power Cooperative",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Narrowcast",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Street Custom 'Tombstone' Concrete Block Launcher",
+    "The Human Baseline Alliance",
+    "The Quiet Room",
+    "The Wire Taps",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian dominant (36.6%) with substantial Indigenous American (14.7%) and Hispanic/Latin American (14.1%) ancestry, balanced by Sub-Saharan African (12.9%), Eastern European (12.5%), and Northern European (9.2%) elements. The genetic blend creates striking angular features with warm undertones — high cheekbones and defined jaw from East Asian genetics, enriched by the broader facial structure and richness of Indigenous and African heritage.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with corded muscle definition — the kind of frame built by deliberate training rather than genetics. Minimal body fat, visible musculature in forearms and shoulders from constant movement conditioning.",
+    "hair_color": "Dark brown with sun-bleached streaks",
+    "hair_style": "Pulled back in a tight functional braid, kept short enough to stay out of a helmet",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and tracking",
+    "skin_tone": "Warm medium brown — a complex blend of East Asian, Indigenous American, and African heritage creating depth and richness, with subtle golden undertones. Regional variation from cockpit time creates slight pallor in protected areas, contrasting with sun-exposure bronze on exposed skin.",
+    "complexion": "Sharp-featured face with high cheekbones, prominent jawline, and slightly broader nasal bridge reflecting the Indigenous American and African components of her ancestry. Minimal grooming beyond function — no makeup, skin weather-marked from exposure and stress. A few shallow scars across the cheekbone from impacts she didn't slow down for.",
+    "distinguishing_marks": [
+      "Surgical scar at base of skull, visible when hair is pulled back — neural interface jack installation point, roughly 3cm in length, pale and clean",
+      "Chrome visible along the right forearm where move-by-wire system connects to skin — metallic overlay visible beneath translucent dermal panels, pulsing faintly with neural traffic",
+      "Thin burn scar across left ribs, visible if clothing shifts — accident during early augmentation integration",
+      "Tattoo on inside left wrist — QUANTA symbol (Φ) with flight path coordinates beneath, professional rather than decorative"
+    ],
+    "visible_augmentations": "Move-by-wire system visible as chrome subdermal tracking along spine and limbs, particularly pronounced in forearms where metallic interfaces break the skin line. Base-of-skull jack visible as a sealed hatch under skin at hairline. When she moves, there's a subtle lag-free precision that reads as augmented — no human has that economy of motion.",
+    "posture_movement": "Moves with controlled efficiency, never wasting motion. Slight forward lean when standing, weight distributed ready to move. Eyes constantly processing, scanning for exits and variables. When still, there's coiled tension — she doesn't relax, she powers down.",
+    "clothing_style": "Tier 4 functional — flight suit (armored nylon blend, dark gray) worn open over fitted black synth-weave shirt. Cargo pants with reinforced pockets for tools and contract data. Steel-toed boots rated for high-g cockpit environments. Harness-style ballistic vest over everything, custom-fitted for cockpit use. No jewelry, no corporate logos, no gang colors — anonymity maintained through absolute functionality."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of Rowan Ixchel, a sharp-featured pilot with warm medium-brown skin blending East Asian, Indigenous American, Hispanic, and African heritage. High cheekbones, defined jawline, dark alert eyes. Dark brown hair with sun-bleached streaks pulled back tight in a functional braid. Lean muscular frame, 168cm, visible muscle definition. Wearing dark gray armored flight suit open over black synth-weave shirt, reinforced cargo pants, steel-toed boots, custom ballistic harness vest. Chrome subdermal augmentation visible along right forearm where move-by-wire system breaks the skin, metallic neural interfaces pulsing faintly. Surgical scar at base of skull visible at hairline where neural jack is installed. Small scars across cheekbone, QUANTA tattoo on inner wrist with coordinates. Posture tense and controlled, weight forward-ready, eyes scanning. Cockpit interior or hangar bay lighting, cool neon accents reflecting off chrome augmentations. Mood: hyper-focused, dangerous calm, no-nonsense. Cinematic cyberpunk aesthetic, atmospheric depth. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 36.6,
+    "Indigenous American": 14.7,
+    "Hispanic/Latin American": 14.1,
+    "Sub-Saharan African": 12.9,
+    "Eastern European": 12.5,
+    "Northern European": 9.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

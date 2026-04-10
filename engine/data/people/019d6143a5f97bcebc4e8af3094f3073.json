@@ -1,0 +1,303 @@
+{
+  "id": "019d6143a5f97bcebc4e8af3094f3073",
+  "type": "character",
+  "name": "Freya Solberg-Holm",
+  "aliases": [
+    "Dzer",
+    "The Bone Reader"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Data archaeologist specializing in pre-Collapse urban memory systems",
+  "age": 52,
+  "status": "active",
+  "location": "University Spine, Edgewater Prism, near Lincoln and Clark",
+  "description": "Dzerassæ is a heavyset woman with deep amber skin and close-cropped silver hair she has never bothered to dye or modify, wearing it like a credential. Her eyes have patterned irises — concentric rings of copper and black, a cheap cosmetic mod she got at thirty-two and has never removed, though she insists she bought them for a reason she can no longer remember. She dresses in layered archival fabrics that always smell faintly of ozone from the scanning rigs she operates, and her hands bear the yellowish calluses of someone who handles physical storage media the way other people handle broken glass — with reverence and terror in equal measure.\n\nShe is the kind of academic who makes grad students feel simultaneously inspired and vaguely ashamed of themselves. She does not raise her voice, does not perform authority, but carries an absolute certainty in the importance of her work that functions as its own gravity. She excavates the digital ruins beneath GLMZ's foundations — the dead servers, the corrupted municipal archives, the ghost-logs of neighborhoods that were demolished to build the Shelf — and she speaks of the data the way a forensic pathologist speaks of bodies: with precise, unsentimental tenderness.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.8,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the past is being deliberately erased and she is too slow",
+      "That her work will be seized and privatized before it can become public"
+    ],
+    "core_desires": [
+      "To restore the names of neighborhoods the city has tried to forget",
+      "To publish a complete record before she dies"
+    ],
+    "coping_mechanisms": [
+      "Immersion in work to the exclusion of personal life",
+      "Compulsive cataloguing and labeling of her personal environment"
+    ],
+    "blind_spots": [
+      "She trusts her own interpretation of data so completely she sometimes misreads it",
+      "She has difficulty believing students are as committed as she is, which makes her dismissive"
+    ],
+    "secret": "She discovered three years ago that a specific data cache she excavated contains evidence that Axiom deliberately caused a residential flood in the Hough Reclamation zone in 2187 to clear land. She has told no one and has been sitting on it, paralyzed between fear and obligation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise academic register with occasional Ossetian-inflected idioms. Uses technical archival terminology naturally in casual speech. Rarely uses contractions.",
+    "cadence": "Measured, slightly slow — she speaks as though she is selecting words from a catalogue and checking them before use.",
+    "verbal_tics": [
+      "'The record shows—' as a preface even in non-academic conversation",
+      "Long pauses before answering questions she considers important"
+    ],
+    "example_lines": [
+      "'The neighborhood existed. It had a name. The fact that it no longer appears on any map is not an absence — it is an act.'",
+      "'I am not interested in what people remember. Memory is a performance. I am interested in what the data cannot lie about.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Axiom flood evidence she is hoarding becomes relevant when a journalist contacts her — or when Axiom itself sends someone to ensure certain archives are never published",
+    "A cache she excavated contains personal records of someone currently living in GLMZ who believes their family history was entirely different — she must decide whether to make contact"
+  ],
+  "narrative_function": "Quest giver and information source — she possesses fragments of pre-Collapse city records that other parties want, and she is cautious about who she shares them with. She can also authenticate data artifacts and identify forgeries, making her valuable to anyone dealing in historical information.",
+  "augmentations": "Patterned copper-ring irises (cosmetic). Neural data-indexing implant (low-grade, Tier 2 model) that allows her to cross-reference archival records in real time. Chronic joint inflammation in her right hand has been partially managed by a rudimentary biofeedback sleeve she wears under her coat.",
+  "daily_life": "She arrives at her lab before dawn to run overnight extraction processes, spends midday teaching one seminar she genuinely enjoys and two she tolerates, and spends evenings in the sub-basement scanning rooms with graduate students who have learned not to speak unless she speaks first.",
+  "affiliation": "University Spine — Department of Urban Memory Studies, occasional contract work for Axiom Heritage Division",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 4,
+      "empathy_detachment": -1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "archivist",
+      "morally burdened",
+      "institutional",
+      "methodical",
+      "quietly radical"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never destroy a data record regardless of what it contains",
+      "Do not share findings with corporate partners until public record is secured"
+    ],
+    "escalation_ladder": [
+      "Polite deflection and redirection",
+      "Formal academic obstruction — citing procedure, protocol, institutional review",
+      "Complete stonewalling with legal language",
+      "Disappearing into the archive sub-basements and becoming unreachable"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally courteous but assessing — she decides quickly whether someone is useful, dangerous, or irrelevant",
+      "friends": "Rare and intense — she remembers everything about people she cares about and checks in on them in ways that feel almost archival"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical and over-organized",
+      "medium": "Works longer hours and stops eating regular meals",
+      "high": "Goes completely silent and disappears into physical archive work, handling media by hand for hours"
+    },
+    "contradictions": [
+      "Believes passionately in public access to information but hoards the most dangerous records she has ever found"
+    ],
+    "habits": [
+      "Labels every object in her workspace with small adhesive tags",
+      "Drinks the same tea blend every morning that she imports at considerable expense from a Sahel cultivation co-op"
+    ],
+    "breaking_points": [
+      "Watching records deliberately destroyed in front of her",
+      "A student being punished or expelled for research she assigned"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Ghost": 0.9,
+    "Lone Wolf": 0.9,
+    "Stoic": 0.9,
+    "Ice": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Engelheim district to a Polish-descended municipal engineer father and an Ossetian-West African heritage linguist mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed doctoral thesis on the digital memory infrastructure of pre-Collapse Chicago",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Excavated the Axiom flood evidence cache; has not published it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to full professorship at University Spine",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Sentinel-9 'Block Watch'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Sentinel-9 'Block Watch'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "University Spine",
+    "Edgewater Prism",
+    "GLMZ",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Shelf",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Stratum",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Silver",
+    "Copper",
+    "The Pure Hand",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Glass",
+    "Alper Castillo-Ababio",
+    "Arcturus LS-5 'Sentinel'",
+    "Axiom Systems Portable Diaspora Terminal PDT-4",
+    "Aybek Sato-Poku",
+    "Chronicle",
+    "Hearthstone Firearms Sentinel-9 'Block Watch'",
+    "Hough Reclamation",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Nurlan Morita-Antwi",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sisay Bergqvist-Mallari",
+    "Slagworks Industrial",
+    "The Archive",
+    "The Heritage Vault",
+    "The Reclamation Assembly",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore ClearCourse Addiction Suppressor",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian-Polish blend) with significant East Asian ancestry, complemented by Sub-Saharan African, Eastern European, and minor Hispanic/Latin American heritage. A genetically mixed diaspora ancestry that manifests in blended facial structure and warm-toned skin.",
+    "height_cm": 168,
+    "weight_kg": 87,
+    "build": "Heavyset, broad-shouldered, substantial frame that reads as solid rather than soft — the build of someone who has spent five decades moving through the world without apology. Her weight is distributed across a compact, sturdy structure; she moves like ballast.",
+    "hair_color": "Natural silver-grey",
+    "hair_style": "Close-cropped, practical, no styling beyond the cut itself",
+    "hair_length": "Short",
+    "eye_color": "Patterned irises with concentric copper and black rings; the pupil sits at the center of a target. Sclera slightly yellowed from decades of screen exposure.",
+    "skin_tone": "Warm medium-brown with amber undertones—a blend of Northern European, East Asian, and Sub-Saharan ancestry, darkened further by chronic ozone exposure and sun damage. Her complexion carries subtle golden and olive notes reflecting her diverse heritage.",
+    "complexion": "Fine creases around the eyes and mouth; her face reflects blended ancestry with slightly higher cheekbones and a structured jawline. Her face has the particular weathering of someone who squints at screens and old paper simultaneously. Minimal makeup. A small scar above her left eyebrow, almost invisible, from a lab accident in her thirties. Her skin has a faint chemical patina from handling archival materials.",
+    "distinguishing_marks": [
+      "Thin, pale burn scar along the inside of her right forearm from a capacitor failure, roughly 8cm long, dating to approximately 2198.",
+      "Yellow-brown staining across the palms and first two fingers of both hands from handling degraded data storage media and old magnetic tape.",
+      "Faded tattoo on her left wrist — a simple glyph resembling a corrupted QR code, done when she was twenty-six, now barely legible beneath age spots."
+    ],
+    "visible_augmentations": "The patterned copper-ring irises are immediately visible and slightly uncanny under direct light; they catch and fragment light in a way organic irises do not. She wears a discreet biofeedback sleeve on her right forearm under her outer layer — a thin, fabric-integrated interface that shows as a subtle texture variation in her sleeve if her arm is visible. The neural data-indexing implant is subcutaneous and invisible, though occasionally her eyes will lose focus for a half-second when she's actively querying it.",
+    "posture_movement": "She moves with economic precision — no wasted motion, but not rigid. She favors her left side slightly, protecting her chronically inflamed right hand. When sitting, she settles into a chair like someone familiar with long hours; her posture is upright but not tense, suggesting long-developed spinal discipline. Her hands move carefully, deliberately, the hands of an archaeologist. She has a habit of pausing mid-gesture while accessing her neural implant.",
+    "clothing_style": "Layered archival-grade fabrics in muted tones — charcoal, rust, deep indigo — textured materials that age gracefully and don't show stains. Her outer layer is always a heavy canvas or linen coat, often with reinforced pockets. Underneath, fitted base layers and a secondary vest or tunic. Her clothing carries a faint chemical smell of ozone and preservation compound. No corporate branding, no Φ-tier status markers. Everything is functional, well-maintained, and approximately fifteen years out of fashion — not by neglect, but by deliberate refusal. She wears steel-toed boots suitable for lab work and basement navigation. A cloth watch on her left wrist with a hand-wound mechanism — older than cybernetics, more reliable."
+  },
+  "image_prompt": "Freya Solberg-Holm, 168cm tall, solid heavyset frame with broad shoulders, standing in a 2226 Great Lakes Metropolitan Zone archival lab. Medium-brown skin with warm amber undertones reflecting mixed Northern European, East Asian, and Sub-Saharan ancestry. Short natural silver-grey hair, close-cropped. Striking patterned copper-and-black-ring augmented irises catching fragmented light. Deep weathered creases around eyes and mouth; small faded scar above left eyebrow. Minimal makeup. Wearing layered archival-grade fabrics in charcoal, rust, and deep indigo; heavy reinforced canvas coat over fitted base layers, steel-toed lab boots. Discreet biofeedback sleeve visible on right forearm. Pale capacitor burn scar on right inner forearm. Yellow-brown staining on hands from tape handling. Faded QR-code-like tattoo on left wrist, barely visible. Cloth mechanical watch on left wrist. Moving with economic precision, slightly favoring left side. Surrounded by degraded data storage media, old magnetic tape, and archival materials in soft laboratory lighting. Chemical patina on skin from preservation compounds. Cyberpunk 2200s aesthetic, practical and purposeful, no status markers. Moody ambient lab lighting with ozone haze. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 39.9,
+    "East Asian": 32.4,
+    "Sub-Saharan African": 11.5,
+    "Eastern European": 7.9,
+    "Hispanic/Latin American": 6.7,
+    "North African": 1.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

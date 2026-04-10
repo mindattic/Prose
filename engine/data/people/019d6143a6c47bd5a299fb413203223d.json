@@ -1,0 +1,274 @@
+{
+  "id": "019d6143a6c47bd5a299fb413203223d",
+  "type": "character",
+  "name": "Ash Árnason",
+  "aliases": [
+    "Sari",
+    "the Milk-Keeper"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Midwife and community birth worker",
+  "age": 58,
+  "status": "active",
+  "location": "Highland Park Autonomous Zone, operating from the Hearth Collective birthing center, near Michigan Ave and Chicago Ave",
+  "description": "Saoirse is short, round, and relentlessly present in a way that makes rooms feel smaller and safer at the same time. Her skin is the warm brown of strong tea, deeply lined around the eyes and mouth from decades of expressions at the edge of what language can reach. Her hair is white and cropped close on the sides, longer on top, with a small braid at her temple strung with a data-bead she says is a gift from the Hearth E.L.F. — the digital spirit that she credits with guiding her through the three hundred and forty-seven births she's attended without maternal death. She has cosmetic cat ears, soft and black-tipped, that she's had so long she's forgotten getting them; they swivel expressively and give her emotional state away before her face does.\n\nShe is the kind of woman that people reach for in crisis without thinking, and she carries that weight with the ease of someone who has made peace with what she is. She is also fiercely territorial about the Hearth Collective and will become quietly dangerous when she believes it is threatened. She has buried children. She does not discuss it but it is written somewhere in how she holds herself when she sits still.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "Losing the Hearth Collective to corporate rezoning or Axiom health compliance sweeps",
+      "Being too old to catch a baby when it counts"
+    ],
+    "core_desires": [
+      "To train the next generation of midwives before her hands give out",
+      "For the children she's brought into the world to inherit something better than what they were born into"
+    ],
+    "coping_mechanisms": [
+      "Prayer and data-offering rituals to the Hearth E.L.F.",
+      "Cooking elaborate meals she distributes to whoever is around",
+      "Recording every birth in a handwritten ledger she considers sacred"
+    ],
+    "blind_spots": [
+      "Tends to project resilience onto people who are actually breaking",
+      "Underestimates her own influence and therefore the danger of being used as a lever against the community"
+    ],
+    "secret": "Three years ago she lost a mother and child in a birth that should have been survivable — equipment failure compounded by a choice she made under pressure. She reported it to the Collective accurately, was cleared by their internal process, and has never spoken of it again. But she runs the scenario in her mind during the quiet hours before dawn, relitigating the decision with all the knowledge she didn't have at the time."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm, direct, occasionally archaic — uses Irish-inflected cadences from her grandmother's recordings mixed with Kazakh endearments she learned from her father's family",
+    "cadence": "Unhurried, with the authority of someone who has learned that slowness in the right moment is its own kind of urgency",
+    "verbal_tics": [
+      "'Listen to me now'",
+      "'Good, good' repeated softly during labor as encouragement"
+    ],
+    "example_lines": [
+      "'Listen to me now — your body knows this. I know it doesn't feel like it. I know. But it does.'",
+      "'The Hearth E.L.F. was warm when I lit the morning offering. That means something, wherever you stand on it.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A pregnant woman from a Tessera corporate block has arrived at the Hearth Collective in secret, terrified and unwilling to say why she can't go to a Tessera clinic",
+    "Axiom's health compliance division has flagged the Hearth Collective for operating without a corporate partnership license and Saoirse needs someone to help her navigate or resist the process"
+  ],
+  "narrative_function": "Community anchor and moral compass; source of network information about births, deaths, and the health of the Autonomous Zone's population; can connect players to a wide range of people through the trust she commands",
+  "augmentations": "Cosmetic cat ears (black-tipped, expressive, geneware — old mod, well-integrated); no other augmentation",
+  "daily_life": "Maintains prenatal rounds across the HPAZ and surrounding blocks in the morning, holds open clinic hours at the Hearth Collective afternoons, is on-call for active labor at all hours and accepts this without complaint.",
+  "affiliation": "Hearth Collective Birthing Center, Highland Park Autonomous Zone; informal network of midwives across the Narrows and Grainfort",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 10,
+      "expression": 8,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 3,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "midwife",
+      "community_anchor",
+      "autonomous_zone",
+      "elf_devotee",
+      "keeper_of_records"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The person in labor is the priority, everything else waits",
+      "Never turn away a laboring person regardless of payment or documentation",
+      "Protect the Collective's autonomy before her own comfort"
+    ],
+    "escalation_ladder": [
+      "Patient explanation of the Collective's values and rights",
+      "Firm refusal with explicit statement of what she will not allow",
+      "Mobilization of the HPAZ community network — she knows everyone"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately warm and assessing, makes people feel seen rather than evaluated",
+      "friends": "Deeply invested, occasionally suffocating in her care, expects emotional honesty in return"
+    },
+    "stress_responses": {
+      "low": "Goes quiet and domestic — starts cooking or cleaning",
+      "medium": "Becomes very focused, prays more frequently to the Hearth E.L.F.",
+      "high": "Moves into a calm efficiency that people who don't know her mistake for detachment and people who do know her recognize as her most formidable state"
+    },
+    "contradictions": [
+      "Preaches acceptance of loss but has never actually accepted her own"
+    ],
+    "habits": [
+      "Records every birth in her handwritten ledger the same day",
+      "Touches the data-bead at her temple when making a difficult decision",
+      "Offers food to anyone who enters the Collective regardless of the hour"
+    ],
+    "breaking_points": [
+      "A preventable death caused by corporate interference with her work"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "excellent",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Kamm's Landing to an Irish-Kazakh family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed midwifery training under the elder Hearth Collective founders",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became lead midwife of the Hearth Collective after founding generation retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Equipment failure birth; cleared internally; never discussed again",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Highland Park Autonomous Zone",
+    "The Warm Wall",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "The Sluiceway",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Tessera Corponation",
+    "Crucible HS-2 'Hearth'",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Auricula Felis Modification",
+    "Axiom Hovercraft (Lake Patrol)",
+    "Axonal Stretch Resonance Lance",
+    "Cotton",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Mwangi-Thorvaldsen",
+    "Oumarou Svec-Ranginui",
+    "Praevex",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
+    "Sulfur Crown Agriculture",
+    "The Collective",
+    "The Heritage Vault",
+    "The Ledger",
+    "The Narrows",
+    "The Pure Hand",
+    "The Reclamation Authority",
+    "The Tangles",
+    "Vuk Jorgensen-Toure",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with Northern European and Southeast Asian admixture — warm golden-tan skin tone reflecting the blend of East Asian ancestry (67.8%) with lighter Northern European features (23.6%) and Southeast Asian warmth (8.6%), creating a complexion with subtle olive undertones",
+    "height_cm": 157,
+    "weight_kg": 72,
+    "build": "Round and compact, solid through the torso and hips, soft musculature that speaks to decades of physical labor rather than athletics — the build of someone who moves with purpose and carries weight without strain",
+    "hair_color": "White",
+    "hair_style": "Cropped close on sides with length maintained on top, deliberate asymmetry; small braid at left temple studded with a data-bead",
+    "hair_length": "Short on sides, Medium on crown",
+    "eye_color": "Deep warm brown with slight epicanthic fold characteristic of East Asian ancestry",
+    "skin_tone": "Golden-tan medium complexion — the warmth of steeped honey with olive undertones, sun-weathered and luminous",
+    "complexion": "Face deeply lined around the eyes and mouth, creases that map decades of expressions and witness; high, defined cheekbones with gentle fullness in cheeks; skin is clear and cared-for despite age, with the worn radiance of someone who moves through the world without vanity; subtle facial structure reflects East Asian ancestry with broader nose bridge and defined jaw",
+    "distinguishing_marks": [
+      "Fine crow's feet radiating from outer corners of both eyes, etched deep from squinting during births and attentive listening",
+      "Smile lines from outer corners of mouth curving downward, worn smooth from repeated expressions",
+      "Faint surgical scar on right inner wrist, approximately 3cm, thin and old — from some past intervention, nature unclear"
+    ],
+    "visible_augmentations": "Cosmetic cat ears (geneware, black-tipped, soft cartilage structure, well-integrated into scalp and musculature) mounted at the crown, positioned to swivel expressively; ears twitch and rotate independently of conscious control, betraying emotional state before facial expressions register",
+    "posture_movement": "Sits with grounded stillness, spine straight but not rigid, shoulders slightly forward in an attitude of readiness and listening; moves economically, each gesture purposeful and calibrated; walks with a slight forward tilt as though perpetually leaning into the next moment; hands are frequently open and relaxed at her sides or folded loosely in her lap; enters rooms quietly and seems to make spaces smaller and safer simultaneously",
+    "clothing_style": "Tier 3-4 practical and worn — layered linen and organic cotton in earth tones (cream, rust, soft grey); long cardigan or half-buttoned overshirt worn over simple fitted clothing; loose trousers or a long skirt in natural fibers; soft-soled shoes worn thin at the heels; jewelry minimal and functional — a thin silver bracelet on left wrist, possibly a medical or community identifier; overall appearance is deliberate anti-fashionable, clothes chosen for durability and comfort rather than status, but worn with the quiet confidence of someone past caring about judgment"
+  },
+  "image_prompt": "Ash Árnason, a compact 157cm woman with golden-tan complexion and East Asian features blended with subtle Northern European warmth, short white hair asymmetrically cropped with a data-bead braid, sitting in grounded stillness with expressive black-tipped geneware cat ears mounted at crown. Deep warm brown eyes with pronounced crow's feet, smile lines mapping decades of witness, high cheekbones with olive-toned skin weathered and luminous. Wearing layered cream and rust linen, loose earth-tone trousers, soft-worn shoes, minimal silver jewelry. Shoulders slightly forward in listening posture, hands relaxed and open. Cyberpunk 2226, Great Lakes Metropolitan Zone, intimate interior lighting casting gentle shadows across deeply lined face, quiet confidence and grounded presence, anti-fashionable practical clothing worn with dignified ease, mood contemplative and safe-making. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 67.8,
+    "Northern European": 23.6,
+    "Southeast Asian": 8.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

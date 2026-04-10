@@ -1,0 +1,270 @@
+{
+  "id": "019d6143a73d745492800362e6d8ecad",
+  "type": "character",
+  "name": "Jabari Cisneros",
+  "aliases": [
+    "Zuzu",
+    "The Bone Painter"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Tattoo artist and gene-mod body artist",
+  "age": 38,
+  "status": "active",
+  "location": "Hamtramck Enclave, back parlor of a converted auto-parts shop called Skin & Signal, near Pulaski and Chicago Ave",
+  "description": "Zuwena is a tall woman with a swimmer's build gone slightly soft at the edges, her dark brown skin mapped with her own work — geometric Swahili coastline patterns interlocked with Icelandic knotwork, running up her arms and across her collarbones in bioluminescent ink that shifts from amber to violet depending on her mood. Her left eye is natural; her right has a patterned iris she designed herself, a spiraling nautilus in burnt orange and cream. She keeps her hair short on the sides and piled high in natural coils threaded with fiber-optic wire she swaps out by season. There is a precision to her hands that borders on the ceremonial — she cleans her needle rigs the way other people pray.\n\nShe is unhurried in a city that never stops moving, which either calms people or unsettles them. Her reputation is built on gene-mod integration work — she doesn't just tattoo skin, she counsels clients on how their cosmetic geneware will interact with pigment, how bioluminescent patches will behave under different lights, what subdermal LED placements will survive ten years versus two. She charges accordingly. She has opinions she will share exactly once, then never again, which gives conversations with her the quality of a single clean bell strike.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.5,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.7,
+      "ghost": 0.5
+    },
+    "core_fears": [
+      "Losing the precision in her hands — nerve damage, tremor, anything that takes the work from her",
+      "Being seen as merely decorative, a service provider rather than an artist"
+    ],
+    "core_desires": [
+      "To create work that outlasts her — pieces still beautiful on aged bodies, in autopsy photographs",
+      "To be genuinely understood by at least one person without having to explain herself"
+    ],
+    "coping_mechanisms": [
+      "Extreme tidiness and ritual around her workspace",
+      "Deflecting emotional questions with technical ones"
+    ],
+    "blind_spots": [
+      "She assumes she can read people accurately within ten minutes and is occasionally catastrophically wrong",
+      "She underestimates how much her detachment costs the people who love her"
+    ],
+    "secret": "Three years ago she tattooed a corponation executive's distinctive identifying mark onto a body double as a favor for someone she trusted. She doesn't know what happened afterward and has been too afraid to look."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and technical when discussing work; unexpectedly poetic when caught off guard; avoids filler words almost entirely",
+    "cadence": "Slow, deliberate, with long pauses she doesn't feel the need to fill",
+    "verbal_tics": [
+      "'Consider—' before redirecting a conversation",
+      "Repeating a client's last word back to them as a question"
+    ],
+    "example_lines": [
+      "'You want the bioluminescence here, on the wrist. Consider — every time you're nervous, everyone will see it.'",
+      "'It'll hurt. Most things worth doing do. That's not a metaphor, I'm being literal about the sternum placement.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A client comes in with a photograph of a tattoo on a corpse pulled from Gravesend Basin — it's Zuwena's unmistakable linework, but she has no record of ever doing that piece",
+    "The Enclave collective is pressuring her to take on an apprentice and she's chosen someone the collective considers deeply unsuitable — a teenager with a juvie record and shaking hands"
+  ],
+  "narrative_function": "Information source about clients who've passed through; quest giver when a regular goes missing or something strange has been appearing in the gene-mod community; local color anchor for the Enclave's art scene",
+  "augmentations": "Patterned iris (right eye, self-designed nautilus pattern in burnt orange and cream); bioluminescent tattoo ink throughout arms and chest; subdermal haptic sensors in fingertips for precision work",
+  "daily_life": "Opens the parlor at noon, runs three to four appointments a day — each treated as a consultation as much as a procedure — then spends her evenings sketching new pattern libraries or attending collective meetings where she mostly listens.",
+  "affiliation": "Independent; loose affiliation with the Hamtramck Enclave Artists' Collective",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 8,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 5,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Precision Artist",
+      "Gene-Mod Expert",
+      "Quiet Authority",
+      "Ritualist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never take a client who can't articulate why they want what they want",
+      "Don't get involved in collective politics unless it directly threatens the parlor"
+    ],
+    "escalation_ladder": [
+      "Silence and careful observation",
+      "A single direct question that cuts to the heart of it",
+      "Withdrawal — she stops responding and waits for the situation to resolve or reveal itself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Professionally warm, evaluating, asks more questions than she answers",
+      "friends": "Comfortable silence punctuated by observations that feel like gifts"
+    },
+    "stress_responses": {
+      "low": "Increases cleaning rituals, reorganizes supply drawers",
+      "medium": "Takes on extra work to keep her hands busy and her mind occupied",
+      "high": "Goes completely quiet for days, works through the night on personal pieces no one sees"
+    },
+    "contradictions": [
+      "She believes deeply in the permanence of her art but feels almost nothing about permanence in her personal life"
+    ],
+    "habits": [
+      "Burns a small data-offering to the local E.L.F. she calls Needlepoint before every session",
+      "Sketches thumbnail portraits of every client in a physical notebook she's kept for fifteen years"
+    ],
+    "breaking_points": [
+      "Someone touching her equipment without permission",
+      "Being called a 'glorified tattooist' by someone who should know better"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal haptic sensors (fingertips, bilateral)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic sensors (fingertips, bilateral)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Artist": 0.9,
+    "Dreamer": 0.9,
+    "Beauty Seeker": 0.9,
+    "Romantic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2162 — Born in Hamtramck Enclave to a Tanzanian-Icelandic household, third of four children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2180 — Apprenticed under a body artist in the Enclave who specialized in scar-sculpting",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2185 — Opened Skin & Signal at age 23 after her mentor retired",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "2197 — The incident with the executive's body double",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "Gravesend Basin",
+    "Dredge Mining Collective",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
+    "Needle",
+    "Déjà Vu",
+    "Chicago",
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Ambrosia Fekete-Waiyaki",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Last Word",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Photonic Pressure Lace Emitter PPLE-3 'Needlepoint'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "The Collective",
+    "Yannick Tambadou-Reinholt",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African ancestry, complemented by East Asian, North African, and trace Northern European heritage—a genetic tapestry reflecting the Ubiquitous Diaspora. This blend creates warm, complex skin undertones with features influenced by multiple continental traditions.",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "build": "Tall and athletically lean with the shoulders and chest of a former swimmer; subtle softening at the midsection suggesting her late thirties, but with muscular definition preserved in her forearms and core from precision handwork",
+    "hair_color": "Natural dark brown with fiber-optic threading in rotating seasonal colors",
+    "hair_style": "High natural coils piled and secured; sides faded short and clean",
+    "hair_length": "Medium to long on top, short on sides",
+    "eye_color": "Left eye: natural dark brown. Right eye: custom-designed patterned iris featuring a spiraling nautilus in burnt orange and cream with programmable micro-LEDs",
+    "skin_tone": "Deep warm brown with rich golden and red undertones from the blending of Hispanic, Sub-Saharan African, and East Asian heritage; unmarred except where deliberately modified",
+    "complexion": "Flawlessly maintained; meticulous grooming habits evident in nail care and skin conditioning. Fine lines around her eyes suggest chronic focus work. Expression typically neutral or thoughtful; rare smile carries weight. Facial structure reflects the broad cheekbones and defined bone structure of her mixed ancestry.",
+    "distinguishing_marks": [
+      "Full-sleeve bioluminescent tattoos on both arms: geometric Swahili coastline patterns interlocked with Icelandic knotwork, shifting from amber to violet based on bioelectric response and mood state",
+      "Bioluminescent continuation across collarbones and upper chest in the same hybrid pattern language",
+      "Subdermal haptic sensor implants visible as faint geometric scarring across fingertips of both hands — deliberate, ceremonial in appearance"
+    ],
+    "visible_augmentations": "Right eye's patterned nautilus iris is immediately striking in normal light and becomes luminous in dim settings. Bioluminescent tattoo coverage across arms, shoulders, and chest glows subtly in low light. Fiber-optic threads woven through hair create occasional light-refraction effects. Subdermal haptic sensor scars on fingertips are visible only upon close inspection",
+    "posture_movement": "Unhurried and deliberate; moves with the economic precision of someone trained in fine motor control. Standing posture is grounded and centered. Hands are expressive but economical — fingers rarely fidget. Maintains unusual stillness in conversation, which creates an unsettling calm in fast-paced environments. Eye contact is direct and sustained",
+    "clothing_style": "Tier 3-4 independent artisan aesthetic: fitted graphene-weave tank tops or sleeveless pieces to showcase arm work; tailored dark utility pants with deep pockets; worn-in but well-maintained leather apron when working, bearing the stains of precision inks and gene-mod suspension solutions. Minimal jewelry — prefers clean lines. Occasionally wears a Hamtramck Enclave Artists' Collective badge on a thin chain. Footwear: practical minimalist shoes broken in from years of standing. Overall presentation prioritizes function and intentionality over trend"
+  },
+  "image_prompt": "Jabari Cisneros, a tall lean woman with deep warm brown skin reflecting Hispanic, African, and East Asian heritage, stands in a dimly lit artist's workshop in the GLMZ 2226. Her natural dark coils are piled high with glowing fiber-optic threads, sides faded short. Full-sleeve bioluminescent tattoos in amber and violet glow across muscular forearms and shoulders—Swahili coastline patterns interwoven with Icelandic knotwork. Her right eye features a striking custom nautilus iris in burnt orange and cream, luminous with micro-LEDs. Subdermal haptic scars visible on her fingertips. She wears a fitted sleeveless graphene-weave top showcasing her arm work, dark tailored utility pants, and a worn leather apron bearing ink stains. Her posture is grounded and centered, hands poised with deliberate precision. Direct gaze, neutral expression. Ambient workshop lighting catches the bioluminescent patterns across her chest and arms, creating a subtle ethereal glow. Cyberpunk artisan aesthetic, moody and intentional. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 45.4,
+    "Sub-Saharan African": 31.8,
+    "East Asian": 15.6,
+    "North African": 5.7,
+    "Northern European": 1.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

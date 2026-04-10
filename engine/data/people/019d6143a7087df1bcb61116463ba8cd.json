@@ -1,0 +1,340 @@
+{
+  "id": "019d6143a7087df1bcb61116463ba8cd",
+  "type": "character",
+  "name": "Ash Agyemang-Volkov-Echeverría",
+  "aliases": [
+    "Meridian",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 43,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Division",
+  "description": "Tui Bautista-Nwosu is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a extraction specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nTui Bautista-Nwosu has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.54,
+      "ideal": 0.89,
+      "id": 0.34,
+      "shadow": 0.55,
+      "mask": 0.88,
+      "ghost": 0.74
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "To matter to someone for who they are, not what they can do",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+    ],
+    "coping_mechanisms": [
+      "Exercises compulsively — the body must be ready, always",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Overestimates their own abilities in situations outside their specialty",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
+    ],
+    "secret": "Tui Bautista-Nwosu is slowly going chrome-sick — rejection symptoms are manageable now but getting worse. Has maybe two years before it becomes visible."
+  },
+  "speech_patterns": {
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Staccato bursts separated by calculating silences.",
+    "verbal_tics": [
+      "Uses old pre-collapse slang that nobody else remembers",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Tui Bautista-Nwosu discovers a job they completed last year was a setup for something much larger and much worse",
+    "Tui Bautista-Nwosu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Someone is impersonating Tui Bautista-Nwosu on jobs, and the impersonator is better at the work than the original"
+  ],
+  "narrative_function": "Tui Bautista-Nwosu is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Independent — Dockside connections",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 5
+      },
+      "agility": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 4
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 8
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 5
+      },
+      "perception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 5
+      },
+      "intimidation": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 7
+      },
+      "deception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.88,
+      "caution": 0.82,
+      "loyalty": 0.57,
+      "greed": 0.93,
+      "empathy": 0.54
+    },
+    "drives": [
+      "survival",
+      "money",
+      "reputation"
+    ],
+    "thresholds": {
+      "pain": 4,
+      "stress": 5,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "mechanical aptitude — can repair or modify almost anything",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "risk-averse to the point of missed opportunities",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-1",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not betray a client who paid in full, regardless of better offers",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+      "Presents as emotionless professional but is deeply affected by collateral damage"
+    ],
+    "habits": [
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Checks exits within 10 seconds of entering any room",
+      "Practices a kata or fighting form every morning regardless of circumstances"
+    ],
+    "breaking_points": [
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Being forced to choose between a crew member and the mission — and choosing wrong",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Neural dampener",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "pristine",
+      "installed_date": "",
+      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "replaces": ""
+    },
+    {
+      "name": "Cybernetic arm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "Protector": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "GLMZ",
+    "The Nearfield",
+    "Lazarus LX-2 'Lab Rat'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Slagworks Industrial",
+    "Clover",
+    "Anatoliy Faye-Nkrumah",
+    "Brecken Yılmaz-Osei",
+    "Cem Lund-Bangura",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Independent Micro-Grid Power Cooperative",
+    "Irontide Tidal Energy",
+    "Meridian Municipal Supply OxiStrip MMS-C4",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Philibert Mwangi-Djordjevic",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
+    "SynapTech PolyGlot Live Translation Implant",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Fathom Line",
+    "The Human Baseline Alliance",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed ancestry reflecting Sub-Saharan African (32.9%), Hispanic/Latin American (28.0%), East Asian (17.8%), Eastern European (17.3%), and Northern European (4.0%) heritage. The genetic blend produces a uniquely cosmopolitan phenotype—African-derived bone structure and warm skin undertones combined with East Asian eye shape characteristics and subtle Eastern European features in the cheekbones and jaw structure.",
+    "height_cm": 188,
+    "weight_kg": 76,
+    "build": "Rawboned and lean—the muscular definition of someone who carries minimal excess mass. Broad shoulders narrowing to a tight waist. The physiology reads as economically built for endurance and speed rather than raw strength, though the visible chrome arm compensates for any deficit.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, practical cut—maintained but not groomed. Starts to gray at the temples.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber circuitry visible at the outer iris edges—subcutaneous neural interface bleed-through",
+    "skin_tone": "Medium-warm brown with subtle golden undertones, sun-weathered from decades in the GLMZ. The tone reflects the harmonious blend of Sub-Saharan and Latin American ancestry with hint of East Asian warmth.",
+    "complexion": "Angular face with pronounced cheekbones and strong jawline characteristic of mixed African and Hispanic heritage, refined by Eastern European bone structure. Weathered skin shows fine lines around the eyes and mouth—the kind accumulated from squinting in bad light and years of low-grade stress. Minimal facial hair, kept trimmed close. The scarring around his temples and jawline is deliberate and visible: installation scars from neural work, pale threads of scar tissue running from his right temple toward his ear and along the underside of his jaw where augmentation hardware meets bone.",
+    "distinguishing_marks": [
+      "Pale surgical scarring along the right temple, approximately 8cm in length, extending toward the ear—neural dampener installation site",
+      "Matching scarline along the right jawline beneath the ear, roughly 6cm—neural interface anchor point",
+      "Small burn scar on the left forearm, roughly 3cm diameter, circular—old accident or deliberate",
+      "Thin white line across the inside of the right wrist where the cybernetic arm interfaces with residual organic tissue"
+    ],
+    "visible_augmentations": "Full chromatic replacement of the right arm from shoulder joint downward—brushed steel and gunmetal gray with articulated finger joints and reinforced knuckle plating. The shoulder joint is clearly mechanical, visible beneath the skin at the clavicle junction. Neural dampener hardware visible at both temples as faint metallic threading beneath the skin and scar tissue. Circuitry bleed-through at the eyes suggests deeper neural integration.",
+    "posture_movement": "Stands with weight slightly forward, shoulders relaxed but ready. Moves economically—no wasted motion. The right arm has a subtle mechanical lag in certain movements, a fraction of a second delay in fine motor control that he's learned to compensate for. When thinking, he favors tilting his head to the left, unconsciously favoring his organic side. Baseline posture suggests someone perpetually half-ready for immediate action.",
+    "clothing_style": "Tier 4 utilitarian—function-first without pretense. Black reinforced cargo pants with extra pockets and subdued gray stitching. Steel-toed boots, scuffed and re-heeled multiple times. Usually wears a lightweight tactical jacket in dark gray or black, synthetic materials rated for minor impact resistance, with internal pockets for tools and hardware. Under that, simple t-shirts in neutral colors, sometimes with faint logos from defunct GLMZ establishments. No jewelry except a chipped plasteel watch on his left wrist. Clothing bears the wear of actual use—small tears carefully patched, stains that won't come out, the overall appearance of someone who can't afford to replace things and doesn't care how it looks as long as it functions."
+  },
+  "image_prompt": "Ash Agyemang-Volkov-Echeverría, 188cm lean-muscled mixed heritage male with golden-warm medium brown skin reflecting Sub-Saharan African, Hispanic, East Asian, and Eastern European ancestry. Angular face with sharp cheekbones, strong jawline, dark brown eyes with amber neural circuitry visible at iris edges. Short dark hair graying at temples. Pale surgical scars visible on right temple and jawline from neural augmentation. Full brushed steel and gunmetal gray cybernetic right arm with articulated fingers and reinforced knuckles, mechanical shoulder joint visible at clavicle. Weathered skin with fine lines from decades of low-grade stress. Wears black tactical jacket, cargo pants with gray stitching, scuffed steel-toed boots. Standing with economical posture, weight forward, ready but relaxed. Chipped plasteel watch on left wrist. Dark utilitarian clothing bearing actual wear—patched tears, permanent stains. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody neon lighting casting amber and blue shadows across face and steel augmentation. Gritty urban backdrop, dystopian atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 32.9,
+    "Hispanic/Latin American": 28.0,
+    "East Asian": 17.8,
+    "Eastern European": 17.3,
+    "Northern European": 4.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

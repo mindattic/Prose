@@ -1,0 +1,157 @@
+{
+  "id": "019d6143a610731285c45bf13ef69a2a",
+  "type": "character",
+  "name": "Zephyr Lindström",
+  "aliases": [
+    "Ember"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Kindling merchant - Threshold operator",
+  "age": 41,
+  "status": "active",
+  "location": "The Underworld - B1 Threshold, near sub-level access near Dearborn and Jackson",
+  "description": "Farida runs the largest trading post at the Threshold. Her bioluminescent geneware makes her skin glow faint amber in the dark.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.6,
+      "id": 0.5,
+      "shadow": 0.4,
+      "mask": 0.4,
+      "ghost": 0.5
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "The Kindling",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Crucible Industries Memory Alloy Switchblade MS-6 'Recall'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
+  ],
+  "related_entities": [
+    "The Threshold",
+    "Threshold",
+    "Aslan Vasquez-Chatterjee",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nightlight",
+    "Constance",
+    "Crucible Industries Memory Alloy Switchblade MS-6 'Recall'",
+    "Fanta Popov-Adjei",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Liora Mori-Sefa",
+    "MERIDIAN",
+    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
+    "Noir Dining",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Filament",
+    "The Underlayer Collective",
+    "Tshiamo Vukić-Arellano",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "North African and Northern European blend with Sub-Saharan African ancestry. Her genetic profile creates a striking mid-tone complexion with warm golden undertones—the result of predominantly North African (44.9%) and Northern European (43.8%) heritage balanced by Sub-Saharan African (11.3%) genetics. Her features reflect this tri-continental mix: defined cheekbones and jawline structure, warm deep brown eyes, and the kind of rich melanin-based skin tone that glows under bioluminescence.",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Athletic and lean, with defined shoulders and chest from years navigating the Threshold's physical demands. No excess fat; efficient frame built for prolonged underground work.",
+    "hair_color": "Black with natural deep brown undertones",
+    "hair_style": "Braided crown wrapped around the back of her head, practical and secured with silver wire clasps",
+    "hair_length": "Long (mid-back length, mostly bound)",
+    "eye_color": "Deep brown, warm in bioluminescent glow",
+    "skin_tone": "Rich warm tan to golden-brown complexion with amber undertones, enhanced by the constant amber bioluminescence beneath the skin. The interplay of North African and Northern European genetics creates a luminous medium-dark tone that catches light distinctively.",
+    "complexion": "Clear-skinned, minimal scarring, with faint bioluminescent tracery visible along cheekbones and temples when activated. Well-maintained appearance despite underground lifestyle; her face shows the hardness of merchant authority tempered by calculated charm. Her facial structure reflects the blend of ancestries—strong defined cheekbones from North African heritage, balanced with the jawline geometry influenced by Northern European genetics.",
+    "distinguishing_marks": [
+      "Faint tracery of bioluminescent pathways visible beneath skin along her collarbones and inner wrists, glowing soft amber in darkness",
+      "Thin scar running horizontally across her left palm, pale and old, likely from early Threshold work",
+      "Minor burn marks on the inside of her right forearm from a chemical spill, partially obscured by the bioluminescence overlay"
+    ],
+    "visible_augmentations": "Bioluminescent skin geneware creating soft amber glow in dark spaces; faint subcutaneous light filaments visible beneath skin surface at temples and jawline. No obvious chrome or mechanical augmentations.",
+    "posture_movement": "Upright, confident bearing. Moves with economical precision—no wasted motion, every step deliberate. When stationary, she favors a balanced stance with slight forward lean, attentive. Her presence commands attention in crowded Threshold spaces; she walks like someone accustomed to being deferred to.",
+    "clothing_style": "Tier 3-4 practical wear: dark synth-leather long coat reaching mid-thigh, reinforced at seams and cuffs. Fitted charcoal underlayer (breathable smart-fabric that regulates temp in underground zones). Heavy-duty utility belt with brass Φ-coin purse, data-chip pouch, and antique brass scale weight. Worn but well-maintained military-grade boots with grip soles for uneven Threshold terrain. Minimal jewelry except for a thick silver thumb ring on her left hand—likely a merchant's marker or bond-seal."
+  },
+  "image_prompt": "Zephyr Lindström, a striking cyberpunk merchant from 2226, stands in dimly-lit Threshold tunnel with amber bioluminescence glowing softly from beneath her golden-brown skin. Her rich warm complexion—blending North African and Northern European heritage—catches the warm light at her temples and collarbones where subcutaneous filaments trace beneath the surface. Athletic frame draped in a dark synth-leather long coat over charcoal smart-fabric underlayer, silver wire clasps securing braided crown around her head. Deep brown eyes meet the viewer with merchant's authority. Faint scars and burn marks visible on her left palm and right forearm. Utility belt with brass Φ-coin purse, heavy military-grade boots gripping uneven stone floor. Confident upright posture, economical stance, commanding presence. Underground cyberpunk aesthetic, practical Tier 3-4 wear, soft golden bioluminescent ambience contrasting dark industrial surroundings. Moody atmospheric lighting. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "North African": 44.9,
+    "Northern European": 43.8,
+    "Sub-Saharan African": 11.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

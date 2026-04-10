@@ -13,13 +13,13 @@ const DATA_ROOT = path.resolve(__dirname, '..', 'engine', 'data');
 
 // Repos to index entity names from
 const INDEX_REPOS = [
-  'characters', 'corponations', 'factions', 'places', 'technology',
+  'people', 'corponations', 'factions', 'places', 'technology',
   'weaponry', 'cyberware', 'equipment', 'automata', 'synthetics',
   'entertainment', 'subsidiaries', 'materials'
 ];
 
 // Repos to scan and update with cross-references
-const SCAN_REPOS = ['documents', 'characters', 'factions', 'places'];
+const SCAN_REPOS = ['documents', 'people', 'factions', 'places'];
 
 // Minimum name length to avoid false positives
 const MIN_NAME_LENGTH = 4;

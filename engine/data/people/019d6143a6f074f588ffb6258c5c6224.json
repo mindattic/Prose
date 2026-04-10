@@ -1,0 +1,330 @@
+{
+  "id": "019d6143a6f074f588ffb6258c5c6224",
+  "type": "character",
+  "name": "Dmitri Delgado",
+  "aliases": [
+    "Wraith",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "High-risk package and data transport — courier",
+  "age": 34,
+  "status": "active",
+  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Wacker and State",
+  "description": "Tengiz Ito-Takyi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 34, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented courier in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.97,
+      "ideal": 0.67,
+      "id": 0.65,
+      "shadow": 0.87,
+      "mask": 0.66,
+      "ghost": 0.46
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "That the work they do makes the city worse, not better",
+      "Losing their edge to age — the body slows before the mind accepts it"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Maintains weapons obsessively — cleaning guns is meditation"
+    ],
+    "blind_spots": [
+      "Assumes the worst in corporate people, missing the rare ones who could be allies",
+      "Cannot see that their independence is actually isolation wearing a better outfit",
+      "Trusts technology more than people — machines don't betray"
+    ],
+    "secret": "Tengiz Ito-Takyi is addicted to combat stims. Functions fine on them, can't function without them. The dependency is invisible to everyone except their street doc."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
+    ],
+    "example_lines": [
+      "\"I don't look inside the package. I don't ask about the package. I deliver the package.\"",
+      "\"Speed is a skill. Knowing when to slow down is wisdom. I sell both.\"",
+      "\"This route has three checkpoints and a kill zone. I'll be there in twenty minutes.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The fixer who handles Tengiz Ito-Takyi's contracts goes silent — dead, disappeared, or turned",
+    "Tengiz Ito-Takyi intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A former associate resurfaces with evidence that could destroy Tengiz Ito-Takyi's reputation — and a price for silence"
+  ],
+  "narrative_function": "As a courier, Tengiz Ito-Takyi embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Freelance — Geartown regular",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 6
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "perception": {
+        "base": 3,
+        "augmented": 2,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      },
+      "technical": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 3,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 1,
+        "effective": 6
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "empathy": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 9
+      }
+    },
+    "personality": {
+      "aggression": 0.39,
+      "caution": 0.9,
+      "loyalty": 0.9,
+      "greed": 0.83,
+      "empathy": 0.97
+    },
+    "drives": [
+      "survival",
+      "money",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 3,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "intimidating physical presence",
+      "exceptional close-quarters combat",
+      "social chameleon — adapts to any environment"
+    ],
+    "weaknesses": [
+      "grudge-holding that compromises rational decision-making",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "courier",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Never discusses active contracts with anyone not directly involved",
+      "Always verifies target identity independently before lethal contracts",
+      "Refuses contracts that require operating inside The Spires — too much surveillance"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Values loyalty intensely but has betrayed someone in the past to survive"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Eats the same meal before every job — superstition masquerading as preference"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Subdermal armor plating across torso and forearms",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Improviser": 0.9,
+    "Cockroach": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Ringo DV-4 'Courier'",
+    "Burden of Longitude",
+    "Slagworks Industrial",
+    "Arcturus Exo-Runner Frame",
+    "Breck Tannen",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "Cezar Watanabe-Gyasi",
+    "Chibundo Reinholt-Sarpong",
+    "Dzemal Acholonu-Patagiri",
+    "Independent Micro-Grid Power Cooperative",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Old Harbor",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Quilt",
+    "Réginald Asomaning-Čabarkapa",
+    "Scarecrow",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "Timur Osei-Bjelke",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European and Hispanic/Latin American blend with East Asian heritage. Strong Slavic bone structure mixed with Latin American warmth — high cheekbones and strong jaw from Eastern European ancestry, broader facial planes and fuller features from Hispanic/Latin heritage, subtle eye shape and hair texture influenced by East Asian genetics.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and heavy-set with dense muscle beneath a layer of practical bulk — built like someone who carries weight as deliberate mass rather than fat. Stocky core, powerful legs, forearms that show the architectural definition of someone who maintains augmentation hardware daily.",
+    "hair_color": "Dark brown, naturally black with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; no ornamentation, secured with industrial cable tie",
+    "hair_length": "Long (shoulder-length when loosened, but always bound)",
+    "eye_color": "Dark brown with faint chromatic aberration at the edges — sign of subcutaneous neural interface strain",
+    "skin_tone": "Warm medium brown with golden undertones — the blended result of Eastern European and Latin American heritage, deepened and weathered by years of Old Harbor humidity and industrial exposure",
+    "complexion": "Weathered and lived-in with the robust, angular structure of Eastern European ancestry softened by the fuller cheekbones and warmer skin of Latin American heritage. Minimal grooming beyond function. Strong jaw, high cheekbones, a mouth that rarely smiles. Perpetual tension in the jaw. Small scar tissue around knuckles, consistent with bare-knuckle self-defense training.",
+    "distinguishing_marks": [
+      "Surgical seam lines visible along both forearms where subdermal armor plating was installed — deliberately left unscarred, showing the pale track marks of military-surplus installation",
+      "Thin white scar running from left temple to jawline, approximately 8cm, partially hidden by her braid when it shifts",
+      "Faded tattoo on inner right wrist: a stylized GLMZ harbor skyline rendered in monochrome ink, approximately 4cm wide — third-generation marker, city birth-right",
+      "Burn scar on left hand, dorsal surface, from chemical contact during a bad extraction job — irregular, roughly 3cm diameter, lighter than surrounding skin"
+    ],
+    "visible_augmentations": "Chrome visible at wrist and forearm where subdermal armor plating edges meet skin at stress points; faint amber LED bioluminescence visible beneath the skin at both temples when her neural interface is active. Mechanical clicking audible in her joints when she moves quickly — adrenaline pump hydraulic engagement. No attempt made to conceal any of it.",
+    "posture_movement": "Economical and alert; she moves like someone constantly aware of exits and threats. Weight stays forward on the balls of her feet, shoulders held slightly forward. Her eyes track fast-moving objects and people with predatory precision. When idle, she fidgets with equipment — checking knife edges, testing trigger resistance, running fingers over her augmentation seams. No wasted motion.",
+    "clothing_style": "Practical Tier 3-4 runner gear. Heavy canvas work jacket (charcoal gray, multiple pockets, reinforced elbows) over a matte-black compression shirt with visible cooling vents at the ribs — designed to manage the heat dump from her adrenaline pump. Cargo pants in dark gray with reinforced thigh pockets and a knife sheath sewn into the interior seam of the left leg. Steel-toed boots, scuffed and functional, laced tight. A leather motorcycle-style belt with a heavy chrome buckle. No jewelry except a battered analog watch on her left wrist — waterproof, shock-resistant, no network connectivity. A long coat hangs in her temporary quarters — military surplus wool, lined with a shielded compartment for sensitive packages."
+  },
+  "image_prompt": "Dmitri Delgado, a compact and muscular woman with warm medium-brown skin and sharp Eastern European-Latin American features — high angular cheekbones, strong jaw, dark eyes showing faint neural interface strain. Dark hair pulled into a tight functional braid with silver threading at the temples. Visible augmentation scars on forearms, amber LED bioluminescence glowing faintly at temples. Weathered expression, predatory alertness. Wearing heavy charcoal canvas work jacket over black compression shirt with cooling vents, dark cargo pants, steel-toed boots. Chrome augmentation hardware visible at wrists. Knife sheath visible in thigh pocket. Cyberpunk 2200s Great Lakes Metropolitan Zone, industrial Old Harbor setting, moody neon-tinted lighting with deep shadows, rain-slicked surfaces, alert posture ready for action. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 44.8,
+    "Hispanic/Latin American": 43.8,
+    "East Asian": 11.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

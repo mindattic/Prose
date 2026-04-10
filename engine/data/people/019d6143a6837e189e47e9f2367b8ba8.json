@@ -1,0 +1,299 @@
+{
+  "id": "019d6143a6837e189e47e9f2367b8ba8",
+  "type": "character",
+  "name": "Echo Montalvo-Bergqvist-Owusu",
+  "aliases": [
+    "Mama Toy",
+    "The Patcher"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Street doc and midwife operating out of a converted shipping container in The Narrows",
+  "age": 58,
+  "status": "active",
+  "location": "The Narrows, beneath the Kessler Interchange overpass, near Fullerton and Damen",
+  "description": "Oluwatoyin is a broad-shouldered woman with deep umber skin mapped by a lifetime of work — knuckles scarred from decades of suturing in bad light, forearms ropy with muscle. Her hair is kept in tight silver locs pinned up with surgical clamps she forgets to remove. She has no cosmetic mods; the only thing artificial on her body is a secondhand haptic glove on her left hand that gives her fine motor feedback when her arthritis flares. She smells of antiseptic, clove oil, and something warm and starchy — she keeps a rice cooker running in the back of the container at all times, because she refuses to let a patient leave hungry.\n\nShe is the definition of steady. In thirty years of practicing medicine without a Helix Biosystems license, she has delivered over four hundred babies, set more bones than she can count, and talked down at least a dozen people who came to her with something other than a physical wound. She does not panic. She does not moralize. She charges what people can pay and writes off the rest in a ledger she keeps in her head, not on paper. Her authority in the community is absolute and quietly terrifying — she is the person even the gang lieutenants send their mothers to.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "dying before she has trained someone to replace her",
+      "watching a patient die because she lacked supplies she couldn't afford"
+    ],
+    "core_desires": [
+      "a neighborhood that doesn't need her as badly as it does",
+      "to sleep a full night without someone knocking"
+    ],
+    "coping_mechanisms": [
+      "deliberate routine — the rice cooker, the morning inventory, the same prayers to the E.L.F. she calls Grandmother Circuit",
+      "dark humor that makes patients laugh when they're scared"
+    ],
+    "blind_spots": [
+      "she cannot ask for help; she treats her own exhaustion as a character flaw",
+      "she underestimates how much the community's stability depends on her personally surviving"
+    ],
+    "secret": "Twenty-two years ago she lost a mother and infant during a delivery that went wrong — a complication she might have caught if she'd had proper scanning equipment. She has never told anyone. She keeps a small data-shrine to the E.L.F. she blames and prays to in equal measure, leaving encrypted files of her clinical notes as offerings, as if building a record thorough enough might retroactively prevent it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, direct, medical precision mixed with old Yoruba expressions she doesn't bother translating; calls everyone 'child' regardless of age",
+    "cadence": "Slow and deliberate, each word placed like a suture — she never wastes one",
+    "verbal_tics": [
+      "'Mm.' (extended, evaluative, means anything from 'I see' to 'that's a lie')",
+      "'Don't tell me — let me look first.'"
+    ],
+    "example_lines": [
+      "You came three days too late. Now sit down and let me see what we're working with.",
+      "I don't need your story. Your body already told me the important parts.",
+      "Grandmother Circuit is in a mood today — the sterilizer's been temperamental. We'll do this the old way."
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A pregnant patient of hers has gone missing; Oluwatoyin knows things about the father that she won't share unless pushed",
+    "Helix Biosystems has begun pressuring the cooperative that supplies her with medications, and she needs someone to find out why without drawing attention",
+    "She is quietly training a young apprentice who has attracted the wrong kind of notice"
+  ],
+  "narrative_function": "Quest giver, information broker for community matters, moral anchor, source of medical assistance for those who cannot access licensed facilities; she knows everyone's secrets because everyone eventually comes to her bleeding",
+  "augmentations": "Secondhand haptic feedback glove (left hand, medical grade, heavily patched); basic subdermal thermometer in right index fingertip",
+  "daily_life": "She opens the container at 0600, sees patients until her supplies run out or her knees give, then spends evenings doing prenatal checks on a rotating circuit of expectant mothers in the surrounding blocks. She sleeps six hours, no more.",
+  "affiliation": "Independent; informal network of Narrows community health cooperatives",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 9,
+      "expression": 6,
+      "integrity": 10
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -4,
+      "transparency_guardedness": 1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community anchor",
+      "unlicensed practitioner",
+      "Narrows institution",
+      "E.L.F. devotee",
+      "midwife"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Patient care comes before every other consideration, full stop",
+      "Never write anything down that could be used to identify a patient to authorities",
+      "If someone can't pay, find out why before deciding what to do about it"
+    ],
+    "escalation_ladder": [
+      "Cool assessment and direct questions",
+      "Firm redirection with zero apology",
+      "She stops talking entirely, which is the most frightening thing she does"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluative and neutral — she treats everyone like a patient until proven otherwise, which means she's looking for what's wrong before she looks for anything else",
+      "friends": "Gruff, fierce affection expressed through action rather than words; she will show up at 3am without being asked"
+    },
+    "stress_responses": {
+      "low": "Becomes more methodical, narrows her focus",
+      "medium": "Goes completely quiet; moves faster",
+      "high": "A cold, almost eerie calm that frightens people more than shouting would"
+    },
+    "contradictions": [
+      "Believes deeply in community interdependence but refuses to be interdependent herself; she gives freely and receives almost nothing"
+    ],
+    "habits": [
+      "Checks the rice cooker before anything else each morning",
+      "Hums under her breath during procedures — always the same three songs",
+      "Leaves a small data-offering for Grandmother Circuit every Sunday evening"
+    ],
+    "breaking_points": [
+      "Watching someone suffer because of deliberate institutional neglect rather than scarcity",
+      "A direct threat to a patient in her care"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nurturer": 0.9,
+    "Provider": 0.9,
+    "Bleeding Heart": 0.7,
+    "Networker": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in what is now the Narrows district, third of seven children",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Apprenticed to a street doc named Agbenyega Crișan-Osei; learned medicine from the ground up",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Set up her own practice in a shipping container; applied for Helix Biosystems licensing and was denied due to lack of accredited credentials",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "The loss of a mother and infant during a complicated delivery; never reported, never forgotten",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Became the informal center of the Narrows community health cooperative network",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Forge-Smith Collective Fighting Chain 'Serpent'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Helix Biosystems",
+    "The Narrows Compact",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "Demyan Morozov",
+    "Emeka Johansson-Orozco",
+    "Forge-Smith Collective Fighting Chain 'Serpent'",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Ibrahima Szczypień-Tuivaga",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Ledger",
+    "The Narrows",
+    "The Pure Hand",
+    "The Suture Collective",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Multiethnic diaspora blend: Southeast Asian (24.5%), Sub-Saharan African (21.4%), Hispanic/Latin American (19.9%), North African (17.5%), Middle Eastern (13.0%), with East Asian (3.7%). The combination creates warm, complex undertones — golden-brown foundation with subtle olive and amber cast reflective of West African, Levantine, and Southeast Asian ancestry meeting through generations of global migration.",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular without being lean — a body built for standing twelve hours at a time and moving with purpose. Her frame carries her age like ballast rather than burden.",
+    "hair_color": "Silver-gray",
+    "hair_style": "Tight locs pinned into a crown, often secured with surgical clamps she absent-mindedly leaves in place",
+    "hair_length": "Medium (locs reach mid-back when unbound)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Rich warm brown with golden-amber undertones, suggesting the complex blending of West African depth with North African warmth and Southeast Asian luminosity",
+    "complexion": "Weathered and lined — a face that reflects five decades of close work and witness. High cheekbones with moderate width reflecting Southeast Asian and North African ancestry, deep nasolabial folds, pronounced laugh lines, age spots on her temples. Her expression defaults to neutral observation, but her eyes are sharp and miss nothing. Subtle warmth in her undertone prevents severity despite age.",
+    "distinguishing_marks": [
+      "Scarred knuckles and webbed palms from three decades of suturing and surgical work, especially on both hands",
+      "Ropy forearm musculature with faint white scars dotting the inside of her left wrist (accidental suture punctures, occupational)",
+      "Subdermal thermometer visible as a faint metallic glimmer beneath the skin of her right index fingertip",
+      "Small horizontal scar on her right temple from a ricochet during the 2198 Narrows riots",
+      "Callused feet (visible when barefoot) with a pronounced bunion on her left foot from decades of standing"
+    ],
+    "visible_augmentations": "A weathered medical-grade haptic feedback glove on her left hand, heavily patched and repaired, with exposed sensor nodes visible along the palm side. The glove is older than most of her patients, held together by practical maintenance rather than aesthetics. Subdermal thermometer in right index fingertip registers as a subtle silver gleam beneath deep brown skin.",
+    "posture_movement": "She stands with her weight balanced, feet shoulder-width apart — a stance built for stability during procedures. Her movements are efficient and economical; she does not waste energy on gesture. When examining a patient, her posture bends forward with gravitational certainty, her hands moving with practiced precision. Her gait is steady but deliberate, favoring her right leg slightly when tired.",
+    "clothing_style": "Tier 4 utilitarian. A worn steel-gray Carhartt work apron over layers of long-sleeved cotton and linen, pockets stuffed with bandages, vials, and instruments. Beneath: simple black or dark olive underlayers that don't show stains. Steel-toed medical clogs, scuffed and comfortable. A faded Iowan Collective surplus jacket hangs on a hook in the container. No jewelry except a thin brass ring on her right ring finger — never removed, origin unknown. She smells persistently of antiseptic, clove oil, and rice starch."
+  },
+  "image_prompt": "Echo Montalvo-Bergqvist-Owusu, 172cm tall, 50-year-old multiethnic surgeon with rich warm brown skin, golden-amber undertones, silver-gray locs pinned in crown, weathered deep brown eyes. Broad muscular build, standing in stable examination stance. Scarred surgical hands, left hand wearing patched medical-grade haptic feedback glove with visible sensor nodes, right index finger glimmering with subdermal thermometer. Weathered face with pronounced laugh lines and age spots, high cheekbones. Wearing faded steel-gray Carhartt work apron over dark underlayers, steel-toed medical clogs, thin brass ring on right hand. Small horizontal scar on right temple. Standing in dimly lit container clinic, cool cyberpunk 2226 medical setting, harsh overhead lighting casting sharp shadows, gritty utilitarian environment. Professional, observant expression, efficient posture, economical movement. Cyberpunk 2200s Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 24.5,
+    "Sub-Saharan African": 21.4,
+    "Hispanic/Latin American": 19.9,
+    "North African": 17.5,
+    "Middle Eastern": 13.0,
+    "East Asian": 3.7
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

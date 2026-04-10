@@ -1,0 +1,146 @@
+{
+  "id": "019d6143a6137eb8ba5c481d300fe9fc",
+  "type": "character",
+  "name": "Layla Balasanyan",
+  "aliases": [
+    "Mama Fix"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Community fixer",
+  "age": 52,
+  "status": "active",
+  "location": "The Shelf, near Kedzie and Division",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "The Burden Clause",
+    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multiethnic Diaspora blend: East Asian (22.7%), Middle Eastern (21.1%), Pacific Islander (21.1%), Hispanic/Latin American (20.0%), and Sub-Saharan African (15.1%). A complex genetic mosaic reflecting the Great Lakes Metropolitan Zone's global mixing — no single heritage dominates.",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Solid, compact frame with broad shoulders and a deliberate heaviness that comes from decades of physical work and street presence. Not soft, not lean — grounded.",
+    "hair_color": "Salt-and-pepper black, with natural silver threading at the temples",
+    "hair_style": "Wrapped in a cream-colored headwrap most days, occasionally worn loose in a close-cropped fade",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with light hazel rings — the effect of age and intensity",
+    "skin_tone": "Medium to medium-deep, with warm golden-olive undertones — a blend of Southeast Asian, Middle Eastern, Pacific Islander, and African pigmentation creating a rich, sun-weathered complexion with subtle warm luminosity",
+    "complexion": "Weathered but well-maintained. Fine lines around the eyes and mouth from years of reading situations and smiling. A small scar bisects her left eyebrow — old, faded. Skin shows the texture of someone who works outdoors and doesn't hide from the sun. High cheekbones with a subtle width reflecting East Asian ancestry; defined jawline with warmth from African and Middle Eastern heritage.",
+    "distinguishing_marks": [
+      "A long, thin scar running from her left temple down toward her jaw — surgical precision, not street violence, possibly from early augmentation removal or medical intervention",
+      "Faded indigo tattoo on her right forearm: a geometric pattern resembling a Ndebele design, roughly 8cm tall, done with hand-pricking ink — community marker, not corporate",
+      "Small burn scar on her left palm, pale and smooth — old thermal injury"
+    ],
+    "visible_augmentations": "None visible. Her augmentations, if any, are subcutaneous or internal — she operates on trust and reputation, not chrome.",
+    "posture_movement": "Moves with deliberate economy. Plants her feet when she stops — grounded stance. Doesn't fidget. Her gaze is steady and evaluative; she watches more than she speaks. Hands stay visible and open, a habit of someone who defuses rather than escalates. Walks with the weight of authority earned, not inherited.",
+    "clothing_style": "Tier 3-4 practical. Favors neutral earth tones: cream, tan, dark brown. Wears a weathered linen jacket over functional underlayers — multiple pockets, reinforced seams. Good boots, well-maintained but clearly worn. A simple silver bangle on her right wrist and a thin leather cord around her neck (religious or protective, intentionally understated). No visible logos or corpo affiliations. Everything chosen for durability and community respect, not status signaling."
+  },
+  "image_prompt": "Layla Balasanyan, 168cm tall, multiethnic woman with rich warm golden-olive skin blending East Asian, Middle Eastern, Pacific Islander, Hispanic, and African heritage. Deep brown eyes with hazel rings, salt-and-pepper short hair in cream headwrap, weathered face with fine lines and faded temple-to-jaw surgical scar. Solid compact build, broad shoulders, grounded posture. Wearing aged linen jacket in tan over functional dark underlayers, well-worn boots. Faded indigo geometric Ndebele tattoo on right forearm, silver bangle on wrist, leather cord necklace. Standing with deliberate stillness in dimly lit GLMZ corridor, neon city glow casting cool/warm contrast. Cyberpunk 2226 aesthetic, trust and earned authority radiating. Watching with steady evaluative gaze, hands visible and open. Calm intensity, street-weathered dignity. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 22.7,
+    "Middle Eastern": 21.1,
+    "Pacific Islander": 21.1,
+    "Hispanic/Latin American": 20.0,
+    "Sub-Saharan African": 15.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

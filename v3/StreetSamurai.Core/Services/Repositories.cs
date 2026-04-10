@@ -12,8 +12,8 @@ namespace StreetSamurai.Core.Services;
 public class CharacterRepository : JsonDirectoryRepository<CharacterData>
 {
     public CharacterRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "characters"), c => c.Name) { AutoMigrate(paths); }
-    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "characters.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
+        : base(Path.Combine(paths.EngineDataDir, "people"), c => c.Name) { AutoMigrate(paths); }
+    private void AutoMigrate(IPathProvider p) { var old = Path.Combine(p.EngineDataDir, "people.json"); if (File.Exists(old)) MigrateFromArrayFile(old); }
 }
 
 public class CorponationRepository : JsonDirectoryRepository<CorponationData>

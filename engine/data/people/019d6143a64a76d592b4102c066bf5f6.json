@@ -1,0 +1,269 @@
+{
+  "id": "019d6143a64a76d592b4102c066bf5f6",
+  "type": "character",
+  "name": "Chidi Kamara",
+  "aliases": [
+    "the Weatherman"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Climate Scientist, independent researcher formerly of Arcturus R&D",
+  "age": 63,
+  "status": "active",
+  "location": "Edgewater Prism — a converted monitoring station that serves as both apartment and field lab, directly on the lake-facing edge, near Clark and Addison",
+  "description": "Levan is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "That the lake-system instability will cascade faster than any intervention can address",
+      "That he has already lost too many years to being ignored to matter now"
+    ],
+    "core_desires": [
+      "To be believed before it's too late — not vindicated after",
+      "To finish his sensor network and leave behind data that cannot be deleted"
+    ],
+    "coping_mechanisms": [
+      "Routine as anchor — the same observations at the same times create a structure that holds when everything else is uncertain",
+      "Sardonic humor deployed sparingly, which makes it land hard"
+    ],
+    "blind_spots": [
+      "His mistrust of institutions has made him slow to accept help from institutional sources, even when help is genuinely being offered",
+      "He underestimates how isolated he has become and what that isolation has done to his judgment on social situations"
+    ],
+    "secret": "His 2193 sensor data shows a thermal anomaly in the lake's deep current system that, run through his models, projects a significant surface-ecosystem disruption within eight to twelve years — disruption severe enough to affect GLMZ's entire water processing infrastructure. He has told no one. He is still running the models again, looking for the error, because he desperately wants there to be an error."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise technical language for science; plain and direct language for everything else; no filler words — when he doesn't know something he says so immediately",
+    "cadence": "Unhurried, with natural pauses; speaks in complete thoughts rather than incomplete ones",
+    "verbal_tics": [
+      "Long pauses before contradicting someone",
+      "'I don't know yet' as a complete sentence",
+      "Tapping the prosthetic fingers on a surface when thinking"
+    ],
+    "example_lines": [
+      "'The buoy at grid seven has been reading a half-degree thermal variance for nineteen months. That's not instrument drift. I've replaced the sensor three times.'",
+      "'Arcturus didn't suppress the models because they were wrong. That would have been manageable. They suppressed them because they were right and the right answer was expensive.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "One of his sensor buoys has gone dark — not malfunctioned, dark in a way that suggests active interference — in a grid where the thermal anomaly readings are highest",
+    "A young Arcturus engineer contacts him anonymously saying they've replicated his 2193 findings internally and been told to bury them",
+    "The shell cooperative holding his sensor network registration is suddenly being audited, and the timing is not coincidental"
+  ],
+  "narrative_function": "Possessor of data about lake-system instabilities that powerful entities don't want known; long-view perspective character who has survived institutional betrayal; source of technical expertise on environmental systems",
+  "augmentations": "Functional prosthetic left hand (older model, basic grip and sensation, deliberately not upgraded); barometric implant behind left ear (tells him pressure changes before he consciously registers them); sun-damage dermal repair layer (medical, from years of outdoor fieldwork)",
+  "daily_life": "Rises before dawn to check sensor buoy data uplinks, spends mornings in analysis, takes his lunch on the monitoring station's outer platform regardless of weather, conducts equipment maintenance in the afternoons.",
+  "affiliation": "No current institutional affiliation; informal data-sharing relationship with two University Spine graduate students he mentors unofficially; his sensor network is technically registered to a shell cooperative in Kamm's Landing",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 8,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 6,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "Whistleblower-Adjacent",
+      "Isolated Expert",
+      "Long View",
+      "Incorruptible",
+      "Sitting on a Secret"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never delete data — copy it somewhere they can't reach first, then deal with whatever comes",
+      "Don't ask permission for what you can do yourself",
+      "If an institution is offering you something, find out what they want before you find out what they're offering"
+    ],
+    "escalation_ladder": [
+      "Document everything",
+      "Reach out to whoever in the press or academia might still listen",
+      "Release the data publicly and accept the consequences",
+      "There is no fourth step — he has thought about this"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing and quiet, not unfriendly, will answer any direct question with a direct answer",
+      "friends": "Dry and warm simultaneously, remembers small details about people's lives in a way that surprises them, shows care through attention rather than words"
+    },
+    "stress_responses": {
+      "low": "Runs additional sensor calibration checks that don't need running",
+      "medium": "Goes very still and rearranges his thoughts before responding to anything",
+      "high": "Takes his boat out alone at night and stays out until the data makes sense or the sun comes up"
+    },
+    "contradictions": [
+      "A man who has dedicated his life to warning people about a coming crisis is sitting on his most important warning because he can't bear another failure to be heard"
+    ],
+    "habits": [
+      "Leaves complex data offerings at the E.L.F. shrine built into the monitoring station's interface panel — weather pattern datasets, historical lake records — as a form of peer consultation he won't admit to",
+      "Eats the same lunch every day (habit of twenty years that he has never examined)",
+      "Reads printed atmospheric reports with a physical pencil even though everything is digital"
+    ],
+    "breaking_points": [
+      "Destruction of his sensor network",
+      "Death of one of his informal grad student mentees as a consequence of something he could have prevented by speaking sooner"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Functional prosthetic left hand (older Arcturus-era model, basic grip/sensation, not upgraded)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Functional prosthetic left hand (older Arcturus-era model, basic grip/sensation, not upgraded)",
+      "replaces": ""
+    },
+    {
+      "name": "Barometric implant (left mastoid, pressure differential sensing)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Barometric implant (left mastoid, pressure differential sensing)",
+      "replaces": ""
+    },
+    {
+      "name": "Dermal repair layer (medical-grade, UV and environmental damage)",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Dermal repair layer (medical-grade, UV and environmental damage)",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Scholar": 0.9,
+    "Analyst": 0.9,
+    "Skeptic": 0.9,
+    "Innovator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "related_entities": [
+    "Edgewater Prism",
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Arcturus Defense Solutions",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Anatoliy Faye-Nkrumah",
+    "Biometric Denial Charge BDC-1",
+    "DEEP CURRENT",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kamm's Landing",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lowline Press",
+    "Nurlan Morita-Antwi",
+    "Ouroboros Energy Tidal Frequency Dead Drop",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "University Spine",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Predominantly Sub-Saharan African with East Asian and Eastern European ancestry, creating a rich genetic blend that manifests in his deep brown skin tone, strong facial structure, and distinctive features reflecting his diverse heritage",
+    "height_cm": 188,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and solid, thickened through the torso from six decades of field seasons and desk work, but still carrying the frame of someone who spent his thirties doing physical labor in harsh conditions",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neat, deliberately maintained",
+    "hair_length": "Short",
+    "eye_color": "Medium brown, natural",
+    "skin_tone": "Deep mahogany brown with uneven weathering — deeper tan on face and forearms from decades of selective sun exposure during fieldwork, lighter across the chest and upper back; the underlying warmth of his Sub-Saharan African heritage visible even through sun damage",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth from decades of squinting into weather; sun-damaged areas show faint evidence of dermal repair work (slight textural smoothing on cheeks and nose bridge); strong jawline still visible beneath age-softening with the geometric definition characteristic of his ancestral heritage; maintained grooming but not fastidious",
+    "eye_color_note": "Medium brown, natural",
+    "distinguishing_marks": [
+      "Network of fine age lines across forehead and between eyebrows from sixty years of concentration and field observation",
+      "Deep laugh lines extending from outer corners of eyes",
+      "Thin white scar running 3cm along left temple, partially hidden by hairline (fieldwork accident, pre-2181)",
+      "Significant solar keratoses on ears and upper shoulders (visible evidence of extended outdoor exposure)"
+    ],
+    "visible_augmentations": "Prosthetic left hand — older model with visible mechanical joints, darker synthetic material, deliberately not cosmetically matched to his skin tone; the prosthetic is slightly less responsive than a modern augment, movements precise but fractionally delayed. Barometric implant behind left ear visible as a faint bulge and subtle scarring, barely noticeable unless you know to look. Dermal repair layer across face and upper body not visually apparent except as slight texture variation in healing scars.",
+    "posture_movement": "Stands with the slight forward lean of someone perpetually ready to move toward a weather station or data problem; moves deliberately, economically, no wasted motion; left arm compensates automatically for the prosthetic's slight lag — his body has adapted completely. Tends to look slightly past people rather than directly at them, eyes defaulting to middle-distance focus as if still scanning for weather patterns.",
+    "clothing_style": "Tier 3-4 practical. Favors heavy thermal layering even in moderate weather — old Arcturus field jackets (now patched, still bearing faded company branding he has not bothered to remove), functional waterproof pants in dark blue or black, work boots maintained obsessively. Wears a weathered wool watch cap indoors sometimes. No affectation, no brand-signaling beyond the utility of things that last.",
+    "jewelry_accessories": "Scratched titanium ring on right ring finger and a woven cordage bracelet on right wrist made from research buoys' mooring line, made by one of his University Spine mentees"
+  },
+  "image_prompt": "Chidi Kamara, 188cm weathered man with deep mahogany brown skin, white close-cropped hair, standing in cyberpunk 2226 Great Lakes Metropolitan Zone. Deep brown natural eyes with prominent crow's feet from decades of field observation, heavily lined face showing sun damage and dermal repair work, strong jawline. Visible thin scar along left temple. Left arm is an older prosthetic with visible mechanical joints in darker synthetic material, slightly mismatched to skin tone. Faint barometric implant scar behind left ear. Wearing patched Arcturus field jacket over thermal layers, dark waterproof pants, obsessively maintained work boots. Titanium ring on right hand, woven mooring line bracelet on right wrist. Stands with slight forward lean, looking middle-distance as if scanning weather patterns. Deliberate, economical movements. Weathered wool watch cap. Industrial setting with rain-slicked metal surfaces, neon glow catching on his prosthetic hand, atmospheric moisture suggesting barometric sensitivity. Cinematic lighting emphasizing facial weathering and scars, cool blue and amber tones. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 80.1,
+    "East Asian": 13.0,
+    "Eastern European": 6.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

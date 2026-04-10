@@ -1,0 +1,332 @@
+{
+  "id": "019d6143a5ab7a6a90044b6010975dfb",
+  "type": "character",
+  "name": "Odina Hernández-Vestergaard-Sigurdsson",
+  "aliases": [
+    "Entropy",
+    "The Machine"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Aerial extraction and rapid transit pilot — getaway pilot",
+  "age": 28,
+  "status": "active",
+  "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Lake Shore and Wacker",
+  "description": "Altan Salazar-Quansah is lean and angular, all sharp edges and visible tension. At 28, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a getaway pilot out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Altan Salazar-Quansah is one of the ones who actually does it.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.11,
+      "ideal": 0.31,
+      "id": 0.46,
+      "shadow": 0.88,
+      "mask": 0.86,
+      "ghost": 0.15
+    },
+    "core_fears": [
+      "Being captured alive — death is preferable to corporate interrogation",
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Becoming obsolete as augmentation technology outpaces their chrome"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "To find the person who burned them and make it educational"
+    ],
+    "coping_mechanisms": [
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
+    ],
+    "blind_spots": [
+      "Assumes their skill set is more transferable than it actually is",
+      "Overestimates their own abilities in situations outside their specialty",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
+    ],
+    "secret": "Altan Salazar-Quansah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
+  },
+  "speech_patterns": {
+    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Uses technical jargon for everything, including emotions",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"Vertical extraction in thirty seconds. Don't be late.\"",
+      "\"I fly things that aren't supposed to fly in places they aren't supposed to go.\"",
+      "\"Airspace regulations are for people who file flight plans. I don't file flight plans.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Altan Salazar-Quansah is offered a contract that would clear all their debts — the target is someone they respect",
+    "Someone is impersonating Altan Salazar-Quansah on jobs, and the impersonator is better at the work than the original",
+    "Altan Salazar-Quansah intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Altan Salazar-Quansah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 10
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 6
+      },
+      "reflexes": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 6
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 8
+      },
+      "willpower": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 5
+      },
+      "technical": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 6,
+        "augmented": 3,
+        "effective": 4
+      },
+      "intimidation": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "deception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 4
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      }
+    },
+    "personality": {
+      "aggression": 0.11,
+      "caution": 0.36,
+      "loyalty": 0.27,
+      "greed": 0.12,
+      "empathy": 0.98
+    },
+    "drives": [
+      "survival",
+      "freedom",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 7,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "network of reliable contacts",
+      "exceptional close-quarters combat"
+    ],
+    "weaknesses": [
+      "overconfidence in specialty areas leading to blind spots",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "poor impulse control in specific triggers"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "getaway pilot",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always has an exit route planned before agreeing to any meeting",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will work with anyone once. Second time requires vouching from someone trusted."
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Counts ammunition obsessively — knows the exact round count at all times"
+    ],
+    "breaking_points": [
+      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cyberears with directional microphones and sound dampening",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "good",
+      "installed_date": "",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
+      "replaces": ""
+    },
+    {
+      "name": "Bioware adrenaline regulator",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Improviser": 0.9,
+    "Risk Taker": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Masquerade",
+    "Pale Harbor Anchorage",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Ringo Corponation Haptic Signature Recorder",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "SynapTech PolyGlot Live Translation Implant",
+    "The Fathom Line",
+    "The Pure Hand",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mixed heritage from Northern Europe (28%), Indigenous Americas (21%), East Asia (17%), Hispanic/Latin America (16%), Eastern Europe (15%), and Sub-Saharan Africa (3%). Genetic blending creates distinctive features: high cheekbones with subtle East Asian influence, warm medium-deep skin tone with golden undertones from Northern European and Indigenous American ancestry, strong angular jawline reflecting Eastern European heritage.",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular with defined musculature from constant physical conditioning. No excess body fat. Shoulders slightly forward from hours in pilot seats. Wiry rather than bulky — built for endurance and precision, not power.",
+    "hair_color": "Dark brown, naturally black with sun-bleached streaks from outdoor exposure",
+    "hair_style": "Cropped short and functional, often disheveled from helmet wear. No vanity investment.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with slight amber undertone in bright light",
+    "skin_tone": "Warm medium-deep brown with golden undertones from the complex blend of Northern European, Indigenous American, East Asian, and Hispanic/Latin American ancestry. Rich in melanin with subtle olive undertones from Eastern European heritage.",
+    "complexion": "High, defined cheekbones with subtle East Asian influence. Angular jawline with slight asymmetry from an old break that healed imperfectly. Eyes set with characteristic depth from mixed Indigenous American and Northern European ancestry. Minimal facial hair — cleanly shaved. Skin has the weathered quality of someone who spends time in open-air cockpits. Fine stress lines around the eyes.",
+    "distinguishing_marks": [
+      "Thin white scar running 3 centimeters along left temple, barely visible unless light catches it — result of early crash",
+      "Burn scarring on right forearm (inner wrist to elbow), mottled and silvered with age — chemical exposure during first solo extraction",
+      "Faint bruising on knuckles, chronic from stress-induced tension and heavy bag work"
+    ],
+    "visible_augmentations": "Cyberears mounted flush against skull behind natural hairline — matte gunmetal finish with barely-visible mesh grilles at the ear canal. Minimal design language, no decorative elements. No visible internal augmentations, though bioware adrenaline regulator is subcutaneous.",
+    "posture_movement": "Sits forward, coiled tension even at rest. Movements are economical and precise — nothing wasted. Eyes constantly scanning, tracking movement and light sources. Hands fidget with small objects (lighter, coin, pilot's controller) when stationary. Walks with long strides, shoulders slightly hunched. Gives the impression of someone always ready to move immediately.",
+    "clothing_style": "Tier 3-4 functional pragmatism. Black or dark gray flight jacket over close-fitting synthetic base layers. Cargo pants with reinforced pockets. Worn boots with good traction and ankle support. No logos or corporate branding — plain, durable, replaceable. A single piece of jewelry: a worn titanium ring on left ring finger, no obvious significance. Clothing is maintained meticulously but shows honest wear. Sleeves usually rolled to show cyberear ports and forearm scarring — announces augmentations without vanity."
+  },
+  "image_prompt": "Odina Hernández-Vestergaard-Sigurdsson, 178cm lean pilot with rich golden-brown skin tone reflecting mixed Northern European, Indigenous American, and East Asian heritage. High defined cheekbones, angular jawline, deep brown eyes with amber undertones. Dark cropped hair, disheveled from helmet wear. Matte gunmetal cyberears flush against skull. Silvered burn scars visible on right inner forearm. Wears black flight jacket over synthetic base layer, cargo pants, worn tactical boots. Titanium ring on left hand. Sits coiled forward in dimly-lit cockpit, hands fidgeting with pilot's controller. Cool blue-green neon light catches temple scar. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. Weathered, intense expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 27.9,
+    "Indigenous American": 21.0,
+    "East Asian": 17.3,
+    "Hispanic/Latin American": 16.0,
+    "Eastern European": 14.5,
+    "Sub-Saharan African": 3.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

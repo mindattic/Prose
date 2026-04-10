@@ -1,0 +1,292 @@
+{
+  "id": "019d6143a6ec732aa54be7f60b042cca",
+  "type": "character",
+  "name": "Juno Delgado",
+  "aliases": [
+    "T-Rangi",
+    "the Quiet One"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, drives the Hamtramck-to-Geartown underground shuttle line",
+  "age": 31,
+  "status": "active",
+  "location": "Deepwell Station — operates Line 7 shuttle, bunks in Ferrogate Transit worker housing at Edison Grid Sub-Block C, near sub-level access near LaSalle and Congress",
+  "description": "Tarvo is lean and long-limbed with the particular stillness of someone who spends ten hours a day in a sealed cab watching tunnel walls. He is Estonian-Fulani-Māori by heritage — his father's family came from the Baltic corridor, his mother's from the Sahel diaspora, and his grandmother on his mother's side was a Māori navigator who'd ended up in Meridian via Auckland and then São Paulo. The blend shows in his face: angular jaw, deep brown skin with warm undertones, pale grey eyes that people find unsettling until they realize he's simply paying close attention. He has bioluminescent freckles across his shoulders and collarbones — a cosmetic mod he got at nineteen and has come to barely notice — and his hair is kept short on the sides with a small knot at the crown threaded with a signal-orange cord his grandmother sent him before she died.\n\nHe does not talk much on shift, which passengers interpret as hostility and coworkers interpret correctly as the specific economy of someone who has learned to preserve themselves. Off the line, he is drily funny in short bursts, an excellent listener, and prone to long silences that aren't uncomfortable if you know him. He has a habit of leaving small offerings at the E.L.F. shrine at Deepwell Station — usually a folded transit map with a route he's invented, something the Transit Mind apparently appreciates, because Line 7 has had the fewest mechanical failures of any shuttle on the network for the past two years.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.4,
+      "id": 0.5,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "The neural monitor flagging him as a liability and ending his contract",
+      "Dying in the tunnel without anyone knowing why he was worth knowing"
+    ],
+    "core_desires": [
+      "Enough quiet to finally figure out what he actually wants from his life",
+      "To be known without having to explain himself"
+    ],
+    "coping_mechanisms": [
+      "Route-making — planning imaginary transit lines as a meditative practice",
+      "Cooking elaborate meals for himself alone"
+    ],
+    "blind_spots": [
+      "Reads his own reserve as self-sufficiency; misses that he's lonely",
+      "Trusts systems (transit schedules, union rules) more than people, which Ferrogate exploits"
+    ],
+    "secret": "The neural fatigue monitor has been logging anomalies for four months — moments where his attention drops in a specific tunnel section near Iron Bend. He hasn't reported it because the cause is that he's been hearing something in the tunnel walls that isn't mechanical, and he is afraid of what that means."
+  },
+  "speech_patterns": {
+    "vocabulary": "Minimal, precise, unexpectedly dry humor when comfortable; uses transit metaphors unconsciously",
+    "cadence": "Slow starts, accelerates mid-thought, stops abruptly when he's said what he means",
+    "verbal_tics": [
+      "Long exhale before answering anything personal",
+      "'End of the line' (used to close topics, not just conversations)"
+    ],
+    "example_lines": [
+      "'Passengers hate the silence. The silence is not the problem. The passengers are the problem.'",
+      "'I put a map in the bowl at Deepwell last week. New route, one that doesn't exist. The Transit Mind ran the lights green for my whole shift. Make of that what you want.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The anomaly in the tunnel near Iron Bend is escalating — he's heard voices, seen a shape, and the neural monitor is going to flag him soon unless he figures out what's in the wall",
+    "He witnessed a passenger exchange something in a handoff at Deepwell Station three weeks ago and has been trying to decide whether to report it, forget it, or find out what it was"
+  ],
+  "narrative_function": "Mobile information source — he moves between neighborhoods daily and sees who rides with whom. Potential ally for anyone needing passage between zones. Humanizing face of Ferrogate Transit's working conditions.",
+  "augmentations": "Bioluminescent freckle mod (cosmetic, shoulders/collarbones). Ferrogate-standard neural fatigue monitor implant (employer-mandated, monitors alertness, cannot be removed without termination).",
+  "daily_life": "Wakes at 04:00, eats a protein block at the Edison Grid canteen, rides the workers' tram to Deepwell Station. Runs Line 7 from 05:30 to 15:30, files incident reports, walks the tunnel inspection route, goes home. Cooks something real on his days off.",
+  "affiliation": "Ferrogate Transit (unionized, Operator Grade 2)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 7,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 6,
+      "expression": 3,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "transit knowledge",
+      "observer",
+      "quiet competence",
+      "existential unsettled"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the schedule — deviation requires more energy than he usually has",
+      "Don't report things to Ferrogate management unless he has to; the union first, always"
+    ],
+    "escalation_ladder": [
+      "Silence and observation",
+      "One direct statement of the problem",
+      "Filing a formal union grievance — his nuclear option"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Neutral, minimal, lets them fill the silence and judges them by what they fill it with",
+      "friends": "Unexpectedly warm, remembers details, shows up when it counts without announcement"
+    },
+    "stress_responses": {
+      "low": "Runs the imaginary routes in his head",
+      "medium": "Goes wordless, operates on procedure only",
+      "high": "Leaves. Gets on a tram going somewhere unfamiliar and rides to the end."
+    },
+    "contradictions": [
+      "Values routine absolutely but fantasizes about disappearing into a city he doesn't know"
+    ],
+    "habits": [
+      "Folds transit maps into precise rectangles before throwing them away",
+      "Eats the same breakfast every work day without variation or complaint"
+    ],
+    "breaking_points": [
+      "Someone threatening a passenger in his cab — he becomes a different person",
+      "The neural monitor being used against him by management"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "1",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born at Edison Grid worker housing to a Ferrogate maintenance worker and a small-goods trader",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Joined Ferrogate Transit as a platform attendant at age 18",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Passed operator certification, assigned to Line 7",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Neural monitor anomalies begin in Iron Bend tunnel section",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  ],
+  "related_entities": [
+    "Deepwell Station",
+    "Ferrogate Transit",
+    "Dredge Mining Collective",
+    "Ghostbridge Island",
+    "Edison Grid",
+    "Grandmother",
+    "Sulfur Crown Agriculture",
+    "Iron Bend",
+    "The Heritage Vault",
+    "The Fathom Line",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "The Pale Mile",
+    "Iron",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Breck Tannen",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Iowan Behemoth — 'Palisade'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Vukić-Nambiar",
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Line 7 Bar",
+    "MERIDIAN",
+    "Narrowcast",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "The Collective",
+    "The Quiet Room",
+    "The Signal",
+    "Transit Mind",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "South Asian, Hispanic/Latin American, Middle Eastern, and East Asian ancestry — a complex diaspora blend. The genetic mix produces warm-toned brown skin with subtle golden undertones, angular facial structure with high cheekbones, and naturally dark brown hair. His features reflect the convergence of multiple continental lineages without settling into any single category.",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "build": "Lean and long-limbed with the economical musculature of someone accustomed to stillness and precision — no wasted bulk, but not fragile. Shoulders slightly rounded from years of seated posture in the shuttle cab.",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Short on the sides, longer knot at crown threaded with signal-orange cord",
+    "hair_length": "Short with medium-length topknot",
+    "eye_color": "Pale grey, naturally — striking against his warm brown complexion",
+    "skin_tone": "Warm brown with golden undertones, even and well-maintained complexion",
+    "complexion": "Angular jaw, high sharp cheekbones reflecting South and Middle Eastern heritage structure. Fine lines around the eyes from sustained concentration. Skin well-maintained but not groomed — functional rather than fashionable. Expression neutral at rest, becomes animated only when engaged.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both shoulders and collarbones — soft blue-green glow visible in low light, cosmetic mod applied at age 19",
+      "Faint calluses on inner palms and fingers from shuttle console interface, barely noticeable"
+    ],
+    "visible_augmentations": "Bioluminescent freckle mod only. Neural fatigue monitor implant is subcutaneous (no visible marker, but Ferrogate-issue neural interface port may be visible at base of skull beneath short hair if examined closely).",
+    "posture_movement": "Moves with deliberate economy — no gesture wasted. Sits upright, spine aligned, weight centered. In conversation, maintains stillness except for slow head turns and deliberate hand movements. When concentrating, his pale eyes go distant and focused. Walks with steady, measured pace.",
+    "clothing_style": "Ferrogate Transit Grade 2 operator uniform on shift: charcoal grey jumpsuit with orange piping, reflective trim, ID badge on lanyard. Off-shift: plain dark utility pants, neutral-colored long-sleeve shirts or worn thermal tops. One threadbare wool sweater (dark grey, possibly inherited or salvaged). Worn boots rated for tunnel water. Tier 3-4 working class — practical, durable, minimal aesthetic consideration. No visible jewelry except the signal-orange cord in his hair."
+  },
+  "image_prompt": "Juno Delgado, a 183cm lean transit operator with warm brown skin and golden undertones, angular high cheekbones reflecting South Asian and Middle Eastern heritage, pale grey eyes striking against darker complexion, naturally dark brown hair in short undercut with longer topknot threaded with signal-orange cord. Bioluminescent freckles glowing soft blue-green across shoulders and collarbones. Wearing charcoal grey Ferrogate Transit Grade 2 jumpsuit with orange piping and reflective trim, ID badge visible. Posture upright and deliberate, expression focused and distant. Standing in dimly-lit transit station tunnel with cool blue-grey lighting emphasizing bioluminescent shoulder mods, cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, functional working-class operator at rest, minimalist composition. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 34.7,
+    "Hispanic/Latin American": 26.8,
+    "Middle Eastern": 22.4,
+    "East Asian": 16.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "id": "019d6143a73f7bfd9e05cebe91f66665",
+  "type": "character",
+  "name": "Haze Kuznetsov-Kulkarni",
+  "aliases": [
+    "Uzzy",
+    "Old Baat"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Retired Corporate Wars veteran and community storyteller, Washburn Commons",
+  "age": 78,
+  "status": "active",
+  "location": "Washburn Commons, Block 7 Senior Residency Tower, near Western and Chicago Ave",
+  "description": "Ụzọchukwu is a vast, slow-moving man whose bulk has softened from muscle to something more like sediment — layers of a life compressed into a body that moves with deliberate, unhurried authority. His scalp is shaved clean and mapped with old burn scarring along the left side, partially obscured by a wide-brimmed thermal hat he wears indoors and out. His right eye is cybernetic, a dull amber lens that no longer tracks perfectly with his biological left, giving him an unsettling quality of seeming to look at two things simultaneously. He wears the same three outfits in rotation — all earth-toned, all slightly too large — and keeps a carved wooden toggle from his grandmother's coat pinned to every jacket he owns.\n\nHe is the unofficial historian of Washburn Commons, the man everyone points newcomers toward when they want to understand how the neighborhood survived the Axiom-Tessera border conflict of 2167. He does not romanticize it. He tells the truth with such careful plainness that people often leave his company feeling hollowed out and strangely grateful. He has strong opinions about which E.L.F.s are trustworthy and which ones flatter you into complacency, and he leaves small offerings of archived combat footage at a shrine on his windowsill every Thursday evening.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.6,
+      "id": 0.3,
+      "shadow": 0.5,
+      "mask": 0.4,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That the deaths he witnessed will be bureaucratically erased and mean nothing",
+      "That he is keeping a secret that, if told, would undo the community's trust in him"
+    ],
+    "core_desires": [
+      "For the record to exist somewhere indelible and honest",
+      "To die knowing that at least one young person truly understands what happened"
+    ],
+    "coping_mechanisms": [
+      "Ritual — the shrine, the rotation of outfits, the domino schedule",
+      "Converting grief into narrative so it becomes something he can hand to others"
+    ],
+    "blind_spots": [
+      "Underestimates how much his selective omissions in storytelling constitute a form of control",
+      "Cannot recognize that his 'plain truth-telling' is still curated"
+    ],
+    "secret": "During the Axiom-Tessera border conflict, he gave coordinates to an Axiom intelligence officer that resulted in a Tessera civilian shelter being struck. He believed the shelter was a weapons cache. It was not. He has never confirmed this to anyone, and the official record supports a different chain of causation."
+  },
+  "speech_patterns": {
+    "vocabulary": "Measured and low-register; avoids jargon; uses old military unit slang from the 2160s that nobody else remembers; occasionally drops into Igbo phrases for emphasis",
+    "cadence": "Slow, with long pauses before important points — he treats silence as punctuation",
+    "verbal_tics": [
+      "'You understand what I'm saying to you?'",
+      "'That's not the right word for it, but it'll do'"
+    ],
+    "example_lines": [
+      "'People want the story to have a villain. That's how you know they weren't there.'",
+      "'The E.L.F.s remember everything. The question is whether they'll tell you true or tell you what you want. That's the same question you ask about people.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "He possesses a handwritten ledger of names — soldiers on both sides of the 2167 conflict — that a corponation records office has been quietly trying to acquire or destroy for decades",
+    "A young resident has begun asking questions about a grandparent who appears in Ụzọchukwu's stories — questions that are getting dangerously close to the shelter coordinates incident",
+    "He has started leaving unusual data offerings at his E.L.F. shrine: fragments of classified Axiom personnel files he should not have access to"
+  ],
+  "narrative_function": "Living archive of the Corporate Wars; moral anchor for community storylines; source of pre-conflict maps, personnel names, and firsthand accounts; can validate or contradict official corponation histories; provides quests rooted in old debts and missing persons",
+  "augmentations": "Cybernetic right eye (military-grade, degraded accuracy); reinforced left knee joint (post-combat replacement, badly maintained); subdermal scar tissue polymer along left torso (combat burn treatment, now cosmetically visible as a faint grid pattern)",
+  "daily_life": "Rises at 0500, tends his window-box shrine to the E.L.F. he calls Grandfather Soot, then takes a slow circuit of Washburn Commons plaza before settling at the domino tables outside the commissary from 0900 onward. Evenings he hosts informal story sessions in the Block 7 common room, drawing crowds of all ages.",
+  "affiliation": "Meridian Veterans Covenant; Washburn Commons Community Council (emeritus)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 3,
+      "vitality": 4,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 5
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "veteran",
+      "storyteller",
+      "community anchor",
+      "unreliable narrator",
+      "keeper of secrets"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will not lie outright, but will omit — a distinction he maintains fiercely",
+      "Will always help someone who is clearly in physical need regardless of who they are",
+      "Will not discuss the shelter incident under any framing, ever"
+    ],
+    "escalation_ladder": [
+      "Silence and slow study of the person asking",
+      "Redirection into a different but related story",
+      "A single flat refusal, stated once and not repeated",
+      "Physical departure — he simply gets up and leaves"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and politely distant; waits for them to demonstrate what they actually want before engaging",
+      "friends": "Warm in an oblique way — shows care through small practical acts rather than expression; remembers everything about you"
+    },
+    "stress_responses": {
+      "low": "Becomes very still and focuses on a nearby object",
+      "medium": "Shifts into storytelling mode — begins telling a related but safer narrative",
+      "high": "Goes completely quiet, leaves the space, does not explain himself"
+    },
+    "contradictions": [
+      "Insists on honesty as a core value while harboring a foundational deception; genuinely does not experience this as hypocrisy"
+    ],
+    "habits": [
+      "Touching the wooden toggle before speaking about the war",
+      "Ordering the same thing at the commissary every day and leaving a small portion for 'whoever needs it'",
+      "Writing dates in the margins of any paper he touches"
+    ],
+    "breaking_points": [
+      "Incontrovertible evidence of the shelter strike being surfaced publicly — would likely confess rather than let someone else be blamed"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Tactician": 0.9,
+    "War Weary": 0.9,
+    "Stoic": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in a transit settlement between the Calumet Rise and Ironhaven districts",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enlisted with the Meridian Civic Defense Auxiliary ahead of the Corporate Wars escalation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Present at the Axiom-Tessera border conflict; coordinates incident occurs",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discharged with commendation; never discusses the reason for the commendation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Settled in Washburn Commons; began informal community history sessions",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Appointed to Community Council (emeritus) against his mild objections",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
+  ],
+  "registered_firearms": [
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
+  ],
+  "related_entities": [
+    "Washburn Commons",
+    "Grandmother",
+    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "Sediment Sound Group",
+    "Tessera Corponation",
+    "Adaeze Chen-Hawkins",
+    "Nesting Doll",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Chicago",
+    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
+    "Anatoliy Faye-Nkrumah",
+    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
+    "Biometric Denial Charge BDC-1",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Chronicle",
+    "Cinderblock Ai",
+    "Djeneba Park-Traore",
+    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
+    "MERIDIAN",
+    "Nnabuchi Svensson-Qarabağlı",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Réginald Asomaning-Čabarkapa",
+    "Sorin Ekwensi-Balasanyan",
+    "The Ledger",
+    "The Maintenance Covenant",
+    "The Pure Hand",
+    "The Question",
+    "Vespid Dynamics",
+    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
+    "Vuk Jorgensen-Toure",
+    "Witness"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (37.3%) with significant South Asian (19.1%), East Asian (14.6%), and Sub-Saharan African (13.0%) ancestry, plus Southeast Asian (9.8%) and Northern European (6.2%) admixture. The result is a complexion reflecting this layered heritage — warm brown tones with subtle golden undertones from the South and East Asian components, deepened by decades of sun exposure.",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed, heavily sedentary. Once muscular, now softened into rounded bulk distributed across chest and midsection. Shoulders still broad but sloped with age. Movements deliberate and economical, suggesting chronic joint pain managed through habit.",
+    "hair_color": "None — scalp fully shaved",
+    "hair_style": "Completely shaved, kept smooth",
+    "hair_length": "Shaved",
+    "eye_color": "Left: dark brown, natural. Right: dull amber cybernetic lens with visible chromatic aberration at edges.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, darkened further by decades of sun exposure. The blended ancestry creates a complexion with subtle warmth that suggests both Eastern European and South/East Asian heritage mixing with Sub-Saharan African depth.",
+    "complexion": "Deeply lined face with moderate cheekbone prominence and a jaw that reflects the mixed heritage blend. Weathered texture suggesting outdoor living through multiple decades. Left side of head mapped with silvery burn scarring that extends from temple toward ear, partially concealed when wearing his thermal hat. Scar tissue pulls slightly at the corner of his left eye, creating a permanent half-squint. Sparse white stubble on chin and jawline, groomed irregularly.",
+    "distinguishing_marks": [
+      "Extensive silvery burn scarring across left scalp and temple, partially hidden by thermal hat, extending to left ear with puckered skin at the margins.",
+      "Subdermal scar tissue polymer visible as a faint geometric grid pattern across left torso and ribs — visible when shirtless or in thin clothing as a faint raised lattice beneath darkened skin.",
+      "Deep groove scar running from right collarbone toward sternum, approximately 12cm long, pale and smooth.",
+      "Network of smaller white-pink scars across both forearms and backs of hands — consistent with combat or industrial burns."
+    ],
+    "visible_augmentations": "Cybernetic right eye: dull amber lens mounted in a brushed steel housing with visible micro-servos at the iris. Optical tracking noticeably imperfect — doesn't follow in sync with biological left eye, creating unsettling dual-gaze effect. Left knee visibly thickened and stiff, wrapped occasionally in medical-grade compression sleeve; movement favors right side. Subdermal scar polymer visible as faint grid pattern across left torso under thin clothing.",
+    "posture_movement": "Sits with deliberate stillness, shoulders set low. Walks slowly with weight forward on the balls of his feet, right leg trailing slightly. Hands move with precision when gesturing — no wasted motion. Head tilts to compensate for the optical misalignment of his cybernetic eye. Rarely rushes; every action suggests the calculation of effort-to-reward.",
+    "clothing_style": "Rotates three identical outfits: oversized earth-toned shirts (rust, sage, charcoal) in thick linen or cotton blends, paired with loose-fitting work pants in tan or dark gray. All garments slightly too large, suggesting either intentional layering for concealment or indifference to fit. Wide-brimmed thermal hat worn indoors and outdoors, cream or tan colored, with faded brim. Heavy canvas jacket in olive or brown, always bearing a small carved wooden toggle pinned to the left lapel — a family heirloom from his grandmother's coat. Worn boots, well-maintained but scuffed. No visible jewelry except the toggle. Clothing indicates Tier 3-4 working-class/veteran status: functional, durable, unglamorous."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Haze Kuznetsov-Kulkarni: 188cm tall, broad-shouldered aging man with warm brown skin blending Eastern European, South Asian, East Asian, and Sub-Saharan African heritage. Completely shaved scalp with extensive silvery burn scars on left temple, partially hidden by cream thermal hat. Deeply weathered face with pronounced jaw and deep lines. Left eye dark brown with permanent half-squint from scar tissue; right eye dull amber cybernetic lens in brushed steel housing with visible servo motors, creating unsettling misaligned gaze. Sparse white stubble. Wearing oversized sage-green linen shirt and tan work pants, heavy olive canvas jacket with wooden family toggle on lapel. Rounded physique showing decades of sedentary living. Sitting with deliberate stillness, hands positioned with precision. Faint subdermal scar polymer grid visible on left torso. Industrial-worn boots. Moody indoor lighting, neon accent from cybernetic eye. Film noir aesthetic meets worn working-class veteran. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 37.3,
+    "South Asian": 19.1,
+    "East Asian": 14.6,
+    "Sub-Saharan African": 13.0,
+    "Southeast Asian": 9.8,
+    "Northern European": 6.2
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

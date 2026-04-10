@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a7047bbdbb907bda5fd11434",
+  "type": "character",
+  "name": "Renata Sepúlveda",
+  "aliases": [
+    "Scratch",
+    "T-V",
+    "The Kid"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Graffiti artist, propaganda runner, and reluctant courier for competing factions",
+  "age": 19,
+  "status": "active",
+  "location": "Old Harbor, near Wacker and State",
+  "description": "Tomás is a small, wiry Mexican-Dutch young man who moves through Old Harbor's infrastructure with the practiced fluency of someone who has been climbing, ducking, and sprinting these specific streets since he was eight years old. He is not conventionally remarkable to look at—medium brown skin, dark eyes that shift between alert and distant in a way that unsettles people who notice it, hair that has been various colors and is currently a faded copper-orange growing out at the roots. His hands are perpetually stained with pigment compounds in colors that shift weekly, and his forearms carry a constellation of small scars from wire, glass, and one memorable encounter with a security drone's retractable blade that he shows people with more pride than the injury warrants.\n\nHe is one of the most technically accomplished aerosol and projection artists in Old Harbor, which is a neighborhood that takes that distinction seriously. His work appears on infrastructure walls, drainage tunnels, the underside of elevated transit lines, and twice on the exterior of a building whose owners have never been able to figure out how he accessed the surface. His style is immediately recognizable—dense, layered imagery that reads as pure aesthetic chaos from a distance and resolves, up close, into specific political content: faces of disappeared people, corporate liability data encoded in patterns, maps of surveillance dead zones that shift as the surveillance does. He doesn't sign his work. Everyone knows it's his.\n\nWhat complicates his life is that his courier skills—he can move packages through Old Harbor without electronic trace, using a mental map of the neighborhood's blind spots that he built while scouting locations—have attracted the attention of multiple factions who find his services useful and who have not been fully honest with each other about retaining him. He is currently working, with varying degrees of awareness of the conflict of interest, for three separate organizations. He is nineteen. He is beginning to understand this situation is not sustainable and has not yet figured out what to do about it instead.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.75,
+      "id": 0.8,
+      "shadow": 0.4,
+      "mask": 0.55,
+      "ghost": 0.35
+    },
+    "core_fears": [
+      "Being made to choose a side and losing whatever neutrality allows him to say true things about all of them",
+      "That his art is being used as propaganda for people he doesn't fully believe in",
+      "Disappearing—not dying, but being made to not have existed, the way his older brother was removed from records after his arrest",
+      "Becoming someone who stops noticing things because noticing is too expensive"
+    ],
+    "core_desires": [
+      "To make something that can't be co-opted or commodified or used",
+      "To find his brother, or at minimum to find out what actually happened",
+      "To be trusted by someone who understands what they're trusting him with",
+      "Enough stability to sleep in the same place for a month straight"
+    ],
+    "coping_mechanisms": [
+      "Making art as processing—he works through problems spatially and visually rather than verbally",
+      "Hyperkinetic social performance (The Kid persona) that keeps people entertained and at a consistent emotional distance",
+      "Obsessive knowledge of his physical environment as a substitute for psychological security",
+      "Taking on more jobs than he can manage, which keeps him too busy to sit with difficult feelings"
+    ],
+    "blind_spots": [
+      "Reads space and infrastructure brilliantly; reads people poorly, particularly people who are performing sincerity",
+      "His belief in his own neutrality is more important to him than its accuracy—he is already more entangled than he admits",
+      "Conflates visibility (his art is seen) with safety (being seen doesn't protect you)",
+      "Has not processed his brother's disappearance at all; has routed all related energy into work"
+    ],
+    "secret": "The surveillance dead zones he encodes in his murals are not just information for the neighborhood—he has been systematically updating them for one of his faction contacts, believing it to be mutual aid work. He recently learned that contact has been selling the updated maps to a security contractor. He has not yet acted on this information because acting on it means acknowledging he was used."
+  },
+  "speech_patterns": {
+    "vocabulary": "Dense with Old Harbor slang and art-community jargon; code-switches rapidly; uses spatial and color-based metaphors for emotional states; vocabulary expands noticeably when he's talking about something he genuinely cares about",
+    "cadence": "Fast and elliptical in casual mode, dropping sentence subjects and connective tissue; slows significantly and becomes more complete when explaining something important; has a habit of starting sentences over when he finds a better angle mid-thought",
+    "verbal_tics": [
+      "Says 'nah, wait' when restarting a thought",
+      "Uses 'you know what I'm saying' as punctuation rather than a genuine question",
+      "Refers to quality work (his own or others') as 'loud'",
+      "Goes quiet for exactly three seconds before saying something that matters"
+    ],
+    "example_lines": [
+      "'Nah, wait—the thing about that wall is, it's not about the wall, you know what I'm saying? It's about what people's eyes do when they think they're not looking at anything.'",
+      "'Everybody wants a loud thing that says a quiet truth. Nobody wants a quiet thing that says a loud truth. I only know how to do the second one.'",
+      "'I know where the holes are. In the coverage. In the—nah, wait. In the city. I just. I know where you can stand and be nobody for a minute. I can show you.'",
+      "[three seconds of silence] 'My brother's name was Dario. I want you to remember that I told you his name.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Imara Solís-Bekele",
+      "type": "Informal care relationship",
+      "description": "Imara has patched Tomás up three times without billing him; he painted the circuit-board-halo Virgin in her waiting room. They don't talk much but he checks in when he's in her part of the Shelf.",
+      "emotional_core": "One of the few relationships in his life that is not complicated by factional interest; he values it without fully understanding why",
+      "story_tension": "Imara knows about at least one of his faction contacts and has been deciding whether to warn him; the conversation keeps not happening"
+    },
+    {
+      "name": "Dae-jung Seo",
+      "type": "Ambiguous mentorship with concerning undertones",
+      "description": "One of his three faction contacts; the one he trusts most and the one who is selling his surveillance maps. Tomás genuinely admires Dae-jung's apparent commitment to the neighborhood.",
+      "emotional_core": "Trust that is about to be destroyed; Tomás has been looking for a trustworthy older figure since his brother disappeared and has invested that need here",
+      "story_tension": "When Tomás confirms the betrayal, the question is not just what he does about the maps but what he does about needing people"
+    },
+    {
+      "name": "Dario Arriaga (brother, missing)",
+      "type": "Absent formative relationship",
+      "description": "Dario was twenty-three when he was arrested for circuit-hacking four years ago; his name was removed from public records within six months. Tomás has found three people who remember him and none who know where he is.",
+      "emotional_core": "Grief that hasn't been allowed to be grief; the organizing wound of Tomás's life",
+      "story_tension": "Tomás has recently found what may be Dario's handwriting on a wall in a part of the Circuit he had no reason to be"
+    }
+  ],
+  "story_hooks": [
+    "One of his faction clients asks him to paint over a specific mural in Old Harbor—a mural that is not his, and that he recognizes as containing encoded information he can't quite read",
+    "The handwriting in the Circuit leads to a location where someone has been living rough; there are signs of recent departure and a data chip that responds to Tomás's biometrics",
+    "A journalist offers to document and publish his work with full attribution; the offer is genuine but the journalist is connected to interests that would benefit from having his face and name attached to the surveillance mapping",
+    "Two of his three faction contacts independently ask him to deliver the same package to different destinations on the same night, and he realizes the package is the same job being run through him as a test",
+    "His most recent mural is attributed to a different artist in a Core-adjacent culture publication—the attribution is wrong but the 'artist' named is someone with connections to the security contractor buying his maps"
+  ],
+  "narrative_function": "Ground-level witness and embodiment of the city's overlooked; Tomás represents the way systems extract value from people who are trying to do something real, and his arc asks whether integrity is possible when every resource you have is also a tool someone else wants to use",
+  "augmentations": "No corporate or licensed augmentations,DIY pigment-mixing implant in right palm: a small reservoir and mixing chamber that allows color-matching and compound testing; built by a Shelf tinkerer from salvaged cosmetic-industry components, technically an augmentation but not recognized as one by any registry,Faint bioluminescent ink traces on his forearms from a projection-art experiment that partially incorporated itself into his skin; not intentional, not removable, occasionally glows faintly in specific light conditions",
+  "daily_life": "Sleeps in rotating locations—three or four spots in Old Harbor he cycles between, never more than two consecutive nights in the same place. Mornings are for scouting: he walks, observes, notes changes in surveillance coverage and infrastructure access. Afternoons are for work, legitimate and otherwise; courier jobs run on short notice and he keeps himself available. Nights are for making things. He eats street food when he remembers, which is not as often as it should be. He has a battered sketchbook he's kept for four years that he would do significant violence to protect.",
+  "affiliation": "Nominally unaffiliated; practically entangled with three separate Old Harbor-to-Circuit faction networks he has not named to each other; has community loyalty to Old Harbor as a place rather than to any organizational structure within it",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 6,
+      "willpower": 5,
+      "creativity": 10,
+      "spatial": 9
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 5,
+      "expression": 8,
+      "integrity": 6
+    },
+    "personality": {
+      "openness_conviction": 8,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 5,
+      "transparency_guardedness": 5
+    },
+    "drives": [
+      "Artistic truth",
+      "Finding Dario",
+      "Stability"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 4,
+        "response": "Takes on more jobs than he can manage; keeps too busy to sit with difficult feelings"
+      },
+      "moral": 7,
+      "trust": 6,
+      "desperation": 6
+    },
+    "strengths": [
+      "Creativity",
+      "Bravery",
+      "Curiosity",
+      "Perspective",
+      "Appreciation of beauty"
+    ],
+    "weaknesses": [
+      "Prudence",
+      "Self-regulation",
+      "Judgment",
+      "Forgiveness",
+      "Teamwork"
+    ],
+    "tags": [
+      "graffiti-artist",
+      "courier",
+      "triple-agent",
+      "old-harbor",
+      "surveillance-mapper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Make art that says true things regardless of who commissions it",
+      "Never sign work — let the style speak",
+      "Maintain mental maps of surveillance dead zones and update them constantly",
+      "Take on more work than manageable rather than sit with difficult feelings",
+      "Never sleep in the same location more than two consecutive nights",
+      "Protect the sketchbook with significant violence if necessary",
+      "Say nah wait when restarting a thought rather than committing to a bad angle"
+    ],
+    "escalation_ladder": [
+      "Hyperkinetic social performance — The Kid persona keeps people entertained and at distance",
+      "Three seconds of silence before saying something that matters",
+      "Physical evasion through infrastructure knowledge — disappears into blind spots",
+      "Direct confrontation only when cornered, using environmental advantage",
+      "Burns a faction relationship to protect his art or his brother information"
+    ],
+    "interpersonal_modes": {
+      "imara_solis_bekele": "Uncomplicated care — one of few relationships without factional interest",
+      "dae_jung_seo": "Trust about to be destroyed; invested the need for a trustworthy older figure here",
+      "dario": "Grief that has not been allowed to be grief; the organizing wound of his life",
+      "faction_contacts": "Professional usefulness masking growing awareness of entanglement",
+      "strangers": "Fast, elliptical, dropping sentence subjects — The Kid at full performance"
+    },
+    "stress_responses": {
+      "low": "Scouts new locations; walks, observes, notes changes in surveillance coverage",
+      "medium": "Art output increases — works through problems spatially and visually",
+      "high": "Takes on even more courier jobs; sleep and eating become irregular",
+      "critical": "Goes quiet, finds a wall, and makes something that says what he cannot"
+    },
+    "contradictions": [
+      "Believes in his own neutrality more than its accuracy — already more entangled than he admits",
+      "Conflates visibility through art with safety, when being seen does not protect you",
+      "Has routed all grief about Dario into work without processing any of it"
+    ],
+    "habits": [
+      "Rotates between three or four sleeping spots in Old Harbor",
+      "Morning scouting walks to note surveillance and infrastructure changes",
+      "Refers to quality work as loud",
+      "Goes quiet for exactly three seconds before saying something important",
+      "Eats street food when he remembers, which is not often enough"
+    ],
+    "breaking_points": [
+      "Confirming that Dae-jung sold his surveillance maps to a security contractor",
+      "Finding definitive evidence of what happened to Dario",
+      "Being forced to choose one faction and lose the others",
+      "His art being attributed to someone connected to those exploiting his work"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Sentinel": 0.9,
+    "Pragmatist": 0.9,
+    "Charmer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "related_entities": [
+    "The Circuit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Stratum",
+    "Ringo DV-4 'Courier'",
+    "Copper",
+    "The Pure Hand",
+    "Gravimetric Collapse Charge GCC-9",
+    "Glass",
+    "Axonal Stretch Resonance Lance",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Davi Ousseini-Brătianu",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "Iowan Behemoth — 'Palisade'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Old Harbor",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Slagworks Industrial",
+    "Tshiamo Vukić-Arellano",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (27.5%), South Asian (22.1%), Eastern European (18.5%), Sub-Saharan African (17.7%), East Asian (12.8%), Northern European (1.4%). The combination produces warm-toned brown skin with subtle golden undertones from South Asian ancestry, sharp angular features reflecting Eastern European genetics, and the warm undertone depth from Sub-Saharan and Hispanic heritage. Eye shape shows gentle East Asian influence; bone structure is distinctly varied—a product of true global mixing.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean, all fast-twitch muscle and minimal fat—built for climbing and sustained movement rather than strength. Chest narrow, shoulders compact, limbs long relative to torso. The build of someone who has spent eleven years navigating vertical infrastructure.",
+    "hair_color": "Faded copper-orange with dark brown roots showing approximately 3cm of growth",
+    "hair_style": "Medium length, deliberately unkempt, often pushed back or tied with wire or fabric scraps; shows signs of recent home-dye work with uneven saturation",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, nearly black, with a quality of constant calculation that makes eye contact feel tactical rather than social",
+    "skin_tone": "Warm medium brown with golden undertones—the result of South Asian, Hispanic, and Sub-Saharan heritage creating a rich, warm complexion. Lighter on inner wrists and underarms from sun exposure patterns, revealing the deeper baseline undertone.",
+    "complexion": "Sharp cheekbones and defined jaw reflecting Eastern European ancestry, balanced by the slightly rounded fullness in cheeks from South and East Asian heritage. Moderately prominent nose with subtle bridge width from the genetic mix. Skin condition varies by week—generally clear but with occasional irritation from pigment exposure and inconsistent sleep. Faint freckling across shoulders and upper back from the sub-Saharan and Latin heritage. Perpetually tired expression around the eyes.",
+    "distinguishing_marks": [
+      "Constellation of small white scars across both inner forearms from wire cuts, glass shards, and drone blade contact—arranged in no particular pattern, oldest approximately 4 years, newest within 6 months.",
+      "Faint bioluminescent ink traces running in branching patterns from wrist to elbow on both forearms; visible primarily in darkness or under specific light wavelengths as faint cyan/green luminescence; not tattooed but incorporated into dermal layer.",
+      "A thin, pale scar approximately 8cm long on his right hip from a childhood fall during early climbing expeditions; barely visible except under direct light.",
+      "Chronic pigment staining under fingernails and in creases of right palm where DIY mixing implant is housed; colors change weekly—currently yellow and deep indigo from recent work."
+    ],
+    "visible_augmentations": "Right palm displays a small, barely-noticeable subcutaneous bulge at the base of the hypothenar eminence where the DIY pigment-mixing implant sits; skin around it slightly discolored and occasionally shows faint scarring from the installation. No visible external ports or indicators. The bioluminescent forearm traces read as either ritual scarification or experimental tattoo work to casual observers; their true nature as incorporated bioink is not immediately apparent. No licensed augmentation markers visible.",
+    "posture_movement": "Moves with economic precision—no wasted motion, weight distributed for rapid directional changes. Walks with slight forward lean, shoulders slightly rounded from hours spent in cramped spaces and hunched over detail work. When still, he is very still; when moving, transitions between states are abrupt. Tends to position himself near exits or elevated positions. Makes deliberate eye contact only when establishing territory or assessing threat; otherwise maintains observational distance. Hands are rarely idle—sketching, color-testing, manipulating small objects.",
+    "clothing_style": "Tier 4-5 functional aesthetics. Worn cargo pants or modified jeans with numerous pockets and reinforced seams, often bearing paint stains that have become part of the visual design. Layered tops—typically a fitted base layer under an oversized, deliberately distressed button-up or windbreaker with modified ventilation and concealed cargo capacity. High-visibility elements mixed with matte colors; some pieces appear to have reflective paint applied deliberately to render him visible or invisible depending on context. Scuffed, extremely practical shoes (currently modified Vorn Hi-Tops with reinforced ankle support and grip-pattern customization for wall climbing). Minimal jewelry except for a length of copper wire wrapped multiple times around his left wrist—functional and symbolic. No corporate branding. Everything shows evidence of constant wear and frequent repair; the overall effect is of someone who treats clothing as infrastructure rather than presentation."
+  },
+  "image_prompt": "Renata Sepúlveda, 168cm wiry lean urban climber with warm medium-brown skin and golden undertones, sharp cheekbones, dark calculating eyes. Copper-orange faded hair with dark roots, shoulder-length unkempt style. Visible bioluminescent cyan-green ink traces branching across both forearms in darkness, white scarring from wire cuts and impacts on inner arms. Wearing distressed oversized windbreaker over fitted base layer, reinforced cargo pants with paint stains, modified Vorn climbing shoes. Copper wire wrapped around left wrist. Hands stained with yellow and indigo pigment. Perpetually tired expression, positioned near urban infrastructure edge, slight forward lean posture. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon underlight catching bioluminescent forearm traces, moody warehouse lighting, economic precise movement frozen mid-transition. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 27.5,
+    "South Asian": 22.1,
+    "Eastern European": 18.5,
+    "Sub-Saharan African": 17.7,
+    "East Asian": 12.8,
+    "Northern European": 1.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

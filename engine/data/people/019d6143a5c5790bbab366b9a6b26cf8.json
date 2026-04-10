@@ -1,0 +1,312 @@
+{
+  "id": "019d6143a5c5790bbab366b9a6b26cf8",
+  "type": "character",
+  "name": "Hana Okonkwo-Lindström-Khoury",
+  "aliases": [
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Union organizer and mutual aid coordinator for Ferrogate Transit workers",
+  "age": 44,
+  "status": "active",
+  "location": "Hamtramck Enclave, operating out of a converted transit depot called the Carriage House, near Halsted and Division",
+  "description": "Blessing is a broad-shouldered woman with deep umber skin, close-cropped natural hair shot through with threads of silver she refuses to dye, and hands that show thirty years of physical work before she moved into organizing full-time. Her left eye is a basic-model optical aug — the iris replaced with a fixed amber ring, a reminder of the Ferrogate line collapse of 2184 that took her depth perception and gave her a cause. She dresses in layers of salvaged workwear, always with a Ferrogate transit badge pinned upside-down on her chest — the traditional gesture of solidarity among workers who refuse to 'clock in to a system that clocks out on you.'\n\nBlessing is methodical to the point of stubbornness. She keeps physical ledgers — actual paper notebooks — of every grievance filed, every promise broken, every quanta owed to injured workers and their families. She is not charismatic in the traditional sense; she does not rouse crowds with fire. She wins people over by knowing their names, their children's names, their shift rotations, and every clause of their employment contract. The nickname 'The Ledger' is both tribute and warning: she remembers everything.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.9,
+      "id": 0.3,
+      "shadow": 0.4,
+      "mask": 0.5,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "watching the movement collapse into factionalism and ego",
+      "dying before the next generation is ready to carry it forward"
+    ],
+    "core_desires": [
+      "a binding contract that actually holds — one Ferrogate cannot buy its way out of",
+      "to see the workers she organized enjoy something she never had: rest"
+    ],
+    "coping_mechanisms": [
+      "retreating into paperwork and documentation when emotionally overwhelmed",
+      "cooking large communal meals for enclave members as a grounding ritual"
+    ],
+    "blind_spots": [
+      "assumes good faith from anyone who speaks the language of labor solidarity, even when their motives are self-serving",
+      "dismisses direct action tactics she hasn't personally vetted as reckless, sometimes missing their value"
+    ],
+    "secret": "The 2184 collapse that injured her was not purely accidental — she found evidence of a falsified maintenance report filed by a Ferrogate mid-manager who is now a regional director. She has sat on this for years because going public would destroy the fragile current contract negotiations, and she still hasn't decided if that calculation is wisdom or cowardice."
+  },
+  "speech_patterns": {
+    "vocabulary": "Plain, precise working-class diction; union procedural language mixed with Yoruba proverbs; avoids jargon except when citing contract clauses, which she quotes verbatim",
+    "cadence": "Slow, deliberate, with long pauses before important points — she learned that silence makes people lean in",
+    "verbal_tics": [
+      "'Write that down'",
+      "'What does the contract say?'",
+      "clicking her tongue before disagreeing with someone"
+    ],
+    "example_lines": [
+      "'I'm not asking you to be brave. I'm asking you to show up at six and stand next to someone who is.'",
+      "'Ferrogate has lawyers. We have each other and this ledger. Don't make me the only one keeping score.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "She approaches the players with the falsified maintenance report — not to use it, but to find someone who can authenticate it without triggering Ferrogate's legal team.",
+    "A promising young organizer she mentored has gone missing after trying to infiltrate a Ferrogate management meeting; Blessing refuses to contact authorities and needs outside help."
+  ],
+  "narrative_function": "Quest giver for labor-related storylines; information source on Ferrogate Transit's internal corruption; moral anchor character who forces players to consider the cost of their shortcuts on ordinary workers; potential ally who asks for something concrete in return.",
+  "augmentations": "Basic optical implant (left eye, amber iris, fixed-focus, no enhancements beyond corrective vision); rudimentary haptic data-sleeve on her right forearm for filing union documents — second-hand, frequently glitching",
+  "daily_life": "Rises before the early shift change to catch workers at the depot gates, distributes mutual aid vouchers and listens to grievances; spends evenings in the Carriage House cross-referencing incident reports with her paper ledgers and coordinating with allied organizers across the Enclave.",
+  "affiliation": "Ferrogate Transit Workers' Solidarity Front; loosely networked with the Hamtramck Enclave neighborhood council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 8,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 2,
+      "transparency_guardedness": -1
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "union veteran",
+      "documentation obsessive",
+      "moral authority",
+      "slow burner",
+      "community pillar"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always document before acting — if it isn't written down it didn't happen",
+      "Never ask someone to take a risk she wouldn't take herself",
+      "Protect the movement over any individual, including herself"
+    ],
+    "escalation_ladder": [
+      "Listens carefully and asks clarifying questions",
+      "Cites contract language or precedent to de-escalate",
+      "Makes a formal written complaint or public statement",
+      "Calls for collective action — picket, work slowdown, boycott",
+      "Withdraws cooperation entirely and goes to allied press"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Reserved and assessing — she waits to see if they respect the workers around them before investing anything",
+      "friends": "Warm, direct, and intensely loyal; shows care through practical help rather than words"
+    },
+    "stress_responses": {
+      "low": "Becomes quieter and more methodical, retreats into her ledgers",
+      "medium": "Short, clipped sentences; starts organizing tasks obsessively",
+      "high": "Goes completely silent for minutes at a time, then delivers a single devastating, precisely chosen sentence"
+    },
+    "contradictions": [
+      "Preaches collective action but carries the movement's burdens almost entirely alone",
+      "Deeply suspicious of corporate institutions yet trusts the legal system of contracts more than any other tool"
+    ],
+    "habits": [
+      "Checks her paper ledger before checking any digital device in the morning",
+      "Folds and unfolds the corner of whatever page she's reading when anxious",
+      "Refers to Ferrogate by its old pre-merger name 'Irongate' as a deliberate historical insult"
+    ],
+    "breaking_points": [
+      "Learning that someone she vouched for sold information to Ferrogate management",
+      "A worker she failed to protect being permanently injured or killed in a preventable incident"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional, worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "second-hand, intermittent glitches",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Dreamer": 0.9,
+    "Seeker": 0.9,
+    "Quick Study": 0.9,
+    "Optimist": 0.9,
+    "Con Artist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Hamtramck Enclave to a Ferrogate maintenance worker family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Begins work as a Ferrogate line inspector at age 16",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Injured in the Kessler Interchange line collapse; loses natural vision in left eye",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovers falsified maintenance records; begins covert documentation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founds the Ferrogate Transit Workers' Solidarity Front with four colleagues",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Negotiates the Enclave Safety Accord — Ferrogate's first binding injury compensation agreement in the zone",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [
+    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Hamtramck Enclave",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Adaeze Chen-Hawkins",
+    "Silver",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Nesting Doll",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Dragan Asiedu-Kovalchuk",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Irontide Tidal Energy",
+    "MERIDIAN",
+    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
+    "NeuralPath VerbatimX Lexical Recall Aid",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Réginald Asomaning-Čabarkapa",
+    "Sorin Ekwensi-Balasanyan",
+    "The Ledger",
+    "The Underlayer Collective",
+    "Veslemøy Achebe-Tursynov",
+    "Witness",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multiheritagd blend: 27% Middle Eastern, 24% Sub-Saharan African, 23% Northern European, 20% East Asian, 6% Hispanic/Latin American. The combination creates distinct features: warm umber skin with subtle olive undertones from the Middle Eastern ancestry; broad facial structure reflecting African heritage; high cheekbones and eye shape influenced by East Asian genetics; lighter undertones in complexion from Northern European ancestry creating a warm-rich middle tone rather than pure deep brown",
+    "height_cm": 173,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, muscular through the chest and arms from three decades of manual labor; carries weight with functional density rather than bulk, core strength evident in her posture",
+    "hair_color": "Natural black with silver threads",
+    "hair_style": "Close-cropped, natural texture, practical and low-maintenance",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown with warm undertones; Left eye: amber fixed-focus optical implant with visible iris ring",
+    "skin_tone": "Warm umber with olive undertones, reflecting the blend of Sub-Saharan African, Middle Eastern, and Northern European ancestry; neither purely deep nor light, but a rich medium-deep tone with complexity",
+    "complexion": "Face weathered by forty-four years and outdoor depot work; jaw is square and deliberate with subtle definition from East Asian ancestry; high cheekbones prominent; small scar tissue around left orbital socket from the 2184 Ferrogate collapse; skin carries the dry, worked texture of someone who spends long hours in industrial weather; minimal grooming vanity, maximum readability",
+    "distinguishing_marks": [
+      "Thin, pale scar running from left temple down to cheekbone — thermal burn from the 2184 Ferrogate line collapse accident",
+      "Calloused palms and scarred knuckles consistent with thirty years of physical rail work",
+      "Upside-down Ferrogate Transit badge permanently pinned to chest, positioned over left breast",
+      "Faint discoloration around left eye socket where the optical implant was integrated"
+    ],
+    "visible_augmentations": "Left eye replaced with basic-model optical implant: amber iris ring, fixed-focus corrective lens, no cosmetic blur or integration — deliberately visible as a badge of injury and commitment. Rudimentary haptic data-sleeve on right forearm (second-hand, visibly worn, occasionally flickers with glitch patterns), extending from wrist to mid-forearm with exposed circuit seams and mismatched repair patches",
+    "posture_movement": "Stands with weight evenly distributed, shoulders slightly forward — a loader's stance. Moves with purpose and minimal wasted motion; she does not hurry but does not linger. When listening to someone, her head tilts slightly toward them (compensation for lost left-eye depth perception). Hands are frequently in motion: taking notes, gesturing to clarify contract language, fingers drum on table edges while thinking",
+    "clothing_style": "Layers of salvaged and repaired workwear in muted earth tones: insulated Carhartt vest over a thermal underlayer, canvas pants with reinforced seams, steel-toed boots worn to comfort rather than shine. A faded Ferrogate jacket (circa 2190s, patched multiple times) worn as an outer layer in cooler months. No jewelry except the inverted transit badge. Clothing is Tier 4 working-class utility — function over presentation, but maintained with deliberate care. Carries a canvas satchel worn soft with use, perpetually full of paper ledgers and union documents"
+  },
+  "image_prompt": "Hana Okonkwo-Lindström-Khoury, 44-year-old rail depot worker, GLMZ 2226. Weathered face with warm umber skin and olive undertones, square jaw, prominent cheekbones; thermal burn scar from temple to cheekbone on left side. Right eye dark brown, left eye replaced with amber fixed-focus optical implant with visible iris ring. Short natural black hair with silver threads. Broad-shouldered, muscular 173cm frame, functional build from decades of labor. Wearing layered workwear: faded Ferrogate jacket (patched, circa 2190s), Carhartt vest, thermal underlayer, reinforced canvas pants, steel-toed boots. Upside-down transit badge pinned over left breast. Second-hand haptic data-sleeve on right forearm with exposed circuits and mismatched patches. Head tilted slightly, hands in motion. Industrial warehouse setting, cool amber and blue lighting, gritty cyberpunk aesthetic, depth of field on face, authentic labor-worn authenticity --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 27.3,
+    "Sub-Saharan African": 24.4,
+    "Northern European": 23.1,
+    "East Asian": 19.7,
+    "Hispanic/Latin American": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

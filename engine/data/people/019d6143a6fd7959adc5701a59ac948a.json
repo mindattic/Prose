@@ -1,0 +1,285 @@
+{
+  "id": "019d6143a6fd7959adc5701a59ac948a",
+  "type": "character",
+  "name": "Echo Fredriksen",
+  "aliases": [
+    "Tjeer",
+    "The Dutchman"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Ferrogate Transit operator, runs the 7-Copperhead elevated rail line",
+  "age": 34,
+  "status": "active",
+  "location": "Based out of Copperhead Station depot; lives in a capsule apartment in McKinley Flats, near Ashland and Division",
+  "description": "Tjeerd is lean in the way of someone who forgets to eat — not hungry, just elsewhere. He's got his father's Congolese height and his mother's Dutch pallor tipped toward olive in the fluorescent light of the transit cab, with a patchy beard he trims but never quite conquers and geneware cat ears — cream-colored, slightly moth-eaten at the tips — that he got at eighteen and has since half-regretted, because they go flat when he's tired and everyone can tell. His hands are calloused from the manual override controls he insists on using when the AI would do fine. His Ferrogate Transit uniform is worn to a specific softness at the collar.\n\nHe is the kind of person who is most himself when alone but does not enjoy being lonely — a contradiction he has not resolved. He loves the 7-Copperhead line with the quiet intensity some people reserve for religion: the rhythm of the stops, the specific quality of dawn light over McKinley Flats at 0512 when nothing else is moving. He treats passengers with mechanical courtesy that occasionally cracks open into genuine warmth for regulars. He has opinions about rail maintenance he will share at length if given the slightest opening.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "That his life is too small — that he has arranged himself into a groove he cannot leave",
+      "Losing the overnight shift, which is the only time the city feels like it belongs to him"
+    ],
+    "core_desires": [
+      "Mastery of something real and mechanical",
+      "Connection that doesn't require him to perform extroversion"
+    ],
+    "coping_mechanisms": [
+      "Retreating into technical minutiae when emotionally overwhelmed",
+      "Long solo walks along the elevated rail maintenance catwalk on his off-days"
+    ],
+    "blind_spots": [
+      "Cannot read when he's making others uncomfortable with his emotional unavailability",
+      "Genuinely believes the cat ears are subtle"
+    ],
+    "secret": "Three years ago he saw two Ferrogate Transit supervisors throw a body from the 7-Copperhead's maintenance hatch somewhere over Blackpipe Corridor at 0340. He filed nothing. He has spent three years convincing himself he didn't see what he saw."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat, technical, with Ferrogate jargon bleeding into civilian speech; occasionally shifts into warm specificity when talking about things he loves",
+    "cadence": "Even and unhurried, with long pauses where other people would fill silence",
+    "verbal_tics": [
+      "'Technically speaking—' before corrections",
+      "Trails off mid-sentence when he decides the rest isn't worth saying"
+    ],
+    "example_lines": [
+      "'7-Copperhead runs clean between Kessler and Copperhead. Anything after Blackpipe — technically speaking — that's a different kind of problem.'",
+      "'0512. Light comes in at a specific angle. You'd have to be here to understand. Most people aren't.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A regular passenger who Tjeerd has watched for months has simply stopped appearing. He noticed. He doesn't know why he cares, but he's been checking the stop cameras on his own time.",
+    "Someone approaches him about what he may have witnessed at Blackpipe Corridor three years ago. He will deny it, poorly."
+  ],
+  "narrative_function": "Mobile information source — he sees who rides the 7-Copperhead at what hours, notices patterns and anomalies. A player character who rides his line regularly can cultivate him as a contact. Also useful for transit-based chase sequences or as a witness to something he saw from the elevated track.",
+  "augmentations": "Cosmetic geneware cat ears (cream, oft-drooping); basic neural link for Ferrogate's train management system (company-issued, company-owned). No personal chrome.",
+  "daily_life": "Picks up his shift at 2200 from Copperhead Depot, runs the elevated line through eleven stops until 1000. Eats a produced-protein sandwich somewhere around 0300. Sleeps days in McKinley Flats. Spends his one weekly off-day doing maintenance checks on his assigned car that he is not technically required to do.",
+  "affiliation": "Ferrogate Transit (Operator, 7-Copperhead Line, twelve-hour overnight shift)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 6,
+      "creativity": 4,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 4,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "transit worker",
+      "reluctant witness",
+      "creature of routine",
+      "night-shift isolationist"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Do the job correctly even when no one is checking",
+      "Do not volunteer information about what he's seen on the line — he's learned that's how you get moved off a route"
+    ],
+    "escalation_ladder": [
+      "Polite non-engagement",
+      "Technical deflection (talking about the train)",
+      "Firm boundary-setting with minimal words",
+      "Goes silent and waits for the situation to resolve itself"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Correct, minimal, professional — like a machine that has been programmed with courtesy",
+      "friends": "Awkwardly present, remembers everything they've ever mentioned, does not always acknowledge that he remembers"
+    },
+    "stress_responses": {
+      "low": "Runs the manual override checks three extra times",
+      "medium": "Stops eating. Loses the cat ear control so they droop constantly.",
+      "high": "Calls in sick and doesn't leave the capsule for two days"
+    },
+    "contradictions": [
+      "Claims not to care about people but has memorized the schedules of forty regular passengers 'just in case'"
+    ],
+    "habits": [
+      "Touches the left rail of his cab console when entering at the start of a shift — ritual, never explained",
+      "Keeps a worn paper notebook of anomalies he's observed on the line, dated and timed"
+    ],
+    "breaking_points": [
+      "Direct threat to a regular passenger he's come to feel responsible for",
+      "Evidence that Ferrogate knows what he saw and is watching to see if he talks"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in McKinley Flats, Dutch-Georgian father, Congolese-Dutch mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Hired by Ferrogate Transit as a platform attendant at Copperhead Station",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Certified as a train operator; assigned the 7-Copperhead overnight line",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Witnessed the Blackpipe incident. Filed nothing.",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Kang-Petrov Arms KP-19 'Workhorse'"
+  ],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Ferrogate Transit",
+    "McKinley Flats",
+    "Copperhead",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Big Rig",
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Arcturus KS-7 'Nursery'",
+    "Auricula Felis Modification",
+    "Breck Tannen",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Noodle Train",
+    "Oumarou Svec-Ranginui",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Stainless Steel",
+    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
+    "The Fathom Line",
+    "Tiare Sjostrom-Kwarteng",
+    "Yannick Tofauti-Szarvásy",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with secondary Hispanic/Latin American and North African ancestry. His features reflect a strong East Asian genetic foundation — high, prominent cheekbones characteristic of East Asian phenotypes, slightly downturned eye shape, and natural skin tone carrying warm olive undertones from the blended Hispanic and North African components. The combination creates a distinctly mixed-heritage appearance common to 23rd-century diaspora populations.",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Lean and lanky — the kind of height that comes from his father's side, with a runner's lack of bulk. His frame reads as someone perpetually in motion between places, muscle kept minimal by inattention rather than design.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Short, slightly unkempt, with a tendency to stand up at the back where he runs his hand through it during concentration",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert despite fatigue",
+    "skin_tone": "Warm medium olive — the natural result of East Asian ancestry (83.2%) with warmth and slight golden undertones from Hispanic/Latin American (8.4%) and North African (8.4%) heritage. Yellowed-out under twelve hours of fluorescent transit cab lighting, skin carries the faint pallor of someone who sleeps during daylight.",
+    "complexion": "Distinctly East Asian-influenced facial structure with high, pronounced cheekbones and slight downturned eye shape. Smooth skin texture with fine lines around his eyes from squinting at control panels and dawn light. A patchy beard of dark and graying hair he trims but never fully eliminates, kept at roughly two-days growth. Skin slightly dehydrated.",
+    "distinguishing_marks": [
+      "Cream-colored geneware cat ears implanted at the base of his skull, slightly translucent at the edges, often visibly drooping when fatigued",
+      "Calluses across his palms and inner fingers from years of gripping manual override controls",
+      "A thin scar along his left collarbone, barely visible — old enough to have faded to near-match with his skin tone"
+    ],
+    "visible_augmentations": "Cream-colored geneware cat ears, which flatten and droop noticeably when tired or stressed. A faint neural port scar at the base of his skull where his Ferrogate-issued neural link interfaces, usually hidden by his collar. No personal chrome — his augmentations are minimal and company-mandated.",
+    "posture_movement": "Upright but not rigid, with a slight forward lean as if always listening to something just beyond hearing. His movements are economical — no wasted motion in the cab. When standing still, he gravitates toward leaning against walls or railings. His hands move with precision when working controls, but his shoulders tend to hunch slightly when he's deep in thought about rail maintenance or the morning schedule.",
+    "clothing_style": "Ferrogate Transit operator uniform — a worn navy jumpsuit with reflective trim and his name stitched above the left pocket, faded to a soft, comfortable state at collar and cuffs from twelve-hour shifts. The fabric has slight wear marks from repeated contact with cab controls. Under it, a plain gray thermals shirt. When off-duty, he wears durable working clothes: heavy canvas pants, unmarked gray or black hoodies, reinforced boots. Everything is Tier 3-4 utilitarian — functional, maintained, but not invested in. A Ferrogate ID badge on a lanyard. One stainless steel watch, regulation-issue, always set to depot time."
+  },
+  "image_prompt": "Echo Fredriksen, 188cm East Asian-heritage transit operator with warm olive skin tone and high cheekbones, dark brown eyes with fine lines from fatigue, short dark hair graying at temples slightly unkempt. Cream-colored translucent geneware cat ears drooping at skull base from exhaustion. Two-day stubble, lean lanky build. Wearing faded navy Ferrogate jumpsuit with reflective trim, name patch visible, gray thermals underneath, stainless steel regulation watch. Standing in dimly-lit transit cab with forward lean posture, hands near control panels. Fluorescent yellow-green overhead lighting casting harsh shadows, cyberpunk 2226 Great Lakes Metropolitan Zone, morning pre-dawn atmosphere, tired but alert expression, economical movements --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 83.2,
+    "Hispanic/Latin American": 8.4,
+    "North African": 8.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

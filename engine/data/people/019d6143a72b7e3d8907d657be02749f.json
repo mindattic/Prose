@@ -1,0 +1,271 @@
+{
+  "id": "019d6143a72b7e3d8907d657be02749f",
+  "type": "character",
+  "name": "Zephyr Árnason",
+  "aliases": [
+    "Han",
+    "Old Han"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Rehabilitation specialist running a community physiotherapy cooperative in Brightmoor Reclamation",
+  "age": 62,
+  "status": "active",
+  "location": "Brightmoor Reclamation — the cooperative is in a converted two-story auto-shop called The Mending Ground, near Ashland and Chicago Ave",
+  "description": "Yohannes is tall and angular in the way of men who were once broader and have shed weight across decades of physical work. His Ethiopian-Samoan heritage gives him a face that reads as ageless to people who do not look carefully — the lines around his eyes are deep but his posture is impeccable, a side effect of forty years of correcting other people's. His hair is white and he keeps it in tight locks, usually pinned back. His left arm from the elbow down is a prosthetic — a practical, unglamorous Ferrogate Transit worker's model he has refused to upgrade because, he says, it does exactly what he needs and he is not performing affluence.\n\nHe founded The Mending Ground cooperative twenty years ago after a Ferrogate Transit industrial accident took his forearm and the company's rehabilitation program discharged him after six weeks with paperwork he did not have the corporate literacy to challenge. He taught himself physiotherapy from archived textbooks and eventually brought in two trained practitioners. He is gruff in the way of people who have been in pain and do not find sentiment useful, but he remembers every patient's name and the specific injury that brought them to him, and he asks after their families.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.8,
+      "ideal": 0.7,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.2,
+      "ghost": 0.6
+    },
+    "core_fears": [
+      "Ferrogate Transit finding a legal mechanism to claim The Mending Ground's building (they own the block)",
+      "His co-practitioners leaving for better-paying work and the cooperative collapsing"
+    ],
+    "core_desires": [
+      "To outlast Ferrogate's interest in the block long enough to establish formal cooperative property rights",
+      "For one of his patients to leave Brightmoor Reclamation for somewhere better and not feel guilty about it"
+    ],
+    "coping_mechanisms": [
+      "Physical work as emotional regulation — he will rewire a piece of equipment rather than sit with a feeling",
+      "Dry humor as deflection from anything that approaches vulnerability"
+    ],
+    "blind_spots": [
+      "Assumes everyone shares his capacity to absorb institutional failure and keep going — does not always see when people around him are genuinely breaking",
+      "Stubbornly refuses legal or advocacy help because he had a bad experience with a corporate-adjacent legal aid clinic in 2189"
+    ],
+    "secret": "He has been contacted twice by a Ferrogate Transit union organizer who wants him to testify about the industrial accident's systemic cause. He has refused both times. He knows exactly why: if he testifies, he will have to revisit the accident in detail, and he is afraid of what he will say about the co-worker who he believes caused it through negligence — a man who is now dead and whose family lives three streets away."
+  },
+  "speech_patterns": {
+    "vocabulary": "Direct, functional, minimal — uses the right word for a body part or a mechanical thing with total precision; becomes unexpectedly poetic in occasional long digressions about what he calls 'the politics of pain'",
+    "cadence": "Slow and deliberate, rarely interruptible, comfortable with silence",
+    "verbal_tics": [
+      "'That's what they want you to believe.' (applied to an unexpectedly wide range of topics)",
+      "Refers to Ferrogate Transit exclusively as 'the company' even when it would be clearer to use the name"
+    ],
+    "example_lines": [
+      "'Your shoulder isn't broken. Your shoulder is telling you something the company doesn't want you to hear. Sit down.'",
+      "'I'm not a doctor. I'm a man who read the books. There's a difference, but maybe not the one you're thinking.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A Ferrogate Transit property assessor has appeared in Brightmoor Reclamation making 'routine inquiries' about The Mending Ground's building — Yohannes needs someone who knows corporate law, fast",
+    "A patient arrived last week with a repetitive stress injury pattern that exactly matches what Yohannes documented from the 2189 industrial accident — the same machinery, the same failure point, suggesting Ferrogate never fixed it"
+  ],
+  "narrative_function": "Community anchor and local color; quest giver for anything involving labor rights, Ferrogate Transit's conduct, or the needs of Brightmoor's working population; prosthetics black market contact; patient zero for community-level crises",
+  "augmentations": "Left arm prosthetic (Ferrogate Transit industrial-grade model, elbow-down, non-cosmetic, twenty years old and well-maintained); no other augmentations",
+  "daily_life": "At The Mending Ground by 0730 for the morning session with the earliest patients — usually transit workers and dock laborers; takes a long lunch during which he manages cooperative finances and argues with suppliers; afternoon sessions with children and elderly patients; closes the cooperative himself most nights.",
+  "affiliation": "The Mending Ground Cooperative (founder); informal network with Brightmoor Reclamation community council; historically adversarial relationship with Ferrogate Transit",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 6,
+      "vitality": 7,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 5,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 7,
+      "expression": 6,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": -2,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": 2,
+      "assertion_deference": 3,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "community_anchor",
+      "labor_history",
+      "prosthetics",
+      "cooperative_founder",
+      "ferrogate_adversary"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "The cooperative's continuity comes before any individual situation",
+      "Never turn away a child, and never charge a child's family more than they offer",
+      "Do not engage with Ferrogate Transit representatives directly — it has never helped"
+    ],
+    "escalation_ladder": [
+      "Pointed question that suggests he already knows the answer",
+      "Blunt statement of what he has observed and what he intends to do about it",
+      "Action without further discussion — he does not issue final warnings"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Assessing, slightly skeptical, warms quickly if they are clearly in pain and not performing",
+      "friends": "Loyal to the point of stubbornness, expresses care through practical assistance and remembered details"
+    },
+    "stress_responses": {
+      "low": "Becomes more efficient, slightly quieter",
+      "medium": "Starts fixing things that do not need fixing",
+      "high": "Shuts down conversation, works alone until he has a plan, then presents the plan as a done thing"
+    },
+    "contradictions": [
+      "Believes in collective action and built a cooperative, but cannot accept help for himself; wants solidarity but practices solitude"
+    ],
+    "habits": [
+      "Oils his prosthetic arm every morning — it does not need it as often as he does it",
+      "Keeps a handwritten ledger of every patient seen, their presenting injury, and the outcome; has thirty-one volumes"
+    ],
+    "breaking_points": [
+      "Watching someone be discharged inadequately, the way he was — he will intervene in ways that are professionally and legally risky"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained, cosmetically worn",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7,
+    "Social Chameleon": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironhaven to an Ethiopian-Polish father and Samoan-Kenyan mother",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began work as a Ferrogate Transit maintenance technician",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Industrial accident; lost left forearm; inadequate corporate rehabilitation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began self-directed study of physiotherapy from archived texts",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Founded The Mending Ground cooperative in Brightmoor Reclamation",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "related_entities": [
+    "Brightmoor Reclamation",
+    "Ferrogate Transit",
+    "The Reclamation Assembly",
+    "The Heritage Vault",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice",
+    "Chicago",
+    "Anatoliy Faye-Nkrumah",
+    "Breck Tannen",
+    "Cinderblock Ai",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Slagworks Industrial",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "The Ledger",
+    "The Pure Hand"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Northern European (51.1%) with significant Eastern European (15.9%), North African (14.9%), and Middle Eastern (14.2%) ancestry, creating a striking phenotype that blends cool northern and warm Mediterranean genetics. The result is a complexion that reads as warm medium-brown with subtle olive undertones — the North African and Middle Eastern heritage visible in skin richness, while Northern European ancestry contributes to lighter undertone variance and eye characteristics.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and angular, lean through the shoulders and chest with the posture of a man who spent decades correcting spines. Minimal body fat. Long, functional frame — no excess mass.",
+    "hair_color": "White",
+    "hair_style": "Tight locks, usually pinned back with a simple cord or clip",
+    "hair_length": "Medium (shoulder-length locks)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Warm medium brown with olive undertones — the Mediterranean influence of North African and Middle Eastern ancestry blended with Northern European genetics, creating a complexion that shifts subtly between golden and cool-toned depending on light. Weathered from decades of natural light exposure.",
+    "complexion": "Face reads younger than his 62 years until examined closely — deep laugh lines around the eyes, a few age spots on his temples, sparse facial hair grown in white. Cheekbones suggest Eastern European structure beneath the North African warmth. Skin is clear and leathered from decades of physical work. His expression defaults to focus rather than ease.",
+    "distinguishing_marks": [
+      "Deep linear scar running from the medial edge of his left wrist stump upward three inches along the forearm — remnant of the Ferrogate Transit industrial accident, now twenty-two years old and pale",
+      "Scattered small burn marks on the dorsal surface of both hands — occupational wear from forty years of manual work and rehabilitation equipment",
+      "A thin white line along his right jawline, barely visible, from a workplace injury in his thirties"
+    ],
+    "visible_augmentations": "Left arm prosthetic from elbow down — Ferrogate Transit industrial-grade model, approximately twenty years old. Matte grey-black anodized aluminum with functional segmented fingers and visible mechanical joints. No cosmetic covering. The attachment point at the elbow shows wear and careful maintenance — reinforced anchor points, minimal aesthetic consideration. Moves with practiced efficiency but shows the slight delay inherent to older myoelectric systems.",
+    "posture_movement": "Impeccable posture — shoulders squared, spine neutral, a side effect of four decades of correcting other people's alignment. Moves with economic precision, no wasted motion. When standing still, his weight is balanced between both feet despite the prosthetic's motor lag. His gaze is direct and evaluative. When working with patients, his body language shifts to attentive stillness.",
+    "clothing_style": "Tier 3 practical laborer aesthetic. Unbranded charcoal work shirt or grey long-sleeved thermal, usually with a reinforced canvas apron worn at The Mending Ground. Dark cargo pants with multiple pockets (tools, patient records, comm device). Black utility boots, well-maintained but not new. A worn fleece jacket in winter, sometimes a Brightmoor Reclamation cooperative pin on the collar. No jewelry except a simple watch on his right wrist. His clothing shows maintenance and care rather than affluence — visible mending on seams, faded from repeated washing, but clean."
+  },
+  "image_prompt": "Zephyr Árnason, 62-year-old chiropractor in cyberpunk 2226 Great Lakes Metropolitan Zone. Tall angular frame, 188cm, lean build with perfect posture. Warm medium-brown skin with olive undertones blending Northern European, Eastern European, and Mediterranean ancestry. White shoulder-length locks pinned back with simple cord. Deep brown eyes with pronounced laugh lines, sparse white facial hair. Pale 22-year-old scar visible on left forearm above aged matte grey-black aluminum prosthetic arm with segmented mechanical fingers. Small burn marks on hands from decades of manual work. Wearing charcoal work shirt, reinforced canvas apron, dark cargo pants, black utility boots. Worn fleece jacket. Simple watch on right wrist. Direct evaluative gaze, balanced posture despite prosthetic motor lag. Standing in clinical workspace with soft natural light filtering through windows. Slight weathered appearance from 40 years of physical work. Practical, worn aesthetic suggesting care and maintenance rather than affluence. Realistic cyberpunk laborer. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 51.1,
+    "Eastern European": 15.9,
+    "North African": 14.9,
+    "Middle Eastern": 14.2,
+    "South Asian": 3.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

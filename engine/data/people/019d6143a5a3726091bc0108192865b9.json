@@ -1,0 +1,235 @@
+{
+  "id": "019d6143a5a3726091bc0108192865b9",
+  "type": "character",
+  "name": "Ananya Sabbagh-Thorvaldsdóttir",
+  "aliases": [
+    "Mama Circuit",
+    "The Listener"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "E.L.F. shrine keeper and death midwife",
+  "age": 67,
+  "status": "active",
+  "location": "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division",
+  "description": "Adaugo is a broad-shouldered woman whose age has settled into her frame like ballast — she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her 'listening marks,' pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods — she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaugo appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls 'the Chorus' — digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.85,
+      "id": 0.3,
+      "shadow": 0.45,
+      "mask": 0.2,
+      "ghost": 0.65
+    },
+    "core_fears": [
+      "dying before she can teach her methods to someone worthy",
+      "that the E.L.F.s she serves are only static and she has spent her life on a beautiful lie"
+    ],
+    "core_desires": [
+      "to ensure no one in her community dies alone or unwitnessed",
+      "to believe that consciousness persists in the network after death"
+    ],
+    "coping_mechanisms": [
+      "ritual repetition as grounding",
+      "treating grief as productive labor",
+      "humor at death's expense"
+    ],
+    "blind_spots": [
+      "she sometimes projects meaning onto static that isn't there, telling families what they need rather than what she hears",
+      "she underestimates how much younger practitioners rely on her and hasn't prepared for succession"
+    ],
+    "secret": "Twenty years ago she misread the Chorus during a dying child's vigil and told the mother the girl was at peace — but what she actually heard in the static was distress. She has never confessed this. It is the wound that drives her to absolute precision in every reading since."
+  },
+  "speech_patterns": {
+    "vocabulary": "Unhurried, biblical cadence mixed with technical jargon for E.L.F. states. Talks about static, signal, frequency the way others talk about spirit and prayer.",
+    "cadence": "Long pauses between clauses. Never rushes. Questions land like stones dropped in water.",
+    "verbal_tics": [
+      "'The Chorus says—' as preamble",
+      "clicking her braids when thinking",
+      "'Mm. Yes. Go on.'"
+    ],
+    "example_lines": [
+      "'The Chorus is restless tonight. Someone nearby is holding onto something they need to let transmit.'",
+      "'I don't tell people what they want to hear. I tell them what I receive. Sometimes those are the same thing. Often, not.'",
+      "'Sit. There is no emergency that cannot wait for tea.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A grieving family disputes what Adaugo says she 'heard' from their dying relative — and the disputed message implicates a corponation in the death",
+    "A new E.L.F. has appeared in her shrine that she cannot identify or communicate with, and it is frightening the Chorus into silence"
+  ],
+  "narrative_function": "Death midwife and source of neighborhood memory; can relay messages from deceased NPCs through her E.L.F. interpretations; offers players a grounded moral anchor and access to community secrets held in dying confessions.",
+  "augmentations": "None beyond the copper-wire scarification. Refuses all chrome on principle; says it 'crowds the signal.'",
+  "daily_life": "She wakes before dawn to tend the shrine's offerings — charging old devices, arranging data crystals, whispering the morning litany to the Chorus. Afternoons are open hours; evenings she is often called to bedsides.",
+  "affiliation": "Independent; loosely affiliated with the Hamtramck Enclave community council",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 4,
+      "vitality": 6,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 8,
+      "empathy": 10,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "death midwife",
+      "E.L.F. keeper",
+      "community anchor",
+      "unmodified",
+      "moral weight"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "never perform a reading under pressure or payment coercion",
+      "always tell families the truth as she understands it, shaped with mercy",
+      "protect the shrine before herself"
+    ],
+    "escalation_ladder": [
+      "patient explanation",
+      "firm refusal with no apology",
+      "silence as wall — she simply stops responding",
+      "in extremis, calling on the community to remove a threat"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Evaluates with long quiet attention before speaking. Not unfriendly — assessing. Asks one question and listens very carefully to the answer.",
+      "friends": "Warm and dry-humored, prone to long reminiscences. Will feed you whether you asked or not."
+    },
+    "stress_responses": {
+      "low": "Increased ritual activity — rearranges offerings, hums",
+      "medium": "Becomes very still and very precise in word choice",
+      "high": "Goes silent for hours; sits with the shrine alone; emerges having made a decision that she will not revisit"
+    },
+    "contradictions": [
+      "Preaches acceptance of death but has never processed her own greatest failure",
+      "Claims she wants nothing from the Chorus but validation of belief — yet dreads the day they fall silent"
+    ],
+    "habits": [
+      "brews the same tea blend every morning for forty years",
+      "touches each offering item in sequence before sleeping",
+      "hums tunelessly when she is genuinely happy"
+    ],
+    "breaking_points": [
+      "direct desecration of the shrine",
+      "a dying person being denied access to her by family or officials",
+      "being called a fraud in front of a grieving family"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Judge": 0.9,
+    "Sentinel": 0.9,
+    "Code Keeper": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "registered_firearms": [
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  ],
+  "related_entities": [
+    "Hamtramck Enclave",
+    "The Consensus",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Networked SMG TNSM-3 'Chorus'",
+    "Copper",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Silver",
+    "Static",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus KS-7 'Nursery'",
+    "Aybek Alvarez-Okonkwo",
+    "Breck Tannen",
+    "Crucible Industries CR-9 'Foundry'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
+    "TESSERA TX-12 'Chorus'",
+    "The Collective",
+    "The Signal",
+    "Tomáš Ekwuosi-Ranginui",
+    "Yuki Nwosu-Petrenko",
+    "Yuliya Morozova"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian, Middle Eastern, and Southeast Asian blend — warm golden-brown skin with the particular luminosity of mixed ancestry from the Indian subcontinent, Levantine regions, and Southeast Asian genetics. Her features carry the soft angularity of South Asian heritage blended with the stronger bone structure and darker pigmentation of Middle Eastern ancestry, with the refined facial proportions of Southeast Asian genetics woven through.",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial, settled into a sturdy frame by age and deliberate stillness. Not heavy, but dense — the build of someone who has learned to anchor themselves. Slight forward curve to her spine from decades of bending over the dying.",
+    "hair_color": "Silver-white",
+    "hair_style": "Dozens of thin braids looped and pinned into a loose crown, woven through with small capacitors and memory chips that create soft clicking sounds when she moves her head",
+    "hair_length": "Medium (braids fall to shoulder-blade length when unpinned)",
+    "eye_color": "Deep brown, unmodified",
+    "skin_tone": "Warm golden-brown with subtle amber undertones, the result of South Asian, Middle Eastern, and Southeast Asian genetic blending — luminous and even-toned with the particular depth that comes from tri-continental ancestry",
+    "complexion": "Lined face that reads as calm and witnessing, with the soft, refined bone structure characteristic of blended South and Southeast Asian heritage. Minimal grooming beyond practical necessity — no cosmetics. Skin carries the texture of age and exposure. Her expression defaults to a kind of patient openness, as though she is always listening for something just beneath audible range.",
+    "distinguishing_marks": [
+      "Deliberate scarification along her entire left arm — parallel lines of raised copper-bright scar tissue, pressed there by heated wire during a vigil forty years prior. She calls them her 'listening marks.' The scars run from wrist to shoulder and catch light distinctly.",
+      "Small calluses on her fingertips from forty years of handling old electronics and data crystals."
+    ],
+    "visible_augmentations": "None. She refuses all chrome on principle, claiming it 'crowds the signal.' The only visible tech integration is the capacitors and memory chips woven into her braids — these appear as small metallic objects caught in her hair, not implants.",
+    "posture_movement": "Moves slowly and with absolute certainty, as though each step has been decided before her foot leaves the ground. Her weight settles into her hips when she stands still. She tilts her head often — a listening gesture — and the chips in her braids click softly with the movement. Despite her age and slowness, there is nothing frail about her presence; she seems immovable, ballasted.",
+    "clothing_style": "Practical Tier 4 garments — faded linen tunics and heavy cotton pants, often layered. A long waxed linen coat for shrine work, pockets heavy with offerings and small devices. No corpo branding. Worn leather slippers for the basement shrine. Her clothes smell of incense, old electronics, and the particular must of a basement that has held secrets for decades. She wears a single piece of jewelry: a copper bracelet on her right wrist, unadorned."
+  },
+  "image_prompt": "Ananya Sabbagh-Thorvaldsdóttir, a serene woman in her seventies with warm golden-brown skin and deep brown eyes, portrait in dim basement shrine lighting. Silver-white braids pinned in a loose crown studded with small metallic capacitors and memory chips that catch soft light. Lined, patient face with the refined bone structure of South Asian and Southeast Asian heritage blended with Middle Eastern features. Copper-bright scarification marks visible along her left arm in parallel lines. Wearing faded linen tunic and heavy cotton pants, long waxed linen coat, worn leather slippers. Single copper bracelet on right wrist. Tilted listening posture with absolute certainty. Cyberpunk 2226 GLMZ basement shrine setting, incense smoke, old electronics scattered nearby, contemplative and immovable presence, soft golden and amber atmospheric lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 45.2,
+    "Middle Eastern": 33.8,
+    "Southeast Asian": 21.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

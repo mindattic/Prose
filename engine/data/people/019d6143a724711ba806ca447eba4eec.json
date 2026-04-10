@@ -1,0 +1,152 @@
+{
+  "id": "019d6143a724711ba806ca447eba4eec",
+  "type": "character",
+  "name": "Zara Sesay-Popescu",
+  "aliases": [
+    "The Accountant"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Sterling-Nakamura proxy",
+  "age": 38,
+  "status": "active",
+  "location": "The Spires, near Michigan Ave and Chicago Ave",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Sterling-Nakamura",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
+  ],
+  "registered_firearms": [],
+  "district": "The Spires",
+  "related_entities": [
+    "Chicago",
+    "Arcturus PG-3 'Aegis'",
+    "Hadiya Karlsen-Sow",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Idris Forsberg-Quaye",
+    "Patchwork Scooter",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
+    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
+    "Sulfur Crown Agriculture",
+    "The Heidelberg Scar"
+  ],
+  "physical_description": {
+    "heritage": "Sub-Saharan African (48.9%, primarily West African) with substantial Eastern European (25.5%, Romanian/Polish) and Hispanic/Latin American (22.3%, mixed Central/South American) ancestry, with minor East Asian (3.3%) influence. A striking blend resulting in warm-toned medium brown skin with golden undertones, sharp facial architecture combining African and Eastern European bone structure, and deep brown eyes with subtle amber rings.",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined shoulders and core; economical musculature suggesting regular physical conditioning and combat training rather than bulk.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Pulled back in a tight, professional braid wrapped around the crown; a few silver strands visible near the temples",
+    "hair_length": "Long (past shoulders when unbound)",
+    "eye_color": "Deep brown with a slight amber ring in bright light",
+    "skin_tone": "Warm medium brown with golden undertones, even complexion",
+    "complexion": "Sharp cheekbones with high prominence reflecting African and Eastern European heritage, defined jawline, thin scar running from left temple to cheekbone (faded but visible under direct light), minimal makeup—just mascara and a neutral lip. Skin is clear and well-maintained, suggesting access to quality dermal care. Subtle warm undertones across bridge of nose and upper cheeks.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward cheekbone, approximately 8cm long, from a blade encounter circa age 23",
+      "Small circular burn mark on the inside of right wrist, subcutaneous implant entry point, barely noticeable unless pointed out",
+      "Faint tattoo on the nape of neck: a stylized Ⓢ in minimal line-work (Sterling-Nakamura corporate sigil, covered by hair most of the time)"
+    ],
+    "visible_augmentations": "None immediately obvious. Subcutaneous neural array operates behind the eyes (undetectable without scanning). Subdermal reinforcement plating along left forearm is concealed beneath tailored sleeves but occasionally visible as a subtle metallic sheen when light hits at certain angles.",
+    "posture_movement": "Moves with controlled precision; economical gestures that convey authority without aggression. Stands with weight balanced, never flat-footed. Eyes track multiple vectors simultaneously—habit of someone trained in threat assessment. Speaks quietly but commands attention through cadence and tone rather than volume.",
+    "clothing_style": "Tier 1-2 corporate aesthetic. Tailored charcoal suit jacket (Italian wool-synthetic blend, Sterling-Nakamura house cut) over a cream silk undershirt. Dark trousers with minimal ornamentation. Understated Φ2,400 smart-fabric belt (color-shifting nano-weave, subtle flex of wealth). Black leather ankle boots with reinforced soles (customized for urban parkour). A thin platinum chain around her neck (tasteful, barely visible). No visible jewelry except a discrete tactical watch on her wrist. Wardrobe conveys approachability while maintaining professional distance—form-fitting enough to suggest athleticism, formal enough to remind people she answers to Sterling-Nakamura.",
+    "bearing": "Projects calm control. A fixer who has negotiated with desperate people, corpo enforcers, and criminal syndicates. The scar and the way she carries herself suggests she can back up her words with action, but she prefers the negotiation table."
+  },
+  "image_prompt": "Zara Sesay-Popescu, a 172cm tall mixed-heritage fixer with warm medium-brown skin and golden undertones, sharp high cheekbones, defined jawline, deep brown eyes with amber rings. Dark brown hair with auburn hints pulled into tight professional crown braid, silver at temples. Thin faded scar running left temple to cheekbone. Tailored charcoal Italian wool-synthetic suit jacket over cream silk undershirt, dark trousers, black reinforced leather ankle boots. Thin platinum chain at neck, discrete tactical watch. Controlled posture radiating authority without aggression. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon-lit corporate corridor setting, sharp lighting casting shadows across scar and jawline, cinematic, tactical, professional but dangerous. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 48.9,
+    "Eastern European": 25.5,
+    "Hispanic/Latin American": 22.3,
+    "East Asian": 3.3
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

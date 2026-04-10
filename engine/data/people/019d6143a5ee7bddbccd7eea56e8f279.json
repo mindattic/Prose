@@ -1,0 +1,307 @@
+{
+  "id": "019d6143a5ee7bddbccd7eea56e8f279",
+  "type": "character",
+  "name": "Aponi Ozcoidi",
+  "aliases": [
+    "Lowline",
+    "The Cartographer",
+    "D-Shift"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Underground transit runner and informal district mapper",
+  "age": 34,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Division",
+  "description": "Deshawn is a broad-shouldered man of Nigerian-German descent with close-cropped hair going grey at the temples despite his age, a consequence of two years spent living in the sub-basement radiation corridors that connect The Shelf to Old Harbor. His skin is deep brown and mapped with faint chemical burns along his left forearm, souvenirs from a freight detonation he survived by crawling through a coolant runoff pipe. He dresses in layered work clothes stripped of all corporate insignia, the pockets reinforced and numbered in his own hand-stitched code so he can find anything in the dark without looking.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.6,
+      "ideal": 0.75,
+      "id": 0.4,
+      "shadow": 0.35,
+      "mask": 0.5,
+      "ghost": 0.55
+    },
+    "core_fears": [
+      "Being trapped underground when the access codes change and no one comes",
+      "That his mental map of the city is already obsolete and he hasn't realized it",
+      "Becoming invisible even to the people he protects"
+    ],
+    "core_desires": [
+      "To build a transit network the corps can't surveil or shut down",
+      "To be genuinely known by at least one person",
+      "To see The Shelf generate its own economy instead of being bled dry"
+    ],
+    "coping_mechanisms": [
+      "Obsessive cartographic annotation — he redraws sections of his maps when anxious",
+      "Counting steps and memorizing distances as a grounding ritual",
+      "Deflecting intimacy with logistical helpfulness"
+    ],
+    "blind_spots": [
+      "Underestimates how much people depend on him personally, not just his routes",
+      "Assumes competence is the same as trustworthiness",
+      "Cannot recognize when rest is necessary; equates stillness with failure"
+    ],
+    "secret": "Three years ago he handed a route map to someone he believed was a mutual-aid courier. That person sold it to a Spire logistics firm, and six families in The Shelf lost their informal market stalls when the corp rerouted a supply chain through their block. He has never told anyone. He destroyed the map and rebuilt the network from scratch, but he still sees those families' faces."
+  },
+  "speech_patterns": {
+    "vocabulary": "Practical, directional, spatial metaphors dominate. Uses transit and infrastructure language even in emotional conversations. Avoids abstractions unless he can anchor them to a place.",
+    "cadence": "Measured and even, like someone dictating notes. Pauses are deliberate, not nervous. Rarely raises his voice.",
+    "verbal_tics": [
+      "Starts answers with 'Right, so—'",
+      "References cardinal directions unnecessarily ('that's a north-facing problem')",
+      "Ends reassurances with 'you've got the route'"
+    ],
+    "example_lines": [
+      "Right, so the thing about trust is it's just a corridor you've used enough times you stop checking the ceiling.",
+      "I don't do ideology. I do access. You want to move people or goods without getting flagged, that's a logistics problem. I solve logistics problems.",
+      "You've got the route. Don't second-guess the route.",
+      "That's a north-facing problem — means the pressure's coming from above, and above doesn't care what's underneath."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Blessed Nkemdirim",
+      "type": "Complicated alliance",
+      "description": "Deshawn runs supply lines that occasionally intersect with Blessed's community work. They respect each other's competence but disagree on whether covert infrastructure or visible advocacy does more lasting good.",
+      "emotional_core": "Mutual respect threaded with unspoken competitive grief — two people who love the same community and handle that love differently",
+      "story_tension": "Blessed recently learned that one of Deshawn's routes passes through a block she's been trying to organize publicly, and exposure of the route could either legitimize or destroy her campaign"
+    },
+    {
+      "name": "Fenwick Oduya-Marsh",
+      "type": "Uneasy client",
+      "description": "Fenwick has used Deshawn's network twice for information drops. Deshawn doesn't ask what's being moved, which is exactly why Fenwick keeps coming back and exactly why Deshawn is starting to feel uncomfortable.",
+      "emotional_core": "The slow erosion of professional neutrality when you start liking someone whose motives you can't verify",
+      "story_tension": "Deshawn suspects the last drop Fenwick paid for contained something that got a runner hurt; he hasn't confirmed it because confirmation would require a choice he isn't ready to make"
+    },
+    {
+      "name": "Vesna Čolić-Strand",
+      "type": "Former close friend, estranged",
+      "description": "They came up together in The Shelf's informal freight economy. Vesna moved into more lucrative corp-adjacent work; Deshawn considers this a betrayal she considers a survival decision.",
+      "emotional_core": "The specific loneliness of watching someone you love choose a version of the world you can't follow them into",
+      "story_tension": "Vesna has information about the logistics firm that absorbed the route Deshawn gave away — she doesn't know he's connected to it, and he doesn't know she knows"
+    }
+  ],
+  "story_hooks": [
+    "A section of Deshawn's most critical route has been physically collapsed — not by accident, but in a pattern that suggests someone with his map did it deliberately",
+    "A teenager has been following his routes without permission and has already discovered two access points Deshawn thought only he knew",
+    "A Spire infrastructure project is scheduled to permanently seal the sub-basement corridors that anchor his entire network — he has eight weeks",
+    "Someone left a message in his map notation system, in his own shorthand, that he didn't write"
+  ],
+  "narrative_function": "Ground-level connective tissue — the character who makes the city's hidden logistics visible to the reader while embodying the moral cost of neutrality in a system that isn't neutral",
+  "augmentations": "Subdermal haptic compass implant in left wrist — gives directional feedback through skin pressure rather than display,Low-light retinal overlay with manual toggle, older model, frequently glitches in high-humidity tunnels,Bone-anchored earpiece for encrypted short-range comms, the antenna visible as a faint ridge behind his right ear",
+  "daily_life": "Wakes before dawn in a rotating set of crash spaces across The Shelf, never the same two nights running. Spends mornings doing physical route checks — walking sections of his network, noting changes in access, marking anything new. Eats on the move, usually from the same three vendors who know not to ask questions. Afternoons are coordination: meeting runners, updating maps, resolving disputes. Evenings are the only time he stops, usually in a particular maintenance alcove overlooking the lower Shelf grid where the ambient light from the Circuit makes the city look almost intentional.",
+  "affiliation": "Unaffiliated; operates a loose cooperative of transit runners known informally as the Lowline Collective, which has no official name, no hierarchy, and no documentation",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 7,
+      "vitality": 7,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 10
+    },
+    "social": {
+      "presence": 4,
+      "empathy": 5,
+      "expression": 5,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -1,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": 1,
+      "transparency_guardedness": 3
+    },
+    "drives": [
+      "Build infrastructure the corps cannot surveil",
+      "Map the unmappable",
+      "Be genuinely known by someone"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 6,
+        "response": "Redraws map sections, counts steps, retreats into spatial logic"
+      },
+      "moral": 7,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Perseverance",
+      "Prudence",
+      "Judgment",
+      "Creativity",
+      "Humility"
+    ],
+    "weaknesses": [
+      "Love",
+      "Zest",
+      "Social intelligence",
+      "Gratitude",
+      "Humor"
+    ],
+    "tags": [
+      "transit-runner",
+      "cartographer",
+      "Lowline-Collective",
+      "tunnel-dweller",
+      "Shelf",
+      "infrastructure",
+      "route-keeper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always check a route physically before trusting it to runners",
+      "Will never give a map to someone he has not personally vetted",
+      "Will always start answers with 'Right, so—'",
+      "Will never stop moving long enough to acknowledge he needs rest",
+      "Will always prioritize the network's integrity over any individual relationship",
+      "Will never discuss the betrayed route map that cost six families their stalls",
+      "Will always reference cardinal directions even when they are unnecessary"
+    ],
+    "escalation_ladder": [
+      "Reframes the problem spatially — 'that's a north-facing problem' — redirects through logistics",
+      "Goes quiet and measured, pauses become longer and more deliberate",
+      "Seals a route section — physically collapses access to deny the threat passage",
+      "Activates encrypted comms and coordinates runners to reroute the entire network",
+      "Destroys maps and rebuilds from scratch — the nuclear option he has done once before and will do again"
+    ],
+    "interpersonal_modes": {
+      "Blessed Nkemdirim": "Mutual respect threaded with competitive grief — two people who love the same community differently",
+      "Fenwick Oduya-Marsh": "Uneasy client relationship — Deshawn is starting to feel uncomfortable with what Fenwick moves",
+      "Vesna Colić-Strand": "The specific loneliness of watching someone you love choose a world you cannot follow them into"
+    },
+    "stress_responses": {
+      "low": "Redraws map sections obsessively, counts steps on familiar routes",
+      "medium": "Sleep drops, eats on the move, spatial metaphors dominate all conversation",
+      "high": "Stops sitting in the maintenance alcove — his one moment of rest disappears",
+      "critical": "Recognizes the pattern from the betrayed route and acts with the fury of someone who will not make that mistake twice"
+    },
+    "contradictions": [
+      "Builds infrastructure for freedom while the network creates dependencies he controls",
+      "Claims to do logistics not ideology while every route he builds is a political act",
+      "Deflects intimacy with helpfulness while desperately wanting to be genuinely known"
+    ],
+    "habits": [
+      "Starts every answer with 'Right, so—'",
+      "Ends reassurances with 'you've got the route'",
+      "References cardinal directions in emotional conversations",
+      "Sits in a specific maintenance alcove overlooking the lower Shelf grid at dusk",
+      "Checks numbered, hand-stitched pockets by feel in the dark"
+    ],
+    "breaking_points": [
+      "A critical route section being deliberately collapsed by someone with his map",
+      "The Spire permanently sealing the sub-basement corridors that anchor his network",
+      "Someone he trusted betraying a route — the nightmare he already lived once",
+      "Vesna returning with information that connects back to his original betrayal"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Networker": 0.9,
+    "People Pleaser": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "Aslan Vasquez-Chatterjee",
+    "Stratum",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Axiom Industries",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Isadora Mwangi-Thorvaldsen",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Noir Dining",
+    "Old Harbor",
+    "Othniel Babić-Asantewaa",
+    "Pikasso Wemba-Þórðarson",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo DV-4 'Courier'",
+    "Sisay Bergqvist-Mallari",
+    "Solveig Tambadou-Kereselidze",
+    "SynapTech ReadRoom Pro Social Cue Implant",
+    "The Antenna",
+    "The Circuit",
+    "The Collective",
+    "The Compact",
+    "The Spire",
+    "Tsveta Nwosu-Karlsdóttir"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian (35%), Indigenous American (24%), Sub-Saharan African (15%), Eastern European (14%), Central Asian (12%) — a complex diaspora blend creating distinctive phenotype with East Asian bone structure, darker complexion from African and Indigenous ancestry, and subtle Eastern European undertones",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and powerfully built through years of crawling through tight transit corridors; carries himself with the compact efficiency of someone who has learned to move through spaces smaller than his frame",
+    "hair_color": "Dark brown with premature greying at temples",
+    "hair_style": "Close-cropped, pragmatic cut maintained with clippers rather than professional grooming",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with faint neural interface scarring at outer edge of left eye from retinal overlay implant",
+    "skin_tone": "Warm deep brown with subtle golden undertones from East Asian and Central Asian heritage, darker Mid-tone foundation from Sub-Saharan and Indigenous ancestry",
+    "complexion": "Weathered beyond his 34 years with pronounced cheekbone structure reflecting East Asian ancestry; skin has the particular pallor of someone who avoids direct sunlight, with fine lines around the eyes from constant low-light work and occasional squinting through glitches. Subtle warmth beneath surface despite habitually low-light existence. Slightly flatter facial structure with broader nasal bridge reflecting his mixed Indigenous and East Asian heritage",
+    "distinguishing_marks": [
+      "Faint branching chemical burn scars across left forearm in coolant runoff pattern, discoloration lighter than surrounding skin",
+      "Hand-stitched numerical markings in faded ink across the reinforced pocket seams of his work clothes — personal mapping code only he understands",
+      "Subdermal ridge barely visible behind right ear where bone-anchored earpiece antenna sits",
+      "Calloused palms and fingertips worn smooth from years of map-making and haptic compass calibration"
+    ],
+    "visible_augmentations": "Bone-anchored earpiece antenna visible as a subtle ridge and slight discoloration behind right ear; occasional faint glow from low-light retinal overlay during darkness or when system cycles. Left wrist shows no visible marks from haptic compass implant but skin texture slightly different in circular pattern. Neural interface scarring barely visible at outer corner of left eye to anyone looking closely.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, shoulders slightly forward from habitual navigation through confined spaces. Walks with a particular rhythm, feet testing ground before committing weight, a consequence of blind navigation in dark tunnels. Often touches his left wrist without thinking, a habitual check for directional feedback. Favors his right side slightly when standing still, distributing weight asymmetrically.",
+    "clothing_style": "Layered work clothes in charcoal and slate grey with all corporate tags and insignia removed; utilitarian pants with reinforced pocket seams hand-stitched with numbered code markers; undershirts that can be shed quickly in high-temperature tunnels; a long-worn canvas jacket with custom-modified internal pockets that don't clink or rattle. Everything is stained with tunnel residue but meticulously organized. No jewelry except a single tungsten ring worn on left index finger — functional, not decorative. Footwear is heavy-soled boots with custom inserts for balance in flooded corridors. Tier 4 practical, deliberately unmarked."
+  },
+  "image_prompt": "Aponi Ozcoidi, 188cm tall East Asian-Indigenous American-African diaspora male with warm deep brown complexion and pronounced cheekbones, dark close-cropped hair greying at temples, weathered face from years in tunnel work, retinal implant scarring visible at left eye corner, bone-anchored earpiece ridge barely visible behind right ear. Wearing layered charcoal and slate grey utilitarian work clothes with hand-stitched numerical markings on reinforced pocket seams, long-worn canvas jacket with modified pockets, heavy-soled boots. Faint chemical burn scars cross left forearm. Posture compact and deliberate, shoulders forward from confined space navigation, favoring right side. Standing in dim underground transit corridor with faint bioluminescent glow reflecting off water, tungsten ring catching low-light, neural implant emitting subtle faint glow, atmosphere dense with tunnel residue and industrial humidity. Cyberpunk 2226, low-key environmental lighting, atmospheric depth of field emphasizing scarred and augmented details --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 35.0,
+    "Indigenous American": 23.8,
+    "Sub-Saharan African": 15.4,
+    "Eastern European": 13.7,
+    "Central Asian": 12.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

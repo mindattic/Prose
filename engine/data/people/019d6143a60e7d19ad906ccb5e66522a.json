@@ -1,0 +1,334 @@
+{
+  "id": "019d6143a60e7d19ad906ccb5e66522a",
+  "type": "character",
+  "name": "Katarzyna Tuivailala-Kuznetsov",
+  "aliases": [
+    "Voltage",
+    "The Problem"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Contract broker and resource coordinator — fixer",
+  "age": 28,
+  "status": "active",
+  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Halsted and Division",
+  "description": "Fanta Kato-Adomako is slight and easy to overlook, which is exactly the point. At 28, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Fanta Kato-Adomako plans to keep it that way. She works as a fixer out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Fanta Kato-Adomako lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.61,
+      "ideal": 0.18,
+      "id": 0.93,
+      "shadow": 0.52,
+      "mask": 0.43,
+      "ghost": 0.84
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "That the work they do makes the city worse, not better",
+      "Their past catching up — debts, enemies, broken promises"
+    ],
+    "core_desires": [
+      "The perfect run — one job so clean it becomes legend",
+      "Justice — the corporate kind, where the punishment fits the profit margin",
+      "Knowledge — to understand the systems that grind people down"
+    ],
+    "coping_mechanisms": [
+      "Maintains weapons obsessively — cleaning guns is meditation",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+    ],
+    "blind_spots": [
+      "Believes their trauma makes them special instead of recognizing it as damage to manage",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
+    ],
+    "secret": "Fanta Kato-Adomako is in augmentation debt to a corporate subsidiary — Φ180,000 outstanding — and the interest is compounding. If they miss a payment, a kill team comes."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
+    "verbal_tics": [
+      "Refers to killing as 'solving' — clinical detachment as coping mechanism",
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
+    ],
+    "example_lines": [
+      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
+      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
+      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A former associate resurfaces with evidence that could destroy Fanta Kato-Adomako's reputation — and a price for silence",
+    "A high-paying contract turns out to target someone Fanta Kato-Adomako owes a personal debt to",
+    "Fanta Kato-Adomako intercepts intelligence about a threat to their district and must decide between profit and protection"
+  ],
+  "narrative_function": "Fanta Kato-Adomako represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 10
+      },
+      "agility": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 8
+      },
+      "reflexes": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 7
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 9
+      },
+      "perception": {
+        "base": 7,
+        "augmented": 3,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 5
+      },
+      "technical": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 0,
+        "effective": 6
+      },
+      "intimidation": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 4
+      },
+      "deception": {
+        "base": 8,
+        "augmented": 2,
+        "effective": 5
+      },
+      "empathy": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 7
+      }
+    },
+    "personality": {
+      "aggression": 0.59,
+      "caution": 0.48,
+      "loyalty": 0.91,
+      "greed": 0.37,
+      "empathy": 0.62
+    },
+    "drives": [
+      "money",
+      "freedom",
+      "loyalty"
+    ],
+    "thresholds": {
+      "pain": 8,
+      "stress": 4,
+      "loyalty_break": 10
+    },
+    "strengths": [
+      "encyclopedic knowledge of GLMZ infrastructure",
+      "photographic memory for faces and layouts",
+      "pain tolerance beyond normal limits"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "fixer",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always has an exit route planned before agreeing to any meeting",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Never discusses active contracts with anyone not directly involved"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims not to care about reputation but monitors what people say about them obsessively",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+    ],
+    "habits": [
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Checks exits within 10 seconds of entering any room",
+      "Practices a kata or fighting form every morning regardless of circumstances",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
+    ],
+    "breaking_points": [
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Discovering their employer deliberately sent them into a death trap"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Pain editor",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "refurbished",
+      "installed_date": "",
+      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
+      "replaces": ""
+    },
+    {
+      "name": "Neural interface jack at base of skull",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Opportunist": 0.9,
+    "Face": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Model 9 'Payday'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ironveil Canopy",
+    "The Unfinished Theorem",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Stratum",
+    "Slagworks Industrial",
+    "Alper Lebedev-Tutu",
+    "Breck Tannen",
+    "Emeka Johansson-Orozco",
+    "Ezio Kaboré-Malhotra",
+    "Fanta Dzhuraev-Mboyo",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Ilhan Sandstrom-Badu",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Prophet",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Fathom Line",
+    "The Shelf",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European dominant (52.9%) with significant Pacific Islander ancestry (32.4%), complemented by South Asian (7.3%), Sub-Saharan African (4.9%), and Hispanic/Latin American (2.5%) — a striking Ubiquitous Diaspora blend resulting in warm-toned, sun-kissed features with Slavic bone structure",
+    "height_cm": 162,
+    "weight_kg": 51,
+    "build": "Lean and wiry — deceptively fragile-looking, but muscular in the shoulders and forearms from years of fieldwork. Low body fat, efficient frame designed for movement rather than presence.",
+    "hair_color": "Black with subtle dark brown undertones",
+    "hair_style": "Pulled back in a tight, practical braid when working; loose shoulder-length when civilian",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with subtle amber undertones",
+    "skin_tone": "Warm golden-bronze — the blended result of Eastern European base with Pacific Islander warmth, creating a sun-kissed complexion with underlying golden undertones",
+    "complexion": "Angular face with high, prominent cheekbones and sharp jawline reflecting Slavic heritage, softened by the broader facial structure and warmer pigmentation from Pacific Islander ancestry. Skin maintains an even, warm tone with minimal blemishes, though faint lines around the eyes betray irregular sleep and high-stress work. Lips thin and often set in neutral expression.",
+    "distinguishing_marks": [
+      "Three parallel horizontal scars on right inner forearm, white and thin — surgical or deliberate, roughly 8cm each, spaced 2cm apart",
+      "Faint burn scar across left shoulder blade, roughly 4cm diameter, slightly raised and lighter than surrounding skin",
+      "Small tattoo on right wrist: minimalist geometric pattern (circles intersecting) — 2cm across, black ink, professional work"
+    ],
+    "visible_augmentations": "Chrome pain editor visible at base of skull — a silvered neural interface jack protruding slightly through skin at C7 vertebra, roughly 8mm diameter. Right temple shows the faint subdermal outline of a neural interface module beneath skin. No visible limb replacements or extensive chrome work — augmentations are strategic and minimal.",
+    "posture_movement": "Economical and controlled — she moves with purpose, never wasted motion. Slight forward lean in the shoulders, as if perpetually ready to move. Eyes track exits and sightlines instinctively. In civilian mode, deliberately adopts a more rounded posture and relaxed gait to avoid drawing attention.",
+    "clothing_style": "Off-duty: neutral Tier 4 basics — fitted dark grey or black synthetic-weave pants, unmarked hoodies or fitted long-sleeves, minimal branding. Worn work boots with good tread. A grey canvas messenger bag, overstuffed and practical. During contracts: reinforced jacket with internal pockets, tactical harness beneath outer layer, gloves. Everything muted, functional, forgettable."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Katarzyna, 162cm lean wiry frame with warm golden-bronze skin from mixed Eastern European-Pacific Islander heritage, sharp high cheekbones and angular Slavic jawline, dark brown eyes with amber glints, shoulder-length black hair pulled tight, barely visible chrome neural jack at base of skull, geometric tattoo on right wrist, three thin white scars on inner forearm, faint burn mark on shoulder blade, wearing fitted black synthetic hoodie and grey canvas messenger bag, economical posture leaning forward, tired lines around eyes, minimal jewelry, cool underground lab lighting with neon accents, focused and alert expression, GLMZ corporate tower district in soft focus background, cinematic depth, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 52.9,
+    "Pacific Islander": 32.4,
+    "South Asian": 7.3,
+    "Sub-Saharan African": 4.9,
+    "Hispanic/Latin American": 2.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

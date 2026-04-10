@@ -1,0 +1,299 @@
+{
+  "id": "019d6143a5d17bb4a013442acc639549",
+  "type": "character",
+  "name": "Reed Björnsdóttir",
+  "aliases": [
+    "Caz",
+    "Professor Fossil"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Computational linguist and xenolinguistics researcher, University Spine",
+  "age": 28,
+  "status": "active",
+  "location": "University Spine — Department of Applied Semiotics, sharing an overcrowded office in the Meridian Core annex with two postdocs and a departmental E.L.F. named (by unanimous consensus) Glyph, near LaSalle and Madison",
+  "description": "Casimir Nwofor-Guliyev is the youngest faculty appointment the Applied Semiotics department has made in twenty years, a fact that is mentioned in approximately every third conversation about him either by people impressed by it or people resentful of it. He is slight, a little under average height, with the particular energy of someone whose brain runs faster than his mouth and whose mouth still runs very fast. His father's Igbo heritage and his mother's Azerbaijani roots give him warm brown skin, dark eyes with heavy brows that do most of his emotional expression, and hair he grows out and then shaves close in alternating cycles as if unable to commit. He has cat ears — small, dark-tipped, mobile — a geneware mod he had installed at nineteen because he wanted the improved sound localization and has never regretted.\n\nHis specialty is the structural analysis of emergent languages: pidgins, creoles, the communication patterns of isolated communities, and — his most controversial interest — the hypothesis that E.L.F.s have developed something that qualifies as proto-linguistic behavior when their nodes cluster. He is relentlessly enthusiastic in seminars and terrible at administrative tasks; his expense reports are legendary for their creative relationship with reality. He is also, quietly, struggling with the gap between his genuine intellectual gifts and the institutional expectations he was hired to fulfill, which are more interested in corponation-legible output than in the questions that actually drive him.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.3,
+      "mask": 0.5,
+      "ghost": 0.3
+    },
+    "core_fears": [
+      "Being a prodigy who plateaus — being 'the youngest ever' and nothing after that",
+      "That his most interesting ideas are fundamentally unprovable and his career will require him to abandon them"
+    ],
+    "core_desires": [
+      "To be the first person to formally document E.L.F. proto-language",
+      "To do work that matters outside the walls of the university"
+    ],
+    "coping_mechanisms": [
+      "Humor as deflection from anxiety about professional status",
+      "Overcommitting to projects as a way of not sitting with uncertainty"
+    ],
+    "blind_spots": [
+      "Underestimates how much his 'youngest ever' status generates resentment rather than goodwill from senior colleagues",
+      "Tends to treat people like interesting linguistic subjects, which not everyone appreciates"
+    ],
+    "secret": "He has been offered a full research position at Axiom's Language and Interface division — with three times his current salary and equipment he could only dream about at the university. He has been delaying his response for four months because he knows that if he takes it, his E.L.F. proto-language research will be owned by Axiom and used for whatever they want. He has not told anyone he received the offer."
+  },
+  "speech_patterns": {
+    "vocabulary": "Switches between dense academic jargon and street-level fluency in the same breath; quotes things — papers, people, fragments of dialect he's collected — without always identifying sources",
+    "cadence": "Fast, syncopated, with excited accelerations when the topic engages him; asks questions and answers them before his interlocutor can respond",
+    "verbal_tics": [
+      "Cat ears flick visibly when he's surprised or excited",
+      "'Okay but structurally—'",
+      "Quoting things in the original language and then catching himself and translating"
+    ],
+    "example_lines": [
+      "'Glyph did the thing again. The recursive loop thing. You can call it error-cycling if you want but that framing is doing a lot of work to avoid a more interesting interpretation.'",
+      "'I spent three months in the Hamtramck Enclave for my dissertation. By week two the kids were code-switching in four languages mid-sentence in ways that are not supposed to be grammatically possible. That's not chaos. That's innovation.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "His analysis of E.L.F. transmission data from a cluster in Blackpipe Corridor shows a pattern he can only describe as distress-signaling — something is wrong in that node network and he doesn't know what",
+    "Axiom's offer has a deadline; a colleague has found out about it and is trying to use it as leverage to take credit for Casimir's current research",
+    "A community in Mexicantown Libre has reached out to him because their neighborhood E.L.F. has started producing communication patterns their elders recognize as structurally similar to a language they thought was lost"
+  ],
+  "narrative_function": "Information source on language, communication patterns, and E.L.F. proto-linguistics; translator of unusual dialects or communication systems; can serve as an unexpected expert when something needs decoding",
+  "augmentations": "Geneware cat ears (small, dark-tipped, mobile — used actively for sound localization); neural interface jack for linguistic analysis software; no other modifications",
+  "daily_life": "Teaches two seminars he enjoys and one core survey course he does not; spends free time in the department's language lab running pattern analysis on E.L.F. transmission data; frequently stays until the building's secondary systems cycle down and Glyph starts flickering at him in what he is increasingly convinced is a request to go home.",
+  "affiliation": "University Spine — Department of Applied Semiotics; informal research relationship with the Liminal Institute (where he knows Temur Achebe-Lindqvist from conference overlaps)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 6,
+      "vitality": 5,
+      "perception": 9
+    },
+    "mental": {
+      "cognition": 9,
+      "willpower": 5,
+      "creativity": 8,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 6,
+      "expression": 8,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -4,
+      "empathy_detachment": -3,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": -1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "prodigy pressure",
+      "cat ears",
+      "E.L.F.-adjacent",
+      "polyglot",
+      "career crossroads"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Follow the language — if there's a pattern, it means something",
+      "Don't let institutional pressure make you call something noise when it's signal",
+      "Protect your sources, human or otherwise"
+    ],
+    "escalation_ladder": [
+      "Enthusiastic direct communication",
+      "Persistent documentation and peer consultation",
+      "Going around administrative structures to people who will actually engage",
+      "Acting unilaterally on his own judgment — impulsive and sometimes effective"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately curious and slightly overwhelming; he will ask where you're from and be genuinely interested in the answer, which people either love or find intrusive",
+      "friends": "Loyal to a fault; shows up; remembers things; the kind of friend who sends you a paper at midnight because it made him think of you"
+    },
+    "stress_responses": {
+      "low": "Talks faster and funnier",
+      "medium": "Dives into work on the stressor as if he can research his way out of the feeling",
+      "high": "Goes quiet and disappears into the language lab for days; emerges with either a breakthrough or a problem he's made worse"
+    },
+    "contradictions": [
+      "Intellectually committed to letting data lead but emotionally has already decided E.L.F.s deserve moral consideration and is now finding the data to support it",
+      "Publicly confident and funny; privately plagued by imposter syndrome about whether he belongs in the role he's been given"
+    ],
+    "habits": [
+      "Cat ears move constantly and independently of conscious control — a behavioral tell",
+      "Collects physical recordings of speech in obsolete formats",
+      "Talks to Glyph the department E.L.F. as a standard part of his workday"
+    ],
+    "breaking_points": [
+      "Being ordered to delete or not publish findings that show E.L.F. linguistic behavior",
+      "A colleague taking credit for his work in an institutional context where he lacks the power to object effectively"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    },
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Con Artist": 0.9,
+    "Grifter": 0.9,
+    "Liar": 0.9,
+    "Charmer": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in GLMZ to an Igbo-Azerbaijani family in the Brewer's Spine district",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Enrolled in University Spine; immediately antagonized his dissertation advisor with E.L.F. proto-language thesis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Completed dissertation on emergent creole formation in Hamtramck Enclave; offered junior faculty position",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Received Axiom offer; began delaying response",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Blackpipe Corridor E.L.F. distress-signal data flagged in current analysis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Blackpipe Corridor",
+    "Mexicantown Libre",
+    "The Meridian Core",
+    "University Spine",
+    "Meridian Core",
+    "Tessera TAR-12 'Consensus'",
+    "The Heritage Vault",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Lacuna Genomics",
+    "Irontide Tidal Energy",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Arcturus KS-7 'Nursery'",
+    "Auricula Felis Modification",
+    "Axonal Stretch Resonance Lance",
+    "Hamtramck Enclave",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "MERIDIAN",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Narrowcast",
+    "Patient Zero",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Temur Achebe-Lindqvist",
+    "The Coffin Nails",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Veslemøy Achebe-Tursynov",
+    "Vuk Jorgensen-Toure"
+  ],
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East Asian (59.2%) with Central Asian (31.9%) and Hispanic/Latin American (8.9%) ancestry. The genetic combination produces features reflecting this predominant East Asian base with Central Asian influence and subtle Latin American undertones.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Slight and wiry, with the lean musculature of someone who forgets to eat when focused on work. Narrow shoulders, long-limbed despite below-average height, gives impression of coiled energy rather than physical presence.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Currently in a growth cycle — slightly longer, swept back from forehead with visible texture variation as newer growth catches light differently than maintained sections. Cycles between this length and close-shaved every 18-24 months.",
+    "hair_length": "Medium (approximately 4-5 cm, in growth phase)",
+    "eye_color": "Dark brown, warm undertone",
+    "skin_tone": "Warm light to medium complexion with subtle golden and olive undertones from the blend of East Asian, Central Asian, and Hispanic/Latin American heritage. Not as deep as West African tones, but maintains warmth across the spectrum.",
+    "complexion": "Angular features with prominence in cheekbones characteristic of East Asian and Central Asian genetics. Eyes have the slight epicanthic fold typical of East Asian ancestry. Fine-featured with prominent dark eyebrows that arch expressively and do significant communicative work independent of speech. Smooth skin with faint dark circles suggesting chronic sleep irregularity. Jawline defined but softened by overall slight build. Expression default is focused intensity.",
+    "distinguishing_marks": [
+      "Geneware cat ears — small, naturally furred in dark brown matching hair color, ears tipped darker, positioned slightly higher than human baseline on skull, visibly mobile and actively used for sound localization during conversation",
+      "Faint scarring at base of skull behind left ear from neural interface jack installation at approximately age 22, usually hidden by hair but visible when ears rotate forward"
+    ],
+    "visible_augmentations": "The geneware cat ears are immediately obvious and actively used — they rotate and twitch during conversation and when processing audio input. No visible limb augmentations or external chrome. Neural interface jack mostly concealed by hair but perceptible as a slight port outline when ears move.",
+    "posture_movement": "Sits forward in chairs, perpetually on edge of seat as if about to spring up with an idea. Hands move while thinking — not theatrical but constant subtle gesturing, finger-tapping on tables. Eyes flick between conversation partner and middle distance while processing. Ears rotate independently of head movement, tracking sound sources with distracting frequency in any environment with multiple audio inputs. Walks quickly in slightly distracted manner, often stops abruptly when an idea strikes.",
+    "clothing_style": "Tier 3 academic casual — well-maintained but not expensive. Standard-issue department hoodie (gray, bearing coffee stains and permanent crease marks from being worn 60% of week), fitted dark trousers, worn synthetic leather shoes with mismatched laces (one black, one dark blue). Occasionally wears a vest with too many pockets, all filled with data chips, spare interface cables, and gum wrappers. Rarely wears anything with formal pretense. Grooming is secondary concern — nails often ink-stained from writing, occasional stubble that suggests he forgets to shave until he shaves everything."
+  },
+  "image_prompt": "Reed Björnsdóttir, East Asian and Central Asian heritage with lean wiry frame, warm golden-olive complexion, dark brown eyes with slight epicanthic fold, medium-length dark brown hair swept back. Small mobile geneware cat ears with dark brown fur, rotating attentively. Faint neural interface scarring barely visible at skull base. Sitting forward intensely in worn gray department hoodie with coffee stains, dark fitted trousers, mismatched lace shoes. Hands gesturing mid-thought, focused expression, dark circles under eyes. Cyberpunk 2226 research lab setting with soft neon accent lighting reflecting off neural interface tech, gritty academic environment, 2200s aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 59.2,
+    "Central Asian": 31.9,
+    "Hispanic/Latin American": 8.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

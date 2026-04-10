@@ -1,0 +1,304 @@
+{
+  "id": "019d6143a5f070899aa7d50e0f703f3b",
+  "type": "character",
+  "name": "Orion Wójcik-Olofsson",
+  "aliases": [
+    "Piston",
+    "Pissy",
+    "Dev"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Lower Dock Crew muscle — Prologue survivor. Right arm removed.",
+  "age": 27,
+  "status": "active",
+  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Devante Marshall is the crew's pretty boy and he knows it. Before the Prologue he had matching Arcturus Defense Solutions Type-4 combat prosthetics — the nicest hardware anyone in the lower docks had ever seen. He stole them from a corporate shipment. Kyle removed the right one by driving the katana through the shoulder actuator and twisting. Devante now has a Tier 1 replacement that is three shades lighter than his skin and makes a grinding noise. He paints it to match. It keeps chipping.\n\nDevante grew up in the Spire. His family had money — his mother was a Tessera marketing executive, his father a corporate attorney. Devante was supposed to be Tier 4. He was expelled from Meridian Academy at sixteen for stealing augment components from the school's biotech lab. His family cut him off. He fell five tiers in two years. He joined Marcus's crew because it was the only place where his stolen hardware made him somebody.\n\nHe has a younger brother, Kofi, who is still in the Spire, still in the family, still on track. They don't speak. Devante watches Kofi's social feeds obsessively. Kofi just got engaged to a Helix BioSystems junior executive. Devante was not invited.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.1,
+      "id": 0.6,
+      "shadow": 0.3,
+      "mask": 0.9,
+      "ghost": 0
+    },
+    "core_fears": [
+      "People seeing the mismatched arms",
+      "Kofi finding out where he ended up",
+      "Becoming invisible"
+    ],
+    "core_desires": [
+      "A matching replacement",
+      "To look the way he used to look",
+      "For Kofi to call"
+    ],
+    "coping_mechanisms": [
+      "Repaints the arm constantly",
+      "Long sleeves",
+      "Talks about the Spire like he chose to leave"
+    ],
+    "blind_spots": [
+      "Cares more about aesthetics than survival",
+      "Cannot admit he misses his family"
+    ],
+    "secret": "The Arcturus arm Kyle took has a serial number that traces back to a corporate shipment reported stolen. If Arcturus tracks it, the trail leads to Devante."
+  },
+  "speech_patterns": {
+    "vocabulary": "Spire diction that he tries to bury under Shelf slang. Brand names. Appearance commentary. The vocabulary of someone who was raised with money and is performing poverty.",
+    "cadence": "Whiny when the arm comes up, which is always. Polished when he forgets to pretend.",
+    "verbal_tics": [
+      "Touches the painted arm self-consciously",
+      "Name-drops brands",
+      "Slips into Spire accent when emotional"
+    ],
+    "example_lines": [
+      "This replacement is three shades too light. THREE. I had matched Arcturus Type-4s. Do you know what those cost?",
+      "Kofi's getting married. I saw it on his feed. Nice girl. Helix money. Good for him. *long pause* ...Whatever."
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Kofi Marshall",
+      "type": "brother",
+      "description": "Still in the Spire. Getting married. Does not know where Devante is. Or claims not to.",
+      "emotional_core": "Envy and love that can't coexist peacefully",
+      "story_tension": "If Kofi ever reaches out, Devante's entire identity collapses."
+    },
+    {
+      "name": "The Marshall family",
+      "type": "estranged",
+      "description": "Tessera-connected Spire family. Cut Devante off. Pretend he doesn't exist.",
+      "emotional_core": "Shame in both directions",
+      "story_tension": "The family's corporate connections make Devante a potential liability if anyone connects the dots."
+    }
+  ],
+  "story_hooks": [
+    "The stolen Arcturus arm has a traceable serial number",
+    "His Spire background means he has knowledge and contacts the crew doesn't",
+    "Kofi's wedding is a narrative bomb",
+    "Paint-chipping gag escalates"
+  ],
+  "narrative_function": "The vain one. Piston's running concern about his mismatched arms is pure dark comedy. Each appearance the paint situation gets worse. He represents the crew's obsession with chrome as status symbol rather than tool.",
+  "augmentations": "Left: Arcturus Type-4 combat prosthetic (original, undamaged). Right: Tier 1 surplus (painted, chipping, grinds).",
+  "daily_life": "Repainting his arm. Complaining. Being slightly less useful in every fight.",
+  "affiliation": "Lower Dock Crew",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 4
+    },
+    "mental": {
+      "cognition": 5,
+      "willpower": 3,
+      "creativity": 3,
+      "spatial": 4
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 3,
+      "expression": 6,
+      "integrity": 2
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -2,
+      "impulsivity_deliberation": -3,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [
+      "Restore his appearance",
+      "Prove he belongs somewhere",
+      "Reconnect with Kofi"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 3,
+        "response": "Fixates on the arm, complains, retreats into vanity rituals"
+      },
+      "moral": 3,
+      "trust": 4,
+      "desperation": 4
+    },
+    "strengths": [
+      "Zest",
+      "Social intelligence",
+      "Creativity",
+      "Bravery",
+      "Curiosity"
+    ],
+    "weaknesses": [
+      "Humility",
+      "Self-regulation",
+      "Prudence",
+      "Integrity",
+      "Perseverance"
+    ],
+    "tags": [
+      "muscle",
+      "crew-member",
+      "Spire-origin",
+      "vain",
+      "mismatched-arms",
+      "fallen",
+      "combat-prosthetics",
+      "paint-chipper"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Will always prioritize appearance over tactical advantage",
+      "Will never admit he misses his family or the Spire life",
+      "Will always repaint the replacement arm when the paint chips — ritual of denial",
+      "Will never stop name-dropping brands — they are the vocabulary of who he used to be",
+      "Will always check Kofi's social feeds, even when it hurts",
+      "Will never acknowledge that Kyle's precision was impressive — admiration is defeat"
+    ],
+    "escalation_ladder": [
+      "Whines about the arm — the mismatched chrome is always the first grievance",
+      "Slips into Spire accent — the polish surfaces when emotion overrides performance",
+      "Lashes out verbally with brand-name insults and class contempt he learned upstairs",
+      "Uses the remaining Arcturus Type-4 arm with genuine force — remembers he was dangerous once",
+      "Goes quiet and touches the painted arm — the silence means something real has broken through"
+    ],
+    "interpersonal_modes": {
+      "Kofi": "Envy and love that cannot coexist — watches his feed obsessively, says 'whatever' when it comes up",
+      "The Marshall family": "Shame flowing in both directions — performs indifference over genuine abandonment grief",
+      "The Crew": "Performs belonging he does not fully feel — his Spire knowledge makes him useful but not one of them"
+    },
+    "stress_responses": {
+      "low": "Repaints the arm, complains about chrome quality, name-drops brands",
+      "medium": "Long sleeves come out, stops letting people see the mismatch, humor turns bitter",
+      "high": "Spire accent breaks through completely, stops performing Shelf identity",
+      "critical": "Stares at Kofi's feed in silence — the mask drops and there is just a kid who lost everything"
+    },
+    "contradictions": [
+      "Performs poverty as a choice while desperately wanting back what he lost",
+      "Cares more about how the arm looks than whether it functions, which makes him less effective in every fight",
+      "Has Spire knowledge and contacts that could help the crew but revealing them means admitting who he was"
+    ],
+    "habits": [
+      "Repaints the replacement arm constantly — the paint keeps chipping",
+      "Touches the painted arm self-consciously in conversation",
+      "Name-drops Arcturus, Tessera, and other Spire brands",
+      "Checks Kofi's social feed first thing every morning",
+      "Wears long sleeves on bad chrome days"
+    ],
+    "breaking_points": [
+      "Kofi reaching out or appearing in person",
+      "The stolen Arcturus serial number being traced back to him",
+      "Someone from the Spire recognizing him in the Shelf",
+      "The replacement arm failing completely in a fight — losing both arms to Kyle's legacy"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Pragmatist": 0.9,
+    "Brawler": 0.7,
+    "Berserker": 0.7,
+    "Tactician": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "registered_firearms": [
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "Meridian Munitions Dispatch-45 'Last Word'"
+  ],
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Helix Biosystems",
+    "The Open Syllabus",
+    "The Iron Lotus",
+    "The Spire",
+    "The Shelf",
+    "Tessera Corponation",
+    "Marcus Okafor-7",
+    "Chicago",
+    "Arcturus KS-7 'Nursery'",
+    "Arcturus LS-5 'Sentinel'",
+    "Aslan Granlund-Tawiah",
+    "Aïssé Dragomirescu-Faalelei",
+    "Bintou Halvorsen-Osei",
+    "Blessed Nkemdirim",
+    "Breck Tannen",
+    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Kyle Ellen Corbin-Vasik",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Patient Zero",
+    "Specter ID Spoofer — 'Janus Mask'",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA WL-6 'Stacker'",
+    "The Quiet Room",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly Eastern European with significant East Asian, Hispanic/Latin American, Sub-Saharan African, and Pacific Islander ancestry. Reflects a complex global genetic blend showing Eastern European bone structure layered with East Asian and African features, with warm undertones from Latin American and Pacific Islander heritage.",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic and lean, muscle definition visible but not bulky. Carries himself with the easy confidence of someone who was once assured of his place. Recent weight loss suggests stress and reduced caloric intake.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Kept short and precise, freshly cut when he can afford it — a vanity holdover from the Spire",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Warm medium-golden brown with olive undertones, reflecting the blend of Eastern European, East Asian, and Sub-Saharan African ancestry with warm highlights from Latin American heritage",
+    "complexion": "Clear skin showing early signs of strain — dark circles under eyes, a tightness around the mouth. High, defined cheekbones reflecting East Asian ancestry mixed with stronger jaw contours from Eastern European lineage. Eyes set with characteristic slight almond shape from East Asian heritage. Facial hair kept neatly trimmed or shaved clean.",
+    "distinguishing_marks": [
+      "Surgical scar running across the right shoulder joint where the Type-4 arm was severed, pale and still slightly inflamed",
+      "Small burn scar on left forearm from a dock accident, thin and faded",
+      "Tattoo on inner left wrist: a minimalist Φ symbol, self-done, slightly uneven — represents a shift in identity"
+    ],
+    "visible_augmentations": "Left arm: sleek matte-black Arcturus Type-4 combat prosthetic with visible articulation joints and faint blue LED tracery along the forearm. Right arm: Tier 1 surplus prosthetic, noticeably lighter in color (gray-plastic tone) than his skin, poorly maintained paint job showing cracks and chips. A faint grinding sound audible when the right arm moves. The mismatch is deliberate and shameful.",
+    "posture_movement": "Moves with fluid grace, favoring his left side unconsciously. Leans against things often — walls, tables, other people — as if he needs physical anchoring. Eyes frequently drift downward to his right arm. When he speaks, his left hand gestures expressively while his right hangs stiffly at his side.",
+    "clothing_style": "Hodgepodge Tier 4-5 salvage: faded neon-stripe tank top or loose synthetic shirt worn open over a thermal undershirt, industrial cargo pants with multiple pockets (most empty), worn-out neo-leather boots. A hand-stitched Arcturus Defense patch sewn onto his jacket sleeve — a bitter joke. Sometimes wears a long coat to hide the mismatched arms. Cheap jewelry: a chain necklace, a ring with a cracked stone. Everything clean but worn."
+  },
+  "image_prompt": "Orion Wójcik-Olofsson, 182cm athletic lean male with warm golden-brown skin, Eastern European and East Asian mixed heritage visible in defined cheekbones and almond-shaped eyes, short dark brown hair. Wearing faded neon-stripe tank top over thermal undershirt, industrial cargo pants, worn neo-leather boots. Mismatched prosthetic arms: sleek matte-black Arcturus Type-4 with blue LED tracery on left, clunky gray plastic Tier 1 prosthetic on right. Surgical scar across right shoulder, minimalist Φ tattoo on inner left wrist. Dark circles under eyes, posture favoring left side, leaning against grimy metal wall. Cyberpunk 2226 GLMZ, neon-lit undercity setting, dim cool blue and amber lighting, gritty industrial aesthetic, moody and introspective expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 35.4,
+    "East Asian": 19.7,
+    "Hispanic/Latin American": 19.6,
+    "Sub-Saharan African": 12.9,
+    "Pacific Islander": 12.4
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

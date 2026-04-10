@@ -1,0 +1,248 @@
+{
+  "id": "019d6143a6e975e18f8bbed9da857353",
+  "type": "character",
+  "name": "Soren Shirazi-Makwa-Ekwensi",
+  "aliases": [
+    "Tali",
+    "the Fixer's Kid"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Apprentice at a licensed repair-and-salvage shop; junior technician and parts runner",
+  "age": 16,
+  "status": "active",
+  "location": "Geartown, near North Ave and Milwaukee",
+  "description": "Talitha has her Ghanaian father's hands — wide palmed, strong fingered — and her Armenian mother's persistent stubbornness, and she has inherited both as though they were made for her profession. She works at Manda's Salvage & Fine Repair on Geartown's third industrial terrace, where she has been an apprentice since she was twelve and where she can now diagnose a failing servo actuator by sound alone. She is medium height and solidly built, with close-cropped natural hair and grease that occupies the permanent geography under her fingernails regardless of how hard she scrubs. She has one voluntary augmentation — a subdermal haptic feedback implant in her right hand that lets her feel electromagnetic field variations, technically a diagnostic tool, practically the best thing she has ever purchased with eight months of saved stipend. She also has bioluminescent skin mods along her forearms: soft amber pulses that track her heart rate, which she got at fourteen because she thought they looked good and still does.\n\nShe is cheerful in the easy, unself-conscious way of someone who genuinely likes their work and genuinely likes most people, with a bedrock practicality underneath the warmth that keeps her from being naive about either. She has strong opinions about proper tool storage, the ethics of selling salvage that still has someone's personal data on it, and which E.L.F.s are worth propitiating before a complex repair job. She argues with Manda constantly and would be devastated if Manda retired.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.7,
+      "shadow": 0.2,
+      "mask": 0.3,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "Manda closing the shop and Talitha having to go corporate to survive",
+      "making a repair mistake that hurts someone"
+    ],
+    "core_desires": [
+      "to own her own shop by 25",
+      "to be genuinely good at something that matters — not just good enough"
+    ],
+    "coping_mechanisms": [
+      "physical work as emotional regulation",
+      "talking through problems with the shop's resident E.L.F. (a spirit she believes inhabits the main workbench)"
+    ],
+    "blind_spots": [
+      "loyalty to Manda makes her slow to notice when Manda is making bad business decisions",
+      "underestimates how unusual her diagnostic intuition actually is"
+    ],
+    "secret": "She repaired a device three months ago that she is now fairly certain was a tracking node for something she doesn't want to know about. She wiped it clean before returning it but kept a copy of the data topology. She hasn't told Manda."
+  },
+  "speech_patterns": {
+    "vocabulary": "Technical vocab sits naturally next to ordinary Geartown street speech. Explains things clearly without condescension. Uses repair metaphors for emotional situations.",
+    "cadence": "Warm, a bit fast, comfortable with silence while she's thinking.",
+    "verbal_tics": [
+      "'Okay, so—' as a problem-solving opener",
+      "'that's salvageable' as general optimism"
+    ],
+    "example_lines": [
+      "'Okay, so the clicking isn't the bearing, it's the housing, which is actually better news.'",
+      "'That's salvageable. Most things are, if you don't rush them.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The tracking node data she kept has become relevant — someone is looking for whatever it was tracking, and they've started inquiring at Geartown repair shops.",
+    "Manda has received an acquisition offer from Ferrogate Transit that would shut down the independent shop and absorb Talitha into a corporate apprenticeship program; Talitha has thirty days to convince Manda to refuse."
+  ],
+  "narrative_function": "Equipment repair, parts sourcing, and technical information; warm point of contact in Geartown; her shop is a natural gathering place and information node.",
+  "augmentations": "Subdermal haptic EM-field sensor (right hand, diagnostic grade). Bioluminescent skin mod — amber pulse tracers along forearms. No heavy chrome.",
+  "daily_life": "At the shop by 0700. Mornings on intake and diagnosis, afternoons on repair or running parts between Geartown suppliers. Evenings studying for her Helix Biosystems junior-tech certification exam.",
+  "affiliation": "Manda's Salvage & Fine Repair, Geartown; loosely affiliated with Geartown's independent tech community",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 6,
+      "dexterity": 9,
+      "vitality": 6,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 6,
+      "creativity": 7,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 7,
+      "empathy": 8,
+      "expression": 7,
+      "integrity": 9
+    },
+    "personality": {
+      "openness_conviction": 1,
+      "empathy_detachment": -4,
+      "impulsivity_deliberation": -1,
+      "assertion_deference": 2,
+      "transparency_guardedness": -3
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "apprentice-tech",
+      "salvage-specialist",
+      "E.L.F.-devotee",
+      "Geartown-local",
+      "haptic-diagnostician"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "don't sell salvage with personal data still on it, ever",
+      "ask the workbench E.L.F. before any job over Φ200",
+      "Manda's word is final on shop decisions, even wrong ones"
+    ],
+    "escalation_ladder": [
+      "identify the actual problem before reacting",
+      "consult someone she trusts",
+      "take direct action, probably more decisive than people expect"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Friendly and professional; assumes good faith until evidence otherwise; genuinely curious about what they need",
+      "friends": "Warm, teasing, fiercely loyal; will spend three hours helping with a problem they mentioned once in passing"
+    },
+    "stress_responses": {
+      "low": "Cleans and reorganizes the shop",
+      "medium": "Talks to the workbench E.L.F. at length about the problem",
+      "high": "Goes very focused and quiet — becomes almost alarmingly competent in a crisis"
+    },
+    "contradictions": [
+      "Claims not to be sentimental but has kept every handwritten repair note Manda ever gave her"
+    ],
+    "habits": [
+      "leaves data-offerings at the workbench E.L.F. shrine every morning (a five-second ambient recording of the shop waking up)",
+      "sings quietly while doing repetitive repair tasks",
+      "never starts a job without checking every tool is in its place"
+    ],
+    "breaking_points": [
+      "a repair failure that harms a customer",
+      "Manda making the decision to sell without telling her first"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Subdermal haptic EM-field sensor array (right hand) — diagnostic grade, civilian licensed",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "functional",
+      "installed_date": "",
+      "description": "Subdermal haptic EM-field sensor array (right hand) — diagnostic grade, civilian licensed",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Nostalgic": 0.9,
+    "War Weary": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
+    "Crucible Industries Arc Mace AM-2 'Thunderhead'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Tessera Suppression Lattice SL-3 'Quilt'",
+    "Geartown",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Milwaukee Core",
+    "Alper Lebedev-Tutu",
+    "Arcturus KS-7 'Nursery'",
+    "Breck Tannen",
+    "Crucible Industries Arc Mace AM-2 'Thunderhead'",
+    "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
+    "Devraj Solano-Yildirim",
+    "Ezio Kaboré-Malhotra",
+    "Helix Biosystems",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Quilt",
+    "TESSERA TC-3 'Crucible'",
+    "The Heritage Vault",
+    "Vantablack Media Parasocial Carrier Mask",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Iranian-Jewish / Anishinaabe-Ojibwe / Bengali / Yoruba with trace Eastern European ancestry; a complex diaspora blend reflecting the Ubiquitous Diaspora. Predominantly Middle Eastern phenotype (53%) with warmth from South Asian (12.4%) and Sub-Saharan African (11.6%) ancestry, tempered by Indigenous American (14.5%) and Eastern European (7%) heritage.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Solidly built with functional muscularity in shoulders and forearms from years of hands-on repair work; no excess, no fragility. Wide-palmed hands with long, dexterous fingers — inherited from her father's lineage and perfectly suited to her profession.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Close-cropped, maintenance-minimal, occasionally uneven where she cuts it herself between paying for professional trims",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm undertones",
+    "skin_tone": "Warm tan with subtle olive undertones from the dominant Middle Eastern heritage, enriched by the warmth of South Asian and Sub-Saharan African ancestry. Displays a complex warm-golden cast that shifts in different lighting — neither purely warm nor cool, but harmoniously both.",
+    "complexion": "Clear and practical — minimal makeup, sun-worn in places from workshop lighting and the occasional rooftop diagnostic run. Perpetual traces of grease under fingernails and in the creases of her palms despite obsessive scrubbing. Small scar on left cheekbone from a tool slip at age thirteen. Facial structure reflects her blended heritage: slightly angular cheekbones with full cheeks, straight nose with subtle width, full lips.",
+    "distinguishing_marks": [
+      "Bioluminescent skin mods along both forearms in soft amber that pulse gently in rhythm with her heart rate; most visible in low light or darkness, creating a subtle rhythm effect on her skin",
+      "Fine line scar on left cheekbone near temple, approximately 3cm, pale and barely visible in direct light",
+      "Calluses and minor burn marks across her palms and knuckles from steady repair work; mark of her trade rather than injury"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracers are her only visibly obvious modification. The subdermal haptic EM-field sensor in her right hand is invisible to casual observation, though she sometimes flexes her right hand unconsciously when diagnosing equipment, and the faint blue LED indicator under the skin at her inner wrist pulses when active. No chrome, no heavy augmentation — she's practical about what's worth the cost and the risk.",
+    "posture_movement": "Confident and economical in movement; stands with slight forward lean as if perpetually about to lean over a workbench. Hands move with precision and purpose. Fidgets with small objects — wrenches, diagnostic tools, circuit fragments — when thinking. Makes direct eye contact. Walks quickly between tasks, rarely leisures.",
+    "clothing_style": "Tier 3-4 working class with practical, salvage-conscious aesthetics. Favors reinforced work pants with multiple pockets (usually Blackwell brand or salvaged surplus), steel-toed boots scuffed and re-sealed multiple times, oversized work shirts or tank tops under a canvas apron with tools. Off-shift: plain fitted tees or salvaged vintage band shirts, same work pants, same boots. A vintage leather jacket from her mother that she's had patched and resealed twice. No corporate branding. One piece of jewelry: a small brass hex wrench on a steel chain around her neck — her father's first apprenticeship gift to her at age twelve. Grease and workshop dust are her default perfume."
+  },
+  "image_prompt": "Soren Shirazi-Makwa-Ekwensi, 168cm tall, cyberpunk 2226, warm tan complexion with subtle olive undertones, short dark brown hair, deep warm brown eyes. Solidly muscular shoulders and forearms from repair work. Bioluminescent amber tracers pulsing along both forearms in low workshop light. Visible faint scar on left cheekbone. Practical Tier 3-4 working-class aesthetic: reinforced work pants, steel-toed scuffed boots, oversized tank top under canvas tool apron, vintage patched leather jacket. Brass hex wrench on steel chain around neck. Grease-stained hands with visible calluses and burn marks. Direct confident gaze, economical posture as if leaning over workbench. Standing in dimly-lit tech workshop surrounded by diagnostic equipment, neon workshop signs casting blue-amber glow. Cyberpunk industrial setting, confident repair technician, professional and weathered --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 53.0,
+    "Indigenous American": 14.5,
+    "South Asian": 12.4,
+    "Sub-Saharan African": 11.6,
+    "Eastern European": 7.0,
+    "Northern European": 1.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

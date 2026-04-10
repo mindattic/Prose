@@ -518,7 +518,7 @@ internal class RealDataPathProvider : IPathProvider
 
     public string DataRoot => root;
     public string WorldbuildingDir => Path.Combine(root, "worldbuilding");
-    public string CharactersDir => Path.Combine(root, "characters");
+    public string CharactersDir => Path.Combine(root, "people");
     public string EssencesDir => Path.Combine(root, "essences");
     public string StoriesDir => Path.Combine(root, "stories");
     public string EngineDataDir => engineData;

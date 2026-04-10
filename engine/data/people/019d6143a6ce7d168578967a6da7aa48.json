@@ -1,0 +1,336 @@
+{
+  "id": "019d6143a6ce7d168578967a6da7aa48",
+  "type": "character",
+  "name": "Tumelo Savea",
+  "aliases": [
+    "Ash",
+    "The Professional"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Personnel recovery and hostile extraction — extraction specialist",
+  "age": 33,
+  "status": "active",
+  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
+  "description": "Sinan Tanaka-Frimpong is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.1,
+      "ideal": 0.66,
+      "id": 0.66,
+      "shadow": 0.19,
+      "mask": 0.85,
+      "ghost": 0.46
+    },
+    "core_fears": [
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Going cyberpsycho — losing the boundary between human and machine"
+    ],
+    "core_desires": [
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Control — over their body, their schedule, their future",
+      "To matter to someone for who they are, not what they can do"
+    ],
+    "coping_mechanisms": [
+      "Planning — responds to chaos by making detailed contingency plans for everything",
+      "Ritual — follows the same pre-job routine every time, superstition as structure",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
+      "Cannot accept help without interpreting it as leverage"
+    ],
+    "secret": "Sinan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+  },
+  "speech_patterns": {
+    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "verbal_tics": [
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
+      "Uses old pre-collapse slang that nobody else remembers"
+    ],
+    "example_lines": [
+      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+      "\"The extraction window is four minutes. I've done it in three.\"",
+      "\"I don't rescue people. I relocate them aggressively.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "A dead drop Sinan Tanaka-Frimpong maintains is found and cleaned out — whoever did it now has leverage",
+    "A former associate resurfaces with evidence that could destroy Sinan Tanaka-Frimpong's reputation — and a price for silence",
+    "The fixer who handles Sinan Tanaka-Frimpong's contracts goes silent — dead, disappeared, or turned"
+  ],
+  "narrative_function": "As a extraction specialist, Sinan Tanaka-Frimpong embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+  "affiliation": "Independent — works solo contracts",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 8,
+        "augmented": 3,
+        "effective": 4
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 8
+      },
+      "endurance": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 9
+      },
+      "reflexes": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 5
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 7,
+        "augmented": 2,
+        "effective": 4
+      },
+      "perception": {
+        "base": 6,
+        "augmented": 0,
+        "effective": 7
+      },
+      "willpower": {
+        "base": 8,
+        "augmented": 1,
+        "effective": 10
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 9
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 8
+      },
+      "intimidation": {
+        "base": 4,
+        "augmented": 1,
+        "effective": 7
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 9
+      },
+      "empathy": {
+        "base": 8,
+        "augmented": 0,
+        "effective": 4
+      }
+    },
+    "personality": {
+      "aggression": 0.6,
+      "caution": 0.86,
+      "loyalty": 0.83,
+      "greed": 0.23,
+      "empathy": 0.83
+    },
+    "drives": [
+      "survival",
+      "money",
+      "protection"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 5,
+      "loyalty_break": 7
+    },
+    "strengths": [
+      "multilingual — speaks 4+ languages fluently",
+      "technical expertise with augmentation systems",
+      "photographic memory for faces and layouts"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "difficulty with authority figures",
+      "trust issues that limit crew effectiveness"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "extraction specialist",
+      "tier-3",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Always verifies target identity independently before lethal contracts",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+    },
+    "stress_responses": {
+      "low": "Becomes more talkative, working through scenarios verbally.",
+      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
+      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+    },
+    "contradictions": [
+      "Presents as emotionless professional but is deeply affected by collateral damage",
+      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior"
+    ],
+    "habits": [
+      "Never drinks anything they didn't see poured or open themselves",
+      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
+    ],
+    "breaking_points": [
+      "A child being put in danger as leverage against them",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Watching someone they trained or mentored die on a job they recommended"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "replaces": ""
+    },
+    {
+      "name": "Synthetic blood with oxygen-carrying nanites",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Face": 0.7,
+    "Diplomat": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Volkov-Saito Precision VS-R8 'Verdict'",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "GLMZ",
+    "Slagworks Industrial",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
+    "Arcturus ST-4 'Verdict'",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Cem Lund-Bangura",
+    "Chibundo Reinholt-Sarpong",
+    "Crucible RE-2 'Receptionist'",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "Independent Micro-Grid Power Cooperative",
+    "Irontide Tidal Energy",
+    "Makena Johanssen-Diallo",
+    "Narrowcast",
+    "Neuromorphic Pressure Cestus",
+    "Prophet",
+    "Réginald Asomaning-Čabarkapa",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "TERMINUS",
+    "TESSERA CC-6 'Shepherd'",
+    "The Fathom Line",
+    "The Wire Taps",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Pacific Islander (Polynesian/Melanesian) dominant with significant Sub-Saharan African and Hispanic/Latin American ancestry—a striking blend producing rich warm-brown skin with golden undertones, broad facial structure with strong cheekbones, and the athletic build characteristic of Pacific Islander genetics.",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, all efficiency — long limbs with visible musculature but no excess bulk. The physique of someone who has optimized every gram for functional movement rather than appearance.",
+    "hair_color": "Black with premature silver threading at the temples",
+    "hair_style": "Closely cropped, sharp edges, deliberately maintained",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings encircling dark pupils — thermal and low-light augmentation visible as faint LED circuitry at the rim",
+    "skin_tone": "Deep warm brown with golden undertones—rich melanin-dense complexion from his Pacific Islander and African ancestry, with subtle warmth from Hispanic heritage.",
+    "complexion": "Broad, strong facial structure with prominent cheekbones and defined jawline typical of Pacific Islander genetics. Skin shows minor scarring around the eye sockets from augmentation integration — thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
+    "distinguishing_marks": [
+      "Surgical scars encircling both eye sockets in thin white lines where cybernetic implants were integrated.",
+      "Thin burn scar along the inside of his right forearm — pale against darker skin, roughly 8cm long, from an old extraction gone wrong.",
+      "Small entry wound scar on his left shoulder blade, barely noticeable unless he's shirtless."
+    ],
+    "visible_augmentations": "Chrome iris rings in both eyes — distinctive, deliberate, makes no attempt to hide them. The rings glow faintly in low light with thermal overlay activation. No visible limb augmentation; synthetic blood and nanite system is entirely subcutaneous.",
+    "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
+    "clothing_style": "Tier 2-3 functional aesthetic — tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
+  },
+  "image_prompt": "Tumelo Savea, a lean 188cm tall man with deep warm golden-brown skin from Pacific Islander and African heritage, standing in a cyberpunk 2226 Great Lakes Metropolitan Zone urban setting. Sharp facial structure with prominent cheekbones, short black hair with silver at temples, clean-shaven. Striking chrome iris rings glowing faintly in both eyes with visible LED circuitry—his most distinctive feature. Thin surgical scars barely visible around eye sockets. Wearing a charcoal tactical jacket over grey compression base layer, black reinforced pants, unmarked boots. Posture is alert and economical, weight forward, standing ready. Moving with calculated precision through neon-lit rain-slicked streets, environment reflecting in his chrome eyes. Moody amber and blue cyberpunk lighting, slight thermal haze effect suggesting his augmented vision overlay. Worn titanium watch visible. Professional field operative aesthetic, no wasted motion, constant environmental scanning. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 66.7,
+    "Sub-Saharan African": 23.5,
+    "Hispanic/Latin American": 9.8
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

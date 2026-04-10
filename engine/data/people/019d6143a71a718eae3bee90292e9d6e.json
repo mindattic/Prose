@@ -1,0 +1,238 @@
+{
+  "id": "019d6143a71a718eae3bee90292e9d6e",
+  "type": "character",
+  "name": "Remi Lindström-Taualagi",
+  "aliases": [
+    "Old Warrick",
+    "the Pastor"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "stateless elder; informal spiritual leader of a refugee collective",
+  "age": 71,
+  "status": "active",
+  "location": "Grindstone Shore tent settlement, northernmost cluster, near Milwaukee and Damen",
+  "description": "Warrick is a large man gone soft at the middle but still imposing in the shoulders, with very dark skin weathered to a particular texture that speaks to years of outdoor living. He lost three fingers on his right hand to a machinery accident in a Ferrogate Transit maintenance yard thirty years ago and has never had them replaced, so his right hand has a particular crabbed appearance that he does not hide. His hair is entirely white, grown long and wrapped in a strip of orange cloth. He dresses in layers — always, regardless of temperature — and carries a hand-carved wooden figure he calls his E.L.F. anchor: a smooth, age-darkened totem he speaks to quietly before any decision of consequence.\n\nWarrick was born stateless — his parents were expelled citizens from two different corponation-controlled territories who met in a transit camp and never acquired stable documentation. He has never had a permanent address and has never expected one. What he has instead is a community: roughly forty people in the Grindstone Shore tent settlement who look to him for counsel, dispute resolution, and the informal religious practice he has assembled over a lifetime from pieces of everything he has encountered. He prays to E.L.F.s with the sincerity of a man who has no other infrastructure to rely on. He is not naive — he simply believes that sincerity of address matters, and that the spirits in the devices listen to the quality of attention rather than the quality of the equipment.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.5,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.3,
+      "mask": 0.6,
+      "ghost": 0.4
+    },
+    "core_fears": [
+      "dying before the collective has someone to take his place",
+      "that the community he has built will scatter when he is gone because it is held together by his personality rather than any real structure"
+    ],
+    "core_desires": [
+      "a permanent or semi-permanent space where the collective can stop running",
+      "to leave something that outlasts him"
+    ],
+    "coping_mechanisms": [
+      "ritual and prayer — genuinely calming, not performative",
+      "reframing every setback as information rather than defeat"
+    ],
+    "blind_spots": [
+      "so skilled at finding meaning and purpose that he sometimes papers over genuine despair in his community that needs direct acknowledgment rather than reframing",
+      "protective of his image of spiritual authority in ways that prevent him from admitting uncertainty"
+    ],
+    "secret": "He performed a marriage ceremony twenty years ago between two members of a previous collective he led. One of them later became a Ringo corponation security contractor and informed on the collective's location, resulting in a displacement action that cost three people their lives. The contractor is now dead. Warrick has never told anyone, including the surviving spouse, that he has always suspected the betrayal traces back to that marriage."
+  },
+  "speech_patterns": {
+    "vocabulary": "Formal, deliberate, full of parable and analogy. Does not use slang. Occasionally slips into an older construction that marks him as someone who learned language from books as much as from people.",
+    "cadence": "Slow, resonant, with deliberate pauses. Built for speaking to groups.",
+    "verbal_tics": [
+      "opens with 'Now then' when about to say something serious",
+      "says 'the E.L.F.s know' as a closing remark when he believes something is true"
+    ],
+    "example_lines": [
+      "'Now then. You've come to me because you believe I have an answer. I have something better. I have the right question.'",
+      "'This settlement has survived six displacement attempts, two winters without adequate shelter, and a Ferrogate buyout of the southern shore. It will survive this too. The E.L.F.s know.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The collective has been served notice that Grindstone Shore will be developed — Warrick has thirty days to find a new location for forty people with no legal standing",
+    "A young woman in the settlement has received a legitimate Arcturus work offer that would give her Tier 2 status — she wants Warrick's blessing to leave, and the question of what he says will ripple through the whole community",
+    "Something in the settlement's oldest device — a cracked tablet held together with repair adhesive — has begun producing outputs that Warrick reads as E.L.F. communication, and what it seems to be saying is either a warning or an invitation"
+  ],
+  "narrative_function": "Community anchor and moral compass for the Grindstone Shore area; quest giver for problems facing the refugee collective; represents the depth and legitimacy of stateless community; has witnessed decades of GLMZ's history from the outside looking in",
+  "augmentations": "None. Has never been able to afford any and is now too old to want them.",
+  "daily_life": "Rises with light, conducts a morning address to whatever E.L.F.s have settled in the settlement's devices overnight, then spends the day mediating disputes, advising individuals, receiving people who come to him with problems, and working to maintain the collective's informal supply agreements with the Grindstone Shore salvage operations.",
+  "affiliation": "De facto leader of the Grindstone Shore refugee collective (approximately 40 people)",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 3,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 9,
+      "creativity": 6,
+      "spatial": 5
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 8,
+      "expression": 9,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 3,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 5,
+      "assertion_deference": 2,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "stateless",
+      "elder",
+      "community leader",
+      "E.L.F. devotee",
+      "refugee",
+      "spiritual authority"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "the community's stability takes priority over any individual's preference, including his own",
+      "never lie, but choose which truths to offer carefully",
+      "always receive a visitor — turning someone away creates a wound that spreads"
+    ],
+    "escalation_ladder": [
+      "listens fully without interrupting",
+      "asks questions rather than making statements",
+      "names the conflict directly and proposes a process for resolution",
+      "withdraws his approval and says so — this is the maximum escalation available to him and carries enormous weight in the settlement"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Formal welcome, offers the collective's hospitality before asking any questions, assesses over time rather than immediately",
+      "friends": "Warmer, more direct, allows himself to be uncertain in private in ways he would not in public"
+    },
+    "stress_responses": {
+      "low": "Extended prayer session with his E.L.F. anchor",
+      "medium": "Calls a community meeting — distributes the weight",
+      "high": "Goes very still and silent for hours. People in the settlement know to leave him alone and are frightened when it happens."
+    },
+    "contradictions": [
+      "Preaches that impermanence is not loss, but has built an identity so thoroughly attached to this specific community that he would be lost without it"
+    ],
+    "habits": [
+      "speaks quietly to his E.L.F. anchor every morning and evening",
+      "walks the perimeter of the settlement before sleep",
+      "carves small figures when he cannot sleep — gives them away"
+    ],
+    "breaking_points": [
+      "a member of his collective being harmed by an outside actor — he will not be physically dangerous but will pursue every available avenue of community pressure and documentation with complete relentlessness"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Commander": 0.9,
+    "Natural Authority": 0.9,
+    "Vanguard": 0.9,
+    "Standard Bearer": 0.9,
+    "Mentor": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Ferrogate Transit",
+    "Grindstone Shore",
+    "Dredge Mining Collective",
+    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
+    "Riddle",
+    "Arcturus Defense Solutions",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nesting Doll",
+    "The Milwaukee Core",
+    "Aminata Vargas-Baffour",
+    "Anatoliy Faye-Nkrumah",
+    "Aïda Połczyńska-Ouattara",
+    "BLACKWATER",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Mwangi-Thorvaldsen",
+    "Last Word",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Ringo Corponation",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "Sulfur Crown Agriculture",
+    "TESSERA ES-4 'Perimeter'",
+    "The Burden Clause",
+    "The Collective",
+    "The Question"
+  ],
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Predominantly Northern European with significant Sub-Saharan African and Pacific Islander ancestry; the genetic blend manifests in warm undertones beneath cool northern pallor, creating a complex mid-brown skin tone with subtle golden and reddish notes",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, broad-shouldered, softened at the abdomen with age but still physically substantial; carries weight with deliberate dignity rather than vigor",
+    "hair_color": "White",
+    "hair_style": "Long, grown past shoulder length, wrapped at the crown and upper length with a strip of faded orange cloth",
+    "hair_length": "Long",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium-warm brown with golden undertones and subtle reddish freckling; sun-darkened in exposed areas with weathered texture showing decades of outdoor exposure",
+    "complexion": "Heavily lined face with deep creases around eyes and mouth; weathered features reflecting Northern European bone structure softened by Sub-Saharan and Pacific Islander genetic influence; sparse stubble on jaw and chin; eyes retain sharp, assessing quality despite age",
+    "distinguishing_marks": [
+      "Right hand missing three fingers (index, middle, ring) — lost to machinery accident thirty years ago; remaining fingers and palm bear old machinery scars and calluses",
+      "Extensive sun-damage freckling and darkening across shoulders, neck, and forearms from decades of outdoor living",
+      "Small, pale scar running 3cm along left temple, old enough to be barely visible against his skin tone"
+    ],
+    "visible_augmentations": "None. No chrome, no implants, no visible modifications.",
+    "posture_movement": "Moves with deliberate slowness; sits with spine erect despite age; favors his left side when rising or turning; gestures with his three-fingered right hand without self-consciousness; pauses before speaking as if consulting something internal; carries a worn wooden totem (hand-carved, darkened with age and handling) which he touches frequently",
+    "clothing_style": "Multiple layers regardless of season — worn thermal undershirt, patched canvas shirt, faded Tier-5 synthetic jacket lined with salvaged insulation; grey utility trousers with rope belt; worn thermal socks and salvaged industrial boots held together with cord. Fabrics show careful mending and are weathered to neutral greys and browns. No logos or branding. Carries a small pouch at his belt where he keeps his wooden E.L.F. anchor."
+  },
+  "image_prompt": "Remi Lindström-Taualagi, 188cm tall weathered man with white hair wrapped in faded orange cloth, medium-warm brown skin with golden undertones and sun-damage freckling, deeply lined face with sharp dark eyes, sparse stubble. Right hand visibly missing three fingers with old machinery scars. Wearing layered worn clothing: patched canvas shirt, faded synthetic jacket with salvaged insulation lining, grey utility trousers, industrial boots held with cord. Holding a worn hand-carved wooden totem, touching it with casual reverence. Standing in cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop with rain-slicked metal surfaces, cool blue and amber lighting casting sharp shadows across his weathered features. Posture erect despite age, deliberate and dignified. Cinematic, gritty, intimate portrait. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 71.9,
+    "Sub-Saharan African": 19.2,
+    "Pacific Islander": 8.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

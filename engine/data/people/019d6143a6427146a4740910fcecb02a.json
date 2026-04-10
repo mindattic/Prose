@@ -1,0 +1,341 @@
+{
+  "id": "019d6143a6427146a4740910fcecb02a",
+  "type": "character",
+  "name": "Ember Kjellberg",
+  "aliases": [
+    "Weld",
+    "The Operator"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Precision elimination specialist — ghost",
+  "age": 44,
+  "status": "active",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
+  "description": "Kenji Granlund-Tawiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKenji Granlund-Tawiah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.18,
+      "ideal": 0.77,
+      "id": 0.19,
+      "shadow": 0.18,
+      "mask": 0.67,
+      "ghost": 0.72
+    },
+    "core_fears": [
+      "Being identified by corporate facial recognition — living off-grid is survival",
+      "Becoming obsolete as augmentation technology outpaces their chrome",
+      "That they're fundamentally alone and connection is just a vulnerability"
+    ],
+    "core_desires": [
+      "To find the person who burned them and make it educational",
+      "Power — enough leverage that nobody ever threatens them again",
+      "The perfect run — one job so clean it becomes legend"
+    ],
+    "coping_mechanisms": [
+      "Overwork — takes every contract offered because idleness invites thinking",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+    ],
+    "blind_spots": [
+      "Assumes everyone has an angle because they always have an angle",
+      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
+    ],
+    "secret": "Kenji Granlund-Tawiah is terrified of deep net diving but has built their reputation on it. Uses black-market AI to handle the heavy lifting while taking credit."
+  },
+  "speech_patterns": {
+    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
+    "verbal_tics": [
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop",
+      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
+    ],
+    "example_lines": [
+      "\"I don't exist. Neither will they.\"",
+      "\"Clean means no witnesses, no evidence, no questions. That's three things. I charge for each.\"",
+      "\"The target will stop breathing at the specified time. What you do with that information is your concern.\""
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "Kenji Granlund-Tawiah intercepts intelligence about a threat to their district and must decide between profit and protection",
+    "A former associate resurfaces with evidence that could destroy Kenji Granlund-Tawiah's reputation — and a price for silence",
+    "Kenji Granlund-Tawiah is offered a contract that would clear all their debts — the target is someone they respect"
+  ],
+  "narrative_function": "Kenji Granlund-Tawiah functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Smartgun link in right forearm — interfaces directly with compatible weapons",
+  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": {
+        "base": 4,
+        "augmented": 3,
+        "effective": 10
+      },
+      "agility": {
+        "base": 7,
+        "augmented": 0,
+        "effective": 7
+      },
+      "endurance": {
+        "base": 3,
+        "augmented": 1,
+        "effective": 10
+      },
+      "reflexes": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      }
+    },
+    "mental": {
+      "intelligence": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 6
+      },
+      "perception": {
+        "base": 4,
+        "augmented": 0,
+        "effective": 9
+      },
+      "willpower": {
+        "base": 6,
+        "augmented": 2,
+        "effective": 4
+      },
+      "technical": {
+        "base": 4,
+        "augmented": 2,
+        "effective": 5
+      }
+    },
+    "social": {
+      "charisma": {
+        "base": 5,
+        "augmented": 3,
+        "effective": 7
+      },
+      "intimidation": {
+        "base": 5,
+        "augmented": 2,
+        "effective": 8
+      },
+      "deception": {
+        "base": 5,
+        "augmented": 1,
+        "effective": 10
+      },
+      "empathy": {
+        "base": 3,
+        "augmented": 0,
+        "effective": 8
+      }
+    },
+    "personality": {
+      "aggression": 0.15,
+      "caution": 0.58,
+      "loyalty": 0.58,
+      "greed": 0.68,
+      "empathy": 0.49
+    },
+    "drives": [
+      "reputation",
+      "knowledge",
+      "power"
+    ],
+    "thresholds": {
+      "pain": 6,
+      "stress": 8,
+      "loyalty_break": 6
+    },
+    "strengths": [
+      "strategic thinking under pressure",
+      "exceptional close-quarters combat",
+      "mechanical aptitude — can repair or modify almost anything"
+    ],
+    "weaknesses": [
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "chronic insomnia affecting long-term performance",
+      "overconfidence in specialty areas leading to blind spots"
+    ],
+    "tags": [
+      "runner",
+      "freelance",
+      "ghost",
+      "tier-2",
+      "meridian-88",
+      "augmented",
+      "street-level",
+      "contract-worker"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Always verifies target identity independently before lethal contracts",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Never discusses active contracts with anyone not directly involved",
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Will work with anyone once. Second time requires vouching from someone trusted.",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+    ],
+    "escalation_ladder": [
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+    ],
+    "interpersonal_modes": {
+      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
+      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+    },
+    "stress_responses": {
+      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+    },
+    "contradictions": [
+      "Preaches independence but is desperate for approval from people they respect",
+      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+    ],
+    "habits": [
+      "Checks exits within 10 seconds of entering any room",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Keeps a physical paper notebook — no digital record of personal thoughts"
+    ],
+    "breaking_points": [
+      "Watching someone they trained or mentored die on a job they recommended",
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Running out of options — no contacts, no money, no safe house, no way out"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "Wired reflexes with adrenaline pump",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "worn",
+      "installed_date": "",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "replaces": ""
+    },
+    {
+      "name": "Smartgun link in right forearm",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "degraded",
+      "installed_date": "",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Charmer": 0.9,
+    "Pragmatist": 0.9,
+    "Face": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Kang-Petrov Arms KPS-7V 'Verdict'"
+  ],
+  "registered_firearms": [
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Kang-Petrov Arms KPS-7V 'Verdict'"
+  ],
+  "related_entities": [
+    "The Gradient Compact",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Pellucid Systems",
+    "Clover",
+    "Chicago",
+    "Ambrosia Fekete-Waiyaki",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-P1 'Centurion'",
+    "Arcturus ST-4 'Verdict'",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Independent Micro-Grid Power Cooperative",
+    "Kang-Petrov Arms KPS-7V 'Verdict'",
+    "Neuromorphic Pressure Cestus",
+    "Nnamdi Ostrowski-Faletolu",
+    "Quilt",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "The Filament",
+    "The Heritage Vault",
+    "The Wire Taps",
+    "Vanta Ordnance Phalanx VO-8 'Centurion'",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yuki Nwosu-Petrenko",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Predominantly East Asian with significant Hispanic/Latin American, South Asian, and minor Sub-Saharan African ancestry — a striking blend of continental genetics resulting in a unique phenotype that defies simple categorization. The East Asian foundation dominates bone structure and coloration, while the admixture creates unexpected warmth and dimensional complexity.",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Compact and densely muscled, built low and wide through the shoulders and hips — engineered for leverage and impact absorption rather than height. No excess fat; every kilogram is functional mass.",
+    "hair_color": "Dark brown with premature silver threading through the sides",
+    "hair_style": "Close-cropped and practical, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and constantly scanning",
+    "skin_tone": "Warm tan complexion with golden and olive undertones — the result of East Asian primary ancestry blended with Hispanic/Latin American and South Asian contributions, creating a rich, dimensional skin color with subtle warmth that shifts in different lighting",
+    "complexion": "Angular face with high, prominent cheekbones and squared jaw — East Asian bone structure refined through South Asian and Hispanic/Latin American admixture. Minimal grooming beyond function — no jewelry, no vanity. A thin scar runs from his left temple to his cheekbone, pale against his skin. His eyes are set deep and perpetually tired; the kind of tiredness that comes from chronic hypervigilance rather than lack of sleep.",
+    "distinguishing_marks": [
+      "Thin pale scar running from left temple diagonally down to cheekbone — old injury, expertly healed",
+      "Chemical burn scarring on the right side of his neck, partially hidden by collar — discolored and mottled, approximately 3cm diameter",
+      "Tattoo on left forearm: intricate circuit-board pattern in black ink, older work, starting to blur with age"
+    ],
+    "visible_augmentations": "Right forearm shows obvious chrome plating and mechanical articulation around the wrist and hand — smartgun link hardware visible as recessed ports and connector interfaces along the forearm. Reflective neural-link ports at the base of his skull, visible when his hair is wet. The wired reflexes system creates subtle musculature distortion across his upper arms and shoulders — the augmentation sits just under the skin, creating an uncanny smoothness and slight luminescence under certain light.",
+    "posture_movement": "Moves with economical precision — no wasted motion. His weight is distributed low, center of gravity dropped slightly as if perpetually braced for impact. He favors his left side, trusting the right arm's augmented reflexes for reactive work. His eyes move constantly, scanning exits and threats before his body shifts. When still, he appears coiled rather than relaxed.",
+    "clothing_style": "Tier 4 utilitarian: reinforced cargo pants in matte black with internal holster stitching, worn synthetic leather jacket with oversized pockets and internal webbing, subdued colors (grays, blacks, dark greens). No logos or corporate branding — anonymity is the goal. Boots are serious — steel-toed, scuffed, maintained for function over appearance. A single piece of genuine hardware: a worn steel watch with a cracked face, kept for unknown sentimental reasons."
+  },
+  "image_prompt": "Cyberpunk 2226, Ember Kjellberg: compact 168cm mercenary with East Asian-dominant mixed ancestry (57% East Asian, 20% Hispanic/Latin American, 16% South Asian, 5% Sub-Saharan African), warm golden-tan complexion, angular high cheekbones, short dark brown hair with silver threading, deep-set dark brown eyes constantly scanning. Thin pale scar temple to cheekbone, chemical burn scarring on right neck. Right forearm chromed with visible smartgun-link ports and mechanical wrist articulation. Neural-link ports at skull base. Wired reflexes create subtle luminescent musculature distortion across upper arms. Compact muscular build, low center of gravity, coiled posture. Wearing matte black reinforced cargo pants, worn synthetic leather jacket with internal webbing, steel-toed boots. Cracked steel watch. Economical movement, tactical alertness, no jewelry. Dimly lit urban environment, neon glow reflecting off chrome augmentations, noir cyberpunk atmosphere --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 57.8,
+    "Hispanic/Latin American": 20.0,
+    "South Asian": 16.7,
+    "Sub-Saharan African": 5.5
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

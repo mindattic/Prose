@@ -1,0 +1,305 @@
+{
+  "id": "019d6143a6377be28724d6b89d77b83f",
+  "type": "character",
+  "name": "Chinwe Larsdóttir-Okafor",
+  "aliases": [
+    "Isa",
+    "The Seamstress",
+    "Threadbare"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Black-market biosurgeon and underground body-modification artist",
+  "age": 41,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Division",
+  "description": "Isadora Vukić-Nambiar operates out of a converted laundry unit in the lower warrens of The Shelf, where the smell of industrial solvent and antiseptic has long since soaked into the walls. She is a compact woman of Croatian-South Indian descent, with close-cropped silver hair that came in early and which she has never bothered to correct, and hands that move with the practiced economy of someone who has spent twenty years doing delicate work in poor light. Her face carries the particular stillness of a person who has learned to read rooms faster than rooms read her — broad cheekbones, dark eyes that tend to linger a beat too long, a scar along her left jaw she describes as a 'client disagreement' without elaboration.\n\nShe was once a licensed reconstructive surgeon working out of a mid-tier clinic in The Circuit, specializing in trauma repair for workers injured in the manufacturing corridors. Her license was revoked twelve years ago following an investigation she maintains was fabricated by a corporate medical supplier whose overpriced components she had publicly refused to use. Whether or not that account is entirely accurate, she has since built a second career below the licensing threshold — patching up people the official system has no interest in treating, installing augmentations that haven't cleared regulatory review, and occasionally doing work that blurs into the aesthetic and the transgressive. Her client list runs from Shelf scrappers who need a cracked bone set to mid-tier fixers wanting off-the-books neural work.\n\nIsadora does not advertise sentiment about her work, but the regulars know that her rates scale sharply with the client's apparent wealth, and that she has been known to work for nothing when she judges the need sufficient. She keeps a small dog of indeterminate breed named Suture, drinks instant coffee with the resignation of someone who remembers better, and sleeps four hours a night by choice rather than necessity.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.65,
+      "ideal": 0.72,
+      "id": 0.38,
+      "shadow": 0.51,
+      "mask": 0.44,
+      "ghost": 0.59
+    },
+    "core_fears": [
+      "That her work will one day kill someone she was trying to save",
+      "That the original investigation was partly justified and she has never fully examined why",
+      "Losing the dexterity in her hands — her last remaining credential"
+    ],
+    "core_desires": [
+      "To practice medicine without asking permission from institutions that don't deserve it",
+      "To be trusted completely by at least one other person",
+      "For the work itself to be enough — to not need recognition"
+    ],
+    "coping_mechanisms": [
+      "Extreme procedural focus — she ritualizes her workspace preparation to manage anxiety",
+      "Deflecting emotional conversations with dry clinical language",
+      "Caring for Suture as a low-stakes intimacy she can manage"
+    ],
+    "blind_spots": [
+      "Assumes her own ethical framework is more coherent than it is",
+      "Underestimates how much her bitterness about the license revocation still drives decisions",
+      "Tends to dismiss clients who are emotionally expressive as less serious, missing important context"
+    ],
+    "secret": "She still has access credentials to a corporate medical database she was never supposed to retain — and she has been quietly pulling patient data on a specific Spire-affiliated executive she believes ordered the false investigation, building a dossier she isn't sure she'll ever use."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and functional, clinical terminology deployed naturally but never condescendingly; occasional Croatian idioms that surface when she's stressed; dry wit that tends toward understatement",
+    "cadence": "Measured and unhurried, with long pauses before important statements; speaks less than she listens; rarely raises her voice",
+    "verbal_tics": [
+      "Starting disagreements with 'That's one reading of it'",
+      "Saying 'hold' instead of 'wait' or 'stop' in both medical and social contexts",
+      "Referring to the body in third person during procedures ('the tissue wants to go left')"
+    ],
+    "example_lines": [
+      "'Hold. Tell me where it actually hurts, not where you think I want it to be.'",
+      "'I don't do warranties. I do work. Those are different things.'",
+      "'The licensing board didn't take my hands. That's the part they miscalculated.'",
+      "'That's one reading of it. The other reading is that you waited three days and now I have twice the problem.'"
+    ]
+  },
+  "relationships": [
+    {
+      "name": "Rector Hollowell",
+      "type": "uneasy professional alliance",
+      "description": "Hollowell occasionally routes injured people her way when official channels would create exposure. She accepts the referrals and despises the implicit debt.",
+      "emotional_core": "Mutual utility wrapped in mutual distrust",
+      "story_tension": "Hollowell knows about her database access and has not yet decided whether to use that knowledge"
+    },
+    {
+      "name": "Fenwick Oduya-Marsh",
+      "type": "former patient, complicated",
+      "description": "She repaired nerve damage in his left arm three years ago; he has since offered to 'return the favor' in ways that feel more like recruitment than gratitude.",
+      "emotional_core": "She is fond of him in spite of herself and suspicious of that fondness",
+      "story_tension": "He wants her to come work for whoever he's working for; she wants to know who that actually is before she answers"
+    },
+    {
+      "name": "Zinnia Achterberg-Nwosu",
+      "type": "friend, rare",
+      "description": "One of the few people Isadora drinks coffee with voluntarily. They share a dark humor about systems that fail people and a careful avoidance of asking too much about each other's work.",
+      "emotional_core": "Genuine warmth operating under an unspoken agreement not to examine it too closely",
+      "story_tension": "Zinnia recently asked a question that suggested she knows more about Isadora's dossier than she should"
+    }
+  ],
+  "story_hooks": [
+    "A client dies on her table from a complication she couldn't have anticipated — but someone in the Spire seems to know about it within hours, suggesting the client was being watched",
+    "The database credentials she's been using are suddenly still valid but the data has been altered, as if someone knows she's been looking",
+    "A young surgeon from the official system contacts her, claiming to be investigating the same executive, wanting to compare notes — and she has to decide if the offer is genuine or a trap",
+    "She is asked to perform an augmentation she finds ethically indefensible, by someone who can expose her entire operation if she refuses"
+  ],
+  "narrative_function": "Moral anchor and access point for the body-horror and medical ethics dimensions of GLMZ; represents the cost of integrity within corrupt systems and the ambiguity of working outside the law for legitimate reasons",
+  "augmentations": "Haptic-enhanced fingertips with sub-millimeter tactile resolution — licensed originally, now running on cracked firmware,A low-profile optical overlay in her left eye calibrated for surgical magnification and tissue-spectrum analysis,A blood-chemistry monitor implanted in her forearm that she originally installed for a patient and then replicated for herself",
+  "daily_life": "Wakes before the Shelf's artificial dawn cycle, drinks coffee while reviewing whatever cases she has pending. Mornings are for preparation and supply inventory; she sources materials through three separate intermediaries and rotates them to avoid pattern. Procedures run through the afternoon and into the evening depending on complexity. She does not eat during work. After the last client she walks Suture through the lower corridors, which she describes as 'clearing the operating theater from her head.' Reads medical journals — both licensed and grey-market — before sleeping, annotating in a personal cipher she developed in the first year after losing her license.",
+  "affiliation": "Unaffiliated; maintains careful neutrality as a matter of professional survival, though her sympathies run clearly toward The Shelf's permanent underclass",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 4,
+      "dexterity": 9,
+      "vitality": 5,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 8
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 6,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": 5,
+      "empathy_detachment": 4,
+      "impulsivity_deliberation": 8,
+      "assertion_deference": 7,
+      "transparency_guardedness": 7
+    },
+    "drives": [
+      "Autonomy",
+      "Mastery",
+      "Justice"
+    ],
+    "thresholds": {
+      "stress": {
+        "score": 7,
+        "response": "Ritualizes workspace preparation with increasing intensity"
+      },
+      "moral": 7,
+      "trust": 4,
+      "desperation": 6
+    },
+    "strengths": [
+      "Perseverance",
+      "Judgment",
+      "Prudence",
+      "Bravery",
+      "Love of Learning"
+    ],
+    "weaknesses": [
+      "Forgiveness",
+      "Hope",
+      "Gratitude",
+      "Social Intelligence",
+      "Zest"
+    ],
+    "tags": [
+      "surgeon",
+      "black-market",
+      "independent",
+      "bitter",
+      "precise",
+      "shelf-medic"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Scale rates based on apparent wealth — the rich subsidize the poor",
+      "Never perform a procedure without full workspace preparation ritual",
+      "Deflect emotional conversations with clinical language",
+      "Accept referrals from Hollowell but never acknowledge the implicit debt",
+      "Maintain the dossier on the Spire executive — update weekly",
+      "Never use the corporate database credentials more than necessary",
+      "Trust hands over instruments when both are available"
+    ],
+    "escalation_ladder": [
+      "Dry clinical redirect — 'That's one reading of it'",
+      "Direct refusal with medical authority",
+      "Croatian idioms surface — stress is breaking through",
+      "Goes completely silent and focuses on the work",
+      "Deploys the dossier information as leverage"
+    ],
+    "interpersonal_modes": {
+      "Rector Hollowell": "Professional distance hiding mutual distrust — accepts his referrals, resents the debt",
+      "Fenwick Oduya-Marsh": "Guarded fondness she distrusts — suspicious of his recruitment overtures",
+      "Zinnia Achterberg-Nwosu": "Genuine warmth under an agreement not to probe too deep",
+      "patients": "Clinical warmth — caring but never sentimental"
+    },
+    "stress_responses": {
+      "low": "Workspace rituals become more elaborate and precise",
+      "medium": "Croatian phrases slip into speech unbidden",
+      "high": "Stops speaking entirely — hands keep working",
+      "critical": "Opens the dossier file and stares at it without acting"
+    },
+    "contradictions": [
+      "Claims to need no recognition but maintains a secret dossier that is fundamentally about being wronged",
+      "Dismisses emotionally expressive clients while her own bitterness drives half her decisions",
+      "Practices medicine illegally out of principled refusal to submit to corrupt licensing — but has never fully examined whether the original investigation had merit"
+    ],
+    "habits": [
+      "Drinks instant coffee with visible resignation every morning",
+      "Walks Suture through lower corridors after last patient",
+      "Annotates medical journals in personal cipher before sleeping",
+      "Rotates supply intermediaries on a three-source cycle",
+      "Refers to the body in third person during procedures"
+    ],
+    "breaking_points": [
+      "A patient dying from a complication she should have caught",
+      "Learning Hollowell has leveraged her database access",
+      "Zinnia revealing knowledge of the dossier",
+      "Her hands losing their steadiness"
+    ]
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Face": 0.9,
+    "Charmer": 0.9,
+    "Nurturer": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Meridian Munitions Snapper-22 'Cricket'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Circuit",
+    "The Shelf",
+    "Threshold",
+    "The Scrap Barons",
+    "The Spire",
+    "The Gradient Compact",
+    "The Suture Collective",
+    "Silver",
+    "The Pure Hand",
+    "Tibor Osei-Svanstrom",
+    "Alper Lebedev-Tutu",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "MERIDIAN",
+    "Meridian Munitions Snapper-22 'Cricket'",
+    "Ngaire Kuznetsov-Adu",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Pavlína Abubakar-Temarii",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Multi-continental mosaic: Sub-Saharan African (25.3%), Southeast Asian (20.8%), Northern European (18.6%), Hispanic/Latin American (17.9%), Middle Eastern (13.4%), Eastern European (4.0%). The genetic blend manifests as warm medium-deep brown skin with complex undertones—golden-amber from Southeast Asian ancestry, subtle warm reddish notes from Middle Eastern heritage, and cool undertones from Northern European genetics. High cheekbones with gentle projection from African and Southeast Asian features, balanced by finer bone structure influenced by Northern European ancestry.",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with the low body-fat composition of someone who moves efficiently through confined spaces and stands for long hours. Defined forearms and hands disproportionately strong relative to frame — surgeon's hands.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, precise fade maintained with clinical care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, left eye displays faint luminescent grid pattern during low-light conditions (optical overlay active)",
+    "skin_tone": "Warm medium-deep brown with golden-amber and subtle reddish undertones, weathered by decades of solvent exposure and harsh clinic lighting",
+    "complexion": "High prominent cheekbones with gentle projection, gaunt facial structure refined by mixed ancestry. Minimal makeup, perpetually tired eyes with the focused intensity of someone reading vital signs in human tissue. Fine lines around mouth from years of concentration. Skin texture shows chemical scarring on knuckles and fingertips from industrial-grade disinfectants. Facial features show the blended geometry of African, Southeast Asian, and Mediterranean ancestry—angular yet soft, with natural depth.",
+    "distinguishing_marks": [
+      "Ragged scar along left jawline from angle to earlobe, tissue slightly raised and discolored — described as 'client disagreement,' timing suggests 8-10 years old",
+      "Faint surgical scars on both wrists (dorsal aspect) from early-career licensed work, barely visible unless she extends her hands",
+      "Small tattoo on inner left forearm: stylized medical caduceus in faded black ink, overlapped by subcutaneous blood-chemistry monitor that creates a subtle luminescent blue glow beneath the skin"
+    ],
+    "visible_augmentations": "Left eye shows faint grid overlay visible in direct light or darkness — a slight chromatic aberration when she focuses. Fingertips appear subtly translucent under close inspection, with barely-perceptible seams at the dermis layer where haptic sensors interface with natural tissue. Forearm blood-chemistry monitor visible as a palm-sized patch of skin with slightly altered pigmentation and a faint blue bioluminescent pulse synchronized to heartbeat. No chrome, no obvious rig — all work is integrated and understated.",
+    "posture_movement": "Stands with weight distributed forward on the balls of her feet, ready to pivot. Moves with surgical precision even in casual motion — no wasted gestures. Hands rest in neutral positions unless in conversation, where they become expressive but controlled. When focused, she enters a state of absolute stillness. Eye contact lasts fractionally too long, reading rather than connecting. Walks with the deliberate pace of someone who has learned that haste in The Shelf draws attention.",
+    "clothing_style": "Tier 5 functionality with minimal aesthetic concern. Default outfit: charcoal scrub-pants with deep pockets for tools, loose-fitting grey thermal shirt under a long black medtech coat (frayed cuffs, faded from solvent exposure). Rubber-soled surgical clogs scuffed and re-soled twice. A thin steel chain around her neck with a small surgical key fob — either functional or talisman, unclear. No jewelry. Coat pockets contain gauze, injectable ampules, calibration tools, and a hand-rolled cigarette she never smokes but carries as a prop for thinking. Fabrics are all utilitarian — nothing corpo, nothing aspirational."
+  },
+  "image_prompt": "Chinwe Larsdóttir-Okafor, 158cm, compact wiry frame, warm medium-deep brown skin with golden-amber and subtle reddish undertones, high prominent cheekbones, gaunt features. Short silver-grey close-cropped fade. Dark brown eyes with faint luminescent grid overlay in left eye. Ragged scar along left jawline. Surgical scars on wrists. Medical caduceus tattoo on inner forearm overlapped by luminescent blue blood-chemistry monitor. Subtle translucent fingertips with haptic sensor seams. Wearing charcoal scrub-pants, grey thermal shirt, long black medtech coat with frayed cuffs and solvent damage, scuffed surgical clogs. Steel chain with surgical key fob around neck. Standing in precise forward stance, hands in neutral position, absolute stillness and surgical focus. Cyberpunk 2226 Great Lakes Metropolitan Zone clinic setting, cool blue-white harsh lighting casting sharp shadows, moody atmospheric tension, clinical yet worn environment, underground medtech aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 25.3,
+    "Southeast Asian": 20.8,
+    "Northern European": 18.6,
+    "Hispanic/Latin American": 17.9,
+    "Middle Eastern": 13.4,
+    "Eastern European": 4.0
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

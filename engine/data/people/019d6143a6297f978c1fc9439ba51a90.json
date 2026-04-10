@@ -1,0 +1,295 @@
+{
+  "id": "019d6143a6297f978c1fc9439ba51a90",
+  "type": "character",
+  "name": "Camila Kovalenko-Madrigal",
+  "aliases": [
+    "Hux",
+    "The Antiquarian"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Junk merchant and scrap reseller with a specialty in pre-Consolidation artifacts",
+  "age": 64,
+  "status": "active",
+  "location": "The Shelf, Ironvein, near Pulaski and Chicago Ave",
+  "description": "Huxley is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on The Shelf sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nHuxley is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.3,
+      "ideal": 0.6,
+      "id": 0.4,
+      "shadow": 0.5,
+      "mask": 0.2,
+      "ghost": 0.7
+    },
+    "core_fears": [
+      "The past being irretrievably erased — no record, no object, no witness remaining",
+      "Dying before he has documented what he knows"
+    ],
+    "core_desires": [
+      "To be the person who ensures nothing is entirely lost",
+      "A worthy inheritor for the collection and the knowledge inside it"
+    ],
+    "coping_mechanisms": [
+      "Cataloguing as ritual",
+      "Retreating into the history of objects when human problems feel intractable"
+    ],
+    "blind_spots": [
+      "So focused on preservation of the past that he sometimes misses urgent present-tense dangers",
+      "Tendency to trust people who show genuine curiosity, which has been exploited"
+    ],
+    "secret": "Hidden in a false-backed crate in the deepest part of the stall is a complete pre-Consolidation municipal archive — decades of city records, personal files, and classified infrastructure data from before the corponations restructured GLMZ's records. He found it in a demolition salvage job fifteen years ago and has never told anyone it exists. He is not sure what to do with it."
+  },
+  "speech_patterns": {
+    "vocabulary": "Precise and slightly archaic, with occasional Malian French from the Dembélé line. Uses technical terms for objects most people have no name for.",
+    "cadence": "Unhurried to the point of being geological. Pauses are meaningful.",
+    "verbal_tics": [
+      "'This is the thing about—'",
+      "Taps the prosthetic arm on objects he's describing"
+    ],
+    "example_lines": [
+      "'This is the thing about pre-Consolidation manufacture — they built it to last because they didn't control the replacement supply. Now it's all subscription. You understand the difference.'",
+      "'I don't sell to people who don't ask what it is first. If you don't know what you're buying, you don't know what you're getting.'",
+      "'She came to three different times wanting the same lamp. I didn't sell it to her. Told her to come back when she stopped needing it and just wanted it. That's the right relationship with objects.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The municipal archive hidden in his stall contains records that a corponation would pay — or kill — to retrieve or destroy. He doesn't know that anyone knows it exists, but something in the last month suggests someone is looking.",
+    "A teenager has been coming to his stall daily for weeks, clearly running from something, sleeping rough, and pretending to browse. He has been pretending not to notice and leaving food nearby. He needs someone to help figure out what the kid's situation actually is."
+  ],
+  "narrative_function": "Treasure-map NPC. Has access to rare pre-Consolidation objects that might be mission-critical MacGuffins, old data, or historically significant items. Exceptional source of information about GLMZ's history. Gives players reasons to dig through his stock — something is always in there.",
+  "augmentations": "Mechanical prosthetic arm (left, elbow-down, 30-year-old model, impeccably maintained). Reading enhancement monocle — not a true augment, a clip-on optical tool he has used for decades.",
+  "daily_life": "Opens the stall late morning, spends several hours on acquisition runs through Ironvein's salvage channels, returns to sort and catalogue new items, and receives the steady trickle of regulars who come specifically to talk to him. Closes whenever he feels like it.",
+  "affiliation": "Independent. Loose friendship network with other Shelf vendors. Known to the Oxidian Market Guild but not a member.",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 5,
+      "dexterity": 5,
+      "vitality": 5,
+      "perception": 8
+    },
+    "mental": {
+      "cognition": 8,
+      "willpower": 7,
+      "creativity": 6,
+      "spatial": 7
+    },
+    "social": {
+      "presence": 6,
+      "empathy": 5,
+      "expression": 7,
+      "integrity": 7
+    },
+    "personality": {
+      "openness_conviction": -3,
+      "empathy_detachment": 1,
+      "impulsivity_deliberation": 4,
+      "assertion_deference": -1,
+      "transparency_guardedness": 2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "historian-informal",
+      "archive-keeper",
+      "MacGuffin-source",
+      "pre-Consolidation-specialist",
+      "prosthetic-veteran"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "Never sell to someone who doesn't know what they want it for",
+      "An object's history is part of its value — always disclose what you know",
+      "If something is irreplaceable, the price is not negotiable"
+    ],
+    "escalation_ladder": [
+      "Polite historical digression that avoids the point",
+      "Direct statement of position",
+      "Refusal to continue conversation on topic",
+      "Physical removal of item from display",
+      "Calling on neighboring Shelf vendors"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Watchful and willing to lecture. Tests them with a historical question about something in plain sight.",
+      "friends": "Expansive and occasionally confessional. Shares the objects he won't sell to anyone else."
+    },
+    "stress_responses": {
+      "low": "Begins unnecessary re-cataloguing",
+      "medium": "Goes silent and works with the prosthetic arm more than the real one — an old tell",
+      "high": "Clears the stall of customers without explanation and locks himself in with the archive"
+    },
+    "contradictions": [
+      "Dedicated to preserving the historical record but actively concealing a crucial part of it"
+    ],
+    "habits": [
+      "Waxes the moustache every morning before opening",
+      "Gives every new acquisition a name before cataloguing it formally",
+      "Leaves a broken component — something broken beyond repair — as an offering at a small ELF shrine behind the counter"
+    ],
+    "breaking_points": [
+      "Evidence that the archive has been discovered by someone dangerous",
+      "An object in his collection being deliberately destroyed in front of him"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "immaculate",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Hustler": 0.9,
+    "Provider": 0.9,
+    "Opportunist": 0.9,
+    "Pragmatist": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in Ironvein to a Malian-Colombian family of industrial workers",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Lost left arm below elbow in a warehouse equipment accident; received mechanical prosthetic",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Began acquiring and reselling salvage; discovered a talent for identification and provenance",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Established permanent stall on The Shelf",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Discovered the municipal archive during a demolition salvage job; concealed it",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "registered_firearms": [
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'"
+  ],
+  "related_entities": [
+    "The Shelf",
+    "Ironvein",
+    "The Gradient Compact",
+    "Adaeze Chen-Hawkins",
+    "ARCHIVE",
+    "Nesting Doll",
+    "Palette",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Steel",
+    "Chicago",
+    "Ambrosia Fekete-Waiyaki",
+    "Davi Ousseini-Brătianu",
+    "Eshe Petersen-Bah",
+    "GLMZ",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Slagworks Industrial",
+    "The Archive",
+    "The Counter",
+    "The Ledger",
+    "The Oxidian Market",
+    "The Pure Hand",
+    "The Wire Taps",
+    "Timur Osei-Bjelke",
+    "Veslemøy Achebe-Tursynov",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "VitaCore SteadyField Precision Motor Implant",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European, Hispanic/Latin American, Sub-Saharan African, and East Asian blend—a genetic map of the Ubiquitous Diaspora. Slavic bone structure meets equatorial warmth; the result is a face that belongs to no single region but draws from many.",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and wiry, shoulders still squared from decades of physical labor. No excess weight; muscle has transitioned to lean efficiency. Moves with the economy of someone who has carried heavy things for a lifetime.",
+    "hair_color": "White with faint traces of gray-black at the nape",
+    "hair_style": "Cropped close to the scalp, well-maintained. Salt-and-pepper stubble on the jaw, kept to a consistent three-day length.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, sharp and undiminished by age",
+    "skin_tone": "Warm medium-brown with undertones reflecting the blend—a richness that suggests both Eastern European and Sub-Saharan ancestry, deepened further by decades in salvage yards and open-air markets. Sun-weathered, papery texture developing at the temples and across the knuckles of the right hand.",
+    "complexion": "Lean-faced with prominent cheekbones shaped by Slavic and East Asian ancestry. Deep laugh lines around the eyes. The magnificent white moustache is waxed daily with precision—it points slightly upward at the ends and is his single vanity. Skin still firm across the jawline; age shows primarily in the texture of his hands and the tiredness that occasionally settles behind his eyes. Subtle warmth to the complexion speaks to his African and Hispanic heritage; high cheekbones suggest East Asian roots.",
+    "distinguishing_marks": [
+      "Faint burn scar across the back of his right hand, shaped like a partial arc—legacy of a molten salvage incident circa 2195.",
+      "A small rectangular tattoo on his inner left forearm (the flesh one), executed in black ink with what appears to be a technical diagram or circuit pattern—possibly a memorial or a reminder, never explained.",
+      "Fine white line scar running from his left temple down to the cheekbone, barely visible but present in certain light—origin unknown, not discussed."
+    ],
+    "visible_augmentations": "Mechanical prosthetic left arm from the elbow down. Brushed steel construction with visible ball-joint articulation at the wrist and finger servos. Thirty years old and meticulous in maintenance—no rust, joints move with precision, minor wear marks visible on the palm contact surface. Reading enhancement monocle clipped to his left eye socket via a thin titanium arm that curves over the temple—a decades-old optical tool, not a true neural augment, made by a manufacturer that no longer exists.",
+    "posture_movement": "Moves with unhurried deliberation. Never rushes. Uses his right hand naturally; the prosthetic left arm is gestural and precise—he has mastered it completely. Tends to stand with shoulders slightly forward, as if perpetually about to reach for something on a shelf. When seated, he becomes statuary—entirely still, watching. His gaze is patient and evaluative.",
+    "clothing_style": "Tier 4 working-class practicality with personal ritual. Heavy canvas vest with dozens of pockets (each containing specific items organized by function), worn over a collared work shirt in muted colors (grays, dark blues, browns). The shirt is always buttoned; the vest is always layered on top regardless of ambient temperature—insulation and habit. Fingerless leather gloves on the right hand, worn thin at the knuckles. Canvas trousers, neutral color. Heavy boots, well-maintained but visibly aged. No jewelry except a faded wedding band on his right ring finger. His appearance suggests a man who dresses for function and ritual, not for impression."
+  },
+  "image_prompt": "Camila Kovalenko-Madrigal, 168cm wiry-built older man with warm medium-brown skin reflecting Eastern European, Sub-Saharan African, Hispanic, and East Asian ancestry. White cropped hair with salt-and-pepper stubble. Prominent cheekbones, deep brown eyes, magnificent white moustache waxed upward. Mechanical brushed-steel prosthetic left arm with visible articulation. Vintage monocle on left eye with titanium arm. Lean weathered face with laugh lines and old scars. Wearing layered heavy canvas work vest over collared dark shirt, fingerless leather gloves, canvas trousers, aged boots. Faded wedding band on right hand. Standing with deliberate posture, shoulders slightly forward, patient evaluative gaze. Cyberpunk 2226, salvage yard lighting, worn hands resting on workbench, dystopian utility aesthetic, moody industrial background, 40-year-old augmentation tech. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 39.5,
+    "Hispanic/Latin American": 25.4,
+    "Sub-Saharan African": 25.0,
+    "East Asian": 10.1
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

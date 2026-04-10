@@ -1,0 +1,280 @@
+{
+  "id": "019d6143a67d7ab59fbeb114dc49b189",
+  "type": "character",
+  "name": "Magnus Holm-Karunaratne",
+  "aliases": [
+    "Konk",
+    "the Whale"
+  ],
+  "species": "human",
+  "gender": "male",
+  "pronouns": "he/him",
+  "role": "Noodle cart vendor",
+  "age": 61,
+  "status": "active",
+  "location": "Grand Corridor, beneath the Kessler Interchange overpass — Konk's Cart, near Armitage and Milwaukee",
+  "description": "Okonkwo is enormous — 1.95 meters, broad as a doorframe, with deep black skin and a bald head that he keeps oiled and that catches the neon from the Kessler Interchange in amber and violet. He has a full white beard that he keeps very neat, heavy-lidded eyes that make him look sleepy until you watch them move, and a pair of retractable claw mods on his right hand that he got in his thirties for reasons he no longer fully remembers and now uses primarily for scoring citrus peel. He runs his cart from a converted cargo drone chassis that he's modified over fifteen years into something almost architectural — woks, broth vats, a bank of mismatched stools, two heat lamps, and a shrine to the local transit-E.L.F. built from signal-mirror fragments and a perpetually running old transit ticker.\n\nOkonkwo is the kind of person who becomes a landmark. He has been in the same spot under the Kessler Interchange for twenty-two years and intends to die there. He feeds people on credit without comment and remembers what you ordered three years ago. He is fundamentally, stubbornly gentle — a big man who chose softness as a deliberate political act after a youth in which he was not soft at all. He sings to himself while he cooks, always the same four songs in rotation, and accepts requests but never honors them.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.7,
+      "ideal": 0.9,
+      "id": 0.4,
+      "shadow": 0.6,
+      "mask": 0.5,
+      "ghost": 0.8
+    },
+    "core_fears": [
+      "that the gentleness he built was always just exhaustion wearing a better coat",
+      "the cart being seized or the location being cleared by a Ferrogate Transit redevelopment order"
+    ],
+    "core_desires": [
+      "to have fed enough people that it matters in some aggregate way he can't measure",
+      "for someone to carry the cart forward after him"
+    ],
+    "coping_mechanisms": [
+      "cooking as meditation and control",
+      "deliberate community-building as atonement"
+    ],
+    "blind_spots": [
+      "his history in the labor movement has given him a template for reading situations politically that sometimes fits and sometimes catastrophically doesn't"
+    ],
+    "secret": "In his thirties he was involved in a labor action that turned violent — not his hand, but his planning. Someone died. He walked away from the movement, moved to Grand Corridor, and built the cart as a form of penance he has never named aloud. One of the people who was there is now a senior Ferrogate Transit administrator."
+  },
+  "speech_patterns": {
+    "vocabulary": "Deliberate, warm, a deep voice that carries without effort; Igbo-Portuguese cadences from his parents' household; quotes things — food writers, E.L.F. liturgy, a song lyric — without citing sources",
+    "cadence": "Slow and measured, with long thoughtful pauses that never feel awkward because his presence fills them",
+    "verbal_tics": [
+      "humming a few bars of a song before answering a complicated question",
+      "'eat first'"
+    ],
+    "example_lines": [
+      "'Eat first. Then we can talk about whatever it is that's making your shoulders do that.'",
+      "'I've been here twenty-two years. The city has tried to move me four times. The broth is still on.'"
+    ]
+  },
+  "relationships": [],
+  "story_hooks": [
+    "The Ferrogate Transit administrator who shares Okonkwo's secret appears at the cart one evening — not to threaten him, apparently just to eat, but Okonkwo doesn't believe in coincidences.",
+    "A young person has started sleeping under the cart's awning at night, and Okonkwo has been letting it happen; they haven't spoken yet, but they left an origami figure on one of his stools — same folding technique as a protest art tradition from the old labor movement."
+  ],
+  "narrative_function": "Neighborhood institution and gathering point; oral historian of Grand Corridor; quiet provider of social safety net; can introduce characters to each other organically.",
+  "augmentations": "Retractable claw mods on right hand (old, well-worn). No other augmentations — he claims his body is already as modified as it needs to be by sixty years of cooking.",
+  "daily_life": "Arrives at the Kessler Interchange site at 10:00 to begin broth prep, opens to customers at 14:00, stays until the last customer leaves or 02:00, whichever comes first.",
+  "affiliation": "Independent; informal affiliation with the Grand Corridor vendor collective; old ties to a labor action group he no longer names",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {
+      "strength": 7,
+      "dexterity": 6,
+      "vitality": 6,
+      "perception": 7
+    },
+    "mental": {
+      "cognition": 7,
+      "willpower": 8,
+      "creativity": 7,
+      "spatial": 6
+    },
+    "social": {
+      "presence": 9,
+      "empathy": 9,
+      "expression": 7,
+      "integrity": 8
+    },
+    "personality": {
+      "openness_conviction": 2,
+      "empathy_detachment": -5,
+      "impulsivity_deliberation": 3,
+      "assertion_deference": 1,
+      "transparency_guardedness": -2
+    },
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "neighborhood institution",
+      "oral historian",
+      "carries old guilt",
+      "community anchor",
+      "tier 1-2 border"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [
+      "feed people first, ask questions second",
+      "never give anyone to anyone else — the cart is neutral ground"
+    ],
+    "escalation_ladder": [
+      "offering food and patience",
+      "standing up to full height and going very still",
+      "physically placing himself between a threat and whoever is behind him"
+    ],
+    "interpersonal_modes": {
+      "strangers": "Immediately, quietly welcoming — hands them a cup of something before they've decided to stay",
+      "friends": "Teasing, loyal, will appear unannounced with food when he senses something is wrong"
+    },
+    "stress_responses": {
+      "low": "Cooks more than needed, distributes it free",
+      "medium": "Goes completely silent, his movements become very deliberate",
+      "high": "Has not been in a high-stress situation in fifteen years and doesn't know what he'd do"
+    },
+    "contradictions": [
+      "preaches nonviolence and community care but keeps the claw mods maintained and sharp"
+    ],
+    "habits": [
+      "sings the same four songs in rotation while cooking, always in the same order",
+      "leaves a broth offering at the transit-E.L.F. shrine before every service"
+    ],
+    "breaking_points": [
+      "a child going hungry in his sight",
+      "the Ferrogate administrator making an overt move"
+    ]
+  },
+  "cyberware_inventory": [
+    {
+      "name": "",
+      "body_location": "",
+      "manufacturer": "",
+      "tier": "",
+      "condition": "well-maintained, showing age",
+      "installed_date": "",
+      "description": "",
+      "replaces": ""
+    }
+  ],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Provider": 0.9,
+    "Generous Fool": 0.9,
+    "Hustler": 0.7
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Born in the Ironvein district to an Igbo-Portuguese-Sudanese family",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Active in a transit labor action that turned violent; someone died; he left the movement",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Got retractable claw mods; moved to Grand Corridor",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Built the first version of Konk's Cart from a salvaged cargo drone chassis",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    },
+    {
+      "date": "",
+      "story_id": "",
+      "event": "Survived first Ferrogate Transit redevelopment clearance order by refusing to move and becoming a local media story",
+      "consequences": "",
+      "body_changes": [],
+      "status_change": ""
+    }
+  ],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "Kessler Interchange",
+    "Ferrogate Transit",
+    "Grand Corridor",
+    "Lakeview Neon",
+    "Tessera TK-7 Service Pistol 'Ticker'",
+    "Origami",
+    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "The Milwaukee Core",
+    "Bintou Halvorsen-Osei",
+    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Lyric",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Sagyn Ogawa-Twumasi",
+    "Saodat Mirzoyan-Fubara",
+    "Sorin Ekwensi-Balasanyan",
+    "Stainless Steel",
+    "Tafara Quiñones-Saarinen",
+    "The Belly",
+    "The Pure Hand",
+    "Tomasz Wren",
+    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+  ],
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European, South Asian, East Asian, with Sub-Saharan African ancestry — a striking blend resulting in warm-brown skin with golden undertones, the bone structure showing Scandinavian breadth across the shoulders and cheekbones combined with South Asian facial proportions and East Asian eye shape",
+    "height_cm": 195,
+    "weight_kg": 128,
+    "build": "Massive and broad-shouldered, carrying his bulk with deliberate ease — a man who learned early that size demands responsibility. Thick through the chest and forearms, soft at the belly from decades of cooking steam and broth-tasting. Moves with surprising grace for his frame.",
+    "hair_color": "None — naturally bald",
+    "hair_style": "Bald head kept oiled to a subtle sheen",
+    "hair_length": "None",
+    "eye_color": "Deep brown with a slight upturned shape, heavy-lidded and observant",
+    "skin_tone": "Warm golden-brown, the result of Northern European paleness tempered by strong South and East Asian melanin, enriched further by Sub-Saharan African heritage — even and rich with golden undertones from decades under heat lamps and neon",
+    "complexion": "Clear skin with the texture of constant exposure to steam and spice — fine lines around the eyes and mouth from decades of cooking and smiling. White beard kept in a tight, neat shape, freshly trimmed. Face shows the settled quality of someone at peace with his own permanence, with bone structure reflecting the blend of broad Northern European features and more delicate South Asian proportions.",
+    "distinguishing_marks": [
+      "Burn scars on both forearms in scattered patches — old kitchen accidents accumulated over forty years, silvery-white against his warm brown skin",
+      "A faint scar along his right jaw line, thin and pale, running from ear toward chin — origin unknown, never discussed",
+      "Small tattoo on his left wrist: a simplified transit map symbol in faded indigo ink, dating to his younger years"
+    ],
+    "visible_augmentations": "Retractable claw mods on right hand — four-fingered mechanism with worn chrome plating showing its age, the claw housings visible just below the knuckle line when retracted. Well-integrated but clearly decades old, bearing small dings and patina from constant use scoring citrus and vegetable prep.",
+    "posture_movement": "Stands with his weight settled, grounded — a man who expects to remain in one place. Moves deliberately, economically, no wasted motion. When he reaches or gestures, both hands move with equal authority despite the aged claws. Heavy, measured gait. He stands with one hand on his cart or in a pocket most of the time, the posture of someone who has learned to take up less space than he occupies.",
+    "clothing_style": "Tier 3-4 working comfort: loose linen shirts in cream or pale blue, sleeves rolled to mid-forearm for cooking, stained with years of broth and spice but clean. Heavy canvas apron in deep green, pockets worn soft, bearing embroidered patches of his own design. Loose work pants in dark grey cotton. Slip-on boots in worn black synthetic leather, specifically chosen for standing all day. A thin chain around his neck — cheap but genuine silver, bearing a small transit token from 2204. Rings on both hands: index fingers sport simple bands of stainless steel worn smooth by decades. No corporate branding. His appearance reads as deliberately outside the consumption economy."
+  },
+  "image_prompt": "Magnus Holm-Karunaratne, 195cm tall broad-shouldered man with warm golden-brown skin reflecting Northern European, South Asian, and East Asian heritage, naturally bald head oiled to subtle sheen, deep brown heavy-lidded eyes with slight upturned shape, white trimmed beard, scattered silvery burn scars on dark forearms from forty years cooking, faint scar along right jawline. Retractable chrome claw mods on right hand showing age and patina. Wearing loose cream linen shirt sleeves rolled to forearms, deep green canvas apron with worn soft pockets and embroidered patches, dark grey cotton work pants, worn black synthetic leather slip-on boots. Simple stainless steel rings on index fingers, cheap silver chain with 2204 transit token around neck. Standing grounded and deliberate in cyberpunk 2226 street kitchen setting, neon glow reflecting off oiled head, steam rising around him, warmly lit against GLMZ Great Lakes Metropolitan backdrop, authentic working-class dignity, outside consumption economy aesthetic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 42.2,
+    "South Asian": 31.8,
+    "East Asian": 20.4,
+    "Sub-Saharan African": 5.6
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}

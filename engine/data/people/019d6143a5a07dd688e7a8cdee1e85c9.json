@@ -1,0 +1,147 @@
+{
+  "id": "019d6143a5a07dd688e7a8cdee1e85c9",
+  "type": "character",
+  "name": "Haze Johansson",
+  "aliases": [
+    "The Ledger"
+  ],
+  "species": "human",
+  "gender": "female",
+  "pronouns": "she/her",
+  "role": "Fixer - Independent fixer",
+  "age": 58,
+  "status": "active",
+  "location": "The Shelf, near Halsted and Division",
+  "description": "",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0.4,
+      "ideal": 0.5,
+      "id": 0.6,
+      "shadow": 0.5,
+      "mask": 0.7,
+      "ghost": 0.3
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": []
+  },
+  "relationships": [],
+  "story_hooks": [],
+  "narrative_function": "Fixer",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": [
+      "fixer",
+      "runner",
+      "contract"
+    ]
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {
+    "Networker": 0.9,
+    "Manipulator": 0.9
+  },
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "carried_weapons": [
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
+  ],
+  "registered_firearms": [],
+  "related_entities": [
+    "The Shelf",
+    "GLMZ",
+    "Green Bay Community Table",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+    "TESSERA Widow Mk. III",
+    "The Pure Hand",
+    "Tooth Fairy"
+  ],
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian-Pacific Islander dominant with Middle Eastern and Central Asian ancestry. The genetic blend manifests as warm golden-brown skin with subtle olive undertones, characteristic of East Asian-Pacific Islander admixture with secondary Middle Eastern influence. Facial structure shows the broad cheekbones and eye shape of East Asian ancestry combined with the fuller features and warm complexion tones of Pacific Islander heritage, with fine-tuned bone structure suggesting Central Asian influence.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and angular, with the wiry musculature of someone who stays active despite age. Shoulders held with practiced ease—the posture of someone used to command.",
+    "hair_color": "Steel grey with dark undertones",
+    "hair_style": "Short, professionally maintained undercut with subtle silver threading braided into the sides",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with fine network of gold capillaries—likely subdermal neural integration",
+    "skin_tone": "Warm golden-brown with subtle olive undertones, sun-weathered to deep amber patina showing decades in the GLMZ. The tone reflects East Asian-Pacific Islander ancestry layered with Middle Eastern warmth.",
+    "complexion": "Lined face that maps decades of high-stakes negotiation. The bone structure shows broad East Asian cheekbones softened by Pacific Islander fullness, with strong defined jaw suggesting Central Asian heritage. Laugh lines dominate; frown lines are minimal. Skin clear but textured. No cosmetic smoothing—she wears her age as currency.",
+    "distinguishing_marks": [
+      "Faint scar running from left temple to cheekbone, approximately 7cm, slightly discolored but well-healed—old violence, professionally handled",
+      "Tattoo on inner right wrist: a stylized trading symbol in grey and gold ink, barely visible unless she extends her hand",
+      "Pale burn mark on left forearm, roughly the size of a cigarette end, repeated pattern suggesting deliberate cauterization—old nerve suppression work"
+    ],
+    "visible_augmentations": "None immediately obvious. Possible subcutaneous neural integration suggested by eye capillary patterns. Hands show no chrome—all augmentations appear internal or minimalist.",
+    "posture_movement": "Moves with economical precision. Sits with spine straight, often with one hand visible and the other beneath the table. Eyes constantly cataloging exits, threats, opportunities. Speaks slowly—each word weighted. Rarely fidgets. When standing, she grounds herself with one foot forward, balanced for quick movement.",
+    "clothing_style": "Tier 3-4 practical elegance. Charcoal tactical shell jacket over a fitted cream or grey base layer, quality synthetic that breathes. Dark trousers with reinforced knees and discrete cargo pockets. Black boots—practical, expensive, broken in. Minimal jewelry: a thin platinum band on her left ring finger (widow's rings are currency in fixer circles) and a small chronometer wrist unit. Everything is designed for function and subtlety—nothing shouts wealth, but nothing screams poverty either. Her clothes are tools."
+  },
+  "image_prompt": "Haze Johansson, 168cm lean angular woman with East Asian-Pacific Islander heritage, warm golden-brown skin with olive undertones, steel grey undercut with silver braids, dark brown eyes with gold neural capillaries. Aged face lined with negotiation, broad cheekbones, minimal frown lines. Small temple-to-cheekbone scar, wrist trading tattoo, forearm cauterization marks. Charcoal tactical shell jacket, cream base layer, dark reinforced trousers, black worn boots, platinum widow's ring, wrist chronometer. Sitting upright with controlled posture, one hand visible, cataloging exits with weighted presence. Cyberpunk 2226 GLMZ fixer aesthetic, moody neon-shadowed interior, cool blue and amber lighting reflecting off her augmented eyes, subtle futuristic chrome accents in background, professional yet dangerous demeanor --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 42.8,
+    "Pacific Islander": 29.9,
+    "Middle Eastern": 14.4,
+    "Central Asian": 12.9
+  },
+  "ancestry_harmonized": true,
+  "tags": [
+    "sentient"
+  ]
+}
