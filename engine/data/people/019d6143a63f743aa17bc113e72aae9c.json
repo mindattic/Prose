@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63f743aa17bc113e72aae9c",
   "type": "character",
-  "name": "Chinwe Valenzuela",
+  "name": "Torsten Kulkarni",
   "aliases": [
     "Yield",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Kamala Nystrom-Keita is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Kamala Nystrom-Keita describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Torsten Kulkarni is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Torsten Kulkarni describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -261,7 +261,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,36 +275,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "Titanium",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus PX-1 'Phantom'",
-    "Beverlynn Heights",
-    "Breck Tannen",
-    "Djeneba Park-Traore",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mireille Fontaine-Obi",
-    "Quilt",
-    "Solveig Tambadou-Kereselidze",
-    "Tessera Corponation",
-    "Tessera Industries Phantom Blade PB-1 'Ghost Knife'",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Afro-Latino with Northern European and South Asian ancestry — a striking blend of Sub-Saharan African (39%) and Hispanic/Latin American (37.6%) heritage with lighter Northern European (12.6%), South Asian (7.3%), and Pacific Islander (3.5%) undertones. The combination manifests as warm, rich skin with subtle golden and reddish undertones, refined facial structure with pronounced cheekbones, and naturally dark hair with premature silver threading.",
+    "heritage": "Northern European, Eastern European, and South Asian ancestry — a striking blend of 38.6% Northern European, 35.6% Eastern European, and 25.8% South Asian heritage. The combination manifests as warm, olive-toned skin with subtle golden undertones, refined facial structure with moderate cheekbones reflecting the balanced Eastern and Northern European base with South Asian warmth, and naturally dark hair with premature silver threading.",
     "height_cm": 178,
     "weight_kg": 74,
     "build": "Athletic and lean with precise musculature — dancer's flexibility combined with fighter's density. No excess mass; every movement calculated.",
@@ -312,8 +290,8 @@
     "hair_style": "Kept short and practical, swept back from forehead",
     "hair_length": "Short",
     "eye_color": "Steel gray — natural but intensified by nocturnal living",
-    "skin_tone": "Deep warm caramel with golden and reddish undertones from dominant African-Latino heritage, complexion luminous beneath nocturnal pallor",
-    "complexion": "Smooth and angular — high, prominent cheekbones reflecting African heritage, sharp jawline with subtle fullness from Latin and South Asian ancestry, softened only by the gentleness around his eyes. Skin shows the pallor of nocturnal life; faint dark circles are permanent fixtures. Fine facial structure suggests the blend of multiple continental ancestries.",
+    "skin_tone": "Warm olive with golden undertones, reflecting the tri-continental blend of Northern European fairness, Eastern European depth, and South Asian warmth. Complexion luminous beneath nocturnal pallor.",
+    "complexion": "Smooth and angular — moderate to prominent cheekbones reflecting the balanced three-way blend, sharp jawline with subtle fullness and definition from South Asian ancestry. High cheekbones characteristic of Eastern European heritage soften into warmer golden undertones from South Asian genetics. Skin shows the pallor of nocturnal life; faint dark circles are permanent fixtures. Fine facial structure suggests the harmonious blend of multiple continental ancestries.",
     "distinguishing_marks": [
       "Faint white scar running 3cm along left temple, partially hidden by hairline — old knife work",
       "Thin titanium mesh visible beneath translucent skin along right forearm in geometric lattice pattern",
@@ -324,16 +302,38 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. When seated, his posture is deceptively relaxed but his eyes track everything. His movements have the fluidity of someone who has internalized violence so deeply it became dance.",
     "clothing_style": "Tier 2-3 practical minimalism — dark fitted synthweave layers that breathe well during nocturnal work. Favors charcoal and matte black technical fabrics with subtle chrome accents. Wears a worn midnight-blue duster jacket with reinforced shoulders over a black compression shirt. Cargo pants with strategic pockets. Boots are expensive, quiet, practical — scuffed but maintained. No corporate logos, no gang colors. Everything is built for function and unobstructed movement."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Chinwe Valenzuela, 178cm tall athletic lean mixed-race man with rich deep caramel skin and golden undertones, prominent high cheekbones from African heritage, sharp jawline with subtle fullness from Latin ancestry, steel gray eyes with dark nocturnal circles, short dark brown hair with silver threading at temples swept back. Faint white scar along left temple, visible titanium mesh geometric patterns shimmering beneath translucent skin on forearms and wrists, subtle chrome bone lacing outlining jawline. Wearing charcoal and matte black technical synthweave compression shirt under worn midnight-blue duster jacket with reinforced shoulders, cargo pants with strategic pockets, expensive practical boots. Standing with weight on balls of feet, economical precise posture, eyes tracking everything. Nocturnal neon lighting with cool blue and purple tones reflecting off chrome augmentations, cyberpunk Great Lakes Metropolitan Zone interior setting, moody atmospheric lighting, photorealistic detailed portrait --ar 2:3 --v 6",
+  "image_prompt": "Torsten Kulkarni, GLMZ, 178cm athletic lean male with warm olive skin and golden undertones blending Northern European, Eastern European, and South Asian heritage. Dark brown hair with silver threading swept back, steel gray eyes. High prominent cheekbones, sharp jawline with subtle fullness, nocturnal pallor with faint dark circles. Visible titanium bone lacing mesh beneath translucent skin on forearms and wrists, skeletal chrome outlines, temple scar partially hidden by hairline. Wearing midnight-blue duster jacket with reinforced shoulders over black compression shirt, cargo pants, expensive practical boots. Economical precise posture, weight balanced on balls of feet, ready to move. Standing in neon-lit Great Lakes Metropolitan Zone alley at night, shadows and chrome reflections catching on augmentations, cool blue and purple lighting, moody and dangerous atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.0,
-    "Hispanic/Latin American": 37.6,
-    "Northern European": 12.6,
-    "South Asian": 7.3,
-    "Pacific Islander": 3.5
+    "Northern European": 38.6,
+    "Eastern European": 35.6,
+    "South Asian": 25.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 38.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 10.3,
+        "Sorbian": 11.5
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 13.8
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 16.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 8.9
+      }
+    }
+  }
 }

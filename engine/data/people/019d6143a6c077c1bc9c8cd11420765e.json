@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c077c1bc9c8cd11420765e",
   "type": "character",
-  "name": "Soren Odinga",
+  "name": "Soren Echeverría",
   "aliases": [
     "Sable",
     "The Lens"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Laceworks, container unit 7-Teal near the old weaving district underpass, near Clark and Belmont",
-  "description": "Sable is slight, angular, and in constant motion — fingers tapping, eyes scanning, one heel bouncing even when they're sitting. Their geneware is modest but carefully chosen: iridescent patterned irises that cycle through colors based on ambient light, and hair that shifts between deep indigo and copper depending on their mood, kept in a lopsided topknot they redo approximately six times a day. They dress in layered secondhand Tessera-branded workwear that they've cut apart and reassembled into something that doesn't look corporate anymore, patched with scraps of reflective fabric and hand-stitched data-glyph embroidery that means nothing except that they like the way it looks.\n\nInside their container unit, every surface is covered: chip racks floor to ceiling, a cracked secondary monitor running a data-feed collage they never close, small hand-painted icons of various E.L.F.s arranged on a shelf above the transaction counter. They are fast-talking and genuinely funny in a way that catches people off-guard, deploying humor as both charm and deflection. They like people in the abstract more than in practice — they are excellent at the performance of friendliness and genuinely uncertain what to do when someone tries to be a real friend back. Their pitch is smooth, their prices are negotiable if you know to ask, and their memory for what media a customer has already bought is perfect.",
+  "description": "Soren Echeverría is slight, angular, and in constant motion — fingers tapping, eyes scanning, one heel bouncing even when they're sitting. Their geneware is modest but carefully chosen: iridescent patterned irises that cycle through colors based on ambient light, and hair that shifts between deep indigo and copper depending on their mood, kept in a lopsided topknot they redo approximately six times a day. They dress in layered secondhand Tessera-branded workwear that they've cut apart and reassembled into something that doesn't look corporate anymore, patched with scraps of reflective fabric and hand-stitched data-glyph embroidery that means nothing except that they like the way it looks.\n\nInside their container unit, every surface is covered: chip racks floor to ceiling, a cracked secondary monitor running a data-feed collage they never close, small hand-painted icons of various E.L.F.s arranged on a shelf above the transaction counter. They are fast-talking and genuinely funny in a way that catches people off-guard, deploying humor as both charm and deflection. They like people in the abstract more than in practice — they are excellent at the performance of friendliness and genuinely uncertain what to do when someone tries to be a real friend back. Their pitch is smooth, their prices are negotiable if you know to ask, and their memory for what media a customer has already bought is perfect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,30 +243,14 @@
     "Zheng-dao Bioelectric",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
-    "Copper",
-    "Arcturus PX-1 'Phantom'",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Pikasso Wemba-Þórðarson",
-    "Pirjo Asante-Ulukhan",
-    "Sable",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Archive",
-    "The Counter",
-    "The Pure Hand",
-    "The Spire",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "Vuk Jorgensen-Toure"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Indigo",
+    "Copper"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (55.8%) with significant Northern European (22.6%), South Asian (13.4%), and Hispanic/Latin American (13.4%) ancestry, creating a complex multi-continental blend. Features reflect this diverse mix: warm deep brown skin tone with subtle golden and reddish undertones from the African-South Asian-Hispanic convergence, balanced by cooler Northern European influence in bone structure and undertones.",
+    "heritage": "Complex four-way blend of Hispanic/Latin American (33.2%), Eastern European (24.2%), Southeast Asian (21.3%), and Middle Eastern (21.3%) ancestry. Features reflect this balanced multifacial mixing: warm medium-brown skin tone with golden and olive undertones from the Hispanic-Southeast Asian convergence, cooled and refined by Eastern European and Middle Eastern influence in bone structure and facial geometry. The result is a distinctive phenotype where Southeast Asian eye shape and prominent cheekbone structure merge with Middle Eastern nasal bridge prominence and brow definition, warm Hispanic undertones throughout, and Eastern European angular jaw and chin definition creating a striking asymmetrical beauty.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and angular with minimal muscle definition; movements are jerky and efficient rather than graceful. Collarbone prominent. Perpetually looks like they haven't eaten in three days but functions at maximum energy output.",
@@ -274,8 +258,8 @@
     "hair_style": "Lopsided topknot, frequently redone throughout the day, with loose strands escaping deliberately",
     "hair_length": "Medium (shoulder-length when down, pulled up into knot)",
     "eye_color": "Iridescent patterned irises that cycle through spectrum colors based on ambient light; no discernible pupil boundary",
-    "skin_tone": "Deep warm brown with golden and reddish undertones from Sub-Saharan, South Asian, and Hispanic heritage, slightly ashy from indoor container living. Tone reads as rich mahogany in warm light, deepening toward chocolate in cooler tones.",
-    "complexion": "Sharp angular facial structure with prominent, well-defined cheekbones reflecting Northern European bone structure combined with Sub-Saharan African heritage features. Dark circles under eyes from nocturnal schedule; skin is clear but shows the texture of someone who forgets skincare routines. Faint laugh lines around mouth despite their tendency toward deflection.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones, slightly ashy from indoor container living. Tone reads as burnished bronze in warm light, deepening toward warm umber in cooler tones.",
+    "complexion": "Angular facial structure with prominent, well-defined cheekbones reflecting Southeast Asian and Eastern European bone structure, tempered by Middle Eastern nasal prominence and brow ridge definition. Dark circles under eyes from nocturnal schedule; skin is clear but shows the texture of someone who forgets skincare routines. Faint laugh lines around mouth despite their tendency toward deflection.",
     "distinguishing_marks": [
       "Fine, pale scar running 3cm along left temple from a container-wall collision years ago, barely visible unless backlit.",
       "Hand-stitched data-glyph tattoos covering most of left forearm and back of hands in dark indigo ink — deliberately meaningless symbols arranged in ornamental patterns.",
@@ -285,15 +269,45 @@
     "posture_movement": "Never fully still; fidgets constantly — tapping fingers on any available surface, bouncing one heel when seated, shifting weight from foot to foot when standing. Eyes dart frequently, scanning faces and environments. Speech is rapid and gestural. Movements are economical and practiced, suggesting years of navigating tight container spaces.",
     "clothing_style": "Layered secondhand Tessera-branded workwear disassembled and reassembled into custom silhouette; original corporate cuts are unrecognizable. Multiple overlapping synthetic fabric layers in grays, blacks, and muted blues with hand-stitched patches of reflective material in asymmetrical placement. Wears mismatched fingerless gloves, one heavier than the other. Cheap knockoff smartwatch on right wrist constantly glitching. Worn composite-soled boots that have been resoled twice. Tier 4-5 aesthetic: functional, modified, intentionally unstylish."
   },
-  "image_prompt": "Soren Odinga, a 168cm andromorphic figure with deep warm mahogany skin tone blending Sub-Saharan African, Northern European, South Asian, and Hispanic heritage. Sharp angular facial structure with prominent cheekbones, dark circles under mesmerizing iridescent patterned irises that shift through spectrum colors. Medium-length hair pulled into asymmetrical lopsided topknot, colored deep indigo-to-copper depending on light. Slight build, collarbone prominent, perpetually undernourished appearance. Fine pale scar visible on left temple. Left forearm and hands covered in hand-stitched dark indigo data-glyph tattoos in ornamental patterns. Wearing layered, reassembled Tessera workwear in grays and blacks with reflective patches, mismatched fingerless gloves, cheap glitching smartwatch, worn composite boots. Constant fidgeting pose, eyes darting, fingers tapping. Subdermal data-transfer ridge faintly visible on left wrist. Cyberpunk 2226, Great Lakes Metropolitan Zone container habitat aesthetic, moody blue-gray industrial lighting, neon rim light catching iridescent eyes and reflective patches --ar 2:3 --v 6",
+  "image_prompt": "Soren Echeverría, 168cm tall, wiry and angular neo-noir character, warm medium-brown burnished bronze skin tone with golden and olive undertones, prominent Southeast Asian cheekbones and eye shape merged with Middle Eastern nasal bridge, Eastern European angular jaw. Iridescent color-shifting eyes with no pupil boundary catching ambient light. Deep indigo and copper hair in lopsided topknot with strands escaping. Fine pale scar along left temple, barely visible. Hand-stitched indigo data-glyph tattoos covering left forearm and back of hands. Circular burn mark on right palm. Wearing layered, reassembled Tessera workwear in grays, blacks, muted blues; asymmetrical reflective patches; mismatched fingerless gloves; glitching smartwatch on right wrist; resoled composite boots. Constantly fidgeting, energetic jerky movements, perpetually restless posture. Dark circles under eyes from nocturnal schedule. Container-dweller aesthetic. GLMZ, GLMZ setting, neon backlighting emphasizing iridescent irises, moody indoor lighting, high-contrast noir aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.8,
-    "Northern European": 22.6,
-    "South Asian": 13.4,
-    "Hispanic/Latin American": 8.2
+    "Hispanic/Latin American": 33.2,
+    "Eastern European": 24.2,
+    "Southeast Asian": 21.3,
+    "Middle Eastern": 21.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 33.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 24.2
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 21.3
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 7.8
+      },
+      "Persian": {
+        "Iranian": 5.7,
+        "Afghan Dari": 4
+      },
+      "Arab Gulf": {
+        "Emirati": 3.4,
+        "Iraqi": 0.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bc7f67b5f074e1df597cfc",
   "type": "character",
-  "name": "Yasmin Nazari-Odinga",
+  "name": "Amara Boateng-Shin",
   "aliases": [
     "Inkwell",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
-  "description": "Aybek Yamamoto-Darko are average height but with a presence that fills more space than the body accounts for. At 25, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Aybek Yamamoto-Darko plans to keep it that way. They work as a surveillance specialist out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAybek Yamamoto-Darko operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Amara Boateng-Shin are average height but with a presence that fills more space than the body accounts for. At 25, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Amara Boateng-Shin plans to keep it that way. They work as a surveillance specialist out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAmara Boateng-Shin operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.64,
@@ -262,7 +262,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,37 +282,12 @@
     "The Narrows Compact",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Stratum",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "O'Hare Sovereign",
-    "Prophet",
-    "Slagworks Industrial",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Lattice Whisper Node",
-    "The Narrows",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Vespid Dynamics",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'"
+    "Diaspora Table",
+    "Stratum"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian (43.7%), Middle Eastern (30.7%), and Sub-Saharan African (25.6%) ancestry—a complex diaspora blend reflected in warm brown skin with subtle golden undertones, facial structure that synthesizes multiple continental features, and the genetic legacy of migration and mixture that defines the 2220s.",
+    "heritage": "Southeast Asian (26.1%), Sub-Saharan African (24.1%), East Asian (23.4%), South Asian (9.8%), Middle Eastern (8.4%), and Eastern European (8.2%) ancestry—a genuinely global genetic diaspora creating a complex phenotype where multiple continental features synthesize into something distinctly 2220s. The combination produces facial structure that refuses easy categorization: Southeast Asian cheekbone prominence blended with Sub-Saharan African lip fullness and nose structure, East Asian eye shape subtleties, South Asian skin depth and warmth, Middle Eastern jawline refinement, and Eastern European undertones in overall bone structure. Phenotype is visibly multicontinental, carrying its diverse heritage without settling into any single categorical appearance.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and economical—muscle distributed for endurance rather than bulk. Movements suggest compressed efficiency, as if they've learned to occupy minimal space despite their psychological presence.",
@@ -320,8 +295,8 @@
     "hair_style": "Asymmetrical undercut; longer on one side (covers scarring), shorter on the other for visibility and counterbalance",
     "hair_length": "Medium (varied)",
     "eye_color": "Dark brown with faint amber undertones—natural, unreplaced",
-    "skin_tone": "Warm deep brown with golden undertones and subtle olive cast—a rich blending of Southeast Asian, Middle Eastern, and Sub-Saharan African heritage creating luminous depth beneath warm lighting",
-    "complexion": "Prominent cheekbones with subtle width suggesting Southeast Asian ancestry, strong jawline with the refined angularity common to Middle Eastern features, skin maintained with clinical precision—minimal scarring except where deliberately hidden. Expression defaults to neutral observation. Eyes move constantly; they are always recording.",
+    "skin_tone": "Rich deep warm brown with golden and olive undertones—the result of six-way ancestral blending creating luminous depth. Skin reads as simultaneously warm and cool depending on light angle, with undertones synthesizing Sub-Saharan, Southeast Asian, South Asian, and Eastern European heritage into a complex, glowing tone that shifts with ambient lighting.",
+    "complexion": "High prominent cheekbones with subtle width characteristic of Southeast and East Asian ancestry; strong refined jawline with Middle Eastern angularity and Sub-Saharan definition; nose structure reflecting Sub-Saharan and South Asian heritage with an East Asian-influenced bridge and refined tip. Lip fullness suggesting Sub-Saharan ancestry. Facial structure displays visible multicontinental blending—high cheekbones, broad nose bridge, refined jaw, full lips, and subtle eye shape create a phenotype that clearly carries global ancestry. Skin maintained with clinical precision—minimal scarring except where deliberately hidden. Expression defaults to neutral observation. Eyes move constantly; they are always recording.",
     "distinguishing_marks": [
       "Surgical scar running from left temple to jawline, partially obscured by longer hair on that side, suggesting facial reconstruction or trauma removal",
       "Thin pale line across the right wrist—self-inflicted or combat-related, deliberately left unhealed",
@@ -331,14 +306,71 @@
     "posture_movement": "Still when stationary—genuinely still, not the tense stillness of anxiety but the economical stillness of predatory focus. Moves with controlled precision, weight always centered and ready. Hands at rest are never fully relaxed; fingers maintain micro-movements suggesting constant sensory processing. Eyes scan spaces methodically before settling. Speech patterns shift between clipped efficiency and unexpected verbosity, depending on context.",
     "clothing_style": "Tier 3-4 practical wear with personal modifications. Matte black layered jacket (Kessler brand knockoff, reinforced at stress points) over grey utility vest with asymmetrical pockets and cable anchors. Dark fitted pants with cargo modifications and reinforced knee panels. Worn tactical boots with custom grip sole. Thermal-responsive base layers visible at collar and wrists. No logos or corporate affiliation visible. Jewelry minimal—only a worn brass ring on right index finger, possibly a ritual object or timer. Functional, forgettable, designed not to register as either wealthy or desperate."
   },
-  "image_prompt": "Yasmin Nazari-Odinga, 172cm tall, lean muscular frame, warm deep brown skin with golden undertones reflecting Southeast Asian, Middle Eastern, and Sub-Saharan African heritage. Dark brown hair with silver temples, asymmetrical undercut longer on left side covering surgical scar. Natural dark amber-brown eyes, constantly scanning. Sharp cheekbones and strong jawline. Wearing matte black reinforced Kessler jacket over grey utility vest, dark fitted cargo pants, worn tactical boots. Chrome synthesizer port visible at base of neck with gunmetal finish. Circuit pattern tattoo on left inner forearm. Brass ring on right index finger. Posture economical and still, predatory focus. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial corridor with warm practical lighting, expression neutral and observant, aesthetic suggests someone comfortable with augmentation and modification. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Amara Boateng-Shin, a 172cm lean-built figure with rich deep warm brown skin displaying complex golden and olive undertones from multicontinental ancestry. High prominent Southeast Asian cheekbones blend with Sub-Saharan African nose structure and lip fullness; Middle Eastern jawline refinement; East Asian eye shape. Dark brown eyes with amber undertones, constantly scanning. Dark brown hair with silver threading at temples, asymmetrical undercut with longer left side obscuring surgical scar running temple to jaw. Right wrist shows thin pale self-inflicted line. Left forearm bears faint tattooed circuit pattern. Chrome synthesizer port visible at neck base with matte gunmetal finish. Wearing matte black reinforced Kessler-knockoff jacket over grey asymmetrical utility vest; dark fitted cargo pants; worn tactical boots; thermal-responsive base layers. Worn brass ring on right index finger. Posture: still, predatory, economical. Neutral expression, eyes recording. Industrial GLMZ setting, cool neon side-lighting emphasizing skin's luminous depth and complex undertones, subtle geometric shadows. Mood: focused, inhuman precision, dangerous calm. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 43.7,
-    "Middle Eastern": 30.7,
-    "Sub-Saharan African": 25.6
+    "Southeast Asian": 26.1,
+    "Sub-Saharan African": 24.1,
+    "East Asian": 23.4,
+    "South Asian": 9.8,
+    "Middle Eastern": 8.4,
+    "Eastern European": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 26.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 24.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 13.3
+      },
+      "Chinese": {
+        "Cantonese": 10.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.2
+      },
+      "Indian": {
+        "Marathi": 4.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 2.3
+      },
+      "Arab Levantine": {
+        "Syrian": 1.2,
+        "Lebanese": 1
+      },
+      "Kurdish": {
+        "Kurdish": 3.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 3.4,
+        "Belarusian": 1.6
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.4,
+        "Romanian": 0.2
+      },
+      "Slavic South": {
+        "Bosnian": 1.8,
+        "Slovenian": 0.8
+      }
+    }
+  }
 }

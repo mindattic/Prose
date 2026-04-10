@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7017922bc086587da838c1f",
   "type": "character",
-  "name": "Efua Halverson",
+  "name": "Nadira Balasanyan",
   "aliases": [
     "The Supply Line",
     "RL-4",
@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "Western border — splits time between the farmstead and the border communities he serves",
-  "description": "Tomas Alcala is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead — storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds — a settlement of two hundred people that existed in the gap between M88's governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn't pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they're a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer's hands and a diplomat's voice. He dresses practically and keeps a small leather notebook in his chest pocket — handwritten records of every community's needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he's doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
+  "description": "Nadira Balasanyan is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead — storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds — a settlement of two hundred people that existed in the gap between M88's governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn't pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they're a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer's hands and a diplomat's voice. He dresses practically and keeps a small leather notebook in his chest pocket — handwritten records of every community's needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he's doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -187,7 +187,7 @@
     "Tactician": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Western border",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -206,37 +206,21 @@
     "Ironclad Agrisystems Hemostatic Grain Pack",
     "Kang Athletics KA-200 'Padwork'",
     "The Eastline",
-    "Iowan Behemoth Agricultural Platform",
     "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "Iowan Behemoth Agricultural Platform",
+    "GLMZ",
     "Lacuna Genomics",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "The Lantern Room",
     "Leather",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "The Pure Hand",
     "Slagworks Industrial",
-    "The Iowa Exclusion Zone",
-    "Ambassador Silk",
-    "Arcturus Defense Solutions ARC-R500 'Colossus'",
-    "Biometric Denial Charge BDC-1",
-    "Cezar Watanabe-Gyasi",
-    "Guardian PocketShock PSR-1 'Nudge'",
-    "Irontide Tidal Energy",
-    "Kamala Nystrom-Keita",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Narrowcast",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Burden Clause",
-    "The Coffin Nails",
-    "The Corridor",
-    "The Garden of Wires",
-    "The Human Baseline Alliance",
-    "The Interchange",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "The Iowa Exclusion Zone"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Northern European and Hispanic/Latin American ancestry, trace South Asian and Southeast Asian heritage—a complex diaspora blend resulting in rich warm brown skin with subtle olive undertones",
+    "heritage": "Truly global diaspora blend: South Asian-dominant (39.7%) foundation with substantial Middle Eastern (30.8%) influence, enriched by Sub-Saharan African (11.8%), Southeast Asian (6.5%), Hispanic/Latin American (5.6%), and Eastern European (5.6%) ancestry. Results in warm deep brown skin with golden undertones, olive accents, and rich dimensional complexity from the multi-continental blend.",
     "height_cm": 173,
     "weight_kg": 78,
     "build": "Medium, compact, weathered—muscular from decades of farm labor but starting to soften slightly with age and exhaustion. Broad shoulders, calloused forearms, strong hands with permanent dirt under the nails.",
@@ -244,8 +228,8 @@
     "hair_style": "Practical, shoulder-length, often pulled back with a worn fabric tie or clip",
     "hair_length": "Medium",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Rich warm brown with olive undertones—sun-weathered and lined from outdoor work, reflecting deep Sub-Saharan ancestry with subtle warm highlights from Hispanic and Northern European heritage",
-    "complexion": "Deep laugh lines around the eyes and mouth; a permanent crease between his brows from years of squinting at crops and spreadsheets. Jaw shadowed with stubble most days—he shaves infrequently. Skin is dry in places, calloused on palms and knuckles. Facial structure shows broad cheekbones and strong jawline characteristic of African ancestry, softened by the complexion's warm undertones. Expression carries baseline exhaustion but softens when he smiles.",
+    "skin_tone": "Warm deep brown with pronounced golden and olive undertones—sun-weathered and lined from outdoor work. The color reflects the dominant South Asian genetic base, enriched by Middle Eastern warmth and deepened by Sub-Saharan African heritage, with luminous quality from Southeast Asian genetics and subtle warmth from Hispanic/Latin American blend. Eastern European ancestry visible in the undertone complexity.",
+    "complexion": "Deep laugh lines around the eyes and mouth; permanent crease between the brows from years of squinting at crops and spreadsheets. Jaw shadowed with stubble most days—shaves infrequently. Skin is dry in places, calloused on palms and knuckles. Facial structure shows the broader cheekbones and prominent bone structure characteristic of South Asian-Middle Eastern blend, with angular definition softened by warm golden undertones and Sub-Saharan fullness in the lower face. Expression carries baseline exhaustion but softens when he smiles.",
     "eye_description": "Dark brown, naturally warm and observant",
     "distinguishing_marks": [
       "Long, pale scar running along the inside of his left forearm—knife wound from a border skirmish, healed but never fully faded",
@@ -256,16 +240,79 @@
     "posture_movement": "Moves with the economy of someone who conserves energy—no wasted gestures. Often stands with weight shifted slightly to one side, as if tired. When walking, his pace is steady and deliberate. When handling food or crops, his hands become precise and gentle. His voice is measured, rarely raised, but carries quiet authority earned through competence, not force.",
     "clothing_style": "Tier 3-4 practical utilitarian. Worn canvas work pants in khaki or faded green, reinforced at the knees and pockets. Long-sleeved shirt, usually linen or cotton blend, sleeves rolled or pushed up past the elbows. A weathered leather vest with many pockets—this is where the notebook lives, in a breast pocket worn soft from constant use. Sturdy work boots, well-maintained but scuffed from years of farmstead and border travel. A heavy canvas jacket for colder months, stained with soil and storage facility dust. Small encrypted communication device worn on a cord beneath his shirt—only visible when he's actively using it."
   },
-  "image_prompt": "Efua Halverson, 173cm weathered farmer with rich warm brown skin, dark graying hair in practical shoulder-length style pulled back, deep set dark brown eyes with laugh lines. Medium compact build with broad shoulders from farm labor. Wearing rolled-sleeve linen shirt and worn khaki canvas work pants, heavy weathered leather vest with multiple pockets, sturdy scuffed work boots. Subdermal implant line barely visible along left temple. Faded corn stalk and crescent moon tattoo on right wrist. Pale forearm scar visible. Jaw shadowed with stubble, weathered hands with burn scars. Expression of quiet competence and baseline exhaustion. Standing in cyberpunk 2226 Great Lakes agricultural settlement, warm indoor light casting shadows across his face, surrounded by hydroponic crop sensors and monitoring equipment. Deliberate, economical posture. Gritty, worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Nadira Balasanyan, 173cm tall weathered farmer in GLMZ, warm deep brown skin with golden and olive undertones reflecting South Asian-Middle Eastern-Sub-Saharan African-Southeast Asian heritage blend. Dark brown eyes, dark hair graying at temples, shoulder-length, pulled back. Calloused hands, broad shoulders, compact muscular build softened by age. Distinctive pale forearm scar, burn scars on hand backs, faded corn-crescent moon tattoo on wrist. Thin subdermal implant line along left temple. Wearing worn khaki canvas work pants reinforced at knees, rolled-sleeve linen shirt, weathered leather vest with many pockets, scuffed work boots. Heavy canvas jacket stained with soil dust. Expression of baseline exhaustion with quiet authority. Standing with weight slightly to one side, economical posture. Near crops or agricultural storage, warm afternoon lighting casting shadows on lined face, baseline weathered but capable. Neo-noir agricultural aesthetic, practical tier utilitarian gear. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 56.6,
-    "Northern European": 19.2,
-    "Hispanic/Latin American": 14.5,
-    "South Asian": 7.0,
-    "Southeast Asian": 2.7
+    "South Asian": 39.7,
+    "Middle Eastern": 30.8,
+    "Sub-Saharan African": 11.8,
+    "Southeast Asian": 6.5,
+    "Hispanic/Latin American": 5.6,
+    "Eastern European": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 39.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 3.1,
+        "Emirati": 6.5
+      },
+      "Arab Levantine": {
+        "Lebanese": 17.4
+      },
+      "Persian": {
+        "Iranian": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 2.8
+      },
+      "West African": {
+        "Nigerian": 8.2
+      },
+      "Central African": {
+        "Congolese": 0.5,
+        "Angolan": 0.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 3.2,
+        "Sundanese": 3.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.1
+      },
+      "Central American": {
+        "Nicaraguan": 0.7
+      },
+      "Caribbean": {
+        "Cuban": 1.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 2,
+        "Sorbian": 2.2
+      },
+      "Slavic South": {
+        "Croatian": 0.1,
+        "Serbian": 0.3
+      },
+      "Slavic East": {
+        "Russian": 0.9,
+        "Ukrainian": 0.1
+      }
+    }
+  }
 }

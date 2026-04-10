@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64b788493a565832398929f",
   "type": "character",
-  "name": "Haze Ibarra",
+  "name": "Haze Asomaning",
   "aliases": [
     "Icicle",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near Dearborn and Jackson",
-  "description": "Liora Gutierrez-Asante is lean and angular, all sharp edges and visible tension. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLiora Gutierrez-Asante has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Haze Asomaning is lean and angular, all sharp edges and visible tension. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHaze Asomaning has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.74,
@@ -264,7 +264,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,28 +281,17 @@
     "Masquerade",
     "The Shelf",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
+    "Dearborn Forge",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Makena Johanssen-Diallo",
-    "Narrowcast",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "Witness",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "Pellucid Systems"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with strong Pacific Islander and Eastern European ancestry — a complex genetic blend resulting in warm, olive-toned skin with subtle depth. The Pacific Islander contribution adds richness to bone structure and facial planes, while Eastern European ancestry contributes to eye shape and facial geometry. Mixed heritage shows in the interplay of features rather than discrete categorical traits.",
+    "heritage": "Complex global diaspora blend: Northern European (28.3%), Southeast Asian (23.4%), Sub-Saharan African (22.5%), Hispanic/Latin American (18.2%), East Asian (5.8%), Indigenous American (1.8%). Features reflect this intricate multi-continental heritage — warm medium-brown skin with olive and golden undertones from the layered ancestry, bone structure showing both Southeast Asian and Sub-Saharan African prominence with Northern European eye geometry, creating a uniquely balanced phenotype where no single ancestry dominates but all contribute to dimensional facial planes and warm, complex skin depth.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with visible musculature — wiry strength rather than bulk, the physique of someone who moves through tight spaces and carries their own gear. Chest slightly concave, shoulders sharp. No excess fat.",
@@ -310,8 +299,8 @@
     "hair_style": "Pulled back tight, practical — no ornamentation",
     "hair_length": "Medium, shoulder-length when loose",
     "eye_color": "Left eye: dark brown, natural. Right eye: cybernetic with polished titanium housing, lens displays faint amber glow during recording mode",
-    "skin_tone": "Warm medium brown with olive and golden undertones — the blended result of Latin American, Pacific Islander, and Eastern European ancestry creating dimensional warmth rather than flat tone",
-    "complexion": "Weathered, lined face that reads older than the timeline. Minimal grooming — functional beard, salt-and-pepper stubble often visible. Skin shows minor scarring on cheekbones and jaw, old and faded. Facial structure reflects Pacific Islander bone prominence with Eastern European eye-set depth.",
+    "skin_tone": "Warm medium brown with olive and golden undertones — the multi-continental blend of Northern European, Southeast Asian, Sub-Saharan African, and Hispanic/Latin American ancestry creating dimensional warmth and subtle richness rather than flat tone",
+    "complexion": "Weathered, lined face that reads older than the timeline. Minimal grooming — functional beard, salt-and-pepper stubble often visible. Prominent cheekbones and broad facial planes from Southeast Asian and Sub-Saharan African ancestry balanced with the eye-set depth and subtle nasal structure from Northern European genetics. Skin shows minor scarring on cheekbones and jaw, old and faded.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone — circa 20 years old, clean cut",
       "Burn scarring on right forearm, partial — thermal damage, poorly healed, suggests low-grade medical intervention",
@@ -321,14 +310,77 @@
     "posture_movement": "Moves with economic precision — no wasted motion, shoulders slightly forward. Stands asymmetrically, weight favoring the left side. Right arm hangs slightly loose, suggesting chronic pain management through the editor. Eyes move constantly, scanning — the cybernetic eye slightly faster than the organic one. Head turns before the body follows. Everything deliberate.",
     "clothing_style": "Tier 4-5 practical: unmarked dark gray synth-weave jacket with reinforced stitching, pockets modified for gear distribution. Black compression shirt underneath. Cargo pants in matte charcoal with multiple thigh pockets — worn fabric in high-friction areas. Boots: scuffed black tactical grade, laces wrapped tight. No logos, no status markers, nothing that reflects wealth or corporate affiliation. Layers designed for temperature variance in sub-street work. Single worn paracord bracelet on left wrist."
   },
-  "image_prompt": "Haze Ibarra, weathered cyberpunk operative in 2226 Great Lakes Metropolitan Zone, 178cm lean muscular frame with warm olive-toned skin bearing faded scars. Dark gray-black medium-length hair pulled back tight, functional salt-and-pepper stubble on angular face. Left eye dark brown natural, right eye polished titanium cybernetic housing with amber glow indicator, visible subdermal chrome plating on neck. Wearing unmarked dark gray synth-weave tactical jacket over black compression shirt, matte charcoal cargo pants, scuffed black tactical boots. Wrist tattoo visible on left arm. Standing with asymmetrical posture favoring left side, shoulders slightly forward, eyes constantly scanning. Dimly lit underground sub-street setting with industrial steel and concrete, cool neon accent lighting catching the titanium eye housing. Cinematic noir cyberpunk atmosphere, economic movement suggested in stance, no corporate markers, minimal gear visible but functional --ar 2:3 --v 6",
+  "image_prompt": "Haze Asomaning, lean 178cm figure in dark practical synth-weave jacket and charcoal cargo pants, standing in neon-lit sub-street environment, GLMZ. Warm medium-brown skin with olive undertones, weathered angular face with prominent cheekbones reflecting Southeast Asian and Sub-Saharan African heritage blended with Northern European bone structure. Dark gray shoulder-length hair pulled back tight. Left eye dark brown natural, right eye cybernetic titanium housing with amber glow. Salt-and-pepper stubble, faded temple-to-cheekbone scar visible. Subdermal chrome plating at neck junction. Thin white scars on face from years of sub-street work. Asymmetrical stance, weight favoring left side, shoulders forward, constant scanning gaze. Scuffed tactical boots, worn paracord bracelet. Standing in shadow and neon reflection, no corporate markers, functional and unmarked gear. Moody cinematic lighting, cool blues and warm amber neon, slightly grainy texture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 44.7,
-    "Pacific Islander": 31.8,
-    "Eastern European": 23.5
+    "Northern European": 28.3,
+    "Southeast Asian": 23.4,
+    "Sub-Saharan African": 22.5,
+    "Hispanic/Latin American": 18.2,
+    "East Asian": 5.8,
+    "Indigenous American": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 10.3,
+        "Norwegian": 1.4
+      },
+      "Germanic": {
+        "German": 9.9,
+        "Dutch": 3.1
+      },
+      "British Isles": {
+        "English": 2.5,
+        "Irish": 1.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 15.8
+      },
+      "Cambodian": {
+        "Khmer": 7.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 15,
+        "Cameroonian": 7.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 8.1
+      },
+      "Central American": {
+        "Guatemalan": 8.6,
+        "Salvadoran": 1.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4.4
+      },
+      "Chinese": {
+        "Shanghainese": 0.2,
+        "Cantonese": 0.7
+      },
+      "Korean": {
+        "Korean": 0.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 0.8,
+        "Zapotec": 0.3
+      },
+      "Andean": {
+        "Aymara": 0.7
+      }
+    }
+  }
 }

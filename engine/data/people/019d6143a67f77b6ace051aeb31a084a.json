@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67f77b6ace051aeb31a084a",
   "type": "character",
-  "name": "Dmitri Vestergaard",
+  "name": "Santiago Yoon",
   "aliases": [
     "Oke",
     "the Corporal"
@@ -13,7 +13,7 @@
   "age": 91,
   "status": "active",
   "location": "Montclare Quiet, Room 7, the Aldgate Assisted Living Node, near North Ave and Damen",
-  "description": "Olekan Mbeki-Sigurðsson is ninety-one years old and looks eighty and moves like sixty-five, which he attributes to the military-grade bone lacing he received at twenty-two and the stubbornness he received at birth. He is lean and upright, dark-skinned, with a head shaved smooth that he keeps polished, and a face that has resolved from handsome into something more interesting — all strong lines and earned geography. His left hand trembles slightly, a nerve issue from a combat incident in 2153 that was never fully repaired. The rest of him does not tremble. He wears his old Palladian insignia on a chain around his neck, not out of loyalty to the corporation — he will explain in detail why that would be idiotic — but because he cannot separate it from the men and women who wore it beside him.\n\nHe is the oldest resident at Aldgate and has outlived three care coordinators and four attempts to move him to a higher-dependency facility. He plays tessera chess with anyone who will sit across from him and loses on purpose to interesting opponents to get a longer game. He is not warm exactly, but he is fair, and in a place that has often not been fair to him, this has made him a figure of quiet authority among the other residents. He will not discuss his actual combat experiences unless he trusts you completely. He will talk about his fellow soldiers constantly.",
+  "description": "Santiago Yoon is ninety-one years old and looks eighty and moves like sixty-five, which he attributes to the military-grade bone lacing he received at twenty-two and the stubbornness he received at birth. He is lean and upright, dark-skinned, with a head shaved smooth that he keeps polished, and a face that has resolved from handsome into something more interesting — all strong lines and earned geography. His left hand trembles slightly, a nerve issue from a combat incident in 2153 that was never fully repaired. The rest of him does not tremble. He wears his old Palladian insignia on a chain around his neck, not out of loyalty to the corporation — he will explain in detail why that would be idiotic — but because he cannot separate it from the men and women who wore it beside him.\n\nHe is the oldest resident at Aldgate and has outlived three care coordinators and four attempts to move him to a higher-dependency facility. He plays tessera chess with anyone who will sit across from him and loses on purpose to interesting opponents to get a longer game. He is not warm exactly, but he is fair, and in a place that has often not been fair to him, this has made him a figure of quiet authority among the other residents. He will not discuss his actual combat experiences unless he trusts you completely. He will talk about his fellow soldiers constantly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -196,7 +196,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -260,19 +260,11 @@
     "Tessera Corponation",
     "Witness",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Ambassador Silk",
-    "Breck Tannen",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "NeuralPath Horizon Standard Neural Mesh",
-    "Otitodilichukwu Sigurðsson-Batmunkh",
-    "The Heritage Vault",
-    "The Ledger",
-    "Veslemøy Achebe-Tursynov",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Compass Rose"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly East Asian (45.4%) with significant Eastern European (26.7%) and Sub-Saharan African (17.7%) ancestry, with smaller components of Southeast Asian (5.0%) and Hispanic/Latin American (5.2%) heritage. This creates a striking blend: the facial structure shows East Asian bone geometry — subtle epicanthic folds, moderately prominent cheekbones — softened and widened by Eastern European and African ancestry. The overall effect is a unique polycultural phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Predominantly East Asian (46.4%) with substantial Hispanic/Latin American (22.2%) and Southeast Asian (21.3%) ancestry, with smaller Sub-Saharan African (10.1%) component. This creates a striking polycultural blend: the facial structure shows East Asian bone geometry — subtle epicanthic folds, moderately prominent cheekbones — enriched and broadened by Southeast Asian, Hispanic/Latin American, and African ancestry. The overall effect is a unique transpacific phenotype reflecting the Ubiquitous Diaspora.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and upright with visible musculature despite age; military-grade bone lacing maintains structural integrity and density, preventing the typical spinal compression of elderly humans. Shoulders still broad, posture disciplined.",
@@ -280,8 +272,8 @@
     "hair_style": "Shaved smooth and polished daily",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, alert and tracking",
-    "skin_tone": "Medium to deep brown with warm undertones — a blend of East Asian, Sub-Saharan African, and Eastern European ancestry. The coloration is rich and complex, neither purely warm nor cool, bearing the patina of nine decades of life. Weathered but resilient, maintained with meticulous care.",
-    "complexion": "Facial geometry reflects the genetic blend: moderately high cheekbones with the subtle structure of East Asian ancestry, tempered by the broader jaw and deeper facial planes contributed by African and Eastern European heritage. Eyes are deep-set and alert. Skin bears the topography of nine decades: fine network of laugh lines around eyes, deep creases from the bridge of nose downward, liver spots on temples and scalp. The overall impression is of dignified age rather than decline. Kept meticulously clean. Slight tremor visible in left hand at rest.",
+    "skin_tone": "Medium to deep warm brown with golden undertones — a harmonious blend of East Asian, Southeast Asian, Hispanic/Latin American, and Sub-Saharan African ancestry. The coloration is rich and complex, bearing the patina of nine decades of life. Weathered but resilient, maintained with meticulous care.",
+    "complexion": "Facial geometry reflects the genetic blend: moderately high cheekbones with the subtle structure of East Asian ancestry, tempered by the broader jaw and deeper facial planes contributed by Southeast Asian, Hispanic/Latin American, and African heritage. Eyes are deep-set and alert, with natural warmth. Skin bears the topography of nine decades: fine network of laugh lines around eyes, deep creases from the bridge of nose downward, liver spots on temples and scalp. The overall impression is of dignified age rather than decline. Kept meticulously clean. Slight tremor visible in left hand at rest.",
     "distinguishing_marks": [
       "Surgical scar on left temple, approximately 4cm, from 2153 combat incident; pale and well-healed",
       "Thin pale line running along left jawline from ear to chin, barely visible unless light hits directly",
@@ -291,16 +283,57 @@
     "posture_movement": "Carries himself with military bearing despite age — spine straight, shoulders level, weight distributed evenly. Movements economical and deliberate, no wasted motion. Walks with even gait (bone lacing compensates for age-related deterioration). Sits with attention; does not slouch. Left hand tends to rest on table or lap to minimize visible tremor. Head turns fully rather than eyes alone — a combat habit.",
     "clothing_style": "Tier 3-4 assisted living resident standard: comfortable fitted shirts in muted colors (charcoal, navy, gray), lightweight slacks with elastic waistband, slip-on shoes designed for accessibility. Layers a lightweight cardigan or vest in cool months. Keeps clothing clean and pressed — laundry service of Aldgate Node, but he ensures his own grooming. No corporate branding except the Palladian insignia he chooses to wear. Practical, modest, worn with a kind of unforced dignity."
   },
-  "image_prompt": "An elderly man in the 2220s, 178cm tall with lean military bearing, shaved head revealing rich medium-dark brown skin with warm undertones blending East Asian, Sub-Saharan African, and Eastern European heritage. Strong facial geometry with deep-set alert dark eyes, high cheekbones, prominent jaw lined with nine decades of living — laugh lines around eyes, deep creases, liver spots on temples. Small pale surgical scar on left temple visible. Wearing charcoal fitted shirt, lightweight gray slacks, slip-on shoes. Steel chain with Palladian military dog-tag insignia visible at collar. Cochlear implant ports visible behind ears. Sits upright with military discipline despite age, left hand resting on table to minimize tremor. Cyberpunk 2220s assisted living facility, soft neutral lighting, dignified and composed, background suggests Aldgate Node common area with subtle neon accents. Cinematic, character study, dignified aging soldier, hyperrealistic --ar 2:3 --v 6",
+  "image_prompt": "Santiago Yoon, 90-year-old man in 2226 near-future megacity setting, medium-deep warm brown skin with golden undertones reflecting East Asian, Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage, bald head polished smooth, sharp cheekbones and deep-set alert dark brown eyes, weathered dignified face with laugh lines and age spots, military-grade bone lacing visible in straight disciplined posture, pale surgical scar on left temple, Palladian military insignia on steel chain at collar, cochlear implant ports visible behind ears, left hand with slight tremor, wearing charcoal fitted shirt and lightweight cardigan, seated with military bearing in muted neo-noir residential setting, soft indirect lighting, composed and alert expression, no cybernetic chrome, intricate topography of age and service visible in facial structure, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 45.4,
-    "Eastern European": 26.7,
-    "Sub-Saharan African": 17.7,
-    "Hispanic/Latin American": 5.2,
-    "Southeast Asian": 5.0
+    "East Asian": 46.4,
+    "Hispanic/Latin American": 22.2,
+    "Southeast Asian": 21.3,
+    "Sub-Saharan African": 10.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 46.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 19.6
+      },
+      "Central American": {
+        "Salvadoran": 1.7,
+        "Honduran": 0.2
+      },
+      "South American": {
+        "Venezuelan": 0.2,
+        "Colombian": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 2.1,
+        "Sumatran": 1.2
+      },
+      "Filipino": {
+        "Tagalog": 2.2,
+        "Cebuano": 5.7
+      },
+      "Laotian": {
+        "Laotian": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 7.7
+      },
+      "Southern African": {
+        "South African": 1.3,
+        "Botswanan": 1.1
+      }
+    }
+  }
 }

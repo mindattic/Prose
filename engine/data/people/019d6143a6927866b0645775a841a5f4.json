@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6927866b0645775a841a5f4",
   "type": "character",
-  "name": "Sibusiso Balasanyan",
+  "name": "Farid Halverson",
   "aliases": [
     "Pati",
     "the Sociologist"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core, near State and Jackson",
-  "description": "Patience Aborode-Kristjánsson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of GLMZ's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
+  "description": "Farid Halverson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of GLMZ's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -183,7 +183,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,35 +252,20 @@
     "Meridian Core",
     "Auburn Grist",
     "The Reclamation Assembly",
-    "GLMZ",
     "Chronicle",
     "The Shelf",
     "The Heritage Vault",
-    "Tessera Attrition Engine TE-9 'Patience'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Pale Mile",
     "Hazel Brink",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Inoue-Aidoo",
-    "Breck Tannen",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iowan Behemoth — 'Palisade'",
-    "MERIDIAN",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "SynapTech Clarity Pro Neural Interface",
-    "Tessera Corponation",
-    "The Nearfield"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "The Pale Mile",
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Mixed-heritage ancestry reflecting Middle Eastern (46.4%), Sub-Saharan African (21.3%), East Asian (19.1%), and South Asian (13.2%) genetic background — a striking blend evident in facial structure and skin tone that defies simple categorization",
+    "heritage": "Complex multi-continental ancestry reflecting East Asian (32.1%), South Asian (26.1%), Sub-Saharan African (26.0%), Southeast Asian (6.5%), Hispanic/Latin American (5.3%), and Eastern European (4.0%) genetic background — a striking blend evident in facial structure and skin tone that defies simple categorization",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Large-framed and broad-shouldered with substantial presence; carries weight in her core and upper body with the ease of someone who moves through physical space with purpose and without apology",
@@ -288,8 +273,8 @@
     "hair_style": "Close-cropped, neat, with visible salt-and-pepper texture",
     "hair_length": "Short",
     "eye_color": "Deep brown with warm amber undertones",
-    "skin_tone": "Rich warm brown complexion — melanized deeply with golden and olive undertones from the convergence of Middle Eastern, African, and South Asian ancestry",
-    "complexion": "Distinctive facial structure reflecting her genetic ancestry — high, prominent cheekbones with slight East Asian cant, broad forehead, strong defined jaw with Middle Eastern geometry. Wide-set eyes with epicanthic influence. Face marked by weathering consistent with two decades of outdoor fieldwork; deep reading lines radiating from eyes; skin shows sun exposure and the patina of time spent in lower-tier zones without cosmetic intervention",
+    "skin_tone": "Rich warm brown complexion — melanized with golden and olive undertones from the convergence of East Asian, South Asian, Sub-Saharan African, and Southeast Asian ancestry",
+    "complexion": "Distinctive facial structure reflecting her multi-continental genetic ancestry — high, prominent cheekbones with East Asian cant, broad forehead, strong defined jaw. Wide-set eyes with subtle epicanthic influence. Face marked by weathering consistent with two decades of outdoor fieldwork; deep reading lines radiating from eyes; skin shows sun exposure and the patina of time spent in lower-tier zones without cosmetic intervention",
     "distinguishing_marks": [
       "Prominent scar along left jawline running approximately 8cm from angle of jaw toward chin, pale and old but clearly visible, origin undisclosed",
       "Fine laugh lines around mouth and eyes suggesting frequent, genuine smiling",
@@ -299,15 +284,65 @@
     "posture_movement": "Moves with deliberate authority without aggression — shoulders back, head level, direct eye contact. Sits in interviews with the physical patience of someone trained to occupy silence. Gestures are economical but expressive. Her presence commands a room not through performance but through evident competence and earned respect.",
     "clothing_style": "Functional Tier 3 workwear — heavy-duty canvas cargo pants or reinforced denim, technical layered tops in muted colors (charcoal, slate, cream), waterproof field jacket worn thin from use. Worn Córdoba-make boots suitable for long fieldwork. Carries a Faraday-lined satchel containing physical notebooks, data terminals, and community liaison materials. No corporate branding; all clothing chosen for durability and practicality over status. Minimal jewelry — a worn titanium band on left ring finger, possibly commemorative."
   },
-  "image_prompt": "Sibusiso Balasanyan, 178cm tall woman with rich warm brown skin reflecting Middle Eastern, African, East Asian, and South Asian ancestry. High cheekbones, broad forehead, strong defined jaw, wide-set deep brown eyes with amber warmth. Close-cropped natural grey hair with salt-and-pepper texture. Prominent pale scar along left jawline. Fine laugh lines around eyes and mouth. Wearing functional Tier 3 workwear: weathered technical layered top in charcoal, heavy-duty cargo pants, thin waterproof field jacket, worn Córdoba boots. Carrying Faraday-lined satchel. Direct, commanding presence. Deliberate posture, economical gestures. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, lower-tier fieldwork aesthetic. Realistic, dignified, weathered by decades of outdoor work. Natural lighting, industrial background. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ field operative Farid Halverson, tall broad-shouldered woman with rich warm brown skin blending East Asian, South Asian, and Sub-Saharan African heritage, close-cropped grey salt-and-pepper hair, deep brown eyes with amber warmth. Prominent high cheekbones with subtle epicanthic influence, strong jawline marked by pale 8cm scar along left side, weathered face with deep laugh lines and sun-exposure patina, callused right hand. Wearing worn functional Tier 3 canvas cargo pants, layered charcoal technical top, thin waterproof field jacket, beaten Córdoba boots, carries Faraday-lined satchel. Titanium band on left ring finger. Posture radiates earned authority and competence, direct gaze, economical gestures. Lower-tier zone setting, dim industrial lighting with hints of neon, serious focused expression, two decades of fieldwork evident in bearing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 46.4,
-    "Sub-Saharan African": 21.3,
-    "East Asian": 19.1,
-    "South Asian": 13.2
+    "East Asian": 32.1,
+    "South Asian": 26.1,
+    "Sub-Saharan African": 26,
+    "Southeast Asian": 6.5,
+    "Hispanic/Latin American": 5.3,
+    "Eastern European": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 16.5,
+        "Fujianese": 15.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 26.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 10.8,
+        "Zambian": 13.9
+      },
+      "Central African": {
+        "Congolese": 1.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 4.7
+      },
+      "Indonesian": {
+        "Balinese": 1.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3.4
+      },
+      "South American": {
+        "Venezuelan": 1.9
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 0.5,
+        "Sorbian": 1.5
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.9,
+        "Romanian": 1.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7177e7387d1c07a38ccfac1",
   "type": "character",
-  "name": "Arden Strömqvist-Castañeda-Kamara",
+  "name": "Arden Balasanyan-Hayashi-Cardenas",
   "aliases": [
     "Voja",
     "Old Voja",
@@ -14,7 +14,7 @@
   "age": 67,
   "status": "active",
   "location": "The Shelf, Sublevel 3 — a mid-density apartment block built into the old lakeshore retaining infrastructure, near sub-level access near Dearborn and Jackson",
-  "description": "Vojislav Addo-Mensimah is built like something that was once much larger and has been reduced by careful attrition. He is tall and wide-shouldered with a fighter's posture that his body has not fully given up on despite a bad left knee, two replaced vertebrae, and a right hand that trembles slightly in cold weather. His skin is medium brown, his head is shaved close, and he keeps a neat grey beard that his grandnephews make fun of in an affectionate way. The left side of his face bears the faint discoloration of old thermal scarring — the kind of burn that good money could have erased entirely but he chose only to have partially treated, which people interpret variously as pride, poverty, or philosophy. All three are somewhat correct.\n\nHe served eleven years with Ferrogate Transit's Security Enforcement Division during the second and third Corporate Wars, doing the kind of work that Ferrogate now describes in their history as 'infrastructure protection operations.' He has his own words for it. He does not use them often. He got out in 2165 with a Tier 2 service pension that has kept him in beer and building fees but not much else, and he has lived on the Shelf ever since in a two-room apartment he has made, through sheer effort of will, into something that feels like a home. He has an instinct for de-escalation that comes from having watched too many situations that could have been de-escalated fail to be.",
+  "description": "Arden Balasanyan-Hayashi-Cardenas is built like something that was once much larger and has been reduced by careful attrition. He is tall and wide-shouldered with a fighter's posture that his body has not fully given up on despite a bad left knee, two replaced vertebrae, and a right hand that trembles slightly in cold weather. His skin is medium brown, his head is shaved close, and he keeps a neat grey beard that his grandnephews make fun of in an affectionate way. The left side of his face bears the faint discoloration of old thermal scarring — the kind of burn that good money could have erased entirely but he chose only to have partially treated, which people interpret variously as pride, poverty, or philosophy. All three are somewhat correct.\n\nHe served eleven years with Ferrogate Transit's Security Enforcement Division during the second and third Corporate Wars, doing the kind of work that Ferrogate now describes in their history as 'infrastructure protection operations.' He has his own words for it. He does not use them often. He got out in 2165 with a Tier 2 service pension that has kept him in beer and building fees but not much else, and he has lived on the Shelf ever since in a two-room apartment he has made, through sheer effort of will, into something that feels like a home. He has an instinct for de-escalation that comes from having watched too many situations that could have been de-escalated fail to be.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -191,7 +191,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,34 +278,11 @@
     "New Windsor / Novaya Windsorka",
     "The Shelf",
     "Free Assembly",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Crucible LL-4 'Peacekeeper'",
-    "Immaculée Dalgaard-Nwosu",
-    "Jitterbug",
-    "MERIDIAN",
-    "NeuralPath Horizon Standard Neural Mesh",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "Tomasz Wren",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Volkov-Saito Precision VSR-20 'Partisan'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Dearborn Forge"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian, Hispanic/Latin American, Eastern European, and Sub-Saharan African blend — a true product of the Ubiquitous Diaspora. His features carry the high cheekbones and eye shape of East Asian ancestry, the warm olive-brown undertones of Hispanic heritage, the substantial frame of Eastern European stock, and the rich melanin depth of Sub-Saharan African lineage. The combination creates a distinctive appearance that resists easy categorization.",
+    "heritage": "East Asian (46.5%), Middle Eastern (35.1%), and Hispanic/Latin American (18.4%) blend — a true product of the Ubiquitous Diaspora. His features carry the high cheekbones and eye shape characteristic of East Asian ancestry, the sharp bone structure and prominent features of Middle Eastern heritage, and the warm melanin depth and olive undertones of Hispanic/Latin American lineage. The combination creates a distinctive appearance that resists easy categorization, with a face that speaks to multiple continents and generations.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Tall and broad-shouldered with the residual mass of a younger soldier, now settled into measured weight. His frame carries the deliberate posture of someone trained to move with purpose; age and cumulative injury have not yet broken it, but they have negotiated terms with it.",
@@ -313,8 +290,8 @@
     "hair_style": "Shaved close to the scalp",
     "hair_length": "Shaved",
     "eye_color": "Dark brown with faint cybernetic amber glow at the iris rim (military optical enhancement, dated model)",
-    "skin_tone": "Deep warm brown with olive undertones — the result of East Asian, Hispanic, and Sub-Saharan African ancestry mellowing into a rich, weathered patina. The warmth reads as amber-tinged in certain light, with subtle variation across his face from years of exposure.",
-    "complexion": "Weathered but maintained. Strong jawline softened by age, carrying the subtle breadth characteristic of East Asian heritage blended with the angular definition of Eastern European bone structure. Neatly groomed grey beard kept at even length. The left side of his face bears a faint discoloration — pale thermal scarring from temple to cheekbone, deliberately left partially unhealed as a deliberate choice.",
+    "skin_tone": "Warm golden-bronze with olive-amber undertones — the result of East Asian, Middle Eastern, and Hispanic ancestry creating a rich, weathered patina. Deeper melanin concentration in the Hispanic and Middle Eastern blend creates subtle warmth across the cheekbones and temples, with weathered texture from years of exposure.",
+    "complexion": "Weathered but maintained. Strong jawline with the subtle width characteristic of East Asian heritage blended with the angular, prominent bone structure of Middle Eastern ancestry. Neatly groomed grey beard kept at even length. The left side of his face bears a faint discoloration — pale thermal scarring from temple to cheekbone, deliberately left partially unhealed as a deliberate choice.",
     "distinguishing_marks": [
       "Thermal scarring on the left side of his face (temple to upper cheekbone) — pale, textured, partially treated but intentionally incomplete.",
       "Faint network of surgical scars along the lower back and neck (vertebrae replacement sites), visible only when shirtless.",
@@ -325,15 +302,43 @@
     "posture_movement": "Stands with weight distributed deliberately — a soldier's stance that has become habitual. Moves with measured deliberation; his left knee creates an almost imperceptible hitch in his gait that he has learned to absorb. His right hand occasionally rests palm-down on surfaces to stabilize the tremor. When seated, he occupies space with quiet authority, shoulders back, elbows at rest. His movements are economical — no wasted motion.",
     "clothing_style": "Tier 2 utilitarian comfort. Worn Ferrogate Transit gray cargo pants with reinforced thigh pockets. A navy or charcoal long-sleeved shirt (thermal), usually with a Shelf Block 3 Tenants Committee pin on the collar — the only visible declaration of his informal authority. A faded brown wool overjacket for common areas and building meetings. Worn but well-maintained black lace boots with steel toe caps. No visible jewelry except a scratched titanium wedding band worn on a chain around his neck (not on his hand — too much tremor). His clothing is clean, practical, and chosen for durability rather than fashion."
   },
-  "image_prompt": "Portrait of Arden Strömqvist-Castañeda-Kamara, cyberpunk 2226, a 188cm tall weathered man with deep warm brown skin blending East Asian, Hispanic, Eastern European, and Sub-Saharan African heritage. Shaved grey hair, dark brown eyes with subtle amber cybernetic glow at iris rim. Strong jawline softened by age, neatly groomed grey beard. Pale thermal scarring visible on left temple to cheekbone, deliberately incomplete. Military bearing despite age, slight left shoulder mechanical density visible under skin. Wears worn grey Ferrogate Transit cargo pants, navy thermal long-sleeved shirt with Shelf Block 3 Tenants Committee pin, faded brown wool overjacket, black steel-toed boots. Scratched titanium wedding band on chain around neck. Standing with deliberate weight distribution, quiet authority. Faint tremor in right hand. Indoor residential setting, cool overhead lighting casting slight shadow on scarred left side of face, gritty Metropolitan Zone architecture visible in background, worn but dignified atmosphere. Hyperrealistic, weathered, stoic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Arden Balasanyan-Hayashi-Cardenas, 188cm tall broad-shouldered man with warm golden-bronze skin blending East Asian, Middle Eastern, and Hispanic ancestry. Close-shaved grey hair, dark brown eyes with faint amber cybernetic glow at iris rim. Weathered face with strong jawline, pale thermal scarring visible on left temple to cheekbone. Neatly groomed grey beard. Wearing navy long-sleeved thermal shirt with Shelf Block 3 Tenants Committee pin, faded brown wool overjacket, grey Ferrogate Transit cargo pants. Black steel-toed boots. Titanium wedding band chain at neck. Standing with deliberate soldier's posture, slight weight distribution forward, quiet authority. Barely perceptible mechanical asymmetry in left forearm and shoulder. Right hand tremor visible at rest. Dim industrial lighting casting soft shadows across weathered features, cool neon accent light reflecting off cybernetic eye enhancement. Gritty Great Lakes Metropolitan Zone interior, worn furniture and concrete visible behind, mood contemplative and seasoned. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 30.9,
-    "Hispanic/Latin American": 30.1,
-    "Eastern European": 23.7,
-    "Sub-Saharan African": 15.3
+    "East Asian": 46.5,
+    "Middle Eastern": 35.1,
+    "Hispanic/Latin American": 18.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 15
+      },
+      "Chinese": {
+        "Cantonese": 6.8,
+        "Mandarin Northern": 4.9
+      },
+      "Japanese": {
+        "Japanese": 19.8
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 2.7,
+        "Tajik Persian": 32.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 8.9
+      },
+      "South American": {
+        "Colombian": 6.9,
+        "Brazilian": 2.6
+      }
+    }
+  }
 }

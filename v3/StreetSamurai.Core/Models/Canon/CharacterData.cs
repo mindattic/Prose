@@ -69,6 +69,8 @@ public class CharacterData : ICanonEntity
     [JsonPropertyName("image_prompt")] public string ImagePrompt { get; set; } = "";
     /// <summary>Genetic ancestry — what a 23andMe test would show. Percentages by region. Independent of surname.</summary>
     [JsonPropertyName("genetic_ancestry")] public Dictionary<string, double> GeneticAncestry { get; set; } = new();
+    /// <summary>Three-tier ancestry detail: region → sub-region → nationality with percentages.</summary>
+    [JsonPropertyName("ancestry_detail")] public Dictionary<string, Dictionary<string, Dictionary<string, double>>> AncestryDetail { get; set; } = new();
 }
 
 /// <summary>
@@ -236,7 +238,7 @@ public class CharacterRelationship
 }
 
 /// <summary>
-/// FBI/NCIC-inspired physical description standard adapted for cyberpunk characters.
+/// FBI/NCIC-inspired physical description standard adapted for neo-noir characters.
 /// </summary>
 public class PhysicalDescription
 {

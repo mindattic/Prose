@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bb74099d698ade0a0e1251",
   "type": "character",
-  "name": "Vladislav Nurzhanov",
+  "name": "Taslima Lindström",
   "aliases": [
     "Revenant",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Halsted and Division",
-  "description": "Aybek Herrera-Kyei is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a face out of The Overhang, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aybek Herrera-Kyei describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Taslima Lindström is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a face out of The Overhang, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Taslima Lindström describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.95,
@@ -262,7 +262,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,46 +281,23 @@
   "related_entities": [
     "Masquerade",
     "Ironveil Canopy",
-    "GLMZ",
     "TESSERA PG-2 'Signature'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Brewer's Spine",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Pikasso Wemba-Þórðarson",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA CR-12 'Whisper'",
-    "The Wire Taps",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European dominant (34.5%) with significant Central Asian (20.8%), Middle Eastern (20.2%), and East Asian (17.3%) ancestry, creating a striking Eurasian phenotype. Minor Hispanic/Latin American admixture (7.2%) adds subtle warmth to overall coloration.",
+    "heritage": "South Asian dominant (43.9%) with significant Northern European (23.8%), Pacific Islander (12.6%), North African (10.6%), and Sub-Saharan African (7.0%) ancestry, plus minor Indigenous American (2.1%) admixture. This creates a striking Pan-Diaspora phenotype — warm South Asian bone structure and coloration blended with Northern European height and build, Pacific Islander richness, and North African depth.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Stocky and solid, compact muscle density with a heavyweight fighter's frame — broad shoulders tapering to a narrow waist. Hands are large and calloused, with scarred knuckles. Chest and forearms show pronounced muscle definition.",
     "hair_color": "Dark brown, graying at temples",
     "hair_style": "Short, swept back, minimal styling",
     "hair_length": "Short",
-    "eye_color": "Deep brown with subtle epicanthic fold influence, unremarkable",
-    "skin_tone": "Warm olive-bronze complexion with underlying cool undertones — the blend of Eastern European, Central Asian, and Middle Eastern ancestry creates a distinctive mid-to-deep tan that weathers gracefully rather than burns.",
-    "complexion": "High, prominent cheekbones with slight Eurasian flattening from East Asian ancestry; strong squared jaw from Eastern European lineage. Face is worn but not aged — hard angles accentuated by Middle Eastern bone structure. Lines around the eyes from years of squinting. Stubble perpetually at 1-2 days growth. Skin texture shows weathering but maintains underlying resilience. No cosmetic grooming; functional appearance only.",
+    "eye_color": "Deep brown",
+    "skin_tone": "Warm deep tan with golden and reddish undertones — the predominant South Asian ancestry creates a naturally warm base enriched by North African and Pacific Islander heritage, cooled subtly by Northern European influence. Weathered and resilient, maintains depth year-round.",
+    "complexion": "Strong South Asian bone structure with full cheekbones and defined browridges; straight to slightly broad nose with warm undertones. Squared jaw carries Northern European influence. Pacific Islander heritage adds richness and depth to skin coloration. Face is worn but not aged — hard angles accentuated by the blend of South and North African bone architecture. Lines around the eyes from years of squinting. Stubble perpetually at 1-2 days growth. Skin texture shows weathering but maintains underlying resilience. No cosmetic grooming; functional appearance only.",
     "distinguishing_marks": [
       "Surgical scar running from left temple to jawline, thin and well-healed, partially obscured by hair growth",
       "Cluster of three burn marks on the inside of right forearm — old electrical burns, uniform spacing, deliberate cauterization pattern",
@@ -330,16 +307,71 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready. Moves with controlled efficiency — no wasted motion. Combat stance is his neutral. Eyes constantly scan — threat assessment is automatic. Handshakes are firm but measured, never aggressive. When focused on a target, he becomes perfectly still, predatory.",
     "clothing_style": "Tier 3-4 practical wear — charcoal tactical pants with reinforced thigh pockets, black compression shirt layered under a worn gray canvas overshirt with utility pockets and rolled sleeves. Matte black steel-toed boots, well-maintained. Heavy watch on left wrist (analog, no smart features — redundancy is safety). Light gray neural-dampening jacket (non-branded, military-grade) draped over a chair or worn open. Everything is neutral, durable, and designed for quick movement. No logos, no status signifiers — complete functional anonymity."
   },
-  "image_prompt": "Vladislav Nurzhanov, 178cm Eurasian man with warm olive-bronze skin, high cheekbones, strong squared jaw, dark brown eyes with subtle Asian influence. Graying dark brown hair swept back, 1-2 days stubble. Stocky heavyweight fighter build with visible muscle definition. Thin surgical scar from left temple to jaw, electrical burn marks on right forearm, scarred knuckles. Wearing charcoal tactical pants, black compression shirt under worn gray canvas overshirt, matte black steel-toed boots, analog watch. Faint luminescent thermal masking circuitry visible on chest and upper back in low ambient light, subdermal striations along spine. Standing in neutral but ready combat stance, scanning surroundings with predatory focus, no wasted motion. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-shadowed interior, cool blue and amber lighting, atmospheric haze, professional tactical environment. Completely anonymous, functional aesthetic, no status signifiers. --ar 2:3 --v 6",
+  "image_prompt": "Taslima Lindström, 178cm tall, stocky heavyweight fighter's build with broad shoulders and narrow waist. Deep warm tan skin with golden and reddish undertones reflecting South Asian (43.9%), Northern European (23.8%), Pacific Islander (12.6%), North African (10.6%), and Sub-Saharan African (7%) heritage blend. Strong South Asian bone structure with full cheekbones, defined browridges, straight nose with warm undertones, squared jaw. Dark brown hair graying at temples, short and swept back. Deep brown eyes with constant threat-assessment scan. Thin surgical scar from left temple to jawline. Three deliberate electrical burn marks on right forearm. Scarred knuckles from bare-knuckle violence. Stubble at 1-2 days growth. Worn, weathered face with hard angles and squint lines. Faint luminescent micro-circuitry visible beneath skin across chest and upper back in geometric patterns. Subdermal striations along spine visible during movement. Wearing charcoal tactical pants with reinforced pockets, black compression shirt under worn gray canvas overshirt with utility pockets and rolled sleeves. Matte black steel-toed boots. Heavy analog watch on left wrist. Light gray military-grade neural-dampening jacket. Controlled, predatory posture in combat-ready neutral stance. GLMZ, GLMZ setting, cool blue-gray neon ambient lighting casting sharp shadows, industrial background, expression of focused intensity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.5,
-    "Central Asian": 20.8,
-    "Middle Eastern": 20.2,
-    "East Asian": 17.3,
-    "Hispanic/Latin American": 7.2
+    "South Asian": 43.9,
+    "Northern European": 23.8,
+    "Pacific Islander": 12.6,
+    "North African": 10.6,
+    "Sub-Saharan African": 7,
+    "Indigenous American": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 43.9
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 15.3
+      },
+      "Germanic": {
+        "Austrian": 7.6
+      },
+      "British Isles": {
+        "Irish": 0.9
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tuvaluan": 7.1,
+        "Tokelauan": 5.5
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 4.1
+      },
+      "Maghreb": {
+        "Algerian": 2,
+        "Mauritanian": 0.9
+      },
+      "Nile Valley": {
+        "Egyptian": 3.5,
+        "Sudanese": 0.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 5.6
+      },
+      "East African": {
+        "Ethiopian": 0.3,
+        "Kenyan": 1.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 1.5
+      },
+      "Andean": {
+        "Mapuche": 0.6
+      }
+    }
+  }
 }

@@ -1,13 +1,13 @@
 {
   "id": "ecbe11ee8ffb27c6550a5701aae724c5",
-  "name": "Emiliano Rentería-Najjar-Fredriksen",
+  "name": "Andrei An-Saito-Olofsson",
   "type": "character",
   "aliases": [
     "Badge",
     "The Defector"
   ],
   "role": "Private Investigator",
-  "description": "Isolde Mwangi-Petrov spent eighteen years in Axiom CorpSec, rising to Senior Investigator in the Special Investigations Division — the unit that handles crimes too complex or sensitive for regular corporate security. She was good at her job. She was also naive enough to believe that being good at her job meant the job was good.\n\nThe break came when she uncovered evidence that her own division was systematically fabricating cases against Shelf residents to meet arrest quotas and justify budget allocations. She reported it through proper channels. The proper channels destroyed the evidence, transferred her to a desk, and began building a case to discredit her. She resigned before they could fire her, took everything she could carry — physically and mentally — and set up shop as a freelance investigator dedicated to the cases CorpSec won't touch or can't be trusted with.\n\nNow she operates from Meridian Station, deliberately choosing neutral ground because every corporate territory is hostile territory for her. Her clients are typically people who have been wronged by corporate power and have nowhere else to turn — employees who've witnessed crimes, families of people disappeared by CorpSec, whistleblowers who need evidence collected before they're silenced. She is effective because she knows exactly how the machine works from the inside, and she is dangerous to the corporations because she knows where the bodies are buried. Axiom has made three attempts to buy her silence. The fourth attempt, she suspects, won't involve money.",
+  "description": "Andrei An-Saito-Olofsson in Axiom CorpSec, rising to Senior Investigator in the Special Investigations Division — the unit that handles crimes too complex or sensitive for regular corporate security. She was good at her job. She was also naive enough to believe that being good at her job meant the job was good.\n\nThe break came when she uncovered evidence that her own division was systematically fabricating cases against Shelf residents to meet arrest quotas and justify budget allocations. She reported it through proper channels. The proper channels destroyed the evidence, transferred her to a desk, and began building a case to discredit her. She resigned before they could fire her, took everything she could carry — physically and mentally — and set up shop as a freelance investigator dedicated to the cases CorpSec won't touch or can't be trusted with.\n\nNow she operates from Meridian Station, deliberately choosing neutral ground because every corporate territory is hostile territory for her. Her clients are typically people who have been wronged by corporate power and have nowhere else to turn — employees who've witnessed crimes, families of people disappeared by CorpSec, whistleblowers who need evidence collected before they're silenced. She is effective because she knows exactly how the machine works from the inside, and she is dangerous to the corporations because she knows where the bodies are buried. Axiom has made three attempts to buy her silence. The fourth attempt, she suspects, won't involve money.",
   "affiliation": "Independent — former Axiom CorpSec Special Investigations Division",
   "tier": "Tier 3",
   "location": "A rented office in Meridian Station, chosen for its neutral-ground status — no corporation claims jurisdiction in the transit nexus, near State and Jackson",
@@ -65,25 +65,11 @@
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
   ],
   "related_entities": [
-    "Big Rig",
-    "Slagworks Industrial",
-    "Altan Tanaka-Frimpong",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Corva Lam",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "MERIDIAN",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Human Baseline Alliance",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Vuk Jorgensen-Toure"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Nordic-Hispanic-Levantine-Southeast Asian blend with Sub-Saharan African undertones; a genetic mosaic reflecting the Ubiquitous Diaspora. Northern European bone structure and fairness dominant (41.9%), tempered by Hispanic warmth (23.1%), Levantine definition (16.9%), with lighter traces of Southeast Asian and African ancestry creating subtle depth in skin tone and feature softness.",
+    "heritage": "East Asian-dominant genetic ancestry (70.6%) with Eastern European (21.0%) and Middle Eastern (8.4%) contributions. Strong Han Chinese bone structure forms the foundation: wide cheekbones, balanced facial proportions, and natural epicanthic eye folds. Eastern European ancestry adds angular definition to the upper face and jawline, while Middle Eastern heritage contributes subtle depth and warmth to the lower face and nasal bridge. The result is a harmonious blend where East Asian features remain primary but are sharpened and enriched by European and Levantine elements—a genetic map of the Ubiquitous Diaspora.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Athletic and lean, muscled in the shoulders and forearms from years of fieldwork — controlled tension in her frame rather than bulk",
@@ -91,8 +77,8 @@
     "hair_style": "Pulled back in a tight, practical braid that extends to mid-back; no-nonsense styling",
     "hair_length": "Long",
     "eye_color": "Deep brown, alert and analytical",
-    "skin_tone": "Warm beige-olive with golden undertones — the interplay of Northern European fairness, Hispanic warmth, and Levantine depth creating a complexion that catches light with subtle luminosity. Even, well-maintained tone with no visible sun damage",
-    "complexion": "Strong Nordic cheekbones with subtle rounding from Southeast Asian ancestry; defined jawline carries Levantine angular grace softened by African heritage's generosity in the lower face. Minimal makeup. Small scar through her left eyebrow from a fieldwork incident. No visible sun damage; maintains herself carefully. Overall reading: precise, uncompromising, professionally calibrated.",
+    "skin_tone": "Warm ivory-beige with golden and olive undertones—East Asian translucence blended with Eastern European fairness and Middle Eastern warmth, creating a complexion with subtle luminosity and even depth. Well-maintained with no visible sun damage.",
+    "complexion": "Strong, wide East Asian cheekbones refined by Eastern European angular precision at the jawline. Subtle Levantine fullness in the lower face and around the mouth creates balance against the sharper upper structure. Natural eye fold definition with clean, unadorned features. Small scar through her left eyebrow from a fieldwork incident. No visible sun damage; maintains herself carefully. Overall reading: precise, uncompromising, professionally calibrated.",
     "distinguishing_marks": [
       "Thin scar through left eyebrow, approximately 2cm, from a struggle during her CorpSec days",
       "Faint burn mark on the inside of her right wrist, roughly the size of a cigarette tip — from a threat that escalated into intimidation",
@@ -100,15 +86,42 @@
     ],
     "visible_augmentations": "None visible. Her augmentations are subcutaneous: a neural interface array behind her left ear (invisible under hair), optical enhancements (undetectable to casual observation), and an encrypted data vault implanted in her molars. She runs clean and quiet — no chrome, no LEDs, no tells.",
     "posture_movement": "Moves with deliberate economy. Shoulders slightly forward, weight balanced on the balls of her feet even when seated — someone trained to move quickly if needed. Her gaze is direct and measuring; she watches before she speaks. Tense at baseline, but controlled — the calm of someone who has learned that showing fear is a liability",
-    "clothing_style": "Tier 3 professional-tactical hybrid. Dark neutral tones: charcoal, black, grey. Fitted synthetic-leather jacket with reinforced elbows (Meridian Station brand, durable), functional cargo pants with multiple pockets and tool loops, sturdy polymer-soled boots broken in from field work. A silver pendant watch on her wrist — old, not smart-enabled, deliberately analog. She dresses to move, not to impress. No visible branding except the watch. Her office clothes are as functional as her field clothes — no performance necessary."
+    "clothing_style": "Tier 3 professional-tactical hybrid. Dark neutral tones: charcoal, black, grey. Fitted synthetic-leather jacket with reinforced elbows (Meridian Station brand, durable), functional cargo pants with multiple pockets and tool loops, sturdy polymer-soled boots broken in from field work. A silver pendant watch on her wrist — old, not smart-enabled, deliberately analog. She dresses to move, not to impress. No visible branding except the watch."
   },
-  "image_prompt": "Emiliano Rentería-Najjar-Fredriksen, 172cm athletic woman with warm beige-olive complexion, strong Nordic cheekbones softened by Southeast Asian and African heritage, deep analytical brown eyes. Dark brown hair with silver threads pulled tight into practical mid-back braid, thin scar through left eyebrow. Worn charcoal synthetic-leather tactical jacket, reinforced elbows, functional cargo pants, polymer boots. Silver analog pendant watch. Posture: shoulders forward, weight balanced, direct measuring gaze. Tense controlled baseline. Cyberpunk 2226, Great Lakes Metropolitan Zone, subtle subcutaneous augmentations barely visible behind left ear. Professional uncompromising demeanor. Moody tactical interior lighting, cool greys and shadows, no-nonsense atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Andrei An-Saito-Olofsson, 2226 neo-noir era. East Asian-dominant features with sharp Eastern European jawline definition and warm Middle Eastern undertones; warm ivory-beige skin with golden highlights. Deep brown analytical eyes with natural epicanthic folds, dark brown hair with silver temples pulled back in tight mid-back braid. Athletic, lean build, 172cm tall. Small scar through left eyebrow. Wearing charcoal synthetic-leather tactical jacket with reinforced elbows, dark cargo pants, polymer-soled boots. Silver analog watch on wrist. Posture: shoulders forward, weight on balls of feet, direct measuring gaze. Professional-tactical styling, no visible augmentations, runs clean and quiet. Great Lakes Metropolitan Zone neon-shadow lighting, cool urban environment, alert and controlled demeanor. GLMZ 2200s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 41.9,
-    "Hispanic/Latin American": 23.1,
-    "Middle Eastern": 16.9,
-    "Southeast Asian": 9.6,
-    "Sub-Saharan African": 8.5
+    "East Asian": 70.6,
+    "Eastern European": 21,
+    "Middle Eastern": 8.4
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 48.3
+      },
+      "Chinese": {
+        "Mandarin Northern": 12.4
+      },
+      "Japanese": {
+        "Japanese": 9.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 8.2
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 12.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 8.4
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A rented office in Meridian Station"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6547a5ea6efe0b481690e00",
   "type": "character",
-  "name": "Rowan Karimov",
+  "name": "Rowan Thakur",
   "aliases": [
     "The Painter",
     "Claw",
@@ -14,7 +14,7 @@
   "age": 34,
   "status": "alive",
   "location": "The Shelf — three floors below Kyle, near Ashland and Division",
-  "description": "Maren Voss used to paint murals. Enormous ones — entire sides of buildings\non the Shelf transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. The Shelf loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
+  "description": "Rowan Thakur used to paint murals. Enormous ones — entire sides of buildings\non the Shelf transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. The Shelf loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -241,7 +241,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -264,42 +264,16 @@
     "The Shelf",
     "The Spire",
     "Titanium",
-    "Needle",
+    "Circuit",
+    "Harbor Fish Shack",
+    "Honest Burger",
     "The Pure Hand",
-    "Tibor Osei-Svanstrom",
-    "VOSS",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Arcturus PX-1 'Phantom'",
-    "CHROMEWORKS Phantom Stealth Ocular Recorder",
-    "Eshe Pena-Baah",
-    "GLMZ",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Kyle Ellen Corbin-Vasik",
-    "Nnenna Vásquez-Kuosmanen",
-    "Old Harbor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RK-2 'Stray'",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "The Collective",
-    "The Heidelberg Scar",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Mirror",
-    "The Question",
-    "Tomasz Wren",
-    "Vuk Jorgensen-Toure",
-    "Warden",
-    "Yannick Tambadou-Reinholt",
-    "Yuki Tanabe"
+    "Frost Boudiaf",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian and Central Asian dominant (94.7%), with Sub-Saharan African ancestry (5.3%). The genetic blend manifests in warm undertones beneath the sallow complexion, subtle warmth in cheekbone structure, and natural dark hair. Shelf-tier living has drained the typical richness from her skin, but the underlying genetic heritage shows in bone structure and eye-set.",
+    "heritage": "Predominantly South Asian (52.3%) with significant Southeast Asian (24.4%), Sub-Saharan African (9.1%), and Hispanic/Latin American (9.0%) ancestry, with minor Northern European (5.2%) contribution. The genetic blend manifests in warm deep brown skin with golden undertones characteristic of South Asian-African ancestry fusion. Southeast Asian ancestry contributes forward-set eye placement and prominent, defined cheekbones with characteristic width. South Asian heritage shapes the refined jawline and forward facial structure. Sub-Saharan African genetics enriches the melanin depth and warm undertone saturation. The rare Northern European contribution adds subtle dimension to the overall warm palette without creating discordance.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Lean and angular, almost skeletal — the result of chronic stress and limited resources. Tight muscle definition in shoulders and core from years of mural work and survival. No excess anywhere.",
@@ -307,8 +281,8 @@
     "hair_style": "Cropped close to scalp, uneven and jagged — self-cut with the claws, deliberately crude",
     "hair_length": "Short",
     "eye_color": "Dark brown, flat and distant",
-    "skin_tone": "Deep warm brown with sallow undertones from Shelf-tier malnutrition and stress. Complexion drained of its natural luminosity but retaining the undertone warmth characteristic of South Asian and Central Asian heritage.",
-    "complexion": "Sharp, high cheekbones with pronounced definition; hollow cheeks; thin-lipped mouth. Bone structure reflects South and Central Asian ancestry — defined jawline, forward-set features. Skin shows old bruising marks and small scars consistent with alley violence. No cosmetic modifications. Haunted expression — eyes that have witnessed amputation and chosen defiance.",
+    "skin_tone": "Deep warm brown with golden undertones, the direct result of South Asian-Southeast Asian-African genetic convergence. The melanin-rich substrate retains underlying richness despite Shelf-tier malnutrition and stress-pallor overlay. Complexion shows the strain of deprivation but the warm golden-bronze undertone persists beneath surface wear.",
+    "complexion": "Sharp, prominent cheekbones with Southeast Asian width and definition; hollow cheeks from malnutrition; thin-lipped mouth. Bone structure reflects blended heritage — Southeast Asian cheekbone prominence with forward-tilted eye-set combined with South Asian jawline refinement and angular facial projection. Skin shows old bruising marks and small scars consistent with alley violence. No cosmetic modifications. Haunted expression — eyes that have witnessed amputation and chosen defiance.",
     "distinguishing_marks": [
       "Surgical cauterization scars at both wrists where hands were severed, approximately 8cm across each, pale and smooth despite trauma",
       "Multiple thin white scars on forearms from years of handling caustic paints and sharp tools",
@@ -319,14 +293,71 @@
     "posture_movement": "Stands with shoulders forward, habitual defensive posture. Moves efficiently, economically — no wasted motion. The claws make her naturally careful; she doesn't gesture wildly. When painting, she becomes trance-like, body loose and focused. Her movements with the claws are deliberate and precise despite their brutal appearance. She favors her left side when resting, as if protecting something.",
     "clothing_style": "Sleeveless tank tops or cut-off shirts (Tier 5, worn-out second-hand) in dark colors to hide paint stains. Industrial cargo pants, multiple pockets, patched at the knees. No corpo branding. Heavy boots with welded metal plating on the toes. A long, battered duster coat (original color unknown) worn over everything when moving through Tier-1 areas. No jewelry except a corroded silver ring on what remains of her right thumb — possibly a pre-amputation remnant kept as a relic."
   },
-  "image_prompt": "Rowan Karimov, South Asian and Central Asian heritage, lean 168cm frame with hollow cheeks and sharp bone structure, deep warm brown skin drained by Shelf-tier poverty, dark eyes haunted and distant. Both arms replaced from elbow down with grotesque military-surplus prosthetics—exposed hydraulic cylinders, three curved titanium claws per side, gunmetal finish with rust bloom and weeping hydraulic fluid. Self-cut black hair cropped jagged and crude. Sleeveless dark tank top stained with dried paint and blood, industrial cargo pants with welded metal-toed boots, long weathered duster coat. Standing in defensive posture, trance-like intensity in gaze. Cyberpunk 2226, neon-lit alley, cold industrial lighting casting harsh shadows on scarred wrists and brutal augmentations, mural wall behind with her fresh paint work. Mood: defiant, haunted, dangerous artist. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Thakur, GLMZ, lean angular South Asian-Southeast Asian-African mixed-heritage woman with deep warm brown skin and golden undertones, prominent Southeast Asian cheekbones and forward-set dark brown eyes, sharp haunted expression. Self-cut jagged black hair close to scalp. Both arms replaced with grotesque military-surplus titanium combat prosthetics terminating in three wickedly sharp curved digits, exposed hydraulic cylinders, rust-stained gunmetal finish leaking dark fluid. Sleeveless dark tank top revealing surgical cauterization scars at wrists and forearm paint-handling scars. Pale dried blood stains on chest and neck. Industrial patched cargo pants, welded metal-plated boots. Long battered duster coat. Corroded silver ring on remaining right thumb. Standing in defensive forward-shoulder posture in dimly-lit Shelf-tier alley, neon grime-haze lighting, exhausted defiant mood, breathing paint-stained air, walls around her show her mural work, haunted but unbroken. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 53.1,
-    "Central Asian": 41.6,
-    "Sub-Saharan African": 5.3
+    "South Asian": 52.3,
+    "Southeast Asian": 24.4,
+    "Sub-Saharan African": 9.1,
+    "Hispanic/Latin American": 9,
+    "Northern European": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 32.5,
+        "Tamil Sri Lankan": 11.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 8.1
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 18
+      },
+      "Cambodian": {
+        "Khmer": 6.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.6,
+        "Botswanan": 1.3
+      },
+      "Central African": {
+        "Congolese": 2.3,
+        "Angolan": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 1.4,
+        "Salvadoran": 4.3
+      },
+      "South American": {
+        "Venezuelan": 2.3
+      },
+      "Caribbean": {
+        "Cuban": 1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 0.6,
+        "English": 0.5
+      },
+      "Germanic": {
+        "German": 0.5,
+        "Swiss German": 0.9
+      },
+      "Scandinavian": {
+        "Swedish": 2.3,
+        "Danish": 0.4
+      }
+    }
+  }
 }

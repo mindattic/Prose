@@ -1,5 +1,5 @@
 // HERE Maps JS API integration for StreetSamurai
-// Dark-themed map with satellite toggle, minimal UI, cyberpunk aesthetic
+// Dark-themed map with satellite toggle, minimal UI, neo-noir urban aesthetic
 
 window.hereMap = {
     _platform: null,

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63f735d8ca5b773d8b9ec6f",
   "type": "character",
-  "name": "Sterling Popescu",
+  "name": "Sterling Bah",
   "aliases": [
     "Aegis",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Kamala Sorokin-Gyasi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Kamala Sorokin-Gyasi describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Sterling Bah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Sterling Bah describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.66,
@@ -262,7 +262,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,30 +276,13 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
-    "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "Volkov-Saito Precision VSP-11 'Stiletto'",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (41%) with significant North African (14.6%) and Eastern European (17.6%) ancestry, plus secondary South Asian (12.3%) and Hispanic/Latin American (12.2%) heritage — a complex genetic tapestry reflecting the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden and reddish undertones, particularly visible on cheekbones and shoulders.",
+    "heritage": "Eastern European (40%) with substantial Sub-Saharan African (34.8%), Central Asian (10.1%), South Asian (8.1%), and East Asian (7%) ancestry — a complex genetic tapestry reflecting the Ubiquitous Diaspora. The combination produces warm deep brown skin with subtle golden undertones, blending Eastern European and Central Asian cooler ancestry with the warmth of African and South Asian genetics.",
     "height_cm": 189,
     "weight_kg": 78,
     "build": "Lean and angular with visible musculature — the physiology of someone who trains constantly. No wasted mass. Shoulders broad but not bulky. Limbs long and proportionally efficient.",
@@ -307,8 +290,8 @@
     "hair_style": "Kept short and neat, styled back from forehead",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Deep warm brown with golden and reddish undertones, reflecting the Sub-Saharan and North African majority combined with South Asian warmth. Medium saturation with slight luster.",
-    "complexion": "High, prominent cheekbones with gentle forward projection — characteristic of Sub-Saharan and North African features. Angular but balanced jaw. Nose bridge straight with subtle width reflecting South Asian ancestry. Skin shows the strain of nocturnal living — slightly matte, minor discoloration under eyes. Expression habitually neutral and controlled. Grooming is meticulous but not decorative.",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting the balanced blend of Eastern European, Sub-Saharan African, Central Asian, and South Asian ancestry. Medium saturation with slight luster.",
+    "complexion": "High, prominent cheekbones with balanced projection — characteristic of Sub-Saharan African and Eastern European features blended with Central Asian structure. Angular but balanced jaw with subtle width through the lower face. Nose bridge straight with refined proportions reflecting the Eastern European and Central Asian contributions, with slight nasal bridge width from South Asian ancestry. Skin shows the strain of nocturnal living — slightly matte, minor discoloration under eyes. Expression habitually neutral and controlled. Grooming is meticulous but not decorative.",
     "distinguishing_marks": [
       "Thin pale scar along left jawline, approximately 8cm, slightly raised — old enough to be well-healed but still visible",
       "Minor burn marks on inner left wrist in a pattern suggesting wire contact — barely noticeable unless pointed out"
@@ -317,17 +300,64 @@
     "posture_movement": "Stands with economical stillness — every micro-movement deliberate. Walks with minimal wasted motion, weight balanced. Hands rest at sides or on lap when seated, fingers rarely fidget. Movements are smooth and precise when engaged. Eye contact is controlled, neither aggressive nor avoidant. Default expression: guarded neutrality.",
     "clothing_style": "Tier 3-4 functional wear — dark fitted synthetics, black tactical cargo pants with multiple sealed pockets, lightweight thermal undershirt. Carries a reinforced harness rig for equipment. Boots are matte black with reinforced toe caps (compatible with gecko-grip pads). No visible corp logos or status symbols. Layers suggest someone who works in Steamvent's heat and chemical air — practical, replaceable, purchased for durability not fashion."
   },
-  "image_prompt": "Sterling Popescu, tall lean cyberpunk operative, deep warm brown skin with golden undertones, high cheekbones and angular jawline, black hair with gray temples styled back, dark penetrating eyes. Matte black gecko-grip implants visible on fingertips glinting subtly under neon. Pale raised scar along left jaw. Meticulous grooming, guarded neutral expression. Wearing dark fitted synthetics and black tactical cargo pants, reinforced matte black boots, minimal harness rig. Standing in economical stillness against the chemical-hazed air of a 2226 Steamvent district, dim industrial lighting casting shadows across defined features. Nocturnal operative aesthetic, practical durability over style. Cyberpunk 2200s --ar 2:3 --v 6",
+  "image_prompt": "Sterling Bah, a 189cm lean muscular figure with deep warm brown skin and golden undertones, standing in a GLMZ industrial setting. Angular face with high cheekbones, dark brown eyes, straight nose, thin scar along left jawline. Black hair with gray at temples, kept short and neat. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Wearing dark fitted synthetic tactical cargo pants with sealed pockets, lightweight thermal undershirt, reinforced black boots with toe caps. Reinforced equipment harness across chest. Posture is economical and still, expression guarded and neutral. Standing in Steamvent's chemical haze and heat, neon lighting catching the iridescence of augmented fingertips. Nocturnal living evident in slight fatigue under eyes. Cinematic neo-noir lighting, 2200s aesthetic, hyperrealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.0,
-    "Eastern European": 17.6,
-    "North African": 14.6,
-    "South Asian": 12.3,
-    "Hispanic/Latin American": 12.2,
-    "Northern European": 2.3
+    "Eastern European": 40,
+    "Sub-Saharan African": 34.8,
+    "Central Asian": 10.1,
+    "South Asian": 8.1,
+    "East Asian": 7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 34.9
+      },
+      "Slavic South": {
+        "Bosnian": 3.2
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1.1,
+        "Romanian": 0.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 33.2,
+        "Ivorian": 1.6
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 7.8,
+        "Uzbek": 2.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 4.5
+      },
+      "Nepali": {
+        "Nepali": 1.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.1
+      },
+      "Japanese": {
+        "Japanese": 0.8
+      },
+      "Chinese": {
+        "Shanghainese": 2.1
+      }
+    }
+  }
 }

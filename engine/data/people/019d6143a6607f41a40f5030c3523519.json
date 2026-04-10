@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6607f41a40f5030c3523519",
   "type": "character",
-  "name": "Orion Möller",
+  "name": "Isadora Vo",
   "aliases": [
     "Bisi",
     "The Professor"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Stockyard — stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel, near Kedzie and Division",
-  "description": "Ndubuisi is a rangy, precise man with Nigerian-Greek-Iranian features — angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he's modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard — he was a student there for two semesters, a decade ago — that he has never returned.\n\nThe nickname 'Professor' started as mockery and calcified into respect. Ndubuisi has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly — explaining to buyers exactly what they're getting, exactly why it's valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He's not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
+  "description": "Isadora Vo is a rangy, precise man with Nigerian-Greek-Iranian features — angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he's modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard — he was a student there for two semesters, a decade ago — that he has never returned.\n\nThe nickname 'Professor' started as mockery and calcified into respect. Isadora Vo has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly — explaining to buyers exactly what they're getting, exactly why it's valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He's not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -162,7 +162,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,30 +185,11 @@
     "ShieldTech CLA-3 'Cascade'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "Teak",
-    "Alper Lebedev-Tutu",
-    "Arcturus BH-2 'Marrow'",
-    "Bioacoustic Communication Membrane",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Emeka Johansson-Orozco",
-    "Last Word",
-    "Nnamdi Ostrowski-Faletolu",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "The Bazaar",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Teak"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex East Asian (30.5%), South Asian (29.9%), and Sub-Saharan African (21.3%) ancestry with Eastern European (14.7%) and Hispanic/Latin American (3.6%) admixture. Features reflect this pluralistic genetic blend: dark eyes with warm undertones, high cheekbones with mixed continental structure, and a complexion that bridges warm and cool tones.",
+    "heritage": "Pluralistic genetic blend: Hispanic/Latin American (36.9%), Southeast Asian (33.2%), Central Asian (17.4%), and Eastern European (12.5%) ancestry. Features reflect this diverse mix: warm golden-brown complexion from Southeast Asian and Hispanic heritage, with subtle cool undertones from Eastern European ancestry creating a balanced warmth. Strong, angular bone structure influenced by Central Asian ancestry with Southeast Asian cheekbone prominence. Dark eyes with warm depth, high prominent cheekbones with distinctive mixed continental geometry, creating an appearance that bridges multiple heritage groups with seamless integration.",
     "height_cm": 183,
     "weight_kg": 72,
     "build": "Rangy and lean with defined musculature; economical frame suggesting minimal wasted motion, built for endurance rather than power",
@@ -216,8 +197,8 @@
     "hair_style": "Close-cropped fade, immaculately maintained",
     "hair_length": "Short",
     "eye_color": "Modified: base brown iris with rotating mandala patterns in electric blue and copper that shift slowly, hypnotic",
-    "skin_tone": "Rich warm brown with golden undertones, reflecting the dominant East and South Asian ancestry; no olive cast. Evenly pigmented with natural warmth and depth.",
-    "complexion": "Angular face with strong, expressive brows set above high, prominent cheekbones; clean-shaven; skin clear and well-maintained; bone structure shows influence from South and East Asian ancestry alongside Sub-Saharan African heritage; thoughtful expression as default state",
+    "skin_tone": "Warm golden-brown with balanced undertones reflecting Southeast Asian, Hispanic, and Eastern European blend; evenly pigmented with natural depth and subtle radiance, neither olive nor ruddy",
+    "complexion": "Angular face with strong, expressive brows set above high, prominent cheekbones; clean-shaven; skin clear and well-maintained; bone structure shows integrated Central Asian angularity with Southeast Asian prominence; thoughtful expression as default state",
     "distinguishing_marks": [
       "Faint burn scar on right forearm near wrist, roughly 4cm long, consistent with old industrial accident or equipment malfunction",
       "Small tattoo on left inner wrist: circuit board pattern in minimalist black lines, approximately 2cm across"
@@ -226,16 +207,59 @@
     "posture_movement": "Upright, precise carriage with economical gesture; moves with deliberate calm and minimal wasted motion; hands often gesture while speaking to emphasize technical points; maintains steady eye contact, the rotating mandala patterns adding an almost meditative quality to his gaze",
     "clothing_style": "Tier 3 professional aesthetic: pressed synthetic-linen blend shirts (charcoal, navy, cream), fitted technical trousers with reinforced pockets and hidden RFID-blocking panels, waterproofed long-coat in matte black with subtle ceramic plating along shoulders and forearms, quality closed-toe boots rated for industrial environments. Wears faded Axiom University lanyard around neck as permanent affectation — visible status symbol from abandoned academic track. Everything immaculately maintained and one tier above Stockyard baseline, signaling credibility and discipline."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait: Orion Möller, 183cm tall East and South Asian diaspora man with warm golden-brown skin, angular face, high cheekbones, close-cropped black hair. Striking modified eyes with slowly rotating electric blue and copper mandala patterns that hypnotize. Clean-shaven, thoughtful expression. Wearing pressed charcoal synthetic-linen shirt, matte black waterproofed coat with ceramic shoulder plating, technical trousers. Faded Axiom University lanyard around neck. Precise, upright posture. Small circuit-board tattoo visible on left inner wrist. Subvocal implant trace along jawline. Industrial burn scar on right forearm. Cool neon-infused lighting in GLMZ corporate corridor, shadows emphasizing the mandala patterns in his augmented irises, serene and deliberate presence. --ar 2:3 --v 6",
+  "image_prompt": "Isadora Vo, tall lean neo-noir professional with golden-brown complexion blending Southeast Asian, Hispanic, Central Asian, and Eastern European heritage, high angular cheekbones, short black close-cropped fade, impeccably groomed. Striking modified eyes with rotating electric blue and copper mandala patterns. Clean-shaven, thoughtful expression. Wearing charcoal pressed synthetic-linen shirt, fitted technical trousers, matte black ceramic-plated long-coat, quality industrial boots. Faded Axiom University lanyard visible. Precise upright posture, economical deliberate movements. Faint silver subvocal implant trace along jawline. Faint burn scar visible on right forearm, minimalist circuit board tattoo on left inner wrist. Great Lakes Metropolitan Zone near-future megacity setting, cool neon ambient lighting reflecting off ceramic plating, professional yet slightly detached demeanor, meditative gaze, neo-Tokyo meets Chicago industrial architecture in background, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 30.5,
-    "South Asian": 29.9,
-    "Sub-Saharan African": 21.3,
-    "Eastern European": 14.7,
-    "Hispanic/Latin American": 3.6
+    "Hispanic/Latin American": 36.9,
+    "Southeast Asian": 33.2,
+    "Central Asian": 17.4,
+    "Eastern European": 12.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 12.6
+      },
+      "Mexican": {
+        "Mexican": 6.8
+      },
+      "Caribbean": {
+        "Dominican": 14.7,
+        "Puerto Rican": 2.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 20.8
+      },
+      "Filipino": {
+        "Ilocano": 8.4,
+        "Cebuano": 1.6
+      },
+      "Indonesian": {
+        "Javanese": 2.4
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 7.3
+      },
+      "Turkic": {
+        "Kyrgyz": 4.3,
+        "Uzbek": 5.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 9.7,
+        "Czech": 0.1
+      },
+      "Slavic South": {
+        "Croatian": 2.7
+      }
+    }
+  }
 }

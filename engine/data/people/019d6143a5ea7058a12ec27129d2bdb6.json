@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ea7058a12ec27129d2bdb6",
   "type": "character",
-  "name": "Onyx Ekwensi",
+  "name": "Onyx Dinh",
   "aliases": [
     "Sunny",
     "the Tooth"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Narrows — runs his business from a rotating set of tea houses and noodle stalls in the Burnside Pocket neighborhood, near Damen and Armitage",
-  "description": "Dayo is a large man running toward fat but not there yet, with a warm brown complexion, a magnificent graying mustache he waxes into points, and the kind of patient, heavy-lidded expression that could mean he's bored or that he's calculating what you're worth in pieces. He has a geneware modification he got in his thirties — his irises shift between deep amber and a vivid green-gold depending on his mood, which he claims is useful for business ('People watch my eyes. They miss my hands.'). He favors well-made but not flashy clothing: real fabric, subtle patterns, shoes that are always clean. He smells of cardamom and whatever tea he's most recently finished.\n\nDayo came up through the numbers game as a runner himself, at sixteen, and has never romanticized it. He is pleasant in the specific way of people who have learned that pleasant is more effective than threatening for roughly eighty percent of interactions, and who have made peace with the other twenty percent. He is genuinely fond of his regulars — he knows their families, their ailments, their lucky numbers — and this fondness does not prevent him from collecting. He has two enforcers he treats well and pays generously, and he refers to them as 'my associates' with the mild pride of a man who considers proper staffing a virtue.",
+  "description": "Onyx Dinh is a large man running toward fat but not there yet, with a warm brown complexion, a magnificent graying mustache he waxes into points, and the kind of patient, heavy-lidded expression that could mean he's bored or that he's calculating what you're worth in pieces. He has a geneware modification he got in his thirties — his irises shift between deep amber and a vivid green-gold depending on his mood, which he claims is useful for business ('People watch my eyes. They miss my hands.'). He favors well-made but not flashy clothing: real fabric, subtle patterns, shoes that are always clean. He smells of cardamom and whatever tea he's most recently finished.\n\nOnyx Dinh came up through the numbers game as a runner himself, at sixteen, and has never romanticized it. He is pleasant in the specific way of people who have learned that pleasant is more effective than threatening for roughly eighty percent of interactions, and who have made peace with the other twenty percent. He is genuinely fond of his regulars — he knows their families, their ailments, their lucky numbers — and this fondness does not prevent him from collecting. He has two enforcers he treats well and pays generously, and he refers to them as 'my associates' with the mild pride of a man who considers proper staffing a virtue.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -179,7 +179,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,40 +242,13 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Lazarus LX-2 'Lab Rat'",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
-    "Clover",
-    "Gold",
-    "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
-    "Aïssé Dragomirescu-Faalelei",
-    "Biometric Denial Charge BDC-1",
-    "Cezar Watanabe-Gyasi",
-    "Ekundayo Halvorsen-Mansour",
-    "GLMZ",
-    "Kairos",
-    "MERIDIAN",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Nnenna Baluarte-Volkov",
-    "Quilt",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA Widow Mk. III",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Burden Clause",
-    "The Coffin Nails",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Narrows",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Whispermouth",
-    "Yuki Nwosu-Petrenko"
+    "Felix Roundtree",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Northern European ancestry and a trace of Middle Eastern heritage, creating a striking blend of broad West African features softened by Northern European bone structure",
+    "heritage": "Complex pan-Pacific and pan-American heritage with Southeast Asian foundation (35.6%) creating warm golden undertones and refined facial structure. Indigenous American ancestry (15%) and East Asian heritage (13.2%) contribute prominent cheekbones and distinctive eye shape. Sub-Saharan African ancestry (12.3%) adds structural breadth to facial features and depth to skin tone, while Northern European influence (12.3%) refines the nose bridge and provides bone definition. Hispanic/Latin American ancestry (11.6%) completes the blend into a luminous, warm complexion that synthesizes multiple continents into a unified, striking appearance.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Large-framed, solid through the shoulders and chest, carrying weight with the ease of a man who has never pretended to be smaller than he is. A soft belly beginning, but the underlying mass is structural—not yet softness, but heading that direction with the patience of someone who doesn't rush anything.",
@@ -283,8 +256,8 @@
     "hair_style": "Combed back from the forehead, kept neat and precise",
     "hair_length": "Medium, tapered at the sides",
     "eye_color": "Mood-reactive geneware: shifts between deep amber (neutral/calculating) and vivid green-gold (content/engaged). The transition is visible and smooth, a tell he long ago decided was useful.",
-    "skin_tone": "Rich warm brown with subtle golden undertones, the result of deep Sub-Saharan African heritage mellowed by Northern European ancestry and extensive time in the temperate GLMZ climate. The tone is even and luminous, with warm undertones that catch light.",
-    "complexion": "Well-maintained despite his age. Broad facial structure with strong, prominent cheekbones characteristic of West African heritage, balanced by a straight, defined nose bridge suggesting Northern European ancestry. Strong jawline partially obscured by his signature mustache—gray and dark brown mixed, waxed into precise points that curl slightly upward. The skin around his eyes shows crow's feet from decades of calculated smiling. No visible acne scarring or serious blemishes. His expression defaults to a patient, heavy-lidded look that could read as boredom or calculation depending on what his irises are doing at the moment.",
+    "skin_tone": "Warm golden-brown with honeyed radiance, luminous across the cheekbones and bridge of nose. The blend of Southeast Asian, East Asian, Indigenous American, Sub-Saharan African, Northern European, and Hispanic/Latin American ancestry creates an even, unified complexion that catches light with warm depth. Time in the temperate GLMZ climate has settled this genetic mix into rich, dimensional skin tone.",
+    "complexion": "Well-maintained despite his age. High, prominent cheekbones reflecting Southeast Asian and Indigenous American heritage, balanced by a straight, refined nose bridge showing Northern European and East Asian structure. Strong jawline partially obscured by his signature mustache—gray and dark brown mixed, waxed into precise points that curl slightly upward. Broad facial structure speaks to Sub-Saharan African heritage, softened by the fine-boned influence of East and Southeast Asian ancestry. The skin around his eyes shows crow's feet from decades of calculated smiling. No visible acne scarring or serious blemishes. His expression defaults to a patient, heavy-lidded look that could read as boredom or calculation depending on what his irises are doing at the moment.",
     "distinguishing_marks": [
       "A thin white scar running from the left corner of his mouth toward his ear, approximately 4cm long, likely from a knife or broken glass twenty-five years ago. It tightens his smile slightly on that side.",
       "A small, neat burn scar on the inside of his right wrist—old, faded to pale brown, roughly circular and 1cm across. Tool-related, not combat-related.",
@@ -294,14 +267,64 @@
     "posture_movement": "Moves with the deliberate, economical motion of someone for whom speed is not the point. His gait is steady and measured, shoulders slightly forward in a posture that seems to take up space without announcing it. He sits heavily but settles quickly, gesturing with his hands in conversational moments—calculated movement, nothing wasted. His hands are large, with blunt fingers and well-maintained nails. He uses them to illustrate a point rather than to intimidate.",
     "clothing_style": "Real fabric, always: cotton blends, linen, lightweight wools appropriate to the climate. He favors muted earth tones—warm grays, deep browns, rust-tinged neutrals—and subtle geometric patterns in his shirts. His jackets are well-tailored but not ostentatious, worn to fit rather than to impress. His shoes are always clean leather, usually in dark brown or charcoal, polished to a soft shine. No visible corporate branding. His watch, when visible, is functional and expensive-looking but not new. He wears a simple gold band on his ring finger—whether for marriage or as a personal choice is immaterial to his presentation. A thin gold chain, barely visible, runs beneath his collar. He smells consistently of cardamom, black tea, and clean linen."
   },
-  "image_prompt": "Onyx Ekwensi, a 188cm tall man with rich warm brown skin and striking Sub-Saharan African features blended with Northern European bone structure, standing in a dimly lit GLMZ corporate lounge circa 2226. His mood-reactive amber eyes catch warm overhead lighting. Dark brown hair heavily shot through with gray, combed back and tapered at the sides. Precisely waxed gray-and-brown mustache with upturned points. Broad face with prominent cheekbones, strong jawline, a thin white scar visible from his left mouth corner toward his ear. Large, solid build moving with deliberate economical grace. Wearing a well-tailored linen shirt in deep rust-brown with subtle geometric patterns, paired with charcoal wool jacket. Clean polished dark brown leather shoes. Gold chain barely visible beneath his collar. His large hands rest with calm authority. Soft incandescent lighting catching the warmth in his skin tone. The atmosphere is one of calculated patience and quiet presence. Sharp, realistic portraiture style with attention to character and subtle augmentation details. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Dinh, 188cm tall, large-framed man with luminous warm golden-brown skin blending Southeast Asian, East Asian, Indigenous American, Sub-Saharan African, Northern European and Hispanic heritage. Dark brown hair heavily grayed, combed back from forehead, medium length tapered sides. High prominent cheekbones, strong jawline partially hidden by gray-and-brown waxed mustache curled at the tips. Mood-reactive amber-to-green-gold eyes, heavy-lidded patient expression. Fine white scar from mouth corner to ear. Well-maintained complexion with crow's feet. Large blunt-fingered hands with gold ring. Wearing tailored warm-toned earth neutral jacket, rust-brown linen shirt, dark leather shoes polished soft shine. Thin gold chain barely visible at collar. Deliberate, economical posture, shoulders slightly forward. Patient, calculating demeanor. GLMZ, Great Lakes Metropolitan Zone, warm interior lighting catching golden skin tones, geometric patterns in fabric, cardamom and black tea ambiance, moody but composed atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 50.4,
-    "Northern European": 43.7,
-    "Middle Eastern": 5.9
+    "Southeast Asian": 35.6,
+    "Indigenous American": 15,
+    "East Asian": 13.2,
+    "Sub-Saharan African": 12.3,
+    "Northern European": 12.3,
+    "Hispanic/Latin American": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 1,
+        "Sumatran": 11.9
+      },
+      "Laotian": {
+        "Laotian": 7.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 15.6
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 15
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 10.7,
+        "Angolan": 1.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 3.3,
+        "Scottish": 3.3
+      },
+      "Scandinavian": {
+        "Norwegian": 2.9
+      },
+      "Germanic": {
+        "German": 2.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 11.6
+      }
+    }
+  }
 }

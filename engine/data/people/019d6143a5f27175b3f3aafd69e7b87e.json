@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f27175b3f3aafd69e7b87e",
   "type": "character",
-  "name": "Emiliano Espinoza",
+  "name": "Abiodun Espinoza",
   "aliases": [
     "Uranium",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
-  "description": "Djeneba Aguilar-Annan are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Aguilar-Annan plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
+  "description": "Abiodun Espinoza are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Abiodun Espinoza plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -261,7 +261,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,26 +275,12 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Nearfield",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Slagworks Industrial",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (42.2%) with significant Hispanic/Latin American (28.9%), Central Asian (19.3%), and Northern European (9.6%) ancestry. The genetic mix produces warm-toned, olive-to-amber skin with high cheekbones and angular facial structure characteristic of Southeast Asian and Central Asian features, softened by Hispanic and Northern European genetic contribution.",
+    "heritage": "Indigenous American dominant (53.9%) with significant Sub-Saharan African (25.0%) and Hispanic/Latin American (21.1%) ancestry. The genetic mix produces warm bronze-to-amber skin with strong, angular cheekbones and pronounced facial structure characteristic of Indigenous American features, enriched by the broader nose and fuller lip contours from Sub-Saharan African genetics, and softened by the facial proportions of Hispanic/Latin American heritage. This creates a distinctive, striking appearance reflecting the Ubiquitous Diaspora's genetic reality.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Athletic and lean with defined musculature — the wiry strength of someone who trains daily. No excess fat. Shoulders broad but not bulky. Movement suggests coiled tension.",
@@ -302,8 +288,8 @@
     "hair_style": "Close-cropped fade on sides, longer on top — practical, minimal maintenance. No ornamentation.",
     "hair_length": "Short",
     "eye_color": "Left eye: dark brown, organic. Right eye: cybernetic with silver-chrome iris, LED recording indicators faintly visible around the pupil",
-    "skin_tone": "Warm olive-amber with golden undertones, reflecting the dominant Southeast Asian ancestry blended with Central Asian, Hispanic, and minimal Northern European heritage. Medium depth with a subtle luminosity.",
-    "complexion": "Angular face with high, prominent cheekbones and sharp jawline characteristic of Southeast Asian and Central Asian features. Eyes set with slight depth creating an intent gaze. Minimal facial hair — meticulously groomed. Skin shows the wear of exposure but is kept clean. Expression naturally guarded, eyes rarely at rest.",
+    "skin_tone": "Warm bronze-to-amber with golden undertones, medium-to-deep depth with subtle luminosity. The warmth reflects dominant Indigenous American ancestry blended seamlessly with Sub-Saharan African richness and Hispanic/Latin American undertones.",
+    "complexion": "Angular face with strong, prominent cheekbones and sharp jawline characteristic of Indigenous American features. Broader nose and fuller lips reflect Sub-Saharan African genetic contribution. Eyes set with slight depth creating an intent, penetrating gaze. Minimal facial hair — meticulously groomed. Skin shows the wear of exposure but is kept clean. Expression naturally guarded, eyes rarely at rest.",
     "distinguishing_marks": [
       "Thin scar along left temple running toward the hairline — old trauma, surgical precision suggests medical intervention or augmentation work",
       "Faint burn scarring across the dorsal surface of right hand and wrist — chemical exposure or electrical feedback, carefully concealed under work gloves when in public",
@@ -313,15 +299,40 @@
     "posture_movement": "Upright, economical. Moves like someone always calculating trajectory and distance. Hands at rest tend toward positioning that allows rapid movement. Eyes scan constantly — the organic one and the cybernetic one sometimes move at different speeds, creating an unsettling uncanny-valley effect. When focused on a task, becomes absolutely still.",
     "clothing_style": "Tier 3-4 practical wear. Dark utility jacket (synthetic leather, reinforced) over fitted black undershirt. Cargo pants with multiple pockets, worn grey. Steel-toed boots broken in but well-maintained. No logos or corp affiliation visible. Small rig-rig pouch on belt carrying micro-tools, data sticks, and maintenance gear. Wears a weathered smart-glasses accessory but rarely uses it — prefers unmediated vision. Everything functional, nothing decorative. The wardrobe of someone who doesn't want to be remembered."
   },
-  "image_prompt": "Emiliano Espinoza, 172cm tall, lean athletic build with coiled tension. Southeast Asian-dominant mixed heritage with olive-amber warm skin tone, high angular cheekbones, sharp jawline. Dark brown closely cropped fade hairstyle. Left eye organic dark brown, right eye cybernetic chrome with LED indicators and luminescent recording glow. Thin surgical scar left temple. Expressionless guarded face, constantly scanning. Dark utility jacket synthetic leather over black fitted shirt, grey cargo pants, steel-toed worn boots. Micro-tools pouch on belt. Wired reflexes visible in micro-shoulder adjustments, hands positioned for rapid movement. Standing in shadow of neon-lit Great Lakes Metropolitan Zone, low-key industrial setting, cool blue and amber lighting casting chrome eye reflection. Cyberpunk 2226, unmediated vision, no-logo aesthetic, the kind of person designed not to be remembered. Cinematic lighting, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Abiodun Espinoza, 172cm lean athletic build, GLMZ. Warm bronze-to-amber skin with golden undertones reflecting Indigenous American, Sub-Saharan African, and Hispanic/Latin American ancestry. Angular face with strong cheekbones, broader nose, fuller lips. Left eye dark brown organic, right eye dramatic silver-chrome cybernetic prosthetic with LED indicators glowing faintly. Short dark brown naturally textured hair, close-cropped fade. Thin scar along left temple. Wiry, coiled posture suggesting constant readiness. Dark synthetic leather utility jacket over black fitted shirt, grey cargo pants, steel-toed boots. Weathered smart-glasses accessory. Cold, calculating expression, guarded intense gaze. Neon-lit Great Lakes Metropolitan Zone dystopian backdrop, industrial setting, ambient glow highlighting chrome eye augmentation. Cinematic, high contrast neo-noir lighting. Character portrait. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 42.2,
-    "Hispanic/Latin American": 28.9,
-    "Central Asian": 19.3,
-    "Northern European": 9.6
+    "Indigenous American": 53.9,
+    "Sub-Saharan African": 25,
+    "Hispanic/Latin American": 21.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 25,
+        "Cherokee": 11.9
+      },
+      "Mesoamerican": {
+        "Maya": 10.8,
+        "Mixtec": 6.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 13.9
+      },
+      "West African": {
+        "Sierra Leonean": 3.2,
+        "Ivorian": 7.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 21.1
+      }
+    }
+  }
 }

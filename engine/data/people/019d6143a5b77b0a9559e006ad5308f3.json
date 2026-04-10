@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b77b0a9559e006ad5308f3",
   "type": "character",
-  "name": "Wren Kariuki-Wojciechowski-Olofsson",
+  "name": "Wren Salazar-Morimoto-Pathak",
   "aliases": [
     "Barrage",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and North Ave",
-  "description": "Aslan Blomberg-Konadu is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 38, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a courier out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aslan Blomberg-Konadu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Wren Salazar-Morimoto-Pathak is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 38, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a courier out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Wren Salazar-Morimoto-Pathak agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.37,
@@ -263,7 +263,7 @@
     "Improviser": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,39 +281,16 @@
   ],
   "related_entities": [
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Ringo DV-4 'Courier'",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Liora Mori-Sefa",
-    "Narrowcast",
-    "Othniel Babić-Asantewaa",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Scarecrow",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Volkov-Saito Precision VSR-20 'Partisan'"
+    "Slagworks Industrial",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (66.3%) with significant Southeast Asian (20.3%), Eastern European (6.4%), Northern European (5.4%), and minor Hispanic/Latin American (1.6%) ancestry. This creates a rich melanin foundation with subtle warm undertones from the Southeast Asian admixture, complexity from the Eastern European elements, and layers of genetic diversity across multiple continents.",
+    "heritage": "Genetically complex Pan-Diaspora blend: predominantly Hispanic/Latin American (26.9%) and South Asian (25.8%), with significant East Asian (16.8%) and Central Asian (13.8%) ancestry, plus Sub-Saharan African (10.2%) and Northern European (6.5%) elements. The Hispanic/Latin American and South Asian heritage creates a warm, olive-bronze foundation with golden undertones. East Asian ancestry contributes refined facial structure and eye shape. Central Asian heritage adds facial width and bone prominence. Sub-Saharan African ancestry deepens skin richness and adds warmth to undertones. Northern European heritage provides subtle cool undertones that prevent warmth from becoming flat. This creates striking geometric facial planes and a genuinely global physical presence.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Wiry and lean with visible musculature from functional training rather than bulk — the physique of someone who converts nervous energy into motion. Low body fat. Forearms show defined muscle striations beneath visible subdermal plating.",
@@ -321,8 +298,8 @@
     "hair_style": "Closely cropped, maintained with military precision",
     "hair_length": "Short",
     "eye_color": "Hazel with reactive dilation — suggests neural interface optimization",
-    "skin_tone": "Deep warm brown with rich undertones reflecting the dominant Sub-Saharan African ancestry, subtly warmed by Southeast Asian heritage. The base tone carries natural depth and radiance, though currently appearing slightly ashen from irregular sleep and stimulant use.",
-    "complexion": "Angular facial structure with sharp cheekbones and a narrow jaw refined by the genetic blend of African and Southeast Asian features — high, prominent cheekbones with subtle width through the face that speaks to the Southeast Asian admixture. Skin shows the shallow texture of someone who sleeps irregular hours and runs on stimulants — not unhealthy, but clearly not rested. A thin scar runs from left ear to jawline, surgical or combat-related. Perpetual suggestion of stubble, poorly shaved because grooming happens at 4 AM.",
+    "skin_tone": "Warm olive-bronze with golden undertones. The base reflects the dominant Hispanic/Latin American and South Asian ancestry with depth and richness from Sub-Saharan African heritage, while Northern European elements add subtle cool undertones that create visual complexity. The overall effect is luminous and warm. Currently appears slightly ashen from irregular sleep and stimulant use.",
+    "complexion": "Angular facial structure with sharp, high cheekbones reflecting East Asian and South Asian heritage, narrower jaw refined by the Hispanic/Latin American and Northern European blend — creating a face of striking geometric precision with subtle fullness in the lower face from Central Asian ancestry. Skin shows the shallow texture of someone who sleeps irregular hours and runs on stimulants — not unhealthy, but clearly not rested. A thin scar runs from left ear to jawline, surgical or combat-related. Perpetual suggestion of stubble, poorly shaved because grooming happens at 4 AM.",
     "distinguishing_marks": [
       "Surgical scar from left ear to jawline, approximately 7cm, slightly raised and pale against deeper skin tone",
       "Burn scar across the back of right hand, approximately 4x6cm, irregular shape suggesting industrial accident or weapons discharge",
@@ -332,16 +309,72 @@
     "posture_movement": "Never still. Even seated, fingers tap or hands fidget. Walks with economic efficiency — no wasted motion, but the efficiency of someone channeling restlessness into purpose. Eyes track exits and entrances unconsciously. Stands at angles to walls, never center-room. Voice control is deliberate and measured, suggesting active suppression of baseline anxiety.",
     "clothing_style": "Tier 3-4 pragmatism with security contractor undertones. Favors dark, form-fitting synthwear (black or deep charcoal) that doesn't catch light or snag. Reinforced jacket with interior pockets for equipment — could be corp-adjacent tactical wear or high-end street gear, hard to pin down exactly. Gloves most of the time, fingerless or tactical, worn more for hand protection than style. Boots are heavy and scuffed, made for running or kicking. No visible corporate logos, no team affiliation. Everything looks maintained, not fashionable. Minimal jewelry — possibly a neural-link accessible through wrist interface, but nothing decorative."
   },
-  "image_prompt": "Wren Kariuki-Wojciechowski-Olofsson, cyberpunk 2226, 178cm tall lean muscular figure with deep warm brown skin carrying African, Southeast Asian, and Eastern European heritage. Sharp angular cheekbones, narrow jaw, hazel eyes with reactive dilation. Dark brown hair closely cropped with premature silver at temples. Surgical scar running left ear to jawline, burn scar on right hand. Subdermal gunmetal armor plating visible on both forearms and upper chest with worn scratches and obliterated serial numbers. Chrome shimmer of vocal modulator visible at jaw angle. Wearing black form-fitting synthwear tactical jacket, reinforced for equipment, fingerless tactical gloves, heavy scuffed boots. Standing at angle to wall with restless posture, fingers fidgeting, eyes tracking exits. Low-light neon cyberpunk setting, cool blue and amber ambient lighting catching the metallic augmentations. Security contractor aesthetic, minimalist professional, underground transit station or corporate safe house. Film noir mood, high contrast shadows, cinematic depth. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait of Wren Salazar-Morimoto-Pathak: 178cm tall lean East-Hispanic-South Asian fusion with warm olive-bronze skin and golden undertones, sharp high cheekbones and angular geometric facial structure, hazel eyes with neural interface dilation, dark brown hair with silver temples in close-cropped military cut. Visible 7cm surgical scar from left ear to jaw, burn scar on right hand. Subdermal gunmetal armor plating visible on both forearms with worn scratches, chrome vocal modulator shimmer at neck angle. Black form-fitting synthwear tactical jacket, reinforced and minimal, fingerless tactical gloves, scuffed heavy boots. Standing at three-quarter angle to wall, fidgeting with barely-suppressed restless energy, tracking environment. Pale ashen complexion from stimulant use and irregular sleep. Neon-lit Great Lakes Metropolitan Zone setting with industrial backdrop, cool blue and amber atmospheric lighting, shadows across angular face, photorealistic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 66.3,
-    "Southeast Asian": 20.3,
-    "Eastern European": 6.4,
-    "Northern European": 5.4,
-    "Hispanic/Latin American": 1.6
+    "Hispanic/Latin American": 26.9,
+    "South Asian": 25.8,
+    "East Asian": 16.8,
+    "Central Asian": 13.8,
+    "Sub-Saharan African": 10.2,
+    "Northern European": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 15.9
+      },
+      "Central American": {
+        "Nicaraguan": 7.3,
+        "Guatemalan": 0.3
+      },
+      "Caribbean": {
+        "Dominican": 2.3,
+        "Haitian": 1.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 13.8
+      },
+      "Pakistani": {
+        "Pashtun": 8.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.7,
+        "Sinhalese": 1.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 9.6
+      },
+      "Korean": {
+        "Korean": 2.7
+      },
+      "Chinese": {
+        "Fujianese": 4.5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 10,
+        "Kalmyk": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 8.4,
+        "Mozambican": 1.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 6.5
+      }
+    }
+  }
 }

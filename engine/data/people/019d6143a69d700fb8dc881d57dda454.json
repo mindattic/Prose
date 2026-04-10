@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69d700fb8dc881d57dda454",
   "type": "character",
-  "name": "Drift Dalgaard",
+  "name": "Drift Valenzuela",
   "aliases": [
     "Pitch",
     "Pirjo the Loud"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Burnished Market, Bronzeline, near Milwaukee and North Ave",
-  "description": "Pirjo is impossible to miss and that is entirely by design. She is small and sharp-featured with her father's Kazakh bone structure softened by her Ghanaian mother's warm dark complexion, and she dresses in deliberately clashing layers — day-glo printed synthetic fabrics over thermal underlayers, pockets everywhere, a rotating collection of hand-painted headwraps in neon colors she sources from a vendor three stalls over. Her geneware is budget-tier but vibrant: slow-pulse bioluminescent freckles across her cheeks and nose, faint constellations that shift from gold to cool blue over the course of about forty minutes. She got them done in a back-alley gene clinic and they came out slightly asymmetrical, which she loves.\n\nShe sells from a cart that is essentially a rolling shrine to pirated media: crammed data chips, bootleg neural-experience recordings, unlicensed music from artists who exist only in the underground market, and a carefully curated selection of what she calls 'liberated content' — corporate-owned art, films, and entertainment freed from their paywalls. She has opinions about all of it and will share them at volume whether invited or not. She is genuinely funny, politically furious in an undirected way, and far more strategically intelligent about her business than her chaotic presentation suggests.",
+  "description": "Drift Valenzuela is impossible to miss and that is entirely by design. She is small and sharp-featured with her father's Kazakh bone structure softened by her Ghanaian mother's warm dark complexion, and she dresses in deliberately clashing layers — day-glo printed synthetic fabrics over thermal underlayers, pockets everywhere, a rotating collection of hand-painted headwraps in neon colors she sources from a vendor three stalls over. Her geneware is budget-tier but vibrant: slow-pulse bioluminescent freckles across her cheeks and nose, faint constellations that shift from gold to cool blue over the course of about forty minutes. She got them done in a back-alley gene clinic and they came out slightly asymmetrical, which she loves.\n\nShe sells from a cart that is essentially a rolling shrine to pirated media: crammed data chips, bootleg neural-experience recordings, unlicensed music from artists who exist only in the underground market, and a carefully curated selection of what she calls 'liberated content' — corporate-owned art, films, and entertainment freed from their paywalls. She has opinions about all of it and will share them at volume whether invited or not. She is genuinely funny, politically furious in an undirected way, and far more strategically intelligent about her business than her chaotic presentation suggests.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -162,7 +162,7 @@
     "Generous Fool": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,30 +179,17 @@
     "The Third Rail",
     "Bronzeline",
     "Arcturus Defense Solutions",
-    "ARCHIVE",
-    "Nesting Doll",
-    "Arcturus CK-5 'Bloodhound'",
-    "Gold",
-    "The Milwaukee Core",
     "Arcturus KS-7 'Nursery'",
-    "Bintou Halvorsen-Osei",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Tafara Quiñones-Saarinen",
-    "The Bazaar",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "Nesting Doll",
+    "Neural Palate",
+    "Drift",
+    "Compass Rose",
+    "Arcturus CK-5 'Bloodhound'",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American-dominant (46.5%) with significant East Asian ancestry (33.7%), blended with Eastern European (9.5%), North African (6.2%), and minor Southeast Asian (3.7%) heritage. The result is a striking pan-diaspora phenotype — warm golden-bronze skin with subtle olive undertones from the Latin and North African components, facial structure reflecting the East Asian ancestry in orbital geometry and cheekbone prominence, with the angular jaw and broad shoulders from Eastern European lineage.",
+    "heritage": "Pan-diaspora blend: Sub-Saharan African (30.1%), Hispanic/Latin American (29.7%), East Asian (16.0%), Southeast Asian (12.5%), and South Asian (11.7%). The result is a striking multi-continental phenotype — warm medium-bronze skin with golden undertones from the African and Latin components, facial structure reflecting East and Southeast Asian ancestry in orbital geometry and cheekbone prominence, with full lips and facial softness suggesting South Asian heritage mixed with the angular East Asian framework.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Lean and angular — small-framed with sharp shoulders and minimal body fat, built for moving quickly through crowded markets. Wiry muscle from hauling and arranging cart stock.",
@@ -210,8 +197,8 @@
     "hair_style": "Worn in rotating hand-painted headwraps in neon colors — currently chartreuse with magenta geometric patterns",
     "hair_length": "Medium (visible at nape when unwrapped)",
     "eye_color": "Dark brown, naturally warm",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones — the blended result of Latin American, East Asian, and North African ancestry creating an even, luminous complexion",
-    "complexion": "High, prominent cheekbones with East Asian orbital structure, angular jawline from Eastern European heritage, full lips suggesting Latin ancestry. Skin clear but showing slight marks from budget-tier gene clinic work. Distinctive asymmetrical bioluminescent freckles across cheeks and nose — slow-pulse geneware shifting gold to cool blue on ~40-minute cycle. The asymmetry is intentional and she considers it beautiful.",
+    "skin_tone": "Warm medium-bronze with golden undertones — the blended result of Sub-Saharan African, Hispanic/Latin American, East Asian, Southeast Asian, and South Asian ancestry creating an even, luminous complexion",
+    "complexion": "High, prominent cheekbones with East and Southeast Asian orbital structure, full lips with South Asian softness, angular jawline balanced by the warmth of African and Latin features. Skin clear but showing slight marks from budget-tier gene clinic work. Distinctive asymmetrical bioluminescent freckles across cheeks and nose — slow-pulse geneware shifting gold to cool blue on ~40-minute cycle. The asymmetry is intentional and she considers it beautiful.",
     "distinguishing_marks": [
       "Bioluminescent freckle constellation across both cheeks and bridge of nose, asymmetrical by design, pulse-shifting gold to cool blue",
       "Fine scar on left palm where subdermal chip reader was installed — barely visible but felt through skin",
@@ -221,17 +208,55 @@
     "posture_movement": "Moves with controlled chaos — quick, darting motions when animated, capable of stillness when focusing on a customer or counting stock. Gestures expressively when speaking (which is often). Stands with one hip cocked, rarely still. Eyes constantly scanning crowd for customers or suppliers.",
     "clothing_style": "Deliberately clashing layers: day-glo printed synthetic fabrics (hot pink, electric yellow, lime green) layered over thermal underlayers in muted grays and blacks. Multiple overlapping vests and jackets with exaggerated pocket systems — utilitarian Tier 5 workwear heavily customized with patches, pins, and hand-stitched modifications. Worn cargo pants with chain wallet. Scuffed synthetic boots with magnetic soles for market cart work. Hand-painted headwrap rotating through neon colorways. Multiple rings on fingers (some homemade, some found). All clothing shows wear and personalization — nothing corporate, everything Burnished Market authentic."
   },
-  "image_prompt": "Drift Dalgaard, 158cm lean-framed street vendor in cyberpunk 2226 Great Lakes Metropolitan Zone. Golden-bronze skin with warm olive undertones, high prominent cheekbones blending East Asian structure with angular Eastern European jawline, full lips. Natural deep brown hair with bleached streaks, currently wrapped in hand-painted chartreuse headwrap with magenta geometric patterns. Dark warm brown eyes constantly scanning. Asymmetrical bioluminescent freckles across cheeks and nose pulsing gold-to-blue. Wiry build dressed in clashing day-glo synthetic layers — hot pink and electric yellow over muted thermal base, multiple customized utility vests with hand-stitched patches and exaggerated pockets, worn cargo pants with chain wallet, scuffed magnetic-soled boots. Multiple homemade rings. Faint scar visible on left palm, crescent burn mark on right forearm. Dynamic posture with one hip cocked, mid-gesture and expressive. Standing in neon-lit Burnished Market, surrounded by vendor carts and crowd energy, street-level lighting reflecting off bioluminescent freckles. Mood: sharp, energetic, street-authentic. Cyberpunk noir with vibrant market colors. --ar 2:3 --v 6",
+  "image_prompt": "Drift Valenzuela, 158cm lean angular frame, warm medium-bronze skin with golden undertones, prominent East Asian cheekbones blended with full South Asian lips and African warmth, dark brown eyes. Asymmetrical bioluminescent freckles pulsing gold-to-blue across cheeks and nose. Natural deep brown hair with bleached streaks, currently hidden under hand-painted chartreuse and magenta geometric headwrap. Wearing deliberately clashing day-glo synthetic layers — hot pink and electric yellow prints over muted gray thermal underlayers, heavily customized Tier 5 workwear vests with patches and pins, worn cargo pants with chain wallet, scuffed magnetic-sole boots. Multiple homemade and found rings on fingers. GLMZ, Great Lakes Metropolitan Zone marketplace setting, neon market stall lighting casting sharp shadows, dynamic pose with one hip cocked and hands gesturing expressively, scanning crowd. Gritty Burnished Market authentic aesthetic, controlled chaos energy, scanning eyes, worn and personalized everything --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 46.5,
-    "East Asian": 33.7,
-    "Eastern European": 9.5,
-    "North African": 6.2,
-    "Southeast Asian": 3.7,
-    "Sub-Saharan African": 0.4
+    "Sub-Saharan African": 30.1,
+    "Hispanic/Latin American": 29.7,
+    "East Asian": 16,
+    "Southeast Asian": 12.5,
+    "South Asian": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 16.5,
+        "Malian": 13.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 14.1
+      },
+      "South American": {
+        "Venezuelan": 11.6,
+        "Ecuadorian": 4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.8
+      },
+      "Japanese": {
+        "Japanese": 5.5
+      },
+      "Chinese": {
+        "Shanghainese": 0.5,
+        "Cantonese": 2.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 12.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.7
+      }
+    }
+  }
 }

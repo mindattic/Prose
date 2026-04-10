@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5be7a94be476c8e81a1e8bf",
   "type": "character",
-  "name": "Drift Guerrero-Holm",
+  "name": "Drift Mwangi-Kabwit",
   "aliases": [
     "Tunde",
     "Big Tunde"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Burnished Market, permanent pitch at the corner of Grainfort and Ironvein, near North Ave and Damen",
-  "description": "Babatunde is a large, slow-moving man with the kind of bulk that was once muscle and has settled into something more geological. His skin is dark walnut brown, his beard full and peppered grey-white, worn in four loose plaits he ties back during service hours. His Turkish grandmother gave him the Öztürk and a nose like a falcon's beak; his Samoan great-grandfather gave him the Savea and shoulders like a doorframe. He wears the same thing every day: a heat-resistant apron over a sleeveless thermal, arms bare to show the geometric Samoan-style tattoo that wraps from his left wrist to his shoulder, and under it on the inside of his wrist, half-hidden, a small Yoruba adinkra symbol his mother pressed there with a needle when he was seven. Behind the cart he moves with surprising economy, three things happening in each hand simultaneously.\n\nHe doesn't talk much while working, but when the lunch rush ebbs he will lean on the cart and hold a conversation that feels unhurried in a way that is almost physically restful. He has opinions about everything — city politics, the flavor profile of various E.L.F.s' preferred data offerings, whether the Ferrogate expansion is actually gentrification in a steel tube — but he delivers them the way he delivers broth: slow, hot, with depth that surprises you. He has been at this corner for twenty-two years. He knows every face.",
+  "description": "Drift Mwangi-Kabwit is a large, slow-moving man with the kind of bulk that was once muscle and has settled into something more geological. His skin is dark walnut brown, his beard full and peppered grey-white, worn in four loose plaits he ties back during service hours. His Turkish grandmother gave him the Öztürk and a nose like a falcon's beak; his Samoan great-grandfather gave him the Savea and shoulders like a doorframe. He wears the same thing every day: a heat-resistant apron over a sleeveless thermal, arms bare to show the geometric Samoan-style tattoo that wraps from his left wrist to his shoulder, and under it on the inside of his wrist, half-hidden, a small Yoruba adinkra symbol his mother pressed there with a needle when he was seven. Behind the cart he moves with surprising economy, three things happening in each hand simultaneously.\n\nHe doesn't talk much while working, but when the lunch rush ebbs he will lean on the cart and hold a conversation that feels unhurried in a way that is almost physically restful. He has opinions about everything — city politics, the flavor profile of various E.L.F.s' preferred data offerings, whether the Ferrogate expansion is actually gentrification in a steel tube — but he delivers them the way he delivers broth: slow, hot, with depth that surprises you. He has been at this corner for twenty-two years. He knows every face.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -196,37 +196,22 @@
     "The Burnished Market",
     "Grandmother",
     "The CEO",
+    "The Marrow Market",
     "Ferrogate Transit",
     "Grainfort",
     "Ironvein",
     "Tessera Corponation",
     "Walnut",
-    "Needle",
-    "Steel",
-    "Arcturus CK-5 'Bloodhound'",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
     "Arcturus KS-7 'Nursery'",
-    "GLMZ",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Noir Dining",
-    "Pirjo Asante-Ulukhan",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Bazaar",
-    "The Glass Garden",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Witness",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Corner Slice",
+    "Drift",
+    "Steel",
+    "Compass Rose",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Southeast Asian and Sub-Saharan African ancestry, with minor Middle Eastern heritage—a genetic blend reflecting the Ubiquitous Diaspora. Phenotypically displays warm brown tones and facial features characteristic of Latin American-African-Southeast Asian admixture.",
+    "heritage": "Predominantly Sub-Saharan African (75.2%) with significant East Asian (12.0%), South Asian (8.9%), and Hispanic/Latin American (3.9%) ancestry—a genetic blend reflecting the Ubiquitous Diaspora. Phenotypically displays deep warm brown skin with subtle golden and olive undertones from the Asian admixture, broad facial structure characteristic of Sub-Saharan African ancestry, with refined eye shape and prominent cheekbones influenced by East and South Asian genetics. The Hispanic/Latin American component adds warmth and slight variation to overall tone.",
     "height_cm": 188,
     "weight_kg": 112,
     "build": "Large and solid—once muscular, now settled into a heavyweight frame that moves with deliberate economy. Broad shoulders and deep chest give him presence even at rest.",
@@ -234,8 +219,8 @@
     "hair_style": "Four loose plaits, typically tied back with simple cord during service hours; plaits hang loose in evenings",
     "hair_length": "Medium (plaited to mid-back when loose)",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm medium-to-dark brown with golden and reddish undertones from the blending of Latin American, Southeast Asian, and African ancestry",
-    "complexion": "Weathered and lined from decades of outdoor work and age; skin texture roughened by heat exposure and steam. Full peppered beard worn close to the jaw. Facial structure shows the broader cheekbones and nose bridge characteristic of his mixed Latin American-Southeast Asian-African heritage. Hands show callusing and minor scarring from kitchen work.",
+    "skin_tone": "Deep warm brown with golden-olive undertones, reflecting the dominant Sub-Saharan African ancestry enriched by the subtle warmth and undertone complexity from East Asian, South Asian, and Hispanic/Latin American admixture",
+    "complexion": "Weathered and lined from decades of outdoor work and age; skin texture roughened by heat exposure and steam. Full peppered beard worn close to the jaw. Facial structure shows the broad cheekbones, prominent nose bridge, and strong jaw characteristic of Sub-Saharan African heritage, refined by the more angular eye placement and cheekbone prominence from East Asian genetics, with South Asian warmth contributing to overall dimensionality. Hands show callusing and minor scarring from kitchen work.",
     "distinguishing_marks": [
       "Large geometric Samoan-style tattoo wrapping from left wrist to left shoulder in black ink with bioluminescent blue-gold threading that pulses faintly in darkness",
       "Small Yoruba adinkra symbol (Gye Nyame) on the inside of left wrist in faded black ink, half-hidden by the larger tattoo"
@@ -244,15 +229,53 @@
     "posture_movement": "Stands with weight distributed evenly, slightly forward-leaning when at rest against the cart. Moves with surprising grace and efficiency despite bulk—three simultaneous hand movements are fluid and economical. Carries himself with the unhurried confidence of someone rooted in place.",
     "clothing_style": "Uniform consistency: heat-resistant work apron (charcoal-grey, oil-stained at edges, patches from years of service) worn over sleeveless thermal shirt in cream or faded black. Arms always bare to display tattoo. Worn steel-toed work shoes, practical rather than fashionable. No jewelry except occasional cord tie for plaits. Tier 4 working-class functionality—built for durability and heat management, not status."
   },
-  "image_prompt": "Drift Guerrero-Holm, 188cm tall, muscular-turned-heavyweight build, warm medium-dark brown skin with golden undertones from Latin American-Southeast Asian-African heritage, deep brown eyes, dark brown hair with grey threading braided into four loose plaits. Full peppered beard close to jaw. Large geometric Samoan-style tattoo on left arm in black with bioluminescent blue-gold threading glowing softly, smaller faded Yoruba adinkra symbol on inner wrist. Thermal-resistant chrome dermal plating visible on palms. Wearing heat-resistant charcoal-grey work apron over sleeveless cream thermal shirt, bare arms, worn steel-toed work shoes. Standing at a food cart in the Great Lakes Metropolitan Zone, 2226, slightly forward-leaning posture, deliberate movements, unhurried confidence. Cyberpunk street vendor aesthetic, warm evening neon lighting catching the bioluminescent tattoo, gritty urban food service environment, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Drift Mwangi-Kabwit, 188cm tall heavyweight man with deep warm brown skin with golden-olive undertones reflecting Sub-Saharan African, East Asian, South Asian and Hispanic/Latin American heritage blend. Weathered face with broad cheekbones, strong jaw, peppered full beard close to jawline. Dark brown eyes. Dark brown hair with grey threading, arranged in four loose plaits hanging mid-back. Large geometric Samoan-style black tattoo with bioluminescent blue-gold threading wrapping left wrist to shoulder, glowing faintly. Smaller faded Yoruba adinkra symbol on inner left wrist. Both palms show thermal-resistant chrome dermal plating with matte finish. Wearing charcoal-grey heat-resistant work apron over sleeveless cream thermal shirt, arms bare to show tattoos. Steel-toed work shoes, worn. Hands show calluses and minor scars from kitchen work. Standing with calm, rooted confidence, weight forward-leaning against cart. GLMZ Great Lakes Metropolitan Zone street food vendor setting, evening atmosphere, neon-tinged ambient lighting highlighting the bioluminescent tattoo glow, industrial food cart environment, utilitarian work-class aesthetic, deep shadows and warm practical lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 60.3,
-    "Southeast Asian": 18.7,
-    "Sub-Saharan African": 14.5,
-    "Middle Eastern": 6.5
+    "Sub-Saharan African": 75.2,
+    "East Asian": 12,
+    "South Asian": 8.9,
+    "Hispanic/Latin American": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 23
+      },
+      "Southern African": {
+        "Botswanan": 18.7,
+        "South African": 8
+      },
+      "West African": {
+        "Nigerian": 11.6,
+        "Ghanaian": 13.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 2.3,
+        "Sinhalese": 2.7
+      },
+      "Nepali": {
+        "Nepali": 2.7
+      },
+      "Indian": {
+        "Tamil": 0.5,
+        "Telugu": 0.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 3.9
+      }
+    }
+  }
 }

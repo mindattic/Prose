@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60a768e91618c52a1d27e7d",
   "type": "character",
-  "name": "Thora Björnsdóttir",
+  "name": "Ember Björnsdóttir",
   "aliases": [
     "Zeke",
     "The Long Haul"
@@ -13,7 +13,7 @@
   "age": 55,
   "status": "active",
   "location": "Based out of Bridgepoint depot; routes across Old Harbor, Collinwood Docks, and Escanaba Gateway, near Lake Shore and Wacker",
-  "description": "Ezekiel is a big man gone soft at the middle without losing any of the underlying solidity, with a Samoan-Polynesian breadth to his shoulders and a German-Kazakh fairness to his complexion that produces a particular warm gold-brown. He keeps a neatly trimmed beard that is going white at the chin, and his hair is cut short on the sides with a modest wave on top. He has no augmentations except for a spinal support brace system embedded under the skin of his lower back — invisible from outside, a concession to fifteen years of heavy lifting, and the thing he is most privately embarrassed about. He dresses in the same way every day: Ferrogate Transit–adjacent work pants (not an official uniform, just the brand he likes), an undershirt, and whatever jacket is appropriate to the weather, always with the same small enamel pin of a cargo ship on the lapel.\n\nEzekiel is the specific kind of man who has decided what he thinks about most things and is comfortable living there. He is not incurious — he listens with genuine attention — but he does not perform enthusiasm or urgency. He has a deep, slow voice and the habit of answering questions with a question first, not as an evasion but as genuine interest in understanding what you actually want to know. He is known along his routes as someone you can trust to deliver fragile things intact and to keep his mouth shut about what he transports, which has made him both well-regarded and occasionally the target of people who want to exploit those qualities.",
+  "description": "Ember Björnsdóttir is a big man gone soft at the middle without losing any of the underlying solidity, with a Samoan-Polynesian breadth to his shoulders and a German-Kazakh fairness to his complexion that produces a particular warm gold-brown. He keeps a neatly trimmed beard that is going white at the chin, and his hair is cut short on the sides with a modest wave on top. He has no augmentations except for a spinal support brace system embedded under the skin of his lower back — invisible from outside, a concession to fifteen years of heavy lifting, and the thing he is most privately embarrassed about. He dresses in the same way every day: Ferrogate Transit–adjacent work pants (not an official uniform, just the brand he likes), an undershirt, and whatever jacket is appropriate to the weather, always with the same small enamel pin of a cargo ship on the lapel.\n\nEmber Björnsdóttir is the specific kind of man who has decided what he thinks about most things and is comfortable living there. He is not incurious — he listens with genuine attention — but he does not perform enthusiasm or urgency. He has a deep, slow voice and the habit of answering questions with a question first, not as an evasion but as genuine interest in understanding what you actually want to know. He is known along his routes as someone you can trust to deliver fragile things intact and to keep his mouth shut about what he transports, which has made him both well-regarded and occasionally the target of people who want to exploit those qualities.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -168,7 +168,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Based out of Bridgepoint depot; routes across Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,25 +229,14 @@
     "Bridgepoint",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Harbor Fish Shack",
     "TESSERA TD-3 'Hornet'",
-    "Gold",
-    "Breck Tannen",
-    "Dragan Petersen-Bah",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Cargo Tacos",
+    "Gold"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Northern European-dominant with significant Middle Eastern, Eastern European, South Asian, and minor Hispanic/Latin American ancestry — a complex Diaspora blend creating warm golden-brown skin with olive undertones, broad Northern European bone structure refined by Middle Eastern features, and South Asian warmth in coloration",
+    "heritage": "Ubiquitous Diaspora combination of East Asian (36.6%), Pacific Islander (26.0%), Hispanic/Latin American (24.9%), and Sub-Saharan African (12.5%) ancestry — a truly global genetic blend creating warm golden-bronze skin with subtle warm undertones. Facial structure reflects balanced influence across all ancestry groups: East Asian cheekbone prominence and jaw definition softened by Pacific Islander fullness, enriched by Latin American and African warmth in skin depth and feature blending, resulting in a complexion that speaks unmistakably to global heritage rather than any single regional origin",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Broad-shouldered and solid through the chest and arms, with pronounced softness at the midsection — the physique of a man whose frame was built for heavy labor but whose daily work has shifted to sustained driving. Still carries underlying mass and strength beneath the slackness.",
@@ -255,8 +244,8 @@
     "hair_style": "Short-clipped sides with a modest wave maintained on top; well-maintained without fussiness",
     "hair_length": "Short",
     "eye_color": "Warm brown",
-    "skin_tone": "Warm golden-brown with subtle olive undertones — the result of Northern European fairness deeply sun-darkened and enriched by Middle Eastern and South Asian ancestry, creating a complexion that reads as sun-weathered and lived-in rather than fair",
-    "complexion": "Weathered but clean-shaven except for a neatly trimmed dark beard; sun-marked on the face and forearms from decades of dock-side work and windshield-filtered UV exposure; Middle Eastern-influenced bone structure visible in cheekbones and jaw; no cosmetic modifications; the face of someone who has decided to age without resistance",
+    "skin_tone": "Warm golden-bronze with balanced undertones — the result of East Asian and Pacific Islander base ancestry enriched by Hispanic/Latin American and Sub-Saharan African heritage, creating a sun-weathered complexion that reads as lived-in and deeply seasoned by decades of windshield-filtered UV exposure and dock-side work",
+    "complexion": "Weathered but clean-shaven except for a neatly trimmed dark beard; sun-marked on the face and forearms from decades of dock-side work and windshield-filtered UV exposure; balanced facial bone structure visible in cheekbones (East Asian-Pacific Islander prominence) and jaw contour enriched by broader African and Latin American heritage features; no cosmetic modifications; the face of someone who has decided to age without resistance",
     "distinguishing_marks": [
       "Deep horizontal crease across his lower back (visible only when shirtless) from the embedded spinal support brace running beneath the skin",
       "Faded scarring on both palms and along the inner sides of forearms, consistent with decades of cable work and dock labor"
@@ -265,16 +254,47 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Sits with the careful attention of someone managing chronic back strain, favoring slight forward flexion. His default is stillness; when he speaks, his gestures are minimal and purposeful. Walks with a trucker's stride, slightly favoring weight distribution.",
     "clothing_style": "Ferrogate Transit work pants (Tier 4 industrial-grade, well-maintained), neutral undershirt (usually grey or black), weather-appropriate jacket (canvas or synthetic blend depending on season). Everything is functional, well-worn but clean. A small enamel pin of a cargo ship is affixed to his jacket lapel — the only decorative element, worn daily without variation. No corpo branding or status signaling. Shoes are scuffed steel-toed work boots."
   },
-  "image_prompt": "Thora Björnsdóttir, 188cm tall, weathered dock worker in GLMZ 2226, golden-brown skin with olive undertones from mixed Northern European, Middle Eastern, Eastern European, and South Asian ancestry. Dark brown hair with white threading in neatly trimmed beard, warm brown eyes, broad shoulders with solid chest and pronounced midsection softness. Wearing worn Ferrogate Transit work pants, grey undershirt, canvas jacket with faded cargo ship enamel pin, scuffed steel-toed boots. Sitting in trucker cab with deliberate posture, managing chronic back strain, minimal gestures. Sun-weathered face and forearms, faded scarring on palms visible. Cyberpunk 2226, industrial lighting from windshield, worn utilitarian aesthetic, tired but purposeful expression. --ar 2:3 --v 6",
+  "image_prompt": "Middle-aged neo-noir dockworker in 2226 GLMZ, Ubiquitous Diaspora heritage reflected in warm golden-bronze complexion blending East Asian, Pacific Islander, Hispanic/Latin American, and Sub-Saharan African features. 188cm tall, broad-shouldered with labor-built frame and soft midsection. Dark brown hair with white threading in short neat style, warm brown eyes in weathered face marked by decades of dock UV exposure. Neatly trimmed dark beard, sun-weathered golden-bronze skin. Ferrogate Transit work pants, grey undershirt, worn canvas jacket with small enamel cargo ship pin. Scuffed steel-toed work boots. Stands with trucker's careful posture, managing chronic spinal strain. Forearms show faded labor scars. Industrial dock setting with container cranes silhouetted against neon-lit GLMZ skyline at dusk, moody atmospheric lighting casting warm amber and cool blue shadows across weathered face and work clothes. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 43.8,
-    "Middle Eastern": 26.6,
-    "Eastern European": 15.2,
-    "South Asian": 11.3,
-    "Hispanic/Latin American": 3.1
+    "East Asian": 36.6,
+    "Pacific Islander": 26,
+    "Hispanic/Latin American": 24.9,
+    "Sub-Saharan African": 12.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 28,
+        "Mandarin Northern": 2.1
+      },
+      "Korean": {
+        "Korean": 6.5
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 5.2,
+        "Tongan": 20.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 18.1,
+        "Brazilian": 6.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 1.6,
+        "Tanzanian": 3.9
+      },
+      "West African": {
+        "Malian": 7
+      }
+    }
+  }
 }

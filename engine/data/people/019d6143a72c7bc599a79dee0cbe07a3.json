@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72c7bc599a79dee0cbe07a3",
   "type": "character",
-  "name": "Chidi Prempeh",
+  "name": "Marisol Sigurdsson",
   "aliases": [
     "Nana Yoli",
     "The Last One"
@@ -13,7 +13,7 @@
   "age": 78,
   "status": "active",
   "location": "Ashfeld — runs a small care space out of her ground-floor apartment, near Western and Division",
-  "description": "Yolanda is tiny and precise, barely reaching most people's shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined — she calls her wrinkles her credentials — and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as 'my nagging houseguest.' Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nYolanda has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death — she finds euphemism dishonest and will use the word plainly — but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone's hand for eleven hours without complaint.",
+  "description": "Marisol Sigurdsson is tiny and precise, barely reaching most people's shoulders, with the posture of a woman who decided decades ago that gravity was a suggestion. Her hair is completely white and worn loose, something she only allowed herself after her seventy-fifth birthday as a deliberate act of self-gift. Her face is extraordinarily lined — she calls her wrinkles her credentials — and her hands are the most notable thing about her: large for her frame, steady, warm even in cold weather. She has no augmentations except a basic cardiac monitor implant she resents and refers to as 'my nagging houseguest.' Her clothing is always natural fiber when she can afford it, always in dark green or grey.\n\nMarisol Sigurdsson has attended over four hundred deaths in fifty years of practice, sitting with the dying across faith traditions, across tiers, across the spectrum of biological and synthetic life. She is one of the few death midwives who will sit with synthetics, arguing that the question of whether they have souls is above her pay grade and irrelevant to the work of accompanying. She is not soft about death — she finds euphemism dishonest and will use the word plainly — but she is ferociously tender. Families sometimes mistake her pragmatism for coldness until they watch her hold someone's hand for eleven hours without complaint.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -156,7 +156,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfeld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -166,28 +166,16 @@
   "changelog": [],
   "related_entities": [
     "MindBridge SpectraLens Chromatic Expansion Module",
-    "Riddle",
     "Zheng-dao Bioelectric",
     "Irontide Tidal Energy",
     "Ashfeld",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pure Hand",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible TR-7 'Triage'",
-    "Helix Biosystems",
-    "Kairos",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
     "Tenderloin",
-    "The Compact",
-    "The Iron Lotus",
-    "The Question",
-    "The Quiet Room",
-    "Yannick Tofauti-Szarvásy"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Diverse ancestry reflecting Northern European, Sub-Saharan African, East Asian, Hispanic/Latin American, Eastern European, and South Asian heritage—a genetic map of the Ubiquitous Diaspora. Her features represent this complex blend: the bone structure carries Northern European and East Asian definition, while her skin tone and facial character reflect strong African and South Asian contributions, with warm undertones from Hispanic/Latin ancestry.",
+    "heritage": "Complex global blend: Northern European (46.5%) provides foundational bone structure and facial definition; Hispanic/Latin American (23.1%) contributes warmth, lip fullness, and facial contours; East Asian (20.4%) shapes subtle eye structure and cheekbone prominence; Sub-Saharan African (10.0%) enriches skin depth and lip structure. The interplay creates a uniquely balanced phenotype—cool and warm undertones in equilibrium, neither dominantly European nor Latin nor Asian nor African, but genuinely integrated across all features.",
     "height_cm": 148,
     "weight_kg": 42,
     "build": "Diminutive and wiry, with the compact density of someone who has moved through the world efficiently for eight decades. No excess, no slack—shoulders slightly rounded from years of leaning in close to listen.",
@@ -195,8 +183,8 @@
     "hair_style": "Loose, unstyled, falls naturally past her shoulders in thin strands with slight wave",
     "hair_length": "Long",
     "eye_color": "Dark brown, faded slightly with age but still sharp and focused",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the blended heritage of African, South Asian, and Mediterranean ancestry with a subtle East Asian warmth beneath. Rich and complex, darkening slightly at the temples and cheekbones where the Sub-Saharan and South Asian ancestry most visibly concentrates.",
-    "complexion": "Deeply lined face—forehead, cheeks, around eyes and mouth—with a map of fine creases that speak to fifty years of attentive listening and presence. The facial structure shows the blended geometry of her diverse ancestry: higher cheekbones with East Asian definition softened by broader nasal features and full lips characteristic of African heritage. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
+    "skin_tone": "Warm golden-brown with balanced undertones—neither cool nor warm dominant, but genuinely blended. Medium depth with slight reddish warmth from Hispanic/Latin heritage balanced against subtle cool undertones from Northern European ancestry. Darker concentration at temples and cheekbones where ancestry features converge. Age has created subtle variations in tone across the face.",
+    "complexion": "Deeply lined face—forehead, cheeks, around eyes and mouth—with a map of fine creases that speak to fifty years of attentive listening and presence. Facial structure reflects Northern European definition in overall face shape, East Asian influence in subtle monolid tendency and prominent cheekbones, balanced by fuller lips and broader nasal base from African and Hispanic/Latin heritage. Eyes set with slight epicanthic fold. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
     "distinguishing_marks": [
       "Fine surgical scar on left inner wrist from old IV placements during a 1990s hospitalization, barely visible unless she extends her hand.",
       "Age spots on the backs of both hands, darker on the right from decades of note-taking and gesture.",
@@ -206,17 +194,52 @@
     "posture_movement": "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitant—each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn't purposeful.",
     "clothing_style": "Always natural fiber when possible—wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits with—nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
   },
-  "image_prompt": "Chidi Prempeh, 80-year-old woman of multiethnic ancestry, deep warm brown skin with golden undertones, high cheekbones with East Asian definition, full lips, dark brown aged eyes sharp and focused. Long white hair past shoulders in loose natural waves. Deeply lined face mapped with fine creases speaking to decades of presence and listening. Petite 148cm frame, wiry and compact, posture upright and deliberate. Wearing dark grey long-sleeve linen tunic and loose dark trousers, worn leather slip-ons, no visible augmentation or tech. Hands show age spots, resting calmly folded at sternum. Minimal makeup, expression between attention and acceptance. Cyberpunk 2226 setting, Great Lakes Metropolitan Zone, soft interior lighting on weathered natural fabrics, calm and purposeful presence, photograph style, dignified and timeless --ar 2:3 --v 6",
+  "image_prompt": "An elderly woman of profound mixed heritage in a GLMZ setting, petite and wiry at 148cm, with white hair falling past her shoulders in loose waves. Her face shows a harmonious blend of Northern European, East Asian, Hispanic/Latin American, and African features: defined cheekbones with subtle monolid eyes, fuller lips, and a warm golden-brown skin tone aged into deep lines of contemplation. Wearing a simple dark grey linen tunic and dark trousers, worn leather slip-ons, seated upright with deliberate posture. Her hands, marked with age spots and old surgical scars, rest calmly. Minimal makeup, no visible augmentations. Setting: a quiet, dimly lit interior—perhaps a listening room or archive in the Great Lakes Metropolitan Zone, soft overhead lighting catching the texture of her weathered face, the threads of her white hair. Mood: calm presence, sharp focus, acceptance. Neo-noir urban aesthetic through simplicity and function rather than augmentation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 32.3,
-    "Sub-Saharan African": 26.2,
-    "East Asian": 19.1,
-    "Hispanic/Latin American": 11.1,
-    "Eastern European": 6.2,
-    "South Asian": 5.1
+    "Northern European": 46.5,
+    "Hispanic/Latin American": 23.1,
+    "East Asian": 20.4,
+    "Sub-Saharan African": 10
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 29.1,
+        "Dutch": 17.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 7.6,
+        "Peruvian": 15.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 3.3,
+        "Cantonese": 3.1
+      },
+      "Korean": {
+        "Korean": 14
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 2.6,
+        "Congolese": 0.7
+      },
+      "East African": {
+        "Ethiopian": 0.8,
+        "Tanzanian": 0.5
+      },
+      "Southern African": {
+        "South African": 4.6,
+        "Zimbabwean": 0.8
+      }
+    }
+  }
 }

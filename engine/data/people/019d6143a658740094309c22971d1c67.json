@@ -1,7 +1,7 @@
 {
   "id": "019d6143a658740094309c22971d1c67",
   "type": "character",
-  "name": "Farhan Vestergaard",
+  "name": "Farhan Vo",
   "aliases": [
     "Raze",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Milena Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 34, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Milena Dahl-Conteh describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Farhan Vo is lean and angular, all sharp edges and visible tension. At 34, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Farhan Vo describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.14,
@@ -259,7 +259,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,37 +278,20 @@
   "related_entities": [
     "The Nearfield",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Lazarus LX-2 'Lab Rat'",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "South Asian-dominant with significant East Asian admixture, complemented by Middle Eastern and Eastern European heritage. This creates a striking blend: warm golden-brown undertones with subtle cool notes, angular features refined across multiple ancestry lines, and an overall appearance that suggests adaptability and mixed-continent heritage typical of the Ubiquitous Diaspora.",
+    "heritage": "Complex Ubiquitous Diaspora blend: Sub-Saharan African foundation (29%) grounds warm undertones and facial structure richness, South Asian heritage (25.6%) adds refined angularity, high cheekbone prominence, and luminous skin quality, Southeast Asian ancestry (19.5%) contributes to eye geometry and facial proportions, Eastern European (13.1%) introduces cool undertones and sharp definition to cheekbones and jawline, Hispanic/Latin American (12.8%) enriches warmth and adds subtle complexity to undertones. The result is a striking polychromatic appearance: warm golden-brown base with olive and cool undertones creates an adaptive, globally-rooted phenotype with luminous, light-catching skin.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with corded muscle definition — no excess mass, built for speed and precision rather than power. Visible tension in shoulders and jaw even at rest.",
     "hair_color": "Dark blonde, naturally ash-toned",
     "hair_style": "Pulled back in a tight, functional braid; minimal styling — practical only",
     "hair_length": "Medium (shoulder-length when unbound)",
-    "eye_color": "Steel gray with faint silver threading in the iris — likely augmented optical enhancement",
-    "skin_tone": "Warm golden-brown with subtle olive undertones — South Asian base enriched by East Asian influence, creating a luminous mid-to-medium complexion that catches light distinctly",
-    "complexion": "Sharp cheekbones with refined angularity from South Asian and East Asian heritage, angular jawline, minimal body fat reveals underlying bone structure. Skin is clear but bears evidence of repeated minor trauma — small silvered scars, a few faint impact marks on temples and across knuckles. No cosmetic grooming; she maintains herself with utilitarian precision.",
+    "eye_color": "Steel gray with faint silver threading in the iris — augmented optical enhancement",
+    "skin_tone": "Warm golden-brown with olive undertones and cool-toned depth from Eastern European heritage. Medium-to-medium-deep complexion with luminous, light-catching quality that reflects Sub-Saharan richness, South Asian luminosity, and Southeast Asian undertones in harmonious blend.",
+    "complexion": "Sharp, refined cheekbones from layered South Asian and Eastern European heritage with strong Sub-Saharan bone structure richness, angular jawline, Southeast Asian eye geometry creating subtle epicanthic shaping. Minimal body fat reveals underlying bone structure. Skin is clear but bears evidence of repeated minor trauma — small silvered scars, faint impact marks on temples and across knuckles. No cosmetic grooming; utilitarian maintenance only.",
     "distinguishing_marks": [
       "Two parallel silver scars running vertically down the inside of each forearm — surgical lines where subdermal weapon mounts were installed, deliberately left unscarred smooth",
       "Faint burn mark on right collarbone, roughly 3cm diameter, aged and pale",
@@ -319,15 +302,61 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, weight balanced over the balls of her feet even when standing still. Her gaze is constant, tracking exits and threats automatically. In repose, there is coiled readiness; in motion, there is lethal grace.",
     "clothing_style": "Tier 3-4 practical street wear: fitted dark synthetic jacket (water-resistant, reinforced at shoulders and forearms), matte black compression shirt underneath, tactical cargo pants with multiple sealed pockets, steel-toed boots scuffed from active use. All clothing is modular — pockets positioned for weapon accessibility, sleeves cut short enough to expose the forearm augmentations. No logos or unnecessary ornamentation; everything serves a function. Off-duty, she shifts to completely anonymous Tier 4 civilian wear: plain jumpsuits, unremarkable jackets, things that dissolve into crowds."
   },
-  "image_prompt": "Farhan Vestergaard, 172cm lean angular woman with warm golden-brown skin, South Asian-East Asian heritage visible in sharp cheekbones and refined jawline, steel-gray augmented eyes with silver threading. Dark blonde hair pulled back in tight functional braid. Exposed subdermal blade mounts in both forearms with visible chrome seams. Faint surgical and impact scars on forearms, temples, knuckles. Wears matte black compression shirt with fitted dark water-resistant tactical jacket, cargo pants, scuffed steel-toed boots. Economical posture, coiled readiness, minimal body fat reveals corded muscle. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and amber lighting catching the chrome of forearm augmentations, serious focused expression, utilitarian and dangerous presence --ar 2:3 --v 6",
+  "image_prompt": "Farhan Vo, GLMZ, lean angular woman with warm golden-brown skin and cool-toned undertones, luminous complexion reflecting Sub-Saharan, South Asian, Southeast Asian, Eastern European, and Hispanic heritage. Sharp cheekbones, refined jawline, subtle epicanthic eye geometry. Steel gray augmented eyes with silver threading. Dark blonde hair pulled back in tight functional braid. Visible subdermal chrome blade seams on forearms. Small scars on forearms, temples, knuckles, left eyebrow bisection. Matte black compression shirt, dark water-resistant tactical jacket with reinforced shoulders, cargo pants with sealed pockets, scuffed steel-toed boots. Posture: coiled readiness, economical precision, weight balanced on balls of feet. Setting: neon-lit Great Lakes Metropolitan Zone street, moody neo-noir lighting with cool blues and warm amber neon reflections on exposed chrome augmentation. Atmosphere: lethal grace, constant vigilance, deliberately exposed military hardware, utilitarian edge. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 52.9,
-    "East Asian": 25.5,
-    "Middle Eastern": 12.7,
-    "Eastern European": 8.9
+    "Sub-Saharan African": 29,
+    "South Asian": 25.6,
+    "Southeast Asian": 19.5,
+    "Eastern European": 13.1,
+    "Hispanic/Latin American": 12.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 29
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 17.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.5
+      },
+      "Pakistani": {
+        "Pashtun": 0.9,
+        "Punjabi Pakistani": 3.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 19.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 4.2
+      },
+      "Slavic South": {
+        "Serbian": 6.3,
+        "Croatian": 0.5
+      },
+      "Magyar-Romanian": {
+        "Romanian": 2.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 1.7,
+        "Nicaraguan": 2.1
+      },
+      "South American": {
+        "Venezuelan": 9
+      }
+    }
+  }
 }

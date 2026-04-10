@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6be76909bc1efe02a361d5c",
   "type": "character",
-  "name": "Olumide Sow",
+  "name": "Nikhil Rahman",
   "aliases": [
     "Rem",
     "the Wizard"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Lives in Copperhead; operates the Deepwell Station to Kessler Interchange subsurface line, near sub-level access near State and Van Buren",
-  "description": "Rémi is a thick-set man with a round, deeply lined face that has settled into an expression of benign exhaustion he's been wearing since approximately age thirty-five. His skin is a warm dark brown with reddish undertones. He keeps a short beard going silver at the chin, and his hair — what remains of it — is cropped tight. His eyes are augmented: a Ferrogate Transit standard-issue retinal overlay that displays line status, passenger loads, and signal data, the irises permanently lit with a dim amber grid pattern that is just visible to anyone looking closely. He wears his uniform with the collar open one button past regulation and has for eleven years without consequence. He has a cat tail — a geneware addition he got in his thirties on a dare from his youngest kid and kept because he finds the autonomic movements diagnostic: when the tail is still, he is calm; when it lashes, he is not.\n\nRémi has operated the same subsurface line for sixteen years. He knows every vibration and groan of the tunnel, every station's ELF personality — Deepwell's resident ELF is old and cantankerous and he has been leaving it audio recordings of football matches as offerings for a decade, and the signal has never failed him once. He is not a man of great ambition or dramatic action. He is a man who does his job with precision and has turned showing up reliably into a form of personal philosophy. He is also, beneath the exhausted affability, quietly furious about what Ferrogate Transit has been doing to its operator compensation and maintenance budgets, and he has been attending union meetings for two years.",
+  "description": "Nikhil Rahman is a thick-set man with a round, deeply lined face that has settled into an expression of benign exhaustion he's been wearing since approximately age thirty-five. His skin is a warm dark brown with reddish undertones. He keeps a short beard going silver at the chin, and his hair — what remains of it — is cropped tight. His eyes are augmented: a Ferrogate Transit standard-issue retinal overlay that displays line status, passenger loads, and signal data, the irises permanently lit with a dim amber grid pattern that is just visible to anyone looking closely. He wears his uniform with the collar open one button past regulation and has for eleven years without consequence. He has a cat tail — a geneware addition he got in his thirties on a dare from his youngest kid and kept because he finds the autonomic movements diagnostic: when the tail is still, he is calm; when it lashes, he is not.\n\nNikhil Rahman has operated the same subsurface line for sixteen years. He knows every vibration and groan of the tunnel, every station's ELF personality — Deepwell's resident ELF is old and cantankerous and he has been leaving it audio recordings of football matches as offerings for a decade, and the signal has never failed him once. He is not a man of great ambition or dramatic action. He is a man who does his job with precision and has turned showing up reliably into a form of personal philosophy. He is also, beneath the exhausted affability, quietly furious about what Ferrogate Transit has been doing to its operator compensation and maintenance budgets, and he has been attending union meetings for two years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -174,7 +174,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lives in Copperhead; operates the Deepwell Station to Kessler Interchange subsurface line",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,35 +197,15 @@
     "Ashford Signal",
     "Copperhead",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "WELLSPRING",
     "Iron Bend",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "WELLSPRING",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Iron",
-    "Alper Holmberg-Dembele",
-    "Aïssé Dragomirescu-Faalelei",
-    "Dae-jung Seo",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Switchback",
-    "The Fathom Line",
-    "The Signal",
-    "The Third Rail",
-    "Yannick Tofauti-Szarvásy"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Iron"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant Pacific Islander ancestry, complemented by East Asian, Central Asian, and minor Hispanic/Latin American heritage. This combination produces warm deep brown skin with subtle golden undertones, facial structure reflecting the African and Pacific Islander ancestry mix, and the resilient physicality characteristic of such mixed heritage.",
+    "heritage": "Complex Pan-Asian diaspora blend with South Asian plurality (48%) anchoring warm medium-brown skin tones, supplemented by East Asian (15%), Southeast Asian (14%), Indigenous American (11%), and Northern European (10%) ancestry. This genetic mixture produces a distinctive facial structure: moderate bone breadth from South Asian heritage, subtle epicanthic eye variation from East Asian and Southeast Asian components, and the underlying warmth that comes from Indigenous American ancestry mixing with Northern European paleness. The result is an individual whose features reflect the specific gravity of the Great Lakes Metropolitan Zone's Ubiquitous Diaspora—no single continental identity dominates, but rather creates a harmonious mid-range warm tone and balanced facial proportion.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Thick-set, heavy through the torso and shoulders with a solid, unmovable quality. Settled into middle age with the kind of weight that comes from years of sedentary operator work and shift-meal irregularity rather than lack of strength.",
@@ -233,25 +213,72 @@
     "hair_style": "Cropped tight to the scalp, military-neat but unmaintained, giving an impression of pragmatism rather than care",
     "hair_length": "Short",
     "eye_color": "Warm brown with persistent amber grid overlay visible in dim light; retinal augmentation creates a faint luminescent pattern across the iris",
-    "skin_tone": "Warm deep brown with golden undertones, even complexion across the face and visible neck/chest, reflecting the blended Sub-Saharan African and Pacific Islander ancestry",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth, with the grooved appearance of someone who has worn the same tired expression for nearly a decade. Skin shows the pallor of subsurface work — minimal natural light exposure. Facial structure with broad features and subtle epicanthic variation reflecting the Pacific Islander and East Asian ancestry components. Short salt-and-pepper beard kept regulation-length but slightly unkempt at the edges.",
+    "skin_tone": "Warm medium-brown with subtle golden undertones and traces of peachy warmth from Northern European ancestry mixing with the deeper tones of South Asian, East Asian, and Southeast Asian heritage. Even complexion across face and visible neck/chest.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth, with the grooved appearance of someone who has worn the same tired expression for nearly a decade. Skin shows the pallor of subsurface work—minimal natural light exposure—creating a matte finish over the underlying warm brown tone. Facial structure features moderately broad bone structure from South Asian heritage, softened by Southeast Asian influences and refined by East Asian components, with subtle epicanthic variation at the eye corners. Short salt-and-pepper beard kept regulation-length but slightly unkempt at the edges.",
     "distinguishing_marks": [
       "Faint surgical scar along the right temple where the retinal overlay was installed, barely visible beneath cropped hair",
       "Black cat tail extending from base of spine, approximately 60cm long, with natural fur texture and autonomous articulation"
     ],
     "visible_augmentations": "Ferrogate-standard retinal display overlay with persistent amber grid pattern visible in both eyes; autonomous black cat tail with realistic fur and independent movement (lashes when agitated, still when calm)",
-    "posture_movement": "Slight forward slouch from years in an operator's booth; moves with deliberate, economical gestures. Stands with weight favoring one foot, creating a casual lean. Cat tail articulates independently — still when focused or calm, quick lashing movements when frustrated or processing information. Overall carriage suggests contained weariness rather than defeat."
+    "posture_movement": "Slight forward slouch from years in an operator's booth; moves with deliberate, economical gestures. Stands with weight favoring one foot, creating a casual lean. Cat tail articulates independently—still when focused or calm, quick lashing movements when frustrated or processing information. Overall carriage suggests contained weariness rather than defeat."
   },
-  "image_prompt": "Olumide Sow, 178cm tall operator in gray-blue Ferrogate Transit regulation jumpsuit with reflective striping, collar button deliberately undone. Deep warm brown skin with golden undertones, deeply lined face showing subsurface pallor, short dark brown hair graying at temples, cropped military-neat. Faint surgical scar on right temple. Amber grid overlay visible in warm brown eyes with retinal augmentation. Regulation-length salt-and-pepper beard, slightly unkempt. Black cat tail with natural fur extending from base of spine, currently articulated in calm position. Thick-set build, heavy through torso and shoulders, substantial middle-aged frame. Stands with slight forward slouch and weight favoring one foot. Practical subsurface work boots. Worn but clean uniform. Cyberpunk 2226 Great Lakes Metropolitan Zone, dim subsurface facility lighting casting amber tones across augmented eyes, tired but focused expression, contained weariness in posture. --ar 2:3 --v 6",
+  "image_prompt": "Nikhil Rahman, 178cm tall, solid thick-set operator in his late 40s, warm medium-brown skin with golden undertones blending South Asian, East Asian, Southeast Asian, and Indigenous American heritage. Dark brown hair graying at temples, cropped military-short. Deep lines etched around eyes and mouth from years of fatigue, subtle epicanthic eye variation, moderately broad facial structure, short unkempt salt-and-pepper beard. Warm brown eyes with faint amber grid overlay visible from retinal augmentation visible in the dim light. Black cat tail with natural fur texture extending from base of spine, twitching lazily. Slight forward slouch, wearing operator-standard dark tech wear, standing in moody subsurface facility lighting with cool blue-green ambiance. GLMZ, worn down but competent, tired acceptance in expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 53.1,
-    "Pacific Islander": 25.1,
-    "East Asian": 12.9,
-    "Central Asian": 6.8,
-    "Hispanic/Latin American": 2.1
+    "South Asian": 48.1,
+    "East Asian": 15.1,
+    "Southeast Asian": 14.5,
+    "Indigenous American": 11.6,
+    "Northern European": 10.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 29.7
+      },
+      "Nepali": {
+        "Nepali": 16.2
+      },
+      "Indian": {
+        "Tamil": 1.7,
+        "Gujarati": 0.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 15.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 14.5
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 5.5
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 2.8
+      },
+      "Mesoamerican": {
+        "Maya": 3.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 3.6
+      },
+      "British Isles": {
+        "Scottish": 2.6,
+        "Irish": 0.4
+      },
+      "Germanic": {
+        "Austrian": 4.1
+      }
+    }
+  }
 }

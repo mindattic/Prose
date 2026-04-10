@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f27fc38bfade1e97ba49b3",
   "type": "character",
-  "name": "Reed Madrigal-Vasquez-Alfarsi",
+  "name": "Reed Dlamini-Touré",
   "aliases": [
     "Undertow",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
-  "description": "Tenzin Vargas-Baffour is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Tenzin Vargas-Baffour describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Reed Dlamini-Touré is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Reed Dlamini-Touré describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -263,7 +263,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,40 +282,17 @@
   ],
   "related_entities": [
     "Geartown",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Axonal Stretch Resonance Lance",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Doru Fofana-Câmpeanu",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Yusra Ntambwe-Cakić",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European, Middle Eastern, and Hispanic/Latin American blend — fair to medium olive skin with warm undertones, sharp Mediterranean-influenced bone structure mixed with Northern European fair complexion potential. The genetic combination creates an ambiguous, cosmopolitan phenotype common in the Ubiquitous Diaspora.",
+    "heritage": "Sub-Saharan African (43.4%), Northern European (31.3%), and South Asian (25.3%) blend — deep warm brown skin with golden undertones from dominant African ancestry, refined by sharp South Asian cheekbones and Northern European facial openness. The genetic combination creates a striking, cosmopolitan phenotype: rich melanin base with natural luminosity, angular bone structure reflecting the South Asian component, and broad facial width from Northern European heritage. Authentically multi-continental with harmonious feature integration.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and economical, all fast-twitch muscle with minimal body fat. Shoulders slightly narrow but defined from functional training. No wasted mass — every kilogram serves a purpose.",
@@ -323,10 +300,10 @@
     "hair_style": "Pulled back in a tight braid, practical and unadorned. Occasionally worn loose, but always off her neck for work.",
     "hair_length": "Long (shoulder-blade length)",
     "eye_color": "Dark brown, alert and reactive",
-    "skin_tone": "Warm medium olive — balanced blend of Northern European fairness with Middle Eastern and Hispanic warmth, creating a sun-responsive complexion that tans easily. No single dominant undertone; instead a cosmopolitan mix that reads as neither fully fair nor deeply pigmented, but distinctly Mediterranean-adjacent.",
-    "complexion": "Sharp cheekbones and defined jawline with slight Mediterranean prominence. Minimal grooming beyond function — no makeup, no jewelry. Small stress lines around eyes from chronic sleep deficit. Skin weathered from sun exposure and close work, not scarred. Fine facial structure suggesting mixed heritage without reading as any single region.",
+    "skin_tone": "Deep warm brown with golden undertones — rich melanin foundation from Sub-Saharan African ancestry, naturally luminous and radiant year-round. Warmth is intrinsic to the complexion rather than sun-dependent, creating consistent, glowing depth.",
+    "complexion": "Prominent angular cheekbones and defined jawline blending South Asian sharpness with African facial structure fullness. High, wide cheekbones characteristic of sub-Saharan ancestry combined with the refined bone geometry of South Asian heritage. Open facial structure reflecting Northern European ancestry. Bone structure is striking and symmetrical. Minimal grooming beyond function — no makeup, no jewelry. Small stress lines around eyes from chronic sleep deficit. Skin weathered from sun exposure and close work. Strong multi-continental architecture.",
     "distinguishing_marks": [
-      "Pale surgical scar (4cm) at the base of her skull where the neural interface jack was installed — visible when hair is pulled back, slightly raised and discolored",
+      "Pale surgical scar (4cm) at the base of her skull where the neural interface jack was installed — visible when hair is pulled back, slightly raised and discolored, creates stark contrast against deep skin tone",
       "Thin white scar (2cm) along left temple, old and barely visible, angled toward her ear",
       "Burn scar on inside of right wrist (3cm diameter, light pink), old thermal contact mark from equipment failure"
     ],
@@ -334,14 +311,53 @@
     "posture_movement": "Moves with controlled efficiency, no wasted motion. Sits slightly forward, always aware of exits and sightlines. Hands are restless when stationary — fidgets with tools, cables, or interface hardware. When focused on a task, becomes almost unnervingly still. Walks fast, bounces slightly on the balls of her feet.",
     "clothing_style": "Tier 3-4 working professional. Armored tactical vest over a fitted black or grey undershirt — visibly modular with quick-release panels. Reinforced cargo pants with tool loops and data-port pockets. Steel-toed boots, worn but maintained. A lightweight overjacket with internal pockets for gear. No visible branding — everything is functional, replaceable, and built for field work. Minor telltale signs of poverty: clothes are well-cared-for but mended, layered for insulation rather than style."
   },
-  "image_prompt": "Reed Madrigal-Vasquez-Alfarsi, 168cm wiry runner with warm olive skin and Mediterranean-influenced bone structure, dark brown alert eyes, long black hair in tight practical braid. Visible chrome neural interface jack at base of skull with faint LED glow. Corded forearms and defined calves from geneware mods. Wearing modular armored tactical vest over fitted grey undershirt, reinforced cargo pants with tool loops, steel-toed work boots. Minor scars visible on temple and wrist. Sitting forward in alert posture in a Great Lakes Metropolitan Zone industrial workspace, dim neon-blue and amber lighting casting sharp shadows across her focused expression. Cyberpunk 2226, runner aesthetic, functional and worn equipment, no-nonsense presence. --ar 2:3 --v 6",
+  "image_prompt": "Reed Dlamini-Touré, a neo-noir field operative in 2226 GLMZ, portrait in neon-lit urban environment. Deep warm brown skin with golden luminosity, sharp South Asian cheekbones combined with broad African facial structure. Dark brown alert eyes. Long black braided hair pulled back, revealing pale surgical scar at base of skull from neural interface jack. Wiry 168cm frame with geneware-enhanced muscle definition visible in corded forearms. Wearing modular armored tactical vest over grey fitted shirt, reinforced cargo pants, steel-toed boots. Chrome neural port with faint LED at skull base visible. Stress lines around eyes, weathered skin, old surgical and burn scars. Restless hands near gear. Controlled, efficient posture. GLMZ 2200s aesthetic, cool blue and neon pink lighting, industrial background with data streams, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 39.5,
-    "Middle Eastern": 31.8,
-    "Hispanic/Latin American": 28.7
+    "Sub-Saharan African": 43.4,
+    "Northern European": 31.3,
+    "South Asian": 25.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.7,
+        "Gabonese": 13.1
+      },
+      "Southern African": {
+        "Zambian": 13.7,
+        "Botswanan": 8.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 5.9,
+        "Austrian": 3.1
+      },
+      "British Isles": {
+        "English": 7.1,
+        "Irish": 8.4
+      },
+      "Scandinavian": {
+        "Norwegian": 3.7,
+        "Finnish": 3.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 8,
+        "Sinhalese": 4.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.8
+      },
+      "Pakistani": {
+        "Sindhi": 2.1,
+        "Punjabi Pakistani": 4.5
+      }
+    }
+  }
 }

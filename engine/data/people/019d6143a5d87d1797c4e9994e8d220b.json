@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d87d1797c4e9994e8d220b",
   "type": "character",
-  "name": "Tarn Thorvaldsdóttir",
+  "name": "Jabari Nwosu",
   "aliases": [
     "Chal",
     "Steamhead"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Deepwell Station plaza, cart pitch #14 — also moves to Ironvein on Tuesdays and Grainfort market on weekends, near sub-level access near State and Van Buren",
-  "description": "Chaltu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nChaltu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
+  "description": "Jabari Nwosu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nJabari Nwosu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -178,7 +178,7 @@
     "Stoic": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station plaza",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,32 +240,16 @@
     "Ferrogate Transit",
     "Grainfort",
     "The Heritage Vault",
-    "Ironvein",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Adaeze Chen-Hawkins",
+    "Ironvein",
     "Nesting Doll",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
-    "Pellucid Systems",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Pirjo Asante-Ulukhan",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "SynapTech VocalShift Laryngeal Tone Modulator",
-    "Tafara Quiñones-Saarinen",
-    "The Ledger",
-    "The Peninsula",
-    "The Pure Hand"
+    "Haze Johansson",
+    "Pellucid Systems"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian-dominant ancestry (32.1%) blended with substantial Middle Eastern (30.0%) and Eastern European (23.4%) heritage, with South Asian (8.3%) and Sub-Saharan African (6.2%) components creating a complex multiethnic phenotype. Features reflect this diverse genetic mosaic across facial structure, skin undertones, and overall appearance.",
+    "heritage": "Sub-Saharan African-dominant ancestry (59.1%) with substantial Southeast Asian (21.9%) and Hispanic/Latin American (19.0%) heritage. Facial structure reflects this blend: prominent cheekbones and defined jaw from African heritage, eye shape and face contours influenced by Southeast Asian and Hispanic/Latin American ancestry. Skin undertones show warm golden and reddish notes from the three-way genetic combination.",
     "height_cm": 157,
     "weight_kg": 68,
     "build": "Compact and round-shouldered with a soft, dense frame — built for standing long hours without strain. Forearms and hands are muscular from years of prep work and lifting stock pots.",
@@ -273,8 +257,8 @@
     "hair_style": "Thick natural texture, typically pulled back under a food-safe wrap during service; on off-hours, worn loose in a voluminous cloud",
     "hair_length": "Long (shoulder-length or below when loose)",
     "eye_color": "Dark brown, warm and alert",
-    "skin_tone": "Warm medium-tan complexion with subtle golden and olive undertones, reflecting the blending of East Asian, Middle Eastern, South Asian, and African ancestry. The tone sits in the warm-medium range without strong warm or cool dominance.",
-    "complexion": "Clear and well-maintained despite irregular sleep; persistent expression of mild concentration, as though mentally running calculations. Facial structure shows East Asian influence in eye shape and cheekbone prominence, with Middle Eastern and Eastern European width through the face and jaw. Food-stained fingertips and calluses on palms from daily cart work.",
+    "skin_tone": "Warm deep brown complexion with golden and reddish undertones reflecting Sub-Saharan African, Southeast Asian, and Hispanic/Latin American genetic blending. Rich, luminous depth across the warm spectrum.",
+    "complexion": "Clear and well-maintained despite irregular sleep; persistent expression of mild concentration, as though mentally running calculations. Cheekbones prominent and angular from African heritage influence. Face contours show Southeast Asian and Hispanic/Latin American character in eye shape and overall geometry. Food-stained fingertips and calluses on palms from daily cart work.",
     "distinguishing_marks": [
       "Faint burn scar along inner left forearm from early broth-making accident, approximately 8cm long, pale against their skin tone",
       "Small tattoo on right wrist: stylized bowl and spoon in black ink, professionally done, approximately 3cm across"
@@ -283,16 +267,44 @@
     "posture_movement": "Slightly forward-leaning from years of cart work, shoulders rounded inward. Moves with economical precision during prep and service — no wasted motion. Off-duty posture is more relaxed but still contains underlying tension. Ears twitch and swivel frequently in response to ambient sound and emotional state. Hands fidget with small objects (spoon, coin, cloth) when stationary and thinking.",
     "clothing_style": "Tier 4 working-class practicality: food-service-rated synthetic apron over recycled-material base layers (grays, blacks, deep blues). Shoes are scuffed but functional. On off-hours, slightly better-maintained vintage clothing (thrifted from Tier 3 markets) — faded band shirts, worn jeans. Hair wrap is food-safe but colorful, often clashing intentionally with their mood. No jewelry except the wrist tattoo and occasional temporary jewelry swaps on days off."
   },
-  "image_prompt": "Tarn Thorvaldsdóttir, 157cm tall compact figure with warm medium-tan skin blending East Asian, Middle Eastern, Eastern European, South Asian and African heritage. East Asian-influenced eye shape and cheekbones, broader Middle Eastern-influenced face structure. Dark brown voluminous hair with slow color-shifting geneware cycling amber-copper-red. Velvet-dark brown fully expressive cat ears mounted at crown, actively rotating. Dark warm brown eyes, clear complexion. Food-service synthetic apron over black recycled layers, scuffed functional shoes. Forward-leaning posture from cart work, economical precise movements. Faint 8cm burn scar on inner left forearm, small black tattoo of bowl and spoon on right wrist. Hands fidgeting with a spoon. Cyberpunk 2226 Great Lakes Metropolitan Zone, Tier 4 food-service worker, slightly rounded shoulders, concentrated expression. Warm practical lighting, food-cart or kitchen setting, mood of focused efficiency with underlying tension. --ar 2:3 --v 6",
+  "image_prompt": "Jabari Nwosu, 157cm tall short-framed food cart operator with rich deep warm brown skin, prominent cheekbones and defined jaw, dark brown eyes, thick voluminous dark brown hair with color-shifting geneware (amber, copper, red shifting), functional pair of dark brown velvet cat ears on crown rotating with attention. Scuffed food-service synthetic apron over recycled gray-blue base layers, worn but functional shoes. Faint burn scar on left inner forearm, bowl-and-spoon tattoo on right wrist. Economical movements, forward-leaning posture from cart work, hands fidgeting. GLMZ Great Lakes Metropolitan Zone setting, Tier 4 working-class district, warm overhead lighting on food preparation area, neon glow from nearby storefronts, gritty urban environment, concentrated expression while prepping meals. Multiethnic Southeast Asian and Hispanic/Latin American features blended with Sub-Saharan African heritage. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.1,
-    "Middle Eastern": 30.0,
-    "Eastern European": 23.4,
-    "South Asian": 8.3,
-    "Sub-Saharan African": 6.2
+    "Sub-Saharan African": 59.1,
+    "Southeast Asian": 21.9,
+    "Hispanic/Latin American": 19
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 33.2,
+        "Congolese": 11.9
+      },
+      "Southern African": {
+        "South African": 6,
+        "Zimbabwean": 8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 18.6
+      },
+      "Thai": {
+        "Thai": 3.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 7.3,
+        "Ecuadorian": 4.7
+      },
+      "Central American": {
+        "Costa Rican": 3.1,
+        "Guatemalan": 3.9
+      }
+    }
+  }
 }

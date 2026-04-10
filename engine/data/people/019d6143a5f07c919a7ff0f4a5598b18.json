@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f07c919a7ff0f4a5598b18",
   "type": "character",
-  "name": "Echo Bergqvist",
+  "name": "Echo Bautista",
   "aliases": [
     "Dev",
     "Mama Dev"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
-  "description": "Devaki is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nDevaki runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to GLMZ — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
+  "description": "Echo Bautista is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nEcho Bautista runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to GLMZ — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,35 +229,24 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Iron Lotus",
     "Clearpath",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Pellucid Span",
     "The Gradient Compact",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
     "Tessera Corponation",
+    "Kessler Kinetics Vaultstreak R7 Runner Leg",
+    "Arcturus KS-7 'Nursery'",
     "The Pure Hand",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Davi Ousseini-Brătianu",
-    "Ilhan Sandstrom-Badu",
-    "Isadora Mwangi-Thorvaldsen",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Patient Zero",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "TESSERA PA-5 'Attendant'",
-    "The Canopy",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (73.1%) with significant Pacific Islander ancestry (21.1%), complemented by minor Hispanic/Latin American (3.5%) and Sub-Saharan African (2.3%) heritage. This creates a warm, sun-bronzed complexion with subtle warm undertones characteristic of tropical maritime populations, blended with warmer mid-tone depth.",
+    "heritage": "Hispanic/Latin American (56.5%) with substantial Sub-Saharan African ancestry (28.2%), complemented by Northern European heritage (15.3%). This creates a warm, rich complexion with golden-brown undertones—a sophisticated blend of Caribbean and Latin warmth with deeper melanin presence and subtle cool undertones from Northern European ancestry.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry with functional muscle from constant movement — crouching, lifting, reaching. No excess weight; built for efficiency rather than strength.",
@@ -265,8 +254,8 @@
     "hair_style": "Natural cloud texture, worn loose and unstyled; the green bioluminescent threads run through it organically",
     "hair_length": "Medium (shoulder-length when relaxed, often pulled back with whatever is handy — a crayon, a rubber band, a child's hair clip)",
     "eye_color": "Dark brown, warm and expressive",
-    "skin_tone": "Warm medium bronze with golden-honey undertones, reflecting Southeast Asian and Pacific Islander ancestry. Sun-kissed without appearing tanned—this is the baseline complexion of tropical heritage.",
-    "complexion": "Clear, lively complexion with a few paint stains perpetually visible around the cuticles and knuckles. Southeast Asian bone structure with defined cheekbones and angular features; warm, open face. Facial expressions mobile and quick — rarely still for long. No visible cosmetics; skin maintained with practical care rather than aesthetics.",
+    "skin_tone": "Warm golden-brown with rich undertones, reflecting the blend of Hispanic/Latin American and Sub-Saharan African heritage. Sun-kissed luminosity balanced with deeper melanin depth—this is the baseline complexion of Afro-Latino heritage.",
+    "complexion": "Clear, lively complexion with a few paint stains perpetually visible around the cuticles and knuckles. Strong facial bone structure with defined cheekbones and angular features reflecting mixed heritage; warm, open face with subtle depth. Facial expressions mobile and quick — rarely still for long. No visible cosmetics; skin maintained with practical care rather than aesthetics.",
     "distinguishing_marks": [
       "Small, faded chalk smudge on their left temple (semi-permanent from work)",
       "Callus on the base of their right ring finger from holding pencils and markers",
@@ -276,15 +265,45 @@
     "posture_movement": "Alert and kinetic. Rarely sits fully still; shoulders slightly forward, knees ready to bend. Moves with practiced efficiency — no wasted motion, but not tense. Hands gesture frequently when speaking. Eyes scan rooms habitually (checking for hazards, watching for children in distress). Default stance is slightly lower center of gravity, as if ready to crouch or react.",
     "clothing_style": "Tier 4 practical. Well-maintained but worn clothing chosen for durability and washability: reinforced pants (usually dark, many pockets), soft oversized t-shirts or loose button-ups in muted colors (often with faint permanent stains from paint/food/chalk). Comfortable shoes broken in from eight-hour days. A cardigan or lightweight jacket, usually unzipped. No jewelry except a faded fabric bracelet made by a child. Clothes show care but not vanity — repaired seams, re-hemmed cuffs. The green bioluminescent hair streaks are their single deliberate aesthetic statement."
   },
-  "image_prompt": "Echo Bergqvist, compact Southeast Asian-heritage figure (158cm), warm bronze complexion with golden undertones, deep black hair with soft green bioluminescent streaks glowing faintly. Alert, kinetic posture ready to crouch. Wearing muted oversized shirt and dark reinforced pants with paint stains visible on hands and wrists. Faded chalk smudge on left temple. Worn-in comfortable shoes. Faded child-made fabric bracelet. Scanning expression, hands mid-gesture. Cyberpunk 2226 Great Lakes setting, dim overhead lighting highlighting bioluminescent hair threads. Low center of gravity stance. Practical, well-maintained but visibly worn clothing. No chrome augmentations visible. Soft warm shadows, moody atmospheric lighting. --ar 2:3 --v 6",
+  "image_prompt": "Echo Bautista, compact Afro-Latino woman, 158cm, shoulder-length black hair with bioluminescent green streaks glowing softly, warm golden-brown skin tone with rich undertones, dark expressive brown eyes, defined angular cheekbones, alert kinetic posture ready to move. Paint stains on hands and wrist, chalk smudge on temple. Wearing worn dark reinforced pants with many pockets, oversized muted t-shirt with faint paint stains, unzipped cardigan, broken-in comfortable shoes. Faded child-made fabric bracelet. Low center of gravity stance, hands ready to gesture. GLMZ Great Lakes Metropolitan Zone, dim warehouse or community center lighting with shadows highlighting bioluminescent hair threads, practical and purposeful mood, no chrome visible, deliberately low-profile augmentation aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 73.1,
-    "Pacific Islander": 21.1,
-    "Hispanic/Latin American": 3.5,
-    "Sub-Saharan African": 2.3
+    "Hispanic/Latin American": 56.5,
+    "Sub-Saharan African": 28.2,
+    "Northern European": 15.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 25.9
+      },
+      "Caribbean": {
+        "Puerto Rican": 23.4,
+        "Cuban": 7.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 7.5
+      },
+      "Central African": {
+        "Congolese": 20.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 7.5
+      },
+      "Germanic": {
+        "German": 6.5
+      },
+      "British Isles": {
+        "Welsh": 0.4,
+        "Irish": 0.9
+      }
+    }
+  }
 }

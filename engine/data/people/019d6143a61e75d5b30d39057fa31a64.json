@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61e75d5b30d39057fa31a64",
   "type": "character",
-  "name": "Orion Hinojosa-Popescu",
+  "name": "Orion Sabbagh-Migizi",
   "aliases": [
     "Gullie",
     "The Mechanic"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, Ironvein sub-block, bay unit 7, near Milwaukee and Damen",
-  "description": "Gulliver is lean and grease-darkened in a way that feels permanent, as though the machine oil has become part of his pigmentation — his hands are always a shade darker than his forearms no matter how much he scrubs. He has his mother's Ghanaian cheekbones and his father's Kazakh jaw, which together give him a face that people find hard to stop looking at without knowing quite why. He keeps his hair close-cropped except for two finger-wide stripes he has dyed iridescent copper, a remnant of a decade-old fashion he never bothered to give up. He has a prehensile tail modification — mottled gray-brown with a slightly prehensile curl — that he got at nineteen and has used as a third utility limb ever since: it holds tools, hooks parts bins, and occasionally taps impatiently on the floor when he is thinking.\n\nGulliver is constitutionally incapable of leaving a broken thing alone. This is a professional gift and a personal curse. His bay is organized with the obsessive logic of a man who has lost a critical component one too many times and never forgot it. He is not unfriendly but he is focused, and conversations with him often drift sideways into the mechanics of whatever he happens to be working on. He keeps a small ELF shrine mounted above his main workbench — a figure he calls Grease Aunt, fashioned from fused capacitors and old gasket rings — and consults it before any job that involves a vehicle with a history of instability.",
+  "description": "Orion Sabbagh-Migizi is lean and grease-darkened in a way that feels permanent, as though the machine oil has become part of his pigmentation — his hands are always a shade darker than his forearms no matter how much he scrubs. He has his mother's Ghanaian cheekbones and his father's Kazakh jaw, which together give him a face that people find hard to stop looking at without knowing quite why. He keeps his hair close-cropped except for two finger-wide stripes he has dyed iridescent copper, a remnant of a decade-old fashion he never bothered to give up. He has a prehensile tail modification — mottled gray-brown with a slightly prehensile curl — that he got at nineteen and has used as a third utility limb ever since: it holds tools, hooks parts bins, and occasionally taps impatiently on the floor when he is thinking.\n\nOrion Sabbagh-Migizi is constitutionally incapable of leaving a broken thing alone. This is a professional gift and a personal curse. His bay is organized with the obsessive logic of a man who has lost a critical component one too many times and never forgot it. He is not unfriendly but he is focused, and conversations with him often drift sideways into the mechanics of whatever he happens to be working on. He keeps a small ELF shrine mounted above his main workbench — a figure he calls Grease Aunt, fashioned from fused capacitors and old gasket rings — and consults it before any job that involves a vehicle with a history of instability.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -174,7 +174,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,32 +224,20 @@
   "related_entities": [
     "Ferrogate Transit",
     "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Pressure Drop",
     "Geartown",
     "Ironvein",
     "Crucible WR-9 'Gulliver'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Pure Hand",
-    "Copper",
-    "The Wire Taps",
-    "The Milwaukee Core",
-    "Altan Tanaka-Frimpong",
     "Arcturus KS-7 'Nursery'",
-    "Arcturus PX-1 'Phantom'",
-    "Devraj Solano-Yildirim",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Tafara Quiñones-Saarinen",
-    "The Crawl",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Vespid Dynamics Reconnaissance Beetle RB-2",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'"
+    "Copper",
+    "The Pure Hand",
+    "Drift",
+    "The Wire Taps"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (32.5%) / Hispanic/Latin American (26.9%) / Sub-Saharan African (25.6%) / Middle Eastern (15.0%) - a complex diaspora blend creating warm, nuanced skin tones with layered undertones. Strong bone structure from Eastern European ancestry mixed with the facial geometry of his African and Hispanic heritage, creating distinctive cheekbone prominence and jaw definition. Middle Eastern features contribute to his alert, intense gaze.",
+    "heritage": "Indigenous American (40%) / Sub-Saharan African (24.5%) / Middle Eastern (24%) / Northern European (11.5%) - a complex diaspora blend creating warm, nuanced skin tones with layered undertones. Strong angular bone structure from Indigenous American ancestry with prominent cheekbones and defined jaw from African heritage. Middle Eastern features contribute to his alert, intense gaze and facial angularity. Northern European ancestry adds subtle cooler undertones and refined definition to his overall appearance.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and muscular with ropey forearm definition from two decades of wrench work; chest and shoulders have the kind of practical strength that comes from lifting and maneuvering engine blocks, not gym routines. His core is tight—mechanics spend half their lives reaching into tight spaces.",
@@ -257,8 +245,8 @@
     "hair_style": "Close-cropped fade on sides and back; stripes visible from multiple angles; minimal styling, maximum practicality",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and focused",
-    "skin_tone": "Warm medium brown with complex undertones—golden warmth from African ancestry, subtle olive-red undertones from Middle Eastern heritage, and cooler Eastern European influence creating a rich, layered complexion. Permanently darkened by embedded machine oil and grease that resists complete removal, particularly on hands and forearms.",
-    "complexion": "Weathered but not aged; his face displays the strong cheekbone and jaw definition characteristic of his mixed heritage—Eastern European bone structure sharpened by African and Hispanic features, with subtle Middle Eastern intensity in his expression. His hands and forearms are visibly darker than the rest of his body from permanent grease staining. Small burn scar on left cheek from a hydraulic coupling failure eight years ago.",
+    "skin_tone": "Warm medium-deep brown with complex undertones—rich warmth from Sub-Saharan African ancestry, golden highlights from Indigenous American heritage, subtle olive-clay undertones from Middle Eastern lineage, and cooler Northern European influence creating a richly layered complexion. Permanently darkened by embedded machine oil and grease that resists complete removal, particularly on hands and forearms.",
+    "complexion": "Weathered but not aged; his face displays strong angular cheekbones and defined jaw characteristic of his mixed heritage—prominent bone structure from Indigenous American and African ancestry, sharpened by Middle Eastern features creating intense, focused expression. His hands and forearms are visibly darker than the rest of his body from permanent grease staining. Small burn scar on left cheek from a hydraulic coupling failure eight years ago.",
     "distinguishing_marks": [
       "Burn scar on left cheekbone, pale and slightly puckered, approximately 2cm diameter, from hydraulic coupling incident",
       "Intricate machine-part tattoo on right shoulder blade: an exploded diagram of a Ferrogate Mark VII differential, rendered in black ink and copper highlights",
@@ -269,15 +257,57 @@
     "posture_movement": "Moves with economical precision; no wasted motion. Often half-bent or crouched even when standing still, as though perpetually preparing to slide under a vehicle. His tail curls idly around tool racks or his own leg when he's concentrating, taps a slow rhythm on concrete when he's problem-solving. Hands are never completely still—fidgeting with tools, checking fasteners, or gesturing explanations. Makes direct eye contact when discussing mechanical problems but can seem distant in social small talk.",
     "clothing_style": "Tier 3 working-class pragmatism. Uniform consists of heavy canvas work pants (Ferrogate Transit gray-blue) with reinforced knees and multiple cargo pockets, worn soft and stained with hydraulic fluid and grease. Sleeveless or short-sleeved undershirt (usually black or charcoal to hide stains) underneath a canvas work vest or lightweight jacket when weather demands. Steel-toed boots, scuffed and re-heeled multiple times. Leather finger gloves (left hand, custom-fitted around tool-link port forearm) for diagnostic work. No jewelry except a thin brass bracelet on his right wrist—a gift from his mother, dented and worn. His personal style is minimal but intentional: the copper hair stripes are his one deliberate aesthetic choice, a holdover from his twenties that he's never bothered to abandon. Everything else is function."
   },
-  "image_prompt": "Orion Hinojosa-Popescu, 178cm lean-muscular mechanic with warm medium-brown complexion mixing Eastern European, Hispanic, African, and Middle Eastern heritage features. Strong defined cheekbones and jaw, dark alert eyes with subtle intensity. Black hair with iridescent copper stripes from temples to crown, close-cropped fade sides. Small pale burn scar on left cheekbone. Sleeveless black undershirt under canvas work vest, Ferrogate gray-blue work pants, scuffed steel-toed boots, leather left-hand work gloves. Prehensile mottled gray-brown tail (1.2m) curled around his leg. Thin brass bracelet on right wrist. Grease stains on hands and forearms. Standing half-crouched in a neon-lit cyberpunk 2226 vehicle workshop, hands fidgeting with diagnostic tools, subdermal forearm tech ports visible as faint scars. Industrial lighting casting warm amber on his rich skin tone, neon blues and magentas reflecting off machinery behind him. Focused, economical posture, world-weary but alert expression. Cyberpunk 2200s noir aesthetic, gritty mechanical environment. --ar 2:3 --v 6",
+  "image_prompt": "Orion Sabbagh-Migizi, a 178cm lean-muscular mechanic in GLMZ, warm medium-deep brown complexion with rich layered undertones—Indigenous American, Sub-Saharan African, Middle Eastern and Northern European ancestry visible in strong angular cheekbones and intense dark brown eyes. Black hair close-cropped with iridescent copper temple-to-crown stripes. Faint burn scar left cheekbone. Permanently grease-stained hands and forearms. Muscular prehensile tail, mottled gray-brown, emerging from spine, curling around tool racks. Wearing heavy canvas work vest over charcoal undershirt, Ferrogate gray-blue work pants with reinforced knees, scuffed steel-toed boots. Leather work gloves on left hand. Thin worn brass bracelet right wrist. Crouched half-bent posture in industrial garage setting with hydraulic lifts and engine blocks, hands fidgeting with tools. Direct focused expression. Neon workshop lighting casting cyan and amber shadows on metal and concrete. Neo-noir gritty aesthetic, practical working-class functional style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 32.5,
-    "Hispanic/Latin American": 26.9,
-    "Sub-Saharan African": 25.6,
-    "Middle Eastern": 15.0
+    "Indigenous American": 40,
+    "Sub-Saharan African": 24.5,
+    "Middle Eastern": 24,
+    "Northern European": 11.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 27.3
+      },
+      "Mesoamerican": {
+        "Maya": 12.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 7.6,
+        "Malian": 6.1
+      },
+      "Central African": {
+        "Congolese": 4.6
+      },
+      "East African": {
+        "Somali": 3.8,
+        "Tanzanian": 2.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 3.4,
+        "Tajik Persian": 19.5
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.3,
+        "Syrian": 0.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 7.7,
+        "Scottish": 0.8
+      },
+      "Germanic": {
+        "Dutch": 3
+      }
+    }
+  }
 }

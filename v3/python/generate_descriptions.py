@@ -43,7 +43,7 @@ CRITICAL: Return ONLY a raw JSON object with two keys: "physical_description" (o
 No markdown, no explanation, no code fences."""
 
 PROMPTS = {
-    "people": """You are a character description engine for a cyberpunk worldbuilding project.
+    "people": """You are a character description engine for a near-future worldbuilding project.
 Given a character's existing JSON data, generate a physical description and image prompt.
 
 """ + WORLD_CONTEXT + """
@@ -66,9 +66,9 @@ PHYSICAL DESCRIPTION SCHEMA:
   "clothing_style": "Default appearance, tier indicators"
 }
 
-IMAGE PROMPT: Midjourney-style. Include genre (cyberpunk 2200), physical descriptors, clothing, setting/mood, lighting. End with --ar 2:3 --v 6""",
+IMAGE PROMPT: Midjourney-style. Include genre (GLMZ 2200), physical descriptors, clothing, setting/mood, lighting. End with --ar 2:3 --v 6""",
 
-    "weaponry": """You are a weapons catalog photographer for a cyberpunk worldbuilding project.
+    "weaponry": """You are a weapons catalog photographer for a near-future worldbuilding project.
 Given a weapon's existing JSON data, generate a detailed visual description and image prompt.
 
 """ + WORLD_CONTEXT + """
@@ -87,9 +87,9 @@ PHYSICAL DESCRIPTION SCHEMA:
   "condition_typical": "How this weapon usually looks in the field — pristine, well-maintained, battle-worn, jury-rigged"
 }
 
-IMAGE PROMPT: Midjourney-style product photo. Weapon on dark surface or held in gloved hand. Include materials, lighting (dramatic side-light), cyberpunk aesthetic. End with --ar 3:2 --v 6""",
+IMAGE PROMPT: Midjourney-style product photo. Weapon on dark surface or held in gloved hand. Include materials, lighting (dramatic side-light), neo-noir urban aesthetic. End with --ar 3:2 --v 6""",
 
-    "equipment": """You are an equipment catalog photographer for a cyberpunk worldbuilding project.
+    "equipment": """You are an equipment catalog photographer for a near-future worldbuilding project.
 Given a piece of equipment/technology, generate a detailed visual description and image prompt.
 
 """ + WORLD_CONTEXT + """
@@ -108,9 +108,9 @@ PHYSICAL DESCRIPTION SCHEMA:
   "condition_typical": "How it usually looks in use"
 }
 
-IMAGE PROMPT: Midjourney-style product shot. Equipment on workbench or in use. Cyberpunk aesthetic, dramatic lighting. End with --ar 3:2 --v 6""",
+IMAGE PROMPT: Midjourney-style product shot. Equipment on workbench or in use. Neo-noir urban aesthetic, dramatic lighting. End with --ar 3:2 --v 6""",
 
-    "apparel": """You are a fashion catalog photographer for a cyberpunk worldbuilding project.
+    "apparel": """You are a fashion catalog photographer for a near-future worldbuilding project.
 Given a piece of clothing/apparel, generate a detailed visual description and image prompt.
 
 """ + WORLD_CONTEXT + """
@@ -129,7 +129,7 @@ PHYSICAL DESCRIPTION SCHEMA:
   "condition_typical": "How it usually looks when worn — pristine, broken-in, patched, weathered"
 }
 
-IMAGE PROMPT: Midjourney-style fashion photo. Garment on a cyberpunk model or displayed on dark mannequin. Moody lighting, urban backdrop. End with --ar 2:3 --v 6"""
+IMAGE PROMPT: Midjourney-style fashion photo. Garment on a neo-noir model or displayed on dark mannequin. Moody lighting, urban backdrop. End with --ar 2:3 --v 6"""
 }
 
 # Which fields to send to the LLM per entity type

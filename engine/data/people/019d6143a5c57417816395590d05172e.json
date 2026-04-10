@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c57417816395590d05172e",
   "type": "character",
-  "name": "Kit Espinoza",
+  "name": "Kit Raghavan",
   "aliases": [
     "Bless",
     "The Razor"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Burnished Market, Stall 44 — a converted cargo container with a fold-down awning and two hydraulic chairs, near North Ave and Damen",
-  "description": "Blessing is compact and precise in the way of someone who trained their body to be a tool — every movement economical, nothing wasted. They have warm beige skin with faint Polynesian wave tattoos climbing their neck and right arm, inherited from a great-grandmother they never met but whose designs they researched obsessively and reproduced as faithfully as they could. Their hair changes color by choice — geneware follicle pigmentation that they recalibrate every few weeks, currently a deep teal shading to copper at the tips. They wear a barber's apron with twelve pockets and know exactly what is in each one.\n\nAt twenty-seven they already have a three-month waiting list for their sculpted wig work — elaborate constructions of synthetic fiber, reclaimed human hair, and occasionally live-root geneware strands that shift color in response to mood. They treat haircutting as sculpture and gossip as a natural byproduct of intimacy, which means they know things about the Burnished Market's social dynamics that most people would be surprised to learn they know. They are sweet-tempered and ferocious in equal measure and the ratio can shift without visible warning.",
+  "description": "Kit Raghavan is compact and precise in the way of someone who trained their body to be a tool — every movement economical, nothing wasted. They have warm beige skin with faint Polynesian wave tattoos climbing their neck and right arm, inherited from a great-grandmother they never met but whose designs they researched obsessively and reproduced as faithfully as they could. Their hair changes color by choice — geneware follicle pigmentation that they recalibrate every few weeks, currently a deep teal shading to copper at the tips. They wear a barber's apron with twelve pockets and know exactly what is in each one.\n\nAt twenty-seven they already have a three-month waiting list for their sculpted wig work — elaborate constructions of synthetic fiber, reclaimed human hair, and occasionally live-root geneware strands that shift color in response to mood. They treat haircutting as sculpture and gossip as a natural byproduct of intimacy, which means they know things about the Burnished Market's social dynamics that most people would be surprised to learn they know. They are sweet-tempered and ferocious in equal measure and the ratio can shift without visible warning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,25 +253,12 @@
     "Grandmother",
     "The Gradient Compact",
     "Copper",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Ambassador Silk",
-    "Arcturus MX-1 'Cerberus'",
-    "Crucible Industries Cerberus-357 'Hellhound'",
-    "Ezio Kaboré-Malhotra",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Bazaar",
-    "The Pure Hand",
-    "Vesna Čolić-Strand"
+    "Cargo Tacos",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed diaspora ancestry: 40% Hispanic/Latin American, 30% Southeast Asian, 13% East Asian, 10% Eastern European, 6% Sub-Saharan African. Complexion reflects this blend—warm golden-brown with subtle undertones from Southeast Asian and Latin American heritage, enhanced by traces of Eastern European and African ancestry creating depth and richness in skin tone.",
+    "heritage": "Mixed diaspora ancestry: 39.8% South Asian, 25.4% Southeast Asian, 23.3% Eastern European, 11.5% Hispanic/Latin American. A dynamic blend where South Asian warmth and structure meet Southeast Asian delicacy, cooled and refined by Eastern European heritage, with Latin American warmth threaded throughout—creating a complexion of rare chromatic depth.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and economical, lean muscle without bulk — shoulders squared from years of precise overhead work, forearms corded from scissor and needle work, minimal body fat",
@@ -279,27 +266,66 @@
     "hair_style": "Asymmetrical undercut, longer on top with textured layers, precisely maintained",
     "hair_length": "Medium (longer at crown, tapered at sides)",
     "eye_color": "Dark brown with subtle chromatic aberration around the pupil (magnification implant signature)",
-    "skin_tone": "Warm golden-brown with Southeast Asian and Latin American undertones, enriched by Eastern European and Sub-Saharan African heritage—a luminous, multitonal complexion that shifts slightly with light",
-    "complexion": "Clear, well-maintained, no visible scarring. The bone structure shows balanced features reflecting mixed ancestry: moderate cheekbones, straight nose with slight bridge definition, fuller lips with subtle natural color. Hands show minor precision marks from decades of scissor and needle work — barely visible calluses on thumb and first two fingers of right hand",
+    "skin_tone": "Luminous warm gold-brown: South Asian depth infused with Southeast Asian luminosity, Eastern European cool undertones creating subtle translucency at the cheekbones, Latin American warmth glowing through—a multitonal canvas that shifts with ambient light and angle",
+    "complexion": "Clear, well-maintained. Bone structure eloquently mixed: pronounced Southeast Asian cheekbone softness with South Asian definition, balanced straight nose with subtle bridge prominence, fuller lips with natural warm tone characteristic of South/Southeast Asian heritage. Eyes set with Eastern European depth. Hands show minor precision marks from decades of scissor and needle work—barely visible calluses on thumb and first two fingers of right hand. Small burn scar on left palm from soldering iron incident, approximately 1.5cm diameter, faded to pale brown.",
     "distinguishing_marks": [
       "Faint Polynesian wave tattoos climbing the right side of neck from collarbone to jaw in black ink with subtle iridescent overlay",
       "Matching wave pattern continues down the right arm from shoulder to wrist in the same style, approximately 15cm width at shoulder tapering to 8cm at wrist",
-      "Small burn scar on left palm from a soldering iron incident during early wig prototype work, approximately 1.5cm diameter, faded to pale brown"
+      "Small burn scar on left palm from soldering iron incident during early wig prototype work, approximately 1.5cm diameter, faded to pale brown"
     ],
     "visible_augmentations": "Left eye shows faint chromatic shimmer at certain angles — the magnification implant is subcutaneous but produces a noticeable optical signature when focused. Otherwise no visible chrome or external augmentation.",
-    "posture_movement": "Upright and alert, economical movement with no wasted gesture. Hands are almost always in motion or at rest in neutral position. Eyes track details obsessively. When focused on work, enters a state of visible concentration that makes them seem momentarily unreachable. In social settings, animated and present but with a quality of simultaneous observation.",
-    "clothing_style": "Custom barber's apron in waxed canvas (currently forest green with copper rivets) worn over fitted black or charcoal base layers. Sensible slip-on shoes for standing work (currently reinforced canvas sneakers). Minimal jewelry except for a titanium ring on the left ring finger engraved with wave patterns. Tier 3-4 working-class aesthetic: practical, well-maintained, no corporate branding but not poverty-coded. Occasionally wears a lightweight headwrap in complementary colors when not actively cutting — part functional (hair control), part aesthetic statement."
+    "posture_movement": "Upright and alert, economical movement with no wasted gesture. Hands are almost always in motion or at rest in neutral position. Eyes track details obsessively. When focused on work, enters a state of visible concentration that makes them momentarily unreachable. In social settings, animated and present but with simultaneous observation.",
+    "clothing_style": "Custom barber's apron in waxed canvas (currently forest green with copper rivets) worn over fitted black or charcoal base layers. Sensible slip-on shoes for standing work (currently reinforced canvas sneakers). Minimal jewelry except for titanium ring on left ring finger engraved with wave patterns. Tier 3-4 working-class aesthetic: practical, well-maintained, no corporate branding. Occasionally wears lightweight headwrap in complementary colors when not actively cutting — part functional, part aesthetic."
   },
-  "image_prompt": "Kit Espinoza, 163cm tall lean barber with golden-brown skin reflecting Southeast Asian, Latin American, Eastern European and Sub-Saharan African heritage. Sharp facial features with dark eyes showing subtle cybernetic shimmer from magnification implant. Deep teal hair fading to copper tips in asymmetrical undercut, longer textured layers on top. Right side of neck and arm covered in black iridescent wave tattoos. Wearing forest green waxed canvas barber's apron with copper rivets over fitted black base layers, reinforced canvas sneakers. Titanium wave-patterned ring on left hand. Alert upright posture, hands poised with professional precision. Standing in a neon-lit cyberpunk barbershop, warm amber and blue lighting reflecting off chrome surfaces and curved mirrors. Atmospheric 2226 GLMZ aesthetic, focused and observant expression, moment of concentration captured mid-cut. Cyberpunk 2200s working-class professional. --ar 2:3 --v 6",
+  "image_prompt": "Kit Raghavan, a mixed-heritage barber with luminous warm gold-brown skin reflecting South Asian, Southeast Asian, Eastern European, and Latin American ancestry. 163cm tall, compact lean build with corded forearms. Dark teal hair with copper tips in an asymmetrical undercut, longer on top. Dark brown eyes with faint magnification implant shimmer. Right side of neck and arm feature delicate black iridescent Polynesian wave tattoos. Wearing a forest green waxed canvas barber's apron with copper rivets over charcoal base layers, reinforced canvas sneakers. Titanium wave-pattern ring on left ring finger. Alert upright posture, hands positioned naturally. Minor precision calluses visible, small faded burn scar on left palm. Clear complexion showing balanced mixed-heritage features: soft Southeast Asian cheekbones with South Asian definition, straight nose, fuller lips. Set in a small barber shop with warm neon-blue overhead lighting casting subtle shadows, ambient glow from shop windows, GLMZ setting. Focused, observant expression. Cinematic lighting emphasizing the subtle multitonal shifts in skin tone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 40.4,
-    "Southeast Asian": 30.0,
-    "East Asian": 13.4,
-    "Eastern European": 9.8,
-    "Sub-Saharan African": 6.4
+    "South Asian": 39.8,
+    "Southeast Asian": 25.4,
+    "Eastern European": 23.3,
+    "Hispanic/Latin American": 11.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 13
+      },
+      "Nepali": {
+        "Nepali": 26.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 13.2,
+        "Javanese": 5.9
+      },
+      "Thai": {
+        "Thai": 1.9
+      },
+      "Cambodian": {
+        "Khmer": 4.4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 13.2,
+        "Russian": 10.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 0.7,
+        "Brazilian": 1.1
+      },
+      "Mexican": {
+        "Mexican": 6.8
+      },
+      "Caribbean": {
+        "Cuban": 2.9
+      }
+    }
+  }
 }

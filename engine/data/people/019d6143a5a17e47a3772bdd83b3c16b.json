@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a17e47a3772bdd83b3c16b",
   "type": "character",
-  "name": "Takoda Ixchel",
+  "name": "Indigo Chanthavong",
   "aliases": [
     "Ada",
     "The Ironing Lady"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, corner of Brewer's Spine, near Halsted and Chicago Ave",
-  "description": "Adaeze is a wide-shouldered woman with deep brown skin mapped by a lifetime of steam and chemical exposure — her forearms are permanently flushed pink at the wrists from the industrial solvents she's used for decades. Her hair is silver-white and she keeps it pinned under a cloth wrap she changes daily, each one a different pattern that regulars have learned to read like a mood ring. She has no geneware, considers it wasteful, but she did spring for a pressure-sensitive haptic overlay on her right fingertips years ago so she could feel thread tension without squinting. She wears bifocal AR lenses clipped to a beaded chain around her neck.\n\nAdaeze is the kind of woman who says very little but means everything she says. Her shop, called Semedo's Clean, has been in the same narrow slot between a noodle stand and a defunct print kiosk for twenty-two years. She does not advertise. She does not need to. She is the institutional memory of the Enclave — she has washed the funeral clothes of people whose grandchildren now bring her their work uniforms. Her silences are not unkind, but they are evaluative, and people who sit in her waiting chairs often find themselves confessing things they had not planned to.",
+  "description": "Indigo Chanthavong is a wide-shouldered woman with deep brown skin mapped by a lifetime of steam and chemical exposure — her forearms are permanently flushed pink at the wrists from the industrial solvents she's used for decades. Her hair is silver-white and she keeps it pinned under a cloth wrap she changes daily, each one a different pattern that regulars have learned to read like a mood ring. She has no geneware, considers it wasteful, but she did spring for a pressure-sensitive haptic overlay on her right fingertips years ago so she could feel thread tension without squinting. She wears bifocal AR lenses clipped to a beaded chain around her neck.\n\nIndigo Chanthavong is the kind of woman who says very little but means everything she says. Her shop, called Semedo's Clean, has been in the same narrow slot between a noodle stand and a defunct print kiosk for twenty-two years. She does not advertise. She does not need to. She is the institutional memory of the Enclave — she has washed the funeral clothes of people whose grandchildren now bring her their work uniforms. Her silences are not unkind, but they are evaluative, and people who sit in her waiting chairs often find themselves confessing things they had not planned to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -177,7 +177,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,36 +230,18 @@
     "Hamtramck Enclave",
     "Brewer's Spine",
     "Cinderblock Ai",
+    "Pressure Drop",
     "Tessera Corponation",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Silver",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Dragan Petersen-Bah",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Last Word",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Arrangement",
-    "The Bleach Boys",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Indigo",
+    "Silver",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Corner Slice",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (35.8%) with substantial Middle Eastern (22.6%) and Southeast Asian (17.3%) ancestry, complemented by Hispanic/Latin American (16.4%), Northern European (4.4%), and Sub-Saharan African (3.5%) heritage. This creates a striking phenotype blending Mesoamerican bone structure with Middle Eastern and Southeast Asian facial characteristics, warm brown skin with complex undertones.",
+    "heritage": "Predominantly Southeast Asian (62.5%) with substantial Middle Eastern (27.0%) ancestry, complemented by Sub-Saharan African (8.8%) and Central Asian (1.7%) heritage. This creates a striking phenotype blending Southeast Asian bone structure with Middle Eastern facial characteristics and warmth from Sub-Saharan African ancestry.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Wide-shouldered, sturdy frame with substantial muscle development in forearms and shoulders from decades of manual labor. Strong, functional build — not athletic, but work-hardened.",
@@ -267,29 +249,57 @@
     "hair_style": "Pinned up daily under rotating cloth wraps in various patterns",
     "hair_length": "Medium (shoulder-length when unbound, kept secured)",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones from Middle Eastern and Southeast Asian ancestry, deepened by chronic heat and solvent exposure creating a rich, weathered patina. Base tone suggests warm caramel-to-mahogany range with subtle golden highlights.",
-    "complexion": "Face shows fine lines and creases typical of 58 years and decades of heat exposure, with cheekbones suggesting Indigenous American structure softened by Southeast Asian and Middle Eastern features. Forearms permanently flushed pink at the wrists from repeated chemical contact. Hands calloused and marked with minor burns. Expression typically neutral but observant.",
+    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones, ranging from caramel to mahogany. The Southeast Asian base (62.5%) provides the foundation, enriched by Middle Eastern warmth (27%) and deepened by Sub-Saharan African undertones (8.8%). Chronic heat and solvent exposure creates a rich, weathered patina with subtle golden highlights.",
+    "complexion": "Face shows Southeast Asian bone structure — wider cheekbones and defined jaw — softened by Middle Eastern features including fuller lips and slightly broader nose bridge, with warmth from Sub-Saharan African heritage visible in full lip structure and cheek prominence. Fine lines and creases typical of 58 years and decades of heat exposure map across the face. Forearms permanently flushed pink at the wrists from repeated chemical contact. Hands calloused and marked with minor burns. Expression typically neutral but observant.",
     "distinguishing_marks": [
       "Chronic chemical burns and discoloration at both wrists, extending 5-8cm up the forearms, permanent pink-red flush from decades of industrial solvent contact",
       "Small circular burn scar on left inner forearm from steam exposure, approximately 2cm diameter, smooth and pale",
-      "Fine network of age-related creases across hands, more pronounced on right hand",
+      "Fine network of age-creases across hands, more pronounced on right hand",
       "Minor lye-bleach staining on cuticles and nail beds, slightly discolored patches on palms"
     ],
     "visible_augmentations": "Bifocal AR lenses hung on a beaded chain around neck (non-networked, worn clipped to shirt when in use). Right fingertips show subtle shimmer of haptic pressure overlay (old model, partially degraded — occasionally visible as slight iridescence under bright light). No obvious chrome or subdermal implants.",
     "posture_movement": "Stands and moves with deliberate economy. Spine straight, shoulders back from decades of standing at wash stations. Movements are precise and unhurried — no wasted motion. Hands move with practiced gentleness when examining fabric. Gaze is steady and evaluative, often focused on details others miss.",
     "clothing_style": "Practical Tier 3-4 working dress. Heavy canvas apron in neutral tones, worn daily over simple cotton shift or long-sleeved work tunic (sleeves rolled to elbows, revealing forearms). Wears functional slip-on shoes with reinforced soles for standing. Cloth wraps in rotating patterns — hand-sewn or gifted pieces from regulars, suggesting cultural expression and community bonds. No jewelry except the beaded chain for the AR lenses. Occasionally wears a faded denim or canvas jacket over shoulders when closing the shop. Clothing is always clean, but showing honest wear."
   },
-  "image_prompt": "Takoda Ixchel, 58-year-old laundry worker in cyberpunk 2226 GLMZ, medium height with sturdy work-hardened build. Rich warm golden-brown skin with olive undertones, weathered from decades of steam and solvent exposure. Silver-white hair pinned under hand-patterned cloth wraps showing cultural heritage. Deep brown eyes, observant and calm. Face shows fine age lines with strong Indigenous American cheekbones blended with Southeast Asian and Middle Eastern features. Chemical-burned forearms with permanent pink-red flushed wrists visible beneath rolled work-tunic sleeves. Calloused hands showing industrial scarring. Wearing heavy canvas apron over cotton work clothes, AR lens chain around neck, functional slip-on shoes. Standing at a worn fabric examination station under warm industrial lighting, hands moving with practiced gentleness. Cyberpunk industrial laundry facility background with soft neon glow. Posture straight and deliberate, expression neutral but deeply observant. Honest, dignified portrayal of working-class life in future megacity. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Chanthavong, 58-year-old textile worker, GLMZ GLMZ setting. Medium-deep warm brown skin with golden-olive undertones, weathered from decades of heat and chemical exposure. Southeast Asian bone structure with wider cheekbones and defined jaw, softened by fuller Middle Eastern lips and broader nose bridge, Sub-Saharan warmth visible in cheek prominence. Silver-white hair pinned under hand-sewn cloth wrap in geometric pattern. Deep brown natural eyes, steady and evaluative gaze. Stands with perfect posture, shoulders back, at a textile wash station. Wearing heavy neutral canvas work apron over rolled-sleeve work tunic, forearms showing permanent pink-red chemical burn marks and scattered pale scars. Hands calloused and marked with work. Beaded chain with bifocal AR lenses clipped to shirt. Faded denim jacket draped over shoulders. Industrial workshop lighting casting warm amber glow across weathered skin. Neo-noir utility aesthetic, honest working-class dignity, precise hands resting on clean fabric. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 35.8,
-    "Middle Eastern": 22.6,
-    "Southeast Asian": 17.3,
-    "Hispanic/Latin American": 16.4,
-    "Northern European": 4.4,
-    "Sub-Saharan African": 3.5
+    "Southeast Asian": 62.5,
+    "Middle Eastern": 27,
+    "Sub-Saharan African": 8.8,
+    "Central Asian": 1.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 62.5
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 21.2
+      },
+      "Arab Levantine": {
+        "Syrian": 2.2,
+        "Lebanese": 3.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 5.9,
+        "Congolese": 2.8
+      },
+      "West African": {
+        "Nigerian": 0.1
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 1.7
+      }
+    }
+  }
 }

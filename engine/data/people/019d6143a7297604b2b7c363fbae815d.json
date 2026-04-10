@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7297604b2b7c363fbae815d",
   "type": "character",
-  "name": "Imran Olofsson",
+  "name": "Ibrahim Olofsson",
   "aliases": [
     "Yew",
     "Ghost Six"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts, near Pulaski and Chicago Ave",
-  "description": "Yewande runs drones from a chair. They have been doing this for eleven years and their body knows it — they are slim in the specific way of someone who is still and focused for eight hours at a stretch, with deep brown skin and a shaved head they have decorated with a scatter of bioluminescent scalp-dots in cyan and violet that pulse slowly in patterns that change with their mood. Their eyes are heavily augmented: twin rig-link implants that glow a faint amber at the corners when active, giving them a permanently lit quality that unsettles people at close range. They are not especially tall and they move through the Fort Anchor corridors with the slightly glassy ease of someone perpetually accustomed to seeing through other eyes.\n\nYewande is the best drone jockey in the Brightmoor operation and has a proprietary flight algorithm they developed themselves, unofficially, that runs seventeen percent more efficient coverage patterns than the Metro standard. They have never submitted it formally because they have learned that submitting things formally means other people get credit for them. They have complicated feelings about surveillance work — they do it with genuine skill and believe in some of its applications and mistrust others — and they manage this by maintaining a very precise internal taxonomy of which flights feel like protection and which feel like something else. They pray to the drone fleet's resident E.L.F., which they call Sweep, before every shift, asking it to help them see clearly and miss nothing important.",
+  "description": "Ibrahim Olofsson runs drones from a chair. They have been doing this for eleven years and their body knows it — they are slim in the specific way of someone who is still and focused for eight hours at a stretch, with deep brown skin and a shaved head they have decorated with a scatter of bioluminescent scalp-dots in cyan and violet that pulse slowly in patterns that change with their mood. Their eyes are heavily augmented: twin rig-link implants that glow a faint amber at the corners when active, giving them a permanently lit quality that unsettles people at close range. They are not especially tall and they move through the Fort Anchor corridors with the slightly glassy ease of someone perpetually accustomed to seeing through other eyes.\n\nIbrahim Olofsson is the best drone jockey in the Brightmoor operation and has a proprietary flight algorithm they developed themselves, unofficially, that runs seventeen percent more efficient coverage patterns than the Metro standard. They have never submitted it formally because they have learned that submitting things formally means other people get credit for them. They have complicated feelings about surveillance work — they do it with genuine skill and believe in some of its applications and mistrust others — and they manage this by maintaining a very precise internal taxonomy of which flights feel like protection and which feel like something else. They pray to the drone fleet's resident E.L.F., which they call Sweep, before every shift, asking it to help them see clearly and miss nothing important.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Pattern Reader": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -211,43 +211,24 @@
     "Fort Anchor",
     "The Reclamation Assembly",
     "Chronicle",
+    "Plot 17",
     "Grainfort",
     "Street Custom 'Glass Garden' Caltrops",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Nightlight",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus ST-4 'Verdict'",
-    "Crucible CN-1 'Cradle'",
-    "Crucible Industries Anti-Materiel DMR AMDMR-5 'Verdict'",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Plot 17",
-    "Ringo EV-3 'Watcher'",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "Waxwing Neuromedia",
-    "Yannick Tofauti-Szarvásy"
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multinational blend: East Asian (28%), South Asian (24%), Eastern European (18%), Sub-Saharan African (15%), Hispanic/Latin American (15%). Features a complex interplay of ancestry markers — warm golden-brown undertones from South Asian heritage, subtle monolid tendency from East Asian ancestry, broad nasal structure influenced by African and Latin American genetics, with the facial bone structure showing Eastern European angularity.",
+    "heritage": "Ubiquitous Diaspora blend spanning six continents: Northern European (27%), Middle Eastern (24.7%), South Asian (18.1%), Hispanic/Latin American (14.2%), Sub-Saharan African (9.8%), Southeast Asian (6.2%). The genetic layering creates distinctive phenotypic harmony — warm golden-brown skin tone from the South Asian and Middle Eastern foundation, with luminous depth from Sub-Saharan African genetics. Subtle epicanthal fold tendency from Southeast Asian ancestry shapes the eye region. Facial bone structure merges Northern European angularity with Middle Eastern definition, while nasal structure reflects the broader geometry characteristic of African and Latin American ancestry. The overall effect is a complexion that appears medium-depth with olive undertones, reading warm in shadow and luminous in direct light.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and spare, the sustained stillness of an operator — narrow shoulders, minimal muscle definition, the kind of thinness that comes from eight-hour shifts in a chair rather than deprivation. Core strength maintained despite sedentary work.",
     "hair_color": "None (shaved)",
     "hair_style": "Shaved scalp, bare skin",
     "hair_length": "Shaved",
-    "eye_color": "Dark brown with warm undertones, amber rig-link glow at the corners when active",
-    "skin_tone": "Rich warm brown with golden undertones — a blend that reads as deeper where it catches light, warmer in shadow. The particular quality comes from the layering of South Asian warmth, Sub-Saharan depth, with subtle East Asian undertones creating an uncommon mid-range brown with olive undertones.",
-    "complexion": "Clean, even-toned skin with minimal scarring. Fine lines at the eyes from years of concentration and the strain of rig-link use. Facial structure shows subtle almond-eye tendency from East Asian ancestry, higher cheekbones from Central Asian influence through Eastern European heritage, and broader nasal structure characteristic of Sub-Saharan and Latin American genetics. Scalp shows no irritation from the bioluminescent implants — well-maintained.",
+    "eye_color": "Dark brown with warm amber undertones, amber rig-link glow at the corners when active",
+    "skin_tone": "Warm golden-brown with balanced olive undertones — medium-depth with luminous quality in good light, warmer and deeper in shadow. The tone reflects the harmonic blend of Middle Eastern warmth, South Asian depth, Northern European fairness, Southeast Asian undertones, and Sub-Saharan African richness, creating a distinctive mid-range brown that shifts subtly with lighting.",
+    "complexion": "Clean, even-toned skin with minimal scarring. Fine lines at the eyes from years of concentration and the strain of rig-link use. Facial structure shows subtle epicanthal fold tendency from Southeast Asian ancestry, defined cheekbones from Northern European and Middle Eastern heritage, and broader nasal structure characteristic of Sub-Saharan and Latin American genetics. Scalp shows no irritation from the bioluminescent implants — well-maintained.",
     "distinguishing_marks": [
       "Scatter of bioluminescent scalp-dots across crown and temple in cyan and violet, approximately 12–16 dots, arranged in asymmetric constellation pattern that pulses in mood-reactive patterns",
       "Faint scarring at both outer eye corners where rig-link implants interface with skin — clean surgical work, barely visible unless light catches them"
@@ -256,16 +237,78 @@
     "posture_movement": "Carries themselves with the glassy ease of someone accustomed to perceiving through external feeds — slightly detached, movements precise but economical. Walks with minimal wasted motion. When engaged with others, eye contact is direct but has a quality of simultaneous distance, as though part of their attention is elsewhere. Sits with the postural memory of long chair-time: spine slightly curved, shoulders rolled inward.",
     "clothing_style": "GLMZ Metro Police Aerial Surveillance Division uniform (Tier 3 standard-issue): navy tactical jacket with reflective trim and shoulder patch, fitted gray utility undershirt. Off-duty wears practical Hamtramck-sector wear — dark hoodies, cargo pants with tool loops, worn sneakers suitable for quick basement workshop sessions. Minimal jewelry or decoration beyond the bioluminescent scalp-dots. Grooming is precise and utilitarian."
   },
-  "image_prompt": "Imran Olofsson, GLMZ Metro Police operator, cyberpunk 2226. Medium height lean build, shaved scalp adorned with asymmetric constellation of bioluminescent cyan and violet dots pulsing softly. Rich warm golden-brown skin tone with subtle undertones reflecting East Asian, South Asian, Eastern European, African and Latin heritage blend. Dark warm-toned eyes with faint amber glow at corners from active rig-link ocular implants. Fine concentration lines around eyes. Subtle facial structure showing mixed ancestry — slight monolid tendency, high cheekbones, broader nasal structure. Clean-shaven, precise grooming. Wearing navy GLMZ Metro Police tactical jacket with reflective trim and shoulder patch over fitted gray utility undershirt. Haptic feedback suit underlayer visible at neck and wrists. Posture slightly curved from long surveillance shifts, movements economical and precise. Direct but distant gaze as though perceiving through external feeds simultaneously. Standing in dimly lit precinct corridor with neon glow catching the bioluminescent scalp-dots, creating cyan-violet light patterns across shaved head. Moody, focused, detached expression. Cyberpunk aesthetic, high-tech implants, utilitarian fashion, atmospheric metropolitan lighting. --ar 2:3 --v 6",
+  "image_prompt": "Ibrahim Olofsson, GLMZ, GLMZ Metro Police Aerial Surveillance operative. Lean 168cm frame with shaved scalp covered in asymmetric constellation of bioluminescent cyan and violet dots pulsing softly. Warm golden-brown complexion with olive undertones reflecting multinational ancestry — subtle epicanthal fold tendency, defined cheekbones, broader nasal geometry. Dark brown eyes with amber rig-link glow at corners, fine concentration lines at eye margins. Clean surgical scars barely visible at outer eye corners. Wearing navy GLMZ tactical jacket with reflective trim over gray utility shirt, haptic feedback underlayer visible at neck. Posture economical and precise, glassy detached gaze suggesting attention split between physical and digital feeds. Low-light urban basement workshop setting, neon reflecting off bald scalp and illuminating skin tone in cool purples and warm ambers. Cinematic neo-noir noir atmosphere, moody and introspective. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 28.1,
-    "South Asian": 24.3,
-    "Eastern European": 17.7,
-    "Sub-Saharan African": 15.4,
-    "Hispanic/Latin American": 14.5
+    "Northern European": 27,
+    "Middle Eastern": 24.7,
+    "South Asian": 18.1,
+    "Hispanic/Latin American": 14.2,
+    "Sub-Saharan African": 9.8,
+    "Southeast Asian": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 16.4,
+        "Icelandic": 10.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 2.1,
+        "Lebanese": 14.5
+      },
+      "Persian": {
+        "Iranian": 1.5,
+        "Tajik Persian": 6.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 14.1,
+        "Sindhi": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1
+      },
+      "Central American": {
+        "Salvadoran": 8.7,
+        "Costa Rican": 1.4
+      },
+      "Caribbean": {
+        "Haitian": 2.3,
+        "Puerto Rican": 0.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 2.8
+      },
+      "West African": {
+        "Senegalese": 1.1,
+        "Ghanaian": 1.3
+      },
+      "Central African": {
+        "Congolese": 3.8,
+        "Cameroonian": 0.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 0.6
+      },
+      "Cambodian": {
+        "Khmer": 4.4
+      },
+      "Thai": {
+        "Thai": 1.2
+      }
+    }
+  }
 }

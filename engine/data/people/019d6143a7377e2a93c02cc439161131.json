@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7377e2a93c02cc439161131",
   "type": "character",
-  "name": "Quinn Magnúsdóttir",
+  "name": "Quinn Tehrani",
   "aliases": [
     "Zinzi"
   ],
@@ -12,7 +12,7 @@
   "age": 26,
   "status": "active",
   "location": "The Shelf, near Halsted and Division",
-  "description": "Zinzile is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they're stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that's been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Zinzile has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn't yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
+  "description": "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they're stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that's been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn't yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -152,7 +152,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,21 +169,11 @@
     "The Shelf",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Gold",
-    "Bioacoustic Communication Membrane",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Nnenna Baluarte-Volkov",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "TESSERA TK-4 'Hellhound'",
-    "Tessera Nexus Town Car",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Ghost Ronin",
-    "The Pure Hand",
-    "Timur Osei-Bjelke"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (46.7%) with significant Hispanic/Latin American (15.3%), Eastern European (14.7%), Northern European (14.3%), and South Asian (9.0%) ancestry — creating a complex phenotype with Southeast Asian facial structure and pigmentation as the primary influence, layered with Latin American and South Asian warmth, and Northern/Eastern European undertones",
+    "heritage": "Predominantly Middle Eastern (56%) with substantial Sub-Saharan African (19.2%) ancestry creating a warm, luminous complexion. Central Asian heritage (10.3%) contributes angular bone structure and slight eye shape variation, while Northern European (11.1%) and Hispanic/Latin American (3.4%) ancestry add subtle undertones to iris coloration and skin depth. The genetic blend produces striking dimensional features: golden-warm skin with rich undertones, prominent cheekbones from Central Asian and Middle Eastern lineage, expressive full mouth characteristic of African heritage contribution, and complex eye coloration reflecting the full ancestry spectrum.",
     "height_cm": 168,
     "weight_kg": 54,
     "build": "Wiry and lean — the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
@@ -191,8 +181,8 @@
     "hair_style": "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
     "hair_length": "Long (shoulder-length when unconstrained)",
     "eye_color": "Warm brown base with augmented concentric iris patterns — rings of gold and green that pulse faintly under stress (involuntary)",
-    "skin_tone": "Medium warm brown with golden-amber undertones; complexion carries the slight uneven pigmentation of someone who spends half their time indoors in legal offices and half on The Shelf's inconsistent lighting. The tone reflects the Southeast Asian-dominant ancestry with warmth from Hispanic and South Asian heritage",
-    "complexion": "Southeast Asian facial structure with defined cheekbones, full mouth, expressive face that telegraphs emotion before they speak. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
+    "skin_tone": "Rich golden-brown complexion with warm luminosity from the Middle Eastern-dominant and Sub-Saharan African blend (75.2% combined), deepened by subtle Central Asian undertones. The tone carries dimensional warmth with faint uneven pigmentation from inconsistent indoor-outdoor exposure across legal offices and street work",
+    "complexion": "Strong angular bone structure influenced by Central Asian and Middle Eastern ancestry, prominent defined cheekbones, full expressive mouth. Warm dimensional features reflecting the genetic blend's complexity. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
     "distinguishing_marks": [
       "Thin scar along left jawline, pale and old, approximately 4cm — origin unknown, never volunteered",
       "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
@@ -202,16 +192,62 @@
     "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk — hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
     "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops — usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm's reach"
   },
-  "image_prompt": "Quinn Magnúsdóttir, 168cm lean cyberpunk activist with medium warm brown skin and Southeast Asian facial structure, dark shoulder-length hair usually under a faded canvas cap. Sharp cheekbones, full mouth, expressive warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Faint jaw scar, ink-stained fingers, worn silver ring on index finger. Layered thrift-store aesthetic — faded Parallel Standing t-shirt under oversized neutral button-up, worn jeans with cargo pockets, canvas sneakers held together with duct tape, patched messenger bag covered in synthetic rights stickers. Sitting forward intensely at a cramped legal office desk or pacing through neon-lit underground shelter corridors. Dark circles from overwork, direct confrontational eye contact. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody dramatic lighting with overhead synthetic lights casting sharp shadows, worn and purposeful, slight motion blur suggesting constant movement. --ar 2:3 --v 6",
+  "image_prompt": "Quinn Tehrani, 168cm lean wiry frame, warm golden-brown skin with Middle Eastern-African dimensional blend, strong angular cheekbones from Central Asian heritage, expressive full mouth, dark natural brown hair in thick shoulder-length halo usually under faded canvas Parallel Standing cap. Warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Thin old scar along left jawline, small faded burn mark on right inner wrist, gavel-circuit tattoo on inner left forearm. GLMZ nonprofit legal worker aesthetic: worn jeans, layered faded t-shirt under oversized neutral thrift button-up, patched canvas messenger bag covered in synthetic rights stickers, duct-taped canvas sneakers, worn silver ring on right index finger. Sits forward intensely, hands gesturing expressively, eyes darting—cataloging exits. Direct confrontational eye contact despite exhaustion. Indoor legal office lighting mixing cool fluorescents with warm afternoon window light, conveying dedication, weariness, and conviction. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 46.7,
-    "Hispanic/Latin American": 15.3,
-    "Eastern European": 14.7,
-    "Northern European": 14.3,
-    "South Asian": 9.0
+    "Middle Eastern": 56,
+    "Sub-Saharan African": 19.2,
+    "Northern European": 11.1,
+    "Central Asian": 10.3,
+    "Hispanic/Latin American": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 45.9
+      },
+      "Persian": {
+        "Afghan Dari": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 6.2,
+        "Ethiopian": 1.5
+      },
+      "West African": {
+        "Senegalese": 9
+      },
+      "Central African": {
+        "Angolan": 2.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 2.2,
+        "German": 1.3
+      },
+      "British Isles": {
+        "Scottish": 3.8
+      },
+      "Scandinavian": {
+        "Danish": 3.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 7.5,
+        "Buryat": 2.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 1.6,
+        "Haitian": 1.8
+      }
+    }
+  }
 }

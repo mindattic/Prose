@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a17359b3990d0ac7e50434",
   "type": "character",
-  "name": "Nisha Haugen-Subramaniam",
+  "name": "Phoenix Zidane-Phommasack",
   "aliases": [
     "Addy",
     "The Steam Lady"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street, near Ashland and Division",
-  "description": "Adaeze is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
+  "description": "Phoenix Zidane-Phommasack is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -158,7 +158,7 @@
     "Idealist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,35 +176,18 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "GLMZ",
     "Tessera Corponation",
+    "Underground Phoenix",
+    "Indigo",
     "Silver",
+    "Harbor Fish Shack",
     "Hazel Brink",
-    "Gold",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cinderblock Ai",
-    "Dredge Mining Collective",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Kenosha Crossing",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Old Harbor",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Iron Lotus",
-    "The Pure Hand",
-    "The United Workers Front",
-    "Tshiamo Vukić-Arellano"
+    "GLMZ",
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian primary (48.2%) with significant Pacific Islander (12.9%), Northern European (14.8%), Sub-Saharan African (10.4%), East Asian (9.0%), and Hispanic/Latin American (4.7%) ancestry. The genetic blend creates striking complexity: warm brown skin with golden undertones from South Asian heritage, refined by Pacific Islander warmth and African depth, with subtle East Asian and European influences visible in bone structure.",
+    "heritage": "Southeast Asian (44.1%) forms the foundation with warm golden undertones and angular cheekbone definition, substantially enriched by Sub-Saharan African ancestry (23.5%) that deepens skin richness and adds fullness through the mid-face, North African heritage (20.3%) contributing amber warmth and geometric cheekbone refinement, with smaller contributions from Hispanic/Latin American (6.9%) and Eastern European (5.2%) ancestry creating subtle complexity in undertone and facial structure.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the back and arms from decades of pressing and wringing. Not heavy, but densely built—the kind of frame that fills a doorway without apology.",
@@ -212,8 +195,8 @@
     "hair_style": "Gathered into a high wrap using faded indigo cloth with silver thread hand-stitched throughout",
     "hair_length": "Long, wrapped",
     "eye_color": "Hazel-gold with cosmetic iris mod; turns nearly golden under fluorescent light",
-    "skin_tone": "Warm golden-brown with rich South Asian undertones, deepened by Sub-Saharan African and Pacific Islander heritage, creating luminous warmth rather than simple darkness. Sun-weathered despite Tier 4 enclave living.",
-    "complexion": "Leathery texture at the knuckles and inner wrists from chronic exposure to hot water and chemical detergents; creased around the eyes and mouth from fifty years of squinting at seams and smiling rarely but meaningfully. High cheekbones with a blend of South Asian angularity and Pacific Islander fullness. Clean but not delicate.",
+    "skin_tone": "Deep warm brown with golden-amber undertones—luminous fusion of Southeast Asian warmth, North African amber richness, and Sub-Saharan African depth. Weathered but radiant despite Tier 4 enclave living, with visible sun-exposure patina that speaks to a life lived without apology.",
+    "complexion": "Leathery texture at the knuckles and inner wrists from chronic exposure to hot water and chemical detergents; creased around the eyes and mouth from fifty years of squinting at seams and smiling rarely but meaningfully. Angular cheekbones with Southeast Asian definition refined by North African geometry and softened by Sub-Saharan African fullness through the mid-face. Clean but not delicate—a face built for work.",
     "distinguishing_marks": [
       "Callused ridge across both palms from needle work and pressing handles",
       "Faded chemical burn scars on the inner left wrist, partially obscured by compression sleeve",
@@ -223,17 +206,67 @@
     "posture_movement": "Moves with deliberate slowness, never hurried—shoulders back, head level. She walks like someone who has already decided the world will wait for her. Stands with weight evenly distributed, ready to lean into a pressing motion at any moment. Hands rarely still; fingers often air-pressing seams or adjusting invisible wrinkles.",
     "clothing_style": "Tier 4 workwear: heavy cotton apron in faded navy over a plain long-sleeved shirt (always with sleeves rolled to mid-forearm to show compression sleeves), dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at the heel. She owns three identical aprons and rotates them. No jewelry except a thin silver band on her right ring finger—handmade, dented slightly, older than her marriage."
   },
-  "image_prompt": "Nisha Haugen-Subramaniam, 168cm, mid-50s South Asian-dominant mixed heritage woman with warm golden-brown skin and high cheekbones. Natural black hair with silver temples, wrapped in indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Fifty years of precision work etched into her face—creases around eyes, callused hands, work-weathered. Dark grey compression sleeves on forearms. Wearing faded navy cotton apron over long-sleeved shirt with sleeves rolled to mid-forearm, dark work trousers, worn non-slip shoes. Posture perfectly level and deliberate, shoulders back, hands perpetually gesturing seam-pressing motions. Standing in a Tier 4 enclave garment workshop under cool fluorescent light, indigo wrap catching highlights. Mood: quiet dignity, unflinching presence. Cyberpunk 2226 setting. --ar 2:3 --v 6",
+  "image_prompt": "Phoenix Zidane-Phommasack, 168cm tall, dense muscular build, deep warm brown skin with golden-amber undertones from blended Southeast Asian, Sub-Saharan African, and North African heritage. Angular cheekbones softened by fullness through mid-face, weathered complexion creased around eyes and mouth. Natural black hair with silver-grey temples, wrapped high in faded indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Wearing faded navy cotton apron over plain long-sleeved shirt with dark grey compression sleeves visible at forearms, dark work trousers, worn non-slip shoes. Silver handmade band on right ring finger. Deliberate posture, shoulders back, fingers subtly air-pressing invisible seams. Tier 4 enclave industrial setting, warm amber and cool fluorescent lighting mixing over work station, GLMZ 2200s aesthetic, worn fabric textures, documentary realism, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 48.2,
-    "Northern European": 14.8,
-    "Pacific Islander": 12.9,
-    "Sub-Saharan African": 10.4,
-    "East Asian": 9.0,
-    "Hispanic/Latin American": 4.7
+    "Southeast Asian": 44.1,
+    "Sub-Saharan African": 23.5,
+    "North African": 20.3,
+    "Hispanic/Latin American": 6.9,
+    "Eastern European": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 30.4
+      },
+      "Indonesian": {
+        "Sundanese": 13.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 9.5,
+        "Angolan": 3.7
+      },
+      "East African": {
+        "Somali": 2.3,
+        "Ethiopian": 1.2
+      },
+      "West African": {
+        "Malian": 5.2,
+        "Senegalese": 1.6
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 4.4
+      },
+      "Maghreb": {
+        "Algerian": 15.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.5
+      },
+      "South American": {
+        "Brazilian": 1.6
+      },
+      "Caribbean": {
+        "Dominican": 3.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 5
+      },
+      "Slavic East": {
+        "Ukrainian": 0.2
+      }
+    }
+  }
 }

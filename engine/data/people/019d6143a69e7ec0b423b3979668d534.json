@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69e7ec0b423b3979668d534",
   "type": "character",
-  "name": "Rio Mukherjee-Árnason-Achebe",
+  "name": "Rio Bautista-Horváth-Petrović",
   "aliases": [
     "Presh",
     "Skin Girl"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "South Deering Sump, Sublevel 4 — a former water treatment annex converted into an unlicensed surgical suite she calls 'the pantry', near sub-level access near State and Van Buren",
-  "description": "Precious is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
+  "description": "Rio Bautista-Horváth-Petrović is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -160,7 +160,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "South Deering Sump",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,30 +178,11 @@
     "The Narrows Compact",
     "Breadbox",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gold",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Narrowcast",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo AX-12 'Harvester'",
-    "The Narrows",
-    "The Pure Hand",
-    "The Sump",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Gold"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian (Bengali/Indian) and East Asian (likely Chinese/Korean) with Sub-Saharan African ancestry creating a striking Pan-Global phenotype. The genetic blend produces warm-toned skin with subtle complexity, fine-boned facial structure reflecting East Asian influences, and warm undertones from South Asian ancestry with African warmth in the mix.",
+    "heritage": "Eastern European (54.8%), Hispanic/Latin American (33.5%), Sub-Saharan African (6.9%), and Pacific Islander (4.8%) ancestry creates a striking Pan-Global phenotype. The dominant Eastern European foundation is warmed and enriched by significant Latin American ancestry, with African and Pacific Islander contributions adding subtle depth and complexity to skin undertone and facial structure.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Lean and compact, almost spare — a body optimized by years of standing over surgical tables. No excess anywhere. Wiry forearm definition from repetitive precision work.",
@@ -209,25 +190,61 @@
     "hair_style": "Close-cropped, kept at scalp length. Usually covered by surgical caps even off-shift; visible only as a dark fuzz when uncovered.",
     "hair_length": "Short",
     "eye_color": "Augmented amber with gold threading in a cracked-glass pattern",
-    "skin_tone": "Warm honey-bronze with golden undertones — the blended result of South and East Asian heritage with deeper warmth from African ancestry, creating luminous depth rather than simple umber.",
-    "complexion": "Fine-featured with high, prominent cheekbones and a refined, slightly angular jawline reflecting the East Asian-South Asian blend. Skin is clear and meticulous — she treats it like a surgical field, antiseptic clean. Minimal cosmetics. A thin scar runs along her left temple (surgical implant access point for the retinal overlay). The overall impression is of precise, elegant bone structure across multiple continental heritages.",
+    "skin_tone": "Warm olive-bronze with golden undertones — the blended result of Eastern European base enriched by Latin American warmth, with African and Pacific Islander contributions creating luminous depth and subtle complexity across the spectrum.",
+    "complexion": "Fine-featured with high, prominent cheekbones and a refined, slightly angular jawline reflecting the strong Eastern European-Latin American blend. Facial structure shows the polished geometry of Central/Eastern Europe softened and warmed by Latin American heritage, with subtle African and Pacific Islander undertones adding richness to overall appearance. Skin is clear and meticulous — she treats it like a surgical field, antiseptic clean. Minimal cosmetics. A thin scar runs along her left temple (surgical implant access point for the retinal overlay). The overall impression is of precise, elegant bone structure with warm, complex undertones across multiple continental heritages.",
+    "visible_augmentations": "Bioluminescent fingernail beds glowing soft pale blue, visible when hands are exposed or in low light. Fine chrome and black polymer subdermal plating visible at wrist joints and knuckle articulations (surgical motor stabilizers). Thin surgical scar at left temple marking retinal overlay implant site.",
+    "posture_movement": "Upright, economical. Moves with deliberate precision — no wasted motion. Hands are steady and controlled, fingers often splayed slightly as if already scrubbed in. Her gaze is direct and clinical. She has developed a habit of examining people's veins when making eye contact.",
+    "clothing_style": "Tier 4-5 utilitarian. Off-shift: dark compression bodysuits (heat-regulating, easy to decontaminate), reinforced cargo pants with deep pockets for tools, unmarked black field jacket. Surgical-grade gloves in her pockets always. Lab coat or surgical gown when working. No jewelry except a faded Helix Biosystems ID badge she never removed — worn around neck on a gray lanyard like a talisman of her former life. Shoes are clinical clogs, broken in, bloodstains long since faded into the material.",
     "distinguishing_marks": [
       "Surgical scar along left temple, roughly 3cm, partially hidden by hairline — site of retinal overlay installation",
       "Faint needle track marks along inner elbows from years of phlebotomy self-testing (occupational habit)",
       "Small burn scar on right forearm, pale and old, from lab accident during her Helix employment"
-    ],
-    "visible_augmentations": "Bioluminescent fingernail beds glowing soft pale blue, visible when hands are exposed or in low light. Fine chrome and black polymer subdermal plating visible at wrist joints and knuckle articulations (surgical motor stabilizers). Thin surgical scar at left temple marking retinal overlay implant site.",
-    "posture_movement": "Upright, economical. Moves with deliberate precision — no wasted motion. Hands are steady and controlled, fingers often splayed slightly as if already scrubbed in. Her gaze is direct and clinical. She has developed a habit of examining people's veins when making eye contact.",
-    "clothing_style": "Tier 4-5 utilitarian. Off-shift: dark compression bodysuits (heat-regulating, easy to decontaminate), reinforced cargo pants with deep pockets for tools, unmarked black field jacket. Surgical-grade gloves in her pockets always. Lab coat or surgical gown when working. No jewelry except a faded Helix Biosystems ID badge she never removed — worn around neck on a gray lanyard like a talisman of her former life. Shoes are clinical clogs, broken in, bloodstains long since faded into the material."
+    ]
   },
-  "image_prompt": "Rio Mukherjee-Árnason-Achebe, 158cm lean surgical technician, honey-bronze skin with golden warmth reflecting pan-Asian and Sub-Saharan heritage, fine-boned face with high cheekbones, close-cropped black hair, augmented amber eyes with gold cracked-glass pattern. Bioluminescent blue fingertip implants glowing soft pale blue, chrome and black polymer subdermal wrist and knuckle stabilizers visible. Surgical scar along left temple. Wearing dark compression bodysuit, reinforced cargo pants, black field jacket, worn clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Precise upright posture, steady hands slightly splayed. Cool cyberpunk 2226 underground clinic setting, clinical blue-white surgical lighting casting precise shadows, hands hovering over medical equipment, direct penetrating clinical gaze. High-tech medtech aesthetic, dystopian Great Lakes Metropolitan Zone. Cinematic, professional medical photography style. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Rio Bautista-Horváth-Petrović, 158cm lean surgical technician with warm olive-bronze skin and golden undertones. Pan-European-Latin-African ancestry visible in high cheekbones and angular jawline, direct clinical gaze with augmented amber eyes showing gold cracked-glass pattern. Close-cropped black hair, surgical precision aesthetic. Bioluminescent pale blue fingernail beds glowing softly, subdermal chrome plating visible at wrist joints and knuckles. Thin temple scar from retinal implant partially hidden by hairline. Wearing dark compression bodysuit, reinforced cargo pants, unmarked black field jacket, clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Hands steady and controlled, upright economical posture. Sterile, meticulous appearance like a walking surgical field. Neo-noir Tier 4-5 utilitarian aesthetic, cool clinical lighting casting subtle shadows across augmented features, industrial facility background, clinical precision mood, photography-realistic style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 46.9,
-    "East Asian": 46.6,
-    "Sub-Saharan African": 6.5
+    "Eastern European": 54.8,
+    "Hispanic/Latin American": 33.5,
+    "Sub-Saharan African": 6.9,
+    "Pacific Islander": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 13.8
+      },
+      "Slavic South": {
+        "Bulgarian": 26.5,
+        "Serbian": 14.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 33.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.4,
+        "Angolan": 1.2
+      },
+      "Southern African": {
+        "Zimbabwean": 4.3
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 1,
+        "Tuvaluan": 1.2
+      },
+      "Melanesian": {
+        "Fijian": 1.1,
+        "Ni-Vanuatu": 1.5
+      }
+    }
+  }
 }

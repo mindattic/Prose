@@ -1,7 +1,7 @@
 {
   "id": "019d6143a59f77b0b6ae115d9e5696fa",
   "type": "character",
-  "name": "Rune Adu",
+  "name": "Rune Mbekele",
   "aliases": [
     "Abi",
     "The Soap King"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, operates out of a converted ground-floor unit called Leclair's Clean & Press, near Kedzie and Division",
-  "description": "Abiodun is a broad-shouldered man whose body has softened into comfortable middle age, his dark brown skin lined around the eyes and mouth in ways that make him look like he is perpetually on the verge of a knowing smile. His hair is cropped close and silver at the temples; he wears it simply, without augmentation, which marks him as either principled or broke depending on who is asking. His hands are always slightly chapped from the solvents, and he keeps a small tin of shea balm in his breast pocket that he reapplies with absent-minded regularity. He has one augmentation: a subdermal pressure sensor array in his fingertips that helps him feel thread tension and fabric stress without instruments — technically a legacy medical implant from a reconstructive surgery after a crush injury thirty years ago, repurposed into professional utility.\n\nAbi runs Leclair's Clean & Press the way a priest runs a parish — with patience, with routine, and with the faint conviction that cleanliness is a moral act. He is warm with regulars, methodical with strangers, and briefly terrible with anyone who brings him synthweave and claims it is linen. He remembers what every customer wore to their daughter's naming ceremony, their court date, their first corporate interview. He has seen the whole neighborhood change twice over and has quietly outlasted two corponation rezoning attempts by simply continuing to open at six in the morning.",
+  "description": "Rune Mbekele is a broad-shouldered man whose body has softened into comfortable middle age, his dark brown skin lined around the eyes and mouth in ways that make him look like he is perpetually on the verge of a knowing smile. His hair is cropped close and silver at the temples; he wears it simply, without augmentation, which marks him as either principled or broke depending on who is asking. His hands are always slightly chapped from the solvents, and he keeps a small tin of shea balm in his breast pocket that he reapplies with absent-minded regularity. He has one augmentation: a subdermal pressure sensor array in his fingertips that helps him feel thread tension and fabric stress without instruments — technically a legacy medical implant from a reconstructive surgery after a crush injury thirty years ago, repurposed into professional utility.\n\nAbi runs Leclair's Clean & Press the way a priest runs a parish — with patience, with routine, and with the faint conviction that cleanliness is a moral act. He is warm with regulars, methodical with strangers, and briefly terrible with anyone who brings him synthweave and claims it is linen. He remembers what every customer wore to their daughter's naming ceremony, their court date, their first corporate interview. He has seen the whole neighborhood change twice over and has quietly outlasted two corponation rezoning attempts by simply continuing to open at six in the morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -173,7 +173,7 @@
     "Missionary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,37 +232,25 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Pressure Drop",
+    "Patience",
+    "Silver",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Silver",
-    "The Pure Hand",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Dragan Petersen-Bah",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Volkov-Saito Precision VSR-20 'Partisan'"
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: East Asian (33.6%) forms the primary phenotypic foundation with slight eye shape and cheekbone structure; Central Asian (18.5%) contributes to facial width and bone structure; Sub-Saharan African (16.0%) adds warmth to skin tone and facial feature definition; Hispanic/Latin American (15.0%) and Northern European (13.5%) provide secondary influences on complexion and lighter undertones; North African (3.4%) subtle influence on skin undertone warmth.",
+    "heritage": "Ubiquitous diaspora blend: Hispanic/Latin American (32.4%) provides warm undertones and rounded facial structure; Middle Eastern (26.7%) contributes defined bone structure and eye prominence; Sub-Saharan African (22.9%) adds richness and depth to skin tone; Eastern European (13.4%) brings subtle cool undertones to complexion balance; Pacific Islander (4.6%) adds golden warmth to overall phenotype. Synthesis creates a warm medium-brown complexion with golden-amber undertones and harmoniously blended facial geometry reflecting five-continent heritage.",
     "height_cm": 182,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick through the chest, softened into comfortable middle age with a slight belly that speaks of routine and stability rather than neglect. Still carries the framework of a laborer beneath the wear.",
     "hair_color": "Dark brown with silver at the temples",
     "hair_style": "Cropped close, no fade or design; utilitarian and unadorned",
     "hair_length": "Short",
-    "eye_color": "Dark brown with subtle epicanthic fold",
-    "skin_tone": "Medium warm brown with golden undertones, blended from East Asian and Sub-Saharan ancestry with slight warmth from Hispanic and North African heritage",
-    "complexion": "Face lined at the eyes and mouth in ways that suggest a permanent near-smile; weathered but well-maintained. Laugh lines prominent. Subtle East Asian cheekbone structure softened by age and robust build. Hands perpetually slightly chapped from solvent exposure; kept scrupulously clean with visible calluses on fingertips and palms.",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown with golden-amber undertones, blending Hispanic/Latin American warmth, Middle Eastern depth, Sub-Saharan African richness, Eastern European complexity, and Pacific Islander golden notes into cohesive warm-toned complexion",
+    "complexion": "Face lined at the eyes and mouth in ways that suggest a permanent near-smile; weathered but well-maintained. Laugh lines prominent. Warm rounded cheekbone structure characteristic of blended heritage, softened by age and robust build. Slightly broader nose bridge with defined nostrils reflecting Middle Eastern and African ancestry. Hands perpetually slightly chapped from solvent exposure; kept scrupulously clean with visible calluses on fingertips and palms.",
     "distinguishing_marks": [
       "Fine network of scars across both palms and inner wrists — pale and faded, running in parallel lines from old crush injury and subsequent reconstructive surgery thirty years prior",
       "Slight discoloration on right index and middle fingers from decades of solvent contact, darkened at the cuticles"
@@ -271,17 +259,55 @@
     "posture_movement": "Carries himself with the quiet confidence of someone who has owned his space for decades. Moves with deliberate economy — no wasted motion. Hands are frequently in motion: adjusting fabric, checking seams, unconsciously applying shea balm to fingertips. Stands with weight balanced, ready to move between machines. Body language defaults to attentive and patient, with occasional brief flares of exasperation when discussing synthweave.",
     "clothing_style": "Tier 3-4 working class, practical and durable. Standard uniform is a long grey cotton shop coat (tailored to fit, naturally), worn over simple neutral clothing — usually dark slacks and a short-sleeved button shirt in muted colors (navy, charcoal, warm grey). Work boots with good arch support, scuffed but maintained. Small tin of shea balm visible in breast pocket. No jewelry except a simple brass wedding band on left ring finger. Clothes always immaculate despite the work environment — a point of professional and personal pride."
   },
-  "image_prompt": "Rune Adu, 182cm tall middle-aged man with medium warm golden-brown skin and subtle East Asian facial structure, dark brown eyes, dark brown hair with silver at temples cropped short. Broad-shouldered build with slight belly, weathered face with deep laugh lines, scar networks visible on palms. Wearing immaculate grey cotton shop coat over navy button shirt and dark slacks, scuffed work boots. Hands positioned with deliberate precision, small tin of shea balm visible in breast pocket, simple brass wedding band. Standing in cyberpunk 2200s fabric workshop with machinery in soft studio lighting, quiet confidence, attentive expression. Professional, worn but well-maintained appearance. --ar 2:3 --v 6",
+  "image_prompt": "Rune Mbekele, a weathered 182cm textile craftsman in his sixties, GLMZ. Warm medium-brown skin with golden-amber undertones reflecting five-continent heritage—Hispanic, Middle Eastern, Sub-Saharan African, Eastern European, and Pacific Islander ancestry. Dark brown eyes, dark hair cropped short with silver at temples. Broad-shouldered build softened by comfortable middle age. Face deeply lined around eyes and mouth with characteristic laugh lines; rounded cheekbone structure, slightly broad nose bridge. Scarred palms from old reconstructive surgery, faded parallel lines visible. Hands marked by decades of solvent work, darkened cuticles. Wearing immaculate grey cotton shop coat tailored to fit, over dark slacks and muted button shirt (navy or charcoal). Scuffed work boots, brass wedding band, small tin of shea balm in breast pocket. Posture shows quiet confidence and deliberate economy of movement, hands mid-gesture checking fabric. Workshop setting with soft industrial lighting, warm glow catching the texture of materials and the careful detail of his work. Photorealistic, dignified, centered composition. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 33.6,
-    "Central Asian": 18.5,
-    "Sub-Saharan African": 16.0,
-    "Hispanic/Latin American": 15.0,
-    "Northern European": 13.5,
-    "North African": 3.4
+    "Hispanic/Latin American": 32.4,
+    "Middle Eastern": 26.7,
+    "Sub-Saharan African": 22.9,
+    "Eastern European": 13.4,
+    "Pacific Islander": 4.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 11.8,
+        "Venezuelan": 9
+      },
+      "Caribbean": {
+        "Dominican": 11.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 6.3
+      },
+      "Persian": {
+        "Iranian": 20.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 4.9,
+        "South African": 18
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 13.4
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 3.4,
+        "Papua New Guinean": 0.2
+      },
+      "Polynesian": {
+        "Hawaiian": 1
+      }
+    }
+  }
 }

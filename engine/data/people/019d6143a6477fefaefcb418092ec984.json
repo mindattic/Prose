@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6477fefaefcb418092ec984",
   "type": "character",
-  "name": "Odalys Mohammadi",
+  "name": "Sekou Vestergaard",
   "aliases": [
     "Flip",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "The Narrows — works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row, near Fullerton and Damen",
-  "description": "Kweku is seventeen and looks it — still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he's prepared to redirect. He has geneware cat ears — soft black-and-orange, a birthday mod from his older sister — that perk and flatten with his mood in ways he hasn't learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nKweku is smart in ways the Narrows rewards and in ways it doesn't. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he's doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Φ, the next step up — not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
+  "description": "Sekou Vestergaard is seventeen and looks it — still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he's prepared to redirect. He has geneware cat ears — soft black-and-orange, a birthday mod from his older sister — that perk and flatten with his mood in ways he hasn't learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nSekou Vestergaard is smart in ways the Narrows rewards and in ways it doesn't. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he's doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Φ, the next step up — not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -167,7 +167,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -225,26 +225,15 @@
     "Gage Circuit",
     "The Narrows Compact",
     "Grandmother",
-    "Slagworks Industrial",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Auricula Felis Modification",
-    "Cezar Watanabe-Gyasi",
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Patient Zero",
+    "Uncle Jun's Synth-Noodle Window",
     "Plot 17",
-    "Ringo DV-4 'Courier'",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Narrows",
-    "The Open Syllabus",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Uncle Jun's Synth-Noodle Window"
+    "GLMZ",
+    "Circuit",
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Middle Eastern (76%) with Hispanic/Latin American (13.5%) and Eastern European (10.5%) ancestry, creating a complex Mediterranean-to-Middle Eastern phenotype with subtle Latin warmth and cool undertones",
+    "heritage": "Northern European (44.5%) with Sub-Saharan African (31.2%) and East Asian (23.0%) ancestry, with minor Hispanic/Latin American (1.3%) influence. This creates a striking multi-continental phenotype: warm medium-to-deep brown skin with golden undertones from the African heritage, cooled by Northern European undertones in shadows, with subtle East Asian facial structure integration and warm Latin accents.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Lean and wiry with the restless musculature of someone who moves constantly through tight urban spaces. Still filling out — shoulders narrower than they will be, all quick angles and economical motion.",
@@ -252,9 +241,8 @@
     "hair_style": "Close-cropped fade, precision-cut, with the orange streak running from temple to back along one side",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and tracking",
-    "skin_tone": "Warm olive-tan with subtle golden undertones from Middle Eastern ancestry, deepened by Latin warmth, with cooler Slavic undertones in shadows. Medium depth, radiant when sun-exposed.",
-    "complexion": "Clean-shaven or light peach fuzz on his jaw, skin clear except for occasional stress-picked spots on his chin. Facial structure shows strong Middle Eastern features — defined nose, well-defined cheekbones with subtle width, expressive brows. Expression naturally animated — eyebrows mobile, eyes always reading the room. Small scar on his upper lip from a childhood fall.",
-    "eye_color_note": "Dark brown, alert and tracking",
+    "skin_tone": "Warm medium-deep brown with golden undertones from Sub-Saharan African heritage, balanced by cooler Northern European undertones in shadows. Radiant when sun-exposed, with subtle warmth throughout.",
+    "complexion": "Clean-shaven or light peach fuzz on his jaw, skin clear except for occasional stress-picked spots on his chin. Facial structure shows integrated ancestry: defined nose with subtle width from African heritage, well-defined cheekbones enhanced by East Asian bone structure, expressive brows. Expression naturally animated — eyebrows mobile, eyes always reading the room. Small scar on his upper lip from a childhood fall.",
     "distinguishing_marks": [
       "Thin scar on upper left lip, barely visible, from childhood accident",
       "Small tattoo on inside right wrist: three vertical dots in black ink, gang marker, done roughly with a needle and ink pen — fresh enough to still look slightly raised"
@@ -263,14 +251,54 @@
     "posture_movement": "Moves in quick, angled lines rather than straight paths — shoulders slightly forward, weight on the balls of his feet, always slightly repositioning even when standing still. Fast hands, restless fidgeting. When he's focused on a conversation or counting, he goes very still, but the stillness is tense, like a caught animal. When relaxed, he sprawls, takes up space, leans into jokes.",
     "clothing_style": "Tier 4 practical streetwear: synthetic jackets in dark greys or blacks with good pocket architecture, reinforced jeans in dark denim, running shoes chosen for speed and grip rather than status (currently wearing worn Shenzen-brand synthetic leather high-tops in charcoal). Layered for quick removal or concealment. No gang colors worn overtly — safer that way. Hoodie or light jacket always accessible. Everything worn is functional, nothing flashy, nothing that costs more than a few days' Φ from running numbers."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Odalys Mohammadi, 173cm lean streetrunner with olive-tan skin and Middle Eastern Mediterranean features, dark alert eyes, sharp cheekbones. Short dark brown hair with bright orange dye streak on left side, matching the orange tips of genetically integrated black cat ears that perk forward with focus. Clean-shaven with thin scar on upper lip. Wearing charcoal Shenzen-brand synthetic high-tops, dark reinforced jeans, grey synthetic jacket with functional pockets, layered for quick movement. Restless posture, weight on balls of feet, hands quick and fidgeting. Urban Great Lakes Metropolitan Zone neon-lit background, cool blue and amber street lighting casting subtle shadows across warm olive complexion. Intense, reading-the-room expression. No chrome or subdermal plating visible. Mood: street-smart, economical, dangerous in quiet ways. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Sekou Vestergaard: 173cm lean wiry street operative with warm medium-deep brown skin, golden undertones, sharp African-Nordic-East Asian blended facial structure with defined cheekbones and expressive brows. Dark brown alert eyes reading the environment. Short dark brown hair with bright orange dye streak on left side fading from wear. Black genetically-integrated geneware cat ears with orange tips, perked forward with focus. Small scar on upper left lip barely visible. Clean-shaven or light peach fuzz. Wearing dark grey synthetic technical jacket with pocket architecture, reinforced dark denim, worn charcoal Shenzen-brand synthetic leather high-tops. Quick-angled posture, weight on balls of feet, restless hands, tense readiness. Fresh three-dot tattoo visible on inside right wrist. Urban night setting, neon glow from rain-slick streets, tight alley or building interior, tension and alertness in every line of his body, shadows emphasizing cool undertones on face while golden warmth catches highlights. Neo-noir gritty realism, street-level perspective. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 76.0,
-    "Hispanic/Latin American": 13.5,
-    "Eastern European": 10.5
+    "Northern European": 44.5,
+    "Sub-Saharan African": 31.2,
+    "East Asian": 23,
+    "Hispanic/Latin American": 1.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 6.6
+      },
+      "Scandinavian": {
+        "Finnish": 37.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 28.4
+      },
+      "East African": {
+        "Kenyan": 0.6,
+        "Ugandan": 0.6
+      },
+      "West African": {
+        "Senegalese": 1.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 23
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 0.7
+      },
+      "South American": {
+        "Venezuelan": 0.1,
+        "Ecuadorian": 0.1
+      },
+      "Caribbean": {
+        "Cuban": 0.4
+      }
+    }
+  }
 }

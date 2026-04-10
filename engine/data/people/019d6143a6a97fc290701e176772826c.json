@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a97fc290701e176772826c",
   "type": "character",
-  "name": "Vivaan Bhattacharya",
+  "name": "Makena Asomaning",
   "aliases": [
     "Rafe",
     "The Kid with the Cart"
@@ -13,7 +13,7 @@
   "age": 12,
   "status": "active",
   "location": "Escanaba Gateway, central atrium and cargo transit corridors, near Michigan Ave and Roosevelt",
-  "description": "Rafailo is small for twelve, wire-thin, with the particular watchful quality of a child who has learned to read rooms before entering them. His skin is a deep reddish-brown, his hair cropped close and growing in with the slight redness of someone whose scalp has been sun-damaged. His eyes are very dark and very bright, and he has a habit of tracking all the exits in any space he enters without appearing to do so. He is missing the tip of his right ring finger, lost to frostbite three winters ago during a crossing he doesn't talk about. He wears practical clothes two sizes too large and has fitted them with improvised adjustment ties, and he pushes an ancient cargo cart with a wheel he has repaired four times with different materials, which means it now sounds like three different instruments simultaneously when in motion.\n\nRafailo arrived at Escanaba Gateway eighteen months ago with his grandmother and two cousins as part of a larger group of climate refugees from the northern agricultural collapse zones. His grandmother, Kebebush, is now in the Gateway's informal medical shelter recovering from the crossing. His cousins, both older, have found seasonal work in Grainfort. Rafailo runs errands. He runs them for Zulaikha Petrov-Oyelaran, for Gerváz Ouattara-Siljanovski, for Chidinma Rautavaara-Saberi, for anyone in the transit community who needs something carried or delivered and can't leave their post to do it. He charges in food, transit tokens, and occasionally information. He is twelve years old and he is already developing a professional reputation.",
+  "description": "Makena Asomaning is small for twelve, wire-thin, with the particular watchful quality of a child who has learned to read rooms before entering them. His skin is a deep reddish-brown, his hair cropped close and growing in with the slight redness of someone whose scalp has been sun-damaged. His eyes are very dark and very bright, and he has a habit of tracking all the exits in any space he enters without appearing to do so. He is missing the tip of his right ring finger, lost to frostbite three winters ago during a crossing he doesn't talk about. He wears practical clothes two sizes too large and has fitted them with improvised adjustment ties, and he pushes an ancient cargo cart with a wheel he has repaired four times with different materials, which means it now sounds like three different instruments simultaneously when in motion.\n\nMakena Asomaning arrived at Escanaba Gateway eighteen months ago with his grandmother and two cousins as part of a larger group of climate refugees from the northern agricultural collapse zones. His grandmother, Kebebush, is now in the Gateway's informal medical shelter recovering from the crossing. His cousins, both older, have found seasonal work in Grainfort. Makena Asomaning runs errands. He runs them for Zulaikha Petrov-Oyelaran, for Gerváz Ouattara-Siljanovski, for Chidinma Rautavaara-Saberi, for anyone in the transit community who needs something carried or delivered and can't leave their post to do it. He charges in food, transit tokens, and occasionally information. He is twelve years old and he is already developing a professional reputation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -171,7 +171,7 @@
     "Safety First": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,38 +229,20 @@
   ],
   "changelog": [],
   "related_entities": [
-    "Escanaba Gateway",
     "Ferrogate Transit",
+    "Escanaba Gateway",
     "Arcturus GE-1 'Garrison'",
     "Bluewater Checkpoint",
     "Grandmother",
-    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
     "Grainfort",
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
     "Big Rig",
-    "Compass Rose",
-    "Alper Inoue-Aidoo",
-    "Anatoliy Faye-Nkrumah",
-    "Aurocet",
-    "Blackmarket",
-    "Brecken Yılmaz-Osei",
-    "Chidinma Rautavaara-Saberi",
-    "Crisanto Dela Torre-Ångström",
-    "Gerváz Ouattara-Siljanovski",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo DV-4 'Courier'",
-    "Somadina Karlsen-Sow",
-    "The Compact",
-    "The Crossing",
-    "Tshiamo Vukić-Arellano",
-    "Zulaikha Petrov-Oyelaran"
+    "Cargo Tacos",
+    "Compass Rose"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed global ancestry: Hispanic/Latin American (37.2%), South Asian (23.3%), Pacific Islander (20.5%), Sub-Saharan African (19.0%). Features reflect this complex blend—warm brown skin tones with subtle golden undertones from Pacific Islander heritage, defined facial structure influenced by South Asian ancestry, and the alert intensity common to equatorial populations.",
+    "heritage": "Complex global diaspora heritage: Southeast Asian (42.3%) dominant with Sub-Saharan African (22.2%), Hispanic/Latin American (14.5%), Central Asian (11.7%), and South Asian (9.3%) ancestry. Features reflect this blend—warm medium-brown skin with golden and bronze undertones from Southeast and South Asian ancestry, strong Sub-Saharan African contribution visible in cheekbone structure and skin depth, with warmer cast from Hispanic/Latin American heritage. Facial structure shows the angular definition common to Southeast and South Asian populations, combined with the broader feature palette of his African heritage.",
     "height_cm": 142,
     "weight_kg": 32,
     "build": "Wire-thin and small for his age, with the compact frame of a child adapted to scarcity; no excess mass, all efficient movement",
@@ -268,8 +250,8 @@
     "hair_style": "Cropped close to the scalp in a practical cut",
     "hair_length": "Short",
     "eye_color": "Very dark brown, nearly black, with unusual brightness and alertness",
-    "skin_tone": "Warm medium-brown with golden undertones and sun-weathered depth; the particular quality of someone adapted to intense equatorial and subtropical climates across multiple continents",
-    "complexion": "Sharp, intelligent facial structure with high cheekbones and defined planes reflecting South Asian ancestry; warm bronze undertones across cheeks and bridge of nose; scalp shows patchy sun damage from extended outdoor exposure; no facial hair; skin is lean and defined despite his age",
+    "skin_tone": "Warm medium-brown with golden and bronze undertones; complexion shows sun-weathered depth from intense tropical and subtropical climate exposure across multiple continents; blended undertones reflect Southeast Asian golden warmth, Sub-Saharan African richness, and Hispanic/Latin American depth",
+    "complexion": "Angular facial structure with defined cheekbones and strong planes reflecting Southeast and South Asian ancestry; bronze and warm undertones across cheeks, bridge of nose, and orbital areas; scalp shows patchy sun damage from extended outdoor exposure; no facial hair; lean and defined facial musculature despite age; skin displays the warm bronze-to-amber quality from blended Southeast Asian, Sub-Saharan African, and South Asian heritage",
     "distinguishing_marks": [
       "Missing the tip of his right ring finger, cleanly severed below the first knuckle — frostbite damage from a winter crossing three years prior",
       "Calloused palms and fingertips from pushing and operating the cargo cart daily"
@@ -278,15 +260,55 @@
     "posture_movement": "Economical and deliberate; he moves quietly and without wasted energy; habitual head-tracking behavior — his eyes constantly register exits, obstacles, and personnel positions without appearing to focus on them; posture is alert but not tense, balanced for quick directional changes",
     "clothing_style": "Practical Tier 4-5 hand-me-downs fitted with improvised adjustment ties; garments two sizes too large that have been cinched, knotted, or stitched to fit; worn synthetic cargo jacket with multiple pockets, faded gray thermal layers, patched utility pants; footwear is mismatched but functional — salvaged work boots held together with adhesive tape and paracord; everything is clean but weathered"
   },
-  "image_prompt": "Vivaan Bhattacharya, a 142cm tall lean young boy with warm medium-brown skin and golden undertones, sharp intelligent features with high cheekbones, very dark alert eyes, short dark brown hair with copper sun-bleached highlights. Missing tip of right ring finger. Wearing oversized hand-me-down synthetic cargo jacket cinched with improvised ties, faded gray thermal layers, patched utility pants, mismatched salvaged work boots taped and paracorded together. Weathered solar-charge strap on left wrist powering cracked handheld display. Alert, economical posture with constant environmental awareness. Cyberpunk 2226 Great Lakes Metropolitan Zone street urchin aesthetic. Neon-lit urban alley setting with industrial backdrop, cool blue and amber accent lighting, gritty and weathered atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Makena Asomaning, 142cm tall compact frame, warm medium-brown skin with golden bronze undertones from blended Southeast Asian, Sub-Saharan African, South Asian and Hispanic heritage, sharp angular facial structure with defined cheekbones, very dark alert eyes, short dark brown hair with copper sun-bleached highlights, missing right ring finger tip, calloused hands, wearing oversized patched gray thermal layers and worn synthetic cargo jacket cinched with improvised ties, mismatched salvaged work boots, weathered solar-charge strap on left wrist powering cracked handheld display, economical alert posture, subtle sun damage on scalp, GLMZ Great Lakes Metropolitan Zone, street-level lighting casting warm shadows on bronze-toned skin, gritty urban environment, Tier 4-5 poverty-adapted aesthetic, documentary realism, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 37.2,
-    "South Asian": 23.3,
-    "Pacific Islander": 20.5,
-    "Sub-Saharan African": 19.0
+    "Southeast Asian": 42.3,
+    "Sub-Saharan African": 22.2,
+    "Hispanic/Latin American": 14.5,
+    "Central Asian": 11.7,
+    "South Asian": 9.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 42.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 14.8
+      },
+      "Southern African": {
+        "Zimbabwean": 5.9,
+        "South African": 1.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 14.5
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 7.1,
+        "Tajik": 4.6
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 3.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.5,
+        "Tamil Sri Lankan": 2.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.2
+      }
+    }
+  }
 }

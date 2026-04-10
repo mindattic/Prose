@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71a7d05a16c72c39a3a13c0",
   "type": "character",
-  "name": "Luca Holm",
+  "name": "Luca Karimov",
   "aliases": [
     "Wences",
     "The Pope"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Ironvein, The Mossback — a seventeen-story residential building of ambiguous structural classification, near Fullerton and Damen",
-  "description": "Wenceslao is a large, deliberate man who moves through the building's corridors with the authority of someone who has personally repaired every system in every wall. He is dark-skinned and silver-haired, wearing the same brand of gray utility coverall every day in rotating copies — he owns six identical pairs. His left hand is entirely prosthetic from the wrist down, functional-grade chrome with a scarred attachment point, replaced after a compressor accident in 2198. He keeps it unsheathed and uncosmeticized because coating it would be, in his words, 'a waste of money on something that already works.'\n\nHe runs The Mossback with the energy of a man holding something together through force of will. He knows the building's 214 residents by unit number, not name, but knows their patterns: who works nights, who has water pressure complaints, whose kid has started marking territory in the stairwell. He is gruff to new tenants, ceremonially gruff to long-term ones, and secretly terrified that the building's ownership consortium will sell to a developer and he'll spend his last working years managing a building that no longer exists in any way he recognizes.",
+  "description": "Luca Karimov is a large, deliberate man who moves through the building's corridors with the authority of someone who has personally repaired every system in every wall. He is dark-skinned and silver-haired, wearing the same brand of gray utility coverall every day in rotating copies — he owns six identical pairs. His left hand is entirely prosthetic from the wrist down, functional-grade chrome with a scarred attachment point, replaced after a compressor accident in 2198. He keeps it unsheathed and uncosmeticized because coating it would be, in his words, 'a waste of money on something that already works.'\n\nHe runs The Mossback with the energy of a man holding something together through force of will. He knows the building's 214 residents by unit number, not name, but knows their patterns: who works nights, who has water pressure complaints, whose kid has started marking territory in the stairwell. He is gruff to new tenants, ceremonially gruff to long-term ones, and secretly terrified that the building's ownership consortium will sell to a developer and he'll spend his last working years managing a building that no longer exists in any way he recognizes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -155,7 +155,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ironvein",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,49 +172,30 @@
     "Hearthstone Firearms Model 9 'Payday'"
   ],
   "related_entities": [
-    "The Reclamation Authority",
     "Ouroboros Energy Thermal Regulation Core",
+    "The Reclamation Authority",
+    "Plot 17",
+    "The Accidental",
+    "Pressure Drop",
     "Ironvein",
-    "Blackmarket",
     "Tessera Corponation",
+    "Blackmarket",
     "Silver",
     "Slagworks Industrial",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Blessed Nkemdirim",
-    "Crucible Industries Cryogenic Axe CA-1 'Frostbite Edge'",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nnamdi Ostrowski-Faletolu",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sisay Bergqvist-Mallari",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Synaptrel",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Peninsula",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Southeast Asian with significant Sub-Saharan African, Hispanic/Latin American, and Eastern European ancestry. A striking blend that manifests in warm-toned brown skin with subtle golden undertones, robust facial structure reflecting diverse genetic contributions, and the weathered dignity of a man whose lineage spans continents.",
+    "heritage": "Predominantly Central Asian (55.1%) with substantial Sub-Saharan African (16.3%), Eastern European (11.8%), Hispanic/Latin American (9.7%), and East Asian (7.1%) ancestry. A striking convergence of the Silk Road, African diaspora, and European lineages that manifests in warm medium-to-deep brown skin with subtle golden undertones, robust facial structure combining Central Asian cheekbone prominence with Sub-Saharan African lip fullness and facial width, layered with Eastern European bone definition. The weathered dignity of a man whose genetic heritage spans from the steppes to the savannas to the Carpathians to the highlands, all visible in his sixty-one years.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large and solid, broad-shouldered with the settled heaviness of a man in his sixties who has spent four decades moving through tight spaces and lifting things. Still muscular across the chest and forearms, but with a thickened waist and the slight forward curve of someone whose spine has been negotiating gravity for sixty-one years.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, the weathered patina of someone who has spent decades under fluorescent and natural light in equal measure. The complexity of his Central Asian, Sub-Saharan African, and Eastern European ancestry visible in subtle variations across his face and neck, with traces of Hispanic/Latin American and East Asian heritage contributing to the overall warmth and depth of tone.",
     "hair_color": "Silver-white, natural with some remaining dark roots at the temples",
-    "hair_style": "Cropped short, practical, no styling. Gray stubble suggests he shaves every two or three days, without particular attention.",
+    "hair_style": "Cropped short, practical, no styling",
     "hair_length": "Short",
     "eye_color": "Dark brown, steady and observant",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, the weathered patina of someone who has spent decades under fluorescent and natural light in equal measure. The complexity of his ancestry visible in subtle variations across his face and neck.",
-    "complexion": "Lined face with deep grooves bracketing the mouth from years of frowning at faulty wiring. The structure of his face reflects his Southeast Asian and African heritage — strong cheekbones, broad nose, full lips now thinned by age — layered with the bone structure of his Hispanic and Eastern European ancestry. Sun damage on the left side of his neck and jaw. A small scar on his upper lip, white against warm brown skin, from a long-healed accident. Clean-shaven most days, or left with several days' gray stubble. No vanity, but scrupulously clean.",
+    "complexion": "Lined face with deep grooves bracketing the mouth from years of frowning at faulty wiring. The structure of his face reflects his dominant Central Asian heritage — moderate cheekbones, balanced nose, strong jaw — layered with the fuller lips and facial width of his Sub-Saharan African ancestry, the bone prominence and facial angularity of his Eastern European lineage, and subtle contributions from his Hispanic/Latin American and East Asian heritage creating additional depth to his features. Sun damage on the left side of his neck and jaw. A small scar on his upper lip, white against warm brown skin, from a long-healed accident. Gray stubble suggesting he shaves every two or three days. Clean, practical grooming with no vanity.",
     "distinguishing_marks": [
       "Extensive burn scarring on the left forearm and wrist, radiating outward from the prosthetic attachment point in a sunburst pattern of healed tissue — white, raised, and uneven from the 2198 compressor accident",
       "A thin white scar running diagonally across his left collarbone, barely visible against his skin, from a fall through a maintenance hatch in 2187",
@@ -225,16 +206,71 @@
     "posture_movement": "Moves with deliberate efficiency, economical gestures. Walks the building's corridors at a steady pace with his weight forward, shoulders slightly rounded from years of working in confined spaces. His right hand gestures frequently when speaking; his left hand remains stationary or makes precise, practiced movements. He has learned to compensate for its mechanical limitations — never wastes movement, never forces the hand to do what it cannot. Stands with feet planted shoulder-width apart, balanced, ready. A man who has internalized the building's architecture into his own body mechanics.",
     "clothing_style": "Six identical pairs of gray utility coveralls, visibly worn and repaired in multiple places — patches on the knees, reinforced seams along the shoulders, stains that have become permanent features of the fabric. Steel-toed work boots, scuffed, re-soled at least twice. A layered gray undershirt visible at the collar and wrists. No logos, no branding, no affectation. Tier 3-4 working class, but with the dignity of someone who has chosen function over fashion. A tool belt worn low on his hips, weighted and organized, always present. No jewelry except a simple metal band on his right ring finger — worn, unmarked, date unknown."
   },
-  "image_prompt": "Luca Holm, 61-year-old maintenance engineer, cyberpunk 2226, warm medium-brown skin with subtle golden undertones reflecting Southeast Asian, African, Hispanic and Eastern European heritage. Silver-white cropped hair with dark roots at temples, gray stubble, deep-lined face showing decades of dedication, dark observant eyes. Broad-shouldered solid build slightly forward-curved from age, wearing worn gray utility coveralls with visible patches and repairs. Left forearm and wrist covered in white radiating burn scars from prosthetic attachment, left hand entirely brushed chrome prosthetic with visible support bracing and servo mechanisms, right hand with worn metal ring. Calloused hands, tool belt weighted at hips, steel-toed scuffed work boots. Standing in industrial maintenance corridor under flickering fluorescent light, posture balanced and ready, shoulders slightly rounded from years in confined spaces. Mood: weathered dignity, practical, observant. Cyberpunk dystopian Great Lakes Metropolitan Zone setting, neon industrial lighting casting shadows on scarred features. --ar 2:3 --v 6",
+  "image_prompt": "61-year-old Luca Karimov, Central Asian-dominant mixed heritage with Sub-Saharan African, Eastern European, Hispanic, and East Asian ancestry. Warm deep brown skin with golden undertones, weathered face with deep mouth lines, moderate Central Asian cheekbones blended with fuller Sub-Saharan African lips and angular European bone structure. Silver-white cropped hair with dark roots at temples, gray 2-3 day stubble. Tall broad-shouldered build, 188cm, solid with age-thickened waist, muscular chest and forearms. Dark observant eyes. Left forearm and wrist covered in extensive white burn scarring in sunburst pattern around brushed chrome prosthetic hand attachment; visible mechanical scarring and bracing at wrist. Small white scar on upper lip, thin diagonal scar on left collarbone, calloused hands with tiny single-line building tattoo on right inner wrist. Worn gray utility coveralls with patches and permanent stains, steel-toed work boots, gray undershirt, tool belt, simple worn metal ring on right ring finger. Posture: forward-leaning, economical movement, feet shoulder-width apart, balanced and ready. GLMZ Great Lakes Metropolitan Zone maintenance worker, practical grooming, no vanity, scrupulously clean. Standing in dimly-lit building corridor with fluorescent strips and warm ambient light casting shadows across weathered features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 45.8,
-    "Sub-Saharan African": 21.5,
-    "Hispanic/Latin American": 18.4,
-    "Eastern European": 11.3,
-    "East Asian": 3.0
+    "Central Asian": 55.1,
+    "Sub-Saharan African": 16.3,
+    "Eastern European": 11.8,
+    "Hispanic/Latin American": 9.7,
+    "East Asian": 7.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 45.7,
+        "Uzbek": 9.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 8.7,
+        "Cameroonian": 0.5
+      },
+      "East African": {
+        "Ugandan": 2.8,
+        "Somali": 1.8
+      },
+      "Southern African": {
+        "South African": 2.5
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 1.7,
+        "Slovak": 0.7
+      },
+      "Slavic East": {
+        "Belarusian": 3.8,
+        "Russian": 2.9
+      },
+      "Slavic South": {
+        "Bosnian": 1.6,
+        "Croatian": 1.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 3.1,
+        "Colombian": 5.6
+      },
+      "Mexican": {
+        "Mexican": 0.9
+      },
+      "Caribbean": {
+        "Dominican": 0.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 2.3
+      },
+      "Japanese": {
+        "Japanese": 4.8
+      }
+    }
+  }
 }

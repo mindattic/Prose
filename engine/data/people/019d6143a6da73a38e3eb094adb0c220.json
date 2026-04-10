@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6da73a38e3eb094adb0c220",
   "type": "character",
-  "name": "Noor Ozcoidi-Sabbagh-Chatterjee",
+  "name": "Remi Chaiyaporn-Calvillo-Hernández",
   "aliases": [
     "Sor",
     "the Bone Woman"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Undertow, operating out of a converted cold-storage unit in the Escanaba Gateway industrial strip, near Michigan Ave South and Cermak",
-  "description": "Sorcha is built like someone designed for endurance rather than strength — medium height, dense through the shoulders and hips, with a wiry toughness that reads as practical rather than threatening until she needs it to read as threatening. She has her Irish grandmother's pale freckled complexion shot through with the warmer undertones of her Guinean father's family, and her hair is a tight natural coil she keeps bound under a surgical-grade hygiene cap more often than not. Her eyes are dark and evaluating. She has cosmetic bioluminescent tracery along her collarbones — pale green — which she got at nineteen and now considers a poor decision she's too superstitious to remove. Her hands are her tell: surgically precise, always slightly cool, the grip of someone accustomed to handling things that used to be alive.\n\nSorcha is not a monster — she knows this because she has thought about it carefully and often. She is a pragmatist operating in a system where Aurochs Medical and Helix Biosystems have cornered legitimate organ markets behind tiered pricing that kills anyone below Tier 3. She tells herself she redistributes. She sometimes believes it. She is efficient, professionally warm in the way of doctors who have learned warmth as a tool, and she maintains a meticulous cold chain and storage protocol that she is genuinely proud of. What she does not examine carefully is the question of where, exactly, her suppliers obtain their inventory.",
+  "description": "Remi Chaiyaporn-Calvillo-Hernández is built like someone designed for endurance rather than strength — medium height, dense through the shoulders and hips, with a wiry toughness that reads as practical rather than threatening until she needs it to read as threatening. She has her Irish grandmother's pale freckled complexion shot through with the warmer undertones of her Guinean father's family, and her hair is a tight natural coil she keeps bound under a surgical-grade hygiene cap more often than not. Her eyes are dark and evaluating. She has cosmetic bioluminescent tracery along her collarbones — pale green — which she got at nineteen and now considers a poor decision she's too superstitious to remove. Her hands are her tell: surgically precise, always slightly cool, the grip of someone accustomed to handling things that used to be alive.\n\nRemi Chaiyaporn-Calvillo-Hernández is not a monster — she knows this because she has thought about it carefully and often. She is a pragmatist operating in a system where Aurochs Medical and Helix Biosystems have cornered legitimate organ markets behind tiered pricing that kills anyone below Tier 3. She tells herself she redistributes. She sometimes believes it. She is efficient, professionally warm in the way of doctors who have learned warmth as a tool, and she maintains a meticulous cold chain and storage protocol that she is genuinely proud of. What she does not examine carefully is the question of where, exactly, her suppliers obtain their inventory.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -202,7 +202,7 @@
     "Scholar": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -268,43 +268,22 @@
     "Helix Biosystems",
     "Escanaba Gateway",
     "The Undertow",
-    "Riddle",
     "Grandmother",
     "ShieldTech CLA-3 'Cascade'",
     "Carrion Defense Works Harvester CDW-12 'Thresher'",
-    "Clearpath",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Clearpath",
     "SynapTech GripTrue Palmar Adhesion Implant",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
-    "Tibor Osei-Svanstrom",
+    "Frost Boudiaf",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pale Mile",
-    "Arcturus PG-3 'Aegis'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Gravesend Basin",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kadiatou Bergstrom-Konate",
-    "MERIDIAN",
-    "Marrowvault Cryogenics",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo AX-12 'Harvester'",
-    "Saodat Mirzoyan-Fubara",
-    "Serafin",
-    "Stainless Steel",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "TESSERA PA-5 'Attendant'",
-    "The Question",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Indigenous American (primary, 72%), Middle Eastern (24.3%), South Asian (3.7%)",
+    "heritage": "Complex diaspora ancestry: primarily Hispanic/Latin American (45.9%) with significant Southeast Asian (22.0%), Northern European (13.4%), Sub-Saharan African (10.5%), and Indigenous American (8.2%) heritage. This blend creates a uniquely multifaceted phenotype reflecting the Ubiquitous Diaspora. Her features show the warm, defined cheekbones and facial width characteristic of Southeast Asian ancestry, enriched by the deep golden undertones of Latin American and African heritage, refined by Northern European bone structure, and grounded in Indigenous American features. The result is a striking, even complexion with subtle regional feature blending—neither distinctly one ancestry nor another, but a harmonious synthesis.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Medium frame, dense through shoulders and hips, wiry and compact. Built for endurance and precision rather than strength. Low body fat, defined musculature in forearms and hands from years of surgical work.",
@@ -312,8 +291,8 @@
     "hair_style": "Tightly bound under a surgical-grade hygiene cap in clinical settings; when unbound, worn close to the scalp in natural coils",
     "hair_length": "Short (shoulder-length when unbound)",
     "eye_color": "Dark brown, evaluative and steady",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones from Middle Eastern ancestry blending with Indigenous American heritage. Medium-deep, even tone with warm undertones throughout.",
-    "complexion": "Clear, well-maintained skin with faint freckles across nose and cheekbones. Minimal scarring on her face—her professional control extends to her appearance. Slight creases around her eyes from years of focused concentration. Cold lips, minimal color. Facial structure reflects high Indigenous American ancestry with defined cheekbones and warm undertones enriched by Middle Eastern heritage.",
+    "skin_tone": "Warm medium complexion with golden-amber undertones blending Latin American, Southeast Asian, Indigenous American, and Sub-Saharan African heritage, refined by Northern European ancestry. Rich luminous tone with subtle olive warmth, even and radiant across face and body.",
+    "complexion": "Clear, well-maintained skin with faint freckles across nose and cheekbones. Minimal scarring on her face—her professional control extends to her appearance. Slight creases around her eyes from years of focused concentration. Cold lips, minimal color. Facial structure reflects the blended heritage: defined, high cheekbones with subtle fullness at temples (Southeast Asian influence), warm undertone depth (Latin American and African ancestry), refined bone structure with gentle angularity (Northern European genetics), and grounded by strong, balanced proportions (Indigenous American heritage).",
     "distinguishing_marks": [
       "Bioluminescent cosmetic tracery in pale green running along both collarbones in intricate geometric patterns—a nineteen-year-old decision she now considers superstitious to remove",
       "Fine surgical scars on both palms and inner forearms, barely visible unless light catches them at specific angles",
@@ -323,14 +302,61 @@
     "posture_movement": "Stands with spine straight but not rigid—the posture of someone accustomed to standing still for long procedures. Moves with economical efficiency, no wasted motion. Hands are always slightly cooler to the touch, move with surgical precision and constant micro-adjustments. Eyes rarely blink; she watches more than she looks. When she walks, each step is deliberate and grounded.",
     "clothing_style": "Tier 3-4 functional professional. Default: surgical-grade hygiene cap, fitted thermal base layer under a charcoal grey medical-weight coat with discrete padding at shoulders and ribs (Escanaba Skinners protection), black utility trousers with reinforced pockets, sterile nitrile gloves kept in coat pockets. No jewelry except a worn stainless steel ring on her right index finger. Boots are durable, non-slip medical-grade rubber. Everything is kept meticulously clean and shows no signs of wear or staining. She dresses like someone for whom cleanliness is not habit but ideology."
   },
-  "image_prompt": "Noor Ozcoidi-Sabbagh-Chatterjee, 168cm surgical professional with warm golden-brown Indigenous American complexion enriched with subtle olive Middle Eastern undertones. Sharp cheekbones, dark evaluative eyes, dark coiled hair bound under sterile surgical cap. Pale green bioluminescent tracery glowing faintly along both collarbones in geometric patterns. Fitted charcoal grey medical-weight coat, black utility trousers, medical-grade boots, sterile nitrile gloves. Subdermal sensor grid faintly visible at inner wrists. Precise, economical posture. Minimal facial freckles, slight eye creases from concentration. Cold atmosphere, clinical precision. Cyberpunk 2226 GLMZ, cold clinical lighting, sterile medical setting or dimly lit operative space. Mood: controlled, professional, watchful. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Remi Chaiyaporn-Calvillo-Hernández, 168cm tall surgical specialist in GLMZ, golden-amber warm medium complexion blending Southeast Asian and Latin American features with refined Northern European bone structure. High defined cheekbones, dark evaluative eyes, dark brown natural coils partially hidden under surgical hygiene cap. Faint pale green bioluminescent tracery glows across collarbones in geometric patterns. Wearing charcoal grey medical-weight protective coat, thermal base layer, black utility trousers, sterile nitrile gloves. Hands show surgical precision, faint subdermal sensor marks visible at wrists. Cool professional demeanor, economical posture, barely visible surgical scars catching light. Clean, ideology-driven aesthetic. Neo-noir clinic lighting, cool-toned and sterile, with subtle bioluminescent highlights on collar tracery. Serious, focused expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 72.0,
-    "Middle Eastern": 24.3,
-    "South Asian": 3.7
+    "Hispanic/Latin American": 45.9,
+    "Southeast Asian": 22,
+    "Northern European": 13.4,
+    "Sub-Saharan African": 10.5,
+    "Indigenous American": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 22
+      },
+      "South American": {
+        "Peruvian": 17.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.8,
+        "Cuban": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 16.1
+      },
+      "Indonesian": {
+        "Sundanese": 1.4,
+        "Javanese": 4.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 5.8
+      },
+      "Germanic": {
+        "German": 4.1,
+        "Dutch": 3.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 10.1
+      },
+      "West African": {
+        "Malian": 0.4
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 8.2
+      }
+    }
+  }
 }

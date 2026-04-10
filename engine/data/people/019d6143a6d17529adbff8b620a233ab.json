@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d17529adbff8b620a233ab",
   "type": "character",
-  "name": "Indigo Espinoza-Strömqvist-Haugen",
+  "name": "Rashid Raghavan-Balasanyan-Agyemang",
   "aliases": [
     "Sola",
     "The Weaver"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave — a converted laundromat called The Spinning Shrine, near Ashland and Division",
-  "description": "Solange is a broad-shouldered woman with deep brown skin mapped in bioluminescent circuit-tattoos that pulse faint gold when she enters communion with an E.L.F. Her hair is grown out into dense locs interwoven with fiber-optic thread that catches light like a halo when she moves. One eye is her birth eye — warm amber — and the other is a clouded prosthetic she refuses to replace, calling it her 'closed eye,' the one that sees inward. She smells perpetually of solder flux and dried calendula.\n\nSolange runs her shrine with the pragmatic warmth of a grandmother who has buried three husbands and outlasted two corporate annexations. She doesn't perform mysticism; she simply treats the E.L.F.s as real presences requiring courtesy and reciprocity, the same way you'd treat a difficult neighbor who controls your water supply. Her divinations are drawn from corrupted data streams, fragmented telemetry, and the static patterns that accumulate in old appliances — she calls this 'the residue of wanting.' She is impossible to rattle and equally impossible to fully read.",
+  "description": "Rashid Raghavan-Balasanyan-Agyemang is a broad-shouldered woman with deep brown skin mapped in bioluminescent circuit-tattoos that pulse faint gold when she enters communion with an E.L.F. Her hair is grown out into dense locs interwoven with fiber-optic thread that catches light like a halo when she moves. One eye is her birth eye — warm amber — and the other is a clouded prosthetic she refuses to replace, calling it her 'closed eye,' the one that sees inward. She smells perpetually of solder flux and dried calendula.\n\nRashid Raghavan-Balasanyan-Agyemang runs her shrine with the pragmatic warmth of a grandmother who has buried three husbands and outlasted two corporate annexations. She doesn't perform mysticism; she simply treats the E.L.F.s as real presences requiring courtesy and reciprocity, the same way you'd treat a difficult neighbor who controls your water supply. Her divinations are drawn from corrupted data streams, fragmented telemetry, and the static patterns that accumulate in old appliances — she calls this 'the residue of wanting.' She is impossible to rattle and equally impossible to fully read.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -156,7 +156,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,34 +172,14 @@
     "Hamtramck Enclave",
     "Grandmother",
     "Tessera Corponation",
+    "Circuit",
     "Residue (I Still Have Your Feed)",
     "Gravimetric Collapse Charge GCC-9",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Static",
-    "Gold",
-    "Abeke Soriano-Dlamini",
-    "Anatoliy Faye-Nkrumah",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Last Word",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Slagworks Industrial",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Signal",
-    "Tomáš Ekwuosi-Ranginui",
-    "Tsveta Nwosu-Karlsdóttir",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yuki Nwosu-Petrenko"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (38.7%) with significant Hispanic/Latin American (17.5%) and Indigenous American (15.7%) ancestry, complemented by Northern European (13.7%), Sub-Saharan African (10.3%), and North African (4.1%) heritage. This creates a striking polychromatic phenotype — warm golden-bronze skin with the bone structure of East Asian ancestry, softened and broadened by the Indigenous American and African genetic contributions.",
+    "heritage": "Richly blended polychromatic ancestry combining Middle Eastern (31.1%), Sub-Saharan African (30.1%), South Asian (23.9%), and East Asian (14.9%) heritage. This creates a striking integrated phenotype — warm deep bronze skin tone that harmonizes golden Middle Eastern and South Asian undertones with the rich warmth of Sub-Saharan African ancestry, subtly layered with East Asian tonal complexity. The result is a multidimensional complexion that reflects balanced continental contribution across all four ancestral regions.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial without softness — the build of someone who has carried weight both literal and metaphorical. Strong upper body, grounded stance. Moves with deliberate grace despite her age.",
@@ -207,28 +187,75 @@
     "hair_style": "Dense locs interwoven with fiber-optic thread throughout, styled loose and voluminous. The thread catches ambient light creating a halo effect when she moves.",
     "hair_length": "Long (shoulder-blade length locs)",
     "eye_color": "Left eye: warm amber (natural). Right eye: clouded white-grey prosthetic with faint iridescent scattering",
-    "skin_tone": "Warm golden-bronze with subtle peachy undertones — the blended result of East Asian base with Indigenous American and Sub-Saharan African warmth. Rich and complex rather than uniform.",
-    "complexion": "Lined face bearing the geography of five decades — high, pronounced cheekbones reflecting East Asian ancestry, softened and widened by Indigenous American and African heritage. Creases around the eyes and mouth speak of frequent expression rather than frowning. Skin is clear and well-maintained, carrying a faint sheen from the solder flux she works with. Subtle epicanthic folds at the eye corners, broader nose structure with full nostrils. No visible cosmetic concealment.",
+    "skin_tone": "Warm deep bronze with multidimensional undertones — blended Middle Eastern golden warmth and South Asian refinement enriched by Sub-Saharan African depth, with subtle East Asian undertonal complexity. Rich, complex, and luminous rather than uniform.",
+    "complexion": "Lined face bearing the geography of five decades — strong, defined cheekbones balanced across Middle Eastern prominence and South Asian structure, broadened and softened by Sub-Saharan African heritage contribution. Creases around the eyes and mouth speak of frequent expression rather than frowning. Skin is clear and well-maintained, carrying a faint sheen from the solder flux she works with. Refined eye structure reflecting South Asian and East Asian ancestry; broader nose structure with full nostrils balanced by Middle Eastern definition. Subtle East Asian undertones visible in the delicate contours of upper eyelids and cheekbone angles. No visible cosmetic concealment.",
     "distinguishing_marks": [
       "Bioluminescent circuit-tattoos covering her shoulders, collarbone, and upper chest — fine golden lines that pulse faintly with amber light during E.L.F. communion. Patterns resemble circuit boards crossed with spiritual iconography.",
       "Thin burn scar along the right side of her neck (pre-dating her augmentations, from a factory accident in her twenties).",
       "Calluses on both palms, deepest on the left where her subdermal data-tap sits beneath the skin as a faint metallic gleam."
     ],
-    "visible_augmentations": "Clouded left prosthetic eye (deliberately kept non-functional and unpolished as a spiritual choice). Faint subdermal shimmer visible in her left palm under certain light angles. Bioluminescent circuit-tattoos that activate during communion work. No chrome — all augmentations are subtle, integrated, or deliberately symbolic.",
+    "visible_augmentations": "Clouded right prosthetic eye (deliberately kept non-functional and unpolished as a spiritual choice). Faint subdermal shimmer visible in her left palm under certain light angles. Bioluminescent circuit-tattoos that activate during communion work. No chrome — all augmentations are subtle, integrated, or deliberately symbolic.",
     "posture_movement": "Stands with weight balanced, shoulders back. Moves slowly and deliberately with the confidence of someone who has stopped rushing. Her hands are expressive but controlled. She makes direct eye contact with her functional eye in a way that feels like assessment rather than challenge. When she enters communion, her posture becomes perfectly still — the only movement is the pulsing of her circuit-tattoos.",
     "clothing_style": "Tier 3-4 practical spirituality. Favors loose linen and cotton layers in earth tones (rust, deep indigo, grey) that allow freedom of movement and don't catch on the shrine's machinery. Often wears a long indigo vest with deep pockets over a simple cream shirt. Her hands are usually bare except for a worn copper ring on her right index finger. Feet in soft leather sandals or minimal soles. Smell: perpetual undertone of solder flux and dried calendula hanging on her clothes and skin."
   },
-  "image_prompt": "Indigo Espinoza-Strömqvist-Haugen, a 50-something woman with warm golden-bronze skin and striking East Asian-Indigenous American-African heritage features—high cheekbones, full lips, dark almond-shaped eyes. Left eye glowing amber-gold, right eye a clouded white prosthetic. Long black locs threaded with glowing fiber-optic filaments catching ambient light like a halo. Broad shoulders, substantial build, moves with deliberate grace. Deep creases around her eyes from decades of expression. Wearing loose rust-and-indigo linen layers, long indigo vest over cream shirt, worn copper ring on right index finger. Soft leather sandals. Golden bioluminescent circuit-tattoo patterns glowing faintly across shoulders and collarbone in sacred geometric designs. Thin burn scar visible on right side of neck. Standing in a dimly-lit cyberpunk shrine chamber with vintage machinery, surrounded by soft warm amber light that illuminates the fiber-optic threads in her hair and activates her circuit-tattoos. Smell of solder flux and dried herbs in the air. Cyberpunk 2226, spiritual technologist, quiet power, still composure. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Rashid, a 50-year-old woman with rich deep bronze skin reflecting Middle Eastern, Sub-Saharan African, South Asian, and East Asian ancestry. Strong defined cheekbones, left eye warm amber, right eye clouded white-grey prosthetic. Long black locs with fiber-optic threading creating a luminous halo. Bioluminescent golden circuit-tattoos pulsing faintly across shoulders and collarbone. Wearing loose cream linen shirt under deep indigo vest, earth-toned layers. Worn copper ring on right hand. Faint burn scar visible on right neck. Direct, measured gaze. Standing in meditation pose in a neo-noir shrine interior with soft ambient lighting and subtle E.L.F. glow, calm and spiritual, GLMZ, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.7,
-    "Hispanic/Latin American": 17.5,
-    "Indigenous American": 15.7,
-    "Northern European": 13.7,
-    "Sub-Saharan African": 10.3,
-    "North African": 4.1
+    "Middle Eastern": 31.1,
+    "Sub-Saharan African": 30.1,
+    "South Asian": 23.9,
+    "East Asian": 14.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 4.8
+      },
+      "Persian": {
+        "Iranian": 3,
+        "Afghan Dari": 8
+      },
+      "Arab Gulf": {
+        "Yemeni": 5.1,
+        "Emirati": 10.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 7.3,
+        "Zimbabwean": 10.3
+      },
+      "Central African": {
+        "Congolese": 8.6,
+        "Angolan": 3.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.3
+      },
+      "Indian": {
+        "Telugu": 4,
+        "Kannada": 1.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 7.7,
+        "Sinhalese": 1.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.5
+      },
+      "Chinese": {
+        "Cantonese": 2.1
+      },
+      "Japanese": {
+        "Japanese": 7.3
+      }
+    }
+  }
 }

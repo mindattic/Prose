@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6067825becb43733669cfb8",
   "type": "character",
-  "name": "Briar Baiseitov",
+  "name": "Briar Arakawa",
   "aliases": [
     "The Judge"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -101,14 +101,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Chicago",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "The Heritage Vault",
-    "Yuki Nwosu-Petrenko"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African, Central Asian, and Hispanic/Latin American blend; the genetic mix creates rich depth in her features—darker undertones from African ancestry balanced with Central Asian bone structure and Hispanic warmth",
+    "heritage": "Tricontinent blend with dominant South Asian (26.2%), Middle Eastern (25.3%), and East Asian (24.7%) ancestry, anchored by Pacific Islander warmth (18.0%) and subtle Northern European fairness (5.8%). The genetic mix creates striking angular cheekbones and defined facial structure from South Asian-Middle Eastern bone architecture, refined and sharpened by East Asian heritage, while Pacific Islander genetics add warm golden undertones and broader facial width. Northern European ancestry manifests as subtle fairness in skin luminosity rather than overt paleness.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Stocky and broad-shouldered with maintained muscle tone despite age; years of physical work have given her solid, functional frame rather than aesthetic definition",
@@ -116,27 +113,63 @@
     "hair_style": "Pulled back in a tight, practical braid; functional rather than fashionable",
     "hair_length": "Medium",
     "eye_color": "Deep brown, sharp and assessing",
-    "skin_tone": "Deep warm brown with subtle golden undertones; rich complexion reflecting the blend of Sub-Saharan, Central Asian, and Latin American ancestry",
-    "complexion": "Weathered and lined, especially around eyes and forehead; minimal makeup; scars on left cheekbone and jawline softened by age but still visible; skin shows sun damage and character; broad facial structure with strong cheekbones characteristic of Central Asian heritage, softened by the rounded fullness from African and Latin ancestry",
+    "skin_tone": "Warm medium-bronze with golden-amber undertones; South Asian-Middle Eastern base enriched by Pacific Islander warmth creating a luminous bronze quality, with East Asian refinement adding subtle depth and Northern European fairness contributing cool luminosity beneath the warm surface",
+    "complexion": "Weathered and lined, especially around eyes and forehead; minimal makeup; scars on left cheekbone and jawline softened by age but still visible; skin shows sun damage and character. Pronounced cheekbones and defined angular facial structure from South Asian-Middle Eastern ancestry, refined by East Asian heritage into sharp jawline and high, prominent cheekbones. Pacific Islander genetics broaden and warm the overall facial presentation, softening the severity of the angularity with fuller cheek placement and wider facial structure.",
     "distinguishing_marks": [
       "Thin white scar running from left cheekbone down to jawline, approximately 8cm long",
       "Small burn scar on inner right wrist, roughly 2cm diameter, pale and old",
-      "Faded tattoo on right forearm: a symbol combining geometric Central Asian and Sub-Saharan motifs, partially obscured by age and fading",
+      "Faded tattoo on right forearm: a symbol combining geometric South Asian, Middle Eastern, and East Asian motifs, partially obscured by age and fading",
       "Pronounced calluses on both palms and fingers from decades of handling tools and weapons"
     ],
     "visible_augmentations": "None visible; augmentations are strictly subcutaneous if present at all—consistent with her philosophy of discretion",
     "posture_movement": "Moves with deliberate, economical grace; stands slightly forward on the balls of her feet as if always ready to move. Direct eye contact, minimal unnecessary gesture. Speaks slowly and rarely, but commands full attention when she does.",
     "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry—only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
   },
-  "image_prompt": "Briar Baiseitov, 168cm tall weathered woman with deep warm brown skin and steel gray hair pulled back in a practical braid, dark assessing eyes, facial scars on left cheekbone softened by age, strong Central Asian cheekbones softened by African and Latin features, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket, gray thermal layer, heavy canvas pants, black steel-toed boots. Standing with deliberate posture, forward on balls of feet, direct gaze. Mechanical watch visible on wrist. GLMZ cyberpunk 2226 setting, neon-lit industrial background, cool blue and amber lighting, photorealistic, character portrait, weathered and capable presence --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Briar Arakawa, a 168cm stocky woman with broad shoulders and functional muscle tone, standing in GLMZ Great Lakes Metropolitan Zone. Medium steel-gray hair with dark roots pulled tight in practical braid. Deep brown assessing eyes. Warm bronze skin with golden-amber undertones reflecting tricontinent ancestry—sharp South Asian-Middle Eastern cheekbones refined by East Asian heritage, warmed by Pacific Islander genetics into prominent, defined facial structure. Weathered complexion with visible sun damage, pronounced laugh lines, thin white scar from left cheekbone to jawline, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket over gray thermal layer, heavy-duty canvas pants, black steel-toed boots. Simple silver ring on left ring finger. Mechanical watch. Standing forward on balls of feet, direct gaze, economical posture. Dystopian urban background with neon glow, shadows emphasizing facial angles and scars. Cinematic lighting highlighting warm bronze undertones and character lines. Serious, composed expression. Neo-noir utilitarian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.1,
-    "Central Asian": 38.2,
-    "Hispanic/Latin American": 19.2,
-    "East Asian": 3.5
+    "South Asian": 26.2,
+    "Middle Eastern": 25.3,
+    "East Asian": 24.7,
+    "Pacific Islander": 18,
+    "Northern European": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 14.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 11.9
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 25.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 24.7
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 1.4,
+        "Tokelauan": 3.3
+      },
+      "Micronesian": {
+        "Palauan": 13.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 3.2,
+        "Irish": 2.6
+      }
+    }
+  }
 }

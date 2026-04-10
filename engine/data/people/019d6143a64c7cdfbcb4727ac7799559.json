@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64c7cdfbcb4727ac7799559",
   "type": "character",
-  "name": "Milena Solberg",
+  "name": "Camila Wojciechowski",
   "aliases": [
     "Warp",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
-  "description": "Liora Sundberg-Boadu is slight and easy to overlook, which is exactly the point. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Liora Sundberg-Boadu describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Camila Wojciechowski is slight and easy to overlook, which is exactly the point. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Camila Wojciechowski describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -260,7 +260,7 @@
     "Analyst": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,35 +275,15 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Shelf",
+    "Chicago",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "Chicago",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Ngaire Rojas-Yeboah",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TERMINUS",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-Asian with Eastern European and Sub-Saharan African admixture — Southeast Asian bone structure (higher cheekbones, slightly tapered face shape) blended with Eastern European and Northern European features. Genetic ancestry reflects the Ubiquitous Diaspora: 23.9% Southeast Asian, 22.7% Eastern European, 21.7% Sub-Saharan African, 18.5% Northern European, 13.2% South Asian. Complex phenotype with no single dominant ancestry.",
+    "heritage": "Eastern European-dominant ancestry (53.6%) with substantial Hispanic/Latin American (23.0%), South Asian (8.3%), Pacific Islander (8.2%), and Sub-Saharan African (6.9%) admixture. Phenotype reflects this complex global blend: Eastern European bone structure combined with warmth and dimension from Latin American and African heritage, eye shape and placement influenced by South Asian ancestry, and subtle Pacific Islander softness to facial contours. The Ubiquitous Diaspora made flesh — a harmonious, multitonal blend rather than a single dominant appearance, with skin that shifts tonality across different lighting conditions.",
     "height_cm": 164,
     "weight_kg": 52,
     "build": "Lean and wiry — muscle density optimized for precision work rather than bulk. Move-by-wire augmentation creates an almost unnaturally efficient frame, no wasted mass.",
@@ -311,8 +291,8 @@
     "hair_style": "Pulled back tight, practical — usually in a braid or ponytail, minimal styling",
     "hair_length": "Medium",
     "eye_color": "Gray-green, sharp and focused",
-    "skin_tone": "Warm medium brown with subtle golden undertones — the result of blended Southeast Asian, Sub-Saharan African, and Northern European ancestry creating a complex, multitonal complexion that reads differently depending on light source",
-    "complexion": "Clean-shaven face, Southeast Asian-influenced cheekbones and jawline structure, minimal cosmetic care — skin bears the weathering of street life and augmentation stress. Expression neutral by default, eyes do the talking.",
+    "skin_tone": "Warm medium brown with golden undertones — a complex, multitonal complexion where Eastern European, Hispanic/Latin American, South Asian, and Sub-Saharan African ancestries create visible harmonic blending. Olive-warm in daylight, deeper amber in neon. Demonstrates the characteristic depth of heavily mixed heritage without a dominant tonal baseline.",
+    "complexion": "Clean-shaven face with Eastern European-influenced bone structure noticeably softened by Latin American and South Asian features — broader cheekbones than purely Eastern European, slightly fuller lower face from Latin American heritage, almond-shaped eyes with distinct South Asian eye shape influence, subtle eyelid characteristics reflecting South Asian ancestry. Minimal cosmetic care — skin bears the weathering of street life and augmentation stress. Expression neutral by default, eyes do the talking.",
     "distinguishing_marks": [
       "Raised chrome-edged surgical scars running vertically along both temples, from augmentation installation, visible when hair is pulled back",
       "Jagged scar tissue along the left jawline and behind the ear — remnant from cortical bomb removal by street doc, crude but functional healing",
@@ -323,16 +303,69 @@
     "posture_movement": "Economical and controlled — no wasted motion. Stands with weight slightly forward, shoulders relaxed but ready. Eyes track movement constantly. When in motion, each gesture is deliberate and calibrated; the move-by-wire system makes her movements appear slightly too smooth, slightly too perfect, subtly inhuman.",
     "clothing_style": "Tier 3-4 utilitarian — dark, durable fabrics that don't show wear or blood. Long sleeves standard to cover augmentation scarring. Worn synth-leather jacket with hidden pockets for maintenance tools and ammunition. Cargo pants with reinforced thigh pockets. Steel-toed boots, scuffed and practical. No ornamentation or chrome jewelry — chrome is functional, not decorative. Between contracts, favors baggy hoodies and neutral colors to become forgettable."
   },
-  "image_prompt": "Milena Solberg, 164cm lean augmented operative, GLMZ 2226. Complex phenotype — Southeast Asian cheekbones blending with Eastern European and Sub-Saharan African features, warm medium brown skin with golden undertones. Dark bronze-brown hair pulled back tight, gray-green eyes sharp and predatory. Chrome-edged temple scars visible, subcutaneous metallic sheen at wrists. Minimal facial expression, neutral demeanor. Wearing worn synth-leather jacket over long sleeves, dark cargo pants, scuffed steel-toed boots. Standing with economical posture, weight forward, shoulders ready. Cyberpunk street operative aesthetic, professional killer in repose. Moody neon-lit urban interior, shadows and reflected chrome light across face, cool color palette with warm skin tones creating contrast. Slight movement blur suggesting preternatural precision. --ar 2:3 --v 6",
+  "image_prompt": "Camila Wojciechowski, lean 164cm female operative, warm medium-brown complexion with golden undertones reflecting mixed Eastern European-Hispanic-South Asian-Pacific Islander-African heritage, almond-shaped gray-green eyes, dark bronze-tinted hair pulled back tight in practical braid, revealing chrome-edged surgical scars at temples. Broad cheekbones and softened Eastern European bone structure. Worn synth-leather jacket, long sleeves covering subcutaneous chrome at forearms, cargo pants, scuffed steel-toed boots. Standing in neon-lit GLMZ 2200s Great Lakes zone, shoulders relaxed but ready, weight forward, neutral expression, eyes tracking. Movement unnaturally smooth from move-by-wire augmentation. Cold blue and amber neon lighting casting sharp shadows on scarred face. Utilitarian, forgettable, lethal. GLMZ street operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 23.9,
-    "Eastern European": 22.7,
-    "Sub-Saharan African": 21.7,
-    "Northern European": 18.5,
-    "South Asian": 13.2
+    "Eastern European": 53.6,
+    "Hispanic/Latin American": 23,
+    "South Asian": 8.3,
+    "Pacific Islander": 8.2,
+    "Sub-Saharan African": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 7.6,
+        "Hungarian": 4.9
+      },
+      "Slavic South": {
+        "Slovenian": 12.6,
+        "Croatian": 20.3
+      },
+      "Slavic East": {
+        "Belarusian": 7.3,
+        "Russian": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 11.7,
+        "Nicaraguan": 2.6
+      },
+      "Mexican": {
+        "Mexican": 4.5
+      },
+      "Caribbean": {
+        "Haitian": 2.4,
+        "Dominican": 1.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 8.3
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 6.3,
+        "Hawaiian": 1.6
+      },
+      "Micronesian": {
+        "Palauan": 0.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 1.8,
+        "Congolese": 0.7
+      },
+      "Southern African": {
+        "South African": 3.2,
+        "Botswanan": 1.2
+      }
+    }
+  }
 }

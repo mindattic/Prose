@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6027ce5991b2ddacf041ac4",
   "type": "character",
-  "name": "Rio Bah",
+  "name": "Rio Sepúlveda",
   "aliases": [
     "Doc Ember",
     "RL-3",
@@ -14,7 +14,7 @@
   "age": 31,
   "status": "active",
   "location": "Western border — maintains a field laboratory in the farmstead's converted barn",
-  "description": "Ember Caldwell is the only person on M88's western border who studies Behemoths as biology rather than threat. She has a pre-med background from a Circuit university that she left before completing her degree — not because she failed, but because the program's corporate sponsor pulled funding for xenobiology research that was producing inconvenient conclusions about Behemoth cognitive capacity. The university complied. Ember didn't.\n\nShe joined Red Lantern because the Gleaners were the only people who regularly encountered Behemoths in the field and lived to report it. Madre hired her as a medic — someone to keep the crew functional during raids. Ember accepted and immediately began collecting biological samples from every Behemoth encounter, building a dataset that no institutional researcher has access to. Her field lab in the farmstead barn is simultaneously a medical station and a xenobiology research facility, stacked with tissue samples, behavioral recordings, and pattern analyses that would make corporate researchers very interested and very uncomfortable.\n\nEmber is lean, freckled, with red-brown hair tied back in a knot that survives wind, water, and occasional Behemoth proximity. She has the focused intensity of someone who is always collecting data and the slight social awkwardness of someone who processes the world through analysis before emotion. Her hands are quick and sure — equally comfortable suturing a wound or dissecting a tissue sample.",
+  "description": "Rio Sepúlveda is the only person on M88's western border who studies Behemoths as biology rather than threat. She has a pre-med background from a Circuit university that she left before completing her degree — not because she failed, but because the program's corporate sponsor pulled funding for xenobiology research that was producing inconvenient conclusions about Behemoth cognitive capacity. The university complied. Ember didn't.\n\nShe joined Red Lantern because the Gleaners were the only people who regularly encountered Behemoths in the field and lived to report it. Madre hired her as a medic — someone to keep the crew functional during raids. Ember accepted and immediately began collecting biological samples from every Behemoth encounter, building a dataset that no institutional researcher has access to. Her field lab in the farmstead barn is simultaneously a medical station and a xenobiology research facility, stacked with tissue samples, behavioral recordings, and pattern analyses that would make corporate researchers very interested and very uncomfortable.\n\nEmber is lean, freckled, with red-brown hair tied back in a knot that survives wind, water, and occasional Behemoth proximity. She has the focused intensity of someone who is always collecting data and the slight social awkwardness of someone who processes the world through analysis before emotion. Her hands are quick and sure — equally comfortable suturing a wound or dissecting a tissue sample.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -179,7 +179,7 @@
     "Analyst": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Western border",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -196,35 +196,15 @@
     "The Nearfield",
     "Iowan Behemoth Agricultural Platform",
     "The Gleaner Brigades",
+    "Circuit",
+    "The Lantern Room",
     "The Pure Hand",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Weathervane",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Coronal Discharge Projector CDP-9 'Sunburn'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible TR-7 'Triage'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Kamala Blomberg-Konadu",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Noir Dining",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ridgeline",
-    "Réginald Asomaning-Čabarkapa",
-    "Scotoplanktonic Skin Respiration",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Commute",
-    "Veslemøy Achebe-Tursynov"
+    "Weathervane"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African, Southeast Asian, and East Asian ancestry. Genetic blend produces warm-toned skin with subtle undertones reflecting the multicontinental heritage mix.",
+    "heritage": "Multicontinental ancestry: 40% Southeast Asian, 28.4% Sub-Saharan African, 23.4% Hispanic/Latin American, 8.2% East Asian. This combination creates warm medium-golden skin with rich, complex undertones. Southeast Asian and Sub-Saharan influences contribute depth and warmth to complexion and facial structure, while Hispanic/Latin heritage adds texture variation and bone structure complexity, with East Asian ancestry influencing eye shape and cheekbone definition.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and wiry with defined musculature from field work and manual lab tasks. No excess body fat. Shoulders slightly narrow but functionally strong.",
@@ -232,8 +212,8 @@
     "hair_style": "Pulled back into a tight, practical knot secured with reinforced polymer tie. Frequently escapes in wispy strands.",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Hazel with subtle golden corona effect around iris — result of visual cortex enhancement implant",
-    "skin_tone": "Warm medium-golden tone with earthy undertones. Freckled across nose, cheekbones, and shoulders, with freckles appearing as warm bronze rather than pale.",
-    "complexion": "Minimal makeup. Sun-weathered from border work. Fine lines around eyes from squinting at microscopy and field observations. High cheekbones with rounded orbital structure reflecting Southeast/East Asian ancestry. Hands calloused and permanently stained with trace biological markers from sample handling.",
+    "skin_tone": "Warm medium-golden complexion with earthy, honey-like undertones. Bronze freckles across nose, cheekbones, and shoulders reflecting mixed Sub-Saharan, Southeast Asian, and Hispanic heritage. Sun-weathered from field work with visible melanin depth variation across body.",
+    "complexion": "Minimal makeup. Sun-weathered from border work. Fine lines around eyes from squinting at microscopy and field observations. High, defined cheekbones with slightly rounded orbital structure reflecting Southeast Asian and East Asian ancestry combined with Sub-Saharan bone structure. Warm-toned face with balanced features. Hands calloused and permanently stained with trace biological markers from sample handling.",
     "distinguishing_marks": [
       "Faint white scar across left palm where bio-scanner implant access point was sutured — approximately 3cm in length, nearly invisible unless backlit",
       "Cluster of pale freckles across collarbone forming an irregular constellation pattern",
@@ -243,15 +223,49 @@
     "posture_movement": "Slightly forward-leaning stance as if perpetually focused on something just beyond normal sight. Movements are economical and precise — no wasted motion. Hands frequently gesture while analyzing or explaining concepts. Eye contact is intense but delayed, indicating data processing before response. Walks with a ground-aware gait suitable for traversing uneven terrain.",
     "clothing_style": "Practical Tier 3-4 field wear. Favors heavy cotton/synth-blend cargo pants with numerous pockets for sample containers and field equipment. Layered top system: neutral compression base layer, reinforced vest with built-in cooler pockets for biological samples, insulated outer jacket with Red Lantern insignia on left shoulder. Medical grade steel-toed boots rated for biohazard environments. Rarely removes fieldwork clothing unless actively doing lab work — has changed in the barn entrance rather than walk to residential quarters. Cheap polymer watch with manual timekeeping function (distrusts neural interfaces for chronometry). Wears a single copper bracelet repurposed from salvaged wire — no visible sentimental attachment, likely just keeps it there."
   },
-  "image_prompt": "Rio Bah, a 168cm lean field researcher with warm golden-brown skin and bronze freckles across cheekbones and collarbone, standing in a cyberpunk 2226 laboratory-field hybrid workspace. Reddish-brown hair pulled back in a practical knot with wispy strands escaping. Hazel eyes with subtle golden radiance from visual cortex enhancement implant. Slight forward-leaning focus stance. Wearing heavy cargo pants with numerous pockets, reinforced vest with sample cooler compartments, insulated jacket bearing Red Lantern insignia, steel-toed biohazard boots. Left palm shows faint iridescent shimmer from bio-scanner implant. Fine sun-weathered lines around eyes. Calloused, stain-marked hands. Copper bracelet on wrist. Cheap polymer watch. Standing amid biological sample containers and field equipment, under cool blue-green laboratory lighting mixed with warm amber field lights, intense but delayed eye contact, processing data. Cyberpunk aesthetic, functional field researcher aesthetic, slight cybernetic glow effects. --ar 2:3 --v 6",
+  "image_prompt": "Rio Sepúlveda, 2226 neo-noir field researcher, 168cm lean frame with defined musculature. Warm medium-golden skin with bronze freckles across nose and shoulders, reflecting Southeast Asian, Sub-Saharan African, and Hispanic heritage blend. High defined cheekbones, hazel eyes with golden radiance from visual cortex implant. Reddish-brown hair in practical knot, wispy strands escaping. Sun-weathered complexion with fine lines around intense, focused eyes. Wearing heavy cargo pants with countless pockets, reinforced sample-cooler vest, insulated outer jacket bearing Red Lantern insignia. Medical-grade steel-toed boots. Faint iridescent shimmer on left palm (bio-scanner implant), chromatic line visible on right forearm ulna. Copper salvaged-wire bracelet, cheap manual polymer watch. Cheap forward-leaning posture, ground-aware stance. Great Lakes Metropolitan Zone bio-research facility interior, amber and cool fluorescent lighting mixing with faint bioluminescent sample glow. Cinematic depth of field, weathered hands holding sample container, intense analytical expression. GLMZ 2200s aesthetic, practical field-worn aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 61.0,
-    "Sub-Saharan African": 19.7,
-    "Southeast Asian": 11.2,
-    "East Asian": 8.1
+    "Southeast Asian": 40,
+    "Sub-Saharan African": 28.4,
+    "Hispanic/Latin American": 23.4,
+    "East Asian": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 12.4
+      },
+      "Filipino": {
+        "Ilocano": 13.7
+      },
+      "Laotian": {
+        "Laotian": 13.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 28.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 23.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.9
+      },
+      "Japanese": {
+        "Japanese": 3.9
+      },
+      "Chinese": {
+        "Mandarin Northern": 0.4
+      }
+    }
+  }
 }

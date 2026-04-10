@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67b74e493bf132b136710e7",
   "type": "character",
-  "name": "Ash Volkov-Nkrumah",
+  "name": "Ash Madrigal-Vestergaard",
   "aliases": [
     "Odu",
     "the Cartographer"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Kenosha Crossing, rotating between hyperlane rest stops, near beyond the Western Perimeter",
-  "description": "Oduduwa is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek — family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement — milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nOduduwa does not use navigation apps. He carries the hyperlane network in his head — every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city's pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
+  "description": "Ash Madrigal-Vestergaard is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek — family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement — milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nAsh Madrigal-Vestergaard does not use navigation apps. He carries the hyperlane network in his head — every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city's pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -169,7 +169,7 @@
     "Safety First": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,49 +178,29 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "Escanaba Gateway",
     "Manitowoc Drydock",
     "Ferrogate Transit",
+    "Escanaba Gateway",
     "Kenosha Crossing",
     "Grandmother",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Glass",
-    "Nightlight",
-    "Abeke Soriano-Dlamini",
-    "Arcturus GE-1 'Garrison'",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Emeka Johansson-Orozco",
-    "Iron Bend",
-    "Nodar Kuznetsov-Adu",
-    "Obafemi Szczypiński-Lautoa",
-    "Ringo DV-4 'Courier'",
-    "Saodat Mirzoyan-Fubara",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA CR-12 'Whisper'",
     "TESSERA ES-4 'Perimeter'",
-    "Tafara Quiñones-Saarinen",
-    "The Arrangement",
-    "The Crossing",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Silver",
+    "Glass",
+    "Cargo Tacos",
+    "Nightlight"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (37.8%, likely West African) with significant Eastern European (20.3%, likely Slavic), South Asian (14.9%), Northern European (13.9%), and East Asian (11.5%) ancestry—a complex Pan-African and Eurasian blend reflecting the Ubiquitous Diaspora. Facial structure shows the broad features of West African heritage softened by Eastern European and South Asian bone structure contributions; skin reflects the deep melanin concentrations of African ancestry with subtle warm undertones from South Asian heritage.",
+    "heritage": "Northern European (57.7%, Scandinavian/Germanic) with significant Hispanic/Latin American (21.6%, Central/South American mestizo) and East Asian (20.7%, Southeast/East Asian) ancestry—a striking Pan-diaspora blend. Facial structure combines Northern European angularity with the wider cheekbones and softer contours of Hispanic/Latin American and East Asian heritage. The blend creates a unique phenotype: high, prominent cheekbones from East Asian ancestry, angular jaw from Northern European heritage, and broad face structure from Hispanic/Latin American lineage.",
     "height_cm": 185,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-framed, carrying the solid mass of decades of manual labor and long-distance walking. Not muscular in a refined sense, but densely built — the frame of someone who loads and unloads carts without machinery.",
     "hair_color": "Silver-streaked black",
     "hair_style": "Compressed locs wound tight against the skull",
     "hair_length": "Medium (locs approximately 8-10cm in length)",
-    "eye_color": "Right eye: warm brown natural; Left eye: milky synthetic glass with faint amber glow",
-    "skin_tone": "Deep rich brown with warm undertones from the South Asian component of ancestry, sun-darkened and weathered across exposed surfaces from chronic equatorial and subtropical exposure",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Broad cheekbones and defined jawline showing West African heritage structure, softened slightly by South Asian and Eastern European ancestry. Three horizontal scarification marks across each cheek — deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
+    "eye_color": "Right eye: warm amber-brown natural; Left eye: milky synthetic glass with faint amber glow",
+    "skin_tone": "Golden-olive medium brown with warm undertones—a balanced blend of Northern European fairness warmed and deepened by East Asian and Hispanic/Latin American melanin contribution. Sun-darkened and weathered across exposed surfaces from chronic equatorial and subtropical exposure, creating a rich caramel-bronze patina.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Wide cheekbones and defined jawline showing the combined influence of all three ancestries: Eastern geometry softened by Latin warmth and Nordic definition. Three horizontal scarification marks across each cheek—deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
     "distinguishing_marks": [
       "Three horizontal scarification marks across the left cheek, approximately 5cm each, evenly spaced 2cm apart — family marks deliberately replicated from family photograph",
       "Three matching horizontal scarification marks across the right cheek, mirror placement to the left side",
@@ -231,17 +211,35 @@
     "posture_movement": "Unhurried and deliberate in movement — a man comfortable with silence and observation. Tends to stand with weight distributed evenly, as if always ready to walk long distances. Eyes move methodically across environments, cataloguing details. Rarely makes rapid gestures; speaks with long pauses between thoughts.",
     "clothing_style": "Patchwork long-coat assembled from twenty years of fabric scraps: visible panels of Sahel weave (rust and indigo tones), Andean fleece (cream and earth red), Siberian synthetic fur (silver-gray) stitched together into an ungainly but distinctive silhouette. Underneath: worn neutral-toned utilitarian layers suitable for variable climates. Footwear: heavily repaired all-terrain boots showing multiple generations of patches. No corporate branding; Tier 4-5 aesthetic through necessity rather than choice. Carries a battered leather satchel worn across his body — color faded to caramel from decades of use."
   },
-  "image_prompt": "Ash Volkov-Nkrumah, 185cm tall, dense heavy-framed man with deep rich brown skin bearing West African, Eastern European, and South Asian ancestry blend. Tightly wound silver-streaked black locs compressed against skull. Deep facial lines and sun-weathering across forehead and eyes. Distinctive scarification: three horizontal lines across each cheek, family markings. Right eye warm brown natural, left eye milky synthetic glass with faint amber luminescence and mechanical iris. Worn patchwork long-coat in Sahel indigo, Andean rust-red, and silver-gray Siberian synthetic fur panels. Neutral utilitarian layers beneath. Heavily patched all-terrain boots. Battered caramel leather satchel across body. Calloused hands with fabric stains. Posture unhurried and deliberate, weight evenly distributed. Standing in dim neon-lit GLMZ marketplace corridor, 2226, surrounded by salvage stalls and worn metal fixtures. Contemplative, methodical gaze. Cyberpunk greenwash lighting mixing sodium vapor and LED. Hyper-detailed weathering and fabric texture. --ar 2:3 --v 6",
+  "image_prompt": "Ash Madrigal-Vestergaard, 185cm tall broad-shouldered man with golden-olive sun-weathered skin, high East Asian cheekbones blended with Nordic jawline and Latin facial width. Silver-streaked black compressed locs wound tight. Right eye warm amber-brown, left eye milky synthetic glass with amber glow and mechanical iris. Deep sun-lines around eyes and mouth, three parallel scarification marks across each cheek. Wearing elaborate patchwork long-coat stitched from rust indigo Sahel weave, cream earth-red Andean fleece, and silver-gray Siberian fur panels. Worn utilitarian layers beneath, heavily patched all-terrain boots, caramel leather satchel across body. Standing in GLMZ Great Lakes Metropolitan Zone, unhurried posture, methodical gaze, dystopian evening lighting with neon signs reflecting off wet pavement, film noir atmosphere, solo figure in crowded lower-tier district, atmospheric depth, cinematic composition --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.8,
-    "Eastern European": 20.3,
-    "South Asian": 14.9,
-    "Northern European": 13.9,
-    "East Asian": 11.5,
-    "Hispanic/Latin American": 1.6
+    "Northern European": 57.7,
+    "Hispanic/Latin American": 21.6,
+    "East Asian": 20.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 10.1,
+        "Austrian": 4.3
+      },
+      "Scandinavian": {
+        "Finnish": 43.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 21.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 20.7
+      }
+    }
+  }
 }

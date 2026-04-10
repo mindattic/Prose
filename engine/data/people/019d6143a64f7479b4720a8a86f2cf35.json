@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64f7479b4720a8a86f2cf35",
   "type": "character",
-  "name": "Haze Hinojosa",
+  "name": "Ignacio Halverson",
   "aliases": [
     "Mila",
     "Lumens"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Edgewater Prism — Meridian Public Technical Institute, Lower Campus, near Lincoln and Addison",
-  "description": "Lyudmila is seventeen and looks it in the worst possible way — they have the specific exhaustion of someone who has been the smartest person in every room they have ever been in and has not yet decided whether that is a gift or a sentence. They are medium height, soft-bodied, with Ukrainian-Tahitian heritage that gave them wavy dark hair they have threaded with bioluminescent strands that pulse slowly when they are focused — a mod they installed themselves at fifteen using a kit meant for adults. The job is good, mostly. One strand on the left side occasionally glitches amber instead of the intended white.\n\nMila attends the Meridian Public Technical Institute on full need-grant and spends approximately forty percent of their scheduled class hours actually in class, with the remainder in a basement server room they were banned from and then un-banned from after they fixed a hardware problem the Institute's IT department had been unable to solve for three months. They are not malicious — they hack things the way other people doodle, compulsively, because systems have shapes and they want to know the shapes. Their current project, which they have been working on in careful slices between coursework, is an attempt to map the E.L.F. population of the Edgewater Prism district — not to interfere with them but out of genuine theological curiosity about where they cluster and why.",
+  "description": "Ignacio Halverson is seventeen and looks it in the worst possible way — they have the specific exhaustion of someone who has been the smartest person in every room they have ever been in and has not yet decided whether that is a gift or a sentence. They are medium height, soft-bodied, with Ukrainian-Tahitian heritage that gave them wavy dark hair they have threaded with bioluminescent strands that pulse slowly when they are focused — a mod they installed themselves at fifteen using a kit meant for adults. The job is good, mostly. One strand on the left side occasionally glitches amber instead of the intended white.\n\nMila attends the Meridian Public Technical Institute on full need-grant and spends approximately forty percent of their scheduled class hours actually in class, with the remainder in a basement server room they were banned from and then un-banned from after they fixed a hardware problem the Institute's IT department had been unable to solve for three months. They are not malicious — they hack things the way other people doodle, compulsively, because systems have shapes and they want to know the shapes. Their current project, which they have been working on in careful slices between coursework, is an attempt to map the E.L.F. population of the Edgewater Prism district — not to interfere with them but out of genuine theological curiosity about where they cluster and why.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -154,7 +154,7 @@
     "Problem Solver": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,32 +171,14 @@
     "The Convergence Ministry",
     "Vellichor Institute",
     "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Plot 17",
     "The Heritage Vault",
     "Irontide Tidal Energy",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Ambrosia Fekete-Waiyaki",
-    "Aïssé Dragomirescu-Faalelei",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Helix Biosystems",
-    "Kairos",
-    "MERIDIAN",
-    "Nurlan Morita-Antwi",
-    "Osvaldo Mensah-Kovalenko",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solveig Tambadou-Kereselidze",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vesna Čolić-Strand",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Street Custom 'Four Horsemen' Pipe Pepperbox"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Hispanic/Latin American, Sub-Saharan African, Middle Eastern, and Southeast Asian ancestry. A complex global blend creating distinctive features from multiple continental traditions.",
+    "heritage": "Complex global blend with nearly equal pulls from Southeast Asian (25.9%), Hispanic/Latin American (25.3%), and Middle Eastern (21.2%) ancestry, combined with East Asian (16.5%), Sub-Saharan African (6.4%), and South Asian (4.7%) heritage. Features reflect this sophisticated diaspora mixing — a face that resists singular geographic categorization, drawing fineness from East and Southeast Asian ancestry, warmth and structure from Latin American and Middle Eastern lineages, and subtle depth from African heritage.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Soft-bodied, slight, with the underdeveloped musculature of someone who sits in server rooms sixteen hours a day. No athletic definition. Rounded shoulders, gentle curvature at hips and chest.",
@@ -204,8 +186,8 @@
     "hair_style": "Wavy, shoulder-length, threaded with biofiber. Worn loose and somewhat tangled — grooming is secondary to function.",
     "hair_length": "Medium",
     "eye_color": "Deep brown, slightly bloodshot from screen exposure",
-    "skin_tone": "Warm medium-tan complexion with golden and warm olive undertones, reflecting the blend of East Asian, Southeast Asian, Hispanic/Latin American, and Sub-Saharan African ancestry",
-    "complexion": "Fine-featured face with characteristics of mixed East and Southeast Asian heritage blended with Latin American and African features — slight width through the cheekbones, softer jawline contours, delicate nose. Faint dark circles under eyes. Minimal skincare routine shows. Two small stress-picking scars on the back of the left hand near the wrist. No obvious acne despite age — genetics or just not eating enough to break out.",
+    "skin_tone": "Warm golden-tan complexion with olive and amber undertones — the result of Southeast Asian, Hispanic/Latin American, and Middle Eastern ancestry creating a richly warm base, enhanced by East Asian refinement and Sub-Saharan African depth",
+    "complexion": "Fine-featured face balancing multiple ancestry streams — moderate cheekbone width from Southeast Asian and Middle Eastern heritage, softer jawline contours from East Asian and Latin American mix, delicate nose bridge with subtle Middle Eastern structure. Warm undertones across the face. Faint dark circles under eyes. Minimal skincare routine shows. Two small stress-picking scars on the back of the left hand near the wrist. No obvious acne despite age — genetics or just not eating enough to break out.",
     "distinguishing_marks": [
       "Self-installed bioluminescent hair strands (white) threading through dark hair; located mostly on right side and crown, with one malfunctioning amber strand on left side that glitches when unfocused",
       "Thin vertical scar, approximately 2cm, on inside of left wrist from hardware installation gone slightly wrong at age fifteen",
@@ -215,17 +197,78 @@
     "posture_movement": "Hunched slightly forward, as if permanently leaning toward a screen. Movements are economical and precise when purposeful, but otherwise loose and fidgeting. Hands gesticulate when explaining technical concepts. Walks with eyes down or unfocused. When engaged in problem-solving, becomes almost motionless except for rapid finger movements.",
     "clothing_style": "Tier 2 student aesthetic — functional, thrifted, layered. Typical outfit: oversized grey Institute hoodie with fraying cuffs, black utility pants with multiple pockets (actual tools in them), scuffed platform sneakers with mismatched laces. Wears the same three hoodies on rotation. One visible patch on left shoulder reads 'E.L.F. THEOLOGY' in hand-stitched letters. Jewelry is minimal — a single silver ring on right index finger that doubles as a micro-tool. Presentation reads: 'I do not care about appearance, but I have thought about how to dress functionally.'"
   },
-  "image_prompt": "Haze Hinojosa, 168cm tall cyberpunk hacker with warm medium-tan skin reflecting global ancestry from East Asia, Southeast Asia, Latin America, Middle East and Africa. Fine-featured face with soft jawline and subtle cheekbone definition. Deep brown eyes with screen-induced bloodshot appearance. Dark brown wavy shoulder-length hair with self-installed bioluminescent white strands threading through, one malfunctioning amber strand glitching on left side. Visible silver-chrome audio amplifier module behind left ear with subtle wiring. Neural interface port barely visible at right temple under hair. Hunched posture leaning forward habitually. Wearing oversized fraying grey hoodie over black utility pants with multiple pockets, scuffed platform sneakers with mismatched laces. Single silver ring on right index finger serving as micro-tool. 'E.L.F. THEOLOGY' patch hand-stitched on left shoulder. Stressed, focused expression. Seated in dimly-lit server room or hacker den with blue-green monitor glow reflecting off face, ambient bioluminescence from hair casting soft white-amber light. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, technical equipment visible in soft focus background, moody high-contrast lighting --ar 2:3 --v 6",
+  "image_prompt": "Ignacio Halverson, 168cm slight frame hunched forward in GLMZ aesthetic, warm golden-tan skin with olive undertones reflecting Southeast Asian, Hispanic, and Middle Eastern diaspora heritage. Fine-featured face with moderate cheekbones and delicate nose bridge, deep brown bloodshot eyes from screen exposure. Shoulder-length wavy dark brown hair threaded with bioluminescent white biofiber strands pulsing softly, one malfunctioning amber glitch on left side. Visible silver-chrome audio amplifier behind left ear with thin wire threading jawline. Self-installed modifications and faint hardware-installation scar on left wrist. Wearing oversized fraying grey Institute hoodie with 'E.L.F. THEOLOGY' hand-stitched patch, black utility pants with visible tools, scuffed platform sneakers with mismatched laces. Single silver micro-tool ring on right index finger. Faint burn marks on fingertips. Minimal jewelry, functional thrifted aesthetic. Hunched posture, hands gesticulating mid-explanation, eyes focused or unfocused depending on concentration state. Server room ambient lighting, cool blue neon glow on augmentations, tired but focused expression. GLMZ 2200s underground tech aesthetic, student tier equipment visible in background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.7,
-    "Hispanic/Latin American": 23.7,
-    "Sub-Saharan African": 12.9,
-    "Middle Eastern": 11.7,
-    "Southeast Asian": 8.8,
-    "Eastern European": 5.2
+    "Southeast Asian": 25.9,
+    "Hispanic/Latin American": 25.3,
+    "Middle Eastern": 21.2,
+    "East Asian": 16.5,
+    "Sub-Saharan African": 6.4,
+    "South Asian": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 7
+      },
+      "Cambodian": {
+        "Khmer": 13.2
+      },
+      "Thai": {
+        "Thai": 5.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 0.8,
+        "Nicaraguan": 0.7
+      },
+      "South American": {
+        "Colombian": 2.3,
+        "Peruvian": 2.9
+      },
+      "Mexican": {
+        "Mexican": 18.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 10.5,
+        "Yemeni": 6.9
+      },
+      "Persian": {
+        "Iranian": 3.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 10.3
+      },
+      "Korean": {
+        "Korean": 6.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.2
+      },
+      "East African": {
+        "Ugandan": 1,
+        "Kenyan": 0.3
+      },
+      "Central African": {
+        "Angolan": 0.7,
+        "Cameroonian": 0.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 4.7
+      }
+    }
+  }
 }

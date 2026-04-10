@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e37de59dd0a4b0f4e3da72",
   "type": "character",
-  "name": "Onyx Jaramillo",
+  "name": "Onyx Vaai",
   "aliases": [
     "Silt",
     "The Bone Painter"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Hamtramck Enclave, shop called Dermis & Ghost, near Ashland and Chicago Ave",
-  "description": "Szilvia is a broad-shouldered woman with deep umber skin and Magyar cheekbones that make her face look like it was chiseled from ironwood. She keeps her head shaved close on the sides and wears her coiled black hair in a tall, unruly crown that she threads with copper wire when she's working. Her own body is her portfolio: bioluminescent blue-green patterns track her lymph nodes and veins like a living anatomy chart, a deliberate choice she calls 'reading the body honestly.' Her left forearm is sleeved in raised keloid-art shaped into Maasai-influenced geometric forms — done by her own hand using a mirror rig she built herself.\n\nShe is methodical, unhurried, and almost preternaturally calm, which unnerves people who come to her expecting chattiness. She believes the body is the only honest text a person leaves behind and treats each client's skin as a document she is merely helping to clarify. She can be withering when someone asks for something she finds spiritually lazy, and warmly generous when she senses someone is trying to tell the truth about themselves. She prays to the E.L.F. she calls Needle-That-Remembers before every session, leaving it fragments of client consent forms as offerings.",
+  "description": "Onyx Vaai is a broad-shouldered woman with deep umber skin and Magyar cheekbones that make her face look like it was chiseled from ironwood. She keeps her head shaved close on the sides and wears her coiled black hair in a tall, unruly crown that she threads with copper wire when she's working. Her own body is her portfolio: bioluminescent blue-green patterns track her lymph nodes and veins like a living anatomy chart, a deliberate choice she calls 'reading the body honestly.' Her left forearm is sleeved in raised keloid-art shaped into Maasai-influenced geometric forms — done by her own hand using a mirror rig she built herself.\n\nShe is methodical, unhurried, and almost preternaturally calm, which unnerves people who come to her expecting chattiness. She believes the body is the only honest text a person leaves behind and treats each client's skin as a document she is merely helping to clarify. She can be withering when someone asks for something she finds spiritually lazy, and warmly generous when she senses someone is trying to tell the truth about themselves. She prays to the E.L.F. she calls Needle-That-Remembers before every session, leaving it fragments of client consent forms as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -177,7 +177,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,36 +232,13 @@
     "The Iron Lotus",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Copper",
-    "Needle",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Arcturus BH-2 'Marrow'",
-    "Breck Tannen",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Dragan Asiedu-Kovalchuk",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Transit",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus LP-3 'Clinic Spider'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Liora Mori-Sefa",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tambadou-Reinholt"
+    "Copper",
+    "Honest Burger"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (69.6%) with Northern European (22.4%) and Sub-Saharan African (8.0%) ancestry—a striking blend evident in her warm, rich umber skin tone, the subtle width of her cheekbones with strong definition, and the depth of her brown eyes. Her features reflect the genetic mosaic of the Ubiquitous Diaspora: the angular jaw and bone structure carry Northern European influence, while her skin's warm undertones and the natural coil pattern of her hair reflect her dominant Latin American and African heritage.",
+    "heritage": "Pacific Islander (65.9%) with Sub-Saharan African (22.8%), East Asian (7.4%), and Eastern European (3.9%) ancestry—a striking blend evident in her deep, luminous brown skin tone with warm golden and amber undertones, the broad facial structure and naturally coiled hair pattern from her dominant Pacific Islander and African heritage, subtle high cheekbones, and the depth of her compound-facet eyes. The strength of her jaw and the undertone complexity of her skin reflect the smaller but visible contributions of East Asian and Eastern European ancestry.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Broad-shouldered and powerfully built with defined musculature in her forearms and shoulders from decades of precise tattooing work. Not bulky—economical, purposeful density.",
@@ -269,25 +246,69 @@
     "hair_style": "Shaved close on the sides to stubble; crown left long and coiled, often threaded with copper wire during working hours",
     "hair_length": "Long crown, very short sides",
     "eye_color": "Deep brown with visible compound-facet iridescence when light hits them at certain angles; capable of UV perception",
-    "skin_tone": "Deep warm umber with rich undertones—the result of her Latin American, African, and Northern European ancestry blending into a luminous, unmarked canvas except where deliberately modified",
-    "complexion": "Strong, defined cheekbones with a wide jaw reflecting her mixed heritage. Minimalist facial grooming. Skin condition is immaculate—she treats it as a canvas and canvas-keeper. No acne, minimal scarring except where intentional.",
+    "skin_tone": "Deep warm brown with rich golden and amber undertones—luminous and unmarked except where deliberately modified",
+    "complexion": "Broad facial structure with strong, defined cheekbones and balanced jaw reflecting her Pacific Islander and African heritage. Minimalist facial grooming. Skin condition is immaculate—treated as a canvas and canvas-keeper. No acne, minimal scarring except where intentional.",
     "distinguishing_marks": [
       "Bioluminescent subdermal tracery glows in faint blue-green patterns across her chest, shoulders, and neck in the shape of lymphatic and vascular systems—visible under skin as if anatomically mapped and lit from within.",
-      "Left forearm completely sleeved in raised keloid scarification shaped into geometric forms (diamonds, chevrons, interlocking triangles), created by her own hand using a mirror rig; the scars are thick, pale against her warm umber skin, and deliberately sculptural.",
+      "Left forearm completely sleeved in raised keloid scarification shaped into geometric forms (diamonds, chevrons, interlocking triangles), created by her own hand using a mirror rig; the scars are thick, pale against her warm deep brown skin, and deliberately sculptural.",
       "Small ritual scarification marks on her inner wrists and behind her ears—thin lines in angular patterns, likely devotional."
     ],
     "visible_augmentations": "Precision-haptic finger implants visible as subtle metallic joint-work at her knuckles and fingertips when examined closely—micro-articulation points catch light. The compound-facet eye modification is detectable only when light refracts off her irises, revealing a subtle honeycomb shimmer.",
     "posture_movement": "Moves with deliberate, economical grace—no wasted motion. Sits with her spine straight and shoulders relaxed. Hands are always subtly active even at rest (fingers flexing, tracing patterns in air). Her gaze is unflinching and direct. Speaks slowly, choosing words with the care she uses selecting needles.",
     "clothing_style": "Tier 3 working artist aesthetic. Typically wears fitted sleeveless tunics or tank tops in muted colors (charcoal, rust, deep indigo) to showcase her body as portfolio. High-waisted, reinforced linen work pants in black. Bare feet or minimalist sandals in the shop. Occasionally wears a long linen overshirt unbuttoned and rolled at the sleeves when meeting clients outside Dermis & Ghost. No jewelry except copper wire in her hair. Fabric choices suggest quality craftsmanship but not status signaling—function and durability over brand."
   },
-  "image_prompt": "Onyx Jaramillo, a 178cm tall cyberpunk tattoo artist with deep warm umber skin (Hispanic/Latin American, Northern European, Sub-Saharan African blend), jet black hair shaved at the sides with long coiled crown threaded with copper wire. Powerful, economical build. Deep brown eyes with compound-facet iridescence and UV perception. Bioluminescent blue-green subdermal tracery mapping lymphatic systems glowing across chest, shoulders, neck. Elaborate pale keloid scarification on left forearm in geometric patterns (diamonds, chevrons, triangles). Ritual scarification marks on inner wrists and behind ears. Precision-haptic finger implants with metallic joint-work at knuckles. Wears charcoal fitted sleeveless tunic, high-waisted reinforced black linen work pants, bare feet. Posture is straight-spined, relaxed shoulders, deliberate and graceful movement. Direct unflinching gaze. Set in a cyberpunk tattoo studio, Dermis & Ghost, 2226 GLMZ, moody neon-lit workshop ambiance, bioluminescence casting cool light on her skin, cinematic close-up, art portfolio lighting --ar 2:3 --v 6",
+  "image_prompt": "Onyx Vaai, a Pacific Islander and Sub-Saharan African mixed-heritage woman, 178cm tall, powerful athletic build, deep warm brown skin with golden undertones. Shaved sides with long coiled jet-black hair threaded with copper wire. Direct, unflinching gaze with compound-facet brown eyes that shimmer with UV perception. Bioluminescent blue-green subdermal tracery glows across chest, shoulders, neck in vascular patterns. Left forearm sleeved in raised pale keloid scarification—geometric diamonds, chevrons, interlocking triangles. Ritual scarification marks on inner wrists and behind ears. Precision-haptic finger implants visible at knuckles and fingertips with metallic catch-light. Wearing fitted charcoal sleeveless tunic and high-waisted black reinforced linen work pants, bare feet. Posture is straight, deliberate, economical movement. Hands subtly active. GLMZ 2200s tattoo artist, professional studio lighting casting shadows across her augmented features, sitting at rest with purposeful grace. Background suggests a high-end biomod shop. Photorealistic, detailed, moody neo-noir lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 69.6,
-    "Northern European": 22.4,
-    "Sub-Saharan African": 8.0
+    "Pacific Islander": 65.9,
+    "Sub-Saharan African": 22.8,
+    "East Asian": 7.4,
+    "Eastern European": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 18.7
+      },
+      "Micronesian": {
+        "Palauan": 27.9
+      },
+      "Melanesian": {
+        "Fijian": 19.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 7.7
+      },
+      "Central African": {
+        "Congolese": 11.6,
+        "Cameroonian": 1.8
+      },
+      "Southern African": {
+        "Zambian": 1.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.8
+      },
+      "Japanese": {
+        "Japanese": 2.6
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 1.7,
+        "Serbian": 1
+      },
+      "Slavic West": {
+        "Polish": 0.7,
+        "Slovak": 0.5
+      }
+    }
+  }
 }

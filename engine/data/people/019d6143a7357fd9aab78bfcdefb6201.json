@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7357fd9aab78bfcdefb6201",
   "type": "character",
-  "name": "Ember Holm",
+  "name": "Ember Rattanavong",
   "aliases": [
     "Zinash the Hollow",
     "Hollowgirl"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Hamtramck Enclave, subsection called The Rust Nave, near Kedzie and Division",
-  "description": "Zinash is tall and angular with deep umber skin mapped in slow-pulsing bioluminescent tracery she designed herself — pale greenish lines that follow her veins like a circuit diagram gone feral. Her hair is kept in tight locks threaded with micro-speakers that emit subsonic hum when she walks, a habit she claims is involuntary but suspects is not. She has one natural eye, dark brown and unreadable, and one eye replaced with a matte ceramic disc she deliberately left unconnected — a fashion choice that unsettles everyone who meets her, which is the point.\n\nShe builds sound sculptures from salvaged corponation hardware — dead Ferrogate transit beacons, cracked Axiom data-hubs — and makes them scream. Her performances are felt as much as heard, bass frequencies vibrating teeth and sternum. Offstage she is quiet to the point of being mistaken for mute, communicating in short declarative sentences or pointed silences. She is genuinely curious about people but expresses it by staring at them for long unbroken intervals, which most find alarming and a few find magnetic.",
+  "description": "Ember Rattanavong is tall and angular with deep umber skin mapped in slow-pulsing bioluminescent tracery she designed herself — pale greenish lines that follow her veins like a circuit diagram gone feral. Her hair is kept in tight locks threaded with micro-speakers that emit subsonic hum when she walks, a habit she claims is involuntary but suspects is not. She has one natural eye, dark brown and unreadable, and one eye replaced with a matte ceramic disc she deliberately left unconnected — a fashion choice that unsettles everyone who meets her, which is the point.\n\nShe builds sound sculptures from salvaged corponation hardware — dead Ferrogate transit beacons, cracked Axiom data-hubs — and makes them scream. Her performances are felt as much as heard, bass frequencies vibrating teeth and sternum. Offstage she is quiet to the point of being mistaken for mute, communicating in short declarative sentences or pointed silences. She is genuinely curious about people but expresses it by staring at them for long unbroken intervals, which most find alarming and a few find magnetic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -192,7 +192,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,35 +250,15 @@
     "Hamtramck Enclave",
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Tessera Corponation",
+    "Circuit",
     "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'",
-    "Stalker",
     "Lazarus IDP-1 'Teeth'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
-    "Rust",
-    "Breck Tannen",
-    "Glenville Sound",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "NeuralPath HarmonicRoot Perfect Pitch Mod",
-    "Nnenna Boateng-Szymański",
-    "Pikasso Wemba-Þórðarson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "Tapetum Lucidum Integration",
-    "The Arrangement",
-    "The Filament",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Resonance Communion",
-    "The Wire Taps",
-    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
-    "Vuk Jorgensen-Toure"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Middle Eastern, Sub-Saharan African, and Hispanic/Latin American ancestry; genetic tapestry reflecting the Ubiquitous Diaspora. Features high cheekbones and fine bone structure typical of East Asian heritage, with warm undertones and subtle depth from African and Middle Eastern ancestry blending.",
+    "heritage": "Southeast Asian (36.3%), South Asian (28.6%), Hispanic/Latin American (25.5%), Sub-Saharan African (6.6%), and Middle Eastern (3.0%) ancestry. Features reflect this complex diaspora blend: Southeast Asian bone structure with South Asian warmth, Latin American richness, and African depth creating a luminous, multitonal complexion that shifts with light.",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Tall and angular with minimal body fat; long limbs suggest a frame built for movement rather than strength. Wiry musculature from years of hands-on fabrication work. Slight forward slouch when at rest.",
@@ -286,8 +266,8 @@
     "hair_style": "Tight interlocked locs, shoulder-length, arranged asymmetrically with speaker filaments woven throughout",
     "hair_length": "Medium",
     "eye_color": "Left eye: natural deep brown. Right eye: matte ceramic disc, pale grey-white, deliberately unseeing",
-    "skin_tone": "Warm golden-brown with subtle reddish undertones; the blending of East Asian base with Middle Eastern warmth, African depth, and Latin American richness creates a complex, luminous complexion that shifts in different light",
-    "complexion": "Smooth and unmarked except for the bioluminescent tracery. Minimal makeup. Expression typically neutral; gaze is direct and unsettling. Fine bone structure with high cheekbones and sharp jawline reflecting East Asian heritage, softened by the warmth inherited from Middle Eastern and African ancestry.",
+    "skin_tone": "Warm golden-bronze with red-ochre undertones; the layered blend of Southeast Asian base with South Asian warmth, Latin American copper notes, African depth, and Middle Eastern richness creates a complex, luminous complexion that glows differently under varied lighting conditions",
+    "complexion": "Smooth and unmarked except for the bioluminescent tracery. Minimal makeup. Expression typically neutral; gaze is direct and unsettling. High cheekbones and sharp jawline reflecting Southeast and South Asian heritage, warmed and softened by the copper and earthen tones inherited from Hispanic/Latin American, African, and Middle Eastern ancestry.",
     "distinguishing_marks": [
       "Slow-pulsing bioluminescent tracery in pale greenish hue mapping across entire body, following vein patterns like circuit diagrams; brightest along forearms, neck, and inner wrists.",
       "Matte ceramic prosthetic right eye sits flush with socket, unconnected and non-functional, creates uncanny asymmetry in her face."
@@ -296,15 +276,48 @@
     "posture_movement": "Moves with deliberate slowness offstage, as if conserving energy. Her gait is fluid but slightly asymmetrical, favoring her left side. Long silences between movements. When working or performing, her hands move with precision and purpose. Stares directly at people for uncomfortably long intervals without breaking eye contact.",
     "clothing_style": "Tier 4 / working-class artist aesthetic. Favors oversized utility vests with salvaged pockets and cable loops, worn over fitted black undershirts. Frequently wears distressed grey or black cargo pants with tool belts. Footwear: scuffed steel-toed boots or worn canvas sneakers. Minimal jewelry aside from augmentations. Clothes show signs of solder burns, soot, and workshop wear. No corporate branding. Practical rather than fashionable, but the arrangement suggests intentional aesthetic—controlled chaos."
   },
-  "image_prompt": "Ember Holm, 183cm tall angular East Asian-featured figure with golden-brown warm complexion, tight shoulder-length black locs woven with glinting micro-speakers asymmetrically arranged. Pale greenish bioluminescent circuit-like tracery pulses across her entire body, brightest on forearms and neck. Left eye natural deep brown, right eye a deliberately unseeing matte ceramic disc creating unsettling asymmetry. Wearing oversized salvaged utility vest over fitted black undershirt, distressed cargo pants, scuffed steel-toed boots. Subdermal haptic scars visible on both palms. Direct unflinching gaze, neutral expression. Cyberpunk 2226 Great Lakes Metropolitan Zone workshop setting, dim neon-touched lighting emphasizing bioluminescence glow, solder-burnt and soot-stained clothing showing years of hands-on fabrication work. Fluid but asymmetrical stance. Uncanny precision. --ar 2:3 --v 6",
+  "image_prompt": "Ember Rattanavong, tall angular neo-noir artist, 183cm wiry frame, warm golden-bronze skin with red-ochre undertones blending Southeast Asian, South Asian, Latin American, African and Middle Eastern heritage. Left eye deep brown, right eye matte pale ceramic prosthetic disc, deliberately non-functional. Black shoulder-length interlocked locs with embedded micro-speaker filaments creating metallic glints. Slow-pulsing pale greenish bioluminescent circuit-pattern tracery mapping across entire body, brightest on forearms and neck, glowing like neon veins. Subdermal haptic resonators visible as geometric scars in palms. Wearing oversized salvaged utility vest over fitted black undershirt, distressed grey cargo pants with tool belt, scuffed steel-toed boots. Solder burns and soot marks on clothing. Fluid but asymmetrical gait, direct unsettling stare. GLMZ workshop setting, neon bioluminescence casting green shadows, moody atmospheric lighting, hands poised with precision, expression neutral and intense --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 73.9,
-    "Middle Eastern": 13.5,
-    "Sub-Saharan African": 7.6,
-    "Hispanic/Latin American": 5.0
+    "Southeast Asian": 36.3,
+    "South Asian": 28.6,
+    "Hispanic/Latin American": 25.5,
+    "Sub-Saharan African": 6.6,
+    "Middle Eastern": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 36.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 21.8,
+        "Gujarati": 6.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 9.7,
+        "Dominican": 15.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 6.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 1.9
+      },
+      "Arab Levantine": {
+        "Lebanese": 1.1
+      }
+    }
+  }
 }

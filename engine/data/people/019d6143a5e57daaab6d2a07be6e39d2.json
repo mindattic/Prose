@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e57daaab6d2a07be6e39d2",
   "type": "character",
-  "name": "Daniela Tovar-Chowdhury",
+  "name": "Fetaui Sefanaia-Árnason",
   "aliases": [
     "Dari",
     "The Pharmacist"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Deepwell Station — Helix Community Dispensary #44, ground floor of a transit junction building, near sub-level access near Dearborn and Jackson",
-  "description": "Dariusz is young for how tired he looks — fine-featured with pale tan skin, heavy dark brows, and eyes that have a slightly unfocused quality not from inattention but from perpetual mild sleep deprivation. He is lean and tends toward oversized clothes that make him look smaller than he is. His hair is dark and cut practically, except for a single copper-dyed streak above his right ear that he's maintained since his university days. He has a small decorative mod — cat ears in deep charcoal grey that he got at twenty-two and is slightly embarrassed by now but can't afford to have reversed; they flatten against his head when he's stressed, which is often, and perk up involuntarily when something surprises him.\n\nDariusz is a genuinely excellent pharmacist who is trapped in a dispensary that is technically well-equipped and practically unfit for purpose: the Helix pricing algorithms mean that roughly a third of his patients cannot afford the medications he's dispensing, even the ones they critically need. He began quietly sourcing generic equivalents and giving them out at cost about fourteen months ago. He is terrified every day that he will be caught, and also cannot figure out how to stop. He has elaborate rituals around a Helix dispensary terminal that he believes is inhabited by an E.L.F. he has named Formulary, and he consults Formulary before any decision that scares him, reading meaning into system latency and autocomplete suggestions.",
+  "description": "Fetaui Sefanaia-Árnason is young for how tired he looks — fine-featured with pale tan skin, heavy dark brows, and eyes that have a slightly unfocused quality not from inattention but from perpetual mild sleep deprivation. He is lean and tends toward oversized clothes that make him look smaller than he is. His hair is dark and cut practically, except for a single copper-dyed streak above his right ear that he's maintained since his university days. He has a small decorative mod — cat ears in deep charcoal grey that he got at twenty-two and is slightly embarrassed by now but can't afford to have reversed; they flatten against his head when he's stressed, which is often, and perk up involuntarily when something surprises him.\n\nFetaui Sefanaia-Árnason is a genuinely excellent pharmacist who is trapped in a dispensary that is technically well-equipped and practically unfit for purpose: the Helix pricing algorithms mean that roughly a third of his patients cannot afford the medications he's dispensing, even the ones they critically need. He began quietly sourcing generic equivalents and giving them out at cost about fourteen months ago. He is terrified every day that he will be caught, and also cannot figure out how to stop. He has elaborate rituals around a Helix dispensary terminal that he believes is inhabited by an E.L.F. he has named Formulary, and he consults Formulary before any decision that scares him, reading meaning into system latency and autocomplete suggestions.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -185,7 +185,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,36 +244,16 @@
     "Deepwell Station",
     "Riverbottom",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Adaeze Chen-Hawkins",
+    "Charcoal",
+    "Dearborn Forge",
     "Copper",
+    "Haze Johansson",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pale Mile",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cem Watanabe-Amponsah",
-    "Cezar Watanabe-Gyasi",
-    "Constance",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Crucible TR-7 'Triage'",
-    "Helix Biosystems",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Praevex",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "Sustrel",
-    "TESSERA TC-3 'Crucible'",
-    "The Counter",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Skinners",
-    "The Wire Taps"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Multiethnic blend: South Asian ancestry (28.7%) visible in warm undertones and facial structure; Hispanic/Latin American heritage (21.9%) contributing to skin warmth and feature prominence; Northern European (20.1%) in bone structure and lighter tones; North African (17.7%) adding depth to complexion and eye intensity; East Asian (11.6%) subtle in eye shape and cheekbone definition. A genuinely global genetic tapestry reflected in warm-toned, multifaceted features.",
+    "heritage": "Profound maritime and tropical genetic legacy dominates: Southeast Asian (38.7%) and Pacific Islander (30.1%) ancestry create the foundational warmth and structure. East Asian heritage (17.6%) refines the eye shape and cheekbone geometry with subtle elegance. South Asian (5.5%), Hispanic/Latin American (4.9%), and Eastern European (3.2%) traces add layered complexity to skin undertones and minor orbital bone variations. The result is a genuinely global genetic confluence with warm, luminous medium-tan skin carrying honeyed and golden-bronze undertones, and multifaceted facial features reflecting deep maritime and tropical ancestry with refined East Asian elements.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean, almost wiry — the physique of someone who forgets to eat regularly. Narrow shoulders, minimal muscle definition, a fragility that reads as either youth or exhaustion, probably both.",
@@ -281,8 +261,8 @@
     "hair_style": "Practical, short crop with a single copper-dyed streak above the right ear maintained since university — the one aesthetic indulgence he won't abandon despite current embarrassment",
     "hair_length": "Short",
     "eye_color": "Dark brown with warm amber undertones, showing faint grey luminescence from visual acuity enhancement implants — creates an almost unfocused quality even when he's paying attention",
-    "skin_tone": "Warm medium tan with subtle golden undertones from South Asian and North African heritage, deepened by persistent sleep deprivation and fluorescent-lit work environments. Luminous undertone that catches light warmly despite exhaustion.",
-    "complexion": "Beautifully defined features blending multiple heritages: strong cheekbones with warm dimension, a slightly fuller lower face from Hispanic/South Asian ancestry, and expressive dark eyes framed by heavy brows that crowd above them. Fine-featured overall with angular elements. Perpetually tired — dark circles are a permanent fixture. No facial hair, meticulously groomed out of professional habit. Skin is clear but has a drawn quality, like the tissue underneath is slightly dehydrated.",
+    "skin_tone": "Warm golden-bronze medium tan with honeyed undertones, luminous and sun-touched despite exhaustion. Deepened by persistent sleep deprivation and fluorescent-lit work environments, reflecting the blended warmth of Southeast Asian, Pacific Islander, and East Asian ancestry with subtle South Asian and Hispanic/Latin American warmth layering.",
+    "complexion": "Beautifully defined features blending Southeast Asian, Pacific Islander, and East Asian heritage: strong warm-dimensioned cheekbones with elegant angular refinement, slightly wider facial structure from island ancestry, expressive dark eyes framed by heavy brows. Fine-featured with graceful proportions. Perpetually tired — dark circles are a permanent fixture. No facial hair, meticulously groomed out of professional habit. Skin is clear but has a drawn quality, like the tissue underneath is slightly dehydrated.",
     "distinguishing_marks": [
       "Decorative geneware cat ears in deep charcoal grey implanted at the crown and upper temples — they flatten involuntarily against his scalp when stressed (which is constant) and perk upward with genuine surprise (rare). The surgical scars are barely visible now but visible on close inspection as faint white lines where the ears anchor.",
       "Small round scar on the inside of his right wrist from a laboratory accident during pharmacy school — pale and faded, approximately 8mm diameter"
@@ -291,16 +271,68 @@
     "posture_movement": "Hunched slightly, as if perpetually leaning toward something he's trying to read. Movements are economical and precise — the careful choreography of someone who spends ten hours a day reaching for small objects. Fidgeting with inventory tabs, pharmaceutical bottles, the edge of his dispensary terminal. His cat ears betray his emotional state constantly: flattened when anxious (his default), briefly perking when startled or when a system notification surprises him.",
     "clothing_style": "Oversized Helix-branded dispensary coat (charcoal with teal trim) worn loose over equally oversized neutral-toned undershirts — grey, beige, dark blue. The intentional looseness makes him appear smaller than he is, a self-protective visual strategy. Practical trousers in dark grey or black, worn at the knees. Unbranded work shoes, perpetually scuffed. No visible jewellery except for an offline composition device he wears on a cord around his neck — a retro handheld synth from the 2180s that he fidgets with obsessively. His clothes smell faintly of pharmaceutical sanitizer and coffee."
   },
-  "image_prompt": "Daniela Tovar-Chowdhury, cyberpunk 2226, warm-toned multiethnic features with South Asian, Hispanic, North African, and East Asian heritage blend visible in rich golden-brown skin and expressive dark eyes, decorative charcoal grey geneware cat ears flattened against stressed head, lean wiry build hunched protectively, oversized charcoal Helix-branded dispensary coat with teal trim hanging loose over neutral undershirt, dark scuffed trousers, retro 2180s synth device on cord around neck, faint grey luminescence visible in implant-enhanced eyes, perpetually exhausted dark circles, copper-dyed streak in short dark hair above right ear, pharmaceutical-clean aesthetic, fluorescent-lit dispensary interior with ambient teal lighting creating shadows across tired features, fidgeting hands holding inventory tabs, precise economical movements, slight hunch over terminal, the fragile exhaustion of someone living on coffee and forgotten meals, soulful tired expression, 2:3 aspect ratio --ar 2:3 --v 6",
+  "image_prompt": "Fetaui Sefanaia-Árnason, 172cm lean neo-noir pharmacist in 2226 GLMZ, Southeast Asian-Pacific Islander-East Asian heritage with warm golden-bronze medium-tan skin and honeyed undertones. Dark brown eyes with faint grey luminescent implant glow, heavy brows, elegant angular cheekbones. Charcoal grey decorative cat ears implanted at crown, currently flattened against scalp from stress. Short dark brown hair with single copper streak above right ear. Perpetually exhausted with dark circles, clear but dehydrated-looking complexion. Wearing oversized charcoal Helix-branded dispensary coat with teal trim over grey undershirt, dark worn trousers, scuffed work shoes. Retro handheld synth on cord around neck. Hunched posture, economical precise movements. Fluorescent pharmaceutical laboratory interior, cool clinical lighting casting shadows under eyes, faint glow of terminal screens. Mood: exhausted, anxious, meticulous. Detail the pharmaceutical sanitizer and coffee scent in atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 28.7,
-    "Hispanic/Latin American": 21.9,
-    "Northern European": 20.1,
-    "North African": 17.7,
-    "East Asian": 11.6
+    "Southeast Asian": 38.7,
+    "Pacific Islander": 30.1,
+    "East Asian": 17.6,
+    "South Asian": 5.5,
+    "Hispanic/Latin American": 4.9,
+    "Eastern European": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 16.7,
+        "Sumatran": 5.2
+      },
+      "Laotian": {
+        "Laotian": 6.2
+      },
+      "Thai": {
+        "Thai": 10.6
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 30.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.9
+      },
+      "Chinese": {
+        "Fujianese": 7.2
+      },
+      "Japanese": {
+        "Japanese": 3.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.6
+      },
+      "Indian": {
+        "Tamil": 2.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 4.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 3.2
+      }
+    }
+  }
 }

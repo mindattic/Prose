@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65c724c8d67cb9d9380c6a6",
   "type": "character",
-  "name": "Rowan Malhotra-Delgado",
+  "name": "Rowan Kamara-Park",
   "aliases": [
     "Miro",
     "Ironhands"
@@ -13,7 +13,7 @@
   "age": 83,
   "status": "active",
   "location": "Avalon Quiet, the Foundry Rest, Unit 9 (a former union hall converted to senior housing), near Lincoln and Addison",
-  "description": "Miroljub is a person of considerable physical presence despite their age — still broad through the shoulders, hands that are visibly enlarged by decades of machine work and two decades of chrome reinforcement, skin the color of dark river clay mapped with old hydraulic burns along both forearms. They have a full beard, silver-white, kept long and braided with small steel hex-nuts — not decoration but notation: each nut represents a contract won. There are thirty-one of them. Their eyes are deep-set under heavy brows and have been modified with retinal overlays that display scrolling text when they are reading union documents, which is often. They move slowly but without any suggestion that the slowness is weakness.\n\nMiroljub organized workers at Dearborn Forge for forty-one years, starting as a floor welder and ending as the most recognizable union figure in GLMZ's manufacturing sector. They retired at seventy-eight when their heart required a significant reconstruction, and they have spent the five years since refusing to actually retire in any functional sense — still advising, still reviewing contracts, still showing up to shop-floor solidarity actions in a mobility assist suit they make no attempt to hide. They are living legend to people who know the labor history and an incomprehensible relic to people who don't, and they genuinely do not care which category any given person falls into. They are here and they are working.",
+  "description": "Rowan Kamara-Park is a person of considerable physical presence despite their age — still broad through the shoulders, hands that are visibly enlarged by decades of machine work and two decades of chrome reinforcement, skin the color of dark river clay mapped with old hydraulic burns along both forearms. They have a full beard, silver-white, kept long and braided with small steel hex-nuts — not decoration but notation: each nut represents a contract won. There are thirty-one of them. Their eyes are deep-set under heavy brows and have been modified with retinal overlays that display scrolling text when they are reading union documents, which is often. They move slowly but without any suggestion that the slowness is weakness.\n\nRowan Kamara-Park organized workers at Dearborn Forge for forty-one years, starting as a floor welder and ending as the most recognizable union figure in GLMZ's manufacturing sector. They retired at seventy-eight when their heart required a significant reconstruction, and they have spent the five years since refusing to actually retire in any functional sense — still advising, still reviewing contracts, still showing up to shop-floor solidarity actions in a mobility assist suit they make no attempt to hide. They are living legend to people who know the labor history and an incomprehensible relic to people who don't, and they genuinely do not care which category any given person falls into. They are here and they are working.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -200,7 +200,7 @@
     "Commander": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Avalon Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,40 +278,20 @@
     "Avalon Quiet",
     "The Undertow",
     "Gravemoss Biofoundry",
-    "GLMZ",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Solidarity Soup",
     "Irontide Tidal Energy",
-    "Crucible Industries CR-9 'Foundry'",
-    "The Pure Hand",
+    "The Foundry Kitchen",
     "Silver",
+    "The Pure Hand",
+    "Steel",
     "Ringo Corponation",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Steel",
-    "Clay",
-    "ARCHIVE",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Imara Solís-Bekele",
-    "Iowan Behemoth — 'The Foundry'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Othniel Babić-Asantewaa",
-    "Pikasso Wemba-Þórðarson",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA PA-5 'Attendant'",
-    "The Collective",
-    "The Fathom Line",
-    "The Question",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "GLMZ",
+    "Clay"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American and South Asian with East Asian admixture; the genetic blend produces warm-toned brown skin with subtle undertones reflecting the tri-continental ancestry. Mediterranean and subcontinental features blend with East Asian bone structure in the cheekbones and eye shape.",
+    "heritage": "Sub-Saharan African (37.1%), East Asian (32.1%), Indigenous American (23.6%), and Hispanic/Latin American (7.2%) ancestry creates a distinctive phenotype: Sub-Saharan African foundation provides facial fullness, lip definition, and warm undertone base; East Asian ancestry contributes prominent cheekbones, eye shape epicanthic fold tendency, and structural geometry; Indigenous American heritage adds warm terracotta and amber skin depth; Hispanic/Latin American admixture enhances warm golden undertones throughout. The result is a unified warm-brown complexion with mahogany-to-copper richness rather than equal-measure blend.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-chested despite age; considerable mass concentrated in torso and upper body from five decades of welding and machine work. Legs slightly atrophied from reliance on mobility assist, but arms remain visibly muscular beneath loose skin.",
@@ -319,8 +299,8 @@
     "hair_style": "Full, braided beard with thirty-one small steel hex-nuts woven throughout; each nut represents a won contract from their organizing years",
     "hair_length": "Long (beard extends to mid-chest)",
     "eye_color": "Deep brown, modified with subtle retinal overlay implants that display scrolling text during reading",
-    "skin_tone": "Warm golden-brown with rich depth, reflecting the blend of Hispanic/Latin American, South Asian, and East Asian heritage; the color of terracotta clay with subtle warm undertones. Significant weathering and age-related texture visible across face and neck.",
-    "complexion": "Blended facial structure showing South Asian fullness in cheeks and lips with East Asian cheekbone prominence and Hispanic/Latin American warm skin richness. Deep-set eyes beneath pronounced brows; face bears the character of decades of shop-floor work. Hydraulic burns visible along both forearms as darker, scarred patches. Hands visibly enlarged from machine work and chrome reinforcement.",
+    "skin_tone": "Warm deep brown with mahogany-to-aged-copper richness; dominant Sub-Saharan warmth layered with East Asian undertone clarity and Indigenous American terracotta-amber depth. Significant weathering visible across face and neck from five decades of industrial work and age.",
+    "complexion": "Blended facial structure: Sub-Saharan African fullness in lips and cheek prominence combined with East Asian high cheekbone definition and characteristic eye shape; Indigenous American warmth throughout complexion creating golden-amber undertones in skin. Deep-set eyes beneath pronounced brows; face bears character of decades of shop-floor work. Hydraulic burns visible along both forearms as darker, scarred patches. Hands visibly enlarged from machine work and chrome reinforcement.",
     "distinguishing_marks": [
       "Bilateral hydraulic burns running in streaked patterns along both forearms from mid-wrist to elbow, darker and raised against surrounding skin",
       "Chromatic scarring where hand/forearm chrome skeletal reinforcement meets natural tissue at wrists and elbows",
@@ -330,14 +310,52 @@
     "posture_movement": "Moves deliberately and without hurry; the slowness is intentional and carries weight rather than frailty. Stands with a slight forward lean supported by the exo-suit. Hands often remain in lap or folded across chest when seated. Makes direct eye contact without apology. Voice is steady but deepened by age and cardiac reconstruction.",
     "clothing_style": "Tier 3 working-class aesthetic, deliberately maintained as such despite pension stability. Favors worn denim work shirts (often union-logoed), heavy canvas pants, and sturdy boots suitable for shop floors. Exo-suit worn visibly over clothing rather than concealed. A battered union pin from 2154 is always affixed to collar. Wears a simple steel wedding band and a copper wire bracelet twisted by hand (claimed to communicate with building ELF systems, though likely symbolic)."
   },
-  "image_prompt": "Cyberpunk 2226, Rowan Malhotra-Delgado, 178cm tall older worker, warm golden-brown skin with deep terracotta undertones reflecting Hispanic/Latin American and South Asian heritage with East Asian features, deep-set brown eyes with amber retinal implants barely glowing, silver-white full beard braided with steel hex-nuts extending to mid-chest, broad-shouldered muscular torso, visible chrome-reinforced hands and forearms with hydraulic burn scarring, gunmetal gray and matte black mobility assist exo-suit worn visibly over worn union denim work shirt and heavy canvas pants, sturdy work boots, union pin on collar, simple steel wedding band and copper wire bracelet, deliberate posture with forward lean, sitting in industrial workshop setting with soft neon overhead lighting casting amber and cyan shadows, weathered facial features, direct unflinching gaze, cinematic lighting, gritty realism, union worker aesthetic, cybernetic age --ar 2:3 --v 6",
+  "image_prompt": "Rowan Kamara-Park, 50-year-old industrial union organizer, deep warm mahogany-brown skin with terracotta and amber undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic/Latin American heritage. Prominent East Asian cheekbones contrast with Sub-Saharan fullness; deep-set dark brown eyes modified with amber retinal implants. Full silver-white beard braided with thirty-one steel hex-nuts, extending to mid-chest. Broad muscular shoulders and thick chest, legs slightly atrophied. Chrome-reinforced hands and forearms with visible metallic caps at wrists and chrome striating. Bilateral hydraulic burn scars on forearms. Wears gunmetal gray and matte black external mobility assist exo-suit over worn union denim shirt and heavy canvas pants. Union pin (2154) on collar, steel wedding band, copper wire bracelet. Weathered face bearing five decades of shop-floor work. Seated in deliberate posture, leaning slightly forward, hands folded across chest. GLMZ GLMZ industrial setting, fluorescent workshop lighting with warm amber glow reflecting off chrome augmentations, union workspace background. Photorealistic, dignified, direct eye contact. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 52.9,
-    "South Asian": 28.9,
-    "East Asian": 18.2
+    "Sub-Saharan African": 37.1,
+    "East Asian": 32.1,
+    "Indigenous American": 23.6,
+    "Hispanic/Latin American": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 17.6,
+        "Somali": 7.4
+      },
+      "West African": {
+        "Senegalese": 12.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 32.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 9.7
+      },
+      "Mesoamerican": {
+        "Mixtec": 10.8,
+        "Nahua": 3.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 1.4,
+        "Peruvian": 1.7
+      },
+      "Central American": {
+        "Honduran": 1.9
+      },
+      "Caribbean": {
+        "Cuban": 2.2
+      }
+    }
+  }
 }

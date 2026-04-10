@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6847992b8880096e7db1f1e",
   "type": "character",
-  "name": "Phoenix Banerjee-Magnúsdóttir",
+  "name": "Phoenix Xayavong-Tanaka",
   "aliases": [
     "Drej",
     "The Fixture"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Harrowgate Industrial Plateau, near North Ave and Damen",
-  "description": "Ondřej is stocky and solid, with light brown skin that is perpetually smudged with machine grease in the creases of their knuckles and around their ears, and close-cropped dark hair they keep practical-short. Their eyes are a pale grey-green — an odd inheritance from some distant Slavic ancestor — and they have a habit of blinking very slowly at people when thinking, which adults find either unsettling or endearing. They dress in heavy canvas work clothes with magnetic clip-points for tools, and their boots are steel-toed hand-me-downs two sizes too large that they've stuffed with folded composite foam to fit. One small personal touch: self-applied geneware pigment spots on their left wrist, a constellation pattern in copper-gold bioluminescence that a friend did with a secondhand kit.\n\nOndřej is quiet in the way of people who have spent years listening to machines rather than people. They understand how things fit together — mechanical systems, load-bearing structures, the logic of why something was designed the way it was — with an intuitive fluency that their master-tender, old Vesović-Nkemba, calls 'the feeling.' They do not particularly enjoy dealing with people they don't know, but they are fiercely attached to the small community of the Plateau floor. They pray to a Plateau E.L.F. called Grind that the workers believe inhabits the main press assembly and that, legend holds, will seize up the machinery to warn of coming danger.",
+  "description": "Phoenix Xayavong-Tanaka is stocky and solid, with light brown skin that is perpetually smudged with machine grease in the creases of their knuckles and around their ears, and close-cropped dark hair they keep practical-short. Their eyes are a pale grey-green — an odd inheritance from some distant Slavic ancestor — and they have a habit of blinking very slowly at people when thinking, which adults find either unsettling or endearing. They dress in heavy canvas work clothes with magnetic clip-points for tools, and their boots are steel-toed hand-me-downs two sizes too large that they've stuffed with folded composite foam to fit. One small personal touch: self-applied geneware pigment spots on their left wrist, a constellation pattern in copper-gold bioluminescence that a friend did with a secondhand kit.\n\nPhoenix Xayavong-Tanaka is quiet in the way of people who have spent years listening to machines rather than people. They understand how things fit together — mechanical systems, load-bearing structures, the logic of why something was designed the way it was — with an intuitive fluency that their master-tender, old Vesović-Nkemba, calls 'the feeling.' They do not particularly enjoy dealing with people they don't know, but they are fiercely attached to the small community of the Plateau floor. They pray to a Plateau E.L.F. called Grind that the workers believe inhabits the main press assembly and that, legend holds, will seize up the machinery to warn of coming danger.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -159,7 +159,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Harrowgate Industrial Plateau",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,27 +171,18 @@
     "Harrowgate Industrial Plateau",
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Free Assembly",
-    "Palette",
+    "Underground Phoenix",
     "Copper",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
-    "Steel",
-    "Gold",
-    "Alper Lebedev-Tutu",
-    "Altan Tanaka-Frimpong",
-    "Ambrosia Fekete-Waiyaki",
-    "Breck Tannen",
-    "Devraj Solano-Yildirim",
-    "Lowline Press",
-    "Sorin Ekwensi-Balasanyan",
     "Tenderloin",
-    "The Pure Hand",
-    "The Question",
-    "The Wire Taps"
+    "Steel",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Compass Rose",
+    "The Pale Mile",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European, North African, South Asian, and Central Asian blend; the genetic mosaic of the Ubiquitous Diaspora expressed in warm medium-brown skin with subtle olive and golden undertones, sharp Northern European bone structure softened by South Asian facial geometry, creating an arresting and difficult-to-categorize appearance",
+    "heritage": "East Asian dominant (42.3%) with significant Southeast Asian (17.5%), Sub-Saharan African (16.5%), Middle Eastern (12.3%), and South Asian (11.4%) ancestry; the genetic mosaic of the Ubiquitous Diaspora expressed through distinctive facial geometry blending East and Southeast Asian bone structure with broader cheekbones and jawline softness from African and South Asian heritage, creating a striking and genuinely difficult-to-categorize appearance",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Stocky and solid, compact frame with dense musculature developing from years of physical labor; broad shoulders and thick forearms despite slight stature",
@@ -199,8 +190,8 @@
     "hair_style": "Close-cropped, practical, kept short for safety around machinery",
     "hair_length": "Short",
     "eye_color": "Pale grey-green, unusual and striking",
-    "skin_tone": "Warm medium brown with golden-olive undertones; the convergence of North African sun-darkened complexion, South Asian warmth, and Northern European recessiveness creates a uniquely balanced tone that shifts in different lighting",
-    "complexion": "Perpetually smudged with machine grease in knuckles, ear creases, and around nail beds; weathered from industrial exposure; minimal facial hair; slow-blinking habit gives contemplative, unsettling presence; high cheekbones with subtle width across the face reflecting South Asian and Central Asian ancestry; strong jawline from Northern European genetics",
+    "skin_tone": "Warm medium-brown with golden undertones; the convergence of Sub-Saharan warmth, East and Southeast Asian complexion, Middle Eastern depth, and South Asian richness creates a uniquely balanced tone that shifts between deeper honey and bronze in different lighting",
+    "complexion": "Perpetually smudged with machine grease in knuckles, ear creases, and around nail beds; weathered from industrial exposure; minimal facial hair; slow-blinking habit gives contemplative, unsettling presence; high prominent cheekbones with balanced width across the face reflecting East Asian and Southeast Asian ancestry; strong jawline with subtle roundness from Sub-Saharan and South Asian genetics; subtle monolid or slightly hooded eye shape characteristic of East Asian heritage blending with rounder eye socket shapes from African and South Asian genetics",
     "visible_augmentations": "Geneware pigment constellation on left wrist only; no cyberware visible. Augmentation amateur-grade and clearly cosmetic rather than functional.",
     "distinguishing_marks": [
       "Self-applied geneware bioluminescent pigment constellation on inner left wrist in copper-gold, amateur but deliberate application, glows softly in low light"
@@ -208,15 +199,60 @@
     "posture_movement": "Moves with mechanical economy of motion, learned from machinery observation; stands with shoulders slightly forward, hands often at sides or ready to reach; walks deliberately, not hurried; very still when listening or problem-solving",
     "clothing_style": "Heavy canvas work clothes in faded grey and tan, tailored for industrial work with magnetic clip-points for tools sewn throughout; Tier 4-5 utilitarian. Steel-toed boots two sizes too large, visibly stuffed with composite foam padding. Clothes bear permanent stains and repair patches; no decorative elements except the wrist pigment."
   },
-  "image_prompt": "Phoenix Banerjee-Magnúsdóttir, 158cm compact muscular frame, warm medium-brown skin with golden-olive undertones blending Northern European, North African, South Asian and Central Asian ancestry, pale grey-green striking eyes, close-cropped dark brown hair, high cheekbones and strong jawline. Industrial mechanic in faded grey-tan heavy canvas work clothes with tool clip-points, oversized steel-toed boots padded with composite foam, permanent grease stains on hands and around nail beds. Copper-gold bioluminescent geneware constellation glowing softly on inner left wrist. Deliberate economy of movement, shoulders slightly forward, hands ready. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit industrial workshop background with machinery, moody atmospheric lighting, contemplative slow-blinking expression. Cinematic, gritty realism, character portrait --ar 2:3 --v 6",
+  "image_prompt": "Phoenix Xayavong-Tanaka, 158cm compact stocky figure with broad shoulders and muscular forearms, warm medium-brown skin with golden undertones, striking pale grey-green eyes, dark close-cropped hair, distinctive multicultural facial features blending East Asian cheekbones with African and South Asian jawline roundness, monolid eye shape. Weathered grease-stained hands and forearms. Left inner wrist glowing soft copper-gold bioluminescent geneware constellation. Wearing faded grey and tan heavy canvas work clothes with embedded magnetic tool clips, severely worn and patched, steel-toed boots oversized and padded. Posture mechanically economical, shoulders slightly forward. Standing in dim industrial workshop setting, neon accent lighting catching the wrist geneware glow, machinery shadows across face, contemplative slow-blinking expression, GLMZ aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 37.8,
-    "North African": 27.2,
-    "South Asian": 27.2,
-    "Central Asian": 7.8
+    "East Asian": 42.3,
+    "Southeast Asian": 17.5,
+    "Sub-Saharan African": 16.5,
+    "Middle Eastern": 12.3,
+    "South Asian": 11.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 26.3
+      },
+      "Korean": {
+        "Korean": 3.1
+      },
+      "Chinese": {
+        "Cantonese": 12.9
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 17.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 1.5
+      },
+      "East African": {
+        "Rwandan": 2.1
+      },
+      "Southern African": {
+        "Zimbabwean": 7.1,
+        "Botswanan": 5.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 2.4,
+        "Palestinian": 5.6
+      },
+      "Persian": {
+        "Iranian": 4.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.4
+      }
+    }
+  }
 }

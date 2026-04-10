@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b57832a12ff98e320ef44a",
   "type": "character",
-  "name": "Bjorn Montalvo",
+  "name": "Kwame Lewandowski",
   "aliases": [
     "Zhe",
     "Anzhie"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Kenwood Gate, Zheng-Dao Regional Distribution Hub 7, near Damen and Armitage",
-  "description": "Anzhela is medium height with the slightly overdeveloped forearm muscles of someone who has spent years physically wrangling cargo manifests and dock equipment when the automated systems — which break down constantly — fail. Her skin is warm brown, her hair a natural dark coil she keeps pinned back with three mismatched clips she has never bothered to replace because she is always doing six other things. She has color-changing hair tips — dyed in the geneware sense, shifting between deep teal and burnt orange depending on temperature — that she got on a whim at twenty-seven and has never quite gotten around to removing because they are genuinely useful for gauging how cold the dock warehouse is.\n\nShe is competent in a way that has outpaced her job title for roughly four years and her pay grade for six. She coordinates the mid-lake freight routing for Zheng-Dao's third-largest regional hub, a job that officially requires one person and actually requires the sustained output of three, and she does it with a combination of exhausted creativity, genuine systems intelligence, and a working relationship with the Hub 7 E.L.F. that she has spent two years cultivating through meticulous daily offerings. She is not unhappy — she likes the puzzle of logistics, genuinely — but she is aware, in the specific way of people who have been passed over for promotion twice, that the puzzle is not making her rich.",
+  "description": "Kwame Lewandowski is medium height with the slightly overdeveloped forearm muscles of someone who has spent years physically wrangling cargo manifests and dock equipment when the automated systems — which break down constantly — fail. Her skin is warm brown, her hair a natural dark coil she keeps pinned back with three mismatched clips she has never bothered to replace because she is always doing six other things. She has color-changing hair tips — dyed in the geneware sense, shifting between deep teal and burnt orange depending on temperature — that she got on a whim at twenty-seven and has never quite gotten around to removing because they are genuinely useful for gauging how cold the dock warehouse is.\n\nShe is competent in a way that has outpaced her job title for roughly four years and her pay grade for six. She coordinates the mid-lake freight routing for Zheng-Dao's third-largest regional hub, a job that officially requires one person and actually requires the sustained output of three, and she does it with a combination of exhausted creativity, genuine systems intelligence, and a working relationship with the Hub 7 E.L.F. that she has spent two years cultivating through meticulous daily offerings. She is not unhappy — she likes the puzzle of logistics, genuinely — but she is aware, in the specific way of people who have been passed over for promotion twice, that the puzzle is not making her rich.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenwood Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,36 +237,21 @@
   "related_entities": [
     "Kenwood Gate",
     "Zheng-dao Bioelectric",
-    "Cezar Watanabe-Gyasi",
-    "Dzemal Acholonu-Patagiri",
-    "Ferrogate Transit",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kadiatou Bergstrom-Konate",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Somalex",
-    "Taxman",
-    "The Narrows",
-    "The Pure Hand",
-    "The Question",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko"
+    "Cargo Tacos",
+    "Whim"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic blend: Hispanic/Latin American (33.2%), Northern European (17.1%), East Asian (15.5%), Southeast Asian (14.1%), Sub-Saharan African (13.2%), South Asian (6.9%). Features reflect this global diaspora—warm undertones with subtle depth, eye shape showing East/Southeast Asian influence, bone structure mixing multiple continental traits.",
+    "heritage": "Mixed Eastern European (67%) and Sub-Saharan African (31.4%) ancestry with trace Hispanic/Latin American (1.6%). Features reflect this significant blend: warm medium-deep brown skin with subtle golden undertones, broad cheekbones and strong jawline from African heritage, balanced with Eastern European bone structure and facial proportions. Alert dark brown eyes convey calculated intelligence. The combination creates a striking unified appearance rather than discrete ethnic markers—a product of the Ubiquitous Diaspora.",
     "height_cm": 167,
     "weight_kg": 62,
     "build": "Lean and muscular through the forearms and shoulders from years of manual cargo handling; core strength that reads as functional rather than aesthetic. Slight asymmetry in right shoulder from repetitive strain.",
     "hair_color": "Natural dark brown with temperature-responsive geneware color-shift tips (deep teal when cold, burnt orange when warm)",
     "hair_style": "Naturally coiled, worn pulled back and secured with three mismatched metal clips (brass, steel, aluminum) — practical rather than intentional",
     "hair_length": "Medium (shoulder-length when down, pinned above shoulders daily)",
-    "eye_color": "Dark brown with slight epicanthic fold influence, alert and calculating",
-    "skin_tone": "Warm medium-deep brown with subtle golden undertones, even complexion reflecting diverse ancestry blend",
-    "complexion": "Minimal makeup, clear skin with visible fatigue lines around eyes from early mornings and chronic sleep deficit. Hands show calluses and faint scanner-burn marks from haptic glove use. Functional grooming — showered but not primped. Facial structure shows blended ancestry: warm depth with East Asian eye shape influence, broad cheekbones reflecting multiple heritage lines.",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Warm medium-deep brown with subtle golden undertones, even complexion reflecting the genetic blend of Eastern European and Sub-Saharan African ancestry",
+    "complexion": "Minimal makeup, clear skin with visible fatigue lines around eyes from early mornings and chronic sleep deficit. Hands show calluses and faint scanner-burn marks from haptic glove use. Functional grooming — showered but not primped. Facial structure reflects Eastern European-African blend: warm depth, broad cheekbones, strong jawline, direct gaze.",
     "distinguishing_marks": [
       "Faint circular burn scar on left palm from warehouse equipment malfunction seven years ago",
       "Rope-like scar tissue along right inner forearm from cargo handling accident at age 28",
@@ -276,17 +261,37 @@
     "posture_movement": "Efficient, forward-leaning gait. Shoulders perpetually tense. Hands in constant subtle motion — fingers moving through mental logistics calculations even at rest. Sits with one foot on the ground, ready to move. Makes direct eye contact with authority figures but breaks it under fatigue.",
     "clothing_style": "Zheng-Dao warehouse issue: grey and charcoal tactical pants with reinforced knee panels and cargo pockets, paired with fitted black synthetic turtleneck or grey performance shirt. Lightweight insulated vest in company grey-blue. Steel-toed boots (practical, not fashionable). No jewelry except the neural link port and the three hair clips. Occasional Φ50-80 smart-fabric jacket with temperature regulation that she toggles on cold dock runs. Tier 3-4 working class: functional, branded, worn but maintained."
   },
-  "image_prompt": "Bjorn Montalvo, 167cm lean muscular mixed-heritage woman with warm deep brown skin, natural coiled dark hair with teal/orange color-shift tips pinned back with metal clips. East Asian eye shape influence, global diaspora features. Wearing grey-charcoal Zheng-Dao tactical warehouse gear: reinforced pants, black fitted turtleneck, grey-blue insulated vest, steel-toed boots. Tactical grey haptic gloves with visible feedback nodes. Neural link port at base of skull. Subtle scars on palm and forearm. Forward-leaning efficient posture, alert calculating expression, hands in subtle motion. Warehouse dock setting, cool neon-industrial lighting, cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, functional and worn but meticulously maintained gear, early morning fatigue in expression --ar 2:3 --v 6",
+  "image_prompt": "Kwame Lewandowski, early 30s warehouse logistics operator, 167cm lean muscular build, warm medium-deep brown skin with golden undertones reflecting Eastern European and Sub-Saharan African heritage, broad cheekbones and strong jawline, alert dark brown eyes showing chronic fatigue. Naturally coiled dark brown hair with teal and burnt orange color-shift geneware tips, pulled back with three mismatched metal clips. Grey tactical Zheng-Dao warehouse pants with reinforced knees, black synthetic turtleneck, grey-blue insulated vest, steel-toed boots. Both hands wearing tactical grey haptic gloves with visible feedback nodes. Subtle neural link port visible at base of skull. Functional grooming, minimal makeup, visible fatigue lines around eyes. Scarred left palm, rope scar on right forearm, silver logistics tattoo on right wrist. Forward-leaning posture, tense shoulders, hands in subtle calculating motion. Neo-noir warehouse dockside setting, cool industrial lighting with blues and greys, early morning atmospheric haze, functional and worn aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.2,
-    "Northern European": 17.1,
-    "East Asian": 15.5,
-    "Southeast Asian": 14.1,
-    "Sub-Saharan African": 13.2,
-    "South Asian": 6.9
+    "Eastern European": 67,
+    "Sub-Saharan African": 31.4,
+    "Hispanic/Latin American": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 67
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 15.2
+      },
+      "East African": {
+        "Somali": 16.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.2
+      },
+      "Central American": {
+        "Guatemalan": 0.4
+      }
+    }
+  }
 }

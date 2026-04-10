@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e57eac83d9ad270a52a3f7",
   "type": "character",
-  "name": "Fetaui Lautoa-Esquivel",
+  "name": "Lark Phommasack-Johansson",
   "aliases": [
     "D",
     "Daro"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Deepwell Station, Ferrogate Transit Line 7 (a deep underground hub connecting The Shelf, Ironvein, and Geartown), near sub-level access near State and Van Buren",
-  "description": "Dariusz presents as someone who has been carefully assembled for minimum surface area — posture folded slightly inward, uniform pressed to regulation standard, voice pitched to carry exactly as far as it needs to in a busy station and no further. Their heritage is Polish-Japanese-Guinean and they have a face that is difficult to read at rest, not from coldness but from a habitual, practiced blankness that they turn on like a professional tool. Their hair is cropped close on the sides and dyed a deep transit-orange on top — the one personalization their uniform policy allows — and they have subtle iridescent patterning in their irises, a cosmetic mod they got at eighteen that they describe as the most impulsive decision of their life and the one they are least sorry about.\n\nThey have been working Deepwell Station for three years and they know every inch of it: the platforms, the maintenance corridors, the unofficial short-cuts the regulars use, the corner where a small E.L.F. shrine has accreted over decades of passenger offerings. They are the person who helps the elderly woman with her bags, redirects the lost teenager, talks down the passenger having a breakdown between Lines 4 and 7 interchange — not because they are uniformly kind but because these things happen in front of them constantly and standing by is more exhausting than intervening. Off shift they are quiet, slightly anxious, and prone to long silences that they fill with tactical puzzle games on their wrist unit.",
+  "description": "Lark Phommasack-Johansson has been carefully assembled for minimum surface area — posture folded slightly inward, uniform pressed to regulation standard, voice pitched to carry exactly as far as it needs to in a busy station and no further. Their heritage is Polish-Japanese-Guinean and they have a face that is difficult to read at rest, not from coldness but from a habitual, practiced blankness that they turn on like a professional tool. Their hair is cropped close on the sides and dyed a deep transit-orange on top — the one personalization their uniform policy allows — and they have subtle iridescent patterning in their irises, a cosmetic mod they got at eighteen that they describe as the most impulsive decision of their life and the one they are least sorry about.\n\nThey have been working Deepwell Station for three years and they know every inch of it: the platforms, the maintenance corridors, the unofficial short-cuts the regulars use, the corner where a small E.L.F. shrine has accreted over decades of passenger offerings. They are the person who helps the elderly woman with her bags, redirects the lost teenager, talks down the passenger having a breakdown between Lines 4 and 7 interchange — not because they are uniformly kind but because these things happen in front of them constantly and standing by is more exhausting than intervening. Off shift they are quiet, slightly anxious, and prone to long silences that they fill with tactical puzzle games on their wrist unit.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,35 +223,24 @@
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
   ],
   "related_entities": [
-    "Deepwell Station",
     "Ferrogate Transit",
+    "Deepwell Station",
     "Symbiont",
     "Zheng-Dao Heavy Industries Subterranean Transit Network",
     "The Shelf",
     "The Heritage Vault",
+    "GLMZ",
     "Ironvein",
     "Geartown",
     "Big Rig",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Breck Tannen",
-    "Constance",
-    "Crucible LL-4 'Peacekeeper'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Corner Slice",
     "Line 7 Bar",
-    "MERIDIAN",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Praevex",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA PA-5 'Attendant'",
-    "Witness"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Pacific Islander (Samoan/Tongan), Sub-Saharan African, Hispanic/Latin American, with Northern European and South Asian ancestry. The blend creates warm medium-bronze skin with subtle golden undertones, broader facial structure reflecting Pacific Islander genetics, and dark hair with natural warm undertones.",
+    "heritage": "Southeast Asian (30.7%), East Asian (26.2%), Sub-Saharan African (25.8%), South Asian (9.7%), and Middle Eastern (7.6%) ancestry. This balanced global mix creates distinctive phenotypic features: warm deep bronze skin with golden and mahogany undertones from the tri-continental African-Asian blend, moderate facial structure with defined cheekbones reflecting Southeast and East Asian ancestry softened by Sub-Saharan African features, and naturally dark hair with warm undertones beneath the transit-orange dye.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and economical — minimal excess, structured rather than athletic. Shoulders slightly rounded from habitual forward posture, as if perpetually ready to fold into themselves in crowded spaces.",
@@ -259,8 +248,8 @@
     "hair_style": "Close-cropped fade on sides, longer on top (4-5 cm), swept back slightly",
     "hair_length": "Short",
     "eye_color": "Deep blue-green with iridescent geometric patterning across iris (cosmetic modification)",
-    "skin_tone": "Warm medium-bronze with golden undertones — reflecting Pacific Islander and Sub-Saharan African heritage, brightened by Hispanic/Latin American and South Asian ancestry. Rich, deep complexion that catches light warmly.",
-    "complexion": "Clear, well-maintained skin with minimal scarring. Broader facial structure with more prominent cheekbones reflecting Pacific Islander ancestry. Face often at rest appears blank or neutral — a practiced professional neutrality. Fine lines around eyes suggest frequent concentration. Jaw defined with stronger mandibular structure.",
+    "skin_tone": "Deep warm bronze with golden-mahogany undertones — the layered result of Southeast Asian, East Asian, and Sub-Saharan African ancestry forming the dominant palette, enriched by South Asian warmth and Middle Eastern depth. Rich complexion with natural luminosity that catches light with warm, earthy radiance.",
+    "complexion": "Clear, well-maintained skin with minimal scarring. Moderate facial structure with balanced, defined cheekbones reflecting the multi-continental blend — Southeast and East Asian angularity softened by Sub-Saharan African fullness in the lower face. Face often at rest appears blank or neutral — a practiced professional neutrality. Fine lines around eyes suggest frequent concentration. Jaw defined with moderate mandibular structure.",
     "distinguishing_marks": [
       "Small linear scar on left inner wrist (3 cm), pale and old, orientation suggests self-inflicted or medical intervention from adolescence",
       "Ferrogate Transit Authority tattoo on right collarbone — minimalist logo in gray-black, required for Tier 2 employee status",
@@ -270,16 +259,61 @@
     "posture_movement": "Walks with economy of motion — no wasted movement. Posture slightly folded inward, shoulders carrying tension. Hand movements are precise and controlled, trained by three years of platform work. Voice is quiet and modulated, pitched to travel exactly as far as needed. When stationary, they often shift weight between feet or find a wall to lean against — never fully at ease standing open in space.",
     "clothing_style": "Ferrogate Transit Authority regulation uniform when on shift: charcoal gray synthetic-blend shirt with reflective piping and badge, regulation trousers, non-slip platform shoes. Off-shift: muted palette — dark thermal layers, unmarked synth-weave jacket in charcoal or navy, worn cargo pants with reinforced pockets. All clothing is functional and well-maintained but carries no brand markers or tier signaling. One personal item: worn leather wrist unit band holding a personal tactical gaming device."
   },
-  "image_prompt": "Fetaui Lautoa-Esquivel, cyberpunk 2226, 168cm lean figure with warm medium-bronze skin and golden undertones reflecting Pacific Islander and Sub-Saharan African heritage. Dark brown hair with transit-orange dye on crown, close-cropped fade sides, swept back longer on top. Deep blue-green eyes with intricate iridescent geometric iris modification. Broader Pacific Islander facial structure with defined cheekbones and strong jaw. Ferrogate Transit Authority charcoal gray regulation uniform with reflective piping, worn with economy of movement and inward posture suggesting years of platform work. Small pale scar on left inner wrist, faint circular burn mark on left forearm, gray-black minimalist tattoo on right collarbone. Slight subcutaneous bulge behind left ear from comm implant barely visible under close-cropped hairline. Professional neutrality in expression, quiet presence, hand movements precise and controlled. Standing in transit station platform with controlled posture, weight shifted, leaning slightly as if never fully at ease in open space. Cool industrial lighting casting geometric shadows. Atmosphere of quiet efficiency and practiced detachment. --ar 2:3 --v 6",
+  "image_prompt": "Lark Phommasack-Johansson, GLMZ, lean 168cm figure with deep warm bronze skin with golden-mahogany undertones reflecting Southeast Asian, East Asian, and Sub-Saharan African heritage. Close-cropped dark brown hair with transit-orange dye on crown, swept back. Deep blue-green iridescent geometric-patterned eyes (cosmetic modification). Defined cheekbones, neutral professional expression, fine concentration lines around eyes. Wearing charcoal Ferrogate Transit Authority regulation uniform with reflective piping and badge. Slight subdermal bulge behind left ear (comm implant). Pale 3cm linear scar on left inner wrist, gray-black collarbone tattoo, circular burn mark on left forearm. Posture slightly folded inward with tension in shoulders. Standing in utilitarian transit station environment with cool metal and LED lighting, modest personal tactical gaming device on worn leather wrist band. Professional, controlled demeanor, quiet presence. Neo-noir transit worker aesthetic, functional and unmarked clothing, economy of movement. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 44.0,
-    "Sub-Saharan African": 22.5,
-    "Hispanic/Latin American": 18.8,
-    "Northern European": 9.0,
-    "South Asian": 5.7
+    "Southeast Asian": 30.7,
+    "East Asian": 26.2,
+    "Sub-Saharan African": 25.8,
+    "South Asian": 9.7,
+    "Middle Eastern": 7.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 22.6
+      },
+      "Filipino": {
+        "Tagalog": 8.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 9.7
+      },
+      "Japanese": {
+        "Japanese": 16.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 7.6,
+        "Kenyan": 2.7
+      },
+      "West African": {
+        "Senegalese": 7.4,
+        "Guinean": 8.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5
+      },
+      "Nepali": {
+        "Nepali": 3.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.3,
+        "Sinhalese": 0.2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 7.6
+      }
+    }
+  }
 }

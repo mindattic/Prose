@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fd78a3ac30ef5b73b08570",
   "type": "character",
-  "name": "Koffi Vestergaard",
+  "name": "Koffi Ito",
   "aliases": [
     "Old Timur",
     "the Jaw"
@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "The Alban Souk, Old Harbor, near Michigan Ave South and Cermak",
-  "description": "Timur is a large man gone slightly to ruin in the graceful way of old machinery — still clearly capable, still clearly heavy, but weathered in ways that suggest many renegotiated repairs. He has a prominent jaw and broad cheekbones, medium-brown skin crosshatched with fine white scars from decades of handling sharp-edged salvage without sufficient gloves, and a right arm that is entirely cybernetic from the shoulder — a heavy industrial prosthetic, matte gunmetal, visibly older than current models and repaired in multiple places with mismatched components. He wears it with the casual comfort of a man who has had it longer than he hasn't. His stall at the Alban Souk is technically three stalls — he has occupied the space long enough that the boundaries have blurred into a small empire of organized rubble: crates of stripped components, racks of salvage-grade augmentation parts, shelves of pre-owned tools, bins of miscellaneous tech detritus that he can identify by feel.\n\nTimur is a man of comfortable silences. He does not make conversation; he makes transactions, and occasionally, for people he has decided are worth it, he makes exceptions to his general indifference. He has a sharp technical mind and can assess the quality of a piece of salvage hardware faster than most licensed appraisers, and he quietly sells aug components — stripped limbs, neural interface boards, secondhand sensory units — to people who cannot afford licensed installation. He does not perform the installations himself anymore. He used to. He stopped after something went wrong that he does not discuss.",
+  "description": "Koffi Ito is a large man gone slightly to ruin in the graceful way of old machinery — still clearly capable, still clearly heavy, but weathered in ways that suggest many renegotiated repairs. He has a prominent jaw and broad cheekbones, medium-brown skin crosshatched with fine white scars from decades of handling sharp-edged salvage without sufficient gloves, and a right arm that is entirely cybernetic from the shoulder — a heavy industrial prosthetic, matte gunmetal, visibly older than current models and repaired in multiple places with mismatched components. He wears it with the casual comfort of a man who has had it longer than he hasn't. His stall at the Alban Souk is technically three stalls — he has occupied the space long enough that the boundaries have blurred into a small empire of organized rubble: crates of stripped components, racks of salvage-grade augmentation parts, shelves of pre-owned tools, bins of miscellaneous tech detritus that he can identify by feel.\n\nKoffi Ito is a man of comfortable silences. He does not make conversation; he makes transactions, and occasionally, for people he has decided are worth it, he makes exceptions to his general indifference. He has a sharp technical mind and can assess the quality of a piece of salvage hardware faster than most licensed appraisers, and he quietly sells aug components — stripped limbs, neural interface boards, secondhand sensory units — to people who cannot afford licensed installation. He does not perform the installations himself anymore. He used to. He stopped after something went wrong that he does not discuss.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -184,7 +184,7 @@
     "Hustler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,34 +251,18 @@
     "The Alban Souk",
     "The Reclamation Assembly",
     "The Cutters Guild",
+    "Frequency",
     "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Pressure Drop",
     "Irontide Tidal Energy",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions",
-    "Bathysphere Networks",
-    "Bioacoustic Communication Membrane",
-    "Breck Tannen",
-    "Devraj Solano-Yildirim",
-    "Djeneba Park-Traore",
-    "Dzemal Acholonu-Patagiri",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Old Harbor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "TESSERA WL-6 'Stacker'",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "The Seam",
-    "The Undertow",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore LinguaSync Real-Time Translation Implant"
+    "Rubble & Rye",
+    "Neural Palate",
+    "Harbor Fish Shack",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African, South Asian, Southeast Asian, and Hispanic/Latin American ancestry—a complex diaspora blend that manifests in his facial structure and skin tone. His features reflect this multifaceted genetic heritage rather than any single regional origin.",
+    "heritage": "Predominantly East Asian (64.3%) with substantial Sub-Saharan African (25.5%) and Indigenous American (10.2%) ancestry. His genetic makeup manifests as a distinctive blend: East Asian bone structure and eye shape tempered by broader facial proportions and jaw strength from African heritage, with subtle cheekbone and nose bridge characteristics reflecting Indigenous American ancestry. A true product of the Ubiquitous Diaspora.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Heavy and broad-shouldered, gone soft at the midsection but still conveying underlying strength—the physique of a man who has spent six decades moving weight around but has stopped fighting gravity in the last decade",
@@ -286,8 +270,8 @@
     "hair_style": "Close-cropped, practical, unstyled",
     "hair_length": "Short",
     "eye_color": "Dark brown with slight cloudiness in the left eye (cataracts, age-related)",
-    "skin_tone": "Medium-warm golden brown—the result of East Asian and Southeast Asian genetics blended with Sub-Saharan African undertones, creating a complex tan that sits between olive and warm bronze",
-    "complexion": "Weathered and lined—his face bears the deep creases of decades spent outdoors and in poorly ventilated salvage yards. His bone structure reflects his mixed heritage: moderate cheekbones with subtle angularity from East and Southeast Asian ancestry, a prominent jaw strengthened by Sub-Saharan and South Asian genetic contribution, and a broad bridge to his nose. His features are still clearly defined beneath the age. Stubble is constant; he shaves irregularly.",
+    "skin_tone": "Medium warm bronze—a harmonious blend of East Asian base warmed by Sub-Saharan African melanin and Indigenous American ancestry, creating a rich, complex tan that deepens to warm copper in natural light",
+    "complexion": "Weathered and deeply lined—his face bears the creases of decades spent outdoors and in poorly ventilated salvage yards. His bone structure reflects his mixed heritage: moderate, slightly rounded cheekbones with subtle angularity from East Asian ancestry, a prominent and square jaw strengthened by Sub-Saharan African genetic contribution, and a broader bridge to his nose with slight flare at the nostrils. His features remain clearly defined beneath the age. Stubble is constant; he shaves irregularly.",
     "distinguishing_marks": [
       "Fine white scar tissue crisscrossing both hands and forearms in a dense lattice pattern from years of handling sharp salvage without gloves",
       "A burn scar running from his left wrist up to his elbow in a thin line, pale against his skin",
@@ -298,16 +282,39 @@
     "posture_movement": "He moves with the deliberate economy of an older man who has learned where his center of gravity sits. Standing, he favors his left side slightly, shoulder cocked back. His right arm—the prosthetic—moves with mechanical precision but without hesitation; he has inhabited it long enough that it reads as natural to him. He sits heavily and rises slowly. His hands are rarely still; even in conversation, his left hand fidgets—turning something over, feeling its weight and balance.",
     "clothing_style": "Tier 4 working-class practical. He wears heavy canvas cargo pants stained with years of grease and rust, held up with a braided leather belt. His shirts are always long-sleeved—industrial cotton or poly-blend, usually gray or dark blue, with large pockets and reinforced stress points. Over this, a sleeveless vest in charcoal leather, old but meticulously maintained, with deep pockets for tools and small components. His shoes are steel-toed work boots, scuffed and resoled multiple times. He wears a pair of fingerless leather gloves on his left hand only; his right prosthetic requires no protection. No jewelry, no visible corpo branding, no pretense. Everything he wears is functional and long past fashionable."
   },
-  "image_prompt": "Portrait of Koffi Vestergaard, a weathered 60-year-old salvage worker, medium-warm golden-brown complexion blending East Asian, Sub-Saharan African, and Southeast Asian heritage, short steel-gray hair, deep facial creases, dark brown eyes with left eye cloudiness, prominent jaw and moderate cheekbones. Right arm entirely matte gunmetal cybernetic prosthetic with visible repair welds, seams reinforced with mismatched plating, non-humanoid hand. Dense white scar lattice across both hands and forearms, thin burn scar from left wrist to elbow, 3-inch jaw scar. Wearing long-sleeved dark blue industrial shirt, charcoal leather sleeveless vest with tool pockets, grease-stained canvas cargo pants, steel-toed work boots, fingerless leather gloves on left hand only. Standing with left-favored posture, shoulder cocked back, mechanical precision in right arm movement. Cyberpunk 2226 Great Lakes Metropolitan Zone salvage yard setting, cool industrial lighting with blue-gray shadows, weathered and functional aesthetic, no corpo branding, worn and practical appearance --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Koffi Ito, a weathered 60-year-old salvage worker with mixed East Asian, Sub-Saharan African, and Indigenous American heritage. Rich bronze warm skin tone, deeply lined face showing decades of outdoor work, dark brown eyes with slight cloudiness in left eye, close-cropped steel gray hair with dark brown roots. Broad shoulders, heavy build gone soft at midsection, 188cm tall. Right arm entirely cybernetic prosthetic in matte gunmetal with visible repairs and mismatched plating, non-humanoid hand design. Left hand scarred lattice of white scar tissue from years of handling salvage, burn scar running up left forearm. Wearing industrial gray long-sleeved shirt, charcoal leather sleeveless vest with deep tool pockets, heavy stained canvas cargo pants, steel-toed work boots, fingerless leather gloves on left hand only. Standing with deliberate posture, favoring left side, mechanical right arm moving with precision. Background: dimly lit salvage yard at dusk, cool neon glow from distant megastructure, weathered metal and concrete, industrial atmosphere. Mood: stoic, weathered, competent. Lighting: natural fading daylight mixing with cool artificial light. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 42.6,
-    "Sub-Saharan African": 20.7,
-    "South Asian": 13.8,
-    "Hispanic/Latin American": 12.9,
-    "Southeast Asian": 10.0
+    "East Asian": 64.3,
+    "Sub-Saharan African": 25.5,
+    "Indigenous American": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 36.6
+      },
+      "Japanese": {
+        "Japanese": 27.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 17.9,
+        "Ethiopian": 4.9
+      },
+      "West African": {
+        "Ghanaian": 2.7
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 6.3,
+        "Lakota": 3.9
+      }
+    }
+  }
 }

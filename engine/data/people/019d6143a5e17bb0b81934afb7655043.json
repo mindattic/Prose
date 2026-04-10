@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e17bb0b81934afb7655043",
   "type": "character",
-  "name": "Kwame Mukherjee-Dlamini",
+  "name": "Ruslan Mbekele-Adu",
   "aliases": [
     "Seo-nim",
     "The Old Man",
@@ -14,7 +14,7 @@
   "age": 65,
   "status": "deceased",
   "location": "Old Harbor — buried in the flooded cemetery on Pier 9, marked by a single rusted katana driven into the mud, near Lake Shore and Wacker",
-  "description": "Seo was built like a stripped cable — no excess, no softness, every tendon visible beneath weathered skin\nthe color of teak left in salt air. His hands were the most telling feature: heavy knuckles, precise fingers,\nthe left hand missing its ring finger from a field amputation during the Busan Corridor campaign. He kept his\ngrey hair cropped to stubble, and his face held two expressions — calm and calmer. A scar ran from his right\ntemple to his jaw, a memento from a monofilament trap in the Jakarta Consolidation, and it pulled his mouth\ninto what looked like a permanent half-smile that was not a smile at all.\n\nHe moved like water finding a drain — unhurried, inevitable. Even in his last years, when the old military\naugments were misfiring and his left knee locked without warning, he could cross a room and have a blade at\nyour throat before you processed that he'd stood up. He wore the same faded military jacket every day, patches\nremoved, insignia cut away, as if he could amputate his history with a seam ripper.\n\nFirst impression: a quiet old man who cooked rice and stared at the drowned skyline. Second impression,\nif you were unlucky enough to earn one: the most dangerous person you had ever met, and the saddest.",
+  "description": "Ruslan Mbekele-Adu was built like a stripped cable — no excess, no softness, every tendon visible beneath weathered skin\nthe color of teak left in salt air. His hands were the most telling feature: heavy knuckles, precise fingers,\nthe left hand missing its ring finger from a field amputation during the Busan Corridor campaign. He kept his\ngrey hair cropped to stubble, and his face held two expressions — calm and calmer. A scar ran from his right\ntemple to his jaw, a memento from a monofilament trap in the Jakarta Consolidation, and it pulled his mouth\ninto what looked like a permanent half-smile that was not a smile at all.\n\nHe moved like water finding a drain — unhurried, inevitable. Even in his last years, when the old military\naugments were misfiring and his left knee locked without warning, he could cross a room and have a blade at\nyour throat before you processed that he'd stood up. He wore the same faded military jacket every day, patches\nremoved, insignia cut away, as if he could amputate his history with a seam ripper.\n\nFirst impression: a quiet old man who cooked rice and stared at the drowned skyline. Second impression,\nif you were unlucky enough to earn one: the most dangerous person you had ever met, and the saddest.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -229,7 +229,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,35 +246,15 @@
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
   ],
   "related_entities": [
+    "GLMZ",
+    "Harbor Fish Shack",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Teak",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Alper Castillo-Ababio",
-    "Altan Tanaka-Frimpong",
-    "Breck Tannen",
-    "Chen Wei-Lin",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "Dzemal Acholonu-Patagiri",
-    "Kang Athletics KA-200 'Padwork'",
-    "Kang Athletics KA-900 'Sensei'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "MERIDIAN",
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Old Harbor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Sorin Ekwensi-Balasanyan",
-    "The Question",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Teak"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (75%) with significant Eastern European (10.6%), South Asian (6.5%), Indigenous American (6.2%), and minor Hispanic/Latin American (1.7%) ancestry. The genetic blend manifests in rich, deep melanin tones with subtle warm undertones from South Asian heritage, bone structure reflecting the mixed ancestry with broader features characteristic of African heritage combined with finer details from Eastern European and South Asian lineages.",
+    "heritage": "Rare diaspora synthesis: Central Asian (31.3%) provides angular bone structure and cheekbone prominence; Hispanic/Latin American (20.6%) contributes warmth and facial softness to hard geometry; Sub-Saharan African (17.1%) adds broader nasal bridge, fuller lips, and deeper melanin foundation; Eastern European (16.1%) introduces lighter undertones and secondary facial angularity; Northern European (10.0%) creates subtle lightening in overall tone; South Asian (4.9%) adds fine-featured delicacy and warm radiance beneath surface. The combination produces a phenotype of striking complexity—Central Asian angularity softened by African and Hispanic fullness, with undertones of walnut and burnt copper from the interplay of melanin and lighter genetic contributions.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and corded, stripped of excess — visible musculature beneath weathered skin, the physique of someone who never stopped training despite age. Every tendon defined. Posture remains upright despite chronic joint degradation.",
@@ -282,8 +262,8 @@
     "hair_style": "Cropped to stubble, military precision",
     "hair_length": "Short",
     "eye_color": "Dark brown, somewhat faded with age",
-    "skin_tone": "Rich deep brown with warm undertones — the result of substantial Sub-Saharan African ancestry dominating his complexion, weathered by decades of salt air and sun exposure into a tone reminiscent of aged mahogany. The South Asian ancestry adds subtle warmth to the deeper base.",
-    "complexion": "Deeply lined face with the geography of decades written across it. Broad facial structure reflecting African heritage, with finer details from Eastern European and South Asian genetic influences. Perpetually calm expression. Lines around the eyes suggest either squinting against bright light or constant observation. Minimal grooming beyond stubble maintenance.",
+    "skin_tone": "Medium-deep brown, warm-burnished from the fusion of Central Asian, African, and South Asian genetics—the tone of aged walnut with copper undertones. Decades of salt air and sun exposure have deepened the base while the warm genetic components create internal radiance. Surface shows weathering but retains subtle luminosity beneath.",
+    "complexion": "Deeply lined face with geography of decades etched across it. Central Asian heritage shapes defined cheekbones and angular jawline; African ancestry broadens the nose and adds fullness to lips; South Asian genetics refine the overall architecture with finer proportions. Eyes carry subtle epicanthic variation from Central/South Asian blend. Perpetually calm expression. Lines radiating from eyes suggest decades of squinting against bright light and constant vigilant observation. Weathered, minimal grooming beyond stubble maintenance.",
     "distinguishing_marks": [
       "Monofilament scar running diagonally from right temple to right jaw, creating a permanent half-smile that reads as sardonic rather than genuine — legacy of Jakarta Consolidation",
       "Left hand missing ring finger, amputated in field during Busan Corridor campaign; the amputation healed roughly, with visible scar tissue at the knuckle",
@@ -293,16 +273,66 @@
     "posture_movement": "Moves like water finding a drain — unhurried, inevitable, economical. Every motion purposeful. Even in decline, capable of crossing a room and engaging before observer processes the initial movement. Left knee locks intermittently, causing slight asymmetry in gait. Hands rest in deliberate positions, never idle.",
     "clothing_style": "Uniform was his daily uniform: faded military jacket, all patches and insignia deliberately removed or cut away. The garment itself was Tier 3-4 military surplus, maintained rather than replaced. Beneath it, simple clothing — worn combat trousers, unmarked. No personal ornamentation, no status symbols. Clothing speaks to a man trying to amputate his history as systematically as he amputated his finger."
   },
-  "image_prompt": "Kwame Mukherjee-Dlamini, 172cm lean male with rich deep mahogany-brown skin, weathered by decades. Grey hair cropped to military stubble. Broad facial structure with deeply lined face, dark brown eyes faded with age. Distinctive monofilament scar from right temple to jaw creating sardonic half-smile. Left hand missing ring finger with visible scar tissue. Heavy knuckle calluses. Wearing faded military surplus jacket with all insignia removed, worn combat trousers, unmarked. Military posture, economical movement, left knee servo augmentation visible at joint. Cyberpunk 2226, Great Lakes Metropolitan Zone, standing in neon-lit corridor with industrial brutalist architecture, cool blue and amber lighting casting shadows across weathered features. Calm, observant expression. Composition emphasizes weathered hands, scar detail, and purposeful stillness. Professional portrait lighting. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Ruslan Mbekele-Adu, 172cm lean and corded frame with visible musculature, medium-deep warm-burnished brown skin with walnut and copper undertones, Central Asian-African-South Asian phenotype with angular cheekbones and broader nose, dark brown faded eyes with subtle epicanthic variation, deeply lined weathered face etched with decades of history, monofilament scar from right temple to jaw creating sardonic half-smile, grey cropped military stubble, missing ring finger on left hand with visible scar tissue. Wearing faded military surplus jacket with all insignia removed, worn combat trousers, unmarked clothing. Military-grade servo augmentation visible in left knee. Posture upright and economical, expression perpetually calm and observant. Standing in dim neon-lit Great Lakes Metropolitan Zone corridor, salt-air weathered, emanating quiet lethality and worn inevitability. Cinematic lighting catching the complex warm undertones of his skin. Photorealistic, gritty, aged soldier aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 75.0,
-    "Eastern European": 10.6,
-    "South Asian": 6.5,
-    "Indigenous American": 6.2,
-    "Hispanic/Latin American": 1.7
+    "Central Asian": 31.3,
+    "Hispanic/Latin American": 20.6,
+    "Sub-Saharan African": 17.1,
+    "Eastern European": 16.1,
+    "Northern European": 10,
+    "South Asian": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 31.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 13.3
+      },
+      "Mexican": {
+        "Mexican": 7.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 5,
+        "Ethiopian": 8.8
+      },
+      "Southern African": {
+        "South African": 3.3
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 6.7,
+        "Serbian": 2.4
+      },
+      "Slavic East": {
+        "Belarusian": 0.1,
+        "Ukrainian": 0.3
+      },
+      "Magyar-Romanian": {
+        "Romanian": 6.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 5.5,
+        "Irish": 4.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 2.5,
+        "Punjabi Pakistani": 2.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69c7576ac7d9c68f63ac750",
   "type": "character",
-  "name": "Aero Quiñones-Mwangi",
+  "name": "Aero Sigurdsson-Pathak",
   "aliases": [
     "Brother Frequency",
     "The Tin Monk"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Deepwell Station — a defunct transit maintenance bay converted into a meditation hall called The Loop, near sub-level access near Dearborn and Jackson",
-  "description": "Piotr is lean to the point of architectural, all angles and deliberate stillness, with light brown skin and a shaved head except for a single stripe of dark hair grown long and braided with copper wire from decommissioned transit relays. His arms from elbow to wrist are covered in chrome prayer sleeves — not for function but for devotion, etched with mantras in four scripts, and they hum at a frequency just below hearing when he is deep in practice. His eyes are pale grey-green with sunburst irises from a cosmetic mod he got at nineteen and never updated, which means they're slightly dated in a way he doesn't notice.\n\nHe came to circuit monasticism sideways, through a collapse — a psychotic break at twenty-two after a particularly brutal stint in a Ferrogate Transit shift-work cycle that left him unable to distinguish waking from sleep. A circuit monk found him curled under a maintenance panel and brought him to The Loop. He never left. He is genuinely serene in a way that unsettles people who expect performance from their holy men; his peace reads as vacancy until he speaks, and then it reads as something else entirely. He is also funnier than anyone expects.",
+  "description": "Aero Sigurdsson-Pathak is lean to the point of architectural, all angles and deliberate stillness, with light brown skin and a shaved head except for a single stripe of dark hair grown long and braided with copper wire from decommissioned transit relays. His arms from elbow to wrist are covered in chrome prayer sleeves — not for function but for devotion, etched with mantras in four scripts, and they hum at a frequency just below hearing when he is deep in practice. His eyes are pale grey-green with sunburst irises from a cosmetic mod he got at nineteen and never updated, which means they're slightly dated in a way he doesn't notice.\n\nHe came to circuit monasticism sideways, through a collapse — a psychotic break at twenty-two after a particularly brutal stint in a Ferrogate Transit shift-work cycle that left him unable to distinguish waking from sleep. A circuit monk found him curled under a maintenance panel and brought him to The Loop. He never left. He is genuinely serene in a way that unsettles people who expect performance from their holy men; his peace reads as vacancy until he speaks, and then it reads as something else entirely. He is also funnier than anyone expects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -156,7 +156,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,25 +173,20 @@
   "related_entities": [
     "Ferrogate Transit",
     "Deepwell Station",
-    "Meridian Core",
+    "Frequency",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "Meridian Core",
+    "Dearborn Forge",
+    "Circuit",
     "Copper",
-    "Tibor Osei-Svanstrom",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Frost Boudiaf",
     "The Pale Mile",
-    "Déjà Vu",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "MindBridge Relay One Social Integration BCI",
-    "Slagworks Industrial",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Toivo Diallo-Achebe"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Mixed ancestry combining Northern European (42.5%), Hispanic/Latin American (21.1%), Sub-Saharan African (14.9%), North African (13.5%), and South Asian (8.0%) genetics. Features reflect this complex blend: warm medium-brown skin tone with golden undertones, the result of Northern European and Mediterranean ancestry mixing with Sub-Saharan and South Asian heritage. Facial structure shows the broader nose bridge and fuller lips characteristic of African ancestry combined with the bone structure of European and Mediterranean lineages. Subtle warmth in complexion suggests the Hispanic/Latin American and North African components.",
+    "heritage": "Mixed ancestry combining Northern European (66.8%), South Asian (22.8%), Southeast Asian (6.0%), and Sub-Saharan African (4.4%) genetics. Dominant Northern European bone structure and build foundation is substantially warmed and enriched by the South Asian and African components. Facial features show the characteristic broader nasal bridge and fuller lips of South Asian heritage, blended with Northern European angularity and Sub-Saharan African richness. The overall effect is a distinctly harmonious blend rather than discrete features — warm Mediterranean-influenced complexion with depth.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost ascetic — minimal body fat, prominent collarbones and sternum, the physique of someone who eats enough to survive but not enough to accumulate. Deliberate posture makes him seem even thinner than he is.",
@@ -199,8 +194,8 @@
     "hair_style": "Shaved scalp except for a single vertical stripe running from forehead to nape, braided with lengths of bare copper wire salvaged from decommissioned transit relays, creating a sculptural effect",
     "hair_length": "Shaved except for the stripe braid (approximately 40cm long)",
     "eye_color": "Pale grey-green with sunburst irises — cosmetic mod from approximately 2211, the radiating pattern now slightly dated and not refreshed",
-    "skin_tone": "Medium warm brown with golden undertones — a harmonious blend of Northern European, Mediterranean, Sub-Saharan, and South Asian ancestry creating a complexion that catches light with natural richness",
-    "complexion": "Clean-shaven, minimal grooming beyond necessity. Skin is clear but shows the faint warmth of melanin-rich heritage. Expression defaults to stillness — not blank, but profoundly composed. Facial features reflect mixed ancestry: broader nasal bridge, fuller lips, and bone structure combining European and African characteristics.",
+    "skin_tone": "Medium warm brown with golden-amber undertones — a harmonious blend of Northern European foundation warmed by substantial South Asian, Southeast Asian, and Sub-Saharan African ancestry creating a complexion with natural richness, slight olive undertones, and depth that catches light warmly",
+    "complexion": "Clean-shaven, minimal grooming beyond necessity. Skin is clear with warm melanin-rich tones throughout. Expression defaults to stillness — not blank, but profoundly composed. Facial features reflect the genetic blend: broader nasal bridge characteristic of South Asian heritage, fuller lips with warm pigmentation, and bone structure combining Northern European angularity with the softer contours of African and South Asian characteristics. Cheekbones are pronounced but not severe.",
     "distinguishing_marks": [
       "Both forearms from elbow to wrist are covered in chrome prayer sleeves — not metallic sheaths but integrated dermal plating with etched mantras in Cyrillic, Arabic, Hindi, and Han characters that catch light distinctly.",
       "Fine white scar tissue visible along the interior left wrist, thin and old, approximately 15cm long, partially concealed by the chrome sleeve.",
@@ -210,16 +205,55 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion, no fidgeting. Sits in perfect stillness for extended periods. When walking, steps are precise and grounded. His default expression is profoundly calm in a way that reads as absence until he makes eye contact or speaks. Gestures are minimal but intentional.",
     "clothing_style": "Tier 4 ascetic-practical. Typically wears grey or charcoal loose-fitting linen robes sourced from Deepwell Station's fabric coop, unadorned except for meditation beads on a simple cord. Feet usually bare or in worn plant-fiber sandals. No jewelry except the copper wire in his hair braid. Clothing is meticulously clean but shows age — mended in several places with visible stitching. Suggests someone who has rejected material accumulation without performing poverty."
   },
-  "image_prompt": "Aero Quiñones-Mwangi, a lean androgynous figure with warm medium-brown skin and golden undertones reflecting mixed Northern European, Hispanic, Sub-Saharan African, North African, and South Asian ancestry. Shaved head with a single vertical copper-wire braided stripe from forehead to nape. Pale grey-green sunburst iris cosmetic mod. Clean-shaven with composed, still expression. Both forearms covered in integrated chrome prayer sleeves with etched mantras in multiple scripts that catch light. Wearing loose charcoal linen robes, meditation beads on simple cord, bare feet. Sits in perfect stillness in dim artificial lighting, cyberpunk 2226 aesthetic, Deepwell Station interior, subsonic hum visualization around chrome sleeves, minimalist ascetic vibe, deliberate economy of presence, portrait study --ar 2:3 --v 6",
+  "image_prompt": "Aero Sigurdsson-Pathak, lean 178cm tall mixed-heritage man with warm medium-brown skin with golden undertones blending Northern European, South Asian, Southeast Asian, and Sub-Saharan African ancestry. Shaved head with single vertical copper-wire braided stripe from forehead to nape. Pale grey-green sunburst iris cosmetic mods. Clean-shaven, profoundly composed expression. Both forearms covered in chrome prayer sleeves with etched mantras catching light. Wearing loose charcoal linen meditation robes, worn plant-fiber sandals, meditation beads on simple cord. Minimal, deliberate posture in meditative stillness. GLMZ GLMZ aesthetic. Deepwell Station interior, soft neon ambient lighting with warm practical fluorescence. Ascetic-practical Tier 4 styling. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 42.5,
-    "Hispanic/Latin American": 21.1,
-    "Sub-Saharan African": 14.9,
-    "North African": 13.5,
-    "South Asian": 8.0
+    "Northern European": 66.8,
+    "South Asian": 22.8,
+    "Southeast Asian": 6,
+    "Sub-Saharan African": 4.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 66.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 9.5
+      },
+      "Nepali": {
+        "Nepali": 13.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 2.4,
+        "Sundanese": 1.9
+      },
+      "Cambodian": {
+        "Khmer": 0.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 1.1
+      },
+      "Central African": {
+        "Angolan": 1.5,
+        "Congolese": 1
+      },
+      "West African": {
+        "Ghanaian": 0.1,
+        "Nigerian": 0.7
+      }
+    }
+  }
 }

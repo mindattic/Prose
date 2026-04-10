@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f57cb3a0951d80d2e83942",
   "type": "character",
-  "name": "Santiago Villanueva-Vestergaard",
+  "name": "Mika Möller-Saidov",
   "aliases": [
     "Drag",
     "The Finn"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Shelf, Lockhaven South, near Pulaski and Chicago Ave",
-  "description": "Dragan is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nDragan runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on The Shelf, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
+  "description": "Mika Möller-Saidov is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nMika Möller-Saidov runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on The Shelf, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -160,7 +160,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,34 +175,17 @@
   "related_entities": [
     "Lockhaven South",
     "The Shelf",
-    "Blackmarket",
     "Tessera Corponation",
+    "Blackmarket",
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Chicago",
     "Nesting Doll",
     "The Pale Mile",
-    "Gold",
-    "Chicago",
-    "Emeka Johansson-Orozco",
-    "Lake Skimmer Hydrofoil",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Praevex",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TESSERA TN-1 'Cradle'",
-    "The Counter",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (32.8%) with significant Hispanic/Latin American (18.8%), Northern European (16.7%), and Sub-Saharan African (16.5%) ancestry, plus Pacific Islander (13.0%) and trace Eastern European (2.2%) — a truly global genetic mosaic that creates subtle complexity across all features",
+    "heritage": "Dominant Middle Eastern ancestry (38.7%) forms the foundation, woven through with significant Southeast Asian (14.9%), East Asian (14.6%), and Central Asian (12.2%) heritage, tempered by Northern European (10.4%) and Hispanic/Latin American (9.2%) components — a truly global genetic mosaic creating subtle complexity across facial structure, skin tone, and feature blending",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, all efficient lines — the build of someone who moves carefully through tight spaces and doesn't waste energy on presence",
@@ -210,8 +193,8 @@
     "hair_style": "Close-cropped, neat, maintained with precision",
     "hair_length": "Short",
     "eye_color": "Deep amber with pale gold secondary iris ring (augmented), pulses faintly during active scanning",
-    "skin_tone": "Warm mid-bronze undertone blending East Asian, Pacific Islander, and African ancestry with cooler Northern European undertones creating a complex, shifting tan that appears different depending on light source — neither fully warm nor cool, but a sophisticated fusion",
-    "complexion": "Lined face with elegant bone structure showing East Asian and Pacific Islander influence in cheekbone prominence and eye shape, tempered by broader African and Northern European features. The kind that looks simultaneously 44 and 54 depending on lighting. Defined cheekbones with subtle epicanthal folds. Close-cropped beard with two distinct textures — fine near the jawline, tightly coiled at the chin, reflecting the genetic diversity of his ancestry",
+    "skin_tone": "Warm olive-bronze base with subtle golden undertones, reflecting the dominant Middle Eastern and Central Asian heritage while the Southeast and East Asian components add warmth and the Northern European ancestry introduces cool undertones beneath — creates a sophisticated complexion that shifts across light sources from warm caramel to cool bronze",
+    "complexion": "Lined face with elegant bone structure showing Middle Eastern and Central Asian influence in prominent cheekbones and defined jaw, softened by Southeast Asian and East Asian roundness in the lower face. Appears simultaneously 44 and 54 depending on lighting. High, prominent cheekbones with subtle epicanthal influences, bridge of nose showing Levantine prominence tempered by East Asian refinement. Close-cropped beard with two distinct textures — fine near the jawline reflecting Southeast Asian traits, tightly coiled at the chin reflecting Central and East Asian heritage, creating visible genetic depth",
     "distinguishing_marks": [
       "Thin white scar along right temple, nearly invisible unless light catches it at an angle — from a pawn counter accident in his thirties",
       "Faint burn mark on left forearm (4cm, irregular shape) — old augmentation rejection, never fully treated",
@@ -221,17 +204,73 @@
     "posture_movement": "Unhurried and precise. Moves like someone appraising objects — careful, economical, weighing everything. Stands with weight shifted slightly forward, ready to lean over a counter. Hands are rarely still; they're always touching something, assessing texture and weight. Eye contact is steady and slightly unnerving",
     "clothing_style": "Layered mid-tier secondhand corporate wear in grays, blacks, and muted blues — Tessera office clothes from people who fell down the economic tiers. Nothing new, nothing expensive, nothing that draws attention. Worn but clean. A long coat most days, pockets always full of small tools, magnifiers, RFID readers. No visible branding or affiliation markers. Dresses like someone who is always one conversation away from needing to look respectable"
   },
-  "image_prompt": "Santiago Villanueva-Vestergaard, 178cm lean angular man with warm mid-bronze skin blending East Asian, Pacific Islander, African and Northern European ancestry, complex shifting tan undertone. Dark brown close-cropped hair with salt-pepper temples, defined cheekbones with subtle epicanthal influence, close-cropped mixed-texture beard. Augmented amber iris eyes with gold secondary ring pulsing faintly. Thin white scar right temple, faint burn mark left forearm. Layered secondhand corporate wear in grays and blacks, long weathered coat with full pockets, hands always assessing objects. Posture precise and forward-leaning, steady unnerving eye contact. Standing in dim fluorescent pawn shop lighting, appraising something in his hands with methodical precision. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, moody atmospheric lighting, subtle tech-worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Mika Möller-Saidov, 178cm lean angular frame, warm olive-bronze skin with golden undertones, high prominent cheekbones blending Middle Eastern and Central Asian structure with Southeast and East Asian softness, lines etched across face making him appear 44 and 54 simultaneously depending on light. Close-cropped dark brown hair with salt-and-pepper temples. Distinctive augmented amber eyes with pale gold iris rings that pulse subtly. Thin white scar along right temple, barely visible. Neat close-cropped beard with fine texture near jawline and tightly coiled texture at chin. Layered gray and black secondhand corporate wear, long muted coat with full pockets of tools and readers, precise unhurried movement, weight shifted forward, hands assessing texture, steady unnerving eye contact. GLMZ, Great Lakes Metropolitan Zone, precise careful appraiser energy, cool industrial lighting catching the scar and augmented eyes, gritty corporate atmosphere, neo-noir aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.8,
-    "Hispanic/Latin American": 18.8,
-    "Northern European": 16.7,
-    "Sub-Saharan African": 16.5,
-    "Pacific Islander": 13.0,
-    "Eastern European": 2.2
+    "Middle Eastern": 38.7,
+    "Southeast Asian": 14.9,
+    "East Asian": 14.6,
+    "Central Asian": 12.2,
+    "Northern European": 10.4,
+    "Hispanic/Latin American": 9.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 38.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 11,
+        "Javanese": 1.2
+      },
+      "Thai": {
+        "Thai": 2.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.8
+      },
+      "Chinese": {
+        "Cantonese": 4.2,
+        "Shanghainese": 2.4
+      },
+      "Korean": {
+        "Korean": 7.2
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 1.6
+      },
+      "Mongolic": {
+        "Kalmyk": 0.9,
+        "Buryat": 0.9
+      },
+      "Iranian Central": {
+        "Hazara": 8.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 4.4,
+        "Dutch": 0.4
+      },
+      "Scandinavian": {
+        "Finnish": 3.7,
+        "Swedish": 1.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 5.5,
+        "Salvadoran": 3.7
+      }
+    }
+  }
 }

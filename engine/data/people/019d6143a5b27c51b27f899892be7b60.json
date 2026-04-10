@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b27c51b27f899892be7b60",
   "type": "character",
-  "name": "Cipher Dalgaard",
+  "name": "Cipher Jung",
   "aliases": [
     "Lumen",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Aminata Tarasov-Yiadom is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aminata Tarasov-Yiadom describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Cipher Jung is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Cipher Jung describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.87,
@@ -263,7 +263,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,37 +276,17 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "Geartown",
     "Burden of Longitude",
+    "Canopy",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Quilt",
-    "Spire Light on Still Water",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "The Canopy",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Underlayer Collective",
-    "The Wire Taps",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian, Indigenous American, Pacific Islander, Hispanic/Latin American, and South Asian—a striking synthesis of pan-Pacific and continental lineages. Features reflect the dominant East Asian structure (35.4%) blended with strong Indigenous American bone structure (20.8%), warm Pacific Islander coloring (19.0%), and subtle South Asian undertones (8.1%), with a final thread of Hispanic/Latin American heritage (16.7%) adding warmth and dimension.",
+    "heritage": "Predominantly East Asian (55.9%) with significant Eastern European ancestry (27.4%), creating a striking pan-Eurasian blend. East Asian genetics provide characteristic eye structure, strong cheekbone prominence, and facial proportion; Eastern European ancestry contributes increased bone density, subtle facial angularity, and structural width through the jaw and cheekbones. Hispanic/Latin American (9.0%), Central Asian (4.7%), and Sub-Saharan African (3.0%) ancestry add warmth to overall coloration, slight broadening of facial features, and enriched golden-bronze undertones to the base complexion.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and heavy, muscular-stocky, carries weight with deliberate control — built for power and endurance rather than speed",
@@ -314,8 +294,8 @@
     "hair_style": "Pulled back in a tight, functional braid; practical, no vanity",
     "hair_length": "Long",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm medium-to-deep bronze with golden undertones; sun-weathered with rich saturation that speaks to Pacific Islander and Indigenous American heritage, layered with the slightly warmer cast of East Asian and South Asian ancestry",
-    "complexion": "Strong, angular face with pronounced cheekbones reflecting Indigenous American structure; slightly broader at the temples in East Asian pattern; warm bronze complexion with faint freckling across nose and shoulders; weathered and lean-faced. Multiple fine scars across jawline and left temple; no makeup, minimal grooming beyond function.",
+    "skin_tone": "Warm medium bronze with golden undertones; rich saturated tone from East Asian base enriched by Central Asian and African warmth, sun-weathered and lived-in appearance",
+    "complexion": "Strong, angular face with East Asian cheekbone prominence slightly widened by Eastern European bone structure; warm bronze complexion with subtle golden warmth across cheekbones and bridge of nose. Multiple fine scars across jawline and left temple; no makeup, minimal grooming beyond function.",
     "distinguishing_marks": [
       "Three parallel scars running from left cheekbone to jawline, thin and precise as blade work",
       "Scar tissue along right forearm from smartgun link installation, visible chrome edges catching light",
@@ -327,16 +307,62 @@
     "posture_movement": "Moves with economical precision, no wasted motion; stands with weight balanced on balls of feet, ready to shift; shoulders set forward slightly; resting expression is watchful, not hostile but not welcoming",
     "clothing_style": "Tier 3-4 practical: reinforced synthetic jacket in matte charcoal over tech-wear underlayer with visible connector ports; cargo pants with multiple tool pockets and armor plating at knees and hips; worn steel-toed boots with grip soles; minimal jewelry except functional smartwatch on left wrist; no corporate branding, all utility"
   },
-  "image_prompt": "Cipher Dalgaard, cyberpunk 2226 operative, 178cm tall with muscular-stocky build. Warm bronze skin with golden undertones reflecting East Asian, Indigenous American, and Pacific Islander heritage; angular face with prominent cheekbones, weathered complexion. Dark brown eyes, calculating and alert. Long dark brown hair with silver at temples, pulled back in tight functional braid. Multiple thin scars across jawline and left temple, white line through right eyebrow to hairline. Right forearm features prominent smartgun link with visible chrome interface plates and faint LED glow; burn scar on left wrist. Wearing matte charcoal reinforced synthetic jacket over tech-wear with connector ports, cargo pants with knee and hip armor plating, worn steel-toed boots. Stands with economical precision, weight balanced on balls of feet, shoulders forward, watchful expression. Cyberpunk 2200s setting, neon-lit urban environment, cool lighting reflecting chrome augmentations, gritty atmospheric depth --ar 2:3 --v 6",
+  "image_prompt": "Cipher Jung, GLMZ, 178cm tall muscular-stocky build with broad shoulders. Pan-Eurasian features: strong East Asian cheekbones slightly widened by Eastern European bone structure, dark brown alert eyes, warm bronze skin with golden undertones. Long dark brown hair with silver threading pulled back in tight functional braid. Multiple thin precise scars across left cheekbone and jawline, scar tissue along right forearm with visible chrome smartgun link interface catching neon light, burn scar on left wrist, white line through right eyebrow. Knuckle scars on both hands. Wearing matte charcoal reinforced synthetic jacket over tech-wear underlayer with visible connector ports, cargo pants with armor plating, worn steel-toed boots. Metallic LED glow faintly visible at right wrist interface. Economical posture, weight balanced on balls of feet, watchful resting expression. Neon-lit industrial near-future megacity setting, moody atmospheric lighting, rain-slicked concrete, blue and purple ambient neon glow, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 35.4,
-    "Indigenous American": 20.8,
-    "Pacific Islander": 19.0,
-    "Hispanic/Latin American": 16.7,
-    "South Asian": 8.1
+    "East Asian": 55.9,
+    "Eastern European": 27.4,
+    "Hispanic/Latin American": 9,
+    "Central Asian": 4.7,
+    "Sub-Saharan African": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 41.2
+      },
+      "Japanese": {
+        "Japanese": 14.7
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 4.5,
+        "Sorbian": 11.1
+      },
+      "Slavic East": {
+        "Russian": 5.2,
+        "Ukrainian": 6.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 9
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 0.3
+      },
+      "Mongolic": {
+        "Mongolian": 1.6,
+        "Kalmyk": 2
+      },
+      "Iranian Central": {
+        "Tajik": 0.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 1.1,
+        "Botswanan": 0.2
+      },
+      "West African": {
+        "Ghanaian": 1.7
+      }
+    }
+  }
 }

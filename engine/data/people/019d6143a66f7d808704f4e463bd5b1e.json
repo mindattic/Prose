@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66f7d808704f4e463bd5b1e",
   "type": "character",
-  "name": "Takoda Rahman-Solberg",
+  "name": "Takoda Tovar-Trujillo",
   "aliases": [
     "Tiki",
     "The Patcher"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Geartown — operates from a shared workshop space behind a fermentation bar called Mash & Circuit, near Armitage and Milwaukee",
-  "description": "Ntsiki is compact and kinetic, always in motion even when standing still — weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle's carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work — they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as 'instructive.'\n\nNtsiki came up through Geartown's informal tech apprenticeship network — never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won't touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically — they consider Helix's DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
+  "description": "Takoda Tovar-Trujillo is compact and kinetic, always in motion even when standing still — weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle's carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work — they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as 'instructive.'\n\nTakoda Tovar-Trujillo came up through Geartown's informal tech apprenticeship network — never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won't touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically — they consider Helix's DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -209,7 +209,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -265,31 +265,21 @@
   "registered_firearms": [],
   "related_entities": [
     "Helix Biosystems",
+    "Bridgepoint",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Quiet Room",
     "Geartown",
-    "Crucible Industries CF-1 'Carapace'",
     "The Gradient Compact",
+    "Crucible Industries CF-1 'Carapace'",
+    "Circuit",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
-    "Arcturus CK-5 'Bloodhound'",
-    "The Milwaukee Core",
-    "Ambassador Silk",
-    "Ambrogio Waweru-Djordanović",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Réginald Asomaning-Čabarkapa",
-    "Scotoplanktonic Skin Respiration",
-    "The Bench",
-    "The Underlayer Collective",
-    "Veslemøy Achebe-Tursynov",
-    "Vesna Čolić-Strand",
-    "Witness"
+    "Whim",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly South Asian and Indigenous American ancestry (37.8% and 35.2% respectively) with notable Southeast Asian, Sub-Saharan African, Hispanic/Latin American, and Pacific Islander heritage creating a striking pan-diaspora phenotype",
+    "heritage": "Predominantly Hispanic/Latin American (63.3%) and Indigenous American (34.2%) ancestry with minor North African heritage (2.5%), creating a striking pan-diaspora phenotype. The blend manifests in warm brown tones with subtle golden undertones, angular facial structure characteristic of Mesoamerican and Andean lineages, and high prominent cheekbones. The Indigenous American heritage is most visible in facial bone structure and eye set, while Hispanic/Latin American ancestry contributes to skin warmth and overall proportion. The minor North African heritage adds depth to undertones without dominating the phenotype.",
     "height_cm": 163,
     "weight_kg": 58,
     "build": "Compact and wiry with lean musculature built from precision hand work and constant motion; shoulders slightly squared from years of bench work, no excess body fat",
@@ -297,8 +287,8 @@
     "hair_style": "Voluminous natural texture, worn in a full crown with the fiber-optic strands woven throughout in deliberate patterns",
     "hair_length": "Medium (shoulder-length when stretched)",
     "eye_color": "Dark brown with a faint retrofitted lens implant visible as a thin metallic ring at the iris edge",
-    "skin_tone": "Warm medium-deep brown with natural luminous sheen, reflecting the blended undertones of South Asian, Indigenous American, and Southeast Asian ancestry",
-    "complexion": "Clear skin with minimal scarring; young face kept perpetually alert by constant focus; refined facial structure with high cheekbones and subtle angular planes; the dermal chrome inlays across cheekbones and nose bridge catch light with an iridescent beetle-shell quality",
+    "skin_tone": "Warm medium-deep brown with natural luminous sheen, reflecting the blended undertones of Hispanic/Latin American and Indigenous American ancestry with subtle golden warmth from North African heritage",
+    "complexion": "Clear skin with minimal scarring; young face kept perpetually alert by constant focus; refined facial structure with high prominent cheekbones and angular planes characteristic of Indigenous American and Mesoamerican heritage; the dermal chrome inlays across cheekbones and nose bridge catch light with an iridescent beetle-shell quality",
     "distinguishing_marks": [
       "Geometric strips of dermal chrome inlay running along both cheekbones from temple to cheekbone prominence, creating a mask-like pattern",
       "Dermal chrome continuation across the bridge of the nose in thin parallel lines",
@@ -309,17 +299,52 @@
     "posture_movement": "Kinetic even at rest — weight constantly shifting between feet, fingers flexing or working at imaginary tasks. Eyes move rapidly, cataloguing and assessing the environment. Hands move with precision and economy of motion, trained by thousands of hours of micro-level work. Stands with shoulders slightly forward, ready-posed toward work surfaces.",
     "clothing_style": "Tier 4 practical wear — custom-fitted gray canvas work vest with dozens of pockets and tool loops (no corporate branding), fitted black underlayer shirt with rolled sleeves to display arm augmentation work, black utility pants with reinforced thigh pockets. Boots are worn Hakobo work boots, scuffed and patched with self-applied nano-seal. A single silver bracelet on right wrist (handmade, probably from salvaged circuit components). No jewelry beyond that — everything functional or self-made. Clothing shows honest wear but is meticulously maintained. A pair of magnification goggles hangs around their neck on a paracord strap, perpetually ready."
   },
-  "image_prompt": "A 163cm compact figure with warm medium-deep brown skin reflecting blended South Asian and Indigenous American ancestry, standing in cyberpunk 2226 workspace. Sharp-featured face with high cheekbones and refined angular planes, adorned with geometric dermal chrome inlays running across both cheekbones and nose bridge catching iridescent light like beetle shell. Dark brown eyes with visible metallic retrofitted lens implant. Voluminous natural black hair worn shoulder-length in full crown with cyan and magenta fiber-optic strands woven in deliberate patterns. Lean, wiry build from precision work — kinetic posture with weight shifting, fingers perpetually flexing. Left hand shows matte black prosthetic fingers (index and middle), knuckle burn scars visible. Right forearm displays experimental augmentation work: micro-precision tool ports, subdermal implant sites, custom cooling system running down arm. Wearing custom gray canvas work vest with multiple pockets over fitted black rolled-sleeve shirt, black utility pants, worn Hakobo boots with nano-seal patches. Silver bracelet on right wrist (salvaged circuit components). Magnification goggles on paracord around neck. Intense, alert expression cataloguing surroundings. Industrial tech workspace setting with soft cyberpunk neon accent lighting catching chrome facial inlays and augmentation details. --ar 2:3 --v 6",
+  "image_prompt": "Takoda Tovar-Trujillo, short compact figure 163cm tall, warm medium-deep brown skin with golden undertones, Indigenous American facial structure with high prominent cheekbones and angular planes, retrofitted metallic lens implant visible in right eye, geometric dermal chrome inlay patterns running across cheekbones and nose bridge catching iridescent beetle-shell light. Black hair with cyan and magenta fiber-optic strands woven through voluminous natural texture shoulder-length crown. Left hand missing index and middle fingers replaced with matte black prosthetic polymer with exposed servo joints. Right forearm dense experimental augmentation with micro-precision tool ports and cooling system visible. Matte gray canvas work vest with dozens of pockets, fitted black rolled-sleeve shirt displaying augmentation work, black utility pants, worn Hakobo work boots patched with nano-seal. Silver handmade circuit-component bracelet on right wrist. Magnification goggles on paracord around neck. Kinetic posture, weight shifting, hands in precision-ready position. GLMZ 2200s workshop or neon-lit street setting, cool metallic lighting emphasizing dermal chrome inlays and augmentation ports, atmospheric haze, gritty urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 37.8,
-    "Indigenous American": 35.2,
-    "Southeast Asian": 13.4,
-    "Sub-Saharan African": 5.1,
-    "Hispanic/Latin American": 4.9,
-    "Pacific Islander": 3.6
+    "Hispanic/Latin American": 63.3,
+    "Indigenous American": 34.2,
+    "North African": 2.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 42.1
+      },
+      "South American": {
+        "Brazilian": 6.8
+      },
+      "Caribbean": {
+        "Cuban": 12.4,
+        "Puerto Rican": 2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 1.7,
+        "Choctaw": 5.3
+      },
+      "Andean": {
+        "Mapuche": 9.5,
+        "Quechua": 5
+      },
+      "Mesoamerican": {
+        "Maya": 12.7
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 1.3
+      },
+      "Amazigh": {
+        "Kabyle": 0.5
+      },
+      "Nile Valley": {
+        "Sudanese": 0.7
+      }
+    }
+  }
 }

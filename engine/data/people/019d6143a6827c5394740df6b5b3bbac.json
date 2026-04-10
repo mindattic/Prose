@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6827c5394740df6b5b3bbac",
   "type": "character",
-  "name": "Indigo Zidane-Fredriksen",
+  "name": "Indigo Ingebrigtsen-Kristjánsson",
   "aliases": [
     "Remi",
     "The Scissors"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave — her shop, Vásárhelyi's Cut, is wedged between a noodle stand and a bootleg geneware parlor on Tessera Row, near Western and Division",
-  "description": "Remi is a broad-shouldered woman with close-cropped silver hair she keeps so geometric it looks machined. Her hands are her livelihood and her pride — steady, scarred at the knuckles, with two fingers on her left hand replaced by matte-black prosthetic digits that give her razor work an inhuman precision. She has warm brown skin mapped with pale keloid lines along her forearms from a factory accident twenty years ago, and her eyes are naturally deep amber, though she's added cosmetic irises that bloom like sunflowers when she's in good humor. She wears the same style every day: clean work apron, sleeves rolled, a small copper pendant of Ogun that she touches before every haircut.\n\nRemi has the gravitational pull of a person who has simply been somewhere long enough that the neighborhood bends around her. She remembers who your grandmother was, who owes who, and which corponation rep came through last month asking questions they shouldn't ask. She is unhurried, deliberate, and precise — in speech as in blade work — and she has a talent for making people say things in the chair they didn't mean to say out loud. She is not unkind. She is practical in the way of someone who has survived enough to stop being romantic about it.",
+  "description": "Indigo Ingebrigtsen-Kristjánsson is a broad-shouldered woman with close-cropped silver hair she keeps so geometric it looks machined. Her hands are her livelihood and her pride — steady, scarred at the knuckles, with two fingers on her left hand replaced by matte-black prosthetic digits that give her razor work an inhuman precision. She has warm brown skin mapped with pale keloid lines along her forearms from a factory accident twenty years ago, and her eyes are naturally deep amber, though she's added cosmetic irises that bloom like sunflowers when she's in good humor. She wears the same style every day: clean work apron, sleeves rolled, a small copper pendant of Ogun that she touches before every haircut.\n\nIndigo Ingebrigtsen-Kristjánsson has the gravitational pull of a person who has simply been somewhere long enough that the neighborhood bends around her. She remembers who your grandmother was, who owes who, and which corponation rep came through last month asking questions they shouldn't ask. She is unhurried, deliberate, and precise — in speech as in blade work — and she has a talent for making people say things in the chair they didn't mean to say out loud. She is not unkind. She is practical in the way of someone who has survived enough to stop being romantic about it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -165,7 +165,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -216,44 +216,29 @@
     "Hamtramck Enclave",
     "Grandmother",
     "Lazarus EC-4 'Companion'",
+    "The Accidental",
     "Tessera Corponation",
+    "Indigo",
+    "Silver",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
+    "The Pure Hand",
     "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "The Pale Mile",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cinderblock Ai",
-    "Cormorant Naval Systems",
-    "Cutter Vane",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "VitaCore BloomFilter Olfactory Modulation Implant",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (41.6%) with significant North African (18.9%), Southeast Asian (17.9%), and Sub-Saharan African (15.0%) ancestry, with minor East Asian (6.6%) heritage. A striking genetic blend from the Ubiquitous Diaspora creating unique phenotypic features across multiple continental lineages.",
+    "heritage": "Predominantly Southeast Asian (73.0%) with significant Pacific Islander (10.4%), East Asian (6.5%), South Asian (5.2%), and Hispanic/Latin American (4.9%) ancestry. The genetic blend creates a striking phenotype: Southeast Asian-dominant facial structure with the warm, sun-responsive complexion characteristic of both Southeast and South Asian heritage, subtly deepened by Pacific Islander genetics, with minor East Asian and Latin American contributions creating nuanced facial geometry and warm undertone richness.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the arms and back from decades of precision blade work. Carries weight with the settled confidence of someone past the age of proving anything to anyone.",
     "hair_color": "Natural silver-grey",
     "hair_style": "Close-cropped with geometric precision — lines sharp enough to suggest machine work, maintained with ritualistic care",
     "hair_length": "Short (approximately 1cm uniform length)",
-    "eye_color": "Deep amber (natural), with cosmetic sunflower-pattern irises that appear to bloom/shift with mood and light",
-    "skin_tone": "Medium-deep warm bronze with complex undertones — the Central Asian and North African heritage creates golden-warm base tones, enriched by the Sub-Saharan and Southeast Asian components into a nuanced, sun-responsive complexion",
-    "complexion": "Weathered in the specific way of someone who has worked under bright task lighting for five decades. The multi-continental heritage creates subtle variations in skin texture and tone distribution across the face. Minimal makeup. Laugh lines around the eyes and mouth suggest frequent, genuine amusement. Skin condition is clean and well-maintained, grooming meticulous.",
+    "eye_color": "Deep warm brown (natural), with cosmetic sunflower-pattern irises that appear to bloom/shift with mood and light",
+    "skin_tone": "Medium-deep warm bronze with rich golden-amber undertones. The Southeast Asian dominant heritage creates a sun-responsive complexion further enriched by South Asian warmth and Pacific Islander depth, resulting in a luminous, slightly honeyed finish that catches light with subtle radiance.",
+    "complexion": "Weathered in the specific way of someone who has worked under bright task lighting for five decades. Southeast Asian-dominant heritage creates characteristic high cheekbones, subtle eye shape with slight epicanthic folds, and warm facial geometry. South Asian influence adds subtle jawline definition and nose bridge prominence. Minimal makeup. Laugh lines around the eyes and mouth suggest frequent, genuine amusement. Skin condition is clean and well-maintained, grooming meticulous.",
     "distinguishing_marks": [
       "Pale keloid scarring mapping both forearms in organic linear patterns — legacy of factory accident approximately twenty years prior",
       "Knuckle scars on both hands — decades of precision work and minor cuts from blade discipline",
@@ -263,16 +248,64 @@
     "posture_movement": "Stands with weight evenly distributed, shoulders back but not rigid. Moves with deliberate economy — no wasted motion. Hands move with the precision of someone who has spent 50 years handling sharp tools; even idle hand movements have a quality of controlled grace. Her gaze is steady and unhurried. When listening, she is still.",
     "clothing_style": "Consistent daily uniform: Heavy-duty canvas work apron (cream or pale grey, always clean), sleeves of whatever shirt she wears underneath rolled precisely to the elbow. Practical Tier 3 workwear — durable, functional, no corporate branding. Copper pendant of Ogun worn on a simple cord, touched before each cut as ritual. Comfortable work shoes, worn but maintained. No jewelry beyond the pendant and a single thin wedding band (worn on right hand)."
   },
-  "image_prompt": "Indigo Zidane-Fredriksen, 172cm tall master craftsperson in her 50s, medium-deep warm bronze skin with complex golden-warm undertones reflecting Central Asian, North African, Southeast Asian, and Sub-Saharan African heritage. Short silver-grey hair in geometric precision lines. Deep amber eyes with subtle sunflower-pattern cosmetic irises that shift with light. Weathered, kind face with laugh lines, meticulous grooming. Left hand has matte-black polymer prosthetic ring and pinky fingers with visible articulated joints. Pale organic keloid scarring across both forearms, surgical scars at left hand base. Wearing clean cream canvas work apron, rolled sleeves, practical workwear, copper Ogun pendant on cord, thin wedding band on right hand. Standing with deliberate grace, weight evenly distributed, steady unhurried gaze. Cyberpunk 2226, workshop ambient lighting with bright task lights casting precision shadows. Ritual, craftsmanship, quiet mastery. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Ingebrigtsen-Kristjánsson, 172cm tall, medium-deep bronze skin with golden-amber undertones, Southeast Asian phenotype with high cheekbones and warm facial geometry, natural silver-grey hair close-cropped with sharp geometric precision, deep warm brown eyes with subtle cosmetic sunflower-pattern irises. Weathered, thoughtful expression with laugh lines, meticulous grooming. Pale keloid scarring on both forearms in organic patterns, knuckle scars from decades of blade work. Left hand features two matte-black polymer prosthetic fingers with articulated joints, deliberately visible. Wearing cream canvas work apron over practical workwear, sleeves rolled to elbows, copper Ogun pendant on simple cord, thin wedding band on right hand. Stands with deliberate grace and economy of movement, hands positioned with precision. GLMZ, workshop ambient lighting casting warm shadows, mood of quiet focused expertise and ritual, calm and unhurried presence, detailed character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 41.6,
-    "North African": 18.9,
-    "Southeast Asian": 17.9,
-    "Sub-Saharan African": 15.0,
-    "East Asian": 6.6
+    "Southeast Asian": 73,
+    "Pacific Islander": 10.4,
+    "East Asian": 6.5,
+    "South Asian": 5.2,
+    "Hispanic/Latin American": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 55.4
+      },
+      "Cambodian": {
+        "Khmer": 17.6
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 3.7
+      },
+      "Melanesian": {
+        "Fijian": 3.6
+      },
+      "Polynesian": {
+        "Samoan": 3,
+        "Tongan": 0.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 0.8,
+        "Cantonese": 0.4
+      },
+      "Korean": {
+        "Korean": 5.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 4.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 1,
+        "Salvadoran": 0.1
+      },
+      "Mexican": {
+        "Mexican": 3.8
+      }
+    }
+  }
 }

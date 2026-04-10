@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72a7ec783c2bd6fc5fdc92d",
   "type": "character",
-  "name": "Lark Fredriksen",
+  "name": "Anya Cisneros",
   "aliases": [
     "Brother Yib",
     "The Deacon"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Shelf, near Halsted and Chicago Ave",
-  "description": "Yibna is a large man going soft at the middle, with the build of someone who used to do heavy work and now does a different kind of heavy work. His skin is very dark with warm undertones, and he keeps a close beard going grey in patches. His right eye is a prosthetic — the iris cycles slowly through amber and gold, an older geneware-adjacent bioluminescent model he has never upgraded because, he says, 'it still works and there are people who need the Quanta more than I need a new eye.' He dresses in layered practical clothes that somehow always look intentional, and he carries a battered data tablet in a hand-stitched case his daughter made him.\n\nYibna has run the Shelf Mutual Aid Compact for eleven years, coordinating food distribution, medical triage referrals, emergency housing, and legal support for the roughly four thousand tier-1 residents packed into the Shelf's stacked industrial housing modules. He is patient in the manner of someone who has learned that patience is a tool and not a virtue, and he carries a deep, undisguised grief for what the city has done to his neighbors that he converts, daily, into logistics.",
+  "description": "Anya Cisneros is a large man going soft at the middle, with the build of someone who used to do heavy work and now does a different kind of heavy work. His skin is very dark with warm undertones, and he keeps a close beard going grey in patches. His right eye is a prosthetic — the iris cycles slowly through amber and gold, an older geneware-adjacent bioluminescent model he has never upgraded because, he says, 'it still works and there are people who need the Quanta more than I need a new eye.' He dresses in layered practical clothes that somehow always look intentional, and he carries a battered data tablet in a hand-stitched case his daughter made him.\n\nAnya Cisneros has run the Shelf Mutual Aid Compact for eleven years, coordinating food distribution, medical triage referrals, emergency housing, and legal support for the roughly four thousand tier-1 residents packed into the Shelf's stacked industrial housing modules. He is patient in the manner of someone who has learned that patience is a tool and not a virtue, and he carries a deep, undisguised grief for what the city has done to his neighbors that he converts, daily, into logistics.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -173,7 +173,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,36 +229,19 @@
   "related_entities": [
     "The Meridian Compact for Economic Justice",
     "The Shelf",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Gradient Compact",
     "Tessera Corponation",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Stratum",
-    "Crucible TR-7 'Triage'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Slagworks Industrial",
-    "Gold",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Celestyna Nkosi-Dzhaksybek",
-    "Isadora Mwangi-Thorvaldsen",
-    "Korova Arms Whisper KA-9 'Lullaby'",
-    "Mika Sorel",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "North Branch Commons",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Burden Clause",
-    "The Compact",
-    "The Ledger",
-    "Yannick Tofauti-Szarvásy"
+    "Crucible TR-7 'Triage'",
+    "Slagworks Industrial",
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly East Asian (32.6%) with substantial Northern European (24.0%) and Sub-Saharan African (21.4%) heritage, supplemented by Hispanic/Latin American (16.7%), Eastern European (2.8%), and South Asian (2.5%) lineage. Genetic blend creates distinctive phenotype: warm deep brown skin with subtle golden undertones reflecting the East Asian-African-Hispanic combination, facial structure showing the blended geometry of multiple ancestry groups.",
+    "heritage": "Ubiquitous Diaspora blend: Eastern European (37.0%), Pacific Islander (26.7%), Hispanic/Latin American (21.9%), and Sub-Saharan African (14.4%) ancestry. This multi-continental genetic combination creates a striking and dimensionally complex phenotype. The synthesis produces warm deep brown skin with golden and amber undertones from Pacific Islander and Hispanic ancestry interweaving with Eastern European and Sub-Saharan African genetics. Facial structure reflects this balanced four-way blend—wider-set eyes with subtle epicanthal variation, prominent cheekbones, strong jawline, and rich bone structure characteristic of the Eastern European-African-Pacific Islander synthesis.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Large-framed, softening through the middle with the weight distribution of a man whose labor has shifted from physical to administrative. Broad shoulders and thick forearms still carry the architecture of his earlier life.",
@@ -266,8 +249,8 @@
     "hair_style": "Kept close and functional, no styling",
     "hair_length": "Short",
     "eye_color": "Left eye: dark brown. Right eye: bioluminescent amber-gold prosthetic with slow iris cycling",
-    "skin_tone": "Deep warm brown with golden undertones, the result of East Asian, African, and Hispanic ancestry blending into rich, dimensionally complex coloring",
-    "complexion": "Weather-worn and lined, the face of someone who spends significant time in poorly climate-controlled spaces. Close-trimmed grey-patched beard. Facial features reflect blended ancestry—wider-set eyes with slight epicanthal variation from East Asian heritage, prominent cheekbones, strong jawline. Deep-set eyes that read as attentive rather than tired despite fatigue.",
+    "skin_tone": "Deep warm brown with golden and amber undertones, dimensionally complex coloring from the blending of Eastern European, Pacific Islander, Hispanic/Latin American, and Sub-Saharan African ancestry",
+    "complexion": "Weather-worn and lined, the face of someone who spends significant time in poorly climate-controlled spaces. Close-trimmed grey-patched beard. Facial features reflect blended diaspora ancestry—wider-set eyes with slight epicanthal variation, prominent cheekbones, strong jawline. Deep-set eyes that read as attentive rather than tired despite fatigue.",
     "distinguishing_marks": [
       "Right eye is a prosthetic with bioluminescent iris, noticeably older technology, cycles slowly between amber and gold tones",
       "Callused palms and fingers, scarring consistent with decades of manual labor",
@@ -277,17 +260,51 @@
     "posture_movement": "Moves with economic efficiency, no wasted motion. Carries weight low through the hips. Stands with weight balanced; gives the impression of listening rather than waiting. Habitual gesture of touching the hand-stitched tablet case when thinking.",
     "clothing_style": "Layered practical wear suggesting Tier 4-5 working class: worn canvas work pants, undershirts visible at the neck, a heavy oversized collar jacket in faded grey that has been repaired multiple times, steel-toed boots scuffed from years of warehouse and distribution center work. Everything fits the logic of durability and function over aesthetic. Carries a battered data tablet in a visibly hand-stitched fabric case — the craftsmanship of it marks it as personally meaningful rather than issued."
   },
-  "image_prompt": "Lark Fredriksen, 188cm tall mixed-heritage working-class man with deep warm brown skin and golden undertones reflecting East Asian, African, and Hispanic ancestry. Dark brown hair greying at temples, kept short and functional. Weathered face with pronounced cheekbones and strong jawline, lined from years in poorly climate-controlled industrial spaces. Close-trimmed grey-patched beard. Left eye: dark brown, deep-set and attentive. Right eye: older-generation bioluminescent amber-gold prosthetic with slow iris cycling glow, noticeable in dim light. 3cm faint scar along left jawline. Large-framed build with broad shoulders and thick forearms, softening through middle from shift from physical to administrative labor. Callused hands. Wearing layered practical Tier 4-5 working-class attire: worn canvas work pants, visible undershirts at neck, faded grey heavy-collar jacket with multiple repairs, scuffed steel-toed boots. Carries hand-stitched fabric data tablet case. Posture economical and balanced, listening stance. Cyberpunk 2226 Great Lakes Metropolitan Zone warehouse district, dim industrial lighting casting amber prosthetic eye glow, gritty warehouse backdrop, weathered and durable aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Anya Cisneros, tall 188cm Ubiquitous Diaspora man with deep warm brown skin holding golden and amber undertones from blended Eastern European, Pacific Islander, Hispanic, and Sub-Saharan African ancestry. Strong wide cheekbones, prominent jawline, wider-set eyes with subtle epicanthal variation. Dark brown left eye, right eye glowing amber-gold bioluminescent prosthetic cycling slowly. Short dark hair greying at temples, close-trimmed beard with grey patches. Weather-worn, lined face suggesting decades in industrial spaces. Broad shoulders, large-framed build softening through middle. Wearing layered working-class practical wear: faded grey repaired jacket with heavy collar, worn canvas work pants, visible undershirts, scuffed steel-toed boots. Carries hand-stitched fabric tablet case. Posture economical and balanced, attentive expression. GLMZ, Great Lakes Metropolitan Zone warehouse district, neon-adjacent lighting with warm industrial ambiance, portrait-focused composition --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.6,
-    "Northern European": 24.0,
-    "Sub-Saharan African": 21.4,
-    "Hispanic/Latin American": 16.7,
-    "Eastern European": 2.8,
-    "South Asian": 2.5
+    "Eastern European": 37,
+    "Pacific Islander": 26.7,
+    "Hispanic/Latin American": 21.9,
+    "Sub-Saharan African": 14.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 10.2
+      },
+      "Magyar-Romanian": {
+        "Romanian": 9.9,
+        "Hungarian": 1.2
+      },
+      "Slavic West": {
+        "Polish": 15.7
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Kiribati": 4.6,
+        "Marshallese": 22.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 21.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 6.3
+      },
+      "Central African": {
+        "Angolan": 4.4
+      },
+      "West African": {
+        "Nigerian": 3.7
+      }
+    }
+  }
 }

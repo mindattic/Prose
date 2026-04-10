@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues), near sub-level access near State and Van Buren",
-  "description": "Sovann is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nSovann's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
+  "description": "Sterling Ingebrigtsen is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nSterling Ingebrigtsen's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -157,7 +157,7 @@
     "Diplomat": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,36 +171,15 @@
     "The Resonance Communion",
     "The Heritage Vault",
     "The Gradient Compact",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Palette",
-    "Tibor Osei-Svanstrom",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Frost Boudiaf",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Arcturus CK-5 'Bloodhound'",
-    "Teak",
-    "Adaeze Soumaré-Papadimitriou",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Eshe Pena-Baah",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Korrath",
-    "Narrowcast",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "The Collective",
-    "The Portico",
-    "The Pure Hand",
-    "Yannick Tambadou-Reinholt"
+    "Teak"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Complex East Asian-Northern European-Central Asian blend with significant Sub-Saharan African and Hispanic/Latin American admixture. Genetic ancestry reflects the Ubiquitous Diaspora: East Asian features (27.9%) dominate bone structure and eye shape, Northern European (24.5%) contributes to skin undertone complexity and hair texture potential, Central Asian (21.4%) adds to facial width and cheekbone prominence, Sub-Saharan African ancestry (13.0%) enriches skin tone depth and lip fullness, Hispanic/Latin American (9.7%) contributes to overall warmth, with minor Eastern European (3.5%) influence.",
+    "heritage": "Ubiquitous Diaspora blend: East Asian (42.1%) defines bone structure and eye shape, Middle Eastern (27.3%) contributes facial width and warmth, Northern European (23.6%) adds complexity to skin undertone and texture, Sub-Saharan African (7.0%) enriches overall skin depth and feature fullness. The combination creates angular yet broad features with warm, complex golden undertones that shift with light.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and wiry, built for movement rather than stillness. Lean musculature across shoulders and forearms from years of standing at decks and manipulating equipment. No excess weight; the build of someone who eats when reminded rather than by schedule.",
@@ -208,28 +187,57 @@
     "hair_style": "Shoulder-length, often pulled back with salvaged wire or fabric scraps; perpetually in motion even when restrained",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and quick-tracking",
-    "skin_tone": "Rich warm mid-brown with golden undertones, reflecting the layered blend of East Asian, Central Asian, Sub-Saharan African, and Hispanic ancestry. Deeper than a single heritage would suggest, with subtle olive warmth from the Northern European and Eastern European admixture creating complexity in how light plays across the skin.",
-    "complexion": "Sharp angular planes with East Asian influence evident in eye shape and cheekbone structure, yet broadened and deepened by Central Asian and Sub-Saharan African heritage. High pronounced cheekbones, broad nose with slight asymmetry from an old break. Full lips with warm undertone. Skin usually marked with dark circles beneath eyes from irregular sleep rhythm. Minimal grooming beyond necessity; calluses on fingertips and palms.",
+    "skin_tone": "Warm mid-brown with golden undertones, East Asian and Middle Eastern ancestry creating richness, tempered by Northern European undertone complexity and Sub-Saharan African depth. Olive warmth enriches how light plays across the skin surface.",
+    "complexion": "Sharp angular planes with pronounced East Asian eye shape, balanced by Middle Eastern facial breadth and cheekbone structure. High pronounced cheekbones, broad nose with slight asymmetry from old break. Full lips with warm undertone. Skin marked with persistent dark circles beneath eyes from irregular sleep rhythm. Minimal grooming; visible calluses on fingertips and palms.",
     "distinguishing_marks": [
-      "Fine parallel scarring along both inner forearms where subdermal haptic receiver arrays were installed — pale lines about 8cm long, now two years healed but still visible",
-      "Burn scar on left palm, roughly 3cm diameter, from contact with overheating audio equipment during an early performance",
+      "Fine parallel scarring along both inner forearms where subdermal haptic receiver arrays were installed — pale lines about 8cm long, two years healed but still visible",
+      "Burn scar on left palm, roughly 3cm diameter, from contact with overheating audio equipment during early performance",
       "Collection of small stick-and-poke tattoos scattered across knuckles and wrists — abstract sound wave patterns, mostly done by friends in the collective"
     ],
-    "visible_augmentations": "Color-shift hair is the primary visible augmentation, currently cycling through warm amber to cool electric blue. The forearm scarring indicates subdermal work, though the haptic arrays themselves are not visible beneath skin. No other obvious chrome or prosthetics.",
-    "posture_movement": "Never still for more than a few seconds. Fidgets constantly with hands, tapping rhythms on surfaces, fingers moving as if mixing invisible decks. Leans forward when listening intently. Moves through space with economical efficiency — no wasted motion, but perpetually restless. When engaged with sound equipment, all extraneous movement stops and they become entirely focused.",
-    "clothing_style": "Tier 4 (working class, underground) with intentional anti-fashion. Uniform battered canvas jacket (faded navy, heavily patched with hand-stitched fabric scraps from venues and friends) worn over layers of cheap synthetic tank tops in varying states of disrepair. Cargo pants with cargo pockets filled with audio equipment, patch cables, and recording devices. Scuffed utility boots, laces often untied. Wears a harness of paracord across chest when performing, used to anchor equipment and cable management. No jewelry except a homemade bracelet of copper wire wound around left wrist. Clothes smell permanently of machine oil, tunnel dampness, and cigarette smoke from other people's sets."
+    "visible_augmentations": "Color-shift hair augmentation cycling through warm amber to cool electric blue. Forearm scarring indicates subdermal haptic work beneath skin. No other visible chrome or prosthetics.",
+    "posture_movement": "Never still for more than a few seconds. Fidgets constantly with hands, tapping rhythms on surfaces, fingers moving as if mixing invisible decks. Leans forward when listening intently. Moves through space with economical efficiency — no wasted motion, but perpetually restless. When engaged with sound equipment, all extraneous movement stops and becomes entirely focused.",
+    "clothing_style": "Tier 4 working class underground aesthetic with intentional anti-fashion. Battered canvas jacket (faded navy, heavily patched with hand-stitched fabric scraps from venues and friends) worn over layers of cheap synthetic tank tops in varying disrepair. Cargo pants with pockets filled with audio equipment, patch cables, recording devices. Scuffed utility boots with untied laces. Paracord harness across chest when performing for equipment anchoring and cable management. Homemade copper wire bracelet wound around left wrist. Clothes permanently smell of machine oil, tunnel dampness, cigarette smoke."
   },
-  "image_prompt": "Sterling Ingebrigtsen, 162cm lean wiry sound technician, rich warm mid-brown skin with golden undertones reflecting East Asian-Central Asian-Sub-Saharan African heritage blend, sharp angular face with high cheekbones and broad nose, dark alert eyes. Shoulder-length hair in amber-to-electric-blue color-shift augmentation cycle. Fine pale scars along inner forearms from subdermal haptic arrays, burn scar on left palm, scattered stick-and-poke sound wave tattoos on knuckles and wrists. Battered faded navy canvas jacket heavily patched with hand-stitched scraps, worn over cheap synthetic tank tops, cargo pants filled with audio cables, scuffed utility boots with untied laces. Copper wire bracelet on left wrist, paracord harness across chest. Perpetually fidgeting hands, forward-leaning posture, economical movements. Underground tunnel setting, cyberpunk 2226, moody blue-amber neon lighting reflecting off equipment, smoke-filled atmosphere, focused intensity. Cinematic, gritty, street-level aesthetics. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Ingebrigtsen, GLMZ, compact wiry figure 162cm tall with warm mid-brown skin blending East Asian, Middle Eastern, Northern European and Sub-Saharan heritage, angular East Asian bone structure balanced by broad Middle Eastern cheekbones and full lips, dark alert eyes, shoulder-length hair with color-shift augmentation cycling electric blue and amber, visible pale scarring on inner forearms, stick-and-poke sound wave tattoos on knuckles, dark circles under eyes, restless fidgeting hands. Wearing heavily patched faded navy canvas jacket over cheap synthetic tank top, cargo pants filled with audio equipment, scuffed utility boots, paracord harness across chest, copper wire bracelet on left wrist. Standing at underground sound deck in neon-lit tunnel venue, hands mid-motion mixing invisible controls, perpetually restless energy, moody blue-amber lighting catching the color-shift hair, smell of machine oil and cigarette smoke in the air, Great Lakes Metropolitan Zone underground aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 27.9,
-    "Northern European": 24.5,
-    "Central Asian": 21.4,
-    "Sub-Saharan African": 13.0,
-    "Hispanic/Latin American": 9.7,
-    "Eastern European": 3.5
+    "East Asian": 42.1,
+    "Middle Eastern": 27.3,
+    "Northern European": 23.6,
+    "Sub-Saharan African": 7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 42.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 11.4,
+        "Lebanese": 5.4
+      },
+      "Kurdish": {
+        "Kurdish": 10.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 23.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 1,
+        "South African": 3.9
+      },
+      "Central African": {
+        "Congolese": 1.3,
+        "Cameroonian": 0.8
+      }
+    }
+  }
 }

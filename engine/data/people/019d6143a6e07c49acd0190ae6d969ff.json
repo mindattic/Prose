@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e07c49acd0190ae6d969ff",
   "type": "character",
-  "name": "Remi Ekwensi-Lindström",
+  "name": "Remi Lindström-Lindström",
   "aliases": [
     "Riptide",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Chicago Ave",
-  "description": "Suki Vikstrom-Asiedu are lean and angular, all sharp edges and visible tension. At 36, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a getaway pilot out of Ashfield, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Suki Vikstrom-Asiedu lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Remi Lindström-Lindström are lean and angular, all sharp edges and visible tension. At 36, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a getaway pilot out of Ashfield, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Remi Lindström-Lindström lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -259,7 +259,7 @@
     "Improviser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,29 +277,11 @@
     "Masquerade",
     "The Unfinished Theorem",
     "Ashfield",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Brecken Yılmaz-Osei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "Kamala Blomberg-Konadu",
-    "Kamala Mori-Sefa",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "TERMINUS",
-    "Yuki Nwosu-Petrenko"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed heritage: 42.6% Northern European, 34.8% East Asian, 21.3% Sub-Saharan African, 1.3% Hispanic/Latin American. Features reflect this complex blend—Northern European bone structure and fair undertones blended with East Asian eye shape and cheekbone prominence, warmed by Sub-Saharan ancestry. The result is a distinctive, difficult-to-categorize appearance that reads as authentically diaspora",
+    "heritage": "Mixed diaspora heritage: 35% Southeast Asian, 25.6% Pacific Islander, 13.8% Hispanic/Latin American, 13.6% South Asian, 9% Sub-Saharan African, 3% Northern European. Features reflect this complex tropical-to-equatorial blend—Southeast Asian eye shape and cheekbone structure combined with Pacific Islander warmth and broader facial proportions, enriched by South Asian nose bridge definition and brow structure, with Sub-Saharan depth and Hispanic/Latin undertones. The result is a warm, distinctly multicultural appearance that reads as authentically diaspora without easy categorization.",
     "height_cm": 174,
     "weight_kg": 62,
     "build": "Lean and angular with pronounced musculature — the synthetic leg replacements add visible bulk to the calves and thighs, creating an asymmetrical silhouette that reads as purposeful rather than athletic",
@@ -307,8 +289,8 @@
     "hair_style": "Pulled back in a tight, functional braid; practical, zero maintenance",
     "hair_length": "Medium",
     "eye_color": "Pale gray with minor augmentation: faint LED hazing at the iris edges, subcutaneous neural interface visible as faint metallic shimmer under bright light",
-    "skin_tone": "Warm golden-brown with neutral undertones—the result of Northern European paleness blended with East Asian and Sub-Saharan warmth. Medium depth, slightly weathered by exposure and environmental stress",
-    "complexion": "Distinctly multicultural face with blended features: high cheekbones with East Asian prominence balanced by Northern European angularity, narrow jaw reflecting Scandinavian ancestry softened by Sub-Saharan structure. Minimal grooming beyond functional necessity. Skin shows minor scars and weathering. Expression defaults to neutral-focused, eyes always calculating",
+    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones—the result of Southeast Asian base richness blended with Pacific Islander warmth, South Asian depth, and Sub-Saharan saturation. Evenly toned, slightly weathered by exposure and environmental stress.",
+    "complexion": "Distinctly multicultural face with blended tropical-equatorial features: prominent Southeast Asian cheekbones balanced by Pacific Islander facial width, South Asian nose bridge definition and brow structure, warmed by Sub-Saharan undertones and Hispanic/Latin softening. Minimal grooming beyond functional necessity. Skin shows minor scars and weathering. Expression defaults to neutral-focused, eyes always calculating.",
     "distinguishing_marks": [
       "Jagged scar running down the left temple to jawline — approximately 12cm, white and thin, surgical or shrapnel origin",
       "Faint burn marks across right shoulder and upper arm — partial sleeve of old trauma, pale and flat against skin",
@@ -319,15 +301,64 @@
     "posture_movement": "Stands with weight forward on the balls of feet — ready-position default. Movements are economical and precise; no wasted motion. Walks with a slight asymmetry due to the synthetic legs, but the gait is smooth and controlled. Has a habit of tensing shoulders when listening to someone, a physical manifestation of processing threat-assessment. Hand movements are deliberate — reaches are slow and obvious, nothing sudden",
     "clothing_style": "Tier 3-4 functional: reinforced cargo pants in muted gray or charcoal with oversized pockets and thigh webbing, synthetic leather jacket worn thin in places, black or dark green. No branding visible — stripped or removed. Boots are professional-grade tactical footwear, laced tight, soles worn from constant movement. Underneath: layered thermal base for temperature regulation in aircraft. No jewelry beyond a single flat steel band on left ring finger — functional, not decorative. Clothing shows minor stains and repairs; maintained for function, not appearance"
   },
-  "image_prompt": "Remi Ekwensi-Lindström, mixed-heritage cyberpunk operative in the Great Lakes Metropolitan Zone, 2226. Golden-brown skin with blended East Asian and Northern European features, sharp high cheekbones, narrow jaw, pale gray augmented eyes with subtle LED shimmer. Dark brown hair braided tight, silver at temples. Wearing worn synthetic leather jacket and reinforced cargo pants, tactical boots laced tight. Visible synthetic legs from mid-thigh down with faint mechanical joints and ankle-mounted LED status lights. Jagged scar down left temple, burn marks on right shoulder, rotor blade tattoo on inner forearm. Stands in ready-position, economical posture, expression neutral and calculating. Low-key warehouse or aircraft interior lighting, shadows emphasizing augmentation lines and scars. Cyberpunk noir aesthetic, functional and hardened. --ar 2:3 --v 6",
+  "image_prompt": "Remi Lindström-Lindström, 174cm lean angular frame, warm deep brown skin with golden olive undertones reflecting Southeast Asian, Pacific Islander, South Asian, Sub-Saharan, and Hispanic heritage blend. Angular face with prominent cheekbones, Southeast Asian eye shape, South Asian nose bridge, pale gray augmented eyes with faint LED shimmer. Dark brown hair with silver temples pulled in tight functional braid. Jagged white scar temple to jawline, faint burn marks right shoulder. Both synthetic legs mid-thigh down with visible muscle fiber replacement, mechanical joint articulation, ankle status lights. Wearing charcoal reinforced cargo pants, worn thin black synthetic leather jacket, professional tactical boots. Single steel band on left ring finger. Standing in ready-position weight forward, economical movements. GLMZ, GLMZ urban environment, cool neon-tinted ambient lighting casting shadows across scarred features, calculating neutral expression, calculating threat-assessment posture, high-tech mundane mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 42.6,
-    "East Asian": 34.8,
-    "Sub-Saharan African": 21.3,
-    "Hispanic/Latin American": 1.3
+    "Southeast Asian": 35,
+    "Pacific Islander": 25.6,
+    "Hispanic/Latin American": 13.8,
+    "South Asian": 13.6,
+    "Sub-Saharan African": 9,
+    "Northern European": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 14.6,
+        "Javanese": 1.5
+      },
+      "Filipino": {
+        "Ilocano": 14.5,
+        "Tagalog": 3.1
+      },
+      "Cambodian": {
+        "Khmer": 1.3
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 25.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 4.9
+      },
+      "Caribbean": {
+        "Haitian": 8.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 13.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 6.1
+      },
+      "West African": {
+        "Sierra Leonean": 2.1,
+        "Nigerian": 0.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6457553bbc0c222049b4dc3",
   "type": "character",
-  "name": "Kit Salazar-Subramaniam",
+  "name": "Kit Kariuki-Olofsson",
   "aliases": [
     "Warrant",
     "Old Warrant"
@@ -13,7 +13,7 @@
   "age": 87,
   "status": "active",
   "location": "Norwood Quiet, Veterans' Housing Block C — a building that smells of machine oil and old food and is maintained with fierce communal pride, near North Ave and Damen",
-  "description": "Kwabena Ilyich Ferreira-Sattout is a very old man who has the eyes of someone who has seen enough that nothing surprises him anymore, which he will tell you is not the same as being wise. He is thin in the way that very tall men go thin in old age — all angles and long bones, with skin that carries the warm brown of his Ghanaian-Azeri-Brazilian-Lebanese ancestry in loose folds at his jaw and wrists. He served as a Warrant Officer in Axiom's Marine detachment during the Corporate Wars of the 2150s, losing three fingers on his right hand to a Zheng-Dao area-denial round in the Kenosha Crossing engagement of 2157 and gaining a neurological tremor in his left hand that Axiom's pension coverage doesn't quite pay to treat. He walks with a cane that he chose himself — a carbon-fiber model with an Axiom logo he has scratched off and replaced with a handmade enamel pin of the Norwood Quiet neighborhood emblem.\n\nHe does not glorify the Wars and will say so plainly to anyone who starts romanticizing them. What he does is remember them, with the particular clarity of someone who has made a deliberate practice of it. He tells stories at the Veterans' Housing common room three nights a week — not heroic stories but functional ones: what it felt like to wait, what you ate, what the men beside you were thinking about when the fighting paused. The community comes to him not for inspiration but for something harder to name: the feeling that someone who was present has accounted for it honestly. He is registered with the Veterans Oral History Collective but considers Ẹbúnọlú Saarinen-Džambazović (whom he has never met but whose work he admires from a distance) to be doing it properly, while he is just talking.",
+  "description": "Kit Kariuki-Olofsson is a very old man who has the eyes of someone who has seen enough that nothing surprises him anymore, which he will tell you is not the same as being wise. He is thin in the way that very tall men go thin in old age — all angles and long bones, with skin that carries the warm brown of his Ghanaian-Azeri-Brazilian-Lebanese ancestry in loose folds at his jaw and wrists. He served as a Warrant Officer in Axiom's Marine detachment during the Corporate Wars of the 2150s, losing three fingers on his right hand to a Zheng-Dao area-denial round in the Kenosha Crossing engagement of 2157 and gaining a neurological tremor in his left hand that Axiom's pension coverage doesn't quite pay to treat. He walks with a cane that he chose himself — a carbon-fiber model with an Axiom logo he has scratched off and replaced with a handmade enamel pin of the Norwood Quiet neighborhood emblem.\n\nHe does not glorify the Wars and will say so plainly to anyone who starts romanticizing them. What he does is remember them, with the particular clarity of someone who has made a deliberate practice of it. He tells stories at the Veterans' Housing common room three nights a week — not heroic stories but functional ones: what it felt like to wait, what you ate, what the men beside you were thinking about when the fighting paused. The community comes to him not for inspiration but for something harder to name: the feeling that someone who was present has accounted for it honestly. He is registered with the Veterans Oral History Collective but considers Ẹbúnọlú Saarinen-Džambazović (whom he has never met but whose work he admires from a distance) to be doing it properly, while he is just talking.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -179,7 +179,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,24 +254,11 @@
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Breck Tannen",
-    "Cinderblock Ai",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Green Bay Community Table",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Jitterbug",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Praevex",
-    "Shorewood Terrace",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Reclamation Assembly",
-    "Vantablack PD-8 'Whistle'",
-    "Vuk Jorgensen-Toure"
+    "Compass Rose"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (52.7%) with South Asian (22.7%), Sub-Saharan African (19.6%), and Eastern European (5.0%) ancestry—a complex genetic blend visible in warm medium-brown skin with olive and amber undertones, deep-set eyes, and facial structure reflecting this diverse mix",
+    "heritage": "Sub-Saharan African (32.4%), Hispanic/Latin American (16.9%), South Asian (16.5%), East Asian (15.2%), Middle Eastern (10.2%), and Southeast Asian (8.8%)—a truly global genetic blend visible in rich warm-medium brown skin with complex undertones of amber, olive, and subtle red, deep-set eyes, and facial structure reflecting this diverse pan-continental ancestry",
     "height_cm": 193,
     "weight_kg": 74,
     "build": "Tall and lean in the characteristic way of very old men—all sharp angles at shoulders and elbows, long bones prominent beneath loosening skin. Still carries the posture of someone trained to stand at attention, though age has begun to curve his spine slightly forward.",
@@ -279,8 +266,8 @@
     "hair_style": "Cropped close to the head, neat and maintained with the same communal care he applies to everything",
     "hair_length": "Short",
     "eye_color": "Deep brown, still sharp and present—slightly milky at the edges with age cataracts beginning to form",
-    "skin_tone": "Warm medium brown—the blended heritage of his ancestry visible in undertones of olive and amber, darkened and weathered by decades of exposure and age",
-    "complexion": "Loose skin at the jawline and neck; deep laugh lines around the eyes and mouth; liver spots on the backs of both hands and forearms. A thin scar runs along his left temple—silvered with age. Facial hair kept to a neat white stubble, shaved every two or three days. Skin dry in places, particularly elbows and knuckles. Facial features show the broad structure and prominence of cheekbones characteristic of his diverse ancestry.",
+    "skin_tone": "Rich warm medium brown—the blended heritage of his pan-continental ancestry visible in undertones of amber, olive, and subtle red warmth, darkened and weathered by decades of exposure and age",
+    "complexion": "Loose skin at the jawline and neck; deep laugh lines around the eyes and mouth; liver spots on the backs of both hands and forearms. A thin scar runs along his left temple—silvered with age. Facial hair kept to a neat white stubble, shaved every two or three days. Skin dry in places, particularly elbows and knuckles. Facial features show the high cheekbones and broad facial structure characteristic of his diverse ancestry, with subtle depth in eye sockets reflecting the Sub-Saharan, South Asian, and East Asian genetic components. Nose bridge shows the slightly broader structure from South Asian and Middle Eastern heritage blending with Sub-Saharan and Hispanic ancestry. Cheekbones are prominently set with the angularity reflecting East Asian and Sub-Saharan genetic influence.",
     "distinguishing_marks": [
       "Missing ring and pinky fingers on right hand, replaced with visible functional prosthetics—Axiom-issue, brushed steel with synthetic joint knuckles showing wear marks and minor corrosion at the base",
       "Long silvered scar along left temple, approximately 8cm, running from hairline toward the cheekbone—appears to be thermal or electrical burn from decades past",
@@ -291,15 +278,80 @@
     "posture_movement": "Moves deliberately, economically—every motion calculated after a lifetime of knowing when not to waste energy. Uses his carbon-fiber cane not as a prop but as an extension of his right side, bearing weight through it with the ease of someone who has integrated it into his body's balance system. Walks with the measured pace of someone who knows exactly how far his body will carry him. When sitting, he becomes still—hands folded in his lap or on the table before him, a listener's posture. His head turns slowly when he shifts attention.",
     "clothing_style": "Tier 3-4 worker practical: well-maintained gray work pants with reinforced seams, worn soft but not frayed; a series of button-up shirts in muted colors (blues, grays, earth tones) that he layers with a faded Axiom Corporation windbreaker when he goes outside. The windbreaker is treated with care—the original logo is still visible despite being faded. He wears comfortable slip-on shoes with arch support, always clean. Around his neck, a lanyard holding his Veterans' Housing Block C ID and a small brass whistle from his service days. His cane carries the handmade enamel pin of the Norwood Quiet neighborhood emblem—a small act of deliberate defacement and reclamation."
   },
-  "image_prompt": "A 193cm tall elderly man with warm medium-brown skin reflecting Hispanic/Latin American, South Asian, Sub-Saharan African, and Eastern European heritage. Deep brown eyes with age cataracts, white-gray cropped hair, prominent cheekbones. Weathered skin with liver spots, laugh lines, and a silvered 8cm thermal scar along left temple. Missing ring and pinky fingers on right hand replaced with worn brushed steel Axiom prosthetics showing corrosion. Faded blue-gray Axiom Marine Corps tattoo (2134) on inner left forearm. Wearing muted gray-blue button-up shirt layered under faded Axiom windbreaker, gray work pants, slip-on shoes. Holding a carbon-fiber cane with neighborhood enamel pin. Lanyard with Veterans' Housing Block C ID and brass whistle. Deliberate, economical posture. Cyberpunk 2226, Great Lakes Metropolitan Zone, worn veteran aesthetic. Dim corridor lighting casting long shadows. --ar 2:3 --v 6",
+  "image_prompt": "Elderly neo-noir veteran, 193cm tall and lean, warm medium-brown skin with amber and olive undertones reflecting diverse Sub-Saharan African, South Asian, East Asian, Hispanic, Middle Eastern, and Southeast Asian ancestry. Sharp high cheekbones, deep-set brown eyes with age cataracts, white-gray hair cropped close. Silvered scar along left temple, liver spots on hands. Brushed steel prosthetic fingers visible on right hand with wear marks. Faded Axiom Corporation windbreaker over muted blue button-up shirt, gray reinforced work pants, arch-support slip-ons. Carbon-fiber cane with neighborhood emblem pin. Lanyard with Veterans ID and brass whistle at neck. Deliberate, economical posture, measured stance. Dim neon-lit Great Lakes Metropolitan corridor or quiet housing block interior, cool blue-green ambient lighting casting gentle shadows across weathered features. Listening expression, hands folded in calm composure. 2226 neo-noir urban aesthetic, worn dignity, quiet strength. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 52.7,
-    "South Asian": 22.7,
-    "Sub-Saharan African": 19.6,
-    "Eastern European": 5.0
+    "Sub-Saharan African": 32.4,
+    "Hispanic/Latin American": 16.9,
+    "South Asian": 16.5,
+    "East Asian": 15.2,
+    "Middle Eastern": 10.2,
+    "Southeast Asian": 8.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 14.3
+      },
+      "Central African": {
+        "Congolese": 3.7,
+        "Gabonese": 11.6
+      },
+      "Southern African": {
+        "South African": 2,
+        "Botswanan": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.9
+      },
+      "Caribbean": {
+        "Cuban": 3.3
+      },
+      "South American": {
+        "Venezuelan": 5,
+        "Peruvian": 2.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 6.5
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 3.7,
+        "Sindhi": 5.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 15.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 6.7
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.8
+      },
+      "Kurdish": {
+        "Kurdish": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 7.2
+      },
+      "Laotian": {
+        "Laotian": 1.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b3786ab0db14fdbe332ff0",
   "type": "character",
-  "name": "Kit Agyemang",
+  "name": "Kit Haugen",
   "aliases": [
     "Toly",
     "Anchor"
@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Brightmoor Reclamation, near Western and Chicago Ave",
-  "description": "Anatoliy is seventeen going on thirty-five — broad-shouldered, not especially tall, with medium-brown skin and dark eyes under heavy brows that default to a furrowed expression people mistake for anger until they learn to read the mouth, which is the more accurate instrument and is usually softer. His hair is worn long enough to pull back and he keeps it neat with a discipline that is one of the few things he insists on for himself. He has no mods — he has never had money for mods — but he moves with the careful physical awareness of someone who has had to be ready to put themselves between a smaller person and a problem, which he has done many times.\n\nAnatoliy has been at St. Eudocia since he was nine and has watched cohorts of younger children cycle through — some adopted out, some aging out, some just disappearing in ways the shelter staff can't explain and won't discuss. He is not bitter in the way that curdles into cruelty; he is bitter in the way that calcifies into competence. He can cook for twenty on a marginal budget, can talk a panicked eight-year-old through a nightmare at 0300, can negotiate with the Brightmoor neighborhood watch, and knows where every free clinic and food distribution point in a four-district radius is located. He prays regularly to an E.L.F. called Threshold that seems to inhabit the shelter's front door and that Anatoliy believes watches over who crosses in and out. He will age out of St. Eudocia in nine months and has not told anyone how frightened he is.",
+  "description": "Kit Haugen is seventeen going on thirty-five — broad-shouldered, not especially tall, with medium-brown skin and dark eyes under heavy brows that default to a furrowed expression people mistake for anger until they learn to read the mouth, which is the more accurate instrument and is usually softer. His hair is worn long enough to pull back and he keeps it neat with a discipline that is one of the few things he insists on for himself. He has no mods — he has never had money for mods — but he moves with the careful physical awareness of someone who has had to be ready to put themselves between a smaller person and a problem, which he has done many times.\n\nKit Haugen has been at St. Eudocia since he was nine and has watched cohorts of younger children cycle through — some adopted out, some aging out, some just disappearing in ways the shelter staff can't explain and won't discuss. He is not bitter in the way that curdles into cruelty; he is bitter in the way that calcifies into competence. He can cook for twenty on a marginal budget, can talk a panicked eight-year-old through a nightmare at 0300, can negotiate with the Brightmoor neighborhood watch, and knows where every free clinic and food distribution point in a four-district radius is located. He prays regularly to an E.L.F. called Threshold that seems to inhabit the shelter's front door and that Kit Haugen believes watches over who crosses in and out. He will age out of St. Eudocia in nine months and has not told anyone how frightened he is.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -162,7 +162,7 @@
     "Cockroach": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,26 +174,13 @@
     "Brightmoor Reclamation",
     "The Reclamation Assembly",
     "Threshold",
-    "Elena Vasquez-9",
-    "Chicago",
-    "Blessed Nkemdirim",
-    "GLMZ",
-    "Harrowgate Industrial Plateau",
-    "Irontide Tidal Energy",
-    "Nnamdi Ostrowski-Faletolu",
-    "Norwood Quiet",
     "Plot 17",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Canopy",
-    "The Human Baseline Alliance",
-    "The Peninsula",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Chicago",
+    "Elena Vasquez-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (48.9%), Hispanic/Latin American (42.3%), and Middle Eastern (8.8%) ancestry creates a rich blend. His complexion reflects deep African heritage with warm Latin American undertones and subtle Middle Eastern bronzing, resulting in a warm medium-to-medium-dark brown skin tone with golden warmth beneath.",
+    "heritage": "Southeast Asian (37.9%), Hispanic/Latin American (25.7%), South Asian (23.0%), Sub-Saharan African (7.9%), and Indigenous American (5.5%) ancestry creates a complex, globally-mixed phenotype. Dominant Southeast Asian bone structure and warm golden undertones are layered with South Asian facial depth, Latin American sun-richness, African luminosity, and Indigenous American heritage throughout. His appearance reflects the reality of 2226: ancestry is map-spanning, not map-bound.",
     "height_cm": 173,
     "weight_kg": 72,
     "build": "Broad-shouldered and compact, with the functional musculature of someone who does physical labor daily rather than trained for it. Stocky through the torso, strong hands and forearms, minimal body fat from consistent underfed years.",
@@ -201,25 +188,79 @@
     "hair_style": "Pulled back in a neat, practical queue or tied low; fastidiously maintained despite limited resources",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-brown with golden undertones, reflecting the blend of Sub-Saharan African depth, Latin American warmth, and subtle Middle Eastern bronze. Rich and luminous even when weathered.",
-    "complexion": "Clear but weathered for his age; heavy dark eyebrows that sit low over his eyes, giving a naturally furrowed appearance often misread as anger. Soft mouth with fuller lips characteristic of his African and Latin American heritage. Minimal facial hair kept cleanly shaved. High cheekbones with gentle fullness through the cheeks. Hands show minor cuts and calluses from kitchen work and general shelter maintenance.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones—Southeast Asian warmth layered with South Asian depth, Latin American sun-richness, and Sub-Saharan African luminosity creating a living, responsive quality. Subtle regional variation across shoulders and upper back.",
+    "complexion": "Clear but weathered for his age. Heavy dark eyebrows sitting low over his eyes, giving a naturally furrowed appearance. Soft mouth with fuller lips characteristic of his diverse ancestry. High cheekbones with gentle fullness blending Southeast and South Asian facial structure. Nose bridge has the width characteristic of his mixed heritage. Minimal facial hair kept cleanly shaved. Hands show minor cuts and calluses from kitchen work.",
     "distinguishing_marks": [
-      "Faint circular scar on inner left forearm (approximately 2cm diameter) from a childhood incident at age eleven, pale against his skin tone",
+      "Faint circular scar on inner left forearm (approximately 2cm diameter) from childhood incident at age eleven, pale against his skin tone",
       "Small burn scar on the back of his right hand from kitchen work, barely noticeable",
-      "Cluster of freckles across his shoulders and upper back in a slightly darker shade than his baseline skin"
+      "Cluster of freckles across shoulders and upper back in slightly darker shade than baseline skin"
     ],
     "visible_augmentations": "None. No chrome, no LED implants, no subdermal plating. His body is entirely biological—a rarity among his age cohort in the GLMZ, marking him as someone from the economic bottom tier or someone who has chosen to remain unaugmented.",
     "posture_movement": "Stands with shoulders slightly forward, a protective slouch developed from years of making himself available as a physical barrier for smaller children. Moves deliberately and efficiently with minimal wasted motion. His eyes track entrances and exits habitually. When at rest, his hands are often occupied—fidgeting with rope, checking pockets, ready to move. Despite his youth, carries himself with the settled wariness of someone much older.",
-    "clothing_style": "Tier 5/reclamation-tier practical wear. Faded work shirt (often grey or muted blue) with sleeves rolled or pushed up, worn cargo pants with reinforced knees, sturdy unmarked boots that have been resoled at least twice. A heavy canvas jacket in cold months. Everything is clean but repaired multiple times over. No brand markers, no decorative chrome, no status symbols. Clothing chosen for durability and functionality, not aesthetics. A worn fabric wristband in a muted color (possibly religious or personal significance) is visible on his left wrist."
+    "clothing_style": "Tier 5/reclamation-tier practical wear. Faded work shirt (often grey or muted blue) with sleeves rolled or pushed up, worn cargo pants with reinforced knees, sturdy unmarked boots that have been resoled at least twice. Heavy canvas jacket in cold months. Everything is clean but repaired multiple times over. No brand markers, no decorative chrome, no status symbols. A worn fabric wristband in muted color on left wrist."
   },
-  "image_prompt": "Kit Agyemang, 173cm tall with warm golden-brown skin and Sub-Saharan African and Latin American features, standing in a cyberpunk 2226 GLMZ warehouse setting. He wears faded grey work shirt with rolled sleeves, worn cargo pants with reinforced knees, and sturdy resoled boots. His dark hair is pulled back in a neat queue. Heavy dark eyebrows frame alert, watchful dark brown eyes. Full lips, high cheekbones, and faint circular scar visible on inner left forearm. Compact, broad-shouldered muscular build. Protective forward slouch posture, entirely biological with no visible augmentation in an age of chrome. Cool blue-grey warehouse lighting casting shadows, gritty industrial environment, his hands at rest but ready, worn fabric wristband on left wrist, cold and focused demeanor --ar 2:3 --v 6",
+  "image_prompt": "Kit Haugen, 173cm tall, compact broad-shouldered build, warm medium-brown skin with golden and olive undertones blending Southeast Asian, South Asian, and Latin American heritage. Dark brown eyes set beneath heavy low-sitting eyebrows, high cheekbones, fuller lips, nose bridge wide with mixed heritage character. Dark brown hair tied back in neat queue. Faint circular scar on inner left forearm, small burn scar on right hand, freckles across shoulders. Wearing faded grey work shirt with rolled sleeves, worn cargo pants with reinforced knees, resoled sturdy boots, heavy canvas jacket. Fabric wristband on left wrist. Entirely biological, no augmentations. Posture slightly forward and protective, deliberate efficient movement, eyes tracking exits. Weathered and worn but fastidiously clean. GLMZ GLMZ setting, gritty kitchen or reclamation district lighting, moody atmospheric neon-tinged shadows, documentary realism, portrait-focused, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 48.9,
-    "Hispanic/Latin American": 42.3,
-    "Middle Eastern": 8.8
+    "Southeast Asian": 37.9,
+    "Hispanic/Latin American": 25.7,
+    "South Asian": 23,
+    "Sub-Saharan African": 7.9,
+    "Indigenous American": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 10.3
+      },
+      "Thai": {
+        "Thai": 10.6
+      },
+      "Cambodian": {
+        "Khmer": 17
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 12.5
+      },
+      "Caribbean": {
+        "Dominican": 2.9,
+        "Puerto Rican": 5.3
+      },
+      "Central American": {
+        "Salvadoran": 1.8,
+        "Nicaraguan": 3.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 3.1,
+        "Tamil Sri Lankan": 10.2
+      },
+      "Nepali": {
+        "Nepali": 3.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 5.4,
+        "Mozambican": 2.5
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 4.5
+      },
+      "Andean": {
+        "Aymara": 1
+      }
+    }
+  }
 }

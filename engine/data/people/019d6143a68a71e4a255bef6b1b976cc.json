@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68a71e4a255bef6b1b976cc",
   "type": "character",
-  "name": "Zara Hosseini-Guerrero",
+  "name": "Zara Mwangi-Guerrero",
   "aliases": [
     "Drip",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Deepwell Station, sub-level access tunnels beneath Ironvein, near sub-level access near Dearborn and Jackson",
-  "description": "Ossolo is a lean, weathered man whose skin carries the permanent grey-blue pallor of someone who has not seen natural sunlight in years. His face is angular, with deep-set amber eyes that have been augmented with low-light photoreceptors — the pupils elongate like a cat's in darkness, but in dim light they glow faintly amber. He keeps his head shaved close on the sides, with a ridge of tightly coiled hair down the center now streaked with mineral dust that never quite washes out. His hands are extraordinary — each finger tattooed with a segment of tunnel mapping in faded ultraviolet ink, visible only under the right kind of light. He smells faintly of wet concrete and the iron-rich water that drips from old service pipes.\n\nOssolo speaks little and charges much. He has guided hundreds of people through the sub-levels — refugees from surface crackdowns, the disappeared seeking new lives, maintenance workers whose credentials won't open the right doors, curious journalists who last twenty minutes before they beg to go back up. He is not cruel but he is absolutely unsentimental. He has watched people drown in flooded transit tunnels and he has mourned them in exactly the way he mourns a wrong turn: quietly, privately, and then corrected.",
+  "description": "Zara Mwangi-Guerrero is a lean, weathered man whose skin carries the permanent grey-blue pallor of someone who has not seen natural sunlight in years. His face is angular, with deep-set amber eyes that have been augmented with low-light photoreceptors — the pupils elongate like a cat's in darkness, but in dim light they glow faintly amber. He keeps his head shaved close on the sides, with a ridge of tightly coiled hair down the center now streaked with mineral dust that never quite washes out. His hands are extraordinary — each finger tattooed with a segment of tunnel mapping in faded ultraviolet ink, visible only under the right kind of light. He smells faintly of wet concrete and the iron-rich water that drips from old service pipes.\n\nZara Mwangi-Guerrero speaks little and charges much. He has guided hundreds of people through the sub-levels — refugees from surface crackdowns, the disappeared seeking new lives, maintenance workers whose credentials won't open the right doors, curious journalists who last twenty minutes before they beg to go back up. He is not cruel but he is absolutely unsentimental. He has watched people drown in flooded transit tunnels and he has mourned them in exactly the way he mourns a wrong turn: quietly, privately, and then corrected.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -188,7 +188,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,33 +244,18 @@
   "related_entities": [
     "Deepwell Station",
     "The Iron Lotus",
-    "Ironvein",
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "Ironvein",
+    "Dearborn Forge",
     "Concrete",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
     "Déjà Vu",
     "Nightlight",
-    "Iron",
-    "Breck Tannen",
-    "Daulet Reyes-Abubakar",
-    "Dzemal Acholonu-Patagiri",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kethavar",
-    "Narrowcast",
-    "Nkiruka Haapasalo-Bengtsson",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sisay Bergqvist-Mallari",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "The Human Baseline Alliance",
-    "The Seam",
-    "The Undertow",
-    "The Wire Taps"
+    "Iron"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Middle Eastern (60.3%) with significant Hispanic/Latin American (22.5%) and Sub-Saharan African (17.2%) ancestry; complex blend creates warm-toned mid-to-deep brown base with subtle olive undertones from Levantine lineage, enriched by West African and Latin American genetics",
+    "heritage": "Complex Pan-Global blend: Sub-Saharan African (38.1%) and Hispanic/Latin American (35.6%) form the dominant genetic base, with significant Central Asian (12.8%) and Middle Eastern (6.7%) contributions, plus minor East Asian (6.5%) ancestry. This creates a warm deep brown base enriched by golden and olive undertones from African, Latin American, and Middle Eastern heritage, with subtle warm undertones from Central Asian ancestry.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wiry, muscle tone maintained by constant navigation through narrow passages and climbing; shoulders slightly hunched from years of stooping in low-ceiling tunnels",
@@ -278,8 +263,8 @@
     "hair_style": "Tight fade on sides, central ridge of coiled hair standing upright",
     "hair_length": "Short (fade 3mm sides, ridge 4-5cm)",
     "eye_color": "Amber with elongated pupils (cat-like dilation in darkness), faintly luminescent in low light",
-    "skin_tone": "Warm mid-to-deep brown with olive undertones; grey-blue undertone overlay from years without sunlight exposure, creating an ashen, pallid cast over the baseline warm complexion",
-    "complexion": "Angular jaw and high cheekbones reflecting Middle Eastern and West African heritage; deeply weathered texture from mineral-laden water and lack of moisture; permanent tension lines around eyes; no facial hair, clean-shaved; dark water stain discoloration along hairline and ears from prolonged exposure to iron-rich seepage",
+    "skin_tone": "Warm deep brown with golden and olive undertones; grey-blue undertone overlay from years without sunlight exposure, creating a slightly ashen cast over the baseline warm complexion",
+    "complexion": "Angular jaw and prominent high cheekbones with mild lateral breadth reflecting the African-Latin American-Central Asian blend; deeply weathered texture from mineral-laden water and lack of moisture; permanent tension lines around eyes; no facial hair, clean-shaved; dark water stain discoloration along hairline and ears from prolonged exposure to iron-rich seepage",
     "distinguishing_marks": [
       "UV-reactive tunnel-map tattoos covering all ten fingers in faded ultraviolet ink — segments of actual route cartography visible only under blacklight",
       "Fine white scar tissue along both palms in a grid pattern from subdermal pressure-sensor mesh installation",
@@ -289,14 +274,67 @@
     "posture_movement": "Economical, silent movement — walks with a slight forward lean as if perpetually evaluating floor stability. Hands move deliberately, fingers splayed to assess surroundings via pressure sensors. Sits perfectly still for hours without fidgeting. Speaks rarely; when she does, words are sparse and precise.",
     "clothing_style": "Tier 4 utilitarian — worn tactical pants with reinforced knees and multiple cargo pockets (patched multiple times), grey ribbed undershirt darkened by perpetual damp, heavy breathable shell jacket with sealed seams (military surplus or Undertow issue). Boots are steel-toed Dunlop industrial grade, resoled at least twice. One wrist-mounted device: a battered handheld signal repeater with cracked screen running custom firmware. No jewelry. Everything smells faintly of concrete dust and rust."
   },
-  "image_prompt": "Zara Hosseini-Guerrero, a 172cm lean underground scout with warm mid-brown skin tinted ashen from years in darkness, angular Middle Eastern and West African features, dark coiled hair with grey streaking styled in tight fade with central ridge. Amber cybernetic cat-slit eyes glowing faintly in dim industrial lighting. Weathered angular face with tension lines, dark seepage stains along hairline. Wearing worn Tier 4 tactical gear: reinforced cargo pants, grey damp undershirt, military breathable shell jacket with sealed seams, resoled steel-toed Dunlop boots. Wrist-mounted battered signal repeater with cracked screen. UV-reactive tunnel-map tattoos faintly visible on fingers, grid scar pattern on palms from pressure sensors. Silent, economical posture with slight forward lean. Underground tunnel setting with damp concrete walls, dim emergency lighting casting blue shadows, moisture glistening on surfaces. Cyberpunk 2226, Great Lakes Metropolitan Zone. Moody, alert, precise. --ar 2:3 --v 6",
+  "image_prompt": "Zara Mwangi-Guerrero, a lean 172cm woman with warm deep brown skin bearing golden and olive undertones, ashen-grey cast from years underground; angular jaw and high cheekbones; short dark brown hair with grey streaking, tight fade sides with upright coiled central ridge; amber photoreceptor eyes with cat-slit pupils glowing faintly in shadow; UV-reactive tunnel-map tattoos on all fingers invisible in normal light; fine white scar grid on both palms from pressure-sensor mesh; dark water stains along hairline and ears; weathered complexion with tension lines around eyes; economical posture with slight forward lean; wearing worn tactical pants with reinforced knees, grey ribbed undershirt, heavy sealed military surplus shell jacket, steel-toed industrial boots; battered wrist-mounted signal repeater with cracked screen; standing in dim underground tunnel lit by minimal pale bioluminescent strips, concrete dust and rust visible in air, perfectly still and silent, GLMZ Great Lakes Metropolitan Zone subterranean navigator, moody cold lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 60.3,
-    "Hispanic/Latin American": 22.5,
-    "Sub-Saharan African": 17.2
+    "Sub-Saharan African": 38.1,
+    "Hispanic/Latin American": 35.6,
+    "Central Asian": 12.8,
+    "Middle Eastern": 6.7,
+    "East Asian": 6.5,
+    "South Asian": 0.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 9,
+        "Congolese": 29.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 20.8
+      },
+      "Central American": {
+        "Guatemalan": 5.2,
+        "Costa Rican": 4.6
+      },
+      "Caribbean": {
+        "Cuban": 4,
+        "Puerto Rican": 1
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 12.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 1.8
+      },
+      "Persian": {
+        "Tajik Persian": 2.7,
+        "Iranian": 0.3
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.1,
+        "Iraqi": 0.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 3,
+        "Mandarin Northern": 3.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.3
+      }
+    }
+  }
 }

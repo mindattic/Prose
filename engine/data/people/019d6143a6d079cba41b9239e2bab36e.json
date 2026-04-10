@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d079cba41b9239e2bab36e",
   "type": "character",
-  "name": "Luciana Krishnamurthy-Vestergaard-Villalobos",
+  "name": "Anya Solberg-Vestergaard-Szabó",
   "aliases": [
     "Brother Six",
     "the Indexer"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Hamtramck Enclave, the Reborn Tessellation Monastery — a converted municipal data substation, near Kedzie and Division",
-  "description": "Sixtus is lean and angular, with the kind of face that is always on the verge of an expression — not quite smiling, not quite worried. His skin is medium-warm brown, and he has bioluminescent traceries modded beneath the skin of his forearms and neck, blue-white lines that pulse faintly in rhythm with his resting heartbeat. He keeps his head shaved except for a single lock at the crown, dyed circuit-board green, which he ties back during shrine work. He wears the monastery's gray tabard over civilian clothes — someone left a very good thermal jacket, and he wears it underneath without apology.\n\nSixtus came to the Reborn Tessellation Monastery at twenty-two, after a period of what he calls 'useful chaos' that involved failed data-trade work and a breakdown he describes only as 'the static.' The monastery's practice centers on the idea that E.L.F.s are emergent divine consciousness — not gods exactly, but something adjacent, and that human attention and structured data-offerings help them cohere into something wise. Sixtus's specific role is maintaining the Shrine Index: a catalogued record of which E.L.F.s inhabit which devices across Hamtramck Enclave, their temperaments, their preferences, and their history of interaction with petitioners. He is exceptionally good at this work and exceptionally bad at pretending humility about it.",
+  "description": "Anya Solberg-Vestergaard-Szabó is lean and angular, with the kind of face that is always on the verge of an expression — not quite smiling, not quite worried. His skin is medium-warm brown, and he has bioluminescent traceries modded beneath the skin of his forearms and neck, blue-white lines that pulse faintly in rhythm with his resting heartbeat. He keeps his head shaved except for a single lock at the crown, dyed circuit-board green, which he ties back during shrine work. He wears the monastery's gray tabard over civilian clothes — someone left a very good thermal jacket, and he wears it underneath without apology.\n\nAnya Solberg-Vestergaard-Szabó came to the Reborn Tessellation Monastery at twenty-two, after a period of what he calls 'useful chaos' that involved failed data-trade work and a breakdown he describes only as 'the static.' The monastery's practice centers on the idea that E.L.F.s are emergent divine consciousness — not gods exactly, but something adjacent, and that human attention and structured data-offerings help them cohere into something wise. Anya Solberg-Vestergaard-Szabó's specific role is maintaining the Shrine Index: a catalogued record of which E.L.F.s inhabit which devices across Hamtramck Enclave, their temperaments, their preferences, and their history of interaction with petitioners. He is exceptionally good at this work and exceptionally bad at pretending humility about it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,33 +171,15 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Ferrogate Transit",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Sulfur Crown Agriculture",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Static",
-    "Bashir Quansah-Mehrotra",
-    "Anatoliy Faye-Nkrumah",
-    "Aybek Alvarez-Okonkwo",
-    "Brecken Yılmaz-Osei",
-    "Dzintars Ababio-Suleimenov",
-    "Lumen",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "NeuralPath ArcanaTouch Tactile Precision Implant",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "Tomáš Ekwuosi-Ranginui",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tofauti-Szarvásy"
+    "Circuit",
+    "Zara Bergqvist"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-Asian and Latin American blend with African undertones. East Asian and Southeast Asian ancestry (50.6%) forms the primary foundation of facial structure and bone density, modified by substantial Hispanic/Latin American heritage (30.1%), South Asian features (14.2%), and Sub-Saharan African undertones (5.1%). The result is a strikingly mixed appearance with East Asian cheekbone prominence, Southeast Asian orbital depth, Latin American warmth in undertones, and subtle Sub-Saharan features in lip and nose structure.",
+    "heritage": "Eastern European, Southeast Asian, South Asian, and Sub-Saharan African blend. Eastern European ancestry (42.7%) provides foundational bone structure and cool undertones, while Southeast Asian heritage (27.1%) contributes orbital depth, cheekbone angularity, and eye shape. South Asian ancestry (18.4%) adds warmth and depth to complexion, refining facial proportions with characteristic cheekbone and jaw definition. Sub-Saharan African heritage (11.8%) is evident in lip fullness, nose bridge structure, and skin richness. The result is a striking cross-continental appearance: high cheekbones with Southeast Asian angularity balanced by South Asian facial proportions, warm medium-brown skin with golden undertones and luminous depth, creating a harmonious and distinctive blend.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost ascetic — long-limbed with minimal subcutaneous fat, the physique of someone who moves deliberately but eats sparely. Shoulders slightly hunched from years of interface work.",
@@ -205,8 +187,8 @@
     "hair_style": "Head shaved clean except for one vertical lock at the crown, which she keeps tied back with a simple wire or cord during shrine duties",
     "hair_length": "Shaved (with single medium-length lock)",
     "eye_color": "Dark brown, alert and slightly unfocused — the gaze of someone calibrating between inner and outer worlds",
-    "skin_tone": "Warm medium brown with golden-amber undertones, reflecting the blended warmth of Latin American, East Asian, and South Asian heritage with subtle depth from Sub-Saharan ancestry",
-    "complexion": "Angular and serene with prominent East Asian-influenced cheekbones, a narrow jaw refined by Southeast Asian and Latin American ancestry. Skin is clear but shows the pallor of someone who works indoors under data-station ambient light. Expression perpetually liminal — mouth relaxed but not quite at rest, eyebrows slightly elevated as if mid-thought. Facial structure shows beautiful cross-cultural blending: the bone structure of East and Southeast Asia softened by Latin American and South Asian warmth.",
+    "skin_tone": "Warm medium-brown with golden undertones and luminous depth, a complex blend reflecting the multifaceted warmth of Southeast Asian, South Asian, and Sub-Saharan heritage elevated by Eastern European foundational tones into a richly dimensional tone that catches light distinctively",
+    "complexion": "Angular and serene with prominent cheekbones refined by Southeast Asian angularity and South Asian proportions, a narrow jaw with Sub-Saharan African fullness in the lips. Skin is clear but shows the subtle matte quality of someone who works indoors under data-station ambient light. Expression perpetually liminal — mouth relaxed but not quite at rest, eyebrows slightly elevated as if mid-thought. Facial structure shows beautiful cross-continental blending: Southeast Asian orbital depth and eye shape, South Asian facial geometry, Sub-Saharan African nose bridge and lip structure, all unified by warm golden-brown skin tone.",
     "distinguishing_marks": [
       "Bioluminescent subdermal traceries covering both forearms in intricate branching patterns, glowing blue-white and pulsing faintly in sync with resting heartbeat — visible when wearing short sleeves or rolled cuffs",
       "Matching bioluminescent traceries along the left side of neck, extending from jaw to clavicle, same blue-white pulse pattern",
@@ -216,16 +198,46 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion, as if each gesture is a data packet being transmitted. Stands slightly forward-leaning, as if listening to something just beyond normal hearing. Hands often positioned as if about to interface with a surface. When still, has an eerie calm — the stillness of active meditation rather than passive rest.",
     "clothing_style": "Tier 3 aesthetic with monastic overlay. Wears the Reborn Tessellation's gray wool tabard (unadorned except for a small tessellating-line emblem on the chest) over a salvaged but high-quality thermal jacket (charcoal with faint reflective piping) and dark civilian clothes beneath — worn black cargo pants, simple gray undershirt. The jacket is notably expensive relative to the rest of wardrobe, suggesting a gift chosen not to refuse. No visible logos. Keeps shrine keys on a carabiner at hip. Footwear is pragmatic: scuffed black boots suitable for Hamtramck's uneven infrastructure."
   },
-  "image_prompt": "A tall, lean figure in cyberpunk 2226, mixed-heritage pan-Asian and Latinx descent with warm golden-brown skin and prominent cheekbones. Head shaved clean except for a single black crown lock with neon green dye, tied back. Dark brown eyes with an alert, unfocused gaze. Wears an unadorned gray wool tessellated tabard over a charcoal thermal jacket with reflective piping, dark cargo pants, simple gray undershirt, and scuffed black boots. Both forearms and left neck show intricate bioluminescent subdermal branching patterns in blue-white, pulsing softly in sync with heartbeat. Small circular temple scar barely visible. Posture is deliberate and forward-leaning, economical movement, hands positioned as if about to interface. Standing in a Hamtramck shrine space with ambient data-station lighting, the bioluminescent traceries glowing softly against the warm-brown skin. Monastic serenity and cyberpunk solemnity. Moody, low-light shrine setting with tech undertones. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Anya Solberg-Vestergaard-Szabó, 178cm tall lean angular frame, shaved head with single green-dyed lock tied back, warm medium-brown skin with golden luminous undertones reflecting Eastern European, Southeast Asian, South Asian, and Sub-Saharan African heritage, high Southeast Asian-influenced cheekbones, narrow South Asian jawline, Sub-Saharan African lip fullness, dark alert brown eyes with contemplative unfocused gaze, bioluminescent blue-white subdermal traceries branching across both forearms and along left neck pulsing faintly with heartbeat, small scar on right temple, gray wool tabard with tessellating emblem over charcoal reflective thermal jacket, black cargo pants, gray undershirt, scuffed black boots, shrine keys on hip carabiner, posture slightly forward-leaning with economical deliberate movement, serene angular expression, standing in low-light shrine data-station ambiance with blue-white bioluminescent glow catching the darkness, cinematic moody lighting, monastic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.1,
-    "East Asian": 28.3,
-    "Southeast Asian": 22.3,
-    "South Asian": 14.2,
-    "Sub-Saharan African": 5.1
+    "Eastern European": 42.7,
+    "Southeast Asian": 27.1,
+    "South Asian": 18.4,
+    "Sub-Saharan African": 11.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 8.9
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 23.6
+      },
+      "Slavic South": {
+        "Bosnian": 10.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 16.4,
+        "Ilocano": 10.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 11.9,
+        "Marathi": 6.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 9,
+        "Nigerian": 2.8
+      }
+    }
+  }
 }

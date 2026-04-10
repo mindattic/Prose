@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Western and Chicago Ave",
-  "description": "Fatoumata Ramos-Mensah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Diego Villalobos is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -260,7 +260,7 @@
     "Grudge Holder": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rookery",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,38 +274,17 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
+    "Chicago",
     "Slagworks Industrial",
     "Pellucid Systems",
     "Gravimetric Collapse Charge GCC-9",
-    "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Breck Tannen",
-    "Compass Rose",
-    "Crucible RE-2 'Receptionist'",
-    "Glenville Sound",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kamala Blomberg-Konadu",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Quiet Room",
-    "Tomasz Wren"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Caribbean-Latin American with significant West African and Northern European ancestry — a genetic blend reflecting the Ubiquitous Diaspora. Predominantly Hispanic/Latin American heritage (65.9%) mixed with Sub-Saharan African (19.3%) and Northern European (14.8%) ancestry creates a warm, complex phenotype.",
+    "heritage": "Complex diaspora blend reflecting Sub-Saharan African (50.9%), Hispanic/Latin American (37.1%), Southeast Asian (7.7%), and Eastern European (4.3%) ancestry. The dominant African and Latin American heritage creates a rich, warm phenotype with subtle Southeast Asian bone structure refinement and Eastern European undertones in skin depth.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Athletic and lean with dense muscle — dancer's posture married to fighter's tension. Shoulders broad, hips narrow, no excess. Moves like someone who's spent years in close-quarters combat.",
@@ -313,8 +292,8 @@
     "hair_style": "Pulled back in a tight, functional braid that exposes her neck and jawline",
     "hair_length": "Long",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the blended result of Latin American, West African, and Northern European ancestry. Rich enough to catch light, with the warmth of sun-exposed heritage.",
-    "complexion": "Sharp, angular facial structure with high cheekbones and defined jawline — features reflecting both West African and Iberian heritage. Nose is proportionate and refined. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
+    "skin_tone": "Deep warm brown with golden undertones — the result of 50.9% Sub-Saharan African ancestry blended with 37.1% Hispanic/Latin American, enriched by subtle Southeast Asian warmth and Eastern European depth. Rich enough to catch light, radiant in its complexity.",
+    "complexion": "Strong, angular facial structure with prominent high cheekbones and defined jawline — features reflecting Sub-Saharan African and Southeast Asian bone structure refined by Iberian heritage. Nose is proportionate and refined. Eyes set with slight Southeast Asian epicanthic character. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, approximately 8cm, barely visible but catches light",
       "Burn scar on inner left wrist, 4cm diameter, from a failed incendiary round ricochet — pale and smooth",
@@ -324,14 +303,46 @@
     "posture_movement": "Stands with weight balanced on the balls of her feet — ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there's a predatory fluidity — someone comfortable in confined spaces and tight corners.",
     "clothing_style": "Tier 3-4 utilitarian. Black synthetic-leather jacket (water-resistant, scored with small cuts and scuffs), fitted enough to move but loose enough to conceal gear. Charcoal tactical pants with reinforced knees and thigh pockets holding small tools and ammunition. Combat boots, black, scuffed. Underneath: a grey undershirt with discreet ballistic weave. No jewelry except a cracked smart-watch on her left wrist (functional, not fashion). All clothing shows the patina of actual use."
   },
-  "image_prompt": "Diego Villalobos, 172cm tall, lean athletic build, warm medium-brown skin with golden undertones blending West African and Latin American heritage. Sharp angular features, high cheekbones, dark brown eyes. Long black hair with micro-LED bronze threading pulled back in tight functional braid. Polished chrome smartgun link port on right forearm at wrist. Thin white scar from left temple to cheekbone, pale burn scar on inner left wrist. Black synthetic-leather jacket scored with wear, charcoal tactical pants with reinforced knees, black combat boots. Grey ballistic weave undershirt. Cracked smart-watch on left wrist. Stands with weight on balls of feet, predatory posture, right hand hovering near forearm augmentation. Nocturnal fatigue lines under eyes. Cyberpunk 2226 Great Lakes Metropolitan Zone. Dark moody lighting, industrial background, ready-for-action stance, gritty street fighter aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Diego Villalobos, GLMZ, woman with deep golden-brown skin tone, angular high cheekbones, defined jawline, subtle Southeast Asian bone structure, dark brown eyes with slight epicanthic fold, natural black hair in tight functional braid with bronze micro-LED threading, 172cm athletic lean build. Thin white scar temple to cheekbone, burn scar inner left wrist. Right forearm polished chrome smartgun link port with neural scars. Wears black scuffed synthetic-leather jacket, charcoal tactical pants with reinforced knees, grey ballistic weave undershirt, black combat boots, cracked smart-watch. Stands weight-balanced on balls of feet, predatory posture, right hand hovering near augmented forearm. Nocturnal fatigue lines under eyes, functional grooming. Great Lakes Metropolitan Zone neon-lit alley setting, cool blue and amber lighting catching the warmth of her skin and the chrome of her augmentation, moody neo-noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 65.9,
-    "Sub-Saharan African": 19.3,
-    "Northern European": 14.8
+    "Sub-Saharan African": 50.9,
+    "Hispanic/Latin American": 37.1,
+    "Southeast Asian": 7.7,
+    "Eastern European": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 27.9,
+        "Ethiopian": 12.1
+      },
+      "Central African": {
+        "Angolan": 2.9,
+        "Cameroonian": 4
+      },
+      "Southern African": {
+        "South African": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 18.2,
+        "Nicaraguan": 18.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 4.3
+      }
+    }
+  }
 }

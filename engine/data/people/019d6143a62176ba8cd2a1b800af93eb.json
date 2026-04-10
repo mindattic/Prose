@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62176ba8cd2a1b800af93eb",
   "type": "character",
-  "name": "Rowan Baiseitov",
+  "name": "Rowan Boateng",
   "aliases": [
     "Shard",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Hadiya Chen-Adeyemi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Hadiya Chen-Adeyemi plans to keep it that way. He works as a ghost out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHadiya Chen-Adeyemi has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Rowan Boateng is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Rowan Boateng plans to keep it that way. He works as a ghost out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRowan Boateng has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -262,7 +262,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,32 +277,14 @@
   "related_entities": [
     "The Shelf",
     "Kel Adeyemi-Strand",
+    "Chicago",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Chicago",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Glenville Sound",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ilhan Sandstrom-Badu",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Lumen",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sagyn Ibarra-Prempeh",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (36.6%) with significant Central Asian (24.9%) and Middle Eastern (24.5%) ancestry, with Northern European (14.0%) contribution. This creates a distinctive phenotype: deep brown skin with warm undertones, angular facial structure from Central Asian and Middle Eastern lineage, and the athletic build characteristic of Sub-Saharan African genetics.",
+    "heritage": "Predominantly Sub-Saharan African (53.8%) with significant Northern European (24.7%), South Asian (18.3%), and Southeast Asian (3.2%) ancestry. This creates a striking phenotype: rich deep brown skin with warm golden undertones, angular facial structure with prominent cheekbones from South Asian lineage blended with the broad, powerful features of Sub-Saharan African genetics. Northern European ancestry contributes lighter undertones and a slightly sharper nose bridge, while Southeast Asian ancestry adds subtle refinement to the overall bone structure. The result is a rare confluence of robust strength and distinctive angular elegance.",
     "height_cm": 178,
     "weight_kg": 92,
     "build": "Stocky and densely muscled, broad-shouldered with a thick core. Heavy in the way that suggests practical strength rather than aesthetic bulk — the build of someone who trains for impact and durability, not display.",
@@ -310,8 +292,8 @@
     "hair_style": "Close-cropped, functional. Kept short enough that it requires minimal maintenance and won't obstruct vision or provide a target to grab.",
     "hair_length": "Short",
     "eye_color": "Deep brown, alert and analytical",
-    "skin_tone": "Deep warm brown with subtle golden undertones, reflecting the blend of Sub-Saharan, Central Asian, and Middle Eastern ancestry",
-    "complexion": "Weathered and angular — prominent cheekbones and squared jaw characteristic of Central Asian and Middle Eastern heritage, with the natural facial structure of Sub-Saharan ancestry. A scar tissue webbing the right side of his chin, white against darker skin. Skin is clear but shows the wear of someone who trains hard and heals fast. No vanity grooming — pragmatic maintenance only.",
+    "skin_tone": "Rich deep warm brown with golden undertones, the dominant Sub-Saharan African ancestry darkened and warmed by natural melanin concentration, brightened subtly by Northern European and South Asian admixture",
+    "complexion": "Weathered and angular — prominent cheekbones and squared jaw characteristic of South Asian and Sub-Saharan African heritage merged, with broad strong features from African ancestry refined by the higher cheekbones of South Asian genetics. A scar tissue webbing the right side of his chin, white against darker skin. Skin is clear but shows the wear of someone who trains hard and heals fast. No vanity grooming — pragmatic maintenance only.",
     "distinguishing_marks": [
       "Jagged scar tissue across the right mandible, roughly 8cm in length, white against darker skin",
       "Thin horizontal scar above the left eyebrow, approximately 3cm",
@@ -322,15 +304,67 @@
     "posture_movement": "Economical and controlled. He moves with the precision of someone who has internalized that every motion is a statement. No wasted gestures. When still, he is absolutely still — no fidgeting, no micro-expressions. When moving, each step is deliberate and weighted. His hands rest in neutral positions, ready but not threatening. He doesn't flinch.",
     "clothing_style": "Tier 3-4 utilitarian. Black tactical pants with reinforced knee and thigh panels, worn synthetic leather bomber jacket over a fitted grey compression shirt that allows augmentation visibility without advertising it. Steel-toed boots, scuffed but maintained. No logos, no flash — all function. A single worn silver chain around his neck, visible augmentation access ports deliberately left unhidden. The overall impression is someone who dresses for work, not for appearance."
   },
-  "image_prompt": "Rowan Baiseitov, 178cm tall man with deep warm brown skin and angular features, short black hair with silver threading at temples. Stocky muscular build, scarred right mandible and eyebrow, knuckle scarring visible. Wearing black tactical pants, worn synthetic leather bomber jacket, grey compression shirt revealing faint bioluminescent crimson-violet shimmer at wrists and neck pulse points indicating synthetic blood augmentation. Steel-toed boots. Economical posture, absolutely still and controlled. Cyberpunk 2226, Great Lakes Metropolitan Zone, dimly lit industrial setting with neon accents highlighting the faint glow of his visible augmentations. Serious, analytical expression. Hard lighting emphasizing scars and augmentation tech. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Boateng, 2226 neo-noir mercenary, 178cm tall with dense muscular stocky build. Rich deep warm brown skin with golden undertones, angular cheekbones and squared jaw blending Sub-Saharan African and South Asian features. Black hair close-cropped with silver at temples. Deep brown analytical eyes. White scar tissue webbing across right mandible, thin scar above left eyebrow, knuckle scarring across both hands. Faint crimson-violet bioluminescent shimmer visible beneath skin at pulse points (wrists, neck, temples). Wears black tactical pants with reinforced panels, worn synthetic leather bomber jacket, grey compression shirt, scuffed steel-toed boots. Silver chain around neck with visible augmentation access ports. Economical precise posture, absolutely still or deliberately weighted movement. Dark low-light urban setting, neon glow illuminating his augmentation bioluminescence. Cinematic neo-noir urban aesthetic, gritty and functional, no vanity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.6,
-    "Central Asian": 24.9,
-    "Middle Eastern": 24.5,
-    "Northern European": 14.0
+    "Sub-Saharan African": 53.8,
+    "Northern European": 24.7,
+    "South Asian": 18.3,
+    "Southeast Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 17.6
+      },
+      "Central African": {
+        "Cameroonian": 20.5,
+        "Congolese": 4
+      },
+      "West African": {
+        "Ghanaian": 5.7,
+        "Senegalese": 6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 3.1,
+        "Norwegian": 7.4
+      },
+      "British Isles": {
+        "Irish": 7.9,
+        "English": 2.2
+      },
+      "Germanic": {
+        "German": 3.7,
+        "Austrian": 0.4
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 6.5
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 1.4
+      },
+      "Indonesian": {
+        "Sumatran": 1,
+        "Javanese": 0.4
+      },
+      "Thai": {
+        "Thai": 0.4
+      }
+    }
+  }
 }

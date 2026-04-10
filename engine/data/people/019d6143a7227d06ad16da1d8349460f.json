@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7227d06ad16da1d8349460f",
   "type": "character",
-  "name": "Sage Khorasani",
+  "name": "Ingrid Lindström",
   "aliases": [
     "Yanni",
     "Y.T."
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Pilsen Veil, working out of a rented rehearsal bay in a building called the Meridian Hive, near Ashland and Division",
-  "description": "Yannick is medium height and all kinetic energy, the kind of person who cannot sit without some part of him moving — tapping, shifting, bouncing a knee. His father's Malian bone structure and his mother's Czech coloring have given him an angular face with warm undertones, a combination he's leaned into with bioluminescent freckles across his cheeks and nose that glow soft amber under low light. He keeps his hair short except for a single long braid at his nape he wraps in conductive thread that connects to a personal haptic rig — his main instrument. His hands are covered in small calluses from years of dance and from the contact rigs he builds himself from salvaged holo-projector parts.\n\nHe makes work that lives at the intersection of choreography and holographic installation: his pieces require live performers moving through interactive holo-environments that respond to their bodies, creating something that is neither dance nor sculpture nor light show but something without a clean category name. He has a Tier 3 sponsorship from Axiom's cultural subdivision that he accepted last year with considerable public hand-wringing and that he still hasn't entirely made peace with. He is the most anxious person in any room who appears to be the least anxious person in that room.",
+  "description": "Ingrid Lindström is medium height and all kinetic energy, the kind of person who cannot sit without some part of him moving — tapping, shifting, bouncing a knee. His father's Malian bone structure and his mother's Czech coloring have given him an angular face with warm undertones, a combination he's leaned into with bioluminescent freckles across his cheeks and nose that glow soft amber under low light. He keeps his hair short except for a single long braid at his nape he wraps in conductive thread that connects to a personal haptic rig — his main instrument. His hands are covered in small calluses from years of dance and from the contact rigs he builds himself from salvaged holo-projector parts.\n\nHe makes work that lives at the intersection of choreography and holographic installation: his pieces require live performers moving through interactive holo-environments that respond to their bodies, creating something that is neither dance nor sculpture nor light show but something without a clean category name. He has a Tier 3 sponsorship from Axiom's cultural subdivision that he accepted last year with considerable public hand-wringing and that he still hasn't entirely made peace with. He is the most anxious person in any room who appears to be the least anxious person in that room.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -175,7 +175,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,62 +233,76 @@
     "Tessera Industries Holographic Distraction Projector HDP-5",
     "Threshold",
     "Chimera-Null",
+    "Arcturus KS-7 'Nursery'",
+    "Neural Palate",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
     "Arcturus CK-5 'Bloodhound'",
-    "Nightlight",
-    "Abeke Soriano-Dlamini",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
-    "Free Assembly",
-    "Ilhan Sandstrom-Badu",
-    "Isadora Vukić-Nambiar",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech AromaVeil Olfactory Filter",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "TESSERA PG-2 'Signature'",
-    "The Threshold",
-    "Vuk Jorgensen-Toure",
-    "Zurab Ivanov-Appiah"
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian dominant (40.4%, primary phenotype influence) with significant Middle Eastern (21.8%), Hispanic/Latin American (14.1%), and Eastern European (12.3%) ancestry, plus minor Northern European and Sub-Saharan African contributions. Complex multiethnic blend creating distinctive intermediate features.",
+    "heritage": "Complex multiethnic blend with Northern European dominance (68.5%) creating the foundational bone structure and coloring, significantly warmed and enriched by North African (13.2%), Southeast Asian (9.3%), and Hispanic/Latin American (9.0%) ancestry. The result is a distinctive intermediate phenotype: Northern European skeletal geometry softened by warmer skin depth, fuller facial contours, and the subtle eye shape influence of Southeast Asian heritage. A luminous pale-bronze complexion that shifts warmth throughout the day.",
     "height_cm": 175,
     "weight_kg": 68,
     "build": "Lean and coiled, with the compressed musculature of a trained dancer—economical rather than bulky. Shoulders slightly forward from years hunched over haptic rig construction. Zero excess body fat; visible definition in forearms and calves.",
     "hair_color": "Dark brown with warm undertones, natural",
     "hair_style": "Cropped close to scalp on sides and crown; single thick braid at nape wrapped in conductive copper thread that catches light",
     "hair_length": "Short (body), Medium (single braid)",
-    "eye_color": "Deep brown, warm and alert",
-    "skin_tone": "Medium warm with olive undertones—East Asian structure blended with Middle Eastern and Mediterranean warmth, creating a rich golden-bronze cast that deepens in sunlight. Clear, luminous quality from youth and careful maintenance.",
-    "complexion": "High cheekbones with slight wideness characteristic of East Asian ancestry, softened by Mediterranean fullness in the lower face. Sharp, defined jawline tempered by expressive warmth. Skin is clear but weathered from studio work under holo-projectors. Bioluminescent freckles scattered across cheeks, nose bridge, and upper neck glow soft amber in low-light conditions—deliberate aesthetic choice, maintained via subcutaneous biomod. Lips full and expressive; constant micro-expressions of focus or anticipation. Eye shape shows East Asian influence with warm brown irises.",
+    "eye_color": "Deep warm brown, alert and expressive",
+    "skin_tone": "Pale-bronze luminous complexion with golden undertones—a Northern European fairness enriched by North African warmth and Southeast Asian depth. The overall effect is luminous rather than cool, gaining visible warmth in natural sunlight. Clear and well-maintained despite studio work conditions.",
+    "complexion": "Prominent but refined cheekbones with Northern European architecture, softened by the warmer contours and rounded cheek fullness from North African and Southeast Asian ancestry. Sharp, defined jawline balanced by expressive fullness in the lower face. Skin is clear but shows subtle weathering from holo-projector studio work. Bioluminescent freckles scattered across cheeks, nose bridge, and upper neck glow soft amber in low-light conditions—a deliberate aesthetic biomod that pulses subtly with heartrate during performances. Lips full and expressive; constant micro-expressions of focus or anticipation. Eye shape reflects the blend of Northern European and Southeast Asian heritage, set deep with warm brown irises.",
     "distinguishing_marks": [
-      "Bioluminescent freckle pattern across cheeks and nose bridge (amber glow, programmed to pulse subtly with his heartrate during performances)",
+      "Bioluminescent freckle pattern across cheeks and nose bridge (amber glow, programmed to pulse subtly with heartrate during performances)",
       "Fine white scar tissue along both inner forearms from early haptic rig burns (salvaged equipment, learning curve)",
       "Callused patches on fingertips and heel of right palm from years of contact rig manipulation and assembly",
       "Small tattoo on inside left wrist: schematic diagram of a holographic projection vector in black ink"
     ],
     "visible_augmentations": "Conductive thread wrapping in signature braid (copper-colored, visibly threaded); bioluminescent freckles on face and neck (glow amber under dim light); subtle raised geometric patterns along upper right forearm where sub-dermal muscle-monitoring sensors sit just below skin surface (only visible under certain lighting or if shirt is rolled). Fingernails show faint iridescent sheen from repeated contact with holo-projector components.",
-    "posture_movement": "Cannot hold stillness—always some micro-movement: fingers tapping rhythms, weight shifting between feet, shoulders making small rolls. When focused, this becomes meditative rather than anxious, though his resting state appears kinetically restless. Walks with a dancer's awareness of floor and space. Tends to gesture expansively when explaining technical concepts, as if choreographing invisible structures in air. Makes frequent eye contact, sometimes intensely so.",
-    "clothing_style": "Tier 3 working artist aesthetic: fitted joggers or dance pants in muted charcoal or black (practical, allow full range of motion); sleeveless or cap-sleeve technical shirts in breathable synthetic that show off forearm work. Wears a worn canvas overshirt (oversized, probably belonged to someone else) with pockets for tools and salvaged circuit components. Minimalist sneakers, expensive and customized (good arch support, replaceable holo-interface soles). No jewelry except the conductive thread in his braid. Occasionally wears haptic feedback gloves or arm sleeves if doing technical work. Overall aesthetic: functional, slightly threadbare from heavy use, but intentional—not poor, but invested entirely in equipment and talent rather than appearance."
+    "posture_movement": "Cannot hold stillness—always some micro-movement: fingers tapping rhythms, weight shifting between feet, shoulders making small rolls. When focused, this becomes meditative rather than anxious, though resting state appears kinetically restless. Walks with a dancer's awareness of floor and space. Tends to gesture expansively when explaining technical concepts, as if choreographing invisible structures in air. Makes frequent eye contact, sometimes intensely so.",
+    "clothing_style": "Tier 3 working artist aesthetic: fitted joggers or dance pants in muted charcoal or black (practical, allow full range of motion); sleeveless or cap-sleeve technical shirts in breathable synthetic that show off forearm work. Wears a worn canvas overshirt (oversized, probably belonged to someone else) with pockets for tools and salvaged circuit components. Minimalist sneakers, expensive and customized (good arch support, replaceable holo-interface soles). No jewelry except the conductive thread in braid. Occasionally wears haptic feedback gloves or arm sleeves if doing technical work. Overall aesthetic: functional, slightly threadbare from heavy use, but intentional—not poor, but invested entirely in equipment and talent rather than appearance."
   },
-  "image_prompt": "Sage Khorasani, cyberpunk 2226, multiethnic male with East Asian-Middle Eastern-Latin American-Eastern European heritage. High cheekbones, warm olive-bronze skin, deep brown eyes with intense focus. Dark hair cropped close with single thick nape braid wrapped in copper conductive thread. Lean dancer's build, defined forearms. Bioluminescent amber freckles glowing across cheeks and nose bridge in studio lighting. Fitted black dance pants, sleeveless technical shirt revealing subcutaneous geometric sensor patterns on upper right forearm. Worn oversized canvas overshirt with tool pockets. Minimalist customized sneakers. Hands mid-gesture as if conducting invisible holographic structures. Studio workshop environment with holo-projector glow, neon ambient lighting casting amber and cool blue tones. Kinetic energy, restless micro-movements, intense eye contact with camera. Film grain texture, cyberpunk color grading. --ar 2:3 --v 6",
+  "image_prompt": "Ingrid Lindström, 175cm tall, lean dancer's build with precise musculature, pale-bronze luminous skin with warm golden undertones blending Northern European, North African, Southeast Asian, and Hispanic heritage. Deep warm brown eyes, expressive and alert. Dark brown hair cropped close on sides with a single thick braid at nape wrapped in copper conductive thread. Distinctive bioluminescent amber freckles glow softly across cheekbones, nose bridge, and neck—pulsing gently. Fine white scars visible on inner forearms, callused fingertips showing years of haptic work. Small schematic tattoo on inside left wrist. Wearing worn oversized canvas overshirt over a sleeveless synthetic technical shirt showing subtle sub-dermal sensor patterns on upper right forearm. Fitted charcoal dance pants and customized minimalist sneakers. Kinetically restless posture with micro-movements, hands gesturing through air as if choreographing invisible holographic structures. Studio lighting casting warm amber glow that enhances skin luminosity. GLMZ, GLMZ aesthetic, focused and intense presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 40.4,
-    "Middle Eastern": 21.8,
-    "Hispanic/Latin American": 14.1,
-    "Eastern European": 12.3,
-    "Northern European": 6.6,
-    "Sub-Saharan African": 4.8
+    "Northern European": 68.5,
+    "North African": 13.2,
+    "Southeast Asian": 9.3,
+    "Hispanic/Latin American": 9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 21.3,
+        "Scottish": 8
+      },
+      "Germanic": {
+        "German": 11.4
+      },
+      "Scandinavian": {
+        "Norwegian": 27.8
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 13.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.6
+      },
+      "Indonesian": {
+        "Sundanese": 1.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9
+      }
+    }
+  }
 }

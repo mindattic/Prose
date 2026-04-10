@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d777f09bece8d45a170ecc",
   "type": "character",
-  "name": "Tavita Tuivailala",
+  "name": "Imani Nwosu",
   "aliases": [
     "Dynamo",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Kedzie and Division",
-  "description": "Cem Padilla-Nti is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Cem Padilla-Nti plans to keep it that way. She works as a infiltrator out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCem Padilla-Nti is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Imani Nwosu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Imani Nwosu plans to keep it that way. She works as a infiltrator out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nImani Nwosu is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.38,
@@ -265,7 +265,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,25 +279,14 @@
   "registered_firearms": [],
   "related_entities": [
     "Ironveil Canopy",
-    "GLMZ",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Chibundo Reinholt-Sarpong",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Ngaire Kuznetsov-Adu",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander dominant with Southeast Asian, East Asian, and minor Hispanic/Latin American ancestry — a striking blend of Polynesian and pan-Asian genetics. Warm medium-deep brown skin with golden and olive undertones, the result of Pacific Islander base genetics enriched by Southeast Asian influence.",
+    "heritage": "Complex global ancestry: 38.6% Sub-Saharan African, 27.3% South Asian, 22.7% Eastern European, 8.2% Hispanic/Latin American, 3.2% East Asian. The combination creates a striking phenotype where African ancestry provides foundational structure and richness, South Asian genetics add warmth and softer contours, Eastern European heritage introduces subtle angularity and cool undertones, with minor Hispanic/Latin American and East Asian elements adding nuanced depth to facial geometry.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature — dancer's grace married to fighter's tension. No excess, everything functional. Shoulders broad but not bulky, core visibly tight beneath fitted clothing.",
@@ -305,8 +294,8 @@
     "hair_style": "Pulled back in a tight, low bun — practical, secure, difficult to grab. No loose ends, literally or professionally",
     "hair_length": "Medium",
     "eye_color": "Left eye: warm brown, organic. Right eye: cybernetic with gunmetal iris and faint LED circuitry visible around the pupil, capable of macro zoom and recording",
-    "skin_tone": "Warm medium-deep brown — golden undertones from Pacific Islander ancestry, enriched by Southeast and East Asian genetics, creating luminous depth",
-    "complexion": "Strong cheekbones with Polynesian fullness balanced by Southeast Asian angularity, defined jawline, features that read as 'not someone to underestimate.' Skin is clear and well-maintained but bears the tight, hydration-depleted look of someone who runs on coffee and adrenaline. Minimal cosmetics — a small amount of eyeliner around the cybernetic eye to blend the seams",
+    "skin_tone": "Deep warm brown with golden richness from Sub-Saharan African ancestry, brightened by South Asian warmth, cooled subtly by Eastern European heritage — creates striking luminous depth with complex undertones",
+    "complexion": "High, prominent cheekbones with strength and definition from African ancestry balanced by softer fullness from South Asian genetics, strong defined jawline with subtle angularity from Eastern European heritage, with minor East Asian influence visible in eye structure. Features that read as 'not someone to underestimate.' Skin is clear and well-maintained but bears the tight, hydration-depleted look of someone who runs on coffee and adrenaline. Minimal cosmetics — a small amount of eyeliner around the cybernetic eye to blend the seams.",
     "distinguishing_marks": [
       "Thin scar along the left temple, barely visible but present under sharp light — old injury, cleanly healed",
       "Burn scar on the inside of her right forearm, roughly 3cm long, shaped like a power coupling — intentional documentation of a past identity's erasure",
@@ -316,15 +305,55 @@
     "posture_movement": "Moves with predatory efficiency — no wasted motion, every step deliberate. Stands with weight balanced for instant movement in any direction. Eyes are always tracking, always assessing. When sitting, she occupies minimal space but maintains constant awareness of exits. Speaks quietly; people lean in to hear her.",
     "clothing_style": "Tier 3 functional — form-fitting matte black synthetic bodysuit as base layer, sealed at wrists and ankles. Worn beneath a fitted charcoal grey tactical coat with secure pockets and smart-fabric seams that can bypass basic scans. Boots are military-grade, black, laced tight, soles reinforced for silent movement. No jewelry except a worn steel watch with encrypted timekeeping. Everything is matte-finished to reduce reflectivity. No logos, no branded affiliation. Clothing is selected for function: silent, durable, forgettable."
   },
-  "image_prompt": "Tavita Tuivailala, Pacific Islander-East Asian blend, warm medium-deep brown skin with golden undertones, athletic lean frame 172cm, dark charcoal-dyed hair in tight low bun, left organic warm brown eye and right gunmetal cybernetic eye with LED circuitry, sharp cheekbones with Polynesian fullness, thin temple scar, burn scar on right forearm, geometric cipher tattoo on inner left wrist, silvery neural dampener mesh faintly visible at base of skull, predatory posture balanced for instant movement, form-fitting matte black synthetic bodysuit under fitted charcoal tactical coat, military-grade black boots, worn steel encrypted watch, no jewelry, no logos, minimal space occupancy with constant exit awareness, cyberpunk 2226 GLMZ operative, cool neon-lit interior, shadows and sharp lighting catching the mesh augmentations, professional mercenary aesthetic, tension in every line, --ar 2:3 --v 6",
+  "image_prompt": "Imani Nwosu, GLMZ, 172cm athletic lean frame with dancer's grace. Deep warm brown skin with golden undertones and subtle cool notes — complex global heritage visible in striking high cheekbones, soft South Asian fullness, and angular Eastern European definition. Left eye warm organic brown, right eye matte gunmetal cybernetic with LED circuitry and geometric etching. Charcoal hair pulled tight in low bun with iridescent underlay. Faint silvery neural dampener mesh visible at back of skull. Thin temple scar, cipher tattoo on left wrist, power-coupling burn scar on right forearm. Wearing form-fitting matte black synthetic bodysuit sealed at wrists and ankles, charcoal grey tactical coat with smart-fabric seams, military-grade black boots laced tight. Worn steel watch with encrypted face. Predatory efficient posture, minimal movement, eyes tracking and assessing. No jewelry, no logos, matte-finished everything. Silent, functional, forgettable. Standing in dim neon-lit GLMZ corridor with overhead cold blue light catching the neural mesh and cybernetic eye's circuitry. Sharp focus, moody atmospheric lighting, subtle rain-slick surfaces reflecting fragmentary light. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 58.2,
-    "Southeast Asian": 19.1,
-    "East Asian": 17.9,
-    "Hispanic/Latin American": 4.8
+    "Sub-Saharan African": 38.6,
+    "South Asian": 27.3,
+    "Eastern European": 22.7,
+    "Hispanic/Latin American": 8.2,
+    "East Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 38.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 19.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 3.5,
+        "Tamil Sri Lankan": 3.4
+      },
+      "Indian": {
+        "Marathi": 0.6,
+        "Bengali": 0.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 22.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.9
+      },
+      "Caribbean": {
+        "Haitian": 0.7,
+        "Cuban": 4.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.2
+      }
+    }
+  }
 }

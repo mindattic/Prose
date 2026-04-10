@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70672b8893f1cdd3dcf8180",
   "type": "character",
-  "name": "Slate Karunaratne-Thorvaldsdóttir",
+  "name": "Slate Okonkwo-Traoré",
   "aliases": [
     "Tsets",
     "The Clipper"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Bronzeline, operates Phantom Chair barbershop out of a converted shipping container unit, near Damen and Armitage",
-  "description": "Tsetseg is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Tsetseg has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
+  "description": "Slate Okonkwo-Traoré is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Slate Okonkwo-Traoré has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -171,7 +171,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Bronzeline",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -190,35 +190,17 @@
     "Grandmother",
     "Bronzeline",
     "TESSERA PG-2 'Signature'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
     "Leather",
     "Copper",
-    "The Pure Hand",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Slate",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Pale Mile",
-    "Alper Inoue-Aidoo",
-    "Arcturus PX-1 'Phantom'",
-    "Bintou Halvorsen-Osei",
-    "CHROMEWORKS Phantom Stealth Ocular Recorder",
-    "Cinderblock Ai",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Irontide Tidal Energy",
-    "Lazarus EC-4 'Companion'",
-    "Orkhan Sefa-Błaszczyk",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "The Compact",
-    "The Heritage Vault",
-    "The Oxidian Market",
-    "VitaCore DermaTone Adaptive Skin Pigment System",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pure Hand",
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian dominant (43%) with significant Southeast Asian (18.4%), Hispanic/Latin American (16.5%), East Asian (11.9%), and Sub-Saharan African (10.2%) ancestry. Complex phenotype reflecting the Ubiquitous Diaspora—warm medium-brown skin with golden undertones, subtle eye shape variation suggesting layered ancestry, facial structure reflecting South Asian and Southeast Asian features with lighter complexion notes from Hispanic heritage.",
+    "heritage": "Predominantly Sub-Saharan African (82.3%) with meaningful East Asian (7.2%), Southeast Asian (6.1%), and Hispanic/Latin American (4.4%) ancestry. Complex phenotype reflecting the Ubiquitous Diaspora—deep warm brown skin with rich golden and reddish undertones, subtle eye shape variation suggesting East and Southeast Asian ancestry layered over strong African heritage, facial structure reflecting Sub-Saharan African features with delicate influences from Asian and Latin ancestry.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and wiry, with the compact muscularity of someone who has spent twelve years holding steady tension in their hands and shoulders. No excess weight; every line efficient.",
@@ -226,8 +208,8 @@
     "hair_style": "Textured, shoulder-length with asymmetrical undercut on left side; deliberately maintained to show the color gradient",
     "hair_length": "Medium",
     "eye_color": "Dark brown, wide-set, alert and expressive",
-    "skin_tone": "Warm medium-brown with golden undertones, reflecting South Asian and Southeast Asian base ancestry with subtle warmth from Hispanic heritage. Clear with the slight sheen of someone who maintains their appearance professionally.",
-    "complexion": "Facial structure reflecting South Asian prominence with subtle Southeast Asian influence—slightly rounded cheekbones with definition, wide-set eyes with gentle epicanthal variation, full mouth that naturally rests in a half-suppressed grin. No facial hair. Skin well-maintained but bearing minor occupational marks—small nicks and healed cuts on knuckles from four years of barbering and amateur tattooing. Expression typically carries suppressed amusement or mild irritation.",
+    "skin_tone": "Deep warm brown with rich golden and reddish undertones, reflecting strong Sub-Saharan African base ancestry with subtle warmth from Southeast Asian and Hispanic heritage. Clear with the slight sheen of someone who maintains their appearance professionally.",
+    "complexion": "Facial structure reflecting Sub-Saharan African prominence with subtle Southeast Asian and East Asian influence—strong cheekbones with graceful definition, wide-set eyes with gentle epicanthal variation, full mouth that naturally rests in a half-suppressed grin. No facial hair. Skin well-maintained but bearing minor occupational marks—small nicks and healed cuts on knuckles from four years of barbering and amateur tattooing. Expression typically carries suppressed amusement or mild irritation.",
     "distinguishing_marks": [
       "Bioluminescent subcutaneous tracery running along both forearms in pale blue branching lines, reactive to emotional state (pulses visibly when excited or anxious)",
       "Faint linear scarring across the dorsal surfaces of both hands from reinforced tendon threading installation (civilian medical grade, now largely faded)",
@@ -237,16 +219,59 @@
     "posture_movement": "Quick and economical in motion, with the coiled readiness of someone used to precise, delicate work. Tends to fidget with their hands—rotating wrists, flexing fingers—a nervous habit. When focused on barbering or tattooing, movement becomes unnaturally still and precise. Makes direct eye contact, often too much of it. Leans forward when listening, creating an impression of intensity even in casual conversation.",
     "clothing_style": "Tier 3 practical with intentional style. Typically wears well-fitted black or charcoal work pants (often Carhartt or similar utility brand) with deep pockets. Tops are a mix of vintage band tees, fitted long-sleeve shirts (worn to cover the forearm tracery in professional contexts), and a custom sleeveless apron with hand-embroidered Bronzeline landmarks over the Phantom Chair logo. Heavy-soled work boots, often scuffed. A battered leather jacket (Tier 3 vintage, well-loved) worn over everything in winter. Minimal jewelry except for a hand-soldered ring on the left index finger made from salvaged wire and a tiny opalescent bead—their own work. Practical, worn, and carefully maintained; nothing new or status-signaling, but nothing neglected either."
   },
-  "image_prompt": "Slate Karunaratne-Thorvaldsdóttir, cyberpunk 2226, a 163cm tall figure with warm medium-brown skin and golden undertones reflecting South Asian, Southeast Asian, and Hispanic heritage. Shoulder-length textured hair in deep ox-blood red fading to copper, asymmetrical undercut on left side. Dark brown wide-set eyes with alert expression. Slight, wiry build with visible musculature. Wearing well-fitted black utility pants, vintage band tee partially covered by fitted long-sleeve shirt, custom embroidered sleeveless apron with Phantom Chair logo, scuffed heavy-soled boots, worn leather jacket. Left forearm rolled up showing pale blue bioluminescent branching tracery reactive to emotion. Faint linear scarring on hands from tendon threading, small burn scar on right ring finger. Hand-soldered wire ring with opalescent bead on left index finger. Quick, coiled posture with intensity. Tinkering hands, direct gaze, half-suppressed grin. Neon-lit barbershop interior, warm overhead lights casting shadows on face, blue bioluminescence pulsing softly. Cyberpunk aesthetic, lived-in gear, professional precision mixed with street authenticity. --ar 2:3 --v 6",
+  "image_prompt": "Slate Okonkwo-Traoré, compact wiry 163cm figure with deep warm brown skin glowing with golden and reddish undertones, strong Sub-Saharan African cheekbones with delicate East Asian epicanthal variation, wide-set dark brown eyes bright with suppressed amusement. Shoulder-length textured hair in ox-blood red fading to copper, asymmetrical undercut on left. Sleeveless apron with hand-embroidered Bronzeline landmarks over dark long-sleeve shirt, heavy work boots scuffed from use. Pale blue bioluminescent branching tracery visible on forearms, pulsing gently. Hand-soldered wire ring on left index finger catching light. Coiled posture leaning forward with intense focus, fingers flexing in habitual fidget. Phantom Chair barbershop interior, warm amber work lighting casting shadows across face, neon Bronzeline glow reflected on dark surfaces. GLMZ, gritty Tier 3 aesthetic, professional but worn, meticulous care amidst industrial surroundings. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 43.0,
-    "Southeast Asian": 18.4,
-    "Hispanic/Latin American": 16.5,
-    "East Asian": 11.9,
-    "Sub-Saharan African": 10.2
+    "Sub-Saharan African": 82.3,
+    "East Asian": 7.2,
+    "Southeast Asian": 6.1,
+    "Hispanic/Latin American": 4.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 27.4,
+        "Zambian": 7.9
+      },
+      "East African": {
+        "Somali": 15.6,
+        "Ethiopian": 3.2
+      },
+      "West African": {
+        "Sierra Leonean": 2.7,
+        "Ivorian": 25.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 2.5
+      },
+      "Korean": {
+        "Korean": 4.7
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 2.3
+      },
+      "Indonesian": {
+        "Javanese": 2
+      },
+      "Cambodian": {
+        "Khmer": 1.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 1.7,
+        "Puerto Rican": 1.9
+      },
+      "Mexican": {
+        "Mexican": 0.8
+      }
+    }
+  }
 }

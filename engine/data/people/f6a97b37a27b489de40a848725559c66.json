@@ -7,7 +7,7 @@
     "Panopticon"
   ],
   "role": "Private Investigator",
-  "description": "Enver Svensson-Asante has invested approximately Φ1.2 million in investigative augmentation, and he is the augmentation. Every chrome component in his body was chosen specifically for investigative function — not combat, not vanity, not general enhancement, but the specific task of observing, recording, and analyzing. He is a walking surveillance platform, and he has embraced this identity so completely that it's difficult to say where the investigator ends and the cyberware begins.\n\nHis senses operate on a level that unaugmented humans cannot comprehend. He sees across multiple spectra simultaneously, hears conversations happening behind closed doors, smells chemical traces that have been dissipating for hours, and remembers everything — literally everything — he has ever perceived since the eidetic implant was installed eleven years ago. This makes him extraordinarily effective at gathering evidence and catastrophically bad at normal human interaction, because he perceives lies, stress responses, and physiological deception in real-time and has no social filter preventing him from mentioning it.\n\nThe cost of all this chrome is significant. He requires four hours of charging daily for his cybernetic systems. He suffers from sensory overload episodes that leave him incapacitated. He has been rejected from every investigative firm he's applied to because his augmentation level puts him in an insurance category normally reserved for military hardware. So he works alone, takes cases that require his specific capabilities, and spends his downtime in a sensory deprivation tank that is the only place in GLMZ where his augmented senses finally shut up.",
+  "description": "Zephyr Valenzuela has invested approximately Φ1.2 million in investigative augmentation, and he is the augmentation. Every chrome component in his body was chosen specifically for investigative function — not combat, not vanity, not general enhancement, but the specific task of observing, recording, and analyzing. He is a walking surveillance platform, and he has embraced this identity so completely that it's difficult to say where the investigator ends and the cyberware begins.\n\nHis senses operate on a level that unaugmented humans cannot comprehend. He sees across multiple spectra simultaneously, hears conversations happening behind closed doors, smells chemical traces that have been dissipating for hours, and remembers everything — literally everything — he has ever perceived since the eidetic implant was installed eleven years ago. This makes him extraordinarily effective at gathering evidence and catastrophically bad at normal human interaction, because he perceives lies, stress responses, and physiological deception in real-time and has no social filter preventing him from mentioning it.\n\nThe cost of all this chrome is significant. He requires four hours of charging daily for his cybernetic systems. He suffers from sensory overload episodes that leave him incapacitated. He has been rejected from every investigative firm he's applied to because his augmentation level puts him in an insurance category normally reserved for military hardware. So he works alone, takes cases that require his specific capabilities, and spends his downtime in a sensory deprivation tank that is the only place in GLMZ where his augmented senses finally shut up.",
   "affiliation": "Independent — too augmented for most firms to insure",
   "tier": "Tier 3",
   "location": "A reinforced apartment in Kessler Row, half living space and half charging station for his extensive cyberware, near Kedzie and Division",
@@ -67,32 +67,24 @@
     "Volkov-Saito Precision VS-R8 'Verdict'"
   ],
   "related_entities": [
-    "GLMZ",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "MindBridge SpectraLens Chromatic Expansion Module",
+    "Neural Palate",
     "Slagworks Industrial",
-    "Arcturus ST-4 'Verdict'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Adaptive Platform TAP-5 'Chameleon'",
-    "Tessera Corponation",
-    "The Heritage Vault",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Yannick Tambadou-Reinholt",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: predominantly Hispanic/Latin American (35.2%) with significant Southeast Asian (24.9%) and South Asian (13.6%) ancestry, complemented by Northern European (11.0%), East Asian (8.0%), and Sub-Saharan African (7.3%) genetic contributions. Features reflect this complex admixture rather than any single regional phenotype.",
+    "heritage": "Pan-diaspora synthesis: Hispanic/Latin American (39.6%), Sub-Saharan African (34.6%), South Asian (16.7%), and Pacific Islander (9.1%) genetic foundation. Features reflect this complex admixture — warm medium-brown skin with golden undertones from Latin American and South Asian ancestry, broad cheekbones with Sub-Saharan African and Pacific Islander prominence, angular jawline with South Asian character, nose bridge with South Asian definition. A truly borderless phenotype, distinctive precisely because no single regional ancestry dominates.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost ascetic — muscle mass reduced to functional minimum because chrome components handle structural load. His frame is a chassis more than a body.",
     "hair_color": "Dark brown with premature silver streaking at temples",
     "hair_style": "Cropped short and utilitarian, never styled, maintained only for hygiene",
     "hair_length": "Short",
-    "eye_color": "Left eye: standard brown. Right eye: luminous silver with visible microcircuit latticing beneath synthetic cornea, faint amber glow during active sensory mode",
-    "skin_tone": "Warm medium brown with golden-olive undertones — a blended diaspora tone reflecting Latin American, Southeast Asian, and South Asian ancestry with cool sensory-apparatus-induced pallor underneath. Stress and chronic overstimulation have faded and stressed the complexion.",
-    "complexion": "Gaunt, exhausted. Dark circles under eyes from chronic sensory overstimulation. Skin dry and sometimes marked by charging port irritation. Perpetual expression of someone listening to sounds no one else can hear. Facial structure shows blended heritage — slightly broader cheekbones with some Southeast Asian features, angular jawline reflecting multiple ancestry lines, a nose bridge suggesting South Asian genetic contribution.",
+    "eye_color": "Left eye: standard warm brown. Right eye: luminous silver with visible microcircuit latticing beneath synthetic cornea, faint amber glow during active sensory mode",
+    "skin_tone": "Warm medium-brown with golden undertones — a blended diaspora tone reflecting the confluence of Latin American, Sub-Saharan African, South Asian, and Pacific Islander ancestry. Cool sensory-apparatus-induced pallor underneath. Stress and chronic overstimulation have faded and stressed the complexion.",
+    "complexion": "Gaunt, exhausted. Dark circles under eyes from chronic sensory overstimulation. Skin dry and sometimes marked by charging port irritation. Perpetual expression of someone listening to sounds no one else can hear. Facial structure shows blended heritage — broad cheekbones with Sub-Saharan African and Pacific Islander prominence, prominent brow ridge, angular jawline reflecting South Asian and Latin American genetic contribution, nose bridge with defined South Asian character, full lips softened by fatigue.",
     "distinguishing_marks": [
       "Surgical scars along both sides of skull where sensory arrays were implanted, partially hidden by hair but visible when cropped.",
       "A thin keloid line running from right temple to jaw — old combat scar from before the augmentation obsession, a relic of civilian life.",
@@ -103,14 +95,63 @@
     "posture_movement": "Unnaturally still when stationary, as if his body is a platform for his sensory apparatus rather than something that moves. When he does move, it's efficient and precise — no wasted motion. Head often tilted slightly, listening or scanning. Blinks asymmetrically, his right eye operating on different intervals than his left. Makes minimal eye contact because looking at people is literally overwhelming — their body heat, stress pheromones, and micromuscular deception reads assault his augmented perception simultaneously.",
     "clothing_style": "Tier 4 practical — dark, matte-finish synthetics that don't reflect or interfere with his sensory equipment. Oversized jacket with interior shielding to dampen external stimuli. High collar to conceal charging port. All pockets deliberately empty or lined with sensor-dampening material. Worn boots with electrostatic grounding material in soles. Everything chosen for function, nothing for aesthetic. Clothes smell faintly of the sensory deprivation tank chemicals — a stale, mineral scent that clings to him."
   },
-  "image_prompt": "Zephyr Valenzuela, cyberpunk 2226 character, lean angular frame 178cm tall, warm medium brown skin with golden-olive undertones, exhausted gaunt complexion, dark circles under eyes. Cropped dark brown hair with silver temples. Left eye brown, right eye luminous silver with visible circuit latticing and amber glow. Pan-diaspora features reflecting Hispanic/Latin American, Southeast Asian, and South Asian ancestry—broader cheekbones, angular jawline, South Asian nose bridge. Surgical scars visible on skull sides, thin keloid scar running from right temple to jaw. Faint subcutaneous circuitry patterns visible on forearms under light. Charging port visible at high-collared neck. Still, precise posture, asymmetrical blinking. Wearing oversized dark matte synthetics jacket with interior shielding, high collar, worn electrostatic grounding boots. Standing in dimly lit sensory deprivation facility or urban shadowzone, head tilted slightly as if listening. Faint thermal signature around temples. Minimal eye contact, overwhelmed expression. Stale mineral scent suggests recent tank exposure. Cybernetic aesthetic, functional noir, 2200s sensory overload mood, cold neon accent lighting --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Valenzuela, lean 178cm neo-noir figure with warm medium-brown skin and golden undertones reflecting pan-diaspora heritage — broad Sub-Saharan and Pacific Islander cheekbones, South Asian nose bridge, angular jawline. Dark cropped hair with silver temples. Gaunt exhausted face with dark circles, prominent brow ridge, full lips. Left eye warm brown, right eye luminous silver with visible microcircuits and amber glow. Surgical scars along skull temples, keloid line temple to jaw, charging port at base of neck. Faint circuitry patterns visible on forearms. Wearing oversized dark matte synthetics jacket with high collar, worn grounding boots. Unnaturally still posture, slight head tilt as if listening. GLMZ sensory-overloaded operative in dim neon-lit corridor, thermal signature visible around temples, LED indicator at collarbone faintly blinking, atmosphere of perpetual overstimulation and isolation --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 35.2,
-    "Southeast Asian": 24.9,
-    "South Asian": 13.6,
-    "Northern European": 11.0,
-    "East Asian": 8.0,
-    "Sub-Saharan African": 7.3
+    "Hispanic/Latin American": 39.6,
+    "Sub-Saharan African": 34.6,
+    "South Asian": 16.7,
+    "Pacific Islander": 9.1
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 4.1,
+        "Nicaraguan": 2.3
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.3,
+        "Dominican": 1.7
+      },
+      "Mexican": {
+        "Mexican": 28.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 13.8
+      },
+      "Southern African": {
+        "South African": 20.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.2
+      },
+      "Indian": {
+        "Tamil": 0.8,
+        "Bengali": 1.1
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 6.3
+      },
+      "Polynesian": {
+        "Hawaiian": 1.8,
+        "Tongan": 0.7
+      },
+      "Melanesian": {
+        "Fijian": 0.2,
+        "Papua New Guinean": 0.1
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A reinforced apartment in Kessler Row"
+  }
 }

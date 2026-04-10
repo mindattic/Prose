@@ -1,7 +1,7 @@
 {
   "id": "019d6143a735725d8ebc8723498415dc",
   "type": "character",
-  "name": "Haze Mwangi",
+  "name": "Zoya Pathak",
   "aliases": [
     "Zibu",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin — runs collections from a tea house called The Silt Cup on Mucker's Row, near Ashland and Chicago Ave",
-  "description": "Zibusiso is a heavyset woman with deep brown skin mapped by old keloid scars she's never had removed — she calls them her receipts. Her hair is grown long and locked, threaded with copper wire and small data chips she claims hold the records of every debt ever owed to her. Her eyes have been modded with a golden spiral iris pattern, and she wears reading lenses over them when working numbers, which is always. She dresses in layered kente-stripe synthfabric and keeps her hands conspicuously unaugmented — soft, manicured, rings on every finger — because she wants people to notice she doesn't need chrome to hurt them.\n\nZibusiso is meticulous, patient, and genuinely warm in the way that predators sometimes are. She remembers birthdays, asks after sick relatives, and will extend grace periods with apparent generosity before the mood shifts into something cold and absolute. She doesn't threaten — she simply describes consequences in precise, accountant-level detail. People leave her table feeling both comforted and terrified, which is exactly how she likes it.",
+  "description": "Zoya Pathak is a heavyset woman with deep brown skin mapped by old keloid scars she's never had removed — she calls them her receipts. Her hair is grown long and locked, threaded with copper wire and small data chips she claims hold the records of every debt ever owed to her. Her eyes have been modded with a golden spiral iris pattern, and she wears reading lenses over them when working numbers, which is always. She dresses in layered kente-stripe synthfabric and keeps her hands conspicuously unaugmented — soft, manicured, rings on every finger — because she wants people to notice she doesn't need chrome to hurt them.\n\nZoya Pathak is meticulous, patient, and genuinely warm in the way that predators sometimes are. She remembers birthdays, asks after sick relatives, and will extend grace periods with apparent generosity before the mood shifts into something cold and absolute. She doesn't threaten — she simply describes consequences in precise, accountant-level detail. People leave her table feeling both comforted and terrified, which is exactly how she likes it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -199,35 +199,14 @@
     "Gravesend Basin",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Stratum",
+    "Chicago",
     "Copper",
     "The Pure Hand",
-    "Carrion Defense Works Neural Lash NL-3 'Agony'",
-    "Chicago",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Enforcer Cruiser",
-    "Green Bay Community Table",
-    "Liora Mori-Sefa",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "TESSERA TC-3 'Crucible'",
-    "The Basin",
-    "The Coffin Nails",
-    "The Ledger",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Yuki Nwosu-Petrenko"
+    "Carrion Defense Works Neural Lash NL-3 'Agony'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (49.7%) with significant East Asian (24.1%) and Indigenous American (13.4%) ancestry, complemented by Northern European (8.5%) and Middle Eastern (4.3%) genetic contributions. Her phenotype reflects this complex diaspora blend — the warmth and structure of African heritage, the subtle eye shape and cheekbone prominence from East Asian ancestry, and the undertones from her other ancestral lines creating a distinctive and multifaceted appearance.",
+    "heritage": "A striking blend of Middle Eastern (44.5%), South Asian (31.3%), East Asian (12.8%), and Southeast Asian (11.4%) ancestry. Her phenotype harmonizes the angular bone structure and warm coloring of Middle Eastern heritage with the refined eye shape and cheekbone prominence characteristic of South and East Asian ancestry, while Southeast Asian genetics contribute luminous golden undertones. The result is a distinctive, multifaceted appearance that reads as deliberately composed—someone who has accepted and integrated her complex ancestry into her bearing.",
     "height_cm": 168,
     "weight_kg": 92,
     "build": "Heavyset and broad-shouldered, with substantial mass distributed through her torso and hips. Not muscular — soft-bodied in a way that reads as settled power rather than athletic capability. Her frame suggests comfort in stillness, in sitting across tables for hours.",
@@ -235,8 +214,8 @@
     "hair_style": "Long locs, each secured with copper wire wrapping and embedded data chips at varying intervals. Styled to cascade past her shoulders, deliberately showcasing the modifications as if they were jewelry rather than utilitarian.",
     "hair_length": "Long",
     "eye_color": "Deep brown with golden spiral iris pattern (genemod)",
-    "skin_tone": "Deep warm brown with subtle reddish and golden undertones, reflecting the blend of her Sub-Saharan African majority ancestry with East Asian and Middle Eastern warmth layering beneath",
-    "complexion": "Mature face marked by intentional scarring — keloid patterns across her cheeks, forehead, and along her jawline. The keloids are darker and more pronounced against her warm brown skin, creating striking linear patterns. She has allowed these to set and darken rather than pursue cosmetic removal. Subtle eye fold characteristics suggest East Asian ancestry. Cheekbone structure is broad and defined. Skin is well-maintained despite the scars, suggesting regular care. No visible acne or blemishes; her complexion reads as deliberately curated.",
+    "skin_tone": "Warm medium-to-deep brown with golden and honey undertones. The richness comes from her Middle Eastern majority ancestry, deepened and warmed by South Asian genetics, with Southeast Asian contributions adding luminous golden undertones that catch light subtly. The overall effect is sophisticated and burnished.",
+    "complexion": "Mature face marked by intentional scarring—keloid patterns across her cheeks, forehead, and along her jawline. The keloids are darker and more pronounced against her warm brown skin, creating striking linear patterns. She has allowed these to set and darken rather than pursue cosmetic removal. Facial structure reflects her mixed ancestry: subtle eye fold characteristics suggest South and East Asian heritage, while cheekbone structure is broad, defined, and carries the angular prominence of Middle Eastern and South Asian heritage. Skin is well-maintained despite the scars, suggesting regular care. No visible acne or blemishes; her complexion reads as deliberately curated.",
     "distinguishing_marks": [
       "Keloid scarring across both cheeks in parallel lines, roughly 2cm apart, extending from temple to jaw.",
       "Three vertical keloid scars on her forehead between the brows, each approximately 1cm long.",
@@ -247,16 +226,48 @@
     "posture_movement": "Moves with deliberate slowness — economy of gesture. Sits upright at tables, rarely reclines. Her hands are always visible and often in motion: shuffling cards, counting beads, adjusting rings. She holds eye contact longer than comfortable. Her breathing is controlled, almost meditative. When she walks, her weight settles through her heels first, grounding her with each step.",
     "clothing_style": "Layered kente-stripe synthfabric in ochre, deep red, and cream, worn in loosely-fitted robes over fitted undershirts. No corpo logos or trend markers — her aesthetic is deliberately timeless and rooted. She wears brass bangles on both wrists and multiple rings. Her clothes are always clean but deliberately worn-in, suggesting investment in quality over newness. Shoes are practical leather, well-maintained. Tier 3-4 aesthetic: expensive enough to signal stability and control, understated enough to avoid drawing unnecessary attention or signaling corpo affiliation."
   },
-  "image_prompt": "Haze Mwangi, a 168cm heavyset woman with deep warm brown skin and striking intentional keloid scars across her cheeks, forehead, and jawline. Her long black locs are adorned with copper wire wrapping and embedded data chips cascading past her shoulders. She wears layered kente-stripe robes in ochre, deep red, and cream over fitted undershirts, paired with practical leather shoes. Multiple brass bangles and copper rings adorn her wrists and hands. Her hands are deliberately unaugmented except for manicured nails. She sits upright with composed posture, holding direct eye contact. Amber-tinted reading lenses rest nearby. Her face reflects East Asian and Sub-Saharan African heritage with subtle undertones from Indigenous American, Northern European, and Middle Eastern ancestry. Golden spiral genemod iris pattern visible in her deep brown eyes. Cyberpunk 2200s, dimly lit interior space, slow deliberate presence, timeless and rooted aesthetic, no corpo markers, meditative and controlled breathing captured in stillness. --ar 2:3 --v 6",
+  "image_prompt": "Zoya Pathak, GLMZ, a heavyset woman of Middle Eastern, South Asian, East and Southeast Asian heritage, warm medium-deep brown skin with golden honey undertones, mature face with deliberate keloid scarring across cheeks and forehead in striking linear patterns, dark brown eyes with golden spiral iris implants catching neon light, long black locs threaded with copper wire and embedded data chips cascading past shoulders, wearing layered kente-stripe synthfabric robes in ochre deep red and cream over fitted undershirt, brass bangles on both wrists, multiple brass and copper rings, practical worn leather shoes, seated upright at a table in a low-lit Great Lakes Metropolitan establishment, hands visible and deliberate, holding eye contact with controlled meditative presence, cool neon and warm lamplight casting shadows across her scarred face, photorealistic, character portrait, atmospheric neo-noir noir --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.7,
-    "East Asian": 24.1,
-    "Indigenous American": 13.4,
-    "Northern European": 8.5,
-    "Middle Eastern": 4.3
+    "Middle Eastern": 44.5,
+    "South Asian": 31.3,
+    "East Asian": 12.8,
+    "Southeast Asian": 11.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 15.6,
+        "Lebanese": 15.6
+      },
+      "Arab Gulf": {
+        "Iraqi": 3.9
+      },
+      "Persian": {
+        "Tajik Persian": 8.2,
+        "Iranian": 1.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 31.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 12.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 8.8
+      },
+      "Filipino": {
+        "Tagalog": 2.6
+      }
+    }
+  }
 }

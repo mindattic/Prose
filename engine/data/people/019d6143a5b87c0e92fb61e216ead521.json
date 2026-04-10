@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Aslan Granlund-Tawiah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 59, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAslan Granlund-Tawiah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Cleo Dalgaard is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 59, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCleo Dalgaard is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -263,7 +263,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,23 +278,11 @@
   "related_entities": [
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Mika Sorel",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (58%) with significant Sub-Saharan African (15%) and Hispanic/Latin American (14%) ancestry, creating a striking pan-diaspora phenotype. The genetic blend produces warm golden-brown undertones with subtle regional feature mixing.",
+    "heritage": "Complex panethnic ancestry combining Northern European (48%), Sub-Saharan African (26.4%), Indigenous American (13.9%), East Asian (10.9%), and trace Middle Eastern (0.8%) genetics. This rare combination creates a phenotype that reads as distinctly diaspora-mixed: Northern European bone structure provides baseline facial angles and bridge refinement; Sub-Saharan African ancestry contributes rich melanin depth, pronounced cheekbone geometry, and fuller lip structure; Indigenous American heritage adds distinctive cheekbone prominence and facial width; East Asian genetics refine the eye shape with slight epicanthic quality and contribute bridge definition; trace Middle Eastern warmth adds subtle richness to overall tone. The result is an unmistakably global face — no single heritage dominates visually, creating a striking geometric blend that marks her as Ubiquitous Diaspora generation.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and angular, with wiry musculature that reads as natural until you see her move — geneware muscle density treatment gives her deceptive power in economical frame",
@@ -302,8 +290,8 @@
     "hair_style": "Pulled back tight, practical, minimal styling",
     "hair_length": "Medium — shoulder-length, utilitarian",
     "eye_color": "Light brown with amber rim",
-    "skin_tone": "Deep warm golden-bronze with olive undertones, sun-weathered from outdoor flight hours. The Southeast Asian base enriches to warm honey-gold in natural light, with the African heritage adding depth and complexity to melanin distribution.",
-    "complexion": "High cheekbones with gentle African-influenced structure, pronounced jaw with Southeast Asian angularity, blended into distinctive panethnic geometry. Minimal cosmetic grooming — a face that photographs too distinctly, which she knows. Fine nasal structure with subtle bridging that speaks to the genetic mosaic.",
+    "skin_tone": "Rich warm bronze with complex undertone interplay: honeyed base from Northern European fairness harmonizing with deep melanin richness from Sub-Saharan African ancestry, further warmed by East Asian undertones and sun-weathered from outdoor flight hours. In natural light reads as luminous bronze; in shadow deepens to warm mahogany brown. Melanin distribution creates visual depth while maintaining brightness characteristic of mixed Northern European heritage.",
+    "complexion": "Striking geometric blend of global features: broad, prominent cheekbones with fullness reflecting Sub-Saharan African and Indigenous American ancestry meet angular, defined Northern European jaw structure. Eyes refined by East Asian genetics with subtle epicanthic fold and darker iris pigmentation. Nasal bridge is fine and straight, influenced by Northern European and East Asian ancestry, with base width reflecting African heritage. Overall facial geometry is distinctly panethnic — wide through the cheekbones, tapered at the jaw, refined at the bridge. Lip structure fuller from African ancestry. Skin texture shows sun-weathering and callus marks; minimal cosmetic grooming.",
     "distinguishing_marks": [
       "Thin scar across left temple, barely visible unless light catches it, old and precise",
       "Callused hands from flight stick work, knuckles scarred from early-career accidents",
@@ -313,17 +301,54 @@
     "posture_movement": "Economical, minimal gesture. Sits with weight distributed for quick movement. Walks like she's always calculating sight lines and exit vectors. When speaking, hand movements are deliberate and spare — the chrome modulator does the work. Eyes track movement constantly, habit not paranoia.",
     "clothing_style": "Tier 2-3 hybrid: functional tactical base (reinforced flight jacket in matte black synthetic, utility cargo pants in charcoal gray), paired with mid-tier civilian approximation (understated brands, nothing that flags wealth or gang affiliation). Wears a worn leather flight jacket over everything — pre-2200s, hand-tooled, tells its own story. Boots are military-grade and regularly maintained. Jewelry minimal: a simple ring on her left ring finger, tarnished silver, worn smooth."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Cleo Dalgaard, a 183cm lean pilot with deep golden-bronze skin blending Southeast Asian, African, and Latin American heritage. Iron gray hair pulled back tight, shoulder-length. High cheekbones and angular jaw, light brown eyes with amber rims, sun-weathered complexion. Brushed titanium vocal modulator at throat with soft blue LED glow. Thin temple scar barely visible. Wearing matte black reinforced flight jacket over charcoal cargo pants, pre-2200s hand-tooled leather jacket, military boots. Minimal silver ring. Economical posture, eyes tracking with calculated precision. Indoor hover-dock lighting, cool blue-white from neon strips, warm golden light catching her skin tone and the chrome at her throat. Serious, professional, worn-in competence. --ar 2:3 --v 6",
+  "image_prompt": "Cleo Dalgaard, 183cm tall diaspora pilot with unmistakably global features: rich warm bronze skin blending Northern European, Sub-Saharan African, Indigenous American, and East Asian heritage. Broad high cheekbones, angular jaw, refined East Asian eye shape with light brown-amber eyes, straight nasal bridge with subtle fullness at base. Iron gray hair with copper undertones pulled back tight. Thin scar across left temple barely visible. Brushed titanium vocal modulator at throat glowing soft blue. Wearing matte black reinforced flight jacket over charcoal utility cargo pants, worn pre-2200s hand-tooled leather jacket, military-grade boots. Tarnished silver ring on left ring finger. Economical posture, calculating gaze tracking sight lines. GLMZ cockpit or industrial dock setting, cool neon and natural light mixing, her global phenotype striking against chrome and concrete. Mood: competent, weathered, diaspora-generation survivor. Professional portrait, angular geometric composition highlighting her panethnic features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 58.1,
-    "Sub-Saharan African": 15.2,
-    "Hispanic/Latin American": 14.5,
-    "Northern European": 9.7,
-    "South Asian": 2.3,
-    "East Asian": 0.2
+    "Northern European": 48,
+    "Sub-Saharan African": 26.4,
+    "Indigenous American": 13.9,
+    "East Asian": 10.9,
+    "Middle Eastern": 0.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 48
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 26.4
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 13.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.6
+      },
+      "Japanese": {
+        "Japanese": 3.6
+      },
+      "Chinese": {
+        "Mandarin Northern": 1.4,
+        "Shanghainese": 0.3
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 0.5,
+        "Iranian": 0.1
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.2
+      }
+    }
+  }
 }

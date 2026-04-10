@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d377a9bdbc50eef70d8ced",
   "type": "character",
-  "name": "Nova Castañeda-Holm",
+  "name": "Nova Strömqvist-Holm",
   "aliases": [
     "Celly",
     "Chrome Celly"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Burnished Market, Copperhead, near North Ave and Milwaukee",
-  "description": "Celestine Rawlings-Ouédraogo runs a stall so clean it seems out of place in The Burnished Market — white privacy screen on three sides, blue UV lamp, surfaces wiped twice between every customer. She is a tall woman with close-cropped natural hair shot through with bioluminescent silver strands she does herself, medium-brown skin, and the kind of face that defaults to amusement rather than skepticism. Her own augmentations are a working advertisement: both forearms have exposed chrome chassis panels over the muscle — not for function, for show, a fashion aug popular in 2195 that she still thinks is beautiful — and her right hand has a fine-motor surgical assist exo-glove built into it that she never removes. She can install a basic aug in twenty-two minutes. She has done it in eleven.\n\nShe is quick, professional, and genuinely good at her job, which she will remind you she learned the hard way without a Helix Biosystems vocational cert because she couldn't afford the program. She resells grey-market augs sourced from a network she's cultivated for eight years — returned corporate units, discontinued models, overstock from clinics that take Axiom insurance. What she charges is well below clinic prices. What she provides is not clinic-grade sterility, but it is closer than anyone else in Copperhead offers. She is easy to like and slightly difficult to read — the warmth is genuine but the smile is a layer she has learned to maintain regardless of what's underneath.",
+  "description": "Nova Strömqvist-Holm runs a stall so clean it seems out of place in The Burnished Market — white privacy screen on three sides, blue UV lamp, surfaces wiped twice between every customer. She is a tall woman with close-cropped natural hair shot through with bioluminescent silver strands she does herself, medium-brown skin, and the kind of face that defaults to amusement rather than skepticism. Her own augmentations are a working advertisement: both forearms have exposed chrome chassis panels over the muscle — not for function, for show, a fashion aug popular in 2195 that she still thinks is beautiful — and her right hand has a fine-motor surgical assist exo-glove built into it that she never removes. She can install a basic aug in twenty-two minutes. She has done it in eleven.\n\nShe is quick, professional, and genuinely good at her job, which she will remind you she learned the hard way without a Helix Biosystems vocational cert because she couldn't afford the program. She resells grey-market augs sourced from a network she's cultivated for eight years — returned corporate units, discontinued models, overstock from clinics that take Axiom insurance. What she charges is well below clinic prices. What she provides is not clinic-grade sterility, but it is closer than anyone else in Copperhead offers. She is easy to like and slightly difficult to read — the warmth is genuine but the smile is a layer she has learned to maintain regardless of what's underneath.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -194,7 +194,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,40 +214,16 @@
     "The Burnished Market",
     "Helix Biosystems",
     "Copperhead",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
     "Crucible RE-2 'Receptionist'",
     "Silver",
-    "Tibor Osei-Svanstrom",
+    "Neural Palate",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus NX-1 'Sandman'",
-    "Blackmarket",
-    "Edgewater Prism",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Irontide Tidal Energy",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Bazaar",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vantablack VS-3 'Skin Job'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-dao Bioelectric"
+    "Frost Boudiaf",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (56.2%) with significant Southeast Asian (30.2%) and Hispanic/Latin American (13.6%) ancestry. Complex Pan-African and Asian blend showing in bone structure and skin undertones — angular cheekbones and eye shape reflect the Southeast Asian component, while skin warmth and hair texture derive from Sub-Saharan roots, with subtle warm undertones from Latin heritage.",
+    "heritage": "Southeast Asian (68.8%) with significant Sub-Saharan African (25.0%) and North African (6.2%) ancestry. This genetic blend creates striking angular features—high, prominent cheekbones and eye shape reflect the dominant Southeast Asian ancestry, while deeper skin warmth and definition derive from Sub-Saharan roots, with subtle golden undertones from the North African component. The bone structure is defined and efficient, suggesting the combined influence of both heritage lineages with a lean, graceful frame.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Lean and efficient, muscular without bulk — the build of someone who moves precisely. Her frame suggests long hours on her feet, hands steady, posture economical.",
@@ -255,8 +231,8 @@
     "hair_style": "Close-cropped, precision cut, reveals scalp and ear shape. Silver strands catch and glow faintly in low light — self-maintained, intentional.",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm, perceptive",
-    "skin_tone": "Rich warm medium brown with golden undertones from Sub-Saharan and Southeast Asian blend, enhanced by Hispanic/Latin warmth — luminous in certain light",
-    "complexion": "Clear, well-maintained skin with minimal scarring. Face defaults to amusement — crow's feet at the corners of eyes from frequent smiling. Bone structure is angular with prominent cheekbones showing Southeast Asian influence blended with Sub-Saharan definition. No visible facial tattoos or marks. Grooming is meticulous but utilitarian.",
+    "skin_tone": "Rich warm medium-deep brown with golden undertones from blended Southeast Asian and Sub-Saharan heritage, luminous in certain light",
+    "complexion": "Clear, well-maintained skin with minimal scarring. Face defaults to amusement — crow's feet at the corners of eyes from frequent smiling. Bone structure is angular with prominent cheekbones showing the blended influence of Southeast Asian and Sub-Saharan ancestry. No visible facial tattoos or marks. Grooming is meticulous but utilitarian.",
     "distinguishing_marks": [
       "Faint surgical scars on both inner forearms where chrome chassis panels are mounted (approximately 8cm each, pale, well-healed).",
       "Fine network of pale lines across the dorsal surface of her right hand where the exo-glove integrates with her skin (appears as delicate circuitry pattern).",
@@ -264,16 +240,48 @@
     ],
     "visible_augmentations": "Both forearms feature exposed polished chrome chassis panels integrated over muscle tissue — decorative but functional, showing the mechanical infrastructure beneath the skin in a deliberate aesthetic choice. Right hand has an integrated fine-motor surgical assist exo-glove (chrome and articulated silicone joints) that she never removes; it appears as a second skin with visible mechanical articulation at fingertips and palm. Bioluminescent silver hair strands glow faintly in darkness — cosmetic geneware installation she maintains herself.",
     "posture_movement": "Upright, centered, economical. Moves with purpose but never hurry. Hands are always in motion — fidgeting with tools, wiping surfaces, adjusting equipment. Her right hand (with exo-glove) moves with precise mechanical grace; her left is more naturally organic by comparison, which creates an unconscious asymmetry in her gestures. When listening, she tilts her head slightly, maintaining eye contact. Default expression is a slight smile that reads as genuine amusement rather than professional warmth, though both exist simultaneously.",
-    "clothing_style": "Tier 3-4 utilitarian with personal flair. Typically wears a fitted, washable white synthetic coat (medical aesthetic, practical for her work) over form-fitting dark-colored undershirt. Favors high-waisted cargo pants in charcoal or midnight blue with multiple tool pockets and reinforced seams — worn but maintained. Footwear is always clinical-grade slip-resistant shoes (currently wearing Steris-brand white non-slip medical shoes, Φ80/pair). She layers a tool belt around her hips containing calibration devices, sterile glove dispensers, and small component cases. Jewelry minimal: a simple silver band on her left middle finger (no wedding ring equivalent — personal choice)."
+    "clothing_style": "Tier 3-4 utilitarian with personal flair. Typically wears a fitted, washable white synthetic coat (medical aesthetic, practical for her work) over form-fitting dark-colored undershirt. Favors high-waisted cargo pants in charcoal or midnight blue with multiple tool pockets and reinforced seams — worn but maintained. Footwear is always clinical-grade slip-resistant shoes (currently wearing Steris-brand white non-slip medical shoes). She layers a tool belt around her hips containing calibration devices, sterile glove dispensers, and small component cases. Jewelry minimal: a simple silver band on her left middle finger (no wedding ring equivalent — personal choice)."
   },
-  "image_prompt": "Nova Castañeda-Holm, tall lean 182cm woman with rich warm brown skin blending Sub-Saharan African, Southeast Asian, and Latin heritage, angular cheekbones and expressive dark eyes with crow's feet smile lines. Short dark brown hair with glowing bioluminescent silver threads catching light. Exposed polished chrome chassis panels on both forearms integrated into skin, right hand features intricate chrome exo-glove with visible mechanical articulation. White clinical-grade synthetic coat over dark undershirt, high-waisted charcoal cargo pants with tool belt, white medical-grade slip-resistant shoes. Slight knowing smile, tilted head posture, hands in constant precise motion. Cyberpunk 2226 medical tech aesthetic, neon-lit clinic stall background, cool blue and silver lighting emphasizing bioluminescent hair and chrome augmentations, moody and focused atmosphere, precise and deliberate presence --ar 2:3 --v 6",
+  "image_prompt": "Nova Strömqvist-Holm, 182cm tall Southeast Asian-Sub-Saharan African mixed heritage woman, rich warm medium-deep brown skin with golden undertones, high angular cheekbones, dark brown eyes with crow's feet smile lines. Short dark brown hair with glowing silver bioluminescent threads catching light, close-cropped undercut. Exposed polished chrome chassis panels integrated into both forearms showing mechanical infrastructure. Right hand fitted with chrome and silicone exo-glove surgical assist with visible articulation, intricate pale circuitry pattern on hand. Faint surgical scars on inner forearms, small keloid on left temple. Wearing fitted white synthetic medical coat over dark undershirt, high-waisted charcoal cargo pants with tool pockets, reinforced seams, clinical white slip-resistant medical shoes. Tool belt at hips with calibration devices and component cases. Simple silver band on left middle finger. Upright, centered posture, slight genuine smile, hands in motion. GLMZ GLMZ setting, moody neon-lit workshop or clinical space, cool blue and warm amber lighting highlighting bioluminescent hair glow and chrome augmentations, cinematic depth, precise utilitarian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 56.2,
-    "Southeast Asian": 30.2,
-    "Hispanic/Latin American": 13.6
+    "Southeast Asian": 68.8,
+    "Sub-Saharan African": 25,
+    "North African": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 27.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 10
+      },
+      "Filipino": {
+        "Tagalog": 15,
+        "Bicolano": 16.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.4,
+        "Zambian": 8.2
+      },
+      "Central African": {
+        "Cameroonian": 0.3
+      },
+      "East African": {
+        "Ethiopian": 2.9,
+        "Somali": 4.2
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 6.2
+      }
+    }
+  }
 }

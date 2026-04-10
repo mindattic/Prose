@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c677778dbf15ae8ac4ce10",
   "type": "character",
-  "name": "Marek Novotný",
+  "name": "Sol Hayashi",
   "aliases": [
     "Sasha D",
     "The Rate"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Grand Corridor, Ringo Consumer Division tower — floors 34-38",
-  "description": "Saoirse is wiry and kinetic, a person who seems to take up more space than their frame accounts for. Their heritage is a long conversation — a Congolese-Romanian grandmother on one side, a Zambian-Irish maternal line on the other — and it settled into a face that is striking more for its expressiveness than any single feature: large dark eyes, a mouth that betrays every calculation. Their hair changes with their moods in a strictly color-coded system they've maintained for three years: deep violet for productive days, a burnt copper for client presentations, flat grey when they are tired of people, which happens more than they advertise. The color-changing geneware was the first discretionary purchase they made after their first real paycheck and they have never once regretted it.\n\nSaoirse is extraordinarily good at their job and knows it with the particular confidence of someone who grew up being told they were too much — too loud, too analytical about the wrong things, too unwilling to dress their observations in softness. At Ringo they found an environment that rewards exactly the qualities that got them criticized everywhere else, and this has made them simultaneously more effective and more ruthless than they might otherwise have become. They track consumer behavior patterns with the focused appetite of someone who genuinely finds human decision-making fascinating — not because they love people, exactly, but because people are the most complex system they've ever had to model. They are funny, occasionally savage, loyal in the specific and transactional way of someone who grew up learning that loyalty was a resource to be managed.",
+  "description": "Sol Hayashi is wiry and kinetic, a person who seems to take up more space than their frame accounts for. Their heritage is a long conversation — a Congolese-Romanian grandmother on one side, a Zambian-Irish maternal line on the other — and it settled into a face that is striking more for its expressiveness than any single feature: large dark eyes, a mouth that betrays every calculation. Their hair changes with their moods in a strictly color-coded system they've maintained for three years: deep violet for productive days, a burnt copper for client presentations, flat grey when they are tired of people, which happens more than they advertise. The color-changing geneware was the first discretionary purchase they made after their first real paycheck and they have never once regretted it.\n\nSol Hayashi is extraordinarily good at their job and knows it with the particular confidence of someone who grew up being told they were too much — too loud, too analytical about the wrong things, too unwilling to dress their observations in softness. At Ringo they found an environment that rewards exactly the qualities that got them criticized everywhere else, and this has made them simultaneously more effective and more ruthless than they might otherwise have become. They track consumer behavior patterns with the focused appetite of someone who genuinely finds human decision-making fascinating — not because they love people, exactly, but because people are the most complex system they've ever had to model. They are funny, occasionally savage, loyal in the specific and transactional way of someone who grew up learning that loyalty was a resource to be managed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -193,7 +193,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,39 +253,25 @@
     "Grandmother",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Cruciform Depot",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Heritage Vault",
+    "GLMZ",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Copper",
-    "Ringo Corponation",
-    "Arcturus BH-2 'Marrow'",
-    "Breck Tannen",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Ilhan Sandstrom-Badu",
-    "Lacuna Genomics",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Priscilha Nwosu-Tarvainen",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe"
+    "Ringo Corponation"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European-South Asian-North African-Sub-Saharan African blend; Marek carries the sharp geometry of Eastern European ancestry (cheekbones, jaw structure) softened and deepened by substantial South Asian and North African heritage, with visible Sub-Saharan African undertones in skin richness and feature definition. Southeast Asian ancestry contributes subtle refinement to eye shape and overall proportions.",
+    "heritage": "Sol's genetic heritage is a sophisticated global blend: East Asian (43.2%) and Southeast Asian (32.9%) ancestry form the foundational architecture—refined facial geometry, elegant proportions, smooth skin luminosity, and subtly tilted eye shapes. Middle Eastern heritage (11.5%) adds warmth and depth to bone structure, creating richer undertones in complexion. Northern European (6.7%) and Sub-Saharan African (5.7%) contributions broaden cheekbones slightly and enrich skin depth, resulting in a warm medium-deep tone with golden radiance. The synthesis is striking: East and Southeast Asian grace meets warm, multidimensional complexity—delicate features enhanced by dimensional depth and sophisticated undertone richness.",
     "height_cm": 167,
     "weight_kg": 58,
     "build": "Wiry and kinetic, lean muscle with minimal body fat; movements suggest coiled energy rather than bulk",
     "hair_color": "Genetically modified, color-cycling: deep violet (productive), burnt copper (presentation mode), flat grey (fatigued). Full spectrum capable but maintains primary palette.",
     "hair_style": "Deliberately styled to complement mood-color shifts; currently worn short-to-medium, textured at crown for visual interest",
     "hair_length": "Medium",
-    "eye_color": "Large, dark brown — natural; subtle retinal overlay hardware invisible to casual observation",
-    "skin_tone": "Warm deep brown with amber-golden undertones; the rich saturation of South Asian and North African heritage layered beneath Eastern European and Sub-Saharan African depth, creating a complex warm-brown canvas that shifts subtly in different light",
-    "complexion": "Sharp facial geometry with high, defined cheekbones; skin well-maintained but bearing the wear of someone who prioritizes productivity over skincare routines. Southeast Asian and South Asian ancestry softens the severity of Eastern European structure. Expression habitually analytical—eyebrows mobile and expressive, mouth precise. A faint warm amber scent baseline (gland enhancement) surrounds them.",
+    "eye_color": "Large, dark brown—natural; subtle retinal overlay hardware invisible to casual observation",
+    "skin_tone": "Warm medium-deep brown with golden undertones and ambient warmth; the harmonious blend of East and Southeast Asian foundational luminosity, enriched by Middle Eastern depth, Northern European dimensional breadth, and Sub-Saharan African complexity. Radiant in daylight, sophisticated and glowing under artificial light.",
+    "complexion": "Refined facial geometry with defined but not severe cheekbones; smooth skin well-maintained but bearing subtle wear of productivity-focused lifestyle. East and Southeast Asian ancestry dominates feature delicacy—slight eye tilt, refined nose structure, elegant proportions—while darker undertones and dimensional richness reflect the full genetic synthesis. Expression habitually analytical—eyebrows mobile and expressive, mouth precise. Faint warm amber scent baseline (gland enhancement) provides subtle ambient presence.",
     "distinguishing_marks": [
       "Faint linear scar along left temple, approximately 3cm, barely visible unless light catches it directly—somatic trauma, pre-corpo",
       "Surgical precision marks at inner wrist (bilateral, subcutaneous implant sites) visible only when arms are bare"
@@ -294,17 +280,61 @@
     "posture_movement": "Sits forward in chairs. Hands gesture with precision during analysis—fingers forming frames, pointing at invisible data. Walks quickly, economically. Eyes rarely settle; constant micro-scanning of environments. When tired, posture flattens slightly, as if energy reserves are visibly depleting.",
     "clothing_style": "Tier 1-2 corporate: tailored minimal aesthetic. High-quality baseline fabrics (smart-weave, temperature-regulating). Presentations: structured blazers in muted tones that complement hair copper. Office: fitted tech-casual—smart fabrics with discrete interface panels at wrists. Social evenings: deliberately relaxed but expensive, suggesting someone who could dress up but chooses not to. Accessories spare: a thin bracelet that doubles as a data interface, no visible jewelry beyond function."
   },
-  "image_prompt": "Marek Novotný, 167cm, lean wiry build, deep warm brown skin with amber-golden undertones blending Eastern European and South Asian-North African heritage. Sharp high cheekbones, analytical dark brown eyes with retinal overlay hardware. Medium-length textured hair in burnt copper (presentation mode), color-cycling geneware. Faint 3cm temple scar catching light. Seated forward in ergonomic chair in corporate office, 2226 GLMZ, hands gesturing with precision at invisible data streams. Wearing tailored smart-weave blazer in muted charcoal, fitted tech-casual with discrete wrist interface panels. Data bracelet visible. Warm amber scent baseline ambient. Forward posture suggesting coiled energy. Cool blue-white office lighting with subtle neon accent lighting. Expression analytical, eyes micro-scanning environment. Cyberpunk corporate aesthetic, productivity-focused, minimal but expensive. --ar 2:3 --v 6",
+  "image_prompt": "Sol Hayashi, 167cm wiry neo-noir corporate analyst with warm medium-deep brown skin, golden undertones, refined East and Southeast Asian facial features enhanced by Middle Eastern and African dimensional richness. Large dark brown eyes with invisible retinal overlay, color-cycling hair currently deep violet textured at crown, sharp analytical expression. Seated forward in high-tech office chair, precise hand gestures framing invisible data, wrist implant marks visible on bare arms. Wearing tier 1-2 corporate smart-weave blazer in muted tone, tech-casual interface panels at wrists, thin data-interface bracelet. Faint linear temple scar barely catching light. Ambient warm amber scent presence. GLMZ GLMZ setting, cool corporate office lighting with warm undertones emphasizing skin radiance, constant micro-scanning expression, energy-focused posture. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 36.4,
-    "South Asian": 19.6,
-    "Northern European": 14.2,
-    "North African": 13.8,
-    "Sub-Saharan African": 9.5,
-    "Southeast Asian": 6.5
+    "East Asian": 43.2,
+    "Southeast Asian": 32.9,
+    "Middle Eastern": 11.5,
+    "Northern European": 6.7,
+    "Sub-Saharan African": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 5.8,
+        "Shanghainese": 4
+      },
+      "Korean": {
+        "Korean": 6
+      },
+      "Japanese": {
+        "Japanese": 27.4
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 15.2
+      },
+      "Thai": {
+        "Thai": 17.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 11.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 0.6,
+        "English": 4
+      },
+      "Germanic": {
+        "German": 0.6
+      },
+      "Scandinavian": {
+        "Norwegian": 0.8,
+        "Swedish": 0.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 5.7
+      }
+    }
+  }
 }

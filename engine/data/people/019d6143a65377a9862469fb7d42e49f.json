@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65377a9862469fb7d42e49f",
   "type": "character",
-  "name": "Echo Nygaard-Chakraborty",
+  "name": "Echo Nygaard-Cissé",
   "aliases": [
     "Garrote",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Western and Chicago Ave",
-  "description": "Malika Zhukov-Wiredu are lean and angular, all sharp edges and visible tension. At 40, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Malika Zhukov-Wiredu plans to keep it that way. They work as a broker out of The Overhang, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nMalika Zhukov-Wiredu have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
+  "description": "Echo Nygaard-Cissé are lean and angular, all sharp edges and visible tension. At 40, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Echo Nygaard-Cissé plans to keep it that way. They work as a broker out of The Overhang, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEcho Nygaard-Cissé have built a reputation on reliability rather than flash — they show up, they deliver, they collect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -261,7 +261,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,32 +276,11 @@
   "registered_firearms": [],
   "related_entities": [
     "Ironveil Canopy",
-    "Chicago",
-    "Breck Tannen",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Crucible RE-2 'Receptionist'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Rongo Delgado-Opoku",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Fathom Line",
-    "The Pure Hand"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European with significant South Asian and Southeast Asian ancestry, with minor Sub-Saharan African and Eastern European heritage. The result is striking: cool Northern European bone structure blended with warmer South and Southeast Asian undertones, creating a unique facial architecture that reads as neither region but distinctly both.",
+    "heritage": "Northern European dominant (54.6%) blended with substantial Sub-Saharan African ancestry (37.5%) and minor East Asian heritage (7.9%). The result is striking: cool Northern European bone structure softened by Sub-Saharan African facial geometry and warmth, with subtle East Asian eye shape complexity. High, pronounced cheekbones with gentle African lip fullness and chin rounding. Neither region claims dominance — reads as distinctly hybrid.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with visible musculature — no excess mass, every movement efficient. Enhanced tendons create slightly pronounced definition in forearms and calves.",
@@ -309,8 +288,8 @@
     "hair_style": "Pulled back tight, practical — no aesthetic consideration, pure function",
     "hair_length": "Medium, secured in a low braid or knot",
     "eye_color": "Deep brown with faint amber flecks — natural",
-    "skin_tone": "Warm honey-beige, a sophisticated blend of Northern European fairness with South Asian warmth and Southeast Asian golden undertones. Medium depth with visible sun exposure and weathering.",
-    "complexion": "High, pronounced cheekbones showing Northern European structure softened by South Asian facial geometry. Angular jaw with gentle rounding at the chin. Minimal grooming — no jewelry, no makeup. Skin carries subtle scarring consistent with a life of movement and minor injuries. Expression reads as closed, watchful. Fine facial lines suggest both sun exposure and age.",
+    "skin_tone": "Rich warm bronze — Northern European fairness deepened by substantial Sub-Saharan African ancestry, with East Asian golden undertones creating depth. Medium-deep with visible sun exposure and weathering.",
+    "complexion": "High, pronounced cheekbones showing Northern European structure softened by Sub-Saharan African facial geometry and fullness. Angular jaw with gentle rounding at the chin. Minimal grooming — no jewelry, no makeup. Skin carries subtle scarring consistent with a life of movement and minor injuries. Expression reads as closed, watchful. Fine facial lines suggest both sun exposure and age.",
     "distinguishing_marks": [
       "Network of thin white scars across both palms and fingers — old tactical training or repeated grip stress",
       "Thin vertical scar along left temple, partially hidden by hairline — blunt trauma, well-healed",
@@ -321,16 +300,37 @@
     "posture_movement": "Sits coiled, ready to move. Stands with weight distributed for rapid vertical or horizontal deployment. Eyes track exits and sight lines constantly — not paranoid, just professional. Movement is precise and efficient — no flourishes, no swagger. Handshake would be firm, testing.",
     "clothing_style": "Tier 4 utilitarian — function over status. Matte black reinforced cargo pants with multiple pockets and hidden compartments. Dark thermal layer under a lightweight reactive jacket with hidden armor plating. Steel-toed boots, scuffed and practical. No logos, no bright colors. Worn gear that has been field-tested. A single piece of jewelry — a thin titanium band on left index finger, unmarked."
   },
-  "image_prompt": "Echo Nygaard-Chakraborty, 172cm lean angular figure, warm honey-beige skin with subtle weathering, high cheekbones blending Northern European and South Asian geometry, deep brown eyes with amber flecks, dark brown hair in tight practical braid. Visible silvery chrome striations along forearms from enhanced tendon geneware, thin white scars on palms, vertical temple scar. Wearing matte black reinforced cargo pants, dark thermal layer, lightweight reactive armor jacket, steel-toed boots. Titanium band on left index finger. Sitting coiled and ready, posture tense and professional, tracking sight lines. Cyberpunk 2226 Great Lakes Metropolitan setting, cool industrial lighting, closed watchful expression, zero wasted movement. --ar 2:3 --v 6",
+  "image_prompt": "Echo Nygaard-Cissé, lean 172cm mixed-heritage woman with rich warm bronze skin blending Northern European and Sub-Saharan African ancestry, deep brown eyes with amber flecks. Dark hair pulled back in practical low braid. High prominent cheekbones, angular jaw with soft chin, natural facial geometry. Thin white scars across palms, vertical scar left temple, faint burn mark right shoulder. Silvery tendon augmentation striations visible along forearms like mercury under skin. Wearing matte black reinforced cargo pants, dark thermal layer, lightweight reactive jacket with hidden armor, scuffed steel-toed boots. Titanium band on left index finger. Coiled posture, watchful expression, zero wasted movement. GLMZ GLMZ setting, professional operative aesthetic, moody atmospheric lighting with neon undertones, industrial background, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 63.3,
-    "South Asian": 14.3,
-    "Southeast Asian": 9.9,
-    "Sub-Saharan African": 8.0,
-    "Eastern European": 4.5
+    "Northern European": 54.6,
+    "Sub-Saharan African": 37.5,
+    "East Asian": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 54.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 22
+      },
+      "Central African": {
+        "Congolese": 12.4
+      },
+      "West African": {
+        "Nigerian": 3.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.9
+      }
+    }
+  }
 }

@@ -1,13 +1,13 @@
 {
   "id": "3fc3509ff1388be336544798d2ab308b",
-  "name": "Esteban Castañeda-Hachemi",
+  "name": "Ioane Traoré-Thakur",
   "type": "character",
   "aliases": [
     "The Retriever",
     "Auntie A"
   ],
   "role": "Private Investigator",
-  "description": "Amara Lindqvist-Diallo runs Bright Path Recovery, the most effective missing-child operation on the Shelf. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Shelf's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on Shelf stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
+  "description": "Ioane Traoré-Thakur runs Bright Path Recovery, the most effective missing-child operation on the Shelf. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Shelf's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on Shelf stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
   "affiliation": "Bright Path Recovery — her own firm, employing three junior associates",
   "tier": "Tier 2",
   "location": "A converted ground-floor storefront in the Narrows, deliberately non-threatening — children's drawings on the walls, tea always available, near Milwaukee and North Ave",
@@ -67,37 +67,24 @@
   "related_entities": [
     "The Narrows Compact",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Heritage Vault",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Déjà Vu",
-    "The Milwaukee Core",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Praevex",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "The Coffin Nails",
-    "The Narrows",
-    "The Pure Hand"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (55.9%) with significant Hispanic/Latin American (22.3%), North African (14.3%), and Central Asian (7.5%) ancestry. The genetic blend creates striking features: deep brown skin with warm undertones from the African and North African heritage, sharp angular bone structure influenced by the Maghrebi and Hispanic lineages, and subtle Central Asian influences in eye shape and cheekbone prominence.",
+    "heritage": "Genetically mixed from the Ubiquitous Diaspora: Sub-Saharan African (27.7%), Pacific Islander (22.9%), South Asian (22.5%), Hispanic/Latin American (11.1%), East Asian (8.8%), and Southeast Asian (7.0%). This combination creates a striking multicultural phenotype with warm golden-brown skin that blends African depth with Pacific Islander olive undertones and South Asian warmth. Facial structure reflects this global ancestry—high cheekbones and angular jawline from West African lineage, combined with slightly broader face structure and softer eye shapes from East and Southeast Asian heritage. South Asian ancestry contributes to eye depth and subtle complexion warmth, while Hispanic/Latin American heritage adds definition to facial proportions.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and angular, with the efficient musculature of someone who walks constantly through difficult terrain. No spare weight; posture suggests endurance rather than strength.",
     "hair_color": "Dark brown with early silver threading at the temples",
     "hair_style": "Worn in a simple, practical braid or bun, often coming loose by afternoon",
     "hair_length": "Medium",
-    "eye_color": "Warm hazel with fine lines radiating from the corners",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the dominant Sub-Saharan African ancestry blended with North African and Mediterranean influences. Rich, even complexion with natural depth.",
-    "complexion": "Sharp, angular features with high cheekbones and prominent jawline characteristic of West African and Maghrebi heritage. Dark, expressive eyes set wide. Minimal makeup. Skin shows the weathering of two decades of street work: sun damage, stress lines around the eyes and mouth. A faint scar tissue across her left cheekbone from a childhood incident. Hands are calloused, nails kept short and unpainted.",
+    "eye_color": "Deep brown with warm hazel undertones and fine lines radiating from the corners",
+    "skin_tone": "Warm golden-brown with balanced undertones reflecting the dominant blend of Sub-Saharan African, Pacific Islander, and South Asian ancestry. Rich, even complexion with natural depth, subtle olive warmth, and the sun-weathered patina of street work.",
+    "complexion": "Angular features with high cheekbones and prominent jawline influenced by West African heritage, softened slightly by broader face structure from East and Southeast Asian ancestry. Dark, expressive eyes set wide-spaced, reflecting the multicultural genetic heritage. Minimal makeup. Skin shows the weathering of two decades of street work: sun damage, stress lines around the eyes and mouth. A faint scar tissue across her left cheekbone from a childhood incident. Hands are calloused, nails kept short and unpainted.",
     "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous — possibly a low-grade neural logger or location tracker, but nothing chrome, nothing that would make her stand out on the Shelf. She keeps her modifications invisible intentionally; trust requires appearing human and vulnerable.",
     "posture_movement": "She moves with the economical gait of someone who has walked thousands of miles through the city. Her posture is forward-leaning, alert but not tense — a listening posture. She sits at the edge of chairs, ready to stand. Her hands gesture when she talks, a Malian inheritance. Her eyes track movement habitually; she notices everything but tries not to appear to be watching.",
     "clothing_style": "Tier 3-4 practical wear. Dark colors — black, charcoal, deep indigo — that hide the grime of fieldwork. Usually: fitted black cargo pants with multiple pockets, a long-sleeved shirt or lightweight sweater (thermal-rated for Milwaukee winters), good walking boots (currently a pair of Resolute-brand tactical boots, scuffed and re-soled twice). She owns one professional blazer for meetings with wealthy clients, but it hangs unworn most days. She wears a watch — an older Casio, not flashy — and minimal jewelry except for a thin silver ring on her right index finger, a gift from her sister before the disappearance. No augmentation-ware visible; no corpo branding.",
@@ -107,12 +94,64 @@
       "A tattoo on her left shoulder blade: a simple geometric pattern of interlocking lines, Malian textile-inspired, done twenty-two years ago when her sister disappeared"
     ]
   },
-  "image_prompt": "A lean woman in her 40s with deep warm brown skin and sharp angular features, standing in a cyberpunk 2226 Milwaukee street. She has dark hair with silver threading pulled back in a loose braid, warm hazel eyes with fine lines at the corners. Her high cheekbones and prominent jawline reflect West African and North African heritage. She wears fitted black cargo pants, a long-sleeved charcoal shirt, and scuffed Resolute tactical boots. An old Casio watch on her wrist, a thin silver ring on her right index finger. A faint 3cm scar visible on her left cheekbone. She sits forward on a worn chair, posture alert and listening, hands gesturing as she speaks. Industrial urban background with neon signs and rain-slicked streets, moody blue-green lighting casting shadows across her face. Ground-level perspective, street-level realism, no visible augmentations but an air of careful subterfuge. --ar 2:3 --v 6",
+  "image_prompt": "Ioane Traoré-Thakur, 172cm lean-framed mixed-heritage woman with warm golden-brown skin blending Sub-Saharan African, Pacific Islander, and South Asian ancestry. High cheekbones, angular jawline, deep brown eyes with hazel warmth, faded scar across left cheekbone. Dark brown hair with silver threading, pulled back in practical braid. Dressed in fitted black cargo pants, long-sleeved thermal shirt, worn Resolute tactical boots. Thin silver ring on right index finger. Forward-leaning posture, alert and listening. Hands showing calluses from street work. Standing in neon-lit Milwaukee alleyway at dusk, rain-slicked pavement, GLMZ, moody atmospheric lighting casting shadows across weathered features. Minimal augmentation visible, deliberately human appearance. Tier 3-4 street operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.9,
-    "Hispanic/Latin American": 22.3,
-    "North African": 14.3,
-    "Central Asian": 7.5
+    "Sub-Saharan African": 27.7,
+    "Pacific Islander": 22.9,
+    "South Asian": 22.5,
+    "Hispanic/Latin American": 11.1,
+    "East Asian": 8.8,
+    "Southeast Asian": 7
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 10.8
+      },
+      "Central African": {
+        "Cameroonian": 15.6
+      },
+      "East African": {
+        "Rwandan": 1.3
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 6.2
+      },
+      "Melanesian": {
+        "Fijian": 16.7
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 13.7,
+        "Sindhi": 6.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.2,
+        "Sinhalese": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 9.8,
+        "Peruvian": 1.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.8
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 7
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A converted ground-floor storefront in the Narrows"
+  }
 }

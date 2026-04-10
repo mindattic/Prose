@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c374ae8107f5d137a50ae7",
   "type": "character",
-  "name": "Sable Möller",
+  "name": "Sable Vo",
   "aliases": [
     "Ruk",
     "Fassbender"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Circuit — Ringo Meridian Systems Lab, Bronzeline district, sublevel research cluster, near sub-level access near Dearborn and Jackson",
-  "description": "Biruk Fassbender-Qalonui is small and bright-eyed, with warm medium-brown skin, natural curls he's grown long enough to bind back, and a constellation of bioluminescent freckles across his cheekbones and nose — a gene-art modification he got at nineteen and still considers the best decision he's ever made, personally. He is almost always wearing something slightly wrong: a formal jacket over a maintenance worker's underlayer, clean shoes with mismatched laces, someone else's borrowed vest. He moves through the world as if slightly surprised to find himself in it, which people who don't know him mistake for absentmindedness. It isn't. He is paying attention to everything; he simply finds the world more interesting than he finds its social conventions.\n\nBiruk is a genuine prodigy in computational theory who has been at Ringo's speculative systems lab for three years and has already had two papers cited more times than his entire department's previous decade of output. He is also deeply, earnestly interested in ELFs as research subjects — not their engineering but their emergent behavior, their apparent preference structures, the question of whether the prayers and offerings people make to them are modifying their decision patterns. His colleagues find this embarrassing. He finds their embarrassment philosophically interesting. He is twenty-nine years old and has not yet learned to be afraid of his own ideas, which is either his greatest asset or his most significant vulnerability, depending on who is watching.",
+  "description": "Sable Vo is small and bright-eyed, with warm medium-brown skin, natural curls he's grown long enough to bind back, and a constellation of bioluminescent freckles across his cheekbones and nose — a gene-art modification he got at nineteen and still considers the best decision he's ever made, personally. He is almost always wearing something slightly wrong: a formal jacket over a maintenance worker's underlayer, clean shoes with mismatched laces, someone else's borrowed vest. He moves through the world as if slightly surprised to find himself in it, which people who don't know him mistake for absentmindedness. It isn't. He is paying attention to everything; he simply finds the world more interesting than he finds its social conventions.\n\nBiruk is a genuine prodigy in computational theory who has been at Ringo's speculative systems lab for three years and has already had two papers cited more times than his entire department's previous decade of output. He is also deeply, earnestly interested in ELFs as research subjects — not their engineering but their emergent behavior, their apparent preference structures, the question of whether the prayers and offerings people make to them are modifying their decision patterns. His colleagues find this embarrassing. He finds their embarrassment philosophically interesting. He is twenty-nine years old and has not yet learned to be afraid of his own ideas, which is either his greatest asset or his most significant vulnerability, depending on who is watching.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -165,7 +165,7 @@
     "Analyst": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,36 +179,22 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Riddle",
     "The Circuit",
     "The Underlayer Collective",
     "Bronzeline",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Dearborn Forge",
+    "Circuit",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Neural Palate",
     "Ringo Corponation",
     "Arcturus CK-5 'Bloodhound'",
-    "Elena Vasquez-9",
-    "Bintou Halvorsen-Osei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "The Collective",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Question",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian (60.7%) with significant Sub-Saharan African (16.5%), Hispanic/Latin American (11.9%), Northern European (9.5%), and minor Middle Eastern (1.4%) ancestry. The genetic blend creates a striking phenotype: East Asian bone structure and eye shape form the foundation, enriched by Sub-Saharan African warmth in skin tone and facial feature dimensionality, with subtle Latin American and Northern European undertones in complexion depth and texture.",
+    "heritage": "Complex diaspora blend: Southeast Asian (42.5%) and South Asian (29.9%) form the structural foundation with defined cheekbones and characteristic eye shape, enriched by Sub-Saharan African (11.0%) warmth and dimensional depth. Hispanic/Latin American (13.6%) and Indigenous American (3.0%) heritage add subtle undertones and fine phenotypic detail. The result is a striking, harmonious warm golden-medium brown complexion with luminous radiance—a living expression of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and wiry, almost delicate — the build of someone who forgets to eat during work cycles. Narrow shoulders, long-limbed proportions that make him appear taller than he is.",
@@ -216,8 +202,8 @@
     "hair_style": "Bound back in a loose braid or knot, often with a few strands escaping; deliberately unkempt rather than carelessly so",
     "hair_length": "Long (shoulder-length when unbound)",
     "eye_color": "Warm brown with alert, constantly moving gaze",
-    "skin_tone": "Warm medium-to-golden brown — a luminous blend reflecting dominant East Asian heritage mellowed by Sub-Saharan African warmth and enriched by Latin American and Northern European undertones, creating an unusually harmonious mid-tone with golden luminosity",
-    "complexion": "Clear skin with the distinctive bioluminescent freckle modification: soft blue-green constellation of freckles across cheekbones, bridge of nose, and extending onto collarbone and upper chest. The bioluminescence is faint in daylight but becomes visible in low-light environments, creating a subtle glowing network. Face is youthful and unmarked by typical street wear; clean-shaven. Features reflect East Asian structure (cheekbone prominence, eye shape) softened by the warmth and dimensional depth of African and Latin American heritage.",
+    "skin_tone": "Warm golden-medium brown — luminous blend of Southeast Asian and South Asian warmth enriched by Sub-Saharan African depth, with subtle undertones from Hispanic/Latin American and Indigenous American heritage, creating harmonious mid-tone with golden radiance",
+    "complexion": "Clear skin with the distinctive bioluminescent freckle modification: soft blue-green constellation of freckles across cheekbones, bridge of nose, and extending onto collarbone and upper chest. The bioluminescence is faint in daylight but becomes visible in low-light environments, creating a subtle glowing network. Youthful face, unmarked by typical street wear; clean-shaven. Southeast and South Asian bone structure (prominent cheekbones, characteristic eye shape) enriched by the warmth and dimensional depth reflected in Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage ancestry.",
     "distinguishing_marks": [
       "Bioluminescent freckle constellation across cheekbones and nose bridge — gene-art modification in soft blue-green spectrum, active in low light",
       "Bioluminescent freckles continue down neck and across collarbone — visible when wearing open-collar clothing",
@@ -227,16 +213,60 @@
     "posture_movement": "Moves with an odd combination of precision and apparent distraction — his body language suggests he's simultaneously present and elsewhere. When focused on conversation or observation, he becomes very still. When thinking, he fidgets: adjusts his clothing, touches his face, shifts weight. Walks with a particular kind of purposefulness that masks actual absentmindedness about his surroundings (he'll collide with objects if thinking intensely). Head often tilted slightly, as if listening to something others can't hear.",
     "clothing_style": "Deliberately mismatched in a way that reads as intentional rather than careless. Typical uniform: expensive formal jacket (Ringo-issue or thrifted designer) worn over a maintenance-grade base layer (grey, well-worn, no logos). Clean shoes — always clean shoes, oddly formal — paired with intentionally mismatched socks or laces (one neon, one matte). Borrows vests, borrowed jackets, and cardigans from colleagues without returning them. Tier-3/4 presentation overall: access to Ringo corp resources but deliberately rejecting the aesthetic polish expected of speculative systems staff. Pockets are visibly heavy with devices, notepads, small objects of unclear purpose."
   },
-  "image_prompt": "Sable Möller, lean East Asian-dominant features with warm golden-brown complexion enriched by Sub-Saharan African heritage, long dark brown hair in loose braid, striking bioluminescent blue-green freckle constellation glowing softly across cheekbones and collarbone in neon-lit cyberpunk setting. Wearing deliberately mismatched expensive formal jacket over worn grey maintenance layer, clean shoes with mismatched neon laces, pockets heavy with mysterious tech. Alert warm brown eyes, slight head tilt, fidgeting hands adjusting collar. Cyberpunk 2200s Great Lakes Metropolitan Zone, dimly lit tech workspace or neon-soaked street, neural implant scars subtle at temple. Distracted yet precise posture, the aesthetic of someone caught between corporate access and deliberate anti-polish. Mood: focused distraction, intellectual intensity masked by studied carelessness. High contrast neon lighting emphasizing the glowing freckle modifications. --ar 2:3 --v 6",
+  "image_prompt": "Sable Vo, lean androgynous figure, warm golden-medium brown complexion reflecting Southeast Asian, South Asian, Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage. Long dark brown hair loosely braided, warm brown alert eyes, clean-shaven youthful face. Distinctive soft blue-green bioluminescent freckle constellation glowing faintly across cheekbones, nose bridge, and collarbone. Wearing expensive formal jacket layered over grey maintenance-grade base layer, clean formal shoes with mismatched neon-and-matte laces. Heavy pockets bulging with devices and notepads. Posture slightly tilted head, simultaneously present and distracted. GLMZ Great Lakes Metropolitan Zone, moody low-light setting emphasizing bioluminescent freckles, neural implant aesthetic, corporate-meets-deliberately-unkempt styling --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 60.7,
-    "Sub-Saharan African": 16.5,
-    "Hispanic/Latin American": 11.9,
-    "Northern European": 9.5,
-    "Middle Eastern": 1.4
+    "Southeast Asian": 42.5,
+    "South Asian": 29.9,
+    "Hispanic/Latin American": 13.6,
+    "Sub-Saharan African": 11,
+    "Indigenous American": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 42.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5,
+        "Tamil Sri Lankan": 9.1
+      },
+      "Pakistani": {
+        "Pashtun": 3.2
+      },
+      "Indian": {
+        "Marathi": 8.7,
+        "Telugu": 3.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 6.5
+      },
+      "South American": {
+        "Colombian": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 7.7
+      },
+      "Southern African": {
+        "Mozambican": 3.3
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 2
+      },
+      "Andean": {
+        "Quechua": 1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67f7925abce751388028966",
   "type": "character",
-  "name": "Vale Valenzuela-Ekwensi-Möller",
+  "name": "Luciana Valenzuela-Bustamante-Ekwensi",
   "aliases": [
     "Pharm",
     "Uncle Femi"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Narrows, junction of Copperhead and Blackpipe Corridor, near Damen and Armitage",
-  "description": "Oluwafemi is a heavyset man going soft at the middle, with dark brown skin cross-hatched with old burn scarring on his right forearm from a factory accident in his forties. His hair is silver-white and cropped close; he keeps a neat beard that he touches thoughtfully when someone describes their symptoms. He wears a long coat the colour of old concrete with deep internal pockets organised with a precision that would embarrass a hospital pharmacist — every sleeve, every fold has its place. His stall is technically a folding table and a parasol, but regulars know to look for the chalk spiral he marks on the pavement when he's open for business. He smells faintly of menthol and something green and earthy.\n\nHe is unhurried in a neighbourhood that never stops moving. He asks about your sleep, your diet, whether the pain is sharp or dull, before he reaches for anything. He's not a doctor — he says this every time, without shame — but he's treated every condition a tier-1 existence can produce, and most of his customers can't afford the alternative. He prays to the E.L.F. he calls the Apothecary — a spirit he believes inhabits the old drug dispensary terminal in the Blackpipe clinic ruins — leaving carefully organised data packets as offerings each Sunday.",
+  "description": "Luciana Valenzuela-Bustamante-Ekwensi is a heavyset man going soft at the middle, with dark brown skin cross-hatched with old burn scarring on his right forearm from a factory accident in his forties. His hair is silver-white and cropped close; he keeps a neat beard that he touches thoughtfully when someone describes their symptoms. He wears a long coat the colour of old concrete with deep internal pockets organised with a precision that would embarrass a hospital pharmacist — every sleeve, every fold has its place. His stall is technically a folding table and a parasol, but regulars know to look for the chalk spiral he marks on the pavement when he's open for business. He smells faintly of menthol and something green and earthy.\n\nHe is unhurried in a neighbourhood that never stops moving. He asks about your sleep, your diet, whether the pain is sharp or dull, before he reaches for anything. He's not a doctor — he says this every time, without shame — but he's treated every condition a tier-1 existence can produce, and most of his customers can't afford the alternative. He prays to the E.L.F. he calls the Apothecary — a spirit he believes inhabits the old drug dispensary terminal in the Blackpipe clinic ruins — leaving carefully organised data packets as offerings each Sunday.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -168,7 +168,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,29 +183,19 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Helix Biosystems",
+    "The Apothecary",
     "The Narrows Compact",
     "Copperhead",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Accidental",
+    "GLMZ",
     "Concrete",
     "Silver",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Cinderblock Ai",
-    "Gavril Asante-Puusepp",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Pirjo Asante-Ulukhan",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Apothecary",
-    "The Narrows"
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Panethnic diaspora blend: Sub-Saharan African (29.8%, Nigerian roots), Southeast Asian (25.9%), East Asian (17.1%), Hispanic/Latin American (16.0%), Eastern European (11.2%). A rare phenotype showing the layered ancestry of the Ubiquitous Diaspora—his features carry the broad bone structure and warm skin undertones of West African ancestry, softened by the straighter hair texture and eye shape influenced by Southeast and East Asian genetics, with subtle angular elements from Eastern European lineage.",
+    "heritage": "Panethnic diaspora blend: Hispanic/Latin American (46.6%), Sub-Saharan African (28.2%), Southeast Asian (9.2%), East Asian (7.2%), Indigenous American (4.8%), South Asian (4.0%). A rare phenotype showing the layered ancestry of the Ubiquitous Diaspora—features carry the broad bone structure and warm skin undertones of Sub-Saharan African and Latin American ancestry, softened by straighter hair texture and eye shape influenced by Southeast and East Asian genetics, with subtle angular cheekbone definition from East Asian admixture and refined bone structure from South Asian lineage, anchored by the underlying skeletal framework of Indigenous American heritage.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Heavyset with softening middle age; broad shoulders and thick chest still carrying factory-worker musculature from decades past, but layered with accumulated weight in the torso and face",
@@ -213,8 +203,8 @@
     "hair_style": "Closely cropped, neat and maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm deep brown with golden undertones—the blended result of Sub-Saharan African base darkened subtly by Southeast Asian and East Asian admixture, creating a rich, uniform tone with slight olive depths",
-    "complexion": "Weathered, lined face with the texture of someone who spent forty years under industrial lights and now spends days outdoors. Bone structure shows the broader facial planes of West African ancestry with slightly higher cheekbones influenced by East/Southeast Asian heritage. Skin shows age but remains clear. Well-groomed silver beard kept short and shaped with deliberate care. Nasolabial folds deepened by age and weight distribution.",
+    "skin_tone": "Warm deep mahogany brown with golden undertones—the blended result of Sub-Saharan African and Latin American base enriched by Southeast and East Asian admixture, creating a rich, uniform tone with subtle olive and amber depths that shift in different lighting",
+    "complexion": "Weathered, lined face with the texture of someone who spent forty years under industrial lights and now spends days outdoors. Bone structure shows the broader facial planes of West African and Latin American ancestry with defined, slightly prominent cheekbones elevated by East Asian heritage influence and refined contours from South Asian admixture. Nasal bridge shows subtle definition. Skin shows age but remains clear. Well-groomed silver beard kept short and shaped with deliberate care. Nasolabial folds deepened by age and weight distribution.",
     "distinguishing_marks": [
       "Extensive burn scarring cross-hatching the entire right forearm — raised, discolored tissue in white and dark brown patches from an industrial accident in his forties",
       "Small, deliberate scar on his left temple, barely visible beneath gray stubble growth"
@@ -223,16 +213,66 @@
     "posture_movement": "Unhurried and deliberate. He moves with the calm efficiency of someone who has learned that speed signals desperation. When listening to a customer describe symptoms, his weight shifts to his back leg and his hand rises thoughtfully to stroke his beard. His fingers are stained faintly yellow from handling pharmaceutical compounds.",
     "clothing_style": "A long, heavy overcoat in concrete-grey — weathered, well-maintained, with deep internal pockets organized with obsessive precision. Underneath: simple black thermal shirt and dark gray work pants. Worn leather boots, resoled multiple times. No jewelry. Everything functional, nothing fashionable. Tier 5 practicality — durability over style, but clean and dignified."
   },
-  "image_prompt": "Vale Valenzuela-Ekwensi-Möller, 178cm heavyset man in his 60s with silver-white closely cropped hair and dignified bearing. Deep warm brown skin with golden undertones reflecting Sub-Saharan African, Southeast Asian, and Eastern European ancestry blend. Weathered face with prominent nasolabial lines, dark brown eyes, well-groomed silver beard. Extensive burn scars visible cross-hatching right forearm in white and dark patches. Wearing concrete-grey heavy overcoat over black thermal shirt and dark work pants, worn leather boots resoled multiple times. Standing in neon-lit GLMZ 2226 underground pharmaceutical clinic, fingers stained yellow from compounds, hand raised thoughtfully to beard while examining customer. Industrial cyberpunk atmosphere, cool-toned LED lighting casting shadows across scarred features. Calm, deliberate posture conveying decades of quiet expertise. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of a 178cm heavyset middle-aged man in the GLMZ, 2226. Deep mahogany-brown skin with golden undertones showing rich Sub-Saharan African, Latin American, Southeast Asian, and South Asian blend. Strong broad facial structure with refined cheekbones, weathered lines from decades of industrial work, dark brown eyes. Silver-white short-cropped hair and meticulously groomed silver beard. Extensive white and brown burn scarring across right forearm. Wearing a heavy concrete-grey weathered overcoat over black thermal shirt, dark work pants, worn leather boots. Calm, deliberate posture with thoughtful hand to beard. Yellow-stained fingers from pharmaceutical work. Subtle scarring at base of skull behind right ear from neural implant. Underground pharmaceutical clinic setting, moody amber and blue neo-noir lighting, photorealistic, dignified and weathered, tier 5 utilitarian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 29.8,
-    "Southeast Asian": 25.9,
-    "East Asian": 17.1,
-    "Hispanic/Latin American": 16.0,
-    "Eastern European": 11.2
+    "Hispanic/Latin American": 46.6,
+    "Sub-Saharan African": 28.2,
+    "Southeast Asian": 9.2,
+    "East Asian": 7.2,
+    "Indigenous American": 4.8,
+    "South Asian": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 10.4,
+        "Dominican": 36.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 15.7
+      },
+      "Central African": {
+        "Cameroonian": 12.5
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 9.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 7.2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 0.3,
+        "Choctaw": 0.3
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 3.9
+      },
+      "Andean": {
+        "Mapuche": 0.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.8
+      },
+      "Nepali": {
+        "Nepali": 1
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 0.2
+      }
+    }
+  }
 }

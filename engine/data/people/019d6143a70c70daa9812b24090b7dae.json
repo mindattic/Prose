@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70c70daa9812b24090b7dae",
   "type": "character",
-  "name": "Mika Lindström",
+  "name": "Mika Petrović",
   "aliases": [
     "Pixel",
     "Pix",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "alive",
   "location": "The Shelf — Level 12, Unit 1207, directly adjacent to Kyle's unit. The wall between them is thin enough that Kyle can hear Pixel's music, soldering iron, and running commentary on whatever they're disassembling., near Ashland and Chicago Ave",
-  "description": "Pixel is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Pixel's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Pixel repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
+  "description": "Mika Petrović is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Mika Petrović's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Mika Petrović repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -240,7 +240,7 @@
     "Protector": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -259,53 +259,21 @@
   "related_entities": [
     "Axiom Industries",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Ghost Ronin",
     "TESSERA WL-6 'Stacker'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Chicago",
+    "Neural Palate",
+    "The Paste Bar",
     "Slagworks Industrial",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Iron",
-    "Chicago",
-    "Altan Tanaka-Frimpong",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chen Wei-Lin",
-    "Djeneba Blom-Attah",
-    "Eshe Pena-Baah",
-    "HOLLOW SIGNAL // RADIO",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Kyle Ellen Corbin-Vasik",
-    "MERIDIAN",
-    "Nnenna Baluarte-Volkov",
-    "Nnenna Vásquez-Kuosmanen",
-    "Obafemi Szczypiński-Lautoa",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Pikasso Wemba-Þórðarson",
-    "Saodat Mirzoyan-Fubara",
-    "Shelf Chairlift",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Coffin Nails",
-    "The Pure Hand",
-    "The Question",
-    "Timur Osei-Bjelke",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure"
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (52.1%) with significant Hispanic/Latin American (36.5%) and Sub-Saharan African (11.4%) ancestry. Features reflect this blend: warm brown skin with golden undertones, subtle facial structure showing Southeast Asian and Latin heritage, darker pigmentation distributed across the spectrum from the African ancestry component.",
+    "heritage": "Eastern European dominant (62.3%) with significant East Asian (18.7%), Sub-Saharan African (12.2%), and South Asian (6.8%) ancestry. Facial structure combines Eastern European angularity—defined cheekbones and sharp jawline—with the softer eye contours of East Asian heritage. Skin tone reflects the full diaspora blend: warm golden-brown base with bronze undertones bridging African and South Asian warmth, cooled subtly by Eastern European genetics. Overall phenotype distinctly mixed-heritage, bearing visible markers of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Wiry and slight, with the hollow-chested frame of someone who forgets to eat during hyperfocus sessions. Minimal muscle definition; posture often hunched over workbenches. Deceptively strong in the hands and forearms despite appearance.",
@@ -313,8 +281,8 @@
     "hair_style": "Deliberately mismatched: buzzed to scalp on right side (showing dark stubble), grown into uneven natural curls on left side",
     "hair_length": "Asymmetrical (short on right, medium on left)",
     "eye_color": "Right: dark brown, natural. Left: matte black synthetic with amber processing ring (Axiom Industries salvage)",
-    "skin_tone": "Warm golden-brown with subtle bronze undertones; perpetually smudged with solder flux, thermal paste, and microscopic circuitry dust",
-    "complexion": "Youthful but weathered; pronounced dark circles under eyes suggesting chronic sleep debt. Angular facial structure with defined cheekbones reflecting Southeast Asian heritage mixed with warmer Latin tonality. Occasional nervous tics around the jaw. Fingernails bitten to the quick on left hand (natural); right prosthetic hand has no nails.",
+    "skin_tone": "Warm golden-brown with bronze undertones; perpetually smudged with solder flux, thermal paste, and microscopic circuitry dust",
+    "complexion": "Youthful but weathered; pronounced dark circles under eyes suggesting chronic sleep debt. Angular facial structure with defined cheekbones (Eastern European) softened by East Asian eyelid structure and South Asian warmth. Golden-brown coloration across face and neck reflects blended ancestry. Occasional nervous tics around the jaw. Fingernails bitten to the quick on left hand (natural); right prosthetic hand has no nails.",
     "distinguishing_marks": [
       "Data-port scar behind right ear: thin vertical line with faint keloid tissue, partially obscured by micro-receiver implants",
       "Solder burn scars on hands and wrists: scattered small circular marks and linear burns, mostly on left hand",
@@ -325,14 +293,65 @@
     "posture_movement": "Habitually hunched, especially when standing still or listening. Fidgety hands (constant micro-movements, tapping, disassembling/reassembling small objects). When focused on tech: perfectly still, almost meditative. When anxious or overstimulated: rapid head movements, frequent eye-contact avoidance. Walks quickly with slightly uneven gait (right prosthetic arm affects balance distribution). Nervous energy barely contained — bounces on heels, plays with data-port scar when thinking.",
     "clothing_style": "Tier 5 scavenger aesthetic: mismatched, heavily modified utility wear. Oversized grey Shelton Manufacturing work jacket (sleeves cut to accommodate prosthetic arm, covered in patches and stitching). Black cargo pants with at least a dozen zippered pockets, many containing salvaged components. Worn synthetic-leather boots (one sole detaching slightly). Shirt underneath is usually a random corporate tech-support tee with the logo modified with marker. Neon paracord bracelet on left wrist. No jewelry except the ear studs and micro-receivers. Visible wear patterns suggest frequent crawling through maintenance ducts and equipment bays."
   },
-  "image_prompt": "Mika Lindström, 168cm wiry frame, warm golden-brown skin with Southeast Asian and Latin features, hunched posture over workbench. Dark brown natural curls on left, buzzed right side with magenta bleached streaks fading to pink. Right dark brown eye, left oversized matte-black cybernetic scanner prosthetic with amber LED ring. Solder scars and thermal paste stains on hands. Patchwork grey prosthetic right arm with visible seams. Micro-receiver implants clustered behind right ear, data-port scarring visible. Dark circles, nervous energy. Wearing oversized grey Shelton work jacket (sleeves modified for prosthetic), black cargo utility pants, worn boots. Neon paracord bracelet. Circuitry dust and flux smudges on skin. Fidgeting with salvaged components. Cyberpunk 2226, dimly lit equipment bay with blue LED glow at augmentation junctions. --ar 2:3 --v 6",
+  "image_prompt": "Mika Petrović, 168cm wiry neo-noir technician with warm golden-brown skin bearing Eastern European angular features softened by East Asian eye structure and South Asian warmth, standing in a cramped maintenance bay filled with flickering neon glow. Asymmetrical dark brown hair with faded magenta streaks—buzzed on right side, curled on left. One natural dark brown eye, one oversized matte-black Axiom Industries prosthetic eye with amber LED ring protruding slightly. Patchwork grey prosthetic right arm with visible seams and welded components. Solder burns and thermal paste stains on hands. Wearing oversized grey Shelton Manufacturing work jacket with cut sleeves, black cargo pants with numerous pockets, worn boots. Data-port scar visible at right ear base with micro-receiver implants glinting. Hunched posture, fidgeting hands. Dark circles under eyes. Surrounded by scattered circuitry, cables, and salvaged tech components. Cool blue-white LED work lighting with warm amber accents. GLMZ, gritty scavenger aesthetic, hyper-focused tension. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 52.1,
-    "Hispanic/Latin American": 36.5,
-    "Sub-Saharan African": 11.4
+    "Eastern European": 62.3,
+    "East Asian": 18.7,
+    "Sub-Saharan African": 12.2,
+    "South Asian": 6.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 7,
+        "Russian": 9.7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 30.4,
+        "Romanian": 1.5
+      },
+      "Slavic South": {
+        "Bosnian": 7.9,
+        "Serbian": 5.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 8.2,
+        "Mandarin Northern": 1.9
+      },
+      "Korean": {
+        "Korean": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 6.9,
+        "Ghanaian": 3.6
+      },
+      "Central African": {
+        "Gabonese": 0.4
+      },
+      "East African": {
+        "Tanzanian": 0.9,
+        "Somali": 0.4
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 1.7,
+        "Sindhi": 0.8
+      },
+      "Nepali": {
+        "Nepali": 3.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.7
+      }
+    }
+  }
 }

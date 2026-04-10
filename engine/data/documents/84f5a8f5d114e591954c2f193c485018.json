@@ -6,7 +6,9 @@
   "date": "unknown",
   "classification": "restricted",
   "description": "A BCI diagnostic log that shows the device attempting to connect to a neural mesh that doesn't exist. The mesh ID resolves to no known network. The connection attempts occur at exactly 3:17 AM every night. The user is asleep. The BCI is not in sleep mode during these attempts.",
-  "related_entities": [],
+  "related_entities": [
+    "Neural Palate"
+  ],
   "credibility": "unconfirmed",
   "story_hooks": [
     "What network is the BCI trying to reach?",

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73775989145b34e15ad72b1",
   "type": "character",
-  "name": "Sekou Kjellberg-Nwosu",
+  "name": "Delta Baek-Nakamura",
   "aliases": [
     "Zip",
     "Zipp"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift, near Pulaski and Chicago Ave",
-  "description": "Zipporah is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nZipporah is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
+  "description": "Delta Baek-Nakamura is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nDelta Baek-Nakamura is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -193,7 +193,7 @@
     "Code Keeper": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,29 +214,15 @@
     "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
     "Ferrogate Transit",
     "Palladian Construction",
-    "Copper",
-    "Bashir Quansah-Mehrotra",
-    "Chicago",
-    "Axolotl Regenerative Suite",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Devraj Solano-Yildirim",
-    "Dzemal Acholonu-Patagiri",
-    "Glenville Sound",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
     "Plot 17",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "The Counter",
-    "The Heritage Vault",
-    "The Signal",
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Whispermouth"
+    "Tamale Marta",
+    "Chicago",
+    "Copper",
+    "Zara Bergqvist"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: 44.6% Sub-Saharan African, 31.9% East Asian, 15.8% Pacific Islander, 7.7% Eastern European. Features reflect this diverse ancestry—warm deep brown skin with subtle golden undertones, facial structure showing East Asian and Sub-Saharan heritage blend, with Pacific Islander warmth and Eastern European undertones in bone structure",
+    "heritage": "Predominantly East Asian (85.6%) with significant Sub-Saharan African heritage (7.3%), balanced by Eastern European (4.3%) and Hispanic/Latin American (2.8%) ancestry. The genetic blend creates a warm, complex phenotype—East Asian bone structure and eye shape form the foundation, deepened and warmed by Sub-Saharan heritage creating richness in skin tone and facial depth, with subtle Eastern European influence visible in cheekbone prominence and complexion resilience, and faint Latin American warmth in undertones",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with visible muscle definition from constant movement and kitchen work; restless frame that seems to vibrate at a frequency slightly faster than the rest of the world",
@@ -244,8 +230,8 @@
     "hair_style": "Buzzed short on sides (undercut, left side faded to stubble), natural texture left longer on top (roughly 5cm, texture-styled upward)",
     "hair_length": "Short/Medium (asymmetrical)",
     "eye_color": "Dark brown, alert and constantly scanning",
-    "skin_tone": "Warm deep brown with golden undertones, reflecting the blend of Sub-Saharan and East Asian heritage with Pacific Islander warmth",
-    "complexion": "Clean but weathered from 2200-0600 kitchen heat exposure; perpetually flushed cheeks; bioluminescent freckles across cheekbones and collarbones that glow faint blue when heart rate rises (which is frequently)",
+    "skin_tone": "Warm medium-deep brown with golden-amber undertones; the result of dominant East Asian heritage creating smooth dimension, Sub-Saharan ancestry adding warmth and richness, Eastern European influence contributing subtle olive undertones, Hispanic/Latin American ancestry adding warmth to the overall effect",
+    "complexion": "Clean but weathered from 2200-0600 kitchen heat exposure; perpetually flushed cheeks with natural depth; bioluminescent freckles across cheekbones and collarbones that glow faint blue when heart rate rises (which is frequently). Facial features show East Asian eye-fold characteristics and mid-face structure, with Sub-Saharan warmth and fullness in lips and cheek contours",
     "distinguishing_marks": [
       "Bioluminescent freckle pattern across both cheekbones and extending down collarbones — pale blue glow, pulse-responsive, most visible in low light",
       "Nicotine patch port on left forearm (small circular scar with faint chrome ring, cosmetically modified and repurposed for stim patches)"
@@ -254,15 +240,44 @@
     "posture_movement": "Perpetually in motion — bouncing knee when seated, constant finger-tapping rhythms on any surface, restless hand gestures while speaking. Moves through space with efficient kitchen choreography, economical but never still. Fidgets with objects compulsively (spatula flips, claw clicks, patch adjustments)",
     "clothing_style": "Tier 3-4 working class. Standard black nonslip kitchen pants (reinforced weave), loose-fitting grey or faded band-logo t-shirt under an oversized, grease-stained denim jacket with rolled sleeves. Worn black canvas work shoes with visible copper-wire zipper pulls for durability. Small silver chain necklace (repurposed from broken jewelry). Nicotine patches visible on left forearm. No formal grooming — practical and minimal, everything chosen for function over appearance"
   },
-  "image_prompt": "Sekou Kjellberg-Nwosu, 168cm wiry lean kitchen worker with warm deep brown skin and golden undertones, mid-2200s cyberpunk setting. Short asymmetrical buzzcut with copper dye over dark brown roots, 1-2cm regrowth visible, longer texture on top styled upward. Dark brown alert eyes constantly scanning. Bioluminescent blue freckles glowing across cheekbones and collarbones, pulse-responsive. Restless posture mid-motion, finger-tapping rhythm on surface. Wearing grease-stained oversized denim jacket with rolled sleeves over grey faded band-logo t-shirt, black reinforced kitchen pants, worn canvas work shoes. Chrome claw visible as seam on right index finger, nicotine patch port scarring on left forearm. Silver chain necklace. Dimly lit kitchen or underground noodle bar setting, neon glow catching the bioluminescent freckles, perpetual motion and fidgeting energy visible, functional working-class aesthetic, cyberpunk 2226 GLMZ environment --ar 2:3 --v 6",
+  "image_prompt": "Delta Baek-Nakamura, 168cm wiry lean figure, warm medium-deep brown skin with golden-amber undertones reflecting East Asian-African heritage blend. Sharp East Asian facial structure with full Sub-Saharan cheek contours, dark brown alert eyes constantly scanning. Deep copper-dyed hair with dark roots, asymmetrical undercut with buzzed sides fading to stubble, longer texture-styled top. Faint bioluminescent blue freckles across cheekbones pulsing with restless energy. Weathered kitchen-worker complexion, perpetually flushed. Right index finger showing chrome claw seam, left forearm nicotine patch port visible with metallurgical sheen. Wearing oversized grease-stained denim jacket over faded band-logo t-shirt, black reinforced kitchen pants, worn black canvas work shoes. Small silver chain necklace. Fidgeting with hands, restless energy radiating. GLMZ GLMZ kitchen worker on break, moody blue-tinted neon lighting, industrial kitchen background with stainless steel surfaces reflecting faint bioluminescence, gritty urban dystopian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.6,
-    "East Asian": 31.9,
-    "Pacific Islander": 15.8,
-    "Eastern European": 7.7
+    "East Asian": 85.6,
+    "Sub-Saharan African": 7.3,
+    "Eastern European": 4.3,
+    "Hispanic/Latin American": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14
+      },
+      "Korean": {
+        "Korean": 55.4
+      },
+      "Chinese": {
+        "Cantonese": 5.6,
+        "Hakka": 10.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 7.3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 2.8
+      }
+    }
+  }
 }

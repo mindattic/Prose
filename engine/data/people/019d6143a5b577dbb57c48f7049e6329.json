@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b577dbb57c48f7049e6329",
   "type": "character",
-  "name": "Aero Karunaratne-Konaté",
+  "name": "Aero Kovács-Cervantes",
   "aliases": [
     "Apo",
     "The Frequency Kid"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building, near Clark and Belmont",
-  "description": "Apolinar is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair — currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Apolinar is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
+  "description": "Aero Kovács-Cervantes is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair — currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Aero Kovács-Cervantes is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -161,7 +161,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,35 +180,18 @@
     "Ringo Corponation Haptic Signature Recorder",
     "Canopy Station Nine",
     "Prism Security Group",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Flicker Collective",
     "Copper",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
+    "Neural Palate",
+    "Canopy",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Static",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Aybek Alvarez-Okonkwo",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bathysphere Networks",
-    "Bogdan Achebe-Svanstrom",
-    "Flicker",
-    "Highland Park Autonomous Zone",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "MERIDIAN",
-    "Marrow Broadcast",
-    "Nurlan Morita-Antwi",
-    "Philibert Mwangi-Djordjevic",
-    "SynapTech Prism AR Personal Neural Interface",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Antenna",
-    "The Canopy",
-    "The Heritage Vault",
-    "The Signal",
-    "Tomáš Ekwuosi-Ranginui",
-    "Yannick Tambadou-Reinholt"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian primary (66%, likely Bengali, Tamil, or Sinhala ancestry) with significant Sub-Saharan African heritage (24.7%, West African genetic markers) and Southeast Asian secondary ancestry (9.3%, possibly Thai or Khmer). This combination produces warm medium-brown skin with subtle undertones reflecting the full diaspora blend—neither purely South Asian nor African, but a complex tertiary phenotype.",
+    "heritage": "Mixed diaspora ancestry: 47.2% Hispanic/Latin American, 32.3% Eastern European, 20.5% Sub-Saharan African. This combination produces a warm medium-brown skin tone with complex undertones—Latin American warmth blended with Eastern European bone structure and African genetic expression creating a tertiary phenotype that reads as distinctly globally-mixed rather than regionally monolithic.",
     "height_cm": 185,
     "weight_kg": 68,
     "build": "Angular and lean with long limbs; the kind of frame that looks perpetually in motion even when still. Minimal body fat, evident musculature in shoulders and forearms from antenna work. No bulk, all reach.",
@@ -216,8 +199,8 @@
     "hair_style": "Shoulder-length, deliberately unstyled; often pulled back with salvaged wire or abandoned by a headset crown during work sessions",
     "hair_length": "Medium",
     "eye_color": "Luminescent irises (base color indeterminable; modified to emit soft glow that intensifies during neural processing). Flickers subtly when reading data patterns.",
-    "skin_tone": "Warm medium brown with golden undertones from South Asian ancestry, deepened subtly by Sub-Saharan African genetic expression. Even complexion across face and body with a luminous quality suggesting Southeast Asian skin characteristics. Reflects warm indoor and cool outdoor light distinctly.",
-    "complexion": "Fine-featured with the bone structure characteristic of South Asian genetics—defined cheekbones, graceful jawline. Prominent brow ridge with slightly broader nasal base reflecting African heritage blend. Skin clear but marked by the chronic tiredness of someone working 2am-dawn cycles. Dark circles are aesthetic rather than health concern. Faint stress lines around the eyes from sustained focus work.",
+    "skin_tone": "Warm medium-brown with golden undertones from Latin American ancestry, deepened by Eastern European undertones and Sub-Saharan African genetic expression. Even complexion with luminous quality suggesting healthy skin resilience across all climate exposures.",
+    "complexion": "Defined cheekbones and graceful jawline reflecting the mixed heritage blend. High, prominent cheekbones characteristic of Eastern European ancestry, softened by fuller lip structure from Latin American heritage and refined by Sub-Saharan African genetic influence. Moderate brow ridge with balanced nasal proportions from the three-way ancestry mix. Skin clear but marked by the chronic tiredness of someone working 2am-dawn cycles. Dark circles are aesthetic rather than health concern. Faint stress lines around the eyes from sustained focus work.",
     "visible_augmentations": "Color-shifting hair geneware is immediately obvious. Luminescent irises are visible in low light and become hypnotic during active data processing. Neural mesh scars at temples are subtle but visible if examined. No external chrome or obvious prosthetics.",
     "distinguishing_marks": [
       "Faint silver scarring along both temples where the signal-sensitivity neural mesh was installed (roughly 3cm lines, now pale but visible if light catches them)",
@@ -226,14 +209,44 @@
     "posture_movement": "Restless and angular; moves with sudden intensity punctuated by long stillness. Fidgets constantly when not actively working — fingers mimicking antenna movements, shoulders rolling through tension. When engaged with a client or processing signal data, becomes unnaturally still, almost meditative. Walks with a slight forward lean as if always approaching something.",
     "clothing_style": "Deliberately transient layering aesthetic. Base: fitted black or dark grey crew-neck shirts (synthetic blend, durable, Tier 3-4 brands like Pulse or Meridian). Layers of jackets, cardigans, and oversized sweaters (many borrowed and never returned) shed throughout the day. Canvas or synthetic pants in black or charcoal, multiple pockets for salvaged components. Worn utility boots with industrial grip soles. Constantly wears a headset crown (modified open-frame design, kept around neck or on head) and has at least three scarves in rotation. Aesthetic reads as 'perpetually between places' — Edgewater bohemian-technical rather than corpo or street tier."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait: androgynous lean South Asian-African-Southeast Asian heritage, warm medium-brown complexion with golden undertones, fine facial features with prominent cheekbones and brow ridge. Shoulder-length color-shifting hair (deep violet to orange-red), luminescent glowing irises that flicker softly, faint silvery temple scars from neural mesh. 185cm tall, angular build. Wearing fitted black crew-neck shirt layered under oversized charcoal cardigan, black canvas utility pants, worn industrial boots. Modified open-frame headset crown draped around neck, multiple scarves. Ink antenna tattoo visible on inner left wrist. Restless posture with slight forward lean, fidgeting fingers. Deep neon-lit workshop or apartment setting, cool blue and warm amber lighting casting shadows across sharp features. Tired but focused expression. Edgewater bohemian-technical aesthetic, exhausted genius energy. Moody atmospheric cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Aero Kovács-Cervantes, 185cm lean angular frame, warm medium-brown skin with golden undertones, high Eastern European cheekbones softened by fuller Latin American lips, Sub-Saharan African refined features. Shoulder-length color-shifting geneware hair cycling violet to warm orange-red. Luminescent glowing irises, faint temple neural mesh scars, antenna tattoo on inner left wrist. Restless posture with forward lean, fingers fidgeting. Fitted black crew-neck synthetic shirt layered with oversized borrowed sweater and canvas utility jacket, dark grey pants with component pockets, worn industrial boots. Modified open-frame headset crown around neck, multiple scarves in rotation. Edgewater bohemian-technical aesthetic, perpetually between places. GLMZ, Great Lakes Metropolitan Zone, 2am-dawn light casting shadows across defined cheekbones, dark circles from signal work, skin with luminous resilience quality, still-life moment of restful intensity, neural processing mode, soft neon ambient lighting filtering through industrial workspace, moody and tech-integrated --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 66.0,
-    "Sub-Saharan African": 24.7,
-    "Southeast Asian": 9.3
+    "Hispanic/Latin American": 47.2,
+    "Eastern European": 32.3,
+    "Sub-Saharan African": 20.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 47.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 24.8
+      },
+      "Slavic East": {
+        "Ukrainian": 0.9,
+        "Belarusian": 4
+      },
+      "Slavic South": {
+        "Serbian": 2.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 2
+      },
+      "Southern African": {
+        "Zimbabwean": 13.5
+      },
+      "East African": {
+        "Somali": 5
+      }
+    }
+  }
 }

@@ -10,7 +10,7 @@ namespace StreetSamurai.Core.Services;
 /// creates layered conflict and moral ambiguity.
 ///
 /// ── WHY ──
-/// Stories in Meridian 88 are driven by contracts — jobs that freelancers take from
+/// Stories in GLMZ are driven by contracts — jobs that freelancers take from
 /// fixers, corps, or factions. A contract is not just "go here, do this." It is a
 /// structured narrative seed with a client who has hidden motives, a job that goes
 /// sideways (complication), a twist that reframes the situation, and a moral dilemma
@@ -96,7 +96,7 @@ public class ContractGenerator
         var payout = $"Φ{payoutBase:N0}";
 
         var system = $"""
-            You are a contract designer for cyberpunk freelancer fiction set in Meridian 88.
+            You are a contract designer for neo-noir freelancer fiction set in GLMZ.
             Design a job contract that a fixer would offer to a street operator.
 
             AVAILABLE WORLD ELEMENTS:

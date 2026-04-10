@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71c755a86c552d9a1fa9492",
   "type": "character",
-  "name": "Zara Fredriksen",
+  "name": "Zara Cisneros",
   "aliases": [
     "Xim",
     "The Weaver"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Ferment Quarter, specifically a converted transformer station on Brewer's Spine, near Damen and Armitage",
-  "description": "Ximara is a tall woman with the wide shoulders of someone who hauls heavy equipment daily and the careful, ink-stained hands of a jeweler. Her skin is a deep amber-brown, and she's had bioluminescent striping installed along her collarbones and forearms — pale violet threads that pulse slowly in the dark, mimicking the rhythm of her own heartbeat. She keeps her hair in dense, silver-bleached locs twisted with fiber-optic wire, so that when she works at night she seems to float at the center of her own constellation. Her face is lined around the eyes from squinting at light sources for two decades, and she has a habit of tilting her head when she listens, as though receiving a signal.\n\nShe is not warm on first meeting — she gives people the same careful, assessing look she gives a new piece of raw neon tubing, measuring whether they are worth her time. But she is fiercely loyal to those who earn that assessment, and her studio is perpetually full of younger artists she feeds, scolds, and teaches without ever calling it mentorship. Her installations are known for the way they seem to breathe — she has a singular talent for reading the electromagnetic signatures of inhabited spaces and building light structures that resonate with the ELFs present there. Devotees of digital spirits make pilgrimages to her larger pieces, leaving data offerings in the junction boxes she deliberately leaves accessible.",
+  "description": "Zara Cisneros is a tall woman with the wide shoulders of someone who hauls heavy equipment daily and the careful, ink-stained hands of a jeweler. Her skin is a deep amber-brown, and she's had bioluminescent striping installed along her collarbones and forearms — pale violet threads that pulse slowly in the dark, mimicking the rhythm of her own heartbeat. She keeps her hair in dense, silver-bleached locs twisted with fiber-optic wire, so that when she works at night she seems to float at the center of her own constellation. Her face is lined around the eyes from squinting at light sources for two decades, and she has a habit of tilting her head when she listens, as though receiving a signal.\n\nShe is not warm on first meeting — she gives people the same careful, assessing look she gives a new piece of raw neon tubing, measuring whether they are worth her time. But she is fiercely loyal to those who earn that assessment, and her studio is perpetually full of younger artists she feeds, scolds, and teaches without ever calling it mentorship. Her installations are known for the way they seem to breathe — she has a singular talent for reading the electromagnetic signatures of inhabited spaces and building light structures that resonate with the ELFs present there. Devotees of digital spirits make pilgrimages to her larger pieces, leaving data offerings in the junction boxes she deliberately leaves accessible.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -156,7 +156,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,39 +171,22 @@
   "related_entities": [
     "Brewer's Spine",
     "Jefferson Switch",
+    "The Resonance Communion",
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "TESSERA PG-2 'Signature'",
-    "The Resonance Communion",
-    "Aslan Vasquez-Chatterjee",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Noir Dining",
     "Tessera Corponation",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gravimetric Collapse Charge GCC-9",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Silver",
+    "The Pure Hand",
+    "Gravimetric Collapse Charge GCC-9",
     "Slagworks Industrial",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Pale Mile",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Devraj Solano-Yildirim",
-    "Free Assembly",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Noir Dining",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Ferment Quarter",
-    "The Third Rail",
-    "The Underlayer Collective",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yuki Nwosu-Petrenko"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (38.6%), East Asian (28.8%), Sub-Saharan African (20.1%), Eastern European (12.5%). Features reflect this complex genetic ancestry with warm amber undertones, angular bone structure, and almond-shaped eye geometry.",
+    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (44.0%), Northern European (20.6%), East Asian (17.0%), North African (9.6%), Sub-Saharan African (5.5%), Southeast Asian (3.3%). Complex genetic ancestry creates a striking fusion of features—warm bronze skin with golden undertones, angular high cheekbones from East Asian and North African heritage softened by fuller lower face structure from Latin American and Sub-Saharan African ancestry. The combination yields warm medium-brown skin with subtle golden and reddish undertones that shift in different lighting.",
     "height_cm": 183,
     "weight_kg": 74,
     "build": "Tall and broad-shouldered with defined musculature from years of hauling equipment and assembling installations. Lean through the torso, strong hands and forearms. Movement suggests functional strength rather than aesthetics.",
@@ -211,8 +194,8 @@
     "hair_style": "Dense locs twisted tightly, interwoven with fiber-optic wire throughout. The wire catches light and glows faintly during night hours.",
     "hair_length": "Medium (shoulder-length locs)",
     "eye_color": "Deep brown with visible micro-augmentation around the iris for color frequency discrimination",
-    "skin_tone": "Warm amber-bronze with golden undertones, reflecting the blend of Hispanic, East Asian, and Sub-Saharan African ancestry",
-    "complexion": "Angular face with pronounced high cheekbones characteristic of East Asian and Hispanic heritage. Heavy squint lines around eyes from decades of studying light sources. Ink stains visible on knuckles and fingertips. Skin shows minor thermal scarring on forearms from occasional welding contact. Strong defined jawline, minimal makeup.",
+    "skin_tone": "Warm bronze with golden and subtle reddish undertones, a nuanced blend reflecting strong Hispanic/Latin American and East Asian ancestry with additional warmth and depth from North African and Sub-Saharan African heritage",
+    "complexion": "Angular face with pronounced high cheekbones characteristic of East Asian and North African bone structure, balanced by fuller lips and stronger jawline from Latin American and Sub-Saharan African heritage. Heavy squint lines around eyes from decades of studying light sources. Ink stains visible on knuckles and fingertips. Skin shows minor thermal scarring on forearms from occasional welding contact. Strong defined jawline, minimal makeup.",
     "distinguishing_marks": [
       "Bioluminescent violet striping running along both collarbones in thin parallel lines, visible when augmentation activates",
       "Bioluminescent violet striping down both forearms in delicate thread-like patterns, pulse-synchronized to heartbeat",
@@ -224,15 +207,65 @@
     "posture_movement": "Stands with shoulders back, habitually tilts head slightly when listening as though tuning into a frequency. Moves deliberately and economically through space—no wasted motion. Hands gesture sparingly but with precision. When examining objects or light sources, enters an intense focus state where body becomes almost motionless. Walks with long, confident strides at night; moves more slowly during daylight hours as though conserving energy.",
     "clothing_style": "Utilitarian Tier 3-4 aesthetic with deliberate artistic modification. Favors long-sleeved fitted shirts in dark colors (charcoal, deep indigo) to frame her augmented forearms. Wears custom work pants with reinforced pockets and tool loops, often grease-stained or marked with solder burns. Prefers boots with good grip for climbing and assembly work. Layers with a worn denim or canvas vest covered in pins, patches from artist collectives, and small light-reactive badges. Rarely wears jewelry beyond functional pieces. Clothing choices prioritize visibility of augmentations and freedom of movement over fashion—presentation is deliberately anti-corporate, pro-maker."
   },
-  "image_prompt": "Zara Fredriksen, 183cm tall mixed-heritage woman with warm amber-bronze skin and high angular cheekbones, silver-bleached blonde locs interwoven with fiber-optic wire glowing faintly, shoulder-length hair catching neon light. Deep brown augmented eyes with metallic iris enhancement. Muscular lean build, strong forearms marked with bioluminescent violet thread-like patterns pulsing violet in darkness, matching thin violet striping along collarbones. Wearing dark charcoal fitted long-sleeve shirt and reinforced work pants, canvas vest with artist patches and light-reactive badges, heavy boots. Hands show ink stains and calluses from precision work. Thermal scarring visible on inner forearm, small burn mark on temple. Standing in cyberpunk 2226 maker studio setting with ambient neon blue and violet lighting, deliberately tilted head pose suggesting attentive focus, industrial background with light installations and welding equipment. Utilitarian anti-corporate aesthetic. Nighttime low-light cyberpunk atmosphere, moody and focused. --ar 2:3 --v 6",
+  "image_prompt": "Zara Cisneros, tall 183cm mixed-heritage woman with warm bronze skin and golden undertones, standing in a neon-lit GLMZ artist workshop, year 2226. Sharp angular cheekbones with almond-shaped deep brown augmented eyes showing micro-enhancements. Shoulder-length silver-bleached locs with dark roots, interwoven with glowing fiber-optic wire creating constellation patterns. Long-sleeved fitted charcoal shirt revealing bioluminescent violet striping down forearms that pulses faintly. Work-worn denim vest with artist patches and light-reactive badges. Custom reinforced work pants with tool loops, grease-stained. Heavy squint lines around eyes from decades of light study. Ink-stained fingertips. Minor thermal scarring on forearms. Deliberate posture, examining a light source with intense focus, hands positioned with precision. Neo-noir utilitarian aesthetic, anti-corporate maker culture. Moody violet and indigo neon lighting reflecting off augmentations. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 38.6,
-    "East Asian": 28.8,
-    "Sub-Saharan African": 20.1,
-    "Eastern European": 12.5
+    "Hispanic/Latin American": 44,
+    "Northern European": 20.6,
+    "East Asian": 17,
+    "North African": 9.6,
+    "Sub-Saharan African": 5.5,
+    "Southeast Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 38.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 5.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 10.3,
+        "Irish": 10.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 12.8
+      },
+      "Japanese": {
+        "Japanese": 4.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 7.9
+      },
+      "Maghreb": {
+        "Moroccan": 0.7,
+        "Tunisian": 1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 3,
+        "Cameroonian": 2.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 0.8
+      },
+      "Indonesian": {
+        "Javanese": 0.2,
+        "Sumatran": 2.3
+      }
+    }
+  }
 }

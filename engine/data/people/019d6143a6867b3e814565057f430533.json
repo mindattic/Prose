@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6867b3e814565057f430533",
   "type": "character",
-  "name": "Lyric Karimov-Erikstad",
+  "name": "Joaquín Guerrero-Thakur",
   "aliases": [
     "Solly",
     "the Compute Queen"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf lower levels — operates from a rented stall in the Undertow's informal tech market, Solder Lane, near Kedzie and Division",
-  "description": "Orsolya is the kind of person who becomes the room's center of gravity without quite meaning to. They're of middling height, with a light brown complexion and sharp Melanesian-inflected features, hair grown out into a large natural cloud that they've seeded with bioluminescent filaments — gold and pale green — so it glows softly in the dark markets where they spend most of their time. Their eyes have iris mods: slow-shifting geometric patterns in amber and black that rotate when they're concentrating. They dress in tech-market layering — vest over vest over vest, every pocket occupied — and speak with their hands in constant motion.\n\nOrsolya runs stolen processing time the way a commodity trader runs futures: buying access to compromised corporate servers in bulk, slicing the cycles into sellable portions, and brokering them to anyone who needs computational power without a Tessera or Axiom account to buy it clean. Their client base ranges from small-time criminals running encryption to artists rendering immersive works that would be flagged on legitimate servers to political groups the corponations prefer didn't process anything. Orsolya is ethically eclectic about all of this and considerably sharper than most people who underestimate them expect. They have strong opinions about E.L.F.s specifically and will hold forth on data-spirit theology at any provocation.",
+  "description": "Joaquín Guerrero-Thakur is the kind of person who becomes the room's center of gravity without quite meaning to. They're of middling height, with a light brown complexion and sharp Melanesian-inflected features, hair grown out into a large natural cloud that they've seeded with bioluminescent filaments — gold and pale green — so it glows softly in the dark markets where they spend most of their time. Their eyes have iris mods: slow-shifting geometric patterns in amber and black that rotate when they're concentrating. They dress in tech-market layering — vest over vest over vest, every pocket occupied — and speak with their hands in constant motion.\n\nJoaquín Guerrero-Thakur runs stolen processing time the way a commodity trader runs futures: buying access to compromised corporate servers in bulk, slicing the cycles into sellable portions, and brokering them to anyone who needs computational power without a Tessera or Axiom account to buy it clean. Their client base ranges from small-time criminals running encryption to artists rendering immersive works that would be flagged on legitimate servers to political groups the corponations prefer didn't process anything. Joaquín Guerrero-Thakur is ethically eclectic about all of this and considerably sharper than most people who underestimate them expect. They have strong opinions about E.L.F.s specifically and will hold forth on data-spirit theology at any provocation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -193,7 +193,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -210,41 +210,26 @@
     "The Filament",
     "The Shelf",
     "The Quiet Room",
-    "Aslan Vasquez-Chatterjee",
+    "Noir Dining",
     "Tessera Corponation",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
     "Slagworks Industrial",
     "The Pale Mile",
-    "Gold",
-    "Alper Holmberg-Dembele",
-    "Bathysphere Networks",
-    "Djeneba Blom-Attah",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA PA-5 'Attendant'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Ledger",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Gold"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Central and South Asian ancestry, blended with Pacific Islander, Northern European, and trace Sub-Saharan African heritage. The genetic diaspora creates a striking pan-Asian appearance with subtle Pacific and Northern European undertones.",
+    "heritage": "Predominantly Hispanic/Latin American ancestry (63.1%) with significant South Asian (17.0%), blended with Sub-Saharan African (7.1%), Southeast Asian (5.3%), North African (4.2%), and Middle Eastern (3.3%) heritage. This genetic diaspora creates a striking pan-global appearance — warm brown skin with subtle golden undertones from the Latin American and South Asian blend, high defined cheekbones from Central/Andean heritage softened by South Asian fullness, and dark expressive eyes reflecting the rich genetic diversity of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 61,
     "build": "Lean and angular, with the efficient frame of someone who moves constantly through cramped spaces. Defined shoulders and wrists from years of fine motor work at terminals.",
     "hair_color": "Natural dark brown with bioluminescent filament accents in gold and pale green",
     "hair_style": "Large natural cloud/afro style, densely textured, intentionally voluminous. Filaments are woven throughout and activate in low-light environments.",
     "hair_length": "Long (approximately 20cm diameter cloud)",
-    "eye_color": "Amber with geometric pattern overlays (iris mods) that slowly rotate and shift between amber and black, especially when concentrating",
-    "skin_tone": "Warm golden-tan complexion reflecting the blend of East Asian, Central Asian, South Asian, and Pacific Islander ancestry with subtle Northern European undertones. Medium saturation melanin with warm, honey-like depth.",
-    "complexion": "Angular facial features with high, defined cheekbones characteristic of Central and East Asian heritage, softened by South Asian and Pacific Islander fullness. Pointed chin with clear, well-maintained skin despite market-level living conditions. They have a habit of pursed-lipped focus when problem-solving.",
+    "eye_color": "Deep brown with geometric pattern overlays (iris mods) that slowly rotate and shift between amber and black, especially when concentrating",
+    "skin_tone": "Warm medium brown complexion with golden undertones, reflecting the dominant Hispanic/Latin American ancestry blended with South Asian, Sub-Saharan African, and North African heritage. Rich melanin saturation with warm honey-like depth and subtle amber cast.",
+    "complexion": "Angular facial features with high, defined cheekbones characteristic of Andean/Central American heritage, softened by South Asian and Sub-Saharan African fullness around the jawline and lips. Pointed chin with clear, well-maintained skin despite market-level living conditions. Subtle warmth in cheek and temple areas reflecting the pan-global heritage mix. Habit of pursed-lipped focus when problem-solving.",
     "distinguishing_marks": [
       "Fine hairline scar running 3cm along the left temple, likely from old hardware damage or accident",
       "Small circular burn mark on the inner right wrist (2cm diameter), characteristic of soldering work gone wrong",
@@ -254,17 +239,70 @@
     "posture_movement": "Perpetually in motion — hands gesture constantly while speaking, fingers drum on surfaces when thinking. They move through tight spaces with practiced efficiency, rarely still for more than a few seconds. Leans into conversations, eyes tracking multiple points of interest simultaneously.",
     "clothing_style": "Tier 3 tech-market utilitarian. Multiple layered vests (usually 2-3) in dark grays and blacks with heavy pocket saturation. Underneath: fitted mesh shirts with visible thermal regulation threading. Worn cargo pants with utility loops and clips for small devices. Scuffed modular boots with reinforced heel (for balance in standing markets). No corporate branding; favors independent maker brands and unmarked functional wear. Several small pinned badges on vest fronts — E.L.F. community markers, Solder Lane Compact insignia."
   },
-  "image_prompt": "Lyric Karimov-Erikstad, a 168cm lean cyberpunk hacker with warm golden-tan skin blending East Asian, Central Asian, South Asian, and Pacific Islander heritage. Large natural afro with bioluminescent gold and pale green filaments woven throughout, activating in neon light. Amber eyes with slowly rotating geometric iris mods. Angular cheekbones and pointed chin. Fine scar on left temple, small circular burn mark on inner right wrist. Circuit-pattern tattoos on back of both hands. Wearing dark gray and black layered tech-market vests over mesh thermal shirts, worn cargo pants with utility clips, scuffed modular boots. Constantly moving hands, intense focus expression, fingers drumming. Standing in a cramped neon-lit market stall or low-light workspace, surrounded by glowing screens and tech equipment. Multiple small E.L.F. and Solder Lane badges pinned to vest. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, moody blue and amber neon lighting, cinematic depth of field. --ar 2:3 --v 6",
+  "image_prompt": "Joaquín Guerrero-Thakur, lean angular neo-noir character with warm medium-brown skin with golden undertones, high defined Andean cheekbones softened by South Asian fullness, pointed chin. Large voluminous natural afro cloud hairstyle in dark brown with glowing bioluminescent gold and pale green filaments woven throughout, active and luminous. Deep brown eyes with slowly rotating geometric iris pattern mods shifting between amber and black. Fine scar along left temple, small circular burn mark on inner right wrist. Wearing layered dark gray and black utility vests with heavy pockets, fitted thermal-regulation mesh shirt visible underneath, worn cargo pants with utility loops, scuffed modular boots. E.L.F. and Solder Lane Compact badges pinned to vest. Perpetually in motion, hands gesturing expressively, intense focus. GLMZ Great Lakes Metropolitan Zone, tech-market utilitarian aesthetic, standing in dimly lit maker workshop or market corridor with neon accent lighting catching the bioluminescent filaments in their hair, warm and cool light interplay, photorealistic, high detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 30.0,
-    "Central Asian": 20.7,
-    "South Asian": 20.5,
-    "Pacific Islander": 13.8,
-    "Northern European": 12.9,
-    "Sub-Saharan African": 2.1
+    "Hispanic/Latin American": 63.1,
+    "South Asian": 17,
+    "Sub-Saharan African": 7.1,
+    "Southeast Asian": 5.3,
+    "North African": 4.2,
+    "Middle Eastern": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 52.3
+      },
+      "South American": {
+        "Brazilian": 7,
+        "Peruvian": 3.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 17
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 3.1,
+        "Senegalese": 1.9
+      },
+      "Central African": {
+        "Cameroonian": 1.7,
+        "Congolese": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.3
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 0.1,
+        "Egyptian": 0.5
+      },
+      "Maghreb": {
+        "Moroccan": 2.5
+      },
+      "Amazigh": {
+        "Tuareg": 0.7,
+        "Berber": 0.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 0.3,
+        "Afghan Dari": 0.4
+      },
+      "Kurdish": {
+        "Kurdish": 2.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ef7a248785a78913cc277d",
   "type": "character",
-  "name": "Orion Chatterjee",
+  "name": "Orion Hernández",
   "aliases": [
     "Desh",
     "The Owl"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Geartown, Ferrogate Line 7 depot; lives in a studio in Bronzeline, near North Ave and Damen",
-  "description": "Deshi is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Deshi is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
+  "description": "Orion Hernández is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Orion Hernández is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -180,7 +180,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,46 +243,22 @@
     "The Narrows Compact",
     "Bronzeline",
     "Ferrogate Transit",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Fathom Line",
     "Geartown",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
-    "The Pale Mile",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Line 7 Bar",
     "Glass",
     "Symbiont",
-    "Nightlight",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Holmberg-Dembele",
-    "Breck Tannen",
-    "Djeneba Park-Traore",
-    "Eshe Pena-Baah",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Grand Corridor",
-    "HOLLOW SIGNAL // RADIO",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Line 7 Bar",
-    "Lumen",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noodle Train",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "Switchback",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Wire Taps",
-    "Toluwani Przhevalskyj-Mboyo",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Compass Rose",
+    "The Pale Mile",
+    "Nightlight"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-Asian with East Asian (37%), South Asian (29%), and Southeast Asian (20%) predominance, complemented by Northern European (11%) and minor Sub-Saharan African (2%) ancestry — resulting in a striking blend of features reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex Ubiquitous Diaspora blend dominated by East Asian (34.3%), Middle Eastern (30.8%), and Hispanic/Latin American (29.1%) ancestry with Northern European (5.8%) undertones — a striking convergence of Pan-Asian bone structure, Levantine facial proportions, and Latin American warmth creating an ethnically ambiguous, arresting appearance.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, with the hollow-chested, slightly sunken musculature of someone chronically sleep-deprived and nocturnal. Wiry rather than frail — capable of moving quickly through confined spaces.",
@@ -290,8 +266,8 @@
     "hair_style": "Tied back in a loose, practical knot or stuffed under a Ferrogate cap during work shifts. Slightly unkempt when off-duty, suggesting minimal grooming investment.",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Pale silver with faint bioluminescence in low light (geneware modification, secondhand)",
-    "skin_tone": "Warm amber-bronze with subtle golden undertones, reflecting the blended warmth of East and South Asian heritage with pale Northern European undertones creating an even, luminous quality.",
-    "complexion": "Angular face with high, defined cheekbones and slightly sharp jawline characteristic of East Asian ancestry, softened by the broader facial structure of South Asian heritage. Skin appears subtly fatigued — not poor condition, but bearing the toll of reversed circadian rhythm. Minimal facial hair, closely kept. Dark circles are a permanent feature. Expression often distant or thoughtful.",
+    "skin_tone": "Warm olive-bronze with subtle golden radiance — a balanced fusion blending East Asian luminosity, Middle Eastern depth, Latin American warmth, and pale Northern European undertones creating complex, even complexion across the face.",
+    "complexion": "Angular face combining high, defined cheekbones and slightly tapered mid-face from East Asian heritage with the broader facial structure and fuller lower face characteristic of Middle Eastern and Hispanic ancestry. Jawline is moderately defined, softened by the width of the lower face and full cheek projection. Skin appears subtly fatigued — not poor condition, but bearing the toll of reversed circadian rhythm. Minimal facial hair, closely kept. Dark circles are a permanent feature. Expression often distant or thoughtful.",
     "distinguishing_marks": [
       "Faint cluster of old needle-track scars on inner left elbow (geneware installation site, now scarred over)",
       "A thin white scar along his right temple, approximately 3cm long, running toward his hairline (origin unknown, carries it without comment)"
@@ -300,16 +276,56 @@
     "posture_movement": "Moves with economical grace through crowded or confined spaces. Often stands very still, as if conserving energy. Blinks slowly and deliberately, a bird-like mannerism that suggests careful observation rather than engagement. Rarely makes sudden movements. His default posture is slightly hunched, the result of long hours in operator's seats.",
     "clothing_style": "Ferrogate uniform during shifts: charcoal grey utility jacket with reflective trim, company badge clipped to chest, comfortable black cargo trousers, non-slip boots rated for platform work. Off-duty: dark jeans, thermal layers, oversized hoodies or a worn canvas field jacket in greyish-green. Aesthetic is Tier 2-3 working class — functional, durable, minimal ornamentation. No jewelry. His only visible accessory is a worn Ferrogate employee pin on his jacket collar."
   },
-  "image_prompt": "Orion Chatterjee, cyberpunk 2226, pan-Asian heritage with warm amber-bronze skin and high angular cheekbones, lean 178cm frame in charcoal Ferrogate utility jacket with reflective trim and company badge. Medium dark brown hair tied back, revealing subtle titanium neural port behind left ear. Eyes glow pale silver with soft bioluminescence in dim light. Dark circles mark fatigued face. Slightly hunched posture of a nocturnal operator, standing very still and observant. Worn canvas field jacket visible underneath, practical black cargo trousers, non-slip boots. Faint scar along right temple. Bird-like stillness, economical movement. Great Lakes Metropolitan Zone industrial setting, neon-lit platform or control room background, cool atmospheric lighting with warm bioluminescent eye glow creating contrast. Mood: distant, focused, worn but capable. Cyberpunk atmosphere, realistic character portrait, moody lighting --ar 2:3 --v 6",
+  "image_prompt": "Orion Hernández, 178cm lean angular neo-noir operative, olive-bronze skin with golden undertones blending East Asian, Middle Eastern, and Latin American heritage. High defined cheekbones, moderately prominent jawline, pale silver bioluminescent eyes glowing softly in low light, dark brown shoulder-length hair tied back loosely. Fatigued complexion with permanent dark circles, minimal facial hair. Faint needle-track scars on left inner elbow, thin white scar along right temple. Subtle titanium neural port visible behind left ear. Ferrogate charcoal grey utility jacket with reflective trim, company badge, black cargo trousers, non-slip platform boots. Hunched posture from operator's fatigue, bird-like stillness, economical movement. Nocturnal dimly-lit industrial setting, neon glow reflecting off wet metal surfaces, GLMZ Great Lakes Metropolitan Zone aesthetic, atmospheric haze, moody introspective expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.0,
-    "South Asian": 29.0,
-    "Southeast Asian": 20.3,
-    "Northern European": 11.3,
-    "Sub-Saharan African": 2.4
+    "East Asian": 34.3,
+    "Middle Eastern": 30.8,
+    "Hispanic/Latin American": 29.1,
+    "Northern European": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 34.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 23.9
+      },
+      "Persian": {
+        "Iranian": 6.4
+      },
+      "Arab Levantine": {
+        "Jordanian": 0.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 28.7
+      },
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Honduran": 0.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 0.8,
+        "Norwegian": 1
+      },
+      "Germanic": {
+        "German": 1.6,
+        "Dutch": 0.9
+      },
+      "British Isles": {
+        "English": 1.1,
+        "Scottish": 0.4
+      }
+    }
+  }
 }

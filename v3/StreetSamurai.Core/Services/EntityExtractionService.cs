@@ -34,7 +34,7 @@ public class EntityExtractionService
         var existingContext = string.Join("\n", existingNames);
 
         var system = """
-            You are an entity extraction engine for a cyberpunk fiction world database.
+            You are an entity extraction engine for a near-future fiction world database.
             You read story prose and identify every named entity and relationship.
 
             ENTITY TYPES (use exactly these):

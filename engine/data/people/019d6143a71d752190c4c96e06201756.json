@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71d752190c4c96e06201756",
   "type": "character",
-  "name": "Sage Tehrani-Nygaard",
+  "name": "Sage Sisavath-Delgado",
   "aliases": [
     "Lodestone",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Ximena Cruz-Addo is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 28, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a counterintelligence specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Ximena Cruz-Addo lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Sage Sisavath-Delgado is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 28, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a counterintelligence specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Sage Sisavath-Delgado lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -259,7 +259,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,35 +273,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Flicker",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Glenville Sound",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: 36.6% East Asian, 29.4% Sub-Saharan African, 22.3% Middle Eastern, 8.8% North African, 2.9% Indigenous American. The genetic blend creates striking facial geometry — high cheekbones and defined jawline from East Asian ancestry, warm undertones and facial structure from African heritage, refined nose bridge and brow arc from Middle Eastern lineage.",
+    "heritage": "Complex diaspora ancestry: 47.3% Hispanic/Latin American, 25.2% Southeast Asian, 23.7% South Asian, 3.8% Sub-Saharan African. The genetic blend creates striking facial geometry — high cheekbones and refined bone structure from Southeast and South Asian ancestry, warm golden-brown undertones from the Latin American and African heritage, angular jawline and defined features from the combined mix. Face reflects the warmth and proportion of multiple continents.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with defined muscle — the physiology of someone who converts nervous energy into constant motion. Shoulders angular, limbs long relative to torso. No excess fat, minimal bulk.",
@@ -309,8 +289,8 @@
     "hair_style": "Pulled back in a tight, functional braid. No styling affectation — practical, utilitarian.",
     "hair_length": "Medium (past shoulders when loose)",
     "eye_color": "Dark brown, slightly enhanced with low-grade ocular overlay (infrared flicker visible in certain light angles)",
-    "skin_tone": "Rich warm brown — the blended result of East Asian, African, and Middle Eastern ancestry, with subtle golden undertones beneath the base warmth. Complexion deepened by time spent outdoors near water.",
-    "complexion": "Sharp facial geometry with high cheekbones and a defined jawline reflecting her genetic diversity. The bone structure carries East Asian refinement layered with African sculptural depth and Middle Eastern proportion. Minimal makeup or grooming beyond functionality. Small scar on left cheekbone (knife work, Dockside, 2224). Perpetual tension in the muscles around her eyes and mouth — her default expression is careful neutrality, maintained through deliberate effort.",
+    "skin_tone": "Warm golden-brown — the blended result of Southeast Asian, South Asian, Hispanic/Latin American, and Sub-Saharan African ancestry. Rich undertones with subtle warmth deepened by time spent outdoors near water. Neither light nor dark, but a harmonious middle with golden luminosity.",
+    "complexion": "Sharp facial geometry with high cheekbones and a defined jawline reflecting her genetic diversity. The bone structure carries Southeast and South Asian refinement layered with Latin American warmth and African sculptural depth. Minimal makeup or grooming beyond functionality. Small scar on left cheekbone (knife work, Dockside, 2224). Perpetual tension in the muscles around her eyes and mouth — her default expression is careful neutrality, maintained through deliberate effort.",
     "distinguishing_marks": [
       "Thin scar along left cheekbone, approximately 4cm, pale against her skin tone — acquired during a mole-detection contract gone sideways",
       "Faint stippled burn marks on the inner aspect of her left wrist — old electrical contact damage, pre-augmentation",
@@ -320,16 +300,54 @@
     "posture_movement": "Economical and alert. She moves with the compressed energy of someone trained in threat assessment — head positioned to maintain peripheral vision, weight distributed for rapid direction change. Default posture is slightly forward-leaning, shoulders loose but ready. She exhibits minimal fidgeting despite her internal restlessness; the anxiety finds outlets in context (weapon checks, equipment maintenance) rather than display.",
     "clothing_style": "Tier 3-4 practical: Reinforced synthetic jacket (charcoal grey, worn leather-look polymer) with internal pockets for tools and dead-drop comms. Black cargo pants with thigh pocket reinforcements. Worn tactical boots, scuffed but maintained. No visible corpo branding. Clothing is designed for function — multiple carry points, quick-release systems, range of motion for weapon access. Worn over a fitted black undershirt. A silver chain around her neck holds a cheap metal trinket (likely a dead-drop key or memento from GLMZ)."
   },
-  "image_prompt": "Sage Tehrani-Nygaard, 168cm lean wiry frame, sharp facial geometry with high cheekbones and defined jawline reflecting East Asian and African ancestry blend, rich warm brown skin with golden undertones, dark brown eyes with faint infrared overlay glow, natural black hair with grey threading pulled tight in functional braid. Small pale scar on left cheekbone. Dressed in worn charcoal grey reinforced synthetic jacket and black cargo pants, tactical boots, silver chain necklace with trinket. Chrome smartgun link panel visible on right inner forearm showing blue circuitry. Posture alert and economical, forward-leaning ready stance. Dockside setting, GLMZ 2226, neon-lit evening, industrial cyberpunk aesthetic, tension in face muscles, minimal expression, weapon-ready composure, atmospheric blue and grey lighting --ar 2:3 --v 6",
+  "image_prompt": "Sage Sisavath-Delgado, neo-noir operative 2226, lean wiry frame 168cm tall. Golden-brown warm skin tone reflecting Southeast Asian, South Asian, Hispanic-Latin American, and Sub-Saharan African heritage blend. High cheekbones, angular refined jawline, dark brown eyes with infrared ocular overlay. Black hair pulled tight in functional braid, grey threading at temples. Pale 4cm scar on left cheekbone. Posture alert and economical, forward-leaning with compressed readiness. Wearing charcoal grey reinforced tactical jacket and black cargo pants, scuffed boots. Right forearm shows visible chrome smartgun interface panel with blue circuitry. Silver chain necklace with metal trinket. Faint stippled burn scars on left inner wrist. Minimalist QUANTA tattoo on right forearm. Expression neutral, tense, careful. GLMZ Dockside warehouse setting, cool industrial lighting, motion blur suggesting constant threat assessment. GLMZ 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 36.6,
-    "Sub-Saharan African": 29.4,
-    "Middle Eastern": 22.3,
-    "North African": 8.8,
-    "Indigenous American": 2.9
+    "Hispanic/Latin American": 47.3,
+    "Southeast Asian": 25.2,
+    "South Asian": 23.7,
+    "Sub-Saharan African": 3.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 34
+      },
+      "South American": {
+        "Colombian": 11.3
+      },
+      "Mexican": {
+        "Mexican": 2
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 19.9
+      },
+      "Indonesian": {
+        "Sumatran": 3.4,
+        "Javanese": 1.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 9.1
+      },
+      "Indian": {
+        "Tamil": 14.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 0.9,
+        "Angolan": 1.8
+      },
+      "West African": {
+        "Sierra Leonean": 1.1
+      }
+    }
+  }
 }

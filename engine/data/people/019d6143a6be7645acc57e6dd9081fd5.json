@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6be7645acc57e6dd9081fd5",
   "type": "character",
-  "name": "Zephyr Haddad-Johansson-Chowdhury",
+  "name": "Esperanza Mori-Esquivel-Jaramillo",
   "aliases": [
     "Pip"
   ],
@@ -12,7 +12,7 @@
   "age": 14,
   "status": "active",
   "location": "Abyssal Threshold transit tunnels, ranging to Deepwell Station, near sub-level access near Dearborn and Jackson",
-  "description": "Pip is small even for fourteen — wiry and quick, with a narrow face, enormous dark eyes adapted from birth to low-light environments, and a mop of hair they dye with bioluminescent mushroom paste in a stripe of vivid green that serves as both personal style and emergency light source. Their skin is medium brown with a faint warmth to it, and they have a long scar across their left palm from a ferrogate grate incident at age nine. No purchased augmentations — they were born underground and their body has simply adapted: exceptional night vision within human range, an instinctive spatial memory for tunnel architecture, and a sensitivity to air-pressure changes that surface people simply don't develop.\n\nPip has never been to the surface. They have seen photographs and once watched a thirty-second video of rain, which they found both beautiful and deeply suspicious. They guide people — Bore Rats moving between settlements, occasional surface-dwellers who need to travel without Ferrogate Transit records, journalists, the desperate — through a network of tunnels they have memorized the way other children memorize games. They are cheerful in a way that seems impossible given their circumstances, and the cheer is entirely genuine, which makes some adults profoundly uncomfortable.",
+  "description": "Esperanza Mori-Esquivel-Jaramillo is small even for fourteen — wiry and quick, with a narrow face, enormous dark eyes adapted from birth to low-light environments, and a mop of hair they dye with bioluminescent mushroom paste in a stripe of vivid green that serves as both personal style and emergency light source. Their skin is medium brown with a faint warmth to it, and they have a long scar across their left palm from a ferrogate grate incident at age nine. No purchased augmentations — they were born underground and their body has simply adapted: exceptional night vision within human range, an instinctive spatial memory for tunnel architecture, and a sensitivity to air-pressure changes that surface people simply don't develop.\n\nEsperanza Mori-Esquivel-Jaramillo has never been to the surface. They have seen photographs and once watched a thirty-second video of rain, which they found both beautiful and deeply suspicious. They guide people — Bore Rats moving between settlements, occasional surface-dwellers who need to travel without Ferrogate Transit records, journalists, the desperate — through a network of tunnels they have memorized the way other children memorize games. They are cheerful in a way that seems impossible given their circumstances, and the cheer is entirely genuine, which makes some adults profoundly uncomfortable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -155,7 +155,7 @@
     "Truth-Teller": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Abyssal Threshold transit tunnels",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -167,26 +167,19 @@
     "Ferrogate Transit",
     "Abyssal Threshold",
     "Deepwell Station",
-    "Threshold",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Packet Rats",
-    "Elena Vasquez-9",
-    "Amygdacet",
     "Bore Rats",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Canopy",
-    "The Pure Hand"
+    "Threshold",
+    "Pressure Drop",
+    "Dearborn Forge",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Paste Bar",
+    "Palm Leaf",
+    "The Packet Rats",
+    "Elena Vasquez-9"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "East Asian-dominant mixed ancestry (47.8% East Asian, 43.0% Middle Eastern, 9.2% South Asian). Features reflect this genetic blend: slight epicanthic folds around the eyes, high cheekbones with gentle angularity, and warm olive undertones from the Middle Eastern and South Asian components.",
+    "heritage": "Complex multiethnic heritage: 43.4% Hispanic/Latin American, 22.1% Northern European, 13.4% East Asian, 12.3% Sub-Saharan African, 7.8% Indigenous American, 1.0% South Asian. This blend creates distinctive features: warm medium brown skin with golden undertones and subtle olive cast, slightly prominent cheekbones with gentle angularity from East Asian and Indigenous American ancestry, dark almond-shaped eyes with subtle epicanthic folds, and facial structure reflecting the warmth of Latin American and African heritage combined with Northern European bone structure and definition.",
     "height_cm": 148,
     "weight_kg": 38,
     "build": "Wiry and compact—lean muscle from constant tunnel navigation, no excess body fat, joints that seem slightly hypermobile from years of squeezing through tight passages",
@@ -194,8 +187,8 @@
     "hair_style": "Shoulder-length mop, somewhat matted and tangled from tunnel dust, asymmetrically parted with the green stripe running through the left side",
     "hair_length": "Medium",
     "eye_color": "Very dark brown, pupils notably dilated even in normal light—adapted for low-light environments",
-    "skin_tone": "Warm olive-bronze with slight pallor from lifelong underground residence. The olive undertone comes from the blended East Asian-Middle Eastern-South Asian ancestry, creating a subtle golden warmth beneath the surface darkness.",
-    "complexion": "Round face with emerging sharp cheekbones; almond-shaped eyes with slight epicanthic folds reflecting East Asian heritage; clear skin with minor tunnel grime that never quite washes out; no facial hair; a slight perpetual squint-and-focus expression from reading tunnel shadows. Facial structure shows the warmth and angularity characteristic of the genetic blend.",
+    "skin_tone": "Warm medium brown with golden and subtle olive undertones, slightly pallid from lifelong underground residence. The coloration reflects the blended Latin American, African, East Asian, and Northern European ancestry, creating rich depth with warmth and complexity beneath the surface.",
+    "complexion": "Round face with emerging sharp cheekbones; almond-shaped eyes with slight epicanthic folds; clear skin with minor tunnel grime that never quite washes out; no facial hair; slight perpetual squint-and-focus expression from reading tunnel shadows. Facial structure shows the warmth and angularity characteristic of the multiethnic genetic blend, with bone prominence reflecting East Asian and Indigenous American contributions balanced by Northern European definition.",
     "distinguishing_marks": [
       "Long pale scar across the entire left palm from a ferrogate grate incident at age nine, tissue slightly raised and lighter than surrounding skin",
       "Minor calluses on fingertips and palms from rope work and climbing",
@@ -205,14 +198,67 @@
     "posture_movement": "Moves with unselfconscious grace through tight spaces; tendency to duck and turn sideways even in spacious areas. Sits in compact, folded positions. Hands are expressive and quick. Eyes constantly track air currents and acoustic shadows. Gait is quick and efficient, rarely wastes motion.",
     "clothing_style": "Tier 5 born-under practical: layered oversized hand-me-downs from adult Bore Rats, mostly grays and blacks to hide tunnel dust. A patched synthetic jacket with multiple pockets. Rope belt holding up pants that don't quite fit. Bare feet or thick socks (no shoes—better tactile feedback for tunnel navigation). A necklace of polished ferrogate bolts salvaged from old passages. No brands, no status symbols, nothing that costs Φ."
   },
-  "image_prompt": "Zephyr Haddad-Johansson-Chowdhury, a 148cm wiry 16-year-old with East Asian-Middle Eastern-South Asian heritage, warm olive-bronze skin with slight underground pallor, high sharp cheekbones, almond eyes with dilated pupils adapted to darkness, round face. Shoulder-length dark brown tangled hair with vivid bioluminescent green stripe running down left side. Long pale scar across left palm. Wearing oversized layered gray and black hand-me-downs, patched synthetic jacket with rope belt, bare feet, necklace of polished ferrogate bolts. Compact posture, moving gracefully through dimly lit cyberpunk tunnel passages of the 2226 Great Lakes Metropolitan Zone, walls lined with ferrogate pipes and conduits, soft bioluminescent fungal light casting shadows. Hands expressive, eyes tracking air currents. Gritty underground born-under aesthetic, moody cyan and amber accent lighting from old maintenance systems. --ar 2:3 --v 6",
+  "image_prompt": "Esperanza Mori-Esquivel-Jaramillo, 148cm wiry compact frame, warm medium brown skin with golden undertones from multiethnic heritage—East Asian, Latin American, African, Northern European, and Indigenous American blend. Round face with sharp emerging cheekbones, almond-shaped dark brown eyes with slight epicanthic folds, perpetual focused squint. Shoulder-length dark brown hair with vivid bioluminescent green stripe on left side, matted from tunnel dust. Long pale scar across left palm from ferrogate incident, minor calluses on hands. Wearing oversized layered grays and blacks, patched synthetic jacket, rope belt, bare feet. Necklace of polished ferrogate bolt salvage. Pale from underground life. Compact, folded posture, hands expressive. GLMZ, born-under tunnels of GLMZ, low-light adapted pupils, no augmentations. Dark industrial tunnel setting with bioluminescent fungi, accent lighting on green hair stripe, shadows emphasizing cheekbones and focused expression, gritty texture, moody underground atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 47.8,
-    "Middle Eastern": 43.0,
-    "South Asian": 9.2
+    "Hispanic/Latin American": 43.4,
+    "Northern European": 22.1,
+    "East Asian": 13.4,
+    "Sub-Saharan African": 12.3,
+    "Indigenous American": 7.8,
+    "South Asian": 1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 23.7,
+        "Argentine": 19.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 22.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.5
+      },
+      "Korean": {
+        "Korean": 4.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 2.7
+      },
+      "East African": {
+        "Rwandan": 7.8
+      },
+      "Southern African": {
+        "Mozambican": 0.8,
+        "Zimbabwean": 1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 7.1,
+        "Lakota": 0.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.2
+      },
+      "Indian": {
+        "Gujarati": 0.6
+      },
+      "Pakistani": {
+        "Sindhi": 0.2
+      }
+    }
+  }
 }

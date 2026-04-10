@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68e74c5bce71866c2269574",
   "type": "character",
-  "name": "Ignacio Keïta-Bergqvist",
+  "name": "Tumelo Keïta-Bergqvist",
   "aliases": [
     "Oz",
     "The Fixer"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near North Ave and Damen",
-  "description": "Ousmane works out of a converted boiler room in the sub-level of a residential block in Blackpipe Corridor — a space he has made into something between a surgery and a shrine. String lights in amber and violet illuminate walls covered in technical diagrams, old family photographs laminated against water damage, and hand-painted offerings to three different E.L.F.s. He is a large man going slightly soft at the middle from years of sedentary precision work, with deep brown skin, a wide flat nose, and thick locs he keeps bundled under a surgical cap when he's working. His geneware is modest: a bioluminescent stripe that runs from behind his right ear down his neck, pale teal, that he had done when he was twenty-two and now thinks of as just part of his face.\n\nHe has the particular warmth of someone who chose his community after losing another one — unhurried, genuinely curious about people, prone to feeding anyone who comes to him with something from the hotplate he keeps running on the counter. He is not licensed by any corponation. He trained under a Helix-registered surgeon who lost her license and passed everything she knew to him in a basement in Ironvein. He is very good at what he does and he charges what people can pay, which is rarely enough, which he has made his peace with in a way that isn't entirely convincing.",
+  "description": "Tumelo Keïta-Bergqvist works out of a converted boiler room in the sub-level of a residential block in Blackpipe Corridor — a space he has made into something between a surgery and a shrine. String lights in amber and violet illuminate walls covered in technical diagrams, old family photographs laminated against water damage, and hand-painted offerings to three different E.L.F.s. He is a large man going slightly soft at the middle from years of sedentary precision work, with deep brown skin, a wide flat nose, and thick locs he keeps bundled under a surgical cap when he's working. His geneware is modest: a bioluminescent stripe that runs from behind his right ear down his neck, pale teal, that he had done when he was twenty-two and now thinks of as just part of his face.\n\nHe has the particular warmth of someone who chose his community after losing another one — unhurried, genuinely curious about people, prone to feeding anyone who comes to him with something from the hotplate he keeps running on the counter. He is not licensed by any corponation. He trained under a Helix-registered surgeon who lost her license and passed everything she knew to him in a basement in Ironvein. He is very good at what he does and he charges what people can pay, which is rarely enough, which he has made his peace with in a way that isn't entirely convincing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -194,7 +194,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -211,30 +211,17 @@
     "The Narrows Compact",
     "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
     "Zheng-dao Bioelectric",
+    "GLMZ",
     "Ironvein",
+    "The Boilermaker",
     "Slagworks Industrial",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Stalker",
+    "Compass Rose",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "Bioacoustic Communication Membrane",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Baluarte-Volkov",
-    "Patient Zero",
-    "Réginald Asomaning-Čabarkapa",
-    "Sisay Bergqvist-Mallari",
-    "Street Custom 'Rosary' Bead Garrote",
-    "The Clock",
-    "The Counter",
-    "The Gauze",
-    "The Narrows",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: predominantly Sub-Saharan African (33.9%) and Hispanic/Latin American (32.4%) ancestry, with significant Northern European (16.7%) and Middle Eastern (12.8%) contributions, plus Indigenous American (4.2%). Results in rich warm-brown skin tone with subtle golden and reddish undertones from the blended heritage; facial structure reflects the African and Indigenous American components with broader nose base and defined cheekbones, softened by Northern European and Middle Eastern influences.",
+    "heritage": "Complex diaspora blend: Middle Eastern (37.6%), Sub-Saharan African (34.7%), and Northern European (27.7%) ancestry. This tripartite mix creates a warm medium-brown complexion with golden and subtle olive undertones—the African and Middle Eastern components dominating while Northern European genetics add depth and complexity to the overall tone. Facial structure reflects balanced influence across all three lineages: strong, defined cheekbones and robust jawline from African and Middle Eastern heritage, softened and refined by Northern European bone structure; nose shows the characteristic bridge prominence of Middle Eastern ancestry integrated with the broader nasal base common in African features; eye shape and orbital structure show the Northern European influence tempering the warmth of the other lineages.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, broad-shouldered, with soft accumulation at the midsection from years bent over surgical workstations. Still carries the foundational mass of someone who was athletic in youth.",
@@ -242,8 +229,8 @@
     "hair_style": "Thick locs, usually bundled under a surgical cap during work; worn loose below shoulders when off the clock",
     "hair_length": "Long",
     "eye_color": "Deep brown (right eye hosts magnification implant with faint amber lens artifact)",
-    "skin_tone": "Warm rich brown with golden and subtle reddish undertones reflecting the African, Hispanic, and Middle Eastern ancestry blend",
-    "complexion": "Clear, well-maintained despite the Narrows environment; broad nose structure and defined cheekbones reflecting African and Indigenous ancestry; calloused fingertips from precision work; lines around the eyes from concentration and genuine smiling",
+    "skin_tone": "Warm medium brown with golden and subtle olive undertones, reflecting balanced Middle Eastern, African, and Northern European ancestry",
+    "complexion": "Clear, well-maintained despite the Narrows environment; prominent defined cheekbones and strong jawline reflecting the African and Middle Eastern genetic dominance; calloused fingertips from precision work; concentration lines around the eyes and laugh lines from genuine smiling; subtle warmth to the complexion that speaks to the interplay of three continental heritage lines",
     "distinguishing_marks": [
       "Bioluminescent geneware stripe running from behind right ear down the neck in pale teal, visible against skin",
       "Surgical scars on both hands (knuckles, palms) from early training accidents, faded but present",
@@ -253,16 +240,42 @@
     "posture_movement": "Moves with deliberate care and groundedness despite his size. When working, hunches slightly over surgical surfaces with almost meditative focus. In social settings, stands with weight balanced, unhurried, often gestures with open palms. No nervous fidgeting.",
     "clothing_style": "Tier 4-5 practical: worn dark scrub bottoms or cargo pants with multiple pockets for tools; layered with an old linen overshirt (often stained with coolant or synth-blood) and a surgical smock worn unbuttoned. Worn leather work boots. A faded prayer beads bracelet on left wrist. No corporate branding; everything is second-hand or salvaged."
   },
-  "image_prompt": "Ignacio Keïta-Bergqvist, tall imposing Afro-Latino surgeon, 188cm, warm rich brown skin with golden undertones, deep brown eyes with amber cybernetic implant in right eye, thick black locs worn loose past shoulders, broad shoulders, soft midsection from years at surgical workstations. Bioluminescent pale teal geneware stripe glowing faintly behind right ear down neck. Surgical scars visible on knuckles and palms, small coin-sized burn mark on left forearm. Wearing worn dark scrub pants, stained linen overshirt, unbuttoned surgical smock, weathered leather boots. Prayer beads bracelet on left wrist. Standing in dimly lit Narrows surgical workspace, cyberpunk 2226, meditative focused expression, soft neon glow catching the teal geneware stripe, cinematic surgical lighting, gritty dystopian medical environment, --ar 2:3 --v 6",
+  "image_prompt": "Tumelo Keïta-Bergqvist, 188cm tall surgeon with warm medium-brown skin tone and golden undertones, deep brown eyes (right eye with subtle amber implant artifact), long black locs loosely gathered, strong defined cheekbones and robust jawline. Broad-shouldered large frame with soft midsection, standing with deliberate groundedness. Wearing layered practical gear: dark cargo pants, worn linen overshirt stained with coolant, unbuttoned surgical smock, worn leather work boots. Faded prayer beads bracelet on left wrist. Pale teal bioluminescent geneware stripe glowing softly along right neck and behind ear. Surgical scars visible on hands, small burn mark on left forearm. Standing in dimly-lit underground clinic in the Narrows, GLMZ, meditative focused expression, subtle ambient lighting catching the bioluminescent stripe, gritty industrial setting with surgical equipment in soft focus background, atmospheric neon and practical work-light, photorealistic, character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 33.9,
-    "Hispanic/Latin American": 32.4,
-    "Northern European": 16.7,
-    "Middle Eastern": 12.8,
-    "Indigenous American": 4.2
+    "Middle Eastern": 37.6,
+    "Sub-Saharan African": 34.7,
+    "Northern European": 27.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 9.1
+      },
+      "Persian": {
+        "Tajik Persian": 26
+      },
+      "Kurdish": {
+        "Kurdish": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 32.8,
+        "Guinean": 1.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 3.2,
+        "English": 14.3
+      },
+      "Germanic": {
+        "German": 10.2
+      }
+    }
+  }
 }

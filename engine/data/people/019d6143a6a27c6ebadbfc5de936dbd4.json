@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a27c6ebadbfc5de936dbd4",
   "type": "character",
-  "name": "Driss Lahlou-Cisneros",
+  "name": "Efua Touré-Cisneros",
   "aliases": [
     "Pros",
     "The Patch Man"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
-  "description": "Prospero is lean and angular in a way that reads as either elegant or hungry depending on the light, with the kind of stillness that makes people lower their voices around him without knowing why. His skin carries a faint bioluminescent undertone — a geneware mod he got at seventeen that pulses a dim blue-green along his jaw and collarbones when his heart rate elevates, which he has learned to suppress well enough that most people only see it in his periphery and aren't sure they saw it at all. He dresses in layers of muted, practical fabric — the kind that has many pockets and no logos — and his hands are always clean despite everything.\n\nHe is not warm in the way Zawadi is warm, but he is precise and reliable in a way that passes for kindness in the Narrows. He remembers every client's medical history from a single conversation, recommends nothing he hasn't personally vetted, and will refuse a sale if he thinks someone is in the wrong place in their head for what they're asking for. This costs him money regularly and he accepts it. He has a kind of professional ethics that has no formal name and would embarrass him if someone pointed it out.",
+  "description": "Efua Touré-Cisneros is lean and angular in a way that reads as either elegant or hungry depending on the light, with the kind of stillness that makes people lower their voices around him without knowing why. His skin carries a faint bioluminescent undertone — a geneware mod he got at seventeen that pulses a dim blue-green along his jaw and collarbones when his heart rate elevates, which he has learned to suppress well enough that most people only see it in his periphery and aren't sure they saw it at all. He dresses in layers of muted, practical fabric — the kind that has many pockets and no logos — and his hands are always clean despite everything.\n\nHe is not warm in the way Zawadi is warm, but he is precise and reliable in a way that passes for kindness in the Narrows. He remembers every client's medical history from a single conversation, recommends nothing he hasn't personally vetted, and will refuse a sale if he thinks someone is in the wrong place in their head for what they're asking for. This costs him money regularly and he accepts it. He has a kind of professional ethics that has no formal name and would embarrass him if someone pointed it out.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -188,7 +188,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,64 +241,92 @@
     "Blackpipe Corridor",
     "The Narrows Compact",
     "WELLSPRING",
+    "Plot 17",
+    "GLMZ",
     "Nesting Doll",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "ARCHIVE",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus BH-2 'Marrow'",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Cezar Watanabe-Gyasi",
-    "Davi Ousseini-Brătianu",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Nodar Kuznetsov-Adu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Pirjo Asante-Ulukhan",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Circuit",
-    "The Ledger",
-    "The Narrows",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vantablack Media Spectral Barrier Display System"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African (Maghrebi) with significant East Asian and Hispanic/Latin American ancestry; the genetic blend creates striking angular features with warm, sun-toned skin and dark eyes with amber flecks. His facial structure reflects Berber and Arab North African lineage dominant at nearly 60%, tempered by East Asian cheekbone prominence and Hispanic warmth in his complexion.",
+    "heritage": "Complex diaspora ancestry: Sub-Saharan African (40.6%) forms the genetic foundation, enriched by Central Asian (15.6%), North African (14.7%), Hispanic/Latin American (14.6%), and East Asian (12.1%) heritage with minimal Northern European (2.4%) admixture. This creates a distinctive phenotype: deep warm brown skin with golden-olive undertones from the African-North African base, layered with the warm golden cast of East Asian and Hispanic ancestry. The facial structure reflects this blend—high, prominent cheekbones and subtle angularity from Central and East Asian genetics, combined with the strong defined jawline characteristic of Sub-Saharan African ancestry. The result is a face that reads as both sharply angular and harmoniously proportioned.",
     "height_cm": 178,
     "weight_kg": 68,
-    "build": "Lean and angular with minimal body fat; the musculature of someone who moves efficiently rather than powerfully. Shoulders slightly narrower than average, giving him an almost ascetic silhouette.",
+    "build": "Lean and angular with minimal body fat; the musculature of someone who moves efficiently rather than powerfully. Shoulders slightly narrower than average, giving an almost ascetic silhouette.",
     "hair_color": "Deep brown, naturally, with premature silver threading at the temples",
     "hair_style": "Close-cropped, neat, intentionally unremarkable",
     "hair_length": "Short",
     "eye_color": "Dark brown, flecked with amber",
-    "skin_tone": "Warm medium-to-deep brown with golden-olive undertones; the sun-weathered richness of North African heritage blended with subtle East Asian golden warmth and Hispanic depth",
-    "complexion": "Sharp cheekbones with East Asian prominence, long jawline characteristic of North African ancestry. Skin is clear and well-maintained despite street-level work — indicates discipline. Faint laugh lines around the eyes that suggest he smiles less often than he might. High, defined cheekbones speak to his Maghrebi heritage; slight angular cast to the face reflects East Asian ancestry.",
+    "skin_tone": "Deep warm brown with golden-olive undertones; rich Sub-Saharan and North African base blended with golden warmth from East Asian and Hispanic ancestry. Sun-weathered and well-maintained.",
+    "complexion": "High, prominent cheekbones with Central and East Asian structural influence combined with the strong jawline characteristic of Sub-Saharan African ancestry. Skin is clear and disciplined. Faint laugh lines around the eyes suggest infrequent smiling. The face harmoniously blends African bone structure softened by Central Asian features, with East Asian angularity in the cheekbone prominence.",
     "distinguishing_marks": [
       "Bioluminescent geneware mod running along the jaw and collarbones in faint blue-green; barely visible in daylight but becomes apparent in dim light or when his pulse quickens",
       "Subdermal linear scarring on the inside of his left wrist where the chemical analyzer was installed; thin, professional work, nearly invisible unless you know to look",
-      "Small burn mark on the outer edge of his right palm — the size of a cigarette tip, old enough to have faded to pale silver"
+      "Small burn mark on the outer edge of his right palm—the size of a cigarette tip, old enough to have faded to pale silver"
     ],
     "visible_augmentations": "The bioluminescent geneware is the only readily visible mod; it reads as a faint, almost spectral coloration under the skin rather than an obvious implant. The wrist scarring is visible only if he rolls up his sleeves or if someone is examining his hands closely. Everything else is subcutaneous.",
-    "posture_movement": "Moves with deliberate economy — no wasted motion, minimal gesturing. Stands very still when listening, which has an unsettling effect. Hands are usually occupied (holding vials, adjusting product, writing) or resting flat on a surface. His default expression is neutral to slightly appraising. When he does move quickly, it's fluid and controlled, never frantic.",
-    "clothing_style": "Tier 3-4 utilitarian aesthetic. Layered in muted colors — charcoal, slate gray, dark olive, off-black. Synthetic fabrics with high functionality: water-resistant, durable, pocketed. No logos, no bright colors, nothing that draws attention. A long grey synthetic coat worn open over a fitted dark shirt. Cargo pants with reinforced seams. Soft-soled boots suitable for walking the circuit. The overall effect is professional and forgettable — the clothing of someone who works in the shadows and intends to blend in."
+    "posture_movement": "Moves with deliberate economy—no wasted motion, minimal gesturing. Stands very still when listening, which has an unsettling effect. Hands usually occupied or resting flat on a surface. Default expression is neutral to slightly appraising. When moving quickly, it's fluid and controlled, never frantic.",
+    "clothing_style": "Tier 3-4 utilitarian aesthetic. Layered in muted colors—charcoal, slate gray, dark olive, off-black. Synthetic fabrics with high functionality: water-resistant, durable, pocketed. No logos, no bright colors, nothing that draws attention. Long grey synthetic coat worn open over fitted dark shirt. Cargo pants with reinforced seams. Soft-soled boots suitable for walking the circuit. Professional and forgettable—the clothing of someone who works in the shadows.",
+    "complexion_clarification": "Deep brown skin with warmth across high cheekbones; golden undertones visible where light catches the skin surface. Central and East Asian influence evident in cheekbone prominence and eye shape; Sub-Saharan African influence in jaw structure and overall facial width. The blend creates features that are distinctly multi-continental yet harmonious."
   },
-  "image_prompt": "Driss Lahlou-Cisneros, cyberpunk 2226, North African-East Asian-Hispanic mixed heritage with warm golden-brown skin and sharp angular features. Deep brown eyes with amber flecks, close-cropped dark hair with silver threading at temples. Lean 178cm frame, ascetic silhouette. Bioluminescent geneware visible as faint blue-green tracery along jaw and collarbones. Professional street operative in layered muted utilitarian wear: open grey synthetic coat over fitted charcoal shirt, dark cargo pants, soft-soled boots. Neutral expression, still posture, minimal wasted motion. Standing in dimly lit urban setting, neon glow catching the faint bioluminescence under his skin. Composed, dangerous calm, shadows emphasizing sharp cheekbones. Great Lakes Metropolitan Zone alley or underground market ambiance. Professional forgettable aesthetic, blending into darkness. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Efua Touré-Cisneros, a lean 178cm man with deep warm brown skin and golden-olive undertones. High, prominent cheekbones with subtle angularity, strong defined jawline, dark brown eyes flecked with amber, short close-cropped deep brown hair with silver at temples. Faint blue-green bioluminescent geneware glowing softly along jaw and collarbones visible in low light. Neutral expression, deliberately still posture. Wearing muted utilitarian layers: long grey synthetic coat worn open, fitted dark charcoal shirt, cargo pants, soft-soled boots. Minimal augmentation scarring visible on left wrist. Professional street operative aesthetic. Low neon-tinged lighting, urban industrial background, cinematic mood, sharp focus on facial features and bio-mod glow --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 59.6,
-    "East Asian": 21.1,
-    "Hispanic/Latin American": 16.8,
-    "South Asian": 2.5
+    "Sub-Saharan African": 40.6,
+    "Central Asian": 15.6,
+    "North African": 14.7,
+    "Hispanic/Latin American": 14.6,
+    "East Asian": 12.1,
+    "Northern European": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 40.6
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 3.7
+      },
+      "Iranian Central": {
+        "Tajik": 8.2,
+        "Hazara": 3.7
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 2.7,
+        "Kabyle": 12
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 12
+      },
+      "South American": {
+        "Brazilian": 0.7,
+        "Chilean": 1.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.3
+      },
+      "Korean": {
+        "Korean": 4.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 1.9
+      },
+      "Germanic": {
+        "German": 0.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6587d4994a8a0fd5679923c",
   "type": "character",
-  "name": "Rune Magnúsdóttir-Szabó",
+  "name": "Rune Kovács-Tehrani",
   "aliases": [
     "Ghost",
     "Nobody",
@@ -14,7 +14,7 @@
   "age": 29,
   "status": "active",
   "location": "Milwaukee Core — no fixed address. Rotates between three rented rooms under different names.",
-  "description": "Mika Sorel does not have a face. They have a collection. Dermal sculpting implants allow them to shift bone structure, skin texture, and pigmentation within a biological range — not shapeshifting, but close enough to make identification functionally impossible. They can walk into a building as a maintenance tech, walk out as a mid-level executive, and neither identity will trigger a security flag because both were built from real employee data.\n\nBefore the Thermite Collective, Mika ran solo social engineering jobs — impersonating corporate employees to gain physical access to secured facilities. They were good at it. Too good. The jobs started blurring into each other, and the faces started sticking. There were mornings when they'd look in the mirror and not remember which configuration was the original. Vesper found them during a job that overlapped — Mika was impersonating a Torii Security consultant, and Vesper recognized the credentials as fake because she'd written the real ones. Instead of burning Mika, she offered them a job.\n\nThey are slender, average height, with features that default to a pleasant neutrality — the base state that exists between performances. Their eyes are the only constant: dark brown, watchful, cataloguing. They dress for whichever role is next, but in downtime they wear oversized hoodies and look younger than twenty-nine.",
+  "description": "Rune Kovács-Tehrani a face. They have a collection. Dermal sculpting implants allow them to shift bone structure, skin texture, and pigmentation within a biological range — not shapeshifting, but close enough to make identification functionally impossible. They can walk into a building as a maintenance tech, walk out as a mid-level executive, and neither identity will trigger a security flag because both were built from real employee data.\n\nBefore the Thermite Collective, Mika ran solo social engineering jobs — impersonating corporate employees to gain physical access to secured facilities. They were good at it. Too good. The jobs started blurring into each other, and the faces started sticking. There were mornings when they'd look in the mirror and not remember which configuration was the original. Vesper found them during a job that overlapped — Mika was impersonating a Torii Security consultant, and Vesper recognized the credentials as fake because she'd written the real ones. Instead of burning Mika, she offered them a job.\n\nThey are slender, average height, with features that default to a pleasant neutrality — the base state that exists between performances. Their eyes are the only constant: dark brown, watchful, cataloguing. They dress for whichever role is next, but in downtime they wear oversized hoodies and look younger than twenty-nine.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -175,7 +175,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Milwaukee Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -196,44 +196,12 @@
     "Petra Glass",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Chimera-Null",
-    "Vesper",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Axonal Stretch Resonance Lance",
-    "Breck Tannen",
-    "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
-    "Flicker",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Kamala Blomberg-Konadu",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ouroboros Systems Paradox Quantum Processing Array",
-    "Pirjo Asante-Ulukhan",
-    "Prophet",
-    "PulsePoint MoodGlyph Affective Display Implant",
-    "Saodat Mirzoyan-Fubara",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tabula",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Mirror",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Resonance Communion",
-    "The Undertow",
-    "Volkov-Saito Precision VS-SL40 'Partisan'"
+    "Circuit",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (63.7%) with Eastern European (23.1%) and Northern European (13.2%) ancestry. Features reflect this primary Latin American heritage with secondary Eastern European influence: warm brown skin tones with subtle olive undertones, dark hair, and facial structure blending Latin American and Central/Eastern European characteristics.",
+    "heritage": "Complex diaspora blend with East Asian dominance (46.2%) layered with Indigenous American (16.7%), Middle Eastern (15.0%), Eastern European (14.9%), and Hispanic/Latin American (7.2%) ancestry. Facial structure reflects this East Asian-primary foundation: moderate cheekbones with slight flattening characteristic of East Asian genetics, softened and broadened by Indigenous American and Middle Eastern influences. Eye shape shows East Asian geometry with deeper-set positioning from Middle Eastern admixture. Skin tone is warm medium brown with olive undertones from the Middle Eastern and Hispanic components, capable of subtle 10-15% variation via dermal sculpting. The overall effect is deliberately nondescript—a face designed by ancestry to slip through recognition systems, enhanced by years of practiced forgetting.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Slender, wiry frame with minimal musculature — built for misdirection rather than presence. Shoulders slightly narrow, posture naturally unassuming. The kind of body that vanishes in a crowd by design.",
@@ -241,8 +209,8 @@
     "hair_style": "Kept short and unremarkable; styled differently depending on active identity. In downtime, often undone.",
     "hair_length": "Short",
     "eye_color": "Dark brown, slightly oversaturated — the only constant. Pupils dilate and contract with active recall; tells if you know how to read it.",
-    "skin_tone": "Warm medium brown with olive undertones — the baseline reflection of dominant Hispanic/Latin American ancestry with Eastern European warmth. Capable of shifting 10-15% via dermal sculpting array.",
-    "complexion": "Smooth, intentionally forgettable features. High cheekbones with subtle Latin American bone structure, slightly asymmetrical jawline (asymmetry aids memorability tricks). No blemishes, scars, or natural distinguishing marks — the blank canvas before performance. Skin texture can shift from smooth to subtly textured depending on role requirements.",
+    "skin_tone": "Warm medium brown with subtle olive undertones — the baseline reflection of East Asian-dominant ancestry tempered by Middle Eastern, Indigenous American, and Eastern European components. Capable of shifting 10-15% via dermal sculpting array.",
+    "complexion": "Smooth, intentionally forgettable features. Moderate cheekbones with East Asian geometry softened by Indigenous American breadth and Middle Eastern depth, slightly asymmetrical jawline (asymmetry aids memorability tricks). No blemishes, scars, or natural distinguishing marks — the blank canvas before performance. Skin texture can shift from smooth to subtly textured depending on role requirements.",
     "distinguishing_marks": [
       "Faint linear scar on left inner wrist, 4cm long, pale and old — from before the augmentations, before the faces. They don't modify it; it's insurance against forgetting who started this.",
       "Subdermal implant ports at temples (disguised as natural skin dimples when inactive) — visible only if looking closely or if caught mid-shift."
@@ -251,14 +219,63 @@
     "posture_movement": "In baseline state: economical movement, minimal gesturing, posture that avoids drawing attention. They move like someone who has learned to exist in spaces without occupying them. In performance: posture shifts radically — slouch becomes confident spine, shuffle becomes purposeful stride. The transition is the tell; they commit entirely to whoever they're being in the moment. Under stress, fingers twitch subtly (implant processing lag), and they blink in patterns that don't align with natural conversation rhythm.",
     "clothing_style": "In downtime: oversized hoodies (charcoal, black, muted blue), loose-fit pants, worn sneakers — juvenile aesthetic, almost deliberately underdeveloped. Tier 3-4 comfort wear; nothing branded. In active roles: wardrobe rotates per identity — corporate Torii Security consultant one day (tailored blazer, sharp trousers, minimal jewelry), maintenance tech the next (company-issue jumpsuit, utility belt, work boots). All clothing is rented, borrowed, or acquired under false names. Nothing is kept; nothing is traceable."
   },
-  "image_prompt": "Rune Magnúsdóttir-Szabó, 172cm slender frame, warm medium brown skin with olive undertones reflecting Hispanic/Latin American and Eastern European heritage, dark brown eyes with dilating pupils, short dark brown hair, naturally forgettable features with high cheekbones and slight jawline asymmetry. Baseline downtime state: oversized charcoal hoodie, loose gray pants, worn sneakers, minimal presence posture, economical movement. Faint 4cm pale scar visible on left inner wrist. Cyberpunk 2226 GLMZ setting, neon-lit apartment corner, cool blue-purple lighting catching subtle skin shimmer from subdermal implants at temples, mysterious identity-shifter aesthetic, moody atmospheric lighting, character seemingly dissolving into shadows, augmentation tells visible in micro-expressions, photorealistic cyberpunk portrait --ar 2:3 --v 6",
+  "image_prompt": "Rune Kovács-Tehrani, 172cm tall androgynous figure with East Asian-dominant diaspora heritage reflected in warm medium-brown skin with olive undertones, moderate cheekbones blending East Asian geometry with Indigenous American and Middle Eastern influences, dark oversaturated eyes with pupils showing implant-lag dilation. Short dark brown hair, slender wiry build, naturally unassuming posture. Wearing oversized charcoal hoodie and loose-fit pants in GLMZ Great Lakes Metropolitan Zone setting. Faint linear scar visible on left inner wrist. Subdermal temple ports visible as subtle dimples. Skin shows faint shimmer under neon lighting suggesting active subcutaneous augmentations. Sitting in dimly-lit hab-pod with soft blue and amber lighting, surrounded by identity documents and memory-core diagnostic displays glowing softly. Posture suggests someone who exists without occupying space. Neo-noir urban aesthetic with biopunk undertones, moody atmospheric lighting, photorealistic rendering --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 63.7,
-    "Eastern European": 23.1,
-    "Northern European": 13.2
+    "East Asian": 46.2,
+    "Indigenous American": 16.7,
+    "Middle Eastern": 15,
+    "Eastern European": 14.9,
+    "Hispanic/Latin American": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 46.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 8.6
+      },
+      "Andean": {
+        "Aymara": 6.1
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 15
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 12.6
+      },
+      "Slavic South": {
+        "Serbian": 0.3,
+        "Croatian": 0.9
+      },
+      "Slavic East": {
+        "Belarusian": 1.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.3
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.8
+      },
+      "South American": {
+        "Ecuadorian": 0.6,
+        "Venezuelan": 0.5
+      }
+    }
+  }
 }

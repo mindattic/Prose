@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6af7844a38a8ea4d0a943de",
   "type": "character",
-  "name": "Leilani Tofauti",
+  "name": "Ananya Krishnamurthy",
   "aliases": [
     "Reini",
     "the Vet"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Geartown, clinic called the Patchwork Menagerie — ground floor of a converted machine shed, near Milwaukee and Damen",
-  "description": "Reinhild is angular and deliberate, with pale skin weathered by years in Geartown's industrial air, dark red hair grown to her collar and always pinned back with the same three steel clips, and eyes that are naturally pale hazel but surrounded by faint stress lines that give her the look of someone who has been concentrating intensely for twenty years and has not stopped. She has a cat tail — dark auburn, prehensile, acquired in her thirties for sensory reasons she is somewhat private about — that moves independently and tends to express what her face does not. When she is genuinely pleased it curves upward. When she is thinking hard it wraps around her leg.\n\nHer practice sees gene-modded companion animals of extraordinary variety: bioluminescent cats with stability issues, canines with enhanced intelligence mods that have developed behavioral complications, fish engineered for apartment living that have outgrown their tanks in ways their designers did not anticipate. She treats each case with the same complete seriousness. Her waiting room has drawings by children whose pets she has saved covering two full walls. She has a flat rule against declining to treat an animal because its owner cannot pay — she works out arrangements, always, and is frequently owed labor and food by half the block. She has a secondary suspicion, which she keeps private, that some of the E.L.F. activity in Geartown has begun affecting gene-modded animals in ways that are not pathological and that she does not know how to document.",
+  "description": "Ananya Krishnamurthy is angular and deliberate, with pale skin weathered by years in Geartown's industrial air, dark red hair grown to her collar and always pinned back with the same three steel clips, and eyes that are naturally pale hazel but surrounded by faint stress lines that give her the look of someone who has been concentrating intensely for twenty years and has not stopped. She has a cat tail — dark auburn, prehensile, acquired in her thirties for sensory reasons she is somewhat private about — that moves independently and tends to express what her face does not. When she is genuinely pleased it curves upward. When she is thinking hard it wraps around her leg.\n\nHer practice sees gene-modded companion animals of extraordinary variety: bioluminescent cats with stability issues, canines with enhanced intelligence mods that have developed behavioral complications, fish engineered for apartment living that have outgrown their tanks in ways their designers did not anticipate. She treats each case with the same complete seriousness. Her waiting room has drawings by children whose pets she has saved covering two full walls. She has a flat rule against declining to treat an animal because its owner cannot pay — she works out arrangements, always, and is frequently owed labor and food by half the block. She has a secondary suspicion, which she keeps private, that some of the E.L.F. activity in Geartown has begun affecting gene-modded animals in ways that are not pathological and that she does not know how to document.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -158,7 +158,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,25 +176,14 @@
     "Cinderblock Ai",
     "Lazarus EC-4 'Companion'",
     "Geartown",
-    "Slagworks Industrial",
-    "The Pale Mile",
     "Steel",
     "Hazel Brink",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Carrion Defense Works Field Surgical Kit FSK-6",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Helix Biosystems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Obafemi Szczypiński-Lautoa",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "The Pure Hand"
+    "Slagworks Industrial",
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern and Pacific Islander with Eastern European admixture. Her genetic heritage shows in warm golden-brown undertones beneath surface pallor, Mediterranean-Levantine bone structure blended with Polynesian softness, and hints of Slavic features in her cheekbones and eye set.",
+    "heritage": "Predominantly South Asian (79.3%) with significant Sub-Saharan African (14.1%) and Pacific Islander (6.6%) ancestry. Deep warm brown skin with golden undertones from South Asian heritage, enriched by the dimensional depth and natural luminosity characteristic of Sub-Saharan African genetics. Broad, defined cheekbones and facial width reflect the blending of South Asian and Pacific Islander ancestry. Her skin carries an ashy overlay from decades under artificial light rather than sun exposure, dulling the naturally luminous base tone.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Angular and lean, with the economical musculature of someone who moves deliberately and carries tension in her shoulders. No wasted motion, no excess.",
@@ -202,8 +191,8 @@
     "hair_style": "Pinned back with the same three steel clips, always. Severe and functional.",
     "hair_length": "Medium, to collar",
     "eye_color": "Pale hazel, naturally — the color of old ice or weathered glass",
-    "skin_tone": "Warm golden-brown undertone with ashy overlay from fluorescent indoor work and industrial-grade air exposure. The base tone reflects her mixed Middle Eastern and Pacific Islander heritage, dulled by years under artificial light rather than sun.",
-    "complexion": "Weathered but clean. Faint stress lines radiating from the corners of her eyes — the permanent creases of two decades of intense concentration. Broad, defined cheekbones with a slight width through the face reflecting Polynesian ancestry. Her face moves minimally; most expression happens elsewhere.",
+    "skin_tone": "Deep warm brown with golden undertones, characteristic of blended South Asian, Sub-Saharan African, and Pacific Islander ancestry. The base luminosity is muted by years under artificial light and industrial-grade air exposure, creating an ashy overlay on naturally rich skin.",
+    "complexion": "Weathered but clean. Faint stress lines radiating from the corners of her eyes — the permanent creases of two decades of intense concentration. Broad, defined cheekbones with characteristic width reflecting South Asian and Pacific Islander ancestry. Her face moves minimally; most expression happens elsewhere.",
     "distinguishing_marks": [
       "Surgical scars on both hands — fingers and knuckles — from a lifetime of precision work and field surgery; pale and detailed",
       "A long, thin burn scar running along her left forearm from a biocontainment incident in her thirties, faded to white",
@@ -213,14 +202,47 @@
     "posture_movement": "She stands and moves with economical precision — no gestures wasted, no fidgeting. Her spine is straight. When listening, she does not nod; instead her tail does. When examining an animal, her entire body goes very still, becoming an instrument of focus. She walks as though moving through water, deliberate and careful.",
     "clothing_style": "Practical Tier 3 workwear. White or grey lab coat, always, worn over dark cargo pants with reinforced pockets and loops for instruments. Steel-toed boots — beat up, well-maintained, comfortable. A thin steel bracelet on her left wrist, dented from years of work. No jewelry otherwise. Her clothes are functional, often stained with something that is not quite blood, and she does not notice."
   },
-  "image_prompt": "Leilani Tofauti, cyberpunk 2226, 173cm lean angular woman with warm golden-brown skin beneath pallor, pale hazel eyes, dark auburn hair with grey streaking pinned back with steel clips to collar-length. Broad defined cheekbones, weathered face with stress lines, thin lips, minimal expression. Dark auburn prehensile cat tail extending from spine, muscular and alert. Surgical scars visible on both hands, long white burn scar on left forearm. Wearing white lab coat over dark reinforced cargo pants, steel-toed boots, thin steel bracelet on left wrist. Standing in Geartown industrial facility under fluorescent light, posture perfectly straight and economical, tail curled, subdermal temperature sensing visible in fingertips as she examines biotech substrate. No chrome, no neural ports visible. Deliberate, focused, moving through space like water. Cyberpunk medical-biotech specialist aesthetic. Geartown industrial interior lighting --ar 2:3 --v 6",
+  "image_prompt": "Ananya Krishnamurthy, a tall angular woman with deep warm brown skin enriched by golden undertones and natural luminosity from blended South Asian, Sub-Saharan African, and Pacific Islander heritage. Pale hazel eyes, broad defined cheekbones, dark auburn hair with grey threads pinned back severely with steel clips. Stress lines around her eyes from intense focus. Surgical scars visible on hands and fingers, a thin white burn scar along her left forearm. A dark auburn prehensile cat tail extending from her spine, muscular and capable of independent movement, curled contentedly. Wearing a white lab coat over dark reinforced cargo pants and steel-toed boots, a dented steel bracelet on her left wrist. Standing with economical precision in a neo-noir biocontainment laboratory, soft blue-white overhead lighting, her entire body still and focused like an instrument, examining something just out of frame. GLMZ 2200s, no chrome augmentation visible, hyper-detailed surgical scars, realistic genetic ancestry features, atmospheric industrial setting, shallow depth of field, cool tone color grading --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 42.6,
-    "Pacific Islander": 39.3,
-    "Eastern European": 18.1
+    "South Asian": 79.3,
+    "Sub-Saharan African": 14.1,
+    "Pacific Islander": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 40.3,
+        "Tamil Sri Lankan": 29.8
+      },
+      "Indian": {
+        "Bengali": 4.9,
+        "Punjabi": 4.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.3,
+        "Mozambican": 1.9
+      },
+      "East African": {
+        "Somali": 4.8
+      },
+      "West African": {
+        "Nigerian": 1.5,
+        "Ghanaian": 1.6
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 2.3
+      },
+      "Polynesian": {
+        "Tuvaluan": 4.3
+      }
+    }
+  }
 }

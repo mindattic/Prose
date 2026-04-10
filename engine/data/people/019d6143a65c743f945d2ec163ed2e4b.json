@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65c743f945d2ec163ed2e4b",
   "type": "character",
-  "name": "Soren Waboose",
+  "name": "Soren Kuznetsov",
   "aliases": [
     "Mirka"
   ],
@@ -12,7 +12,7 @@
   "age": 16,
   "status": "active",
   "location": "Lakewood Ledge (family apartment), Sterling-Nakamura Secondary Academy, Edgewater Prism campus, near Lincoln and Clark",
-  "description": "Mirka is effortlessly put-together in the way of children who've grown up watching adults perform success — her hair is a natural dark brown that she keeps in a precise, high bun for school and lets down on weekends, her uniform always pressed even when everything else is fraying. She has warm sepia skin, cheekbones she's privately proud of, and geneware cat ears (small, dark-tipped, folded close) that she got at fourteen as a birthday gift and has since quietly decided are embarrassing, though she'd never say so. She is five centimeters taller than she was at the start of last year and hasn't quite adjusted to her own body yet.\n\nMirka is at the precise center of the corporate education pipeline — not a scholarship student (her family pays, barely), not elite (she is acutely aware of who in her cohort has Tessera or Axiom parents and what that means for their futures). She is hardworking in the anxious, exhaustive way of someone who understands that her position is not guaranteed, and socially adept enough to have friends she'd burn if she had to. She has a private dream she's told no one: she wants to work for Helix Biosystems in bioethics. Not for the money — because she thinks someone should be asking those questions from inside.",
+  "description": "Soren Kuznetsov is effortlessly put-together in the way of children who've grown up watching adults perform success — her hair is a natural dark brown that she keeps in a precise, high bun for school and lets down on weekends, her uniform always pressed even when everything else is fraying. She has warm sepia skin, cheekbones she's privately proud of, and geneware cat ears (small, dark-tipped, folded close) that she got at fourteen as a birthday gift and has since quietly decided are embarrassing, though she'd never say so. She is five centimeters taller than she was at the start of last year and hasn't quite adjusted to her own body yet.\n\nSoren Kuznetsov is at the precise center of the corporate education pipeline — not a scholarship student (her family pays, barely), not elite (she is acutely aware of who in her cohort has Tessera or Axiom parents and what that means for their futures). She is hardworking in the anxious, exhaustive way of someone who understands that her position is not guaranteed, and socially adept enough to have friends she'd burn if she had to. She has a private dream she's told no one: she wants to work for Helix Biosystems in bioethics. Not for the money — because she thinks someone should be asking those questions from inside.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakewood Ledge (family apartment)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,33 +239,11 @@
     "Helix Biosystems",
     "Edgewater Prism",
     "Lakewood Ledge",
-    "Tessera Corponation",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Cezar Watanabe-Gyasi",
-    "Hearthstone Firearms Youth-20 'First Step'",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lacuna Genomics",
-    "Lazarus IDP-1 'Teeth'",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Morita-Antwi",
-    "Osvaldo Mensah-Kovalenko",
-    "Patient Zero",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Switchback",
-    "The Pure Hand",
-    "Vesna Čolić-Strand",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "Vuk Jorgensen-Toure"
+    "Tessera Corponation"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Indigenous American (Anishinaabe / Ojibwe heritage dominant at 66.5%), with significant South Asian (21.0%) and Middle Eastern (12.5%) ancestry creating a distinctive multicultural phenotype. The combination produces warm, golden-undertoned skin with subtle depth, sharp cheekbones reflecting Indigenous bone structure softened by South Asian features, and dark eyes with warm amber notes.",
+    "heritage": "Eastern European (54.0%) dominant with significant Indigenous American (19.1%), South Asian (14.1%), and Hispanic/Latin American (8.6%) ancestry, with minor Central Asian (2.3%) and Sub-Saharan African (1.9%) heritage. This complex genetic blend creates warm, golden-bronze skin with subtle depth and radiance. Indigenous bone structure—high, defined cheekbones—is complemented by South Asian facial geometry and Eastern European features, producing distinctive angular-yet-rounded contours. The ancestry mix generates dark brown eyes with warm amber undertones reflecting the South Asian and Hispanic/Latin American components.",
     "height_cm": 168,
     "weight_kg": 54,
     "build": "Lean, still-lengthening adolescent frame with emerging definition in shoulders and arms from debate team posture work. Movements not yet fully synchronized with her height gain — occasional gracelessness masked by deliberate control.",
@@ -273,8 +251,8 @@
     "hair_style": "High, precise bun for school days (not a single strand out of place); loose waves down her back on weekends, sometimes half-pinned",
     "hair_length": "Long (to mid-back when down)",
     "eye_color": "Dark brown with warm amber undertones, alert and observant",
-    "skin_tone": "Warm golden-bronze with subtle red undertones across cheekbones, reflecting the blend of Indigenous American, South Asian, and Middle Eastern ancestry. Radiant depth that catches light distinctly.",
-    "complexion": "Clear, well-maintained skin indicating consistent grooming discipline. High, defined cheekbones with the characteristic structure of Indigenous heritage, subtly softened by South Asian features. A faint scar on her left jawline from a childhood fall. Nanocoat-whitened teeth, visible when she smiles (which she does strategically). Precise eyebrow maintenance.",
+    "skin_tone": "Warm golden-bronze with olive undertones, medium depth with radiant quality that catches light distinctly, reflecting the blend of Eastern European, Indigenous American, South Asian, and Hispanic/Latin American ancestry.",
+    "complexion": "Clear, well-maintained skin indicating consistent grooming discipline. High, defined cheekbones with structure reflecting Eastern European and Indigenous American heritage, softened and warmed by South Asian and Hispanic/Latin American features creating balanced facial geometry. A faint scar on her left jawline from a childhood fall. Nanocoat-whitened teeth with subtle nacreous sheen, visible when she smiles strategically. Precise eyebrow maintenance.",
     "distinguishing_marks": [
       "Small, dark-tipped folded geneware cat ears set high on her skull, visible when hair is in a bun, which she tolerates but does not publicly acknowledge",
       "Faint scar on left jawline, approximately 2cm, paled but still visible under certain light angles"
@@ -283,14 +261,81 @@
     "posture_movement": "Controlled, almost rehearsed posture — spine straight, shoulders back — the product of three years of debate team and constant awareness of being watched in a tier-stratified school. Walks with purpose. Sits with her hands visible on the desk or in her lap. Rarely fidgets in public, but fingers drum when she's processing something difficult. Her smile is deployed, not automatic.",
     "clothing_style": "Sterling-Nakamura Secondary uniform worn immaculately: charcoal blazer with school crest, pressed grey trousers, white shirt with subtle iridescent threading (mid-tier quality, not corpo-elite). Outside school: clean-casual Tier 3 brand wear (Meridian, Verve) — well-fitted but not ostentatious. Keeps a black academic tablet in a custom sleeve. Wears a silver chain necklace (family heirloom, not augmented). No visible jewelry beyond that. Her school bag is organized to military precision."
   },
-  "image_prompt": "Soren Waboose, 16-year-old with golden-bronze skin blending Indigenous Anishinaabe, South Asian, and Middle Eastern heritage. Sharp high cheekbones, dark amber-brown eyes, long dark brown hair in a tight academic bun revealing small dark-tipped folded geneware cat ears. Lean adolescent frame, 168cm tall, impeccable posture. Wearing crisp Sterling-Nakamura Secondary uniform: charcoal blazer with crest, grey trousers, white iridescent-threaded shirt. Silver chain necklace catching light. Faint scar visible on left jawline. Alert, controlled expression with a measured smile. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool-toned school hallway lighting with slight neural port glow at base of skull hidden by hair. Strategic, observant demeanor. Nanocoat-whitened teeth subtle gleam. Mid-tier aesthetic, precise organization evident. --ar 2:3 --v 6",
+  "image_prompt": "Soren Kuznetsov, 168cm lean 16-year-old with warm golden-bronze skin and Indigenous American-Eastern European-South Asian ancestry blend. High defined cheekbones, dark brown eyes with amber undertones, long dark brown hair in precise high bun revealing small dark-tipped folded geneware cat ears. Faint jawline scar. Immaculate Sterling-Nakamura Secondary uniform: charcoal blazer, grey trousers, white iridescent-threaded shirt. Silver chain necklace. Controlled posture, alert expression, deliberate composure. GLMZ Great Lakes Metropolitan Zone, sterile school corridor with cool LED lighting casting subtle shadows across her face, academic tablet visible in custom sleeve, mysterious half-smile. Neon-tinged institutional aesthetics, tier-stratified world. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 66.5,
-    "South Asian": 21.0,
-    "Middle Eastern": 12.5
+    "Eastern European": 54,
+    "Indigenous American": 19.1,
+    "South Asian": 14.1,
+    "Hispanic/Latin American": 8.6,
+    "Central Asian": 2.3,
+    "Sub-Saharan African": 1.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 14.9
+      },
+      "Slavic East": {
+        "Belarusian": 6.3,
+        "Ukrainian": 7.4
+      },
+      "Slavic South": {
+        "Bosnian": 25.4
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 10.1
+      },
+      "Andean": {
+        "Aymara": 3.7
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 5.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 14.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 4.5
+      },
+      "South American": {
+        "Peruvian": 1.6
+      },
+      "Central American": {
+        "Guatemalan": 2.5
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 0.9,
+        "Hazara": 1
+      },
+      "Mongolic": {
+        "Mongolian": 0.2,
+        "Buryat": 0.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 0.7,
+        "Tanzanian": 0.4
+      },
+      "West African": {
+        "Nigerian": 0.6
+      },
+      "Central African": {
+        "Cameroonian": 0.1,
+        "Gabonese": 0.1
+      }
+    }
+  }
 }

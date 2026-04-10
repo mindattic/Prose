@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69a741eb7458663ee226a04",
   "type": "character",
-  "name": "Fatima Novotný",
+  "name": "Zephyr Rhee",
   "aliases": [
     "Phúc the Small",
     "Penny"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Manitowoc Drydock, living in and around the maintenance scaffolding of grounded airship hulls, near North Ave and Milwaukee",
-  "description": "Phúc is small for fourteen, and he has made his smallness into a professional skill — he can fit into the access shafts of a grounded airship hull that no adult can reach, which is why the drydock workers let him stay on the scaffolding rather than running him off. His hair is black and cut by himself with whatever he can find; currently one side is shorter than the other and he seems unbothered. His skin is a warm medium brown, and he has cat ears — real geneware ones, tawny-furred and independently mobile, which he got from a traveling mod-clinic two years ago using money he still won't explain. He keeps them flat when he wants to seem smaller and unthreatening, which is most of the time.\n\nPhúc has been drifting the airship lanes since his mother's cargo vessel was impounded by Ferrogate Transit for unpaid port fees when he was eleven. He doesn't know where she is now. He cooks this knowledge in a place behind his sternum and does not take it out often. He is extremely competent in all matters relating to airship maintenance, scavenging, and the informal economy of drydock communities, and he has the bright, slightly exhausting energy of a teenager who has learned that being useful is safer than being visible.",
+  "description": "Zephyr Rhee is small for fourteen, and he has made his smallness into a professional skill — he can fit into the access shafts of a grounded airship hull that no adult can reach, which is why the drydock workers let him stay on the scaffolding rather than running him off. His hair is black and cut by himself with whatever he can find; currently one side is shorter than the other and he seems unbothered. His skin is a warm medium brown, and he has cat ears — real geneware ones, tawny-furred and independently mobile, which he got from a traveling mod-clinic two years ago using money he still won't explain. He keeps them flat when he wants to seem smaller and unthreatening, which is most of the time.\n\nZephyr Rhee has been drifting the airship lanes since his mother's cargo vessel was impounded by Ferrogate Transit for unpaid port fees when he was eleven. He doesn't know where she is now. He cooks this knowledge in a place behind his sternum and does not take it out often. He is extremely competent in all matters relating to airship maintenance, scavenging, and the informal economy of drydock communities, and he has the bright, slightly exhausting energy of a teenager who has learned that being useful is safer than being visible.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -159,7 +159,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Manitowoc Drydock",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,27 +170,15 @@
   "related_entities": [
     "Ferrogate Transit",
     "Manitowoc Drydock",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "The Milwaukee Core",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Brecken Yılmaz-Osei",
-    "Devraj Solano-Yildirim",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Patient Zero",
-    "TESSERA PA-5 'Attendant'",
-    "The Pure Hand",
-    "The Shaft",
-    "Tshiamo Vukić-Arellano",
-    "Vagrant",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tofauti-Szarvásy"
+    "Cargo Tacos",
+    "Compass Rose"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Eastern European / North African / Hispanic with Middle Eastern elements. A striking genetic blend: Eastern European bone structure (Slavic ancestry 46.5%) combined with North African warmth (31%), Hispanic genetics (16.7%), and subtle Middle Eastern features (5.8%). The result is a complexion and feature set that defies easy categorization—European-descended facial geometry softened by Mediterranean and North African warmth.",
+    "heritage": "East Asian / Pacific Islander / Sub-Saharan African blend with Northern European and Southeast Asian elements. Dominant East Asian ancestry (50.1%) provides facial structure and eye shape, substantially modulated by Pacific Islander genetics (26.7%) contributing warmth, fuller cheekbones, and broader facial dimensions. Sub-Saharan African heritage (10.4%) enriches skin undertones with deeper golden warmth and contributes to nose bridge fullness. Northern European ancestry (8.8%) and Southeast Asian elements (4.0%) create subtle secondary characteristics. The result is a complexion and feature set of warm, multivalent beauty—East Asian geometric refinement enriched by Oceanic generosity and African depth.",
     "height_cm": 152,
     "weight_kg": 41,
     "build": "Wiry and compact, with the lean musculature of a working child—no excess, shoulders already developing the forward-rounded posture of someone who spends hours in confined spaces. Hands calloused, fingertips stained with hydraulic fluid.",
@@ -198,26 +186,68 @@
     "hair_style": "Self-cut, irregular—one side cropped to 2cm, the other falling to 5cm, creating an accidental asymmetry he has stopped trying to fix",
     "hair_length": "Short / Medium (uneven)",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-golden brown with subtle olive undertones—the blend of Eastern European paleness modulated by North African and Hispanic sun-toned ancestry, creating a complexion that reads as Mediterranean-influenced with depth beneath the weathering",
-    "complexion": "Sun-weathered from outdoor drydock work, with minor scars on knuckles and forearms; clean-shaven with a faint shadow of early adolescence. Cheekbones suggest Eastern European structure, softened by warmer undertones. Nose proportions reflect the genetic blend—slightly broader at bridge, tapering cleanly. No acne despite conditions—genetics or careful hygiene in limited water.",
+    "skin_tone": "Warm medium-golden brown with rich undertones—East Asian base modulated by Pacific Islander generosity and Sub-Saharan African depth, creating a complexion of burnished golden-bronze warmth with subtle complexity beneath weathering",
+    "complexion": "Sun-weathered from outdoor drydock work, with minor scars on knuckles and forearms; clean-shaven with a faint shadow of early adolescence. Cheekbones display East Asian structure with fuller, broader dimensions from Pacific Islander heritage. Nose proportions reflect genetic blend—bridge slightly broader with fullness from African ancestry, tapering cleanly. Eye shape shows East Asian influence with warm dark depth. No acne despite conditions—genetics or careful hygiene in limited water.",
     "distinguishing_marks": [
       "Shallow burn scar on inner right wrist (approximately 3cm long), sustained during an access-shaft retrieval two years ago",
       "Network of thin white scratches across both forearms from metal edges and industrial debris, oldest scars faded, newest still pink",
       "A small, dark birthmark on his left collarbone, shaped like an irregular comma"
     ],
-    "visible_augmentations": "Tawny-furred geneware cat ears (approximately 6cm tall, independently mobile) set naturally into his skull above his natural ears. The fur is well-maintained despite his circumstances—he grooms them habitually. When alert, ears point forward; when cautious or trying to appear non-threatening, they flatten against his skull. No other visible augmentations.",
+    "visible_augmentations": "Tawny-furred geneware cat ears (approximately 6cm tall, independently mobile) set naturally into his skull above his natural ears. The fur is well-maintained despite his circumstances—he grooms them habitfully. When alert, ears point forward; when cautious or trying to appear non-threatening, they flatten against his skull. No other visible augmentations.",
     "posture_movement": "Moves with economical precision—no wasted motion. Shoulders carried slightly forward from years in confined spaces. Walking gait is quick and alert, with constant micro-adjustments to balance. Head often tilted slightly, ears tracking sounds before his eyes do. He has trained himself into smallness: avoids expanding into space, keeps limbs close, sits compressed. When focused on work, he becomes almost invisible in his stillness.",
     "clothing_style": "Tier 5 salvage-core aesthetic. Oversized grey thermal undershirt (likely stolen from a drydock donation bin) layered under a sleeveless synthetic vest in faded industrial orange with multiple pockets holding small tools and trade items. Cargo pants with reinforced knees (patched three times with mismatched fabric). Boots are scuffed safety-grade, one size too large, stuffed with newspaper for fit. A length of cargo webbing serves as a belt. One glove (right hand only)—leather work glove missing two fingers—worn constantly despite not needing it; security object. No jewelry, no corpo insignia, no visible wealth markers. Overall impression: functional, worn, deliberate."
   },
-  "image_prompt": "Fatima Novotný, 152cm tall, compact wiry frame with forward-rounded shoulders from drydock work. Medium-golden brown skin with subtle olive undertones, Eastern European facial structure softened by warm North African and Hispanic ancestry. Dark brown eyes, uneven black hair (one side 2cm cropped, other 5cm), tawny-furred mobile cat ears (6cm tall) groomed despite poverty, ears slightly flattened in cautious posture. Visible scars: 3cm burn mark on inner right wrist, white scratches across forearms, small dark birthmark on left collarbone. Wearing oversized grey thermal undershirt under faded industrial orange sleeveless vest with tool pockets, reinforced cargo pants with mismatched knee patches, oversized scuffed safety boots, cargo webbing belt, one fingerless leather work glove on right hand. Calloused hands stained with hydraulic fluid. Compact, economical posture, moving with precision through dark drydock shadows. Cyberpunk 2220s Great Lakes Metropolitan Zone aesthetic. Moody industrial lighting casting sharp shadows. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Zephyr Rhee, 152cm tall wiry adolescent with striking multiethnic features: warm golden-bronze skin tone blending East Asian geometry with fuller Pacific Islander cheekbones and broad nose bridge. Dark brown eyes, naturally black asymmetrical self-cut hair (one side 2cm cropped, other 5cm), small independent tawny-furred geneware cat ears alert atop head. Clean-shaven with sun-weathered complexion, visible burn scar on inner right wrist, network of white scratches on forearms. Wears oversized grey thermal undershirt under faded orange sleeveless industrial vest with multiple pockets, reinforced cargo pants with mismatched patches, oversized safety boots stuffed with newspaper, cargo webbing belt, single leather work glove missing two fingers on right hand. Compact posture, shoulders slightly forward, head tilted with ears tracking. Urban drydock setting, cool neon-blue and industrial orange lighting, weathered metal background, focused alert expression. Neo-noir gritty aesthetic, sharp detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 46.5,
-    "North African": 31.0,
-    "Hispanic/Latin American": 16.7,
-    "Middle Eastern": 5.8
+    "East Asian": 50.1,
+    "Pacific Islander": 26.7,
+    "Sub-Saharan African": 10.4,
+    "Northern European": 8.8,
+    "Southeast Asian": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 50.1
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 4.8,
+        "Kiribati": 21.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 5.8,
+        "Ugandan": 4.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 2.4,
+        "English": 0.3
+      },
+      "Germanic": {
+        "German": 0.3,
+        "Austrian": 0.8
+      },
+      "Scandinavian": {
+        "Swedish": 0.8,
+        "Icelandic": 4.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 3.2
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.8
+      }
+    }
+  }
 }

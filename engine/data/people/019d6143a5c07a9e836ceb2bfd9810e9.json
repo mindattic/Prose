@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c07a9e836ceb2bfd9810e9",
   "type": "character",
-  "name": "Leif Malhotra",
+  "name": "Ifeanyi Sesay",
   "aliases": [
     "Bast",
     "Null-Seven",
@@ -14,7 +14,7 @@
   "age": 31,
   "status": "active",
   "location": "The Meridian Core (official residence), The Circuit (operational base), near LaSalle and Jackson",
-  "description": "Bastian Czernowitz-Olade is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
+  "description": "Ifeanyi Sesay is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -234,7 +234,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core (official residence)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,36 +250,20 @@
     "The Meridian Core",
     "Meridian Core",
     "The Circuit",
-    "GLMZ",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Ouroboros Energy Power Distribution Trunk Network",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Spire",
     "The Shelf",
     "The Heritage Vault",
-    "Palette",
+    "Charcoal",
+    "Circuit",
+    "Slate",
     "Slagworks Industrial",
-    "Null",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Immaculée Dalgaard-Nwosu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kairos",
-    "Lacunal",
-    "Lazarus BX-0 'Test Subject'",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Philibert Mwangi-Djordjevic",
-    "Stainless Steel",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "TESSERA PG-2 'Signature'",
-    "The Human Baseline Alliance",
-    "Yannick Tofauti-Szarvásy",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Genetically kaleidoscopic—Northern European (23.7%), South Asian (23.6%), Indigenous American (22.1%), Eastern European (10.6%), Sub-Saharan African (10.2%), and East Asian (9.8%) in near-equal distribution. The result is a phenotype that resists easy categorization: features draw from multiple continental traditions in subtle combination rather than stark contrast.",
+    "heritage": "Genetically mosaic of Sub-Saharan African (40.6%), South Asian (20.9%), Eastern European (15.2%), Middle Eastern (11.7%), and Southeast Asian (11.6%) ancestry. The phenotype reflects this polyphonic blend: West African bone structure with graceful cheekbone width meets South Asian facial proportions and Middle Eastern nose bridge definition, anchored by Eastern European undertones in jawline geometry. Southeast Asian softness tempers the overall angularity. Features resist categorical reading, shifting subtly across continental traditions depending on light and angle—high cheekbones with lateral width, straight nose with moderate bridge definition, balanced jawline with smooth angularity. The overall effect is striking equilibrium across global lineages.",
     "height_cm": 174,
     "weight_kg": 72,
     "build": "Medium, lean but not wiry—economical muscle distribution from deliberate fitness maintenance rather than athletic pursuit. Posture is neither relaxed nor rigid, calibrated to occupy minimal psychological space.",
@@ -287,8 +271,8 @@
     "hair_style": "Neatly trimmed, geometric precision. No styling product, no texture. Parted slightly off-center.",
     "hair_length": "Short",
     "eye_color": "Light gray-green with slight amber undertone—unusual enough to create momentary cognitive friction, then dissolve from memory",
-    "skin_tone": "Medium-deep warm brown with complex undertones—neither distinctly warm nor cool, the result of blended melanin inheritance across multiple ancestry lines. Resists categorical description; shifts subtly across the spectrum from olive to golden to reddish depending on angle and light.",
-    "complexion": "Clean-shaven, smooth skin with no visible scarring or blemishing. Minimal sun exposure suggests tier-appropriate indoor lifestyle. Features are harmoniously blended across ancestral lines: high cheekbones with slight lateral width, straight nose with subtle bridge width, unmarked jawline with balanced angularity. Appears five years younger or older depending on lighting angle. The overall impression is of pleasant symmetry that reads as generically 'human' rather than distinctly regional.",
+    "skin_tone": "Medium-deep warm brown with complex polyphonic undertones—the result of blended melanin inheritance across Sub-Saharan African, South Asian, Middle Eastern, and Southeast Asian lines. Shifts subtly across spectrum from warm bronze to golden to subtle olive depending on angle and light.",
+    "complexion": "Clean-shaven, smooth skin with no visible scarring or blemishing. Minimal sun exposure suggests tier-appropriate indoor lifestyle. Features are harmoniously blended across ancestry: high cheekbones with graceful lateral width reflecting West African heritage, straight nose with moderate bridge definition from Middle Eastern and South Asian lines, unmarked jawline with balanced angularity balanced by Southeast Asian softness. Appears five years younger or older depending on lighting angle. The overall impression is of genuine cosmopolitan harmony rather than distinctly regional phenotype.",
     "distinguishing_marks": [
       "No visible scars, tattoos, or birthmarks—deliberately maintained absence functions as its own mark in the augmented underworld"
     ],
@@ -296,17 +280,58 @@
     "posture_movement": "Moves with economic efficiency—no wasted gesture, no expansive body language. Walks at consistent pace, neither hurried nor leisurely. Sits with spine slightly forward, ready to stand. Eyes track surroundings in predictable patterns. Speaks in measured tone with minimal vocal inflection. Handshake is firm but brief. Overall impression: someone whose presence is a checkbox rather than a presence.",
     "clothing_style": "Meridian Core Tier 2-3 professional: charcoal wool trousers, slate technical shirts in breathable microfiber, muted teal or gray blazers from mid-market corpo brands (Zeiss-Luxor, Nakamura Systems). Watches a stainless steel minimalist chronometer (Braun-licensed). Shoes are black leather composite, maintained to utilitarian polish. Bag is a slim messenger in technical fabric—carries encrypted tablet, earpiece, secondary comms device, nothing personal. The effect is of someone assembling a costume from a corporate template."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Leif Malhotra, a mixed-heritage corporate operative with medium-deep warm brown skin showing subtle olive-golden undertones. Sharp cheekbones, straight nose, unmarked jawline. Short dark brown straight hair with geometric precision, parted slightly off-center. Light gray-green eyes with amber undertones. Clean-shaven, youthful-appearing but ageless. 174cm tall, lean build. Wearing charcoal wool trousers, slate microfiber technical shirt, muted teal blazer from Zeiss-Luxor. Black leather composite shoes, stainless steel minimalist chronometer visible. Slim technical messenger bag. Posture economical and reserved, moves with minimal gesture. Corporate tier 2-3 aesthetic. Standing in sleek GLMZ office or transit hub under cool neon and fluorescent lighting. Neutral expression. Slightly forward-leaning stance suggesting readiness. Atmosphere of quiet professionalism and deliberate anonymity. High-contrast cyberpunk lighting, subtle shadows emphasizing symmetrical features. --ar 2:3 --v 6",
+  "image_prompt": "Ifeanyi Sesay, 174cm tall lean professional with medium-deep warm brown skin reflecting Sub-Saharan African, South Asian, Middle Eastern, and Southeast Asian ancestry. High graceful cheekbones, straight nose with moderate bridge definition, balanced jawline. Light gray-green eyes with amber undertone. Dark brown naturally straight short hair, neatly trimmed and parted off-center. Clean-shaven, smooth complexion. Wearing charcoal wool trousers, slate technical microfiber shirt, muted teal Nakamura Systems blazer, black leather composite shoes, stainless steel minimalist chronometer. Slim technical fabric messenger bag. Standing in GLMZ Great Lakes Metropolitan Zone corporate office with soft LED ambient lighting, cool tones. Posture economical and calibrated, eyes tracking surroundings predictably. Measured, checkpoint presence. No visible augmentations though neural implants lurk beneath skin. Professional but forgettable, template-assembled appearance. Neo-noir corporate aesthetic, 2200s tech --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 23.7,
-    "South Asian": 23.6,
-    "Indigenous American": 22.1,
-    "Eastern European": 10.6,
-    "Sub-Saharan African": 10.2,
-    "East Asian": 9.8
+    "Sub-Saharan African": 40.6,
+    "South Asian": 20.9,
+    "Eastern European": 15.2,
+    "Middle Eastern": 11.7,
+    "Southeast Asian": 11.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 10.2,
+        "Sierra Leonean": 1.9
+      },
+      "East African": {
+        "Ugandan": 3.6
+      },
+      "Southern African": {
+        "Zimbabwean": 15.1,
+        "South African": 9.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 15.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 9.6,
+        "Belarusian": 5.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 4.2
+      },
+      "Arab Levantine": {
+        "Palestinian": 7.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 11.6
+      }
+    }
+  }
 }

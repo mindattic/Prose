@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6937b198a4e4f2645d70679",
   "type": "character",
-  "name": "Sol Karunaratne-Dlamini",
+  "name": "Sol Anang-Bergqvist",
   "aliases": [
     "Long Game"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -104,23 +104,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Chicago",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Pikasso Wemba-Þórðarson",
-    "Sorin Ekwensi-Balasanyan",
-    "Stainless Steel",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "TESSERA PA-5 'Attendant'",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Tooth Fairy",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly South Asian (82.3%) with significant Hispanic/Latin American (11.5%) and Sub-Saharan African (6.2%) ancestry. The genetic blend manifests in warm, deep brown skin tones with subtle golden undertones characteristic of South Asian heritage, enriched by the warmer complexion influences of Latin American and African ancestry. Facial structure reflects South Asian bone geometry—defined cheekbones and a slightly tapered jawline—with the broader nose bridge and fuller lip structure contributed by African and Hispanic ancestry.",
+    "heritage": "Southeast Asian (46.1%) with substantial Indigenous American (43.1%) and Central Asian (10.8%) ancestry. The genetic blend creates a striking phenotype: warm, medium-deep brown skin with golden undertones characteristic of Southeast Asian heritage, enriched by Indigenous American depth, with subtle Central Asian influences adding width and structure to the facial planes. This tri-continental mix produces a distinctive appearance that reads as neither one ancestry nor another, but a harmonious synthesis.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Solid, angular frame with broad shoulders tapering to a narrow waist. Lean muscle beneath a layer of pragmatic weight — the physique of someone who moves with intention but doesn't obsess over aesthetics.",
@@ -128,8 +116,8 @@
     "hair_style": "Worn in tight, methodical braids pulled into a crown atop the head; a few loose strands often escape by evening",
     "hair_length": "Medium",
     "eye_color": "Dark brown with faint amber undertones",
-    "skin_tone": "Deep warm brown with golden undertones; the result of South Asian predominance blended with Latin American and African warmth",
-    "complexion": "Fine lines radiating from the corners of the eyes and mouth — the map of 54 years of calculation and occasional amusement. Skin shows the faint discoloration of old chemical exposure across the left temple. Clean-shaven or sporting a precise two-day shadow depending on the meet. Facial features reflect South Asian ancestry with broader nose and fuller lips softened by African and Hispanic genetic contribution.",
+    "skin_tone": "Warm, medium-deep brown with golden undertones; the harmonious result of Southeast Asian warmth enriched by Indigenous American depth and Central Asian undertones",
+    "complexion": "Fine lines radiating from the corners of the eyes and mouth — the map of 54 years of calculation and occasional amusement. Skin shows the faint discoloration of old chemical exposure across the left temple. Clean-shaven or sporting a precise two-day shadow depending on the meet. Facial bone structure reflects the blended ancestry: moderate-to-broad cheekbones with slight angular character typical of Southeast and Indigenous American heritage, a broader nose bridge, fuller lip structure, and subtle facial width contributed by Central Asian genetics. The overall effect is a face that carries the geometric influence of multiple continents.",
     "distinguishing_marks": [
       "Thin, jagged scar running horizontally across the right collarbone, approximately 3 inches long, partially obscured by clothing",
       "Faint burn marks on the inner left forearm in a pattern suggesting old splatter — circa 2198 accident or altercation",
@@ -139,14 +127,44 @@
     "posture_movement": "Moves with economical precision; no wasted motion. Often stands with weight balanced on the balls of the feet. Hands gesture minimally but deliberately. Eyes track rooms methodically, cataloging exits and potential threats. Has the stillness of someone accustomed to waiting.",
     "clothing_style": "Tier 3-4 practical: tailored but worn grey wool coat over dark thermal underlayers. Fatigued but maintained—seams are clean, fabric is quality. Cargo pants with reinforced pocket stitching. Unmarked boots, resoled at least twice. No jewelry except a singular stainless steel ring on the right index finger (functional, not decorative). Tends to carry a messenger bag of supple, aged leather worn soft from use."
   },
-  "image_prompt": "Sol Karunaratne-Dlamini, 54-year-old South Asian-descended operative in the Great Lakes Metropolitan Zone, 2226. Deep warm brown skin with golden undertones, dark brown eyes with subtle amber glints, steel-grey streaked black hair braided into a crown. Angular, solid frame standing with economical precision, weight balanced on the balls of feet. Wearing a worn but well-maintained grey wool tailored coat over dark thermal layers, reinforced cargo pants, and resoled boots. Subtle silver circuitry visible along the right temple beneath the skin; left eye subtly reflective with subcutaneous optics. A thin horizontal scar across the right collarbone partially visible at the coat's edge; fine burn marks on inner left forearm. Aged leather messenger bag at side. Standing in a dimly-lit industrial corridor with soft blue-grey lighting, cataloging the space with a methodical gaze. Cyberpunk aesthetic, 2200s noir atmosphere, minimal jewelry—only a functional stainless steel ring on right index finger. --ar 2:3 --v 6",
+  "image_prompt": "Sol Anang-Bergqvist, 168cm tall with solid angular build, medium-deep warm brown skin with golden undertones, blend of Southeast Asian, Indigenous American, and Central Asian heritage evident in broader nose bridge and facial bone structure, dark brown eyes with amber undertones, steel grey hair with black patches worn in tight braids pinned up, fine lines around eyes and mouth, chemical exposure discoloration on left temple. Left eye subtly augmented with subcutaneous optics, silver neural interface circuitry visible along right temple, thin horizontal scar across right collarbone, circuit junction tattoo on left wrist. Wearing faded but quality grey wool coat over dark thermal layers, reinforced cargo pants, resoled boots, stainless steel ring on right index finger, aged leather messenger bag. Standing with economical precision and stillness in a shadowed neo-noir corridor of the Great Lakes Metropolitan Zone, 2226, methodical gaze cataloging surroundings, cool industrial lighting casting subtle shadows across weathered face, noir atmosphere with neon glow distant in background --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 82.3,
-    "Hispanic/Latin American": 11.5,
-    "Sub-Saharan African": 6.2
+    "Southeast Asian": 46.1,
+    "Indigenous American": 43.1,
+    "Central Asian": 10.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 32
+      },
+      "Cambodian": {
+        "Khmer": 14.1
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 11.4
+      },
+      "Mesoamerican": {
+        "Maya": 25.6,
+        "Nahua": 6.1
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 3.5
+      },
+      "Turkic": {
+        "Uzbek": 4.5
+      },
+      "Mongolic": {
+        "Mongolian": 2.8
+      }
+    }
+  }
 }

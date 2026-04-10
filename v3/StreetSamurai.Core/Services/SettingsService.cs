@@ -255,7 +255,7 @@ public class SettingsService : IDisposable
         public int FtpPort { get; set; } = 21;
         public string FtpUsername { get; set; } = "ha9h9a";
         public string FtpPassword { get; set; } = "&#HVzS!=&v32";
-        public string FtpRemotePath { get; set; } = "/m88";
+        public string FtpRemotePath { get; set; } = "/mindattic.com/GLMZ";
         public bool FtpUseSsl { get; set; } = true;
         public bool FtpPassive { get; set; } = true;
     }

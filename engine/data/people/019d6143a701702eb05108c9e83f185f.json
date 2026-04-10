@@ -1,7 +1,7 @@
 {
   "id": "019d6143a701702eb05108c9e83f185f",
   "type": "character",
-  "name": "Kaya Anang-Volkov",
+  "name": "Mariposa Bustamante-Volkov",
   "aliases": [
     "Rebar",
     "Bars",
@@ -14,7 +14,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Western and Division",
-  "description": "Tomasz Wren is enormous — two meters, 140 kilos, sub-dermal plating across his chest and shoulders that makes him look like a man wearing a building. Before the crew he was a construction worker in the Meridian Core redevelopment zone, the kind of honest labor that builds slabs of muscle and a simple pride in being useful. He fell into the crew because Marcus was a childhood friend and childhood loyalty in the Shelf is a debt you pay with your body.\n\nKyle took his left arm off with a single rising cut and destroyed his left knee with the hand cannon. Tomasz now walks with a hydraulic brace that hisses with every step and has a surplus military arm that is technically too powerful for his frame — it dislocates his shoulder if he punches too hard.\n\nHe is the quietest member of the crew. He was quiet before Kyle too. He has a wife, Nessa, who works a food processing line on Tier Three. They have no children. Nessa wants children. Tomasz does not think he should bring children into a life where he comes home with fewer original parts each year. This is the most thoughtful thing about him and he has never said it out loud.\n\nHe didn't want to beat Demyan Morozov. He stood in the back. Kyle broke his knee anyway. He does not resent Kyle for this. He resents himself for being there.",
+  "description": "Mariposa Bustamante-Volkov is enormous — two meters, 140 kilos, sub-dermal plating across his chest and shoulders that makes him look like a man wearing a building. Before the crew he was a construction worker in the Meridian Core redevelopment zone, the kind of honest labor that builds slabs of muscle and a simple pride in being useful. He fell into the crew because Marcus was a childhood friend and childhood loyalty in the Shelf is a debt you pay with your body.\n\nKyle took his left arm off with a single rising cut and destroyed his left knee with the hand cannon. Tomasz now walks with a hydraulic brace that hisses with every step and has a surplus military arm that is technically too powerful for his frame — it dislocates his shoulder if he punches too hard.\n\nHe is the quietest member of the crew. He was quiet before Kyle too. He has a wife, Nessa, who works a food processing line on Tier Three. They have no children. Nessa wants children. Tomasz does not think he should bring children into a life where he comes home with fewer original parts each year. This is the most thoughtful thing about him and he has never said it out loud.\n\nHe didn't want to beat Demyan Morozov. He stood in the back. Kyle broke his knee anyway. He does not resent Kyle for this. He resents himself for being there.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -216,7 +216,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,34 +238,15 @@
     "The Shelf",
     "TESSERA PG-2 'Signature'",
     "NeuralPath VaultPay Subdermal Transaction Node",
-    "IRONLIMB Fortress MK-IV Combat Leg Pair",
+    "Honest Burger",
     "Marcus Okafor-7",
+    "IRONLIMB Fortress MK-IV Combat Leg Pair",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Demyan Morozov",
-    "Ferrogate Enforcer Cruiser",
-    "Free Assembly",
-    "Inductive Thermal Lance",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kyle Ellen Corbin-Vasik",
-    "MERIDIAN",
-    "Marcus Bellamy",
-    "Nodar Kuznetsov-Adu",
-    "Specter",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Pure Hand",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (62.5%) with Eastern European (16%), Sub-Saharan African (8.8%), Southeast Asian (7.1%), and East Asian (5.6%) ancestry — a striking blended phenotype reflecting the Ubiquitous Diaspora. His features show the broad cheekbones and strong jaw structure common to Indigenous American genetics, softened and deepened by the Sub-Saharan and Southeast Asian admixture, with Eastern European bone structure creating angular definition.",
+    "heritage": "Mixed heritage reflecting the Ubiquitous Diaspora: 46.3% Hispanic/Latin American, 24.5% South Asian, 20.5% Eastern European, and 8.7% East Asian. The dominant Latin American structure provides broad cheekbones and strong jaw foundation, while South Asian ancestry adds refined bone angularity and depth to the midface. Eastern European genetics contribute angular, chiseled features and prominent brow structure. East Asian influence subtly shapes the eye set and orbital bones. The result is a striking, architecturally complex phenotype with strong definition across all facial planes.",
     "height_cm": 200,
     "weight_kg": 140,
     "build": "Enormous and heavily muscled — construction worker's frame gone to seed slightly from injury and stillness, shoulders broad enough to block doorways. Left side noticeably weaker, compensating with exaggerated right-side tension.",
@@ -273,29 +254,61 @@
     "hair_style": "Cropped short, utilitarian, no styling",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones — natural color reflecting his mixed ancestry, set deep beneath prominent brows",
-    "skin_tone": "Warm medium-tan — a rich blend of Indigenous American copper undertones with Sub-Saharan depth and Southeast Asian warmth, weathered to institutional pallor from years indoors but still holding underlying golden-amber hue beneath the surface",
-    "complexion": "Broad, high cheekbones characteristic of Indigenous American heritage, widened and strengthened by Eastern European bone structure. Deep-set eyes beneath a pronounced brow ridge. Heavy jaw with squared angles. Permanent furrow between brows. Stubble perpetual — dark and coarse. Skin weathered and creased prematurely from sun exposure and stress, with a subtle coppery undertone even beneath the pallor.",
+    "skin_tone": "Warm medium-tan with golden-amber undertones — a rich blend of Latin American copper, South Asian depth, and Eastern European olive, weathered to institutional pallor from years indoors but still holding the underlying luminosity of his mixed heritage beneath the surface",
+    "complexion": "Architecturally complex face combining Latin American broad, high cheekbones with South Asian refined angularity and Eastern European chiseled strength. Deep-set eyes beneath a pronounced, angular brow ridge shaped by Eastern European genetics. Heavy, squared jaw with definition characteristic of combined Latin American and Eastern European bone structure. Permanent furrow between brows. Stubble perpetual — dark and coarse. Skin weathered and creased prematurely from sun exposure and stress, with coppery undertones even beneath the pallor.",
+    "visible_augmentations": "Sub-dermal plating visible as geometric ridges across his chest and shoulders, creating a quilted, plate-armored silhouette under tight clothing. Left arm is surplus military chrome — matte gunmetal with servo joints and visible hydraulic lines, visibly larger and more angular than a natural limb. Left knee brace is a bulky hydraulic assembly with exposed pistons and hiss-vents, visible below the knee when he walks. The brace creates an audible pneumatic wheeze with every step.",
     "distinguishing_marks": [
       "Surgical scar running the length of his left shoulder socket — thick, keloid tissue where the military arm interfaces",
       "Burn scarring across his right forearm in a splash pattern — old construction accident",
       "Pale Y-shaped scar on his left thigh where the knee brace was anchored surgically",
       "Tattoo of a construction girder framework across his right pectoral — faded, amateur work, pre-crew era"
     ],
-    "visible_augmentations": "Sub-dermal plating visible as geometric ridges across his chest and shoulders, creating a quilted, plate-armored silhouette under tight clothing. Left arm is surplus military chrome — matte gunmetal with servo joints and visible hydraulic lines, visibly larger and more angular than a natural limb. Left knee brace is a bulky hydraulic assembly with exposed pistons and hiss-vents, visible below the knee when he walks. The brace creates an audible pneumatic wheeze with every step.",
     "posture_movement": "Stands with weight shifted to his right side. Walks with a mechanical hitch, left leg stiff then hydraulic-assisted forward — the hiss-step rhythm is involuntary and constant. Right arm hangs naturally; left arm moves in jerky, calculated arcs as if he's still learning its strength. Shoulders always slightly hunched inward, making himself smaller. Head often down. Eyes track movement peripherally.",
-    "clothing_style": "Tier 4 working-class pragmatism — oversized grey utility shirt with the sleeves cut off at mid-bicep to accommodate the chrome arm, fitted dark cargo pants with reinforced left thigh panel, scuffed steel-toed boots. Worn thermal undershirt visible at collar. No jewelry. A frayed woven bracelet on his right wrist — looks handmade, probably from Nessa. Everything is functional, nothing is decorative. Fabric is worn soft in some places, stiff with sweat stains in others.",
-    "posture_notes": "Hunched, defensive, weight favoring right side. Mechanical left leg. Perpetual wariness."
+    "clothing_style": "Tier 4 working-class pragmatism — oversized grey utility shirt with the sleeves cut off at mid-bicep to accommodate the chrome arm, fitted dark cargo pants with reinforced left thigh panel, scuffed steel-toed boots. Worn thermal undershirt visible at collar. No jewelry. A frayed woven bracelet on his right wrist — looks handmade, probably from Nessa. Everything is functional, nothing is decorative. Fabric is worn soft in some places, stiff with sweat stains in others."
   },
-  "image_prompt": "Full-body portrait of Kaya Anang-Volkov, a 200cm tall mixed-heritage man with broad Indigenous American cheekbones, warm medium-tan skin with copper undertones, and deep brown eyes. Dark hair graying at temples, cropped short. Massive muscular build with visible sub-dermal plating creating quilted geometric ridges across chest and shoulders. Left arm is matte gunmetal military chrome with servo joints and hydraulic lines, visibly larger than his right arm. Left knee brace is bulky hydraulic assembly with exposed pistons. Surgical keloid scarring visible on left shoulder where arm interfaces. Burn scarring on right forearm in splash pattern. Wearing oversized grey utility shirt with cut-off sleeves, dark cargo pants with reinforced left thigh panel, scuffed steel-toed boots. Frayed handmade bracelet on right wrist. Standing with weight shifted to right side, hunched shoulders, head slightly down. Cyberpunk 2226 GLMZ setting, industrial warehouse background, harsh neon-tinted light from above creating sharp shadows, gritty concrete textures. Mood: guarded, tired, mechanical. Ultra-realistic texture, weathered and worn appearance. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Great Lakes Metropolitan Zone. Mariposa Bustamante-Volkov, 200cm tall construction worker, mixed heritage phenotype with broad Latin American cheekbones, refined South Asian angularity, Eastern European chiseled strength, and subtle East Asian eye shape. Deep brown eyes set beneath prominent brows, weathered tan skin with golden-amber undertones, dark stubble, cropped greying brown hair. Massive muscular frame with left side visibly weaker. Wearing oversized grey sleeveless utility shirt exposing matte gunmetal military chrome left arm with visible servo joints and hydraulic lines. Dark cargo pants with reinforced left panel. Bulky hydraulic left knee brace with exposed pistons visible below knee. Surgical scarring at left shoulder socket, burn scars on right forearm, Y-scar on left thigh, faded girder tattoo on right pectoral. Sub-dermal chest plating creating quilted silhouette. Frayed handmade bracelet on right wrist. Steel-toed boots. Posture hunched, weight shifted right, mechanical gait with pneumatic wheeze. Peripheral vision, head down. Institutional warehouse lighting, neon accent glow, gritty tired atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 62.5,
-    "Eastern European": 16.0,
-    "Sub-Saharan African": 8.8,
-    "Southeast Asian": 7.1,
-    "East Asian": 5.6
+    "Hispanic/Latin American": 46.3,
+    "South Asian": 24.5,
+    "Eastern European": 20.5,
+    "East Asian": 8.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 46.3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 15.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.1
+      },
+      "Indian": {
+        "Marathi": 5.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 20.5
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 3.7
+      },
+      "Korean": {
+        "Korean": 3.2
+      },
+      "Japanese": {
+        "Japanese": 1.8
+      }
+    }
+  }
 }

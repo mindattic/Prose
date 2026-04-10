@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65a7690aa946fbe5d26d0c2",
   "type": "character",
-  "name": "Kwame Volkov",
+  "name": "Vikram Moala",
   "aliases": [
     "Mama Miri",
     "the Landlady"
@@ -13,7 +13,7 @@
   "age": 51,
   "status": "active",
   "location": "Shallowgrave, operates across a six-block collection territory centered on the Blackpipe Corridor market strip, near Pulaski and Chicago Ave",
-  "description": "Mireille is a broad, unhurried woman who moves through the Blackpipe Corridor market strip with the proprietary ease of someone who owns the street without holding title to a centimeter of it. She has her Malian grandmother's high cheekbones and her Mongolian grandfather's wide, watchful eyes, a combination that gives her face a stillness that reads as patience or menace depending on context. Her hair is natural and silver-threaded, kept close. She has no cosmetic mods and exactly one piece of visible augmentation: a reinforced subdermal strike plate across both forearms, the seams visible as pale ridged lines. She dresses in practical layers — she's almost always carrying something — and smells faintly of the cardamom tea she drinks constantly from a battered thermos.\n\nPeople in Shallowgrave call her Mama Miri, and the term is not entirely ironic. She has run protection on this strip for nineteen years and she has clear and stated rules: you pay on time, you get quiet streets, fair mediation of disputes, and someone who answers when the Ferrogate inspectors come sniffing. You don't pay, you get one conversation, then one demonstration, then you don't have a stall anymore. She considers herself a service provider with a monopoly, which is accurate, and she extends genuine credit and genuine leniency to vendors she respects, which is also accurate. The violence she deploys is proportional and infrequent — she prefers it that way, both because she is pragmatic and because she is, underneath the landlady performance, genuinely tired.",
+  "description": "Vikram Moala is a broad, unhurried woman who moves through the Blackpipe Corridor market strip with the proprietary ease of someone who owns the street without holding title to a centimeter of it. She has her Malian grandmother's high cheekbones and her Mongolian grandfather's wide, watchful eyes, a combination that gives her face a stillness that reads as patience or menace depending on context. Her hair is natural and silver-threaded, kept close. She has no cosmetic mods and exactly one piece of visible augmentation: a reinforced subdermal strike plate across both forearms, the seams visible as pale ridged lines. She dresses in practical layers — she's almost always carrying something — and smells faintly of the cardamom tea she drinks constantly from a battered thermos.\n\nPeople in Shallowgrave call her Mama Miri, and the term is not entirely ironic. She has run protection on this strip for nineteen years and she has clear and stated rules: you pay on time, you get quiet streets, fair mediation of disputes, and someone who answers when the Ferrogate inspectors come sniffing. You don't pay, you get one conversation, then one demonstration, then you don't have a stall anymore. She considers herself a service provider with a monopoly, which is accurate, and she extends genuine credit and genuine leniency to vendors she respects, which is also accurate. The violence she deploys is proportional and infrequent — she prefers it that way, both because she is pragmatic and because she is, underneath the landlady performance, genuinely tired.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -262,36 +262,19 @@
     "Grandmother",
     "The CEO",
     "Ferrogate Transit",
-    "Mireille & The Hollow Saints",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "GLMZ",
+    "Patience",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Chicago",
     "Silver",
     "Nesting Doll",
     "Pellucid Systems",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
-    "Chicago",
-    "Breck Tannen",
-    "Crucible HS-2 'Hearth'",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Enforcer Cruiser",
-    "Gage Circuit",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kang Athletics KA-500 'Sparmate'",
-    "Mirela Osei-Gavrilović",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "The Collective",
-    "The Compact",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (42%) with significant Eastern European (22.9%), Middle Eastern (15.1%), Pacific Islander (10.9%), and East Asian (9.1%) ancestry; the genetic blend creates distinctive features—strong Sub-Saharan bone structure with subtle Central Asian and Levantine facial geometry, Pacific Islander warmth in skin undertone",
+    "heritage": "South Asian dominant (51.4%) with substantial Pacific Islander (35.9%) and Northern European (12.7%) ancestry; creates a distinctive phenotype combining South Asian bone structure and facial geometry with Pacific Islander warmth and depth in skin tone, subtly refined by Nordic elements in brow and orbital structure",
     "height_cm": 172,
     "weight_kg": 82,
     "build": "Broad-shouldered and solid without softness; carries herself with the compact density of someone who has moved through decades of low-grade violence. Not muscular in a performance sense, but functionally strong in the shoulders and core.",
@@ -299,8 +282,8 @@
     "hair_style": "Close-cropped, neat, practical; a few centimeters at most",
     "hair_length": "Short",
     "eye_color": "Brown, watchful, set wide",
-    "skin_tone": "Rich warm brown with golden-amber undertones from the Sub-Saharan and Pacific Islander blend, subtle olive cast from Middle Eastern ancestry, creating a complex, warm-toned complexion that deepens with sun exposure",
-    "complexion": "High prominent cheekbones with broad face structure characteristic of Sub-Saharan ancestry, with subtle angular definition from Eastern European genetics; minimal cosmetic grooming; skin shows sun exposure and the weathering of outdoor work; no visible acne or blemishes, suggesting good self-care despite her tier. Faint laugh lines around her eyes. Warm, even skin tone with natural depth.",
+    "skin_tone": "Deep warm brown with rich golden-amber undertones, the result of blended South Asian and Pacific Islander ancestry deepened further by consistent sun exposure; creates an earthy, complex complexion that darkens seasonally",
+    "complexion": "High prominent cheekbones with broad face structure characteristic of South Asian ancestry, softened and warmed by Pacific Islander roundness through cheeks and jawline; minimal cosmetic grooming; skin shows sun exposure and weathering from outdoor work; no visible acne or blemishes, suggesting good self-care despite her tier. Faint laugh lines around her eyes. Warm, even skin tone with natural depth and subtle golden undertones.",
     "distinguishing_marks": [
       "Pale ridge-work visible along both forearms from elbow to wrist where subdermal strike plates were implanted; the scars are clean and old, approximately 15-20 years healed.",
       "A thin white line along her left temple, approximately 4cm, from a collection dispute in the early 2200s."
@@ -309,16 +292,33 @@
     "posture_movement": "Moves with unhurried purpose, economical in gesture. She doesn't fidget or rush. When she walks, her weight settles forward slightly—someone who has spent decades on her feet and has learned to conserve energy. Her hands rest naturally in her lap or at her sides, and her shoulders never tense. She makes direct eye contact and holds it without aggression, just observation.",
     "clothing_style": "Practical layered wear in neutral colors: dark grey or brown base layers, a canvas work jacket or heavy overshirt in charcoal, cargo pants with deep pockets, sturdy boots scuffed from street work. Always carries a battered metal thermos of cardamom tea. No jewelry except a faded woven bracelet on her left wrist—likely handmade, sentimental value unknown. Tier 4 functionally—not corpo polish, but well-maintained and deliberately chosen for durability over fashion."
   },
-  "image_prompt": "Kwame Volkov, a 172cm tall woman with rich warm golden-brown skin and high prominent cheekbones, dark brown hair with silver threading worn close-cropped. Pacific Islander warmth meets Sub-Saharan bone structure with subtle Eastern European definition. Direct brown gaze, watchful. Pale subdermal strike plate scars visible along both forearms, a thin white line along left temple. Weathered complexion showing decades of outdoor work. Wearing layered practical gear: dark grey base layer, heavy charcoal canvas work jacket, cargo pants, scuffed sturdy boots. Metal thermos in hand, faded woven bracelet on left wrist. Posture economical and purposeful, weight settled forward, shoulders relaxed. Standing in neon-lit Great Lakes Metropolitan Zone street setting, cool overhead lighting casting subtle shadows across her face, gritty cyberpunk 2226 atmosphere, grey concrete and ambient light. Mood: calm, observant, functionally dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Vikram Moala, a 172cm woman with deep warm brown skin and golden undertones, South Asian and Pacific Islander heritage visible in high cheekbones and broad face softened by island warmth; short dark hair with silver threading, brown watchful eyes set wide. GLMZ, Great Lakes Metropolitan Zone. Reinforced subdermal strike plates visible as pale raised scars running down both forearms—deliberately shown as a warning. Thin white scar along left temple. Posture economical and purposeful, unhurried, direct steady gaze. Wearing layered practical clothing: dark grey base, charcoal canvas work jacket, cargo pants with deep pockets, scuffed sturdy boots. Holding a battered metal thermos of cardamom tea. Faded woven bracelet on left wrist. Tier 4 functionally, deliberately durable over fashionable. Indoor urban setting, warm ambient lighting catching the golden undertones of her complexion, emphasizing the weathered depth of her features and the dangerous pale scars on her forearms. Mood: observant, grounded, competent. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 42.0,
-    "Eastern European": 22.9,
-    "Middle Eastern": 15.1,
-    "Pacific Islander": 10.9,
-    "East Asian": 9.1
+    "South Asian": 51.4,
+    "Pacific Islander": 35.9,
+    "Northern European": 12.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 51.4
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 13.1,
+        "Papua New Guinean": 22.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 6.1,
+        "English": 6.6
+      }
+    }
+  }
 }

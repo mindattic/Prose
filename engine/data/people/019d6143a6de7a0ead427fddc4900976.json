@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6de7a0ead427fddc4900976",
   "type": "character",
-  "name": "Marek Čabarkapa-Tlemcani",
+  "name": "Marek Čabarkapa-Sow",
   "aliases": [
     "Suki Print",
     "The Ghost Maker"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Shallowgrave, a rented unit above a recycling processor in Blackpipe Corridor, near Halsted and Division",
-  "description": "Suki is slight and fidgety, with the kind of face that people struggle to describe afterward — deliberately so. They have medium-brown skin and keep their hair a different color every two weeks, courtesy of color-changing follicle geneware, currently a deep teal that fades to bronze at the tips. They have a faint bioluminescent pulse along their collarbones that they usually cover with high-necked clothing, a mod from a phase a few years ago that they haven't had removed because it costs more to undo than to keep. Their fingers are rarely still — they're always rolling something between them, a stylus, a coin, a small tool — and they tend to look at surfaces rather than people when they talk, as though they're reading information off of whatever they're looking at.\n\nSuki is brilliant at the specific thing they do, which is making people into other people on paper — or, more precisely, in the vast interlocking authentication lattices that determine who gets to be who in GLMZ. They design identities the way some people design architecture: with attention to load-bearing details, to how structures weather over time, to what fails first under pressure. They work alone, price fairly by Shallowgrave standards, and have a waiting list. They do not take jobs that feel like someone is going to die because of the identity. They are not always right about when that is.",
+  "description": "Marek Čabarkapa-Sow is slight and fidgety, with the kind of face that people struggle to describe afterward — deliberately so. They have medium-brown skin and keep their hair a different color every two weeks, courtesy of color-changing follicle geneware, currently a deep teal that fades to bronze at the tips. They have a faint bioluminescent pulse along their collarbones that they usually cover with high-necked clothing, a mod from a phase a few years ago that they haven't had removed because it costs more to undo than to keep. Their fingers are rarely still — they're always rolling something between them, a stylus, a coin, a small tool — and they tend to look at surfaces rather than people when they talk, as though they're reading information off of whatever they're looking at.\n\nMarek Čabarkapa-Sow is brilliant at the specific thing they do, which is making people into other people on paper — or, more precisely, in the vast interlocking authentication lattices that determine who gets to be who in GLMZ. They design identities the way some people design architecture: with attention to load-bearing details, to how structures weather over time, to what fails first under pressure. They work alone, price fairly by Shallowgrave standards, and have a waiting list. They do not take jobs that feel like someone is going to die because of the identity. They are not always right about when that is.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Analyst": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,26 +254,14 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Shallowgrave",
+    "Pressure Drop",
     "GLMZ",
-    "ARCHIVE",
     "Bronze",
-    "Irontide Tidal Energy",
-    "Lacuna Genomics",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Réginald Asomaning-Čabarkapa",
-    "Saoirse Mwamba-Drăghici",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Third Rail",
-    "The Undertow",
-    "Tomasz Wren"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European, North African, Sub-Saharan African, and Hispanic/Latin American blend—a Ubiquitous Diaspora mix reflecting the GLMZ melting pot. The genetic combination produces warm-toned medium-brown skin with subtle regional feature blending: Eastern European bone structure refined by African heritage traits, Latin American warmth in complexion undertones.",
+    "heritage": "Eastern European dominant (54.4%) with significant Northern European (25.0%) and Sub-Saharan African (20.6%) ancestry—a genuine Ubiquitous Diaspora blend. The genetic combination produces warm-toned medium-brown skin with characteristic feature blending: sharp Eastern European bone structure refined by African heritage elements, creating an angular, fine-featured face with subtle warmth in undertones.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and wiry, minimal muscle mass, the kind of frame that seems to compress into itself when they sit — all nervous energy and sharp angles",
@@ -281,8 +269,8 @@
     "hair_style": "Shoulder-length, often pulled back with a wire or stylus stuck through it, deliberately unstyled",
     "hair_length": "Medium",
     "eye_color": "Dark brown with subtle optical implant lens artifacts visible under close inspection",
-    "skin_tone": "Warm medium-brown—the result of Eastern European pallor tempered by North African and Sub-Saharan African ancestry, with Latin American warmth in undertones. Rich, complex tone that shifts subtly in different light.",
-    "complexion": "High, defined cheekbones reflecting Eastern European and North African heritage; sharp, angular jaw; fine-featured with a slight broadness through the nose bridge common to Sub-Saharan and North African ancestry. Skin is clear but pallid from nocturnal habits; expression often unfocused, eyes tracking surfaces rather than faces.",
+    "skin_tone": "Warm medium-brown—Eastern European base enriched by Sub-Saharan African and Northern European heritage, creating a complex tone with subtle golden undertones that shifts in different light",
+    "complexion": "High, sharp cheekbones from Eastern European ancestry; angular, defined jawline; fine-featured with characteristic Sub-Saharan African nose bridge width and definition. Clear skin with chronic pallor from nocturnal habits; expression often unfocused, eyes tracking surfaces rather than faces.",
     "distinguishing_marks": [
       "Faint bioluminescent stripe running along both collarbones in pale blue-white, usually concealed by high-necked clothing; pulses subtly with neural activity",
       "Small burn scar on left index finger from early substrate work accident, barely visible",
@@ -292,15 +280,38 @@
     "posture_movement": "Perpetually restless — fidgets constantly with objects (stylus, coin, small tools) that cycle between their fingers. Sits hunched over work surfaces. Speaks while looking at walls, screens, or objects rather than making eye contact. Moves with efficient, nervous energy; rarely still.",
     "clothing_style": "Tier 4 working-class practical: high-necked long-sleeved compression shirts in dark colors to cover collarbone stripe; fitted black or charcoal synthweave pants with multiple cargo pockets; worn Blackpipe Corridor knockoff sneakers. Layers with a faded oversized jacket or hooded sweater for movement between workspace and delivery sites. Minimal jewelry — a single wire or cable bracelet, functional not decorative. Clothes show wear and coffee stains; practical over aesthetic."
   },
-  "image_prompt": "Marek Čabarkapa-Tlemcani, cyberpunk 2226, androgynous figure with warm medium-brown skin blending Eastern European, North African, Sub-Saharan African, and Latin American heritage. Shoulder-length deep teal hair fading to bronze tips, pulled back with a stylus. Sharp cheekbones, angular jaw, dark brown eyes with faint crystalline optical implant artifacts. Slight 163cm wiry frame, hunched posture. Wearing high-necked black compression shirt concealing faint bioluminescent collarbone stripe, fitted charcoal synthweave cargo pants, worn knockoff sneakers. Fidgeting with a stylus between fingers, nervous restless energy. Sitting at a workstation surrounded by screens and tech, dark lighting with neon glow. Nocturnal, unfocused gaze, coffee stains on clothing. Cyberpunk workspace setting, Great Lakes Metropolitan Zone aesthetic, moody and focused. --ar 2:3 --v 6",
+  "image_prompt": "Marek Čabarkapa-Sow, 2226 neo-noir substrate worker, 163cm slight wiry frame hunched over workstation. Warm medium-brown skin with golden undertones blending Eastern European, Northern European, and Sub-Saharan African heritage. Sharp angular cheekbones, defined jawline, fine features with prominent nose bridge definition. Dark brown eyes with faint crystalline optical implant patterns at inner corners. Shoulder-length teal-to-bronze ombre hair pulled back with stylus, nervous energy radiating from restless posture. High-necked black compression shirt concealing pale blue-white bioluminescent collarbone stripe (subtle glow visible), fitted charcoal synthweave cargo pants, worn knockoff sneakers, faded oversized jacket draped over shoulders. Chronic dark circles under eyes, perpetually unfocused expression looking past camera. Single functional cable bracelet. Nocturnal pallor, coffee stains on clothing. Dimly lit workspace with blue-green monitor glow and cool neo-noir neon ambient lighting, close-cropped to torso and hands fidgeting with small tools. Moody, introspective, technical atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 29.7,
-    "North African": 25.0,
-    "Sub-Saharan African": 22.9,
-    "Hispanic/Latin American": 22.4
+    "Eastern European": 54.4,
+    "Northern European": 25,
+    "Sub-Saharan African": 20.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 54.4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 10.2
+      },
+      "Scandinavian": {
+        "Swedish": 7.3
+      },
+      "British Isles": {
+        "Welsh": 5.9,
+        "Irish": 1.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 20.6
+      }
+    }
+  }
 }

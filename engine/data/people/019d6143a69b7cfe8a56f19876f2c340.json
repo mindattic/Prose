@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69b7cfe8a56f19876f2c340",
   "type": "character",
-  "name": "Vega Strömqvist-Agyemang",
+  "name": "Vega Subramaniam-Venkatesh",
   "aliases": [
     "Scout",
     "The Eel",
@@ -14,7 +14,7 @@
   "age": 24,
   "status": "active",
   "location": "Old Harbor — bunks in a hammock in Wren's warehouse when he's not sleeping on Toll's barge, near Wacker and State",
-  "description": "Pike Odera is the fastest swimmer the Boneyard Saints have ever had and the most frustrated. He can navigate the flooded ruins of Old Harbor with an intuitive grace that borders on the uncanny — reading currents by feel, sensing structural integrity through water pressure changes, finding passages in the submerged infrastructure that older divers would miss or ignore. Corva trained him, Toll protects him, and neither will let him go deep. He is twenty-four years old and the leash is getting unbearable.\n\nHe came to Old Harbor from the Shelf, following rumors of salvage work that paid better than courier runs. He'd never been underwater before his first day with the Saints. Within a week, Corva said he moved in the water like he'd been born to it. Within a month, he was scouting routes that seasoned divers wouldn't attempt. The affinity is genuine and slightly inexplicable — Pike processes underwater environments with a fluency that his minimal augmentations don't fully account for.\n\nPike is wiry, quick, with close-cropped hair and an expression that alternates between eager and impatient. He has the lean build of a natural swimmer, long-limbed and efficient. His skin is perpetually salt-dried and he smells like the harbor — brine, rust, and something organic. He moves constantly, even on land, with the restless energy of someone who has found the thing they were meant to do and is being prevented from doing it fully.",
+  "description": "Vega Subramaniam-Venkatesh is the fastest swimmer the Boneyard Saints have ever had and the most frustrated. He can navigate the flooded ruins of Old Harbor with an intuitive grace that borders on the uncanny — reading currents by feel, sensing structural integrity through water pressure changes, finding passages in the submerged infrastructure that older divers would miss or ignore. Corva trained him, Toll protects him, and neither will let him go deep. He is twenty-four years old and the leash is getting unbearable.\n\nHe came to Old Harbor from the Shelf, following rumors of salvage work that paid better than courier runs. He'd never been underwater before his first day with the Saints. Within a week, Corva said he moved in the water like he'd been born to it. Within a month, he was scouting routes that seasoned divers wouldn't attempt. The affinity is genuine and slightly inexplicable — Pike processes underwater environments with a fluency that his minimal augmentations don't fully account for.\n\nPike is wiry, quick, with close-cropped hair and an expression that alternates between eager and impatient. He has the lean build of a natural swimmer, long-limbed and efficient. His skin is perpetually salt-dried and he smells like the harbor — brine, rust, and something organic. He moves constantly, even on land, with the restless energy of someone who has found the thing they were meant to do and is being prevented from doing it fully.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -178,7 +178,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -195,43 +195,17 @@
     "Dust & Meridian Saints",
     "Street Custom 'Lazarus Wire' Garrote System",
     "The Shelf",
-    "The Voltage Saints",
+    "Pressure Drop",
     "Chimera-Null",
     "Ringo DV-4 'Courier'",
+    "The Voltage Saints",
+    "Harbor Fish Shack",
     "Axiom Systems Cortical Bomb CB-1 'Leash'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Rust",
-    "Arcturus Exo-Runner Frame",
-    "Bathysphere Networks",
-    "Bogdan Achebe-Svanstrom",
-    "Brecken Yılmaz-Osei",
-    "Davi Ousseini-Brătianu",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Hearthstone Firearms Single-20 'Farmhand'",
-    "Helix Biosystems Synaptic Throttle — 'The Governor'",
-    "Ihaia Mori-Sefa",
-    "Irontide Tidal Energy",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Narrowcast",
-    "Noir Dining",
-    "Old Harbor",
-    "Othniel Babić-Asantewaa",
-    "Ringo WP-6 'Nightwatch'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Meridian Barge",
-    "The Undertow",
-    "The Wire Taps",
-    "Toluwani Przhevalskyj-Mboyo",
-    "Undertow",
-    "Veslemøy Achebe-Tursynov",
-    "Zheng-Dao Marrow-Pulse Implant"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Cosmopolitan ancestry combining East Asian (31.1%), Sub-Saharan African (22.6%), Pacific Islander (21.1%), with significant South Asian (9.5%), Hispanic/Latin American (9.5%), and Eastern European (6.2%) heritage — a genetic map of the Ubiquitous Diaspora. Complex facial structure reflecting this blend: East Asian eye shape and cheekbone prominence layered with Sub-Saharan African lip fullness and brow ridge, Pacific Islander and South Asian warmth in skin undertones, Eastern European bone structure in the jaw and nose bridge.",
+    "heritage": "Vega carries a complex genetic tapestry of the Ubiquitous Diaspora: South Asian ancestry (51.3%) forms his foundation, expressed in eye shape, cheekbone structure, and fine facial hair patterning. This is substantially layered with Indigenous American (15.6%) and Sub-Saharan African (12.2%) genetics, contributing jaw breadth, brow prominence, and lip fullness. Hispanic/Latin American (8.6%), Northern European (8.1%), and North African (4.2%) ancestry create warmth in undertones and subtle variation in feature expression. The result is a face of remarkable complexity: South Asian eye geometry paired with Sub-Saharan African orbital prominence, Indigenous American jaw structure meeting North African warmth, creating features that resist easy categorization and read as distinctly products of the post-Diaspora world.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Wiry and lean with long, efficient limbs — a swimmer's frame. Minimal body fat, corded forearms and calves from constant activity. Shoulders slightly narrower than his hips, built for flexibility rather than power.",
@@ -239,8 +213,8 @@
     "hair_style": "Close-cropped, textured, always slightly wet or damp",
     "hair_length": "Short",
     "eye_color": "Dark brown with a faint metallic sheen around the irises (pressure-compensation implants visible as a thin silvery ring)",
-    "skin_tone": "Rich warm brown with golden and copper undertones — a blend of East Asian, Sub-Saharan African, and Pacific Islander ancestry expressing as deep bronze that darkens to salt-stained mahogany across shoulders and forearms. The tone carries warmth from South Asian genetics without losing the depth of African heritage.",
-    "complexion": "Perpetually wind-burned and salt-dried with sun-darkened patches, lips full and slightly chapped, fine premature lines around his eyes from squinting in harsh harbor light. High, defined cheekbones with breadth across the face reflecting East Asian and Pacific Islander ancestry. Fine facial hair following a pattern shaped by South Asian genetics. Sharp jaw line tempered by rounded chin. His expression shifts rapidly — eager then frustrated, focused then restless.",
+    "skin_tone": "Rich mahogany brown with golden undertones — the deep warm result of South Asian, Sub-Saharan African, Indigenous American, and North African ancestry blending. Darker to bronze across sun-exposed shoulders and forearms, with salt-staining creating permanent weathered patches along the left side of his neck and jawline.",
+    "complexion": "Perpetually wind-burned and salt-dried with sun-darkened patches, lips full and slightly chapped, fine premature lines around his eyes from squinting in harsh harbor light. High, defined cheekbones with breadth across the face reflecting the width inherited from Sub-Saharan African and Indigenous American ancestry, softened by South Asian feature geometry. Sharp jaw line with rounded chin. Fine facial hair following patterns shaped by South Asian genetics but distributed across a broader facial structure. His expression shifts rapidly — eager then frustrated, focused then restless.",
     "distinguishing_marks": [
       "Thin horizontal scar across his left collarbone, roughly 4cm, pale and old — origin unknown, predates Old Harbor",
       "Small circular scar on the inside of his right wrist (pressure-compensation implant insertion point), barely visible unless wet",
@@ -250,17 +224,82 @@
     "posture_movement": "Never still — fingers tap, legs bounce, weight shifts constantly even while standing. In water he moves with hypnotic grace, economical and flowing. On land his motion is restless and quick, as if the ground is too solid, too limiting. He leans forward when talking, eyes bright with intensity or frustration.",
     "clothing_style": "Tier 4 utilitarian salvage wear: wetsuit jacket over thermal base layers (usually damp), cargo pants with reinforced pockets for tools and sonar equipment, worn rubber-soled boots. A faded work vest with multiple fastening points. Minimal accessories — a wrist cuff with pressure readings, a braided cord around his neck for the sonar unit. Everything shows salt staining and repair patches. No corporate branding; functional, working-class, built for the harbor."
   },
-  "image_prompt": "Vega Strömqvist-Agyemang, cyberpunk 2226, mixed-heritage man with rich warm bronze skin (East Asian, Sub-Saharan African, Pacific Islander, South Asian blend), dark eyes with metallic pressure-compensation implant rings, sharp high cheekbones, full lips slightly chapped from salt exposure. Short dark textured hair with bleached streaks, perpetually damp. 178cm lean swimmer's build, wiry and efficient. Wearing damp wetsuit jacket over thermal layers, reinforced cargo pants, worn boots, faded work vest with multiple pockets. Sonar device on cord around neck, wrist cuff with pressure readings. Fine lines around eyes from squinting harbor light. Salt-and-rust staining on left neck/jawline. Restless posture, leaning forward with intensity. Harbor setting, Great Lakes Metropolitan Zone, cool water-reflected lighting, cinematic cyberpunk aesthetic, functional working-class aesthetic, no corporate branding, gritty and weathered --ar 2:3 --v 6",
+  "image_prompt": "Vega Subramaniam-Venkatesh, 178cm lean swimmer's build, mahogany skin with golden undertones darkened to bronze on shoulders, salt-stained weathering on left jaw. Rich dark brown eyes with faint metallic pressure-compensation implant rings, close-cropped textured dark brown hair with salt-bleached temples. Fine facial hair, high defined cheekbones with broad structure, full lips slightly chapped, premature lines around eyes. Wearing damp wetsuit jacket over thermal layers, reinforced cargo pants, worn boots, faded work vest. Sonar device on braided cord around neck. Restless posture, leaning forward with intense expression. GLMZ Great Lakes harbor setting, harsh overhead lighting catching the metallic eye implants, salt spray and water droplets in air, industrial dock background with neon signs reflecting off wet surfaces, moody blue-green atmospheric lighting, weathered and functional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 31.1,
-    "Sub-Saharan African": 22.6,
-    "Pacific Islander": 21.1,
-    "Hispanic/Latin American": 9.5,
-    "South Asian": 9.5,
-    "Eastern European": 6.2
+    "South Asian": 51.3,
+    "Indigenous American": 15.6,
+    "Sub-Saharan African": 12.2,
+    "Hispanic/Latin American": 8.6,
+    "Northern European": 8.1,
+    "North African": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 23.7,
+        "Punjabi Pakistani": 10.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 17
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 6.4,
+        "Nahua": 1.6
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 5.2,
+        "Ho-Chunk": 0.4
+      },
+      "Andean": {
+        "Mapuche": 0.8,
+        "Aymara": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 5.3
+      },
+      "West African": {
+        "Sierra Leonean": 2.5,
+        "Nigerian": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 2.8
+      },
+      "Central American": {
+        "Honduran": 1.8,
+        "Salvadoran": 2.4
+      },
+      "South American": {
+        "Chilean": 1.6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 3.7,
+        "Norwegian": 4.4
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 2,
+        "Egyptian": 0.3
+      },
+      "Amazigh": {
+        "Berber": 0.2
+      },
+      "Maghreb": {
+        "Moroccan": 1.5,
+        "Algerian": 0.2
+      }
+    }
+  }
 }

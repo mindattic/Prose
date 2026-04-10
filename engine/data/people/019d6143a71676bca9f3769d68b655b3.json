@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71676bca9f3769d68b655b3",
   "type": "character",
-  "name": "Delta Balogun-Bergqvist",
+  "name": "Aarav Halverson-Kimura",
   "aliases": [
     "Vir",
     "The Constructor"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Grand Corridor, studio-apartment in the Palladian-adjacent professional district, near North Ave and Milwaukee",
-  "description": "Viriato is the kind of handsome that looks managed — he maintains it deliberately, with the same project-management energy he brings to everything. Angular Igbo-Portuguese features, light brown skin, hair worn in a tight fade with a geometric pattern razored into one side that he refreshes every ten days. He has cat ears — a mod he got in his mid-twenties, silver-grey tipped in black, which he's kept long past the trend's peak because he claims they improve his spatial audio perception and because, privately, they were a gift from a relationship that ended badly. His right hand has a mesh of subdermal haptic filaments that interface with design software, so his fingers move through VR design space with the same precision a surgeon has with instruments.\n\nViriato designs immersive VR experiences for corporate clients — Tessera hospitality spaces, Axiom employee wellness programs, Palladian executive retreats. He is very good at it and has made genuine money doing it and spends considerable energy not thinking about whether any of it matters. He has what colleagues call 'the polish' — he presents well, delivers on time, absorbs client absurdity without visible strain. The strain goes somewhere, though. He has started designing unauthorized personal projects in the hours between 2 and 5 AM, dense and strange and nothing like his portfolio, which he has shown exactly one person.",
+  "description": "Aarav Halverson-Kimura is the kind of handsome that looks managed — he maintains it deliberately, with the same project-management energy he brings to everything. Angular Igbo-Portuguese features, light brown skin, hair worn in a tight fade with a geometric pattern razored into one side that he refreshes every ten days. He has cat ears — a mod he got in his mid-twenties, silver-grey tipped in black, which he's kept long past the trend's peak because he claims they improve his spatial audio perception and because, privately, they were a gift from a relationship that ended badly. His right hand has a mesh of subdermal haptic filaments that interface with design software, so his fingers move through VR design space with the same precision a surgeon has with instruments.\n\nAarav Halverson-Kimura designs immersive VR experiences for corporate clients — Tessera hospitality spaces, Axiom employee wellness programs, Palladian executive retreats. He is very good at it and has made genuine money doing it and spends considerable energy not thinking about whether any of it matters. He has what colleagues call 'the polish' — he presents well, delivers on time, absorbs client absurdity without visible strain. The strain goes somewhere, though. He has started designing unauthorized personal projects in the hours between 2 and 5 AM, dense and strange and nothing like his portfolio, which he has shown exactly one person.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -161,7 +161,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,47 +175,28 @@
   "registered_firearms": [],
   "related_entities": [
     "Grand Corridor",
-    "ARCHIVE",
     "The Filament",
     "Palladian Construction",
+    "GLMZ",
     "Tessera Corponation",
     "Déjà Vu",
     "Silver",
+    "Neural Palate",
     "Gravimetric Collapse Charge GCC-9",
-    "The Milwaukee Core",
-    "Alper Holmberg-Dembele",
-    "Alper Inoue-Aidoo",
-    "Arcturus Exo-Runner Frame",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Mika Sorel",
-    "Narrowcast",
-    "Philibert Mwangi-Djordjevic",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (36.7%) with East Asian (34.2%) and Hispanic/Latin American (29.1%) ancestry — a balanced tri-continental blend that manifests in warm undertones, subtle eye shape, and facial structure reflecting all three regions equally",
+    "heritage": "Predominantly pan-Asian genetic foundation (East Asian 40.5%, South Asian 28.6%, Southeast Asian 16.6%) with secondary influences from Sub-Saharan African (7.8%), Northern European (4.5%), and Hispanic/Latin American (2.0%) ancestry. This complex blend manifests in refined facial structure with high cheekbones characteristic of East and Southeast Asian genetics, warm honey-brown skin with golden undertones deepened by African heritage, and a sophisticated interplay of warm and golden tones throughout. The resulting phenotype reads as distinctly transnational — a genetic signature of the Ubiquitous Diaspora rather than any single regional identity.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular, with defined musculature maintained through deliberate discipline rather than intensity. Moves with economical precision — no wasted motion. Shoulders slightly narrow, chest flat, legs long. The body of someone who designs rather than builds.",
+    "skin_tone": "Warm honey-brown with golden undertones, luminous and even-toned across face and body. The harmonious blend of East Asian, South Asian, and Southeast Asian ancestry deepened by Sub-Saharan African heritage creates a complexion that glows subtly in natural light.",
+    "complexion": "Meticulously groomed. Skin is clear and well-maintained, suggesting access to quality skincare and time spent on appearance. Refined jawline with graceful definition, high cheekbones with elegant prominence characteristic of pan-Asian ancestry. The kind of handsome that reads as *managed* — attractive in a way that requires active maintenance. No visible blemishes or scarring on the face.",
+    "eye_color": "Warm brown with faint golden undertone; subtle ocular overlay implant visible as a soft luminescence in low light, like an old monitor warming up",
     "hair_color": "Dark brown, nearly black",
     "hair_style": "Tight fade with a geometric pattern (interlocking hexagons or circuit-board motif) razored into the right side, refreshed every ten days with the consistency of a scheduled system update",
     "hair_length": "Short (approximately 8mm on top, faded to 2mm on sides)",
-    "eye_color": "Warm brown with faint golden undertone; subtle ocular overlay implant visible as a soft luminescence in low light, like an old monitor warming up",
-    "skin_tone": "Warm honey-brown, the harmonious blend of Sub-Saharan, East Asian, and Latin American ancestry — even-toned across face and body with subtle warm undertones that shift slightly in different lighting",
-    "complexion": "Meticulously groomed. Skin is clear and well-maintained, suggesting access to quality skincare and time spent on appearance. Sharp jawline with gentle East Asian influence in structure, high cheekbones with fullness from Latin American ancestry. The kind of handsome that reads as *managed* — attractive in a way that requires active maintenance. No visible blemishes or scarring on the face.",
     "distinguishing_marks": [
       "Cosmetic cat ears (geneware modification): silver-grey fur with black-tipped inner edges, approximately 8cm tall, positioned naturally atop the skull where human ears would sit. They move subtly with emotional states and environmental sound — a tell he hasn't learned to fully suppress.",
       "Fine white scarring in a branching pattern across the outer edge of the right hand and wrist — visible evidence of the subdermal haptic filament mesh installation, now fully integrated but leaving a faint constellation of entry points beneath the skin."
@@ -224,14 +205,88 @@
     "posture_movement": "Sits with perfect posture in meetings; stands with the slight forward lean of someone ready to move. Moves economically, with precision. His hands are eloquent — designer's hands that gesture through space as though mapping geometry. The cat ears twitch reflexively when processing complex information or when he's absorbing client absurdity without visible strain. When alone and working (especially during the 2-5 AM sessions), his posture relaxes but his focus intensifies. He has a habit of touching the geometric pattern on his head when thinking, as though checking a system status.",
     "clothing_style": "Tier 1-2 professional aesthetic with deliberate restraint. Favors high-end minimalism: tailored charcoal or navy shirts (expensive fabrics, understated brands), neutral trousers, minimal jewelry except for a thin silver band on his left ring finger (legacy of the ended relationship that also gave him the ears — he doesn't remove it). Shoes are always clean, usually monochrome (grey, black, white). In client meetings, adds a lightweight Tessera-branded or neutral blazer. During late-night personal projects, trades polish for comfort: loose dark clothing, often with the technical precision of fabrics that don't snag on haptic mesh. His entire wardrobe communicates 'professional,' 'trustworthy,' 'will deliver on time' — the opposite of the dense, strange, unpolished work he creates between 2 and 5 AM."
   },
-  "image_prompt": "Delta Balogun-Bergqvist, 178cm tall lean angular designer-build, warm honey-brown skin blending Sub-Saharan African, East Asian, and Latin American heritage, sharp jawline high cheekbones, dark brown hair with geometric hexagon fade pattern on right side. Silver-grey cosmetic cat ears with black-tipped inner edges atop head, subtly expressive. Warm brown eyes with golden undertone and faint ocular implant glow. Fine white scarring visible on right hand from haptic filament mesh. Impeccably groomed, professional minimalist aesthetic: tailored charcoal shirt, neutral trousers, monochrome shoes, thin silver ring on left ring finger. Sitting with perfect posture at design workstation, hands eloquently gesturing through holographic interface. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool blue-grey ambient lighting mixing with warm desk glow, precise economical movement, the aesthetic of polished corporate professional concealing intricate creative genius. --ar 2:3 --v 6",
+  "image_prompt": "Aarav Halverson-Kimura, 178cm tall, lean angular frame with designer's precision. Honey-brown skin with golden undertones reflecting East Asian, South Asian, Southeast Asian, and African heritage. High defined cheekbones, warm brown eyes with subtle golden luminescence ocular implant. Dark brown hair, nearly black, in tight fade cut with geometric hexagon pattern on right side. Cosmetic silver-grey cat ears with black-tipped inner edges positioned atop skull. Fine white scarring visible on right hand from haptic filament mesh installation. Charcoal tailored shirt, neutral trousers, minimalist professional aesthetic. Sits with perfect corporate posture, hands eloquent and geometric. GLMZ, Great Lakes Metropolitan Zone, soft neon city lights filtering through floor-to-ceiling windows, late-night design studio ambiance, 2-5 AM glow, professional-grade augmentations, moody atmospheric lighting, intricate technical workspace in background, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.7,
-    "East Asian": 34.2,
-    "Hispanic/Latin American": 29.1
+    "East Asian": 40.5,
+    "South Asian": 28.6,
+    "Southeast Asian": 16.6,
+    "Sub-Saharan African": 7.8,
+    "Northern European": 4.5,
+    "Hispanic/Latin American": 2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.9
+      },
+      "Chinese": {
+        "Fujianese": 19.5
+      },
+      "Korean": {
+        "Korean": 6.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 14.1
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3.4,
+        "Sinhalese": 1.3
+      },
+      "Indian": {
+        "Bengali": 3.7,
+        "Malayali": 6.1
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 5,
+        "Waray": 5.3
+      },
+      "Thai": {
+        "Thai": 3.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 2.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.6,
+        "Botswanan": 1.6
+      },
+      "East African": {
+        "Somali": 3.3
+      },
+      "Central African": {
+        "Congolese": 0.4,
+        "Gabonese": 1.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 2.2,
+        "Scottish": 0.9
+      },
+      "Germanic": {
+        "German": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 0.8
+      },
+      "South American": {
+        "Colombian": 0.9
+      },
+      "Mexican": {
+        "Mexican": 0.3
+      }
+    }
+  }
 }

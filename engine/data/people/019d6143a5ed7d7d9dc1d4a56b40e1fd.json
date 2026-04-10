@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ed7d7d9dc1d4a56b40e1fd",
   "type": "character",
-  "name": "Koda Ozcoidi-Ingebrigtsen",
+  "name": "Siddharth Deshpande-Sengupta",
   "aliases": [
     "Razor",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 55,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Deniz Malm-Amoah are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 55, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a wheelman out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nDeniz Malm-Amoah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Siddharth Deshpande-Sengupta are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 55, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a wheelman out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nSiddharth Deshpande-Sengupta operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.64,
@@ -261,7 +261,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,58 +276,90 @@
   "related_entities": [
     "Canopy Station Nine",
     "Geartown",
-    "SynapTech ReadRoom Social Cue Enhancer",
+    "Canopy",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Anatoliy Faye-Nkrumah",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Slagworks Industrial",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Canopy",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Shelf",
-    "The Wire Taps",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Indigenous American, Southeast Asian, and Hispanic/Latin American blend. Strong Indigenous American bone structure (44.5%) combined with Southeast Asian features (35.1%) and Hispanic/Latin American warmth (20.4%). The genetic mix creates distinctive angular cheekbones with broader facial width characteristic of Indigenous ancestry, subtle epicanthic eye shape from Southeast Asian heritage, and warm undertones throughout.",
+    "heritage": "South Asian foundation (40.1%) providing warm brown undertones and facial structure, enriched by Northern European (19.8%) contribution to bone definition and eye depth. East Asian (16.2%) and Southeast Asian (11.1%) ancestry create subtle epicanthic eye shape and facial proportions with defined cheekbones. Central Asian (12.8%) adds angular definition. The genetic mix produces a distinctive face with prominent cheekbones displaying both South Asian fullness and East Asian angularity, warm complex undertones throughout, and richly saturated skin with golden-copper saturation.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Wiry and lean with compressed muscle density — the frame of someone who converts nervous energy into motion. Minimal body fat; shoulders slightly forward from years of gripping steering wheels and control surfaces.",
+    "eye_color": "Amber-brown, natural",
+    "skin_tone": "Medium-warm brown with golden and copper undertones, reflecting South Asian foundation with Northern European and East Asian modulation. Warm saturation across cheekbones and forehead with subtle complexity from the five-region blend. Slight translucence suggesting cardiovascular strain from stimulant cycles.",
+    "complexion": "South Asian bone structure with prominent, well-defined cheekbones and defined jawline, refined by Northern European angularity and East Asian eye shape. Southeast Asian influence visible in subtle facial proportions and soft tissue distribution. Fine lines around eyes and mouth from decades of squinting through windscreens and maintaining focus. Jaw is defined but carries visible scarring from augmentation installation.",
     "hair_color": "Steel gray with natural dark roots showing beneath",
     "hair_style": "Short, swept back, functional rather than styled",
     "hair_length": "Short",
-    "eye_color": "Amber-brown, natural",
-    "skin_tone": "Medium-deep bronze with warm golden and copper undertones, reflecting the blend of Indigenous American and Southeast Asian ancestry with Hispanic/Latin American warmth. Rich warm saturation across cheekbones and forehead.",
-    "complexion": "Strong Indigenous American bone structure with angular, prominent cheekbones and defined jawline. Southeast Asian influence visible in eye shape and facial proportions. Fine lines around the eyes and mouth from decades of squinting through windscreens and maintaining focus. Skin shows the wear of stimulant cycles — slightly translucent quality suggesting cardiovascular strain. Jaw is defined but carries visible scarring from augmentation installation.",
+    "visible_augmentations": "Chrome visible along the left jawline and temple where synthetic blood infusion ports are installed — a metallic sheen visible under skin, particularly noticeable under Canopy's elevated lighting. No attempt to hide the installation; scars are deliberately left raw. Subtle LED pulse visible at the temple under certain angles when circulation is heightened.",
     "distinguishing_marks": [
       "Jagged surgical scar running from left temple to jawline, approximately 12cm, with visible chrome integration points along the line — installation scarring that shows no attempt at concealment or cosmetic refinement",
       "Smaller augmentation scars at both temples where neural interfaces were anchored, faint white lines barely visible under short hair",
       "Thin, hairline scar across the back of the right hand — old injury, pre-augmentation"
     ],
-    "visible_augmentations": "Chrome visible along the left jawline and temple where synthetic blood infusion ports are installed — a metallic sheen visible under skin, particularly noticeable under Canopy's elevated lighting. No attempt to hide the installation; scars are deliberately left raw. Subtle LED pulse visible at the temple under certain angles when circulation is heightened.",
     "posture_movement": "Restless, economical motion — hands rarely still, fingers often drumming or making subtle adjustment gestures as if calibrating invisible controls. Sits forward in chairs. Walks with a forward-leaning gait that suggests perpetual motion. Eyes track movement compulsively — a habit from high-speed operations that never fully disengages.",
     "clothing_style": "Tier 3-4 utilitarian: reinforced synthmesh jacket in matte charcoal, multiple deep pockets and anchor points for safety gear. Fitted black cargo pants with integrated knee pads and thigh storage. Steel-toed boots, recently maintained. No corporate branding. Wears a pair of fingerless driving gloves (worn leather, custom-fitted) almost constantly. A single piece of jewelry — a battered platinum ring on the right ring finger, pre-augmentation, kept as anchor to civilian identity."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Koda Ozcoidi-Ingebrigtsen, 172cm tall lean wiry frame with Indigenous American and Southeast Asian mixed heritage. Medium-deep bronze skin with warm copper undertones, strong angular cheekbones, amber-brown eyes. Steel gray hair with dark roots, short and swept back. Jagged 12cm scar running left temple to jawline with visible chrome augmentation ports integrated along the line, raw and unconcealed. Smaller neural interface scars at temples. Subtle LED pulse visible at left temple. Wearing matte charcoal reinforced synthmesh jacket, black cargo pants with integrated knee pads, steel-toed boots, worn leather fingerless driving gloves. Battered platinum ring on right ring finger. Forward-leaning posture, restless energy, compulsively tracking gaze. Cyberpunk dystopian Great Lakes Metropolitan Zone setting, neon canopy lighting casting shadows across augmented jaw. High contrast lighting emphasizing scarring and chrome integration. Moody, utilitarian, street operative aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, lean wiry male figure with South Asian-Northern European-East Asian-Central Asian-Southeast Asian blend ancestry, medium-warm golden-brown skin with copper undertones, prominent defined cheekbones with both warmth and angular definition, amber-brown natural eyes with subtle epicanthic shape, steel gray hair with dark roots swept back short, jagged 12cm surgical scar running temple to jawline with visible chrome integration points, chrome metallic sheen along jawline and temple from synthetic blood infusion ports, subtle LED pulse at temple, fine lines around eyes from decades of focus, defined but scarred jawline, 172cm tall, lean muscular build, restless posture leaning forward, hands making subtle adjustment gestures, wearing matte charcoal reinforced synthmesh jacket with deep pockets, fitted black cargo pants with integrated knee pads, steel-toed boots, worn leather fingerless driving gloves, battered platinum ring on right ring finger, in high-tech urban setting with elevated Canopy lighting casting sharp shadows across augmentation scars and chrome installations, mood of perpetual readiness and nervous energy, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 44.5,
-    "Southeast Asian": 35.1,
-    "Hispanic/Latin American": 20.4
+    "South Asian": 40.1,
+    "Northern European": 19.8,
+    "East Asian": 16.2,
+    "Central Asian": 12.8,
+    "Southeast Asian": 11.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 13.7
+      },
+      "Pakistani": {
+        "Pashtun": 9.7
+      },
+      "Nepali": {
+        "Nepali": 16.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 7,
+        "English": 9.1
+      },
+      "Germanic": {
+        "German": 1.1,
+        "Swiss German": 2.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.9
+      },
+      "Japanese": {
+        "Japanese": 4.5
+      },
+      "Chinese": {
+        "Mandarin Northern": 2,
+        "Fujianese": 4.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 6.9,
+        "Buryat": 5.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.8
+      },
+      "Laotian": {
+        "Laotian": 5.3
+      }
+    }
+  }
 }

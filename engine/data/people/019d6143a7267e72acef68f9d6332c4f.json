@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7267e72acef68f9d6332c4f",
   "type": "character",
-  "name": "Rune Haugen-Dlamini",
+  "name": "Rune Trujillo-Venkatesh",
   "aliases": [
     "Yetty",
     "The Scissor"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Mexicantown Libre, operates from a converted shipping container called Cutline on Gage Circuit, near Pulaski and Chicago Ave",
-  "description": "Yetunde is compact and kinetic, her movements fast and precise in the way of someone who has trained herself to work in a small space. She keeps one half of her head shaved and the other half in elaborate Bantu knots dyed electric amber — she re-does them herself every two weeks, a meditative ritual. Her skin is dark brown and her forearms are covered from wrist to elbow in her own tattoo work, done in mirrors and by feel, a practice she's perfected over four years. She has bioluminescent patches on her collarbones, soft aquamarine that pulse faintly when she's excited — a geneware mod she saved three months for and has never once regretted.\n\nYetunde runs Cutline with the fierce territorial pride of someone who built everything in it herself. The container is small but immaculate — three chairs, two mirrors salvaged from a closed salon in Chatham Flats, and a digital art wall that rotates through her personal portfolio. She is talkative and sharp, able to read what a client wants from how they sit down, and skilled enough that she routinely has a six-week wait list. Her tattoo work is unlicensed — Helix Biosystems holds the local ink licensing monopoly and she refuses to pay their rates — which means she operates in a quiet legal gray zone she prefers not to discuss with new faces.",
+  "description": "Rune Trujillo-Venkatesh is compact and kinetic, her movements fast and precise in the way of someone who has trained herself to work in a small space. She keeps one half of her head shaved and the other half in elaborate Bantu knots dyed electric amber — she re-does them herself every two weeks, a meditative ritual. Her skin is dark brown and her forearms are covered from wrist to elbow in her own tattoo work, done in mirrors and by feel, a practice she's perfected over four years. She has bioluminescent patches on her collarbones, soft aquamarine that pulse faintly when she's excited — a geneware mod she saved three months for and has never once regretted.\n\nRune Trujillo-Venkatesh runs Cutline with the fierce territorial pride of someone who built everything in it herself. The container is small but immaculate — three chairs, two mirrors salvaged from a closed salon in Chatham Flats, and a digital art wall that rotates through her personal portfolio. She is talkative and sharp, able to read what a client wants from how they sit down, and skilled enough that she routinely has a six-week wait list. Her tattoo work is unlicensed — Helix Biosystems holds the local ink licensing monopoly and she refuses to pay their rates — which means she operates in a quiet legal gray zone she prefers not to discuss with new faces.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -168,7 +168,7 @@
     "Hustler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,40 +185,20 @@
     "Crucible Industries Forge-454 'Hammerfall'"
   ],
   "related_entities": [
-    "Helix Biosystems",
     "Mexicantown Libre",
+    "Helix Biosystems",
     "Chatham Flats",
     "Gage Circuit",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Gradient Compact",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Circuit",
     "Chicago",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Axonal Stretch Resonance Lance",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Ilhan Sandstrom-Badu",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oluwaremilekun Vásárhelyi-Sow",
-    "Orkhan Sefa-Błaszczyk",
-    "Patient Zero",
-    "Pikasso Wemba-Þórðarson",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Collective",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Yannick Tambadou-Reinholt",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multihemispheric blend: Sub-Saharan African foundation (29%) providing deep warm brown tones and facial structure, Northern European (22%) contributing to bone definition and eye shape, Southeast Asian (17%) and South Asian (15%) adding subtle eye geometry and cheekbone contours, Middle Eastern (13%) and East Asian (4%) threading through overall proportions. Result: warm-toned deep brown skin with complex undertones, sharp defined features with slight epicanthic eye folds, prominent cheekbones with broad facial planes.",
+    "heritage": "Predominantly South Asian (56.1%) foundation providing warm deep brown skin with golden undertones and refined facial structure, layered with Hispanic/Latin American (13.2%) contributing to overall proportions and subtle warmth in the complexion, Eastern European (11.7%) adding definition to bone structure and eye shape, Middle Eastern (9.8%) threading through cheekbone geometry and facial angles, and Sub-Saharan African (9.2%) enriching skin depth, texture, and contributing to fuller lip definition. Result: warm deep brown skin with complex golden and amber undertones, sharp defined features with almond-shaped eyes set above prominent sculpted cheekbones, balanced facial planes, refined jawline with subtle fullness, and naturally expressive mouth.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, muscular forearms and shoulders from years of repetitive precision work. Fast-twitch athleticism, minimal body fat, the kind of frame that moves efficiently in confined spaces.",
@@ -226,8 +206,8 @@
     "hair_style": "Half-shaved undercut with elaborate Bantu knots on the unshaved side, meticulously maintained every two weeks",
     "hair_length": "Shaved on right side; medium-length on left (knots)",
     "eye_color": "Dark brown, alert and penetrating",
-    "skin_tone": "Deep warm brown with subtle golden undertones from the multihemispheric ancestry blend",
-    "complexion": "Clear, well-maintained skin. Minimal facial scarring. Sharp cheekbones and defined jawline with subtle southeast and south Asian geometry. Expression typically focused and assessing.",
+    "skin_tone": "Deep warm brown with golden and amber undertones, complex blend reflecting South Asian, Hispanic, Middle Eastern, and Sub-Saharan African heritage",
+    "complexion": "Clear, well-maintained skin. Minimal facial scarring. Sharp cheekbones and refined jawline with South Asian geometric structure softened by subtle fullness from African heritage. Fuller lips with natural definition. Expression typically focused and assessing.",
     "distinguishing_marks": [
       "Bioluminescent aquamarine patches across both collarbones, soft-glowing organic lines that pulse faintly with excitement or stress",
       "Left forearm fully sleeved in intricate geometric and organic tattoo work from wrist to elbow — self-executed in mirrors and by tactile feel, patterns abstract and precise",
@@ -237,17 +217,68 @@
     "posture_movement": "Kinetic and economical. Moves quickly in tight spaces. Hands are always in motion or precisely still when working. Eyes continuously reading the room and her clients. Sits with coiled energy, rarely fully relaxed.",
     "clothing_style": "Tier 4 utilitarian with personal flair. Typically wears fitted tank tops or sleeveless shirts to display collarbones and arm tattoos. Black or dark-colored pants with cargo pockets (tool storage). Worn work boots with good grip. No corporate branding. Jewelry minimal — functional only. Aprons during barber work, rolled up or removed for tattoo sessions. Clothing is clean but shows use; prioritizes function over fashion."
   },
-  "image_prompt": "Rune Haugen-Dlamini, compact 158cm figure with deep warm brown skin and sharp defined cheekbones. Half-shaved undercut with electric amber Bantu knots on left side, natural black on right. Dark penetrating eyes with subtle southeast Asian geometry. Fitted black sleeveless tank displaying bioluminescent aquamarine collarbone patches that glow softly. Both forearms sleeved in intricate self-executed geometric and organic tattoos from wrist to elbow. Polymer stabilizer brace on right wrist. Lean muscular build, fast-twitch frame. Standing in moody cyberpunk barber shop, neon light reflecting off skin and bioluminescent patches, kinetic posture with hands slightly in motion, alert expression reading the room. Dark cargo pants, worn work boots with good grip. Cyberpunk 2220s aesthetic, utilitarian clothing, functional jewelry only. Atmospheric volumetric lighting, cool neon against warm skin tones. --ar 2:3 --v 6",
+  "image_prompt": "Rune Trujillo-Venkatesh, 158cm tall compact wiry woman with deep warm brown skin and golden undertones, sitting in a GLMZ tattoo parlor. Half-shaved undercut with black hair on right side and elaborate amber-dyed Bantu knots on left. Dark brown penetrating eyes, sharp defined cheekbones, refined jawline, fuller lips with natural definition reflecting diverse South Asian and African heritage. Wearing sleeveless black fitted tank top revealing bioluminescent soft-glowing aquamarine patches pulsing across collarbones, both forearms fully tattooed with intricate geometric and organic patterns from wrist to elbow. Printed polymer stabilizer brace on right wrist. Kinetic posture with coiled energy, hands in motion, alert expression reading the room. Cargo pants, worn work boots, minimal jewelry. Neon-lit intimate workshop setting, warm practical overhead lighting, moody neo-noir urban aesthetic, clean but used-looking environment. Focused intensity, precise craftsmanship energy --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 29.1,
-    "Northern European": 22.0,
-    "Southeast Asian": 16.5,
-    "South Asian": 15.3,
-    "Middle Eastern": 13.4,
-    "East Asian": 3.7
+    "South Asian": 56.1,
+    "Hispanic/Latin American": 13.2,
+    "Eastern European": 11.7,
+    "Middle Eastern": 9.8,
+    "Sub-Saharan African": 9.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.2
+      },
+      "Pakistani": {
+        "Baloch": 25,
+        "Punjabi Pakistani": 6.1
+      },
+      "Indian": {
+        "Telugu": 9.1,
+        "Tamil": 4.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 11.5
+      },
+      "South American": {
+        "Ecuadorian": 0.7,
+        "Colombian": 0.7
+      },
+      "Central American": {
+        "Salvadoran": 0.3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 11.6,
+        "Hungarian": 0.1
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 1.7
+      },
+      "Arab Gulf": {
+        "Yemeni": 4.9
+      },
+      "Kurdish": {
+        "Kurdish": 3.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.4
+      },
+      "Southern African": {
+        "Zimbabwean": 1.8
+      }
+    }
+  }
 }

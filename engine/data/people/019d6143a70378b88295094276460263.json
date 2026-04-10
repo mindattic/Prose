@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70378b88295094276460263",
   "type": "character",
-  "name": "Kit Tetteh-Magnúsdóttir",
+  "name": "Kit Tetteh-Mbekele",
   "aliases": [
     "Tom-Tom",
     "The Static"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf — specifically a rented storage unit in Brewer's Spine converted into a print shop, near Pulaski and Chicago Ave",
-  "description": "Tomáš is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
+  "description": "Kit Tetteh-Mbekele is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -159,7 +159,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,44 +180,20 @@
     "Burnside Pocket",
     "Brewer's Spine",
     "Highland Park Autonomous Zone",
-    "WELLSPRING",
     "Palladian Construction",
     "Zheng-dao Bioelectric",
+    "WELLSPRING",
     "The Shelf",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Static",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Null",
     "Chicago",
-    "Alper Inoue-Aidoo",
-    "Ambassador Silk",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "Eshe Pena-Baah",
-    "Flicker",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Lowline Press",
-    "Meridian Core",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saoirse Mwamba-Drăghici",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "Tessera Corponation",
-    "The Wire Taps",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "The Paste Bar",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (67.7%), East Asian (21.4%), Middle Eastern (7.3%), Southeast Asian (3.6%) — genetic ancestry reflects the Ubiquitous Diaspora. Rich melanated skin with warm undertones from dominant Sub-Saharan heritage, with subtle East Asian structural influence in facial geometry.",
+    "heritage": "Sub-Saharan African (74.6%), Southeast Asian (15.7%), East Asian (9.7%) — genetic ancestry reflects the Ubiquitous Diaspora. Deep melanated skin with warm golden undertones from dominant Sub-Saharan African heritage, with subtle structural influence from Southeast and East Asian ancestry creating refined facial geometry.",
     "height_cm": 174,
     "weight_kg": 62,
     "build": "Lean and angular, all restless energy with minimal fat. Defined shoulders and forearms from years of manual labor at the press, but a slight hollow to his chest suggesting erratic eating and chronic sleep deprivation.",
@@ -225,8 +201,8 @@
     "hair_style": "Short locs, uneven length (self-maintained), always slightly disheveled",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Rich warm medium brown with golden undertones — melanated complexion from dominant Sub-Saharan African ancestry with subtle warmth from East and Southeast Asian heritage blend",
-    "complexion": "Sharp cheekbones with slight East Asian angularity blended with broader Sub-Saharan facial structure, slightly gaunt face, perpetual dark circles under eyes. Skin shows minor stress acne along the jawline and forehead. Ink stains on cuticles and the webbing between thumb and forefinger, some permanent despite repeated washing.",
+    "skin_tone": "Deep warm medium-to-dark brown with rich golden undertones — melanated complexion from dominant Sub-Saharan African ancestry, subtly refined by Southeast and East Asian heritage blend",
+    "complexion": "Sharp cheekbones with subtle Southeast and East Asian angularity blended seamlessly with broader Sub-Saharan African facial structure, slightly gaunt face, perpetual dark circles under eyes. Skin shows minor stress acne along the jawline and forehead. Ink stains on cuticles and the webbing between thumb and forefinger, some permanent despite repeated washing.",
     "distinguishing_marks": [
       "Bioluminescent subdermal strip running from wrist to mid-forearm on left arm, emitting blue-white light when agitated (pulses visibly, occasionally flickers erratically due to degradation)",
       "Small burn scar on right inner wrist from a printing press accident at age 23",
@@ -236,15 +212,49 @@
     "posture_movement": "Perpetually tense, weight distributed unevenly as if ready to move at any moment. Fidgets constantly — taps fingers in rhythm, shifts weight from foot to foot, rarely sits still for more than two minutes. Gestures are sharp and emphatic. Walks quickly, often slightly ahead of conversation partners.",
     "clothing_style": "Tier 4-5 working class with deliberate anti-corporate aesthetic. Habitually wears ink-splattered vintage cotton button-ups (thrifted from pre-2150 stock when possible as a political statement), cargo pants with oversized pockets stuffed with encrypted data chips and worn paper notebooks, black steel-toed boots resoled multiple times. Ragged synthetic bomber jacket with a hand-stitched Null Signal logo on the back. Never wears smartfiber or anything with corporate branding. Accessorizes with a faraday-lined messenger bag (contents: backup drives, physical photographs, encrypted burner phones, and loose papers)."
   },
-  "image_prompt": "Kit Tetteh-Magnúsdóttir, 174cm lean angular figure, rich warm brown melanated skin with golden undertones, sharp cheekbones with subtle East Asian geometry, gaunt face with perpetual dark circles, naturally deep brown eyes. Static-white short locs slightly disheveled. Bioluminescent blue-white subdermal strip pulsing erratically on left forearm. Faint temple scarring from neural mesh implant. Wearing thrifted ink-splattered vintage cotton button-up, oversized cargo pants, scuffed black steel-toed boots. Ragged synthetic bomber jacket with hand-stitched Null Signal logo, faraday-lined messenger bag slung across chest. Perpetually tense posture, fingers fidgeting. Cyberpunk 2226 GLMZ urban underground setting, dim neon accent lighting catching the bioluminescent glow, gritty warehouse or underground press room atmosphere, motion blur suggesting constant restless energy. Cinematic, hyper-detailed, photorealistic. --ar 2:3 --v 6",
+  "image_prompt": "Kit Tetteh-Mbekele, lean angular 174cm male, deep warm brown melanated skin with golden undertones, sharp cheekbones blending Sub-Saharan and Southeast Asian ancestry, perpetual dark circles, gaunt expression. Static-white short locs disheveled, deep brown natural eyes with occasional augmentation flicker. Left forearm shows glitchy blue-white bioluminescent subdermal strip pulsing erratically. Gray-market neural mesh scarring visible at left temple. Wearing ink-splattered vintage cotton button-up, oversized cargo pants, resoled black steel-toed boots, ragged synthetic bomber jacket with hand-stitched Null Signal logo. Faraday-lined messenger bag. Perpetually tense posture, fidgeting fingers, ready-to-move stance. GLMZ Great Lakes Metropolitan Zone, underground press setting, neon-tinged dim lighting casting blue light across skin and augmentation, dystopian working-class aesthetic, anti-corporate, worn and restless energy. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 67.7,
-    "East Asian": 21.4,
-    "Middle Eastern": 7.3,
-    "Southeast Asian": 3.6
+    "Sub-Saharan African": 74.6,
+    "Southeast Asian": 15.7,
+    "East Asian": 9.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 26.8,
+        "Zimbabwean": 24.9
+      },
+      "East African": {
+        "Tanzanian": 9.9
+      },
+      "Central African": {
+        "Congolese": 13
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 0.5,
+        "Balinese": 5.5
+      },
+      "Cambodian": {
+        "Khmer": 9.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4
+      },
+      "Chinese": {
+        "Fujianese": 0.7,
+        "Mandarin Northern": 3.2
+      },
+      "Japanese": {
+        "Japanese": 1.8
+      }
+    }
+  }
 }

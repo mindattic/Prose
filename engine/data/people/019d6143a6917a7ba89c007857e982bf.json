@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6917a7ba89c007857e982bf",
   "type": "character",
-  "name": "Sterling Mazurek",
+  "name": "Sterling Truong",
   "aliases": [
     "Basalt",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Pare Hayashi-Amankwah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 45, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Pare Hayashi-Amankwah plans to keep it that way. She works as a surveillance specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nPare Hayashi-Amankwah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Sterling Truong is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 45, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Sterling Truong plans to keep it that way. She works as a surveillance specialist out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSterling Truong has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.29,
@@ -261,7 +261,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,29 +279,11 @@
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Clover",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ihaia Nystrom-Keita",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Oumarou Svec-Ranginui",
-    "Prophet",
-    "Pyroelectric Sebum Volatilization Projector",
-    "Spire Light on Still Water",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Multiethnic blend of Hispanic/Latin American, Eastern European, Sub-Saharan African, and Northern European ancestry — a genetic mosaic reflecting the Ubiquitous Diaspora. Features a warm, complex skin tone with undertones from multiple continental origins, creating a rich golden-bronze palette that tells the story of global mixing.",
+    "heritage": "Multiethnic blend with dominant Middle Eastern ancestry (36.9%) creating the foundational phenotype, substantially enriched by Hispanic/Latin American (18.9%), Southeast Asian (16.7%), and East Asian (14.0%) genetic contributions. Central Asian (7.7%) and Northern European (5.8%) elements add depth to facial structure and coloration. This genetic mosaic represents the Ubiquitous Diaspora's true form — features the warm olive-bronze complexion from Middle Eastern-Hispanic blending, with Southeast and East Asian ancestry contributing subtle eye geometry, prominent cheekbone architecture, and a refined bone structure that transcends simple regional categorization.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and solid with dense muscle mass from geneware treatment — compact frame with no wasted space, built like someone who absorbs impact rather than evades it",
@@ -309,8 +291,8 @@
     "hair_style": "Pulled back tight, practical — no flourish",
     "hair_length": "Medium, cropped shoulder-length",
     "eye_color": "Deep brown, alert and measuring",
-    "skin_tone": "Rich golden-bronze with warm undertones — the product of blended ancestry creating a complex, sun-weathered patina accumulated over decades of dockside exposure",
-    "complexion": "Strong, defined facial structure reflecting the blend of heritage ancestry. Lined face with crow's feet and a permanent crease between the brows — weathered but not neglected, scars accepted as part of the landscape. Jaw set in resting neutrality. High cheekbones with subtle contours. Minimal grooming beyond function.",
+    "skin_tone": "Warm olive-bronze with subtle golden undertones — the product of Middle Eastern-Hispanic-Asian blending creating a complex, weathered patina. The skin displays the characteristic depth of multi-regional ancestry, with warm mid-tone base enriched by golden and bronze undertones from both Mediterranean and Asian genetic contributions.",
+    "complexion": "Strong, defined facial structure reflecting the synthesis of Middle Eastern prominence, Southeast Asian refinement, and East Asian geometry — high, sculpted cheekbones with subtle almond-shaping to the eye area, squared jaw with slight forward projection characteristic of Middle Eastern ancestry. The face shows the blended result: broader across the midface from Hispanic-Southeast Asian heritage, with defined bone structure from East and Central Asian lineage. Lined face with crow's feet and a permanent crease between the brows — weathered but not neglected, scars accepted as part of the landscape. Jaw set in resting neutrality. Minimal grooming beyond function.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, old enough to fade but deep enough to catch light",
       "Knuckles on both hands bear old fracture scars and keloid tissue, years of damage poorly healed",
@@ -319,17 +301,82 @@
     ],
     "visible_augmentations": "Blood visible in veins with metallic chrome sheen running beneath the skin, most prominent at wrists, neck, and temple. Under strong light, the synthetic material has an almost oil-slick iridescence. Musculature unnaturally dense and defined despite stocky frame, giving compact, coiled appearance. No obvious external chrome, but physical presence suggests deep augmentation to anyone who knows what to look for.",
     "posture_movement": "Economical and controlled — no wasted motion, no theatrical gestures. Stands with weight distributed, ready to move in any direction. Walks with deliberate placement, like someone used to moving through tight spaces and hostile terrain. Hands often rest in lap or at sides, not defensive but ready. Makes sustained eye contact with deliberate intensity, reading rather than performing.",
-    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics, reinforced at stress points. Favors loose-fitting jackets with multiple interior pockets, cargo pants in charcoal or black, worn work boots with reinforced soles. No logos or identifying marks. Layers to accommodate temperature shifts and quick asset concealment. A single worn silver chain at her neck — possibly religious, possibly sentimental, definitely not new. Old dockworker's watch on left wrist, actually functional rather than decorative. No jewelry beyond that. Clothing is maintained but not new — replaced when damaged, not when fashionable."
+    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics, reinforced at stress points. Favors loose-fitting jackets with multiple interior pockets, cargo pants in charcoal or black, worn work boots with reinforced soles. No logos or identifying marks. Layers to accommodate temperature shifts and quick asset concealment. A single worn silver chain at neck — possibly religious, possibly sentimental, definitely not new. Old dockworker's watch on left wrist, actually functional rather than decorative. No jewelry beyond that. Clothing is maintained but not new — replaced when damaged, not when fashionable."
   },
-  "image_prompt": "Sterling Mazurek, a stocky 168cm woman with rich golden-bronze skin reflecting blended Hispanic, Eastern European, Sub-Saharan African, and Northern European heritage. Deep brown eyes with intense, measuring gaze. Black hair with silver threading at temples, pulled back shoulder-length. Face lined with character, marked by old scars including thin white scar from left temple to cheekbone, weathered from decades of dockside work. Knuckles scarred from impact, inner forearm bearing chemical burn marks. Compact muscular frame unnaturally dense from geneware, metallic chrome visible beneath skin at wrists, neck, temple with oil-slick iridescence. Wearing dark synthetic cargo pants, loose-fitting reinforced jacket with multiple pockets, worn work boots. Silver dockworker's watch on left wrist, worn silver chain at neck. Standing with economical posture, weight distributed, controlled and ready. Cyberpunk 2226, Great Lakes Metropolitan Zone dockside, moody neon-shadowed lighting casting chrome augmentations into relief, industrial grit and hard-earned survival written in every line. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Truong, a 168cm compact muscular figure with warm olive-bronze skin and deep brown eyes, standing in GLMZ dockside setting. Black hair pulled back tight with silver threading at temples. Strong, defined facial structure with high cheekbones, subtle almond eye shape, and squared jaw — a global phenotype blending Middle Eastern, Hispanic, Southeast Asian, and East Asian heritage. Weathered face with crow's feet and frown line, accepting scars as landscape. Thin white scar visible from left temple to cheekbone. Metallic chrome sheen visible in veins at wrists and neck under neon light, unnaturally dense musculature. Wearing dark synthetic cargo pants, reinforced loose-fitting jacket with multiple pockets, worn work boots, old functional dockworker's watch on left wrist, simple worn silver chain at neck. Economical posture, weight distributed, ready stance. Standing in Great Lakes Metropolitan Zone dockside at night, moody neon lighting with industrial metal structures, rain-slicked surfaces reflecting chrome augmentations. Intense gaze, reading rather than performing. GLMZ 2200s aesthetic, gritty urban environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 35.4,
-    "Eastern European": 30.0,
-    "Sub-Saharan African": 22.5,
-    "Northern European": 12.1
+    "Middle Eastern": 36.9,
+    "Hispanic/Latin American": 18.9,
+    "Southeast Asian": 16.7,
+    "East Asian": 14,
+    "Central Asian": 7.7,
+    "Northern European": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 9.8,
+        "Afghan Dari": 3.6
+      },
+      "Arab Gulf": {
+        "Emirati": 7.1
+      },
+      "Kurdish": {
+        "Kurdish": 16.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 9.6,
+        "Puerto Rican": 5.3
+      },
+      "Mexican": {
+        "Mexican": 4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 11.1
+      },
+      "Filipino": {
+        "Waray": 3.3,
+        "Cebuano": 2.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 9.1
+      },
+      "Chinese": {
+        "Sichuanese": 1.9
+      },
+      "Korean": {
+        "Korean": 3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 1.4,
+        "Buryat": 2.7
+      },
+      "Turkic": {
+        "Kazakh": 2.4,
+        "Turkmen": 1.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 4.1,
+        "Swiss German": 1.2
+      },
+      "British Isles": {
+        "English": 0.2,
+        "Irish": 0.3
+      }
+    }
+  }
 }

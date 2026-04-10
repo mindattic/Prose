@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f77804917612f2e375164c",
   "type": "character",
-  "name": "Ivar Nygaard",
+  "name": "Sable Nygaard",
   "aliases": [
     "The Accountant",
     "Dray"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Axiom Corporate Campus, Meridian Core, near State and Jackson",
-  "description": "Drăgan Asomugha-Kuusisto is the kind of man who makes other security personnel straighten their posture without knowing why. He is thin in the way of someone who was once broader and let it go — not from laziness but from a deliberate asceticism, as if he decided one day that taking up less space would make him harder to read. His complexion is a warm medium brown, his eyes an unusual pale hazel behind wire-framed optical enhancers he wears out of preference over the neural overlay most at his level use. He keeps his greying temples close-cropped and his jawline perpetually two days unshaved, which is its own kind of uniform.\n\nHe investigates Axiom's own security personnel — corruption, use-of-force violations, theft from evidence lockups, payroll fraud, inappropriate E.L.F. data-shrine interactions on company property. He is not liked and has never needed to be. What he has instead is a reputation for being utterly methodical and deeply unimpressed by rank. His colleagues believe he is loyal to Axiom above all else. This is almost true. The truth is more complicated and he has never volunteered it.",
+  "description": "Sable Nygaard is the kind of man who makes other security personnel straighten their posture without knowing why. He is thin in the way of someone who was once broader and let it go — not from laziness but from a deliberate asceticism, as if he decided one day that taking up less space would make him harder to read. His complexion is a warm medium brown, his eyes an unusual pale hazel behind wire-framed optical enhancers he wears out of preference over the neural overlay most at his level use. He keeps his greying temples close-cropped and his jawline perpetually two days unshaved, which is its own kind of uniform.\n\nHe investigates Axiom's own security personnel — corruption, use-of-force violations, theft from evidence lockups, payroll fraud, inappropriate E.L.F. data-shrine interactions on company property. He is not liked and has never needed to be. What he has instead is a reputation for being utterly methodical and deeply unimpressed by rank. His colleagues believe he is loyal to Axiom above all else. This is almost true. The truth is more complicated and he has never volunteered it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -180,7 +180,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Axiom Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,36 +232,22 @@
   "related_entities": [
     "Meridian Core",
     "Irontide Tidal Energy",
-    "The Pale Mile",
+    "Neural Palate",
     "Hazel Brink",
-    "Breck Tannen",
-    "Hydewood",
-    "Ilhan Sandstrom-Badu",
-    "Irkalla",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA PA-5 'Attendant'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "The Pale Mile"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Eastern European (34.7%) and Northern European (34.0%) base with significant Hispanic/Latin American (23.2%) and Sub-Saharan African (8.1%) ancestry, creating a complex phenotype that resists simple categorization. The result is a man whose genetic heritage spans the full continental spread of the Ubiquitous Diaspora.",
+    "heritage": "East Asian (46.0%) provides primary bone structure and facial framework, substantially blended with South Asian (20.4%) heritage that broadens facial proportions and deepens eye set, Sub-Saharan African (17.4%) ancestry that warms skin tone and contributes to overall facial width and presence, Hispanic/Latin American (10.4%) adding warmth and subtle proportion variation, and Northern European (5.8%) providing minimal cool undertones. The result is a genuinely composite phenotype where no single ancestry dominates—East Asian angularity coexists with South Asian facial breadth, Sub-Saharan warmth, and Latin American proportional influence in seamless genetic integration.",
     "height_cm": 183,
     "weight_kg": 76,
     "build": "Lean and angular, shoulders slightly narrowed from deliberate postural discipline. Long-limbed with minimal subcutaneous fat—the build of a man who chose reduction over accumulation. Wiry rather than muscular, suggesting endurance over strength.",
     "hair_color": "Dark brown with silver-grey at temples",
     "hair_style": "Close-cropped, military precision, no styling product",
     "hair_length": "Short",
-    "eye_color": "Pale hazel, unusual warmth against wire-frame optical enhancement",
-    "skin_tone": "Medium warm brown with olive undertones and golden baseprint—a blended phenotype reflecting Eastern European, Nordic, and Latin American ancestry with subtle warmth from Sub-Saharan genetics. Neither cool nor warm dominates; instead they coexist in a skin tone that shifts slightly depending on ambient light and posture.",
-    "complexion": "Austere. Clean-shaven except for deliberate two-day stubble maintained with exactness. Minimal laugh lines—his face does not move often. Eyes carry the stillness of someone who listens more than he speaks. Slight creasing at the corners from years of sustained concentration. Skin is clear, unblemished, and suggests rigorous discipline rather than vanity. Cheekbones carry the angular structure of Eastern European ancestry, while the overall facial proportion shows the width and presence of Nordic and Latin American heritage.",
+    "eye_color": "Deep brown with slight amber undertones, enhanced by wire-frame optical overlay",
+    "skin_tone": "Warm medium brown—genuine synthesis of East Asian, South Asian, and Sub-Saharan African base with golden warmth from Latin American and minimal Northern European admixture. The tone reads as authentically global, neither cool nor warm dominating but coexisting in a complexion that shifts with ambient light, suggesting true genetic blending rather than single-origin ancestry.",
+    "complexion": "Austere. Clean-shaven except for deliberate two-day stubble maintained with exactness. Minimal laugh lines—his face does not move often. Eyes carry the stillness of someone who listens more than he speaks. Slight creasing at the corners from years of sustained concentration. Skin is clear, unblemished, and suggests rigorous discipline rather than vanity. Cheekbones carry angular structure blended from East Asian ancestry, while overall facial proportion, eye set, and breadth reflect South Asian and Sub-Saharan African heritage contribution, creating a face neither narrow nor broad but balanced across genetic sources.",
     "distinguishing_marks": [
       "Thin white scar along left jawline, approximately 3cm, barely visible unless light hits at precise angle—knife work, old",
       "Faint burn mark on inside right wrist, 2cm diameter, partially obscured by watch cuff—thermal accident or deliberate"
@@ -270,15 +256,48 @@
     "posture_movement": "Economical and controlled. Walks with minimal shoulder rotation, as if conserving kinetic energy. Sits perfectly still during interviews—hands flat on desk or folded. Rarely gestures. Turns his entire body to look at someone rather than just his head, suggesting old tactical training. His silence carries more presence than most people's speech.",
     "clothing_style": "Tier 1 corporate formal, but austere. Charcoal grey suit, always pressed, fitted to his narrow frame. White dress shirt, never a tie—Axiom permits this at his level. Minimal jewelry: only a steel watch (functional, not luxury). Black leather belt and shoes, both maintained to military standards. No logos, no chromatic variation, no status signifiers. The uniform of a man who has decided appearance is a tool for invisibility, not assertion."
   },
-  "image_prompt": "A tall, lean Eurasian man in his late 40s, standing in corporate Tier 1 office lighting. Warm medium-brown skin tone with olive undertones, sharp Eastern European cheekbones softened by Latin American and Nordic genetic heritage. Close-cropped dark hair with silver at temples. Dressed in pressed charcoal suit, white shirt, no tie. Wire-frame gunmetal grey optical enhancers with document-analysis overlay. Faint scar on left jawline, burn mark on wrist partially hidden by steel watch. Perfectly still posture, economical bearing, minimal gesture. Austere expression, stillness suggesting tactical background. Mid-2220s cyberpunk corporate aesthetic, cool office lighting casting subtle shadows across mixed-heritage features, minimalist aesthetic, dignity through subtraction. --ar 2:3 --v 6",
+  "image_prompt": "Sable Nygaard, 183cm tall East Asian-South Asian-Sub-Saharan African man with warm medium brown skin and golden undertones, deep brown eyes behind gunmetal wire-frame optical enhancers, dark brown hair with silver temples in close military crop. Clean-shaven with precise two-day stubble, angular East Asian cheekbones blended with broader South Asian facial proportions and Sub-Saharan warmth. Austere expression, minimal laugh lines, eyes with stillness of a listener. Thin white scar along left jawline barely visible. Wearing charcoal grey Tier 1 corporate suit fitted to lean angular frame, white dress shirt, no tie, steel functional watch, black leather belt and shoes maintained to military standards. Standing with economical posture, minimal shoulder rotation, perfect stillness. GLMZ Great Lakes Metropolitan Zone, corporate office with cool ambient lighting catching subtle warm tones of his complexion and the gunmetal of his optical frames. Mood: controlled, disciplined, deliberately invisible. Professional, austere, global diaspora genetics visible in blended phenotype. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 34.7,
-    "Northern European": 34.0,
-    "Hispanic/Latin American": 23.2,
-    "Sub-Saharan African": 8.1
+    "East Asian": 46,
+    "South Asian": 20.4,
+    "Sub-Saharan African": 17.4,
+    "Hispanic/Latin American": 10.4,
+    "Northern European": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 36.3,
+        "Fujianese": 9.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 11,
+        "Tamil": 2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 17.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 10.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 5.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66a7228a57dd816a432c277",
   "type": "character",
-  "name": "Britt Dalgaard-Moala-Konaté",
+  "name": "Binta Nkrumah-Wojciechowski-Kulkarni",
   "aliases": [
     "Anvil",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
-  "description": "Nneka Lindqvist-Okafor is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a sniper out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNneka Lindqvist-Okafor has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Binta Nkrumah-Wojciechowski-Kulkarni is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a sniper out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nBinta Nkrumah-Wojciechowski-Kulkarni has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -260,7 +260,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,38 +276,21 @@
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "GLMZ",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Mika Sorel",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Cosmopolitan mixed ancestry: Northern European (44%), Pacific Islander (21.6%), Sub-Saharan African (13%), Hispanic/Latin American (11.9%), and Southeast Asian (9.5%). Facial structure reflects this complex blend — Northern European bone structure softened by Pacific Islander and African features, with subtle Southeast Asian eye shape and Hispanic/Latin warmth in skin undertones.",
+    "heritage": "Diaspora blend: Sub-Saharan African (43.6%) as dominant ancestry stream, Eastern European (25.4%) providing bone structure refinement, South Asian (15.9%) contributing warmth and depth, East Asian (10.1%) adding subtle eye and eyelid contours, with minor Hispanic/Latin American (4.2%) and Southeast Asian (0.8%) ancestry enriching overall dimensional complexity. Facial structure reflects this intricate blend — strong, high cheekbones and defined jaw rooted in Sub-Saharan African heritage, modulated by Eastern European facial length and jaw geometry; South Asian fullness around lower face and lip structure providing balance; East Asian subtlety in eye shape, eyelid folds, and orbital spacing. The synthesis creates striking angular elegance with dimensional warmth.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Rawboned and efficient — long-limbed with minimal body fat, the kind of frame that reads as either ascetic discipline or chronic deprivation. Shoulders broad but not heavy; chest defined without bulk. Suggests endurance over raw strength.",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Rich warm medium-to-deep brown — Sub-Saharan African as primary dominant tone, blended with Eastern European subtle luminosity undertones, South Asian golden-red warmth, and East Asian depth layers. The result is dimensional and complex across face and body, catching light with warm undertones while maintaining substantial depth.",
     "hair_color": "Dark brown, naturally textured",
     "hair_style": "Kept short and practical, no styling product. Greying at temples.",
     "hair_length": "Short",
-    "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Warm medium-brown complexion — the result of multiple ancestry streams blending: Nordic paleness tempered by Pacific Islander, African, and Latin warmth, with subtle Southeast Asian undertones creating depth and dimensional richness across the face and body.",
-    "complexion": "Angular face with prominent cheekbones and strong jaw, refined by the interplay of diverse ancestry — cheekbone height suggests Pacific Islander and African heritage, jaw structure reflects Northern European influence. Skin weathered but maintained — signs of sun exposure and stress, minimal scarring on the face itself. Expression defaults to controlled neutrality; eyes rarely betray emotion. Three-day stubble is his baseline grooming state.",
+    "complexion": "Strongly angular face with prominent high cheekbones and decisive jaw — cheekbone prominence reflects Sub-Saharan African heritage, jaw structure and face length reflect Eastern European influence, South Asian fullness around the lower face and fuller lip structure providing balance, East Asian eye shape and eyelid contours adding subtle refinement. Skin weathered but maintained — signs of sun exposure and stress, minimal scarring on the face itself. Expression defaults to controlled neutrality; eyes rarely betray emotion. Three-day stubble is his baseline grooming state.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone — old blade work, healed clean.",
       "Burn mark on right shoulder blade — thermal weapon discharge, roughly 8cm diameter, pale and old.",
@@ -317,16 +300,71 @@
     "posture_movement": "Moves with economical precision — no wasted motion, weight always balanced. Stands with slight forward lean, as if perpetually in prone position. Hands rarely still; fingers are constantly performing micro-checks on equipment or assessing distance/angles. Eyes track exits and high ground automatically. Speaks quietly; listens more than talks.",
     "clothing_style": "Tier 3-4 practical wear: worn but maintained tactical jacket (faded charcoal, synthetic polymer blend) over layered base wear. Cargo pants with reinforced thigh pockets and knee articulation — built-in flex panels for fieldwork. Steel-toed boots, scuffed but oiled. No logos or gang colors; everything is matte-finish or weathered to avoid light reflection. A single Φ-silver ring on his left thumb — old-school marker of runner status. No jewellery beyond that. Clothes smell like gun oil and synthetic detergent."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Britt Dalgaard-Moala-Konaté: tall lean 188cm male with warm medium-brown skin blending Nordic, Pacific Islander, African, and Southeast Asian ancestry visible in angular cheekbones and strong jaw. Dark brown short hair with grey at temples, deep brown eyes with controlled neutral expression. Three-day stubble. Thin white scar from left temple to cheekbone, subtle thermal scarring on right shoulder. Wearing faded charcoal tactical jacket over dark base layers, reinforced cargo pants, scuffed steel-toed boots. Φ-silver ring on left thumb. Linear scarring visible on forearms suggesting subdermal weapon augmentation. Posture shows economical military precision, forward lean, hands at rest but ready. Low-key moody lighting, industrial urban background, sharp focus, professional runner aesthetic, no wasted detail, weathered and maintained gear. --ar 2:3 --v 6",
+  "image_prompt": "A tall, lean male figure of mixed Sub-Saharan African, Eastern European, and South Asian heritage standing in dim neon-lit near-future megacity setting, 2226. Rich warm medium-deep brown skin with golden-red undertones and subtle luminosity. Strongly angular face with high prominent cheekbones and decisive jaw, deep brown unaugmented eyes with East Asian subtle eyelid contours, three-day stubble. Dark brown hair naturally textured, short with greying at temples. Old white scar running left temple to cheekbone, weathered sun-exposed complexion. 188cm tall, rawboned efficient build, long-limbed. Wearing faded charcoal synthetic tactical jacket over layered base, reinforced cargo pants with flex panels, scuffed steel-toed boots oiled black. Linear surgical scars visible on both forearms where subdermal weapon mounts interface. Φ-silver ring on left thumb. Posture slightly forward-leaning, economical precise movement, hands subtly assessing environment, eyes tracking exits. Standing in industrial rain-slicked alley or dimly-lit runner safe house, cool blues and amber streetlight, gun oil and synthetic detergent smell, controlled neutral expression, mood tense and cautious --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 44.0,
-    "Pacific Islander": 21.6,
-    "Sub-Saharan African": 13.0,
-    "Hispanic/Latin American": 11.9,
-    "Southeast Asian": 9.5
+    "Sub-Saharan African": 43.6,
+    "Eastern European": 25.4,
+    "South Asian": 15.9,
+    "East Asian": 10.1,
+    "Hispanic/Latin American": 4.2,
+    "Southeast Asian": 0.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 43.6
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 21.4,
+        "Belarusian": 4
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 11.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.7,
+        "Tamil Sri Lankan": 0.5
+      },
+      "Nepali": {
+        "Nepali": 2.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 3.9,
+        "Cantonese": 0.4
+      },
+      "Korean": {
+        "Korean": 5.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 2,
+        "Guatemalan": 0.5
+      },
+      "Caribbean": {
+        "Dominican": 1.7
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 0.1
+      },
+      "Laotian": {
+        "Laotian": 0.1
+      },
+      "Cambodian": {
+        "Khmer": 0.6
+      }
+    }
+  }
 }

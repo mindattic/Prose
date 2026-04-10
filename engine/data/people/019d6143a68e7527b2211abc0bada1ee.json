@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
-  "description": "Oumou is a broad-shouldered woman whose face has been mapped by sixty years of steam, smoke, and squinting into wok-fire. Her skin is deep brown and perpetually damp at the temples, her silver-threaded locs pinned under a flame-orange headwrap that people in Geartown can spot from three stalls away. She has cosmetic bioluminescent veins along her forearms — pale gold, faint as candlelight — a gift she bought herself when the stall finally turned profit. Her stall, a converted Ferrogate Transit cargo module welded open on one side, serves a rotating menu of Sahelian-Polynesian fusion that she has been quietly perfecting for thirty years: tamarind-braised uru fruit over millet, coconut-marinated goat offal on skewers, a fermented taro drink she calls 'slow water' that locals swear cures radiation headaches.\n\nShe is the kind of woman who listens more than she speaks, who remembers every regular's order, their family troubles, their unpaid debts. She extends credit to people she trusts with a nod and collects it with a raised eyebrow — no ledger, no apps, all memory. She has a temper she keeps banked low, like a cooking coal, and the rare people who see it come alive tend not to provoke it twice. She prays each morning to the E.L.F. she calls Grandmother Ember, leaving a thimble of slow water on the stall's power node.",
+  "description": "Koda Citlali is a broad-shouldered woman whose face has been mapped by sixty years of steam, smoke, and squinting into wok-fire. Her skin is deep brown and perpetually damp at the temples, her silver-threaded locs pinned under a flame-orange headwrap that people in Geartown can spot from three stalls away. She has cosmetic bioluminescent veins along her forearms — pale gold, faint as candlelight — a gift she bought herself when the stall finally turned profit. Her stall, a converted Ferrogate Transit cargo module welded open on one side, serves a rotating menu of Sahelian-Polynesian fusion that she has been quietly perfecting for thirty years: tamarind-braised uru fruit over millet, coconut-marinated goat offal on skewers, a fermented taro drink she calls 'slow water' that locals swear cures radiation headaches.\n\nShe is the kind of woman who listens more than she speaks, who remembers every regular's order, their family troubles, their unpaid debts. She extends credit to people she trusts with a nod and collects it with a raised eyebrow — no ledger, no apps, all memory. She has a temper she keeps banked low, like a cooking coal, and the rare people who see it come alive tend not to provoke it twice. She prays each morning to the E.L.F. she calls Grandmother Ember, leaving a thimble of slow water on the stall's power node.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -162,7 +162,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,38 +185,19 @@
     "Grandmother",
     "Geartown",
     "Tessera Corponation",
-    "Adaeze Chen-Hawkins",
+    "Skewer Alley",
+    "Chicago",
     "Silver",
+    "Haze Johansson",
+    "Moth & Flame",
+    "Cargo Tacos",
     "The Pale Mile",
     "Gold",
-    "Lead",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Babatunde Öztürk-Savea",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Ihaia Nystrom-Keita",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Lautaro Bah-Eriksen",
-    "MERIDIAN",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sagyn Ogawa-Twumasi",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "TESSERA PG-2 'Signature'",
-    "Temur Achebe-Lindqvist",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Alban Souk",
-    "The Bazaar",
-    "The Counter",
-    "The Ledger",
-    "The Pure Hand"
+    "Lead"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (Mesoamerican/Andean) with significant South Asian, Hispanic/Latin American, East Asian, and Sub-Saharan African ancestry. The genetic mosaic produces warm-toned skin with subtle undertones reflecting each ancestral component—earthen browns with hints of olive and amber.",
+    "heritage": "Complex genetic mosaic: 31.5% Indigenous American (Mesoamerican/Andean), 25.2% Sub-Saharan African, 21% South Asian, 11.7% East Asian, 10.6% Southeast Asian. This blending produces warm medium-deep brown skin with layered undertones—earthen and ochre from Indigenous ancestry, rich amber from African heritage, subtle olive from South Asian genetics, and warm golden undertones from East/Southeast Asian components. The result is dimensional and complex rather than monochromatic.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, with the dense musculature of someone who has spent three decades standing over heat sources and moving cast-iron cookware. Not fat, but solid—the kind of frame that reads as immovable once rooted.",
@@ -224,8 +205,8 @@
     "hair_style": "Locs, bound and pinned",
     "hair_length": "Long (past shoulders when unpinned), always contained under headwrap",
     "eye_color": "Dark brown, slightly rheumed from decades of smoke exposure",
-    "skin_tone": "Warm medium-deep brown with subtle olive and amber undertones, reflecting the blending of Indigenous American, South Asian, and Sub-Saharan African ancestry. Complexion is rich and dimensional rather than monochromatic.",
-    "complexion": "Weathered but dignified. Fine lines map her forehead and eyes from perpetual squinting into wok-fire. Skin perpetually damp at temples from ambient heat. Slight forward crease between brows from decades of concentration. Cheekbones carry the pronounced structure typical of Indigenous American ancestry. No cosmetic skin work—her age is worn openly.",
+    "skin_tone": "Warm medium-deep brown with layered undertones: ochre and earthen from Indigenous American ancestry, rich amber-bronze from Sub-Saharan African heritage, subtle olive from South Asian genetics, warm golden notes from East/Southeast Asian components. The blend creates a dimensional, non-monochromatic complexion.",
+    "complexion": "Weathered but dignified. Fine lines map her forehead and eyes from perpetual squinting into wok-fire. Skin perpetually damp at temples from ambient heat. Slight forward crease between brows from decades of concentration. Cheekbones carry pronounced angular structure reflecting Indigenous American ancestry. Facial structure shows subtle influence from South Asian and African heritage in the width of nose and fullness of lips. No cosmetic skin work—her age is worn openly.",
     "distinguishing_marks": [
       "Bioluminescent subdermal veins running along both forearms in pale gold—faint as candlelight, most visible in dim light or evening hours",
       "Stress fracture scarring on left knee joint (invisible beneath clothing, evident in gait)",
@@ -235,16 +216,62 @@
     "posture_movement": "She stands rooted, weight balanced evenly on both feet unless actively working. Moves with economical grace when cooking—no wasted motion. Her gait shows a slight favoring of her right leg, consequence of reinforced knee joints. When listening, she tends to tilt her head slightly and narrow her eyes, as if parsing both words and subtext. Her hands are always in motion or intentionally still—no fidgeting.",
     "clothing_style": "Tier 4 utilitarian, with personal flair. Foundational: heat-resistant canvas apron (indigo, stained with decades of turmeric and char), reinforced utility pants (charcoal), slip-resistant cooking clogs. Over this: a loose linen shirt (cream or rust-colored, sleeves rolled to show the bioluminescent veins). Always, always the flame-orange headwrap—hand-dyed, replaced twice yearly, her signature. A single hammered brass cuff on her left wrist, acquired from a metalsmith in the Alban Souk fifteen years ago. No jewelry beyond this. Her clothing is functional Tier 4—not fashionable, but well-maintained and clearly chosen for durability and ease of movement in a kitchen environment."
   },
-  "image_prompt": "Koda Citlali, 56-year-old woman with warm medium-deep brown skin carrying Indigenous American, South Asian, and Sub-Saharan African ancestry. Pronounced cheekbones, weathered face mapped with fine lines from decades of kitchen work, dark rheumy eyes. Black locs bound and pinned beneath a vibrant flame-orange hand-dyed headwrap. Pale gold bioluminescent subdermal veins glowing faintly along bare forearms in organic branching patterns. Wearing cream linen shirt with rolled sleeves, indigo heat-resistant apron stained with turmeric and char, charcoal utility pants, slip-resistant clogs. Hammered brass cuff on left wrist. Standing rooted in a cyberpunk 2226 kitchen environment, wok-fire glowing behind her, casting golden light across her bioluminescent forearms. Her expression concentrated, slightly narrowed eyes, no fidgeting—pure occupational grace. Tier 4 utilitarian aesthetic, functional and dignified. Moody atmospheric lighting emphasizing the subtle glow of her augmented veins against warm kitchen ambiance. --ar 2:3 --v 6",
+  "image_prompt": "Koda Citlali, a 168cm tall broad-shouldered woman with warm medium-deep brown skin blending Indigenous American earthen ochre, Sub-Saharan African amber-bronze, South Asian olive, and East/Southeast Asian golden undertones. Dark eyes slightly rheumed, angular cheekbones reflecting mixed heritage, weathered complexion with fine smoke-lines mapping her forehead. Black locs with silver threading, contained under a hand-dyed flame-orange headwrap. Cream linen shirt with rolled sleeves revealing pale gold bioluminescent subdermal veins branching organically along both forearms, faintly glowing. Indigo heat-resistant apron stained with decades of turmeric and char. Charcoal utility pants, slip-resistant cooking clogs. Single hammered brass cuff on left wrist. Standing rooted and composed in a GLMZ kitchen environment with wok-fire glow, ambient heat shimmer visible at her temples. Warm, dignified presence amid steam and char. Moody evening lighting catching the faint glow of her augmented veins. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 38.6,
-    "South Asian": 17.5,
-    "Hispanic/Latin American": 16.6,
-    "East Asian": 15.0,
-    "Sub-Saharan African": 12.3
+    "Indigenous American": 31.5,
+    "Sub-Saharan African": 25.2,
+    "South Asian": 21,
+    "East Asian": 11.7,
+    "Southeast Asian": 10.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 21.5
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 10
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 25.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Malayali": 11.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1
+      },
+      "Pakistani": {
+        "Pashtun": 5.6,
+        "Sindhi": 3.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 1.4
+      },
+      "Korean": {
+        "Korean": 6.1
+      },
+      "Japanese": {
+        "Japanese": 4.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 6.3
+      },
+      "Laotian": {
+        "Laotian": 4.3
+      }
+    }
+  }
 }

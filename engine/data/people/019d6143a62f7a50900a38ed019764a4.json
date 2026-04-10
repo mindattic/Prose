@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62f7a50900a38ed019764a4",
   "type": "character",
-  "name": "Cipher Migizi",
+  "name": "Cipher Cissé",
   "aliases": [
     "Patch",
     "The Seamstress",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "The Shelf, near Ashland and Chicago Ave",
-  "description": "Imara is a broad-shouldered Ethiopian-Mexican woman whose hands tell two stories simultaneously: the left, calloused and scarred from decades of manual labor and back-alley surgeries performed without proper light; the right, a matte-black prosthetic from the elbow down fitted with micro-precise surgical attachments she machined herself from salvaged drone components. Her face carries the particular exhaustion of someone who has made peace with doing necessary things that are not good things, crow's feet deep around eyes that still manage to hold genuine warmth even when the rest of her expression is locked down tight. She wears layered secondhand clothing in muted earth tones, always with at least one apron-style garment she can wipe blood on without losing composure.\n\nShe operates out of a converted fish-processing unit in the lower Shelf, where the smell of brine has soaked so deep into the concrete it masks the chemical antiseptic she burns through in quantity. Her waiting room is a collection of mismatched chairs and a hand-painted mural of the Virgin of Guadalupe overlaid with circuit-board halos, done by a patient who paid in art because they had nothing else. Imara charges what people can afford, keeps meticulous paper ledgers because she doesn't trust anything networked, and maintains a quiet, ruthless sideline sourcing and selling biological augmentation components to people who can't access the licensed market. She tells herself the two practices balance each other out morally. Some days she believes it.\n\nShe was trained as a licensed surgical technician at a Spire-affiliated hospital before a patient advocacy dispute—she reported a harvesting irregularity, the hospital buried it, and she was the one who disappeared from the registry—stripped her credentials and left her with a skill set and nowhere sanctioned to use it. She has been on the Shelf for eleven years. She has delivered forty-three babies, closed wounds on perhaps three hundred people, and arranged the quiet transfer of organs whose provenance she prefers not to examine closely. She prays every morning. She sleeps about four hours a night.",
+  "description": "Cipher Cissé is a broad-shouldered Ethiopian-Mexican woman whose hands tell two stories simultaneously: the left, calloused and scarred from decades of manual labor and back-alley surgeries performed without proper light; the right, a matte-black prosthetic from the elbow down fitted with micro-precise surgical attachments she machined herself from salvaged drone components. Her face carries the particular exhaustion of someone who has made peace with doing necessary things that are not good things, crow's feet deep around eyes that still manage to hold genuine warmth even when the rest of her expression is locked down tight. She wears layered secondhand clothing in muted earth tones, always with at least one apron-style garment she can wipe blood on without losing composure.\n\nShe operates out of a converted fish-processing unit in the lower Shelf, where the smell of brine has soaked so deep into the concrete it masks the chemical antiseptic she burns through in quantity. Her waiting room is a collection of mismatched chairs and a hand-painted mural of the Virgin of Guadalupe overlaid with circuit-board halos, done by a patient who paid in art because they had nothing else. Cipher Cissé charges what people can afford, keeps meticulous paper ledgers because she doesn't trust anything networked, and maintains a quiet, ruthless sideline sourcing and selling biological augmentation components to people who can't access the licensed market. She tells herself the two practices balance each other out morally. Some days she believes it.\n\nShe was trained as a licensed surgical technician at a Spire-affiliated hospital before a patient advocacy dispute—she reported a harvesting irregularity, the hospital buried it, and she was the one who disappeared from the registry—stripped her credentials and left her with a skill set and nowhere sanctioned to use it. She has been on the Shelf for eleven years. She has delivered forty-three babies, closed wounds on perhaps three hundred people, and arranged the quiet transfer of organs whose provenance she prefers not to examine closely. She prays every morning. She sleeps about four hours a night.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -235,7 +235,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,48 +255,25 @@
     "The Shelf",
     "Concrete",
     "Stratum",
+    "Circuit",
+    "Chicago",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Chicago",
-    "Ambrogio Waweru-Djordanović",
-    "Arcturus Exo-Runner Frame",
-    "Crucible ER-5 'First Response'",
-    "Crucible TR-7 'Triage'",
-    "Ekaterina Dawit-Sulupinar",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Ihaia Mori-Sefa",
-    "Imara Szczepanek-Diouf",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Oumarou Svec-Ranginui",
-    "Réginald Asomaning-Čabarkapa",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Street Custom 'Gallows' Recurve Bow",
-    "TERMINUS",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA WL-6 'Stacker'",
-    "The Fathom Line",
-    "The Ledger",
-    "The Registry",
-    "The Signal",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (Anishinaabe/Great Lakes), with significant South Asian, Middle Eastern, Hispanic/Latin American, and Northern European ancestry; the genetic blend creates a distinctive phenotype with strong Indigenous American bone structure enhanced by the warmth and complexity of South Asian and Middle Eastern heritage",
+    "heritage": "Complex diaspora blend: Sub-Saharan African (34.9%) forms the structural foundation with prominent cheekbones and defined jaw, while Eastern European (27.8%) adds refined bone structure and lighter undertones to the midface. Hispanic/Latin American ancestry (22.5%) contributes warmth and expressive depth; East Asian (11.5%) softens the overall angularity and refines the eye structure; Southeast Asian (2.9%) and South Asian (0.4%) add subtle warmth to complexion and eye tone. The phenotype is distinctly plurinational—a face that reads as authentically none and all of these ancestries simultaneously.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solidly built with dense muscle beneath a frame that carries the wear of four decades of physical labor; strong through the torso and legs, shoulders and back visibly developed from years of standing over surgical tables and manual manipulation",
     "hair_color": "Dark brown with threaded silver at the temples and throughout",
     "hair_style": "Pulled back in a functional braid or knot, sometimes tied with clinic tape or salvaged wire",
     "hair_length": "Medium, chin-length when unbound",
-    "eye_color": "Deep brown with warm undertones, left eye with faint amber tint from corrective ocular implant",
-    "skin_tone": "Warm medium-deep brown with golden and reddish undertones from the blend of Indigenous American, South Asian, and Middle Eastern ancestry; weathered by sun exposure and chemical exposure, developing a lived-in patina",
-    "complexion": "Strong, angular features characteristic of Indigenous American ancestry with prominent cheekbones and a squared jaw, refined by South Asian and Middle Eastern heritage softening; deep crow's feet and forehead creases marking decades of concentration; skin texture roughened around the hands from antiseptic exposure and scar tissue; a faint chemical burn mark along the right side of her jaw, partially concealed by shadow",
+    "eye_color": "Deep warm brown with subtle golden undertones, left eye with faint amber luminescence from corrective ocular implant",
+    "skin_tone": "Warm medium-deep brown with golden and subtle reddish undertones from the balanced blend of Sub-Saharan African, Eastern European, and Hispanic/Latin American ancestry; weathered by sun and chemical exposure, developing a lived-in patina with visible texture variation",
+    "complexion": "Strong, angular features with prominent cheekbones and defined jaw characteristic of Sub-Saharan African ancestry, refined and subtly softened by Eastern European bone structure and East Asian influence; deep crow's feet and forehead creases marking decades of concentration; skin texture roughened around the hands from antiseptic exposure and scar tissue; a faint chemical burn mark along the right side of her jaw, pale and slightly raised, partially concealed by shadow",
+    "visible_augmentations": "Right arm prosthetic from elbow down: matte-black composite construction with visible articulation points and interchangeable tool mounts; micro-precise surgical attachments visible when in use (fine forceps, micro-calibrated clamps, drug-delivery microneedles); the arm bears visible welding marks and hand-machined tooling marks from self-modification. Left eye: faint amber luminescence at the pupil, slightly older-generation aesthetic with visible microscopic lens artifact at the corner. Subdermal chemical analysis strip on left forearm visible as a faint raised grid pattern under the skin.",
     "distinguishing_marks": [
       "Extensive scarring across both palms and dorsal surfaces of the hands, the left hand showing thick white surgical scars in organized patterns suggesting years of precise work",
       "Chemical burn scar along right jawline, pale and slightly raised, approximately 8cm long",
@@ -304,20 +281,73 @@
       "Three parallel thin scars running down the left side of her neck, old but still visible, each approximately 4cm, angled slightly forward",
       "Subdermal chemical analysis strip visible as a faint geometric grid pattern under the skin of left forearm, edges sometimes showing faint bioluminescence under certain light"
     ],
-    "visible_augmentations": "Right arm prosthetic from elbow down: matte-black composite construction with visible articulation points and interchangeable tool mounts; micro-precise surgical attachments visible when in use (fine forceps, micro-calibrated clamps, drug-delivery microneedles); the arm bears visible welding marks and hand-machined tooling marks from self-modification. Left eye: faint amber luminescence at the pupil, slightly older-generation aesthetic with visible microscopic lens artifact at the corner. Subdermal chemical analysis strip on left forearm visible as a faint raised grid pattern under the skin.",
     "posture_movement": "Carries herself with economical precision, minimal wasted movement; stands with weight balanced evenly, shoulders back but not squared in aggression—more in the posture of someone accustomed to standing for 16-hour shifts. Moves with deliberate calm even under pressure; hands are usually in motion, manipulating something or kept ready. Her right prosthetic arm moves with slight mechanical precision that contradicts the fluidity of her biological left. Eyes constantly assessing—people, exits, potential threats masked as professional habit.",
     "clothing_style": "Tier 4 working-class, practical and layered: worn but maintained second-hand base layers in earth tones (grey, brown, olive), reinforced work pants in dark canvas, heavy apron-style garments (usually canvas or absorbent linen) that can be discarded or washed without emotional attachment. Wears a decades-old grey wool coat over everything in cold months. No visible branding; everything chosen for function and cost. Practical footwear: worn medical clogs or reinforced work boots. A thin gold chain around her neck (predating the Shelf, possibly inherited). Hands are bare—no jewelry that could snag during procedures."
   },
-  "image_prompt": "Cipher Migizi, a weathered 40-something surgical technician of Indigenous American, South Asian, and Middle Eastern heritage, stands in the dim fluorescent glow of an underground clinic, 2226. Deep warm brown skin marked by chemical burns and surgical scars; strong angular features with prominent cheekbones and squared jaw. Dark hair threaded with silver pulled back in a functional braid. Left eye glowing faint amber from corrective ocular implant. Right arm a matte-black prosthetic with precision surgical attachments and visible welding marks. Subdermal chemical analysis grid faintly luminescent on left forearm. Wearing layered practical work clothes: earth-tone base layers, dark canvas pants, worn medical apron, grey wool coat. Weathered hands bearing organized surgical scars. Gold chain at neck. Standing with economical precision, shoulders back, eyes assessing. Background: concrete walls, medical equipment, harsh clinical lighting with warm shadows. Cyberpunk metropolitan 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Cipher Cissé, 172cm surgical worker in GLMZ 2226, warm medium-deep brown skin with Sub-Saharan African cheekbones softened by Eastern European and East Asian refinement. Dark brown hair with silver threading pulled back tight, deep warm brown eyes with amber ocular implant glow. Right arm: matte-black prosthetic with surgical tool mounts and visible welding marks. Extensive surgical scars on hands, chemical burn on right jawline, faded surgical-cross-marigold tattoo on inner forearm. Worn layered work clothes in greys and earth tones, heavy apron, old grey wool coat, worn medical clogs. Standing in clinic shadow, economical posture, hands ready, eyes assessing. 16-hour shift wear visible in deep creases around eyes. Gold chain at neck. Professional, weathered, precise. Neo-noir medical aesthetic, lived-in exhaustion, cold fluorescent and shadow lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 62.1,
-    "South Asian": 12.7,
-    "Middle Eastern": 9.3,
-    "Northern European": 8.8,
-    "Hispanic/Latin American": 7.1
+    "Sub-Saharan African": 34.9,
+    "Eastern European": 27.8,
+    "Hispanic/Latin American": 22.5,
+    "East Asian": 11.5,
+    "Southeast Asian": 2.9,
+    "South Asian": 0.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 26.1,
+        "Zambian": 8.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 1.7,
+        "Slovak": 8.9
+      },
+      "Slavic South": {
+        "Serbian": 8.7,
+        "Bulgarian": 8.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 7.2,
+        "Peruvian": 0.6
+      },
+      "Central American": {
+        "Guatemalan": 14.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 6,
+        "Sichuanese": 0.2
+      },
+      "Korean": {
+        "Korean": 2.6
+      },
+      "Japanese": {
+        "Japanese": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 1.3,
+        "Sundanese": 1
+      },
+      "Cambodian": {
+        "Khmer": 0.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.4
+      }
+    }
+  }
 }

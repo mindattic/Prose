@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64973d6a7e6a9f6f75fc6e3",
   "type": "character",
-  "name": "Freya Soriano-Tetteh-Larsdóttir",
+  "name": "Nneka Soriano-Sigurdsson-Larsdóttir",
   "aliases": [
     "The Butcher"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,16 +103,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "The Milwaukee Core",
-    "Low Register",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "TESSERA PA-5 'Attendant'",
-    "The Narrows",
-    "The Pure Hand"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diasporic ancestry: 30.7% Sub-Saharan African, 27.4% Northern European, 21.2% Hispanic/Latin American, 14.0% East Asian, 6.7% North African. Genetic mosaic produces warm golden-brown complexion with subtle regional feature blending—broader cheekbones with East Asian influence, prominent brow ridge from Northern European ancestry, slightly fuller lips characteristic of African heritage, and refined nose structure from Hispanic/North African mixing.",
+    "heritage": "Complex diasporic ancestry: 47.9% Northern European, 21.4% Sub-Saharan African, 16.1% Hispanic/Latin American, 14.6% South Asian. Genetic mosaic produces warm golden-brown complexion with subtle regional feature blending—prominent brow ridge and bone structure from Northern European ancestry, fuller lips and facial warmth from Sub-Saharan heritage, refined nose contours from Hispanic/Latin American mixing, and refined cheekbone geometry with slight orbital depth from South Asian ancestry.",
     "height_cm": 183,
     "weight_kg": 89,
     "build": "Athletic and lean with subtle shoulder breadth — the physique of someone who maintains discipline without ostentation. Weathered musculature suggests decades of hands-on problem-solving rather than gym maintenance.",
@@ -120,8 +115,8 @@
     "hair_style": "Neatly trimmed fade, military-precise at the sides, slightly longer on top with a natural wave",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint amber rim — natural eyes, no chrome replacement",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones, mid-to-deep saturation. Reflects the harmonic blending of Sub-Saharan depth with Northern European and East Asian coolness, creating a rich unified tone rather than visibly discrete regional markers.",
-    "complexion": "Weathered face with visible laugh lines around the eyes and a thin scar bisecting the left jawline (pale, old). Five-o'clock shadow typical. Minimal grooming vanity — practical maintenance only. Hands calloused, fingers slightly shortened (old break history). Facial structure shows blend of broader cheekbones with refined nose, indicating multi-continental heritage.",
+    "skin_tone": "Warm golden-brown complexion with subtle olive undertones, mid-to-deep saturation. Reflects the harmonic blending of Northern European structure with Sub-Saharan warmth and South Asian refinement, creating a rich unified tone rather than visibly discrete regional markers.",
+    "complexion": "Weathered face with visible laugh lines around the eyes and a thin scar bisecting the left jawline (pale, old). Five-o'clock shadow typical. Minimal grooming vanity — practical maintenance only. Hands calloused, fingers slightly shortened (old break history). Facial structure shows blend of prominent brow ridge with refined nose and cheekbones, indicating multi-continental heritage.",
     "distinguishing_marks": [
       "Thin pale scar running vertically along left jawline from ear to chin, approximately 8cm, likely a knife wound from his twenties",
       "Network of small burn scars on both knuckles, consistent with hands-on enforcement work",
@@ -131,16 +126,56 @@
     "posture_movement": "Economical and measured. Stands with weight slightly forward, shoulders relaxed but ready. Moves without wasted motion — a man who has learned that unnecessary gestures signal weakness or nervousness. Direct eye contact. Speaks in low register, forces others to lean in.",
     "clothing_style": "Tier 3 utilitarian with Tier 2 edges: charcoal grey reinforced kevlar-weave jacket (Iron Lotus house style, fitted), dark smart-fabric shirt beneath, tactical cargo pants with visible thigh holster bracket. Worn leather gloves. Steel-toed boots. A single silver ring on his right ring finger (no diamonds, no flash). No visible logos or corporate affiliations. Everything is functional, nothing decorative."
   },
-  "image_prompt": "Cyberpunk 2226, Freya Soriano-Tetteh-Larsdóttir: tall athletic figure (183cm) with warm golden-brown skin reflecting Sub-Saharan, Northern European, Hispanic, and East Asian heritage blend. Salt-and-pepper fade haircut, natural dark brown eyes, weathered face with laugh lines and pale jaw scar. Worn leather gloves, calloused hands. Dressed in charcoal reinforced kevlar jacket (Iron Lotus style), dark smart-fabric shirt, tactical cargo pants with thigh holster, steel-toed boots. Silver ring on right hand. Faded lotus tattoo on inner wrist. Economical posture, weight forward, direct presence. Standing in neon-lit industrial corridor or dimly-lit safe house, cool blue-orange cyberpunk lighting casting subtle shadows across weathered features. Serious, measured demeanor. No visible cybernetic augmentations, pure operational discipline. Photorealistic, gritty atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Nneka Soriano-Sigurdsson-Larsdóttir, 183cm tall, athletic lean build, GLMZ, neon-lit Great Lakes Metropolitan Zone setting. Warm golden-brown complexion with olive undertones, weathered face with laugh lines and pale scar on left jawline. Salt-and-pepper grey hair with dark undertones, short military fade with natural wave. Dark brown eyes with amber rim. Calloused hands with small burn scars on knuckles. Wearing charcoal grey reinforced kevlar jacket (Iron Lotus style), dark smart-fabric shirt, tactical cargo pants with thigh holster bracket, worn leather gloves, steel-toed boots. Silver ring on right hand. Faded lotus tattoo on inner left wrist. Economical posture, weight forward, relaxed shoulders. Low ambient neon lighting, moody introspective mood, hands at rest. Minimal corporate aesthetic, functional not decorative. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 30.7,
-    "Northern European": 27.4,
-    "Hispanic/Latin American": 21.2,
-    "East Asian": 14.0,
-    "North African": 6.7
+    "Northern European": 47.9,
+    "Sub-Saharan African": 21.4,
+    "Hispanic/Latin American": 16.1,
+    "South Asian": 14.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 30
+      },
+      "British Isles": {
+        "English": 6.1,
+        "Irish": 6.4
+      },
+      "Germanic": {
+        "German": 5.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 5.7,
+        "Senegalese": 6.3
+      },
+      "Central African": {
+        "Congolese": 4.7,
+        "Angolan": 4.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 16.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 4.3,
+        "Baloch": 1.9
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.1
+      },
+      "Indian": {
+        "Bengali": 3.3
+      }
+    }
+  }
 }

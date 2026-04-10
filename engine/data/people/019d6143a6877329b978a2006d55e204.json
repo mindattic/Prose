@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6877329b978a2006d55e204",
   "type": "character",
-  "name": "Orion Leota-Lindström-Kovalenko",
+  "name": "Orion Yamamoto-Kwon-Khoury",
   "aliases": [
     "Old Vok",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Alban Souk, Lower Ring stalls, Grainfort, near Ashland and Chicago Ave",
-  "description": "Orvokki is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
+  "description": "Orion Yamamoto-Kwon-Khoury is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,46 +247,21 @@
   "registered_firearms": [],
   "related_entities": [
     "The Alban Souk",
-    "Tibor Osei-Svanstrom",
+    "Frost Boudiaf",
     "Grainfort",
     "The Gradient Compact",
     "Tessera Corponation",
     "Stratum",
+    "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "ARCHIVE",
-    "Adaeze Chen-Hawkins",
+    "Haze Johansson",
     "The Pure Hand",
     "Tessera TK-5 Compact 'Clerk'",
-    "Bashir Quansah-Mehrotra",
-    "Chicago",
-    "Chronicle",
-    "Dzintars Ababio-Suleimenov",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Grosse Pointe Enclosure",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Highland Park Autonomous Zone",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation",
-    "Réginald Asomaning-Čabarkapa",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Archive",
-    "The Flood Register",
-    "The Ghost Ronin",
-    "The Heritage Vault",
-    "The Ledger",
-    "Vuk Jorgensen-Toure"
+    "Zara Bergqvist"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Pacific Islander, Eastern European, Sub-Saharan African, South Asian, and Northern European ancestry. The genetic blend manifests as warm medium-tan skin with subtle undertones reflecting his multifaceted heritage—the warmth of East and South Asian genetics layered with the deeper richness of African ancestry, tempered by Northern European paleness from age and indoor work.",
+    "heritage": "East Asian (43%), Middle Eastern (37.7%), and Sub-Saharan African (19.3%) ancestry. His bone structure reflects the angular cheekbones and eye placement of East Asian heritage, while Middle Eastern ancestry contributes to his aquiline nose and defined jawline. Sub-Saharan African ancestry broadens and warms his features, adding depth and richness to his complexion. The genetic confluence creates a face of distinct character—neither dominated by any single heritage but harmoniously integrated across all three.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Compact and lean, almost ascetic—decades of sitting and careful handwork have left him without excess mass. Shoulders slightly rounded from age but still capable. Hands disproportionately large and weathered, with strong grip strength despite his years.",
@@ -294,8 +269,8 @@
     "hair_style": "Sparse patches allowed to grow naturally; no attempt at grooming or coverage. Combed back from his forehead when he remembers.",
     "hair_length": "Medium (3-4 cm)",
     "eye_color": "Left eye: pale gray-blue with subtle clouding from retinal implant lens. Right eye: sharp pale gray-blue, alert.",
-    "skin_tone": "Warm medium-tan—a blended result of his predominant East Asian genetics (51%) combined with Pacific Islander (10.9%) and Sub-Saharan African (8.7%) ancestry, creating depth beneath the surface. The underlying warmth is muted by age and decades spent indoors under artificial light. Evenly sun-tanned on exposed forearms from market work, showing the skin's natural capacity for deeper bronzing.",
-    "complexion": "Deeply lined face with prominent cheekbones and heavy creasing around forehead and eye sockets—structure reflecting East Asian bone structure softened and broadened by his other heritage. Hands show age spots and liver spots, but skin is clean and well-maintained. Light stubble most days—shaves perhaps twice weekly, without particular urgency. Mouth thin, usually set in a neutral expression until he smiles, which transforms his face entirely.",
+    "skin_tone": "Warm medium-tan with golden and reddish undertones—a direct result of his blended East Asian (43%), Middle Eastern (37.7%), and Sub-Saharan African (19.3%) ancestry. The skin has natural warmth and considerable depth, muted slightly by age and decades spent indoors under artificial light. Evenly sun-bronzed on exposed forearms from market work, showing the skin's natural capacity for deeper, warmer bronzing. The tone suggests a face that catches light warmly, with visible depth in shadows.",
+    "complexion": "Deeply lined face with prominent, slightly broader cheekbones and strong angular structure reflecting the blended influences of East Asian and Middle Eastern bone structure, warmed and widened by Sub-Saharan African ancestry. The face is broad across the cheeks with a defined jawline. Hands show age spots and liver spots, but skin is clean and well-maintained. Light stubble most days—shaves perhaps twice weekly, without particular urgency. Mouth thin, usually set in a neutral expression until he smiles, which transforms his face entirely.",
     "distinguishing_marks": [
       "Fine scar running from left temple to cheekbone—approximately 4cm, pale silver, sustained in a record-archive facility fire in 2179.",
       "Burn marks on the backs of both hands—asymmetrical pattern from chemical exposure during archival preservation work, circa 2165.",
@@ -305,17 +280,45 @@
     "posture_movement": "Moves with deliberate slowness—not infirmity, but conservation of energy and precision. Handles objects with both hands even when one would suffice. Sits more than he stands. When engaged in conversation, he leans forward slightly, left eye often narrowed (either from the implant's sensitivity or as a practiced tell to appear less threatening). Rarely makes sudden movements.",
     "clothing_style": "Tier 4 / working-class archaic. Favors layered linen jackets in cream, tan, or pale gray—always multiple pockets, always showing signs of repair or patching. Wears the same jacket model in rotation, each in a different state of disrepair; he has owned five nearly identical ones over fifteen years. Plain long-sleeved undershirt, usually mottled from dust and handling old media. Loose dark trousers, practical, pockets reinforced. Worn leather work gloves kept in jacket pockets. No jewelry except a simple metal band (possibly silver, possibly not) on his right ring finger. Shoes are sensible, scuffed, resoled multiple times. Everything suggests someone who values function over presentation—and someone who cannot afford to replace things often."
   },
-  "image_prompt": "Orion Leota-Lindström-Kovalenko, elderly archivist, 168cm lean frame, warm medium-tan complexion with East Asian and Pacific Islander features softened by age, deeply lined face with prominent cheekbones, white hair with dark streaks combed back. Left eye clouded with subtle blue-green retinal implant shimmer, right eye sharp and alert. Pale scar temple to cheekbone. Wearing cream linen jacket patched and worn, long-sleeved mottled undershirt, dark trousers, scuffed shoes. Simple metal band on right ring finger. Hands large and weathered with burn marks. Posture deliberate and careful, leaning forward slightly in conversation. Sitting in dim archival facility with warm overhead lighting casting his features in shadow and amber tones. Cyberpunk 2226 Great Lakes Metropolitan Zone. Focused, introspective expression. --ar 2:3 --v 6",
+  "image_prompt": "Orion Yamamoto-Kwon-Khoury, a 168cm lean archival worker in his sixties with deeply lined face blending East Asian, Middle Eastern, and Sub-Saharan African ancestry. Warm medium-tan complexion with golden undertones, prominent weathered cheekbones, thin mouth usually neutral. White hair with dark streaks, sparse and combed back. Pale gray-blue eyes (left eye showing subtle retinal implant cloudiness). Fine scar from left temple to cheekbone, age spots on large weathered hands with asymmetrical burn marks. Wearing layered cream linen jacket with multiple pockets and visible repairs, plain long-sleeved undershirt mottled with dust, loose dark practical trousers, scuffed resoled shoes, worn leather gloves in pockets. Simple metal band on right ring finger. Seated posture leaning forward slightly, deliberate movements, left eye narrowed. In dimly-lit archive facility with soft warm ambient lighting, blue-green LED shimmer visible in left eye as he accesses data. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 51.0,
-    "Eastern European": 13.5,
-    "Pacific Islander": 10.9,
-    "Sub-Saharan African": 8.7,
-    "South Asian": 8.4,
-    "Northern European": 7.5
+    "East Asian": 43,
+    "Middle Eastern": 37.7,
+    "Sub-Saharan African": 19.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 12.1
+      },
+      "Japanese": {
+        "Japanese": 11.9
+      },
+      "Korean": {
+        "Korean": 19
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 24.1
+      },
+      "Arab Levantine": {
+        "Jordanian": 5.2,
+        "Lebanese": 8.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 8.2,
+        "South African": 6.2
+      },
+      "East African": {
+        "Somali": 4.9
+      }
+    }
+  }
 }

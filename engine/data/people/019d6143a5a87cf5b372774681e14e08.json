@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a87cf5b372774681e14e08",
   "type": "character",
-  "name": "Soledad Kovalenko-Montalvo",
+  "name": "Rehana Mukherjee-Venkatesh",
   "aliases": [
     "Zenith",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near North Ave and Milwaukee",
-  "description": "Alper Castillo-Ababio is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 29, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAlper Castillo-Ababio operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Rehana Mukherjee-Venkatesh is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 29, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nRehana Mukherjee-Venkatesh operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.54,
@@ -264,7 +264,7 @@
     "Face": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -284,70 +284,86 @@
     "The Narrows Compact",
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Kamala Blomberg-Konadu",
-    "MERIDIAN",
-    "Meridian Munitions Street PDW MSP-7 'Alleycat'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Prophet",
-    "Quilt",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Spire Light on Still Water",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand",
-    "The Shelf",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with Eastern European and Northern European ancestry — warm brown skin with olive undertones, sharp angular features reflecting the blend of Iberian and Slavic genetics, dark eyes with faint silver striations from optical interface",
+    "heritage": "South Asian (52.2%), Sub-Saharan African (22.3%), East Asian (16.5%), and Northern European (9.0%) ancestry. Her genetic mix produces striking, unconventional beauty: deep warm brown skin with golden undertones from dominant South Asian and African heritage, harmonized with subtle East Asian and Northern European influences. South Asian cheekbone prominence and rounding blend with African facial geometry, East Asian eye shape, and Northern European jawline definition creating luminous, complex facial structure that defies singular regional classification.",
     "height_cm": 166,
     "weight_kg": 52,
-    "build": "Wiry and lean — minimal body fat, corded muscle from constant kinetic motion. Her frame is compact and efficient, built for speed rather than power, though the move-by-wire augmentation gives her leverage beyond her natural physiology.",
+    "build": "Wiry and lean — minimal body fat, corded muscle from constant kinetic motion. Compact and efficient frame built for speed rather than power, augmented with move-by-wire leverage beyond natural physiology.",
     "hair_color": "Black with faint blue-grey undertones from oxidized copper traces in the chrome beneath her scalp",
     "hair_style": "Pulled back in a tight, practical braid, often wrapped with silver wire for both function and aesthetic",
     "hair_length": "Medium — shoulder-length when loose, but typically secured",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting dominant South Asian and Sub-Saharan African ancestry with subtle East Asian and Northern European influence creating luminous, complex complexion",
     "eye_color": "Dark brown with faint silver striations in the iris — optical nerve interface reflections visible under direct light",
-    "skin_tone": "Medium-warm brown with olive undertones, deeper in complexion than typical Northern European ancestry but lighter than pure equatorial regions — a perfect blend of Latin American and Eastern European genetics",
-    "complexion": "Sharp, angular features — high cheekbones, defined jawline characteristic of Iberian and Slavic heritage, dark circles under the eyes from nocturnal living. Skin is clear but shows minor scarring at the temples and along her jawline where the move-by-wire harness integrates with her nervous system. No makeup; her exhaustion is a statement.",
+    "complexion": "Strong, harmonized features — prominent cheekbones with gentle rounding characteristic of South Asian genetics, defined jawline refined by Northern European ancestry, warm-toned deep brown skin enriched by Sub-Saharan African heritage. Dark circles under eyes from nocturnal living. Clear skin with minor scarring at temples and jawline where move-by-wire harness integrates with nervous system. No makeup; exhaustion is a statement.",
+    "visible_augmentations": "Full move-by-wire system visible as silver circuitry beneath translucent dermal panels on forearms, back of hands, and along neck. System pulses with blue-white electrochemical activity when in motion. Movements possess uncanny precision with no wasted gesture or biological tremor. Fingers move independently with servo-like control.",
+    "posture_movement": "Predatory stillness when stationary, coiled and ready. When moving, flows rather than walks — economical, precise, weightless. Head rotates on slightly inhuman axis. Unconscious habit of flexing fingers when thinking, watching chrome beneath skin respond to will.",
+    "clothing_style": "Tier 3-4 functional streetwear. Black fitted thermosuit with exposed silver seam-work and modular pockets. Charcoal Kevlar-weave jacket, worn and patched. Combat boots with reinforced ankle supports. Dark, purposeful, nothing decorative.",
     "distinguishing_marks": [
-      "Fine silver scarring along both temples where the neural interface harness threads beneath the skin, visible when her hair is pulled back",
-      "A thin, precise burn scar running from her left collarbone to mid-sternum — corporate incident, never explained",
-      "Raised rectangular implant scars on the inside of both wrists where the move-by-wire control nodes integrate with her motor cortex",
-      "Small, deliberate tattoo on her right inner forearm: a circuit-board pattern in black ink, marking her transition from corpo to freelance"
-    ],
-    "visible_augmentations": "Full move-by-wire system visible as silver circuitry beneath translucent dermal panels on forearms, the back of her hands, and along her neck. The system pulses faintly with blue-white electrochemical activity when she's in motion. Her movements have an uncanny precision — no wasted gesture, no biological tremor. Her fingers move independently with servo-like control.",
-    "posture_movement": "Predatory stillness when stationary, coiled and ready. When moving, she flows rather than walks — economical, precise, weightless. Her head rotates on a slightly inhuman axis. She has the unconscious habit of flexing her fingers when thinking, watching the chrome beneath her skin respond to her will.",
-    "clothing_style": "Tier 3-4 functional streetwear. Black fitted thermosuit with exposed silver seam-work and modular pockets for gear. Charcoal Kevlar-weave jacket, worn and patched. Combat boots with reinforced ankle supports. Everything is dark, nothing is decorative, everything has a purpose. Minimal jewelry — a silver pendant on a wire that holds a small data chip. No corp logos, nothing that dates her or anchors her to a failed identity."
+      "Fine silver scarring along both temples where neural interface harness threads beneath skin, visible when hair is pulled back",
+      "Thin, precise burn scar running from left collarbone to mid-sternum — corporate incident, never explained",
+      "Raised rectangular implant scars on inside of both wrists where move-by-wire control nodes integrate with motor cortex",
+      "Small, deliberate tattoo on right inner forearm: circuit-board pattern in black ink, marking transition from corpo to freelance"
+    ]
   },
-  "image_prompt": "Soledad Kovalenko-Montalvo, 166cm wiry lean figure, medium-warm olive-brown skin with sharp Iberian-Slavic angular features, dark eyes with silver interface striations, black hair in tight silver-wrapped braid. Full move-by-wire augmentation with visible silver circuitry pulsing blue-white beneath translucent dermal panels on forearms, neck, and hands. Fine silver neural scars at temples, burn scar from collarbone to sternum. Black thermosuit with exposed silver seams, charcoal Kevlar jacket patched and worn, combat boots. Predatory stillness, servo-precise finger movements. Nocturnal cyberpunk operative in 2226 Great Lakes Metropolitan Zone, neon-lit industrial setting, cold blue-white lighting catching the chrome beneath her skin, exhausted but lethal. Cyberpunk 2200s aesthetic, no corporate logos, pure functional streetwear. --ar 2:3 --v 6",
+  "image_prompt": "Rehana Mukherjee-Venkatesh, 166cm wiry lean frame, deep warm brown skin with golden undertones blending South Asian and Sub-Saharan African heritage, prominent cheekbones with gentle rounding, defined jawline, dark brown eyes with silver optical interface striations. Black hair in tight silver-wire wrapped braid. Tight black thermosuit with exposed silver seams, charcoal Kevlar jacket, combat boots. Full move-by-wire augmentation visible as silver circuitry pulsing blue-white beneath translucent dermal panels on forearms and neck. Fine silver scars at temples, precise burn scar from collarbone to sternum, circuit-board tattoo on inner forearm. Predatory stillness, coiled ready posture, servo-like finger control. GLMZ, neon-lit GLMZ urban environment, moody blue-white lighting reflecting off chrome augmentations, nocturnal street operative aesthetic, weightless precision in movement --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 66.5,
-    "Eastern European": 22.7,
-    "Northern European": 10.8
+    "South Asian": 52.2,
+    "Sub-Saharan African": 22.3,
+    "East Asian": 16.5,
+    "Northern European": 9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 9.3,
+        "Sinhalese": 2.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 12.4
+      },
+      "Indian": {
+        "Bengali": 27.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 3.6,
+        "Nigerian": 9.8
+      },
+      "East African": {
+        "Tanzanian": 7.3,
+        "Kenyan": 0.5
+      },
+      "Central African": {
+        "Angolan": 1.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 4.1,
+        "Sichuanese": 3
+      },
+      "Korean": {
+        "Korean": 6.1
+      },
+      "Japanese": {
+        "Japanese": 3.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 9
+      }
+    }
+  }
 }

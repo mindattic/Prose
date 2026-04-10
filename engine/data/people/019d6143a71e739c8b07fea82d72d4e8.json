@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71e739c8b07fea82d72d4e8",
   "type": "character",
-  "name": "Flux Guerrero",
+  "name": "Flux Karimov",
   "aliases": [
     "Dirge",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
-  "description": "Ximena Morita-Antwi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Ximena Morita-Antwi plans to keep it that way. He works as a demolitions expert out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented demolitions expert in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Flux Karimov is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Flux Karimov plans to keep it that way. He works as a demolitions expert out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented demolitions expert in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -259,7 +259,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,33 +272,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Geartown",
     "The Pure Hand",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Ambrosia Fekete-Waiyaki",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Doru Fofana-Câmpeanu",
-    "Kamala Mori-Sefa",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Quilt",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Fathom Line",
-    "The Heritage Vault"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic blend: 39% Hispanic/Latin American base with significant Northern European (25%), Sub-Saharan African (21%), and Middle Eastern (14%) ancestry. This creates a complex, deeply mixed phenotype — warm olive-bronze undertones with underlying richness from African and Middle Eastern genetics, Northern European bone structure subtly present in cheekbone prominence.",
+    "heritage": "Complex multi-continental blend reflecting the Ubiquitous Diaspora: Central Asian foundation (34.2%) provides moderate bone structure and mid-range skin base, layered with Southeast Asian genetics (30.3%) contributing warm golden undertones and subtle epicanthal eye characteristics. Sub-Saharan African ancestry (15.8%) deepens overall skin richness, broadens nasal structure, and adds fullness to lips. South Asian genetics (14.8%) enhance cheekbone definition and warm undertone luminosity. Eastern European trace (4.9%) contributes minimal phenotypic influence. The result is a warm, complexly-toned appearance where no single heritage dominates—instead they blend into a distinctly cosmopolitan physical presence.",
     "height_cm": 173,
     "weight_kg": 89,
     "build": "Stocky and densely muscled — barrel-chested with thick shoulders and forearms. Years of handling explosives and structural demolition work have built functional mass rather than aesthetic bulk. Solid, immovable center of gravity.",
@@ -306,8 +287,8 @@
     "hair_style": "Short, close-cropped, military-precise",
     "hair_length": "Short",
     "eye_color": "Dark brown — unaugmented, but carries the flat focus of someone who has learned to see past surfaces",
-    "skin_tone": "Rich warm bronze — olive undertones layered with deeper golden-brown from Sub-Saharan and Middle Eastern ancestry. Weathered darker at neck and forearms from sun exposure, creating natural gradient. Undertone carries warmth rather than grey.",
-    "complexion": "Weathered and lived-in with character from mixed heritage. Creases at the corners of his eyes and mouth from decades of squinting and controlled expressions. Jaw set with habitual tension. Skin shows minor scarring — nothing dramatic, just the accumulated wear of someone who works with their hands in dangerous conditions. Stubble usually present — not groomed styling, just pragmatic neglect. Facial structure shows blend of Latin American and Northern European bone geometry with subtle broad-nosed Middle Eastern influence.",
+    "skin_tone": "Deep warm bronze with complex undertones—Central Asian moderate base enriched by Southeast Asian golden warmth, deepened and enriched by Sub-Saharan African and South Asian contributions. Sun-weathered darker at neck and forearms creating natural gradient. Skin carries luminosity and richness rather than grey or cool cast. Overall appearance suggests someone whose ancestry draws from multiple warm-climate populations.",
+    "complexion": "Weathered and lived-in with character lines earned over decades. Creases at corners of eyes and mouth from squinting and controlled expressions. Jaw set with habitual tension. Skin shows minor scarring from accumulated work hazards. Stubble usually present—pragmatic neglect rather than styling choice. Facial structure shows synthesis of Central and Southeast Asian bone geometry with broader nasal structure influenced by Sub-Saharan and South Asian ancestry. Cheekbones defined without harshness. Overall face reads as approachable through familiarity rather than softness.",
     "distinguishing_marks": [
       "Thin white scar running 8cm across his left cheekbone, slightly deeper at the center — old burn or shrapnel wound, healed well but visible",
       "Cluster of three small circular scars on inside of left wrist, arranged vertically — removed augmentation ports or deliberate erasure marks",
@@ -318,15 +299,53 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight centered, ready to shift direction instantly. Hands at rest but never fully relaxed, fingers occasionally flexing as if testing resistance. When walking, moves like someone navigating a space already mapped by risk assessment. Eye contact is minimal but deliberate when engaged.",
     "clothing_style": "Tier 3-4 practical wear. Usually canvas work pants in dark grey or black, reinforced at stress points, numerous cargo pockets. Heavy-duty boots — always tied tight, always ready to move. Shirt varies: grey or charcoal compression-weave undershirt, sometimes layered with a worn Geartown fabricator's jacket in faded black synth-leather. No corporate logos. No unnecessary ornamentation. Everything is utilitarian and maintained to function. Gear: heavy webbing harness worn over jackets, ammunition pouches, tool belt. A long canvas coat for weather — pockets deep enough for detonators and circuit boards."
   },
-  "image_prompt": "Flux Guerrero, stocky heavily-muscled demolition operative, 173cm tall with rich warm bronze skin tone blending Latin American, Northern European, Sub-Saharan African, and Middle Eastern ancestry. Dark brown hair with grey at temples, close-cropped military style. Weathered face with white scar across left cheekbone, creases from decades of focus, stubble. Dark unaugmented eyes with flat intensity. Chrome smartgun interface port visible on right forearm wrist. Brushed titanium cyberears with microphone arrays. Worn black synth-leather Geartown fabricator jacket over grey compression-weave undershirt, dark canvas reinforced work pants, heavy-duty boots. Canvas coat with deep pockets. Webbing harness with ammunition pouches and tool belt. Faded burn scars on knuckles, abstract geometric tattoo on right shoulder blade. Standing in industrial warehouse, harsh neon-blue and amber overhead lighting casting sharp shadows. Hands at rest but visibly tense. Posture economical and centered. Cyberpunk 2226 GLMZ setting, gritty and utilitarian, ready for movement. --ar 2:3 --v 6",
+  "image_prompt": "Flux Karimov, seasoned demolitions expert, 173cm stocky build with dense muscle from years of explosive work. Deep warm bronze skin with complex undertones blending Central Asian, Southeast Asian, Sub-Saharan African, and South Asian heritage—golden warmth with luminous richness. Dark brown eyes with hard-earned focus. Short military-cropped dark hair greying at temples. Weathered face with creases from decades of squinting, thin white scar across left cheekbone, burn scars on knuckles. Brushed titanium cyberears visible, chrome smartgun link interface at right wrist. Wearing reinforced dark grey canvas work pants, heavy boots, grey compression-weave undershirt under faded black synth-leather fabricator's jacket. Heavy webbing harness with ammunition pouches. Economic, precise posture—weight centered and ready. Dimly-lit industrial compound setting at dusk, harsh overhead lighting cutting sharp shadows across weathered features. GLMZ, gritty utilitarian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.2,
-    "Northern European": 25.4,
-    "Sub-Saharan African": 21.3,
-    "Middle Eastern": 14.1
+    "Central Asian": 34.2,
+    "Southeast Asian": 30.3,
+    "Sub-Saharan African": 15.8,
+    "South Asian": 14.8,
+    "Eastern European": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 34.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 30.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 2.7,
+        "Rwandan": 13.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 9.9
+      },
+      "Indian": {
+        "Bengali": 3.7
+      },
+      "Nepali": {
+        "Nepali": 1.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 0.4
+      },
+      "Slavic South": {
+        "Croatian": 4.5
+      }
+    }
+  }
 }

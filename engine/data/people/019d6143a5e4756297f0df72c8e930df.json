@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e4756297f0df72c8e930df",
   "type": "character",
-  "name": "Cruz Konaté",
+  "name": "Reed Hoang",
   "aliases": [
     "Dari",
     "The Eel"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Dariusz is lean and slightly too tall for the cramped print spaces he works in, with the kind of posture that suggests he's spent years ducking under doorframes and corporate surveillance arches both. His skin is a warm medium brown, his eyes have aftermarket fractal irises — amber and black geometric spirals he bought secondhand — and he keeps his hair in short twists that he dyes different colors based on which burner identity he's running that week. He has ink-stained fingers that no amount of solvent fully clears and a laugh that arrives without warning and disappears just as fast. He is charming in the way a distraction is charming — you enjoy it until you realize your attention was supposed to be somewhere else.\n\nDariusz runs a print-and-signal operation called Salvo out of a basement in the Hamtramck Enclave that produces physical broadsheets, mesh broadcasts, and occasional data-spike packages that end up in corporate employee feeds. He considers himself a journalist in the classical sense and will argue this at length. People who have to clean up after his more ambitious operations might use other words. He is genuinely brave and genuinely reckless and has so far survived the combination through luck, speed, and an extraordinary talent for not being where he said he'd be.",
+  "description": "Reed Hoang is lean and slightly too tall for the cramped print spaces he works in, with the kind of posture that suggests he's spent years ducking under doorframes and corporate surveillance arches both. His skin is a warm medium brown, his eyes have aftermarket fractal irises — amber and black geometric spirals he bought secondhand — and he keeps his hair in short twists that he dyes different colors based on which burner identity he's running that week. He has ink-stained fingers that no amount of solvent fully clears and a laugh that arrives without warning and disappears just as fast. He is charming in the way a distraction is charming — you enjoy it until you realize your attention was supposed to be somewhere else.\n\nReed Hoang runs a print-and-signal operation called Salvo out of a basement in the Hamtramck Enclave that produces physical broadsheets, mesh broadcasts, and occasional data-spike packages that end up in corporate employee feeds. He considers himself a journalist in the classical sense and will argue this at length. People who have to clean up after his more ambitious operations might use other words. He is genuinely brave and genuinely reckless and has so far survived the combination through luck, speed, and an extraordinary talent for not being where he said he'd be.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,39 +181,15 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Zheng-dao Bioelectric",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA TK-4 'Hellhound'",
     "Slagworks Industrial",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus LS-5 'Sentinel'",
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Dragan Petersen-Bah",
-    "Dzintars Ababio-Suleimenov",
-    "Emeka Johansson-Orozco",
-    "Irontide Tidal Energy",
-    "Mexicantown Libre",
-    "Narrowcast",
-    "Specter",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-11 Specter 'Whisper'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Undertow",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "WELLSPRING",
-    "Yuki Nwosu-Petrenko"
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: predominantly Hispanic/Latin American (32%) and Sub-Saharan African (30%) ancestry, with significant Northern European (20%) and East Asian (13%) contributions, plus Pacific Islander heritage (5%). This creates a truly global genetic mix — warm medium-brown skin with subtle golden undertones from the African and Latin American components, refined angular facial structure showing Northern European influence, and East Asian eye shape contributing to the geometric quality of his gaze.",
+    "heritage": "Southeast Asian-dominant blend (53.3%) with substantial Sub-Saharan African (30.4%), Northern European (12.3%), and Middle Eastern (4%) ancestry. This creates warm medium-brown skin with golden and reddish undertones from the African and Southeast Asian components, angular facial structure with defined cheekbones from Northern European influence, and eye shape contributing geometric quality to his gaze. The combination produces a distinctly cosmopolitan appearance reflective of the Ubiquitous Diaspora.",
     "height_cm": 189,
     "weight_kg": 72,
     "build": "Lean and angular, shoulders slightly narrower than hip width — the build of someone who moves through tight spaces regularly. No excess mass, but functional muscle in the forearms and legs from years of manual press work and quick exits.",
@@ -221,8 +197,8 @@
     "hair_style": "Short twists, approximately 3-4cm length, deliberately asymmetrical and maintained with minimal grooming routine.",
     "hair_length": "Short",
     "eye_color": "Aftermarket fractal irises: amber and black geometric spiral patterns, concentric and hypnotic. Purchased secondhand; slight chromatic aberration visible at the edges when light catches at angles.",
-    "skin_tone": "Warm medium brown with golden undertone, reflecting the blend of Sub-Saharan African, Hispanic/Latin American, and Pacific Islander ancestry with subtle luminosity from Northern European genetic contribution.",
-    "complexion": "Angular face with sharp cheekbones and a narrow jaw shaped by his diverse genetic heritage. Skin shows minor scarring from chemical burns (ink and solvent exposure) on the right temple. Dark circles under the eyes are chronic — a feature of irregular sleep. Generally ungroomed; stubble typically present. Ink stains permanent on the cuticles and webbing between fingers, darkest around the index and thumb.",
+    "skin_tone": "Warm medium brown with golden and reddish undertones, reflecting the blend of Southeast Asian, Sub-Saharan African, Northern European, and Middle Eastern ancestry with subtle luminosity.",
+    "complexion": "Angular face with sharp, prominent cheekbones and narrow jaw shaped by diverse genetic heritage. Skin shows minor scarring from chemical burns (ink and solvent exposure) on the right temple. Dark circles under the eyes are chronic — a feature of irregular sleep. Generally ungroomed; stubble typically present. Ink stains permanent on the cuticles and webbing between fingers, darkest around the index and thumb.",
     "distinguishing_marks": [
       "Chemical burn scars (1-2cm cluster) on right temple, pale against warm brown skin tone, from a solvent accident during early press work.",
       "Ink stains on both hands, concentrated on fingers and palms — permanent discoloration that no cleaning fully removes, darker on the left palm where the data cache sits beneath the skin.",
@@ -232,16 +208,59 @@
     "posture_movement": "Habitually hunched slightly forward, as if ducking under something that isn't there. Moves with deliberate quiet — economical gestures, minimal wasted motion. Frequently touches his left palm unconsciously, a fidget. His gait is fast and slightly irregular, suggesting someone accustomed to moving through crowds and avoiding notice. When stationary, he rarely stays still; fingers drum on surfaces, eyes scan exits.",
     "clothing_style": "Tier 4-5 utilitarian. Favors dark, unmarked clothing that doesn't register on corpo surveillance thermal imaging: matte-black synthfiber hoodies, worn denim in charcoal, scuffed low-visibility sneakers (current model: Huang-Kwok knockoffs with deadened soles). Carries a satchel with padded internal sleeves for broadsheets and data-spike packages. Jacket pockets deliberately reinforced at the seams. No visible branding or corporate insignia. Accessories minimal: a single chipped silver ring on his right hand (origin: trade, not purchase), a mesh-linked earpiece (older model, visible tuning marks from jury-rigging). Overall aesthetic suggests someone who dresses to move and disappear, not to be seen."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Cruz Konaté, tall lean angular man with warm golden-brown skin reflecting diverse global ancestry (African, Latin American, East Asian, Northern European, Pacific Islander blend). Short asymmetrical dark brown twists with deep indigo dye at roots fading naturally. Striking aftermarket fractal irises with amber and black geometric spirals, slightly chromatic aberration visible. Sharp cheekbones, narrow jaw, chronic dark circles, sparse stubble, pale chemical burn scars on right temple. Ink-stained hands with permanent discoloration on fingers and palms. Wearing matte-black synthfiber hoodie and charcoal denim, carrying padded satchel. Hunched posture, hand unconsciously touching left palm. Chipped silver ring, visible jury-rigged mesh earpiece. Neon-lit urban environment, thermal-dampened shadow aesthetic, moody blue and amber lighting, gritty underground setting, low-visibility aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Reed Hoang, 189cm lean angular frame, warm medium-brown skin with golden undertones, sharp cheekbones and narrow jaw. Short asymmetrical dark brown twists fading to deep indigo roots. Striking aftermarket fractal irises: concentric amber and black geometric spirals with slight chromatic aberration. Pale chemical burn scars on right temple, chronic dark circles, unshaven stubble, permanent ink stains on hands and fingers. Wearing matte-black synthfiber hoodie and charcoal worn denim, Huang-Kwok knockoff sneakers. Chipped silver ring, older mesh-linked earpiece with tuning marks. Hunched posture, moving through neon-lit Great Lakes Metropolitan Zone corridor, hands in pockets, unconsciously touching left palm. GLMZ aesthetic, dark moody lighting with cyan and magenta neon reflections, thermal-dead clothing, tense ready-to-move energy, scanning exits. Gritty, noir underground feel --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 32.0,
-    "Sub-Saharan African": 30.1,
-    "Northern European": 20.4,
-    "East Asian": 12.8,
-    "Pacific Islander": 4.7
+    "Southeast Asian": 53.3,
+    "Sub-Saharan African": 30.4,
+    "Northern European": 12.3,
+    "Middle Eastern": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 38.1
+      },
+      "Cambodian": {
+        "Khmer": 15.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.9,
+        "Senegalese": 3.2
+      },
+      "Central African": {
+        "Angolan": 2.4,
+        "Gabonese": 2.9
+      },
+      "Southern African": {
+        "Zambian": 8,
+        "Mozambican": 6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 11.5
+      },
+      "British Isles": {
+        "Welsh": 0.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 1,
+        "Iraqi": 0.4
+      },
+      "Persian": {
+        "Iranian": 2.3
+      },
+      "Kurdish": {
+        "Kurdish": 0.3
+      }
+    }
+  }
 }

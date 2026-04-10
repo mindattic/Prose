@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70f7c159be2fd53e5e9d887",
   "type": "character",
-  "name": "Vesper Tuivailala-Esquivel",
+  "name": "Vesper Thorvaldsdóttir-Esquivel",
   "aliases": [
     "Vas",
     "The Tooth"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Stockyard, Pier 4 overflow lot, Grainfort, near Lake Shore and Navy Pier",
-  "description": "Vashti is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears — dusty grey tabby-patterned, which they've never bothered to remove since getting them at nineteen on a dare — that flatten expressively when they're annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they've learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they're in on. Their actual eye for value is extraordinary — they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they're almost never wrong. They're known for being the only merchant in Grainfort who won't claim something works if it doesn't.",
+  "description": "Vesper Thorvaldsdóttir-Esquivel is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears — dusty grey tabby-patterned, which they've never bothered to remove since getting them at nineteen on a dare — that flatten expressively when they're annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they've learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they're in on. Their actual eye for value is extraordinary — they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they're almost never wrong. They're known for being the only merchant in Grainfort who won't claim something works if it doesn't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -166,7 +166,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,25 +184,17 @@
     "The Stockyard",
     "Grainfort",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "West Engelheim",
     "Stratum",
-    "Slagworks Industrial",
+    "West Engelheim",
     "Tin Man",
     "Sweeper-11",
-    "The Pale Mile",
     "Steel",
-    "Auricula Felis Modification",
-    "Cezar Watanabe-Gyasi",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Nkosi Tabares-Aanenson",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "Sulfur Crown Agriculture"
+    "Slagworks Industrial",
+    "The Pale Mile"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with South Asian, Pacific Islander, and Southeast Asian ancestry; warm golden-brown complexion with subtle olive undertones from the regional blend",
+    "heritage": "Predominantly Hispanic/Latin American (56.8%) with substantial Eastern European (14.8%), Southeast Asian (10.6%), South Asian (6.7%), Sub-Saharan African (5.9%), and East Asian (5.2%) ancestry; the genetic blend creates a warm, complex phenotype with multiple heritage markers visible in facial structure and skin tone",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with wiry muscle definition from years of hauling scrap; no excess body fat; sinewy forearms and core strength despite slight frame",
@@ -210,8 +202,8 @@
     "hair_style": "Worn in loose twists, often half-pinned back with salvaged metal clips to keep it clear of work",
     "hair_length": "Medium",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm golden-brown with subtle olive undertones; sun-weathered on shoulders and neck from outdoor scrap work",
-    "complexion": "Balanced facial geometry with defined cheekbones reflecting South Asian and Hispanic heritage; warm-toned skin with minor scars and calluses from scrap work; sharp, alert expression",
+    "skin_tone": "Warm medium-brown with golden undertones and subtle olive cast; sun-weathered on shoulders and neck from outdoor scrap work; the blend reflects the dominant Latin American ancestry with Southeast and South Asian chromatic influence",
+    "complexion": "Balanced facial geometry showing blend of Hispanic and Eastern European structure; defined cheekbones with mild prominence from South Asian genetics; warm-toned skin with minor scars and calluses from scrap work; slight Southeast Asian eye shape characteristics; subtle West African bone structure contributing to facial symmetry; sharp, alert expression",
     "distinguishing_marks": [
       "Geneware cat ears mounted at the crown, grey tabby-patterned feline ears with natural musculature allowing independent movement and flattening when annoyed",
       "Pale blue bioluminescent stripes running the length of each forearm on the dorsal side, faintly glowing during moments of stress or heightened adrenaline",
@@ -221,15 +213,66 @@
     "posture_movement": "Moves with economical precision; stands with weight shifted to one side in relaxed stance, often picking up and rotating small objects absently. Cat ears track sounds and movement with subtle autonomic twitches. Overall demeanor is alert but unbothered, moving through chaos with practiced ease.",
     "clothing_style": "Tier 4 working-class pragmatism: safety-orange high-visibility strapping harness worn over layered thermal undershirts in grey or black. Multiple magnetic tool clips on webbing. Reinforced cargo pants with patched seams, tucked into steel-insert work boots sourced from Ferrogate Transit surplus. Occasional technical jacket in faded blue or neutral tones when weather demands. No visible corporate branding; all gear is salvaged or secondhand. Grooming is minimal but deliberate — nothing wasted, everything functional."
   },
-  "image_prompt": "Vesper Tuivailala-Esquivel, a 172cm lean scrap-worker with warm golden-brown skin and South Asian-Hispanic-Pacific Islander features, sharp cheekbones and dark unaugmented eyes. Black hair in loose twists pinned back with salvage clips. Animalistic geneware grey tabby cat ears mounted at crown, tracking independently. Pale blue bioluminescent stripes glowing faintly along dorsal forearms. Subdermal magnetic fingertips with metallic gleam. Wearing safety-orange high-visibility harness over grey thermal layers, reinforced patched cargo pants, steel-insert work boots. Standing in alert relaxed pose in a neon-lit scrapyard at dusk, surrounded by stacked metal debris and glowing industrial infrastructure. Cyberpunk 2226, gritty working-class aesthetic, moody blue and orange lighting, practiced ease despite chaos. --ar 2:3 --v 6",
+  "image_prompt": "Vesper Thorvaldsdóttir-Esquivel, 2226 neo-noir scrap-worker, 172cm lean angular frame with warm medium-brown skin and golden undertones. Black naturally textured hair in loose twists pinned with metal clips. Dark brown eyes, alert sharp expression. Geneware grey tabby cat ears at crown with independent movement. Pale blue bioluminescent stripes glowing faintly along dorsal forearms. Wears safety-orange high-visibility harness over grey thermal undershirt, reinforced cargo pants with patches, steel-insert work boots. Minor burn scarring on left hand heel. Subdermal magnetic fingertips with metallic shine. Mixed Hispanic/Eastern European/Southeast Asian/South Asian facial geometry with defined cheekbones and subtle East Asian eye characteristics. Sun-weathered shoulders and neck. Standing in economical relaxed posture with weight shifted, picking up small metal scrap absently. Grungy industrial scrapyard background, overhead neon lighting casting shadows, volumetric dust in air catching light. Neo-noir urban aesthetic, practiced ease despite chaos, unbothered demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 53.1,
-    "South Asian": 22.1,
-    "Pacific Islander": 12.6,
-    "Southeast Asian": 12.2
+    "Hispanic/Latin American": 56.8,
+    "Eastern European": 14.8,
+    "Southeast Asian": 10.6,
+    "South Asian": 6.7,
+    "Sub-Saharan African": 5.9,
+    "East Asian": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 36.2,
+        "Guatemalan": 20.6
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 7.5
+      },
+      "Magyar-Romanian": {
+        "Romanian": 6.1,
+        "Hungarian": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 10.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 6.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 0.8,
+        "Mozambican": 0.3
+      },
+      "Central African": {
+        "Cameroonian": 2.3,
+        "Gabonese": 2.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3
+      },
+      "Chinese": {
+        "Hakka": 1.1,
+        "Cantonese": 0.7
+      },
+      "Japanese": {
+        "Japanese": 0.4
+      }
+    }
+  }
 }

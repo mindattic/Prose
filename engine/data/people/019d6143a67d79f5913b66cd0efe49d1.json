@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67d79f5913b66cd0efe49d1",
   "type": "character",
-  "name": "Linnea Strömqvist-Bangura",
+  "name": "Lakshmi Subramaniam-Sengupta",
   "aliases": [
     "Oxy",
     "The Quiet Stitch"
@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level, near Clark and Addison",
-  "description": "Oksana is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears — small, dark-furred, fully expressive — perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification — they design pieces that are part pigment, part living tissue, partly responsive to the wearer's own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client's full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
+  "description": "Lakshmi Subramaniam-Sengupta is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears — small, dark-furred, fully expressive — perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification — they design pieces that are part pigment, part living tissue, partly responsive to the wearer's own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client's full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -196,7 +196,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,33 +250,14 @@
     "The Garret",
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "The Gradient Compact",
-    "VitaCore FlowGuard Hemodynamic Regulator",
     "Copper",
+    "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Auricula Felis Modification",
-    "Crucible Industries Boarding SMG BSM-6 'Cutlass'",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "GLMZ",
-    "Helix Biosystems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lacuna Genomics",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Liora Mori-Sefa",
-    "Narrowcast",
-    "Nurlan Morita-Antwi",
-    "Patient Zero",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Peninsula",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Slagworks Industrial"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European with significant Pacific Islander and Sub-Saharan African ancestry, creating a striking blend of Northern European and Oceanic features with African undertones",
+    "heritage": "Deeply cosmopolitan South Asian-rooted ancestry (44.9%) with substantial Middle Eastern (22.2%), Southeast Asian (17.3%), Northern European (10.5%), and Eastern European (5.1%) genetic contributions. This creates a striking global blend: South Asian structural depth and warmth as the foundation, enriched by Middle Eastern luminosity and refinement, softened by Southeast Asian delicacy, and lightened by Northern European fairness. The result is a uniquely balanced phenotype—warm yet luminous, angular yet refined, commanding yet approachable.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Compact and wiry, with defined lean musculature in the shoulders and forearms from years of precision work. No excess fat; every line suggests economical movement.",
@@ -284,8 +265,8 @@
     "hair_style": "Pulled back in a tight, functional braid or undercut fade; always secured to keep it away from work surfaces",
     "hair_length": "Short to medium, varying by styling preference",
     "eye_color": "Very dark brown, almost black, narrow-set and alert",
-    "skin_tone": "Warm medium golden-brown with subtle reddish undertones—a harmonious blend of Northern European fairness warmed by Pacific Islander and African melanin, creating a luminous quality in natural light",
-    "complexion": "Even-toned skin with warm depth, unblemished except where geneware is intentionally integrated. Prominent high cheekbones with broad facial structure reflecting Pacific Islander heritage, angular jaw with subtle strength. Minimal grooming beyond practical necessity. No visible facial hair. Expression is calm and focused; they rarely smile broadly.",
+    "skin_tone": "Warm golden-medium with balanced luminosity—the depth of South Asian complexion elevated by Middle Eastern radiance and Southeast Asian luminescence, with subtle cool undertones from Northern European heritage. In natural light, the skin appears to glow with warm amber; in artificial light, this shifts to reveal cooler golden tones, creating an almost iridescent quality.",
+    "complexion": "Smooth, even-toned skin combining South Asian warmth with Middle Eastern refinement and Southeast Asian delicate structure. High, defined cheekbones reflect Southeast Asian and Northern European heritage. Angular jaw with subtle strength shows South Asian and Middle Eastern influence. Facial structure is refined and precise—no excess softness, all structure. Minimal grooming beyond practical necessity. No visible facial hair. Expression is calm and focused; they rarely smile broadly.",
     "distinguishing_marks": [
       "Bioluminescent freckle-constellations across both shoulders and extending down the throat in soft cyan-white patterns that glow faintly in low light—mapped to resemble actual star charts",
       "Color-shifting scale-pattern geneware covering both forearms from wrist to elbow, predominantly teal and copper that shifts subtly with temperature and emotion",
@@ -295,14 +276,55 @@
     "posture_movement": "Stands with minimal excess motion, spine straight but not rigid. Moves with deliberate economy—no wasted gestures. Hands rest in their lap or on work surfaces when still. When working, enters a state of near-perfect stillness except for microscopic adjustments. Eyes track movement; cat ears swivel toward sound sources. Their presence is quiet but commanding in a studio context.",
     "clothing_style": "Tier 3 utilitarian-aesthetic. Typically wears fitted black or dark gray work shirts (often sleeveless or with rolled sleeves to display forearm geneware) made from durable synth-cotton blends. High-waisted, dark trousers with multiple thigh pockets for tools and supplies. Worn leather apron during active work. Footwear is practical—dark slip-on boots with good grip. Minimal jewelry except for a thin silver wire bracelet on the left wrist (a client memorial piece). No corporate branding. Clothing is always impeccably clean but well-used, bearing small stains and marks from their work. Studio presence is austere—the body is the art, not the garments."
   },
-  "image_prompt": "Linnea Strömqvist-Bangura, a compact 162cm artist with warm golden-brown skin blending Northern European, Pacific Islander, and African heritage. Dark eyes, sharp cheekbones, pulled-back dark hair with silver at temples. Sleeveless black work shirt revealing teal-copper color-shifting scale geneware forearms that shimmer. Mobile feline geneware ears atop head. Bioluminescent cyan-white freckle constellations glowing faintly across shoulders and throat like star maps. Thin geometric scarification marks on inner wrists. Worn leather apron, dark high-waisted trousers with tool pockets, practical dark boots. Studio setting, cool blue-cyan ambient lighting emphasizing bioluminescent patterns. Posture perfectly still and economical, hands resting with inhuman precision. Quiet commanding presence, calm focused expression. Cyberpunk 2226, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Lakshmi Subramaniam-Sengupta, 162cm tall, compact wiry frame, warm golden-medium skin with iridescent undertones blending South Asian depth with Middle Eastern luminosity and Southeast Asian delicacy. Very dark alert eyes, narrow-set. Dark brown hair with silver threads, pulled back in tight braid. Mobile geneware cat ears atop head. Bioluminescent cyan-white freckle constellations glowing softly across shoulders and throat mapping star charts. Forearms covered in color-shifting teal-copper scale-pattern geneware. Thin geometric scarification marks on inner wrists. Sleeveless black synth-cotton work shirt displaying forearm augmentations. High-waisted dark trousers with tool pockets. Dark slip-on boots. Silver wire memorial bracelet on left wrist. Calm, focused expression, minimal smiling. Standing with perfect economy of posture, hands steady and precise. Studio workshop setting with cool blue-white LED lighting that makes bioluminescent markings glow. Austere, professional atmosphere. GLMZ aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 60.2,
-    "Pacific Islander": 21.7,
-    "Sub-Saharan African": 18.1
+    "South Asian": 44.9,
+    "Middle Eastern": 22.2,
+    "Southeast Asian": 17.3,
+    "Northern European": 10.5,
+    "Eastern European": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 7.7,
+        "Sinhalese": 14.5
+      },
+      "Pakistani": {
+        "Sindhi": 15.1
+      },
+      "Indian": {
+        "Bengali": 7.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 21.1,
+        "Tajik Persian": 1.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.2
+      },
+      "Cambodian": {
+        "Khmer": 10.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 10.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 2.7,
+        "Ukrainian": 2.4
+      }
+    }
+  }
 }

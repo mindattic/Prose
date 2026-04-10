@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d97ccbbf8827d2ab1c0cd5",
   "type": "character",
-  "name": "Ishaan Kulkarni",
+  "name": "Rune Chaiyaporn",
   "aliases": [
     "Ember",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Division",
-  "description": "Chiamaka Akerlund-Mensah-Bonsu is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 40, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a cleaner out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Chiamaka Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Rune Chaiyaporn is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 40, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a cleaner out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Rune Chaiyaporn describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.34,
@@ -259,7 +259,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Lattice",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,32 +274,12 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Nearfield",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Djeneba Park-Traore",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Glenville Sound",
-    "Lazarus LX-2 'Lab Rat'",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Lattice",
-    "The Quiet Room",
-    "The Shelf",
-    "Veslemøy Achebe-Tursynov",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian, South Asian, Sub-Saharan African, Hispanic/Latin American, and Middle Eastern blend — a genetic cocktail of the Ubiquitous Diaspora reflecting global migration patterns. Facial structure shows Southeast Asian cheekbones with South Asian nose bridge definition, Sub-Saharan African lip fullness, and warm undertones suggesting Latin American and Middle Eastern ancestry contributions.",
+    "heritage": "Eastern European dominant (57.2%) with significant Southeast Asian (26.5%), Sub-Saharan African (11.6%), and minor East Asian (4.7%) ancestry. The Eastern European foundation creates strong angular bone structure, while Southeast Asian genetics soften facial angles and add warmth. Sub-Saharan African ancestry contributes lip fullness and skin depth. East Asian influence visible in eye shape and upper eyelid structure. Result: a striking polychromatic face where Slavic angularity meets Southeast Asian prominence.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Wiry and lean with defined musculature from climbing work; minimal body fat; posture suggests coiled readiness rather than relaxation",
@@ -307,8 +287,8 @@
     "hair_style": "Close-cropped fade, maintained with precision — functional, unremarkable",
     "hair_length": "Short",
     "eye_color": "Dark brown with alert, calculating expression",
-    "skin_tone": "Warm medium brown with golden undertones — deeper in complexion from Sub-Saharan and South Asian ancestry, brightened by Southeast Asian and Latin American heritage blending",
-    "complexion": "Weathered but not scarred visibly on the face; jaw clenches habitually; lines around the eyes from sustained focus work; minimal facial hair, kept clean-shaven for operational anonymity. Cheekbones prominent and defined, suggesting Southeast Asian ancestry; broad nose bridge with warm nostril flare reflecting South Asian heritage; full lips and rich skin depth from Sub-Saharan genetics",
+    "skin_tone": "Warm medium-tan brown with golden luminosity. Eastern European ancestry provides structural depth; Southeast Asian and Sub-Saharan African genetics create the glowing, warm undertone. Complexion deepens visibly with sun exposure.",
+    "complexion": "Weathered but not scarred visibly on the face; jaw clenches habitually; lines around the eyes from sustained focus work; minimal facial hair, kept clean-shaven for operational anonymity. Cheekbones sharply defined with Eastern European angularity tempered by Southeast Asian fullness at the apples; straight nose bridge with slight Eastern European prominence; full lips with rich mahogany-brown depth from Sub-Saharan genetics; almond-shaped eyes with slight epicanthic fold from East Asian ancestry, lending a focused, penetrating gaze; overall face reads as severe until animated",
     "distinguishing_marks": [
       "Thin white scar running along the left forearm from wrist to elbow — old injury, poorly healed before augmentation",
       "Small burn mark on right shoulder blade — chemical exposure during early contract work",
@@ -318,16 +298,59 @@
     "posture_movement": "Moves with contained efficiency — no wasted motion, economical gestures. At rest, frequently fidgeting or shifting weight between feet. Eyes track exits and potential obstacles habitually. When in motion, flows through space with the precise coordination of someone who climbs vertical surfaces; quick reflexes, minimal deliberation",
     "clothing_style": "Dual wardrobe: civilian cover wears nondescript Tier 4 streetwear — cheap synthweave jackets, faded dark cargo pants, worn polymer-soled boots from discount chains, nothing that marks him as memorable. On-contract wears tactical gear: reinforced climbing harnesses, adhesive-grip gloves, sealed utility vest with tool distribution for scene work, dark matte finishes, all function over aesthetics. No corporate branding, no gang markers, no persona."
   },
-  "image_prompt": "Cyberpunk 2226, Ishaan Kulkarni, lean 173cm mixed-heritage operator with warm medium-brown skin blending Southeast Asian, South Asian, Sub-Saharan African, and Latin American genetics; prominent cheekbones, defined nose bridge, full lips, dark eyes with calculating gaze. Close-cropped fade with silver at temples. Chrome neural interface nodes visible at left temple barely concealed by hair. Silvered gecko-grip augmentations visible on fingertips. Wiry muscular build, posture coiled and efficient. Wearing faded nondescript synthweave jacket and dark cargo pants, worn boots, or alternatively tactical climbing harness with sealed matte utility vest. Habitual jaw tension, eyes scanning exits. Urban Great Lakes Metropolitan Zone setting, cool neon lighting casting shadows across augmented features, utilitarian and forgettable presence despite cutting-edge implants. Alert and ready, minimal deliberation. --ar 2:3 --v 6",
+  "image_prompt": "Rune Chaiyaporn, lean mixed-heritage neo-noir climber, 173cm wiry build with defined musculature. Warm golden-brown skin blending Eastern European angular cheekbones with Southeast Asian softness and Sub-Saharan depth. Dark brown eyes with almond shape, sharp calculating gaze. Short dark hair with silver threading at temples. Chrome neural interface nodes visible at left temple. Full lips, weathered face with focus-lines around eyes. Gecko-grip fingertip augmentations faintly visible. Wearing tactical dark matte gear: reinforced climbing harness, sealed utility vest, adhesive gloves. Coiled posture, economical movement. Urban rooftop setting, neon-lit Great Lakes Metro skyline at dusk, cool blue-amber lighting casting shadows across angular features. Gritty, functional aesthetic. GLMZ. Hyper-detailed portrait. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 25.3,
-    "South Asian": 24.5,
-    "Sub-Saharan African": 23.3,
-    "Hispanic/Latin American": 22.4,
-    "Middle Eastern": 4.5
+    "Eastern European": 57.2,
+    "Southeast Asian": 26.5,
+    "Sub-Saharan African": 11.6,
+    "East Asian": 4.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 4.3,
+        "Slovak": 8.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 28.8
+      },
+      "Slavic East": {
+        "Ukrainian": 15.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 6.5
+      },
+      "Thai": {
+        "Thai": 20
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 6
+      },
+      "East African": {
+        "Kenyan": 4.6
+      },
+      "Central African": {
+        "Cameroonian": 1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 0.8
+      },
+      "Chinese": {
+        "Cantonese": 2.3
+      },
+      "Japanese": {
+        "Japanese": 1.6
+      }
+    }
+  }
 }

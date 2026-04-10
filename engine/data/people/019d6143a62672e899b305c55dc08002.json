@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62672e899b305c55dc08002",
   "type": "character",
-  "name": "Nova Quiñones",
+  "name": "Nova Hossain",
   "aliases": [
     "Old Rout",
     "the Cataloger"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "McKinley Flats labor camp, currently between the third and fourth seasonal rotations, near Kedzie and Division",
-  "description": "Haroutioun is a large man going soft at the edges — once muscular, now padded with age in a way that still suggests the old strength underneath. His skin is a warm terracotta brown and his face is deeply lined, creased by weather into something that reads as ancient without being frail. He has a white mustache of impressive volume that he maintains with obvious care and slight vanity. He walks with a cane, not from weakness but from a right hip that never healed properly after a construction accident fifteen years ago — the cane is carved from some piece of salvage wood he found somewhere, covered in small notched marks he made to count things he won't specify. His geneware is an antique: color-shifting irises that he got decades ago and that have aged badly, so they cycle through colors with a slight lag and occasional glitch, settling on a warm amber-brown most of the time.\n\nHaroutioun has done seasonal labor across the Lake Michigan basin for forty years — agricultural processing, industrial cleaning, construction, cargo handling, maintenance. He holds more worker classifications than almost anyone in the labor camps, most of them legally registered under a legitimate identity he is careful to maintain. What is unusual about him is that he remembers everything. He has a prodigious, organized memory for names, faces, routes, and events, and he uses it to maintain a living oral record of the transit community — who came through, what happened to them, where they went, who is looking for whom. People leave him messages to pass along. People ask him where their cousin went. He takes the responsibility seriously.",
+  "description": "Nova Hossain is a large man going soft at the edges — once muscular, now padded with age in a way that still suggests the old strength underneath. His skin is a warm terracotta brown and his face is deeply lined, creased by weather into something that reads as ancient without being frail. He has a white mustache of impressive volume that he maintains with obvious care and slight vanity. He walks with a cane, not from weakness but from a right hip that never healed properly after a construction accident fifteen years ago — the cane is carved from some piece of salvage wood he found somewhere, covered in small notched marks he made to count things he won't specify. His geneware is an antique: color-shifting irises that he got decades ago and that have aged badly, so they cycle through colors with a slight lag and occasional glitch, settling on a warm amber-brown most of the time.\n\nNova Hossain has done seasonal labor across the Lake Michigan basin for forty years — agricultural processing, industrial cleaning, construction, cargo handling, maintenance. He holds more worker classifications than almost anyone in the labor camps, most of them legally registered under a legitimate identity he is careful to maintain. What is unusual about him is that he remembers everything. He has a prodigious, organized memory for names, faces, routes, and events, and he uses it to maintain a living oral record of the transit community — who came through, what happened to them, where they went, who is looking for whom. People leave him messages to pass along. People ask him where their cousin went. He takes the responsibility seriously.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "McKinley Flats labor camp",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,24 +175,14 @@
   "related_entities": [
     "McKinley Flats",
     "The Burden Clause",
+    "The Accidental",
     "SafeStep Promenade Defender PD-2 'Elderwood'",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Slagworks Industrial",
-    "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "The Coffin Nails",
-    "The Listener",
-    "The Pure Hand",
-    "Vagrant",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Cargo Tacos"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Hispanic/Latin American (33.9%) providing warm olive-brown base, Southeast Asian (21.9%) contributing to facial structure and eye shape, Eastern European (21.8%) adding subtle bone structure definition, South Asian (10.6%) enriching skin undertones, Northern European (8.4%) and Sub-Saharan African (3.4%) creating dimensional complexity. A genetic tapestry reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex Pan-Asian diaspora with South Asian primacy: South Asian (60.4%) forms the genetic foundation with deep warm undertones, enriched by East Asian (24.4%) contributing refined facial structure and eye architecture, Southeast Asian (12.7%) adding prominent cheekbones and defined jaw contours, and Hispanic/Latin American (2.5%) providing subtle warmth to overall complexion. A genetic tapestry of the Ubiquitous Diaspora where South Asian depth anchors a harmoniously blended phenotype.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, softened by age but retaining underlying musculature beneath a padded torso and shoulders. The physical residue of forty years of manual labor, now settling into comfortable heaviness rather than decline.",
@@ -200,8 +190,8 @@
     "hair_style": "Kept short and neat, swept back from the forehead",
     "hair_length": "Short",
     "eye_color": "Warm amber-brown, with visible color-shift lag and occasional glitch to pale green or grey",
-    "skin_tone": "Warm olive-brown with golden undertones, darkened by decades of outdoor labor. The base carries Southeast Asian and Hispanic warmth, enriched by South Asian depth and African undertones, creating a weathered bronze patina.",
-    "complexion": "Deeply lined face — weathered leather texture across forehead and cheekbones. Bone structure shows Southeast Asian influence in subtle cheekbone prominence and jaw definition. Jaw remains defined beneath age. The white mustache is full, meticulously maintained, with slight curl at the ends. Skin shows sun damage and the creasing of someone who has spent four decades working outdoors. Age spots across the backs of his hands and forearms. Facial features blend rounded Southeast Asian characteristics with Eastern European definition.",
+    "skin_tone": "Deep warm bronze with golden undertones, darkened by decades of outdoor labor. South Asian depth as base, enriched by East Asian luminosity and Southeast Asian warmth, with Hispanic undertones creating a weathered mahogany patina.",
+    "complexion": "Deeply lined face — weathered leather texture across forehead and cheekbones. Bone structure shows East Asian refinement in subtle eye positioning and facial proportions, Southeast Asian prominence in cheekbones and jaw definition, anchored by South Asian facial fullness. Jaw remains defined beneath age. The white mustache is full, meticulously maintained, with slight curl at the ends. Skin shows sun damage and the creasing of someone who has spent four decades working outdoors. Age spots across the backs of his hands and forearms. Facial features blend South Asian warmth with Southeast Asian definition and East Asian angularity.",
     "distinguishing_marks": [
       "Thin white scar along the right side of his jaw, approximately 4 cm long, running from ear toward chin — old industrial accident",
       "Notched wooden cane gripped in right hand, carved salvage wood covered in precise tally marks of unknown purpose",
@@ -211,17 +201,44 @@
     "posture_movement": "Walks with deliberate care, using the carved cane not from weakness but from old hip injury. Stands with weight favoring the left leg. Moves slowly but with practiced economy — no wasted motion. Sits with attentive posture despite age, leaning forward slightly when listening. Maintains strong eye contact. Hands gesture thoughtfully when speaking, movements precise and unhurried.",
     "clothing_style": "Tier 4 worker standard — practical and worn but clean and well-maintained. Canvas work pants in faded grey, multiple pockets with visible repair stitching. Long-sleeved thermal shirt in muted blue, sleeves pushed up to elbows. Over this, a heavy canvas vest with labor camp insignia and multiple tool loops, most carrying small objects (notebook, pen, something wrapped in cloth). Worn leather work boots, laced tight, kept functional through regular maintenance. A cloth cap, faded tan, sits on his head. No jewelry except a thin metal band on his left ring finger — plain, unadorned, decades old."
   },
-  "image_prompt": "Weathered man, 188cm tall, strong large frame softened by age, warm olive-bronze skin with sun-darkened patina, deep facial lines and age spots. White hair swept back, full white mustache with slight curl. Southeast Asian-influenced cheekbones, Eastern European jaw definition, golden-brown undertones across complexion. Antique color-shifting irises showing lag degradation between amber-brown and pale green, visible iris cloudiness. White scar along right jaw. Wearing faded grey canvas work pants, muted blue thermal shirt with sleeves rolled up, heavy canvas labor vest with insignia, worn leather work boots. Gripping notched wooden cane with tally marks in right hand, weight favoring left leg. Posed in attentive forward-leaning posture despite age, strong eye contact, thoughtful hand gestures. Faded tan cloth cap on head. Tier 4 worker aesthetic, cyberpunk 2226 GLMZ setting, industrial labor camp environment, cool neon-tinged overhead lighting catching texture of weathered skin and canvas fabric, slight glow from ancient iris implants, moody atmospheric depth --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Nova Hossain: weathered 40-year-old man with deep warm bronze skin blending South Asian, East Asian and Southeast Asian heritage, strong defined jawline, prominent cheekbones, white swept-back hair and full white mustache. Warm amber-brown eyes with visible color-shift glitch to pale green, degraded antique geneware with cloudiness at iris edges. Deeply lined face, sun-damaged skin, age spots on hands. Grips notched wooden cane with tally marks in right hand, walks with careful deliberation favoring left leg. Wears faded grey canvas work pants, muted blue thermal shirt with pushed-up sleeves, heavy canvas labor vest with camp insignia, worn leather boots, faded tan cloth cap. Callused hands with chemical staining. Thin white scar along right jaw from ear to chin. Standing in low industrial light, workshop or labor yard setting, attentive posture, thoughtful expression. Gritty realism, worn practical clothing, decades of labor evident in bearing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.9,
-    "Southeast Asian": 21.9,
-    "Eastern European": 21.8,
-    "South Asian": 10.6,
-    "Northern European": 8.4,
-    "Sub-Saharan African": 3.4
+    "South Asian": 60.4,
+    "East Asian": 24.4,
+    "Southeast Asian": 12.7,
+    "Hispanic/Latin American": 2.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 60.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.2
+      },
+      "Japanese": {
+        "Japanese": 5
+      },
+      "Chinese": {
+        "Hakka": 5.3,
+        "Mandarin Northern": 4.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 12.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.5
+      }
+    }
+  }
 }

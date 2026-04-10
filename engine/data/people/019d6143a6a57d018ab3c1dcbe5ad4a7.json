@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a57d018ab3c1dcbe5ad4a7",
   "type": "character",
-  "name": "Ivana Bergqvist-Kuznetsov",
+  "name": "Isadora Kovalenko-Lahlou",
   "aliases": [
     "Radi",
     "The Needle"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "The Burnished Market, The Laceworks district, near Lincoln and Belmont",
-  "description": "Radmila is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nRadmila came from the Balkans diaspora through Lagos and arrived in GLMZ with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
+  "description": "Isadora Kovalenko-Lahlou is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nIsadora Kovalenko-Lahlou came from the Balkans diaspora through Lagos and arrived in GLMZ with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -174,7 +174,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,33 +232,15 @@
     "The Burnished Market",
     "Ferrogate Transit",
     "The Laceworks",
-    "GLMZ",
     "Palladian Construction",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Silver",
     "Déjà Vu",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Abeke Soriano-Dlamini",
-    "Dzemal Acholonu-Patagiri",
-    "Idris Forsberg-Quaye",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Photonic Disruptor SN-15 'Prism'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Counter",
-    "The Pure Hand",
-    "The Question",
-    "The Wire Taps",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vuk Jorgensen-Toure"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European and Indigenous American (dominant), with Northern European, Hispanic/Latin American, East Asian, and North African heritage creating a striking mixed phenotype",
+    "heritage": "Complex pan-global phenotype blending Hispanic/Latin American warmth (34.5%), North African sun-depth (30.7%), Eastern European angularity (23.1%), and Southeast Asian refinement (11.7%). The combination creates striking facial geometry: high Southeast Asian-Hispanic cheekbones, Eastern European jawline sharpness, North African nose structure, unified by warm golden-olive skin that shifts between amber and bronze depending on light",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Tall and lean with defined shoulders and wiry musculature from precision hand work; economical movement, no excess",
@@ -266,8 +248,8 @@
     "hair_style": "Worn long and loose, often pinned asymmetrically with custom hardware; fibers create subtle light-scatter effect",
     "hair_length": "Long (shoulder-blade length)",
     "eye_color": "Dark brown with microscopic overlay augmentation visible as faint prismatic shimmer at certain angles",
-    "skin_tone": "Warm medium-olive complexion with golden undertones, reflecting the blend of Eastern European, Indigenous American, and North African ancestry with subtle East Asian warmth",
-    "complexion": "High, prominent cheekbones with slight widening at temples characteristic of Indigenous American heritage; sharp jawline from Eastern European genetics; minimal grooming affectation; perpetual fine stress lines around eyes from decades of detail work; skin shows minor scarring on fingertips and palms from laser burns and needle puncture work; slight golden luminosity in certain light",
+    "skin_tone": "Warm golden-olive complexion with amber undertones, reflecting blended North African sun-depth, Hispanic/Latin American and Southeast Asian golden warmth, grounded by Eastern European richness",
+    "complexion": "High, prominent cheekbones showing Southeast Asian and Hispanic/Latin American bone structure with slight temple widening; sharp, angular jawline from Eastern European genetics; refined nose bridge with subtle flare reflecting North African heritage; skin shows fine stress lines around eyes from decades of detail work; minor scarring on fingertips and palms from laser burns and needle puncture work; subtle luminescence in warm light from melanin complexity and warm undertone saturation",
     "distinguishing_marks": [
       "Thin white scar running from right wrist to mid-forearm (old cutting laser accident, 2198)",
       "Series of small circular marks on inner wrists (textile needle practice scars, self-inflicted in youth)",
@@ -278,17 +260,42 @@
     "posture_movement": "Habitually upright and deliberate; walks with measured stride; hands rarely still — constant micro-gestures when speaking, fingers often in needle-and-thread positioning even when empty; extends claws unconsciously when emphasizing points or when concentrating on aesthetic problems",
     "clothing_style": "Exclusively wears her own designs: structured, asymmetrical pieces that integrate functional elements (induction panels, modular pockets, augmentation-access seams); color palette of deep teals, charcoal, burnt orange, silver; mixing of tailored and deconstructed elements; visible stitching as design feature; often incorporates salvaged fabric from client commissions or historical garments; layers always intentional and visible; leather and synthetic blends; zero corporate branding; Tier 3 independent maker aesthetic — expensive to those who understand the work, invisible wealth to outsiders"
   },
-  "image_prompt": "Portrait of Ivana Bergqvist-Kuznetsov, tall lean mixed-heritage woman with warm olive-golden skin blending Eastern European and Indigenous American features, high sharp cheekbones, dark eyes with faint prismatic augmentation shimmer. Long natural silver hair with embedded bioluminescent fibers glowing softly, worn loose and asymmetrically pinned. Right hand showing retracted dark amber claw geneware with visible subdermal scarring. Thin white scar on right forearm, Cyrillic geometric tattoo visible on collarbone. Wearing her own design: asymmetrical structured piece in deep teal and charcoal with intentional deconstructed layering, visible stitching as design feature, functional induction panels visible. Deliberate upright posture, hands in expressive needle-work micro-gesture. Cyberpunk 2226 aesthetic, Great Lakes Metropolitan Zone setting. Moody dramatic lighting emphasizing the faint bioluminescence in hair and prismatic eye shimmer. Clean industrial background, intimate detail focus on hands and face. --ar 2:3 --v 6",
+  "image_prompt": "Isadora Kovalenko-Lahlou, tall lean woman with shoulder-blade length silver hair embedded with bioluminescent threads, warm golden-olive complexion with amber undertones reflecting pan-global ancestry, sharp Eastern European jawline paired with Southeast Asian-Hispanic cheekbones and North African nose structure. Dark brown eyes with subtle prismatic augmentation shimmer. Silver ink Cyrillic tattoo across right collarbone. Right hand displays retracted amber claw geneware with visible subdermal scarring. Fine stress lines around eyes, laser burn scars on fingertips, wrist needle scars. Wearing asymmetrical structured garments of her own design in deep teal, charcoal, and burnt orange with visible stitching, leather-synthetic blends, modular pockets, augmentation-access seams. Upright posture, hands in active micro-gesture. GLMZ 2200s interior workshop setting with warm overhead lighting catching hair luminescence and skin warm undertones, moody focused atmosphere, Tier 3 independent maker aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 28.7,
-    "Indigenous American": 28.5,
-    "Northern European": 22.1,
-    "Hispanic/Latin American": 9.8,
-    "East Asian": 5.8,
-    "North African": 5.1
+    "Hispanic/Latin American": 34.5,
+    "North African": 30.7,
+    "Eastern European": 23.1,
+    "Southeast Asian": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 4.8,
+        "Honduran": 29.7
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 30.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 11.7,
+        "Hungarian": 11.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 10.1
+      },
+      "Thai": {
+        "Thai": 1.6
+      }
+    }
+  }
 }

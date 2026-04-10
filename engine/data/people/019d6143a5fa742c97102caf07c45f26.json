@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "The Shelf, Bronzeline, near Western and Division",
-  "description": "Dzintars is a skinny young man with pale golden-brown skin, freckles scattered across his nose and cheeks, and color-changing hair he keeps cropped short — it cycles through blues and greens on a slow gradient based on ambient light temperature, a gene-mod he got in a group deal with five friends and considers the best decision of his life. He runs his operation from a battered rolling cart covered in a cascading display of data chips, obsolete media formats, bootleg entertainment feeds, and hand-assembled 'mood packs' — curated collections of music, film, news fragments, and ambient noise he assembles himself and sells for Φ3 each. The cart has a speaker that plays a rotating sample reel and an E.L.F. shrine built into the cart's undercarriage — a small cavity lined with foil and dead pixels where he feeds the spirit he calls the Curator with fragments of uncompressed audio and old broadcast signals.\n\nDzintars is fast-talking, enthusiastic, and operates entirely on the frequency of someone who has consumed too much media and developed strong opinions about all of it. He is more intelligent than he presents, which he uses strategically — people underestimate him and say things in front of him they otherwise would not. He is genuinely, obsessively passionate about media and culture in a way that occasionally crosses into exhausting, and he has an extraordinary memory for anything he has seen or heard, which is essentially everything.",
+  "description": "Atlas Ibarra is a skinny young man with pale golden-brown skin, freckles scattered across his nose and cheeks, and color-changing hair he keeps cropped short — it cycles through blues and greens on a slow gradient based on ambient light temperature, a gene-mod he got in a group deal with five friends and considers the best decision of his life. He runs his operation from a battered rolling cart covered in a cascading display of data chips, obsolete media formats, bootleg entertainment feeds, and hand-assembled 'mood packs' — curated collections of music, film, news fragments, and ambient noise he assembles himself and sells for Φ3 each. The cart has a speaker that plays a rotating sample reel and an E.L.F. shrine built into the cart's undercarriage — a small cavity lined with foil and dead pixels where he feeds the spirit he calls the Curator with fragments of uncompressed audio and old broadcast signals.\n\nAtlas Ibarra is fast-talking, enthusiastic, and operates entirely on the frequency of someone who has consumed too much media and developed strong opinions about all of it. He is more intelligent than he presents, which he uses strategically — people underestimate him and say things in front of him they otherwise would not. He is genuinely, obsessively passionate about media and culture in a way that occasionally crosses into exhausting, and he has an extraordinary memory for anything he has seen or heard, which is essentially everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -154,7 +154,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -168,32 +168,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Bronzeline",
+    "Frequency",
     "The Shelf",
     "Arcturus Defense Solutions",
+    "Atlas",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrogio Waweru-Djordanović",
-    "Bintou Halvorsen-Osei",
-    "Emeka Johansson-Orozco",
-    "Fenwick Oduya-Marsh",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Idris Forsberg-Quaye",
-    "Lakeview Neon",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nnenna Boateng-Szymański",
-    "Patient Zero",
-    "ShieldTech CLA-3 'Cascade'",
-    "Tafadzwa Björk-Enyinnaya",
-    "Tafara Quiñones-Saarinen",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora mix: 48.6% Hispanic/Latin American, 23.8% Sub-Saharan African, 20.0% South Asian, 7.6% Northern European. The genetic blend produces warm golden-bronze undertones with a rich complexity — neither fully light nor fully dark, but a harmonious intermediate tone that shifts subtly with lighting.",
+    "heritage": "Pan-diaspora synthesis: 37.8% South Asian, 32.0% Hispanic/Latin American, 13.2% Sub-Saharan African, 8.2% Southeast Asian, 6.9% East Asian, 1.9% Eastern European. This dominant blend of South Asian and Latin American ancestry produces warm golden-bronze undertones with rich complexity — a harmonious intermediate depth that shifts subtly with lighting. The genetic combination generates characteristic broad cheekbones, full lips, and warm-toned skin that catches light beautifully.",
     "height_cm": 171,
     "weight_kg": 58,
     "build": "Wiry and angular, all sharp elbows and kneecaps — the build of someone who survives on street food and stimulants rather than gym discipline. Bony shoulders, concave chest, no visible muscle definition.",
@@ -201,8 +185,8 @@
     "hair_style": "Cropped close to the scalp, deliberately maintained at 1-2cm length for maximum color visibility; no styling product, naturally matte finish",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones and a slight greenish halo in bright light — reflective of the South Asian and African components of ancestry",
-    "skin_tone": "Golden-bronze with warm undertones, medium depth. The complexion reflects the Latin American, Sub-Saharan African, and South Asian majority of his ancestry, creating a rich warm tone that catches light beautifully despite minimal sun exposure.",
-    "complexion": "Face marked by a constellation of darker freckles across the nose, cheeks, and bridge (denser on left side), more prominent against the bronze undertone than typical pale complexions. Skin clear but worn-looking with mild under-eye darkness from sleep deprivation; a faint scar through his left eyebrow (three cm, from a childhood accident). Jaw defined but softened by slight baby fat still lingering at 23. Perpetually slightly chapped lips. Facial structure shows the broader cheekbones and full lips characteristic of his diverse ancestry mix.",
+    "skin_tone": "Golden-bronze with warm undertones, medium depth. The complexion reflects the South Asian, Latin American, and Sub-Saharan African majority of his ancestry, creating a rich warm tone with subtle saturation that catches light beautifully despite minimal sun exposure.",
+    "complexion": "Face marked by a constellation of darker freckles across the nose, cheeks, and bridge (denser on left side), characteristic of mixed South Asian and Latin American heritage. Skin clear but worn-looking with mild under-eye darkness from sleep deprivation; a faint scar through his left eyebrow (three cm, from a childhood accident). Jaw defined but softened by slight baby fat still lingering at 23. Perpetually slightly chapped lips. Facial structure shows the broader cheekbones and full lips characteristic of South Asian and Hispanic ancestry blend.",
     "distinguishing_marks": [
       "Darker freckle constellation across nose and cheeks, denser on the left side",
       "Three-centimeter diagonal scar through left eyebrow, pale and well-healed",
@@ -213,15 +197,78 @@
     "posture_movement": "Perpetually in motion — bounces on his heels while standing, fidgets with inventory while talking, gestures expansively when excited (which is frequently). Walks with quick, efficient movements, head slightly forward. Often stands with arms crossed or one hand touching his cart. When listening intently, he tilts his head slightly left (toward the implant) and his eyes unfocus slightly.",
     "clothing_style": "Tier 4 working-class-with-ambitions aesthetic. Faded synthetic jacket (knockoff corpo brand from three seasons ago) in charcoal gray, oversized to accommodate layering. Underneath: a fitted black compression shirt with faded neon-green panel details on the ribs (performance wear repurposed as streetwear). Pants are dark gray cargo pants with too many pockets, cuffed at the ankles. Shoes are worn synth-leather high-tops, left sole patched with bio-tape. A thin chain around his neck holds a corroded data-chip pendant (non-functional, purely aesthetic). Wears a fingerless synthetic glove on his right hand for cart handling and heat protection. No jewelry beyond the chain. Overall impression: broke but deliberate, curated from second-hand markets and bartered favors."
   },
-  "image_prompt": "Atlas Ibarra, 23-year-old mixed-heritage cyberpunk street hustler in the GLMZ, 2226. Wiry 171cm frame with sharp angular build, medium golden-bronze skin tone with warm undertones reflecting Latin American, Sub-Saharan African, and South Asian ancestry. Striking short chromatic-shift hair in deep teal-to-seafoam, deliberately cropped for color visibility. Deep brown eyes with amber undertones. Face marked by dark freckle constellations across nose and cheeks, faint scar through left eyebrow, perpetually sleep-deprived expression. Wearing oversized charcoal gray synthetic jacket over fitted black compression shirt with neon-green rib panels, dark cargo pants cuffed at ankles, worn synth-leather patched high-tops. Thin corroded data-chip pendant at neck, fingerless synthetic glove on right hand. Subtle metallic ridge visible behind left ear (audio implant with occasional blue LED glow). Perpetually in motion, fidgeting, expansive gestures. Standing with slight forward head tilt, bouncing on heels. Neon-lit street market setting, ambient glow casting shadows, cyberpunk 2200s aesthetic, moody and energetic simultaneously. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Ibarra, 23-year-old street hustler in GLMZ Great Lakes Metropolitan Zone. Wiry, angular build with golden-bronze skin reflecting South Asian, Latin American, and Sub-Saharan African heritage. Distinctive short teal-to-seafoam color-shifting hair cropped close to scalp. Deep brown eyes with amber undertones. Face marked by darker freckle constellation across nose and cheeks, well-healed eyebrow scar, faint under-eye shadows. Broad cheekbones, full lips characteristic of mixed ancestry. Metallic audio implant ridge visible behind left ear with occasional blue LED glow. Charcoal gray oversized synthetic jacket over black compression shirt with neon-green rib panels. Dark cargo pants cuffed at ankles, worn synth-leather high-tops with patched sole. Fingerless glove on right hand, corroded data-chip pendant on thin chain. Bouncy, fidgety posture, quick efficient movements. Near neon-lit street corner, moody atmospheric lighting, slight sweat sheen on golden-bronze skin, perpetually restless energy. Neo-noir streetwear aesthetic, working-class desperation with curated style. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 48.6,
-    "Sub-Saharan African": 23.8,
-    "South Asian": 20.0,
-    "Northern European": 7.6
+    "South Asian": 37.8,
+    "Hispanic/Latin American": 32,
+    "Sub-Saharan African": 13.2,
+    "Southeast Asian": 8.2,
+    "East Asian": 6.9,
+    "Eastern European": 1.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 15.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 18.8
+      },
+      "Sri Lankan": {
+        "Sinhalese": 3.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 25.3
+      },
+      "Central American": {
+        "Guatemalan": 2.9,
+        "Salvadoran": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 3.4,
+        "South African": 0.7
+      },
+      "West African": {
+        "Malian": 6.6,
+        "Liberian": 1.3
+      },
+      "East African": {
+        "Tanzanian": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 1.7
+      },
+      "Filipino": {
+        "Tagalog": 6.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.3
+      },
+      "Korean": {
+        "Korean": 3.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 0.5,
+        "Romanian": 0.4
+      },
+      "Slavic West": {
+        "Slovak": 0.8,
+        "Polish": 0.2
+      }
+    }
+  }
 }

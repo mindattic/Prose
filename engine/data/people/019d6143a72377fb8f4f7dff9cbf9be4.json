@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72377fb8f4f7dff9cbf9be4",
   "type": "character",
-  "name": "Vivaan Agyemang-Karunaratne",
+  "name": "Mehdi Agyemang-Arredondo",
   "aliases": [
     "Yem",
     "Brick"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Kessler Interchange, transit hub level 4, near Milwaukee and Damen",
-  "description": "Yemisi is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with copper wire implants that catch the platform lights when she turns her head. Her left eye is a standard-issue Ferrogate tactical unit — flat gray iris with a faint targeting reticle that glows amber when she's scanning — but her right eye is entirely her own, warm brown and quick to crinkle with exhaustion or irritation. She wears her transit security uniform like armor, every crease deliberate, badge always centered. Off-shift she becomes almost unrecognizable, softer somehow, though the copper threads remain.\n\nYemisi has the particular weariness of someone who has spent eleven years asking people to please move away from the yellow line. She is not cruel, not corrupt, not heroic — she is simply present, day after day, in a job that rewards no one. She has a sharp eye for trouble three seconds before it starts and a stubborn reluctance to escalate past what the situation actually needs. Her coworkers call her Brick because she doesn't move.",
+  "description": "Mehdi Agyemang-Arredondo is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with copper wire implants that catch the platform lights when she turns her head. Her left eye is a standard-issue Ferrogate tactical unit — flat gray iris with a faint targeting reticle that glows amber when she's scanning — but her right eye is entirely her own, warm brown and quick to crinkle with exhaustion or irritation. She wears her transit security uniform like armor, every crease deliberate, badge always centered. Off-shift she becomes almost unrecognizable, softer somehow, though the copper threads remain.\n\nMehdi Agyemang-Arredondo has the particular weariness of someone who has spent eleven years asking people to please move away from the yellow line. She is not cruel, not corrupt, not heroic — she is simply present, day after day, in a job that rewards no one. She has a sharp eye for trouble three seconds before it starts and a stubborn reluctance to escalate past what the situation actually needs. Her coworkers call her Brick because she doesn't move.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -193,7 +193,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,33 +253,12 @@
     "Ferrogate Transit",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Adaeze Volkov-Tuilagi",
-    "Alper Lebedev-Tutu",
-    "Calumet Rise",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Dzemal Acholonu-Patagiri",
-    "Liora Mori-Sefa",
-    "NeuralPath CivID Plus Identity & Payment BCI",
-    "Neuromorphic Pressure Cestus",
-    "Pipe Dream No. 7 (The Long Shift)",
-    "Plot 17",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Interchange",
-    "The Peninsula",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Yannick Tofauti-Szarvásy"
+    "Origin",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Vivaan's ancestry is a complex blend across continents: Indigenous American (33%) forms the foundation of her bone structure and facial geometry, while South Asian heritage (26.5%) contributes to her eye shape and cheekbone prominence. Sub-Saharan African ancestry (11.8%) deepens her skin tone and adds to her overall presence, while Eastern European (11%), Hispanic/Latin American (10.9%), and North African (6.8%) elements create subtle layering in her features — a truly global genetic synthesis that defies simple categorization.",
+    "heritage": "Mehdi's ancestry is a vibrant synthesis across three continents: Hispanic/Latin American (31.1%) and North African (29.1%) form the primary foundation, contributing to bone structure and facial geometry, while Sub-Saharan African ancestry (18.3%) deepens skin tone and adds to overall presence. Indigenous American heritage (10.2%) shapes cheekbone prominence and facial proportions, East Asian ancestry (9.0%) adds subtle eye shape characteristics, and South Asian elements (2.3%) create fine layering in features — a truly global genetic synthesis that defies simple categorization.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and muscular without being lean — a frame built for standing eight hours at a platform's edge, moving crowds without relying on speed. Solid, grounded, resistant.",
@@ -287,8 +266,8 @@
     "hair_style": "Close-cropped natural, parted slightly off-center, copper wire implants woven through scalp in deliberate patterns that catch light",
     "hair_length": "Short",
     "eye_color": "Left eye: flat gray tactical unit with amber targeting reticle; Right eye: warm brown, natural",
-    "skin_tone": "Rich warm bronze — deeper in tone from Sub-Saharan and South Asian ancestry, with subtle golden undertones from Hispanic and North African heritage, creating an even, radiant complexion that deepens slightly with sun exposure",
-    "complexion": "Weathered but maintained — minimal makeup, skin shows sun exposure and fatigue lines around the eyes and mouth, high cheekbones with slight flare characteristic of Indigenous American and South Asian ancestry, grooming is utilitarian rather than decorative",
+    "skin_tone": "Deep warm bronze with golden undertones — a rich, radiant blend reflecting North African warmth and Hispanic/Latin American heritage, significantly deepened by Sub-Saharan African ancestry, with subtle dimension from Indigenous American and East Asian genetics, creating an even complexion that darkens with sun exposure",
+    "complexion": "Weathered but maintained — minimal makeup, skin shows sun exposure and fatigue lines around the eyes and mouth, prominent high cheekbones with strong flare from Indigenous American and North African ancestry, straight nose bridge with moderate width from blended heritage, subtle eye shape influenced by East Asian ancestry, grooming is utilitarian rather than decorative",
     "distinguishing_marks": [
       "Faint scar along the left temple where the tactical eye was installed, visible only at certain angles",
       "Small tattoo on the inside of her right wrist — a stylized turnstile wheel, faded from repeated washing",
@@ -298,17 +277,72 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready — a stance of presence rather than tension. Moves deliberately, economically, never rushed. Scans crowds with a methodical side-to-side head turn. Hands rest naturally, one often on duty belt. When off-shift, the posture loosens slightly but the attentiveness never fully leaves.",
     "clothing_style": "On-shift: Ferrogate Transit Security uniform (dark gray-blue with reflective striping, institutional cut, every seam crisp, badge centered at chest, duty belt with restraints and scanner). Off-shift: worn but maintained clothing from mid-tier retailers — fitted dark jeans, plain t-shirts in muted colors, a long synthetic jacket that's been repaired at the seams. Practical shoes with decent tread. No jewelry except a small pin on her off-shift jacket: an E.L.F. circle symbol."
   },
-  "image_prompt": "Vivaan Agyemang-Karunaratne, 178cm tall, solid muscular build, warm bronze skin with golden undertones, cyberpunk 2226 Great Lakes Metropolitan Zone transit security officer. Close-cropped natural black hair with copper wire threading woven through scalp catching neon platform light. Left eye is flat gray tactical prosthetic with amber targeting reticle, right eye warm brown natural. High Indigenous American cheekbones, South Asian eye shape, deep Sub-Saharan skin tone. Faint temple scar from eye implant visible at angle. Wearing crisp dark gray-blue Ferrogate Transit Security uniform with reflective striping and centered badge, duty belt with restraints and scanner. Posture is grounded and present, weight distributed evenly, scanning posture. Platform lighting harsh and fluorescent, casting shadows under cheekbones. Methodical, attentive expression. Utilitarian grooming, weathered but maintained. Background: crowded transit platform, motion blur, neon signs, 2226 cyberpunk aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Mehdi Agyemang-Arredondo, transit security officer, 2226 neo-noir, deep warm bronze skin with golden undertones, prominent high cheekbones, straight nose bridge, blended global heritage features, close-cropped natural black hair with copper wire threading woven through scalp catching neon light, left eye cybernetic gray prosthetic with amber targeting reticle, right eye warm brown, athletic muscular build, 178cm tall, slight temple scar from eye installation, wearing crisp dark gray-blue Ferrogate Transit Security uniform with reflective striping and duty belt, standing at subway platform edge with methodical posture, station lighting casting sharp shadows, alert scan of crowd, industrial metal and fluorescent ambiance, gritty neo-noir atmosphere, professional security presence, detailed fabric texture on uniform, faint turnstile tattoo on wrist visible, utilitarian grooming --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 33.0,
-    "South Asian": 26.5,
-    "Sub-Saharan African": 11.8,
-    "Eastern European": 11.0,
-    "Hispanic/Latin American": 10.9,
-    "North African": 6.8
+    "Hispanic/Latin American": 31.1,
+    "North African": 29.1,
+    "Sub-Saharan African": 18.3,
+    "Indigenous American": 10.2,
+    "East Asian": 9,
+    "South Asian": 2.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 18.3,
+        "Puerto Rican": 1
+      },
+      "Central American": {
+        "Salvadoran": 5.9,
+        "Costa Rican": 5.9
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 23.6
+      },
+      "Maghreb": {
+        "Moroccan": 5.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 18.3
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 3.7
+      },
+      "Mesoamerican": {
+        "Nahua": 4.8
+      },
+      "Andean": {
+        "Mapuche": 1.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.6
+      },
+      "Korean": {
+        "Korean": 0.7
+      },
+      "Chinese": {
+        "Shanghainese": 1.7
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 2.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.2
+      }
+    }
+  }
 }

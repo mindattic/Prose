@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66d75268d77b567704eb518",
   "type": "character",
-  "name": "Temur Adu-Rentería-Bouzid",
+  "name": "Tendai Dlamini-Banerjee-Kulkarni",
   "aliases": [
     "Skip",
     "Skip Baluarte"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Copperhead, near Milwaukee and Damen",
-  "description": "Nnenna has cat ears — a geneware mod she got at nineteen for reasons she no longer remembers clearly and has long since stopped noticing. They are dark brown, tufted, and rotate toward sound with involuntary precision, which she has found professionally useful and socially embarrassing in equal measure. She is lean and quick-moving, with the kind of economy of motion that comes from spending years in spaces too small or too dangerous for wasted effort. Her skin is a dark reddish-brown, her jaw is square, and she has a scar through her left eyebrow from a skip who turned out to be more determined than the file suggested. Her eyes are her father's — pale grey, a genetic ghost of his Russian line — which she occasionally uses to unsettle people when she catches them off-guard.\n\nShe is pragmatic, professional, and runs hot underneath in a way she has mostly learned to manage. She does not particularly enjoy her work, but she is good at it and it pays into Tier 3, which means her kid brother stays in Montclare Quiet with real air filters and a school that has actual teachers. She distinguishes carefully between skips who are hiding because they're dangerous and skips who are hiding because they're afraid, and she applies different approaches to each. She will not tell you she has this distinction — it would complicate negotiations. She leaves ELF offerings at the Copperhead shrine not for protection but for good read — the ability to walk into a room and understand it correctly.",
+  "description": "Tendai Dlamini-Banerjee-Kulkarni has cat ears — a geneware mod she got at nineteen for reasons she no longer remembers clearly and has long since stopped noticing. They are dark brown, tufted, and rotate toward sound with involuntary precision, which she has found professionally useful and socially embarrassing in equal measure. She is lean and quick-moving, with the kind of economy of motion that comes from spending years in spaces too small or too dangerous for wasted effort. Her skin is a dark reddish-brown, her jaw is square, and she has a scar through her left eyebrow from a skip who turned out to be more determined than the file suggested. Her eyes are her father's — pale grey, a genetic ghost of his Russian line — which she occasionally uses to unsettle people when she catches them off-guard.\n\nShe is pragmatic, professional, and runs hot underneath in a way she has mostly learned to manage. She does not particularly enjoy her work, but she is good at it and it pays into Tier 3, which means her kid brother stays in Montclare Quiet with real air filters and a school that has actual teachers. She distinguishes carefully between skips who are hiding because they're dangerous and skips who are hiding because they're afraid, and she applies different approaches to each. She will not tell you she has this distinction — it would complicate negotiations. She leaves ELF offerings at the Copperhead shrine not for protection but for good read — the ability to walk into a room and understand it correctly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -192,7 +192,7 @@
     "Tactician": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,30 +255,14 @@
     "Arcturus Defense Solutions",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Witness",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pale Mile",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "The Milwaukee Core",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Bogdan Achebe-Svanstrom",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Quilt",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Heidelberg Scar",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Volkov-Saito Precision VSK-8 'Rapier'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Central Asian (50%), Hispanic/Latin American (27%), North African (23%) — a striking blend that manifests in warm-toned brown skin with subtle golden undertones, angular facial structure, and dark hair with natural warmth. The genetic mix creates an uncommon but harmonious phenotype: Central Asian bone structure meets Mediterranean-influenced coloring with North African depth.",
+    "heritage": "Sub-Saharan African (42.6%), South Asian (37.1%), Hispanic/Latin American (16.1%), Indigenous American (4.2%) — a striking blend manifesting in rich warm brown skin with subtle copper and golden undertones. Features Sub-Saharan African depth and warmth as the dominant genetic layer, combined with South Asian facial architecture evident in prominent cheekbones and defined bone structure, softened by the warmth and feature gentleness of Latin American and Indigenous American heritage.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and economical, muscle definition visible in forearms and shoulders from consistent fieldwork. No excess weight — the build of someone who moves through tight spaces habitually.",
@@ -286,24 +270,63 @@
     "hair_style": "Pulled back in a tight, functional braid or swept into a practical knot; styled for work, not aesthetics",
     "hair_length": "Medium",
     "eye_color": "Pale grey — striking against her warm brown skin tone, cool and direct",
-    "skin_tone": "Warm honey-brown with subtle golden undertones; complexion even and sun-touched from fieldwork",
-    "complexion": "Angular Central Asian-influenced bone structure with prominent cheekbones and defined jaw, softened slightly by North African warmth in skin tone. Eyes set wide and direct. Skin shows the dryness of someone who works long hours indoors and outdoors without much self-care. Professional grooming — minimal jewelry, no obvious makeup.",
+    "skin_tone": "Rich warm brown with copper and golden undertones; complexion even and sun-touched from fieldwork",
+    "complexion": "Facial structure reflecting Sub-Saharan African and South Asian ancestry with prominent, well-defined cheekbones and strong jaw. Eyes set wide and direct. Skin shows the dryness of someone who works long hours indoors and outdoors without much self-care. Professional grooming — minimal jewelry, no obvious makeup.",
     "distinguishing_marks": [
       "Scar through left eyebrow, pale and thin, roughly 3cm long, from a skip altercation",
       "Pair of functional dark brown cat ears (geneware), furred and tufted, positioned atop her skull with visible muscle definition at base; ears rotate toward sound sources involuntarily"
     ],
     "visible_augmentations": "Dark brown cat ears with visible mobility and tufting (geneware). Thin subdermal tracking ping scars on both inner forearms — subtle, pale lines barely visible unless closely examined. No optical modifications — natural pale grey eyes only.",
     "posture_movement": "Carries herself with economy and awareness — shoulders relaxed but ready. Moves without wasted motion, deliberate steps, head level. Eyes track rooms systematically. Ears twitch toward unfamiliar sounds with reflexive precision, a tell she has learned to read in others' reactions.",
-    "clothing_style": "Tier 3 professional — functional clothing that reads as competent rather than fashionable. Favors technical jackets with utility pockets, durable synthetic fabrics that shed stains and survive fieldwork. Usually wears a worn leather or synth-leather overshoulder rig for tools and restraint equipment. Boots with good ankle support. A single piece of jewelry: small silver or steel pendant she touches unconsciously when thinking. Nothing that would catch or impede movement."
+    "clothing_style": "Tier 3 professional — functional clothing that reads as competent rather than fashionable. Favors technical jackets with utility pockets, durable synthetic fabrics that shed stains and survive fieldwork. Usually wears a worn leather or synth-leather overshoulder rig for tools and restraint equipment. Boots with good ankle support. A single piece of jewelry: small silver or steel pendant she touches unconsciously when thinking.",
+    "image_prompt": "GLMZ, portrait of Tendai, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6"
   },
-  "image_prompt": "A lean 168cm woman of Central Asian, Hispanic, and North African heritage with warm honey-brown skin and golden undertones. Angular facial structure with sharp cheekbones and direct pale grey eyes that contrast strikingly with her complexion. Dark hair pulled back tightly, small pale scar through left eyebrow. Functional dark brown furred cat ears with mobile tufts atop her skull. Wearing worn technical jacket with utility pockets and dark synth-leather shoulder rig for tools. Stance economical and alert, head level, shoulders relaxed but ready. Minimal jewelry — single steel pendant visible. Standing in neon-lit GLMZ industrial setting, cyberpunk 2226 aesthetic, ears subtly twitching toward sound, professional fieldwork grooming, cool overhead lighting catching the golden warmth of her skin --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Tendai, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 50.4,
-    "Hispanic/Latin American": 26.5,
-    "North African": 23.1
+    "Sub-Saharan African": 42.6,
+    "South Asian": 37.1,
+    "Hispanic/Latin American": 16.1,
+    "Indigenous American": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 36.6
+      },
+      "West African": {
+        "Nigerian": 6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 6.4,
+        "Tamil Sri Lankan": 16.2
+      },
+      "Pakistani": {
+        "Sindhi": 2.9
+      },
+      "Indian": {
+        "Tamil": 3.9,
+        "Malayali": 7.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 1.3
+      },
+      "South American": {
+        "Colombian": 9,
+        "Brazilian": 5.8
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 4.2
+      }
+    }
+  }
 }

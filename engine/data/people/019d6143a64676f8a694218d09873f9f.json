@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64676f8a694218d09873f9f",
   "type": "character",
-  "name": "Zara Mensah-Strömqvist-Hernández",
+  "name": "Zara Solberg-Strömqvist-Chatterjee",
   "aliases": [
     "Kwa",
     "Brickhead"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave, specifically the Ironvein residential stack — bunks with three other Rust Toll members on the 7th floor, near Kedzie and Division",
-  "description": "Kwadwo is big for nineteen — wide through the shoulders, thick-necked, with the kind of frame that reads as older until you see his face, which is still young in ways he actively tries to suppress. He has his Kazakh father's broad cheekbones and his Ghanaian mother's dark complexion, and he keeps his head shaved close on the sides with a tight coil of natural hair on top that he does not admit he spends time on. His geneware is peer-group standard: retractable fingernail reinforcements installed last year — not quite claws, more like blunted hardened keratin — and a bioluminescent stripe along his left jaw, pale orange, that marks him as Rust Toll initiated. He has two cracked ribs healing from a collection that went wrong last month.\n\nHe is not by nature a violent person, which is the central crisis of his daily life. He fell into the Rust Toll the way most people fall into things at sixteen — geography, necessity, three older cousins who were already in, and no competing options that felt real. He is genuinely well-liked by the people he collects from, which his crew finds somewhere between endearing and suspicious. He has a habit of fixing things — loose door panels, broken light strips — in the shops he visits for collections, without being asked, without charging it against the protection fee. He thinks about leaving the Toll approximately every two days. He has been thinking about it for three years.",
+  "description": "Zara Solberg-Strömqvist-Chatterjee is big for nineteen — wide through the shoulders, thick-necked, with the kind of frame that reads as older until you see his face, which is still young in ways he actively tries to suppress. He has his Kazakh father's broad cheekbones and his Ghanaian mother's dark complexion, and he keeps his head shaved close on the sides with a tight coil of natural hair on top that he does not admit he spends time on. His geneware is peer-group standard: retractable fingernail reinforcements installed last year — not quite claws, more like blunted hardened keratin — and a bioluminescent stripe along his left jaw, pale orange, that marks him as Rust Toll initiated. He has two cracked ribs healing from a collection that went wrong last month.\n\nHe is not by nature a violent person, which is the central crisis of his daily life. He fell into the Rust Toll the way most people fall into things at sixteen — geography, necessity, three older cousins who were already in, and no competing options that felt real. He is genuinely well-liked by the people he collects from, which his crew finds somewhere between endearing and suspicious. He has a habit of fixing things — loose door panels, broken light strips — in the shops he visits for collections, without being asked, without charging it against the protection fee. He thinks about leaving the Toll approximately every two days. He has been thinking about it for three years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -160,7 +160,7 @@
     "Muscle": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,37 +179,15 @@
   "related_entities": [
     "Shallowgrave",
     "The Iron Lotus",
-    "Ironvein",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "The Pale Mile",
-    "Rust",
-    "Amara Osei-Dzhaparidze",
-    "Anatoliy Faye-Nkrumah",
+    "Ironvein",
     "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Ferrogate Enforcer Cruiser",
-    "Kadiatou Bergstrom-Konate",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Riverbottom",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Corponation",
-    "Tessera Personal Defense System TPDS-1 'Reflex'",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe",
-    "Toluwani Przhevalskyj-Mboyo",
-    "Vantablack Media Parasocial Carrier Mask"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Sub-Saharan African, East Asian, and Eastern European ancestry blend — dominant Latin American and African heritage with notable East Asian features and subtle Eastern European bone structure",
+    "heritage": "Northern European (40%), South Asian (36%), Sub-Saharan African (9%), Hispanic/Latin American (8%), and Pacific Islander (7%) ancestry — a striking diaspora blend where Scandinavian bone structure meets South Asian warmth and African depth, creating a phenotype that reads as genuinely cosmopolitan rather than any single lineage. The Pacific Islander component adds subtle fullness to facial geometry and melanin richness.",
     "height_cm": 188,
     "weight_kg": 89,
     "build": "Wide-shouldered and thick-necked with dense muscle mass from consistent physical training; carries weight with the ungainly solidity of someone still growing into his frame rather than the refined bulk of an older fighter",
@@ -217,8 +195,8 @@
     "hair_style": "Shaved close on the sides and back; tight coils maintained on the crown in a pattern he pretends not to care for",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-deep brown with complex undertones — Latin American and African heritage creates a rich, sun-darkened complexion further weathered by Tier 5 sun exposure and inadequate water rationing",
-    "complexion": "High, defined cheekbones with East Asian influence blended with broader Sub-Saharan African facial structure; square jaw reflecting Eastern European ancestry. Clear skin despite living conditions — a youthfulness in the face that contrasts sharply with his body and which he works to suppress through constant neutral expression. Small healing cut above left eyebrow from last week's collection. Faint acne scarring along jawline.",
+    "skin_tone": "Warm medium-deep brown with golden undertones — the result of Northern European fairness genetics meeting robust South Asian and Sub-Saharan melanin expression, further enriched by Pacific Islander and Latin American heritage creating subtle amber and olive harmonics. Sun-darkened from chronic Tier 5 exposure and inadequate water rationing, giving his skin a weathered patina despite his youth.",
+    "complexion": "High, defined cheekbones with South Asian angularity and broader Sub-Saharan African spatial structure creating distinctive facial geometry. Straight nose bridge reflecting Northern European ancestry; squared jaw with subtle power from Scandinavian heritage blended with fuller lips from his African and Latin American components. Clear skin despite living conditions — a youthfulness in the face that contrasts sharply with his body and which he works to suppress through constant neutral expression. Small healing cut above left eyebrow from last week's collection. Faint acne scarring along jawline.",
     "distinguishing_marks": [
       "Bioluminescent stripe running vertically along left jaw from ear to chin in pale orange, glows softly in low light — Rust Toll gang marking, deliberately visible",
       "Two healing cracks in left rib cage (visible as faint bruising along the left flank when shirtless), approximately two weeks into recovery",
@@ -228,15 +206,58 @@
     "posture_movement": "Stands with weight balanced, shoulders slightly forward — a posture developed from collecting. Moves with deliberate control, economical steps, hands rarely far from body. Does not gesture when speaking. When thinking, picks at his cuticles or fidgets with loose environmental objects (door panels, light strips, wiring) in an unconscious repair motion. Walks with a slight favoring of his right side due to healing ribs.",
     "clothing_style": "Tier 5 practical — unmarked gray or black synthweave crew-neck shirts without logos, grey cargo pants with reinforced pockets from a salvage supplier, worn synth-leather jacket with multiple inner pockets (functional, not status). No chrome visible. Boots are black industrial polymer, scuffed, laced tight. Wears a small brass wire ring on his left index finger (personal, not gang-affiliated). No jewelry beyond this. Clothing shows wear but is maintained — small tears are patched neatly, suggesting the kind of care he applies to fixing other people's property."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Zara Mensah-Strömqvist-Hernández: a tall 188cm young man with warm medium-deep brown skin and high defined cheekbones blending East Asian, Sub-Saharan African, Latin American and Eastern European features. Dark brown eyes, natural dark brown-black hair shaved close on sides with tight coils on crown. Distinctive pale orange bioluminescent stripe glowing softly down left jaw from ear to chin — Rust Toll gang mark. Wearing unmarked black synthweave crew-neck shirt and worn synth-leather jacket with multiple inner pockets, grey reinforced cargo pants, black scuffed industrial polymer boots. Small brass wire ring on left index finger. Retractable grey-tinted keratin visible at fingertips. Faint healing bruising along left flank, healing cut above left eyebrow. Stands with shoulders slightly forward, weight balanced, economical posture of a salvage collector. Neon-lit Tier 5 urban setting with worn infrastructure, cool blue and orange ambient lighting highlighting the bioluminescent jaw mark. Neutral expression, focused intensity. Cyberpunk dystopian Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, 188cm tall young man with warm medium-deep brown skin and golden undertones, mixed Northern European-South Asian-Sub-Saharan African-Pacific Islander heritage. High defined cheekbones, straight nose, squared jaw. Dark brown eyes. Short dark coils on crown, shaved sides. Pale orange bioluminescent stripe glowing vertically along left jaw. Retractable keratin fingernail augmentations visible as pearl-gray tints at fingertips. Wide shoulders, athletic build, dense muscle. Wearing unmarked black crew-neck synthweave shirt, grey reinforced cargo pants, worn synth-leather jacket with multiple pockets, black scuffed industrial polymer boots. Small brass wire ring on left index finger. Slight healing bruising visible along left ribs. Healing cut above left eyebrow. Stands with controlled posture, shoulders slightly forward, weight balanced. Neutral expression, hands held economically near body. Tier 5 district setting, low sodium-vapor lighting casting warm amber glow. Weathered texture to skin from chronic sun exposure. Gritty, worn, functional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 40.8,
-    "Sub-Saharan African": 32.5,
-    "East Asian": 18.8,
-    "Eastern European": 7.9
+    "Northern European": 40.1,
+    "South Asian": 35.8,
+    "Sub-Saharan African": 9.1,
+    "Hispanic/Latin American": 8.3,
+    "Pacific Islander": 6.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 23.4,
+        "English": 16.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 35.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.3
+      },
+      "West African": {
+        "Guinean": 5.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 6.4
+      },
+      "Central American": {
+        "Salvadoran": 1.4,
+        "Honduran": 0.5
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Ni-Vanuatu": 1.4
+      },
+      "Micronesian": {
+        "Kiribati": 3.7
+      },
+      "Polynesian": {
+        "Tongan": 0.8,
+        "Tokelauan": 0.8
+      }
+    }
+  }
 }

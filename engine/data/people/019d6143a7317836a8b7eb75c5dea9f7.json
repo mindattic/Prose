@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7317836a8b7eb75c5dea9f7",
   "type": "character",
-  "name": "Arc Mukherjee-Ingebrigtsen",
+  "name": "Arc Kovalenko-Ogawa",
   "aliases": [
     "Yusra Blink",
     "the Runner"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave — lives in a bunk hostel on Carrion Alley, works the market corridors between the Sump and Ironvein, near Western and Division",
-  "description": "Yusra is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
+  "description": "Arc Kovalenko-Ogawa is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -182,7 +182,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,38 +197,18 @@
   "related_entities": [
     "Ferrogate Transit",
     "Shallowgrave",
+    "The Marrow Market",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Ironvein",
     "South Deering Sump",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Carrion Defense Works",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Gold",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Bintou Halvorsen-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Dae-jung Seo",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Ringo DV-4 'Courier'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Last Meal' Emergency Ration Fabricator",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Bazaar",
-    "The Circuit",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pipe Seams Hold (Until They Don't)",
-    "The Sump",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "WELLSPRING",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial",
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (39.8%), South Asian (26.5%), East Asian (13.9%), Indigenous American (13.2%), and Hispanic/Latin American (6.6%) — a complex diaspora blend reflecting the Ubiquitous Diaspora. Her features show the warm-toned diversity of this genetic mix: Southeast Asian bone structure and skin undertones form the dominant foundation, with South Asian richness in her complexion, East Asian eye shape and cheekbone definition, and subtle warm golden undertones from Indigenous American and Latin American ancestry.",
+    "heritage": "Eastern European (38.8%), Hispanic/Latin American (37.9%), and East Asian (23.3%) — a diaspora blend. Her features reflect this tri-continental mix: Eastern European bone structure provides angular definition, Hispanic/Latin American ancestry contributes warm golden undertones and depth, while East Asian heritage shapes her eye geometry and high cheekbone prominence. The genetic convergence creates a warm medium-brown complexion with subtle amber and honey undertones.",
     "height_cm": 163,
     "weight_kg": 48,
     "build": "Wiry and lean with the taut musculature of someone who runs constantly; no body fat to spare. Her frame reads as hungry but functional — built for speed rather than strength.",
@@ -236,8 +216,8 @@
     "hair_style": "Close-cropped, almost shaved at the sides, longer on top with the dyed orange tips visible",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and quick-moving",
-    "skin_tone": "Warm medium brown with golden-amber undertones, the result of Southeast and South Asian ancestry blending with East Asian influence; sun-warmed and bearing the slight pallor of someone spending time in industrial corridor lighting",
-    "complexion": "Angular, high-cheekboned face reflecting East Asian and Southeast Asian structure, with the warm depth of South Asian complexion. Skin shows the slight texture of someone living in Shallowgrave's air quality. Quick, infectious grin lines around her mouth. Her expression defaults to watchful and slightly tensed.",
+    "skin_tone": "Warm medium brown with golden and honey undertones, reflecting the balanced blend of Eastern European, Hispanic/Latin American, and East Asian ancestry; sun-warmed despite industrial corridor pallor",
+    "complexion": "Angular face with high, pronounced cheekbones shaped by Eastern European and East Asian heritage, warmed by the depth of Hispanic/Latin American complexion. Skin bears the slight texture of Shallowgrave's industrial air quality. Quick, infectious grin lines around her mouth. Her expression defaults to watchful and slightly tensed.",
     "distinguishing_marks": [
       "Long horizontal scar across the left shin from a Ferrogate transit barrier vault gone close, pale and slightly raised",
       "A faint discoloration around the injection site on her left forearm where the adrenal spike implant sits beneath the skin"
@@ -246,16 +226,46 @@
     "posture_movement": "She moves with coiled readiness, weight always balanced on the balls of her feet. Her gait is economical and fast even when she's not running. Her head turns frequently, tracking movement in her peripheral vision. When still, she fidgets — fingers drumming, weight shifting. There's an underlying desperation in her movement, masked by practiced speed.",
     "clothing_style": "Tier 4 working-class courier aesthetic. Black synthetic runner's jacket with reflective threading (worn, patches at the elbows). Fitted dark gray compression pants with cargo pockets for slip-packs and chips. Worn synth-leather ankle boots with grip-soles rated for market floor surfaces. A faded teal hoodie underneath, visible at the collar. No jewelry except a cheap digital wrist-timer for tracking run schedules. Her clothes are functional, slightly too large in places (hand-me-down hostel-trade economy), and bear the wear of constant movement through crowded, grimy corridors."
   },
-  "image_prompt": "Arc Mukherjee-Ingebrigtsen, a lean wiry courier in cyberpunk 2226, warm medium brown skin with golden undertones reflecting Southeast Asian and South Asian ancestry, high angular cheekbones, dark alert eyes. Close-cropped black hair with neon orange tips, tawny gold geneware cat ears with visible biotech seams twitching slightly. Wearing worn black synthetic runner's jacket with reflective threading, dark gray compression cargo pants, faded teal hoodie visible at collar, worn synth-leather ankle boots. Coiled posture balanced on the balls of her feet, head turning to track movement. Faint subcutaneous bulge visible on left forearm from adrenal spike implant, pale horizontal scar across left shin. Industrial corridor setting with harsh neon lighting casting shadows, rain-slick surfaces, cyberpunk city infrastructure. Expression watchful and tense, fingers drumming. Desperate energy masked by practiced speed. Urban decay, wet metal surfaces, blue-green neon glow. --ar 2:3 --v 6",
+  "image_prompt": "Arc Kovalenko-Ogawa, 163cm tall wiry courier with warm medium-brown skin (Eastern European-Hispanic-East Asian mix), high angular cheekbones, dark alert eyes. Short black hair with neon orange dyed tips, close-cropped sides. Tawny gold geneware cat ears with visible seams twitching slightly. Black worn synthetic runner's jacket with reflective threading and elbow patches, dark gray compression pants, worn synth-leather grip-sole boots. Faded teal hoodie collar visible. Cheap digital wrist-timer. Coiled posture, weight on balls of feet, watchful expression with grin lines. Faint scar across left shin, subcutaneous adrenal spike implant bulge visible on left forearm. GLMZ Great Lakes Metropolitan Zone, industrial corridor lighting casting slight shadows, grimy market floor atmosphere, neon signage reflection, desperate hunger masked by practiced speed. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 39.8,
-    "South Asian": 26.5,
-    "East Asian": 13.9,
-    "Indigenous American": 13.2,
-    "Hispanic/Latin American": 6.6
+    "Eastern European": 38.8,
+    "Hispanic/Latin American": 37.9,
+    "East Asian": 23.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 1.4,
+        "Romanian": 9.3
+      },
+      "Slavic East": {
+        "Ukrainian": 11.3
+      },
+      "Slavic West": {
+        "Polish": 16.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 16.6
+      },
+      "Central American": {
+        "Nicaraguan": 6.9,
+        "Salvadoran": 2.5
+      },
+      "Caribbean": {
+        "Puerto Rican": 8.5,
+        "Dominican": 3.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 23.3
+      }
+    }
+  }
 }

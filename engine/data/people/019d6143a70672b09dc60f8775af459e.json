@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70672b09dc60f8775af459e",
   "type": "character",
-  "name": "Mehdi Ixchel",
+  "name": "Bakhtiyor Toktogulov",
   "aliases": [
     "Tsets",
     "the Pink"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Geartown, Copperhead district — a shop called Fitted Right operating out of a converted auto-repair bay, near Milwaukee and North Ave",
-  "description": "Tsetseg is the kind of person who takes up the exact right amount of space — not small, not large, but present. They have warm golden-brown skin and a shaved head tattooed with a circuit-diagram pattern in bioluminescent ink that glows a soft rose-pink in low light, which is where most of Geartown lives. Their own augmentations are a showcase: a left arm replaced below the elbow with a transparent-cased prosthetic through which the mechanics are fully visible, designed by themselves; retractable claws on their right hand, functional and filed to needle points; and an iris mod that gives them compound optical vision at close range for fitting work. They dress in work coveralls with the sleeves rolled and every pocket used.\n\nThey are twenty-seven going on forty in terms of the work they've seen, but still twenty-seven in the sense that they get genuinely excited about elegant solutions to mechanical problems and will explain at length why a particular joint design is either beautiful or an abomination. They learned the trade from a mentor who died of cardiac failure two years ago and left them the shop — which they are still paying off — and they carry that loss in the slight over-seriousness they bring to doing the job well. They treat every fitting like it matters because, as they will tell you if you ask, 'it goes on a person's body. It had better matter.'",
+  "description": "Bakhtiyor Toktogulov is the kind of person who takes up the exact right amount of space — not small, not large, but present. They have warm golden-brown skin and a shaved head tattooed with a circuit-diagram pattern in bioluminescent ink that glows a soft rose-pink in low light, which is where most of Geartown lives. Their own augmentations are a showcase: a left arm replaced below the elbow with a transparent-cased prosthetic through which the mechanics are fully visible, designed by themselves; retractable claws on their right hand, functional and filed to needle points; and an iris mod that gives them compound optical vision at close range for fitting work. They dress in work coveralls with the sleeves rolled and every pocket used.\n\nThey are twenty-seven going on forty in terms of the work they've seen, but still twenty-seven in the sense that they get genuinely excited about elegant solutions to mechanical problems and will explain at length why a particular joint design is either beautiful or an abomination. They learned the trade from a mentor who died of cardiac failure two years ago and left them the shop — which they are still paying off — and they carry that loss in the slight over-seriousness they bring to doing the job well. They treat every fitting like it matters because, as they will tell you if you ask, 'it goes on a person's body. It had better matter.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -205,28 +205,14 @@
   "related_entities": [
     "Copperhead",
     "Geartown",
+    "Circuit",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Tibor Osei-Svanstrom",
-    "Needle",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Arcturus PX-1 'Phantom'",
-    "Aurochs Medical Complex",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Rodney Sisk",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Heritage Vault",
-    "The Narrows",
-    "The Pure Hand"
+    "Frost Boudiaf",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African Maghrebi with Indigenous American and Sub-Saharan African ancestry — creating a striking warm complexion with Berber facial structure softened by indigenous Mesoamerican bone geometry and sub-Saharan features",
+    "heritage": "Central Asian Turkic ancestry (74.6%) forms the dominant genetic foundation, with Bakhtiyor displaying the characteristic features of Kazakh-Kyrgyz lineage. Southeast Asian contribution (8.9%) adds subtle refinement to eye geometry and slight angularity to facial structure. Northern European ancestry (8.0%) introduces cool undertones that modulate the warmth, while Hispanic/Latin American (5.1%) and Sub-Saharan African (3.4%) ancestry enrich skin undertones with golden and warm mahogany notes. The overall phenotype presents as distinctly Central Asian with harmonious global blending — a face that speaks to the Ubiquitous Diaspora's genetic complexity.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and functional, muscled through the shoulders and forearms from years of precision work; economical movement, no wasted mass",
@@ -234,8 +220,8 @@
     "hair_style": "Shaved scalp",
     "hair_length": "Shaved",
     "eye_color": "Dark brown with compound optical modification — iris mod splits into multi-faceted lens pattern under magnification, soft amber-gold when active",
-    "skin_tone": "Deep warm cognac-brown with golden undertones, the result of North African Maghrebi heritage dominant at 77%, enriched by Indigenous American and sub-Saharan warmth, creating a luminous quality that shifts subtly in different light",
-    "complexion": "Clear, well-maintained skin bearing light tool marks and minor burn scars from workshop work; face displays the broader cheekbones characteristic of Indigenous American ancestry softened by Maghrebi bone structure; clean-shaven with warm-toned skin that catches light across high cheekbones and defined jawline; expression typically focused but capable of sudden animation when discussing mechanical elegance",
+    "skin_tone": "Warm golden-tan complexion with balanced undertones: Central Asian warmth as the base, enriched by Southeast Asian luminosity, cooled slightly by Northern European influence, and deepened by Latin American and African undertones creating a sophisticated mid-gold tone. The skin has resilient, slightly weathered quality with subtle glow responsive to workshop lighting.",
+    "complexion": "Clear, well-maintained skin bearing light tool marks and minor burn scars from workshop work; prominent cheekbones characteristic of Central Asian Turkic ancestry with slightly broad nasal base typical of that heritage; clean-shaven with warm-toned skin that catches light across high cheekbones and defined jawline; subtle epicanthic eye fold from Southeast Asian contribution refines eye shape; expression typically focused but capable of sudden animation when discussing mechanical elegance",
     "distinguishing_marks": [
       "Bioluminescent circuit-diagram tattoo covering the entire scalp in rose-pink UV-reactive ink, glowing softly in low light with detailed pathways tracing from crown to nape",
       "Faint burn scarring across the dorsal surface of the right hand between thumb and forefinger, partially obscured by retractable claw mechanism",
@@ -245,14 +231,69 @@
     "posture_movement": "Stands with shoulders slightly forward, weight balanced toward the balls of their feet — a technician's stance ready for precision work at any moment. Moves economically with minimal flourish, but handles objects with deliberate care and respect. Left arm movement compensates naturally, suggesting years of prosthetic integration. Hands are their primary communicative tool — they gesture when explaining mechanical concepts, fingers moving to trace invisible designs in the air",
     "clothing_style": "Work-worn gray coveralls with multiple pockets all in active use (tools, components, meters), sleeves rolled to mid-forearm to display the transparent prosthetic and allow maximum dexterity; reinforced knees and elbows darkened by shop contact. Undergarments are plain functional black. Boots are steel-toed, scuffed, broken in — practical Tier 3 workwear. No jewelry or adornment beyond the scalp tattoo and augmentations. Clothing bears the faint chemical smell of workshop solvents and the visual texture of someone who has ceased to see their appearance as separate from their function"
   },
-  "image_prompt": "Mehdi Ixchel, a cyberpunk technician in 2226, shaved scalp glowing with rose-pink UV-reactive circuit-diagram bioluminescent tattoo tracing from crown to nape. Deep warm cognac-brown skin with golden undertones reflecting North African Maghrebi, Indigenous American, and sub-Saharan heritage blended in striking high cheekbones and defined jawline. Dark brown eyes with subtle multi-faceted compound lens modification that catches amber-gold light. Lean muscular build, 172cm tall, standing in technician's ready stance with shoulders forward. Wearing work-worn gray coveralls with sleeves rolled to mid-forearm, revealing transparent polycarbonate prosthetic left forearm with visible servo motors and hydraulic lines in matte-black housing. Right hand fitted with retractable needle-point iridescent claws. Tool marks and faint burn scars visible across skin. Steel-toed scuffed boots, functional black undergarments. Hands gesture expressively as if explaining mechanical concepts. Workshop setting with soft neon and practical workbench lighting casting warm glow across skin and highlighting tattoo glow. Cyberpunk utilitarianism, no adornment beyond augmentations. Intense focused expression. --ar 2:3 --v 6",
+  "image_prompt": "Bakhtiyor Toktogulov, 172cm tall lean technician with warm golden-tan skin blending Central Asian, Southeast Asian, and global heritage. Shaved scalp glowing with rose-pink bioluminescent circuit-diagram UV tattoo. Dark brown eyes with visible multi-faceted optical modification, slight epicanthic fold. Prominent Central Asian cheekbones, broad nasal base, clean-shaven, focused expression. Standing in technician's stance, weight on balls of feet. Transparent polycarbonate prosthetic left forearm below elbow revealing black servo motors and hydraulic mechanisms. Right hand with retractable iridescent claws partially extended. Wearing gray work coveralls with rolled sleeves, steel-toed scuffed boots, multiple tool-filled pockets. Minor burn scars visible on right hand. Workshop setting with soft amber lighting catching high cheekbones. GLMZ 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 77.3,
-    "Indigenous American": 16.1,
-    "Sub-Saharan African": 6.6
+    "Central Asian": 74.6,
+    "Southeast Asian": 8.9,
+    "Northern European": 8,
+    "Hispanic/Latin American": 5.1,
+    "Sub-Saharan African": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 42.9
+      },
+      "Turkic": {
+        "Turkmen": 4.8,
+        "Kazakh": 2.6
+      },
+      "Iranian Central": {
+        "Tajik": 24.3
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 6.6
+      },
+      "Indonesian": {
+        "Javanese": 2
+      },
+      "Filipino": {
+        "Ilocano": 0.1,
+        "Tagalog": 0.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 0.9,
+        "Welsh": 3.3
+      },
+      "Germanic": {
+        "Swiss German": 1.1,
+        "German": 2.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3.7
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 2.2
+      },
+      "Southern African": {
+        "Zimbabwean": 0.6,
+        "South African": 0.6
+      }
+    }
+  }
 }

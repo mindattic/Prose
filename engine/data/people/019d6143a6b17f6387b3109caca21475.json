@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b17f6387b3109caca21475",
   "type": "character",
-  "name": "Malika Baiseitov-Cardenas",
+  "name": "Mariposa Dalgaard-Cardenas",
   "aliases": [
     "Gutter Prophet",
     "The Lamplighter",
@@ -14,7 +14,7 @@
   "age": 61,
   "status": "active",
   "location": "Old Harbor, near Lake Shore and Navy Pier",
-  "description": "Reuben Otieno-Szymański is a weathered monument of a man, broad-shouldered and slow-moving in the way of someone who has learned that urgency costs more than it earns. His skin is deep brown and mapped with burn scars along his left jaw and neck — souvenirs from a chemical fire he refuses to fully explain. He wears a salvaged thermal coat repaired so many times the original fabric is almost entirely replaced with mismatched patches, and he keeps a portable surgical kit in a lockbox chained to his wrist like a briefcase. His augmented left eye glows faint amber at all times, the iris replaced with a diagnostic scanner he bought off a dead medic twenty years ago.\n\nHe occupies a semi-permanent encampment beneath the Old Harbor transit overpass, where he has rigged a canvas awning, a folding operating table, and a jury-rigged heating coil that runs off a tapped city line. People come to him with wounds they can't afford to have documented — stab wounds, botched augmentation infections, overdoses, pregnancies. He treats them all without asking questions and without keeping records. In exchange he accepts food, components, favors, and occasionally, information. He has developed a reputation as someone who knows things: who is sick, who is afraid, who is hiding, and what they're hiding from.\n\nReuben was once a licensed trauma surgeon working the Meridian Core public hospital system before a malpractice accusation — widely believed to be fabricated by a pharmaceutical contractor whose kickback scheme he refused to participate in — stripped him of his credentials and his apartment in the same year. He did not fight it. He packed his tools and walked downhill. He has been walking downhill ever since, and has come to believe that this was the most honest direction available to him.",
+  "description": "Mariposa Dalgaard-Cardenas is a weathered monument of a man, broad-shouldered and slow-moving in the way of someone who has learned that urgency costs more than it earns. His skin is deep brown and mapped with burn scars along his left jaw and neck — souvenirs from a chemical fire he refuses to fully explain. He wears a salvaged thermal coat repaired so many times the original fabric is almost entirely replaced with mismatched patches, and he keeps a portable surgical kit in a lockbox chained to his wrist like a briefcase. His augmented left eye glows faint amber at all times, the iris replaced with a diagnostic scanner he bought off a dead medic twenty years ago.\n\nHe occupies a semi-permanent encampment beneath the Old Harbor transit overpass, where he has rigged a canvas awning, a folding operating table, and a jury-rigged heating coil that runs off a tapped city line. People come to him with wounds they can't afford to have documented — stab wounds, botched augmentation infections, overdoses, pregnancies. He treats them all without asking questions and without keeping records. In exchange he accepts food, components, favors, and occasionally, information. He has developed a reputation as someone who knows things: who is sick, who is afraid, who is hiding, and what they're hiding from.\n\nReuben was once a licensed trauma surgeon working the Meridian Core public hospital system before a malpractice accusation — widely believed to be fabricated by a pharmaceutical contractor whose kickback scheme he refused to participate in — stripped him of his credentials and his apartment in the same year. He did not fight it. He packed his tools and walked downhill. He has been walking downhill ever since, and has come to believe that this was the most honest direction available to him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -231,7 +231,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,43 +247,14 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "The Spire",
     "Vantablack BC-1 'Briefcase'",
-    "Aminata Strand-Otieno",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Palette",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Arcturus KS-7 'Nursery'",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible TR-7 'Triage'",
-    "Daulet Reyes-Abubakar",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kadiatou Bergstrom-Konate",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "MERIDIAN",
-    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
-    "Old Harbor",
-    "Pikasso Wemba-Þórðarson",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "The Arrangement",
-    "The Gutter Prophets",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "The Spire",
+    "Harbor Fish Shack",
+    "Honest Burger"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Kyrgyz dominant) with significant Hispanic/Latin American, South Asian, and East Asian ancestry. The genetic blend manifests in warm-toned brown skin with subtle golden undertones, high cheekbones characteristic of Central Asian populations, and eye shape showing mixed East and South Asian influence. His coloring reflects the Silk Road mixing — neither purely one ancestry nor another, but a complex layering of multiple continental populations.",
+    "heritage": "Hispanic/Latin American (39.9%), East Asian (31.8%), and Southeast Asian (28.3%) ancestry. The genetic blend manifests in warm medium-brown skin with subtle golden undertones, moderate cheekbones showing distinct East Asian structure softened by Southeast Asian roundness and Hispanic/Latin American influence, and eye shape reflecting the complex mixing of all three heritage groups. His coloring represents a true Pan-Pacific diaspora blend — the warm brown base enriched by golden undertones, facial proportions balancing the higher cheekbones of East Asian genetics with the broader lower face of Southeast Asian and Hispanic/Latin American heritage.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and substantial, muscular beneath a layer of age-softened tissue. Moves with deliberate slowness — not infirmity, but economy of motion. The build of a man who has learned that haste wastes resources.",
@@ -291,8 +262,8 @@
     "hair_style": "Worn long enough to tie back, usually in a loose knot or left loose around his shoulders. Unkempt but not negligent — the style of someone who stopped caring about grooming aesthetics decades ago.",
     "hair_length": "Medium to Long",
     "eye_color": "Left eye: amber-iris diagnostic scanner with faint internal luminescence. Right eye: deep brown, bloodshot at the sclera from decades of close surgical work.",
-    "skin_tone": "Warm medium-brown with golden undertones, weathered and lined from decades beneath urban overpass infrastructure. The base tone reflects Central Asian and South Asian ancestry, deepened by environmental exposure and age.",
-    "complexion": "Deeply lined face — forehead, around the eyes, bracketing the mouth. The facial structure shows high, prominent cheekbones from Central Asian heritage, with subtle South Asian softness to the lower face. Scruffy facial hair, mostly gray, kept at a few days' growth rather than shaved or fully bearded. Dry patches on the cheeks. The complexion of someone who washes with cold water and doesn't moisturize.",
+    "skin_tone": "Warm medium-brown with golden undertones, weathered and lined from decades beneath urban overpass infrastructure. The base tone reflects the blending of Hispanic/Latin American, East Asian, and Southeast Asian ancestry, deepened by environmental exposure and age.",
+    "complexion": "Deeply lined face — forehead, around the eyes, bracketing the mouth. The facial structure shows prominent East Asian cheekbones softened by Southeast Asian roundness in the lower face and Hispanic/Latin American influence in the overall proportions, creating a balanced blend rather than singular heritage dominance. Scruffy facial hair, mostly gray, kept at a few days' growth rather than shaved or fully bearded. Dry patches on the cheeks. The complexion of someone who washes with cold water and doesn't moisturize.",
     "distinguishing_marks": [
       "Chemical burn scar covering the left side of his jaw and extending down his neck in a mottled pattern of lighter and darker brown skin, with some areas puckered and hairless",
       "Surgical scar on his left forearm — clean, precise, approximately 12cm long, indicating self-installation of the nerve-dampening mesh",
@@ -302,17 +273,34 @@
     "posture_movement": "Stands with a slight forward lean, as though perpetually listening. Moves deliberately and without wasted motion — every step measured, every gesture purposeful. Favors his right side slightly. When performing surgery or detail work, his entire body stills into absolute concentration. Rarely makes eye contact; the amber glow of his left eye often directed downward or into middle distance.",
     "clothing_style": "Salvaged thermal coat, heavily patched with mismatched fabrics — canvas, synthetic leather, thermal-insulated nylon in grays, browns, and blacks. The coat is clearly his primary garment, worn in all seasons. Beneath it: simple undyed cotton shirt and cargo trousers with multiple pockets, all stained and worn. Boots are military surplus or scavenged, resoled multiple times. A length of cord serves as a belt. A canvas sling bag for his portable surgical kit. Everything speaks of Tier 5 functionality — nothing chosen for appearance, everything chosen for durability and utility."
   },
-  "image_prompt": "Cyberpunk 2226, weathered 188cm surgeon in salvaged thermal coat with mismatched gray-brown-black patches, standing beneath concrete overpass infrastructure. Central Asian features: high cheekbones, warm medium-brown skin with golden undertones, steel-gray long hair loosely tied back. Deep lined face, days of gray stubble, chemical burn scarring across left jaw and neck in mottled lighter patches. Left eye glows amber with diagnostic scanner overlay, mechanical iris visible. Right eye deep brown, bloodshot. Subdermal silvery nerve-mesh tracery visible on hands. Military surplus boots, cargo pants, canvas sling bag containing portable surgical kit. Forward lean posture, deliberate movement, amber eye-glow directed downward. Gritty urban underworld lighting, cool industrial shadows, hint of emergency neon reflection on wet concrete. Utterly utilitarian, no wasted motion or aesthetics. --ar 2:3 --v 6",
+  "image_prompt": "Mariposa Dalgaard-Cardenas, 188cm tall lean muscular man with warm golden-brown skin, Pan-Pacific diaspora ancestry visible in balanced East Asian cheekbones softened by Southeast Asian roundness and Hispanic/Latin American heritage. Gray-streaked long dark hair tied loosely, deeply lined weathered face with gray stubble, chemical burn scarring on left jaw and neck in mottled patterns. Amber-iris diagnostic scanner left eye with faint glow, deep brown right eye bloodshot, calibrated surgical precision. Subdermal silvery nerve mesh visible on hands. Salvaged patchwork thermal coat in grays and browns over worn cotton, military-surplus boots, wrist-mounted lockbox, canvas surgical kit bag. Standing with forward lean in absolute stillness, yellow sodium lighting from urban infrastructure overpasses, GLMZ Great Lakes Metropolitan Zone, moody underlit surgical focus, gritty Tier 5 street clinic atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 53.2,
-    "Hispanic/Latin American": 20.0,
-    "South Asian": 9.8,
-    "East Asian": 8.4,
-    "Northern European": 6.3,
-    "Eastern European": 2.3
+    "Hispanic/Latin American": 39.9,
+    "East Asian": 31.8,
+    "Southeast Asian": 28.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 39.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 31.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 25.7
+      },
+      "Laotian": {
+        "Laotian": 2.6
+      }
+    }
+  }
 }

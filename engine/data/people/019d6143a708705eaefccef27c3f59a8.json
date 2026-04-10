@@ -1,7 +1,7 @@
 {
   "id": "019d6143a708705eaefccef27c3f59a8",
   "type": "character",
-  "name": "Kira Rentería-Magnúsdóttir",
+  "name": "Kira Rentería-Douangpanya",
   "aliases": [
     "Ferrite",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 56,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Addison",
-  "description": "Tui Engstrom-Fofana is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 56, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a courier out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTui Engstrom-Fofana has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Kira Rentería-Douangpanya is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 56, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a courier out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKira Rentería-Douangpanya has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.76,
@@ -264,7 +264,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,47 +278,29 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
     "Ringo DV-4 'Courier'",
+    "Canopy",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
+    "Felix Roundtree",
     "Pellucid Systems",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
-    "Djeneba Park-Traore",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Scarecrow",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Canopy",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Latin American, Northern European, and Pacific Islander blend — a striking mixture that manifests in warm golden-brown skin with subtle amber undertones, the sharp Northern European bone structure softened by Pacific Islander fullness in the face, and hints of Southeast Asian delicacy in her eye shape. The result is someone whose ancestry resists easy categorization: her features are a map of the Ubiquitous Diaspora.",
+    "heritage": "Sub-Saharan African, Hispanic/Latin American, Southeast Asian, Pacific Islander, and South Asian blend — a striking mixture that manifests in deep warm brown skin with golden and amber undertones. Her ancestry compounds in visible ways: the robust bone structure and facial width characteristic of African and Pacific Islander heritage, the defined cheekbones and jawline of Latin American ancestry, the delicate eye shape and subtle epicanthic fold from Southeast Asian genetics, and the warm radiance and fullness in her lower face from South Asian heritage. The result is someone whose features are a living map of the Ubiquitous Diaspora — each ancestry visible but inseparable from the whole.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Athletic and lean with defined musculature — the economical frame of someone who moves for a living, not for show. No excess mass, all functional.",
     "hair_color": "Salt-and-pepper black, natural with silver threading at temples",
     "hair_style": "Pulled back in a tight, practical braid that sits at the base of her skull — never loose, never in the way",
     "hair_length": "Long",
-    "eye_color": "Left eye: warm brown, organic. Right eye: luminescent silver with faint amber circuitry visible at the iris edge — cybernetic, recording-capable",
-    "skin_tone": "Warm golden-brown with amber and honey undertones — a blend that catches light differently depending on angle and time of day, warmer and more radiant than cool-toned skin",
-    "complexion": "Minimal grooming beyond function — skin weathered from nocturnal living and high-risk work, faint lines around the eyes from years of precision focus. Scars on her hands and forearms are visible but not disfiguring; she doesn't cover them. The underlying structure shows strong cheekbones and a defined jawline with subtle Pacific Islander fullness around the lower face.",
+    "eye_color": "Left eye: warm brown with amber inner rim, organic. Right eye: luminescent silver with faint amber circuitry visible at the iris edge — cybernetic, recording-capable",
+    "skin_tone": "Deep warm brown with golden, amber, and honey undertones — a rich blend that catches light differently depending on angle and time of day, radiant and complex",
+    "complexion": "Minimal grooming beyond function — skin weathered from nocturnal living and high-risk work, faint lines around the eyes from years of precision focus. Strong, prominent cheekbones with fullness around the lower face and temples characteristic of her mixed heritage. Defined jawline with subtle width through the face. Scars on her hands and forearms are visible but not disfiguring; she doesn't cover them.",
     "distinguishing_marks": [
       "Jagged scar running from right temple to jaw — pale against her skin, approximately 8cm long, angled downward",
       "Burn marks on her right forearm in a grid pattern — evidence of old electrical trauma, faint but visible",
@@ -329,15 +311,67 @@
     "posture_movement": "Economical and predatory without aggression — she moves like someone calculating angles and exits. Her weight shifts fluidly between her feet, never fully committing to stillness. The way she carries her head suggests the cybernetic eye is always working, always recording.",
     "clothing_style": "Tier 3-4 practical runner aesthetic — dark synthetic blend jacket with reinforced shoulders and hidden pockets for gear, fitted charcoal pants with cargo storage, boots with steel toe and grip soles. No visible logos or corporate insignia. Everything is worn but maintained. A faded Lattice tag — a stylized circuit pattern — is stitched into her jacket collar, small enough to miss unless you know what to look for."
   },
-  "image_prompt": "Kira Rentería-Magnúsdóttir, 172cm tall lean athletic runner, warm golden-brown skin with amber undertones, salt-and-pepper black hair in tight braid, left eye warm brown organic right eye cybernetic silver with amber circuitry glowing faintly, sharp cheekbones with Pacific Islander fullness, jagged pale scar temple to jaw, electrical burn grid pattern right forearm, luminescent synthetic blood visible in wrists and neck veins, dark synthetic jacket reinforced shoulders cargo pants steel-toed boots, faded Lattice circuit tag on collar, economical predatory posture calculating angles, nocturnal runner in GLMZ 2226 cyberpunk setting, moody neon-lit alley or rooftop, dramatic side-lighting emphasizing the scar and cybernetic eye glow, sharp focus on her face and hands, rain-slicked surfaces, atmospheric fog, --ar 2:3 --v 6",
+  "image_prompt": "Kira Rentería-Douangpanya, female runner with deep warm brown skin with golden and amber undertones, strong prominent cheekbones and defined jawline with subtle facial width, left warm brown eye and right luminescent silver cybernetic eye with amber circuitry, salt-and-pepper black hair in tight braid, 172cm athletic lean build. Jagged pale scar from right temple to jaw, burn marks on forearm in grid pattern, faint luminescent synthetic blood visible at wrists and neck. Dark synthetic jacket with reinforced shoulders, charcoal cargo pants, steel-toe grip boots. Predatory economical posture, calculating gaze, nocturnal neo-noir runner aesthetic. GLMZ, Great Lakes Metropolitan Zone, moody neon-tinged lighting, low-key professional operative mood, urban dystopian setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.7,
-    "Northern European": 32.2,
-    "Pacific Islander": 27.1,
-    "Southeast Asian": 7.0
+    "Sub-Saharan African": 30.6,
+    "Hispanic/Latin American": 28.8,
+    "Southeast Asian": 19.5,
+    "Pacific Islander": 11.7,
+    "South Asian": 9.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 3.2
+      },
+      "West African": {
+        "Guinean": 11.6
+      },
+      "East African": {
+        "Kenyan": 5.7,
+        "Somali": 10.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 21.2,
+        "Peruvian": 7.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 7.5
+      },
+      "Laotian": {
+        "Laotian": 12
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 1.9
+      },
+      "Polynesian": {
+        "Samoan": 1.7,
+        "Tokelauan": 0.8
+      },
+      "Melanesian": {
+        "Fijian": 2.8,
+        "Papua New Guinean": 4.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 3.7,
+        "Bengali": 3.6
+      },
+      "Pakistani": {
+        "Pashtun": 1.8,
+        "Baloch": 0.3
+      }
+    }
+  }
 }

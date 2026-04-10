@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66f7d74b4a85d03dbfbd07b",
   "type": "character",
-  "name": "Adaeze Ingebrigtsen-Okafor",
+  "name": "Rio Ingebrigtsen-Watanabe",
   "aliases": [
     "The Analyst",
     "Dr. Farouk",
@@ -14,7 +14,7 @@
   "age": 44,
   "status": "active",
   "location": "The Circuit — maintains a small apartment above a data-repair shop that doubles as her analytical workspace, near North Ave and Damen",
-  "description": "Noor Farouk was supposed to be an academic. She had the doctorate — computational sociology, focused on network dynamics in post-governance urban systems — and the tenure-track position at a Circuit university that barely exists anymore. When the university's funding collapsed under corporate pressure (the research was getting inconvenient for certain interests), Noor found herself with a brilliant analytical mind, a mortgage, and no institutional home. Glass Maren found her six months later, teaching statistics to bored corporate trainees for subsistence pay.\n\nShe is the engine that turns Glass's raw intelligence into actionable product. Where Glass collects — conversations, documents, observations — Noor connects. She maps relationships between corporations, between individuals, between events separated by years and jurisdictions. She sees patterns the way musicians hear harmonies — not the individual notes, but the structure that makes them mean something.\n\nNoor is compact, sharp-featured, with dark hair streaked silver at the temples — premature, stress-related, and she's stopped caring. She wears reading glasses she doesn't technically need anymore (the optical augmentation handles it) because the glasses were her mother's and putting them on means it's time to work. Her workspace is a controlled chaos of screens, physical notes, and string-and-pin boards that she insists work better than any digital mapping tool.",
+  "description": "Rio Ingebrigtsen-Watanabe was supposed to be an academic. She had the doctorate — computational sociology, focused on network dynamics in post-governance urban systems — and the tenure-track position at a Circuit university that barely exists anymore. When the university's funding collapsed under corporate pressure (the research was getting inconvenient for certain interests), Noor found herself with a brilliant analytical mind, a mortgage, and no institutional home. Glass Maren found her six months later, teaching statistics to bored corporate trainees for subsistence pay.\n\nShe is the engine that turns Glass's raw intelligence into actionable product. Where Glass collects — conversations, documents, observations — Noor connects. She maps relationships between corporations, between individuals, between events separated by years and jurisdictions. She sees patterns the way musicians hear harmonies — not the individual notes, but the structure that makes them mean something.\n\nNoor is compact, sharp-featured, with dark hair streaked silver at the temples — premature, stress-related, and she's stopped caring. She wears reading glasses she doesn't technically need anymore (the optical augmentation handles it) because the glasses were her mother's and putting them on means it's time to work. Her workspace is a controlled chaos of screens, physical notes, and string-and-pin boards that she insists work better than any digital mapping tool.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -177,7 +177,7 @@
     "Performer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -193,49 +193,18 @@
   "related_entities": [
     "The Circuit",
     "Tessera Corponation Palimpsest Identity Engine",
+    "Pressure Drop",
     "The Gradient Compact",
+    "Circuit",
     "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Glass",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
     "Arcturus KS-7 'Nursery'",
-    "Biometric Denial Charge BDC-1",
-    "Birgitta Asante-Papadopoulos",
-    "Breadcrumb",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "GLMZ",
-    "Glass Maren",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Kamala Blomberg-Konadu",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "New Stockton",
-    "Othniel Babić-Asantewaa",
-    "Oumarou Svec-Ranginui",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Stonepath Logistics",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TERMINUS",
-    "The Lakeshore Corridor",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Tobechukwu Papadimitriou-Vásárhelyi",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "WELLSPRING",
-    "Yannick Tambadou-Reinholt",
-    "Yuki Nwosu-Petrenko"
+    "Glass",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (40%) with significant Southeast Asian (21.2%) and East Asian (20%) ancestry, complemented by Middle Eastern (10.8%) and Northern European (8%) heritage. This creates a striking pan-diaspora phenotype—warm deep brown skin with subtle warm undertones from the African and Southeast Asian blend, balanced by the finer bone structure influenced by East Asian genetics.",
+    "heritage": "Striking pan-diaspora phenotype representing a balanced genetic constellation: Northern European (28.5%), East Asian (27.2%), and South Asian (26.4%) form the primary ancestry, with meaningful contributions from Sub-Saharan African (9.3%), Southeast Asian (5.4%), and Hispanic/Latin American (3.2%). This creates a complexion of unexpected luminescence—medium-warm brown skin with harmonious golden and olive undertones that shift subtly across light spectra, the result of seamless blending across multiple continental lineages.",
     "height_cm": 162,
     "weight_kg": 54,
     "build": "Compact and lean with defined shoulders — the build of someone who paces obsessively rather than exercises. Wiry musculature, minimal body fat, economical movement.",
@@ -243,8 +212,8 @@
     "hair_style": "Pulled back in a functional bun or loose topknot, always slightly disheveled from running fingers through it during analysis",
     "hair_length": "Long (shoulder-length when down, typically secured)",
     "eye_color": "Deep brown with faint LED shimmer at the iris edge when optical augmentation activates",
-    "skin_tone": "Warm deep brown with rich undertones — the result of African-dominant ancestry enhanced by Southeast Asian warmth, creating skin that has depth and slight golden luminescence under certain lighting",
-    "complexion": "Angular, high-cheekboned face with defined jawline reflecting East Asian bone structure softened by fuller features from Sub-Saharan heritage. Thin lips often pressed together in concentration. Fine lines around eyes and forehead from chronic squinting at screens. Skin is well-maintained but shows the pallor of someone who spends 14-hour days indoors under artificial light. No visible makeup.",
+    "skin_tone": "Medium-warm brown with balanced golden-olive undertones—the harmonious result of East Asian, South Asian, Northern European, and Sub-Saharan African ancestry blending seamlessly into skin that luminescessubtly under artificial lighting, neither cool nor warm but dynamically balanced",
+    "complexion": "Angular, high-cheekboned face with balanced bone structure from East Asian and South Asian genetic influence, softened by slightly fuller cheeks and lips from Sub-Saharan and Southeast Asian heritage. Thin lips often pressed together in concentration. Fine lines around eyes and forehead from chronic squinting at screens. Skin is well-maintained but shows the pallor of someone who spends 14-hour days indoors under artificial light. No visible makeup.",
     "distinguishing_marks": [
       "Fine scar along the left temple, barely visible, from a corporate security encounter seven years ago",
       "Faint chemical burn marks on the inside of her right wrist — accidental, from early augmentation installation, now mostly faded"
@@ -253,16 +222,69 @@
     "posture_movement": "Habitually tense shoulders, corrected by conscious effort. Walks with purposeful strides, often pacing in tight circles when thinking. Hands are active — gesturing while speaking, fingers drumming on surfaces, constant small movements. Sits with legs folded or feet planted, never truly relaxed. Direct, unwavering eye contact during conversation.",
     "clothing_style": "Tier 3 practical — dark, neutral-colored clothing optimized for movement and durability. Favors black or charcoal slim-fit cargo pants with multiple pockets, fitted long-sleeved shirts in dark gray or navy, worn unbuttoned over tank tops. Minimal jewelry: mother's watch (vintage, non-digital) on left wrist, a single plain silver ring on her right index finger. Worn leather jacket from pre-collapse era, patched and re-stitched multiple times. Always carries a canvas messenger bag with multiple compartments. No visible corporate branding."
   },
-  "image_prompt": "Adaeze Ingebrigtsen-Okafor, cyberpunk 2226, tall-framed woman with warm deep brown skin and rich undertones, high angular cheekbones reflecting East Asian structure softened by Sub-Saharan features, deep brown eyes with faint metallic threading at iris edges, dark brown hair with silver streaking pulled back in functional bun, fine scar along left temple. Lean, wiry build, tense posture with active hands. Wearing black slim-fit cargo pants, fitted dark gray long-sleeve shirt unbuttoned over tank, worn vintage leather jacket patched with care, vintage non-digital watch on left wrist, silver ring on right index finger, mother's reading glasses worn constantly, canvas messenger bag. Indoors under harsh blue-white artificial lighting, great lakes metropolitan zone hacker aesthetic, pacing stance with purposeful movement, direct gaze, 14-hour workday pallor, cybernetic augmentation marks barely visible on left forearm. Moody, focused, determined expression. --ar 2:3 --v 6",
+  "image_prompt": "Rio Ingebrigtsen-Watanabe, 162cm lean neo-noir analyst, medium-warm brown skin with golden-olive luminescence, angular high-cheekboned face with balanced pandiasporic features, deep brown eyes with faint LED iris threading, dark brown hair with silver temples worn in messy bun, fine temple scar barely visible, mother's vintage reading glasses, wearing charcoal cargo pants and dark gray fitted shirt under patched leather jacket, canvas messenger bag, tense posture mid-pacing in dimly lit GLMZ apartment, neon blue ambient light reflecting off skin, focused expression, 2226 neo-noir urban aesthetic, indoor artificial lighting casting shadows across high cheekbones, slight luminescence to complexion, hands active and gesture-ready, direct intense gaze, sci-fi noir mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 40.0,
-    "Southeast Asian": 21.2,
-    "East Asian": 20.0,
-    "Middle Eastern": 10.8,
-    "Northern European": 8.0
+    "Northern European": 28.5,
+    "East Asian": 27.2,
+    "South Asian": 26.4,
+    "Sub-Saharan African": 9.3,
+    "Southeast Asian": 5.4,
+    "Hispanic/Latin American": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 13.1,
+        "Swiss German": 15.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 17.7
+      },
+      "Korean": {
+        "Korean": 9.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 12.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 4.8,
+        "Sinhalese": 2.1
+      },
+      "Pakistani": {
+        "Sindhi": 5,
+        "Baloch": 1.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 2.2,
+        "Nigerian": 7.1
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.2
+      },
+      "Filipino": {
+        "Ilocano": 0.8,
+        "Cebuano": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 2
+      },
+      "South American": {
+        "Peruvian": 1.2
+      }
+    }
+  }
 }

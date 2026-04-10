@@ -1,7 +1,7 @@
 {
   "id": "019d6143a693767d844c7cba6a888882",
   "type": "character",
-  "name": "Amina Tlemcani-Karimov",
+  "name": "Soledad Trujillo-Esquivel",
   "aliases": [
     "The Listener"
   ],
@@ -12,7 +12,7 @@
   "age": 38,
   "status": "active",
   "location": "The Underworld - B11, near sub-level access near Dearborn and Jackson",
-  "description": "Patience leads the Congregation organized around the Breathing. They hear the 11-minute pressure cycle from any level above B15.",
+  "description": "Soledad Trujillo-Esquivel the Congregation organized around the Breathing. They hear the 11-minute pressure cycle from any level above B15.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -85,7 +85,7 @@
     "Standard Bearer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underworld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -101,27 +101,21 @@
   "related_entities": [
     "The Bone Parish",
     "CONGREGATION",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Rashaad Tumelo-Koskinen",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Rosary' Bead Garrote",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "The Congregation"
+    "Pressure Drop",
+    "Dearborn Forge"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "North African Berber with substantial Sub-Saharan African, Central Asian, South Asian, and Southeast Asian ancestry. A striking blend of Mediterranean-Saharan and multi-continental features creating angular cheekbones with warm undertones, eye shape reflecting the Asian admixture, and overall bone structure suggesting the Ubiquitous Diaspora's characteristic genetic layering.",
+    "heritage": "Multi-continental blend dominated by Hispanic/Latin American (36.9%) and Northern European (31.6%) ancestry, with substantial Sub-Saharan African (18.9%) admixture and smaller East Asian (5.7%), Southeast Asian (4.1%), and North African (2.8%) components. This creates a striking fusion: warm golden-brown skin with golden and reddish undertones reflecting the Latin American-European-African base, angular facial structure from Northern European and North African heritage blended with broader cheekbones from Sub-Saharan African ancestry, and subtle eye shape variations from East and Southeast Asian ancestry. The overall effect is a characteristic Ubiquitous Diaspora face — no single heritage dominant, but all visible in the harmonious layering of bone structure, skin tone, and subtle features.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and angular, with long limbs suggesting years of navigating tight passages and vertical shafts. Chest slightly expanded from deep-breathing practice.",
     "hair_color": "Natural black with threads of silver",
     "hair_style": "Loose braids wrapped in worn linen cord, some adorned with small brass bells that chime softly when the wearer tilts their head",
     "hair_length": "Long",
-    "eye_color": "Dark brown with a distant, listening quality",
-    "skin_tone": "Warm medium-deep brown with golden undertones, darkened by sub-level dust exposure into a rich ashy patina",
-    "complexion": "Angular meditative face with high, prominent cheekbones typical of North African and Central Asian heritage blending. Skin shows fine etching around the eyes and mouth from years of concentration. Eyes set with slight epicanthic quality from South Asian and Southeast Asian ancestry. Minimal grooming — practical, not decorative.",
+    "eye_color": "Deep dark brown with a distant, listening quality",
+    "skin_tone": "Warm medium-to-deep brown with golden and subtle reddish undertones, darkened by sub-level dust exposure into a rich ashy patina",
+    "complexion": "Angular meditative face with high, prominent cheekbones reflecting the blend of Northern European, Sub-Saharan African, and Hispanic/Latin American ancestry. Facial structure shows the harmonious fusion of broader, sculpted cheekbones with angular jaw definition. Eyes set with slight epicanthic variation from East and Southeast Asian ancestry. Skin shows fine etching around the eyes and mouth from years of concentration. Minimal grooming — practical, not decorative.",
     "distinguishing_marks": [
       "Ritual scarification along both temples in three parallel lines, each roughly 4cm long, faded to silvery-white — marks of commitment to the Congregation",
       "Calloused palms and fingertips from handling cold metal conduits and pressure sensors",
@@ -131,17 +125,67 @@
     "posture_movement": "Moves with deliberate slowness, as if perpetually listening. Stands with spine slightly curved, head tilted to one side. Breathes audibly and deeply, synchronizing their respiration with ambient pressure cycles. Gestures are minimal and measured.",
     "clothing_style": "Tier 5 utilitarian ascetic. Layered linen and canvas in grays and earth tones, worn thin and patched. A long sleeveless overvest made from salvaged acoustic foam dampens echoes. No corporate branding. Feet wrapped in cloth rather than shoes — better tactile connection to the floor and its vibrations. A single cord belt holds a brass pressure gauge and small prayer beads carved from old plastic."
   },
-  "image_prompt": "Amina Tlemcani-Karimov, 168cm tall woman with warm medium-deep brown skin and golden undertones darkened by industrial dust, North African Berber and multi-continental mixed heritage with high angular cheekbones and slight epicanthic eye shape. Long natural black hair with silver threads in loose braids wrapped in worn linen cord adorned with small brass bells. Dark brown contemplative eyes. Ritual scarification on temples, faint arc burn scar on right forearm. Gaunt meditative face showing fine lines from years of concentration. Cyberpunk 2226 Great Lakes setting. Wearing thin patched gray and earth-tone layered linen, sleeveless overvest of salvaged acoustic foam, cloth-wrapped feet for vibration sensing. Single cord belt with brass pressure gauge and carved plastic prayer beads. Posture curved and tilted as if listening, minimal deliberate movements. Standing in dim industrial sub-level corridor with soft pressure-cycle ambient lighting, dust motes visible in air. Atmosphere of contemplative focus and ascetic discipline. Cinematic cyberpunk aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Soledad Trujillo-Esquivel, a 168cm lean-built figure with deep warm brown skin and golden undertones, standing in a neo-noir sub-level corridor illuminated by blue-green pressure lights. Long black hair braided and wrapped with worn linen cord adorned with brass bells. Angular face with prominent sculpted cheekbones, high temples marked with three parallel silvery ritual scars, dark meditative eyes with subtle East Asian eye shape. Minimal expression, head tilted as if listening to vibrations. Clothed in layered gray and earth-toned linen and canvas, worn thin and patched, wearing a long sleeveless acoustic foam vest. Feet wrapped in cloth. A brass pressure gauge and prayer beads hang from a single cord belt. Deep breathing synchronizes with ambient pressure cycles. Minimalist, ascetic presence. Cinematic lighting emphasizing texture and ritual marks. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 44.4,
-    "Sub-Saharan African": 18.6,
-    "Central Asian": 15.0,
-    "South Asian": 10.7,
-    "Southeast Asian": 7.5,
-    "Hispanic/Latin American": 3.8
+    "Hispanic/Latin American": 36.9,
+    "Northern European": 31.6,
+    "Sub-Saharan African": 18.9,
+    "East Asian": 5.7,
+    "Southeast Asian": 4.1,
+    "North African": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 21.9,
+        "Costa Rican": 15
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 17.7,
+        "Dutch": 6.7
+      },
+      "British Isles": {
+        "Scottish": 1.5,
+        "English": 5.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 14.9,
+        "Malian": 4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 2
+      },
+      "Japanese": {
+        "Japanese": 3.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 4.1
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 0.4,
+        "Sudanese": 0.8
+      },
+      "Maghreb": {
+        "Tunisian": 0.2
+      },
+      "Amazigh": {
+        "Berber": 1.2,
+        "Kabyle": 0.2
+      }
+    }
+  }
 }

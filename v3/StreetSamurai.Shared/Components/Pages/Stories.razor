@@ -5,6 +5,7 @@
 @inject IStoryBlockRepository Repo
 @inject StoryDirectorService Director
 @inject NavigationManager Nav
+@inject SuggestionEngineService Suggestions
 @implements IDisposable
 
 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -67,6 +68,36 @@
     </div>
 }
 
+@* ── Suggestion Panel ────────────────────── *@
+@if (suggestedBeats.Count > 0 && !generating)
+{
+    <div class="card bg-dark text-light border-info mb-3">
+        <div class="card-body">
+            <h6 class="text-info"><i class="bi bi-signpost-split"></i> What Happens Next?</h6>
+            <p class="text-muted small mb-3">Choose a direction for the story, or let the engine decide.</p>
+            @foreach (var (suggestion, idx) in suggestedBeats.Select((s, i) => (s, i)))
+            {
+                <div class="border border-secondary rounded p-2 mb-2" style="cursor: pointer;"
+                     @onclick="() => PickSuggestion(idx)">
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold text-light">@suggestion.Title</span>
+                        <span class="badge @(suggestion.Tone == "action" ? "bg-danger" : suggestion.Tone == "intimate" ? "bg-info" : suggestion.Tone == "revelation" ? "bg-warning" : "bg-secondary")">
+                            @suggestion.Tone @suggestion.Tension/10
+                        </span>
+                    </div>
+                    <div class="small text-muted mt-1">@suggestion.Description</div>
+                    @if (suggestion.SeedsResolved.Count > 0)
+                    {
+                        <div class="small text-success mt-1">Resolves: @string.Join(", ", suggestion.SeedsResolved)</div>
+                    }
+                    <div class="small text-secondary mt-1 fst-italic">@suggestion.Rationale</div>
+                </div>
+            }
+            <button class="btn btn-sm btn-outline-secondary mt-2" @onclick="ClearSuggestions">Dismiss</button>
+        </div>
+    </div>
+}
+
 @if (failedCheckpoints.Any() && !generating)
 {
     <div class="mb-3">
@@ -84,6 +115,9 @@
                         }
                     </div>
                     <div class="d-flex gap-1">
+                        <button class="btn btn-sm btn-outline-info" @onclick="() => GetSuggestions(cp)" disabled="@suggestionsLoading">
+                            <i class="bi bi-signpost-split"></i> What Next?
+                        </button>
                         <button class="btn btn-sm btn-outline-primary" @onclick="() => ResumeCheckpoint(cp)">
                             <i class="bi bi-play-fill"></i> Resume
                         </button>
@@ -149,10 +183,13 @@ else if (!generating)
     private List<AutonomousStory> failedCheckpoints = [];
     private string? confirmArchiveId;
     private bool generating;
+    private bool suggestionsLoading;
     private string progressMessage = "";
     private int progressCurrent, _progressTotal;
     private AutonomousStory? autonomousStory;
+    private AutonomousStory? suggestionSource;
     private List<GeneratedStoryBeat> liveBeats = [];
+    private List<BeatSuggestion> suggestedBeats = [];
     private CancellationTokenSource? cts;
 
     protected override void OnInitialized()
@@ -290,6 +327,45 @@ else if (!generating)
         confirmArchiveId = null;
         projects.RemoveAll(p => p.Id == id);
     }
+
+    private async Task GetSuggestions(AutonomousStory checkpoint)
+    {
+        if (checkpoint.Outline == null) return;
+        suggestionsLoading = true;
+        suggestionSource = checkpoint;
+        StateHasChanged();
+
+        try
+        {
+            var storySoFar = string.Join("\n\n", checkpoint.Beats.Select(b => b.Text));
+            suggestedBeats = await Suggestions.SuggestNextBeatsAsync(
+                checkpoint.ProjectId, checkpoint.Outline,
+                checkpoint.Beats.Count - 1,
+                checkpoint.Characters, checkpoint.Location ?? "The Shelf",
+                storySoFar);
+        }
+        catch (Exception ex)
+        {
+            progressMessage = $"Suggestion failed: {ex.Message}";
+        }
+        finally
+        {
+            suggestionsLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void PickSuggestion(int index)
+    {
+        if (suggestionSource == null || index >= suggestedBeats.Count) return;
+        // Resume the story with the chosen suggestion as the next beat goal
+        var chosen = suggestedBeats[index];
+        suggestedBeats.Clear();
+        // TODO: inject chosen.Description as the next beat goal into the resume flow
+        ResumeCheckpoint(suggestionSource);
+    }
+
+    private void ClearSuggestions() => suggestedBeats.Clear();
 
     private static string ConvertToHtml(AutonomousStory story)
     {

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ae7ac3abfcc75af7db5fff",
   "type": "character",
-  "name": "Luca Nazari",
+  "name": "Luca Valenzuela",
   "aliases": [
     "Mama Ngozi",
     "The Professor"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Washburn Commons — apartment block C, and the Commons community center basement classroom, near Halsted and Chicago Ave",
-  "description": "Amara Ngozi-Szilveszter is the kind of woman who makes a room feel organized just by walking into it. She's tall and angular, her natural hair kept in a close-cropped fade that's gone entirely silver, and she has the habit of standing with her arms folded and her chin slightly elevated that every one of her former students would recognize from forty meters away. Her dark skin is unaugmented save for a small bioluminescent spiral — blue-white — behind her right ear, a retirement gift she gave herself after three decades of institutional dress codes. She wears sensible layers and always has two pens in her breast pocket, a habit from the years before all writing went digital.\n\nAmara taught mathematics and systems-thinking at Washburn Commons Secondary for thirty-one years, surviving four different corponation educational management contracts and two restructuring purges. She retired with a modest pension and immediate custody of her two grandchildren — Prax, eleven, and Liesel, eight — after her daughter's commitment to a Helix Biosystems experimental labor program took her away for what was supposed to be eighteen months and has now been three years. Amara does not discuss this with people she doesn't trust. She runs a free after-school tutoring program out of the community center basement three afternoons a week, partly because she needs to be useful and partly because she's keeping an eye on every child in a two-block radius as a matter of survival strategy.",
+  "description": "Luca Valenzuela is the kind of woman who makes a room feel organized just by walking into it. She's tall and angular, her natural hair kept in a close-cropped fade that's gone entirely silver, and she has the habit of standing with her arms folded and her chin slightly elevated that every one of her former students would recognize from forty meters away. Her dark skin is unaugmented save for a small bioluminescent spiral — blue-white — behind her right ear, a retirement gift she gave herself after three decades of institutional dress codes. She wears sensible layers and always has two pens in her breast pocket, a habit from the years before all writing went digital.\n\nAmara taught mathematics and systems-thinking at Washburn Commons Secondary for thirty-one years, surviving four different corponation educational management contracts and two restructuring purges. She retired with a modest pension and immediate custody of her two grandchildren — Prax, eleven, and Liesel, eight — after her daughter's commitment to a Helix Biosystems experimental labor program took her away for what was supposed to be eighteen months and has now been three years. Amara does not discuss this with people she doesn't trust. She runs a free after-school tutoring program out of the community center basement three afternoons a week, partly because she needs to be useful and partly because she's keeping an eye on every child in a two-block radius as a matter of survival strategy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Teacher": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Washburn Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,40 +254,19 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Washburn Commons",
+    "Helix Biosystems",
     "The Shelf Commons",
     "Periscope",
     "Big Rig",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Chicago",
     "Silver",
     "Nesting Doll",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Djeneba Park-Traore",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Pikasso Wemba-Þórðarson",
-    "Praxedes Owusu-Bektašević",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: Sub-Saharan African (35.5%), Middle Eastern (33.8%), South Asian (26.8%), Southeast Asian (3.9%). Features reflect this complex admixture—warm-toned deep brown skin with subtle golden undertones, defined cheekbones with moderate projection, eye shape showing slight epicanthic influence from South Asian and Southeast Asian ancestry, facial structure balancing the broader features of African heritage with the more angular planes common to Middle Eastern genetics",
+    "heritage": "Multiethnic blend: Hispanic/Latin American (51.8%), South Asian (39.2%), Eastern European (9.0%). Features reflect this complex admixture—warm medium-to-deep brown skin with subtle olive undertones, defined cheekbones with moderate projection balanced between Latin and South Asian bone structure, eye shape showing slight almond influence from South Asian ancestry, facial structure combining the angular planes common to Eastern European genetics with the warmer tones and fuller features of Latin American heritage",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Tall and angular, lean-muscled from decades of standing and moving through classrooms; posture still carries the straightness of institutional discipline, though age has introduced a slight forward inclination at the shoulders",
@@ -295,27 +274,57 @@
     "hair_style": "Close-cropped fade, meticulously maintained, revealing the clean geometry of her skull",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint amber undertones from standard consumer retinal display overlay (visible as a thin luminescent ring around the iris in low light)",
-    "skin_tone": "Warm deep brown with golden undertones, reflecting the blended ancestry of Sub-Saharan African, Middle Eastern, and South Asian heritage; shows the weathering of 67 years and significant UV exposure from pre-GLMZ childhood",
-    "complexion": "Face bears the map of her life: crow's feet from squinting at chalkboards and reading small text, a thin vertical scar along her left jawline (accident with a door frame, 2187), hands bearing the ink stains of someone who still writes by hand despite digital availability. Skin is unaugmented and well-maintained; minimal makeup. Sharp, well-defined cheekbones characteristic of her multiethnic heritage that prominence further with age. Slight nasolabial folds and slight drooping of lower face from age. The bridge of her nose shows subtle width typical of her ancestry mix",
+    "skin_tone": "Warm medium-deep brown with subtle olive undertones, reflecting the dominant Hispanic/Latin American and significant South Asian ancestry; shows the weathering of 67 years and significant UV exposure from pre-GLMZ childhood",
+    "complexion": "Face bears the map of her life: crow's feet from squinting at chalkboards and reading small text, a thin vertical scar along her left jawline (accident with a door frame, 2187), hands bearing the ink stains of someone who still writes by hand despite digital availability. Skin is unaugmented and well-maintained; minimal makeup. Sharp, well-defined cheekbones characteristic of her blended Hispanic/Latin American and South Asian heritage, prominence further enhanced with age and the angular Eastern European influence. Slight nasolabial folds and slight drooping of lower face from age. The bridge of her nose shows moderate width and structure typical of her ancestry blend. Facial structure balances the angular planes of Eastern European genetics with the warmer, broader proportions of Latin American and South Asian features",
+    "visible_augmentations": "Bioluminescent spiral behind right ear (cosmetic, retirement gift to herself). Faint luminescent ring around pupils indicating standard consumer-grade retinal display. No other visible chrome or subdermal plating; deliberately maintains non-augmented appearance as marker of her tier and values",
     "distinguishing_marks": [
       "Small vertical scar along left jawline, approximately 3cm, pale and well-healed",
       "Bioluminescent spiral dermal implant behind right ear, blue-white, 4cm diameter, glows softly in darkness — visible when hair is pulled back or in profile",
       "Two small burn marks on her right inner forearm from a classroom incident, now faint but still visible on close inspection",
       "Callused fingertips and palm creases darker than surrounding skin from decades of writing and chalk dust"
     ],
-    "visible_augmentations": "Bioluminescent spiral behind right ear (cosmetic, retirement gift to herself). Faint luminescent ring around pupils indicating standard consumer-grade retinal display. No other visible chrome or subdermal plating; deliberately maintains non-augmented appearance as marker of her tier and values",
     "posture_movement": "Stands with arms often folded across chest or hands clasped at solar plexus—a posture from decades of classroom management. Moves with deliberate efficiency, no wasted motion; walks with spine straight despite age-related stiffening. Has a habit of tilting her head slightly when listening, chin elevated, eyes tracking movement. When sitting, she occupies minimal space, feet flat on floor, back against chair",
     "clothing_style": "Tier 4 practical utilitarian: layered cotton and synthetic-blend clothing in muted earth tones (charcoal, sage, cream, rust). Always wears a sleeveless overshirt or vest as outer layer—functional pockets, durable weave. Sensible non-slip shoes suitable for classroom floors. Two pens always in breast pocket (old habit, pre-digital era). A thin silver bracelet on her left wrist (gift from her father, 2150s). No jewelry beyond this; no corpo logos or status markers. Clothing shows wear and careful repair—patches on elbows, reinforced seams—not from poverty but from intentional durability ethic"
   },
-  "image_prompt": "Luca Nazari, 67-year-old woman, cyberpunk 2226, multiethnic heritage—Sub-Saharan African, Middle Eastern, and South Asian ancestry visible in warm deep brown skin with golden undertones, sharp cheekbones, dark brown eyes with faint retinal display luminescence. Silver-white close-cropped fade revealing clean skull geometry. Tall, lean, angular build at 178cm. Face marked by life: crow's feet, thin pale scar along left jawline, ink-stained hands. Bioluminescent blue-white spiral dermal implant glowing softly behind right ear. Wearing muted earth-tone layered utilitarian clothing—charcoal sleeveless overshirt over cream base, sage fabric, reinforced seams and elbow patches. Silver bracelet on left wrist. Posture upright and deliberate despite slight forward shoulder inclination. Standing in soft low-angle lighting that catches the subtle glow of retinal implant and spiral implant, Great Lakes Metropolitan Zone interior, minimalist aesthetic, composed and watchful expression. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Luca Valenzuela, 67-year-old woman in 2226 GLMZ, warm medium-deep brown skin with olive undertones reflecting Hispanic/Latin American and South Asian heritage, sharp defined cheekbones with subtle Eastern European angular influence, dark brown eyes with faint luminescent amber ring, silver-white close-cropped fade haircut revealing skull geometry, thin pale scar along left jawline, bioluminescent blue-white spiral implant glowing softly behind right ear visible in profile. Wearing practical muted earth-tone layered clothing: charcoal and sage cotton blend with sleeveless utilitarian overshirt, two pens in breast pocket, thin silver bracelet on left wrist. Standing with arms folded across chest in classroom-management posture, spine straight despite age-related shoulder inclination, deliberate and efficient bearing. Unaugmented appearance, weathered hands with ink stains and calluses, minimal makeup. Neo-noir dystopian futuristic setting with cool harsh lighting, subtle neon glow illuminating the retinal display ring around her iris, shadow highlighting the delicate scar tissue and life-worn features. Mood: contemplative, experienced, tier-4 practical integrity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 35.5,
-    "Middle Eastern": 33.8,
-    "South Asian": 26.8,
-    "Southeast Asian": 3.9
+    "Hispanic/Latin American": 51.8,
+    "South Asian": 39.2,
+    "Eastern European": 9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 51.8
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 17.6,
+        "Gujarati": 12.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.3
+      },
+      "Pakistani": {
+        "Baloch": 1.7,
+        "Punjabi Pakistani": 2.1
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 5
+      },
+      "Slavic West": {
+        "Polish": 1.8
+      },
+      "Magyar-Romanian": {
+        "Romanian": 2.2
+      }
+    }
+  }
 }

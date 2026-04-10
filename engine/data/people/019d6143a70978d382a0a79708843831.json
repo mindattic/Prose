@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70978d382a0a79708843831",
   "type": "character",
-  "name": "Esperanza Cisneros-Karunaratne",
+  "name": "Dagny Jitpakdee-Karunaratne",
   "aliases": [
     "Valence",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Fullerton and Damen",
-  "description": "Tui Fedorov-Ampofo are compact and densely muscled, built low to the ground like something designed to survive impacts. At 34, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a bounty hunter out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Tui Fedorov-Ampofo describe them as a precision instrument — point them at a problem and get out of the way.",
+  "description": "Dagny Jitpakdee-Karunaratne are compact and densely muscled, built low to the ground like something designed to survive impacts. At 34, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a bounty hunter out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Dagny Jitpakdee-Karunaratne describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -261,7 +261,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,33 +280,11 @@
   "related_entities": [
     "Masquerade",
     "The Gradient Compact",
-    "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Chibundo Reinholt-Sarpong",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian, Hispanic/Latin American, Indigenous American, and Sub-Saharan African—a complex diaspora blend. South Asian structure shows in facial geometry and bone prominence; Hispanic/Latin American and Indigenous American ancestry visible in skin undertone warmth and cheekbone definition; Sub-Saharan African heritage contributes to hair texture and subtle facial feature richness.",
+    "heritage": "South Asian dominant (29.6%) with significant Southeast Asian (16.5%), Northern European (18.8%), Eastern European (15.2%), Indigenous American (15.9%), and Hispanic/Latin American (4.0%) ancestry. South Asian structure defines facial geometry with prominent cheekbones and defined jawline; Southeast Asian ancestry contributes warm golden undertones and eye shape; Indigenous American heritage visible in cheekbone prominence and skin warmth; Northern and Eastern European ancestry adds depth to eye set and slight broadening of facial proportions. The combination creates striking angular features with warm, complex skin undertones—neither fully warm nor cool, but a sophisticated blend.",
     "height_cm": 163,
     "weight_kg": 78,
     "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement. Broad shoulders, thick forearms, minimal body fat. Legs show unusual definition from synthetic muscle fiber replacement.",
@@ -314,8 +292,8 @@
     "hair_style": "Short, utilitarian undercut; kept precisely trimmed",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with subtle red undertones—a blend of South Asian olive, Hispanic/Latin American warmth, and Sub-Saharan African richness. Medium depth, even distribution.",
-    "complexion": "Defined facial structure with prominent cheekbones reflecting South Asian and Indigenous American ancestry. Warm undertone across bridge of nose and temples. Weathered appearance from chronic exposure and sleep deprivation. Extensive scarring across left cheekbone and jawline (rough, silvered tissue). Fine lines around eyes suggesting constant vigilance. Skin bears minor burn marks on neck (thermal signature from past firefight). Grooming is functional—minimal facial hair, kept clean.",
+    "skin_tone": "Warm golden-brown with subtle olive undertones—a sophisticated blend of South Asian base (dominant 29.6%) enriched by Southeast Asian warmth and Indigenous American depth, tempered by Northern and Eastern European influence creating nuanced complexity. Medium depth, even distribution, with characteristic warmth concentrated around temples and bridge of nose.",
+    "complexion": "Angular facial structure with prominent cheekbones reflecting South Asian and Indigenous American ancestry, softened slightly by Northern European ancestry contribution. Warm undertone across bridge of nose, temples, and upper cheekbones. Weathered appearance from chronic exposure and sleep deprivation. Extensive scarring across left cheekbone and jawline (rough, silvered tissue creating textural contrast against warm skin). Fine lines around eyes suggesting constant vigilance. Skin bears minor burn marks on neck (thermal signature from past firefight). Grooming is functional—minimal facial hair, kept clean.",
     "distinguishing_marks": [
       "Deep scar running from left temple to jawline, pale and puckered, approximately 12cm long",
       "Burn scar on right side of neck, circular, approximately 3cm diameter, faded to ash-gray",
@@ -326,15 +304,70 @@
     "posture_movement": "Economical movement—no wasted motion. Stands with weight distributed forward on the balls of feet, ready-stance default. Moves with predatory precision, especially in low light. Often keeps hands visible and near body. Head tracking is sharp and constant—threat assessment reflex. Sits with back to walls, exits always in peripheral awareness.",
     "clothing_style": "Tier 3-4 functional streetwear. Standard loadout: reinforced tactical jacket (dark synthetic leather, multiple pockets and mag retention clips), fitted cargo pants with thigh holster, military-spec boots (scuffed, maintained). Layers beneath for temperature and armor integration. No corporate branding—all gear is utilitarian, modular, replaceable. Watch is reliable analog + basic digital heads-up interface wrist unit. No jewelry. Clothing shows wear patterns consistent with daily fieldwork and nocturnal schedule."
   },
-  "image_prompt": "Esperanza Cisneros-Karunaratne, compact 163cm operative with warm golden-brown skin blending South Asian, Hispanic, Indigenous American, and African heritage. Dark brown natural short undercut, dark eyes, defined cheekbones. Extensive scarring left temple to jawline, burn scar on neck, network of hand scars. Subdermal gunmetal armor plating visible across torso and forearms. Synthetic muscle fiber legs with pronounced striations. Military-grade cybernetic augmentations, zero cosmetic mods. Wearing dark tactical leather jacket with mag clips, reinforced cargo pants, scuffed military boots, analog watch with HUD interface. Ready-stance posture, predatory precision movement, threat-assessment constant scanning. Nocturnal GLMZ 2226 setting, low-light cyberpunk atmosphere, neon and shadow, functional streetwear aesthetic, no corporate branding. Cinematic lighting emphasizing augmentation hardware and scarring. --ar 2:3 --v 6",
+  "image_prompt": "Dagny Jitpakdee-Karunaratne, 163cm compact muscular frame with subdermal gunmetal armor plating across torso and forearms, GLMZ. South Asian-dominant mixed heritage with warm golden-brown complexion, prominent angular cheekbones, dark brown eyes. Short dark brown undercut hairstyle. Deep silvered scar running left temple to jawline, weathered features from sleep deprivation, fine lines around eyes. Circular burn scar on right neck. Tactical dark synthetic leather jacket, reinforced cargo pants, military-spec boots, visible thigh holster. Hands show network of white scars across knuckles. Stands in ready-stance, weight forward, predatory precision posture. Nighttime urban Great Lakes Metropolitan Zone setting, cool neon and shadow lighting, moody atmosphere. Military-functional aesthetic, no cosmetic augmentation. Sharp threat-assessment vigilance in stance. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 37.5,
-    "Hispanic/Latin American": 35.6,
-    "Indigenous American": 20.1,
-    "Sub-Saharan African": 6.8
+    "South Asian": 29.6,
+    "Northern European": 18.8,
+    "Southeast Asian": 16.5,
+    "Indigenous American": 15.9,
+    "Eastern European": 15.2,
+    "Hispanic/Latin American": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Marathi": 22
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 5.3
+      },
+      "Scandinavian": {
+        "Icelandic": 5.5,
+        "Swedish": 5.1
+      },
+      "British Isles": {
+        "Irish": 2.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 15.7
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 11.3,
+        "Choctaw": 4.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 8.7
+      },
+      "Slavic South": {
+        "Slovenian": 5.1,
+        "Bulgarian": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 2.9
+      },
+      "Central American": {
+        "Costa Rican": 1.1
+      }
+    }
+  }
 }

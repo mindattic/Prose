@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "The Underworld - B2-B12, near sub-level access near LaSalle and Congress",
-  "description": "Deshi maintains the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
+  "description": "Rowan Konaté the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -83,7 +83,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underworld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,7 +102,7 @@
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (48.7%) with substantial Northern European (22.0%), Central Asian (16.2%), and Eastern European (13.1%) ancestry. Complex genetic admixture resulting in warm, deep brown skin with subtle olive undertones and refined facial structure showing both African and Eurasian features.",
+    "heritage": "Multiheritagé diaspora blend: dominant East Asian (36.6%) and Southeast Asian (18.6%) ancestry combined with substantial Sub-Saharan African (22.0%) and Northern European (19.8%) genetic contribution, plus minor Hispanic/Latin American (3.0%) admixture. This complex genetic combination produces warm medium-to-deep brown skin with golden and olive undertones, facial structure balancing East Asian angularity with West African fullness in the mid-face, creating striking cross-heritage features with refined bone definition.",
     "height_cm": 178,
     "weight_kg": 71,
     "build": "Lean and wiry with developed forearms and shoulders from years of precision fiber work. Minimal body fat, efficient musculature.",
@@ -110,8 +110,8 @@
     "hair_style": "Closely cropped, practical, minimal maintenance",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Deep warm brown with subtle olive undertones, reflecting the African-majority heritage with undertones of Central and Eastern European ancestry. Even melanin distribution with natural richness.",
-    "complexion": "Strong, sculpted cheekbones and angular jaw reflecting mixed ancestry. Warm deep brown complexion shows minor scarring on right temple from a past cable snag. Perpetual stubble, minimal grooming beyond functionality. Fine lines around eyes from sustained concentration work.",
+    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones, reflecting the blended East and Southeast Asian heritage warmed by Sub-Saharan African undertones and cooled subtly by Northern European genetics. Even melanin distribution, naturally rich and luminous in low light.",
+    "complexion": "Angular cheekbones and defined jaw reflecting East Asian bone structure softened by African fullness in mid-face and orbital area. Warm medium-brown complexion with natural radiance. Minor scarring on right temple from past cable snag. Perpetual stubble, minimal grooming beyond functionality. Fine lines around eyes from sustained concentration work.",
     "distinguishing_marks": [
       "Thin white scar running 3cm along right temple to hairline, smooth and old",
       "Calluses across palms and fingertips, especially index and middle fingers of both hands, from splicer work",
@@ -121,27 +121,61 @@
     "posture_movement": "Moves with deliberate efficiency, minimal wasted motion. Hands rest in ready position. Inhabits spaces quietly, comfortable in darkness. Head tilts slightly when listening — suggests enhanced auditory processing or intense focus habit.",
     "clothing_style": "Tier 4 working-class practicality. Dark tactical pants with multiple utility pockets, fitted black or grey merino wool base layers for temperature control in cold server rooms. Fingerless work gloves or thin tactile gloves always accessible. Worn tech-fabric jacket with Blackwire insignia patches. Comfortable steel-toed boots, scuffed from underground work. No visible jewelry except a flat black wedding band."
   },
-  "image_prompt": "Rowan Konaté, deep warm brown-skinned cyberpunk fiber splicer with sculpted cheekbones and angular features, dark brown eyes with fine concentration lines, short dark hair silvered at temples. 178cm lean wiry build with developed shoulders. White scar along right temple, old burn mark on left wrist, calloused hands. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric Blackwire jacket, steel-toed boots, thin tactile work gloves. Flat black wedding band. Standing in dim neon-lit underground server room with blue and purple light casting shadows across chiseled face. Deliberate, efficient posture, hands in ready position, slight head tilt suggesting focused attention. Cyberpunk 2226, gritty atmospheric lighting, moody concentration. --ar 2:3 --v 6",
-  "related_entities": [
-    "Amara Osei-Dzhaparidze",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Inductive Thermal Lance",
-    "Jin-seo Park",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "Wool"
-  ],
+  "image_prompt": "Rowan Konaté, 2226 neo-noir splicer, medium-deep warm brown skin with golden undertones, angular East Asian cheekbones softened by African fullness, dark brown eyes with fine concentration lines, short dark hair with silver at temples. Perpetual stubble, thin white scar on right temple. Lean muscular build, 178cm tall. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric jacket with Blackwire patches, steel-toed boots, fingerless work gloves. Standing in dim server room lit by blue cable light, hands in ready position, head tilted with focused intensity. Cool underground neo-noir urban aesthetic, low-light atmosphere, photorealistic portrait --ar 2:3 --v 6",
+  "related_entities": [],
   "genetic_ancestry": {
-    "Sub-Saharan African": 48.7,
-    "Northern European": 22.0,
-    "Central Asian": 16.2,
-    "Eastern European": 13.1
+    "East Asian": 36.6,
+    "Sub-Saharan African": 22.0,
+    "Northern European": 19.8,
+    "Southeast Asian": 18.6,
+    "Hispanic/Latin American": 3.0
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 6.3
+      },
+      "Japanese": {
+        "Japanese": 12.7
+      },
+      "Korean": {
+        "Korean": 17.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 22.0
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 8.8,
+        "Danish": 1.4
+      },
+      "Germanic": {
+        "German": 9.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 18.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.9
+      },
+      "Caribbean": {
+        "Dominican": 0.2,
+        "Cuban": 0.1
+      },
+      "South American": {
+        "Peruvian": 0.8
+      }
+    }
+  }
 }

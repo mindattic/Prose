@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64c762ba0f0d6edf8a3ae47",
   "type": "character",
-  "name": "Stellan Sepúlveda",
+  "name": "Mateo Popescu",
   "aliases": [
     "The Consultant",
     "Ms. Arnault",
@@ -14,7 +14,7 @@
   "age": 39,
   "status": "active",
   "location": "Meridian Core — rents a high-floor apartment with excellent sight lines and a second exit she installed herself, near State and Madison",
-  "description": "Lise Arnault spent fifteen years in corporate human resources for Cascade Dynamics — and if you think human resources is a soft job, you have never watched Lise Arnault conduct a termination interview. She was Cascade's internal investigator, the person they sent when an executive was suspected of disloyalty, embezzlement, or espionage. She could sit across from a person over coffee and extract their secrets through conversation alone. No drugs, no augmented interrogation, no coercion. Just an understanding of human psychology so precise that people told her things they hadn't admitted to themselves.\n\nShe left Cascade when the company asked her to build psychological profiles of employees for a predictive-loyalty program — an algorithm that would flag people likely to quit, to whistle-blow, to unionize. She built the prototype. Then she looked at what she'd built and quit before it went operational. Sterling recruited her three months later. He was the first person she'd met who understood what she could do and wasn't afraid of it.\n\nLise is polished in the way corporate women learn to be — professional appearance, controlled expression, warmth deployed as a precision instrument. She is conventionally attractive and uses this as a tool without apology or enjoyment. Her eyes are the tell — sharp, evaluative, constantly processing micro-expressions and vocal patterns. She dresses impeccably because in the corporate world, appearance is the first layer of the argument.",
+  "description": "Mateo Popescu in corporate human resources for Cascade Dynamics — and if you think human resources is a soft job, you have never watched Lise Arnault conduct a termination interview. She was Cascade's internal investigator, the person they sent when an executive was suspected of disloyalty, embezzlement, or espionage. She could sit across from a person over coffee and extract their secrets through conversation alone. No drugs, no augmented interrogation, no coercion. Just an understanding of human psychology so precise that people told her things they hadn't admitted to themselves.\n\nShe left Cascade when the company asked her to build psychological profiles of employees for a predictive-loyalty program — an algorithm that would flag people likely to quit, to whistle-blow, to unionize. She built the prototype. Then she looked at what she'd built and quit before it went operational. Sterling recruited her three months later. He was the first person she'd met who understood what she could do and wasn't afraid of it.\n\nLise is polished in the way corporate women learn to be — professional appearance, controlled expression, warmth deployed as a precision instrument. She is conventionally attractive and uses this as a tool without apology or enjoyment. Her eyes are the tell — sharp, evaluative, constantly processing micro-expressions and vocal patterns. She dresses impeccably because in the corporate world, appearance is the first layer of the argument.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -170,7 +170,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,51 +185,23 @@
   "related_entities": [
     "Meridian Core",
     "Arcturus HW-1 'Goliath'",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "PulsePoint MoodGlyph Affective Display Implant",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Vantablack PD-8 'Whistle'",
-    "Amara Osei-Dzhaparidze",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Chromasin",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Isadora Mwangi-Thorvaldsen",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Philibert Mwangi-Djordjevic",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TERMINUS",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Question",
-    "Toluwani Przhevalskyj-Mboyo",
-    "Yelena Okafor-Chen"
+    "Vantablack PD-8 'Whistle'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Mestiza with strong Northern European and East Asian admixture — 43% Hispanic/Latin American heritage blended with 30% Northern European and 27% East Asian ancestry creates a striking cross-cultural phenotype. Features a warm-toned complexion with subtle East Asian eye shape, Latin American bone structure softened by Northern European fairness, and the genetic expression of someone from the Ubiquitous Diaspora.",
+    "heritage": "Ubiquitous Diaspora phenotype representing a complex global genetic blend: Eastern European (25.1%), Hispanic/Latin American (24.9%), South Asian (19.4%), Sub-Saharan African (14.6%), Northern European (9.4%), and Middle Eastern (6.6%). This creates a striking multi-continental ancestry with warm golden-bronze undertones, moderate facial bone structure showing balanced influences from Eastern European and South Asian ancestry lines, and a complexion that reflects the warm melanin expression of the African and South Asian heritage seamlessly blended with the fair undertones of Northern European and Middle Eastern ancestry.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and athletic — defined shoulders and arms from daily boxing, minimal body fat, posture that communicates precision and control",
     "hair_color": "Dark brown, professionally maintained",
     "hair_style": "Shoulder-length, usually worn in a controlled style — neat bun for corporate work, loose but composed for social operations",
     "hair_length": "Medium",
-    "eye_color": "Warm deep brown with faint luminescent grid pattern visible in low light from micro-expression overlay implant",
-    "skin_tone": "Warm medium tone — the blend of Latin American golden undertones with Northern European fairness creates a luminous complexion that reads as neither fully fair nor olive, but distinctly mixed heritage. Sun-kissed warmth without pronounced tan lines.",
-    "complexion": "Strong cheekbones with slight lateral width characteristic of East Asian ancestry, defined jawline with warm undertones. Eyelids show subtle East Asian morphology. Minimal makeup outside of corporate settings — foundation and neutral tones only. Skin is clear and shows no signs of aging damage. Resting expression is neutral and difficult to read; smile is precise and deployed intentionally.",
+    "eye_color": "Deep brown with warm undertones and a faint luminescent grid pattern visible in low light from micro-expression overlay implant",
+    "skin_tone": "Warm medium-golden bronze — a luminous blend where South Asian and Sub-Saharan African warmth combines with Eastern European and Northern European fairness, creating a complexion with pronounced golden undertones and moderate depth. The result is radiant and sun-kissed without tan lines, reflecting both genetic predisposition and consistent maintenance.",
+    "complexion": "Strong, slightly angular cheekbones reflecting Eastern European and South Asian ancestry, defined jawline with warm golden undertones. Eyelid morphology shows subtle influence from South Asian ancestry. Eye shape is round to almond-shaped with warm brown iris. Brow ridge moderate and well-defined. Minimal makeup outside of corporate settings — foundation and neutral tones only. Skin is clear and shows no signs of aging damage. Resting expression is neutral and difficult to read; smile is precise and deployed intentionally.",
     "distinguishing_marks": [
       "Faint scar along the left temple hairline, approximately 2cm, from a Cascade internal security incident — visible only if hair is pulled back",
       "Small surgical scar on the inner right wrist, barely visible, from pheromone modulator implantation"
@@ -238,14 +210,73 @@
     "posture_movement": "Sits and stands with deliberate alignment — shoulders back, spine neutral, hands always visible and controlled. Movements are economical and precise; she does not fidget or gesture unnecessarily. When listening, her gaze tracks micro-movements in the other person's face with an intensity that can feel unsettling. When speaking, her voice is modulated for the persona in use — corporate warmth, clinical precision, or calculated vulnerability.",
     "clothing_style": "Strictly Tier 1-2 corporate aesthetic. Favors tailored blazers (Helix, Nexus Brand), neutral color palettes (charcoal, navy, ivory, black), fitted trousers, and minimal jewelry — a platinum wedding band (non-functional prop), small earrings. Shoes are always professional and worn once. Under different cover identities she adjusts: a recruiter might wear slightly softer fabrics and brand-conscious pieces; a compliance auditor would layer in technical-adjacent accessories. Off-duty she wears fitted athletic wear (Cascade-era tech fabric) for boxing. Never appears disheveled; appearance management is non-negotiable."
   },
-  "image_prompt": "Stellan Sepúlveda, mixed-heritage woman of striking cross-cultural beauty — warm medium skin tone with golden undertones, dark brown shoulder-length hair in controlled bun, warm deep brown eyes with micro-shimmer implant grid visible in corporate lighting. Sharp cheekbones and defined jawline showing East Asian and Latin American genetic blend. Lean athletic build (172cm, 62kg), posture perfect and composed. Wearing tailored charcoal Helix blazer over ivory fitted blouse, navy trousers, minimal platinum jewelry. Sitting in sleek corporate office with floor-to-ceiling windows overlooking Great Lakes Metropolitan Zone 2226 skyline, cool blue-white lighting casting grid patterns across her eyes as she focuses intently on someone across the desk. Expression neutral, controlled, radiating calculated confidence. Cyberpunk 2200s aesthetic, high-end corporate spy or compliance operative. --ar 2:3 --v 6",
+  "image_prompt": "Mateo Popescu, GLMZ, woman with warm golden-bronze skin tone reflecting Eastern European, Hispanic, South Asian, Sub-Saharan African, Northern European, and Middle Eastern ancestry, deep brown eyes with faint luminescent micro-expression grid pattern, strong angular cheekbones, almond-shaped eyes, dark brown shoulder-length hair in controlled bun, lean athletic build 172cm, precise neutral resting expression. Wearing tailored charcoal Helix blazer, ivory fitted shirt, platinum minimalist jewelry, professional aesthetic. Sitting with perfect postural alignment, hands visible and controlled, intense focused gaze. Corporate office lighting with subtle neon ambient glow in background, Great Lakes Metropolitan Zone tower window visible. Mood: controlled intelligence, strategic calm, barely concealed intensity. Professional corporate spy aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.1,
-    "Northern European": 30.3,
-    "East Asian": 26.6
+    "Eastern European": 25.1,
+    "Hispanic/Latin American": 24.9,
+    "South Asian": 19.4,
+    "Sub-Saharan African": 14.6,
+    "Northern European": 9.4,
+    "Middle Eastern": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 25.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 4.4
+      },
+      "Caribbean": {
+        "Cuban": 3.6,
+        "Puerto Rican": 7.5
+      },
+      "South American": {
+        "Colombian": 1.2,
+        "Brazilian": 8.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 13.7
+      },
+      "Indian": {
+        "Malayali": 4,
+        "Tamil": 1.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 2.6
+      },
+      "West African": {
+        "Ghanaian": 0.5,
+        "Nigerian": 0.6
+      },
+      "Southern African": {
+        "Botswanan": 10.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 9.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 2.9,
+        "Yemeni": 0.4
+      },
+      "Persian": {
+        "Afghan Dari": 1.4,
+        "Iranian": 1.9
+      }
+    }
+  }
 }

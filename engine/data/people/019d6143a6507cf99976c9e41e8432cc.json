@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6507cf99976c9e41e8432cc",
   "type": "character",
-  "name": "Nisha Chowdhury-Nkrumah",
+  "name": "Marisol Bui-Dalgaard",
   "aliases": [
     "Lúcio",
     "the kid"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Old Harbor, operates out of a shared garage space near the Grindstone Shore docks, near Wacker and State",
-  "description": "Lúcio is whip-thin and perpetually damp from the lake spray that hits the Old Harbor route, with light brown skin that tans unevenly and dark curly hair he keeps tucked under a helmet or a rain hood most of the day. His eyes are large and dark and slightly too expressive for someone who would prefer to seem unreadable. He has color-changing hair geneware that he can't afford to maintain properly — it cycles through colors on its own schedule now rather than responding to his intent, and he's given up trying to predict it, which is how he accidentally showed up to a delivery in full fluorescent pink and became briefly memorable to someone he'd rather have forgotten. He has a small tattoo of the Old Harbor lighthouse on the inside of his left wrist, his only lasting decision he doesn't regret.\n\nLúcio has been running deliveries since he was seventeen and has the territorial knowledge of Old Harbor and the Narrows that can only be built by knowing every shortcut, every flooded underpass, every drone patrol timing. He runs on the border between the legal courier economy and the informal one without ever fully committing to either side, which means he makes enough to survive and not enough to get out. He is not precisely unhappy about this. He is young enough to still believe the right job will come to him rather than the other way around. He prays to whichever E.L.F. he thinks is inhabiting his cargo bike's navigation system, calling it Waypoint, and blames it personally when he gets lost.",
+  "description": "Marisol Bui-Dalgaard is whip-thin and perpetually damp from the lake spray that hits the Old Harbor route, with light brown skin that tans unevenly and dark curly hair he keeps tucked under a helmet or a rain hood most of the day. His eyes are large and dark and slightly too expressive for someone who would prefer to seem unreadable. He has color-changing hair geneware that he can't afford to maintain properly — it cycles through colors on its own schedule now rather than responding to his intent, and he's given up trying to predict it, which is how he accidentally showed up to a delivery in full fluorescent pink and became briefly memorable to someone he'd rather have forgotten. He has a small tattoo of the Old Harbor lighthouse on the inside of his left wrist, his only lasting decision he doesn't regret.\n\nMarisol Bui-Dalgaard has been running deliveries since he was seventeen and has the territorial knowledge of Old Harbor and the Narrows that can only be built by knowing every shortcut, every flooded underpass, every drone patrol timing. He runs on the border between the legal courier economy and the informal one without ever fully committing to either side, which means he makes enough to survive and not enough to get out. He is not precisely unhappy about this. He is young enough to still believe the right job will come to him rather than the other way around. He prays to whichever E.L.F. he thinks is inhabiting his cargo bike's navigation system, calling it Waypoint, and blames it personally when he gets lost.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -179,7 +179,7 @@
     "Safety First": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,27 +198,17 @@
   "related_entities": [
     "Grindstone Shore",
     "The Narrows Compact",
-    "Crucible SG-3 'Lighthouse'",
+    "Lighthouse Bistro",
     "The Eastline",
-    "Ringo DV-4 'Courier'",
-    "Arcturus Exo-Runner Frame",
-    "Cezar Watanabe-Gyasi",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Narrowcast",
-    "Old Harbor",
     "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Lighthouse' Improvised Area Illumination Flare",
-    "The Ledger",
-    "The Narrows",
-    "The Peninsula"
+    "The Accidental",
+    "Ringo DV-4 'Courier'",
+    "Harbor Fish Shack",
+    "Cargo Tacos"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (34.9%) blended with South Asian (25.0%), Eastern European (17.2%), Northern European (11.8%), Indigenous American (8.7%), and Pacific Islander (2.4%) ancestry — a truly cosmopolitan genetic mix resulting in warm medium-brown skin with subtle golden and reddish undertones; facial structure shows the high cheekbones and angular features common to both African and South Asian lineages, with a jawline that bridges European and African characteristics",
+    "heritage": "Marisol carries the genetic signature of the Ubiquitous Diaspora: predominantly Southeast Asian (42.3%) blended with Hispanic/Latin American (28.5%), East Asian (18.0%), and Eastern European (11.2%) ancestry. This combination produces warm medium-brown skin with golden undertones and a subtle olive cast; facial structure reflects the Southeast Asian and East Asian influence with slightly rounded cheekbones and a tapered jawline softened by the Hispanic/Latin American genetics, while Eastern European heritage contributes a subtle angularity to the bridge of the nose and brow ridge—a truly cosmopolitan genetic synthesis",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Whip-thin and wiry, all lean muscle from three years of courier cycling; shoulders slightly hunched from constant posture over handlebars, chest narrow but defined",
@@ -226,26 +216,63 @@
     "hair_style": "Curly and unruly when loose; habitually tucked under a rain hood or courier helmet to contain the color-shifting spectacle",
     "hair_length": "Medium (approximately 10-12cm when loose)",
     "eye_color": "Dark brown, large and expressive — the kind of eyes that betray emotion despite preference for opacity",
-    "skin_tone": "Warm medium brown with golden-reddish undertones from the blended ancestry; uneven deepening across shoulders, forearms, and face from lake spray exposure and inconsistent weather protection; lighter patches where kept covered, revealing the natural warm undertone beneath the weathering",
-    "complexion": "Clean but weathered for age; face is angular with high cheekbones characteristic of both African and South Asian heritage and a sharp jaw showing European influence; skin shows early salt-damage from Old Harbor's constant moisture and spray; dark circles under eyes from irregular sleep tied to courier schedules",
+    "skin_tone": "Warm medium brown with golden undertones and subtle olive cast from the blended Southeast Asian, Hispanic/Latin American, and East Asian ancestry; uneven deepening across shoulders, forearms, and face from lake spray exposure and inconsistent weather protection; lighter patches where kept covered, revealing the natural warm undertone beneath the weathering",
+    "complexion": "Clean but weathered for age; face is softly angular with slightly rounded cheekbones characteristic of Southeast Asian and East Asian heritage, tapered jawline showing Hispanic/Latin American influence, and subtle angularity to the nose bridge and brow from Eastern European genetics; skin shows early salt-damage from Old Harbor's constant moisture and spray; dark circles under eyes from irregular sleep tied to courier schedules",
+    "visible_augmentations": "Faint subcutaneous scarring at the base of skull where navigation wetware was implanted three years ago; the hair geneware itself is visible as an autonomous color-shift effect across scalp, with occasional chromatic glitching at the roots when the system malfunctions. No chrome or external augmentation — all tech is internal and failing quietly.",
     "distinguishing_marks": [
       "Small, finely-lined tattoo of the Old Harbor lighthouse on the inside of left wrist, rendered in black ink with minimal detail — the only deliberate body modification not regretted"
     ],
-    "visible_augmentations": "Faint subcutaneous scarring at the base of skull where navigation wetware was implanted three years ago; the hair geneware itself is visible as an autonomous color-shift effect across scalp, with occasional chromatic glitching at the roots when the system malfunctions. No chrome or external augmentation — all tech is internal and failing quietly.",
     "posture_movement": "Perpetually slightly hunched, spine curved from years bent over cargo bike handlebars; moves with the efficient, economical grace of someone who has learned to navigate tight spaces and flooded alleys; fidgets with wrist where the lighthouse tattoo sits when thinking; nervous energy channeled into constant micro-adjustments rather than large gestures",
     "clothing_style": "Tier 4 working-class courier aesthetic: waterproofed jacket in charcoal or dark blue with reflective piping, worn daily and stained with lake spray salt; cheap synthetic rain hood in rotation; cargo pants with reinforced knee panels and multiple pockets, often damp; worn athletic shoes with grip soles suited to wet surfaces; always wearing a helmet when mobile, usually a secondhand model with cracked visor. No logos or status markers — everything is functional and cheap enough to replace without regret."
   },
-  "image_prompt": "Nisha Chowdhury-Nkrumah, 172cm tall cyberpunk courier with warm medium-brown skin and golden undertones reflecting Sub-Saharan African, South Asian, Eastern European, and Indigenous American heritage; angular high-cheekboned face with sharp jaw and dark expressive eyes; naturally dark brown curly hair shoulder-length, currently malfunctioning through geneware color-shifts of deep burgundy, electric cyan, fluorescent pink, and muted olive, chromatic glitching at roots; lean muscular build from three years cycling, perpetually hunched shoulders; wearing waterproofed charcoal jacket with reflective piping stained with lake spray salt, dark cargo pants with reinforced knees, worn athletic grip shoes, secondhand helmet with cracked visor; small black lighthouse tattoo on inside of left wrist; faint scarring at base of skull from navigation implant; nervous micro-fidgeting posture; standing in flooded Old Harbor alley at dusk with rain spray misting, emergency lighting reflecting off wet pavement, neon signs glitching in background, salt-stained chrome surfaces surrounding; mood tense and weary, lit by cold blue emergency lights and warm neon reflections, cyberpunk 2226 --ar 2:3 --v 6",
+  "image_prompt": "Marisol Bui-Dalgaard, 172cm lean courier in GLMZ, warm medium-brown skin with golden-olive undertones from Southeast Asian-Hispanic-East Asian-Eastern European blend; softly angular face with rounded cheekbones, tapered jawline, subtle nose angularity; dark expressive eyes with exhaustion shadows; geneware-corrupted hair cycling between burgundy, cyan, pink, muted olive, tucked under worn rain hood; hunched posture from years on cargo bike; waterproofed charcoal jacket with salt stains and reflective piping, reinforced cargo pants, grip-soled shoes, cracked-visor helmet; small lighthouse tattoo on left wrist; Old Harbor setting, lake spray mist, neon-lit alleys, moody evening lighting, worn equipment, internal augmentation scars at skull base visible when hood shifts; tired but focused expression, efficient micro-movements; neo-noir dystopian courier aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 34.9,
-    "South Asian": 25.0,
-    "Eastern European": 17.2,
-    "Northern European": 11.8,
-    "Indigenous American": 8.7,
-    "Pacific Islander": 2.4
+    "Southeast Asian": 42.3,
+    "Hispanic/Latin American": 28.5,
+    "East Asian": 18,
+    "Eastern European": 11.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 19.9
+      },
+      "Filipino": {
+        "Tagalog": 22.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 14.7
+      },
+      "South American": {
+        "Colombian": 1.9,
+        "Venezuelan": 4.1
+      },
+      "Caribbean": {
+        "Haitian": 7.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 11.4
+      },
+      "Chinese": {
+        "Shanghainese": 3.8,
+        "Cantonese": 2.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 8.3
+      },
+      "Magyar-Romanian": {
+        "Romanian": 2.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68f708abab297ee40ff4c3e",
   "type": "character",
-  "name": "Slate Johansson-Thorvaldsdóttir",
+  "name": "Farhan Chakraborty-Thorvaldsdóttir",
   "aliases": [
     "Ozzie",
     "Patchwork"
@@ -13,7 +13,7 @@
   "age": 11,
   "status": "active",
   "location": "The Shelf, Blackpipe Corridor, near Pulaski and Chicago Ave",
-  "description": "Ozioma is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nOzioma is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
+  "description": "Farhan Chakraborty-Thorvaldsdóttir is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nFarhan Chakraborty-Thorvaldsdóttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -160,7 +160,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,28 +173,15 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Ferrogate Transit",
     "The Shelf",
+    "GLMZ",
     "The Peninsula",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "Chicago",
-    "Crucible RE-2 'Receptionist'",
-    "Dayo Prochazka-Sillah",
-    "Dragan Petersen-Bah",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nkechi Alvarado-Ostrowski",
-    "Obafemi Szczypiński-Lautoa",
-    "Scarecrow",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA PG-2 'Signature'",
-    "The Corridor",
-    "The Pure Hand",
-    "VitaCore LinguaSync Real-Time Translation Implant",
-    "Yannick Tofauti-Szarvásy"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European with significant Southeast Asian, Northern European, Hispanic/Latin American, and Sub-Saharan African ancestry; a complex genetic mosaic reflected in warm medium-brown skin with subtle golden undertones, characteristic of multi-regional blending",
+    "heritage": "Northern European (39.2%), South Asian (38.6%), and Eastern European (22.2%) ancestry create a striking balanced phenotype—high, pronounced cheekbones from South Asian genetics softened by Northern European bone structure, with the slightly broader facial width characteristic of Eastern European heritage; warm medium brown skin with golden undertones from the South Asian component balanced against cooler undertones from Northern and Eastern European ancestry, creating a complex warm-neutral tone; the genetic blend produces an angular, distinctive face where no single ancestry dominates",
     "height_cm": 135,
     "weight_kg": 28,
     "build": "Slight and wiry for her age, all lean muscle from constant running; shoulders already developing the forward hunch of someone who carries weight in patched pockets",
@@ -202,28 +189,58 @@
     "hair_style": "Uneven puffs sectioned across her scalp, each bundle tied with whatever elastic was available that morning—mismatched colors, some showing strain",
     "hair_length": "Medium (3-4 inches per puff)",
     "eye_color": "Dark brown, alert and restless",
-    "skin_tone": "Warm medium brown with golden undertones; the slight ashy quality of someone who lives indoors under artificial light, creating a subtle matte finish across cheekbones and forehead",
-    "complexion": "Slightly angular face with high, pronounced cheekbones reflecting Southeast Asian ancestry, softened by the broader facial structure of Eastern European heritage; gap-toothed smile (missing one upper molar—extraction, not loss), fine scar tissue on her left cheekbone from a childhood scrape, perpetually flushed cheeks with warmth showing readily across bronze-toned skin",
+    "skin_tone": "Medium warm brown with subtle golden undertones from South Asian ancestry balanced against cooler undertones from Northern and Eastern European heritage; the slight ashy quality of someone who lives indoors under artificial light creates a subtle matte finish across cheekbones and forehead",
+    "complexion": "Balanced angular face with high, pronounced cheekbones reflecting the South Asian component, strengthened by Northern European bone structure and the slightly broader facial proportions of Eastern European heritage; gap-toothed smile (missing one upper molar—extraction, not loss), fine scar tissue on left cheekbone from childhood scrape, perpetually flushed cheeks with warmth showing readily across warm-toned skin",
     "distinguishing_marks": [
       "Thin white scar running 2cm along left cheekbone, pale against medium-brown skin",
-      "Callus marks on her index and middle fingers from grip friction on package bundles",
-      "Faint chemical stains on the cuticles of her fingernails from solvent exposure",
-      "Small burn mark on her inner right wrist (diameter: 0.5cm), years old, from a radiator"
+      "Callus marks on index and middle fingers from grip friction on package bundles",
+      "Faint chemical stains on cuticles of fingernails from solvent exposure",
+      "Small burn mark on inner right wrist (diameter: 0.5cm), years old, from a radiator"
     ],
     "visible_augmentations": "None. Completely biological.",
-    "posture_movement": "Constantly in motion even when standing still—weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. She moves with the economical precision of someone navigating crowded spaces; no wasted energy. Her smile is deployed deliberately, switching on and off like a data toggle.",
-    "clothing_style": "Signature patchwork jacket assembled from three salvaged jackets—tan synthleather, faded blue denim, charcoal poly-blend—stitched together with visible black thread in a chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
+    "posture_movement": "Constantly in motion even when standing still—weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. Moves with economical precision through crowded spaces; no wasted energy. Smile deployed deliberately, switching on and off like a data toggle.",
+    "clothing_style": "Signature patchwork jacket assembled from three salvaged jackets—tan synthleather, faded blue denim, charcoal poly-blend—stitched together with visible black thread in chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
   },
-  "image_prompt": "Slate Johansson-Thorvaldsdóttir, 135cm tall mixed-heritage girl (Eastern European, Southeast Asian, Northern European, Hispanic, Sub-Saharan African ancestry), warm medium-brown skin with golden undertones, alert dark brown eyes, natural black hair in uneven puffs with mismatched colored elastics. Angular face with high cheekbones, gap-toothed smile, fine scar on left cheekbone, flushed bronze-toned cheeks. Constantly shifting weight, restless hands with callus marks and solvent-stained cuticles. Wearing signature three-piece patchwork jacket (tan synthleather, faded blue denim, charcoal poly-blend) with visible black stitching and dozens of pockets, long-sleeve thermal underneath. Small pale burn scar on inner right wrist. Economical, precise movement through crowded neon-lit Great Lakes Metropolitan Zone, 2226. Cyberpunk scavenger aesthetic, tier 5 salvage culture. Cool overhead LED lighting casting sharp shadows, industrial warehouse or market corridor setting, rain-slicked surfaces reflecting neon. Cinematic cyberpunk realism, gritty urban density --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Farhan, a 135cm tall young street courier with mixed Northern European, South Asian, and Eastern European ancestry. Medium warm brown skin with golden undertones and matte finish from indoor living. High angular cheekbones, gap-toothed smile, thin scar on left cheek. Dark alert eyes. Natural black hair in uneven puffs tied with mismatched elastics. Wearing a chaotic patchwork jacket made from tan synthleather, faded blue denim, and charcoal poly-blend, heavily patched and stitched with black thread, covered in visible salvage pockets. Long-sleeve cheap thermal underneath. Chemical stains on fingernails, callus marks on grip fingers, small burn scar on inner wrist. Slight wiry build, constantly restless posture. Great Lakes Metropolitan Zone Tier 5 scavenger aesthetic. Neon-lit underpass or warehouse setting, cool LED lighting casting shadows across angular features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 39.0,
-    "Southeast Asian": 25.4,
-    "Northern European": 15.5,
-    "Hispanic/Latin American": 11.2,
-    "Sub-Saharan African": 8.9
+    "Northern European": 39.2,
+    "South Asian": 38.6,
+    "Eastern European": 22.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 25.2,
+        "Swiss German": 14
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 10.8
+      },
+      "Indian": {
+        "Kannada": 4.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 15.5,
+        "Pashtun": 7.6
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 4.5,
+        "Bulgarian": 2.9
+      },
+      "Slavic West": {
+        "Czech": 11.7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 3.1
+      }
+    }
+  }
 }

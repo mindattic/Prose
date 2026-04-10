@@ -115,7 +115,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is QUANTA, symbol Φ. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is QUANTA, symbol Φ. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. Cultural traditions persist but are shared freely across all backgrounds.
 
@@ -150,7 +150,7 @@ const CATEGORIES = [
   {
     category: 'uniform',
     count: 50,
-    prompt: `Generate {count} UNIFORM apparel items for Meridian 88, year 2200. These are work uniforms, corporate wear, and service clothing. Include a diverse mix of:
+    prompt: `Generate {count} UNIFORM apparel items for GLMZ, year 2200. These are work uniforms, corporate wear, and service clothing. Include a diverse mix of:
 - CorpSec tactical gear (body armor integrated, threat-response fabrics) for multiple corponations: Arcturus, TESSERA, Ringo, Ouroboros, Vantablack, Lazarus, Crucible — each with distinct design language
 - Corporate office wear by corponation (branded blazers, smart-fabric suits, company-mandated attire)
 - Medical scrubs and surgical gowns (aug-compatible, biohazard-rated)
@@ -163,7 +163,7 @@ Each uniform should feel like something a real person wears to work. Brand names
   {
     category: 'formal_wear',
     count: 50,
-    prompt: `Generate {count} FORMAL WEAR apparel items for Meridian 88, year 2200. Range from Shelf-formal (the cleanest thing you own, maybe hand-repaired once-nice clothes) to Spire gala couture (holographic thread, self-adjusting fit, privacy-weave). Include:
+    prompt: `Generate {count} FORMAL WEAR apparel items for GLMZ, year 2200. Range from Shelf-formal (the cleanest thing you own, maybe hand-repaired once-nice clothes) to Spire gala couture (holographic thread, self-adjusting fit, privacy-weave). Include:
 - Suits (synth-fabric to real-wool, aug-compatible cuts with chrome-display panels)
 - Dresses and gowns (bioluminescent hems, geneware-accommodating cuts for tails/wings)
 - Tuxedos (classic and futuristic, some with integrated BCI-responsive color shifting)
@@ -175,7 +175,7 @@ The gap between Shelf-formal and Spire-formal should be viscerally clear. A Shel
   {
     category: 'cultural_subcultural',
     count: 50,
-    prompt: `Generate {count} CULTURAL and SUBCULTURAL apparel items for Meridian 88, year 2200. These are identity-signaling garments. Include:
+    prompt: `Generate {count} CULTURAL and SUBCULTURAL apparel items for GLMZ, year 2200. These are identity-signaling garments. Include:
 - Gang insignia clothing (colors, patterns, specific garment modifications that signal affiliation)
 - Runner gear (tactical casual — looks normal but has concealed carry, signal-blocking, quick-release)
 - Shelf street fashion (DIY, patchwork, repurposed corporate uniforms turned into anti-corporate statements, visible repair as aesthetic)
@@ -189,7 +189,7 @@ These items tell the world who you are or who you want them to think you are. Pr
   {
     category: 'protective_work',
     count: 50,
-    prompt: `Generate {count} PROTECTIVE and WORK apparel items for Meridian 88, year 2200. Functional gear that keeps people alive. Include:
+    prompt: `Generate {count} PROTECTIVE and WORK apparel items for GLMZ, year 2200. Functional gear that keeps people alive. Include:
 - Hazmat suits (chemical, biological, radiological — different grades for different threats)
 - Radiation gear (for workers near reactors, irradiated zones, cargo handling)
 - Welding aprons and gear (for augment installation techs, industrial welders, chop-shop operators)
@@ -231,7 +231,7 @@ async function generateCategory(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate apparel entries for the world of Meridian 88, year 2200. Return ONLY a JSON array of exactly ${batchSize} apparel objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate apparel entries for the world of GLMZ, year 2200. Return ONLY a JSON array of exactly ${batchSize} apparel objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

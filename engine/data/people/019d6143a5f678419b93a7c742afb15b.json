@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f678419b93a7c742afb15b",
   "type": "character",
-  "name": "Remi Kovalenko-Adeyemi",
+  "name": "Remi Jeong-Balasanyan",
   "aliases": [
     "Drez",
     "The Skin Man"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Laceworks, Ironvein, near Lincoln and Belmont",
-  "description": "Dresdan is lean and precise-looking in the way that suggests either discipline or hunger — in his case it's mostly discipline, with hunger underneath. His skin is deep brown and he has voluntarily undergone a bioluminescent dermal treatment that makes his forearms and the sides of his neck glow a faint pulsing teal in low light — not Helix-certified work, his own. He keeps his hair short and wears a pair of magnifying optics on a headband that he pushes up when not in use, giving him a permanently slightly academic look. His hands are always impeccably clean. His fingernails are trimmed to the millimeter. He smells faintly of antiseptic and something floral he hasn't identified the source of.\n\nDresdan is not a doctor. He has never claimed to be. He is very careful about this. What he is, is someone who has read everything available about gene-cosmetic application, has practiced on himself for eight years, and has a 94% satisfaction rate among his returning clients. He operates out of a converted textile workshop in the Laceworks, curtained into sections, scrupulously clean. He sells regulated cosmetic mods at street prices and a curated selection of pharmaceutical compounds — mood stabilizers, pain management, focus enhancers — sourced from a supply chain he describes only as 'reliable.' He is proud of his work in the specific, anxious way of someone who knows that one bad batch could end everything.",
+  "description": "Remi Jeong-Balasanyan is lean and precise-looking in the way that suggests either discipline or hunger — in his case it's mostly discipline, with hunger underneath. His skin is deep brown and he has voluntarily undergone a bioluminescent dermal treatment that makes his forearms and the sides of his neck glow a faint pulsing teal in low light — not Helix-certified work, his own. He keeps his hair short and wears a pair of magnifying optics on a headband that he pushes up when not in use, giving him a permanently slightly academic look. His hands are always impeccably clean. His fingernails are trimmed to the millimeter. He smells faintly of antiseptic and something floral he hasn't identified the source of.\n\nRemi Jeong-Balasanyan is not a doctor. He has never claimed to be. He is very careful about this. What he is, is someone who has read everything available about gene-cosmetic application, has practiced on himself for eight years, and has a 94% satisfaction rate among his returning clients. He operates out of a converted textile workshop in the Laceworks, curtained into sections, scrupulously clean. He sells regulated cosmetic mods at street prices and a curated selection of pharmaceutical compounds — mood stabilizers, pain management, focus enhancers — sourced from a supply chain he describes only as 'reliable.' He is proud of his work in the specific, anxious way of someone who knows that one bad batch could end everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -163,7 +163,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,24 +184,11 @@
     "WELLSPRING",
     "Ironvein",
     "The Pure Hand",
-    "Nightlight",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Helix Biosystems",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Ringo RE-2 'Scarab'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Corponation",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Nightlight"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Central Asian, Eastern European, Sub-Saharan African, Northern European, and South Asian blend. Remi's ancestry creates a striking phenotype: warm brown skin with golden undertones from Central Asian and South Asian heritage mixing with Sub-Saharan depth. Facial structure reflects the high cheekbones and angular features of Eastern European ancestry softened by the broader facial geometry of African heritage. The overall effect is distinctive and difficult to place at first glance—a true product of the Ubiquitous Diaspora.",
+    "heritage": "Complex diaspora phenotype reflecting 55% East Asian, 27% Middle Eastern, 11% South Asian, and 7% Sub-Saharan African ancestry. Remi's appearance synthesizes these regional traits into a distinctive whole: the East Asian foundation provides the baseline facial geometry and eye shape, while Middle Eastern heritage adds warmth and slight broadness to the face, South Asian ancestry contributes to lip fullness and nasal structure, and Sub-Saharan heritage deepens and enriches overall skin tone. The result is unmistakably mixed-heritage—a visual signature of the Ubiquitous Diaspora.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and economical, with visible muscle definition in forearms and shoulders from steady precision work. No excess — disciplined rather than ascetic.",
@@ -209,8 +196,8 @@
     "hair_style": "Cropped close to scalp, neat and functional",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm golden-brown with depth. The tone has a luminous quality—neither purely cool nor warm, but a balanced amber-brown that catches light subtly",
-    "complexion": "Clean-shaven, skin unblemished and scrupulously maintained. Facial structure shows the angular, high cheekbones of Eastern European ancestry blended with the broader nose and fuller lip definition of Sub-Saharan heritage. Expression often concentrated, slightly furrowed brow from magnifying work. Fine-featured overall with a precise jawline.",
+    "skin_tone": "Medium golden-brown with warm amber undertones. The tone reflects the synthesis of East Asian warmth, Middle Eastern richness, South Asian depth, and Sub-Saharan African warmth—luminous quality that catches light subtly across the cheekbones and bridge of nose.",
+    "complexion": "Clean-shaven, skin unblemished and scrupulously maintained. Facial structure shows the slightly elevated cheekbones and angular geometry characteristic of East Asian ancestry, tempered by the fuller lips and slightly broader nasal structure from Middle Eastern and South Asian heritage. Expression often concentrated, slightly furrowed brow from magnifying work. Fine-featured overall with a precise jawline and balanced proportions.",
     "distinguishing_marks": [
       "Bioluminescent teal dermal treatment covering both forearms in organic, vein-like patterns that pulse faintly in low light",
       "Matching bioluminescent treatment along both sides of neck from jaw to clavicle in subtle wave patterns"
@@ -219,16 +206,43 @@
     "posture_movement": "Upright, economical posture suggesting both discipline and wariness. Hands move with deliberate precision — no wasted motion. When seated, often examines his own hands with clinical detachment. Gait is measured and careful, never rushed even in crowds.",
     "clothing_style": "Tier 4 working-professional aesthetic. Clean, fitted dark utility jacket (charcoal or deep blue) with multiple internal pockets for tools and samples. Thermal-responsive undershirt. Precise black slacks with minimal wear. Worn leather gloves when handling supplies, removed during client consultations to display immaculate hands. No jewelry. A faded cloth bracelet on left wrist — origin unknown, never mentioned. Keeps workspace coat (light gray, clinically clean) folded within arm's reach."
   },
-  "image_prompt": "Portrait of Remi Kovalenko-Adeyemi, 2226 cyberpunk era. A 178cm lean-muscled figure with warm golden-brown skin and angular cheekbones blending Eastern European and Sub-Saharan African features. Natural black hair cropped close to scalp, dark brown eyes with focused, clinical expression. Wearing charcoal utility jacket over thermal-responsive undershirt, precise black slacks, worn leather gloves draped over one hand. Magnifying optics headband pushed up on crown. Bioluminescent teal dermal treatment visible along forearms in vein-like patterns and along both sides of neck in wave patterns, pulsing faintly. Faded cloth bracelet on left wrist. Upright, disciplined posture in sterile workspace or clinical setting. Cool tungsten lighting highlighting the subtle glow of bioluminescent implants. Atmosphere: precise, measured, intelligent, slightly detached. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Remi Jeong-Balasanyan, mixed-heritage precision technician in GLMZ. Medium golden-brown skin, dark natural eyes, close-cropped black hair. Fine-featured with slightly elevated cheekbones and angular geometry softened by fuller lips and broader nasal structure—distinctly diaspora phenotype. Magnifying optics headband pushed up on crown. Bioluminescent teal dermal treatments visible on both forearms and neck in organic vein-like patterns, faintly pulsing. Wearing charcoal utility jacket with multiple pockets, thermal-responsive undershirt, immaculate black slacks, leather gloves at hand. Upright disciplined posture, hands positioned with clinical precision. Workspace interior with soft overhead lighting catching the glow of dermal implants. Faded cloth bracelet on left wrist. Expression concentrated and focused. Neo-noir urban aesthetic, professional and controlled. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 28.9,
-    "Eastern European": 26.9,
-    "Sub-Saharan African": 21.3,
-    "Northern European": 13.0,
-    "South Asian": 9.9
+    "East Asian": 55.1,
+    "Middle Eastern": 26.7,
+    "South Asian": 10.9,
+    "Sub-Saharan African": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 24.8
+      },
+      "Japanese": {
+        "Japanese": 30.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 13.7
+      },
+      "Persian": {
+        "Iranian": 13
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 10.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 7.3
+      }
+    }
+  }
 }

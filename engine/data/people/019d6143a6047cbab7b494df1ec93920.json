@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6047cbab7b494df1ec93920",
   "type": "character",
-  "name": "Indigo Ozcoidi",
+  "name": "Indigo Nkrumah",
   "aliases": [
     "Downdraft",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Erkin Nordin-Asante-Mensah is average height but with a presence that fills more space than the body accounts for. At 36, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Erkin Nordin-Asante-Mensah describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Indigo Nkrumah is average height but with a presence that fills more space than the body accounts for. At 36, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Indigo Nkrumah describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.29,
@@ -261,7 +261,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,33 +281,15 @@
     "Adaptive Camouflage Skin",
     "Masquerade",
     "The Unfinished Theorem",
+    "Chicago",
+    "Indigo",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Crucible RE-2 'Receptionist'",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Sulfur Crown Agriculture",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TX-12 'Chorus'",
-    "Tessera Corponation",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tessera Networked SMG TNSM-3 'Chorus'",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American majority with Northern European and Southeast Asian ancestry — high Indigenous American heritage dominates her phenotype with secondary Northern European and Southeast Asian features creating a complex mixed appearance",
+    "heritage": "Complex pan-global ancestry: Southeast Asian plurality (33.2%) provides eye structure and mid-face geometry; Sub-Saharan African (30.0%) contributes cheekbone prominence, jawline definition, and depth to skin tone; Indigenous American (23.8%) shapes orbital bones and brow ridge; Northern European (13.0%) adds subtle nasal bridge definition and cool undertones. The result is a distinctively blended phenotype where no single ancestry dominates but all four create a cohesive, dimensional whole.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and efficient, muscular without bulk — legs carry visible definition from synthetic muscle fiber replacement, compact upper body built for sustained activity rather than power",
@@ -315,25 +297,60 @@
     "hair_style": "Pulled back in a tight braid, practical and deliberate",
     "hair_length": "Medium",
     "eye_color": "Steel gray with faint amber iridescence — natural iris with slight chromatic shift from proximity to dermal augmentation",
-    "skin_tone": "Medium-warm with deep undertones reflecting Indigenous American heritage, slightly cooler-toned from Northern European admixture, subtle warm undertones from Southeast Asian ancestry — a harmonious blend creating rich, dimensional warmth",
-    "complexion": "Strong Indigenous American cheekbone prominence, balanced jawline with subtle angular features. Southeast Asian softness around the eyes and mid-face blends with Northern European definition. Skin is clear but marked by the visible chromatic shimmer of dermal camouflage cells beneath the surface — an opalescent quality most visible under direct light, like oil on water. No visible scarring on face; controlled grooming suggests intentional presentation",
+    "skin_tone": "Rich warm medium brown with dimensional undertones: the depth of Sub-Saharan African genetics, the golden warmth of Southeast Asian ancestry, earthy richness from Indigenous American heritage, and subtle cool undertones from Northern European admixture. Creates a complex finish that shifts luminously in different lighting.",
+    "complexion": "Southeast Asian eye shape and mid-face structure; Sub-Saharan African cheekbone prominence and defined jawline; Indigenous American orbital bone structure visible in eye-set and brow ridge; Northern European nasal bridge definition and skin clarity evident. Facial features show seamless integration of all four ancestry components. Skin marked by visible chromatic shimmer of dermal camouflage cells beneath surface — opalescent quality most visible under direct light, like oil on water. Controlled grooming, no facial scarring.",
     "distinguishing_marks": [
       "Faint linear scar along left collarbone, approximately 4cm, barely visible except in certain light — old corporate security incident",
       "Chromatic skin pigmentation across shoulders and upper arms shifts between slate gray and subtle iridescent green depending on light and mood — dermal camouflage cells at work",
       "Small tattoo on inner right wrist: geometric pattern resembling a circuit node, black ink, 2cm diameter — runner marker"
     ],
-    "visible_augmentations": "Dermal camouflage creates a subtle iridescent sheen across exposed skin — shoulders, neck, upper arms, the crown of her head where hair pulls back. The effect is not obvious at casual glance but becomes apparent in direct light or when she moves. Legs show definition and muscularity inconsistent with her lean frame — synthetic muscle fiber replacement visible as faint linear architecture under skin when legs are exposed. Movement is precise, economical — no wasted motion.",
+    "visible_augmentations": "Dermal camouflage creates a subtle iridescent sheen across exposed skin — shoulders, neck, upper arms, the crown of her head where hair pulls back. Effect appears apparent in direct light or when she moves. Legs show definition and muscularity inconsistent with her lean frame — synthetic muscle fiber replacement visible as faint linear architecture under skin when legs are exposed.",
     "posture_movement": "Stands with weight distributed forward, ready. Moves deliberately, steps carefully — synthetic legs are fast but poor on uneven terrain. When stationary, she rarely fidgets; when in motion, every gesture has purpose. Eyes track movement and exits. Her presence seems to expand past her actual physical footprint despite average height — intense awareness and controlled tension create the illusion of taking up more space",
-    "clothing_style": "Tier 3-4 utilitarian streetwear: reinforced synth-leather jacket (charcoal gray, no logos) worn over layered thermal undershirt. Black cargo pants with multiple pockets and security zips, tactical boots with heavy tread for uneven terrain. Minimal jewelry — only a slim data-bracelet on left wrist (encrypted, encrypted). No corpo branding, no luxury markers. Everything is functional, durable, replaceable. Clothing is maintained but not pristine; the wear is honest and recent"
+    "clothing_style": "Tier 3-4 utilitarian streetwear: reinforced synth-leather jacket (charcoal gray, no logos) worn over layered thermal undershirt. Black cargo pants with multiple pockets and security zips, tactical boots with heavy tread for uneven terrain. Minimal jewelry — only a slim data-bracelet on left wrist (encrypted). No corpo branding, no luxury markers. Everything is functional, durable, replaceable. Honest wear."
   },
-  "image_prompt": "Indigo Ozcoidi, 168cm lean runner with Indigenous American dominant heritage, medium-warm rich skin tone with subtle iridescence from dermal camouflage augmentation, sharp Indigenous cheekbones, steel gray eyes with amber iridescence, dark brown hair with silver threads pulled back in tight braid. Charcoal gray synth-leather jacket over thermal layers, black tactical cargo pants, heavy-tread boots. Synthetic muscle fiber visible in defined legs. Standing ready with forward weight distribution, precise controlled posture, data-bracelet on left wrist. Faint linear scar on collarbone. Cyberpunk 2226 GLMZ runner aesthetic, neon-lit urban street corner at night, dramatic side-lighting emphasizing the opalescent shimmer of dermal tech under her skin, cool blue and warm amber accent lighting, gritty industrial background, intense focused presence, no emotion on resting face --ar 2:3 --v 6",
+  "image_prompt": "Indigo Nkrumah, GLMZ, medium brown woman with warm dimensional skin tone reflecting Southeast Asian, Sub-Saharan African, Indigenous American, and Northern European ancestry. Steel gray eyes with amber iridescence. Dark brown hair with silver threads pulled back in tight braid. Lean muscular build, 168cm tall. Charcoal gray reinforced synth-leather jacket over thermal undershirt, black tactical cargo pants, heavy-tread boots. Subtle iridescent dermal camouflage shimmer visible on shoulders, neck, upper arms in direct light. Data-bracelet on left wrist. Standing ready posture, economical movement, intense focused presence. Faint scar on left collarbone. Geometric circuit tattoo on inner right wrist. No logos, no luxury markers, functional streetwear. Great Lakes Metropolitan Zone setting, neon-tinged neo-noir lighting, moody atmospheric, ready operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 55.5,
-    "Northern European": 29.8,
-    "Southeast Asian": 14.7
+    "Southeast Asian": 33.2,
+    "Sub-Saharan African": 30,
+    "Indigenous American": 23.8,
+    "Northern European": 13
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 16.6
+      },
+      "Thai": {
+        "Thai": 6.5
+      },
+      "Filipino": {
+        "Cebuano": 5.6,
+        "Tagalog": 4.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 30
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 23.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 1.7,
+        "Swedish": 0.9
+      },
+      "British Isles": {
+        "Welsh": 3.6,
+        "Irish": 6.8
+      }
+    }
+  }
 }

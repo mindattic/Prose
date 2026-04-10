@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6387b1cb829ca0327d685ac",
   "type": "character",
-  "name": "Abiodun Asomaning",
+  "name": "Echo Watanabe",
   "aliases": [
     "Iso",
     "the Ice Queen (behind her back)"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Aurochs Medical Complex, Trauma Bay Seven, near Fullerton and Damen",
-  "description": "Isolde is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
+  "description": "Echo Watanabe is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -193,7 +193,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,33 +250,12 @@
   "related_entities": [
     "Aurochs Medical Complex",
     "Helix Biosystems",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Lacuna Genomics",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Pneumatic Gauntlet PG-1 'Pile Driver'",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Crucible Industries Kinetic Knuckles KK-3 'Jackhammer'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kamala Blomberg-Konadu",
-    "Last Word",
-    "Makena Johanssen-Diallo",
-    "Osvaldo Nkrumah-Serebryakov",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Patience",
+    "Lacuna Genomics"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly Sub-Saharan African (28.2%), Eastern European (21.4%), and Indigenous American (18.2%), with significant East Asian (15.0%), Northern European (10.0%), and South Asian (7.2%) admixture. Features reflect this intricate blend—bone structure shows the angular geometry of East African and Eastern European genetics, with subtle broadness in the cheekbones and orbital structure from Indigenous American heritage, and refined tapering in the lower face from East and South Asian ancestry.",
+    "heritage": "Complex diaspora ancestry: predominantly East Asian (41.5%), South Asian (25.4%), Sub-Saharan African (12.2%), Eastern European (10.9%), Central Asian (5.6%), and Hispanic/Latin American (4.4%). Features reflect this intricate blend—bone structure shows the refined angularity of East Asian and Central Asian genetics with pronounced cheekbones and orbital structure characteristic of South Asian heritage, softened by warmth from Sub-Saharan African and Eastern European admixture. Lower face shows graceful tapering common to East and South Asian ancestry, with subtle jaw width from African genetics. The confluence creates a distinctly cosmopolitan phenotype marked by high definition facial architecture and warm, even complexion depth.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Tall and angular with minimal soft tissue; lean musculature developed through sustained posture and fine motor control rather than exercise. Shoulders slightly rounded forward from decades of surgical stance.",
@@ -284,8 +263,8 @@
     "hair_style": "Precision-cut bob, self-maintained with surgical shears, blunt edges, no styling product",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint metallic sheen at the margins (ocular magnification implants)",
-    "skin_tone": "Warm medium brown with subtle golden undertones—a balanced blend of Sub-Saharan depth with Eastern European and South Asian warmth, creating an even, luminous complexion without visible hyperpigmentation patterns",
-    "complexion": "Minimal makeup; skin shows disciplined care but no vanity. Facial structure reflects the ancestry blend: high, defined cheekbones with slight width characteristic of East African and Indigenous American heritage, softened by the refined tapering of East and South Asian influence. Fine lines around the eyes and mouth from years of surgical focus and compressed stress. Hands show surgical calluses on index and middle fingers.",
+    "skin_tone": "Warm medium to rich brown with golden and subtle amber undertones—a balanced blend of South Asian and East Asian depth enriched by Sub-Saharan warmth and Eastern European refinement, creating an even, luminous complexion",
+    "complexion": "Minimal makeup; skin shows disciplined care but no vanity. Facial structure reflects the ancestry blend: high, defined cheekbones with graceful prominence characteristic of South and East Asian heritage, complemented by subtle warmth and deeper undertone from Sub-Saharan African genetics. Fine lines around the eyes and mouth from years of surgical focus and compressed stress. Hands show surgical calluses on index and middle fingers.",
     "distinguishing_marks": [
       "Bioluminescent tracery in cool blue along both collarbones and upper arms in delicate branching patterns; pulses faintly with elevated heart rate",
       "Thin surgical scar along the inner left forearm from a needle-stick incident, pale and nearly invisible"
@@ -294,17 +273,71 @@
     "posture_movement": "Weight balanced forward on the balls of her feet, shoulders held slightly high and forward in perpetual surgical readiness. Movements are economical and precise; no wasted motion. In conversation, she maintains steady eye contact and does not soften her expression. Walks with purpose; never appears to be in transit, always en route to something specific.",
     "clothing_style": "Aurochs Medical Complex trauma surgeon — Tier 3 salaried. Off-duty: high-collared shirts and sweaters to obscure the bioluminescent tracery, charcoal and black baseline. Dark tailored slacks, minimal jewelry. Commute apparel is functional and unremarkable. When not in scrubs, she dresses like someone who views clothing as a problem to solve rather than an expression. No logos, no aspirational branding; quality materials, zero ornamentation."
   },
-  "image_prompt": "Abiodun Asomaning, 182cm tall trauma surgeon with warm medium-brown skin reflecting Sub-Saharan African, Eastern European, Indigenous American, East Asian, and South Asian ancestry. High defined cheekbones, angular face structure, dark brown eyes with subtle metallic augmentation shimmer. Precision-cut short dark brown bob with blunt edges. Lean, economical build held in surgical posture—shoulders forward, weight on balls of feet. Wearing high-collared charcoal sweater, dark tailored slacks, minimal jewelry. Cool blue bioluminescent branching tracery pulses faintly along collarbones and upper arms, visible at neck. Fine surgical scars visible on inner left forearm. Sterile, focused expression with steady eye contact. Standing in Aurochs Medical Complex corridor with cool clinical lighting, chrome and white walls reflecting her bioluminescence. Cyberpunk 2226 GLMZ aesthetic, cool color palette with blue accent lighting. No wasted motion, perpetual readiness, professional authority, inhuman precision. --ar 2:3 --v 6",
+  "image_prompt": "Echo Watanabe, 182cm tall trauma surgeon in GLMZ, sharp angular features blending East Asian, South Asian, and Sub-Saharan African heritage. Warm golden-brown skin tone, high defined cheekbones, dark brown eyes with subtle metallic iridescence from ocular implants. Short precision-cut dark brown bob with blunt edges. Cool blue bioluminescent tracery branches delicately across exposed collarbones and upper arms, pulsing faintly. Lean muscular build, shoulders slightly forward in surgical readiness. Wearing high-collared black sweater and charcoal tailored slacks, standing with economical posture and steady eye contact. Minimalist, purposeful presence. Great Lakes Metropolitan Zone setting, cool clinical lighting with accent glow from bioluminescent implants, atmospheric neo-noir ambiance, moody and precise --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 28.2,
-    "Eastern European": 21.4,
-    "Indigenous American": 18.2,
-    "East Asian": 15.0,
-    "Northern European": 10.0,
-    "South Asian": 7.2
+    "East Asian": 41.5,
+    "South Asian": 25.4,
+    "Sub-Saharan African": 12.2,
+    "Eastern European": 10.9,
+    "Central Asian": 5.6,
+    "Hispanic/Latin American": 4.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 41.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 14.9,
+        "Sinhalese": 3.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 9.4,
+        "Nigerian": 2.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 2.4,
+        "Polish": 4.1
+      },
+      "Magyar-Romanian": {
+        "Romanian": 4.4
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 1.5
+      },
+      "Mongolic": {
+        "Mongolian": 0.8,
+        "Kalmyk": 1.2
+      },
+      "Iranian Central": {
+        "Hazara": 2.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.2
+      },
+      "South American": {
+        "Colombian": 1.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.8
+      }
+    }
+  }
 }

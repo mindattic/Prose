@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Ashland and Division",
-  "description": "Ximena Smirnov-Ankrah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of The Lattice, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nXimena Smirnov-Ankrah has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
+  "description": "Santiago Calvillo is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of The Lattice, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSantiago Calvillo has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.82,
@@ -261,7 +261,7 @@
     "Protector": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Lattice",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,35 +280,20 @@
   "related_entities": [
     "The Unfinished Theorem",
     "Burden of Longitude",
-    "Slagworks Industrial",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Djeneba Park-Traore",
-    "Glenville Sound",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "TERMINUS",
-    "The Human Baseline Alliance",
-    "The Lattice",
-    "The Quiet Room"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora: predominantly Hispanic/Latin American (38.4%) with substantial Sub-Saharan African (22.3%), Northern European (19.3%), Southeast Asian (10.7%), and East Asian (9.3%) ancestry — a genetic map of global migration patterns. Features reflect this complex blend: warm golden-brown skin with subtle olive undertones from Latin/Southern European ancestry, complemented by the structural strength in her facial geometry from African heritage, with refined cheekbones and eye shape showing Southeast/East Asian contribution.",
+    "heritage": "Pan-diaspora genetic composite: Hispanic/Latin American (31.1%) forms the warm foundational tone, substantially complemented by East Asian (26.8%) contributing refined facial geometry and eye structure, South Asian (15.2%) adding depth to skin undertones and cheekbone definition, Middle Eastern (11.1%) providing angular bone density and warm golden notes, Sub-Saharan African (9.2%) bringing structural strength to jaw and facial prominence, and Eastern European (6.6%) adding fine angular definition. Features map a complex global ancestry: warm golden-brown skin with layered undertones—olive from Latin and Middle Eastern heritage, golden from South Asian influence, with cool undertones from East Asian ancestry creating subtle chromatic depth. Facial geometry reflects this synthesis: refined cheekbones with East and South Asian delicacy balanced against the structural prominence of African heritage jawline, framed by the angular definition of Eastern European bone structure and warmed by Latin and Middle Eastern golden undertones.",
     "height_cm": 175,
     "weight_kg": 82,
-    "build": "Broad-shouldered and heavy-set, muscular without being lean — she carries weight like structural integrity. Thick through the torso and legs, built for impact and stability rather than speed.",
+    "build": "Broad-shouldered and heavy-set, muscular without being lean — carries weight like structural integrity. Thick through the torso and legs, built for impact and stability rather than speed.",
     "hair_color": "Dark brown with premature silver threading at the temples",
     "hair_style": "Pulled back tight in a functional braid, kept short enough to not catch",
     "hair_length": "Medium",
     "eye_color": "Dark brown with slight heterochromia — right eye shows minor chromatic aberration from older optic nerve work",
-    "skin_tone": "Warm golden-brown, medium depth, with subtle olive and golden undertones from the blended ancestry — carries the sun in her skin",
-    "complexion": "Strong, angular face with prominent high cheekbones showing Southeast Asian influence and a defined jaw reflecting African heritage structure. The overall geometry balances Latin warmth with Northern European bone density. Minimal grooming — functional rather than decorative. Skin shows the texture of someone who has spent time under poor lighting and worse conditions; a few hypopigmented scars from healed burns stand stark against the warm baseline.",
+    "skin_tone": "Warm golden-brown, medium depth, with layered olive and golden undertones—golden notes from South Asian and Latin heritage, subtle cool depth from East Asian ancestry, angular warmth from Middle Eastern influence, structural richness from Sub-Saharan African heritage, refined by Eastern European tone modulation. Carries the sun in her skin with complex chromatic depth.",
+    "complexion": "Strong, angular face with prominent high cheekbones showing East and South Asian influence and a defined, prominent jaw reflecting African heritage structure. Overall geometry balances Latin warmth and South Asian depth with Middle Eastern and Eastern European bone density and angular refinement. Minimal grooming — functional rather than decorative. Skin shows the texture of someone who has spent time under poor lighting and worse conditions; hypopigmented scars from healed burns stand stark against the warm baseline.",
     "distinguishing_marks": [
       "Thin linear scar running from left cheekbone to jaw angle — clean cut, professional work",
       "Burn scar on right forearm, roughly 8cm across, partially obscured by tactical sleeve when worn",
@@ -317,18 +302,73 @@
     ],
     "visible_augmentations": "Vocal modulator unit mounted at the right side of her throat — matte black chrome with recessed panel lines, no attempt at concealment. Faint scarring around the installation site. Neural interface jack at base of skull is visible when hair is pulled back — dark titanium-alloy insertion point with barely-healed tissue around it, still showing minor inflammation.",
     "posture_movement": "Moves with deliberate economy — no wasted motion, every shift of weight calculated. Stands with weight forward, ready to move or strike. Rests with shoulders slightly tense. Maintains baseline situational awareness even in downtime; her eyes catalog exits and threats reflexively.",
-    "clothing_style": "Tier 3-4 practical combat wear — reinforced synthdenim jacket in charcoal with tactical pockets, worn over a high-collar undershirt that conceals the throat modulator slightly. Cargo pants in matte black with cargo webbing. Scuffed but maintained combat boots with steel toes. No logos or affiliation markers. Wears a worn leather jacket over everything on contracts — scarred, oil-stained, anonymous. Off-contract, she wears cheaper neutral clothing from discount retailers to blend into Tier 4 pedestrian spaces."
+    "clothing_style": "Tier 3-4 practical combat wear — reinforced synthdenim jacket in charcoal with tactical pockets, worn over a high-collar undershirt that conceals the throat modulator slightly. Cargo pants in matte black with cargo webbing. Scuffed but maintained combat boots with steel toes. No logos or affiliation markers. Wears a worn leather jacket over everything on contracts — scarred, oil-stained, anonymous. Off-contract, wears cheaper neutral clothing from discount retailers to blend into Tier 4 pedestrian spaces."
   },
-  "image_prompt": "Santiago Calvillo, 175cm tall, muscular broad-shouldered woman with warm golden-brown skin and high cheekbones, dark brown hair with silver threading pulled tight in a functional braid. Dark brown eyes with chromatic aberration in right eye. Linear scar from left cheekbone to jaw, burn scar on right forearm. Matte black chrome vocal modulator at throat with visible scarring, barely-healed neural jack at base of skull. Wearing reinforced charcoal synthdenim jacket over high-collar undershirt, matte black cargo pants with webbing, scuffed steel-toe combat boots. Worn oil-stained leather jacket. Stance is forward-weighted and alert, ready to move. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit underground contract space, cool blue-orange lighting casting dramatic shadows across her scarred face and augmentations, gritty industrial background, atmospheric haze, cinematic, hyperrealistic detail --ar 2:3 --v 6",
+  "image_prompt": "Santiago Calvillo, 2226 neo-noir operative, 175cm broad-shouldered heavy-set muscular build, warm golden-brown skin with layered olive and golden undertones reflecting pan-diaspora heritage (Hispanic/Latin American, East Asian, South Asian, Middle Eastern, Sub-Saharan African, Eastern European), strong angular face with prominent high cheekbones and defined African-heritage jawline, dark brown eyes with heterochromia in right eye, dark brown hair with silver at temples pulled back tight in functional braid. Visible augmentations: matte black chrome vocal modulator at right throat, neural interface jack at skull base with barely-healed scarring. Distinguishing scars: thin linear scar left cheekbone to jaw, burn scar right forearm, pale scar tissue at neural jack site. Wearing reinforced charcoal synthdenim tactical jacket over high-collar undershirt, matte black cargo pants with webbing, scuffed steel-toe combat boots, worn oil-stained leather jacket, no logos. Stance forward-weighted and alert, economy of movement, calculating and tense. Neo-noir dystopian urban setting with neon-lit shadows, cool blue and amber lighting, industrial architecture, rain-slicked surfaces, late-cycle capitalism aesthetic, gritty and worn. Mood: dangerous precision, hardened operative in downtime observation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 38.4,
-    "Sub-Saharan African": 22.3,
-    "Northern European": 19.3,
-    "Southeast Asian": 10.7,
-    "East Asian": 9.3
+    "Hispanic/Latin American": 31.1,
+    "East Asian": 26.8,
+    "South Asian": 15.2,
+    "Middle Eastern": 11.1,
+    "Sub-Saharan African": 9.2,
+    "Eastern European": 6.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 7.2,
+        "Puerto Rican": 17.5
+      },
+      "South American": {
+        "Peruvian": 6.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 13.1,
+        "Mandarin Northern": 13.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.2
+      },
+      "Indian": {
+        "Gujarati": 5.5,
+        "Marathi": 1.5
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9.5
+      },
+      "Arab Gulf": {
+        "Yemeni": 0.1
+      },
+      "Persian": {
+        "Afghan Dari": 0.4,
+        "Iranian": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 7.8,
+        "Mozambican": 1.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 1.2,
+        "Czech": 3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.2,
+        "Romanian": 0.2
+      }
+    }
+  }
 }

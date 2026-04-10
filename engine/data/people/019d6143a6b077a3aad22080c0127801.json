@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b077a3aad22080c0127801",
   "type": "character",
-  "name": "Vale Kjellberg-Faalele",
+  "name": "Efua Asomaning-Szabó",
   "aliases": [
     "Skins",
     "The Coat Man"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Burnished Market, stall row 7, north face, near Armitage and Milwaukee",
-  "description": "Renzo is long-limbed and restless, always in motion — adjusting a display, flipping a collar, draping a jacket on a passing stranger's shoulders to show them how it falls. His Polynesian-Polish heritage gives him a broad face and prominent cheekbones, and he's invested in geneware that makes his skin display faint bioluminescent patterns across his arms and neck: slow-shifting geometric shapes in blue-white that he programs seasonally. His hair is a towering installation in itself, grown long and restructured with color-shifting gel into something between a wave crest and a crown, currently cycling through sunset oranges.\n\nHe sells three things: replica high-fashion pieces indistinguishable from the real thing to anyone without a scanner, genuinely creative original clothing he designs himself at night, and — quietly, to the right people — fabricated identity documents that can fool mid-tier corponation scanners. He speaks about fashion with an almost religious reverence that's entirely sincere, and speaks about the IDs as if they don't exist. He's charming in the exhausting way of someone who has never been allowed to stop performing.",
+  "description": "Efua Asomaning-Szabó is long-limbed and restless, always in motion — adjusting a display, flipping a collar, draping a jacket on a passing stranger's shoulders to show them how it falls. His Polynesian-Polish heritage gives him a broad face and prominent cheekbones, and he's invested in geneware that makes his skin display faint bioluminescent patterns across his arms and neck: slow-shifting geometric shapes in blue-white that he programs seasonally. His hair is a towering installation in itself, grown long and restructured with color-shifting gel into something between a wave crest and a crown, currently cycling through sunset oranges.\n\nHe sells three things: replica high-fashion pieces indistinguishable from the real thing to anyone without a scanner, genuinely creative original clothing he designs himself at night, and — quietly, to the right people — fabricated identity documents that can fool mid-tier corponation scanners. He speaks about fashion with an almost religious reverence that's entirely sincere, and speaks about the IDs as if they don't exist. He's charming in the exhausting way of someone who has never been allowed to stop performing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,28 +251,12 @@
     "The Burnished Market",
     "Meridian Core",
     "The Heritage Vault",
-    "Compass Rose",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus NX-1 'Sandman'",
-    "Bryndís Kouyaté-Semenenko",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Flicker",
-    "Grosse Pointe Enclosure",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "MERIDIAN",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Tessera Corponation",
-    "The Bazaar",
-    "The Burden Clause",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Zheng-dao Bioelectric"
+    "Sunset Karaoke & Kitchen",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander, Southeast Asian, Northern European, Sub-Saharan African, and Eastern European ancestry in complex blend: 30% Pacific Islander warmth and bone structure, 23% Southeast Asian facial geometry, 20% Northern European height and angular build, 15% Sub-Saharan African skin depth and feature prominence, 12% Eastern European cheekbone definition",
+    "heritage": "Eastern European, Sub-Saharan African, Northern European, East Asian, and Southeast Asian ancestry in complex blend: 57.8% Eastern European providing sharp cheekbone definition and angular facial geometry, 26.4% Sub-Saharan African contributing warm skin depth, feature prominence, and luminous richness, 9.7% Northern European influencing height and lean angular build, 4.7% East Asian adding subtle eye shape and facial refinement, 1.4% Southeast Asian contributing minor structural elements. Result is a warm medium-brown complexion with golden-olive undertones that shifts subtly in different light—rich depth from the African and Eastern European ancestry balanced by luminosity from Northern European influence.",
     "height_cm": 188,
     "weight_kg": 76,
     "build": "Long-limbed and angular, naturally lean with defined shoulders and wrists. Moves with restless energy — perpetually adjusting, gesturing, never quite still.",
@@ -280,27 +264,73 @@
     "hair_style": "Long, restructured into a dramatic wave-crest or crown formation using color-shift gel and styling compounds",
     "hair_length": "Long (shoulder-length minimum, styled upward)",
     "eye_color": "Dark brown, with AR overlay contacts that occasionally flash faint augmentation UI",
-    "skin_tone": "Warm medium-brown with olive and golden undertones — the rich complexity of Pacific Islander and Southeast Asian heritage deepened by Sub-Saharan African ancestry, lifted by Northern European influence into a luminous, multitonal complexion",
-    "complexion": "Sharp cheekbones reflecting Eastern European and Southeast Asian geometry blended with Pacific Islander width; prominent jaw structure; expressive, mobile face with clear skin marked by slowly shifting bioluminescent geometric patterns across forearms and neck — blue-white shapes that pulse and reconfigure seasonally. Facial structure is theatrical and animated in expression.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones — rich depth from Sub-Saharan African and Eastern European ancestry, luminosity enhanced by Northern European influence, creating a complex multitonal complexion that shifts subtly in different light",
+    "complexion": "Sharp, angular cheekbones from Eastern European and Northern European geometry; prominent, defined jawline characteristic of Sub-Saharan African and Eastern European features; expressive, mobile face with clear skin marked by slowly shifting bioluminescent geometric patterns across forearms and neck — blue-white shapes that pulse and reconfigure seasonally. Facial structure is theatrical and animated in expression.",
     "distinguishing_marks": [
       "Bioluminescent subdermal patterning across both forearms: geometric shapes (hexagons, wave fractals, angular mandalas) in programmable blue-white that shift every 10-30 seconds",
-      "Bioluminescent patterns climb the right side of his neck from collarbone to jawline, creating a living collar effect",
-      "No visible scars or tattoos — the bioluminescence serves as his primary body art"
+      "Bioluminescent patterns climb the right side of neck from collarbone to jawline, creating a living collar effect",
+      "No visible scars or tattoos — the bioluminescence serves as primary body art"
     ],
-    "visible_augmentations": "Bioluminescent subdermal patterning across arms and neck (actively glowing); AR contact lenses visible as subtle prismatic flicker in direct light; color-shift hair geneware obvious in the way his hair cycles through warm chromatic range",
-    "posture_movement": "Constantly in motion — shoulders loose, hands always moving to adjust, drape, gesture. He invades personal space with calculated charm, physically rotating displayed clothing on strangers' bodies to demonstrate fit. His default state is performance; stillness is uncomfortable for him.",
-    "clothing_style": "Tier 3-4 working class with aspirational design flair. Wears his own original designs frequently — high-quality salvage fabrics, unexpected color combinations, pieces that work harder than their materials suggest. Often seen in oversized linen shirts (sleeves rolled to expose the bioluminescence), fitted synthetic pants in matte or metallic finishes, and custom jackets he's reconstructed from vintage fragments. No corporate branding, but meticulous finishing. Favors neutrals and earth tones that let his skin patterns be the focal point."
+    "visible_augmentations": "Bioluminescent subdermal patterning across arms and neck (actively glowing); AR contact lenses visible as subtle prismatic flicker in direct light; color-shift hair geneware obvious in the way hair cycles through warm chromatic range",
+    "posture_movement": "Constantly in motion — shoulders loose, hands always moving to adjust, drape, gesture. Invades personal space with calculated charm, physically rotating displayed clothing on strangers' bodies to demonstrate fit. Default state is performance; stillness is uncomfortable.",
+    "clothing_style": "Tier 3-4 working class with aspirational design flair. Wears own original designs frequently — high-quality salvage fabrics, unexpected color combinations, pieces that work harder than their materials suggest. Often seen in oversized linen shirts (sleeves rolled to expose bioluminescence), fitted synthetic pants in matte or metallic finishes, and custom jackets reconstructed from vintage fragments. No corporate branding, meticulous finishing. Favors neutrals and earth tones that let skin patterns be focal point."
   },
-  "image_prompt": "Vale Kjellberg-Faalele, 188cm tall mixed-heritage man with warm golden-brown skin (Pacific Islander, Southeast Asian, African, Northern European, Eastern European ancestry), sharp geometric cheekbones, expressive theatrical face. Shoulder-length hair in dramatic upswept crown with color-shift geneware cycling sunset oranges and deep reds. Dark brown eyes with subtle AR contact lens glitter. Both forearms and right neck glowing with bioluminescent subdermal geometric patterns in electric blue-white—hexagons and fractals pulsing and reconfiguring. Wearing oversized rolled-sleeve linen shirt exposing glowing arms, fitted matte synthetic pants, reconstructed vintage jacket in earth tones. Constantly gesturing, restless energy, hands always moving, invading space with calculated charm. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-ambient lighting with his bioluminescence casting cool blue-white glow on surrounding surfaces, dramatic shadows emphasizing cheekbones and augmentation patterns, urban background slightly blurred, depth-of-field on his expressive face and glowing patterns --ar 2:3 --v 6",
+  "image_prompt": "Efua Asomaning-Szabó, 188cm tall angular figure in GLMZ, warm medium-brown skin with golden-olive undertones glowing subtly, sharp Eastern European cheekbones and defined jawline, dark brown eyes with AR overlay contacts, long color-shift hair cycling through amber and deep reds styled into dramatic wave-crest crown. Bioluminescent blue-white geometric patterns (hexagons, fractals, mandalas) pulsing across both forearms and right neck creating living collar effect. Wearing oversized cream linen shirt with rolled sleeves exposing glowing subdermal patterns, fitted metallic-finish synthetic pants, custom jacket reconstructed from vintage fabric fragments. Restless posture, hands gesturing expressively, perpetually in motion, theatrical presence. Great Lakes Metropolitan Zone neon-lit urban setting, moody blue-white bioluminescent lighting emphasizing skin patterns and augmentations, neo-noir urban aesthetic, high-quality character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 30.4,
-    "Southeast Asian": 23.4,
-    "Northern European": 20.0,
-    "Sub-Saharan African": 14.6,
-    "Eastern European": 11.6
+    "Eastern European": 57.8,
+    "Sub-Saharan African": 26.4,
+    "Northern European": 9.7,
+    "East Asian": 4.7,
+    "Southeast Asian": 1.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 10.2,
+        "Polish": 12.2
+      },
+      "Slavic South": {
+        "Croatian": 35.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3
+      },
+      "West African": {
+        "Sierra Leonean": 12.4,
+        "Senegalese": 2.8
+      },
+      "Central African": {
+        "Congolese": 8.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 7.3,
+        "Irish": 2.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 4.2,
+        "Hakka": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 0.6
+      },
+      "Cambodian": {
+        "Khmer": 0.4
+      },
+      "Indonesian": {
+        "Javanese": 0.4
+      }
+    }
+  }
 }

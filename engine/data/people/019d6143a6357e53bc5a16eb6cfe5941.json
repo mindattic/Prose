@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6357e53bc5a16eb6cfe5941",
   "type": "character",
-  "name": "Ghita Tlemcani-Nygaard",
+  "name": "Aidana Oh-Nazari",
   "aliases": [
     "Null",
     "Zero",
@@ -14,7 +14,7 @@
   "age": 25,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Kedzie and Division",
-  "description": "Isaak Ren was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
+  "description": "Aidana Oh-Nazari was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -220,7 +220,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,44 +238,27 @@
     "Hearthstone Firearms Model 9 'Payday'"
   ],
   "related_entities": [
-    "GLMZ",
     "Coherent Radiation Scalpel CRS-7 'Suture'",
     "The Shelf",
-    "The Ghost Ronin",
-    "Aslan Vasquez-Chatterjee",
-    "ARCHIVE",
-    "Marcus Okafor-7",
-    "Jerome Atlas",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "CHROMEWORKS FlexSheath Graphene Spine",
-    "Djeneba Park-Traore",
-    "Eshe Pena-Baah",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Ihaia Nystrom-Keita",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kyle Ellen Corbin-Vasik",
     "Noir Dining",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saodat Mirzoyan-Fubara",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "The Quiet Room"
+    "The Ghost Ronin",
+    "Marcus Okafor-7",
+    "Neural Palate",
+    "Atlas",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern and North African with significant East Asian admixture, complemented by Indigenous American and Hispanic/Latin American heritage with minimal Northern European ancestry. This creates a striking phenotype: warm olive-to-bronze undertones characteristic of Levantine and Maghrebi genetics, combined with East Asian facial structure (higher cheekbones, eye shape) and subtle Indigenous American features in facial proportions.",
+    "heritage": "Tri-continental ancestry from Central Asia (34.2%), Middle East (36.7%), and East Asia (29.1%). This blend produces a striking phenotype: warm olive-bronze skin with golden undertones from the Middle Eastern and Central Asian components, refined by East Asian bone structure. High, prominent cheekbones and subtle epicanthic eye folds reflect the East Asian contribution, while a refined nose bridge and facial proportions show robust Central Asian and Persian genetics softened by East Asian delicacy. The result is distinctly West/Central Asian with refined East Asian architecture—angular, defined, and unmistakably cosmopolitan.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Wiry and lean — underfed dock work, minimal muscle development. Shoulders slightly hunched from years bent over a datapad or book spine.",
     "hair_color": "Black, naturally darkened by poor lighting and lack of grooming investment",
     "hair_style": "Uncombed, falls across forehead. No deliberate styling.",
     "hair_length": "Medium (collar-length)",
-    "eye_color": "Dark brown with warm undertones, unremarkable — but intense focus, rarely breaking contact",
-    "skin_tone": "Warm bronze-olive with golden undertones — minimal sunlight exposure creates a sallow cast, but the underlying tone reflects Middle Eastern, North African, and East Asian heritage rather than pure pallor",
-    "complexion": "Angular and defined, with prominent cheekbones reflecting East Asian and North African ancestry. Hollow cheeks intensify this structure. Acne scarring on jawline visible where the wrap doesn't cover. Chapped lips. Eyes carry the strain of constant vigilance. Facial proportions show blended heritage: broader face width from Indigenous American ancestry, refined nose bridge from Middle Eastern/North African lineage.",
+    "eye_color": "Dark brown with warm amber undertones, unremarkable — but intense focus, rarely breaking contact",
+    "skin_tone": "Warm olive-bronze with golden undertones. Minimal sunlight exposure creates a sallow matte cast over the underlying warmth, suggesting indoor dock work under artificial lighting. The blend shows even distribution across the face with subtle warmth concentration in cheeks and temples.",
+    "complexion": "Strikingly angular with high, prominent cheekbones characteristic of East Asian and Central Asian ancestry. Hollow cheeks intensify this structure. Refined, straight nose bridge from Middle Eastern and Central Asian lineage. Facial width and proportions show harmonious blend of Central Asian robustness with East Asian refinement. Acne scarring on jawline visible where the wrap doesn't cover. Chapped lips. Eyes carry the strain of constant vigilance.",
     "distinguishing_marks": [
       "Severe fracture across the lower jaw — shattered by Kyle's blade strike, visibly misaligned beneath the wrap",
       "Thin scar along left temple — unexplained, predates the Prologue event",
@@ -285,17 +268,48 @@
     "posture_movement": "Perfectly still when observing. Minimal fidgeting. Moves with deliberate economy — no wasted motion. Head turns slowly, tracking targets with predatory patience. When typing, fingers move with surgical precision. Sits or stands for hours without repositioning.",
     "clothing_style": "Tier 4 lower-working-class. Dark, utilitarian: charcoal cargo jacket (Lower Dock Crew standard, worn soft), black synthmesh pants with cargo pockets, reinforced boots with cracked soles. Layers indicate he doesn't regulate temperature well — thin thermal under-shirt visible at collar. No decoration, no branding, no affectation. Clothes fit loosely — either intentional camouflage or simple neglect."
   },
-  "image_prompt": "Cyberpunk 2226, Great Lakes Metropolitan Zone. Ghita Tlemcani-Nygaard, 172cm lean figure, warm bronze-olive skin with golden undertones reflecting Middle Eastern, North African, and East Asian heritage. Angular face with high prominent cheekbones, hollow cheeks, dark intense eyes with warm brown tone. Black uncombed hair to collar, falling across forehead. Lower face wrapped in grey linen (shattered jaw beneath), thin scar visible on left temple. Dressed in worn charcoal cargo jacket and black synthmesh pants, reinforced boots with cracked soles. Battered military datapad strapped to left wrist. Posture perfectly still, predatory patience. Indoor lower-dock setting, harsh LED work-lighting casting sharp shadows on face wrap and sallow skin. Atmospheric haze, cyberpunk grime. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Aidana Oh-Nazari: 172cm lean figure with tri-continental features—high angular cheekbones, refined nose bridge, subtle epicanthic eye folds. Warm olive-bronze skin with golden undertones, matte-sallow from artificial dock lighting. Dark brown eyes with intense, vigilant focus. Black collar-length hair uncombed across forehead. Lower jaw wrapped in grey linen (fractured), thin scar visible at left temple. Dark utilitarian clothing: charcoal cargo jacket, black synthmesh pants, cracked reinforced boots. Battered military datapad strapped to left wrist. Perfectly still posture, predatory patience. Great Lakes Metropolitan Zone lower dock worker, harsh industrial lighting, dark moody neo-noir atmosphere, sitting with surgical focus --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 28.5,
-    "North African": 23.6,
-    "East Asian": 21.1,
-    "Indigenous American": 12.0,
-    "Hispanic/Latin American": 8.8,
-    "Northern European": 6.0
+    "Middle Eastern": 36.7,
+    "Central Asian": 34.2,
+    "East Asian": 29.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9
+      },
+      "Arab Gulf": {
+        "Iraqi": 6
+      },
+      "Arab Levantine": {
+        "Palestinian": 13.8,
+        "Lebanese": 7.9
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 23.2
+      },
+      "Turkic": {
+        "Uzbek": 11
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 22
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      },
+      "Chinese": {
+        "Fujianese": 4,
+        "Mandarin Northern": 1.9
+      }
+    }
+  }
 }

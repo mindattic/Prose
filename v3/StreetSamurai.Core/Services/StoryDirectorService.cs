@@ -11,7 +11,7 @@ namespace StreetSamurai.Core.Services;
 /// Sits above all other services and runs the complete pipeline:
 /// plan → generate → assess → update state → continue → until done.
 ///
-/// World rule: Meridian 88 is dangerous. Every story must include at least one
+/// World rule: GLMZ is dangerous. Every story must include at least one
 /// battle/conflict scene to break up the narrative. Random violence can erupt at any time.
 ///
 /// ── WHY ──
@@ -65,6 +65,10 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly ConsequenceEngine consequences;
     private readonly ThematicIndexService thematicIndex;
     private readonly BehaviorPredictionService behaviorPredict;
+    private readonly DialogueService dialogue;
+    private readonly ArcTrackerService arcTracker;
+    private readonly ContinuityValidatorService continuityValidator;
+    private readonly SuggestionEngineService suggestions;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -76,7 +80,9 @@ public class StoryDirectorService : IStoryDirectorService
         SemanticIndexService semanticIndex, InferenceService inference,
         ILogger<StoryDirectorService> log, IPathProvider paths,
         ConsequenceEngine consequences, ThematicIndexService thematicIndex,
-        BehaviorPredictionService behaviorPredict)
+        BehaviorPredictionService behaviorPredict,
+        DialogueService dialogue, ArcTrackerService arcTracker,
+        ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions)
     {
         this.llm = llm;
         this.db = db;
@@ -95,6 +101,10 @@ public class StoryDirectorService : IStoryDirectorService
         this.consequences = consequences;
         this.thematicIndex = thematicIndex;
         this.behaviorPredict = behaviorPredict;
+        this.dialogue = dialogue;
+        this.arcTracker = arcTracker;
+        this.continuityValidator = continuityValidator;
+        this.suggestions = suggestions;
     }
 
     /// <summary>
@@ -135,7 +145,7 @@ public class StoryDirectorService : IStoryDirectorService
             // Phase 4: Generate outline with mandatory battle beat + world consequences.
             Report("Architecting story arc...");
             var consequenceContext = consequences.BuildConsequenceContext(cast.protagonist);
-            var battlePremise = premise + "\n\nIMPORTANT: Meridian 88 is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+            var battlePremise = premise + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
                 + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
             var outline = await outlineSvc.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
             story.Outline = outline;
@@ -235,6 +245,7 @@ public class StoryDirectorService : IStoryDirectorService
         var allText = story.Beats.Select(b => b.Text).ToList();
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
         var projectId = story.ProjectId;
+        var arcValidations = new List<ArcValidation>();
 
         foreach (var act in outline.Acts)
         {
@@ -260,7 +271,7 @@ public class StoryDirectorService : IStoryDirectorService
                     try
                     {
                         beatText = await GenerateSingleBeat(
-                            story, outline, beat, cast, location, allText, projectId, ct);
+                            story, outline, beat, cast, location, allText, projectId, arcValidations, ct);
                         break; // Success — exit retry loop
                     }
                     catch (TaskCanceledException ex) when (!ct.IsCancellationRequested && attempt < 2)
@@ -315,6 +326,36 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "State extraction failed for beat {BeatIndex} — continuing with stale state", beat.BeatIndex);
                 }
 
+                // Arc validation (best-effort — don't block story on validation failures)
+                try
+                {
+                    var arcResult = await arcTracker.ValidateBeatAsync(beatText, beat, outline, beat.BeatIndex, ct);
+                    arcValidations.Add(arcResult);
+                    if (arcResult.DriftWarning.Length > 0)
+                        log.LogWarning("Arc drift on beat {BeatIndex}: {Warning}", beat.BeatIndex, arcResult.DriftWarning);
+                }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "Arc validation failed for beat {BeatIndex} — continuing", beat.BeatIndex);
+                }
+
+                // Continuity validation (best-effort)
+                try
+                {
+                    var charsInBeat = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all;
+                    var quickReport = continuityValidator.QuickValidate(beatText, charsInBeat);
+                    if (!quickReport.Clean)
+                    {
+                        foreach (var issue in quickReport.Issues)
+                            log.LogWarning("Continuity issue in beat {BeatIndex}: [{Severity}] {Description}",
+                                beat.BeatIndex, issue.Severity, issue.Description);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "Continuity validation failed for beat {BeatIndex} — continuing", beat.BeatIndex);
+                }
+
                 outlineSvc.MarkBeatWritten(outline, beat.BeatIndex);
 
                 story.Beats.Add(new GeneratedStoryBeat
@@ -349,13 +390,17 @@ public class StoryDirectorService : IStoryDirectorService
     private async Task<string> GenerateSingleBeat(
         AutonomousStory story, StoryOutline outline, OutlineBeat beat,
         (string protagonist, List<string> all) cast, string location,
-        List<string> allText, string projectId, CancellationToken ct)
+        List<string> allText, string projectId, List<ArcValidation> arcValidations,
+        CancellationToken ct)
     {
         var storyConstraints = storyState.BuildConstraints(projectId);
         var knowledgeConstraints = knowledge.BuildPovConstraints(projectId, cast.protagonist);
         var eventContext = eventLog.BuildRecentContext(projectId);
         var outlineContext = outlineSvc.BuildBeatContext(outline, beat.BeatIndex);
-        var dialogueConstraints = BuildDialogueConstraints(beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all);
+        var arcGuidance = arcTracker.BuildArcGuidance(outline, beat.BeatIndex, arcValidations);
+        var charsForBeat = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all;
+        var dialogueConstraints = dialogue.BuildDialogueContext(charsForBeat);
+        var physicalContext = BuildPhysicalContext(charsForBeat);
 
         // Thematic enrichment: pull context snippets, vocabulary, quotes, and motifs from ALL repos
         var thematicContext = thematicIndex.BuildBeatContext(beat.Goal, beat.Title, beat.Location ?? location);
@@ -387,7 +432,9 @@ public class StoryDirectorService : IStoryDirectorService
 
         var fullOutlineContext = outlineContext
             + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "")
-            + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "");
+            + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "")
+            + (physicalContext.Length > 0 ? "\n\n" + physicalContext : "")
+            + (arcGuidance.Length > 0 ? "\n\n" + arcGuidance : "");
         return await starter.ContinueAsync(
             paragraphs, beatGoal, null, beat.Location ?? location,
             beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
@@ -541,7 +588,7 @@ public class StoryDirectorService : IStoryDirectorService
         if (midpoint < act2.Beats.Count)
         {
             var beat = act2.Beats[midpoint];
-            beat.Goal = "BATTLE: " + beat.Goal + ". Violence erupts — Meridian 88 is a dangerous place. The conflict should feel sudden, visceral, and have consequences for the characters involved.";
+            beat.Goal = "BATTLE: " + beat.Goal + ". Violence erupts — GLMZ is a dangerous place. The conflict should feel sudden, visceral, and have consequences for the characters involved.";
             beat.Tension = Math.Max(beat.Tension, 8);
             beat.FacetHint = "id";
         }
@@ -575,6 +622,29 @@ public class StoryDirectorService : IStoryDirectorService
         if (lines.Count <= 1) return "";
         lines.Add("  These characters must NEVER sound alike. Their voices are their identity.");
         return string.Join("\n", lines);
+    }
+
+    private string BuildPhysicalContext(List<string> charactersInScene)
+    {
+        var lines = new List<string> { "PHYSICAL DESCRIPTIONS — use these details when describing characters:" };
+        foreach (var name in charactersInScene)
+        {
+            var c = db.FindCharacter(name);
+            if (c?.PhysicalDescription == null) continue;
+            var p = c.PhysicalDescription;
+            var parts = new List<string>();
+            if (p.Build.Length > 0) parts.Add(p.Build);
+            if (p.SkinTone.Length > 0) parts.Add($"skin: {p.SkinTone}");
+            if (p.HairColor.Length > 0 && p.HairStyle.Length > 0) parts.Add($"hair: {p.HairColor}, {p.HairStyle}");
+            if (p.EyeColor.Length > 0) parts.Add($"eyes: {p.EyeColor}");
+            if (p.VisibleAugmentations.Length > 0) parts.Add($"augmentations: {p.VisibleAugmentations}");
+            if (p.DistinguishingMarks.Count > 0) parts.Add($"marks: {string.Join("; ", p.DistinguishingMarks.Take(3))}");
+            if (p.ClothingStyle.Length > 0) parts.Add($"clothing: {p.ClothingStyle}");
+            if (p.PostureMovement.Length > 0) parts.Add($"carries themselves: {p.PostureMovement}");
+            if (parts.Count > 0)
+                lines.Add($"  {name}: {string.Join(". ", parts)}");
+        }
+        return lines.Count <= 1 ? "" : string.Join("\n", lines);
     }
 
     private void Report(string message, int current = 0, int total = 0) =>

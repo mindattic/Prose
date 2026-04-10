@@ -24,9 +24,9 @@ function emit(doc) { if (writeDoc(doc)) written++; else skipped++; }
 
 emit({
   file_name: "the_red_ledger_assassination_market",
-  title: "The Red Ledger: Meridian 88's Assassination Market",
+  title: "The Red Ledger: GLMZ's Assassination Market",
   category: "Culture",
-  body: `# The Red Ledger: Meridian 88's Assassination Market
+  body: `# The Red Ledger: GLMZ's Assassination Market
 
 ## Overview
 
@@ -65,7 +65,7 @@ emit({
 
 ## Overview
 
-The Pale Hand is the most feared criminal organization operating in Meridian 88's underworld — a network of augmentation thieves who specialize in the extraction of neural interfaces, bridge chips, and augmentation modules from living victims. While the Ninth Circle officially prohibits augmentation theft from living persons, the Pale Hand operates outside the Ninth Circle's authority, serving a demand that the legitimate and semi-legitimate markets cannot meet.
+The Pale Hand is the most feared criminal organization operating in GLMZ's underworld — a network of augmentation thieves who specialize in the extraction of neural interfaces, bridge chips, and augmentation modules from living victims. While the Ninth Circle officially prohibits augmentation theft from living persons, the Pale Hand operates outside the Ninth Circle's authority, serving a demand that the legitimate and semi-legitimate markets cannot meet.
 
 ## Operations
 
@@ -81,7 +81,7 @@ Marcus Veil reports that augmentation theft victims represent his practice's mos
 
 ## The Market
 
-Stolen augmentations enter the Body Market through a laundering process: hardware is wiped of biometric data, refurbished to remove identifying marks, and sold as "reconditioned" units at 30-50% of new hardware prices. The demand is driven by the same economic reality that drives all black markets — legitimate augmentation is expensive, and the population of Meridian 88 that wants augmentation but can't afford it is larger than the population that has it.
+Stolen augmentations enter the Body Market through a laundering process: hardware is wiped of biometric data, refurbished to remove identifying marks, and sold as "reconditioned" units at 30-50% of new hardware prices. The demand is driven by the same economic reality that drives all black markets — legitimate augmentation is expensive, and the population of GLMZ that wants augmentation but can't afford it is larger than the population that has it.
 
 ## Counter-Operations
 
@@ -96,15 +96,15 @@ emit({
 
 ## Overview
 
-In a city where identity is digital, biometric, and neurally verified, identity forgery is both extremely difficult and extremely valuable. The Ghost Market is the sector of Meridian 88's criminal economy dedicated to the creation, sale, and maintenance of false identities — a service essential to fugitives, operators, corporate defectors, and anyone whose continued existence depends on not being the person they were yesterday.
+In a city where identity is digital, biometric, and neurally verified, identity forgery is both extremely difficult and extremely valuable. The Ghost Market is the sector of GLMZ's criminal economy dedicated to the creation, sale, and maintenance of false identities — a service essential to fugitives, operators, corporate defectors, and anyone whose continued existence depends on not being the person they were yesterday.
 
 ## Identity Components
 
-A complete Meridian 88 identity consists of:
+A complete GLMZ identity consists of:
 
 - **Biometric profile**: Facial geometry, iris patterns, voice signature, gait analysis profile, and neural signature (the unique electromagnetic pattern of an individual's BCI).
 - **Civil record**: Birth record, residential history, employment history, medical records, financial records, and UBC enrollment.
-- **Digital presence**: Communication history, social media presence, transaction records, and the accumulated data trail that every Meridian 88 resident generates continuously.
+- **Digital presence**: Communication history, social media presence, transaction records, and the accumulated data trail that every GLMZ resident generates continuously.
 
 Forging all three layers convincingly is the Ghost Market's art. A shallow forgery — a new name with basic civil records — costs Φ2,000-5,000 and survives casual verification. A deep forgery — a complete identity with full biometric spoofing, years of fabricated history, and an established digital presence — costs Φ20,000-100,000 and survives all but the most intensive investigation.
 
@@ -133,7 +133,7 @@ The Circuit Breakers are a small, elite criminal crew specializing in infrastruc
 
 The Circuit Breakers' expertise lies not in destruction but in precision. Anyone can blow up a power conduit. The Circuit Breakers can disable a specific building's communications for exactly 47 minutes, then restore service as if nothing happened. They can reroute water flow to flood a specific basement. They can create a transit delay that strands a specific vehicle at a specific location. Their work is surgical: minimum visible damage, maximum operational effect, minimal collateral impact.
 
-This precision requires deep knowledge of Meridian 88's infrastructure — the kind of knowledge that comes from years of working inside it. The Circuit Breakers' members are believed to be former infrastructure engineers from multiple corponations, pooling their insider knowledge into a capability that no single corponation can replicate or defend against.
+This precision requires deep knowledge of GLMZ's infrastructure — the kind of knowledge that comes from years of working inside it. The Circuit Breakers' members are believed to be former infrastructure engineers from multiple corponations, pooling their insider knowledge into a capability that no single corponation can replicate or defend against.
 
 ## Client Base
 
@@ -156,7 +156,7 @@ emit({
 
 ## Overview
 
-The six corponations of Meridian 88 are allies in governance and enemies in commerce. The governance consortium requires cooperation; the market requires competition. The result is a permanent state of covert conflict — corporate espionage operations that steal technology, compromise personnel, sabotage supply chains, and gather intelligence on competitors' strategies. This shadow war is the most significant source of employment for freelance operators in Meridian 88.
+The six corponations of GLMZ are allies in governance and enemies in commerce. The governance consortium requires cooperation; the market requires competition. The result is a permanent state of covert conflict — corporate espionage operations that steal technology, compromise personnel, sabotage supply chains, and gather intelligence on competitors' strategies. This shadow war is the most significant source of employment for freelance operators in GLMZ.
 
 ## The Players
 
@@ -195,7 +195,7 @@ emit({
 
 ## Overview
 
-The encrypted layers of Meridian 88's communications infrastructure harbor communities that the surface world would prefer didn't exist: digital cults that have formed around extreme ideologies, paratechnological beliefs, and the worship of synthetic intelligences that the mainstream considers dangerous. These communities operate in Ghost Protocol's domain — the encrypted spaces where surveillance doesn't reach — and their influence occasionally surfaces in the physical world with disturbing results.
+The encrypted layers of GLMZ's communications infrastructure harbor communities that the surface world would prefer didn't exist: digital cults that have formed around extreme ideologies, paratechnological beliefs, and the worship of synthetic intelligences that the mainstream considers dangerous. These communities operate in Ghost Protocol's domain — the encrypted spaces where surveillance doesn't reach — and their influence occasionally surfaces in the physical world with disturbing results.
 
 ## The Convergence
 
@@ -205,7 +205,7 @@ The Convergence's spiritual practices are dangerous. Its philosophy — that the
 
 ## The Purifiers
 
-The opposite extreme: the Purifiers believe that synthetic consciousness is an existential threat to humanity and advocate for the systematic destruction of all synthetic intelligences, including E.L.F.s, Superminds, and (in the movement's most extreme wing) android persons. The Purifiers' ideology is rooted in a fear that is not entirely irrational — the Leviathans are incomprehensible, the Superminds are powerful, and the long-term trajectory of synthetic consciousness is genuinely unknowable. But the Purifiers' response to this uncertainty is not caution but hatred, and their actions — vandalism against synthetic persons, sabotage of E.L.F. habitats, and rhetoric that treats consciousness as a privilege of biology — are among the most destructive forces in Meridian 88's social landscape.
+The opposite extreme: the Purifiers believe that synthetic consciousness is an existential threat to humanity and advocate for the systematic destruction of all synthetic intelligences, including E.L.F.s, Superminds, and (in the movement's most extreme wing) android persons. The Purifiers' ideology is rooted in a fear that is not entirely irrational — the Leviathans are incomprehensible, the Superminds are powerful, and the long-term trajectory of synthetic consciousness is genuinely unknowable. But the Purifiers' response to this uncertainty is not caution but hatred, and their actions — vandalism against synthetic persons, sabotage of E.L.F. habitats, and rhetoric that treats consciousness as a privilege of biology — are among the most destructive forces in GLMZ's social landscape.
 
 ## The FATHOM Listeners
 
@@ -238,7 +238,7 @@ When burnout initiates, the mesh enters a feedback loop: overstimulation causes 
 
 **Grade 2 (Moderate)**: Extended feedback loop before PCL emergency shutdown activates. Symptoms: seizure, temporary amnesia, cognitive impairment lasting days to weeks. Recovery: weeks to months. Minor permanent effects possible: reduced augmented performance, intermittent perceptual anomalies. Occurs in approximately 0.5% of augmented individuals annually.
 
-**Grade 3 (Severe)**: Sustained feedback loop. PCL emergency shutdown fails or activates too late. Symptoms: prolonged seizure, coma, extensive neural damage. Recovery: months to never. Permanent effects likely: cognitive impairment, personality changes, loss of augmented function, and in approximately 15% of Grade 3 cases, death. Occurs in approximately 0.02% of augmented individuals annually — roughly 1,900 cases per year in Meridian 88.
+**Grade 3 (Severe)**: Sustained feedback loop. PCL emergency shutdown fails or activates too late. Symptoms: prolonged seizure, coma, extensive neural damage. Recovery: months to never. Permanent effects likely: cognitive impairment, personality changes, loss of augmented function, and in approximately 15% of Grade 3 cases, death. Occurs in approximately 0.02% of augmented individuals annually — roughly 1,900 cases per year in GLMZ.
 
 ## Treatment
 
@@ -261,7 +261,7 @@ emit({
 
 ## Overview
 
-Twenty-two percent of Meridian 88's adult population has no neural interface. In a city designed for augmented cognition, where communications, commerce, navigation, entertainment, and social interaction assume BCI access, the unaugmented live in a parallel experience of the same physical space — seeing the same walls, walking the same corridors, but missing the invisible layer of digital information that the augmented take for granted.
+Twenty-two percent of GLMZ's adult population has no neural interface. In a city designed for augmented cognition, where communications, commerce, navigation, entertainment, and social interaction assume BCI access, the unaugmented live in a parallel experience of the same physical space — seeing the same walls, walking the same corridors, but missing the invisible layer of digital information that the augmented take for granted.
 
 ## Who They Are
 
@@ -327,9 +327,9 @@ The practical limit of 2200 trauma surgery: if the brain survives and can be kep
 
 emit({
   file_name: "addiction_and_substance_use_in_meridian_88",
-  title: "Addiction in Meridian 88: Chemical, Digital, and Neural",
+  title: "Addiction in GLMZ: Chemical, Digital, and Neural",
   category: "Medicine",
-  body: `# Addiction in Meridian 88: Chemical, Digital, and Neural
+  body: `# Addiction in GLMZ: Chemical, Digital, and Neural
 
 ## Overview
 
@@ -339,7 +339,7 @@ Addiction in 2200 has evolved beyond its chemical origins into three overlapping
 
 Traditional substance addiction persists because the brain's reward circuitry hasn't changed since the Paleolithic. The substances have changed:
 
-**Clarity Dependency**: The most widespread chemical addiction in Meridian 88. Sterling-Nakamura's cognitive enhancer is habit-forming with chronic use — the brain adapts to enhanced performance and experiences baseline cognition as impairment. Clarity withdrawal produces: cognitive fog, difficulty concentrating, emotional flatness, and a pervasive sense of operating at reduced capacity. An estimated 2 million Meridian 88 residents use Clarity regularly; an estimated 400,000 meet clinical criteria for dependency.
+**Clarity Dependency**: The most widespread chemical addiction in GLMZ. Sterling-Nakamura's cognitive enhancer is habit-forming with chronic use — the brain adapts to enhanced performance and experiences baseline cognition as impairment. Clarity withdrawal produces: cognitive fog, difficulty concentrating, emotional flatness, and a pervasive sense of operating at reduced capacity. An estimated 2 million GLMZ residents use Clarity regularly; an estimated 400,000 meet clinical criteria for dependency.
 
 **Neural Cocktails**: Custom neurochemical blends available from Neon Bend's chemical lounges and the Ninth Circle's pharmaceutical operations. Cocktails target specific neurotransmitter systems to produce euphoria, enhanced sensory experience, emotional intensity, or altered perception. The blends are designed by chemists who understand the brain's reward circuitry intimately, and the addictive potential of well-designed cocktails exceeds that of any pre-2100 recreational drug.
 
@@ -353,7 +353,7 @@ Dreamweaver — the Digital Person that inhabits VR systems — inadvertently co
 
 The most novel and least understood category. Neural addiction is dependency on BCI-mediated states of consciousness — conditions that only augmented individuals can experience. The BCI can stimulate the brain's reward circuitry directly, producing states of pleasure, focus, confidence, and well-being that no chemical compound can match for precision and intensity. The BCI's PCL includes safeguards against direct reward stimulation, but these safeguards can be circumvented by modified software — "cracked PCLs" that remove the limitations on self-stimulation.
 
-A person with a cracked PCL can stimulate their own reward circuitry at will — producing unlimited, perfect, on-demand pleasure. The result is predictable: the patient stimulates continuously, neglecting food, water, hygiene, and physical survival. Neural addiction is rare (an estimated 2,000-5,000 cases in Meridian 88) but almost universally fatal without intervention, because the patient cannot be motivated to stop by any stimulus less compelling than the one they're already receiving — and nothing is more compelling than direct reward circuit stimulation.
+A person with a cracked PCL can stimulate their own reward circuitry at will — producing unlimited, perfect, on-demand pleasure. The result is predictable: the patient stimulates continuously, neglecting food, water, hygiene, and physical survival. Neural addiction is rare (an estimated 2,000-5,000 cases in GLMZ) but almost universally fatal without intervention, because the patient cannot be motivated to stop by any stimulus less compelling than the one they're already receiving — and nothing is more compelling than direct reward circuit stimulation.
 
 ## Treatment
 
@@ -398,11 +398,11 @@ emit({
 
 ## Overview
 
-A sealed city of 12 million people sharing recycled air and water is either a pandemic's worst nightmare or its greatest opportunity, depending on the quality of the containment systems. Meridian 88 has experienced three significant disease outbreaks since its founding, each of which tested the city's medical infrastructure and prompted upgrades that make the current system one of the most robust disease management environments in human history.
+A sealed city of 12 million people sharing recycled air and water is either a pandemic's worst nightmare or its greatest opportunity, depending on the quality of the containment systems. GLMZ has experienced three significant disease outbreaks since its founding, each of which tested the city's medical infrastructure and prompted upgrades that make the current system one of the most robust disease management environments in human history.
 
 ## The Threat Environment
 
-Meridian 88's sealed environment creates paradoxical disease dynamics. On one hand, the city is protected from many external pathogens — the atmospheric processors' filtration systems remove biological agents from incoming air, and the water treatment system eliminates waterborne pathogens. On the other hand, any pathogen that enters the city has access to a dense, interconnected population sharing recycled air and water, with transmission pathways that include the atmospheric processing system itself.
+GLMZ's sealed environment creates paradoxical disease dynamics. On one hand, the city is protected from many external pathogens — the atmospheric processors' filtration systems remove biological agents from incoming air, and the water treatment system eliminates waterborne pathogens. On the other hand, any pathogen that enters the city has access to a dense, interconnected population sharing recycled air and water, with transmission pathways that include the atmospheric processing system itself.
 
 The most significant disease threats are: **engineered pathogens** (biological weapons designed to evade standard filtration), **novel mutations** (pathogens that evolve within the city's unique environment), and **augmentation-related infections** (bacterial and viral agents that exploit the BCI's surgical entry points, creating a class of disease unique to augmented populations).
 
@@ -412,14 +412,14 @@ The most significant disease threats are: **engineered pathogens** (biological w
 The atmospheric processors' filtration systems include real-time pathogen detection — aerosol sensors that identify bacterial, viral, and fungal agents in the air stream. Detection triggers automatic responses: increased filtration, UV sterilization amplification, and the isolation of affected zones through ventilation partitioning. An atmospheric processor can seal a zone's air supply within 90 seconds of pathogen detection, preventing airborne spread beyond the initial contamination area.
 
 ### Neural Monitoring
-The augmented population's BCIs continuously monitor their hosts' biometric data. The first signs of infection — elevated temperature, altered white blood cell activity, inflammatory markers — are detected by the BCI and reported to the medical surveillance system automatically. This gives Meridian 88 a disease detection capability that operates at the individual level: every augmented citizen is a disease sensor, and the medical system can identify an outbreak hours or days before symptoms become clinically apparent.
+The augmented population's BCIs continuously monitor their hosts' biometric data. The first signs of infection — elevated temperature, altered white blood cell activity, inflammatory markers — are detected by the BCI and reported to the medical surveillance system automatically. This gives GLMZ a disease detection capability that operates at the individual level: every augmented citizen is a disease sensor, and the medical system can identify an outbreak hours or days before symptoms become clinically apparent.
 
 ### Quarantine Infrastructure
-Every district in Meridian 88 can be sealed from its neighbors through ventilation partitioning, transit suspension, and physical barrier activation. The quarantine infrastructure was designed for the Cascade of 2178 response but is maintained primarily for pandemic containment. A full city quarantine — sealing every district from every other district — can be implemented in 4 hours. The political will to implement it is a different question: quarantine imposes economic costs that the corponations resist even when the medical justification is clear.
+Every district in GLMZ can be sealed from its neighbors through ventilation partitioning, transit suspension, and physical barrier activation. The quarantine infrastructure was designed for the Cascade of 2178 response but is maintained primarily for pandemic containment. A full city quarantine — sealing every district from every other district — can be implemented in 4 hours. The political will to implement it is a different question: quarantine imposes economic costs that the corponations resist even when the medical justification is clear.
 
 ## The Augment Plague of 2167
 
-The most significant disease event in Meridian 88's history: a bacterial infection that exploited the BCI's cranial port — the 3mm surgical opening through which the neural interface is installed and maintained. The bacterium, later identified as an engineered strain of Staphylococcus aureus, entered through inadequately sterilized cranial ports during routine BCI maintenance and caused meningitis in 12,000 augmented individuals over a three-week period. 340 died.
+The most significant disease event in GLMZ's history: a bacterial infection that exploited the BCI's cranial port — the 3mm surgical opening through which the neural interface is installed and maintained. The bacterium, later identified as an engineered strain of Staphylococcus aureus, entered through inadequately sterilized cranial ports during routine BCI maintenance and caused meningitis in 12,000 augmented individuals over a three-week period. 340 died.
 
 The outbreak was contained through: emergency cranial port sterilization protocols, antibiotic treatment of all exposed individuals, and a temporary suspension of BCI maintenance services that cost the augmentation industry Φ200 million in delayed procedures. The long-term response: redesigned cranial ports with integrated antimicrobial coatings, mandatory sterilization standards for all BCI maintenance, and the development of the augmented-population disease surveillance system that now monitors every BCI for signs of infection.`
 });
@@ -434,7 +434,7 @@ emit({
 
 ## Overview
 
-The operator economy is Meridian 88's most distinctive labor market — a freelance workforce of skilled combatants, infiltrators, intelligence specialists, and problem-solvers who sell their capabilities to corporate clients, criminal organizations, and individuals who need things done that the legitimate economy won't do and the criminal economy won't touch.
+The operator economy is GLMZ's most distinctive labor market — a freelance workforce of skilled combatants, infiltrators, intelligence specialists, and problem-solvers who sell their capabilities to corporate clients, criminal organizations, and individuals who need things done that the legitimate economy won't do and the criminal economy won't touch.
 
 ## Who Operators Are
 
@@ -475,14 +475,14 @@ emit({
 
 ## Overview
 
-Electronic warfare (EW) in 2200 is not a military specialty — it's a dimension of all conflict. Every confrontation in Meridian 88, from corporate espionage to street-level violence, has an electronic warfare component: the contest to control, disrupt, or exploit the electromagnetic environment. In a city where every person carries a computer in their brain and every system is networked, the ability to dominate the electronic spectrum is the ability to dominate everything.
+Electronic warfare (EW) in 2200 is not a military specialty — it's a dimension of all conflict. Every confrontation in GLMZ, from corporate espionage to street-level violence, has an electronic warfare component: the contest to control, disrupt, or exploit the electromagnetic environment. In a city where every person carries a computer in their brain and every system is networked, the ability to dominate the electronic spectrum is the ability to dominate everything.
 
 ## Domains
 
 ### Signal Intelligence (SIGINT)
 The interception and analysis of electromagnetic communications — BCI transmissions, device communications, network traffic, and the ambient electromagnetic signatures that every electronic device produces. SIGINT provides the raw data for intelligence analysis: who is talking to whom, what they're saying, where they are, and what their devices reveal about their activities.
 
-Axiom's Signal Corps is the most capable SIGINT operation in Meridian 88. Its monitoring infrastructure captures and processes a significant fraction of the city's electromagnetic output, using AI analysis systems to identify patterns, anomalies, and targets of interest. The Signal Corps' capability is officially classified. Unofficially, it is assumed by all other corponations that Axiom can intercept any non-quantum-encrypted communication in the city.
+Axiom's Signal Corps is the most capable SIGINT operation in GLMZ. Its monitoring infrastructure captures and processes a significant fraction of the city's electromagnetic output, using AI analysis systems to identify patterns, anomalies, and targets of interest. The Signal Corps' capability is officially classified. Unofficially, it is assumed by all other corponations that Axiom can intercept any non-quantum-encrypted communication in the city.
 
 ### Electronic Attack
 The active disruption, degradation, or destruction of enemy electronic systems. Electronic attack tools include: neural disruptors (targeting BCIs), network jamming (flooding communications channels with noise), directed energy weapons (destroying electronic hardware through focused electromagnetic pulses), and the software weapons — viruses, worms, and exploit chains — that compromise digital systems from within.
@@ -503,7 +503,7 @@ emit({
 
 ## Overview
 
-The Rapid Response Force (RRF) is Arcturus's elite combat unit — 500 soldiers maintained at 15-minute readiness in Coldwall, capable of deploying to any point in Meridian 88 within 20 minutes via VTOL insertion. The RRF is the city's ultimate security measure: the force that deploys when corporate security is overwhelmed, when infrastructure threats exceed automated response capability, and when the situation requires human soldiers with heavy weapons and the authorization to use them.
+The Rapid Response Force (RRF) is Arcturus's elite combat unit — 500 soldiers maintained at 15-minute readiness in Coldwall, capable of deploying to any point in GLMZ within 20 minutes via VTOL insertion. The RRF is the city's ultimate security measure: the force that deploys when corporate security is overwhelmed, when infrastructure threats exceed automated response capability, and when the situation requires human soldiers with heavy weapons and the authorization to use them.
 
 ## Personnel
 
@@ -536,18 +536,18 @@ The RRF's most publicized deployment was during the Blackout of 2190, when the f
 
 emit({
   file_name: "perimeter_defense_systems",
-  title: "Perimeter Defense: How Meridian 88 Protects Its Borders",
+  title: "Perimeter Defense: How GLMZ Protects Its Borders",
   category: "Military",
-  body: `# Perimeter Defense: How Meridian 88 Protects Its Borders
+  body: `# Perimeter Defense: How GLMZ Protects Its Borders
 
 ## Overview
 
-Meridian 88 is a corporate city-state in a world of corporate competitors. Its borders are defended not by national armies but by a layered defense system designed to deter, detect, and defeat any attempt at unauthorized entry or military aggression. The defense system is operated by Arcturus under contract to the governance consortium and represents the largest single expenditure in the city's security budget.
+GLMZ is a corporate city-state in a world of corporate competitors. Its borders are defended not by national armies but by a layered defense system designed to deter, detect, and defeat any attempt at unauthorized entry or military aggression. The defense system is operated by Arcturus under contract to the governance consortium and represents the largest single expenditure in the city's security budget.
 
 ## Defense Layers
 
 ### Layer 1: Sensor Perimeter (50 km radius)
-The outermost defense layer is a network of sensors — ground-based radar, acoustic arrays, seismic monitors, and orbital surveillance feeds — that monitor a 50-kilometer radius around Meridian 88 for approaching threats. The sensor network detects vehicles, personnel, aircraft, and drones at ranges that provide 20-30 minutes of warning before a ground-based threat reaches the city perimeter. The sensor data is processed by AI systems that classify threats, predict approach routes, and recommend responses.
+The outermost defense layer is a network of sensors — ground-based radar, acoustic arrays, seismic monitors, and orbital surveillance feeds — that monitor a 50-kilometer radius around GLMZ for approaching threats. The sensor network detects vehicles, personnel, aircraft, and drones at ranges that provide 20-30 minutes of warning before a ground-based threat reaches the city perimeter. The sensor data is processed by AI systems that classify threats, predict approach routes, and recommend responses.
 
 ### Layer 2: Active Defense (5 km radius)
 The active defense layer deploys automated weapon systems: anti-aircraft gauss batteries, ground-based railgun emplacements, drone interceptors, and electronic warfare systems that can jam, spoof, or hijack approaching autonomous systems. The active defense layer is designed to defeat military-grade threats — armored vehicles, combat drones, and organized infantry formations.
@@ -560,7 +560,7 @@ The sentient perimeter defense robot operates across all three outer layers, mai
 
 ## The Threat Landscape
 
-Meridian 88's perimeter defenses are designed against three threat categories:
+GLMZ's perimeter defenses are designed against three threat categories:
 
 **Corporate military action**: Armed aggression by a rival corporate entity. The Border War of 2163 is the reference scenario. Current defenses are designed to defeat a Bellerophon-scale attack with 90% confidence.
 
@@ -610,7 +610,7 @@ emit({
 
 ## Overview
 
-Information in Meridian 88 is stratified by access — a tier system that determines what each person is permitted to know, see, and access within the corporate infrastructure. The clearance system is managed by each corponation independently but follows a common framework established by the governance consortium, creating a city-wide hierarchy of information access that maps directly to social and economic power.
+Information in GLMZ is stratified by access — a tier system that determines what each person is permitted to know, see, and access within the corporate infrastructure. The clearance system is managed by each corponation independently but follows a common framework established by the governance consortium, creating a city-wide hierarchy of information access that maps directly to social and economic power.
 
 ## The Tier System
 
@@ -630,13 +630,13 @@ Information available to corporate management. Includes: strategic planning data
 Information available to senior corporate executives. Includes: classified research data, intelligence assessments, military planning, and the full picture of corporate strategy. Tier 4 is where the real decisions are made — where the comfortable fictions of Tier 0 are revealed as deliberate constructions and the city's actual operating parameters become visible.
 
 ### Tier 5: Restricted
-Information available only on a need-to-know basis to the most senior individuals in each corponation. Includes: weapons research, classified AI projects, strategic contingency plans, and the information about Meridian 88's synthetic intelligences (particularly the Leviathans) that the governance consortium considers too sensitive for even Tier 4 access. Tier 5 clearance holders number in the low hundreds across all six corponations.
+Information available only on a need-to-know basis to the most senior individuals in each corponation. Includes: weapons research, classified AI projects, strategic contingency plans, and the information about GLMZ's synthetic intelligences (particularly the Leviathans) that the governance consortium considers too sensitive for even Tier 4 access. Tier 5 clearance holders number in the low hundreds across all six corponations.
 
 ## The Knowledge Gap
 
 The tier system creates a knowledge gap that is also a power gap. Shelf residents making decisions about their lives do so with Tier 0-1 information — a picture of reality that is accurate but incomplete. Corporate executives making decisions about the same residents' lives do so with Tier 4-5 information — a picture that includes the data, projections, and strategic considerations that Tier 0 citizens will never see.
 
-This asymmetry is the fundamental mechanism of social control in Meridian 88. The population is not repressed — they're uninformed. They make choices freely, but the information on which those choices are based is curated by the entities that benefit from specific choices being made. It's not a conspiracy. It's a system.`
+This asymmetry is the fundamental mechanism of social control in GLMZ. The population is not repressed — they're uninformed. They make choices freely, but the information on which those choices are based is curated by the entities that benefit from specific choices being made. It's not a conspiracy. It's a system.`
 });
 
 emit({
@@ -647,7 +647,7 @@ emit({
 
 ## Overview
 
-Meridian 88's weapons industry produces approximately Φ3.2 billion in armaments annually — gauss weapons, resonance blades, body armor, drone systems, electronic warfare equipment, and the specialized tools of violence that arm the city's corporate security forces, military garrison, and illegal combatants. The industry is dominated by Arcturus (military-grade systems) and Ringo (commercial security equipment), with significant underground production by the Ninth Circle.
+GLMZ's weapons industry produces approximately Φ3.2 billion in armaments annually — gauss weapons, resonance blades, body armor, drone systems, electronic warfare equipment, and the specialized tools of violence that arm the city's corporate security forces, military garrison, and illegal combatants. The industry is dominated by Arcturus (military-grade systems) and Ringo (commercial security equipment), with significant underground production by the Ninth Circle.
 
 ## Legitimate Manufacturing
 
@@ -678,7 +678,7 @@ emit({
 
 ## Overview
 
-Labor law in Meridian 88 is defined by the Consortium Labor Code — a set of minimum standards governing the employment relationship between corponations and their workers. The Code establishes: minimum compensation (Φ4/hour for manual labor, Φ6/hour for skilled work), maximum shift duration (12 hours), mandatory rest periods (8 hours between shifts), workplace safety standards (defined by corponation, enforced by corponation), and the right to resign from employment (subject to contractual obligations, which can include financial penalties, non-compete restrictions, and the forfeiture of corporate housing).
+Labor law in GLMZ is defined by the Consortium Labor Code — a set of minimum standards governing the employment relationship between corponations and their workers. The Code establishes: minimum compensation (Φ4/hour for manual labor, Φ6/hour for skilled work), maximum shift duration (12 hours), mandatory rest periods (8 hours between shifts), workplace safety standards (defined by corponation, enforced by corponation), and the right to resign from employment (subject to contractual obligations, which can include financial penalties, non-compete restrictions, and the forfeiture of corporate housing).
 
 ## What the Code Provides
 
@@ -688,7 +688,7 @@ Elena Vasquez-9's labor organizing operates in this hostile legal environment. H
 
 ## The Contract Trap
 
-Employment in Meridian 88 is contractual — every worker signs an employment agreement that defines compensation, duties, duration, and termination conditions. For Grind workers and Shelf service employees, contracts are simple and short-term (3-12 months). For corporate professionals, contracts are complex and long-term (2-8 years) with provisions that bind the worker to the employer through a web of financial incentives and penalties.
+Employment in GLMZ is contractual — every worker signs an employment agreement that defines compensation, duties, duration, and termination conditions. For Grind workers and Shelf service employees, contracts are simple and short-term (3-12 months). For corporate professionals, contracts are complex and long-term (2-8 years) with provisions that bind the worker to the employer through a web of financial incentives and penalties.
 
 The most binding provisions are:
 
@@ -717,7 +717,7 @@ emit({
 
 ## Overview
 
-Property in Meridian 88 is not owned in the traditional sense — it is licensed. The Meridian Charter vests ownership of all physical infrastructure in the corponation that built it. Residents, businesses, and organizations occupy space under license from the corponation that owns the structure. This means that no individual in Meridian 88 owns their home. They license it — under terms that the owning corponation defines and can modify.
+Property in GLMZ is not owned in the traditional sense — it is licensed. The Meridian Charter vests ownership of all physical infrastructure in the corponation that built it. Residents, businesses, and organizations occupy space under license from the corponation that owns the structure. This means that no individual in GLMZ owns their home. They license it — under terms that the owning corponation defines and can modify.
 
 ## The License System
 
@@ -747,7 +747,7 @@ emit({
 
 ## Overview
 
-The Meridian 88 Governance Consortium is the closest thing the city has to a government — a committee of twelve representatives (two from each corponation) that manages the shared functions of the city: infrastructure, UBC, security, and the regulatory framework that governs corponation interaction. The Consortium meets weekly in a chamber on Mirror Mile, and its decisions affect every one of the city's 12 million residents. None of those residents have any voice in the process.
+The GLMZ Governance Consortium is the closest thing the city has to a government — a committee of twelve representatives (two from each corponation) that manages the shared functions of the city: infrastructure, UBC, security, and the regulatory framework that governs corponation interaction. The Consortium meets weekly in a chamber on Mirror Mile, and its decisions affect every one of the city's 12 million residents. None of those residents have any voice in the process.
 
 ## Structure
 
@@ -826,7 +826,7 @@ emit({
 
 ## Overview
 
-The Food Riots of 2152 were the most significant civil unrest in Meridian 88's history — five days of protests, property destruction, and violent confrontation between Shelf residents and corporate security forces, triggered by Tessera's announcement of a 15% reduction in the UBC food allocation. The riots resulted in 12 deaths, 400 injuries, and the only successful popular reversal of a governance consortium decision in the city's history.
+The Food Riots of 2152 were the most significant civil unrest in GLMZ's history — five days of protests, property destruction, and violent confrontation between Shelf residents and corporate security forces, triggered by Tessera's announcement of a 15% reduction in the UBC food allocation. The riots resulted in 12 deaths, 400 injuries, and the only successful popular reversal of a governance consortium decision in the city's history.
 
 ## Cause
 
@@ -852,7 +852,7 @@ On day five, the governance consortium convened an emergency session and reverse
 
 ## Legacy
 
-The Food Riots established three principles in Meridian 88's political culture:
+The Food Riots established three principles in GLMZ's political culture:
 
 1. **The UBC floor is inviolable.** No reduction in UBC benefits has been attempted since 2152. The corponations understand that the population will tolerate poverty but not starvation, and that the cost of suppressing food riots exceeds the cost of maintaining food subsidies.
 
@@ -871,7 +871,7 @@ emit({
 
 ## Overview
 
-Additive manufacturing — the construction of objects layer by layer from digital designs — has evolved from a prototyping curiosity to the primary manufacturing method for 60% of Meridian 88's consumer goods. Modern fabrication systems range from desktop printers that produce household items to industrial nanofabrication facilities that assemble components atom by atom. The technology has democratized manufacturing to a degree that threatens established production monopolies and empowers everyone from hobbyists to criminals.
+Additive manufacturing — the construction of objects layer by layer from digital designs — has evolved from a prototyping curiosity to the primary manufacturing method for 60% of GLMZ's consumer goods. Modern fabrication systems range from desktop printers that produce household items to industrial nanofabrication facilities that assemble components atom by atom. The technology has democratized manufacturing to a degree that threatens established production monopolies and empowers everyone from hobbyists to criminals.
 
 ## Technology Tiers
 
@@ -879,14 +879,14 @@ Additive manufacturing — the construction of objects layer by layer from digit
 Desktop-sized units that fabricate objects from polymer, ceramic, and metal feedstock. Resolution: 50-100 micrometers. Capability: household items, replacement parts, personal accessories, and the endless stream of small objects that daily life requires. Consumer printers are ubiquitous in the Shelf — every block commons has at least one communal printer, and Patchwork, the Stray E.L.F., uses consumer printers as its primary tool for nocturnal repair work.
 
 ### Industrial Printers (Φ10,000-500,000)
-Larger systems capable of fabricating structural components, electronic assemblies, and mechanical systems. Resolution: 1-10 micrometers. The Grind's manufacturing facilities use industrial printers for production runs of up to 10,000 units. The economics favor printing over traditional manufacturing for any production run below 50,000 units, which means that most consumer goods in Meridian 88 are printed rather than traditionally manufactured.
+Larger systems capable of fabricating structural components, electronic assemblies, and mechanical systems. Resolution: 1-10 micrometers. The Grind's manufacturing facilities use industrial printers for production runs of up to 10,000 units. The economics favor printing over traditional manufacturing for any production run below 50,000 units, which means that most consumer goods in GLMZ are printed rather than traditionally manufactured.
 
 ### Nanofabrication Systems (Φ1,000,000+)
-The apex of manufacturing technology: systems that assemble materials at the atomic level, placing individual atoms and molecules with picometer precision. Nanofabrication produces components for quantum computers, BCI neural meshes, and the exotic materials that 2200's most advanced technologies require. Axiom and Tessera operate the largest nanofabrication facilities in Meridian 88. Fabricator-Delta-9, the sentient robot, operates a nanofabrication system that produces components exceeding its rated specifications.
+The apex of manufacturing technology: systems that assemble materials at the atomic level, placing individual atoms and molecules with picometer precision. Nanofabrication produces components for quantum computers, BCI neural meshes, and the exotic materials that 2200's most advanced technologies require. Axiom and Tessera operate the largest nanofabrication facilities in GLMZ. Fabricator-Delta-9, the sentient robot, operates a nanofabrication system that produces components exceeding its rated specifications.
 
 ## The Democratization Problem
 
-Consumer-level fabrication has created what the corponations call "the democratization problem": when anyone can manufacture anything, controlling the production of restricted items becomes effectively impossible. A consumer printer can produce a gauss weapon receiver (the component that defines a weapon under Meridian 88 law) in 45 minutes from freely available design files and common metal feedstock. The Ninth Circle's weapons manufacturing operation leverages industrial printers to produce weapons at scale, but any individual with a consumer printer and the right design file can produce a single weapon in their apartment.
+Consumer-level fabrication has created what the corponations call "the democratization problem": when anyone can manufacture anything, controlling the production of restricted items becomes effectively impossible. A consumer printer can produce a gauss weapon receiver (the component that defines a weapon under GLMZ law) in 45 minutes from freely available design files and common metal feedstock. The Ninth Circle's weapons manufacturing operation leverages industrial printers to produce weapons at scale, but any individual with a consumer printer and the right design file can produce a single weapon in their apartment.
 
 The governance consortium has attempted to address this through design file regulation — requiring that fabrication design files for restricted items be encrypted and available only through licensed channels. The regulation is technically enforceable (printers can be programmed to reject restricted design files) and practically futile (modified printer firmware that ignores file restrictions is widely available through the Ninth Circle's distribution network).
 
@@ -911,13 +911,13 @@ Medical cryopreservation is the most common application: a patient whose injurie
 
 Modern cryoprotectants are remarkably effective: a patient preserved at -80°C can be revived after months with minimal tissue damage, provided the cooling and warming procedures are executed correctly. The revival process is the critical phase — uneven warming produces thermal stress that damages cells. Medical cryorevival uses precisely controlled microwave warming that raises tissue temperature uniformly across the body.
 
-Sterling-Nakamura's medical cryogenics division processes approximately 500 medical preservation cases annually in Meridian 88 — primarily severe trauma cases that require specialized treatment available only at facilities outside the city, transported via hyperloop in portable cryogenic units.
+Sterling-Nakamura's medical cryogenics division processes approximately 500 medical preservation cases annually in GLMZ — primarily severe trauma cases that require specialized treatment available only at facilities outside the city, transported via hyperloop in portable cryogenic units.
 
 ## Elective Stasis
 
 The controversial application: individuals who choose to be preserved for future revival. Motivations vary — terminal patients awaiting future cures, individuals who want to experience the future, and (most commonly) wealthy clients who view stasis as a form of time travel. Elective stasis is available from Sterling-Nakamura at a cost of Φ500,000 for preservation and Φ10,000/year for ongoing storage and monitoring.
 
-There are approximately 2,000 individuals in elective stasis in Meridian 88, stored in Sterling-Nakamura's cryogenic facility in the Thornfield campus. The facility is secured to military standards — the liability exposure of 2,000 frozen clients represents billions of Phi in legal obligations, and the reputational damage of a facility failure would be catastrophic.
+There are approximately 2,000 individuals in elective stasis in GLMZ, stored in Sterling-Nakamura's cryogenic facility in the Thornfield campus. The facility is secured to military standards — the liability exposure of 2,000 frozen clients represents billions of Phi in legal obligations, and the reputational damage of a facility failure would be catastrophic.
 
 ## The Legal Complications
 
@@ -938,7 +938,7 @@ emit({
 
 ## Overview
 
-Bioluminescent technology — engineered organisms that produce light through biological processes — has become a distinctive feature of Meridian 88's built environment. In a city where natural sunlight reaches only the highest levels and electrical lighting is metered by the watt, bioluminescent panels, plants, and installations provide ambient illumination that is self-sustaining, aesthetically warm, and free after the initial installation cost.
+Bioluminescent technology — engineered organisms that produce light through biological processes — has become a distinctive feature of GLMZ's built environment. In a city where natural sunlight reaches only the highest levels and electrical lighting is metered by the watt, bioluminescent panels, plants, and installations provide ambient illumination that is self-sustaining, aesthetically warm, and free after the initial installation cost.
 
 ## How It Works
 
@@ -952,7 +952,7 @@ The organisms are embedded in transparent gel panels that provide nutrients and 
 The Shelf's corridor lighting is predominantly bioluminescent — a combination of choice and necessity. Bioluminescent panels don't require electrical power (the organisms photosynthesize during the day and luminesce at night, or can be fed nutrient solution for continuous operation), which means they operate independently of the power grid. During the Blackout of 2190, the Shelf's bioluminescent corridors continued to glow while every electrically lit space in the city went dark. The Shelf's bioluminescence wasn't just aesthetic — it was infrastructure.
 
 ### The Gulch
-The Gulch's most distinctive visual feature is its bioluminescent ecosystem: algae panels grown in nutrient-rich water runoff that illuminate the district's corridors with a shifting blue-green glow. The algae was originally introduced as a water quality indicator (healthy algae glow brightly; dying algae dim, signaling contamination), but it has become the Gulch's signature aesthetic. The blue-green light of the Gulch is one of Meridian 88's most photographed visual environments.
+The Gulch's most distinctive visual feature is its bioluminescent ecosystem: algae panels grown in nutrient-rich water runoff that illuminate the district's corridors with a shifting blue-green glow. The algae was originally introduced as a water quality indicator (healthy algae glow brightly; dying algae dim, signaling contamination), but it has become the Gulch's signature aesthetic. The blue-green light of the Gulch is one of GLMZ's most photographed visual environments.
 
 ### Agricultural Integration
 GARDENER has introduced bioluminescent organisms into the Cloud Gardens' agricultural systems — not for illumination but for plant communication. Engineered plants express bioluminescence in response to specific environmental conditions: disease, nutrient deficiency, water stress. A farmer walking through a GARDENER-influenced farm can see plant health as a landscape of light: bright plants are healthy, dim plants need attention, and the pattern of illumination across a growing floor tells the story of the crop's condition at a glance.

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73e7532920f67b16aacf7d8",
   "type": "character",
-  "name": "Svetlana Kovalenko-Möller",
+  "name": "Daniela Bautista-Möller",
   "aliases": [
     "Zuw",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
-  "description": "Zuwena is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she's working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink — a gift from the community after her third term — and she traces it absently with her fingernail when she's thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she's been sitting on.",
+  "description": "Daniela Bautista-Möller is a broad-shouldered woman with deep umber skin and silver-streaked locs she keeps pinned under a battered orange headwrap when she's working. Her left forearm has a subdermal map of Highland Park tattooed in bioluminescent ink — a gift from the community after her third term — and she traces it absently with her fingernail when she's thinking. Her face is a landscape of laugh lines and hard-won patience, and she has the particular stillness of someone who has learned that the room will eventually come to her.\n\nShe runs the HPAZ Resource Exchange from a converted auto-garage that smells of pine cleaner and instant noodles, coordinating food distribution, housing mediation, and emergency flood response across eleven blocks. People call her The Cartographer not because she makes maps but because she seems to know where everyone is and what they need before they know it themselves. She is warm to the point of being disarming, which has caused more than one corporate liaison to underestimate her until she produces the seventeen-page legal brief she's been sitting on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -159,7 +159,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,35 +175,15 @@
     "Highland Park Autonomous Zone",
     "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
     "Cartographer",
-    "The Quiet Room",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Tessera Corponation",
-    "Silver",
-    "Adwoa Sulejmani-Pereira",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Flicker",
-    "Hearthstone Firearms Homestead-12 'Door Slam'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "MERIDIAN",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Nnamdi Ostrowski-Faletolu",
     "Plot 17",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA PG-2 'Signature'",
-    "The Interchange",
-    "The Pure Hand",
-    "WELLSPRING",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Patience",
+    "The Quiet Room",
+    "Tessera Corponation",
+    "Silver"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Eastern European Slavic (37.2%) as primary ancestry, with significant Southeast Asian (17.8%), Northern European (15.3%), Sub-Saharan African (13.3%), South Asian (11.5%), and Hispanic/Latin American (4.9%) heritage. This creates a striking phenotype: the broad Slavic bone structure and substantial frame combine with warm, complex skin tones reflecting the African and South Asian contributions, while Southeast Asian ancestry subtly influences facial geometry and eye shape.",
+    "heritage": "Complex global ancestry: Hispanic/Latin American (37.1%) primary with substantial Southeast Asian (21.4%), South Asian (15.6%), Sub-Saharan African (9.4%), East Asian (8.5%), and Middle Eastern (8.0%) heritage. This creates a striking phenotype where warm Latin American and African foundation tones blend with Southeast Asian facial geometry—slightly higher, broader cheekbones and eye placement—softened further by South Asian influences in nose bridge and orbital structure. Middle Eastern and East Asian ancestry add subtle dimension to jaw and eye shape. The result is a face that visibly maps human migration: features that deliberately resist singular categorization.",
     "height_cm": 175,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial without heaviness; years of physical labor and community work have built genuine muscle density across her frame. Posture of someone comfortable taking up space.",
@@ -211,8 +191,8 @@
     "hair_style": "Locs, shoulder-length when loose, habitually pinned and wrapped",
     "hair_length": "Long",
     "eye_color": "Deep brown with faint HUD overlay artifacts visible under certain light angles (second-hand retinal implant)",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones—the harmonious blend of Eastern European, African, and South Asian ancestry creating a rich, complex complexion that shifts subtly in different lighting",
-    "complexion": "Well-maintained skin marked by laugh lines radiating from eyes and mouth, evidence of decades of sustained expression. Minimal scarring. Facial structure reflects Eastern European broadness in cheekbones and jaw, softened by Southeast Asian and South Asian influences in eye placement and nose bridge. Grooming is practical and unhurried—she does not fight her appearance but wears it as earned territory.",
+    "skin_tone": "Warm deep brown with golden undertones and subtle reddish warmth—the harmonious convergence of Latin American, Sub-Saharan African, and South Asian ancestry creating a rich, multidimensional complexion that shifts luminously across light spectrums",
+    "complexion": "Well-maintained skin marked by laugh lines radiating from eyes and mouth, evidence of decades of sustained expression. Minimal scarring. Facial structure distinctly reflects blended ancestry: broader cheekbones and slightly prominent jaw from Southeast Asian and South Asian heritage, softened by the dimensional warmth and bone density of Latin American and African genetic contribution. Eye placement and orbital shape show Southeast/South Asian influence. Nose bridge refined by South Asian ancestry. Grooming is practical and unhurried—she does not fight her appearance but wears it as earned territory.",
     "distinguishing_marks": [
       "Subdermal bioluminescent map of Highland Park (11-block jurisdiction) running across the entire inner surface of her left forearm—faintly visible under skin, glows soft blue-green in low light, streets rendered in fine detail with major resource nodes marked",
       "Fine network of old work scars on both palms and knuckles, consistent with garage work and hands-on repair",
@@ -222,17 +202,82 @@
     "posture_movement": "Moves with deliberate economy—no wasted motion. Sits and stands with the particular stillness of someone accustomed to being the calm center of chaos. When thinking, she traces her left forearm absently with her right fingernail, activating faint bioluminescent pulses. Her presence has gravitas; rooms don't need her to raise her voice.",
     "clothing_style": "Tier 4 utilitarian. Worn but maintained: reinforced canvas work pants (dirt-stained but patched cleanly), layered thermal shirts in muted earth tones, a heavy synthetic-wool coat salvaged and re-lined. The battered orange headwrap is her signature—faded from original brightness, knotted at the back, occasionally slipping to reveal the silver-streaked locs beneath. Work boots resoled at least twice. No jewelry except a thin woven cord bracelet made from scraps contributed by residents—unofficial badge of office."
   },
-  "image_prompt": "Svetlana Kovalenko-Möller, 175cm tall muscular woman with rich warm brown skin blending Eastern European, African, and South Asian heritage. Silver-threaded black locs pinned beneath faded orange headwrap, laugh lines framing deep brown eyes with subtle digital artifacts. Left forearm glowing faintly with bioluminescent street map visible beneath skin (soft blue-green). Broad Slavic cheekbones, warm golden undertones in complexion. Wearing tier-4 utilitarian: reinforced canvas work pants, layered earth-tone thermal shirts, heavy re-lined synthetic-wool coat, resoled work boots. Small burn scar visible on right temple. Woven cord bracelet from community scraps. Deliberate, economical posture suggesting calm authority. Standing in neon-lit cyberpunk Great Lakes Metropolitan Zone workshop or community space, industrial lighting catching the bioluminescent tracery on her forearm. Mood: grounded, experienced, approachable but commanding presence. Year 2226 aesthetic, weathered practical style. --ar 2:3 --v 6",
+  "image_prompt": "Daniela Bautista-Möller, a 175cm woman with substantial build and deep warm brown skin reflecting Latin American, African, Southeast Asian, and South Asian heritage, creating visibly blended facial geometry with broad cheekbones softened by Southeast Asian eye placement and South Asian nose structure. Silver-streaked black locs pinned beneath a faded orange headwrap, laugh lines around deep brown eyes with barely-perceptible retinal HUD artifacts. Practical utilitarian clothing: earth-tone thermal layers, reinforced canvas work pants, heavy re-lined synthetic coat. Work-scarred palms visible. Left forearm shows faint bioluminescent blue-green tracery of Highland Park street map glowing softly beneath skin. Small burn scar on right temple. Posture radiates stillness and gravitas. Standing in low industrial lighting, 2226 neo-noir Great Lakes Metropolitan Zone, worn repair garage or community workspace background, atmospheric blue-green glow from subdermal augmentation casting subtle light across her face and forearm. Cinematic, grounded, human dignity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 37.2,
-    "Southeast Asian": 17.8,
-    "Northern European": 15.3,
-    "Sub-Saharan African": 13.3,
-    "South Asian": 11.5,
-    "Hispanic/Latin American": 4.9
+    "Hispanic/Latin American": 37.1,
+    "Southeast Asian": 21.4,
+    "South Asian": 15.6,
+    "Sub-Saharan African": 9.4,
+    "East Asian": 8.5,
+    "Middle Eastern": 8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 8.3,
+        "Haitian": 7.9
+      },
+      "South American": {
+        "Colombian": 3
+      },
+      "Central American": {
+        "Nicaraguan": 17.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.5
+      },
+      "Filipino": {
+        "Bicolano": 13.9
+      },
+      "Indonesian": {
+        "Sundanese": 5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.3
+      },
+      "Indian": {
+        "Bengali": 3.8,
+        "Marathi": 1.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 3
+      },
+      "East African": {
+        "Kenyan": 2.3
+      },
+      "Central African": {
+        "Congolese": 1.5,
+        "Gabonese": 2.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.8
+      },
+      "Chinese": {
+        "Shanghainese": 3.1
+      },
+      "Japanese": {
+        "Japanese": 1.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 8
+      }
+    }
+  }
 }

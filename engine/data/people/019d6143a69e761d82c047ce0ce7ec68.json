@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69e761d82c047ce0ce7ec68",
   "type": "character",
-  "name": "Phoenix Tamale-Ibarra",
+  "name": "Phoenix Olofsson-Baiseitov",
   "aliases": [
     "Prax",
     "the Bloodhound"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
-  "description": "Praxiteles is angular and precise — sharp cheekbones, long fingers perpetually stained faint violet from reactant solution, hair grown out in loose curls they keep loosely pinned and often forget about. Their skin is a warm amber-brown, and they have a single cosmetic mod — a patterned iris treatment that makes their eyes look like cracked obsidian with gold underneath, chosen because they liked the aesthetic at twenty-two and have never bothered to change it. They dress with the particular carelessness of someone who knows they'll be in a lab coat within twenty minutes of leaving home anyway.\n\nDeepwell Station's forensic lab is their kingdom, and they are a benevolent but absolute ruler of it. They speak to evidence the way other people speak to colleagues — with expectation, with argument, with occasional grudging respect. They are extraordinarily good at their job and have the low-grade social difficulty of someone who spent their developmental years more interested in trace analysis than people. They are not unkind — they are simply operating on a slightly different frequency, one that detects molecular traces and misses tone of voice. They have a fierce, private ethical core and a growing horror at the gap between what their lab reports show and what the official case conclusions say.",
+  "description": "Phoenix Olofsson-Baiseitov is angular and precise — sharp cheekbones, long fingers perpetually stained faint violet from reactant solution, hair grown out in loose curls they keep loosely pinned and often forget about. Their skin is a warm amber-brown, and they have a single cosmetic mod — a patterned iris treatment that makes their eyes look like cracked obsidian with gold underneath, chosen because they liked the aesthetic at twenty-two and have never bothered to change it. They dress with the particular carelessness of someone who knows they'll be in a lab coat within twenty minutes of leaving home anyway.\n\nDeepwell Station's forensic lab is their kingdom, and they are a benevolent but absolute ruler of it. They speak to evidence the way other people speak to colleagues — with expectation, with argument, with occasional grudging respect. They are extraordinarily good at their job and have the low-grade social difficulty of someone who spent their developmental years more interested in trace analysis than people. They are not unkind — they are simply operating on a slightly different frequency, one that detects molecular traces and misses tone of voice. They have a fierce, private ethical core and a growing horror at the gap between what their lab reports show and what the official case conclusions say.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -203,7 +203,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -263,34 +263,17 @@
   "related_entities": [
     "Deepwell Station",
     "Ringo RB-1 'Judas Goat'",
+    "Frequency",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Lacuna Genomics",
     "Irontide Tidal Energy",
+    "Underground Phoenix",
     "TESSERA PA-5 'Attendant'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gold",
-    "Arcturus CK-5 'Bloodhound'",
-    "Arcturus PG-3 'Aegis'",
-    "Chronicle",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Ihaia Nystrom-Keita",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Narrowcast",
-    "Obinna Ferhat-Tuilagi",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Yannick Tambadou-Reinholt"
+    "Gold"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (67.3%) with significant Hispanic/Latin American heritage (22.9%) and Eastern European ancestry (9.8%). This blend creates warm, deep brown skin with subtle golden undertones characteristic of West African and Latin American genetic expression, grounded by the cooler undertones from Eastern European ancestry.",
+    "heritage": "Complex diaspora blend: Southeast Asian foundation (36.9%) with substantial Central Asian (25.3%) and South Asian (12.3%) components, accented by North African (10.8%), Hispanic/Latin American (8.8%), and Sub-Saharan African (5.9%) ancestry. This creates a distinctive warm medium-brown skin tone with golden-olive undertones, refined cheekbones from Southeast/South Asian genetics, and subtle warmth from the North African and Sub-Saharan African contributions. The result is a harmonious blending across all visible features.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Angular and lean, all sharp planes and efficient geometry. Long-limbed with a slight forward hunch from years bent over lab benches. Chest narrow, shoulders slightly rounded from posture. Wrists thin enough to slip easily into precision-work gloves.",
@@ -298,8 +281,8 @@
     "hair_style": "Loose, loose curls worn long and typically half-pinned with whatever clip was closest at hand — usually a pen, sometimes a lab marker. Frequently escapes.",
     "hair_length": "Long (shoulder-length, often longer on one side)",
     "eye_color": "Patterned iris mod: obsidian-black base with fine gold fracture-pattern throughout, giving the appearance of cracked stone with warm metal underneath. Natural pupil and sclera structure preserved.",
-    "skin_tone": "Deep warm brown with golden undertones across cheekbones and bridge of nose, reflecting the dominant Sub-Saharan African ancestry with warmer notes from Hispanic/Latin American heritage",
-    "complexion": "Clean, minimal grooming emphasis. Prominent cheekbones and defined jawline characteristic of West African features. Skin clear but with faint violet staining around the cuticles and under fingernails from reactant solutions — a mark they don't bother to remove. Small scar on left temple, barely visible, from a lab accident at twenty-five.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting Southeast Asian and Central Asian dominance with warmer contributions from South Asian, North African, and Sub-Saharan African heritage",
+    "complexion": "Clean, minimal grooming emphasis. Prominent high cheekbones and defined jawline characteristic of Southeast and South Asian features with subtle warmth from North African ancestry. Skin clear but with faint violet staining around the cuticles and under fingernails from reactant solutions — a mark they don't bother to remove. Small scar on left temple, barely visible, from a lab accident at twenty-five.",
     "distinguishing_marks": [
       "Faint violet reactant staining on fingertips and cuticles, chronic and deep enough to be part of their visual identity",
       "Small 2cm scar on left temple, thin and clean, angled slightly upward — result of a centrifuge incident",
@@ -309,14 +292,79 @@
     "posture_movement": "Forward-leaning stance, shoulders slightly hunched as if perpetually leaning toward a microscope or evidence table. Movements are precise and economical — no wasted motion. Hands are active, often gesturing when explaining trace evidence. Walking gait is slightly hurried, rhythm of someone moving between tasks. Resting expression is faintly distant, as if processing multiple data streams.",
     "clothing_style": "Tier 3 working-class pragmatism: dark neutral colors (charcoal, black, muted blue) chosen for lab practicality rather than fashion. Standard-fit synthetic-blend cargo pants with deep pockets, usually containing evidence bags, calipers, or sampling equipment. Loose long-sleeved shirts or fitted tech-weave tops that allow arm mobility. Worn grey or black lab coat, perpetually wrinkled, with pens and markers in the breast pocket. Comfortable, scuffed ankle boots with good grip for wet lab floors. Almost no jewelry except a worn titanium watch that syncs to the lab database. No corporate branding visible — their uniform is function, not affiliation."
   },
-  "image_prompt": "Phoenix Tamale-Ibarra, a 178cm lean angular forensic analyst with deep warm brown skin and golden undertones reflecting Sub-Saharan African and Hispanic heritage. Long dark brown curls loosely pinned with a pen, half-escaping down one shoulder. Striking patterned iris mods with obsidian-black base and fine gold fracture-lines. Sharp cheekbones, defined jawline, faint violet chemical staining visible on fingertips and cuticles. Dressed in wrinkled grey lab coat over muted charcoal tech-weave, cargo pants with evidence bags, scuffed ankle boots. Forward-leaning posture as if perpetually analyzing trace evidence. Hands active and precise. Resting expression distant and contemplative. Set in a cyberpunk 2226 forensic lab with neon-edged equipment, cool blue-violet lighting casting shadows across her face, worn titanium watch syncing with holographic displays nearby. Atmospheric, focused, the quiet intensity of someone processing data streams in the Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Phoenix Olofsson-Baiseitov, 178cm lean angular frame with slight forward hunch, warm medium-brown skin with golden-olive undertones from Southeast Asian-Central Asian-South Asian heritage blend. High prominent cheekbones, defined jawline. Long dark brown curly hair shoulder-length, half-pinned with lab pen, loose tendrils escaping. Patterned iris modification: obsidian base with fine gold fracture-lines like cracked stone. Small temple scar. Violet staining visible on fingertips from reactant solutions. Wearing wrinkled grey lab coat over dark synthetic tech-weave top, cargo pants with equipment pockets, scuffed black ankle boots. Hunched posture over microscope or evidence table in modern GLMZ forensics lab, cool LED lighting casting gold fractals from iris augmentation across lab equipment. Tired, focused expression, hands active near trace evidence samples. GLMZ, meticulous trace analyst aesthetic, functional working-class gear, no corporate branding. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 67.3,
-    "Hispanic/Latin American": 22.9,
-    "Eastern European": 9.8
+    "Southeast Asian": 36.9,
+    "Central Asian": 25.3,
+    "South Asian": 12.3,
+    "North African": 10.8,
+    "Hispanic/Latin American": 8.8,
+    "Sub-Saharan African": 5.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 36.9
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 7.7
+      },
+      "Mongolic": {
+        "Mongolian": 5.5,
+        "Buryat": 5.4
+      },
+      "Iranian Central": {
+        "Tajik": 2.9,
+        "Hazara": 3.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 2.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 6.2
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 6.7
+      },
+      "Maghreb": {
+        "Moroccan": 3.2
+      },
+      "Amazigh": {
+        "Tuareg": 0.8,
+        "Kabyle": 0.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 8.1
+      },
+      "Central American": {
+        "Guatemalan": 0.3,
+        "Honduran": 0.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 0.5,
+        "Senegalese": 0.1
+      },
+      "Central African": {
+        "Congolese": 2.9,
+        "Gabonese": 2.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a605774283524f3127e30c50",
   "type": "character",
-  "name": "Ember Karimi",
+  "name": "Ember Chakraborty",
   "aliases": [
     "Seraph",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
-  "description": "Erkin Wendt-Frempong are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
+  "description": "Ember Chakraborty are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -259,7 +259,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,26 +273,12 @@
   "registered_firearms": [],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "GLMZ",
     "The Unfinished Theorem",
-    "Arcturus Exo-Runner Frame",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Mika Sorel",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nodar Kuznetsov-Adu",
-    "Prophet",
-    "Slagworks Industrial",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed ancestry from Middle East, Eastern Europe, Sub-Saharan Africa, and Northern Europe — a genetic blend creating a distinctive phenotype that defies easy categorization. Warm brown skin with subtle olive and golden undertones from the Middle Eastern and Eastern European components, enriched by Sub-Saharan heritage. Northern European ancestry shows faintly in the pale undertones visible in direct light.",
+    "heritage": "Complex blend of Central Asian (33.7%), South Asian (26.9%), Middle Eastern (17.0%), Hispanic/Latin American (10.2%), Northern European (6.9%), and North African (5.3%) ancestry. The dominant Central and South Asian genetics create strong cheekbones and facial structure, while the substantial Middle Eastern and North African components add warmth to undertones and refine nose bridge characteristics. The Latin American and Northern European ancestry introduces subtle variation in skin depth and undertone complexity, creating a phenotype that reads as genuinely cosmopolitan rather than regionally fixed.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular, all limbs and efficient muscle. Long-limbed in a way that reads as predatory rather than graceful. Chest slightly narrower than shoulders, giving a forward-canted silhouette.",
@@ -300,8 +286,8 @@
     "hair_style": "Pulled back in a tight, functional braid or secured with a chrome clip",
     "hair_length": "Medium",
     "eye_color": "Dark brown, unremarkable — deliberately unremarkable",
-    "skin_tone": "Warm medium brown with golden and olive undertones, weathered by six years of dockside wind and salt spray",
-    "complexion": "Sharp cheekbones with subtle width suggesting Middle Eastern heritage, angular jaw with slight forward projection from Eastern European ancestry. Slight asymmetry in the left side of the face suggesting old nerve damage. Minimal grooming — practical, not vain. Skin texture is rough, scarred in places, with a weathered quality that speaks to years of exposure.",
+    "skin_tone": "Warm medium-tan with golden-olive undertones. Central Asian and South Asian ancestry creates the base warmth; Middle Eastern and North African genetics add depth and richness to the tone. Weathered by six years of dockside wind and salt spray, showing visible sun exposure and environmental aging.",
+    "complexion": "High, prominent cheekbones with strong Central and South Asian structure balanced by the width and definition of Middle Eastern influence. Angular jaw with slight forward projection. Nose bridge refined but strong, characteristic of the Central Asian and Middle Eastern blend. Slight asymmetry in the left side of the face suggesting old nerve damage. Minimal grooming — practical, not vain. Skin texture is rough, scarred in places, with a weathered quality that speaks to years of exposure and environmental stress.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, tissue damage visible under the skin",
       "Parallel burn scars across right forearm — old thermal weapon discharge, partially healed",
@@ -311,15 +297,77 @@
     "posture_movement": "Moves with controlled efficiency, every motion purposeful and economical. Stands with weight forward on the balls of feet, ready to move. Head tilts slightly when listening, like targeting. Sits at angles that preserve sight lines and exit routes. Rarely fidgets — when they do it's to check weapon accessibility or augmentation status.",
     "clothing_style": "Tier 3-4 utilitarian: matte-black reactive fabric cargo pants with reinforced thigh pockets and cable routing. Sleeveless compression vest over a long-sleeved thermal shirt, showing off the chrome work deliberately. Worn tactical jacket in dark gray, military-cut, with visible ammunition and tool placement. Steel-toed boots rated for dockside work. No jewelry, no logos, no status markers. Everything is functional or invisible."
   },
-  "image_prompt": "Ember Karimi, 188cm lean muscular figure with warm medium brown skin and golden olive undertones, steel gray hair pulled back tight, sharp angular features with faint temple scar. Dark brown eyes. Wearing sleeveless compression vest exposing gunmetal chrome synthetic leg augmentations with amber LED junction points, scarred and weathered from heavy use. Long-sleeved thermal shirt underneath, dark gray tactical jacket, reactive black cargo pants, steel-toed boots. Standing in forward-ready posture on dockside at night, cyberpunk 2226 Great Lakes Metropolitan Zone. Neon reflection on wet pavement, amber and blue industrial lighting, muscular augmented legs visible, efficient predatory stance, no jewelry, functional gear only. Cinematic, gritty, dystopian dock environment. --ar 2:3 --v 6",
+  "image_prompt": "Ember Chakraborty, 188cm lean neo-noir operative in 2226 Great Lakes Metropolitan Zone. Medium-tan warm skin with golden-olive undertones, sharp Central Asian cheekbones and South Asian facial structure refined by Middle Eastern influence. Prematurely silvered steel-gray hair pulled back tight, dark brown eyes, weathered by dockside salt spray. Distinctive thin white scar temple to cheekbone, old thermal burn scars on right forearm. Muscular legs with visible gunmetal chrome synthetic fiber latticing and amber junction LEDs showing through synthetic skin — scarred and well-used. Wearing sleeveless compression vest over thermal shirt exposing augmentations deliberately, dark gray military tactical jacket, matte-black cargo pants, steel-toed boots. Forward-canted predatory stance, weight on balls of feet. Controlled, purposeful movement. Dockside industrial setting, moody shadow and neon glow, neo-noir urban aesthetic, functional and lethal. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 32.1,
-    "Eastern European": 28.4,
-    "Sub-Saharan African": 26.2,
-    "Northern European": 13.3
+    "Central Asian": 33.7,
+    "South Asian": 26.9,
+    "Middle Eastern": 17,
+    "Hispanic/Latin American": 10.2,
+    "Northern European": 6.9,
+    "North African": 5.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 8,
+        "Mongolian": 8.7
+      },
+      "Turkic": {
+        "Uyghur": 17
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 18.9,
+        "Tamil Sri Lankan": 6.6
+      },
+      "Pakistani": {
+        "Sindhi": 1.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 6.7
+      },
+      "Arab Gulf": {
+        "Iraqi": 3.7,
+        "Kuwaiti": 2.5
+      },
+      "Persian": {
+        "Tajik Persian": 1.8,
+        "Iranian": 2.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 4.2
+      },
+      "Germanic": {
+        "Dutch": 1.9,
+        "Swiss German": 0.8
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 2,
+        "Tuareg": 1.6
+      },
+      "Nile Valley": {
+        "Egyptian": 0.8
+      },
+      "Maghreb": {
+        "Algerian": 0.7,
+        "Tunisian": 0.2
+      }
+    }
+  }
 }

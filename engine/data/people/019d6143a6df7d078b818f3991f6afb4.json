@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6df7d078b818f3991f6afb4",
   "type": "character",
-  "name": "Rowan Solberg-Villanueva",
+  "name": "Paloma Cervantes-Möller",
   "aliases": [
     "Nimble",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Armitage and Milwaukee",
-  "description": "Suki Nordin-Asante-Mensah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a infiltrator out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSuki Nordin-Asante-Mensah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Paloma Cervantes-Möller is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a infiltrator out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nPaloma Cervantes-Möller operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.15,
@@ -259,7 +259,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,29 +274,13 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
+    "Circuit",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Bintou Halvorsen-Osei",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Lazarus LX-2 'Lab Rat'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Ringo Corponation Mnemonic Excision Clip",
-    "Sagyn Ogawa-Twumasi",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan genetic blend: predominantly East Asian (32.9%), with significant Hispanic/Latin American (21.4%), Middle Eastern (18.5%), and South Asian (17.1%) ancestry, complemented by Southeast Asian (6.3%) and Eastern European (3.8%) heritage. This combination produces striking pan-global features with no single dominant aesthetic.",
+    "heritage": "Ubiquitous Diaspora blend: predominantly Hispanic/Latin American (40.1%) with substantial Northern European (32.9%), Sub-Saharan African (17.0%), and South Asian (10.0%) ancestry. This combination produces striking pan-global features—warm golden-brown complexion enriched by deep undertones from African ancestry, angular bone structure sharpened by Northern European and South Asian heritage, with the expressive warmth and fuller facial geometry of Latin American and African genetics creating a uniquely cosmopolitan aesthetic.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Lean and angular with defined musculature — the physique of someone who trains with purpose rather than vanity. Long limbs built for reach and precision. No wasted mass.",
@@ -304,8 +288,8 @@
     "hair_style": "Undercut with 8mm clipper on sides, longer on top (4-5cm). Styled back or unstyled depending on the job. No ornamentation.",
     "hair_length": "Short",
     "eye_color": "Warm brown with a faint LED shimmer in low light — suggests subcutaneous optical augmentation",
-    "skin_tone": "Warm medium complexion with subtle golden-olive undertones, a harmonious blend of East Asian, South Asian, and Middle Eastern ancestry with hints of Latin warmth. Sun-exposure deepens the tone unevenly, creating subtle variations across the face and neck.",
-    "complexion": "Gaunt-faced with high cheekbones and a sharp jawline reflecting East Asian and South Asian bone structure, with the angular definition of Middle Eastern features. Minimal grooming — no makeup, no visible skincare routine beyond functional cleansing. Sleep deprivation etched into the undereyes. Faint freckles scattered across the bridge of nose and cheeks suggest Southeast Asian and Latin heritage.",
+    "skin_tone": "Warm deep-golden complexion with rich undertones blending Hispanic/Latin, Sub-Saharan African, and South Asian ancestry. Sun-exposure deepens the tone unevenly, creating subtle variations across the face and neck.",
+    "complexion": "Angular face with high, prominent cheekbones and sharp jawline reflecting Northern European and South Asian bone structure, balanced by fuller cheeks and softer lower face geometry from Latin American and African heritage. Minimal grooming — no makeup, no visible skincare routine beyond functional cleansing. Sleep deprivation etched into the undereyes. Faint freckles scattered across the bridge of nose and cheeks, warm honey-brown undertone from mixed ancestry.",
     "distinguishing_marks": [
       "Augmentation scarring along both temples in precise surgical lines, faint but deliberate — chrome installation points visible as faint silvered keloid",
       "Matching surgical scarring along the left jawline where synthetic blood circulatory ports were installed, approximately 8cm in length",
@@ -316,17 +300,46 @@
     "posture_movement": "Moves with biomechanical precision — every motion calibrated and efficient. No fidgeting, no wasted energy. When standing still, weight rests on the balls of her feet. When walking, she moves low and centered, ready to shift direction. Eyes are always cataloging — exits, sightlines, potential threats. Rare to see her relaxed; even at rest, there is coiled readiness.",
     "clothing_style": "Tier 3-4 utilitarian. Black synthetic leather jacket, worn but maintained. Form-fitting tactical pants with cargo pockets and reinforced knee areas — expects to move fast and possibly crawl. Black steel-toed boots, minimalist and broken in. Layered with a charcoal undershirt. No visible corporate branding or crew colors. Carries a small satchel with modular pockets for tools. Everything is dark, functional, and replaceable. Clothes are equipment, not identity."
   },
-  "image_prompt": "Rowan Solberg-Villanueva, lean cybernetic operative, 182cm tall with warm medium golden-olive complexion reflecting East Asian, South Asian, Middle Eastern and Latin heritage blend. Sharp angular face with high cheekbones, gaunt from sleep deprivation, dark brown undercut hair. Warm brown eyes with subtle LED shimmer. Visible chrome circuitry scarring at temples and left jawline from augmentation work, faint silvered keloid lines. Wearing black synthetic leather jacket over charcoal tactical undershirt, form-fitting black cargo pants with reinforced knees, steel-toed boots. Small modular satchel. Standing in coiled readiness position in neon-lit cyberpunk Great Lakes Metropolitan Zone setting, weight on balls of feet, cataloging surroundings. Biomechanical precision in every movement. Dark industrial architecture, synthetic blood luminescence faintly glowing under neon red and cyan lighting. Moody, professional operative aesthetic. Cyberpunk 2226. --ar 2:3 --v 6",
+  "image_prompt": "Paloma Cervantes-Möller, lean 182cm operative in GLMZ, golden-deep brown skin with warm undertones, sharp high cheekbones and angular jawline balanced with fuller facial geometry, faint freckles across nose and cheeks, warm brown eyes with subtle LED shimmer, dark undercut hair styled back. Augmentation scars visible along temples and left jawline with faint chrome circuitry glinting under neon, synthetic blood giving skin faint luminescence. Black tactical synthetic leather jacket over charcoal undershirt, form-fitting reinforced tactical pants, black steel-toed boots. Posture rigid and ready, cataloging surroundings with cold precision. Standing in Great Lakes Metropolitan Zone neon-lit street, rain-slicked pavement reflecting cybernetic implant details, moody cyan and amber lighting, atmosphere of calculated danger and purpose. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 32.9,
-    "Hispanic/Latin American": 21.4,
-    "Middle Eastern": 18.5,
-    "South Asian": 17.1,
-    "Southeast Asian": 6.3,
-    "Eastern European": 3.8
+    "Hispanic/Latin American": 40.1,
+    "Northern European": 32.9,
+    "Sub-Saharan African": 17,
+    "South Asian": 10
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 40.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 22.7,
+        "Icelandic": 10.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 6.9
+      },
+      "West African": {
+        "Nigerian": 4.1
+      },
+      "Central African": {
+        "Cameroonian": 5.2,
+        "Congolese": 0.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 6,
+        "Sindhi": 4
+      }
+    }
+  }
 }

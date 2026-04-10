@@ -24,6 +24,10 @@ const SCAN_REPOS = ['documents', 'people', 'factions', 'places'];
 // Minimum name length to avoid false positives
 const MIN_NAME_LENGTH = 4;
 
+// For single-word entity names (no spaces), require longer minimum to reduce false positives.
+// "Echo" (4 chars) matches too broadly; "Nightlight" (10 chars) is safe.
+const MIN_SINGLE_WORD_LENGTH = 8;
+
 // Common English words that appear as aliases but cause massive false positives.
 // These are too generic to be useful as cross-reference triggers.
 const STOPWORD_ALIASES = new Set([
@@ -50,6 +54,12 @@ const STOPWORD_ALIASES = new Set([
   'wrath', 'mercy', 'grace', 'pride', 'shame', 'spite', 'doubt', 'grief',
   'dread', 'vigor', 'nerve', 'focus', 'drive', 'force', 'power', 'might',
   'valor', 'vigor', 'honor', 'truth', 'peace', 'chaos', 'light', 'ivory',
+  // Cosmopolitan first names that are also common English words
+  'echo', 'nova', 'sage', 'reed', 'wren', 'lark', 'vale', 'onyx', 'rune',
+  'flux', 'ember', 'haze', 'drift', 'slate', 'frost', 'cedar', 'coral',
+  'delta', 'sable', 'amber', 'flint', 'dawn', 'dusk', 'mist', 'gale',
+  'volt', 'iris', 'ruby', 'jade', 'opal', 'mesa', 'pike', 'glen', 'cove',
+  'dale', 'fern', 'void', 'bane', 'fate', 'fury', 'crow', 'hawk', 'raven',
 ]);
 
 function readJsonFiles(dirPath) {
@@ -137,6 +147,12 @@ function main() {
       if (name.length < MIN_NAME_LENGTH) continue;
 
       const key = name.toLowerCase();
+      // For people/synthetics, skip single-word short names (too many false positives)
+      const isSingleWord = !name.includes(' ') && !name.includes('-');
+      if (isSingleWord && (repo === 'people' || repo === 'synthetics') && name.length < MIN_SINGLE_WORD_LENGTH) {
+        fileToEntity.set(filePath, name);
+        continue;
+      }
       if (!nameIndex.has(key)) {
         nameIndex.set(key, { canonicalName: name, repo, filePath });
         repoCount++;

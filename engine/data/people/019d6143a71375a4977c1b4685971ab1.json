@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71375a4977c1b4685971ab1",
   "type": "character",
-  "name": "Haze Strömqvist-Kariuki",
+  "name": "Ignacio Hayashi-Bustamante",
   "aliases": [
     "Fulcrum",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
-  "description": "Vesna Ito-Takyi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Vesna Ito-Takyi is one of the ones who actually does it.",
+  "description": "Ignacio Hayashi-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Ignacio Hayashi-Bustamante is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,28 +274,13 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "Slagworks Industrial",
-    "Djeneba Park-Traore",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multi-continental blend: 46.9% Sub-Saharan African, 25.6% Southeast Asian, 25.3% Northern European, 2.2% Hispanic/Latin American. Features reflect this complex ancestry — deep brown skin with warm undertones from African heritage, high cheekbones and eye shape influenced by Southeast Asian ancestry, and subtle narrower nose bridge from Northern European genetics creating a striking hybrid phenotype.",
+    "heritage": "Multi-continental blend: 42.1% East Asian, 41.8% Hispanic/Latin American, 11.1% Middle Eastern, 5.0% Sub-Saharan African. Features reflect this complex ancestry — warm medium-brown skin with golden undertones from the balanced East Asian and Hispanic mix, high cheekbones and subtle monolid eye shape influenced by East Asian genetics, broader jaw structure and fuller lips from Hispanic/Latin American heritage, with warm enriching undertones from Middle Eastern and Sub-Saharan African ancestry creating a striking hybrid phenotype with naturally balanced facial proportions.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular with visible muscle definition from constant physical training. Long-limbed and economical in frame — built for precision and endurance rather than power.",
@@ -303,8 +288,8 @@
     "hair_style": "Kept short and practical, swept back from forehead",
     "hair_length": "Short",
     "eye_color": "Chrome iris rings with warm amber glow beneath — thermal and low-light augmentation visible as faint luminescence in dim conditions",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the blend of Sub-Saharan African and Southeast Asian ancestry with Northern European influence creating subtle warmth rather than cool undertones",
-    "complexion": "Sharp, angular features with high cheekbones (Southeast Asian-influenced prominence) and a narrow jaw. Skin is clear but marked by the wear of someone who lives in industrial zones — fine dust scarring visible in close inspection. No facial hair. Expression default is neutral, difficult to read.",
+    "skin_tone": "Warm golden-brown, medium depth with subtle olive undertones — a natural blending of East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African ancestry creating luminous depth",
+    "complexion": "Angular features with prominent high cheekbones and subtle monolid eye shape (East Asian influence), fuller lips and broader jaw structure (Hispanic/Latin American influence), skin tone enriched by warm undertones from Middle Eastern and African heritage. Skin is clear but marked by the wear of someone who lives in industrial zones — fine dust scarring visible in close inspection. No facial hair. Expression default is neutral, difficult to read.",
     "distinguishing_marks": [
       "Thin radiating scar tissue at left temple extending into hairline — cortical implant removal site, keloid patterns visible when hair is pulled back",
       "Pale linear scar running from left collarbone to sternum approximately 12cm — old injury, healed but prominent against skin tone",
@@ -314,15 +299,61 @@
     "posture_movement": "Moves with deliberate, economical precision — every motion calculated and efficient. No wasted energy. Stance is balanced and reactive, as if always ready to shift weight or move quickly. Hands are still and controlled. Eyes track and focus unnaturally fast. Overall impression is coiled potential, not relaxation.",
     "clothing_style": "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing and mag-clips for tools. Worn synthetic leather jacket over tech-mesh undershirt in charcoal gray. Steel-toed work boots (Yamakasi brand — mid-tier industrial). Fingerless gloves with grip-gel palms. No unnecessary ornamentation. Everything serves a function. Clothes show signs of wear and chemical exposure but are meticulously maintained."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Haze Strömqvist-Kariuki, 188cm tall lean angular frame, deep warm brown skin with golden undertones blending Sub-Saharan African and Southeast Asian features, sharp high cheekbones and narrow jaw, short black hair with silver at temples swept back, chrome iris rings glowing faint amber in low light with thermal augmentation visible, pale scar from collarbone to sternum, keloid scar tissue at left temple from cortical implant, fine white scarring on knuckles, neutral unreadable expression, coiled tension in posture, black reinforced cargo pants with utility webbing, worn synthetic leather jacket over charcoal tech-mesh shirt, steel-toed work boots, fingerless grip-gel gloves, industrial zone lighting with neon blue and amber glow reflecting off chrome eyes, gritty worn aesthetic, focused and dangerous presence --ar 2:3 --v 6",
+  "image_prompt": "Ignacio Hayashi-Bustamante, 188cm lean angular neo-noir operative with warm golden-brown skin reflecting East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African heritage. High prominent cheekbones, subtle monolid eye shape, fuller lips, balanced jaw. Black hair with silver threading at temples swept back. Chrome iris rings with warm amber internal glow and thermal augmentation, unnaturally precise focus. Thin radiating scar at left temple, pale linear scar from collarbone to sternum, fine white scarring on knuckles. Black reinforced cargo pants with utility webbing, worn synthetic leather jacket over charcoal tech-mesh, Yamakasi steel-toed boots, fingerless grip-gel gloves. Coiled posture, calculated movement, neutral expression. Industrial GLMZ, Great Lakes Metropolitan Zone, cool LED industrial lighting with thermal undertones, gritty warehouse or facility setting, evening hours --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 46.9,
-    "Southeast Asian": 25.6,
-    "Northern European": 25.3,
-    "Hispanic/Latin American": 2.2
+    "East Asian": 42.1,
+    "Hispanic/Latin American": 41.8,
+    "Middle Eastern": 11.1,
+    "Sub-Saharan African": 5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 20.3
+      },
+      "Japanese": {
+        "Japanese": 14.4
+      },
+      "Chinese": {
+        "Cantonese": 7.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 30.7
+      },
+      "Central American": {
+        "Nicaraguan": 0.3
+      },
+      "South American": {
+        "Brazilian": 5,
+        "Colombian": 5.8
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 7.5,
+        "Tajik Persian": 1.9
+      },
+      "Kurdish": {
+        "Kurdish": 1.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 2.9
+      },
+      "East African": {
+        "Somali": 0.9
+      },
+      "West African": {
+        "Malian": 0.9,
+        "Nigerian": 0.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72e769395802164e2e8fa3f",
   "type": "character",
-  "name": "Rune Sow-Olofsson-Mazurek",
+  "name": "Rune Larsdóttir-Haddad-Thakur",
   "aliases": [
     "Yse",
     "The Papermaker"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Ashfeld — behind a legitimate small-run printing concern called Kamara Press on Cinder Row, near Pulaski and Chicago Ave",
-  "description": "Yseult is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nYseult considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
+  "description": "Rune Larsdóttir-Haddad-Thakur is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nRune Larsdóttir-Haddad-Thakur considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -188,7 +188,7 @@
     "Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfeld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,32 +249,18 @@
     "VitaCore SteadyField Precision Motor Implant",
     "Castling",
     "Neurochemical Dispersal Grenade",
+    "Plot 17",
     "Ashfeld",
+    "Chicago",
+    "Copper",
     "SynapTech IrisBloom Ocular Color Modulator",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Copper",
-    "Tibor Osei-Svanstrom",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pure Hand",
-    "Chicago",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Deniz Nyberg-Sarpong",
-    "Hamtramck Enclave",
-    "Helix Biosystems",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Patient Zero",
-    "Plot 17",
-    "SentryGuard PepperShot PS-1 'Sting'",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Tabula"
+    "Frost Boudiaf",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (Polish/Czech) with significant Sub-Saharan African ancestry, complemented by East Asian heritage — a striking genetic blend resulting in warm-toned deep brown skin with subtle olive undertones, angular facial structure with both sharp Slavic and African features, and natural hair texture showing rich brown with copper undertones",
+    "heritage": "Striking multifaceted blend dominated by South Asian genetics (44.3%) with substantial Hispanic/Latin American (23.0%), Middle Eastern (17.7%), and Northern European (15.0%) ancestry. The genetic convergence creates warm golden-brown skin with subtle amber undertones, angular facial structure combining South Asian bone geometry with Middle Eastern definition and Latin American warmth, dark hair with natural copper undertones from the complex ancestral mix, and the distinctive penetrating gaze of someone whose features carry multiple continents.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and economical, all efficient muscle and minimal excess — the build of someone whose body is calibrated for precision work rather than strength",
@@ -282,24 +268,64 @@
     "hair_style": "Close-cropped, practical, with subtle texture variation from the copper dye cycling through the follicles",
     "hair_length": "Short",
     "eye_color": "Deep brown base with augmented patterned irises: swirling amber and black design",
-    "skin_tone": "Warm deep brown with olive undertones — the result of Eastern European and Sub-Saharan African heritage creating rich, even coloration with subtle golden warmth; unblemished except for ritual marks",
-    "complexion": "Precisely angular with high, defined cheekbones reflecting both Slavic and African ancestry; steady, penetrating gaze; minimal makeup; skin maintenance-clean but not precious; facial structure shows the genetic blend of sharp Eastern European geometry with broader Sub-Saharan features",
+    "skin_tone": "Warm golden-brown with amber undertones — the result of dominant South Asian, significant Middle Eastern and Hispanic/Latin American heritage creating rich, luminous coloration with subtle warmth; unblemished except for ritual marks",
+    "complexion": "Angular and defined with high cheekbones reflecting South Asian and Middle Eastern bone structure; the facial geometry shows the warm interplay of South Asian angularity softened by Latin American and Middle Eastern features; steady, penetrating gaze; minimal makeup; skin maintenance-clean but not precious; features carry the distinct character of genuine genetic blending across multiple continental lineages",
     "distinguishing_marks": [
-      "Three parallel ritual scarification lines below the left eye, approximately 3cm in length, in pale raised scar tissue — a maternal lineage mark she has deliberately preserved through all other modifications"
+      "Three parallel ritual scarification lines below the left eye, approximately 3cm in length, in pale raised scar tissue — a maternal lineage mark deliberately preserved through all other modifications"
     ],
     "visible_augmentations": "Patterned irises with swirling amber-and-black design visible under normal light; subtle copper shimmer in hair indicating follicular pigment mod; fingerless composite gloves worn constantly, suggesting hand augmentation beneath but not exposing it visibly",
     "posture_movement": "Economical and controlled; moves with deliberate precision; hands held with an almost martial calm; minimal wasted motion; sits still for extended periods without fidgeting; presence is quiet rather than commanding",
     "clothing_style": "Practical Tier 4 workwear: dark charcoal composite-fiber trousers and fitted tunic; reinforced apron with multiple tool pockets worn during active work; fingerless thermal gloves (midnight blue); worn boots with good ankle support; no jewelry or ornamentation except for the ritual scars; everything chosen for function and durability over aesthetics"
   },
-  "image_prompt": "Rune Sow-Olofsson-Mazurek, 2226 GLMZ cyberpunk mechanic, 168cm lean athletic frame, warm deep brown skin with olive undertones, sharp angular cheekbones with East European-Sub-Saharan African blend, augmented amber-and-black patterned irises, three parallel ritual scarification lines below left eye, close-cropped dark brown hair with copper follicular mod shimmer, fingerless midnight blue thermal gloves concealing hand augmentation, dark charcoal composite-fiber workwear with reinforced tool apron, worn boots with ankle support, economical controlled posture, quiet precise presence, workshop environment with cool blue-white LED lighting, cyberpunk aesthetic, focused expression --ar 2:3 --v 6",
+  "image_prompt": "Rune Larsdóttir-Haddad-Thakur, a 168cm lean precision-calibrated woman with warm golden-brown skin blending South Asian, Middle Eastern, and Latin American heritage, high angular cheekbones with penetrating gaze, short dark brown hair with copper undertones cycling through follicular mods. Three pale ritual scars stripe below her left eye. Her augmented irises display swirling amber-and-black patterned design. She wears practical Tier 4 dark charcoal workwear, fitted tunic, reinforced tool apron, midnight blue fingerless composite gloves concealing hand augmentation, worn supportive boots. Economical controlled posture, quiet precision presence. GLMZ Great Lakes Metropolitan Zone, working in low maintenance light, cool industrial setting, moody atmospheric lighting highlighting her genetic constellation of features and subtle copper shimmer, stark minimalist aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 62.3,
-    "Sub-Saharan African": 21.7,
-    "East Asian": 14.4,
-    "Hispanic/Latin American": 1.6
+    "South Asian": 44.3,
+    "Hispanic/Latin American": 23,
+    "Middle Eastern": 17.7,
+    "Northern European": 15
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 35.5
+      },
+      "Pakistani": {
+        "Sindhi": 2.2,
+        "Punjabi Pakistani": 0.4
+      },
+      "Indian": {
+        "Marathi": 2.2,
+        "Punjabi": 4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 17.6
+      },
+      "Central American": {
+        "Salvadoran": 0.4,
+        "Guatemalan": 5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 7
+      },
+      "Persian": {
+        "Iranian": 3.6
+      },
+      "Arab Gulf": {
+        "Iraqi": 7.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 15
+      }
+    }
+  }
 }

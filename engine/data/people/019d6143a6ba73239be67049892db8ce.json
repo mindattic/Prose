@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ba73239be67049892db8ce",
   "type": "character",
-  "name": "Ximena Solberg",
+  "name": "Zofia Cervantes",
   "aliases": [
     "Ruka",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "University Spine, with frequent fieldwork in Chatham Flats and Hough Reclamation, near Lincoln and Clark",
-  "description": "Rukayat is a broad-shouldered woman with deep brown skin and close-cropped silver-streaked hair she's had since her late twenties—a stress response she refuses to reverse, wearing it like a badge. Her eyes carry geneware patterned irises that shift between amber and rust-red, a gift to herself after her tenure review. She maps space the way other people breathe: constantly, involuntarily, rotating the geometry of every room she enters. She dresses in field-practical layers, always with at least one pocket stuffed with data wafers and a collapsible survey drone no bigger than her fist.\n\nShe is warm in person but relentlessly precise in argument, the kind of academic who will sit with a Shelf resident for three hours learning how they navigate a flooded block and then spend three more weeks turning that knowledge into policy language that nobody in power will read. She is not cynical about this—or she has trained herself not to be. She believes in documentation as a form of justice, that to name a place accurately is to insist on its existence.",
+  "description": "Zofia Cervantes is a broad-shouldered woman with deep brown skin and close-cropped silver-streaked hair she's had since her late twenties—a stress response she refuses to reverse, wearing it like a badge. Her eyes carry geneware patterned irises that shift between amber and rust-red, a gift to herself after her tenure review. She maps space the way other people breathe: constantly, involuntarily, rotating the geometry of every room she enters. She dresses in field-practical layers, always with at least one pocket stuffed with data wafers and a collapsible survey drone no bigger than her fist.\n\nShe is warm in person but relentlessly precise in argument, the kind of academic who will sit with a Shelf resident for three hours learning how they navigate a flooded block and then spend three more weeks turning that knowledge into policy language that nobody in power will read. She is not cynical about this—or she has trained herself not to be. She believes in documentation as a form of justice, that to name a place accurately is to insist on its existence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -185,7 +185,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,30 +244,16 @@
     "Chatham Flats",
     "The Reclamation Assembly",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Rust",
-    "Aurocet",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Immaculée Dalgaard-Nwosu",
-    "MERIDIAN",
-    "Meridian Core",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Slagworks Industrial",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Shelf",
-    "Veslemøy Achebe-Tursynov"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European, Hispanic/Latin American, Southeast Asian, and Eastern European—a complex blend manifesting in warm-toned skin with subtle golden undertones, angular Nordic-influenced facial structure softened by Latin American and Southeast Asian features, creating distinctive high cheekbones and a balanced jaw",
+    "heritage": "Predominantly Hispanic/Latin American (54.9%) with significant Eastern European (28.4%), Central Asian (10.3%), and Pacific Islander (6.4%) ancestry—a striking blend creating warm medium bronze skin with golden undertones, angular Eastern European cheekbones softened by Latin American fullness, and Pacific Islander warmth in skin depth; the convergence produces a uniquely balanced face where Slavic bone structure meets Latin American and Central Asian roundness",
     "height_cm": 174,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with a powerlifter's frame running slightly toward stockiness; strong through the core and upper body, suggesting decades of carrying equipment and moving through difficult terrain",
@@ -275,8 +261,8 @@
     "hair_style": "Closely cropped, precision-cut, functional",
     "hair_length": "Short",
     "eye_color": "Geneware-patterned irises shifting between amber and rust-red depending on light and mood",
-    "skin_tone": "Medium-warm bronze with golden undertones; unmarked and well-maintained, reflecting mixed Northern European, Hispanic/Latin American, and Southeast Asian ancestry",
-    "complexion": "Angular facial structure blending Northern European bone structure with Southeast Asian and Latin American softness; squared jaw with high, defined cheekbones; minimal cosmetic intervention; skin shows sun exposure from fieldwork but no visible scarring; expression lines around the eyes from squinting at maps and taking notes",
+    "skin_tone": "Medium warm bronze with golden undertones and subtle warm depth from Pacific Islander heritage; unmarked and well-maintained, reflecting the rich blending of Hispanic/Latin American, Eastern European, Central Asian, and Pacific Islander ancestry",
+    "complexion": "Angular facial structure blending Eastern European cheekbones with Latin American and Central Asian fullness; prominent, defined cheekbones paired with a squared jaw that suggests Slavic heritage; warm bronze undertones add depth and luminosity; minimal cosmetic intervention; skin shows sun exposure from fieldwork but no visible scarring; expression lines around the eyes from squinting at maps and taking notes",
     "distinguishing_marks": [
       "Faint surgical scar at the base of her right temple, roughly 2cm, from neural lace installation—visible only when hair is swept back",
       "Thin whitened lines on both index and middle fingertips from repeated haptic feedback calibration sessions, barely noticeable unless examined closely",
@@ -286,15 +272,61 @@
     "posture_movement": "Upright and deliberate, rarely at rest; constantly mentally rotating spatial geometry even while sitting. Moves with precision economy—no wasted motion, but not tense. Her hands are always doing something: gesturing to describe building layouts, manipulating imaginary topography in the air, reaching for data wafers. She leans in when listening to people, a studied habit that makes informants feel heard.",
     "clothing_style": "Tier 3-4 field practical: reinforced cargo jacket (Tessera-branded, three years old, meticulously maintained), moisture-wicking undershirt, heavy canvas trousers with oversized thigh and cargo pockets, ankle-height tactical boots rated for water ingress. Layers vary by season but always include at least one vest with internal padding for sensor arrays. Her watch is a ruggedized research-grade unit with mapping overlay. Worn leather satchel, university-issued, packed with survey equipment. Everything is well-used but not shabby—maintained like tools that matter."
   },
-  "image_prompt": "Ximena Solberg, a 174cm field researcher with warm bronze skin blending Northern European, Hispanic/Latin American, and Southeast Asian ancestry. Deep black hair with deliberate silver-white streaking, closely cropped. Angular Nordic-influenced face with high cheekbones and squared jaw, softened by Southeast Asian and Latin features. Geneware-modified eyes with amber-rust shifting irises catching light unnaturally. Expression lines around eyes from fieldwork. Broad-shouldered powerlifter build, solid and grounded. Wearing reinforced Tessera cargo jacket over moisture-wicking layers, heavy canvas tactical trousers with cargo pockets, ankle boots rated for water. Worn leather university satchel across chest. Ruggedized research-grade watch. Posture upright and deliberate, hands gesturing mid-explanation of spatial geometry. Cool cyberpunk 2220s urban fieldwork setting, neon-tinged survey mapping overlay visible on worn equipment. Precise, economical movement. Moody underground research laboratory or rooftop mapping site with rain-slicked surfaces. Dramatic sidelighting catching the unnaturally shifting irises and silver hair streaks. --ar 2:3 --v 6",
+  "image_prompt": "Zofia Cervantes, a 174cm researcher with a powerlifter's broad-shouldered frame, stands in GLMZ Great Lakes Metropolitan Zone. Her warm medium bronze skin with golden undertones reflects blended Hispanic/Latin American, Eastern European, Central Asian, and Pacific Islander heritage. Angular Slavic cheekbones soften into fuller Latin American features; her squared jaw and prominent cheekbones create striking geometry. Deep black hair streaked with deliberate silver-white runs close-cropped and precisely cut. Her most striking feature: geneware-patterned irises shift between amber and rust-red, catching light unnaturally. A faint 2cm surgical scar marks her right temple where neural lace installed; thin whitened lines scar her index and middle fingertips from haptic calibration. She wears a meticulously maintained Tessera reinforced cargo jacket, moisture-wicking undershirt, heavy canvas cargo trousers, and ankle-height tactical boots. A ruggedized research-grade watch and worn leather university satchel complete her outfit. Her posture is upright and deliberate; her hands gesture constantly, describing spatial geometry. Mood: focused intensity, confident fieldwork professionalism. Setting: dimly lit field station or urban survey location with soft overhead lighting casting shadows across her angular features, emphasizing her hybrid heritage and enhanced eyes. Neo-noir urban aesthetic, detailed but gritty, realistic textures. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 42.0,
-    "Hispanic/Latin American": 27.1,
-    "Southeast Asian": 20.5,
-    "Eastern European": 10.4
+    "Hispanic/Latin American": 54.9,
+    "Eastern European": 28.4,
+    "Central Asian": 10.3,
+    "Pacific Islander": 6.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Chilean": 16.3,
+        "Ecuadorian": 19.1
+      },
+      "Caribbean": {
+        "Puerto Rican": 12.3,
+        "Haitian": 7.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 10.2,
+        "Croatian": 6.8
+      },
+      "Slavic West": {
+        "Slovak": 4.9
+      },
+      "Slavic East": {
+        "Ukrainian": 6.5
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 0.4,
+        "Kyrgyz": 0.8
+      },
+      "Mongolic": {
+        "Mongolian": 4.7,
+        "Kalmyk": 2.2
+      },
+      "Iranian Central": {
+        "Tajik": 2.1,
+        "Hazara": 0.1
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 5.7
+      },
+      "Micronesian": {
+        "Kiribati": 0.7
+      }
+    }
+  }
 }

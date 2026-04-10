@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a37d13aeb2158e149f8dec",
   "type": "character",
-  "name": "Siddharth Keïta-Strömqvist-Solberg",
+  "name": "Szymon Chakraborty-Balasanyan-Mensah",
   "aliases": [
     "Ada",
     "Addie"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Thistle Crèche, a basement-level community childcare cooperative in the Narrows, off Archer's Line, near Milwaukee and North Ave",
-  "description": "Adaure is small and quick, with the kind of energy that fills a room without dominating it — a particular skill honed by spending forty hours a week managing eight children under six. She has Igbo-Icelandic-Ethiopian heritage that shows in her light-olive complexion, dark wide-set eyes, and loosely curled hair she wears loose to her shoulders on good days and pinned chaotically on all other days. She has patterned irises — rings of amber and pale gold that she was born with and which have been imitated by a popular cosmetic mod, which delights her. She has a small retractable claw on her right index finger, not geneware but a cheap press-on she bought at a Burnished Market stall and decided was a personality. She loses it constantly.\n\nAdaure is twenty-two and in the process of becoming something but isn't sure what. She is excellent with children in a way that has nothing to do with sentimentality — she is honest with them, takes their concerns seriously, and has a talent for improvised problem-solving that the crèche's patched-together resources demand daily. She is also young enough to be furious about the structural conditions of her work: the pay (near-UBC), the space (borrowed), the respect (absent). She talks about this often. She is still figuring out if she wants to fix it from inside or from outside or from somewhere no one has told her exists yet.",
+  "description": "Szymon Chakraborty-Balasanyan-Mensah is small and quick, with the kind of energy that fills a room without dominating it — a particular skill honed by spending forty hours a week managing eight children under six. She has Igbo-Icelandic-Ethiopian heritage that shows in her light-olive complexion, dark wide-set eyes, and loosely curled hair she wears loose to her shoulders on good days and pinned chaotically on all other days. She has patterned irises — rings of amber and pale gold that she was born with and which have been imitated by a popular cosmetic mod, which delights her. She has a small retractable claw on her right index finger, not geneware but a cheap press-on she bought at a Burnished Market stall and decided was a personality. She loses it constantly.\n\nSzymon Chakraborty-Balasanyan-Mensah is twenty-two and in the process of becoming something but isn't sure what. She is excellent with children in a way that has nothing to do with sentimentality — she is honest with them, takes their concerns seriously, and has a talent for improvised problem-solving that the crèche's patched-together resources demand daily. She is also young enough to be furious about the structural conditions of her work: the pay (near-UBC), the space (borrowed), the respect (absent). She talks about this often. She is still figuring out if she wants to fix it from inside or from outside or from somewhere no one has told her exists yet.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -168,7 +168,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Thistle Crèche",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -227,27 +227,16 @@
     "The Heritage Vault",
     "Meridian Weartech ShockWeave SW-3 'Thistle'",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Honest Burger",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Zara Bergqvist",
+    "Compass Rose",
     "The Pale Mile",
-    "Bashir Quansah-Mehrotra",
-    "Gold",
-    "The Milwaukee Core",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Iowan Behemoth — 'Palisade'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Last Word",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Ringo Corponation",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "The Narrows",
-    "The Pure Hand"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-diaspora ancestry: Sub-Saharan African (23.1%), South Asian (19.6%), Northern European (19.1%), East Asian (17.5%), Eastern European (13.9%), Southeast Asian (6.8%). This genetic diversity produces a complex phenotype — warm-toned skin with multiple heritage markers, facial structure reflecting South and East Asian influence balanced against African and Northern European ancestry, creating distinctive intermediate features that resist simple categorization.",
+    "heritage": "Pan-diaspora ancestry: South Asian (37.6%), Eastern European (19.9%), Sub-Saharan African (17.9%), Middle Eastern (11.8%), East Asian (7.2%), North African (5.6%). Complex phenotype with warm golden-brown skin showing South Asian depth enhanced by Sub-Saharan African and Middle Eastern warmth. Facial structure blends South Asian and Sub-Saharan African features with Eastern European bone definition. Prominent cheekbones from South Asian ancestry merge with fuller lips from Sub-Saharan African and Middle Eastern heritage. Slightly wider-set eyes with subtle East Asian influence, balanced by a structured jawline from Eastern European ancestry. Facial proportions resist simple categorization, creating distinctive intermediate features.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Small and quick-limbed, lean without being fragile — the build of someone who moves constantly and eats irregularly. Compact core strength from lifting children and crouching to their eye level all day.",
@@ -255,8 +244,8 @@
     "hair_style": "Worn loose in loosely defined curls on good days; on work days (which is most days), pinned chaotically with whatever is at hand — wire, fabric scraps, sometimes a child's hair clip she forgot to remove",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Dark brown with distinctive patterned irises — rings of amber and pale gold radiating from the pupil",
-    "skin_tone": "Warm medium olive with golden undertones, slightly deeper at the jawline and temples. The coloring reflects blended ancestry — neither cool nor warm-leaning strongly in one direction, but a balanced fusion with perceptible warmth throughout.",
-    "complexion": "Open, expressive face with high cheekbones (South Asian and East Asian influence), fuller lips, and the facial proportions of mixed heritage — wider-set eyes suggesting East Asian ancestry balanced with broader facial structure from African lineage. Skin is clear but shows the mild wear of someone who works outside her tier's resource access — dry patches in winter, occasional breakout stress marks. A small scar on her left eyebrow from a childhood accident. No makeup most days; occasionally wears a dark lip when she's going to the organizer meetings.",
+    "skin_tone": "Warm medium to deep golden-brown with honeyed undertones, reflecting the blend of South Asian base with Sub-Saharan African depth and Middle Eastern warmth. Slightly deeper at the jawline and temples. Balanced fusion across the spectrum with consistent perceptible warmth throughout.",
+    "complexion": "Open, expressive face with prominent cheekbones, fuller lips, and facial proportions reflecting mixed South Asian, Sub-Saharan African, Middle Eastern, and Eastern European ancestry. Skin is clear but shows the mild wear of someone who works outside her tier's resource access — dry patches in winter, occasional breakout stress marks. A small scar on her left eyebrow from a childhood accident. No makeup most days; occasionally wears a dark lip when she's going to the organizer meetings.",
     "distinguishing_marks": [
       "Small pale scar on the left eyebrow, roughly 8mm, from a childhood accident — visible when her hair falls back.",
       "Faint darkening on her right index fingertip from repeated removal and replacement of the cheap press-on claw.",
@@ -266,17 +255,68 @@
     "posture_movement": "Alert and economical in movement — she doesn't waste energy but is never still. When sitting, she folds into herself compactly. When moving among children, she lowers her center of gravity to their level. Her default expression is attentive; she has a quick smile that reaches her eyes. Speaks with her hands. A slight forward lean when listening, as if genuinely interested (because she is).",
     "clothing_style": "Tier 4 working-class practicality. Thrift-sourced or community-shared clothing in dark, washable colors — black or dark grey base layers, often worn with a large colorful shirt or tunic that reads as hand-dyed or community-printed. Comfortable worn boots (black, scuffed). A fabric-patched jacket in cooler months. A small woven bracelet (Thistle Crèche co-op colors, made by a parent). No jewelry except occasionally a thin wire ring she makes herself. Clothing is clean but thoroughly used, with small stains that won't come out and visible mending. Nothing from a corpo brand; everything sourced locally or secondhand."
   },
-  "image_prompt": "Siddharth Keïta-Strömqvist-Solberg, cyberpunk 2226, compact 158cm figure with mixed-heritage phenotype, warm golden-olive skin tone blending Sub-Saharan African, South Asian, Northern European, East Asian and Eastern European ancestry. High cheekbones, expressive face, distinctive patterned irises with amber and gold radiating from pupil, small scar left eyebrow. Dark brown shoulder-length curls loosely pinned with wire and fabric scraps. Alert posture, hands mid-gesture, genuine smile. Wearing dark grey base layers under hand-dyed colorful tunic, scuffed black boots, fabric-patched jacket. Brass-colored retractable claw visible on right index finger. Woven bracelet in community co-op colors. Working in Great Lakes Metropolitan Zone, warm interior lighting on tired but engaged face, surrounded by suggestion of children's space, community-focused energy. Cyberpunk low-tier aesthetic, authentic worn clothing, no corpo branding. --ar 2:3 --v 6",
+  "image_prompt": "Szymon Chakraborty-Balasanyan-Mensah, 158cm lean woman with warm golden-brown skin blending South Asian, Sub-Saharan African, Middle Eastern, and Eastern European heritage. Dark brown curly shoulder-length hair pinned chaotically with wire and fabric scraps. Distinctive patterned irises with amber and gold rings. Prominent cheekbones, fuller lips, structured jawline. Small pale scar on left eyebrow. Attentive expressive face with quick smile. Wearing dark grey base layer under hand-dyed colorful tunic, fabric-patched jacket, scuffed black boots. Cheap brass retractable claw visible on right index finger. Woven bracelet in co-op colors. Alert forward-leaning posture, hands gesturing mid-conversation. GLMZ Great Lakes Metropolitan Zone, warm indoor lighting casting subtle shadows on her face, worn-in clothing showing visible mending and stains. Tier 4 working-class environment. Mood: attentive, genuine interest, economical movement, never still. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 23.1,
-    "South Asian": 19.6,
-    "Northern European": 19.1,
-    "East Asian": 17.5,
-    "Eastern European": 13.9,
-    "Southeast Asian": 6.8
+    "South Asian": 37.6,
+    "Eastern European": 19.9,
+    "Sub-Saharan African": 17.9,
+    "Middle Eastern": 11.8,
+    "East Asian": 7.2,
+    "North African": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 14.8
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 22.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 6.6,
+        "Czech": 2.8
+      },
+      "Slavic South": {
+        "Bosnian": 10.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 17.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 11.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.3
+      },
+      "Chinese": {
+        "Sichuanese": 3.9
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 2.3,
+        "Berber": 1.4
+      },
+      "Nile Valley": {
+        "Egyptian": 0.5,
+        "Sudanese": 0.5
+      },
+      "Maghreb": {
+        "Tunisian": 0.3,
+        "Libyan": 0.6
+      }
+    }
+  }
 }

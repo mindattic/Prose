@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c179eca60837ef2eb4e499",
   "type": "character",
-  "name": "Zephyr Fredriksen-Achebe",
+  "name": "Zephyr Fredriksen-Banerjee",
   "aliases": [
     "Crimson",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Sagyn Ibarra-Prempeh is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Sagyn Ibarra-Prempeh is one of the ones who actually does it.",
+  "description": "Zephyr Fredriksen-Banerjee is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Zephyr Fredriksen-Banerjee is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -259,7 +259,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,28 +275,14 @@
   ],
   "related_entities": [
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Glenville Sound",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Neuromorphic Pressure Cestus",
-    "Oumarou Svec-Ranginui",
-    "TERMINUS",
-    "The Fathom Line",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Northern European / Central Asian / Sub-Saharan African / Indigenous American / Hispanic-Latin American blend (Ubiquitous Diaspora phenotype) — complex genetic admixture producing unique feature combinations: Scandinavian bone structure with Central Asian cheekbone prominence, Sub-Saharan African skin richness and lip fullness, Indigenous American undertones in complexion, Hispanic-Latin warmth in overall coloration",
+    "heritage": "South Asian / Southeast Asian / East Asian / Sub-Saharan African / Northern European blend (Ubiquitous Diaspora phenotype) — predominantly South Asian (50.2%) with significant Southeast Asian (27.4%) genetic foundation, refined by East Asian (11.3%) bone structure and eye shape, warmed by Sub-Saharan African (7.9%) skin richness and facial fullness, with minimal Northern European (3.2%) influence. This produces: strong South Asian cheekbone prominence and jawline definition, Southeast Asian facial proportions and eye set, East Asian eye shape nuance and lid characteristics, Sub-Saharan African skin depth and lip fullness, subtle angular definition from Northern European ancestry. A genuinely composite face that reads as post-Diaspora rather than any single heritage.",
     "height_cm": 177,
     "weight_kg": 74,
     "build": "Lean and functionally muscular — compact rather than bulky, built for efficiency and deception rather than intimidation. Shoulders slightly narrower than average, core visibly defined. The physiology of someone who trains for infiltration rather than combat.",
@@ -304,8 +290,8 @@
     "hair_style": "Short, cleanly maintained, minimal styling — practical. No affectation.",
     "hair_length": "Short",
     "eye_color": "Chrome iris rings over dark brown pupils — thermal and low-light augmentation visible as faint luminescent halos when activated",
-    "skin_tone": "Medium-rich bronze with warm undertones — complex interplay of copper from Sub-Saharan heritage, olive from Central Asian ancestry, and golden undertones from Indigenous American and Hispanic admixture. Sun exposure deepens the overall warmth without shifting the base tone.",
-    "complexion": "Striking angular features combining Northern European definition with Central Asian cheekbone prominence and Sub-Saharan African fullness in lips and face shape. Sharp cheekbones, defined jawline, minimal facial hair — clean-shaven or closely trimmed. Skin condition excellent — well-maintained. Face has the quality of someone who has learned to be invisible; features don't demand attention but repay it.",
+    "skin_tone": "Warm medium-deep bronze — the result of 50% South Asian warm copper undertones blended with 27% Southeast Asian golden warmth, refined by East Asian cool undertones from the 11% contribution, and deepened by 7.9% Sub-Saharan African richness. The result is a complex warm-bronze that holds depth and luminosity. Sun exposure enhances rather than shifts the base tone.",
+    "complexion": "Striking refined features combining South Asian cheekbone prominence with Southeast Asian facial proportions and subtle Sub-Saharan African fullness in the lips and lower face structure. High, defined cheekbones with characteristic South Asian angularity, warm-toned jawline that tapers with Southeast Asian refinement, full lips with natural depth, minimal facial hair — clean-shaven or closely trimmed. East Asian influence visible in the subtle lid shape and eye set. Skin condition excellent — well-maintained. Face has the quality of someone who has learned to be invisible; features don't demand attention but repay it.",
     "distinguishing_marks": [
       "Surgical scar running 2cm along the left temple, barely visible unless light catches it at certain angles — precision work, not violence",
       "Faint burn mark on the inside of right forearm (5cm long) from early augmentation surgery — deliberately left unhidden",
@@ -315,17 +301,58 @@
     "posture_movement": "Economy of motion — every movement serves a purpose. Posture is relaxed but alert, shoulders naturally slightly forward. Gait is quiet and balanced, weight centered low for quick directional changes. His presence fills space through attention rather than volume — people orient toward him in crowded rooms without him demanding it.",
     "clothing_style": "Tier 3-4 utilitarian — high-end runner gear masquerading as casual. Fitted charcoal tactical pants with discreet cargo pockets and reinforced seams, neutral-tone compression layer or fitted turtleneck, outer layer is either a charcoal bomber jacket with smart-fabric lining or a custom black peacoat with subtle armor plating (visible only as structural weight). Minimalist chrome accessory — wrist comm or small jewelry that matches his eye augmentation chrome. No logos, no corporate branding. Everything worn has function; nothing is for show."
   },
-  "image_prompt": "Zephyr Fredriksen-Achebe, cyberpunk 2226 operative in Great Lakes Metropolitan Zone, medium-rich bronze skin with warm copper and olive undertones, sharp Nordic-Central Asian cheekbones with Sub-Saharan fullness, dark brown eyes with glowing chrome iris augmentations, short dark practical hair, lean muscular build 177cm, standing in quiet alert posture. Wearing charcoal tactical pants and fitted turtleneck compression layer under custom black peacoat with subtle armor plating, minimalist chrome wrist comm matching eye tech. Faint surgical scar on left temple barely visible, small dot tattoos on left wrist. Chrome joint articulation visible at elbows and knees with luminescent shimmer. Neo-Tokyo neon alley lighting, rain-slicked streets, moody atmospheric cyberpunk setting, presence that fills space through attention rather than volume, economy of movement captured mid-stride. Photorealistic, cinematic, atmospheric --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Fredriksen-Banerjee, 2226 neo-noir infiltrator, 177cm lean and muscular build. Medium-deep warm bronze skin tone blending South Asian, Southeast Asian, East Asian, Sub-Saharan African, and Northern European genetics. High defined cheekbones, Southeast Asian facial proportions, full lips, dark eyes with chrome iris rings that glow faintly with thermal augmentation. Short dark brown hair, clean-shaven. Chrome hydraulic joint augmentations visible at elbows and knees. Dressed in charcoal tactical pants, fitted compression layer, black peacoat with armor plating. Minimalist chrome wrist accessories. Surgical scar on left temple. Economy of motion, quiet and centered posture. Standing in neon-lit Great Lakes Metropolitan Zone street, low-light near-future megacity setting, cool blue and warm amber volumetric lighting hitting chrome augmentations. Moody, alert presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 36.3,
-    "Central Asian": 21.8,
-    "Sub-Saharan African": 15.1,
-    "Indigenous American": 11.7,
-    "Hispanic/Latin American": 9.3,
-    "East Asian": 5.8
+    "South Asian": 50.2,
+    "Southeast Asian": 27.4,
+    "East Asian": 11.3,
+    "Sub-Saharan African": 7.9,
+    "Northern European": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 26.5
+      },
+      "Sri Lankan": {
+        "Sinhalese": 23.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 27.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.4
+      },
+      "Chinese": {
+        "Cantonese": 2,
+        "Sichuanese": 0.7
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 6.4,
+        "Senegalese": 1.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 1
+      },
+      "British Isles": {
+        "Scottish": 1.4,
+        "Irish": 0.8
+      }
+    }
+  }
 }

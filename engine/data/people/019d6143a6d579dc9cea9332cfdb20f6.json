@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d579dc9cea9332cfdb20f6",
   "type": "character",
-  "name": "Astrid Olofsson",
+  "name": "Amara Achebe",
   "aliases": [
     "Solve",
     "The Ice"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, GLMZ, near Kedzie and Division",
-  "description": "Solveig is a tall, angular woman with close-cropped silver hair she let go early — a choice that cost her nothing socially and saved her considerable maintenance time. Her skin is deep umber with undertones that shift toward amber under the sodium-arc lights of Fort Anchor's processing corridors. She has the flat, unhurried gaze of someone who has interviewed liars for twenty years and is no longer surprised by anything they do. Her only cosmetic geneware is a pair of patterned irises — fractal spirals in cobalt and amber — installed as a gift from a former partner she no longer speaks of. She moves with deliberate economy, as if she's decided in advance how many steps she'll take in a given hour.\n\nSolveig is not cruel, but she is merciless, which is different. She investigates her own department with the same exhausting thoroughness she brings to everything else, and the officers she's burned hold her in a specific kind of contempt that she reads as professional respect. She keeps a small clay figurine of an E.L.F. on her desk — not her desk at work, which is bare and perfect, but the one in her apartment — and leaves tiny encrypted data-offerings at midnight, asking for nothing except clarity. Her closest thing to a friend is a case file she can't close.",
+  "description": "Amara Achebe is a tall, angular woman with close-cropped silver hair she let go early — a choice that cost her nothing socially and saved her considerable maintenance time. Her skin is deep umber with undertones that shift toward amber under the sodium-arc lights of Fort Anchor's processing corridors. She has the flat, unhurried gaze of someone who has interviewed liars for twenty years and is no longer surprised by anything they do. Her only cosmetic geneware is a pair of patterned irises — fractal spirals in cobalt and amber — installed as a gift from a former partner she no longer speaks of. She moves with deliberate economy, as if she's decided in advance how many steps she'll take in a given hour.\n\nAmara Achebe is not cruel, but she is merciless, which is different. She investigates her own department with the same exhausting thoroughness she brings to everything else, and the officers she's burned hold her in a specific kind of contempt that she reads as professional respect. She keeps a small clay figurine of an E.L.F. on her desk — not her desk at work, which is bare and perfect, but the one in her apartment — and leaves tiny encrypted data-offerings at midnight, asking for nothing except clarity. Her closest thing to a friend is a case file she can't close.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -187,7 +187,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,31 +247,16 @@
   "related_entities": [
     "Ferrogate Transit",
     "Fort Anchor",
-    "GLMZ",
+    "Midnight Gyros",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Clay",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Corva Lam",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lacunal",
-    "Nodar Kuznetsov-Adu",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Corridor",
-    "The Quiet Room",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "GLMZ",
+    "Clay"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Northern and Eastern European with substantial Sub-Saharan African ancestry, complemented by Southeast Asian and Hispanic/Latin American heritage. The combination creates a striking phenotype: warm medium-to-deep brown skin with golden undertones, facial structure reflecting the blend of broad Northern European bone structure with Sub-Saharan African features, subtle Southeast Asian characteristics in eye shape and cheekbone prominence.",
+    "heritage": "Complex Pan-Pacific and African diaspora blend: 32.8% Sub-Saharan African, 31.6% Pacific Islander, 21.5% Southeast Asian, and 14.1% Eastern European ancestry. This creates a striking phenotype where Sub-Saharan African depth combines with Pacific Islander bone structure and Southeast Asian facial geometry, modulated by Eastern European angular features. The result is a face of considerable visual complexity: deep warm brown skin with golden-amber undertones that shift under low light, broad cheekbones with pronounced Southeast Asian prominence, full lips characteristic of Sub-Saharan African heritage, a strong angular jaw from Eastern European lineage, and overall facial proportions reflecting Pacific Islander width softened by the interplay of multiple continental influences.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Tall and angular, almost ascetic — lean muscle without bulk, the frame of someone who moves with precision rather than power. Shoulders slightly forward from decades of desk work and interview-room tension.",
@@ -279,26 +264,62 @@
     "hair_style": "Cropped close to the scalp, severe and utilitarian",
     "hair_length": "Short",
     "eye_color": "Fractal spirals in cobalt and amber (cosmetic geneware irises); pupils remain naturally responsive",
-    "skin_tone": "Warm medium-brown with golden-amber undertones, the result of blended Northern European paleness with Sub-Saharan African depth and Southeast Asian warmth. Shifts and glows under low-spectrum lighting, particularly in amber wavelengths.",
-    "complexion": "Unlined despite her age — not from cosmetic work but from the absence of expressive habits. Facial structure reflects blended ancestry: broader cheekbones with slight Southeast Asian prominence, full lips with Sub-Saharan African characteristics, strong jaw from Northern European heritage. Her face is composed and flat, without the micro-expressions most people leak constantly. Minimal grooming beyond necessity; no makeup, no jewelry.",
+    "skin_tone": "Deep warm brown with golden-amber undertones, rich with melanin luminescence. The tone reflects the blended saturation of Sub-Saharan African heritage (32.8%) with the warmth of Pacific Islander genetics (31.6%), enhanced by Southeast Asian undertones (21.5%) and subtle complexity from Eastern European ancestry (14.1%). Under amber wavelengths the skin holds a subtle luminescence; under cooler light it reads as deeper and more neutral, but never cool-toned.",
+    "complexion": "Unlined despite her age — not from cosmetic work but from the absence of expressive habits. Facial structure reflects the full diaspora blend: broad, prominent cheekbones with Southeast Asian geometry providing width across the upper face, full lips with the characteristic depth of Sub-Saharan African features, a strong and angular jaw from Eastern European heritage contributing definition and strength, and the overall face shape and proportions showing Pacific Islander influence in facial width, cheekbone prominence, and nose structure. Her face is composed and flat, without the micro-expressions most people leak constantly. Minimal grooming beyond necessity; no makeup, no jewelry.",
     "distinguishing_marks": [
-      "Thin white scar along the left jawline, barely visible against warm brown skin, consistent with a childhood injury or accidental cut",
+      "Thin white scar along the left jawline, barely visible against deep warm brown skin, consistent with a childhood injury or accidental cut",
       "Faint indentation at the base of her skull where the neural recorder was installed, visible only when her hair is wet or she tilts her head at certain angles"
     ],
-    "visible_augmentations": "The fractal iris pattern is immediately noticeable and serves as her only concession to aesthetic modification. The neural recorder is subcutaneous and invisible. The retinal HUD overlay is internally rendered and not visible to others.",
+    "visible_augmentations": "The fractal iris pattern is immediately noticeable in cobalt and amber, serving as her only concession to aesthetic modification. The neural recorder is subcutaneous and invisible. The retinal HUD overlay is internally rendered and not visible to others.",
     "posture_movement": "She moves with deliberate economy, taking paths that minimize steps. Her spine is straight but not rigid — there's an absence of restlessness in her frame. She sits with both feet flat, elbows at table level. Her head turns before her eyes do. When she listens, she becomes almost perfectly still.",
     "clothing_style": "Tier 2-3 professional uniform: charcoal GLMZ Metro Police Internal Affairs blazer with silver-thread department insignia; white undershirt; dark gray trousers with crisp creases; black synthetic leather shoes maintained to mirror shine. No personal adornment. The blazer is tailored but not fitted — it's designed for concealment rather than silhouette. Off-duty: the same aesthetic in civilian clothes: unbranded wool cardigans, gray or charcoal, worn over simple black shirts. Her apartment wardrobe contains nothing that suggests leisure or color."
   },
-  "image_prompt": "Astrid Olofsson, tall angular woman with warm medium-brown skin and golden undertones, silver-white closely cropped hair, striking fractal spiral irises in cobalt and amber (geneware implants), unlined composed face with blended phenotype showing Northern European bone structure and Sub-Saharan African features. Wearing charcoal GLMZ Metro Police Internal Affairs blazer with silver-thread insignia, white shirt, dark gray trousers, black mirrored shoes. Standing in sterile interrogation room with cold blue-white fluorescent overhead lighting, perfectly still posture, feet planted flat, head slightly tilted. Minimalist aesthetic, no jewelry, subtle scar along left jawline barely visible. Cyberpunk 2226, Great Lakes Metropolitan Zone, professional yet unsettling stillness, neural recorder indentation visible at skull base. Dystopian interior affairs detective aesthetic, moody low-contrast lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: tall angular woman, 183cm, silver-white cropped hair, deep warm brown skin with golden-amber undertones reflecting Pan-Pacific and African diaspora heritage. Striking face with broad Southeast Asian cheekbones, full lips, strong Eastern European jaw, Pacific Islander proportions. Fractal spiral eyes in cobalt and amber (geneware irises). Thin white scar along left jawline barely visible against skin. Severe, composed expression without microexpressions. Dressed in charcoal GLMZ Metro Police Internal Affairs blazer with silver insignia, white undershirt, dark gray trousers, mirror-polished black shoes. Perfect posture, deliberate economy of movement. Low-spectrum amber and cool interrogation lighting, slight luminescence on melanin-rich skin. Professional, composed, watchful demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 26.7,
-    "Eastern European": 26.5,
-    "Sub-Saharan African": 24.3,
-    "Southeast Asian": 18.0,
-    "Hispanic/Latin American": 4.5
+    "Sub-Saharan African": 32.8,
+    "Pacific Islander": 31.6,
+    "Southeast Asian": 21.5,
+    "Eastern European": 14.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 32.8
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tuvaluan": 13.9,
+        "Hawaiian": 2.9
+      },
+      "Micronesian": {
+        "Palauan": 4.9,
+        "Marshallese": 6.6
+      },
+      "Melanesian": {
+        "Papua New Guinean": 2.8,
+        "Fijian": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 19.4,
+        "Sumatran": 2.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 1.5,
+        "Sorbian": 1.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 5.7,
+        "Romanian": 5.6
+      }
+    }
+  }
 }

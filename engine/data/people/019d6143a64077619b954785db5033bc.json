@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64077619b954785db5033bc",
   "type": "character",
-  "name": "Slate Bhattacharya-Leota",
+  "name": "Slate Baek-Popescu",
   "aliases": [
     "Double Down"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -100,17 +100,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Narrows Compact",
-    "Deku Barrientos-Osei",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "The Heritage Vault",
-    "The Narrows"
+    "The Narrows Compact"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander-dominant (27.1%) with substantial Southeast Asian (24.6%) and South Asian (18.8%) admixture, complemented by East Asian (15.7%), Hispanic/Latin American (10.1%), and minor Northern European (3.7%) ancestry. This creates a striking pan-Asian-Pacific phenotype with warm, complex undertones.",
+    "heritage": "Complex pan-continental ancestry dominated by Eastern European (31.8%) foundation with substantial East Asian (19.8%) and South Asian (17.2%) admixture, strengthened by Hispanic/Latin American (14.6%), Northern European (11.7%), and Sub-Saharan African (4.9%) components. Creates a striking phenotype blending Central European bone structure with warm South and East Asian undertones, broad Pan-Eurasian features suggesting multiple ancestral migrations, resulting in a genuinely cosmopolitan appearance that defies singular geographic origin.",
     "height_cm": 182,
     "weight_kg": 78,
     "build": "Athletic, slightly soft at the middle from decades of club-sitting and Φ-backed meals. Broad shoulders, compact frame suggesting careful maintenance rather than active fitness.",
@@ -118,8 +112,8 @@
     "hair_style": "Slicked back with pomade, precise side part",
     "hair_length": "Medium (3-4cm)",
     "eye_color": "Dark brown with warm amber undertone",
-    "skin_tone": "Warm medium-bronze with golden undertones, reflecting Pacific Islander and Southeast Asian heritage layered with South Asian warmth",
-    "complexion": "Well-groomed, minimal scarring. Slight jowl softening at the jawline from age. Clean-shaven. Facial structure shows Pacific Islander fullness in cheekbones, Southeast Asian definition in cheekbones and jaw, South Asian warmth in undertones. Lines around eyes suggest chronic sleep deprivation and perpetual calculation.",
+    "skin_tone": "Warm medium golden-olive, a sophisticated blend reflecting Eastern European base enriched by East Asian warmth, South Asian depth, and Sub-Saharan undertones. Golden luminescence across cheekbones and temples.",
+    "complexion": "Well-groomed, minimal scarring. Slight jowl softening at the jawline from age. Clean-shaven. Facial structure shows strong Eastern European definition in broad jaw and cheekbone prominence, refined East Asian eye placement and eyelid shape, South Asian warmth in skin richness and complexion depth, subtle Sub-Saharan undertones in skin luminescence. Lines around eyes suggest chronic sleep deprivation and perpetual calculation.",
     "distinguishing_marks": [
       "Thin scar across left cheekbone, barely visible, suggesting old knife work or a close negotiation gone physical.",
       "Faded tattoo of a playing card (Ace of Spades) on right inner wrist, barely visible under cuff unless forearm exposed.",
@@ -129,17 +123,83 @@
     "posture_movement": "Centered weight, economical movement. Rarely gestures—when he does, it's precise and meaningful. Habitually makes eye contact. Tendency to tap fingers rhythmically when thinking, as if mentally shuffling a deck.",
     "clothing_style": "Tier 2 independent: tailored charcoal suits from corporate-fringe tailors, silk shirts in muted colors (navy, cream, charcoal), Italian leather shoes kept obsessively polished. Omnipresent wrist accessories: vintage mechanical watch + discrete neural-link interface wrapped as a platinum bracelet. Overcoat in winter—wool blend, no logo. Jewelry minimal: gold wedding band (worn despite marital status unclear), one silver signet ring."
   },
-  "image_prompt": "Slate Bhattacharya-Leota, cyberpunk 2226, sharp-featured Pacific Islander and Southeast Asian man, 182cm athletic build with soft middle, warm bronze skin with golden undertones, dark eyes with amber flecks, salt-and-pepper gray hair slicked back with precision side part, faint scar on left cheekbone, clean-shaven with calculation lines around eyes, tailored charcoal suit with navy silk shirt, vintage mechanical watch and platinum neural-link bracelet visible on wrist, Italian leather shoes polished to mirror shine, gold wedding band, silver signet ring, subtle subcutaneous neural enhancements suggested by practiced fluid movement, economical posture, centered weight, indoors at exclusive mid-tier club or casino lounge, moody atmospheric neon backlighting casting amber and cool cyan tones across face, professional noir-lite mood, shallow depth of field focusing on penetrating eye contact, cinematic cyberpunk lighting --ar 2:3 --v 6",
+  "image_prompt": "Slate Baek-Popescu, 182cm tall, athletic frame with slight middle softness, cosmopolitan pan-continental ancestry visible in warm golden-olive skin tone and refined East-Central European facial structure with East Asian eye placement and South Asian warmth. Salt-and-pepper hair slicked back with pomade, dark brown eyes with amber undertones, clean-shaven with subtle jowl softening from age. Thin scar barely visible across left cheekbone. Wearing tailored charcoal suit with navy silk shirt, Italian leather shoes gleaming with obsessive polish. Platinum bracelet concealing neural-link interface on wrist, vintage mechanical watch, minimal gold jewelry. Centered posture suggesting subcutaneous neural enhancements. GLMZ, moody club lighting casting cool shadows across his golden complexion, deep neon blues and warm amber uplighting, sophisticated corporate-fringe aesthetic, late-night poker den or financial district lounge setting, air of quiet calculation and perpetual wakefulness --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 27.1,
-    "Southeast Asian": 24.6,
-    "South Asian": 18.8,
-    "East Asian": 15.7,
-    "Hispanic/Latin American": 10.1,
-    "Northern European": 3.7
+    "Eastern European": 31.8,
+    "East Asian": 19.8,
+    "South Asian": 17.2,
+    "Hispanic/Latin American": 14.6,
+    "Northern European": 11.7,
+    "Sub-Saharan African": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 14.9
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 16.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 12.7
+      },
+      "Chinese": {
+        "Cantonese": 6
+      },
+      "Japanese": {
+        "Japanese": 1.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 9.8
+      },
+      "Indian": {
+        "Malayali": 3.8
+      },
+      "Nepali": {
+        "Nepali": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 7.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.1
+      },
+      "Mexican": {
+        "Mexican": 4.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 0.8,
+        "Welsh": 0.8
+      },
+      "Scandinavian": {
+        "Norwegian": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 0.4,
+        "Kenyan": 1.3
+      },
+      "West African": {
+        "Sierra Leonean": 1.3,
+        "Nigerian": 0.4
+      },
+      "Central African": {
+        "Cameroonian": 0.4,
+        "Congolese": 1.1
+      }
+    }
+  }
 }

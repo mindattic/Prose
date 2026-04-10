@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d07f1d911b0f326f5750f6",
   "type": "character",
-  "name": "Luciana Ionescu-Delgado",
+  "name": "Meera Tetteh-Deshpande",
   "aliases": [
     "Sio",
     "Lefty"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave — Bergqvist & Sons Salvage (the sons don't exist), a working chop shop and legitimate scrap dealer on the western run of the Sump Road",
-  "description": "Siosefa is nineteen and looks it — sharp-faced and still growing into her height, with grease that never fully comes out of the creases of her knuckles and a habit of wiping her hands on a rag she keeps tucked in her waistband. Her skin is a warm medium brown, her hair grown in thick loose coils she shoves under a cap when she's working and lets fall to her shoulders otherwise. Her one visible mod is a retractable tool-array in her right hand — three thin probe fingers that extend from the palm for accessing component ports — which she got secondhand from a chop-house in Ironhaven and jury-rigged to fit her hand herself. She's quietly proud of that.\n\nSio inherited the salvage yard at sixteen when her father died of a respiratory illness from years of unfiltered sump exposure. She turned it from a struggling legal operation into a profitable illegal one inside a year out of sheer necessity, and she's been running it that way since. She is not reckless — she runs a very careful shop, clean books on the legal side, and clear sourcing rules for what she'll accept — but she is young and the combination of competence and overconfidence occasionally creates problems. She has three employees: an older mechanic named Duru who knew her father and probably knows more about the illegal side than he lets on, and two teenagers from the neighborhood she pays above-market because she remembers what it felt like to need money badly at sixteen.",
+  "description": "Meera Tetteh-Deshpande is nineteen and looks it — sharp-faced and still growing into her height, with grease that never fully comes out of the creases of her knuckles and a habit of wiping her hands on a rag she keeps tucked in her waistband. Her skin is a warm medium brown, her hair grown in thick loose coils she shoves under a cap when she's working and lets fall to her shoulders otherwise. Her one visible mod is a retractable tool-array in her right hand — three thin probe fingers that extend from the palm for accessing component ports — which she got secondhand from a chop-house in Ironhaven and jury-rigged to fit her hand herself. She's quietly proud of that.\n\nSio inherited the salvage yard at sixteen when her father died of a respiratory illness from years of unfiltered sump exposure. She turned it from a struggling legal operation into a profitable illegal one inside a year out of sheer necessity, and she's been running it that way since. She is not reckless — she runs a very careful shop, clean books on the legal side, and clear sourcing rules for what she'll accept — but she is young and the combination of competence and overconfidence occasionally creates problems. She has three employees: an older mechanic named Duru who knew her father and probably knows more about the illegal side than he lets on, and two teenagers from the neighborhood she pays above-market because she remembers what it felt like to need money badly at sixteen.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -168,7 +168,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -221,33 +221,16 @@
     "Ferrogate Transit",
     "Shallowgrave",
     "Ironhaven",
-    "South Deering Sump",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "South Deering Sump",
     "The Pure Hand",
     "Pellucid Systems",
     "Tin Man",
-    "Arcturus Defense Solutions Hardened Communications Suite HCS-7",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bogdan Achebe-Svanstrom",
-    "Carrion",
-    "Devraj Solano-Yildirim",
-    "Doru Fofana-Câmpeanu",
-    "Gravesend Basin",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "MERIDIAN",
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Driftyard",
-    "The Heritage Vault",
-    "The Sump",
-    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'"
+    "Palm Leaf"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (38.9%), Hispanic/Latin American (33.4%), and Southeast Asian (27.7%) — a striking tri-continental blend evident in her angular facial structure, warm undertoned complexion, and the particular set to her cheekbones",
+    "heritage": "Sub-Saharan African (46.9%), South Asian (31.2%), Southeast Asian (11.8%), and Northern European (10.1%) — a striking pan-continental blend evident in her rich deep skin tone, the particular set of her cheekbones, and the complexity of her facial structure reflecting multiple ancestral lines",
     "height_cm": 174,
     "weight_kg": 62,
     "build": "Lean and rangy with emerging muscularity in her shoulders and forearms from years of dismantling work; still has the gangly proportions of someone not quite finished growing into her frame",
@@ -255,8 +238,8 @@
     "hair_style": "Thick, loose coils worn down to shoulder length when off-duty; habitually shoved under a grease-stained canvas cap during work",
     "hair_length": "Medium",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-brown with subtle olive undertones — a complex blend reflecting her Eastern European, Hispanic, and Southeast Asian ancestry; medium depth with a natural luminosity",
-    "complexion": "Sharp-featured, angular face with prominent high cheekbones characteristic of her Eastern European heritage; broad nasal bridge and slightly wider-set eyes reflecting Southeast Asian genetics; chronic grease stains embedded in the creases of her knuckles and under her fingernails despite frequent washing; sun-damaged from early-morning sump road exposure; minimal grooming beyond practicality",
+    "skin_tone": "Rich warm brown with golden undertones — a deep, luminous complexion reflecting the dominance of Sub-Saharan and South Asian ancestry; medium-to-deep depth with natural radiance that contrasts strikingly with the grime of her work",
+    "complexion": "Angular face with high, defined cheekbones characteristic of her African and South Asian heritage; prominent nasal bridge with subtle refinement from Southeast Asian ancestry; dark expressive eyes set with characteristic Southeast Asian width; chronic grease stains embedded in the creases of her knuckles and under her fingernails despite frequent washing; sun-damaged from early-morning sump road exposure; minimal grooming beyond practicality",
     "distinguishing_marks": [
       "Faint burn scar on her left forearm from a component arc accident at age seventeen",
       "Callused palms and fingertips from handling corroded metal and precision diagnostics",
@@ -266,14 +249,37 @@
     "posture_movement": "Moves with practical efficiency, economical gestures honed by close work in tight spaces; frequently has her right hand half-extended as if reaching for tools; stands with weight shifted forward slightly, ready to move; habitual nervous tic of rubbing her right palm against her thigh",
     "clothing_style": "Tier 4-5 utilitarian: oil-stained Carhartt-equivalent work pants with multiple tool pockets, most containing actual tools; worn thermal undershirt visible at the collar; oversized gray or brown work shirt that hangs loose enough to move in; unlaced steel-toed boots caked with salvage yard detritus; faded canvas cap with a stitched patch where the original logo was removed; a grease-stained rag permanently tucked into her waistband; no jewelry, no fashion-forward choices, everything chosen for durability and function"
   },
-  "image_prompt": "Luciana Ionescu-Delgado, 174cm tall lean mechanic with golden-brown skin blending Eastern European, Latin American, and Southeast Asian features, sharp angular face with high cheekbones, dark brown eyes, thick coily dark brown shoulder-length hair usually under a grease-stained canvas cap. Wearing oil-stained work clothes: oversized faded brown work shirt, stained Carhartt pants with tool pockets, unlaced steel-toed boots. Her right palm features a jury-rigged retractable tool-array with mismatched titanium casing visible. Faint burn scar on left forearm. Grease embedded in skin creases and knuckles. Standing in an industrial salvage yard at dawn, cool blue-gray morning light casting sharp shadows across her face, cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, utilitarian and worn, hands ready to work, practical and exhausted, cinematic lighting, gritty realism, --ar 2:3 --v 6",
+  "image_prompt": "Meera Tetteh-Deshpande, 174cm tall lean dismantler tech, rich deep golden-brown skin tone from Sub-Saharan African and South Asian heritage, angular face with high prominent cheekbones, dark expressive eyes with Southeast Asian width, thick dark coils shoulder-length, wearing oil-stained utilitarian work clothing, oversized gray work shirt, steel-toed boots, faded canvas cap, right palm with jury-rigged titanium retractable tool-array fingers visible, burn scar on left forearm, grease-stained hands, practical forward-leaning posture, gritty salvage yard setting with industrial debris, warm artificial work lights casting shadows, GLMZ, realistic gritty aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 38.9,
-    "Hispanic/Latin American": 33.4,
-    "Southeast Asian": 27.7
+    "Sub-Saharan African": 46.9,
+    "South Asian": 31.2,
+    "Southeast Asian": 11.8,
+    "Northern European": 10.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 46.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 31.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 11.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 10.1
+      }
+    }
+  }
 }

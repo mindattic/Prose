@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6277ddd84fad40ddac77668",
   "type": "character",
-  "name": "Mika Malhotra-Leota",
+  "name": "Mika Malhotra-Larsdóttir",
   "aliases": [
     "Old Hen",
     "The Pharmacist"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "The Narrows, Deepwell Station, near sub-level access near Dearborn and Jackson",
-  "description": "Henryk is a man who has been slowly becoming the color of his surroundings for twenty years: grey-brown skin softened by age and poor lighting, a close-cropped beard gone entirely silver, and eyes that are pale grey-green and still sharply diagnostic behind a pair of clip-on lens augmentations he wears primarily for the magnification when reading small labels. He is not tall and was never physically imposing, but he holds himself with the specific gravity of someone who has been trusted with real things and has not always deserved it and knows it. He dresses practically in dark thermals and a long coat with more internal pockets than external — his pharmacy is entirely contained within his person.\n\nHe sets up in the same alcove at Deepwell Station every day, at the same time, with the same small folding table and the same hand-lettered sign that says CONSULTATIONS in three languages. Everyone in The Narrows knows what he actually sells, but he maintains the fiction of the sign with complete sincerity. He was a licensed pharmaceutical technician once, for a Helix Biosystems subsidiary, until he wasn't. He understands chemistry at a level his current location does not require and does not reward, and this gap between his capacity and his circumstances has become the central texture of his interior life.",
+  "description": "Mika Malhotra-Larsdóttir is a man who has been slowly becoming the color of his surroundings for twenty years: grey-brown skin softened by age and poor lighting, a close-cropped beard gone entirely silver, and eyes that are pale grey-green and still sharply diagnostic behind a pair of clip-on lens augmentations he wears primarily for the magnification when reading small labels. He is not tall and was never physically imposing, but he holds himself with the specific gravity of someone who has been trusted with real things and has not always deserved it and knows it. He dresses practically in dark thermals and a long coat with more internal pockets than external — his pharmacy is entirely contained within his person.\n\nHe sets up in the same alcove at Deepwell Station every day, at the same time, with the same small folding table and the same hand-lettered sign that says CONSULTATIONS in three languages. Everyone in The Narrows knows what he actually sells, but he maintains the fiction of the sign with complete sincerity. He was a licensed pharmaceutical technician once, for a Helix Biosystems subsidiary, until he wasn't. He understands chemistry at a level his current location does not require and does not reward, and this gap between his capacity and his circumstances has become the central texture of his interior life.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -163,7 +163,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,32 +181,15 @@
     "The Narrows Compact",
     "Harrowgate Industrial Plateau",
     "South Deering Sump",
+    "Dearborn Forge",
     "Irontide Tidal Energy",
     "Silver",
     "The Pale Mile",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Green Bay Community Table",
-    "Hadiya Karlsen-Sow",
-    "Lacuna Genomics",
-    "Praevex",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "ShieldTech CLA-3 'Cascade'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "The Narrows",
-    "The Pure Hand",
-    "The Sump",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian with significant Pacific Islander ancestry, with secondary admixture from Hispanic/Latin American heritage and trace Northern European lineage. This combination produces warm brown skin tones with subtle golden undertones, darker eye color, and facial structure reflecting South Asian and Pacific Islander features.",
+    "heritage": "Complex South Asian-dominant ancestry (47.7%) blended with Northern European (22.0%), Hispanic/Latin American (16.4%), Southeast Asian (9.6%), and Sub-Saharan African (4.3%) heritage. This creates warm medium-brown skin with golden undertones, darker eye color, and facial structure reflecting South Asian cheekbone prominence, Southeast Asian facial width, with subtle African and Northern European admixture creating a distinctly cosmopolitan phenotype characteristic of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 71,
     "build": "Lean and compact, softened by age but not frail — the build of someone who has spent decades in small spaces and does not take up room unnecessarily. Shoulders slightly rounded from posture. Hands are surprisingly steady and fine-boned.",
@@ -214,8 +197,8 @@
     "hair_style": "Close-cropped, neatly maintained despite circumstances",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and diagnostic",
-    "skin_tone": "Warm medium-brown with golden undertones, desaturated by decades of sub-level fluorescent lighting and poor ventilation, but retaining the deeper pigmentation characteristic of South Asian and Pacific Islander ancestry",
-    "complexion": "Weathered but clean. Fine creases around the eyes from squinting at small text. The beard is full but trimmed short, entirely silver. Skin has a slightly papery texture from age and dehydration common to Deepwell residents. Facial structure reflects South Asian heritage with broader cheekbones and Pacific Islander influence in the facial width and nose shape. No visible acne or lesions.",
+    "skin_tone": "Warm medium-brown with golden undertones, desaturated by decades of sub-level fluorescent lighting and poor ventilation, but retaining the deeper pigmentation characteristic of South Asian and Southeast Asian ancestry with subtle warmth from Hispanic and African heritage",
+    "complexion": "Weathered but clean. Fine creases around the eyes from squinting at small text. The beard is full but trimmed short, entirely silver. Skin has a slightly papery texture from age and dehydration common to Deepwell residents. Facial structure reflects South Asian heritage with prominent cheekbones and defined bone structure, Southeast Asian breadth across the face and wider nose bridge, with secondary influence from Northern European and Hispanic ancestry creating nuanced facial geometry and subtle warmth in undertones. No visible acne or lesions.",
     "distinguishing_marks": [
       "Faint chemical burn scar on the inner left forearm, approximately 8cm long, white and old — from a laboratory incident circa 2195.",
       "Small dark mole on his right temple, unremarkable.",
@@ -225,17 +208,57 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Sits slightly forward, shoulders tensed as if ready to engage. His hands are always doing something: sorting, checking labels, organizing. He walks slowly but with purpose. His gaze is diagnostic; he looks at people the way he looks at compounds — carefully reading what they are made of.",
     "clothing_style": "Dark thermals in black or deep grey, layered. A long coat of heavy synthetic fabric in charcoal, unbranded, worn but meticulously maintained. The coat has at least fifteen internal pockets of varying sizes, all occupied. No visible logos or tier indicators. Scuffed black synthetic boots, practical and resoled multiple times. A thin silver chain around his neck with no pendant — the pendant was removed years ago. Clothing is Tier 4 / sub-grade, practical and invisible, designed not to draw attention."
   },
-  "image_prompt": "Mika Malhotra-Leota, a 168cm lean South Asian-Pacific Islander man in his 60s with warm medium-brown skin and deep brown eyes, silver-grey close-cropped hair and full silver beard. Weathered face lined from decades of fluorescent lighting, wearing utilitarian brass-framed clip-on magnification lenses. Dark grey thermal layers beneath a charcoal heavy synthetic coat with multiple pockets, scuffed black resoled boots. Thin silver chain at neck with no pendant. Faint white chemical burn scar on left inner forearm visible. Posture slightly forward, hands delicately organizing something unseen. Standing in dim underground cyberpunk laboratory or Deepwell residential unit, cool neon-blue and grey lighting emphasizing his desaturated appearance while warm undertones of his brown skin remain visible. His gaze diagnostic and careful. Cyberpunk 2226, sub-level dweller, meticulous and precise. --ar 2:3 --v 6",
+  "image_prompt": "Mika Malhotra-Larsdóttir, a 168cm lean and precise figure in GLMZ, warm medium-brown skin with golden undertones desaturated by decades under fluorescent light, weathered complexion with fine creases around alert dark brown eyes, prominent South Asian cheekbones softened by age, Southeast Asian facial breadth, trimmed silver beard on angular face. Wearing utilitarian clip-on lens augmentations with brass frames over magnified eyes, dark layered thermals in charcoal, long heavy synthetic coat with numerous internal pockets worn meticulously, scuffed resold black boots. Silver chain around neck with no pendant. Hands steady and fine-boned, faint chemical burn scar visible on left inner forearm. Sitting slightly forward in diagnostic posture, economical movements, gaze reading the world like compounds. Moody Deepwell sub-level lighting with faint luminescence from optical lenses. Tier 4 practical aesthetic, designed invisibility, accumulated scars of a chemist-survivor. Neo-noir dystopian atmosphere, intimate portrait, cool and warm color balance emphasizing skin undertones --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 58.7,
-    "Pacific Islander": 17.9,
-    "Hispanic/Latin American": 13.7,
-    "Northern European": 6.0,
-    "East Asian": 3.1,
-    "Eastern European": 0.6
+    "South Asian": 47.7,
+    "Northern European": 22,
+    "Hispanic/Latin American": 16.4,
+    "Southeast Asian": 9.6,
+    "Sub-Saharan African": 4.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 47.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 22
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 4.1,
+        "Venezuelan": 0.7
+      },
+      "Central American": {
+        "Salvadoran": 1.3,
+        "Honduran": 1.8
+      },
+      "Mexican": {
+        "Mexican": 8.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 1.8
+      },
+      "Filipino": {
+        "Waray": 0.5
+      },
+      "Laotian": {
+        "Laotian": 7.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 4.3
+      }
+    }
+  }
 }

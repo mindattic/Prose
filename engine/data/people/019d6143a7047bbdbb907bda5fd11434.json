@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7047bbdbb907bda5fd11434",
   "type": "character",
-  "name": "Renata Sepúlveda",
+  "name": "Imani Karimi",
   "aliases": [
     "Scratch",
     "T-V",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "Old Harbor, near Wacker and State",
-  "description": "Tomás is a small, wiry Mexican-Dutch young man who moves through Old Harbor's infrastructure with the practiced fluency of someone who has been climbing, ducking, and sprinting these specific streets since he was eight years old. He is not conventionally remarkable to look at—medium brown skin, dark eyes that shift between alert and distant in a way that unsettles people who notice it, hair that has been various colors and is currently a faded copper-orange growing out at the roots. His hands are perpetually stained with pigment compounds in colors that shift weekly, and his forearms carry a constellation of small scars from wire, glass, and one memorable encounter with a security drone's retractable blade that he shows people with more pride than the injury warrants.\n\nHe is one of the most technically accomplished aerosol and projection artists in Old Harbor, which is a neighborhood that takes that distinction seriously. His work appears on infrastructure walls, drainage tunnels, the underside of elevated transit lines, and twice on the exterior of a building whose owners have never been able to figure out how he accessed the surface. His style is immediately recognizable—dense, layered imagery that reads as pure aesthetic chaos from a distance and resolves, up close, into specific political content: faces of disappeared people, corporate liability data encoded in patterns, maps of surveillance dead zones that shift as the surveillance does. He doesn't sign his work. Everyone knows it's his.\n\nWhat complicates his life is that his courier skills—he can move packages through Old Harbor without electronic trace, using a mental map of the neighborhood's blind spots that he built while scouting locations—have attracted the attention of multiple factions who find his services useful and who have not been fully honest with each other about retaining him. He is currently working, with varying degrees of awareness of the conflict of interest, for three separate organizations. He is nineteen. He is beginning to understand this situation is not sustainable and has not yet figured out what to do about it instead.",
+  "description": "Imani Karimi is a small, wiry Mexican-Dutch young man who moves through Old Harbor's infrastructure with the practiced fluency of someone who has been climbing, ducking, and sprinting these specific streets since he was eight years old. He is not conventionally remarkable to look at—medium brown skin, dark eyes that shift between alert and distant in a way that unsettles people who notice it, hair that has been various colors and is currently a faded copper-orange growing out at the roots. His hands are perpetually stained with pigment compounds in colors that shift weekly, and his forearms carry a constellation of small scars from wire, glass, and one memorable encounter with a security drone's retractable blade that he shows people with more pride than the injury warrants.\n\nHe is one of the most technically accomplished aerosol and projection artists in Old Harbor, which is a neighborhood that takes that distinction seriously. His work appears on infrastructure walls, drainage tunnels, the underside of elevated transit lines, and twice on the exterior of a building whose owners have never been able to figure out how he accessed the surface. His style is immediately recognizable—dense, layered imagery that reads as pure aesthetic chaos from a distance and resolves, up close, into specific political content: faces of disappeared people, corporate liability data encoded in patterns, maps of surveillance dead zones that shift as the surveillance does. He doesn't sign his work. Everyone knows it's his.\n\nWhat complicates his life is that his courier skills—he can move packages through Old Harbor without electronic trace, using a mental map of the neighborhood's blind spots that he built while scouting locations—have attracted the attention of multiple factions who find his services useful and who have not been fully honest with each other about retaining him. He is currently working, with varying degrees of awareness of the conflict of interest, for three separate organizations. He is nineteen. He is beginning to understand this situation is not sustainable and has not yet figured out what to do about it instead.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -235,7 +235,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,29 +254,17 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Stratum",
     "Ringo DV-4 'Courier'",
+    "Circuit",
+    "Harbor Fish Shack",
     "Copper",
+    "Honest Burger",
     "The Pure Hand",
-    "Gravimetric Collapse Charge GCC-9",
     "Glass",
-    "Axonal Stretch Resonance Lance",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Davi Ousseini-Brătianu",
-    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
-    "Iowan Behemoth — 'Palisade'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Slagworks Industrial",
-    "Tshiamo Vukić-Arellano",
-    "Yannick Tofauti-Szarvásy"
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (27.5%), South Asian (22.1%), Eastern European (18.5%), Sub-Saharan African (17.7%), East Asian (12.8%), Northern European (1.4%). The combination produces warm-toned brown skin with subtle golden undertones from South Asian ancestry, sharp angular features reflecting Eastern European genetics, and the warm undertone depth from Sub-Saharan and Hispanic heritage. Eye shape shows gentle East Asian influence; bone structure is distinctly varied—a product of true global mixing.",
+    "heritage": "East African-Middle Eastern diaspora with American indigenous influences: Sub-Saharan African (43.9%) and Middle Eastern (40.7%) form the dominant genetic core, with Hispanic/Latin American (8.3%) and Indigenous American (7.1%) contributing secondary characteristics. The combination produces a rich, warm medium-brown skin tone with golden-amber undertones from the Middle Eastern ancestry, deepened and warmed by Sub-Saharan heritage. Facial structure reflects strong East African bone definition—prominent, sharp cheekbones and defined jawline—softened and rounded slightly by Middle Eastern cheek fullness. Nose shows moderate width with defined bridge prominence characteristic of the blend. The overall effect reads unmistakably African and Middle Eastern, with the Indigenous American ancestry subtly visible in skin warmth depth and slight feature softening.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean, all fast-twitch muscle and minimal fat—built for climbing and sustained movement rather than strength. Chest narrow, shoulders compact, limbs long relative to torso. The build of someone who has spent eleven years navigating vertical infrastructure.",
@@ -284,29 +272,73 @@
     "hair_style": "Medium length, deliberately unkempt, often pushed back or tied with wire or fabric scraps; shows signs of recent home-dye work with uneven saturation",
     "hair_length": "Medium",
     "eye_color": "Dark brown, nearly black, with a quality of constant calculation that makes eye contact feel tactical rather than social",
-    "skin_tone": "Warm medium brown with golden undertones—the result of South Asian, Hispanic, and Sub-Saharan heritage creating a rich, warm complexion. Lighter on inner wrists and underarms from sun exposure patterns, revealing the deeper baseline undertone.",
-    "complexion": "Sharp cheekbones and defined jaw reflecting Eastern European ancestry, balanced by the slightly rounded fullness in cheeks from South and East Asian heritage. Moderately prominent nose with subtle bridge width from the genetic mix. Skin condition varies by week—generally clear but with occasional irritation from pigment exposure and inconsistent sleep. Faint freckling across shoulders and upper back from the sub-Saharan and Latin heritage. Perpetually tired expression around the eyes.",
+    "skin_tone": "Rich warm medium-brown with golden-amber undertones—luminous and deep from the blend of Sub-Saharan African and Middle Eastern heritage. Lighter on inner wrists and underarms revealing deeper baseline tone. Faint freckling across shoulders and upper back from genetic blend.",
+    "complexion": "Strong, angular cheekbones and defined jawline from Sub-Saharan African ancestry, balanced by slight fullness in cheeks from Middle Eastern heritage. Moderately prominent nose with defined bridge reflecting East African-Middle Eastern blend. Skin condition varies by week—generally clear but with occasional irritation from pigment exposure and inconsistent sleep. Perpetually tired expression around the eyes.",
     "distinguishing_marks": [
       "Constellation of small white scars across both inner forearms from wire cuts, glass shards, and drone blade contact—arranged in no particular pattern, oldest approximately 4 years, newest within 6 months.",
       "Faint bioluminescent ink traces running in branching patterns from wrist to elbow on both forearms; visible primarily in darkness or under specific light wavelengths as faint cyan/green luminescence; not tattooed but incorporated into dermal layer.",
-      "A thin, pale scar approximately 8cm long on his right hip from a childhood fall during early climbing expeditions; barely visible except under direct light.",
+      "A thin, pale scar approximately 8cm long on right hip from a childhood fall during early climbing expeditions; barely visible except under direct light.",
       "Chronic pigment staining under fingernails and in creases of right palm where DIY mixing implant is housed; colors change weekly—currently yellow and deep indigo from recent work."
     ],
     "visible_augmentations": "Right palm displays a small, barely-noticeable subcutaneous bulge at the base of the hypothenar eminence where the DIY pigment-mixing implant sits; skin around it slightly discolored and occasionally shows faint scarring from the installation. No visible external ports or indicators. The bioluminescent forearm traces read as either ritual scarification or experimental tattoo work to casual observers; their true nature as incorporated bioink is not immediately apparent. No licensed augmentation markers visible.",
-    "posture_movement": "Moves with economic precision—no wasted motion, weight distributed for rapid directional changes. Walks with slight forward lean, shoulders slightly rounded from hours spent in cramped spaces and hunched over detail work. When still, he is very still; when moving, transitions between states are abrupt. Tends to position himself near exits or elevated positions. Makes deliberate eye contact only when establishing territory or assessing threat; otherwise maintains observational distance. Hands are rarely idle—sketching, color-testing, manipulating small objects.",
-    "clothing_style": "Tier 4-5 functional aesthetics. Worn cargo pants or modified jeans with numerous pockets and reinforced seams, often bearing paint stains that have become part of the visual design. Layered tops—typically a fitted base layer under an oversized, deliberately distressed button-up or windbreaker with modified ventilation and concealed cargo capacity. High-visibility elements mixed with matte colors; some pieces appear to have reflective paint applied deliberately to render him visible or invisible depending on context. Scuffed, extremely practical shoes (currently modified Vorn Hi-Tops with reinforced ankle support and grip-pattern customization for wall climbing). Minimal jewelry except for a length of copper wire wrapped multiple times around his left wrist—functional and symbolic. No corporate branding. Everything shows evidence of constant wear and frequent repair; the overall effect is of someone who treats clothing as infrastructure rather than presentation."
+    "posture_movement": "Moves with economic precision—no wasted motion, weight distributed for rapid directional changes. Walks with slight forward lean, shoulders slightly rounded from hours spent in cramped spaces and hunched over detail work. When still, very still; when moving, transitions between states are abrupt. Tends to position self near exits or elevated positions. Makes deliberate eye contact only when establishing territory or assessing threat; otherwise maintains observational distance. Hands rarely idle—sketching, color-testing, manipulating small objects.",
+    "clothing_style": "Tier 4-5 functional aesthetics. Worn cargo pants or modified jeans with numerous pockets and reinforced seams, often bearing paint stains that have become part of the visual design. Layered tops—typically a fitted base layer under an oversized, deliberately distressed button-up or windbreaker with modified ventilation and concealed cargo capacity. High-visibility elements mixed with matte colors; some pieces appear to have reflective paint applied deliberately to render visible or invisible depending on context. Scuffed, extremely practical shoes (modified Vorn Hi-Tops with reinforced ankle support and grip-pattern customization for wall climbing). Minimal jewelry except for a length of copper wire wrapped multiple times around left wrist—functional and symbolic. No corporate branding. Everything shows evidence of constant wear and frequent repair; the overall effect is of someone who treats clothing as infrastructure rather than presentation."
   },
-  "image_prompt": "Renata Sepúlveda, 168cm wiry lean urban climber with warm medium-brown skin and golden undertones, sharp cheekbones, dark calculating eyes. Copper-orange faded hair with dark roots, shoulder-length unkempt style. Visible bioluminescent cyan-green ink traces branching across both forearms in darkness, white scarring from wire cuts and impacts on inner arms. Wearing distressed oversized windbreaker over fitted base layer, reinforced cargo pants with paint stains, modified Vorn climbing shoes. Copper wire wrapped around left wrist. Hands stained with yellow and indigo pigment. Perpetually tired expression, positioned near urban infrastructure edge, slight forward lean posture. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon underlight catching bioluminescent forearm traces, moody warehouse lighting, economic precise movement frozen mid-transition. --ar 2:3 --v 6",
+  "image_prompt": "Imani Karimi, lean East African-Middle Eastern heritage woman with rich warm medium-brown skin and golden undertones, prominent angular cheekbones and defined jawline, dark brown eyes with tactical intensity, faded copper-orange hair with dark roots at medium length worn unkempt, 168cm tall wiry build. White scar constellations across inner forearms, faint cyan-green bioluminescent branching patterns on forearms visible in darkness, chronic pigment staining on right hand. Wearing distressed oversized button-up over fitted base layer, worn reinforced cargo pants with paint stains, modified Vorn Hi-Tops, copper wire wrapped around left wrist. Hunched posture from years climbing vertical infrastructure, positioned near elevated surfaces, hands actively working with small objects. GLMZ aesthetic, dim neon alleyway lighting with cyan-green accent, moody tactical atmosphere, photorealistic, dramatic side-lighting emphasizing bioluminescent marks --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 27.5,
-    "South Asian": 22.1,
-    "Eastern European": 18.5,
-    "Sub-Saharan African": 17.7,
-    "East Asian": 12.8,
-    "Northern European": 1.4
+    "Sub-Saharan African": 43.9,
+    "Middle Eastern": 40.7,
+    "Hispanic/Latin American": 8.3,
+    "Indigenous American": 7.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 15.6,
+        "Nigerian": 15.1
+      },
+      "Southern African": {
+        "South African": 4.3
+      },
+      "Central African": {
+        "Congolese": 6.6,
+        "Gabonese": 2.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 10.1
+      },
+      "Arab Levantine": {
+        "Jordanian": 6.3
+      },
+      "Kurdish": {
+        "Kurdish": 24.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 2
+      },
+      "South American": {
+        "Brazilian": 1.1
+      },
+      "Mexican": {
+        "Mexican": 5.2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 4.3,
+        "Lakota": 0.8
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 2
+      }
+    }
+  }
 }

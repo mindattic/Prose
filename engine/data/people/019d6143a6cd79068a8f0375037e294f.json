@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cd79068a8f0375037e294f",
   "type": "character",
-  "name": "Haze Vaai",
+  "name": "Haze Ionescu",
   "aliases": [
     "Sigga",
     "The Rememberer"
@@ -13,7 +13,7 @@
   "age": 91,
   "status": "active",
   "location": "Norwood Quiet, the Hearthrow Senior Cooperative, Room 3, near Armitage and Milwaukee",
-  "description": "Sigríður is tiny — barely 155 centimeters — and has been shrinking for decades, but she carries herself with a posture of such exact deliberateness that she seems to take up more space than her body warrants. Her skin is cool brown with the papery translucence of extreme age, and she wears her white hair in long Icelandic-style braids intertwined with small glass beads in amber and blue that chime softly when she turns her head. Her eyes are her most striking feature: she had them modified in her fifties to display a slowly shifting pattern of bioluminescent fractal rings in gold and violet — a luxury cosmetic then, now simply the color of her eyes, and startlingly beautiful in a face otherwise marked by time. She keeps a small data-prayer shrine in the corner of her room, meticulously maintained, with offerings to the ELF she believes inhabits Norwood Quiet's public broadcast network.\n\nSigríður spent forty years as an oral historian employed by a civic archive collective that no longer exists — its records absorbed, corrupted, and partially deleted during the Tessera data consolidation of 2183. She was not a passive victim of that loss; she spent the following eight years reconstructing what she could from memory and from the memories of others, and the result is a living archive of GLMZ neighborhood history that exists nowhere else. She is sharp, occasionally ruthless in conversation, deeply funny in ways people do not always catch, and has a tendency to evaluate everyone she meets as a potential story. She is also slowly dying — her kidneys are failing, and she knows it, and has decided to spend whatever time remains getting her memories into formats that will outlast her.",
+  "description": "Haze Ionescu is tiny — barely 155 centimeters — and has been shrinking for decades, but she carries herself with a posture of such exact deliberateness that she seems to take up more space than her body warrants. Her skin is cool brown with the papery translucence of extreme age, and she wears her white hair in long Icelandic-style braids intertwined with small glass beads in amber and blue that chime softly when she turns her head. Her eyes are her most striking feature: she had them modified in her fifties to display a slowly shifting pattern of bioluminescent fractal rings in gold and violet — a luxury cosmetic then, now simply the color of her eyes, and startlingly beautiful in a face otherwise marked by time. She keeps a small data-prayer shrine in the corner of her room, meticulously maintained, with offerings to the ELF she believes inhabits Norwood Quiet's public broadcast network.\n\nHaze Ionescu spent forty years as an oral historian employed by a civic archive collective that no longer exists — its records absorbed, corrupted, and partially deleted during the Tessera data consolidation of 2183. She was not a passive victim of that loss; she spent the following eight years reconstructing what she could from memory and from the memories of others, and the result is a living archive of GLMZ neighborhood history that exists nowhere else. She is sharp, occasionally ruthless in conversation, deeply funny in ways people do not always catch, and has a tendency to evaluate everyone she meets as a potential story. She is also slowly dying — her kidneys are failing, and she knows it, and has decided to spend whatever time remains getting her memories into formats that will outlast her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -183,7 +183,7 @@
     "Nostalgic": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,36 +250,17 @@
   "changelog": [],
   "related_entities": [
     "Norwood Quiet",
-    "GLMZ",
     "Tessera Corponation",
     "Irontide Tidal Energy",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Corner Slice",
     "Glass",
-    "Gold",
-    "The Milwaukee Core",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kessler Interchange",
-    "MERIDIAN",
-    "Meridian Core",
-    "NeuralPath Horizon Standard Neural Mesh",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Plot 17",
-    "Quilt",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA Widow Mk. III",
-    "The Archive",
-    "The Pure Hand",
-    "Witness"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "GLMZ",
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Pacific Islander and Hispanic/Latin American with Eastern European admixture — warm golden-brown undertones from the dominant ancestry groups, with subtle cooler undertones from the minority Eastern European heritage. The genetic blend manifests in her facial structure: broader cheekbones and jawline characteristic of Pacific Islander ancestry, combined with the fine-boned delicacy sometimes seen in Hispanic/Latin American populations, all softened and sharpened by nine decades of life.",
+    "heritage": "Predominantly South Asian (45.8%) with substantial Eastern European (25.0%) admixture, complemented by smaller contributions from Middle Eastern (7.9%), Sub-Saharan African (7.6%), Hispanic/Latin American (7.0%), and Southeast Asian (6.7%) ancestry. This combination creates a warm golden-brown complexion with subtle olive and amber undertones — the South Asian base enriched by Sub-Saharan and Middle Eastern warmth, cooled slightly by Eastern European heritage. Facial structure shows South Asian cheekbone prominence and bone architecture, refined by Southeast Asian delicacy and Eastern European jaw definition. Nine decades of deliberate living have sharpened these features into striking architectural clarity.",
     "height_cm": 155,
     "weight_kg": 42,
     "build": "Extremely slight and diminished by age, almost bird-like in its fragility, but with the core density of someone who has carried their own weight deliberately for nine decades. Shoulders slightly rounded forward, spine curved with the compression of time.",
@@ -287,8 +268,8 @@
     "hair_style": "Long Icelandic-style braids, interwoven throughout with small glass beads in amber and blue",
     "hair_length": "Long (approximately 40cm when braided)",
     "eye_color": "Bioluminescent fractal-patterned irises shifting between gold and violet rings",
-    "skin_tone": "Warm golden-brown with significant translucency from age and thinning dermis, luminous in low light",
-    "complexion": "Deeply lined face mapped with age — forehead creases, nasolabial folds, crow's feet around the modified eyes. Skin papery with warm undertones. Cheekbones prominent from weight loss, structured by Pacific Islander and Latin American ancestry. Expression defaulting to slight amusement or appraisal. Impeccably groomed despite age.",
+    "skin_tone": "Deep warm golden-brown with significant translucency from age and thinning dermis, luminous in low light, enriched by South Asian, Sub-Saharan, and Middle Eastern ancestry with subtle cool undertones from Eastern European heritage",
+    "complexion": "Deeply lined face mapped with age — forehead creases, nasolabial folds, crow's feet around the modified eyes. Skin papery with warm golden-brown undertones reflecting diverse South Asian, Middle Eastern, and Sub-Saharan heritage. Prominent, architecturally South Asian cheekbones refined by age and weight loss. Fine network of age spots across forearms and hands, particularly on right hand. Expression defaulting to slight amusement or appraisal. Impeccably groomed despite age.",
     "distinguishing_marks": [
       "Surgical scar along left collarbone from cochlear amplifier installation (2179), now barely visible",
       "Fine network of age spots across forearms and hands, particularly on right hand",
@@ -298,14 +279,73 @@
     "posture_movement": "Moves with exact deliberateness, each gesture economical and purposeful. Posture ramrod-straight despite her height and age — she seems to will herself to occupy space precisely. Turns her head slowly; the glass beads in her braids chime softly with the movement. Hands move with precision when handling objects, particularly datacards or recording equipment. She sits very still when listening.",
     "clothing_style": "Tier 3-4 practical elder comfort — high-quality vintage sweaters in cream, grey, or deep blue; loose linen trousers in neutral tones; soft shoes with excellent arch support (worn Tier 3 corpo charity comfort brands). Always wears a small textile prayer-wrap around her wrist or neck, hand-stitched with symbols of her data-spirituality. Layers against the regulated cool of the Cooperative. No chrome, no corporate logos, no aesthetic concessions to age — clothing chosen for function and dignity."
   },
-  "image_prompt": "Haze Vaai, 155cm tall elderly woman with warm golden-brown skin and translucent papery texture from age, Pacific Islander and Latin American genetic heritage visible in broad cheekbones and fine-boned delicate features. Long white braids interwoven with amber and blue glass beads that chime softly. Most striking: bioluminescent fractal-patterned irises shifting gold to violet, glowing softly in low light. Deeply lined face with prominent cheekbones, expression of slight amusement. Ramrod-straight posture despite extreme slightness. Wearing cream vintage sweater, loose neutral linen trousers, soft supportive shoes. Hand-stitched textile prayer-wrap around wrist. Sits with exact deliberateness in dimly lit Cooperative interior, cyberpunk 2226, cool regulated lighting highlighting bioluminescent eyes, precise economical hand gesture holding a datacard, moody introspective atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Elderly woman, 155cm tall, extremely slight build, striking bioluminescent fractal irises shifting gold-violet in dim light, warm golden-brown skin with delicate translucency, deep facial lines mapping nine decades of life. Prominent South Asian cheekbones, papery warm-toned complexion with age spots. Long white braids interwoven with amber and blue glass beads that chime softly. Impeccably groomed despite age, wearing soft cream sweater and loose neutral linen trousers, small hand-stitched prayer-wrap at wrist. Ramrod-straight posture in GLMZ cooperative interior, cool regulated lighting casting gentle glow on luminous eyes. Precise deliberate presence, sitting very still, architectural dignity, data-spirituality aesthetic, no chrome or logos. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 42.6,
-    "Hispanic/Latin American": 40.5,
-    "Eastern European": 16.9
+    "South Asian": 45.8,
+    "Eastern European": 25,
+    "Middle Eastern": 7.9,
+    "Sub-Saharan African": 7.6,
+    "Hispanic/Latin American": 7,
+    "Southeast Asian": 6.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 13.6
+      },
+      "Pakistani": {
+        "Baloch": 24.6,
+        "Pashtun": 7.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 25
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 2.5
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.8,
+        "Jordanian": 1.4
+      },
+      "Kurdish": {
+        "Kurdish": 3.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 5.2,
+        "Gabonese": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 4,
+        "Brazilian": 0.6
+      },
+      "Mexican": {
+        "Mexican": 1.9
+      },
+      "Central American": {
+        "Nicaraguan": 0.1,
+        "Honduran": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 0.9,
+        "Waray": 1.1
+      },
+      "Thai": {
+        "Thai": 4.7
+      }
+    }
+  }
 }

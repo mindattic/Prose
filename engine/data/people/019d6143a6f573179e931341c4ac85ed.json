@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f573179e931341c4ac85ed",
   "type": "character",
-  "name": "Kit Tetteh-Thakur",
+  "name": "Kit Ionescu-Hosseini",
   "aliases": [
     "The Ledger",
     "Tess",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "The Meridian Core (office), The Shelf (field operations), near State and Madison",
-  "description": "Thessaly Mourne occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through The Shelf like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of The Shelf call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
+  "description": "Kit Ionescu-Hosseini occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through The Shelf like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of The Shelf call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -230,7 +230,7 @@
     "Enforcer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core (office)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,36 +253,18 @@
     "The Shelf",
     "ShieldTech SB-3 'Groundstrike'",
     "Chimera-Null",
+    "Circuit",
     "Silver",
-    "The Pure Hand",
-    "Glass",
-    "The Pale Mile",
-    "Déjà Vu",
+    "Harbor Fish Shack",
     "Arcturus KS-7 'Nursery'",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ferrogate Enforcer Cruiser",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Lockpick",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Saodat Mirzoyan-Fubara",
-    "SynapTech ReadRoom Pro Social Cue Implant",
-    "Tapetum Lucidum Integration",
-    "The Burden Clause",
-    "The Human Baseline Alliance",
-    "The Listener",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
-    "WELLSPRING"
+    "Glass",
+    "The Pure Hand",
+    "Déjà Vu",
+    "The Pale Mile"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant South Asian and Sub-Saharan African ancestry, with North African undertones—a complex tri-continental blend reflected in warm brown skin tones with subtle undertones from multiple heritage groups",
+    "heritage": "Predominantly Middle Eastern (40.2%) and Eastern European (27.6%) with substantial Southeast Asian (25.5%) ancestry, complemented by Sub-Saharan African (4.6%) and Hispanic/Latin American (2.1%) heritage. This four-continental blend produces a sophisticated warm-neutral brown complexion with nuanced undertone complexity—golden warmth from Southeast Asian genetics, depth and richness from Sub-Saharan African ancestry, cool grounding from Eastern European and Middle Eastern heritage. The result shifts subtly across light sources, never appearing flat or monolithic.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Tall and angular, almost deliberately spare—minimal muscle definition but dense and efficient, the posture of someone who uses as few movements as possible",
@@ -290,8 +272,8 @@
     "hair_style": "Close-cropped, geometric precision, no styling product visible, looks cut every twelve days",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint luminescent uptick at the iris—ocular overlay hardware catching light at certain angles",
-    "skin_tone": "Warm deep brown with golden-amber undertones from Hispanic/Latin and South Asian heritage, darkened and enriched by Sub-Saharan African ancestry, with subtle warmer notes from North African genetics—slightly ashen from consistent indoor tier-1 lighting exposure",
-    "complexion": "Expressionless baseline, skin meticulously maintained, absolutely no blemishes or visible scarring on the face. High cheekbones with subtle width reflecting South Asian and African ancestry blend, mouth set in a neutral line. White-tinted lip pigment applied with mathematical precision—not thick, not stylish, functional. The effect is unsettling.",
+    "skin_tone": "Warm-neutral brown with golden undertones, enriched by depth from Sub-Saharan African heritage, grounded by cool undertones of Eastern European and Middle Eastern genetics—slightly ashen from consistent indoor tier-1 lighting exposure",
+    "complexion": "Expressionless baseline, skin meticulously maintained, absolutely no blemishes or visible scarring on the face. Moderate cheekbone prominence with angular structure reflecting the Eastern European and Middle Eastern ancestry blend, subtle facial width from Southeast Asian heritage, straight jaw line, mouth set in a neutral line. White-tinted lip pigment applied with mathematical precision—not thick, not stylish, functional. The effect is unsettling.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, barely visible but catches light when she turns—old, possibly fifteen years, healed with expensive tissue restoration",
       "Faint burn marks on both palms in geometric patterns (inside surface, not visible when hands are at rest) from the nerve-dampening implant installation sites"
@@ -300,15 +282,63 @@
     "posture_movement": "Economical. Stands with weight distributed evenly, shoulders level. Walks at a measured pace with minimal arm swing. Hands rest flat on surfaces when seated. She moves like someone who has calculated the most efficient path through every room before entering it. No fidgeting, no adaptive movement—just transit from point A to B.",
     "clothing_style": "Tier-1 corporate formal: tailored black or charcoal blazers with subtle silver threading (Synclaire house colors), high-thread-count grey or white shirts, matte black tailored trousers, black leather shoes with minimal ornamentation (not flashy wealth, wealth that doesn't need to announce itself). In field operations: same palette, slightly more functional fabrics. One visible piece of jewelry—a thin platinum ring on her left ring finger, no stone, no sentimentality visible in it."
   },
-  "image_prompt": "Kit Tetteh-Thakur, cyberpunk 2226, tall angular woman with warm deep brown skin with golden undertones, shaved silver-grey hair in geometric precision cuts, expressionless face with high cheekbones, white-tinted lip pigment, dark brown eyes with subtle ocular overlay hardware glinting under fluorescent light, thin white temple scar barely visible. Wearing tailored black blazer with silver Synclaire threading over high-thread-count grey shirt, matte black trousers, minimalist black leather shoes, thin platinum ring. Standing with economical posture, perfectly level shoulders, hands resting flat. Tier-1 corporate elegant aesthetic. Cool blue-white fluorescent lighting in sleek corporate interior, shadows emphasizing facial geometry and subtle augmentation implants. Unsettlingly controlled presence, biometric scanning mode active. Cybernetic infrastructure made invisible. --ar 2:3 --v 6",
+  "image_prompt": "Kit Ionescu-Hosseini, 183cm tall, angular physique, warm-neutral brown skin with golden undertones and cool heritage grounding, faint scar temple to cheekbone, dark brown eyes with subtle ocular overlay glint. Short geometric silver-grey hair, expressionless face with prominent cheekbones and neutral white-tinted lips. Wearing tailored black Synclaire blazer with silver threading, crisp grey shirt, matte black trousers, minimal black leather shoes. Thin platinum ring on left ring finger. Economical posture, measured stance, absolutely minimal movement. Tier-1 corporate formal aesthetic. GLMZ, Great Lakes Metropolitan Zone, standing in high-efficiency office space with cool LED lighting casting faint highlights across her face, biometric stress-reading technology visible in faint iris luminescence. Cold, precise, invisible infrastructure aesthetic. Professional composure. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 53.4,
-    "South Asian": 21.4,
-    "Sub-Saharan African": 18.9,
-    "North African": 6.3
+    "Middle Eastern": 40.2,
+    "Eastern European": 27.6,
+    "Southeast Asian": 25.5,
+    "Sub-Saharan African": 4.6,
+    "Hispanic/Latin American": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 24.6
+      },
+      "Persian": {
+        "Iranian": 6.3
+      },
+      "Arab Gulf": {
+        "Iraqi": 7.9,
+        "Kuwaiti": 1.4
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 6,
+        "Serbian": 7.6
+      },
+      "Magyar-Romanian": {
+        "Romanian": 11.8,
+        "Hungarian": 2.2
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 25.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 1.2,
+        "Senegalese": 0.9
+      },
+      "Central African": {
+        "Gabonese": 2.3
+      },
+      "Southern African": {
+        "South African": 0.1,
+        "Zambian": 0.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2.1
+      }
+    }
+  }
 }

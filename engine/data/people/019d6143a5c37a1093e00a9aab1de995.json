@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c37a1093e00a9aab1de995",
   "type": "character",
-  "name": "Zephyr Castañeda-Mensah",
+  "name": "Zephyr Traoré-Solberg",
   "aliases": [
     "Biri",
     "The Knife"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Geartown, corner of Ironvein Passage and the Sixth Lateral, near Milwaukee and North Ave",
-  "description": "Birgitta is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
+  "description": "Zephyr Traoré-Solberg is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -170,7 +170,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -221,34 +221,19 @@
   ],
   "related_entities": [
     "Ferrogate Transit",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Geartown",
     "Ironvein",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Pellucid Systems",
+    "Canopy",
+    "Corner Slice",
     "Glass",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Grigor Nakweti-Halász",
-    "Hamtramck Enclave",
-    "Isadora Vukić-Nambiar",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "MERIDIAN",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tafara Quiñones-Saarinen",
-    "The Counter",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "Pellucid Systems",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Sub-Saharan African, North African, Eastern European, Northern European—a complex diaspora blend. Her features reflect deep African ancestry layered with Mediterranean warmth, Eastern European bone structure, and subtle traces of Iberian heritage.",
+    "heritage": "Predominantly Sub-Saharan African (59.7%) with significant Northern European (16.4%), Hispanic/Latin American (11.5%), South Asian (7.4%), and Eastern European (5.0%) ancestry. Her features reflect deep African heritage—broad nose, fuller lips, prominent cheekbones—blended with Northern European bone structure and the warm complexion tones of her Latin American and South Asian components.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Wide-shouldered and sturdy, with developed forearms and calloused hands from nineteen years of repetitive labor. Carries weight in her frame without softness—compact, functional muscle beneath a frame built for endurance.",
@@ -256,8 +241,8 @@
     "hair_style": "Close-cropped, tight to the scalp, practical. No styling beyond basic maintenance.",
     "hair_length": "Short",
     "eye_color": "Left: utilitarian amber glass optical implant (non-cosmetic). Right: natural dark brown.",
-    "skin_tone": "Deep warm brown with golden undertones—the result of African, Latin American, and North African ancestry blending into a rich, complex hue that catches light with subtle warmth.",
-    "complexion": "Weather-worn and scored with dozens of fine, pale burn scars across her forearms, neck, and the left side of her face—a cartography of nineteen years of steam and broth splatter. Skin is clear but aged, with deep creases at the corners of her right eye and around her mouth. High, prominent cheekbones suggest Eastern European ancestry; broader nose and fuller lips reflect African heritage. No cosmetic modifications; grooming is strictly functional.",
+    "skin_tone": "Deep warm brown with golden undertones—rich melanin-dominant complexion reflecting her strong Sub-Saharan African ancestry, warmed by Latin American and South Asian heritage, with subtle cool undertones from Northern and Eastern European bloodlines.",
+    "complexion": "Weather-worn and scored with dozens of fine, pale burn scars across her forearms, neck, and the left side of her face—a cartography of nineteen years of steam and broth splatter. Skin is clear but aged, with deep creases at the corners of her right eye and around her mouth. Broad nose and fuller lips reflect African heritage; high cheekbones show Northern and Eastern European influence; slight warm undertone to midface suggests South Asian ancestry. No cosmetic modifications; grooming is strictly functional.",
     "distinguishing_marks": [
       "Dense cluster of thin burn scars across both forearms, from wrist to elbow, pale against dark skin",
       "Scattered smaller burn marks on her neck and collarbone",
@@ -268,16 +253,61 @@
     "posture_movement": "Stands with feet shoulder-width apart, weight balanced. Moves with efficient, economical gestures—no wasted motion. Her gaze is direct and lingering; people feel observed. She has a habit of tilting her head slightly when listening, favoring her right eye. When working the cart, she moves with practiced rhythm, hands moving through the same sequences thousands of times.",
     "clothing_style": "Tier 4 utilitarian. Wears a faded charcoal coverall with deep pockets and reinforced seams, sleeves rolled to mid-forearm. Over it: a long, stained apron in faded burgundy canvas, sectioned with loops for tools and small jars of spices. Beneath: a plain cream undershirt, collar darkened with old sweat stains. Feet clad in heavy, scuffed black synthetic boots with good tread—built for standing. A threadbare woolen cardigan, moss-gray, hangs on a hook under the cart for afternoon cooldown. No jewelry. A single faded transit pass hangs from a cord around her neck, years past expiration."
   },
-  "image_prompt": "Zephyr Castañeda-Mensah, 172cm tall street food vendor in Great Lakes Metropolitan Zone 2226, deep warm brown skin with golden undertones reflecting African-Hispanic-North African heritage, high cheekbones with Eastern European structure, weather-worn face scored with pale burn scars across neck and left temple, silver-streaked dark brown hair close-cropped to scalp, left eye amber glass optical implant in brushed steel (non-cosmetic), right eye natural dark brown, direct unwavering gaze. Wearing faded charcoal coverall with rolled sleeves exposing dense pale burn scars on dark forearms, burgundy canvas apron sectioned with spice jars and tool loops, cream undershirt with darkened collar, heavy scuffed black synthetic boots. Standing shoulder-width apart with balanced weight, hands showing faint subdermal grip-texture from old modifications, efficiency in every gesture. Cyberpunk street cart vendor, functional utilitarian aesthetic, weathered hands, tired but observant expression, neon-lit evening in sprawling metropolitan zone, cold overhead lighting catching the texture of scar tissue and deep skin tones, gritty realism, documentary photography style --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Traoré-Solberg, GLMZ street vendor, 172cm tall with sturdy athletic build. Deep warm brown skin with golden undertones reflecting Sub-Saharan African, Northern European, Hispanic, South Asian, and Eastern European heritage. Broad nose, fuller lips, prominent high cheekbones. Silver-streaked dark brown hair close-cropped to scalp. Left eye is brushed steel and amber glass optical implant, right eye natural dark brown. Dense pale burn scars across forearms and neck from decades of cooking, fine silvery scar on left temple. Weathered, aged face with deep creases, direct piercing gaze. Wearing faded charcoal coverall with sleeves rolled mid-forearm over cream undershirt, long stained burgundy canvas apron with spice jars and tools, heavy black synthetic boots. Standing at food cart in Great Lakes Metropolitan Zone neon-lit street market, late evening, practical hands positioned ready for work, economical movement, observant expression. Harsh LED and neon overhead lighting casting sharp shadows. Gritty, worn aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.1,
-    "Sub-Saharan African": 34.2,
-    "Eastern European": 11.9,
-    "North African": 8.2,
-    "Northern European": 2.6
+    "Sub-Saharan African": 59.7,
+    "Northern European": 16.4,
+    "Hispanic/Latin American": 11.5,
+    "South Asian": 7.4,
+    "Eastern European": 5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 59.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 7.6,
+        "German": 2.8
+      },
+      "British Isles": {
+        "Scottish": 5.7,
+        "English": 0.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 0.7,
+        "Salvadoran": 3.1
+      },
+      "South American": {
+        "Colombian": 0.6
+      },
+      "Mexican": {
+        "Mexican": 7.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.3
+      },
+      "Pakistani": {
+        "Pashtun": 1.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 5
+      }
+    }
+  }
 }

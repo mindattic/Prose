@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b87157ab72f854f5ef59c2",
   "type": "character",
-  "name": "Camila Thorvaldsdóttir-Soriano",
+  "name": "Adaeze Nwosu-Ekwensi",
   "aliases": [
     "Rosh",
     "the Brick"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Grainfort, operates the southwest market corridor and adjacent residential blocks, near North Ave and Damen",
-  "description": "Roshan is physically extraordinary—193 centimeters and built like a structural beam, with warm medium-brown skin, a shaved head he keeps obsessively smooth, and a jaw that looks like it was designed by committee to be intimidating. His geneware gives him a very slight bioluminescent flush along his cheekbones and temples in blue-white—barely visible in daylight, unmistakable at night, which was exactly the aesthetic point. He has the slightly careful way of moving that very large people develop when they've broken something by accident more than once.\n\nWhat catches people off guard is that Roshan is polite almost to a fault, speaks in a quiet voice he never raises, and seems genuinely distressed when he has to hurt someone. He is not performing gentleness—he really does not enjoy violence, which makes him more unsettling than someone who obviously does. He has been with the Tithe since he was seventeen and has never questioned whether this is where he should be, mostly because thinking about alternatives feels like standing at the edge of something with no floor. He goes home after his rounds to a small flat he shares with his younger sister, feeds an illegal cat, and watches old sports footage before sleeping.",
+  "description": "Adaeze Nwosu-Ekwensi is physically extraordinary—193 centimeters and built like a structural beam, with warm medium-brown skin, a shaved head he keeps obsessively smooth, and a jaw that looks like it was designed by committee to be intimidating. His geneware gives him a very slight bioluminescent flush along his cheekbones and temples in blue-white—barely visible in daylight, unmistakable at night, which was exactly the aesthetic point. He has the slightly careful way of moving that very large people develop when they've broken something by accident more than once.\n\nWhat catches people off guard is that Adaeze Nwosu-Ekwensi is polite almost to a fault, speaks in a quiet voice he never raises, and seems genuinely distressed when he has to hurt someone. He is not performing gentleness—he really does not enjoy violence, which makes him more unsettling than someone who obviously does. He has been with the Tithe since he was seventeen and has never questioned whether this is where he should be, mostly because thinking about alternatives feels like standing at the edge of something with no floor. He goes home after his rounds to a small flat he shares with his younger sister, feeds an illegal cat, and watches old sports footage before sleeping.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -189,7 +189,7 @@
     "Social Chameleon": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grainfort",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,32 +240,18 @@
   ],
   "related_entities": [
     "GLMZ",
-    "Photovoltaic Cascade Rifle PCR-3 'Tithe'",
     "Grainfort",
-    "The Sluiceway",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Ferrogate Enforcer Cruiser",
-    "Imara Solís-Bekele",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
+    "Photovoltaic Cascade Rifle PCR-3 'Tithe'",
     "Plot 17",
-    "Praevex",
-    "Roshani Mvula-Atencio",
-    "TESSERA CC-6 'Shepherd'",
-    "The Arrangement",
-    "The Bazaar",
-    "The Corridor",
-    "The Fathom Line",
-    "Tithe Harmonic",
-    "Toivo Diallo-Achebe",
-    "Vantablack Media Parasocial Carrier Mask"
+    "The Accidental",
+    "The Sluiceway",
+    "GLMZ",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (33.2%) with East Asian (31.6%), Central Asian (12.1%), Pacific Islander (10.0%), Southeast Asian (8.2%), and Eastern European (4.9%) ancestry—a complex global mix that creates warm, golden-bronze undertones with subtle East Asian eye shape and cheekbone structure balanced against Latin warmth and Pacific Islander robustness.",
+    "heritage": "Sub-Saharan African (51.3%) with Hispanic/Latin American (32.2%) and Southeast Asian (16.5%) ancestry—a powerful global blend. Deep melanated skin with rich warm undertones forms the foundation, enriched by Hispanic warmth and enhanced by Southeast Asian refined facial geometry. Creates luminous depth with strong African structural presence balanced against delicate cheekbone definition.",
     "height_cm": 193,
     "weight_kg": 118,
     "build": "Exceptionally large and structurally dense—shoulders like load-bearing columns, forearms visibly reinforced beneath the skin with bone-lacing modifications. Not bulky from bodybuilding; rather, engineered mass optimized for impact absorption and structural integrity. Moves with deliberate, economical precision despite his size.",
@@ -273,8 +259,8 @@
     "hair_style": "Shaved to bare scalp, kept obsessively smooth—no stubble, no texture. Ritual grooming suggests control and self-maintenance.",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm golden-bronze medium tone—the result of blended Hispanic, East Asian, Central Asian, and Pacific Islander ancestry creating an even, sun-rich complexion with subtle warmth throughout",
-    "complexion": "Strong jawline with squared edges and prominent mandible—architecture that reads as intimidating. Clean-shaven. Unmarred face; the kind of careful symmetry that suggests his geneware and augmentations were installed with precision by medical professionals, not street techs. Slight blue-white bioluminescent flush visible along cheekbones and temples—most apparent in low light, creates an eerie subliminal glow. Subtle East Asian and Central Asian feature blending creates high, defined cheekbones.",
+    "skin_tone": "Deep warm brown with luminous undertones—melanated complexion from Sub-Saharan African heritage (51.3%) providing foundational richness, warmed and enhanced by Hispanic/Latin American (32.2%) influence creating natural glow, with Southeast Asian (16.5%) ancestry contributing subtle dimensional warmth throughout.",
+    "complexion": "Strong jawline with squared edges and prominent mandible—architecture that reads as intimidating. Clean-shaven. Unmarred face; the kind of careful symmetry that suggests his geneware and augmentations were installed with precision by medical professionals, not street techs. Slight blue-white bioluminescent flush visible along cheekbones and temples—most apparent in low light, creates an eerie subliminal glow. High, defined cheekbones reflecting Southeast Asian heritage structure, framed by robust African facial geometry and enriched by Hispanic warmth in overall complexion tone.",
     "distinguishing_marks": [
       "Bioluminescent geneware traces along cheekbones and temples: blue-white glow, cosmetic modification installed for aesthetic/intimidation value, most visible in evening/night conditions.",
       "Faint linear scarring along inside of left forearm where bone-lacing installation incisions healed—barely visible unless limb is at specific angle to light, approximately 12 centimeters long.",
@@ -284,17 +270,45 @@
     "posture_movement": "Stands at full height with shoulders relaxed, not squared aggressively. Moves with unusual grace for someone 193cm tall—economical, controlled, deliberate. Each motion appears calculated to minimize accidental damage. When reaching for something, he slows down. When walking through crowded spaces, he becomes hyperaware of his spatial footprint. Body language reads as quiet and contained rather than threatening, which creates cognitive dissonance with his physical presence.",
     "clothing_style": "Tier 1-2 enforcer uniform: well-fitted black or charcoal synthetic-blend long-sleeve shirts (breathable, durable) worn untucked. Matte-finish tactical pants in dark gray or black with reinforced seams. Worn-in leather jacket in deep brown, scuffed at the cuffs from years of use, no corpo branding. Steel-toed work boots, black, maintained to functional standards rather than polish. No jewelry except a faded cloth wristband on left wrist (memorial or talisman—ambiguous origin). Clothing choices prioritize functionality and durability over style, with subtle tier-2 quality markers that suggest he has access to better than street level, but not corpo-grade luxury."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Camila Thorvaldsdóttir-Soriano, a 193cm tall enforcer with golden-bronze mixed heritage complexion blending Hispanic, East Asian, Central Asian, and Pacific Islander ancestry. Shaved scalp, strong squared jawline, dark brown eyes. Blue-white bioluminescent glow faintly visible along cheekbones and temples in low light. Wearing worn brown leather jacket over matte charcoal synthetic shirt, tactical dark gray pants, black steel-toed boots. Subdermal geometric plating subtly visible on knuckles. Standing with controlled, economical posture in moody evening light, neon city glow behind, atmospheric haze, calm dangerous presence, cybernetic augmentation marks barely visible, faded cloth wristband on left wrist, professional enforcer aesthetic, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ enforcer, 193cm tall, massive dense frame with bone-lacing augmentations, bare shaved scalp. Deep warm brown melanated skin with luminous undertones blending Sub-Saharan African, Hispanic/Latin American, and Southeast Asian ancestry. Strong intimidating jawline, high defined cheekbones, clean-shaven face with subtle blue-white bioluminescent glow along cheekbones and temples glowing in evening light. Dark brown unaugmented eyes. Wearing worn-in deep brown leather jacket over black synthetic long-sleeve shirt, dark tactical pants, black steel-toed boots. Faded cloth wristband on left wrist. Controlled graceful posture despite massive size. Geometric subdermal plating visible at knuckles. Standing in neon-lit urban environment, low ambient lighting emphasizing bioluminescent geneware traces. Photorealistic, gritty neo-noir atmosphere, moody and contained --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.2,
-    "East Asian": 31.6,
-    "Central Asian": 12.1,
-    "Pacific Islander": 10.0,
-    "Southeast Asian": 8.2,
-    "Eastern European": 4.9
+    "Sub-Saharan African": 51.3,
+    "Hispanic/Latin American": 32.2,
+    "Southeast Asian": 16.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 19.1,
+        "Cameroonian": 13.7
+      },
+      "Southern African": {
+        "Zimbabwean": 18.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 14.4,
+        "Honduran": 6.1
+      },
+      "Caribbean": {
+        "Dominican": 11.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 8
+      },
+      "Laotian": {
+        "Laotian": 4.6
+      },
+      "Indonesian": {
+        "Sumatran": 3.9
+      }
+    }
+  }
 }

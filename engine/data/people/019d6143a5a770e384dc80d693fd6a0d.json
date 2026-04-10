@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a770e384dc80d693fd6a0d",
   "type": "character",
-  "name": "Aurelio Guerrero-Masoe-Raghavan",
+  "name": "Jabari Mwangi-Masoe-Yun",
   "aliases": [
     "Kos",
     "the Patcher"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Aurochs Medical Complex Trauma Bay 7; off-hours in Copperhead district, near Milwaukee and Damen",
-  "description": "Akosua is tall and rangy with warm ochre-brown skin, natural hair grown high and loose, and the kind of face that is perpetually unreadable to people who have not spent time with them — not unfriendly, simply internal. Their most immediately notable feature is their left arm, which from the elbow down is full chrome: high-grade Helix surgical-grade manipulators, articulated to tolerances no biological hand can match, finished in brushed gunmetal with amber indicator lights at the wrist joints that track grip pressure. They got it after a bus accident seven years ago and accepted the premium model because anything less would compromise their work. They do not discuss the accident.\n\nIn the trauma bay, they are an entirely different creature from the quiet person who buys coffee from the same cart in Copperhead every morning. They become fast, flat, almost frightening in their economy. They do not narrate. They do not comfort. They fix. Outside of work they are thoughtful, prone to long silences that are not uncomfortable, and fond of extremely loud, chaotic music that they listen to on bone-conduction speakers while cooking. They have strong opinions about soup.",
+  "description": "Jabari Mwangi-Masoe-Yun is tall and rangy with warm ochre-brown skin, natural hair grown high and loose, and the kind of face that is perpetually unreadable to people who have not spent time with them — not unfriendly, simply internal. Their most immediately notable feature is their left arm, which from the elbow down is full chrome: high-grade Helix surgical-grade manipulators, articulated to tolerances no biological hand can match, finished in brushed gunmetal with amber indicator lights at the wrist joints that track grip pressure. They got it after a bus accident seven years ago and accepted the premium model because anything less would compromise their work. They do not discuss the accident.\n\nIn the trauma bay, they are an entirely different creature from the quiet person who buys coffee from the same cart in Copperhead every morning. They become fast, flat, almost frightening in their economy. They do not narrate. They do not comfort. They fix. Outside of work they are thoughtful, prone to long silences that are not uncomfortable, and fond of extremely loud, chaotic music that they listen to on bone-conduction speakers while cooking. They have strong opinions about soup.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -161,7 +161,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex Trauma Bay 7; off-hours in Copperhead district",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,37 +178,22 @@
   "related_entities": [
     "Aurochs Medical Complex",
     "Copperhead",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Green Bay Community Table",
-    "Helix Biosystems",
-    "Hepatic Glycogen Depletion Projector",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Oumarou Svec-Ranginui",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA WL-6 'Stacker'",
-    "The Pure Hand"
+    "Pressure Drop",
+    "The Accidental",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant South Asian and minor Pacific Islander ancestry; warm brown skin tones reflecting this blend, with features showing the characteristic diversity of the Ubiquitous Diaspora",
+    "heritage": "Strikingly diverse genetic tapestry: 39.9% Sub-Saharan African, 17.9% Pacific Islander, 15% Middle Eastern, 13.6% Hispanic/Latin American, 13.6% East Asian. Features reflect this complex blend—deep warm undertones from African ancestry combined with broader bone structure and orbital characteristics influenced by East Asian heritage, tempered by Middle Eastern and Pacific Islander contributions creating subtle width in the face and a slightly fuller lower lip structure. A living example of the Ubiquitous Diaspora.",
     "height_cm": 187,
     "weight_kg": 72,
     "build": "Rangy and lean with defined musculature from precision work and calibration routines; long-limbed, minimal body fat, economical posture that reads as coiled rather than relaxed",
     "hair_color": "Natural black with warm undertones",
     "hair_style": "Grown high and loose, worn in a natural crown; maintained but not styled, suggesting function over aesthetics",
     "hair_length": "Long",
-    "eye_color": "Dark brown, natural; left eye shows faint crystalline overlay at certain angles (corneal magnification augmentation)",
-    "skin_tone": "Warm medium brown with golden undertones characteristic of Hispanic/Latin American and South Asian blending, rich and even across the face and body",
-    "complexion": "Angular face with moderately high cheekbones and south/central Asian influence visible in orbital structure; composed expression, minimal micro-expressions in repose; well-maintained but unstudied grooming; skin shows the texture of someone who prioritizes function over skincare routine",
+    "eye_color": "Deep brown with complex warm undertones; left eye shows faint crystalline overlay at certain angles (corneal magnification augmentation)",
+    "skin_tone": "Warm medium-brown with golden undertones—rich melanin base from Sub-Saharan ancestry brightened by Pacific Islander and Middle Eastern influences, creating luminous depth that catches light with subtle warmth rather than cool undertones",
+    "complexion": "Angular face with prominent cheekbones reflecting strong Sub-Saharan and East Asian structure; slightly wider facial width and broader orbital set from Pacific Islander and East Asian heritage; nasal bridge moderate width with fuller base reflecting multi-continental ancestry; full lower lip with subtle definition; composed expression, minimal micro-expressions in repose. Skin shows even tone with the texture of someone who prioritizes function over skincare routine.",
     "distinguishing_marks": [
       "Surgical scar running along left shoulder and upper chest from the bus accident seven years prior, faint but visible under direct light",
       "Fine network of barely-visible calibration tattoos on the inside of right wrist in pale ink—depth markers for surgical measurement",
@@ -218,14 +203,56 @@
     "posture_movement": "Stands and moves with surgical economy—minimal wasted motion, spine straight, weight centered. Outside trauma bay: slow, deliberate, almost meditative. In surgery: becomes fluid and fast, movements stripped down to pure function. Hands rest in neutral position when not in use. Left chrome arm moves with mechanical precision that is unsettling in its accuracy.",
     "clothing_style": "Off-duty favors durable, tier 3-4 minimalist pieces: fitted charcoal synthetic shirts that accommodate the chrome arm without bunching, high-quality work trousers with reinforced pockets, worn leather jacket (real leather, well-maintained, a few years old). No jewelry except a functional smartwatch on right wrist. Shoes are practical—good arch support, worn but clean. In the trauma bay: standard surgical blacks under a lab coat with the Aurochs Medical Complex insignia. The coat is tailored to fit the chrome arm without restriction. Zero ornamentation."
   },
-  "image_prompt": "Aurelio Guerrero-Masoe-Raghavan, 187cm tall surgeon with warm golden-brown skin blending Hispanic/Latin American and South Asian heritage, natural black hair in loose crown, dark eyes with left corneal augmentation overlay catching light. Lean muscular build, coiled posture. Full chrome left arm from elbow down brushed gunmetal with amber wrist indicators glowing faintly, surgical-grade Helix manipulators, subtle bone-conduction implant behind left ear. Faint surgical scar visible on left shoulder/chest, calibration tattoos on right inner wrist, thin white line at left elbow interface. Wearing fitted charcoal synthetic shirt accommodating chrome arm, high-quality work trousers, worn well-maintained leather jacket, practical shoes, functional smartwatch. Cyberpunk 2226 Great Lakes Metropolitan Zone, clinical lighting, meditative off-duty demeanor, minimal wasted motion, zero ornamentation, photorealistic, moody atmospheric --ar 2:3 --v 6",
+  "image_prompt": "Jabari Mwangi-Masoe-Yun, 187cm tall surgical precision specialist in GLMZ GLMZ setting. Warm medium-brown skin with golden undertones, rich melanin complexion blending Sub-Saharan African (39.9%), Pacific Islander (17.9%), Middle Eastern (15%), Hispanic/Latin American (13.6%), and East Asian (13.6%) heritage. Angular face with prominent cheekbones, wider orbital set, moderate nasal bridge, full lower lip. Natural black hair worn long and loose in a high crown. Deep brown eyes with warm undertones; left eye shows faint crystalline corneal augmentation overlay. Tall, rangy and lean build, coiled posture. Full brushed gunmetal chrome left arm from elbow down with articulated Helix manipulators and amber indicator lights at wrist joints. Faint surgical scar visible along left shoulder and upper chest. Calibration tattoos on inner right wrist. Off-duty in fitted charcoal synthetic shirt and worn real leather jacket, practical shoes. Bone-conduction audio implant visible behind left ear. Meditative, economical movement. Cool surgical lighting, trauma bay or minimalist quarters, neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 81.9,
-    "South Asian": 16.7,
-    "Pacific Islander": 1.4
+    "Sub-Saharan African": 39.9,
+    "Pacific Islander": 17.9,
+    "Middle Eastern": 15,
+    "Hispanic/Latin American": 13.6,
+    "East Asian": 13.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 28.9,
+        "Zambian": 1.9
+      },
+      "Central African": {
+        "Congolese": 9.1
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 10.2,
+        "Hawaiian": 1.7
+      },
+      "Micronesian": {
+        "Palauan": 6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 13.2
+      },
+      "Arab Levantine": {
+        "Lebanese": 0.7,
+        "Syrian": 1.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 4.7,
+        "Puerto Rican": 8.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 13.6
+      }
+    }
+  }
 }

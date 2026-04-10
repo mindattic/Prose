@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e77ec0a248a24ed2b5e5f1",
   "type": "character",
-  "name": "Arden Petrović-Odinga",
+  "name": "Arden Ekwensi-Odinga",
   "aliases": [
     "Vanguard",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Armitage and Milwaukee",
-  "description": "Daulet Edlund-Gyan is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Edlund-Gyan is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Arden Ekwensi-Odinga is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArden Ekwensi-Odinga is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.91,
@@ -264,7 +264,7 @@
     "Prepared": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,47 +278,26 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Geartown",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Doru Fofana-Câmpeanu",
-    "Fanta Hedlund-Diarra",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nneka Lindqvist-Okafor",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "GLMZ",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European dominant (51.8%) with significant Sub-Saharan African (19.7%), South Asian (17.0%), and minor Hispanic/Latin American (7.4%) and Northern European (4.1%) ancestry. The genetic blend creates a striking continental fusion: Eastern European bone structure and fair undertones mixed with Sub-Saharan African facial proportions and warm complexion depth, accented by South Asian cheekbone prominence and eye shape characteristics.",
+    "heritage": "Sub-Saharan African dominant (42.5%) layered with Central Asian (26.4%), East Asian (18.3%), Indigenous American (8.0%), and South Asian (4.8%) ancestry. The genetic fusion creates striking polycontinental features: Sub-Saharan African bone structure and complexion depth interwoven with Central Asian facial proportions and cheekbone prominence, East Asian eye shape and lid characteristics, Indigenous American nasal bridge refinement, and South Asian undertone warmth. A true diaspora phenotype reflecting the Ubiquitous Mixing of 2226.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Athletic and lean with defined musculature — the physique of someone who maintains strength through discipline rather than bulk. Shoulders broad, core tight, no excess. Moves like a dancer or climber, economical and precise.",
+    "skin_tone": "Deep warm mahogany — the result of Sub-Saharan African baseline enriched by Central Asian golden undertones, East Asian luminosity, and South Asian amber complexity. Displays significant depth in shadow, warm radiance in direct light, with complex mid-tone richness across the spectrum.",
+    "complexion": "High, prominent cheekbones shaped by Central Asian and Sub-Saharan African ancestry, paired with refined East Asian eye structure, subtle epicanthic fold, and slightly upturned lid shape. Nose straight and refined with characteristically broad nostrils reflecting Sub-Saharan heritage, balanced by Central Asian bridge definition. Forehead broad, jawline strong and defined. Skin shows the wear of nocturnal work and age — fine lines around eyes and mouth, minor scarring on left temple. Complexion is clear but weathered, the kind of skin that doesn't see sunlight regularly. Facial structure reflects genuine multicontinental fusion: facial width and bone prominence from Sub-Saharan heritage, cheekbone geometry from Central Asian ancestry, eye shape and lid characteristics from East Asian genetics, nasal proportions refined by Indigenous American ancestry, and warm undertone complexity from South Asian admixture.",
+    "eye_color": "Dark brown",
     "hair_color": "Steel gray with natural dark roots showing",
     "hair_style": "Pulled back in a tight, functional braid; pragmatic rather than fashionable",
     "hair_length": "Medium",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-deep — the result of Eastern European baseline enriched by Sub-Saharan African warmth and South Asian golden undertones. Rich enough to show depth in shadow, luminous in direct light, with subtle olive-amber mid-tone complexity.",
-    "complexion": "High, prominent cheekbones shaped by South Asian and Sub-Saharan African ancestry, paired with Eastern European angular jaw structure. Nose straight and refined. Skin shows the wear of nocturnal work and age — fine lines around eyes and mouth, minor scarring on left temple. Complexion is clear but weathered, the kind of skin that doesn't see sunlight regularly. Facial structure reflects the fusion of multiple continental phenotypes: broader facial width from Sub-Saharan heritage, refined nose from Eastern European, distinct eye shape from South Asian ancestry.",
     "distinguishing_marks": [
       "Neural interface jack at base of skull — chrome port, roughly 2cm diameter, slightly raised and scarred around the edges from repeated use",
       "Burn scar on right forearm, approximately 8cm long, pale and smooth — old demolition job gone wrong",
@@ -328,16 +307,62 @@
     "posture_movement": "Stands with a slight forward lean, weight balanced on the balls of her feet — ready. Moves without wasted motion, joints loose but controlled. When relaxed, there's still an underlying tension, like a loaded spring. Hands are steady and precise.",
     "clothing_style": "Tier 3-4 functional aesthetic. Black reinforced cargo pants with multiple pockets and wear patterns from equipment. Dark fitted shirt — often with a tactical vest or harness over top, industrial grade. Steel-toed boots, well-maintained. A long coat or jacket in charcoal or dark olive, worn and practical. No corporate branding. All pieces chosen for durability and utility, not fashion. Jewelry is minimal — worn metal wedding band on left ring finger, no other ornamentation."
   },
-  "image_prompt": "Arden Petrović-Odinga, a woman of mixed Eastern European, Sub-Saharan African, and South Asian heritage, stands in cyberpunk 2226 Great Lakes Metropolitan Zone. Medium-deep warm skin tone with prominent cheekbones and angular Eastern European jawline. Steel-gray hair pulled back in tight braid, sharp dark brown eyes. Age-worn weathered complexion with fine lines and faded temple scar. Athletic, lean 172cm frame in black reinforced tactical cargo pants, dark fitted shirt under industrial-grade tactical vest. Long charcoal worn coat. Chrome neural interface jack visible at base of skull with scarring. Pale burn scar on right forearm. Faded tactical blast-radius tattoo on left bicep. Steel-toed boots. Worn metal wedding band. Stands with weight forward, ready posture, underlying tension. Nocturnal urban setting, cool neon-shadow lighting, foreground focus on face and hands, dystopian gritty atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Arden Ekwenski-Odinga, lean athletic woman, deep warm mahogany skin with Sub-Saharan and Central Asian features, high prominent cheekbones, refined East Asian eye shape with subtle upturned lids, strong defined jawline, steel gray hair pulled back in tight functional braid, dark brown eyes with fine lines from nocturnal work, burn scar on right forearm, chrome neural interface jack visible at base of skull, black reinforced cargo pants, dark fitted tactical vest over dark shirt, charcoal worn practical jacket, steel-toed boots, metal wedding band, standing in ready stance weight on balls of feet, slight forward lean, moody neo-noir lighting, neon shadows, industrial nocturnal setting, 2226 Great Lakes Metropolitan Zone, tension and precision in posture, dystopian professional augmented operative, film noir lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 51.8,
-    "Sub-Saharan African": 19.7,
-    "South Asian": 17.0,
-    "Hispanic/Latin American": 7.4,
-    "Northern European": 4.1
+    "Sub-Saharan African": 42.5,
+    "Central Asian": 26.4,
+    "East Asian": 18.3,
+    "Indigenous American": 8,
+    "South Asian": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 15.9,
+        "Somali": 26.6
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 8.5,
+        "Turkmen": 11.6
+      },
+      "Mongolic": {
+        "Kalmyk": 6.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.1
+      },
+      "Chinese": {
+        "Fujianese": 5.7
+      },
+      "Korean": {
+        "Korean": 9.5
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 0.8,
+        "Aymara": 1.4
+      },
+      "Mesoamerican": {
+        "Maya": 5.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 0.9,
+        "Pashtun": 2.5
+      },
+      "Indian": {
+        "Telugu": 1.4
+      }
+    }
+  }
 }

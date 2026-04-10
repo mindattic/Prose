@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a079ccb75e41520a0a1872",
   "type": "character",
-  "name": "Lyric Echeverría-Mazurek",
+  "name": "Lyric Odinga-Mbekele",
   "aliases": [
     "The Broker"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -102,17 +102,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian Core",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Réginald Asomaning-Čabarkapa",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
+    "Meridian Core"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Eastern European (36.7%) with significant Hispanic/Latin American (25.3%) and Sub-Saharan African (21.5%) ancestry, blended with Indigenous American (6.3%), Northern European (5.9%), and North African (4.3%) heritage. A complex global admixture creating warm-toned skin with layered undertones.",
+    "heritage": "Sub-Saharan African (64.2%) dominant ancestry with significant Northern European (21.4%) and Pacific Islander (14.4%) blending. The combination creates a richly complex phenotype: deep warm brown skin with golden undertones from African heritage, subtly cooled by Northern European genetics, and enriched with the warmth characteristic of Pacific Islander ancestry. Sun-weathered and marked by asymmetrical scarring that tells her operational history.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and angular, with defined shoulders from decades of fieldwork. Minimal body fat, efficient musculature suggesting regular maintenance rather than vanity fitness.",
@@ -120,8 +114,8 @@
     "hair_style": "Pulled back into a tight, geometric braid that wraps around her skull—practical, intimidating, signature",
     "hair_length": "Medium (when unbound)",
     "eye_color": "Natural brown, right eye replaced with a 2nd-gen OPTIC-7 chrono-tracking augment (amber-gold lens with faint reticle grid visible at certain angles)",
-    "skin_tone": "Warm medium-to-deep brown with golden and reddish undertones from Eastern European, Hispanic, Sub-Saharan, and North African blending. Sun-weathered and uneven from asymmetrical scarring.",
-    "complexion": "Sharp, prominent cheekbones reflecting Eastern European and Sub-Saharan ancestry. Long face with slight underbite. Fine scar tissue across left cheekbone and temple. No wrinkles; her face has the taut, preserved quality of someone using mid-tier dermaplast treatments. Facial structure shows the blended geometry of her diverse heritage.",
+    "skin_tone": "Deep warm brown with golden and amber undertones from Sub-Saharan African ancestry, subtly cooled by Northern European heritage. Pacific Islander warmth adds richness to the mid-deep complexion. Sun-weathered and uneven from asymmetrical scarring.",
+    "complexion": "Strong, prominent cheekbones reflecting Sub-Saharan African heritage blended with the facial geometry of Northern European and Pacific Islander ancestry. Long face with slight underbite. Fine scar tissue across left cheekbone and temple. No wrinkles; her face has the taut, preserved quality of someone using mid-tier dermaplast treatments.",
     "distinguishing_marks": [
       "Surgical scar running from left temple to jawline, pale and thin but visible under overhead light—result of optic augmentation procedure at age 28",
       "Burn scarring on right forearm (inside of wrist to elbow) in an irregular oval pattern—plasma discharge incident, circa 2208",
@@ -131,17 +125,38 @@
     "posture_movement": "Stands with shoulders back, weight centered. Her movements are economical—no wasted motion. She walks with an even, measured pace despite the synthetic arm. Makes deliberate eye contact and rarely blinks with her augmented eye, which can unsettle people.",
     "clothing_style": "Tier 2 utilitarian-chic. Dark charcoal second-skin bodysuit under a tailored matte-black tactical jacket (Korin Industries, mid-grade chrome-weave lining). Fitted tactical pants with too many pockets. Boots: unmarked matte-black combat boots, expensive but anonymous. Single chrome pendant (Tessera marker) worn under her shirt. No jewelry. Her entire ensemble costs 15,000 Φ and looks it only to those who know the brands."
   },
-  "image_prompt": "Lyric Echeverría-Mazurek, 168cm lean angular woman with warm golden-brown skin blending Eastern European, Hispanic, Sub-Saharan African, and North African heritage. Geometric braid wrapped around skull, dark brown hair with silver threading. Sharp cheekbones, long face, surgical scar running temple to jawline. Right eye replaced with amber-gold OPTIC-7 chrono-tracking augment showing gold circuitry. Right arm brushed-steel synthetic with articulated fingers. Wearing dark charcoal second-skin bodysuit under matte-black Korin Industries tactical jacket with chrome-weave lining, tactical pants, unmarked black combat boots. Centered posture, economical movements, cyberpunk 2226 Great Lakes Metropolitan Zone operative. Cool overhead neon-blue and cold white lighting, industrial background, intense focused expression, --ar 2:3 --v 6",
+  "image_prompt": "Lyric Odinga-Mbekele, a 168cm lean operative with deep warm brown skin rich with golden undertones, standing in a GLMZ urban environment. Her tight geometric braids frame her strong cheekbones and long face, reflecting Sub-Saharan African, Northern European, and Pacific Islander heritage. Thin surgical scar visible along her left temple and jawline. Right eye is a chro-amber augmented lens with gold circuitry. Right arm is brushed-steel synthetic from mid-forearm down with pressure-sensitive pads. She wears a tailored matte-black tactical jacket over a dark charcoal second-skin bodysuit, tactical pants with numerous pockets, and unmarked combat boots. Gray tactical sleeve covers the elbow joint of her synthetic arm. Her posture is centered and confident, movements economical. She stands in dramatic neon-shadow lighting, the amber glow of her augmented eye catching light. Cool blue and warm orange neo-noir lighting creates depth. Serious, measured expression. Tessera affiliation pendant visible at her neck. Professional operative aesthetic, mid-tier gear quality evident to trained eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 36.7,
-    "Hispanic/Latin American": 25.3,
-    "Sub-Saharan African": 21.5,
-    "Indigenous American": 6.3,
-    "Northern European": 5.9,
-    "North African": 4.3
+    "Sub-Saharan African": 64.2,
+    "Northern European": 21.4,
+    "Pacific Islander": 14.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 45,
+        "Kenyan": 19.2
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 2.3
+      },
+      "Germanic": {
+        "German": 4.9
+      },
+      "British Isles": {
+        "Welsh": 14.2
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 14.4
+      }
+    }
+  }
 }

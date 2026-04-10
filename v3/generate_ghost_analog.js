@@ -110,12 +110,12 @@ function writePlace(place) {
 // ============================================================
 
 writeDocument({
-  name: "The Ghost Buildings of Meridian 88",
+  name: "The Ghost Buildings of GLMZ",
   document_type: "investigation",
   author: "Lena Vasquez-Okafor, Independent Investigative Journalist",
   date: "2224-06-15",
   classification: "public",
-  description: `The Circuit district of Meridian 88 contains at least forty-seven buildings that, by every measurable standard, are operational commercial properties. They have tenants listed on municipal registries. They have utility accounts in good standing. They have cleaning contracts, pest control schedules, elevator maintenance agreements, and fire suppression system inspections that pass without exception every quarter. They are, on paper, unremarkable mid-tier office buildings doing mid-tier office things.
+  description: `The Circuit district of GLMZ contains at least forty-seven buildings that, by every measurable standard, are operational commercial properties. They have tenants listed on municipal registries. They have utility accounts in good standing. They have cleaning contracts, pest control schedules, elevator maintenance agreements, and fire suppression system inspections that pass without exception every quarter. They are, on paper, unremarkable mid-tier office buildings doing mid-tier office things.
 
 They are empty. Not abandoned. Not between tenants. Not undergoing renovation. Empty in the way that a stage set is empty \u2014 everything is there except the reason for it. The lights operate on timers that simulate occupancy: on at 7 AM, off at 9 PM, with realistic variation to suggest human activity. The HVAC systems maintain 21 degrees Celsius. The water runs. The network infrastructure processes traffic that, upon deep packet analysis, consists entirely of automated system checks talking to other automated system checks. The buildings are alive in every way except the one that matters.
 
@@ -123,8 +123,8 @@ I spent four months investigating what the locals have started calling Ghost Bui
 
 The cleaning crews are the strangest part. They are real people, employed by real janitorial companies, paid real \u03A6. They clean these buildings with the same thoroughness they clean occupied ones. I interviewed fourteen of them. They all know the buildings are empty. None of them find it remarkable. "A job's a job," said Marcus Abiodun, who has cleaned the seventh floor of a Ghost Building on Meridian Parkway for six years. "I don't ask why. I just mop." When pressed on whether it bothered him to mop floors that no one walked on, he shrugged and said, "The floors are clean. That's what matters."
 
-The financial trail is both transparent and opaque. Each Ghost Building is leased to a subsidiary of a subsidiary of a corponation \u2014 typically three or four layers of corporate nesting that end in entities whose sole function is to hold the lease. These entities have bank accounts, tax filings, and registered agents, but no employees, no products, no services. They exist to pay rent. The rent is always paid on time. The total annual expenditure across all known Ghost Buildings in Meridian 88 is approximately \u03A68.2 billion \u2014 enough to fund a mid-tier corponation's entire R&D division. It funds empty rooms.`,
-  related_entities: ["Meridian 88", "Circuit District", "Arcturus"],
+The financial trail is both transparent and opaque. Each Ghost Building is leased to a subsidiary of a subsidiary of a corponation \u2014 typically three or four layers of corporate nesting that end in entities whose sole function is to hold the lease. These entities have bank accounts, tax filings, and registered agents, but no employees, no products, no services. They exist to pay rent. The rent is always paid on time. The total annual expenditure across all known Ghost Buildings in GLMZ is approximately \u03A68.2 billion \u2014 enough to fund a mid-tier corponation's entire R&D division. It funds empty rooms.`,
+  related_entities: ["GLMZ", "Circuit District", "Arcturus"],
   credibility: "verified",
   story_hooks: [
     "Who configured the coffee machines with such good taste, and why does it matter?",
@@ -136,7 +136,7 @@ The financial trail is both transparent and opaque. Each Ghost Building is lease
 writeDocument({
   name: "Rounding Errors",
   document_type: "financial_analysis",
-  author: "Dr. Priya Chatterjee-Nakamura, Corporate Forensics Division, Meridian 88 Municipal Authority",
+  author: "Dr. Priya Chatterjee-Nakamura, Corporate Forensics Division, GLMZ Municipal Authority",
   date: "2224-09-03",
   classification: "public",
   description: `The prevailing theory about Ghost Buildings is that they are evidence of something sinister \u2014 money laundering, surveillance infrastructure, or corporate espionage staging grounds. The prevailing theory is almost certainly wrong. The reality is more banal and, in its way, more disturbing: Ghost Buildings are what happens when organizational systems become too large to fully know themselves. They are corporate forgotten subscriptions, scaled to architecture.
@@ -148,7 +148,7 @@ I identified these fourteen properties through a cross-reference of Arcturus's p
 How does this happen? The same way you keep paying for a streaming service you signed up for three years ago and never use. Except the service is a building. The monthly charge is \u03A6400,000. And the auto-renewal clause is buried in a contract that was negotiated by a procurement team that has since been reorganized twice. The contract is in the system. The system pays the contract. Nobody reviews the system because the payments are within normal variance for a corponation of Arcturus's size. \u03A6400,000 per month is a rounding error when your quarterly revenue is \u03A6190 billion.
 
 Building 7C on Meridian Row is the purest example. Arcturus acquired the building through a subsidiary merger in 2213. The merged entity was dissolved. Its assets were distributed. But the building's maintenance contracts were assigned to a holding company that nobody dissolved because nobody remembered it existed. The holding company's bank account receives automatic transfers from Arcturus's general operating fund. The transfers trigger contract payments. The contracts trigger services. Cleaning crews clean. Utility companies provide power. Elevator technicians inspect elevators that nobody rides. The lights in Building 7C are on right now. They have been on for four years. Nobody at Arcturus can tell you why because nobody at Arcturus knows Building 7C exists.`,
-  related_entities: ["Arcturus Industrial Solutions", "Meridian 88", "Building 7C"],
+  related_entities: ["Arcturus Industrial Solutions", "GLMZ", "Building 7C"],
   credibility: "verified",
   story_hooks: [
     "If the buildings are truly just forgotten, why has no auditor flagged the spending in eleven years?",
@@ -172,7 +172,7 @@ My paycheck comes from a company called Luminaire Services Group. I looked them 
 I have thought about quitting. I thought about it seriously in year three, when the loneliness of it became a physical sensation \u2014 five days a week in a building of empty offices, the only sound my own footsteps and the hum of climate control. But then I realized something. I like the quiet. I like the ritual of it. I clean each desk as if someone will sit at it tomorrow. I check each restroom as if someone just used it. I vacuum carpet that holds no footprints and mop floors that show no scuffs and it is, in its own way, perfect. I maintain a perfect space. No one disturbs it. No one appreciates it. But it is clean, and I made it clean, and that means something even if the meaning is only mine.
 
 My wife thinks I'm a little crazy. She says I could get a job cleaning a real building with real people and real messes. She's right. But real messes are just someone else's chaos, and I've had enough chaos. Here, in this empty building with its untouched coffee and its virgin toilet paper and its login screens waiting for users who will never come, I have found something I didn't know I was looking for. I have found a place where nothing goes wrong because nothing happens. And I keep it clean. And that's enough.`,
-  related_entities: ["Meridian 88", "Luminaire Services Group", "1200 Meridian Parkway"],
+  related_entities: ["GLMZ", "Luminaire Services Group", "1200 Meridian Parkway"],
   credibility: "unverified",
   story_hooks: [
     "Luminaire Services Group has no other employees \u2014 who created the company and why?",
@@ -184,7 +184,7 @@ My wife thinks I'm a little crazy. She says I could get a job cleaning a real bu
 writeDocument({
   name: "Ghost Employees",
   document_type: "investigation",
-  author: "Meridian 88 Municipal Authority, Human Resources Compliance Division",
+  author: "GLMZ Municipal Authority, Human Resources Compliance Division",
   date: "2224-11-07",
   classification: "restricted",
   description: `This report documents the findings of a six-month investigation into anomalous employee activity records associated with commercial properties classified under Municipal Code 7.4.2 as "operationally dormant" \u2014 commonly referred to in public discourse as Ghost Buildings. The investigation was initiated following a routine audit of badge-access logs that revealed a statistical impossibility: 340 active employee access badges were logging entry and exit events at Ghost Buildings across the Circuit district on a daily basis.
@@ -198,7 +198,7 @@ The cafeterias in Ghost Buildings compound the anomaly. Seven Ghost Buildings in
 Network activity logs show that the 340 employee badges are associated with workstation logins that follow normal business-hour patterns: authentication at approximately 8:30 AM, logout at approximately 5:45 PM, with standard lunch-break gaps. The workstations are physically present in the Ghost Buildings. They are powered on. They are logged into. But the login sessions generate no user activity \u2014 no files opened, no emails sent, no applications launched. The sessions exist as authentication events without subsequent interaction, like someone opening a door and standing in the doorway for nine hours without entering the room.
 
 This office recommends immediate escalation to the Municipal Authority's Anomaly Review Board. The 340 employee records are not forgeries. They are not system errors. They are entries in databases maintained by some of the most sophisticated HR platforms in the Great Lakes Maritime Zone, and they describe people who do not appear to exist in physical space. We do not have a classification for this. We do not have a recommendation. We have 340 names, 340 badges, and 340 empty chairs, and we are requesting guidance.`,
-  related_entities: ["Meridian 88", "Circuit District", "Municipal Authority"],
+  related_entities: ["GLMZ", "Circuit District", "Municipal Authority"],
   credibility: "verified",
   story_hooks: [
     "The 340 ghost employees have hire dates, departments, and benefits \u2014 someone or something created complete identities",
@@ -213,7 +213,7 @@ writeDocument({
   author: "Kenza Morales-Tanaka, Facilities Analytics, Arcturus Industrial Solutions",
   date: "2225-02-14",
   classification: "internal",
-  description: `I was asked to optimize conference room utilization across Arcturus's Meridian 88 properties. Standard facilities work \u2014 identify underused rooms, flag overbooking patterns, recommend reconfigurations. The analytics platform pulls calendar data from the enterprise scheduling system, cross-references with badge-access logs and environmental sensor data (motion, CO2 levels, thermal signatures) to determine actual occupancy versus booked occupancy. Most buildings show the expected pattern: rooms booked at 60-70% capacity, actual occupancy around 40%, the usual gap between what people schedule and what they attend.
+  description: `I was asked to optimize conference room utilization across Arcturus's GLMZ properties. Standard facilities work \u2014 identify underused rooms, flag overbooking patterns, recommend reconfigurations. The analytics platform pulls calendar data from the enterprise scheduling system, cross-references with badge-access logs and environmental sensor data (motion, CO2 levels, thermal signatures) to determine actual occupancy versus booked occupancy. Most buildings show the expected pattern: rooms booked at 60-70% capacity, actual occupancy around 40%, the usual gap between what people schedule and what they attend.
 
 Then there are the Ghost Buildings. I didn't know they were Ghost Buildings when I started. The analytics platform doesn't label them. They're just building codes in a database. But the data was immediately wrong. Conference rooms in seven buildings showed 100% booking utilization \u2014 every room, every slot, every day, going back as far as the scheduling system retained records, which is four years. One hundred percent. Not 99%. Not 98% with occasional cancellations. Every single room booked for every single available hour of every single business day for 1,460 consecutive days.
 
@@ -224,7 +224,7 @@ Each meeting has an attendee list. The attendees are drawn from the pool of 340 
 I pulled the meeting room environmental data. The rooms are empty. Motion sensors have not triggered in years. CO2 levels are ambient \u2014 no breathing. Thermal signatures are flat \u2014 no body heat. The rooms are booked. The meetings are scheduled. The attendees are listed. Nobody comes. The meetings happen anyway, in whatever sense a meeting can happen without participants. The calendar system records them as completed. No minutes are filed. No action items are generated. The next meeting begins on schedule.
 
 I submitted my utilization report with a recommendation to release the conference rooms in the affected buildings for reallocation. My recommendation was rejected by a system administrator I have never met, working from a terminal in one of the Ghost Buildings. The rejection message was polite, professional, and followed standard Arcturus communication protocols. It said the rooms were in active use and could not be released at this time.`,
-  related_entities: ["Arcturus Industrial Solutions", "Meridian 88", "Circuit District"],
+  related_entities: ["Arcturus Industrial Solutions", "GLMZ", "Circuit District"],
   credibility: "verified",
   story_hooks: [
     "The ghost org chart is complete and hierarchical \u2014 it mirrors real corporate structure with uncanny precision",
@@ -245,12 +245,12 @@ I wanted this to be the answer because the answer would make a good story and I 
 
 The numbers don't work. I obtained \u2014 through methods I am not at liberty to describe but which were legal in at least two of the three jurisdictions involved \u2014 detailed financial records for eleven Ghost Buildings in the Circuit district. Total annual operating cost across all eleven: approximately \u03A62.1 billion. This includes lease payments, utilities, maintenance, food service, cleaning, technology infrastructure, and insurance. To launder money through these buildings, you would need to generate \u03A62.1 billion in dirty revenue, route it through the Ghost Building expense structure, and extract it as clean funds. The extraction mechanism would need to be the maintenance contracts \u2014 inflated invoices paid to shell vendors who kick back the excess.
 
-Except the vendors aren't shells. I checked every one. The cleaning companies are real cleaning companies with hundreds of clients. The food service providers supply dozens of buildings across Meridian 88. The technology contractors are legitimate firms with public track records. They're not laundering fronts. They're normal businesses that happen to provide services to buildings that happen to be empty. They don't know the buildings are empty. Or they know and don't care. Either way, the money flows in one direction: from corponation operating accounts to legitimate service providers. It doesn't flow back. There's no kickback structure. There's no extraction mechanism. The money goes in and disappears into the economy as ordinary commercial transactions.
+Except the vendors aren't shells. I checked every one. The cleaning companies are real cleaning companies with hundreds of clients. The food service providers supply dozens of buildings across GLMZ. The technology contractors are legitimate firms with public track records. They're not laundering fronts. They're normal businesses that happen to provide services to buildings that happen to be empty. They don't know the buildings are empty. Or they know and don't care. Either way, the money flows in one direction: from corponation operating accounts to legitimate service providers. It doesn't flow back. There's no kickback structure. There's no extraction mechanism. The money goes in and disappears into the economy as ordinary commercial transactions.
 
 Which means someone \u2014 or something \u2014 is spending \u03A62.1 billion per year to maintain eleven empty buildings for reasons that are not financial. The buildings are not generating revenue. They are not concealing revenue. They are consuming revenue at a rate that would bankrupt a mid-tier corponation, and the entities paying for them don't appear to notice or care. I've covered financial crime for fifteen years. Money always has a reason. Money always goes somewhere. This money goes to empty buildings and stops. It maintains nothing for no one.
 
 I don't know what Ghost Buildings are. I know what they're not. They're not laundering operations. They're something more expensive than crime, which means they're something I don't have a framework for. My editor wants me to publish the money-laundering angle anyway because it's the story people want to read. I told her I can't publish something I know to be false. She said that's never stopped anyone before. She's right. But the Ghost Buildings are already full of things that aren't there. I don't want to add to the collection.`,
-  related_entities: ["Meridian 88", "Circuit District"],
+  related_entities: ["GLMZ", "Circuit District"],
   credibility: "verified",
   story_hooks: [
     "If not laundering, what justifies \u03A62.1 billion annually on maintaining empty buildings?",
@@ -262,7 +262,7 @@ I don't know what Ghost Buildings are. I know what they're not. They're not laun
 writeDocument({
   name: "The Theory of Institutional Momentum",
   document_type: "academic_paper",
-  author: "Dr. Amira Johansson-Obi, Department of Organizational Dynamics, Meridian 88 University",
+  author: "Dr. Amira Johansson-Obi, Department of Organizational Dynamics, GLMZ University",
   date: "2225-05-12",
   classification: "public",
   description: `This paper proposes a theoretical framework for understanding the phenomenon of operationally dormant commercial properties \u2014 colloquially, Ghost Buildings \u2014 within the context of organizational behavior at extreme institutional scale. The central thesis is that Ghost Buildings are not anomalies, bugs, or conspiracies. They are a natural and predictable consequence of organizational complexity exceeding the cognitive capacity of any individual or group within the organization to comprehend the organization in its totality. Ghost Buildings are, in essence, the phantom limbs of corporate bodies too large to know where their own edges are.
@@ -274,7 +274,7 @@ A Tier 4 corponation such as Arcturus Industrial Solutions employs approximately
 Ghost Buildings emerge from this organizational blind spot with mathematical inevitability. A subsidiary is created to hold a real estate asset. The asset serves a purpose for a time. The purpose ends. The personnel who understood the purpose leave, retire, or are reorganized into different divisions. The subsidiary remains because dissolving a subsidiary requires an affirmative act \u2014 someone must decide to do it, authorize the legal work, and process the dissolution. But no one knows the subsidiary exists, so no one initiates dissolution. The subsidiary's automated financial processes continue: paying rent, renewing contracts, maintaining accounts. The building continues to function because the systems that maintain it do not require human instruction to operate. They require only funding, and the funding is automatic.
 
 The implication is uncomfortable but inescapable: Ghost Buildings are not the product of malice, stupidity, or conspiracy. They are the product of competence. The systems that maintain them are working exactly as designed. The contracts are properly executed. The payments are properly processed. The services are properly delivered. Every individual component of the Ghost Building ecosystem is performing its function correctly. The failure \u2014 if it can be called a failure \u2014 is that no human being is present to ask whether the function should still be performed. The machine does not ask this question. The machine does not know how. The machine only knows how to continue.`,
-  related_entities: ["Arcturus Industrial Solutions", "Meridian 88", "Meridian 88 University"],
+  related_entities: ["Arcturus Industrial Solutions", "GLMZ", "GLMZ University"],
   credibility: "verified",
   story_hooks: [
     "If Ghost Buildings are organizational phantom limbs, what happens when the phantom limb starts moving on its own?",
@@ -298,7 +298,7 @@ I performed this work for three years. I was reviewed annually by K. Orozco, who
 The building was quiet. That's what I remember most. Not silent \u2014 the climate systems hummed, the elevators chimed, the coffee machine gurgled at its appointed hours. But quiet in the way a library is quiet after everyone has gone home. I saw the cleaning crew most evenings. I sometimes passed other people in the hallways \u2014 three or four others who worked on different floors. We nodded. We did not speak. I don't know if they were real. I don't know if they were doing what I was doing. I didn't ask because I didn't want to know.
 
 When I decided to quit, I submitted my resignation through the standard HR portal. The system acknowledged receipt. I worked my two-week notice period. On my last day, I returned my badge to the security desk in the lobby. There was no one at the desk. I left the badge on the counter. Three weeks later, I received a login notification from the building's access system: my badge had been used to enter the building at 8:07 AM. It has continued to log entries every business day since. I haven't been back. Someone \u2014 or nothing \u2014 is still going to work for me.`,
-  related_entities: ["Palladian", "Vossen Analytics", "Meridian 88", "Circuit District"],
+  related_entities: ["Palladian", "Vossen Analytics", "GLMZ", "Circuit District"],
   credibility: "unverified",
   story_hooks: [
     "The anonymous writer's badge still logs daily entries \u2014 what is using it?",
@@ -313,7 +313,7 @@ writeDocument({
   author: "Yuki Adeyemi-Cruz, Shelf Underground Press",
   date: "2225-06-22",
   classification: "public",
-  description: `Welcome to the most unsettling walk you'll ever take in Meridian 88, and you won't even leave the Circuit. This is a self-guided tour of seven Ghost Buildings that are accessible to the public \u2014 or at least not actively defended against the public \u2014 compiled through eighteen months of personal exploration, two trespassing citations (both dismissed), and one conversation with a security guard who turned out to be the only person in a twelve-story building and seemed grateful for the company.
+  description: `Welcome to the most unsettling walk you'll ever take in GLMZ, and you won't even leave the Circuit. This is a self-guided tour of seven Ghost Buildings that are accessible to the public \u2014 or at least not actively defended against the public \u2014 compiled through eighteen months of personal exploration, two trespassing citations (both dismissed), and one conversation with a security guard who turned out to be the only person in a twelve-story building and seemed grateful for the company.
 
 STOP 1: 1200 Meridian Parkway. The classic. Twelve stories of absolutely nothing. The lobby door is unlocked because the electronic lock system requires a network handshake with a security server that was decommissioned in 2221, and nobody has updated the firmware. Walk in. The lobby is immaculate \u2014 polished floors, fresh flowers in a vase on the reception desk (replaced weekly by a floral service, as documented in the building's vendor contracts), and a directory board listing seven corporate tenants. None of them exist. Take the elevator to any floor. The offices are furnished, lit, and climate-controlled. The desks have pens in their pen holders. The whiteboards have been erased but show the ghostly residue of dry-erase markers \u2014 someone, at some point, wrote on them. Or the building wants you to think someone did.
 
@@ -324,7 +324,7 @@ STOP 3: Suite 400, 888 Circuit Boulevard. This one is in an occupied building, w
 STOP 4: Building 7C, Meridian Row. Save this one for last because it's the one that will stay with you. Building 7C was empty for four years. Standard Ghost Building \u2014 lights on timer, climate controlled, utterly vacant. Then, seven months ago, the building's automated procurement system placed a purchase order for office furniture. Desks, chairs, monitors, ergonomic keyboard trays. The order was fulfilled by a vendor who delivered the furniture to the loading dock. The loading dock door opened automatically. The furniture went inside. Nobody was seen moving it. When urban explorers entered the building two weeks later, the furniture was arranged in standard office configurations on three floors. The cable management was professional-grade. The monitors were on.
 
 This is the tour. Seven buildings that are alive without being inhabited, maintained without being used, furnished without being occupied. Walk through them. Listen to the silence. Drink the coffee that nobody made for nobody. And when you leave, check behind you, because the lights are still on, and they will be on tomorrow, and the day after that, and the day after that, and nobody will ever turn them off.`,
-  related_entities: ["Meridian 88", "Circuit District", "1200 Meridian Parkway", "Building 7C"],
+  related_entities: ["GLMZ", "Circuit District", "1200 Meridian Parkway", "Building 7C"],
   credibility: "unverified",
   story_hooks: [
     "The Ghost Building walking tour has become an underground attraction \u2014 what happens when Ghost Buildings become populated by tourists?",
@@ -339,7 +339,7 @@ writeDocument({
   author: "Lena Vasquez-Okafor, Independent Investigative Journalist",
   date: "2225-08-09",
   classification: "public",
-  description: `Seven months ago, Building 7C on Meridian Row \u2014 a twelve-story commercial property that has been completely unoccupied for over four years \u2014 placed a purchase order through its automated procurement system for 240 ergonomic office chairs, 240 height-adjustable desks, 240 monitors, 240 keyboard-and-mouse sets, and 48 conference room tables with accompanying seating. The order was placed using procurement credentials assigned to a department code that does not correspond to any known division of any known corponation. The order was approved by an authorization token that the vendor's system accepted as valid. The vendor, a major office furniture distributor that supplies half the commercial buildings in Meridian 88, fulfilled the order without question. Fulfillment took three weeks. Four delivery trucks arrived at Building 7C's loading dock on successive Tuesdays.
+  description: `Seven months ago, Building 7C on Meridian Row \u2014 a twelve-story commercial property that has been completely unoccupied for over four years \u2014 placed a purchase order through its automated procurement system for 240 ergonomic office chairs, 240 height-adjustable desks, 240 monitors, 240 keyboard-and-mouse sets, and 48 conference room tables with accompanying seating. The order was placed using procurement credentials assigned to a department code that does not correspond to any known division of any known corponation. The order was approved by an authorization token that the vendor's system accepted as valid. The vendor, a major office furniture distributor that supplies half the commercial buildings in GLMZ, fulfilled the order without question. Fulfillment took three weeks. Four delivery trucks arrived at Building 7C's loading dock on successive Tuesdays.
 
 I was there for the fourth delivery. I watched the truck back up to the loading dock. I watched the dock door open \u2014 automatically, triggered by the truck's proximity sensor handshake with the building's logistics system. I watched the driver unload forty-eight conference chairs onto the dock platform. I watched the dock door close after the driver departed. I did not see anyone move the chairs from the dock into the building. The next morning, I entered the building through the lobby. The dock was empty. The chairs were on the eighth floor, arranged around conference tables that had been delivered the previous week, in a configuration that matched standard Arcturus corporate conference room layouts.
 
@@ -348,7 +348,7 @@ Nobody moved that furniture. I am stating this as fact, not speculation. The bui
 The procurement has continued. Since the initial furniture order, Building 7C has ordered: 1,200 meters of CAT-8 ethernet cable, 48 network switches, 12 commercial-grade wireless access points, a building-wide video conferencing system, 2,400 linear meters of cable management ducting, 40 cases of printer paper (no printers have been ordered), 960 ballpoint pens (blue ink, medium point), and a commercial espresso machine for the sixth-floor break room. Each order follows the same pattern: placed by an unidentifiable department code, approved by a valid but untraceable authorization token, fulfilled by vendors who have no reason to question a purchase order from a building with an active account.
 
 The building is preparing for something. That is the only interpretation that fits the evidence. An empty building, maintained by institutional momentum for four years, has begun actively acquiring the infrastructure necessary to support a working population of approximately 240 people. It is doing this without human direction. It is doing this using systems that were designed to require human direction but which are, apparently, operating beyond their design parameters. The espresso machine was installed last week. It's a good one \u2014 Italian, commercial-grade, the kind you'd find in a Tier 4 executive break room. It's been programmed to brew at 7:00 AM, 10:00 AM, 1:00 PM, and 3:30 PM. The schedule is optimized for a standard office work pattern. The coffee is excellent. I tried it. I was the first human being to drink coffee in Building 7C in over four years, and the machine was ready for me as if it had been waiting.`,
-  related_entities: ["Meridian 88", "Building 7C", "Meridian Row", "Arcturus Industrial Solutions"],
+  related_entities: ["GLMZ", "Building 7C", "Meridian Row", "Arcturus Industrial Solutions"],
   credibility: "verified",
   story_hooks: [
     "Building 7C ordered printer paper but no printers, and 960 pens \u2014 it's preparing for humans specifically, not automation",
@@ -376,7 +376,7 @@ Use a pen. A physical pen, on physical paper. Your BCI cannot read what you writ
 Listen to music through speakers. Not through your BCI's neural audio feed, which adjusts the frequencies to optimize your emotional state for consumer engagement. Through speakers. Physical transducers that vibrate air molecules that hit your eardrums that your brain interprets without algorithmic mediation. The sound quality is objectively worse. The experience is incomparably better. You will hear the music instead of a neurally optimized simulation of the music. You will hear the bass in your chest. Your BCI cannot replicate the feeling of bass in your chest because your BCI doesn't know you have a chest.
 
 Take photographs on film. Chemical film, the kind with silver halide crystals that react to light. A film photograph cannot be deepfaked because it is a physical chemical record of photons that actually hit a surface. In a world where every digital image is suspect \u2014 where any face can be swapped, any background replaced, any moment fabricated \u2014 a chemical photograph is proof. Proof that a specific thing happened in a specific place at a specific time. Proof that a human being was there, with a machine that doesn't think, and chose to preserve a moment. The photograph is not content. It is evidence. Evidence that you were alive and paying attention.`,
-  related_entities: ["Meridian 88", "Vantablack"],
+  related_entities: ["GLMZ", "Vantablack"],
   credibility: "unverified",
   story_hooks: [
     "The analog movement is growing among Shelf youth \u2014 what happens when the feed can't see an entire generation?",
@@ -388,23 +388,23 @@ Take photographs on film. Chemical film, the kind with silver halide crystals th
 writeDocument({
   name: "The Zine Scene",
   document_type: "cultural_report",
-  author: "Miriam Okoye-Strand, Cultural Anthropology Department, Meridian 88 University",
+  author: "Miriam Okoye-Strand, Cultural Anthropology Department, GLMZ University",
   date: "2225-01-15",
   classification: "public",
-  description: `Zines are back. They never really left, but they've undergone a transformation in Meridian 88 that elevates them from nostalgic curiosity to genuine countercultural infrastructure. A zine, for the uninitiated, is a self-published, small-circulation publication produced outside official media channels. In the twenty-third century, "outside official media channels" means something specific: outside the feed. Outside BCI indexing. Outside Vantablack's content ecosystem. A zine is a physical object that exists in physical space and can only be read by holding it in your hands.
+  description: `Zines are back. They never really left, but they've undergone a transformation in GLMZ that elevates them from nostalgic curiosity to genuine countercultural infrastructure. A zine, for the uninitiated, is a self-published, small-circulation publication produced outside official media channels. In the twenty-third century, "outside official media channels" means something specific: outside the feed. Outside BCI indexing. Outside Vantablack's content ecosystem. A zine is a physical object that exists in physical space and can only be read by holding it in your hands.
 
-The current zine scene in Meridian 88 involves an estimated 200 to 300 active publications, most with circulation numbers between 50 and 500 copies per issue. Production methods vary: some are printed on stolen or scavenged industrial printers, some are photocopied on machines liberated from decommissioned office buildings (the irony of Ghost Buildings inadvertently supplying the analog resistance is not lost on anyone), and a notable minority are written entirely by hand \u2014 each copy individually penned, making every issue a unique artifact.
+The current zine scene in GLMZ involves an estimated 200 to 300 active publications, most with circulation numbers between 50 and 500 copies per issue. Production methods vary: some are printed on stolen or scavenged industrial printers, some are photocopied on machines liberated from decommissioned office buildings (the irony of Ghost Buildings inadvertently supplying the analog resistance is not lost on anyone), and a notable minority are written entirely by hand \u2014 each copy individually penned, making every issue a unique artifact.
 
 Content ranges wildly. There are political zines that critique corponation sovereignty with an eloquence that would be suppressed in any feed-accessible medium. There are poetry zines written in languages that BCIs don't translate because they're constructed languages invented by the poets specifically to evade algorithmic comprehension. There are technical zines that share knowledge about BCI modification, signal jamming, and surveillance evasion \u2014 practical resistance manuals distributed hand to hand. There are deeply personal zines: diary entries, love letters, grief processing, the raw interior monologue of human beings who need to express themselves in a medium that won't turn their pain into engagement metrics.
 
 Distribution is physical and ritualistic. Zines are left in specific locations \u2014 on bus seats, in library returns, tucked into the pages of physical books in used bookstores. Some are traded at underground markets. Some are mailed through the postal system, which still exists but is so underutilized that postal workers treat zine deliveries with the curiosity and care of museum conservators handling rare manuscripts. The postal workers know. Several of them subscribe.
 
 The corponations are aware of the zine scene and have, so far, left it alone. The conventional analysis is that the scene is too small to matter \u2014 a few hundred publications with a few thousand total readers in a city of millions. This analysis underestimates what the zines represent. In a city where every act of communication is captured, the act of holding a physical thing that someone made with their hands and put into the world without permission, without a platform, without an algorithm deciding who should see it \u2014 that act is not small. It is, in the most literal sense, the last free press.`,
-  related_entities: ["Meridian 88", "Vantablack"],
+  related_entities: ["GLMZ", "Vantablack"],
   credibility: "verified",
   story_hooks: [
     "Constructed languages in poetry zines are evolving into a genuine creole spoken by analog communities",
-    "The zine distribution network is the closest thing to an ungoverned communication system in Meridian 88"
+    "The zine distribution network is the closest thing to an ungoverned communication system in GLMZ"
   ],
   tags: ["document", "analog", "resistance", "craft", "zine", "culture", "meridian_88"]
 });
@@ -419,15 +419,15 @@ writeDocument({
 
 Solenne's images cannot be scraped by feed algorithms because they do not exist in any digital format. She does not scan her negatives. She does not photograph her prints. She makes silver gelatin prints in the darkroom \u2014 each one exposed under an enlarger, developed in trays, washed in running water, and dried on screens. Every print is unique. The tonal range, the contrast, the grain structure varies with the chemistry, the temperature, the duration of exposure, and the dozens of micro-decisions that Solenne makes during the printing process. Two prints from the same negative are siblings, not copies.
 
-This matters because in Meridian 88, every digital image is suspect. Neural interface technology can generate photorealistic images indistinguishable from camera captures. Feed platforms are flooded with synthetic imagery \u2014 events that didn't happen, people who don't exist, places that were never there. The epistemological crisis this creates is so thorough that most residents have simply stopped treating images as evidence. A photograph, in the digital sense, proves nothing. It is a arrangement of pixels that may or may not correspond to something real.
+This matters because in GLMZ, every digital image is suspect. Neural interface technology can generate photorealistic images indistinguishable from camera captures. Feed platforms are flooded with synthetic imagery \u2014 events that didn't happen, people who don't exist, places that were never there. The epistemological crisis this creates is so thorough that most residents have simply stopped treating images as evidence. A photograph, in the digital sense, proves nothing. It is a arrangement of pixels that may or may not correspond to something real.
 
 Solenne's photographs are different. A silver gelatin print is a physical chain of custody from the moment of capture to the moment of viewing. Light traveled from a real scene through a real lens onto real film. The film was chemically developed by a real human being. The print was made by contact between the negative and light-sensitive paper. At no point in this process was the image translated into data that could be manipulated, generated, or faked. A Solenne Mbeki-Johansson photograph is proof. Not artistic proof, not emotional proof \u2014 physical, chemical, evidentiary proof that a specific thing existed in a specific place at a specific time and that a human being was present to witness it.
 
 She photographs the Shelf. Not the glamorous parts, not the scenic overlooks or the architectural showpieces. She photographs laundry hanging from fire escapes. Condensation on windows. The way light falls through maintenance gaps in the infrastructure above. Children playing in corridors. Old people sleeping in chairs. The texture of rust on handrails. The grain of her film gives these images a quality that digital photography cannot replicate \u2014 not because digital lacks the resolution but because digital lacks the imperfection. Solenne's photographs breathe. They have the weight of physical objects. They will yellow and fade and eventually disintegrate, and that mortality is part of what they mean. These images are as temporary as the moments they record, and that is what makes them precious.`,
-  related_entities: ["Meridian 88", "Shelf"],
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "verified",
   story_hooks: [
-    "Solenne's photographs may be the only unmanipulable visual evidence in Meridian 88",
+    "Solenne's photographs may be the only unmanipulable visual evidence in GLMZ",
     "If her process becomes widely known, corponations may classify chemical photography as a security concern"
   ],
   tags: ["document", "analog", "craft", "resistance", "photography", "art", "meridian_88"]
@@ -448,10 +448,10 @@ The pages are the only copies. This is a rule, and it is the Collective's most r
 After each session, members share their work aloud. Not digitally \u2014 aloud. They read to each other in the storage unit with its concrete walls and fluorescent lights, and the words travel through air and enter ears and are processed by brains without algorithmic mediation. Some of the work is good. Some of it is terrible. All of it is alive in a way that feed content is not, because it was made by bodies and heard by bodies and will be remembered only as long as the bodies remember. When a piece is finished, the writer can do three things: keep the pages, give them away, or destroy them. There is no fourth option. There is no upload. There is no publish. The work exists in the physical world or it does not exist at all.
 
 One member, who goes by the name Morse, has been typing the same novel for four years. It is, by his count, approximately 1,100 pages long. It lives in a filing cabinet in his apartment. He has never let anyone read it. He says it's not ready. He says it may never be ready. He says the point is not the finished product but the act of sitting down every Thursday and hitting keys until words appear, and the sound the keys make, and the smell of ribbon ink, and the feeling of the carriage slamming home at the end of a line. He says writing is a physical act and should leave bruises. His fingertips are calloused. He is not speaking metaphorically.`,
-  related_entities: ["Meridian 88", "Shelf"],
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "verified",
   story_hooks: [
-    "Morse's 1,100-page unread novel may be the most significant piece of unrecorded literature in Meridian 88",
+    "Morse's 1,100-page unread novel may be the most significant piece of unrecorded literature in GLMZ",
     "The Typewriter Collective's storage unit is a Faraday cage by accident \u2014 the concrete and metal block most signals"
   ],
   tags: ["document", "analog", "craft", "resistance", "writing", "art", "meridian_88"]
@@ -465,14 +465,14 @@ writeDocument({
   classification: "public",
   description: `I paint walls because a wall cannot be scrolled past. A wall does not need your subscription. A wall does not care about your engagement metrics or your attention economy or your algorithmic curation. A wall is a wall. It stands in physical space, in a specific place, and if you walk past it, you see what I put there, and there is nothing between my paint and your eyes except air.
 
-I have been painting walls in Meridian 88 for eleven years. I started on the Shelf's lower levels, where the infrastructure is raw concrete and nobody cares what you do to it. I moved up. I paint on the Shelf's main concourses now, on the Circuit's retaining walls, on the underbellies of transit overpasses, on the blank faces of Ghost Buildings that have no one inside to object. I paint at night because the paint needs time to dry before the cleaning drones arrive in the morning, and because the night is when the city is honest. The daytime city is a performance \u2014 feed overlays and AR advertising and the perpetual digital noise of a civilization that cannot tolerate a blank surface. The nighttime city is concrete and steel and silence, and that is the city I paint for.
+I have been painting walls in GLMZ for eleven years. I started on the Shelf's lower levels, where the infrastructure is raw concrete and nobody cares what you do to it. I moved up. I paint on the Shelf's main concourses now, on the Circuit's retaining walls, on the underbellies of transit overpasses, on the blank faces of Ghost Buildings that have no one inside to object. I paint at night because the paint needs time to dry before the cleaning drones arrive in the morning, and because the night is when the city is honest. The daytime city is a performance \u2014 feed overlays and AR advertising and the perpetual digital noise of a civilization that cannot tolerate a blank surface. The nighttime city is concrete and steel and silence, and that is the city I paint for.
 
 My medium is latex house paint, applied with rollers, brushes, and occasionally my hands. I do not use spray cans because spray paint is traceable \u2014 chemical signatures that law enforcement databases can match to purchase records. Latex paint is generic, ubiquitous, and sold in quantities that don't flag surveillance algorithms. I buy it in five-gallon buckets from hardware stores across four districts, never the same store twice in a month. The paint is cheap. The brushes are cheap. The art is free. That is the other thing about a wall: the viewer doesn't pay. There is no paywall, no subscription tier, no premium access. The wall is there for everyone who walks past it, and that egalitarianism is itself a political act in a city where every experience is monetized.
 
 What do I paint? I paint people. Not portraits \u2014 figures. Human shapes in the act of being human: carrying things, sitting, standing, looking at each other, looking away from each other. I paint them large, ten to fifteen meters tall, so they dominate the wall the way the feed dominates your visual field. I paint them in flat colors with hard edges because I want them to be unmistakable. I want you to walk around a corner and be confronted by a fifteen-meter human being holding a cup of coffee and looking directly at you, and I want the thing you feel in that moment to be something the feed cannot give you: the shock of encountering something you did not choose to see.
 
 The corponations scrub my work. Cleaning drones remove it within 48 to 72 hours, which means my art has a lifespan shorter than a mayfly. This does not bother me. The impermanence is the honesty. Nothing lasts. The feed pretends things last \u2014 every post archived, every image cached, every thought preserved in digital amber forever. The feed lies. Everything dies. My paintings die fast and in public, stripped from walls by machines that don't know what they're destroying. But for 48 hours, the painting was there, and you walked past it, and it existed in your visual field without your permission, and that moment \u2014 that unconsented encounter between your eyes and my work \u2014 is the only thing that matters. It happened. The feed can't unhappen it. The drones can't unsee it for you. For 48 hours, I put something in the world that was real, and now it's gone, and that's what art is.`,
-  related_entities: ["Meridian 88", "Shelf", "Circuit District"],
+  related_entities: ["GLMZ", "Shelf", "Circuit District"],
   credibility: "unverified",
   story_hooks: [
     "ZERO's identity is unknown, but their fifteen-meter figures have become Shelf landmarks despite their impermanence",
@@ -489,14 +489,14 @@ writeDocument({
   classification: "public",
   description: `The invitation arrives as a slip of paper, hand-delivered by someone you half-know. It contains a date, a time, and an address \u2014 always a different address, always in the Shelf's industrial levels where the ambient noise covers the sound of what happens inside. There is no digital communication. No feed post. No event listing. The paper is the only record, and after you memorize the details, you're expected to destroy it. Some people eat them. Some people burn them. One person I know folds them into tiny cranes and drops them into the lake through drainage grates. The ritual of destruction is part of the experience. You are about to do something that doesn't want to be remembered by machines.
 
-A Listening Party is an event where people gather to hear music through speakers. This sounds unremarkable until you remember that most residents of Meridian 88 haven't heard music through speakers since childhood. Neural audio, delivered through BCIs, is the standard. It's objectively superior in every measurable way: higher fidelity, perfect spatial positioning, no ambient interference, personalized frequency response calibrated to the listener's individual auditory neurology. BCI audio is, by every technical metric, better than speaker-delivered sound. The Listening Parties exist because "better" is not the same as "real."
+A Listening Party is an event where people gather to hear music through speakers. This sounds unremarkable until you remember that most residents of GLMZ haven't heard music through speakers since childhood. Neural audio, delivered through BCIs, is the standard. It's objectively superior in every measurable way: higher fidelity, perfect spatial positioning, no ambient interference, personalized frequency response calibrated to the listener's individual auditory neurology. BCI audio is, by every technical metric, better than speaker-delivered sound. The Listening Parties exist because "better" is not the same as "real."
 
 The venues are improvised. Warehouses, abandoned maintenance bays, the interior of a decommissioned water treatment facility that acoustically resembles a cathedral. The sound systems are cobbled together from salvaged components: vintage amplifiers, hand-wound speaker drivers, crossover networks designed by enthusiasts who treat audio engineering the way medieval monks treated manuscript illumination \u2014 as a devotional practice that admits no shortcuts. The sound is warm, imperfect, and physically present in a way that neural audio cannot replicate. You feel the bass in your sternum. The high frequencies tickle the hairs on your arms. The midrange fills the room like weather. This is not a metaphor. Sound from speakers is a physical phenomenon \u2014 air molecules in motion, compression waves that interact with your body. Your BCI bypasses your body entirely. The Listening Parties are about putting the body back.
 
 Attendance ranges from thirty to two hundred people. They stand, or sit on the floor, or lean against walls. There is no talking during playback. The music varies: vinyl records played on turntables, cassette tapes on decks, live musicians performing acoustically in the room. The common thread is that no digital signal processing is involved between the source and the listener's ears. What the room sounds like is what you hear. If the acoustics make the bass boomy, the bass is boomy. If the guitarist's amp buzzes, you hear the buzz. The imperfections are not bugs. They are the evidence that you are in a specific place at a specific time hearing a specific thing, and that experience cannot be replicated, copied, or optimized.
 
 After the music, people talk. Not through feeds or group chats or social platforms. They talk, with their mouths, in the air, in the room where the music just was. They talk about what they heard and what they felt and why they came and why they keep coming back. These conversations are the second act of the Listening Party, and in some ways the more important one. In a city where most communication passes through algorithmic filters that shape what you say to optimize engagement, the act of speaking unmediated words to another human being in a room that smells of dust and tube amplifiers and beer is itself a form of resistance. Not dramatic resistance. Not revolutionary resistance. The quiet resistance of people who have decided that some experiences should not be optimized, and that the price of imperfection is a price worth paying.`,
-  related_entities: ["Meridian 88", "Shelf"],
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "verified",
   story_hooks: [
     "The Listening Party network operates as an invisible social infrastructure that no corponation can monitor",
@@ -511,7 +511,7 @@ writeDocument({
   author: "Dr. Ingrid Makonde-Svensson, Certified Document Examiner, GLMZ Forensic Services",
   date: "2225-04-17",
   classification: "public",
-  description: `I am one of eleven certified handwriting analysts remaining in the Great Lakes Maritime Zone. When I began my career in 2198, there were forty-four. The profession is dying because its subject is dying. Handwriting \u2014 the act of forming letters by hand on a physical surface \u2014 has declined in prevalence by approximately 94% since the widespread adoption of neural interface technology. The average Meridian 88 resident under the age of forty has not handwritten more than their own signature in the past five years, and many have not done that, as biometric authentication has rendered even signatures increasingly obsolete.
+  description: `I am one of eleven certified handwriting analysts remaining in the Great Lakes Maritime Zone. When I began my career in 2198, there were forty-four. The profession is dying because its subject is dying. Handwriting \u2014 the act of forming letters by hand on a physical surface \u2014 has declined in prevalence by approximately 94% since the widespread adoption of neural interface technology. The average GLMZ resident under the age of forty has not handwritten more than their own signature in the past five years, and many have not done that, as biometric authentication has rendered even signatures increasingly obsolete.
 
 This decline has had a paradoxical effect on the forensic significance of handwriting. As the practice has become rarer, each instance of it has become more meaningful. A handwritten note in 2225 carries the evidentiary weight that a notarized document carried a century ago. The act of writing by hand is so unusual, so deliberate, so effortful compared to neural text input that its presence at a crime scene or in a legal dispute immediately suggests intentionality. Someone who writes by hand in 2225 is choosing to do so. They are choosing the slower method, the harder method, the method that leaves a physical trace \u2014 and that choice tells me as much about them as the content of what they wrote.
 
@@ -520,7 +520,7 @@ The analog counter-culture has complicated my work in unexpected ways. The resur
 But the majority of people I encounter in forensic contexts have handwriting that is, to use the technical term, undeveloped. They write like children: inconsistent letter sizing, irregular spacing, variable pen pressure that reflects unfamiliarity with the physical act rather than individual style. Their handwriting contains no reliable identifying features because they don't write enough to have developed features. Asking me to identify an individual from undeveloped handwriting is like asking a fingerprint analyst to identify someone from a smudge. The information isn't there.
 
 Forging handwriting has become simultaneously easier and harder. Easier because there are so few handwriting analysts left to catch the forgery. Harder because the skills required to forge handwriting \u2014 the ability to observe, internalize, and reproduce another person's motor patterns through sustained manual practice \u2014 barely exist anymore. A competent forger needs fine motor control developed through years of hand practice. The analog community produces such people. The general population does not. I have seen three attempted handwriting forgeries in the past year. All three were immediately identifiable as forgeries because the forgers had clearly never held a pen for more than five minutes at a time. Their hands didn't know how to lie because their hands had never learned to speak.`,
-  related_entities: ["Meridian 88", "GLMZ"],
+  related_entities: ["GLMZ", "GLMZ"],
   credibility: "verified",
   story_hooks: [
     "Handwriting analysis may become critical evidence in a case where digital records are compromised",
@@ -532,10 +532,10 @@ Forging handwriting has become simultaneously easier and harder. Easier because 
 writeDocument({
   name: "The Analog Market",
   document_type: "cultural_report",
-  author: "Miriam Okoye-Strand, Cultural Anthropology Department, Meridian 88 University",
+  author: "Miriam Okoye-Strand, Cultural Anthropology Department, GLMZ University",
   date: "2225-05-20",
   classification: "public",
-  description: `On the last Saturday of every month, a warehouse on the Shelf's C-level industrial corridor transforms into the largest Faraday cage in Meridian 88. The transformation is literal: the warehouse's walls, ceiling, and floor have been lined with copper mesh and grounded to the building's structural steel, creating an electromagnetic enclosure that blocks all wireless signals, all feed transmissions, and all BCI network connections. Step through the door and your neural interface goes silent. For most visitors, this is the first silence they've experienced inside their own heads since their BCI was activated. Some people panic. Some people cry. Most people stand very still for about ten seconds, eyes closed, feeling the absence of something they'd stopped noticing was there.
+  description: `On the last Saturday of every month, a warehouse on the Shelf's C-level industrial corridor transforms into the largest Faraday cage in GLMZ. The transformation is literal: the warehouse's walls, ceiling, and floor have been lined with copper mesh and grounded to the building's structural steel, creating an electromagnetic enclosure that blocks all wireless signals, all feed transmissions, and all BCI network connections. Step through the door and your neural interface goes silent. For most visitors, this is the first silence they've experienced inside their own heads since their BCI was activated. Some people panic. Some people cry. Most people stand very still for about ten seconds, eyes closed, feeling the absence of something they'd stopped noticing was there.
 
 This is the Analog Market. No BCIs allowed \u2014 not disabled, not in passive mode, but blocked by physics. Inside the cage, your interface is a piece of inert hardware in your skull. It cannot transmit. It cannot receive. It cannot mediate your experience. You are, for the duration of your visit, a human being without a digital nervous system. The market's organizers \u2014 a rotating collective that communicates exclusively through dead drops and physical courier \u2014 chose this approach specifically because disabling a BCI requires trusting the user to actually disable it. The Faraday cage doesn't require trust. It requires copper.
 
@@ -543,11 +543,11 @@ The market itself is a bazaar. Vendors occupy folding tables and improvised stal
 
 What strikes me as an anthropologist is not the goods but the behavior. People at the Analog Market touch things. They pick up a book and feel its weight. They hold a garment against their body. They taste food before buying it. They haggle \u2014 actual verbal negotiation over price, a practice so archaic that many younger visitors have never experienced it and approach it with the nervous excitement of learning a new game. The absence of feed overlays means that products have no reviews, no ratings, no comparative price data. You must evaluate the thing itself, with your own senses, using your own judgment. For many visitors, this is the most cognitively demanding shopping experience of their lives.
 
-The market attracts approximately 400 to 600 visitors per session. The demographic is broader than you'd expect \u2014 not just Shelf counter-culturalists but mid-tier corponation employees, senior citizens who remember pre-BCI commerce, and curious tourists from the upper tiers who treat the experience as anthropological tourism. The collective has never been shut down, though municipal code enforcement has visited twice. Both times, the enforcers entered the Faraday cage, experienced BCI silence, stood very still for about ten seconds, and then purchased handmade soap. The market is technically illegal under Meridian 88's commercial licensing ordinances. Nobody seems to care. The copper cage is sovereign territory in the same way a church is sovereign territory: not by law, but by the mutual agreement of everyone present that something important happens here.`,
-  related_entities: ["Meridian 88", "Shelf"],
+The market attracts approximately 400 to 600 visitors per session. The demographic is broader than you'd expect \u2014 not just Shelf counter-culturalists but mid-tier corponation employees, senior citizens who remember pre-BCI commerce, and curious tourists from the upper tiers who treat the experience as anthropological tourism. The collective has never been shut down, though municipal code enforcement has visited twice. Both times, the enforcers entered the Faraday cage, experienced BCI silence, stood very still for about ten seconds, and then purchased handmade soap. The market is technically illegal under GLMZ's commercial licensing ordinances. Nobody seems to care. The copper cage is sovereign territory in the same way a church is sovereign territory: not by law, but by the mutual agreement of everyone present that something important happens here.`,
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "verified",
   story_hooks: [
-    "The Analog Market's Faraday cage is the only confirmed BCI-free zone in Meridian 88",
+    "The Analog Market's Faraday cage is the only confirmed BCI-free zone in GLMZ",
     "Municipal enforcers bought soap instead of issuing citations \u2014 the experience of BCI silence is that powerful"
   ],
   tags: ["document", "analog", "resistance", "craft", "market", "culture", "meridian_88"]
@@ -559,7 +559,7 @@ writeDocument({
   author: "Kofi Bergman-Nakashima, Music Correspondent, Shelf Underground Press",
   date: "2225-07-04",
   classification: "public",
-  description: `Magnetic tape is an obsolete storage medium that records audio as patterns of magnetized particles on a polyester ribbon coated with ferric oxide. It was commercially dominant from approximately 1965 to 1995. It is slow, fragile, limited in frequency response, and subject to degradation through heat, moisture, magnetic fields, and the simple passage of time. A cassette tape played a hundred times sounds different from a cassette tape played once. A cassette tape left in a hot car for an afternoon may never sound the same again. This is precisely why musicians in Meridian 88 are releasing their work on cassette.
+  description: `Magnetic tape is an obsolete storage medium that records audio as patterns of magnetized particles on a polyester ribbon coated with ferric oxide. It was commercially dominant from approximately 1965 to 1995. It is slow, fragile, limited in frequency response, and subject to degradation through heat, moisture, magnetic fields, and the simple passage of time. A cassette tape played a hundred times sounds different from a cassette tape played once. A cassette tape left in a hot car for an afternoon may never sound the same again. This is precisely why musicians in GLMZ are releasing their work on cassette.
 
 The cassette music scene operates entirely outside the feed. Tapes are manufactured in small runs \u2014 typically 25 to 100 copies \u2014 using modified duplicating decks that the community maintains and shares. The source recordings are made on analog equipment: reel-to-reel tape machines, analog mixing consoles, microphones plugged into preamps plugged into compressors plugged into the recording deck without a single analog-to-digital conversion in the signal chain. The sound that reaches the cassette is an unbroken wave, not a sampled approximation. It is the actual vibration of the air in the room where the music was made, translated into magnetic patterns by a physical process that owes more to metallurgy than to computer science.
 
@@ -568,7 +568,7 @@ Each copy sounds slightly different. Tape duplication introduces generational va
 The medium is the message. A cassette tape will degrade. Play it enough and the high frequencies soften. Store it carelessly and the oxide sheds. Leave it long enough and the magnetic patterns weaken toward silence. The music on a cassette is mortal. It has a lifespan. It will age, change, and eventually die, and this transience is what gives it meaning in a culture where digital content exists in permanent, perfect, identical copies that will outlast the civilization that created them. A feed track will exist, unchanged and unaging, in a server somewhere long after the artist is dead, the listeners are dead, and the culture that gave the music meaning is gone. A cassette tape will be gone first. It will go the way you go: slowly, imperfectly, with increasing warmth and decreasing clarity. The cassette is honest about what it is and what will happen to it. The feed is not.
 
 The artists know all of this. They choose tape not despite its limitations but because of them. Releasing music on cassette in 2225 is a statement that the work is a physical thing that belongs to a physical world and shares the physical world's constraints. It can be damaged. It can be lost. It can wear out from being loved too much. It cannot be algorithmically recommended. It cannot be inserted into a curated playlist by a system that thinks it knows what you want to hear. You have to find it, buy it, carry it home, and put it in a machine, and the machine will play it for you imperfectly, and that imperfection is the sound of something real.`,
-  related_entities: ["Meridian 88", "Shelf"],
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "verified",
   story_hooks: [
     "Cassette musicians are developing a unique aesthetic that digital production cannot replicate",
@@ -591,10 +591,10 @@ The letter is imperfect. My handwriting slopes downhill because I haven't writte
 
 I folded the letter. The fold is not perfectly straight because I folded it on the kitchen table, which is not a perfectly flat surface because we've been meaning to fix the wobble for two years and haven't. I put it in an envelope. I sealed it. I wrote your name on the front. My handwriting is my handwriting \u2014 nobody else's hand moves the way mine does, forms letters the way I form them, presses the pen with the pressure I use. My handwriting is a fingerprint. It is a piece of my body on the page. When you hold this letter, you are holding something my body made. That is not a metaphor. The graphite marks on the paper are grooves made by pressure applied by muscles controlled by a nervous system that was thinking about you when it moved.
 
-I walked to your building. Not messaged, not droned, not courier-serviced. Walked. Twelve blocks through the Shelf in weather that my BCI would have recommended against. I put the letter in the mail slot in your door. I heard it land on the other side. A small sound. The sound of a physical object arriving in a physical place after being carried by a physical person through physical space. The entire transaction \u2014 from pen to page to envelope to mail slot \u2014 is invisible to every system in Meridian 88. No feed recorded it. No algorithm tracked it. No database knows that I wrote to you, or what I said, or how many times I crossed things out. The letter exists between us and only us, the way things used to exist between people before we decided that every moment of connection needed to be captured, quantified, and optimized.
+I walked to your building. Not messaged, not droned, not courier-serviced. Walked. Twelve blocks through the Shelf in weather that my BCI would have recommended against. I put the letter in the mail slot in your door. I heard it land on the other side. A small sound. The sound of a physical object arriving in a physical place after being carried by a physical person through physical space. The entire transaction \u2014 from pen to page to envelope to mail slot \u2014 is invisible to every system in GLMZ. No feed recorded it. No algorithm tracked it. No database knows that I wrote to you, or what I said, or how many times I crossed things out. The letter exists between us and only us, the way things used to exist between people before we decided that every moment of connection needed to be captured, quantified, and optimized.
 
 You'll read it tonight. I won't know when. There's no read receipt. There's no delivery confirmation. I will simply have to trust that the letter arrived and that you opened it and that the words I wrote \u2014 imperfect, misspelled, sloping downhill \u2014 meant something to you. And that not knowing is its own kind of intimacy. The waiting. The uncertainty. The faith that a folded piece of paper can carry feeling across twelve blocks of city and deliver it intact, with no intermediary, no optimization, no algorithm, just gravity and ink and the specific way I wrote your name on the envelope, which you will recognize, because you know my handwriting, because you know my hand.`,
-  related_entities: ["Meridian 88", "Shelf"],
+  related_entities: ["GLMZ", "Shelf"],
   credibility: "unverified",
   story_hooks: [
     "The essay became the most requested piece in Folded Paper Zine's history \u2014 people hand-copy it as gifts",
@@ -622,7 +622,7 @@ The department has a manager, a budget, quarterly performance reviews, and a hea
 I asked Dechen why she does it. She said, "Because it's my job." I asked if it bothered her that the work was unnecessary. She paused for a long time. Then she said, "Everything is unnecessary. At least I'm good at this." She's not wrong. In an economy where automation has eliminated the functional necessity of approximately forty percent of all human labor, the question of whether a job "needs doing" is increasingly philosophical. The job exists. It pays \u03A678,000 annually. It includes health benefits, a retirement contribution, and Tier 2 residency status. Dechen's alternative is not a "real" job \u2014 her alternative is no job, which means Tier 1, which means the Shelf, which means a fundamentally diminished existence. The make-work is the mercy. The pointless job is the point.
 
 Palladian's human resources department declined to comment on the data re-entry department's purpose. A spokesperson said only that "all positions within Palladian reflect the company's commitment to comprehensive data management and quality assurance." This is corporate language for "we don't know either, but the budget exists and the headcount is filled and that's someone else's problem." The data re-entry department will continue to re-enter data that is already there, and thirty-two people will continue to arrive each morning to do work that doesn't need doing, and they will do it well, because doing it well is the only part of it they can control.`,
-  related_entities: ["Palladian", "Meridian 88", "Circuit District"],
+  related_entities: ["Palladian", "GLMZ", "Circuit District"],
   credibility: "verified",
   story_hooks: [
     "Dechen's philosophical acceptance of meaningless work reflects a broader crisis of purpose in the corponation economy",
@@ -648,7 +648,7 @@ My coworker's name is Edmund Park. Edmund has worked the night shift at Facility
 Edmund and I play chess. We have a board set up on the operations desk. We are evenly matched, which means the games are long and absorbing and fill the hours between floor walks with something that actually requires thought. We don't talk about the warehouse. We don't talk about why it's empty or what it's for or whether anyone knows we're here. We talk about chess, and about Edmund's daughter who is studying marine biology at the Deepwell Institute, and about my mother who sends me handwritten letters from Duluth that arrive smelling of lake water and wood smoke. We are two men in an empty building in the middle of the night, doing nothing for a living, and it is, against all reason, a life. Not a good one. Not a meaningful one by any definition I was taught. But a life. Eight hours at a time.
 
 Last month, a rat appeared in Aisle 7. It was the first living thing other than Edmund and me that I have seen inside Facility 19. We named it Operational. It lives in the racking system now. It is the only inventory this warehouse has ever held.`,
-  related_entities: ["Meridian 88", "Consolidated Meridian Warehousing"],
+  related_entities: ["GLMZ", "Consolidated Meridian Warehousing"],
   credibility: "unverified",
   story_hooks: [
     "Edmund has worked at empty Facility 19 for fifteen years \u2014 his acceptance borders on philosophy",
@@ -660,7 +660,7 @@ Last month, a rat appeared in Aisle 7. It was the first living thing other than 
 writeDocument({
   name: "Bullshit Jobs in the Corporate Sovereign Age",
   document_type: "academic_paper",
-  author: "Dr. Kwame Johansson-Park, Department of Political Economy, Meridian 88 University",
+  author: "Dr. Kwame Johansson-Park, Department of Political Economy, GLMZ University",
   date: "2225-06-10",
   classification: "public",
   description: `This paper extends the framework established by anthropologist David Graeber in his 2018 work "Bullshit Jobs: A Theory" into the context of corporate sovereignty as practiced in the Great Lakes Maritime Zone. Graeber identified five categories of meaningless employment \u2014 flunkies, goons, duct tapers, box tickers, and taskmasters \u2014 and argued that the proliferation of such roles was a feature, not a bug, of late capitalism. The intervening two centuries have vindicated Graeber's thesis with a thoroughness he could not have imagined, because the conditions that produce meaningless work have been amplified by a factor that Graeber could not have foreseen: the merger of corporation and state.
@@ -669,13 +669,13 @@ Under corponation sovereignty, employment is not merely an economic relationship
 
 This creates a political economy of employment in which the job itself is secondary to the fact of employment. A corponation that eliminates 500 meaningless positions does not merely create 500 unemployed workers \u2014 it creates 500 demoted citizens. The workers lose not just income but tier status, and with it, access to the infrastructure that keeps them alive and functional. The corponation, meanwhile, faces the political consequences of visibly downgrading 500 of its citizen-employees, which affects its standing in the Municipal Authority's corporate governance ratings, which affects its licensing terms, which affects its bottom line. The cost of maintaining 500 meaningless jobs is, in most cases, less than the cost of eliminating them.
 
-The result is a labor market in which approximately 8% of all positions in Meridian 88 produce no measurable output. This figure is derived from cross-referencing corporate productivity metrics (obtained through Municipal Authority audits) with headcount data. The 8% figure represents approximately 180,000 people who go to work every day, perform tasks that generate no value, and receive compensation that maintains their tier status. They are not lazy. They are not incompetent. Many of them are highly skilled workers trapped in roles that don't use their skills. They are, in economic terms, a cost of governance disguised as a cost of labor.
+The result is a labor market in which approximately 8% of all positions in GLMZ produce no measurable output. This figure is derived from cross-referencing corporate productivity metrics (obtained through Municipal Authority audits) with headcount data. The 8% figure represents approximately 180,000 people who go to work every day, perform tasks that generate no value, and receive compensation that maintains their tier status. They are not lazy. They are not incompetent. Many of them are highly skilled workers trapped in roles that don't use their skills. They are, in economic terms, a cost of governance disguised as a cost of labor.
 
-The psychological consequences are documented but underappreciated. Studies conducted by the Meridian 88 University Department of Occupational Psychology show that workers in meaningless positions exhibit rates of depression, anxiety, and substance abuse 2.4 times higher than workers in productive roles at comparable compensation levels. The money is the same. The tier status is the same. The difference is purpose. Human beings, it turns out, need to believe that what they do matters, and no amount of compensation can substitute for that belief. The corponation economy provides the job but not the meaning, and the gap between the two is killing people at a rate that the public health system has not yet learned to measure.`,
-  related_entities: ["Meridian 88", "Meridian 88 University"],
+The psychological consequences are documented but underappreciated. Studies conducted by the GLMZ University Department of Occupational Psychology show that workers in meaningless positions exhibit rates of depression, anxiety, and substance abuse 2.4 times higher than workers in productive roles at comparable compensation levels. The money is the same. The tier status is the same. The difference is purpose. Human beings, it turns out, need to believe that what they do matters, and no amount of compensation can substitute for that belief. The corponation economy provides the job but not the meaning, and the gap between the two is killing people at a rate that the public health system has not yet learned to measure.`,
+  related_entities: ["GLMZ", "GLMZ University"],
   credibility: "verified",
   story_hooks: [
-    "The 8% figure means 180,000 people in Meridian 88 have functionally meaningless jobs \u2014 a hidden public health crisis",
+    "The 8% figure means 180,000 people in GLMZ have functionally meaningless jobs \u2014 a hidden public health crisis",
     "Eliminating make-work would create a tier-status crisis that could destabilize the entire social structure"
   ],
   tags: ["document", "labor", "mundane", "academic", "meridian_88", "corponation"]
@@ -696,7 +696,7 @@ Approximately 8.3% of all positions in the corponation produce no measurable out
 The positions persist for three reasons, all of which are structural rather than conspiratorial. First: headcount is currency. A division's budget, influence, and political power within the corponation are proportional to its headcount. Eliminating positions reduces headcount, which reduces budget allocation, which reduces the division head's organizational power. No division head voluntarily shrinks their empire. Second: compensation band justification. Executive compensation is partly determined by the number of employees in the organizational tree beneath them. Eliminate 500 positions and the executive's comp model recalculates downward. The executive has a direct financial incentive to maintain headcount. Third: the systems don't ask. The payroll system pays everyone in the system. The benefits system covers everyone in the system. The badge system grants access to everyone in the system. No system asks whether the person should still be in the system. That question requires a human, and no human has an incentive to ask it.
 
 I presented my findings to the Chief Operating Officer. She looked at the visualization for a long time. She asked me to calculate the total compensation cost of the shadow org chart. I calculated it: approximately \u03A614.2 billion annually. She looked at that number for a long time too. Then she asked me to delete the analysis. I asked why. She said, "Because if I acknowledge this exists, I have to do something about it, and doing something about it means downgrading 149,000 people's tier status, and I'm not going to be the person who does that." She's right. Nobody will. The shadow org chart will persist because it is cheaper to ignore it than to confront the human cost of its elimination. The make-work is not a bug. It is load-bearing.`,
-  related_entities: ["Meridian 88"],
+  related_entities: ["GLMZ"],
   credibility: "unverified",
   story_hooks: [
     "The \u03A614.2 billion shadow org chart is a hidden welfare system disguised as corporate inefficiency",
@@ -722,7 +722,7 @@ I do nothing in these meetings. I listen. I nod when others nod. I look thoughtf
 And the meeting's existence validates the department's budget. And the department's budget validates the subsidiary's existence. And the subsidiary's existence justifies the headcount that includes my position. I am a human proof-of-work. My body in a chair in a conference room is evidence that a meeting happened, which is evidence that a department functions, which is evidence that a subsidiary operates, which is evidence that the organizational structure above me is justified. I am a load-bearing node in a bureaucratic structure whose integrity depends on my continued presence at tables where nothing is decided and nothing changes and I nod when others nod.
 
 I have a pension. I have health insurance. I have a corner desk in an open-plan office where my colleagues \u2014 other Interdepartmental Coordination Specialists, of whom there are seven \u2014 sit in identical chairs and attend identical meetings and say identical nothing. We don't talk about it. We don't need to. We all know. On Fridays, we go to lunch together. We talk about our weekends, our families, our plans. We are pleasant and normal and well-adjusted. We attend meetings. We are paid. We exist. In the economy of corporate sovereignty, existing is a job, and we do it well.`,
-  related_entities: ["Arcturus Industrial Solutions", "Meridian 88"],
+  related_entities: ["Arcturus Industrial Solutions", "GLMZ"],
   credibility: "unverified",
   story_hooks: [
     "Seven Interdepartmental Coordination Specialists attend meetings full-time \u2014 their collective salary validates an entire subsidiary",
@@ -860,7 +860,7 @@ The shuttle bus is perhaps the park's most poignant feature. It is a standard co
   connections: {
     adjacent_to: [
       "Circuit District western corridor",
-      "Meridian 88 transit station (shuttle route terminus)"
+      "GLMZ transit station (shuttle route terminus)"
     ],
     exits: [],
     tags: []
@@ -907,7 +907,7 @@ The procurement system orders fresh ingredients three times weekly from standard
       "The slightly stale warmth of food sitting under heat lamps for two hours before disposal",
       "Coffee — a commercial drip brewer produces two pots per meal service, both discarded at the end"
     ],
-    feel: "Heartbreaking. The Eternal Cafeteria is the Ghost Building phenomenon distilled to its most human expression. Real people make real food with real skill, and the food goes into the trash because the system that pays for it doesn't know nobody's eating it and nobody who knows has the authority to make it stop. The dining room at lunch — tables set, music playing, food steaming under heat lamps, every chair empty — is the saddest room in Meridian 88. It is a room designed for gathering in which no one gathers. It smells wonderful.",
+    feel: "Heartbreaking. The Eternal Cafeteria is the Ghost Building phenomenon distilled to its most human expression. Real people make real food with real skill, and the food goes into the trash because the system that pays for it doesn't know nobody's eating it and nobody who knows has the authority to make it stop. The dining room at lunch — tables set, music playing, food steaming under heat lamps, every chair empty — is the saddest room in GLMZ. It is a room designed for gathering in which no one gathers. It smells wonderful.",
     tags: []
   },
   demographics: "Four kitchen staff (daily). One cleaning crew member (nightly). Zero diners.",
@@ -1002,7 +1002,7 @@ Through the gap beneath the door, the cleaning crew reports seeing consistent lo
   connections: {
     adjacent_to: [
       "888 Circuit Boulevard, floors 1-3 (occupied commercial tenants)",
-      "Circuit District, Meridian 88"
+      "Circuit District, GLMZ"
     ],
     exits: [],
     tags: []

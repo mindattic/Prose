@@ -1,7 +1,7 @@
 {
   "id": "019d6143a717748a885c79ea4b5a3322",
   "type": "character",
-  "name": "Daria Balogun-Faalele-Čabarkapa",
+  "name": "Kamila Haraldsen-Abdykadyrov-Arredondo",
   "aliases": [
     "Ulcer",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
-  "description": "Vuk Borg-Agyeman is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 40, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a street samurai out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVuk Borg-Agyeman is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Kamila Haraldsen-Abdykadyrov-Arredondo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 40, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a street samurai out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKamila Haraldsen-Abdykadyrov-Arredondo is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -260,7 +260,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,34 +277,13 @@
     "Tessera TK-9 Proteus 'Shapeshifter'"
   ],
   "related_entities": [
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Beverlynn Heights",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Dzemal Acholonu-Patagiri",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Kang-Petrov Arms KPA-25EM 'Tempest'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Prophet",
-    "Sagyn Padilla-Nti",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Coffin Nails",
-    "The Heritage Vault"
+    "GLMZ"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Slavic Eastern European (Serbian-Croatian), Polynesian Pacific Islander, Indigenous American (pan-regional), with Sub-Saharan African ancestry. Genetic mixing produces distinctive phenotype: bone structure shows Slavic angularity combined with Pacific Islander robustness and Indigenous American facial proportions. Sub-Saharan heritage visible in skin undertones and subtle features.",
+    "heritage": "Central Asian dominant (41%) with substantial Hispanic/Latin American (28%) and meaningful Indigenous American (7.3%) ancestry, complemented by East Asian (10.2%), Northern European (10.8%), and Southeast Asian (2.7%) heritage. This genetic profile creates a striking phenotype: Central Asian high, prominent cheekbones and angular bone structure blend with broader Indigenous American facial proportions and Hispanic warmth. East Asian ancestry refines eye placement and adds subtle epicanthic elements. Northern European contribution appears in hair undertones and subtle skin texture. The overall effect is a warm-toned, high-cheekboned face with subtle Asian eye geometry and strong jaw definition.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Rawboned and lean with efficient musculature — no excess mass, built for speed and endurance rather than strength. Shoulders broad but not bulky. Wrists and ankles suggest long leverage rather than density.",
@@ -312,8 +291,8 @@
     "hair_style": "Pulled back in a tight, no-nonsense braid or kept short and practical",
     "hair_length": "Short",
     "eye_color": "Chrome iris rings with visible thermal overlay tech — inner iris shows subtle amber LED glow when augmentation is active",
-    "skin_tone": "Deep warm tan with golden-bronze undertones — result of complex ancestry blend. Richer than Northern European baseline, with warmth from Pacific Islander and Indigenous American heritage, strengthened by Sub-Saharan genetic contribution. Even complexion across face and body.",
-    "complexion": "Weathered but maintained. Blend of Slavic angular cheekbones with broader Indigenous American facial structure and Pacific Islander resilience. Narrow jawline sharpened by lean musculature. Skin shows controlled scarring and minute implant seam lines at temple and behind ear. No excess body fat. Grooming is methodical — nails cut to functional length, minimal jewelry.",
+    "skin_tone": "Warm medium-deep tan with golden undertones — the result of dominant Central Asian and Hispanic ancestry blended with Indigenous American warmth and refined by East Asian and Southeast Asian genetics. Rich, defined complexion with consistent golden warmth across face and body.",
+    "complexion": "Weathered but maintained. High, angular Central Asian cheekbones combined with broader Indigenous American facial structure and refined East Asian eye placement—eyes slightly set with subtle Asian geometry. Narrow jawline sharpened by lean musculature and Central Asian bone structure. Skin shows controlled scarring and minute implant seam lines at temple and behind ear. No excess body fat. Grooming is methodical — nails cut to functional length, minimal jewelry.",
     "distinguishing_marks": [
       "Pale surgical scar along left temple extending toward hairline — old cybernetic implant site, well-healed but visible",
       "Thin white scar across the ridge of her right knuckles — old combat damage",
@@ -324,15 +303,76 @@
     "posture_movement": "Carries herself with coiled efficiency — shoulders loose, weight balanced on the balls of her feet. Moves with minimal wasted motion, head on a swivel. Eyes track threats automatically. Resting expression is neutral to hostile. When relaxed, there is a quality of a blade laid against a surface — still dangerous.",
     "clothing_style": "Tier 3-4 working specialist: functional combat wear in dark grays and blacks. Heavy-duty synth-leather jacket with reinforced panels and pockets for tools/gear. Articulated cargo pants with secure pockets and ankle reinforcement. Undershirt is smart-fabric base layer beneath. Footwear is tactical and broken in — non-descript dark boots with good grip. Wears a long tactical coat in winter. Minimal branding, maximum utility. Everything is maintained, nothing is flashy. The aesthetic is 'I need to move and fight' not 'look at me.'"
   },
-  "image_prompt": "Daria Balogun-Faalele-Čabarkapa, tall 183cm lean warrior woman with deep golden-bronze skin tone reflecting Slavic-Polynesian-Indigenous American-African heritage mix. Angular cheekbones with broader indigenous facial structure, sharp jawline. Steel gray short hair. Chrome iris rings glowing with amber LED thermal overlay when active. Visible surgical scar along left temple, thin white scar across right knuckles, laser-burn marks on inner forearm, subcutaneous port seam below collarbone. Dark synth-leather reinforced combat jacket, articulated cargo pants, smart-fabric base layer, tactical dark boots. Coiled posture, weight balanced on balls of feet, neutral-hostile resting expression. No-nonsense grooming. Cyberpunk 2226 Great Lakes Metropolitan Zone, dystopian neon-lit urban environment, moody blue-amber lighting, industrial background. Professional operative aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: Kamila, 183cm tall lean-muscled woman with striking high Central Asian cheekbones, broader Indigenous American face structure, and refined East Asian eye geometry. Warm medium-deep golden-tan skin, steel gray hair pulled tight in practical braid, short length. Augmented chrome iris rings with amber LED glow visible in dark eyes. Surgical scar along left temple, combat scars on knuckles, subcutaneous port visible below collarbone. Intense neutral-to-hostile resting expression, coiled efficient posture. Dressed in dark gray and black tactical gear: reinforced synth-leather jacket, articulated cargo pants, smart-fabric base layer, worn dark tactical boots. Long tactical coat. No excess jewelry, everything maintained and utilitarian. Standing in neon-lit megacity alley, LEDs reflecting off chrome implants, moody cool lighting casting shadows on angular face, neo-noir Great Lakes Metropolitan Zone aesthetic, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 30.1,
-    "Pacific Islander": 30.0,
-    "Indigenous American": 29.8,
-    "Sub-Saharan African": 10.1
+    "Central Asian": 41,
+    "Hispanic/Latin American": 28,
+    "Northern European": 10.8,
+    "East Asian": 10.2,
+    "Indigenous American": 7.3,
+    "Southeast Asian": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 41
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 14
+      },
+      "Central American": {
+        "Honduran": 5.1
+      },
+      "South American": {
+        "Chilean": 1.7,
+        "Peruvian": 7.2
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 5.9
+      },
+      "British Isles": {
+        "Scottish": 0.6
+      },
+      "Germanic": {
+        "Dutch": 4.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.6
+      },
+      "Japanese": {
+        "Japanese": 2.6
+      },
+      "Chinese": {
+        "Mandarin Northern": 4
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 4.4,
+        "Maya": 2.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 0.7
+      },
+      "Filipino": {
+        "Waray": 0.7,
+        "Tagalog": 0.6
+      },
+      "Thai": {
+        "Thai": 0.7
+      }
+    }
+  }
 }

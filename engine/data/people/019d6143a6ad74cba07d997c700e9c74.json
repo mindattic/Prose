@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ad74cba07d997c700e9c74",
   "type": "character",
-  "name": "Ragna Björnsdóttir",
+  "name": "Frost Souvannavong",
   "aliases": [
     "Rash",
     "The Mechanic"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Old Harbor — a basement garage workshop called Tuiasosopo's, accessible via a grease-slicked ramp off Grindstone Shore, near Lake Shore and Navy Pier",
-  "description": "Rashid is a large man — broad through the chest and shoulders, with the particular solidity of someone who has spent decades moving heavy things without complaint. His Samoan-Dutch heritage gives him a height and frame that makes the workshop look scaled down around him; he moves through it with a careful, habituated economy that suggests he has misjudged his own size in doorways enough times to have learned. His skin is dark tan and perpetually marked with engine grease that the solvent spray never quite removes from the creases of his knuckles. His right arm from the elbow down is a working prosthetic — industrial grade, matte gray, with the manufacturer branding sanded off — that he maintains himself and has modified extensively over fifteen years until it no longer resembles the original product in any way that matters. He does not discuss how he lost the original arm.\n\nRashid is reserved in a way that reads as either hostile or comfortable depending on how quickly you need him to perform warmth. He is not hostile. He is simply someone who learned early that words are expensive and he spends them accordingly. He is extraordinarily competent, with a diagnostic instinct for machines that borders on the empathic — he listens to engines the way some people listen to music, tracking harmonics and absences. He has a seven-year waitlist for vehicle work and a two-week turnaround for drone repair, which in Old Harbor is considered miraculous. He prays to the E.L.F. he believes inhabits his diagnostic rig with the seriousness of a genuine practitioner.",
+  "description": "Frost Souvannavong is a large man — broad through the chest and shoulders, with the particular solidity of someone who has spent decades moving heavy things without complaint. His Samoan-Dutch heritage gives him a height and frame that makes the workshop look scaled down around him; he moves through it with a careful, habituated economy that suggests he has misjudged his own size in doorways enough times to have learned. His skin is dark tan and perpetually marked with engine grease that the solvent spray never quite removes from the creases of his knuckles. His right arm from the elbow down is a working prosthetic — industrial grade, matte gray, with the manufacturer branding sanded off — that he maintains himself and has modified extensively over fifteen years until it no longer resembles the original product in any way that matters. He does not discuss how he lost the original arm.\n\nFrost Souvannavong is reserved in a way that reads as either hostile or comfortable depending on how quickly you need him to perform warmth. He is not hostile. He is simply someone who learned early that words are expensive and he spends them accordingly. He is extraordinarily competent, with a diagnostic instinct for machines that borders on the empathic — he listens to engines the way some people listen to music, tracking harmonics and absences. He has a seven-year waitlist for vehicle work and a two-week turnaround for drone repair, which in Old Harbor is considered miraculous. He prays to the E.L.F. he believes inhabits his diagnostic rig with the seriousness of a genuine practitioner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -182,7 +182,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,37 +240,22 @@
     "Grindstone Shore",
     "The Heritage Vault",
     "TESSERA WL-6 'Stacker'",
-    "Alper Lebedev-Tutu",
-    "Ambrogio Waweru-Djordanović",
-    "Breck Tannen",
-    "Collinwood Docks",
-    "Devraj Solano-Yildirim",
-    "Djeneba Magnusson-Camara",
-    "Dragan Petersen-Bah",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Narrowcast",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Old Harbor",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand"
+    "Harbor Fish Shack",
+    "Frost",
+    "Cargo Tacos"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Northern European (33.2%), Southeast Asian (24.9%), East Asian (19.3%), Hispanic/Latin American (13.3%), South Asian (5.6%), Eastern European (3.7%) — a genuinely global genetic tapestry reflecting the Ubiquitous Diaspora. His features show the blended result: Northern European bone structure in his jawline and brow ridge, Southeast and East Asian characteristics in his eye shape and cheekbone prominence, with warmth and depth from South Asian and Hispanic ancestry contributing to skin undertones and facial proportions.",
+    "heritage": "A genuinely global genetic tapestry reflecting the Ubiquitous Diaspora: Hispanic/Latin American (26.4%), Southeast Asian (24.7%), East Asian (20.0%), South Asian (12.5%), Eastern European (10.9%), Northern European (5.5%). His features show the sophisticated blending of this ancestry — Southeast and East Asian characteristics visible in his eye shape and prominent cheekbones, warmth and depth from Hispanic and South Asian ancestry in his skin undertones and facial proportions, structural strength from Eastern European heritage in his jawline and brow ridge, creating a face that reads as unmistakably contemporary and mixed-heritage.",
     "height_cm": 193,
     "weight_kg": 118,
     "build": "Broad-chested and heavily muscled through the shoulders and trunk — the deliberate solidity of a man who has spent four decades relocating heavy machinery and vehicle frames. Not fat; densely compact. His frame makes standard doorways feel narrow.",
     "hair_color": "Dark brown, graying at temples",
     "hair_style": "Kept short and practical; slicked back with whatever is near at hand",
     "hair_length": "Short",
-    "eye_color": "Dark brown with amber undertones",
-    "skin_tone": "Medium-warm brown with golden undertones — not uniformly tan but rather a naturally rich complexion from his mixed ancestry, further deepened by decades under workshop fluorescents and dock work in summer heat. The skin has a slightly olive-golden quality suggesting the interplay of Northern European, Southeast Asian, and South Asian heritage.",
-    "complexion": "Weathered but unlined; his face has the economy of expression of someone who has never wasted a facial muscle. Strong, slightly broad jawline reflecting both Northern European and East Asian ancestry. High cheekbones with subtle projection. A small notch in his left eyebrow from a tool accident in 1994. His hands are scored with grease stains that penetrate the cuticles — occupational stigmata that no amount of solvent removes.",
+    "eye_color": "Dark brown with warm amber undertones",
+    "skin_tone": "Medium-warm brown with golden-olive undertones — a naturally rich complexion from his mixed ancestry, further deepened by decades under workshop fluorescents and dock work in summer heat. The skin carries the subtle warmth of Southeast Asian and Hispanic heritage blended with the depth of South Asian genetics, creating a unified but complex medium-brown tone.",
+    "complexion": "Weathered but unlined; his face has the economy of expression of someone who has never wasted a facial muscle. Strong jawline with balanced width reflecting the blend of East Asian and Eastern European ancestry. High, prominent cheekbones characteristic of his Southeast Asian heritage. Slightly broader nasal bridge reflecting South Asian genetics. A small notch in his left eyebrow from a tool accident in 1994. His hands are scored with grease stains that penetrate the cuticles — occupational stigmata that no amount of solvent removes.",
     "distinguishing_marks": [
       "Burn scar across the back of his right shoulder, pale and old, roughly six centimeters across — the origin is unknown and he does not offer explanation",
       "Ritual tattoo on his inner left forearm: three horizontal lines in blue-black ink, personal cultural markings applied when he was twenty-three",
@@ -280,17 +265,70 @@
     "posture_movement": "He moves with the cautious precision of a man who has learned the exact dimensions of his own body in too-small spaces. His gait is economical — no wasted motion. He carries his weight forward slightly, as though perpetually leaning into the next task. When standing still, his weight shifts to his left leg; his prosthetic arm hangs at a slight angle that suggests habit rather than malfunction. In conversation, he is still — minimal gesturing, no fidgeting.",
     "clothing_style": "Tier 4 working-class, purely functional. Dark gray cargo trousers with reinforced knees and thigh pockets, oil-stained and patched at the seams. A faded industrial work t-shirt, sleeves rolled to accommodate the prosthetic. A heavy canvas shop coat in charcoal, pockets weighted with tools and diagnostic leads. Work boots: black, heavily resoled. No jewelry. No visible adornments. Everything is worn through to comfort; nothing is chosen for appearance."
   },
-  "image_prompt": "Ragna Björnsdóttir, 193cm tall, densely muscular build, medium-warm olive-golden skin tone blending Northern European, Southeast Asian, East Asian, and South Asian heritage. Dark brown hair graying at temples, slicked back. Strong jawline with high cheekbones. Dark eyes with amber undertones. Weathered, expressionless face. Right arm from elbow down is a matte gray industrial prosthetic with visible welding seams and custom modifications. Ritual tattoo: three horizontal blue-black lines on inner left forearm. Scarred, oil-stained hands from decades of mechanical work. Wearing faded industrial work t-shirt, dark gray reinforced cargo trousers, heavy charcoal canvas shop coat, black resoled work boots. Standing in cyberpunk 2226 workshop with harsh fluorescent lighting casting geometric shadows. Grit-covered work station background. Posture: economical, weight forward, prosthetic arm hanging at practiced angle. Mood: precise, tireless, no-nonsense. Ultra-realistic, gritty industrial cyberpunk aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Frost Souvannavong, GLMZ, 193cm tall heavily muscled working-class man with mixed global heritage — Southeast Asian cheekbones and eye shape, Hispanic and South Asian warmth in medium-golden-brown complexion, Eastern European jawline strength. Dark brown hair graying at temples, slicked back. Dark brown eyes with amber undertones. Weathered face, economical expression. Industrial prosthetic right arm from elbow down, matte gray with visible welding seams and custom modifications, replacing factory branding. Ritual blue-black tattoo three horizontal lines on inner left forearm. Grease-stained hands from decades of mechanical work. Burn scar across right shoulder. Wearing faded industrial work t-shirt, dark gray cargo trousers oil-stained, heavy charcoal canvas shop coat, black resoled work boots. Standing in a dimly-lit workshop or dockyard, fluorescent light casting hard shadows, tools visible in coat pockets, posture forward-leaning and economical, minimal gesture, concentrated stillness. Neo-noir dystopian working-class aesthetic, practical and worn. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 33.2,
-    "Southeast Asian": 24.9,
-    "East Asian": 19.3,
-    "Hispanic/Latin American": 13.3,
-    "South Asian": 5.6,
-    "Eastern European": 3.7
+    "Hispanic/Latin American": 26.4,
+    "Southeast Asian": 24.7,
+    "East Asian": 20,
+    "South Asian": 12.5,
+    "Eastern European": 10.9,
+    "Northern European": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 12.2
+      },
+      "Caribbean": {
+        "Cuban": 14.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 3.1
+      },
+      "Laotian": {
+        "Laotian": 21.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.6
+      },
+      "Japanese": {
+        "Japanese": 2.6
+      },
+      "Chinese": {
+        "Shanghainese": 2.7,
+        "Cantonese": 4.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 8.5
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.2,
+        "Tamil Sri Lankan": 0.3
+      },
+      "Pakistani": {
+        "Sindhi": 3.5
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 10.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 1.9,
+        "Swiss German": 3.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a07832bdfb280b6f3b1d73",
   "type": "character",
-  "name": "Zarina Baiseitov",
+  "name": "Taslima Dalgaard",
   "aliases": [
     "Daze",
     "The Compiler"
@@ -13,7 +13,7 @@
   "age": 15,
   "status": "active",
   "location": "Edgewater Prism (Axiom Junior Academy campus); family residence in Hough Reclamation, near Lincoln and Addison",
-  "description": "Adaeze is a tall, angular girl caught permanently between two worlds — the pressed uniform and controlled expression of Axiom's scholarship track during the day, and the slouched, ink-stained, wired-in version of herself she becomes at home in Hough. Her skin is a deep blue-black with faint bioluminescent freckles along her cheekbones and collarbone — a cosmetic mod her mother scraped together Φ300 for on her twelfth birthday. She keeps her hair in a high puff threaded with conductive wire she pretends is decorative jewelry. Her eyes are brown and extremely tired.\n\nShe is meticulous in a way that reads as cold until you realize she's actually terrified — of losing the scholarship, of being found out, of going back to Hough full-time with no leverage. She's built a small side business cracking academic license gates so students can access textbooks their families can't afford the subscription fees for. She doesn't charge Tier 1 kids. She charges Tier 3 kids quite a lot. She has a private and intense devotion to an E.L.F. she calls 'the Librarian' that she believes inhabits the school's data archive server.",
+  "description": "Taslima Dalgaard is a tall, angular girl caught permanently between two worlds — the pressed uniform and controlled expression of Axiom's scholarship track during the day, and the slouched, ink-stained, wired-in version of herself she becomes at home in Hough. Her skin is a deep blue-black with faint bioluminescent freckles along her cheekbones and collarbone — a cosmetic mod her mother scraped together Φ300 for on her twelfth birthday. She keeps her hair in a high puff threaded with conductive wire she pretends is decorative jewelry. Her eyes are brown and extremely tired.\n\nShe is meticulous in a way that reads as cold until you realize she's actually terrified — of losing the scholarship, of being found out, of going back to Hough full-time with no leverage. She's built a small side business cracking academic license gates so students can access textbooks their families can't afford the subscription fees for. She doesn't charge Tier 1 kids. She charges Tier 3 kids quite a lot. She has a private and intense devotion to an E.L.F. she calls 'the Librarian' that she believes inhabits the school's data archive server.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -171,7 +171,7 @@
     "Pattern Reader": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism (Axiom Junior Academy campus); family residence in Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,26 +184,11 @@
     "Edgewater Prism",
     "The Reclamation Assembly",
     "The Open Syllabus",
-    "ARCHIVE",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Axiom Hovercraft (Lake Patrol)",
-    "Axonal Stretch Resonance Lance",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Nurlan Morita-Antwi",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "The Delray Sacrifice Zone",
-    "The Librarian",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Vuk Jorgensen-Toure"
+    "Arcturus KS-7 'Nursery'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Northern European (45.9%) with significant Central Asian (34.6%) ancestry, blended with Sub-Saharan African (9.5%), South Asian (6.8%), and Hispanic/Latin American (3.2%) heritage. This creates a striking phenotype: the angular bone structure and lighter undertones of Northern Europe combined with the rich melanin depth and warm undertones of Central Asian and African ancestry, resulting in a complexion that shifts between deep warm brown and cool-toned bronze depending on light.",
+    "heritage": "A striking Pan-Asian and global blend: East Asian ancestry (46%) forms the foundation with characteristic angular bone structure and warm golden undertones, layered with substantial South Asian heritage (20.8%) that deepens her complexion and adds richness to her features. Middle Eastern ancestry (13.1%) contributes warmth to her cheekbones and jawline, while Pacific Islander heritage (10.9%) brings sun-kissed luminosity and depth. Hispanic/Latin American (5.6%) and Sub-Saharan African (3.6%) ancestry add subtle warmth and dimensional complexity to her skin. The result is a phenotype that appears to shift between warm honey-bronze and amber-toned gold depending on light, with a luminous quality that reads as almost otherworldly.",
     "height_cm": 178,
     "weight_kg": 58,
     "build": "Tall and angular with minimal muscle definition — the build of someone who lives on caffeine and anxiety rather than food. Sharp shoulders, pronounced collarbones, long limbs that seem to move in slightly disconnected ways.",
@@ -211,8 +196,8 @@
     "hair_style": "High puff worn tight at the crown, interwoven with thin strands of conductive wire disguised as decorative copper and silver jewelry",
     "hair_length": "Medium (roughly 15cm in its gathered form)",
     "eye_color": "Deep brown with dark circles underneath that never fully fade",
-    "skin_tone": "Rich warm brown with subtle bronze undertones — the result of strong Central Asian and Northern European blending with Sub-Saharan African depth. Luminous quality in direct light, appearing almost copper-tinted in certain angles.",
-    "complexion": "Clear but with the pallid exhaustion of someone running on 5–6 hours of sleep per night. Faint bioluminescent freckles trace her cheekbones and collarbone in pale cyan, brightest when she's concentrating or anxious. The bioluminescence dims noticeably when she's tired. Subtle warm undertones across the bridge of her nose and cheekbones reflect her Central Asian heritage.",
+    "skin_tone": "Warm golden-honey-bronze with luminous quality — the harmonious blend of East Asian warmth (46%), South Asian depth and richness (20.8%), Middle Eastern glow on cheekbones and jawline (13.1%), Pacific Islander sun-kissed luminescence (10.9%), and subtle Sub-Saharan African dimensional warmth (3.6%) with Hispanic/Latin American undertones (5.6%). Appears almost amber-tinted in direct light, shifting to honeyed gold in softer illumination.",
+    "complexion": "Clear but with the pallid exhaustion of someone running on 5–6 hours of sleep per night. Faint bioluminescent freckles trace her cheekbones and collarbone in pale cyan, brightest when she's concentrating or anxious. The bioluminescence dims noticeably when she's tired. Warm golden-honey undertones across the bridge of her nose and cheekbones reflect her dominant East and South Asian heritage, with subtle peachy-bronze warmth at her temple and jawline from her Middle Eastern ancestry blending seamlessly with Pacific Islander sun-depth and Sub-Saharan African dimensional warmth.",
     "distinguishing_marks": [
       "Bioluminescent freckle constellation along both cheekbones, arranged asymmetrically with heavier density on the left side",
       "Bioluminescent freckle trail descending from right collarbone toward sternum, visible only when wearing low-cut clothing",
@@ -223,16 +208,76 @@
     "posture_movement": "During school hours: rigid, controlled, spine straight, movements economical and careful. Her face is blank in mandatory settings — a deliberate mask. At home or when hacking: she slouches, fidgets with her wire threading, moves with nervous energy. Her fingers twitch and her eyes dart. When deep in code, she goes very still and her freckles brighten involuntarily.",
     "clothing_style": "DAYTIME (Axiom): Pressed uniform — navy blazer over white shirt, gray pleated skirt to regulation length, black leather loafers, minimal jewelry (only the wire in her hair passes as 'decorative'). Everything is maintained meticulously and sits slightly too formally on her frame. NIGHTTIME (Hough): Oversized hoodies in muted colors (grays, blacks, dark blues), worn cargo pants with multiple pockets, cheap smart-fabric gloves with conductive fingertips, beat-up sneakers. Her style reads as 'Tier 4 student trying to survive' — functional, layered, slightly too warm for indoors, pockets visibly stuffed with data chips and adapter cables."
   },
-  "image_prompt": "Zarina Baiseitov, tall angular 178cm cyberpunk teenager, rich warm brown skin with bronze undertones, deep brown eyes shadowed with exhaustion. Black hair gathered in tight high puff interwoven with conductive copper and silver wire. Pale cyan bioluminescent freckles scattered across cheekbones glowing softly. Cheap neural jack visible at base of skull behind right ear with mild inflammation. Wearing oversized dark gray hoodie over cargo pants, smart-fabric gloves, beat-up sneakers, pockets bulging with data chips. Fidgeting with hair wire, nervous posture, fingers twitching. Dimly lit hacker's den, neon cyan glow reflecting off her bioluminescent freckles, cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, intricate detail on augmentation marks, moody anxious expression --ar 2:3 --v 6",
+  "image_prompt": "Taslima Dalgaard, 178cm tall, angular East Asian-South Asian-Middle Eastern hybrid phenotype, warm golden-honey-bronze skin with luminous undertones, deep brown eyes shadowed with exhaustion, black hair in tight high puff interwoven with conductive copper-silver wire threading. Pale cyan bioluminescent freckles glowing asymmetrically across cheekbones, visible faint scar on right inner wrist. Wearing oversized dark hoodie, cargo pants with visible tech pockets, cheap smart-fabric gloves, beat-up sneakers. GLMZ, Great Lakes Metropolitan Zone, posture tense and fidgety, fingers nervous, freckles brightening slightly with concentration. Neon-lit nighttime hacker aesthetic, dim ambient glow highlighting the bioluminescence on her skin, moody blue-violet lighting, shallow depth of field focusing on her angular face and glowing freckles --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 45.9,
-    "Central Asian": 34.6,
-    "Sub-Saharan African": 9.5,
-    "South Asian": 6.8,
-    "Hispanic/Latin American": 3.2
+    "East Asian": 46,
+    "South Asian": 20.8,
+    "Middle Eastern": 13.1,
+    "Pacific Islander": 10.9,
+    "Hispanic/Latin American": 5.6,
+    "Sub-Saharan African": 3.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 46
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 14.5
+      },
+      "Pakistani": {
+        "Sindhi": 4,
+        "Baloch": 2.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 2.3
+      },
+      "Arab Gulf": {
+        "Iraqi": 2,
+        "Yemeni": 5
+      },
+      "Kurdish": {
+        "Kurdish": 3.8
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 2.6,
+        "Ni-Vanuatu": 1
+      },
+      "Micronesian": {
+        "Kiribati": 3.7
+      },
+      "Polynesian": {
+        "Samoan": 2.3,
+        "Hawaiian": 1.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 2
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.9,
+        "Dominican": 0.5
+      },
+      "Mexican": {
+        "Mexican": 2.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 0.3,
+        "Sierra Leonean": 3.3
+      }
+    }
+  }
 }

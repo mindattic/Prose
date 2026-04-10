@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6727b35944f38519eb05b81",
   "type": "character",
-  "name": "Lars Haugen-Solberg",
+  "name": "Dmitri Calvillo-Lewandowski",
   "aliases": [
     "Femi",
     "The Cartographer",
@@ -14,7 +14,7 @@
   "age": 67,
   "status": "active",
   "location": "Old Harbor, near Lake Shore and Navy Pier",
-  "description": "Obafemi Adeyinka-Cruces is a large, slow-moving man with the specific gravity of someone who has decided to stop being in a hurry. Yoruba and Puerto Rican, he carries both heritages openly — a rotating collection of hand-dyed agbadas worn over thermal underlayers against the harbor cold, and a way of greeting people that involves actual sustained eye contact, which in Old Harbor is either deeply comforting or deeply unnerving depending on what you've done lately. His face is deeply lined, his beard gone fully white, his hands scarred from years of dock work before he transitioned into his current occupation. His only augmentation is a cochlear archive implant he had installed at fifty — it records everything he hears with his consent toggle on, and he keeps the toggle on almost always.\n\nFemi has lived in Old Harbor for forty-one years, long enough to have watched three generations of families cycle through its tenements, its fishing operations, its smuggling economies, and its periodic brutal restructurings at the hands of corporate port interests. He is not a fixer, not a runner, not muscle. He is the person who knows where the bodies are buried because he attended the funerals. His currency is memory — who owes whom, which families have a blood grudge going back to the '50s, which enforcement captain can be reasoned with and which one enjoys it too much. He trades information carefully, at his own pace, and has an intricate personal ethics about what he will and will not sell.\n\nHe runs a small legitimate operation: a repair stall for small watercraft and electronics near Pier 14, which gives him a reason to be everywhere and talk to everyone. He has no ambitions beyond Old Harbor. He has been offered relocation, money, protection, and has declined all of it. He says he is too old to learn a new set of names. What he means is that Old Harbor is the only place where he is fully himself, and he will not trade that for safety.",
+  "description": "Dmitri Calvillo-Lewandowski is a large, slow-moving man with the specific gravity of someone who has decided to stop being in a hurry. Yoruba and Puerto Rican, he carries both heritages openly — a rotating collection of hand-dyed agbadas worn over thermal underlayers against the harbor cold, and a way of greeting people that involves actual sustained eye contact, which in Old Harbor is either deeply comforting or deeply unnerving depending on what you've done lately. His face is deeply lined, his beard gone fully white, his hands scarred from years of dock work before he transitioned into his current occupation. His only augmentation is a cochlear archive implant he had installed at fifty — it records everything he hears with his consent toggle on, and he keeps the toggle on almost always.\n\nFemi has lived in Old Harbor for forty-one years, long enough to have watched three generations of families cycle through its tenements, its fishing operations, its smuggling economies, and its periodic brutal restructurings at the hands of corporate port interests. He is not a fixer, not a runner, not muscle. He is the person who knows where the bodies are buried because he attended the funerals. His currency is memory — who owes whom, which families have a blood grudge going back to the '50s, which enforcement captain can be reasoned with and which one enjoys it too much. He trades information carefully, at his own pace, and has an intricate personal ethics about what he will and will not sell.\n\nHe runs a small legitimate operation: a repair stall for small watercraft and electronics near Pier 14, which gives him a reason to be everywhere and talk to everyone. He has no ambitions beyond Old Harbor. He has been offered relocation, money, protection, and has declined all of it. He says he is too old to learn a new set of names. What he means is that Old Harbor is the only place where he is fully himself, and he will not trade that for safety.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -236,7 +236,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,41 +254,22 @@
   ],
   "related_entities": [
     "Irontide Tidal Energy",
-    "ARCHIVE",
+    "Harbor Fish Shack",
     "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand",
-    "Biometric Denial Charge BDC-1",
-    "Chronicle",
-    "Clean Hands",
-    "Corva Lam",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Emeka Johansson-Orozco",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPS-9 'Rattler'",
-    "Old Harbor",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TC-3 'Crucible'",
-    "The Archive",
-    "The Burden Clause",
-    "The Heritage Vault"
+    "The Pure Hand"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Northern European, East Asian, North African, and Sub-Saharan African ancestry in complex blend. 33.6% Northern European gives bone structure and fair hair potential; 28.4% East Asian contributes to eye shape and facial geometry; 15.6% North African and 14.8% Sub-Saharan African provide warm undertones and melanin; 7.6% South Asian adds subtle depth to features.",
+    "heritage": "Eastern European (52.6%), Indigenous American (25.2%), and Hispanic/Latin American (22.2%) ancestry creating a distinctly blended phenotype. Strong Eastern European foundation visible in bone structure and facial geometry, with pronounced Indigenous American cheekbones and facial width, warmed throughout by Hispanic/Latin American melanin contribution. The combination produces a weathered, richly-toned appearance that reflects decades of sun and wind exposure across all three ancestral streams.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Large-framed, broad-shouldered, softened with age but still substantial. Moves with deliberate slowness — not infirmity, but intentionality. The build of a man who spent thirty years doing physical labor and has earned the right to stop rushing.",
     "hair_color": "White",
     "hair_style": "Close-cropped, groomed but not fastidious",
     "hair_length": "Short",
-    "eye_color": "Dark brown with slight monolid characteristic from East Asian ancestry, slightly clouded at the edges with age",
-    "skin_tone": "Medium-warm brown with golden undertones — the result of Northern European and East Asian baseline with significant Sub-Saharan and North African melanin. Sun-darkened from decades on the water, showing deep weathering.",
-    "complexion": "Deeply lined face with full white beard kept neatly trimmed. High cheekbones with East Asian structure softened by age and accumulated sun damage. Skin shows four decades of harbor exposure — wind-marked and weathered but not ashy. Eyes carry the weight of accumulated knowledge; expression defaults to calm attentiveness. Facial geometry shows the blended ancestry in the width between eyes and subtle angularity of jaw.",
+    "eye_color": "Dark brown",
+    "skin_tone": "Rich medium-bronze with warm golden undertones — the result of Eastern European baseline substantially deepened by Indigenous American and Hispanic/Latin American melanin. Sun-darkened from decades on the water into a deep, weathered mahogany-brown.",
+    "complexion": "Deeply lined face with full white beard kept neatly trimmed. Prominent high cheekbones with strong Indigenous American structure softened by age and accumulated sun damage. Wide-set eyes characteristic of Indigenous American ancestry. Skin shows four decades of harbor exposure — wind-marked and weathered with consistent warm bronze tone throughout. Eyes carry the weight of accumulated knowledge; expression defaults to calm attentiveness. Facial geometry shows blended ancestry in pronounced cheekbone prominence, moderate facial width, angular jaw structure, and strong facial planes characteristic of the Eastern European and Indigenous American combination.",
     "distinguishing_marks": [
       "Extensive scarring across both hands — pale, old scars from dock work and tool injuries, particularly prominent across knuckles and palms",
       "A thin white scar running from left temple toward ear, barely visible beneath beard line",
@@ -299,16 +280,44 @@
     "posture_movement": "Stands with weight evenly distributed, rarely shifts quickly. Moves with economical precision — every motion purposeful. Maintains sustained eye contact during conversation, a habit that makes people either trust him immediately or become deeply uncomfortable. Gestures are spare but expressive with hands. Walks with the gait of someone who has learned to pace himself over distance.",
     "clothing_style": "Tier 4 / working-class authentic. Rotates through hand-dyed agbadas in rust, indigo, and ochre over thermal underlayers designed for harbor wind. Worn but meticulously maintained — fabric shows age but no holes. Heavy canvas work pants, steel-toed boots resoled multiple times. A dark wool coat that has belonged to him for at least fifteen years. No corporate logos, no artificial fiber where natural would suffice. Grooming is deliberate: beard oil, clean hands despite the work, clothes that announce his heritage without apology."
   },
-  "image_prompt": "A weathered man in his sixties with medium-warm brown sun-darkened skin, white close-cropped hair, and a neatly trimmed white beard. His face shows deep lines from decades of labor and sun exposure, with high cheekbones and dark brown eyes reflecting East Asian ancestry blended with African and European heritage. He wears a hand-dyed rust-colored agbada over thermal underlayers, heavy canvas work pants, and resoled steel-toed boots. A dark wool coat drapes across his broad shoulders. Visible scarring marks both hands from old dock injuries. Behind his left ear, a small silver cochlear implant catches the light. He stands with deliberate posture in a Great Lakes harbor setting at dusk, container cranes and ship lights in soft focus behind him. Cyberpunk 2226, authentic working-class aesthetic, harbor wind and salt air visible in the atmosphere. Moody industrial lighting, warm golden hour mixed with neon from distant station lights. --ar 2:3 --v 6",
+  "image_prompt": "An older man of mixed Eastern European, Indigenous American, and Hispanic/Latin American heritage, standing 188cm tall with substantial, weathered build. Dark mahogany-bronze skin deeply creased from decades of sun exposure, prominent high cheekbones, wide-set dark brown eyes conveying calm attentiveness. White close-cropped hair and neatly trimmed white beard. Scarred hands with pale old dock-work scars visible. Wearing hand-dyed rust-colored agbada over thermal layer, heavy canvas work pants, steel-toed boots. Small silver cochlear implant port visible behind left ear. Standing with economical posture in Great Lakes harbor setting, GLMZ, moody maritime lighting, worn authenticity, no corporate aesthetic, slow intentional presence, weathered pier background, cinematic realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 33.6,
-    "East Asian": 28.4,
-    "North African": 15.6,
-    "Sub-Saharan African": 14.8,
-    "South Asian": 7.6
+    "Eastern European": 52.6,
+    "Indigenous American": 25.2,
+    "Hispanic/Latin American": 22.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 52.6
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 9.1,
+        "Mixtec": 6.9
+      },
+      "Plains Nations": {
+        "Choctaw": 6.7
+      },
+      "Andean": {
+        "Quechua": 2.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 7.8
+      },
+      "South American": {
+        "Ecuadorian": 2.7
+      },
+      "Mexican": {
+        "Mexican": 11.7
+      }
+    }
+  }
 }

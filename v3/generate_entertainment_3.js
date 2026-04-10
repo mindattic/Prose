@@ -114,7 +114,7 @@ function getExistingByCategory() {
 }
 
 // -- World Context --
-const WORLD_CONTEXT = `Setting: Meridian 88, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — this is QUANTA, not the Greek letter. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — this is QUANTA, not the Greek letter. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification. Synth-protein is the primary food source for Tiers 1-3.
 
@@ -131,7 +131,7 @@ const CATEGORIES = [
   {
     category: 'game',
     count: 50,
-    prompt: `Generate {count} video games / neural games for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} video games / neural games for GLMZ, spanning 2183-2226. Include:
 - BCI-integrated games (full neural immersion, you ARE the character, sensory feedback)
 - Full-immersion neural sims (live entire alternate lives, historical periods, fantasy worlds)
 - AR games played in real physical space (citywide manhunt games, territory capture, urban exploration challenges)
@@ -142,7 +142,7 @@ Mix AAA corponation releases with indie neural devs and underground mods. Some g
   {
     category: 'sport',
     count: 30,
-    prompt: `Generate {count} sports / sporting leagues for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} sports / sporting leagues for GLMZ, spanning 2183-2226. Include:
 - Augmented sports leagues (chrome-enhanced athletes, no limits on augmentation, superhuman feats)
 - Zero-aug purist leagues (strictly unaugmented athletes, viewed as either noble or quaint)
 - Automaton fighting (Iowan Behemoths and other autonomous machines in arena combat — these are MACHINES, not alive)
@@ -154,7 +154,7 @@ Each sport should have a founding year, governing body or lack thereof, and tier
   {
     category: 'team',
     count: 15,
-    prompt: `Generate {count} sports teams for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} sports teams for GLMZ, spanning 2183-2226. Include:
 - Corporate-owned augmented league teams (like modern NFL/Premier League but with chrome)
 - Purist league teams (zero-aug, traditional)
 - Underground fighting stables
@@ -164,7 +164,7 @@ Each team needs: founding year, sport/league, home district in M88, owner or spo
   {
     category: 'athlete',
     count: 15,
-    prompt: `Generate {count} notable athletes for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} notable athletes for GLMZ, spanning 2183-2226. Include:
 - Augmented superstars (chrome-enhanced, corporate-sponsored, celebrity status)
 - Purist legends (unaugmented athletes who compete at near-aug levels through geneware-free training)
 - Controversial figures (doping scandals but with augmentation — illegal chrome, hidden geneware advantages)
@@ -175,7 +175,7 @@ Each athlete needs: full name (Ubiquitous Diaspora — mixed heritage), sport, a
   {
     category: 'gambling',
     count: 30,
-    prompt: `Generate {count} gambling / betting operations and products for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} gambling / betting operations and products for GLMZ, spanning 2183-2226. Include:
 - Legal corporate gambling platforms (BCI-integrated casino experiences, neural poker, virtual race betting)
 - Underground fighting ring betting operations (Tier 1 bookmakers, the Shelf's economy runs on this)
 - Automaton vs human betting markets (machine fighting odds, cross-category matchups)
@@ -187,7 +187,7 @@ Each needs: type of operation, legality, typical stakes, who runs it, tier avail
   {
     category: 'tabletop',
     count: 30,
-    prompt: `Generate {count} board games / card games / tabletop games for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} board games / card games / tabletop games for GLMZ, spanning 2183-2226. Include:
 - AR-overlay board games (physical pieces + augmented reality layers visible through BCI or goggles)
 - Deliberately analog games (no tech, played as rebellion against constant connectivity — popular in Shelf bars)
 - Card games played in bars and gambling dens (some with smart-ink cards that shift)
@@ -200,11 +200,11 @@ Each needs: year introduced, player count, typical setting where it's played, cu
   {
     category: 'recreation',
     count: 30,
-    prompt: `Generate {count} recreational activities / venues for Meridian 88, spanning 2183-2226. Include:
+    prompt: `Generate {count} recreational activities / venues for GLMZ, spanning 2183-2226. Include:
 - VR arcades (full-body immersion pods, group experiences, competitive arenas)
 - Sensory parlors (BCI-driven experiences: taste memories, emotional replays, synesthetic journeys)
 - Experience clubs (pay to live someone else's recorded day — a Spire executive, a Shelf runner, a historical figure)
-- Thrill-seeking activities (urban climbing on Meridian 88 megastructures, storm-chasing in the Wastes, underground racing)
+- Thrill-seeking activities (urban climbing on GLMZ megastructures, storm-chasing in the Wastes, underground racing)
 - Social recreation (dance clubs with neural-sync, communal dream spaces, memory sharing circles)
 - Fitness and wellness (aug-compatible gyms, neural meditation centers, combat training dojos)
 Each needs: year established or popularized, tier accessibility, typical cost, location type, legal status.`
@@ -239,7 +239,7 @@ async function generateCategory(catDef) {
     const filledPrompt = prompt
       .replace('{count}', batchSize);
 
-    const system = `You generate entertainment entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate entertainment entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

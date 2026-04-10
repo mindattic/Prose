@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e876b588688ff488f9d86c",
   "type": "character",
-  "name": "Frost Tetteh",
+  "name": "Frost Sigurdsson",
   "aliases": [
     "Zephyr",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Daulet Novak-Tetteh is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Daulet Novak-Tetteh describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Frost Sigurdsson is average height but with a presence that fills more space than the body accounts for. At 37, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a smuggler out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Frost Sigurdsson describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.22,
@@ -261,7 +261,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,35 +275,22 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
+    "Frost",
     "Slagworks Industrial",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Mika Sorel",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Street-Custom Loaded Pipe 'Bell Ringer'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (68.7%) with significant Southeast Asian (14.0%), Middle Eastern (11.3%), and East Asian (6.0%) ancestry. The genetic blend produces rich, complex phenotype: deep Sub-Saharan African bone structure and coloration as foundation, with Southeast Asian and Middle Eastern features softening and refining the angles, East Asian elements contributing subtle eye shape nuance.",
+    "heritage": "Northern European dominant (53.1%) with significant Southeast Asian (22.4%), South Asian (12.8%), and East Asian (11.7%) ancestry. The genetic blend produces a striking phenotype: Northern European bone structure provides the foundation, while Southeast Asian refinement softens facial angles, South Asian warmth deepens skin tone and eye richness, and East Asian subtlety shapes eye contour and cheekbone definition. The result is a cool-to-warm complexion with unexpected depth—Nordic structure illuminated from within by warmer ancestral influences, creating a face that reads as neither fully Northern nor fully Asian, but a sophisticated integration of both.",
     "height_cm": 174,
     "weight_kg": 78,
     "build": "Lean and economical — muscle definition visible in forearms and shoulders from years of precise, controlled work. No excess mass. Moves like someone who has learned to inhabit minimal space.",
     "hair_color": "Dark brown, graying at temples",
     "hair_style": "Short, blunt cut — functional. Kept neat. No vanity, pure maintenance.",
     "hair_length": "Short",
-    "eye_color": "Deep brown, natural",
-    "skin_tone": "Rich warm brown with subtle golden undertones from Sub-Saharan African heritage, warmed further by Southeast Asian and Middle Eastern ancestry blend. Sun-darkened from waterfront exposure, creating depth in coloration.",
-    "complexion": "Clean-shaven, angular face with strong, high cheekbones characteristic of Sub-Saharan African ancestry, refined by Southeast Asian and Middle Eastern features into elegant proportions. Weathered around the eyes from six years of squinting at contracts and horizon. Skin shows minor sun damage and one thin scar through left eyebrow (pale, old). Expression deliberately neutral — a mask worn so long it's become the face.",
-    "eye_color_note": "Natural deep brown with subtle warmth from ancestral blend",
+    "eye_color": "Deep brown with warm undertones, natural",
+    "skin_tone": "Olive-golden medium tone—Northern European fairness enriched and warmed by Southeast Asian and South Asian ancestry. Sun-darkened from waterfront exposure, creating dimensional depth in coloration while retaining cool Nordic undertones at the jaw and temples. The blend creates a warm-neutral complexion that catches light distinctly.",
+    "complexion": "Clean-shaven, structured face with Northern European bone prominence refined by Southeast Asian and South Asian features into elegant proportions. Cheekbones defined but not severe, suggesting the blend of Nordic angularity with warmer ancestral softening. Eye shape shows East Asian influence in the subtle epicanthal fold and upper lid definition, while eye depth and warmth reflect South Asian genetics. Jaw shows Nordic structure tempered by Southeast Asian refinement. Weathered around the eyes from six years of squinting at contracts and horizon. Skin shows minor sun damage and one thin scar through left eyebrow (pale, old). Expression deliberately neutral — a mask worn so long it's become the face.",
     "distinguishing_marks": [
       "Thin horizontal scar through left eyebrow, approximately 3cm, pale and well-healed",
       "Burn scar on right forearm, size of a thumbprint, dark and slightly raised — chemical burn from early cargo mishap",
@@ -313,15 +300,54 @@
     "posture_movement": "Stands with weight balanced, never fully committed to one leg. Moves with economical precision — no wasted motion. Hands stay visible and controlled when speaking to others. Head movements precise and deliberate, often angling to use directional microphone pickup. The way he occupies space suggests someone constantly measuring distances and angles.",
     "clothing_style": "Tier 4 practical: dark, neutral colors — charcoal, black, deep gray. Reinforced cargo pants with multiple sealed pockets (for secure storage of contracts and dataflakes). Matte black synth-leather jacket, worn but well-maintained, fitted close to the body. No logos or corporate affiliations visible. Subdermal armor plating under left shoulder, detectable only as subtle rigidity under fabric. Nondescript mid-tier boots with reinforced soles for dock work. Everything is functional, everything communicates: 'I know what I'm doing and I don't need to tell you about it.'"
   },
-  "image_prompt": "Frost Tetteh, cyberpunk 2226, portrait of a lean 174cm tall man with rich warm golden-brown skin reflecting Sub-Saharan African and Southeast Asian heritage. Deep brown natural eyes, clean-shaven angular face with strong high cheekbones, weathered expression. Short dark brown hair graying at temples. Polished titanium and black polymer cyberears with visible directional microphone arrays and silver tuning ports. Thin pale scar through left eyebrow, dark chemical burn scar on right forearm. Dark charcoal and black clothing: matte black synth-leather jacket fitted to body, reinforced cargo pants, nondescript boots. Faint tattoo on left wrist (vertical line with three horizontal marks). Economical posture, balanced stance, hands visible and controlled. Hands visible and controlled. Great Lakes Metropolitan dock setting, rain-slicked concrete, cool blue-gray lighting with warm amber streetlight accent, cinematic noir cyberpunk atmosphere, professional and measured, no wasted motion --ar 2:3 --v 6",
+  "image_prompt": "Frost Sigurdsson, GLMZ, Great Lakes Metropolitan Zone. 174cm tall, lean muscular build. Olive-golden skin tone blending Nordic fairness with Southeast and South Asian warmth, sun-darkened from waterfront work. Sharp Northern European bone structure refined by Asian ancestry—defined cheekbones, elegant facial proportions, natural deep brown eyes with warm undertones showing East Asian eye shape subtlety. Dark brown hair graying at temples, short blunt cut. Clean-shaven with weathered lines around eyes. Thin pale scar through left eyebrow. Polished titanium and black polymer cyberears with visible microphone arrays and silver tuning ports. Dark charcoal synth-leather jacket fitted close, reinforced cargo pants, nondescript boots. Subdermal armor plating visible under left shoulder. Hands visible and controlled. Precise, economical posture. Standing on industrial dock at dusk, neon reflections off water behind him, cool blue and amber lighting. Expression deliberately neutral, mask-like. Professional, measured, dangerous competence. Cinematic, noir neo-noir atmosphere, film noir lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 68.7,
-    "Southeast Asian": 14.0,
-    "Middle Eastern": 11.3,
-    "East Asian": 6.0
+    "Northern European": 53.1,
+    "Southeast Asian": 22.4,
+    "South Asian": 12.8,
+    "East Asian": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 45.8,
+        "English": 7.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 14.8
+      },
+      "Thai": {
+        "Thai": 5.3
+      },
+      "Cambodian": {
+        "Khmer": 2.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.1
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3
+      },
+      "Indian": {
+        "Bengali": 5.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.7
+      },
+      "Chinese": {
+        "Cantonese": 6.4,
+        "Mandarin Northern": 3.6
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "The Burnished Market, Engelheim, near Lincoln and Addison",
-  "description": "Nnamdi is a tall man who has bent slightly toward the horizontal over six decades, giving him the look of someone perpetually leaning in to tell you something. His hair is close-cropped white, his skin deeply lined, and his eyes are sharp behind a pair of thick-framed corrective lenses he refuses to replace with optical implants on principle — though the lenses do have an overlay function he uses for catalog searching. He dresses in the deliberate, considered style of a man who believes clothing is a form of argument: always a pressed collar, always polished shoes, always slightly too formal for wherever he is. It reads as dignity in Engelheim and pretension everywhere else. He has no geneware and finds the question slightly rude.\n\nNnamdi's stall is a dense archive of physical media — pressed data-plates, original optical discs in sealed cases, handmade data-crystals, printed zines, and annotated hard copies of documents that technically don't exist. He can find almost anything if given enough time and a reasonable description. He is opinionated, prolix, and absolutely certain that the things he sells matter in ways that most of his customers will only understand decades later. He is frequently correct and only occasionally insufferable about it.",
+  "description": "Slate Sepúlveda is a tall man who has bent slightly toward the horizontal over six decades, giving him the look of someone perpetually leaning in to tell you something. His hair is close-cropped white, his skin deeply lined, and his eyes are sharp behind a pair of thick-framed corrective lenses he refuses to replace with optical implants on principle — though the lenses do have an overlay function he uses for catalog searching. He dresses in the deliberate, considered style of a man who believes clothing is a form of argument: always a pressed collar, always polished shoes, always slightly too formal for wherever he is. It reads as dignity in Engelheim and pretension everywhere else. He has no geneware and finds the question slightly rude.\n\nSlate Sepúlveda's stall is a dense archive of physical media — pressed data-plates, original optical discs in sealed cases, handmade data-crystals, printed zines, and annotated hard copies of documents that technically don't exist. He can find almost anything if given enough time and a reasonable description. He is opinionated, prolix, and absolutely certain that the things he sells matter in ways that most of his customers will only understand decades later. He is frequently correct and only occasionally insufferable about it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,32 +226,14 @@
   ],
   "related_entities": [
     "The Burnished Market",
-    "Riddle",
     "Engelheim",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "ARCHIVE",
-    "Gravimetric Collapse Charge GCC-9",
-    "Abeke Soriano-Dlamini",
-    "Arcturus Bulwark APC",
-    "Arcturus PX-1 'Phantom'",
-    "Emeka Johansson-Orozco",
-    "MERIDIAN",
-    "Meridian Core",
-    "Patient Zero",
-    "The Archive",
-    "The Bazaar",
-    "The Heritage Vault",
-    "The Meridian Core",
-    "The Pure Hand",
-    "The Question",
-    "The Unfinished Theorem",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Slate",
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Pacific Islander with significant Hispanic/Latin American, Eastern European, Southeast Asian, Sub-Saharan African, and Indigenous American ancestry—a complex Diaspora blend reflecting the Ubiquitous mixing of 2226. Genetic heritage expressed through warm, sun-darkened skin with layered undertones from multiple continental sources.",
+    "heritage": "Pacific Islander dominant (46.8%) with substantial Southeast Asian (23.8%) and Hispanic/Latin American (17.6%) ancestry, complemented by Sub-Saharan African (10.8%) and minimal South Asian (1.0%) heritage. A Ubiquitous Diaspora blend reflecting 2226's global genetic mixing. Genetic expression creates warm, sun-darkened complexion from tropical and subtropical ancestry combined, with layered undertones—Pacific Islander richness, Southeast Asian golden warmth, Sub-Saharan depth, and Hispanic/Latin American amber undertones creating a burnished, equatorial-exposed patina.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Tall and lean with age-related postural rounding; shoulders slightly forward as if perpetually leaning in. Wiry musculature suggests decades of standing and fine manual work rather than physical labor.",
@@ -259,8 +241,8 @@
     "hair_style": "Close-cropped, precise edges — maintained with deliberate care",
     "hair_length": "Short",
     "eye_color": "Dark brown, sharp and alert",
-    "skin_tone": "Deep warm mahogany-bronze with complex undertones—Pacific Islander sun-darkening layered with Southeast Asian warmth and Sub-Saharan depth, subtle olive undertones from Eastern European and Hispanic heritage. Skin appears burnished by decades under equatorial and subtropical light exposure.",
-    "complexion": "Heavily lined face with deep creases around eyes and mouth—map of sixty years of expression and environmental exposure across multiple climate zones. Skin weathered but meticulously groomed, with the particular texture of someone whose ancestry includes both high-altitude and tropical heritage. Minimal facial hair, clean-shaven daily. No visible acne or skin lesions; age spots on temples and backs of hands show the characteristic patterning of mixed-heritage sun exposure.",
+    "skin_tone": "Deep warm bronze with Pacific Islander sun-darkened richness, golden warmth from Southeast Asian heritage, deep Sub-Saharan undertones, and subtle amber from Hispanic/Latin American ancestry. Skin appears weathered by decades under tropical and subtropical light with characteristic equatorial sun-exposure patterning.",
+    "complexion": "Heavily lined face with deep creases around eyes and mouth—map of sixty years of expression and environmental exposure across multiple climate zones. Facial structure reflects Pacific Islander and Southeast Asian genetic expression: broad cheekbones, substantial jawline softened by age, slightly prominent nasal bridge with refined projection. Skin weathered but meticulously groomed, with the particular texture of someone whose ancestry spans high-humidity tropical regions. Minimal facial hair, clean-shaven daily. No visible acne or skin lesions; age spots on temples and backs of hands show the characteristic patterning of equatorial sun exposure across mixed heritage.",
     "distinguishing_marks": [
       "Fine scar tissue along left temple, approximately 3cm, consistent with childhood injury—faded but visible under direct light",
       "Small burn mark on inside of right wrist (2cm diameter), pale and old, location suggests accidental contact with heated equipment decades ago"
@@ -269,17 +251,57 @@
     "posture_movement": "Habitually leans forward at the torso when speaking or listening, creating an impression of intense engagement. Moves with deliberate slowness—not infirm, but considered. Hands gesture precisely when explaining; fingers move with the dexterity of someone accustomed to handling fragile objects.",
     "clothing_style": "Deliberately formal regardless of context: pressed collars, polished shoes, fitted vests or blazers even in the Burnished Market. Favors earth tones, grays, and deep blacks. Clothes are well-maintained, slightly dated (2210s-era tailoring), and deliberately read as dignity in working-class Engelheim. Wears a battered leather satchel for daily transactions—genuinely worn, not affectation."
   },
-  "image_prompt": "Slate Sepúlveda, 60-year-old man with deep mahogany-bronze skin reflecting Pacific Islander, Southeast Asian, and Sub-Saharan heritage, white close-cropped hair, standing in cyberpunk 2226 Great Lakes Metropolitan Zone. Tall lean frame, slightly forward-leaning posture suggesting intense focus. Wearing formal 2210s-era pressed gray blazer and collared shirt, polished shoes, thick-framed analog corrective lenses with subtle interface overlay. Deeply lined weathered face, sharp dark brown eyes, small temple scar visible. Holding worn leather satchel. Standing in Burnished Market or industrial Engelheim district, neon signage in background casting cool blue-violet light across his warm skin tones. Deliberate, dignified posture. Cinematic, naturalistic lighting emphasizing age and complexity of heritage. --ar 2:3 --v 6",
+  "image_prompt": "Slate Sepúlveda, elderly neo-noir character, 188cm tall lean frame, deep warm bronze skin with Pacific Islander sun-weathered patina, Southeast Asian and Hispanic/Latin American genetic features—broad cheekbones, substantial jawline, refined nasal structure. White close-cropped hair, sharp dark brown eyes behind thick-framed pre-2200s corrective lenses with subtle overlay interface. Deep facial creases and age-spots from equatorial sun exposure. Faded scar on left temple, old burn mark on right wrist. Clean-shaven, meticulously groomed despite weathered skin. Wearing formal 2210s-era pressed collared shirt, fitted charcoal blazer, polished shoes in earth tones and grays. Leaning forward with deliberate posture, precise hand gestures, battered leather satchel at side. GLMZ, Great Lakes Metropolitan Zone, analog-retro aesthetic, dignity and precision, warm tungsten lighting highlighting skin texture and weathering, slightly forward lean creating intensity, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 39.9,
-    "Hispanic/Latin American": 17.9,
-    "Eastern European": 15.6,
-    "Southeast Asian": 12.6,
-    "Sub-Saharan African": 10.4,
-    "Indigenous American": 3.6
+    "Pacific Islander": 46.8,
+    "Southeast Asian": 23.8,
+    "Hispanic/Latin American": 17.6,
+    "Sub-Saharan African": 10.8,
+    "South Asian": 1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 35.1
+      },
+      "Melanesian": {
+        "Ni-Vanuatu": 4.8
+      },
+      "Micronesian": {
+        "Kiribati": 4,
+        "Palauan": 2.9
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 17.3
+      },
+      "Filipino": {
+        "Bicolano": 1.9,
+        "Cebuano": 0.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 17.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 10.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 1
+      }
+    }
+  }
 }

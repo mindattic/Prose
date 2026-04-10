@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ce7abda481695f8d2a56c0",
   "type": "character",
-  "name": "Juno Björnsdóttir",
+  "name": "Juno Jang",
   "aliases": [
     "Brin",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 11,
   "status": "active",
   "location": "Edgewater Prism — Sterling-Nakamura Preparatory Institute, near Lincoln and Clark",
-  "description": "Bryndís is slight and pale-skinned with warm undertones, freckled heavily across the nose and cheekbones, with naturally silver-white hair that they keep braided with fiber-optic threads — not for vanity but because the threads respond to nearby wireless signals and they like reading the patterns. Their eyes have sectoral heterochromia, one pale grey and one dark amber, which is natural. They wear the Sterling-Nakamura Prep uniform with every third button deliberately undone because they find the exact level of compliance-but-not-quite interesting to maintain.\n\nBryndís is genuinely exceptional in ways that are difficult for adults around them to process: not just intelligent in measurable metrics but structurally imaginative, able to see relationships between information domains that specialists miss. They are currently enrolled in the gifted track at Sterling-Nakamura Prep through a Tier 3 family placement — their parent is a mid-level Sterling-Nakamura logistics analyst — and are broadly bored by the curriculum except for informal theology, which is not on any official syllabus. They have independently compiled what they call a Concordance: a 200-page annotated taxonomy of ELF behavioral patterns collected from public data-offering records and community shrine logs, which they have been submitting anonymously to a fringe academic forum.",
+  "description": "Juno Jang is slight and pale-skinned with warm undertones, freckled heavily across the nose and cheekbones, with naturally silver-white hair that they keep braided with fiber-optic threads — not for vanity but because the threads respond to nearby wireless signals and they like reading the patterns. Their eyes have sectoral heterochromia, one pale grey and one dark amber, which is natural. They wear the Sterling-Nakamura Prep uniform with every third button deliberately undone because they find the exact level of compliance-but-not-quite interesting to maintain.\n\nJuno Jang is genuinely exceptional in ways that are difficult for adults around them to process: not just intelligent in measurable metrics but structurally imaginative, able to see relationships between information domains that specialists miss. They are currently enrolled in the gifted track at Sterling-Nakamura Prep through a Tier 3 family placement — their parent is a mid-level Sterling-Nakamura logistics analyst — and are broadly bored by the curriculum except for informal theology, which is not on any official syllabus. They have independently compiled what they call a Concordance: a 200-page annotated taxonomy of ELF behavioral patterns collected from public data-offering records and community shrine logs, which they have been submitting anonymously to a fringe academic forum.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -156,7 +156,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,24 +170,15 @@
     "Edgewater Prism",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Open Syllabus",
+    "GLMZ",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrogio Waweru-Djordanović",
-    "Axiom Hovercraft (Lake Patrol)",
-    "Idris Forsberg-Quaye",
-    "MERIDIAN",
-    "Nurlan Morita-Antwi",
-    "Pikasso Wemba-Þórðarson",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Mixed ancestry from Hispanic/Latin American, East Asian, Sub-Saharan African, Northern European, Eastern European, and Middle Eastern backgrounds; phenotypically displays warm-toned skin with East Asian and Latin American features blended with African and Northern European traits",
+    "heritage": "Mixed ancestry predominantly East Asian (39.7%) and Eastern European (32.8%), with significant Middle Eastern (15.5%), Sub-Saharan African (8.1%), and South Asian (3.9%) heritage; phenotypically displays warm golden-bronze skin with East Asian bone structure enhanced by Eastern European angular features, Middle Eastern warmth, African depth, and South Asian refinement creating a uniquely balanced, luminous appearance",
     "height_cm": 142,
     "weight_kg": 34,
     "build": "Slight and lean, pre-adolescent frame with delicate bone structure; movements economical and precise rather than restless",
@@ -195,27 +186,73 @@
     "hair_style": "Worn in tight, intricate braids pinned at the nape; threads run parallel to strands, creating a subtle iridescent pattern",
     "hair_length": "Medium (shoulder-length when unbraided)",
     "eye_color": "Sectoral heterochromia — left eye pale grey, right eye dark amber; both natural, no augmentation",
-    "skin_tone": "Warm caramel-bronze with golden undertones; blend of East Asian, Latin American, and Sub-Saharan African ancestry creating a luminous, medium-deep complexion",
-    "complexion": "Warm-toned face with subtle freckling across the nose and cheekbones in rust and tan tones; defined cheekbones with soft, rounded contours reflecting East Asian and Latin American features; clear skin with minimal blemish; expression often distant or analytically focused; light freckling extends across shoulders and bridge of nose",
+    "skin_tone": "Warm golden-bronze with olive-amber undertones; rich medium complexion balancing East Asian warmth, Eastern European cool undertones, Middle Eastern luminosity, with African depth and South Asian refinement creating a naturally glowing, dimensionally complex appearance",
+    "complexion": "Face with East Asian-influenced bone structure (defined cheekbones, subtle upper eyelid fold) refined by Eastern European angular definition and Middle Eastern warmth; light freckling across nose and cheekbones in tan-gold and warm amber tones creating constellation-like patterns; soft, rounded lower contours blended with higher cheekbone prominence; clear skin with minimal blemish; expression often distant or analytically focused",
     "distinguishing_marks": [
-      "Subtle freckling across nose and cheekbones in rust-brown tones creating constellation-like patterns",
+      "Subtle freckling across nose and cheekbones in tan-gold and warm amber tones creating constellation-like patterns",
       "Faint silver scar on the inside of the left wrist (approximately 2cm, surgical — neural interface implant site, well-healed)"
     ],
     "visible_augmentations": "Fiber-optic threads integrated into hair braids, visible only when active (emitting blue-green response signals); Sterling-Nakamura standard neural interface access port visible at the temple (small, silver-rimmed, typically covered by hair). No other visible modifications.",
     "posture_movement": "Sits in asymmetrical, angled positions; when still, often motionless for extended periods. Walks with careful, economical steps; hands frequently gesture in abstract patterns when thinking through problems. Maintains minimal eye contact except when intensely focused on a single person. Fidgets with braid-threads when concentrating.",
     "clothing_style": "Sterling-Nakamura Preparatory Institute uniform (navy blazer, white shirt, grey trousers or skirt, school-issued) worn with deliberate non-compliance: every third button undone (currently the third and ninth buttons of the blazer), creating a rhythmic visual pattern. Uniform is well-maintained but worn with the precision of someone who finds the act of partial compliance more interesting than full conformity. No jewelry except the fiber-optic threads. Shoes are regulation school-issue loafers, always scuffed on the heel."
   },
-  "image_prompt": "Juno Björnsdóttir, 142cm tall, slender pre-adolescent frame, warm caramel-bronze skin with golden undertones blending East Asian, Latin American, and Sub-Saharan African heritage. Shoulder-length silver-white hair in intricate tight braids adorned with fiber-optic threads glowing faint blue-green, pinned at nape. Sectoral heterochromia: pale grey left eye, dark amber right eye. Subtle rust-brown freckling across nose, cheekbones, and shoulders. Wearing navy Sterling-Nakamura Preparatory Institute blazer with deliberate button-undoing pattern (every third button open), white shirt, grey trousers, regulation loafers scuffed at heel. Small silver-rimmed neural interface port visible at temple. Distant, analytically focused expression. Motionless posture, hands gesturing in abstract patterns. Cyberpunk 2200s aesthetic, futuristic academy setting, cool blue-green ambient lighting highlighting fiber-optic hair threads, sterile institutional background with subtle tech elements. Mood: introspective, intellectually engaged, deliberate non-conformity --ar 2:3 --v 6",
+  "image_prompt": "Juno Jang, 12-year-old with warm golden-bronze skin and luminous olive-amber undertones reflecting mixed East Asian, Eastern European, Middle Eastern, African and South Asian heritage. East Asian bone structure with defined cheekbones and subtle eyelid fold, refined by Eastern European angular features. Constellation-like tan-gold freckling across nose and cheekbones. Sectoral heterochromia: pale grey left eye, dark amber right eye. Shoulder-length silver-white hair in tight intricate braids with fiber-optic threads that glow faint blue-green; braids pinned at nape. Slight, delicate pre-adolescent frame, 142cm tall. Wearing Sterling-Nakamura Preparatory Institute navy blazer with deliberate non-compliance pattern (every third button undone), white shirt, grey trousers, scuffed regulation loafers. Sterling-Nakamura neural interface port visible at temple. Sits in asymmetrical angle, distant analytical expression, hand gesturing in abstract thinking patterns. GLMZ, neon-lit academy corridor setting, cool blue and warm amber ambient lighting reflecting off fiber-optic threads, minimalist composition emphasizing precise economical movements --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 37.8,
-    "East Asian": 31.2,
-    "Sub-Saharan African": 15.3,
-    "Northern European": 8.4,
-    "Eastern European": 6.7,
-    "Middle Eastern": 0.6
+    "East Asian": 39.7,
+    "Eastern European": 32.8,
+    "Middle Eastern": 15.5,
+    "Sub-Saharan African": 8.1,
+    "South Asian": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 31.6
+      },
+      "Japanese": {
+        "Japanese": 8.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 32.8
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 12.1
+      },
+      "Arab Gulf": {
+        "Emirati": 3.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.9
+      },
+      "Southern African": {
+        "Zimbabwean": 2.2
+      },
+      "East African": {
+        "Ethiopian": 1.5,
+        "Tanzanian": 2.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 1.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.6
+      },
+      "Indian": {
+        "Punjabi": 0.8,
+        "Marathi": 1.3
+      }
+    }
+  }
 }

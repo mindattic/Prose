@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6527eb4a1f00ffdebe6ab66",
   "type": "character",
-  "name": "Luca Odinga",
+  "name": "Luca Makwa",
   "aliases": [
     "Kena",
     "The Eye"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Archer's Line Metro Police Monitoring Station 7, subterranean level, near Milwaukee and Damen",
-  "description": "Makena is twenty-seven and spends ten hours a day in a room that has no windows, watching 847 feeds from Archer's Line and the surrounding districts. She is slight and quick, with dark brown skin and natural hair she keeps pinned up for the headset, and she has cat ears — a cosmetic mod she got at nineteen because she wanted them, small and tawny and mobile, which is to say they move with her actual attention and have become professionally useful in ways she didn't anticipate. Her eyes are her own. She is very careful about her eyes. Her workstation has six physical monitors and one neural feed she plugs directly into via a port at her left temple.\n\nMakena is frighteningly good at her job. She has a spatial memory for camera angles that her supervisors call uncanny and she calls simply how she sees, and she notices things in footage that automated flagging misses entirely — a particular way a person is carrying their weight, a crowd behaving three seconds before it does something. She finds this ability isolating in a way she cannot quite explain. She has watched every corner of Archer's Line for four years and she has never stood in most of it.",
+  "description": "Luca Makwa is twenty-seven and spends ten hours a day in a room that has no windows, watching 847 feeds from Archer's Line and the surrounding districts. She is slight and quick, with dark brown skin and natural hair she keeps pinned up for the headset, and she has cat ears — a cosmetic mod she got at nineteen because she wanted them, small and tawny and mobile, which is to say they move with her actual attention and have become professionally useful in ways she didn't anticipate. Her eyes are her own. She is very careful about her eyes. Her workstation has six physical monitors and one neural feed she plugs directly into via a port at her left temple.\n\nLuca Makwa is frighteningly good at her job. She has a spatial memory for camera angles that her supervisors call uncanny and she calls simply how she sees, and she notices things in footage that automated flagging misses entirely — a particular way a person is carrying their weight, a crowd behaving three seconds before it does something. She finds this ability isolating in a way she cannot quite explain. She has watched every corner of Archer's Line for four years and she has never stood in most of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Archer's Line Metro Police Monitoring Station 7",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,35 +251,15 @@
   ],
   "related_entities": [
     "Archer's Line",
-    "Independent Micro-Grid Power Cooperative",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "ARCHIVE",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Cezar Watanabe-Gyasi",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Mika Sorel",
-    "NeuralPath Apex Social Integration BCI",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solveig Tambadou-Kereselidze",
-    "The Coffin Nails",
-    "The Corridor",
-    "The Heritage Vault",
-    "The Peninsula",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov",
-    "Waxwing Neuromedia",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Independent Micro-Grid Power Cooperative",
+    "Neural Palate",
+    "Corner Slice",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (43.8%) with significant East Asian (33.0%) and Eastern European (23.2%) ancestry. The combination creates distinctive facial structure blending Central African bone geometry with East Asian eye shape and cheekbone prominence, warmed by Eastern European undertones in skin undertone depth.",
+    "heritage": "Indigenous American (41.2%) with significant East Asian (22.0%), Middle Eastern (15.3%), and Hispanic/Latin American (13.6%) ancestry, plus Northern European (7.9%). The combination creates a distinctive face blending Indigenous American facial structure and bone geometry with East Asian eye shape and cheekbone prominence, warmed by Middle Eastern depth and Latin American richness, subtly brightened by Northern European undertones that create unexpected luminosity in certain light.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and quick, economical muscle definition from desk work and restless habit rather than conditioning. Wiry frame with minimal body fat, suggesting someone who forgets to eat unless reminded.",
@@ -287,8 +267,8 @@
     "hair_style": "Pinned up in a functional bun or secured wrap, kept off the face and away from the neural port at her temple",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Natural dark brown with slightly uplifted canthal axis reflecting East Asian ancestry",
-    "skin_tone": "Rich warm deep brown with golden undertones, the Sub-Saharan heritage dominant but subtly brightened by Eastern European undertones that create unexpected luminosity in certain light",
-    "complexion": "Clear, unmarked face with minimal expression lines despite her age — she spends too much time focused on screens to wrinkle. Meticulous grooming, no visible blemishes. Slight pallor from subterranean work environment offset by her rich natural skin tone. Cheekbone prominence and facial structure show East Asian influence; jawline and facial width reflect Sub-Saharan ancestry blending.",
+    "skin_tone": "Warm medium-deep brown with golden and olive undertones, the Indigenous American and Latin American heritage dominant but enriched by Middle Eastern depth and Northern European luminosity that creates unexpected brightness in certain light. Sun-kissed complexity from ancestral geography.",
+    "complexion": "Clear, unmarked face with minimal expression lines despite her age — she spends too much time focused on screens to wrinkle. Meticulous grooming, no visible blemishes. Slight pallor from subterranean work environment offset by her rich natural skin tone. Broad cheekbones reflecting Indigenous American and East Asian influence; jawline shows the blended geometry of Indigenous American and Middle Eastern ancestry with Latin American warmth. Facial width and structure balance the strong Indigenous American bone structure with East Asian definition and subtle Middle Eastern contours.",
     "distinguishing_marks": [
       "Tawny cat ears, cosmetic augmentation, small and mobile — they sit at the apex of her skull and move autonomously with her attention and emotional state",
       "Small circular port scar at her left temple, barely visible but slightly paler than surrounding skin, where her neural feed interface integrates"
@@ -297,14 +277,58 @@
     "posture_movement": "Sits with perfect stillness when focused, barely breathing. Moves with economical efficiency — nothing wasted. Her cat ears are almost constantly active, rotating and tilting with her gaze and attention, betraying what she's focusing on even when her body is motionless. When she walks, she moves quietly and deliberately, as though navigating a room full of cameras (which, to her, she always is). Occasionally touches the neural port at her temple when thinking.",
     "clothing_style": "Tier 3-4 utilitarian. Standard-issue GLMZ Metro Police uniform when on shift — smart-fabric undershirt with embedded thermal regulation, tactical vest with comm array pockets, dark utility pants with reinforced knee panels. Off-shift: comfortable, practical clothing in muted grays and blacks. Minimal jewelry except for a thin chrome bracelet on her left wrist (probably a failed augmentation attempt or a keepsake). Maintains the uniform meticulously but dresses for function rather than fashion. No visible corporate branding, no luxury indicators."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Luca Odinga, a slight 163cm woman with rich deep golden-brown skin blending Sub-Saharan, East Asian, and Eastern European ancestry. Sharp cheekbones and almond-shaped dark eyes with distinctive uplifted canthal line. Tawny feline ears with active mobility atop her skull. Dark brown hair pinned in functional bun. Small barely-visible neural port scar at left temple. Wearing GLMZ Metro Police tactical vest over smart-fabric undershirt, dark utility pants. Chrome bracelet on left wrist. Thermochromic nail tinting shifting cool-to-warm. Perfect stillness, economical posture. Subterranean lighting with neon accent, slight pallor beneath warm skin tone. Focused, alert expression with ears rotating to attention. Professional, utilitarian aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Luca Makwa, 163cm tall, wiry build, warm medium-deep brown skin with golden and olive undertones blending Indigenous American, East Asian, Middle Eastern, Hispanic, and Northern European heritage. Dark brown eyes with slightly uplifted canthal axis, clear complexion with prominent broad cheekbones and blended jawline. Natural dark brown hair pinned in functional bun, pulled back from temple. Active tawny cat ears with autonomous mobility at skull apex. Small circular port scar at left temple. Chromatic temperature-shifting nail tints in cool blues and warm ambers. Chrome bracelet on left wrist. Wearing standard-issue GLMZ Metro Police uniform: smart-fabric undershirt, tactical vest with comm array pockets, dark reinforced utility pants. Perfect stillness, economical posture, cat ears rotating with focused attention. Subterranean police precinct setting, cool neon blue and amber lighting, GLMZ aesthetic, high-tech neural integration visible, professional and alert expression, technological surveillance environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.8,
-    "East Asian": 33.0,
-    "Eastern European": 23.2
+    "Indigenous American": 41.2,
+    "East Asian": 22,
+    "Middle Eastern": 15.3,
+    "Hispanic/Latin American": 13.6,
+    "Northern European": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 16,
+        "Zapotec": 25.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 14.6
+      },
+      "Korean": {
+        "Korean": 6.2
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 12.4,
+        "Iraqi": 2.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 6.9,
+        "Dominican": 2.6
+      },
+      "Mexican": {
+        "Mexican": 2.9
+      },
+      "Central American": {
+        "Costa Rican": 1.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 7.9
+      }
+    }
+  }
 }

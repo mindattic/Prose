@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73178bcabf67e40d79325d3",
   "type": "character",
-  "name": "Ngozi Boateng",
+  "name": "Soraya Nazari",
   "aliases": [
     "Sheikh Yusuf",
     "The Shelf Imam"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "The Shelf — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant, near Halsted and Division",
-  "description": "Yusuf is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Shelf's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Yusuf engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
+  "description": "Soraya Nazari is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Shelf's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Soraya Nazari engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -174,7 +174,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -192,26 +192,11 @@
     "The Shelf",
     "The Gradient Compact",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus GL-6 'Sermon'",
-    "Aïda Połczyńska-Ouattara",
-    "Bogdan Achebe-Svanstrom",
-    "Djeneba Park-Traore",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Sagyn Ogawa-Twumasi",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Congregation",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (75.3%) with significant Hispanic/Latin American (11.6%), East Asian (8.6%), and minor Eastern European and Northern European ancestry — a richly blended diaspora reflecting the Ubiquitous mixing of 2226",
+    "heritage": "Predominantly Middle Eastern (80.8%) with meaningful blending of Hispanic/Latin American (11.1%) and Sub-Saharan African (8.1%) ancestry — a richly layered diaspora reflecting the Ubiquitous mixing of 2226. Genetic expression shows the fine-boned angular features and natural skin richness of Middle Eastern heritage, warmed and deepened by Sub-Saharan and Hispanic admixture, creating a complexion with golden-amber undertones and subtle warmth throughout.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Compact and lean, shoulders slightly rounded from decades of forward-bending prayer posture. Wiry muscle beneath modest frame, no excess weight — disciplined by routine and modest means.",
@@ -219,8 +204,8 @@
     "hair_style": "Close-trimmed throughout, beard maintained with geometric precision (trimmed every third day without exception)",
     "hair_length": "Short",
     "eye_color": "Deep green with fine geometric lattice pattern etched across iris surface — concentric circles and interlocking polygons, visible in direct light",
-    "skin_tone": "Rich warm brown with reddish-golden undertones from the Sub-Saharan and Hispanic ancestry blend, deepened by age and the Shelf's industrial light cycles. Subtle warm amber tones beneath the surface from East Asian heritage contribution.",
-    "complexion": "Clean and careful despite environment — skin shows age lines around eyes and mouth, grooming meticulous. No visible acne scarring. A man who washes with intention. Fine-textured with naturally even tone, facial structure showing the broad cheekbones and full features characteristic of Sub-Saharan heritage with subtle angular accents from East Asian ancestry.",
+    "skin_tone": "Warm golden-olive, richly blended from Middle Eastern base warmed and deepened by Sub-Saharan and Hispanic ancestry components. Deepened further by age and the Shelf's industrial light cycles, with subtle amber luminosity beneath the surface. Even tone with natural depth.",
+    "complexion": "Clean and careful despite environment — skin shows age lines around eyes and mouth, grooming meticulous. No visible acne scarring. A man who washes with intention. Fine-textured with naturally even warm tone, facial structure showing the fine-boned features, angular planes and natural warmth characteristic of the ancestral blend — Middle Eastern angularity softened and deepened by Sub-Saharan and Hispanic genetic contribution.",
     "distinguishing_marks": [
       "Fine prayer line callus on forehead, faded but visible in certain light from decades of prostration",
       "Small burn scar on right forearm (thumb-sized, pale), origin unknown but old",
@@ -230,16 +215,40 @@
     "posture_movement": "Upright, composed, economical in gesture. Moves with deliberate slowness — no wasted motion. Hands gesture when speaking but the chrome left hand moves with slightly more caution, as if aware of its weight and edge. When sitting, he sits fully upright rather than slouching. When standing, feet shoulder-width apart, grounded.",
     "clothing_style": "Simple, clean, Tier 3 practical. Usually a loose cotton thobe or simple long-sleeved shirt in cream, off-white, or pale gray — fabric choices that hide the Shelf's dust. Dark trousers, well-maintained. Leather prayer cap (kufi) worn during formal hours, removed during informal counsel. No jewelry except occasionally a very old silver ring on his right hand. Shoes are sensible, worn but cared for. Clothing never bearing corporate logos or tier markers — deliberately unmarked."
   },
-  "image_prompt": "Ngozi Boateng, 168cm lean cyberpunk elder with rich warm brown skin and subtle golden undertones from mixed Sub-Saharan African and Hispanic ancestry, faded prayer callus on forehead, close-trimmed dark beard with silver threading, deliberate upright posture. Deep green eyes with geometric lattice iris implants glowing softly. Left arm is matte chrome prosthetic hand with etched Quranic verse patterns and greenish patina, surgical scar visible at wrist. Wearing simple cream cotton thobe or pale gray long-sleeved shirt, dark practical trousers, sensible worn leather shoes, leather kufi prayer cap. Thin silver ring on right hand. Standing grounded, composed, economical gesture. Industrial Shelf lighting, dim overhead, creating subtle gleam on chrome hand and highlighting iris patterns. Cyberpunk 2226, Great Lakes Metropolitan Zone, contemplative mood, weathered but meticulous dignity. --ar 2:3 --v 6",
+  "image_prompt": "Soraya Nazari, Middle Eastern man with golden-olive complexion and warm amber undertones, 168cm, lean and compact build. Dark brown hair with silver temples, close-trimmed geometric beard, deep green geometric-patterned eyes. Wearing simple cream cotton thobe and dark trousers, sensible worn leather shoes. Left hand is matte patina-green chrome prosthetic with etched Quranic verse relief patterns. Fine prayer-line callus visible on forehead, small pale burn scar on right forearm. Upright posture, deliberate composed movement. Standing in industrial Shelf lighting with soft shadows emphasizing angular face and the greenish patina of the chrome hand. GLMZ setting, low-key warm lighting, contemplative mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 75.3,
-    "Hispanic/Latin American": 11.6,
-    "East Asian": 8.6,
-    "Eastern European": 2.4,
-    "Northern European": 2.1
+    "Middle Eastern": 80.8,
+    "Hispanic/Latin American": 11.1,
+    "Sub-Saharan African": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 47.7,
+        "Tajik Persian": 14.7
+      },
+      "Arab Gulf": {
+        "Iraqi": 18.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 6.1,
+        "Nicaraguan": 5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 5.1,
+        "Senegalese": 0.8
+      },
+      "Central African": {
+        "Cameroonian": 2.2
+      }
+    }
+  }
 }

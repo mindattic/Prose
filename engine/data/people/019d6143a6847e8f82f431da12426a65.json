@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6847e8f82f431da12426a65",
   "type": "character",
-  "name": "Tiare Tuiloma-Nwosu",
+  "name": "Leif Holm-Nwosu",
   "aliases": [
     "Onyx",
     "The Wall"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, The Rampart deployment zone, near Western and Chicago Ave",
-  "description": "Onyeka is built like a structural support column — six feet of dense muscle, mahogany skin cross-hatched with old scorch scarring along her left jaw and collarbone from a crowd dispersal incident she doesn't discuss. Her geneware irises cycle through amber and deep violet depending on her stress levels, a mod she got cheap and has never bothered upgrading despite the involuntary emotional readout it provides. Her hair is shorn close on the sides and kept natural on top, threaded with thin copper filaments that catch the light. Off-duty she moves slowly, almost gently, like something very large trying not to break things. On the line she becomes geometry — economical, angular, purposeful.\n\nShe is not cruel but she has made her peace with force. She genuinely believes in the maintenance of order as a social good, in the same way a levee believes in holding back water. What she doesn't examine closely is the question of who decides what 'order' means and whose chaos gets suppressed. She treats rookies with patient seriousness, older cynics with wary respect, and her commanding officers with a politeness that has no warmth in it at all.",
+  "description": "Leif Holm-Nwosu is built like a structural support column — six feet of dense muscle, mahogany skin cross-hatched with old scorch scarring along her left jaw and collarbone from a crowd dispersal incident she doesn't discuss. Her geneware irises cycle through amber and deep violet depending on her stress levels, a mod she got cheap and has never bothered upgrading despite the involuntary emotional readout it provides. Her hair is shorn close on the sides and kept natural on top, threaded with thin copper filaments that catch the light. Off-duty she moves slowly, almost gently, like something very large trying not to break things. On the line she becomes geometry — economical, angular, purposeful.\n\nShe is not cruel but she has made her peace with force. She genuinely believes in the maintenance of order as a social good, in the same way a levee believes in holding back water. What she doesn't examine closely is the question of who decides what 'order' means and whose chaos gets suppressed. She treats rookies with patient seriousness, older cynics with wary respect, and her commanding officers with a politeness that has no warmth in it at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -190,7 +190,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,7 +246,6 @@
     "Tessera TKR-10 'Executor'"
   ],
   "related_entities": [
-    "Riddle",
     "Fort Anchor",
     "The Rampart",
     "The Filament",
@@ -254,28 +253,14 @@
     "The Fathom Line",
     "Mahogany",
     "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Gravimetric Collapse Charge GCC-9",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
     "Chicago",
-    "Alper Holmberg-Dembele",
-    "Anatoliy Faye-Nkrumah",
-    "GLMZ",
-    "Hough Reclamation",
-    "Iowan Behemoth — 'Palisade'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Burden Clause",
-    "The Human Baseline Alliance",
-    "The Question",
-    "The Reclamation Assembly"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander (54.6%) with significant Sub-Saharan African (36.6%) and Hispanic/Latin American (8.8%) ancestry. Her phenotype reflects the dominant Pacific Islander genetics with strong African features—a striking combination evident in her bone structure, skin tone, and facial geometry. The Latin American ancestry contributes subtle warmth to her complexion and minor influence on her overall proportions.",
+    "heritage": "Mixed heritage reflecting a complex global ancestry: Northern European (32.7%), East Asian (27.7%), Sub-Saharan African (20.7%), South Asian (11.7%), Middle Eastern (4.8%), and Hispanic/Latin American (2.4%). Her phenotype is a striking synthesis—Northern European bone structure blends with East Asian facial geometry, deepened and warmed by Sub-Saharan African and South Asian ancestry. The combination creates a distinctive appearance with broad cheekbones, strong jawline, and warm golden-bronze skin that reflects the convergence of multiple continental genetic lines. Her facial structure shows East Asian eye shape and cheekbone prominence, married to a stronger jawline from Northern European heritage, with the full facial depth and richer undertones of Sub-Saharan African and South Asian ancestry.",
     "height_cm": 183,
     "weight_kg": 91,
     "build": "Densely muscular, powerfully proportioned—broad shoulders and thickened forearms from years of riot control work. No excess adipose; every kilogram is functional mass. Her frame reads as deliberate engineering rather than natural athleticism.",
@@ -283,8 +268,8 @@
     "hair_style": "Undercut—sides shorn to 3mm, top kept at 4-5cm and combed back, the copper threads woven through the longer sections in geometric patterns",
     "hair_length": "Short on sides, medium on top",
     "eye_color": "Geneware-modified irises: amber baseline, cycling to deep violet under stress or elevated cortisol",
-    "skin_tone": "Rich mahogany-bronze—warm, deep brown with subtle golden-reddish undertones characteristic of Pacific Islander heritage, deepened by Sub-Saharan African genetics. The tone is even and luminous despite weathering.",
-    "complexion": "Weathered by years of exposure to dispersal agents and environmental stress. Skin is clear but thick-textured with a naturally full-featured face reflecting her Pacific Islander and African ancestry—broad cheekbones, strong jawline, and defined facial structure. Her left jaw and collarbone bear prominent scorch scarring in cross-hatched patterns—old thermal weapon residue, poorly healed, never treated cosmetically. The scars pull slightly when she clenches.",
+    "skin_tone": "Golden-bronze with warm undertones—a nuanced blend reflecting her Northern European, East Asian, Sub-Saharan African, and South Asian heritage. The tone is warm and luminous, with depth and complexity from the multi-continental mix, despite weathering from years of environmental exposure.",
+    "complexion": "Weathered by years of exposure to dispersal agents and environmental stress. Skin is clear but thick-textured with a distinctive face reflecting her mixed ancestry—broad cheekbones with slight prominence characteristic of East Asian genetics, strong jawline sharpened by Northern European heritage, and full facial structure deepened by Sub-Saharan African and South Asian ancestry. Her left jaw and collarbone bear prominent scorch scarring in cross-hatched patterns—old thermal weapon residue, poorly healed, never treated cosmetically. The scars pull slightly when she clenches.",
     "distinguishing_marks": [
       "Extensive thermal scarring along left jawline and extending down left collarbone in overlapping cross-hatch pattern, approximately 12cm x 8cm, silvered and slightly raised",
       "Small, precise tattoo on inner right wrist: a levee cross-section in black ink (personal symbol, applied herself during a deployment stand-down)"
@@ -293,14 +278,69 @@
     "posture_movement": "Off-duty: moves with deliberate slowness, each motion controlled and economical, as though constantly managing her own mass. Shoulders slightly rounded, as though the weight of her frame is always present in her awareness. On-duty: shifts into geometric precision—spine vertical, weight distributed across a wider stance, all movement purposeful and angular. Her head turns from the neck rather than the shoulders. She doesn't fidget.",
     "clothing_style": "On-duty: GLMZ Metro Police Riot Control Unit 7 tactical gear—ballistic mesh undershirt (gray), reinforced duty pants (charcoal, multiple cargo pockets), steel-toe boots (scuffed, maintained). Raid jacket over torso (navy with reflective piping and unit insignia). Helmet stores clipped to equipment belt. Off-duty: plain, durable clothing—black or gray t-shirts (usually oversized), worn canvas work pants, steel-toed boots (kept polished). A faded Rampart barracks hoodie in charcoal. She owns nothing fashionable. Everything is functional, tier 3-4 utilitarian."
   },
-  "image_prompt": "Tiare Tuiloma-Nwosu, a 183cm Pacific Islander and Sub-Saharan African blend, muscular riot control officer with mahogany-bronze skin and strong defined features. Short black hair with copper filaments woven through longer top section. Geneware-modified amber irises with violet stress-response shift. Prominent silvered thermal scars crossing left jaw and collarbone in cross-hatch patterns. Subdermal impact mesh visible on forearms, subtle augmented knuckles. Wearing GLMZ Metro Police RCU7 tactical gear: gray ballistic mesh undershirt, charcoal reinforced duty pants, navy raid jacket with reflective piping, scuffed steel-toe boots. Tense, controlled posture. Geometric precision in stance. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial riot control setting, cool blue-gray tactical lighting, gritty urban environment. --ar 2:3 --v 6",
+  "image_prompt": "Leif Holm-Nwosu, 183cm tall densely muscular woman, golden-bronze skin with warm undertones reflecting East Asian, Northern European, Sub-Saharan African and South Asian heritage. Broad prominent cheekbones with East Asian geometry, strong defined jawline, full facial structure. Natural black hair with copper threading in geometric patterns, undercut style. Geneware-modified irises amber with violet undertones, catching light unnaturally. Extensive cross-hatched thermal scarring along left jawline and collarbone, silvered and raised. Visible subdermal impact mesh forming geometric patterns on muscular forearms when tensed. Wearing GLMZ Metro Police Riot Control Unit 7 tactical gear—gray ballistic mesh undershirt, charcoal reinforced pants with cargo pockets, navy raid jacket with reflective piping, steel-toed scuffed boots. Standing in controlled posture, geometric precision, weight distributed wide. GLMZ Great Lakes Metropolitan Zone, tactical lighting casting shadows across scarred features, photorealistic, professional security force aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 54.6,
-    "Sub-Saharan African": 36.6,
-    "Hispanic/Latin American": 8.8
+    "Northern European": 32.7,
+    "East Asian": 27.7,
+    "Sub-Saharan African": 20.7,
+    "South Asian": 11.7,
+    "Middle Eastern": 4.8,
+    "Hispanic/Latin American": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 32.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 9.1
+      },
+      "Korean": {
+        "Korean": 10.7
+      },
+      "Chinese": {
+        "Hakka": 3.8,
+        "Mandarin Northern": 4.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 13.3,
+        "South African": 7.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.7
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 1.8,
+        "Tajik Persian": 1.4
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.1,
+        "Iraqi": 0.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 0.8
+      },
+      "Mexican": {
+        "Mexican": 0.8
+      },
+      "South American": {
+        "Colombian": 0.5,
+        "Argentine": 0.3
+      }
+    }
+  }
 }

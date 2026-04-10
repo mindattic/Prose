@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c776a8b150df2251bcb4b3",
   "type": "character",
-  "name": "Chinwe Traoré",
+  "name": "Dariush Balasanyan",
   "aliases": [
     "Bog",
     "Big Bog"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "The Thornholt Stack, Calumet Rise — lives in the basement super's unit, works the whole building, near North Ave and Milwaukee",
-  "description": "Bogdan is enormous in a way that reads as geological — broad across the chest and shoulders, thick-necked, with hands that look like they were designed to grip pipe wrenches, which in a sense they were. He has Ghanaian-Romanian-Samoan heritage and the combination has produced a man of striking physical presence: dark skin, heavy brow, a jaw that could anchor a tram line. He keeps a neat goatee that has been half-gray for a decade. His retractable claw mod on both hands was originally cosmetic, done cheap in Geartown at thirty, but he's found them genuinely useful for gripping pipe joints in tight spaces. One eye is a low-grade optical implant — the original was lost to a pressurized pipe failure when he was thirty-two — and it has a faint amber ring around the iris that glows in low light, a cosmetic flourish the replacement surgeon added without asking.\n\nBogdan is the Thornholt Stack. He knows every tenant, every fault line in the building's aging infrastructure, every grudge between neighbors on every floor. He communicates primarily through action — if you tell him something is wrong, he will go fix it, and that is his love language. He is gruff in a way that people mistake for unfriendliness until they realize he treats everyone exactly the same: no small talk, straight information, but if you are in genuine trouble he will materialize at your door at any hour with tools and a thermos of coffee and no questions about why you called.",
+  "description": "Dariush Balasanyan is enormous in a way that reads as geological — broad across the chest and shoulders, thick-necked, with hands that look like they were designed to grip pipe wrenches, which in a sense they were. He has Ghanaian-Romanian-Samoan heritage and the combination has produced a man of striking physical presence: dark skin, heavy brow, a jaw that could anchor a tram line. He keeps a neat goatee that has been half-gray for a decade. His retractable claw mod on both hands was originally cosmetic, done cheap in Geartown at thirty, but he's found them genuinely useful for gripping pipe joints in tight spaces. One eye is a low-grade optical implant — the original was lost to a pressurized pipe failure when he was thirty-two — and it has a faint amber ring around the iris that glows in low light, a cosmetic flourish the replacement surgeon added without asking.\n\nDariush Balasanyan is the Thornholt Stack. He knows every tenant, every fault line in the building's aging infrastructure, every grudge between neighbors on every floor. He communicates primarily through action — if you tell him something is wrong, he will go fix it, and that is his love language. He is gruff in a way that people mistake for unfriendliness until they realize he treats everyone exactly the same: no small talk, straight information, but if you are in genuine trouble he will materialize at your door at any hour with tools and a thermos of coffee and no questions about why you called.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -189,7 +189,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Thornholt Stack",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,33 +255,12 @@
     "The Gradient Compact",
     "Lockpick",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Brewer's Spine",
-    "Devraj Solano-Yildirim",
-    "Dragan Petersen-Bah",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ihaia Nystrom-Keita",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kairos",
-    "Obinna Czekalski-Fonoti",
-    "Quilt",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "TESSERA CR-12 'Whisper'",
-    "The Burden Clause",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (52%) with significant Northern European (24.7%) and Middle Eastern (18.1%) ancestry, with minor East Asian (5.2%) admixture. The genetic mix produces a phenotype grounded in West African features with subtle Northern European bone structure and Middle Eastern facial proportion contributions.",
+    "heritage": "Predominantly Middle Eastern (81.2%) with significant South Asian (7.2%), Northern European (4.2%), East Asian (3.8%), and Hispanic/Latin American (3.6%) ancestry. The genetic mix produces a phenotype grounded in Middle Eastern features — strong brow ridge, defined jaw structure with characteristic projection, broad nasal base with refined bridge — subtly enriched by South Asian warmth to complexion and bone structure, with minor Northern European cool undertones and East Asian eye shape contributions.",
     "height_cm": 193,
     "weight_kg": 127,
     "build": "Geological. Massive across the chest and shoulders with a thick neck and heavy frame that reads as both muscular and dense — the build of a man who has spent twenty-five years moving pipe, hauling equipment, and carrying the weight of a failing building on his shoulders. Not soft, not lean. Solid.",
@@ -289,8 +268,8 @@
     "hair_style": "Short, close-cropped on the sides, slightly longer on top. Neat. Maintained without vanity.",
     "hair_length": "Short",
     "eye_color": "Left eye: amber optical implant with faint luminescent iris ring. Right eye: dark brown, natural.",
-    "skin_tone": "Rich deep brown with warm undertones reflecting the dominant Sub-Saharan African ancestry, layered with the olive-golden undertones from Middle Eastern heritage and subtle cool undertones from Northern European ancestry. The resulting tone is a warm, complex deep brown with warmth that reads as fundamentally African with sophisticated undertonal complexity.",
-    "complexion": "Strong African features: prominent brow ridge, defined jaw structure with slight forward projection typical of Sub-Saharan African phenotypes, broad nasal base with some Middle Eastern refinement to the bridge. The skin shows sun exposure and chemical burns from pipe work — small scars on the cheekbones and forehead, mostly faded. A neat goatee, half-gray, kept trimmed to a precise point. His face reads as perpetually serious, not from anger but from focus. Deep-set eyes. No softness in the expression.",
+    "skin_tone": "Warm golden-olive deep brown reflecting the dominant Middle Eastern ancestry layered with South Asian warmth and subtle Northern European cool undertones. The resulting tone is a sophisticated warm brown with undertonal complexity that reads as fundamentally Middle Eastern with South Asian enrichment.",
+    "complexion": "Strong Middle Eastern features: prominent brow ridge, defined jaw structure with characteristic forward projection, broad nasal base with refined bridge. Subtle South Asian contribution to cheekbone prominence and facial fullness. The skin shows sun exposure and chemical burns from pipe work — small scars on the cheekbones and forehead, mostly faded. A neat goatee, half-gray, kept trimmed to a precise point. His face reads as perpetually serious, not from anger but from focus. Deep-set eyes. No softness in the expression.",
     "distinguishing_marks": [
       "Chemical burn scar across the left side of the neck, faded to pale brown, roughly 3 inches in length — from a coolant leak at age 32.",
       "Hairline fracture scar along the left temple in a thin white line, barely visible except in direct light — from the pressurized pipe failure that cost him his original left eye.",
@@ -301,15 +280,64 @@
     "posture_movement": "He moves with the economy of someone who has long ago stopped wasting motion. Walks as though bearing weight even when empty-handed — a slight forward lean from the spine work. His gestures are spare and purposeful; he doesn't use his hands to talk. When he reaches for something, the movement is direct and efficient. He stands with his weight slightly forward on the balls of his feet, ready to pivot toward whatever problem is next. His presence is large and still — he doesn't fill a room by being loud; he fills it by occupying space.",
     "clothing_style": "Tier 3-4 working-class utilitarian. Insulated tech-weave coveralls in charcoal gray, worn open at the chest most of the time to reveal a basic black synthetic undershirt. The coveralls have multiple pockets, most of them stained with pipe compound, grease, mineral deposits. A canvas tool belt with vintage brass buckles — not fashionable, just functional and maintained. Work boots, heavy-duty synthetic leather, scuffed and re-sealed at the seams multiple times. A jacket made of insulated polymer in dark blue, water-resistant, lined with internal pockets for meters and diagnostics. No chrome, no fashion statements. Everything he wears is chosen for durability and function. His watch is utilitarian — a Helix-brand maintenance timer with a dim LED readout, not expensive but reliable."
   },
-  "image_prompt": "Chinwe Traoré, 193cm tall broad-shouldered industrial worker in cyberpunk 2226, deep rich warm brown skin with complex undertones from Sub-Saharan African, Northern European and Middle Eastern heritage. Strong African facial structure, prominent brow, defined jaw, deep-set dark brown right eye and luminescent amber optical implant in left eye with faint iris ring glowing softly. Black hair salt-grayed at temples, close-cropped neat style. Half-gray goatee trimmed to precise point. Weathered face with faded chemical burn scars on cheekbones and forehead, thin white hairline fracture scar on left temple. Massive chest and thick neck, standing with economy of motion, weight forward on balls of feet. Wearing charcoal gray insulated tech-weave coveralls open at chest over black synthetic undershirt, stained with pipe compound and grease. Dark blue water-resistant polymer jacket, heavy synthetic leather work boots. Canvas tool belt with brass buckles. Retractable steel claw augmentations visible as metallic seams on both hands. Faded geometric circle tattoo on right forearm. Industrial facility background with dim LED work lighting, pipes and diagnostic equipment visible. Serious focused expression. Cyberpunk industrial aesthetic, moody low-key lighting emphasizing augmentations and scars. --ar 2:3 --v 6",
+  "image_prompt": "Dariush Balasanyan, 193cm massive frame, golden-olive warm deep brown skin with Middle Eastern heritage features — strong brow ridge, defined jaw projection, broad refined nasal bridge, deep-set dark eyes. Left eye glows amber optical implant with luminescent ring. Black hair salt-grayed at temples, short cropped sides. Neat half-gray goatee. Industrial scarring: faded chemical burn on left neck, hairline scar on temple, worn palms. Retractable steel claw augmentations visible as metallic seams on knuckles. Wearing charcoal gray insulated tech-weave coveralls open at chest, black undershirt, dark blue insulated polymer jacket, heavy-duty work boots, canvas tool belt with brass buckles. Utilitarian Helix maintenance timer watch. Standing with forward lean, weight on balls of feet, spare efficient posture. Serious focused expression. GLMZ Great Lakes Metropolitan Zone industrial worker, harsh neon and fluorescent workshop lighting casting shadows across scarred face and augmented hands. Moody, determined, weathered. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 52.0,
-    "Northern European": 24.7,
-    "Middle Eastern": 18.1,
-    "East Asian": 5.2
+    "Middle Eastern": 81.2,
+    "South Asian": 7.2,
+    "Northern European": 4.2,
+    "East Asian": 3.8,
+    "Hispanic/Latin American": 3.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 14
+      },
+      "Arab Gulf": {
+        "Yemeni": 42.9
+      },
+      "Kurdish": {
+        "Kurdish": 24.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 7.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 2
+      },
+      "British Isles": {
+        "English": 1.7,
+        "Irish": 0.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.6
+      },
+      "Korean": {
+        "Korean": 0.4
+      },
+      "Chinese": {
+        "Shanghainese": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 1.9,
+        "Costa Rican": 0.2
+      },
+      "South American": {
+        "Ecuadorian": 1.2,
+        "Chilean": 0.3
+      }
+    }
+  }
 }

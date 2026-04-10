@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f47db3a5d70ea9917ed7db",
   "type": "character",
-  "name": "Kira Larsdóttir",
+  "name": "Kira Leota",
   "aliases": [
     "Mama Spice",
     "The Nose"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Halsted and Chicago Ave",
-  "description": "Thembi is a broad-shouldered woman with deep umber skin mapped by laugh lines and old burn scars across her left forearm she never bothered to have reskinned. Her hair is a natural silver-white cloud she pins back with copper rods engraved with Yoruba blessing glyphs. Her eyes have patterned irises — concentric rings of amber and forest green she got in her forties as a birthday gift to herself — and they miss nothing. She smells permanently of turmeric, fermented sorghum, and the faint electric tang of her portable heat coils. She moves behind her stall with the unhurried authority of someone who has occupied this exact twelve square meters for twenty-three years and intends to occupy it for twenty-three more.\n\nThembi is the unofficial den mother of the Oxidian Market's food row. She gives short credit to vendors she trusts, keeps a mental ledger of everyone's debts and feuds, and dispenses advice with the bluntness of someone who ran out of softening words a decade ago. Her wraps are legendary — she sources cultured insect protein from three different brokers and blends her spice paste from a recipe her grandmother brought from Lagos via Helsinki. She is warm to a fault with regular customers, glacially cold to anyone she suspects of disrespecting her stall or her neighbors, and completely incapable of pretending to like someone she doesn't.",
+  "description": "Kira Leota is a broad-shouldered woman with deep umber skin mapped by laugh lines and old burn scars across her left forearm she never bothered to have reskinned. Her hair is a natural silver-white cloud she pins back with copper rods engraved with Yoruba blessing glyphs. Her eyes have patterned irises — concentric rings of amber and forest green she got in her forties as a birthday gift to herself — and they miss nothing. She smells permanently of turmeric, fermented sorghum, and the faint electric tang of her portable heat coils. She moves behind her stall with the unhurried authority of someone who has occupied this exact twelve square meters for twenty-three years and intends to occupy it for twenty-three more.\n\nKira Leota is the unofficial den mother of the Oxidian Market's food row. She gives short credit to vendors she trusts, keeps a mental ledger of everyone's debts and feuds, and dispenses advice with the bluntness of someone who ran out of softening words a decade ago. Her wraps are legendary — she sources cultured insect protein from three different brokers and blends her spice paste from a recipe her grandmother brought from Lagos via Helsinki. She is warm to a fault with regular customers, glacially cold to anyone she suspects of disrespecting her stall or her neighbors, and completely incapable of pretending to like someone she doesn't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -164,7 +164,7 @@
     "Hustler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -184,38 +184,23 @@
     "The Oxidian Market",
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Grandmother",
+    "The Marrow Market",
     "The Cutters Guild",
-    "Geartown",
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
+    "Geartown",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Adaeze Chen-Hawkins",
+    "Chicago",
     "Silver",
     "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Ringo Corponation",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "CHROMEWORKS FlexSheath Graphene Spine",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPA-25EM 'Tempest'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Sagyn Padilla-Nti",
-    "Solina Barreto-Kiptoo",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Bazaar",
-    "The Compact",
-    "The Ledger",
-    "The Pure Hand",
-    "Thibault Achebe-Sørensen"
+    "Haze Johansson",
+    "The Paste Bar",
+    "Ringo Corponation"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian (35.3%) / Eastern European (33.3%) / Sub-Saharan African (31.4%) — a tri-continental blend resulting in warm, complex undertones. The genetic mix creates distinctive facial structure: higher cheekbones and eye shape from East Asian ancestry, broader facial proportions from Sub-Saharan African heritage, and lighter skin depth modulation from Eastern European lineage, all harmonizing into a striking, difficult-to-categorize appearance.",
+    "heritage": "Sub-Saharan African (45.2%) / Pacific Islander (29.4%) / Southeast Asian (15.5%) / South Asian (8.0%) / East Asian (1.9%) — a striking Ubiquitous Diaspora blend. The genetic dominance of Sub-Saharan African and Pacific Islander ancestry creates broad, generous facial proportions with fuller features and pronounced cheekbones. Southeast Asian heritage adds subtle epicanthic variation to the eye shape and contributes to overall facial harmony. South Asian ancestry manifests in warm, complex skin depth modulation. East Asian trace ancestry barely registers phenotypically. The result is a luminous, unmistakably diaspora appearance: warm-toned, broadly structured, radiating quiet presence.",
     "height_cm": 172,
     "weight_kg": 82,
     "build": "Broad-shouldered and sturdy, with the compact musculature of someone who stands for sixteen hours daily moving and lifting. Not heavy, but solid — built for work and endurance.",
@@ -223,8 +208,8 @@
     "hair_style": "Pinned back with copper rods engraved with Yoruba blessing glyphs; kept in a neat, controlled arrangement",
     "hair_length": "Medium to Long",
     "eye_color": "Patterned irises — concentric rings of amber (outer) and forest green (inner), cosmetic augmentation",
-    "skin_tone": "Rich warm umber with golden undertones — deeper than typical Eastern European complexions but with less cool depth than purely Sub-Saharan African skin, the tri-ancestry creating a luminous, warm-bronze quality that catches light distinctively",
-    "complexion": "Face mapped by laugh lines and character; unblemished apart from old burn scarring on left forearm. Cheekbones prominent and well-defined, eye shape slightly almond-cast, nose bridge moderate with fuller nasal bridge from African ancestry. No cosmetic vanity — wrinkles earned and kept. Perennially carries faint turmeric stains on her hands.",
+    "skin_tone": "Deep warm umber with golden and honey undertones — luminous bronze that catches light distinctively. The blend of Sub-Saharan African and Pacific Islander ancestry creates rich chromatic depth with radiant warmth; South Asian heritage adds subtle undertonal complexity that shifts in different lighting.",
+    "complexion": "Face mapped by laugh lines and character; unblemished apart from old burn scarring on left forearm. Cheekbones broad and well-defined from Sub-Saharan African and Pacific Islander ancestry, nose bridge moderate with fuller nasal structure, face shape reflecting generous proportions characteristic of the diaspora mix. No cosmetic vanity — wrinkles earned and kept. Perennially carries faint turmeric stains on her hands.",
     "distinguishing_marks": [
       "Burn scars across entire left forearm — old, deliberate choice not to have reskinned, pale and textured against warm umber skin",
       "Laugh lines radiating from corners of eyes and mouth — deep grooves from decades of genuine smiling",
@@ -234,14 +219,55 @@
     "posture_movement": "Moves with unhurried authority and economic efficiency — every gesture purposeful. Stands with weight balanced, ready to pivot. Hands constantly occupied (prepping, arranging, gesturing). Makes direct eye contact. No fidgeting; complete comfort in her own space.",
     "clothing_style": "Tier 3-4 practical wear: reinforced linen wrap dress in earth tones (ochre, burnt orange) for mobility and heat tolerance; sturdy synthetic-leather apron with deep pockets for tools and ledger; worn canvas slip-ons. Minimal jewelry except for the copper hair rods. No corporate branding. Clothes are clean and well-maintained but show honest use — this is a working wardrobe, not a display."
   },
-  "image_prompt": "Kira Larsdóttir, 2226 cyberpunk, woman with striking tri-continental ancestry (East Asian, Eastern European, Sub-Saharan African blend), warm bronze-umber skin tone, natural silver-white hair pinned with engraved copper Yoruba rods, prominent cheekbones and almond-shaped eyes with cosmetic augmentation (concentric amber-green patterned irises), deep laugh lines around eyes and mouth, pale textured burn scars across left forearm against warm skin, faint turmeric stains on hands, 172cm tall solid broad-shouldered build, wearing ochre and burnt orange reinforced linen wrap dress, sturdy synthetic-leather tool apron with deep pockets, worn canvas slip-ons, standing with unhurried authority and complete presence, direct gaze, hands ready for work, Great Lakes Metropolitan Zone industrial setting with warm practical lighting, no corporate aesthetic, honest working-class dignity, --ar 2:3 --v 6",
+  "image_prompt": "Kira Leota, 172cm tall dark-skinned woman with broad African and Pacific Islander features, deep warm umber skin with golden honey undertones, silver-white hair pinned back with engraved copper rods, patterned cosmetic irises with amber-green concentric rings, pronounced cheekbones, laugh lines around eyes and mouth, deliberate pale burn scars across left forearm, faint turmeric stains on hands. Wearing reinforced ochre-burnt orange linen wrap dress, sturdy synthetic-leather apron, worn canvas slip-ons. Standing with unhurried authority in a GLMZ workspace, direct gaze, economical purposeful posture. Warm overhead lighting catching her luminous bronze skin and metallic hair ornaments, neo-noir market or workshop setting, no corporate branding. Authentic working aesthetic, seasoned presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 35.3,
-    "Eastern European": 33.3,
-    "Sub-Saharan African": 31.4
+    "Sub-Saharan African": 45.2,
+    "Pacific Islander": 29.4,
+    "Southeast Asian": 15.5,
+    "South Asian": 8,
+    "East Asian": 1.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 18,
+        "Kenyan": 13.7
+      },
+      "Central African": {
+        "Congolese": 10.8
+      },
+      "West African": {
+        "Ghanaian": 2,
+        "Guinean": 0.7
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 29.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 15.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 4.7,
+        "Sindhi": 2.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 1.9
+      }
+    }
+  }
 }

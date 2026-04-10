@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5fe7cbfb0d8ef2662e21ad9",
   "type": "character",
-  "name": "Ananya Bustamante-Wickramasinghe",
+  "name": "Fatima Kettani-Haraldsen",
   "aliases": [
     "Fee",
     "Ghost Fee"
@@ -13,7 +13,7 @@
   "age": 9,
   "status": "active",
   "location": "Copperhead, near Fullerton and Damen",
-  "description": "Efua is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
+  "description": "Fatima Kettani-Haraldsen is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -157,7 +157,7 @@
     "Enforcer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,22 +172,11 @@
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Copper",
     "Elena Vasquez-9",
-    "Déjà Vu",
-    "Flicker",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Bazaar",
-    "The Canopy",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Déjà Vu"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (35%) with significant North African (24.5%) and Hispanic/Latin American (18.5%) ancestry, complemented by East Asian (16.5%) and Southeast Asian (5.5%) heritage. A complex genetic mosaic reflecting the Ubiquitous Diaspora.",
+    "heritage": "North African (42.9%) with substantial Southeast Asian (34.8%), Sub-Saharan African (13.4%), and Hispanic/Latin American (8.9%) ancestry. A genetic mosaic reflecting the Ubiquitous Diaspora's true global blend. Her features represent a sophisticated interweaving: North African bone structure and warmth, Southeast Asian facial proportions and depth, Sub-Saharan richness in skin tone and luminosity, with subtle Latin American warmth in undertones.",
     "height_cm": 125,
     "weight_kg": 24,
     "build": "Slight and wiry, the lean frame of a child who eats irregularly but moves constantly. Her posture is alert, shoulders slightly forward as if perpetually ready to scatter.",
@@ -195,8 +184,8 @@
     "hair_style": "Close-cropped, no styling, maintained for practicality and speed",
     "hair_length": "Short",
     "eye_color": "Dark brown, nearly black, with an unusual reflective quality that suggests constant processing",
-    "skin_tone": "Warm golden-brown with subtle olive undertones and a luminous quality despite poor nutrition. The complexion reflects the blending of South Asian base warmth with North African and Mediterranean depth, creating a rich medium tone that catches light.",
-    "complexion": "Clean but weathered for her age, hands calloused from handling salvage and scrap. Facial structure shows blended heritage: subtle definition from South Asian ancestry with wider cheekbones suggesting East/Southeast Asian influence, and warm undertones from North African genetics. No visible acne or grooming marks — her face has the concentrated, worn clarity of a child managing survival.",
+    "skin_tone": "Deep warm bronze with golden-amber undertones, the blended result of North African warmth, Southeast Asian depth, Sub-Saharan richness, and Latin American warmth. Medium-deep tone that catches light with subtle luminosity despite poor nutrition.",
+    "complexion": "Clean but weathered for her age, hands calloused from handling salvage and scrap. Facial structure shows blended heritage: prominent high cheekbones with North African angularity, face shape with Southeast Asian slightly wider proportions, warm golden-brown undertones from Sub-Saharan genetics creating depth and luminosity, subtle warmth from Latin American admixture. No visible acne or grooming marks — her face has the concentrated, worn clarity of a child managing survival.",
     "distinguishing_marks": [
       "Thin white scar on her right inner wrist, jagged, consistent with childhood street accident rather than intentional mark",
       "Faint copper stains on her fingertips from handling wire and corroded circuitry, permanent discoloration in the creases",
@@ -206,16 +195,50 @@
     "posture_movement": "Moves with economical precision, minimal wasted motion. Stands with weight on her toes, ready to move. Eyes constantly tracking: people, exits, objects of value. Speaks rarely and quietly, but listens intently. When focused on a task or problem, her entire body goes still.",
     "clothing_style": "Tier 5 salvage aesthetic: mismatched layers, all oversized and worn from previous owners. Cargo pants with multiple pockets (half-empty, half-full of trading items), a faded long-sleeve shirt under a vest made from old climbing harness webbing. Shoes are too large but wrapped tight with wire to stay on. Her only personal item: a length of braided copper wire worn as a bracelet, constantly twisted between her fingers."
   },
-  "image_prompt": "Ananya Bustamante-Wickramasinghe, 125cm tall wiry child, warm golden-brown skin with olive undertones, blended South Asian and North African heritage visible in facial structure, dark reflective eyes, close-cropped black hair, calloused hands with copper stains, thin white scar on inner wrist, burn mark on left hand. Wearing oversized cargo pants with wire-wrapped shoes, faded long-sleeve shirt, climbing harness webbing vest. Copper wire bracelet twisted between fingers. Alert posture, weight on toes, economical precise movement. Cyberpunk 2226 Great Lakes Metropolitan Zone, standing in dim salvage yard with soft neon ambient light filtering through haze, tracking with intense focused gaze, hands ready. Gritty, lived-in, survival-worn aesthetic, cinematic lighting emphasizing her luminous skin against shadows, atmospheric depth, --ar 2:3 --v 6",
+  "image_prompt": "Fatima Kettani-Haraldsen, 125cm tall, slight wiry child in GLMZ Great Lakes Metropolitan Zone. Deep warm bronze skin with golden-amber undertones reflecting North African, Southeast Asian, Sub-Saharan African, and Latin American ancestry blend. High prominent cheekbones, slightly wider face with warm richness, dark nearly-black eyes constantly tracking. Short close-cropped black hair. Wearing oversized Tier 5 salvage layers: faded long-sleeve shirt, climbing harness vest, cargo pants with wire-wrapped oversized shoes. Copper wire bracelet twisted between fingers. Thin white wrist scar, copper-stained fingertips, healed burn mark on left hand. Standing alert on toes, economical posture, ready to move. Neon-lit industrial salvage district, harsh overhead lighting casting dramatic shadows, rain-slicked pavement reflecting blue-red neon. Neo-noir atmosphere, worn survival aesthetic, intense focus. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 35.0,
-    "North African": 24.5,
-    "Hispanic/Latin American": 18.5,
-    "East Asian": 16.5,
-    "Southeast Asian": 5.5
+    "North African": 42.9,
+    "Southeast Asian": 34.8,
+    "Sub-Saharan African": 13.4,
+    "Hispanic/Latin American": 8.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 5.6,
+        "Berber": 16.5
+      },
+      "Maghreb": {
+        "Algerian": 14.3,
+        "Tunisian": 6.5
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 34.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 10.4,
+        "Congolese": 0.9
+      },
+      "Southern African": {
+        "South African": 2.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.9
+      },
+      "Central American": {
+        "Guatemalan": 2.5,
+        "Honduran": 2.5
+      }
+    }
+  }
 }

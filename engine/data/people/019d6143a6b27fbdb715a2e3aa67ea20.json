@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b27fbdb715a2e3aa67ea20",
   "type": "character",
-  "name": "Rashid Vasquez-Alfarsi",
+  "name": "Sekou Kovalenko",
   "aliases": [
     "Rey",
     "Taxman"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf lower levels, Tier 2 commercial rows between Blackpipe Corridor and Iron Bend, near Halsted and Division",
-  "description": "Reyvaldo is young enough that his face still hasn't fully settled into what it's going to be — there's something unfinished about his jaw, a softness around the eyes that the hardened set of his mouth hasn't caught up to yet. He's broad across the chest in the way of someone who started lifting weights in a small room at fifteen and has never stopped. His Ghanaian-Osei heritage gives him deep brown skin and a wide nose; his Kazakh-Russian grandfather passed down high cheekbones and light eyes that are an unsettling grey-green. He has retractable claws — a practical geneware mod he paid for himself at twenty, black-tipped, filed to functional sharpness — and wears them half-extended at rest as a casual signal. His clothes are cheap but kept neat. He is extremely aware of his clothes.\n\nReyvaldo is in the phase of his criminal life where he is still deciding whether to become the person he is pretending to be. He does this job with professional dedication, collects the Φ from the Shelf vendors on behalf of his crew boss with no unnecessary roughness, and brings the numbers in on time. He is respected on the row, which he confuses with being liked. At home — a cube rental above a noodle counter — he reads Zheng-Dao corporate management theory, not because he wants to work for Zheng-Dao but because he is trying to reverse-engineer how power organizes itself. He has a plan. The plan changes every three months. He's not sure any version of it ends well.",
+  "description": "Sekou Kovalenko is young enough that his face still hasn't fully settled into what it's going to be — there's something unfinished about his jaw, a softness around the eyes that the hardened set of his mouth hasn't caught up to yet. He's broad across the chest in the way of someone who started lifting weights in a small room at fifteen and has never stopped. His Ghanaian-Osei heritage gives him deep brown skin and a wide nose; his Kazakh-Russian grandfather passed down high cheekbones and light eyes that are an unsettling grey-green. He has retractable claws — a practical geneware mod he paid for himself at twenty, black-tipped, filed to functional sharpness — and wears them half-extended at rest as a casual signal. His clothes are cheap but kept neat. He is extremely aware of his clothes.\n\nSekou Kovalenko is in the phase of his criminal life where he is still deciding whether to become the person he is pretending to be. He does this job with professional dedication, collects the Φ from the Shelf vendors on behalf of his crew boss with no unnecessary roughness, and brings the numbers in on time. He is respected on the row, which he confuses with being liked. At home — a cube rental above a noodle counter — he reads Zheng-Dao corporate management theory, not because he wants to work for Zheng-Dao but because he is trying to reverse-engineer how power organizes itself. He has a plan. The plan changes every three months. He's not sure any version of it ends well.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +179,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,47 +231,28 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Dredge Mining Collective",
-    "The Unfinished Theorem",
     "The CEO",
-    "The Shelf",
+    "The Unfinished Theorem",
     "Zheng-dao Bioelectric",
     "Iron Bend",
+    "The Shelf",
     "The Heritage Vault",
+    "GLMZ",
     "Arcturus CK-5 'Bloodhound'",
-    "Iron",
-    "Aybek Alvarez-Okonkwo",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'",
-    "Daulet Reyes-Abubakar",
-    "Ferrogate Enforcer Cruiser",
-    "Ferrogate Transit",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Marcus Bellamy",
-    "Patient Zero",
-    "Pavlína Abubakar-Temarii",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "The Collective",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics Swarm Canister SC-2 'Hornets'"
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (34.4%) dominant with significant Middle Eastern (29.9%) ancestry, blended with East Asian (13.0%), Southeast Asian (12.4%), Hispanic/Latin American (7.7%), and minor Northern European (2.6%) heritage. This creates a distinctly pan-African phenotype with subtle Middle Eastern bone structure and East/Southeast Asian eye geometry.",
+    "heritage": "Predominantly Eastern European (51.0%) with substantial Sub-Saharan African (21.7%) ancestry, blended with South Asian (15.9%), Northern European (8.5%), and North African (2.9%) heritage. This creates a complex Eurasian-African phenotype: Slavic bone structure and angular facial geometry softened and deepened by Sub-Saharan African features, with South Asian geometric influence in eye set and nose structure, and North African warmth in overall tone. The result is a warm golden-brown complexion with exceptional depth and definition — neither purely European nor African, but a striking synthesis that reads as unmistakably cosmopolitan.",
     "height_cm": 183,
     "weight_kg": 89,
     "build": "Broad-chested and muscular from disciplined weight training since adolescence, but with the lean efficiency of someone who lifts for function rather than aesthetics. Shoulders wide, forearms visibly dense beneath the skin.",
     "hair_color": "Black",
     "hair_style": "Short, neat fade cut — maintained with precision, likely every two weeks",
     "hair_length": "Short",
-    "eye_color": "Dark brown with subtle amber undertones beneath surface, reflecting East/Southeast Asian geometry with wider inner canthal spacing — not pale grey-green, but warm-toned and intense",
-    "skin_tone": "Rich warm brown with golden-bronze undertones, deeper in Mid-African tradition but brightened by Middle Eastern and Southeast Asian admixture. Consistent depth across body with warmer tones on inner surfaces.",
-    "complexion": "Angular face reflecting Middle Eastern cheekbone prominence and Sub-Saharan African jaw definition — mature structure with strong mandible. Eyes set with slight epicanthic influence from East Asian ancestry. Clean-shaven, skin shows minor scars from street friction but otherwise well-maintained. Expression often guarded. High prominent cheekbones, broad nose with slight Middle Eastern bridge definition, full lips.",
+    "eye_color": "Dark brown with subtle amber undertones, reflecting the warmth of his mixed ancestry",
+    "skin_tone": "Warm golden-brown medium tone, the result of Eastern European baseline deepened and enriched by Sub-Saharan, South Asian, and North African ancestry. Even consistency across the body with slightly warmer golden tones on inner surfaces and under the jaw. The depth is unmistakable — neither light nor dark, but burnished and complex.",
+    "complexion": "Angular face with prominent Slavic cheekbones blended with Sub-Saharan African jaw definition and structure — mature, powerful mandible. Eyes set with South Asian geometric influence, creating subtle almond-shaped depth. Nose broad and defined, characteristic of Sub-Saharan and South Asian heritage blend. Full lips with good definition. Clean-shaven, skin shows minor scars from street friction but otherwise well-maintained. Expression often guarded.",
     "distinguishing_marks": [
       "Faint scar tissue across the backs of both hands, consistent with street altercations",
       "Thin white line running from left eyebrow toward temple — old blade work, poorly stitched",
@@ -281,17 +262,63 @@
     "posture_movement": "Stands with weight slightly forward, ready — a collector's posture. Moves with economical precision, no wasted motion. Hands often rest on tabletops or at sides with claws visible. When walking the commercial row, his gait is deliberate and measured, designed to be noticed without seeming aggressive. Eye contact is direct and held slightly too long.",
     "clothing_style": "Cheap but immaculately maintained. Typically wears synthetic-blend shirts (black, grey, dark blue) tucked into grey cargo pants with reinforced pockets. Boots are generic work-issue, polished. A thin reflective jacket in charcoal for the rows — practical, unremarkable, the uniform of someone who doesn't want to stand out except for his presence itself. No visible gang colors, but the precision of his grooming reads as crew discipline. Everything fits correctly; he is extremely aware of how clothing sits on his body."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Rashid Vasquez-Alfarsi, 183cm tall, athletic muscular build. Rich warm brown skin with golden undertones, angular face with prominent Middle Eastern cheekbones and strong Sub-Saharan African jaw definition. Dark brown eyes with amber undertones and subtle East Asian geometry, direct intense gaze. Black short fade-cut hair, clean-shaven. Thin white scar from left eyebrow toward temple, faint hand scars, forearms showing grey undertones of skeletal density weave beneath skin. Retractable black-tipped claws half-extended on both hands. Wearing black synthetic shirt tucked into grey reinforced cargo pants, generic polished work boots, thin charcoal reflective jacket. Forward-ready posture, economical movement, hand on table with claws visible. Commercial row setting, harsh neon and practical industrial lighting, mood guarded and collected. Cyberpunk metropolis background, gritty and controlled atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Sekou Kovalenko, 183cm tall, muscular frame, warm golden-brown complexion mixing Eastern European and Sub-Saharan African features with South Asian geometry in striking angular face with prominent cheekbones and strong jaw, dark brown eyes with amber undertones, black short fade haircut, clean-shaven with faint scars across hands and thin white scar from left eyebrow to temple. Retractable black claws half-extended on both hands at rest, grey subcutaneous weave visible in forearms. Wearing precisely-fitted grey cargo pants with reinforced pockets, black synthetic-blend shirt tucked in, polished work boots, thin charcoal reflective jacket. Standing with deliberate forward weight in GLMZ 2200s commercial row at night, neon glow reflecting off wet pavement, harsh LED lighting cutting across his face, economical posture radiating controlled presence and street discipline. Moody, guarded expression. Ultra-detailed neo-noir noir aesthetic, high contrast lighting, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 34.4,
-    "Middle Eastern": 29.9,
-    "East Asian": 13.0,
-    "Southeast Asian": 12.4,
-    "Hispanic/Latin American": 7.7,
-    "Northern European": 2.6
+    "Eastern European": 51,
+    "Sub-Saharan African": 21.7,
+    "South Asian": 15.9,
+    "Northern European": 8.5,
+    "North African": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 27.6
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 8.8
+      },
+      "Slavic West": {
+        "Czech": 14.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 13,
+        "Zimbabwean": 5
+      },
+      "Central African": {
+        "Congolese": 1.3,
+        "Gabonese": 2.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.7
+      },
+      "Indian": {
+        "Telugu": 0.5,
+        "Tamil": 3.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 4.1,
+        "Tamil Sri Lankan": 2.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 8.5
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Algerian": 1.9,
+        "Mauritanian": 1
+      }
+    }
+  }
 }

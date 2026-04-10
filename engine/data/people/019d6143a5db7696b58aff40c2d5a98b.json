@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5db7696b58aff40c2d5a98b",
   "type": "character",
-  "name": "Magnus Szabó",
+  "name": "Marek Mensah",
   "aliases": [
     "Chi",
     "Mamaka"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Deepwell Station, The Narrows, near sub-level access near LaSalle and Congress",
-  "description": "Chiamaka is a broad-shouldered woman with deep brown skin mapped by twenty-two years of shift work — early mornings have carved permanent shadows beneath her eyes, and her knuckles are calloused from gripping the manual override bar during power fluctuations. She wears her Ferrogate Transit uniform with a particular pride that borders on defiance, the collar pins perfectly level, the cuffs always turned exactly once. Her geneware is modest: irises that shift from amber to pale green depending on her blood pressure, which she got cheap from a stall in the Burnished Market and has never replaced. Her silver-streaked locs are pinned under her operator's cap except on rest days, when she lets them down to her shoulders.\n\nShe is the kind of woman who knows every regular on the 6:14 eastbound by name and by their bad habits. She has opinions about everything — the state of the magline infrastructure, the price of cassava flour, the particular incompetence of Ferrogate middle management — and she will share them freely if you give her the slightest opening. Beneath the bluster is someone who has taken quiet pride in the fact that in twenty-two years she has never been more than ninety seconds off schedule, and she considers this a form of art.",
+  "description": "Marek Mensah is a broad-shouldered woman with deep brown skin mapped by twenty-two years of shift work — early mornings have carved permanent shadows beneath her eyes, and her knuckles are calloused from gripping the manual override bar during power fluctuations. She wears her Ferrogate Transit uniform with a particular pride that borders on defiance, the collar pins perfectly level, the cuffs always turned exactly once. Her geneware is modest: irises that shift from amber to pale green depending on her blood pressure, which she got cheap from a stall in the Burnished Market and has never replaced. Her silver-streaked locs are pinned under her operator's cap except on rest days, when she lets them down to her shoulders.\n\nShe is the kind of woman who knows every regular on the 6:14 eastbound by name and by their bad habits. She has opinions about everything — the state of the magline infrastructure, the price of cassava flour, the particular incompetence of Ferrogate middle management — and she will share them freely if you give her the slightest opening. Beneath the bluster is someone who has taken quiet pride in the fact that in twenty-two years she has never been more than ninety seconds off schedule, and she considers this a form of art.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -178,7 +178,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -201,38 +201,17 @@
     "Deepwell Station",
     "The Narrows Compact",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Pressure Drop",
     "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pale Mile",
-    "Déjà Vu",
-    "Alper Holmberg-Dembele",
-    "Arcturus ST-4 'Verdict'",
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Ebele Larsen-Mensah",
-    "Florentiu Sagna-Wrzesniewski",
-    "GLMZ",
-    "Saodat Mirzoyan-Fubara",
-    "Solina Barreto-Kiptoo",
-    "TESSERA PA-5 'Attendant'",
-    "Tardigrade Cryptobiosis Modification",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Fathom Line",
-    "The Narrows",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Transit Mind",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Vuk Jorgensen-Toure"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Eastern European (41%) and Northern European (34.5%) base with Southeast Asian (11.8%), East Asian (6.3%), Sub-Saharan African (5.3%), and Hispanic/Latin American (1.1%) ancestry. The combination creates distinct features: high, prominent cheekbones from Eastern European heritage softened by Southeast Asian bone structure; warm brown skin with olive undertones from the genetic blend; eye shape shows subtle East Asian influence at the outer corners.",
+    "heritage": "Sub-Saharan African (37.2%), Eastern European (35.6%), and Hispanic/Latin American (27.2%) ancestry create a striking phenotype: warm deep brown skin with subtle golden and olive undertones from the African and Hispanic blend, cooled and refined by Eastern European genetic influence. High, prominent cheekbones characteristic of Sub-Saharan African heritage, sharpened by Eastern European bone structure and a hint of Slavic angularity. The combination produces a face of strong geometric planes with warm, earthy undertones throughout, the jawline carrying both the definition of East African genetics and the squared strength of Eastern European ancestry.",
     "height_cm": 174,
     "weight_kg": 78,
     "build": "Broad-shouldered and dense-muscled from two decades of gripping manual override bars and tensioning against tram momentum shifts. Carries weight with the solidity of someone built for stability rather than speed.",
@@ -240,8 +219,8 @@
     "hair_style": "Locs, pinned tightly beneath operator's cap during shifts; worn loose to shoulder-length on rest days",
     "hair_length": "Medium (shoulder-length when unpinned)",
     "eye_color": "Photosensitive geneware: amber base shifting to pale green with elevated blood pressure",
-    "skin_tone": "Warm medium brown with olive undertones, reflecting the blend of Eastern European, Southeast Asian, and Sub-Saharan African ancestry",
-    "complexion": "Creased around the eyes from twenty-two years of early-morning shifts and squinting through magline station lighting. Permanent shadows beneath eyes. High, defined cheekbones with subtle Southeast Asian influence. Jawline sharp despite age. Expression habitually stern but capable of quick warmth.",
+    "skin_tone": "Deep warm brown with golden and subtle olive undertones, the product of Sub-Saharan African majority ancestry (37.2%) enriched by Eastern European (35.6%) and Hispanic/Latin American (27.2%) genetic contributions, creating a complex, multidimensional complexion",
+    "complexion": "Creased around the eyes from twenty-two years of early-morning shifts and squinting through magline station lighting. Permanent shadows beneath eyes. High, defined cheekbones with strong Sub-Saharan African structure, refined by Eastern European geometry and slight Slavic prominence. Jawline sharp despite age, with the angular definition characteristic of East African and Eastern European bone structure blended seamlessly. Expression habitually stern but capable of quick warmth.",
     "distinguishing_marks": [
       "Callused knuckles on both hands from gripping manual override bar during power fluctuations",
       "Faint scarring on left knee, site of cartilage scaffold implant from work injury approximately eight years ago",
@@ -251,17 +230,35 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders back. Walks with deliberate, measured pace — a habit from synchronizing with tram rhythms. Hands rest naturally at sides or gripping something stable. Eye contact is direct and unflinching. Movements are economical; she does not waste motion.",
     "clothing_style": "Wears Ferrogate Transit Grade 3 operator uniform with meticulous precision: collar pins level, cuffs turned exactly once, uniform jacket pressed sharp despite twelve-hour shifts. On rest days, favors practical Tier 3 clothing — reinforced utility pants, long-sleeved shirts in muted colors, worn boots with good tread. No unnecessary adornment. All clothing is functional and well-maintained."
   },
-  "image_prompt": "Magnus Szabó, 174cm tram operator with mixed Eastern European, Northern European, and Southeast Asian heritage. Medium-brown warm olive skin tone, high prominent cheekbones with subtle East Asian structure, black locs with silver streaking pinned under operator's cap. Photosensitive eyes shifting amber-to-pale-green. Sharp jawline, creased from decades of early shifts, permanent eye shadows. Broad-shouldered muscular build from manual tram operation. Wearing crisp Ferrogate Transit Grade 3 uniform jacket, perfectly pressed with level collar pins. Callused knuckles visible. Stern expression with underlying warmth. Standing in magline station lighting, measured posture, direct eye contact, economical movements. Cyberpunk 2226, worn boots, functional aesthetic, strong character lighting, depth of field focusing on face. --ar 2:3 --v 6",
+  "image_prompt": "Marek Mensah, 174cm transit operator, deep warm brown skin with golden olive undertones, shoulder-length black locs with silver streaking loosely draped, photosensitive amber-to-green irises, high defined cheekbones blending Sub-Saharan African and Eastern European geometry, sharp jawline, creased eyes from decades of early shifts, faint scarring on left knee and right palm. Ferrogate Transit Grade 3 uniform immaculately pressed, collar pins level, standing with measured posture and direct gaze. Great Lakes Metropolitan Zone magline station background, neon cyan and amber lighting casting geometric shadows across her face, GLMZ, realistic character portrait, stern capable expression, economical movement, no chrome augmentation visible except subtle knee servo marks, worn boots, functional practical aesthetic, moody atmospheric lighting, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 41.0,
-    "Northern European": 34.5,
-    "Southeast Asian": 11.8,
-    "East Asian": 6.3,
-    "Sub-Saharan African": 5.3,
-    "Hispanic/Latin American": 1.1
+    "Sub-Saharan African": 37.2,
+    "Eastern European": 35.6,
+    "Hispanic/Latin American": 27.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 37.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 35.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 11.6,
+        "Dominican": 1.1
+      },
+      "South American": {
+        "Colombian": 14.5
+      }
+    }
+  }
 }

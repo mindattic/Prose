@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a2742db23bb2ea458cbe8e",
   "type": "character",
-  "name": "Thandiwe Touré-Cardenas",
+  "name": "Esperanza Sengupta-Cardenas",
   "aliases": [
     "The Anchor",
     "Pros",
@@ -14,7 +14,7 @@
   "age": 55,
   "status": "active",
   "location": "The Meridian Core, near State and Monroe",
-  "description": "Prosper Akinwale-Grunewald is the kind of man who has made himself so useful to so many competing interests that removing him has become structurally inadvisable, which is precisely the position he spent thirty years engineering. He is a large man — tall and broad in the way of someone who was once physically imposing and has settled into a comfortable authority — of Nigerian-German descent, with a deep brown complexion, wire-rimmed glasses he wears purely for the signal of approachability they send, and a wardrobe that sits in the precise register of expensive-but-not-ostentatious. He occupies a corner office in the Meridian Core's mid-tower communications complex, a space he has curated to feel warm rather than corporate — real wood surfaces, no visible screens, a standing offer of good coffee to anyone who visits.\n\nHis official title is Senior Director of Strategic Communications for the Halcyon-Vanta Group, a mid-sized corporate entity with fingers in infrastructure, media licensing, and private logistics. In practice, his role is considerably more elastic. He has spent decades accumulating a particular kind of capital — the knowledge of who knows what, who owes whom, and which official narratives have load-bearing fictions inside them. He does not think of himself as corrupt, a distinction he would draw carefully and at length if asked: he facilitates outcomes that would happen anyway, he would say, and prefers to be in the room where they're shaped rather than simply subject to them. This is not entirely self-serving rationalization, which makes it more dangerous.\n\nProsper is a widower — his husband Léon died six years ago of a degenerative neurological condition that the right augmentation might have slowed, had it been available outside the Spire's private medical tier. He does not discuss this. He has a daughter, Adaeze, who works in Old Harbor doing community infrastructure work and who does not speak to him. He does not discuss this either, though people who watch him carefully notice that his composure develops a hairline fracture whenever her name surfaces.",
+  "description": "Esperanza Sengupta-Cardenas is the kind of man who has made himself so useful to so many competing interests that removing him has become structurally inadvisable, which is precisely the position he spent thirty years engineering. He is a large man — tall and broad in the way of someone who was once physically imposing and has settled into a comfortable authority — of Nigerian-German descent, with a deep brown complexion, wire-rimmed glasses he wears purely for the signal of approachability they send, and a wardrobe that sits in the precise register of expensive-but-not-ostentatious. He occupies a corner office in the Meridian Core's mid-tower communications complex, a space he has curated to feel warm rather than corporate — real wood surfaces, no visible screens, a standing offer of good coffee to anyone who visits.\n\nHis official title is Senior Director of Strategic Communications for the Halcyon-Vanta Group, a mid-sized corporate entity with fingers in infrastructure, media licensing, and private logistics. In practice, his role is considerably more elastic. He has spent decades accumulating a particular kind of capital — the knowledge of who knows what, who owes whom, and which official narratives have load-bearing fictions inside them. He does not think of himself as corrupt, a distinction he would draw carefully and at length if asked: he facilitates outcomes that would happen anyway, he would say, and prefers to be in the room where they're shaped rather than simply subject to them. This is not entirely self-serving rationalization, which makes it more dangerous.\n\nProsper is a widower — his husband Léon died six years ago of a degenerative neurological condition that the right augmentation might have slowed, had it been available outside the Spire's private medical tier. He does not discuss this. He has a daughter, Adaeze, who works in Old Harbor doing community infrastructure work and who does not speak to him. He does not discuss this either, though people who watch him carefully notice that his composure develops a hairline fracture whenever her name surfaces.",
   "psychology": {
     "facet_weights": {
       "wound": 0.71,
@@ -231,7 +231,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,32 +250,14 @@
     "The Spire",
     "The Quiet Room",
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Corner Slice",
+    "Harbor Fish Shack",
     "Vantablack Media",
-    "Slagworks Industrial",
-    "Emeka Johansson-Orozco",
-    "Hadiya Holm-Danquah",
-    "Ihaia Nystrom-Keita",
-    "Kairos",
-    "MERIDIAN",
-    "Old Harbor",
-    "Oumarou Svec-Ranginui",
-    "PulsePoint ThermoSet Thermal Regulation Implant",
-    "Saodat Mirzoyan-Fubara",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "The Resonance Communion",
-    "The Signal",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (80.2%, spanning multiple regions), with significant North African (9.4%) and Hispanic/Latin American (10.4%) ancestry. This creates a rich, complex phenotype: deep warm brown skin tones characteristic of Sub-Saharan genetics, refined by North African and Latin American admixture that adds subtle warmth and dimensionality to complexion.",
+    "heritage": "Complex multicultural blend: 47.8% Hispanic/Latin American, 26.6% South Asian, 15.3% Eastern European, and 10.3% East Asian ancestry. This creates a distinctive phenotype where South Asian genetic influence provides warm medium-brown undertones, enriched by Latin American warmth and depth. Eastern European and East Asian ancestry contribute subtle angular definition to facial structure and cheekbone prominence. The overall effect is a harmoniously blended appearance reflecting genuine genetic mixture rather than discrete heritage markers.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Tall and broad-shouldered with settled authority; once athletically imposing, now carrying comfortable middle age with deliberate posture. Solid through the chest and torso, suggesting maintained fitness rather than strain.",
@@ -283,8 +265,8 @@
     "hair_style": "Close-cropped, neat, professional — minimal styling. Silver emerging naturally at sideburns.",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Deep warm brown complexion with rich undertones reflecting Sub-Saharan, North African, and Latin American genetic blend. Even tone, radiating health and consistent maintenance.",
-    "complexion": "Well-maintained skin with fine lines around the eyes and mouth suggesting frequent careful observation; minimal visible scarring. Slight creasing across the forehead. Clean-shaven, meticulous grooming. No visible blemishes or skin conditions — maintenance-tier healthcare evident. Facial structure shows the broad, defined features characteristic of Sub-Saharan heritage, refined by North African and Hispanic ancestry.",
+    "skin_tone": "Warm medium-brown complexion with subtle golden undertones, reflecting the dominant South Asian and Hispanic/Latin American ancestry balanced by Eastern European influence. Skin radiates health and consistent maintenance. Even tone with no visible discoloration except noted implant site.",
+    "complexion": "Well-maintained skin with fine lines around the eyes and mouth suggesting frequent careful observation; minimal visible scarring. Slight creasing across the forehead. Clean-shaven, meticulous grooming. No visible blemishes or skin conditions — maintenance-tier healthcare evident. Facial structure shows high, defined cheekbones with angular definition characteristic of South and East Asian heritage, softened by Latin American and Eastern European warmth. Face shows balanced proportions reflecting genuine genetic admixture.",
     "distinguishing_marks": [
       "Barely-visible scar along the right temple, approximately 3cm, old enough to be nearly white — origin unknown, never mentioned",
       "No visible tattoos or body modifications",
@@ -294,14 +276,48 @@
     "posture_movement": "Moves with deliberate, measured calm — economical gestures, no wasted motion. Stands slightly angled during conversations, a listening posture that creates psychological safety. Hands remain visible and relatively still. Head tilts slightly when absorbing information, accompanied by almost imperceptible downward eye-flick (consulting the social-signal reader). Gait is even and confident, suggesting physical comfort despite age.",
     "clothing_style": "Expensive but deliberately understated — tailored charcoal or dark-blue suits in natural fibers, Tier 1 corporate-casual when not in formal meetings. Watches are analog Tier 1 pieces, never digital flashiness. Shirts are high-quality cotton or linen, often cream or pale blue. Ties are absent unless meeting-specific. Shoes are polished leather, well-maintained but not ostentatiously new. The overall effect is 'senior professional who does not need to announce wealth' — clothes whisper rather than shout. No visible logos or brand markers."
   },
-  "image_prompt": "Thandiwe Touré-Cardenas, 2226 cyberpunk professional portrait: tall distinguished man (188cm) with deep warm brown skin reflecting Sub-Saharan, North African, and Latin American heritage. Dark hair graying naturally at temples, close-cropped and immaculate. Deep brown eyes behind wire-rimmed glasses with subtle micro-LED micro-augmentations. Clean-shaven with fine lines suggesting measured authority. Broad-shouldered athletic build in tailored charcoal suit, cream linen shirt, no tie. Analog watch. Posture of deliberate calm, standing in listening angle. Minimal visible augmentation: faint wrist implant mark. Meticulous grooming. Corporate minimalist aesthetic. Great Lakes Metropolitan Zone interior, cool LED accent lighting, professional but intimate setting. Confidence without ostentation. Cyberpunk 2226. Cinematic. --ar 2:3 --v 6",
+  "image_prompt": "Esperanza Sengupta-Cardenas, 188cm tall mature man with warm medium-brown skin tone reflecting South Asian and Hispanic/Latin American heritage with Eastern European and East Asian genetic influence. Dark brown hair graying at temples, short neat professional cut. Deep natural brown eyes behind wire-rimmed glasses with subtle integrated micro-LEDs. High defined cheekbones with angular definition, fine lines suggesting careful observation. Well-maintained complexion, clean-shaven. Barely visible 3cm scar on right temple. Tall broad-shouldered build, solid through chest and torso. Wearing tailored charcoal suit in natural fibers, high-quality cream linen shirt, no tie. Polished leather shoes. Measured confident posture, economical hand movements, head slightly tilted in listening position. Subtle faint discoloration visible on left wrist where cardiovascular implant sits. GLMZ GLMZ setting, cool corporate interior lighting, professional but approachable demeanor, no logos or flashiness, analog Tier 1 watch visible. Depth of field emphasis on face and upper body --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 80.2,
-    "Hispanic/Latin American": 10.4,
-    "North African": 9.4
+    "Hispanic/Latin American": 47.8,
+    "South Asian": 26.6,
+    "Eastern European": 15.3,
+    "East Asian": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Argentine": 47.3
+      },
+      "Caribbean": {
+        "Dominican": 0.3,
+        "Cuban": 0.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 2.1,
+        "Tamil": 15.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.5
+      },
+      "Nepali": {
+        "Nepali": 8.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 15.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.3
+      }
+    }
+  }
 }

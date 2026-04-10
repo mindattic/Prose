@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Grand Corridor — operates from a rented stall near the junction of three transit lines, near Fullerton and Damen",
-  "description": "Rúaidhrí is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through GLMZ's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Rúaidhrí found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
+  "description": "Aero Larsdóttir is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through GLMZ's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Aero Larsdóttir found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -153,7 +153,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,30 +169,20 @@
   "related_entities": [
     "Grand Corridor",
     "Jefferson Switch",
-    "GLMZ",
-    "ARCHIVE",
     "TESSERA PG-2 'Signature'",
     "ShieldTech SB-3 'Groundstrike'",
     "Tessera TAR-12 'Consensus'",
+    "GLMZ",
     "Street Custom 'Glass Garden' Caltrops",
+    "Circuit",
     "the_meridian_office_park",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrogio Waweru-Djordanović",
-    "Chronicle",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Lacunal",
-    "MERIDIAN",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "The Heritage Vault",
-    "Tooth Fairy",
-    "Veslemøy Achebe-Tursynov",
-    "Zurab Ivanov-Appiah"
+    "GLMZ",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian, Northern European, Central Asian, Hispanic/Latin American, and North African blend; the genetic mix creates a uniquely cosmopolitan phenotype with warm undertones from Southeast Asian and Latin heritage balanced by Northern European and Central Asian bone structure",
+    "heritage": "Southeast Asian dominant (34.6%) forming the primary skeletal and tonal foundation, with substantial Indigenous American (26.1%) contribution shaping facial geometry and cheekbone structure. Sub-Saharan African ancestry (14.6%) enriches skin depth and warmth, while Hispanic/Latin American (8.7%), East Asian (8.4%), and South Asian (7.6%) components create subtle layering in eye shape, facial proportions, and undertone complexity. The result is a warm, multivalent phenotype where Southeast Asian bone structure and luminous depth blend seamlessly with Indigenous American facial width and definition, Sub-Saharan African richness in complexion, and East Asian eye characteristics.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Rangy and lean with wiry muscle definition from constant walking; long-limbed with a slightly forward-leaning posture from years of navigating crowded corridors and uneven shrine grounds",
@@ -200,8 +190,8 @@
     "hair_style": "Shoulder-length, frequently braided or half-pinned with practical clips; texture appears naturally wavy with slight curl",
     "hair_length": "Medium",
     "eye_color": "Warm amber-brown with a slight ring of darker brown at the iris",
-    "skin_tone": "Warm tan-amber with golden undertones, reflecting the dominant Southeast Asian and Hispanic/Latin American ancestry softened by Northern European influence; medium-to-medium-high saturation with a subtle luminosity",
-    "complexion": "High cheekbones with subtle Southeast Asian structure; scattered freckles across the nose and upper cheeks from the North African and Northern European percentages. Face reads young until direct eye contact, then shifts to something older and more weathered; skin shows minor sun damage and occasional dehydration lines from long indoor/outdoor transitions in the GLMZ climate. The overall facial geometry balances Central Asian width through the middle face with Southeast Asian definition in the lower face",
+    "skin_tone": "Deep warm tan with golden-bronze undertones, layered complexity from Southeast Asian base enriched by Sub-Saharan African depth, Indigenous American warmth, and South Asian undertones; medium-high saturation with luminous, dimensional quality",
+    "complexion": "High, sculpted cheekbones reflecting Southeast Asian and Indigenous American facial structure; warm brown complexion with subtle mid-face width characteristic of Indigenous American ancestry. Scattered freckles across nose and upper cheeks from Sub-Saharan African and East Asian heritage contributions. Face reads young until direct eye contact, then shifts to something older and more weathered; skin shows minor sun damage and occasional dehydration lines from long indoor/outdoor transitions in GLMZ climate. Lower face shows refined definition balanced by middle-face proportions.",
     "distinguishing_marks": [
       "Thin scar along the right temple, barely visible, possibly from early augmentation work",
       "Callused palms and finger pads from years of hand-drawing route maps and handling pilgrim documentation",
@@ -211,16 +201,65 @@
     "posture_movement": "Perpetually in motion even when stationary — fidgets with maps, adjusts layers, scans surroundings. Walks with a measured, efficient pace that prioritizes even weight distribution across both knees; movement is economical but not rushed. Eye contact is deliberate and sustained, which contrasts with their otherwise fidgety energy.",
     "clothing_style": "Tier 3 practical layering; typically wears a thin base layer (thermal-regulating synth-cotton blend), a mid-weight overshirt or jacket, and a long-line utility vest with hand-sewn pockets for maps and offerings. Fabrics are durable but show wear; colors tend toward earth tones and muted jewel tones that complement the shifting hair. Feet are always in reliable boots, laced tight, worn smooth from constant use. They maintain these pieces meticulously despite limited Φ, treating them as tools."
   },
-  "image_prompt": "Aero Larsdóttir, 178cm tall lean figure with warm tan-amber skin and Southeast Asian-Northern European-Central Asian-Latin American features; high cheekbones, scattered freckles, amber-brown eyes. Shoulder-length hair in deep burgundy shifting to burnt orange from cosmetic geneware. Wearing muted earth-tone layered practical outfit: thermal base, mid-weight overshirt, long-line utility vest with hand-sewn pockets, worn smooth laced boots. Thin scar visible on right temple. Subtle knee brace visible along inner knee in matte synthetic material. Perpetually fidgeting with maps, scanning surroundings with deliberate sustained eye contact. Indoor-outdoor GLMZ shrine corridor setting, neon accent lighting mixing cool blues with warm amber glow on her features. Cyberpunk 2226, detailed worn textures on clothing, economical but constant movement. --ar 2:3 --v 6",
+  "image_prompt": "Aero Larsdóttir, tall lean figure with deep warm tan skin and golden-bronze undertones, high sculpted cheekbones blending Southeast Asian and Indigenous American facial structure, scattered freckles across nose. Shoulder-length wavy hair in deep burgundy shifting to burnt orange (cosmetic geneware), half-pinned with practical clips. Warm amber-brown eyes with steady deliberate gaze. Wearing layered practical clothes: synth-cotton base, mid-weight overshirt, long-line utility vest with visible hand-sewn pockets, worn reliable boots laced tight. Thin matte-finish flexible knee braces visible at inner knee. Faint temple scar barely visible. Perpetually fidgeting with maps, efficient posture with slight forward lean. GLMZ Great Lakes Metropolitan Zone aesthetic, standing in shrine corridor with neon-lit passages, warm practical lighting catching the luminous depth of skin tone and shifting hair iridescence. Worn but meticulously maintained gear. Urban pilgrimage guide aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 30.1,
-    "Northern European": 28.1,
-    "Central Asian": 19.4,
-    "Hispanic/Latin American": 16.7,
-    "North African": 5.7
+    "Southeast Asian": 34.6,
+    "Indigenous American": 26.1,
+    "Sub-Saharan African": 14.6,
+    "Hispanic/Latin American": 8.7,
+    "East Asian": 8.4,
+    "South Asian": 7.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 34.6
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 3.4,
+        "Aymara": 3.7
+      },
+      "Plains Nations": {
+        "Muscogee": 4.9,
+        "Lakota": 14.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 14.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 1.5,
+        "Ecuadorian": 0.3
+      },
+      "Mexican": {
+        "Mexican": 6.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 0.8,
+        "Cantonese": 1.8
+      },
+      "Japanese": {
+        "Japanese": 2.3
+      },
+      "Korean": {
+        "Korean": 3.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 7.6
+      }
+    }
+  }
 }

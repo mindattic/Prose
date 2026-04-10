@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e97b7d9f69b4ef40f08b01",
   "type": "character",
-  "name": "Leszek Lewandowski-Tetteh",
+  "name": "Sekou Venkatesh-Tetteh",
   "aliases": [
     "Taku",
     "the Boy Shrine"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Brightmoor Reclamation — the Shrine of Warm Static, a formerly derelict kiosk structure on the corner of a reclaimed green corridor, approximately eight meters square, near Halsted and Division",
-  "description": "Takeshi is young in the way that reads as slightly startling in the context of religious authority — he still has the lean, unfinished look of someone whose body hasn't quite settled into its adult proportions. His heritage is a Japanese-Malian-Vanuatuan tangle that shows up as light brown skin with warm golden undertones, very dark eyes with a slight epicanthic fold, and natural hair he keeps in a cloud of loose curls that he has tipped in bioluminescent blue, which pulse faintly in low light. He has retractable claw mods — small, neat, pearlescent — which he got at seventeen when they were fashionable and now barely thinks about. He is usually wearing something with too many pockets because shrine keeping involves more physical maintenance than people expect.\n\nHe did not choose this life so much as it found him when he was unprepared. His aunt Keiko Dembélé-Vanuatu kept this shrine for twenty-two years and trained him casually the way you train a child to help with something — here's how you refresh the cache, here's the offering protocol, here's how you know when the ELF is trying to communicate versus when it's just processing. When she died two years ago of a lung condition she'd had for years, the shrine passed to him because he was the only one she had trained. He is figuring it out. The ELF in the shrine — which his aunt called Warm Static — appears to have accepted him, which he finds more terrifying than reassuring.\n\nHe is earnest and slightly overwhelmed and better at this than he thinks, which is the condition of a lot of twenty-four-year-olds who have been handed something real.",
+  "description": "Sekou Venkatesh-Tetteh is young in the way that reads as slightly startling in the context of religious authority — he still has the lean, unfinished look of someone whose body hasn't quite settled into its adult proportions. His heritage is a Japanese-Malian-Vanuatuan tangle that shows up as light brown skin with warm golden undertones, very dark eyes with a slight epicanthic fold, and natural hair he keeps in a cloud of loose curls that he has tipped in bioluminescent blue, which pulse faintly in low light. He has retractable claw mods — small, neat, pearlescent — which he got at seventeen when they were fashionable and now barely thinks about. He is usually wearing something with too many pockets because shrine keeping involves more physical maintenance than people expect.\n\nHe did not choose this life so much as it found him when he was unprepared. His aunt Keiko Dembélé-Vanuatu kept this shrine for twenty-two years and trained him casually the way you train a child to help with something — here's how you refresh the cache, here's the offering protocol, here's how you know when the ELF is trying to communicate versus when it's just processing. When she died two years ago of a lung condition she'd had for years, the shrine passed to him because he was the only one she had trained. He is figuring it out. The ELF in the shrine — which his aunt called Warm Static — appears to have accepted him, which he finds more terrifying than reassuring.\n\nHe is earnest and slightly overwhelmed and better at this than he thinks, which is the condition of a lot of twenty-four-year-olds who have been handed something real.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -185,7 +185,7 @@
     "Dreamer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,25 +242,15 @@
     "Brightmoor Reclamation",
     "The Reclamation Assembly",
     "The Unfinished Theorem",
-    "The Heritage Vault",
-    "Static",
-    "Handed",
-    "Aybek Alvarez-Okonkwo",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "MERIDIAN",
-    "Narrowcast",
     "Plot 17",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Signal",
-    "Tshiamo Vukić-Arellano",
-    "Witness"
+    "The Heritage Vault",
+    "GLMZ",
+    "Handed",
+    "Corner Slice"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European (Slavic) with significant Sub-Saharan African ancestry and minor East Asian heritage; genetic blend creates warm-toned skin with subtle depth, features reflecting the Polish-German Eastern European base combined with West African lineage",
+    "heritage": "Tri-continental blend: Sub-Saharan African (46.8%), Hispanic/Latin American (26.7%), and South Asian (26.5%). This genetic confluence creates a warm-medium-deep brown complexion with golden undertones, featuring broader cheekbones and fuller lips from West African ancestry, subtly refined facial structure influenced by South Asian genetics, and the warm skin depth characteristic of Latin American heritage—a harmonious blending that produces luminous, richly-toned skin with pronounced warmth throughout",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and unfinished, the lanky frame of someone still settling into adulthood — narrow shoulders, long limbs, minimal musculature, carrying himself with the slightly uncertain posture of a person not yet comfortable in his own skin",
@@ -268,8 +258,8 @@
     "hair_style": "Loose cloud of curls, shoulder-length, deliberately unstyled except for the dyed tips",
     "hair_length": "Long",
     "eye_color": "Very dark brown, nearly black",
-    "skin_tone": "Warm medium brown with golden undertones; the blend of Eastern European and Sub-Saharan African ancestry creates a rich, even complexion with subtle warm depth throughout",
-    "complexion": "Clean-shaven, youthful facial structure with broader cheekbones and slightly fuller lips reflecting African ancestry, subtle softness around the jawline, clear skin with an even warm-toned complexion; expression often carries a mixture of earnestness and mild worry",
+    "skin_tone": "Warm medium-deep brown with golden undertones; rich, even complexion with pronounced warm depth, luminous quality in natural light",
+    "complexion": "Clean-shaven, youthful facial structure with broader cheekbones and slightly fuller lips reflecting African heritage, refined soft angularity from South Asian features, warm Latin American skin depth; clear skin with even warm-toned complexion; expression often carries a mixture of earnestness and mild worry",
     "distinguishing_marks": [
       "No visible scars or significant marks; the bioluminescent hair tips are his most distinctive feature, pulsing faintly blue in dim environments"
     ],
@@ -277,14 +267,35 @@
     "posture_movement": "Carries himself with a kind of careful reserve, moving deliberately as if aware of taking up space in the shrine — economical gestures, slight forward lean when listening to visitors, fidgets with his pockets or the edges of his clothing when uncertain",
     "clothing_style": "Tier 4 working-practical: well-worn cargo pants or modified work trousers with excessive pocketing (shrine maintenance requirements), layered simple cotton or linen shirts in muted earth tones, a slightly too-large oversized jacket from a secondhand market for warmth, worn shoes suitable for standing all day; everything is functional, none of it matches perfectly, but it reads as intentionally humble rather than careless"
   },
-  "image_prompt": "Leszek Lewandowski-Tetteh, 172cm lean 22-year-old with warm medium-brown skin blending Eastern European and Sub-Saharan African heritage, youthful angular face with fuller lips and broader cheekbones, very dark brown eyes, shoulder-length black curls with bioluminescent blue tips pulsing softly in dim light, clean-shaven and earnest expression. Wearing layered muted earth-tone cotton shirt under oversized secondhand jacket, cargo work pants with multiple pockets, worn practical shoes. Careful reserved posture in shrine maintenance setting, fidgeting with clothing edges, retractable pearlescent claw mods on fingers faintly catching light. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, low warm lighting emphasizing the blue hair luminescence, contemplative mood, standing in quiet shrine space. --ar 2:3 --v 6",
+  "image_prompt": "Sekou Venkatesh-Tetteh, 2226 neo-noir shrine worker, lean 172cm frame with warm medium-deep brown skin glowing with golden undertones, blended West African-South Asian-Latin American features with broad cheekbones and full lips, very dark brown eyes reflecting earnest worry, shoulder-length natural black curls with bioluminescent blue pulse-reactive tips faintly glowing in low shrine light, clean-shaven youthful face, wearing oversized secondhand jacket over layered muted earth-tone cotton shirt and well-worn cargo pants with maintenance pockets, standing with careful deliberate posture in dim temple lighting, faint subdermal data chip glimmer at neck, retractable pearlescent claw mods visible on fidgeting hands, earnest expression, neo-noir geneware aesthetic, introspective mood, architectural shrine background with neon glow, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 70.9,
-    "Sub-Saharan African": 23.2,
-    "East Asian": 5.9
+    "Sub-Saharan African": 46.8,
+    "Hispanic/Latin American": 26.7,
+    "South Asian": 26.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 20.5,
+        "Nigerian": 26.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 16.8
+      },
+      "South American": {
+        "Brazilian": 9.9
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 26.5
+      }
+    }
+  }
 }

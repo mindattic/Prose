@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60a7ffea9838a6ecd0c601a",
   "type": "character",
-  "name": "Juno Khoury-Árnason",
+  "name": "Magnus Thammasak-Árnason",
   "aliases": [
     "Zeke",
     "Old Splice"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "The Shelf — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur, near Ashland and Division",
-  "description": "Ezekias is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
+  "description": "Magnus Thammasak-Árnason is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -159,7 +159,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,25 +176,15 @@
     "Ferrogate Transit",
     "Kamm's Landing",
     "The Shelf",
+    "The Accidental",
     "Titanium",
     "TESSERA WL-6 'Stacker'",
     "Teak",
-    "Weathervane",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Dragan Petersen-Bah",
-    "Jefferson Switch",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Ringo RB-1 'Judas Goat'",
-    "Slagworks Industrial",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Sulfur Crown Agriculture",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Corponation"
+    "Weathervane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Diverse global ancestry: Middle Eastern (25%), East Asian (21%), Eastern European (17%), Northern European (15%), South Asian (12%), Sub-Saharan African (9%). Features a striking blend of Mediterranean warmth with East Asian bone structure, Eastern European angles softened by South Asian and African heritage, creating distinctive high cheekbones with subtle epicanthic character and a strong jaw.",
+    "heritage": "Predominantly Southeast Asian ancestry (73.1%) with Northern European (19.6%) and East Asian (7.3%) heritage. Features the warm, golden-olive complexion characteristic of Thailand and surrounding regions, with the bone structure reflecting this primary ancestry—prominent cheekbones and strong jaw with subtle East Asian character, softened by the Northern European contribution visible in lighter skin undertones and subtle facial angles.",
     "height_cm": 188,
     "weight_kg": 89,
     "build": "Tall and broad-chested despite age-related shrinkage, still carrying the substantial frame of a man who spent three decades on his feet doing manual labor. Shoulders slightly rounded forward from years of mechanical work posture.",
@@ -202,8 +192,8 @@
     "hair_style": "Cropped short, practical, thinning at the crown",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm amber undertone",
-    "skin_tone": "Medium complexion with golden-olive undertones blending Middle Eastern warmth with East and South Asian depth, weathered to a richer, more uneven patina by decades of Lake Michigan platform exposure. Underlying warmth shows through despite sun damage.",
-    "complexion": "Deeply lined face with pronounced jaw and high cheekbones reflecting East Asian ancestry, prominent brow ridge with strong Middle Eastern character, permanent wind-crease patterns around the eyes, age spots on temples and cheekbones, heavy stubble shadow even when clean-shaven showing darker pigmentation, skin has a leathery quality from sun and salt spray exposure but retains subtle golden undertones beneath weathering.",
+    "skin_tone": "Medium golden-olive complexion with warm Southeast Asian depth, weathered to a richer, more uneven patina by decades of Lake Michigan platform exposure. Northern European ancestry adds subtle lighter undertones beneath the dominant warm golden cast.",
+    "complexion": "Deeply lined face with pronounced jaw and high cheekbones reflecting Southeast Asian ancestry, moderate brow ridge with warmth throughout, permanent wind-crease patterns around the eyes, age spots on temples and cheekbones, heavy stubble shadow even when clean-shaven showing darker pigmentation, skin has a leathery quality from sun and salt spray exposure but retains the characteristic golden-olive warmth of Southeast Asian heritage.",
     "distinguishing_marks": [
       "Jagged white scar running the length of his left inner forearm where the coupling accident severed it in 2171, now mostly hidden by the prosthetic",
       "Ferrogate Transit logo tattoo on his right shoulder — faded, from 2159 when he made shop steward",
@@ -214,17 +204,42 @@
     "posture_movement": "Stands with shoulders back despite spinal compression from age, moves deliberately but not slowly — economical motion from a lifetime of knowing where his body is in space. Favors his right side slightly when standing for long periods. Gestures frequently when talking, using the prosthetic arm with unselfconscious fluidity. Leans in when listening, creating immediate intimacy. Walks with a slight roll rather than a true limp, compensating for knee mesh limitations.",
     "clothing_style": "Tier 3-4 working-class durability wear: heavy canvas work pants in charcoal grey, worn soft but not patched, usually a thermal undershirt in dark colors topped with a faded Ferrogate Transit company jacket from 2165 that he refuses to retire despite the faded logo and fraying collar. Steel-toed boots, well-maintained. A thin zinc-polymer watch on his right wrist from the Ferrogate Retired Workers Mutual. Faded Ferrogate ID badge on a leather keychain in his jacket pocket, never removed. No visible jewelry except a simple platinum wedding band."
   },
-  "image_prompt": "Juno Khoury-Árnason, 188cm tall rugged retired transit worker, weathered medium olive-golden skin with deep sun creases, high East Asian cheekbones blending Middle Eastern jaw prominence, dark amber-brown eyes, steel grey cropped hair, heavily lined face from decades of Lake Michigan platform exposure. Worn Ferrogate Transit jacket faded charcoal grey, thermal undershirt, steel-toed boots. Left arm industrial titanium alloy prosthetic from elbow down, dull grey with worn resin palm and surgical junction scar. Deep creases in calloused palms, faded shoulder tattoo, white forehead scar. Deliberate economical posture, slight forward shoulder lean, standing with quiet dignity. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody industrial port lighting with salt-spray patina, intimate close-up, afternoon window light emphasizing weathered features and augmentation detail, melancholic contemplative mood --ar 2:3 --v 6",
+  "image_prompt": "Magnus Thammasak-Árnason, 188cm tall retired Ferrogate Transit worker, golden-olive Southeast Asian complexion weathered by decades of Lake Michigan exposure, deep facial lines and high cheekbones, grey cropped hair with dark undertones, dark brown eyes with warm amber undertones. Worn steel-grey work pants, faded thermal undershirt, 2165 Ferrogate Transit company jacket with fraying collar. Dull grey titanium alloy prosthetic left forearm with worn resin palm, moving with mechanical precision. Heavy deep creases in both palms, jagged white scar on left inner forearm, faded Ferrogate Transit tattoo on right shoulder, burn scar on right palm. Posture slightly forward from age and years of manual labor, subtle right-side favoring, economical deliberate movement. Standing in GLMZ Great Lakes Metropolitan Zone dockside platform setting, industrial moody lighting with salt spray weathering in background, subtle mechanical sound emanating from prosthetic arm. Intimate, working-class dignity, worn wedding band, faded Ferrogate ID badge on leather keychain visible in jacket pocket. Cinematic, gritty, atmospheric. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 25.1,
-    "East Asian": 21.4,
-    "Eastern European": 17.3,
-    "Northern European": 14.6,
-    "South Asian": 12.3,
-    "Sub-Saharan African": 9.3
+    "Southeast Asian": 73.1,
+    "Northern European": 19.6,
+    "East Asian": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 49.5
+      },
+      "Indonesian": {
+        "Javanese": 6.2,
+        "Balinese": 17.4
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 11.8
+      },
+      "Germanic": {
+        "German": 0.7,
+        "Austrian": 2
+      },
+      "Scandinavian": {
+        "Norwegian": 5.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 7.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c27f7898bc879dd9abd521",
   "type": "character",
-  "name": "Quinn Agyemang-Kjellberg",
+  "name": "Quinn Agyemang-Watanabe",
   "aliases": [
     "Beni",
     "Beni-from-the-cart"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Geartown — operates her cart at the corner of Smelter's Passage and the main Geartown transit underpass, 05:30 to 14:00, near North Ave and Milwaukee",
-  "description": "Benedita is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
+  "description": "Quinn Agyemang-Watanabe is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -187,7 +187,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -203,39 +203,20 @@
   ],
   "related_entities": [
     "Grandmother",
-    "Geartown",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Geartown",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Thermite Cavity Disbursement Shell TCDS-3",
-    "Adaeze Chen-Hawkins",
     "Copper",
-    "Celeste Abram",
-    "Rust",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
     "Arcturus KS-7 'Nursery'",
-    "Auntie Efe's Pot",
-    "Below the Threshold",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Pyrolytic Fascial Plane Separator PFPS-2 'Peeler'",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tafara Quiñones-Saarinen",
-    "The Coffin Nails",
-    "The Ledger",
-    "The Pure Hand",
-    "The Threshold",
-    "Witness"
+    "Haze Johansson",
+    "Corner Slice",
+    "Compass Rose",
+    "Celeste Abram"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (46.2%), Northern European (20.6%), East Asian (19.5%), Southeast Asian (13.7%) — a striking blend expressed in warm deep brown skin with subtle golden undertones, textured hair with natural curl patterns, and facial structure reflecting the convergence of these ancestries",
+    "heritage": "South Asian (33.7%), East Asian (30.0%), Sub-Saharan African (24.6%), Hispanic/Latin American (11.7%) — a striking global blend expressed in warm medium-to-deep brown skin with golden undertones, textured hair with natural curl patterns, and facial structure reflecting the convergence of these four ancestral regions",
     "height_cm": 167,
     "weight_kg": 74,
     "build": "Solid, muscular through the shoulders and forearms from years of repetitive cart work — heavy-set but not soft, the build of someone who moves with purpose and doesn't stop moving",
@@ -243,8 +224,8 @@
     "hair_style": "Shoulder-length, usually pulled back in a functional braid or knot while working, loose and textured otherwise",
     "hair_length": "Medium",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Warm deep brown with golden undertones, the complexion of someone who spends half her day working over steam and open flame",
-    "complexion": "Weathered in the way that comes from early rising and heat exposure — fine lines around the eyes from squinting and smiling, perpetually flushed cheeks from the cart's radiant heat. Facial structure reflects blended ancestry: broader nose with defined bridge, high cheekbones with balanced proportions across East and Southeast Asian heritage mixing with Sub-Saharan features. Calloused hands, nails kept short and practical. Permanently carries the smell of star anise, chili oil, and broth.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, the complexion of someone who spends half her day working over steam and open flame",
+    "complexion": "Weathered in the way that comes from early rising and heat exposure — fine lines around the eyes from squinting and smiling, perpetually flushed cheeks from the cart's radiant heat. Facial structure reflects blended ancestry: moderately broad nose with defined bridge, high cheekbones with balanced proportions reflecting South Asian, East Asian, Sub-Saharan, and Hispanic heritage. Jaw structure shows subtle angular qualities from East and South Asian heritage softened by broader features from Sub-Saharan and Hispanic ancestry. Calloused hands, nails kept short and practical. Permanently carries the smell of star anise, chili oil, and broth.",
     "distinguishing_marks": [
       "Rust-orange cat tail, thick and expressive, installed at age 19 — movements and position clearly reflect her emotional state (tail flicks with irritation, curls with contentment, swishes when she's concentrating on a complex order)",
       "Heat-resistant subdermal silicone pads visible as slightly raised, translucent patches across both palms — worn from contact with pot handles and steam",
@@ -255,15 +236,58 @@
     "posture_movement": "Always in motion — economical, efficient movements honed by years of cart work. She carries herself with a kind of compressed energy, ready to pivot from taking an order to chopping vegetables to handling change without hesitation. Her tail moves independently of her conscious attention, serving as a barometer of her mood that her face might not express. When standing still (rare), she shifts her weight to one leg, typically favoring her left.",
     "clothing_style": "Practical Tier 3-4 workwear: reinforced apron with deep pockets (usually stained with turmeric, chili oil, broth) worn over a fitted long-sleeved undershirt, sleeves pushed up to mid-forearm. Cargo pants in dark gray or black, pockets full of tools (peeler, lighter, change purse, wrapped mints). Non-slip boots rated for wet surfaces and heat. A lightweight overshirt hanging nearby for when she steps away from the cart. No jewelry except a simple brass ring her daughter made her, worn on her right middle finger. Her appearance is deliberately practical — every item serves a function — but maintained with enough care that it's clear she takes pride in her work."
   },
-  "image_prompt": "Quinn Agyemang-Kjellberg, 167cm tall, warm deep brown skin with golden undertones, Sub-Saharan African and East Asian heritage features, high cheekbones, dark brown observant eyes. Shoulder-length copper-red geneware-dyed textured hair in functional braid, showing iridescence under light. Muscular solid build, weathered from heat and steam exposure, fine lines around eyes. Rust-orange expressive cat tail augmentation curling expressively at spine. Subdermal heat-resistant silicone pads visible on palms, translucent patches. Working stance, economical efficient movements, mid-motion over street food cart in GLMZ neon-lit night market. Wearing reinforced apron stained with turmeric and chili oil over fitted long-sleeved undershirt with pushed-up sleeves, dark cargo pants, heat-rated non-slip boots. Brass ring daughter-made on right middle finger. Perpetually flushed cheeks from radiant heat, hands calloused from knife work. Cyberpunk 2226, steam and neon glow, practical Tier 3 workwear aesthetic, purposeful energy, smell of star anise and broth in the air --ar 2:3 --v 6",
+  "image_prompt": "Quinn Agyemang-Watanabe, 167cm tall, solid muscular build, warm deep brown skin with golden undertones, weathered face with high cheekbones reflecting South Asian, East Asian, Sub-Saharan African, and Hispanic heritage. Copper-red geneware-dyed shoulder-length textured hair pulled back in a functional braid, dark brown observant eyes with laugh lines. Rust-orange cat tail augmentation visible at base of spine, subdermal heat-resistant pads on palms showing as translucent patches. Wearing practical work apron stained with turmeric and chili oil over long-sleeved undershirt with rolled sleeves, dark cargo pants, heat-resistant boots. Simple brass ring on right middle finger. Standing at a street food cart in the Great Lakes Metropolitan Zone, steam rising around her, neon signs reflecting off wet surfaces, GLMZ 2200s urban setting, concentrated expression while preparing food, tail swishing with focus, morning light mixed with artificial glow, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 46.2,
-    "Northern European": 20.6,
-    "East Asian": 19.5,
-    "Southeast Asian": 13.7
+    "South Asian": 33.7,
+    "East Asian": 30,
+    "Sub-Saharan African": 24.6,
+    "Hispanic/Latin American": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.4
+      },
+      "Indian": {
+        "Marathi": 5,
+        "Bengali": 5.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 11.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 18.1
+      },
+      "Korean": {
+        "Korean": 11.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 22.9
+      },
+      "West African": {
+        "Ghanaian": 1.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 0.5,
+        "Puerto Rican": 0.6
+      },
+      "Mexican": {
+        "Mexican": 7.9
+      },
+      "Central American": {
+        "Salvadoran": 2,
+        "Nicaraguan": 0.7
+      }
+    }
+  }
 }

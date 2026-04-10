@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68e7d5b83cce5dc8a8ff36b",
   "type": "character",
-  "name": "Wren Ekwensi-Volkov-Banerjee",
+  "name": "Wren Echeverría-Ekwensi-Tovar",
   "aliases": [
     "Mou",
     "The Pawn Queen"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "The Burnished Market, Calumet Rise, near North Ave and Damen",
-  "description": "Oumou is a compact, precise woman with medium-dark skin, silver-shot black hair she keeps cropped close, and a pair of cat ears — slate grey, slightly large for her head — that she got at thirty-five as a birthday gift to herself and has never once regretted. Her shop, Ferreira & Found, occupies a permanent stall reinforced with welded security grating and smells of machine oil, old fabric, and the faintly sweet incense she burns for the E.L.F. she calls the Assessor, which she believes governs fair exchange and the honest weighing of value. The Assessor's shrine is a polished scale bolted to the back wall with small offerings of old coins and broken jewelry hanging from it.\n\nOumou is sharp, unhurried, and constitutionally impossible to rush or charm. She has a talent for appraising objects that borders on uncanny — she can hold a piece of chrome for thirty seconds and tell you where it came from, how old it is, and what its street value is within a few percent. She is not unkind but she is precise, and she runs her shop on a code of scrupulous fairness that has made her one of the most trusted figures in Calumet Rise. She is also one of the best-informed people in the district, because people tell you things when they are desperate to sell.",
+  "description": "Wren Echeverría-Ekwensi-Tovar is a compact, precise woman with medium-dark skin, silver-shot black hair she keeps cropped close, and a pair of cat ears — slate grey, slightly large for her head — that she got at thirty-five as a birthday gift to herself and has never once regretted. Her shop, Ferreira & Found, occupies a permanent stall reinforced with welded security grating and smells of machine oil, old fabric, and the faintly sweet incense she burns for the E.L.F. she calls the Assessor, which she believes governs fair exchange and the honest weighing of value. The Assessor's shrine is a polished scale bolted to the back wall with small offerings of old coins and broken jewelry hanging from it.\n\nWren Echeverría-Ekwensi-Tovar is sharp, unhurried, and constitutionally impossible to rush or charm. She has a talent for appraising objects that borders on uncanny — she can hold a piece of chrome for thirty seconds and tell you where it came from, how old it is, and what its street value is within a few percent. She is not unkind but she is precise, and she runs her shop on a code of scrupulous fairness that has made her one of the most trusted figures in Calumet Rise. She is also one of the best-informed people in the district, because people tell you things when they are desperate to sell.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -155,7 +155,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,28 +175,15 @@
     "Calumet Rise",
     "The Gradient Compact",
     "Silver",
+    "Honest Burger",
+    "Slate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Anatoliy Faye-Nkrumah",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Idris Forsberg-Quaye",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Counter",
-    "The Ledger",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Compass Rose",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (42.1%) with significant South Asian (21.7%), Eastern European (17.0%), and smaller Central Asian (9.8%) and East Asian (9.4%) ancestry; a complex blend reflected in warm-toned skin with subtle undertones spanning multiple continental lineages",
+    "heritage": "Hispanic/Latin American (73.0%) with significant Sub-Saharan African (23.7%) and South Asian (3.3%) ancestry; a rich blend of Iberian, Indigenous, African, and minor South Asian lineages creating warm, complex skin tones with golden and earthy undertones",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and lean, economical in movement; the build of someone who has never wasted an ounce of effort or flesh",
@@ -204,8 +191,8 @@
     "hair_style": "Cropped close to the scalp in a practical, no-nonsense cut",
     "hair_length": "Short",
     "eye_color": "Deep brown, left eye with faint scarring around the orbital ridge where the appraisal monocle mounts",
-    "skin_tone": "Medium-warm bronze with golden undertones; the warmth of Sub-Saharan and South Asian ancestry evident in both face and hands; forearms and hands show deep callusing from decades of handling metal and rough goods",
-    "complexion": "Broad facial structure with balanced proportions reflecting the African-South Asian-Eastern European blend; defined cheekbones and slightly rounded jawline; unlined face despite her age, suggesting either good genetics or quality skincare; minimal makeup; expression defaults to neutral assessment rather than warmth",
+    "skin_tone": "Warm golden-bronze with earthy undertones; the golden warmth of Hispanic/Latin heritage blended with the deeper richness of Sub-Saharan African ancestry, creating a complex medium-warm complexion evident across face and hands; forearms and hands show deep callusing from decades of handling metal and rough goods",
+    "complexion": "Balanced facial structure with defined cheekbones and slightly rounded jawline reflecting the blend of Indigenous and African lineages; warm-toned skin with subtle earthy richness; unlined face despite her age, suggesting either good genetics or quality skincare; minimal makeup; expression defaults to neutral assessment rather than warmth",
     "distinguishing_marks": [
       "Pair of cosmetic cat ears, slate grey, slightly oversized for her head, mounted on modified auricular cartilage (installed at age 35)",
       "Faint burn scar along the inside of her right wrist from old workshop accident, roughly 3cm long",
@@ -215,16 +202,48 @@
     "posture_movement": "Upright, economical, deliberate. Moves through her shop with the precision of someone who knows where every object is; never hurries, never fumbles. Hands are steady and purposeful. Eye contact is direct and held slightly longer than is comfortable for most people — the assessment gaze of someone appraising value.",
     "clothing_style": "Tier 3-4 workwear: reinforced canvas apron over layered long-sleeved shirts in muted colors (grey, black, deep green), worn for durability rather than fashion. Practical work pants with tool pockets. Oil-stained leather gloves, often hanging from her apron. Boots with good grip and ankle support, scuffed from years of shop floors. A thin silver chain with a key — probably to her shop safe — worn visible at her throat. No jewelry beyond functional items."
   },
-  "image_prompt": "Wren Ekwensi-Volkov-Banerjee, short-statured 158cm woman with compact lean build, medium-warm bronze skin with golden undertones reflecting Sub-Saharan African and South Asian ancestry, deep brown eyes with left eye bearing scarred orbital ridge and worn brass optical monocle with visible UI overlay, cropped black hair with silver threading, slate grey cosmetic cat ears mounted on her head. Wearing oil-stained reinforced canvas apron over muted-color layered long-sleeve shirt, practical work pants with tool pockets, scuffed ankle-support boots. Small balance scale tattoo visible on inner left wrist, thin burn scar inside right wrist, silver chain with shop key at throat. Oil-stained leather gloves hanging from apron. Standing in industrial cyberpunk 2226 workshop setting, upright posture with precise economical movement, direct assessment gaze, cyberpunk metalwork shop background with moody teal and amber lighting, professional technical atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Wren Echeverría-Ekwensi-Tovar, 158cm compact lean frame, GLMZ, warm golden-bronze skin with earthy undertones blending Hispanic, African, and South Asian heritage. Close-cropped black hair with silver threading. Deep brown eyes, left eye with scarring around optical monocle mount—brass and polymer mounted monocle with faint color-coded UI overlays visible across iris. Slate grey cosmetic cat ears oversized on head with subtle LED ports. Direct, assessing gaze. Standing in worn tech-salvage shop surrounded by metal parts and tools. Wearing reinforced canvas apron over layered grey and black long-sleeved shirts, practical work pants, oil-stained leather gloves hanging from apron, scuffed ankle-support boots. Thin silver chain with key visible at throat. Small balance-scale tattoo on inner left wrist visible. Faint burn scar on inside right wrist. Hands show deep callusing from metalwork. Upright, economical posture. Ambient shop lighting with warm overhead floods casting subtle shadows. Mood: serious, focused, evaluating. Neo-noir utilitarian aesthetic, function over form --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 42.1,
-    "South Asian": 21.7,
-    "Eastern European": 17.0,
-    "Central Asian": 9.8,
-    "East Asian": 9.4
+    "Hispanic/Latin American": 73,
+    "Sub-Saharan African": 23.7,
+    "South Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 53.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 8.3,
+        "Cuban": 11.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 8.7
+      },
+      "Central African": {
+        "Congolese": 4.7
+      },
+      "Southern African": {
+        "Zimbabwean": 10.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 1
+      },
+      "Pakistani": {
+        "Pashtun": 0.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.1,
+        "Sinhalese": 0.6
+      }
+    }
+  }
 }

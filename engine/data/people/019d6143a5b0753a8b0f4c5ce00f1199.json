@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b0753a8b0f4c5ce00f1199",
   "type": "character",
-  "name": "Lark Quartey",
+  "name": "Lark Magnúsdóttir",
   "aliases": [
     "Brosie",
     "The Wrist"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave — her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street, near Western and Division",
-  "description": "Ambrosia is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
+  "description": "Lark Magnúsdóttir is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -174,7 +174,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,41 +234,19 @@
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Grandmother",
     "Petra Glass",
-    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
     "Tessera Corponation",
+    "Copper",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "The Pure Hand",
-    "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Slagworks Industrial",
-    "Static",
     "Glass",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Arcturus KS-7 'Nursery'",
-    "Aybek Alvarez-Okonkwo",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Emeka Johansson-Orozco",
-    "Iowan Behemoth — 'Palisade'",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Saodat Mirzoyan-Fubara",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Mirror",
-    "Tshiamo Vukić-Arellano",
-    "Vesna Kiptoo-Ravelonarison",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "VitaCore SteadyField Precision Motor Implant",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zheng-dao Bioelectric"
+    "Slagworks Industrial",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian, Sub-Saharan African, and South Asian ancestry in near-equal measure; the genetic blend manifests in warm deep brown skin with golden undertones, facial structure reflecting the diversity of three continental traditions",
+    "heritage": "Predominantly East Asian (57.4%) with substantial Southeast Asian (28.6%) and Sub-Saharan African (14.0%) ancestry; the genetic blend creates a striking phenotype—East Asian bone structure and eye shape dominant, with Southeast Asian warmth and African heritage contributing to facial breadth and feature prominence; warm deep brown skin with golden-bronze undertones reflects the harmonic blend of all three ancestral regions",
     "height_cm": 173,
     "weight_kg": 82,
     "build": "Broad-shouldered and solidly muscled through the arms and core from decades of precise, repetitive work; carries weight with density rather than softness",
@@ -276,8 +254,8 @@
     "hair_style": "Elaborate crown of interlocked locs, each bead-adorned section deliberate and maintained with ritualistic care",
     "hair_length": "Long (shoulder-length and past)",
     "eye_color": "Deep brown with warm amber undertones, reflecting light with subtle luminosity",
-    "skin_tone": "Rich warm brown with golden-bronze undertones; the blended ancestry creates a complexion that glows with depth—darker in shadowed areas, warm honey-gold where light catches",
-    "complexion": "Unlined face for her age; minimal makeup; skin shows the health of someone who has learned self-care through necessity; faint smile lines around eyes and mouth indicating chronic warmth; high cheekbones with subtle width across the face reflecting Southeast and South Asian heritage; nose with gentle bridge and full nostrils",
+    "skin_tone": "Warm deep brown with golden-bronze undertones; the layered ancestry creates a complexion with remarkable depth—darker in shadowed areas, warm honey-gold where light catches; suggests the harmonic blend of East Asian, Southeast Asian, and African heritage",
+    "complexion": "Unlined face for her age; minimal makeup; skin shows the health of someone who has learned self-care through necessity; faint smile lines around eyes and mouth indicating chronic warmth; prominent cheekbones with moderate width reflecting the blend of East Asian angularity enhanced by African heritage breadth; nose with gentle bridge and well-defined nostrils characteristic of African ancestry; facial structure balancing East Asian angularity with Southeast Asian softness and African feature prominence; monolid and hooded eye characteristic of East Asian ancestry; overall face shows the balanced blend of her three major genetic regions",
     "distinguishing_marks": [
       "Scissors-and-comb motif tattoo running along the entire left forearm in deep indigo, applied by a street artist in Nairobi at age nineteen",
       "Faint scar tissue on the knuckles of both hands—old, pale, from decades of tool work and a few neighborhood altercations best left unmentioned"
@@ -286,14 +264,41 @@
     "posture_movement": "Moves with economical grace—no wasted motion; stands with weight balanced, ready to shift; hands are constantly in motion even at rest, fingers finding rhythm in air; head tilts when listening, a habit of attentive care; walks with the steady pace of someone who has nowhere to rush",
     "clothing_style": "Tier 3-4 practical comfort: well-maintained linen tunics or cotton button-ups in earth tones and jewel hues, often with sleeves rolled to mid-forearm to show the tattoo; neutral-colored work pants with deep pockets; soft leather slip-ons worn thin at the heel; a worn leather apron with small tool slots, patched and re-stitched multiple times; silver and brass jewelry—bangles, rings set with semi-precious stones, a small pendant combining Christian and indigenous Kenyan motifs"
   },
-  "image_prompt": "Lark Quartey, a 173cm woman with rich warm brown skin and golden undertones, standing in soft natural light in a 2226 cyberpunk barbershop. Her dark brown-black locs adorned with copper wire and amber LED beads crown her head in an elaborate, ritualistic arrangement. Her deep brown eyes with warm amber undertones gaze with attentive warmth. Faint smile lines frame her unlined face. Her broad-shouldered, densely muscled frame is draped in a well-worn earth-toned linen tunic with sleeves rolled to show the deep indigo scissors-and-comb tattoo running along her left forearm. Pale scar tissue marks both knuckles. Medical-grade pearlescent tactile-feedback pads glimmer at her fingertips. Silver bangles and rings with semi-precious stones catch the light. She wears a patched leather apron with tool slots. Her posture is balanced and economical, hands in subtle motion. Warm, intimate lighting from vintage and LED sources. Cyberpunk 2200s aesthetic with retained humanity. --ar 2:3 --v 6",
+  "image_prompt": "Lark Magnúsdóttir, GLMZ, 173cm tall with broad shoulders and dense musculature; striking mixed heritage phenotype with warm deep brown skin and golden-bronze undertones; monolid deep brown eyes with amber luminescence; prominent East Asian cheekbones blended with African breadth and feature prominence; elaborate shoulder-length crown of interlocked locs adorned with copper wire threading and amber LED beads; scissors-and-comb indigo tattoo visible on left forearm; reading glasses with LED frame lights worn on beaded chain; pearlescent tactile-feedback pads visible at fingertips; worn leather apron with tool slots over earth-tone linen tunic with rolled sleeves; silver and brass bangles and semi-precious stone rings; faint smile lines indicating chronic warmth; economical posture with hands in constant motion; warm, attentive presence; Great Lakes Metropolitan Zone workshop setting with soft amber and cool blue lighting, depth of field emphasizing her focused, capable presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 36.2,
-    "Sub-Saharan African": 36.0,
-    "South Asian": 27.8
+    "East Asian": 57.4,
+    "Southeast Asian": 28.6,
+    "Sub-Saharan African": 14
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.7
+      },
+      "Chinese": {
+        "Shanghainese": 47.7
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 11.1
+      },
+      "Cambodian": {
+        "Khmer": 17.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.7,
+        "Cameroonian": 3.8
+      },
+      "East African": {
+        "Kenyan": 2.5
+      }
+    }
+  }
 }

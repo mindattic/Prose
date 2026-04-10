@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6be7c168de0134272a58e91",
   "type": "character",
-  "name": "Nova Ekwensi",
+  "name": "Nova Petrović",
   "aliases": [
     "Chrome Rémi",
     "The Fitter"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, the Spindle District — a workshop called Actual Bodies, near Damen and Armitage",
-  "description": "Rémi is slight and precise, the kind of person whose hands do most of his communicating. He keeps his natural skin — a warm medium brown with undertones that shift gold in good light — completely unmodified, which is unusual for someone in his trade and which he is mildly defensive about if asked. His one concession to the aesthetic of his work is his eyes: he had his irises replaced with calibration-pattern models that display a rotating set of geometric markers he can use as a reference grid when fitting prosthetics. They're beautiful and faintly unsettling, like looking into a targeting system. His hair is cut close on the sides with a soft, loose top he doesn't style — it does what it does.\n\nHe is a craftsman in the old sense, genuinely invested in the fit and function of every limb, joint, and sensory prosthetic that leaves his workshop. He talks to his clients at length before he touches a measurement tool, because he believes most fitters skip the conversation and produce limbs that technically work and practically don't. He is warm and disarming in consultation, a little awkward socially outside of that context — the shop is his native environment and he becomes vaguely uncertain when removed from it. He has a complicated relationship with his own body and its wholeness that he has never examined closely enough to name.",
+  "description": "Nova Petrović is slight and precise, the kind of person whose hands do most of his communicating. He keeps his natural skin — a warm medium brown with undertones that shift gold in good light — completely unmodified, which is unusual for someone in his trade and which he is mildly defensive about if asked. His one concession to the aesthetic of his work is his eyes: he had his irises replaced with calibration-pattern models that display a rotating set of geometric markers he can use as a reference grid when fitting prosthetics. They're beautiful and faintly unsettling, like looking into a targeting system. His hair is cut close on the sides with a soft, loose top he doesn't style — it does what it does.\n\nHe is a craftsman in the old sense, genuinely invested in the fit and function of every limb, joint, and sensory prosthetic that leaves his workshop. He talks to his clients at length before he touches a measurement tool, because he believes most fitters skip the conversation and produce limbs that technically work and practically don't. He is warm and disarming in consultation, a little awkward socially outside of that context — the shop is his native environment and he becomes vaguely uncertain when removed from it. He has a complicated relationship with his own body and its wholeness that he has never examined closely enough to name.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,25 +240,12 @@
     "Ferrogate Transit",
     "Geartown",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "SPINDLE",
     "The Pure Hand",
-    "Gold",
-    "Aurochs Medical Complex",
-    "Crucible Industries Composite Kukri CK-7 'Gurkha'",
-    "Dariusz Ombotimbe-Skalvydas",
-    "Dzemal Acholonu-Patagiri",
-    "Marcus Bellamy",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnenna Baluarte-Volkov",
-    "TESSERA TC-3 'Crucible'",
-    "The Quiet Room",
-    "The Seam",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex Pan-Global heritage: Predominantly Sub-Saharan African (37.5%) with significant Hispanic/Latin American (23.3%) and Southeast Asian (14.2%) ancestry, complemented by North African (13.2%), South Asian (5.9%), and Northern European (5.9%) lineage. The result is a richly blended phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex Pan-Global heritage: Predominantly Indigenous American (34.6%) with significant Eastern European (31.2%) and East Asian (14.3%) ancestry, complemented by Sub-Saharan African (10.9%), South Asian (5.4%), and Pacific Islander (3.6%) lineage. The result is a richly blended phenotype reflecting the Ubiquitous Diaspora—high cheekbones and defined jawline from Indigenous and East Asian ancestry, warm undertone depth from African and South Asian heritage, and fine facial structure enhanced by Eastern European bloodline. Pacific Islander ancestry adds subtle breadth to facial structure and warm richness to skin undertones.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Slight and precise, almost wiry, with the particular tenseness of someone whose work demands millimeter-scale control. Minimal upper body mass but defined in the forearms and hands. No wasted volume anywhere.",
@@ -266,8 +253,8 @@
     "hair_style": "Close-cropped on sides, soft loose crown left unstyled and slightly tousled",
     "hair_length": "Short",
     "eye_color": "Prosthetic calibration-pattern irises — geometric markers in concentric rings of matte black and reflective silver, continuously rotating. The effect is faintly hypnotic and distinctly inhuman despite residing in otherwise ordinary brown eyes.",
-    "skin_tone": "Warm deep brown with golden undertones and subtle reddish warmth from Latin and North African heritage, creating a luminous quality that catches in natural light. Completely unmodified and unmarked.",
-    "complexion": "Clear, well-maintained skin with a fine-boned face showing the angular cheekbones and defined jaw characteristic of the African and Southeast Asian blend. Expression defaults to slight focus, as though mentally rotating fine tolerances. When engaged in consultation, face softens noticeably. Minimal grooming beyond functional necessity — no jewelry, no visible styling products.",
+    "skin_tone": "Warm medium-deep brown with golden and amber undertones, the blended result of Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage creating luminous depth that catches in natural light. Completely unmodified and unmarked.",
+    "complexion": "Clear, well-maintained skin with a fine-boned face showing the angular cheekbones and defined jaw characteristic of the Indigenous American and East Asian blend, softened by Eastern European, African, and South Asian heritage. Expression defaults to slight focus, as though mentally rotating fine tolerances. When engaged in consultation, face softens noticeably. Minimal grooming beyond functional necessity — no jewelry, no visible styling products.",
     "distinguishing_marks": [
       "Faint callus pattern across fingertips and inner palms from decades of precision manipulation and calibration work.",
       "Barely visible micro-scarring along the knuckles of both hands where proprioceptive mesh was installed — thin white lines now almost flesh-tone, visible only in certain light."
@@ -276,17 +263,64 @@
     "posture_movement": "Stands with shoulders slightly forward, weight often on one foot as though ready to lean into work. Hands are never quite still — fidgeting with small objects, making minute adjustments to nearby items. Moves economically, no excess motion. In his workshop, fluid and confident; outside of it, slightly contracted, as though operating on lower power.",
     "clothing_style": "Tier 3 workshop standard: reinforced cotton work pants (usually dark, often dusted with metal shavings), fitted long-sleeve shirts in neutral tones that allow precise arm movement, sturdy ankle boots with good ankle support for standing all day. A worn canvas apron with deep pockets for calipers, measurement tools, and small components — pockets worn soft from years of use. No logos or status markers. Everything functional, nothing decorative. Occasionally a lightweight overshirt when the workshop ambient temp drops."
   },
-  "image_prompt": "Nova Ekwensi, skilled precision technician, cyberpunk 2226. Medium height wiry build, warm deep brown skin with golden undertones reflecting African, Latin American, and Southeast Asian heritage. Short dark brown hair, tousled crown with close-cropped sides. Striking prosthetic eyes with geometric calibration-pattern irises in black and silver, continuously rotating. Fine-boned angular face, expression focused and intent. Wearing tier 3 workshop standard: dark reinforced work pants, fitted neutral long-sleeve shirt, sturdy ankle boots, worn canvas apron with tool-filled pockets. Hands show faint callus patterns and barely visible micro-scarring from proprioceptive mesh installation. Standing in well-lit workshop surrounded by precision instruments and components, slight forward shoulder posture, economical composed movement. Cool workshop lighting, metallic glints off tools and installations, professional and methodical atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Nova Petrović, precision calibration technician, GLMZ 2226. 168cm wiry build, warm medium-deep golden-brown skin blending Indigenous American, Eastern European, East Asian, Sub-Saharan African, South Asian, and Pacific Islander heritage. Angular high cheekbones, defined jawline, fine-boned face with clear complexion. Short dark brown tousled hair, close-cropped sides. Striking prosthetic eyes with rotating geometric black and silver calibration-pattern irises—hypnotic, inhuman. Hands showing faint callus patterns and micro-scarring from mesh installation. Wearing dark reinforced work pants, fitted neutral long-sleeve shirt allowing precise movement, sturdy ankle boots, worn canvas apron with deep tool pockets. Standing slightly forward, hands never quite still, fidgeting with small objects. Workshop setting, cool ambient light catching golden undertones in skin. Economical posture, focused expression, operational precision. GLMZ 2200s precision engineer aesthetic, functional and worn. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.5,
-    "Hispanic/Latin American": 23.3,
-    "Southeast Asian": 14.2,
-    "North African": 13.2,
-    "South Asian": 5.9,
-    "Northern European": 5.9
+    "Indigenous American": 34.6,
+    "Eastern European": 31.2,
+    "East Asian": 14.3,
+    "Sub-Saharan African": 10.9,
+    "South Asian": 5.4,
+    "Pacific Islander": 3.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 11,
+        "Aymara": 3
+      },
+      "Great Lakes Nations": {
+        "Menominee": 17.6
+      },
+      "Mesoamerican": {
+        "Maya": 2.6,
+        "Nahua": 0.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 31.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 10.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.4
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 1.3
+      },
+      "Micronesian": {
+        "Kiribati": 0.1,
+        "Palauan": 0.4
+      },
+      "Polynesian": {
+        "Tuvaluan": 1.8
+      }
+    }
+  }
 }

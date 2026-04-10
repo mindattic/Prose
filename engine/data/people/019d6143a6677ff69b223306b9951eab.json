@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6677ff69b223306b9951eab",
   "type": "character",
-  "name": "Echo Bustamante",
+  "name": "Echo Haraldsen",
   "aliases": [
     "Sarge",
     "Old Burn"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "The Shelf, Block 9 — ground-floor unit beneath a noodle stand, near Kedzie and Division",
-  "description": "Nnabuchi is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on The Shelf reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
+  "description": "Echo Haraldsen is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on The Shelf reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -184,7 +184,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,61 +254,88 @@
     "Grandmother",
     "The Gilt Frame",
     "Ferrogate Transit",
-    "The Shelf",
     "Zheng-dao Bioelectric",
     "Cinderblock Ai",
+    "The Shelf",
     "Ironvein",
     "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Liora Mori-Sefa",
-    "Ngaire Rojas-Yeboah",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TC-3 'Crucible'",
-    "The Bread Baker of Block 9",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (41.7%), Hispanic/Latin American (29.2%), North African (18.5%), Southeast Asian (10.6%)—a complex blend resulting in warm deep brown skin with subtle golden undertones, broad facial structure with strength from African lineage, and fine-featured detail from Southeast Asian ancestry",
+    "heritage": "Southeast Asian (45.7%), Sub-Saharan African (35.5%), South Asian (9.3%), Hispanic/Latin American (6.0%), Middle Eastern (3.5%)—a complex diaspora blend resulting in warm deep brown skin with subtle golden and bronze undertones, fine-featured facial structure with Southeast Asian delicacy balanced against Sub-Saharan depth, South Asian warmth, and hints of Middle Eastern angularity",
     "height_cm": 188,
     "weight_kg": 94,
-    "build": "Large-framed, formerly muscular, now carrying soft weight at the midsection and shoulders—the body of someone who was once built for combat but has settled into sedentary age. Still carries the structural density underneath.",
+    "build": "Large-framed, formerly muscular, now carrying soft weight at the midsection and shoulders—the body of someone who was once built for combat but has settled into sedentary age. Still carries the structural density underneath",
     "hair_color": "Dark grey with residual black undertones",
     "hair_style": "Kept short and neat, cropped close to the scalp",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Deep warm brown with subtle golden undertones, rich with Sub-Saharan depth and North African warmth",
-    "complexion": "Weathered and marked. Left side of jaw and neck covered by a pale, slightly lustrous burn scar that reads as old trauma. Nose broken multiple times, crooked and asymmetrical. Hands show age spots and calluses. Face carries the gravity of someone who has made hard choices and made peace with them. Broad cheekbones and strong jaw structure inherited from African and North African ancestry, with fine detailing around the eyes from Southeast Asian heritage.",
+    "skin_tone": "Deep warm brown with subtle golden and bronze undertones, rich with Sub-Saharan depth blended with Southeast Asian smoothness and South Asian warmth",
+    "complexion": "Weathered and marked. Left side of jaw and neck covered by a pale, slightly lustrous burn scar that reads as old trauma. Nose broken multiple times, crooked and asymmetrical. Hands show age spots and calluses. Face carries the gravity of someone who has made hard choices and made peace with them. Fine cheekbones and defined facial structure inherited from Southeast Asian ancestry, with strength from Sub-Saharan lineage, South Asian warmth in the undertones, and subtle Middle Eastern angularity around the brow ridge",
     "distinguishing_marks": [
-      "Extensive burn scar covering left jaw and neck in pale, lustre-finished scar tissue, extending from mid-cheek to collarbone.",
-      "Crooked nose, broken multiple times, noticeably off-center.",
-      "Faint bioluminescent gene-mod on remaining fingertips (right hand organic, left hand prosthetic)—pale blue, barely visible in daylight but glows softly in shadow."
+      "Extensive burn scar covering left jaw and neck in pale, lustre-finished scar tissue, extending from mid-cheek to collarbone",
+      "Crooked nose, broken multiple times, noticeably off-center",
+      "Faint bioluminescent gene-mod on remaining fingertips (right hand organic, left hand prosthetic)—pale blue, barely visible in daylight but glows softly in shadow"
     ],
-    "visible_augmentations": "Right arm prosthetic from elbow to fingertip: military-grade Ferrogate chassis, matte black, unpainted, joints worn smooth by twenty years of civilian use. Subdermal trauma-response regulator is not visible, but the way he breathes—controlled, deliberate, even when tense—suggests it.",
-    "posture_movement": "Sits more than he stands. When seated, he is completely still—a load-bearing stillness, patient and immovable. When he moves, it is deliberate and economical, no wasted motion. His gait is slightly favored on his left leg. He does not gesture much. His presence is quiet but displacing—people unconsciously orient toward him.",
-    "clothing_style": "Tier 3 practical wear, maintained well but without pretense. Thermal-weave cargo pants in grey-brown, reinforced at knees and cuff. Layered shirts—usually a base thermal under a loose, faded workshirt or pullover in muted colors (navy, charcoal, earth tones). Worn synthetic leather jacket in black, military-cut, no insignia. Steel-toed work boots, practical and broken in. A single piece of jewelry: a thin data-tether bracelet on his left wrist, civilian model, where he stores daily block recordings to leave at the power unit. No chrome, no status wear, nothing that suggests he needs to be anything other than what he is."
+    "visible_augmentations": "Right arm prosthetic from elbow to fingertip: military-grade Ferrogate chassis, matte black, unpainted, joints worn smooth by twenty years of civilian use. Subdermal trauma-response regulator is not visible, but the way he breathes—controlled, deliberate, even when tense—suggests it",
+    "posture_movement": "Sits more than he stands. When seated, he is completely still—a load-bearing stillness, patient and immovable. When he moves, it is deliberate and economical, no wasted motion. His gait is slightly favored on his left leg. He does not gesture much. His presence is quiet but displacing—people unconsciously orient toward him",
+    "clothing_style": "Tier 3 practical wear, maintained well but without pretense. Thermal-weave cargo pants in grey-brown, reinforced at knees and cuff. Layered shirts—usually a base thermal under a loose, faded workshirt or pullover in muted colors (navy, charcoal, earth tones). Worn synthetic leather jacket in black, military-cut, no insignia. Steel-toed work boots, practical and broken in. A single piece of jewelry: a thin data-tether bracelet on his left wrist, civilian model, where he stores daily block recordings to leave at the power unit. No chrome, no status wear, nothing that suggests he needs to be anything other than what he is"
   },
-  "image_prompt": "cyberpunk 2226 character portrait of Echo Bustamante, a 188cm tall weathered man with deep warm brown skin and subtle golden undertones blending Sub-Saharan African, Hispanic, North African, and Southeast Asian heritage. Dark grey-black short-cropped hair, dark brown observant eyes. Broad strong cheekbones and jaw, broken nose crooked and asymmetrical. Extensive pale burn scar tissue covering left jaw and neck from mid-cheek to collarbone, old healed trauma. Age spots and calluses on large hands. Right arm prosthetic from elbow down—military-grade Ferrogate matte black chassis, worn smooth, faint bioluminescent blue gene-mod on fingertips barely glowing. Wearing grey-brown thermal cargo pants, layered navy workshirt under worn black military-cut synthetic leather jacket, steel-toed work boots. Data-tether bracelet on left wrist. Seated in stillness, completely motionless, patient and immovable presence. Quiet displacing aura. Indoor shadows with subtle neon, cool and muted palette, cyberpunk Great Lakes Metropolitan Zone setting, mood of hard-won peace and controlled deliberation --ar 2:3 --v 6",
+  "image_prompt": "Echo Haraldsen, 188cm tall man with deep warm brown skin (Southeast Asian-Sub-Saharan African diaspora blend), dark grey cropped hair, dark brown eyes. Weathered face with extensive pale burn scar running down left jaw and neck, crooked broken nose, fine cheekbones. Right arm military-grade black Ferrogate prosthetic from elbow down with faint blue bioluminescent fingertips. Wearing worn black synthetic leather military-cut jacket over layered thermal base and muted workshirt, grey-brown thermal cargo pants with reinforced knees, steel-toed work boots. Thin data-tether bracelet on left wrist. Seated motionless in shadows, completely still, patient and displacing presence. GLMZ Great Lakes Metropolitan Zone, dim interior lighting emphasizing scar tissue and prosthetic wear, no unnecessary chrome or status wear, quiet dignity of someone at peace with hard choices. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.7,
-    "Hispanic/Latin American": 29.2,
-    "North African": 18.5,
-    "Southeast Asian": 10.6
+    "Southeast Asian": 45.7,
+    "Sub-Saharan African": 35.5,
+    "South Asian": 9.3,
+    "Hispanic/Latin American": 6,
+    "Middle Eastern": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 20
+      },
+      "Indonesian": {
+        "Javanese": 22.2,
+        "Sundanese": 3.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 23.7
+      },
+      "Southern African": {
+        "South African": 6.9,
+        "Botswanan": 4.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 9.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 1.7,
+        "Peruvian": 0.4
+      },
+      "Central American": {
+        "Guatemalan": 3.5
+      },
+      "Caribbean": {
+        "Haitian": 0.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 2.1,
+        "Afghan Dari": 1.4
+      }
+    }
+  }
 }

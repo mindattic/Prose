@@ -1,7 +1,7 @@
 {
   "id": "019d6143a687770e81049b758c97cc48",
   "type": "character",
-  "name": "Aero Nygaard-Hernández",
+  "name": "Britt Appiah-Tran",
   "aliases": [
     "Ors",
     "The Wringer"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Hamtramck Enclave, sub-basement level of the Kossuth Residency block, near Kedzie and Division",
-  "description": "Orsolya is a broad-shouldered woman with hands that look like they were carved from hardwood — knuckled, stained faintly blue-grey from decades of industrial detergent and dye-stripping fluid. Her hair is silver-streaked black, usually pinned up with whatever is closest, often a stylus or a bent fork. She has deep-set eyes the color of dark amber and a jaw that suggests she once had a habit of grinding her teeth, which she replaced with the habit of grinding other people's patience instead. Her skin carries the warm undertone of her Senegalese grandmother and the pale freckling of her Hungarian grandfather, a combination that her regulars say makes her look like she was assembled from contradictions — which, she would tell you, is exactly right.\n\nShe runs the laundry with the precision of a military operation and the warmth of a woman who has watched three generations of the same families bring her their clothes. She knows everyone's laundry tells a story — whose kid had a bloody nose, whose corp interview is tomorrow, who's dressing up for someone they shouldn't be. She keeps all of it. She gossips about none of it. She is the confessor of the Kossuth block, and she charges Φ4 per kilo.",
+  "description": "Britt Appiah-Tran is a broad-shouldered woman with hands that look like they were carved from hardwood — knuckled, stained faintly blue-grey from decades of industrial detergent and dye-stripping fluid. Her hair is silver-streaked black, usually pinned up with whatever is closest, often a stylus or a bent fork. She has deep-set eyes the color of dark amber and a jaw that suggests she once had a habit of grinding her teeth, which she replaced with the habit of grinding other people's patience instead. Her skin carries the warm undertone of her Senegalese grandmother and the pale freckling of her Hungarian grandfather, a combination that her regulars say makes her look like she was assembled from contradictions — which, she would tell you, is exactly right.\n\nShe runs the laundry with the precision of a military operation and the warmth of a woman who has watched three generations of the same families bring her their clothes. She knows everyone's laundry tells a story — whose kid had a bloody nose, whose corp interview is tomorrow, who's dressing up for someone they shouldn't be. She keeps all of it. She gossips about none of it. She is the confessor of the Kossuth block, and she charges Φ4 per kilo.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -154,7 +154,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,48 +175,21 @@
     "Ringo Corponation Adrenal Sequencing Patch",
     "Grandmother",
     "The CEO",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
-    "The Shelf",
     "Vantablack Media Confessor Tap — 'The Booth'",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Shelf",
+    "Patience",
     "Tessera Corponation",
-    "The Pure Hand",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "The Pure Hand",
     "Lazarus IDP-1 'Teeth'",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pale Mile",
     "Arcturus Defense Solutions ETF-3 'Mantis'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrogio Waweru-Djordanović",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Cinderblock Ai",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Mika Sorel",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nnamdi Ostrowski-Faletolu",
-    "Orbital Drop Pod",
-    "Palladian Construction",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sulfur Crown Agriculture",
-    "TERMINUS",
-    "The Bleach Boys",
-    "The Ledger",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian (57.7%, primarily), Sub-Saharan African (20.2%), Hispanic/Latin American (13.3%), Northern European (8.8%)—a striking blend visible in facial structure, skin tone, and eye color. The genetic dominance of East Asian ancestry shapes her bone structure and eye shape, while African and Latin American heritage contribute warmth and dimensionality to her skin tone, and Northern European ancestry adds subtle complexity to her complexion.",
+    "heritage": "Sub-Saharan African (29.6%), Northern European (21.1%), Eastern European (19.3%), Southeast Asian (15.6%), East Asian (8.9%), Hispanic/Latin American (5.5%)—a genuinely mixed ancestry that manifests in her facial structure as a sophisticated blend of multiple bone structures. Sub-Saharan African heritage contributes to her warm, rich skin tone, fuller cheekbones, and broader nasal bridge. Northern and Eastern European ancestry adds subtle complexity to her complexion warmth and moderate facial prominence. Southeast and East Asian heritage shapes her eye structure, contributes to cheekbone prominence, and influences her overall facial geometry. The combined effect is a face that reads as globally mixed—full-featured yet angular in places, warm-toned yet dimensionally complex.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, neither lean nor heavy—the build of someone who has moved and lifted for fifty-four years without breaking. Forearms thick and ropy with work muscle. Core weight settled from middle age, but not softness; density.",
@@ -224,8 +197,8 @@
     "hair_style": "Usually pinned up hastily with whatever is at hand—styluses, forks, pencils, the occasional chopstick. When down, falls to shoulder length in a slightly wavy texture.",
     "hair_length": "Medium",
     "eye_color": "Dark amber, warm and observant",
-    "skin_tone": "Warm medium brown with golden undertones—the result of dominant East Asian ancestry layered with Sub-Saharan African warmth and Hispanic/Latin depth, creating a rich, complex tone that shifts in different lighting. Scattered freckling across the nose and cheekbones adds subtle texture and reflects the Northern European admixture.",
-    "complexion": "Lined face that reads as lived-in rather than aged, with facial structure showing East Asian bone prominence in cheekbones and jaw, softened by the fuller features contributed by African and Latin American ancestry. Deep creases around the eyes and mouth from decades of smiling and squinting at stain charts. Callused, weathered skin on hands and forearms. Fingernails kept short and practical, with faint blue-grey discoloration in the nail beds from chronic detergent exposure. No makeup. A few small burn scars on her left forearm from industrial dryer incidents.",
+    "skin_tone": "Rich warm brown with golden-bronze undertones—a complex blend of Sub-Saharan depth, Northern European warmth, and Southeast Asian subtlety. The tone is dimensional and shifts noticeably in different lighting. Scattered light freckling across the nose and cheekbones adds texture and dimension.",
+    "complexion": "Lived-in face marked by decades of labor rather than age alone, with facial structure showing a genuine blend across multiple ancestries—full cheekbones and broader nose bridge from Sub-Saharan heritage, moderate facial width and bone structure from Northern/Eastern European ancestry, distinctively shaped eye placement and slightly higher cheekbone prominence from Southeast Asian heritage contributing to an angular quality balanced against fuller features. Deep creases around the eyes and mouth from decades of smiling and squinting at stain charts. Callused, weathered skin on hands and forearms. Fingernails kept short and practical, with faint blue-grey discoloration in the nail beds from chronic detergent exposure. No makeup. Three pale linear scars on her left forearm from steam and chemical burns accumulated over forty years of laundry work. Small crescent-shaped scar on her right temple, barely visible unless the light catches it.",
     "distinguishing_marks": [
       "Faint blue-grey staining in the crescent of both fingernails and under the cuticles, permanent from decades of industrial-grade detergent and dye-stripping fluid exposure",
       "Three pale linear scars on the left forearm (inner wrist to elbow), each 2-3 cm long, from steam and chemical burns accumulated over forty years of laundry work",
@@ -237,15 +210,61 @@
     "posture_movement": "Stands with weight balanced and legs slightly apart—a stance developed from sixteen hours a day on hard concrete. Moves with economical efficiency; no wasted motion. Hands are always doing something—gesturing, folding, checking, organizing. Sits heavily when she sits, as if earning the rest. Eye contact is direct and sustained, reading people the way she reads laundry stains. Her default expression is watchful neutrality that shifts to warmth when she chooses.",
     "clothing_style": "Practical Tier 4 working-class. Wears heavy cotton or synthetic-blend work pants in grey or dark blue, always with multiple pockets. Usually a loose, oversized button-up shirt in white, cream, or faded patterns—often borrowed from or donated by laundry customers—worn open over a fitted undershirt. A heavy canvas apron, faded from years of bleach and wear, with deep pockets and water stains. Worn-in athletic shoes with orthopedic insoles, usually generic Tier 4 brands. A thin gold chain necklace with a small cross pendant, inherited. A simple wristwatch with a fabric strap, the face cracked but still functional. No jewelry beyond the watch and necklace. Hair held up with whatever implements are closest—functional, never decorative."
   },
-  "image_prompt": "Aero Nygaard-Hernández, 54-year-old woman, cyberpunk 2226, warm medium-brown skin with golden undertones and subtle freckling, prominent East Asian cheekbones softened by fuller features, dark amber eyes warm and observant, black hair streaked with silver-grey pinned up with styluses and chopsticks, shoulder-length slightly wavy when down. Medium height, broad-shouldered, solid work-worn build with ropy forearms, density rather than softness. Deep creases around eyes and mouth from decades of smiling, weathered callused hands with faint blue-grey nail discoloration. Three pale linear scars on left inner forearm from chemical burns, small crescent scar on right temple. Subtle medical-grade wrist joint augmentations with pale synthetic cartilage visible, no cosmetic chrome. Wearing loose oversized button-up shirt in cream worn open over fitted undershirt, heavy grey work pants with multiple pockets, faded bleach-stained canvas apron with deep pockets, worn-in orthopedic athletic shoes, thin gold cross necklace, cracked-face wristwatch with fabric strap. Standing with balanced weight and legs slightly apart on worn concrete, economical efficient movements, direct sustained eye contact, watchful neutral expression. Harsh industrial lighting in background laundry facility, fluorescent and steam, matter-of-fact presence, lived-in dignity, cyberpunk working-class grit --ar 2:3 --v 6",
+  "image_prompt": "Britt Appiah-Tran, 54-year-old woman with rich warm brown skin with golden undertones and scattered freckling, mixed-heritage facial structure combining fuller cheekbones and broader nose from Sub-Saharan ancestry with subtle Eastern European bone structure and Southeast Asian eye placement. Black hair with silver-grey streaking at temples, pulled up hastily with a chopstick. Dark amber eyes, direct and observant. Deep creases around eyes and mouth from decades of work. Medical-grade wrist joint augmentations visible at both wrists. Worn work uniform: faded canvas apron over oversized cream button-up shirt, grey work pants, worn orthopedic shoes. Blue-grey staining visible in fingernail beds, linear scars on left forearm, small crescent scar barely visible on right temple. Standing in industrial laundry facility with warm overhead lighting casting shadows across her weathered features. Matter-of-fact posture, economical movement, watchful expression. GLMZ, realistic working-class aesthetic, naturalistic lighting, gritty atmospheric --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 57.7,
-    "Sub-Saharan African": 20.2,
-    "Hispanic/Latin American": 13.3,
-    "Northern European": 8.8
+    "Sub-Saharan African": 29.6,
+    "Northern European": 21.1,
+    "Eastern European": 19.3,
+    "Southeast Asian": 15.6,
+    "East Asian": 8.9,
+    "Hispanic/Latin American": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 29.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 11.9,
+        "Swiss German": 9.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 16.6,
+        "Czech": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 15.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 1.5
+      },
+      "Japanese": {
+        "Japanese": 3.1
+      },
+      "Korean": {
+        "Korean": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.3
+      },
+      "Central American": {
+        "Salvadoran": 0.1,
+        "Nicaraguan": 0.1
+      }
+    }
+  }
 }

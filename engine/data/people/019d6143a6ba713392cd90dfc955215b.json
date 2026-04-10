@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ba713392cd90dfc955215b",
   "type": "character",
-  "name": "Kit Hinojosa",
+  "name": "Kit Odinga",
   "aliases": [
     "Ruki",
     "Inkmother"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Pilsen Veil, her studio Secondskin on Cormorant Row, near Halsted and Chicago Ave",
-  "description": "Rukayya is a compact woman built like someone who has spent decades hunched over intricate work and corrected for it with deliberate physicality — she boxes three mornings a week and her forearms are remarkable. Her own body is her portfolio: a full patchwork of work spanning thirty years, the older pieces layered under newer ones in a stratigraphy of style that clients study like a map. Her most striking feature is her right hand, where she had a Helix Biosystems chromatic dermis graft installed — the skin shifts color based on her body chemistry and current tools, functioning as a kind of live color-temperature reference that cost her two years of savings.\n\nShe is the kind of person who has been doing one thing for so long that excellence has become personality. Clients wait four months for an appointment. She doesn't advertise. She turns away people she doesn't trust with her work, which creates a mystique she finds exhausting and somewhat absurd. Her studio smells of antiseptic and the specific warm-copper scent of her proprietary bioluminescent pigment blend. She keeps a small ELF shrine above her workstation — a cracked tablet displaying only a slow amber pulse — and touches it before beginning any session.",
+  "description": "Kit Odinga is a compact woman built like someone who has spent decades hunched over intricate work and corrected for it with deliberate physicality — she boxes three mornings a week and her forearms are remarkable. Her own body is her portfolio: a full patchwork of work spanning thirty years, the older pieces layered under newer ones in a stratigraphy of style that clients study like a map. Her most striking feature is her right hand, where she had a Helix Biosystems chromatic dermis graft installed — the skin shifts color based on her body chemistry and current tools, functioning as a kind of live color-temperature reference that cost her two years of savings.\n\nShe is the kind of person who has been doing one thing for so long that excellence has become personality. Clients wait four months for an appointment. She doesn't advertise. She turns away people she doesn't trust with her work, which creates a mystique she finds exhausting and somewhat absurd. Her studio smells of antiseptic and the specific warm-copper scent of her proprietary bioluminescent pigment blend. She keeps a small ELF shrine above her workstation — a cracked tablet displaying only a slow amber pulse — and touches it before beginning any session.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -217,35 +217,12 @@
     "The Gradient Compact",
     "Irontide Tidal Energy",
     "Stratum",
-    "Copper",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Breadcrumb",
-    "Breck Tannen",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Copperveil Intelligence",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ezio Kaboré-Malhotra",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "NeuralPath FaceAnchor Name & Face Recall Aid",
-    "Obafemi Szczypiński-Lautoa",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "TESSERA PG-2 'Signature'",
-    "The Coffin Nails",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
-    "Zheng-dao Bioelectric"
+    "Copper"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (87.6%) with notable North African (6.4%) and Pacific Islander (6.0%) ancestry; the genetic blend manifests in warm, rich skin tones with subtle golden and olive undertones, high cheekbones and defined facial structure reflecting Mediterranean and Latin American features, with the North African and Pacific Islander contributions adding depth to her complexion and subtle variation in feature proportions.",
+    "heritage": "Multi-continental ancestry: Sub-Saharan African (47.0%), Middle Eastern (18.8%), South Asian (18.6%), Northern European (12.3%), and East Asian (3.3%). The genetic blend manifests in rich, complex skin tones with warm golden and deep undertones. High, prominent cheekbones and defined facial structure reflect the dominant African heritage with refined proportions from Middle Eastern and South Asian ancestry. Northern European contribution adds subtle angularity to the overall bone structure, while East Asian influence appears subtly in eye shape and orbital geometry.",
     "height_cm": 163,
     "weight_kg": 61,
     "build": "Compact and densely muscled; shoulders and upper back defined from decades of precision work and three mornings weekly of boxing. Forearms are remarkable — visibly corded with lean muscle and scar tissue from tool use and early experimental grafts. Core is tight; posture is corrected and deliberate.",
@@ -253,8 +230,8 @@
     "hair_style": "Worn pulled back in a tight braid, practical and controlled; a few escaped strands typical by day's end",
     "hair_length": "Long (shoulder-blade length when unbraided)",
     "eye_color": "Dark brown, natural; magnification implants visible as faint chromatic aberration at edges of iris under direct light, medical-grade lenses",
-    "skin_tone": "Rich warm golden-brown with subtle olive undertones, reflecting the dominant Hispanic/Latin American ancestry blended with North African warmth and Pacific Islander depth; consistently even tone across body with natural luminosity",
-    "complexion": "Skin is impeccably maintained — the result of decades of sterilization protocols and skin chemistry study. Fine lines around eyes and mouth from concentration and years of focused work. Hands show calluses from grip tools, but nails are always clean and filed. Face has high cheekbones, a broad nose with subtle width reflecting diverse ancestry, and a small scar on her left jaw from a boxing match thirty years ago that she never had corrected.",
+    "skin_tone": "Deep warm golden-brown with rich luminous undertones reflecting the balanced blend of Sub-Saharan African, Middle Eastern, and South Asian heritage, enhanced by subtle Northern European warmth. Even tone across body with a radiant, well-maintained quality.",
+    "complexion": "Skin is impeccably maintained — the result of decades of sterilization protocols and skin chemistry study. Fine lines around eyes and mouth from concentration and years of focused work. High, broad cheekbones with refined width. Broad nose with elegant proportions. Small scar on left jaw from a boxing match thirty years ago, deliberately left uncorrected. Overall facial geometry reflects balanced multi-continental proportions with strong structural presence.",
     "distinguishing_marks": [
       "Full-body tattoo patchwork covering approximately 70% of visible skin; older pieces in faded blacks and greens layered beneath vibrant newer work in bioluminescent compounds of her own design; sleeves flow from shoulder to wrist on both arms with no negative space",
       "Right hand features Helix Biosystems chromatic dermis graft; skin shifts between deep plum, copper, and cool silver depending on body temperature and chemical composition; appears to glow faintly under studio lighting",
@@ -266,14 +243,61 @@
     "posture_movement": "Moves with economic precision; every gesture is deliberate and practiced from decades of fine motor work. Shoulders are slightly forward from studio posture, but she corrects this consciously through boxing training. Her hands are always in motion — adjusting tools, demonstrating designs in the air, gesturing when speaking. Her gaze settles intensely on details others miss. She walks the long way home through Pilsen Veil most nights, unhurried.",
     "clothing_style": "Tier 3-4 practical; favors dark fitted pants or modified studio coveralls in muted charcoal or black. Wears loose linen or cotton overshirts in cream, deep indigo, or rust — easy to move in and simple to keep sterile. Steel-toed boots, worn but maintained. Minimal jewelry beyond her work: a thin silver ring on her right ring finger (a gift from a retired apprentice). Her clothes are functional, not fashionable, but tailored to her frame with clear intention. Studio smock is custom-made from medical-grade synthetic, stained with pigments in places it would be impossible to clean — a badge of decades of work."
   },
-  "image_prompt": "Kit Hinojosa, 163cm compact muscular woman with rich golden-brown skin and high cheekbones, dark brown hair pulled back in tight braid with silver at temples, standing in cyberpunk 2226 studio workshop. Right hand glowing with chromatic dermis graft shifting between plum and copper. Extensive bioluminescent tattoo sleeves covering both arms and 70% of visible skin, layered geometric patterns in faded blacks beneath vibrant neon designs. Dark eyes with faint magnification implant chromatic aberration. Wearing charcoal fitted studio coveralls over cream linen overshirt, steel-toed boots. Small amber pulsing ELF mark on right wrist. Fine concentration lines around eyes and mouth, small scar on left jaw. Hands visibly corded with lean muscle and tool calluses. Posture precise and deliberate from decades of precision geneware work. Studio setting with warm overhead lighting that catches the glow of her chromatic implants and bioluminescent tattoos, industrial workspace blurred in background, moody atmospheric lighting, photorealistic, cinematic --ar 2:3 --v 6",
+  "image_prompt": "Kit Odinga, 163cm compact muscular frame, deep warm golden-brown skin with luminous undertones, high prominent cheekbones and refined broad nose reflecting Sub-Saharan African, Middle Eastern, and South Asian heritage. Dark brown eyes with subtle magnification implants visible under light. Long dark brown hair with silver at temples pulled back in tight braid. Arms covered in layered bioluminescent tattoo patchwork from shoulder to wrist. Right hand glowing chromatic dermis graft shifting between plum, copper, and silver. Small scar on left jaw. Wearing dark charcoal fitted pants and loose rust-colored linen overshirt, medical-grade studio smock stained with pigments, worn steel-toed boots. Standing in neo-noir studio workshop, neon-lit, focused intense gaze on detail work, hands in precise motion, decades of mastery evident in posture, 2226 GLMZ aesthetic, moody studio lighting with highlights catching bioluminescent tattoos and chromatic hand graft --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 87.6,
-    "North African": 6.4,
-    "Pacific Islander": 6.0
+    "Sub-Saharan African": 47,
+    "Middle Eastern": 18.8,
+    "South Asian": 18.6,
+    "Northern European": 12.3,
+    "East Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 24.4,
+        "Mozambican": 11.3
+      },
+      "West African": {
+        "Nigerian": 5.4
+      },
+      "Central African": {
+        "Congolese": 3.5,
+        "Angolan": 2.4
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 18.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 18.6
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 7.7,
+        "Danish": 1
+      },
+      "Germanic": {
+        "German": 2.9
+      },
+      "British Isles": {
+        "Irish": 0.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.8
+      },
+      "Korean": {
+        "Korean": 0.5
+      }
+    }
+  }
 }

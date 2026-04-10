@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66c7d788dc08b261cd6d934",
   "type": "character",
-  "name": "Aero Fredriksen",
+  "name": "Aero Jitpakdee",
   "aliases": [
     "Neka",
     "Coach"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Highland Park Autonomous Zone — the Ironbody Cooperative, second floor of a reclaimed factory building, near Michigan Ave and Oak",
-  "description": "Nneka is built like someone who decided what she was going to be and then spent twenty years becoming it — wide through the shoulders, with forearms that look carved, and a jaw that suggests she has never backed down from anything that didn't have a very good reason to ask. Her skin is very dark and very smooth except for the scar tissue along her left cheekbone from a fight she doesn't discuss and the chevron pattern of elective scarification across both shoulders that echoes her grandmother's ceremonial markings, done at a body modification studio in Geartown with deliberate care. Her hair is kept in tight plaits close to her skull. She has retractable reinforced knuckle implants — the only chrome on her body, practical not cosmetic, and she got them after the third time she broke her hand hitting something harder than she should have.\n\nThe Ironbody Cooperative runs on a sliding scale: you pay what you can, you work what you owe in facility maintenance if you can't, and you don't cause problems for other members or you leave. Nneka runs it with two other trainers and a rotating volunteer roster. She teaches children's boxing on Tuesday and Thursday mornings, adult conditioning circuits five days a week, and one private session per week with whoever needs it most — she charges more for the private sessions with people who can afford it and uses that margin to subsidize the cooperative's equipment costs. She believes, with the ferocity of someone who was saved by it, that physical discipline is the most democratic thing a person can practice.",
+  "description": "Aero Jitpakdee is built like someone who decided what she was going to be and then spent twenty years becoming it — wide through the shoulders, with forearms that look carved, and a jaw that suggests she has never backed down from anything that didn't have a very good reason to ask. Her skin is very dark and very smooth except for the scar tissue along her left cheekbone from a fight she doesn't discuss and the chevron pattern of elective scarification across both shoulders that echoes her grandmother's ceremonial markings, done at a body modification studio in Geartown with deliberate care. Her hair is kept in tight plaits close to her skull. She has retractable reinforced knuckle implants — the only chrome on her body, practical not cosmetic, and she got them after the third time she broke her hand hitting something harder than she should have.\n\nThe Ironbody Cooperative runs on a sliding scale: you pay what you can, you work what you owe in facility maintenance if you can't, and you don't cause problems for other members or you leave. Aero Jitpakdee runs it with two other trainers and a rotating volunteer roster. She teaches children's boxing on Tuesday and Thursday mornings, adult conditioning circuits five days a week, and one private session per week with whoever needs it most — she charges more for the private sessions with people who can afford it and uses that margin to subsidize the cooperative's equipment costs. She believes, with the ferocity of someone who was saved by it, that physical discipline is the most democratic thing a person can practice.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -170,7 +170,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,28 +191,11 @@
     "Palladian Construction",
     "The Heidelberg Scar",
     "Geartown",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Davi Ousseini-Brătianu",
-    "Focadrin",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Narrowcast",
-    "Patient Zero",
-    "Rashaad Tumelo-Koskinen",
-    "The Coffin Nails",
-    "The Collective",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Tangles",
-    "Yannick Tambadou-Reinholt"
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Diverse Pan-Global: Northern European (34.4%), Sub-Saharan African (32.8%), East Asian (12.1%), Southeast Asian (8.5%), South Asian (7.4%), Hispanic/Latin American (4.8%). A striking blend expressing strong African and Scandinavian ancestry with meaningful East and Southeast Asian features creating unique facial geometry.",
+    "heritage": "Predominantly Southeast Asian (55.2%) with substantial South Asian (30.3%) and East Asian (11.4%) ancestry, plus minor Hispanic/Latin American heritage (3.1%). The genetic blend creates a striking fusion: Southeast Asian bone structure and facial width form the foundation, enriched by South Asian golden warmth and depth, with East Asian refinement in eye shape and subtle facial geometry. This is the living expression of the Ubiquitous Diaspora—a harmonious synthesis across continental boundaries.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Athletic and broad-shouldered with dense musculature developed through deliberate training. Wide through the chest and back, tapering to a narrow waist. Forearms show pronounced muscular definition. No excess body fat.",
@@ -220,8 +203,8 @@
     "hair_style": "Tight cornrow plaits, pulled back close to the scalp",
     "hair_length": "Medium (plaits extend 8-10cm from scalp)",
     "eye_color": "Dark brown with subtle warm undertones",
-    "skin_tone": "Deep brown with warm undertones—rich fusion of Sub-Saharan African darkness with subtle golden warmth from South Asian and Southeast Asian heritage",
-    "complexion": "Smooth skin with high definition facial structure showing blended ancestry traits: prominent cheekbones and squared jawline characteristic of Northern European genetics, combined with the facial proportions and subtle epicanthic eye shape inherited from East Asian heritage. Warm undertone across the bridge of nose and cheekbones. Expression carries quiet intensity.",
+    "skin_tone": "Medium-deep golden-brown with warm, radiant undertones. The depth reflects Southeast Asian heritage while the golden luminosity carries South Asian warmth. Even, rich tone across face and body with visible vitality.",
+    "complexion": "Smooth, well-maintained skin with striking facial definition. High, prominent cheekbones and strong squared jawline characteristic of Southeast Asian genetics. Slight epicanthic eye shape and refined facial proportions reflect East Asian heritage. South Asian warmth visible across the nasal bridge and cheekbones, creating subtle dimension. Expression carries quiet intensity and composed presence.",
     "distinguishing_marks": [
       "Raised scar tissue along left cheekbone from a fight, approximately 4cm in length, parallel to the cheekbone",
       "Chevron-pattern elective scarification across both shoulders in deliberate ceremonial style, echoing ancestral markings, pale raised tissue against dark skin"
@@ -230,17 +213,47 @@
     "posture_movement": "Carries herself with the settled confidence of someone comfortable in her own strength. Stands with shoulders back and spine neutral. Moves with economical, purposeful motions — no wasted energy. When teaching, presence expands; when listening, she goes still.",
     "clothing_style": "Tier 3-4 practical wear: fitted athletic tank or moisture-wicking long-sleeve compression shirt (often with Ironbody Cooperative logo). Cargo pants or stretchy training trousers with functional pockets. Worn but well-maintained sneakers (usually Reebok or similar mid-range athletic brand). Minimal jewelry — a simple woven bracelet, possibly some personal token. Callused hands, short functional nails. Overall aesthetic: someone who dresses for function and movement, not display."
   },
-  "image_prompt": "Aero Fredriksen, 2226 cyberpunk portrait. Deep brown-skinned athletic woman with tight cornrow plaits pulled back from her face, revealing high cheekbones and a squared jawline blending Scandinavian and Sub-Saharan African features with subtle East Asian eye geometry. Dark brown eyes with warm undertones. Raised scar tissue runs along left cheekbone. Ceremonial chevron scarification across both shoulders in pale raised patterns. Muscular, broad-shouldered build, 178cm tall. Wearing fitted Ironbody Cooperative moisture-wicking compression shirt, cargo pants, worn athletic sneakers. Simple woven bracelet. Metallic knuckle plating visible on relaxed hands. Standing with confident, economical posture, quiet intensity in her expression. Neon-lit training facility or Tier 3 cooperative gym setting, cool blue and amber lighting casting shadows across muscular definition. 2200s utilitarian aesthetic, functional and strong. --ar 2:3 --v 6",
+  "image_prompt": "Aero Jitpakdee, tall athletic woman with Southeast Asian-dominant blended heritage, medium-deep golden-brown skin with warm undertones, dark brown eyes with subtle warmth, high cheekbones and strong squared jawline with slight epicanthic eye shape. Black cornrow plaits pulled back from face. Raised scar across left cheekbone, ceremonial chevron scarification across shoulders. Muscular defined shoulders and forearms, metallic knuckle plating visible on relaxed hands. Wearing fitted moisture-wicking compression shirt with Ironbody Cooperative logo, cargo training pants, worn athletic sneakers. Quiet intensity and composed presence, shoulders back in confident neutral posture. GLMZ Great Lakes Metropolitan Zone, neon and cool LED lighting casting slight shadows across her features, industrial gym or training facility background, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 34.4,
-    "Sub-Saharan African": 32.8,
-    "East Asian": 12.1,
-    "Southeast Asian": 8.5,
-    "South Asian": 7.4,
-    "Hispanic/Latin American": 4.8
+    "Southeast Asian": 55.2,
+    "South Asian": 30.3,
+    "East Asian": 11.4,
+    "Hispanic/Latin American": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 25.4
+      },
+      "Thai": {
+        "Thai": 29.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 22.9
+      },
+      "Nepali": {
+        "Nepali": 7.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.6
+      },
+      "Chinese": {
+        "Mandarin Northern": 4.7,
+        "Sichuanese": 3.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 3.1
+      }
+    }
+  }
 }

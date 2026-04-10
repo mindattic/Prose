@@ -1,7 +1,7 @@
 {
   "id": "019d6143a709740191725f43a1f5a474",
   "type": "character",
-  "name": "Adaeze Mensah-Kulkarni",
+  "name": "Camila Cervantes-Dang",
   "aliases": [
     "Tuu",
     "The Moth"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The Burnished Market, Edgewater Prism, near Lincoln and Clark",
-  "description": "Tuulikki is small and restless, with their Finnish grandmother's pale complexion overlaid with their Nigerian father's dark freckles — an unusual constellation across their nose and cheeks that they've leaned into by having bioluminescent nodes implanted along the same scatter pattern, so their freckles glow faint amber when they're excited or running hot. Their hair is geneware-modified to shift between deep black and a washed-out violet depending on temperature, and they wear it asymmetrical and usually slightly chaotic. They dress in layers of cheap Burnished Market textiles — mismatched patterns, things they've traded for rather than bought — and have a habit of wearing too many small earrings, most of them handmade by their market neighbors.\n\nTuulikki's stall is a masterpiece of organized chaos: rack after rack of slotted media chips, bootleg neural-experience packages, pirated entertainment feeds, and buried underneath the legitimate-seeming surface, curated data parcels for people who need specific information and can't access corporate archives. They have a magpie intelligence — they absorb and cross-reference constantly — and a social performance of cheerful airheadedness that they use deliberately and effectively. Underneath it, they are careful, slightly paranoid, and very good at what they do. They believe information wants to be free in the way that some people believe in ELFs: devoutly, with rituals to match.",
+  "description": "Camila Cervantes-Dang is small and restless, with their Finnish grandmother's pale complexion overlaid with their Nigerian father's dark freckles — an unusual constellation across their nose and cheeks that they've leaned into by having bioluminescent nodes implanted along the same scatter pattern, so their freckles glow faint amber when they're excited or running hot. Their hair is geneware-modified to shift between deep black and a washed-out violet depending on temperature, and they wear it asymmetrical and usually slightly chaotic. They dress in layers of cheap Burnished Market textiles — mismatched patterns, things they've traded for rather than bought — and have a habit of wearing too many small earrings, most of them handmade by their market neighbors.\n\nCamila Cervantes-Dang's stall is a masterpiece of organized chaos: rack after rack of slotted media chips, bootleg neural-experience packages, pirated entertainment feeds, and buried underneath the legitimate-seeming surface, curated data parcels for people who need specific information and can't access corporate archives. They have a magpie intelligence — they absorb and cross-reference constantly — and a social performance of cheerful airheadedness that they use deliberately and effectively. Underneath it, they are careful, slightly paranoid, and very good at what they do. They believe information wants to be free in the way that some people believe in ELFs: devoutly, with rituals to match.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,65 +230,74 @@
     "The Burnished Market",
     "Edgewater Prism",
     "Grandmother",
-    "Street Custom 'Glass Garden' Caltrops",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Street Custom 'Glass Garden' Caltrops",
     "Nesting Doll",
-    "Magpie",
+    "Neural Palate",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'",
-    "Nightlight",
-    "Crucible TR-7 'Triage'",
-    "Emeka Johansson-Orozco",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Ngaire Rojas-Yeboah",
-    "Nurlan Morita-Antwi",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Lazybones' Tripwire Shotgun Trap",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Bazaar",
-    "The Collective",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Nightlight"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Sub-Saharan African (53.6%) with significant Central Asian (21.9%) and South Asian (18.9%) ancestry, plus minor Hispanic/Latin American (3.1%) and Eastern European (2.5%) heritage. A striking blend resulting in warm-rich skin tones with complex undertones, facial features reflecting the dominant African ancestry with influences from Central and South Asian lineages.",
+    "heritage": "Hispanic/Latin American (53.9%) with significant Southeast Asian (30.3%) ancestry, plus Northern European (10.4%) and Sub-Saharan African (5.4%) heritage. The blend creates distinctive phenotypic features: warm honey-brown skin with golden undertones characteristic of the Latin American-Southeast Asian intersection, almond-shaped eyes reflecting Southeast Asian ancestry with warm amber tones, and facial structure showing the broad cheekbones and defined jawline common to Southeast Asian heritage softened by Latin American warmth. The minor Northern European and African contributions add subtle depth to skin luminosity and freckle patterning.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Small and wiry, with a restless energy that manifests in constant fidgeting and quick, economical movements. Lean muscle from years of hauling inventory and navigating crowded markets.",
     "hair_color": "Temperature-reactive geneware; shifts between deep black (cool) and washed-out violet (warm/excited)",
     "hair_style": "Asymmetrical, deliberately unkempt with one side shorter than the other; often has loose strands falling across their face",
     "hair_length": "Medium (3-8 inches depending on side)",
-    "eye_color": "Deep brown with warm amber undertones and faint golden flecks, reflecting the dominant Sub-Saharan and South Asian heritage",
-    "skin_tone": "Rich warm brown with golden undertones, reflecting the complex blend of Sub-Saharan African majority ancestry with Central and South Asian influences. Deeper in tone than pale complexions, with warmth and luminosity.",
-    "complexion": "Constellation of darker freckles and beauty marks across nose and cheeks, naturally intensified by genetic heritage and deliberately highlighted with bioluminescent nodes that glow soft amber when excited or body temperature rises. The freckle pattern creates an unusual, striking contrast against warm brown skin. Skin generally clear and unblemished; shows minor nicks and scars from handling equipment and market wear.",
+    "eye_color": "Deep brown with warm amber undertones and faint golden flecks, reflecting the blended Hispanic/Southeast Asian heritage",
+    "skin_tone": "Warm honey-brown with golden undertones, medium depth with luminosity that reflects the complex blend of Hispanic/Latin American majority ancestry with Southeast Asian influences and touches of Northern European and African heritage.",
+    "complexion": "Constellation of darker freckles and beauty marks across nose and cheeks, naturally intensified by genetic heritage and deliberately highlighted with bioluminescent nodes that glow soft amber when excited or body temperature rises. The freckle pattern creates an unusual, striking contrast against warm honey-brown skin. Skin generally clear and unblemished; shows minor nicks and scars from handling equipment and market wear.",
     "distinguishing_marks": [
       "Bioluminescent freckle nodes in constellation pattern across nose and cheeks that emit soft amber glow when activated by body heat or emotional excitement",
-      "Small scar on left temple from a market accident (approximately 2cm, pale against darker skin)",
+      "Small scar on left temple from a market accident (approximately 2cm, pale against warmer skin)",
       "Faint burn mark on right inner wrist from soldering equipment (circular, approximately 1cm diameter)"
     ],
     "visible_augmentations": "Neural interface jack behind right ear (visible as small brushed-steel port with minimal scarring); bioluminescent freckle nodes glowing amber across face when excited. Subdermal data-chip reader in left palm is only visible as faint subcutaneous lines under skin when activated, otherwise hidden.",
     "posture_movement": "Constantly in motion—fidgeting with fingers, bouncing slightly while standing, moving between inventory with economical precision. Restless energy contained within a small frame. Speaks with hands. Eyes dart frequently, taking in surroundings with magpie attention. Casual slouch when relaxed; tenses and focuses sharply when discussing data or negotiating.",
     "clothing_style": "Tier 3-4 Burnished Market aesthetic: layered in mismatched, cheap textiles sourced from market trades rather than retail purchases. Often wears oversized cardigans or jackets in clashing patterns, thermal underlayers visible at cuffs, cargo pants or loose trousers with multiple pockets filled with small tools and chips. Boots are worn but maintained. Adorns wrists and ears with numerous handmade or traded jewelry pieces—mostly small earrings (6-8 per ear), beaded bracelets, and a mismatched collection of bangles. Overall effect is deliberately chaotic and performatively airheaded, masking careful intentionality beneath."
   },
-  "image_prompt": "Adaeze Mensah-Kulkarni, 158cm, wiry and restless; warm rich brown skin with golden undertones, constellation of darker freckles across nose and cheeks glowing soft amber from bioluminescent nodes when excited. Deep brown eyes with golden flecks. Asymmetrical black hair that shifts violet when warm, medium length with loose strands. Small brushed-steel neural interface jack visible behind right ear. Wearing layered mismatched Burnished Market clothing—oversized clashing patterned cardigan over thermal underlayers, cargo pants stuffed with tools and data chips, worn boots. Multiple earrings (6-8 per ear) and beaded bracelets, bangles adorning wrists. Fidgeting hands, restless energy contained in small frame, casual slouch. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit market district, ambient LED glow casting soft shadows across face, emphasizing the constellation of bioluminescent freckles. Magpie-quick attention in darting eyes. Performatively chaotic but intentional. --ar 2:3 --v 6",
+  "image_prompt": "Camila Cervantes-Dang, 158cm small-framed Asian-Latina woman with warm honey-brown skin and golden undertones, Southeast Asian almond-shaped deep brown eyes with amber flecks, asymmetrical dark hair with violet temperature-reactive highlights, fidgeting restless energy. Constellation of bioluminescent amber freckles glowing across nose and cheeks, small scar on left temple, neural interface jack visible behind right ear. Wearing layered mismatched cardigans, thermal underlayers visible at cuffs, cargo pants, worn boots, adorned with 6-8 earrings per ear and multiple mismatched beaded bracelets. GLMZ GLMZ marketplace setting, warm neon-amber lighting highlighting bioluminescent freckles, hands in motion, magpie attention darting eyes, restless energy captured mid-fidget, Burnished Market tier 3 aesthetic, urban gritty detail, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 53.6,
-    "Central Asian": 21.9,
-    "South Asian": 18.9,
-    "Hispanic/Latin American": 3.1,
-    "Eastern European": 2.5
+    "Hispanic/Latin American": 53.9,
+    "Southeast Asian": 30.3,
+    "Northern European": 10.4,
+    "Sub-Saharan African": 5.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 38.7
+      },
+      "South American": {
+        "Colombian": 15.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 4.2
+      },
+      "Vietnamese": {
+        "Vietnamese": 26.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 4.5,
+        "Finnish": 5.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 5.4
+      }
+    }
+  }
 }

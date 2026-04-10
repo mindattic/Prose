@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a57ed1b8e9ed45a4cf684b",
   "type": "character",
-  "name": "Chinwe Okafor",
+  "name": "Chinwe Krstić",
   "aliases": [
     "Rada",
     "The Undertaker"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Deepwell Station, Metro Police Forensic Sciences Division, Sub-Level 3",
-  "description": "Radoslava has the kind of face that has settled into itself — strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn't changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her — long-fingered, precise, and in constant motion even when she's still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent — she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she's on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
+  "description": "Chinwe Krstić has the kind of face that has settled into itself — strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn't changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her — long-fingered, precise, and in constant motion even when she's still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent — she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she's on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -189,7 +189,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,32 +256,17 @@
   ],
   "related_entities": [
     "Deepwell Station",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Human Baseline Alliance",
-    "ARCHIVE",
+    "Midnight Gyros",
     "Silver",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Déjà Vu",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Patient Zero",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "Tshiamo Vukić-Arellano",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (64.5%) with significant Hispanic/Latin American (21.7%) and East Asian (13.8%) ancestry, creating a complex phenotype with deep warm undertones, broad facial structure with East Asian eye shape influence, and the rich melanin expression of primarily African heritage",
+    "heritage": "Sub-Saharan African (46.9%) with significant South Asian (25.7%), Eastern European (14.2%), East Asian (6.9%), and Northern European (6.3%) ancestry. This creates a phenotype of remarkable complexity: the deep melanin expression and facial structure of African heritage blended with the warm undertones and subtle eye shape variations from South Asian and East Asian ancestry, tempered by the cooler undertones of Eastern and Northern European genetics. The result is a richly dimensional skin tone with both warm and cool depth.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and wiry with the economical musculature of someone who has spent thirty years bending over evidence tables rather than lifting weights. Posture is habitually forward-curved at the shoulders, spine adapted to microscopic work.",
@@ -289,8 +274,8 @@
     "hair_style": "Tight, functional braid worn at the nape of the neck, same style for approximately fifteen years",
     "hair_length": "Long (braided)",
     "eye_color": "Warm brown (natural); augmented with neural-optical forensic overlays that manifest as faint iridescent shimmer at the pupils when active",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the dominant Sub-Saharan African ancestry blended with warmer Hispanic and East Asian influences creating rich, luminous depth",
-    "complexion": "Weathered in a precise way—minimal wrinkles except around the eyes and mouth from decades of concentration and rare, dry humor. Skin texture slightly papery from exposure to preservative compounds. Strong, broad cheekbones characteristic of African heritage, broad nose, closed expression that softens incrementally with familiarity. Subtle East Asian eye shape influence visible in the upper lid structure.",
+    "skin_tone": "Deep rich brown with complex undertones—warm amber notes from South Asian and African heritage, subtle cool undertones from Eastern European ancestry, creating luminous depth without being purely warm or cool. The skin has a refined quality suggesting both intense sunlight exposure in ancestry and work environment.",
+    "complexion": "Weathered in a precise way—minimal wrinkles except around the eyes and mouth from decades of concentration and rare, dry humor. Skin texture slightly papery from exposure to preservative compounds. Facial structure reflects the genetic blend: strong, broad cheekbones characteristic of African heritage, a nose with both breadth and definition suggesting the South Asian component, and subtle variations in eye shape and upper lid structure from East Asian ancestry. Closed expression that softens incrementally with familiarity.",
     "distinguishing_marks": [
       "Chemical burn scar on the inside of her left forearm, silvered and old, approximately 8cm long—legacy of early-career evidence processing accident",
       "Fine needle-puncture scarring on both temples where neural-optical integration suite was installed, barely visible beneath hair",
@@ -300,14 +285,62 @@
     "posture_movement": "Habitually forward-leaning, shoulders curved inward. Hands in constant micro-motion even at rest—testing textures, running fingers across surfaces, fidgeting with evidence containers or examining tools. Movements are economical and precise; she does not waste energy. Walking gait is steady and unhurried. Her presence is quiet—she does not announce herself.",
     "clothing_style": "GLMZ Metro Police forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Φ in equipment rather than appearance."
   },
-  "image_prompt": "Chinwe Okafor, forensic technician in cyberpunk 2226 GLMZ Metro Police uniform, deep warm brown skin with golden undertones, strong African-heritage cheekbones and broad nose with subtle East Asian eye contours, dark braided hair with silver threading worn at nape, warm brown eyes with faint iridescent neural-optical shimmer, weathered but precise features from decades of evidence analysis work. Wearing dark grey forensic coveralls with reflective trim, dark blue Metro coat worn open, sealed boots. Habitually forward-leaning posture with curved shoulders, quiet precise presence. Thin chemical burn scar visible on inner left forearm. Magnification rigs on eyes giving owl-like appearance during work. Standing in forensic lab with cool blue evidence lighting, hands in micro-motion near evidence containers, minimal expression, steady unhurried bearing. Cinematic cyberpunk lab atmosphere with evidence processing screens glowing in background, precise and economical presence --ar 2:3 --v 6",
+  "image_prompt": "Chinwe Krstić, a 168cm lean forensic technician with deep rich brown skin blending Sub-Saharan African, South Asian, Eastern European, and East Asian ancestry, warm amber and cool undertones creating luminous depth. Strong broad cheekbones, defined nose, subtle East Asian eye shape variations, warm brown natural eyes with faint iridescent neural-optical shimmer. Dark brown hair with silver streaking, worn in tight braids at nape. Weathered complexion from decades of precision lab work, minimal wrinkles around eyes and mouth, papery skin texture. Forward-curved posture, economical precise movements, hands in constant micro-motion. Wearing GLMZ Metro Police dark grey utility coveralls with reflective trim and sealed pockets, dark blue forensic division coat worn open, sealed forensic boots. Single band on left ring finger. Magnification rigs over eyes (owl-like). Chemical burn scar visible on left forearm, needle-puncture scars on temples beneath braids. Quiet presence, subdued energy. GLMZ forensic lab setting with cool neon-accented lighting, evidence containers and precision tools visible, atmospheric depth of field. Cinematic forensic noir mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 64.5,
-    "Hispanic/Latin American": 21.7,
-    "East Asian": 13.8
+    "Sub-Saharan African": 46.9,
+    "South Asian": 25.7,
+    "Eastern European": 14.2,
+    "East Asian": 6.9,
+    "Northern European": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 8.3
+      },
+      "East African": {
+        "Somali": 13.2
+      },
+      "Southern African": {
+        "South African": 7.9,
+        "Zimbabwean": 17.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.8
+      },
+      "Indian": {
+        "Kannada": 13.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 8.3
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 14.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.7
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 4.5
+      },
+      "Scandinavian": {
+        "Norwegian": 1.8
+      }
+    }
+  }
 }

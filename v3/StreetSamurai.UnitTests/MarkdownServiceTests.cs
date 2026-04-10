@@ -21,24 +21,23 @@ public class MarkdownServiceTests
     }
 
     [Test]
-    public void RenderToHtml_FacetTags_RendersColoredBadges()
+    public void RenderToHtml_FacetTags_AreStripped()
     {
         var html = svc.RenderToHtml("This is a [WOUND] moment.");
-        Assert.That(html, Does.Contain("facet-tag"));
-        Assert.That(html, Does.Contain("#dc3545")); // WOUND color
-        Assert.That(html, Does.Contain("[WOUND]"));
+        Assert.That(html, Does.Not.Contain("[WOUND]"));
+        Assert.That(html, Does.Contain("moment"));
     }
 
-    [TestCase("WOUND", "#dc3545")]
-    [TestCase("IDEAL", "#198754")]
-    [TestCase("ID", "#ffc107")]
-    [TestCase("SHADOW", "#6f42c1")]
-    [TestCase("MASK", "#0dcaf0")]
-    [TestCase("GHOST", "#6c757d")]
-    public void RenderToHtml_AllFacetColors_AreCorrect(string facet, string expectedColor)
+    [TestCase("WOUND")]
+    [TestCase("IDEAL")]
+    [TestCase("ID")]
+    [TestCase("SHADOW")]
+    [TestCase("MASK")]
+    [TestCase("GHOST")]
+    public void RenderToHtml_AllFacetTags_AreStripped(string facet)
     {
-        var html = svc.RenderToHtml($"[{facet}]");
-        Assert.That(html, Does.Contain(expectedColor));
+        var html = svc.RenderToHtml($"[{facet}] text");
+        Assert.That(html, Does.Not.Contain($"[{facet}]"));
     }
 
     [Test]

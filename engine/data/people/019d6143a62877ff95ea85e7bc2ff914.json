@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62877ff95ea85e7bc2ff914",
   "type": "character",
-  "name": "Odina Makwa",
+  "name": "Ngozi Olofsson",
   "aliases": [
     "Sister Hrefna",
     "The Old Path"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Nordpark Sanctuary, the Church of the Continuing Word, near Fullerton and Damen",
-  "description": "Hrefna is a heavyset woman with an air of permanent authority that she exercises sparingly and precisely. Her mother's Icelandic coloring has combined with her father's Guinean warmth into a complexion that shifts between olive and brown depending on the light, and she wears her silver-streaked hair pinned back severely for services and loose in a cloud of soft waves the rest of the time. She wears no cosmetic modifications and regards this as a theological position rather than an aesthetic one. Her wardrobe alternates between her ministerial robe — a deep green with Fula embroidery at the hem, commissioned from a Hamtramck Enclave artisan — and extremely practical work clothes. She has large hands that she uses expressively when preaching and keeps very still when listening.\n\nThe Church of the Continuing Word is her inheritance, founded by a coalition of her grandmother's displaced Sufi community and her grandfather's Lutheran congregation after both lost their buildings in the 2160 redevelopment sweeps. Hrefna grew up in the pews and took over at thirty-four when the previous minister retired. She has spent twenty-four years refusing to resolve the theological tensions between the two traditions her church holds, arguing that the tension is itself the practice. She is pragmatic to a fault about money and logistics and luminously stubborn about principles. She does not perform warmth but she generates it, somehow, by being entirely herself in a room.",
+  "description": "Ngozi Olofsson is a heavyset woman with an air of permanent authority that she exercises sparingly and precisely. Her mother's Icelandic coloring has combined with her father's Guinean warmth into a complexion that shifts between olive and brown depending on the light, and she wears her silver-streaked hair pinned back severely for services and loose in a cloud of soft waves the rest of the time. She wears no cosmetic modifications and regards this as a theological position rather than an aesthetic one. Her wardrobe alternates between her ministerial robe — a deep green with Fula embroidery at the hem, commissioned from a Hamtramck Enclave artisan — and extremely practical work clothes. She has large hands that she uses expressively when preaching and keeps very still when listening.\n\nThe Church of the Continuing Word is her inheritance, founded by a coalition of her grandmother's displaced Sufi community and her grandfather's Lutheran congregation after both lost their buildings in the 2160 redevelopment sweeps. Ngozi Olofsson grew up in the pews and took over at thirty-four when the previous minister retired. She has spent twenty-four years refusing to resolve the theological tensions between the two traditions her church holds, arguing that the tension is itself the practice. She is pragmatic to a fault about money and logistics and luminously stubborn about principles. She does not perform warmth but she generates it, somehow, by being entirely herself in a room.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -157,7 +157,7 @@
     "Vanguard": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Nordpark Sanctuary",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,27 +177,16 @@
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Grandmother",
     "The CEO",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
     "Iowan Behemoth — 'Cathedral'",
+    "Street Custom 'Confession' Modified Industrial Nail Gun",
+    "Arcturus KS-7 'Nursery'",
     "Silver",
     "The Pure Hand",
-    "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Iron Ring",
-    "Ossolo Przenysław-Faatoafe",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Rosary' Bead Garrote",
-    "The Congregation",
-    "The Ledger",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Oxidative Plasma Breath Lance OPBL-1 'Vestment'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Indigenous American (Anishinaabe/Ojibwe dominant) with significant Hispanic/Latin American ancestry and Northern European heritage—a powerful blend that manifests in warm-toned brown skin with subtle golden undertones, strong Indigenous facial structure, and hints of European cool undertones beneath. Her ancestry speaks through high, prominent cheekbones, a broad nose, and a solid, grounded frame that carries generations of resilience.",
+    "heritage": "A striking Pan-African and Pan-Asian blend: 38.7% Sub-Saharan African ancestry dominant, combined with 25.4% Southeast Asian, 23.5% East Asian, 7.6% Hispanic/Latin American, and 4.8% Eastern European heritage. This creates a rich, complex phenotype—deep warm brown skin with golden undertones from the African and Southeast Asian mix, refined by the subtle coolness of East Asian ancestry. High, prominent cheekbones reflect both African and East Asian heritage; a broad nose and strong jawline speak to Sub-Saharan African ancestry. Her frame carries the grounded solidity of multiple continental bloodlines.",
     "height_cm": 168,
     "weight_kg": 92,
     "build": "Heavyset with a solid, grounded frame; broad shoulders and substantial arms that speak to decades of physical labor alongside intellectual work. Not soft—dense, composed, stable.",
@@ -205,8 +194,8 @@
     "hair_style": "Worn pinned back severely in a tight bun during services; loose in soft waves and cloudlike texture at other times",
     "hair_length": "Medium to long (shoulder-length when loose)",
     "eye_color": "Warm brown with amber-gold flecks, clear and direct—the amber catching light with an almost luminous quality",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones; a blend of Indigenous American heritage warmth with subtle Latin American richness and the faintest cool undertones from Northern European ancestry, creating a luminous complexion that shifts beautifully across daylight",
-    "complexion": "Minimal cosmetic work; deep creases around eyes and mouth from decades of expression and authority. Weathered but not worn—skin shows care but no vanity. Strong jawline, broad nose with slight asymmetry from an old break, high cheekbones characteristic of Indigenous ancestry. Hands notably large with long fingers and prominent knuckles, kept meticulously clean but not manicured.",
+    "skin_tone": "Deep warm brown with luminous golden undertones, the product of dominant Sub-Saharan African and Southeast Asian heritage blended with East Asian refinement and the faintest cool undertones from Eastern European ancestry. A complexion that shifts beautifully across daylight, appearing richer in shadow and radiant in direct light.",
+    "complexion": "Minimal cosmetic work; deep creases around eyes and mouth from decades of expression and authority. Weathered but not worn—skin shows care but no vanity. Strong jawline, broad nose with slight asymmetry from an old break, high cheekbones characteristic of African and East Asian ancestry. Hands notably large with long fingers and prominent knuckles, kept meticulously clean but not manicured.",
     "distinguishing_marks": [
       "A thin white scar running from the left corner of her mouth toward her ear, barely visible but present when she moves into certain light—origin unclear, never mentioned.",
       "A pale burn mark on the inside of her right forearm (approximately 8cm long), shaped like a candle's wax drip—theological significance only she knows.",
@@ -216,14 +205,61 @@
     "posture_movement": "Carries herself with stillness and precision. When standing, weight balanced evenly, shoulders set back but not rigidly. When listening, her entire body becomes motionless—hands folded or resting on her lap. When preaching or counseling, her hands move with measured expressiveness, each gesture purposeful and deliberate. Walks slowly, taking up space without apology. Her movements telegraph that she has nowhere to be except exactly where she is.",
     "clothing_style": "Alternates between two modes: (1) Ministerial robe of deep forest green linen-cotton blend with intricate Fula geometric embroidery at the hem in cream and rust, commissioned from a Hamtramck Enclave artisan—worn for all services and formal community events; (2) Practical work clothes: well-maintained surplus Ferrogate maintenance coveralls in charcoal, or loose linen trousers and long-sleeved cotton shirts in neutral colors, often with a canvas utility apron over them. Footwear: sturdy black leather boots or slip-on work clogs, well-broken-in but kept clean. No jewelry except a simple iron ring on her left ring finger (her ordination ring, made by a local smith, not precious metal). A heavy wool shawl or scarf in cream or moss green, often draped around her shoulders regardless of season."
   },
-  "image_prompt": "Odina Makwa, a 168cm heavyset woman with warm medium-brown skin and golden undertones, dark brown hair streaked with silver worn in a tight bun, warm brown eyes with amber flecks. Indigenous American (Anishinaabe dominant) heritage visible in high cheekbones and strong facial structure, mixed with Latin American and Northern European ancestry. Wearing a deep forest green ministerial robe with intricate cream and rust geometric embroidery, a cream wool shawl draped across her shoulders. Standing with deliberate stillness in a cyberpunk 2226 sanctuary, hands folded, exuding quiet authority. Thin scar visible from mouth toward ear, weathered skin showing deep expression lines. Sturdy black leather boots. Cool cathedral lighting casting warm amber light across her luminous complexion. Cyberpunk 2200s aesthetic, low-tech theology, digital age spirituality. --ar 2:3 --v 6",
+  "image_prompt": "Ngozi Olofsson, a 168cm tall heavyset woman with deep warm brown skin luminous with golden undertones, standing in the atmospheric Great Lakes Metropolitan Zone, 2226. Her dark brown hair with extensive silver streaks is pinned severely back, revealing high prominent cheekbones of African and East Asian heritage, a broad nose with slight asymmetry, and a strong jawline. Her warm brown eyes with amber-gold flecks gaze directly with quiet authority. A thin white scar traces from the left corner of her mouth toward her ear. She wears a deep forest green ministerial linen robe with intricate cream and rust Fula geometric embroidery at the hem, draped with a heavy moss green wool shawl. Her large hands with long fingers rest folded, showing thin calluses from decades of prayer beads and devotion. An iron ordination ring adorns her left ring finger. Her posture is perfectly still and grounded, shoulders set back with absolute presence. She stands amid neo-noir architecture, neon signage in the background slightly out of focus, cool blue and amber lighting casting her complexion to shift between rich shadow and radiant luminescence. Soft volumetric fog curls around her boots. A portrait of unwavering spiritual authority in a fractured technological world, GLMZ 2200s aesthetic, cinematic lighting, atmospheric depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 57.3,
-    "Hispanic/Latin American": 30.0,
-    "Northern European": 12.7
+    "Sub-Saharan African": 38.7,
+    "Southeast Asian": 25.4,
+    "East Asian": 23.5,
+    "Hispanic/Latin American": 7.6,
+    "Eastern European": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 11.8
+      },
+      "Central African": {
+        "Cameroonian": 13.4,
+        "Congolese": 4.7
+      },
+      "Southern African": {
+        "Zambian": 8.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 25.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 23.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 3,
+        "Guatemalan": 3.5
+      },
+      "South American": {
+        "Brazilian": 1.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 3.4
+      },
+      "Slavic West": {
+        "Slovak": 0.7
+      },
+      "Magyar-Romanian": {
+        "Romanian": 0.1,
+        "Hungarian": 0.6
+      }
+    }
+  }
 }

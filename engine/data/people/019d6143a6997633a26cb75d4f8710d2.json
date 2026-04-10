@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6997633a26cb75d4f8710d2",
   "type": "character",
-  "name": "Haze Bergqvist",
+  "name": "Haze Tran",
   "aliases": [
     "Pete",
     "Stonefist Pete"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Rampart, GLMZ, near Kedzie and Division",
-  "description": "Petros Waweru-Gjakova is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
+  "description": "Haze Tran is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -160,7 +160,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rampart",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,31 +178,17 @@
   ],
   "related_entities": [
     "The Rampart",
-    "GLMZ",
+    "Pressure Drop",
     "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
     "Stratum",
     "The Pure Hand",
     "Hough Reclamation",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Arcturus LS-5 'Sentinel'",
-    "Arcturus NX-1 'Sandman'",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "MERIDIAN",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA TC-3 'Crucible'",
-    "The Reclamation Assembly",
-    "The Whispering Implant",
-    "Tshiamo Vukić-Arellano"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (60.5%) with secondary ancestry from Northern Europe (10.5%), Southeast Asia (10.1%), South Asia (9.5%), East Asia (6.0%), and Sub-Saharan African (3.4%) — a complex phenotype reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm brown skin with olive and golden undertones characteristic of Latin American ancestry, subtly enriched by the darker pigmentation from Southeast and South Asian heritage.",
+    "heritage": "Southeast Asian (43.9%) with significant Sub-Saharan African (26.0%), East Asian (14.0%), Hispanic/Latin American (10.6%), and Eastern European (5.5%) ancestry — a complex phenotype reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm deep brown skin with subtle golden and olive undertones, enriched by the darker pigmentation characteristic of Southeast and Sub-Saharan African heritage, tempered by the cooler undertones from East Asian and Eastern European ancestry. Facial structure shows the squared jaw and defined cheekbones of Southeast Asian heritage, broadened slightly by Sub-Saharan African ancestry, with the eye-set characteristic of East Asian genetics creating a unique synthesis of these regional features.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Heavy, barrel-chested with the dense musculature of someone who has spent thirty years bearing weight — not bodybuilder definition, but functional mass. Shoulders and neck thickened by reinforced joint infrastructure. Carries weight forward slightly, a stance that distributes load across reinforced knees.",
@@ -210,8 +196,8 @@
     "hair_style": "Short, military-standard cut, neat without vanity",
     "hair_length": "Short",
     "eye_color": "Dark brown, slightly yellowed at the sclera from age and chemical exposure",
-    "skin_tone": "Warm medium-to-deep brown with olive undertones and golden highlights from Latin American and Southeast Asian ancestry, mottled and weathered by accumulated scar tissue and subcutaneous impact mesh, creating an uneven, lived-in appearance that shifts in intensity across his face and body.",
-    "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with the bone structure influenced by his mixed heritage. Skin textured and rough, bearing the tactile history of three decades of deployment. Cheekbones with definition from Southeast Asian ancestry, softened by age and the weight he carries. No artificial smoothing or cosmetic intervention.",
+    "skin_tone": "Warm deep brown with subtle golden and olive undertones, mottled and weathered by accumulated scar tissue and subcutaneous impact mesh, creating an uneven, lived-in appearance that shifts in intensity across his face and body.",
+    "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with bone structure showing the synthesis of Southeast Asian angularity and Sub-Saharan African breadth, tempered by East Asian eye-set and Eastern European heritage. Cheekbones with definition characteristic of Southeast Asian ancestry, softened by age and the weight he carries. Skin textured and rough, bearing the tactile history of three decades of deployment. No artificial smoothing or cosmetic intervention.",
     "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen — a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
     "posture_movement": "Moves with deliberate, economical weight distribution — a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion — eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
     "clothing_style": "Standard GLMZ Metro Police tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion.",
@@ -222,17 +208,70 @@
       "Scattered smaller circular burn marks across inner left forearm — chemical exposure, riot dispersal residue"
     ]
   },
-  "image_prompt": "Haze Bergqvist, 188cm tall weathered Metro Police officer in off-duty charcoal tactical fatigues and worn leather jacket, 2226 cyberpunk setting. Warm deep brown skin with olive undertones, scarred forearms, prominent scar bisecting left eyebrow, steel grey military-short hair, dark yellowed eyes. Heavy muscular build, forward-leaning posture of controlled readiness, minimal gestures, exhausted resting expression. Mechanical chronometer visible, thin steel wedding band, no cosmetic augmentation. Standing in dim neon-lit GLMZ urban environment, rain-slicked streets, subtle subdermal impact mesh visible under tight fabric at chest, movement economical and precise. Mood: weary veteran, functional rather than polished, three decades of deployment bearing on shoulders. Cinematic cyberpunk lighting, volumetric fog, dystopian metropolitan backdrop. --ar 2:3 --v 6",
+  "image_prompt": "Haze Tran, 188cm tall heavy-built man with warm deep brown skin and subtle golden undertones, Southeast Asian and Sub-Saharan African heritage blended with East Asian features showing defined cheekbones and squared jaw. Steel grey short military-cut hair, dark brown eyes slightly yellowed from chemical exposure. Deep facial lines, weathered skin texture, ragged scar bisecting left eyebrow, network of pale scars across both forearms, thick horizontal scar across left collarbone. Wearing charcoal GLMZ Metro Police riot suppression fatigues off-duty, scuffed reinforced black boots, simple grey undershirt, worn leather jacket. Slightly forward-leaning posture, controlled movement, economical gestures, hooded eyes with exhausted resting expression. GLMZ, Great Lakes Metropolitan Zone, tactical officer bearing thirty years of deployment wear, subdermal impact-mesh visible as subtle geometric texture under tight fabric, moody blue-grey lighting emphasizing weathered features and scar tissue, concrete industrial setting, photorealistic gritty aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 60.5,
-    "Northern European": 10.5,
-    "Southeast Asian": 10.1,
-    "South Asian": 9.5,
-    "East Asian": 6.0,
-    "Sub-Saharan African": 3.4
+    "Southeast Asian": 43.9,
+    "Sub-Saharan African": 26,
+    "East Asian": 14,
+    "Hispanic/Latin American": 10.6,
+    "Eastern European": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 18.1
+      },
+      "Thai": {
+        "Thai": 17.6
+      },
+      "Filipino": {
+        "Bicolano": 8.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 21.9
+      },
+      "East African": {
+        "Ethiopian": 1.4,
+        "Tanzanian": 2.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4
+      },
+      "Korean": {
+        "Korean": 4.9
+      },
+      "Chinese": {
+        "Mandarin Northern": 5.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 3.6,
+        "Salvadoran": 5.1
+      },
+      "Mexican": {
+        "Mexican": 1.9
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 1,
+        "Russian": 1
+      },
+      "Magyar-Romanian": {
+        "Romanian": 1.9
+      },
+      "Slavic West": {
+        "Polish": 1.6
+      }
+    }
+  }
 }

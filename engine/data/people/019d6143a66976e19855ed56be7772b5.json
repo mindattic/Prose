@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66976e19855ed56be7772b5",
   "type": "character",
-  "name": "Lyric Cissé",
+  "name": "Lyric Faalele",
   "aliases": [
     "The Architect",
     "Nne"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Michigan Ave and Walton",
-  "description": "Nneka is a broad-shouldered woman with deep umber skin mapped by decades of worry and laughter in equal measure, her natural hair silver-streaked and pinned in elaborate wrapped fabric that she changes every morning like a ritual. She moves through the Highland Park Autonomous Zone with the unhurried confidence of someone who built the room she's walking into. Her left forearm carries a faded Ferrogate Transit union tattoo from her twenties, half-obscured by a bioluminescent vine pattern she had inked over it after the strike of '74 ended badly. She is warm to an almost disarming degree, the kind of warm that makes people confess things they didn't mean to. Under that warmth is a spine of corroded iron.\n\nNneka has spent thirty years converting abandoned infrastructure into community resources — hydroponic halls, childcare collectives, emergency medical co-ops — and she has learned that the most dangerous thing a poor person can do is build something worth stealing. She distrusts anyone who arrives with money and a plan. She trusts almost no one who hasn't been hungry at least once. She runs council meetings with a quiet authority that makes shouting seem embarrassing, and she will cut someone off mid-sentence with a single raised finger and a look that ends careers.",
+  "description": "Lyric Faalele is a broad-shouldered woman with deep umber skin mapped by decades of worry and laughter in equal measure, her natural hair silver-streaked and pinned in elaborate wrapped fabric that she changes every morning like a ritual. She moves through the Highland Park Autonomous Zone with the unhurried confidence of someone who built the room she's walking into. Her left forearm carries a faded Ferrogate Transit union tattoo from her twenties, half-obscured by a bioluminescent vine pattern she had inked over it after the strike of '74 ended badly. She is warm to an almost disarming degree, the kind of warm that makes people confess things they didn't mean to. Under that warmth is a spine of corroded iron.\n\nLyric Faalele has spent thirty years converting abandoned infrastructure into community resources — hydroponic halls, childcare collectives, emergency medical co-ops — and she has learned that the most dangerous thing a poor person can do is build something worth stealing. She distrusts anyone who arrives with money and a plan. She trusts almost no one who hasn't been hungry at least once. She runs council meetings with a quiet authority that makes shouting seem embarrassing, and she will cut someone off mid-sentence with a single raised finger and a look that ends careers.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -159,7 +159,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -181,29 +181,14 @@
     "The Quiet Room",
     "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
     "Tessera Corponation",
-    "ARCHIVE",
     "Silver",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "The Pure Hand",
-    "The Question",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Vuk Jorgensen-Toure",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Iron"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Eastern European and Sub-Saharan African base with significant South Asian and East Asian admixture, creating a complex phenotype with warm-toned skin, rounded facial structure, and subtle features blending multiple continental lineages",
+    "heritage": "Southeast Asian (32.9%), Pacific Islander (18.7%), Northern European (15.3%), East Asian (13.9%), Eastern European (12.0%), and Middle Eastern (7.2%) ancestry. The dominant Southeast and Pacific Islander heritage creates warm, sun-kissed undertones across broad facial planes, while Northern European and Eastern European ancestry contributes subtle bone structure definition. East Asian features blend with Middle Eastern characteristics to create a phenotype that reads as distinctly multicultural and regionally ambiguous—features that don't resolve into single-origin categories",
     "height_cm": 173,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the arms and core from decades of construction and manual labor, neither lean nor heavy—a body built for work and endurance rather than aesthetics",
@@ -211,28 +196,81 @@
     "hair_style": "Wrapped in elaborate fabric patterns that rotate daily, pinned close to the scalp",
     "hair_length": "Medium (shoulder-length beneath wraps)",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm golden-brown with subtle undertones reflecting Eastern European, Sub-Saharan, and South Asian ancestry—neither uniformly deep nor uniformly warm, but a complex mid-to-deep tone with golden-amber warmth beneath",
-    "complexion": "Face lined with expression—forehead creases from concentration, laugh lines around the eyes and mouth. Facial structure shows the broader cheekbones and softer contours from South and East Asian ancestry blended with Sub-Saharan features. A scar along the left jawline from an old workplace accident. Skin shows the weathering of someone who has spent her life outdoors and in unregulated spaces, but well-maintained and cared for. No cosmetic smoothing or rejuvenation treatments.",
+    "skin_tone": "Warm golden-bronze mid-to-deep tone with rich amber and honey undertones in natural light. The coloration reflects the equal influence of Southeast Asian warmth and Pacific Islander sun-soaked richness, modulated by Northern and Eastern European ancestry into a complexion that appears sun-weathered and alive rather than uniformly dark",
+    "complexion": "Face lined with expression—forehead creases from concentration, laugh lines around the eyes and mouth. Facial structure shows broader, slightly rounded cheekbones and softer lower face contours from Southeast and East Asian ancestry, balanced against the more angular cheekbone prominence and jaw definition from Northern European and Eastern European heritage. Middle Eastern influence visible in the bridge of the nose and eyebrow positioning. Scar along the left jawline from an old workplace accident. Skin shows the weathering of someone who has spent her life outdoors and in unregulated spaces, but well-maintained and cared for. No cosmetic smoothing or rejuvenation treatments. Slight freckling across the nose and upper cheeks from mixed heritage sun exposure",
     "distinguishing_marks": [
       "Left forearm bears a faded Ferrogate Transit union tattoo (a circle with a stylized rail line) from her twenties, now partially obscured by a bioluminescent vine pattern inked in soft cyan and green that glows faintly under UV light, added after the '74 strike",
       "Thin scar running 4cm along the left jawline from a construction site incident in her thirties",
       "Callused palms and scarred knuckles from three decades of hands-on infrastructure work"
     ],
-    "visible_augmentations": "None visible. The subdermal thermal regulator is completely internal, undetectable without medical scanning.",
-    "posture_movement": "Moves with unhurried confidence and economy of motion—no wasted gestures. Stands with weight evenly distributed, shoulders back, chin level. When speaking in groups, she uses stillness as authority; when listening, she leans slightly forward. Her presence fills rooms without effort.",
-    "clothing_style": "Practical Tier 4 workwear: durable hemp-blend cargo pants, reinforced linen shirts in earth tones, a long vest made from repurposed industrial fabric with deep pockets. Worn boots that have been resoled multiple times. A heavy canvas coat in winter. No logos, no status markers, no unnecessary decoration. Everything is functional, well-maintained, and chosen for longevity. She wears a simple wooden bracelet carved by a Zone resident and a thin silver chain (a gift from her partner) around her wrist."
+    "visible_augmentations": "None visible. The subdermal thermal regulator is completely internal, undetectable without medical scanning",
+    "posture_movement": "Moves with unhurried confidence and economy of motion—no wasted gestures. Stands with weight evenly distributed, shoulders back, chin level. When speaking in groups, she uses stillness as authority; when listening, she leans slightly forward. Her presence fills rooms without effort",
+    "clothing_style": "Practical Tier 4 workwear: durable hemp-blend cargo pants, reinforced linen shirts in earth tones, a long vest made from repurposed industrial fabric with deep pockets. Worn boots that have been resoled multiple times. A heavy canvas coat in winter. No logos, no status markers, no unnecessary decoration. Everything is functional, well-maintained, and chosen for longevity. She wears a simple wooden bracelet carved by a Zone resident and a thin silver chain (a gift from her partner) around her wrist"
   },
-  "image_prompt": "Lyric Cissé, a 173cm muscular worker in her sixties with warm golden-brown skin blending Eastern European and Sub-Saharan African heritage with South Asian features. Elaborate fabric wraps pin her black hair with silver streaking close to the scalp. Deep brown eyes, lined face with laugh lines and a jawline scar. Wearing practical earth-tone reinforced linen shirt and hemp-blend cargo pants, long industrial fabric vest with deep pockets, worn and resoled boots. Simple wooden bracelet and thin silver chain at wrist. Faded transit union tattoo on left forearm partially covered by glowing cyan-green bioluminescent vine pattern. Standing with quiet authority, unhurried confidence, weight balanced. Cyberpunk 2226 Great Lakes Metropolitan Zone, indoor industrial workspace with cool blue-grey lighting, concrete and steel backdrop. Mood: weathered competence, quiet presence, decades of labor. --ar 2:3 --v 6",
+  "image_prompt": "Lyric Faalele, 173cm tall, warm golden-bronze skin with honey undertones, deep brown eyes, natural black hair with silver streaks wrapped in colorful fabric patterns, lined face with laugh lines and a 4cm scar on left jawline. Broad shoulders, muscular build from decades of manual labor, weathered hands with calluses and scars. Wearing practical Tier 4 workwear: reinforced linen shirt in earth tones, durable hemp-blend cargo pants, long repurposed industrial fabric vest with deep pockets, worn and resoled boots. Simple wooden bracelet and thin silver chain on wrist. Faded transit union tattoo on left forearm with glowing cyan-green bioluminescent vine pattern overlay. Standing with unhurried confidence, shoulders back, neutral expression. Urban neo-noir Great Lakes Metropolitan Zone setting, 2226, neon-lit warehouse or transit hub in background, cool LED lighting mixing with warm sodium glow, gritty industrial aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 32.7,
-    "Sub-Saharan African": 25.2,
-    "South Asian": 16.9,
-    "East Asian": 15.3,
-    "Northern European": 5.7,
-    "Hispanic/Latin American": 4.2
+    "Southeast Asian": 32.9,
+    "Pacific Islander": 18.7,
+    "Northern European": 15.3,
+    "East Asian": 13.9,
+    "Eastern European": 12,
+    "Middle Eastern": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 21.6
+      },
+      "Thai": {
+        "Thai": 11.3
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tuvaluan": 13.4
+      },
+      "Melanesian": {
+        "Ni-Vanuatu": 0.1
+      },
+      "Micronesian": {
+        "Marshallese": 5.2
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 7.1
+      },
+      "British Isles": {
+        "Scottish": 7.5,
+        "English": 0.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 10.5
+      },
+      "Chinese": {
+        "Cantonese": 3.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 3,
+        "Slovak": 3.6
+      },
+      "Slavic South": {
+        "Serbian": 0.8,
+        "Croatian": 4.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 7.2
+      }
+    }
+  }
 }

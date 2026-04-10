@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a37875b8e7e2989cecbabd",
   "type": "character",
-  "name": "Remi Björnsdóttir-Mazurek",
+  "name": "Anya Mazurek-Kulkarni",
   "aliases": [
     "Pryb",
     "the Sequence Man"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Meridian Core — Helix Biosystems Civic Archive, sub-basement sequencing lab, near State and Monroe",
-  "description": "Przybysław is young and knows it in a way that alternately embarrasses and animates him. He is pale-skinned with sharp Slavic features softened by Mongolian bone structure, and he has bioluminescent skin modification — his forearms glow a deep amber when he is in low light, something he got as a celebration when he finished his thesis and has been self-conscious about ever since, finding it hard to maintain the serious affect he aims for when his arms are literally glowing. He is lean and a little hunched from years at sequencing benches, and he has the habit of standing too close when he is excited about something, not from aggression but from a total failure to monitor interpersonal distance when his brain is elsewhere.\n\nHe is a prodigy in a narrow lane — his memory for genomic sequences and his ability to identify heritage-drift patterns from partial samples is genuinely rare — and he has not yet learned how to carry that without it becoming awkward. He is earnest in a way that people either find charming or exhausting. He believes the genome archive is an ethical project: that as geneware modification becomes cheaper and more ubiquitous, documenting what exists before modification is a form of keeping memory, not of preserving purity. He is very clear about this distinction and will explain it at length if given any opening.",
+  "description": "Anya Mazurek-Kulkarni is young and knows it in a way that alternately embarrasses and animates him. He is pale-skinned with sharp Slavic features softened by Mongolian bone structure, and he has bioluminescent skin modification — his forearms glow a deep amber when he is in low light, something he got as a celebration when he finished his thesis and has been self-conscious about ever since, finding it hard to maintain the serious affect he aims for when his arms are literally glowing. He is lean and a little hunched from years at sequencing benches, and he has the habit of standing too close when he is excited about something, not from aggression but from a total failure to monitor interpersonal distance when his brain is elsewhere.\n\nHe is a prodigy in a narrow lane — his memory for genomic sequences and his ability to identify heritage-drift patterns from partial samples is genuinely rare — and he has not yet learned how to carry that without it becoming awkward. He is earnest in a way that people either find charming or exhausting. He believes the genome archive is an ethical project: that as geneware modification becomes cheaper and more ubiquitous, documenting what exists before modification is a form of keeping memory, not of preserving purity. He is very clear about this distinction and will explain it at length if given any opening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -171,7 +171,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,37 +230,14 @@
     "Meridian Core",
     "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
     "The Heritage Vault",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Drift",
     "Pellucid Systems",
     "The Pale Mile",
-    "Nightlight",
-    "Brecken Yılmaz-Osei",
-    "Chronicle",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Lazarus IDP-1 'Teeth'",
-    "Lumen",
-    "MERIDIAN",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sisay Bergqvist-Mallari",
-    "Street-Custom Razorwire Wraps 'Glass Hands'",
-    "TESSERA PA-5 'Attendant'",
-    "Tessera Nexus Town Car",
-    "The Archive",
-    "The Human Baseline Alliance",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Quiet Room",
-    "University Spine",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yuki Nwosu-Petrenko"
+    "Nightlight"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "East Asian (34.6%) / Eastern European (32.9%) / Northern European (32.5%) — a balanced tripartite ancestry creating distinctive blended features. Strong Slavic bone structure tempered by East Asian facial geometry, with Northern European coloring as a base.",
+    "heritage": "Eastern European (62.5%) / South Asian (16.4%) / East Asian (11.4%) / Sub-Saharan African (9.7%) — a complex multiethnic ancestry creating distinctly blended features. Strong Slavic bone structure from Eastern European dominance, softened by South Asian warmth and East Asian facial geometry, with subtle Sub-Saharan African undertones enriching overall warmth and depth.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lean and slightly hunched, shoulders curved inward from years bent over sequencing benches. Wiry frame with minimal muscle definition — the build of someone who lives in climate-controlled labs rather than outdoors.",
@@ -268,8 +245,8 @@
     "hair_style": "Straight, swept back from his forehead with a few pieces falling forward when he leans — perpetually slightly disheveled",
     "hair_length": "Medium (collar-length)",
     "eye_color": "Right eye: pale grey (natural). Left eye: augmented with subtle amber LED ring around the iris for sequencing readout interface",
-    "skin_tone": "Cool neutral with balanced warmth — Northern European base providing fair complexion, enriched by East Asian and Eastern European undertones creating a subtle golden-olive cast. Noticeably lighter on torso and face from minimal sun exposure, with a faint warm peachy undertone visible at cheekbones and temples.",
-    "complexion": "Prominent high cheekbones and angular jawline from Eastern European ancestry, softened by slightly broader face geometry and gentle eye shape from East Asian heritage. Skin is clear but has the translucent quality of someone who spends most hours indoors under fluorescent light. Faint dark circles under both eyes. Clean-shaven, though perpetually shows 24-hour shadow. Delicate nose bridge with subtle width through the middle.",
+    "skin_tone": "Warm tan with olive undertones — Eastern European coolness enriched by South Asian and Sub-Saharan African warmth creating a complex golden-brown base. Noticeably lighter on torso and face from minimal sun exposure, with warmer peachy-bronze undertones visible at cheekbones and temples. Overall complexion suggests mixed continental heritage with balanced warm and cool notes.",
+    "complexion": "Prominent high cheekbones and angular jawline from Eastern European ancestry, softened by slightly broader face geometry and gentle eye shape from South and East Asian heritage. Mid-range facial width with subtle character from Sub-Saharan African ancestry enriching features. Skin is clear but has the translucent quality of someone who spends most hours indoors under fluorescent light. Faint dark circles under both eyes. Clean-shaven, though perpetually shows 24-hour shadow. Delicate nose bridge with subtle width through the middle.",
     "distinguishing_marks": [
       "Both forearms glow with bioluminescent amber skin modification — deeper saturation at the wrists, fading toward the elbows; most visible in dim lab lighting and noticeably distracting when he gestures while excited",
       "Small burn scar on the inside of his left wrist from a sequencing equipment accident, roughly 2cm in length, pale and well-healed"
@@ -278,14 +255,49 @@
     "posture_movement": "Habitually hunched forward, shoulders rolled slightly inward. When focused on someone or something he is interested in, he leans in without noticing, violating personal space. His hand movements are precise and controlled when working (trained from lab work) but become animated and loose when explaining something he is passionate about. When uncertain, he glances down at his glowing forearms as if surprised they are still there.",
     "clothing_style": "Tier 3-4 working professional, lab-appropriate. Standard grey Helix Biosystems unisex lab coat over a fitted charcoal turtleneck (practical for hiding the glow of his forearms during client meetings). Dark grey or black utility pants with multiple pockets. Worn synthetic-leather ankle boots. Minimal jewelry — a simple steel watch on his right wrist, a university affiliate pin on his coat lapel. Everything is clean but shows wear; nothing is fashionable or deliberately styled. The effect is carefully rumpled in a way that suggests he does not think much about his appearance."
   },
-  "image_prompt": "Remi Björnsdóttir-Mazurek, 178cm lean bioluminescent geneticist with balanced East Asian and Northern European features — sharp high cheekbones with gentle eye geometry, pale cool-toned skin with warm golden undertones. Dark brown hair medium-length swept back, pale grey right eye with amber LED-rimmed augmented left eye. Worn grey Helix Biosystems lab coat over charcoal turtleneck, dark utility pants. Both forearms glow bioluminescent amber, brightest at wrists. Habitually hunched posture, 24-hour stubble shadow, faint dark circles. Standing in dimly-lit lab corridor with overhead fluorescent strips, ambient neon signage reflecting off polished floor. Glowing forearms casting amber light on coat sleeves. Focused, slightly leaning-forward posture. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, cool clinical lighting with warm bioluminescent contrast. Detailed, realistic portraiture --ar 2:3 --v 6",
+  "image_prompt": "Anya Mazurek-Kulkarni, tall lean 178cm bioengineer with warm tan olive skin blending Eastern European, South Asian, East Asian and Sub-Saharan African heritage. Angular high cheekbones and jawline softened by gentle eye geometry. Right eye pale grey, left eye augmented with subtle amber LED ring. Dark brown medium-length hair swept back, perpetually disheveled. Clean-shaven with 24-hour shadow, faint dark circles. Habitually hunched posture with curved shoulders. Both forearms glow bioluminescent amber, deeper at wrists fading toward elbows. Pale well-healed burn scar on left inner wrist. Wearing grey Helix Biosystems lab coat over charcoal turtleneck, dark grey utility pants, worn synthetic-leather ankle boots. Steel watch on right wrist, university affiliate pin on coat. Leaning forward intensely with animated hand gestures, lost in passionate explanation. Dim futuristic lab setting with cool blue and amber lighting catching the bioluminescent forearms. Translucent lab-pale skin contrasts with glowing modifications. GLMZ GLMZ aesthetic, scientific focus --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 34.6,
-    "Eastern European": 32.9,
-    "Northern European": 32.5
+    "Eastern European": 62.5,
+    "South Asian": 16.4,
+    "East Asian": 11.4,
+    "Sub-Saharan African": 9.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 4.6
+      },
+      "Magyar-Romanian": {
+        "Romanian": 57.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 12.6
+      },
+      "Indian": {
+        "Malayali": 0.3,
+        "Bengali": 0.2
+      },
+      "Pakistani": {
+        "Sindhi": 2.6,
+        "Baloch": 0.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 6.6,
+        "Shanghainese": 4.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.7
+      }
+    }
+  }
 }

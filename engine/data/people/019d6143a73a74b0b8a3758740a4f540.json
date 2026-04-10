@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73a74b0b8a3758740a4f540",
   "type": "character",
-  "name": "Ivar Wojciechowski-Strömqvist",
+  "name": "Aurelio Cervantes-Citlali",
   "aliases": [
     "Zubi",
     "The Archive"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "University Spine — Brewer's Spine campus, Sub-Level 4 data vaults, near sub-level access near State and Van Buren",
-  "description": "Zubaidah is a broad-shouldered woman with deep brown skin mapped by faint bioluminescent traceries along her jawline and collarbones — a cosmetic mod she got in her thirties that she now barely notices. Her natural hair has gone silver-white and she wears it in a dense, architecturally precise coil that colleagues joke could survive a server room explosion. She moves with the particular deliberateness of someone who has spent decades in archival spaces where sudden movements knock things over. Her reading glasses are antique — actual glass lenses in a wire frame, salvaged from a pre-Collapse collection — and she wears them pushed up on her forehead even when she's actively reading, defaulting to her optical implant instead.\n\nShe has devoted thirty years to reconstructing the digital record of the Lake Michigan basin between 2060 and 2095, the so-called Dark Interval when four successive infrastructure collapses cascaded through every networked system in the region. Most people consider that era unrecoverable. Zubaidah considers most people catastrophically unimaginative. She is not warm exactly, but she is deeply fair — she will give a first-year grad student the same ferocious attention she gives a department head, and she expects the same rigor in return. She has no tolerance for sloppiness and considerable tolerance for being wrong, which she distinguishes as the only real intellectual virtue.",
+  "description": "Aurelio Cervantes-Citlali is a broad-shouldered woman with deep brown skin mapped by faint bioluminescent traceries along her jawline and collarbones — a cosmetic mod she got in her thirties that she now barely notices. Her natural hair has gone silver-white and she wears it in a dense, architecturally precise coil that colleagues joke could survive a server room explosion. She moves with the particular deliberateness of someone who has spent decades in archival spaces where sudden movements knock things over. Her reading glasses are antique — actual glass lenses in a wire frame, salvaged from a pre-Collapse collection — and she wears them pushed up on her forehead even when she's actively reading, defaulting to her optical implant instead.\n\nShe has devoted thirty years to reconstructing the digital record of the Lake Michigan basin between 2060 and 2095, the so-called Dark Interval when four successive infrastructure collapses cascaded through every networked system in the region. Most people consider that era unrecoverable. Aurelio Cervantes-Citlali considers most people catastrophically unimaginative. She is not warm exactly, but she is deeply fair — she will give a first-year grad student the same ferocious attention she gives a department head, and she expects the same rigor in return. She has no tolerance for sloppiness and considerable tolerance for being wrong, which she distinguishes as the only real intellectual virtue.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -203,37 +203,13 @@
     "Irontide Tidal Energy",
     "Silver",
     "Gravimetric Collapse Charge GCC-9",
-    "Pellucid Systems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Glass",
-    "Alper Lebedev-Tutu",
-    "Chronicle",
-    "Focadrin",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Kadiatou Bergstrom-Konate",
-    "Lacuna Genomics",
-    "Noir Dining",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "SN Wraith E-Cycle",
-    "Sagyn Ogawa-Twumasi",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "The Archive",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Spectral Barrier Display System",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Pellucid Systems",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Northern European, Sub-Saharan African, Eastern European, Hispanic/Latin American, South Asian, and Middle Eastern ancestry—a striking blend visible in her warm deep brown skin with subtle golden undertones, the texture and structure of her hair, and the subtle geometry of her facial features that defies singular geographic origin.",
+    "heritage": "Diverse diaspora ancestry spanning Hispanic/Latin American (33.4%), Indigenous American (25.2%), Sub-Saharan African (23.1%), Northern European (12.3%), South Asian (5.6%), and Pacific Islander (0.4%) heritage. Her appearance reflects this complex blend: warm deep brown skin with golden undertones, facial bone structure showing the high cheekbones and subtle angles characteristic of Indigenous American and African ancestry, complemented by the finer features influenced by South Asian and Northern European lineage. The overall effect is a striking individual whose features resist singular geographic categorization.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid without softness; decades of archival work have kept her posture rigidly upright and her frame compact rather than heavy. Strong forearms from years of handling physical media.",
@@ -241,28 +217,97 @@
     "hair_style": "Dense, intricately braided coil pulled back from her face; architecture-grade precision",
     "hair_length": "Medium (coiled structure gives appearance of short)",
     "eye_color": "Deep brown; left eye shows faint amber glow at periphery during low-light conditions (optical implant signature)",
-    "skin_tone": "Deep warm brown with golden undertones, even complexion reflecting the blend of African, Northern European, and South Asian heritage",
-    "complexion": "Lined around the eyes and mouth from decades of focused close work; faint laugh lines suggest infrequent but genuine amusement. High cheekbones with subtle angles reflecting mixed ancestry. Skin shows meticulous care — no visible damage or neglect. Minimal makeup.",
+    "skin_tone": "Deep warm brown with golden undertones, the result of blended Sub-Saharan African, Indigenous American, Hispanic/Latin American, and South Asian ancestry creating rich, luminous depth",
+    "complexion": "Lined around the eyes and mouth from decades of focused close work; faint laugh lines suggest infrequent but genuine amusement. High cheekbones with subtle angles reflecting mixed African and Indigenous American ancestry. Skin shows meticulous care—no visible damage or neglect. Minimal makeup.",
     "distinguishing_marks": [
-      "Faint bioluminescent traceries run along her jawline in a delicate branching pattern, pale blue-green, barely visible in daylight but faintly glowing in darkness — a cosmetic mod from her thirties now faded with age.",
+      "Faint bioluminescent traceries run along her jawline in a delicate branching pattern, pale blue-green, barely visible in daylight but faintly glowing in darkness—a cosmetic mod from her thirties now faded with age.",
       "Similar bioluminescent lines trace her collarbones and disappear beneath her clothing.",
       "Thin pale scar on her left inner forearm (approximately 8cm long, horizontal) marking the subdermal data-cache implant site, barely noticeable under normal light."
     ],
     "visible_augmentations": "Left eye shows subtle amber luminescence in dim environments; antique glass-lensed reading glasses perpetually resting on forehead (worn over the optical implant rather than in place of it). No chrome or obvious cybernetics. Augmentations are understated and archival-grade rather than flashy.",
-    "posture_movement": "Deliberate and economical. Moves with the careful precision of someone navigating fragile archival spaces; avoids sudden gestures. Walks at moderate pace, head slightly forward in attentive posture. When sitting at work, she becomes nearly motionless — all activity concentrates in her hands and eyes.",
+    "posture_movement": "Deliberate and economical. Moves with the careful precision of someone navigating fragile archival spaces; avoids sudden gestures. Walks at moderate pace, head slightly forward in attentive posture. When sitting at work, she becomes nearly motionless—all activity concentrates in her hands and eyes.",
     "clothing_style": "Tier 2/3 academic-practical: high-quality but worn linen and wool layers, earth tones (slate, rust, cream, charcoal). Favors structured blazers and reinforced work trousers with adequate pockets. Worn leather satchel (pre-Collapse era, genuine leather, carefully maintained) carries tablets and handwritten notes. Shoes are functional, broken-in, excellent condition. Minimal jewelry except for a thin silver band on her right ring finger (no wedding ring visible). No visible corporate branding; clothes pre-date fast fashion cycles."
   },
-  "image_prompt": "A 172cm woman with warm deep brown skin and golden undertones, silver-white hair with dark roots pulled back in intricate coils, positioned in a quiet archival library bathed in soft amber lamplight. Her mixed heritage is evident in her refined facial geometry. She wears a structured charcoal blazer over cream linen, paired with slate work trousers. A worn pre-Collapse leather satchel rests against her hip. Her posture is rigidly upright yet graceful—decades of careful archival work evident in her economical movements. Reading glasses rest on her forehead above her left eye, which shows a faint amber glow in the dim light. Faint bioluminescent traceries—pale blue-green—barely visible along her jawline and collarbones, relics of a mod from her thirties. Her expression is focused, hands moving with precision over ancient documents and tablets. Cyberpunk 2226, understated augmentations, no chrome, academic-practical aesthetic, warm lighting, melancholic concentration. --ar 2:3 --v 6",
+  "image_prompt": "Aurelio Cervantes-Citlali, a 172cm tall archival scholar in her fifties, standing in a dimly lit pre-Collapse library section, 2226. Deep warm brown skin with golden undertones glowing softly under preservation lighting. Silver-white hair pulled back in intricate braided coils with dark roots visible. High cheekbones and lined face showing decades of meticulous close work. Left eye gleams faintly amber from optical implant; antique reading glasses rest on forehead. Faint pale blue-green bioluminescent traceries barely visible along jawline and collarbones—faded cosmetic mods from her thirties. Wearing layered earth-tone linens and structured wool blazer over reinforced work trousers, carrying worn genuine-leather pre-Collapse era satchel. Thin pale scar visible on left inner forearm. Posture upright and economical, hands positioned with archival precision. Soft desk lighting and archival preservation glow creating subtle shadows. GLMZ 2200s aesthetic with understated augmentation, academic-practical styling, mood of quiet focus and preservation-minded dedication. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 41.8,
-    "Sub-Saharan African": 29.9,
-    "Eastern European": 11.7,
-    "Hispanic/Latin American": 8.3,
-    "South Asian": 6.2,
-    "Middle Eastern": 2.1
+    "Hispanic/Latin American": 33.4,
+    "Indigenous American": 25.2,
+    "Sub-Saharan African": 23.1,
+    "Northern European": 12.3,
+    "South Asian": 5.6,
+    "Pacific Islander": 0.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 17.5
+      },
+      "Caribbean": {
+        "Haitian": 11.1,
+        "Cuban": 4.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 20.3
+      },
+      "Mesoamerican": {
+        "Nahua": 1,
+        "Maya": 2.3
+      },
+      "Great Lakes Nations": {
+        "Menominee": 1.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 1.2
+      },
+      "Southern African": {
+        "Zambian": 3.3,
+        "Botswanan": 0.3
+      },
+      "Central African": {
+        "Gabonese": 18.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 1,
+        "Irish": 4.9
+      },
+      "Germanic": {
+        "German": 2
+      },
+      "Scandinavian": {
+        "Finnish": 4.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.8
+      },
+      "Nepali": {
+        "Nepali": 0.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.2
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 0.1
+      },
+      "Polynesian": {
+        "Tongan": 0.2
+      },
+      "Micronesian": {
+        "Kiribati": 0.1
+      }
+    }
+  }
 }

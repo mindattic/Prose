@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6257bd1bdd19f5cca381b4c",
   "type": "character",
-  "name": "Koffi Strömqvist",
+  "name": "Soraya Rhee",
   "aliases": [
     "Demo",
     "Boom",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "Milwaukee Core — rents a workshop in an industrial unit near the old foundry district",
-  "description": "Harlan Dray is the kind of man who can calculate blast radius to the centimeter while telling a joke about his ex-wife. Eighteen years in controlled demolition — first legal, then gray-market, then whatever pays. He started in construction, blowing buildings down so new ones could go up. When the construction contracts dried up and the corps started automating demo work, he pivoted to the only market that still valued a human touch: the kind of demolition that happens on a schedule nobody files with the city.\n\nHe is broad-shouldered, weathered, with hands that look like they've been rebuilt from scrap — because two of his fingers have been. Chemical burns on his forearms are old enough to be part of the landscape. He laughs too loud, drinks too much on off-nights, and has the kind of warmth that makes people forget he carries enough shaped charges to level a city block in the trunk of his vehicle.\n\nThe work keeps him honest. When he's building a breaching charge or calculating structural weak points, the noise in his head goes quiet. It's the only time it goes quiet. Vesper gave him that — steady work, a crew that doesn't treat him like a liability, a reason to be precise instead of reckless. He would die for her and she would be furious about it, which is exactly the dynamic that works.",
+  "description": "Soraya Rhee is the kind of man who can calculate blast radius to the centimeter while telling a joke about his ex-wife. Eighteen years in controlled demolition — first legal, then gray-market, then whatever pays. He started in construction, blowing buildings down so new ones could go up. When the construction contracts dried up and the corps started automating demo work, he pivoted to the only market that still valued a human touch: the kind of demolition that happens on a schedule nobody files with the city.\n\nHe is broad-shouldered, weathered, with hands that look like they've been rebuilt from scrap — because two of his fingers have been. Chemical burns on his forearms are old enough to be part of the landscape. He laughs too loud, drinks too much on off-nights, and has the kind of warmth that makes people forget he carries enough shaped charges to level a city block in the trunk of his vehicle.\n\nThe work keeps him honest. When he's building a breaching charge or calculating structural weak points, the noise in his head goes quiet. It's the only time it goes quiet. Vesper gave him that — steady work, a crew that doesn't treat him like a liability, a reason to be precise instead of reckless. He would die for her and she would be furious about it, which is exactly the dynamic that works.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +179,7 @@
     "Prepared": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Milwaukee Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,50 +197,18 @@
     "The Shelf",
     "Timekeeper",
     "Big Rig",
-    "Crucible Industries CR-9 'Foundry'",
+    "The Foundry Kitchen",
+    "Honest Burger",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "Chromeworks Silhouette-S Ghost Walker Leg",
     "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Vesper",
-    "Slagworks Industrial",
     "Tin Man",
-    "The Milwaukee Core",
-    "Alper Holmberg-Dembele",
-    "Alper Inoue-Aidoo",
-    "Arcturus Defense Solutions ADM-10 'Overseer'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Drăgan Asomugha-Kuusisto",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Ihaia Nystrom-Keita",
-    "Iowan Behemoth — 'The Foundry'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
-    "Mika Sorel",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ouroboros Systems Paradox Quantum Processing Array",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RR-1 'Rattlesnake'",
-    "Serafin",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Clock",
-    "The Human Baseline Alliance",
-    "The Quiet Room",
-    "The Signal",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyField Precision Motor Implant"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian, Sub-Saharan African, Pacific Islander, and Northern European blend — a rare diaspora mix showing dominant East Asian and African ancestry with significant Pacific Islander features and traces of Northern European heritage",
+    "heritage": "Northern European, Middle Eastern, and East Asian blend in near-equal measure. Northern European ancestry (40.3%) contributes structural bone definition and fair undertones to the base palette. Middle Eastern heritage (34.8%) adds warmth, facial fullness, and depth to the complexion. East Asian genetics (24.9%) shape the eye structure, cheekbone prominence, and overall facial proportions into a harmonious tri-continental synthesis.",
     "height_cm": 188,
     "weight_kg": 96,
     "build": "Broad-shouldered and thick-necked, the kind of frame built for moving heavy objects and absorbing impact. Carrying a slight paunch from evening drinking, but the musculature underneath remains evident — not athletic, but functional and dense.",
@@ -248,8 +216,8 @@
     "hair_style": "Short, practical cut, combed back without vanity. Salt-and-pepper stubble most days.",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones, tired-looking from years of precision work and poor sleep",
-    "skin_tone": "Warm deep bronze with golden and reddish undertones — a rich blend of East Asian, African, and Pacific Islander heritage, darkened and weathered by sun exposure and chemical work",
-    "complexion": "Weathered face with deep lines around his eyes and mouth — the topography of someone who squints at blueprints and smiles rarely but genuinely. Jaw is broad and squared with subtle rounded contours from Pacific Islander ancestry. High, prominent cheekbones reflect East Asian heritage. Skin has a leathery quality from decades outdoors and in workshop environments. Small scar through his left eyebrow.",
+    "skin_tone": "Warm medium bronze with golden undertones — the balanced result of Northern European fairness, Middle Eastern depth, and East Asian warmth, darkened and weathered by sun exposure and chemical work",
+    "complexion": "Weathered face with deep lines around his eyes and mouth — the topography of someone who squints at blueprints and smiles rarely but genuinely. Jaw is broad and squared with moderate angularity reflecting Northern European structure. High, prominent cheekbones show clear East Asian influence, framed by the facial fullness of Middle Eastern heritage. The bridge of his nose sits somewhere between Northern European straightness and Middle Eastern prominence. Skin has a leathery quality from decades outdoors and in workshop environments. Small scar through his left eyebrow.",
     "distinguishing_marks": [
       "Chemical burns across both forearms in irregular patches — white and pink scar tissue, old enough to have lost sensitivity, stretching from wrist to elbow in a pattern consistent with reactive spray exposure",
       "Thin horizontal scar along his right collarbone, about eight centimeters, from a workshop accident",
@@ -260,15 +228,48 @@
     "posture_movement": "Stands with weight evenly distributed, shoulders relaxed but ready. Moves with deliberate economy — no wasted motion, the gait of someone who has learned to be stable around unstable things. Hands gesture when talking, and the prosthetic fingers move with identical precision to organic ones. When concentrating, he unconsciously flexes his left hand, feeling the haptic feedback as a baseline awareness check.",
     "clothing_style": "Tier 4 working-class aesthetic with functional touches. Usually wears reinforced gray or charcoal work shirts (Titan Industries brand — durable, cheap, ubiquitous) with the sleeves rolled to show forearms. Heavy canvas pants with cargo pockets, well-worn Rockport steel-toed boots. Over this, a scorched and stained Carhartt jacket (brown, at least fifteen years old) or a reinforced tactical vest with tool loops when heading to sites. A beaten leather bracelet on his right wrist — no visible significance, just worn smooth. No jewelry beyond a faded wedding band on his right hand that he hasn't bothered removing."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Koffi Strömqvist, a 188cm broad-shouldered worker with deep bronze skin tone blending East Asian, African, and Pacific Islander heritage, weathered face with high cheekbones and squared jaw, tired amber-brown eyes, dark hair with gray at temples, salt-and-pepper stubble. Left hand features two matte black composite prosthetic fingers with chrome articulation. Chemical burn scars visible on rolled-up forearms showing white scar tissue. Wearing worn gray Titan Industries work shirt and scorched brown Carhartt jacket, steel-toed boots, faded wedding band. Standing in industrial workshop setting under warm tungsten lighting, hands relaxed but ready, expression of quiet competence and weariness. Gritty Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Soraya Rhee, weathered 188cm tall blue-collar worker in GLMZ, warm medium bronze skin with golden undertones blending Northern European, Middle Eastern, and East Asian ancestry. Deep brown amber-flecked eyes, squared jaw with high prominent cheekbones, dark brown hair with salt-and-pepper gray at temples, short practical cut. Thick muscular build with functional density and slight paunch. Rolled-up sleeves revealing chemical burn scars across both forearms in white-pink scar tissue. Matte black synthetic prosthetic fingers (ring and pinky) on left hand with chrome articulation and inactive micro-LEDs. Wearing worn charcoal Titan Industries work shirt, heavy cargo pants, scorched brown Carhartt jacket with tool loops, steel-toed boots. Beaten leather bracelet, faded wedding band. Weathered face with deep lines, small scar through left eyebrow. Workshop environment with low industrial lighting, metallic surfaces, faint chemical haze. Posture relaxed but alert, hands gesture with precise economy. Mood: competent, tired, reliable. Industrial neo-noir aesthetic, gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 45.6,
-    "Sub-Saharan African": 27.1,
-    "Pacific Islander": 20.3,
-    "Northern European": 7.0
+    "Northern European": 40.3,
+    "Middle Eastern": 34.8,
+    "East Asian": 24.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 7.1,
+        "Austrian": 1.9
+      },
+      "Scandinavian": {
+        "Norwegian": 6.9,
+        "Swedish": 1.8
+      },
+      "British Isles": {
+        "Welsh": 22.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 15
+      },
+      "Arab Levantine": {
+        "Syrian": 12.5
+      },
+      "Arab Gulf": {
+        "Iraqi": 7.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 20.6
+      },
+      "Chinese": {
+        "Cantonese": 4.3
+      }
+    }
+  }
 }

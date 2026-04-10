@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6707e3e8e2534d47e435738",
   "type": "character",
-  "name": "Sable Rahman-Thorvaldsdóttir",
+  "name": "Aurelio Larsdóttir-Hernández",
   "aliases": [
     "Nadir",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Nurlan Holm-Danquah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 42, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a combat medic out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNurlan Holm-Danquah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Aurelio Larsdóttir-Hernández is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 42, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a combat medic out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAurelio Larsdóttir-Hernández operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.28,
@@ -259,7 +259,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,41 +277,19 @@
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
   ],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "The Heritage Vault",
+    "Diaspora Table",
     "Geartown",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
+    "Canopy",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Electromagnetic DMR AEDM-3 'Gauss'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Inductive Thermal Lance",
-    "Lazarus LX-2 'Lab Rat'",
-    "Makena Johanssen-Diallo",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Old Harbor",
-    "Prophet",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA PA-5 'Attendant'",
-    "The Canopy",
-    "Veslemøy Achebe-Tursynov",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian and East Asian primary lineage (65.4% combined) with significant Indigenous American ancestry (22.2%), minor Hispanic/Latin American and Sub-Saharan African heritage — a product of the Ubiquitous Diaspora reflecting generations of global migration across multiple continents",
+    "heritage": "Quintessential Ubiquitous Diaspora lineage: Southeast Asian plurality (33.6%) forms the structural foundation, complemented by substantial Sub-Saharan African (21.1%) and Hispanic/Latin American (22.8%) ancestry, with Eastern European (17.7%) and East Asian (4.8%) contributing undertones. The genetic combination produces a phenotype that transcends traditional categorical boundaries — a living archive of global migration patterns across multiple generations and continents.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Lean and angular, muscle distributed for endurance rather than bulk. Long-limbed with visible definition in shoulders and forearms. The hydraulic augmentations in knees and elbows add subtle mechanical mass without disrupting his overall wiry efficiency.",
@@ -319,8 +297,8 @@
     "hair_style": "Kept short and practical, swept back from the forehead. No vanity in the cut — purely functional.",
     "hair_length": "Short",
     "eye_color": "Left eye: warm brown, organic. Right eye: luminous cyan with visible chrome iris housing and faint grid pattern overlay when zoomed.",
-    "skin_tone": "Warm medium brown with golden undertones — a harmonious blend of South Asian depth and East Asian warmth, weathered and sun-exposed despite nocturnal work schedule",
-    "complexion": "Angular face with high, pronounced cheekbones and a defined jaw reflecting East Asian structure blended with South Asian fullness. The combination creates a distinctly diaspora-marked appearance. Permanent exhaustion lines around the eyes. Small surgical scar below the left temple (artifact of the eye replacement). Minimal facial hair — kept clean-shaved or at a three-day shadow. Skin shows the wear of someone who doesn't prioritize sleep quality, despite sleeping long hours.",
+    "skin_tone": "Deep warm bronze with golden-amber undertones — a seamless blend of Southeast Asian warmth, Sub-Saharan depth, Hispanic radiance, and Eastern European olive undertones. Weathered and sun-exposed despite nocturnal work schedule, creating a lived-in patina.",
+    "complexion": "Angular face with high, prominent cheekbones and defined jaw reflecting the Southeast Asian and Sub-Saharan structural ancestry, warmed by Hispanic and Eastern European undertones creating a multi-continental aesthetic that resists simple categorization. Permanent exhaustion lines around the eyes. Small surgical scar below the left temple (artifact of the eye replacement). Minimal facial hair — kept clean-shaved or at a three-day shadow. Skin shows the wear of someone who doesn't prioritize sleep quality, despite sleeping long hours.",
     "distinguishing_marks": [
       "Pale surgical scar running 3cm below the left temple, where the cybernetic eye was integrated.",
       "Thin white scar across the dorsal surface of the right hand — old blade wound, pre-augmentation.",
@@ -330,16 +308,53 @@
     "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. No wasted gesture. When standing still, he's coiled rather than relaxed, weight balanced on the balls of his feet as though ready to move or absorb impact. His gait is smooth despite the augmented joints, suggesting years of recalibration and training. In conversation, minimal facial expression; information is gathered more than given.",
     "clothing_style": "Tier 3-4 practicality. Tends toward dark, non-reflective fabrics — black or charcoal synthetic blend cargo pants with reinforced seams and deep pockets. Fitted tactical shirts (usually unmarked, sometimes with internal vest anchors visible at the shoulders). Worn leather jacket, vintage pre-2180s, patched at the elbows with modern synthetic mesh. Practical boots with grip soles. No logos, no corpo affiliation markers. Everything is functional; nothing is aspirational."
   },
-  "image_prompt": "Cyberpunk 2226, Sable Rahman-Thorvaldsdóttir: 188cm lean, angular-featured man with warm medium-brown skin blending South Asian and East Asian heritage, high cheekbones, defined jawline. Dark brown hair with silver threading, swept back short. Left eye warm brown organic, right eye luminous cyan cybernetic with visible chrome housing. Exhaustion lines, clean-shaven. Chrome hydraulic augmentations visible on both knees and elbows with polished steel pressure seals. Pale surgical scar below left temple, thin blade scar on right hand dorsal surface. Wearing dark charcoal tactical cargo pants with deep pockets, fitted unmarked black tactical shirt with visible vest anchors, worn vintage leather jacket patched with modern synthetic mesh at elbows, grip-soled practical boots. Coiled, efficient posture. Minimal expression. Neon-lit Great Lakes Metropolitan Zone background, rain-slicked streets, cool blue and amber lighting casting shadows across angular features and chrome joints. Film noir cyberpunk aesthetic, gritty and competent. --ar 2:3 --v 6",
+  "image_prompt": "Aurelio Larsdóttir-Hernández, 188cm tall lean angular neo-noir operative, deep warm bronze skin with golden undertones reflecting Southeast Asian, Sub-Saharan, Hispanic, and Eastern European heritage. High prominent cheekbones, defined jaw, sharp features. Dark brown hair with silver threading swept back. Left eye warm organic brown, right eye luminous cyan cybernetic with chrome housing and grid overlay. Chrome hydraulic augmented joints visible at both elbows and knees with pressure seals. Pale surgical scar below left temple, white scar on right hand dorsal surface, neural interface burn marks on wrists. Wearing charcoal tactical cargo pants with reinforced seams, unmarked fitted tactical shirt, worn vintage pre-2180s leather jacket patched with synthetic mesh at elbows, practical grip-soled boots. Standing with coiled posture, weight balanced forward, minimal expression. Dark industrial nocturnal setting, cool blue-grey neo-noir lighting, neon glow catching chrome augmentations, rain-slicked surfaces reflecting cyan eye light. Mood: efficient, guarded, competent survival. Year 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 34.2,
-    "East Asian": 31.2,
-    "Indigenous American": 22.2,
-    "Hispanic/Latin American": 9.9,
-    "Sub-Saharan African": 2.5
+    "Southeast Asian": 33.6,
+    "Hispanic/Latin American": 22.8,
+    "Sub-Saharan African": 21.1,
+    "Eastern European": 17.7,
+    "East Asian": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 22.5,
+        "Sumatran": 11.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.7
+      },
+      "Central American": {
+        "Honduran": 13.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 8.9,
+        "Somali": 8
+      },
+      "West African": {
+        "Nigerian": 2.5,
+        "Senegalese": 1.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 12.1,
+        "Bosnian": 5.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.8
+      }
+    }
+  }
 }

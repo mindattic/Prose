@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65f7c3996814604b1e34853",
   "type": "character",
-  "name": "Ignacio Kettani-Sigurdsson",
+  "name": "Aiyana Tetteh-Yoon",
   "aliases": [
     "Nadi",
     "Night Nadia"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Works in Meridian Core; lives in a shared flat in Archer's Line, near State and Jackson",
-  "description": "Nadia is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nNadia works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
+  "description": "Aiyana Tetteh-Yoon is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nAiyana Tetteh-Yoon works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -161,7 +161,7 @@
     "Stoic": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Works in Meridian Core; lives in a shared flat in Archer's Line",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,40 +179,24 @@
     "The Spire",
     "The Gradient Compact",
     "Lacuna Genomics",
+    "Arcturus KS-7 'Nursery'",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Tibor Osei-Svanstrom",
-    "Salve",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Djeneba Park-Traore",
-    "Dragan Petersen-Bah",
-    "Ferrogate Transit",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Plot 17",
-    "Tessera Corponation",
-    "The Heritage Vault",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Frost Boudiaf"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Complex diaspora blend: 43.7% Hispanic/Latin American (primarily Mestizo), 23.3% East Asian, 19.9% North African (Maghrebi), 11.7% Sub-Saharan African, with trace Eastern European ancestry. This creates a striking phenotype—warm medium-brown skin with subtle golden undertones from the Latin American and East Asian components, refined by North African and Sub-Saharan features.",
+    "heritage": "Ubiquitous Diaspora blend with Indigenous American (31.6%), Sub-Saharan African (27.3%), East Asian (24.5%), South Asian (14.5%), and Eastern European (2.1%) ancestry. This creates a distinctive warm-toned phenotype where deep Sub-Saharan and Indigenous American richness combines with East Asian and South Asian luminosity. High, defined cheekbones with broad facial structure reflect the Indigenous American and Sub-Saharan components; face shape shows the width and prominence characteristic of these ancestries. Warm golden undertones from East and South Asian heritage glow subtly beneath the deeper warmth of Sub-Saharan and Indigenous American skin depth. Overall effect is a harmonious, richly warm complexion with significant dimensional depth and subtle golden radiance.",
     "height_cm": 158,
     "weight_kg": 52,
-    "build": "Compact and wiry, shoulders slightly narrow, legs proportionally long relative to torso. Functional musculature in forearms and calves from years of repetitive cleaning work — not athletic, but efficient.",
+    "build": "Compact and wiry, shoulders slightly narrow, legs proportionally long relative to torso. Functional musculature in forearms and calves from years of repetitive cleaning work—not athletic, but efficient.",
     "hair_color": "Natural black with very slight warm undertone",
     "hair_style": "Single practical braid, usually tucked into collar or wrapped around the back of the head during work shifts",
     "hair_length": "Long (mid-back when unbraided)",
     "eye_color": "Dark brown, almost black",
-    "skin_tone": "Medium warm brown with golden undertones—a harmonious blend where Latin American warmth meets East Asian luminosity, deepened and enriched by North African and Sub-Saharan ancestry. Evenly toned overall with slightly warmer undertones across cheekbones and bridge of nose.",
-    "complexion": "Clear skin with a tired, slightly dehydrated quality from nocturnal schedule. Fine lines beginning at the outer corners of eyes from sustained focus and habitual squinting in low light. High, defined cheekbones with subtle width across the face reflecting East Asian and North African heritage. Lips naturally full with warm undertones, often chapped from dry tower air and infrequent lip care. No makeup.",
+    "skin_tone": "Rich medium warm brown with pronounced golden undertones—a luminous blend where East Asian and South Asian glow meets Sub-Saharan depth and Indigenous American warmth. Evenly toned overall with warmer, golden-bronze highlights across cheekbones and bridge of nose.",
+    "complexion": "Clear skin with a tired, slightly dehydrated quality from nocturnal schedule. Fine lines beginning at the outer corners of eyes from sustained focus and habitual squinting in low light. High, prominent cheekbones with broad facial structure characteristic of Indigenous American and Sub-Saharan heritage, refined by East Asian definition. Lips naturally full with warm undertones, often chapped from dry tower air and infrequent lip care. No makeup.",
     "distinguishing_marks": [
       "Small burn scar on the inside of her left wrist, pale and approximately 2cm diameter, from a cleaning solvent incident at age 16",
       "Calluses across the pads of her fingers and the heel of her right hand, raised and slightly discolored from mop handle friction",
@@ -222,16 +206,64 @@
     "posture_movement": "Moves with deliberate economy—no wasted motion. Shoulders slightly forward from hours bent over cleaning equipment. Walking pace is steady and measured. Eyes are constantly moving, cataloging details in rooms and spaces. When she sits, she sits fully, not perched. Hands are often in motion: fidgeting with fabric, adjusting her braid, unconsciously reaching for the petroleum salve in her apron pocket.",
     "clothing_style": "Tier 3 practical utilitarian. During work shifts: unbranded gray or navy Brightclean Services uniform polo (synthetic blend, starting to pill at the shoulders), dark cargo pants with reinforced knees, scuffed non-slip safety shoes, a worn gray apron with multiple pockets holding cleaning supplies and personal items. Off-shift: layered secondhand clothing from thrift networks in Archer's Line—oversized sweaters, faded jeans, a well-maintained jacket of indeterminate age that belonged to her mother. No jewelry except a thin silver ring on her right ring finger (inherited). A small cloth bag for work supplies and a transit pass on a worn lanyard."
   },
-  "image_prompt": "Ignacio Kettani-Sigurdsson, 158cm tall, compact wiry frame, medium warm brown skin with golden undertones blending Latin American, East Asian, North African, and Sub-Saharan heritage. Long black hair in a practical braid tucked at collar. Dark brown eyes with fine lines at corners from nocturnal work. High defined cheekbones, full lips, clear complexion with subtle dehydration. Pale burn scar on left inner wrist, pronounced calluses on fingers and right palm. Wearing worn gray Brightclean Services uniform polo and dark cargo pants with reinforced knees, scuffed safety shoes, gray apron with multiple pockets. Deliberate economical posture, shoulders slightly forward. Hands fidgeting with braid. Setting: dimly-lit megastructure corridor at night, 2226 GLMZ cyberpunk aesthetic, cool LED overhead lighting casting subtle shadows, tired but focused expression. Cyberpunk 2200s mundane realism. --ar 2:3 --v 6",
+  "image_prompt": "Aiyana Tetteh-Yoon, 158cm compact build, GLMZ Great Lakes Metropolitan Zone. Close portrait of a woman with rich warm medium-brown skin with golden undertones, high defined cheekbones, broad facial structure reflecting Indigenous American and Sub-Saharan heritage with East Asian luminosity. Dark brown eyes nearly black, natural black long hair in a practical braid tucked into worn gray Brightclean Services polo uniform. Clear complexion with tired quality, fine lines at eye corners, naturally full lips. Small pale burn scar visible on left inner wrist, callused fingers from cleaning work. Wearing cargo pants with reinforced knees, worn gray apron with supply pockets, scuffed safety shoes. Hands in motion, eyes cataloging details, posture slightly forward. Neon-lit corridor lighting, nocturnal shift atmosphere, practical utilitarian setting, photorealistic, documentary style, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.7,
-    "East Asian": 23.3,
-    "North African": 19.9,
-    "Sub-Saharan African": 11.7,
-    "Eastern European": 1.4
+    "Indigenous American": 31.6,
+    "Sub-Saharan African": 27.3,
+    "East Asian": 24.5,
+    "South Asian": 14.5,
+    "Eastern European": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 31.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 2.7,
+        "Senegalese": 12.3
+      },
+      "East African": {
+        "Kenyan": 5.1,
+        "Somali": 7.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 16
+      },
+      "Japanese": {
+        "Japanese": 8.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 8.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.7,
+        "Tamil Sri Lankan": 0.5
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 0.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.1
+      },
+      "Slavic West": {
+        "Czech": 1.2
+      }
+    }
+  }
 }

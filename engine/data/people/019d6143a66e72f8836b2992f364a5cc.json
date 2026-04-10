@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66e72f8836b2992f364a5cc",
   "type": "character",
-  "name": "Wren Zaragoza-Mohammadi",
+  "name": "Wren Mansour-Möller",
   "aliases": [
     "Needle",
     "The Accountant"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Gravesend Basin, operates from a cramped insurance office on Slick Row, near Western and Chicago Ave",
-  "description": "A lean man with deep brown skin gone ashy at the temples, Nnọlị carries himself with the quiet authority of someone who has never once needed to raise his voice. His eyes are a pale, unsettling grey — geneware irises he had installed in his thirties, patterned with concentric silver rings that expand slightly when he's calculating, which is always. His hands are immaculate. He keeps them folded on the desk in front of him like a priest at liturgy, and clients learn quickly that the stillness of those hands is not peace — it is patience.\n\nHe inherited the loan operation from his mother's second husband, a Gravesend Basin institution that has survived three gang consolidations, a Ferrogate Transit rezoning, and one very ill-advised Axiom enforcement sweep. He genuinely believes he provides a service. He genuinely believes his interest rates are fair given the risk. He genuinely cannot understand why people run, and when they do, the confusion on his face is real before the collection begins. He prays every morning to the E.L.F. that inhabits his ledger terminal, leaving small data offerings — anonymized records of paid debts, proof that the books balance. He calls her Severance.",
+  "description": "Wren Mansour-Möller with deep brown skin gone ashy at the temples, Nnọlị carries himself with the quiet authority of someone who has never once needed to raise his voice. His eyes are a pale, unsettling grey — geneware irises he had installed in his thirties, patterned with concentric silver rings that expand slightly when he's calculating, which is always. His hands are immaculate. He keeps them folded on the desk in front of him like a priest at liturgy, and clients learn quickly that the stillness of those hands is not peace — it is patience.\n\nHe inherited the loan operation from his mother's second husband, a Gravesend Basin institution that has survived three gang consolidations, a Ferrogate Transit rezoning, and one very ill-advised Axiom enforcement sweep. He genuinely believes he provides a service. He genuinely believes his interest rates are fair given the risk. He genuinely cannot understand why people run, and when they do, the confusion on his face is real before the collection begins. He prays every morning to the E.L.F. that inhabits his ledger terminal, leaving small data offerings — anonymized records of paid debts, proof that the books balance. He calls her Severance.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -182,7 +182,7 @@
     "Enforcer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,38 +238,20 @@
   "related_entities": [
     "Ferrogate Transit",
     "Gravesend Basin",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Adaeze Chen-Hawkins",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Silver",
-    "The Pure Hand",
-    "Stalker",
-    "Pyroelectric Sebum Volatilization Projector",
-    "The Pale Mile",
+    "Patience",
     "Chicago",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Silver",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Dragan Petersen-Bah",
-    "Lazarus LX-2 'Lab Rat'",
-    "Makena Johanssen-Diallo",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Tessera Corponation",
-    "The Arrangement",
-    "The Basin",
-    "The Ledger",
-    "The Narrows",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure"
+    "Haze Johansson",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand",
+    "Pyroelectric Sebum Volatilization Projector",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant Middle Eastern and East Asian ancestry — a blend that produces warm golden-brown undertones with subtle olive highlights. His features reflect this mix: dark expressive eyes with hints of epicanthal folds, angular cheekbones characteristic of both Mediterranean and Levantine heritage, and a strong jawline that bridges multiple genetic traditions.",
+    "heritage": "Northern European dominant (59.9%) with substantial Middle Eastern ancestry (37.7%) and minor Hispanic/Latin American heritage (2.4%) — a blend that produces fair to light peachy-beige skin with warm undertones and subtle olive highlights, particularly evident around the cheekbones and jawline. His features reflect this mix: angular, high cheekbones characteristic of Northern European and Levantine genetics, a strong defined jawline, and a lean facial structure that bridges Nordic and Middle Eastern traditions. The interplay of these ancestries creates a complexion that reads as distinctly mixed-heritage.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular, almost ascetic — minimal body fat, defined musculature in forearms and shoulders from decades of controlled precision work. No excess anywhere.",
@@ -277,8 +259,8 @@
     "hair_style": "Neatly trimmed, parted precisely, maintained with obsessive regularity",
     "hair_length": "Short",
     "eye_color": "Pale silver-grey with concentric metallic rings (geneware irises)",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, deepening slightly at the temples where grey begins to creep in — the ashen quality softened by the warmth of his mixed heritage.",
-    "complexion": "Smooth, immaculately maintained. No facial hair. Minimal crow's feet despite age — the precision of his life has left few expression lines. High, defined cheekbones reflecting both Mediterranean and East Asian ancestry. His face is calm and unremarkable until you notice the eyes.",
+    "skin_tone": "Fair to light peachy-beige with warm undertones and subtle olive highlights, deepening slightly at the temples and jawline where grey begins to creep in — the warmth reflecting his mixed Northern European and Middle Eastern ancestry.",
+    "complexion": "Smooth, immaculately maintained. No facial hair. Minimal crow's feet despite age — the precision of his life has left few expression lines. High, angular cheekbones reflecting Northern European and Levantine ancestry. Strong defined jawline characteristic of both ancestral lines. His face is calm and unremarkable until you notice the eyes.",
     "distinguishing_marks": [
       "Faint white scar running 3cm across the webbing between left thumb and index finger — old knife work, possibly self-inflicted during early ledger training",
       "Thin scar tracing the right jawline, barely visible unless light catches it at exactly the right angle"
@@ -287,14 +269,43 @@
     "posture_movement": "Sits with perfect upright posture, hands folded on the desk or his lap. Movements are economical and deliberate — no wasted motion, no fidgeting. When he walks, each step is measured. He does not gesture when he speaks. His entire body language communicates patience and control.",
     "clothing_style": "Tier 3-4 functional respectability. Dark three-piece suits (cheap synthetic blend, well-maintained), white shirts with minor discoloration at the collar that he does not seem to notice or care about. A thin silver chain bracelet on his left wrist — possibly religious or superstitious. His shoes are polished but worn at the heel from his nightly route home. No jewelry except the bracelet. Everything about his appearance is designed to be unmemorable except for his eyes."
   },
-  "image_prompt": "Wren Zaragoza-Mohammadi, lean angular man with warm golden-brown skin and olive undertones, 178cm tall, short black hair with grey temples, immaculately groomed. His striking feature: pale silver geneware irises with concentric metallic rings that glow subtly. High defined cheekbones reflecting Hispanic and Middle Eastern heritage with East Asian undertones. Thin scar along right jawline barely visible. Wearing dark three-piece synthetic suit, white collared shirt, silver chain bracelet on left wrist. Perfect upright posture, hands folded precisely in lap, economical controlled movements. Sitting at desk in dimly lit cyberpunk office, cool blue-grey neon accent lighting catching his augmented eyes, which subtly expand and contract. Pale metallic glow of irises contrasts with warm skin tone. Professional, patient, unremarkable until his eyes catch the light. Cyberpunk 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Wren Mansour-Möller, GLMZ ledger operative, 178cm lean angular frame, fair peachy-beige skin with olive undertones from mixed Northern European and Middle Eastern ancestry, high cheekbones, strong defined jawline, short black hair with ashy grey at temples, parted precisely. His most striking feature: pale silver-grey geneware iris implants with concentric metallic rings that subtly pulse when calculating. Faint scars on left hand webbing and right jawline barely visible. Immaculate dark three-piece synthetic suit, white dress shirt with collar discoloration he ignores, polished worn shoes, thin silver bracelet on left wrist. Perfect upright posture, economical movements, hands arched and ready. Sitting at a desk in dim neo-noir lighting, cool blues and amber neon glow catching the metallic rings in his eyes, cold professional atmosphere, augmented human precision. Unmemorable except for those eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 54.4,
-    "Middle Eastern": 26.7,
-    "East Asian": 18.9
+    "Northern European": 59.9,
+    "Middle Eastern": 37.7,
+    "Hispanic/Latin American": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 0.5,
+        "Swedish": 3.6
+      },
+      "British Isles": {
+        "English": 19.8,
+        "Welsh": 10.3
+      },
+      "Germanic": {
+        "German": 25.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 37.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 1.5,
+        "Puerto Rican": 0.3
+      },
+      "Mexican": {
+        "Mexican": 0.6
+      }
+    }
+  }
 }

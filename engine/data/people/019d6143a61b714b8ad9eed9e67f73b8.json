@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61b714b8ad9eed9e67f73b8",
   "type": "character",
-  "name": "Drift Haugen",
+  "name": "Sione Haugen",
   "aliases": [
     "The Ghost of Pilsen"
   ],
@@ -12,7 +12,7 @@
   "age": 67,
   "status": "active",
   "location": "Pilsen Veil — performs at the junction of Menomonee Gulch and Mexicantown Libre, near Halsted and Division",
-  "description": "Ghislain is old in the way the city makes people old — not withered but compacted, all the softness burned away until what remains is extremely dense. He is dark-skinned, Congolese and Russian heritage visible in the breadth of his face and his pale grey eyes, which are startling and which he has never modified because he believes his body came to him as a message he is still decoding. He wears the same long coat in all seasons, patched so many times it has become a map of itself, and he carries a battered audio-capture pendant around his neck that predates most of the people he performs for. He smells of coffee and the particular chemical tang of Pilsen Veil's air.\n\nHe stands at his corner three or four days a week and recites — original poems, memorized classics from a dozen traditions, improvised responses to whatever is happening that day in the Veil. He does not pass a hat. He does not have an uplink for transfers. He accepts food, sometimes. He has been doing this for thirty-one years, through two corporate rezoning attempts, a flood event, a plague year, and a period when Ferrogate Transit security actively moved him on weekly. He came back each time. He is not sentimental about this — he describes it as a job, and himself as a worker.",
+  "description": "Sione Haugen is old in the way the city makes people old — not withered but compacted, all the softness burned away until what remains is extremely dense. He is dark-skinned, Congolese and Russian heritage visible in the breadth of his face and his pale grey eyes, which are startling and which he has never modified because he believes his body came to him as a message he is still decoding. He wears the same long coat in all seasons, patched so many times it has become a map of itself, and he carries a battered audio-capture pendant around his neck that predates most of the people he performs for. He smells of coffee and the particular chemical tang of Pilsen Veil's air.\n\nHe stands at his corner three or four days a week and recites — original poems, memorized classics from a dozen traditions, improvised responses to whatever is happening that day in the Veil. He does not pass a hat. He does not have an uplink for transfers. He accepts food, sometimes. He has been doing this for thirty-one years, through two corporate rezoning attempts, a flood event, a plague year, and a period when Ferrogate Transit security actively moved him on weekly. He came back each time. He is not sentimental about this — he describes it as a job, and himself as a worker.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -155,7 +155,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,30 +180,14 @@
     "Palladian Construction",
     "The Heritage Vault",
     "Copperveil Intelligence",
+    "Corner Slice",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "ARCHIVE",
     "Gravimetric Collapse Charge GCC-9",
-    "The Pale Mile",
-    "Alper Castillo-Ababio",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Free Assembly",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Jitterbug",
-    "Kang-Petrov Arms KPS-9 'Rattler'",
-    "MERIDIAN",
-    "Obafemi Szczypiński-Lautoa",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Pure Hand",
-    "Ximena Bautista-Nwosu",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (27.5%), East Asian (27.0%), and Middle Eastern (26.1%) with significant South Asian ancestry (17.2%) and minimal Northern European (2.2%). A complex genetic tapestry reflecting the Ubiquitous Diaspora — deep melanin base with warm undertones, bone structure showing East Asian and Middle Eastern features blended with Sub-Saharan African prominence, creating a unique phenotype unmarked by any single regional boundary.",
+    "heritage": "A complex genetic tapestry of Southeast Asian (33.3%), Pacific Islander (26.7%), and South Asian (17.2%) predominance, interwoven with Hispanic/Latin American (10.5%), Northern European (6.5%), and Sub-Saharan African (5.8%) ancestry—the living embodiment of the Ubiquitous Diaspora. Sione's phenotype defies singular regional classification: warm caramel-bronze skin with golden undertones carries Southeast Asian and Pacific Islander melanin depth, enriched by South Asian luminosity and subtle Sub-Saharan warmth. Bone structure reflects this blend—Southeast Asian and Pacific Islander angularity softened by South Asian prominence in the nose and jaw, with Northern European ancestry visible only in pale eye color and subtle facial proportions.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and densely muscled, the kind of thinness that comes from decades of sparse living rather than youth — all remaining mass is functional, no softness. Shoulders still broad but slightly rounded forward from age and posture. Hands show the tremor of old age but retain deliberate strength.",
@@ -211,8 +195,8 @@
     "hair_style": "Closely cropped, uneven, self-cut",
     "hair_length": "Short",
     "eye_color": "Pale grey, striking and unaugmented",
-    "skin_tone": "Deep warm brown with complex undertones — the base melanin richness of Sub-Saharan ancestry tempered with the warmer, slightly golden cast of East Asian and South Asian heritage, further weathered by Pilsen Veil's industrial air exposure into ashy, papery texture. The overall effect is a rich chocolate-bronze that reads as deeply grounded and lived-in.",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth — evidence of decades of outdoor performance and expression. High, broad cheekbones reflecting East Asian and Sub-Saharan African structure, with subtle Middle Eastern prominence in the nose and jawline. Bone structure shows the blended ancestry in its balanced proportions. Clean-shaven except for a grey stubble that appears within hours. Skin has a papery quality but remains unbroken and vital. Permanent creases from smiling.",
+    "skin_tone": "Burnished caramel-bronze with rich golden-warm undertones—Southeast Asian and Pacific Islander melanin base deepened by South Asian luminosity, weathered by decades of industrial air exposure into a lived-in patina that reads as vital and grounded rather than faded.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth—evidence of decades of outdoor performance and expression. High, prominent cheekbones reflecting Southeast Asian and Pacific Islander structure, with subtle but distinct South Asian prominence in the nose bridge and jawline definition. Bone structure shows balanced proportions from mixed ancestry. Clean-shaven except for grey stubble appearing within hours. Skin has weathered texture but remains unbroken and vital, with permanent creases from smiling radiating from eye corners and mouth.",
     "distinguishing_marks": [
       "Long thin scar running from left temple to jaw, pale and old, origin unknown to casual observers",
       "Calluses on the palms and fingertips of both hands, deep and permanent",
@@ -223,16 +207,72 @@
     "posture_movement": "Stands with weight distributed evenly, rooted — a performer's stance. Moves with deliberate economy, no wasted gesture. When performing, his hands become expressive and fluid despite their age. When listening, his entire body tilts slightly toward the speaker. Walks slowly but with purpose, following the same routes daily.",
     "clothing_style": "One long coat, charcoal grey wool, heavily patched with fabric of different origins — some synthetic, some organic, some metallic — creating a visible patchwork across the back and sleeves. Beneath it: simple grey or brown cotton shirts, worn thin. Black utility pants, multiple pockets, frayed at the cuffs. Boots resoled multiple times, held together with intention. The overall effect is Tier 5 by necessity but Tier 1 in maintenance and dignity — nothing is discarded, everything is maintained. No jewelry except the pendant. No visible brand markers. Clothing smells of coffee grounds, smoke, and the metallic-chemical tang of industrial runoff."
   },
-  "image_prompt": "Drift Haugen, aged street performer in cyberpunk 2226 GLMZ, portrait in dim neon-shadowed setting. Deep warm brown skin with complex heritage — Sub-Saharan, East Asian, Middle Asian, and South Asian ancestry visible in bone structure and rich melanin tone weathered by industrial grime. Pale grey unaugmented eyes striking against deeply lined face. High broad cheekbones, faint scars at temple and jaw. Grey-white closely cropped hair, days of stubble. Wearing patched charcoal wool coat with synthetic and metallic patchwork, worn cotton beneath, frayed black utility pants. Old brass pendant on leather cord around neck. Hands show age and calluses but retain strength and expressiveness. Rooted performer's stance, industrial Pilsen Veil backdrop with chemical smog and archive-warm lighting. Dignified poverty, lived-in authenticity, decades of survival and art. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of aging Southeast Asian-Pacific Islander man with caramel-bronze weathered skin, pale grey eyes, deeply lined face showing decades of expression. High prominent cheekbones, salt-and-pepper stubble. Wearing charcoal grey wool coat heavily patched with mismatched fabrics—synthetic, organic, metallic—over worn cotton shirt. Antique audio pendant on leather cord around neck. Rooted performer's stance, deliberate posture. Thin scar running temple to jaw. Callused hands with faint Cyrillic tattoo on forearm. Industrial Great Lakes Metropolitan Zone backdrop, acid-rain lighting, neon-tinged shadows. Gritty, lived-in dignity, no augmentations. Mood: weary but vital, grounded presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 27.5,
-    "East Asian": 27.0,
-    "Middle Eastern": 26.1,
+    "Southeast Asian": 33.3,
+    "Pacific Islander": 26.7,
     "South Asian": 17.2,
-    "Northern European": 2.2
+    "Hispanic/Latin American": 10.5,
+    "Northern European": 6.5,
+    "Sub-Saharan African": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 2.9,
+        "Javanese": 7.7
+      },
+      "Filipino": {
+        "Tagalog": 13.7
+      },
+      "Laotian": {
+        "Laotian": 9
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 19,
+        "Tokelauan": 7.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 12.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.3
+      },
+      "Nepali": {
+        "Nepali": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 10.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 6.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 1.6,
+        "South African": 0.7
+      },
+      "West African": {
+        "Sierra Leonean": 0.8,
+        "Ghanaian": 0.3
+      },
+      "Central African": {
+        "Congolese": 0.4,
+        "Cameroonian": 2
+      }
+    }
+  }
 }

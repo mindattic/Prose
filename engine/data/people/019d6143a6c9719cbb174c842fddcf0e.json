@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c9719cbb174c842fddcf0e",
   "type": "character",
-  "name": "Meera Pathak",
+  "name": "Remi Zaragoza",
   "aliases": [
     "Sera",
     "The Notary",
@@ -14,7 +14,7 @@
   "age": 58,
   "status": "active",
   "location": "The Meridian Core (surface-level administrative district, outer ring), near State and Monroe",
-  "description": "Seraphine is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
+  "description": "Remi Zaragoza is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -226,7 +226,7 @@
     "Diplomat": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Meridian Core (surface-level administrative district",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,37 +238,21 @@
     "The Meridian Core",
     "Meridian Core",
     "The Shelf",
-    "SERAPHINE//NULL",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "ARCHIVE",
-    "Silver",
-    "Arcturus Bulwark APC",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Chronicle",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Saodat Mirzoyan-Fubara",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Patience",
+    "Silver"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: predominantly Sub-Saharan African (41.5%) with significant South Asian (30.8%), Southeast Asian (17.3%), and East Asian (10.4%) genetic contribution. The combination produces a striking phenotype—warm deep brown skin with subtle golden undertones, facial structure showing the broader cheekbones and nose bridge characteristic of African ancestry blended with the finer orbital features common to South and Southeast Asian populations. Her features suggest the kind of beautiful ambiguity that defines the Ubiquitous Diaspora.",
+    "heritage": "Complex Ubiquitous Diaspora ancestry: Sub-Saharan African (29.8%), East Asian (22.3%), South Asian (20.7%), Hispanic/Latin American (20.3%), and Indigenous American (6.9%). This rare pentuple blend creates a striking, genuinely ambiguous phenotype. Her face displays the broader cheekbones and defined nose bridge characteristic of African ancestry, harmonized with the finer orbital geometry and higher cheekbones of East and South Asian populations. Mid-facial width and distinctive jaw structure reflect the Latin American and Indigenous American components. The result is a face that resists easy categorization—beautiful precisely because it belongs fully to none of the traditional categories and authentically to all of them.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Tall and angular, lean through the shoulders and torso with the kind of thinness that comes from decades of sustained tension rather than exercise. Her frame suggests someone who has always occupied space efficiently, taking up only what was necessary.",
+    "skin_tone": "Warm deep brown with subtle golden and olive undertones—the luminous result of five-way ancestry blending. Rich and complex in any lighting, appearing slightly different depending on angle and source. Professional and even in tone across the face and body.",
     "hair_color": "Silver with dark undertones",
     "hair_style": "Locs, pulled back tightly with functional precision; no ornament, no looseness",
     "hair_length": "Long (mid-back length)",
     "eye_color": "Deep brown (left eye contains visible retinal scanner hardware with faint amber LED when inactive)",
-    "skin_tone": "Warm deep brown with golden undertones, the result of blended Sub-Saharan, South Asian, Southeast Asian, and East Asian ancestry. Rich and luminous in professional lighting.",
-    "complexion": "Fine wrinkles concentrated around the eyes and mouth—marks of sustained focus and rare smiling. Skin is clear, well-maintained, slightly weathered with the warm glow of mixed heritage skin. No cosmetic augmentation. Reading glasses worn on a thin chain, pushed up onto her forehead habitually.",
+    "complexion": "Fine wrinkles concentrated around the eyes and mouth—marks of sustained focus and rare smiling. Skin is clear, well-maintained, with warm luminosity characteristic of multi-continental mixed heritage ancestry. Slightly weathered by years in climate-controlled corporate environments and focused analytical work. No cosmetic augmentation. Reading glasses worn on a thin chain, pushed up onto her forehead habitually.",
     "distinguishing_marks": [
       "Fine horizontal scar along the inside of her right wrist, approximately 3cm, from self-installed augmentation procedure at age 46",
       "Faint burn mark on the back of her left hand, oval-shaped, roughly 2cm diameter, from a spilled coffee incident in 2218 that she never sought treatment for"
@@ -277,15 +261,69 @@
     "posture_movement": "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it either—a compromise born of professional habit.",
     "clothing_style": "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashion—the clothing of someone who dresses to be forgotten, not seen."
   },
-  "image_prompt": "Meera Pathak, 178cm tall, lean angular build, cyberpunk 2226. Warm deep brown skin with golden undertones, mixed Sub-Saharan African and South Asian heritage evident in facial structure. Silver-black locs pulled back severely. Left eye shows amber retinal scanner implant with subtle circuitry tracery. Deep brown eyes, neutral observant expression. Fine wrinkles around eyes and mouth. Wearing charcoal grey blazer over white fitted shirt, tailored trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Faint burn scar on left hand visible. Upright economical posture, standing in corporate administrative building with cool blue-grey lighting, fluorescent overhead panels. Detailed face, professional but deliberately unmemorable, the look of someone designed to disappear into bureaucratic spaces. --ar 2:3 --v 6",
+  "image_prompt": "Remi Zaragoza, a 178cm tall lean androgynous woman with warm deep brown skin holding subtle golden and olive undertones from complex five-way ancestry blend (Sub-Saharan African, East Asian, South Asian, Hispanic/Latin American, Indigenous American). Sharp, high cheekbones, defined nose bridge, finer orbital geometry, mid-facial width reflecting her mixed heritage. Deep brown eyes with visible amber retinal scanner hardware in left eye. Silver hair with dark undertones pulled back in long locs, worn with functional precision. Fine wrinkles around eyes and mouth. Minimal distinguishing marks: small horizontal scar on right wrist, faint burn mark on left hand. Wearing charcoal grey blazer over white fitted shirt, tailored navy trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Upright posture, neutral expression, economical movement. Corporate administrative setting, cool fluorescent lighting, 2226 neo-noir GLMZ aesthetic, professional and deliberately unobtrusive appearance --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.5,
-    "South Asian": 30.8,
-    "Southeast Asian": 17.3,
-    "East Asian": 10.4
+    "Sub-Saharan African": 29.8,
+    "East Asian": 22.3,
+    "South Asian": 20.7,
+    "Hispanic/Latin American": 20.3,
+    "Indigenous American": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 11.9,
+        "Ethiopian": 17.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13.3
+      },
+      "Chinese": {
+        "Shanghainese": 4.8,
+        "Mandarin Northern": 4.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 6.8,
+        "Pashtun": 5
+      },
+      "Indian": {
+        "Kannada": 3.7,
+        "Tamil": 1.3
+      },
+      "Nepali": {
+        "Nepali": 3.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 5.2
+      },
+      "Mexican": {
+        "Mexican": 1.6
+      },
+      "Caribbean": {
+        "Puerto Rican": 13.5
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 2.8,
+        "Potawatomi": 1.4
+      },
+      "Plains Nations": {
+        "Muscogee": 1.6
+      },
+      "Mesoamerican": {
+        "Maya": 1.1
+      }
+    }
+  }
 }

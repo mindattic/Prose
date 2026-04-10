@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b07c668e6dce754735e568",
   "type": "character",
-  "name": "Aidana Rakhimov",
+  "name": "Binta Karimi",
   "aliases": [
     "Counselor",
     "Reu"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Hamtramck Enclave, GLMZ, near Ashland and Division",
-  "description": "Reuben is tall and slightly gaunt in the way of people who forget to eat when they're absorbed in work, with sharp cheekbones, dark skin, and close-cropped natural hair that is beginning to show early grey at the temples. He wears prescription lenses rather than optical implants, a deliberate choice that marks him as either old-fashioned or principled depending on who is judging. His suits are always exactly one tier above what he can actually afford — he buys them secondhand and has them altered by a tailor in the Enclave who owes him a favor. There is ink on his fingers on most days and, when he is working late, a manic brightness in his eyes that makes him look younger than he is.\n\nReuben practices law in the gap between what is technically legal and what is actually enforced, and he has made himself expert in a body of precedent so obscure and so specific that he may be one of three people in GLMZ who can cite it from memory. He represents synthetic workers, E.L.F. collectives seeking legal personhood status, and humans whose rights have been violated by corporate classification schemes. He is deeply idealistic about the law as an institution, which is a form of stubbornness that has kept him poor and relatively effective. He does not drink but keeps a bottle of very good bourbon on his desk for clients who need it.",
+  "description": "Binta Karimi is tall and slightly gaunt in the way of people who forget to eat when they're absorbed in work, with sharp cheekbones, dark skin, and close-cropped natural hair that is beginning to show early grey at the temples. He wears prescription lenses rather than optical implants, a deliberate choice that marks him as either old-fashioned or principled depending on who is judging. His suits are always exactly one tier above what he can actually afford — he buys them secondhand and has them altered by a tailor in the Enclave who owes him a favor. There is ink on his fingers on most days and, when he is working late, a manic brightness in his eyes that makes him look younger than he is.\n\nBinta Karimi practices law in the gap between what is technically legal and what is actually enforced, and he has made himself expert in a body of precedent so obscure and so specific that he may be one of three people in GLMZ who can cite it from memory. He represents synthetic workers, E.L.F. collectives seeking legal personhood status, and humans whose rights have been violated by corporate classification schemes. He is deeply idealistic about the law as an institution, which is a form of stubbornness that has kept him poor and relatively effective. He does not drink but keeps a bottle of very good bourbon on his desk for clients who need it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -154,7 +154,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,27 +169,14 @@
   "registered_firearms": [],
   "related_entities": [
     "Hamtramck Enclave",
-    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Lacuna Genomics",
     "Déjà Vu",
-    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Crucible Industries Cryogenic Axe CA-1 'Frostbite Edge'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Free Assembly",
-    "Helix Biosystems",
-    "Slagworks Industrial",
-    "Stainless Steel",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack BC-1 'Briefcase'",
-    "Vuk Jorgensen-Toure"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian / Hispanic-Latin American / Sub-Saharan African blend with East Asian and Northern European admixture. The combination produces distinctive features: Central Asian bone structure with slight epicanthic folds from East Asian ancestry, warm-toned skin reflecting the African and South Asian components, with subtle Latin American warmth in complexion.",
+    "heritage": "Sub-Saharan African (31.2%), Middle Eastern (29.8%), South Asian (19.0%), Hispanic/Latin American (11.6%), Southeast Asian (6.0%), and Central Asian (2.4%) ancestry creates a striking multicontinental phenotype. Facial structure blends Middle Eastern and North African bone geometry with Sub-Saharan warmth, while South Asian and Southeast Asian ancestry contributes subtle eye shape and refined proportions. High cheekbones with broad facial width, warm undertones enriched by African and South Asian genetics, and Southeast Asian influences visible in eye depth. The integrated ancestry creates distinctly polyphonic features that defy singular classification — a living map of the Ubiquitous Diaspora.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lean and angular, with prominent collarbones and sharp shoulders — the physique of someone who runs on coffee and principle rather than regular meals. Long-limbed but not graceful; he moves with purposeful efficiency rather than ease.",
@@ -197,8 +184,8 @@
     "hair_style": "Close-cropped, neat, deliberately low-maintenance",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm medium-brown with golden undertones, reflecting Central Asian and Hispanic ancestry blended with Sub-Saharan African heritage. Rich and even, neither too dark nor light.",
-    "complexion": "High, prominent cheekbones with subtle Central Asian breadth across the face, angular jaw with slight Latin American softness around the lower face. Eyes with gentle epicanthic folds from East Asian ancestry, habitually tired with faint creases from squinting at small-print legal documents. Skin shows minor weathering — not scarred but marked by years of stress and insufficient sleep. Usually freshly shaved but with visible stubble by late afternoon.",
+    "skin_tone": "Warm medium-brown with golden undertones from Sub-Saharan African, South Asian, and Southeast Asian components, deepened and complexified by Middle Eastern ancestry with subtle olive undertones. Even tone with subtle radiance despite chronic stress and sleep deprivation.",
+    "complexion": "High, prominent cheekbones with broad facial width from Sub-Saharan and Middle Eastern ancestry, refined by South Asian and Southeast Asian bone structure. Angular jaw with gentle softness around the lower face. Eyes with subtle natural depth and warmth influenced by South and Southeast Asian genetics, intelligent and focused. Skin shows minor weathering — not scarred but marked by years of stress and insufficient sleep. Usually freshly shaved but with visible stubble by late afternoon.",
     "distinguishing_marks": [
       "Chronic ink staining on the right index and middle fingers from fountain pen work",
       "A small circular scar on his left inner forearm where the Helix Biosystems blood filter was installed — barely visible but he is aware of it constantly"
@@ -207,17 +194,68 @@
     "posture_movement": "Stands with forward-leaning intensity, as if about to make an argument. Walks quickly, often with papers or a data tablet in hand. Gestures expansively when discussing legal precedent or synthetic rights — his hands are rarely still when he is engaged. Eyes focus sharply on conversation partners; he listens with visible concentration.",
     "clothing_style": "Always wears tailored suits one tier above his actual economic status — charcoal, navy, or deep grey wool purchased secondhand and fitted by a Hamtramck tailor. White or pale blue dress shirts, often with visible pen marks on the cuff from rapid note-taking. Worn leather briefcase patched at the corners. Sensible black shoes, well-maintained but not new. No jewelry except a simple stainless steel watch from his early career. The overall effect is deliberately professional and slightly anachronistic — he dresses like someone who believes in institutions even as he fights them."
   },
-  "image_prompt": "Aidana Rakhimov, 188cm lean angular man with warm golden-brown skin and high prominent cheekbones reflecting Central Asian and mixed heritage ancestry. Short black hair with grey at temples, dark brown eyes with subtle East Asian folds, sharp jawline, habitually tired expression. Freshly shaved with emerging stubble. Wearing charcoal tailored wool suit, crisp white dress shirt with pen marks on cuff, worn leather briefcase. Standing with forward-leaning intensity in neon-lit neo-brutalist law office, fluorescent overhead lighting casting sharp shadows across angular features. Hands gesturing mid-argument, fingers stained with ink. Simple stainless steel watch visible. Cyberpunk 2226, GLMZ setting, institutional defiance, worn professionalism, data tablet in background. --ar 2:3 --v 6",
+  "image_prompt": "Binta Karimi, tall lean neo-noir lawyer in 2226, warm medium-brown skin with golden and olive undertones, high cheekbones and broad facial structure blending Middle Eastern and Sub-Saharan features with South Asian refinement, dark natural brown eyes, black hair with grey at temples cut close and neat, clean-shaven except for late-day stubble. Wearing tailored charcoal wool suit with pale blue dress shirt marked by pen stains on cuff, holding worn leather briefcase. Forward-leaning posture radiating intensity, stainless steel watch visible on wrist, subtle circular scar on left inner forearm. Sharp focused gaze, hands gesturing expressively. Great Lakes Metropolitan Zone neon-lit law office or urban corridor background, cool blue and amber lighting casting shadows across angular features, professional and slightly anachronistic aesthetic, determined expression suggesting someone fighting institutional systems --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 36.0,
-    "Hispanic/Latin American": 24.6,
-    "Sub-Saharan African": 13.5,
-    "East Asian": 11.3,
-    "Northern European": 7.5,
-    "South Asian": 7.1
+    "Sub-Saharan African": 31.2,
+    "Middle Eastern": 29.8,
+    "South Asian": 19,
+    "Hispanic/Latin American": 11.6,
+    "Southeast Asian": 6,
+    "Central Asian": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 10.3
+      },
+      "West African": {
+        "Ghanaian": 9.9,
+        "Senegalese": 11
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 29.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 14.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.3
+      },
+      "Nepali": {
+        "Nepali": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 3.6,
+        "Dominican": 0.8
+      },
+      "Central American": {
+        "Salvadoran": 2,
+        "Guatemalan": 1
+      },
+      "South American": {
+        "Peruvian": 1.8,
+        "Brazilian": 2.4
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 6
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 2.4
+      }
+    }
+  }
 }

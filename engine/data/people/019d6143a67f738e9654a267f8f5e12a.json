@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "The Alban Souk, Chatham Flats, near Pulaski and Chicago Ave",
-  "description": "Oluwadarasimi — Dara to everyone who values their time — is a compact, watchful woman who runs what appears to be a phone repair and device maintenance kiosk in the middle of the Alban Souk's electronics corridor. The repair work is real; so is everything else. Her skin is a deep warm brown, her natural hair twisted into locks threaded with silver wire that serve a dual purpose as aesthetic and antenna extension. Her irises are stock human dark brown, which she considers a professional advantage. She has cat ears — a geneware mod she got in her twenties and has kept ever since, velvety black and mobile, swiveling toward sounds before she's consciously registered them. She is acutely, perpetually embarrassed by how readable her ears make her emotional state and has developed elaborate conversational techniques for preventing anyone from noticing what direction they've turned.\n\nDara operates on the fundamental principle that information depreciates in value like produce: sell it while it's fresh or it's worthless. She deals strictly in neighborhood-scale data — who owes whom, who's sleeping where they shouldn't be, what the Chatham Flats block captain actually filed versus what they told residents, which E.L.F. shrine has gone cold and why. She does not touch corponation intel, does not touch political data, and has turned down three increasingly good offers to work for Tessera's intelligence division. She is precise, reliable, and slightly sad in a way she would vigorously deny.",
+  "description": "Cruz Valenzuela — Dara to everyone who values their time — is a compact, watchful woman who runs what appears to be a phone repair and device maintenance kiosk in the middle of the Alban Souk's electronics corridor. The repair work is real; so is everything else. Her skin is a deep warm brown, her natural hair twisted into locks threaded with silver wire that serve a dual purpose as aesthetic and antenna extension. Her irises are stock human dark brown, which she considers a professional advantage. She has cat ears — a geneware mod she got in her twenties and has kept ever since, velvety black and mobile, swiveling toward sounds before she's consciously registered them. She is acutely, perpetually embarrassed by how readable her ears make her emotional state and has developed elaborate conversational techniques for preventing anyone from noticing what direction they've turned.\n\nDara operates on the fundamental principle that information depreciates in value like produce: sell it while it's fresh or it's worthless. She deals strictly in neighborhood-scale data — who owes whom, who's sleeping where they shouldn't be, what the Chatham Flats block captain actually filed versus what they told residents, which E.L.F. shrine has gone cold and why. She does not touch corponation intel, does not touch political data, and has turned down three increasingly good offers to work for Tessera's intelligence division. She is precise, reliable, and slightly sad in a way she would vigorously deny.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -161,7 +161,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,35 +178,16 @@
     "Mexicantown Libre",
     "The Alban Souk",
     "Chatham Flats",
+    "GLMZ",
     "The Gradient Compact",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
     "Chicago",
-    "Auricula Felis Modification",
-    "Cinderblock Ai",
-    "Corva Lam",
-    "Demyan Morozov",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Enforcer Cruiser",
-    "Kairos",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Sulfur Crown Agriculture",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "The Blackout Syndicate",
-    "The Heritage Vault",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African, Hispanic/Latin American, and East Asian blend. The combination manifests in her facial structure—broad cheekbones with subtle East Asian epicanthic fold characteristics, warm brown skin with underlying golden and reddish undertones from her Latin heritage, and the bone structure and features characteristic of West and Central African ancestry. Her features read as a harmonious blend across continents rather than distinctly one or the other.",
+    "heritage": "Northern European (55.5%), Hispanic/Latin American (43.2%), and Southeast Asian (1.3%) blend. Her ancestry manifests as warm medium brown skin with golden and honey undertones bridging all three heritage streams. Her facial structure shows defined, slightly high cheekbones with subtle Southeast Asian characteristics, refined bone structure characteristic of Northern European heritage, and the warm coloration of Latin American ancestry. Her features read as a harmonious global blend rather than distinctly regional.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with the economical musculature of someone who moves deliberately rather than forcefully. Shoulders slightly narrow, center of gravity low. Her frame reads as precise — nothing wasted.",
@@ -214,8 +195,8 @@
     "hair_style": "Twisted locks, intricately arranged, with metallic wire woven through for both aesthetic and functional antenna extension",
     "hair_length": "Medium (shoulder-length locks)",
     "eye_color": "Dark brown, unaugmented human iris",
-    "skin_tone": "Warm golden-brown with undertones reflecting her blended heritage—deeper richness from Sub-Saharan ancestry, warm honey and copper notes from Latin heritage, subtle warmth that complements East Asian ancestry without dominating",
-    "complexion": "Clear, well-maintained skin with sharp, angular cheekbones that bridge African and Asian facial architecture. Narrow face with controlled expression; her features at rest suggest someone listening for something just outside normal hearing range. Subtle eye shape with warm brown irises.",
+    "skin_tone": "Warm medium brown with golden and honey undertones—a balanced blend reflecting dominant Northern European and substantial Latin American ancestry with trace Southeast Asian influence, creating luminous warmth throughout",
+    "complexion": "Clear, well-maintained skin with refined, defined cheekbones that reflect her mixed heritage. Narrow face with controlled expression; her features at rest suggest someone listening for something just outside normal hearing range. Subtle eye shape with warm brown irises and slight upward tilt characteristic of her minor Southeast Asian ancestry. Warm undertones visible throughout her facial structure.",
     "distinguishing_marks": [
       "Subdermal data-cache implant running along the inside of her left forearm, visible as a faint linear scar with occasional faint LED pulse when activated via finger-press",
       "Pair of fully mobile black velvet geneware cat ears mounted at the crown, with pink inner tissue and delicate cartilage structure — responsive to her emotional state despite her efforts to control them"
@@ -224,14 +205,38 @@
     "posture_movement": "Economical and controlled. She sits at her kiosk in a way that suggests she's always half-ready to stand. Her head tracks sounds with slight but noticeable delays — her ears moving first, then her eyes following. When she walks, her stride is quick and efficient, rarely wasted motion. Her hands are steady and precise.",
     "clothing_style": "Tier 3 practical — well-maintained but not expensive. Favors tool vests with multiple pockets, thermal-lined jackets (kept open most of the time), and cargo pants with reinforced knees and thigh pockets. She wears a plain silver chain necklace and keeps her fingers bare to reduce friction while working on devices. Her kiosk setup includes a faded work apron with embroidered patches indicating repair certifications. Colors lean neutral: blacks, grays, deep blues. Nothing that would draw attention in the Souk's visual noise."
   },
-  "image_prompt": "Cruz Valenzuela, 158cm petite wiry frame, warm golden-brown skin blending Sub-Saharan African and Latin heritage with East Asian ancestry, sharp angular cheekbones, dark brown eyes. Shoulder-length twisted locks of deep black with silver wire threaded through, serving as antenna. Black velvet geneware cat ears with pink inner tissue, ears mobile and responsive atop her head. Subdermal data-cache implant visible as faint LED-pulsing linear scar on left forearm. Wearing open gray thermal-lined jacket, black tool vest with multiple pockets, cargo pants with reinforced knees, silver chain necklace. Sitting at a kiosk workspace in the GLMZ Souk, hands steady and precise over repair work, head tilted slightly as if listening. Neon holographic signage glowing softly in background, cool bluish lighting mixing with warm amber from work lamps. Her expression controlled and focused, ears tracking sounds with slight movement before eyes follow. Cyberpunk 2200s aesthetic, gritty repair shop atmosphere --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character: Cruz Valenzuela, 158cm tall compact woman with warm medium-brown skin with golden undertones, narrow face with defined cheekbones, dark brown eyes with subtle upward tilt, natural deep black hair with silver wire woven throughout in shoulder-length twisted locks. Fully mobile black velvet geneware cat ears mounted at crown, responsive and animated. Wearing practical tool vest with multiple pockets over thermal-lined jacket, cargo pants with reinforced knees, plain silver chain necklace. Economical posture at repair kiosk, steady hands positioned over device components. Subdermal forearm implant scar visible on left arm. Neutral color palette—blacks, grays, deep blues. Souk marketplace setting with kiosk lighting creating subtle highlights on skin and metallic wire. Precise, focused expression, ears slightly angled as if tracking ambient sound. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 42.0,
-    "Hispanic/Latin American": 37.9,
-    "East Asian": 20.1
+    "Northern European": 55.5,
+    "Hispanic/Latin American": 43.2,
+    "Southeast Asian": 1.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 55.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 24.2
+      },
+      "Caribbean": {
+        "Dominican": 19
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 0.2
+      },
+      "Filipino": {
+        "Bicolano": 0.7,
+        "Tagalog": 0.4
+      }
+    }
+  }
 }

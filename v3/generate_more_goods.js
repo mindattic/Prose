@@ -48,7 +48,7 @@ const products = [
     category: "street_food",
     subcategory: "instant noodles",
     manufacturer: "Park Family Foods",
-    description: "The ubiquitous instant noodle pack of Meridian 88. Just add hot water, wait three minutes, and you have something that tastes close enough to real food that you stop thinking about the difference.",
+    description: "The ubiquitous instant noodle pack of GLMZ. Just add hot water, wait three minutes, and you have something that tastes close enough to real food that you stop thinking about the difference.",
     flavor_profile: "Salty, MSG-rich broth with a subtle sesame undertone, chewy synth-wheat noodles that hold texture surprisingly well",
     tier_availability: "Tier 1-3",
     price: "Φ1.20",
@@ -2594,7 +2594,7 @@ const products = [
     price: "Φ35.00",
     popularity_rank: 28,
     slogan: "Your seal. Your word.",
-    cultural_context: "Wax seals are the ultimate analog status symbol. They imply a person who writes physical letters, seals them by hand, and delivers them personally. It's aristocratic theater in a cyberpunk city, and it's completely sincere. People who use wax seals mean everything they send.",
+    cultural_context: "Wax seals are the ultimate analog status symbol. They imply a person who writes physical letters, seals them by hand, and delivers them personally. It's aristocratic theater in a megacity, and it's completely sincere. People who use wax seals mean everything they send.",
     story_hooks: [
       "A shadowy figure known only by their wax seal — a serpent eating its own tail — has been sending sealed letters to corporate executives containing information they shouldn't have."
     ],
@@ -2722,7 +2722,7 @@ const products = [
     category: "electronics",
     subcategory: "BCI cosmetic",
     manufacturer: "InterfaceSkins Co.",
-    description: "Vibrant, high-contrast HUD skin with neon accents, animated transitions, and a cyberpunk aesthetic. Popular with younger users who want their interface to feel alive.",
+    description: "Vibrant, high-contrast HUD skin with neon accents, animated transitions, and a neo-noir urban aesthetic. Popular with younger users who want their interface to feel alive.",
     flavor_profile: "Hot pink and electric blue accents, animated data flows, particle effects on notifications, loud and proud",
     tier_availability: "Tier 2-4",
     price: "Φ8.00",

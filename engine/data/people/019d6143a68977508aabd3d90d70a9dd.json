@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68977508aabd3d90d70a9dd",
   "type": "character",
-  "name": "Flux Volkov",
+  "name": "Flux Vestergaard",
   "aliases": [
     "Oz",
     "The Super"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Lakeview Neon, Cascara Block residential tower (sub-basement 2, maintenance hub), near Armitage and Milwaukee",
-  "description": "Oskar is lean and angular with deep brown skin, a shaved head, and bioluminescent dermal strips along his forearms — a cosmetic mod he got fifteen years ago that he's never had removed, though they've faded from vivid teal to a dim blue-grey pulse. He has the hands of someone who has fixed everything at least twice: knuckles enlarged, palms cross-hatched with callus. He moves through the building's guts the way some people move through their own home, ducking conduits by memory, knowing which pipes whistle before storms.\n\nHe is warm in a distracted way — genuinely interested in people but often half-present, running building diagnostics in his head mid-conversation. Residents alternately adore him and take him entirely for granted. He has a small shrine to the building's E.L.F. — which he calls 'Cascara' — in the corner of his maintenance hub, complete with weekly data offerings (he uploads images of the building's structural reports, believing the spirit takes comfort in knowing its own bones are solid). He has a dark, self-aware sense of humor about the fact that he has lived in the sub-basement for eleven years and hasn't seen sunrise from outside the building in weeks.",
+  "description": "Flux Vestergaard is lean and angular with deep brown skin, a shaved head, and bioluminescent dermal strips along his forearms — a cosmetic mod he got fifteen years ago that he's never had removed, though they've faded from vivid teal to a dim blue-grey pulse. He has the hands of someone who has fixed everything at least twice: knuckles enlarged, palms cross-hatched with callus. He moves through the building's guts the way some people move through their own home, ducking conduits by memory, knowing which pipes whistle before storms.\n\nHe is warm in a distracted way — genuinely interested in people but often half-present, running building diagnostics in his head mid-conversation. Residents alternately adore him and take him entirely for granted. He has a small shrine to the building's E.L.F. — which he calls 'Cascara' — in the corner of his maintenance hub, complete with weekly data offerings (he uploads images of the building's structural reports, believing the spirit takes comfort in knowing its own bones are solid). He has a dark, self-aware sense of humor about the fact that he has lived in the sub-basement for eleven years and hasn't seen sunrise from outside the building in weeks.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -192,7 +192,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,32 +241,14 @@
   "related_entities": [
     "Lakeview Neon",
     "Palladian Construction",
-    "Vantablack PD-8 'Whistle'",
     "Irontide Tidal Energy",
-    "The Pure Hand",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Bintou Halvorsen-Osei",
-    "Bogdan Achebe-Svanstrom",
-    "Brecken Yılmaz-Osei",
-    "Emeka Johansson-Orozco",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo PD-1 'Citizen'",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TESSERA TN-1 'Cradle'",
-    "The Glass Garden",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "Vantablack PD-8 'Whistle'",
+    "Corner Slice",
+    "The Pure Hand"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Eastern European (48.5%) with significant South Asian (29.9%), Sub-Saharan African (12.9%), and Southeast Asian (8.7%) ancestry. The genetic blend produces a distinctly cosmopolitan phenotype — Eastern European bone structure and complexion foundation layered with warmer South Asian and African undertones, with subtle Southeast Asian features in eye shape and facial proportions.",
+    "heritage": "Northern European (76.4%) with Southeast Asian (13.4%) and Eastern European (10.2%) ancestry. The genetic blend creates a distinctive phenotype: Nordic bone structure and pale complexion as the dominant foundation, subtly warmed by Southeast Asian undertones that add creamy warmth to the base and influence eye shape with a slight epicanthic fold. Eastern European ancestry strengthens cheekbones and jaw definition, creating pronounced facial angles.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular with functional muscularity — built from decades of manual labor rather than aesthetics. Shoulders slightly forward from years hunched in crawlspaces and maintenance shafts.",
@@ -274,8 +256,8 @@
     "hair_style": "Completely shaved, kept close to scalp for practical reasons (easier to work in confined spaces, less sweat)",
     "hair_length": "Shaved",
     "eye_color": "Deep brown with Southeast Asian-influenced slight epicanthic fold, slightly tired-looking with persistent squint lines from dim basement lighting",
-    "skin_tone": "Medium to warm brown — a harmonious blend where Eastern European undertones create a slightly olive-bronze cast, enriched by South Asian warmth and Sub-Saharan depth. Complexion weathered but not sunburned (minimal natural light exposure).",
-    "complexion": "Face lean and angular with prominent squared jaw reflecting Eastern European ancestry; cheekbones slightly high and broad suggesting South Asian and Southeast Asian heritage. Skin condition is clear but marked by small scars and work-worn texture. Perpetual expression of mild focus, as though listening to something others can't hear.",
+    "skin_tone": "Fair with warm creamy undertones — predominantly Northern European paleness as base, with Southeast Asian warmth preventing stark whiteness. Complexion weathered but not sun-damaged (minimal natural light exposure).",
+    "complexion": "Face lean and angular with prominent squared jaw reflecting Northern European ancestry; cheekbones slightly high and broad with subtle Southeast Asian influence. Skin condition is clear but marked by small scars and work-worn texture. Perpetual expression of mild focus, as though listening to something others can't hear.",
     "distinguishing_marks": [
       "Faded bioluminescent dermal strips running the length of both forearms in a geometric pattern — originally vivid teal, now a dim blue-grey that pulses barely perceptibly in darkness (applied 26 years ago, personal choice, never removed)",
       "Both palms cross-hatched with old calluses and white scar tissue from tool work and sharp edges",
@@ -286,15 +268,43 @@
     "posture_movement": "Moves with economical, practiced grace through cramped spaces — body language suggests someone intimately familiar with his environment. Walks slightly hunched despite his height, a habit from years ducking conduits and low ceilings. Hands often move while speaking, particularly when describing building systems or repairs. Direct eye contact when listening, but gaze tends to drift during conversations — genuinely distracted, as though running diagnostics in the background of his attention.",
     "clothing_style": "Tier 4 functional wear, worn but maintained. Standard-issue Palladian maintenance uniform (grey syntex coveralls with multiple pockets and reinforced cuffs), often unzipped halfway down with a plain dark undershirt beneath. Heavy steel-toed boots scuffed and resoled at least twice. A thin Φ2.50 smartwatch on left wrist (ancient by current standards, but functional — he's never replaced it). No jewelry except a thin copper bracelet on right wrist (handmade by a resident, worn for fifteen years). Clothing always carries faint traces of machine oil, solder flux, and building dust."
   },
-  "image_prompt": "Flux Volkov, 178cm lean angular maintenance worker, medium warm brown skin with olive-bronze undertones blending Eastern European, South Asian, and African heritage, shaved head, deep brown eyes with slight Southeast Asian fold, faded teal-grey bioluminescent dermal strips on both forearms in geometric patterns, work-worn callused hands, faded steam burn scar on right inner wrist, hearing implant port below left ear, slightly hunched posture from years in maintenance shafts, grey Palladian syntex coveralls unzipped halfway over dark undershirt, scuffed steel-toed boots, ancient smartwatch on left wrist, thin copper bracelet on right wrist, machine oil and solder flux stains on clothing, perpetual expression of focused distraction, dimly-lit basement corridor with industrial piping and conduits, neon accent lighting catching the faded bioluminescent implants, moody cyberpunk 2226 setting, atmospheric haze from dust and aged systems, documentary-style realism --ar 2:3 --v 6",
+  "image_prompt": "Flux Vestergaard, 178cm lean angular man with shaved head, pale creamy skin with warm undertones, deep brown eyes with subtle epicanthic fold and tired squint lines, prominent squared Nordic jaw with broad high cheekbones. Faded blue-grey bioluminescent dermal strips on both forearms in geometric patterns barely glowing in darkness. Work-worn hands with calluses and scars, enlarged knuckles, small burn scar on right inner wrist. Wearing grey Palladian maintenance coveralls unzipped halfway over dark undershirt, scuffed steel-toed boots, ancient smartwatch on left wrist, thin copper bracelet on right. Body posture slightly hunched from years in maintenance shafts, economical controlled movements. GLMZ GLMZ basement maintenance worker, surrounded by dim industrial lighting reflecting off bioluminescent forearms, oil and solder flux weathered appearance, expression of distracted focus, faint traces of machinery and dust on clothing --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 48.5,
-    "South Asian": 29.9,
-    "Sub-Saharan African": 12.9,
-    "Southeast Asian": 8.7
+    "Northern European": 76.4,
+    "Southeast Asian": 13.4,
+    "Eastern European": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 52.8,
+        "Swiss German": 23.6
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 10.1
+      },
+      "Vietnamese": {
+        "Vietnamese": 3.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 3,
+        "Czech": 1.1
+      },
+      "Slavic South": {
+        "Croatian": 5.5
+      },
+      "Slavic East": {
+        "Belarusian": 0.4,
+        "Ukrainian": 0.2
+      }
+    }
+  }
 }

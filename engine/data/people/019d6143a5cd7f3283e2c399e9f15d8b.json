@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cd7f3283e2c399e9f15d8b",
   "type": "character",
-  "name": "Flux Mensah",
+  "name": "Flux Cervantes",
   "aliases": [
     "Mama Brick",
     "The Widow"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Gravesend Basin — operates from a laundromat called Ouédraogo Clean on Silt Row, near Halsted and Chicago Ave",
-  "description": "Briseis is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn't discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes — retrofitted with amber thermal optics she bought secondhand — glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them — she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
+  "description": "Flux Cervantes is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn't discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes — retrofitted with amber thermal optics she bought secondhand — glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them — she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -183,7 +183,7 @@
     "Enforcer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,36 +204,14 @@
     "Gravesend Basin",
     "The Iron Lotus",
     "Stratum",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Iron",
-    "Nightlight",
     "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Enforcer Cruiser",
-    "Ihaia Mori-Sefa",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA TC-3 'Crucible'",
-    "The Basin",
-    "The Burden Clause",
-    "The Counter",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+    "Silver",
+    "Iron",
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (49.5%) with significant Southeast Asian admixture (27.0%), complemented by Northern European (14.1%) and Hispanic/Latin American (9.4%) ancestry. The genetic blend creates a rich phenotype: deep umber skin with warm undertones characteristic of West African heritage, refined by the softer facial geometry and eye shape influenced by Southeast Asian ancestry, with subtle contributions from European and Latin American lineages visible in bone structure and complexion variation.",
+    "heritage": "Complex diaspora blend: 61.2% Hispanic/Latin American, 21.9% Sub-Saharan African, 16.9% Southeast Asian. This genetic combination creates a rich, harmonious phenotype with warm deep brown skin enhanced by golden undertones from the Latin American and Southeast Asian ancestry, enriched by the structural depth of Sub-Saharan African heritage. Facial geometry shows gently rounded cheekbones and softer eye shape influenced by Southeast Asian genetics, balanced against the strong, defined jaw from African ancestry, with warm golden-brown tones throughout from the Latin American lineage. The overall effect is a unified, warm-toned complexion reflecting the three-way blend with subtle luminosity from sun exposure.",
     "height_cm": 172,
     "weight_kg": 84,
     "build": "Broad-shouldered and solid without being heavy; muscular through the chest and arms, suggesting decades of physical work and controlled strength. Her frame reads as deliberately maintained rather than naturally slight.",
@@ -241,8 +219,8 @@
     "hair_style": "Wrapped tightly in amber-colored cloth in a traditional head wrap; no visible loose hair",
     "hair_length": "Long (worn wrapped)",
     "eye_color": "Amber thermal optics with a faint bioluminescent glow; the irises are mismatched — one slightly brighter than the other, indicating secondhand installation",
-    "skin_tone": "Deep umber with warm undertones and subtle golden luminosity from Southeast Asian ancestry; complexion has an even depth across the face with no stark contrasts",
-    "complexion": "Weathered but meticulously maintained; minimal makeup, skin shows the texture of age and exposure but is kept scrupulously clean. Cheekbones high and gently rounded (Southeast Asian influence), jaw defined and strong (Sub-Saharan African structure). The overall facial geometry shows balanced blending across her ancestry. Expression typically neutral or faintly expectant.",
+    "skin_tone": "Warm deep brown with golden undertones; even depth across the face reflecting the balanced three-way heritage blend of Hispanic/Latin American, Sub-Saharan African, and Southeast Asian ancestry. Subtle luminosity suggests sun exposure and age, with no stark contrasts.",
+    "complexion": "Weathered but meticulously maintained; minimal makeup, skin shows the texture of age and exposure but is kept scrupulously clean. Cheekbones high and gently rounded (Southeast Asian influence), jaw defined and strong (Sub-Saharan African structure), with warm golden undertones throughout (Hispanic/Latin American ancestry). The overall facial geometry shows balanced blending across her three primary ancestries. Expression typically neutral or faintly expectant.",
     "distinguishing_marks": [
       "Faded keloid scarring runs along the entire left forearm in a pattern consistent with a press-iron injury — raised, slightly darker than surrounding skin, approximately 20cm in length",
       "Small burn marks (old, pale) across the knuckles of both hands, occupational wear"
@@ -251,15 +229,44 @@
     "posture_movement": "She carries her weight forward slightly, shoulders back. Her movements are economical and deliberate — she does not fidget or waste motion. When sitting, she occupies space fully without sprawling. She walks with a measured pace, feet placed with precision. Her default expression is watchful neutrality.",
     "clothing_style": "Tier 3-4 practical wear. Multiple layered thermal vests in muted grays and deep blues, always pristine and well-fitted. Long heavy skirts (dark wool or synthetic blend) that fall to mid-calf, paired with reinforced slip-on shoes suitable for standing all day. A large canvas apron with multiple pockets when working the counter. No jewelry except a thin metal band on her right ring finger (worn, not ornamental). All clothing is clean, pressed, and shows signs of careful maintenance. The aesthetic is working-class dignity — nothing fashionable, everything functional and respected."
   },
-  "image_prompt": "Flux Mensah, a 172cm tall woman with deep umber skin and warm golden undertones, standing in a cyberpunk 2226 service counter environment. She wears layered muted gray and blue thermal vests over a long dark wool skirt, practical reinforced slip-on shoes visible. Her head is wrapped in amber-colored cloth covering long silver hair with dark roots. Her face shows high, rounded cheekbones with a strong defined jaw, weathered but meticulously maintained dark skin, neutral watchful expression. Her amber thermal optics glow softly with slight bioluminescence, one iris slightly brighter than the other. Faded keloid scarring visible along her left forearm (20cm pattern from old burn injury), pale burn marks across both knuckles. Her right hand shows faint metallic sheen from reinforced knuckle plating. She carries herself with economical posture, shoulders back, weight slightly forward. Canvas work apron with pockets visible. No jewelry except thin worn metal band on right ring finger. Moody neon-lit workplace lighting casting amber and cool blue shadows, cyberpunk aesthetic, dignity and worn resilience in her bearing --ar 2:3 --v 6",
+  "image_prompt": "Flux Cervantes, a 172cm woman with warm deep brown skin with golden undertones, captured in GLMZ Great Lakes Metropolitan Zone. Her face shows harmonious blending of Hispanic/Latin American, Sub-Saharan African, and Southeast Asian heritage—gently rounded cheekbones, strong defined jaw, even warm brown complexion. Silver hair with dark roots wrapped in amber cloth traditional headwrap. Amber thermal optics with faint bioluminescent glow, mismatched brightness, set in weathered but meticulously maintained face. Broad-shouldered, muscular build, economical posture. Wearing layered muted gray and deep blue thermal vests, long dark wool skirt to mid-calf, reinforced slip-on shoes. Faded keloid scarring visible along left forearm. Reinforced metal knuckle plating on right hand with metallic sheen. Thin worn metal ring on right ring finger. Canvas apron with multiple pockets. Watchful neutral expression, precise deliberate movement. Clean, pressed working-class dignity aesthetic. Neon-lit counter or industrial workspace background, warm practical lighting highlighting her deep brown skin tone and amber optics glow --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.5,
-    "Southeast Asian": 27.0,
-    "Northern European": 14.1,
-    "Hispanic/Latin American": 9.4
+    "Hispanic/Latin American": 61.2,
+    "Sub-Saharan African": 21.9,
+    "Southeast Asian": 16.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 61.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 6.1
+      },
+      "Southern African": {
+        "Mozambican": 7.7
+      },
+      "Central African": {
+        "Congolese": 4.8,
+        "Gabonese": 3.3
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 11
+      },
+      "Vietnamese": {
+        "Vietnamese": 4.9
+      },
+      "Laotian": {
+        "Laotian": 1
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Aslan Kimura-Nkrumah is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 22, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Aslan Kimura-Nkrumah is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Rowan Bustamante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 22, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Rowan Bustamante is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.91,
@@ -262,7 +262,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,37 +281,15 @@
   "related_entities": [
     "Masquerade",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Eshe Pena-Baah",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "HOLLOW SIGNAL // RADIO",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Pure Hand",
-    "The Shelf",
-    "Timur Osei-Bjelke",
-    "Yusra Ntambwe-Cakić"
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Northern European (28.6%) forms the base with Northern European bone structure and fair undertones, layered with Hispanic/Latin American (20.1%) warmth and Mediterranean features. Middle Eastern (16.7%) ancestry contributes to angular facial structure and eye depth. Central Asian (12.9%), Pacific Islander (11.2%), and East Asian (10.5%) ancestry create a striking polychromatic result—balanced features without dominance from any single region. The synthesis produces someone whose heritage reads as genuinely mixed, with each ancestry contributing equally visible traits.",
+    "heritage": "Predominantly Hispanic/Latin American (66.2%) with significant Northern European (22.4%) and Middle Eastern (11.4%) ancestry. The blend creates warm olive-bronze skin with golden undertones, angular facial structure from the Middle Eastern component, and a synthesis that reads as genuinely mixed without single-region dominance. Features Mediterranean warmth layered over Northern European bone structure.",
     "height_cm": 183,
     "weight_kg": 61,
     "build": "Rawboned and lean — minimal body fat, defined musculature from functional training rather than aesthetics. Shoulders broad and squared from years of combat conditioning. Frame suggests efficiency over comfort.",
@@ -319,8 +297,8 @@
     "hair_style": "Pulled back in a tight, practical braid that sits low on her neck. No ornamentation. Occasionally worn loose but quickly retied when work begins.",
     "hair_length": "Medium — falls to mid-shoulder when unbound",
     "eye_color": "Dark brown, sharp and analytically focused. Eyes track movement with predatory precision.",
-    "skin_tone": "Warm olive-bronze—the composite result of Northern European paleness modified by Hispanic/Latin, Middle Eastern, Central Asian, Pacific Islander, and East Asian ancestry. Golden-amber undertones across cheekbones and nose bridge. Even distribution across face and body with subtle peachy warmth at temples and jawline.",
-    "complexion": "Gaunt cheeks, prominent angular jaw reflecting Middle Eastern and Central Asian ancestry. Minimal scarring on face suggests deliberate avoidance or fast reflexes. Skin texture shows dehydration from nocturnal lifestyle—not unhealthy, but tired. No makeup. Eyes carry the hollow awareness of chronic sleep disruption. Slight epicanthal fold variation from East Asian ancestry ancestry blending with broader eye set from Northern European and Middle Eastern heritage.",
+    "skin_tone": "Warm olive-bronze with golden-amber undertones across cheekbones and nose bridge. Even distribution across face and body with subtle peachy warmth at temples and jawline — the result of Hispanic/Latin American warmth modified by Northern European and Middle Eastern ancestry.",
+    "complexion": "Gaunt cheeks, prominent angular jaw reflecting Middle Eastern ancestry. Minimal scarring on face suggests deliberate avoidance or fast reflexes. Skin texture shows dehydration from nocturnal lifestyle—not unhealthy, but tired. No makeup. Eyes carry the hollow awareness of chronic sleep disruption.",
     "distinguishing_marks": [
       "Faint white line scar along left temple, approximately 3cm, running toward hairline — old trauma, cleanly healed",
       "Tattoo on inner left wrist: minimalist circuit board pattern in silver ink, approximately 4cm wide — personal mark, not gang affiliation",
@@ -330,17 +308,47 @@
     "posture_movement": "Economical and predatory. Stands with shoulders slightly forward and weight distributed for immediate movement in any direction. Walks with minimal wasted motion — knees slightly bent, ready to shift stance. Eyes constantly scan environments for exits, threats, and information. Hands rest naturally at sides or on equipment, never crossed or defensive. Movements are fluid but never relaxed.",
     "clothing_style": "Function-first, Tier 3-4 utilitarian aesthetic. Black matte tactical trousers with reinforced panels at knees and thighs — worn from frequent use. Dark gray compression shirt under a modified field jacket in charcoal synthetic leather, oversized enough to conceal equipment and augmentation but tailored to not impede movement. Worn boots with reinforced soles and ankle support — scuffed from active work. Minimal jewelry: single silver ring on right middle finger, likely a memento. No corporate branding. Gear organized on belt with pragmatic purpose — encrypted comm unit, lockpick set, small medkit, spare ammunition magazine for sidearm kept in shoulder holster."
   },
-  "image_prompt": "Rowan Bustamante, 183cm lean muscular woman with warm olive-bronze skin and angular features blending Northern European, Hispanic, Middle Eastern, Central Asian, Pacific Islander, and East Asian ancestry. Black hair with blue undertones pulled back in tight braid. Dark sharp eyes, gaunt cheekbones, prominent jaw. Silver circuit-board tattoo on inner left wrist. Matte titanium pain editor housing on left neck with amber LED. Tactical black trousers, dark gray compression shirt, oversized charcoal synthetic leather field jacket. Worn reinforced boots. Single silver ring on right middle finger. Shoulder holster visible. Chrome wrist augmentation with subtle titanium mesh bulges. Predatory economical posture, weight forward, ready stance. Neon-lit GLMZ urban alley at night, rain-slicked concrete, distant holographic signs casting blue-purple shadows. Cold harsh lighting emphasizing gaunt features and chrome implants. Cyberpunk 2226 aesthetic, functional operative in transit, serious vigilant expression, environment suggesting imminent action --ar 2:3 --v 6",
+  "image_prompt": "Rowan Bustamante, 183cm lean operative with warm olive-bronze skin and golden undertones, angular Middle Eastern-influenced jaw, dark brown predatory eyes. Black hair braided low, blue undertones in harsh light. Gaunt cheeks, tired from nocturnal work, faint 3cm scar along left temple. Visible matte titanium pain editor on left neck with dark LED. Circuit board tattoo on inner left wrist, burn scar on right palm. Wearing charcoal synthetic leather field jacket over dark gray compression shirt, black tactical trousers with reinforced knees, worn boots. Standing in economical ready stance, shoulders forward, scanning for threats. Shoulder holster visible, belt with encrypted comm and lockpicks. Single silver ring. GLMZ aesthetic, neon-lit shadows, moody underground setting, cool blues and amber accent lighting, cinematic depth, neo-noir noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 28.6,
-    "Hispanic/Latin American": 20.1,
-    "Middle Eastern": 16.7,
-    "Central Asian": 12.9,
-    "Pacific Islander": 11.2,
-    "East Asian": 10.5
+    "Hispanic/Latin American": 66.2,
+    "Northern European": 22.4,
+    "Middle Eastern": 11.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 19.4
+      },
+      "South American": {
+        "Brazilian": 22.4
+      },
+      "Central American": {
+        "Honduran": 8.3,
+        "Costa Rican": 16.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 17.9
+      },
+      "Germanic": {
+        "Dutch": 0.6
+      },
+      "British Isles": {
+        "English": 3.9
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 8.4
+      },
+      "Persian": {
+        "Iranian": 3
+      }
+    }
+  }
 }

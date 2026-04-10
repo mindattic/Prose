@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66679bd890a47fa357a4e93",
   "type": "character",
-  "name": "Rowan Chakraborty",
+  "name": "Rowan Migizi",
   "aliases": [
     "Tab",
     "Tabby"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Burnished Market, Bronzeline, near Armitage and Milwaukee",
-  "description": "Nkosi is striking in the way that seems effortless and is actually the product of deliberate daily work. Their skin is deep blue-black with a natural gloss that they enhance with a light bioluminescent topcoat — a Dresdan-style application they refresh monthly. Their hair changes color every week: not because they can't commit but because they enjoy documenting the range. Currently it's a deep copper that catches the Burnished Market's overhead lighting like something combustible. They are average height and lean with expressive hands that are usually in motion — demonstrating a garment's fall, illustrating a point, arranging display rails.\n\nNkosi's stall is the most visually intense corner of the Burnished Market — fabrics from three continents of origin pinned and layered on a frame structure they built themselves, geneware accessories in glass cases, color-changing hair treatments in a cooled rack. They have what their regulars call 'the eye' — the ability to look at a person and know within seconds what they should be wearing and why. It is genuinely uncanny. They are also charming in the fast, inclusive way of someone who makes every customer feel like they've been personally selected for good taste. Underneath this, Nkosi is angrier than they look and more strategic than their warmth implies.",
+  "description": "Rowan Migizi is striking in the way that seems effortless and is actually the product of deliberate daily work. Their skin is deep blue-black with a natural gloss that they enhance with a light bioluminescent topcoat — a Dresdan-style application they refresh monthly. Their hair changes color every week: not because they can't commit but because they enjoy documenting the range. Currently it's a deep copper that catches the Burnished Market's overhead lighting like something combustible. They are average height and lean with expressive hands that are usually in motion — demonstrating a garment's fall, illustrating a point, arranging display rails.\n\nRowan Migizi's stall is the most visually intense corner of the Burnished Market — fabrics from three continents of origin pinned and layered on a frame structure they built themselves, geneware accessories in glass cases, color-changing hair treatments in a cooled rack. They have what their regulars call 'the eye' — the ability to look at a person and know within seconds what they should be wearing and why. It is genuinely uncanny. They are also charming in the fast, inclusive way of someone who makes every customer feel like they've been personally selected for good taste. Underneath this, Rowan Migizi is angrier than they look and more strategic than their warmth implies.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -161,7 +161,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,41 +177,23 @@
   ],
   "related_entities": [
     "The Burnished Market",
-    "Riddle",
     "Ashford Signal",
+    "The Marrow Market",
     "Bronzeline",
     "Palladian Construction",
     "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Hepatic Glycogen Depletion Projector",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Hepatic Glycogen Depletion Projector",
     "Stratum",
     "Copper",
+    "Corner Slice",
+    "Origin",
     "The Pure Hand",
-    "Glass",
-    "The Milwaukee Core",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Makena Johanssen-Diallo",
-    "NeuralPath FaceAnchor Name & Face Recall Aid",
-    "Nodar Kuznetsov-Adu",
-    "Quilt",
-    "Solina Barreto-Kiptoo",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Bazaar",
-    "The Oxidian Market",
-    "The Question",
-    "The Signal",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Yuki Nwosu-Petrenko"
+    "Glass"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant South Asian, Pacific Islander, Southeast Asian, and sub-Saharan African ancestry—a striking genetic blend resulting in warm medium-golden skin with subtle regional feature variation. The combination creates distinctly multicontinental facial structure: East Asian eye shape softened by South Asian bone prominence, with Pacific Islander warmth and sub-Saharan African feature richness throughout.",
+    "heritage": "Complex multicontinental blend: 48% East Asian base combined with 20% Southeast Asian, 13% Indigenous American, 10% Hispanic/Latin American, 7% Sub-Saharan African, and 1% South Asian. This creates warm medium-golden skin with rich depth and a striking fusion of facial structure—East Asian eye shape and bone structure softened and enriched by Southeast Asian and Indigenous American prominence, with Sub-Saharan African feature richness and warmth throughout. The result is distinctly multicontinental without reading as any single heritage.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Lean and angular with defined shoulders and long limbs; posture suggests constant motion even at rest. Zero excess adipose — the build of someone who moves for work and doesn't accumulate.",
@@ -219,8 +201,8 @@
     "hair_style": "Textured and deliberately styled to catch light; usually pinned or wrapped in ways that frame their face asymmetrically",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Color-reactive iris modification: shifts between warm gold and deep violet depending on ambient light and emotional state; pupils respond to mood and environment",
-    "skin_tone": "Warm medium-golden with natural depth, enhanced monthly with bioluminescent Dresdan-style topcoat that gives the skin a subtle luminescence in low light",
-    "complexion": "Smooth, intentionally maintained skin with high contrast against the bioluminescent layer. Immaculate grooming; the kind of person who treats their appearance as a daily practice, not an accident. Expressive face combining East Asian and South Asian feature prominence with defined cheekbones and a precise mouth.",
+    "skin_tone": "Warm medium-golden with natural depth and undertones reflecting the East Asian-Southeast Asian-Indigenous American blend, enhanced monthly with bioluminescent Dresdan-style topcoat that gives the skin a subtle luminescence in low light",
+    "complexion": "Smooth, intentionally maintained skin with high contrast against the bioluminescent layer. Immaculate grooming; the kind of person who treats their appearance as a daily practice, not an accident. Expressive face combining East Asian and Southeast Asian feature prominence with defined cheekbones, slightly broader across the midface from Indigenous American ancestry, and a precise mouth.",
     "distinguishing_marks": [
       "Faint subdermal scarring along the left wrist where the NFC chip was installed — visible only in certain light, looks like a thin silver line beneath the skin."
     ],
@@ -228,16 +210,60 @@
     "posture_movement": "Hands are almost never still — gesturing while speaking, rearranging fabric, illustrating a point with precision. They move with deliberate grace, economical and purposeful. Standing posture is relaxed but alert; they appear to be observing while talking. When listening, they lean in slightly.",
     "clothing_style": "Intentionally eclectic and curated — always wearing pieces from their own stall or pieces they've modified. Favors asymmetrical silhouettes, unexpected fabric combinations, and layering that creates visual depth. Tends toward jewel tones and metallics. Accessories are always statement pieces: custom jewelry, dyed wraps, pins that double as fasteners and art. Tier 3-4 quality materials elevated through styling and personal modification. Everything signals taste and intention rather than wealth."
   },
-  "image_prompt": "Rowan Chakraborty, a 173cm lean angular figure with warm medium-golden skin glowing subtly with bioluminescent topcoat, standing in a cyberpunk street market stall. East Asian and South Asian facial features with defined cheekbones and expressive face. Deep copper iridescent hair shoulder-length and asymmetrically styled, catching neon light. Color-reactive iris implants shifting between gold and violet in the ambient light. Hands mid-gesture while arranging eclectic fashion pieces—asymmetrical silhouettes in jewel tones and metallics. Wearing layered, intentionally curated clothing mixing unexpected fabrics, statement jewelry, and dyed wraps. Left wrist shows faint silver subdermal scarring from NFC chip. Bioluminescence glowing on shoulders and cheekbones. Alert, observant posture. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. Neon and street lighting, intentional and purposeful movement. Mood: creative, always in motion, curating. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Migizi, 2226 neo-noir character with warm golden-brown skin and bioluminescent dermal topcoat glowing subtly in low light. 173cm lean angular build with defined shoulders. Medium shoulder-length copper hair with natural iridescence, styled asymmetrically. Color-reactive eyes shifting between warm gold and violet—cybernetic iris modification visible and striking. Expressive face with East Asian-dominant bone structure softened by Southeast Asian and Indigenous American features, high cheekbones, slightly broader midface, precise mouth. Faint silver subdermal scarring visible on left wrist. Wearing intentionally eclectic asymmetrical neo-noir fashion—jewel tones and metallics, layered with unexpected fabric combinations, custom statement jewelry and dyed wraps. Hands gesturing expressively mid-conversation. Posture relaxed but alert, observant, economical movement. Dark neon-lit urban setting in Great Lakes Metropolitan Zone. Moody atmospheric lighting emphasizing bioluminescent skin glow. Intimate, introspective mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 42.6,
-    "South Asian": 22.7,
-    "Pacific Islander": 16.6,
-    "Sub-Saharan African": 9.9,
-    "Southeast Asian": 8.2
+    "East Asian": 48.1,
+    "Southeast Asian": 20.3,
+    "Indigenous American": 13.2,
+    "Hispanic/Latin American": 10.3,
+    "Sub-Saharan African": 7,
+    "South Asian": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 48.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 8.8
+      },
+      "Filipino": {
+        "Tagalog": 11.5
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 13.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 5.8
+      },
+      "South American": {
+        "Venezuelan": 3.6,
+        "Chilean": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.8,
+        "Ethiopian": 3.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.7
+      },
+      "Nepali": {
+        "Nepali": 0.4
+      }
+    }
+  }
 }

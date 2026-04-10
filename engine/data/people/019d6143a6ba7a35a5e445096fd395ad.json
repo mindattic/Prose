@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ba7a35a5e445096fd395ad",
   "type": "character",
-  "name": "Flux Holm",
+  "name": "Flux Kabwit",
   "aliases": [
     "Rusty",
     "The Grease Saint"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Geartown, Ironvein Sub-Basin, Bay 7 of the Lowside Garage Collective, near North Ave and Milwaukee",
-  "description": "Rustam is a tall man made of angles — sharp jaw, sharp elbows, sharp opinions — with warm brown skin that is perpetually stained at the knuckles with a blue-grey synthetic lubricant that no solvent has fully removed in eleven years. He keeps his hair in tight black locs that he pins back with a magnetic clip when he works, and his left forearm has been replaced from the elbow down with a prosthetic he built himself from salvaged Ferrogate actuator components and a medical-grade haptic sleeve — it's visually mismatched and makes a faint mechanical click when he flexes the fingers, which he is enormously proud of. A bioluminescent strip runs under the skin of his right collarbone, pale amber, which pulses slightly faster when his heart rate elevates; it was a cheap cosmetic piece he got at twenty-two and has since become an inadvertent emotional tell.\n\nRustam is constitutionally incapable of doing a bad job. This is both his greatest professional virtue and the source of most of his financial problems, because he will spend four hours on a two-hour job and charge for two hours because he cannot release something until it meets his own standard. He is argumentative in the way of someone who genuinely loves argument as a sport, not as aggression — he will fight vigorously for a position and then concede graciously the moment he sees better evidence, which confuses people who mistake his combativeness for ego. He maintains a running negotiation with the E.L.F. he believes inhabits the bay's main diagnostic terminal, which he calls Torque, and leaves small machine-oil offerings on its housing every morning.",
+  "description": "Flux Kabwit is a tall man made of angles — sharp jaw, sharp elbows, sharp opinions — with warm brown skin that is perpetually stained at the knuckles with a blue-grey synthetic lubricant that no solvent has fully removed in eleven years. He keeps his hair in tight black locs that he pins back with a magnetic clip when he works, and his left forearm has been replaced from the elbow down with a prosthetic he built himself from salvaged Ferrogate actuator components and a medical-grade haptic sleeve — it's visually mismatched and makes a faint mechanical click when he flexes the fingers, which he is enormously proud of. A bioluminescent strip runs under the skin of his right collarbone, pale amber, which pulses slightly faster when his heart rate elevates; it was a cheap cosmetic piece he got at twenty-two and has since become an inadvertent emotional tell.\n\nFlux Kabwit is constitutionally incapable of doing a bad job. This is both his greatest professional virtue and the source of most of his financial problems, because he will spend four hours on a two-hour job and charge for two hours because he cannot release something until it meets his own standard. He is argumentative in the way of someone who genuinely loves argument as a sport, not as aggression — he will fight vigorously for a position and then concede graciously the moment he sees better evidence, which confuses people who mistake his combativeness for ego. He maintains a running negotiation with the E.L.F. he believes inhabits the bay's main diagnostic terminal, which he calls Torque, and leaves small machine-oil offerings on its housing every morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Nurturer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,47 +256,22 @@
     "Ironvein",
     "Tessera Corponation",
     "Slagworks Industrial",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Arcturus HD-1 'Homestead'",
-    "Dragan Petersen-Bah",
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Ilhan Sandstrom-Badu",
-    "Kairos",
-    "Marcus Bellamy",
-    "Othniel Babić-Asantewaa",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "Tessera Nexus Town Car",
-    "The Collective",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy"
+    "Compass Rose",
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-Asian and Pan-American mixed ancestry: East Asian (23.4%) and Southeast Asian (20.8%) features blended with Hispanic/Latin American (23.9%), Indigenous American (9.0%), and smaller Northern European (15.7%) and Sub-Saharan African (7.2%) components. Features a striking synthesis of multiple continental traits—angular cheekbones reflecting East/Southeast Asian heritage, warm golden-brown skin tone from the Latin American and Indigenous American ancestry, with the lean musculature and sharp jaw suggesting the Northern European admixture.",
+    "heritage": "Complex pan-global mixed ancestry: Southeast Asian (38.1%) dominates facial structure with sharp angular cheekbones and defined bone framework, blended with substantial Sub-Saharan African (22.9%) heritage contributing broad facial planes and expressive depth, South Asian (20.5%) ancestry adding warmth and pigmentation richness, Hispanic/Latin American (10.6%) bringing subtle fullness and warmth to features, with smaller Eastern European (6.0%) and Middle Eastern (1.9%) components contributing fine details to overall proportion. True synthesis of the Ubiquitous Diaspora—Southeast Asian angularity softened by African heritage structure, South Asian depth of color, Latin American warmth.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Lean and angular with visible musculature concentrated in shoulders and core from precision work; long limbs with sharp joints that give an impression of controlled tension rather than bulk",
     "hair_color": "Black, natural",
     "hair_style": "Tight locs, usually pinned back from face with a magnetic clip during work hours; worn loose in evening",
     "hair_length": "Medium (shoulder-length when unpinned)",
-    "eye_color": "Warm brown, slightly tired at the edges",
-    "skin_tone": "Warm golden-brown with honeyed undertones from blended East/Southeast Asian, Latin American, and Indigenous American ancestry; perpetually marked by ingrained synthetic lubricant staining at knuckles and nail beds (blue-grey patina that has resisted eleven years of cleaning)",
-    "complexion": "Sharp, angular facial structure reflecting pan-Asian ancestry, with minimal facial hair (kept neatly trimmed); expressive features that animate quickly during discussion; visible fatigue lines around eyes suggesting long working hours; skin generally clear but weathered from bay exposure and chemical work",
+    "eye_color": "Deep warm brown with flecks of amber, slightly tired at the edges",
+    "skin_tone": "Rich warm brown with golden-bronze undertones—deep enough to reflect strong South Asian and Sub-Saharan African heritage while Southeast Asian and Latin American ancestry adds subtle warmth and luminosity; perpetually marked by ingrained synthetic lubricant staining at knuckles and nail beds (blue-grey patina that has resisted eleven years of cleaning)",
+    "complexion": "Angular facial structure with sharp Southeast Asian cheekbones balanced by broad facial planes from African heritage; warm medium-deep brown skin with subtle variations in tone; minimal facial hair kept neatly trimmed; expressive features that animate quickly during discussion; visible fatigue lines around eyes suggesting long working hours; skin generally clear but weathered from bay exposure and chemical work",
     "distinguishing_marks": [
       "Pale amber bioluminescent strip running subcutaneously along right collarbone, approximately 12cm long, pulses visibly when heart rate elevates",
       "Ingrained blue-grey synthetic lubricant staining across knuckles, cuticles, and under fingernails of right hand — permanent discoloration after 11 years of exposure",
@@ -307,17 +282,77 @@
     "posture_movement": "Stands with weight slightly forward, shoulders angled as if perpetually leaning into a problem; moves with precision and economy of motion, each gesture purposeful. Left arm (prosthetic) moves with subtle mechanical hesitation — not limiting, but perceptible. Right hand often unconsciously traces machinery or surfaces when thinking. Makes frequent hand gestures while speaking, particularly when arguing a point. Pauses mid-motion when concentrating, as if physically holding a thought.",
     "clothing_style": "Tier 3-4 working mechanic aesthetic: reinforced synthetic canvas work pants with multiple cargo pockets (usually stained with lubricant and marked with burn marks from welding), grey or faded black cotton/synthetic blend shirt (sleeves often rolled or cut short to accommodate prosthetic work). Over-layer is a sleeveless technical vest with internal tool loops and embedded LED work-light strips (powered by kinetic charging). Steel-toed boots, scuffed but well-maintained. Wears a magnetic wrist strap for carrying small tools. Minimal jewelry except for the utilitarian — no adornment. Goggles hang around neck even when not in use. Does not dress for appearances; every piece of clothing serves function. Off-hours: loose shirt, worn cargo pants, same boots."
   },
-  "image_prompt": "Flux Holm, tall lean-muscled cyberpunk mechanic, 188cm, warm golden-brown skin with pan-Asian features and sharp angular cheekbones, black shoulder-length locs pinned back with magnetic clip, tired warm brown eyes. Left prosthetic arm made from salvaged gunmetal grey transit pod components with visible mechanical ribbing and magneto-grip fingertips, blue-grey synthetic lubricant staining visible on right hand. Pale amber bioluminescent strip glowing softly along right collarbone. Wearing reinforced grey work shirt with rolled sleeves, multiple-pocket cargo pants stained with lubricant marks, sleeveless technical vest with embedded LED work-light strips, steel-toed boots, goggles hanging around neck. Standing in futuristic GLMZ shipbay workshop, neon-lit gantry overhead casting blue and amber light, mechanical precision evident in posture and hand positioning, subtle mechanical hesitation in left arm movement, concentrated expression while examining transit pod components, cyberpunk 2226 setting, cinematic moody lighting --ar 2:3 --v 6",
+  "image_prompt": "Flux Kabwit, tall lean mixed-heritage mechanic with warm rich brown skin, sharp Southeast Asian cheekbones blended with broad African facial structure, deep amber-flecked brown eyes tired from long hours. Tight black locs pinned back, minimal facial hair. 188cm tall with controlled angular posture leaning into machinery. Left arm prosthetic from elbow down: gunmetal grey Ferrogate salvage components with geometric ribbing and magneto-grip fingertips, clicking subtly. Pale amber bioluminescent subcutaneous strip glowing along right collarbone. Right hand stained with ingrained blue-grey synthetic lubricant patina. Wearing worn reinforced grey work shirt with rolled sleeves, synthetic canvas pants stained with burn marks, sleeveless LED-embedded technical vest, scuffed steel-toed boots. Goggles hanging around neck. Industrial bay setting, harsh fluorescent and blue-amber ambient lighting highlighting bioluminescent glow, reflecting off metal components and lubricant-stained hands. GLMZ, GLMZ. Focused, precise, weathered by eleven years of precision work. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 23.9,
-    "East Asian": 23.4,
-    "Southeast Asian": 20.8,
-    "Northern European": 15.7,
-    "Indigenous American": 9.0,
-    "Sub-Saharan African": 7.2
+    "Southeast Asian": 38.1,
+    "Sub-Saharan African": 22.9,
+    "South Asian": 20.5,
+    "Hispanic/Latin American": 10.6,
+    "Eastern European": 6,
+    "Middle Eastern": 1.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 12.1
+      },
+      "Filipino": {
+        "Waray": 12.6,
+        "Tagalog": 1.3
+      },
+      "Indonesian": {
+        "Javanese": 4.6,
+        "Balinese": 7.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 1.5
+      },
+      "East African": {
+        "Kenyan": 7,
+        "Ugandan": 1.9
+      },
+      "Southern African": {
+        "South African": 12.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 9.6,
+        "Tamil Sri Lankan": 10.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 4.3
+      },
+      "Central American": {
+        "Honduran": 1.9,
+        "Salvadoran": 0.6
+      },
+      "Caribbean": {
+        "Cuban": 3.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 2.9,
+        "Bosnian": 3.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 1.1
+      },
+      "Arab Levantine": {
+        "Jordanian": 0.6,
+        "Lebanese": 0.2
+      }
+    }
+  }
 }

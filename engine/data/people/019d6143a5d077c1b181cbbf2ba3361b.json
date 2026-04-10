@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d077c1b181cbbf2ba3361b",
   "type": "character",
-  "name": "Kit Boudiaf",
+  "name": "Kit Boateng",
   "aliases": [
     "Caz",
     "Cas-the-mouth"
@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "The Stockyard, Iron Bend, near Halsted and Chicago Ave",
-  "description": "Casimir is built like he was designed for a different neighborhood and ended up here — broad through the shoulders for his age, with his Ghanaian grandfather's deep-set eyes and his Belarusian grandmother's unexpectedly sharp nose, and skin the color of dark polished teak. He has retractable claw mods on his right hand, cheap gray-market work that catches and sticks sometimes and leaves small gouges in every surface he rests his fingers on. His left ear has a long cosmetic antenna mod — a thin chrome filament that curves up past the ear's edge — which he got because the Iron Bend crew's older members have them and he wanted in on the aesthetic before he was officially in anything.\n\nHe is a prospect for the Iron Bend Substrates, a mid-tier territorial crew operating in The Stockyard's lower warehouse district. He runs lookout and does small-package relay, technically a step below full prospect status but he won't admit that to anyone. He is loudly confident in a way that reads differently depending on who's listening — to younger kids it sounds like authority, to the older crew members it sounds like a boy who hasn't been hurt enough yet to know what he doesn't know. He is not stupid. He is seventeen months from figuring that out.",
+  "description": "Kit Boateng is built like he was designed for a different neighborhood and ended up here — broad through the shoulders for his age, with his Ghanaian grandfather's deep-set eyes and his Belarusian grandmother's unexpectedly sharp nose, and skin the color of dark polished teak. He has retractable claw mods on his right hand, cheap gray-market work that catches and sticks sometimes and leaves small gouges in every surface he rests his fingers on. His left ear has a long cosmetic antenna mod — a thin chrome filament that curves up past the ear's edge — which he got because the Iron Bend crew's older members have them and he wanted in on the aesthetic before he was officially in anything.\n\nHe is a prospect for the Iron Bend Substrates, a mid-tier territorial crew operating in The Stockyard's lower warehouse district. He runs lookout and does small-package relay, technically a step below full prospect status but he won't admit that to anyone. He is loudly confident in a way that reads differently depending on who's listening — to younger kids it sounds like authority, to the older crew members it sounds like a boy who hasn't been hurt enough yet to know what he doesn't know. He is not stupid. He is seventeen months from figuring that out.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -174,7 +174,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,34 +224,20 @@
     "The CEO",
     "Grandmother",
     "Iron Bend",
+    "Plot 17",
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
-    "SynapTech PolyGlot Live Translation Implant",
     "Tessera Corponation",
-    "Tibor Osei-Svanstrom",
+    "SynapTech PolyGlot Live Translation Implant",
+    "Chicago",
+    "Frost Boudiaf",
     "Déjà Vu",
     "Arcturus CK-5 'Bloodhound'",
     "Teak",
-    "Iron",
-    "Chicago",
-    "Alper Holmberg-Dembele",
-    "Aïssé Dragomirescu-Faalelei",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Osvaldo Mensah-Kovalenko",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech CLA-3 'Cascade'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA PA-5 'Attendant'",
-    "The Heritage Vault",
-    "The Signal"
+    "Iron"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "North African (50.1%) with Northern European (25.2%), East Asian (11.2%), Southeast Asian (7.9%), and Pacific Islander (5.6%) ancestry — a striking diaspora blend creating warm-toned features with subtle angular refinement",
+    "heritage": "Sub-Saharan African (45.4%) with Northern European (33.8%) and Southeast Asian (20.8%) ancestry — a striking diaspora blend. The Sub-Saharan component provides rich melanin, broad facial structure, and warm undertones. Northern European ancestry adds angular cheekbones and deep-set eye sockets. Southeast Asian heritage contributes subtle facial refinement and slightly softer contours to balance the broader African and sharper European features.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Broad-shouldered and lean-muscled, already filling into a heavier frame — the build of someone who will be imposing in five years but still reads as young now. No excess weight; functional muscle from unstructured physical activity.",
@@ -259,8 +245,8 @@
     "hair_style": "Kept short and tight, probably cut with clippers every two weeks at a Tier 4 shop. No styling product — utilitarian.",
     "hair_length": "Short",
     "eye_color": "Deep brown, set deeply in the skull",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones — the blended result of North African and Southeast Asian ancestry, polished and even",
-    "complexion": "Clear skin with the kind of texture that shows every scar and mark. The North African and Northern European blend creates slightly angular cheekbones with a broad nose characteristic of North African heritage; deep-set eyes from the European component create a face that looks older than sixteen when serious. Usually not serious. Small acne scars on his jawline. A faint scar on his right cheekbone from a childhood accident.",
+    "skin_tone": "Warm rich brown complexion with golden undertones — the balanced blend of Sub-Saharan African warmth, Northern European coolness, and Southeast Asian luminosity creating an even, polished appearance",
+    "complexion": "Clear skin with the kind of texture that shows every scar and mark. The mixed heritage creates slightly angular cheekbones with a broad nose structure; deep-set eyes create a face that looks older than sixteen when serious. Small acne scars on his jawline. A faint scar on his right cheekbone from a childhood accident.",
     "distinguishing_marks": [
       "Faint linear scar across right cheekbone, approximately 3cm, pale against warm brown skin — childhood injury, possibly from broken glass or a fall",
       "Small cluster of acne scarring along right jawline, shallow pitting",
@@ -268,18 +254,45 @@
     ],
     "visible_augmentations": "Retractable chrome-alloy claw mechanism on right hand (4 digits, visible as thin metallic lines along knuckles and fingertips when retracted; fully extended claws are 4-5cm and show obvious wear and slight misalignment). Thin chrome filament antenna curving upward from the upper cartilage of left ear, extending approximately 8cm past the ear's edge with a slight graceful curve — cosmetic work, catches light when he moves his head.",
     "posture_movement": "Stands with his weight forward slightly, shoulders back in a way that reads as confidence or aggression depending on context. Moves quickly and with purpose, minimal wasted motion. His right hand often rests with fingers slightly curled to conceal the claw mechanism's edges. Frequently touches his ear antenna unconsciously — a nervous tell that contradicts his surface confidence.",
-    "clothing_style": "Tier 1 gang prospect aesthetic: slim-fit carbon-weave tactical pants in charcoal with reinforced pockets (likely Zhong-made, second-season), a fitted black synthetic long-sleeve that shows off his shoulder breadth, no jacket because he's still in that age where he thinks toughness means wearing less. Worn-in grey canvas work boots with mismatched laces (one chrome, one black cord). No visible gang colors yet — that's a privilege for full members. Cheap chrome chain around his left wrist, probably Φ40-60 from a Tier 4 market stall. The chain is the clearest tell that he's trying to earn his place."
+    "clothing_style": "Tier 1 gang prospect aesthetic: slim-fit carbon-weave tactical pants in charcoal with reinforced pockets (likely Zhong-made, second-season), a fitted black synthetic long-sleeve that shows off his shoulder breadth, no jacket because he's still in that age where he thinks toughness means wearing less. Worn-in grey canvas work boots with mismatched laces (one chrome, one black cord). No visible gang colors yet — that's a privilege for full members. Cheap chrome chain around his left wrist, probably Φ40-60 from a Tier 4 market stall."
   },
-  "image_prompt": "Kit Boudiaf, cyberpunk 2226, 16-year-old with warm golden-brown skin from North African and Southeast Asian heritage, sharp angular cheekbones blended with broad nose, deep-set dark eyes. Short black hair, utilitarian cut. 178cm tall, lean-muscled broad shoulders. Fitted black synthetic long-sleeve shirt, slim charcoal carbon-weave tactical pants, grey canvas boots with mismatched chrome and black laces. Retractable chrome claw mechanism on right hand (visible thin metallic lines), chrome filament antenna extending from left ear catching neon light. Unconsciously touching antenna — nervous tell beneath confident posture. Small scar on right cheekbone, acne scarring on jawline. Cheap chrome chain on left wrist. Tier 1 gang prospect, no colors yet. Standing in GLMZ neon-lit street, urban shadows and cool blue-pink lighting, weight forward aggressive-confident stance. Gritty, moody, cyberpunk street aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Kit Boateng, 16-year-old mixed heritage male (Sub-Saharan African, Northern European, Southeast Asian blend) with warm rich golden-brown skin tone, deep brown eyes set deep in angular face with broad nose, small acne scars on jawline and faint 3cm scar on right cheekbone. Short black hair with warm undertones, utilitarian cut. Lean-muscled 178cm frame with broad shoulders. Wearing fitted black synthetic long-sleeve shirt, charcoal carbon-weave tactical pants, grey canvas work boots with mismatched laces (one chrome, one black). Retractable chrome claw mechanism on right hand (4 digits with visible wear), thin chrome antenna curving from left ear. Cheap chrome chain on left wrist. Forward-leaning confident posture, hand resting with fingers slightly curled. Neon-lit urban neo-noir environment, Tier 4 street setting, gang prospect aesthetic, moody atmospheric lighting catching the chrome augmentations --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 50.1,
-    "Northern European": 25.2,
-    "East Asian": 11.2,
-    "Southeast Asian": 7.9,
-    "Pacific Islander": 5.6
+    "Sub-Saharan African": 45.4,
+    "Northern European": 33.8,
+    "Southeast Asian": 20.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 40.6
+      },
+      "Southern African": {
+        "Mozambican": 4.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 25.1
+      },
+      "Scandinavian": {
+        "Norwegian": 8.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 4.6
+      },
+      "Thai": {
+        "Thai": 9.5
+      },
+      "Indonesian": {
+        "Javanese": 6.7
+      }
+    }
+  }
 }

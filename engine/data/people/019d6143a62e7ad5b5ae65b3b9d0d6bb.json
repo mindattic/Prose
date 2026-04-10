@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62e7ad5b5ae65b3b9d0d6bb",
   "type": "character",
-  "name": "Kai Mohammadi-Fredriksen",
+  "name": "Kai Malhotra-Fredriksen",
   "aliases": [
     "Knell",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Addison",
-  "description": "Ilhan Strom-Duah are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Strom-Duah agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "description": "Kai Malhotra-Fredriksen are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Kai Malhotra-Fredriksen agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.74,
@@ -259,7 +259,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,31 +272,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "Geartown",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Mika Sorel",
-    "Mireille Fontaine-Obi",
-    "Neuromorphic Pressure Cestus",
-    "Solveig Tambadou-Kereselidze",
-    "Spire Light on Still Water",
-    "The Canopy",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Canopy",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Cosmopolitan diaspora blend — predominantly East Asian structure (27.6%) with significant Middle Eastern (20.6%) and Hispanic/Latin American (19.3%) ancestry, substantial Southeast Asian (18.5%) influence, Northern European (10.6%) undertones, and Sub-Saharan African (3.4%) contributions creating a complexion and feature set that defies single-region categorization. The result is a face that reads as authentically global rather than anchored to any single genetic origin.",
+    "heritage": "Ubiquitous Diaspora synthesis — predominantly Southeast Asian structure (48.4%) with substantial South Asian influence (25.7%), significant Hispanic/Latin American ancestry (18.0%), and Eastern European undertones (7.9%). The face blends high, defined cheekbones and angular jaw from Southeast and South Asian genetics with warm golden undertones from Latin American heritage, cooled subtly by Eastern European genetics. Epicanthic fold markers visible, dark intelligent eyes with characteristic structure from primary ancestries. The result is a complexion that authentically synthesizes tropical and temperate genetic markers into something genuinely global.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Rawboned and efficiently lean — long limbs with minimal subcutaneous fat, the frame of someone who runs on function rather than bulk. Suggests either deliberate asceticism or the metabolic reality of synthetic blood.",
@@ -304,8 +287,8 @@
     "hair_style": "Shoulder-length, often pulled back asymmetrically or left to fall across one side of the face",
     "hair_length": "Long",
     "eye_color": "Pale grey with networked microvasculature visible at the corners — indication of synthetic blood circulation",
-    "skin_tone": "Warm medium bronze — a harmonious blend reflecting East Asian and Southeast Asian base with Middle Eastern and Latin American golden undertones, further desaturated by sun-deprivation from spending nights in the Canopy and jacked-in to networks",
-    "complexion": "High, defined cheekbones with gentle prominence reflecting East Asian ancestry, strong angular jaw with slight width typical of Southeast Asian genetics, dark intelligent eyes set with the slight epicanthic fold common across East and Southeast Asian populations. Skin is clear but shows the faint texture of someone who doesn't prioritize sleep — fine lines around the eyes from screen fatigue and focus-locked concentration. Subtle warmth to the undertones from Middle Eastern and Latin American heritage. No visible scarring on the face; the damage is internal.",
+    "skin_tone": "Warm medium bronze — Southeast Asian and South Asian base with golden undertones from Latin American ancestry, cooled by subtle Eastern European influence, further desaturated by sun-deprivation from nights in the Canopy and jacked-in to networks",
+    "complexion": "High, defined cheekbones with prominent structure reflecting Southeast and South Asian ancestry, strong angular jaw typical of the genetic combination, dark intelligent eyes with subtle epicanthic fold markers. Skin is clear but shows the faint texture of someone who doesn't prioritize sleep — fine lines around the eyes from screen fatigue and focus-locked concentration. Undertone blends warm bronze from South and Southeast Asian heritage with golden warmth from Latin American ancestry and subtle cool notes from Eastern European genetics. No visible scarring on the face; the damage is internal.",
     "distinguishing_marks": [
       "Surgical scars at both temples where cyberear neural interface ports integrate with the skull — thin, precise lines barely visible unless the light hits at certain angles",
       "A thin white line running from left wrist to mid-forearm, old enough to be almost invisible but present under certain lighting — a reminder of early-career mistakes with jack-in equipment",
@@ -315,17 +298,47 @@
     "posture_movement": "Economical and purposeful — no wasted motion, but not rigid. Moves with the particular grace of someone who's spent significant time in VR spaces and has to relearn physical embodiment daily. Head positioning is deliberate; they orient toward sound sources with the precision of someone using directional microphones rather than moving naturally. Eyes track movement in their peripheral vision with unusual attentiveness. When relaxed (rare), there's a slight tremor in the hands — the physical price of synthetic blood and enhanced neural firing rates.",
     "clothing_style": "Tier 3-4 utilitarian with deliberately non-descript elements. Black or dark grey reinforced synthetic jacket (thermal regulation for temperature-spiked rig sessions), loose cargo pants with multiple sealed pockets (some for hardware, some as misdirection), unmarked steel-toed boots with reinforced ankle support (never know when you need to move fast through physical space). Underneath: fitted black layer that wouldn't stand out in either a corpo lobby or a Tier 5 dive. No logos, no brand signaling — visibility is operational liability. One piece of visible jewelry: a silver ring on the right thumb, always worn, possibly functional (induction point for wireless data transfer) or possibly just a talisman from before they fully committed to the life."
   },
-  "image_prompt": "Kai Mohammadi-Fredriksen, 188cm tall, lean rawboned build, cyberpunk 2226, warm medium bronze skin reflecting East Asian, Southeast Asian, Middle Eastern, and Latin American diaspora heritage, high defined cheekbones, strong angular jaw with epicanthic eye fold, intelligent grey eyes with visible microvasculature from synthetic blood, dark brown shoulder-length hair with faded blonde streaks pulled asymmetrically across face. Brushed titanium and dark chrome cyberears with visible microphone arrays and subtle LED pulse indicators dominating visual profile. Black reinforced synthetic thermal-regulation jacket, dark cargo pants with sealed pockets, unmarked steel-toed boots. Silver induction ring on right thumb. Surgical scars barely visible at temples, conductive circuit tattoo glowing faintly at right collarbone. Economical posture, directional head positioning, slight hand tremor. Jacked-in aesthetic, minimal wasted motion. Canopy lighting — neon blue and deep shadow, cybernetic elegance meeting utilitarian function. --ar 2:3 --v 6",
+  "image_prompt": "Kai Malhotra-Fredriksen, 188cm tall lean frame with rawboned efficiency, warm medium bronze skin blending Southeast Asian, South Asian, Latin American, and Eastern European ancestry — high defined cheekbones, angular jaw, dark eyes with subtle epicanthic fold markers. Shoulder-length dark brown hair with blonde fade, pulled back asymmetrically. Pale grey eyes with visible synthetic blood microvasculature. Distinctive brushed titanium and chrome cyberears with directional microphone arrays and pulsing LED indicators. Fine lines around eyes from screen fatigue, thin surgical scars at temples from neural ports, faint glowing circuit tattoo on right collarbone. Black reinforced synthetic jacket, loose cargo pants, steel-toed boots, silver ring on right thumb. GLMZ 2200s aesthetic, standing in neon-lit Great Lakes Metropolitan Zone Canopy district, cool LED lighting casting sharp shadows across angular features, slight tremor in hands suggesting synthetic blood metabolism, posture economical and purposeful, VR-weary elegance, moody urban night atmosphere, dramatic side lighting highlighting temple scars and cyberear detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 27.6,
-    "Middle Eastern": 20.6,
-    "Hispanic/Latin American": 19.3,
-    "Southeast Asian": 18.5,
-    "Northern European": 10.6,
-    "Sub-Saharan African": 3.4
+    "Southeast Asian": 48.4,
+    "South Asian": 25.7,
+    "Hispanic/Latin American": 18,
+    "Eastern European": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 33.7
+      },
+      "Filipino": {
+        "Cebuano": 10.2,
+        "Tagalog": 4.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 25.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 3.9
+      },
+      "South American": {
+        "Argentine": 10.9
+      },
+      "Central American": {
+        "Honduran": 3.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 7.9
+      }
+    }
+  }
 }

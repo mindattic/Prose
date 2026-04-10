@@ -116,7 +116,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Quanta (Φ). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Quanta (Φ). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Culture is globally mixed. There is no dominant ethnicity or monoculture. Names, art, food, music, language — all draw from every human tradition freely blended. "Exotic" has no meaning when everything is heritage.
 
@@ -131,62 +131,62 @@ const CATEGORIES = [
   {
     category: 'book',
     count: 25,
-    prompt: `Generate {count} books (novels, poetry collections, manifestos, banned texts, corporate-approved literature, underground zines) from the world of Meridian 88, created between 2183-2226. Include a mix of: bestselling corporate-published novels, banned revolutionary texts that circulate on the Shelf, poetry collections (some neural-feed optimized, some physical-only), philosophical manifestos about augmentation/identity/consciousness, zines from underground scenes, children's literature for a chrome-and-geneware world. Authors should have globally mixed names (Ubiquitous Diaspora). Some books exist only as neural feed downloads, some as precious physical objects.`
+    prompt: `Generate {count} books (novels, poetry collections, manifestos, banned texts, corporate-approved literature, underground zines) from the world of GLMZ, created between 2183-2226. Include a mix of: bestselling corporate-published novels, banned revolutionary texts that circulate on the Shelf, poetry collections (some neural-feed optimized, some physical-only), philosophical manifestos about augmentation/identity/consciousness, zines from underground scenes, children's literature for a chrome-and-geneware world. Authors should have globally mixed names (Ubiquitous Diaspora). Some books exist only as neural feed downloads, some as precious physical objects.`
   },
   {
     category: 'author',
     count: 15,
-    prompt: `Generate {count} notable authors/writers from Meridian 88, active between 2183-2226. Include: celebrated literary novelists, underground poets, banned revolutionary writers, corporate ghostwriters who went rogue, AI-collaborative authors, zine publishers from the Shelf, spoken-word artists who publish through neural feed. Each author has a distinct voice and cultural significance. Names reflect Ubiquitous Diaspora — globally mixed heritage. Some are household names, some are underground legends.`
+    prompt: `Generate {count} notable authors/writers from GLMZ, active between 2183-2226. Include: celebrated literary novelists, underground poets, banned revolutionary writers, corporate ghostwriters who went rogue, AI-collaborative authors, zine publishers from the Shelf, spoken-word artists who publish through neural feed. Each author has a distinct voice and cultural significance. Names reflect Ubiquitous Diaspora — globally mixed heritage. Some are household names, some are underground legends.`
   },
   {
     category: 'art',
     count: 18,
-    prompt: `Generate {count} notable artworks or art movements from Meridian 88, 2183-2226. Include: famous holographic installations, street art pieces that became legendary, neural-feed art experiences (you feel the art through BCI), corporate-commissioned public works, underground gallery exhibitions, augmented reality murals, bioart using geneware organisms, protest art, graffiti movements, chrome sculpture. Art should feel grounded and specific — not generic cyberpunk.`
+    prompt: `Generate {count} notable artworks or art movements from GLMZ, 2183-2226. Include: famous holographic installations, street art pieces that became legendary, neural-feed art experiences (you feel the art through BCI), corporate-commissioned public works, underground gallery exhibitions, augmented reality murals, bioart using geneware organisms, protest art, graffiti movements, chrome sculpture. Art should feel grounded and specific — not generic near-future.`
   },
   {
     category: 'artist',
     count: 12,
-    prompt: `Generate {count} notable visual artists from Meridian 88, active 2183-2226. Include: famous street artists, holographic sculptors, neural-feed experience designers, underground gallery owners who are also artists, corporate art directors who moonlight as subversive creators, bioartists working with geneware organisms, graffiti legends from the Shelf. Names reflect Ubiquitous Diaspora.`
+    prompt: `Generate {count} notable visual artists from GLMZ, active 2183-2226. Include: famous street artists, holographic sculptors, neural-feed experience designers, underground gallery owners who are also artists, corporate art directors who moonlight as subversive creators, bioartists working with geneware organisms, graffiti legends from the Shelf. Names reflect Ubiquitous Diaspora.`
   },
   {
     category: 'podcast',
     count: 18,
-    prompt: `Generate {count} podcasts/audio shows from Meridian 88, 2183-2226. In 2200, podcasts stream through neural feed or old-school audio. Include: pirate radio shows broadcasting from the Shelf, corporate-sponsored interview programs, underground political commentary, comedy shows, true crime about M88's underworld, tech review shows about new chrome/geneware, philosophy discussions about consciousness and augmentation, storytelling shows, music critique. Some are massive with millions of neural-feed subscribers, some are tiny Shelf operations.`
+    prompt: `Generate {count} podcasts/audio shows from GLMZ, 2183-2226. In 2200, podcasts stream through neural feed or old-school audio. Include: pirate radio shows broadcasting from the Shelf, corporate-sponsored interview programs, underground political commentary, comedy shows, true crime about M88's underworld, tech review shows about new chrome/geneware, philosophy discussions about consciousness and augmentation, storytelling shows, music critique. Some are massive with millions of neural-feed subscribers, some are tiny Shelf operations.`
   },
   {
     category: 'broadcast',
     count: 12,
-    prompt: `Generate {count} broadcast programs/networks/channels from Meridian 88, 2183-2226. These are the major media outlets — corporate news networks, entertainment channels, pirate broadcast stations, emergency information networks, Shelf community radio. Include the dominant corporate media voices AND the underground alternatives. Some broadcast through neural feed, some through legacy audio/video, some through both.`
+    prompt: `Generate {count} broadcast programs/networks/channels from GLMZ, 2183-2226. These are the major media outlets — corporate news networks, entertainment channels, pirate broadcast stations, emergency information networks, Shelf community radio. Include the dominant corporate media voices AND the underground alternatives. Some broadcast through neural feed, some through legacy audio/video, some through both.`
   },
   {
     category: 'festival',
     count: 18,
-    prompt: `Generate {count} festivals and annual cultural events from Meridian 88, 2183-2226. Include: massive corporate-sponsored galas (Spire events, Tier 4-5), underground raves in abandoned Shelf infrastructure, annual street art festivals, music festivals spanning multiple tiers, Shelf community celebrations (harvest festivals for vertical farms, chrome appreciation days), geneware fashion shows, memorial events for historical tragedies, tech expos, food festivals celebrating synth cuisine innovation.`
+    prompt: `Generate {count} festivals and annual cultural events from GLMZ, 2183-2226. Include: massive corporate-sponsored galas (Spire events, Tier 4-5), underground raves in abandoned Shelf infrastructure, annual street art festivals, music festivals spanning multiple tiers, Shelf community celebrations (harvest festivals for vertical farms, chrome appreciation days), geneware fashion shows, memorial events for historical tragedies, tech expos, food festivals celebrating synth cuisine innovation.`
   },
   {
     category: 'event',
     count: 12,
-    prompt: `Generate {count} specific notable one-time cultural events from Meridian 88, 2183-2226. These are moments that everyone remembers — the cultural touchstones. Include: a legendary concert, a controversial art exhibition, a broadcast that changed public opinion, a festival that ended in disaster, a corporate product launch that became a cultural phenomenon, a protest that became legendary, a sporting event everyone watched. Each should have a specific date/year.`
+    prompt: `Generate {count} specific notable one-time cultural events from GLMZ, 2183-2226. These are moments that everyone remembers — the cultural touchstones. Include: a legendary concert, a controversial art exhibition, a broadcast that changed public opinion, a festival that ended in disaster, a corporate product launch that became a cultural phenomenon, a protest that became legendary, a sporting event everyone watched. Each should have a specific date/year.`
   },
   {
     category: 'meme',
     count: 18,
-    prompt: `Generate {count} memes and viral content from Meridian 88's neural feed, 2183-2226. These are things that went viral — catchphrases everyone knows, infamous moments, neural-feed clips that became universal references. Include: corporate PR disasters that became jokes, Shelf slang that went mainstream, viral neural-feed experiences, infamous BCI glitches that everyone references, absurd product failures, political gaffes, underground art that accidentally went corporate. Each should feel like something people actually reference in conversation.`
+    prompt: `Generate {count} memes and viral content from GLMZ's neural feed, 2183-2226. These are things that went viral — catchphrases everyone knows, infamous moments, neural-feed clips that became universal references. Include: corporate PR disasters that became jokes, Shelf slang that went mainstream, viral neural-feed experiences, infamous BCI glitches that everyone references, absurd product failures, political gaffes, underground art that accidentally went corporate. Each should feel like something people actually reference in conversation.`
   },
   {
     category: 'trend',
     count: 12,
-    prompt: `Generate {count} viral trends from Meridian 88's neural feed, 2183-2226. These are behavioral trends, challenges, movements that swept through the population — the equivalent of TikTok trends, social movements, flash mobs. Include: BCI-based experiences people shared, geneware expression challenges, augmentation aesthetics movements, slang evolution, collective neural-feed art projects, protest movements that went viral. Each should have a clear peak year.`
+    prompt: `Generate {count} viral trends from GLMZ's neural feed, 2183-2226. These are behavioral trends, challenges, movements that swept through the population — the equivalent of TikTok trends, social movements, flash mobs. Include: BCI-based experiences people shared, geneware expression challenges, augmentation aesthetics movements, slang evolution, collective neural-feed art projects, protest movements that went viral. Each should have a clear peak year.`
   },
   {
     category: 'fashion',
     count: 20,
-    prompt: `Generate {count} fashion trends/movements from Meridian 88, 2183-2226. These are NOT individual clothing items but cultural movements expressed through clothing and appearance. Include: chrome minimalism (hiding augments under skin-tone covers), chrome maximalism (displaying all chrome proudly), geneware expression movements (tails as fashion, bioluminescent skin patterns), Shelf survival aesthetics that became high fashion, corporate uniform subversion, retro movements (2020s nostalgia), anti-scanning fashion, augment-integrated haute couture. Each trend has a peak period and cultural meaning.`
+    prompt: `Generate {count} fashion trends/movements from GLMZ, 2183-2226. These are NOT individual clothing items but cultural movements expressed through clothing and appearance. Include: chrome minimalism (hiding augments under skin-tone covers), chrome maximalism (displaying all chrome proudly), geneware expression movements (tails as fashion, bioluminescent skin patterns), Shelf survival aesthetics that became high fashion, corporate uniform subversion, retro movements (2020s nostalgia), anti-scanning fashion, augment-integrated haute couture. Each trend has a peak period and cultural meaning.`
   },
   {
     category: 'cuisine',
     count: 20,
-    prompt: `Generate {count} food/drink culture entries from Meridian 88, 2183-2226. Include: famous restaurants (from Shelf street carts to Spire fine dining), signature drinks that define an era, food trends that swept the city, celebrity chefs, street food innovations, synth-cuisine breakthroughs, underground supper clubs, famous bars/lounges, food competitions, cuisine movements. Remember: real ingredients are luxury, synth-protein is baseline. The flavor palette is globally mixed — no single cuisine dominates. Prices in Φ (Quanta).`
+    prompt: `Generate {count} food/drink culture entries from GLMZ, 2183-2226. Include: famous restaurants (from Shelf street carts to Spire fine dining), signature drinks that define an era, food trends that swept the city, celebrity chefs, street food innovations, synth-cuisine breakthroughs, underground supper clubs, famous bars/lounges, food competitions, cuisine movements. Remember: real ingredients are luxury, synth-protein is baseline. The flavor palette is globally mixed — no single cuisine dominates. Prices in Φ (Quanta).`
   },
 ];
 
@@ -214,7 +214,7 @@ async function generateCategory(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate entertainment and cultural entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate entertainment and cultural entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 
@@ -236,7 +236,7 @@ Each entry MUST have exactly these fields:
   "story_hooks": ["array of 2-3 narrative hooks for stories involving this"]
 }
 
-CRITICAL: category must be exactly "${category}". Names must reflect Ubiquitous Diaspora — globally mixed heritage from unexpected combinations. Make entries feel REAL and specific, not generic cyberpunk parody.`;
+CRITICAL: category must be exactly "${category}". Names must reflect Ubiquitous Diaspora — globally mixed heritage from unexpected combinations. Make entries feel REAL and specific, not generic genre parody.`;
 
     const user = `${filledPrompt}
 

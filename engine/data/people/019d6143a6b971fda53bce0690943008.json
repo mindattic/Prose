@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b971fda53bce0690943008",
   "type": "character",
-  "name": "Renata Prempeh",
+  "name": "Renata Shirazi",
   "aliases": [
     "Ula",
     "the Watcher"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Edgewater Prism, GLMZ, near Lincoln and Addison",
-  "description": "Úrsula exists in two worlds simultaneously and is fully present in neither. In the physical world she is a small, quiet Malian-Polish woman who sits in the same ergonomic cradle for ten-hour shifts, tending to the enormous sensory apparatus that Axiom Security has woven across the Edgewater Prism commercial zone. She has cat ears — soft, dark grey, perpetually half-flattened in concentration — from a geneware session eight years ago when she was trying to be someone different. They proved useful: her hearing augments the feed monitoring in ways she can't fully articulate but which her supervisor has noted approvingly in three consecutive performance reviews. Her eyes are the obvious tell that she's mostly elsewhere: a custom iris pattern of concentric amber rings that pulses when she's actively processing deep-monitor feeds, which is most of the time.\n\nIn the surveillance world she knows Edgewater Prism more intimately than anyone who walks its corridors. She has watched the same routes for four years. She knows which delivery contractors move packages that don't match any manifest, which Axiom executives use which maintenance entrances to visit which apartments, which food stall vendor has been systematically overcharging women shopping alone. She has flagged exactly none of this. She has archived all of it in a private encrypted partition she calls, to herself, the museum. She does not know what the museum is for yet.",
+  "description": "Renata Shirazi is fully present in neither. In the physical world she is a small, quiet Malian-Polish woman who sits in the same ergonomic cradle for ten-hour shifts, tending to the enormous sensory apparatus that Axiom Security has woven across the Edgewater Prism commercial zone. She has cat ears — soft, dark grey, perpetually half-flattened in concentration — from a geneware session eight years ago when she was trying to be someone different. They proved useful: her hearing augments the feed monitoring in ways she can't fully articulate but which her supervisor has noted approvingly in three consecutive performance reviews. Her eyes are the obvious tell that she's mostly elsewhere: a custom iris pattern of concentric amber rings that pulses when she's actively processing deep-monitor feeds, which is most of the time.\n\nIn the surveillance world she knows Edgewater Prism more intimately than anyone who walks its corridors. She has watched the same routes for four years. She knows which delivery contractors move packages that don't match any manifest, which Axiom executives use which maintenance entrances to visit which apartments, which food stall vendor has been systematically overcharging women shopping alone. She has flagged exactly none of this. She has archived all of it in a private encrypted partition she calls, to herself, the museum. She does not know what the museum is for yet.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -158,7 +158,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,35 +176,16 @@
   ],
   "related_entities": [
     "Edgewater Prism",
-    "GLMZ",
     "TESSERA TX-8 'Scarecrow'",
     "Waxwing Neuromedia",
     "Chimera-Null",
     "TESSERA TN-1 'Cradle'",
-    "ARCHIVE",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Auricula Felis Modification",
-    "Bogdan Achebe-Svanstrom",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Deku Barrientos-Osei",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Nurlan Morita-Antwi",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Scarecrow",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "SynapTech Prism AR Personal Neural Interface",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Heritage Vault",
-    "Vuk Jorgensen-Toure"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: Sub-Saharan African (32.7%), Hispanic/Latin American (26.2%), Pacific Islander (13.7%), South Asian (10.4%), Southeast Asian (9.3%), Middle Eastern (7.7%). Features reflect this complex global ancestry—warm brown skin with subtle golden and reddish undertones from the blended heritage, fine facial structure showing both African and Asian influence, with warmth from Latin American and Pacific Islander genetics.",
+    "heritage": "Multiethnic diaspora blend: Middle Eastern (34.7%), Hispanic/Latin American (33.2%), Eastern European (21.2%), South Asian (8.0%), East Asian (2.9%). Her ancestry manifests in warm olive-bronze skin with golden undertones from the dominant Middle Eastern and Latin American heritage, tempered by Eastern European coolness and enriched by South Asian depth. Facial structure shows the angular cheekbones of Eastern European genetics softened by the fuller features and warmer tone of Middle Eastern and Latin American bloodlines, with delicate East Asian influences evident in slightly elevated cheekbones and a subtle eye shape that bridges all her heritage strands.",
     "height_cm": 156,
     "weight_kg": 48,
     "build": "Small-framed and slight, with the compressed posture of someone who spends most of their time seated. Shoulders slightly rounded forward from decade of monitor work. Minimal muscle definition but not fragile—economical, efficient physicality.",
@@ -212,8 +193,8 @@
     "hair_style": "Pulled back in a low, practical bun, often with loose strands from the tension of concentration",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Augmented amber with concentric ring pattern; pulses faintly luminescent when processing active feeds",
-    "skin_tone": "Warm honey-brown complexion with subtle golden undertones, reflecting the blended Sub-Saharan African, Latin American, and Pacific Islander ancestry with warm highlights from South Asian and Middle Eastern genetics",
-    "complexion": "Fine-featured face with gently rounded cheekbones showing the influence of Pacific Islander and South Asian heritage blended with African genetics. Observant expression even at rest. Minimal makeup. Dark circles under eyes from shift work and nocturnal monitor focus. Skin condition is clear but slightly pallid from minimal natural light exposure.",
+    "skin_tone": "Warm olive-bronze complexion with golden undertones, reflecting the synergistic blend of dominant Middle Eastern and Hispanic/Latin American ancestry softened and deepened by Eastern European and South Asian genetics",
+    "complexion": "Fine-featured face with gently angular cheekbones showing the balanced influence of Eastern European structure, Middle Eastern warmth, and South Asian softness. Observant expression even at rest. Minimal makeup. Dark circles under eyes from shift work and nocturnal monitor focus. Skin condition is clear but slightly pallid from minimal natural light exposure.",
     "distinguishing_marks": [
       "Surgical implant scar at right temple, roughly 2cm, where retinal feed interface was installed—usually hidden by hairline",
       "Faint subcutaneous glow visible beneath skin at both temples when iris pulses during active monitoring",
@@ -223,17 +204,50 @@
     "posture_movement": "Economical, minimal movement. When seated, she is perfectly still for extended periods—trained discipline. When standing or walking, slight forward head-tilt from years of screen focus. Movements are deliberate, quiet, almost unobtrusive. Her gait is unrushed. Her eyes scan environments systematically even in non-work contexts, cataloging details.",
     "clothing_style": "Tier 3-4 working professional. Plain, high-comfort garments: soft grey or black long-sleeve fitted shirts, often with Axiom Security's subtle shoulder patch. Dark neutral trousers with reinforced pockets for personal terminals. Flat, noiseless shoes (grey or black). Minimal jewelry except a thin braided bracelet in muted colors—possibly handmade or from before augmentation days. Clothing is always clean, slightly worn, chosen for comfort over appearance. A light hoodie or work jacket for the observation deck breaks."
   },
-  "image_prompt": "Renata Prempeh, petite woman with warm honey-brown skin blending Sub-Saharan African, Latin American, and Pacific Islander heritage, seated at a cyberpunk monitoring station in 2226. Dark shoulder-length hair pulled back in practical bun, fine delicate features with gently rounded cheekbones. Augmented amber eyes with concentric ring pattern glowing softly. Soft dark grey feline geneware ears alert and focused. Dark circles beneath eyes from nocturnal work. Wearing plain fitted black long-sleeve shirt with Axiom Security patch, reinforced dark trousers, flat grey shoes. Thin braided bracelet visible. Slight forward posture from years of monitor focus, perfectly still and composed. Subtle subcutaneous glow visible at temples. Background: observation deck with multiple screens casting cool blue light, neon cyberpunk aesthetic, minimal natural light. Clinical, precise, watchful demeanor. Professional tier-3 security operative. Cool neon lighting with warm skin tones, cinematic, high detail --ar 2:3 --v 6",
+  "image_prompt": "Renata Shirazi, 2226 neo-noir security analyst, petite 156cm frame with olive-bronze skin and golden undertones blending Middle Eastern, Latin American, Eastern European, and South Asian heritage. Fine-featured face with angular cheekbones, dark circles from nocturnal work, minimal makeup. Dark brown hair pulled back in practical bun with loose strands. Soft dark grey feline geneware ears that swivel subtly, affect-responsive. Augmented amber eyes with concentric ring pattern, faintly luminescent. Wearing plain grey fitted long-sleeve shirt with Axiom Security patch, dark trousers, flat grey shoes. Thin muted braided bracelet on wrist. Slight forward head-tilt from monitor focus. Seated at observation deck with neon-lit city grid in soft-focus background, cool blue-grey atmospheric lighting emphasizing her pallid complexion against warm gold undertones. Systematic, observant expression. Economical, precise posture. Neo-noir metropolis aesthetic, 2200s corporate security environment, moody and focused. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 32.7,
-    "Hispanic/Latin American": 26.2,
-    "Pacific Islander": 13.7,
-    "South Asian": 10.4,
-    "Southeast Asian": 9.3,
-    "Middle Eastern": 7.7
+    "Middle Eastern": 34.7,
+    "Hispanic/Latin American": 33.2,
+    "Eastern European": 21.2,
+    "South Asian": 8,
+    "East Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 34.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Argentine": 21.8,
+        "Colombian": 5.6
+      },
+      "Caribbean": {
+        "Haitian": 5.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 15
+      },
+      "Slavic South": {
+        "Serbian": 6.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.9
+      }
+    }
+  }
 }

@@ -130,7 +130,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — the QUANTA currency symbol. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — the QUANTA currency symbol. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. There are no distinct ethnic groups — everyone is mixed heritage from unexpected global combinations. Names, cultural practices, and aesthetics blend freely across all traditions. "Exotic" has no meaning when everything is heritage.
 
@@ -147,7 +147,7 @@ const CATEGORIES = [
   {
     category: 'subculture',
     count: 40,
-    prompt: `Generate {count} subcultures and social movements for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} subcultures and social movements for GLMZ (2183-2226). Include:
 - Youth movements (anti-corporate, aug-positive, aug-rejection, identity-fluid)
 - Aug-positive communities (chrome pride, competitive augmentation, body modification circles)
 - Tech-abstinence groups (neo-Luddites, BCI refusers, analog purists, off-grid communes)
@@ -161,7 +161,7 @@ Each must feel like a REAL subculture — with internal politics, fashion marker
   {
     category: 'platform',
     count: 30,
-    prompt: `Generate {count} social media platforms and digital networks for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} social media platforms and digital networks for GLMZ (2183-2226). Include:
 - Neural-feed social networks (BCI-direct content sharing — thoughts, sensations, memories)
 - Image/experience sharing platforms (like Instagram but for neural recordings)
 - Dating platforms (matching by aug compatibility, geneware aesthetic, tier, BCI compatibility)
@@ -174,7 +174,7 @@ Each platform should have a distinct identity, user base, and cultural significa
   {
     category: 'celebrity',
     count: 15,
-    prompt: `Generate {count} celebrities for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} celebrities for GLMZ (2183-2226). Include:
 - Neural-feed stars (people famous for sharing their experiences/emotions via BCI)
 - Corporate spokespeople (the face of corponations — some willing, some contracted)
 - Synthetic celebrities (artificial beings who became famous)
@@ -184,7 +184,7 @@ Each celebrity needs a name reflecting the Ubiquitous Diaspora (mixed heritage f
   {
     category: 'influencer',
     count: 15,
-    prompt: `Generate {count} influencers and underground icons for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} influencers and underground icons for GLMZ (2183-2226). Include:
 - Underground icons (Shelf-famous, street-level legends, never corporate)
 - Aug-fluencers (famous for their chrome modifications and body art)
 - Geneware models (famous for extreme or beautiful genetic modifications)
@@ -195,7 +195,7 @@ Each needs a name reflecting the Ubiquitous Diaspora, a platform/medium, and why
   {
     category: 'phenomenon',
     count: 30,
-    prompt: `Generate {count} urban phenomena for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} urban phenomena for GLMZ (2183-2226). Include:
 - Flash mobs (BCI-coordinated, sometimes political, sometimes just chaos)
 - Ghost markets (pop-up illegal bazaars that appear and vanish — specific famous ones)
 - Pop-up events (temporary experiences — rooftop concerts, abandoned-building galleries, sewer raves)
@@ -208,7 +208,7 @@ Each needs a name reflecting the Ubiquitous Diaspora, a platform/medium, and why
   {
     category: 'tradition',
     count: 15,
-    prompt: `Generate {count} traditions for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} traditions for GLMZ (2183-2226). Include:
 - Corporate-era holidays (mandatory celebration days created by corponations for productivity/morale)
 - Remembrance days (marking disasters, wars, the founding of M88, the Fall of old nations)
 - Shelf community celebrations (grassroots holidays born from Tier 1 culture — raw, genuine, defiant)
@@ -219,7 +219,7 @@ Each tradition should have a specific date or time of year, origin story, and ho
   {
     category: 'holiday',
     count: 15,
-    prompt: `Generate {count} holidays for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} holidays for GLMZ (2183-2226). Include:
 - Official corporate holidays (days off mandated by corponation charters — some genuine, some cynical)
 - Underground holidays (not officially recognized but widely observed on the Shelf)
 - Memorial days for specific events in M88 history (2183-2226)
@@ -230,7 +230,7 @@ Each needs a name, date, origin, and how people actually observe it across tiers
   {
     category: 'slang',
     count: 20,
-    prompt: `Generate {count} slang terms and language trends for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} slang terms and language trends for GLMZ (2183-2226). Include:
 - Shelf-specific slang (Tier 1 expressions, often spreading upward through tiers)
 - Corporate-speak that leaked into common usage (terms that started in boardrooms)
 - Aug-related terminology (slang for types of chrome, augmentation states, glitches)
@@ -243,7 +243,7 @@ Each term needs the word/phrase, definition, usage example, tier of origin, and 
   {
     category: 'conspiracy',
     count: 20,
-    prompt: `Generate {count} conspiracy theories and popular beliefs for Meridian 88 (2183-2226). Include:
+    prompt: `Generate {count} conspiracy theories and popular beliefs for GLMZ (2183-2226). Include:
 - Corponation conspiracies (what people believe corps are secretly doing — some true, some not)
 - Underworld myths (what the deep net supposedly contains or connects to)
 - E.L.F. theories (fears and beliefs about emergent digital life forms)
@@ -285,7 +285,7 @@ async function generateCategory(catDef) {
     const filledPrompt = prompt
       .replace('{count}', batchSize);
 
-    const system = `You generate social and cultural entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate social and cultural entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 
@@ -331,7 +331,7 @@ CRITICAL RULES:
 - IDs must be 32-character lowercase hex strings (like UUIDs without dashes)
 - The currency symbol \u03A6 is QUANTA, never Greek phi
 - All names should reflect the Ubiquitous Diaspora — mixed heritage from unexpected global combinations
-- Make entries feel REAL, grounded, and specific — not generic cyberpunk parody
+- Make entries feel REAL, grounded, and specific — not generic genre parody
 - Span origin years across 2183-2226`;
 
     const user = `${filledPrompt}

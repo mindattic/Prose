@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6807073aae0e7f20a13d56c",
   "type": "character",
-  "name": "Alejandro Calvillo-Bergqvist",
+  "name": "Kofi Mbekele-Larsdóttir",
   "aliases": [
     "Fika",
     "the Frequency"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "The Ferment Quarter, squats in a converted grain elevator called The Silo, near Halsted and Chicago Ave",
-  "description": "Fika is thin as a voltage spike and moves like one — all sudden angles and redirected momentum, never quite still. Their skin is a deep warm brown, and they've had bioluminescent gene-mod patches applied in irregular blotches across their shoulders and collarbones that pulse amber and violet in response to bass frequencies, making them a living visualizer at their own sets. Their hair is locked and dyed in a gradient from root-black to acid yellow, worn piled up in a structure secured with salvaged fiber-optic threads that glow faintly. They dress in layered fabrics, always too many, always asymmetric, like they assembled themselves from lost property.\n\nFika is ferociously passionate about what they call 'pressure music' — sound designed not just to be heard but to be felt in the sternum and the marrow. They're warm and chaotic in person, the kind of presence that makes a room feel slightly more alive, and they have almost no capacity for boredom because they find everything interesting for at least five minutes. What they lack is follow-through on anything that isn't music: bills, promises, appointments. They're not careless with people, just genuinely incapable of prioritizing anything that can't be solved by sound.",
+  "description": "Kofi Mbekele-Larsdóttir is thin as a voltage spike and moves like one — all sudden angles and redirected momentum, never quite still. Their skin is a deep warm brown, and they've had bioluminescent gene-mod patches applied in irregular blotches across their shoulders and collarbones that pulse amber and violet in response to bass frequencies, making them a living visualizer at their own sets. Their hair is locked and dyed in a gradient from root-black to acid yellow, worn piled up in a structure secured with salvaged fiber-optic threads that glow faintly. They dress in layered fabrics, always too many, always asymmetric, like they assembled themselves from lost property.\n\nKofi Mbekele-Larsdóttir is ferociously passionate about what they call 'pressure music' — sound designed not just to be heard but to be felt in the sternum and the marrow. They're warm and chaotic in person, the kind of presence that makes a room feel slightly more alive, and they have almost no capacity for boredom because they find everything interesting for at least five minutes. What they lack is follow-through on anything that isn't music: bills, promises, appointments. They're not careless with people, just genuinely incapable of prioritizing anything that can't be solved by sound.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -178,7 +178,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,37 +226,19 @@
   "related_entities": [
     "The Ferment Quarter",
     "The Marrow Ledger",
+    "Pressure Drop",
+    "The Silo",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Stratum",
-    "The Marrow Exchange",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Stalker",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Déjà Vu",
-    "Nightlight",
     "Chicago",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus Defense Solutions ETF-3 'Mantis'",
-    "Bioacoustic Communication Membrane",
-    "Fanta Kato-Adomako",
-    "Ferrogate Transit",
-    "Helix Biosystems",
-    "Ilhan Sandstrom-Badu",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnenna Boateng-Szymański",
-    "Sorin Ekwensi-Balasanyan",
-    "Suborbital Acoustic Relay Drone SARD-1 'Tuning Fork'",
-    "Tessera Corponation Lymphatic Flush Armature",
-    "The Quiet Room",
-    "The Silo",
-    "The Third Rail",
-    "Vuk Jorgensen-Toure"
+    "The Marrow Exchange",
+    "Déjà Vu",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Nightlight"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend of Hispanic/Latin American, Northern European, Sub-Saharan African, and Middle Eastern ancestry — creating a complex phenotype with warm mid-to-deep brown skin tones, refined facial structure with mixed heritage features, and the fluid grace of polygenic diversity",
+    "heritage": "Complex Ubiquitous Diaspora blend — Sub-Saharan African (28.4%), South Asian (21.2%), Southeast Asian (18.9%), Pacific Islander (18.2%), Hispanic/Latin American (9.8%), and Indigenous American (3.5%). This creates a distinctive phenotype: deep warm brown skin with golden undertones from the African and South Asian base, refined facial structure with high cheekbones and subtle eye shape influenced by Southeast Asian and Pacific Islander genetics, and the fluid graceful proportions reflecting the full global mix.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Wiry and angular, almost ascetic — lean muscle with prominent collarbones and ribcage visible under thin layers. Movement-optimized rather than strength-built, like a tuning fork made of bone and sinew.",
@@ -264,8 +246,8 @@
     "hair_style": "Locked with irregular thickness, piled into a sculptural updo secured with salvaged fiber-optic threads",
     "hair_length": "Long (when loosened, falls past shoulders)",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of blended ancestry showing warmth from Latin and African heritage with subtle complexity from Northern European and Middle Eastern mixing",
-    "complexion": "Clear and unmarked, but dramatically altered by bioluminescent gene-mod patches. Patches appear in irregular organic blotches across shoulders, collarbones, upper chest, and down the inner left arm — they pulse amber and violet in response to bass frequencies, creating a living spectrum analyzer effect. Facial structure shows refined cheekbones and mixed-heritage definition; skin itself is smooth and unblemished, suggesting youth and minimal sun damage; suggests Tier 4 living with access to decent medical care.",
+    "skin_tone": "Deep warm brown with golden undertones — the rich result of Sub-Saharan African, South Asian, and Southeast Asian ancestry creating a unified, luminous base that reads as naturally sun-adapted and genetically complex",
+    "complexion": "Clear and unmarked, but dramatically altered by bioluminescent gene-mod patches. Patches appear in irregular organic blotches across shoulders, collarbones, upper chest, and down the inner left arm — they pulse amber and violet in response to bass frequencies, creating a living spectrum analyzer effect. Facial structure shows refined high cheekbones, mixed-heritage eye shape with subtle depth from Southeast Asian and Pacific Islander genetics, and smooth unblemished skin suggesting youth and access to Tier 4 medical care.",
     "distinguishing_marks": [
       "Bioluminescent gene-mod patches across shoulders and collarbones in asymmetric, organic blotch patterns — reactively glow amber-to-violet in response to bass frequencies",
       "Subvocal comms rig visible as subtle silvered scar-lines along the left side of the neck and jawline, barely noticeable unless light catches them"
@@ -274,15 +256,68 @@
     "posture_movement": "Constantly in motion even when stationary — fingers tap out rhythms on any surface, shoulders micro-shift to internal cadence, head tilts and rolls as if tracking sounds others cannot hear. Movement is sudden and redirected, like current following a circuit. Never quite still; presence commands attention through kinetic energy rather than stillness.",
     "clothing_style": "Tier 4 'salvage aesthetics' — layered in asymmetric combinations of reclaimed fabrics, mismatched textures, sleeveless to showcase bioluminescent patches. Favors oversized synthetic tunics over fitted undersuits, cargo pants with non-functional straps, salvaged tech-wear jackets with torn lining and exposed wiring. Colors are muted (grays, blacks, faded indigo) with occasional high-contrast accents. Footwear is beat-up synth-leather boots with recabled electronics visible in the heel. Overall effect is 'assembled from lost property' — intentional chaos rather than poverty."
   },
-  "image_prompt": "Alejandro Calvillo-Bergqvist, 168cm wiry cyberpunk musician in GLMZ 2226, warm deep brown skin with golden undertones reflecting multiethnic heritage, lean angular build with prominent collarbones. Root-black hair with acid-yellow gradient locked into sculptural updo with fiber-optic threads glowing faint phosphorescence. Deep natural brown eyes. Dramatic bioluminescent bio-mod patches glowing amber-to-violet across bare shoulders, collarbones, and upper chest in organic asymmetric blotches — reactive to bass frequencies. Subtle silvered subvocal comms scar-lines along left neck and jawline. Body in constant kinetic motion, fingers tapping rhythms, shoulders micro-shifting to internal cadence. Wearing layered salvage-aesthetic clothing: oversized muted synthetic tunic, cargo pants with non-functional straps, torn tech-wear jacket with exposed wiring, beat-up synth-leather boots with visible heel electronics. Muted color palette (grays, blacks, faded indigo) with high-contrast accents. Night-club or industrial warehouse setting with bass-reactive ambient lighting, neon glow reflecting off skin and bio-mods, cyberpunk atmosphere, moody and energetic presence, --ar 2:3 --v 6",
+  "image_prompt": "Kofi Mbekele-Larsdóttir, GLMZ, wiry androgynous figure 168cm tall with deep warm brown skin glowing with golden undertones. High cheekbones, refined mixed-heritage Southeast Asian and Pacific Islander eye shape, deep natural brown eyes. Black hair fading to acid yellow, locked and piled into sculptural updo with fiber-optic threads emitting soft phosphorescent glow. Sleeveless to showcase asymmetric bioluminescent gene-mod patches pulsing amber-to-violet across shoulders, collarbones, and upper chest. Wearing oversized gray synthetic tunic layered over dark undersuits, cargo pants with torn tech-wear jacket exposing internal wiring, beat-up synth-leather boots. Subvocal comms scar tracery visible on neck and jawline. Body constantly in kinetic motion, fingers tapping rhythms, shoulders micro-shifting, head tilting as if tracking invisible sound. Urban GLMZ setting, neo-noir warehouse or underground venue with neon backlighting catching the bioluminescent patches. High contrast lighting, gritty salvage aesthetic mood, living spectrum analyzer presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.8,
-    "Northern European": 28.4,
-    "Sub-Saharan African": 23.5,
-    "Middle Eastern": 8.3
+    "Sub-Saharan African": 28.4,
+    "South Asian": 21.2,
+    "Southeast Asian": 18.9,
+    "Pacific Islander": 18.2,
+    "Hispanic/Latin American": 9.8,
+    "Indigenous American": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 28.4
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 3.4,
+        "Bengali": 4.8
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 6.9,
+        "Sindhi": 2.7
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 15.9,
+        "Bicolano": 3
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 12.2
+      },
+      "Polynesian": {
+        "Hawaiian": 6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 1.8,
+        "Quechua": 1.2
+      },
+      "Mesoamerican": {
+        "Nahua": 0.3
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 0.2
+      }
+    }
+  }
 }

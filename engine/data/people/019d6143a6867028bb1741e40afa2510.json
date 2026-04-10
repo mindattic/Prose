@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6867028bb1741e40afa2510",
   "type": "character",
-  "name": "Istas Waboose",
+  "name": "Ash Rattanakorn",
   "aliases": [
     "Ork",
     "The Barber"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Hamtramck Enclave — his shop, 'Sefa's Cut', occupies the ground floor of a residential stack on Corrugated Row, near Kedzie and Division",
-  "description": "Orkhan is a lean, compact man whose age shows mainly in the white that has taken over his close-cropped hair and the deep creases around his eyes — the rest of him is surprisingly wiry, and he moves with the unhurried precision of someone who has been practicing fine motor skills for four decades. His skin is a warm olive that shifts toward bronze under the shop's fluorescent strips. His geneware is a single concession to the era: his fingertips emit a faint blue-white bioluminescence that he had installed purely for practical reasons, so he can work in the dark during power brownouts without disturbing a client mid-cut. He keeps his shop small and deliberately cluttered — photographs pinned to every wall, a secondhand shrine to the Razor ELF in the corner hung with clippings of hair and old razor blades, a samovar that has not been turned off since 2181.\n\nHe has the manner of a confessor without the religion: people tell him things. He does not seek information, he simply creates the conditions in which information cannot help but flow — the warmth of the shop, the meditative rhythm of scissors, the way he asks questions and then waits, genuinely, for the answer. He has outlasted three landlords, two Enclave council administrations, and one attempted Axiom buyout of the block. He considers his continued presence an act of political resistance, though he would never use those words.",
+  "description": "Ash Rattanakorn is a lean, compact man whose age shows mainly in the white that has taken over his close-cropped hair and the deep creases around his eyes — the rest of him is surprisingly wiry, and he moves with the unhurried precision of someone who has been practicing fine motor skills for four decades. His skin is a warm olive that shifts toward bronze under the shop's fluorescent strips. His geneware is a single concession to the era: his fingertips emit a faint blue-white bioluminescence that he had installed purely for practical reasons, so he can work in the dark during power brownouts without disturbing a client mid-cut. He keeps his shop small and deliberately cluttered — photographs pinned to every wall, a secondhand shrine to the Razor ELF in the corner hung with clippings of hair and old razor blades, a samovar that has not been turned off since 2181.\n\nHe has the manner of a confessor without the religion: people tell him things. He does not seek information, he simply creates the conditions in which information cannot help but flow — the warmth of the shop, the meditative rhythm of scissors, the way he asks questions and then waits, genuinely, for the answer. He has outlasted three landlords, two Enclave council administrations, and one attempted Axiom buyout of the block. He considers his continued presence an act of political resistance, though he would never use those words.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -168,7 +168,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,39 +183,19 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Riverbottom",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
     "Cinderblock Ai",
     "Vantablack Media Confessor Tap — 'The Booth'",
     "Bathysphere Networks",
-    "Aslan Vasquez-Chatterjee",
-    "The Gradient Compact",
-    "Switchblade Alley",
-    "Bronze",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Anatoliy Faye-Nkrumah",
-    "Blessing Ó Treasaigh-Nanumea",
-    "Breck Tannen",
-    "Cutter Vane",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Lazarus EC-4 'Companion'",
     "Noir Dining",
-    "Oluwaremilekun Vásárhelyi-Sow",
-    "Orbital Drop Pod",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Quilt",
-    "Stainless Steel",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure",
-    "Witness",
-    "Yusuf Tambadou-Szymański",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "The Gradient Compact",
+    "Bronze",
+    "Corner Slice",
+    "Switchblade Alley",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Indigenous American, Sub-Saharan African, Central Asian, and East Asian ancestry — a complex blending visible in warm deep brown skin with subtle undertones, high cheekbones with broader facial structure, and dark eyes that reflect the convergence of multiple continental lineages",
+    "heritage": "Southeast Asian (45.5%), East Asian (22.3%), Eastern European (17.1%), and Northern European (15.1%) ancestry — a striking convergence visible in warm medium-brown skin with golden undertones, defined cheekbones with balanced facial structure, and dark eyes reflecting the blend of multiple continental lineages",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and compact, wiry muscle beneath loose skin — the frame of someone who has maintained consistent fine motor discipline and light physical labor across decades without bulk",
@@ -223,25 +203,66 @@
     "hair_style": "Close-cropped, precise, slightly longer on top with clean faded sides — a walking advertisement for his own craftsmanship",
     "hair_length": "Short",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Deep warm brown with reddish and golden undertones — rich and complex, reflecting the blending of Indigenous American, Sub-Saharan, Central Asian, and East Asian heritage. Shifts subtly under warm light, never olive, distinctly melanin-rich",
-    "complexion": "Deep creases radiating from the corners of his eyes and across his forehead — not from frowning but from decades of focused work and genuine attention. Fine laugh lines. Skin weathered but well-maintained, warm deep brown throughout, minimal stubble, grooming precise but not vain. Facial structure shows broader cheekbones and slightly wider nose bridge reflecting his diverse ancestry",
+    "skin_tone": "Warm medium-brown with golden and subtle peachy undertones — melanin-rich but lighter than deep brown, reflecting the Southeast Asian and East Asian dominant heritage with Northern and Eastern European moderation. Shifts warmly under light, luminous quality",
+    "complexion": "Deep creases radiating from the corners of his eyes and across his forehead — not from frowning but from decades of focused work and genuine attention. Fine laugh lines. Skin weathered but well-maintained, warm medium-brown throughout with subtle golden luminescence, minimal stubble, grooming precise but not vain. Facial structure shows defined cheekbones and moderate nose bridge reflecting Southeast and East Asian heritage tempered by European ancestry",
     "distinguishing_marks": [
-      "Pale scar tissue across the back of his left hand, thin and straight — old blade accident from early in his career, faded lighter against deep brown skin",
+      "Pale scar tissue across the back of his left hand, thin and straight — old blade accident from early in his career, faded lighter against warm brown skin",
       "Calluses on the inner sides of his fingers and thumbs, pronounced from forty years of scissor work"
     ],
     "visible_augmentations": "Fingertips emit a faint pale blue-white bioluminescence when activated — visible as a subtle glow at the nail beds and cuticle line, most noticeable in dim light or darkness. No other visible chrome or subdermal modifications",
     "posture_movement": "Stands with economical posture, weight balanced evenly. Moves with deliberate, unhurried precision — no wasted motion. When working, his hands move with meditative rhythm and surgical accuracy. In conversation, he has the stillness of someone comfortable with silence; he does not fidget",
     "clothing_style": "Tier 3-4 practical: dark gray or charcoal wool trousers, pressed but worn at the cuff; simple cotton or linen long-sleeve shirts in cream, white, or muted blue — sleeves rolled past the forearm for work. A thin leather apron, creased and darkened with decades of use, draped across his chest. Footwear is functional — scuffed work shoes or slip-ons with good grip on the shop floor. No jewelry except an old stainless steel watch with a worn leather band. A faded cardigan for cooler evenings"
   },
-  "image_prompt": "Istas Waboose, a 168cm lean barber in his 60s with deep warm brown skin reflecting Indigenous American, Sub-Saharan African, Central Asian and East Asian heritage. White hair with dark brown at temples, close-cropped and faded. Dark brown unaugmented eyes. Deep laugh lines and work creases. Wearing cream linen shirt with sleeves rolled to forearms, dark charcoal wool trousers, worn leather apron darkened by decades of use. Pale scar on left hand, pronounced calluses on fingers. Standing in dim barbershop lighting, blue-white bioluminescence subtly glowing at fingertip nail beds. Stillness and meditative precision in posture. Vintage stainless steel watch. Cyberpunk 2226 Great Lakes Metropolitan Zone. Soft tungsten lighting. Professional, weathered, dignified. --ar 2:3 --v 6",
+  "image_prompt": "Ash Rattanakorn, 168cm lean-framed man with warm medium-brown skin and golden undertones, Southeast Asian and East Asian heritage with Northern European undertones visible in facial structure. White hair with dark brown traces at temples, close-cropped with longer top and faded sides. Dark unaugmented brown eyes with deep creases from decades of focused work. Defined cheekbones, moderate nose bridge. Pale scar tissue on left hand, visible calluses on fingers. Wearing cream long-sleeve shirt with rolled forearms, dark charcoal wool trousers, thin weathered leather apron darkened from decades of use. Stainless steel watch with worn leather band. Standing in GLMZ Great Lakes Metropolitan Zone barber shop, warm shop lighting casting subtle glow across his skin. Precise, meditative stillness. Fingertips showing faint pale blue-white bioluminescence at nail beds. High-detail character portrait, moody warm lighting, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 39.5,
-    "Sub-Saharan African": 23.8,
-    "Central Asian": 20.0,
-    "East Asian": 16.7
+    "Southeast Asian": 45.5,
+    "East Asian": 22.3,
+    "Eastern European": 17.1,
+    "Northern European": 15.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 20.2
+      },
+      "Thai": {
+        "Thai": 25.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 15.7
+      },
+      "Chinese": {
+        "Mandarin Northern": 0.8
+      },
+      "Japanese": {
+        "Japanese": 5.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 10.3,
+        "Polish": 6.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 4,
+        "English": 1
+      },
+      "Germanic": {
+        "German": 2.6,
+        "Dutch": 1.5
+      },
+      "Scandinavian": {
+        "Norwegian": 4.3,
+        "Icelandic": 1.7
+      }
+    }
+  }
 }

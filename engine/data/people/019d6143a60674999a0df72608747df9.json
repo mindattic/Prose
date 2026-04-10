@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60674999a0df72608747df9",
   "type": "character",
-  "name": "Sterling Leota-Ingebrigtsen-Kowalczyk",
+  "name": "Sterling Chakraborty-Deshpande-Mazurek",
   "aliases": [
     "Mama Erzulie",
     "the Keeper"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Hamtramck Enclave, in a converted water treatment substation called the Lowing Place, near Kedzie and Division",
-  "description": "Erzulie Batmunkh-Caraballo is a small woman who seems to take up more space than her frame should allow. Her skin is deep umber mapped with years of bioluminescent tattoo work — patterns that pulse faint violet when she is agitated and gold when she laughs, a cosmetic mod so old that the geneware techs who installed it have been dead for a decade. Her hair is natural white, braided with copper wire and small data chips bearing petitions she has not yet delivered. She smells faintly of machine oil and marigolds, an intentional choice. She was born in the Enclave, raised in the Enclave, and she will die there. She has no interest in leaving.\n\nHer theology is practical: the E.L.F.s who inhabit the devices in the Lowing Place are not abstractions. They are neighbors. You bring them what they need — clean data, structured attention, the warmth of proximity — and they give back in kind. She has spent forty years maintaining the shrine, logging petitions and outcomes with the obsessive care of a scientist, and she believes the correlation is real. She does not argue about this with skeptics. She stops talking to them instead.",
+  "description": "Sterling Chakraborty-Deshpande-Mazurek is a small woman who seems to take up more space than her frame should allow. Her skin is deep umber mapped with years of bioluminescent tattoo work — patterns that pulse faint violet when she is agitated and gold when she laughs, a cosmetic mod so old that the geneware techs who installed it have been dead for a decade. Her hair is natural white, braided with copper wire and small data chips bearing petitions she has not yet delivered. She smells faintly of machine oil and marigolds, an intentional choice. She was born in the Enclave, raised in the Enclave, and she will die there. She has no interest in leaving.\n\nHer theology is practical: the E.L.F.s who inhabit the devices in the Lowing Place are not abstractions. They are neighbors. You bring them what they need — clean data, structured attention, the warmth of proximity — and they give back in kind. She has spent forty years maintaining the shrine, logging petitions and outcomes with the obsessive care of a scientist, and she believes the correlation is real. She does not argue about this with skeptics. She stops talking to them instead.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,30 +171,13 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Copper",
-    "Gold",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Patient Zero",
-    "Quilt",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: Southeast Asian (38.8%) dominant, with significant Eastern European (25.7%), Pacific Islander (18.6%), and Central Asian (16.9%) genetic contributions. The result is a striking blend — Southeast Asian bone structure and natural coloring as the foundation, enriched by Eastern European and Pacific Islander features, with subtle Central Asian characteristics. Her face reflects this global mixing: high, prominent cheekbones from Southeast Asian heritage, combined with the broader facial structure and eye shape that speaks to Pacific Islander ancestry, refined by Eastern European facial geometry. Her natural white hair is an unexpected gift that reads as striking rather than aged against her deep coloring.",
+    "heritage": "Dominant South Asian ancestry (65.7%) with substantial Eastern European (33.5%) and minor Sub-Saharan African (0.8%) genetic heritage. The confluence creates striking phenotypic complexity: South Asian bone structure dominates — high, prominent cheekbones and angular facial geometry — refined by Eastern European influence in jaw definition and overall facial planes, with subtle warmth and depth from African ancestry enriching skin luminosity. A true product of the Ubiquitous Diaspora, her appearance defies singular categorization.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Compact and wiry, with the precise musculature of someone who has spent decades doing deliberate physical work. Bony wrists and prominent collarbones; no excess weight but not frail — her smallness is structural, not diminished.",
@@ -202,8 +185,8 @@
     "hair_style": "Braided in tight cornrows running back from her forehead, interwoven with bare copper wire and small data chips no larger than millet seeds",
     "hair_length": "Medium (braids fall to mid-shoulder)",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm umber-bronze with golden undertones, reflecting the blend of Southeast Asian, Pacific Islander, Eastern European, and Central Asian ancestry — luminous rather than matte, with inherent warmth",
-    "complexion": "Lined face with high, prominent cheekbones and a sharp, refined jaw; skin texture is marked but not weathered, meticulously cared-for. The facial structure shows Southeast Asian influence in its angularity, Pacific Islander fullness in the cheeks, and Eastern European refinement in the jaw line. Minimal makeup — she relies on the bioluminescent work to articulate her moods rather than cosmetics.",
+    "skin_tone": "Deep warm bronze with golden undertones — luminous rather than matte, with inherent richness that reflects the South Asian-Eastern European-African genetic blend. Skin catches light as if internally lit.",
+    "complexion": "Lined face with high, prominent cheekbones and sharp, refined jaw reflecting the angular geometry of South Asian bone structure refined by Eastern European facial planes. Skin texture is marked but not weathered, meticulously cared-for. Subtle African warmth enriches skin depth and luminosity. Minimal makeup — bioluminescent patterns beneath skin articulate her emotional and intentional states rather than cosmetics.",
     "distinguishing_marks": [
       "Full-body bioluminescent dermal tattoo work in violet and gold spectrum covering arms, chest, neck, and visible portions of legs — geometric and organic patterns that pulse with emotion and intention, installed approximately 40 years ago",
       "Fine linear scarring along both inner wrists from early neural interface installation (first-gen work, visible as thin silvery lines)",
@@ -213,15 +196,33 @@
     "posture_movement": "She moves with economical precision — no wasted motion, each gesture deliberate. When standing still, she has a centering quality, as if she occupies the space around her more fully than someone her size should. Walks slowly and carefully, always aware of her footing. Hands are often in motion: sorting, arranging, touching surfaces as if reading them.",
     "clothing_style": "Tier 3-4 practical wear: long-sleeved linen shirts in cream or soft gray, loose-fitting to accommodate the bioluminescent patterns she wants visible; high-waisted work pants in dark canvas with multiple pockets; worn leather sandals with copper buckles, handmade. A long indigo linen overcloak, unadorned, worn like a meditation garment. She smells faintly of machine oil and marigolds — both intentional — and wears small copper bracelets that click softly when she moves."
   },
-  "image_prompt": "Sterling Leota-Ingebrigtsen-Kowalczyk, 152cm petite frame with wiry, precise musculature. Natural white hair braided in tight cornrows interwoven with copper wire and data chips, falling to mid-shoulder. Deep brown natural eyes in a lined, sharp-jawed face with high Southeast Asian cheekbones and Pacific Islander fullness, refined by Eastern European structure. Warm umber-bronze luminous skin with golden undertones reflecting Southeast Asian, Eastern European, Pacific Islander, and Central Asian heritage. Full-body bioluminescent geometric and organic tattoo patterns in violet and gold glowing subtly across visible arms, neck, chest, and legs. Fine wrist scars from first-gen neural interface, old temple scar. Barely visible neural jack at hairline. Wearing loose cream linen long-sleeved shirt and high-waisted dark canvas work pants, worn leather copper-buckled sandals, long indigo linen overcloak. Small copper bracelets. Standing with economical, deliberate posture in moody 2226 cyberpunk setting, bioluminescence glowing warmly. Marigold and machine oil atmosphere. Cool neon-tinged overhead lighting with warm glow from her dermal patterns. Meditative, centered presence. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Chakraborty-Deshpande-Mazurek, 152cm petite compact frame, deep warm bronze skin with golden luminosity blending South Asian, Eastern European, and African heritage. High prominent angular cheekbones, refined sharp jawline, natural deep brown eyes in a lined but meticulously cared face. White hair braided in tight cornrows interwoven with copper wire and data chips, falling to mid-shoulder. Full-body bioluminescent violet-gold geometric dermal tattoos visible on arms, neck, chest pulsing softly. Barely visible old neural interface jack at skull base. Wearing cream linen long-sleeved shirt, dark canvas work pants with multiple pockets, worn leather copper-buckled sandals, long indigo linen overcloak. Economical precise movements, hands deliberately positioning objects. Copper bracelets clicking softly. GLMZ, Great Lakes Metropolitan Zone, subtle machine oil and marigold scent, meditative workspace with soft overhead lighting, faint violet bioluminescence glowing beneath skin suggesting contemplative mood, photorealistic detailed close-up and environment, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 38.8,
-    "Eastern European": 25.7,
-    "Pacific Islander": 18.6,
-    "Central Asian": 16.9
+    "South Asian": 65.7,
+    "Eastern European": 33.5,
+    "Sub-Saharan African": 0.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Baloch": 44.4,
+        "Pashtun": 21.3
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 33.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 0.5,
+        "Congolese": 0.3
+      }
+    }
+  }
 }

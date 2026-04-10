@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6797657ae39d63d38c2fb0b",
   "type": "character",
-  "name": "Delta Möller-Sow",
+  "name": "Delta Villanueva-Larsdóttir",
   "aliases": [
     "Oda",
     "Ghostskin"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Pilsen Veil, studio called Second Skin on a street level unit beneath a Helix Biosystems-adjacent medical supply depot, near Halsted and Chicago Ave",
-  "description": "Odalys is the kind of person whose own body is her portfolio, which is either an advertisement or a warning depending on who is looking. She has deep olive skin networked with bioluminescent subdermal patterns — her own design, her own application, done in sections over nine years — that shift between dormant and active based on her emotional state, a feature she installed deliberately and occasionally regrets. Her face is clear of modification by choice, a decision that draws more attention than any further work could. She is medium height, broad-shouldered, moves with the confidence of someone who has spent years being looked at and has made a separate peace with it. Her Ghanaian grandfather's bone structure and her Greek grandmother's coloring produce something the Pilsen Veil regulars call 'aggressively memorable.'\n\nShe does traditional tattoo work, biological geneware application, and bespoke subdermal lighting — the full spectrum from purely cosmetic to emotionally interactive, like her own reactive network. She is meticulous, unhurried, and has a waiting list of four months that she has never tried to shorten. Her reputation is built on two things: technical excellence and the refusal to apply any design she finds spiritually wrong for the client, a policy that generates one furious argument per month and one deeply grateful client per month and she considers this an acceptable ratio.",
+  "description": "Delta Villanueva-Larsdóttir is the kind of person whose own body is her portfolio, which is either an advertisement or a warning depending on who is looking. She has deep olive skin networked with bioluminescent subdermal patterns — her own design, her own application, done in sections over nine years — that shift between dormant and active based on her emotional state, a feature she installed deliberately and occasionally regrets. Her face is clear of modification by choice, a decision that draws more attention than any further work could. She is medium height, broad-shouldered, moves with the confidence of someone who has spent years being looked at and has made a separate peace with it. Her Ghanaian grandfather's bone structure and her Greek grandmother's coloring produce something the Pilsen Veil regulars call 'aggressively memorable.'\n\nShe does traditional tattoo work, biological geneware application, and bespoke subdermal lighting — the full spectrum from purely cosmetic to emotionally interactive, like her own reactive network. She is meticulous, unhurried, and has a waiting list of four months that she has never tried to shorten. Her reputation is built on two things: technical excellence and the refusal to apply any design she finds spiritually wrong for the client, a policy that generates one furious argument per month and one deeply grateful client per month and she considers this an acceptable ratio.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,32 +172,16 @@
     "Helix Biosystems",
     "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
     "Pilsen Veil",
-    "Helix Cortex Laminate — 'The Second Skin'",
     "The CEO",
     "Grandmother",
-    "Pellucid Systems",
-    "Elena Vasquez-9",
+    "Helix Cortex Laminate — 'The Second Skin'",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Street Custom 'Glass Garden' Caltrops",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Glass Garden",
-    "The Pure Hand",
-    "Vantablack VS-3 'Skin Job'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Pellucid Systems",
+    "Elena Vasquez-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (41.5%, primary), Northern European (31.9%), Southeast Asian (24.9%), with minor Hispanic/Latin American admixture (1.7%). Genetic heritage creates striking phenotype: warm deep brown skin with subtle golden and olive undertones from African and Southeast Asian ancestry; high architectural cheekbones and defined jawline from Sub-Saharan lineage; eye shape shows Southeast Asian influence alongside African genetics.",
+    "heritage": "Southeast Asian (35.2%, primary), Hispanic/Latin American (30.6%), East Asian (15.3%), Northern European (14.1%), with minor South Asian and Eastern European admixture (2.4% each). Genetic heritage creates a striking cosmopolitan phenotype: warm medium-to-deep brown skin with golden, olive, and amber undertones from the Southeast Asian, Hispanic, and East Asian ancestry blending; high architectural cheekbones and defined jawline reflecting Southeast Asian and Hispanic features; eye shape shows East Asian influence with warm-toned irises; overall complexion luminous and warm-toned.",
     "height_cm": 168,
     "weight_kg": 68,
     "build": "Broad-shouldered and athletic without bulk; the build of someone who moves deliberately and spends hours in focused physical work. Strong forearms and steady hands.",
@@ -205,8 +189,8 @@
     "hair_style": "Worn loose or in a high knot depending on work phase; deliberately unadorned",
     "hair_length": "Medium (shoulder-length when down)",
     "eye_color": "Left eye: cat-pupil iris modification (custom amber with vertical slit pupil); right eye: warm dark brown, unmodified",
-    "skin_tone": "Warm deep brown with golden and subtle olive undertones—the result of African, Southeast Asian, and Northern European ancestry blending into a luminous complexion that seems to absorb and reflect light differently depending on angle",
-    "complexion": "Clear, unmarked face by choice—a deliberate statement in her field. High cheekbones from Sub-Saharan ancestry, defined jawline. Slight eye shape influence from Southeast Asian genetics creates subtle almond quality. Skin shows meticulous care; no cosmetic facial work. Expression tends toward focused calm interrupted by sudden intensity.",
+    "skin_tone": "Warm medium-to-deep brown with golden, amber, and olive undertones—the result of Southeast Asian, Hispanic/Latin American, and East Asian ancestry blending into a luminous, sun-kissed complexion that seems to absorb and reflect light dynamically",
+    "complexion": "Clear, unmarked face by choice. High cheekbones with Southeast Asian and Hispanic architectural influence, defined jawline. Eye shape shows East Asian genetics creating subtle almond quality. Skin shows meticulous care; no cosmetic facial work. Expression tends toward focused calm interrupted by sudden intensity.",
     "distinguishing_marks": [
       "Full-body bioluminescent subdermal network visible beneath skin in geometric and organic patterns that shift between dormant (barely visible under certain light) and active (soft cyan-to-violet glow that pulses with emotional state); network spans shoulders, arms, torso, legs in her own design, applied over nine years in sections",
       "Network is densest across shoulders and upper back, creating an impression of living circuitry beneath the surface",
@@ -216,15 +200,74 @@
     "posture_movement": "Moves with measured confidence and economy—no wasted motion. Hands are expressive and precise, often unconsciously demonstrating potential work on the air. Maintains steady eye contact (the asymmetry of her gaze is deliberate and used strategically). Stands with weight balanced, shoulders back. When working, enters a state of absolute focus that creates a palpable boundary around her workspace.",
     "clothing_style": "Tier 3-4 working artist aesthetic: fitted black or charcoal technical fabrics that show off her bioluminescent network without being ostentatious about it; sleeveless or short-sleeved to display arm work. Precision-tailored; no excess. Frequently wears a worn linen apron over her clothes during work hours—an affectation that reads as both practical and performative. Boots with good grip. Minimal jewelry (she is the jewelry). No corporate branding; all her clothing is either independent maker or salvaged/tailored. A single silver band on her right ring finger—old, possibly inherited."
   },
-  "image_prompt": "Delta Möller-Sow, 168cm tall athletic artist with luminous deep warm brown skin—Sub-Saharan African, Northern European, and Southeast Asian blend—in cyberpunk 2226 Great Lakes Metropolitan Zone. High cheekbones, defined jawline, almond-shaped eyes with asymmetrical left iris: cat-pupil modification in custom amber with vertical slit, right eye warm dark brown. Shoulder-length deep brown hair worn loose. Sleeveless fitted charcoal technical fabric top showing bioluminescent subdermal network across shoulders, arms, torso—geometric and organic patterns in soft cyan-to-violet glow pulsing with emotion, densest across upper back like living circuitry. Precise hand movements, faint tool-grip scarring at palms. Worn linen apron over clothes, grip boots, single silver band on right ring finger. Stands with balanced weight, shoulders back, in state of absolute work focus. Measured confident economy of movement. Cyberpunk workshop setting, precision-tailored minimal aesthetic, independent maker aesthetic, no corporate branding. Moody focused intensity, steady gaze. Bioluminescent glow illuminating workspace in dramatic cyan-violet ambient lighting. --ar 2:3 --v 6",
+  "image_prompt": "Delta Villanueva-Larsdóttir, a Southeast Asian-Latina-East Asian mixed heritage woman in the year 2226, luminous warm medium-deep brown skin with golden and olive undertones, high cheekbones and defined jawline, shoulder-length deep brown hair worn loose, striking asymmetrical gaze with one cat-pupil amber iris modification with vertical slit and one warm brown eye. Sleeveless fitted black technical fabrics displaying full-body bioluminescent subdermal network glowing soft cyan-to-violet geometric patterns across shoulders, arms, and torso, network densest on upper back creating living circuitry effect. Worn linen work apron over clothing. 168cm tall, athletic broad-shouldered build, measured confident posture with expressive hands showing subdermal tool-grip reinforcement. Single silver band on right ring finger. GLMZ 2200s working artist aesthetic, focused calm expression with sudden intensity, standing in studio workspace with strategic backlighting revealing bioluminescent patterns, moody cyan and warm practical lighting, dystopian Great Lakes Metropolitan Zone setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 41.5,
-    "Northern European": 31.9,
-    "Southeast Asian": 24.9,
-    "Hispanic/Latin American": 1.7
+    "Southeast Asian": 35.2,
+    "Hispanic/Latin American": 30.6,
+    "East Asian": 15.3,
+    "Northern European": 14.1,
+    "South Asian": 2.4,
+    "Eastern European": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Waray": 35.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 4.2
+      },
+      "Central American": {
+        "Nicaraguan": 4.1
+      },
+      "Mexican": {
+        "Mexican": 22.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 9.9
+      },
+      "Korean": {
+        "Korean": 3.1
+      },
+      "Japanese": {
+        "Japanese": 2.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 14.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.8
+      },
+      "Indian": {
+        "Bengali": 1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 1.4
+      },
+      "Slavic South": {
+        "Slovenian": 0.2
+      },
+      "Slavic East": {
+        "Ukrainian": 0.5,
+        "Russian": 0.3
+      }
+    }
+  }
 }

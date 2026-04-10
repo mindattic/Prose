@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ae7d888d2414e497ab624d",
   "type": "character",
-  "name": "Zara Holm-Calvillo",
+  "name": "Zara Pathak-Popescu",
   "aliases": [
     "Raz",
     "Razvan the Resinous"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Alban Souk, Copperhead, near Halsted and Chicago Ave",
-  "description": "Razvan is tall and languid with warm brown skin, a generous nose, and long fingers that are perpetually stained faint green-brown from their work with plant matter and synthesis compounds. Their hair is grown long and kept in thick, loose coils dyed deep forest green — a permanent gene-dye job they refresh every two years. They wear a worn canvas apron covered in small pockets over layered thrift-store clothing, and their stall is a magnificent, chaotic installation of hanging dried plants, labeled glass jars, handwritten signs in four scripts, and a small humming cold-storage unit for the compounds that need it. At the stall's center hangs an intricate woven E.L.F. net — a traditional Copperhead offering structure — for the spirit Razvan calls Vessel, whom they believe governs transformation and the passing of one state into another.\n\nRazvan operates in the grey legal space between licensed pharmacy (which they are not) and herbalism (which they technically are). They can read your symptoms by watching you walk up, and their stock ranges from grandmother-tested plant tinctures to synthesized compounds that would cost six times as much at a Zheng-Dao medkiosk. They are unhurried, gently sardonic, and possess a nearly preternatural calm that people find either deeply comforting or faintly unnerving. They see a great deal of human suffering in small doses every day and have developed a philosophy about it that they will share with you if you seem like you can handle it.",
+  "description": "Zara Pathak-Popescu is tall and languid with warm brown skin, a generous nose, and long fingers that are perpetually stained faint green-brown from their work with plant matter and synthesis compounds. Their hair is grown long and kept in thick, loose coils dyed deep forest green — a permanent gene-dye job they refresh every two years. They wear a worn canvas apron covered in small pockets over layered thrift-store clothing, and their stall is a magnificent, chaotic installation of hanging dried plants, labeled glass jars, handwritten signs in four scripts, and a small humming cold-storage unit for the compounds that need it. At the stall's center hangs an intricate woven E.L.F. net — a traditional Copperhead offering structure — for the spirit Zara Pathak-Popescu calls Vessel, whom they believe governs transformation and the passing of one state into another.\n\nZara Pathak-Popescu operates in the grey legal space between licensed pharmacy (which they are not) and herbalism (which they technically are). They can read your symptoms by watching you walk up, and their stock ranges from grandmother-tested plant tinctures to synthesized compounds that would cost six times as much at a Zheng-Dao medkiosk. They are unhurried, gently sardonic, and possess a nearly preternatural calm that people find either deeply comforting or faintly unnerving. They see a great deal of human suffering in small doses every day and have developed a philosophy about it that they will share with you if you seem like you can handle it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -153,7 +153,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,43 +169,28 @@
   ],
   "related_entities": [
     "The Alban Souk",
-    "Copperhead",
     "Grandmother",
+    "Copperhead",
     "Zheng-dao Bioelectric",
     "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Stratum",
-    "Palette",
-    "Glass",
-    "Arcturus CK-5 'Bloodhound'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Chicago",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus HW-1 'Goliath'",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Helix Biosystems",
-    "Hough Reclamation",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Slagworks Industrial",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Coffin Nails",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Reclamation Assembly",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Glass",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Southeast Asian, Middle Eastern, Sub-Saharan African, and South Asian—a complex diaspora blend. Warm medium brown skin with golden undertones reflecting the convergence of multiple equatorial and subtropical ancestries. Features show the influence of all five genetic sources: generous nose and high cheekbones with subtle Southeast Asian eye shape, warm amber-brown eyes with darker iris rings, full lips with Middle Eastern and African heritage characteristics.",
+    "heritage": "South Asian, Eastern European, Sub-Saharan African, Pacific Islander, and Central Asian—a complex diaspora blend reflecting the Ubiquitous Diaspora. The genetic convergence creates a warm medium-to-deep brown skin tone with golden undertones, where the dominant South Asian ancestry (38.1%) provides foundational structure, Eastern European heritage (28.8%) adds subtle cool undertones to cheekbones and orbital bones, Sub-Saharan African ancestry (21.9%) contributes to lip fullness and nasal width, Pacific Islander genes (8.6%) influence broader facial planes and softer feature blending, and Central Asian ancestry (2.6%) adds minor refinement to eye shape. Features reflect this intricate genetic mosaic: high, pronounced cheekbones with a blend of South Asian angularity and Eastern European prominence, a generously-proportioned nose with Sub-Saharan African width and South Asian bridge definition, warm deep brown eyes with darker iris rings, and full lips showing Sub-Saharan African and South Asian heritage balanced by the softer geometry of Pacific Islander ancestry.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Tall and languid with lean musculature; long-limbed and graceful, moving with unhurried fluidity. Fingers noticeably elongated and dexterous from years of precise synthesis and plant handling.",
     "hair_color": "Deep forest green (permanent gene-dye, refreshed biennially)",
     "hair_style": "Thick coils worn loose and shoulder-length, often gathered with twine or copper wire during work",
     "hair_length": "Long",
-    "eye_color": "Warm amber-brown, with faint ring of darker brown at iris edge",
-    "skin_tone": "Warm medium brown with golden undertones; rich melanization across all ancestry groups present in their genetic profile",
-    "complexion": "Clear, unlined face with generous nose and high cheekbones reflecting Southeast Asian and Middle Eastern structure blended with Sub-Saharan and South Asian features. Perpetually faint green-brown staining on fingertips and the webbing between fingers from plant matter and synthesis compounds. Nails kept trimmed and slightly calloused at cuticles from daily handling of dried botanicals.",
+    "eye_color": "Warm deep brown with faint ring of darker brown at iris edge",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones; rich melanization reflecting the balanced blend of South Asian base, Eastern European cool accents at high points, Sub-Saharan African warmth, and Pacific Islander softness",
+    "complexion": "Clear, unlined face with high cheekbones showing Eastern European and South Asian bone structure prominence, and a generously-proportioned nose blending Sub-Saharan African width with South Asian bridge definition. Perpetually faint green-brown staining on fingertips and the webbing between fingers from plant matter and synthesis compounds. Nails kept trimmed and slightly calloused at cuticles from daily handling of dried botanicals.",
     "distinguishing_marks": [
       "Fine, barely-visible linear scarring across the inner left forearm where the biochemical sensor strip was embedded — approximately 8cm long, pale against their skin tone"
     ],
@@ -213,16 +198,68 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion. When standing at rest, weight balanced evenly with a slight forward cant from years of leaning over the synthesis table. Gestures are precise and controlled; hands move through space with the confidence of someone accustomed to delicate work. Eyes track customers with quiet assessment before engaging. Overall bearing conveys unhurried calm and deep presence.",
     "clothing_style": "Worn canvas apron with multiple small sewn pockets, stained with dried plant residue and synthesis marks, worn over layered thrift-store pieces: faded botanical-print long-sleeve shirts, oversized cardigans in earth tones, patched cargo pants in neutral colors. Practical Tier 3-4 working-class aesthetic with deliberate bohemian touches. Copper wire, twine, and occasional brass findings woven into hair. Barefoot or wearing scuffed leather sandals at the stall."
   },
-  "image_prompt": "Cyberpunk 2226, Zara Holm-Calvillo, a tall graceful figure with deep forest green coiled hair at shoulder-length, warm medium-brown skin with golden undertones reflecting mixed Hispanic/Latin American, Southeast Asian, Middle Eastern, Sub-Saharan African and South Asian heritage. Warm amber-brown eyes with dark iris rings, generous nose and high cheekbones. Lean muscular build, 188cm tall, moving with economical precision. Wearing worn canvas apron stained with plant residue over faded botanical-print layered shirts and patched cargo pants in earth tones. Copper wire and twine woven through hair. Green-brown botanical staining visible on fingertips and between fingers. Thin glimmering biotech nodule visible on inner left forearm. Standing at synthesis stall in Great Lakes Metropolitan Zone, quiet presence, precise hand gestures, unhurried calm bearing, warm indoor bioluminescent and natural light, bohemian working-class aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Zara Pathak-Popescu, tall mixed-heritage botanist in GLMZ, warm medium-deep brown skin with golden undertones blending South Asian, Eastern European, Sub-Saharan African, Pacific Islander, and Central Asian features. High cheekbones with East European prominence, generous nose with Sub-Saharan width and South Asian bridge, deep brown eyes with dark iris rings, full lips. Shoulder-length thick forest green coils loosely gathered with copper wire and twine. Barefoot or in scuffed leather sandals, wearing stained canvas apron over faded botanical-print shirt and oversized earth-tone cardigan, patched neutral cargo pants. Hands show permanent green-brown plant staining, calloused cuticles. Deliberate graceful posture with slight forward cant, standing at synthesis table. Subtle pale linear scar on inner left forearm, faint bioluminescent biotech nodule beneath skin. Warm atmospheric lighting in botanical stall, calm unhurried presence, practical bohemian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 29.4,
-    "Southeast Asian": 21.7,
-    "Middle Eastern": 18.9,
-    "Sub-Saharan African": 17.9,
-    "South Asian": 12.1
+    "South Asian": 38.1,
+    "Eastern European": 28.8,
+    "Sub-Saharan African": 21.9,
+    "Pacific Islander": 8.6,
+    "Central Asian": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Tamil": 8.6,
+        "Malayali": 23.4
+      },
+      "Pakistani": {
+        "Baloch": 6.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 25.5
+      },
+      "Slavic South": {
+        "Slovenian": 0.7
+      },
+      "Magyar-Romanian": {
+        "Romanian": 1.5,
+        "Hungarian": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 13.7
+      },
+      "East African": {
+        "Tanzanian": 7
+      },
+      "Southern African": {
+        "South African": 1.2
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 1.8,
+        "Hawaiian": 4
+      },
+      "Melanesian": {
+        "Papua New Guinean": 2.8
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Turkmen": 1.2,
+        "Kazakh": 0.9
+      },
+      "Mongolic": {
+        "Mongolian": 0.5
+      }
+    }
+  }
 }

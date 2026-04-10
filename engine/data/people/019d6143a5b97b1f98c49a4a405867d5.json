@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b97b1f98c49a4a405867d5",
   "type": "character",
-  "name": "Dagny Haugen",
+  "name": "Pavel Zidane",
   "aliases": [
     "Nita",
     "Windwalker"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Escanaba Gateway, upper docking platforms, near Michigan Ave South and Cermak",
-  "description": "Awinita is lean and restless in the way of people who have never had a fixed address — she holds her weight on the balls of her feet as though ready to step onto a gangway at any moment, and her eyes track movement at the edges of rooms before settling on the person in front of her. Her hair is natural and enormous, kept controlled with a series of bright synthetic wraps she's collected from every port city she's touched, so her head is a kind of geography of her travels. Her skin is deep brown, her hands calloused from line-work, and she has geneware bioluminescent tattoo lines running from her wrists to her elbows — cargo certification marks issued by three different airship consortia, each glowing a different color, the whole thing an improvised credential system that means something to dock workers and nothing to anyone else.\n\nShe is loud in the way of people who've spent years competing with engine noise, laughing easily and arguing with the same volume. She has strong opinions about load distribution, ELF propitiation rituals for airship spirits, and which Escanaba Gateway food stalls are worth the queue. She is deeply uncomfortable indoors for extended periods and sleeps best when she can feel air movement. Beneath the easy loudness she carries a careful loneliness — she has friends in every port and close friends in none, and she has started to notice.",
+  "description": "Pavel Zidane is lean and restless in the way of people who have never had a fixed address — she holds her weight on the balls of her feet as though ready to step onto a gangway at any moment, and her eyes track movement at the edges of rooms before settling on the person in front of her. Her hair is natural and enormous, kept controlled with a series of bright synthetic wraps she's collected from every port city she's touched, so her head is a kind of geography of her travels. Her skin is deep brown, her hands calloused from line-work, and she has geneware bioluminescent tattoo lines running from her wrists to her elbows — cargo certification marks issued by three different airship consortia, each glowing a different color, the whole thing an improvised credential system that means something to dock workers and nothing to anyone else.\n\nShe is loud in the way of people who've spent years competing with engine noise, laughing easily and arguing with the same volume. She has strong opinions about load distribution, ELF propitiation rituals for airship spirits, and which Escanaba Gateway food stalls are worth the queue. She is deeply uncomfortable indoors for extended periods and sleeps best when she can feel air movement. Beneath the easy loudness she carries a careful loneliness — she has friends in every port and close friends in none, and she has started to notice.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -156,7 +156,7 @@
     "Grudge Holder": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,28 +175,11 @@
     "ShieldTech Enforcer DM-4 'Crossover'",
     "The Gradient Compact",
     "The Pure Hand",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "Bintou Halvorsen-Osei",
-    "Deku Barrientos-Osei",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Enforcer Cruiser",
-    "GLMZ",
-    "Lazarus Pharmaceuticals",
-    "Malika Zhukov-Wiredu",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "Synaptic Drift Emitter SDE-4 'Lullaby'",
-    "Synaptrel",
-    "The Compact",
-    "The Meridian Drift",
-    "Veslemøy Achebe-Tursynov"
+    "Cargo Tacos"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "North African Berber and Arab (43%), Northern European (29%), and Indigenous American (28%)—a striking blend manifesting in warm deep brown skin with subtle golden undertones, strong angular facial structure with high cheekbones, and the distinctive eye shape and hair texture from her diverse ancestry",
+    "heritage": "North African Berber (58%) with Eastern European (28.2%), Northern European (7.2%), Middle Eastern (4.5%), and Central Asian (2.1%)—a striking polyglot ancestry manifesting in deep warm brown skin with subtle golden undertones, strong angular facial structure with prominent high cheekbones, and eye shape reflecting the Maghrebi and Eastern Mediterranean ancestry dominant in her genetic profile",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and ropy, all compact muscle from years of cargo handling. Shoulders broad relative to frame, forearms corded. The kind of body that moves efficiently rather than powerfully — built for endurance on swaying deck platforms, not raw strength.",
@@ -204,8 +187,8 @@
     "hair_style": "Voluminous natural texture, high-crowned and controlled only by the wraps; escapes in tight ringlets around her face and neck",
     "hair_length": "Long (shoulder-length when unwrapped, fuller when textured out)",
     "eye_color": "Deep brown, alert and perpetually tracking peripheral movement",
-    "skin_tone": "Deep warm brown with golden undertones from North African heritage, layered with subtle warmth from Indigenous American ancestry",
-    "complexion": "Sun-weathered from deck exposure, clear skin showing no acne or damage despite years outdoors. Strong angular jawline with high prominent cheekbones, wide-set eyes with distinctive upper eyelid shape reflecting North African and Indigenous ancestry blend, full lips with natural darker pigmentation. Calloused patches on the heels of her palms visible when hands are relaxed.",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting the dominant North African ancestry with subtle warmth layered from Eastern European and Central Asian heritage",
+    "complexion": "Sun-weathered from deck exposure, clear skin showing no acne or damage despite years outdoors. Strong angular jawline with high prominent cheekbones, wide-set eyes with the upper eyelid shape characteristic of North African and Eastern Mediterranean ancestry, full lips with natural darker pigmentation. Calloused patches on the heels of her palms visible when hands are relaxed.",
     "distinguishing_marks": [
       "Bioluminescent geneware tattoo lines running from both wrists to elbows in three distinct colors: cyan (Cirrus Compact certification), amber (older West Harbor Collective mark, fading), and violet (Duluth Independent Handlers Union), each glowing faintly in darkness",
       "Thin white scar across the back of her left hand, approximately 3cm, from a mooring line snap two years ago",
@@ -215,14 +198,57 @@
     "posture_movement": "Perpetually ready to shift weight forward; stands on the balls of her feet even at rest. Eyes scan room edges before settling on conversation partner. Moves with economical precision—no wasted motion—but with restless energy, fingers often fidgeting with rope knots, wraps, or cargo manifest tablets. Her default state is coiled rather than relaxed.",
     "clothing_style": "Tier 3-4 practical drifter wear: well-maintained but weathered. Oversized cargo vest in faded charcoal with multiple deep pockets and reinforced seaming, worn over a fitted long-sleeved compression shirt in muted blue (sweat-wicking, functional). Heavy canvas work pants with cargo loops, cuffed at ankles, patched twice in slightly mismatched fabric. Worn but serviceable ankle-high boots with grip-enhanced soles. A faded Cirrus Compact union pin on her vest collar. Jewelry minimal—a thin silver bracelet on her right wrist (port gift, meaning unknown), no other adornment."
   },
-  "image_prompt": "Dagny Haugen, 2226 cyberpunk drifter, 168cm lean muscular frame with rich warm deep brown skin glowing with golden undertones from North African Berber and Indigenous American heritage. Striking angular high cheekbones, wide-set deep brown eyes with alert tracking gaze, full lips. Natural voluminous textured black hair in long ringlets escaping from neon cyan, hot pink, acid green and silver synthetic wraps—a mobile map of port routes. Sun-weathered clear complexion, strong jawline. Wearing faded charcoal oversized cargo vest over muted blue compression shirt, heavy canvas patched work pants, worn grip-enhanced boots. Bioluminescent geneware tattoo lines on wrists and forearms cycling cyan, amber, and violet—Cirrus Compact certification marks. Reinforced grip augmentation visible as oxidized metallic webbing across palms and fingers. Thin scar on left hand, burn mark on right forearm. Standing coiled and ready on balls of feet, fingers fidgeting with rope, perpetually scanning edges of environment. Port city night setting with dockside cargo containers and bioluminescent ambient lighting casting shadows across her facial features, emphasizing her strong ancestry-blend structure. Mood: restless, capable, drifter-weary but alert. Cyberpunk 2200s Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Pavel Zidane, 168cm lean drifter with deep warm brown skin and golden undertones, strong angular cheekbones and wide-set brown eyes. Voluminous natural black hair with neon cyan, hot pink, acid green and silver synthetic wraps escaping in tight ringlets. Bioluminescent geneware tattoo lines glowing faintly on wrists to elbows in cyan, amber and violet. Worn Tier 1 reinforced grip augmentation visible as oxidized metallic webbing across palms. Faded charcoal cargo vest over blue compression shirt, heavy canvas work pants, worn ankle boots. Standing on balls of feet in perpetually coiled posture, restless energy, fingers fidgeting. Sun-weathered complexion, calloused hands, thin white scar on left hand back, quarter-sized burn mark on right forearm. GLMZ Great Lakes Metropolitan Zone docks at night, neon port lights reflecting off wet cargo platforms, rain-slicked deck beneath her feet, gritty industrial setting with shipping containers and mooring lines, dramatic side-lighting emphasizing her tattoo glow and augmentation, moody and alert expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 43.1,
-    "Northern European": 28.7,
-    "Indigenous American": 28.2
+    "North African": 58,
+    "Eastern European": 28.2,
+    "Northern European": 7.2,
+    "Middle Eastern": 4.5,
+    "Central Asian": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 32.2,
+        "Sudanese": 25.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 3.3,
+        "Bosnian": 9.7
+      },
+      "Magyar-Romanian": {
+        "Romanian": 4.9,
+        "Hungarian": 2.2
+      },
+      "Slavic West": {
+        "Sorbian": 7.5,
+        "Polish": 0.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 7.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 2,
+        "Jordanian": 2.5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 1.6
+      },
+      "Iranian Central": {
+        "Hazara": 0.5
+      }
+    }
+  }
 }

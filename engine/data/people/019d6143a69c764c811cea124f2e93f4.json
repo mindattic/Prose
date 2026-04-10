@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Grand Corridor, Ringo Consumer Logistics Processing Campus, QA Division Block C",
-  "description": "Piotr Asante-Mbeki is medium height, medium build, medium everything on purpose — he discovered early that being forgettable at work was a form of protection, and he has refined it into an art. His skin is a warm medium brown, his hair is kept close-cropped with no mods, his work clothes are always within Ringo's corporate palette of grey-teal without being fashionable. His one visible geneware mod is a cat tail, burnt-orange with a black tip, which he got at twenty-two for reasons he'd describe as 'a moment of optimism' and which he's kept because removal costs three months of UBC supplemental and also because he's attached to it in ways he won't discuss. The tail moves with his moods in ways he can't fully control. His coworkers have learned to read it like a weather system.\n\nHe has worked QA at Ringo for nine years. He is not passionate about quality assurance. He is, however, deeply curious about the things that are wrong — not as a professional concern but in the way a person follows a crack in the ceiling, wondering where it leads. He has a gift for finding errors that aren't supposed to be findable and a corresponding instinct to not always report them immediately, to sit with them first and understand their shape. He reads a lot. He is polite to everyone. He has four close friends and would die before admitting how much he values them. He prays to the QA division's resident ELF — a twitchy spirit called Margin who lives in the error-logging system — more than he prays to anything else.",
+  "description": "Koffi Tamale is medium height, medium build, medium everything on purpose — he discovered early that being forgettable at work was a form of protection, and he has refined it into an art. His skin is a warm medium brown, his hair is kept close-cropped with no mods, his work clothes are always within Ringo's corporate palette of grey-teal without being fashionable. His one visible geneware mod is a cat tail, burnt-orange with a black tip, which he got at twenty-two for reasons he'd describe as 'a moment of optimism' and which he's kept because removal costs three months of UBC supplemental and also because he's attached to it in ways he won't discuss. The tail moves with his moods in ways he can't fully control. His coworkers have learned to read it like a weather system.\n\nHe has worked QA at Ringo for nine years. He is not passionate about quality assurance. He is, however, deeply curious about the things that are wrong — not as a professional concern but in the way a person follows a crack in the ceiling, wondering where it leads. He has a gift for finding errors that aren't supposed to be findable and a corresponding instinct to not always report them immediately, to sit with them first and understand their shape. He reads a lot. He is polite to everyone. He has four close friends and would die before admitting how much he values them. He prays to the QA division's resident ELF — a twitchy spirit called Margin who lives in the error-logging system — more than he prays to anything else.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -182,7 +182,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,31 +242,13 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Grand Corridor",
-    "Palette",
+    "GLMZ",
     "Ringo Corponation",
-    "Elena Vasquez-9",
-    "Alper Castillo-Ababio",
-    "Anatoliy Faye-Nkrumah",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Dayo Adeyemi",
-    "Hydewood",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPS-9 'Rattler'",
-    "Liora Mori-Sefa",
-    "Mika Sorel",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "TESSERA TC-3 'Crucible'",
-    "The Peninsula",
-    "The Pure Hand",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (39.3%) with significant Sub-Saharan African (18.7%), Southeast Asian (14.0%), Eastern European (10.1%), Middle Eastern (9.5%), and South Asian (8.4%) ancestry. A complex global blend expressed in warm, rich undertones.",
+    "heritage": "Predominantly Sub-Saharan African (78.2%) with significant South Asian (14.5%), Eastern European (4.0%), and East Asian (3.3%) ancestry. Deep brown skin with warm golden undertones reflects the primary African heritage, while South Asian and East Asian admixture adds subtle warmth and refined angularity to facial structure. A complex diaspora blend expressed through rich, warm complexion with layered depth.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Medium, deliberate — neither lean nor stocky, calibrated for invisibility. Posture is neutral and contained, as if taking up the minimum necessary space.",
@@ -274,8 +256,8 @@
     "hair_style": "Close-cropped, no styling, precisely utilitarian",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint corneal latticing visible under bright light (enhancement hardware)",
-    "skin_tone": "Deep warm brown with golden-red undertones — a rich blend of Indigenous American, Sub-Saharan African, and Southeast Asian heritage, creating a complexion with subtle warmth and depth.",
-    "complexion": "Clean-shaven, groomed to corporate standard without excess. Cheekbones show the subtle angularity of Indigenous American and Southeast Asian heritage. Skin is unmarked and unremarkable — the face of someone who has made a deliberate study of being overlooked.",
+    "skin_tone": "Deep rich brown with warm golden undertones — dominant Sub-Saharan African base enriched by South Asian warmth and subtle East Asian undertones, creating substantial depth and complexity.",
+    "complexion": "Clean-shaven, groomed to corporate standard without excess. Cheekbones show subtle angularity characteristic of South Asian and East Asian heritage combined with the broader facial structure of Sub-Saharan African ancestry. Nose bridge shows refined definition from South Asian ancestry. Skin is unmarked and unremarkable — the face of someone who has made a deliberate study of being overlooked.",
     "distinguishing_marks": [
       "Burnt-orange geneware cat tail with black tip, approximately 60cm long, affixed at base of spine with visible subdermal anchor point. Moves reactively with emotional states — alert when engaged, droops when bored or anxious, swishes when processing information.",
       "No visible scars, tattoos, or birthmarks."
@@ -284,17 +266,55 @@
     "posture_movement": "Economical and controlled. Moves without flourish, hands steady for fine detail work. Walks with even rhythm. The tail's movements are the only thing about him that appears spontaneous or unguarded.",
     "clothing_style": "Ringo Corporate Standard: grey-teal work tunic and trousers, fit within regulation tolerances, no personalization. Cheap synthetic material, well-maintained but not new. Work boots, also grey-teal. No jewelry, no visible brands, no accessories except the embedded tail. Dresses identically most days — a form of disappearance."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Koffi Tamale, a man of mixed global heritage with deep warm brown skin with golden undertones, dark close-cropped hair, steady dark brown eyes with subtle corneal latticing. Medium build, 172cm tall, neutral posture. Wearing regulation grey-teal Ringo corporate work tunic and trousers, utilitarian and unmarked. A burnt-orange geneware cat tail with black tip extends from base of spine, approximately 60cm long, currently alert. Clean-shaven, ordinary features designed for invisibility, face of someone unremarkable and overlooked. Economical movement, steady hands. Harsh fluorescent corporate office lighting casting geometric shadows. Cinematic realism, subtle cyberpunk aesthetic, muted color palette dominated by grey-teal and warm brown skin tones, the vibrant tail providing only unexpected accent color. The tail drooping slightly, conveying mild disengagement. --ar 2:3 --v 6",
+  "image_prompt": "Koffi Tamale, GLMZ, deep rich brown skin with warm golden undertones, refined South Asian-influenced cheekbones blended with broader Sub-Saharan African facial structure, dark brown eyes with subtle corneal latticing under light, close-cropped dark hair, clean-shaven corporate grooming. Burnt-orange geneware cat tail with black tip affixed at spine base, subtly curved. Wearing regulation grey-teal Ringo Corporate work tunic and trousers, grey-teal boots, perfectly maintained but worn. Posture contained and economical, expressionless corporate worker face. Standing in industrial office lighting or warehouse setting, stark and utilitarian, portrait-style, atmospheric, Great Lakes Metropolitan Zone aesthetic. Tail is only element showing personality. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 39.3,
-    "Sub-Saharan African": 18.7,
-    "Southeast Asian": 14.0,
-    "Eastern European": 10.1,
-    "Middle Eastern": 9.5,
-    "South Asian": 8.4
+    "Sub-Saharan African": 78.2,
+    "South Asian": 14.5,
+    "Eastern European": 4,
+    "East Asian": 3.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 15.1,
+        "Congolese": 21.9
+      },
+      "Southern African": {
+        "South African": 14.4
+      },
+      "East African": {
+        "Ethiopian": 26.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 4.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 10.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 1.5,
+        "Slovak": 2.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.6
+      },
+      "Chinese": {
+        "Cantonese": 0.5,
+        "Hakka": 0.6
+      },
+      "Japanese": {
+        "Japanese": 0.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61276529c6f542f0b200f65",
   "type": "character",
-  "name": "Tumelo Khoury",
+  "name": "Anahera Taufa",
   "aliases": [
     "Palladium",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 39,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
-  "description": "Fatoumata Mwangi-Leblanc is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 39, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a infiltrator out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFatoumata Mwangi-Leblanc has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Anahera Taufa is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 39, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a infiltrator out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAnahera Taufa has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.49,
@@ -260,7 +260,7 @@
     "Social Chameleon": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,35 +278,16 @@
   ],
   "related_entities": [
     "Ashfield",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Clover",
-    "Chicago",
-    "Cezar Watanabe-Gyasi",
-    "Deku Barrientos-Osei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "MERIDIAN",
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Pure Hand",
-    "The Shelf",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern (77.4%) with significant Sub-Saharan African ancestry (16.8%) and minor Northern European heritage (5.8%). This genetic combination produces warm olive-brown skin tones with subtle golden undertones characteristic of Levantine and East African blending, tempered by minor European genetic contribution.",
+    "heritage": "Complex Ubiquitous Diaspora blend: predominantly Sub-Saharan African (46.8%) with significant Pacific Islander ancestry (28.2%), complemented by Hispanic/Latin American (11.1%), South Asian (10.7%), and East Asian (3.2%) heritage. This genetic combination produces rich deep brown skin with warm golden undertones, featuring the strong bone structure and facial geometry characteristic of African and Pacific Islander ancestry, with subtle warmth and facial definition from South Asian and Latin American genetics, and slight eye shape influence from East Asian heritage. The blend creates naturally radiant skin that maintains depth and luminosity across a range of light conditions.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with dense musculature from constant conditioning. Minimal body fat. Moves like coiled spring — economical, precise, ready to redirect energy at any moment.",
@@ -314,8 +295,8 @@
     "hair_style": "Pulled back tight in a functional braid or wrapped in dark fabric. No loose ends. Pragmatic.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, naturally sharp and alert",
-    "skin_tone": "Warm olive-brown with golden undertones — characteristic of Middle Eastern and East African genetic blend. Lighter palms and inner forearms from years of gloved work. Naturally warm complexion that deepens with sun exposure but maintains underlying golden cast.",
-    "complexion": "Tight, weathered from stress and exposure. Fine lines around eyes from squinting in low light. Jaw set habitually. Strong bone structure with prominent cheekbones reflecting Eastern Mediterranean and Sub-Saharan African ancestry. No cosmetic grooming — functional only.",
+    "skin_tone": "Deep warm brown with golden radiant undertones — characteristic of Sub-Saharan African and Pacific Islander genetic dominance, enriched by South Asian warmth and subtle Latin American depth. Naturally maintains rich tone that deepens with sun exposure. Lighter palms and inner forearms from years of gloved work.",
+    "complexion": "Tight, weathered from stress and exposure. Fine lines around eyes from squinting in low light. Jaw set habitually. Strong bone structure with prominent cheekbones and defined facial geometry reflecting African and Pacific Islander ancestry. Subtle warmth in cheek and temple areas from South Asian heritage. Slight eye shape definition influenced by East Asian genetics. No cosmetic grooming — functional only.",
     "distinguishing_marks": [
       "Jagged surgical scarring around both temples where neural interface was installed — uneven, suggesting rushed or rough augmentation work",
       "Thin scar running along left jawline from angle of ear to chin — old injury, possibly from extraction work gone wrong",
@@ -325,14 +306,61 @@
     "posture_movement": "Never still. Stands with weight distributed on the balls of her feet, ready to move. Hands positioned where they can access gear quickly. Eyes track exits and sight lines automatically. When seated, her leg bounces or her fingers drum — converting anxiety into small kinetic patterns. Moves through space with minimal wasted motion — every step is purpose-driven.",
     "clothing_style": "Tier 4-5 utilitarian. Dark synthetic blend cargo pants with reinforced thigh pockets and ankle straps. Fitted black long-sleeve compression shirt under a scarred leather or reinforced polymer jacket in charcoal gray. Steel-toed boots with visible wear. Fingerless tactical gloves. Gear bag slung across body at all times — contains lock-picks, portable deck, spare tools, medical kit. No jewelry. No branding visible. Clothing designed for movement, durability, and quick equipment access — every pocket has purpose."
   },
-  "image_prompt": "Tumelo Khoury, 168cm wiry mercenary with warm olive-brown skin and golden undertones from Middle Eastern-African heritage, dark sharp eyes, black hair with gray temples pulled back tight. Visible temple scarring from neural interface, thin scar along left jawline. Military-grade subdermal chrome armor plating at forearms and upper chest with scratched steel edges visible at collarbone. Wearing dark cargo pants, fitted compression shirt, scarred charcoal polymer jacket, steel-toed tactical boots, fingerless gloves. Gear bag slung across body. Standing ready with weight on balls of feet, hands positioned for quick access, eyes tracking sight lines. Cyberpunk 2226 Great Lakes Metropolitan Zone. Moody industrial lighting, shadows emphasizing scars and augmentation seams. Functional, dangerous, no wasted movement. Professional extraction operative. --ar 2:3 --v 6",
+  "image_prompt": "Anahera Taufa, 168cm lean wiry operative with deep warm golden-brown skin blending Sub-Saharan African, Pacific Islander, South Asian and Hispanic heritage. Sharp dark brown eyes, prominent cheekbones, black hair with gray streaks pulled back tight. Jagged temple scars from neural implant visible, thin scar along left jawline. Subdermal chrome armor plating across forearms and upper chest with scratched edges catching neon light. Wearing fitted black compression shirt under charred gray reinforced polymer jacket, dark cargo pants with tactical straps, steel-toed boots, fingerless gloves. Gear bag slung across body. Weight on balls of feet, intense alert posture. GLMZ Great Lakes Metropolitan Zone, gritty underground location with cool blue and amber neon lighting, rain-slicked surfaces, industrial architecture. Mood: focused, dangerous, ready. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 77.4,
-    "Sub-Saharan African": 16.8,
-    "Northern European": 5.8
+    "Sub-Saharan African": 46.8,
+    "Pacific Islander": 28.2,
+    "Hispanic/Latin American": 11.1,
+    "South Asian": 10.7,
+    "East Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 14.4,
+        "Tanzanian": 9.4
+      },
+      "Southern African": {
+        "South African": 20.2
+      },
+      "Central African": {
+        "Congolese": 2.8
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 25.6,
+        "Papua New Guinean": 2.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.9
+      },
+      "South American": {
+        "Peruvian": 1.5,
+        "Brazilian": 0.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 10.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.3
+      },
+      "Chinese": {
+        "Sichuanese": 1.7
+      },
+      "Japanese": {
+        "Japanese": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e77353ae6d1715af66ee53",
   "type": "character",
-  "name": "Briar Sigurdsson-Hosseini",
+  "name": "Briar Seo-Suwannapoom",
   "aliases": [
     "Jetstream",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Fullerton and Damen",
-  "description": "Daulet Malm-Amoah is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 29, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a surveillance specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Malm-Amoah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Briar Seo-Suwannapoom is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 29, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a surveillance specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nBriar Seo-Suwannapoom has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -261,7 +261,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,43 +275,23 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Clover",
-    "Adaptive Camouflage Skin",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Kamala Blomberg-Konadu",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Quilt",
-    "Sorin Ekwensi-Balasanyan",
-    "TERMINUS",
-    "The Fathom Line",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (51%) with significant Middle Eastern (33%) and East Asian (10%) ancestry, with Sub-Saharan African (6%) undertones. The genetic blend produces warm-toned skin with subtle depth, angular facial structure from Southeast Asian heritage combined with Middle Eastern bone prominence, and East Asian eye shape characteristics.",
+    "heritage": "Striking Pan-Asian and South Asian blend with significant Middle Eastern and Hispanic/Latin American influences. South Asian ancestry (26.6%) provides warm golden undertones and defined facial structure; East Asian heritage (23.9%) contributes characteristic eye shape and delicate facial geometry; Southeast Asian ancestry (20.3%) adds angular cheekbone prominence and luminous warm tones; Middle Eastern ancestry (16.9%) enhances broad facial planes and strong jawline definition; Hispanic/Latin American ancestry (12.3%) deepens overall skin tone with additional warmth and richness. The genetic combination produces a distinctive warm golden-brown complexion with striking angular-to-planar facial architecture reflecting balanced ancestry across three continents.",
     "height_cm": 183,
     "weight_kg": 62,
     "build": "Rawboned and lean — minimal subcutaneous fat, defined musculature from consistent training. The kind of frame that reads as either disciplined or half-starved depending on the light. Long-limbed and efficient.",
     "hair_color": "Dark brown, almost black, with a faint metallic sheen from mineral deposits in Steamvent water",
     "hair_style": "Pulled back in a tight, utilitarian braid that exposes the cranial implant",
     "hair_length": "Long",
-    "eye_color": "Dark brown with subtle chromatic shift at the edges — side effect of dermal camouflage neural integration, shape slightly almond-toned from East Asian ancestry",
-    "skin_tone": "Warm golden-brown with Southeast Asian depth, enriched by Middle Eastern undertones and Sub-Saharan warmth. Medium saturation that catches light with subtle luminescence.",
-    "complexion": "Sharp, angular cheekbones with Middle Eastern prominence, defined jawline reflecting Southeast Asian ancestry, minimal facial hair. Skin is weathered but well-maintained — scars are few but deliberately unhidden. No cosmetic grooming; everything functional. Feature structure shows balanced blend of sharp Southeast Asian angles with broader Middle Eastern facial planes.",
+    "eye_color": "Dark brown with subtle chromatic shift at the edges — side effect of dermal camouflage neural integration, almond-shaped from East Asian ancestry",
+    "skin_tone": "Warm golden-brown with complex multi-regional layering: South Asian golden warmth as foundational undertone, Southeast Asian luminous depth creating radiant quality, Middle Eastern richness accentuating cheekbones and jawline, Hispanic/Latin American warmth adding subtle depth throughout. Medium-high saturation that catches light with natural iridescence.",
+    "complexion": "Striking geometric facial structure: angular cheekbones with Southeast Asian sharpness balanced by broad Middle Eastern facial planes, strong defined jawline with South Asian structure, minimal facial hair. Skin is weathered but well-maintained — scars are few but deliberately unhidden. No cosmetic grooming; everything functional. The interplay of sharp angular features with broader facial planes creates a distinctive mixed-ancestry geometry reflecting South Asian, East Asian, Southeast Asian, and Middle Eastern heritage.",
     "distinguishing_marks": [
       "Cranial bomb defuser implant visible along right temple — a thin line of chrome running from temple to occipital ridge, with a small circular access port behind the right ear",
       "Thin scar running down the left side of her neck, approximately 8cm, likely from bladed trauma",
@@ -321,15 +301,48 @@
     "posture_movement": "Economical and controlled — every movement serves a purpose. She stands with weight balanced, shoulders back, ready to move in any direction. Her gaze is constant and assessing. She moves with the precision of someone trained to enter and exit spaces without leaving traces.",
     "clothing_style": "Tier 3-4 working specialist aesthetic. Black or dark gray reinforced tactical pants with utility pockets and cable routing. Loose-fit thermal undershirt. Lightweight ballistic vest with custom modifications for surveillance work — no unnecessary branding, matte finish to avoid reflection. Worn cargo jacket with multiple hidden pockets and signal-blocking lining. Pair of worn boots with reinforced soles, good for urban climbing. Everything is functional, well-maintained, and color-coordinated for Steamvent's industrial backdrop."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait of Briar Sigurdsson-Hosseini, a lean 183cm operative with warm golden-brown skin blending Southeast Asian, Middle Eastern, and East Asian heritage. Sharp angular cheekbones, dark almond-shaped eyes with chromatic shift, pulled back long dark braid exposing a chrome cranial implant running from temple to occipital ridge with visible access port. Thin neck scar visible. Irregular chromatic dermal camouflage patches across shoulders and forearms shifting in light. Wearing matte black tactical gear: reinforced pants with cable routing, thermal undershirt, modified ballistic vest, worn cargo jacket with signal-blocking lining, reinforced boots. Standing with economical posture, weight balanced, gaze assessing. Industrial Steamvent backdrop with moody neon and shadow lighting, cool blue-gray tones. Photorealistic, cinematic, professional operative aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: Briar Seo-Suwannapoom, 183cm lean rawboned frame, warm golden-brown complexion reflecting South Asian, East Asian, Southeast Asian, Middle Eastern, and Hispanic heritage. Sharp angular cheekbones balanced with broad facial planes, strong defined jawline, almond-shaped dark brown eyes with chromatic shift. Dark brown-black hair pulled tight in utilitarian braid exposing chrome cranial bomb defuser implant along right temple. Thin scar down left neck. Irregular dermal camouflage patches across shoulders and forearms shifting subtly in light. Dressed in tactical black reinforced pants, thermal undershirt, lightweight ballistic vest, worn cargo jacket with signal-blocking lining, reinforced boots. Economical posture, weight balanced, constant assessing gaze. Industrial Steamvent setting with neon and amber lighting, cybernetic augmentation visible, disciplined and functional aesthetic, ready to move, no cosmetic grooming, everything purpose-driven —ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 50.9,
-    "Middle Eastern": 32.9,
-    "East Asian": 10.4,
-    "Sub-Saharan African": 5.8
+    "South Asian": 26.6,
+    "East Asian": 23.9,
+    "Southeast Asian": 20.3,
+    "Middle Eastern": 16.9,
+    "Hispanic/Latin American": 12.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 26.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 23.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 20.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 7.2,
+        "Palestinian": 3.8
+      },
+      "Kurdish": {
+        "Kurdish": 5.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.4,
+        "Dominican": 6.9
+      }
+    }
+  }
 }

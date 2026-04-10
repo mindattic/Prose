@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f37159aba9bb1dce6835b8",
   "type": "character",
-  "name": "Vale Trujillo-Pathak",
+  "name": "Vale Trujillo-Guerrero",
   "aliases": [
     "Etcher",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
-  "description": "Djeneba Tarasov-Yiadom is compact and densely muscled, built low to the ground like something designed to survive impacts. At 62, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Tarasov-Yiadom plans to keep it that way. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Djeneba Tarasov-Yiadom lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Vale Trujillo-Guerrero is compact and densely muscled, built low to the ground like something designed to survive impacts. At 62, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Vale Trujillo-Guerrero plans to keep it that way. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Vale Trujillo-Guerrero lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -262,7 +262,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,44 +282,21 @@
     "The Unfinished Theorem",
     "The Nearfield",
     "The Gradient Compact",
-    "Slagworks Industrial",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "MERIDIAN",
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "The Fathom Line",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant South Asian ancestry, Northern European influence, and minor Middle Eastern heritage. The combination produces warm, golden-brown skin tones with subtle olive undertones characteristic of Latin American and South Asian blending, with lighter undertones from Northern European ancestry visible in her lighter complexion zones.",
+    "heritage": "Predominantly Hispanic/Latin American (66.4%) with substantial Eastern European (20.2%) and South Asian (13.4%) ancestry. The blend creates warm golden-brown skin with rich olive and amber undertones from Latin American and South Asian heritage, tempered by cool undertones from Eastern European ancestry. Her facial structure reflects the angular prominence of Eastern European bone structure combined with the defined cheekbones of Latin American heritage and the softer contours characteristic of South Asian ancestry.",
     "height_cm": 158,
     "weight_kg": 68,
     "build": "Compact and densely muscled, built low to the ground with a center of gravity designed for stability and impact absorption. Broad shoulders tapering to a narrow waist. No excess mass — pure functional architecture.",
     "hair_color": "Steel gray with natural dark undertones",
     "hair_style": "Pulled back tight in a utilitarian braid, secured with matte black polymer bands",
     "hair_length": "Medium",
-    "eye_color": "Dark brown — natural, no augmentation",
-    "skin_tone": "Warm golden-brown complexion with subtle olive undertones from Latin American and South Asian heritage, lighter in some areas reflecting Northern European ancestry. Sun-weathered in places, smooth in others.",
-    "complexion": "Strong angular features blending Latin American and South Asian characteristics — prominent cheekbones with gentle width through the face, defined jawline. Dark, deep-set eyes. Minimal scarring on face — suggests deliberate avoidance of facial damage. Skin shows the wear of six decades and hard living, but maintained with the same discipline applied to equipment. Thin lips, often pressed into a flat line.",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm golden-brown with rich olive and amber undertones, cooled subtly by Eastern European ancestry. Sun-weathered in high-contact areas, maintaining even tone across the body despite six decades of hard use.",
+    "complexion": "Strong, angular features blending Latin American and Eastern European bone structure with South Asian softness — high, well-defined cheekbones with moderate width through the face, squared jawline with subtle roundness at the corners. Deep-set dark eyes. Minimal facial scarring. Skin shows the weathering of six decades and hard living, maintained with disciplined care. Thin lips, often pressed into a flat line.",
     "distinguishing_marks": [
       "Long surgical scar running down the inside of left forearm — augmentation installation point, partially camouflaged by tattoo work",
       "Tattoo of geometric pattern wrapping the right shoulder — appears to mark augmentation seams beneath the skin",
@@ -328,17 +305,52 @@
     ],
     "visible_augmentations": "Hydraulic joint assemblies visible at knees and elbows — polished titanium and brushed steel with synthetic muscle cabling. The joints are seamlessly integrated but unmissable — no effort made to hide them. Faint seams along the forearms and shins suggest bone lacing beneath the skin. Subtle LED indicators glow amber at the elbow and knee joints when she moves under load.",
     "posture_movement": "Stands with weight balanced low and forward — a fighter's stance held at rest. Moves with mechanical precision, each motion economical and intentional. No wasted gesture. When she walks, there is a barely perceptible hitch in the rhythm where the hydraulic joints compensate for impacts. She carries herself like someone who has already accounted for everything that could go wrong.",
-    "clothing_style": "Tier 4 practical — form-fitting synth-leather jacket in matte black, unbranded. Cargo pants in dark gray with reinforced stitching and internal holster points. Steel-toed combat boots, scuffed and re-maintained repeatedly. A thin silver chain around her neck with no visible pendant — probably conceals something. No jewelry, no corpo logos, no affectation. Everything she wears is functional, replaceable, and designed to survive contact."
+    "clothing_style": "Tier 4 practical — form-fitting synth-leather jacket in matte black, unbranded. Cargo pants in dark gray with reinforced stitching and internal holster points. Steel-toed combat boots, scuffed and re-maintained repeatedly. A thin silver chain around her neck with no visible pendant. No jewelry, no corpo logos, no affectation."
   },
-  "image_prompt": "Vale Trujillo-Pathak, 158cm tall compact muscular woman with warm golden-brown skin blending Latin American and South Asian heritage, steel gray hair in tight utilitarian braid, dark brown eyes. Visible titanium hydraulic joint augmentations at knees and elbows glowing soft amber. Surgical scars and geometric tattoos marking augmentation points. Wearing matte black synth-leather jacket and dark gray cargo pants, steel-toed boots. Fighter's stance, economical precise movements. Neon-lit GLMZ cyberpunk setting, 2226, dramatic side lighting, gritty industrial background, professional portrait composition, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Vale Trujillo-Guerrero, 158cm tall neo-noir operative with warm golden-brown skin blending Hispanic, Eastern European and South Asian heritage, strong angular features with high cheekbones and defined jawline. Steel gray hair in tight utilitarian braid, dark brown eyes. Six decades weathered but maintained, minimal facial scars. Visible titanium hydraulic joints at elbows and knees with amber LED indicators, bone-lace seams on forearms and shins, surgical scar on left forearm partially hidden by geometric tattoo, notch missing from left ear. Compact muscular build, fighter's stance. Matte black synth-leather jacket, dark gray cargo pants with reinforcement, scuffed steel-toed boots, silver chain necklace. Standing in neon-lit Great Lakes Metropolitan alleyway, rain-slick pavement, GLMZ, moody lighting with amber and blue neon reflections, intense focused expression, ready posture, mechanical precision in every movement --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 41.9,
-    "South Asian": 31.8,
-    "Northern European": 24.6,
-    "Middle Eastern": 1.7
+    "Hispanic/Latin American": 66.4,
+    "Eastern European": 20.2,
+    "South Asian": 13.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 13.2,
+        "Brazilian": 6.6
+      },
+      "Caribbean": {
+        "Haitian": 3.8,
+        "Cuban": 8.7
+      },
+      "Central American": {
+        "Nicaraguan": 11.1,
+        "Salvadoran": 23
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 9.5
+      },
+      "Slavic South": {
+        "Serbian": 1.5
+      },
+      "Magyar-Romanian": {
+        "Romanian": 9.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 10.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.3,
+        "Tamil Sri Lankan": 0.4
+      }
+    }
+  }
 }

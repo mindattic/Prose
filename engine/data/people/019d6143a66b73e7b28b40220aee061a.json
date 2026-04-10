@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and Damen",
-  "description": "Nneka Sjostrom-Kwarteng is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nneka Sjostrom-Kwarteng agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Juno Venkatesh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Juno Venkatesh agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -261,7 +261,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,34 +275,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Circuit",
     "The Gradient Compact",
+    "Circuit",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Ilhan Sandstrom-Badu",
-    "Kamala Mori-Sefa",
-    "Lazarus LX-2 'Lab Rat'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sagyn Ogawa-Twumasi",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian dominant (61.7%) with significant Sub-Saharan African (13.9%), Southeast Asian (12.0%), Hispanic/Latin American (7.0%), and East Asian (5.4%) ancestry. The genetic blend creates warm-toned medium-to-dark skin with subtle regional feature mixing — South Asian bone structure with broader African-descended facial width, Southeast Asian eye shape characteristics, and the complex melanin distribution of multi-continental ancestry.",
+    "heritage": "South Asian dominant (48.0%) with substantial East Asian (16.9%), Sub-Saharan African (14.8%), Northern European (9.4%), Hispanic/Latin American (5.8%), and Middle Eastern (5.1%) ancestry. The genetic blend creates warm-toned medium-to-dark skin with complex regional feature mixing — South Asian bone structure and eye shape characteristics combined with broader African-descended facial width, East Asian lid characteristics, and the intricate melanin distribution of true multi-continental ancestry.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, built low to the ground with the proportions of someone engineered for impact absorption and close-quarters work. Broad shoulders taper to a lean waist. Every visible muscle is defined and functional.",
@@ -310,8 +291,8 @@
     "hair_style": "Close-cropped, practical, no styling",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint reflective sheen from subcutaneous neural enhancement",
-    "skin_tone": "Deep warm brown with golden-bronze undertones, melanin-rich complexion reflecting South Asian heritage as dominant genetic source with Sub-Saharan African warmth and Southeast Asian complexity",
-    "complexion": "Structured face with prominent cheekbones and strong jawline characteristic of South Asian ancestry, balanced by broader facial width from African heritage. Scar tissue maps across his left cheekbone and temple in pale, raised lines. A thin scar bisects his upper lip. Stubble is perpetual — either by design or neglect. His expression in repose is flat, almost predatory.",
+    "skin_tone": "Deep warm brown with golden-bronze undertones, melanin-rich complexion reflecting the balanced blend of South Asian, East Asian, and Sub-Saharan African ancestry with subtle warmth from Hispanic and Middle Eastern heritage",
+    "complexion": "Structured face with prominent cheekbones and defined jawline characteristic of South Asian ancestry, balanced by broader facial width from Sub-Saharan African heritage, with the subtle epicanthal lid characteristics of East Asian genetics creating an unsettling intensity to his gaze. Scar tissue maps across his left cheekbone and temple in pale, raised lines. A thin scar bisects his upper lip. Stubble is perpetual — either by design or neglect. His expression in repose is flat, almost predatory.",
     "distinguishing_marks": [
       "Pale keloid scar running from left temple to cheekbone, approximately 8cm, likely from edged weapon or shrapnel",
       "Thin white scar bisecting upper lip, suggesting old dental trauma or knife wound",
@@ -322,16 +303,71 @@
     "posture_movement": "Moves with minimal wasted motion — economy of gesture suggests either military training or years of infiltration work. His center of gravity is low. He doesn't fidget. In conversation, he maintains unbroken eye contact in a way that makes most people uncomfortable. His hands remain visible and still unless he's working. Breathing is shallow and controlled even at rest.",
     "clothing_style": "Tier 3-4 functional minimalism. Dark synthweave jacket with internal pockets and subdued reflective panels for low-light movement. Unmarked black cargo pants with reinforced seams and hidden utility slots. Steel-toed boots, scuffed and well-maintained. No corporate logos, no gang colors, no fashion statements. Everything is optimized for concealment, durability, and rapid movement. When covering his identity as 'mundane,' he switches to generic corporate casual — polo shirts, neutral slacks, the kind of uniform that erases identity in a crowd."
   },
-  "image_prompt": "Juno Venkatesh, South Asian-dominant mixed heritage male, 168cm compact muscular build, deep warm bronze-brown skin tone, short dark brown hair, predatory angular face with keloid scars on left temple-cheekbone and bisecting upper lip. Sleek chrome cyberears with glowing directional ports, integration seams along jawline. Dark eyes with faint reflective neural enhancement sheen. Chrome weapon mount ports visible on inner forearms. Wearing unmarked dark synthweave tactical jacket with reflective panels, reinforced black cargo pants, scuffed steel-toed boots. Minimal facial hair, flat predatory expression, still controlled posture, unbroken eye contact. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, moody neon-shadow lighting, low-angle composition emphasizing compact lethal frame, gritty urban environment, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ operative Juno Venkatesh, portrait, 168cm compact muscular frame, deep warm brown skin with golden undertones reflecting South Asian, East Asian, and African heritage blend, sharp defined cheekbones and jawline, broad facial structure, subtle East Asian lid characteristics, pale keloid scar crossing left temple and cheekbone, thin scar bisecting upper lip, perpetual stubble, flat predatory expression, dark brown eyes with faint cybernetic reflective sheen, close-cropped dark brown hair, chrome cyberears with visible pickup arrays and luminescent chambers, integration seams along jawline, both forearms scarred with chrome weapon mount ports, network of combat scars on knuckles, faded geometric blue tattoo on right forearm partially obscured by cyberware, wearing dark synthweave tactical jacket with reflective panels, black reinforced cargo pants, scuffed steel-toed boots, hands visible and still, low center of gravity, controlled breathing, intimidating unbroken eye contact, minimalist functional appearance optimized for concealment and infiltration, neon-lit urban setting, cinematic lighting with deep shadows, photorealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 61.7,
-    "Sub-Saharan African": 13.9,
-    "Southeast Asian": 12.0,
-    "Hispanic/Latin American": 7.0,
-    "East Asian": 5.4
+    "South Asian": 48,
+    "East Asian": 16.9,
+    "Sub-Saharan African": 14.8,
+    "Northern European": 9.4,
+    "Hispanic/Latin American": 5.8,
+    "Middle Eastern": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 18.4,
+        "Sindhi": 11.9
+      },
+      "Indian": {
+        "Gujarati": 9,
+        "Punjabi": 8.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 16.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.1
+      },
+      "West African": {
+        "Ghanaian": 2.8,
+        "Nigerian": 0.5
+      },
+      "East African": {
+        "Ugandan": 1.5,
+        "Somali": 0.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 8.3,
+        "Scottish": 1.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 1.8
+      },
+      "South American": {
+        "Peruvian": 1.1,
+        "Colombian": 0.7
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 3.4,
+        "Lebanese": 1.7
+      }
+    }
+  }
 }

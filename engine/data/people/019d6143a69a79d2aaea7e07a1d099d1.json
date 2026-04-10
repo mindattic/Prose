@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69a79d2aaea7e07a1d099d1",
   "type": "character",
-  "name": "Zen Kamara",
+  "name": "Zen Bui",
   "aliases": [
     "Old Phúc",
     "The Shelf King"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Shelf, Harrowgate Industrial Plateau, near Western and Division",
-  "description": "Phúc Nzingha-Björk occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
+  "description": "Zen Bui occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -198,40 +198,22 @@
   "related_entities": [
     "Harrowgate Industrial Plateau",
     "Crucible TR-7 'Triage'",
-    "The Shelf",
     "Zheng-dao Bioelectric",
     "Palladian Construction",
+    "The Shelf",
+    "Frequency",
     "Arcturus Defense Solutions",
     "Fenris Industrial DuraStance 900 Work Leg",
-    "The Pure Hand",
-    "Slagworks Industrial",
+    "Circuit",
     "Steel",
     "Glass",
-    "Teak",
-    "Rust",
-    "Alper Lebedev-Tutu",
-    "Blessura",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Ferrogate Transit",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Lazarus Pharmaceuticals",
-    "MERIDIAN",
-    "Malika Zhukov-Wiredu",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Mika Sorel",
-    "Patient Zero",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "The Compact",
-    "The Reclamation Assembly",
-    "Yuki Nwosu-Petrenko"
+    "The Pure Hand",
+    "Slagworks Industrial",
+    "Teak"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed Sub-Saharan African (36%), Indigenous American (32.7%), Middle Eastern (24.8%), and South Asian (6.5%) ancestry—a genetic tapestry reflecting the Ubiquitous Diaspora. Features a rich blend: warm deep brown skin with undertones reflecting the full spectrum of his heritage, broad facial structure with characteristics spanning African and Indigenous American lineages, and the intricate bone structure suggesting Middle Eastern and South Asian elements in his cheekbones and brow.",
+    "heritage": "Mixed Southeast Asian (51.9%), South Asian (16.2%), Sub-Saharan African (12.5%), Indigenous American (11.7%), and North African (7.7%) ancestry—a genetic tapestry reflecting the Ubiquitous Diaspora. Features a rich blend: warm deep brown skin with golden and reddish undertones, facial structure combining Southeast Asian bone structure with Sub-Saharan and Indigenous American breadth, refined with South Asian and North African elements in the cheekbones and brow.",
     "height_cm": 163,
     "weight_kg": 61,
     "build": "Wiry and lean, with the compact muscularity of someone who has spent decades moving heavy objects with precision. Shoulders slightly rounded from years hunched over workbenches. No excess fat; frame is efficient rather than frail despite his age.",
@@ -239,8 +221,8 @@
     "hair_style": "Three thin braids, deliberately maintained, pulled back from the face",
     "hair_length": "Medium (shoulder-length when braided)",
     "eye_color": "Left eye: dark brown, natural. Right eye: obscured by magnification lens apparatus",
-    "skin_tone": "Deep warm mahogany-brown with sun damage and age spots across the forehead and cheekbones—weathered from decades in industrial outdoor spaces, with underlying richness reflecting his diverse ancestry",
-    "complexion": "Deeply lined face, especially around the eyes and mouth, with prominent nasolabial folds and crow's feet. Facial structure shows broad cheekbones and a well-defined jawline characteristic of his African and Indigenous American heritage. Beard is white and sparse, kept in three thin braids. Skin is leathery and sun-exposed but maintains the natural depth of tone from his genetic heritage. No visible acne or dermatological issues; skin is dry but healthy.",
+    "skin_tone": "Deep warm mahogany-brown with golden undertones and reddish warmth from his genetic heritage. Sun damage and age spots across the forehead and cheekbones—weathered from decades in industrial outdoor spaces, with underlying richness reflecting his Southeast Asian, South Asian, Sub-Saharan African, Indigenous American, and North African ancestry.",
+    "complexion": "Deeply lined face, especially around the eyes and mouth, with prominent nasolabial folds and crow's feet. Facial structure shows broad cheekbones characteristic of his African and Indigenous American heritage, refined by Southeast Asian bone structure and South Asian definition, with well-defined jawline. Beard is white and sparse, kept in three thin braids. Skin is leathery and sun-exposed but maintains the natural depth and richness of tone from his genetic heritage. No visible acne or dermatological issues; skin is dry but healthy.",
     "distinguishing_marks": [
       "Both hands are extensively scarred with thin white lines crisscrossing the palms, fingers, and backs of hands — damage from sharp metal edges, abrasive handling, and decades of sorting raw salvage",
       "Three thin scars run parallel across the back of his left forearm, approximately 8cm long, consistent with a cutting accident",
@@ -250,15 +232,63 @@
     "posture_movement": "Moves with deliberate, economical motion — no wasted energy. Slight forward hunch from years at workbenches. When handling objects, his movements are precise and careful, almost ritualistic. His gaze tends to linger on people and objects; he observes before responding. Comfortable with silence and stillness; rarely fidgets.",
     "clothing_style": "Tier 4-5 practical wear. Heavy canvas work pants with deep pockets, patched at the knees and thighs. Layered tops: a thermal base layer visible at the neck, worn over with a faded industrial-grade work shirt with rolled sleeves, and a thick wool cardigan with several darned holes. No corporate branding. Boots are well-maintained but visibly aged, leather worn smooth. A canvas apron with multiple tool pockets, permanently stained with machine oil and rust residue. No jewelry except for a thin cord around his neck from which hangs a small brass charm (the talisman for The Sorter)."
   },
-  "image_prompt": "Zen Kamara, 163cm tall salvage engineer in the Great Lakes Metropolitan Zone, 2226. Deep mahogany-brown skin with age spots, weathered from decades of industrial work. White three-strand braids pulled back from a deeply lined face with broad cheekbones and strong jawline reflecting African and Indigenous American heritage. Dark brown left eye; right eye obscured by crude salvage-grade magnification lens apparatus with exposed brackets. Sparse white beard in braids. Scarred hands with white crisscross lines from metal work; burn scar on right cheekbone; three parallel scars on left forearm. Wiry, lean build with slight workbench-hunch in posture. Wearing layered practical wear: worn thermal base layer, faded industrial work shirt with rolled sleeves, thick darned wool cardigan, heavy patched canvas work pants, aged leather boots. Oil-stained canvas apron with tool pockets. Small brass charm on thin cord at neck. Deliberate, economical movements. Cyberpunk industrial setting, warm workshop lighting casting long shadows on weathered hands and face. Mood: observant, contemplative, focused. --ar 2:3 --v 6",
+  "image_prompt": "Zen Bui, weathered 163cm salvage worker in 2226 GLMZ, deep mahogany-brown skin with golden undertones and sun damage, white braided hair pulled back, dark left eye natural, right eye hidden behind crude salvage-grade magnification lens with exposed brackets, extensive white scars across both hands and fingers, 3cm burn scar on right cheekbone, sparse white braided beard, deeply lined face with broad cheekbones blending Southeast Asian, South Asian, Sub-Saharan African, Indigenous American, and North African features, wiry lean muscular build, slightly forward hunched posture from decades at workbenches, wearing faded industrial work shirt with rolled sleeves, thick wool cardigan with darned holes, heavy canvas work pants with knee patches, aged leather boots, oil-stained canvas apron with tool pockets, brass charm talisman on neck cord, careful deliberate movements, industrial neo-noir setting with steel and rust, dramatic side lighting casting harsh shadows, gritty documentary realism, focused observant expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.0,
-    "Indigenous American": 32.7,
-    "Middle Eastern": 24.8,
-    "South Asian": 6.5
+    "Southeast Asian": 51.9,
+    "South Asian": 16.2,
+    "Sub-Saharan African": 12.5,
+    "Indigenous American": 11.7,
+    "North African": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Balinese": 19.5,
+        "Sumatran": 4
+      },
+      "Vietnamese": {
+        "Vietnamese": 28.4
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 5.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 10.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 1.5,
+        "South African": 2.1
+      },
+      "East African": {
+        "Ethiopian": 2.6,
+        "Rwandan": 0.8
+      },
+      "West African": {
+        "Nigerian": 3.6,
+        "Ghanaian": 1.9
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 10
+      },
+      "Plains Nations": {
+        "Lakota": 1.7
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 3.4,
+        "Berber": 4.3
+      }
+    }
+  }
 }

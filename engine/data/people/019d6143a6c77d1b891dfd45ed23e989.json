@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c77d1b891dfd45ed23e989",
   "type": "character",
-  "name": "Nova Magnúsdóttir",
+  "name": "Nova Arredondo",
   "aliases": [
     "Torch",
     "Saor"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Mexicantown Libre, near Pulaski and Chicago Ave",
-  "description": "Saoirse is twenty-four and looks like she has been awake for most of it. She is compact and fast-moving, with mixed Senegambian and Scandinavian features that catch people off guard — high cheekbones, cool-toned brown skin, pale green eyes she claims are natural and that nobody quite believes. Her hair is currently a defiant copper-orange, achieved through a cheap pigment mod that needs retreating every three weeks and which she ritually neglects until it starts going pink at the roots. She dresses for movement and disappearance. She has a voice that carries in a crowd without apparent effort and she knows exactly how to use it.\n\nSaoirse is an organizer with the Ferrogate Transit Workers' Solidarity Action Front — a name she argues with regularly — coordinating wildcat actions, slowdowns, and what she calls 'presence demonstrations' among transit maintenance workers across three depot lines. She is extraordinarily good at reading a crowd's emotional temperature and knows exactly when to push and when to hold. She is less good at the long game, at paperwork, at not making promises that exceed what the Front can deliver. She is young enough to still be surprised when the system fails people who trusted it, and old enough in organizing years to be afraid of what happens when she stops being surprised.",
+  "description": "Nova Arredondo is twenty-four and looks like she has been awake for most of it. She is compact and fast-moving, with mixed Senegambian and Scandinavian features that catch people off guard — high cheekbones, cool-toned brown skin, pale green eyes she claims are natural and that nobody quite believes. Her hair is currently a defiant copper-orange, achieved through a cheap pigment mod that needs retreating every three weeks and which she ritually neglects until it starts going pink at the roots. She dresses for movement and disappearance. She has a voice that carries in a crowd without apparent effort and she knows exactly how to use it.\n\nNova Arredondo is an organizer with the Ferrogate Transit Workers' Solidarity Action Front — a name she argues with regularly — coordinating wildcat actions, slowdowns, and what she calls 'presence demonstrations' among transit maintenance workers across three depot lines. She is extraordinarily good at reading a crowd's emotional temperature and knows exactly when to push and when to hold. She is less good at the long game, at paperwork, at not making promises that exceed what the Front can deliver. She is young enough to still be surprised when the system fails people who trusted it, and old enough in organizing years to be afraid of what happens when she stops being surprised.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -161,7 +161,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,37 +179,17 @@
     "Ferrogate Transit",
     "Mexicantown Libre",
     "Tessera Attrition Engine TE-9 'Patience'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Solidarity Soup",
     "The United Workers Front",
     "The Gradient Compact",
+    "Chicago",
     "Copper",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pale Mile",
-    "Chicago",
-    "Arcturus NX-1 'Sandman'",
-    "Axonal Stretch Resonance Lance",
-    "Bioacoustic Communication Membrane",
-    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Eshe Pena-Baah",
-    "Kairos",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Patience Obumseli-Ferencz",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "TESSERA PG-2 'Signature'",
-    "The Collective",
-    "The Heritage Vault",
-    "The Signal",
-    "Tomasz Wren",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vantabloc",
-    "Yannick Tambadou-Reinholt"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African heritage, minor Northern European and Hispanic/Latin American ancestry. Phenotype reflects the dominant East Asian genetics (55.3%) with warm-toned brown skin showing the blended undertones of African and East Asian lineage, cooled slightly by Northern European admixture and compounded by chronic sleep deprivation.",
+    "heritage": "Predominantly Hispanic/Latin American (56.5%) with significant South Asian (22.7%) and Sub-Saharan African (20.8%) ancestry. Phenotype reflects the rich blending of these three heritage lines — warm golden-brown skin with complex undertones from the interplay of Latin American, South Asian, and African genetics. Facial structure shows the angular cheekbones and jawline common to Latin American heritage, softened by the refined facial contours of South Asian ancestry, with the warmth and depth of Sub-Saharan African lineage visible in skin richness and lip fullness.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Compact and wiry, all fast-twitch muscle and minimal fat — built for movement and climbing, with the lean efficiency of someone who lives on adrenaline and irregular meals",
@@ -217,8 +197,8 @@
     "hair_style": "Shoulder-length, layered for quick drying, often pulled back with salvaged fabric strips or industrial clips",
     "hair_length": "Medium",
     "eye_color": "Dark brown with warm undertones (natural, though frequently disbelieved due to cosmetic modifications elsewhere)",
-    "skin_tone": "Warm-toned medium brown — the golden-amber undertones of East Asian and Hispanic heritage combined with the deeper richness of Sub-Saharan African ancestry, further warmed by the reddish undertones typical of mixed East Asian-African phenotypes, slightly muted by the pallor of chronic sleep deprivation",
-    "complexion": "Defined cheekbones with gentle East Asian contours, sharp jawline, hollow cheeks from chronic caffeine dependence. Nose structure reflects the East Asian-African blend with a straighter bridge and subtly fuller base. Skin shows the wear of someone who forgets to sleep regularly — faint dark circles are permanent fixtures. Few blemishes but slightly weathered texture from exposure and neglect of skincare.",
+    "skin_tone": "Warm golden-brown with rich complexity — the honeyed warmth of Latin American and South Asian heritage melded with the deep luminous undertones of Sub-Saharan African ancestry, creating a medium-dark complexion with subtle radiance beneath the muting effects of chronic sleep deprivation",
+    "complexion": "Defined cheekbones with angular Latin American structure refined by South Asian facial contours, sharp jawline, hollow cheeks from chronic caffeine dependence. Nose structure reflects the three-way blend with a straight bridge and naturally fuller base. Fuller lips characteristic of mixed African heritage. Skin shows the wear of someone who forgets to sleep regularly — faint dark circles are permanent fixtures. Few blemishes but slightly weathered texture from exposure and neglect of skincare.",
     "distinguishing_marks": [
       "Small burn scar on the inside of her left wrist, thin and pale, from a soldering iron accident at age 16",
       "Faint cluster of three ink dots on the inside of her right forearm — union solidarity marker, self-administered",
@@ -228,15 +208,49 @@
     "posture_movement": "Constantly in motion even when standing still — weight shifts, fingers drumming, eyes scanning. Quick, economical movements with no wasted energy. Leans forward when listening, as if pulling words directly from the speaker. Has a habit of ducking her head slightly when making a point, then looking up with intensity. Walks fast with a slight forward tilt, ready to accelerate.",
     "clothing_style": "Tier 4 working-class utilitarian with Libre neighborhood signifiers. Favors matte-black cargo pants with multiple pockets and reinforced knees, worn work boots (currently mismatched — one original, one recobbled), layered tank tops and loose shirts in muted colors that can be shed or added depending on action temperature. Owns exactly two hoodies, both oversized, both bearing faded union emblems. Refuses to wear anything that restricts arm movement. Jewelry limited to a thin wire bracelet on her left wrist (union issue, doubles as a data-transfer device). Bag is a salvaged military-grade messenger bag with reinforced straps, perpetually overstuffed with organizing materials, a thermos, protein bars, and communications equipment. No corporate branding; everything is either unadorned or marked with hand-stenciled union logos."
   },
-  "image_prompt": "Nova Magnúsdóttir, 162cm lean wiry woman with warm medium brown skin blending East Asian and Sub-Saharan African heritage, faded copper-orange cosmetically-modified shoulder-length layered hair, dark natural eyes. Sharp cheekbones, defined jawline, hollow cheeks marked by sleep deprivation and permanent faint dark circles. Thin pale burn scar on left inner wrist, small union solidarity dots on right forearm, barely-visible temple scar. Constantly moving, coiled energy, weight shifting. Wearing matte-black reinforced cargo pants, mismatched worn work boots, loose muted-color layered tank tops, oversized faded union-marked hoodie. Salvaged military messenger bag slung across chest. Thin data-transfer wire bracelet left wrist. Subvocal implant barely visible at throat. Forward-tilted posture, ready to accelerate. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit Libre neighborhood evening, harsh industrial lighting, gritty urban setting, intense focused expression, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Nova Arredondo, 162cm compact wiry woman of mixed Hispanic/Latin American, South Asian, and Sub-Saharan African heritage, medium-dark golden-brown skin with complex warm undertones, dark brown eyes with intensity. Shoulder-length copper-orange cosmetic-modified hair pulled back with industrial clips, defined angular cheekbones, sharp jawline, fuller lips, faint permanent dark circles. Lean muscular frame dressed in matte-black reinforced cargo pants, mismatched worn boots, oversized muted-colored layered tank and loose shirt, faded union-marked hoodie. Thin wire data-transfer bracelet, pale soldering scar on inner left wrist, three-dot solidarity marks on right forearm, temple scar barely visible. Salvaged military-grade messenger bag overstuffed with union materials. Constantly in motion, forward-tilted posture, quick economical movements, intense focused gaze. GLMZ Great Lakes Metropolitan Zone, industrial Libre neighborhood setting, cool fluorescent and neon lighting casting shadows, gritty utilitarian environment, mood of determined activism and sleep-deprived energy --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 55.3,
-    "Sub-Saharan African": 28.4,
-    "Northern European": 9.3,
-    "Hispanic/Latin American": 7.0
+    "Hispanic/Latin American": 56.5,
+    "South Asian": 22.7,
+    "Sub-Saharan African": 20.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 32.1
+      },
+      "South American": {
+        "Colombian": 3.7,
+        "Brazilian": 7
+      },
+      "Central American": {
+        "Honduran": 9.5,
+        "Salvadoran": 4.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 17.5
+      },
+      "Nepali": {
+        "Nepali": 5.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 10.6
+      },
+      "Southern African": {
+        "Zimbabwean": 1.5,
+        "South African": 2
+      },
+      "West African": {
+        "Nigerian": 6.7
+      }
+    }
+  }
 }

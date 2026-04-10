@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70c7286a57ae54040fd3aea",
   "type": "character",
-  "name": "Ngozi Dlamini",
+  "name": "Soraya Kovalenko",
   "aliases": [
     "Val",
     "The Dossier Man"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "The Garret, a specific walkup apartment in Edgewater Prism, near Lincoln and Clark",
-  "description": "Valentijn is a lean, angular man who has aged into something between distinguished and haggard, depending on the light and the hour. His skin is a deep warm brown, heavily seamed at the corners of his eyes and mouth, white stubble maintained at exactly the same length every day through a discipline that seems at odds with the rest of his lifestyle. He is nearly always wearing the same grey coat — it has been repaired in four visible places — and carries a battered datapad loaded with forty years of draft manuscripts, production notes, and correspondence he has never deleted. His only augmentation is a simple retinal display, secondhand and flickering at the edges, which he uses to read in the dark. His posture is very upright for a man who claims to be exhausted.\n\nValentijn has written nineteen plays, fourteen of which have been performed — in apartments, in the back rooms of restaurants in Mexicantown Libre, in a repurposed transit shelter in the Hamtramck Enclave, twice in the open air of the Highland Park Autonomous Zone before rain stopped the second production on the third night. His work is dense, formally ambitious, and politically blunt enough that a Sterling-Nakamura legal team sent him a cease-and-desist over a play he performed for an audience of thirty-one people. He also writes a zine called 'The Dossier' — irregular publication, hand-assembled, distributed through a network of sympathetic shopkeepers — which runs interviews with artists the mainstream channels will not cover alongside a column of theatrical criticism so sharp it has ended two careers.",
+  "description": "Soraya Kovalenko is a lean, angular man who has aged into something between distinguished and haggard, depending on the light and the hour. His skin is a deep warm brown, heavily seamed at the corners of his eyes and mouth, white stubble maintained at exactly the same length every day through a discipline that seems at odds with the rest of his lifestyle. He is nearly always wearing the same grey coat — it has been repaired in four visible places — and carries a battered datapad loaded with forty years of draft manuscripts, production notes, and correspondence he has never deleted. His only augmentation is a simple retinal display, secondhand and flickering at the edges, which he uses to read in the dark. His posture is very upright for a man who claims to be exhausted.\n\nSoraya Kovalenko has written nineteen plays, fourteen of which have been performed — in apartments, in the back rooms of restaurants in Mexicantown Libre, in a repurposed transit shelter in the Hamtramck Enclave, twice in the open air of the Highland Park Autonomous Zone before rain stopped the second production on the third night. His work is dense, formally ambitious, and politically blunt enough that a Sterling-Nakamura legal team sent him a cease-and-desist over a play he performed for an audience of thirty-one people. He also writes a zine called 'The Dossier' — irregular publication, hand-assembled, distributed through a network of sympathetic shopkeepers — which runs interviews with artists the mainstream channels will not cover alongside a column of theatrical criticism so sharp it has ended two careers.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -157,7 +157,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,34 +176,16 @@
     "Edgewater Prism",
     "The Garret",
     "WELLSPRING",
-    "Aslan Vasquez-Chatterjee",
+    "Noir Dining",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Irontide Tidal Energy",
     "Tessera Corponation",
-    "ARCHIVE",
     "Gravimetric Collapse Charge GCC-9",
-    "Déjà Vu",
-    "Dzemal Acholonu-Patagiri",
-    "Flicker",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Nurlan Morita-Antwi",
-    "Praevex",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Tooth Fairy",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Yannick Tofauti-Szarvásy"
+    "Déjà Vu"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African ancestry, blended with South Asian, Southeast Asian, and minor Hispanic and Northern European heritage. The genetic mix creates distinctive features: moderate East Asian bone structure with broader facial proportions from African ancestry, warm brown skin tone with subtle golden undertones from South Asian heritage, and angular features tempered by the fuller cheekbones and wider nose bridge of the African and Asian blend.",
+    "heritage": "Eastern European (32.8%), Middle Eastern (26.3%), Sub-Saharan African (22.8%), and Indigenous American (18.1%) ancestry creates a distinctly pan-global phenotype. The genetic blend manifests as moderate Eastern European bone structure softened by Middle Eastern and African facial proportions, with fuller cheekbones and a broader nasal bridge characteristic of Sub-Saharan African and Indigenous American heritage. The result is a face that transcends single-ancestry classification—each ancestral component visible yet fully integrated into a unified, weathered whole.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost ascetic — the body of someone who has forgotten to eat regularly for decades. Shoulders slightly rounded from hunching over a datapad, but spine held rigid through conscious effort.",
@@ -211,8 +193,8 @@
     "hair_style": "Short, combed back, maintained with mechanical precision despite evident age",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural; left eye has faint blue LED artifacts from the flickering retinal display",
-    "skin_tone": "Warm deep brown with golden undertones — the result of East Asian and Sub-Saharan African ancestry creating a rich, matte finish weathered by sun exposure and urban pallor",
-    "complexion": "Heavily seamed at the corners of eyes and mouth, lines that map forty years of squinting at screens and frowning at scripts. The facial structure shows blended East Asian and African features: moderately high cheekbones, broader nasal bridge, fuller lips. White stubble maintained at exactly half-inch length daily — a ritual discipline. Skin texture rough but clean, no visible acne or disease, the face of someone who has earned every wrinkle.",
+    "skin_tone": "Warm medium-brown with golden undertones—the result of Eastern European, Middle Eastern, Sub-Saharan African, and Indigenous American ancestry blended together, then weathered by decades of sun exposure and urban pallor into a rich, complex complexion",
+    "complexion": "Heavily seamed at the corners of eyes and mouth, lines mapping forty years of squinting at screens and frowning at scripts. Facial structure shows full ancestral blend: moderately high, rounded cheekbones with fullness from Sub-Saharan African and Indigenous American heritage, broader nasal bridge with Middle Eastern definition, fuller lips characteristic of African and Indigenous American lineage, underpinned by Eastern European bone angles. White stubble maintained at exactly half-inch length daily—a ritual discipline. Skin texture rough but clean, no visible acne or disease; the face of someone who has earned every wrinkle.",
     "distinguishing_marks": [
       "Deep horizontal creases across the forehead, prominent when he concentrates",
       "Crow's feet radiating from both eyes, asymmetrical (left eye slightly deeper from retinal display use)",
@@ -223,17 +205,54 @@
     "posture_movement": "Upright, almost military in spinal alignment, which contrasts strikingly with the weariness in his face and the slow deliberateness of his movements. He walks as if conserving energy but standing as if refusing to concede to age. Gestures are economical and precise — a hand raised to emphasize a point in conversation, fingers splayed over a manuscript.",
     "clothing_style": "Nearly always the same grey wool coat, single-breasted, with four visible repairs (one elbow patch in darker grey, one seam re-stitched along the left shoulder, patches on both front pockets). Underneath: simple linen shirts in cream or pale grey, worn soft from washing. Black denim or canvas trousers, creased but not fresh. Worn leather boots, resoled twice. No jewelry except a faded fabric watch strap (the watch itself long gone). Tier 4 working-class aesthetic — not poor, but committed to indifference toward consumption. Carries the battered datapad in a homemade canvas satchel reinforced with duct tape."
   },
-  "image_prompt": "Ngozi Dlamini, a weathered East Asian-African man in his late sixties, 178cm tall, lean and angular frame. Deep warm brown skin with golden undertones, angular face with high cheekbones and broader nasal bridge reflecting mixed heritage. Steel grey short hair combed back with precision. Deep brown natural eyes, left eye with faint blue LED retinal display ring and occasional flicker. Face heavily lined from decades of screen work, white stubble at half-inch length, three-centimeter scar along left jawline. Standing with rigid, almost military posture despite visible weariness. Wearing worn grey wool coat with visible repairs and patches, cream linen shirt beneath, black canvas trousers, resoled leather boots. Faded fabric watch strap, no other jewelry. Holding battered datapad in duct-tape-reinforced canvas satchel. Urban cyberpunk 2226 setting, dimly lit neo-brutalist interior or neon-lit Great Lakes Metropolitan Zone street, cool blue and amber lighting emphasizing the LED artifacts and tired determination in his expression. Mood: weary but resolute, decades of intellectual labor etched into every line. --ar 2:3 --v 6",
+  "image_prompt": "Soraya Kovalenko, 178cm tall lean angular figure, weathered warm medium-brown skin with golden undertones blending Eastern European, Middle Eastern, Sub-Saharan African, and Indigenous American heritage. Deep brown eyes with left eye bearing faint blue LED retinal display ring artifact, asymmetrical crow's feet, deep forehead creases, thin pale jawline scar. Steel grey short hair combed back, white stubble at half-inch precision. Wearing worn grey wool coat with visible repairs and elbow patch, cream linen shirt, black canvas trousers, resoled leather boots. Faded fabric watch strap wrist. Upright military posture contrasting weary expression. Carrying battered canvas satchel with duct tape reinforcement. GLMZ GLMZ setting, dim neon-filtered indoor lighting casting subtle blue glow across weathered face, tired determination in every line, documentary-style realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 44.4,
-    "Sub-Saharan African": 33.3,
-    "South Asian": 9.6,
-    "Southeast Asian": 5.9,
-    "Hispanic/Latin American": 3.5,
-    "Northern European": 3.3
+    "Eastern European": 32.8,
+    "Middle Eastern": 26.3,
+    "Sub-Saharan African": 22.8,
+    "Indigenous American": 18.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 20.3
+      },
+      "Slavic East": {
+        "Russian": 6.5,
+        "Ukrainian": 1.5
+      },
+      "Slavic West": {
+        "Sorbian": 4.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 25.4,
+        "Jordanian": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 18.9,
+        "Nigerian": 2.8
+      },
+      "East African": {
+        "Kenyan": 0.9,
+        "Ethiopian": 0.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 5.8,
+        "Menominee": 3.3
+      },
+      "Mesoamerican": {
+        "Mixtec": 9
+      }
+    }
+  }
 }

@@ -182,14 +182,14 @@ public class HtmlExportServiceTests
         {
             ["Weaponry"] = [("Gun", """{"name":"Gun","tags":[]}""")],
             ["Automata"] = [("Bot", """{"name":"Bot","tags":[]}""")],
-            ["Characters"] = [("Kyle", """{"name":"Kyle","tags":[]}""")],
+            ["People"] = [("Kyle", """{"name":"Kyle","tags":[]}""")],
         };
 
         var indexPath = svc.ExportAll(repos);
         var html = File.ReadAllText(indexPath);
         Assert.That(html, Does.Contain("bi-crosshair")); // weaponry
         Assert.That(html, Does.Contain("bi-robot")); // automata
-        Assert.That(html, Does.Contain("bi-people")); // characters
+        Assert.That(html, Does.Contain("bi-people")); // people
     }
 
     [Test]

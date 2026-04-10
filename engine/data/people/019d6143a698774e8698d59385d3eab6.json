@@ -1,7 +1,7 @@
 {
   "id": "019d6143a698774e8698d59385d3eab6",
   "type": "character",
-  "name": "Mika Rentería",
+  "name": "Mika Najjar",
   "aliases": [
     "Auntie P",
     "The Ledger",
@@ -14,7 +14,7 @@
   "age": 61,
   "status": "active",
   "location": "The Shelf, near Ashland and Division",
-  "description": "Perpetua Okafor occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the lower Shelf, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Shelf's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
+  "description": "Mika Najjar occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the lower Shelf, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Shelf's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -233,7 +233,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -252,44 +252,19 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
+    "The Marrow Market",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Hearthstone Firearms Youth-20 'First Step'",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Stratum",
-    "Adaeze Chen-Hawkins",
     "Silver",
-    "The Pure Hand",
-    "Palette",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Crucible RE-2 'Receptionist'",
-    "Dae-jung Seo",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-12D 'Typhoon'",
-    "Last Word",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Orbital Drop Pod",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Street Custom 'Gallows' Recurve Bow",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Bazaar",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Spire",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Ximena Cruz-Addo"
+    "Haze Johansson",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian and Hispanic/Latin American with significant South Asian admixture, complemented by smaller contributions from Sub-Saharan African, Northern European, and Southeast Asian ancestry. Her genetic makeup reflects the Ubiquitous Diaspora — a complex blend that manifests in the warm undertones of her deep brown skin, the distinctive eye shape with slight epicanthic folds, the bone structure showing both East and South Asian characteristics, and the subtle facial architecture that speaks to Latin American heritage. The minor Northern European and African admixtures add depth to her overall complexion and feature variation.",
+    "heritage": "Predominantly South Asian (60%) with significant Indigenous American (22.5%) and Middle Eastern (17.5%) ancestry, reflecting the Ubiquitous Diaspora. Her genetic makeup manifests in rich deep brown skin with golden and olive undertones — the South Asian foundation warmed by Middle Eastern contribution and tempered by Indigenous American heritage. Facial bone structure shows the characteristic blend: broader cheekbones and defined jawline from Indigenous American ancestry, refined by South Asian facial architecture, with subtle Middle Eastern angularity contributing to her distinctive profile. This tri-continental blend creates a complexion with remarkable depth, weathered by Shelf sun exposure and decades of chemical handling.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, with the dense musculature of someone who has done physical labor for decades. Not heavy, but solid — her frame fills space with quiet authority. Slight forward hunch from years bent over compounding work, but she carries herself with deliberate uprightness when moving through crowds.",
@@ -297,8 +272,8 @@
     "hair_style": "Close-cropped, precise, maintained with clippers — practical and economical",
     "hair_length": "Short",
     "eye_color": "Deep brown, with faint metallic shimmer at the iris edge from magnification implants; pupils sometimes lag slightly when refocusing",
-    "skin_tone": "Deep warm brown with golden and olive undertones from the blended East Asian, South Asian, and Hispanic/Latin American ancestry, weathered by Shelf sun exposure and chemical handling",
-    "complexion": "Lined face that reads as lived-in rather than aged — deep creases around mouth and eyes, faint webbing of expression lines. The facial structure shows the characteristic features of East and South Asian heritage blended with Latin American ancestry: slightly broader cheekbones, defined jawline with subtle angularity. Skin texture uneven from decades of minor chemical exposure; faint hyperpigmentation across knuckles and forearms. No makeup. Her gaze is direct and assessing.",
+    "skin_tone": "Deep warm brown with golden and olive undertones, the rich result of South Asian (60%), Indigenous American (22.5%), and Middle Eastern (17.5%) genetic blend, weathered by Shelf sun exposure and chemical handling",
+    "complexion": "Lived-in face bearing deep creases around mouth and eyes, faint webbing of expression lines mapping decades of focused work. Facial structure distinctly reflects her ancestry: slightly broader cheekbones and strong defined jawline characteristic of Indigenous American heritage, refined by South Asian bone structure, with subtle angular definition from Middle Eastern contribution. Skin texture uneven from decades of minor chemical exposure; faint hyperpigmentation across knuckles and forearms. No makeup. Her gaze is direct and assessing.",
     "distinguishing_marks": [
       "Faint webbed subcutaneous scarring across both temples and upper chest — visible faint lines under skin where outdated biomonitor mesh is embedded, like a second circulatory system drawn in pale ink",
       "Chronic staining at fingertips of both hands: yellowed-orange pigmentation from capsule coating compounds that has settled into the nail beds and cuticles, resistant to washing",
@@ -309,17 +284,39 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Steps carefully through crowds as if counting invisible distances. Often still, observing. When engaged in work (compounding, examining a patient), her movements become precise and almost meditative. Sits forward, elbows on knees, when listening. Her hands are always slightly elevated when at rest, a habitual posture from decades of precision work.",
     "clothing_style": "Tier 4 practical: layered work tunics in muted colors (grays, dark blues, rust browns) over long-sleeved base shirts — protection from chemical splash more than fashion. Canvas apron with deep cargo pockets, always worn, stained with use and age. Reinforced work pants in heavy cotton, worn at the knees. Soft-soled shoes designed for standing long hours. No jewelry. A thin cord around her neck holding a small handmade charm — wood and copper wire, possibly African in origin — visible only if she leans forward. Everything well-maintained but visibly old, patched at seams, deliberately stitched by her own hand."
   },
-  "image_prompt": "Mika Rentería, a 168cm East Asian and Hispanic/Latin American woman with deep warm brown skin and olive undertones, silver-gray close-cropped hair. Age-lined face with direct, assessing gaze; deep brown eyes with subtle metallic shimmer from aging magnification implants. Faint subcutaneous scarring visible at temples and upper chest like biomonitor tracery. Weathered hands with chronic yellowed-orange chemical staining at fingertips, faded burn mark on left hand, 8cm white scar along right jaw. Broad-shouldered, muscular build from decades of physical labor, slight forward posture. Wearing layered work tunics in gray and rust brown over long-sleeved base shirt, stained canvas apron with cargo pockets, reinforced work pants worn at knees, soft-soled shoes. Thin wooden and copper cord necklace visible at collar. No augmentations visible except subtle eye implant shimmer. Standing in underground pharmacological lab, soft bioluminescent lighting casting faint glow on skin, surrounded by compounding equipment and chemical vials. Posture deliberate and still, hands slightly elevated at rest. Cyberpunk 2226 GLMZ aesthetic, practical and worn, characterized by quiet authority and meticulous precision. --ar 2:3 --v 6",
+  "image_prompt": "Mika Najjar, 168cm tall, broad-shouldered chemical compound specialist in the Great Lakes Metropolitan Zone, 2226. Deep warm brown skin with golden and olive undertones reflecting South Asian, Indigenous American, and Middle Eastern ancestry — weathered from decades of Shelf sun and chemical work. Strong defined jawline and broad cheekbones showing Indigenous American-South Asian blend with subtle Middle Eastern angularity. Silver-gray close-cropped hair, lined face with deep creases mapping a life of focused precision work. Dark brown eyes with faint metallic implant shimmer, faint subcutaneous biomonitor mesh tracery visible at temples. Stained fingertips from compound work, white jaw scar, burn mark on left hand. Wearing layered gray work tunics, heavy canvas apron with deep pockets, reinforced cotton pants, soft-soled work shoes. Small wooden and copper-wire charm on cord at neck. Sits forward with elbows on knees in underground compounding lab, warm amber work lighting casting shadows across her assessing gaze. Hands elevated, precise and meditative. GLMZ 2200s underground aesthetic, worn practical clothing, lived-in authority. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 33.2,
-    "Hispanic/Latin American": 33.1,
-    "South Asian": 13.3,
-    "Sub-Saharan African": 8.3,
-    "Northern European": 7.2,
-    "Southeast Asian": 4.9
+    "South Asian": 60,
+    "Indigenous American": 22.5,
+    "Middle Eastern": 17.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 60
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 3.9,
+        "Cherokee": 5.1
+      },
+      "Andean": {
+        "Quechua": 4.9
+      },
+      "Mesoamerican": {
+        "Maya": 4.2,
+        "Nahua": 4.4
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 17.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f9761082a5cc342d015b57",
   "type": "character",
-  "name": "Briar Okafor",
+  "name": "Briar Baek",
   "aliases": [
     "Theo",
     "Ghostprint"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf, operating a mobile print node out of a converted food-stall chassis, near Ashland and Division",
-  "description": "Théodore is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
+  "description": "Briar Baek is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Arsonist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,28 +243,11 @@
     "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Nesting Doll",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus Exo-Runner Frame",
-    "Cem Watanabe-Amponsah",
-    "Chronicle",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Free Assembly",
-    "Independent Darknet Node Architecture",
-    "Lowline Press",
-    "Praevex",
-    "Street Custom 'Gallows' Recurve Bow",
-    "TESSERA TC-3 'Crucible'",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian (37.5%) / Sub-Saharan African (31.8%) / Pacific Islander (30.7%) — a complex tri-continental blend creating distinctive phenotypic markers: warm medium-to-deep brown skin with golden and reddish undertones, facial structure reflecting the convergence of South Asian angular features with Sub-Saharan and Pacific Islander broader bone structure",
+    "heritage": "East Asian (34.5%) / Indigenous American (31.4%) / Sub-Saharan African (18.5%) / Northern European (12.8%) / South Asian (2.8%) — a striking global convergence creating distinctive phenotypic markers: warm medium-deep brown skin with golden and reddish undertones, facial structure blending East Asian angularity with Indigenous American and Sub-Saharan African broader cheekbones and orbital structure, creating a uniquely balanced aesthetic that reflects four continents",
     "height_cm": 172,
     "weight_kg": 63,
     "build": "Wiry and lean with corded forearms from constant manual work — typesetting, chassis maintenance, carrying reams of paper. Restless musculature of someone who rarely sits still.",
@@ -272,8 +255,8 @@
     "hair_style": "Loose natural curls, shoulder-length, often pulled into a half-knot with a data-chip or pen threaded through",
     "hair_length": "Medium to Long",
     "eye_color": "Dark brown with slight amber undertone",
-    "skin_tone": "Warm medium brown with golden and subtle reddish undertones — the product of South Asian melanin density meeting Sub-Saharan and Pacific Islander warmth, creating a complexion that catches light with natural luminosity",
-    "complexion": "Angular facial structure with prominent cheekbones and sharp jawline blending South Asian definition with broader Pacific Islander bone structure around the temples and cheeks. Skin is clear but weathered by irregular sleep and constant outdoor movement. A thin scar bisects his left eyebrow from a past encounter with Axiom security.",
+    "skin_tone": "Warm medium-deep brown with golden and subtle reddish undertones — the product of high melanin density from East Asian, Indigenous American, and Sub-Saharan African ancestry, creating a complexion with natural depth, luminosity, and rich chromatic warmth",
+    "complexion": "Facial structure balancing East Asian angular refinement with broader Indigenous American and Sub-Saharan African cheekbone and temple structure, creating a harmonious blend across the face. Strong defined jawline. Skin is clear but weathered by irregular sleep and constant outdoor movement. A thin scar bisects his left eyebrow from a past encounter with Axiom security.",
     "distinguishing_marks": [
       "Bioluminescent tattoo geneware spanning both collarbones in abstract circuit-pattern design, pulses faint blue when heart rate elevates or under stress",
       "Thin white scar bisecting left eyebrow, approximately 2cm",
@@ -284,14 +267,63 @@
     "posture_movement": "Rarely still — fingers tap, shoulders shift, eyes dart in constant low-grade threat assessment. Leans forward when speaking, as if sharing a secret. Walks quickly with economical steps. Sits on the edge of chairs, never fully relaxed. When focused on text, his entire body goes motionless.",
     "clothing_style": "Multiple layers of breathable mesh vests and reclaimed-fabric overshirts in muted grays and blacks, intentionally worn. Pockets stuffed visibly with data chips, print cartridges, folded broadsheets, encrypted key-fobs. Worn canvas trousers with reinforced knees. Steel-toed boots patched multiple times. No corporate branding. Tier 5 / working-poor aesthetic — function over fashion, but curated within that constraint."
   },
-  "image_prompt": "Briar Okafor, 172cm lean wiry figure, warm medium-brown skin with golden undertones, angular South Asian-influenced cheekbones blending with Pacific Islander bone structure. Shoulder-length loose natural curls dyed deep arterial red, half-knotted with a data-chip. Dark brown eyes with amber flicker. Blue-pulsing bioluminescent circuit tattoo across collarbones visible through mesh vest layers. White scar bisecting left eyebrow. Restless posture, leaning forward, fingers tapping. Layered muted gray and black breathable mesh vests, pockets visibly stuffed with data chips and broadsheets, worn canvas trousers with reinforced knees, patched steel-toed boots. Standing in dimly-lit underground print workshop, neon glow reflecting off weathered surfaces, mid-2220s cyberpunk aesthetic, sharp focus on restless energy and working-poor functional style --ar 2:3 --v 6",
+  "image_prompt": "Briar Baek, GLMZ, mixed-heritage underground typesetter with warm deep brown skin and golden undertones, angular East Asian facial structure blended with broader Indigenous American and Sub-Saharan cheekbones, dark brown eyes with amber flecks. Shoulder-length loose natural curls dyed arterial red, half-knotted with data chip. Lean wiry build, 172cm tall. Layered mesh vests over reclaimed gray-black overshirts, multiple visible pockets stuffed with print cartridges and data chips, worn canvas trousers, patched steel-toed boots. Bioluminescent circuit-pattern tattoo geneware glowing faint blue across collarbones. Thin scar bisecting left eyebrow. Tense posture, leaning forward, fingers restless, eyes alert. Underground print shop or cramped safehouse setting, low warm lighting casting shadows, intimate near-whisper energy. Neo-noir urban aesthetic, working-poor functionality, threat-aware. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 37.5,
-    "Sub-Saharan African": 31.8,
-    "Pacific Islander": 30.7
+    "East Asian": 34.5,
+    "Indigenous American": 31.4,
+    "Sub-Saharan African": 18.5,
+    "Northern European": 12.8,
+    "South Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 11.9
+      },
+      "Korean": {
+        "Korean": 20.8
+      },
+      "Japanese": {
+        "Japanese": 1.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 24.3
+      },
+      "Mesoamerican": {
+        "Maya": 1.9,
+        "Zapotec": 5.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 8
+      },
+      "Southern African": {
+        "South African": 6.2
+      },
+      "West African": {
+        "Nigerian": 4.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 10,
+        "German": 2.3
+      },
+      "Scandinavian": {
+        "Swedish": 0.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.8
+      }
+    }
+  }
 }

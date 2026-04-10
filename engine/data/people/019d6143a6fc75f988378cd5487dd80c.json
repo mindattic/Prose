@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fc75f988378cd5487dd80c",
   "type": "character",
-  "name": "Rowan Ixchel",
+  "name": "Ngozi Morimoto",
   "aliases": [
     "Spire",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
-  "description": "Tiare Svensson-Kone is lean and angular, all sharp edges and visible tension. At 26, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTiare Svensson-Kone operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Ngozi Morimoto is lean and angular, all sharp edges and visible tension. At 26, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a getaway pilot out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nNgozi Morimoto operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.53,
@@ -264,7 +264,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,30 +281,11 @@
     "The Nearfield",
     "Ashfield",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "The Human Baseline Alliance",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov"
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian dominant (36.6%) with substantial Indigenous American (14.7%) and Hispanic/Latin American (14.1%) ancestry, balanced by Sub-Saharan African (12.9%), Eastern European (12.5%), and Northern European (9.2%) elements. The genetic blend creates striking angular features with warm undertones — high cheekbones and defined jaw from East Asian genetics, enriched by the broader facial structure and richness of Indigenous and African heritage.",
+    "heritage": "Sub-Saharan African dominant (38.3%) with substantial Hispanic/Latin American (28.0%) and East Asian (27.7%) ancestry, balanced by Eastern European (6.0%) elements. This genetic blend creates striking polychromatic features — high cheekbones and defined jaw from African heritage, refined by East Asian angularity, warmed by Latin American undertones, with subtle Eastern European depth in bone structure. The result is a face that reads as distinctly multicultural, each ancestry contributing visible elements that harmonize rather than compete.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular with corded muscle definition — the kind of frame built by deliberate training rather than genetics. Minimal body fat, visible musculature in forearms and shoulders from constant movement conditioning.",
@@ -312,8 +293,8 @@
     "hair_style": "Pulled back in a tight functional braid, kept short enough to stay out of a helmet",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and tracking",
-    "skin_tone": "Warm medium brown — a complex blend of East Asian, Indigenous American, and African heritage creating depth and richness, with subtle golden undertones. Regional variation from cockpit time creates slight pallor in protected areas, contrasting with sun-exposure bronze on exposed skin.",
-    "complexion": "Sharp-featured face with high cheekbones, prominent jawline, and slightly broader nasal bridge reflecting the Indigenous American and African components of her ancestry. Minimal grooming beyond function — no makeup, skin weather-marked from exposure and stress. A few shallow scars across the cheekbone from impacts she didn't slow down for.",
+    "skin_tone": "Deep warm brown with golden undertones — a complex interplay of Sub-Saharan richness, East Asian clarity, and Latin American warmth creating multidimensional depth. Regional variation from cockpit time creates slight pallor in protected areas, contrasting with sun-exposure bronze on exposed skin, creating natural chromatic layering.",
+    "complexion": "Sharp-featured face with high cheekbones, prominent jawline, and slightly broader nasal bridge reflecting the harmonized African and Hispanic/Latin American components. Subtle eye shape suggesting East Asian heritage. Minimal grooming beyond function — no makeup, skin weather-marked from exposure and stress. A few shallow scars across the cheekbone from impacts she didn't slow down for.",
     "distinguishing_marks": [
       "Surgical scar at base of skull, visible when hair is pulled back — neural interface jack installation point, roughly 3cm in length, pale and clean",
       "Chrome visible along the right forearm where move-by-wire system connects to skin — metallic overlay visible beneath translucent dermal panels, pulsing faintly with neural traffic",
@@ -321,20 +302,59 @@
       "Tattoo on inside left wrist — QUANTA symbol (Φ) with flight path coordinates beneath, professional rather than decorative"
     ],
     "visible_augmentations": "Move-by-wire system visible as chrome subdermal tracking along spine and limbs, particularly pronounced in forearms where metallic interfaces break the skin line. Base-of-skull jack visible as a sealed hatch under skin at hairline. When she moves, there's a subtle lag-free precision that reads as augmented — no human has that economy of motion.",
-    "posture_movement": "Moves with controlled efficiency, never wasting motion. Slight forward lean when standing, weight distributed ready to move. Eyes constantly processing, scanning for exits and variables. When still, there's coiled tension — she doesn't relax, she powers down.",
+    "posture_movement": "Moves with controlled efficiency, never wasting motion. Slight forward lean when standing, weight distributed ready to move. Eyes constantly processing, scanning for exits and variables. When still, there's coiled tension — she powers down rather than relaxes.",
     "clothing_style": "Tier 4 functional — flight suit (armored nylon blend, dark gray) worn open over fitted black synth-weave shirt. Cargo pants with reinforced pockets for tools and contract data. Steel-toed boots rated for high-g cockpit environments. Harness-style ballistic vest over everything, custom-fitted for cockpit use. No jewelry, no corporate logos, no gang colors — anonymity maintained through absolute functionality."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Rowan Ixchel, a sharp-featured pilot with warm medium-brown skin blending East Asian, Indigenous American, Hispanic, and African heritage. High cheekbones, defined jawline, dark alert eyes. Dark brown hair with sun-bleached streaks pulled back tight in a functional braid. Lean muscular frame, 168cm, visible muscle definition. Wearing dark gray armored flight suit open over black synth-weave shirt, reinforced cargo pants, steel-toed boots, custom ballistic harness vest. Chrome subdermal augmentation visible along right forearm where move-by-wire system breaks the skin, metallic neural interfaces pulsing faintly. Surgical scar at base of skull visible at hairline where neural jack is installed. Small scars across cheekbone, QUANTA tattoo on inner wrist with coordinates. Posture tense and controlled, weight forward-ready, eyes scanning. Cockpit interior or hangar bay lighting, cool neon accents reflecting off chrome augmentations. Mood: hyper-focused, dangerous calm, no-nonsense. Cinematic cyberpunk aesthetic, atmospheric depth. --ar 2:3 --v 6",
+  "image_prompt": "Ngozi Morimoto, 168cm lean angular cyberpirate pilot, deep warm brown skin with golden undertones blending Sub-Saharan African, East Asian, and Latin American heritage, high cheekbones and sharp jawline, dark brown eyes alert and scanning, hair dark with sun-bleached streaks pulled tight in functional braid. Visible chrome subdermal augmentations tracking forearms and spine with luminescent pulse, base-of-skull neural interface jack visible at hairline, weather-marked face with shallow cheekbone scars. Wearing dark gray armored flight suit open over black synth-weave shirt, reinforced cargo pants, steel-toed boots, custom ballistic harness vest. Coiled tension in posture, forward lean stance, hands positioned for rapid movement. Great Lakes Metropolitan Zone cockpit or neon-lit hangar setting, cool blue-purple neo-noir lighting with accent highlights on chrome augmentation points, gritty industrial atmosphere, 2226 aesthetic, photorealistic detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 36.6,
-    "Indigenous American": 14.7,
-    "Hispanic/Latin American": 14.1,
-    "Sub-Saharan African": 12.9,
-    "Eastern European": 12.5,
-    "Northern European": 9.2
+    "Sub-Saharan African": 38.3,
+    "Hispanic/Latin American": 28,
+    "East Asian": 27.7,
+    "Eastern European": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 26,
+        "Kenyan": 12.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 12.6,
+        "Honduran": 10.1
+      },
+      "South American": {
+        "Ecuadorian": 3.1,
+        "Colombian": 2.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13.3
+      },
+      "Korean": {
+        "Korean": 12.2
+      },
+      "Chinese": {
+        "Sichuanese": 2.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 4.1
+      },
+      "Slavic South": {
+        "Bosnian": 0.2
+      },
+      "Slavic West": {
+        "Czech": 0.6,
+        "Sorbian": 1.1
+      }
+    }
+  }
 }

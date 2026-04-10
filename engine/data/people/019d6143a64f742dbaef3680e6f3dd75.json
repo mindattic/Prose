@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64f742dbaef3680e6f3dd75",
   "type": "character",
-  "name": "Remi Dalgaard-Holm",
+  "name": "Remi Wójcik-Mwangi",
   "aliases": [
     "Bonemeal",
     "Lóa"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Stockyard, operates across Garfield Rack and into the edges of Ironvein, near Ashland and Chicago Ave",
-  "description": "Lóa is built like a question you don't want answered — wide through the shoulders, with a stillness in their face that reads less as calm and more as the particular quiet of someone who has already made a decision you haven't been told about yet. They have Icelandic and Yoruba ancestry refracted through three generations of Meridian Stockyard living: a long face with high coloring, skin a deep reddish brown, hair grown into a single dense column at the back of their skull and bleached white at the tips — a Stockyard crew identifier. Their left hand has two knuckles replaced with reinforced ceramic implants after a break that didn't heal clean. They have a small bioluminescent tattoo — amber, heron-shaped — on the inside of their right wrist that pulses when they're calm and goes dark when they're not. It is a gift from someone they won't discuss.\n\nLóa does not hurt people enthusiastically. This is what makes them effective and what has given them the nickname Bonemeal — not because they're violent, but because they show up at businesses before the violence is necessary, like something ground down before you even see the stone. They collect protection fees, mediate disputes between crew and clients, and serve as a physical deterrent. They are also, privately, a careful reader who borrows physical books from a Stockyard librarian named Asante and returns them with the spines uncreased. Nobody in the crew knows this. They keep their inner life behind walls that would be impressive in anyone and are almost heartbreaking in someone this young.",
+  "description": "Remi Wójcik-Mwangi is built like a question you don't want answered — wide through the shoulders, with a stillness in their face that reads less as calm and more as the particular quiet of someone who has already made a decision you haven't been told about yet. They have Icelandic and Yoruba ancestry refracted through three generations of Meridian Stockyard living: a long face with high coloring, skin a deep reddish brown, hair grown into a single dense column at the back of their skull and bleached white at the tips — a Stockyard crew identifier. Their left hand has two knuckles replaced with reinforced ceramic implants after a break that didn't heal clean. They have a small bioluminescent tattoo — amber, heron-shaped — on the inside of their right wrist that pulses when they're calm and goes dark when they're not. It is a gift from someone they won't discuss.\n\nRemi Wójcik-Mwangi does not hurt people enthusiastically. This is what makes them effective and what has given them the nickname Bonemeal — not because they're violent, but because they show up at businesses before the violence is necessary, like something ground down before you even see the stone. They collect protection fees, mediate disputes between crew and clients, and serve as a physical deterrent. They are also, privately, a careful reader who borrows physical books from a Stockyard librarian named Asante and returns them with the spines uncreased. Nobody in the crew knows this. They keep their inner life behind walls that would be impressive in anyone and are almost heartbreaking in someone this young.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -180,7 +180,7 @@
     "Diplomat": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Stockyard",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,44 +250,25 @@
     "Garfield Rack",
     "Rendstone Nuclear",
     "Ironvein",
+    "Circuit",
+    "Chicago",
+    "Harrow & The Bone Meridian",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Gravimetric Collapse Charge GCC-9",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions EL-9 'Heron'",
-    "Harrow & The Bone Meridian",
-    "Chicago",
-    "Blackmarket",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ferrogate Enforcer Cruiser",
-    "Ihaia Nystrom-Keita",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "MERIDIAN",
-    "Meridian Core",
-    "Neuromorphic Pressure Cestus",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Tessera Corponation",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tessera Personal Defense System TPDS-1 'Reflex'",
-    "The Circuit",
-    "The Heritage Vault",
-    "The Librarian",
-    "The Pure Hand",
-    "Tobechukwu Papadimitriou-Vásárhelyi"
+    "Arcturus Defense Solutions EL-9 'Heron'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European (55.1%) with significant Pacific Islander (19.3%) and East Asian (18.3%) ancestry, with minor Hispanic/Latin American (4.6%) and Southeast Asian (2.7%) heritage. Three generations Meridian Stockyard.",
+    "heritage": "Pluricultural blend: Sub-Saharan African (34.2%), Hispanic/Latin American (28.6%), Eastern European (27.3%), South Asian (8.8%), East Asian (1.1%). This fusion creates striking feature layering—deep rich brown undertones meeting warm golden and amber tones, bone structure drawing from multiple continental lineages with pronounced African and Eastern European architecture softened by Hispanic and South Asian warmth. Diaspora-born, genetically representative of the 22nd-century real.",
     "height_cm": 185,
     "weight_kg": 89,
     "build": "Wide through shoulders and chest, lean-muscled through the core, structured like load-bearing architecture. No excess; every kilogram serves function. Hands and forearms show working density.",
     "hair_color": "Black at roots, bleached white from mid-length to tips",
     "hair_style": "Single dense column braided or twisted, worn at the back of the skull — Harrow Brothers crew identifier",
     "hair_length": "Long (shoulder-blade length when unbound)",
-    "eye_color": "Light gray-blue with warm amber undertones",
-    "skin_tone": "Warm medium-tan with golden undertones and high coloring in the cheeks and temples, blending Northern European fairness with Pacific Islander and East Asian warmth",
-    "complexion": "Long face with defined jawline and prominent cheekbones shaped by East Asian ancestry. Skin weathered but clean, no acne scarring. Expression neutral at rest — the kind of stillness that suggests a decision already made. Minimal facial hair, kept trimmed close.",
+    "eye_color": "Warm amber with gray-blue rim—naturally dark iris with notable light freckling, reflecting South Asian and African heritage with Eastern European undertone",
+    "skin_tone": "Deep warm brown with rich golden undertones, melanin-dense from Sub-Saharan and Hispanic ancestry, warmed further by South Asian heritage. High natural coloring in cheeks and temples. Skin has lived resilience—warm mahogany at baseline, sun-responsive.",
+    "complexion": "Strong bone structure reflecting convergence of Sub-Saharan African, Eastern European, and Hispanic ancestry—defined jawline with prominent, sculpted cheekbones showing African and Eastern European architecture. Broad nose with slight flare at base, characteristic of Sub-Saharan and Hispanic heritage. Wide-set eyes with slight epicanthic fold suggestion from South Asian ancestry. Skin weathered but clean, no acne scarring. Expression neutral at rest—the kind of stillness that suggests a decision already made. Minimal facial hair, kept trimmed close.",
     "distinguishing_marks": [
       "Small bioluminescent tattoo on the inside of right wrist: heron shape in amber bio-ink, pulses faintly when calm, darkens when agitated — emotional indicator.",
       "Faint white scar tissue across left knuckles where ceramic implants were installed post-fracture."
@@ -296,16 +277,55 @@
     "posture_movement": "Moves with economic efficiency, no wasted motion. Shoulders squared but not aggressive. Head level, eyes tracking but not scanning — suggests threat assessment is passive, constant. Stillness is their default state; movement is deliberate. Hands stay relaxed and visible, never fidgeting.",
     "clothing_style": "Tier 3-4 working crew aesthetic: well-maintained dark synthleather jacket with Harrow Brothers insignia (understated), charcoal thermal undershirt, cargo pants in matte black with functional pockets, steel-toed work boots broken in but not scuffed. No logos, no ostentatious chrome. Clothing is armor and uniform both. One small amber knot-charm hanging from left shoulder strap — crew marker."
   },
-  "image_prompt": "Remi Dalgaard-Holm, tall mixed-ancestry person with warm golden-tan skin and defined East Asian-influenced facial structure, long black-to-white ombre braided hair bound at back of skull. Light gray-blue eyes with amber warmth. 185cm athletic build, wide shoulders tapering to lean core. Wearing dark synthleather Harrow Brothers jacket over charcoal thermal, matte black cargo pants, steel-toed boots. Bioluminescent amber heron tattoo visible on inside of right wrist, ceramic knuckle reinforcements on left hand. Neutral resting expression, perfectly still posture suggesting constant passive threat assessment. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody industrial warehouse lighting, cool blues and amber accent light hitting the wrist tattoo. Professional crew operative aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Remi Wójcik-Mwangi, 185cm tall mixed-heritage cyborg with deep warm mahogany skin, golden-amber undertones, prominent African and Eastern European bone structure with sculpted cheekbones and broad nose. Warm amber eyes with gray undertones. Long black-to-white ombré hair braided into single column down back of skull. Left hand shows ceramic knuckle reinforcements. Wearing dark synthleather Harrow Brothers jacket, charcoal thermal undershirt, matte black cargo pants, steel-toed boots. Small amber bioluminescent heron tattoo glowing faintly on right inner wrist. Neutral resting expression, squared shoulders, economic stillness. Amber knot-charm on left shoulder strap. GLMZ Great Lakes Metropolitan Zone setting, moody neon lighting catching skin tone and ambient glow of wrist tattoo, industrial warehouse or crew quarters background. Photorealistic, character portrait, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 55.1,
-    "Pacific Islander": 19.3,
-    "East Asian": 18.3,
-    "Hispanic/Latin American": 4.6,
-    "Southeast Asian": 2.7
+    "Sub-Saharan African": 34.2,
+    "Hispanic/Latin American": 28.6,
+    "Eastern European": 27.3,
+    "South Asian": 8.8,
+    "East Asian": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 10
+      },
+      "Central African": {
+        "Congolese": 9.2,
+        "Angolan": 15
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 24.9
+      },
+      "Mexican": {
+        "Mexican": 3.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 27.3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 6.9,
+        "Tamil Sri Lankan": 1.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 0.3,
+        "Shanghainese": 0.3
+      },
+      "Korean": {
+        "Korean": 0.5
+      }
+    }
+  }
 }

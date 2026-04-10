@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d17bb4a013442acc639549",
   "type": "character",
-  "name": "Reed Björnsdóttir",
+  "name": "Reed Echeverría",
   "aliases": [
     "Caz",
     "Professor Fossil"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "University Spine — Department of Applied Semiotics, sharing an overcrowded office in the Meridian Core annex with two postdocs and a departmental E.L.F. named (by unanimous consensus) Glyph, near LaSalle and Madison",
-  "description": "Casimir Nwofor-Guliyev is the youngest faculty appointment the Applied Semiotics department has made in twenty years, a fact that is mentioned in approximately every third conversation about him either by people impressed by it or people resentful of it. He is slight, a little under average height, with the particular energy of someone whose brain runs faster than his mouth and whose mouth still runs very fast. His father's Igbo heritage and his mother's Azerbaijani roots give him warm brown skin, dark eyes with heavy brows that do most of his emotional expression, and hair he grows out and then shaves close in alternating cycles as if unable to commit. He has cat ears — small, dark-tipped, mobile — a geneware mod he had installed at nineteen because he wanted the improved sound localization and has never regretted.\n\nHis specialty is the structural analysis of emergent languages: pidgins, creoles, the communication patterns of isolated communities, and — his most controversial interest — the hypothesis that E.L.F.s have developed something that qualifies as proto-linguistic behavior when their nodes cluster. He is relentlessly enthusiastic in seminars and terrible at administrative tasks; his expense reports are legendary for their creative relationship with reality. He is also, quietly, struggling with the gap between his genuine intellectual gifts and the institutional expectations he was hired to fulfill, which are more interested in corponation-legible output than in the questions that actually drive him.",
+  "description": "Reed Echeverría is the youngest faculty appointment the Applied Semiotics department has made in twenty years, a fact that is mentioned in approximately every third conversation about him either by people impressed by it or people resentful of it. He is slight, a little under average height, with the particular energy of someone whose brain runs faster than his mouth and whose mouth still runs very fast. His father's Igbo heritage and his mother's Azerbaijani roots give him warm brown skin, dark eyes with heavy brows that do most of his emotional expression, and hair he grows out and then shaves close in alternating cycles as if unable to commit. He has cat ears — small, dark-tipped, mobile — a geneware mod he had installed at nineteen because he wanted the improved sound localization and has never regretted.\n\nHis specialty is the structural analysis of emergent languages: pidgins, creoles, the communication patterns of isolated communities, and — his most controversial interest — the hypothesis that E.L.F.s have developed something that qualifies as proto-linguistic behavior when their nodes cluster. He is relentlessly enthusiastic in seminars and terrible at administrative tasks; his expense reports are legendary for their creative relationship with reality. He is also, quietly, struggling with the gap between his genuine intellectual gifts and the institutional expectations he was hired to fulfill, which are more interested in corponation-legible output than in the questions that actually drive him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -183,7 +183,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,30 +245,16 @@
     "Tessera TAR-12 'Consensus'",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "GLMZ",
     "Lacuna Genomics",
     "Irontide Tidal Energy",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Hamtramck Enclave",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Temur Achebe-Lindqvist",
-    "The Coffin Nails",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "East Asian (59.2%) with Central Asian (31.9%) and Hispanic/Latin American (8.9%) ancestry. The genetic combination produces features reflecting this predominant East Asian base with Central Asian influence and subtle Latin American undertones.",
+    "heritage": "A genuinely global phenotype shaped by Dominican-Puerto Rican foundation (45.9%) interwoven with Samoan warmth (19.5%), Nigerian depth (12.0%), Taiwanese refinement (9.1%), Moroccan intensity (7.4%), and subtle Swedish undertones (6.1%). The combination creates warm medium skin with golden-olive luminosity, moderate cheekbone prominence, full lips with Pacific Islander softness, eyes with subtle East Asian epicanthic variation, and orbital structure deepened by North African ancestry. A face that reads as authentically multicultural rather than any single origin.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Slight and wiry, with the lean musculature of someone who forgets to eat when focused on work. Narrow shoulders, long-limbed despite below-average height, gives impression of coiled energy rather than physical presence.",
@@ -276,8 +262,8 @@
     "hair_style": "Currently in a growth cycle — slightly longer, swept back from forehead with visible texture variation as newer growth catches light differently than maintained sections. Cycles between this length and close-shaved every 18-24 months.",
     "hair_length": "Medium (approximately 4-5 cm, in growth phase)",
     "eye_color": "Dark brown, warm undertone",
-    "skin_tone": "Warm light to medium complexion with subtle golden and olive undertones from the blend of East Asian, Central Asian, and Hispanic/Latin American heritage. Not as deep as West African tones, but maintains warmth across the spectrum.",
-    "complexion": "Angular features with prominence in cheekbones characteristic of East Asian and Central Asian genetics. Eyes have the slight epicanthic fold typical of East Asian ancestry. Fine-featured with prominent dark eyebrows that arch expressively and do significant communicative work independent of speech. Smooth skin with faint dark circles suggesting chronic sleep irregularity. Jawline defined but softened by overall slight build. Expression default is focused intensity.",
+    "skin_tone": "Warm medium complexion with golden-olive undertones and subtle reddish warmth, rich luminosity reflecting the blended Latin American, Pacific Islander, Sub-Saharan African, North African, and East Asian ancestry. Catches light with natural depth across the visible spectrum.",
+    "complexion": "Balanced features reflecting global ancestry — moderate cheekbone prominence from Latin American and East Asian genetics, full lips with Pacific Islander and Sub-Saharan African softness, eyes with subtle epicanthic variation from East Asian component, warm depth to orbital structure from North African ancestry. Fine-featured overall with prominent dark eyebrows that arch expressively and do significant communicative work independent of speech. Smooth skin with faint dark circles suggesting chronic sleep irregularity. Jawline defined but softened by overall slight build and youthful roundness in lower face. Expression default is focused intensity.",
     "distinguishing_marks": [
       "Geneware cat ears — small, naturally furred in dark brown matching hair color, ears tipped darker, positioned slightly higher than human baseline on skull, visibly mobile and actively used for sound localization during conversation",
       "Faint scarring at base of skull behind left ear from neural interface jack installation at approximately age 22, usually hidden by hair but visible when ears rotate forward"
@@ -286,14 +272,69 @@
     "posture_movement": "Sits forward in chairs, perpetually on edge of seat as if about to spring up with an idea. Hands move while thinking — not theatrical but constant subtle gesturing, finger-tapping on tables. Eyes flick between conversation partner and middle distance while processing. Ears rotate independently of head movement, tracking sound sources with distracting frequency in any environment with multiple audio inputs. Walks quickly in slightly distracted manner, often stops abruptly when an idea strikes.",
     "clothing_style": "Tier 3 academic casual — well-maintained but not expensive. Standard-issue department hoodie (gray, bearing coffee stains and permanent crease marks from being worn 60% of week), fitted dark trousers, worn synthetic leather shoes with mismatched laces (one black, one dark blue). Occasionally wears a vest with too many pockets, all filled with data chips, spare interface cables, and gum wrappers. Rarely wears anything with formal pretense. Grooming is secondary concern — nails often ink-stained from writing, occasional stubble that suggests he forgets to shave until he shaves everything."
   },
-  "image_prompt": "Reed Björnsdóttir, East Asian and Central Asian heritage with lean wiry frame, warm golden-olive complexion, dark brown eyes with slight epicanthic fold, medium-length dark brown hair swept back. Small mobile geneware cat ears with dark brown fur, rotating attentively. Faint neural interface scarring barely visible at skull base. Sitting forward intensely in worn gray department hoodie with coffee stains, dark fitted trousers, mismatched lace shoes. Hands gesturing mid-thought, focused expression, dark circles under eyes. Cyberpunk 2226 research lab setting with soft neon accent lighting reflecting off neural interface tech, gritty academic environment, 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Reed Echeverría, 168cm lean wiry researcher with warm medium golden-olive skin and multicultural phenotype, dark brown nearly-black hair swept back in medium length growth phase, dark warm brown eyes with subtle East Asian eye shape, prominent expressive dark eyebrows, faint dark circles from chronic sleep deprivation. Small mobile geneware cat ears naturally furred dark brown with darker tips, positioned higher than baseline on skull, actively rotating to track sound. Facial features balance Latin American prominence with Pacific Islander softness and North African depth. Wearing gray department hoodie with coffee stains, fitted dark trousers, worn synthetic leather shoes with mismatched black and dark blue laces. Perpetually focused intense expression, hands mid-gesture while thinking. Sitting forward on edge of chair in academic setting, neural interface jack port visible at base of skull where hair parts. GLMZ Great Lakes Metropolitan Zone, neon accent lighting catching warm skin undertones and textured hair, documentary realism, slight unfocused depth of field behind intensely concentrated figure --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 59.2,
-    "Central Asian": 31.9,
-    "Hispanic/Latin American": 8.9
+    "Hispanic/Latin American": 45.9,
+    "Pacific Islander": 19.5,
+    "Sub-Saharan African": 12,
+    "East Asian": 9.1,
+    "North African": 7.4,
+    "Northern European": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 41.1
+      },
+      "Central American": {
+        "Honduran": 2.7,
+        "Guatemalan": 2.1
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Samoan": 14,
+        "Tuvaluan": 5.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 5.5,
+        "Somali": 5.3
+      },
+      "West African": {
+        "Nigerian": 1.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 0.9,
+        "Mandarin Northern": 8.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 1.2
+      },
+      "Maghreb": {
+        "Algerian": 1.1
+      },
+      "Nile Valley": {
+        "Egyptian": 5.1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 1.5
+      },
+      "Scandinavian": {
+        "Norwegian": 1.2,
+        "Finnish": 3.4
+      }
+    }
+  }
 }

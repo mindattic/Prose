@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e572f7a1c01094a95a312c",
   "type": "character",
-  "name": "Bakhtiyor Appiah-Petrović",
+  "name": "Obinna Appiah-Lindström",
   "aliases": [
     "Sori",
     "Skin Sori"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Alban Souk, Bronzeline, near Kedzie and Division",
-  "description": "Søren is a living advertisement for their own product. Their skin shifts through slow amber-to-violet gradients every few hours — a mid-range bioluminescent geneware treatment they applied themselves using a bootleg kit and later refined. Their hair, worn in a dramatic architectural sweep pinned with illuminated wire, cycles through three pre-programmed color palettes depending on their mood. They are lean and angular, with sharp Armenian cheekbones from the Mirzoyan line and the long-limbed ease of someone entirely comfortable in their body. Their stall in the Alban Souk is less a stall and more a theater set: draped fabric in iridescent materials, a mirror framed in flickering ELF-light strips, and a rotating display of pigment-patch samples, pattern-iris contacts, and small gene-treatment vials in color-coded cases.\n\nSøren is relentlessly enthusiastic in a way that reads as exhausting until you realize it is completely genuine. They love transformation — the specific moment when someone looks in the mirror and becomes more themselves. They are generous with samples and merciless with bad taste, and will tell you honestly if something won't work for your skin tone or phenotype before they sell it to you. They have a gift for reading what someone actually wants versus what they say they want, which makes them an excellent dealer and an occasionally uncomfortable companion.",
+  "description": "Obinna Appiah-Lindström is a living advertisement for their own product. Their skin shifts through slow amber-to-violet gradients every few hours — a mid-range bioluminescent geneware treatment they applied themselves using a bootleg kit and later refined. Their hair, worn in a dramatic architectural sweep pinned with illuminated wire, cycles through three pre-programmed color palettes depending on their mood. They are lean and angular, with sharp Armenian cheekbones from the Mirzoyan line and the long-limbed ease of someone entirely comfortable in their body. Their stall in the Alban Souk is less a stall and more a theater set: draped fabric in iridescent materials, a mirror framed in flickering ELF-light strips, and a rotating display of pigment-patch samples, pattern-iris contacts, and small gene-treatment vials in color-coded cases.\n\nObinna Appiah-Lindström is relentlessly enthusiastic in a way that reads as exhausting until you realize it is completely genuine. They love transformation — the specific moment when someone looks in the mirror and becomes more themselves. They are generous with samples and merciless with bad taste, and will tell you honestly if something won't work for your skin tone or phenotype before they sell it to you. They have a gift for reading what someone actually wants versus what they say they want, which makes them an excellent dealer and an occasionally uncomfortable companion.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -201,7 +201,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -261,50 +261,82 @@
     "Petra Glass",
     "WELLSPRING",
     "Lazarus EC-4 'Companion'",
-    "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Mika Sorel",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Heritage Vault",
-    "The Mirror",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Tessera Corponation"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Uzbek) / Eastern European (Serbian/Polish) / Sub-Saharan African (Ghanaian/Nigerian) / Hispanic/Latin American (Mexican/Colombian) / East Asian (Korean/Vietnamese) blend — a true product of the Ubiquitous Diaspora with no single dominant ancestry. Features reflect this balanced global mix: warm medium-brown base tone with subtle undertones from multiple continents, creating a unique and complex canvas that their bioluminescent modifications enhance rather than override",
+    "heritage": "Sub-Saharan African (31.9%) / Southeast Asian (28.5%) / Northern European (21.3%) / Hispanic/Latin American (9.7%) / Middle Eastern (8.6%) blend — a true product of the Ubiquitous Diaspora. Features reflect this balanced global mix: warm medium-brown base tone with subtle undertones from multiple continents, creating a unique and complex canvas that their bioluminescent modifications enhance rather than override",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Lean and angular with pronounced musculature in shoulders and forearms from years of precise cosmetic application work; almost dancer-like in proportion, all clean lines and economical movement",
     "hair_color": "Programmable — cycles between deep indigo, copper-gold, and chlorophyll-green depending on mood state",
     "hair_style": "Dramatic architectural sweep, often pinned asymmetrically with illuminated wire or micro-LED clips that cast soft light across one side of the face",
     "hair_length": "Medium (shoulder-length on one side, longer on the sweep side)",
+    "skin_tone": "Warm medium-brown with balanced undertones: Sub-Saharan African richness, Southeast Asian warmth, Northern European luminosity, and subtle Hispanic/Latin American and Middle Eastern complexity. Modified by bioluminescent geneware into a slow amber-to-violet gradient that cycles every 4-6 hours, creating ever-shifting iridescent luminescence",
+    "complexion": "Flawless application of their own geneware; balanced facial structure reflecting diverse ancestry — high cheekbones with Southeast Asian and Northern European definition, broad nose bridge with Sub-Saharan African character, warm undertones unified by luminescent augmentation. Skin glows with soft iridescent sheen in low light; face suggests someone who has never made a careless choice about their appearance",
     "eye_color": "Pattern irises with shifting geometric tessellations in violet and gold, replacing natural eye color entirely",
-    "skin_tone": "Warm medium-brown base with balanced undertones reflecting Central Asian, Eastern European, African, Latin American, and East Asian heritage — naturally rich and complex. Modified by bioluminescent geneware into a slow amber-to-violet gradient that cycles every 4-6 hours, creating an ever-shifting luminescence that plays across their multicultural foundation",
-    "complexion": "Flawless application of their own geneware; balanced facial structure reflecting their diverse ancestry — high cheekbones with East Asian and Central Asian character, broad nose bridge suggesting African heritage, warm undertones from Latin American ancestry, all unified by their luminescent augmentation. Skin glows with soft iridescent sheen in low light; face suggests someone who has never made a careless choice about their appearance",
     "distinguishing_marks": [
       "Subdermal bioluminescence creates faint striations across shoulders and collarbone area, visible when clothing shifts",
       "Fingertips emit soft amber glow from light subdermal work, most visible when hands are still or examining fabric"
     ],
     "visible_augmentations": "Bioluminescent skin gradient (primary feature — actively shifting); color-cycling hair with embedded wire hardware; pattern iris eyes with geometric gold-violet tessellations; fingertip bioluminescence; no traditional chrome or mechanical augmentations",
     "posture_movement": "Moves with deliberate precision and economy — every gesture serves a purpose, often used to display or demonstrate product. Hands are expressive and confident. Stands with weight slightly forward, engaged. Maintains intense eye contact when reading clients' desires. Overall impression: someone entirely comfortable being watched and admired",
-    "clothing_style": "Tier 3-4 Souk aesthetic — iridescent synthetic fabrics that complement their skin gradient, often custom-cut or modified. Prefers draped layers in jewel tones and metallics. Accessories emphasize their own modifications: illuminated jewelry, wire-pinned scarves, fingerless gloves that display the glowing fingertips. Everything is aspirational but achievable — Bakhtiyor's presentation is salesmanship made flesh"
+    "clothing_style": "Tier 3-4 Souk aesthetic — iridescent synthetic fabrics that complement their skin gradient, often custom-cut or modified. Prefers draped layers in jewel tones and metallics. Accessories emphasize their own modifications: illuminated jewelry, wire-pinned scarves, fingerless gloves that display the glowing fingertips. Everything is aspirational but achievable — presentation is salesmanship made flesh"
   },
-  "image_prompt": "Bakhtiyor Appiah-Petrović, cyberpunk 2226, warm medium-brown skin with bioluminescent amber-to-violet gradient cycling across face and shoulders, creating soft glowing striations. Sharp diverse facial features reflecting Central Asian, Eastern European, African, Latin American, and East Asian heritage. Pattern iris eyes with geometric gold-violet tessellations. Programmable hair cycling between deep indigo and copper-gold, pinned asymmetrically with glowing micro-LED wire clips casting soft light across angular face. Lean dancer-like build, 178cm tall. Wearing iridescent Tier 3-4 Souk fashion — draped layers in jewel tones and metallics, fingerless gloves revealing glowing fingertips. Intense confident gaze, precision posture slightly forward. Subdermal bioluminescence visible at collarbone, hands expressive and poised for display. Great Lakes Metropolitan Zone neon-lit souk setting, warm amber and violet lighting reflecting off iridescent fabrics, luxe cyberpunk cosmetics showroom ambiance, intricate detail on facial structure and augmentation glow --ar 2:3 --v 6",
+  "image_prompt": "Obinna Appiah-Lindström, 2226 neo-noir, warm medium-brown skin with bioluminescent amber-to-violet gradient cycling across lean angular frame, high cheekbones and broad nose bridge reflecting Sub-Saharan African and Southeast Asian heritage, shoulder-length programmable hair in deep indigo with architectural sweep pinned with glowing micro-LED wires, pattern iris eyes with gold-violet geometric tessellations, soft iridescent glow visible in low light, subdermal bioluminescence striations across collarbone, amber-glowing fingertips, wearing iridescent draped layers in jewel tones and metallics with illuminated jewelry and wire-pinned scarves, fingerless gloves displaying glowing fingertips, intense confident posture with expressive hands, Great Lakes Metropolitan Zone neon-lit Souk setting, dramatic side-lit by their own luminescence, aspirational cosmetic professional, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 24.7,
-    "Eastern European": 24.2,
-    "Sub-Saharan African": 20.8,
-    "Hispanic/Latin American": 16.2,
-    "East Asian": 10.9,
-    "Northern European": 3.2
+    "Sub-Saharan African": 31.9,
+    "Southeast Asian": 28.5,
+    "Northern European": 21.3,
+    "Hispanic/Latin American": 9.7,
+    "Middle Eastern": 8.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 3.9,
+        "Zimbabwean": 6.1
+      },
+      "West African": {
+        "Ivorian": 21.1
+      },
+      "East African": {
+        "Rwandan": 0.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 28.5
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 21.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 8.2
+      },
+      "Central American": {
+        "Honduran": 0.6
+      },
+      "Caribbean": {
+        "Cuban": 0.5,
+        "Haitian": 0.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 5.1
+      },
+      "Kurdish": {
+        "Kurdish": 3.5
+      }
+    }
+  }
 }

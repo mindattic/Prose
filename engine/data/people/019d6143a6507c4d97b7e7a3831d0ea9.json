@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6507c4d97b7e7a3831d0ea9",
   "type": "character",
-  "name": "Amara Larsdóttir",
+  "name": "Valentina Yamamoto",
   "aliases": [
     "Luce",
     "Sparks"
@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Ironvein, near Fullerton and Damen",
-  "description": "Lùcía is compact and strong-shouldered from two years of hauling conduit and cable through the industrial guts of Ironvein. Their skin is a warm medium-brown with undertones their Dembélé grandmother called 'sunset-red,' and they keep their hair cropped close on the sides and voluminous on top, dyed in shifting copper tones that complement the burn marks on their forearms — small constellations of arc-flash scars they show off with particular pride. A tail modification — copper-tipped, prehensile, and genuinely useful for steadying themselves on narrow catwalks — is their one major geneware investment, bought with eight months of saved stipend.\n\nLùcía is practical and funny in equal measure, with the bone-deep competence of someone who learned early that doing the work correctly is the only currency that doesn't get devalued. They are apprenticed to a master electrician named Goran who is exacting and often unkind, and Lùcía has decided that enduring Goran is simply a cost of the certification they need. They are more ambitious than they let on and less certain than they seem.",
+  "description": "Valentina Yamamoto is compact and strong-shouldered from two years of hauling conduit and cable through the industrial guts of Ironvein. Their skin is a warm medium-brown with undertones their Dembélé grandmother called 'sunset-red,' and they keep their hair cropped close on the sides and voluminous on top, dyed in shifting copper tones that complement the burn marks on their forearms — small constellations of arc-flash scars they show off with particular pride. A tail modification — copper-tipped, prehensile, and genuinely useful for steadying themselves on narrow catwalks — is their one major geneware investment, bought with eight months of saved stipend.\n\nValentina Yamamoto is practical and funny in equal measure, with the bone-deep competence of someone who learned early that doing the work correctly is the only currency that doesn't get devalued. They are apprenticed to a master electrician named Goran who is exacting and often unkind, and Valentina Yamamoto has decided that enduring Goran is simply a cost of the certification they need. They are more ambitious than they let on and less certain than they seem.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ironvein",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,28 +176,13 @@
     "The Burnline",
     "The Gradient Compact",
     "Witness",
-    "Copper",
-    "Alper Lebedev-Tutu",
-    "Brighton Arc",
-    "Chronicle",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Narrowcast",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Ouroboros Energy Emergency Blackout Protocol",
-    "Patient Zero",
-    "Sorin Ekwensi-Balasanyan",
-    "Stonepath Logistics",
-    "The Crucible",
-    "The Cutters Guild",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov"
+    "Circuit",
+    "Sunset Karaoke & Kitchen",
+    "Copper"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (49.2%) with significant East Asian (17.8%) and Northern European (17.5%) ancestry, creating a striking multi-continental blend; secondary influences from South Asian (10.7%) and Hispanic/Latin American (4.8%) heritage",
+    "heritage": "Truly cosmopolitan blend reflecting the Ubiquitous Diaspora: Hispanic/Latin American (24.3%), Middle Eastern (21.5%), Central Asian (20.2%), East Asian (14.0%), Sub-Saharan African (13.3%), and North African (6.7%) ancestry create a striking multi-continental mosaic; no single heritage dominates, resulting in a uniquely balanced phenotype drawing from across three continents",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled through the shoulders and core from two years of hauling industrial cable and conduit; wiry forearms with visible definition; strong hands with calluses and small burn scars",
@@ -205,8 +190,8 @@
     "hair_style": "Cropped fade on the sides, voluminous textured crown; styled to showcase the copper coloring and draw attention upward",
     "hair_length": "Short on sides, medium-length on top",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm medium-brown with golden and subtle reddish undertones from the complex ancestral blend; the warmth carries both Sub-Saharan and South Asian depth with Northern European luminosity",
-    "complexion": "Clean-kept, sun-weathered from time in industrial zones; sharp cheekbones with slight East Asian definition, strong defined jawline reflecting African and Northern European features; expression carries equal parts focus and dry humor; minor arc-flash scars visible along jawline edge",
+    "skin_tone": "Warm medium-brown with golden undertones; the complex blend creates subtle depth—warmer across cheekbones from Hispanic and Middle Eastern ancestry, slightly deeper along jawline from African heritage, with luminous quality from Central and East Asian components; sun-weathered from industrial zone work",
+    "complexion": "Clean-kept; sharp cheekbones with graceful East and Central Asian definition; strong defined jawline reflecting the African and Middle Eastern ancestry; expression carries equal parts focus and dry humor; minor arc-flash scars visible along jawline edge",
     "distinguishing_marks": [
       "Constellation of small, pale arc-flash burn scars across both forearms from electrical work—left forearm has seven marks, right forearm has five, each 3-5mm diameter, arranged deliberately like they're showing them off",
       "Small burn scar along right temple, barely visible unless light catches it directly, from an early apprenticeship mistake with a live junction box"
@@ -215,16 +200,71 @@
     "posture_movement": "Moves with deliberate economy; shoulders forward-set from cable work; feet planted wide for stability; uses their tail unconsciously for balance and emphasis, especially when concentrating or making a point; walks with the confidence of someone who knows exactly where every load-bearing surface is",
     "clothing_style": "Tier 4 working-class practical: insulated work trousers with reinforced knees and thigh pockets (Ironvein guild-issue grey synthetic blend), steel-toed boots scuffed from catwalks, sleeveless or short-sleeved shirts to show the arc-flash scars, often wearing an oversized industrial canvas vest with tool loops and guild patches; no corp branding; jewelry limited to a thin copper wire bracelet wound around left wrist—personal, not decorative"
   },
-  "image_prompt": "Amara Larsdóttir, compact 158cm cyberpunk electrician with warm medium-brown skin glowing with golden undertones, sharp cheekbones and defined jawline; natural black hair with copper-rose-gold cosmetic treatment, cropped fade sides with voluminous textured crown; alert dark brown eyes with dry, focused expression. Visible constellation of pale arc-flash burn scars across both forearms (7 left, 5 right), small scar along right temple. Distinctive prehensile copper-tipped geneware tail (80cm) emerging from spine, muscular with metallic sheen. Wearing sleeveless work shirt exposing scarred forearms, reinforced grey Ironvein guild work trousers, scuffed steel-toed boots, oversized industrial canvas vest with tool patches. Thin copper wire bracelet wound around left wrist. Posture forward-set from cable work, feet planted wide, tail curled unconsciously for balance. Industrial cyberpunk 2226 setting, GLMZ neon-lit catwalks and junction boxes, cool blue-amber ambient lighting catching the metallic sheen of tail and scar tissue, gritty atmospheric depth, confident working-class presence. --ar 2:3 --v 6",
+  "image_prompt": "Valentina Yamamoto, a 158cm compact neo-noir engineer with warm medium-brown skin and golden undertones reflecting multi-continental heritage, dark alert eyes, and natural black hair with copper-rose cosmetic treatment styled in a short fade with voluminous textured crown. Prehensile copper-tipped geneware tail emerges from spine, approximately 80cm length with metallic sheen. Constellation of pale arc-flash burn scars deliberately displayed across both forearms, small temple scar. Sharp East/Central Asian cheekbones balanced with strong African and Middle Eastern jawline definition. Wearing grey Ironvein guild-issue insulated work trousers with reinforced knees, sleeveless shirt exposing scarred forearms, oversized industrial canvas vest with tool loops and guild patches, scuffed steel-toed boots. Thin copper wire bracelet wound around left wrist. Forward-set shoulders from cable work, feet planted wide, unconsciously balancing with tail. Standing in Great Lakes Metropolitan Zone industrial zone, catwalks and live junction boxes visible in background, cool neon edge-lighting catching metallic tail-tip and temple scar, expression mixing focus with dry humor, GLMZ --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.2,
-    "East Asian": 17.8,
-    "Northern European": 17.5,
-    "South Asian": 10.7,
-    "Hispanic/Latin American": 4.8
+    "Hispanic/Latin American": 24.3,
+    "Middle Eastern": 21.5,
+    "Central Asian": 20.2,
+    "East Asian": 14,
+    "Sub-Saharan African": 13.3,
+    "North African": 6.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 24.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 4,
+        "Lebanese": 0.4
+      },
+      "Persian": {
+        "Iranian": 12.4,
+        "Tajik Persian": 4.7
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 2.6,
+        "Hazara": 8.4
+      },
+      "Turkic": {
+        "Kazakh": 9.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 4.1,
+        "Ivorian": 0.8
+      },
+      "Central African": {
+        "Gabonese": 2,
+        "Congolese": 1.3
+      },
+      "East African": {
+        "Tanzanian": 5.1
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 3.6,
+        "Egyptian": 0.5
+      },
+      "Maghreb": {
+        "Moroccan": 1.4,
+        "Algerian": 1.2
+      }
+    }
+  }
 }

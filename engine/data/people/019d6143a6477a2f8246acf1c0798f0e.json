@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6477a2f8246acf1c0798f0e",
   "type": "character",
-  "name": "Atlas Solberg",
+  "name": "Atlas Trujillo",
   "aliases": [
     "Kwe",
     "Noodle Kwe"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district, near the Ferrogate transit relay junction, near North Ave and Damen",
-  "description": "Kweku is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nKweku is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
+  "description": "Atlas Trujillo is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nAtlas Trujillo is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -172,7 +172,7 @@
     "Generous Fool": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,30 +228,18 @@
   "related_entities": [
     "Ferrogate Transit",
     "Bronzeline",
-    "Flicker",
+    "Frequency",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Residue (I Still Have Your Feed)",
+    "Atlas",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
-    "Devraj Solano-Yildirim",
-    "Ezio Kaboré-Malhotra",
-    "Lazarus IDP-1 'Teeth'",
-    "MindBridge Relay One Social Integration BCI",
-    "Patient Zero",
-    "Pirjo Asante-Ulukhan",
-    "Slagworks Industrial",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TK-4 'Hellhound'",
-    "Tafara Quiñones-Saarinen",
-    "The Pure Hand",
-    "The Wire Taps"
+    "Compass Rose",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European base with significant Pacific Islander heritage, combined with Hispanic/Latin American, South Asian, and trace East Asian ancestry—creating a striking blend of Scandinavian bone structure with warmer, golden-bronze skin undertones and subtle features from multiple ancestral lines",
+    "heritage": "Truly cosmopolitan ancestry with nearly equal contributions from East Asian, Hispanic/Latin American, and Sub-Saharan African heritage, balanced with South Asian genetics—creating a striking polychromatic blend where no single ancestral line dominates. Features reflect this tri-continental convergence: East Asian eye shape and cheekbone prominence merge with Sub-Saharan African lip fullness and facial width, while Hispanic/Latin American warmth and South Asian depth layer through skin tone and subtle orbital structure.",
     "height_cm": 175,
     "weight_kg": 68,
     "build": "Lean and wiry with defined shoulders from pushing his cart daily; quick, efficient movements suggest habitual physical labor without bulk",
@@ -259,8 +247,8 @@
     "hair_style": "Faded undercut with a soft, voluminous cloud of curls on top; often matted with steam and chili dust by midday",
     "hair_length": "Short sides, medium-long crown",
     "eye_color": "Deep brown with faint cathode-orange glow from retinal overlay at rest",
-    "skin_tone": "Warm golden-bronze with subtle honey undertones—a blend of Northern European fairness warmed by Pacific Islander and South Asian heritage, creating a sun-kissed, weathered appearance",
-    "complexion": "Clear skin with a faint sheen from constant exposure to cart steam; high cheekbones with strong Scandinavian structure softened by broader facial planes from Pacific Islander ancestry; expressive mouth usually curved in an easy grin; five o'clock shadow by evening",
+    "skin_tone": "Rich warm brown—a complex fusion of East Asian olive undertones, Sub-Saharan African depth, and Hispanic/Latin American golden warmth, with South Asian radiance threading through; creates sun-kissed, weathered appearance with substantial depth and luminosity",
+    "complexion": "Clear skin with a faint sheen from constant exposure to cart steam; angular cheekbones from East Asian heritage, broadened by Sub-Saharan African facial structure; fuller lips with pronounced definition; expressive mouth usually curved in an easy grin; five o'clock shadow by evening with rich dark undertones",
     "distinguishing_marks": [
       "Constellation of bioluminescent freckles across cheeks, bridge of nose, and forearms—soft cyan-blue glow, pulse rate increases with emotional agitation",
       "Small Ferrogate Transit Authority logo tattoo behind left ear (stylized rail line in black ink, faded from age and regret)"
@@ -269,16 +257,55 @@
     "posture_movement": "Stands with weight on his toes, ready to pivot or lean into sales pitch; constant fidgeting with hands when talking (gestures with ladles, wipes chili from apron, adjusts cart struts); walks with economical, quick steps; defaults to leaning against his cart with arms crossed or elbows braced, depending on how engaged he is with a customer",
     "clothing_style": "Tier 3 working class: faded charcoal chef's coat with embroidered 'Kweku's' in mismatched lettering he did himself; underneath, a thermal undershirt in various states of staining; cargo pants in dark grey with grease and sauce marks; weatherproof apron with deep pockets for small supplies; scuffed composite-toe work boots; a thin stainless-steel chain around his neck holding a small brass luck charm his grandmother gave him"
   },
-  "image_prompt": "Atlas Solberg, 175cm lean street food vendor with golden-bronze skin from mixed Northern European and Pacific Islander heritage, warm honey undertones glowing in neon light. Deep black curled undercut, strong cheekbones with expressive features. Wearing faded charcoal chef's coat over stained thermal, dark cargo pants, weatherproof apron. Bioluminescent cyan freckles constellation across cheeks and nose softly glowing. Cathode-orange retinal implant gleam visible at rest. Brass luck charm visible on stainless-steel chain. Leaning against worn food cart with economical posture, weathered work boots, hands animated mid-gesture. Great Lakes Metropolitan Zone 2226, cyberpunk street food vendor aesthetic, moody neon and steam lighting, evening shift, slightly gritty urban setting --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Atlas Trujillo, 175cm lean street vendor with deep black voluminous cloud curls and faded undercut. Rich warm brown skin with East Asian olive undertones, Sub-Saharan African depth, and Hispanic/Latin American golden warmth. Angular cheekbones broadened by African facial structure, fuller lips with prominent definition. Deep brown eyes with faint cathode-orange glow from retinal implant. Constellation of soft cyan-blue bioluminescent freckles across cheeks and nose bridge. Five o'clock shadow with dark undertones. Faded charcoal chef's coat embroidered 'Kweku's', grey cargo pants stained with chili sauce, weatherproof apron, composite-toe work boots, brass charm on stainless-steel chain. Leaning against his food cart, hand gesturing mid-pitch, ready weight-on-toes stance. Warm easy grin, constant fidgeting energy. GLMZ Great Lakes Metropolitan Zone street food vendor aesthetic. Neon signs reflected in steam from cart, moody evening lighting with ambient cyan freckle glow. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 57.0,
-    "Pacific Islander": 22.6,
-    "Hispanic/Latin American": 10.0,
-    "South Asian": 8.8,
-    "East Asian": 1.6
+    "East Asian": 28.8,
+    "Hispanic/Latin American": 28.4,
+    "Sub-Saharan African": 28,
+    "South Asian": 14.2,
+    "Eastern European": 0.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 10.1
+      },
+      "Chinese": {
+        "Mandarin Northern": 10.3,
+        "Cantonese": 3
+      },
+      "Korean": {
+        "Korean": 5.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 28.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 6.8,
+        "Cameroonian": 21.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 12.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.6
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 0.5,
+        "Hungarian": 0.1
+      }
+    }
+  }
 }

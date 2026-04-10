@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7157771895dbcdbcb8a57ac",
   "type": "character",
-  "name": "Atlas Delgado-Petrović",
+  "name": "Atlas Nazari-Hinojosa",
   "aliases": [
     "Spider"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -104,23 +104,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Chicago",
-    "Devraj Solano-Yildirim",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Stainless Steel",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "Tomasz Wren",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European, Southeast Asian, Hispanic/Latin American, East Asian, and South Asian blend. Her genetic makeup creates a striking fusion: the bone structure carries Eastern European strength (cheekbones, jaw) with Southeast Asian delicacy around the eyes and temples. Hispanic/Latin and East Asian ancestry softens her features with subtle eye shape and skin undertones. South Asian heritage adds warmth and depth to her complexion.",
+    "heritage": "Complex diaspora blend: 48.2% Hispanic/Latin American, 20.9% Middle Eastern, 14.5% South Asian, 11.4% Indigenous American, and 5.0% Sub-Saharan African. This genetic combination creates her striking angular architecture—pronounced cheekbones and defined jaw from Hispanic/Latin and Middle Eastern ancestry, softened and warmed by South Asian facial geometry. Indigenous American ancestry contributes sharp angular features and rich earth-tone undertones. The Sub-Saharan African component adds luminosity and warm undertones that glow beneath her skin. The result is a face of compelling contradictions: sharp and soft simultaneously, with intelligent depth that reflects her complex ancestry.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Broad-shouldered and solid, carrying weight with authority rather than bulk. Muscular forearms suggest decades of hands-on work. Slight forward lean to posture from age, but not frail.",
@@ -128,8 +116,8 @@
     "hair_style": "Pulled back in a tight, no-nonsense braid; silver clasp at the base",
     "hair_length": "Long",
     "eye_color": "Deep brown with subtle amber undertones",
-    "skin_tone": "Warm golden-olive complexion with bronzed undertones from sun exposure and age. The blend of her ancestry creates a rich, layered warmth—neither purely light nor dark, but luminous with depth. Weathered and lived-in, showing decades of outdoor work.",
-    "complexion": "Angular face with pronounced cheekbones and a strong, defined jaw reflecting Eastern European and East Asian bone structure. Deep-set eyes with a subtle upward lift at the outer corners. High cheekbones carved sharp by time and genetics. A thin scar runs from her left temple to her ear—old, pale, healed badly. Her hands are scarred and calloused, stained with old nicotine and permanent grease marks under the fingernails.",
+    "skin_tone": "Warm medium bronze complexion with golden, olive, and ochre undertones—a luminous depth reflecting her layered ancestry across Hispanic/Latin, Middle Eastern, South Asian, Indigenous American, and Sub-Saharan African heritages. Rich, weathered warmth from decades of sun exposure and lived experience. Luminous rather than pallid, with subtle undertone variation across her face from the blending of her genetic regions.",
+    "complexion": "Angular face with pronounced cheekbones and strong, defined jaw that speaks to her Hispanic/Latin and Middle Eastern ancestry, warmed and softened by South Asian and Indigenous American heritage. Deep-set eyes with intelligent, direct gaze that cuts through pretense. High, carved cheekbones shaped by both genetics and time. A thin scar runs from her left temple to her ear—old, pale, healed badly. Her hands are scarred and calloused, stained with old nicotine and permanent grease marks under the fingernails.",
     "distinguishing_marks": [
       "Pale scar from temple to ear on left side of face, approximately 8cm long",
       "Māori ta moko pattern tattooed on left temple (genealogical markings in dark indigo)",
@@ -140,16 +128,58 @@
     "posture_movement": "She moves with deliberate efficiency—no wasted motion. Her gaze is direct and assesses before she speaks. When sitting, she occupies space fully, elbows on the table. Her hands are always busy: shuffling papers, tapping comms, or unconsciously checking security feeds through her wrist interface.",
     "clothing_style": "Tier 3-4 pragmatist. Dark gray or charcoal reinforced jacket (Khao-brand, durable synthleather with hidden pockets for data-slips and payment devices) worn over plain black crew-neck underlayer. Fitted tactical cargo pants in dark blue with reinforced knees. Worn leather work boots, resoled multiple times. A chunky stainless steel watch on her left wrist—old, pre-collapse model, still runs on mechanical gears. No corporate logos. No jewelry except the watch and a thin platinum band on her left ring finger (old, worn smooth)."
   },
-  "image_prompt": "Portrait of Atlas Delgado-Petrović, 168cm tall woman with warm golden-olive skin and weathered complexion, strong angular cheekbones and defined jaw. Steel gray hair pulled back in tight braid with silver clasp. Deep brown eyes with amber undertones, direct intense gaze. Pale 8cm scar running from left temple to ear. Dark indigo Māori ta moko tattoo on left temple. Scarred, calloused hands with permanent grease marks. Wearing dark charcoal reinforced Khao synthleather jacket over black crew-neck, fitted tactical cargo pants, worn leather work boots. Chunky stainless steel mechanical watch on left wrist, thin platinum wedding band. Subcutaneous augmentations hidden. Sitting at table in dimly lit cyberpunk office, elbows resting on surface, hands busy with data-slips. Neon city lights filtering through window behind her. Serious, no-nonsense demeanor. High contrast cyberpunk 2226 setting, cool and warm lighting mix, gritty and worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Nazari-Hinojosa, 168cm tall woman with broad shoulders and athletic build, steel gray hair in tight braid, warm bronze skin with golden and olive undertones blending Hispanic, Middle Eastern, South Asian, Indigenous, and Sub-Saharan African heritage. Angular face with pronounced carved cheekbones, strong jaw, deep brown eyes with amber flecks. Pale 8cm scar running from left temple to ear. Dark indigo Māori ta moko pattern on left temple. Weathered hands with calloused fingers and old burn scar. Wearing dark charcoal Khao synthleather jacket over black crew-neck, tactical dark blue cargo pants with reinforced knees, worn leather work boots. Old stainless steel mechanical watch on left wrist, platinum band on ring finger. Direct, assessing gaze. Sitting at table with elbows down, hands busy with data-slips. Neon-lit GLMZ office setting, 2226, cool blue and amber lighting casting shadows across her featured scarring and tattoos. Neo-noir noir atmosphere, worn and practical aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 31.1,
-    "Southeast Asian": 27.8,
-    "Hispanic/Latin American": 19.5,
-    "East Asian": 17.6,
-    "South Asian": 4.0
+    "Hispanic/Latin American": 48.2,
+    "Middle Eastern": 20.9,
+    "South Asian": 14.5,
+    "Indigenous American": 11.4,
+    "Sub-Saharan African": 5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 46.8
+      },
+      "South American": {
+        "Colombian": 1.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 5.8,
+        "Kuwaiti": 2.8
+      },
+      "Kurdish": {
+        "Kurdish": 12.3
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 14.5
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 5
+      },
+      "Andean": {
+        "Quechua": 6.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.3,
+        "Tanzanian": 1.1
+      },
+      "West African": {
+        "Guinean": 0.3,
+        "Nigerian": 0.3
+      }
+    }
+  }
 }

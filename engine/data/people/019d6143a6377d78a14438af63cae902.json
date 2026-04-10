@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6377d78a14438af63cae902",
   "type": "character",
-  "name": "Szymon Wójcik-Sow",
+  "name": "Soren Dalgaard-Arredondo",
   "aliases": [
     "Skander",
     "Blight"
@@ -13,7 +13,7 @@
   "age": 13,
   "status": "active",
   "location": "The Narrows, Copperhead border, near North Ave and Damen",
-  "description": "Iskander is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nIskander is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
+  "description": "Soren Dalgaard-Arredondo is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nSoren Dalgaard-Arredondo is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -171,7 +171,7 @@
     "Enforcer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,28 +183,14 @@
     "The Narrows Compact",
     "Copperhead",
     "NeuralPath ClearRun Focus Regulation Implant",
-    "Adaeze Chen-Hawkins",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Haze Johansson",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Axolotl Regenerative Suite",
-    "Brecken Yılmaz-Osei",
-    "Cem Osei-Petrov",
-    "Dzemal Acholonu-Patagiri",
-    "Ilhan Sandstrom-Badu",
-    "Immaculée Dalgaard-Nwosu",
-    "Nnamdi Ostrowski-Faletolu",
-    "Osvaldo Mensah-Kovalenko",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Ledger",
-    "The Narrows",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano"
+    "Compass Rose",
+    "Palm Leaf"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed ancestry: 47% Sub-Saharan African, 42% Eastern European, 11% Hispanic/Latin American. Features reflect this complex blend — warm deep brown skin with subtle olive undertones from the Eastern European contribution, facial structure showing the width and prominence of Sub-Saharan ancestry combined with the bone structure of Eastern European heritage, with hints of Latin American warmth in complexion.",
+    "heritage": "Mixed ancestry: 43% Hispanic/Latin American, 22.2% Northern European, 16.2% South Asian, 7.5% Sub-Saharan African, 5.8% Southeast Asian, 5.3% East Asian. Features reflect this complex global blend — warm medium-brown skin with golden and olive undertones from the Latin American, South Asian, and Southeast Asian contributions. Facial structure shows the width and angularity of Hispanic/Latin heritage combined with the bone prominence of South Asian ancestry, with subtle warmth and dimension from the Sub-Saharan and Northern European components creating a distinctly cosmopolitan appearance.",
     "height_cm": 155,
     "weight_kg": 42,
     "build": "Wiry and undernourished, all sharp elbows and prominent collarbones. Muscle definition emerging from constant street movement, but overall frame suggests inconsistent nutrition. Posture hunched slightly forward as if bracing against cold that isn't there.",
@@ -212,8 +198,8 @@
     "hair_style": "Unevenly shaved, grown out to roughly 1-2cm with visible patchy regrowth suggesting maintenance every 3-4 weeks with whatever blade is available",
     "hair_length": "Short",
     "eye_color": "Right eye: deep brown. Left eye: amber with cosmetic slit pupil (pawn-grade mod, occasionally glitches to full dilation)",
-    "skin_tone": "Warm deep brown with olive undertones, weathered and sun-damaged from street exposure. Rich melanin-dense complexion reflecting Sub-Saharan heritage with subtle warmth from Eastern European and Hispanic ancestry blending.",
-    "complexion": "Youthful but prematurely hardened facial features with full lips and strong jawline structure. Jaw clenched habitually. Dark circles under both eyes. Occasional scab or healing cut on lips from biting. Skin shows signs of poor hygiene access but not infection — streets are clean enough for that. Expression oscillates between guarded wariness and desperate seeking of approval.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones, weathered and sun-damaged from street exposure. Rich melanin undertones reflecting strong Hispanic/Latin American and South Asian heritage, complemented by warmth from Southeast Asian, Sub-Saharan African, and Northern European ancestry blending into a unified complexion.",
+    "complexion": "Youthful but prematurely hardened facial features with full lips and strong jawline structure reflecting Latin American and South Asian heritage. High cheekbones with slight prominence from South Asian ancestry. Jaw clenched habitually. Dark circles under both eyes. Occasional scab or healing cut on lips from biting. Skin shows signs of poor hygiene access but not infection — streets are clean enough for that. Expression oscillates between guarded wariness and desperate seeking of approval.",
     "distinguishing_marks": [
       "Long irregular scar across right palm from wrist toward fingertips, pale pink against warm brown skin, edges slightly raised suggesting poor wound care during healing",
       "Small burn mark on left wrist (inside), roughly circular, size of a cigarette cherry — origin story changes weekly",
@@ -223,14 +209,71 @@
     "posture_movement": "Restless and kinetic — fidgets constantly with hands, shifts weight foot-to-foot even when standing still. Moves quickly through space with the efficiency of someone accustomed to needing to leave fast. Makes frequent eye contact (especially with older prospects) as if seeking validation. Flinches occasionally at loud noises. Shoulders habitually raised slightly toward ears.",
     "clothing_style": "Tier 5/sub-grade streetwear. Oversized dark gray synthetic jacket with faded stencil lettering inside lining reading 'DONOVAN' (not his name). Underneath: layered mismatched thermals — one long-sleeve shirt in brown-black, another in navy with small hole near shoulder seam. Dark cargo pants with multiple pockets and external patches, cuffs frayed and caked with street dust. Cheap high-top synth-leather boots, one lace missing, replaced with frayed synthetic cord. No jewelry except a thin copper wire wrapped loosely around left wrist (gang indicator, loose/unofficial). Jacket hood worn frequently, pulled low."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Szymon, 155cm tall wiry young man with warm deep brown skin and olive undertones reflecting mixed Sub-Saharan African, Eastern European, and Latin American heritage. Sharp facial features, strong jawline, dark circles under eyes. Right eye deep brown, left eye amber with slit pupil cybernetic mod that occasionally malfunctions. Short black hair with patchy regrowth, unevenly shaved. Dressed in oversized gray synthetic jacket labeled 'DONOVAN', layered mismatched thermals, worn dark cargo pants, cheap synth-leather boots with missing laces. Thin copper wire around left wrist. Visible scars: pale pink scar across right palm, small circular burn mark on left wrist. Posture tense and kinetic, shoulders raised, flinching. Hood pulled low. Gritty Great Lakes Metropolitan Zone street setting, neon-lit night, harsh shadows and cool blue lighting mixing with amber cybernetic glow from left eye. Mood: guarded wariness, desperate vulnerability, street-hardened youth. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Soren Dalgaard-Arredondo, 155cm wiry frame with sharp elbows and collarbones, warm medium-brown skin with golden olive undertones blending Hispanic/Latin American, South Asian, and Southeast Asian heritage, dark circles under eyes, full lips and strong jawline, patchy black hair shaved short with 1-2cm regrowth, right eye deep brown, left eye amber with cosmetic slit pupil mod glitching to full dilation, pale pink scar across right palm, cigarette burn on left wrist, fading yellowish-green bruise on left ribs, wearing oversized dark gray synthetic jacket with 'DONOVAN' lettering, layered mismatched thermals (brown-black and navy), dark frayed cargo pants, high-top synth-leather boots with missing lace, hood pulled low over anxious expression, copper wire around left wrist, restless fidgeting hands, hunched posture, neon-lit Great Lakes Metropolitan Zone alley at night, gritty street lighting, rain-slicked pavement, moody and tense atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 47.4,
-    "Eastern European": 41.5,
-    "Hispanic/Latin American": 11.1
+    "Hispanic/Latin American": 43,
+    "Northern European": 22.2,
+    "South Asian": 16.2,
+    "Sub-Saharan African": 7.5,
+    "Southeast Asian": 5.8,
+    "East Asian": 5.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 28.9,
+        "Guatemalan": 3.1
+      },
+      "Mexican": {
+        "Mexican": 11
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 17.7,
+        "Irish": 4.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 2.9
+      },
+      "Nepali": {
+        "Nepali": 6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 3.5
+      },
+      "East African": {
+        "Tanzanian": 1.9,
+        "Kenyan": 0.7
+      },
+      "Central African": {
+        "Cameroonian": 1,
+        "Angolan": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 4.1
+      },
+      "Korean": {
+        "Korean": 1.2
+      }
+    }
+  }
 }

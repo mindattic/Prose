@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ca7024bfb2cce6f988a5f3",
   "type": "character",
-  "name": "Echo Malhotra-Najjar-Johansson",
+  "name": "Echo Cardenas-Johansson-Hinojosa",
   "aliases": [
     "Breccan the Scale",
     "Scales"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Gravesend Basin — operates from a converted barge called the Ledger, moored at Pier 9, near Lake Shore and Navy Pier",
-  "description": "Breccan is a wide, slope-shouldered man with the kind of stillness that makes people nervous. His skin is a deep sepia-brown, his hair gone to grey and cropped close, and he has the habit of running a polished bone stylus through his fingers like a priest telling beads. He wears outdated but immaculate clothes — pressed slacks, collared shirts in muted terracotta and ocher — and his only visible augmentation is a subdermal ledger-display along his left forearm that scrolls numbers only he can read. His face is wide and patient, with hooded eyes that seem perpetually amused by private arithmetic.\n\nBreccan is not a violent man by preference, but he has been in the business long enough to understand violence as a line item. He speaks to debtors the way a doctor delivers diagnoses — with regret, precision, and no particular emotion. His community in Gravesend knows him as someone you go to when the corp credit lines close, which happens often. He genuinely believes he provides a service. He attends the weekly offerings to the E.L.F. known as the Ledger-Mouth, an entity said to inhabit old accounting terminals, and he considers those prayers to be professional obligations.",
+  "description": "Echo Cardenas-Johansson-Hinojosa is a wide, slope-shouldered man with the kind of stillness that makes people nervous. His skin is a deep sepia-brown, his hair gone to grey and cropped close, and he has the habit of running a polished bone stylus through his fingers like a priest telling beads. He wears outdated but immaculate clothes — pressed slacks, collared shirts in muted terracotta and ocher — and his only visible augmentation is a subdermal ledger-display along his left forearm that scrolls numbers only he can read. His face is wide and patient, with hooded eyes that seem perpetually amused by private arithmetic.\n\nEcho Cardenas-Johansson-Hinojosa is not a violent man by preference, but he has been in the business long enough to understand violence as a line item. He speaks to debtors the way a doctor delivers diagnoses — with regret, precision, and no particular emotion. His community in Gravesend knows him as someone you go to when the corp credit lines close, which happens often. He genuinely believes he provides a service. He attends the weekly offerings to the E.L.F. known as the Ledger-Mouth, an entity said to inhabit old accounting terminals, and he considers those prayers to be professional obligations.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -178,7 +178,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,30 +236,11 @@
     "Gravesend Basin",
     "Axiom Industries",
     "Ironvein",
-    "Adaeze Chen-Hawkins",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Glass Garden' Caltrops",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Glass Garden",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Meridian Barge",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov"
+    "Haze Johansson"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "South Asian (56.4%) with significant Middle Eastern (29.2%) and Northern European (14.4%) admixture. The combination produces warm-toned skin with subtle golden undertones, Mediterranean-influenced bone structure refined by subcontinental genetics, and pale undertones beneath the surface warmth.",
+    "heritage": "Nearly equal Northern European (49.5%) and Hispanic/Latin American (49.4%) ancestry with trace Sub-Saharan African (1.1%). This balanced admixture creates warm, sun-kissed skin with golden and olive undertones—a true blend rather than a dominance of either lineage. The result is a Mediterranean-influenced bone structure refined by Northern European genetics, with skin depth that shows rich shadow and luminous warmth in direct light.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Wide-shouldered and slope-backed, substantial without being obese — the build of someone who has spent decades sitting still at desks and tables, accumulating mass in the chest and midsection. His frame suggests settled power rather than kinetic strength.",
@@ -267,24 +248,62 @@
     "hair_style": "Cropped close to the scalp in a utilitarian cut",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm golden-brown with subtle amber undertones, the blended result of South Asian and Middle Eastern ancestry lightened slightly by Northern European genetics. Rich enough to show depth in shadow, luminous in direct light.",
-    "complexion": "Wide face with a prominent, squared jaw showing Mediterranean influence. Hooded eyes that sit back slightly, creating an impression of perpetual amusement or calculation. Strong cheekbones with the characteristic fullness of South Asian heritage, refined by Middle Eastern bone structure. Skin is lined but well-maintained, suggesting careful grooming. No visible stubble — he shaves daily. Expression is habitually neutral, mouth relaxed into a faint downward curve.",
+    "skin_tone": "Warm golden-bronze with balanced olive undertones, the result of nearly equal Northern European and Hispanic/Latin American ancestry. Rich enough to show depth in shadow, luminous in direct light, with no pale cast.",
+    "complexion": "Wide face with a prominent, squared jaw shaped by blended Mediterranean and Latin heritage. Hooded eyes that sit back slightly, creating an impression of perpetual amusement or calculation. Strong, well-defined cheekbones reflecting the balanced mix of both ancestries. Skin is lined but well-maintained, suggesting careful grooming. No visible stubble—he shaves daily. Expression is habitually neutral, mouth relaxed into a faint downward curve.",
     "distinguishing_marks": [
-      "Fine white scar running 3cm along his left temple, barely visible unless light catches it at an angle — old injury, decades past.",
+      "Fine white scar running 3cm along his left temple, barely visible unless light catches it at an angle—old injury, decades past.",
       "Thin linear scar on his right knuckles, faded but still visible, suggesting a single incident of direct violence in his youth."
     ],
-    "visible_augmentations": "Subdermal ledger-display mounted along the left forearm, just below the elbow — a thin luminescent panel beneath translucent skin that occasionally flickers with scrolling numerals visible only to him. The display creates a faint blue-green glow under his shirt cuff when active. No other visible chrome or augmentation; his cochlear filter is completely internal.",
-    "posture_movement": "Stillness is his default. He sits with both feet flat on the floor, shoulders squared, hands often occupied with a polished bone stylus that he rotates methodically through his fingers. When he walks, his gait is deliberate and unhurried — economical, never rushed. His head remains still while his eyes track. There is nothing nervous in his carriage; he moves like a man who has never been surprised.",
-    "clothing_style": "Tier 3-4 working professional with deliberate anachronism. Pressed slacks in charcoal or dark grey. Collared shirts in muted, warm tones — terracotta, ocher, dusty sage — always buttoned to the collar, sleeves rolled to mid-forearm on warmer days. No logos or corporate insignia. A vest in matching neutral tones, tailored but not ostentatious. Shoes are polished leather, practical, decades out of fashion but scrupulously maintained. A single signet ring on his right hand. No jewelry beyond that. His clothing suggests someone who respects formality and tradition, who operates outside corpo time but refuses to embrace street aesthetics."
+    "visible_augmentations": "Subdermal ledger-display mounted along the left forearm, just below the elbow—a thin luminescent panel beneath translucent skin that occasionally flickers with scrolling numerals visible only to him. The display creates a faint blue-green glow under his shirt cuff when active. No other visible chrome or augmentation; his cochlear filter is completely internal.",
+    "posture_movement": "Stillness is his default. He sits with both feet flat on the floor, shoulders squared, hands often occupied with a polished bone stylus that he rotates methodically through his fingers. When he walks, his gait is deliberate and unhurried—economical, never rushed. His head remains still while his eyes track. There is nothing nervous in his carriage; he moves like a man who has never been surprised.",
+    "clothing_style": "Tier 3-4 working professional with deliberate anachronism. Pressed slacks in charcoal or dark grey. Collared shirts in muted, warm tones—terracotta, ocher, dusty sage—always buttoned to the collar, sleeves rolled to mid-forearm on warmer days. No logos or corporate insignia. A vest in matching neutral tones, tailored but not ostentatious. Shoes are polished leather, practical, decades out of fashion but scrupulously maintained. A single signet ring on his right hand. No jewelry beyond that. His clothing suggests someone who respects formality and tradition, who operates outside corpo time but refuses to embrace street aesthetics."
   },
-  "image_prompt": "Echo Malhotra-Najjar-Johansson, 178cm tall South Asian-Middle Eastern blend with golden-brown skin and warm amber undertones, grey close-cropped hair, dark brown natural eyes with hooded gaze. Wide face, prominent squared jaw, characteristic South Asian fullness in cheekbones refined by Mediterranean structure. 94kg broad-shouldered build accumulated from decades of desk work. Faint white scar on left temple, older scar on right knuckles visible. Wearing pressed charcoal slacks and terracotta collared shirt buttoned to collar, sleeves rolled to mid-forearm, tailored neutral vest, polished leather shoes. Single signet ring on right hand. Subdermal ledger-display glowing faint blue-green beneath left forearm skin. Stillness in posture, methodical grip on polished bone stylus, economical movement. Formal anachronistic professional style, outside corpo time. Mid-21st century cyberpunk setting, warm ambient lighting catching skin tone, neutral architectural background, mood of quiet calculation and settled power --ar 2:3 --v 6",
+  "image_prompt": "Echo Cardenas-Johansson-Hinojosa, a 178cm professional man with warm golden-bronze skin and balanced Mediterranean-Latin features, seated still with perfect posture, feet flat on floor. Dark brown eyes, grey cropped hair, square jaw with defined cheekbones. Wearing pressed charcoal slacks, terracotta collared shirt buttoned to collar with rolled sleeves, neutral tailored vest. Polished leather shoes, single signet ring. Holding a polished bone stylus rotating through fingers. Fine scar barely visible on left temple. Subdermal blue-green ledger-display glowing faintly beneath left forearm skin beneath shirt cuff. GLMZ Great Lakes Metropolitan Zone, dimly lit office environment with cool neon ambient light catching on display, casual warmth contrasting cold chrome surroundings, neutral expression, calculating gaze, timeless formality in anachronistic setting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 56.4,
-    "Middle Eastern": 29.2,
-    "Northern European": 14.4
+    "Northern European": 49.5,
+    "Hispanic/Latin American": 49.4,
+    "Sub-Saharan African": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 21
+      },
+      "Germanic": {
+        "German": 6.2,
+        "Dutch": 7.1
+      },
+      "British Isles": {
+        "Welsh": 15.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 34.6
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.4,
+        "Dominican": 1.9
+      },
+      "Central American": {
+        "Nicaraguan": 9.2,
+        "Honduran": 2.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 0.7
+      },
+      "Southern African": {
+        "South African": 0.3
+      },
+      "Central African": {
+        "Congolese": 0.1
+      }
+    }
+  }
 }

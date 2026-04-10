@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a27fbfa04f271ab26cfcf1",
   "type": "character",
-  "name": "Zephyr Haddad-Ingebrigtsen",
+  "name": "Zephyr Okada-Madrigal",
   "aliases": [
     "Brick"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Western and Chicago Ave",
-  "description": "Adaeze is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined Metro PD because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
+  "description": "Zephyr Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined Metro PD because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -189,7 +189,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,34 +246,15 @@
   ],
   "related_entities": [
     "Fort Anchor",
+    "Pressure Drop",
+    "Chicago",
     "Neuromorphic Pressure Cestus",
     "The Pure Hand",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Djeneba Park-Traore",
-    "GLMZ",
-    "Grand Corridor",
-    "Ilhan Sandstrom-Badu",
-    "Ironhide Berlin",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Narrowcast",
-    "Philibert Mwangi-Djordjevic",
-    "Pirjo Asante-Ulukhan",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Circuit",
-    "Uncle Noodle",
-    "Veslemøy Achebe-Tursynov",
-    "Vojislav Addo-Mensimah",
-    "Yuki Nwosu-Petrenko",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Flux Strömqvist-Villalobos"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Middle Eastern, Central Asian, and Hispanic/Latin American ancestry — a striking pan-Asian cosmopolitan blend reflecting the Ubiquitous Diaspora. Features a balanced fusion: East Asian bone structure with Middle Eastern warmth, Central Asian resilience, and Latin American vitality in complexion.",
+    "heritage": "Pan-global diaspora synthesis: Hispanic/Latin American (30.5%) establishes the foundational warmth and bone density, interwoven with Southeast Asian (24.9%) cheekbone prominence and facial angularity, East Asian (17.8%) eye structure and depth, Central Asian (16.4%) facial width and architectural bone pattern, Sub-Saharan African (8.2%) complexion richness and iris warmth, with South Asian (2.2%) subtle refinement in orbital definition. The result is a distinctly non-binary facial architecture where no single heritage dominates visually—instead they layer into dimensional complexity: wide Central Asian cheekbones set above a defined Hispanic/Latin American mandible, Southeast Asian angularity framing East Asian-deep eyes rimmed in Sub-Saharan warmth, skin that reads as simultaneously golden-amber, sun-lived, and dimensionally textured.",
     "height_cm": 183,
     "weight_kg": 89,
     "build": "Heavily muscled and columnar — broad shoulders tapering to a narrow waist, thick neck, forearms dense with functional mass. Built for impact absorption and crowd control rather than aesthetics.",
@@ -281,8 +262,8 @@
     "hair_style": "Cropped close to the skull in a military cut, with a single bioluminescent violet stripe running from left temple to nape that pulses faintly in response to elevated blood pressure",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm medium-tan with olive undertones — a sun-kissed blend reflecting the East Asian-Middle Eastern-Hispanic fusion. Even complexion with subtle golden warmth.",
-    "complexion": "East Asian bone structure with prominent cheekbones and defined mandible; face carved for neutrality — minimal expression lines, minimal grooming beyond functional. Eyes show the characteristic depth of East Asian genetics with warm overtones. Skin shows the wear of 12 years in riot suppression but no visible acne or blemishing.",
+    "skin_tone": "Medium-tan with rich golden-amber undertones—a warm multitonal blend where Southeast Asian luminosity and East Asian undertones layer beneath a dominant Hispanic/Latin American warmth, deepened by Central Asian pigmentation and Sub-Saharan African complexity. Complexion reads as sun-lived, dimensionally complex, with visible texture variation rather than uniform flatness.",
+    "complexion": "Broad Central Asian-influenced cheekbones set wide across the face, creating structural width balanced by Southeast Asian angularity in the orbital structure and orbital ridge definition. Mandible is pronounced and squared, reflecting Hispanic/Latin American bone density and Central Asian jaw architecture. Eyes display characteristic East Asian depth set within warm Sub-Saharan-toned iris surrounds and epicanthic folds that blend Southeast Asian and East Asian traits. Skin surface shows the wear of 12 years in riot suppression—aged leather quality, weathered rather than damaged, with visible pore texture and subtle freckling from sun exposure concentrated across cheekbones and bridge of nose. No acne, blemishing, or uneven pigmentation.",
     "distinguishing_marks": [
       "Extensive scar tissue network along left forearm in the pattern of crush fractures from a crowd-crush incident approximately 8 years prior — white, slightly raised, maps the shape of interlocked fingers and bone breaks",
       "Small burn mark on right shoulder blade from a sonic discharge ricochet (2221) — pale, roughly circular, diameter 3cm"
@@ -291,15 +272,66 @@
     "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
     "clothing_style": "Off-duty: GLMZ Metro PD standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
   },
-  "image_prompt": "Cyberpunk 2226, GLMZ Metro PD riot officer Zephyr Haddad-Ingebrigtsen: 183cm tall, heavily muscled and columnar build, East Asian bone structure with warm olive-tan skin and golden undertones. Deep brown eyes, black cropped military haircut with single bioluminescent violet stripe pulsing from temple to nape. Subdermal impact-mesh scarring visible on forearms and shins as raised silver lattice patterns. Extensive crush-fracture scar tissue network on left forearm. Small circular burn mark on right shoulder blade. Studied neutral expression, economical posture, crowd-control stance. Wearing matte black compression shirt, gray tactical cargo trousers, unmarked Tier 3 tactical jacket. Small brass charm on thin cord. Standing in neon-lit precinct corridor, violet hair-stripe casting faint glow against ambient cyberpunk lighting. Functional, utilitarian aesthetic. Stoic, alert demeanor. Industrial Great Lakes Metropolitan setting --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 40.9,
-    "Middle Eastern": 27.3,
-    "Central Asian": 17.5,
-    "Hispanic/Latin American": 14.3
+    "Hispanic/Latin American": 30.5,
+    "Southeast Asian": 24.9,
+    "East Asian": 17.8,
+    "Central Asian": 16.4,
+    "Sub-Saharan African": 8.2,
+    "South Asian": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 18.1
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.7
+      },
+      "South American": {
+        "Brazilian": 11.7
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 13.2
+      },
+      "Thai": {
+        "Thai": 4.8
+      },
+      "Indonesian": {
+        "Sumatran": 4.9,
+        "Sundanese": 2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 17.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 9.4,
+        "Kalmyk": 7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 5.7
+      },
+      "Central African": {
+        "Angolan": 2.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 2.2
+      }
+    }
+  }
 }

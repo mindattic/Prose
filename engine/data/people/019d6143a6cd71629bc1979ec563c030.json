@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cd71629bc1979ec563c030",
   "type": "character",
-  "name": "Cipher Delgado-Baiseitov",
+  "name": "Cipher Delgado-Nygaard",
   "aliases": [
     "Ablaze",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 65,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Kedzie and Division",
-  "description": "Sinan Haugen-Coulibaly is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSinan Haugen-Coulibaly has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Cipher Delgado-Nygaard is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCipher Delgado-Nygaard has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -260,7 +260,7 @@
     "Info Broker": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,32 +278,11 @@
     "The Shelf",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Ambassador Silk",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Dzemal Acholonu-Patagiri",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Cosmopolitan diaspora blend: Hispanic/Latin American base (30.3%) with substantial Southeast Asian (18.7%), Central Asian (18.5%), Sub-Saharan African (18.0%), and Middle Eastern (14.5%) ancestry. Genetic mixing creates a complex phenotype resistant to simple categorization—features suggest a childhood across multiple continents.",
+    "heritage": "Ubiquitous Diaspora phenotype: Primary Hispanic/Latin American ancestry (57.7%) with significant Northern European (20.5%), Sub-Saharan African (17.8%), and Indigenous American (4.0%) genetic contribution. The combination creates a warm-toned complexion with strong bone structure—angular cheekbones and prominent facial architecture reflecting the blend of Latin American and indigenous heritage, enriched by Sub-Saharan African features in facial proportions and lip fullness, tempered by Northern European influences in eye shape and lighter undertones.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular with visible muscle definition from decades of discipline and combat training. No excess body fat; frame suggests economical, efficient movement rather than bulk.",
@@ -311,8 +290,8 @@
     "hair_style": "Pulled back in a tight, functional braid; severe and practical",
     "hair_length": "Long (waist-length when unbraided)",
     "eye_color": "Amber-brown, natural",
-    "skin_tone": "Medium warm brown with olive undertones across the bridge of nose and cheekbones—the blended result of Hispanic, Southeast Asian, Sub-Saharan, and Middle Eastern ancestry creating subtle warm depth without harsh demarcation lines. Skin tone deepens slightly at forearms and jawline.",
-    "complexion": "Lined face with high, prominent cheekbones typical of Central Asian and Southeast Asian ancestry; skin texture shows age but remains taut. Minimal makeup. Fine lines around eyes reflect decades of surveillance and focus work. Expression habitually controlled—eyes rarely widen, mouth set in a neutral line that can shift to something dangerous very quickly.",
+    "skin_tone": "Medium warm brown with golden undertones deepening toward olivaceous at the jawline—the direct result of Hispanic/Latin American base ancestry blended with Northern European and Sub-Saharan African genetics. Skin tone shows natural variation consistent with her mixed heritage, warmer across cheekbones and forearms.",
+    "complexion": "Lined face with high, prominent cheekbones and fuller lips reflecting Sub-Saharan African heritage; skin texture shows age but remains taut. Fine lines around eyes reflect decades of surveillance and focus work. Expression habitually controlled—eyes rarely widen, mouth set in a neutral line that can shift to something dangerous very quickly. Minimal makeup.",
     "distinguishing_marks": [
       "Surgical scar running 4cm along left temple, partially hidden by hairline—precision work, old",
       "Keloid burns across the back of both hands—defensive wounds, pre-augmentation era",
@@ -322,16 +301,54 @@
     "posture_movement": "Moves with economical precision—no wasted motion. Shoulders slightly forward in a ready stance even when seated. Weight distributed to the balls of her feet. When she walks, each step lands with deliberate placement. Hands are visible and still most of the time; rarely crosses arms. Eyes track movement constantly.",
     "clothing_style": "Tier 4 utilitarian aesthetic—durable synth-weave cargo jacket in charcoal gray, reinforced at stress points. Fitted black therm-reactive underlayer beneath. Tactical cargo pants with multiple pockets, all functional. Scuffed polymer-soled boots, broken in but maintained. No jewelry. Worn leather shoulder satchel containing data-drives and encrypted comm equipment. Everything is practical; nothing is decorative. Clothing shows signs of recent equipment maintenance and minor repair work."
   },
-  "image_prompt": "Cipher Delgado-Baiseitov, a 168cm lean woman with medium warm olive-brown skin blending Hispanic, Southeast Asian, Central Asian, Sub-Saharan, and Middle Eastern heritage. Steel-gray hair pulled tight in a long functional braid. Amber-brown eyes with controlled, dangerous expression. Lined face with high cheekbones; faint surgical scar along left temple. Visible surgical scar tracks and old keloid burns on both hands. Geometric chrome bioware plate visible on left shoulder beneath skin. Dressed in charcoal synth-weave cargo jacket over black therm-reactive layer, tactical cargo pants, worn boots. Worn leather satchel across torso. Standing in ready posture with shoulders forward, weight on balls of feet, eyes tracking. Neo-noir cyberpunk 2226 setting with cool neon backlighting casting sharp shadows across her augmentations. Utilitarian workspace or dark corridor with tech-worn aesthetic. Gritty, professional, lethal presence. Cinematic noir lighting. --ar 2:3 --v 6",
+  "image_prompt": "Cipher Delgado-Nygaard, 168cm lean frame, medium warm brown skin with golden undertones, high prominent cheekbones with fuller lips reflecting multiethnic heritage, deep amber-brown eyes, steel gray hair braided tight at waist-length, aged lined face with surgical scar on left temple and keloid burns on hands. Charcoal gray synth-weave cargo jacket, black therm-reactive underlayer, tactical cargo pants, scuffed boots. Chrome bioware augmentation visible on left shoulder catching light, monofilament whip seams on left forearm. Economical precise posture, hands visible and still, tracking awareness. Worn leather satchel. GLMZ Great Lakes Metropolitan Zone, industrial basement lighting, cool blue and amber neon accents, focused tactical aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.3,
-    "Southeast Asian": 18.7,
-    "Central Asian": 18.5,
-    "Sub-Saharan African": 18.0,
-    "Middle Eastern": 14.5
+    "Hispanic/Latin American": 57.7,
+    "Northern European": 20.5,
+    "Sub-Saharan African": 17.8,
+    "Indigenous American": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 7,
+        "Colombian": 3.8
+      },
+      "Mexican": {
+        "Mexican": 46.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 9.9,
+        "Irish": 6.2
+      },
+      "Scandinavian": {
+        "Danish": 4.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 16.6,
+        "South African": 0.6
+      },
+      "East African": {
+        "Rwandan": 0.5,
+        "Somali": 0.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 0.8,
+        "Lakota": 0.1
+      },
+      "Great Lakes Nations": {
+        "Menominee": 3.1
+      }
+    }
+  }
 }

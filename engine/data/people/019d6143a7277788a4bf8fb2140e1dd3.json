@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7277788a4bf8fb2140e1dd3",
   "type": "character",
-  "name": "Phoenix Fredriksen",
+  "name": "Phoenix Okonkwo",
   "aliases": [
     "Yeti",
     "Patchwork"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Shallowgrave — a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations, near Ashland and Chicago Ave",
-  "description": "Yetunde is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nYetunde is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
+  "description": "Phoenix Okonkwo is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nPhoenix Okonkwo is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -187,7 +187,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,31 +244,13 @@
   ],
   "related_entities": [
     "Shallowgrave",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Underground Phoenix",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Bryndís Kouyaté-Semenenko",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Dragan Petersen-Bah",
-    "Gwenaëlle Osei-Diallo",
-    "Idris Forsberg-Quaye",
-    "Irontide Tidal Energy",
-    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
-    "Ringo RR-1 'Rattlesnake'",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation",
-    "Tessera TKR-10 'Executor'",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Northern European (Scandinavian/Polish) with significant East Asian ancestry, complemented by Sub-Saharan African and Hispanic/Latin American heritage—creating a striking phenotype with cool-toned undertones from Nordic genetics blended with warm midtone complexity",
+    "heritage": "Predominantly Sub-Saharan African (66.3%) with significant East Asian (16.1%), Hispanic/Latin American (10.7%), and Indigenous American (6.9%) ancestry—creating a rich, warm-toned phenotype. The Sub-Saharan African ancestry dominates her deep melanin base, while East Asian heritage refines her bone structure with subtle angularity across cheekbones and eye shape. Indigenous American ancestry contributes prominent, high cheekbones and facial width. Hispanic/Latin American genetics add warm golden undertones throughout, particularly visible on the nose bridge and upper cheekbones where the ancestry blend creates a complex bronze-to-deep-brown gradient.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Wiry and compact, almost bird-like in frame — minimal body fat, defined forearms from precise repetitive work, hunched slightly forward from years bent over document tables",
@@ -276,26 +258,62 @@
     "hair_style": "Wrapped in rotating collection of patterned ankara, kente, and adire cloth; rarely seen uncovered",
     "hair_length": "Long (shoulder-length when unwrapped)",
     "eye_color": "Augmented: irises display slow-rotating mandalas in burnt amber and deep violet; sclera unchanged",
-    "skin_tone": "Light-to-medium olive complexion with warm undertones—the result of cool Nordic baseline enriched by East Asian and African heritage, creating subtle golden undertones rather than the deep brown of purely West African ancestry",
-    "complexion": "Clear but weather-marked by years of chemical exposure; permanent dark staining around nail beds and cuticles from ink; fine creases around eyes from squinting at magnification work; minimal makeup, functional grooming only; subtle warmth concentrated in cheekbones reflecting blended ancestry",
+    "skin_tone": "Warm deep brown complexion with rich golden and bronze undertones. The base is dark and melanin-dominant from Sub-Saharan African ancestry, layered with warm honey and bronze tones from Hispanic/Latin American heritage. East Asian ancestry contributes subtle luminosity and refinement to the overall tone. Cheekbones and nose bridge show concentrated bronze warmth from the blended Indigenous American, East Asian, and Latin American genetics creating natural contour without makeup.",
+    "complexion": "Clear but weather-marked by years of chemical exposure; permanent dark staining around nail beds and cuticles from ink; fine creases around eyes from squinting at magnification work; minimal makeup, functional grooming only. Facial structure reflects the ancestry blend: high, prominent cheekbones from Indigenous American heritage; subtle eye shape refinement and face width from East Asian genetics; overall bone density and facial proportions from dominant Sub-Saharan African ancestry. Warm bronze undertones concentrated across cheekbones, nose bridge, and temples from the Latin American and East Asian heritage mixing with the deep melanin base.",
     "distinguishing_marks": [
-      "Chemical burn scar on the back of her left hand — pale, roughly 4cm across, from early forging accident with solvent",
+      "Chemical burn scar on the back of her left hand — pale against warm brown skin, roughly 4cm across, from early forging accident with solvent",
       "Microscopic ink tattoo on inner left wrist: a tiny mandala pattern, matching her iris design, approximately 1cm diameter — self-administered and deliberately imperfect as personal critique",
       "Chronic dark circles beneath eyes from inverted sleep schedule"
     ],
     "visible_augmentations": "Iris patterning immediately obvious and striking — mandalas rotate slowly (observable if you watch for 10+ seconds); retinal zoom enhancement visible as occasional subtle pupil dilation/contraction during focus work; micro-tremor suppression invisible but hands never shake regardless of stimulant intake; magnification lenses perpetually pushed up on forehead like a second set of eyes (not technically augmentation but inseparable from her visual signature)",
     "posture_movement": "Hunched forward slightly, shoulders drawn up — posture of someone who has spent 10,000+ hours bent over detail work; moves with economic precision, no wasted motion; fingers constantly micro-fidgeting (sorting, folding, examining); eye contact uncomfortable and intermittent; speaks in measured, careful tone as if each word is being proofread before utterance",
-    "clothing_style": "Tier 4 utilitarian with deliberate, idiosyncratic flair — black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; no jewelry except a single silver thumb ring inherited from her mother"
+    "clothing_style": "Tier 4 utilitarian with deliberate, idiosyncratic flair — black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; single silver thumb ring inherited from her mother"
   },
-  "image_prompt": "Phoenix Fredriksen, 158cm cyberpunk document forger, 2226, light-to-medium olive skin with warm undertones blending Nordic and East Asian ancestry, shoulder-length black hair with premature gray temples hidden under vibrant patterned kente cloth wrap, augmented eyes with slow-rotating burnt amber and violet mandalas visible behind dark pupils, chemical-burned pale scar on left hand, ink-stained cuticles, chronic dark circles, wiry compact build hunched from decade of detail work, wearing dark fitted cargo pants with utility loops, fitted black turtleneck, layered grey linen overshirt modified with internal pockets, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead, silver thumb ring, economical precise movements, uncomfortable eye contact, standing in dim neon-lit underground workshop surrounded by holographic document fragments and chemical reagent vials, moody introspective lighting, cyberpunk dystopian aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Phoenix Okonkwo, a 158cm wiry figure in GLMZ, hunched slightly forward from years of detail work. Deep warm brown skin with rich bronze and golden undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic heritage. High, prominent cheekbones, refined bone structure with subtle East Asian angularity. Augmented eyes with slow-rotating burnt amber and deep violet mandalas visible in irises. Black hair with premature gray at temples, wrapped in vibrant patterned West African ankara textile. Weather-marked clear complexion with permanent ink stains on nail beds, fine creases around eyes, chronic dark circles. Pale chemical burn scar visible on back of left hand. Wears dark gray fitted cargo pants, fitted black turtleneck, grey linen overshirt, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead. Silver thumb ring. Posture hunched, movements economical and precise, fingers fidgeting with tools. Industrial workspace with chemical apparatus and documents in soft overhead neon lighting, casting cool blues against warm skin tones. Serious, focused expression. Neo-noir archival-forger aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 65.1,
-    "East Asian": 17.6,
-    "Sub-Saharan African": 11.3,
-    "Hispanic/Latin American": 6.0
+    "Sub-Saharan African": 66.3,
+    "East Asian": 16.1,
+    "Hispanic/Latin American": 10.7,
+    "Indigenous American": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 66.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.8
+      },
+      "Chinese": {
+        "Mandarin Northern": 1,
+        "Sichuanese": 1
+      },
+      "Korean": {
+        "Korean": 1.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 6
+      },
+      "Caribbean": {
+        "Cuban": 4.7
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 6.1
+      },
+      "Great Lakes Nations": {
+        "Menominee": 0.6,
+        "Ojibwe": 0.2
+      }
+    }
+  }
 }

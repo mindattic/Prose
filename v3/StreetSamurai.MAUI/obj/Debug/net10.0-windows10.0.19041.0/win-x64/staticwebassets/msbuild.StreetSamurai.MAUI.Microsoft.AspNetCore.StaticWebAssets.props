@@ -72,12 +72,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tz2f4ugst1</Fingerprint>
-      <Integrity>F4cubXYpXyi+Mr25fKittGbRAk5IJCKFoH23X8cvzNU=</Integrity>
+      <Fingerprint>glizqr20ta</Fingerprint>
+      <Integrity>HPFZng/kl6L+mqqJW59UEyAYd1DvHReznal9NJwN4WM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>7738</FileLength>
-      <LastWriteTime>Sun, 05 Apr 2026 16:28:01 GMT</LastWriteTime>
+      <FileLength>7942</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 01:40:23 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\here-map.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loader.js'))">
@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fo0q48tp0k</Fingerprint>
-      <Integrity>7zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A=</Integrity>
+      <Fingerprint>wh2i8qzmhc</Fingerprint>
+      <Integrity>3MKH5aqkiKqEBcvsCnmixjmdCiSDIZRQjnN84Y6zFn4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>22001</FileLength>
-      <LastWriteTime>Thu, 09 Apr 2026 04:28:49 GMT</LastWriteTime>
+      <FileLength>22451</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 02:19:02 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))">
@@ -132,12 +132,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9ht2zhgdm4</Fingerprint>
-      <Integrity>Q9enl4ka3bGvR5UsS7XBtwBxjh4eIC2y79jAWlPqaAc=</Integrity>
+      <Fingerprint>bo41sb3u65</Fingerprint>
+      <Integrity>6yV2LEYznUV5GXq5rdkcJR3pDvqbDL3MQBGOxULEs+g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>8274</FileLength>
-      <LastWriteTime>Thu, 09 Apr 2026 19:33:27 GMT</LastWriteTime>
+      <FileLength>8465</FileLength>
+      <LastWriteTime>Fri, 10 Apr 2026 01:13:08 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">

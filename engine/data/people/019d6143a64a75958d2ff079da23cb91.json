@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64a75958d2ff079da23cb91",
   "type": "character",
-  "name": "Szymon Szabó",
+  "name": "Kira Hong",
   "aliases": [
     "The Contract Woman",
     "Dr. Orel",
@@ -14,7 +14,7 @@
   "age": 52,
   "status": "active",
   "location": "Meridian Core — NeoCortex subsidiary housing, mid-tier, near LaSalle and Jackson",
-  "description": "Lena is what happens when a good person is fed into a machine that runs on compliance. She has a round, lined face that looks like it was built for warmth — crow's feet from decades of real smiling, not the corporate kind. Her hands are a doctor's hands: steady, precise, habitually gentle. She keeps her gray-streaked hair pulled back in a practical knot and wears clothes that are always slightly too formal for wherever she is, as if she is perpetually arriving from somewhere more important. She looks like someone's mother. She is someone's mother. That is the entire problem.\n\nNeoCortex recruited her twenty years ago as a neurological researcher — legitimate work, published papers, the kind of science that helps people. Then the facility work began, and by the time she understood what Program Atlas actually was, her daughter Mila was on a NeoCortex educational scholarship that doubled as a hostage contract. Lena has spent fifteen years making choices she cannot live with to protect someone she cannot lose.\n\nThe Jakarta contract — hiring a freelancer named Kyle to do a job that would position him for device installation — was one of those choices. She has thought about Kyle every day since.",
+  "description": "Kira Hong is what happens when a good person is fed into a machine that runs on compliance. She has a round, lined face that looks like it was built for warmth — crow's feet from decades of real smiling, not the corporate kind. Her hands are a doctor's hands: steady, precise, habitually gentle. She keeps her gray-streaked hair pulled back in a practical knot and wears clothes that are always slightly too formal for wherever she is, as if she is perpetually arriving from somewhere more important. She looks like someone's mother. She is someone's mother. That is the entire problem.\n\nNeoCortex recruited her twenty years ago as a neurological researcher — legitimate work, published papers, the kind of science that helps people. Then the facility work began, and by the time she understood what Program Atlas actually was, her daughter Mila was on a NeoCortex educational scholarship that doubled as a hostage contract. Kira Hong has spent fifteen years making choices she cannot live with to protect someone she cannot lose.\n\nThe Jakarta contract — hiring a freelancer named Kyle to do a job that would position him for device installation — was one of those choices. She has thought about Kyle every day since.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -229,7 +229,7 @@
     "Scholar": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,52 +245,66 @@
     "Meridian Core",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pure Hand",
-    "Jerome Atlas",
     "Arcturus KS-7 'Nursery'",
-    "GLMZ",
-    "Kyle Ellen Corbin-Vasik",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Lyudmila Abubakar-Tetuanui",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "NeoCortex Industries",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Vantablack BC-1 'Briefcase'",
-    "VitaCore SteadyThread Precision Motor Implant",
-    "Yuki Nwosu-Petrenko"
+    "The Pure Hand",
+    "Atlas"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Eastern European (Polish/Hungarian) dominant with significant Hispanic/Latin American and South Asian ancestry, creating a striking blend of Central European bone structure with warmth from Latin and South Asian genetic expression",
+    "heritage": "Predominantly East Asian (78.2%) with Northern European (11.6%) and Sub-Saharan African (10.2%) ancestry. The blend creates distinctly East Asian bone structure—moderate, refined cheekbones and eye shape—softened and warmed by African genetic expression in skin undertone and lip fullness, with Northern European influence visible in eye color and subtle complexion depth. The result is a face of striking clarity: unmistakably Asian in architecture, but with unexpected warmth and dimension that prevents any single-ancestry reading.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean, slightly worn from decades of precise lab work and institutional living. Shoulders held with the careful tension of someone carrying invisible weight. Posture erect but not rigid—the body language of a person who has learned to make herself smaller.",
-    "hair_color": "Dark gray with residual chestnut brown at the roots",
+    "hair_color": "Dark gray with residual black-brown at the roots",
     "hair_style": "Pulled back in a tight, practical knot at the nape of the neck. No ornament, no variance.",
     "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Gray-blue, slightly faded",
-    "skin_tone": "Warm fair complexion with subtle golden and olive undertones from South Asian and Hispanic ancestry, pale from interior work—the GLMZ basement fluorescent pallor, but with natural warmth beneath the pallor",
-    "complexion": "Round face with high cheekbones reflecting South Asian ancestry, pronounced crow's feet radiating from the outer corners of her eyes. Deep nasolabial lines that speak of forty years of smiling, now etched permanently into her face. Skin texture shows age but is well-maintained, with subtle warm undertones that prevent the typical Eastern European pallor from appearing washed-out. Minimal makeup, always—a swipe of practical lipstick, nothing more. Her face is the kind that strangers trust instinctively and then feel guilty for trusting.",
+    "eye_color": "Gray-blue, slightly faded with faint iridescence from infrared ocular implants visible only in bright light",
+    "skin_tone": "Warm ivory to light beige—pale from interior fluorescent work but with natural golden-warm undertones from the blended ancestry. The Sub-Saharan and Northern European genetics prevent washed-out pallor, creating instead a luminous quality beneath the institutional fluorescence.",
+    "complexion": "Face structure reflects East Asian ancestry with moderate, refined cheekbones and graceful eye placement. Pronounced crow's feet radiating from the outer corners of both eyes. Deep nasolabial lines etched from forty years of smiling, now permanent. Skin texture shows age but is meticulously maintained, with warm undertones across the mid-face and temples from the African and Northern European genetic components. Minimal makeup—always practical lipstick, nothing more. Expression naturally trustworthy, which she has learned to leverage.",
     "distinguishing_marks": [
-      "Thin white scar running vertically through her left eyebrow, approximately 1.5cm, from a lab accident in 2209.",
+      "Thin white scar running vertically through left eyebrow, approximately 1.5cm, from a lab accident in 2209.",
       "Faint burn marks on the inside of both forearms—old, deliberate, self-inflicted, barely visible unless she rolls up her sleeves.",
-      "Three small tattoos on the inside of her right wrist, arranged vertically: a medical symbol, a date (2194), and a single letter 'M' in a child's handwriting style, done in pale blue ink."
+      "Three small tattoos on the inside of right wrist, arranged vertically: a medical symbol, a date (2194), and a single letter 'M' in a child's handwriting style, done in pale blue ink."
     ],
-    "visible_augmentations": "Subtle infrared ocular implants behind the natural eyes—visible only as faint iridescence in bright light, a barely-perceptible shimmer in the gray-blue. Her left hand bears a NeoCortex corporate medical access port on the inner wrist, a small silver interface plate no larger than a postage stamp, always partially covered by her sleeve cuff. Otherwise no visible chrome—she has been carefully kept standard-grade, unremarkable.",
-    "posture_movement": "Moves with clinical precision; her hands are in constant, small motion—gesturing while speaking, adjusting things compulsively, never fully at rest. When standing, she distributes her weight evenly, balanced. When sitting, she perches slightly forward, as if ready to stand at any moment. Her default expression is attentive, almost worried. She makes eye contact for exactly long enough to seem engaged, then looks away. She does not fidget nervously—she is too controlled for that—but her stillness has a quality of suppressed motion, like a spring held compressed.",
-    "clothing_style": "Always slightly overdressed, as if she has just come from a board meeting or is about to attend one. Tier 3 corporate-adjacent: tailored charcoal or navy blazers, cream or white cotton shirts worn pressed and buttoned to the throat, dark practical trousers that hang well. No logos, no flash, no personal expression. A single pair of silver-gray hooded rain jacket from a mid-tier corp supplier, worn to and from work. Closed-toe shoes, always—comfortable walking shoes in black or neutral tones, maintained meticulously. One thin platinum wedding band on her left ring finger, worn despite being widowed for eight years. No other jewelry except the small, obscured watch face embedded in the inner cuff of her left wrist."
+    "visible_augmentations": "Subtle infrared ocular implants behind natural eyes—visible only as faint iridescence in bright light. Left hand bears a NeoCortex corporate medical access port on inner wrist, a small silver interface plate no larger than a postage stamp, always partially covered by sleeve cuff. Otherwise no visible chrome—deliberately kept unremarkable.",
+    "posture_movement": "Moves with clinical precision; hands in constant, small motion—gesturing while speaking, adjusting things compulsively, never fully at rest. When standing, weight distributed evenly, balanced. When sitting, perches slightly forward, ready to stand. Default expression attentive, almost worried. Makes eye contact for exactly long enough to seem engaged, then looks away. Stillness has a quality of suppressed motion, like a spring held compressed.",
+    "clothing_style": "Always slightly overdressed, as if from a board meeting or heading to one. Tier 3 corporate-adjacent: tailored charcoal or navy blazers, cream or white cotton shirts pressed and buttoned to throat, dark practical trousers hanging well. No logos, no flash. Single silver-gray hooded rain jacket from mid-tier corp supplier. Closed-toe shoes always—comfortable walking shoes in black or neutral tones, meticulously maintained. One thin platinum wedding band on left ring finger despite eight-year widowhood. Small embedded watch face on inner left wrist cuff. No other jewelry."
   },
-  "image_prompt": "Szymon Szabó, 168cm lean East-Central European woman with warm olive-fair skin and high cheekbones from blended Polish-Hungarian-South Asian-Hispanic ancestry, age 60s, dark gray hair pulled back tight, gray-blue faded eyes with subtle iridescent infrared implants, thin vertical scar through left eyebrow. Wearing tailored charcoal blazer and cream pressed cotton shirt buttoned to throat, dark trousers, platinum wedding band, silver-gray corp rain jacket. Standing in GLMZ basement corridor with cool fluorescent overhead lighting casting clinical shadows, slightly forward posture, hands poised in controlled gesture, default expression attentive and worried, making careful eye contact. Corporate-institutional setting, cyberpunk 2226, cool color palette with warm skin tones contrasting against clinical environment, portrait angle, --ar 2:3 --v 6",
+  "image_prompt": "A woman in her early sixties with warm ivory skin, distinctly East Asian bone structure softened by African and Northern European genetic warmth. Dark gray hair pulled back severely in a practical knot. Gray-blue eyes with subtle iridescent implant shimmer. Pronounced crow's feet and deep smile lines. Thin white scar through left eyebrow. Wearing a tailored charcoal blazer and pressed white cotton shirt buttoned to throat, dark trousers. Platinum wedding band on left hand. Clinical posture, forward-leaning, hands in constant small motion. Understated professional bearing. GLMZ basement fluorescent lighting casting cool-warm shadows across her face. GLMZ, institutional setting, atmosphere of suppressed tension and buried history. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 58.7,
-    "Hispanic/Latin American": 19.7,
-    "South Asian": 18.2,
-    "East Asian": 3.4
+    "East Asian": 78.2,
+    "Northern European": 11.6,
+    "Sub-Saharan African": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 14.5
+      },
+      "Japanese": {
+        "Japanese": 26.3
+      },
+      "Korean": {
+        "Korean": 37.4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 9.5
+      },
+      "Scandinavian": {
+        "Finnish": 1.7,
+        "Swedish": 0.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 10.2
+      }
+    }
+  }
 }

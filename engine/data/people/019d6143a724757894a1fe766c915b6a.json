@@ -1,7 +1,7 @@
 {
   "id": "019d6143a724757894a1fe766c915b6a",
   "type": "character",
-  "name": "Ama Hernández",
+  "name": "Bogdana Chatterjee",
   "aliases": [
     "Torchy",
     "Y-T"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Gage Circuit, near Milwaukee and North Ave",
-  "description": "Yemisi is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
+  "description": "Bogdana Chatterjee is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Social Chameleon": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gage Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,30 +224,13 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Gradient Compact",
     "Tessera Corponation",
-    "The Milwaukee Core",
-    "Ambassador Silk",
-    "Bintou Halvorsen-Osei",
-    "Bogdan Achebe-Svanstrom",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Davi Ousseini-Brătianu",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo CP-2 'Constable'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vojislav Addo-Mensimah",
-    "Witness",
-    "Ximena Bautista-Nwosu"
+    "Circuit",
+    "Neural Palate",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (34.7%) with significant Hispanic/Latin American (30.5%) ancestry, complemented by East Asian (14.4%), South Asian (12.4%), and North African (6.6%) heritage. This genetic blend creates a rich, multifaceted phenotype with warm undertones and diverse facial structure influences.",
+    "heritage": "Eastern European (46.5%) and South Asian (38.4%) form the dominant axis of her ancestry, with meaningful contributions from East Asian (8.9%), Northern European (5.7%), and trace Sub-Saharan African (0.5%) heritage. This combination creates a striking phenotype: the high, prominent cheekbones and angular facial geometry of Slavic lineages blend with the softer, rounder facial structure and warm skin luminosity characteristic of South Asian genetics. The East Asian component adds subtle epicanthal folds and refined bone structure around the eyes. The result is a face that reads as genuinely ambiguous in origin—distinctly beautiful but difficult to place, with features that seem to shift depending on light and angle.",
     "height_cm": 168,
     "weight_kg": 71,
     "build": "Compact and broad-shouldered with visible muscle density in her arms and core. Built like someone who has spent years in physical labor — efficient, no wasted mass, but strong. Her frame suggests containment rather than expansion.",
@@ -255,8 +238,8 @@
     "hair_style": "Tight coils, pinned and braided close to the scalp",
     "hair_length": "Short",
     "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Warm golden-brown with subtle reddish undertones from her African and Latin American heritage, layered with slight golden warmth from East and South Asian ancestry. Darkens to rich mahogany in direct sunlight.",
-    "complexion": "Clear skin with visible cosmetic bioluminescent freckles across both cheekbones and the bridge of her nose — tiny points of soft blue-green light that pulse faintly with elevated heart rate. Her face is structured and serious with strong cheekbones and a slight forward cant to her jaw suggesting listening, reflecting the blended geometry of her diverse ancestry. No facial hair. Minimal makeup; she doesn't appear to try. Her eyes are steady and patient in a way that reads as unnerving to most people.",
+    "skin_tone": "Warm medium-deep brown with complex undertones—golden from South Asian ancestry, subtle olive from Eastern European heritage, enriched by the East Asian component. The overall effect is a rich, luminous complexion that catches warm light with characteristic radiance. Deepens to amber-bronze in direct sunlight. No visible uneven pigmentation; her skin has the clarity of consistent melanin distribution across both ancestry lines.",
+    "complexion": "Clear skin with visible cosmetic bioluminescent freckles across both cheekbones and the bridge of her nose — tiny points of soft blue-green light that pulse faintly with elevated heart rate. Her face is structured with high, prominent cheekbones and angular planes from her Slavic heritage, softened and warmed by South Asian facial geometry. Her jaw is strong but not heavy, with a slight forward cant suggesting listening. East Asian ancestry contributes subtle refinement around the eyes and temples. No facial hair. Minimal makeup; she doesn't appear to try. Her eyes are steady and patient in a way that reads as unnerving to most people.",
     "distinguishing_marks": [
       "Bioluminescent freckles across both cheekbones and bridge of nose (cosmetic mod, regretted)",
       "Small, barely visible scar on the left side of her jawline (hairline-thin, old)",
@@ -266,17 +249,65 @@
     "posture_movement": "She stands still for long periods with her weight balanced evenly. When she moves, it is economical and unhurried — she does not gesture while talking. Her default expression is patient and slightly inward-focused, as if she is listening to something just beneath the ambient noise. She has the particular physical stillness of someone trained to observe without reacting. Her gaze settles on people for longer than is comfortable.",
     "clothing_style": "Regulation GLMZ Metro Police uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
   },
-  "image_prompt": "Ama Hernández, 168cm tall, metro police officer in cyberpunk 2226, warm golden-brown complexion with mahogany undertones from blended Sub-Saharan African, Hispanic, East Asian, and South Asian heritage. Compact muscular build, steady patient gaze. Short natural black coils pinned close to scalp. Deep brown eyes. Bioluminescent blue-green cosmetic freckles pulsing softly across cheekbones and nose bridge. Faded scars on jawline and right hand. GLMZ regulation dark blue cargo pants with reflective striping, tactical boots, grey-blue uniform shirt, tactical vest with insignia, standard-issue cap. Still, economical posture with unnerving steady attention. Dimly lit precinct interior with neon accents, cool blue-grey LED lighting, slightly inward-focused expression. Cyberpunk aesthetic, hyper-realistic portrait, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Bogdana Chatterjee, GLMZ Metro Police officer, 2226. Medium-deep warm brown skin with golden and olive undertones, luminous in harsh neon light. High Slavic cheekbones softened by South Asian facial geometry, subtle East Asian refinement around the eyes. Deep brown unaugmented eyes with patient, unnerving gaze. Short natural black hair in tight coils pinned close to scalp. Cosmetic bioluminescent freckles pulse faint blue-green across cheekbones and bridge of nose. Strong angular face, hairline-thin scar on left jawline. In regulation tactical uniform: dark blue cargo pants, grey-blue shirt, tactical vest with Metro insignia, standard-issue cap. Standing still with balanced posture, economical stillness of trained observer. Cold blue neon fills shadows under harsh overhead precinct lighting. Industrial background, GLMZ 2200s. Mood: watchful, patient, slightly unsettling presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 34.7,
-    "Hispanic/Latin American": 30.5,
-    "East Asian": 14.4,
-    "South Asian": 12.4,
-    "North African": 6.6,
-    "Northern European": 1.4
+    "Eastern European": 46.5,
+    "South Asian": 38.4,
+    "East Asian": 8.9,
+    "Northern European": 5.7,
+    "Sub-Saharan African": 0.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 41.6
+      },
+      "Slavic East": {
+        "Ukrainian": 4.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 17.4,
+        "Tamil Sri Lankan": 7.3
+      },
+      "Pakistani": {
+        "Pashtun": 10.4,
+        "Punjabi Pakistani": 3.3
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 3.5,
+        "Mandarin Northern": 3.5
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      },
+      "Korean": {
+        "Korean": 0.6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 1.6
+      },
+      "Germanic": {
+        "Dutch": 2.1
+      },
+      "Scandinavian": {
+        "Norwegian": 1.8,
+        "Swedish": 0.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 0.5
+      }
+    }
+  }
 }

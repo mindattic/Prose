@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d07d408c8f5827f3ef0199",
   "type": "character",
-  "name": "Remi Szabó-Larsdóttir-Mukherjee",
+  "name": "Remi Haraldsen-Larsdóttir-Bergqvist",
   "aliases": [
     "Cove",
     "The Noise Nun"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, sub-basement venue called The Marrow, near Western and Division",
-  "description": "Caoimhe is short and powerfully built, with skin the color of walnut bark and a close-cropped natural that's gone completely silver. Her face is mapped with deep laugh lines and a scar that cuts through her left eyebrow where someone threw a bottle at a performance in 2178. She wears industrial hearing-protection as a necklace when not performing, and her forearms are covered in dense geometric tattoos she did herself — each one a sonic diagram of a piece she's composed. Her irises have been modded to display waveform patterns when she's listening hard, which is almost always.\n\nCaoimhe has been making noise music in Meridian's underground for twenty-three years and has the absolute authority of someone who has outlasted every trend. She builds her instruments from urban salvage — pipe resonators, scavenged transit-system speakers, dead ELF hardware repurposed as audio processors — and performs in venues that hold forty people at most. She is famously unwilling to record her work commercially, famously generous to young artists who can't pay rent, and famously capable of drinking anyone in Hamtramck under the table. She is exactly as difficult as she needs to be and not a nanometer more.",
+  "description": "Remi Haraldsen-Larsdóttir-Bergqvist is short and powerfully built, with skin the color of walnut bark and a close-cropped natural that's gone completely silver. Her face is mapped with deep laugh lines and a scar that cuts through her left eyebrow where someone threw a bottle at a performance in 2178. She wears industrial hearing-protection as a necklace when not performing, and her forearms are covered in dense geometric tattoos she did herself — each one a sonic diagram of a piece she's composed. Her irises have been modded to display waveform patterns when she's listening hard, which is almost always.\n\nRemi Haraldsen-Larsdóttir-Bergqvist has been making noise music in Meridian's underground for twenty-three years and has the absolute authority of someone who has outlasted every trend. She builds her instruments from urban salvage — pipe resonators, scavenged transit-system speakers, dead ELF hardware repurposed as audio processors — and performs in venues that hold forty people at most. She is famously unwilling to record her work commercially, famously generous to young artists who can't pay rent, and famously capable of drinking anyone in Hamtramck under the table. She is exactly as difficult as she needs to be and not a nanometer more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -195,7 +195,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -215,37 +215,17 @@
     "Ferrogate Transit",
     "Hamtramck Enclave",
     "The Marrow Ledger",
+    "Green Bay Community Table",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Marrow Exchange",
     "Walnut",
     "Silver",
-    "Gravimetric Collapse Charge GCC-9",
-    "Arcturus BH-2 'Marrow'",
-    "Brecken Yılmaz-Osei",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Highland Park Autonomous Zone",
-    "MERIDIAN",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Corponation Lattice Whisper Node",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Resonance Communion",
-    "The Third Rail",
-    "The Unfinished Theorem",
-    "The Wire Taps",
-    "Vespid Dynamics",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "The Marrow Exchange",
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant South Asian heritage, with minor Eastern European and Northern European ancestry. Her genetic makeup reflects the Ubiquitous Diaspora—a striking blend of multiple continental lineages expressed in her facial structure and coloring.",
+    "heritage": "Complex blend of Sub-Saharan African (32.4%), Northern European (31.1%), Southeast Asian (28.4%), and Middle Eastern (8.1%) ancestry. Her genetic makeup reflects the Ubiquitous Diaspora—a striking multi-continental synthesis. The substantial Sub-Saharan African and Southeast Asian components dominate her facial structure with defined cheekbones and balanced width, while Northern European ancestry contributes bone structure refinement and the Northern European-Southeast Asian combination creates subtle eye shape characteristics. Middle Eastern heritage adds warmth and depth to her overall appearance. This is someone whose ancestry genuinely spans from Scandinavia to the Horn of Africa to Southeast Asia to the Levant.",
     "height_cm": 158,
     "weight_kg": 68,
     "build": "Compact and densely muscled; thick through the shoulders and core from decades of lifting salvage and operating percussion instruments. No excess fat. Wiry strength rather than bulk.",
@@ -253,25 +233,63 @@
     "hair_style": "Close-cropped natural fade, maintained short against her scalp",
     "hair_length": "Short",
     "eye_color": "Dark brown with visible waveform patterns cycling across the iris when focusing intently",
-    "skin_tone": "Medium to medium-deep warm brown with golden undertones, reflecting the blend of East and South Asian ancestry with subtle warmth from her Eastern European heritage",
-    "complexion": "Weathered and lined with high, defined cheekbones and a broader facial structure characteristic of East Asian heritage blended with South Asian features. Laugh lines radiate from the corners of her eyes and mouth, suggesting a lifetime of expression. Skin bears the texture of someone who works outdoors and underground in equal measure. Minimal makeup; no vanity grooming.",
+    "skin_tone": "Rich medium-deep warm brown with golden undertones—the luminous depth created by Sub-Saharan African and Southeast Asian heritage as the dominant genetic base, warmed further by Northern European and Middle Eastern ancestry, creating visual warmth that shifts subtly in different light.",
+    "complexion": "Weathered and lined with high, defined cheekbones and facial width characteristic of Sub-Saharan and Southeast Asian heritage, balanced by Northern European bone structure refinement. Laugh lines radiate from the corners of her eyes and mouth, suggesting a lifetime of expression. Skin bears the texture of someone who works outdoors and underground in equal measure. Minimal makeup; no vanity grooming. Subtle Middle Eastern warmth visible in cheek and jaw definition.",
+    "visible_augmentations": "Waveform-display irides that cycle and shift subtly when she's listening or concentrating. Industrial-grade hearing-protection equipment worn as a necklace when not in use — custom-molded, clearly well-maintained. Faint subcutaneous scarring visible on inner palms where vibration sensors were implanted, most noticeable when her hands are in certain light.",
+    "posture_movement": "Economical and grounded; moves like someone accustomed to navigating tight spaces and uneven industrial terrain. Shoulders slightly forward from years at workbenches. Hands are expressive and precise — she gestures while speaking, often unconsciously tracing sonic patterns in the air. When listening, her entire body goes still; she leans into sound rather than away from it.",
     "distinguishing_marks": [
       "Diagonal scar running through the left eyebrow, approximately 4cm long, white and slightly raised — from a bottle thrown during a 2178 performance",
       "Dense geometric tattoos covering both forearms in black ink, each a personal sonic diagram representing a composed piece; patterns include spirals, phase diagrams, frequency grids, and resonance curves applied in self-done sessions over decades"
     ],
-    "visible_augmentations": "Waveform-display irides that cycle and shift subtly when she's listening or concentrating. Industrial-grade hearing-protection equipment worn as a necklace when not in use — custom-molded, clearly well-maintained. Faint subcutaneous scarring visible on inner palms where vibration sensors were implanted, most noticeable when her hands are in certain light.",
-    "posture_movement": "Economical and grounded; moves like someone accustomed to navigating tight spaces and uneven industrial terrain. Shoulders slightly forward from years at workbenches. Hands are expressive and precise — she gestures while speaking, often unconsciously tracing sonic patterns in the air. When listening, her entire body goes still; she leans into sound rather than away from it.",
     "clothing_style": "Tier 4-5 utilitarian; function over presentation. Heavy canvas work pants (usually black or charcoal) with reinforced knees and multiple pockets, typically splattered with solder, rust, and unidentifiable workshop residue. Loose linen or cotton shirts in muted colors, sleeves rolled or cut off to show forearm tattoos. Scuffed steel-toed boots, often unlaced. A heavy canvas or leather jacket when venturing into Hamtramck proper — old, worn to a soft finish, covered in various pins and patches from defunct venues. All clothing shows the patina of genuine use, not aesthetic choice."
   },
-  "image_prompt": "Remi Szabó-Larsdóttir-Mukherjee, 158cm tall, compact muscular build, silver-white close-cropped hair. East Asian and South Asian heritage evident in high cheekbones, warm medium-brown skin tone, dark brown eyes with subtle waveform patterns. Weathered face with laugh lines, white scar through left eyebrow. Forearms covered in black geometric sonic tattoos. Wearing loose muted-color linen shirt with rolled sleeves, heavy black canvas work pants with reinforced knees, scuffed unlaced steel-toed boots. Industrial hearing-protection necklace. Economical posture, leaning forward slightly. In a dimly-lit underground workshop or performance space, cyberpunk 2220s aesthetic, dramatic side-lighting emphasizing her weathered features and tattoo details. Hands expressively gesturing, tracing patterns in the air. Gritty, authentic, no vanity—pure function and decades of sonic craftsmanship visible in every detail. --ar 2:3 --v 6",
+  "image_prompt": "Remi Haraldsen-Larsdóttir-Bergqvist, 158cm tall, compact dense-muscled frame, dark rich medium-brown skin with golden undertones, defined high cheekbones, weathered complexion with laugh lines, short silver-white close-cropped natural fade hair, dark brown eyes with subtle waveform patterns cycling across irises, diagonal 4cm white scar through left eyebrow, dense black geometric sonic tattoos covering both forearms with spirals and frequency grids, industrial hearing-protection necklace, faint subcutaneous scarring on inner palms. Wearing scuffed unlaced steel-toed boots, charcoal reinforced canvas work pants with solder stains, muted rolled-sleeve cotton shirt exposing forearm tattoos, worn heavy canvas jacket with defunct venue patches. Economical grounded posture, expressive hands tracing sonic patterns in air. GLMZ Great Lakes Metropolitan Zone, workshop or underground venue lighting, neon and tungsten casting shadows across her weathered features, atmospheric industrial setting, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 51.5,
-    "South Asian": 35.6,
-    "Eastern European": 7.8,
-    "Northern European": 5.1
+    "Sub-Saharan African": 32.4,
+    "Northern European": 31.1,
+    "Southeast Asian": 28.4,
+    "Middle Eastern": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 17.9
+      },
+      "Central African": {
+        "Congolese": 7.3
+      },
+      "Southern African": {
+        "Mozambican": 7.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 8
+      },
+      "British Isles": {
+        "English": 11.2,
+        "Welsh": 11.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 28.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 0.2
+      },
+      "Kurdish": {
+        "Kurdish": 3.2
+      },
+      "Arab Gulf": {
+        "Iraqi": 4.7
+      }
+    }
+  }
 }

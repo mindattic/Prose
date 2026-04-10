@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7147b73b67f0f5ca4067e8d",
   "type": "character",
-  "name": "Nyx Migizi-Bergqvist",
+  "name": "Nyx Sefanaia-Moala",
   "aliases": [
     "Strand",
     "The Cartographer",
@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit, mobile — maintains three rotating safe-house nodes, near North Ave and Damen",
-  "description": "Vesna is lean and angular, with the kind of economy of movement that suggests someone who has spent years navigating spaces not built for human occupation. Her hair is shaved close on the sides and kept longer on top, currently dyed a flat, non-reflective black that she maintains with the same pragmatism she applies to everything. Her eyes are a pale grey-green that people sometimes mistake for augmented; they are not. She is Croatian-Swedish by heritage, raised in a migrant enclave on the Shelf that no longer exists, having been demolished to make way for a data-routing hub in 2178. She considers this formative.\n\nVesna's trade is spatial knowledge — specifically, the gap between the official map of GLMZ and the actual city, which she has spent twelve years documenting. She sells access routes to runners needing to avoid surveillance corridors, sells structural data to architects with clients who need rooms that don't appear on building permits, and occasionally sells nothing at all to people she finds interesting, just to see what they do with it. She works from a custom-built rig she calls the Palimpsest — a layered mapping system that overlays historical city data, real-time sensor feeds, and her own hand-annotated surveys into a single navigable model. It is, by any reasonable assessment, the most comprehensive private map of GLMZ in existence.\n\nShe is not warm, exactly, but she is fair, and in The Circuit those two things are often confused. She has a reputation for absolute accuracy — if Vesna says a tunnel is passable, it is passable; if she says a route is burned, it is burned — and she guards that reputation with a ferocity that has ended at least two professional relationships and one that was something more. She experiences the city as a text to be read rather than a place to be inhabited, which gives her a clarity about GLMZ's power structures that people with more emotional investment sometimes cannot achieve, and which occasionally makes her feel like a ghost walking through a city she refuses to belong to.",
+  "description": "Nyx Sefanaia-Moala is lean and angular, with the kind of economy of movement that suggests someone who has spent years navigating spaces not built for human occupation. Her hair is shaved close on the sides and kept longer on top, currently dyed a flat, non-reflective black that she maintains with the same pragmatism she applies to everything. Her eyes are a pale grey-green that people sometimes mistake for augmented; they are not. She is Croatian-Swedish by heritage, raised in a migrant enclave on the Shelf that no longer exists, having been demolished to make way for a data-routing hub in 2178. She considers this formative.\n\nNyx Sefanaia-Moala's trade is spatial knowledge — specifically, the gap between the official map of GLMZ and the actual city, which she has spent twelve years documenting. She sells access routes to runners needing to avoid surveillance corridors, sells structural data to architects with clients who need rooms that don't appear on building permits, and occasionally sells nothing at all to people she finds interesting, just to see what they do with it. She works from a custom-built rig she calls the Palimpsest — a layered mapping system that overlays historical city data, real-time sensor feeds, and her own hand-annotated surveys into a single navigable model. It is, by any reasonable assessment, the most comprehensive private map of GLMZ in existence.\n\nShe is not warm, exactly, but she is fair, and in The Circuit those two things are often confused. She has a reputation for absolute accuracy — if Nyx Sefanaia-Moala says a tunnel is passable, it is passable; if she says a route is burned, it is burned — and she guards that reputation with a ferocity that has ended at least two professional relationships and one that was something more. She experiences the city as a text to be read rather than a place to be inhabited, which gives her a clarity about GLMZ's power structures that people with more emotional investment sometimes cannot achieve, and which occasionally makes her feel like a ghost walking through a city she refuses to belong to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.61,
@@ -234,7 +234,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -253,39 +253,23 @@
     "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
     "Meridian Core",
     "PulsePoint ScentSig Personal Biochemical Scent Node",
-    "GLMZ",
     "The Circuit",
     "The Shelf",
     "TESSERA PG-2 'Signature'",
     "The Heritage Vault",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Lacuna Genomics",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Stratum",
+    "Circuit",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Slagworks Industrial",
+    "Compass Rose",
     "The Pale Mile",
-    "Arcturus HX-1 'Headsman'",
-    "Emeka Johansson-Orozco",
-    "Eshe Pena-Baah",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Narrowcast",
-    "Noir Dining",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sisay Bergqvist-Mallari",
-    "Solveig Tambadou-Kereselidze",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Heidelberg Scar",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Question",
-    "The Quiet Room",
-    "The Resonance Communion"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed East Asian, Indigenous American, Pacific Islander, Sub-Saharan African, South Asian, and Northern European ancestry — a genetic map of the Ubiquitous Diaspora. The blend manifests in warm-medium undertones across her face, with architectural features reflecting multiple ancestral lines: higher cheekbones from East Asian heritage, broader nasal structure with South Asian influence, and the angular jawline spanning her mixed ancestry.",
+    "heritage": "Predominantly Pacific Islander (47.6%) with substantial Hispanic/Latin American (28.4%) ancestry, complemented by Sub-Saharan African (13.2%), East Asian (5.8%), and South Asian (5.0%) heritage. This genetic combination creates a warm, golden-brown complexion with pronounced Pacific Islander and Afro-Latinx features: broad cheekbones with strong definition, fuller lips, and a robust nasal structure reflecting her Pacific and Latin ancestry. The blend produces a warm-golden undertone across her entire face.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with minimal excess mass — the build of someone who moves through tight spaces regularly and carries nothing unnecessary. Visible muscle tone in forearms and shoulders from years of manual surveying and climbing through infrastructure.",
@@ -293,8 +277,8 @@
     "hair_style": "Shaved close on sides, longer on top — currently 8-10cm at crown, styled back or left to fall forward depending on operational needs",
     "hair_length": "Medium (top) / Short (sides)",
     "eye_color": "Dark brown with subtle green undertones — entirely natural, catching light with warm amber flecks",
-    "skin_tone": "Warm-medium complexion with golden-brown undertones — the natural result of East Asian, Indigenous American, Pacific Islander, Sub-Saharan African, and South Asian ancestry blending with Northern European heritage",
-    "complexion": "High, prominent cheekbones with defined structure; angular jawline; slightly broader nose bridge; skin shows minor scarring on knuckles and palms from repeated contact with rough surfaces. Expression tends toward neutral focus rather than emotional display.",
+    "skin_tone": "Warm golden-brown complexion — the natural result of dominant Pacific Islander and Hispanic/Latin American ancestry blending with African, East Asian, and South Asian heritage. Rich, sun-kissed undertones throughout.",
+    "complexion": "Broad, prominent cheekbones with strong definition; angular jawline; fuller lips reflecting Latin and Pacific ancestry; robust nose bridge with slight flare at base; skin shows minor scarring on knuckles and palms from repeated contact with rough surfaces. Expression tends toward neutral focus rather than emotional display.",
     "visible_augmentations": "Micro-LIDAR emitters visible as faint iridescent nodes at the tips of all ten fingers — they catch light differently than skin when hands are in motion. Sub-vocal comms implant barely visible as a thin surgical line along the left side of her neck. No external chrome; all augmentations are subcutaneous or integrated into existing anatomy.",
     "distinguishing_marks": [
       "Faint linear scar running 4cm along left temple — from a structural collapse during early survey work in 2214",
@@ -304,17 +288,73 @@
     "posture_movement": "Economical and precise. She moves through space as if reading it — head slightly forward, eyes tracking vertical and horizontal lines. Minimal wasted motion; she does not gesture while speaking. When navigating unfamiliar terrain, her movement slows and becomes more deliberate, as if she is actively encoding the space. Resting state is stillness rather than fidgeting.",
     "clothing_style": "Tier 3-4 utilitarian. Dark, non-reflective colors (black, charcoal, muted grey-blue). Reinforced cargo pants with multiple pockets and thigh attachment points for tools. Fitted technical jacket with hidden pockets and signal-blocking liner. Boots are heavy-soled and broken in, chosen for grip and durability over appearance. A single metal-cased tablet (battered, vintage aesthetic) is always visible. No jewelry, no logos, no status markers — the goal is to move without drawing attention while remaining instantly ready for emergency egress."
   },
-  "image_prompt": "Nyx Migizi-Bergqvist, 172cm lean surveyor with warm-medium brown skin and warm golden undertones reflecting East Asian, Indigenous American, Pacific Islander, and Sub-Saharan African heritage. Dark brown eyes with subtle green flecks. Black hair shaved at sides, longer on top, styled back. Sharp cheekbones and angular jawline. Faint scar on left temple, small burn mark on right wrist. Iridescent micro-LIDAR nodes visible on fingertips catching light. Sub-vocal implant scar on left neck. Wearing dark utilitarian technical jacket with signal-blocking liner, reinforced charcoal cargo pants with tool attachments, heavy-soled boots worn from years of infrastructure climbing. Battered metal-cased tablet in hand. Posture economical and precise, head slightly forward, expression neutral focus. Standing in dimly lit GLMZ infrastructure level with neon accent lighting reflecting off augmentation nodes. Cyberpunk 2226, gritty industrial aesthetic, cool blue and amber lighting. --ar 2:3 --v 6",
+  "image_prompt": "Nyx Sefanaia-Moala, GLMZ, lean 172cm tall surveyor with warm golden-brown skin, Pacific Islander and Hispanic ancestry with African, East Asian, and South Asian heritage evident in broad cheekbones, fuller lips, robust nose bridge. Dark brown eyes with amber flecks. Flat black hair shaved on sides, 8-10cm longer on top styled back. Faint 4cm scar along left temple, small circular burn scar on right inner wrist, asymmetrical finger calluses. Micro-LIDAR emitters as faint iridescent nodes on fingertips catching light. Sub-vocal comms implant visible as thin surgical line on left neck. Wearing dark non-reflective utilitarian tech jacket with hidden pockets, reinforced cargo pants with tool attachment points, heavy-soled worn boots. Holding battered vintage metal-cased tablet. Economical posture, head forward, tracking vertical lines. No jewelry or status markers. Neo-noir infrastructure background, concrete and neon, dramatic side lighting emphasizing scar and augmentation nodes, neutral focused expression, ready for egress. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 33.3,
-    "Indigenous American": 17.3,
-    "Pacific Islander": 16.0,
-    "Sub-Saharan African": 15.9,
-    "South Asian": 11.9,
-    "Northern European": 5.6
+    "Pacific Islander": 47.6,
+    "Hispanic/Latin American": 28.4,
+    "Sub-Saharan African": 13.2,
+    "East Asian": 5.8,
+    "South Asian": 5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 5.3,
+        "Fijian": 6.4
+      },
+      "Polynesian": {
+        "Tongan": 15.2,
+        "Hawaiian": 2.6
+      },
+      "Micronesian": {
+        "Marshallese": 18.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 12.5
+      },
+      "Caribbean": {
+        "Cuban": 7.6
+      },
+      "South American": {
+        "Peruvian": 0.8,
+        "Brazilian": 7.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 11.5
+      },
+      "West African": {
+        "Senegalese": 1.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 0.5
+      },
+      "Korean": {
+        "Korean": 3.4
+      },
+      "Japanese": {
+        "Japanese": 1.9
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 3.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.2
+      },
+      "Nepali": {
+        "Nepali": 0.4
+      }
+    }
+  }
 }

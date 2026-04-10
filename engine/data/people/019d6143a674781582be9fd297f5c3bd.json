@@ -1,7 +1,7 @@
 {
   "id": "019d6143a674781582be9fd297f5c3bd",
   "type": "character",
-  "name": "Slate Haraldsen-Vaai-Bangura",
+  "name": "Slate Hong-Árnason-Rentería",
   "aliases": [
     "Bass Pastoral",
     "The Gardener"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Pilsen Veil, basement workshop beneath a decommissioned Ferrogate Transit relay station, near Western and Chicago Ave",
-  "description": "Obasi is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nObasi builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
+  "description": "Slate Hong-Árnason-Rentería is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nSlate Hong-Árnason-Rentería builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Performer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,34 +170,18 @@
   "registered_firearms": [],
   "related_entities": [
     "Ferrogate Transit",
-    "The Reclamation Assembly",
     "Pilsen Veil",
+    "The Reclamation Assembly",
     "Omro Relay",
     "Concrete",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pure Hand",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "MindBridge Relay One Social Integration BCI",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Corridor of Mirrors",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Slate",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (50.8%) with significant Sub-Saharan African (22.7%), Middle Eastern (15.6%), and Pacific Islander (10.9%) ancestry, creating a complex warm-toned phenotype with characteristics spanning multiple geographic regions",
+    "heritage": "Balanced tri-continental ancestry creating a distinctive phenotype: East Asian foundation (49.9%) provides bone structure and eye shape, Southeast Asian heritage (24.0%) contributes warmth and facial width, Hispanic/Latin American ancestry (26.1%) adds golden undertones and fuller features. The combination yields a warm-toned complexion with characteristics that don't clearly resolve to a single region—a genuinely cosmopolitan genetic mix visible in the harmonious blending of facial planes, eye set, and skin luminosity.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Large-framed and broad-shouldered with a slow, deliberate heaviness; not fat but dense, the body of someone who has spent six decades moving through physical work with intention rather than haste",
@@ -205,26 +189,48 @@
     "hair_style": "Locs gathered into a loose tail at the nape of the neck; well-maintained, clearly a long-term practice",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Deep brown, slightly hooded by age",
-    "skin_tone": "Deep warm brown with subtle golden-amber undertones from Southeast Asian and Middle Eastern heritage, darkening to rich charcoal in dim light; evenly distributed melanin with slight warmth in the undertone suggesting the blended ancestry mix",
-    "complexion": "Deep facial lines around the eyes and mouth from decades of concentration and smile-lines; skin weathered but not ravaged; a few age spots on the temples; broad nose and wide-set eyes reflecting Southeast Asian ancestry; subtle orbital ridge definition from African heritage; warm undertones throughout without cosmetic modification, only the earned texture of time",
+    "skin_tone": "Warm medium-deep brown with golden-amber undertones from the three-way East Asian, Southeast Asian, and Hispanic blend; a rich caramel-bronze tone that deepens to warm charcoal in dim light; even melanin distribution reflecting the complex genetic mix",
+    "complexion": "Deep facial lines around the eyes and mouth from decades of concentration and smile-lines; skin weathered but not ravaged; a few age spots on the temples; broad facial structure with moderate cheekbones reflecting East and Southeast Asian ancestry, offset by the warmth and fuller features from Hispanic heritage; broad nose with Southeast Asian width; warm undertones throughout without cosmetic modification, only the earned texture of time",
+    "visible_augmentations": "A dark metallic cochlear amplifier module visible behind the left ear, discretely integrated into the skin but clearly functional hardware; the amplifier is matte-gunmetal grey with small indicator nodes. Mild subdermal reinforcement visible as subtle thickening along both wrists under the skin, detectable only on close inspection or when his hands are under bright light.",
+    "posture_movement": "Moves slowly and with deliberate weight, as if always listening to the acoustic properties of each space he enters; stands with his shoulders slightly forward, head often tilted as if attending to distant frequencies; his enormous hands move with surprising gentleness and precision; rarely hurries; speaks from stillness rather than animation",
     "distinguishing_marks": [
       "Extensive scarring across both knuckles — white, callused tissue from metal work and decades of handling rough materials",
       "A thin pale scar running along the outside of his left forearm, approximately 8cm, origin unknown but old",
       "Small burn marks on the inner wrists (bilateral) from soldering and heat-work, faded to pale patches"
     ],
-    "visible_augmentations": "A dark metallic cochlear amplifier module visible behind the left ear, discretely integrated into the skin but clearly functional hardware; the amplifier is matte-gunmetal grey with small indicator nodes. Mild subdermal reinforcement visible as subtle thickening along both wrists under the skin, detectable only on close inspection or when his hands are under bright light.",
-    "posture_movement": "Moves slowly and with deliberate weight, as if always listening to the acoustic properties of each space he enters; stands with his shoulders slightly forward, head often tilted as if attending to distant frequencies; his enormous hands move with surprising gentleness and precision; rarely hurries; speaks from stillness rather than animation",
     "clothing_style": "Tier 4 working-artist aesthetic: worn but clean linen and heavy cotton work clothes in blacks, greys, and deep blues; a faded wool overshirt with fraying at the cuffs; sturdy boots with reinforced soles for workshop use and tunnel navigation; no logos, no chrome, no status markers — function over presentation; a single woven bracelet in earth tones on his left wrist"
   },
-  "image_prompt": "Portrait of Slate Haraldsen-Vaai-Bangura, 188cm tall large-framed man in his sixties with deep warm-brown skin and subtle golden undertones reflecting Southeast Asian, African, Middle Eastern and Pacific Islander heritage; dark brown-black locs streaked with grey gathered at nape; hooded deep brown eyes with age lines; broad nose; weathered complexion with earned lines from decades of concentration. Visible matte-gunmetal cochlear amplifier module behind left ear. Extensive white scarring on knuckles, old pale forearm scar, faded bilateral wrist burn marks from metalwork. Wearing worn black and grey linen work clothes, faded wool overshirt with fraying cuffs, reinforced workshop boots; woven earth-tone bracelet on left wrist. Standing with shoulders slightly forward, head tilted as if listening; enormous hands at rest, gentle precision evident. Dim workshop lighting casting warm amber across deep charcoal skin; cyberpunk 2226 Great Lakes Metropolitan Zone setting, functional aesthetic, no chrome or status markers, the presence of patient craftsmanship. Stillness and deliberate intention. --ar 2:3 --v 6",
+  "image_prompt": "Slate Hong-Árnason-Rentería, 60-year-old craftsman with warm caramel-bronze skin blending East Asian, Southeast Asian, and Hispanic ancestry; deep brown eyes slightly hooded with age, broad facial structure with high cheekbones and full features; dark hair with grey threading in shoulder-length locs tied at nape; 188cm tall, dense broad-shouldered build; extensive white scarring across knuckles, pale forearm scar, faded burn marks on wrists; matte-gunmetal cochlear amplifier visible behind left ear; wearing faded black linen and heavy cotton work clothes, fraying wool overshirt, reinforced boots, woven earth-tone bracelet; standing in dim workshop or tunnel space, shoulders slightly forward, hands still and precise, listening; warm atmospheric lighting catching the golden undertones in his skin and the metallic gleam of his augmentations; GLMZ, function over chrome, the presence of earned time and intention --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 50.8,
-    "Sub-Saharan African": 22.7,
-    "Middle Eastern": 15.6,
-    "Pacific Islander": 10.9
+    "East Asian": 49.9,
+    "Hispanic/Latin American": 26.1,
+    "Southeast Asian": 24
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 49.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 26.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 2.9
+      },
+      "Indonesian": {
+        "Sumatran": 13.7
+      },
+      "Cambodian": {
+        "Khmer": 7.4
+      }
+    }
+  }
 }

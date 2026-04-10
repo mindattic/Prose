@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b376979e21fa239f539ff3",
   "type": "character",
-  "name": "Ember Faalele-Ibarra",
+  "name": "Ember Okafor-Möller",
   "aliases": [
     "Ami",
     "the Waste"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Aurochs Medical Complex — sub-basement waste processing facility; lives in Blackpipe Corridor, near Armitage and Milwaukee",
-  "description": "Aminata is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
+  "description": "Ember Okafor-Möller is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Provider": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -201,47 +201,24 @@
     "Blackpipe Corridor",
     "The Narrows Compact",
     "Dredge Mining Collective",
-    "Riddle",
     "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "GLMZ",
     "The Gradient Compact",
     "The Pure Hand",
-    "Tibor Osei-Svanstrom",
-    "The Milwaukee Core",
-    "Arcturus NX-1 'Sandman'",
-    "Brewer's Spine",
-    "Crucible Industries Furnace CF-15 'Meltdown'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Slagworks Industrial",
-    "Stainless Steel",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Tessera Corponation Lattice Whisper Node",
-    "The Collective",
-    "The Furnace",
-    "The Narrows",
-    "The Question",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vespid Dynamics",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "VitaCore LinguaSync Real-Time Translation Implant"
+    "Frost Boudiaf"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander and Southeast Asian dominant (55.6%), with significant Hispanic/Latin American (27.2%) and North African (12.1%) ancestry, creating a striking multicultural blend. Warm golden-brown skin with subtle olive and amber undertones from the Southeast Asian and Pacific Islander mix, warmed further by Hispanic heritage.",
+    "heritage": "Predominantly Sub-Saharan African (75.8%) with South Asian (12.2%) and Southeast Asian (12.0%) ancestry. This genetic combination creates striking warm brown skin tones with complex golden and amber depths, high-definition cheekbones, and the balanced facial proportions characteristic of this multicultural blend. The ancestry mix produces warm, expressive features with natural strength in the face structure.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and spare, muscled in the forearms and shoulders from years of repetitive handling work. No excess weight. Efficient frame.",
     "hair_color": "Black, naturally",
     "hair_style": "Pulled back in a tight, practical bun secured with a grey clip",
     "hair_length": "Long (pulled back)",
-    "eye_color": "Dark brown natural with warm undertones; left eye contains suppressed violet bioluminescence visible as faint shimmer beneath tinted contact lens",
-    "skin_tone": "Warm golden-brown with subtle olive and amber undertones, reflecting Pacific Islander and Southeast Asian heritage blended with Hispanic warmth",
-    "complexion": "Fine-featured, symmetrical face with moderate to high cheekbones shaped by Southeast Asian and Pacific Islander ancestry. Genuinely expressive in repose—warm, observant. Can compress into complete blankness. Small scar on right temple from a childhood accident. Skin around eyes shows early crow's feet from squinting under industrial lighting. Face shows the balanced proportions characteristic of multicultural Southeast Asian-Pacific Islander-Hispanic heritage.",
+    "eye_color": "Deep warm brown natural with golden undertones; left eye contains suppressed violet bioluminescence visible as faint shimmer beneath tinted amber-brown contact lens",
+    "skin_tone": "Deep warm brown with rich golden and amber undertones, reflecting the dominant Sub-Saharan African heritage blended with South Asian warmth and Southeast Asian complexity. Even-toned with natural luminosity characteristic of this ancestry.",
+    "complexion": "Fine-featured, symmetrical face with prominent high cheekbones shaped by Sub-Saharan African and South Asian ancestry. Genuinely expressive in repose—warm, observant. Can compress into complete blankness. Small scar on right temple from a childhood accident. Skin around eyes shows early crow's feet from squinting under industrial lighting. Face shows the balanced proportions and natural warmth characteristic of multicultural Sub-Saharan African-South Asian-Southeast Asian heritage.",
     "distinguishing_marks": [
       "Chemical staining at knuckles and first two joints of both hands—permanent yellowed discoloration from sterilization protocols, looks like old nicotine stains but chemical in origin",
       "Small linear scar on right temple, approximately 1.5cm, barely visible unless lit from the side"
@@ -250,17 +227,32 @@
     "posture_movement": "Moves with economical precision—no wasted motion. Quiet walker. Tends to keep her hands visible and still when not in use. Stands slightly angled, as if ready to pivot away. Makes deliberate eye contact when she decides to be memorable, none when she doesn't. Carries herself with the specific posture of someone who has learned to occupy minimal space.",
     "clothing_style": "Grey-green Aurochs Medical Complex support staff uniform during shifts—regulation poly-blend coverall with name badge, latex gloves, reinforced apron. Off-shift: practical Tier 4 clothing—worn dark jeans, fitted grey or black thermal shirts, a heavy olive canvas jacket patched at both elbows, practical boots (black synthetic leather, steel-toed). No jewelry except a cheap stainless steel watch. Her clothes are clean but deliberately unremarkable, chosen to not draw attention or memory."
   },
-  "image_prompt": "Ember Faalele-Ibarra, 158cm tall, compact athletic build, Southeast Asian and Pacific Islander features with warm golden-brown skin and subtle olive undertones, fine-featured symmetrical face, dark brown eyes with faint violet bioluminescence barely visible under amber-contact lens in left eye, black hair in tight practical bun, chemical stains on knuckles, small temple scar, wearing grey-green medical complex coverall with latex gloves and name badge during shift work under industrial lighting, economical precise posture ready to pivot, realistic cyberpunk 2226 medical facility worker, clinical fluorescent overhead lighting casting shadows across face, close-up portrait showing both warmth and professional blankness, gritty realism, sci-fi medical aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ember Okafor-Möller, a compact 158cm woman with deep warm brown skin reflecting Sub-Saharan African, South Asian, and Southeast Asian heritage. High prominent cheekbones, expressive warm brown eyes with subtle amber undertones—left eye hidden behind amber-tinted contact lens concealing violet bioluminescence beneath. Black hair pulled back in tight bun with grey clip. Small scar visible on right temple. Chemical-stained yellowed discoloration on knuckles and first hand joints. Wearing grey-green Aurochs Medical Complex uniform with poly-blend coverall, name badge, latex gloves, reinforced apron during work shift. Off-shift in worn dark jeans, fitted grey thermal shirt, heavy olive canvas jacket with elbow patches, black synthetic leather steel-toed boots. Moves with economical precision, minimal wasted motion. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial medical facility or urban tier-4 district. Cool atmospheric lighting emphasizing skin tone warmth and the contrast of her unaugmented features against augmented details. Serious, observant expression. Minimal jewelry—only cheap stainless steel watch. Deliberately unremarkable, forgettable appearance by design --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 34.1,
-    "Hispanic/Latin American": 27.2,
-    "Southeast Asian": 21.5,
-    "North African": 12.1,
-    "Northern European": 2.8,
-    "Middle Eastern": 2.3
+    "Sub-Saharan African": 75.8,
+    "South Asian": 12.2,
+    "Southeast Asian": 12
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 75.8
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 11.3,
+        "Tamil Sri Lankan": 0.9
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 12
+      }
+    }
+  }
 }

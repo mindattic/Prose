@@ -131,7 +131,11 @@ public class HtmlExportService
             repoFiles.Add((repoName, fileName, sorted.Count));
         }
 
-        // Re-generate all repo pages now that we have the complete nav list
+        // Generate tool pages (map, heatmap) so they're in repoFiles before the final nav pass
+        GenerateMapPage(repos, repoFiles);
+        GenerateHeatmapPage(repos, repoFiles);
+
+        // Re-generate ALL pages with the complete nav list (repos + tools)
         foreach (var (repoName, entries) in repos.OrderBy(r => r.Key))
         {
             var sorted = entries.OrderBy(e => e.name, StringComparer.OrdinalIgnoreCase).ToList();
@@ -158,26 +162,335 @@ public class HtmlExportService
             File.WriteAllText(Path.Combine(ExportDir, fileName), html);
         }
 
-        // Master index — dashboard style
+        // Master index — dashboard style, grouped by RepoGroups
         var indexSb = new StringBuilder();
         indexSb.AppendLine("<div class=\"dashboard\">");
         indexSb.AppendLine($"<p class=\"dash-subtitle\">{repos.Count} repositories &middot; {totalEntries:N0} entities</p>");
-        indexSb.AppendLine("<div class=\"dash-grid\">");
-        foreach (var (repoName, fileName, count) in repoFiles)
+
+        // Tools section first (Map, Heritage)
+        var dashToolNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "map", "heritage" };
+        var dashTools = repoFiles.Where(r => dashToolNames.Contains(r.repoName.ToLowerInvariant())).ToList();
+        if (dashTools.Count > 0)
         {
-            indexSb.AppendLine($"<a href=\"{fileName}\" class=\"dash-card\">");
-            indexSb.AppendLine($"  <div class=\"dash-icon\">{RepoIcon(repoName)}</div>");
-            indexSb.AppendLine($"  <div class=\"dash-label\">{Esc(repoName)}</div>");
-            indexSb.AppendLine($"  <div class=\"dash-count\">{count:N0}</div>");
-            indexSb.AppendLine("</a>");
+            indexSb.AppendLine("<h2 class=\"dash-group-header\">Tools</h2>");
+            indexSb.AppendLine("<div class=\"dash-grid\">");
+            foreach (var (repoName, fileName, count) in dashTools)
+            {
+                indexSb.AppendLine($"<a href=\"{fileName}\" class=\"dash-card\">");
+                indexSb.AppendLine($"  <div class=\"dash-icon\">{RepoIcon(repoName)}</div>");
+                indexSb.AppendLine($"  <div class=\"dash-label\">{Esc(repoName)}</div>");
+                indexSb.AppendLine("</a>");
+            }
+            indexSb.AppendLine("</div>");
         }
-        indexSb.AppendLine("</div></div>");
+
+        // Repo groups
+        var fileLookup = repoFiles.ToDictionary(r => r.repoName.ToLowerInvariant().Replace(" ", "_"), r => r);
+        foreach (var (group, groupRepos) in Constants.RepoGroups.All)
+        {
+            var matched = groupRepos
+                .Where(r => fileLookup.ContainsKey(r))
+                .Select(r => fileLookup[r])
+                .ToList();
+            if (matched.Count == 0) continue;
+            var groupTotal = matched.Sum(m => m.count);
+            indexSb.AppendLine($"<h2 class=\"dash-group-header\">{Esc(group)} <span class=\"dash-group-count\">{groupTotal:N0}</span></h2>");
+            indexSb.AppendLine("<div class=\"dash-grid\">");
+            foreach (var (repoName, fileName, count) in matched)
+            {
+                indexSb.AppendLine($"<a href=\"{fileName}\" class=\"dash-card\">");
+                indexSb.AppendLine($"  <div class=\"dash-icon\">{RepoIcon(repoName)}</div>");
+                indexSb.AppendLine($"  <div class=\"dash-label\">{Esc(repoName)}</div>");
+                indexSb.AppendLine($"  <div class=\"dash-count\">{count:N0}</div>");
+                indexSb.AppendLine("</a>");
+            }
+            indexSb.AppendLine("</div>");
+        }
+        indexSb.AppendLine("</div>");
 
         var indexHtml = BuildPage("Street Samurai Encyclopedia", indexSb.ToString(), false, repoFiles);
         var indexPath = Path.Combine(ExportDir, "index.htm");
         File.WriteAllText(indexPath, indexHtml);
         return indexPath;
     }
+
+    private void GenerateMapPage(
+        Dictionary<string, List<(string name, string json)>> repos,
+        List<(string repoName, string fileName, int count)> repoFiles)
+    {
+        var apiKey = settings.GoogleMapsApiKey;
+        if (string.IsNullOrWhiteSpace(apiKey)) return;
+
+        // Extract places with coordinates
+        var markers = new StringBuilder();
+        markers.AppendLine("[");
+        var placeKey = repos.Keys.FirstOrDefault(k => k.Equals("Places", StringComparison.OrdinalIgnoreCase));
+        if (placeKey != null)
+        {
+            var first = true;
+            foreach (var (name, json) in repos[placeKey])
+            {
+                try
+                {
+                    var doc = JsonDocument.Parse(json);
+                    if (!doc.RootElement.TryGetProperty("coordinates", out var coords)) continue;
+                    if (!coords.TryGetProperty("lat", out var lat) || !coords.TryGetProperty("lng", out var lng)) continue;
+                    var latVal = lat.GetDouble();
+                    var lngVal = lng.GetDouble();
+                    if (latVal == 0 && lngVal == 0) continue;
+
+                    var desc = "";
+                    if (doc.RootElement.TryGetProperty("description", out var descEl))
+                        desc = (descEl.GetString() ?? "").Replace("\"", "'").Replace("\n", " ");
+                    if (desc.Length > 150) desc = desc[..150] + "...";
+
+                    if (!first) markers.AppendLine(",");
+                    first = false;
+                    markers.Append($"{{\"name\":\"{Esc(name).Replace("\"", "\\\"")}\",\"lat\":{latVal},\"lng\":{lngVal},\"desc\":\"{desc.Replace("\"", "\\\"")}\"}}" );
+                }
+                catch { /* skip malformed */ }
+            }
+        }
+        markers.AppendLine("]");
+
+        var body = $@"
+<div id=""map-container"" style=""width:100%;height:calc(100vh - 120px);min-height:500px;border-radius:8px;border:1px solid #30363d;""></div>
+<script>
+var mapMarkers = {markers};
+function initMap() {{
+    var map = new google.maps.Map(document.getElementById('map-container'), {{
+        center: {{lat: 41.88, lng: -87.63}},
+        zoom: 11,
+        styles: [
+            {{elementType:'geometry',stylers:[{{color:'#1d2c4d'}}]}},
+            {{elementType:'labels.text.stroke',stylers:[{{color:'#1a3646'}}]}},
+            {{elementType:'labels.text.fill',stylers:[{{color:'#8ec3b9'}}]}},
+            {{featureType:'water',elementType:'geometry',stylers:[{{color:'#0e1626'}}]}},
+            {{featureType:'road',elementType:'geometry',stylers:[{{color:'#304a7d'}}]}}
+        ]
+    }});
+    var bounds = new google.maps.LatLngBounds();
+    var infoWindow = new google.maps.InfoWindow();
+    mapMarkers.forEach(function(m) {{
+        var marker = new google.maps.Marker({{
+            position: {{lat: m.lat, lng: m.lng}},
+            map: map,
+            title: m.name
+        }});
+        bounds.extend(marker.getPosition());
+        marker.addListener('click', function() {{
+            infoWindow.setContent('<div style=""max-width:300px;font-family:Outfit,sans-serif;""><strong>' + m.name + '</strong><br><span style=""font-size:12px;color:#8b949e;"">' + m.desc + '</span></div>');
+            infoWindow.open(map, marker);
+        }});
+    }});
+    if (mapMarkers.length > 1) map.fitBounds(bounds);
+}}
+</script>
+<script src=""https://maps.googleapis.com/maps/api/js?key={apiKey}&callback=initMap"" async defer></script>";
+
+        var html = BuildPage("World Map", body, false, repoFiles);
+        File.WriteAllText(Path.Combine(ExportDir, "map.htm"), html);
+        repoFiles.Add(("Map", "map.htm", 0));
+    }
+
+    private void GenerateHeatmapPage(
+        Dictionary<string, List<(string name, string json)>> repos,
+        List<(string repoName, string fileName, int count)> repoFiles)
+    {
+        // Build ancestry data from people repo
+        var peopleKey = repos.Keys.FirstOrDefault(k => k.Equals("People", StringComparison.OrdinalIgnoreCase));
+        if (peopleKey == null) return;
+
+        var regionTotals = new Dictionary<string, double>(StringComparer.OrdinalIgnoreCase);
+        var subRegionData = new Dictionary<string, Dictionary<string, Dictionary<string, double>>>(StringComparer.OrdinalIgnoreCase);
+        int totalPeople = 0;
+
+        foreach (var (_, json) in repos[peopleKey])
+        {
+            try
+            {
+                var doc = JsonDocument.Parse(json);
+                totalPeople++;
+
+                // Try ancestry_detail first (three-tier)
+                if (doc.RootElement.TryGetProperty("ancestry_detail", out var detail) && detail.ValueKind == JsonValueKind.Object)
+                {
+                    foreach (var region in detail.EnumerateObject())
+                    {
+                        foreach (var subRegion in region.Value.EnumerateObject())
+                        {
+                            foreach (var nationality in subRegion.Value.EnumerateObject())
+                            {
+                                if (nationality.Value.ValueKind != JsonValueKind.Number) continue;
+                                var pct = nationality.Value.GetDouble();
+                                if (pct <= 0) continue;
+
+                                regionTotals[region.Name] = regionTotals.GetValueOrDefault(region.Name) + pct;
+
+                                if (!subRegionData.ContainsKey(region.Name))
+                                    subRegionData[region.Name] = new(StringComparer.OrdinalIgnoreCase);
+                                if (!subRegionData[region.Name].ContainsKey(subRegion.Name))
+                                    subRegionData[region.Name][subRegion.Name] = new(StringComparer.OrdinalIgnoreCase);
+                                subRegionData[region.Name][subRegion.Name][nationality.Name] =
+                                    subRegionData[region.Name][subRegion.Name].GetValueOrDefault(nationality.Name) + pct;
+                            }
+                        }
+                    }
+                    continue;
+                }
+
+                // Fall back to flat genetic_ancestry
+                if (doc.RootElement.TryGetProperty("genetic_ancestry", out var flat) && flat.ValueKind == JsonValueKind.Object)
+                {
+                    foreach (var prop in flat.EnumerateObject())
+                    {
+                        if (prop.Value.ValueKind != JsonValueKind.Number) continue;
+                        var pct = prop.Value.GetDouble();
+                        if (pct > 0) regionTotals[prop.Name] = regionTotals.GetValueOrDefault(prop.Name) + pct;
+                    }
+                }
+            }
+            catch { /* skip */ }
+        }
+
+        if (regionTotals.Count == 0) return;
+
+        // Build JSON hierarchy for D3 treemap
+        var totalWeight = regionTotals.Values.Sum();
+        var hierarchyJson = new StringBuilder();
+        hierarchyJson.AppendLine("[");
+        var firstRegion = true;
+        foreach (var (region, value) in regionTotals.OrderByDescending(kv => kv.Value))
+        {
+            if (!firstRegion) hierarchyJson.AppendLine(",");
+            firstRegion = false;
+
+            var regionPct = totalWeight > 0 ? (value * 100.0 / totalWeight).ToString("F1") : "0";
+            var subs = subRegionData.GetValueOrDefault(region);
+
+            hierarchyJson.Append($"{{\"name\":\"{Esc(region)}\",\"value\":{(int)Math.Round(value)},\"pct\":\"{regionPct}\",\"subGroups\":");
+            if (subs != null && subs.Count > 1)
+            {
+                hierarchyJson.Append("[");
+                var firstSub = true;
+                foreach (var (sub, nats) in subs.OrderByDescending(kv => kv.Value.Values.Sum()))
+                {
+                    if (!firstSub) hierarchyJson.Append(",");
+                    firstSub = false;
+                    var subVal = nats.Values.Sum();
+                    var subPct = totalWeight > 0 ? (subVal * 100.0 / totalWeight).ToString("F1") : "0";
+
+                    hierarchyJson.Append($"{{\"name\":\"{Esc(sub)}\",\"value\":{(int)Math.Round(subVal)},\"pct\":\"{subPct}\",\"subGroups\":");
+                    if (nats.Count > 1)
+                    {
+                        hierarchyJson.Append("[");
+                        var firstNat = true;
+                        foreach (var (nat, natVal) in nats.OrderByDescending(kv => kv.Value))
+                        {
+                            if (!firstNat) hierarchyJson.Append(",");
+                            firstNat = false;
+                            var natPct = totalWeight > 0 ? (natVal * 100.0 / totalWeight).ToString("F1") : "0";
+                            hierarchyJson.Append($"{{\"name\":\"{Esc(nat)}\",\"value\":{(int)Math.Round(natVal)},\"pct\":\"{natPct}\"}}");
+                        }
+                        hierarchyJson.Append("]");
+                    }
+                    else hierarchyJson.Append("[]");
+                    hierarchyJson.Append("}");
+                }
+                hierarchyJson.Append("]");
+            }
+            else hierarchyJson.Append("[]");
+            hierarchyJson.Append("}");
+        }
+        hierarchyJson.AppendLine("]");
+
+        var body = $@"
+<p class=""text-muted"" style=""color:#8b949e;margin-bottom:16px;"">23andMe-style genetic ancestry across {totalPeople:N0} people in the GLMZ. Click a region to drill down into sub-groups.</p>
+<div class=""badge-row"" style=""margin-bottom:12px;"">
+    <span style=""background:#30363d;color:#e6edf3;padding:3px 10px;border-radius:12px;font-size:12px;"">{totalPeople:N0} people</span>
+    <span style=""background:#30363d;color:#e6edf3;padding:3px 10px;border-radius:12px;font-size:12px;"">{regionTotals.Count} ancestry groups</span>
+</div>
+<div id=""heritage-treemap"" style=""width:100%;min-height:500px;background:#161b22;border-radius:8px;border:1px solid #30363d;""></div>
+<script src=""https://d3js.org/d3.v7.min.js""></script>
+<script>
+var heritageData = {hierarchyJson};
+{TreemapJs}
+heritageTreemap.render('heritage-treemap', heritageData);
+</script>";
+
+        var html = BuildPage("Genetic Ancestry Heatmap", body, false, repoFiles);
+        File.WriteAllText(Path.Combine(ExportDir, "heritage.htm"), html);
+        repoFiles.Add(("Heritage", "heritage.htm", 0));
+    }
+
+    // Inline treemap JS for export (self-contained, no external file dependency)
+    private const string TreemapJs = @"
+window.heritageTreemap = {
+    render: function(elementId, data) {
+        var container = document.getElementById(elementId);
+        if (!container) return;
+        container.innerHTML = '';
+        var width = container.clientWidth || 900;
+        var height = Math.max(500, width * 0.6);
+        var colorScale = d3.scaleOrdinal().range([
+            '#dc3545','#e85d6c','#f0883e','#d2a8ff','#58a6ff','#3fb950','#7ee787','#f778ba',
+            '#79c0ff','#6e40c9','#ffc107','#e6edf3','#8b949e','#ff6b6b','#4ecdc4','#45b7d1',
+            '#f9ca24','#6c5ce7','#a29bfe','#fd79a8','#00cec9','#fdcb6e','#e17055','#74b9ff'
+        ]);
+        var tooltip = d3.select('body').selectAll('.heritage-tooltip').data([0]).join('div')
+            .attr('class','heritage-tooltip')
+            .style('display','none').style('position','absolute').style('background','#1c2128')
+            .style('border','1px solid #30363d').style('border-radius','6px').style('padding','8px 12px')
+            .style('font-size','12px').style('color','#e6edf3').style('pointer-events','none')
+            .style('z-index','10000').style('font-family','Outfit,sans-serif');
+
+        function renderLevel(items, breadcrumb) {
+            container.innerHTML = '';
+            if (breadcrumb) {
+                var bar = document.createElement('div');
+                bar.style.cssText = 'padding:8px 12px;background:#1c2128;border-bottom:1px solid #30363d;display:flex;align-items:center;gap:8px;cursor:pointer;';
+                bar.innerHTML = '<span style=""color:#58a6ff;font-size:14px;"">&#8592; Back</span><span style=""color:#8b949e;""> | </span><span style=""color:#e6edf3;font-weight:600;"">' + breadcrumb + '</span>';
+                bar.onclick = function() { renderLevel(data, null); };
+                container.appendChild(bar);
+            }
+            var h = breadcrumb ? height - 40 : height;
+            var root = d3.hierarchy({name:'root',children:items}).sum(function(d){return d.value||0;}).sort(function(a,b){return b.value-a.value;});
+            d3.treemap().size([width,h]).padding(2).round(true)(root);
+            var svg = d3.select(container).append('svg').attr('width',width).attr('height',h).style('font-family','Outfit,sans-serif');
+            var leaf = svg.selectAll('g').data(root.leaves()).join('g').attr('transform',function(d){return 'translate('+d.x0+','+d.y0+')';});
+            leaf.append('rect').attr('width',function(d){return d.x1-d.x0;}).attr('height',function(d){return d.y1-d.y0;})
+                .attr('fill',function(d){return colorScale(d.data.name);}).attr('fill-opacity',0.85)
+                .attr('stroke','#0d1117').attr('rx',3).style('cursor','pointer')
+                .on('mouseover',function(event,d){
+                    d3.select(this).attr('fill-opacity',1).attr('stroke','#e6edf3').attr('stroke-width',2);
+                    var has=d.data.subGroups&&d.data.subGroups.length>0;
+                    var html='<strong>'+d.data.name+'</strong><br>'+d.data.value+' refs ('+d.data.pct+'%)';
+                    if(has)html+='<br><span style=""color:#58a6ff;font-size:11px;"">Click to drill down</span>';
+                    tooltip.style('display','block').html(html).style('left',(event.pageX+12)+'px').style('top',(event.pageY-28)+'px');
+                })
+                .on('mousemove',function(event){tooltip.style('left',(event.pageX+12)+'px').style('top',(event.pageY-28)+'px');})
+                .on('mouseout',function(){d3.select(this).attr('fill-opacity',0.85).attr('stroke','#0d1117').attr('stroke-width',1);tooltip.style('display','none');})
+                .on('click',function(event,d){
+                    tooltip.style('display','none');
+                    if(d.data.subGroups&&d.data.subGroups.length>0){
+                        var sub=d.data.subGroups.reduce(function(s,c){return s+c.value;},0);
+                        var cd=d.data.subGroups.map(function(c){return{name:c.name,value:c.value,pct:sub>0?(c.value*100/sub).toFixed(1):'0',subGroups:c.subGroups||[]};});
+                        renderLevel(cd,d.data.name+' ('+d.data.pct+'% of GLMZ)');
+                    }
+                });
+            leaf.append('text').attr('x',6).attr('y',16).attr('fill','#0d1117')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;if(w<60||h<20)return '0px';return w<100?'9px':'11px';})
+                .attr('font-weight',600).text(function(d){var w=d.x1-d.x0;if(w<60)return '';return w<100&&d.data.name.length>10?d.data.name.substring(0,8)+'..':d.data.name;});
+            leaf.append('text').attr('x',6).attr('y',30).attr('fill','#0d1117')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;return(w<60||h<35)?'0px':'9px';})
+                .attr('opacity',0.7).text(function(d){return(d.x1-d.x0)<60?'':d.data.value+' ('+d.data.pct+'%)';});
+            leaf.append('text').attr('x',6).attr('y',44).attr('fill','#58a6ff')
+                .attr('font-size',function(d){var w=d.x1-d.x0,h=d.y1-d.y0;return(w<80||h<50||!d.data.subGroups||!d.data.subGroups.length)?'0px':'9px';})
+                .text(function(d){return(!d.data.subGroups||!d.data.subGroups.length)?'':d.data.subGroups.length+' sub-groups \u25B6';});
+        }
+        renderLevel(data, null);
+    }
+};";
 
     private static string BuildEntryHtml(string name, string jsonContent)
     {
@@ -330,7 +643,34 @@ public class HtmlExportService
         if (navItems != null)
         {
             navHtml.AppendLine("<ul class=\"sidebar-nav\">");
-            foreach (var (repoName, fileName, count) in navItems)
+
+            // Tool pages first (Map, Heritage)
+            var toolNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "map", "heritage" };
+            var tools = navItems.Where(n => toolNames.Contains(n.repoName.ToLowerInvariant())).ToList();
+            if (tools.Count > 0)
+            {
+                navHtml.AppendLine("<li class=\"nav-group-header\">Tools</li>");
+                foreach (var (repoName, fileName, count) in tools)
+                    navHtml.AppendLine($"<li><a href=\"{fileName}\">{RepoIcon(repoName)}<span>{Esc(repoName)}</span></a></li>");
+            }
+
+            // Group repos by RepoGroups for organized navigation
+            var navLookup = navItems.ToDictionary(n => n.repoName.ToLowerInvariant().Replace(" ", "_"), n => n);
+            foreach (var (group, groupRepos) in Constants.RepoGroups.All)
+            {
+                var matched = groupRepos
+                    .Where(r => navLookup.ContainsKey(r))
+                    .Select(r => navLookup[r])
+                    .ToList();
+                if (matched.Count == 0) continue;
+                navHtml.AppendLine($"<li class=\"nav-group-header\">{Esc(group)}</li>");
+                foreach (var (repoName, fileName, count) in matched)
+                    navHtml.AppendLine($"<li><a href=\"{fileName}\">{RepoIcon(repoName)}<span>{Esc(repoName)}</span><span class=\"nav-count\">{count}</span></a></li>");
+            }
+            // Any ungrouped repos (excluding tools already shown)
+            var allCategorized = Constants.RepoGroups.All.SelectMany(g => g.Repos).ToHashSet(StringComparer.OrdinalIgnoreCase);
+            allCategorized.UnionWith(toolNames);
+            foreach (var (repoName, fileName, count) in navItems.Where(n => !allCategorized.Contains(n.repoName.ToLowerInvariant().Replace(" ", "_")) && !allCategorized.Contains(n.repoName.ToLowerInvariant())))
                 navHtml.AppendLine($"<li><a href=\"{fileName}\">{RepoIcon(repoName)}<span>{Esc(repoName)}</span><span class=\"nav-count\">{count}</span></a></li>");
             navHtml.AppendLine("</ul>");
         }
@@ -395,6 +735,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Outfit', 'Helvet
 .sidebar-nav li a:hover i { color: var(--text); }
 .sidebar-nav li a span { flex: 1; }
 .nav-count { color: var(--muted); font-size: 11px; min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+.nav-group-header { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; padding: 10px 16px 2px; font-weight: 600; }
 .sidebar-toggle { display: none; position: fixed; top: 8px; left: 8px; z-index: 300; background: var(--surface); border: 1px solid var(--border); color: var(--text); width: 36px; height: 36px; border-radius: 4px; cursor: pointer; font-size: 18px; }
 
 /* Main content */
@@ -408,7 +749,10 @@ a { color: var(--link); text-decoration: none; } a:hover { text-decoration: unde
 /* Dashboard */
 .dashboard { text-align: center; padding: 20px 0; }
 .dash-subtitle { color: var(--muted); margin-bottom: 24px; font-size: 14px; }
-.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.dash-group-header { color: var(--text); font-weight: 600; font-size: 1.1rem; text-align: left; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.dash-group-header:first-child { margin-top: 0; }
+.dash-group-count { color: var(--muted); font-size: 0.85rem; font-weight: 400; }
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 8px; }
 .dash-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 16px; text-align: center; text-decoration: none; transition: border-color 0.2s, transform 0.1s; }
 .dash-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
 .dash-icon { font-size: 24px; color: var(--accent); margin-bottom: 8px; }
@@ -799,6 +1143,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "contracts" => "bi-clipboard-check",
             "entertainment" => "bi-film",
             "subsidiaries" => "bi-diagram-3",
+            "map" => "bi-map",
+            "heritage" => "bi-globe-americas",
             _ => "bi-folder",
         };
         return $"<i class=\"bi {icon}\" style=\"margin-right:6px;\"></i>";

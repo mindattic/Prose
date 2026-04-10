@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69f7aad963baad6bd0844f6",
   "type": "character",
-  "name": "Torsten Haugen",
+  "name": "Indigo Chanthavong",
   "aliases": [
     "Prissy",
     "The Widow"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Grosse Pointe Enclosure, GLMZ, near Milwaukee and North Ave",
-  "description": "Priscila is lean and angular with the kind of posture that suggests it's a weapon. She has her father's Ghanaian cheekbones and her mother's Siberian coloring — a pale complexion with warm undertones, dark hair she wears in a severe center-parted braid. Her eyes are factory-standard brown but her irises have been upgraded to tactical amber, which gives her peripheral dark-vision in the Enclosure's manicured shadow gardens and makes her look, in the right light, faintly predatory. A small cat tail — rust-colored, kinetic geneware she got on a dare at twenty-two and has come to love — flicks at her hip when she's irritated, which is often, and it has ruined more than one effort to seem professionally impassive.\n\nShe works the Grosse Pointe Enclosure's inner residential ring, which means she guards the homes of Axiom executives who regard her as furniture that breathes. She is very good at her job and she resents it in a specific, contained way — the way you resent a language you're fluent in that doesn't belong to you. She has a blistering private contempt for the people she protects and an equally fierce professionalism that won't let her do the job badly regardless. She's been offered an investigator track twice and declined both times, though she couldn't explain why to anyone's satisfaction, including her own.",
+  "description": "Indigo Chanthavong is lean and angular with the kind of posture that suggests it's a weapon. She has her father's Ghanaian cheekbones and her mother's Siberian coloring — a pale complexion with warm undertones, dark hair she wears in a severe center-parted braid. Her eyes are factory-standard brown but her irises have been upgraded to tactical amber, which gives her peripheral dark-vision in the Enclosure's manicured shadow gardens and makes her look, in the right light, faintly predatory. A small cat tail — rust-colored, kinetic geneware she got on a dare at twenty-two and has come to love — flicks at her hip when she's irritated, which is often, and it has ruined more than one effort to seem professionally impassive.\n\nShe works the Grosse Pointe Enclosure's inner residential ring, which means she guards the homes of Axiom executives who regard her as furniture that breathes. She is very good at her job and she resents it in a specific, contained way — the way you resent a language you're fluent in that doesn't belong to you. She has a blistering private contempt for the people she protects and an equally fierce professionalism that won't let her do the job badly regardless. She's been offered an investigator track twice and declined both times, though she couldn't explain why to anyone's satisfaction, including her own.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -194,7 +194,7 @@
     "Sentinel": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grosse Pointe Enclosure",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -259,38 +259,19 @@
   ],
   "related_entities": [
     "Grosse Pointe Enclosure",
-    "GLMZ",
     "Palladian Construction",
+    "Indigo",
+    "Arcturus KS-7 'Nursery'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA PA-5 'Attendant'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial",
+    "Compass Rose",
     "The Pale Mile",
-    "Rust",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Crucible Industries Havoc-44 'Mauler'",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Meridian Munitions MM-4 'Breadwinner'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Rongo Delgado-Opoku",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Svetlana Boateng-Quiñonez",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Quiet Room",
-    "Vuk Jorgensen-Toure"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Northern European (52.2%) with significant East Asian (30.6%), Sub-Saharan African (9.1%), and Pacific Islander (8.1%) ancestry. The genetic blend produces a striking polychromatic appearance: Northern European bone structure tempered by East Asian facial geometry, warmed by African heritage, with subtle Pacific Islander undertones in skin radiance.",
+    "heritage": "Southeast Asian (51.4%) forms the dominant genetic base, creating characteristic facial geometry and bone structure, substantially blended with Sub-Saharan African (31.9%) ancestry that enriches skin depth and adds pronounced cheekbone and jaw definition. Northern European (15.6%) contribution lightens and warms the overall complexion into luminous golden-bronze tones, while minimal East Asian (1.1%) influence remains subtle. The result is a striking polychromatic appearance: Southeast Asian bone structure warmed and deepened by African heritage, with Northern European luminosity creating a balanced, warm complexion that reads as both rich and radiant.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and angular with corded muscle density from combat training; no wasted mass. Shoulders set back with the kind of structural efficiency that reads as coiled readiness.",
@@ -298,8 +279,8 @@
     "hair_style": "Center-parted braid, severe and functional, pulled tight enough to suggest discipline",
     "hair_length": "Long (midback length)",
     "eye_color": "Tactical amber irises with dark-adapted peripheral enhancement; pupils dial wider in low-light environments",
-    "skin_tone": "Warm cream-to-light bronze complexion with balanced undertones—Northern European paleness brightened by African warmth and East Asian luminosity. Minimal sun exposure from Enclosure work preserves the undertone balance without appearing washed out.",
-    "complexion": "Angular cheekbones with East Asian-influenced high set structure, Northern European bone prominence, and African heritage definition. High bridged nose with slight East Asian tapering. Skin maintained to corporate standards with subtle warm undertones. Expression defaults to neutrality with a slight downward mouth tension. Minimal scarring.",
+    "skin_tone": "Warm golden-bronze complexion with balanced undertones—Southeast Asian warmth deepened and enriched by African heritage bone structure and melanin, brightened by Northern European luminosity. The blend creates a radiant, luminous quality without appearing desaturated despite minimal sun exposure from Enclosure work.",
+    "complexion": "Angular cheekbones with Southeast Asian-influenced high set structure, prominently defined by African heritage bone prominence. Strong, defined jawline with Sub-Saharan African structural influence. High bridged nose with Southeast Asian character. Skin maintained to corporate standards with warm, balanced undertones across the palette. Expression defaults to neutrality with a slight downward mouth tension. Minimal scarring.",
     "distinguishing_marks": [
       "Small kinetic geneware cat tail, rust-colored and furred, anchored at base of spine near hip — flicks autonomously when irritated or in heightened alertness",
       "Faint linear scarring along left forearm (subdermal armor plating visible as geometric chrome seams beneath skin)",
@@ -309,15 +290,56 @@
     "posture_movement": "Stands with chest open but weight distributed toward balls of feet — combat-ready baseline posture. Walks with minimal wasted motion, economical and precise. Head moves only with eyes in scan patterns; jaw set slightly forward. When irritated, the cat tail betrays her before her face does — it swishes with sharp, angular motions.",
     "clothing_style": "Axiom Security Division uniform on duty: fitted tactical jacket in matte charcoal with Axiom logo and badge; climate-controlled undersuit; reinforced cargo pants with integrated comms access pockets; minimalist boots rated for 12-hour patrols. Off-duty: understated gym wear (compression shirts, technical fabrics) and dark layers that suggest the same restraint as her on-duty wardrobe. Tier 2 access — corporate-grade materials but no visible luxury markers. All choices prioritize function over appearance."
   },
-  "image_prompt": "Torsten Haugen, 172cm lean combat-trained figure with warm cream-bronze skin reflecting mixed Northern European, East Asian, Sub-Saharan African, and Pacific Islander heritage. Center-parted long black braid pulled severe down her midback. Sharp angular cheekbones, high-set eyes glowing with tactical amber irises, high bridged nose with East Asian definition. Wearing Axiom Security Division matte charcoal tactical jacket with geometric chrome seams visible along inner forearm subdermal plating. Small rust-colored kinetic cat tail with autonomous movement anchored at hip. Corded muscle density, combat-ready posture with weight on balls of feet, economical movement. Faint linear scars on left forearm, white scar on right knuckle. Corporate security officer in GLMZ enclosure setting, cool neon rim lighting, dystopian cyberpunk 2226 atmosphere, neutral expression with slight downward mouth tension. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Chanthavong, Southeast Asian-dominant with African and Northern European heritage blend, golden-bronze luminous skin tone with warm balanced undertones. 172cm lean athletic build, long black braided hair center-parted and severe. Angular high cheekbones with strong defined jawline, high-bridged nose, tactical amber augmented irises glowing softly. Kinetic rust-colored furred cat tail at spine base flicking with tension. Subdermal chrome geometric seams visible along inner forearms from armor plating. Minimal scarring on left forearm and right knuckle. Combat-ready posture, weight on balls of feet, economical precise movement. Wearing Axiom Security matte charcoal tactical jacket with badge, climate-controlled undersuit, reinforced cargo pants, minimalist boots. Faint raised line behind left ear from comms relay. Neutral expression with slight downward mouth tension. GLMZ Great Lakes Metropolitan Zone security operative, cool tactical lighting, Enclosure interior with industrial architecture, blue-tinted ambient glow, professional and restrained aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 52.2,
-    "East Asian": 30.6,
-    "Sub-Saharan African": 9.1,
-    "Pacific Islander": 8.1
+    "Southeast Asian": 51.4,
+    "Sub-Saharan African": 31.9,
+    "Northern European": 15.6,
+    "East Asian": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 36.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 6.4
+      },
+      "Indonesian": {
+        "Balinese": 6.6,
+        "Javanese": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 16.6
+      },
+      "Southern African": {
+        "Mozambican": 13,
+        "Zimbabwean": 2.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 2.1,
+        "Austrian": 1.9
+      },
+      "British Isles": {
+        "Irish": 1.1,
+        "Scottish": 3.4
+      },
+      "Scandinavian": {
+        "Danish": 7.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.1
+      }
+    }
+  }
 }

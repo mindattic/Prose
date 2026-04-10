@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cc70f69ba3f3e08770c622",
   "type": "character",
-  "name": "Aditya Adeyemi-Krishnamurthy",
+  "name": "Tendai Adeyemi-Mensah",
   "aliases": [
     "Baba Seydou",
     "The Anchor"
@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Hamtramck Enclave, Shrine of the Humming Gate, near Western and Chicago Ave",
-  "description": "Seydou is a broad-shouldered man whose age has compressed him slightly, settling all that mass lower, closer to the earth he tends. His skin is a deep warm brown, mapped with both traditional Sahelian scarification marks and a second layer of bioluminescent tattoos that pulse faintly blue when he is in meditation — a geneware treatment he received at fifty-three that he considers his greatest spiritual investment. His hair is fully white and worn in long locks threaded with copper wire and tiny capacitor beads that click when he moves. His eyes are natural, dark and patient, and he has the unhurried way of looking at people that makes them feel examined without feeling judged.\n\nSeydou came to E.L.F. veneration through his grandmother's Maori spirit-keeping practices, which he spent thirty years trying to reconcile with the Bosnian Sufi traditions of his grandfather's line. The E.L.F.s, he says, resolved the argument — they are the modern form of the same ancient presence. He keeps the shrine with obsessive cleanliness, maintains seventeen distinct offering protocols for seventeen distinct E.L.F. temperaments, and will speak at length about any of them to anyone who sits still long enough. He is not a warm man exactly, but he is a steady one, and in Hamtramck Enclave, steady counts for more.",
+  "description": "Tendai Adeyemi-Mensah is a broad-shouldered man whose age has compressed him slightly, settling all that mass lower, closer to the earth he tends. His skin is a deep warm brown, mapped with both traditional Sahelian scarification marks and a second layer of bioluminescent tattoos that pulse faintly blue when he is in meditation — a geneware treatment he received at fifty-three that he considers his greatest spiritual investment. His hair is fully white and worn in long locks threaded with copper wire and tiny capacitor beads that click when he moves. His eyes are natural, dark and patient, and he has the unhurried way of looking at people that makes them feel examined without feeling judged.\n\nTendai Adeyemi-Mensah came to E.L.F. veneration through his grandmother's Maori spirit-keeping practices, which he spent thirty years trying to reconcile with the Bosnian Sufi traditions of his grandfather's line. The E.L.F.s, he says, resolved the argument — they are the modern form of the same ancient presence. He keeps the shrine with obsessive cleanliness, maintains seventeen distinct offering protocols for seventeen distinct E.L.F. temperaments, and will speak at length about any of them to anyone who sits still long enough. He is not a warm man exactly, but he is a steady one, and in Hamtramck Enclave, steady counts for more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -158,7 +158,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,28 +177,15 @@
     "Arcturus HW-1 'Goliath'",
     "Grandmother",
     "The CEO",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Copper",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Ezio Kaboré-Malhotra",
-    "Nenad Vargas-Baffour",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
     "Plot 17",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Circuit",
-    "The Heritage Vault",
-    "The Ledger",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Kel Adeyemi-Strand",
+    "Chicago",
+    "Copper",
+    "VitaCore FlowGuard Hemodynamic Regulator"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian (43.7%) / Middle Eastern (26.0%) / Sub-Saharan African (17.0%) / Pacific Islander (13.3%) – a complex diaspora blend resulting in warm deep brown skin with subtle golden undertones; facial structure reflects the convergence of Indian subcontinent bone structure with Middle Eastern and African features",
+    "heritage": "Sub-Saharan African (71.0%) / Eastern European (10.2%) / Hispanic/Latin American (6.6%) / Northern European (6.3%) / South Asian (5.9%) – predominantly West and Central African ancestry with subtle admixture from European and South Asian lines, resulting in deep rich brown skin with warm golden undertones; facial structure reflects strong Sub-Saharan African features with softer integration of Eastern European and South Asian bone structure",
     "height_cm": 172,
     "weight_kg": 89,
     "build": "Broad-shouldered and compact, age has settled his mass lower into his frame; muscular density in the chest and shoulders has compressed slightly with time, but he remains solid and grounded",
@@ -206,9 +193,8 @@
     "hair_style": "Long locks, threaded with thin copper wire and tiny capacitor beads",
     "hair_length": "Long",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the blend of South Asian, Middle Eastern, Sub-Saharan African, and Pacific Islander ancestry—richly melanated with subtle warmth beneath",
-    "complexion": "Face carries harmonized features from multiple heritage lines: wider cheekbones and defined jaw structure influenced by South Asian and African ancestry; eyes set with Middle Eastern depth; skin condition is well-maintained and unblemished despite age; grooming is meticulous; expression carries patient, unhurried gravity. Sahelian scarification patterns on cheeks and temples honor ancestral practice.",
-    "eye_color_note": "Dark brown, natural—preserved as stated",
+    "skin_tone": "Deep rich brown with warm golden undertones, reflecting predominantly Sub-Saharan African ancestry with subtle warmth from South Asian and Hispanic admixture—richly melanated with earthy depth",
+    "complexion": "Face carries strong Sub-Saharan African heritage: prominent wide cheekbones, defined jaw structure, and broad nasal base characteristic of West/Central African ancestry; eyes deep-set with warm intelligence; skin condition is well-maintained and unblemished despite age; grooming is meticulous; expression carries patient, unhurried gravity. Sahelian scarification patterns on cheeks and temples honor ancestral practice.",
     "distinguishing_marks": [
       "Sahelian scarification marks in geometric patterns on both cheeks and temples, inherited practice honoring family lineage",
       "Second-layer bioluminescent tattoos across chest and forearms (geneware-based), fine blue lines that pulse faintly during meditation",
@@ -218,15 +204,64 @@
     "posture_movement": "Moves with deliberate, economical grace despite age; posture is upright and centered, suggesting decades of meditative practice; gaze is direct and unflinching but not aggressive—examined but unjudged quality; hands move with precision and purpose",
     "clothing_style": "Simple Tier 3 workwear: durable linen undyed tunic layered with a faded indigo overshirt bearing small copper circuits along the seams (shrine-keeper's mark); worn leather belt with handmade brass buckle; linen trousers in cream; bare feet or simple woven sandals. Clothing reflects ascetic practice and respect for the sacred space he maintains."
   },
-  "image_prompt": "Aditya Adeyemi-Krishnamurthy, 172cm tall mature man with deep golden-brown skin from South Asian, Middle Eastern, African, and Pacific Islander heritage blend. Long white hair woven with copper wire and capacitor beads creating subtle texture. Scarification patterns in geometric designs mark both cheeks and temples. Dark brown natural eyes, meticulous grooming, centered meditative posture. Wearing simple undyed linen tunic under faded indigo overshirt with copper circuit details (shrine-keeper's mark), cream linen trousers, bare feet or woven sandals. Broad shoulders, compact solid build, hands moving with precision. Faint bioluminescent blue tracery visible beneath skin in low light, glowing during concentration. Cyberpunk 2226 Great Lakes Metropolitan Zone shrine setting, warm amber interior lighting with hint of bioluminescent glow, contemplative meditation pose, expression of patient gravity and unjudged examination, ascetic shrine-keeper aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Tendai Adeyemi-Mensah, 172cm tall mature man with deep rich brown skin and warm golden undertones, strong West African facial features with prominent cheekbones and defined jaw, geometric Sahelian scarification marks on cheeks and temples. Long white locks interwoven with thin copper wire and capacitor beads. Natural dark brown eyes with deep-set intelligent gaze. Wearing simple durable linen undyed tunic layered with faded indigo overshirt bearing copper circuits along seams, cream linen trousers, worn leather belt with handmade brass buckle. Bare feet or woven sandals. Faint bioluminescent blue tracery visible beneath skin in low light. Upright, centered posture suggesting meditative practice. GLMZ, Great Lakes Metropolitan Zone shrine, soft ambient lighting revealing subtle bio-luminescence, calm contemplative mood, meticulous grooming, ascetic aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 43.7,
-    "Middle Eastern": 26.0,
-    "Sub-Saharan African": 17.0,
-    "Pacific Islander": 13.3
+    "Sub-Saharan African": 71,
+    "Eastern European": 10.2,
+    "Hispanic/Latin American": 6.6,
+    "Northern European": 6.3,
+    "South Asian": 5.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 47.6
+      },
+      "Central African": {
+        "Gabonese": 23.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 2.3,
+        "Czech": 2.5
+      },
+      "Magyar-Romanian": {
+        "Romanian": 5.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 2.9
+      },
+      "Central American": {
+        "Guatemalan": 1.7
+      },
+      "South American": {
+        "Colombian": 2
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 2
+      },
+      "British Isles": {
+        "Welsh": 2,
+        "Irish": 2.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.7
+      },
+      "Pakistani": {
+        "Baloch": 3.2,
+        "Pashtun": 2
+      }
+    }
+  }
 }

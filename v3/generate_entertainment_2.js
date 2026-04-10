@@ -114,7 +114,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — the QUANTA currency symbol. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (\u03A6) — the QUANTA currency symbol. Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Vantablack Media controls 73% of all licensed neural-feed content. They are the dominant entertainment corponation. Their subsidiaries produce most mainstream content. Independent studios operate in the margins, sometimes illegally.
 
@@ -147,7 +147,7 @@ const CATEGORIES = [
   {
     category: 'movie',
     count: 60,
-    prompt: `Generate {count} MOVIES for the Meridian 88 entertainment landscape, spanning years 2183-2226. Include a diverse mix:
+    prompt: `Generate {count} MOVIES for the GLMZ entertainment landscape, spanning years 2183-2226. Include a diverse mix:
 - Blockbusters: Vantablack Media tentpoles, massive neural-feed spectacles, corponation-funded epics
 - Indie films: Low-budget flat-screen or basic neural-feed, often politically charged
 - Propaganda films: Corporate-commissioned content glorifying corponation life, demonizing runners/street life
@@ -159,7 +159,7 @@ Some movies are neural-feed (you ARE the protagonist), some are holographic (3D 
   {
     category: 'show',
     count: 60,
-    prompt: `Generate {count} TV/NEURAL-FEED SHOWS for Meridian 88, spanning years 2183-2226. Include:
+    prompt: `Generate {count} TV/NEURAL-FEED SHOWS for GLMZ, spanning years 2183-2226. Include:
 - Serialized dramas: Crime dramas set on the Shelf, corporate intrigue in the Spire, runner crew adventures
 - Reality shows: "Augment Swap" (trade chrome for a week), "Shelf Life" (Spire residents try to survive Tier 1), corpo dating shows
 - News programs: Corporate-owned news (propaganda), independent news (dangerous), pirate news (underground mesh broadcasts)
@@ -171,8 +171,8 @@ Some shows are neural-feed experiences (you LIVE as a character for the episode)
   {
     category: 'documentary',
     count: 30,
-    prompt: `Generate {count} DOCUMENTARIES for Meridian 88, spanning years 2183-2226. Include:
-- Corporate-funded whitewashes: "The Benevolent Hand: How [Corp] Saved Meridian 88" — slick, well-produced lies
+    prompt: `Generate {count} DOCUMENTARIES for GLMZ, spanning years 2183-2226. Include:
+- Corporate-funded whitewashes: "The Benevolent Hand: How [Corp] Saved GLMZ" — slick, well-produced lies
 - Underground exposes: Dangerous to own, dangerous to watch, documenting corporate experiments on Shelf populations, illegal chrome testing, forced substrate migration
 - Historical: Documenting the rise of corponation sovereignty, the collapse of nation-states, the Great Lakes corridor formation
 - Scientific: BCI development history, geneware ethics debates, the synthetic food revolution
@@ -183,7 +183,7 @@ Some documentaries got their makers killed. Some are required viewing in corpora
   {
     category: 'personality',
     count: 25,
-    prompt: `Generate {count} notable ACTORS, DIRECTORS, and entertainment PERSONALITIES for Meridian 88, active between 2183-2226. Include:
+    prompt: `Generate {count} notable ACTORS, DIRECTORS, and entertainment PERSONALITIES for GLMZ, active between 2183-2226. Include:
 - Corporate-owned talent: Actors under exclusive Vantablack contracts, unable to work outside the corp
 - Independent auteurs: Directors who refuse corporate money, work in flat-screen or underground neural-feed
 - Neural-feed stars: Actors whose neural signatures are so distinctive that audiences crave their "feel" — their emotional texture in neural-feed is unmistakable
@@ -195,7 +195,7 @@ Remember Ubiquitous Diaspora — names and heritage should be globally mixed. So
   {
     category: 'studio',
     count: 15,
-    prompt: `Generate {count} STUDIOS for Meridian 88's entertainment industry, active between 2183-2226. Include:
+    prompt: `Generate {count} STUDIOS for GLMZ's entertainment industry, active between 2183-2226. Include:
 - Vantablack subsidiaries: Studios owned by Vantablack Media that produce specific genres (horror neural-feed, corporate training content, children's programming)
 - Independent studios: Smaller operations producing content outside corporate control, often at legal risk
 - Underground production houses: Illegal studios producing banned content, operating from Shelf basements and abandoned infrastructure
@@ -205,7 +205,7 @@ For category use "studio". For medium, use the primary medium they produce conte
   {
     category: 'network',
     count: 10,
-    prompt: `Generate {count} NETWORKS and distribution channels for Meridian 88, active between 2183-2226. Include:
+    prompt: `Generate {count} NETWORKS and distribution channels for GLMZ, active between 2183-2226. Include:
 - Vantablack-owned broadcast networks: The dominant neural-feed and holographic channels
 - Independent networks: Smaller channels surviving on niche content and specific tier audiences
 - Pirate channels: Underground mesh-network broadcasters, moving frequencies to avoid corponation jamming
@@ -238,7 +238,7 @@ async function generateCategory(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate entertainment entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} entries. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate entertainment entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} entries. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

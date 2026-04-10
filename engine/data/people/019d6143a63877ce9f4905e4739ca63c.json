@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63877ce9f4905e4739ca63c",
   "type": "character",
-  "name": "Marek Zielinski-Nurzhanov-Ekwensi",
+  "name": "Tendai Zielinski-Tanaka-Banerjee",
   "aliases": [
     "Ix",
     "the Kid"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Mexicantown Libre — Burnside Pocket adjacent, sleeps on various couches, near Western and Chicago Ave",
-  "description": "Ixchel is nineteen and looks younger — slight, quick-moving, with warm brown skin and cheekbones that could cut glass. She has bioluminescent freckles across her nose and cheeks in a pale gold, a common-enough cosmetic mod that on her reads as unexpectedly striking because her expressions are so mobile and her face never stops moving. Her hair is long and black with two bleached streaks at the temples. She dresses in layered secondhand synthetics and always, regardless of weather, a red armband on her left arm that she made herself from transit stripe tape.\n\nIxchel has been organizing since she was fifteen, when a Ferrogate Transit infrastructure project demolished sixty-three units in Burnside Pocket, including the building where her grandmother lived, and the residents were relocated to a Helix Biosystems transitional housing unit that turned out to be a pilot program for a respiratory medication rollout. She is raw and intuitive and possessed of an alarming ability to read a crowd — to know exactly what a group of people needs to hear at exactly the moment they need to hear it. She is also nineteen, which means she has made every mistake once and is in the process of making several of them a second time. The veterans around her find her alternately thrilling and terrifying.",
+  "description": "Tendai Zielinski-Tanaka-Banerjee is nineteen and looks younger — slight, quick-moving, with warm brown skin and cheekbones that could cut glass. She has bioluminescent freckles across her nose and cheeks in a pale gold, a common-enough cosmetic mod that on her reads as unexpectedly striking because her expressions are so mobile and her face never stops moving. Her hair is long and black with two bleached streaks at the temples. She dresses in layered secondhand synthetics and always, regardless of weather, a red armband on her left arm that she made herself from transit stripe tape.\n\nTendai Zielinski-Tanaka-Banerjee has been organizing since she was fifteen, when a Ferrogate Transit infrastructure project demolished sixty-three units in Burnside Pocket, including the building where her grandmother lived, and the residents were relocated to a Helix Biosystems transitional housing unit that turned out to be a pilot program for a respiratory medication rollout. She is raw and intuitive and possessed of an alarming ability to read a crowd — to know exactly what a group of people needs to hear at exactly the moment they need to hear it. She is also nineteen, which means she has made every mistake once and is in the process of making several of them a second time. The veterans around her find her alternately thrilling and terrifying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -159,7 +159,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,44 +177,27 @@
   ],
   "related_entities": [
     "Ferrogate Transit",
-    "Helix Biosystems",
     "Mexicantown Libre",
+    "Helix Biosystems",
     "Burnside Pocket",
     "The Render",
     "Grandmother",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
     "Stratum",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
+    "Chicago",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Glass",
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'",
-    "Gold",
-    "Chicago",
-    "Alper Inoue-Aidoo",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "Ilhan Sandstrom-Badu",
-    "Isadora Vukić-Nambiar",
-    "Kairos",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Red Circuit RC-Pit 'Dogfighter'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Bleach Boys",
-    "The Pure Hand",
-    "The Signal"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian-Eastern European-Sub-Saharan African blend: 42% Central Asian (Kazakh/Kyrgyz features), 42% Eastern European (Polish/Russian ancestry), 16% Sub-Saharan African. The result is a striking mix — sharp cheekbones and eye shape from Eastern European and Central Asian genetics, warm medium-brown skin with golden undertones from the African ancestry, creating an unexpectedly harmonious fusion across the GLMZ diaspora.",
+    "heritage": "Globally mixed diaspora heritage: 28% East Asian (Japanese/Chinese/Korean ancestry contributing refined eye shape and cheekbone prominence), 26.5% Sub-Saharan African (warm deep undertones, facial width, and structural generosity), 21.6% South Asian (complexion warmth, cheekbone definition, and brow structure), 16.2% Eastern European (sharp facial angularity and eye-set intensity), 7.7% North African (solar undertone depth and sun-weathered richness). The result is a striking multi-continental synthesis — East Asian eye geometry refined by Eastern European angularity, Sub-Saharan warmth and generous facial structure blended with South Asian complexion saturation and cheekbone architecture, North African solar tones creating a beautifully complex fusion that reads as distinctly 2226 GLMZ diaspora.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Slight and wiry, all kinetic energy — no excess mass, shoulders narrow but defined from constant movement and manual labor. Built for speed and endurance rather than strength.",
@@ -222,8 +205,8 @@
     "hair_style": "Long, often pulled back with whatever's at hand (thread, wire, fabric scraps); appears intentionally unkempt, not neglected",
     "hair_length": "Long",
     "eye_color": "Warm brown, natural",
-    "skin_tone": "Warm medium brown with subtle golden undertones, reflecting the balanced blend of Central Asian, Eastern European, and Sub-Saharan ancestry",
-    "complexion": "High, sharp cheekbones dominate a narrow face with a subtle width suggesting Central Asian ancestry. Skin clear but sun-weathered from outdoor organizing work. Expression is mobile and difficult to photograph — constantly animated, rarely still. Facial structure shows the interplay of East Slavic angularity with broader, warmer tones from African heritage.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones, sun-weathered from outdoor organizing work, reflecting the complex blend of East Asian, Sub-Saharan African, South Asian, Eastern European, and North African ancestry",
+    "complexion": "Sharp cheekbones dominate a narrow face with medium width showing interplay of East Asian refinement and Sub-Saharan African structural generosity. Eyes set with East Asian geometry refined by Eastern European intensity. Skin deep and warm-toned, sun-weathered, mobile expression rarely still. Facial features show striking harmony of Eastern European angularity with broader Sub-Saharan African structure, South Asian warmth and brow definition, and East Asian eye-set.",
     "distinguishing_marks": [
       "Bioluminescent gold freckles across nose and cheekbones in scattered constellation pattern — glow faintly in low light, mod calibrated for aesthetic rather than utility",
       "Pale scar on left forearm (2cm, thin) from fence wire during Burnside Pocket demolition site access at age 15",
@@ -233,14 +216,59 @@
     "posture_movement": "Never fully still — fidgets with objects (tape, fabric, phone) while listening. Walks with deliberate efficiency, eyes scanning surroundings. Stands with weight forward, ready to move. Speaks with hands, whole body engaged in communication. When focused on a crowd, her stillness is almost predatory.",
     "clothing_style": "Tier 5 aesthetic — layered secondhand synthetics in muted colors (grays, blacks, olive), patches visible and intentional. Worn boots, reinforced at heel. Always wearing a homemade red armband on left bicep constructed from transit stripe tape — frayed at edges, faded from daily wear but fastidiously maintained as symbol. No jewelry except a threadbare cord bracelet. Practical, cheap, built for movement and durability over appearance."
   },
-  "image_prompt": "Marek Zielinski-Nurzhanov-Ekwensi, 158cm, wiry activist with Central Asian-Eastern European-Sub-Saharan African heritage, warm medium-brown skin with golden undertones, sharp cheekbones, natural warm brown eyes, long black hair with platinum bleached temples pulled back loosely. Bioluminescent gold freckles constellation glowing faintly across nose and cheekbones. Thin pale scar on left forearm. Wearing layered muted synthetics (grays, blacks, olive), worn boots, faded red transit-tape armband on left bicep, threadbare cord bracelet. Body language constantly animated, weight forward, fidgeting with hands, scanning surroundings with predatory focus. Cyberpunk 2226 GLMZ setting, neon-lit urban environment with industrial infrastructure, low-angle lighting emphasizing the bioluminescent freckles, gritty tier-5 aesthetic, motion and kinetic energy captured mid-gesture --ar 2:3 --v 6",
+  "image_prompt": "Tendai, a wiry 158cm organizer with deep warm brown skin blending East Asian, Sub-Saharan African, South Asian, Eastern European, and North African heritage, stands in GLMZ Great Lakes Metropolitan Zone. Sharp cheekbones and refined East Asian eye geometry frame her animated face; bioluminescent gold freckles glow faintly across her nose and cheekbones. Long natural black hair with platinum-bleached temples pulled back with thread and scraps. Warm brown eyes scan surroundings with predatory focus. Wearing layered secondhand grays and blacks, patched synthetics, worn reinforced boots, homemade red transit-tape armband on left bicep (frayed, faded, meticulously maintained), threadbare cord bracelet. Fidgeting with tape in her hands, weight forward, whole body ready to move. Urban organizing backdrop with infrastructure, dramatic low lighting casting her bioluminescent freckles into subtle relief, gritty Tier 5 aesthetic, moody and kinetic energy captured mid-gesture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 42.2,
-    "Eastern European": 41.8,
-    "Sub-Saharan African": 16.0
+    "East Asian": 28,
+    "Sub-Saharan African": 26.5,
+    "South Asian": 21.6,
+    "Eastern European": 16.2,
+    "North African": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 23.9
+      },
+      "Chinese": {
+        "Cantonese": 3.7,
+        "Hakka": 0.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 14.6,
+        "Gabonese": 8.3
+      },
+      "Southern African": {
+        "Zimbabwean": 3.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.7
+      },
+      "Nepali": {
+        "Nepali": 17.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.3,
+        "Tamil Sri Lankan": 0.4
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 16.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 4.2,
+        "Berber": 3.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64d74988ac32cb20e49933e",
   "type": "character",
-  "name": "Zen Hachemi",
+  "name": "Aidana Karimov",
   "aliases": [
     "Lola Lux",
     "The Flickering Saint",
@@ -14,7 +14,7 @@
   "age": 61,
   "status": "active",
   "location": "The Shelf, near Halsted and Chicago Ave",
-  "description": "Lourdes Batac-Nieminen is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of The Shelf like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to The Shelf forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of Shelf grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on The Shelf.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
+  "description": "Aidana Karimov is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of The Shelf like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to The Shelf forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of Shelf grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on The Shelf.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -231,7 +231,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,28 +255,14 @@
     "The Shelf",
     "The Spire",
     "The Fathom Line",
-    "Adaeze Chen-Hawkins",
-    "Copper",
+    "Circuit",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Slagworks Industrial",
-    "The Ledger",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yuliya Morozova",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Copper",
+    "Haze Johansson"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian, North African, and Sub-Saharan African ancestry blended across three continents, with minor Hispanic/Latin American heritage. High cheekbones and eye shape reflect East Asian ancestry (44.4%), deepened by North African (35.4%) and Sub-Saharan African (18.8%) genetic contribution creating a distinctly multicontinental phenotype.",
+    "heritage": "Central Asian (68.6%), Southeast Asian (12.2%), South Asian (10.3%), and Sub-Saharan African (8.9%) ancestry create a distinctly mixed phenotype. The dominant Central Asian foundation manifests in high, prominent cheekbones and slightly hooded eye shape, while Southeast and South Asian genetics contribute softer facial contours, warm golden undertones, and slightly fuller features. Sub-Saharan African ancestry enriches the skin with deep warmth and adds subtle fullness to lips and nose structure. The result is a burnished, sun-weathered complexion that speaks to decades of work across multiple climates.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Slight and compact, muscle-dense from decades of precise manual work. Posture slightly curved from leaning over surgical fields, but movements economical and deliberate.",
@@ -284,8 +270,8 @@
     "hair_style": "Braided back tightly with strips of electrical tape woven through, practical and utilitarian",
     "hair_length": "Medium (shoulder-length when unbraided)",
     "eye_color": "Right eye: dark brown. Left eye: milky white cataract, deliberately unaugmented",
-    "skin_tone": "Deep warm brown with reddish undertones—a blend of East Asian copper and North/Sub-Saharan African richness, sun-weathered to a burnished mahogany across exposed areas",
-    "complexion": "Extensively creased and sun-weathered, particularly around eyes and forehead. Faint chemical burn scars on chin from early biotech accident. Hands show fine tremor lines and faint discoloration from sterilization compounds. Minimal makeup. Perpetually tired but alert. High-set cheekbones characteristic of East and North African heritage, softened by time and work.",
+    "skin_tone": "Deep warm brown with golden-amber undertones—a blend of Central, Southeast, and South Asian copper enriched by Sub-Saharan African warmth, sun-weathered to a burnished mahogany across exposed areas",
+    "complexion": "Extensively creased and sun-weathered, particularly around eyes and forehead. Faint chemical burn scars on chin from early biotech accident. Hands show fine tremor lines and faint discoloration from sterilization compounds. Minimal makeup. Perpetually tired but alert. High-set cheekbones characteristic of Central and South Asian heritage with slight fullness in cheeks and lips from Sub-Saharan African ancestry, softened by time and work.",
     "distinguishing_marks": [
       "Chemical burn scar on left chin, approximately 3cm, pale and flat from age",
       "Fine surgical scar network across both palms from repeated micro-incisions related to haptic calibration",
@@ -296,15 +282,52 @@
     "posture_movement": "Moves with economical precision through confined spaces. Hands are always in motion or perfectly still — no fidgeting. Head tilts slightly toward her right side to compensate for her left eye's limited vision, a habit so ingrained she is unaware of it. Walks as though measuring every step. Presence is quiet but absolute; rooms recalibrate around her.",
     "clothing_style": "Tier 5 practical: medical-grade canvas apron over worn thermal layers, both patched multiple times with different fabrics. Feet in bootleg neoprene slip-ons, well-maintained. A surgical mask hangs around her neck constantly, pulled up during work. A long coat of faded synthetic wool that belonged to someone else originally — inherited, not purchased. No jewelry except a copper ring on her left thumb, burnished smooth."
   },
-  "image_prompt": "Zen Hachemi, 152cm tall, slight and compact build, deep mahogany-brown skin with East Asian, North African, and Sub-Saharan African heritage visible in her high cheekbones and warm complexion. White braided hair woven with electrical tape, worn shoulder-length. Right eye dark brown, left eye milky white cataract. Weathered face creased from decades of precision surgical work, faint chemical burn scar on chin, hands marked with fine surgical scars. Medical-grade canvas apron patched multiple times over thermal layers, surgical mask hanging at neck, faded wool coat inherited and worn smooth. Neoprene slip-ons. Copper ring on left thumb. Subdermal augmentations in forearms barely visible beneath skin. Quiet, economical movements in a cramped sterile workspace, head slightly tilted right. 2226 cyberpunk Great Lakes Metropolitan Zone, cool blue surgical lighting, clinical environment, tired but alert presence. Depth of field emphasizing her precise hands. --ar 2:3 --v 6",
+  "image_prompt": "Aidana Karimov, 74-year-old cybernetic surgeon with deep burnished mahogany skin and golden undertones, sharp high cheekbones, right eye dark brown and alert, left eye milky white with deliberate cataract. White hair braided with electrical tape, shoulder-length. 152cm slight, compact frame, hands showing surgical scar networks and fine tremors. Wearing faded medical-grade canvas apron over thermal layers, long inherited wool coat, surgical mask hanging at neck. Subdermal LED lights faintly visible in hands. Chemical burn scar on left chin. Posture curved slightly forward, precise economical movements. Dim underground clinic setting, warm amber-tinted surgical lighting, hands delicately working over diagnostic implant. GLMZ Great Lakes Metropolitan Zone, worn but dignified, quiet absolute presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 44.4,
-    "North African": 35.4,
-    "Sub-Saharan African": 18.8,
-    "Hispanic/Latin American": 1.4
+    "Central Asian": 68.6,
+    "Southeast Asian": 12.2,
+    "South Asian": 10.3,
+    "Sub-Saharan African": 8.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 50.3,
+        "Hazara": 3.1
+      },
+      "Mongolic": {
+        "Kalmyk": 4.5,
+        "Mongolian": 10.7
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 12.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 2.4
+      },
+      "West African": {
+        "Nigerian": 2.8
+      },
+      "Central African": {
+        "Congolese": 3.4,
+        "Cameroonian": 0.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bd7c239868d4de2e9c9055",
   "type": "character",
-  "name": "Mika Balasanyan",
+  "name": "Mika Balogun",
   "aliases": [
     "Regi",
     "Lens"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Rampart, GLMZ, near Ashland and Chicago Ave",
-  "description": "Réginald is a soft-looking man who has spent thirty years becoming invisible in rooms full of screens. He's broad through the chest and shoulders from a youth he no longer thinks about, with a dome-shaped head his colleagues affectionately call 'the satellite,' and skin the color of aged teak. He keeps a neat, short beard going gray at the jaw and wears the same four shirts in rotation. His eyes have been operationally upgraded so many times that the irises are now a complete replacement — compound tactical lenses with a faint prismatic iridescence that catches light like oil on water. When he's deep in the feed, his eyes move constantly without blinking, which people find profoundly unsettling the first time they see it.\n\nRéginald has watched the city for three decades through glass and wire and now perceives it primarily as a data problem — not with coldness, exactly, but with a kind of sorrowful intimacy that comes from seeing everything. He knows faces in the Shelf the way a shepherd knows sheep, not because he loves them but because they are his terrain. He has a precise, small devotion to the Rampart's E.L.F. cluster — he calls them 'the Watchers' collectively and believes they alert him when something on the feed is worth double-checking. He's not wrong often. He keeps a thermos of ginger tea on his desk and has not left the city limits in eleven years.",
+  "description": "Mika Balogun is a soft-looking man who has spent thirty years becoming invisible in rooms full of screens. He's broad through the chest and shoulders from a youth he no longer thinks about, with a dome-shaped head his colleagues affectionately call 'the satellite,' and skin the color of aged teak. He keeps a neat, short beard going gray at the jaw and wears the same four shirts in rotation. His eyes have been operationally upgraded so many times that the irises are now a complete replacement — compound tactical lenses with a faint prismatic iridescence that catches light like oil on water. When he's deep in the feed, his eyes move constantly without blinking, which people find profoundly unsettling the first time they see it.\n\nMika Balogun has watched the city for three decades through glass and wire and now perceives it primarily as a data problem — not with coldness, exactly, but with a kind of sorrowful intimacy that comes from seeing everything. He knows faces in the Shelf the way a shepherd knows sheep, not because he loves them but because they are his terrain. He has a precise, small devotion to the Rampart's E.L.F. cluster — he calls them 'the Watchers' collectively and believes they alert him when something on the feed is worth double-checking. He's not wrong often. He keeps a thermos of ginger tea on his desk and has not left the city limits in eleven years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -187,7 +187,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Rampart",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,53 +256,22 @@
   "related_entities": [
     "Oracle Drift Systems",
     "The Rampart",
-    "GLMZ",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Waxwing Neuromedia",
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
     "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
     "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Glass",
-    "Teak",
-    "Chicago",
-    "Abeke Soriano-Dlamini",
-    "Blackpipe Corridor",
-    "Chronicle",
-    "Constance",
-    "Crucible CN-1 'Cradle'",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible LL-4 'Peacekeeper'",
-    "Deku Barrientos-Osei",
-    "Emeka Johansson-Orozco",
-    "Gage Circuit",
-    "Galvanic Disruption Gauntlet GDG-2 'Palsy'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Audio Concepts SirenSphere S-7 'Dome'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Ringo EV-3 'Watcher'",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CC-6 'Shepherd'",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ",
+    "Teak"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Primarily Sub-Saharan African (45.1%) with substantial Middle Eastern (36.9%) and North African (8.0%) ancestry, complemented by minor South Asian (5.6%) and Northern European (4.4%) genetic contributions. The combination produces warm, deep brown tones with subtle bronze undertones and the facial structure characteristic of East African and Levantine populations.",
+    "heritage": "Complex tri-continental blend: Sub-Saharan African (37.7%), East Asian (33.4%), and Middle Eastern (28.9%) ancestry. This combination produces warm, deep brown skin with subtle bronze and amber undertones, balanced facial structure reflecting both East African and Levantine proportions, and the characteristic cheekbone definition from the African-Middle Eastern genetic confluence.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Broad-chested and wide-shouldered from younger years, now softened by three decades of desk work. Carries weight in his torso with a slight forward slouch from leaning toward monitors. Core strength remains despite sedentary lifestyle.",
@@ -310,8 +279,8 @@
     "hair_style": "Neat, cropped close to the scalp; meticulously maintained",
     "hair_length": "Short",
     "eye_color": "Compound tactical lenses with prismatic iridescence — no natural iris visible; optical surface catches light with oil-on-water shimmer",
-    "skin_tone": "Deep warm brown with bronze and amber undertones, reminiscent of aged teak with subtle red-ochre notes from East African and Levantine heritage blending",
-    "complexion": "Lined face with deep-set augmented eyes, prominent cheekbones with high definition reflecting Sub-Saharan and Middle Eastern ancestry, neat beard at jawline showing 30% gray. Skin has a lived-in texture — not weathered, but marked by years of artificial light exposure. Faint crow's feet from constant screen focus. Facial structure shows balanced East African and Levantine proportions.",
+    "skin_tone": "Deep warm brown with bronze and amber undertones, the result of Sub-Saharan, East Asian, and Middle Eastern genetic blending — rich teak-like appearance with subtle warm undertones",
+    "complexion": "Lined face with deep-set augmented eyes, prominent cheekbones with high definition reflecting the balanced ancestry mix, neat beard at jawline showing 30% gray. Skin has a lived-in texture marked by years of artificial light exposure. Faint crow's feet from constant screen focus. Facial structure shows balanced proportions from tri-continental heritage—broader African bone structure softened by East Asian and Middle Eastern features.",
     "distinguishing_marks": [
       "Three thin parallel scars along right temple from early iris replacement surgery, barely visible beneath short hair.",
       "Small burn mark on left forearm (1cm diameter) from spilled coffee incident, faded to pale brown against deep teak skin.",
@@ -321,16 +290,33 @@
     "posture_movement": "Sits hunched forward slightly when focused, shoulders rolled inward from decades of monitor work. Moves with deliberate economy — no wasted motion. When walking, carries slight forward lean as if pulled by the invisible weight of data. Eyes track constantly without head movement when engaged; unsettling to observers. Hands rest flat on desk or lap; precise, minimal gestures when speaking.",
     "clothing_style": "Four-shirt rotation of high-quality Metro-issue dress shirts (charcoal, navy, gray, pale blue) worn with barely-visible wear. Polyester-cotton blend, wrinkle-resistant, optimized for 12-hour shifts. Paired with simple dark trousers and gray wool sweater vest for warmth in the Rampart's climate-controlled observation deck. No jewelry except a scratched steel Metro service band on left wrist (30-year marker). Shoes are orthopedic slip-ons, well-maintained. Appearance suggests Tier 2-3 institutional status — functionally clothed, neither poor nor stylish."
   },
-  "image_prompt": "Cyberpunk 2226, deep brown-skinned East African-Levantine man, 178cm, broad-shouldered desk worker with soft torso from decades indoors, dark hair with gray threading cropped short, compound tactical prismatic iridescent eye lenses with mechanical precision, faint surgical scars at right temple, subdermal neural implant shimmer at left temple, prominent high cheekbones, neat gray-threaded beard, worn Metro-issue charcoal dress shirt and gray wool sweater vest, orthopedic slip-ons, scratched steel service band 30-year marker, sitting hunched forward at monitoring station with unnatural eye tracking, cool blue and amber artificial light casting shadows across aged-teak skin texture, 2200s surveillance tech aesthetic, slight forward body lean, hands resting flat, expression of focused intensity, climate-controlled institutional setting --ar 2:3 --v 6",
+  "image_prompt": "Mika Balogun, 178cm tall neo-noir data analyst in his 50s, deep teak-brown skin with bronze undertones reflecting Sub-Saharan African, East Asian, and Middle Eastern heritage. Short dark hair with gray at temples, meticulously groomed neat beard with gray threading. Intense compound tactical eye lenses with prismatic iridescence catching light like oil on water, mechanical eye movement creating unsettling stillness. Lined face with prominent high cheekbones, deep-set augmented eyes, faint crow's feet from screen work. Faint subdermal shimmer at left temple from neural implant. Three thin scars barely visible at right temple beneath hair. Wearing charcoal Metro-issue dress shirt, gray wool sweater vest, dark trousers, orthopedic shoes. Scratched steel service band on left wrist. Hunched posture from decades of desk work, sitting forward with shoulders rolled inward. Climate-controlled observation deck setting, cool artificial lighting, blue-gray color palette. Serious, focused expression. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 45.1,
-    "Middle Eastern": 36.9,
-    "North African": 8.0,
-    "South Asian": 5.6,
-    "Northern European": 4.4
+    "Sub-Saharan African": 37.7,
+    "East Asian": 33.4,
+    "Middle Eastern": 28.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 27.6,
+        "Kenyan": 10.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 33.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Syrian": 23.9,
+        "Lebanese": 5
+      }
+    }
+  }
 }

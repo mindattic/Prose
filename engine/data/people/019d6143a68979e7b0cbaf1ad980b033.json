@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68979e7b0cbaf1ad980b033",
   "type": "character",
-  "name": "Zen Thorvaldsdóttir",
+  "name": "Zen Trujillo",
   "aliases": [
     "The Spoon",
     "Ossie"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, stall row 7, near the eastern steam vents, near Halsted and Chicago Ave",
-  "description": "Ossian is a broad-shouldered man whose face has been slowly tenderized by decades of steam and smoke — deep creases bracket his mouth, his cheeks are perpetually ruddy, and his eyebrows have the texture of steel wool. He wears the same yellowed thermal apron every day, patched in eleven places, and keeps a battered wooden ladle tucked into his belt even when he isn't cooking. His geneware is minimal and practical: bioluminescent nodes under his fingernails that pulse amber when he's checking temperature by touch, a sensory aug that sharpens smell discrimination to near-professional levels. He moves through a crowd like a ship through fog — unhurried, implacable, politely unstoppable.\n\nHe has been running the same congee stall in the same spot for twenty-three years and has strong opinions about everything: the correct ratio of fermented shrimp paste to broth, which Corponation is the least evil this quarter, whether the E.L.F. of the eastern steam vents (whom he calls 'Grandmother Hiss') deserves gratitude offerings of salt or of sweetened oil. He treats regulars like difficult but beloved relatives and first-timers with the wary generosity of someone who suspects they might be trouble. His cooking is genuinely exceptional and unreasonably cheap.",
+  "description": "Zen Trujillo is a broad-shouldered man whose face has been slowly tenderized by decades of steam and smoke — deep creases bracket his mouth, his cheeks are perpetually ruddy, and his eyebrows have the texture of steel wool. He wears the same yellowed thermal apron every day, patched in eleven places, and keeps a battered wooden ladle tucked into his belt even when he isn't cooking. His geneware is minimal and practical: bioluminescent nodes under his fingernails that pulse amber when he's checking temperature by touch, a sensory aug that sharpens smell discrimination to near-professional levels. He moves through a crowd like a ship through fog — unhurried, implacable, politely unstoppable.\n\nHe has been running the same congee stall in the same spot for twenty-three years and has strong opinions about everything: the correct ratio of fermented shrimp paste to broth, which Corponation is the least evil this quarter, whether the E.L.F. of the eastern steam vents (whom he calls 'Grandmother Hiss') deserves gratitude offerings of salt or of sweetened oil. He treats regulars like difficult but beloved relatives and first-timers with the wary generosity of someone who suspects they might be trouble. His cooking is genuinely exceptional and unreasonably cheap.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -157,7 +157,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,42 +177,19 @@
   "related_entities": [
     "The Oxidian Market",
     "Grandmother",
+    "The Marrow Market",
     "Tessera Corponation",
-    "Ossian",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Steel",
-    "Wool",
-    "Elena Vasquez-9",
     "Chicago",
-    "Abeke Soriano-Dlamini",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Arcturus NX-1 'Sandman'",
-    "Auntie Efe's Pot",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Iowan Behemoth — 'Palisade'",
-    "Lazarus IDP-1 'Teeth'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Bazaar",
-    "The Compact",
-    "The Gutter Prophets",
-    "The Iron Lotus",
-    "The Packet Rats",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Warden",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Zheng-dao Bioelectric"
+    "Ossian-B",
+    "Steel",
+    "The Paste Bar",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Wool",
+    "Elena Vasquez-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European (35.3%), Central Asian (25.0%), Sub-Saharan African (24.2%), East Asian (9.2%), Pacific Islander (6.3%) — a complex diaspora ancestry reflecting the Ubiquitous Mixing. His features blend Northern European bone structure with warmer, deeper undertones from African and Central Asian heritage, with subtle East Asian and Pacific Islander influences visible in cheekbone prominence and eye shape.",
+    "heritage": "Hispanic/Latin American (40.8%), Sub-Saharan African (23.4%), South Asian (21.5%), Eastern European (10.4%), Middle Eastern (3.9%) — a rich diaspora blend. His features reflect Latin American bone structure as the dominant framework, with warmth and depth from African heritage, Fuller cheekbones and eye-set depth from South Asian ancestry, a prominent nose bridge from Middle Eastern influence, and subtle bone structure refinement from Eastern European genetics. The combination creates a distinctly multicultural appearance—neither fitting neatly into single categories, but showing the harmonious integration of global ancestry.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and thick-waisted with the compact solidity of someone who has spent fifty-eight years standing over a stove. His frame is muscular without definition — functional, not maintained. His posture is slightly forward-bent from decades of leaning over cooking vessels.",
@@ -220,8 +197,8 @@
     "hair_style": "Kept short and utilitarian, combed back, receding at the temples",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones",
-    "skin_tone": "Warm medium-to-deep brown — a harmonious blend of Northern European, Central Asian, and Sub-Saharan African ancestry. The baseline coloration carries golden-warm undertones from the Central Asian and African heritage, with Northern European influence preventing the extremes of either alone. Heavily weathered and sun-exposure darkened across the cheekbones, nose, and forearms.",
-    "complexion": "Deep facial creases radiating from the corners of his mouth and eyes. Perpetually ruddy across the cheekbones and nose from chronic exposure to steam and heat. Eyebrows thick and bristly, appearing darker than surrounding hair. Sparse beard stubble usually visible by mid-afternoon. Skin texture thickened and slightly leathered on the exposed areas of his forearms and neck. Subtle East Asian influence visible in slight cheekbone prominence and eye-shape geometry. Pacific Islander heritage adds depth to skin undertones. No scarring from heritage, but his face bears the accumulated creases of someone who spends most waking hours in a cloud of vapor.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones — the harmonious convergence of Latin American earth warmth, Sub-Saharan African richness, and South Asian depth. The baseline carries golden highlights from South Asian and African heritage, enriched by warm ochre and amber tones characteristic of Latin American genetics, with Eastern European influence adding subtle cool shadows that prevent flatness. Heavily weathered and sun-exposure darkened across the cheekbones, nose, and forearms.",
+    "complexion": "Deep facial creases radiating from the corners of his mouth and eyes. Perpetually ruddy across the cheekbones and nose from chronic exposure to steam and heat. Eyebrows thick and bristly, appearing darker than surrounding hair. Sparse beard stubble usually visible by mid-afternoon. Skin texture thickened and slightly leathered on the exposed areas of his forearms and neck. Fuller, rounded cheekbones characteristic of South Asian heritage combined with the broader facial structure of Latin American ancestry. Prominent nose bridge reflecting Middle Eastern genetics, balanced by warm skin coloration. The depth of his eye-set and orbital bone structure shows the blending of multiple ancestry lines into distinctive, dignified features. No scarring from heritage, but his face bears the accumulated creases of someone who spends most waking hours in a cloud of vapor.",
     "visible_augmentations": "Bioluminescent nodes visible as faint amber glowing points beneath all ten fingernails, brightest when he is actively assessing temperature. The olfactory implant is a small subdermal port behind his left ear, barely visible beneath his hairline. No other visible cybernetics.",
     "distinguishing_marks": [
       "Faint thermal scars on his left palm from an oil splash accident in his thirties — small, pale, clustered near the wrist line",
@@ -231,16 +208,66 @@
     "posture_movement": "He moves with deliberate, economical motion — no wasted gesture. His gait is steady and slightly forward-leaning. In crowds, he does not navigate around people; he moves through them at an even pace, implacable and unhurried, like a ship through fog. His hands are constantly in motion when working, but his upper body remains relatively still. He rarely gestures when speaking; his expression does most of the talking.",
     "clothing_style": "Uniform: a heavily patched yellow thermal apron over durable work clothes (thermal-weave gray undershirt, heavy canvas work pants with reinforced knees and pockets). The apron has eleven visible patches in different materials and colors, each marking a specific incident or season. A battered wooden ladle hangs from his belt loop via a leather cord, even when he is not actively cooking. Sturdy rubber-soled work boots, often wet. His clothing is strictly Tier 4 utilitarian — function over appearance, no corporate branding, no fashion."
   },
-  "image_prompt": "Zen Thorvaldsdóttir, 188cm tall, 58-year-old chef with warm deep-brown skin blending Northern European, Central Asian, and Sub-Saharan African heritage. Salt-and-pepper gray hair, short and swept back, receding at temples. Deep brown eyes with amber undertones. Weathered face with prominent creases, ruddy cheekbones from steam exposure, thick dark eyebrows, perpetual mid-afternoon stubble on jawline with faint ragged scar. Strong broad shoulders, thick-waisted functional build leaning slightly forward. Wearing heavily patched yellow thermal apron over gray thermal-weave undershirt and reinforced canvas work pants, battered wooden ladle hanging from belt. Sturdy wet work boots. Bioluminescent amber nodes glowing faintly beneath fingernails. Standing in a bustling 2226 cyberpunk kitchen, steam rising around him, moving with steady deliberate grace through crowded space. Warm kitchen lighting casting amber shadows on weathered skin. Impassive, focused expression. Tier 4 utilitarian no-nonsense aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Zen Trujillo, 58-year-old multicultural man with warm deep brown skin carrying golden undertones, weathered face with deep creases and ruddy cheekbones, fuller Asian-influenced cheekbones, prominent nose bridge, deep brown eyes with amber flecks. Salt-and-pepper short hair receding at temples, perpetual afternoon stubble. 188cm tall, broad-shouldered, functional build. Wearing heavily patched yellow thermal apron over gray thermal-weave shirt and heavy canvas work pants, battered rubber-soled boots. Faint amber bioluminescence visible under fingernails. A wooden ladle hangs from belt. Steam rises around him in a GLMZ kitchen, warm amber and gold lighting catching the perspiration on his skin and the glow of his augmentations. Impassive expression, economical posture slightly forward-leaning. Tier 4 working-class aesthetic, no corporate branding. Atmospheric kitchen vapor, moody lighting, cinematic depth. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 35.3,
-    "Central Asian": 25.0,
-    "Sub-Saharan African": 24.2,
-    "East Asian": 9.2,
-    "Pacific Islander": 6.3
+    "Hispanic/Latin American": 40.8,
+    "Sub-Saharan African": 23.4,
+    "South Asian": 21.5,
+    "Eastern European": 10.4,
+    "Middle Eastern": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 27.2
+      },
+      "Caribbean": {
+        "Dominican": 13.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 2.7,
+        "Ivorian": 2.1
+      },
+      "East African": {
+        "Somali": 2.5
+      },
+      "Southern African": {
+        "Zambian": 7.1,
+        "Botswanan": 9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 19.3
+      },
+      "Nepali": {
+        "Nepali": 2.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 8.1,
+        "Russian": 2.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 2.9
+      },
+      "Persian": {
+        "Afghan Dari": 0.1,
+        "Iranian": 0.2
+      },
+      "Arab Gulf": {
+        "Emirati": 0.4,
+        "Yemeni": 0.3
+      }
+    }
+  }
 }

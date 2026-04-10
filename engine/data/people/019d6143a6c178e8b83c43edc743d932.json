@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c178e8b83c43edc743d932",
   "type": "character",
-  "name": "Soren Johansson-Boateng-Khoury",
+  "name": "Soren Johansson-Nygaard-Björnsdóttir",
   "aliases": [
     "Iridium",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
-  "description": "Sagyn Ekberg-Asare is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Soren Johansson-Nygaard-Björnsdóttir is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.77,
@@ -264,7 +264,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Crucible Square",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,33 +278,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
+    "Chicago",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Réginald Asomaning-Čabarkapa",
-    "Sorin Ekwensi-Balasanyan",
-    "Stonepath Logistics",
-    "Street Custom 'Angry Mary' Aerosol Flamethrower",
-    "TESSERA TC-3 'Crucible'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora ancestry: predominantly Sub-Saharan African (36.6%) and Southeast Asian (34.6%), with significant Middle Eastern (16.7%), South Asian (8.4%), and North African (3.7%) heritage. This creates a striking phenotype—medium-deep warm brown skin with subtle golden and olive undertones, angular facial structure reflecting Southeast Asian and East African features, dark eyes with warmth inherited across multiple lineages.",
+    "heritage": "Pan-diaspora ancestry: Northern European (40.7%) contributes fair undertones and angular bone structure; Hispanic/Latin American (21.3%), Central Asian (17.3%), and Southeast Asian (10.2%) create warm, complex skin depth with golden richness. Eastern European (5.4%) and South Asian (5.1%) add subtle warmth and refined facial structure complexity. The result is a striking phenotype—medium warm olive skin with golden and honey undertones, angular facial structure reflecting Northern European and Central Asian cheekbones blended with Southeast Asian eye shape and slight epicanthic fold, deep warm brown eyes with inherited warmth across multiple lineages.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Lean and wiry with visible musculature from deliberate physical conditioning; her frame reads as compact and efficient rather than fragile, built for mobility and precision over raw power",
@@ -312,28 +294,96 @@
     "hair_style": "Pulled back in a tight, functional braid; no ornament, no slack",
     "hair_length": "Medium",
     "eye_color": "Deep warm brown with faint network of microcircuitry visible at the iris margin—cybernetic enhancement overlaid on natural melanin-rich irises",
-    "skin_tone": "Medium-deep warm brown with golden and subtle olive undertones, weathered by six years of irregular sleep and stress",
-    "complexion": "Angular facial structure with high, prominent cheekbones reflecting Southeast Asian and East African ancestry; minimal makeup, minimal grooming beyond maintenance; sun-damaged patches along her temple and jawline where augmentation scarring pulls the skin taut. Natural warmth to her complexion beneath the weathering.",
+    "skin_tone": "Medium warm olive with golden and honey undertones, weathered by six years of irregular sleep and stress",
+    "complexion": "Angular facial structure with high, prominent cheekbones reflecting Northern European and Central Asian ancestry blended with Southeast Asian influence; minimal makeup, minimal grooming beyond maintenance; sun-damaged patches along temple and jawline where augmentation scarring pulls the skin taut. Medium olive-golden warmth beneath the weathering, with warmer undertone indicating Hispanic/Latin American and Southeast Asian contributions.",
     "distinguishing_marks": [
       "Keloid scarring in a vertical line along both temples where neural interface plates were installed — chrome edges visible beneath skin",
       "Jagged scar tissue along the right jawline following the path of hydraulic joint installation, discolored and slightly sunken",
-      "Burn scarring on the inside of her left wrist — old, faded white against her skin tone, consistent with equipment malfunction or field injury",
+      "Burn scarring on the inside of her left wrist — old, faded white against her warm olive skin tone, consistent with equipment malfunction or field injury",
       "Thin white line across her left collarbone, partially hidden by high-neck clothing"
     ],
     "visible_augmentations": "Polished chrome hydraulic assemblies visible at both elbows and knees — segmented joints with actuator housings, no attempt at synthetic skin covering. Subdermal neural augmentation scarring at temples and jawline. Externally mounted audio receivers at the base of each ear — small directional microphone arrays that stand slightly proud of the skin.",
     "posture_movement": "Economical and controlled; she moves with a deliberate, measured quality that suggests constant threat assessment. Her gait is symmetrical despite the chrome joints — a sign of long habituation to the augmentations. She doesn't fidget; stillness is her default state.",
     "clothing_style": "Tier 3-4 utilitarian: dark synthwool jacket with multiple sealed pockets and cable management loops; fitted tactical cargo pants with thigh holster and calf pouches; reinforced ankle boots rated for industrial use. She favors high necklines that partially conceal her jawline scarring. Her gear is maintained but worn; no logos, no affiliation colors. A digital timepiece with encrypted protocols on her left wrist."
   },
-  "image_prompt": "Soren Johansson-Boateng-Khoury, cyberpunk 2226, compact lean frame 162cm with angular features reflecting pan-diaspora ancestry—medium-deep warm brown skin with golden undertones, high cheekbones, deep warm brown eyes with visible microcircuitry at iris margins. Steel gray hair pulled back in tight functional braid. Polished chrome hydraulic elbow and knee joints with segmented actuators. Keloid scarring along temples with chrome edges from neural interface plates. Jagged scar tissue along right jawline from hydraulic joint installation. Burn scarring on left inner wrist. Thin white scar across left collarbone. Subdermal audio receivers at ear bases. Economical posture, controlled movement, threat-assessment stillness. Wearing dark synthwool tactical jacket with cable management loops, fitted tactical cargo pants with thigh holster, reinforced industrial ankle boots, high neckline concealing jawline scars. Digital encrypted timepiece on left wrist. Low industrial lighting, shadows emphasizing augmentation scars and chrome joints. Cool-toned cyberpunk megacity underdeck setting. Mood: dangerous competence, measured intensity. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Soren Johansson-Nygaard-Björnsdóttir: lean 162cm augmented operative with medium warm olive skin and golden undertones, angular face with high cheekbones reflecting Northern European and Southeast Asian heritage. Deep brown eyes with visible microcircuitry at iris margin. Steel gray hair pulled back in tight braid. Visible polished chrome hydraulic joints at elbows and knees, subdermal neural scarring at temples and jawline, jagged scar tissue along right jaw, external audio receiver arrays at ear bases. Wearing dark synthwool tactical jacket with cable management, fitted tactical cargo pants with thigh holster, reinforced boots. High neckline concealing jawline scars. Economical posture, measured stillness, constant threat assessment bearing. Industrial utilitarian aesthetic, worn but maintained gear. Urban GLMZ nocturnal setting, cool neon and warehouse lighting casting sharp shadows across angular features and chrome augmentation surfaces. Mood: lethal professionalism, controlled intensity, seasoned operative in downtime moment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 36.6,
-    "Southeast Asian": 34.6,
-    "Middle Eastern": 16.7,
-    "South Asian": 8.4,
-    "North African": 3.7
+    "Northern European": 40.7,
+    "Hispanic/Latin American": 21.3,
+    "Central Asian": 17.3,
+    "Southeast Asian": 10.2,
+    "Eastern European": 5.4,
+    "South Asian": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 19.1
+      },
+      "Germanic": {
+        "Austrian": 9.4
+      },
+      "Scandinavian": {
+        "Swedish": 9.8,
+        "Finnish": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.3,
+        "Haitian": 8.5
+      },
+      "Central American": {
+        "Nicaraguan": 7.5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 6.6,
+        "Mongolian": 2.6
+      },
+      "Turkic": {
+        "Turkmen": 3,
+        "Kazakh": 5.1
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 0.7,
+        "Bicolano": 4.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 4.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 0.4,
+        "Russian": 0.7
+      },
+      "Slavic South": {
+        "Bosnian": 2
+      },
+      "Slavic West": {
+        "Polish": 0.5,
+        "Czech": 1.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 3.4
+      },
+      "Pakistani": {
+        "Baloch": 0.3,
+        "Punjabi Pakistani": 0.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.3
+      }
+    }
+  }
 }

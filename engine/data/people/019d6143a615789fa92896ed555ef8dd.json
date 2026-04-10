@@ -1,7 +1,7 @@
 {
   "id": "019d6143a615789fa92896ed555ef8dd",
   "type": "character",
-  "name": "Svetlana Horváth",
+  "name": "Vale An",
   "aliases": [
     "Fen",
     "Fennie"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Shelf, operating from a legitimate licensed pharmacy called Goldthread Dispensary, near Ashland and Division",
-  "description": "Fenwick is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from The Shelf down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
+  "description": "Vale An is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from The Shelf down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -158,7 +158,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,30 +175,20 @@
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
   ],
   "related_entities": [
-    "Helix Biosystems",
     "Ferrogate Transit",
+    "Helix Biosystems",
     "The Narrows Compact",
     "Dredge Mining Collective Underwater Resource Extraction Platform",
     "The Shelf",
+    "Charcoal",
     "Stratum",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
     "Copper",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Aurochs Medical Complex",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "TESSERA TC-3 'Crucible'",
-    "The Collective",
-    "The Counter",
-    "The Narrows",
-    "The Pure Hand"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (66.5%) with significant Northern European ancestry (15.9%), combined with Southeast Asian (9.1%) and East Asian (8.5%) heritage—a genetic blend reflecting the Ubiquitous Diaspora. The result is a warm, balanced complexion with subtle monolid eye shape influence and Eastern European bone structure.",
+    "heritage": "Predominantly Sub-Saharan African (44.7%) with substantial East Asian (37.5%) ancestry, combined with Middle Eastern (13.3%) and Northern European (4.5%) heritage—a genetic blend reflecting the Ubiquitous Diaspora. The result is a rich, warm complexion with balanced facial structure drawing from multiple continental traditions.",
     "height_cm": 167,
     "weight_kg": 78,
     "build": "Stocky and compact, broad shoulders tapering to a solid midsection; the build of someone who stands for twelve hours and doesn't compensate with gym time",
@@ -206,8 +196,8 @@
     "hair_style": "Loose high puff, well-maintained, with visible fade lines at the sides",
     "hair_length": "Medium (approximately 10-12cm at crown)",
     "eye_color": "Augmented: interlocking geometric patterns in charcoal and cream, custom cosmetic irises that resemble mandala or circuit board motifs",
-    "skin_tone": "Warm medium brown with golden undertones—a harmonious blend of Eastern European and Southeast Asian ancestry, even and clear",
-    "complexion": "Clean-shaven, youthful face with slight crow's feet from squinting at small print; high cheekbones with subtle monolid characteristics; skin shows minimal scarring or damage; perpetual micro-expression caught between attentiveness and something withheld",
+    "skin_tone": "Deep warm brown with golden undertones—a harmonious blend of Sub-Saharan African and East Asian ancestry, with subtle warmer mid-tones from Middle Eastern heritage; even and clear",
+    "complexion": "Clean-shaven, youthful face with slight crow's feet from squinting at small print; prominent cheekbones with balanced facial proportions reflecting African and East Asian heritage; subtly defined jawline with gentle Middle Eastern contours; skin shows minimal scarring or damage; perpetual micro-expression caught between attentiveness and something withheld",
     "distinguishing_marks": [
       "Faint chemical burn scar on the inside of right wrist, approximately 3cm, from a compounding accident five years ago",
       "A small tattoo on left collarbone: a simplified outline of a pestle and mortar in black ink"
@@ -216,15 +206,52 @@
     "posture_movement": "Stands with weight evenly distributed, hands often resting on the pharmacy counter or clasped loosely. Moves with economical precision — no wasted motion. Cheerfulness expressed through eye contact and vocal warmth rather than physical animation; appears both present and slightly at a remove.",
     "clothing_style": "White pharmacist's coat, visibly aged and soft at the edges despite regular washing, worn over practical civilian clothes (typically dark t-shirt, gray or black slacks). No corporate branding. Shoes are worn but well-maintained. The coat is almost a uniform at this point—owned for years, reads as either stubborn or sentimental. No jewelry. Tier 3-4 working professional, understated."
   },
-  "image_prompt": "Svetlana Horváth, 2226 cyberpunk pharmacist, warm medium-brown complexion with golden undertones, high cheekbones with subtle East Asian influence, augmented mandala-circuit board eyes in charcoal and cream geometric patterns, deep black hair with copper dye at ends in loose high puff, slight crow's feet, clean-shaven youthful face. Wearing soft aged white pharmacist's coat over dark t-shirt and gray slacks, standing at pharmacy counter with economical posture, hands resting quietly. Chemical burn scar visible on inside of right wrist, pestle-and-mortar tattoo on left collarbone. Warm professional presence, present yet slightly at a remove. Cyberpunk clinic lighting, neon-tinged pharmaceutical shelves in background, cool and warm light interplay. --ar 2:3 --v 6",
+  "image_prompt": "Vale An, a 167cm pharmacist in a worn white coat over dark civilian clothes, standing behind a counter in a GLMZ 2226 pharmacy. Deep warm brown skin with golden undertones reflecting Sub-Saharan African and East Asian heritage blended with subtle Middle Eastern warmth. Prominent cheekbones, balanced proportions, youthful face with slight crow's feet. Natural deep black hair in a well-maintained high puff with copper-dyed ends and visible fade lines. Striking augmented eyes with interlocking charcoal and cream geometric patterns like mandala circuits. Clean-shaven, faint chemical burn scar on inner right wrist, small pestle and mortar tattoo on left collarbone. Economical, precise posture with weight evenly distributed. Warm eye contact and subtle expression caught between attentiveness and something withheld. GLMZ setting with neon pharmacy signage, warm overhead lighting casting soft shadows, professional yet weathered aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 66.5,
-    "Northern European": 15.9,
-    "Southeast Asian": 9.1,
-    "East Asian": 8.5
+    "Sub-Saharan African": 44.7,
+    "East Asian": 37.5,
+    "Middle Eastern": 13.3,
+    "Northern European": 4.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 1.7,
+        "Zambian": 8.9
+      },
+      "Central African": {
+        "Cameroonian": 17.3,
+        "Angolan": 16.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 26.9
+      },
+      "Japanese": {
+        "Japanese": 10.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 3.8
+      },
+      "Persian": {
+        "Iranian": 2.1,
+        "Afghan Dari": 1.3
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 6.1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 4.5
+      }
+    }
+  }
 }

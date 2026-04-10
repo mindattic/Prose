@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Division",
-  "description": "Djeneba Magnusson-Camara is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 61, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a saboteur out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Magnusson-Camara is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Soledad Bautista is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 61, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a saboteur out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSoledad Bautista is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.71,
@@ -263,7 +263,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,32 +276,18 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "The Nearfield",
+    "The Shelf",
     "The Heritage Vault",
+    "Diaspora Table",
     "Ashfield",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Free Assembly",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Neuromorphic Pressure Cestus",
-    "Ngaire Rojas-Yeboah",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (43.3%) with Southeast Asian (42.3%) and Middle Eastern (14.4%) ancestry — a striking blend evident in her facial structure, warm brown undertones, and the subtle play of features from three continents. The combination creates a distinctive appearance: angular cheekbones and eye shape reflecting Southeast Asian genetics, warm skin tones and facial proportion from Hispanic heritage, with the subtle depth contributed by Middle Eastern ancestry.",
+    "heritage": "Soledad carries the genetic signature of the Ubiquitous Diaspora: 53.5% Hispanic/Latin American foundation blended with Southeast Asian (13.0%), Northern European (12.4%), South Asian (10.9%), East Asian (7.0%), and Sub-Saharan African (3.2%) ancestry. This creates a distinctly multitonal appearance — angular cheekbones with Southeast and East Asian prominence, broad nose bridge from Hispanic genetics, subtle jawline depth from South Asian heritage, and warm undertonal richness from Sub-Saharan African contribution. Her facial structure reads as neither specifically one heritage nor another, but rather the natural product of generations of global mixing.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Rawboned and angular — long-limbed with minimal body fat, the wiry efficiency of someone who treats her body as a tool rather than an ornament. Decades of field work have stripped away anything excess. Shoulder blades prominent, hands large and calloused.",
@@ -309,8 +295,8 @@
     "hair_style": "Pulled back in a utilitarian braid, typically wrapped or pinned to keep it clear of work",
     "hair_length": "Long (to mid-back when unbound)",
     "eye_color": "Dark brown with warm amber undertones, natural but intensity sharpened by nocturnal living",
-    "skin_tone": "Warm golden-brown with subtle reddish undertones — the result of blended Hispanic and Southeast Asian heritage deepened by decades under artificial lighting. Richer and warmer than typical of either ancestry alone, with the faint luminous quality of skin with Middle Eastern heritage.",
-    "complexion": "Weathered and lined — face map of close calls. High, angular cheekbones with Southeast Asian prominence, broader nose bridge reflecting Hispanic ancestry, with the subtle depth of Middle Eastern features at the jawline. Skin has a papery quality from age and chronic dehydration common to field operatives. Minimal grooming — function over appearance.",
+    "skin_tone": "Warm golden-brown with complex undertones — the result of blended Hispanic, Southeast Asian, South Asian, and Sub-Saharan African genetics. Decades under artificial lighting have deepened it into something richer and more multitonal than any single ancestry typically produces, with a luminous quality from the interplay of multiple regional genetic contributions.",
+    "complexion": "Weathered and lined — face map of close calls. High, angular cheekbones with Southeast Asian prominence, broader nose bridge reflecting Hispanic ancestry, with subtle depth at the jawline from South Asian heritage. Skin has a papery quality from age and chronic dehydration common to field operatives. Minimal grooming — function over appearance.",
     "distinguishing_marks": [
       "Diagonal scar across left temple to cheekbone — chemical burn from a thermite accident, texture irregular and pale against darker skin",
       "Parallel burn scars on right forearm (inner wrist to elbow) — old industrial accident, white and glossy",
@@ -321,14 +307,78 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Spine straight but not rigid. Hands rarely idle; fingers tap or manipulate nearby objects during conversations, occupational habit. Turns her whole body rather than just her head when observing — old paranoia training. Default stance is slightly forward-leaning, ready to move. Nocturnal living has sharpened her already keen spatial awareness — she navigates dark spaces with uncommon confidence.",
     "clothing_style": "Tier 4 practical: dark canvas multi-pocket work pants, reinforced at stress points. Black or charcoal fitted thermals under a weathered gunmetal-gray tech-weave jacket with internal compartments and tool loops. Steel-toed boots, broken in but well-maintained. Minimal jewelry — a simple metal cuff on left wrist (functional, not decorative). No corporate branding or status signaling. Everything chosen for durability, mobility, and the ability to carry gear. Clothes bear the wear patterns of someone who actually uses them, not costume."
   },
-  "image_prompt": "Soledad Bautista, 183cm tall lean angular woman with warm golden-brown skin, Southeast Asian cheekbone structure, Hispanic features, dark amber-brown eyes. Steel-gray hair in utilitarian braid. Weathered face mapped with scars: diagonal chemical burn left temple, parallel burn scars right forearm. Chrome nasal intake ports with iridescent sheen, industrial unadorned cyberpunk augmentation visible in profile. Faded Mandinka geometric tattoo left wrist. Dressed in dark canvas work pants, charcoal thermal, weathered gunmetal-gray tech-weave jacket with tool loops, steel-toed boots. Simple metal cuff on left wrist. Standing forward-leaning stance, economical posture, nocturnal edge. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody industrial lighting casting shadows across chrome ports and weathered tech-wear. Gritty, functional, lived-in. --ar 2:3 --v 6",
+  "image_prompt": "Soledad Bautista, 183cm tall angular woman with weathered golden-brown skin bearing complex warm undertones from blended Hispanic, Southeast Asian, South Asian and Sub-Saharan African ancestry. Steel gray hair braided back, dark amber-brown eyes with nocturnal intensity. High prominent cheekbones, broad nose bridge, subtle jawline depth. Diagonal chemical burn scar across left temple, parallel white burn scars on right forearm, small faded blue Mandinka geometric tattoo on left wrist. Chrome dual intake ports visible in nasal passages with iridescent sheen. Wearing dark reinforced canvas work pants, black thermal under weathered gunmetal tech-weave jacket with tool loops, steel-toed boots. Simple functional metal cuff on left wrist. Posture forward-leaning and economical, hands with occupational tension. Standing in dimly lit industrial near-future megacity setting, neon glow reflecting off chrome augmentations, gritty Great Lakes Metropolitan Zone aesthetic, 2226. Moody nocturnal atmosphere, cool and warm lighting interplay highlighting her multitonal complexion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.3,
-    "Southeast Asian": 42.3,
-    "Middle Eastern": 14.4
+    "Hispanic/Latin American": 53.5,
+    "Southeast Asian": 13,
+    "Northern European": 12.4,
+    "South Asian": 10.9,
+    "East Asian": 7,
+    "Sub-Saharan African": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.5
+      },
+      "Central American": {
+        "Salvadoran": 11.2,
+        "Nicaraguan": 32
+      },
+      "Caribbean": {
+        "Dominican": 4.8
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 5.2
+      },
+      "Laotian": {
+        "Laotian": 7.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 2
+      },
+      "Scandinavian": {
+        "Norwegian": 3.4,
+        "Icelandic": 3.1
+      },
+      "British Isles": {
+        "Irish": 3.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 10.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4.1
+      },
+      "Chinese": {
+        "Hakka": 2.4,
+        "Mandarin Northern": 0.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 0.3,
+        "Ghanaian": 1.3
+      },
+      "East African": {
+        "Ethiopian": 0.8,
+        "Tanzanian": 0.4
+      },
+      "Central African": {
+        "Gabonese": 0.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cc78d0bd6b535ebd1bd2f3",
   "type": "character",
-  "name": "Odalys Tehrani",
+  "name": "Sekou Haraldsen",
   "aliases": [
     "The Pelican",
     "Seyd"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, near the Ferrogate Transit depot access road, near Milwaukee and North Ave",
-  "description": "Seydou is a lanky man, all elbows and long neck, with warm brown skin dusted gray-white at the temples from years of breathing particulate in Geartown's recycling corridors. He has retractable keratin-reinforced claws — a geneware mod from his teens he got cheap and kept because they're useful for sorting scrap — and his irises are a vivid coral-pink that he insists is natural but is almost certainly a low-grade mod he can't remember getting. His cart is legendary: a three-tier wheeled behemoth welded together from mismatched Ferrogate Transit chassis parts, stacked with stripped augmentation casings, salvaged circuit boards, cracked lenses, defunct E.L.F. housing units, and the occasional inexplicable object he cannot identify but refuses to discard because 'it feels expensive.'\n\nSeydou operates on a philosophy of radical optimism about the utility of broken things. He is gregarious to a fault, remembers every customer's name and approximate circumstances, and maintains a running mental inventory of about six hundred distinct items across his cart and three rented storage lockers he visits in rotation. He laughs easily and loudly, which draws people from two stalls away, and he has an almost supernatural ability to produce exactly the component someone needs from somewhere in the middle tier of the cart, apparently without looking.",
+  "description": "Sekou Haraldsen is a lanky man, all elbows and long neck, with warm brown skin dusted gray-white at the temples from years of breathing particulate in Geartown's recycling corridors. He has retractable keratin-reinforced claws — a geneware mod from his teens he got cheap and kept because they're useful for sorting scrap — and his irises are a vivid coral-pink that he insists is natural but is almost certainly a low-grade mod he can't remember getting. His cart is legendary: a three-tier wheeled behemoth welded together from mismatched Ferrogate Transit chassis parts, stacked with stripped augmentation casings, salvaged circuit boards, cracked lenses, defunct E.L.F. housing units, and the occasional inexplicable object he cannot identify but refuses to discard because 'it feels expensive.'\n\nSekou Haraldsen operates on a philosophy of radical optimism about the utility of broken things. He is gregarious to a fault, remembers every customer's name and approximate circumstances, and maintains a running mental inventory of about six hundred distinct items across his cart and three rented storage lockers he visits in rotation. He laughs easily and loudly, which draws people from two stalls away, and he has an almost supernatural ability to produce exactly the component someone needs from somewhere in the middle tier of the cart, apparently without looking.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -168,7 +168,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,29 +226,17 @@
     "Ferrogate Transit",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Geartown",
-    "Iowan Behemoth Agricultural Platform",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Iowan Behemoth Agricultural Platform",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Tin Man",
-    "The Milwaukee Core",
-    "Eshe Pena-Baah",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Orbital Drop Pod",
-    "Pirjo Asante-Ulukhan",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA PA-5 'Attendant'",
-    "Tafara Quiñones-Saarinen",
-    "The Pure Hand",
-    "The Scrap Barons",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Cargo Tacos",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Middle Eastern / Hispanic-Latin American / South Asian blend with Sub-Saharan African and Indigenous American heritage. This combination produces warm, complex skin tones with olive and golden undertones, angular facial structure typical of Persian-Mediterranean features mixed with broader cheekbones and nose width from South Asian and Latin American ancestry. The genetic admixture creates rich melanin variation across his frame.",
+    "heritage": "Complex Pan-Asian and Pan-American blend: East Asian foundation (46.1%) provides angular cheekbones and eye shape, layered with substantial Sub-Saharan African (17.3%) and Indigenous American (16.0%) heritage that broadens his nose base and adds fullness to his lips. Hispanic/Latin American (11.5%), South Asian (6.1%), and Northern European (3.0%) ancestry create warm, golden undertones and subtle facial structure variation. The result is a striking warm bronze phenotype with golden-amber and reddish undertones that shifts between sun-weathered amber in harsh light and deeper honey-bronze in softer conditions.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lanky and angular—all elbows and long neck, with minimal muscle mass but functional lean strength from years of pushing a loaded cart. Chest slightly sunken from occupational posture.",
@@ -256,28 +244,91 @@
     "hair_style": "Short, kept practical and uneven—self-trimmed with whatever sharp tool is handy",
     "hair_length": "Short",
     "eye_color": "Vivid coral-pink iris (suspected low-grade geneware mod, though he claims natural)",
-    "skin_tone": "Warm golden-olive brown with subtle reddish undertones—a complex blend that reads as sun-weathered amber in harsh light and deeper honey-bronze in softer conditions. The tone carries warmth across his frame with slight deepening at extremities and jaw.",
-    "complexion": "Weathered and dust-marked. Chronic particulate exposure has left fine gray residue in skin creases around his neck and hairline. Deep laugh lines around his mouth accentuate the blend of Middle Eastern and Hispanic-Latin American facial structure. Perpetual five o'clock shadow. Hands stained with rust and circuit-board residue that never fully washes out. Angular cheekbones and a straight nose bridge reflect Middle Eastern heritage, while full lips and broader nasal base show South Asian and Latin American ancestry.",
+    "skin_tone": "Warm bronze-brown with golden and reddish undertones—a complex blend reflecting East Asian base warmed and deepened by Sub-Saharan, Indigenous American, and South Asian heritage. Reads as sun-weathered amber in harsh light and deeper honey-bronze in softer conditions. Consistent warm tone across frame with slight deepening at extremities and jaw.",
+    "complexion": "Weathered and dust-marked. Chronic particulate exposure has left fine gray residue in skin creases around his neck and hairline. Deep laugh lines around his mouth. Perpetual five o'clock shadow. Hands stained with rust and circuit-board residue that never fully washes out. Angular cheekbones from East Asian heritage blend with fuller lips and broader nasal base reflecting Sub-Saharan, Indigenous American, and South Asian ancestry. Straight nose bridge with natural width at base.",
     "distinguishing_marks": [
       "Fine gray dust permanently embedded in the creases of his neck from Geartown recycling corridor particulate exposure",
       "A jagged burn scar across the outer edge of his left forearm, roughly 8cm long, from a salvage accident involving a still-hot chassis component",
       "Calloused fingertips and palms from constant handling of sharp metal edges and scrap",
       "Ink tattoo on his inner left wrist—a simple three-line mark in a style he won't explain, faded to pale gray from age and sun exposure"
     ],
-    "visible_augmentations": "Retractable keratin-reinforced claws visible when extended from fingertips—ivory-white, slightly translucent, sharp enough to score soft metals. When retracted, barely visible as slight ridges under the nail beds. The coral-pink irises are immediately striking and read as deliberately modified despite his insistence otherwise.",
+    "visible_augmentations": "Retractable keratin-reinforced claws visible when extended from fingertips—ivory-white, slightly translucent, sharp enough to score soft metals. When retracted, barely visible as slight ridges under the nail beds. Coral-pink irises that are immediately striking and read as deliberately modified despite his insistence otherwise.",
     "posture_movement": "Moves with long, loose strides—economical but unhurried. Often has one hand resting on his cart or gesturing mid-story. His default posture at rest is slightly forward-leaning, as if perpetually in the middle of explaining something. Laughs with his whole body, shoulders shaking. Head tilts when listening—an unconscious habit that makes him appear genuinely interested.",
     "clothing_style": "Tier 4 working-class scrap merchant. Faded olive-drab canvas pants with deep pockets reinforced with grey stitching, perpetually spotted with rust stains. Layers: a thin thermal base layer visible at the collar under a canvas shirt (khaki, three sizes too large—practical for moving around the cart), topped with a weathered brown synthetic-leather vest studded with random toggle closures and loops for hanging tools. No logos. Worn grey-rubber-soled work boots with visible toe reinforcement. A faded red cloth headwrap tied loosely around his neck—sometimes pulled up to cover his mouth and nose when digging through particularly dusty stock. No jewelry except a simple brass finger ring on his right hand, worn thin from years of wear."
   },
-  "image_prompt": "Odalys Tehrani, tall lanky scrap merchant in cyberpunk 2226, warm golden-olive brown skin with weathered sun-damage, dark hair graying at temples, striking vivid coral-pink augmented irises. Angular cheekbones and Middle Eastern-influenced facial structure blended with broader South Asian and Latin American features. Perpetual five-o'clock shadow, deep laugh lines, hands stained with rust and circuit residue. Retractable ivory keratin claws visible on fingertips. Wearing oversized khaki canvas shirt under weathered brown synthetic-leather vest with tool loops, faded olive-drab canvas work pants with rust stains, worn gray-soled boots. Loose red cloth headwrap around neck. Simple brass finger ring worn thin. Jagged 8cm burn scar on left forearm. Forward-leaning posture mid-gesture, hand resting on cargo cart. Geartown recycling corridor setting with harsh industrial lighting, metallic scrap and refuse in background, dust particles floating in harsh neon-tinted light. Cyberpunk dystopian atmosphere, working-class street scene. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Sekou Haraldsen, a 188cm tall lanky scrap merchant with warm bronze-brown skin toned with golden and reddish undertones, sun-weathered amber in harsh light. East Asian angular cheekbones blend with Sub-Saharan and Indigenous American heritage—broader nasal base, fuller lips. Dark brown hair with premature graying at temples, short and uneven self-trimmed. Striking vivid coral-pink cybernetic irises. Perpetual five o'clock shadow, deep laugh lines, weathered complexion with fine gray dust embedded in neck creases. Retractable ivory-white translucent keratin claws visible at fingertips. Wearing faded olive-drab canvas work pants with rust stains, oversized khaki canvas shirt, weathered brown synthetic-leather vest with toggle closures, worn work boots with toe reinforcement. Faded red cloth headwrap around neck. Simple brass finger ring worn thin. Slight forward-leaning posture, economical movements. Geartown recycling corridor, dusty neon-lit industrial setting, particulate-hazed air, casting warm and cool light across his weathered features. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 46.9,
-    "Hispanic/Latin American": 25.9,
-    "South Asian": 15.5,
-    "Sub-Saharan African": 7.8,
-    "Indigenous American": 3.9
+    "East Asian": 46.1,
+    "Sub-Saharan African": 17.3,
+    "Indigenous American": 16,
+    "Hispanic/Latin American": 11.5,
+    "South Asian": 6.1,
+    "Northern European": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 19.7
+      },
+      "Korean": {
+        "Korean": 13.1
+      },
+      "Japanese": {
+        "Japanese": 13.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 11.7,
+        "Sierra Leonean": 5.6
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Zapotec": 9.7
+      },
+      "Andean": {
+        "Aymara": 3,
+        "Quechua": 3.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.1
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.7,
+        "Dominican": 0.4
+      },
+      "South American": {
+        "Colombian": 4.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1,
+        "Baloch": 1.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 0.1,
+        "Swedish": 0.3
+      },
+      "British Isles": {
+        "Irish": 0.6,
+        "Welsh": 0.7
+      },
+      "Germanic": {
+        "Dutch": 1.3
+      }
+    }
+  }
 }

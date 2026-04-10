@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67c7eea878e2969c9e6686a",
   "type": "character",
-  "name": "Nneka Bah",
+  "name": "Meera Rahman",
   "aliases": [
     "Fei",
     "Mama Fei"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Kuura Street Laundry — a narrow shopfront sandwiched between a dumpling counter and a prayer-kiosk to the local E.L.F., near Halsted and Chicago Ave",
-  "description": "Ofeibea is a broad-shouldered woman whose hair has gone almost entirely silver, worn in a practical coiled wrap she replaces every three days with fabric remnants from her alterations pile. Her skin is deep umber with a faint bioluminescent shimmer along her jaw and collarbone — a cosmetic mod she got in her thirties that she now barely thinks about, though it pulses warmer when she laughs. Her hands are the most telling thing about her: knuckled, chemical-scarred at the knuckle creases from decades of industrial detergent, but precise when they hold a needle. She moves through her shop with the unhurried authority of someone who has owned every square inch of her twelve-by-twenty space for twenty-two years and intends to own it twenty-two more.\n\nShe is the kind of woman who asks about your mother before she asks about the stain. Her emotional intelligence is formidable — she reads distress the way others read text, and her shop has become an unofficial de-escalation room for the Enclave's domestic disputes, grief, and gossip. She has opinions she will share once, firmly, and then let drop. She does not argue. She also does not forget.",
+  "description": "Meera Rahman is a broad-shouldered woman whose hair has gone almost entirely silver, worn in a practical coiled wrap she replaces every three days with fabric remnants from her alterations pile. Her skin is deep umber with a faint bioluminescent shimmer along her jaw and collarbone — a cosmetic mod she got in her thirties that she now barely thinks about, though it pulses warmer when she laughs. Her hands are the most telling thing about her: knuckled, chemical-scarred at the knuckle creases from decades of industrial detergent, but precise when they hold a needle. She moves through her shop with the unhurried authority of someone who has owned every square inch of her twelve-by-twenty space for twenty-two years and intends to own it twenty-two more.\n\nShe is the kind of woman who asks about your mother before she asks about the stain. Her emotional intelligence is formidable — she reads distress the way others read text, and her shop has become an unofficial de-escalation room for the Enclave's domestic disputes, grief, and gossip. She has opinions she will share once, firmly, and then let drop. She does not argue. She also does not forget.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -159,7 +159,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,47 +177,29 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "GLMZ",
+    "Tessera Corponation",
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Tessera Corponation",
     "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Silver",
-    "The Pure Hand",
-    "Needle",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Chicago",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
+    "Silver",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Chronicle",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Emeka Johansson-Orozco",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Narrowcast",
-    "Solina Barreto-Kiptoo",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "TESSERA TC-3 'Crucible'",
-    "TESSERA TK-4 'Hellhound'",
-    "The Ledger",
-    "The Peninsula",
-    "Timur Osei-Bjelke",
-    "Tshiamo Vukić-Arellano"
+    "The Pure Hand",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pacific Islander (Melanesian/Polynesian) majority with significant Sub-Saharan African and Southeast Asian ancestry; robust frame reflects dual maritime and continental heritage",
+    "heritage": "Vibrant diaspora blend: Hispanic/Latin American (27.4%), South Asian (24.4%), Pacific Islander (20.7%), Sub-Saharan African (11.0%), Southeast Asian (8.8%), and Indigenous American (7.7%). The combination creates a rich tapestry of features—Pacific Islander breadth in cheekbones and jaw, Sub-Saharan African full-featured aesthetics, South Asian fineness in nose and eye placement, Southeast Asian delicacy in facial proportions, with warmth from Hispanic and Indigenous heritage throughout. Maritime and continental strength manifest in her solid, capable frame.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscle layered under modest soft tissue from decades of physical labor. Strong core and forearms; posture naturally slightly forward from bending over wash stations and alteration tables.",
     "hair_color": "Silver-white with faint warm undertones",
     "hair_style": "Coiled wrap, replaced every three days with fabric remnants; practical, no styling, wrapped close to the scalp",
     "hair_length": "Medium (hidden beneath wrap, approximately 12-15cm when loose)",
-    "eye_color": "Dark brown (left eye fitted with reading-assist tint, slightly amber-cast)",
-    "skin_tone": "Rich warm brown with subtle golden undertones; the blend of Pacific Islander, African, and Southeast Asian ancestry creates depth and radiance even in the weathered texture",
-    "complexion": "Weathered and unadorned. Minimal makeup. Deep lines around eyes and mouth from decades of focused work and frequent smiling. Skin texture slightly thickened at the knuckles and hands from industrial detergent exposure; faint chemical scarring at knuckle creases and fingertip ridges. Facial bone structure reflects Pacific Islander breadth through the cheekbones and jaw, with the full-featured aesthetics common to Sub-Saharan African heritage; fine nose and eye placement show Southeast Asian influence.",
+    "eye_color": "Deep warm brown (left eye fitted with reading-assist tint, slightly amber-cast)",
+    "skin_tone": "Luminous warm brown with rich golden-amber undertones; the complex interplay of South Asian, Pacific Islander, Sub-Saharan African, Southeast Asian, Hispanic, and Indigenous American ancestry creates remarkable depth and radiance, visible even in the weathered texture of decades of labor",
+    "complexion": "Weathered and unadorned. Minimal makeup. Deep lines around eyes and mouth from decades of focused work and frequent smiling. Skin texture slightly thickened at the knuckles and hands from industrial detergent exposure; faint chemical scarring at knuckle creases and fingertip ridges. Facial bone structure reflects Pacific Islander breadth through the cheekbones and jaw, with the full-featured aesthetics common to Sub-Saharan African heritage; fine nose and eye placement show Southeast Asian influence; warmth and dimension from South Asian and Hispanic ancestry; subtle angularity from Indigenous American heritage.",
     "distinguishing_marks": [
       "Faint bioluminescent shimmer along the jaw line from a cosmetic subdermal mod (now 20+ years old, faded, barely visible except in dim light and warmest when she laughs)",
       "Similar faint bioluminescence along the collarbone, same age and intensity",
@@ -228,14 +210,72 @@
     "posture_movement": "Moves with unhurried, grounded authority through her shop. Forward-leaning, from years bent over work surfaces. Hands are precise and economical when holding a needle or handling fabric; broader, practical gestures when moving through the shop. Rarely still — always some small task, some micro-adjustment. When she stops to listen to someone, she gives complete attention: shoulders square, eye contact direct.",
     "clothing_style": "Practical Tier 3 working-class aesthetic. Typical outfit: dark, durable pants (synthetic blend, often stained with detergent residue or tiny holes patched with scrap fabric); a loose button-up shirt or tunic in muted tones (cream, grey, soft brown), often with sleeves rolled to the elbow. Apron tied at the waist, deep pockets filled with needle cases, measuring tape, safety pins, fabric scraps. Worn flat shoes with good grip for wet floors. One simple gold ring on the left hand (old, possibly inherited). No jewelry otherwise. No status markers. Fabric choices reflect her inventory — she dresses in the scraps and overstock no one claimed."
   },
-  "image_prompt": "Nneka Bah, 168cm tall with broad Pacific Islander and African heritage features; rich warm brown skin with subtle golden undertones, deep weathered complexion with laugh lines. Silver-white coiled hair wrapped in fabric scraps close to the scalp. Dark brown eyes, left with amber-tinted reading-assist optics. Standing in her GLMZ tailor shop surrounded by fabric bolts and repair stations, sleeves rolled, wearing muted earth-tone button-up and stained practical apron. Faint bioluminescent glow along jaw and collarbone visible in the warm shop lighting. Hands showing industrial wear, precise and economical. Posture grounded and authoritative, slight forward lean. Gold ring on left hand. Cyberpunk 2226 working-class aesthetic, intimate shop lighting catching the subtle subdermal luminescence. --ar 2:3 --v 6",
+  "image_prompt": "Meera Rahman, 168cm, broad-shouldered tailor in the Great Lakes Metropolitan Zone 2226. Deep warm brown skin with golden-amber undertones, luminous despite weathered texture from decades of labor. Pacific Islander breadth through high cheekbones and strong jaw, Sub-Saharan African full features, fine Southeast Asian nose and eye placement, South Asian warmth, Indigenous American subtlety. Silver-white hair with warm undertones, wrapped in coiled fabric wrap close to scalp. Left eye with faint amber reading-assist tint. Deep laugh lines, chemical scarring on hands from detergent work. Faint bioluminescent shimmer along jawline and collarbone (barely visible in daylight, subtle warm glow in dim light). Wearing practical dark pants with patches, loose cream button-up shirt with rolled sleeves, work apron with deep pockets. Simple inherited gold ring. Forward-leaning posture from years of tailoring work. Standing in her small shop, surrounded by fabric scraps and alteration equipment, precise and attentive expression. Warm, unhurried authority. GLMZ 2200s Tier 3 working aesthetic. Natural daylight filtering through worn windows, with hints of bioluminescent glow at jawline. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 50.8,
-    "Sub-Saharan African": 35.6,
-    "Southeast Asian": 13.6
+    "Hispanic/Latin American": 27.4,
+    "South Asian": 24.4,
+    "Pacific Islander": 20.7,
+    "Sub-Saharan African": 11,
+    "Southeast Asian": 8.8,
+    "Indigenous American": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 27.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 7,
+        "Tamil Sri Lankan": 14.1
+      },
+      "Pakistani": {
+        "Sindhi": 3,
+        "Punjabi Pakistani": 0.3
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Papua New Guinean": 4.7,
+        "Fijian": 1.9
+      },
+      "Micronesian": {
+        "Marshallese": 8.7
+      },
+      "Polynesian": {
+        "Tongan": 5.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 4.6
+      },
+      "Southern African": {
+        "Mozambican": 3.3,
+        "South African": 3.1
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 8.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 2.6
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 1.6,
+        "Ojibwe": 2.1
+      },
+      "Plains Nations": {
+        "Muscogee": 1.4
+      }
+    }
+  }
 }

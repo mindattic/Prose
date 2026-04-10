@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bb7907a55d456f62a4e8ca",
   "type": "character",
-  "name": "Britt Echeverría-Thorvaldsdóttir-Balasanyan",
+  "name": "Binta Khoury-Hernández-Strömqvist",
   "aliases": [
     "Fathom",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
-  "description": "Aybek Guerrero-Osei-Mensah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Aybek Guerrero-Osei-Mensah describe them as a precision instrument — point them at a problem and get out of the way.",
+  "description": "Binta Khoury-Hernández-Strömqvist are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a breacher out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Binta Khoury-Hernández-Strömqvist describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.52,
@@ -262,7 +262,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -282,42 +282,20 @@
     "The Unfinished Theorem",
     "The Nearfield",
     "Geartown",
-    "Pellucid Systems",
-    "The Milwaukee Core",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Axiom Systems Biometric Lock Rifle BLR-3 'Personal'",
-    "Doru Fofana-Câmpeanu",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "The Heritage Vault",
-    "The Peninsula",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Vuk Jorgensen-Toure",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (58.5%) with Northern European (34.9%) and Middle Eastern (6.6%) ancestry — a complex blend resulting in warm-toned skin with subtle Mediterranean and Levantine undertones mixed with Latin warmth. The combination produces angular facial structure with high cheekbones and defined jaw, with a slight fullness in the lower face reflecting the Middle Eastern component.",
+    "heritage": "Middle Eastern (43.6%) with Sub-Saharan African (23.3%), Hispanic/Latin American (16.9%), and East Asian (16.2%) ancestry — a truly global genetic blend. The dominant Middle Eastern component combines with substantial African heritage to create deep, richly saturated skin tones with warm golden undertones. The Hispanic and East Asian heritage adds complexity to facial structure, creating a geometric precision in cheekbones and jaw, with subtle fullness through the lower face from the African component.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Lean and ropey, all cable and leverage. No excess mass — every kilogram serves function. The titanium bone lacing adds subtle density without bulk. Shoulders broad but not overdeveloped; wrists and forearms corded with visible tendon definition.",
     "hair_color": "Natural deep brown, nearly black",
     "hair_style": "Cropped close on sides, longer on top — practical for headgear and optics, styled with minimal maintenance. A few silver threads visible at the temples.",
     "hair_length": "Short",
-    "eye_color": "Brown with subtle amber undertone — natural",
-    "skin_tone": "Warm medium-brown complexion — a blend of Latin American warmth with Northern European undertones, creating a sun-kissed olive quality. Not deep, not fair, but richly saturated in the middle spectrum with faint golden undertones beneath.",
-    "complexion": "Angular face with high cheekbones and a sharp jaw, with slight fullness through the lower face and chin. Skin weathered from sleep deprivation and nocturnal living — slight gray undertone beneath the warm brown. A few fine lines around the eyes from squinting in low light. Clean-shaven or with 1-2 days stubble; minimal grooming routine.",
+    "eye_color": "Deep brown with warm amber undertones — natural",
+    "skin_tone": "Deep warm medium-brown complexion — the result of dominant Middle Eastern (43.6%) and substantial Sub-Saharan African (23.3%) heritage creating rich, saturated tone with golden and amber undertones. The East Asian (16.2%) and Hispanic/Latin American (16.9%) components add subtle warmth and complexity. Radiant beneath the surface even under sleep deprivation, with warmth that catches light distinctly.",
+    "complexion": "Angular face with defined high cheekbones and sharp jaw structure — the East Asian and Middle Eastern mix creating geometric precision in facial planes. Moderate fullness through the lower face reflecting African heritage. Nose with slightly broader bridge, softened by Middle Eastern and African features. Skin weathered from sleep deprivation and nocturnal living — slight gray undertone beneath the warm brown. A few fine lines around the eyes from squinting in low light. Clean-shaven or with 1-2 days stubble; minimal grooming routine.",
     "distinguishing_marks": [
       "Bioware regulator: visible chrome interface at the base of the neck, left side — a small silvered port with subtle LED indicator cycling pale blue when dormant.",
       "Scar tissue along the right forearm: three parallel marks from a blade strike during an early contract gone sideways, now pale against the skin.",
@@ -328,14 +306,45 @@
     "posture_movement": "Economical and predatory. No wasted motion. They move from the hips, shoulders loose, hands always aware of their position relative to exits and potential threats. When still, there's coiled tension — not anxious, but ready. When moving through a space, they map it instantly: sightlines, cover, approach vectors. The bioware regulator keeps their physical demeanor calm even when running hot — controlled breathing, deliberate pace.",
     "clothing_style": "Tier 4 utilitarian: matte-black tactical pants with reinforced seams and cargo pockets (Hegemony brand, 800 Φ range), steel-toed boots scuffed from actual use, gray or black moisture-wicking shirt (generic, unremarkable). A long black coat or reinforced vest depending on the job — usually something with deep pockets and minimal branding. Minimal jewelry; a worn silver ring on the left hand (inheritance or ritual unknown). No corpo logos. Everything designed for function and anonymity in low light."
   },
-  "image_prompt": "Britt Echeverría-Thorvaldsdóttir-Balasanyan, a tall lean cyberpunk operative with warm medium-brown skin blending Latin American and Northern European heritage, short cropped dark hair with silver at temples, sharp angular face with high cheekbones, natural brown eyes with amber undertone. Visible chrome bioware regulator port at base of neck glowing pale blue. Pale blade scars on right forearm, faded burn scar on left palm, chronic impact bruising on knuckles. Wearing matte-black tactical pants with reinforced seams, steel-toed scuffed boots, gray moisture-wicking shirt, long black coat. Worn silver ring on left hand. Standing in neon-lit alley in Great Lakes Metropolitan Zone, shadows and cool blue lighting, predatory posture with coiled tension, hands positioned near exits, mapping surroundings. Cyberpunk 2226, low light noir atmosphere, cinematic depth of field --ar 2:3 --v 6",
+  "image_prompt": "Binta Khoury-Hernández-Strömqvist, GLMZ, 188cm lean operative with deep warm brown skin and golden undertones reflecting Middle Eastern and Sub-Saharan African ancestry, angular high cheekbones from East Asian-Middle Eastern mix, natural deep brown eyes with amber warmth. Short dark hair with silver at temples, sharp-featured face weathered from nocturnal work. Visible chrome bioware regulator port at neck base with pale blue LED, scar tissue on right forearm, burn scar on left palm, chronic knuckle bruising. Matte-black tactical Hegemony pants, gray moisture-wicking shirt, long black reinforced coat, steel-toed boots. Economical posture, coiled tension, hands positioned with tactical awareness. Worn silver ring on left hand. Noir near-future megacity setting, low-key lighting with neon edge highlighting chrome bioware, urban grit atmosphere, predatory calm demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 58.5,
-    "Northern European": 34.9,
-    "Middle Eastern": 6.6
+    "Middle Eastern": 43.6,
+    "Sub-Saharan African": 23.3,
+    "Hispanic/Latin American": 16.9,
+    "East Asian": 16.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 43.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.1
+      },
+      "West African": {
+        "Senegalese": 5,
+        "Malian": 1.7
+      },
+      "East African": {
+        "Rwandan": 1.3,
+        "Ethiopian": 11.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 16.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 16.2
+      }
+    }
+  }
 }

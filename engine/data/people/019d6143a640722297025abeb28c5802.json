@@ -1,7 +1,7 @@
 {
   "id": "019d6143a640722297025abeb28c5802",
   "type": "character",
-  "name": "Orion Bautista-Mukherjee",
+  "name": "Orion Somchai-Mukherjee",
   "aliases": [
     "Kef",
     "Madame Scissors"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Burnished Market — Stall Row 14, unit B, between a spice merchant and a used-optics dealer, near North Ave and Damen",
-  "description": "Kefilwe is twenty-six years old and has the complete, unshakeable confidence of someone who decided very early exactly who they were going to be. They are short and compact with deep brown skin, a shaved left side, and the right side of their head grown out into thick coils they sculpt into a new configuration every week as an ongoing public art project. Their irises are modded to shift between amber and violet depending on ambient light — they call this their 'mood ring for people who are actually paying attention.' Their arms from elbow to wrist are covered in tessellating geometric tattoos that they designed themselves, each pattern corresponding to a client whose cut they consider their finest work.\n\nThe shop is barely three meters by four, dominated by the chair, a mirrored wall covered in pinned photographs of hairstyles both historical and invented, and a speaker system that plays music at a volume Kefilwe considers conversation-appropriate and everyone else considers aggressive. They are gifted in ways that go beyond technical skill — they read what a client needs from the way they hold their shoulders when they sit down, and they have an instinct for when someone wants silence and when they need to be talked through something. They work in color-changing extensions, blade geometry, bioluminescent thread woven into natural hair, and traditional methods they learned from their Motswana grandmother via long-distance data calls. Their waiting list is three weeks long.",
+  "description": "Orion Somchai-Mukherjee is twenty-six years old and has the complete, unshakeable confidence of someone who decided very early exactly who they were going to be. They are short and compact with deep brown skin, a shaved left side, and the right side of their head grown out into thick coils they sculpt into a new configuration every week as an ongoing public art project. Their irises are modded to shift between amber and violet depending on ambient light — they call this their 'mood ring for people who are actually paying attention.' Their arms from elbow to wrist are covered in tessellating geometric tattoos that they designed themselves, each pattern corresponding to a client whose cut they consider their finest work.\n\nThe shop is barely three meters by four, dominated by the chair, a mirrored wall covered in pinned photographs of hairstyles both historical and invented, and a speaker system that plays music at a volume Orion Somchai-Mukherjee considers conversation-appropriate and everyone else considers aggressive. They are gifted in ways that go beyond technical skill — they read what a client needs from the way they hold their shoulders when they sit down, and they have an instinct for when someone wants silence and when they need to be talked through something. They work in color-changing extensions, blade geometry, bioluminescent thread woven into natural hair, and traditional methods they learned from their Motswana grandmother via long-distance data calls. Their waiting list is three weeks long.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -175,7 +175,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -227,34 +227,12 @@
     "The Gradient Compact",
     "SynapTech IrisBloom Ocular Color Modulator",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Breck Tannen",
-    "Djeneba Park-Traore",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nimbus Security ShockRing NR-1 'Kiss'",
-    "Orkhan Sefa-Błaszczyk",
-    "Slagworks Industrial",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
-    "TERMINUS",
-    "TESSERA PG-2 'Signature'",
-    "The Archive",
-    "The Burnished Market",
-    "The Ferment Quarter",
-    "The Pure Hand",
-    "The Question",
-    "Tomasz Wren",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "VitaCore ClearCourse Addiction Suppressor"
+    "Compass Rose",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: Hispanic/Latin American (24.6%), South Asian (20.9%), Middle Eastern (15.2%), Southeast Asian (14.4%), Eastern European (12.6%), Sub-Saharan African (12.3%). This genetic constellation produces warm golden-brown skin with complex undertones—Latin and South Asian warmth layered with Middle Eastern depth and African richness, tempered by Eastern European fairness in the undertone. Features reflect this blend: South Asian bone structure softened by Latin American contours, Middle Eastern intensity in eye shape, Sub-Saharan African texture in natural hair, Eastern European paleness underlying the warm surface.",
+    "heritage": "Multiethnic diaspora blend with Southeast Asian as dominant influence (35%), layered with South Asian (23.3%), Sub-Saharan African (22.2%), Hispanic/Latin American (16.7%), and East Asian (2.8%). This genetic constellation creates warm golden-brown skin with complex, saturated undertones—Southeast Asian warmth and facial structure as primary architecture, South Asian depth and cheekbone prominence, Sub-Saharan African richness in skin saturation and hair texture, Latin American fullness in lower facial contours, East Asian refinement in eye positioning and lid structure. Features manifest as: Southeast Asian-dominant facial bone structure and eye shape, prominent South Asian cheekbones and defined jaw, Sub-Saharan African texture and skin richness, Latin American lower-face fullness, unified by East Asian delicacy.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and economical, with lean muscular forearms from precision work. No wasted bulk—every movement efficient.",
@@ -262,8 +240,8 @@
     "hair_style": "Right side: thick, shoulder-length coils arranged in a rotating geometric pattern (currently triangular lattice); left side: bare scalp with fine line-work designs that shift week to week",
     "hair_length": "Right side Long, left side Shaved",
     "eye_color": "Violet-to-amber chromatic shift iris mod; pupils dilate/contract with ambient light to trigger color transition",
-    "skin_tone": "Warm golden-brown with layered undertones: Latin warmth, South Asian depth, Middle Eastern richness, and Sub-Saharan African saturation, all unified under a subtle Eastern European fairness in the undertone. Flawless and meticulously maintained.",
-    "complexion": "Smooth, unblemished skin; high South Asian-influenced cheekbones with subtle Latin American fullness; strong jawline with Middle Eastern definition; minimal facial hair, sculpted eyebrows shaped with artistic precision. Expression carries quiet confidence and active listening.",
+    "skin_tone": "Warm golden-brown with saturated, layered undertones: Southeast Asian warmth as foundation, South Asian depth, Sub-Saharan African richness and saturation, Latin American mellowing, unified under East Asian refinement. Flawless and meticulously maintained.",
+    "complexion": "Smooth, unblemished skin; prominent Southeast Asian-influenced cheekbones amplified by South Asian bone structure with subtle Latin American fullness; strong, defined jawline with balanced contour; minimal facial hair, sculpted eyebrows shaped with artistic precision. Expression carries quiet confidence and active listening.",
     "distinguishing_marks": [
       "Tessellating geometric tattoos covering both forearms from elbow to wrist in color-reactive ink that shifts hue in different light—each pattern corresponds to a signature client haircut",
       "Fine line-work designs on the scalp of shaved left side that change monthly, currently depicting a circuit-board pattern"
@@ -272,17 +250,52 @@
     "posture_movement": "Sits and stands with forward-lean attention, shoulders relaxed. Hands gesture precisely when speaking, fingers moving with the deliberation of someone who understands texture and weight. Eye contact is direct and searching—reads people the way they read hair.",
     "clothing_style": "Tier 3-4 utilitarian aesthetic with artistic flair. Black or charcoal fitted work pants with cargo pockets; oversized linen or cotton shirts in neutral tones, sleeves rolled to mid-forearm to display tattoo work. Bare feet or minimalist slip-ons inside the shop; outside, wears low-profile sneakers in jewel tones. No corporate logos. Jewelry: a single silver cuff on right wrist (handmade), occasionally color-coordinated with weekly hair design."
   },
-  "image_prompt": "Orion Bautista-Mukherjee, 158cm, compact precision-honed frame, warm golden-brown skin with layered undertones blending Latin, South Asian, Middle Eastern, Sub-Saharan African, and Eastern European heritage. Right side shoulder-length thick black coils in geometric triangular lattice pattern; left side shaved scalp with shifting circuit-board line-work tattoos. High South Asian cheekbones with Latin fullness, strong Middle Eastern jawline, minimal facial hair, sculpted dark eyebrows. Violet-amber chromatic-shift iris mods visible in direct light. Both forearms wrapped in color-reactive geometric tattoos from elbow to wrist, each pattern tied to signature haircuts. Faint subdermal shimmer on hands from haptic feedback augmentation visible only up close. Wearing oversized neutral linen shirt with sleeves rolled to mid-forearm, black fitted cargo work pants, minimalist slip-ons in jewel tone. Single handmade silver cuff on right wrist. Forward-leaning posture, direct searching eye contact, precise deliberate hand gestures. Inside a clean modern barbershop with soft warm lighting, or urban GLMZ setting with neon accent lighting casting violet tones across skin and augmentations. Cyberpunk 2226, professional artisan aesthetic, quiet confidence and active listening presence. --ar 2:3 --v 6",
+  "image_prompt": "Orion Somchai-Mukherjee, 158cm tall hairstylist with warm golden-brown skin and prominent Southeast Asian cheekbones enhanced by South Asian bone structure, Sub-Saharan African skin richness, and Latin American fullness. Left side head shaved clean with fine circuit-board line-work tattoos in shifting designs; right side features thick shoulder-length coils in geometric triangular lattice pattern. Violet-to-amber color-shifting cybernetic iris mods. Forearms display tessellating color-reactive geometric tattoos from elbow to wrist. Wearing oversized charcoal linen shirt with sleeves rolled to mid-forearm, black fitted work pants, silver handmade cuff on right wrist. Leaning forward with focused attention, hands positioned with deliberate precision. Minimalist aesthetic, no corporate elements. GLMZ GLMZ setting, warm studio lighting catching subdermal haptic feedback shimmer on hands and reactive ink on tattoos. Direct eye contact, quiet confidence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 24.6,
-    "South Asian": 20.9,
-    "Middle Eastern": 15.2,
-    "Southeast Asian": 14.4,
-    "Eastern European": 12.6,
-    "Sub-Saharan African": 12.3
+    "Southeast Asian": 35,
+    "South Asian": 23.3,
+    "Sub-Saharan African": 22.2,
+    "Hispanic/Latin American": 16.7,
+    "East Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 35
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 23.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 11.9
+      },
+      "Southern African": {
+        "South African": 3.4
+      },
+      "Central African": {
+        "Angolan": 6.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 16.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.6
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      }
+    }
+  }
 }

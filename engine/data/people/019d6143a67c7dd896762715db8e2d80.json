@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67c7dd896762715db8e2d80",
   "type": "character",
-  "name": "Cleo Ibarra-Björnsdóttir",
+  "name": "Elsa Kjellberg-Björnsdóttir",
   "aliases": [
     "Oge"
   ],
@@ -12,7 +12,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction, near Ashland and Chicago Ave",
-  "description": "Ogechi is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
+  "description": "Elsa Kjellberg-Björnsdóttir is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -154,7 +154,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,30 +172,15 @@
     "Brewer's Spine",
     "Full Clearance (The Erasure Mix)",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Chicago",
+    "Corner Slice",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Teak",
-    "Arcturus CK-5 'Bloodhound'",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Brecken Yılmaz-Osei",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Stainless Steel",
-    "TESSERA ES-4 'Perimeter'",
-    "Tafara Quiñones-Saarinen",
-    "The Compact",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed East Asian (49.9%), Hispanic/Latin American (26.6%), and South Asian (23.5%) ancestry. The combination creates warm, complex skin tones with subtle golden and copper undertones beneath deeper melanin — a blend reflecting her grandmother's likely Han Chinese background, her parent's Latin American heritage, and South Indian ancestry visible in facial structure and eye shape.",
+    "heritage": "Mixed Northern European (52.8%), Southeast Asian (37.6%), and East Asian (9.6%) ancestry. The Scandinavian foundation creates a fair, cool-undertoned base, while Southeast Asian heritage adds warmth and subtle golden tones to cheekbones and midface. East Asian ancestry contributes to eye shape and facial structure balance. The result is a distinctive cool-warm complexion: fair skin with peachy-golden undertones that deepen in sun-exposed areas (forearms, neck, décolletage), creating an unusual but harmonious blend rather than stark contrast.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent three decades standing and moving within a small space. Not heavy, but dense — the kind of build that doesn't shift much in wind.",
@@ -203,8 +188,8 @@
     "hair_style": "Close-cropped, practical, no styling product",
     "hair_length": "Short",
     "eye_color": "Deep brown with warm undertones, crow's feet at the corners from decades of squinting against steam",
-    "skin_tone": "Warm medium-deep brown with golden undertones, darker at the forearms and neck from sun exposure. The complex interplay of East Asian, South Asian, and Latin American ancestry creates subtle variation — slightly warmer in tone than purely South Asian would be, with the kind of rich depth that comes from multiple heritage streams.",
-    "complexion": "Deeply lined face — prominent laugh lines bracketing her mouth, horizontal creases across her forehead, a permanent squint-crease between her brows. Facial structure shows South Asian influence in the bridge of her nose and cheekbone prominence, with wider-set eyes characteristic of East Asian heritage. Her skin has the weathered quality of someone who works in heat and humidity, with occasional patches of dryness at her jawline. Sun damage visible on her neck and forearms.",
+    "skin_tone": "Fair to light-medium with cool undertones at the jawline and temples (Northern European base), warming to peachy-gold across cheekbones and nose bridge (Southeast Asian influence). Sun-deepened at forearms, neck, and upper chest. Protected areas show pale, cool-toned skin. The overall effect reads as unusually balanced between cool and warm — neither dominantly one nor the other.",
+    "complexion": "Deeply lined face — prominent laugh lines bracketing her mouth, horizontal creases across her forehead, permanent squint-crease between brows. Facial structure shows prominent cheekbones (Southeast Asian influence), slightly wider-set eyes with gentle epicanthic fold (East Asian heritage), balanced against a strong nose bridge and defined jaw (Northern European ancestry). Skin has weathered quality from heat and humidity exposure, with occasional dryness at jawline. Sun damage visible on neck and forearms. Fair, cool-toned undertones visible in protected areas contrast subtly with warmer sun-exposed skin.",
     "distinguishing_marks": [
       "Bioluminescent freckles in a scattered constellation across her nose and cheekbones, faint pale-blue glow in low light (geneware, installed at age 40)",
       "Fine burn scar on the inner left wrist, thin and pale, from a broth-pot accident in her mid-thirties",
@@ -214,14 +199,45 @@
     "posture_movement": "Moves with unhurried efficiency — economical, deliberate. She doesn't gesture much, but when she does it's precise. Stands with weight balanced on both feet, ready to move in any direction. Her hands are always in use or ready. She makes direct eye contact and holds it without aggression — the gaze of someone accustomed to reading the faces of tired people ordering breakfast.",
     "clothing_style": "Tier 4 working-class practical. Loose dark linen tunic or long-sleeved shirt, rolled to the elbows (shows the reinforced wrists), black or dark gray cargo trousers with deep pockets. Worn synthetic-leather apron over everything, stained with old broth splashes and marked by years of use. Rubber-soled work clogs with reinforced toe caps. A headwrap or scarf on cold mornings. No jewelry except a simple stainless steel wedding band. No visible logos or corp branding."
   },
-  "image_prompt": "Cleo Ibarra-Björnsdóttir, 168cm tall with warm medium-deep brown skin and golden undertones, standing in a cyberpunk 2226 kitchen. Her face shows deep laugh lines and weathering from decades of work, with prominent South Asian cheekbones and wide East Asian eyes. Dark brown eyes with crow's feet. Short black hair with gray at temples. Faint blue bioluminescent freckles scattered across her nose and cheekbones glowing softly in warm kitchen light. Wearing a loose dark linen shirt rolled to elbows, revealing subtle metallic-sheen wrist augmentations. Black cargo trousers, worn synthetic-leather apron stained from years of broth and cooking. Rubber work clogs. Simple stainless steel wedding band. Standing with economical posture, weight balanced, hands ready. Direct gaze. Warm steam and kitchen ambiance in background. Practical, lived-in, unfussy. Natural warm lighting catching her skin tones and the soft blue glow of her geneware. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Elsa Kjellberg-Björnsdóttir, a 168cm broad-shouldered Scandinavian-Southeast Asian-East Asian woman with fair cool-toned skin warming to peachy-gold across cheekbones, deeply lined weathered face with laugh lines and prominent bioluminescent blue freckles scattered across nose and cheekbones glowing faintly in dimlight, short black hair with iron-gray temples, deep warm brown eyes with crow's feet, wearing dark rolled-sleeve linen shirt exposing wrist augmentations and burn scar, dark cargo trousers, worn synthetic-leather kitchen apron stained from years of work, reinforced rubber-soled clogs, simple steel wedding band, standing with economical balanced posture in a small kitchen space with steam rising, industrial lighting, geneware augmentations visible, working-class practical aesthetic, Great Lakes Metropolitan Zone diner setting, direct gaze, fatigue but dignity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 49.9,
-    "Hispanic/Latin American": 26.6,
-    "South Asian": 23.5
+    "Northern European": 52.8,
+    "Southeast Asian": 37.6,
+    "East Asian": 9.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 5.1
+      },
+      "British Isles": {
+        "Irish": 15.1,
+        "English": 8.8
+      },
+      "Scandinavian": {
+        "Norwegian": 23.8
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 37.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.4
+      },
+      "Japanese": {
+        "Japanese": 1.1
+      },
+      "Chinese": {
+        "Shanghainese": 0.2,
+        "Mandarin Northern": 0.9
+      }
+    }
+  }
 }

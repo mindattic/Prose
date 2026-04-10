@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ae7e12a3180e8b57ee42e2",
   "type": "character",
-  "name": "Britt Hinojosa-Björnsdóttir-Hossain",
+  "name": "Zen Hossain-Calvillo-Jang",
   "aliases": [
     "Counselor",
     "Silk"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "North Branch Commons — operates out of a shared office in the Grainfort civic building, near North Ave and Damen",
-  "description": "Amara has the kind of face people describe as 'composed' because they've worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs — everything well-made, nothing ostentatious, nothing that gives away which tier they're actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they've done that could be read as celebratory.\n\nAmara works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they're still fighting to reverse. They believe in law as a tool — not a moral system, a tool — and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
+  "description": "Zen Hossain-Calvillo-Jang has the kind of face people describe as 'composed' because they've worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs — everything well-made, nothing ostentatious, nothing that gives away which tier they're actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they've done that could be read as celebratory.\n\nZen Hossain-Calvillo-Jang works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they're still fighting to reverse. They believe in law as a tool — not a moral system, a tool — and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "North Branch Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -182,26 +182,15 @@
     "Marrowvault Cryogenics",
     "Lacuna Genomics",
     "Irontide Tidal Energy",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial",
     "Compass Rose",
-    "Gold",
-    "Cem Watanabe-Amponsah",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Idris Forsberg-Quaye",
-    "Ossic Resonance Baton ORB-3 'Earbreaker'",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "The Resonance Communion",
-    "Vantablack BC-1 'Briefcase'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European and Hispanic/Latin American blend with minor South Asian ancestry. The combination manifests as warm-toned light brown skin with olive undertones, sharp Nordic-influenced cheekbones balanced against softer Latin American facial geometry, dark hair characteristic of both ancestry groups.",
+    "heritage": "Truly cosmopolitan genetic blend: 30.4% East Asian, 19.7% South Asian, 18.1% Eastern European, 14.3% Hispanic/Latin American, 10.1% Middle Eastern, and 7.4% Southeast Asian. This complex ancestry manifests as warm golden-brown skin with subtle olive and amber undertones, a striking synthesis of multiple heritage features. High, defined cheekbones show East and Southeast Asian influence, balanced by the broader facial geometry and softer jawline contours from South Asian ancestry. The overall facial structure bridges Northern European angularity with the warmer, rounder elements of Latin American and Middle Eastern features, creating a uniquely harmonious blend that reflects the true Ubiquitous Diaspora.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Tall and angular with lean musculature; the build of someone who moves efficiently rather than powerfully, shoulders squared but not broad",
@@ -209,8 +198,8 @@
     "hair_style": "Close-cropped, even length, maintained with precision",
     "hair_length": "Short",
     "eye_color": "Deep amber-gold with circuit diagram patterning (augmented)",
-    "skin_tone": "Warm-toned light brown with olive undertones; complexion suggests Mediterranean-influenced heritage blending with Northern European genetics, even tone indicating careful sun management",
-    "complexion": "Sharp facial structure combining Nordic-influenced defined cheekbones with softer Latin American facial geometry; strong jawline; minimal facial hair; skin condition is excellent with no visible blemishes or weathering — grooming reflects meticulous attention without vanity",
+    "skin_tone": "Warm golden-brown with amber and olive undertones; complexion reflects the blending of East Asian, South Asian, Middle Eastern, and Latin American ancestry with cooler Eastern European undertones, creating a rich, even tone suggesting careful sun management",
+    "complexion": "Striking facial structure synthesizing multiple heritages: high, defined cheekbones from East and Southeast Asian ancestry, broader facial geometry and softer contours from South Asian and Latin American lineage, with the angularity of Eastern European and Middle Eastern features creating sharp definition along the jawline. Strong jawline with minimal facial hair; skin condition is excellent with no visible blemishes or weathering — grooming reflects meticulous attention without vanity",
     "distinguishing_marks": [
       "Faint linear scar along left temple, approximately 3cm long, barely visible unless light hits at specific angle — result of a courtroom altercation in 2221",
       "Small surgical scar at left wrist crease where subdermal data-port is implanted, approximately 1.5cm, well-healed and only visible on close inspection",
@@ -220,14 +209,61 @@
     "posture_movement": "Moves with deliberate economy of motion; sits upright in meetings without appearing rigid; maintains neutral facial expression as default; hands are often still or performing small, precise gestures; walks with steady, purposeful pace; rarely fidgets or displays nervous tics",
     "clothing_style": "Well-tailored, neutral-toned clothing in muted grays, blacks, charcoal, and deep blues; natural fabrics (cotton, linen, wool blends) that suggest Tier 1-2 spending without advertising it; clothing is expensive and made to last rather than fashionable; minimal jewelry beyond a simple silver watch; legal briefcase in worn leather rather than smart-fabric; overall aesthetic is 'professional who dresses for function, not status'"
   },
-  "image_prompt": "Britt Hinojosa-Björnsdóttir-Hossain, 183cm tall lean angular professional, warm-toned light brown skin with olive undertones, sharp Nordic-influenced cheekbones blended with Latin American facial geometry, natural dark brown close-cropped hair, circuit-patterned amber-gold augmented eyes glowing faintly, faint temple scar barely visible, neutral expression. Wearing well-tailored charcoal wool blazer over muted gray linen shirt, silver watch on left wrist, worn leather legal briefcase, professional minimalist aesthetic. Standing in modern GLMZ courtroom lobby with ambient LED panels, neutral lighting casting subtle shadows, cyberpunk 2226, composed and deliberate posture, efficient movement, professional who values function over status, cinematic legal drama atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Zen Hossain-Calvillo-Jang, 183cm tall lean angular professional, warm golden-brown skin with olive undertones, high defined cheekbones blending East Asian and Southeast Asian features with softer South Asian contours and Eastern European angularity, strong jawline, dark brown close-cropped hair, circuit-diagram patterned amber-gold augmented irises glowing softly, faint temple scar barely visible, minimal facial hair, meticulous grooming. Wearing charcoal wool blazer over muted gray linen shirt, simple silver watch, worn leather briefcase at side. Standing in modern GLMZ courtroom corridor or office with cool neon accent lighting, geometric shadows across face, deliberate neutral posture, steady composed presence, GLMZ aesthetic, professional and functionally elegant --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 52.0,
-    "Hispanic/Latin American": 46.7,
-    "South Asian": 1.3
+    "East Asian": 30.4,
+    "South Asian": 19.7,
+    "Eastern European": 18.1,
+    "Hispanic/Latin American": 14.3,
+    "Middle Eastern": 10.1,
+    "Southeast Asian": 7.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 18.7
+      },
+      "Chinese": {
+        "Sichuanese": 1.9,
+        "Fujianese": 0.9
+      },
+      "Japanese": {
+        "Japanese": 8.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 8.8,
+        "Tamil Sri Lankan": 10.9
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 10.4,
+        "Romanian": 7.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 14.3
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 10.1
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 4.9
+      },
+      "Cambodian": {
+        "Khmer": 2.5
+      }
+    }
+  }
 }

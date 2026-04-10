@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69973709d55882d30f03cf3",
   "type": "character",
-  "name": "Erik Arredondo",
+  "name": "Alejandro Inoue",
   "aliases": [
     "Phammie",
     "The Sugar Ghost"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Old Harbor, Grindstone Shore night market, Cart Row 9, near Lake Shore and Navy Pier",
-  "description": "Pham is slight and angular with the particular restless energy of someone who is always working out a problem internally even when they appear calm. Their skin is a deep warm brown, their eyes are dark and quick, and their hair is an expensive-looking natural black that changes to a deep violet at the tips — a cheap but well-maintained chromatic dye, the one beauty expense they allow themselves. They have soft cat ears, tawny-furred and mobile, a geneware mod their grandmother gifted them at sixteen, and they've grown fond of the way the ears pin back expressively when they're annoyed, making their feelings impossible to hide. Their hands are always slightly burned on the right thumb and forefinger from the steam spout.\n\nPham runs the cart their aunt built and their grandmother ran before that, and they have inherited both the recipes and a philosophy about broth that approaches the theological. They believe that a properly made broth requires patience, attention, and what their grandmother called 'listening' — checking it not just by temperature but by smell and color and the sound the surface makes when you tilt the pot. They have a gift for reading what a customer actually needs, which is often different from what they order, and a cheerful willingness to adjust accordingly. Off-shift, they are studying urban planning through an Axiom open-courseware program, which they mention to no one at the cart because they haven't figured out yet how to be both things at once.",
+  "description": "Alejandro Inoue is slight and angular with the particular restless energy of someone who is always working out a problem internally even when they appear calm. Their skin is a deep warm brown, their eyes are dark and quick, and their hair is an expensive-looking natural black that changes to a deep violet at the tips — a cheap but well-maintained chromatic dye, the one beauty expense they allow themselves. They have soft cat ears, tawny-furred and mobile, a geneware mod their grandmother gifted them at sixteen, and they've grown fond of the way the ears pin back expressively when they're annoyed, making their feelings impossible to hide. Their hands are always slightly burned on the right thumb and forefinger from the steam spout.\n\nAlejandro Inoue runs the cart their aunt built and their grandmother ran before that, and they have inherited both the recipes and a philosophy about broth that approaches the theological. They believe that a properly made broth requires patience, attention, and what their grandmother called 'listening' — checking it not just by temperature but by smell and color and the sound the surface makes when you tilt the pot. They have a gift for reading what a customer actually needs, which is often different from what they order, and a cheerful willingness to adjust accordingly. Off-shift, they are studying urban planning through an Axiom open-courseware program, which they mention to no one at the cart because they haven't figured out yet how to be both things at once.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -170,7 +170,7 @@
     "Hustler": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,38 +233,23 @@
   "registered_firearms": [],
   "related_entities": [
     "Grindstone Shore",
+    "Night Market Noodles",
     "Grandmother",
+    "The Marrow Market",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Glenville Sound",
+    "Frequency",
     "The Wire Taps",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "The Pure Hand",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Anatoliy Faye-Nkrumah",
+    "Patience",
     "Auntie Efe's Pot",
-    "Auricula Felis Modification",
-    "Aïssé Dragomirescu-Faalelei",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Mika Sorel",
-    "Night Market Noodles",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "TESSERA PA-5 'Attendant'",
-    "Tafara Quiñones-Saarinen",
-    "The Bazaar",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Harbor Fish Shack",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "The Pure Hand",
+    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed Northern European, Hispanic/Latin American, Middle Eastern, Indigenous American, and Sub-Saharan African ancestry. Features reflect a complex blend: warm olive-golden undertones from Mediterranean and Middle Eastern heritage, with subtle warmth from Latin American and African lineage. Higher cheekbones and angular structure show Northern European influence, while the natural richness of skin tone and facial geometry reflect the Latin American and African components.",
+    "heritage": "Predominantly Hispanic/Latin American (61.4%) with significant East Asian (20.6%), Sub-Saharan African (12.0%), and South Asian (6.0%) ancestry. The genetic blend creates a striking warm-toned complexion: golden-bronze undertones from Latin American and African ancestry combine with the angular facial structure characteristic of East Asian heritage, while South Asian ancestry adds subtle warmth and depth to overall coloring. Cheekbones are high and defined with East Asian influence, set within a face shape that reflects the broader Latin American and African geometry. Skin carries rich golden-bronze warmth with natural depth and slight seasonal weathering from outdoor work exposure.",
     "height_cm": 162,
     "weight_kg": 51,
     "build": "Slight and angular, all wiry muscle and sharp angles from years of standing over a cart, no excess mass anywhere. The posture of someone constantly in motion even when still.",
@@ -272,26 +257,65 @@
     "hair_style": "Shoulder-length, usually pulled back or tucked behind the mobile cat ears during work shifts; well-maintained despite budget constraints",
     "hair_length": "Medium",
     "eye_color": "Dark brown, quick and observant",
-    "skin_tone": "Warm golden-olive with even complexion, reflecting the blend of Mediterranean, Middle Eastern, Latin American, and African heritage",
-    "complexion": "Angular facial features with high cheekbones and defined jawline characteristic of mixed Northern European and Latin American ancestry. Warm, even skin tone with subtle golden undertones. Shows minor weathering from outdoor work exposure across seasons. No visible scarring on the face.",
+    "skin_tone": "Warm golden-bronze with even complexion and natural depth, reflecting the harmonious blend of dominant Latin American ancestry with East Asian, Sub-Saharan African, and South Asian heritage",
+    "complexion": "Angular facial features with high, defined cheekbones characteristic of East Asian ancestry, integrated within broader facial geometry influenced by Latin American and African lineage. Warm golden-bronze skin tone with subtle richness and depth. Shows minor weathering from outdoor work exposure across seasons. No visible scarring on the face.",
     "distinguishing_marks": [
       "Heat-callused patches on right thumb and forefinger, slightly darker and toughened from chronic exposure to steam spout — occupational rather than augmented",
       "Faint discoloration across the dorsal surface of both hands from years of minor steam burns that never quite fully healed, creating a mottled pattern"
     ],
     "visible_augmentations": "Tawny-furred cat ears with full mobility and expressive range, set naturally into the head. Ears pin back noticeably when annoyed or concentrating. No other visible augmentations; the chromatic hair dye is cosmetic and non-augmented.",
-    "posture_movement": "Restless economy of motion — never wasted movement, but never still either. Tends to shift weight from foot to foot, hands always doing something (stirring, checking temperature, wiping). The cat ears are constantly reading their emotional state; someone learning to read Erik can simply watch the ears. When focused on a problem (whether customer service or urban planning coursework), the entire body becomes very still and the ears flatten slightly in concentration.",
+    "posture_movement": "Restless economy of motion — never wasted movement, but never still either. Tends to shift weight from foot to foot, hands always doing something (stirring, checking temperature, wiping). The cat ears are constantly reading their emotional state; someone learning to read Alejandro can simply watch the ears. When focused on a problem (whether customer service or urban planning coursework), the entire body becomes very still and the ears flatten slightly in concentration.",
     "clothing_style": "Tier 4 practical wear. Food-stained apron over durable synthetic-blend work clothes (dark colors, stain-forgiving). Comfortable slip-on shoes with heavy-duty soles for long shifts. Usually wears a lightweight insulated vest or jacket over the apron in cooler months. One small piece of jewelry — a thin silver pendant or worn braided cord — worn daily. Hair dye is the one indulgence; everything else is functional and well-maintained but clearly budget-conscious."
   },
-  "image_prompt": "Portrait of Erik Arredondo, 162cm slight angular frame, warm golden-olive skin tone with Mediterranean and Latin American heritage, sharp high cheekbones and defined jawline. Dark brown observant eyes. Shoulder-length natural black hair with violet gradient dye at tips, pulled back. Tawny-furred mobile cat ears pinned back in concentration. Mottled steam-burn patterns on dorsal hands, heat-callused fingers. Wearing dark stain-resistant work apron over synthetic-blend clothes, lightweight insulated vest, heavy-duty shoes. Thin silver pendant. Restless posture, ready energy, outdoor food cart worker aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool neon-tinted ambient lighting, shallow depth of field, documentary realism, urban grit, --ar 2:3 --v 6",
+  "image_prompt": "Alejandro Inoue, a 162cm lean angular figure with warm golden-bronze complexion reflecting mixed Hispanic-Latin American, East Asian, African, and South Asian heritage. High defined cheekbones with East Asian structure, dark observant eyes, natural deep black shoulder-length hair with violet gradient dye fading at tips, tucked partially behind expressive tawny-furred mobile cat ears. Minor mottled discoloration and calluses visible on both hands from years of steam work exposure. Wearing dark food-stained work apron over practical synthetic-blend clothes, lightweight insulated vest, slip-on shoes with heavy soles, thin silver pendant. Restless posture mid-shift at a food cart in the Great Lakes Metropolitan Zone, hands in motion, cat ears slightly pinned back in concentration. GLMZ aesthetic, natural neon-lit evening street lighting, warm industrial glow from cart equipment, shallow depth of field focusing on expressive face and working hands --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 37.1,
-    "Hispanic/Latin American": 33.7,
-    "Middle Eastern": 18.8,
-    "Indigenous American": 6.7,
-    "Sub-Saharan African": 3.7
+    "Hispanic/Latin American": 61.4,
+    "East Asian": 20.6,
+    "Sub-Saharan African": 12,
+    "South Asian": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 41.5,
+        "Argentine": 17.9
+      },
+      "Caribbean": {
+        "Cuban": 2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 20.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 3.6,
+        "Zimbabwean": 1.5
+      },
+      "Central African": {
+        "Congolese": 2.8
+      },
+      "West African": {
+        "Senegalese": 4.1
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 3.9
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.9,
+        "Sinhalese": 0.3
+      },
+      "Indian": {
+        "Bengali": 0.9
+      }
+    }
+  }
 }

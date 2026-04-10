@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7207ac59858ea56ae59669b",
   "type": "character",
-  "name": "Santiago Quiñones-Olofsson",
+  "name": "Dmitri Ionescu-Wickramasinghe",
   "aliases": [
     "Yanni",
     "The Mouth"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave, working the Copperhead market blocks and the Burnside Pocket transit stops, near Kedzie and Division",
-  "description": "Yannick is all edges and nervous energy — lean and fast-moving, skin a warm medium brown with scattered vitiligo patches across his jaw and neck that he has chosen to emphasize rather than treat, coloring the edges of the patches with a faint bioluminescent ink that glows a soft blue-white in low light. He has his mother's Aleut cheekbones and his father's Ghanaian forehead and the specific wiry build of someone who has been running since childhood — literally running, routes and errands and collections, since he was eleven. His hair is grown out and unstyled, which is unusual enough in Shallowgrave's carefully cultivated aesthetic economy to read as either carelessness or confidence.\n\nHe is irrepressibly, exhaustingly verbal — he takes numbers, places bets, explains odds, and manages four different customer disputes simultaneously while eating a fried plantain from a street stall and telling a joke whose punchline he delivers to a different person than the one he started it with. He has a gift for mental arithmetic that would have made him a strong candidate for a Tessera data processing apprenticeship if his school records weren't spotty and his neighborhood weren't Shallowgrave. He knows this. He thinks about it more than he admits. He is nineteen and has not yet decided whether ambition is something that applies to him.",
+  "description": "Dmitri Ionescu-Wickramasinghe is all edges and nervous energy — lean and fast-moving, skin a warm medium brown with scattered vitiligo patches across his jaw and neck that he has chosen to emphasize rather than treat, coloring the edges of the patches with a faint bioluminescent ink that glows a soft blue-white in low light. He has his mother's Aleut cheekbones and his father's Ghanaian forehead and the specific wiry build of someone who has been running since childhood — literally running, routes and errands and collections, since he was eleven. His hair is grown out and unstyled, which is unusual enough in Shallowgrave's carefully cultivated aesthetic economy to read as either carelessness or confidence.\n\nHe is irrepressibly, exhaustingly verbal — he takes numbers, places bets, explains odds, and manages four different customer disputes simultaneously while eating a fried plantain from a street stall and telling a joke whose punchline he delivers to a different person than the one he started it with. He has a gift for mental arithmetic that would have made him a strong candidate for a Tessera data processing apprenticeship if his school records weren't spotty and his neighborhood weren't Shallowgrave. He knows this. He thinks about it more than he admits. He is nineteen and has not yet decided whether ambition is something that applies to him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -168,7 +168,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Shallowgrave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,34 +237,13 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Tessera Corponation",
     "Irontide Tidal Energy",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Aleut Corporation",
-    "Alper Lebedev-Tutu",
     "Arcturus KS-7 'Nursery'",
-    "Cezar Watanabe-Gyasi",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Transit",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Lacunal",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Bazaar",
-    "The Ledger",
-    "Uncle Noodle",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "the_meridian_office_park"
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Aleut Corporation"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with East Asian and Southeast Asian admixture — strong Iberian and indigenous Mesoamerican base blended with Sino-Pacific features creating a distinctive pan-diaspora phenotype",
+    "heritage": "Eastern European (36.8%), Middle Eastern (24.9%), South Asian (22.4%), Sub-Saharan African (14.7%), and Southeast Asian (1.2%) ancestry — a striking Diaspora phenotype where Slavic bone structure meets Levantine angularity, Indo-Aryan cheekbones, and African features into a distinctly pan-regional appearance that defies single-origin classification",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Lean and wiry with minimal muscle mass — the build of someone who runs constantly rather than trains deliberately. Long-limbed, narrow shoulders, defined but not muscular forearms from years of carrying ledgers and cash.",
@@ -272,8 +251,8 @@
     "hair_style": "Grown out and unstyled, falls past the collar; appears unkempt by Shallowgrave standards but gives an impression of deliberate indifference rather than neglect",
     "hair_length": "Long",
     "eye_color": "Dark brown, alert and constantly moving",
-    "skin_tone": "Warm golden-tan brown from Latin American and Southeast Asian ancestry, with significant vitiligo — depigmented patches across the jawline, extending down the right side of the neck and scattered across the left cheekbone",
-    "complexion": "Young face with prominent cheekbones (indigenous Mesoamerican ancestry), broad forehead (East Asian admixture), habitually tense jaw from constant talking and mental calculation. Skin is clear except for the vitiligo; he has chosen not to treat it, instead emphasizing the edges with bioluminescent edge-ink. Facial structure shows the blended characteristics of Latin American and East Asian heritage.",
+    "skin_tone": "Deep warm brown — a complex blend where Eastern European olive undertones merge with Middle Eastern amber, South Asian golden warmth, and Sub-Saharan African richness, creating a multitonal complexion. Marked by significant vitiligo with depigmented patches across the jawline, extending down the right side of the neck and scattered across the left cheekbone.",
+    "complexion": "Young face with prominent high cheekbones reflecting South Asian and Sub-Saharan African heritage, broad forehead characteristic of Eastern European ancestry, strong angular jaw with subtle Levantine definition. Habitually tense from constant talking and mental calculation. Skin is clear except for the vitiligo; he has chosen not to treat it, instead emphasizing the edges with bioluminescent edge-ink. The interplay of depigmented patches against his deep warm brown base creates striking visual contrast.",
     "distinguishing_marks": [
       "Bioluminescent blue-white edge-ink outlining vitiligo patches on the jawline and neck — glows faintly in low light, appears as deliberate cosmetic choice",
       "Scattered vitiligo depigmentation across right neck, left cheekbone, and jaw in irregular patches"
@@ -282,14 +261,71 @@
     "posture_movement": "Perpetually in motion — fidgets with fingers, shifts weight foot to foot, speaks with hand gestures that accompany rapid-fire arithmetic. Moves with practiced efficiency through crowded streets, eyes constantly scanning for customers and threats. Sits rarely and never for long. Body language reads as high-strung and caffeinated even when he is neither.",
     "clothing_style": "Tier 3-4 street wear — functional, mixed-brand, worn layers. Typically wears a faded synthetic overshirt (often navy or charcoal) over a fitted mesh undershirt, cargo pants with deep pockets for ledgers and cash, scuffed synthetic boots designed for running. Accessories include a cheap digital wrist display for time-keeping and odds calculation, a worn canvas messenger bag with fraying straps, and occasionally a thin silver chain (cheap, non-functional) around his neck. No corporate branding. Clothes show signs of heavy use — worn cuffs, faded panels, patched seams — but are clean. Grooming is minimal; he shaves irregularly."
   },
-  "image_prompt": "Santiago Quiñones-Olofsson, lean 173cm mixed-heritage street hustler in cyberpunk 2226, golden-tan brown skin with striking vitiligo patches outlined in glowing bioluminescent blue-white edge-ink on jawline and neck. Long straight black hair past collar, dark alert eyes, sharp cheekbones, tense jaw. Wearing worn navy synthetic overshirt over mesh undershirt, cargo pants with deep pockets, scuffed boots. Constant motion—fidgeting fingers, weight shifting, hand gestures mid-calculation. Worn canvas messenger bag. Digital wrist display for odds. Perpetual street energy, scanning movements. Faded synthetic clothing shows heavy wear but is clean. Great Lakes Metropolitan Zone nightscape, neon-lit street, crowd background, low dramatic lighting catching the bioluminescent edge-ink glow against dark skin. High-strung body language, caffeinated intensity. --ar 2:3 --v 6",
+  "image_prompt": "Dmitri Ionescu-Wickramasinghe, 173cm lean neo-noir street operator, deep warm brown skin with scattered bioluminescent blue-white vitiligo edge-ink glowing on jawline and neck, high cheekbones, strong angular jaw, dark alert eyes, long straight black hair past collar falling unkempt. Wearing faded charcoal synthetic overshirt over mesh undershirt, cargo pants with deep pockets, scuffed boots, worn canvas messenger bag. Perpetually in motion, fidgeting hands, tense expression from rapid mental calculation. Great Lakes Metropolitan Zone 2226, neon-lit street setting, low ambient lighting highlighting the bioluminescent edge-ink details, urban gritty atmosphere, neo-noir urban aesthetic, street-level perspective, tired but alert demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 65.4,
-    "East Asian": 18.1,
-    "Southeast Asian": 16.5
+    "Eastern European": 36.8,
+    "Middle Eastern": 24.9,
+    "South Asian": 22.4,
+    "Sub-Saharan African": 14.7,
+    "Southeast Asian": 1.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 18
+      },
+      "Slavic East": {
+        "Ukrainian": 17.4
+      },
+      "Slavic West": {
+        "Slovak": 1.4
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 8.1,
+        "Emirati": 0.8
+      },
+      "Kurdish": {
+        "Kurdish": 4.8
+      },
+      "Persian": {
+        "Iranian": 11.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.3
+      },
+      "Nepali": {
+        "Nepali": 14.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 5.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 10.3
+      },
+      "East African": {
+        "Somali": 4.4
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 0.6
+      },
+      "Cambodian": {
+        "Khmer": 0.3
+      },
+      "Thai": {
+        "Thai": 0.3
+      }
+    }
+  }
 }

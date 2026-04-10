@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70573b3a09a0b039a52200c",
   "type": "character",
-  "name": "Valentina Delgado",
+  "name": "Valentina Boateng",
   "aliases": [
     "Ghost Mother"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -100,21 +100,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
-    "Arcturus UW-8 'Barracuda'",
-    "Bintou Halvorsen-Osei",
-    "GLMZ",
-    "Kamala Mori-Sefa",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "The Shelf"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Sub-Saharan African heritage, complemented by East Asian and Northern European ancestry. This genetic blend manifests in her warm medium-brown skin tone, angular facial structure with pronounced cheekbones, and the subtle eye shape reflecting her East Asian ancestry component.",
+    "heritage": "Complex genetic blend of Hispanic/Latin American (49.9%), Sub-Saharan African (29.2%), East Asian (14.8%), and North African (6.1%) ancestry. This combination creates warm medium-brown skin with golden-reddish undertones, angular facial structure with pronounced cheekbones and strong jaw, and refined eye shape with subtle epicanthic fold influence. The multi-continental mix produces a striking, distinctly weathered appearance.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and corded with functional muscle; the physique of someone who does her own wet work. No excess, all efficiency.",
@@ -122,8 +112,8 @@
     "hair_style": "Pulled into a tight, functional braid coiled at the base of her skull",
     "hair_length": "Medium",
     "eye_color": "Dark brown with faint amber neon threading in the iris—subcutaneous neural interface marker",
-    "skin_tone": "Warm medium brown with a weathered quality; sun exposure and age have deepened it unevenly. The tone reflects the blend of Latin American and Sub-Saharan African ancestry with subtle undertones from East Asian heritage.",
-    "complexion": "Weathered, angular face with sharp cheekbones and a prominent jaw showing the influence of her Latin American and African heritage. Minimal grooming—no cosmetics. Two parallel scars mark her left temple, faded but visible. Her skin has the texture of someone who's spent decades in the GLMZ's variable climate without excessive skincare. Subtle epicanthic fold influence visible in eye shape from East Asian ancestry.",
+    "skin_tone": "Warm medium-brown with golden and reddish undertones from the Hispanic/Latin American and Sub-Saharan African blend, deepened and weathered by decades of GLMZ exposure. North African ancestry contributes subtle warmth and depth to undertone complexity.",
+    "complexion": "Weathered, angular face with sharp cheekbones and prominent jaw from African and Latin heritage. Dark brown eyes with subtle epicanthic fold from East Asian ancestry. Minimal grooming, no cosmetics. Two parallel scars mark her left temple, faded but visible. Skin has lived-in texture from decades in variable climate without excessive skincare. Scattered pockmark scars across shoulders and upper back.",
     "distinguishing_marks": [
       "Surgical scar running from left temple to cheekbone, approximately 8cm, partially obscured by gray hair",
       "Tattoo on inner left wrist: Cyrillic characters spelling 'ВЫХОД' (exit/way out), done in faded black ink, circa 2190s style",
@@ -134,15 +124,48 @@
     "posture_movement": "Economical and alert. She moves as though always assessing exits and threats—shoulders slightly forward, weight distributed to the balls of her feet. Her right synthetic hand is never still, micro-adjusting, testing grip. Direct eye contact is constant, almost aggressive. When at rest, there's a coiled quality to her; she doesn't relax, only pauses.",
     "clothing_style": "Tier 3 utilitarian with older-model high-end components. Black reinforced cargo pants (Hegemony tactical cut, circa 2220) with structural webbing at the thighs. Charcoal matte jacket with internal holster rig visible when unbuttoned. Worn Neo-Gen combat boots, re-soled twice. A faded leather wristband on her left arm—older than her augmentations, possibly sentimental. No visible branding; she dresses for function, not status."
   },
-  "image_prompt": "Valentina Delgado, weathered Latin American and Sub-Saharan African woman with East Asian ancestry, age 50s, 168cm tall, lean muscular build. Warm medium-brown skin with uneven aging from climate exposure. Sharp cheekbones, prominent jaw, subtle epicanthic fold in dark brown eyes with amber neon neural interface threading. Steel gray hair with black roots pulled into tight functional braid. Temple scars barely visible. Right synthetic hand: matte black composite with chrome articulated fingers and haptic nodes, never still. Faded Cyrillic 'ВЫХОД' tattoo on inner left wrist. Burn scars on right forearm—mottled pink tissue. Subcutaneous armor plating ridges visible on right ribs. Wears black Hegemony tactical cargo pants with thigh webbing, charcoal matte jacket with holster rig, worn re-soled combat boots, old leather wristband. Posture: economical, alert, coiled. Direct aggressive eye contact. Cyberpunk 2226 GLMZ setting, dim industrial neon lighting, cool blue-gray shadows, ready stance, threat assessment mode. --ar 2:3 --v 6",
+  "image_prompt": "Valentina Boateng, 168cm lean-muscled operative with warm medium-brown weathered skin, sharp cheekbones and strong jaw reflecting mixed Hispanic/Latin American, Sub-Saharan African, East Asian and North African heritage. Steel gray hair with black roots in tight functional braid. Dark brown eyes with subtle epicanthic influence and faint amber neon threading. Surgical scar on left temple, pockmark scars on shoulders. Matt black synthetic right hand with chrome finger joints. Faint ocular neural interface glow in left eye. Subcutaneous armor plating ridges visible on ribs. Wearing black reinforced Hegemony tactical cargo pants, charcoal matte jacket, worn Neo-Gen combat boots. Faded Cyrillic wrist tattoo. Coiled, alert posture, direct intense gaze. GLMZ Great Lakes Metropolitan Zone, noir lighting with neon accent, gritty urban environment, moody cinematic atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 78.3,
-    "Sub-Saharan African": 9.7,
-    "East Asian": 7.8,
-    "Northern European": 4.2
+    "Hispanic/Latin American": 49.9,
+    "Sub-Saharan African": 29.2,
+    "East Asian": 14.8,
+    "North African": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9
+      },
+      "Caribbean": {
+        "Cuban": 31.1,
+        "Puerto Rican": 9.8
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 29.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 14.8
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 1.8,
+        "Tuareg": 2.2
+      },
+      "Nile Valley": {
+        "Sudanese": 1.1
+      },
+      "Maghreb": {
+        "Algerian": 1
+      }
+    }
+  }
 }

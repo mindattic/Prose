@@ -1,7 +1,7 @@
 {
   "id": "019d6143a64a78a49394444c52e73a77",
   "type": "character",
-  "name": "Joaquín Tovar",
+  "name": "Wren Haugen",
   "aliases": [
     "Lila",
     "The Pamphleteer"
@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "The Shelf, near Western and Division",
-  "description": "Lilavati is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nLilavati is nineteen and has been distributing underground printed materials since she was fifteen. She found the Shelf's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
+  "description": "Wren Haugen is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nWren Haugen is nineteen and has been distributing underground printed materials since she was fifteen. She found the Shelf's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -163,7 +163,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -213,28 +213,16 @@
   ],
   "changelog": [],
   "related_entities": [
-    "The Shelf",
     "The United Workers Front",
     "Zheng-dao Bioelectric",
+    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
     "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Cezar Watanabe-Gyasi",
-    "Highland Park Autonomous Zone",
-    "Ihaia Nystrom-Keita",
-    "Lazarus BX-0 'Test Subject'",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Ringo DV-4 'Courier'",
-    "Slagworks Industrial",
-    "TESSERA PG-2 'Signature'",
-    "The Collective",
-    "The Printer"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Triethnic blend: Hispanic/Latin American (35%), Sub-Saharan African (35%), and South Asian (30%). The combination produces warm, complex undertones across medium-brown skin with subtle regional feature contributions.",
+    "heritage": "Predominantly Southeast Asian (53.1%) with significant East Asian (29.0%) and Sub-Saharan African (17.9%) ancestry. The genetic blend creates a striking phenotype: warm medium-brown skin with golden undertones from Southeast Asian dominance, enriched by East Asian refinement, and deepened with warmer, richer tones from Sub-Saharan heritage. Facial structure shows the harmonious integration across all three ancestral lines.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Lean and wiry with minimal fat; built for speed and endurance rather than strength. Compact frame shows the result of three years of constant movement through tight urban spaces and climbing.",
@@ -242,8 +230,8 @@
     "hair_style": "Shoulder-length, deliberately unkempt; shaved undercut on left side revealing pale scalp",
     "hair_length": "Medium",
     "eye_color": "Very dark brown, almost black",
-    "skin_tone": "Medium-warm brown with golden undertones from the South Asian component, deepened by Sub-Saharan heritage, with slight warmth from Hispanic ancestry. Tone is even across the face with natural variation from sun exposure.",
-    "complexion": "Angular face reflecting mixed heritage features: defined cheekbones with subtle width characteristic of Sub-Saharan ancestry, refined jaw with gentle taper suggesting South Asian influence, and prominent nose bridge. Skin is clear but shows minor scars and healing marks from street living. No makeup. Perpetual slight tension in expression.",
+    "skin_tone": "Warm medium-brown with golden and honey undertones from Southeast Asian ancestry (53.1% dominant), refined and subtly elevated by East Asian heritage (29.0%), and deepened with richer warmth from Sub-Saharan African contribution (17.9%). Tone is even across the face with natural variation from sun exposure.",
+    "complexion": "Angular face reflecting the three-way ancestral blend: defined cheekbones with graceful width characteristic of Southeast Asian genetics, refined jawline with gentle taper showing East Asian influence, and prominent nose bridge that integrates Sub-Saharan proportions seamlessly. Eyes set with the slightly deeper, more hooded positioning of Southeast Asian ancestry, framed by the subtle eye shape from East Asian heritage. Skin is clear but shows minor scars and healing marks from street living. No makeup. Perpetual slight tension in expression.",
     "distinguishing_marks": [
       "Two parallel scars on left forearm, thin and precise, approximately 4cm long each — likely self-inflicted, several years old",
       "Jagged burn scar across the inside of right wrist, approximately 3cm diameter — acquired during a printing press incident eighteen months ago",
@@ -254,14 +242,48 @@
     "posture_movement": "Moves with controlled restlessness; rarely still for more than moments. Stance is slightly forward-leaning as if ready to sprint. Eyes constantly scanning surroundings. Ears flatten involuntarily when anxious or startled, a tell she resents. Walks with ball-of-foot gait that minimizes sound.",
     "clothing_style": "Tier 5 utilitarian survivalism. Wears dark, durable, unremarkable clothes designed for rapid movement and minimal snagging: fitted black synthetic-cotton blend pants with multiple pockets (ink stains on thighs), worn gray henley or faded band t-shirts (never official merch, always thrifted), black canvas jacket with reinforced seams and sewn-closed zippers for security. Worn running shoes with replaced soles. No jewelry except a frayed paracord wristband. Carries a canvas messenger bag, permanently damp from press ink and rain."
   },
-  "image_prompt": "Joaquín Tovar, 158cm lean cyberpunk character with medium-warm brown skin blending Hispanic, African, and South Asian heritage. Deep violet hair fading to white tips, shoulder-length with shaved undercut on left side. Very dark brown eyes constantly scanning. Functional dark furred cat ears with pink inner surfaces, positioned naturally and slightly flattened. Angular face with defined cheekbones and refined jaw, showing minor scars from street living. Wearing worn black synthetic pants with ink stains, faded thrifted band t-shirt, reinforced black canvas jacket. Canvas messenger bag stained with printer ink. Frayed paracord wristband. Tattoo of Φ symbol on right ankle visible. Thin scars on left forearm, burn scar on right wrist. Ball-of-foot stance suggesting readiness to move. Dimly lit alley or underground press hideout, cyberpunk 2200s aesthetic, moody blue-amber lighting, perpetual slight tension in expression, ears positioned to show alertness. --ar 2:3 --v 6",
+  "image_prompt": "Wren Haugen, 158cm lean street-runner with Southeast Asian-dominant mixed heritage, warm medium-brown skin with golden honey undertones, angular face with defined cheekbones and prominent nose bridge. Very dark brown almost-black eyes with deep-set Southeast Asian positioning. Shoulder-length deep violet hair fading to white tips, deliberately unkempt with shaved undercut on left side. Dark brown/black furred functional cat ears on head, slightly flattened with visible pale pink inner surface. Self-inflicted scars on left forearm, burn scar on right wrist, Φ tattoo on ankle. Wearing worn black synthetic pants with ink stains, gray henley, black canvas jacket with reinforced seams, worn running shoes. Frayed paracord wristband. Slightly forward-leaning posture, constantly scanning. GLMZ GLMZ setting, dark urban alley with rain-slicked pavement, neon signs reflecting off wet ground, moody blue and purple lighting, gritty industrial warehouse district, atmospheric fog, hyperrealistic detail --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 35.2,
-    "Sub-Saharan African": 35.0,
-    "South Asian": 29.8
+    "Southeast Asian": 53.1,
+    "East Asian": 29,
+    "Sub-Saharan African": 17.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 26.7
+      },
+      "Filipino": {
+        "Waray": 26.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.4
+      },
+      "Chinese": {
+        "Mandarin Northern": 7.1
+      },
+      "Korean": {
+        "Korean": 15.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 10.9
+      },
+      "West African": {
+        "Nigerian": 1.4,
+        "Ghanaian": 1.4
+      },
+      "Southern African": {
+        "South African": 1.2,
+        "Zambian": 3
+      }
+    }
+  }
 }

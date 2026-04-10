@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "The Shelf, Geartown, near Halsted and Division",
-  "description": "Goran is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nGoran's stall on The Shelf is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
+  "description": "Sable Fredriksen is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nSable Fredriksen's stall on The Shelf is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,29 +235,19 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Iron Lotus",
     "Vespid Dynamics Paralytic Aerosol Grenade PAG-2 'Sleepy Time'",
+    "The Iron Lotus",
+    "Zheng-dao Bioelectric",
     "The Shelf",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Zheng-dao Bioelectric",
+    "Frequency",
     "Geartown",
-    "Aslan Vasquez-Chatterjee",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Dreamcatcher",
-    "Narrowcast",
     "Noir Dining",
-    "Oumarou Svec-Ranginui",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "The Pure Hand",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian (42.4%) with Northern European (35.9%), Hispanic/Latin American (16.0%), and South Asian (5.7%) ancestry; creates warm golden-brown skin tone with subtle warm undertones beneath the weathering",
+    "heritage": "Northern European (37.3%), Hispanic/Latin American (33.1%), Southeast Asian (18.4%), and South Asian (11.2%) ancestry; creates a warm golden-brown skin tone with subtle olive undertones from the balanced, complex ancestral blend. The mix produces moderate facial structure with defined cheekbones and jawline characteristic of diverse genetic heritage.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and barrel-chested, softening at the waist and midsection with age; still carries the frame of a man who moved heavy things for decades, now settled into deliberate, economical movement",
@@ -265,8 +255,8 @@
     "hair_style": "Full, unkempt beard extending to mid-chest, unstyled and never trimmed; hair on head short and thinning, greyed almost completely",
     "hair_length": "Short on head, Long beard",
     "eye_color": "Dark brown with faint subretinal augmentation visible as a faint amber luminescence in low light",
-    "skin_tone": "Golden-warm brown, deeper in tone with subtle reddish undertones from the East Asian-Northern European-Hispanic blend, greyed and weathered from decades of metallic dust exposure",
-    "complexion": "Heavily lined face with deep creases around the eyes and mouth; weathered but clean; small scar through left eyebrow from a tool accident in his fifties; calloused hands, right hand more than left; facial structure shows blended ancestry with slightly broader cheekbones and defined jawline",
+    "skin_tone": "Warm golden-brown with subtle olive depth, midtone from balanced ancestral blend; greyed and weathered from decades of metallic dust exposure",
+    "complexion": "Heavily lined face with deep creases around the eyes and mouth; weathered but clean; small scar through left eyebrow from a tool accident in his fifties; calloused hands, right hand more than left; facial structure shows blended ancestry with moderate cheekbones and defined jawline reflecting Northern European, Hispanic, Southeast Asian, and South Asian genetic mix",
     "distinguishing_marks": [
       "Deep horizontal scar across the left temple, pale against golden-brown skin, approximately 4cm long from a salvage accident in his forties",
       "Faint burn marks across the knuckles of his right hand from soldering work, barely visible unless examined closely",
@@ -274,17 +264,59 @@
     ],
     "visible_augmentations": "Left arm prosthetic from elbow down: heavy-duty industrial model in bare gunmetal grey, utilitarian and undecorated, with visible joint articulation and cable routing; no chrome, no color-work, no aesthetic modification. Subretinal augmentation not immediately obvious but produces faint amber glow in darkness when active.",
     "posture_movement": "Moves slowly and deliberately with the careful economy of an older man who has learned efficiency through forty years of repetition; stands with weight favoring right side due to left arm imbalance; rarely rushes; communicates with economy of gesture and long, appraising stares; carries himself with the quiet confidence of someone in complete command of their small domain",
-    "clothing_style": "Tier 4-5 practical: heavy canvas cargo pants in faded black, patched at both knees with different fabric; worn Carhartt-style jacket in brown, stained with oil and oxidation; thermal undershirt visible at neckline, greyed from washing; steel-toed boots, scuffed and re-soled multiple times; no jewelry except a simple band on right ring finger (silver, old). Everything functional, nothing decorative. No corporate branding. Clothes smell faintly of machine oil and copper oxide."
+    "clothing_style": "Tier 4-5 practical: heavy canvas cargo pants in faded black, patched at both knees with different fabric; worn Carhartt-style jacket in brown, stained with oil and oxidation; thermal undershirt visible at neckline, greyed from washing; steel-toed boots, scuffed and re-soled multiple times; no jewelry except a simple band on right ring finger (silver, old). Everything functional, nothing decorative. No corporate branding."
   },
-  "image_prompt": "Weathered older man, golden-warm brown skin with deep age lines, thinning grey-red hair, full unkempt mid-chest beard, 188cm tall broad-shouldered build softened by age. Dark brown eyes with faint amber glow. Industrial gunmetal grey prosthetic left arm from elbow down, heavy-duty utilitarian design. Pale scar across left temple, burn marks on right knuckles, faded indigo geometric tattoo on inner right forearm. Wearing faded black canvas cargo pants patched at knees, brown oil-stained Carhartt jacket, greyed thermal undershirt, scuffed steel-toed boots. Standing in dim salvage yard workshop lit by overhead industrial lights, amber subretinal glow barely visible. Posture careful and deliberate, weight favoring right side. Quiet confidence, complete command of small domain. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, worn equipment, metallic dust patina. --ar 2:3 --v 6",
+  "image_prompt": "Sable Fredriksen, 188cm tall weathered man with golden-brown skin with olive undertones, heavily lined face with deep eye creases and temple scar, dark brown eyes with faint amber glow, full rust-grey beard to mid-chest, short greyed hair thinning on crown. Broad-shouldered build softening at waist. Left arm industrial gunmetal prosthetic from elbow down with visible joint articulation. Wears faded black canvas cargo pants with knee patches, oil-stained brown Carhartt jacket, grey thermal undershirt, scuffed steel-toed boots. Calloused hands, faded indigo geometric tattoo on right inner forearm. Standing in dimly-lit salvage workshop or warehouse, cool neon and practical work lighting, surrounded by metallic debris and industrial tools. Deliberate posture favoring right side. Moody GLMZ setting, melancholic but commanding presence. Realistic aging, no glamour, pure functional utilitarian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 42.4,
-    "Northern European": 35.9,
-    "Hispanic/Latin American": 16.0,
-    "South Asian": 5.7
+    "Northern European": 37.3,
+    "Hispanic/Latin American": 33.1,
+    "Southeast Asian": 18.4,
+    "South Asian": 11.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 10.3
+      },
+      "Scandinavian": {
+        "Swedish": 13.4
+      },
+      "Germanic": {
+        "Austrian": 13.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 16.3
+      },
+      "Central American": {
+        "Honduran": 11.3
+      },
+      "Mexican": {
+        "Mexican": 5.5
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 18.4
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 5.2,
+        "Baloch": 2.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.2
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.6,
+        "Sinhalese": 0.1
+      }
+    }
+  }
 }

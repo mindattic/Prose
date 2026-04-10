@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65a7c06a816337e996740ab",
   "type": "character",
-  "name": "Soren Čabarkapa",
+  "name": "Siddharth Raghavan",
   "aliases": [
     "Mir",
     "The Architect",
@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "The Spire, near Michigan Ave and Chicago Ave",
-  "description": "Mireille Fontaine-Obi is the kind of person who has designed the systems that keep other people alive without ever having met those people. She is mixed French-Nigerian, lean and angular, with close-cropped natural hair and the particular stillness of someone whose mind is always several steps ahead of the room. She dresses in structured, expensive minimalism — the corporate elite aesthetic of someone who wants to signal power through restraint — and wears a full-forearm neural interface sleeve on her right arm that she rarely removes even in social settings. Her office on the forty-second floor of The Spire looks out over the entire city, a view she has described in internal documents as 'operationally useful' and has never once described as beautiful.\n\nMireille designs the infrastructure of GLMZ — water reclamation routing, power grid distribution, transit corridor optimization, environmental filtration zoning. She is extraordinarily good at this work. She is also the person who decides, through the dry mathematics of resource allocation, which districts receive redundant systems and which receive single points of failure. The Shelf has exactly one filtration node. Old Harbor's power grid has a designed load ceiling that ensures brownouts during peak demand. These are not accidents. They are her work, signed off with her credentials, rationalized through efficiency models she wrote herself.\n\nShe entered the corporate track from a scholarship program at seventeen, having grown up in a mid-tier Circuit neighborhood that has since been rezoned into a logistics hub. She has not been back. She has told herself many things about what that means. She has a partner she sees on weekends, a curated social life within The Spire's residential tier, and a locked private project folder on her workstation that she opens at 2 a.m. when she can't sleep, containing infrastructure redesigns for the city as it could exist — equitable, redundant, built for the people who actually live in it. She has never submitted any of it.",
+  "description": "Siddharth Raghavan is the kind of person who has designed the systems that keep other people alive without ever having met those people. She is mixed French-Nigerian, lean and angular, with close-cropped natural hair and the particular stillness of someone whose mind is always several steps ahead of the room. She dresses in structured, expensive minimalism — the corporate elite aesthetic of someone who wants to signal power through restraint — and wears a full-forearm neural interface sleeve on her right arm that she rarely removes even in social settings. Her office on the forty-second floor of The Spire looks out over the entire city, a view she has described in internal documents as 'operationally useful' and has never once described as beautiful.\n\nMireille designs the infrastructure of GLMZ — water reclamation routing, power grid distribution, transit corridor optimization, environmental filtration zoning. She is extraordinarily good at this work. She is also the person who decides, through the dry mathematics of resource allocation, which districts receive redundant systems and which receive single points of failure. The Shelf has exactly one filtration node. Old Harbor's power grid has a designed load ceiling that ensures brownouts during peak demand. These are not accidents. They are her work, signed off with her credentials, rationalized through efficiency models she wrote herself.\n\nShe entered the corporate track from a scholarship program at seventeen, having grown up in a mid-tier Circuit neighborhood that has since been rezoned into a logistics hub. She has not been back. She has told herself many things about what that means. She has a partner she sees on weekends, a curated social life within The Spire's residential tier, and a locked private project folder on her workstation that she opens at 2 a.m. when she can't sleep, containing infrastructure redesigns for the city as it could exist — equitable, redundant, built for the people who actually live in it. She has never submitted any of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -232,7 +232,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spire",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,43 +246,25 @@
   "registered_firearms": [],
   "related_entities": [
     "The Reclamation Assembly",
-    "GLMZ",
     "Ouroboros Energy Power Distribution Trunk Network",
+    "Volkov-Saito Precision VS-40 'Magistrate'",
     "The Spire",
     "The Shelf",
     "TESSERA PG-2 'Signature'",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
+    "Plot 17",
     "The Quiet Room",
+    "GLMZ",
     "Independent Micro-Grid Power Cooperative",
     "Mireille & The Hollow Saints",
+    "Circuit",
     "Chicago",
-    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
-    "Hearthstone LP-1 'Laundress'",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "NeuralPath LinkGuard Secure Civic Identity BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Oxytrel",
-    "Patient Zero",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "The Augmentation Rights Coalition",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Question",
-    "The Undertow",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vesna Ito-Takyi",
-    "Zoë Mbekele-Thorvaldsdóttir"
+    "Neural Palate",
+    "Harbor Fish Shack",
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Eastern European, Northern European, Hispanic/Latin American, Central Asian, South Asian, and Middle Eastern ancestry combined — a genetic map of the Ubiquitous Diaspora. Her features reflect this complex blend: moderate bone structure with subtle Central Asian angularity, warm undertones from Latin American and South Asian heritage, fair-to-medium skin with depth from Northern and Eastern European ancestry, and delicate Middle Eastern influence in her facial geometry.",
+    "heritage": "Sub-Saharan African (39.8%), South Asian (31.2%), Northern European (16.6%), and Indigenous American (12.4%) ancestry — a genuine genetic blend of the Ubiquitous Diaspora. Her features reflect this complex multifaceted heritage: warm-toned bone structure with pronounced cheekbones showing Sub-Saharan and South Asian influence, a defined nose with subtle bridge elevation characteristic of South Asian ancestry, and refined jawline geometry that speaks to the interaction of all four genetic sources. The combination creates striking facial harmony with depth and dimensionality that speaks to authentic global ancestry.",
     "height_cm": 172,
     "weight_kg": 59,
     "build": "Lean and angular, economical in movement — the build of someone whose body is managed like a system, no excess, efficient muscle distribution. Shoulders slightly forward from hours at workstations.",
@@ -290,8 +272,8 @@
     "hair_style": "Close-cropped, precision-cut, symmetrical",
     "hair_length": "Short",
     "eye_color": "Deep brown with subtle augmentation markers around the iris — the neural interface sleeve's data feeds visible as faint luminescent traces during high-cognition states",
-    "skin_tone": "Medium warm complexion with subtle golden undertones, the result of her multifaceted ancestry creating an even, balanced tone across face and body — no pronounced regional variation, but rather a harmonious blend showing her genetic diversity.",
-    "complexion": "Precise grooming, minimal makeup, skin kept in clinical condition through consistent care regimen. Fine lines around eyes from screen time and sustained concentration. No visible acne or skin texture variation — maintained to Tier 1 standards. Facial features show balanced blend of her ancestry: moderate cheekbones, straight nose with subtle bridge definition, refined jawline. Expression typically neutral or subtly analytical.",
+    "skin_tone": "Deep warm brown with luminous golden undertones, the result of blended Sub-Saharan African and South Asian heritage creating richness and depth, balanced with Northern European and Indigenous American ancestry. The skin tone carries natural luminosity and warmth across face and body.",
+    "complexion": "Precise grooming, minimal makeup, skin kept in clinical condition through consistent care regimen. Fine lines around eyes from screen time and sustained concentration. No visible acne or skin texture variation — maintained to Tier 1 standards. Facial features show integrated blend of her ancestry: pronounced cheekbones with subtle fullness reflecting Sub-Saharan and South Asian genetic presence, straight nose with defined bridge, refined jawline with slight width suggesting Indigenous American heritage influence. Expression typically neutral or subtly analytical.",
     "distinguishing_marks": [
       "Faint surgical scar along the right temple where the neural interface sleeve was initialized, approximately 3cm in length, barely visible unless lit from specific angles",
       "No visible tattoos or cultural markings — deliberately erased or never adopted",
@@ -301,17 +283,53 @@
     "posture_movement": "Stillness as a baseline — she occupies space efficiently, minimal extraneous movement. When she moves, it is precise and purposeful. Her right arm moves with slight mechanical precision when interfaced, micro-adjustments to finger positioning for data manipulation. She stands with weight distributed evenly, shoulders back but not rigid. In meetings, she sits still for extended periods, hands positioned to minimize distraction. Her gaze is often distant — processing information layers invisible to others.",
     "clothing_style": "Structured corporate minimalism — Tier 1 aesthetic of power through restraint. Typically: high-end monochromatic pieces (charcoal, black, off-white, deep navy), tailored fit emphasizing her lean frame. Expensive fabrics with subtle texture (linen blends, technical weaves). No logos, no visible branding beyond discrete designer tags. Her right arm's neural sleeve is left fully visible — no attempt to conceal it beneath jacket cuffs, suggesting it is integrated into her professional presentation rather than hidden. Footwear is functional and precise (minimal heels, professional flats, always immaculate). No jewelry beyond a thin watch on her left wrist with a minimalist face. Her clothing suggests someone who views dress as a communication system — her message is competence and efficiency, not status display."
   },
-  "image_prompt": "Soren Čabarkapa, 172cm lean professional woman with multifaceted Eastern European, Northern European, Central Asian, South Asian, Hispanic, and Middle Eastern ancestry, medium warm golden-toned complexion, dark brown nearly black close-cropped precision hair, deep brown eyes with faint neural interface augmentation traces. Wearing high-end monochromatic corporate wear in charcoal and black, tailored minimalist aesthetic. Full right-arm matte gunmetal neural interface sleeve visible from wrist to elbow with frosted aluminum texture. Faint surgical scar at right temple. Stillness and precision in posture, distant analytical gaze, efficient movement. Standing in sleek GLMZ corporate high-rise office with cool blue-grey lighting, floor-to-ceiling windows showing 2226 skyline, minimalist desk workspace. Cyberpunk 2200s corporate aesthetic, power through restraint, no excess. Cool LED accent lighting catching the neural sleeve's data pathways. Professional, efficient, technically augmented. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Siddharth Raghavan, 172cm tall, lean angular build, woman of blended Sub-Saharan African, South Asian, Northern European, and Indigenous American ancestry. Deep warm brown skin with golden undertones and natural luminosity. Pronounced cheekbones, defined nose bridge, refined jawline. Short dark brown hair, precision-cut and symmetrical. Deep brown eyes with subtle faint luminescent augmentation markers visible in iris. Neutral analytical expression with fine lines around eyes from screen work. Matte gunmetal neural interface sleeve on right arm from wrist to elbow with embedded haptic nodes, frosted brushed aluminum texture. Subtle 3cm surgical scar barely visible along right temple. Dressed in structured corporate minimalism — high-end tailored charcoal monochromatic clothing, technical weave fabrics, no visible logos. Professional posture, stillness and efficiency. Minimal jewelry, thin minimalist watch on left wrist. GLMZ, Great Lakes Metropolitan Zone, corporate environment, cool clinical lighting emphasizing the intersection of her multifaceted genetic heritage and technological augmentation, professional power aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 22.7,
-    "Northern European": 22.0,
-    "Hispanic/Latin American": 19.6,
-    "Central Asian": 16.1,
-    "South Asian": 13.1,
-    "Middle Eastern": 6.5
+    "Sub-Saharan African": 39.8,
+    "South Asian": 31.2,
+    "Northern European": 16.6,
+    "Indigenous American": 12.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 8
+      },
+      "East African": {
+        "Tanzanian": 16.4,
+        "Rwandan": 7.9
+      },
+      "Southern African": {
+        "Mozambican": 3.6,
+        "South African": 3.9
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 25.1
+      },
+      "Indian": {
+        "Telugu": 4.5,
+        "Kannada": 1.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 6.4,
+        "Austrian": 7.6
+      },
+      "British Isles": {
+        "Welsh": 2.6
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 12.4
+      }
+    }
+  }
 }

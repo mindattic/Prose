@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d77525ae4eff5723a86488",
   "type": "character",
-  "name": "Juno Agyemang",
+  "name": "Juno Zidane",
   "aliases": [
     "Stencil",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Cem Osei-Petrov is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Cem Osei-Petrov agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Juno Zidane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Juno Zidane agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.62,
@@ -263,7 +263,7 @@
     "Shield": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -283,31 +283,11 @@
     "The Narrows Compact",
     "Ashfield",
     "The Gradient Compact",
-    "Slagworks Industrial",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Kamala Mori-Sefa",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Quilt",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Narrows",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian / Sub-Saharan African / Central Asian blend with South Asian undertones. Dominant East Asian bone structure with deeper Sub-Saharan skin tone and broader West African facial features, tempered by Central Asian cheekbone prominence and South Asian hair texture.",
+    "heritage": "North African (43.1%), Central Asian (24.1%), Pacific Islander (23.5%), and Hispanic/Latin American (9.3%) blend. Dominant North African bone structure with Central Asian cheekbone prominence creates angular mid-face; Pacific Islander heritage contributes broader facial proportions and robust build; Hispanic/Latin American ancestry adds warm golden undertones to skin. Strong jawline characteristic of North African and Pacific Islander ancestry, with Central Asian depth in eye sockets.",
     "height_cm": 168,
     "weight_kg": 89,
     "build": "Compact and densely muscled, low center of gravity — built for impact absorption and close-quarters combat. Shoulders broad, legs thick with visible synthetic fiber cabling, minimal body fat.",
@@ -315,8 +295,8 @@
     "hair_style": "Short, functional cut, often unwashed or slicked back",
     "hair_length": "Short",
     "eye_color": "Dark brown, slight yellow undertone in low light (subcutaneous neural implant feedback)",
-    "skin_tone": "Deep warm brown — the result of East Asian undertones enriched by Sub-Saharan depth, creating rich chocolate-brown coloration with subtle golden warmth in direct light",
-    "complexion": "Weathered and scarred — face mapped with pale scar tissue from impact trauma, jaw clenched often, stubble permanent fixture due to nocturnal schedule. Crow's feet deep. Small burn scar on left cheekbone. Skin has the leathery quality of someone who sleeps during daylight and exists in artificial light. High cheekbones with slight Central Asian prominence, broader nose bridge characteristic of Sub-Saharan and South Asian heritage, creating an angular mid-face structure.",
+    "skin_tone": "Rich mahogany bronze — North African warmth (43%) deepened by Pacific Islander depth (23.5%), lifted by Hispanic/Latin American golden warmth (9.3%), with Central Asian (24.1%) coolness creating complex undertones. Subtle bronze highlights in direct light, cooler in shadows.",
+    "complexion": "Weathered and scarred — face mapped with pale scar tissue from impact trauma, jaw clenched often, stubble permanent fixture due to nocturnal schedule. Crow's feet deep. Small burn scar on left cheekbone. Skin has the leathery quality of someone who sleeps during daylight and exists in artificial light. High, prominent cheekbones from Central Asian ancestry, broad nose bridge and powerful jaw from North African and Pacific Islander heritage, creating strong angular mid-face structure.",
     "distinguishing_marks": [
       "Jagged scar running from left temple to jaw — pale and deep, clearly from blade or shrapnel",
       "Burn scar on left cheekbone, roughly 3cm diameter, tissue slightly depressed",
@@ -325,20 +305,66 @@
       "Small tattoo on inner right wrist — faded Geartown sigil in blue ink, amateur work"
     ],
     "visible_augmentations": "Both legs show synthetic muscle fiber replacement — visible chrome-gray cabling running along outer thighs and calves beneath translucent skin panels, especially when moving. Fingertips show faint metallic sheen from gecko-grip implants, subtle LED indicator lights at nail beds when activated. Toes slightly bulkier than normal from toe pad augmentations.",
-    "posture_movement": "Moves economically and quietly despite muscular build — predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descended rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
+    "posture_movement": "Moves economically and quietly despite muscular build — predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descends rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
     "clothing_style": "Tier 3-4 functional wear — dark synthetic cargo pants with reinforced seams and Φ150+ knee armor inserts, black under-armor compression shirt (heat regulation for augmentations), gray Kevlar-weave overshirt or unmarked tactical jacket. Steel-toed boots, worn and re-soled multiple times. Minimal accessories — no jewelry, simple analog watch (rejects neural time implants), concealed carry holster worn loose. Everything chosen for durability and mobility over aesthetics. Clothes smell like synthetic oil and industrial soap."
   },
-  "image_prompt": "Juno Agyemang, cyberpunk 2226, deep warm chocolate-brown skin with East Asian and Sub-Saharan African heritage visible in angular high cheekbones and broad nose structure, dark brown eyes with yellow neural implant feedback, black hair with silver temples, short functional cut. Compact muscular 168cm frame with visible chrome-gray synthetic muscle fiber cabling in legs beneath translucent skin panels, gel-grip fingertip implants with faint LED lights, surgical scarring along left knee. Pale blade scar running temple to jaw, burn scar on left cheekbone, network of white impact scars on knuckles. Dark cargo pants with knee armor, black compression shirt, gray Kevlar tactical jacket, worn steel-toed boots. Predatory posture, weight forward on balls of feet, head tilted in assessment, shoulders tense. Standing in industrial Geartown district with neon rain reflecting off chrome limbs, back to wall, exit visible, low-key moody cyberpunk lighting, synthetic oil and industrial soap aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Juno Zidane, 168cm compact muscular figure, rich mahogany bronze skin tone from North African, Central Asian, Pacific Islander, Hispanic ancestry blend. Strong angular cheekbones, broad nose bridge, powerful jaw. Dark brown eyes with neural implant yellow undertone. Black hair with silver temples, short functional cut. Weathered face mapped with scars — jagged scar temple to jaw, burn scar left cheekbone, crow's feet, nocturnal pallor. Visible chrome-gray synthetic muscle fiber cabling visible on outer thighs and calves beneath translucent skin panels. Gecko-grip implant fingertips with faint metallic sheen. Dark tactical gear — reinforced cargo pants, black compression shirt, gray Kevlar overshirt, worn steel-toed boots. Concealed carry holster, analog watch. Stands weight-forward predatory posture, slight head tilt assessing. Neon-soaked neo-noir alley at night, harsh LED lighting casting shadows across scarred face, chrome limbs gleaming. Mood: lethal calm, ready for violence. GLMZ, GLMZ --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 40.2,
-    "Sub-Saharan African": 30.5,
-    "Central Asian": 12.5,
-    "South Asian": 12.1,
-    "Hispanic/Latin American": 2.4,
-    "Southeast Asian": 2.3
+    "North African": 43.1,
+    "Central Asian": 24.1,
+    "Pacific Islander": 23.5,
+    "Hispanic/Latin American": 9.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 18
+      },
+      "Amazigh": {
+        "Berber": 1.7,
+        "Kabyle": 7.2
+      },
+      "Maghreb": {
+        "Algerian": 10.4,
+        "Tunisian": 5.8
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uyghur": 5.1,
+        "Kazakh": 2.2
+      },
+      "Iranian Central": {
+        "Tajik": 9.3
+      },
+      "Mongolic": {
+        "Buryat": 7.5
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 21.8
+      },
+      "Micronesian": {
+        "Palauan": 0.9,
+        "Marshallese": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 2.9,
+        "Salvadoran": 3.6
+      },
+      "Mexican": {
+        "Mexican": 2
+      },
+      "South American": {
+        "Colombian": 0.8
+      }
+    }
+  }
 }

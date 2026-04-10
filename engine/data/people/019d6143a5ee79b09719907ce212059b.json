@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ee79b09719907ce212059b",
   "type": "character",
-  "name": "Sol Sow",
+  "name": "Sol Migizi",
   "aliases": [
     "Helios",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and North Ave",
-  "description": "Deniz Salazar-Quansah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Salazar-Quansah agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Sol Migizi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Sol Migizi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.22,
@@ -260,7 +260,7 @@
     "Stoic": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,32 +279,15 @@
   ],
   "related_entities": [
     "The Circuit",
-    "GLMZ",
     "The Shelf",
+    "Circuit",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Bintou Halvorsen-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hadiya Karlsen-Sow",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan Diaspora mix: Primary Latin American (26.9%) and Sub-Saharan African (24.4%) heritage, with significant South Asian (21.7%), Northern European (10.9%), Eastern European (8.2%), and East Asian (7.9%) ancestry. Features reflect this complex blend — warm undertones from Latin and African heritage, subtle eye shape variation from East Asian genetics, bone structure showing Northern/Eastern European influence.",
+    "heritage": "Indigenous American (47.3%) forms the foundation with Middle Eastern (33.2%) and South Asian (11.7%) creating a striking triadic blend, with minor Northern European (4.4%) and Southeast Asian (3.4%) contributions. Features reflect this dominant mix — warm olive-bronze skin with subtle golden and amber undertones from the Indigenous and Middle Eastern ancestry, high and prominent cheekbones with slight facial width characteristic of Indigenous genetics, lean jaw with angular definition from Middle Eastern and South Asian structure. Eyes show depth and slight epicanthic shape variation from Southeast Asian genetics. Bone structure speaks to the confluence of multiple continents — strong and economical, built for endurance rather than bulk.",
     "height_cm": 188,
     "weight_kg": 79,
     "build": "Lean and angular, muscle defined by function rather than bulk. Shoulders broad from years of weapon handling. Core tight. Minimal body fat — the build of someone who treats their body as maintenance equipment.",
@@ -312,8 +295,8 @@
     "hair_style": "Pulled back in a tight, practical braid. No aesthetic consideration — purely utilitarian.",
     "hair_length": "Medium",
     "eye_color": "Chrome iris rings over dark brown — augmented for thermal and low-light overlay",
-    "skin_tone": "Rich warm bronze with subtle golden undertones — the result of blended Latin American, Sub-Saharan African, and South Asian ancestry. Weathered from nocturnal living and sun-scarred hands. Deeper in complexion than pure olive, with warmth that suggests multiple continental origins.",
-    "complexion": "Strong, defined bone structure reflecting diverse ancestry — high, prominent cheekbones with slight width across the face from East Asian genetics, lean jaw with subtle South Asian angularity. Skin texture marked by years of environmental exposure. Stubble perpetually two days old. Fine lines around the eyes from years of squinting at sights and scopes. No grooming vanity — functional cleanliness only.",
+    "skin_tone": "Warm olive-bronze with golden and amber undertones — the result of dominant Indigenous American (47.3%) and Middle Eastern (33.2%) ancestry, with South Asian (11.7%) warmth creating depth and subtle red undertones. Weathered from nocturnal living and sun-scarred hands. Deeper in complexion with a subtle warm glow that suggests equatorial and continental origins.",
+    "complexion": "Strong, defined bone structure reflecting Indigenous American and Middle Eastern ancestry — high, very prominent cheekbones with slight width across the face characteristic of Indigenous genetics, lean angular jaw refined by Middle Eastern structure with South Asian angularity. Skin texture marked by years of environmental exposure. Stubble perpetually two days old. Fine lines around the eyes from years of squinting at sights and scopes. No grooming vanity — functional cleanliness only.",
     "visible_augmentations": "Right forearm shows visible smartgun link interface — matte chrome housing with faint LED indicators beneath the skin surface. Chrome iris rings visible in both eyes, catching light with slight metallic sheen. Subdermal interface ports on inner wrists, barely raised beneath scarred skin.",
     "distinguishing_marks": [
       "Thin scar along left temple, barely visible, running from brow to hairline — old blade work",
@@ -323,17 +306,68 @@
     "posture_movement": "Stands economically, weight balanced on balls of feet. Moves with precise, minimal motion — every gesture calculated. Hands always visible and loose. Head movements deliberate. Default expression neutral bordering on cold. When focused, entire posture tightens to predatory readiness.",
     "clothing_style": "Tier 3-4 street samurai aesthetic. Black reinforced synth-weave jacket with internal weapon clips and modified pockets. Fitted tactical pants with cargo reinforcement. Steel-toed boots broken in and re-soled twice. No logos or crew insignia — anonymous by design. Worn leather gloves (fingerless right glove to access smartgun interface). Simple titanium-alloy watch, old model, reliable. Everything maintained obsessively."
   },
-  "image_prompt": "Sol Sow, 188cm tall lean street samurai with rich warm bronze skin reflecting mixed Latin American, African, and South Asian heritage, prominent defined cheekbones, sharp jawline. Black hair pulled back in tight practical braid with silver threading at temples. Dark brown eyes with chrome iris augmentation rings catching metallic light. Visible smartgun interface on right forearm in matte chrome, subdermal wrist ports. Thin temple scar, electrical burn mark on inner forearm. Black reinforced synth-weave tactical jacket, fitted cargo pants, steel-toed boots, worn leather gloves with fingerless right. Neutral cold expression, economical posture, weight balanced on balls of feet. Cyberpunk 2226 neon-soaked interior, low-light tactical setting, cool blue and amber lighting casting shadows across chrome augmentations, moody predatory atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Sol Migizi, 188cm tall street samurai in 2226 GLMZ, warm olive-bronze skin with golden-amber undertones reflecting Indigenous American and Middle Eastern heritage, high prominent cheekbones with lean angular jaw, dark eyes with chrome iris rings showing thermal overlay augmentation, black hair braided back with silver at temples, two-day stubble, thin scar along left temple, burn scar on inner forearm, circuit-board tattoo on right collarbone. Wearing matte black reinforced synth-weave tactical jacket with visible smartgun interface on right forearm, fitted tactical pants, steel-toed boots, fingerless leather gloves on right hand. Stands economically balanced on balls of feet, hands loose and visible, default expression cold and neutral. Nocturnal near-future megacity setting with neon rim lighting casting blue-purple shadows, rain-slicked street reflected in chrome surfaces, predatory readiness in posture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 26.9,
-    "Sub-Saharan African": 24.4,
-    "South Asian": 21.7,
-    "Northern European": 10.9,
-    "Eastern European": 8.2,
-    "East Asian": 7.9
+    "Indigenous American": 47.3,
+    "Middle Eastern": 33.2,
+    "South Asian": 11.7,
+    "Northern European": 4.4,
+    "Southeast Asian": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 23.3,
+        "Quechua": 24
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 18,
+        "Emirati": 15.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.6
+      },
+      "Nepali": {
+        "Nepali": 0.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 2.5,
+        "Sindhi": 3.7
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 0.6,
+        "Swedish": 0.6
+      },
+      "British Isles": {
+        "English": 1.1,
+        "Irish": 0.9
+      },
+      "Germanic": {
+        "German": 0.7,
+        "Austrian": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 0.8
+      },
+      "Filipino": {
+        "Tagalog": 1.2,
+        "Cebuano": 0.6
+      },
+      "Thai": {
+        "Thai": 0.8
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7167e97b8a91a9cb2b54ee6",
   "type": "character",
-  "name": "Sol Mbekele-Erikstad",
+  "name": "Sol Mbekele-Thakur",
   "aliases": [
     "The Crowbar",
     "CZ-3",
@@ -14,7 +14,7 @@
   "age": 28,
   "status": "active",
   "location": "Milwaukee Core — operates from a rented server closet in a co-working space, surrounded by people who think he does IT freelancing",
-  "description": "Vex Halloran is the human element in Channel Zero's machine. Where Specter plans and Sine processes, Vex attacks. He is the crew's aggressive intrusion specialist — the net runner who goes through defenses rather than around them when subtlety fails or time runs short. His approach to network security is best described as 'persistent application of force to load-bearing structures,' which is inelegant, loud, and devastatingly effective when paired with Specter's intelligence and Sine's processing power.\n\nHe grew up in Milwaukee Core's lower tiers — not Shelf-poor, but close enough to smell it. Self-taught in everything: network architecture, intrusion methods, encryption breaking. He learned by breaking into things — first his school's network, then local business systems, then increasingly serious targets. By twenty he was running solo data-theft operations that were technically impressive and financially mediocre because he had no business sense and no network to sell through. Specter recruited him at twenty-four through a message that appeared in the middle of a system he was breaching: 'You're good. You're not quiet. I can fix one of those.'\n\nVex is wiry, restless, with the pallor of someone who lives in artificial light and the nervous energy of someone whose mind runs faster than his circumstances allow. He talks with his hands, fidgets with everything, and maintains a workspace that looks like a hardware explosion. He is the youngest member of Channel Zero, the loudest, and the one most frustrated by the remote model — he wants to meet Specter the way you want to meet a mentor who changed your life.",
+  "description": "Sol Mbekele-Thakur is the human element in Channel Zero's machine. Where Specter plans and Sine processes, Vex attacks. He is the crew's aggressive intrusion specialist — the net runner who goes through defenses rather than around them when subtlety fails or time runs short. His approach to network security is best described as 'persistent application of force to load-bearing structures,' which is inelegant, loud, and devastatingly effective when paired with Specter's intelligence and Sine's processing power.\n\nHe grew up in Milwaukee Core's lower tiers — not Shelf-poor, but close enough to smell it. Self-taught in everything: network architecture, intrusion methods, encryption breaking. He learned by breaking into things — first his school's network, then local business systems, then increasingly serious targets. By twenty he was running solo data-theft operations that were technically impressive and financially mediocre because he had no business sense and no network to sell through. Specter recruited him at twenty-four through a message that appeared in the middle of a system he was breaching: 'You're good. You're not quiet. I can fix one of those.'\n\nVex is wiry, restless, with the pallor of someone who lives in artificial light and the nervous energy of someone whose mind runs faster than his circumstances allow. He talks with his hands, fidgets with everything, and maintains a workspace that looks like a hardware explosion. He is the youngest member of Channel Zero, the loudest, and the one most frustrated by the remote model — he wants to meet Specter the way you want to meet a mentor who changed your life.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -172,7 +172,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Milwaukee Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,43 +191,13 @@
   "related_entities": [
     "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
     "Lazarus LX-2 'Lab Rat'",
+    "Neural Palate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pure Hand",
-    "The Milwaukee Core",
-    "Alper Castillo-Ababio",
-    "Altan Tanaka-Frimpong",
-    "Aphelion",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Lazarus IDP-1 'Teeth'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Neuromorphic Pressure Cestus",
-    "Noir Dining",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Pullman Works",
-    "Slagworks Industrial",
-    "Specter",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "The Dead Channel",
-    "The Human Baseline Alliance",
-    "Transit Mind",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack PD-8 'Whistle'",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
-    "Zurab Ivanov-Appiah"
+    "The Pure Hand"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed ancestry reflecting Sub-Saharan African, Northern European, Indigenous American, East Asian, Pacific Islander, and Southeast Asian genetic heritage — resulting in warm-toned skin with complex undertones, angular facial structure with blended features, and dark hair with natural depth",
+    "heritage": "Mixed ancestry of South Asian (38.2%), Sub-Saharan African (34.6%), and Hispanic/Latin American (27.2%) heritage — resulting in warm medium-brown skin with complex golden undertones from South Asian and Latin American ancestry layered with deep rich tones from Sub-Saharan African heritage, angular facial structure with prominent cheekbones and defined jawline blending these three continental influences, and dark brown hair with natural depth",
     "height_cm": 176,
     "weight_kg": 68,
     "build": "Wiry and tense — lean muscle without bulk, the kind of frame that never relaxes. Shoulders slightly hunched from years hunched over keyboards. Visible tremor in hands at rest.",
@@ -235,8 +205,8 @@
     "hair_style": "Shoulder-length, perpetually disheveled, often tied back with whatever is nearby — synth-fiber cord, data cable, elastic band",
     "hair_length": "Medium",
     "eye_color": "Deep brown with faint cyan undertones from optical enhancement — subtle AR projection visible as shimmer across iris during concentration",
-    "skin_tone": "Warm medium-brown with slight olive undertones — the particular depth of someone who carries Sub-Saharan and Indigenous American ancestry mixed with Northern European genetics, dulled slightly from minimal sunlight exposure",
-    "complexion": "Angular face with blended facial structure reflecting mixed ancestry, sharp cheekbones, prominent jawline with warm undertones. Dark circles under eyes that makeup cannot hide. A few days of stubble is his baseline state. Skin condition is poor — dehydrated, prone to breakouts from irregular sleep and stress. One small scar along left jawline from a childhood hardware accident.",
+    "skin_tone": "Warm medium-brown with golden and deep undertones — the particular richness of someone who carries South Asian, Sub-Saharan African, and Hispanic/Latin American ancestry, dulled slightly from minimal sunlight exposure",
+    "complexion": "Angular face with blended facial structure reflecting South Asian prominence in cheekbones and jawline, Sub-Saharan African fullness in facial width and lip structure, Latin American warmth in overall tone. Sharp cheekbones with golden-brown undertones, prominent defined jawline. Dark circles under eyes that makeup cannot hide. A few days of stubble is his baseline state. Skin condition is poor — dehydrated, prone to breakouts from irregular sleep and stress. One small scar along left jawline from a childhood hardware accident.",
     "distinguishing_marks": [
       "Data jack port visible at the base of his skull, right side, roughly 3cm by 1.5cm — chrome-edged, often partially covered by hair but visible when he pulls it back",
       "Thin white scar running down the inside of his left forearm from wrist to elbow — from an early augmentation procedure that went slightly wrong",
@@ -247,17 +217,44 @@
     "posture_movement": "Perpetually in motion even when sitting — fingers drumming, leg bouncing, head tilting. Walks with controlled tension, like he's always one keystroke away from panic. Hand movements are precise and rapid during technical work, but tremorous and jerky when relaxed. Makes intense eye contact when excited, avoids it when uncomfortable. Speech pattern matches physical energy — fast, gestural, interrupts himself.",
     "clothing_style": "Tier 3-4 functional: dark hoodie or loose-fitting tech-branded shirt (faded logos from defunct hardware companies), frayed at cuffs. Black or dark gray utility pants with too many pockets, all filled with tools, cables, and forgotten food. Worn gel-memory shoes (left heel scuffed). Layers — adds/removes jackets based on server closet temperature. No jewelry except occasionally a brass knuckle-duster he fidgets with. Personal aesthetic is 'perpetually between laundry days.' Occasionally wears a braided leather bracelet (gift from early life, sentimental, never discussed)."
   },
-  "image_prompt": "Sol Mbekele-Erikstad, cyberpunk 2226, lean wiry tech operative with warm medium-brown skin and deep brown eyes enhanced with cyan AR overlay, shoulder-length dark brown disheveled hair often tied with data cables, sharp angular features reflecting mixed Sub-Saharan African and Northern European ancestry. Visible chrome data jack at base of skull, tremoring hands with soldering scars. Wearing faded dark hoodie and black utility pants packed with tools, layers shifting. Tense posture suggesting constant edge, fingers drumming with micro-stutters from reflex boosters. LED biometric display faintly glowing on left forearm. Sitting in dim server room lit by cold blues and greens, hands poised over keyboard mid-work, intense focused expression, a few days stubble, dark circles under eyes. Brass knuckle-duster visible, leather bracelet on wrist. Perpetually between laundry days aesthetic. Cyberpunk noir lighting, tension and exhaustion in every movement. --ar 2:3 --v 6",
+  "image_prompt": "Sol Mbekele-Thakur, GLMZ, mixed South Asian Sub-Saharan African Hispanic heritage, warm medium-brown skin with golden and deep undertones, angular face with sharp cheekbones and prominent jawline, dark circles under deep brown eyes with subtle cyan AR shimmer, thin scar left jawline, stubble baseline, shoulder-length dark brown disheveled hair tied back with synth cord, 176cm wiry lean build with hunched shoulders, visible chrome data jack at base of skull right side, thin white scar inside left forearm, burn marks on fingertips, tremor in resting hands, intense nervous energy, dark hoodie with faded tech logos frayed at cuffs, black utility pants overstuffed with tools and cables, worn gel-memory shoes left heel scuffed, brass knuckle-duster fidget, braided leather bracelet, sitting hunched over terminal in dim server closet with blue-green LED glow, fingers drumming rapidly on keyboard, concentrated expression, neo-noir urban aesthetic, moody atmospheric lighting, digital artifacts --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 27.8,
-    "Indigenous American": 26.3,
-    "Sub-Saharan African": 23.5,
-    "East Asian": 11.3,
-    "Pacific Islander": 6.0,
-    "Southeast Asian": 5.1
+    "South Asian": 38.2,
+    "Sub-Saharan African": 34.6,
+    "Hispanic/Latin American": 27.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 29.6,
+        "Punjabi Pakistani": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 19.2
+      },
+      "West African": {
+        "Senegalese": 8
+      },
+      "East African": {
+        "Somali": 2.3,
+        "Kenyan": 5.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 5.3,
+        "Colombian": 12.4
+      },
+      "Central American": {
+        "Honduran": 6.9,
+        "Costa Rican": 2.6
+      }
+    }
+  }
 }

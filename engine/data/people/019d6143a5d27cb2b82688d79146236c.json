@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d27cb2b82688d79146236c",
   "type": "character",
-  "name": "Sterling Calvillo",
+  "name": "Sterling Owusu",
   "aliases": [
     "Cas",
     "the Ghost Shift"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Lives in Lockhaven South; works the overnight cleaning circuit through Meridian Core towers, near State and Madison",
-  "description": "Caspian is lean and long-limbed, with the particular stillness of someone who has learned to move through spaces without being seen. Their skin is a warm medium brown with a subtle bioluminescent stripe along each collarbone — a geneware mod they got cheap from a Geartown parlor, and which they keep dialed down to nearly nothing most of the time, a faint blue-green pulse visible only in total darkness. Their hair is kept very short on the sides, left soft and natural on top, and they have a habit of covering it with a knit cap that's been mended so many times the original color is unknowable. They are not quiet because they are timid — they are quiet because they were trained, very young, to be invisible in places where being noticed was dangerous.\n\nThey clean the towers of Meridian Core from 2200 to 0600 — the lobbies and conference rooms and executive bathrooms of corponation affiliate offices that are empty except for security drones and the occasional insomniac analyst. They know these buildings the way a doctor knows a body — every duct access point, every camera blind spot, every floor where the ELF spirits are strong (they feel it as a low hum in their teeth and they leave small folded-paper offerings behind the baseboards). They have no particular agenda. They are just paying rent. But they have accidentally become, by virtue of occupying the ghost hours of powerful spaces, one of the most accidentally well-informed people in the city.",
+  "description": "Sterling Owusu is lean and long-limbed, with the particular stillness of someone who has learned to move through spaces without being seen. Their skin is a warm medium brown with a subtle bioluminescent stripe along each collarbone — a geneware mod they got cheap from a Geartown parlor, and which they keep dialed down to nearly nothing most of the time, a faint blue-green pulse visible only in total darkness. Their hair is kept very short on the sides, left soft and natural on top, and they have a habit of covering it with a knit cap that's been mended so many times the original color is unknowable. They are not quiet because they are timid — they are quiet because they were trained, very young, to be invisible in places where being noticed was dangerous.\n\nThey clean the towers of Meridian Core from 2200 to 0600 — the lobbies and conference rooms and executive bathrooms of corponation affiliate offices that are empty except for security drones and the occasional insomniac analyst. They know these buildings the way a doctor knows a body — every duct access point, every camera blind spot, every floor where the ELF spirits are strong (they feel it as a low hum in their teeth and they leave small folded-paper offerings behind the baseboards). They have no particular agenda. They are just paying rent. But they have accidentally become, by virtue of occupying the ghost hours of powerful spaces, one of the most accidentally well-informed people in the city.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -163,7 +163,7 @@
     "Provider": 0.5
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lives in Lockhaven South; works the overnight cleaning circuit through Meridian Core towers",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -187,22 +187,14 @@
     "Clearpath",
     "Geartown",
     "Tessera Corponation",
+    "Circuit",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Lazarus IDP-1 'Teeth'",
-    "Slagworks Industrial",
-    "Alper Castillo-Ababio",
-    "Breck Tannen",
-    "Cédric Nakwezi-Halvorsen",
-    "Ferrogate Transit",
-    "MERIDIAN",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tessera TKR-10 'Executor'",
-    "Volkov-Saito Precision VSP-11 'Stiletto'"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Mixed ancestry: primarily Hispanic/Latin American and East Asian with significant South Asian, Northern European, North African, and Sub-Saharan African heritage—a genetic diaspora blend reflecting the globalized mixing of the 22nd century",
+    "heritage": "Complex diaspora blend: Sub-Saharan African (42.6%) provides warm depth and bone structure; South Asian (30.9%) contributes refined facial geometry and undertone richness; Hispanic/Latin American (18.2%) adds warmth and subtle feature blending; North African (8.3%) enhances golden undertones and cheekbone definition. A genetic tapestry of the Ubiquitous Diaspora—thoroughly mixed, authentically global.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and long-limbed with efficient, minimal musculature — the body of someone who moves through space conservatively, built for endurance rather than power",
@@ -210,8 +202,8 @@
     "hair_style": "Cropped close on sides, soft and full on top, often covered by a heavily mended knit cap of indeterminate original color",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm medium-tan with subtle golden undertones—a complex blend reflecting East and South Asian heritage mixed with Hispanic and North African ancestry, creating a unified warm bronze-brown",
-    "complexion": "Clear, well-maintained despite irregular sleep schedule; angular face with high, defined cheekbones and a measured, composed expression suggesting East Asian and South Asian bone structure refined by Latin American and Northern European genetic input—someone who has trained themselves to be unmemorable",
+    "skin_tone": "Warm bronze-mahogany with golden undertones—a unified complexion where Sub-Saharan warmth, South Asian depth, and North African richness merge into a cohesive, sun-touched tone that reads neither one ancestry nor another, but all at once",
+    "complexion": "Clear, well-maintained despite irregular sleep schedule; angular face with high, prominent cheekbones shaped by Sub-Saharan and South Asian bone architecture, straight nose with subtle width reflecting the full ancestry blend, measured and composed expression—someone trained to be unmemorable",
     "distinguishing_marks": [
       "Bioluminescent geneware stripes running along both collarbones, faint blue-green when activated, typically dimmed to near-invisibility during daylight and public hours",
       "Small cluster of faded scars along left forearm (location and origin unremarkable — old enough to be bleached nearly white)"
@@ -220,17 +212,42 @@
     "posture_movement": "Moves with deliberate quietness and spatial awareness — fluid, economical gestures that minimize unnecessary motion. Stands with slight forward lean, weight distributed to the balls of their feet, ready to shift direction. Eyes habitually track exits, camera angles, and ambient light sources. Stillness is their default state.",
     "clothing_style": "Tier 3-4 utilitarian: work-issued gray maintenance coveralls (Clearpath logo on chest, worn smooth from laundering), gray or black merino base layer underneath, scuffed synthetic-leather work boots with reinforced toe caps. Off-shift: the same mended knit cap, fitted dark jeans, oversized layered tees, a long charcoal hoodie with a broken zipper they've never bothered to replace. No logos, no aspirational branding. Everything chosen for durability and the ability to move without sound."
   },
-  "image_prompt": "Sterling Calvillo, 178cm lean figure with warm golden-bronze skin tone reflecting mixed East Asian, Hispanic, South Asian, and North African heritage, angular cheekbones, dark brown eyes. Dark cropped hair covered by mended knit cap. Wearing gray Clearpath maintenance coveralls over dark base layer, scuffed work boots. Faded bioluminescent blue-green geneware stripes along collarbones (dimmed). Faint white scars on left forearm. Posture: slight forward lean, weight on balls of feet, radiating quiet spatial awareness. Standing in neon-lit Great Lakes Metropolitan maintenance corridor, cool blue industrial lighting casting sharp shadows. Composed, unmemorable expression. Eyes tracking exits. Cyberpunk 2226, gritty utilitarian aesthetic, noir atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Owusu, lean 178cm figure in worn gray Clearpath maintenance coveralls, bronze-mahogany skin with golden undertones reflecting Sub-Saharan, South Asian, North African, and Latin American heritage blend, dark brown eyes, angular high cheekbones, cropped dark brown hair partially hidden under mended knit cap, faint bioluminescent blue-green collarbone stripes dimmed in daylight, scuffed work boots, posture of someone ready to move, eyes tracking exits and ambient light, GLMZ Great Lakes Metropolitan Zone maintenance worker, industrial fluorescent overhead lighting with deep shadows, gritty urban infrastructure backdrop, composed and unmemorable expression, economical and silent presence, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 28.2,
-    "East Asian": 27.9,
-    "South Asian": 18.4,
-    "Northern European": 12.8,
-    "North African": 9.9,
-    "Sub-Saharan African": 2.8
+    "Sub-Saharan African": 42.6,
+    "South Asian": 30.9,
+    "Hispanic/Latin American": 18.2,
+    "North African": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 6.2,
+        "Angolan": 2.6
+      },
+      "Southern African": {
+        "South African": 33.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 30.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 18.2
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 6.9,
+        "Tuareg": 1.4
+      }
+    }
+  }
 }

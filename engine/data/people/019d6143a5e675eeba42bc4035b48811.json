@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e675eeba42bc4035b48811",
   "type": "character",
-  "name": "Amir Khoury-Árnason-Bautista",
+  "name": "Briar Ingebrigtsen-Matsumoto-Bautista",
   "aliases": [
     "Switchback Three",
     "Kid",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "The Shelf — crashes in Jinx's rooftop squat or on couches throughout the co-op network, near Western and Division",
-  "description": "Dash Okonkwo is nineteen years old and has not yet learned that he can die. This is simultaneously his greatest asset and the thing that will most likely kill him. He is the newest member of Switchback, recruited eight months ago when Jinx caught him free-climbing a surveillance tower on a dare and realized the kid had natural talent that was going to get him killed without direction.\n\nHe grew up in the deepest part of the Shelf — the blocks where even the co-op infrastructure breaks down and the only governance is mutual aid and mutual threat. His parents are gone — father to debt labor, mother to a pharmaceutical dependency that functions as slow erasure. He has been functionally on his own since sixteen and has survived by being faster, bolder, and luckier than his circumstances should allow. Switchback gave him the first structure he's had since childhood, and he resents and craves it in equal measure.\n\nDash is lean, dark-skinned, with the coiled energy of someone who converts anxiety into motion. He has a gap-toothed grin that makes him look younger than nineteen and a scar across his left eyebrow from a fall he insists was intentional. His augmentations are minimal — he can't afford better — and he compensates with raw athleticism and a complete absence of self-preservation instinct.",
+  "description": "Briar Ingebrigtsen-Matsumoto-Bautista is nineteen years old and has not yet learned that he can die. This is simultaneously his greatest asset and the thing that will most likely kill him. He is the newest member of Switchback, recruited eight months ago when Jinx caught him free-climbing a surveillance tower on a dare and realized the kid had natural talent that was going to get him killed without direction.\n\nHe grew up in the deepest part of the Shelf — the blocks where even the co-op infrastructure breaks down and the only governance is mutual aid and mutual threat. His parents are gone — father to debt labor, mother to a pharmaceutical dependency that functions as slow erasure. He has been functionally on his own since sixteen and has survived by being faster, bolder, and luckier than his circumstances should allow. Switchback gave him the first structure he's had since childhood, and he resents and craves it in equal measure.\n\nDash is lean, dark-skinned, with the coiled energy of someone who converts anxiety into motion. He has a gap-toothed grin that makes him look younger than nineteen and a scar across his left eyebrow from a fall he insists was intentional. His augmentations are minimal — he can't afford better — and he compensates with raw athleticism and a complete absence of self-preservation instinct.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Safety First": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -190,47 +190,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Switchback",
     "The Shelf",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Elegy",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
     "Arcturus KS-7 'Nursery'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Davi Ousseini-Brătianu",
-    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
-    "Devraj Solano-Yildirim",
-    "Ihaia Nystrom-Keita",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus IDP-1 'Teeth'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Ringo DV-4 'Courier'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Talon Systems Perch TS-5 'Raptor'",
-    "Tapetum Lucidum Integration",
-    "The Burden Clause",
-    "The Glass Garden",
-    "The Heritage Vault",
-    "The I-75 Spine",
-    "The Perch",
-    "The Pure Hand",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with significant Hispanic/Latin American, East Asian, and Indigenous American ancestry. The genetic blend creates a striking appearance: warm olive to light brown skin tone with subtle golden undertones from the Middle Eastern and East Asian contributions. Facial structure reflects the mix — defined cheekbones and strong jaw from Middle Eastern heritage, with slightly broader facial proportions influenced by East Asian and Indigenous American ancestry.",
+    "heritage": "Complex diaspora blend: dominant East Asian (37%) foundation with substantial Hispanic/Latin American (20.4%), South Asian (18.8%), and Eastern European (16.2%) contributions, plus Northern European (6%) and Sub-Saharan African (1.6%) traces. This creates a striking polyphonic appearance — East Asian bone structure softened by South Asian warmth, Latin American skin depth, and Eastern European facial angularity. The genetic mosaic produces someone difficult to pin to a single origin, reflecting the 2226 Ubiquitous Diaspora reality.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wiry with visible musculature concentrated in shoulders, forearms, and legs — the build of someone who climbs constantly. Minimal body fat. Restless, coiled energy visible even at rest.",
@@ -238,8 +207,8 @@
     "hair_style": "Short, close-cropped fade with slight texture; keeps it simple and low-maintenance",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm olive-brown complexion with golden undertones — the result of blended Middle Eastern, East Asian, and Latin American heritage. Medium-depth skin tone with subtle warmth rather than deep richness, creating an approachable contrast with his intense demeanor.",
-    "complexion": "Clear skin with the weathered undertone of someone who spends time outdoors and doesn't prioritize skincare. Sharp facial features with defined cheekbones and a strong jaw reflecting his ancestry blend. Slight acne scarring on jawline. Gap between upper front teeth — gives him a disarmingly young, almost childlike grin despite the rest of his hardened appearance.",
+    "skin_tone": "Medium warm tan with golden-amber undertones from the blend of East Asian, South Asian, and Hispanic/Latin American ancestry. The warmth reads as approachable rather than cool, with enough depth to suggest the Sub-Saharan African and South Asian percentages without appearing dark. Skin has an active, sun-exposed quality.",
+    "complexion": "Clear skin with the weathered undertone of someone who spends time outdoors and doesn't prioritize skincare. Facial structure reflects the ancestral blend — moderately defined cheekbones with gentle breadth to the face from East Asian and South Asian components, strong angular jaw with Eastern European influence. Almond-shaped eyes characteristic of East Asian ancestry. Slight acne scarring on jawline. Gap between upper front teeth — gives an disarmingly young, almost childlike grin despite the hardened appearance.",
     "distinguishing_marks": [
       "Thin white scar running diagonally across left eyebrow to upper eyelid, approximately 3cm long — claimed to be from an intentional fall but likely from a climbing accident or street altercation.",
       "Several small, pale scars on knuckles and backs of hands — consistent with street fighting or industrial climbing.",
@@ -249,15 +218,82 @@
     "posture_movement": "Moves with constant, barely-contained kinetic energy — shifts weight frequently, taps fingers, bounces slightly on his heels when standing still. Climbs with absolute confidence and fluid grace; his body reads the vertical world better than level ground. Walks fast. His default expression hovers between a gap-toothed grin and focused intensity, depending on whether he's thinking or doing.",
     "clothing_style": "Tier 4-5 utilitarian street wear — worn synth-leather jacket with multiple pockets and reinforced shoulders (faded black, scuffed at the elbows). Cargo pants in grey with grease stains and burn marks. Lightweight climbing shoes worn to the heel. Faded t-shirt with a corporate logo he clearly doesn't care about. No jewelry. Clothes are functional, slightly undersized, and show signs of hard use and poor washing. Wears a worn canvas courier satchel cross-body at all times."
   },
-  "image_prompt": "A 172cm lean, wiry courier in 2226 GLMZ cyberpunk setting. Warm olive-brown skin with golden undertones reflecting Middle Eastern, East Asian, Hispanic, and Indigenous heritage. Short black close-cropped fade, dark natural eyes with intensity. Gap-toothed grin, defined cheekbones, diagonal scar crossing left eyebrow. Visible subdermal metallic grip-enhancers glinting on fingertips. Scuffed black synth-leather jacket, grey cargo pants with grease stains, worn climbing shoes, faded corporate t-shirt. Worn canvas courier satchel. Kinetic, restless posture suggesting coiled energy. Neon-lit urban vertical environment, night lighting, motion blur, gritty street aesthetic. Climbing or parkour stance on building facade. Cyberpunk atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ street courier, East Asian-dominant diaspora features with South Asian warmth and Latin warmth, medium tan skin with golden undertones, dark brown eyes, short black close-cropped hair. Lean wiry build, 172cm tall, coiled kinetic energy. Facial structure blends almond eyes with broad cheekbones and angular Eastern European jaw, gap-toothed grin, thin scar crossing left eyebrow. Faint metallic subdermal grip-enhancers glinting on fingertips. Wearing scuffed black synth-leather jacket with reinforced shoulders, grey cargo pants with grease stains, climbing shoes. Canvas courier satchel worn cross-body. Standing in aggressive climbing stance on vertical metal infrastructure, neon rain reflection on wet street below, mood of focused intensity and barely-contained movement, neo-noir urban sprawl with holographic advertisements in background, cool blue and warm amber neon lighting, gritty photorealistic style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 61.0,
-    "Hispanic/Latin American": 20.7,
-    "East Asian": 13.3,
-    "Indigenous American": 5.0
+    "East Asian": 37,
+    "Hispanic/Latin American": 20.4,
+    "South Asian": 18.8,
+    "Eastern European": 16.2,
+    "Northern European": 6,
+    "Sub-Saharan African": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.9
+      },
+      "Chinese": {
+        "Hakka": 22.8,
+        "Cantonese": 6.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 16.9
+      },
+      "Mexican": {
+        "Mexican": 3.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.8,
+        "Sindhi": 1.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 4,
+        "Sorbian": 2.5
+      },
+      "Slavic South": {
+        "Serbian": 1.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 8.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 3.6
+      },
+      "Germanic": {
+        "Austrian": 0.6
+      },
+      "British Isles": {
+        "Scottish": 1.1,
+        "Irish": 0.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 0.1,
+        "Senegalese": 0.3
+      },
+      "Southern African": {
+        "Botswanan": 0.7,
+        "Zimbabwean": 0.5
+      }
+    }
+  }
 }

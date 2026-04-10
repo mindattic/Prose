@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62d70dab4d9289a7e236b2f",
   "type": "character",
-  "name": "Valentina Quiñones",
+  "name": "Katarzyna Ionescu",
   "aliases": [
     "Breach",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave and Roosevelt",
-  "description": "Ilhan Kozlov-Asamoah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 64, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a surveillance specialist out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIlhan Kozlov-Asamoah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Katarzyna Ionescu is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 64, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a surveillance specialist out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKatarzyna Ionescu has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -258,7 +258,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -271,36 +271,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
+    "Harbor Fish Shack",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Clover",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Free Assembly",
-    "Glenville Sound",
-    "Makena Johanssen-Diallo",
-    "Meridian Core",
-    "Nika Svensson-Kone",
-    "Old Harbor",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Glass Garden",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Tiare Nishi-Anim",
-    "Timur Osei-Bjelke",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (78.2%) with South Asian (21.1%) and Sub-Saharan African (0.7%) ancestry. The combination creates warm medium brown skin with subtle golden undertones from the South Asian heritage, grounded by the Latin American base. Facial structure reflects the Latin American majority with some South Asian refinement in cheekbone prominence.",
+    "heritage": "Eastern European (44.0%) with East Asian (33.5%) and Sub-Saharan African (22.5%) ancestry. The combination creates a complex warm-to-deep complexion with layered undertones—cool undertones from Eastern European heritage balanced against warmer golden notes from East Asian ancestry, grounded and deepened by Sub-Saharan African heritage. Facial structure reflects the convergence: higher cheekbones from East Asian ancestry, broader face from Eastern European heritage, with fuller lip definition from the African component.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Stocky and heavily muscled through the shoulders and chest, thick through the core with the weathered density of someone who has spent decades in physical labor and combat. His frame reads as compact power rather than bulk.",
@@ -308,8 +288,8 @@
     "hair_style": "Cropped close to the scalp, military-neat, showing the shape of his skull",
     "hair_length": "Short",
     "eye_color": "Left eye: dark brown, natural. Right eye: cybernetic with amber-tinted optical lens and visible recording aperture.",
-    "skin_tone": "Warm medium brown with golden undertones from blended Latin American and South Asian heritage, weathered by sun exposure and chemical exposure",
-    "complexion": "Broad-faced with a prominent nose and heavy brow ridge showing Latin American and South Asian features. Deep laugh lines around the eyes and mouth. Visible scarring along the left jawline — pale, old tissue. The right side of his face shows surgical scarring around the eye socket where the replacement was installed. Sparse stubble, graying.",
+    "skin_tone": "Deep warm brown with complex undertones—golden notes from East Asian heritage layered over cooler Slavic undertones, deepened and enriched by Sub-Saharan African ancestry. Weathered by sun exposure and chemical contact.",
+    "complexion": "Angular face with prominent cheekbones reflecting East Asian ancestry, broad through the jaw from Eastern European heritage, with fuller lips from African ancestry. Heavy brow ridge. Deep laugh lines around the eyes and mouth. Visible scarring along the left jawline—pale, old tissue. The right side of his face shows surgical scarring around the eye socket where the replacement was installed. Sparse stubble, graying.",
     "distinguishing_marks": [
       "Thin pale scar running from left temple down to the angle of the jaw — approximately 12cm, old injury",
       "Chemical burn scarring across the knuckles of both hands — white and puckered, scattered across the dorsal surfaces",
@@ -321,14 +301,44 @@
     "posture_movement": "Moves with the economy of someone who has learned that wasted motion is wasted energy. Shoulders slightly forward, weight on the balls of his feet even when standing still — ready posture. His left hand rests naturally; his right hand often moves to check equipment or weapons. Direct eye contact (prioritizing his organic eye), minimal facial expression until he smiles — then the laugh lines deepen and his entire face changes.",
     "clothing_style": "Tier 4 working runner aesthetic. Graphite-gray reinforced cargo jacket with visible breakaway panels for gear access. Under-armor thermal compression shirt. Worn dark denim with reinforced thigh pockets for tools and sensors. Steel-toed boots, scuffed and re-heeled multiple times. A paracord bracelet on his left wrist and a worn analog chronograph watch on his right — no smart-devices visible on his person. Everything functional, nothing decorative. Minimal branding; gear chosen for durability over status."
   },
-  "image_prompt": "Valentina Quiñones, 178cm tall stocky muscular runner, warm medium brown skin with golden undertones, steel-gray cropped military hair. Weathered face with deep laugh lines, prominent nose, heavy brow. Left eye dark brown natural, right eye cybernetic amber recording lens with visible chrome orbital assembly. Pale scar running temple to jawline, surgical scarring around right eye socket, graying stubble. Chrome nasal augmentation visible as metallic line at septum. Chemical burn scarring on knuckles. Wearing graphite-gray reinforced cargo jacket with breakaway panels, thermal compression under-shirt, worn dark denim with reinforced pockets, scuffed steel-toed boots. Paracord bracelet left wrist, analog chronograph right wrist. Ready posture, shoulders slightly forward, weight on balls of feet. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial urban setting, moody neon-tinged lighting casting shadows across weathered face, gritty dystopian atmosphere, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Katarzyna Ionescu, GLMZ, portrait of a 178cm stocky muscular male with deep warm brown skin bearing Eastern European, East Asian, and Sub-Saharan African ancestry. Prominent cheekbones, broad jawline, fuller lips, heavy brow ridge. Steel-gray cropped military hair with dark roots. Left eye dark brown natural, right eye cybernetic amber-tinted with recording aperture and chrome orbital assembly. Thin pale 12cm scar from left temple to jaw. Surgical scarring around right eye socket. Chemical burn scars on both hands. Chrome nasal augmentation visible at septum. Faded anchor tattoo on left shoulder. Sparse graying stubble. Wearing graphite-gray reinforced cargo jacket with breakaway panels, thermal compression shirt, worn dark reinforced denim, scuffed steel-toed boots. Paracord bracelet left wrist, analog chronograph right wrist. Ready posture, shoulders forward, weight on balls of feet. Direct gaze. Industrial near-future megacity setting, cool neon backlighting, shallow depth of field, weathered runner aesthetic, gritty urban environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 78.2,
-    "South Asian": 21.1,
-    "Sub-Saharan African": 0.7
+    "Eastern European": 44,
+    "East Asian": 33.5,
+    "Sub-Saharan African": 22.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 31.2,
+        "Polish": 12.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 10.3,
+        "Mandarin Northern": 14.2
+      },
+      "Japanese": {
+        "Japanese": 9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 4.7,
+        "Senegalese": 10.6
+      },
+      "Central African": {
+        "Congolese": 1.1,
+        "Cameroonian": 0.7
+      },
+      "East African": {
+        "Somali": 5.4
+      }
+    }
+  }
 }

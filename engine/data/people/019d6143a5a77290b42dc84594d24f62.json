@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a77290b42dc84594d24f62",
   "type": "character",
-  "name": "Arc Petelo-Tetteh",
+  "name": "Arc Sigurdsson-Wickramasinghe",
   "aliases": [
     "Vapor"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,7 +103,7 @@
   "registered_firearms": [],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Pacific Islander, Sub-Saharan African, East Asian, and Middle Eastern — a true Ubiquitous Diaspora blend. Warm golden-brown undertones from Latin and Pacific heritage mix with deeper melanin from African ancestry, creating rich dimensional skin with subtle warmth. East Asian heritage contributes to bone structure refinement; Middle Eastern ancestry adds to facial architecture complexity.",
+    "heritage": "Truly Ubiquitous Diaspora: Northern European (22.9%), East Asian (21.0%), South Asian (17.7%), Hispanic/Latin American (17.4%), Southeast Asian (15.0%), and Sub-Saharan African (6.0%). This rare global blend creates a unique phenotype — Northern European ancestry contributes bone structure refinement and cool undertones; East Asian heritage defines eye shape and high cheekbone prominence; South Asian ancestry enriches skin depth with warm mid-tones; Hispanic/Latin American heritage adds warmth and mid-melanin distribution; Southeast Asian ancestry refines facial proportions and contributes to eye shape complexity; Sub-Saharan African ancestry deepens overall pigmentation and strengthens jaw definition. The result is a complexion that shifts dimensionally with light — warm golden-bronze in neutral light, deepening to rich mahogany in sunlight, with subtle cool undertones visible in shadow.",
     "height_cm": 187,
     "weight_kg": 89,
     "build": "Lean and angular, shoulders broad but not bulky. Decades of moving through tight spaces and maintaining low profiles have kept him wiry rather than muscular. Moves with economical precision.",
@@ -111,8 +111,8 @@
     "hair_style": "Closely cropped, military-neat",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint cataracts forming at edges — signs of age and too many years squinting through scope sights",
-    "skin_tone": "Rich warm brown with golden undertones, deeper in pigmentation from blended ancestry. Weathered to a matte finish, sun-exposed and lived-in.",
-    "complexion": "Deep lines around the eyes and mouth reflecting diverse facial structure — stronger cheekbones and jaw definition from Pacific and African heritage, subtle eye shape variations from East Asian ancestry. Scar bisecting left eyebrow, skin bearing the texture of someone who works outdoors in industrial weather. Stubble always present — pragmatic rather than styled.",
+    "skin_tone": "Dimensionally warm bronze with golden undertones in neutral light, deepening to rich mahogany in sun-exposed zones. Melanin distribution reflects balanced global ancestry — warm mid-tones from South Asian and Hispanic/Latin American heritage balanced against cooler undertones from Northern European ancestry. Weathered to a matte finish with visible texture from decades of industrial exposure.",
+    "complexion": "Intricate facial structure reflecting six-region ancestry: squared jawline with definition from Sub-Saharan and South Asian heritage; prominent, angular cheekbones from East Asian and Northern European ancestry; distinctive almond-shaped eye set from Southeast and East Asian influence with warm-toned eyelids; warm midtone undertones characteristic of Hispanic/Latin American and South Asian ancestry blending. Deep lines around eyes and mouth carved by decades of life. Scar bisecting left eyebrow, skin bearing the texture of someone who works outdoors in industrial weather. Stubble always present — pragmatic rather than styled.",
     "distinguishing_marks": [
       "Surgical scar running 8cm down the left temple, partially hidden by hairline, result of a cortex jack installation",
       "Burn scarring across the back of his right hand, silvered and smooth, old enough to predate most of his current augmentations",
@@ -122,29 +122,73 @@
     "posture_movement": "Upright but not rigid. Moves with minimal wasted motion, always aware of exits. Hands positioned low and neutral. Eyes track rooms methodically. Sits with his back to walls. Speaks in measured sentences with long pauses — listening costs nothing.",
     "clothing_style": "Tier-3 practical wear: charcoal thermal undershirt, unmarked gray composite jacket with internal pockets, dark pants with reinforced knees, worn Black Archon steel-toe boots. A single piece of jewelry — a faded copper wedding band on his left ring finger, worn smooth. Carries a worn canvas satchel, contents unknown. No logos, no status symbols. Everything chosen to disappear into crowds."
   },
-  "image_prompt": "Arc Petelo-Tetteh, 187cm tall lean angular man with rich warm golden-brown skin blending Pacific Islander, Latin American, African and East Asian ancestry. Salt-and-pepper closely cropped hair, dark brown eyes with age-worn cataracts, deep weathered lines around eyes and mouth. Surgical scar left temple hidden by hairline, prominent scar left eyebrow, burn scarring right hand. Faded indigo tattoo left wrist. Wearing unmarked gray composite jacket, charcoal thermal shirt, dark reinforced pants, Black Archon boots. Copper wedding band worn smooth. Carries canvas satchel. Minimal wasted motion, back straight, hands low and neutral, eyes tracking methodically. Sitting with back to wall in cyberpunk 2226 Great Lakes Metropolitan Zone dive bar, neon bleeding through grimy windows, industrial rain-streaked light, cigarette smoke and neural hum in background, utterly unremarkable and deliberately invisible in the crowd. --ar 2:3 --v 6",
+  "image_prompt": "Arc Sigurdsson-Wickramasinghe, 187cm tall lean angular man with salt-and-pepper cropped hair and dimensionally warm bronze skin with mahogany undertones, reflecting global mixed ancestry from Northern European, East Asian, South Asian, Hispanic/Latin American, Southeast Asian and Sub-Saharan African heritage. Dark brown eyes with subtle cataracts, squared jaw, prominent angular cheekbones, distinctive almond eye shape. Surgical scar down left temple partially hidden by hairline, burn scarring on right hand back, faded indigo tattoo on left wrist. Weathered matte complexion with deep lines around eyes and mouth, pragmatic stubble. Wearing unmarked gray composite jacket over charcoal thermal undershirt, dark reinforced pants, worn Black Archon steel-toe boots. Faded copper wedding band. Positioned with back to wall, methodical room-scanning gaze, economical movement, hands neutral and low. GLMZ Great Lakes Metropolitan Zone. Industrial neon-lit corridor setting, cool ambient light mixing with warm practical overhead lighting. Minimal chrome, deliberately invisible aesthetic. Stoic, watchful, professional. --ar 2:3 --v 6",
   "related_entities": [
-    "Focadrin",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Irontide Tidal Energy",
-    "Kamala Blomberg-Konadu",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Old Harbor",
-    "Slagworks Industrial",
-    "The Pure Hand"
+    "Harbor Fish Shack"
   ],
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.9,
-    "Pacific Islander": 29.0,
-    "Sub-Saharan African": 24.1,
-    "East Asian": 9.9,
-    "Middle Eastern": 6.1
+    "Northern European": 22.9,
+    "East Asian": 21,
+    "South Asian": 17.7,
+    "Hispanic/Latin American": 17.4,
+    "Southeast Asian": 15,
+    "Sub-Saharan African": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 10,
+        "Dutch": 6.7
+      },
+      "British Isles": {
+        "Irish": 5.1,
+        "Scottish": 1.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.7
+      },
+      "Korean": {
+        "Korean": 9.2
+      },
+      "Chinese": {
+        "Fujianese": 3.6,
+        "Shanghainese": 0.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 10.7
+      },
+      "Indian": {
+        "Malayali": 0.4,
+        "Gujarati": 6.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.1
+      },
+      "South American": {
+        "Chilean": 12.3
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 3.4,
+        "Tagalog": 11.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.9,
+        "Ethiopian": 2.1
+      }
+    }
+  }
 }

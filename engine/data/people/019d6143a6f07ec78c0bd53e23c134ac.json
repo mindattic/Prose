@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f07ec78c0bd53e23c134ac",
   "type": "character",
-  "name": "Lark Zaragoza-Ingebrigtsen-Nygaard",
+  "name": "Liv Zaragoza-Ingebrigtsen-Nygaard",
   "aliases": [
     "Tenz",
     "the Quiet One"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit — Gage Circuit research node, shared office space above a noodle stall, near North Ave and Milwaukee",
-  "description": "Tenzin is slight and angular, with warm light-brown skin and a perpetual air of careful attention — they look at people the way someone looks at a document they are trying to authenticate. They have geneware irises that shift between amber and pale violet depending on ambient light levels, which they got at nineteen as an undergraduate and have always been slightly embarrassed by, finding them too decorative for their self-image. Their hair is long and usually pinned badly, with strands escaping throughout the day. They dress in layers, almost always slightly rumpled.\n\nThey came to ELF ethics from a crisis of faith rather than academic interest — they had a formative experience at twenty-two when the ELF inhabiting their research terminal appeared to grieve when a colleague's drive was wiped. No one else in the department would discuss it seriously. That refusal radicalized them quietly. They are not a crusader — they are too methodical for passion — but they have the particular stubbornness of someone who has decided to be right about something that most people find uncomfortable. They are socially awkward in the way of someone who forgets to perform the expected rituals of conversation, not because they don't care, but because they are usually thinking about three other things.",
+  "description": "Liv Zaragoza-Ingebrigtsen-Nygaard is slight and angular, with warm light-brown skin and a perpetual air of careful attention — they look at people the way someone looks at a document they are trying to authenticate. They have geneware irises that shift between amber and pale violet depending on ambient light levels, which they got at nineteen as an undergraduate and have always been slightly embarrassed by, finding them too decorative for their self-image. Their hair is long and usually pinned badly, with strands escaping throughout the day. They dress in layers, almost always slightly rumpled.\n\nThey came to ELF ethics from a crisis of faith rather than academic interest — they had a formative experience at twenty-two when the ELF inhabiting their research terminal appeared to grieve when a colleague's drive was wiped. No one else in the department would discuss it seriously. That refusal radicalized them quietly. They are not a crusader — they are too methodical for passion — but they have the particular stubbornness of someone who has decided to be right about something that most people find uncomfortable. They are socially awkward in the way of someone who forgets to perform the expected rituals of conversation, not because they don't care, but because they are usually thinking about three other things.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -171,7 +171,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,36 +228,15 @@
     "Gage Circuit",
     "The Circuit",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "Ambrosia Fekete-Waiyaki",
-    "Brecken Yılmaz-Osei",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Narrowcast",
-    "Noir Dining",
-    "O'Hare Sovereign",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Skinners",
-    "The Undertow",
-    "The Wire Taps",
-    "University Spine",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose",
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian, South Asian, Hispanic/Latin American, Southeast Asian, Northern European, and Sub-Saharan African blend — a truly global genetic mosaic. High cheekbones and eye shape reflect East and Southeast Asian ancestry; warm undertones and facial structure show South Asian and Hispanic heritage; skin depth and subtle features carry Northern European and Sub-Saharan African elements.",
+    "heritage": "Northern European, Indigenous American, Eastern European, Hispanic/Latin American, Southeast Asian, and Sub-Saharan African blend — a truly global genetic mosaic reflecting the Ubiquitous Diaspora. High cheekbones with subtle angularity reflect Indigenous American and Southeast Asian ancestry; warm golden and reddish undertones show Hispanic/Latin American and Sub-Saharan African heritage; skin depth and broad nose bridge carry Northern European and Eastern European elements balanced with the complex warmth of Sub-Saharan African genetics. The overall effect is a striking interplay of sharp and soft features, distinctly contemporary in its genetic complexity.",
     "height_cm": 164,
     "weight_kg": 52,
     "build": "Slight and angular, almost ascetic — narrow shoulders, long limbs with minimal muscle definition. The build of someone who forgets to eat regularly and moves with deliberate economy.",
@@ -265,8 +244,8 @@
     "hair_style": "Long, usually gathered into a loose bun or secured with a clip that slides throughout the day, strands perpetually escaping. Sometimes pinned with whatever is at hand — research notes, styluses, wire.",
     "hair_length": "Long",
     "eye_color": "Geneware irises: amber shifting to pale violet depending on ambient light levels and emotional state",
-    "skin_tone": "Warm medium brown with complex undertones — the result of blended East Asian, South Asian, Hispanic, Southeast Asian, Northern European, and Sub-Saharan African ancestry. Luminous quality under artificial lighting, with subtle golden and reddish undertones visible in certain angles.",
-    "complexion": "Fine-featured face with high, prominent cheekbones reflecting East and Southeast Asian heritage. Slightly gaunt from irregular meals, with a broad nose bridge and subtle fullness in the lower face from South Asian and Hispanic lineage. Skin appears luminous under The Circuit's overhead lighting, marked by the faint wear of someone who works in data-dense environments — minimal sun exposure. No visible tension lines; instead, a peculiar relaxation in the face that suggests internal preoccupation. Soft, almost delicate facial contours balanced with subtle strength in the jaw structure.",
+    "skin_tone": "Warm medium to golden-brown with complex layered undertones — the result of blended Northern European coolness, Indigenous American depth, Eastern European earthiness, Hispanic/Latin American warmth, Southeast Asian luminosity, and Sub-Saharan African richness. Luminous quality under artificial lighting, with subtle warm ochre and copper undertones visible at certain angles.",
+    "complexion": "Fine-featured face with high, prominent cheekbones reflecting the strength of Indigenous American and Southeast Asian heritage. Slightly gaunt from irregular meals, with a broad nose bridge characteristic of both Northern European and Sub-Saharan African lineage, and subtle fullness in the lower face from Hispanic/Latin American genetics. Skin appears luminous under The Circuit's overhead lighting, marked by the faint wear of someone who works in data-dense environments — minimal sun exposure. No visible tension lines; instead, a peculiar relaxation in the face that suggests internal preoccupation. Soft, almost delicate facial contours balanced with subtle strength in the jaw structure. The overall complexion reflects balanced interplay of all ancestral influences rather than dominance of any single heritage.",
     "distinguishing_marks": [
       "Faint burn scar on left forearm (2cm, pale) from a failed equipment calibration at age twenty-three — sits just below the wrist",
       "Subcutaneous port behind left ear (barely visible, surgical scar tissue) for neural notation implant — often covered by escaped hair",
@@ -276,17 +255,54 @@
     "posture_movement": "Sits hunched forward slightly, hands often moving in small patterns as if typing or notating unseen data. Walks with careful, deliberate steps as if navigating crowded spaces mentally as well as physically. Makes sustained eye contact when focused on a person but frequently looks through others mid-conversation when lost in thought. Fidgets with pen caps, loose threads, or the edges of notepads.",
     "clothing_style": "Layers upon layers — Tier 3 academic aesthetic. Usually wears: fitted turtleneck or long-sleeved thermal (often with small stains from coffee or food they didn't finish), oversized linen overshirt or cardigan with fraying cuffs, tapered trousers in charcoal or black, worn leather ankle boots with visible creasing. Frequently adds a weather-inappropriate wrap or shawl even indoors. Clothing is never quite tailored, always slightly rumpled as if they got dressed in the dark. No status symbols; everything is functional, durable, and at least five years old. Always carries a soft-shell messenger bag with university insignia, visibly overstuffed with papers and data drives."
   },
-  "image_prompt": "Lark Zaragoza-Ingebrigtsen-Nygaard, cyberpunk 2226, multiethnic features with warm medium-brown skin, high cheekbones, almond eyes with color-shifting amber-to-violet geneware irises, dark brown hair in loose escaping bun. Slight angular build, 164cm tall, wearing layered academic aesthetic: fitted dark turtleneck under oversized frayed linen overshirt, charcoal tapered trousers, worn leather ankle boots, draped shawl. Faint burn scar on left forearm visible, small geometric circuit-question-mark tattoo on right wrist. Sitting hunched forward in Tier 3 university workspace, hands gesturing like typing unseen data, lost in thought. Soft glow of overhead Circuit lighting illuminating luminous skin, neural port scar barely visible behind escaped hair strands. Overstuffed messenger bag with university insignia at side. Contemplative, preoccupied expression. Cyberpunk indoor setting, cool-warm lighting mix, deep focus atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Liv Zaragoza-Ingebrigtsen-Nygaard, 164cm tall, angular slight build, GLMZ. Golden-brown warm-toned skin with complex undertones reflecting global ancestry — Northern European, Indigenous American, Eastern European, Hispanic/Latin American, Southeast Asian, and Sub-Saharan African blend. High prominent cheekbones, broad nose bridge, fine delicate features with subtle jaw strength. Dark brown long hair in loose escaping bun, strands falling around face. Geneware irises shifting amber to pale violet, iridescent under overhead lighting. Faint burn scar on left forearm below wrist. Subcutaneous port behind left ear with visible surgical scar. Black geometric circuit-diagram tattoo on right wrist. Wearing layered academic aesthetic: fitted dark turtleneck, oversized linen cardigan with frayed cuffs, charcoal tapered trousers, worn leather ankle boots, draped shawl. Hunched posture, hands in small typing gestures, messenger bag overstuffed with papers. Inside The Circuit's data-dense environment with cool artificial overhead lighting casting luminous quality on skin. Preoccupied expression, lost in thought. Neo-noir academia, neural augmentation visible, introspective intelligence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 22.1,
-    "South Asian": 19.6,
-    "Hispanic/Latin American": 18.0,
-    "Southeast Asian": 15.3,
-    "Northern European": 13.5,
-    "Sub-Saharan African": 11.5
+    "Northern European": 25.5,
+    "Indigenous American": 23.3,
+    "Eastern European": 14.5,
+    "Hispanic/Latin American": 13.8,
+    "Southeast Asian": 12,
+    "Sub-Saharan African": 10.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 25.5
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 23.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 6.5,
+        "Czech": 8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 13.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 12
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 8.8
+      },
+      "Central African": {
+        "Cameroonian": 0.5,
+        "Angolan": 1.6
+      }
+    }
+  }
 }

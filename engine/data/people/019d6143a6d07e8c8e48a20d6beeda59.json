@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d07e8c8e48a20d6beeda59",
   "type": "character",
-  "name": "Joaquín Delgado-Owusu",
+  "name": "Kitchi Baiseitov-Ixchel",
   "aliases": [
     "Sis",
     "the Sub"
@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Mexicantown Libre, operating out of the Libre Community Creche on Calle Veintitrés, near Western and Chicago Ave",
-  "description": "Sisay is slight with enormous energy — she is the kind of person who enters a room already talking, gesturing, pulling objects from her pockets to illustrate a point. Her skin is a warm golden-brown, her natural hair twisted into thick locs that she decorates with small colored rings and one clip shaped like a fish that her students gave her. She has retractable claws, a cosmetic geneware mod she got at nineteen that she now mostly uses to open packaging and gently scratch children's backs when they're upset, which has become a signature of her caregiving style. Her eyes are dark, large, and deeply attentive in a way that children recognize immediately as meaning she is actually listening.\n\nSisay is technically a substitute — she fills in at three different licensed creches across Mexicantown Libre when regular workers are out — but in practice she has become the linchpin of a sprawling unofficial after-school program she runs from the Libre Creche's outdoor space on a budget of approximately nothing. She writes curriculum on whatever surfaces are available, sourced donated materials from the Burnished Market, and has an arrangement with a local E.L.F. she calls Señora Chispa (inhabiting the creche's aging electrical panel) that involves leaving handwritten songs as data offerings. The children are convinced Señora Chispa plays favorites, and they are probably right.",
+  "description": "Kitchi Baiseitov-Ixchel is slight with enormous energy — she is the kind of person who enters a room already talking, gesturing, pulling objects from her pockets to illustrate a point. Her skin is a warm golden-brown, her natural hair twisted into thick locs that she decorates with small colored rings and one clip shaped like a fish that her students gave her. She has retractable claws, a cosmetic geneware mod she got at nineteen that she now mostly uses to open packaging and gently scratch children's backs when they're upset, which has become a signature of her caregiving style. Her eyes are dark, large, and deeply attentive in a way that children recognize immediately as meaning she is actually listening.\n\nKitchi Baiseitov-Ixchel is technically a substitute — she fills in at three different licensed creches across Mexicantown Libre when regular workers are out — but in practice she has become the linchpin of a sprawling unofficial after-school program she runs from the Libre Creche's outdoor space on a budget of approximately nothing. She writes curriculum on whatever surfaces are available, sourced donated materials from the Burnished Market, and has an arrangement with a local E.L.F. she calls Señora Chispa (inhabiting the creche's aging electrical panel) that involves leaving handwritten songs as data offerings. The children are convinced Señora Chispa plays favorites, and they are probably right.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -169,7 +169,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,30 +228,11 @@
     "Dredge Mining Collective",
     "TESSERA PG-2 'Signature'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Bogdan Achebe-Svanstrom",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries CR-9 'Foundry'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Othniel Babić-Asantewaa",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Plot 17",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "The Collective",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Reclamation Authority"
+    "Chicago"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: Hispanic/Latin American (30.8%), Sub-Saharan African (26.5%), Pacific Islander (26.5%), and Northern European (16.2%). This combination creates a rich, warm complexion with diverse ancestry visible in facial structure and coloring.",
+    "heritage": "Multiethnic blend: Indigenous American (36%), South Asian (27%), Central Asian (26.7%), and Eastern European (10.3%). This combination creates warm, earthy undertones with distinctive high cheekbones and eye structure reflecting strong Amerindian and Central Asian influence, enriched by South Asian facial geometry and balanced with lighter Eastern European undertones in skin depth.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Slight and wiry with restless energy — lean muscle from constant movement, minimal body fat, a frame built for reaching high shelves and sitting cross-legged on the floor",
@@ -259,8 +240,8 @@
     "hair_style": "Thick locs twisted tightly, shoulder-length, decorated with small colored rings (rotating selection of brass, plastic, and handmade beads) and one hand-carved wooden fish clip",
     "hair_length": "Long (shoulder-length locs)",
     "eye_color": "Dark brown, naturally large and wide-set",
-    "skin_tone": "Rich warm brown with golden and reddish undertones, reflecting the blend of African, Pacific Islander, and Latin American ancestry with lighter Northern European influence. Deeper in tone from sun exposure during outdoor program work.",
-    "complexion": "Open, animated expression with a baseline micro-smile. Medium-textured skin showing minimal scarring or blemishing — young skin cared for with budget products. Facial structure shows broad cheekbones and fuller features consistent with Pacific Islander and African heritage, balanced with finer features from Latin American and Northern European ancestry. Eyebrows are full and naturally shaped, rarely plucked. No visible cosmetic face mods.",
+    "skin_tone": "Warm golden-bronze with earthy undertones, medium depth from sun exposure. The blend of Indigenous American, South Asian, and Central Asian ancestry creates rich warm saturation, tempered by subtle Eastern European lightening — a balanced warm-medium complexion suggesting both outdoor time and mixed heritage.",
+    "complexion": "Open, animated expression with a baseline micro-smile. Medium-textured skin showing minimal scarring or blemishing — young skin cared for with budget products. Facial structure shows prominent, high cheekbones with strong Indigenous American and Central Asian architecture, balanced by South Asian influence in eye placement, orbital geometry, and overall facial proportions. Eyebrows are full and naturally shaped, rarely plucked. No visible cosmetic face mods.",
     "distinguishing_marks": [
       "Fine white scar across the knuckle of her right index finger from a childhood accident, barely visible unless pointed out",
       "Faint burn mark on her left inner forearm (approximately 3cm, crescent-shaped) from a creche kitchen incident at age seventeen, healed to near-invisibility"
@@ -269,15 +250,50 @@
     "posture_movement": "Perpetually in motion — stands with weight shifting between feet, hands gesturing while speaking, shoulders animated. Sits in fluid, cross-legged position on the floor often. Movements are quick and efficient rather than graceful, optimized for childcare (sweeping a child up, reaching into pockets, opening things, soothing physical contact). Habitual gesture of running her claws through her locs or tapping them rhythmically on surfaces when thinking.",
     "clothing_style": "Tier 4 working-class pragmatism with personal flair. Typically wears comfortable, durable pants (often canvas or cotton blend in neutral colors — charcoal, olive, tan) with deep pockets filled with small objects (drawing supplies, snacks, toys, messages for Señora Chispa). Layered shirts: a fitted base layer under an oversized button-up or pullover in warm colors (rust, mustard, deep rose) or handwoven fabrics from Mexicantown makers. Shoes are practical and broken-in — canvas sneakers or worn leather boots, scuffed from daily wear. No visible jewelry except the hair decorations. Clothing shows signs of daily use with children — marker smudges, small holes, fading — but is always clean. Occasionally wears an apron with oversized pockets, usually fabric-dyed or embroidered by students."
   },
-  "image_prompt": "Joaquín Delgado-Owusu, short Latina-African-Pacific Islander woman with rich warm brown skin and golden undertones, 158cm tall, slim wiry build. Shoulder-length dark brown locs adorned with brass rings, plastic beads, and a wooden fish clip. Large dark brown eyes with an animated micro-smile. Wearing olive canvas pants with deep pockets, rust-colored oversized button-up over a fitted base layer, well-worn canvas sneakers. Dark brown retractable keratin claws visible on fingertips with subtle metallic sheen. In motion, gesturing expressively, one hand running through her locs. Standing in a bright community center or outdoor program space, warm afternoon light catching her skin and hair decorations. Background shows children's art supplies and educational materials. Cyberpunk 2226, GLMZ aesthetic with worn but colorful clothing from local makers. Mood: energetic, caring, present. --ar 2:3 --v 6",
+  "image_prompt": "Kitchi Baiseitov-Ixchel, 158cm tall, slight wiry frame, standing in motion with restless energy. Warm golden-bronze skin with earthy undertones reflecting Indigenous American, South Asian, Central Asian, and Eastern European heritage blend. High prominent cheekbones, large dark brown eyes wide-set, full natural eyebrows. Shoulder-length thick dark brown locs decorated with brass rings, plastic beads, and wooden fish clip. Dark brown retractable keratin claws visible at fingertips with metallic sheen. Wearing layered outfit: fitted base layer under rust-colored oversized pullover, charcoal canvas pants with deep pockets, worn canvas sneakers. Animated micro-smile, hands gesturing, perpetually in motion. Neo-noir Great Lakes Metropolitan Zone, 2226, warm indoor lighting in a community education space with colorful student artwork visible behind. Diverse, energetic, practical working-class aesthetic with personal handmade flair. Close-up portrait framing from waist up. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 30.8,
-    "Sub-Saharan African": 26.5,
-    "Pacific Islander": 26.5,
-    "Northern European": 16.2
+    "Indigenous American": 36,
+    "South Asian": 27,
+    "Central Asian": 26.7,
+    "Eastern European": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 5.5,
+        "Zapotec": 1.8
+      },
+      "Plains Nations": {
+        "Muscogee": 12.4,
+        "Choctaw": 16.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 15.9,
+        "Gujarati": 11.1
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 18.4
+      },
+      "Turkic": {
+        "Uyghur": 1.7,
+        "Turkmen": 1.3
+      },
+      "Iranian Central": {
+        "Tajik": 5.3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 10.3
+      }
+    }
+  }
 }

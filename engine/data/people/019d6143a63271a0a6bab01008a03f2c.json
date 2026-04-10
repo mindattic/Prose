@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63271a0a6bab01008a03f2c",
   "type": "character",
-  "name": "Ember Haugen",
+  "name": "Ember Toktogulov",
   "aliases": [
     "V",
     "The Accountant"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Meridian Core, Axiom Security Division headquarters annex",
-  "description": "Inari is slight and angular, with pale olive skin, sharp cheekbones, and hair that shifts between deep teal and silver depending on their mood — bioluminescent geneware they had done seven years ago and which they've never once referenced in a professional context. They dress in Axiom's corporate security greys with an exactness that suggests the uniform is armor rather than identity. Their expressions are controlled with the care of someone who grew up being told they were too much and decided to become, professionally, precisely nothing.\n\nThey investigate Axiom's own security personnel for misconduct, corruption, and off-books arrangements — a job that makes them universally disliked and which they have accepted as a structural condition of their existence. They are not cruel but they are thorough, and thoroughness in their line of work is often experienced as cruelty. They have a gift for making people feel that everything they've said has been weighed and found wanting, even when they haven't spoken. They eat lunch alone every day by choice and have a private ritual of leaving a thread of code in the Meridian Core's ambient E.L.F. network each morning — a small offering, a small ask for clarity.",
+  "description": "Ember Toktogulov is slight and angular, with pale olive skin, sharp cheekbones, and hair that shifts between deep teal and silver depending on their mood — bioluminescent geneware they had done seven years ago and which they've never once referenced in a professional context. They dress in Axiom's corporate security greys with an exactness that suggests the uniform is armor rather than identity. Their expressions are controlled with the care of someone who grew up being told they were too much and decided to become, professionally, precisely nothing.\n\nThey investigate Axiom's own security personnel for misconduct, corruption, and off-books arrangements — a job that makes them universally disliked and which they have accepted as a structural condition of their existence. They are not cruel but they are thorough, and thoroughness in their line of work is often experienced as cruelty. They have a gift for making people feel that everything they've said has been weighed and found wanting, even when they haven't spoken. They eat lunch alone every day by choice and have a private ritual of leaving a thread of code in the Meridian Core's ambient E.L.F. network each morning — a small offering, a small ask for clarity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -189,7 +189,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -208,22 +208,11 @@
     "Meridian Core",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Silver",
-    "The Pale Mile",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Saodat Mirzoyan-Fubara",
-    "ShieldTech CLA-3 'Cascade'",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "TESSERA TC-3 'Crucible'",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Vuk Jorgensen-Toure"
+    "The Pale Mile"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Mixed ancestry with Northern European (36.6%), Sub-Saharan African (19.3%), Indigenous American (18.9%), Hispanic/Latin American (13.3%), and East Asian (11.9%) heritage. Complex genetic blend manifests in warm-toned olive skin, angular facial structure with both European and Indigenous American cheekbone prominence, and subtle East Asian eye shape.",
+    "heritage": "Dominant North African (40.1%) foundation creates warm golden-brown base; Central Asian (26.4%) adds angular structure and cheekbone prominence; Northern European (23.1%) contributes luminosity and refined features; Sub-Saharan African (10.4%) adds subtle fullness and depth to facial geometry. Result: radiant warm-toned complexion with sharp angular architecture and underlying richness.",
     "height_cm": 167,
     "weight_kg": 54,
     "build": "Slight and angular — lean muscle beneath minimal mass, the build of someone who has optimized their body for precision rather than presence. Shoulders narrow, frame almost fragile-looking until movement reveals controlled strength.",
@@ -231,8 +220,8 @@
     "hair_style": "Precision-cut, geometric lines; styled back from face with calculated severity",
     "hair_length": "Short, approximately 4-5cm on top, faded close on sides",
     "eye_color": "Dark brown with optical enhancement overlay — slightly increased contrast visibility in pupils under certain light angles",
-    "skin_tone": "Warm olive with golden undertones — richly complex blend of Northern European paleness with Sub-Saharan African and Indigenous American warmth, creating a luminous mid-tone despite limited sun exposure",
-    "complexion": "Sharp, angular cheekbones with Indigenous American prominence, defined jaw with subtle fullness from African heritage genes; minimal facial expression baseline — skin appears professionally maintained, almost unmarked. Zero visible acne, healed injuries, or natural blemishes; complexion has the uncanny smoothness of someone who has removed all casual markers of humanity from their appearance.",
+    "skin_tone": "Warm golden-brown with amber undertones — richly complex blend of North African depth with Central Asian warmth and Northern European luminosity, creating a radiant mid-to-deep tone despite limited sun exposure",
+    "complexion": "Distinctly angular cheekbones with North African and Central Asian sharpness, defined jaw with subtle fullness reflecting Sub-Saharan African heritage; minimal facial expression baseline — skin appears professionally maintained, almost unmarked. Zero visible acne, healed injuries, or natural blemishes; complexion has the uncanny smoothness of someone who has removed all casual markers of humanity from their appearance.",
     "distinguishing_marks": [
       "Subdermal recording membrane ridge along inner left forearm — barely visible as a faint linear discoloration and slight texture change under skin, visible only in direct light or close inspection",
       "A single thin scar at left temple, approximately 2cm, nearly invisible but present as a slight disruption in hair growth pattern"
@@ -241,16 +230,57 @@
     "posture_movement": "Upright, centered; economical movement with zero wasted energy. Sits at perfect spine angle; walks as if following invisible grid lines. Hands rest with deliberation. Their presence suggests they are always recording, always evaluating — not paranoid, but professionally present in a way that fills nearby space with invisible weight.",
     "clothing_style": "Axiom Security Division corporate greys — clean, precisely fitted, zero deviation. Jacket tailored to minimize profile; slacks with knife-edge crease; grey compression undershirt visible at collar. No jewelry, no personal markers, no visible brands. Boots: black, polished to mirror finish, military-spec. The uniform is worn as armor and protocol simultaneously."
   },
-  "image_prompt": "Portrait of Ember Haugen, cyberpunk 2226, androgynous figure with warm olive skin and angular cheekbones blending Northern European and Indigenous American features. Short geometric haircut in mood-reactive bioluminescent teal-to-silver with subtle glow in shadows. Dark brown eyes with optical enhancement overlay. 167cm lean frame in Axiom Security Division corporate grey uniform — perfectly tailored jacket, knife-crease slacks, military-spec black boots polished to mirror finish. Subdermal recording membrane ridge faintly visible on inner left forearm. Expression professionally neutral, posture perfectly centered as if following invisible grid. Minimal scar at left temple disrupting hair growth. Studio lighting with cool undertones emphasizing the uncanny precision of their appearance, faint bioluminescence from hair visible in shadows. Cyberpunk corporate security, professional erasure of humanity, controlled presence. --ar 2:3 --v 6",
+  "image_prompt": "Ember Toktogulov, 2226 neo-noir security operative: lean 167cm frame in pristine Axiom Security grey corporate uniform with knife-edge pressed slacks and mirror-black military boots. Warm golden-brown skin with amber undertones, distinctly angular North African-Central Asian cheekbones, sharp defined jaw. Short bioluminescent hair with mood-reactive deep teal-to-silver shift, faintly glowing in dim light, precision-cut geometric style swept back from face. Dark brown augmented eyes with enhanced pupils. Minimal facial expression, professional smoothness, barely visible temple scar. Subdermal recording membrane ridge faintly visible on inner left forearm. Upright centered posture, economical movement, presence filled with invisible weight and professional evaluation. Corporate grey jacket tailored to minimize profile, compression undershirt at collar, zero personal markers. Cool neo-noir interior lighting with subtle neon, professional security division aesthetic, perfectly composed and grid-aligned --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 36.6,
-    "Sub-Saharan African": 19.3,
-    "Indigenous American": 18.9,
-    "Hispanic/Latin American": 13.3,
-    "East Asian": 11.9
+    "North African": 40.1,
+    "Central Asian": 26.4,
+    "Northern European": 23.1,
+    "Sub-Saharan African": 10.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Maghreb": {
+        "Tunisian": 4.2,
+        "Algerian": 3.5
+      },
+      "Amazigh": {
+        "Kabyle": 26
+      },
+      "Nile Valley": {
+        "Egyptian": 6.4
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 25.1,
+        "Tajik": 1.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 11.3,
+        "Dutch": 1.3
+      },
+      "Scandinavian": {
+        "Swedish": 10.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 3.1,
+        "Cameroonian": 4.2
+      },
+      "Southern African": {
+        "Zimbabwean": 0.4,
+        "South African": 0.1
+      },
+      "West African": {
+        "Ivorian": 2.6
+      }
+    }
+  }
 }

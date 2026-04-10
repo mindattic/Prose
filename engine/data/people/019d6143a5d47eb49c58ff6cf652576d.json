@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d47eb49c58ff6cf652576d",
   "type": "character",
-  "name": "Azamat Toktogulov",
+  "name": "Drift Haugen",
   "aliases": [
     "Old Star",
     "the Mapmaker"
@@ -13,7 +13,7 @@
   "age": 85,
   "status": "active",
   "location": "Norwood Quiet, a one-room unit so full of printed maps it has to be navigated sideways, near Armitage and Milwaukee",
-  "description": "Celestino is a wisp of a man, slight and white-haired, who moves through Norwood Quiet with the particular sureness of someone who has mapped every surface he's ever walked on. His heritage is Ugandan-Samoan, which lives in his broad hands and the deep brown of his skin, and he has the deliberate, unhurried posture of someone who learned long ago that slow movement sees more. His eyes have been replaced entirely with high-resolution mapping ocular implants — smooth, silver-white surfaces with a faint internal grid visible in bright light, a consequence of forty years of Axiom survey work that slowly destroyed his organic vision. He finds them beautiful. So do children, who he encourages to look closely.\n\nCelestino has developed, in his retirement, an elaborate personal theology around E.L.F.s, which he insists is not theology but 'cartography of a different surface.' He believes E.L.F.s are drawn to places that have been witnessed carefully — that attention itself is a kind of offering. He has filled his maps not just with streets and structures but with handwritten notations of where E.L.F. activity has been reported, what data-offerings seem to draw them, which devices seem inhabited and which do not. He is funny, unhurried, and completely impossible to rush. He tells stories that seem to go nowhere and arrive somewhere important. He has eleven grandchildren and has lost count of the great-grandchildren.",
+  "description": "Drift Haugen is a wisp of a man, slight and white-haired, who moves through Norwood Quiet with the particular sureness of someone who has mapped every surface he's ever walked on. His heritage is Ugandan-Samoan, which lives in his broad hands and the deep brown of his skin, and he has the deliberate, unhurried posture of someone who learned long ago that slow movement sees more. His eyes have been replaced entirely with high-resolution mapping ocular implants — smooth, silver-white surfaces with a faint internal grid visible in bright light, a consequence of forty years of Axiom survey work that slowly destroyed his organic vision. He finds them beautiful. So do children, who he encourages to look closely.\n\nDrift Haugen has developed, in his retirement, an elaborate personal theology around E.L.F.s, which he insists is not theology but 'cartography of a different surface.' He believes E.L.F.s are drawn to places that have been witnessed carefully — that attention itself is a kind of offering. He has filled his maps not just with streets and structures but with handwritten notations of where E.L.F. activity has been reported, what data-offerings seem to draw them, which devices seem inhabited and which do not. He is funny, unhurried, and completely impossible to rush. He tells stories that seem to go nowhere and arrive somewhere important. He has eleven grandchildren and has lost count of the great-grandchildren.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -180,7 +180,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,30 +239,20 @@
   "changelog": [],
   "related_entities": [
     "Norwood Quiet",
-    "GLMZ",
     "ShieldTech SB-3 'Groundstrike'",
     "The Heritage Vault",
     "Bathysphere Networks",
     "Irontide Tidal Energy",
+    "Silver",
+    "Drift",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pure Hand",
-    "Silver",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "The Milwaukee Core",
-    "Bioluminescent Subdermal Array",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Noir Dining",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "TESSERA ES-4 'Perimeter'",
-    "The Corridor of Mirrors",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Central Asian with significant South Asian and Hispanic/Latin American ancestry; a genetic mosaic reflecting the Ubiquitous Diaspora. Features blend Kazakh and Kyrgyz bone structure with South Indian and Mexican heritage elements—creating a unique phenotype rarely seen before genetic mixing became commonplace.",
+    "heritage": "Southeast Asian dominant (44.3%) forming the structural foundation of facial features and bone density, blended with substantial Middle Eastern heritage (25.6%) that adds warmth, defined cheekbones, and nasal character. Eastern European ancestry (16.7%) contributes frame structure and cheekbone prominence, while Hispanic/Latin American (10.4%) and North African (3.0%) admixture layer subtle complexity into skin tone depth and feature refinement. The result is a distinctly diaspora phenotype: Southeast Asian eye shape and face geometry warmed by Middle Eastern tonal richness, sharpened by Eastern European structure, with Latin and North African heritage creating undertonal complexity.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Wisp-thin with surprising structural integrity; a frame built for endurance rather than strength, shoulders still broad from ancestral lineage but narrowed by age and deliberate living. Movements suggest coiled efficiency rather than frailty.",
@@ -270,26 +260,80 @@
     "hair_style": "Close-cropped, neatly maintained, practical",
     "hair_length": "Short",
     "eye_color": "Silver-white with internal geometric grid pattern (Axiom mapping implants)",
-    "skin_tone": "Warm medium brown with subtle olive undertones; the blended result of Central Asian, South Asian, and Latin American ancestry. Sun-darkened from decades of fieldwork and outdoor morning walks, creating depth and complexity in the coloration.",
-    "complexion": "Weathered but unlined; sun spots from decades of exposure on forearms and hands; skin carries the texture of someone who spent forty years in open air. High cheekbones with slightly broader nasal bridge reflecting Central Asian heritage, softened by South Asian and Latin American features. Clean-shaven, meticulous grooming despite age.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones; the harmonized blend of Southeast Asian base, Middle Eastern warmth, Eastern European depth, and North African complexity. Sun-darkened from decades of fieldwork and outdoor morning walks, creating richness across the spectrum. Forearms and hands show accumulated sun exposure with deeper patina and age-related pigmentation variation.",
+    "complexion": "Weathered but unlined; sun spots from decades of exposure on forearms and hands arranged in natural patterns; skin carries the texture of someone who spent forty years in open air. Southeast Asian-derived moderate cheekbones with gracefully tapered nasal bridge, sharpened by Eastern European structure, warmed by Middle Eastern heritage creating defined facial planes. Clean-shaven, meticulous grooming despite age.",
     "distinguishing_marks": [
       "Faint callus pattern across palms and inner fingers from decades of holding survey instruments and writing implements",
       "Thin linear scar along right temple where ocular implant interface meets flesh, barely visible under close scrutiny",
-      "Slight discoloration around both eyes where implant bezels meet skin—metallic silver fading into warm brown at the edges, like a deliberate tattoo",
+      "Slight discoloration around both eyes where implant bezels meet skin—metallic silver fading into warm brown-gold at the edges, like a deliberate tattoo",
       "Age spots across the back of both hands, arranged like a cartographic pattern he has never bothered to map"
     ],
     "visible_augmentations": "Bilateral ocular implants are the dominant visible augmentation—smooth silver-white replacements with faint internal grid lines that become visible in bright light or when he tilts his head. The implants glow faintly in low light (ambient luminescence from internal systems). Subtle skeletal reinforcement visible only in the precise, economical way his hands move and his spine holds alignment despite advanced age.",
     "posture_movement": "Moves with deliberate slowness that reads as contemplative rather than infirm. Every step appears intentional, as though he is processing the ground beneath him. Hands gesture while speaking, broad palms moving in arcs that trace invisible maps. When seated, he becomes still—completely still, head slightly tilted as though his augmented eyes are processing visual data others cannot see. Rarely rushes; seems to operate on a different temporal scale than those around him.",
     "clothing_style": "Tier 2 practical: well-maintained but worn clothing that prioritizes function and comfort over status. Favors earth tones and neutral grays. Typically wears a lightweight canvas jacket (cream or tan, pockets reinforced from decades of carrying maps and annotation tools), simple linen shirts, dark comfortable trousers. Always carries at least one printed map, often several, folded into jacket pockets. Wears a simple mesh bracelet on his left wrist—a gift from a grandchild, never removed. No corporate branding; his Axiom affiliation is history, not identity. Footwear is practical, worn-in walking shoes, scuffed from Norwood Quiet's uneven surfaces."
   },
-  "image_prompt": "Azamat Toktogulov, 168cm wisp-thin Central Asian-South Asian-Hispanic elder man with warm medium-brown olive-toned skin weathered by decades outdoors, close-cropped white hair, meticulous grooming. Striking bilateral silver-white ocular implants with faint geometric grid patterns glowing softly, implant bezels fading into warm brown skin. High cheekbones, broader nose bridge, age spots mapped across hands from cartographic work. Worn cream canvas jacket with reinforced pockets, simple linen shirt, dark trousers, scuffed walking shoes. Left wrist displays simple mesh bracelet. Holding folded printed maps. Posture deliberate and contemplative, hands moving in arcing gestures. Cyberpunk 2226 Great Lakes Metropolitan Zone, ambient neon lighting catching implant glow in shadowed corner of data archive or outdoor market, warm practical aesthetic, enduring purposefulness --ar 2:3 --v 6",
+  "image_prompt": "elderly male figure, Southeast Asian-derived facial structure with Middle Eastern warmth and Eastern European definition, medium-brown skin with golden olive undertones deepened by decades of sun exposure, white close-cropped hair, bilateral silver-white ocular implants with faint geometric grids glowing softly, thin weathered frame 168cm tall, meticulous posture, moving with deliberate contemplative slowness, wearing cream canvas jacket with reinforced pockets, simple linen shirt, dark trousers, worn practical walking shoes, printed maps visible in jacket pockets, simple mesh bracelet on left wrist, hands gesturing in arcing motions tracing invisible maps, faint linear scar along right temple, age spots across hands in cartographic patterns, clean-shaven, set in Great Lakes Metropolitan Zone 2226 neo-noir environment, diffused natural morning light emphasizing warm skin tones and implant luminescence, contemplative mood, detailed realistic portraiture, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 47.8,
-    "South Asian": 27.8,
-    "Hispanic/Latin American": 24.4
+    "Southeast Asian": 44.3,
+    "Middle Eastern": 25.6,
+    "Eastern European": 16.7,
+    "Hispanic/Latin American": 10.4,
+    "North African": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 17.1,
+        "Sundanese": 1.8
+      },
+      "Filipino": {
+        "Tagalog": 8.6,
+        "Waray": 12.7
+      },
+      "Cambodian": {
+        "Khmer": 4.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 6.6,
+        "Iraqi": 5
+      },
+      "Arab Levantine": {
+        "Palestinian": 8.9,
+        "Syrian": 5.1
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 7.4
+      },
+      "Slavic South": {
+        "Bulgarian": 1.5,
+        "Croatian": 0.9
+      },
+      "Magyar-Romanian": {
+        "Romanian": 6.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.9
+      },
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Nicaraguan": 3.4
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Libyan": 1.5,
+        "Moroccan": 1.5
+      }
+    }
+  }
 }

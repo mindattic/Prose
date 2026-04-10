@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e8794eb2521b635381fe18",
   "type": "character",
-  "name": "Haze Quiñones-Nygaard",
+  "name": "Haze Sigurdsson-Shimizu",
   "aliases": [
     "Murmur",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Haze Sigurdsson-Shimizu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHaze Sigurdsson-Shimizu is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -257,7 +257,7 @@
     "Protector": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,38 +274,19 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
+    "Diaspora Table",
     "Geartown",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Doru Fofana-Câmpeanu",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "The Human Baseline Alliance",
-    "Volkov-Saito Precision VS-44 'Fenris'"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: Hispanic/Latin American (29.3%) provides warm undertones and defined facial structure; East Asian (27.9%) contributes eye shape and cheekbone prominence; Northern European (16.0%) adds lighter undertones to skin; Pacific Islander (14.2%) brings warmth and resilience; Sub-Saharan African (7.5%) deepens complexion; Eastern European (5.1%) adds subtle coolness. Result: warm medium-brown skin with golden undertones, almond-shaped eyes with warm amber-brown tones, prominent cheekbones with balanced angularity—neither sharp nor soft—and a complexion that reads as globally mixed rather than regionally specific.",
+    "heritage": "Ubiquitous Diaspora blend: East Asian (42.5%) provides eye shape, cheekbone structure, and facial geometry; Southeast Asian (31.2%) contributes warm undertones and refined facial proportions; Sub-Saharan African (20.5%) deepens complexion and adds richness to skin tone; Middle Eastern (5.8%) adds subtle warmth to features. Result: warm deep brown skin with golden undertones, almond-shaped eyes with warm amber-brown tones, prominent cheekbones with balanced angularity, and a complexion that reads as globally mixed rather than regionally specific.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Athletic and lean with visible musculature — dancer's precision married to fighter's density. Geneware muscle treatment creates subtle dimensional quality to shoulders and forearms, almost imperceptibly denser than baseline human",
@@ -313,8 +294,8 @@
     "hair_style": "Pulled back in a functional braid, often wrapped with wire or cord for quick-release",
     "hair_length": "Medium — shoulder-length when loose, never loose during work",
     "eye_color": "Amber-brown, natural — no optical augmentation",
-    "skin_tone": "Warm medium brown with subtle golden undertone—a harmonious blend reflecting Latin American, East Asian, Pacific Islander, and African ancestry without defaulting to any single regional archetype",
-    "complexion": "Prominent cheekbones with defined jawline, almond-shaped eyes set at slight upward angle, minimal scarring on face—suggests careful work. Skin texture resilient, weathered around eyes from squinting in industrial light. No cosmetic grooming; pragmatic and maintained. Facial structure shows East Asian and Latin American influence in balanced proportions.",
+    "skin_tone": "Warm deep brown with golden undertone — a harmonious blend reflecting East Asian, Southeast Asian, Sub-Saharan African, and Middle Eastern ancestry without defaulting to any single regional archetype",
+    "complexion": "Prominent cheekbones with defined jawline, almond-shaped eyes set at slight upward angle, minimal scarring on face—suggests careful work. Skin texture resilient, weathered around eyes from squinting in industrial light. No cosmetic grooming; pragmatic and maintained. Facial structure shows balanced proportions across East Asian, Southeast Asian, and African features with warm deep undertones creating cohesive, globally-mixed appearance.",
     "visible_augmentations": "Subdermal armor plating across torso and forearms creates subtle but unmistakable geometric texture beneath skin — scarred, worn appearance with evidence of field repairs. Geneware muscle density treatment visible as exceptional muscular definition and unusual density in shoulders, forearms, and core — reads as 'too capable' to observers familiar with chrome. No visible optics, limb replacement, or external hardware — augmentations are surgical and deliberate",
     "distinguishing_marks": [
       "Burn scar along left collarbone — three fingers wide, pale and smooth, circa 8 years old, deliberate pattern suggests industrial accident or intentional marking",
@@ -325,17 +306,44 @@
     "posture_movement": "Economical and alert — never fully relaxed, baseline awareness maintained even in cover identity mode. Movement is fluid and precise, minimal wasted motion. When armed or in operational context, posture becomes predatory and coiled. Eye contact duration calibrated; she watches before engaging. Walks with slight forward lean, weight centered on balls of feet — ready for explosive movement",
     "clothing_style": "Tier 3-4 pragmatism — functional streetwear that accommodates concealed weapons and augmentations. Off-duty: loose-fitting long-sleeve synthweave tops (dark colors) that allow subdermal armor to move freely, worn tactical pants with reinforced thigh pockets, scuffed runner boots with reinforced soles. On-contract: armored jacket — unmarked, modular, with integrated holsters. No logos, no corp affiliation visible. Minimal jewelry except functional watch with subdued face. Overall impression: someone who buys clothes to wear, not to signal status"
   },
-  "image_prompt": "Haze Quiñones-Nygaard, 173cm athletic woman, warm medium-brown skin with golden undertones, amber-brown eyes, prominent cheekbones, defined jawline, dark brown hair with silver threads pulled back in functional braid. Faded burn scar along left collarbone, claw-rake scars on right forearm. Subdermal armor plating visible as geometric ridges beneath skin on torso and forearms—worn, scratched military appearance. Geneware muscle treatment creates exceptional definition in shoulders and forearms. Minimalist circuit tattoo on left wrist. Wearing loose dark synthweave long-sleeve top and reinforced tactical pants, scuffed runner boots. Economical posture, alert presence, coiled readiness. Cyberpunk 2226, Great Lakes Metropolitan Zone, industrial low light, neon accent lighting catching subdermal armor at sharp angles, moody and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Haze Sigurdsson-Shimizu, 2226 neo-noir operative, 173cm athletic frame with lean musculature. Warm deep brown skin with golden undertones reflecting East Asian, Southeast Asian, Sub-Saharan African, and Middle Eastern heritage blend. Almond-shaped amber-brown eyes, prominent cheekbones, defined jawline. Dark brown hair with silver at temples pulled back in tight functional braid. Subdermal armor plating creates subtle geometric ridges visible beneath skin across chest and forearms, scarred and worn. Pale burn scar on left collarbone. Faded claw-rake scars on right forearm. Dark synthweave long-sleeve top, tactical reinforced pants, scuffed runner boots. Posture alert and coiled, weight on balls of feet. Industrial neon lighting casting shadows across her augmented frame. Gritty Great Lakes Metropolitan Zone alleyway setting, rain-slicked pavement, neo-noir urban aesthetics. Mood: predatory readiness, economical precision, dangerous capability. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 29.3,
-    "East Asian": 27.9,
-    "Northern European": 16.0,
-    "Pacific Islander": 14.2,
-    "Sub-Saharan African": 7.5,
-    "Eastern European": 5.1
+    "East Asian": 42.5,
+    "Southeast Asian": 31.2,
+    "Sub-Saharan African": 20.5,
+    "Middle Eastern": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 21.2
+      },
+      "Japanese": {
+        "Japanese": 21.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 31.2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 17.3,
+        "Nigerian": 3.2
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 2.4
+      },
+      "Arab Levantine": {
+        "Lebanese": 3.4
+      }
+    }
+  }
 }

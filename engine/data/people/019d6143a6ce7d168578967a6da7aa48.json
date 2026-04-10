@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ce7d168578967a6da7aa48",
   "type": "character",
-  "name": "Tumelo Savea",
+  "name": "Szymon Malhotra",
   "aliases": [
     "Ash",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Sinan Tanaka-Frimpong is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Szymon Malhotra is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.1,
@@ -261,7 +261,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,36 +275,12 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Cem Lund-Bangura",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "Makena Johanssen-Diallo",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Prophet",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Augmented Reality Court System",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "TERMINUS",
-    "TESSERA CC-6 'Shepherd'",
-    "The Fathom Line",
-    "The Wire Taps",
-    "Volkov-Saito Precision VS-R8 'Verdict'"
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Pacific Islander (Polynesian/Melanesian) dominant with significant Sub-Saharan African and Hispanic/Latin American ancestry—a striking blend producing rich warm-brown skin with golden undertones, broad facial structure with strong cheekbones, and the athletic build characteristic of Pacific Islander genetics.",
+    "heritage": "Predominantly South Asian (61.4%) with meaningful Eastern European (19.6%) and Northern European (19.0%) admixture. This genetic blend produces warm medium-brown skin with subtle golden undertones, a balanced facial structure reflecting the convergence of South Asian definition with Northern European angularity, and the lean, efficient musculature characteristic of functional optimization across diverse ancestral lines.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Lean and angular, all efficiency — long limbs with visible musculature but no excess bulk. The physique of someone who has optimized every gram for functional movement rather than appearance.",
@@ -312,8 +288,8 @@
     "hair_style": "Closely cropped, sharp edges, deliberately maintained",
     "hair_length": "Short",
     "eye_color": "Chrome iris rings encircling dark pupils — thermal and low-light augmentation visible as faint LED circuitry at the rim",
-    "skin_tone": "Deep warm brown with golden undertones—rich melanin-dense complexion from his Pacific Islander and African ancestry, with subtle warmth from Hispanic heritage.",
-    "complexion": "Broad, strong facial structure with prominent cheekbones and defined jawline typical of Pacific Islander genetics. Skin shows minor scarring around the eye sockets from augmentation integration — thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
+    "skin_tone": "Warm medium brown with golden undertones — medium melanin density complexion blending South Asian warmth with cooler Northern European undertones, creating balanced warm depth across face and body.",
+    "complexion": "Balanced facial structure with defined cheekbones and jawline reflecting South Asian prominence and Northern European angularity. High cheekbones, defined jawline, straight nose with subtle bridge definition characteristic of South Asian-Northern European blend. Skin shows minor scarring around the eye sockets from augmentation integration — thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
     "distinguishing_marks": [
       "Surgical scars encircling both eye sockets in thin white lines where cybernetic implants were integrated.",
       "Thin burn scar along the inside of his right forearm — pale against darker skin, roughly 8cm long, from an old extraction gone wrong.",
@@ -323,14 +299,36 @@
     "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
     "clothing_style": "Tier 2-3 functional aesthetic — tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
   },
-  "image_prompt": "Tumelo Savea, a lean 188cm tall man with deep warm golden-brown skin from Pacific Islander and African heritage, standing in a cyberpunk 2226 Great Lakes Metropolitan Zone urban setting. Sharp facial structure with prominent cheekbones, short black hair with silver at temples, clean-shaven. Striking chrome iris rings glowing faintly in both eyes with visible LED circuitry—his most distinctive feature. Thin surgical scars barely visible around eye sockets. Wearing a charcoal tactical jacket over grey compression base layer, black reinforced pants, unmarked boots. Posture is alert and economical, weight forward, standing ready. Moving with calculated precision through neon-lit rain-slicked streets, environment reflecting in his chrome eyes. Moody amber and blue cyberpunk lighting, slight thermal haze effect suggesting his augmented vision overlay. Worn titanium watch visible. Professional field operative aesthetic, no wasted motion, constant environmental scanning. --ar 2:3 --v 6",
+  "image_prompt": "Szymon Malhotra, tall lean male with warm medium-brown skin and golden undertones, sharp defined cheekbones and angular jawline blending South Asian and Northern European features. Black hair with silver temples, closely cropped and sharp-edged. Chrome iris rings glowing faintly in his dark eyes with visible LED circuitry, unblinking thermal-vision augment. Thin white surgical scars around eye sockets, clean-shaven. Dressed in charcoal tactical jacket and black reinforced pants over grey compression base layer, unmarked reinforced boots. Military-style titanium watch. Worn titanium watch. Standing in low-light neo-noir environment—neon edge lighting catching the chrome iris rings—scanning surroundings with intense focus, posture forward-ready, every movement economical and calculated. GLMZ 2200s Great Lakes Metropolitan Zone operative. Film noir lighting, moody and tense. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 66.7,
-    "Sub-Saharan African": 23.5,
-    "Hispanic/Latin American": 9.8
+    "South Asian": 61.4,
+    "Eastern European": 19.6,
+    "Northern European": 19
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 61.4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 4.3,
+        "Russian": 1.8
+      },
+      "Slavic South": {
+        "Croatian": 7.4,
+        "Bulgarian": 6.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 19
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6da7e01b366bbe78c422da0",
   "type": "character",
-  "name": "Cipher Bergqvist",
+  "name": "Cipher Jeong",
   "aliases": [
     "Stitch"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "The Laceworks, Stall Row 7, Ironvein, near Lincoln and Belmont",
-  "description": "Sorcha is a broad-shouldered woman with deep ochre skin and close-cropped natural hair dyed in chevrons of burnt orange and cream — a technique she does herself using surplus textile dye. Her left arm from the elbow down is covered in a patchwork of fabric swatches she's stitched directly to her jacket sleeve, each one a sample from her current inventory. Her eyes have iris mods — concentric rings of copper and jade — that she claims she won in a card game but actually saved six months of UBC stipend for. She laughs with her whole chest and haggles with theatrical offence, clutching her heart and muttering in a mix of Igbo and Greek when customers lowball her.\n\nHer stall is a riot of stolen aesthetics: Tessera corporate surplus, knockoff Zheng-Dao runway pieces, hand-altered casualwear with new stitching that makes them genuinely better than the originals. She has an eye for what will sell in two weeks before anyone else sees it coming, and a deep contempt for trend-followers who come to her after the fact. She's prouder of her craft than her income suggests she should be, and it shows in every seam.",
+  "description": "Cipher Jeong is a broad-shouldered woman with deep ochre skin and close-cropped natural hair dyed in chevrons of burnt orange and cream — a technique she does herself using surplus textile dye. Her left arm from the elbow down is covered in a patchwork of fabric swatches she's stitched directly to her jacket sleeve, each one a sample from her current inventory. Her eyes have iris mods — concentric rings of copper and jade — that she claims she won in a card game but actually saved six months of UBC stipend for. She laughs with her whole chest and haggles with theatrical offence, clutching her heart and muttering in a mix of Igbo and Greek when customers lowball her.\n\nHer stall is a riot of stolen aesthetics: Tessera corporate surplus, knockoff Zheng-Dao runway pieces, hand-altered casualwear with new stitching that makes them genuinely better than the originals. She has an eye for what will sell in two weeks before anyone else sees it coming, and a deep contempt for trend-followers who come to her after the fact. She's prouder of her craft than her income suggests she should be, and it shows in every seam.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -155,7 +155,7 @@
     "Generous Fool": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Laceworks",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,32 +177,12 @@
     "Ironvein",
     "Irontide Tidal Energy",
     "Tessera Corponation",
-    "Clearpath",
     "Copper",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Dzemal Acholonu-Patagiri",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Nodar Kuznetsov-Adu",
-    "Obafemi Szczypiński-Lautoa",
-    "Othniel Babić-Asantewaa",
-    "Pirjo Asante-Ulukhan",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "TESSERA TC-3 'Crucible'",
-    "The Coffin Nails",
-    "The Cutters Guild",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov"
+    "Clearpath"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly East Asian (36.4%) with significant Hispanic/Latin American heritage (30.6%), blended with Northern European (16.5%), Sub-Saharan African (13.4%), and minor Middle Eastern (3.1%) ancestry—a striking mosaic of the Ubiquitous Diaspora resulting in warm-toned skin with subtle depth, East Asian facial structure softened by broader features, and a unique phenotype that defies singular categorization",
+    "heritage": "Dominant East Asian (32.7%) and Southeast Asian (25.0%) ancestry with substantial Northern European (20.3%) and Hispanic/Latin American (13.7%) admixture, complemented by South Asian (8.3%) heritage—a striking Ubiquitous Diaspora phenotype featuring warm golden-brown skin with olive undertones, East Asian cheekbone prominence and eye shape blended with broader facial structure, fuller lips, and slightly wider facial proportions from Southeast Asian and Hispanic/Latin American ancestry, creating a distinctive multi-regional appearance",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy with functional muscle from handling bolts of fabric and manual textile work; not lean, not heavy — solidly built with the physique of someone who works with their hands for ten hours a day",
@@ -210,8 +190,8 @@
     "hair_style": "Close-cropped with geometric precision; dyed chevrons run front-to-back across the crown",
     "hair_length": "Short",
     "eye_color": "Dark brown iris with cosmetic modification: concentric rings of brushed copper and jade set in the iris itself",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, the result of East Asian and Latin American heritage mixing with Sub-Saharan depth—sun-darkened from outdoor market work into a rich, luminous ochre",
-    "complexion": "Clear and sun-weathered; East Asian cheekbone structure with widened bridge and fuller lips from Latin American and African heritage; strong defined jawline; minimal makeup except occasional kohl around the modified eyes",
+    "skin_tone": "Warm golden-brown with subtle olive undertones from the blending of East Asian, Southeast Asian, Northern European, Hispanic/Latin American, and South Asian heritage—sun-darkened from outdoor market work into a rich, luminous ochre",
+    "complexion": "Clear and sun-weathered; East Asian cheekbone structure softened by Southeast Asian and Hispanic/Latin American influences resulting in slightly broader cheekbones and fuller lips; strong defined jawline reflecting Northern European heritage; minimal makeup except occasional kohl around the modified eyes",
     "distinguishing_marks": [
       "Fabric swatches stitched directly to the sleeve of her left jacket arm from elbow to wrist — a patchwork of varying textures, colors, and weaves that serves as mobile inventory samples",
       "Permanent textile dye stains on her fingertips and under her nails from years of hand-dyeing and alteration work",
@@ -221,16 +201,64 @@
     "posture_movement": "Confident and expansive; she takes up space deliberately. Moves with efficiency but also theatricality — gestures are broad when haggling, deliberate when inspecting fabric. Stands with weight shifted, often one hand on her hip or holding a bolt of material. Natural and unselfconscious.",
     "clothing_style": "Tier 4 working-class practicality with personal aesthetic rebellion. Always wears a heavy canvas jacket or work coat (usually indigo or charcoal) with the fabric swatches stitched to the left sleeve. Layers — thermal undershirts, sometimes a vest. Cargo pants or modified denim with utility pockets. Steel-toed boots, scuffed from market floors. Occasionally wears pieces from her own inventory as living advertisements — a hand-altered Tessera surplus overshirt, a Zheng-Dao knockoff with improved seams. No corporate branding. Minimal jewelry except for a worn silver bangle on her right wrist (family piece, Greek side)."
   },
-  "image_prompt": "Cipher Bergqvist, a 172cm woman with warm golden-brown skin and East Asian-influenced features softened by Latin American and African heritage; close-cropped black hair with burnt orange and cream chevron patterns; dark eyes modified with concentric copper and jade iris rings. Standing in a sprawling GLMZ market stall, 2226, wearing a well-worn indigo canvas work jacket with fabric swatches stitched to the left sleeve—a mobile textile inventory. Thermal undershirt visible at collar, cargo pants, scuffed steel-toed boots. One hand rests confidently on hip, the other holding a bolt of iridescent fabric. Dyed stains visible on fingertips. Small burn scar visible on right forearm. Worn silver bangle catches neon market lighting. Natural confident posture, expansive energy. Surrounded by hanging textiles and color-rich materials. Cyberpunk 2200s aesthetic, practical working-class rebellion, warm market lighting with neon accent glow. Theatrical yet efficient presence. --ar 2:3 --v 6",
+  "image_prompt": "Cipher Jeong, a 172cm mixed-heritage woman in 2226 Great Lakes Metropolitan Zone, warm golden-brown skin with olive undertones from East Asian, Southeast Asian, Northern European, Hispanic/Latin American and South Asian ancestry. East Asian cheekbones softened by broader facial structure and fuller lips. Close-cropped natural black hair with geometric burnt orange and cream chevron pattern running front-to-back. Dark brown eyes with embedded concentric copper and jade cosmetic iris modification rings. Sturdy, broad-shouldered build, sun-darkened skin. Wearing heavy charcoal canvas work coat with vibrant fabric swatches stitched to left sleeve from elbow to wrist—textile inventory samples in varying colors and weaves. Layered with thermal undershirt, cargo pants with utility pockets, scuffed steel-toed boots. Dye stains visible on fingertips. Worn silver bangle on right wrist. Standing in neon-lit market setting, confident expansive posture, one hand on hip holding fabric bolt. Neo-noir working-class aesthetic, practical rebellion, hand-dyed garment textures, cool neon market lighting against warm skin tones, detailed textures visible on clothing and samples --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 36.4,
-    "Hispanic/Latin American": 30.6,
-    "Northern European": 16.5,
-    "Sub-Saharan African": 13.4,
-    "Middle Eastern": 3.1
+    "East Asian": 32.7,
+    "Southeast Asian": 25,
+    "Northern European": 20.3,
+    "Hispanic/Latin American": 13.7,
+    "South Asian": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 17.6
+      },
+      "Japanese": {
+        "Japanese": 7
+      },
+      "Chinese": {
+        "Cantonese": 8.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 15.3,
+        "Sumatran": 9.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 17.1
+      },
+      "Germanic": {
+        "German": 3.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 4.4
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.7,
+        "Dominican": 5.3
+      },
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Nicaraguan": 0.2
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.2
+      }
+    }
+  }
 }

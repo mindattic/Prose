@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d373a989302626193a8e7b",
   "type": "character",
-  "name": "Aero Bergqvist",
+  "name": "Aero Mukherjee",
   "aliases": [
     "Sol",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "The Circuit, Ferrogate Transit Regional Compliance Tower, near Milwaukee and Damen",
-  "description": "Solveig is a tall woman with the careful posture of someone who has spent decades making herself hard to read — shoulders squared, hands always visible, face arranged into a polite neutrality that reveals nothing. Her skin is deep brown, her hair silver-white and cropped close, and she has a single cosmetic mod: irises that shift between amber and pale grey depending on her stress load, a biometric vanity piece she bought in her thirties that she now regrets because it gives too much away. She dresses in Ferrogate's regulation charcoal, always pressed, always correct, always the most put-together person in any room she enters.\n\nShe is meticulous, dry-humored, and quietly ruthless in the way only people who have survived three corporate restructurings can be. She doesn't raise her voice. She doesn't need to. Solveig has outlasted four division heads and two full executive purges by being the person who knows where every buried regulation lives and exactly how to weaponize it. She is not beloved. She is respected, which she has decided is better.",
+  "description": "Aero Mukherjee is a tall woman with the careful posture of someone who has spent decades making herself hard to read — shoulders squared, hands always visible, face arranged into a polite neutrality that reveals nothing. Her skin is deep brown, her hair silver-white and cropped close, and she has a single cosmetic mod: irises that shift between amber and pale grey depending on her stress load, a biometric vanity piece she bought in her thirties that she now regrets because it gives too much away. She dresses in Ferrogate's regulation charcoal, always pressed, always correct, always the most put-together person in any room she enters.\n\nShe is meticulous, dry-humored, and quietly ruthless in the way only people who have survived three corporate restructurings can be. She doesn't raise her voice. She doesn't need to. Aero Mukherjee has outlasted four division heads and two full executive purges by being the person who knows where every buried regulation lives and exactly how to weaponize it. She is not beloved. She is respected, which she has decided is better.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -170,7 +170,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,29 +231,17 @@
     "Ferrogate Transit",
     "The Circuit",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Charcoal",
+    "Circuit",
+    "Silver",
     "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pale Mile",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Cezar Watanabe-Gyasi",
-    "Chronicle",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Patient Zero",
-    "Tessera Corponation",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Yannick Tofauti-Szarvásy"
+    "The Pale Mile"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed East Asian, Northern European, and South Asian ancestry. The combination manifests as a striking cross-cultural phenotype: the angular facial structure and eye shape characteristic of East Asian genetics blends with Northern European bone prominence and height, while South Asian heritage contributes warm undertones and subtle facial contours. The result is someone who reads as cosmopolitan, deliberately difficult to place at a glance.",
+    "heritage": "Ubiquitous Diaspora phenotype: East Asian (29%), South Asian (22.4%), Eastern European (20.8%), Southeast Asian (11.4%), Sub-Saharan African (8.7%), and Hispanic/Latin American (7.7%) ancestry creates a genuinely pan-global appearance. Angular East Asian bone structure and moderate height potential blend with Eastern European frame and prominence, warmed by South Asian golden undertones and enriched by African heritage contributing warm depth and subtle dimension to skin and feature definition. Southeast Asian and Hispanic ancestry add further complexity and breadth to facial contours. Deliberately impossible to place at first glance—a living map of the Ubiquitous Diaspora.",
     "height_cm": 182,
     "weight_kg": 71,
     "build": "Tall and lean, with the careful musculature of someone who maintains herself through discipline rather than athleticism. Long-limbed, with a measured economy of movement that suggests decades of self-awareness.",
@@ -261,8 +249,8 @@
     "hair_style": "Cropped close to the scalp in a precise, geometric cut maintained weekly",
     "hair_length": "Short",
     "eye_color": "Stress-reactive biometric irises: amber under neutral conditions, shifting to pale grey under elevated stress or confrontation",
-    "skin_tone": "Warm golden-brown, the result of blended East Asian, Northern European, and South Asian ancestry. Even complexion with subtle depth, neither cool nor warm but bridging both.",
-    "complexion": "High cheekbones with gentle definition from her mixed heritage, slight epicanthal eye fold characteristic of her East Asian ancestry, balanced by the straighter brow line of Northern European genetics. Unlined for her age, with the polished appearance of someone who takes calculated care of her skin. Minimal cosmetic work beyond the iris mod. Face arranged in practiced neutrality; mouth at rest suggests dry humor.",
+    "skin_tone": "Rich deep golden-brown with warm undertones throughout, the result of blended East Asian, South Asian, Eastern European, Southeast Asian, Sub-Saharan African, and Hispanic/Latin American ancestry. Luminous, even complexion with substantial depth and warmth.",
+    "complexion": "High, defined cheekbones from blended East Asian and Eastern European structure, slight epicanthal eye fold characteristic of East Asian and Southeast Asian heritage, balanced by broader facial structure from Hispanic and African ancestry. Straighter brow line from Eastern European genetics. Warm golden dimension from South Asian and African ancestry contributes richness to facial contours. Unlined for her age, with the polished appearance of someone who takes calculated care of her skin. Minimal cosmetic work beyond the iris mod. Face arranged in practiced neutrality; mouth at rest suggests dry humor.",
     "distinguishing_marks": [
       "Thin white scar along the left jaw line, approximately 4cm, barely visible against her skin tone — old enough to predate her tenure at Ferrogate"
     ],
@@ -270,14 +258,66 @@
     "posture_movement": "Shoulders squared, spine straight, movements economical and precise. Hands always visible on desk or in controlled position. Walks with deliberate pace. Her entire bearing broadcasts 'I am not a threat and I know exactly how to be dangerous.'",
     "clothing_style": "Ferrogate Transit regulation charcoal suits, bespoke tailored to fit her frame perfectly. High-grade synthetic material, pressed to knife-edge precision. Minimal jewelry: a single platinum ring on her left ring finger (married or committed, kept private). Shoes are black, polished daily. No visible branding. Tier 1-2 corpo aesthetic rendered invisible through perfect adherence to protocol."
   },
-  "image_prompt": "Aero Bergqvist, mixed-heritage woman with East Asian, Northern European, and South Asian ancestry, 182cm tall and lean. Silver-white cropped hair, warm golden-brown skin tone, high cheekbones with subtle depth. Stress-reactive amber eyes. Dressed in precisely tailored charcoal Ferrogate Transit regulation suit, impeccably pressed. Faint neural implant port visible at right temple. Thin scar along left jawline. Standing with military posture, shoulders squared, economical movement. Neutral expression suggesting dry humor. Platinum ring on left hand. Cyberpunk 2226, GLMZ transit authority setting, cool overhead lighting casting sharp shadows, minimalist corporate interior, quiet confidence and dangerous competence. --ar 2:3 --v 6",
+  "image_prompt": "Aero Mukherjee, 182cm tall lean woman with silver-white cropped hair, rich deep golden-brown skin with warm undertones reflecting pan-global East Asian, South Asian, Eastern European, Southeast Asian, African, and Hispanic heritage. High defined cheekbones with subtle East Asian eye fold, warm luminous complexion. Stress-reactive amber irises. Thin scar along left jaw. Impeccably tailored charcoal Ferrogate Transit suit, crisp and knife-edge pressed. Single platinum ring, polished black shoes. Perfect posture, economical movement, practiced neutral expression. Subtle neural implant port visible at right temple. GLMZ corporate transit station setting, cool industrial lighting casting sharp shadows, her bearing conveying controlled competence and quiet danger. Clean aesthetic, minimalist chrome, tier 1-2 corpo invisible perfection. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.2,
-    "Northern European": 37.0,
-    "South Asian": 25.8
+    "East Asian": 29,
+    "South Asian": 22.4,
+    "Eastern European": 20.8,
+    "Southeast Asian": 11.4,
+    "Sub-Saharan African": 8.7,
+    "Hispanic/Latin American": 7.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 13,
+        "Shanghainese": 10.3
+      },
+      "Korean": {
+        "Korean": 3.2
+      },
+      "Japanese": {
+        "Japanese": 2.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 22.4
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 5.8
+      },
+      "Slavic East": {
+        "Ukrainian": 3.2
+      },
+      "Slavic South": {
+        "Bosnian": 11.8
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 11.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 5.1,
+        "Ethiopian": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 5.3
+      },
+      "Mexican": {
+        "Mexican": 2.4
+      }
+    }
+  }
 }

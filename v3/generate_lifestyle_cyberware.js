@@ -145,7 +145,7 @@ function getExistingNames() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Phi symbol is always written as the character itself, not spelled out). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Phi symbol is always written as the character itself, not spelled out). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Default to mixed heritage from unexpected global combinations. There is no dominant ethnicity.
 
@@ -330,7 +330,7 @@ async function generateCategory(catDef) {
     // Only send a compact comma-separated list
     const existingShort = allExisting.map(n => n.replace(/[^a-zA-Z0-9 ]/g, '').substring(0, 40));
 
-    const system = `You generate lifestyle cyberware implant entries for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} cyberware objects. No explanation, no markdown fencing, just the raw JSON array.
+    const system = `You generate lifestyle cyberware implant entries for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} cyberware objects. No explanation, no markdown fencing, just the raw JSON array.
 
 ${WORLD_CONTEXT}
 

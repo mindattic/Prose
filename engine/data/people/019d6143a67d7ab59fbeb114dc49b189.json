@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67d7ab59fbeb114dc49b189",
   "type": "character",
-  "name": "Magnus Holm-Karunaratne",
+  "name": "Sol Kabwit-Inoue",
   "aliases": [
     "Konk",
     "the Whale"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Grand Corridor, beneath the Kessler Interchange overpass — Konk's Cart, near Armitage and Milwaukee",
-  "description": "Okonkwo is enormous — 1.95 meters, broad as a doorframe, with deep black skin and a bald head that he keeps oiled and that catches the neon from the Kessler Interchange in amber and violet. He has a full white beard that he keeps very neat, heavy-lidded eyes that make him look sleepy until you watch them move, and a pair of retractable claw mods on his right hand that he got in his thirties for reasons he no longer fully remembers and now uses primarily for scoring citrus peel. He runs his cart from a converted cargo drone chassis that he's modified over fifteen years into something almost architectural — woks, broth vats, a bank of mismatched stools, two heat lamps, and a shrine to the local transit-E.L.F. built from signal-mirror fragments and a perpetually running old transit ticker.\n\nOkonkwo is the kind of person who becomes a landmark. He has been in the same spot under the Kessler Interchange for twenty-two years and intends to die there. He feeds people on credit without comment and remembers what you ordered three years ago. He is fundamentally, stubbornly gentle — a big man who chose softness as a deliberate political act after a youth in which he was not soft at all. He sings to himself while he cooks, always the same four songs in rotation, and accepts requests but never honors them.",
+  "description": "Sol Kabwit-Inoue is enormous — 1.95 meters, broad as a doorframe, with deep black skin and a bald head that he keeps oiled and that catches the neon from the Kessler Interchange in amber and violet. He has a full white beard that he keeps very neat, heavy-lidded eyes that make him look sleepy until you watch them move, and a pair of retractable claw mods on his right hand that he got in his thirties for reasons he no longer fully remembers and now uses primarily for scoring citrus peel. He runs his cart from a converted cargo drone chassis that he's modified over fifteen years into something almost architectural — woks, broth vats, a bank of mismatched stools, two heat lamps, and a shrine to the local transit-E.L.F. built from signal-mirror fragments and a perpetually running old transit ticker.\n\nSol Kabwit-Inoue is the kind of person who becomes a landmark. He has been in the same spot under the Kessler Interchange for twenty-two years and intends to die there. He feeds people on credit without comment and remembers what you ordered three years ago. He is fundamentally, stubbornly gentle — a big man who chose softness as a deliberate political act after a youth in which he was not soft at all. He sings to himself while he cooks, always the same four songs in rotation, and accepts requests but never honors them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -165,7 +165,7 @@
     "Hustler": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,39 +224,23 @@
     "Ferrogate Transit",
     "Grand Corridor",
     "Lakeview Neon",
+    "GLMZ",
     "Tessera TK-7 Service Pistol 'Ticker'",
-    "Origami",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
-    "The Milwaukee Core",
-    "Bintou Halvorsen-Osei",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Lyric",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Sagyn Ogawa-Twumasi",
-    "Saodat Mirzoyan-Fubara",
-    "Sorin Ekwensi-Balasanyan",
-    "Stainless Steel",
-    "Tafara Quiñones-Saarinen",
-    "The Belly",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+    "Cargo Tacos",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European, South Asian, East Asian, with Sub-Saharan African ancestry — a striking blend resulting in warm-brown skin with golden undertones, the bone structure showing Scandinavian breadth across the shoulders and cheekbones combined with South Asian facial proportions and East Asian eye shape",
+    "heritage": "East Asian (33.6%), Southeast Asian (26.2%), Northern European (21.0%), Sub-Saharan African (15.7%), and South Asian (3.5%) ancestry — a striking global blend. The genetic combination produces warm golden-brown skin with rich depth and subtle luminosity. Bone structure reflects the dominance of East Asian and Southeast Asian heritage in cheekbones, eye shape, and facial geometry, tempered by Northern European breadth across shoulders and jaw, warmed by Sub-Saharan African melanin contribution, and refined by South Asian proportions in overall facial balance. His features represent a truly integrated global genetic legacy.",
     "height_cm": 195,
     "weight_kg": 128,
     "build": "Massive and broad-shouldered, carrying his bulk with deliberate ease — a man who learned early that size demands responsibility. Thick through the chest and forearms, soft at the belly from decades of cooking steam and broth-tasting. Moves with surprising grace for his frame.",
     "hair_color": "None — naturally bald",
     "hair_style": "Bald head kept oiled to a subtle sheen",
     "hair_length": "None",
-    "eye_color": "Deep brown with a slight upturned shape, heavy-lidded and observant",
-    "skin_tone": "Warm golden-brown, the result of Northern European paleness tempered by strong South and East Asian melanin, enriched further by Sub-Saharan African heritage — even and rich with golden undertones from decades under heat lamps and neon",
-    "complexion": "Clear skin with the texture of constant exposure to steam and spice — fine lines around the eyes and mouth from decades of cooking and smiling. White beard kept in a tight, neat shape, freshly trimmed. Face shows the settled quality of someone at peace with his own permanence, with bone structure reflecting the blend of broad Northern European features and more delicate South Asian proportions.",
+    "eye_color": "Deep brown with a slight upturned shape characteristic of East/Southeast Asian heritage, heavy-lidded and observant",
+    "skin_tone": "Warm golden-brown with luminous depth — the result of East Asian and Southeast Asian melanin (59.8% combined) creating a rich base, intensified by Sub-Saharan African heritage (15.7%), subtly brightened by Northern European undertones (21.0%). Even and radiant, with golden warmth from decades under heat lamps and neon, developing a lived-in patina.",
+    "complexion": "Clear skin with the texture of constant exposure to steam and spice — fine lines around the eyes and mouth from decades of cooking and smiling. White beard kept in a tight, neat shape, freshly trimmed, creating striking contrast against warm brown skin. Face shows the settled quality of someone at peace with his own permanence. Bone structure reflects the prominence of East/Southeast Asian cheekbones and facial geometry, balanced by Northern European jaw breadth, with proportions refined by South Asian heritage contribution.",
     "distinguishing_marks": [
       "Burn scars on both forearms in scattered patches — old kitchen accidents accumulated over forty years, silvery-white against his warm brown skin",
       "A faint scar along his right jaw line, thin and pale, running from ear toward chin — origin unknown, never discussed",
@@ -266,15 +250,59 @@
     "posture_movement": "Stands with his weight settled, grounded — a man who expects to remain in one place. Moves deliberately, economically, no wasted motion. When he reaches or gestures, both hands move with equal authority despite the aged claws. Heavy, measured gait. He stands with one hand on his cart or in a pocket most of the time, the posture of someone who has learned to take up less space than he occupies.",
     "clothing_style": "Tier 3-4 working comfort: loose linen shirts in cream or pale blue, sleeves rolled to mid-forearm for cooking, stained with years of broth and spice but clean. Heavy canvas apron in deep green, pockets worn soft, bearing embroidered patches of his own design. Loose work pants in dark grey cotton. Slip-on boots in worn black synthetic leather, specifically chosen for standing all day. A thin chain around his neck — cheap but genuine silver, bearing a small transit token from 2204. Rings on both hands: index fingers sport simple bands of stainless steel worn smooth by decades. No corporate branding. His appearance reads as deliberately outside the consumption economy."
   },
-  "image_prompt": "Magnus Holm-Karunaratne, 195cm tall broad-shouldered man with warm golden-brown skin reflecting Northern European, South Asian, and East Asian heritage, naturally bald head oiled to subtle sheen, deep brown heavy-lidded eyes with slight upturned shape, white trimmed beard, scattered silvery burn scars on dark forearms from forty years cooking, faint scar along right jawline. Retractable chrome claw mods on right hand showing age and patina. Wearing loose cream linen shirt sleeves rolled to forearms, deep green canvas apron with worn soft pockets and embroidered patches, dark grey cotton work pants, worn black synthetic leather slip-on boots. Simple stainless steel rings on index fingers, cheap silver chain with 2204 transit token around neck. Standing grounded and deliberate in cyberpunk 2226 street kitchen setting, neon glow reflecting off oiled head, steam rising around him, warmly lit against GLMZ Great Lakes Metropolitan backdrop, authentic working-class dignity, outside consumption economy aesthetic --ar 2:3 --v 6",
+  "image_prompt": "A massive 195cm tall man with warm golden-brown skin and luminous depth, blending East Asian and Southeast Asian heritage with Northern European breadth and Sub-Saharan African warmth. Natural bald head oiled to subtle sheen, deep brown upturned eyes with heavy lids, white trimmed beard creating striking contrast. Weathered face showing fine lines, scattered silvery burn scars on both forearms, thin pale scar along right jawline. Standing grounded and deliberate in cream linen shirt with sleeves rolled, deep green worn canvas apron, dark grey work pants, black synthetic leather boots. Right hand shows retractable chrome claw mods with visible housing and patina. Simple stainless steel rings on index fingers, cheap silver chain with 2004 transit token around neck. Faded indigo transit map tattoo on left wrist. Late 2220s neo-noir kitchen setting, neon heat-lamp glow, steam rising, spice-stained apron, outside consumption economy aesthetic, composed and at peace, measured movements, hands showing equal authority despite aged augmentations. Midjourney style, cinematic lighting, GLMZ --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 42.2,
-    "South Asian": 31.8,
-    "East Asian": 20.4,
-    "Sub-Saharan African": 5.6
+    "East Asian": 33.6,
+    "Southeast Asian": 26.2,
+    "Northern European": 21,
+    "Sub-Saharan African": 15.7,
+    "South Asian": 3.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 5.9,
+        "Fujianese": 10.7
+      },
+      "Japanese": {
+        "Japanese": 12.5
+      },
+      "Korean": {
+        "Korean": 4.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 22.4
+      },
+      "Thai": {
+        "Thai": 3.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 6
+      },
+      "Germanic": {
+        "German": 11.3,
+        "Dutch": 3.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 11.4,
+        "Congolese": 4.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 1.5,
+        "Baloch": 2
+      }
+    }
+  }
 }

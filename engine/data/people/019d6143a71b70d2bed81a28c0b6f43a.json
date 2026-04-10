@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71b70d2bed81a28c0b6f43a",
   "type": "character",
-  "name": "Lyric Holm",
+  "name": "Lyric Makwa",
   "aliases": [
     "The Cataloguer",
     "Doc",
@@ -14,7 +14,7 @@
   "age": 33,
   "status": "active",
   "location": "Old Harbor — works from a converted warehouse on the dry dock, adjacent to Corva's container, near Wacker and State",
-  "description": "Wren Isaza never goes in the water. She is the Boneyard Saints' land-side brain — the one who identifies what the divers bring up, determines its value, traces its origin, and interfaces with pre-collapse systems that have been submerged for two decades. She has a gift for dead technology. She can look at a corroded circuit board, a water-damaged server core, a sealed data capsule that hasn't seen air since the harbor flooded, and tell you what it was, who made it, and how much someone will pay for it.\n\nShe came to Old Harbor from the Circuit, where she'd been running a small electronics repair business that was slowly being crushed by corporate parts monopolies. A Boneyard Saint brought in a piece of salvage she couldn't identify — pre-collapse military firmware sealed in a waterproof housing. Wren spent three days cracking it, sold the data for more money than her shop had made in a year, and realized the harbor was full of things the world had forgotten it needed.\n\nWren is small, dark-haired, perpetually ink-stained from the physical documentation she insists on maintaining alongside digital records. She wears magnification goggles pushed up on her forehead and cargo vests with every pocket full. She talks fast when she's excited about a piece of salvage and not at all when she's working on one. The warehouse is her domain — organized in a system that makes sense to her and no one else, with pre-collapse artifacts in various states of analysis covering every surface.",
+  "description": "Lyric Makwa goes in the water. She is the Boneyard Saints' land-side brain — the one who identifies what the divers bring up, determines its value, traces its origin, and interfaces with pre-collapse systems that have been submerged for two decades. She has a gift for dead technology. She can look at a corroded circuit board, a water-damaged server core, a sealed data capsule that hasn't seen air since the harbor flooded, and tell you what it was, who made it, and how much someone will pay for it.\n\nShe came to Old Harbor from the Circuit, where she'd been running a small electronics repair business that was slowly being crushed by corporate parts monopolies. A Boneyard Saint brought in a piece of salvage she couldn't identify — pre-collapse military firmware sealed in a waterproof housing. Wren spent three days cracking it, sold the data for more money than her shop had made in a year, and realized the harbor was full of things the world had forgotten it needed.\n\nWren is small, dark-haired, perpetually ink-stained from the physical documentation she insists on maintaining alongside digital records. She wears magnification goggles pushed up on her forehead and cargo vests with every pocket full. She talks fast when she's excited about a piece of salvage and not at all when she's working on one. The warehouse is her domain — organized in a system that makes sense to her and no one else, with pre-collapse artifacts in various states of analysis covering every surface.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -178,7 +178,7 @@
     "Social Chameleon": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,44 +197,17 @@
   "related_entities": [
     "The Circuit",
     "Dust & Meridian Saints",
-    "THEOREM",
+    "Circuit",
     "The Voltage Saints",
+    "Origin",
+    "Harbor Fish Shack",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Slagworks Industrial",
-    "Bathysphere Networks",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Constance",
-    "Crucible LL-4 'Peacekeeper'",
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Old Harbor",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Plot 17",
-    "Pullman Works",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Solveig Tambadou-Kereselidze",
-    "Stainless Steel",
-    "The Archive",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Toluwani Przhevalskyj-Mboyo",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko"
+    "Cargo Tacos",
+    "Slagworks Industrial"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Cosmopolitan genetic blend: Northern European (27%), Eastern European (22%), East Asian (22%), Sub-Saharan African (13%), Hispanic/Latin American (13%), and South Asian (3%). Features a striking composite of multiple continental lineages—sharp cheekbones and angular structure influenced by Eastern European and East Asian ancestry, warm undertones from African and Latin American heritage, with Northern European paleness underlying the sun-burnished tan.",
+    "heritage": "Complex Pan-Diaspora genetic blend: Indigenous American (29.1%), East Asian (23.1%), Sub-Saharan African (23.0%), Middle Eastern (12.8%), Southeast Asian (8.3%), and Eastern European (3.7%). Features a striking composite of multiple continental lineages—prominent high cheekbones with angular structure influenced by East Asian and Indigenous American ancestry, warm deep undertones from Sub-Saharan African heritage, subtle Middle Eastern definition in her nose and brow, with Southeast Asian delicacy softening the overall angles. Rich complexity in skin tone reflecting the convergence of warm African and Indigenous tones with the cooler undertones of East Asian ancestry.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Wiry and compact, all lean muscle and restless energy. Shoulders slightly rounded from hunching over workbenches. Hands disproportionately strong despite small frame.",
@@ -242,8 +215,8 @@
     "hair_style": "Pulled back in a perpetually messy bun or loose braid, often with strands escaping",
     "hair_length": "Medium",
     "eye_color": "Dark brown with subtle golden undertone from optical augmentation circuitry visible at the iris edges",
-    "skin_tone": "Warm medium tan with complex undertones—olive and golden notes blending from the genetic mix, burnished by warehouse work under full-spectrum lamps. Underlying pale cool undertones from Northern/Eastern European ancestry show through at wrists and neck.",
-    "complexion": "Fine-featured with high, prominent cheekbones and angular jaw reflecting East Asian and Eastern European structure. Medium-depth complexion with slight warm undertone depth from Sub-Saharan African and Latin American ancestry. Perpetually tired around the eyes. Ink stains on her fingertips and occasional smudges on her face. A small burn scar on her left temple from soldering work, barely visible. Calluses on her fingertips despite augmentations.",
+    "skin_tone": "Warm medium to medium-deep burnished bronze with complex layered undertones—deep golden-bronze from Sub-Saharan African and Indigenous American ancestry blending seamlessly with cooler amber notes from East Asian heritage, touched by Middle Eastern warmth. Rich saturation across cheeks and forehead, deeper earth tones along jawline. Sun-burnished from warehouse work under full-spectrum lamps. Slight cooling at wrists and neck revealing lighter undertone depth beneath.",
+    "complexion": "Fine-featured with high, prominent cheekbones reflecting East Asian and Indigenous American structure, angular jaw softened by Middle Eastern warmth, subtle Southeast Asian delicacy in the overall facial contours. Medium-deep complexion with warm burnished undertone depth from Sub-Saharan African and Indigenous American ancestry. Perpetually tired around the eyes. Ink stains on her fingertips and occasional smudges on her face. A small burn scar on her left temple from soldering work, barely visible. Calluses on her fingertips despite augmentations.",
     "distinguishing_marks": [
       "Linear scar along the inside of her right wrist — quarter-inch long, precise and surgical, from the data-interface jack installation",
       "Faded tattoo on her left forearm: circuit board schematic in minimalist lines, pre-collapse design",
@@ -253,17 +226,75 @@
     "posture_movement": "Perpetually bent forward slightly, as if drawn toward whatever task commands her focus. Fidgeting hands — always adjusting something, turning a component over, tapping against surfaces. Walks quickly and without flourish. Sits cross-legged on her workbench as often as in chairs. Eyes dart constantly, cataloguing details.",
     "clothing_style": "Utilitarian Tier 3 salvage-worker aesthetic. Multi-pocket cargo vests in weathered grey or black over simple undershirts. Worn synthetic pants with reinforced knees and thighs. Steel-toed boots scuffed from warehouse floors. Magnification goggles on her forehead. Fingerless work gloves in supple synthetic leather. A faded pre-collapse Motorola hoodie worn under her vest on cold days. No jewelry except a battered stainless steel watch from the Circuit days that she checks compulsively."
   },
-  "image_prompt": "Lyric Holm, 158cm wiry cyberpunk salvage technician, 2226 Great Lakes Metropolitan Zone. Mixed-heritage face—sharp East Asian and Eastern European cheekbones, warm medium tan with olive-golden undertones from African and Latin American ancestry, dark eyes with faint golden augmentation circuitry glinting at iris edges. Black hair with grey streaks, pulled into messy bun with loose strands. Magnification goggles pushed up on forehead. Ink-stained fingers with micro-manipulation metallic sheening visible under skin. Faded circuit-board tattoo on left forearm, surgical scar on right wrist. Worn cargo vest with multiple pockets, weathered grey over simple undershirt. Synthetic work pants with reinforced knees, scuffed steel-toed boots. Fingerless work gloves. Battered stainless steel watch. Perpetually bent posture, tired around eyes, smudges and ink marks on skin. Warehouse interior with full-spectrum lighting, workbench blurred behind, focused intense expression, tech-noir aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Lyric Makwa, compact wiry 158cm salvage-tech worker with burnished bronze complexion blending Sub-Saharan African, East Asian, and Indigenous American heritage—prominent high cheekbones, angular jawline, dark brown eyes with golden optical augmentation circuitry visible at iris edges. Black hair with iron-grey temple streaks in messy bun. Perpetually tired expression, ink-stained fingertips, faint burn scar on left temple. Wearing weathered grey multi-pocket cargo vest over undershirt, worn synthetic reinforced pants, scuffed steel-toed boots. Magnification goggles pushed up on forehead, micro-manipulation implants visible as faint metallic sheen on fingertip skin. Fingerless work gloves, battered stainless steel watch. Hunched forward posture bent over workbench covered with components and salvage parts. GLMZ Great Lakes Metropolitan Zone warehouse setting, cool full-spectrum overhead lamps casting sharp shadows, worn industrial backdrop, atmosphere of concentrated focus and technical precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 27.2,
-    "Eastern European": 22.4,
-    "East Asian": 22.2,
-    "Sub-Saharan African": 12.8,
-    "Hispanic/Latin American": 12.8,
-    "South Asian": 2.6
+    "Indigenous American": 29.1,
+    "East Asian": 23.1,
+    "Sub-Saharan African": 23,
+    "Middle Eastern": 12.8,
+    "Southeast Asian": 8.3,
+    "Eastern European": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 29.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.8
+      },
+      "Chinese": {
+        "Cantonese": 3.5,
+        "Fujianese": 2.1
+      },
+      "Japanese": {
+        "Japanese": 6.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 8.5
+      },
+      "East African": {
+        "Tanzanian": 2.5,
+        "Somali": 1.6
+      },
+      "West African": {
+        "Senegalese": 6.3,
+        "Nigerian": 4.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 8.7
+      },
+      "Kurdish": {
+        "Kurdish": 4.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 8.3
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 2,
+        "Slovenian": 0.5
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.5,
+        "Romanian": 0.4
+      },
+      "Slavic West": {
+        "Polish": 0.3
+      }
+    }
+  }
 }

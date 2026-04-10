@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66d7a9e889b0abad3eb0552",
   "type": "character",
-  "name": "Kit Árnason",
+  "name": "Kit Quartey",
   "aliases": [
     "Pixel",
     "the Print Lady"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Shelf, Chatham Flats, near Halsted and Chicago Ave",
-  "description": "Nnenna is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at The Shelf is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nNnenna is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
+  "description": "Kit Quartey is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at The Shelf is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nKit Quartey is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -175,7 +175,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -234,39 +234,18 @@
   ],
   "related_entities": [
     "Chatham Flats",
-    "The Shelf",
     "Zheng-dao Bioelectric",
     "Palladian Construction",
+    "The Shelf",
     "Arcturus Defense Solutions",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "ARCHIVE",
-    "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'",
     "Chicago",
-    "Cinderblock Ai",
-    "Eshe Pena-Baah",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Independent Darknet Node Architecture",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Sterling Voss",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Synaptrel",
-    "Tenderloin",
-    "The Bazaar",
-    "The Narrows",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pale Mile",
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "East Asian (55.8%) with significant Southeast Asian (31.2%) and Sub-Saharan African (13.0%) ancestry. Features reflect the dominant East Asian genetic contribution with warm undertones from African heritage and Southeast Asian facial structure characteristics.",
+    "heritage": "Kaleidoscopic ancestry reflecting Sub-Saharan African (31.2%), Hispanic/Latin American (29.8%), South Asian (19.8%), East Asian (9.9%), Southeast Asian (4.8%), and Northern European (4.5%) heritage. Features show striking interblending: warm golden-bronze undertones from African and Latin heritage, defined cheekbone prominence from East and South Asian ancestry, and delicate nose bridge structure from Southeast Asian genetics. The combination creates a uniquely multifaceted appearance with luminous, complex skin harmonics that shift warmth across different light conditions.",
     "height_cm": 158,
     "weight_kg": 48,
     "build": "Angular and compact, lean-muscled from constant movement and standing work. Minimal body fat, wiry rather than athletic — the build of someone who forgets to sit down.",
@@ -274,8 +253,8 @@
     "hair_style": "Complicated upknot with multiple interwoven sections, threads visible as glowing strands",
     "hair_length": "Long (gathered up)",
     "eye_color": "Dark brown, with basic optical HUD implant visible as faint crystalline overlay in low light",
-    "skin_tone": "Warm honey-bronze with subtle warm undertones from blended ancestry; even complexion across face and visible body areas",
-    "complexion": "Clear, youthful skin with bioluminescent freckle patterns across cheekbones and bridge of nose — pale blue-green geneware that pulses faintly in darkness. Facial structure shows East Asian influence with defined cheekbones and slight eye shape characteristics, combined with warmer undertones and subtle Southeast Asian nose structure. No visible scars or damage.",
+    "skin_tone": "Luminous golden-bronze with warm terracotta and ochre undertones from blended African, Latin American, and South Asian heritage; even complexion with radiant quality across face and visible body areas",
+    "complexion": "Clear, youthful skin with bioluminescent freckle patterns across cheekbones and bridge of nose — pale blue-green geneware that pulses faintly in darkness. Facial structure shows blended ancestry: prominent defined cheekbones and subtle eye shape from East and South Asian genetics, warmer undertones and gently rounded face contours from African and Latin American heritage, refined Southeast Asian nose bridge. No visible scars or damage.",
     "distinguishing_marks": [
       "Bioluminescent freckle constellation across cheekbones and nose bridge, blue-green geneware, self-administered at age 19, pulses with low ambient light"
     ],
@@ -283,14 +262,69 @@
     "posture_movement": "Quick, economical movements. Stands when working, rarely sits. Moves with the restless energy of someone managing multiple transactions simultaneously. Hands are active, expressive — gestures during speech. Eyes track multiple sightlines at once, habitual market vendor awareness.",
     "clothing_style": "Tier 4 functional fashion. Wide-legged utility trousers in matte gray or black synthetic with cargo pockets and reinforced seams. Tech vest with modular attachment points and snap-closures for rapid equipment changes — typically worn over a fitted long-sleeve base layer in neutral tones. Soft-soled boots rated for all-day standing (likely gray or black, minimal branding). Minimal jewelry except for functional pieces. No corpo-branded gear; everything is practical and pocketable. Overall aesthetic: speed, access, and plausible deniability."
   },
-  "image_prompt": "Kit Árnason, 158cm petite East Asian-heritage character with warm honey-bronze skin, cyberpunk 2226, standing in market vendor alert pose with restless energy. Sharp facial features with bioluminescent blue-green freckles pulsing across cheekbones and nose bridge in low light. Dark brown eyes with subtle optical HUD implant crystalline artifacts. Long black hair in complicated upknot with glowing fiber-optic threading in rotating color patterns, threads visible. Wearing matte gray wide-legged utility trousers with cargo pockets, dark tech vest over fitted neutral long-sleeve base layer, soft-soled functional boots. Quick, economical posture, expressive hand gestures, tracking multiple sightlines. Minimal jewelry, no branding, everything practical. Great Lakes Metropolitan Zone market environment, neon-ambient lighting emphasizing the bioluminescent geneware, cyberpunk street vendor aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Kit Quartey, 158cm tall, compact lean build, standing alert in neon-lit Great Lakes market stall, 2226. Golden-bronze luminous skin with warm terracotta undertones, defined cheekbones from blended East and South Asian ancestry, refined nose bridge, youthful complexion. Dark brown eyes with subtle crystalline HUD implant visible. Long black hair gathered in complicated upknot with fiber-optic threading glowing in rotating chromatic patterns, threads visible as luminous strands. Pale blue-green bioluminescent freckles pulsing faintly across cheekbones and nose bridge. Wearing matte gray utility trousers with cargo pockets, technical modular vest with snap-closures over fitted neutral base layer, soft-soled standing boots. Quick restless posture, expressive hand gestures mid-transaction, eyes tracking multiple sightlines. Ambient neo-noir lighting casting crystalline glints off hair threads and subtle glow from freckles in low light. No visible chrome or prosthetics, minimal functional jewelry. Market vendor energy, practical plausible deniability aesthetic, speed and access. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 55.8,
-    "Southeast Asian": 31.2,
-    "Sub-Saharan African": 13.0
+    "Sub-Saharan African": 31.2,
+    "Hispanic/Latin American": 29.8,
+    "South Asian": 19.8,
+    "East Asian": 9.9,
+    "Southeast Asian": 4.8,
+    "Northern European": 4.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 31.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 17.1,
+        "Haitian": 12.7
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 12
+      },
+      "Sri Lankan": {
+        "Sinhalese": 4.6,
+        "Tamil Sri Lankan": 3.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.9
+      },
+      "Japanese": {
+        "Japanese": 2.5
+      },
+      "Chinese": {
+        "Cantonese": 0.3,
+        "Sichuanese": 2.2
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 4.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 0.9,
+        "Austrian": 0.1
+      },
+      "British Isles": {
+        "Irish": 1.2,
+        "English": 0.2
+      },
+      "Scandinavian": {
+        "Finnish": 2.1
+      }
+    }
+  }
 }

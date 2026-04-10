@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65c7e7793c441bad0715af0",
   "type": "character",
-  "name": "Tiare Tuivailala-Pathak",
+  "name": "Kiran Kimura-Pathak",
   "aliases": [
     "Mira",
     "Twice-Gone"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Abyssal Threshold, sub-level 4 maintenance access corridor 14-C, near sub-level access near LaSalle and Congress",
-  "description": "Miroslava is thin in a way that speaks of intentional reduction — not starvation, but the deliberate paring away of anything that might make her visible or memorable. She was once the kind of person who wore Axiom's muted corporate fashions and had shoulder-length hair she blow-dried every morning; now her hair is cut close and uneven by her own hand, and she wears layered thermal wraps in grays and browns that she has repaired so many times the original fabric is almost entirely replaced. Her skin is medium brown, her features carrying the angular sharpness of her Georgian grandfather and the broader cheekbones of her Ghanaian grandmother. Her hands give her away: they are still soft in places that hard labor never quite reaches, and her nails are trimmed with a precision that suggests old habits dying slowly.\n\nMiroslava is two people trying to coexist in one body. The first is the analyst — meticulous, cautious, always running probability assessments in the back of her mind, prone to long silences when a situation doesn't match her models. The second is whoever she is becoming down here — quieter than the analyst, more patient, slowly learning to love the dark. She is not warm to strangers, but she is scrupulously honest with them, which in the Abyssal Threshold reads as a form of respect. She has not been to the surface in four years. She does not plan to go back. She does not explain why.",
+  "description": "Kiran Kimura-Pathak is thin in a way that speaks of intentional reduction — not starvation, but the deliberate paring away of anything that might make her visible or memorable. She was once the kind of person who wore Axiom's muted corporate fashions and had shoulder-length hair she blow-dried every morning; now her hair is cut close and uneven by her own hand, and she wears layered thermal wraps in grays and browns that she has repaired so many times the original fabric is almost entirely replaced. Her skin is medium brown, her features carrying the angular sharpness of her Georgian grandfather and the broader cheekbones of her Ghanaian grandmother. Her hands give her away: they are still soft in places that hard labor never quite reaches, and her nails are trimmed with a precision that suggests old habits dying slowly.\n\nKiran Kimura-Pathak is two people trying to coexist in one body. The first is the analyst — meticulous, cautious, always running probability assessments in the back of her mind, prone to long silences when a situation doesn't match her models. The second is whoever she is becoming down here — quieter than the analyst, more patient, slowly learning to love the dark. She is not warm to strangers, but she is scrupulously honest with them, which in the Abyssal Threshold reads as a form of respect. She has not been to the surface in four years. She does not plan to go back. She does not explain why.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -179,7 +179,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Abyssal Threshold",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,38 +245,26 @@
     "The CEO",
     "Grandmother",
     "Threshold",
-    "Flicker",
-    "Aslan Vasquez-Chatterjee",
-    "Stratum",
-    "The Pure Hand",
-    "The Coffin Nails",
-    "Breck Tannen",
-    "Emeka Johansson-Orozco",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Ngaire Kuznetsov-Adu",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Noir Dining",
-    "Noor Farouk",
-    "Patient Zero",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Threshold",
-    "The Undertow",
-    "Vuk Jorgensen-Toure"
+    "GLMZ",
+    "Stratum",
+    "Honest Burger",
+    "The Pure Hand",
+    "The Coffin Nails"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Pacific Islander and South Asian dominant ancestry with Northern European minority contribution. The blend manifests as warm medium-to-dark brown skin with golden undertones, typical of Polynesian-South Asian genetic combination. Facial structure shows the broader cheekbones and softer jawline common to Pacific Islander genetics, tempered by South Asian bone structure. Eye shape reflects the mixed ancestry with slightly wider-set eyes characteristic of Pacific Islander populations.",
+    "heritage": "Complex Pan-Asian diaspora with Latin American and African undertones. Kiran's genetic ancestry (51.4% East and South Asian, 23.4% Southeast Asian, 20% Hispanic/Latin American, 5.2% Sub-Saharan African) creates a striking fusion: East Asian ancestry provides angular cheekbone definition and slight eye tilt; South Asian genetics contribute jawline prominence and face width; Southeast Asian heritage softens the structure with broader proportions and warmth; Hispanic/Latin American and Sub-Saharan African components add depth to skin undertones and subtle fullness to lips.",
     "height_cm": 167,
     "weight_kg": 52,
     "build": "Lean and deliberately spare — the kind of thinness that comes from intentional reduction rather than deprivation. Wiry muscle in the shoulders and forearms from years of precise manual work; minimal body fat; posture that suggests she takes up as little space as possible.",
     "hair_color": "Dark brown, naturally, with premature gray threading through the sides",
     "hair_style": "Cut close and uneven — self-trimmed, no styling, functional only",
     "hair_length": "Short",
-    "eye_color": "Deep brown, with faint cybernetic latticing visible in the iris under direct light — low-light enhancement package, degraded but functional",
-    "skin_tone": "Warm medium-to-dark brown reflecting Pacific Islander and South Asian ancestry, with golden undertones characteristic of the genetic blend",
-    "complexion": "Structure shows Pacific Islander roundness in the face with South Asian angularity in the cheekbones and jawline — a striking hybrid of softer curves and defined planes. Cheekbones prominent, jawline defined. Skin is dry from years in low-humidity maintenance corridors but shows no significant scarring or damage — well-maintained despite living conditions. Fine lines around the eyes suggest sustained concentration. Expression typically neutral, difficult to read.",
+    "eye_color": "Deep brown with faint cybernetic latticing visible in the iris under direct light — low-light enhancement package, degraded but functional",
+    "skin_tone": "Warm medium brown with golden-amber undertones shifting toward olive at the temples, reflecting the layered blend of East Asian, South Asian, and Southeast Asian ancestry enriched by Sub-Saharan and Hispanic warmth",
+    "complexion": "Angular cheekbones prominent and high-set from East Asian genetics, balanced by the broader face shape and fuller lower face of Southeast Asian ancestry, with defined and slightly squared jawline from South Asian influence — a striking hybrid of clean planes and subtle fullness. Skin is dry from years in low-humidity maintenance corridors but shows no significant scarring or damage — well-maintained despite living conditions. Fine lines around the eyes suggest sustained concentration. Expression typically neutral, difficult to read.",
     "distinguishing_marks": [
       "Faint scar tissue along the left temple, barely visible under close inspection, consistent with neural implant installation site",
       "Calloused fingertips on dominant hand (right), precise and uniform, from years of documentation work",
@@ -286,14 +274,60 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion, precise hand placement, footfalls that are nearly silent on metal grating. Sits slightly sideways in spaces, keeping one shoulder angled toward exits. Eyes track movement peripherally before direct attention. Speaks rarely, and when she does, her voice is low and measured. Hands remain still unless working; no fidgeting or tells.",
     "clothing_style": "Layered thermal wraps in grays and browns, repaired so many times the original fabric composition is largely replaced with salvaged patches. The layers are functional — designed for temperature regulation in the Threshold — but also for anonymity; nothing branded, nothing distinctive. Underneath: plain synthetic underweave, likely scavenged. No jewelry. Footwear is neutral gray utility boots, worn but maintained. Everything is chosen to be forgotten as soon as it is seen."
   },
-  "image_prompt": "Tiare, a 167cm lean-muscled woman of Pacific Islander and South Asian heritage, warm medium-brown skin with golden undertones, deep brown eyes with subtle cybernetic latticing visible in iris under light. Sharp cheekbones blending Pacific Islander roundness with South Asian angularity. Short dark brown hair with gray threading, self-trimmed and uneven. Wearing layered thermal wraps in grays and browns, heavily patched and salvaged, neutral gray utility boots. Faint scar tissue visible at left temple. Posture economical and precise, sitting slightly sideways with one shoulder angled toward exit, hands still and controlled. Setting: dimly-lit maintenance corridor of Great Lakes Metropolitan Zone, 2226, industrial cyberpunk aesthetic, cool blue-gray lighting with warm practical work lights. Atmosphere: focused, watchful, deliberate. Dystopian future maintenance worker, identity obscured by functional anonymity. --ar 2:3 --v 6",
+  "image_prompt": "Kiran Kimura-Pathak, 167cm lean neo-noir woman with warm medium brown skin and golden-amber undertones, angular East Asian cheekbones balanced with Southeast Asian face width and South Asian jawline definition. Deep brown eyes with subtle cybernetic latticing visible in iris. Short dark brown hair with gray threading, self-trimmed and uneven. Dressed in layered thermal wraps of gray and brown with visible repairs, neutral gray utility boots. Wiry muscle definition, minimal body fat. Faint scar tissue at left temple, calloused fingertips on right hand. Seated slightly sideways with precise, economical posture in dimly-lit maintenance corridor, one shoulder angled toward exit. Expression neutral and difficult to read. Low-light GLMZ Great Lakes Metropolitan Zone setting, cool fluorescent and ambient neon lighting, industrial metal grating background, subtle tension in her stillness, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 46.4,
-    "South Asian": 37.6,
-    "Northern European": 16.0
+    "South Asian": 27,
+    "East Asian": 24.4,
+    "Southeast Asian": 23.4,
+    "Hispanic/Latin American": 20,
+    "Sub-Saharan African": 5.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 15.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 17.3
+      },
+      "Korean": {
+        "Korean": 7.1
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 4
+      },
+      "Thai": {
+        "Thai": 19.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 2.6,
+        "Puerto Rican": 0.9
+      },
+      "Central American": {
+        "Nicaraguan": 10.8
+      },
+      "South American": {
+        "Brazilian": 4.4,
+        "Ecuadorian": 1.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 5.2
+      }
+    }
+  }
 }

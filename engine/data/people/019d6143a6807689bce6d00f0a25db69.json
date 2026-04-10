@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6807689bce6d00f0a25db69",
   "type": "character",
-  "name": "Haze Makwa-Nwosu-Hossain",
+  "name": "Haze Holm-Somchai-Hossain",
   "aliases": [
     "Dr. Fike",
     "The Bone Reader"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "University Spine, Brewer's Spine sub-campus — Sublevel Archive 7, near sub-level access near Dearborn and Jackson",
-  "description": "Oluwafikemi is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence — tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn't need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don't read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects — she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
+  "description": "Haze Holm-Somchai-Hossain is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence — tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn't need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don't read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects — she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -179,7 +179,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,33 +236,16 @@
     "University Spine",
     "Brewer's Spine",
     "Ferrogate Transit",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "ARCHIVE",
+    "Patience",
+    "Dearborn Forge",
     "Silver",
+    "Honest Burger",
     "The Pure Hand",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Chicago",
-    "Adaeze Soumaré-Papadimitriou",
-    "Bintou Halvorsen-Osei",
-    "Chronicle",
-    "GLMZ",
-    "Green Bay Community Table",
-    "Lakeview Neon",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "The Archive",
-    "The Underlayer Collective",
-    "The Wire Taps",
-    "Vantablack Media Spectral Barrier Display System",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Complex diaspora ancestry: 38.6% Sub-Saharan African (West African phenotype influence), 35.1% South Asian (facial structure, bone density), 18.5% Indigenous American (cheekbone prominence, eye shape), 7.8% Hispanic/Latin American. Features reflect this intricate blending rather than any single lineage.",
+    "heritage": "Complex Ubiquitous Diaspora ancestry: 27.6% Southeast Asian, 22.0% East Asian, 15.5% Hispanic/Latin American, 12.7% Northern European, 12.0% South Asian, 10.2% North African. Features reflect this intricate global blending—Southeast and East Asian bone structure dominates facial architecture, South Asian breadth in facial planes, Latin American and North African warmth creating golden undertones, Northern European heritage visible in lighter complexion base. The result is a nuanced medium tone with warm golden richness, slightly sun-deepened from decades of fieldwork.",
     "height_cm": 168,
     "weight_kg": 92,
     "build": "Heavyset, broad-shouldered, with the settled solidity of someone who spends long hours hunched over delicate work. Strength in her frame rather than softness.",
@@ -270,9 +253,9 @@
     "hair_style": "Cropped close to scalp, practical, showing the texture of her natural hair",
     "hair_length": "Short",
     "eye_color": "Deep brown with subtle amber undertones from archival-grade ocular filter implant",
-    "skin_tone": "Rich warm medium-deep tone with subtle golden undertones, reflecting the blended ancestry of Sub-Saharan African, South Asian, and Indigenous American heritage",
-    "complexion": "Weathered, sun-aged in the way of someone who spent early career years in open excavation sites. Fine lines around eyes and at the corners of the mouth from decades of focused detail work and diverse ancestral aging patterns. High, prominent cheekbones reflecting Indigenous American ancestry. Faint blue-green luminescence visible in low light from subcutaneous bioluminescent nodes mapping excavation sites across her shoulders, forearms, and collarbone.",
-    "eye_shape": "Slightly hooded with distinctive epicanthic fold influence from South Asian ancestry, giving an alert, observant quality",
+    "skin_tone": "Warm medium golden tone—the blended result of Southeast Asian, East Asian, and South Asian base tones enriched by North African and Hispanic/Latin American warmth, with Northern European undertones creating subtle luminosity beneath the surface. Sun-aged from fieldwork, rich rather than pale.",
+    "complexion": "Weathered, sun-deepened from decades of open excavation sites and sublevel work. Fine lines around eyes and at corners of mouth from focused detail work. Mid-to-high cheekbones with gentle width reflecting Southeast and East Asian ancestry structure, softened by South Asian facial plane breadth. Faint blue-green luminescence visible in low light from subcutaneous bioluminescent nodes mapping excavation sites across shoulders, forearms, and collarbone.",
+    "eye_shape": "Slightly hooded with subtle epicanthic fold influence from East and Southeast Asian ancestry, giving an alert, observant quality",
     "distinguishing_marks": [
       "Constellation of faint, self-applied bioluminescent implant sites across shoulders and upper back, glowing blue-green in darkness",
       "Chronic orange-rust staining on fingertips and nail beds from archival polymer degradation compounds",
@@ -283,15 +266,60 @@
     "posture_movement": "Moves deliberately, with the careful economy of someone accustomed to handling irreplaceable objects. Tendency to hunch slightly forward, shoulders curved inward as if protecting something fragile. Hands are precise and steady; she rarely gestures broadly when speaking. Her default expression is focused concentration, interrupted by rare, genuine smiles when discussing artifacts.",
     "clothing_style": "Tier 2/3 academic utility wear: archival-grade lab coat (University Spine insignia faded from repeated washing), reinforced field vest with multiple pockets containing calibrated tools and specimen bags. Underneath, simple high-collar thermal underlayer in charcoal. Heavy-soled archival boots, scuffed from decades of sublevel work. Wears a worn leather journal clipped to her belt. No jewelry except a simple band on her left ring finger — oxidized silver, pre-flood era, salvaged from a 2087 domestic site."
   },
-  "image_prompt": "Haze Makwa-Nwosu-Hossain, a 168cm woman with rich warm medium-deep skin tone blending Sub-Saharan African, South Asian, and Indigenous American ancestry. High prominent cheekbones, deep brown eyes with subtle amber filter implant glow, slightly hooded with epicanthic fold influence. Short silver-streaked charcoal hair cropped close to scalp. Heavyset, broad-shouldered build, weathered face lined from decades of fieldwork. Wearing faded archival lab coat with University Spine insignia, reinforced utility vest with tool pockets, charcoal thermal underlayer, scuffed heavy archival boots. Magnification lenses perched on head. Posture hunched protectively forward. Low-light setting revealing faint blue-green bioluminescent tracery glowing beneath skin across shoulders and forearms. Hands stained orange-rust from archival compounds, showing precise, careful steadiness. Wearing pre-flood era oxidized silver ring on left finger. Cyberpunk 2226, archival researcher aesthetic, subdued lighting, focused concentration expression. --ar 2:3 --v 6",
+  "image_prompt": "Haze Holm-Somchai-Hossain, middle-aged woman with warm golden-medium skin tone, faint blue-green bioluminescent tracery visible beneath collarbone and forearms in dim lighting, short silver-and-charcoal cropped hair, hooded eyes with subtle epicanthic fold and amber-tinted ocular implant, sun-weathered face with fine lines, high-set cheekbones reflecting Southeast and East Asian ancestry blended with South Asian breadth. Heavyset broad-shouldered build. Wearing faded archival-grade lab coat over reinforced field vest and charcoal thermal underlayer, heavy scuffed boots. Magnification lenses perched on head. Hunched posture, hands stained with orange-rust archival compound residue. Worn pre-flood silver band on left ring finger. GLMZ sublevel archive setting, cool blue and amber accent lighting emphasizing bioluminescence, focused expression studying an artifact. GLMZ 2200s academic archaeologist aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 38.6,
-    "South Asian": 35.1,
-    "Indigenous American": 18.5,
-    "Hispanic/Latin American": 7.8
+    "Southeast Asian": 27.6,
+    "East Asian": 22,
+    "Hispanic/Latin American": 15.5,
+    "Northern European": 12.7,
+    "South Asian": 12,
+    "North African": 10.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 27.6
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 7.6,
+        "Cantonese": 14.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 6.7,
+        "Honduran": 5.5
+      },
+      "Mexican": {
+        "Mexican": 3.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 12.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 12
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 7.4
+      },
+      "Nile Valley": {
+        "Egyptian": 1.7
+      },
+      "Maghreb": {
+        "Moroccan": 1.1
+      }
+    }
+  }
 }

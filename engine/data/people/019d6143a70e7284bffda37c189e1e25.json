@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70e7284bffda37c189e1e25",
   "type": "character",
-  "name": "Alofa Asomaning-Rentería-Taufa",
+  "name": "Alofa Björnsdóttir-Taualagi-Sefanaia",
   "aliases": [
     "The Hollow Man",
     "Vash"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, sub-level workshop called The Resonance Pit, near sub-level access near State and Van Buren",
-  "description": "Vashko is a wide-shouldered man gone soft at the edges, with deep brown skin mapped by decades of industrial pigment stains he never fully washed out. His face is all heavy brow and patient eyes the color of tarnished copper, and he keeps his grey-streaked locs pinned back with salvaged circuit wire. His left hand is natural; his right has subdermal resonance nodes implanted across the knuckles that let him feel frequencies ordinary ears can't register, a gift he gave himself thirty years ago when his hearing began to go. He speaks slowly, as though each word costs him something, and smiles rarely — but when he does it rearranges his whole face into something unexpectedly gentle.\n\nVashko builds instruments from the corpse-materials of the city: burst coolant pipes, decommissioned server racks, cracked transit rail segments. He coaxes sounds from them that shouldn't be possible — subsonic groans that make audiences feel grief they can't name, high harmonics that trigger involuntary memories. He is not famous. He has refused every corponation arts-sponsorship offer for twenty years and considers this his greatest achievement. His underground shows happen in flooded basement corridors, in decommissioned lift shafts, in places where the city's own skeleton becomes the concert hall.",
+  "description": "Alofa Björnsdóttir-Taualagi-Sefanaia is a wide-shouldered man gone soft at the edges, with deep brown skin mapped by decades of industrial pigment stains he never fully washed out. His face is all heavy brow and patient eyes the color of tarnished copper, and he keeps his grey-streaked locs pinned back with salvaged circuit wire. His left hand is natural; his right has subdermal resonance nodes implanted across the knuckles that let him feel frequencies ordinary ears can't register, a gift he gave himself thirty years ago when his hearing began to go. He speaks slowly, as though each word costs him something, and smiles rarely — but when he does it rearranges his whole face into something unexpectedly gentle.\n\nAlofa Björnsdóttir-Taualagi-Sefanaia builds instruments from the corpse-materials of the city: burst coolant pipes, decommissioned server racks, cracked transit rail segments. He coaxes sounds from them that shouldn't be possible — subsonic groans that make audiences feel grief they can't name, high harmonics that trigger involuntary memories. He is not famous. He has refused every corponation arts-sponsorship offer for twenty years and considers this his greatest achievement. His underground shows happen in flooded basement corridors, in decommissioned lift shafts, in places where the city's own skeleton becomes the concert hall.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -180,7 +180,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,28 +248,15 @@
     "Hamtramck Enclave",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "The Resonance Communion",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Copper",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Breck Tannen",
-    "Djeneba Park-Traore",
-    "Glenville Sound",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Meridian Core",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Patient Zero",
-    "Piper",
-    "Slagworks Industrial",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Pure Hand",
-    "Transit Mind"
+    "Circuit",
+    "Tessera Resonance Projector RP-5 'Tuning Fork'",
+    "Copper"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (58.4%) with significant Pacific Islander (24.9%), Hispanic/Latin American (10.4%), and Eastern European (6.3%) ancestry. The blend manifests in his deep brown skin with warm undertones, broad facial structure with strong cheekbones characteristic of Sub-Saharan heritage, and subtle architectural influences from Polynesian and Mediterranean gene expression.",
+    "heritage": "Northern European (66.1%) with significant Pacific Islander (18.9%) and Sub-Saharan African (15.0%) ancestry. The blend manifests in warm medium-brown skin with golden and copper undertones, strong Nordic bone structure softened by Polynesian breadth, and African melanin creating a complex, multivalent complexion that reads as distinctly post-Diaspora.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Wide-shouldered and barrel-chested, softened through age with a slight paunch at the midriff. Muscular forearms and capable hands suggest decades of welding and manual craftsmanship, but the core has lost its tautness.",
@@ -277,8 +264,8 @@
     "hair_style": "Locs pinned back with salvaged circuit wire, pulled away from face",
     "hair_length": "Long (shoulder-length or beyond when unpinned)",
     "eye_color": "Warm brown with amber undertones, natural but faded with age",
-    "skin_tone": "Deep warm brown with golden and copper undertones, weathered by time and industrial exposure. The complexion reflects the layered ancestry — the richness of Sub-Saharan melanin with subtle warmth from Pacific Islander and Latin heritage.",
-    "complexion": "Heavily lined face with strong, defined bone structure. Prominent cheekbones and a broad nose bridge reflect his dominant Sub-Saharan heritage. Deep creases around the eyes and mouth from decades of concentration and squinting through welding light. Industrial pigment stains — faint rust-red, copper, and metallic residue — permanently embedded in the creases of his hands and forearms, never fully washed clean. Rough, calloused palms.",
+    "skin_tone": "Warm medium-brown with golden and copper undertones. The complexion reflects layered ancestry — Nordic fairness genes mixing with Sub-Saharan and Pacific Islander melanin to create sun-weathered richness. Heavily weathered by decades of industrial exposure and arc-light exposure.",
+    "complexion": "Heavily lined face with strong, defined bone structure — prominent cheekbones inherited from Nordic ancestry, broad jawline with Polynesian breadth, straight nose bridge. Deep creases around the eyes and mouth from decades of concentration and squinting through welding light. Industrial pigment stains — faint rust-red, copper, and metallic residue — permanently embedded in the creases of hands and forearms, never fully washed clean. Rough, calloused palms.",
     "distinguishing_marks": [
       "Subdermal resonance nodes visible as faint geometric scarring across the knuckles of the right hand, forming a subtle grid pattern",
       "A bioluminescent stripe running vertically up the back of his neck, glowing faint blue when he is focused or immersed in work — visible only when hair is pulled back",
@@ -287,17 +274,41 @@
     ],
     "visible_augmentations": "Right hand knuckles display faint subdermal lattice scarring where resonance nodes interface with skin. Single bioluminescent stripe on posterior neck glows faint blue when activated. Left ear bears a small external cochlear amplifier mounted at the mastoid — weathered chrome with a visible bypass wire.",
     "posture_movement": "Moves with deliberate slowness, economical gestures. Hunches slightly forward when concentrating, as though leaning into frequencies only he can feel through his right hand. When engaged, he becomes almost meditative — very still, eyes half-closed. Walks with a slight limp favoring the right side (old injury). Rarely makes sudden movements; everything is considered.",
-    "clothing_style": "Tier 3-4 working class with utilitarian, lived-in aesthetic. Favors heavy canvas work aprons stained with welding slag and coolant residue over faded jumpsuits or cargo pants. Wears a salvaged industrial undershirt beneath — often charred at the cuffs. Steel-toed boots scuffed and resoled multiple times. A grey wool coat, decades old and patched at the elbows, worn over everything when leaving The Resonance Pit. No corporate branding or flashy modifications — all clothing is functional and durable. His jewelry is minimal: a simple copper ring on his left index finger (worn smooth with age) and occasionally a length of copper wire coiled around his right wrist like a bracelet."
+    "clothing_style": "Tier 3-4 working class with utilitarian, lived-in aesthetic. Favors heavy canvas work aprons stained with welding slag and coolant residue over faded jumpsuits or cargo pants. Wears a salvaged industrial undershirt beneath — often charred at the cuffs. Steel-toed boots scuffed and resoled multiple times. A grey wool coat, decades old and patched at the elbows, worn over everything when leaving The Resonance Pit. No corporate branding or flashy modifications — all clothing is functional and durable. Minimal jewelry: a simple copper ring on his left index finger (worn smooth with age) and occasionally a length of copper wire coiled around his right wrist like a bracelet."
   },
-  "image_prompt": "Portrait of Alofa Asomaning-Rentería-Taufa, 188cm tall welder in cyberpunk 2226. Deep warm brown skin with golden undertones, strong Sub-Saharan heritage bone structure, lined weathered face, amber-brown eyes faded with age. Long dark locs pinned back with circuit wire, revealing faint blue bioluminescent stripe on neck that glows softly. Right hand knuckles show subtle grid-pattern subdermal resonance node scars. Forearms covered in pale welding burn scars against dark skin. Wears charred industrial undershirt and heavy stained canvas work apron, patched grey wool coat draped over shoulders. Steel-toed boots scuffed and resoled. Hunched posture leaning slightly forward in meditative focus. Copper wire bracelet on right wrist, worn copper ring on left index finger. Weathered chrome cochlear amplifier visible at left ear. Industrial pigment stains permanently embedded in hand creases. Standing in dimly lit workshop with warm tungsten and cool blue LED lighting, metal reflections. Mood: contemplative, focused, decades of expertise. Cyberpunk gritty workshop aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "A weathered master craftsman in the GLMZ, 2226. Alofa Björnsdóttir-Taualagi-Sefanaia: 188cm tall, wide-shouldered, medium-brown skin with golden and copper undertones reflecting Nordic-Polynesian-African ancestry blend. Deep facial lines, strong Nordic cheekbones softened by Polynesian breadth, warm brown eyes faded with age. Dark brown locs with silver streaks pinned back with circuit wire. Right hand bears subdermal resonance node scarring in geometric grid; faint bioluminescent blue stripe glows on back of neck when focused. Countless pale welding burn scars across both forearms. Wearing heavy canvas work apron stained with welding slag over charred industrial undershirt, faded cargo pants, scuffed steel-toed boots. Weathered grey wool coat patched at elbows. Small chrome cochlear amplifier at left mastoid. Copper wire bracelet on right wrist, smooth copper ring on left hand. Moving with deliberate slowness, hunched forward in deep concentration, eyes half-closed as if feeling frequencies through fingertips. Industrial workshop setting with arc-light glow, shadows catching the texture of decades-old scars and calluses. Neo-noir working-class authenticity, lived-in and functional. Moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 58.4,
-    "Pacific Islander": 24.9,
-    "Hispanic/Latin American": 10.4,
-    "Eastern European": 6.3
+    "Northern European": 66.1,
+    "Pacific Islander": 18.9,
+    "Sub-Saharan African": 15
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 66.1
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 12.7
+      },
+      "Micronesian": {
+        "Kiribati": 5.4,
+        "Marshallese": 0.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 13.7
+      },
+      "Central African": {
+        "Angolan": 0.9,
+        "Gabonese": 0.4
+      }
+    }
+  }
 }

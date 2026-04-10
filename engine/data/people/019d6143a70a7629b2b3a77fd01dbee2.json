@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70a7629b2b3a77fd01dbee2",
   "type": "character",
-  "name": "Luca Haugen",
+  "name": "Luca Montalvo",
   "aliases": [
     "Tel",
     "The Accountant"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "The Shelf lower levels, operates from a tea shop called Ndovu & Sons in Ironvein, near Halsted and Chicago Ave",
-  "description": "Télesphore is a lean, bespectacled man of fifty-four who looks like someone's favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you're saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this — old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they're being watched even when he's looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they're hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services — they advertise themselves, because when you need Φ300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal — he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
+  "description": "Luca Montalvo is a lean, bespectacled man of fifty-four who looks like someone's favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you're saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this — old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they're being watched even when he's looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they're hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services — they advertise themselves, because when you need Φ300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal — he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -178,7 +178,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,33 +246,13 @@
     "The Shelf",
     "Ironvein",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago",
-    "Bogdan Achebe-Svanstrom",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "LifeWire EvenKeel Mood Regulation Implant",
-    "Ngaire Kuznetsov-Adu",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
-    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
-    "The Blackout Syndicate",
-    "The Counter",
-    "The Ledger",
-    "Uncle Noodle",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov"
+    "Flux Strömqvist-Villalobos",
+    "The Pure Hand"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian with Pacific Islander and East Asian ancestry — a blend that manifests in warm, golden-brown skin with subtle undertones reflecting the island Pacific heritage. His features carry the characteristic structure of mainland Southeast Asia: defined cheekbones, a refined nose, and eyes set with the distinctive epicanthic fold variation of the region. The small amount of East Asian ancestry adds subtle refinement to his facial geometry.",
+    "heritage": "Complex Eurasian blend dominated by Central Asian (28.7%) and Middle Eastern (25.0%) ancestry, with substantial Eastern European (16.1%), Hispanic/Latin American (15.4%), and Northern European (14.8%) admixture. This creates a distinctly multicontinental phenotype: warm olive skin with golden undertones from the Central Asian-Middle Eastern core, tempered by cooler Northern European influence. Facial structure reflects the steppe-Mediterranean convergence—prominent Central Asian cheekbones, refined Eastern European jawline definition, and the subtle facial warmth characteristic of Hispanic/Latin American heritage. His features suggest a man whose ancestry traces across the old Silk Road and beyond, manifesting in balanced, harmonious proportions that read as neither distinctly 'from' any single region nor obviously mixed, but rather as a naturally occurring Ubiquitous Diaspora phenotype.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Lean and economical, no excess — the body of someone who has never needed to prove his strength. Wiry rather than muscular, with the posture of a man comfortable in stillness.",
@@ -280,24 +260,73 @@
     "hair_style": "Neatly parted, close to the scalp, combed back with precision",
     "hair_length": "Short",
     "eye_color": "Modified — concentric rings of amber and brown (geneware iris modification), with darker brown natural iris at the center. The rings create an optical illusion of being constantly observed.",
-    "skin_tone": "Warm golden-brown with subtle honeyed undertones, sun-weathered and even in coloration, showing the patina of age and consistent tropical or subtropical climate exposure",
+    "skin_tone": "Warm olive-gold with subtle honeyed undertones, sun-weathered and even in coloration, showing the patina of age and consistent climate exposure",
     "complexion": "Clean-shaven except for a close-trimmed white beard, about 5mm length, carefully maintained. Fine lines around the eyes and mouth reflecting decades of patient observation. Skin clear, well-hydrated, without blemish or visible scarring. Expression naturally inclined toward interest and mild amusement.",
     "distinguishing_marks": [
       "Small, faded scar above the left eyebrow, approximately 2cm, possibly decades old and nearly invisible",
       "A thin, pale line running along the right inner forearm where the subdermal transaction ledger implant sits beneath the skin — visible only as a slight discoloration, barely noticeable"
     ],
-    "visible_augmentations": "The iris geneware is immediately visible in direct light; the concentric ring pattern is unmistakable and deliberate. The subdermal ledger implant is not visible unless he rolls up his right sleeve, and he rarely does. He wears it as a small badge of old-fashioned authenticity.",
+    "visible_augmentations": "The iris geneware is immediately visible in direct light; the concentric ring pattern of amber and brown is unmistakable and deliberate. The subdermal ledger implant is not visible unless he rolls up his right sleeve, and he rarely does. He wears it as a small badge of old-fashioned authenticity.",
     "posture_movement": "Sits still for long periods without fidgeting. Moves with economy — no excess motion, no nervous habits. His hands are always visible and usually at rest on the counter or in his lap. When he walks, his stride is measured and unhurried. He listens more than he speaks, and his body language communicates patient attention rather than impatience.",
     "clothing_style": "Clean, worn shirts in earth tones — ochre, rust, pale brown, sometimes cream. The fabric shows age but is meticulously maintained: no stains, no tears, pressed and orderly. Occasionally a linen vest in a neutral color. Dark trousers, probably black or dark gray, simple cut. No logos, no corporate branding, no tier-markers. His clothes suggest deliberate de-escalation: nothing that announces wealth, status, or threat. Worn leather sandals or simple canvas shoes. A small wristwatch with a mechanical face — analogue, no smart features. One thin gold ring on his left hand, marriage band or purely sentimental. In Tier 5 terms, he dresses like someone who has chosen simplicity, not someone who cannot afford better."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Luca Haugen, Southeast Asian heritage with golden-brown warm skin, short white hair neatly parted and combed back, defined cheekbones, small faded scar above left eyebrow. Modified geneware irises with concentric amber and brown rings creating unsettling optical effect, natural dark brown iris at center. Clean-shaven with precisely maintained 5mm white beard. Lean wiry build, measured posture of patient stillness. Wearing earth-tone ochre linen shirt, meticulously pressed and maintained, dark gray trousers, worn leather sandals. Thin gold wedding band on left hand, mechanical analogue wristwatch. Expression of mild amusement and interest. Seated calmly with hands visible and at rest. Soft warm lighting catching the geometric patterns of iris modification. Subdued, de-escalated aesthetic suggesting deliberate simplicity. Great Lakes Metropolitan Zone interior, neutral background. --ar 2:3 --v 6",
+  "image_prompt": "Luca Montalvo, a weathered man of 173cm lean build, mid-to-late age with white hair neatly parted and combed back. Warm olive-gold skin with honeyed undertones, meticulously clean-shaven except for close-trimmed white 5mm beard. Most striking feature: modified iris geneware showing concentric rings of amber and brown with darker brown natural iris at center, creating an unsettling optical illusion of constant observation. Fine lines around eyes and mouth speak to decades of patient attention. Dressed in austere earth tones—faded ochre linen shirt, dark gray trousers, worn leather sandals. Simple gold wedding band on left hand, vintage mechanical wristwatch. Body language communicates stillness and careful listening. Sitting at a worn counter in a Tier 5 establishment, soft amber neon lighting catching the concentric rings of his modified eyes, GLMZ aesthetic, muted earth-tone color palette, patient and observant expression, subtle subdermal ledger implant scar barely visible on inner right forearm --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 81.6,
-    "Pacific Islander": 15.5,
-    "East Asian": 2.9
+    "Central Asian": 28.7,
+    "Middle Eastern": 25,
+    "Eastern European": 16.1,
+    "Hispanic/Latin American": 15.4,
+    "Northern European": 14.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Kyrgyz": 2.5
+      },
+      "Mongolic": {
+        "Mongolian": 26.2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 10.7,
+        "Tajik Persian": 5.1
+      },
+      "Kurdish": {
+        "Kurdish": 9.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 11.7
+      },
+      "Slavic West": {
+        "Sorbian": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 3.3,
+        "Ecuadorian": 12.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 6.7,
+        "Swedish": 2.9
+      },
+      "British Isles": {
+        "English": 1.3,
+        "Welsh": 0.2
+      },
+      "Germanic": {
+        "Austrian": 2.6,
+        "German": 1.1
+      }
+    }
+  }
 }

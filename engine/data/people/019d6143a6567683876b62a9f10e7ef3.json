@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6567683876b62a9f10e7ef3",
   "type": "character",
-  "name": "Kira Villanueva-Karunaratne-Owusu",
+  "name": "Kira Villanueva-Owusu-Bangura",
   "aliases": [
     "Tunnel King"
   ],
@@ -12,7 +12,7 @@
   "age": 67,
   "status": "active",
   "location": "The Underworld - B3, near sub-level access near LaSalle and Congress",
-  "description": "Mazhar has navigated the tunnels beneath GLMZ for forty years. His augmented sonar implant maps passages in real-time. He lost his left leg to a cave-in and uses a hand-carved crutch from a pre-collapse beam.",
+  "description": "Kira Villanueva-Owusu-Bangura has navigated the tunnels beneath GLMZ for forty years. His augmented sonar implant maps passages in real-time. He lost his left leg to a cave-in and uses a hand-carved crutch from a pre-collapse beam.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -84,7 +84,7 @@
     "Anchor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underworld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -97,19 +97,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
-    "Bore Rats",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "The Packet Rats",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant South Asian and Sub-Saharan African ancestry. The genetic blend creates warm-toned brown skin with subtle undertones reflecting the tri-continental mix—Latin American warmth, South Asian depth, and African richness layered together.",
+    "heritage": "Predominantly Sub-Saharan African (56.6%) with significant Hispanic/Latin American (37.3%) and East Asian (6.1%) ancestry. The genetic blend creates deep warm-toned brown skin with rich undertones—African depth as the primary base, Latin American warmth layered throughout, and subtle East Asian refinement in facial structure.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean, weathered frame with pronounced musculature in shoulders and right leg from decades of crutch-assisted locomotion. Left side noticeably atrophied below the hip.",
@@ -117,8 +109,8 @@
     "hair_style": "Short, thinning, swept back from forehead",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint amber undertone (sonar implant neural feedback)",
-    "skin_tone": "Warm medium-to-deep brown with ashy undertones from forty years underground, devoid of sun exposure. The base tone reflects the Latin American and South Asian heritage with Sub-Saharan depth.",
-    "complexion": "Weathered and lined, deep creases around eyes and mouth reflecting mixed ancestry features. Scarring across the right temple and jawline from tunnel debris. Calloused hands, especially right palm and fingers. Perpetual dust coating on exposed skin.",
+    "skin_tone": "Deep warm brown with rich undertones from Sub-Saharan African ancestry as primary base, enhanced by Latin American warmth. Ashy pallor from forty years underground devoid of sun exposure, creating a muted, earthy appearance overall.",
+    "complexion": "Weathered and deeply lined, reflecting the dominant African heritage with secondary Latin American feature blending—pronounced cheekbones with angular definition, broad nose structure with subtle East Asian refinement. Deep creases around eyes and mouth. Scarring across the right temple and jawline from tunnel debris. Calloused hands, especially right palm and fingers. Perpetual dust coating on exposed skin.",
     "distinguishing_marks": [
       "Surgical scar running 15cm down the left inner thigh where the leg was amputated below the knee, edges slightly keloid",
       "Burn scar across right forearm (10cm) from an early tunnel collapse in 2186",
@@ -129,14 +121,39 @@
     "posture_movement": "Asymmetrical gait reliant on a hand-carved wooden crutch (fashioned from a pre-collapse I-beam salvage). Leans heavily to the right, shoulders twisted slightly compensatory. Moves with deliberate, economical motion—no wasted energy. When stationary, shifts weight onto right leg and crutch; left hip remains rigid. Grips crutch with white-knuckle tension when navigating uneven terrain.",
     "clothing_style": "Tier 5 utilitarian—worn canvas cargo pants with multiple patch repairs, reinforced knees and thighs in darker fabric. Left pant leg pinned/sewn shut below the knee. Thermal undershirt (faded tan, holes in sleeves patched with duct tape). Heavy canvas duster jacket, dirt-gray, with deep pockets stuffed with tunnel navigation tools (chalk, rope, hand-drawn maps). Rope-soled boots, heavily scuffed; right boot reinforced. No corpo branding, no chrome jewelry. Carries a weathered leather satchel with sonar mapping equipment and tunnel documentation."
   },
-  "image_prompt": "Kira Villanueva-Karunaratne-Owusu, 178cm tall, lean weathered frame, cyberpunk 2226 underground tunnels. Warm medium-deep brown skin with ashy undertones reflecting Latin American-South Asian-African heritage, 40 years without sunlight. Steel gray hair swept back, dark brown eyes with amber neural feedback. Left leg amputated below knee, right leg muscular from crutch locomotion. Deep facial scars and weathering lines. Wore faded tan thermal undershirt patched with duct tape, heavy dirt-gray canvas duster jacket, cargo pants pinned at left knee, scuffed rope-soled boots. Hand-carved wooden crutch, leather satchel with sonar equipment. Asymmetrical posture, deliberate economical movement. Standing in dimly lit pre-collapse tunnel with salvaged I-beam supports, dust motes in cool blue-tinted emergency lighting, grim determined expression. No visible augmentations, purely utilitarian tier-5 clothing, weathered and functional. --ar 2:3 --v 6",
+  "image_prompt": "Kira Villanueva-Owusu-Bangura, 178cm tall lean weathered figure with deep warm brown skin blending Sub-Saharan African, Hispanic, and East Asian heritage. Steel gray hair swept back, dark brown eyes with subtle amber undertone. Pronounced cheekbones, broad nose, deeply lined weathered face bearing scars on right temple and cheekbone. Forty-year underground pallor creates muted earthy complexion. Left leg amputated below knee, reliant on hand-carved wooden crutch fashioned from salvaged I-beam. Asymmetrical muscular build, right shoulder compensatory twisted. Wearing faded tan thermal undershirt with duct-taped sleeve holes, worn canvas cargo pants with dark reinforced patches, left leg pinned shut, dirt-gray canvas duster jacket stuffed with tunnel tools, scuffed rope-soled boots. Tattooed inner left wrist with Bore Rat symbol. Carries weathered leather satchel. Gritty GLMZ tunnel explorer aesthetic, standing in dim underground tunnel lighting with dust particles visible, posture leaning heavily on crutch, exhausted determined expression, neon glow distant behind. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 66.5,
-    "South Asian": 23.4,
-    "Sub-Saharan African": 10.1
+    "Sub-Saharan African": 56.6,
+    "Hispanic/Latin American": 37.3,
+    "East Asian": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 25.6
+      },
+      "West African": {
+        "Nigerian": 18.1,
+        "Ghanaian": 4.6
+      },
+      "East African": {
+        "Ethiopian": 3.3,
+        "Somali": 5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 37.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 6.1
+      }
+    }
+  }
 }

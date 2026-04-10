@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73676df83a3715475204be4",
   "type": "character",
-  "name": "Nova Tlemcani",
+  "name": "Erik Larsdóttir",
   "aliases": [
     "Zin",
     "The Chandelier",
@@ -14,7 +14,7 @@
   "age": 44,
   "status": "active",
   "location": "The Spire, near Michigan Ave and Chicago Ave",
-  "description": "Zinnia Achterberg-Nwosu is the kind of beautiful that reads immediately as weaponized, which is both accurate and a cover for the more interesting weapon underneath. She is tall, dark-skinned, with natural hair she wears in elaborate architectural arrangements that change with each public appearance — a performance of self-invention she finds genuinely amusing. Her apartment in The Spire is on a floor most Spire residents don't know exists. Her official title is 'Senior Behavioral Architect' at Helion-Vantage Group's Social Coherence Division, which is a corporate euphemism for the team that designs the psychological infrastructure of GLMZ — the ambient media, the incentive structures, the carefully modeled emotional landscapes that keep the lower districts productive, the upper districts compliant, and everyone sufficiently distracted from the seams.\n\nShe is, by any honest accounting, extraordinarily good at her job, and she came to it through a path that her current colleagues would find disqualifying if they knew it: she spent her twenties as an activist and propagandist for a lower-district mutual aid network, designing counter-messaging against exactly the kind of systems she now builds. She was recruited not despite this history but because of it — someone at Helion-Vantage recognized that the best architect of a cage is someone who has studied how to pick the lock. She accepted the offer during a period of personal collapse that she has since reframed as a pragmatic pivot and has not fully reframed as anything.\n\nThe dissonance has not resolved. It has instead become the engine of a private project she runs in the margins of her official work: small, precise, nearly undetectable perturbations in the systems she designs — micro-adjustments to incentive models, subtle framings in ambient media that open rather than close cognitive space, changes so minor that no single one could be identified as sabotage. She thinks of this as harm reduction. She thinks of it as paying a debt. She has not decided whether it makes her a traitor, a hypocrite, or the most effective resistance operative in the city.",
+  "description": "Erik Larsdóttir is the kind of beautiful that reads immediately as weaponized, which is both accurate and a cover for the more interesting weapon underneath. She is tall, dark-skinned, with natural hair she wears in elaborate architectural arrangements that change with each public appearance — a performance of self-invention she finds genuinely amusing. Her apartment in The Spire is on a floor most Spire residents don't know exists. Her official title is 'Senior Behavioral Architect' at Helion-Vantage Group's Social Coherence Division, which is a corporate euphemism for the team that designs the psychological infrastructure of GLMZ — the ambient media, the incentive structures, the carefully modeled emotional landscapes that keep the lower districts productive, the upper districts compliant, and everyone sufficiently distracted from the seams.\n\nShe is, by any honest accounting, extraordinarily good at her job, and she came to it through a path that her current colleagues would find disqualifying if they knew it: she spent her twenties as an activist and propagandist for a lower-district mutual aid network, designing counter-messaging against exactly the kind of systems she now builds. She was recruited not despite this history but because of it — someone at Helion-Vantage recognized that the best architect of a cage is someone who has studied how to pick the lock. She accepted the offer during a period of personal collapse that she has since reframed as a pragmatic pivot and has not fully reframed as anything.\n\nThe dissonance has not resolved. It has instead become the engine of a private project she runs in the margins of her official work: small, precise, nearly undetectable perturbations in the systems she designs — micro-adjustments to incentive models, subtle framings in ambient media that open rather than close cognitive space, changes so minor that no single one could be identified as sabotage. She thinks of this as harm reduction. She thinks of it as paying a debt. She has not decided whether it makes her a traitor, a hypocrite, or the most effective resistance operative in the city.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -229,7 +229,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spire",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,47 +244,22 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
   ],
   "related_entities": [
-    "GLMZ",
     "Tessera Corponation Palimpsest Identity Engine",
     "The Spire",
-    "ARCHITECT",
     "ShieldTech CLA-3 'Cascade'",
+    "ARCHITECT",
     "The Meridian Lock",
-    "CRUCIBLE Vantage Artisan Precision Hand",
     "Irontide Tidal Energy",
+    "CRUCIBLE Vantage Artisan Precision Hand",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Ouroboros Energy Helion Compact Reactor",
     "Chicago",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Biometric Denial Charge BDC-1",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Idris Forsberg-Quaye",
-    "NeuralPath FlowState Focus Regulator",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noor Farouk",
-    "Patient Zero",
-    "Pikasso Wemba-Þórðarson",
-    "Pullman Works",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Slagworks Industrial",
-    "Stelceram-7",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Circuit",
-    "The Flood Register",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Question",
-    "The Quiet Room",
-    "Tui Fedorov-Ampofo",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Yannick Tofauti-Szarvásy"
+    "Ouroboros Energy Helion Compact Reactor",
+    "Honest Burger",
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (36%) with significant North African (28.2%) and Hispanic/Latin American (15.1%) ancestry, complemented by Northern European (13.9%) and Sub-Saharan African (6.8%) heritage. A genetic blend reflecting the Ubiquitous Diaspora, producing warm golden-bronze undertones with subtle olive complexity.",
+    "heritage": "Northern European dominant (56.6%) with substantial South Asian (16.2%), Hispanic/Latin American (11.8%), and Eastern European (9.8%) ancestry, complemented by Middle Eastern (4.5%) and Pacific Islander (1.1%) heritage. A genetic blend reflecting the Ubiquitous Diaspora, producing luminous fair-to-light skin where South Asian and Hispanic ancestry create warm golden-bronze undertones across the face, particularly pronounced at the cheekbones, temples, and jawline. The combination yields a complexion that reads as both Nordic clarity and warm-toned depth simultaneously.",
     "height_cm": 183,
     "weight_kg": 68,
     "build": "Lean and angular, with the posture of someone who has learned to occupy space without apologizing for it. Shoulders held level, minimal excess body fat, a kind of controlled precision in every line.",
@@ -292,8 +267,8 @@
     "hair_style": "Architectural — rotated through high-complexity braids, geometric arrangements, sculptural updos that function as both aesthetic statement and subtle signal of cognitive state to those who read her deliberately",
     "hair_length": "Medium to Long, variable by design",
     "eye_color": "Deep brown, unaugmented, capable of an unsettling steadiness",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones, reflecting the convergence of Southeast Asian, North African, and Latin American ancestry with Northern European and Sub-Saharan African heritage. Rich, luminous complexion that deepens to warm mahogany in shadow.",
-    "complexion": "Immaculate grooming standard of Tier 1 corporate elite. Skin care optimized for appearance and longevity. High cheekbones with subtle definition reflecting Southeast Asian and North African genetic influence, softened by the warm undertones of Latin American ancestry. Expression controlled but not frozen — she permits herself small, calculated smiles. Fine lines around the eyes that suggest either late nights or the permanent half-squint of someone processing multiple data streams simultaneously.",
+    "skin_tone": "Fair to light with warm golden-bronze undertones. The Northern/Eastern European base creates luminosity while South Asian and Hispanic ancestry adds warmth and complexity across the face. Deepens to warm tan with sun exposure, with olive-bronze complexity concentrated around the eyes, temples, and cheekbones. The result is a rich, luminous complexion that simultaneously reads as Nordic and warmth-toned, with subtle depth across the cheekbones and jawline.",
+    "complexion": "Immaculate grooming standard of Tier 1 corporate elite. Skin care optimized for appearance and longevity. Cheekbones with sharp Nordic definition softened and warmed by South Asian and Hispanic genetic structure, creating an arresting combination of clean geometry and golden-warm undertones. The blend produces a distinctive facial architecture with pronounced cheekbone definition and slightly broader face structure than pure Northern European ancestry would suggest. Expression controlled but not frozen — she permits herself small, calculated smiles. Fine lines around the eyes that suggest either late nights or the permanent half-squint of someone processing multiple data streams simultaneously.",
     "distinguishing_marks": [
       "Faint scar along the left inner wrist, approximately 3cm, linear — from a period she does not discuss, positioned where a neural interface port could plausibly explain it",
       "Micro-pattern of subdermal LED nodes along the right temple, barely visible under skin, not functional, installed as a status marker from her Helion-Vantage onboarding and never removed"
@@ -302,16 +277,77 @@
     "posture_movement": "Moves with deliberate efficiency, no wasted motion. Hands are expressive in controlled moments, still in others. Sits in a way that suggests both comfort in her environment and constant low-level alertness. Walks with the gait of someone who has learned to navigate multiple social spaces — capable of shifting her physical presence moment to moment depending on the room.",
     "clothing_style": "Tier 1 corporate formal with occasional deliberate subversions. Helion-Vantage-approved palette — grayscale, pearl, deep jewel tones — in garments that fit with unsettling precision. High-end fabrics that read as investment rather than consumption: responsive weave smart-cloth from Zurich makers, heritage fibers, cuts that suggest personal tailoring. Minimal jewelry beyond a neural interface watch (non-functional, purely aesthetic) and occasionally a ring that changes — sometimes platinum, sometimes matte black ceramic. No visible corpo branding, which is itself a tier marker. Her clothing reads as: expensive, controlled, and completely uncompromising about fit. The impression is of someone who has outsourced the uncertainty from her appearance."
   },
-  "image_prompt": "Nova Tlemcani, 183cm tall lean angular woman with warm golden-bronze skin and subtle olive undertones reflecting Southeast Asian, North African, and Latin American heritage. Deep black architectural braids arranged in geometric patterns, styled as subtle cognitive state indicator. Deep unaugmented brown eyes, immaculate corporate grooming, fine lines suggesting late nights processing data streams. High cheekbones with warm undertones, controlled expression, capable of calculated smiles. Wearing Helion-Vantage tier 1 corporate formal attire — grayscale and jewel tones in precision-fit smart-cloth, minimal platinum jewelry, non-functional aesthetic neural interface watch. Faint 3cm linear scar on left inner wrist. Subdermal LED micro-patterns barely visible on right temple. Moves with deliberate efficiency in controlled environment. Cyberpunk 2226, Great Lakes Metropolitan Zone, cool LED-accented office lighting, atmosphere of invisible power and hidden augmentation. --ar 2:3 --v 6",
+  "image_prompt": "Professional portrait of Erik Larsdóttir, 183cm tall lean angular woman with deep black hair in sculptural architectural braid, unaugmented deep brown eyes with unsettling steadiness. Fair to light skin with warm golden-bronze undertones blending Nordic clarity with South Asian and Hispanic warmth, particularly pronounced across sharp cheekbones and temples. Olive-bronze complexity around eyes. Immaculate corporate grooming. Wearing Tier 1 corporate formal wear in grayscale and pearl tones, responsive smart-cloth from Zurich, perfectly tailored precision fit. Minimal jewelry: aesthetic neural interface watch, occasionally changing rings. Fine lines around eyes suggesting constant data processing. Faint 3cm linear scar on left inner wrist visible. Barely-detectable micro LED nodes along right temple. Controlled expression with calculated composure. Sits with deliberate efficiency, low-level alertness. Background: sleek corporate office or high-tech corporate space with cool lighting, shadows emphasizing her sharp Nordic-South Asian-Hispanic facial geometry. GLMZ aesthetic, Helion-Vantage corporate elite presentation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 36.0,
-    "North African": 28.2,
-    "Hispanic/Latin American": 15.1,
-    "Northern European": 13.9,
-    "Sub-Saharan African": 6.8
+    "Northern European": 56.6,
+    "South Asian": 16.2,
+    "Hispanic/Latin American": 11.8,
+    "Eastern European": 9.8,
+    "Middle Eastern": 4.5,
+    "Pacific Islander": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "Irish": 29.5
+      },
+      "Germanic": {
+        "Austrian": 27.1
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 13.6
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.4,
+        "Tamil Sri Lankan": 1.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.9
+      },
+      "South American": {
+        "Colombian": 0.6
+      },
+      "Caribbean": {
+        "Dominican": 4.3
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 7.5
+      },
+      "Slavic West": {
+        "Polish": 0.8
+      },
+      "Slavic East": {
+        "Belarusian": 1,
+        "Ukrainian": 0.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 3.8
+      },
+      "Arab Gulf": {
+        "Emirati": 0.5,
+        "Iraqi": 0.2
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Ni-Vanuatu": 0.1,
+        "Fijian": 0.2
+      },
+      "Micronesian": {
+        "Palauan": 0.8
+      }
+    }
+  }
 }

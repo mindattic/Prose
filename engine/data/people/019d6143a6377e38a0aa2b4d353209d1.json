@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6377e38a0aa2b4d353209d1",
   "type": "character",
-  "name": "Ash Rakhimov",
+  "name": "Ash Cissé",
   "aliases": [
     "Isi",
     "Stork"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Hamtramck Enclave — operates from a second-floor flat that doubles as a small clinic; also makes home visits throughout the district, near Western and Division",
-  "description": "Isioma is a compact, energetic woman with rich dark skin, sharp cheekbones, and a wide gap-toothed smile that she deploys like a tool. Her hair is kept in small, intricate braids pinned up beneath a patterned cloth wrap when she's working, down and loose when she's not — a distinction she makes firmly as a psychological boundary. She has a bioluminescent mod she got in her twenties: a soft gold shimmer under the skin at her collarbones that she originally disliked and now considers a professional asset, because anxious patients find it soothing in dim rooms during labor. She moves fast and talks faster, and her hands are never not doing something.\n\nIsioma has delivered over four hundred children in ten years of practice, and she carries that number the way other people carry credentials — it is her proof and her weight. She is an outspoken advocate for reproductive care as infrastructure, not luxury, and she frequently clashes with Helix Biosystems representatives who attempt to regulate or audit community practitioners like herself. She has a complicated relationship with the gene therapy industry, believing that geneware for infants should be a family's choice but that the cost structures make it coercion dressed as option. She keeps a large, handpainted mural of an E.L.F. she calls the Threshold on her clinic wall — a figure made of doorways — and every family she works with is invited to leave a small offering at it after a successful birth.",
+  "description": "Ash Cissé is a compact, energetic woman with rich dark skin, sharp cheekbones, and a wide gap-toothed smile that she deploys like a tool. Her hair is kept in small, intricate braids pinned up beneath a patterned cloth wrap when she's working, down and loose when she's not — a distinction she makes firmly as a psychological boundary. She has a bioluminescent mod she got in her twenties: a soft gold shimmer under the skin at her collarbones that she originally disliked and now considers a professional asset, because anxious patients find it soothing in dim rooms during labor. She moves fast and talks faster, and her hands are never not doing something.\n\nAsh Cissé has delivered over four hundred children in ten years of practice, and she carries that number the way other people carry credentials — it is her proof and her weight. She is an outspoken advocate for reproductive care as infrastructure, not luxury, and she frequently clashes with Helix Biosystems representatives who attempt to regulate or audit community practitioners like herself. She has a complicated relationship with the gene therapy industry, believing that geneware for infants should be a family's choice but that the cost structures make it coercion dressed as option. She keeps a large, handpainted mural of an E.L.F. she calls the Threshold on her clinic wall — a figure made of doorways — and every family she works with is invited to leave a small offering at it after a successful birth.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -175,7 +175,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,36 +229,23 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Hamtramck Enclave",
+    "Helix Biosystems",
     "The Threshold",
     "The Iron Lotus",
     "Threshold",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "The Gradient Compact",
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Midwife",
+    "Arcturus KS-7 'Nursery'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Gold",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries CR-9 'Foundry'",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Gwenaelle Tetteh-Solberg",
-    "Kairos Blunt",
-    "Lazarus IDP-1 'Teeth'",
-    "Patient Zero",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European, Central Asian, and Sub-Saharan African blend — fair-to-medium skin with warm undertones, sharp cheekbones suggesting Central Asian ancestry mixed with the deeper warmth of Sub-Saharan heritage, creating a striking intermediate complexion",
+    "heritage": "Hispanic/Latin American (47.7%), Sub-Saharan African (24.4%), East Asian (14.6%), and Southeast Asian (13.3%) — a striking polychromatic blend creating warm golden-brown skin with complex layered undertones: Caribbean and Central American warmth anchored by deeper Sub-Saharan richness, refined by the subtle cool undertones and defined bone structure of East and Southeast Asian ancestry",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry with functional muscle tone from constant movement and lifting during deliveries; no excess weight, everything economical",
@@ -266,8 +253,8 @@
     "hair_style": "Worn in small, intricate cornrows or box braids — pinned up under a patterned cloth wrap during work, loose and flowing when off-duty as a deliberate psychological reset",
     "hair_length": "Medium (shoulder-length when unbound)",
     "eye_color": "Deep brown with gold-flecked undertones",
-    "skin_tone": "Warm medium-brown — a complex blend reflecting the mix of Northern European fairness tempered by Central Asian and Sub-Saharan warmth, creating rich golden-brown undertones rather than pure darkness",
-    "complexion": "Sharp, defined cheekbones with Central Asian prominence; wide gap between front teeth that dominates her smile; skin well-maintained and clear despite irregular sleep; minimal makeup, favors natural appearance",
+    "skin_tone": "Warm golden-brown with luminous honey and amber undertones — medium-to-deep complexion reflecting the balanced convergence of Latin American warmth, Sub-Saharan depth, and East/Southeast Asian refined undertones",
+    "complexion": "Defined cheekbones with refined angular structure reflecting East Asian influence; wide gap between front teeth that dominates her smile; skin well-maintained and clear despite irregular sleep; minimal makeup, favors natural appearance. Facial structure shows the balanced blend of Latin American and African features—fuller lips, broader nose bridge—with subtle East/Southeast Asian bone refinement and slightly higher cheekbones",
     "distinguishing_marks": [
       "Bioluminescent subdermal shimmer across collarbones and upper chest — soft gold tone visible under skin, brighter in low light, glows faintly during emotional intensity or physical exertion",
       "Fine-line tattoo on inner left wrist: a stylized doorway symbol matching the Threshold mural in her clinic",
@@ -277,14 +264,56 @@
     "posture_movement": "Moves with rapid, economical efficiency — never wasted motion. Stands with weight forward on the balls of her feet, ready to move. Hands are constantly in motion: gesturing while talking, adjusting wraps, checking equipment. When focusing on a patient, her movement slows deliberately and becomes precise. When tired, slight forward hunch in shoulders from hours bent over labor beds.",
     "clothing_style": "Tier 3-4 practical: colorful, patterned wrap cloths in rotation (West African and contemporary GLMZ textile designs), worn over neutral base layers. Favors loose linen trousers or soft cargo pants with deep pockets. Durable canvas shoes or slip-on clogs for quick movement. Minimal jewelry except for a thin silver bangle on her left wrist (gift from a patient). White or neutral clinical coat for appointments, but rarely buttons it fully — treats it as a signal rather than a barrier. Off-duty: worn denim, soft sweaters, the same canvas shoes. Nothing expensive, everything functional and well-maintained."
   },
-  "image_prompt": "Ash Rakhimov, 2226 cyberpunk medic, compact 158cm frame with economical wiry build, warm medium-brown skin blending Northern European and Central Asian features with Sub-Saharan warmth, sharp defined cheekbones, deep brown eyes with gold flecks, black hair in intricate cornrows pinned under colorful patterned wrap cloth, soft bioluminescent gold shimmer glowing across collarbones visible in dim clinic lighting, fine-line doorway tattoo on inner left wrist, small burn scar on right hand, wearing loose colorful wrap over neutral base layers and soft cargo pants with deep pockets, durable canvas shoes, rapid efficient posture with weight forward on balls of feet, hands in constant motion, clinical white coat worn unbuttoned as a signal, minimal silver bangle jewelry, interior of a gritty but functional underground clinic with warm practical lighting, neon signs casting colored shadows, cyberpunk 2200s aesthetic, authentic medical worker presence, focused intensity, shallow depth of field emphasizing the bioluminescent shimmer --ar 2:3 --v 6",
+  "image_prompt": "Ash Cissé, 158cm compact wiry frame, warm golden-brown skin with honey and amber undertones blending Caribbean warmth with Sub-Saharan depth and East Asian refinement, defined angular cheekbones, deep brown eyes with gold flecks, natural black hair in medium shoulder-length cornrows pinned under a colorful West African patterned wrap cloth. Bioluminescent soft gold subdermal glow across collarbones visible in dim neo-noir clinic lighting, fine-line doorway tattoo on inner left wrist, small burn scar on right hand. Wearing loose colorful patterned wrap over neutral base layer, soft linen trousers with deep pockets, canvas clogs. Rapid economical posture, weight forward on balls of feet, hands in constant motion. Standing in Great Lakes Metropolitan Zone 2226 clinical setting, low ambient neon and bioluminescent lighting, focused and alert expression, neo-noir medical environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 58.8,
-    "Central Asian": 22.1,
-    "Sub-Saharan African": 19.1
+    "Hispanic/Latin American": 47.7,
+    "Sub-Saharan African": 24.4,
+    "East Asian": 14.6,
+    "Southeast Asian": 13.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 11.7
+      },
+      "South American": {
+        "Venezuelan": 2,
+        "Colombian": 3.3
+      },
+      "Caribbean": {
+        "Cuban": 21.7,
+        "Dominican": 9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 4.6
+      },
+      "Southern African": {
+        "South African": 17.4,
+        "Zambian": 2.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.7
+      },
+      "Japanese": {
+        "Japanese": 0.5
+      },
+      "Chinese": {
+        "Hakka": 1.8,
+        "Shanghainese": 1.6
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 13.3
+      }
+    }
+  }
 }

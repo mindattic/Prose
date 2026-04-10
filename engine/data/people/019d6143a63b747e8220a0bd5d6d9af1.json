@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63b747e8220a0bd5d6d9af1",
   "type": "character",
-  "name": "Cipher Sesay-Ergashev",
+  "name": "Cipher Vestergaard-Kristjánsson",
   "aliases": [
     "The Wall",
     "LL-2",
@@ -14,7 +14,7 @@
   "age": 30,
   "status": "active",
   "location": "The Shelf — rooms in the community center when he's not sleeping at whatever client location needs overnight security, near Western and Division",
-  "description": "Josiah Pine stands between excluded people and the things that hurt them. That's the job. Everything else — the pay, the recognition, the future — is negotiable. Josiah is six-two, built like a person who does physical work because physical work needs doing, and carries himself with the controlled energy of someone who learned early that being big and Black on the Shelf means every interaction starts with someone else's assumptions about your intentions.\n\nHe grew up in a Shelf community defense collective — neighbors who organized to protect their block when corporate security treated the area as an unregulated zone. His mother ran the collective. His father was killed by a private security contractor during a jurisdictional sweep when Josiah was eleven. The contractor faced no charges because the Shelf exists in a governance gap where accountability is a luxury the excluded cannot afford. Josiah learned two things from this: violence is the language the powerful speak, and the powerless need someone who can translate.\n\nRuth recruited him from the community defense network three years ago. He came because Ruth's approach — legal frameworks, documented resistance, non-violent intervention — was more sustainable than the collective's escalating confrontations with security forces. He stays because Ruth is the most principled person he has ever met and because the work, even underfunded and exhausting, feels like the only honest thing left.",
+  "description": "Cipher Vestergaard-Kristjánsson stands between excluded people and the things that hurt them. That's the job. Everything else — the pay, the recognition, the future — is negotiable. Josiah is six-two, built like a person who does physical work because physical work needs doing, and carries himself with the controlled energy of someone who learned early that being big and Black on the Shelf means every interaction starts with someone else's assumptions about your intentions.\n\nHe grew up in a Shelf community defense collective — neighbors who organized to protect their block when corporate security treated the area as an unregulated zone. His mother ran the collective. His father was killed by a private security contractor during a jurisdictional sweep when Josiah was eleven. The contractor faced no charges because the Shelf exists in a governance gap where accountability is a luxury the excluded cannot afford. Josiah learned two things from this: violence is the language the powerful speak, and the powerless need someone who can translate.\n\nRuth recruited him from the community defense network three years ago. He came because Ruth's approach — legal frameworks, documented resistance, non-violent intervention — was more sustainable than the collective's escalating confrontations with security forces. He stays because Ruth is the most principled person he has ever met and because the work, even underfunded and exhausting, feels like the only honest thing left.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -180,7 +180,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -199,42 +199,13 @@
   "related_entities": [
     "Dredge Mining Collective",
     "The Shelf",
-    "Lead",
-    "Aminata Vargas-Baffour",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Arcturus KS-7 'Nursery'",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Glenville Sound",
-    "Iowan Behemoth — 'Palisade'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kang-Petrov Arms KPS-12D 'Typhoon'",
-    "Korrath",
-    "LifeWire SolarShield UV Dermal Protection Layer",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo RR-1 'Rattlesnake'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sorin Ekwensi-Balasanyan",
-    "Søren Mikkelsen-Achebe",
-    "TESSERA ES-4 'Perimeter'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Burden Clause",
-    "The Collective",
-    "The Delray Sacrifice Zone",
-    "The Iron Lotus",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Root",
-    "Whispermouth",
-    "Yannick Tofauti-Szarvásy",
-    "ZhengDao Bioelectric LumbarBrace Pro"
+    "Honest Burger",
+    "Lead"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multicontinental blend — 44% Hispanic/Latin American, 24% Sub-Saharan African, 21% Central Asian, 11% South Asian. Features a rich tapestry: warm mid-to-deep brown skin with subtle golden and reddish undertones from the Latin American and African ancestry, layered with the higher cheekbones and eye shape characteristic of Central Asian genetics, and the warm undertones deepened by South Asian heritage. Face structure reflects the blend — broad, defined jawline with African ancestry influence, higher cheekbones from Central Asian lineage, and warm skin that catches light with both golden and copper reflections.",
+    "heritage": "Northern European (40.3%) and Eastern European (34.8%) form the genetic foundation, creating cool-toned baseline features. Substantial secondary ancestry from Eastern Europe adds Slavic cheekbone prominence. Sub-Saharan African (9.4%), Central Asian (6.9%), Hispanic/Latin American (5.8%), and South Asian (2.8%) contributions create phenotypic warmth and depth. The result: warm light-to-medium brown skin with golden undertones, higher and more angular cheekbones from Northern/Eastern European and Central Asian mix, broader nasal bridge and fuller lips from African heritage, eye structure reflecting the layered ancestry with darker pigmentation throughout.",
     "height_cm": 188,
     "weight_kg": 95,
     "build": "Athletic and densely muscled from consistent functional training — broad shoulders, thick chest, forearms visibly corded. Carries weight efficiently, zero excess body fat. Built for endurance and controlled application of force rather than bulk.",
@@ -242,8 +213,8 @@
     "hair_style": "Close-cropped, maintained practical and low-maintenance",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Warm mid-to-deep brown with golden and reddish undertones from the blended ancestry, richly pigmented and luminous",
-    "complexion": "Clear and resilient, weathered from outdoor patrols and exposure. A thin scar traces along his left jaw — old, white, barely noticeable unless light catches it at an angle. His face carries the neutral expression of someone who has learned to be physically present without seeming threatening; it takes effort. Higher cheekbones and defined structure reflect Central Asian ancestry mixed with broad, strong African heritage features.",
+    "skin_tone": "Warm light-to-medium brown with subtle golden undertones, luminous and richly pigmented from the blending of Northern European fairness with African, Central Asian, and Latin American melanin contribution",
+    "complexion": "Clear and resilient, weathered from outdoor patrols and exposure. A thin scar traces along his left jaw — old, white, barely noticeable unless light catches it at an angle. Angular, high cheekbones reflecting Northern/Eastern European and Central Asian ancestry; broader nasal structure and fuller lip definition show African heritage influence. Facial geometry carries balanced proportions from the complex ancestry blend. His face maintains the neutral expression of someone who has learned to be physically present without seeming threatening; it takes effort.",
     "distinguishing_marks": [
       "Faint scar along the left mandible, approximately 4cm, from an old altercation",
       "Scars across the knuckles of both hands — white, layered, consistent with impact trauma and healing",
@@ -253,15 +224,66 @@
     "posture_movement": "Stands with weight evenly distributed, knees slightly bent — always ready to move in any direction. Walks with controlled deliberation, each step purposeful. Does not gesture expansively; movements are economical and precise. Eyes track his environment constantly. When still, he has the coiled readiness of a person trained in physical protection — not tense, but present.",
     "clothing_style": "Tier 4 practical — durable, functional, clearly chosen for utility over appearance. Wears reinforced cargo pants in dark grey or black, often with visible tool loops and patches from repeated repair. Thermal underlayers beneath loose-fit synthetic shirts in muted colors (charcoal, slate, faded black). A weathered canvas work jacket, Shelf-modified with added pockets and reinforced seams. Worn combat boots, kept meticulously maintained. No jewelry or personal adornment. Clothing shows evidence of frequent physical activity — small tears repaired with industrial stitching, fabric worn pale at stress points. Everything fits loosely enough to allow full range of motion."
   },
-  "image_prompt": "Cipher Sesay-Ergashev, cyberpunk 2226, 188cm tall athletic man with warm deep brown skin carrying subtle golden and copper undertones from blended Hispanic/Latin American, Sub-Saharan African, Central Asian, and South Asian heritage. High defined cheekbones, strong jawline with faint white scar tracing left mandible, dark brown eyes tracking surroundings with constant vigilance. Short black close-cropped hair, neutral expression. Densely muscled athletic build with broad shoulders and corded forearms bearing white knuckle scars from impact trauma. Forearm dermal toughening visible as subtle matte finish with silvery-grey undertone from subcutaneous skeletal reinforcement. Wearing dark grey reinforced cargo pants with tool loops, loose-fit charcoal synthetic shirt, weathered canvas work jacket with added pockets, worn combat boots meticulously maintained. No jewelry. Standing with weight evenly distributed, knees slightly bent, coiled readiness. Great Lakes Metropolitan Zone urban setting, industrial lighting, cyberpunk street environment, functional and utilitarian --ar 2:3 --v 6",
+  "image_prompt": "Cipher Vestergaard-Kristjánsson, 188cm tall athletic build, warm medium-brown skin with golden undertones, high angular cheekbones blending Northern European and Central Asian features with broader nose and full lips from African heritage, dark brown eyes, short black close-cropped hair. GLMZ Great Lakes Metropolitan Zone. Wears reinforced dark grey cargo pants, muted charcoal synthetic shirt under weathered canvas work jacket modified with extra pockets, combat boots. Subtle silvery-grey dermal toughening visible on forearms and hands from subcutaneous augmentation. Faint surgical scar across left collarbone, thin white scar along left jaw. Stands with coiled readiness, weight evenly distributed, completely present and alert. No excess movement. Industrial repair stitching visible on worn clothing. Neon-lit urban environment, cool-toned neo-noir lighting casting subtle highlights on richly pigmented warm skin, cinematic, moody, professional security operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 44.1,
-    "Sub-Saharan African": 23.8,
-    "Central Asian": 20.8,
-    "South Asian": 11.3
+    "Northern European": 40.3,
+    "Eastern European": 34.8,
+    "Sub-Saharan African": 9.4,
+    "Central Asian": 6.9,
+    "Hispanic/Latin American": 5.8,
+    "South Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 20
+      },
+      "Germanic": {
+        "Austrian": 13.5,
+        "Dutch": 2.4
+      },
+      "British Isles": {
+        "English": 4.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 7.9,
+        "Slovak": 26.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 6.6
+      },
+      "East African": {
+        "Somali": 2.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 5.9
+      },
+      "Turkic": {
+        "Kazakh": 1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 5.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.1
+      },
+      "Pakistani": {
+        "Baloch": 0.7
+      }
+    }
+  }
 }

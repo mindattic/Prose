@@ -79,35 +79,42 @@
         </li>
         <li class="nav-item">
             <NavLink class="nav-link text-light py-1" href="heritage">
-                <i class="bi bi-globe-americas"></i> Ethnic Heatmap
+                <i class="bi bi-globe-americas"></i> Heritage
             </NavLink>
         </li>
-        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Lore</li>
-
-        @NavItem("bi-bullseye", "ammunition", "Ammunition", _ammoCount)
-        @NavItem("bi-handbag", "apparel", "Apparel", _apparelCount)
-        @NavItem("bi-person-bounding-box", "archetypes", "Archetypes", _archetypeCount)
-        @NavItem("bi-robot", "automata", "Automata", _automataCount)
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Characters</li>
         @NavItem("bi-people", "characters", "People", _charCount)
-        @NavItem("bi-basket", "goods", "Consumer Goods", _goodsCount)
-        @NavItem("bi-building", "corps", "Corponations", corpCount)
-        @NavItem("bi-motherboard", "cyberware", "Cyberware", _cyberwareCount)
-        @NavItem("bi-file-earmark-text", "documents", "Documents", _docCount)
-        @NavItem("bi-film", "entertainment", "Entertainment", _entertainmentCount)
-        @NavItem("bi-shield-shaded", "equipment", "Equipment", _equipCount)
-        @NavItem("bi-shield-exclamation", "factions", "Factions", _factionCount)
-        @NavItem("bi-virus", "genemods", "Genemods", _genemodCount)
-        @NavItem("bi-newspaper", "news", "News Archive", _newsCount)
-        @NavItem("bi-capsule", "pharmaceuticals", "Pharmaceuticals", _pharmaCount)
-        @NavItem("bi-geo-alt", "places", "Places", _districtCount)
-        @NavItem("bi-quote", "quotes", "Quotes", _quoteCount)
-        @NavItem("bi-gem", "materials", "Materials", _materialCount)
-        @NavItem("bi-diagram-3", "subsidiaries", "Subsidiaries", _subsidiaryCount)
         @NavItem("bi-cpu", "synthetics", "Synthetics", _synthCount)
-        @NavItem("bi-cpu", "technology", "Technology", _techCount)
-        @NavItem("bi-truck", "transportation", "Transportation", _transportCount)
-        @NavItem("bi-chat-quote", "vocabulary", "Vocabulary", _vocabCount)
+        @NavItem("bi-person-bounding-box", "archetypes", "Archetypes", _archetypeCount)
+
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Organizations</li>
+        @NavItem("bi-building", "corps", "Corponations", corpCount)
+        @NavItem("bi-diagram-3", "subsidiaries", "Subsidiaries", _subsidiaryCount)
+        @NavItem("bi-shield-exclamation", "factions", "Factions", _factionCount)
+
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Gear</li>
         @NavItem("bi-crosshair", "weaponry", "Weaponry", _weaponCount)
+        @NavItem("bi-bullseye", "ammunition", "Ammunition", _ammoCount)
+        @NavItem("bi-motherboard", "cyberware", "Cyberware", _cyberwareCount)
+        @NavItem("bi-shield-shaded", "equipment", "Equipment", _equipCount)
+        @NavItem("bi-handbag", "apparel", "Apparel", _apparelCount)
+        @NavItem("bi-virus", "genemods", "Genemods", _genemodCount)
+        @NavItem("bi-capsule", "pharmaceuticals", "Pharmaceuticals", _pharmaCount)
+
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">World</li>
+        @NavItem("bi-geo-alt", "places", "Places", _districtCount)
+        @NavItem("bi-truck", "transportation", "Transportation", _transportCount)
+        @NavItem("bi-gem", "materials", "Materials", _materialCount)
+        @NavItem("bi-cpu", "technology", "Technology", _techCount)
+        @NavItem("bi-robot", "automata", "Automata", _automataCount)
+
+        <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">Culture</li>
+        @NavItem("bi-file-earmark-text", "documents", "Documents", _docCount)
+        @NavItem("bi-quote", "quotes", "Quotes", _quoteCount)
+        @NavItem("bi-chat-quote", "vocabulary", "Vocabulary", _vocabCount)
+        @NavItem("bi-newspaper", "news", "News Archive", _newsCount)
+        @NavItem("bi-film", "entertainment", "Entertainment", _entertainmentCount)
+        @NavItem("bi-basket", "goods", "Consumer Goods", _goodsCount)
 
 
         <li class="nav-header text-muted small mt-3 mb-1 text-uppercase">System</li>

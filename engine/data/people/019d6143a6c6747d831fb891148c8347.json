@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c6747d831fb891148c8347",
   "type": "character",
-  "name": "Stellan Nygaard-Bergqvist-Lewandowski",
+  "name": "Efua Deshpande-Dlamini-Rentería",
   "aliases": [
     "Sori"
   ],
@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Deepwell Station, Line 9 operator lounge and along the route daily, near sub-level access near State and Van Buren",
-  "description": "Saoirse is compact and round-faced with warm brown skin and close-set dark eyes framed by expression lines they have earned early. Their hair is grown out in a soft halo that they keep a deep arterial red — natural geneware pigment, stable, low-maintenance — except for a single uncolored streak above their left ear that they call their 'warranty void.' They wear the Ferrogate Transit operator uniform with the collar one button undone, which is the single small rebellion available to them within the corponation's dress code, and they have exercised it every shift for four years.\n\nThey know the Line 9 route the way other people know their own handwriting — without thinking about it, through the body. They can tell you which platform floods when the lake pressure spikes, which section of tunnel has the ELF everyone calls the Ticker who makes the PA system stutter, which passenger is a regular by the sound of their steps. They are wry and dry with regulars, perfectly professional with strangers, and quietly furious with Ferrogate Transit management on a continuous low boil that they have learned to regulate like a temperature gauge.",
+  "description": "Efua Deshpande-Dlamini-Rentería is compact and round-faced with warm brown skin and close-set dark eyes framed by expression lines they have earned early. Their hair is grown out in a soft halo that they keep a deep arterial red — natural geneware pigment, stable, low-maintenance — except for a single uncolored streak above their left ear that they call their 'warranty void.' They wear the Ferrogate Transit operator uniform with the collar one button undone, which is the single small rebellion available to them within the corponation's dress code, and they have exercised it every shift for four years.\n\nThey know the Line 9 route the way other people know their own handwriting — without thinking about it, through the body. They can tell you which platform floods when the lake pressure spikes, which section of tunnel has the ELF everyone calls the Ticker who makes the PA system stutter, which passenger is a regular by the sound of their steps. They are wry and dry with regulars, perfectly professional with strangers, and quietly furious with Ferrogate Transit management on a continuous low boil that they have learned to regulate like a temperature gauge.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -157,7 +157,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,38 +180,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Glenville Sound",
     "The Fathom Line",
+    "Pressure Drop",
     "Ironvein",
     "The Gradient Compact",
     "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
     "Tessera TK-7 Service Pistol 'Ticker'",
-    "Alper Holmberg-Dembele",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ADM-10 'Overseer'",
-    "Arcturus PX-1 'Phantom'",
-    "Collinwood Docks",
-    "Helix Biosystems Metabolic Flux Monitor",
-    "Narrowcast",
-    "Oumarou Svec-Ranginui",
-    "Prosper Dembélé-Ranginui",
-    "Street Custom 'Gallows' Recurve Bow",
-    "The Collective",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-R357 Noir 'Phantom'",
-    "WELLSPRING"
+    "Neural Palate"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Cosmopolitan ancestry blend: Northern European (33%), East Asian (29.6%), Eastern European (26.5%), and Middle Eastern (10.9%). Features reflect this complex mix — moderate bone structure with subtle East Asian eye shape, warm undertones from Middle Eastern heritage, and fair-to-medium base from Northern and Eastern European genetics creating a unique contemporary diaspora phenotype.",
+    "heritage": "Genuine Ubiquitous Diaspora phenotype: Sub-Saharan African (25.8%), Hispanic/Latin American (25.8%), Pacific Islander (16.6%), South Asian (16.3%), East Asian (15.5%). The genetic blend creates a complex, luminous appearance—warm golden-brown skin with undertones layered from African melanin depth, South Asian richness, Pacific Islander glow, Hispanic/Latin warmth, and subtle East Asian influence. Bone structure shows moderate definition with rounded proportions characteristic of Pacific Islander and African heritage. Eyes carry the slightly closer-set quality and subtle epicanthic fold hints of East Asian ancestry. Cheekbones display soft fullness from African and Pacific Islander genetics. Overall appearance is contemporary, grounded, thoroughly mixed-heritage without reading as any single ancestry.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and rounded, with the solid, functional frame of someone who moves through confined spaces daily. Shoulders slightly forward from years of operator posture. No excess weight, but not angular — a body built for endurance, not speed.",
     "hair_color": "Deep arterial red (stable geneware pigment)",
     "hair_style": "Soft natural halo, shoulder-length, with a single uncolored (silver-gray) streak above the left ear",
     "hair_length": "Medium",
-    "eye_color": "Dark brown, slightly closer-set, reflecting East Asian ancestry within the broader genetic mix",
-    "skin_tone": "Warm golden-beige with subtle peachy undertones — the blended result of Northern European fair base, East Asian warmth, Eastern European depth, and Middle Eastern golden richness",
-    "complexion": "Round face with moderate definition, expression lines around the eyes and mouth earned early from years of focus and quiet frustration. Cheekbones carry mild prominence from East Asian heritage. Well-maintained skin, minimal cosmetic modification. Eyes carry an observer's intelligence and a thread of contained irritation.",
+    "eye_color": "Dark brown with warm undertones, slightly closer-set, reflecting East Asian ancestry within the broader genetic mix",
+    "skin_tone": "Warm deep golden-brown with rich, complex undertones—the luminous result of Sub-Saharan melanin base, South Asian golden warmth, Pacific Islander brightness, Hispanic/Latin depth, and subtle East Asian influence creating dimensional, glowing depth",
+    "complexion": "Round face with moderate definition, expression lines around the eyes and mouth earned early from years of focus and quiet frustration. Cheekbones carry moderate prominence with soft fullness characteristic of African and Pacific Islander heritage. Well-maintained skin with natural warmth and depth. Eyes carry an observer's intelligence and a thread of contained irritation.",
     "distinguishing_marks": [
       "Single uncolored (warranty-void) hair streak above left ear — deliberately maintained and never dyed back",
       "Fine expression lines radiating from outer corners of both eyes, deeper on the left side",
@@ -221,15 +208,55 @@
     "posture_movement": "Slightly forward-leaning from years hunched over operator controls. Movements are economical and precise — no wasted motion. Walk is steady and rhythmic, like someone who has internalized the cadence of a schedule. Carries themselves with the quiet competence of someone who knows their domain intimately, but with a held tension that suggests awareness of corporate oversight.",
     "clothing_style": "Ferrogate Transit operator uniform (navy blue with lighter blue trim and company logo on chest). Collar always one button undone — a small, consistent rebellion. Uniform is clean and well-fitted but worn with deliberate casualness. Off-shift likely wears functional Tier 4 clothing: durable synthetic blends, muted colors, minimal corporate branding. No jewelry except a faded watch band with no watch (broken years ago, never replaced)."
   },
-  "image_prompt": "Portrait of Stellan, a 158cm transit operator in cyberpunk 2226, with warm golden-beige skin blending Northern European, East Asian, Eastern European, and Middle Eastern heritage. Round face with subtle East Asian cheekbone definition, close-set dark brown eyes with fine expression lines, arterial red shoulder-length hair with a distinctive silver-gray streak above the left ear. Compact, solid build from years of console work. Wearing Ferrogate Transit navy uniform with light blue trim, one collar button deliberately undone in quiet rebellion. Slight forward lean from operator posture, composed expression mixing quiet competence with contained tension. Minimal augmentation visible, faded watchband on wrist. Shot in dim transit station lighting with cool blue-gray tones, intimate and weary, atmospheric cyberpunk setting, documentary realism --ar 2:3 --v 6",
+  "image_prompt": "Efua Deshpande-Dlamini-Rentería, 158cm, compact build, warm deep golden-brown skin with luminous undertones blending Sub-Saharan, South Asian, Pacific Islander, Hispanic, and East Asian heritage. Round face with soft cheekbones, dark brown eyes with warm glow, slightly closer-set, expression lines earned from years of focus. Shoulder-length deep arterial red natural hair with single silver-gray streak above left ear. Wearing navy Ferrogate Transit operator uniform with lighter blue trim, collar one button undone, worn with quiet rebellion. Slight forward lean from operator posture, economical precise movements. Fine calluses visible on right index and middle fingers. Faded watch band with no watch. GLMZ, Great Lakes Metropolitan Zone, moody operator aesthetic, subdued lighting casting shadows across face highlighting cheekbones and expression, gritty transit station or cramped operator console interior, mood of contained intelligence and quiet frustration, realistic portraiture, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 33.0,
-    "East Asian": 29.6,
-    "Eastern European": 26.5,
-    "Middle Eastern": 10.9
+    "Sub-Saharan African": 25.8,
+    "Hispanic/Latin American": 25.8,
+    "Pacific Islander": 16.6,
+    "South Asian": 16.3,
+    "East Asian": 15.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.2
+      },
+      "Central African": {
+        "Congolese": 21.8,
+        "Angolan": 0.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 16.9
+      },
+      "Caribbean": {
+        "Dominican": 0.6,
+        "Puerto Rican": 8.3
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 8.8
+      },
+      "Micronesian": {
+        "Kiribati": 6.6,
+        "Palauan": 1.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 16.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 15.5
+      }
+    }
+  }
 }

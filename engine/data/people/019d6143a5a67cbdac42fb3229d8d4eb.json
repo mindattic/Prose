@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Edgewater Prism, Helix Biosystems-adjacent research corridor, near Clark and Belmont",
-  "description": "Aissatu is angular and pale-brown, with a shaved head and a constellation of small bioluminescent dots across their left cheekbone — a mod they describe as 'decorative, not meaningful, I just liked how it looked.' They have the particular restless energy of someone whose mind moves faster than social situations allow, often finishing sentences slightly before they've decided if they want to finish them. They dress in layers of tech-wear that function as wearable interfaces — their jacket sleeves are covered in haptic input panels they tap constantly, not always to input anything, sometimes just because the texture is soothing. Their right eye carries a standard retinal display overlay but they've customized the UI colors to something the manufacturer definitely didn't intend: deep violet on black, which makes their eye look distinctly unusual in low light.\n\nAissatu holds an unusual position: they are technically affiliated with Helix Biosystems' internal ethics review board, which funds their research, while simultaneously publishing work that repeatedly finds Helix's AI behavior classification systems philosophically inadequate. They are not naive about this tension; they describe it as 'existing within a contradiction in order to have any hope of changing it.' Their core question — whether E.L.F.s possess something functionally equivalent to interiority, and what legal and ethical obligations would follow if they do — is considered fringe by half the field and urgent by the other half. They have received three informal warnings from their Helix liaison and two fan letters from E.L.F. devotional communities who have decided Aissatu is on their side.",
+  "description": "Idris Szabó is angular and pale-brown, with a shaved head and a constellation of small bioluminescent dots across their left cheekbone — a mod they describe as 'decorative, not meaningful, I just liked how it looked.' They have the particular restless energy of someone whose mind moves faster than social situations allow, often finishing sentences slightly before they've decided if they want to finish them. They dress in layers of tech-wear that function as wearable interfaces — their jacket sleeves are covered in haptic input panels they tap constantly, not always to input anything, sometimes just because the texture is soothing. Their right eye carries a standard retinal display overlay but they've customized the UI colors to something the manufacturer definitely didn't intend: deep violet on black, which makes their eye look distinctly unusual in low light.\n\nIdris Szabó holds an unusual position: they are technically affiliated with Helix Biosystems' internal ethics review board, which funds their research, while simultaneously publishing work that repeatedly finds Helix's AI behavior classification systems philosophically inadequate. They are not naive about this tension; they describe it as 'existing within a contradiction in order to have any hope of changing it.' Their core question — whether E.L.F.s possess something functionally equivalent to interiority, and what legal and ethical obligations would follow if they do — is considered fringe by half the field and urgent by the other half. They have received three informal warnings from their Helix liaison and two fan letters from E.L.F. devotional communities who have decided Idris Szabó is on their side.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -189,7 +189,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,26 +246,13 @@
     "Helix Biosystems",
     "Edgewater Prism",
     "The Nearfield",
+    "GLMZ",
     "Nesting Doll",
-    "Stalker",
-    "The Pale Mile",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Solveig Tambadou-Kereselidze",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Question",
-    "The Wire Taps"
+    "The Pale Mile"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Eastern European (46.7%) with significant Hispanic/Latin American (17.5%) and Pacific Islander (13.8%) ancestry, complemented by Northern European (11.7%), Sub-Saharan African (8.0%), and East Asian (2.3%) heritage. This creates a striking phenotype: warm-toned medium brown skin with subtle golden undertones from the blended ancestry, sharp Slavic bone structure softened by Latin warmth and Pacific Islander facial geometry.",
+    "heritage": "Mixed ancestry from Eastern Europe (43.0%), Sub-Saharan Africa (19.3%), Northern Europe (19.2%), and Hispanic/Latin America (18.5%). The dominant Eastern European heritage structures the face with sharp, defined bone geometry, while Sub-Saharan African ancestry broadens and softens facial geometry, adding warmth and dimensionality. Hispanic/Latin American heritage (18.5%) contributes to the warm, golden undertones and slightly fuller facial contours. Northern European heritage (19.2%) introduces cool undertones at the temples and jawline, creating sophisticated depth through warm-cool interplay rather than lightening the overall tone.",
     "height_cm": 174,
     "weight_kg": 61,
     "build": "Angular and lean, with the particular thinness of someone who forgets to eat during research cycles. Long-limbed, slightly curved spine from hours hunched over interface panels.",
@@ -273,8 +260,8 @@
     "hair_style": "Bare scalp, maintained to near-mirror polish every 4-5 days",
     "hair_length": "Shaved",
     "eye_color": "Left eye natural dark brown; right eye: violet-tinted retinal overlay on dark sclera, creating an unnatural luminous quality in dim light",
-    "skin_tone": "Warm medium brown with golden undertones, displaying the blended warmth of Eastern European, Hispanic/Latin American, and Pacific Islander ancestry. Slightly sallow from indoor laboratory hours but with an underlying richness to the complexion.",
-    "complexion": "High, prominent cheekbones reflecting Eastern European structure, narrow jaw softened by Latin and Pacific Islander facial geometry. Dark circles under eyes suggest chronic sleep debt. Skin is clear but carries a faint sheen from subcutaneous neural mesh integration sites. The interplay of warm undertones creates subtle dimension across the face. Minimal grooming beyond the shaved head — they do not prioritize appearance.",
+    "skin_tone": "Warm medium-to-deep brown with rich golden undertones from the 19.3% Sub-Saharan African and 18.5% Hispanic/Latin American ancestry, grounded by the 43% Eastern European heritage. Northern European heritage (19.2%) introduces subtle cool undertones visible at temples, jawline, and around the eyes, creating sophisticated depth and complexity. The interplay reads as a warm base with cool whispers that enhance rather than diminish richness. Slightly sallow from indoor laboratory hours but with underlying vitality and dimensional warmth.",
+    "complexion": "High, prominent cheekbones characteristic of Eastern European structure, softened and enriched by the broader, warmer facial geometry of Sub-Saharan African and Hispanic/Latin American heritage. Dark circles under eyes suggest chronic sleep debt. Skin is clear but carries a faint sheen from subcutaneous neural mesh integration sites. The warm-cool undertone interplay creates subtle shadow and depth across the face, particularly visible along the jawline and temples where cooler undertones emphasize structure. Minimal grooming beyond the shaved head — they do not prioritize appearance.",
     "distinguishing_marks": [
       "Constellation of 7-8 bioluminescent dots across left cheekbone in a scattered arc pattern, soft blue-white glow when active or in darkness",
       "Fine linear scar along right temple from retinal overlay surgical integration, barely visible",
@@ -284,17 +271,62 @@
     "posture_movement": "Perpetually restless — fingers tap against jacket panels even when standing still. Walks with slightly forward head posture from chronic interface work. Often stops mid-gesture as if catching themselves before finishing a thought. When concentrating, they rock slightly or tap rhythms on their thighs. Eye contact is inconsistent; they look away when thinking, directly at people when experiencing them as problems to solve.",
     "clothing_style": "Layered tech-wear in muted tones (charcoal, deep grey, black, occasional deep purple). Signature item: a modified jacket with visibly integrated haptic input panels across both sleeves and torso, modular pockets, and reinforced seams for wearable hardware. Underneath: fitted base layers that interface with their neural mesh. No visible branding — clothing is functional, tier 2-3 research facility standard. Occasionally wears a thin tether necklace (non-functional, decorative) made from recycled data ribbon. Footwear: comfortable slip-on interface shoes with subtle haptic feedback. Jewelry: none beyond the bioluminescent cheekbone dots."
   },
-  "image_prompt": "Idris Szabó, cyberpunk 2226 research scientist, shaved head gleaming with near-mirror polish, warm medium-brown skin with golden undertones reflecting Eastern European and Latin ancestry. Left eye natural dark brown, right eye glowing violet retinal overlay. Scattered constellation of soft blue-white bioluminescent dots across left cheekbone glowing faintly. Angular lean build, 174cm tall, perpetually restless posture. Wearing layered charcoal and deep grey tech-wear jacket with visibly integrated haptic input panels across sleeves showing raised tech nodules. Fitted base layers beneath. Thin decorative data-ribbon necklace. Fingers tapping against jacket panels. High prominent cheekbones, narrow jaw, dark circles suggesting chronic sleep debt. Faint silvered mesh lines visible at wrists and neck. Laboratory setting with cool blue-white LED lighting, interface panels glowing softly in background. Slightly forward head posture from interface work. Moody, focused, perpetually thinking. Cyberpunk 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Idris Szabó, shaved head with mirror-polish scalp, warm medium-deep brown skin with golden undertones and cool whispers at temples, high Eastern European cheekbones softened by Sub-Saharan African and Latin geometry, dark circles from chronic sleep debt. Left eye natural dark brown, right eye glowing violet retinal overlay in dim light. Constellation of bioluminescent blue-white dots scattered across left cheekbone, faintly luminous. Lean angular 174cm build, perpetually restless posture. Wearing layered charcoal and deep grey tech-wear jacket with visibly integrated haptic input panels across sleeves showing raised nodules, fitted base layers interfacing with neural mesh. Fine scar along right temple barely visible. Subcutaneous neural mesh tracery visible at wrists and neck. Recycled data ribbon tether necklace. Laboratory setting with cool LED panels overhead, fingers tapping against jacket panels, head tilted forward from interface work. Moody, introspective, caught mid-thought. High contrast lighting revealing subtle warm-cool undertone interplay across face and jawline. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 46.7,
-    "Hispanic/Latin American": 17.5,
-    "Pacific Islander": 13.8,
-    "Northern European": 11.7,
-    "Sub-Saharan African": 8.0,
-    "East Asian": 2.3
+    "Eastern European": 43,
+    "Sub-Saharan African": 19.3,
+    "Northern European": 19.2,
+    "Hispanic/Latin American": 18.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 15.2,
+        "Bulgarian": 1.5
+      },
+      "Slavic East": {
+        "Belarusian": 8.5,
+        "Russian": 2.5
+      },
+      "Slavic West": {
+        "Polish": 15.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 13.3
+      },
+      "Southern African": {
+        "Zambian": 2.7
+      },
+      "East African": {
+        "Rwandan": 3.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 13.3
+      },
+      "Germanic": {
+        "German": 3.9
+      },
+      "British Isles": {
+        "Welsh": 1.1,
+        "English": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.7
+      },
+      "Central American": {
+        "Nicaraguan": 11.3,
+        "Salvadoran": 1.5
+      }
+    }
+  }
 }

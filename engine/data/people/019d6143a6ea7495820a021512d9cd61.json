@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ea7495820a021512d9cd61",
   "type": "character",
-  "name": "Rowan Venkatesh",
+  "name": "Rowan Fujiwara",
   "aliases": [
     "Crossroads"
   ],
@@ -88,7 +88,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,18 +103,12 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Heritage Vault",
-    "Tomasz Wren",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Circuit",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian dominant (37%) with significant East Asian (21%), Northern European (16%), Sub-Saharan African (15%), and Middle Eastern (12%) ancestry — a complex blend reflecting the Ubiquitous Diaspora. Facial structure shows South Asian cheekbone prominence and eye shape, warmed by Sub-Saharan African features, with Northern European bone density.",
+    "heritage": "Balanced quadratic ancestry creating a striking pan-Asian-Latin phenotype: South Asian (33.7%) and East Asian (33.4%) form the dominant genetic foundation with characteristic high cheekbones, defined eye geometry, and strong facial structure. Hispanic/Latin American heritage (22.9%) infuses warmth, golden and amber undertones throughout the complexion, and slight broadening of the nasal bridge. Northern European ancestry (10.0%) contributes subtle cool undertones, increased bone density in the jaw, and lighter undertones in skin that prevent the complexion from appearing overly saturated. The result is a sophisticated blended phenotype where East Asian eye shape meets South Asian cheekbone prominence, tempered by Latin warmth and cooled by Northern European undertones—a man whose face tells the story of global diaspora.",
     "height_cm": 184,
     "weight_kg": 89,
     "build": "Athletic with thickening through the torso — the build of someone who was lean in his thirties but has settled into middle age without letting himself go. Broad shoulders, defined forearms.",
@@ -122,8 +116,8 @@
     "hair_style": "Kept short and neat, faded on the sides, slightly longer on top — functional but considered",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint amber undertones",
-    "skin_tone": "Warm medium-to-medium-deep complexion with olive undertones — the blended result of South Asian base warmed by Sub-Saharan African and Middle Eastern heritage, cooled slightly by Northern European influence. Golden-brown in daylight, rich amber in warm lighting.",
-    "complexion": "Weathered but maintained — clean-shaven jaw with subtle scarring along the left jawline from old trauma. Crow's feet suggest frequent squinting or chronic stress. High cheekbones with South Asian prominence. Skin texture is weathered but not neglected; faint chemical scars on knuckles suggest deliberate removal of identifying marks.",
+    "skin_tone": "Warm golden-brown complexion with sophisticated blending — the direct result of South Asian and East Asian base enriched by Hispanic/Latin American golden warmth, moderated by Northern European cool undertones. Medium-deep in neutral light, deepening to rich caramel-amber in warm illumination, maintaining consistent olive-golden undertones year-round. Appears slightly darker on the neck and forearms from sun exposure.",
+    "complexion": "Weathered but maintained — clean-shaven jaw with subtle scarring along the left jawline from old trauma. Crow's feet suggest frequent squinting or chronic stress. High cheekbones with pronounced South/East Asian prominence softened by Latin facial structure. Skin texture is weathered but not neglected; faint chemical scars on knuckles suggest deliberate removal of identifying marks. Subtle sun-damage patterns on temples.",
     "distinguishing_marks": [
       "Thin white scar running 8cm along the left jawline, from corner of mouth toward ear — surgical or blade work",
       "Tattoo on inner left wrist: faded Cyrillic text (approximately 3x2cm, blue-black ink, aged 20+ years)",
@@ -133,16 +127,52 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced, always angled to keep both exits in peripheral vision. Handshake is firm but controlled. Speaks quietly, forcing others to lean in; listens more than talks. Eyes track fast movement on instinct.",
     "clothing_style": "Tier 2-3 hybrid: expensive basics over cheaper layers. Usually wears tailored grey or charcoal wool trousers, neutral-tone merino undershirt, tactical overshirt or unbranded tech-weave jacket (water-resistant, micromesh pockets). Hiking boots — practical, durable, good ankle support. One silver chain bracelet (family heirloom, kept). No visible logos. Everything is functional; nothing screams wealth or status. Wears a weathered leather wrist cuff on left arm with embedded RFID reader (for safe houses)."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Rowan Venkatesh, 184cm athletic middle-aged man with warm olive-brown skin reflecting South Asian and Sub-Saharan African heritage, sharp cheekbones, dark brown eyes with amber undertones, salt-and-pepper black hair faded at temples, clean-shaven with thin white scar along left jawline. Crow's feet from stress. Wearing tailored charcoal wool trousers, neutral merino undershirt, tactical tech-weave jacket, practical hiking boots. Silver nodes visible at skull base, subdermal neural interface in eyes. Weathered leather RFID wrist cuff on left arm. Silver chain family bracelet. Faded Cyrillic tattoo on inner wrist. Burn scar visible on right hand. Economical posture, alert stance, weight balanced. Dimly lit safe house interior with amber neon rim-lighting, shallow depth of field focusing on face, cyberpunk atmosphere, moody and intense. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Fujiwara, 184cm tall athletic man in his 50s with warm golden-brown skin blending South Asian, East Asian, Hispanic and Northern European heritage. High prominent cheekbones, dark brown eyes with amber undertones, salt-and-pepper black hair with silver temples, kept short and faded. Clean-shaven with visible 8cm white scar along left jawline. Crow's feet from chronic stress. Wears tailored charcoal wool trousers, neutral merino undershirt, tactical tech-weave jacket, weathered leather boots. Silver chain bracelet visible, RFID-embedded wrist cuff. Faint subdermal neural interface nodes at base of skull. Standing in low-light urban setting, posture economical and balanced, eyes alert and tracking. GLMZ aesthetic, muted color palette, moody atmospheric lighting, slightly hardened expression suggesting mixed heritage and complex history. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 36.9,
-    "East Asian": 21.1,
-    "Northern European": 15.8,
-    "Sub-Saharan African": 14.6,
-    "Middle Eastern": 11.6
+    "South Asian": 33.7,
+    "East Asian": 33.4,
+    "Hispanic/Latin American": 22.9,
+    "Northern European": 10
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 5.6
+      },
+      "Nepali": {
+        "Nepali": 28.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 33.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 7,
+        "Peruvian": 6.6
+      },
+      "Mexican": {
+        "Mexican": 9.3
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 3.5,
+        "Swedish": 2
+      },
+      "Germanic": {
+        "Austrian": 0.9,
+        "German": 0.3
+      },
+      "British Isles": {
+        "English": 3.3
+      }
+    }
+  }
 }

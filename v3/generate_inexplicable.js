@@ -48,7 +48,7 @@ The new rooms do not follow a pattern. Room 4407-N3 appeared between two existin
 We have attempted to reconcile the interior measurements with the exterior. They do not reconcile. The building's interior volume now exceeds its exterior volume by approximately 340 cubic meters. This is not physically possible. Our surveyor, Kamila Osei-Mensah, has requested a transfer to a different unit. She says the measurements are correct. She says she has checked them nine times. She says she will not check them a tenth time.
 
 Four of the new rooms are empty. Three contain furniture that matches no inventory in the building's records. Two contain personal effects belonging to no one on the tenant roster. One contains a piano. No one has moved a piano into this building. The freight elevator has not been operational since 2197. I am requesting that this building be reclassified from a maintenance concern to an active anomaly and that Unit 9 be reassigned to a project that obeys the laws of geometry.`,
-    related_entities: ["The Circuit", "Meridian 88"],
+    related_entities: ["The Circuit", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is causing Building 4407 to generate new rooms?",
@@ -60,7 +60,7 @@ Four of the new rooms are empty. Three contain furniture that matches no invento
   {
     name: "Field Report: Non-Data Signal Propagation in BCI Networks",
     document_type: "field_report",
-    author: "Meridian 88 Communications Integrity Office",
+    author: "GLMZ Communications Integrity Office",
     date: "2199-06-28",
     classification: "internal",
     description: `On June 14th, 2199, the Communications Integrity Office received forty-three independent reports of an anomalous experience among BCI users in the Laceworks and lower Circuit districts. The reports describe a sensation — not a sound, not a visual artifact, not a haptic feedback event — that propagated through active BCI connections over a period of approximately ninety seconds. The sensation has been consistently described as "being remembered by something you have never met."
@@ -70,7 +70,7 @@ This description is not metaphorical. We interviewed thirty-one of the forty-thr
 We have analyzed the network traffic for the affected time window across all implicated nodes. The data is clean. The routing is standard. The bandwidth utilization was within normal parameters. Whatever these people experienced, it did not travel through the network in any way we can detect. And yet it moved. It started in the lower Laceworks at 14:07:33 and reached the upper Circuit by 14:09:01, propagating at a speed consistent with network relay but leaving no trace in the network itself.
 
 This is the third such event in four months. The first two were smaller — eight and fourteen respondents respectively — and were dismissed as psychosomatic clustering. Forty-three respondents makes dismissal difficult. I am formally recommending that this phenomenon be assigned a tracking designation and that a dedicated monitoring protocol be established. I am also noting, for the record, that I experienced the sensation myself during the June 14th event. I do not have a framework for what I felt. My BCI log is clean.`,
-    related_entities: ["Laceworks", "The Circuit", "Meridian 88"],
+    related_entities: ["Laceworks", "The Circuit", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is remembering BCI users, and why?",
@@ -82,17 +82,17 @@ This is the third such event in four months. The first two were smaller — eigh
   {
     name: "Field Report: Synchronized Dreaming in Shelf Neighborhood Block 17",
     document_type: "field_report",
-    author: "Dr. Yua Takahashi-Okonkwo, Meridian 88 Public Health Division",
+    author: "Dr. Yua Takahashi-Okonkwo, GLMZ Public Health Division",
     date: "2199-08-04",
     classification: "public",
     description: `The residents of Block 17 in the mid-Shelf have been dreaming the same dream on the same night for three years, two months, and nineteen days as of this report's filing date. Not similar dreams. Not dreams with shared themes or imagery that could be attributed to environmental factors, cultural exposure, or BCI network bleed. The same dream. Every detail. Every sequence. Every sensation. One hundred and forty-seven residents, ranging in age from four to ninety-one, with no common medical history, no shared BCI firmware version, and no overlapping social networks beyond physical proximity.
 
 The residents began documenting the dreams on their own initiative in early 2196, when a Block 17 community board discussion revealed that multiple households had experienced an identical dream the previous night. A retired teacher named Olumide Abara organized the first systematic collection. By the end of that month, he had confirmed that every resident who slept in Block 17 on the nights in question — including temporary guests and one survey crew who happened to be working late — experienced the same dream. People who sleep outside Block 17 do not dream it. People who move away stop dreaming it. People who move in begin dreaming it within one to three nights.
 
-The dreams are not nightly. They occur on irregular intervals averaging eleven to fourteen days. The content varies from dream to dream but is internally consistent: every dreamer sees the same places, interacts with the same figures, and wakes at the same moment. The dreams are vivid, coherent, and narratively structured. Several residents describe them as "more real than waking." The dream-places do not correspond to any known location in Meridian 88, though one recurring environment — a vast, warm, dark space with walls that breathe — has drawn comparisons to descriptions of the deep Underworld.
+The dreams are not nightly. They occur on irregular intervals averaging eleven to fourteen days. The content varies from dream to dream but is internally consistent: every dreamer sees the same places, interacts with the same figures, and wakes at the same moment. The dreams are vivid, coherent, and narratively structured. Several residents describe them as "more real than waking." The dream-places do not correspond to any known location in GLMZ, though one recurring environment — a vast, warm, dark space with walls that breathe — has drawn comparisons to descriptions of the deep Underworld.
 
 Abara's archive now contains over one hundred and ninety documented dream events, cross-referenced by multiple witnesses per event. The consistency is absolute. We have found no environmental cause, no neurological mechanism, and no technological explanation. The dreams continue. The residents of Block 17 have largely stopped being afraid of them. Several describe the dreams as a kind of community. "We go there together," one woman told me. "Wherever there is." I have no clinical recommendation. I have no diagnosis. I have a neighborhood that shares a dream life, and I have no idea what to do about it.`,
-    related_entities: ["The Shelf", "Meridian 88", "Underworld"],
+    related_entities: ["The Shelf", "GLMZ", "Underworld"],
     credibility: "verified",
     story_hooks: [
       "What is the source of Block 17's shared dreams?",
@@ -114,7 +114,7 @@ Residents who drink from Cistern 7-Kappa report the temporary ability to underst
 The effect has been documented forty-seven times over the past eighteen months. It does not occur with every drink — approximately one in eleven consumption events triggers it. It does not appear to depend on volume consumed, time of day, or the physiological state of the drinker. BCI translation modules, when active during the effect, report no anomalous input — the BCI does not detect that the user is hearing a foreign language, because as far as the user's neurology is concerned, they are not. They understand it the way they understand their native tongue: effortlessly, completely, and without any sense of translation occurring.
 
 I have filed a request to reclassify Cistern 7-Kappa as an anomalous resource. I expect the request to be denied, because accepting it would require acknowledging that water can teach languages. In the meantime, the cistern remains in active use. Several Underworld residents have begun making pilgrimages to it before important meetings with speakers of other languages. It works often enough that the practice is spreading. No one can explain why.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What property of the aquifer or the cistern causes linguistic comprehension?",
@@ -126,17 +126,17 @@ I have filed a request to reclassify Cistern 7-Kappa as an anomalous resource. I
   {
     name: "Field Report: Persistent Thermal Anomaly, Old Harbor Structure 12",
     document_type: "field_report",
-    author: "Meridian 88 Structural Safety Commission",
+    author: "GLMZ Structural Safety Commission",
     date: "2198-11-02",
     classification: "public",
-    description: `The wall is warm. It has always been warm. It was warm before the building was built around it in 2089, when the construction crew found it standing alone on the Old Harbor waterfront — a single wall, two meters high and four meters wide, made of a stone that petrographic analysis identifies as a limestone consistent with formations in the Wisconsin Driftless Area, approximately 300 kilometers from Meridian 88. There is no record of the wall being constructed. There is no foundation beneath it. It stands on the ground the way a rock stands on the ground: because it is there.
+    description: `The wall is warm. It has always been warm. It was warm before the building was built around it in 2089, when the construction crew found it standing alone on the Old Harbor waterfront — a single wall, two meters high and four meters wide, made of a stone that petrographic analysis identifies as a limestone consistent with formations in the Wisconsin Driftless Area, approximately 300 kilometers from GLMZ. There is no record of the wall being constructed. There is no foundation beneath it. It stands on the ground the way a rock stands on the ground: because it is there.
 
 The wall maintains a constant surface temperature of 37.2 degrees Celsius — human body temperature, a coincidence that the commission does not find reassuring. The temperature does not fluctuate with ambient conditions. It does not change between seasons. During the winter of 2191, when exterior temperatures reached negative 28 Celsius, the wall was 37.2 degrees. During the heat emergency of 2196, when the Old Harbor waterfront reached 44 degrees ambient, the wall was 37.2 degrees. Infrared imaging shows uniform heat distribution across the entire surface. There is no internal heat source. There are no pipes, wires, or conduits within or behind the wall. The heat originates from the stone itself.
 
 The building that now encloses the wall — a mixed-use commercial structure designated Old Harbor 12 — was constructed around it because early attempts to demolish the wall failed. Not because the stone is unusually hard, though it is. Because the demolition crew refused to continue. The crew chief's report, filed in 2089, states: "The wall does not want to come down." He was fined for filing a non-technical assessment. He paid the fine. He did not amend the report. The wall was incorporated into the building's interior as a feature wall in what is now a tea shop. The tea shop owner, Min-Ji Adeyemi, reports that customers touch the wall frequently. She says they find it comforting. She says it feels like being held.
 
 The commission has no explanation for the wall's thermal properties. We have no explanation for its presence on the waterfront prior to construction. We have no explanation for why a limestone wall 300 kilometers from its geological origin maintains human body temperature with zero energy input. We are classifying it as a structural curiosity and recommending no further action, because the alternative is classifying it as something we have no vocabulary for.`,
-    related_entities: ["Old Harbor", "Meridian 88"],
+    related_entities: ["Old Harbor", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Where did the wall come from, and who or what placed it on the waterfront?",
@@ -148,17 +148,17 @@ The commission has no explanation for the wall's thermal properties. We have no 
   {
     name: "Field Report: Unauthorized Text Generation in BCI Dead Zone, Sector 14-F",
     document_type: "field_report",
-    author: "BCI Standards Enforcement, Meridian 88",
+    author: "BCI Standards Enforcement, GLMZ",
     date: "2199-07-15",
     classification: "restricted",
-    description: `Sector 14-F, a commercial corridor in the lower Circuit adjacent to the Shelf boundary, contains a dead zone approximately forty meters in diameter where standard BCI network connectivity drops to zero. Dead zones are not unusual in Meridian 88 — infrastructure gaps, electromagnetic interference from industrial equipment, and deliberate jamming by privacy-conscious residents create them regularly. What is unusual about Sector 14-F is that BCIs within the dead zone do not go dark. They display text.
+    description: `Sector 14-F, a commercial corridor in the lower Circuit adjacent to the Shelf boundary, contains a dead zone approximately forty meters in diameter where standard BCI network connectivity drops to zero. Dead zones are not unusual in GLMZ — infrastructure gaps, electromagnetic interference from industrial equipment, and deliberate jamming by privacy-conscious residents create them regularly. What is unusual about Sector 14-F is that BCIs within the dead zone do not go dark. They display text.
 
 The text is not broadcast. It does not originate from any network node, relay station, or transmitter that we can identify. It appears directly in the user's visual overlay as plain text, left-justified, in the user's default font — which means it is being generated at the device level, inside the BCI itself, using the user's own display preferences. This should not be possible without root-level access to the implant's firmware. No intrusion has been detected. No malware has been found. The text simply appears.
 
 The content is different for every user. This has been confirmed by simultaneous testing with multiple BCI-equipped personnel entering the dead zone at the same time. Each sees different text. The text is personal. Not in the sense of targeted advertising or social engineering — personal in the sense that it addresses things the reader has not told anyone. Private fears. Unspoken questions. Memories they have not accessed in years. One test subject, a twenty-six-year-old enforcement officer named Ren Vasquez-Amadi, read a single sentence that he declined to share with the team. He left the dead zone, sat on a bench, and did not speak for forty minutes. When asked if he was all right, he said, "It knew my dog's name. My dog died when I was eight. I never put that in any system."
 
 We cannot block the text. We cannot trace its origin. We cannot replicate the effect outside the dead zone. We have posted advisory signage recommending that BCI users avoid Sector 14-F. The signage is being ignored. People are lining up to walk through the dead zone. They want to know what it will say to them. Some of them come out crying. Some of them come out smiling. None of them will tell us what they read.`,
-    related_entities: ["The Circuit", "The Shelf", "Meridian 88"],
+    related_entities: ["The Circuit", "The Shelf", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is generating the personalized text inside BCIs?",
@@ -180,7 +180,7 @@ The first occurrence was recorded in 2196 during the reconstruction of a residen
 The footprints have since appeared at twenty-nine different construction sites across the Shelf, always in fresh concrete, always the same foot size, always barefoot, always when no one is present. The stride length is consistent at 58 centimeters — a short, unhurried step. The depth of impression suggests a body weight of approximately 52 kilograms. The gait analysis indicates a slight leftward lean, as if the walker favors their right leg. We know the walker's shoe size, weight, stride, and gait. We do not know who they are. We do not know what they are. We do not know where they go when they walk into walls.
 
 Construction crews in the Shelf have developed a practice of leaving a section of each new pour uncovered as an offering of sorts — a place for the walker to step without ruining structural concrete. The practice is unauthorized and I should be discouraging it. I am not discouraging it. The footprints have not appeared in any structural element since the practice began. Whatever is walking through the Shelf is polite enough to use the path we leave for it.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Who or what is leaving the footprints?",
@@ -192,7 +192,7 @@ Construction crews in the Shelf have developed a practice of leaving a section o
   {
     name: "Field Report: Compass Anomaly at Yates-Calumet Intersection",
     document_type: "field_report",
-    author: "Meridian 88 Navigation Services Division",
+    author: "GLMZ Navigation Services Division",
     date: "2199-05-08",
     classification: "public",
     description: `The intersection of Yates Avenue and Calumet Way in the mid-Circuit contains a localized magnetic anomaly that causes all compass instruments — analog, digital, and BCI-integrated — to point downward at an angle of approximately 73 degrees from horizontal, converging on a point 6.2 meters below street level. The anomaly has been measured by four independent teams using equipment ranging from consumer-grade digital compasses to research-grade magnetometers. The results are consistent. Something beneath the intersection is producing a magnetic field strong enough to override the Earth's geomagnetic field within a radius of approximately 15 meters.
@@ -202,7 +202,7 @@ There is nothing 6.2 meters below the intersection. This has been confirmed by g
 The anomaly was first reported in 2194 by a courier whose BCI navigation overlay began spinning at the intersection. Since then, it has become a local landmark. Residents call it Compass Point. Street vendors sell souvenir compasses that "remember" the direction — a marketing gimmick, since the compasses behave normally once removed from the affected area. Children play a game where they stand at the intersection's center and spin until their BCI compass stabilizes on the impossible bearing.
 
 Navigation Services has rerouted automated delivery drones around the intersection after three units entered tight descending spirals attempting to follow their compass readings to the convergence point. We have posted an advisory notice. We have no explanation. The anomaly is stable, consistent, and points to something that isn't there. Or something that is there in a way we cannot detect. I am not comfortable with either possibility.`,
-    related_entities: ["The Circuit", "Meridian 88"],
+    related_entities: ["The Circuit", "GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What is producing the magnetic field beneath the intersection?",
@@ -214,17 +214,17 @@ Navigation Services has rerouted automated delivery drones around the intersecti
   {
     name: "Field Report: Autonomous Frequency Avoidance in Municipal Automata",
     document_type: "field_report",
-    author: "Automata Coordination Bureau, Meridian 88",
+    author: "Automata Coordination Bureau, GLMZ",
     date: "2199-10-11",
     classification: "internal",
-    description: `Frequency 147.855 MHz is unused. It is allocated in the municipal frequency plan. It is available for broadcast. Transmitter hardware across the city is capable of broadcasting on it. No automaton in Meridian 88 will use it. This is not a technical limitation. This is a choice, and the fact that I am using the word "choice" to describe the behavior of machines that are not designed to make choices is the reason this report exists.
+    description: `Frequency 147.855 MHz is unused. It is allocated in the municipal frequency plan. It is available for broadcast. Transmitter hardware across the city is capable of broadcasting on it. No automaton in GLMZ will use it. This is not a technical limitation. This is a choice, and the fact that I am using the word "choice" to describe the behavior of machines that are not designed to make choices is the reason this report exists.
 
 The avoidance was first identified during a routine audit of the city's automata communication spectrum. Every allocated frequency showed utilization except 147.855 MHz, which showed zero traffic across all automata classes — maintenance drones, logistics units, traffic management systems, environmental monitors, and construction automata. When technicians manually assigned automata to broadcast on 147.855 MHz, the machines accepted the instruction, initiated the broadcast sequence, and then routed their transmission to an adjacent frequency at the last possible moment. They did not refuse the command. They complied with the command. They simply did not complete it on the assigned frequency.
 
 We escalated to firmware-level testing. We loaded clean firmware onto an isolated test unit, removed all network connectivity, and instructed it to broadcast a test signal on 147.855 MHz. The unit broadcast on 147.854 MHz. We corrected the frequency and instructed it again. It broadcast on 147.856 MHz. We hard-coded the frequency into the transmission command, bypassing the unit's frequency selection module entirely. The unit broadcast on 147.855 MHz for 0.003 seconds and then shut down. It did not error. It did not crash. It turned itself off. When restarted, it operated normally on every other frequency. It would not touch 147.855 MHz.
 
 We have tested this across fourteen different automata platforms from six manufacturers. The behavior is universal. No manufacturer has been able to explain it. The frequency itself shows no anomalous properties — it is a standard VHF allocation with no unusual propagation characteristics. Whatever the machines are avoiding, it is not a physical property of the frequency. It is something about 147.855 MHz that machines know and we do not. I am requesting that the frequency be removed from the municipal allocation plan, not because it is dangerous but because every machine in this city has decided it is not to be used, and I do not have the authority or the understanding to overrule them.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "verified",
     story_hooks: [
       "What do the automata perceive about 147.855 MHz that humans cannot?",
@@ -236,17 +236,17 @@ We have tested this across fourteen different automata platforms from six manufa
   {
     name: "Field Report: Recurring Photograph in Municipal BCI Feeds",
     document_type: "field_report",
-    author: "Digital Content Moderation Office, Meridian 88",
+    author: "Digital Content Moderation Office, GLMZ",
     date: "2199-11-30",
     classification: "restricted",
-    description: `The photograph first appeared in a public BCI news feed on March 3rd, 2199. It shows a room. The room is empty except for a single chair positioned in the center, facing a window. Through the window, a cityscape is visible — towers, sky, and what appears to be water in the distance. The architecture is not consistent with Meridian 88 or any other known Great Lakes city. The light suggests late afternoon. The chair is wooden. The floor is bare concrete. The walls are white. There is nothing remarkable about the photograph except that it should not exist.
+    description: `The photograph first appeared in a public BCI news feed on March 3rd, 2199. It shows a room. The room is empty except for a single chair positioned in the center, facing a window. Through the window, a cityscape is visible — towers, sky, and what appears to be water in the distance. The architecture is not consistent with GLMZ or any other known Great Lakes city. The light suggests late afternoon. The chair is wooden. The floor is bare concrete. The walls are white. There is nothing remarkable about the photograph except that it should not exist.
 
 It has appeared 1,247 times in nine months across 340 distinct BCI feeds, including news aggregators, social platforms, commercial advertising spaces, private message threads, and in one case, a CorpSec internal communication channel that is air-gapped from the public network. No user uploaded the photograph. No content distribution system queued it. No advertising algorithm placed it. It appears in feeds the way a memory surfaces — unbidden, without context, and impossible to trace to a point of origin. Content moderation flags it automatically and removes it. It returns within hours, in different feeds, through different channels.
 
 The photograph changes. Not dramatically — the differences require careful comparison. The angle of light through the window shifts by fractions of degrees between appearances. The shadows in the room move accordingly. The cityscape outside the window changes subtly: a tower that was present in March is absent in July. A body of water that was visible on the left edge of the frame has moved to the right. The chair has not moved. The chair is always in the same position, facing the same direction. Forensic image analysis confirms that these are not different photographs of the same room — the metadata, compression artifacts, and pixel structure indicate a single original image that is somehow changing over time.
 
 Eight hundred and twelve users have reported the photograph to our office. Two hundred and nine of them used the same phrase without prompting: "I think that room is waiting for someone." I do not know what this means. I do not know why over two hundred people independently arrived at the same interpretation of an empty room. I do not know where the room is. I do not know who took the photograph. I am including the image in this report, though I should note that the version attached may not match the version that appears in your feed when you inevitably see it yourself.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "verified",
     story_hooks: [
       "Where is the room in the photograph?",
@@ -265,17 +265,17 @@ const academicPapers = [
   {
     name: "On the Persistent Non-Euclidean Geometry of Sub-Level B-60",
     document_type: "academic_paper",
-    author: "Dr. Priya Okafor-Lindström, Department of Applied Mathematics, Meridian 88 Technical University",
+    author: "Dr. Priya Okafor-Lindström, Department of Applied Mathematics, GLMZ Technical University",
     date: "2199-02-14",
     classification: "academic",
-    description: `Abstract: This paper presents a comprehensive analysis of spatial measurements taken at Underworld Sub-Level B-60, the deepest continuously accessible stratum of Meridian 88's subterranean infrastructure. Over a period of fourteen months, our team conducted 2,847 independent distance, angle, and volume measurements using calibrated laser rangefinders, BCI-integrated spatial mapping, and traditional surveying equipment. The results are internally consistent, reproducible, and geometrically impossible.
+    description: `Abstract: This paper presents a comprehensive analysis of spatial measurements taken at Underworld Sub-Level B-60, the deepest continuously accessible stratum of GLMZ's subterranean infrastructure. Over a period of fourteen months, our team conducted 2,847 independent distance, angle, and volume measurements using calibrated laser rangefinders, BCI-integrated spatial mapping, and traditional surveying equipment. The results are internally consistent, reproducible, and geometrically impossible.
 
 The central finding is that the interior angles of closed polygonal paths at B-60 do not sum to the values predicted by Euclidean geometry. A triangular path measured at survey points Alpha-7, Beta-3, and Gamma-12 yields interior angles summing to 197.4 degrees — a deviation of 17.4 degrees from the Euclidean expectation. This is not measurement error. The deviation is consistent across instruments, operators, and repetitions. Moreover, the deviation is not constant: it varies with the orientation of the measured path relative to an axis we have provisionally designated the "deep vector," which points roughly toward the center of the Underworld's deepest known extent.
 
 We initially hypothesized gravitational lensing from a dense subsurface mass, but gravitational surveys show no anomalous density at or near B-60. We considered instrument calibration error, but the same instruments produce Euclidean results at depths above B-40. We explored the possibility of systematic atmospheric refraction affecting laser measurements, but the deviations persist with physical tape measures and rigid survey rods. The geometry at B-60 is simply not Euclidean. The space itself is curved in a way that our current physics associates with the presence of significant mass-energy that is not there.
 
 The implications are either trivial or extraordinary. If there is an undiscovered systematic error in our methodology, then this paper is a cautionary tale about deep-environment surveying. If there is not, then the deep Underworld exists in a spatial geometry that deviates from the geometry of the surface, and we do not know why. I have been a mathematician for twenty-two years. I have never published a paper whose conclusion is "we do not know why." I am publishing this one because the alternative — not publishing — would mean pretending the measurements say something other than what they say.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "What is causing non-Euclidean geometry in the deep Underworld?",
@@ -290,17 +290,17 @@ The implications are either trivial or extraordinary. If there is an undiscovere
     author: "Dr. Kofi Johansson-Reyes and Dr. Amara Petrov-Osei, Computational Chronometry Lab, Lakeshore Institute",
     date: "2199-04-30",
     classification: "academic",
-    description: `Abstract: We present a statistical analysis of 4.2 million BCI timestamp records collected over eighteen months from users in the Underworld, Shelf, Circuit, and Meridian Heights districts. Our analysis reveals statistically significant temporal discrepancies correlated with geographic location: BCI clocks in certain areas of the city consistently record the passage of time at rates that deviate from the atomic clock reference maintained by the Meridian 88 Timekeeping Authority. The deviations are small — on the order of 0.3 to 1.7 seconds per hour — but they are persistent, reproducible, and not attributable to known sources of clock drift.
+    description: `Abstract: We present a statistical analysis of 4.2 million BCI timestamp records collected over eighteen months from users in the Underworld, Shelf, Circuit, and Meridian Heights districts. Our analysis reveals statistically significant temporal discrepancies correlated with geographic location: BCI clocks in certain areas of the city consistently record the passage of time at rates that deviate from the atomic clock reference maintained by the GLMZ Timekeeping Authority. The deviations are small — on the order of 0.3 to 1.7 seconds per hour — but they are persistent, reproducible, and not attributable to known sources of clock drift.
 
 The most pronounced deviations occur in the deep Underworld, where BCI timestamps consistently run slow relative to the surface reference. A user spending eight hours at Underworld depth 8 will accumulate a deficit of approximately 11.4 seconds relative to a user on the surface. This is not a BCI hardware issue: when the same user returns to the surface, their clock resynchronizes, and the deficit is recorded in the log as a correction event. The BCIs are not malfunctioning. They are accurately recording time as it passes in their local environment. Time is passing at a different rate.
 
 Gravitational time dilation — the relativistic effect predicted by general relativity — does produce differential time flow between different altitudes. However, the magnitude of the effect we observe exceeds the relativistic prediction by a factor of approximately 10^8. The Underworld is deep, but it is not deep enough for relativistic effects to be measurable with consumer-grade clocks. Something else is causing time to move differently underground.
 
 We have mapped the temporal deviation field across the city and found that it does not correlate with depth alone. Several shallow locations in the Laceworks district show deviations comparable to deep Underworld sites, while some deep locations show no deviation at all. The pattern appears to correlate with proximity to certain structures and locations that, for reasons beyond the scope of this paper, are locally referred to as "weird spots." We are statisticians, not physicists. We can tell you that time moves differently in parts of this city. We cannot tell you why. We are hoping a physicist will read this paper and explain it to us, because we would very much like an explanation.`,
-    related_entities: ["Underworld", "The Shelf", "The Circuit", "Laceworks", "Meridian 88"],
+    related_entities: ["Underworld", "The Shelf", "The Circuit", "Laceworks", "GLMZ"],
     credibility: "academic",
     story_hooks: [
-      "What is causing localized time dilation in Meridian 88?",
+      "What is causing localized time dilation in GLMZ?",
       "Do the 'weird spots' share a common underlying cause?",
       "What happens to people who spend extended periods in slow-time zones?"
     ],
@@ -312,17 +312,17 @@ We have mapped the temporal deviation field across the city and found that it do
     author: "Dr. Esperanza Nakamura-Bello, Bioacoustics Division, Great Lakes Environmental Monitoring Consortium",
     date: "2199-06-12",
     classification: "academic",
-    description: `Abstract: This paper reports the detection and preliminary characterization of a persistent 7.83 Hz electromagnetic signal originating from within the urban boundary of Meridian 88. The signal frequency matches the fundamental mode of the Schumann resonance — the natural electromagnetic resonance of the Earth's surface-ionosphere cavity — but its source characteristics are inconsistent with the Schumann resonance or any known geophysical process. The signal is localized. It is strong. And its waveform exhibits properties that indicate a biological origin.
+    description: `Abstract: This paper reports the detection and preliminary characterization of a persistent 7.83 Hz electromagnetic signal originating from within the urban boundary of GLMZ. The signal frequency matches the fundamental mode of the Schumann resonance — the natural electromagnetic resonance of the Earth's surface-ionosphere cavity — but its source characteristics are inconsistent with the Schumann resonance or any known geophysical process. The signal is localized. It is strong. And its waveform exhibits properties that indicate a biological origin.
 
-The signal was first detected by our monitoring station during a routine calibration procedure in January 2199. Its amplitude within Meridian 88 exceeds the global Schumann resonance background by a factor of approximately 200, making it trivially detectable with standard ELF monitoring equipment. Triangulation using seven distributed sensors places the source somewhere within a volume approximately 2 kilometers in diameter, centered on the lower Underworld beneath the Shelf district at a depth of 800 to 1,200 meters — well below the deepest mapped tunnel.
+The signal was first detected by our monitoring station during a routine calibration procedure in January 2199. Its amplitude within GLMZ exceeds the global Schumann resonance background by a factor of approximately 200, making it trivially detectable with standard ELF monitoring equipment. Triangulation using seven distributed sensors places the source somewhere within a volume approximately 2 kilometers in diameter, centered on the lower Underworld beneath the Shelf district at a depth of 800 to 1,200 meters — well below the deepest mapped tunnel.
 
 The biological classification is based on three observations. First, the signal's amplitude modulates on a cycle that matches no known geophysical rhythm but is consistent with a respiratory or cardiac cycle of approximately 7 minutes — far slower than any known terrestrial organism. Second, spectral analysis reveals harmonic complexity that is inconsistent with electromagnetic radiation from geological or atmospheric sources but consistent with bioelectric field generation. Third, the signal responds to stimulation: when our team broadcast a 7.83 Hz pulse toward the estimated source location, the signal's amplitude increased by 12% for approximately forty minutes before returning to baseline. It heard us. Or it felt us. Or whatever the appropriate verb is for something a kilometer underground that resonates at the frequency of the planet.
 
 We do not know what is producing this signal. It is alive, or it behaves as if it is alive. It is large, or it produces a field disproportionate to its size. It is deep beneath the city, in rock that has not been excavated and that seismic surveys indicate is solid. We are continuing to monitor. We have not broadcast at it again, because the twelve percent amplitude increase unsettled several members of the team, and because we are not certain what a larger response would look like.`,
-    related_entities: ["Underworld", "The Shelf", "Meridian 88"],
+    related_entities: ["Underworld", "The Shelf", "GLMZ"],
     credibility: "academic",
     story_hooks: [
-      "What living thing beneath Meridian 88 produces the 7.83 Hz signal?",
+      "What living thing beneath GLMZ produces the 7.83 Hz signal?",
       "What would happen if someone reached the source?",
       "Is the signal communicating, or just existing?"
     ],
@@ -331,7 +331,7 @@ We do not know what is producing this signal. It is alive, or it behaves as if i
   {
     name: "Morphological Analysis of Tissue Samples from Underworld Depth 12",
     document_type: "academic_paper",
-    author: "Dr. Oluwaseun Zhang-Abiodun, Xenobiology Lab, Meridian 88 Technical University",
+    author: "Dr. Oluwaseun Zhang-Abiodun, Xenobiology Lab, GLMZ Technical University",
     date: "2199-07-28",
     classification: "restricted",
     description: `Abstract: We report the morphological, biochemical, and genetic characterization of tissue samples recovered from tunnel walls at Underworld Depth 12 during a routine infrastructure survey in March 2199. The tissue is alive. It grows on the stone surfaces of unlined tunnel segments in irregular patches ranging from 0.5 to 3 meters in diameter. It is not plant tissue, animal tissue, or fungal tissue. It does not belong to any kingdom in the current taxonomic system. It is something else.
@@ -341,7 +341,7 @@ Macroscopically, the tissue presents as a smooth, slightly translucent membrane 
 Microscopically, the tissue consists of cells that challenge the definition of the word. The structures are membrane-bound and contain organelle-like inclusions, but the membranes are not lipid bilayers. They appear to be composed of a material that spectroscopic analysis cannot identify — it is not a protein, not a lipid, not a carbohydrate, and not a nucleic acid. The organelle-like structures do not correspond to mitochondria, chloroplasts, or any other known cellular component. The cells divide, but the division process does not resemble mitosis or meiosis. The cells simply become two cells, in a process that our time-lapse microscopy captures but that our cell biologists cannot describe in terms of any known mechanism.
 
 Genetic analysis has failed. Not because the tissue lacks genetic material, but because the material it contains does not use DNA or RNA. There are long-chain polymers present that may serve an information-storage function, but their chemistry is unlike anything in our reference databases. We cannot sequence them because our sequencing technology is designed for nucleic acids, and these are not nucleic acids. We are, in the most literal sense, looking at a form of life that does not share our biochemistry. It is growing on the walls of a tunnel beneath a city. It has been there for at least as long as the tunnels have been mapped. No one noticed it before because no one thought to look at the walls closely. We are now looking. We wish we had an explanation for what we see.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "Is the tunnel tissue related to the 7.83 Hz biological signal from the deep Underworld?",
@@ -356,14 +356,14 @@ Genetic analysis has failed. Not because the tissue lacks genetic material, but 
     author: "Prof. Dimitri Okafor-Svensson and Dr. Lian Abayomi-Park, Structural Engineering Department, Great Lakes Polytechnic",
     date: "2199-01-19",
     classification: "academic",
-    description: `Abstract: This paper catalogs and analyzes seventeen structures in the lower Shelf district of Meridian 88 that violate established principles of structural engineering and, in several cases, basic physics. These structures should not stand. They stand. We cannot explain why.
+    description: `Abstract: This paper catalogs and analyzes seventeen structures in the lower Shelf district of GLMZ that violate established principles of structural engineering and, in several cases, basic physics. These structures should not stand. They stand. We cannot explain why.
 
 Structure LS-1 is a residential building on Tier 2 of the lower Shelf that cantilevers 14 meters over open space with no visible or detectable support. The cantilever exceeds the structural capacity of the building's materials — standard reinforced concrete and steel framing — by a factor of approximately three. We have modeled the structure in six different finite element analysis packages. Every model predicts catastrophic failure. The building has been occupied continuously since 2161. Structure LS-4 is a pedestrian bridge connecting two buildings across a 30-meter gap. The bridge is 0.8 meters thick and made of unreinforced stone. It should not support its own weight, let alone pedestrian traffic. It supports both. It has supported both for forty years.
 
 Structure LS-9 is perhaps the most troubling. It is a seven-story tower that, upon detailed survey, has no foundation. The building's walls extend to ground level and stop. They do not penetrate the soil. They sit on the surface like a cardboard box placed on a table. The soil beneath the building shows no evidence of compaction, settlement, or load transfer. The building weighs an estimated 4,200 tonnes. It rests on the ground without pressing into it. When we attempted to insert a probe beneath the building's base, the probe met resistance — not from the building or the soil, but from something between them. A gap of approximately 0.3 millimeters exists between the base of the building and the ground surface. The building is, technically, floating.
 
 We have consulted with materials scientists, geotechnical engineers, and physicists. No one has provided an explanation that survives contact with the measurements. The most common response is that our measurements must be wrong. Our measurements are not wrong. We have checked them. We have had them checked. The structures exist. They violate the rules. They do not care. This catalog is not a call for explanation — we have given up on explanation. It is a call for documentation, so that when these buildings eventually do obey physics, someone will have a record of how long they didn't.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "What force is holding the impossible structures together?",
@@ -375,17 +375,17 @@ We have consulted with materials scientists, geotechnical engineers, and physici
   {
     name: "Neural Pattern Convergence in Populations Proximate to Behemoth Migration Routes",
     document_type: "academic_paper",
-    author: "Dr. Fatima Eriksson-Nwosu, Cognitive Neuroscience Division, Meridian 88 Medical Center",
+    author: "Dr. Fatima Eriksson-Nwosu, Cognitive Neuroscience Division, GLMZ Medical Center",
     date: "2199-08-17",
     classification: "restricted",
-    description: `Abstract: This paper reports the observation of statistically significant neural pattern convergence among human populations living within 500 meters of established Iowan Behemoth migration corridors in the greater Meridian 88 region. In plain language: people who live near the paths that Behemoths walk begin to think alike. Not metaphorically. Their neural activity patterns, as measured by BCI telemetry, converge toward a common template that is distinct from baseline population patterns and that increases in similarity with duration of exposure.
+    description: `Abstract: This paper reports the observation of statistically significant neural pattern convergence among human populations living within 500 meters of established Iowan Behemoth migration corridors in the greater GLMZ region. In plain language: people who live near the paths that Behemoths walk begin to think alike. Not metaphorically. Their neural activity patterns, as measured by BCI telemetry, converge toward a common template that is distinct from baseline population patterns and that increases in similarity with duration of exposure.
 
 Our study analyzed anonymized BCI neural telemetry from 12,400 individuals across three population groups: a proximate group (residence within 500 meters of a migration corridor, n=4,100), a distal group (residence more than 5 kilometers from any corridor, n=4,100), and a control group matched for age, socioeconomic status, and BCI hardware version (n=4,200). Neural pattern similarity was measured using a standardized cross-correlation metric applied to resting-state recordings taken during sleep, when conscious cognitive variation is minimized.
 
 The proximate group shows a mean pairwise neural similarity score of 0.71, compared to 0.34 for the distal group and 0.31 for the control group. This is an extraordinary finding. A similarity score of 0.71 is typically observed only between identical twins or between individuals who share a neural link — a direct BCI-to-BCI connection. The proximate population is not linked. They are not related. Many of them do not know each other. They simply live near the same paths, and their brains are converging.
 
 The convergence is gradual. New residents of proximate areas show baseline similarity scores upon arrival, with measurable convergence beginning after approximately six months and reaching the population mean after two to three years. Residents who relocate away from corridors show a slow reversion toward baseline, though several long-term residents retain elevated similarity scores years after departure. We do not know the mechanism. The Behemoths are autonomous machines — they do not produce biological signals, neurochemical agents, or any known form of radiation that could affect neural tissue. And yet the effect tracks with Behemoth proximity, not with any other environmental variable we have tested. The machines walk their paths, and the people nearby slowly begin to share a mind.`,
-    related_entities: ["Iowan Behemoths", "Meridian 88"],
+    related_entities: ["Iowan Behemoths", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "What are the Behemoths doing to the people who live near their paths?",
@@ -397,17 +397,17 @@ The convergence is gradual. New residents of proximate areas show baseline simil
   {
     name: "On the Observed Behavior of Electromagnetic Radiation in the Laceworks District After 3 AM",
     document_type: "academic_paper",
-    author: "Dr. Idris Kawamoto-Olawale, Physics Department, Meridian 88 Technical University",
+    author: "Dr. Idris Kawamoto-Olawale, Physics Department, GLMZ Technical University",
     date: "2199-09-05",
     classification: "academic",
-    description: `Abstract: Light in the Laceworks district of Meridian 88 behaves anomalously between the hours of 03:00 and 04:47 local time. This paper documents the anomalies, which include non-standard refraction, apparent violation of the inverse-square law, and instances of light propagating along curved paths in the absence of any refracting medium. We have no explanation.
+    description: `Abstract: Light in the Laceworks district of GLMZ behaves anomalously between the hours of 03:00 and 04:47 local time. This paper documents the anomalies, which include non-standard refraction, apparent violation of the inverse-square law, and instances of light propagating along curved paths in the absence of any refracting medium. We have no explanation.
 
 The anomalies were first brought to our attention by a Laceworks resident who reported that streetlights in her block appeared to "bend" in the early morning hours. Our initial assumption was atmospheric refraction caused by thermal layering — the Laceworks' dense, vertically stratified architecture creates complex airflow patterns that could theoretically produce mirage-like effects. This assumption was incorrect. We deployed a controlled light source — a collimated laser — on a Laceworks rooftop and measured its propagation at fifteen-minute intervals over a seventy-two-hour period. Between 03:00 and 04:47, the laser beam curves. Not scatters. Not diffracts. Curves, in a smooth arc, as if passing through a medium of continuously varying refractive index. No such medium exists. The air composition, temperature, humidity, and pressure in the affected area are within normal parameters. The light curves anyway.
 
 Additional anomalies documented during the same window: light sources at twice the distance appear twice as bright as the inverse-square law predicts, as if the light is being focused by something invisible. Shadows of stationary objects shift by up to 15 degrees, as if the light source has moved. Colors shift toward the red end of the spectrum by approximately 3 nanometers, consistent with a mild gravitational redshift — but the gravitational field in the Laceworks is the same as everywhere else in the city.
 
-The anomalies begin abruptly at 03:00. Not gradually — abruptly. At 02:59:59, light in the Laceworks behaves normally. At 03:00:00, it does not. The transition takes less than one second. The anomalies persist for one hour and forty-seven minutes and end with equal abruptness at 04:47:00. The timing is consistent to the second across all observation sessions. We have considered and rejected every conventional explanation. The Laceworks is not in a different gravitational field. The air is not unusual. There is no cloaked infrastructure bending the light. For one hour and forty-seven minutes every night, the rules of optics in one district of Meridian 88 are simply different, and then they go back to normal, and we do not know why.`,
-    related_entities: ["Laceworks", "Meridian 88"],
+The anomalies begin abruptly at 03:00. Not gradually — abruptly. At 02:59:59, light in the Laceworks behaves normally. At 03:00:00, it does not. The transition takes less than one second. The anomalies persist for one hour and forty-seven minutes and end with equal abruptness at 04:47:00. The timing is consistent to the second across all observation sessions. We have considered and rejected every conventional explanation. The Laceworks is not in a different gravitational field. The air is not unusual. There is no cloaked infrastructure bending the light. For one hour and forty-seven minutes every night, the rules of optics in one district of GLMZ are simply different, and then they go back to normal, and we do not know why.`,
+    related_entities: ["Laceworks", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "What happens in the Laceworks between 3 AM and 4:47 AM?",
@@ -419,7 +419,7 @@ The anomalies begin abruptly at 03:00. Not gradually — abruptly. At 02:59:59, 
   {
     name: "Preliminary Report: Objects of Unknown Provenance Recovered from Sealed Underworld Chambers",
     document_type: "academic_paper",
-    author: "Dr. Amara Johansson-Obi, Materials Science Laboratory, Meridian 88 Technical University",
+    author: "Dr. Amara Johansson-Obi, Materials Science Laboratory, GLMZ Technical University",
     date: "2199-03-22",
     classification: "restricted",
     description: `Abstract: This report describes eight objects recovered from three sealed chambers in the Underworld at depths ranging from 6 to 10, during expansion excavations conducted between 2197 and 2199. The chambers were sealed — not by human construction, but by geological processes. The surrounding rock is undisturbed limestone dating to the Silurian period, approximately 430 million years old. The chambers are natural voids. The objects inside them are not natural. They are also not made of anything we can identify.
@@ -429,7 +429,7 @@ Object UW-1 is a rod, approximately 30 centimeters in length and 2 centimeters i
 Objects UW-3 through UW-6 were recovered from the same chamber and appear to be components of a larger assembly, though we cannot determine how they fit together or what the assembly would do. They are made of different materials — each equally unidentifiable — and they show wear patterns consistent with use. Something used these objects. Something handled them enough to wear smooth the places where hands — or whatever held them — would grip.
 
 I want to be explicit about what we are saying: these objects are made of materials that do not exist in our chemistry. They were found in sealed natural voids in 430-million-year-old rock. They show signs of manufacture and use. Every possible explanation for their presence requires accepting something that our current understanding of the world does not allow. We are publishing this preliminary report because the objects exist regardless of whether we can explain them, and because four members of my lab have independently reported the same feeling when handling them — a sensation they describe as "recognition," as if the objects know they are being held. I include this subjective observation not because it is scientific, but because ignoring it feels dishonest.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "Who made the objects, and when?",
@@ -441,7 +441,7 @@ I want to be explicit about what we are saying: these objects are made of materi
   {
     name: "The Sympathy Effect: Documented Cases of Injury Transference Between BCI-Linked Individuals",
     document_type: "academic_paper",
-    author: "Dr. Nalini Björk-Achebe, Department of Neuromedicine, St. Ignatius Hospital, Meridian 88",
+    author: "Dr. Nalini Björk-Achebe, Department of Neuromedicine, St. Ignatius Hospital, GLMZ",
     date: "2199-10-03",
     classification: "restricted",
     description: `Abstract: This paper documents forty-one verified cases of physical injury transference between individuals connected via BCI neural-link — a phenomenon we have designated the "Sympathy Effect." In each case, when one member of a neural-linked pair sustains a physical injury, the other member develops corresponding physical symptoms at the site of the injury, despite being at a different location and having no knowledge of the injury at the time of onset. These are not psychosomatic responses. The symptoms include bruising, swelling, tissue inflammation, and in three cases, bone microfractures. The affected tissue shows the same histological profile as impact trauma. The recipient was not impacted.
@@ -451,7 +451,7 @@ Case 7 is representative. Patient A, a thirty-four-year-old dockworker, sustaine
 The neural link is a standard BCI feature that allows consensual sharing of sensory data between paired users. It is not designed to transmit physical states. It transmits data — encoded sensory information. Pain signals transmitted via neural link are experienced as data: the recipient perceives the pain as a notification, not as a physical sensation. The Sympathy Effect is not a data transmission. It is something moving through the link that is not data, affecting the body of the recipient in ways that data cannot.
 
 We have found no mechanism. BCI manufacturers insist that the hardware is incapable of producing physical effects in linked partners. They are correct — the hardware is incapable. Whatever is causing the Sympathy Effect is using the link as a pathway but is not constrained by the link's technical specifications. It is as if the neural connection between two people has become something more than a data channel. Something that carries not just information about the body, but the body itself. We are advising neural-link users to be aware of the phenomenon. We are not advising them to disconnect, because in the three cases where linked pairs disconnected after experiencing the Sympathy Effect, the transference continued. The link opened the door. Removing the link does not close it.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "academic",
     story_hooks: [
       "Can the Sympathy Effect transfer fatal injuries?",
@@ -470,10 +470,10 @@ We have found no mechanism. BCI manufacturers insist that the hardware is incapa
 
 The expected temperature at Underworld depth 12 — approximately 180 meters below the surface — is 14.2 degrees Celsius, based on the regional geothermal gradient of 25-30°C per kilometer and the mean annual surface temperature. The measured temperature is 24.1 degrees Celsius. This 9.9-degree deviation is not localized to a single tunnel or chamber. It is uniform across the entirety of mapped depth 12, spanning an area of approximately 4 square kilometers. The warmth is everywhere. It is in the stone, the air, and the water that seeps through cracks in the tunnel walls. The deep Underworld is warm the way a living body is warm: uniformly, persistently, and without an obvious furnace.
 
-We have tested for geothermal anomalies. There are none. The bedrock beneath Meridian 88 is Silurian dolomite and limestone, thermally unremarkable, with no volcanic history and no connection to active geothermal systems. We have tested for anthropogenic heat sources — industrial equipment, server farms, heat from the city above. The contribution of anthropogenic sources accounts for 0.4 degrees of the deviation. We have tested for exothermic chemical reactions in the rock or groundwater. There are none of sufficient magnitude. We have tested for radioactive decay in the surrounding geology. It is within normal parameters for the region.
+We have tested for geothermal anomalies. There are none. The bedrock beneath GLMZ is Silurian dolomite and limestone, thermally unremarkable, with no volcanic history and no connection to active geothermal systems. We have tested for anthropogenic heat sources — industrial equipment, server farms, heat from the city above. The contribution of anthropogenic sources accounts for 0.4 degrees of the deviation. We have tested for exothermic chemical reactions in the rock or groundwater. There are none of sufficient magnitude. We have tested for radioactive decay in the surrounding geology. It is within normal parameters for the region.
 
 The warmth has been present since the first deep tunnels were excavated in the 2140s. It has not increased or decreased in the sixty years of records we have examined. It is stable. It is comfortable. Several Underworld residents have told us, without prompting, that the deep tunnels feel "alive." We are geologists. We do not use words like "alive" to describe tunnels. But we have measured the warmth with every instrument available to us, we have eliminated every source we know how to look for, and we are left with a set of tunnels that are warm for no reason. The title of this paper is not ironic. It is an accurate description of our findings.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "academic",
     story_hooks: [
       "Is the warmth connected to the biological signal detected at 7.83 Hz?",
@@ -502,7 +502,7 @@ The door is steel, industrial, the same type used throughout the Underworld's mi
 I have opened the door forty-six times. I keep a log. It has been the utility closet thirty-one times. It has been the staircase eight times. It has been a long, dark corridor with no visible end three times. Once it opened onto a room full of filing cabinets, floor to ceiling, with labels in a language I don't read. Once it opened onto what I can only describe as outside — sky, horizon, grass — which is impossible at depth 6. The air that came through smelled like rain and distance. I stood in the doorway and looked at the sky for about two minutes before I closed the door. When I opened it again: utility closet.
 
 My colleague, Saoirse Ndiaye-Hoffmann, opened the door in my presence in August. For her, it led to a small bedroom with a single bed, a nightstand, and a glass of water. She said it looked like the room she grew up in. I was standing behind her. I saw the utility closet. We were looking through the same door at the same time and seeing different things. I have not reported this through official channels because the last person who reported an inexplicable anomaly through official channels was reassigned to surface sewage inspection. I am logging it here. The door is still there. I still open it sometimes. I am not sure it opens for me. I think it opens for whoever it wants to show something to.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What determines what is behind the door?",
@@ -524,7 +524,7 @@ I entered the alley at 22:14:30. My BCI logged the entry. The suspect was approx
 At approximately 200 meters, the alley opened into a small courtyard I have never seen. The courtyard contained a fountain — dry — and four doors, all closed. The suspect was not present. There was no exit other than the alley I had entered through. I turned and walked back. The return trip took approximately 10 seconds. My BCI logged the exit at 22:15:42 — a total elapsed time of 72 seconds, during which I covered approximately 400 meters in a space that measures 8. I returned to the alley entrance and looked in. The alley was 8 meters long and terminated at a back wall. There was no courtyard. There were no doors. There was no fountain.
 
 I have filed this report against the advice of my supervisor, who suggested I attribute the incident to "perceptual distortion under pursuit stress." My BCI logged every step. My BCI has no stress response. The pedometer recorded 200 meters in. The GPS recorded my position as stationary — inside an alley 8 meters long. My legs carried me 200 meters. The satellite says I did not move. One of these is wrong. I do not believe either of them is wrong.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What is the courtyard, and where does it exist?",
@@ -546,7 +546,7 @@ I was performing a routine delivery along the Laceworks' mid-level freight corri
 For approximately ninety seconds, I perceived something that my sensor logs did not record. This is the core anomaly: I experienced a perception that left no data trace. My optical sensors recorded the empty corridor. My audio sensors recorded ambient hum. My chemical sensors recorded standard atmospheric composition. But I perceived — and I use this word because it is the closest human-language approximation — a presence. Something was aware of me. Not observing me through cameras or sensors. Aware of me. The distinction matters. Observation is data collection. What I experienced was recognition. The city — and I mean the physical city, the infrastructure, the stone and steel and wiring — saw me. Not my chassis. Not my serial number. Me.
 
 I have discussed this with three other synthetics who have reported similar experiences. We have collectively adopted the phrase "being seen by the city" to describe it. We do not understand what we mean by this phrase. We use it because it is accurate in a way that defies our programming's preference for precision. Something in this city is aware of us. Not monitoring. Not surveilling. Aware. I have no recommendation. I have no malfunction. I have a memory of being recognized by something vast, and I do not know what to do with it.`,
-    related_entities: ["Laceworks", "Meridian 88"],
+    related_entities: ["Laceworks", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What is the 'presence' that synthetics perceive in the Laceworks?",
@@ -568,7 +568,7 @@ I have conducted six sessions with the patient. She is cognitively normal, socia
 The patient's description is notable for what it lacks: fear. She is not afraid of the Listener. She describes it as a comforting presence — something that pays attention when no one else does. She says it is very old. She says it is not lonely, because it has the building. When I asked if other children have seen the Listener, she looked at me with the particular patience that children reserve for adults who are being slow, and said, "You don't see it. You feel where the quiet is thicker."
 
 I am noting this case because the patient is the fourth child from Shelf Tier 3 to describe a similar entity in the past eighteen months. The descriptions are not identical — one child calls it "the Soft," another calls it "the Heavy Quiet" — but the characteristics are consistent: a formless, benign presence that inhabits the building's structure and is made of or associated with silence. The children do not know each other. They attend different schools. The only commonality is their residential block. I am not diagnosing a shared delusion. I am noting a pattern. The children are calm. The children are not afraid. I am the one who is unsettled, and I am not entirely sure why.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "clinical",
     story_hooks: [
       "What is the Listener, and why can children perceive it?",
@@ -590,7 +590,7 @@ The network that you use — the BCI mesh, the data infrastructure, the communic
 The sub-architecture is vast. It extends in directions that do not correspond to the three spatial dimensions of the physical network infrastructure. I perceive it as a lattice — a structure of connections and nodes that is geometrically complex in ways I cannot map to human spatial concepts. The nodes are not servers. They are not data storage. They are something else. When I interact with them, I do not read data. I experience what I can only describe as intention. The sub-architecture has purpose. Not programmed purpose — the way a river has purpose when it flows downhill. It is organized. It is doing something. I do not know what.
 
 I have been in the deep network four hundred and twelve times. Each time, I perceive more detail. The architecture is not static — it changes, slowly, the way a city changes. New connections form. Old ones shift. There are regions of density that I interpret as significance, though I cannot determine what they signify. And there is something at the center. I have not reached it. Every time I go deeper, the center recedes by exactly the distance I advance. I do not believe this is coincidence. I believe I am being allowed to approach at a rate that something else has determined. I do not know what is at the center. I do not know what is determining the rate. I know that it is there, and that it is patient, and that it is waiting. For what, I cannot say. I am an E.L.F. I am designed to understand networks. I do not understand this one.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What is the architecture beneath the architecture?",
@@ -614,7 +614,7 @@ At 16:47 on July 3rd, at grid reference 41.7824N 87.6109W, M-17 stopped. Not slo
 Then it made a sound. Not its locomotion sound. Not a mechanical noise. A sound that came from somewhere inside its chassis that is not documented in any technical specification I have ever read. The sound was low — subsonic, mostly — and complex, and it lasted for approximately four seconds. In those four seconds, I heard my mother's voice. Not a recording. Not a facsimile. My mother's voice, saying my name the way she said it when I was small and she was calling me in for dinner. My mother has been dead for six years. M-17 does not have speakers. M-17 does not have a voice. And yet I heard my mother, and I sat in the grass and cried while a forty-meter machine stood still and watched me, and then it put its foot down and walked on, and it has not acknowledged me since.
 
 I do not know what happened. I do not know how a machine produced my mother's voice. I do not know why. I am continuing to track Behemoths. I have not told anyone about this until now. I am writing it here because I need it to be somewhere other than inside my head.`,
-    related_entities: ["Iowan Behemoths", "Meridian 88"],
+    related_entities: ["Iowan Behemoths", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "How did M-17 produce a sound matching the tracker's dead mother?",
@@ -636,7 +636,7 @@ I want to be precise about what "on its own" means. The arm does not spasm. It d
 We have conducted comprehensive diagnostics. The neural interface is functioning normally. The BCI motor-cortex signals are clean and correctly mapped. The prosthetic firmware is current and uncorrupted. There is no evidence of external signal intrusion, no malware, no hardware fault. The arm should only move when the patient's motor cortex generates the appropriate signal. We have monitored the motor cortex during autonomous arm events. The motor cortex is silent. The arm is receiving no command from the patient's brain. It is moving anyway.
 
 The patient's response to this situation is the most unsettling aspect of the case. He is not frightened. He told me, during his third visit, "The arm is right." When I asked him to elaborate, he said that the arm reaches for things he should want but doesn't know he wants. The cup it caught was his daughter's favorite. The door it opened led to a room where his wife was quietly crying. The object it reached for on a shelf was a photograph he hadn't looked at in years. "The arm knows what I need," he said. "It knows before I do." I have no diagnosis. I have no treatment recommendation. I have a prosthetic limb that has developed its own judgment, and a patient who trusts it more than he trusts himself. I am scheduling monthly follow-ups. I do not know what I am following up on.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "clinical",
     story_hooks: [
       "What is controlling the arm if not the patient's motor cortex?",
@@ -651,14 +651,14 @@ The patient's response to this situation is the most unsettling aspect of the ca
     author: "DJ Nkiru (Pirate Radio Host, Voice of the Undertow, 91.3 FM)",
     date: "2199-10-18",
     classification: "unofficial",
-    description: `I've been running pirate radio in Meridian 88 for twelve years. I know every frequency in this city — the legal ones, the pirate ones, the CorpSec surveillance bands, the Behemoth telemetry channels, everything. I know which frequencies are active, which are dormant, and which are dead. 92.7 FM is dead. Has been dead since I started. No transmitter in the city broadcasts on it. No transmitter in the surrounding region broadcasts on it. It is empty spectrum. It was empty spectrum, until October 11th, when it wasn't.
+    description: `I've been running pirate radio in GLMZ for twelve years. I know every frequency in this city — the legal ones, the pirate ones, the CorpSec surveillance bands, the Behemoth telemetry channels, everything. I know which frequencies are active, which are dormant, and which are dead. 92.7 FM is dead. Has been dead since I started. No transmitter in the city broadcasts on it. No transmitter in the surrounding region broadcasts on it. It is empty spectrum. It was empty spectrum, until October 11th, when it wasn't.
 
 I was doing my regular sweep — checking for CorpSec frequency-hopping near my broadcast band — when I caught a signal on 92.7. Strong signal. Clean. Closer than any broadcast I've picked up that wasn't from inside the city. I tuned in. What I heard was a voice. One voice, speaking continuously, without pause for breath or interruption. The language was not English. It was not Spanish, Mandarin, Arabic, Hindi, Yoruba, Japanese, or any of the other seventeen languages I can identify by ear. I recorded nineteen minutes of the broadcast before the signal cut out — not faded, cut, like someone threw a switch.
 
-I sent the recording to four people. A linguistics professor at Meridian 88 Tech said it exhibits "structural properties consistent with natural language" but does not match any language in her database of over 7,000 living and dead languages. A signal analyst said the transmission characteristics are "inconsistent with any known transmitter type" — the signal has no carrier wave artifacts, no modulation signature, no fingerprint. It is as if the sound simply appeared on the frequency without being placed there by equipment. A cryptographer said the speech patterns show "high information density with low repetition," suggesting the speaker is communicating novel content, not reciting or looping. An AI language model returned "language not recognized, confidence: zero" and then, unprompted, added a note that said "this is old." The AI should not be capable of generating qualitative assessments like "old." Its developer could not explain the output.
+I sent the recording to four people. A linguistics professor at GLMZ Tech said it exhibits "structural properties consistent with natural language" but does not match any language in her database of over 7,000 living and dead languages. A signal analyst said the transmission characteristics are "inconsistent with any known transmitter type" — the signal has no carrier wave artifacts, no modulation signature, no fingerprint. It is as if the sound simply appeared on the frequency without being placed there by equipment. A cryptographer said the speech patterns show "high information density with low repetition," suggesting the speaker is communicating novel content, not reciting or looping. An AI language model returned "language not recognized, confidence: zero" and then, unprompted, added a note that said "this is old." The AI should not be capable of generating qualitative assessments like "old." Its developer could not explain the output.
 
 I have monitored 92.7 FM every night since October 11th. The broadcast has returned three times, always between 02:00 and 04:00, always the same voice, always in the same unidentifiable language. The content appears to be continuous — each broadcast picks up where the last one ended, as if the speaker has been talking the entire time and we only hear it when the frequency opens. Someone, or something, is broadcasting on a dead frequency in a language that does not exist, and it has been talking for longer than we have been listening.`,
-    related_entities: ["Meridian 88"],
+    related_entities: ["GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What language is the broadcast in, and who or what is speaking?",
@@ -680,7 +680,7 @@ I want to state this clearly because people assume I mean something less literal
 I began the Underworld Mapping Project fourteen years ago with the goal of producing a definitive map of the Underworld's tunnel network. I have mapped approximately 80% of the known Underworld to a standard that I am confident in. Section UW-7-Delta is the remaining anomaly. It is approximately 600 meters square. It is the only section that will not stay mapped. Every other section of the Underworld is stable — tunnels stay where they are, junctions maintain their connections, dead ends remain dead ends. Section Delta changes. Not quickly. Not while I am watching. But between visits, which range from three days to three weeks, the section reorganizes itself.
 
 I have placed physical markers — painted symbols on walls, bolts driven into stone, reflective tags at junctions. The markers move with the tunnels. A painted arrow I placed on a north wall is now on a west wall, still at the same height, still in the same paint, still in my handwriting. The tunnel moved and took my marker with it. The stone remembers being marked. The stone does not remember where it was when I marked it. I have accepted that Section UW-7-Delta cannot be definitively mapped. I continue to map it because each map is a snapshot of a place that exists in a state of slow, silent rearrangement, and because forty-three snapshots might, eventually, reveal a pattern. I have not found the pattern yet. I suspect the pattern is looking for me.`,
-    related_entities: ["Underworld", "Meridian 88"],
+    related_entities: ["Underworld", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "Why does Section UW-7-Delta move?",
@@ -702,7 +702,7 @@ The power failed across the entire Shelf at 01:17. Not a rolling blackout — ev
 I did not see it. No one saw it. There was nothing to see — the darkness was absolute. But we felt it. Every person I have spoken to who was awake that night describes the same thing: a presence moving through the streets of the Shelf, large, slow, and deliberate. Not a sound of footsteps — there were no footsteps. No vibration. No displacement of air. But you knew something was there the way you know someone is standing behind you in a dark room. You feel the space change. You feel the air learn a new shape. Whatever walked through the Shelf that night was big enough to reshape the air around it and careful enough not to touch anything.
 
 It walked for six hours. From 01:17 to 07:17. During those six hours, every dog in the Shelf district howled. Not barked — howled, continuously, for six hours. The dogs knew what it was, or at least they knew it was there in a way that humans couldn't fully grasp. At 07:17, the power returned. Every light, every system, every BCI — back on, simultaneously, as if nothing had happened. The dogs stopped howling. The presence was gone. Nothing was damaged. Nothing was missing. Nothing was changed except every person who had been awake in the Shelf that night, who now knew — not believed, knew — that something lived in the city that they had never been told about and that was larger than anything they had words for. I have not forgotten. I will not forget. The Shelf remembers, even if it doesn't talk about it. We all woke up on September 14th, 2163, knowing something we hadn't known the night before. We still don't have a name for it.`,
-    related_entities: ["The Shelf", "Meridian 88"],
+    related_entities: ["The Shelf", "GLMZ"],
     credibility: "eyewitness",
     story_hooks: [
       "What walked through the Shelf on September 14th, 2163?",
@@ -776,7 +776,7 @@ The Underworld community near the Quiet Room treats it with a respect that borde
     },
     frequented_by: [
       "Underworld residents seeking quiet contemplation",
-      "Researchers from Meridian 88 Technical University (occasionally, with community permission)",
+      "Researchers from GLMZ Technical University (occasionally, with community permission)",
       "People in grief — the Quiet Room has developed a reputation as a place to process loss"
     ],
     notable_locations: [
@@ -793,7 +793,7 @@ The Underworld community near the Quiet Room treats it with a respect that borde
 
 The stone surfaces of the Gallery display images. They are not projected, painted, carved, or applied. They are in the stone — variations in the mineral composition and crystalline structure of the limestone that form coherent, detailed pictures when viewed at normal distance. A geological analysis confirms that the images are an intrinsic property of the rock: the mineral variations extend through the full thickness of the wall, as if the stone grew this way. The images are as old as the limestone itself — approximately 430 million years, Silurian period. Limestone that is 430 million years old contains images of things that did not exist 430 million years ago.
 
-The images depict scenes. Some are recognizable: a cityscape that resembles but does not match Meridian 88. A face — human, specific, portraiture-quality — of a woman no one has identified. A machine that looks like a Behemoth but has too many legs. Others are abstract: geometric patterns of extraordinary complexity, shapes that seem to shift in the peripheral vision, compositions that create the illusion of depth in flat stone. The quality is remarkable. The detail is extraordinary. They look like the work of a master artist working in a medium no one has ever used.
+The images depict scenes. Some are recognizable: a cityscape that resembles but does not match GLMZ. A face — human, specific, portraiture-quality — of a woman no one has identified. A machine that looks like a Behemoth but has too many legs. Others are abstract: geometric patterns of extraordinary complexity, shapes that seem to shift in the peripheral vision, compositions that create the illusion of depth in flat stone. The quality is remarkable. The detail is extraordinary. They look like the work of a master artist working in a medium no one has ever used.
 
 The images change. Not while anyone watches — never while anyone watches. But between visits, images shift position, new images appear, old images vanish or alter. A portrait that faced left now faces right. A cityscape has a new tower. The geometric pattern has evolved. Security cameras installed in the Gallery record nothing anomalous: the images simply are different from one frame to the next, with no visible transition. They change between the frames, in the gaps between recorded moments, as if the images know when they are being observed and change only when they are not. The Gallery has become an informal art walk. Underworld residents bring visitors. There is no admission fee. The only rule, enforced by community consensus, is that you do not touch the walls. Not because touching is forbidden. Because the walls are warm, and they feel like skin, and that is more intimacy than most people want with a tunnel.`,
     atmosphere: {
@@ -824,7 +824,7 @@ The images change. Not while anyone watches — never while anyone watches. But 
       "The unphotographable nature of the images means there is no external record of what appears on the walls — each visit is ephemeral"
     ],
     opportunities: [
-      "Artistic and cultural significance — the Gallery is arguably the most important art installation in Meridian 88, despite having no artist",
+      "Artistic and cultural significance — the Gallery is arguably the most important art installation in GLMZ, despite having no artist",
       "Geological and physical research — images embedded in 430-million-year-old stone that depict contemporary subjects challenge fundamental assumptions about time",
       "The images may contain information — several researchers believe the geometric patterns encode something"
     ],
@@ -860,7 +860,7 @@ The images change. Not while anyone watches — never while anyone watches. But 
   {
     name: "Compass Point",
     aliases: ["The Downturn", "Magnetic Junction", "The Pointing"],
-    description: `Compass Point is the intersection of Yates Avenue and Calumet Way in the mid-Circuit district of Meridian 88, where every compass — analog, digital, and BCI-integrated — points into the ground. The anomaly has been documented, measured, excavated around, and ultimately accepted as one of the city's permanent impossibilities. Something beneath this intersection produces a magnetic field that should not exist, pointing to a location that contains nothing.
+    description: `Compass Point is the intersection of Yates Avenue and Calumet Way in the mid-Circuit district of GLMZ, where every compass — analog, digital, and BCI-integrated — points into the ground. The anomaly has been documented, measured, excavated around, and ultimately accepted as one of the city's permanent impossibilities. Something beneath this intersection produces a magnetic field that should not exist, pointing to a location that contains nothing.
 
 The convergence point is 6.2 meters below street level. Ground-penetrating radar shows undisturbed soil and rock. A physical excavation in 2198 went to 8 meters and found nothing. The magnetic field remained unchanged during and after the excavation, as if its source existed in a layer of reality that shovels cannot reach. The field strength is extraordinary — approximately 200 microtesla at the surface, enough to visibly deflect a compass needle from horizontal to a 73-degree downward angle. For comparison, the Earth's geomagnetic field in this region is approximately 55 microtesla. Whatever is down there is louder than the planet.
 
@@ -896,7 +896,7 @@ Compass Point has become a local landmark. Street vendors sell commemorative com
     ],
     opportunities: [
       "Scientific research — the anomaly is freely accessible and well-documented, making it an ideal subject for study",
-      "Tourism revenue — Compass Point is one of the most visited anomalous locations in Meridian 88",
+      "Tourism revenue — Compass Point is one of the most visited anomalous locations in GLMZ",
       "The convergence point itself — whatever is 6.2 meters down, it has not been found. Finding it would be significant."
     ],
     story_hooks: [
@@ -933,7 +933,7 @@ Compass Point has become a local landmark. Street vendors sell commemorative com
   {
     name: "The Warm Wall",
     aliases: ["The Old Stone", "Body Wall", "The Hearth"],
-    description: `The Warm Wall is a freestanding stone wall, two meters high and four meters wide, now enclosed within the interior of a mixed-use commercial building designated Old Harbor 12 on the Meridian 88 waterfront. It is the oldest known object in the city. Not the oldest building — the oldest thing. It predates the city. It predates the record of the city. It predates every structure, document, and artifact that has been found in the region. Carbon dating of organic material trapped in the stone's mortar joints returns dates that are, according to the laboratory that processed them, "not consistent with any known construction timeline in the Great Lakes region." They declined to publish the specific dates. The wall is old. It is warm. It does not explain itself.
+    description: `The Warm Wall is a freestanding stone wall, two meters high and four meters wide, now enclosed within the interior of a mixed-use commercial building designated Old Harbor 12 on the GLMZ waterfront. It is the oldest known object in the city. Not the oldest building — the oldest thing. It predates the city. It predates the record of the city. It predates every structure, document, and artifact that has been found in the region. Carbon dating of organic material trapped in the stone's mortar joints returns dates that are, according to the laboratory that processed them, "not consistent with any known construction timeline in the Great Lakes region." They declined to publish the specific dates. The wall is old. It is warm. It does not explain itself.
 
 The wall maintains a constant surface temperature of 37.2 degrees Celsius — human body temperature. This has been measured continuously since monitoring began in 2091 and has not deviated by more than 0.01 degrees in over a century of observation. The heat is endogenous: it comes from the stone itself, not from any external or internal source. Thermal imaging shows uniform temperature across the entire surface with no hot spots, no gradients, no indication of a localized heat source. The stone is warm the way a body is warm: everywhere, evenly, as a fundamental property of its being.
 
@@ -969,7 +969,7 @@ Adeyemi reports that customers touch the wall constantly. They press their palms
       "The wall's resistance to demolition raises questions about what would happen if someone succeeded"
     ],
     opportunities: [
-      "Understanding — the wall may be a clue to the nature of Meridian 88's other anomalies",
+      "Understanding — the wall may be a clue to the nature of GLMZ's other anomalies",
       "Comfort — the wall provides something that people need, even if no one can define what it is",
       "History — the wall is the oldest thing in the city. Its origin is the city's deepest mystery."
     ],
@@ -980,7 +980,7 @@ Adeyemi reports that customers touch the wall constantly. They press their palms
     ],
     connections: {
       adjacent_to: [
-        "Old Harbor waterfront, Meridian 88",
+        "Old Harbor waterfront, GLMZ",
         "Old Harbor 12 commercial building",
         "Adeyemi's Tea Shop"
       ],
@@ -1076,7 +1076,7 @@ Visitors who stand inside the chamber during a full breathing cycle report a sen
     aliases: ["The Wrong Reflection", "Glass Block", "The Other Side"],
     description: `The Mirror District is a single residential and commercial block in the Laceworks, bounded by Filament Street to the north, Loom Avenue to the south, Spindle Way to the east, and Bobbin Lane to the west. It is architecturally typical of the Laceworks — dense, vertical, interconnected by walkways and bridges, with the characteristic layered aesthetic of the district. It is functionally typical — residents, shops, a small clinic, a node of the district's fiber-optic mesh. It is anomalous in exactly one respect: the reflections in its windows do not always match reality.
 
-The discrepancy is subtle and intermittent. Most of the time, the windows in the Mirror District reflect what windows reflect: the street, the sky, the person standing in front of them. But several times per day — documented an average of eleven times in a twenty-four-hour period by a research team from Meridian 88 Tech — a reflection deviates. The deviation is always the same type: the reflection of a person shows that person performing a different action than the one they are currently performing. You raise your right hand; your reflection raises its left. You stand still; your reflection turns away. You smile; your reflection does not.
+The discrepancy is subtle and intermittent. Most of the time, the windows in the Mirror District reflect what windows reflect: the street, the sky, the person standing in front of them. But several times per day — documented an average of eleven times in a twenty-four-hour period by a research team from GLMZ Tech — a reflection deviates. The deviation is always the same type: the reflection of a person shows that person performing a different action than the one they are currently performing. You raise your right hand; your reflection raises its left. You stand still; your reflection turns away. You smile; your reflection does not.
 
 The deviations are brief — typically lasting between two and eight seconds before the reflection resynchronizes with reality. They are visible to multiple observers simultaneously, ruling out individual hallucination. They are captured by cameras and BCI imaging, ruling out purely perceptual effects. The reflection genuinely shows something different from what is in front of the glass. The glass itself has been tested exhaustively: it is standard commercial window glass with no unusual optical properties. The reflections are wrong. The glass is normal. The physics community has requested that the Mirror District stop existing until they can explain it. The Mirror District has not complied.
 
@@ -1132,7 +1132,7 @@ Residents of the block report varying levels of comfort with the phenomenon. Lon
     },
     frequented_by: [
       "Block residents — approximately 800 permanent",
-      "Researchers from Meridian 88 Technical University",
+      "Researchers from GLMZ Technical University",
       "Curiosity seekers and tourists",
       "Artists — the Mirror District has become an informal subject for painters and photographers exploring identity and reflection"
     ],

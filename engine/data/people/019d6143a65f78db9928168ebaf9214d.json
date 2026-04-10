@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65f78db9928168ebaf9214d",
   "type": "character",
-  "name": "Olumide Quiñones",
+  "name": "Kit Quiñones",
   "aliases": [
     "Patch",
     "The Seamstress",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "The Shelf, near Kedzie and Division",
-  "description": "Nadira is a broad-shouldered Ghanaian-British woman whose hands are her most remarkable feature — the left is entirely her own, calloused and ink-stained at the fingertips; the right is a matte-black prosthetic she built herself from salvaged components, its fingers capable of sub-millimeter precision that no organic hand could match. She keeps her locs pinned back tight when she works and loose when she doesn't want to be found, and the distinction matters more than people realize. Her clinic is a converted shipping container stacked midway up the Shelf's residential tiers, marked only by a strip of orange adhesive tape across the door frame — a color that locals have learned means someone inside might still be alive.",
+  "description": "Kit Quiñones is a broad-shouldered Ghanaian-British woman whose hands are her most remarkable feature — the left is entirely her own, calloused and ink-stained at the fingertips; the right is a matte-black prosthetic she built herself from salvaged components, its fingers capable of sub-millimeter precision that no organic hand could match. She keeps her locs pinned back tight when she works and loose when she doesn't want to be found, and the distinction matters more than people realize. Her clinic is a converted shipping container stacked midway up the Shelf's residential tiers, marked only by a strip of orange adhesive tape across the door frame — a color that locals have learned means someone inside might still be alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -227,7 +227,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,35 +247,20 @@
     "The Peninsula",
     "Big Rig",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "Anatoliy Faye-Nkrumah",
-    "Cassiel Kimura-Nkrumah",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "MERIDIAN",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Old Harbor",
-    "Patient Zero",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "The Burden Clause",
-    "Tooth Fairy",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed heritage from Sub-Saharan African (43.3%), Hispanic/Latin American (23.8%), Middle Eastern (19.2%), Eastern European (8.6%), and East Asian (5.1%) ancestry. Her features reflect this complex diaspora: warm deep brown skin with subtle golden undertones, high cheekbones with gentle width from her African and Latin heritage, and a slightly squared jawline influenced by Eastern European ancestry.",
+    "heritage": "Mixed heritage from Southeast Asian (47.3%), Hispanic/Latin American (33.9%), Sub-Saharan African (9.2%), and Eastern European (9.1%) ancestry. Her features reflect this complex diaspora: warm medium-deep brown skin with subtle golden undertones, high cheekbones with gentle width from her Southeast Asian and Latin heritage, and a slightly squared jawline influenced by Eastern European ancestry blended with the warmth of African heritage.",
     "height_cm": 173,
     "weight_kg": 78,
     "build": "Broad-shouldered and muscular through the chest and back, with the dense, functional physique of someone who works with their hands for a living. Her frame carries the weight of practical strength rather than bulk.",
     "hair_color": "Natural black with early grey threading through",
     "hair_style": "Long locs, typically pinned tight at the back of her head during work; worn loose and flowing when moving through the Shelf incognito",
     "hair_length": "Long",
-    "eye_color": "Natural dark brown (left eye); left eye features a subtle medical HUD overlay with faint amber and blue diagnostic glyphs visible in low light",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the blending of Sub-Saharan African, Hispanic/Latin American, and Middle Eastern heritage with subtle Eastern European complexity",
-    "complexion": "Weathered but well-maintained; minimal cosmetic grooming, practical and efficient. High, defined cheekbones with gentle width. A few surgical scars visible at her temples from old augmentation work. Her face carries the settled confidence of someone who has seen trauma and learned to move past it.",
+    "eye_color": "Natural dark brown (right eye); left eye features a subtle medical HUD overlay with faint amber and blue diagnostic glyphs visible in low light",
+    "skin_tone": "Warm medium-deep brown with golden undertones, reflecting the dominant Southeast Asian and Hispanic/Latin American heritage with subtle warmth from Sub-Saharan African ancestry and complexity from Eastern European genetics",
+    "complexion": "Weathered but well-maintained; minimal cosmetic grooming, practical and efficient. High, defined cheekbones with gentle width characteristic of Southeast Asian features. A few surgical scars visible at her temples from old augmentation work. Her face carries the settled confidence of someone who has seen trauma and learned to move past it.",
     "distinguishing_marks": [
       "Surgical scar along her right temple, roughly 4cm, from early augmentation procedure — faded to pale silver",
       "Ink stains at the fingertips of her left hand from years of marking dosages and notes on skin during emergency procedures",
@@ -286,16 +271,59 @@
     "posture_movement": "She moves with deliberate economy — no wasted motion, shoulders slightly forward as if ready to lean into work. Her right arm (the prosthetic) hangs at a slightly different angle than a natural limb would, and she favors her left side instinctively when reaching for delicate work. Her gait is steady and measured, that of someone who has learned to move through dangerous spaces without drawing attention.",
     "clothing_style": "Tier 4 street-functional — well-maintained but heavily worn. Typically a fitted dark-grey or charcoal utility vest with reinforced pockets for pharmaceuticals and surgical tools over a long-sleeved black shirt (sleeves rolled to the elbow on her left, fitted close on her right to accommodate the prosthetic). Cargo pants in grey or navy with multiple tool belts. Worn leather work gloves on her left hand; the right prosthetic is often left bare for precision work. Her boots are practical military-surplus grade, scuffed but recently resoled. A faded surgical mask hangs loose around her neck at all times — a constant reminder of her work. No jewelry except a plain steel watchband on her prosthetic wrist."
   },
-  "image_prompt": "Olumide Quiñones, a 173cm tall street medic in the cyberpunk 2226 Great Lakes Metropolitan Zone. Deep warm brown skin with golden undertones reflecting mixed Sub-Saharan African, Hispanic, Middle Eastern, and Eastern European heritage. High defined cheekbones, natural dark brown eyes with subtle amber-blue medical HUD glow in left eye. Long black locs with grey threading, pinned tight at back of head. Weathered but composed expression, faded surgical scars at temples. Broad muscular build. Wearing fitted dark-grey utility vest over long-sleeved black shirt over grey cargo pants. Matte-black titanium-polymer prosthetic arm with articulated fingers from mid-forearm down, bare for precision work. Worn leather work gloves on left hand. Military-surplus boots. Surgical mask hanging loose at neck. Faded yellow neon lighting, gritty street clinic setting, focused and deliberate posture, hands poised for medical work, moody cinematic lighting, cyberpunk aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Kit Quiñones, 173cm tall woman with warm deep brown skin with golden undertones, Southeast Asian and Hispanic heritage evident in high cheekbones and warm complexion, natural black hair with grey threading worn in long locs pinned at the back. Muscular broad-shouldered build from hands-on work. Dark brown natural right eye; left eye glows faintly with amber and blue medical HUD overlay in shadow. Right arm is matte-black titanium-polymer prosthetic from mid-forearm down with articulated precision fingers, bare and showing minor wear marks. Pale surgical scar visible on right temple, faded collarbone scar, ink-stained fingertips on left hand. Wearing practical tier 4 street gear: dark charcoal utility vest with reinforced pockets over long-sleeved black shirt, left sleeve rolled to elbow, right fitted for prosthetic. Grey cargo pants, military-surplus scuffed boots, worn leather work gloves on left hand. Faded surgical mask hanging loose around neck. Steel watchband on prosthetic wrist. Standing in moody neon-lit underground clinic environment, late night, dim amber and cool blue emergency lighting, GLMZ Great Lakes Metropolitan Zone aesthetic, moving with deliberate economical posture ready to lean into work, serious weathered expression of someone who has survived trauma --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.3,
-    "Hispanic/Latin American": 23.8,
-    "Middle Eastern": 19.2,
-    "Eastern European": 8.6,
-    "East Asian": 5.1
+    "Southeast Asian": 47.3,
+    "Hispanic/Latin American": 33.9,
+    "Sub-Saharan African": 9.2,
+    "Eastern European": 9.1,
+    "South Asian": 0.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 33.4
+      },
+      "Vietnamese": {
+        "Vietnamese": 5.6
+      },
+      "Filipino": {
+        "Ilocano": 6.3,
+        "Cebuano": 2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 5.7,
+        "Dominican": 28.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 9.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 3.3,
+        "Bosnian": 0.8
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 1.1,
+        "Romanian": 1.6
+      },
+      "Slavic West": {
+        "Czech": 2.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 0.5
+      }
+    }
+  }
 }

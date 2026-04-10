@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a67df8a493f0872e3e5adb",
   "type": "character",
-  "name": "Aurelio Ibarra",
+  "name": "Saanvi Bhattacharya",
   "aliases": [
     "Satu",
     "Bright Satu"
@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Mexicantown Libre — the Libre Community Creche, a converted ground-floor unit on Avenida Ferro, near Pulaski and Chicago Ave",
-  "description": "Satu is small and perpetually in motion, with deep brown skin and natural hair she grows out in a puff that she clips bioluminescent beads into — low-grade geneware, hand-me-downs from a cousin, that pulse softly blue when she's warm or excited and dim to almost nothing when she's exhausted. She has a gap between her front teeth that makes her smile look like a door left open, and she smiles a lot, though never vaguely — there is always something specific she is smiling at. Her clothing is practical and loud: she wears colors like she is trying to argue with the grey of Mexicantown Libre's perpetual lake-fog.\n\nSatu runs the Creche on a combination of municipal micro-stipend, community contribution, and sheer force of organizational will. She is the person who knows which child has been skipping meals and which parent is working three Ferrogate shifts in a row and hasn't slept. Her care is not soft — it is structured and fierce and occasionally exhausting to be on the receiving end of, because she remembers everything she has offered and follows up. She is twenty-seven and already worn at the edges in ways she doesn't acknowledge.",
+  "description": "Saanvi Bhattacharya is small and perpetually in motion, with deep brown skin and natural hair she grows out in a puff that she clips bioluminescent beads into — low-grade geneware, hand-me-downs from a cousin, that pulse softly blue when she's warm or excited and dim to almost nothing when she's exhausted. She has a gap between her front teeth that makes her smile look like a door left open, and she smiles a lot, though never vaguely — there is always something specific she is smiling at. Her clothing is practical and loud: she wears colors like she is trying to argue with the grey of Mexicantown Libre's perpetual lake-fog.\n\nSaanvi Bhattacharya runs the Creche on a combination of municipal micro-stipend, community contribution, and sheer force of organizational will. She is the person who knows which child has been skipping meals and which parent is working three Ferrogate shifts in a row and hasn't slept. Her care is not soft — it is structured and fierce and occasionally exhausting to be on the receiving end of, because she remembers everything she has offered and follows up. She is twenty-seven and already worn at the edges in ways she doesn't acknowledge.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -165,7 +165,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -216,27 +216,12 @@
     "Ferrogate Transit",
     "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
     "Tessera Corponation",
-    "Lazarus IDP-1 'Teeth'",
     "Chicago",
-    "Adjara Solano-Tuvalu",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Bintou Halvorsen-Osei",
-    "Cryogenic Fracture Disbursement Mine CFDM-4",
-    "Demyan Morozov",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Patient Zero",
-    "Plot 17",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Confession' Modified Industrial Nail Gun"
+    "Lazarus IDP-1 'Teeth'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant East Asian and Sub-Saharan African ancestry; phenotype reflects tri-continental blend with warm medium-to-deep brown skin tone carrying golden undertones, fine-boned facial structure with subtle East Asian eye shape characteristics, and textured hair typical of African heritage",
+    "heritage": "Complex five-region genetic blend: South Asian-dominant (46.1%) with substantial Sub-Saharan African ancestry (29.1%), Eastern European heritage (13.6%), Southeast Asian admixture (7.5%), and Hispanic/Latin American (3.7%); phenotype reflects this rich multicontinental admixture with warm deep brown skin that glows with golden undertones, fine-boned facial structure combining subtle almond-shaped eye characteristics from Southeast Asian ancestry with defined Eastern European cheekbones, balanced against broader nose bridge and fuller lips from African and South Asian heritage, creating distinctly global features",
     "height_cm": 156,
     "weight_kg": 52,
     "build": "Small-framed and wiry with visible muscle definition from constant motion and physical work with children; economical in space and movement",
@@ -244,8 +229,8 @@
     "hair_style": "Worn in a full natural puff; threaded throughout with low-grade bioluminescent beads (hand-me-downs, blue wavelength) that pulse with body heat and emotional state",
     "hair_length": "Medium (approximately 12cm crown length when puffed out)",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blended ancestry of Latin American, East Asian, and Sub-Saharan African heritage",
-    "complexion": "Clear but showing fatigue — faint shadows under eyes from chronic sleep deficit; gap between front upper incisors creates distinctive smile; facial structure is fine-boned and expressive with subtle East Asian eye characteristics blended with broader nose bridge typical of African ancestry",
+    "skin_tone": "Warm deep brown with golden luminosity, reflecting the blending of South Asian, Sub-Saharan African, Eastern European, Southeast Asian, and Hispanic/Latin American ancestry",
+    "complexion": "Clear but showing chronic fatigue with faint shadows beneath eyes; gap between front upper incisors creates distinctive expressive smile; facial structure fine-boned and animated with subtle almond-shaped eyes from Southeast Asian heritage and strong Eastern European cheekbone definition, balanced by broader nose bridge and fuller lips from African and South Asian ancestry; features are highly expressive and mobile",
     "distinguishing_marks": [
       "Small burn scar on left forearm (childhood geneware accident, faint, barely visible)",
       "Calluses on palms and fingertips from years of childcare and manual work"
@@ -254,14 +239,64 @@
     "posture_movement": "Perpetually in motion with economical, purposeful gestures; posture reflects burden-carrying (shoulders slightly forward). Rarely still. When sitting, bounces leg or fidgets with nearby objects. Movement is quick and efficient, rarely wasted",
     "clothing_style": "Practical Tier 4 workwear in deliberately bright colors: neon and saturated hues (magenta, electric orange, lime, cobalt) worn as defiance against grey industrial surroundings. Mix of hand-me-downs and thrift: reinforced pants with paint stains and marker marks, oversized utility vests, worn sneakers with custom patches. Accessories: cloth bracelets from children, keychain with dozens of keys, small shoulder bag always overstuffed with supplies (snacks, first aid, coloring materials)"
   },
-  "image_prompt": "Aurelio Ibarra, compact 156cm figure with warm golden-brown skin and fine-boned expressive face showing East Asian and African heritage blend, deep brown eyes with distinctive front-teeth gap smile, natural puffed black hair threaded with pulsing blue bioluminescent beads that glow softly, tired shadows under eyes, always moving. Wearing neon magenta oversized utility vest over reinforced pants stained with paint and marker, electric orange and lime accents, worn patched sneakers, cloth bracelets from children on wrists, overstuffed shoulder bag, keychain with dozens of keys. Small burn scar faint on left forearm, calloused hands, shoulders slightly forward from perpetual burden-carrying. Perpetual motion captured mid-fidget, leg bouncing, economical gestures. Cyberpunk 2226 Great Lakes Metropolitan Zone, industrial grey concrete surroundings, neon glow reflecting off skin and hair, warm intimate lighting mixing with harsh industrial LED, defiant bright colors against dystopian backdrop --ar 2:3 --v 6",
+  "image_prompt": "Saanvi Bhattacharya, 156cm tall South Asian-dominant woman with Sub-Saharan African, Eastern European, Southeast Asian, and Hispanic heritage; warm golden-brown skin, fine-boned face with almond-shaped eyes, defined Eastern European cheekbones, broader nose bridge, fuller lips, deep brown eyes. Medium natural puff hair with blue bioluminescent beads pulsing softly. Wearing neon magenta reinforced utility vest over electric orange shirt, paint-stained pants, worn patched sneakers. Cloth bracelets on wrists, oversized shoulder bag. Perpetually moving, energetic posture, slight forward shoulder carry. Tired but animated expression, gap-toothed smile. GLMZ Great Lakes Metropolitan Zone, urban industrial background with grey concrete, neon signs, dim overhead lighting mixed with bioluminescent glow from hair beads creating soft blue highlights on face and skin, exhausted but determined mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 47.6,
-    "East Asian": 30.5,
-    "Sub-Saharan African": 21.9
+    "South Asian": 46.1,
+    "Sub-Saharan African": 29.1,
+    "Eastern European": 13.6,
+    "Southeast Asian": 7.5,
+    "Hispanic/Latin American": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 46.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 12.5,
+        "Cameroonian": 3.1
+      },
+      "East African": {
+        "Ethiopian": 6.3,
+        "Rwandan": 7.2
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 1.3,
+        "Croatian": 1.4
+      },
+      "Slavic East": {
+        "Russian": 2.5,
+        "Belarusian": 0.7
+      },
+      "Slavic West": {
+        "Polish": 3.8,
+        "Slovak": 3.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 6.6
+      },
+      "Thai": {
+        "Thai": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 1.7
+      },
+      "Caribbean": {
+        "Cuban": 1,
+        "Puerto Rican": 1
+      }
+    }
+  }
 }

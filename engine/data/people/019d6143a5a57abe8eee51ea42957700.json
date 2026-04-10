@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a57abe8eee51ea42957700",
   "type": "character",
-  "name": "Kai Deshpande",
+  "name": "Kai Olofsson",
   "aliases": [
     "Abi",
     "the Fitter"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Geartown, Strand-Quereshi Prosthetics — a narrow shopfront between a rig-parts supplier and a noodle stall, near North Ave and Damen",
-  "description": "Afolabi is tall and angular, with dark brown skin and a shaved head that they keep oiled and gleaming. Their right arm from the elbow down is their own work — a prosthetic they built and rebuilt over twelve years, currently a matt-charcoal titanium alloy hand with individually articulated fingers that can operate independently and have small UV LEDs in the fingertips that they use when working in tight spaces. When they're not working they wear a cosmetic sleeve over it: a pressure-fitted silicone cover patterned with geometric Yoruba-inspired designs in rust and ochre that they had printed locally.\n\nThey are meticulous and demanding in their craft and surprisingly tender with patients, particularly children and people who are newly amputated and frightened. They have a workshop philosophy they articulate clearly and often: a prosthetic that doesn't fit the person's actual life is a failure regardless of spec, and they will spend weeks in iterative fitting before they sign off. They take payment plans seriously and have never sent anyone to a collector. The shop is cluttered and organized by a system only they fully understand, and there are components of seven different half-finished limbs hanging on the wall at any given time.",
+  "description": "Kai Olofsson is tall and angular, with dark brown skin and a shaved head that they keep oiled and gleaming. Their right arm from the elbow down is their own work — a prosthetic they built and rebuilt over twelve years, currently a matt-charcoal titanium alloy hand with individually articulated fingers that can operate independently and have small UV LEDs in the fingertips that they use when working in tight spaces. When they're not working they wear a cosmetic sleeve over it: a pressure-fitted silicone cover patterned with geometric Yoruba-inspired designs in rust and ochre that they had printed locally.\n\nThey are meticulous and demanding in their craft and surprisingly tender with patients, particularly children and people who are newly amputated and frightened. They have a workshop philosophy they articulate clearly and often: a prosthetic that doesn't fit the person's actual life is a failure regardless of spec, and they will spend weeks in iterative fitting before they sign off. They take payment plans seriously and have never sent anyone to a collector. The shop is cluttered and organized by a system only they fully understand, and there are components of seven different half-finished limbs hanging on the wall at any given time.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -180,7 +180,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,29 +230,19 @@
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
   ],
   "related_entities": [
+    "Charcoal",
+    "Pressure Drop",
     "Geartown",
     "Titanium",
     "Silicone",
-    "The Pure Hand",
-    "Rust",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Helix Biosystems",
-    "Iowan Behemoth — 'Palisade'",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Narrowcast",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
     "Tenderloin",
-    "Vesna Čolić-Strand",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'",
-    "WELLSPRING"
+    "The Pure Hand",
+    "Compass Rose",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian (40.5%) with Northern European (32.6%) and East Asian (26.9%) ancestry, creating a striking blend of features. High cheekbones and angular face structure reflect the South Asian and East Asian components, while complexion shows the warm, medium-brown tone from the South Asian base with cooler undertones from Northern European ancestry.",
+    "heritage": "Northern European (44%), Southeast Asian (17.3%), Sub-Saharan African (15.1%), South Asian (14.4%), and Hispanic/Latin American (9.2%) ancestry create a striking global blend. High cheekbones and angular face structure reflect the Southeast Asian and South Asian components, while rich warm depth from African and Latin ancestry mingles with cooler undertones from Northern European heritage. The overall effect is a complex, multifaceted appearance that resists easy categorization.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Tall and angular with lean, defined musculature — the build of someone who works with their hands constantly and moves with precise, economical gestures. Shoulders slightly uneven due to years of compensating with their left side.",
@@ -260,8 +250,8 @@
     "hair_style": "Shaved head, kept meticulously oiled and maintained with a subtle sheen",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, with subtle metallic flecks around the pupils from retractable magnification lens hardware",
-    "skin_tone": "Medium-warm brown with golden undertones from South Asian heritage, complexion clear and well-maintained",
-    "complexion": "Angular face with high, prominent cheekbones reflecting East and South Asian features, sharp jawline with subtle definition from Northern European ancestry. Clear, unblemished skin suggesting disciplined skincare. Expression often focused and intent, with creases around the eyes from years of close detail work.",
+    "skin_tone": "Deep warm brown with golden and reddish undertones, reflecting the complex blend of African, Southeast Asian, South Asian, and Latin ancestry. The tone is rich and dimensional rather than uniform.",
+    "complexion": "Angular face with high, prominent cheekbones reflecting Southeast and South Asian features, sharp jawline with subtle definition from Northern European ancestry. Skin shows warm, earthy depth from African heritage, with subtle golden-ochre undertones. Clear, well-maintained complexion suggesting disciplined skincare. Expression often focused and intent, with creases around the eyes from years of close detail work.",
     "distinguishing_marks": [
       "Faint circular scar on left forearm from an early prosthetic calibration mishap, approximately 2cm diameter, pale and nearly invisible",
       "Calloused fingertips on left hand from precision fabrication work",
@@ -271,14 +261,62 @@
     "posture_movement": "Moves with deliberate precision and minimal wasted motion. Shoulders held slightly forward from years of bench work. Left hand is dominant in social contexts; right prosthetic is used with unselfconscious fluidity during work. When listening, they tilt their head slightly and often rest their left hand on their thigh or workbench. Their gait is smooth and economical.",
     "clothing_style": "Tier 3-4 working specialist aesthetic. Typically wears fitted black or charcoal tech-cotton work trousers with reinforced pockets and stress-point stitching. Tops are usually form-fitting long-sleeve compression shirts in muted colors (dark gray, deep blue, black) with roll-up sleeves, allowing full visibility of the prosthetic. Over this, a custom-fitted heavy canvas work apron with multiple pockets and tool loops, often with various small components or calipers hanging from chains. On cooler days, a fitted technical jacket in dark synthetic leather with interior pockets. No visible branding or logos — all clothing is functional and worn. Hands are typically bare except for work. Feet are in durable, worn but well-maintained work boots with rubber soles designed for standing at a bench 10+ hours daily."
   },
-  "image_prompt": "Kai Deshpande, a tall androgynous 188cm precision fabricator in 2226, medium-warm brown skin with high cheekbones blending South Asian, Northern European and East Asian features. Shaved head with oil sheen, dark eyes with subtle metallic magnification lenses catching light. Wearing fitted dark compression shirt with sleeves rolled to expose a matte-charcoal titanium prosthetic right arm with individually articulated fingers and UV LEDs in the fingertips. Heavy canvas work apron with hanging calipers and tools over the shirt. Black work trousers, worn work boots. Standing at a precision workbench surrounded by small components and fabrication tools, leaning forward slightly with characteristic economical posture. Workshop lighting, cool color temperature, sharp focus on hands and prosthetic. Cyberpunk 2200s industrial aesthetic, dedicated specialist energy. --ar 2:3 --v 6",
+  "image_prompt": "Kai Olofsson, tall lean 188cm neo-noir fabrication specialist with deep warm brown skin and golden undertones, shaved head with oiled sheen, sharp angular cheekbones and jawline, dark brown eyes with metallic magnification lens glints. Right arm is matte-charcoal titanium prosthetic with articulated fingers and subtle UV LEDs in finger joints, left arm exposed and calloused. Wearing fitted dark gray compression shirt with rolled sleeves, reinforced black tech-cotton work trousers, heavy canvas work apron with hanging calipers and components. Standing at precision workbench with focused intent expression, slight forward shoulder posture from years of bench work. GLMZ, workshop lighting casting subtle shadows across angular features and prosthetic arm, technical aesthetic, functional clothing, worn work boots, unselfconscious confidence in augmentation --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 40.5,
-    "Northern European": 32.6,
-    "East Asian": 26.9
+    "Northern European": 44,
+    "Southeast Asian": 17.3,
+    "Sub-Saharan African": 15.1,
+    "South Asian": 14.4,
+    "Hispanic/Latin American": 9.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "British Isles": {
+        "English": 23.1
+      },
+      "Germanic": {
+        "German": 6.8,
+        "Swiss German": 2.8
+      },
+      "Scandinavian": {
+        "Danish": 7.5,
+        "Norwegian": 3.8
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 17.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 11.2
+      },
+      "Southern African": {
+        "Botswanan": 3.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 14.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 4.1,
+        "Peruvian": 1.8
+      },
+      "Central American": {
+        "Costa Rican": 0.7,
+        "Honduran": 0.6
+      },
+      "Mexican": {
+        "Mexican": 2
+      }
+    }
+  }
 }

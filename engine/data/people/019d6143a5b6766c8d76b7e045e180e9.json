@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b6766c8d76b7e045e180e9",
   "type": "character",
-  "name": "Echo Ingebrigtsen",
+  "name": "Echo Ogawa",
   "aliases": [
     "The Professor"
   ],
@@ -89,7 +89,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Core",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,18 +103,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian Core",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Ngaire Kuznetsov-Adu",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "TESSERA PA-5 'Attendant'",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Meridian Core"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Northern European (38%), Southeast Asian (30%), Sub-Saharan African (20%), and Hispanic/Latin American (13%) ancestry creates a distinctly multicontinental phenotype. Facial structure shows Southeast Asian cheekbone prominence and eye shape blended with Northern European bone structure. Skin tone reflects this complex mix — warm mid-brown with subtle golden and reddish undertones from the layered ancestry.",
+    "heritage": "Indigenous American (43.2%), East Asian (30.4%), and Hispanic/Latin American (26.4%) ancestry creates a distinctly multicontinental phenotype. Facial structure shows prominent, high cheekbones with the placement characteristic of East Asian heritage, blended with the broader facial proportions and stronger bone density typical of Indigenous American ancestry. Hispanic/Latin American heritage contributes warmth, subtle golden undertones, and dimensionality to the overall features. The combination produces sharply angular cheekbones, slightly wider facial structure at the temples, and eye placement reflecting both East Asian and Indigenous American traits with deeper-set eyes.",
     "height_cm": 178,
     "weight_kg": 74,
     "build": "Lean and wiry with the posture of someone accustomed to prolonged sitting. Visible muscle definition in forearms suggests decades of fine motor work. Slight forward curve to shoulders from age and desk labor.",
@@ -122,8 +115,8 @@
     "hair_style": "Close-cropped, precisely maintained with minor fade lines",
     "hair_length": "Short",
     "eye_color": "Deep brown with age-related yellowing in the sclera",
-    "skin_tone": "Warm golden-brown with complex undertones — the result of Southeast Asian, Northern European, Sub-Saharan African, and Latin American ancestry blending. Neither uniformly dark nor light, but richly dimensional with subtle warm and cool undertones shifting across the face.",
-    "complexion": "Weathered but well-maintained. Fine lines around eyes and forehead create a map of decades-long concentration. Clean-shaven with occasional five-o'clock shadow. Minor age spots on temples and cheekbones. Slight warmth to cheeks suggesting Southeast Asian and African heritage influence on facial structure.",
+    "skin_tone": "Warm medium-to-deep brown with golden, clay, and olive undertones. The blend shows rich earth tones characteristic of the Indigenous American (43.2%) and Hispanic/Latin American (26.4%) components, warmed and subtly refined by golden highlights from East Asian heritage (30.4%). Complexion shifts with light, appearing warmer in cheek and temple areas with a natural olive cast.",
+    "complexion": "Weathered but well-maintained. Fine lines around eyes and forehead create a map of decades-long concentration. Clean-shaven with occasional five-o'clock shadow. Minor age spots on temples and cheekbones with warm golden-brown undertones. High, sharply defined cheekbones reflecting the blended East Asian and Indigenous American heritage. Natural warmth and olive-golden cast to overall complexion, particularly visible across the bridge of nose and upper cheeks.",
     "distinguishing_marks": [
       "Thin surgical scar running 3cm along right jawline, partially obscured by stubble",
       "Faded indigo tattoo on inner left wrist — appears to be archival notation or personal cipher",
@@ -133,15 +126,43 @@
     "posture_movement": "Moves with calculated efficiency, minimal wasted motion. Tends to tilt head slightly when listening, suggesting auditory processing enhancements. Hands often steepled or gesture with precision. Walks with measured pace, favoring the left side slightly.",
     "clothing_style": "Tier 2-3 hybrid: tailored black wool trousers, fitted charcoal turtleneck or oxford shirt in muted colors. Favors vintage-style leather jacket with reinforced panels (possibly lined with signal-blocking material). Minimal visible branding. Silver-toned accessories — simple watch with analog face, worn wedding band. Carries a worn leather messenger bag with multiple interior pockets."
   },
-  "image_prompt": "Echo Ingebrigtsen, 178cm lean-muscled older figure with warm golden-brown skin reflecting Southeast Asian, Northern European, African, and Latin heritage blend. Short salt-and-pepper gray hair, deep brown eyes with age-yellowing, weathered face with fine lines and subtle age spots. Northeast Asian cheekbone prominence, Northern European bone structure. Thin surgical scar along right jawline. Faded indigo wrist tattoo visible. Wears tailored black trousers, fitted charcoal turtleneck, vintage leather jacket with reinforced panels. Silver watch, worn wedding band. Subtle neural interface port at base of skull. Slight forward shoulder curve from decades of desk work. Calculated, efficient posture. Cyberpunk 2226, Great Lakes Metropolitan Zone. Dim amber-tinted indoor lighting casting subtle shadows across weathered features. Worn leather messenger bag. Mood: quiet intensity, professional, digitally augmented intellect. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, mature East Asian-Indigenous American-Hispanic male, age 55-65, sharp angular cheekbones, warm deep brown skin with golden olive undertones, salt-and-pepper hair close-cropped, deep brown eyes with yellowing sclera, weathered features with concentration lines, jawline scar, faded wrist tattoo, 178cm lean wiry build, seated at retro-tech workstation, wearing fitted charcoal turtleneck and vintage leather jacket with reinforced panels, minimal jewelry, worn leather messenger bag nearby, subtle neural port visible behind left ear, dim overhead lighting casting shadows across angular face, cool blue-green ambient glow from screens, photorealistic, 2200s aesthetic, focused concentrated expression, hands steepled thoughtfully, morning light through rain-streaked windows, high resolution portraiture --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 38.3,
-    "Southeast Asian": 29.5,
-    "Sub-Saharan African": 19.6,
-    "Hispanic/Latin American": 12.6
+    "Indigenous American": 43.2,
+    "East Asian": 30.4,
+    "Hispanic/Latin American": 26.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 15.7
+      },
+      "Great Lakes Nations": {
+        "Menominee": 2.4,
+        "Potawatomi": 7.7
+      },
+      "Mesoamerican": {
+        "Mixtec": 4.3,
+        "Maya": 13.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 30.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 19.9
+      },
+      "Central American": {
+        "Honduran": 0.7,
+        "Nicaraguan": 5.8
+      }
+    }
+  }
 }

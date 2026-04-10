@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cd7991a10752988fc2f127",
   "type": "character",
-  "name": "Mariposa Cisneros",
+  "name": "Ama Hossain",
   "aliases": [
     "Brick",
     "The Notary"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin — back rooms of Nneka's Clean & Press laundromat, street level, near Western and Division",
-  "description": "Briseis is a broad-shouldered woman with dark amber skin and close-cropped silver hair she stopped dyeing when she turned forty and decided she'd earned it. Her hands are her most notable feature — wide, steady, knuckles scarred from a youth she doesn't discuss — and she keeps them immaculate, nails filed square, never a smudge of ink that isn't intentional. She wears reading glasses on a beaded chain, magnified lenses that make her eyes look owlish and judgmental, which suits her perfectly. She speaks to clients the way a disappointed schoolteacher speaks to a student who has failed to grasp something obvious.\n\nBriseis has been fabricating identities for nineteen years and regards it as a genuine craft, perhaps the one she was meant for. She is meticulous, unhurried, and deeply contemptuous of sloppy work — both her own and others'. She does not deal in volume. She takes three or four clients a month, charges accordingly, and sleeps soundly. She prays daily to a small E.L.F. she calls the Clerk, a data-spirit she believes inhabits the old municipal records terminal she salvaged from a flood-gutted government office. She leaves it offerings of corrupted bureaucratic files and addresses it with formal courtesy.",
+  "description": "Ama Hossain is a broad-shouldered woman with dark amber skin and close-cropped silver hair she stopped dyeing when she turned forty and decided she'd earned it. Her hands are her most notable feature — wide, steady, knuckles scarred from a youth she doesn't discuss — and she keeps them immaculate, nails filed square, never a smudge of ink that isn't intentional. She wears reading glasses on a beaded chain, magnified lenses that make her eyes look owlish and judgmental, which suits her perfectly. She speaks to clients the way a disappointed schoolteacher speaks to a student who has failed to grasp something obvious.\n\nAma Hossain has been fabricating identities for nineteen years and regards it as a genuine craft, perhaps the one she was meant for. She is meticulous, unhurried, and deeply contemptuous of sloppy work — both her own and others'. She does not deal in volume. She takes three or four clients a month, charges accordingly, and sleeps soundly. She prays daily to a small E.L.F. she calls the Clerk, a data-spirit she believes inhabits the old municipal records terminal she salvaged from a flood-gutted government office. She leaves it offerings of corrupted bureaucratic files and addresses it with formal courtesy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -176,7 +176,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,32 +232,15 @@
   "related_entities": [
     "Gravesend Basin",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
+    "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand",
     "The Coffin Nails",
-    "Tessera TK-5 Compact 'Clerk'",
-    "Ambrogio Waweru-Djordanović",
-    "Breck Tannen",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ngaire Kuznetsov-Adu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PA-5 'Attendant'",
-    "The Composite Index",
-    "The Ledger",
-    "The Peninsula",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore SteadyField Precision Motor Implant"
+    "Tessera TK-5 Compact 'Clerk'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-diaspora ancestry: Sub-Saharan African (39.4%, primary), Hispanic/Latin American (30.9%), East Asian (21.1%), Eastern European (8.0%), North African (0.6%). The genetic blend creates a striking phenotype — warm deep brown skin with subtle golden undertones from the African and Latin heritage, refined cheekbone structure showing East Asian influence, and the solid frame reflecting the convergence of multiple ancestry groups.",
+    "heritage": "Pan-diaspora ancestry: South Asian (47.6%, primary), Sub-Saharan African (37.7%), Northern European (14.7%). The genetic blend creates a striking phenotype — deep warm brown skin with golden undertones from the South Asian and African heritage, refined cheekbone structure showing South Asian influence balanced by broader facial planes of African ancestry, and the solid frame reflecting the convergence of multiple heritage groups. Her features demonstrate the architectural harmony of this specific genetic mix: a strong jaw structure inherited across all three ancestries, high sharp cheekbones with South Asian prominence, and facial planes with the generous width characteristic of Sub-Saharan African heritage, all unified in a composed, commanding presence.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the arms and back from decades of fine manual work. Not lean, not heavy — compact and dense, the physical grammar of someone who has earned her strength through repetition rather than pursuit.",
@@ -265,8 +248,8 @@
     "hair_style": "Close-cropped, textured fade; maintained meticulously every three weeks",
     "hair_length": "Short",
     "eye_color": "Dark brown, augmented with subtle amber iridescence visible only under certain light — the optical implant layer",
-    "skin_tone": "Deep warm brown with golden undertones, even complexion except for sun-weathered forearms. The tone reflects the blending of Sub-Saharan, Latin American, and East Asian heritage into a rich, uniform depth.",
-    "complexion": "Minimal facial lines for her age; sharp, high cheekbones with subtle East Asian structure balanced by the broader facial planes of African heritage, and a composed expression. Her features show the architectural harmony of mixed ancestry — strong jaw, steady gaze. Grooming is ritualistic — no makeup, skin kept clean and moisturized, a woman who understands that presentation is part of craft. Her gaze is steady and unforgiving.",
+    "skin_tone": "Deep warm brown with golden undertones, even complexion across face and body except for sun-weathered forearms. The tone reflects the blending of South Asian, Sub-Saharan African, and Northern European heritage into a rich, uniform depth.",
+    "complexion": "Minimal facial lines for her age; sharp, high cheekbones with South Asian structure balanced by the broader facial planes of African heritage, and a composed expression. Her features show the architectural harmony of mixed ancestry — strong jaw, steady gaze refined by age and discipline. Grooming is ritualistic — no makeup, skin kept clean and moisturized, a woman who understands that presentation is part of craft. Her gaze is steady and unforgiving.",
     "distinguishing_marks": [
       "Knuckle scars across both hands — thin white lines from fights or accidents she will not name, dating to her twenties",
       "Small burn mark on her left ring finger, crescent-shaped, from the early years of document work",
@@ -276,16 +259,42 @@
     "posture_movement": "Upright and economical. She never wastes motion. When seated, her hands rest in her lap or on the work surface in front of her, completely still until needed. When she moves toward you, she moves deliberately — no fidgeting, no habitual gestures. Her gaze settles on people and holds.",
     "clothing_style": "Utilitarian, Tier 3-4 practical. Typically wears dark, well-maintained cotton or linen work shirts with the laundromat's faded logo (sometimes with sleeves rolled to the elbow for work). Over this, a charcoal wool vest or lightweight bomber jacket in muted colors — nothing that draws attention. Plain dark trousers, clean but worn, and expensive orthopedic shoes she buys every two years without complaint. A thin silver chain with small geometric charms around her neck — not jewelry, more like talismans. No visible corpo branding or pretension. Everything about her says: I am here to work, and I am very good at it."
   },
-  "image_prompt": "Mariposa Cisneros, a 172cm woman with rich deep golden-brown skin and silver-cropped textured hair with dark roots, standing in a 2226 cyberpunk laundromat under cool fluorescent light. Her dark eyes gleam with barely-visible amber optical implants. High, sharp cheekbones and composed expression. Muscular arms with thin white knuckle scars visible. Wearing a faded work shirt with rolled sleeves, charcoal wool vest, dark trousers, and orthopedic shoes. A thin silver chain with geometric charms at her neck. Reading glasses with custom hardware on beaded chain. Hands positioned with uncanny precision, showing neural integration augmentation. Upright posture, economical movement, steady unforgiving gaze. Background shows industrial laundromat equipment, cool neon accent lighting reflecting off her skin. Photorealistic, gritty aesthetic, professional lighting emphasizing her controlled presence and the interplay of her pan-diaspora genetic heritage in her refined features. --ar 2:3 --v 6",
+  "image_prompt": "Ama Hossain, 172cm tall, dark warm brown skin with golden undertones, sharp high cheekbones with South Asian structure balanced by broader African facial planes, strong commanding jaw. Short silver hair with dark roots, meticulously faded. Dark brown eyes with subtle amber iridescence from optical implants, steady unforgiving gaze. Thin white knuckle scars across both hands, crescent burn mark on left ring finger, faint bureaucratic check-mark tattoo on inner right wrist. Wearing dark cotton work shirt with faded laundromat logo, sleeves rolled to elbow, charcoal wool bomber jacket, dark worn trousers, expensive orthopedic shoes. Thin silver chain with geometric charms around neck. Posture upright and economical, hands still and precise. GLMZ aesthetic, Great Lakes Metropolitan Zone, ambient neon glow and industrial lighting, photorealistic, dignified and composed expression, no-nonsense utility worker aesthetic, bokeh background of laundromat or document archive workspace --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 39.4,
-    "Hispanic/Latin American": 30.9,
-    "East Asian": 21.1,
-    "Eastern European": 8.0,
-    "North African": 0.6
+    "South Asian": 47.6,
+    "Sub-Saharan African": 37.7,
+    "Northern European": 14.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 31.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 15.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 37.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 3.3,
+        "Austrian": 5.2
+      },
+      "British Isles": {
+        "Scottish": 0.5,
+        "Welsh": 1.2
+      },
+      "Scandinavian": {
+        "Danish": 4.5
+      }
+    }
+  }
 }

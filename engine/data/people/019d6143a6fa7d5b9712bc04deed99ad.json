@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6fa7d5b9712bc04deed99ad",
   "type": "character",
-  "name": "Orion Ingebrigtsen-Asomaning",
+  "name": "Orion Krstić-Čabarkapa",
   "aliases": [
     "Theo",
     "The Calibrator"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Aurochs Medical Complex, Neuro-Align Suite C, Level 7, near North Ave and Damen",
-  "description": "Théodore is lean and long-fingered, with warm medium-brown skin and close-cropped hair that he keeps dyed in shifting indigo tones — a subtle geneware modification that cycles the color with his mood, something he had installed as a student and now barely notices. His irises are patterned: concentric rings of amber and grey that mark him as someone who has had precision optical calibration himself, insurance against the occupational hazard of staring into neural interfaces all day. He dresses in Aurochs whites with fastidious precision, badge always straight, tools always in the same pockets.\n\nHe is mild-mannered to the point that colleagues sometimes mistake him for passive, but Théodore has a quiet and absolute certainty about his own expertise that occasionally surfaces as something close to arrogance when challenged. He genuinely loves his work in the abstract — the elegance of a well-tuned neural interface, the satisfaction of a patient who can think clearly again — and has become progressively unsettled by how rarely the patients who come to him in crisis look like the patients in Helix's promotional materials.",
+  "description": "Orion Krstić-Čabarkapa is lean and long-fingered, with warm medium-brown skin and close-cropped hair that he keeps dyed in shifting indigo tones — a subtle geneware modification that cycles the color with his mood, something he had installed as a student and now barely notices. His irises are patterned: concentric rings of amber and grey that mark him as someone who has had precision optical calibration himself, insurance against the occupational hazard of staring into neural interfaces all day. He dresses in Aurochs whites with fastidious precision, badge always straight, tools always in the same pockets.\n\nHe is mild-mannered to the point that colleagues sometimes mistake him for passive, but Orion Krstić-Čabarkapa has a quiet and absolute certainty about his own expertise that occasionally surfaces as something close to arrogance when challenged. He genuinely loves his work in the abstract — the elegance of a well-tuned neural interface, the satisfaction of a patient who can think clearly again — and has become progressively unsettled by how rarely the patients who come to him in crisis look like the patients in Helix's promotional materials.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,27 +231,16 @@
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Tessera Corponation",
+    "Indigo",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Neural Palate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Déjà Vu",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
-    "Helix Biosystems",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA PG-2 'Signature'",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (48.3%), Sub-Saharan African (30.0%), South Asian (21.7%) — a striking tri-continental blend. His features reflect this complex ancestry: the bone structure carries Northern European angularity, the skin depth and warmth draw from Sub-Saharan heritage, while South Asian ancestry contributes subtle definition to his facial geometry and eye shape.",
+    "heritage": "Eastern European (76.2%) with South Asian (12.7%) and Hispanic/Latin American (11.1%) ancestry. Strong Slavic foundation with warm undertones throughout: pronounced cheekbones and jawline reflecting Eastern European bone structure, subtly widened by South and Latin American heritage. Straight nose bridge with refined tip. The skin tone is medium-warm with cool Slavic undertones as base, enriched by golden warmth from South Asian and Hispanic ancestry distributed evenly rather than concentrated—creating a harmonious blend rather than layered appearance.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with surgeon's hands — long fingers, prominent knuckles, forearms that suggest fine motor precision rather than strength. Slight forward shoulder posture from hours bent over neural calibration rigs.",
@@ -259,24 +248,59 @@
     "hair_style": "Close-cropped, precisely maintained, revealing the clean geometry of his skull",
     "hair_length": "Short",
     "eye_color": "Patterned irises: concentric rings of amber (outer) and grey (inner), with hypersharp definition from precision optical calibration implants",
-    "skin_tone": "Rich warm brown — the depth from Sub-Saharan ancestry grounded by Northern European undertones, with subtle golden warmth from South Asian heritage. Medium-dark, even throughout, with a slight luminescence under clinical lighting from meticulous skincare.",
-    "complexion": "Even complexion, minimal facial hair (clean-shaven daily), fine-lined around the eyes from sustained focus work. Skin shows faint fatigue creases from irregular sleep tied to on-call calibration crises. Fastidious grooming — no visible blemishes or neglect. Facial structure reflects the tri-heritage blend: defined cheekbones with subtle width, straight nose bridge with refined tip, jawline that combines Northern European prominence with the softer contours of his other ancestries.",
+    "skin_tone": "Medium-warm with cool Slavic undertones as dominant base, enriched by subtle golden warmth from South Asian and Hispanic heritage. Even complexion with slight luminescence under clinical lighting from meticulous skincare.",
+    "complexion": "Even, unblemished complexion from fastidious grooming. Fine lines around eyes from sustained focus work and irregular sleep. Clean-shaven daily. Facial geometry reflects Eastern European dominance—defined Slavic cheekbones with subtle widening, strong jawline prominence softened by gentler contours from South and Latin American heritage. Straight nose bridge with refined tip. Faint fatigue creases from on-call calibration crises.",
     "distinguishing_marks": [
       "Faint scarring at base of skull, partially concealed by hair, marking the neural interface socket — occupational standard, roughly 2cm surgical line, pinkish and well-healed",
       "Pale moon-shaped mark on the inner left wrist where he removes his calibration readout rig each shift — consistent contact pressure scar"
     ],
-    "visible_augmentations": "Patterned irises are immediately noticeable under any lighting — the concentric rings are too regular to be natural. The neural socket is only visible if he shaves his hair or turns to show the nape of his neck. The mood-reactive indigo hair is distinctive but he presents it as intentional grooming rather than augmentation.",
+    "visible_augmentations": "Patterned irises with concentric amber and grey rings—too regular to be natural. Neural socket at nape of neck visible only when hair is shaved or neck exposed. Mood-reactive indigo hair presented as intentional grooming.",
     "posture_movement": "Controlled and economical. Moves with precision, each gesture calibrated — no wasted motion. Tends to tilt his head slightly when listening, eyes focusing with optical precision. Hands occasionally mime adjustment movements when thinking through calibration problems. Projects calm competence but with an undercurrent of tension in his jaw when challenged.",
     "clothing_style": "Aurochs Medical whites: pressed lab coat with fastidious precision, logo always centered. Underneath, simple charcoal or grey undershirt. Tactical pockets on the coat carry calibration styluses, diagnostic cards, and a small leather journal. ID badge clipped at exact position. Shoes are polished black medical-grade non-slip. Tier 2 quality — expensive enough to reflect his professional tier, austere enough to avoid ostentation. A discrete Helix Neural Division pendant (brushed titanium, minimal) worn under the coat on a thin chain."
   },
-  "image_prompt": "Orion Ingebrigtsen-Asomaning, neural calibration technician, 2226 GLMZ cyberpunk medical setting. Lean angular frame, 178cm, rich warm brown skin blending Northern European, Sub-Saharan African, and South Asian heritage. Close-cropped mood-reactive indigo hair revealing defined skull geometry. Most striking: patterned irises with concentric amber and grey rings from optical calibration implants — hypersharp, unnaturally perfect. Faint surgical scar at nape of neck barely visible. Fastidiously groomed, minimal facial hair, fine fatigue lines around eyes. Wearing pristine pressed Aurochs Medical whites — lab coat perfectly centered logo, charcoal undershirt, polished black non-slip shoes, ID badge at exact position. Brushed titanium Helix Neural pendant visible at neckline. Hands show surgeon's precision — long fingers, prominent knuckles. Posture controlled and economical, head tilted in focused listening pose. Clinical laboratory setting with soft blue-white surgical lighting. Calm competence radiating from composed expression, subtle tension in jawline. Medical-grade tidiness, tier 2 professional aesthetic. Cyberpunk 2200s neural technology environment, diagnostic displays glowing softly in background. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Orion Krstić-Čabarkapa, male, 178cm lean angular build, medium-warm skin with cool Slavic undertones and golden warmth woven throughout. Strong Eastern European cheekbone structure with subtle South Asian and Hispanic softening. Short close-cropped indigo mood-reactive hair revealing skull geometry. Striking patterned irises with concentric amber outer rings and grey inner rings—hypersharp optical implants. Clean-shaven, fine lines around focused eyes, faint fatigue creases. Precision-groomed, no blemishes. Wearing pristine pressed Aurochs Medical white lab coat, charcoal undershirt, polished black non-slip shoes, ID badge at exact position. Discrete brushed titanium Helix Neural Division pendant visible at collar. Controlled posture with slight forward shoulder tension. Calibration styluses in tactical pockets. Clinical lighting casting luminescence on meticulous skin. Composed expression with subtle jaw tension. Cybernetic precision aesthetic, professional tier medical worker in GLMZ facility. Cool-toned clinical setting with subtle warmth in skin tones. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 48.3,
-    "Sub-Saharan African": 30.0,
-    "South Asian": 21.7
+    "Eastern European": 76.2,
+    "South Asian": 12.7,
+    "Hispanic/Latin American": 11.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 12.7,
+        "Romanian": 6.9
+      },
+      "Slavic South": {
+        "Croatian": 18.5,
+        "Bulgarian": 12.1
+      },
+      "Slavic East": {
+        "Ukrainian": 14.3,
+        "Russian": 11.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5
+      },
+      "Indian": {
+        "Kannada": 2.2
+      },
+      "Nepali": {
+        "Nepali": 5.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 9.2
+      },
+      "Mexican": {
+        "Mexican": 1.9
+      }
+    }
+  }
 }

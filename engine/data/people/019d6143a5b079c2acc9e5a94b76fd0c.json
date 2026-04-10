@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b079c2acc9e5a94b76fd0c",
   "type": "character",
-  "name": "Soledad Trujillo",
+  "name": "Farid Sengupta",
   "aliases": [
     "Brio",
     "The Nose"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Fort Anchor, Forensic Sciences Unit, Level 7, near Western and Chicago Ave",
-  "description": "Ambrogio is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nAmbrogio has worked Metro Police forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
+  "description": "Farid Sengupta is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nFarid Sengupta has worked Metro Police forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +179,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,32 +255,13 @@
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Irontide Tidal Energy",
-    "Tibor Osei-Svanstrom",
-    "Silver",
     "Chicago",
-    "Ambassador Silk",
-    "Anatoliy Faye-Nkrumah",
-    "Constance",
-    "Crucible LL-4 'Peacekeeper'",
-    "Emeka Johansson-Orozco",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Helix Biosystems",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Marrowvault Cryogenics",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Narrowcast",
-    "Ringo RT-4 'Oxcart'",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Silver",
+    "Frost Boudiaf"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnic blend: 32% Hispanic/Latin American base with significant East Asian (23.3%), Northern and Eastern European (30.7%), and Sub-Saharan African (9.2%) ancestry, creating a complex warm-toned phenotype with subtle features from multiple continental regions",
+    "heritage": "Multiethnic blend: 46.4% South Asian foundation with significant Eastern European (35.7%) and Hispanic/Latin American (17.9%) ancestry. This combination creates angular, high-set cheekbones and a defined jawline characteristic of South Asian and Eastern European features, softened by the warmer bone structure and fuller features common in Hispanic/Latin American ancestry. The genetic convergence produces a warm-medium phenotype with subtle complexity—golden-brown undertones from South Asian and Hispanic heritage interplay with cooler olive notes from Eastern European ancestry.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Slight, almost willowy frame with the soft musculature of someone who spends twelve hours a day at a workstation. Shoulders rolled forward in a permanent stoop, as if his spine has learned to curl around microscopes and evidence bags.",
@@ -288,8 +269,8 @@
     "hair_style": "Neat fade, precisely maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural)",
-    "skin_tone": "Warm medium-tan with subtle undertones reflecting the blend—olive undertones from Hispanic/European ancestry combined with deeper warmth from African ancestry, all overlaid with the faint pallor of someone who works under LED panels in a climate-controlled basement",
-    "complexion": "Defined cheekbones with slight width characteristic of East Asian heritage, refined jaw line showing European influence. Fine lines around eyes and mouth from decades of concentration. Skin shows age honestly—no cosmetic mods. Faint nicotine staining on right index and middle fingers despite official non-smoking policy in the building (he uses a sublingual patch, but the habit ghost remains). Clean-shaven, scrupulously groomed.",
+    "skin_tone": "Warm medium-tan with golden undertones from South Asian and Hispanic/Latin American ancestry, tempered by cooler olive notes from Eastern European heritage, all overlaid with the faint pallor of someone who works under LED panels in a climate-controlled basement",
+    "complexion": "High, prominent cheekbones with angular structure reflecting South Asian and Eastern European genetics, refined jawline showing convergence of all three ancestry groups. Subtle warmth in midface from Hispanic/Latin American heritage. Fine lines around eyes and mouth from decades of concentration. Skin shows age honestly—no cosmetic mods. Faint nicotine staining on right index and middle fingers despite official non-smoking policy in the building (he uses a sublingual patch, but the habit ghost remains). Clean-shaven, scrupulously groomed.",
     "distinguishing_marks": [
       "Small scar along the bridge of his nose from a lab accident in 2194, barely visible but he knows it's there",
       "Faint chemical burn marks on his right palm and wrist—pale discoloration in the pattern of a spill he encountered in 2187, never fully faded"
@@ -298,17 +279,49 @@
     "posture_movement": "Perpetually forward-curved, as if gravity pulls slightly harder on his attention than his spine. Moves with deliberate precision—no wasted motion, each step economical. His hands are steady and methodical. When examining something, he goes very still, becoming almost sculptural in his focus.",
     "clothing_style": "Tier 3-4 working class, forensic lab standard. Charcoal gray synthetic lab coat over plain dark slacks, durable synthetic fibers designed for chemical resistance and easy decontamination. Black steel-toed boots, worn but meticulously maintained. A silver wedding band (worn continuously for 28 years) and a single narrow bracelet in brushed titanium—a gift from his daughter in 2210. No visible logos or corporate branding. Everything is functional, nothing is fashionable. His watch is a mechanical analog, because he does not trust digital displays to remain visible in case of an EMP event—a conviction he holds with the same irrational certainty as his stance on eye surgery."
   },
-  "image_prompt": "A 168cm lean man with warm olive-tan skin reflecting mixed Hispanic-Latin American, East Asian, and African heritage. Silver-white short hair in a neat fade, dark brown eyes behind yellowed magnification frames worn with years of use. Age-lined face, clean-shaven, with faint chemical burn scars on right palm and small scar on bridge of nose. Permanent forward stoop, standing in a climate-controlled forensic lab basement under cool LED panels wearing charcoal gray chemical-resistant lab coat over dark slacks, steel-toed black boots. Silver wedding band and brushed titanium bracelet visible. Mechanical analog watch. Posture extremely still and focused, hands steady and methodical. Cyberpunk 2226 Great Lakes Metropolitan Zone, forensic tech, meticulous and worn, introspective mood, cool blue-white lab lighting, --ar 2:3 --v 6",
+  "image_prompt": "Farid Sengupta, 56-year-old forensic analyst with warm medium-tan skin bearing golden-brown undertones softened by cool olive notes, angular high cheekbones and refined jawline reflecting South Asian, Eastern European, and Hispanic ancestry convergence. Silver-white short neat fade hair, dark brown natural eyes magnified behind worn yellowed acrylic lens frames. Slight, willowy 168cm frame in forward-curved posture. Clean-shaven with fine concentration lines around eyes and mouth. Small scar on bridge of nose, pale chemical burn discoloration on right palm. Dressed in charcoal gray chemical-resistant lab coat over dark slacks and black steel-toed boots, silver wedding band and brushed titanium bracelet visible. Hands steady and methodical. GLMZ, Great Lakes Metropolitan Zone basement forensic lab under cool LED panels, examining evidence with sculptural focus, clinical precision, decade-long muscle memory in every movement, analog mechanical watch visible on wrist, utterly functional aesthetic, no cosmetic augmentation, cool bluish basement lighting casting subtle shadows on weathered face --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 32.0,
-    "East Asian": 23.3,
-    "Northern European": 15.8,
-    "Eastern European": 14.9,
-    "Sub-Saharan African": 9.2,
-    "Southeast Asian": 4.8
+    "South Asian": 46.4,
+    "Eastern European": 35.7,
+    "Hispanic/Latin American": 17.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 18.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 17.1
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 4.3,
+        "Baloch": 6.7
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 5.7,
+        "Russian": 16.4
+      },
+      "Slavic West": {
+        "Polish": 10,
+        "Sorbian": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 9.2
+      },
+      "Mexican": {
+        "Mexican": 1.7
+      },
+      "Caribbean": {
+        "Cuban": 7
+      }
+    }
+  }
 }

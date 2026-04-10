@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6617f3ba4d7e4831916bf06",
   "type": "character",
-  "name": "Remi Chatterjee",
+  "name": "Remi Zaragoza",
   "aliases": [
     "Cipher",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Division",
-  "description": "Ngaire Kuznetsov-Adu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a street samurai out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNgaire Kuznetsov-Adu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Remi Zaragoza is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a street samurai out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRemi Zaragoza is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.29,
@@ -262,7 +262,7 @@
     "Protector": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,38 +281,17 @@
   ],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Myofibril Lash",
-    "MERIDIAN",
-    "Meridian Munitions Smart Marksman MSM-5 'Indexer'",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Plasmatic Induction Whip PIW-4 'Threadbare'",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Narrows",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian dominant (87.2%) with Sub-Saharan African (10.8%) and minor Middle Eastern (2.0%) ancestry — reflecting a complex diasporic lineage characteristic of the Ubiquitous Diaspora. Strong South Asian facial structure and bone architecture, with warmth and depth from Sub-Saharan heritage enriching skin undertones.",
+    "heritage": "Genetically complex diaspora blend: Sub-Saharan African (26.6%), Hispanic/Latin American (23.8%), Northern European (16.6%), Eastern European (12.8%), Indigenous American (11.1%), and South Asian (9.1%). This creates a striking phenotype with warm deep brown skin carrying golden and reddish undertones from the converging Latin American, South Asian, and Sub-Saharan ancestry. Facial structure reflects genuine continental blending: strong defined cheekbones and jawline combining the bone architecture of Northern European genetics with the softer, broader features characteristic of Sub-Saharan and Indigenous American heritage. Eyes hold the warm depth of African ancestry, nose bridge maintains Northern European straightness but with subtle lateral width from Indigenous American and South Asian influence. The overall effect is unmistakably of someone whose ancestry spans continents — no single region claims dominance, creating a phenotype characteristic of the Ubiquitous Diaspora.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Athletic and lean with functional muscle density — the kind of body maintained through deliberate conditioning rather than vanity. Shoulders broad but not overdeveloped, core visibly tight. Movement suggests dancer's proprioception married to fighter's economy of motion.",
@@ -320,8 +299,8 @@
     "hair_style": "Cropped close on sides, longer on top — practical, allows full peripheral vision, easy to maintain",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural — no ocular augmentation",
-    "skin_tone": "Warm medium-to-deep brown with the golden-warm undertones characteristic of South Asian heritage, enriched by Sub-Saharan ancestry creating depth and subtle warmth variation. Sun-darkened from operational exposure.",
-    "complexion": "Strong South Asian jawline and cheekbones, high-set and defined. Face reads as perpetually thirty-five despite age progression. Minimal facial scarring — operational discipline. Skin around eyes shows creasing of someone who squints at distance and smiles rarely. Clean-shaven or maintaining precise three-day shadow. Nose bridge strong and defined, classically South Asian in structure.",
+    "skin_tone": "Warm deep brown with golden-reddish undertones from blended Sub-Saharan, Latin American, South Asian, and Indigenous American heritage. Sun-darkened from operational exposure, displaying subtle warm variation across face and body.",
+    "complexion": "Strong defined cheekbones and jawline reflecting genuine mixed heritage — the sharp geometry of Northern European structure harmonized with the fuller, broader facial planes characteristic of Sub-Saharan and Indigenous American ancestry. Face reads as perpetually thirty-five despite age progression. Minimal facial scarring — operational discipline. Skin around eyes shows creasing of someone who squints at distance and smiles rarely. Clean-shaven or maintaining precise three-day shadow. Nose bridge strong and straight with subtle lateral width. Forehead broad, temples show natural silver threading.",
     "distinguishing_marks": [
       "Wired reflex augmentation visible along both forearms as fine metallic threading beneath translucent inlaid paneling, faintly luminescent under LED light",
       "Thin scar running from left temple to cheekbone — old wound, professionally closed but never fully faded",
@@ -332,14 +311,59 @@
     "posture_movement": "Moves with controlled fluidity — no wasted motion, weight balanced on the balls of his feet. Stands relaxed but never truly at rest, shoulders loose but hands positioned for immediate access. Makes eye contact without aggression. When still, he's completely still; when moving, the transition is instantaneous.",
     "clothing_style": "Tier 3-4 functional: insulated synth-leather jacket in matte black, fitted but allowing full range of motion. Reinforced cargo pants with discretely placed armor panels at shins and thighs. Composite boots rated for impact. Understated — no logos, no chrome accessories beyond the augmentations themselves. Clothes serve function over fashion. When maintaining cover, the same pieces cycle through dark neutral colorways. Nothing that draws attention or marks him as corps or crew."
   },
-  "image_prompt": "Remi Chatterjee, South Asian heritage with Sub-Saharan undertones, warm medium-brown skin with golden undertones, strong jawline and high cheekbones. Deep natural brown eyes, dark brown hair with silver at temples, cropped short on sides longer on top. 178cm athletic lean build with visible functional muscle. Matte black synth-leather jacket fitted for movement, reinforced dark cargo pants, composite boots. Metallic threading visible along forearms beneath translucent paneling with subdermal circuitry. Adrenaline pump port at base of neck visible. Old scar from left temple to cheekbone. Clean-shaven with three-day shadow option. Posture controlled and fluid, balanced, hands ready but relaxed. Standing in neon-lit cyberpunk 2226 setting, Great Lakes Metropolitan Zone, cool blue and amber LED lighting. Cyberpunk operative, no logos, understated and dangerous, functional aesthetics, dystopian future tech aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Remi Zaragoza, 178cm tall athletic lean neo-noir operative with warm deep brown skin carrying golden undertones, strong defined cheekbones and jawline blending Northern European structure with Sub-Saharan and Indigenous American features. Dark brown hair with silver at temples, cropped close sides longer on top, deep natural brown eyes. Wired reflex augmentation visible on forearms with faintly luminescent metallic threading beneath translucent paneling, adrenaline pump port at base of neck just below right collar. Thin scar running from left temple to cheekbone, burn marks on knuckles. Dressed in matte black insulated synth-leather jacket fitted for motion, reinforced cargo pants with armor panels at shins and thighs, composite impact-rated boots. Posture controlled and balanced, hands positioned for immediate access, eye contact steady and measured. Standing in neon-lit Great Lakes Metropolitan Zone corridors with dramatic blue-purple LED lighting casting shadows across face and augmentations, GLMZ aesthetic, gritty operational atmosphere, cool color grading emphasizing the chrome and leather, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 87.2,
-    "Sub-Saharan African": 10.8,
-    "Middle Eastern": 2.0
+    "Sub-Saharan African": 26.6,
+    "Hispanic/Latin American": 23.8,
+    "Northern European": 16.6,
+    "Eastern European": 12.8,
+    "Indigenous American": 11.1,
+    "South Asian": 9.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 19.1,
+        "Ethiopian": 7.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 23.8
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 1.9
+      },
+      "Germanic": {
+        "German": 5.8,
+        "Austrian": 4.8
+      },
+      "British Isles": {
+        "Scottish": 3.1,
+        "English": 1
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 12.8
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 8.6,
+        "Menominee": 2.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.1
+      }
+    }
+  }
 }

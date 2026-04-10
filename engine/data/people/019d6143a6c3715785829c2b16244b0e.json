@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c3715785829c2b16244b0e",
   "type": "character",
-  "name": "Stellan Villanueva",
+  "name": "Emiliano Villanueva",
   "aliases": [
     "Dot"
   ],
@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Deepwell Station (home depot), route runs through Blackpipe Corridor, Ironvein, Calumet Rise, near sub-level access near Dearborn and Jackson",
-  "description": "Saodat has the compact, settled quality of someone who has learned to be comfortable in a small moving space for ten hours at a time. They are medium-height, broad through the shoulders, with skin a warm dark brown and close-cropped natural hair shot through with bioluminescent dye — pale blue at the roots, fading to white at the tips — that they refresh every three weeks from a kit they keep in their locker at Deepwell. They have a cat tail (geneware, black with a white tip) that has its own opinions about traffic: it lashes when the route is running behind and curls quietly when it's smooth.\n\nThey are patient in the way that bus drivers become patient — not serene, but weathered into a steady kind of equanimity. They have seen everything in the seats behind them and learned to distinguish trouble from noise. Off the bus they are louder, funnier, more restless; the job asks for a particular affect and they shed it like a coat at shift end. They are deeply loyal to their regular riders in an anonymous way — they know faces, rhythms, and whether someone looks like they're having the wrong kind of day.",
+  "description": "Emiliano Villanueva has the compact, settled quality of someone who has learned to be comfortable in a small moving space for ten hours at a time. They are medium-height, broad through the shoulders, with skin a warm dark brown and close-cropped natural hair shot through with bioluminescent dye — pale blue at the roots, fading to white at the tips — that they refresh every three weeks from a kit they keep in their locker at Deepwell. They have a cat tail (geneware, black with a white tip) that has its own opinions about traffic: it lashes when the route is running behind and curls quietly when it's smooth.\n\nThey are patient in the way that bus drivers become patient — not serene, but weathered into a steady kind of equanimity. They have seen everything in the seats behind them and learned to distinguish trouble from noise. Off the bus they are louder, funnier, more restless; the job asks for a particular affect and they shed it like a coat at shift end. They are deeply loyal to their regular riders in an anonymous way — they know faces, rhythms, and whether someone looks like they're having the wrong kind of day.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -154,7 +154,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station (home depot)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,30 +176,16 @@
     "Calumet Rise",
     "The Meridian Compact for Economic Justice",
     "Hamtramck Enclave",
+    "GLMZ",
     "Ironvein",
+    "Dearborn Forge",
     "The Gradient Compact",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pale Mile",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Breck Tannen",
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Ferrogate Transit",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Plot 17",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Archive",
-    "The Compact",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Mixed ancestry: Northern European (36.4%), Hispanic/Latin American (27.1%), East Asian (20.0%), and South Asian (16.5%) — a true Ubiquitous Diaspora blend reflected in warm medium-brown skin with subtle golden undertones, broad facial structure with slight angular cheekbones, and dark expressive eyes",
+    "heritage": "Mixed ancestry: Hispanic/Latin American (59.4%), Eastern European (15.2%), Sub-Saharan African (15.1%), South Asian (5.5%), Southeast Asian (2.7%), and Middle Eastern (2.1%) — a true Ubiquitous Diaspora blend. Warm medium-brown skin with golden and olive undertones, showing the influence of dominant Latin American heritage mellowed by Eastern European fairness, enriched by Sub-Saharan depth, and warmed by South Asian and Southeast Asian notes. Broad facial structure with defined cheekbones reflecting the African and Eastern European ancestry. Facial geometry shows blended features: strong jawline from Latin heritage, slight cheekbone prominence from Eastern European ancestry, warm brown eye color characteristic of African and South Asian genetics.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Compact and broad-shouldered, with the settled solidity of someone built for endurance rather than speed. Muscular through the upper back and arms from years of gripping a steering wheel and managing a large vehicle. No excess weight, but no leanness either — functional.",
@@ -207,8 +193,8 @@
     "hair_style": "Close-cropped, meticulously maintained, refreshed every three weeks with bioluminescent treatment kit",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the blend of Northern European fairness, Latin warmth, East Asian depth, and South Asian richness — skin that catches light with subtle luminosity",
-    "complexion": "Clear skin with a weathered, lived-in quality. Minimal grooming beyond functional cleanliness — no makeup, no adornment. Lines around the eyes from squinting at route displays and reading passengers' body language. Broad, slightly angular facial structure with defined cheekbones. A small scar on the left temple from a childhood accident.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, luminous in quality. The dominant Hispanic/Latin American ancestry (59.4%) creates the warm undertone, while the Eastern European (15.2%) adds subtle fairness to the midtones, the Sub-Saharan African (15.1%) contributes depth and richness, and the South Asian (5.5%) adds warmth around the edges. Skin catches light with subtle luminosity, appearing slightly radiant in natural conditions.",
+    "complexion": "Clear skin with a weathered, lived-in quality showing character and experience. Minimal grooming beyond functional cleanliness — no makeup, no adornment. Lines around the eyes from squinting at route displays and reading passengers' body language. Broad facial structure with defined cheekbones reflecting the blend of Eastern European prominence and Sub-Saharan heritage depth. Warm brown eyes with expressive depth characteristic of the genetic mix. A small scar on the left temple from a childhood accident.",
     "distinguishing_marks": [
       "Black cat tail with white tip, geneware implant at base of spine, visible under clothing as subtle spinal ridge when they lean forward",
       "Small pale scar on left temple, approximately 2cm, from impact injury",
@@ -219,15 +205,69 @@
     "posture_movement": "Upright but not rigid. Moves with deliberate efficiency — no wasted motion. Sits with both feet flat on ground, hands usually resting on thighs or table. On the job, posture becomes slightly more braced, shoulders set slightly back. Off the job, they relax into a more casual slouch. Tail moves independently of conscious control: lashes when frustrated or behind schedule, curls contentedly when relaxed.",
     "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit regulation uniform on the job: navy polyester with reflective piping, company-issued cap (which they wear pushed back slightly), polymer safety shoes rated for twelve-hour shifts. Off-duty: worn denim, oversized hoodies in muted colors (charcoal, olive, faded black), knockoff sneakers, sometimes a vintage transit union jacket from the 2200s with faded patches. Minimal jewelry — only a brass wire ring on right ring finger, handmade by a friend. Practical clothing with no fashion statement beyond function and comfort."
   },
-  "image_prompt": "Stellan Villanueva, 2226 cyberpunk transit worker, mixed-heritage face with warm medium-brown skin with golden undertones blending Northern European, Hispanic, East Asian, and South Asian features. Dark brown eyes, defined cheekbones, compact muscular build, 168cm tall. Close-cropped dark hair with bioluminescent pale blue to white gradient, subtle glow in low light. Black cat tail geneware with white tip visible beneath worn navy Ferrogate Transit uniform with reflective piping. Faint metallic ferrous wheel tattoo on wrist, small scar on left temple. Weathered, lived-in complexion, direct steady gaze. Standing in dimly-lit transit station or beside large vehicle, posture upright and efficient, hands resting naturally. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, functional workwear, neon signs reflecting off transit infrastructure, moody atmospheric lighting, photorealistic, --ar 2:3 --v 6",
+  "image_prompt": "Emiliano Villanueva, 168cm tall transit worker with warm medium-brown skin showing golden and olive undertones, broad defined cheekbones reflecting mixed Hispanic-Latin American, Eastern European, Sub-Saharan African, and South Asian heritage. Dark brown expressive eyes, short close-cropped hair with bioluminescent pale blue-to-white gradient fading to natural dark brown at scalp. Muscular compact build from years of transit work. Black cat tail with white tip visible from geneware implant. Small scar on left temple. Wearing worn navy Ferrogate Transit uniform with reflective piping, company cap pushed back, or off-duty in oversized charcoal hoodie and faded denim. Standing upright with deliberate posture, hands relaxed on thighs. Subtle luminosity to skin. GLMZ Great Lakes Metropolitan Zone setting, cool industrial lighting catching bioluminescent hair, tired but steady expression, gritty transit station or vehicle interior background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 36.4,
-    "Hispanic/Latin American": 27.1,
-    "East Asian": 20.0,
-    "South Asian": 16.5
+    "Hispanic/Latin American": 59.4,
+    "Eastern European": 15.2,
+    "Sub-Saharan African": 15.1,
+    "South Asian": 5.5,
+    "Southeast Asian": 2.7,
+    "Middle Eastern": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 18,
+        "Puerto Rican": 41.4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 15.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 3.1,
+        "Kenyan": 3.4
+      },
+      "West African": {
+        "Ivorian": 8.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.8,
+        "Tamil Sri Lankan": 1.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3.4
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 1.1
+      },
+      "Indonesian": {
+        "Javanese": 0.5,
+        "Sundanese": 0.2
+      },
+      "Cambodian": {
+        "Khmer": 0.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 0.6,
+        "Emirati": 0.6
+      },
+      "Arab Levantine": {
+        "Jordanian": 0.9
+      }
+    }
+  }
 }

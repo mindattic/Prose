@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a471c99a02a4b5331c12ea",
   "type": "character",
-  "name": "Atlas Hossain-Halverson-Ingebrigtsen",
+  "name": "Atlas Kobayashi-Trujillo-Pham",
   "aliases": [
     "Tolly",
     "The Architect of Nothing"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment, near Fullerton and Damen",
-  "description": "Ptolemy is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single GLMZ family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
+  "description": "Atlas Kobayashi-Trujillo-Pham is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single GLMZ family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -178,7 +178,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Loft",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -225,28 +225,17 @@
   "registered_firearms": [],
   "related_entities": [
     "Lockhaven North",
-    "GLMZ",
     "The Iron Lotus",
     "The Loft",
     "Sediment Sound Group",
-    "ARCHIVE",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Atlas",
     "Compass Rose",
-    "Forge-Smith Collective Fighting Chain 'Serpent'",
-    "Mexicantown Libre",
-    "Pilsen Veil",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Street Custom 'Cigarette' Pen Gun",
-    "SynapTech AromaVeil Olfactory Filter",
-    "TESSERA PA-5 'Attendant'",
-    "The Pure Hand",
-    "Timur Osei-Bjelke"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant South Asian, Northern European, and minor Sub-Saharan African ancestry. The blend manifests in angular cheekbones with subtle fullness, a complexion bridging warm bronze and golden undertones, and eye shape reflecting the East Asian majority while darker iris tones from South Asian heritage.",
+    "heritage": "Mixed heritage from Hispanic/Latin American (42%), East Asian (20.2%), Middle Eastern (17.3%), Southeast Asian (14.3%), and South Asian (6.2%) ancestry. The blend manifests in angular cheekbones with subtle fullness, warm olive-bronze complexion with golden undertones, eye shape reflecting East Asian structure, and facial features showing the polyphonic influence of Mediterranean, Southwest Asian, and Pan-Asian genetics.",
     "height_cm": 183,
     "weight_kg": 98,
     "build": "Heavyset with a barrel chest and thick shoulders, slightly soft around the midsection but broad-framed — the build of someone who has spent decades sitting in editing chairs and standing in darkened rooms rather than moving through the world.",
@@ -254,26 +243,61 @@
     "hair_style": "Close-cropped, neatly trimmed but never fussy",
     "hair_length": "Short",
     "eye_color": "Right eye: dark brown, natural; left eye: matte black prosthetic with amber ring-light iris",
-    "skin_tone": "Warm bronze with golden undertones, reflecting the East and South Asian dominance in his ancestry. Medium depth with subtle warm radiance beneath weathering.",
-    "complexion": "Weathered face with pronounced laugh lines and forehead creases from decades of squinting at monitors. Angular cheekbones with East Asian structure softened by South Asian fullness. Close-cropped beard salt-and-peppered at the jawline, kept meticulously groomed — the one vanity he allows himself. Slight permanent furrow between brows from concentration. Complexion shows age-related deepening across his warm bronze base.",
+    "skin_tone": "Warm olive-bronze with golden undertones, reflecting the dominant Hispanic/Latin American and East Asian ancestry tempered by Middle Eastern warmth and Southeast Asian depth. Medium depth with subtle golden radiance beneath weathered patina.",
+    "complexion": "Weathered face with pronounced laugh lines and forehead creases from decades of squinting at monitors. Angular cheekbones with East Asian structure softened by Hispanic and South Asian fullness. Subtle Mediterranean jawline influence from Middle Eastern heritage blending with the warmth of Southeast Asian undertones. Close-cropped beard salt-and-peppered at the jawline, kept meticulously groomed — the one vanity he allows himself. Slight permanent furrow between brows from concentration. Complexion shows age-related deepening across warm olive-bronze base.",
+    "visible_augmentations": "Prosthetic left eye (matte black with amber iris-ring, recording-capable), obviously non-cosmetic and maintained in deliberate non-stealth configuration. Nicotine-metabolizer implant is subcutaneous and invisible.",
+    "posture_movement": "Stands with slight forward lean, shoulders hunched as if perpetually framing a shot through his hands. Moves deliberately but without haste, economical gestures. Has the habit of turning slightly to one side in conversation to position his prosthetic eye toward the speaker — a tell that he is recording audio. Eyes rarely settle on one point; constantly scanning, assessing light and shadow.",
+    "clothing_style": "Rotates between three or four high-collared long coats (charcoal, dark brown, navy) regardless of season — vintage synthweave from the 2190s, cut loose and worn soft. Under them: plain black or grey long-sleeve shirts, often stained with coffee or solder flux. Worn Tier-4 workboots resoled multiple times. A faded canvas satchel across his chest containing his intake recorder, lens caps, and worn notebooks. No jewelry. His clothes smell like old film stock and cigarette smoke despite nicotine-metabolizer implant — ghost of a habit.",
     "distinguishing_marks": [
       "Matte black prosthetic left eye with amber light-ring around iris, visibly non-cosmetic and deliberately maintained to appear obviously artificial.",
       "Faint cigarette burn scar on inside of left wrist from a 2189 studio accident, barely visible unless pointed out.",
       "Fine webbing of scar tissue across knuckles of both hands from a Tier-5 altercation in Mexicantown in 2201 — he doesn't talk about it."
-    ],
-    "visible_augmentations": "Prosthetic left eye (matte black with amber iris-ring, recording-capable), obviously non-cosmetic and maintained in deliberate non-stealth configuration. Nicotine-metabolizer implant is subcutaneous and invisible.",
-    "posture_movement": "Stands with slight forward lean, shoulders hunched as if perpetually framing a shot through his hands. Moves deliberately but without haste, economical gestures. Has the habit of turning slightly to one side in conversation to position his prosthetic eye toward the speaker — a tell that he is recording audio. Eyes rarely settle on one point; constantly scanning, assessing light and shadow.",
-    "clothing_style": "Rotates between three or four high-collared long coats (charcoal, dark brown, navy) regardless of season — vintage synthweave from the 2190s, cut loose and worn soft. Under them: plain black or grey long-sleeve shirts, often stained with coffee or solder flux. Worn Tier-4 workboots resoled multiple times. A faded canvas satchel across his chest containing his intake recorder, lens caps, and worn notebooks. No jewelry. His clothes smell like old film stock and cigarette smoke despite nicotine-metabolizer implant — ghost of a habit."
+    ]
   },
-  "image_prompt": "Atlas Hossain-Halverson-Ingebrigtsen, cyberpunk 2226, 183cm heavyset man with warm bronze skin and angular East Asian-influenced cheekbones softened by South Asian heritage fullness. Dark brown close-cropped hair with salt-pepper beard, meticulously groomed. Weathered face with laugh lines and concentration furrow. Right eye dark brown natural, left eye a deliberately obvious matte black prosthetic with amber light-ring iris recording-capable augmentation. Scarred knuckles on both hands, faint wrist scar. Wearing vintage loose-fit charcoal synthweave long coat from 2190s, black long-sleeve shirt beneath, worn Tier-4 boots resoled multiple times. Faded canvas satchel across chest. Standing with slight forward lean, shoulders hunched, turning prosthetic eye toward viewer in recording posture. Dark studio or editing room ambience, moody shadow-and-light cinematography reflecting his career. Film noir aesthetic, cool neon accents catching on his prosthetic eye rim. Economical, deliberate stance. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Kobayashi-Trujillo-Pham, 183cm heavyset broad-shouldered neo-noir male with warm olive-bronze complexion and golden undertones, reflecting blended Hispanic/Latin American, East Asian, Middle Eastern, Southeast Asian, and South Asian heritage. Angular East Asian cheekbones softened by South Asian fullness, weathered face with decades of monitor-squint lines, Mediterranean-influenced jawline. Salt-and-pepper close-cropped beard meticulously groomed. Right eye dark brown natural; left eye matte black prosthetic with glowing amber iris-ring, deliberately non-cosmetic. Dark brown short close-cropped hair. Worn charcoal synthweave long coat over grey long-sleeve shirt, faded canvas satchel across chest, resoled workboots. Standing with forward lean, shoulders hunched, posture of a cinematographer. Scarred knuckles visible. Slight permanent furrow between brows. Year 2226 Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool and warm light interplay emphasizing the prosthetic eye's glow, cinematic noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 57.9,
-    "South Asian": 19.8,
-    "Northern European": 18.0,
-    "Sub-Saharan African": 4.3
+    "Hispanic/Latin American": 42,
+    "East Asian": 20.2,
+    "Middle Eastern": 17.3,
+    "Southeast Asian": 14.3,
+    "South Asian": 6.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 42
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 20.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 9.4
+      },
+      "Persian": {
+        "Iranian": 2.5
+      },
+      "Kurdish": {
+        "Kurdish": 5.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 14.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 1.5,
+        "Tamil": 4.7
+      }
+    }
+  }
 }

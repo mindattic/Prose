@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6097f6cb877dc34b4cead35",
   "type": "character",
-  "name": "Zara Lindström",
+  "name": "Amara Achebe",
   "aliases": [
     "Froz",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Highland Park Autonomous Zone, in a permanently parked converted freight hauler she calls The Box, near Michigan Ave and Chicago Ave",
-  "description": "Euphrosyne is a solidly built woman with dark brown skin weathered attractively by decades of outdoor work, close-cropped silver hair, and the calm deliberate manner of someone who has decided what matters and freed herself of everything else. She has a retractable claw modification on her right hand — not for combat but because she finds it useful for cable management and fine lens adjustment — and her left eye hosts a recording overlay that has been running continuously for eleven years. The indicator light is always visible: a tiny red dot she makes no effort to conceal.\n\nShe makes films. Not for distribution, or not primarily — she maintains a massive personal archive of GLMZ's underclass, shot over forty years, that she considers her life's work and has never released in full. Clips surface occasionally, always unsigned. Her narrative documentaries about Highland Park and Hamtramck Enclave communities have won prizes from bodies that don't officially exist and been suppressed by three different corponation legal teams. She is patient, relentless, and radically comfortable with being underestimated. She has a dry humor she deploys sparingly and a stillness that makes people forget they are being observed and recorded.",
+  "description": "Amara Achebe is a solidly built woman with dark brown skin weathered attractively by decades of outdoor work, close-cropped silver hair, and the calm deliberate manner of someone who has decided what matters and freed herself of everything else. She has a retractable claw modification on her right hand — not for combat but because she finds it useful for cable management and fine lens adjustment — and her left eye hosts a recording overlay that has been running continuously for eleven years. The indicator light is always visible: a tiny red dot she makes no effort to conceal.\n\nShe makes films. Not for distribution, or not primarily — she maintains a massive personal archive of GLMZ's underclass, shot over forty years, that she considers her life's work and has never released in full. Clips surface occasionally, always unsigned. Her narrative documentaries about Highland Park and Hamtramck Enclave communities have won prizes from bodies that don't officially exist and been suppressed by three different corponation legal teams. She is patient, relentless, and radically comfortable with being underestimated. She has a dry humor she deploys sparingly and a stillness that makes people forget they are being observed and recorded.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -258,50 +258,27 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "Hamtramck Enclave",
-    "GLMZ",
     "The Iron Lotus",
     "WELLSPRING",
     "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
     "Tessera Corponation",
     "Arcturus Defense Solutions Ironback APC — 'The Pallbearer'",
-    "ARCHIVE",
-    "Silver",
     "Chicago",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Breck Tannen",
-    "Hauler",
-    "Makena Johanssen-Diallo",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Palladian Construction",
-    "Retractable Claw Modification",
-    "Réginald Asomaning-Čabarkapa",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TN-1 'Cradle'",
-    "The Archive",
-    "The Burden Clause",
-    "The Compact",
-    "The Heritage Vault",
-    "The Nearfield",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Warden",
-    "Yannick Tofauti-Szarvásy"
+    "Silver",
+    "GLMZ"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Sub-Saharan African and Southeast Asian ancestry, blended with Northern European, Hispanic/Latin American, and Eastern European heritage. The genetic mix manifests in warm-toned brown skin with subtle undertones reflecting the diversity of her ancestry — a complexity that can't be reduced to single regional categories.",
+    "heritage": "Predominantly Sub-Saharan African (53.6%) with significant Pacific Islander (19.7%) ancestry, complemented by Middle Eastern (7.7%), Northern European (7.5%), South Asian (5.8%), and Eastern European (5.7%) heritage. The genetic blend manifests in deep warm brown skin with complex undertones — the richness of African ancestry dominates her complexion, subtly warmed by Pacific Islander and South Asian influences, with faint golden-amber notes from the minor European contributions. A truly global genetic archive, visible in her individual features rather than fitting regional categories.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Solidly muscular, broad-shouldered, compact torso with the compact density of someone who has carried equipment and intention for four decades. No softness, no waste.",
     "hair_color": "Silver-gray",
     "hair_style": "Close-cropped, shaped close to skull, practical and minimal",
     "hair_length": "Short",
-    "eye_color": "Left eye: dark brown with barely-perceptible red indicator light embedded in lower iris margin; right eye: natural dark brown",
-    "skin_tone": "Rich warm brown with golden-amber undertones — the result of East Asian, Southeast Asian, and African ancestry creating a complexion that deepens with sun exposure. Weathered texture from decades of outdoor fieldwork, wind exposure, and time exposure.",
-    "complexion": "Minimal makeup, no vanity grooming. The facial structure shows the blended geometry of her mixed ancestry — cheekbones and eye shape reflecting East/Southeast Asian heritage, broader nose bridge and fuller features from African ancestry, subtle influences from European and Latin American lineage creating an individually distinctive face rather than a regional archetype. Lines around mouth and eyes from squinting through viewfinders and forty years of outdoor fieldwork. Skin has the quality of something well-maintained but not decorated.",
+    "eye_color": "Left eye: dark brown with red recording indicator light embedded in lower iris margin; right eye: natural dark brown",
+    "skin_tone": "Deep warm brown with golden-amber undertones, the result of predominantly Sub-Saharan African ancestry creating a base complexion enriched by Pacific Islander warmth and South Asian depth. Weathered texture from decades of outdoor fieldwork, wind exposure, and time exposure. Darkens noticeably with sun exposure.",
+    "complexion": "Minimal makeup, no vanity grooming. The facial structure reflects dominant Sub-Saharan African heritage — strong cheekbones, broad nose bridge, fuller lips — with subtle geometric influences from Pacific Islander (broader facial proportions), South Asian (refined eye shape and depth), and Northern European (slight nose bridge definition) ancestry creating an individually distinctive face. Lines around mouth and eyes from squinting through viewfinders and forty years of outdoor fieldwork. Skin has the quality of something well-maintained but not decorated.",
     "distinguishing_marks": [
       "Fine linear scar across left temple, approximately 3cm, old and pale — barely visible unless light catches directly",
       "Callused palms and finger pads, particularly right hand, from decades of lens adjustment and cable work",
@@ -311,17 +288,71 @@
     "posture_movement": "Still, economical, deliberate. Moves as if always composing a frame. Her gaze settles on people longer than is socially conventional — not aggressive, but observational. Hands at rest, but right hand frequently makes small precise gestures even in conversation, muscle memory of adjustment and calibration.",
     "clothing_style": "Tier 5 utilitarian, but worn with the confidence of someone uninterested in status signaling. Dark canvas work pants with custom deep pockets for cables and small lens elements. Layered tops — base layer thermal, outer layer a faded dark green field jacket with structural reinforcement at shoulders. Worn boots, resoled multiple times, scuffed leather that takes abuse. No jewelry except a thin platinum ring on left hand — old, looks marital. A canvas work vest with numerous tool loops and small pouches, always worn, always bearing the weight of fieldwork."
   },
-  "image_prompt": "Zara Lindström, 168cm tall, solidly muscular with broad shoulders, rich warm brown skin with golden undertones reflecting East Asian, Southeast Asian, and African heritage. Silver-gray close-cropped hair shaped close to skull. Left eye has subtle red recording indicator light; right eye natural dark brown. Weathered complexion with character lines from decades of fieldwork, faint scar across left temple barely visible. Right hand features retractable gunmetal chromatic claw mechanism. Wearing dark canvas work pants with deep custom pockets, faded dark green field jacket with shoulder reinforcement, layered with thermal base layer. Worn and resoled boots. Canvas work vest with tool loops and pouches. Thin platinum ring on left hand. Standing with economical, deliberate posture, gaze observational and composed. Cyberpunk 2226 setting, Great Lakes Metropolitan Zone, industrial background, cool atmospheric lighting catching the texture of worn materials and faint scar, functional aesthetic with no cosmetic chrome, documentary photography style --ar 2:3 --v 6",
+  "image_prompt": "Amara Achebe, 168cm tall, silver-gray close-cropped hair, deep warm brown skin with golden undertones reflecting Sub-Saharan African, Pacific Islander, South Asian, and Northern European ancestry. Strong cheekbones, broad nose bridge, weathered face lined from decades of fieldwork. Left eye features tiny red recording indicator light embedded in dark brown iris; right eye natural dark brown. Deliberate, economical posture. Right hand shows retractable matte gunmetal chromatic claw mechanism. Wearing layered utilitarian clothing: faded dark green field jacket with shoulder reinforcement over thermal base layer, dark canvas work pants with deep pockets, worn and resoled leather boots, canvas work vest laden with tool loops and pouches. Thin platinum marital ring on left hand. Hands weathered with calluses and fine scars from precision work. Faint 3cm pale scar visible across left temple. Standing in dim GLMZ GLMZ industrial setting, composed and observational, half-light catching the red indicator in her eye, documentary photographer aesthetic, moody atmospheric lighting, gritty and functional, no vanity or decoration. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 30.5,
-    "Sub-Saharan African": 21.4,
-    "Southeast Asian": 19.3,
-    "Northern European": 11.6,
-    "Hispanic/Latin American": 9.0,
-    "Eastern European": 8.2
+    "Sub-Saharan African": 53.6,
+    "Pacific Islander": 19.7,
+    "Middle Eastern": 7.7,
+    "Northern European": 7.5,
+    "South Asian": 5.8,
+    "Eastern European": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Liberian": 14.6,
+        "Senegalese": 5
+      },
+      "Southern African": {
+        "Zimbabwean": 11.9,
+        "Botswanan": 0.3
+      },
+      "East African": {
+        "Ethiopian": 15.2,
+        "Kenyan": 6.6
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 2.1,
+        "Kiribati": 0.8
+      },
+      "Polynesian": {
+        "Hawaiian": 12.7,
+        "Samoan": 4.1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 4.8
+      },
+      "Persian": {
+        "Iranian": 2.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 7.5
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 5.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 1.8,
+        "Hungarian": 1.9
+      },
+      "Slavic South": {
+        "Bulgarian": 1.6,
+        "Croatian": 0.4
+      }
+    }
+  }
 }

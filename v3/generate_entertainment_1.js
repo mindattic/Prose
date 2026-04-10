@@ -168,7 +168,7 @@ function getExistingByCategory() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ) — the QUANTA currency symbol. Society is tiered: Tier 1 "the Shelf" (poorest, most dangerous), Tier 2 (working class "the Circuit"), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 "the Spire" (ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (Φ) — the QUANTA currency symbol. Society is tiered: Tier 1 "the Shelf" (poorest, most dangerous), Tier 2 (working class "the Circuit"), Tier 3 (middle), Tier 4 (corporate comfort), Tier 5 "the Spire" (ultra-elite).
 
 CRITICAL — Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. There is no "ethnic music" — all music is everyone's music. Musical traditions from every global culture blend freely. West African polyrhythm + East Asian pentatonic + South American percussion + Nordic drone + Middle Eastern quarter-tones. "World music" has no meaning when everything is heritage. Names reflect mixed heritage from unexpected global combinations.
 
@@ -196,7 +196,7 @@ const SCHEMA = `{
   "genre": "genre name(s)",
   "medium": "neural_feed|audio|live|broadcast|physical|mixed",
   "audience": "who listens — be specific about tier and subculture",
-  "cultural_impact": "1 paragraph on significance to Meridian 88 society",
+  "cultural_impact": "1 paragraph on significance to GLMZ society",
   "known_fans": ["list of character types or factions who are fans"],
   "story_hooks": ["2-3 narrative hooks for how this could appear in a story"],
   "tags": ["entertainment", "music", "category_value", "other relevant tags"]
@@ -207,7 +207,7 @@ const CATEGORIES = [
   {
     category: 'band',
     count: 50,
-    prompt: `Generate {count} bands/musical artists for Meridian 88, spanning 2183-2226.
+    prompt: `Generate {count} bands/musical artists for GLMZ, spanning 2183-2226.
 
 Mix of:
 - Shelf underground acts (raw, angry, political, anti-corporate)
@@ -223,7 +223,7 @@ For each band/artist include: band name, genre, member names (with mixed heritag
   {
     category: 'album',
     count: 50,
-    prompt: `Generate {count} music albums for Meridian 88, spanning 2183-2226.
+    prompt: `Generate {count} music albums for GLMZ, spanning 2183-2226.
 
 Some tied to bands from previous generation, some from new artists. Each album should have:
 - Album title and artist
@@ -237,7 +237,7 @@ Mix of: underground classics passed around on physical media, corporate-approved
   {
     category: 'song',
     count: 50,
-    prompt: `Generate {count} individual notable songs for Meridian 88, spanning 2183-2226.
+    prompt: `Generate {count} individual notable songs for GLMZ, spanning 2183-2226.
 
 These are the songs EVERYONE knows, or that specific subcultures treat as sacred. Mix of:
 - Protest anthems (anti-corporate, anti-surveillance, workers' rights)
@@ -254,7 +254,7 @@ Each song should have artist, genre, year, and what makes it culturally signific
   {
     category: 'genre',
     count: 30,
-    prompt: `Generate {count} music genres unique to the 2183-2226 era of Meridian 88.
+    prompt: `Generate {count} music genres unique to the 2183-2226 era of GLMZ.
 
 These are genres that could NOT exist before neural interfaces and augmented perception. Include:
 - Neural-feed genres (music composed for direct brain stimulation, no audio component)
@@ -270,7 +270,7 @@ Each genre should have a vivid description of what it sounds/feels like, its ori
   {
     category: 'venue',
     count: 10,
-    prompt: `Generate {count} music venues for Meridian 88.
+    prompt: `Generate {count} music venues for GLMZ.
 
 Mix of:
 - Shelf underground clubs (move locations, makeshift, dangerous, legendary)
@@ -284,7 +284,7 @@ Each should have a name, location within M88, capacity, what kind of music they 
   {
     category: 'label',
     count: 10,
-    prompt: `Generate {count} music labels/distribution networks for Meridian 88.
+    prompt: `Generate {count} music labels/distribution networks for GLMZ.
 
 Mix of:
 - Vantablack Media subsidiaries (corporate, controlling, well-funded, censorship-compliant)
@@ -328,7 +328,7 @@ async function generateCategory(catDef) {
 
     const filledPrompt = prompt.replace('{count}', batchSize);
 
-    const system = `You generate music/entertainment entries for the world of Meridian 88 (a cyberpunk megacity, years 2183-2226). Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate music/entertainment entries for the world of GLMZ (a megacity, years 2183-2226). Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

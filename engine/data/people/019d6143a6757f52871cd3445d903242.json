@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6757f52871cd3445d903242",
   "type": "character",
-  "name": "Ifeanyi Larsdóttir",
+  "name": "Cyrus Yamamoto",
   "aliases": [
     "Vanadium",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Fullerton and Damen",
-  "description": "Obed Delgado-Opoku are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 45, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a face out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nObed Delgado-Opoku have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
+  "description": "Cyrus Yamamoto are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 45, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a face out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCyrus Yamamoto have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -260,7 +260,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,30 +274,11 @@
   "registered_firearms": [],
   "related_entities": [
     "Lazarus LX-2 'Lab Rat'",
-    "Clover",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Independent Micro-Grid Power Cooperative",
-    "Narrowcast",
-    "Pikasso Wemba-Þórðarson",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Coffin Nails",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Skinners",
-    "Tiare Nishi-Anim",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (32%), Sub-Saharan African (28%), East Asian (18%), Middle Eastern (14%), Southeast Asian (8%) — a genuinely global genetic mix producing distinctly cosmopolitan features. High cheekbones and eye shape suggest East Asian ancestry; warm brown skin tone and facial structure reflect strong African heritage; Northern European ancestry visible in height, build, and subtle facial proportions; Middle Eastern and Southeast Asian elements blend into overall phenotype without dominating any single feature.",
+    "heritage": "East Asian (43.3%), Middle Eastern (17.7%), South Asian (17.3%), Hispanic/Latin American (12.3%), Sub-Saharan African (9.4%) — a genuinely global genetic mix producing distinctly cosmopolitan features. Pronounced East Asian ancestry visible in eye shape, cheekbone structure, and subtle epicanthic folds; warm medium-brown skin tone reflects blended ancestry across multiple continents with layered undertones; Middle Eastern and South Asian elements contribute to facial structure and warmth; Hispanic/Latin American and Sub-Saharan African heritage adds depth and complexity to overall phenotype without dominating any single feature.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Rawboned and lean — the kind of frame that reads as either ascetic discipline or chronic resource scarcity. Long limbs, minimal body fat, angular shoulders. Suggests endurance over power.",
@@ -305,8 +286,8 @@
     "hair_style": "Pulled back into a practical braid or low knot; occasionally loose. Styled for function, not impression.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Warm medium-brown with subtle complexity — the result of multiple continental ancestries creating depth and richness. Neither uniformly dark nor light, but layered. Slightly lighter on protected areas, warmed by undertones that reflect both African and East Asian heritage.",
-    "complexion": "High, angular cheekbones with slight prominence suggesting East Asian ancestry; strong jawline with warm undertones. Sparse facial hair, rarely shaved. Slight epicanthic fold to eyes. Skin shows the wear of nocturnal living — subtle pallor beneath the base tone. Eyes carry the flatness of someone who has learned to show only what serves negotiation. Overall facial structure reads as someone whose ancestry cannot be reduced to a single region.",
+    "skin_tone": "Warm medium-brown with subtle complexity — the result of multiple continental ancestries creating depth and richness. Reflects the blending of East Asian, South Asian, Middle Eastern, Hispanic/Latin American, and Sub-Saharan African heritage. Neither uniformly dark nor light, but layered with warmth throughout. Slightly lighter on protected areas. Skin shows the wear of nocturnal living — subtle pallor beneath the base tone.",
+    "complexion": "High, angular cheekbones with prominence suggesting East Asian ancestry; strong jawline with warm brown undertones reflecting South Asian and Middle Eastern heritage. Slight epicanthic fold to eyes. Sparse facial hair, rarely shaved. Skin shows the wear of nocturnal living. Eyes carry the flatness of someone who has learned to show only what serves negotiation. Overall facial structure reads as someone whose ancestry cannot be reduced to a single region.",
     "distinguishing_marks": [
       "Surgical scar along the right temple, thin and precise — pain editor implant site, visible when hair is pulled back",
       "Network of thin white scars across knuckles and dorsal hands — old, defensive wounds from early in their running career",
@@ -316,16 +297,70 @@
     "posture_movement": "Moves with economy and precision — no wasted motion. Shoulders slightly forward, default expression neutral-to-pleasant, eyes constantly mapping exits and social hierarchy. Stands at rest with one hand free, the other occupied. During negotiation, becomes almost perfectly still except for deliberate, measured gestures. Nocturnal circadian rhythm shows in how they relate to light — comfortable in low-light spaces, slightly squinting in full daylight.",
     "clothing_style": "Tier 3-4 pragmatism: dark technical clothing designed for function and low visibility. Lightweight synth-wool base layer, loose-fitting graphite combat pants with cargo pockets and reinforced knees, nondescript black jacket (insulated, multiple pockets, worn smooth from use). No corpo branding; everything is purpose-built or neutrally sourced. Worn leather ankle boots, well-maintained. Minimal jewelry — a simple wrist chronometer on a dark strap, a small silver ring on the left hand (possibly cultural, possibly functional). Carries a messenger bag worn cross-body, constantly checked. Grooming is precise but minimal: nails kept short and clean, minimal fragrance. Presentation reads as 'local professional,' not 'runner' — which is the entire point."
   },
-  "image_prompt": "Ifeanyi Larsdóttir, tall lean runner with warm medium-brown skin blending Northern European, Sub-Saharan African, East Asian, Middle Eastern and Southeast Asian heritage. High angular cheekbones, dark assessing eyes with subtle epicanthic fold, dark brown hair in practical braided knot with gray at temples. Right temple shows sleek chrome pain editor implant with thin surgical scar and amber LED indicator. Sparse facial hair, nocturnal pallor beneath warm skin tone. Wearing graphite combat pants, black insulated jacket, leather boots, cross-body messenger bag. Standing in low-light cyberpunk setting, neon glow reflecting off chrome augmentation, neutral professional expression, hands positioned for readiness. Cyberpunk 2226, Great Lakes Metropolitan Zone, moody underlit environment, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Cyrus Yamamoto, lean 188cm tall figure with warm medium-brown skin reflecting East Asian, South Asian, Middle Eastern, Hispanic, and Sub-Saharan African heritage. Sharp angular cheekbones, dark brown eyes with subtle epicanthic folds, dark hair graying at temples pulled into a practical braid. Visible subdermal pain editor implant on right temple with faint amber LED beneath skin, thin surgical scar framing it. Network of white scars across knuckles. Wearing dark technical synth-wool base layer, graphite cargo pants, worn black insulated jacket. Dark wrist chronometer, silver ring on left hand. Messenger bag worn cross-body. Standing in low-light nocturnal setting, shadowed face showing alert, assessing expression. Precise posture, one hand free. GLMZ Great Lakes Metropolitan Zone, moody ambient lighting, neutral-to-pleasant facial expression masking careful observation. Professional runner aesthetic disguised as local operative. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 32.1,
-    "Sub-Saharan African": 28.4,
-    "East Asian": 17.6,
-    "Middle Eastern": 13.6,
-    "Southeast Asian": 8.3
+    "East Asian": 43.3,
+    "Middle Eastern": 17.7,
+    "South Asian": 17.3,
+    "Hispanic/Latin American": 12.3,
+    "Sub-Saharan African": 9.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 28.6
+      },
+      "Chinese": {
+        "Mandarin Northern": 14.7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 14.1
+      },
+      "Persian": {
+        "Afghan Dari": 3.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.3
+      },
+      "Nepali": {
+        "Nepali": 13
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 6.5
+      },
+      "Mexican": {
+        "Mexican": 1.3
+      },
+      "Central American": {
+        "Honduran": 4.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 4.7,
+        "Ghanaian": 1.3
+      },
+      "East African": {
+        "Somali": 1.7,
+        "Ethiopian": 0.6
+      },
+      "Southern African": {
+        "Zambian": 0.4,
+        "Mozambican": 0.7
+      }
+    }
+  }
 }

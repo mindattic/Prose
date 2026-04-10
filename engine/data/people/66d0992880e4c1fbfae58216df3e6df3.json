@@ -1,13 +1,13 @@
 {
   "id": "66d0992880e4c1fbfae58216df3e6df3",
-  "name": "Ash Jaramillo-Quartey",
+  "name": "Ash Árnason-Chowdhury",
   "type": "character",
   "aliases": [
     "The Shepherd",
     "Mr. Fix"
   ],
   "role": "Private Investigator",
-  "description": "Cassiel Brandt-Ouedraogo is the most successful private investigator in Glassway by recovery rate — 100% of his kidnapping cases end with the victim returned safely. This is because he orchestrated every single kidnapping himself.\n\nThe scheme is elegant in its simplicity. His 'field associates' — a rotating team of low-level criminals who believe they're working for various gang operations — identify and abduct targets based on Cassiel's criteria: wealthy family, emotional attachment, ability to pay, and low likelihood of going to CorpSec (because CorpSec investigations would be thorough enough to find his fingerprints). The family panics. Someone recommends Cassiel — he has cultivated referral networks among therapists, lawyers, and community leaders. He takes the case, performs a convincing investigation that takes exactly long enough to justify his fee, then executes a 'recovery' that is really just a scheduled release.\n\nHe has been operating for seven years without detection. His weakness is scale — he's becoming addicted to the income and the gratitude, and each operation is slightly more ambitious than the last. Two of his former 'field associates' have died under circumstances he arranged when they got too close to understanding the full picture. He is, beneath the polish, a deeply dangerous person, and the operation is approaching the size where a single point of failure could unravel everything.",
+  "description": "Ash Árnason-Chowdhury is the most successful private investigator in Glassway by recovery rate — 100% of his kidnapping cases end with the victim returned safely. This is because he orchestrated every single kidnapping himself.\n\nThe scheme is elegant in its simplicity. His 'field associates' — a rotating team of low-level criminals who believe they're working for various gang operations — identify and abduct targets based on Cassiel's criteria: wealthy family, emotional attachment, ability to pay, and low likelihood of going to CorpSec (because CorpSec investigations would be thorough enough to find his fingerprints). The family panics. Someone recommends Cassiel — he has cultivated referral networks among therapists, lawyers, and community leaders. He takes the case, performs a convincing investigation that takes exactly long enough to justify his fee, then executes a 'recovery' that is really just a scheduled release.\n\nHe has been operating for seven years without detection. His weakness is scale — he's becoming addicted to the income and the gratitude, and each operation is slightly more ambitious than the last. Two of his former 'field associates' have died under circumstances he arranged when they got too close to understanding the full picture. He is, beneath the polish, a deeply dangerous person, and the operation is approaching the size where a single point of failure could unravel everything.",
   "affiliation": "Ouedraogo Investigations — legitimate front, employs six 'field associates' who double as abduction teams",
   "tier": "Tier 3",
   "location": "A tastefully appointed office in Glassway district, deliberately corporate-adjacent to attract upper-tier clientele, near Milwaukee and North Ave",
@@ -66,19 +66,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Iron Lotus",
-    "The Milwaukee Core",
-    "Amara Lindqvist-Diallo",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Kang-Petrov Arms KPS-9 'Rattler'",
-    "Liora Mori-Sefa",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "TESSERA TC-3 'Crucible'",
-    "The Heritage Vault",
-    "Umbraline KeyGuard KG-2 'Fang'"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (60.6%) with significant Sub-Saharan African (18.9%), South Asian (10.5%), Northern European (7.0%), and Eastern European (3.0%) ancestry. The genetic blend produces warm, complex skin tones with subtle undertones reflecting the confluence of multiple continental lineages.",
+    "heritage": "South Asian (38.7%) as dominant influence, blended with Northern European (28.8%), East Asian (16.8%), Central Asian (10.5%), and Hispanic/Latin American (5.2%) ancestry. This genetic constellation produces a warm, medium complexion with golden and olive undertones — the result of South Asian warmth layered with Northern European fairness, East Asian smoothness, and Central Asian depth. Facial structure reflects this confluence: defined South Asian cheekbones and jawline refined by Northern European proportion, with subtle East Asian eye structure and Central Asian angular definition. A face that reads as cosmopolitan without obvious continental anchoring.",
     "height_cm": 182,
     "weight_kg": 78,
     "build": "Athletic, deliberately maintained — broad shoulders tapering to a lean core. The physique of someone who treats fitness as professional grooming, not passion. No excess, no display.",
@@ -86,8 +78,8 @@
     "hair_style": "Precisely cut, swept back from the forehead with geometric precision. Always freshly maintained — barber visits every 10 days.",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm and attentive",
-    "skin_tone": "Warm medium to medium-deep with golden and amber undertones — the result of dominant Latin American heritage blended with sub-Saharan African and South Asian ancestry. Rich, even complexion across face and neck with subtle warmth that reads as both approachable and assured.",
-    "complexion": "Smooth, well-moisturized skin with almost no visible scarring or blemishes. Facial structure shows the characteristic blend of Latin American and African heritage — defined cheekbones with gentle fullness, strong jawline with subtle roundness at the angles. Eyebrows groomed but not obviously so. A face designed to be remembered as 'trustworthy' rather than distinctive.",
+    "skin_tone": "Warm medium with golden and subtle olive undertones — the result of dominant South Asian heritage layered with Northern European fairness, East Asian smoothness, and Central Asian depth. Even complexion across face and neck with a luminous quality that reads as both approachable and assured.",
+    "complexion": "Smooth, well-moisturized skin with almost no visible scarring or blemishes. Facial structure shows the characteristic blend of South Asian definition and Northern European proportion — defined cheekbones with subtle angularity, strong jawline with refined contours. Slight almond-shape suggestion to the eye area from East Asian ancestry. Eyebrows groomed but not obviously so. A face designed to be remembered as 'trustworthy' rather than distinctive.",
     "distinguishing_marks": [
       "A thin, pale scar running 3cm along his left collarbone, just visible above shirt collars — from a knife wound sustained at age 19 during a botched theft"
     ],
@@ -95,13 +87,69 @@
     "posture_movement": "Upright and controlled. Moves with deliberate economy — no wasted gesture, no fidgeting. Maintains eye contact precisely long enough to seem engaged but not threatening. Voice modulation is calibrated; laughs at appropriate moments. Everything about his physical presence is a performance of competence and reliability.",
     "clothing_style": "Tier 2-3 corporate-casual. Tailored charcoal or navy blazers over subtle pattern shirts (fine herringbone, muted plaids). Trousers pressed with sharp creases. No logos; brands are quiet (Italian leather shoes, Swiss watch, minimalist jewelry — one simple platinum band on his left ring finger). Ergonomic and expensive but understated. The overall effect: a man successful enough not to need to advertise success."
   },
-  "image_prompt": "Ash Jaramillo-Quartey, 182cm tall athletic man with warm medium-deep brown skin bearing golden undertones from Latin American, African, and South Asian heritage. Dark brown hair with silver at temples, precisely cut and swept back. Dark brown eyes, strong defined cheekbones, angular jaw. Thin pale scar visible on left collarbone. Wearing tailored charcoal blazer over fine herringbone shirt, pressed navy trousers, Italian leather shoes. Minimalist platinum ring. Upright controlled posture, calibrated expression of trustworthiness and competence. Standing in sleek corporate office with ambient neon-tinted lighting filtering through smart glass. Cyberpunk 2226, GLMZ aesthetic, cool professional atmosphere, shallow depth of field focusing on face and upper torso. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Ash Árnason-Chowdhury, GLMZ, warm medium complexion with golden and olive undertones reflecting South Asian, Northern European, East Asian, Central Asian and Hispanic heritage blend. Dark brown eyes, dark brown hair with silver at temples swept back precisely, defined South Asian cheekbones refined by Northern European proportion, subtle almond-shaped eyes. 182cm tall, athletic build, smooth skin. Wearing tailored charcoal blazer over herringbone pattern shirt, Italian leather shoes visible, minimalist platinum ring. Thin pale scar along left collarbone visible above collar. Upright posture, controlled movement, expression of practiced trustworthiness. Corporate office setting with soft warm lighting, subtle neon glow in background, Great Lakes Metropolitan Zone aesthetic. Neo-noir professional, understated luxury, competent and reliable demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 60.6,
-    "Sub-Saharan African": 18.9,
-    "South Asian": 10.5,
-    "Northern European": 7.0,
-    "Eastern European": 3.0
+    "South Asian": 38.7,
+    "Northern European": 28.8,
+    "East Asian": 16.8,
+    "Central Asian": 10.5,
+    "Hispanic/Latin American": 5.2
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 13.1
+      },
+      "Nepali": {
+        "Nepali": 18
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 19.3
+      },
+      "Scandinavian": {
+        "Swedish": 3.1
+      },
+      "British Isles": {
+        "English": 6.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 16.8
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uyghur": 5
+      },
+      "Iranian Central": {
+        "Hazara": 1.4,
+        "Tajik": 0.9
+      },
+      "Mongolic": {
+        "Mongolian": 2.5,
+        "Kalmyk": 0.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 2.1
+      },
+      "Mexican": {
+        "Mexican": 1.3
+      },
+      "South American": {
+        "Colombian": 1.8
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A tastefully appointed office in Glassway district"
+  }
 }

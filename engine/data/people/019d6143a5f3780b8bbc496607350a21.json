@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f3780b8bbc496607350a21",
   "type": "character",
-  "name": "Tendai Odinga-Pathak",
+  "name": "Aditya Salazar-Pathak",
   "aliases": [
     "Lattice",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Djeneba Park-Traore is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDjeneba Park-Traore operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Aditya Salazar-Pathak is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAditya Salazar-Pathak operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.36,
@@ -260,7 +260,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,35 +275,13 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "The Pure Hand",
-    "Slagworks Industrial",
     "Chicago",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "GLMZ",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ihaia Nystrom-Keita",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mireille Fontaine-Obi",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Prophet",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "The Heritage Vault",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
+    "The Pure Hand",
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (55.1%) with significant South Asian heritage (31.5%), complemented by Hispanic/Latin American (8.1%), East Asian (2.2%), Northern European (1.8%), and Eastern European (1.3%) ancestry. A true product of the Ubiquitous Diaspora — his phenotype reflects the dominant African and South Asian genetic signatures with subtle influences from the secondary ancestry groups.",
+    "heritage": "Complex multicultural genetic mosaic: South Asian (40.3%) foundation providing bone structure and warmth, Hispanic/Latin American (33.9%) enriching skin tone with golden-bronze undertones and facial fullness, East Asian (14.5%) contributing to eye geometry and cheekbone definition, Sub-Saharan African (11.3%) adding saturation and jaw presence. His phenotype is a striking synthesis where no single ancestry dominates — instead a balanced blend where South Asian prominence in nasal bridge meets Hispanic/Latin cheekbone fullness, East Asian eye-socket width harmonizes with Sub-Saharan African jaw strength, creating a face that reads as authentically post-Diaspora rather than any single cultural lineage.",
     "height_cm": 178,
     "weight_kg": 88,
     "build": "Stocky and solid with dense musculature — the kind of frame that suggests manual labor history and consistent gym work. Broad shoulders, thick forearms, no excess fat. Built for leverage and durability rather than speed.",
@@ -311,8 +289,8 @@
     "hair_style": "Kept short and practical, faded tight on the sides, slightly longer on top. No styling — purely functional.",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and penetrating",
-    "skin_tone": "Deep warm brown with subtle golden undertones from the South Asian component, sun-darkened from years in the GLMZ. The tone carries the richness of Sub-Saharan African genetics with a slight warmth that speaks to the South Asian heritage — neither purely cool nor purely warm, but a complex medium-dark brown that catches light differently depending on angle.",
-    "complexion": "Strong angular face reflecting African ancestry with prominent cheekbones and a powerful jaw. South Asian features contribute subtle definition to the nose bridge and brow structure. Weathered appearance — not from age alone but from accumulated stress and nocturnal living. A thin scar runs from left temple toward his ear. His expression defaults to neutral, watchful. Minimal grooming beyond functionality; beard stubble is constant.",
+    "skin_tone": "Medium-warm brown with complex, harmonious undertones — South Asian warmth and depth layered with Hispanic/Latin golden-bronze richness and Sub-Saharan African saturation creating a unified warm-medium tone. Sun-darkened from years in the GLMZ. The tone shifts subtly with light angle, unified rather than fragmented, speaking to the genetic blending at the cellular level rather than visible stratification.",
+    "complexion": "Structured face showing integrated ancestry markers: South Asian definition in nasal bridge and orbital prominence, Hispanic/Latin fullness in cheekbones and jawline contour, East Asian character in wider-set eye sockets with subtle lid architecture, Sub-Saharan African strength in overall jaw width and presence. Weathered appearance — not from age alone but from accumulated stress and nocturnal living. A thin scar runs from left temple toward his ear. His expression defaults to neutral, watchful. Minimal grooming beyond functionality; beard stubble is constant.",
     "distinguishing_marks": [
       "Thin, pale scar running from left temple diagonally toward the ear — approximately 8 cm, clean edge suggesting deliberate blade work",
       "Tattoo on right forearm: circuit pattern in black ink, custom design suggesting early netrunner identity",
@@ -323,17 +301,47 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Sits forward-leaning, weight on the balls of his feet even when stationary. Hands rest palms-down on surfaces or in lap, never crossed. Eyes constantly scan environments. Speaks quietly; people lean in to hear him. When moving through spaces, he favors edges and walls, remains aware of exits. Despite the nocturnal fatigue, his movements remain controlled and purposeful.",
     "clothing_style": "Tier 3-4 working professional with combat pragmatism. Standard: charcoal or black reinforced cargo pants with weighted pockets for equipment, steel-toed industrial boots (scuffed, well-maintained). Layered tops — usually a dark compression undershirt under a modified tactical vest or worn leather jacket without gang colors. The vest has custom pockets and cable routing for gear. No corpo logos or flashy augmentation showcases; everything is functional. Wears a worn leather wrist cuff on the left arm, probably concealing the pain editor or protective in a fight. His watch is old military-grade, not smart-linked. Small pouch belt carries lock picks, optical drives, and untraceable payment chips."
   },
-  "image_prompt": "Tendai Odinga-Pathak, a 178cm stocky netrunner with deep warm brown skin reflecting Sub-Saharan African and South Asian heritage, dark brown graying hair in a tight fade, strong angular features with prominent cheekbones and weathered expression. Dark brown penetrating eyes, thin diagonal scar from temple toward ear. Thick muscular build, no excess fat. Wearing charcoal reinforced cargo pants, steel-toed industrial boots, dark compression undershirt under worn black tactical vest with custom pockets and cable routing. Silver-gray pain editor interface visible on left neck, gecko-grip fingertip implants with metallic sheen on fingers, circuit pattern tattoo on right forearm, old burn mark on left wrist, worn leather wrist cuff. Military-grade watch, forward-leaning posture with hands resting on surfaces, alert scanning expression. Standing in neon-lit GLMZ workshop at night, surrounded by equipment and cables, cordite and machine oil in the air, dark shadows and cold blue augmentation glow highlighting the chrome implant on his neck. Cyberpunk 2226, gritty and functional, no flashy styling. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait of Aditya Salazar-Pathak, a 178cm stocky man with integrated multicultural heritage visible in his balanced facial structure — South Asian nasal prominence blended with Hispanic/Latin cheekbone fullness, East Asian eye geometry, and Sub-Saharan African jaw strength. Medium-warm brown skin tone with golden-bronze undertones, sun-darkened from Great Lakes Metropolitan Zone living. Dark brown hair graying at temples, cut short and faded tight on sides. Dark brown penetrating eyes with constant alertness. Thin pale scar running from left temple toward ear. Beard stubble permanent. Dense muscular frame built for durability. Wearing charcoal reinforced cargo pants, steel-toed industrial boots, dark compression undershirt layered under modified tactical vest, worn leather jacket. Silver-gray chrome pain editor visible on left neck, deliberate and exposed. Circuit-pattern netrunner tattoo on right forearm. Worn military-grade watch. Forward-leaning controlled posture, hands palm-down, body language scanning and cautious. Nocturnal fatigue in weathered expression. Dark edge-lit neo-noir lighting, standing in industrial GLMZ setting with neon reflecting off wet surfaces. Gritty, pragmatic atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 55.1,
-    "South Asian": 31.5,
-    "Hispanic/Latin American": 8.1,
-    "East Asian": 2.2,
-    "Northern European": 1.8,
-    "Eastern European": 1.3
+    "South Asian": 40.3,
+    "Hispanic/Latin American": 33.9,
+    "East Asian": 14.5,
+    "Sub-Saharan African": 11.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Tamil": 11.5,
+        "Gujarati": 7.1
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 6,
+        "Sinhalese": 11.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 33.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 8.6,
+        "Cantonese": 5.9
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 9.6,
+        "Somali": 1.7
+      }
+    }
+  }
 }

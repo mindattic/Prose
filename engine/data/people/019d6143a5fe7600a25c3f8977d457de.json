@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5fe7600a25c3f8977d457de",
   "type": "character",
-  "name": "Reed Haugen-Holm-Möller",
+  "name": "Reed Tofauti-Makwa-Villanueva",
   "aliases": [
     "The Pale Queen"
   ],
@@ -12,7 +12,7 @@
   "age": 44,
   "status": "active",
   "location": "The Underworld - B18-B25, near sub-level access near Dearborn and Jackson",
-  "description": "Eira has not seen sunlight in nineteen years. Her skin glows faint blue-white. She speaks for the deep-adapted communities who were born underground.",
+  "description": "Reed Tofauti-Makwa-Villanueva has not seen sunlight in nineteen years. Her skin glows faint blue-white. She speaks for the deep-adapted communities who were born underground.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -83,7 +83,7 @@
     "Traditionalist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underworld",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -92,18 +92,13 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "Bathysphere Networks",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Mika Sorel",
-    "Narrowcast",
-    "Rendstone Nuclear",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand"
+    "Bathysphere Networks",
+    "Dearborn Forge"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Northern European admixture, complemented by Southeast Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African heritage. Genetic ancestry reflects the Ubiquitous Diaspora — a complex global blend that creates distinctive features across multiple continents.",
+    "heritage": "Pacific Islander ancestry (34.5%) provides the dominant genetic foundation with robust bone structure and warm melanin expression. Northern European heritage (29.6%) contributes cool undertones, facial width, and lighter pigmentation potential that moderates the overall warmth. Hispanic/Latin American (21.7%) and Indigenous American (11.4%) ancestry blend to create angular facial geometry and intermediate skin tone depth. South Asian heritage (2.8%) adds subtle warmth around the eye regions and fine facial texturing. The resulting phenotype is a warm golden-bronze complexion with cool undertones—distinctly warm-leaning from the Pacific Islander-Hispanic-Indigenous blend, tempered by Northern European influence into an intermediate, luminous tone rather than deep bronze.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Lean and angular, with atrophied muscle from decades underground. Long-limbed and almost skeletal, adapted to low-gravity work environments and narrow tunnel spaces.",
@@ -111,8 +106,8 @@
     "hair_style": "Long, braided with thin copper wire threaded through sections. Kept back from the face with ritual precision.",
     "hair_length": "Long",
     "eye_color": "Very pale gray-blue, irises barely visible. Pupils dilated permanently from absence of natural light.",
-    "skin_tone": "Pale golden-beige with cool undertones, showing the East Asian base modified by Northern European and Southeast Asian ancestry. Overlaid with faint blue luminescence beneath the epidermis — a bioluminescent adaptation from nineteen years in the Underworld.",
-    "complexion": "Angular facial structure with pronounced cheekbones and a sharp jawline reflecting East Asian heritage softened by Northern European width. Skin is translucent in places, showing subcutaneous vasculature. No sun damage, but bearing the waxy pallor of someone who has never felt direct sunlight. High cheekbones typical of East and Southeast Asian ancestry. Lips are naturally pale with subtle pigmentation; she sometimes stains them with bioluminescent dye for formal Court occasions.",
+    "skin_tone": "Warm golden-bronze with cool undertones—intermediate depth reflecting the 34.5% Pacific Islander baseline softened by 29.6% Northern European lightening influence, deepened by 33.1% combined Hispanic/Latin American and Indigenous American ancestry. The result is lighter than typical Pacific Islander but warmer and more golden than typical Northern European. Overlaid with faint blue luminescence beneath the epidermis from bioluminescent adaptation after nineteen years in the Underworld.",
+    "complexion": "Moderately rounded facial structure with defined cheekbones and strong jawline reflecting Pacific Islander genetic foundation, softened by Northern European width and Hispanic-Indigenous American angular features. Skin is translucent in places, showing subcutaneous vasculature. No sun damage, bearing the waxy pallor of someone who has never felt direct sunlight. The warm golden undertone prevents the appearance of pure pallor—instead creates an ethereal, luminous quality. Lips are naturally medium-toned with subtle pigmentation; she sometimes stains them with bioluminescent dye for formal Court occasions.",
     "distinguishing_marks": [
       "Ritual scarification across both forearms in geometric patterns — marks of her initiation into the Pallid Court, performed when she was born underground",
       "A thin, silvery scar along her left temple from a tunnel collapse accident twenty years ago",
@@ -122,17 +117,60 @@
     "posture_movement": "Moves with deliberate grace and economy of motion — no wasted energy. Her gait is silent, practiced. She often pauses mid-conversation to listen to vibrations in the stone beneath her feet. Her hands move expressively when she speaks, gestures precise and ceremonial.",
     "clothing_style": "Formal Pallid Court attire: layered robes of deep indigo and black synthetic silk, deliberately concealing her skeletal frame. A copper-embroidered collar marks her as an elder. Wears no jewelry save for a simple ring of pale silver on her right ring finger — a family heirloom from before the Underworld. Her clothing is immaculate but deliberately devoid of bright colors or reflective surfaces; she dresses to absorb light rather than reflect it. Tier 3-4 quality, emphasizing ritual and status within the Court rather than wealth."
   },
-  "image_prompt": "Reed Haugen-Holm-Möller, 168cm tall lean figure in formal Pallid Court attire, layered deep indigo and black synthetic silk robes with copper-embroidered collar. East Asian-descended features with pale golden undertones, pronounced cheekbones, sharp jawline. Long black hair with silver-white streaks braided with copper wire, pale gray-blue eyes with dilated pupils adapted to darkness. Translucent porcelain skin with faint blue bioluminescent tracery glowing subtly across collarbone and sternum. Ritual scarification in geometric patterns visible on forearms, thin silvery scar on left temple. Silent, graceful posture, hands moving expressively. Cyberpunk 2226 Great Lakes Metropolitan Zone, pale light catching bioluminescent patterns beneath skin, dark stone chamber setting, emphasis on ritual and ancestral connection, mood contemplative and otherworldly --ar 2:3 --v 6",
+  "image_prompt": "Reed Tofauti-Makwa-Villanueva, GLMZ, ethereal woman with warm golden-bronze skin and cool undertones, pale gray-blue eyes with permanently dilated pupils, long black hair with silver streaks braided with copper wire, skeletal lean build, translucent skin showing subcutaneous vasculature, faint bioluminescent blue tracery glowing beneath collarbone and sternum, ritual geometric scarification across forearms, silvery scar along left temple, formal Pallid Court attire in deep indigo and black synthetic silk with copper-embroidered collar, pale silver family ring, graceful ceremonial posture, underground Great Lakes Metropolitan Zone setting with stone walls and darkness, soft bioluminescent glow emanating from her skin, moody atmospheric lighting emphasizing her luminous ethereal quality, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 54.4,
-    "Northern European": 21.0,
-    "Hispanic/Latin American": 11.2,
-    "Southeast Asian": 5.7,
-    "Sub-Saharan African": 4.7,
-    "Middle Eastern": 3.0
+    "Pacific Islander": 34.5,
+    "Northern European": 29.6,
+    "Hispanic/Latin American": 21.7,
+    "Indigenous American": 11.4,
+    "South Asian": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Ni-Vanuatu": 0.8,
+        "Papua New Guinean": 0.3
+      },
+      "Micronesian": {
+        "Marshallese": 33.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Icelandic": 6.6,
+        "Swedish": 13.5
+      },
+      "Germanic": {
+        "Dutch": 5.9,
+        "Swiss German": 3.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 19.6
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.1
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 8.8,
+        "Maya": 2.1
+      },
+      "Andean": {
+        "Aymara": 0.2,
+        "Quechua": 0.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.8
+      }
+    }
+  }
 }

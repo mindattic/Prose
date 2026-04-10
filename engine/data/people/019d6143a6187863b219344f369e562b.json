@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6187863b219344f369e562b",
   "type": "character",
-  "name": "Bogdana Banerjee-Okafor",
+  "name": "Solveig Soriano-Ibarra",
   "aliases": [
     "the Slow Road",
     "Essie"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Hyperlane rest stop at the Waukegan-Kenosha junction — a permanent-ish fixture at a rest station called the Mercy Flat, near Damen and Armitage",
-  "description": "Galdur is an old man in the way of someone who has been old since about forty-five — there is no particular brittleness to him, just a deep weathering. He is heavyset in the torso, his face a broad, lined map of Central Asian and Central African inheritance, with wide cheekbones, deep-set eyes that are nearly black, and a close-cropped white beard that he trims with impractical fastidiousness for someone who sleeps in a modified freight container. His geneware is old and partly degraded: he paid for subdermal bioluminescence in his forearms thirty years ago, when it was fashionable, and now it flickers irregularly — a slow pulse of blue-white light that stutters and catches depending on temperature and his emotional state. He treats this as a feature. He calls it his truth-light.\n\nGaldur was a Sterling-Nakamura corporate ombudsman for twenty-two years — a man who formally heard worker complaints and formally ensured they went nowhere. He knows precisely what he was. He was expelled from his corponation citizenship seven years ago during a restructure, stripped of housing allocation and identity tier classification, and assigned UBC stipend status in a decision that took eleven minutes. He has been on the road since, moving between hyperlane rest stops and migrant encampments, conducting informal services for any spiritual tradition that wants him — E.L.F. prayer ceremonies, grief rituals, marriages that won't be recognized anywhere official. He is not ordained by anything. He is here, which turns out to be most of what people need.",
+  "description": "Solveig Soriano-Ibarra is an old man in the way of someone who has been old since about forty-five — there is no particular brittleness to him, just a deep weathering. He is heavyset in the torso, his face a broad, lined map of Central Asian and Central African inheritance, with wide cheekbones, deep-set eyes that are nearly black, and a close-cropped white beard that he trims with impractical fastidiousness for someone who sleeps in a modified freight container. His geneware is old and partly degraded: he paid for subdermal bioluminescence in his forearms thirty years ago, when it was fashionable, and now it flickers irregularly — a slow pulse of blue-white light that stutters and catches depending on temperature and his emotional state. He treats this as a feature. He calls it his truth-light.\n\nSolveig Soriano-Ibarra was a Sterling-Nakamura corporate ombudsman for twenty-two years — a man who formally heard worker complaints and formally ensured they went nowhere. He knows precisely what he was. He was expelled from his corponation citizenship seven years ago during a restructure, stripped of housing allocation and identity tier classification, and assigned UBC stipend status in a decision that took eleven minutes. He has been on the road since, moving between hyperlane rest stops and migrant encampments, conducting informal services for any spiritual tradition that wants him — E.L.F. prayer ceremonies, grief rituals, marriages that won't be recognized anywhere official. He is not ordained by anything. He is here, which turns out to be most of what people need.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -171,7 +171,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hyperlane rest stop at the Waukegan-Kenosha junction",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,26 +244,11 @@
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "NeuralPath CalmLine Chronic Pain Suppressor",
     "The Waukegan Industrial Shelf",
-    "Kenosha Crossing",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Idris Forsberg-Quaye",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "Lumen",
-    "Ringo PD-1 'Citizen'",
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "Kenosha Crossing"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly South Asian (36.9%) with significant Eastern European (17.6%), Sub-Saharan African (15.1%), and Southeast Asian (15.1%) ancestry, complemented by Central Asian (8.6%) and Hispanic/Latin American (6.7%) heritage. The genetic mosaic creates a distinctly cosmopolitan phenotype — a living map of the Ubiquitous Diaspora.",
+    "heritage": "Predominantly Hispanic/Latin American (59.4%) with significant Northern European (18.5%), East Asian (9.1%), Southeast Asian (5.6%), and Sub-Saharan African (7.4%) ancestry. The genetic mosaic creates a distinctly cosmopolitan phenotype — warm Latin American base enriched by Northern European bone structure, East and Southeast Asian facial refinement, and Sub-Saharan depth. A living cartography of the Ubiquitous Diaspora expressed in flesh.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Heavyset through the torso and shoulders, broad-framed with slight thickening at the midsection — the build of someone who has carried weight for decades without attempting to shed it. Still possesses underlying structural strength beneath the weathering.",
@@ -271,8 +256,8 @@
     "hair_style": "Close-cropped, neatly maintained despite circumstance",
     "hair_length": "Short",
     "eye_color": "Near-black, deep-set",
-    "skin_tone": "Warm medium-brown with complex undertones — the blended result of South Asian warmth, Eastern European earthiness, and sub-Saharan depth, creating a rich, multitonal complexion that shifts subtly in different light.",
-    "complexion": "Heavily lined face with prominent, well-defined cheekbones reflecting South Asian structure. Deep creases radiating from the corners of his eyes and mouth. Weathered texture suggesting decades of outdoor exposure. Close-cropped white beard trimmed with meticulous care. Facial structure shows the broader nasal bridge and fuller lips characteristic of his African ancestry, combined with the angular cheekbone prominence of Eastern European genetics. Skin shows age spots and older scarring consistent with industrial work.",
+    "skin_tone": "Warm medium-brown with complex undertones — rich Latin American warmth blended with Northern European earthiness, East Asian smoothness, Southeast Asian depth, and Sub-Saharan richness, creating a multitonal complexion that shifts subtly in different light.",
+    "complexion": "Heavily lined face with prominent, well-defined cheekbones reflecting the angular structure of his mixed heritage. Deep creases radiating from the corners of his eyes and mouth. Weathered texture suggesting decades of outdoor exposure. Close-cropped white beard trimmed with meticulous care. Facial structure shows the broader nose bridge and fuller lips characteristic of his Latin American and Sub-Saharan ancestry, combined with the angular cheekbone prominence of Northern European genetics and the refined midface proportions of East Asian heritage. Skin shows age spots and older scarring consistent with industrial work.",
     "distinguishing_marks": [
       "Subdermal bioluminescence scars along both inner forearms running from wrist to elbow — now faint white lines beneath the skin where the implants rest",
       "A thin, pale scar along his left jawline, approximately 8cm, running from below the ear toward the chin — old industrial accident",
@@ -283,17 +268,71 @@
     "posture_movement": "Moves with deliberate, economical motion — the gait of someone who has learned not to waste energy. Stands with weight balanced evenly, shoulders slightly forward. Carries himself with a quiet, settled presence that suggests acceptance rather than resignation. Hands move slowly and with intention during conversation. Makes strong eye contact, head slightly tilted as if listening to something beyond the immediate conversation.",
     "clothing_style": "Tier 5 utility wear maintained with surprising care. Typically wears a faded gray technical shirt with reinforced panels and multiple pockets (probably salvaged or purchased secondhand from an industrial surplus vendor). Over this, a heavy canvas coat in dark brown, patched at the elbows and lined with thermal fabric — worn but not carelessly so. Trousers are practical cargo-style in dark charcoal, with worn utility pockets. Boots are old military-grade steel-toed work boots, scuffed and re-heeled multiple times. A simple cord bracelet in faded red textile wound around his left wrist — a spiritual marker, not a status symbol. No visible corporate branding or tier insignia. Clothing suggests someone who has voluntarily stepped outside consumption hierarchies."
   },
-  "image_prompt": "Bogdana Banerjee-Okafor, 178cm heavyset man with warm medium-brown skin showing the blended features of South Asian, Eastern European, African, and Southeast Asian ancestry. Prominent cheekbones, deeper-set near-black eyes, white close-cropped hair with meticulously trimmed white beard. Face heavily lined and weathered from decades of industrial work, with old scars on left jawline and forehead creases. Subdermal bioluminescent implants in both forearms glowing faint blue-white in an irregular, stuttering pulse that intensifies with emotion. Wearing faded gray technical shirt with reinforced panels, dark brown canvas coat with thermal lining patched at elbows, dark charcoal cargo trousers, and scuffed military-grade steel-toed boots. Red fabric cord bracelet on left wrist. Posture deliberate and economical, standing with weight balanced and shoulders slightly forward. Cyberpunk 2226, Great Lakes Metropolitan Zone, low industrial lighting casting his bioluminescent forearms into subtle relief, quiet contemplative atmosphere, the presence of someone who has stepped outside consumption hierarchies. --ar 2:3 --v 6",
+  "image_prompt": "Solveig Soriano-Ibarra, 178cm tall heavyset man with warm medium-brown complexion showing blended Latin American, Northern European, East Asian, Southeast Asian, and Sub-Saharan African features. Deeply lined weathered face with prominent angular cheekbones, fuller lips, broad nose bridge. Close-cropped white beard, near-black deep-set eyes. Short white close-cropped hair. Subdermal blue-white bioluminescent glow flickering beneath skin of both forearms, brightest at wrists. Pale 8cm scar along left jawline, age spots, industrial scarring. Wears faded gray reinforced technical shirt, heavy dark brown canvas coat patched at elbows, dark charcoal cargo trousers, scuffed military-grade steel-toed boots. Faded red textile cord bracelet on left wrist. Deliberate economical posture, settled presence. GLMZ Great Lakes Metropolitan Zone aesthetic. Standing in industrial shadow lighting, blue-white bioluminescence casting subtle glow on worn fabric. Quiet dignified bearing. Moody, contemplative. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 36.9,
-    "Eastern European": 17.6,
-    "Sub-Saharan African": 15.1,
-    "Southeast Asian": 15.1,
-    "Central Asian": 8.6,
-    "Hispanic/Latin American": 6.7
+    "Hispanic/Latin American": 59.4,
+    "Northern European": 18.5,
+    "East Asian": 9.1,
+    "Sub-Saharan African": 7.4,
+    "Southeast Asian": 5.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 22.9
+      },
+      "Caribbean": {
+        "Dominican": 18.1
+      },
+      "South American": {
+        "Ecuadorian": 4.6,
+        "Colombian": 13.8
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 8.7,
+        "Austrian": 3.8
+      },
+      "Scandinavian": {
+        "Swedish": 5,
+        "Norwegian": 1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 5.2
+      },
+      "Japanese": {
+        "Japanese": 1.5
+      },
+      "Chinese": {
+        "Cantonese": 2,
+        "Shanghainese": 0.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 6.3
+      },
+      "East African": {
+        "Ethiopian": 1.1
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 2.7
+      },
+      "Vietnamese": {
+        "Vietnamese": 1.7
+      },
+      "Thai": {
+        "Thai": 1.2
+      }
+    }
+  }
 }

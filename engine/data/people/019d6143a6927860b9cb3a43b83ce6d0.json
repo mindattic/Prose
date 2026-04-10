@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6927860b9cb3a43b83ce6d0",
   "type": "character",
-  "name": "Orion Johansson-Kowalczyk",
+  "name": "Orion Esquivel-Kowalczyk",
   "aliases": [
     "Veen",
     "Seven"
@@ -13,7 +13,7 @@
   "age": 13,
   "status": "active",
   "location": "Copperhead, near North Ave and Milwaukee",
-  "description": "Parveen is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nParveen lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
+  "description": "Orion Esquivel-Kowalczyk is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nOrion Esquivel-Kowalczyk lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -160,7 +160,7 @@
     "Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,26 +174,15 @@
     "The Quiet Room",
     "The Gradient Compact",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
     "Arcturus KS-7 'Nursery'",
-    "Aurochs Medical Complex",
-    "Brecken Yılmaz-Osei",
-    "Constance",
-    "Nnenna Baluarte-Volkov",
-    "Osvaldo Mensah-Kovalenko",
-    "Oumarou Svec-Ranginui",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Human Baseline Alliance"
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
+    "Compass Rose",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (49%) with significant Southeast Asian (18.2%) and East Asian (11.4%) ancestry, blended with Eastern European (12.6%) and Indigenous American (8.8%) heritage. This creates a complex, warm complexion with diverse facial feature influence.",
+    "heritage": "South Asian (29.5%), Eastern European (25.7%), and Hispanic/Latin American (14.1%) form the primary genetic foundation, with significant Middle Eastern (12.3%) and Sub-Saharan African (12.0%) contributions, rounded by Northern European (6.4%) ancestry. This creates a richly blended phenotype: warm medium-to-deep brown skin with golden undertones across the face and olive accents, high prominent cheekbones displaying the angular structure of Eastern European ancestry softened by South Asian and Middle Eastern bone geometry, almond-shaped eyes with the characteristic lift from South and West Asian heritage, and full lips reflecting both Sub-Saharan African and South Asian ancestry. The overall effect is striking and ethnically ambiguous — a true product of the Ubiquitous Diaspora, with warmth variations across the face suggesting the complex genetic heritage.",
     "height_cm": 148,
     "weight_kg": 38,
     "build": "Compact and quick-limbed, almost bird-like in economy of motion. No visible muscle development yet — still pre-adolescent, but with the wiry efficiency of someone who moves through tight spaces and doesn't waste energy.",
@@ -201,8 +190,8 @@
     "hair_style": "Approximately a dozen small braids, varying lengths, some adorned with cheap thread or beads. Constantly re-braided and fussed with when anxious — a self-soothing tic.",
     "hair_length": "Medium (shoulder-length when fully braided)",
     "eye_color": "Cosmetic pattern irises — honeycomb geometry in amber and copper, shifting with light. Not natural; augmented. Gives the unsettling impression of being examined by something algorithmic.",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting the dominant Sub-Saharan African ancestry with lighter, more olive-toned areas around the eyes and temples from Southeast and East Asian heritage blending.",
-    "complexion": "Youthful, sharp-featured face with prominent high cheekbones and an expressive mouth. The bone structure shows East and Southeast Asian influence in the cheekbone placement and eye shape, balanced with Sub-Saharan African features in lip fullness and facial proportions. Skin is generally clear but shows occasional stress-related breakouts. Always looks slightly sleep-deprived. Features suggest androgynous presentation — fine jaw, large augmented eyes. Subtle warmth variation across the face from the genetic blend.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones, reflecting the blended South Asian, Middle Eastern, and Sub-Saharan African ancestry with cooler olive accents around the eyes and temples from Eastern European heritage contribution.",
+    "complexion": "Youthful, striking face with prominent high cheekbones showing Eastern European angularity blended with South Asian and Middle Eastern softness. Almond-shaped eyes with augmented cosmetic irises. Full lips reflecting Sub-Saharan African and South Asian heritage. Bone structure is fine and somewhat androgynous — delicate jaw, large augmented eyes. Skin is generally clear but shows occasional stress-related breakouts. Always looks slightly sleep-deprived. The genetic blend creates subtle warmth variation across the face.",
     "distinguishing_marks": [
       "Copper-dyed fabric strip knotted tightly around left forearm as Copperhead Red affiliation marker — worn constantly, faded and fraying at edges from obsessive handling.",
       "Small scar on right palm (from an old accident, kept picking at it when nervous until it scabbed over repeatedly).",
@@ -212,16 +201,72 @@
     "posture_movement": "Moves with quick, efficient gestures — no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
     "clothing_style": "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent — depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
   },
-  "image_prompt": "Orion Johansson-Kowalczyk, 2226 cyberpunk, androgynous pre-teen street kid in dystopian Great Lakes Metropolitan Zone. Deep warm brown skin with golden undertones, high sharp cheekbones blending East Asian and Sub-Saharan African features. Black braided hair with copper-dyed sections, adorned with cheap thread, shoulder-length. Eyes replaced with cosmetic honeycomb pattern irises in shifting amber and copper that catch light unnaturally. Compact, bird-like build, 148cm tall, wiry and efficient. Wearing oversized gray hoodie, cargo pants with fraying hems, mismatched socks, cheap knockoff trainers. Copper-dyed fabric strip knotted tight around left forearm (Copperhead Red gang marker). Small scar visible on right palm. Sleep-deprived expression, alert and tracking. Hunched posture suggesting street survival, standing in neon-lit alley with wet pavement reflecting purple and pink holographic advertisements. Gritty, raw cyberpunk aesthetic, moody lighting, atmospheric urban decay. --ar 2:3 --v 6",
+  "image_prompt": "Orion Esquivel-Kowalczyk, 148cm pre-teen with warm medium-deep brown skin, golden undertones, high angular cheekbones blending Eastern European structure with South Asian softness, almond-shaped eyes with augmented honeycomb amber-copper pattern irises that catch light unnaturally, full lips, black hair in small braids with copper-dyed sections adorned with cheap thread and beads. Compact bird-like build, wiry pre-adolescent frame. Wearing oversized gray hoodie, fraying cargo pants with multiple pockets, mismatched socks in knock-off trainers. Copper-dyed fabric affiliation marker knotted around left forearm, worn and fraying. Small scar visible on right palm. Sleep-deprived appearance, alert posture with shoulders slightly hunched. GLMZ GLMZ setting, urban decay background, neon accent lighting catching the unsettling geometric patterns of augmented irises, gritty street-level perspective, moody atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.0,
-    "Southeast Asian": 18.2,
-    "Eastern European": 12.6,
-    "East Asian": 11.4,
-    "Indigenous American": 8.8
+    "South Asian": 29.5,
+    "Eastern European": 25.7,
+    "Hispanic/Latin American": 14.1,
+    "Middle Eastern": 12.3,
+    "Sub-Saharan African": 12,
+    "Northern European": 6.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 29.5
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 7.5,
+        "Sorbian": 5
+      },
+      "Slavic East": {
+        "Ukrainian": 13.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 11.5
+      },
+      "Central American": {
+        "Honduran": 2,
+        "Guatemalan": 0.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 0.9,
+        "Afghan Dari": 5.6
+      },
+      "Arab Gulf": {
+        "Yemeni": 3.8
+      },
+      "Kurdish": {
+        "Kurdish": 2
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.3,
+        "Senegalese": 4.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Swiss German": 3.4
+      },
+      "British Isles": {
+        "Scottish": 0.7,
+        "English": 0.1
+      },
+      "Scandinavian": {
+        "Swedish": 2.2
+      }
+    }
+  }
 }

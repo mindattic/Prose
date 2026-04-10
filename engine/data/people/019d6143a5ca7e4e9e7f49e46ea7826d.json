@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ca7e4e9e7f49e46ea7826d",
   "type": "character",
-  "name": "Haze Wickramasinghe",
+  "name": "Chinwe Phommachanh",
   "aliases": [
     "Brecht",
     "The Big Quiet"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Lockhaven South, Stack Eleven — he lives in the sub-basement maintenance unit, near Milwaukee and North Ave",
-  "description": "Brecht is enormous — six-foot-four with the kind of bulk that comes from two decades of hauling pipes and climbing maintenance shafts, not from any gym program. His skin is deep brown with a reddish undertone, and his face carries a network of small scars from a gas line incident in his thirties that he never had properly treated. He keeps his head shaved and his beard trimmed with almost military precision, the one vanity he allows himself. His eyes are a startling pale grey-green, a recessive gift from his Finnish grandmother that people find unsettling until they realize how rarely he blinks in a crisis.\n\nStack Eleven houses 340 units of mixed Tier 1-2 residents and Brecht runs it with the quiet authority of someone who has fixed every pipe, knows every squeaky panel, and has personally carried two elderly tenants out during a partial floor collapse three years ago. He is not beloved in the way that warm people are beloved — he's respected in the way that a load-bearing wall is respected. He has no patience for bureaucracy and extraordinary patience for people. He maintains a small shrine to the E.L.F. he calls Boiler-Father in the sub-basement furnace room, and believes deeply that the building's mechanical systems have a will of their own that rewards or punishes based on how people treat them.",
+  "description": "Chinwe Phommachanh is enormous — six-foot-four with the kind of bulk that comes from two decades of hauling pipes and climbing maintenance shafts, not from any gym program. His skin is deep brown with a reddish undertone, and his face carries a network of small scars from a gas line incident in his thirties that he never had properly treated. He keeps his head shaved and his beard trimmed with almost military precision, the one vanity he allows himself. His eyes are a startling pale grey-green, a recessive gift from his Finnish grandmother that people find unsettling until they realize how rarely he blinks in a crisis.\n\nStack Eleven houses 340 units of mixed Tier 1-2 residents and Chinwe Phommachanh runs it with the quiet authority of someone who has fixed every pipe, knows every squeaky panel, and has personally carried two elderly tenants out during a partial floor collapse three years ago. He is not beloved in the way that warm people are beloved — he's respected in the way that a load-bearing wall is respected. He has no patience for bureaucracy and extraordinary patience for people. He maintains a small shrine to the E.L.F. he calls Boiler-Father in the sub-basement furnace room, and believes deeply that the building's mechanical systems have a will of their own that rewards or punishes based on how people treat them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lockhaven South",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,43 +204,27 @@
     "The Furnace",
     "Grandmother",
     "Palladian Construction",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "Crucible Industries Furnace CF-15 'Meltdown'",
+    "The Boilermaker",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Tibor Osei-Svanstrom",
+    "Frost Boudiaf",
+    "Compass Rose",
     "The Pale Mile",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Dragan Asiedu-Kovalchuk",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Obinna Czekalski-Fonoti",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Burden Clause",
-    "The Ledger",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly South Asian with significant East Asian and Pacific Islander ancestry, complemented by Southeast Asian, Northern European, and Sub-Saharan African heritage. The genetic blend manifests in warm-toned deep brown skin with subtle olive undertones, angular facial structure showing both South Asian and East Asian characteristics, and distinctive pale grey-green eyes that suggest Northern European recessive traits emerging through the mixed ancestry.",
+    "heritage": "Southeast Asian-dominant genetic heritage (46.1%) interwoven with significant Sub-Saharan African (20.4%), South Asian (15.4%), East Asian (11.2%), and Eastern European (6.9%) ancestry. This rare Diaspora combination manifests as a striking phenotypic blend: deep warm brown skin with subtle olive undertones from the Southeast and South Asian genetic contributions, angular facial structure reflecting East and South Asian bone architecture, and pale grey-green eyes—a recessive Eastern European trait emerging through the genetic mosaic. The overall effect is distinctly non-monolithic, a living example of 22nd-century ancestry complexity where heritage flows visibly through multiple continental lineages simultaneously.",
     "height_cm": 193,
     "weight_kg": 118,
     "build": "Massive and solid without excess fat — the build of someone who has spent two decades moving through tight spaces and hauling load. Broad shoulders, thick forearms, hands scarred and calloused from decades of manual work. Carries himself with the economy of movement of someone who knows the weight and space of their own body.",
     "hair_color": "Black with silver threading at temples",
     "hair_style": "Shaved skull, maintained with military precision every third day",
     "hair_length": "Shaved",
-    "eye_color": "Pale grey-green — striking and unusual against his dark skin, rarely blinking",
-    "skin_tone": "Deep warm brown with subtle olive undertones, the complexion of someone who works in heat and humidity. The warmth reflects the South Asian and Pacific Islander heritage dominant in his genetic makeup.",
-    "complexion": "Face mapped with a fine network of thin white scars radiating across left cheek and jawline from old thermal burn damage — never fully healed cosmetically, only functionally. The scars form an almost accidental pattern, like frost on glass. Strong angular jawline and cheekbones reflecting South and East Asian structure. Trimmed beard kept short, dark with silver. Deep-set eyes that seem to assess constantly. Lines around the eyes and mouth from forty-four years of serious expression.",
+    "eye_color": "Pale grey-green — striking and unusual against his deep brown skin, rarely blinking",
+    "skin_tone": "Deep warm brown with subtle olive undertones, the complexion of someone who works in heat and humidity. Rich melanin density reflecting Southeast and Sub-Saharan ancestry, with underlying warmth from South Asian genetics.",
+    "complexion": "Face mapped with a fine network of thin white scars radiating across left cheek and jawline from old thermal burn damage — never fully healed cosmetically, only functionally. The scars form an almost accidental pattern, like frost on glass. Strong angular jawline and high cheekbones reflecting Southeast and East Asian bone structure combined with subtle width through the lower face from African and South Asian heritage. Trimmed beard kept short, dark with silver. Deep-set eyes that seem to assess constantly. Lines around the eyes and mouth from forty-four years of serious expression.",
     "distinguishing_marks": [
       "Network of fine white scars across left cheek and jawline in organic branching pattern, result of thermal gas line incident approximately fifteen years prior",
       "Calloused ridge scarring across both palms and inner fingers from decades of pipe handling and wrench work",
@@ -250,17 +234,60 @@
     "posture_movement": "Moves with deliberate efficiency — no wasted motion. Stands with shoulders slightly forward from decades of working in confined spaces. Walks with a subtle favoring of hip flexors due to spinal brace. Rarely gestures while speaking. Hands at rest are often slightly curved, as if holding something. In crisis, becomes perfectly still and methodical.",
     "clothing_style": "Tier 3-4 working class, practical and worn. Grey and navy synthetic maintenance coveralls with Palladian Property Holdings patch (which he wears with visible resentment). Under them, plain cotton t-shirts, usually grey or black. Thick-soled work boots, always clean but heavily scuffed. A single piece of jewelry: a worn brass ring on his left middle finger, no inscription visible. In off-hours, he wears the same coveralls or black cargo pants and faded sweaters. No decoration, no chrome, no fashion. Everything chosen for durability and function."
   },
-  "image_prompt": "Haze Wickramasinghe, 193cm tall industrial maintenance worker in cyberpunk 2226, deep warm brown skin with olive undertones, shaved head with silver at temples, pale grey-green eyes that rarely blink, angular South and East Asian facial structure marked by fine white branching scars across left cheek and jawline from thermal burn. Worn grey and navy synthetic coveralls over black t-shirt, heavy scuffed work boots, brass ring on left middle finger. Massive solid build with broad shoulders and calloused hands, standing with deliberate efficiency and slight forward shoulder lean from confined space work. Deep-set eyes constantly assessing. Subtle geometric bulge visible along spine through fitted shirt. Industrial maintenance bay setting with harsh neon and fluorescent lighting casting shadows across thermal-scarred features, cool blues and ambers, cyberpunk gritty atmosphere, unflinching serious expression --ar 2:3 --v 6",
+  "image_prompt": "Chinwe Phommachanh, 193cm tall imposing figure, deep warm brown skin with olive undertones, shaved head revealing silver temples, pale grey-green eyes striking against dark complexion, sharp angular East and Southeast Asian bone structure combined with broad Sub-Saharan features, strong jawline mapped with delicate white thermal burn scars on left cheek in branching frost-like pattern, trimmed dark beard with silver threading, calloused working hands, wearing grey and navy Palladian Property Holdings maintenance coveralls over faded grey t-shirt, heavy scuffed work boots, worn brass ring on left middle finger, subtle spinal brace rigidity in posture, 2226 neo-noir Great Lakes Metropolitan Zone, industrial maintenance worker aesthetic, moody overhead warehouse lighting casting shadows across scarred face, concentrated methodical expression, economy of movement, photorealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.1,
-    "East Asian": 22.9,
-    "Pacific Islander": 16.9,
-    "Northern European": 8.9,
-    "Sub-Saharan African": 7.0,
-    "Southeast Asian": 6.2
+    "Southeast Asian": 46.1,
+    "Sub-Saharan African": 20.4,
+    "South Asian": 15.4,
+    "East Asian": 11.2,
+    "Eastern European": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 17.2
+      },
+      "Laotian": {
+        "Laotian": 28.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 7.4
+      },
+      "West African": {
+        "Malian": 8.3,
+        "Senegalese": 2.5
+      },
+      "East African": {
+        "Somali": 2.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.3
+      },
+      "Pakistani": {
+        "Baloch": 2.7,
+        "Punjabi Pakistani": 6.2
+      },
+      "Nepali": {
+        "Nepali": 1.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 11.2
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 6.9
+      }
+    }
+  }
 }

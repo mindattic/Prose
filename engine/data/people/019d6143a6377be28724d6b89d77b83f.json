@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6377be28724d6b89d77b83f",
   "type": "character",
-  "name": "Chinwe Larsdóttir-Okafor",
+  "name": "Chinwe Popescu-Okafor",
   "aliases": [
     "Isa",
     "The Seamstress",
@@ -14,7 +14,7 @@
   "age": 41,
   "status": "active",
   "location": "The Shelf, near Halsted and Division",
-  "description": "Isadora Vukić-Nambiar operates out of a converted laundry unit in the lower warrens of The Shelf, where the smell of industrial solvent and antiseptic has long since soaked into the walls. She is a compact woman of Croatian-South Indian descent, with close-cropped silver hair that came in early and which she has never bothered to correct, and hands that move with the practiced economy of someone who has spent twenty years doing delicate work in poor light. Her face carries the particular stillness of a person who has learned to read rooms faster than rooms read her — broad cheekbones, dark eyes that tend to linger a beat too long, a scar along her left jaw she describes as a 'client disagreement' without elaboration.\n\nShe was once a licensed reconstructive surgeon working out of a mid-tier clinic in The Circuit, specializing in trauma repair for workers injured in the manufacturing corridors. Her license was revoked twelve years ago following an investigation she maintains was fabricated by a corporate medical supplier whose overpriced components she had publicly refused to use. Whether or not that account is entirely accurate, she has since built a second career below the licensing threshold — patching up people the official system has no interest in treating, installing augmentations that haven't cleared regulatory review, and occasionally doing work that blurs into the aesthetic and the transgressive. Her client list runs from Shelf scrappers who need a cracked bone set to mid-tier fixers wanting off-the-books neural work.\n\nIsadora does not advertise sentiment about her work, but the regulars know that her rates scale sharply with the client's apparent wealth, and that she has been known to work for nothing when she judges the need sufficient. She keeps a small dog of indeterminate breed named Suture, drinks instant coffee with the resignation of someone who remembers better, and sleeps four hours a night by choice rather than necessity.",
+  "description": "Chinwe Popescu-Okafor operates out of a converted laundry unit in the lower warrens of The Shelf, where the smell of industrial solvent and antiseptic has long since soaked into the walls. She is a compact woman of Croatian-South Indian descent, with close-cropped silver hair that came in early and which she has never bothered to correct, and hands that move with the practiced economy of someone who has spent twenty years doing delicate work in poor light. Her face carries the particular stillness of a person who has learned to read rooms faster than rooms read her — broad cheekbones, dark eyes that tend to linger a beat too long, a scar along her left jaw she describes as a 'client disagreement' without elaboration.\n\nShe was once a licensed reconstructive surgeon working out of a mid-tier clinic in The Circuit, specializing in trauma repair for workers injured in the manufacturing corridors. Her license was revoked twelve years ago following an investigation she maintains was fabricated by a corporate medical supplier whose overpriced components she had publicly refused to use. Whether or not that account is entirely accurate, she has since built a second career below the licensing threshold — patching up people the official system has no interest in treating, installing augmentations that haven't cleared regulatory review, and occasionally doing work that blurs into the aesthetic and the transgressive. Her client list runs from Shelf scrappers who need a cracked bone set to mid-tier fixers wanting off-the-books neural work.\n\nIsadora does not advertise sentiment about her work, but the regulars know that her rates scale sharply with the client's apparent wealth, and that she has been known to work for nothing when she judges the need sufficient. She keeps a small dog of indeterminate breed named Suture, drinks instant coffee with the resignation of someone who remembers better, and sleeps four hours a night by choice rather than necessity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -230,7 +230,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,33 +244,21 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
+    "The Scrap Barons",
     "The Shelf",
     "Threshold",
-    "The Scrap Barons",
     "The Spire",
     "The Gradient Compact",
-    "The Suture Collective",
+    "Circuit",
     "Silver",
+    "Neural Palate",
+    "The Suture Collective",
     "The Pure Hand",
-    "Tibor Osei-Svanstrom",
-    "Alper Lebedev-Tutu",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dragan Petersen-Bah",
-    "GLMZ",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Ngaire Kuznetsov-Adu",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Pavlína Abubakar-Temarii",
-    "Street Custom 'Cigarette' Pen Gun",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Frost Boudiaf"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multi-continental mosaic: Sub-Saharan African (25.3%), Southeast Asian (20.8%), Northern European (18.6%), Hispanic/Latin American (17.9%), Middle Eastern (13.4%), Eastern European (4.0%). The genetic blend manifests as warm medium-deep brown skin with complex undertones—golden-amber from Southeast Asian ancestry, subtle warm reddish notes from Middle Eastern heritage, and cool undertones from Northern European genetics. High cheekbones with gentle projection from African and Southeast Asian features, balanced by finer bone structure influenced by Northern European ancestry.",
+    "heritage": "Multi-continental synthesis: Sub-Saharan African (32.7%), Eastern European (18.8%), East Asian (17.4%), Southeast Asian (14.6%), Hispanic/Latin American (11.7%), South Asian (4.8%). The genetic blend manifests as warm medium-deep brown skin with complex layered undertones—golden-amber from East and Southeast Asian ancestry, subtle warm olive notes from Eastern European heritage, and earthy richness from Sub-Saharan African genetics with hints of Latin American warmth. High cheekbones with confident projection from African and East Asian features, balanced by finer bone structure influenced by Eastern European ancestry and Southeast Asian refinement.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and wiry, with the low body-fat composition of someone who moves efficiently through confined spaces and stands for long hours. Defined forearms and hands disproportionately strong relative to frame — surgeon's hands.",
@@ -278,8 +266,8 @@
     "hair_style": "Close-cropped, precise fade maintained with clinical care",
     "hair_length": "Short",
     "eye_color": "Dark brown, left eye displays faint luminescent grid pattern during low-light conditions (optical overlay active)",
-    "skin_tone": "Warm medium-deep brown with golden-amber and subtle reddish undertones, weathered by decades of solvent exposure and harsh clinic lighting",
-    "complexion": "High prominent cheekbones with gentle projection, gaunt facial structure refined by mixed ancestry. Minimal makeup, perpetually tired eyes with the focused intensity of someone reading vital signs in human tissue. Fine lines around mouth from years of concentration. Skin texture shows chemical scarring on knuckles and fingertips from industrial-grade disinfectants. Facial features show the blended geometry of African, Southeast Asian, and Mediterranean ancestry—angular yet soft, with natural depth.",
+    "skin_tone": "Warm medium-deep brown with golden-amber and subtle olive undertones, weathered by decades of solvent exposure and harsh clinic lighting",
+    "complexion": "High prominent cheekbones with confident projection, gaunt facial structure reflecting the harmonized geometry of Sub-Saharan African, East Asian, Southeast Asian, and Eastern European ancestry—angular yet soft, with natural depth and warm undertones. Minimal makeup, perpetually tired eyes with the focused intensity of someone reading vital signs in human tissue. Fine lines around mouth from years of concentration. Skin texture shows chemical scarring on knuckles and fingertips from industrial-grade disinfectants. Facial proportions showcase the blended features of her diverse genetic heritage.",
     "distinguishing_marks": [
       "Ragged scar along left jawline from angle to earlobe, tissue slightly raised and discolored — described as 'client disagreement,' timing suggests 8-10 years old",
       "Faint surgical scars on both wrists (dorsal aspect) from early-career licensed work, barely visible unless she extends her hands",
@@ -289,17 +277,82 @@
     "posture_movement": "Stands with weight distributed forward on the balls of her feet, ready to pivot. Moves with surgical precision even in casual motion — no wasted gestures. Hands rest in neutral positions unless in conversation, where they become expressive but controlled. When focused, she enters a state of absolute stillness. Eye contact lasts fractionally too long, reading rather than connecting. Walks with the deliberate pace of someone who has learned that haste in The Shelf draws attention.",
     "clothing_style": "Tier 5 functionality with minimal aesthetic concern. Default outfit: charcoal scrub-pants with deep pockets for tools, loose-fitting grey thermal shirt under a long black medtech coat (frayed cuffs, faded from solvent exposure). Rubber-soled surgical clogs scuffed and re-soled twice. A thin steel chain around her neck with a small surgical key fob — either functional or talisman, unclear. No jewelry. Coat pockets contain gauze, injectable ampules, calibration tools, and a hand-rolled cigarette she never smokes but carries as a prop for thinking. Fabrics are all utilitarian — nothing corpo, nothing aspirational."
   },
-  "image_prompt": "Chinwe Larsdóttir-Okafor, 158cm, compact wiry frame, warm medium-deep brown skin with golden-amber and subtle reddish undertones, high prominent cheekbones, gaunt features. Short silver-grey close-cropped fade. Dark brown eyes with faint luminescent grid overlay in left eye. Ragged scar along left jawline. Surgical scars on wrists. Medical caduceus tattoo on inner forearm overlapped by luminescent blue blood-chemistry monitor. Subtle translucent fingertips with haptic sensor seams. Wearing charcoal scrub-pants, grey thermal shirt, long black medtech coat with frayed cuffs and solvent damage, scuffed surgical clogs. Steel chain with surgical key fob around neck. Standing in precise forward stance, hands in neutral position, absolute stillness and surgical focus. Cyberpunk 2226 Great Lakes Metropolitan Zone clinic setting, cool blue-white harsh lighting casting sharp shadows, moody atmospheric tension, clinical yet worn environment, underground medtech aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Chinwe Popescu-Okafor, 158cm compact frame, silver-grey close-cropped hair, warm medium-deep brown skin with golden-amber and olive undertones. High prominent cheekbones, angular yet soft facial structure reflecting Sub-Saharan African, East Asian, Southeast Asian, and Eastern European heritage blend. Dark brown eyes with faint luminescent grid overlay in left eye. Chemical-scarred knuckles, ragged scar along left jawline. Faded medical caduceus tattoo on inner left forearm with subtle blue bioluminescent blood-chemistry monitor beneath. Translucent fingertips with haptic sensor seams. Wearing black medtech coat with frayed cuffs over grey thermal shirt, charcoal scrub-pants, scuffed surgical clogs. Steel chain necklace with surgical key fob. Posture forward on balls of feet, absolute stillness, hands in controlled neutral position. GLMZ, underground clinic setting, harsh fluorescent and bioluminescent lighting, exhausted focused intensity, reading vital signs in human tissue, The Shelf atmosphere, industrial and utilitarian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 25.3,
-    "Southeast Asian": 20.8,
-    "Northern European": 18.6,
-    "Hispanic/Latin American": 17.9,
-    "Middle Eastern": 13.4,
-    "Eastern European": 4.0
+    "Sub-Saharan African": 32.7,
+    "Eastern European": 18.8,
+    "East Asian": 17.4,
+    "Southeast Asian": 14.6,
+    "Hispanic/Latin American": 11.7,
+    "South Asian": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 3
+      },
+      "Central African": {
+        "Congolese": 1.6,
+        "Gabonese": 6.3
+      },
+      "Southern African": {
+        "South African": 21.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 3.7,
+        "Slovenian": 15.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 12.7
+      },
+      "Chinese": {
+        "Mandarin Northern": 0.9,
+        "Sichuanese": 3.8
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 2.8
+      },
+      "Thai": {
+        "Thai": 8.6
+      },
+      "Indonesian": {
+        "Sundanese": 1.9,
+        "Javanese": 1.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.9
+      },
+      "South American": {
+        "Colombian": 0.1,
+        "Venezuelan": 1.8
+      },
+      "Mexican": {
+        "Mexican": 3.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 0.4,
+        "Baloch": 0.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 2.3
+      },
+      "Nepali": {
+        "Nepali": 1.9
+      }
+    }
+  }
 }

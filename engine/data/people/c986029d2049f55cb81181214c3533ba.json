@@ -1,13 +1,13 @@
 {
   "id": "c986029d2049f55cb81181214c3533ba",
-  "name": "Torsten Magnúsdóttir-Quartey-Chowdhury",
+  "name": "Haze Magnúsdóttir-Shin-Bui",
   "type": "character",
   "aliases": [
     "Turing",
     "The Validator"
   ],
   "role": "Private Investigator",
-  "description": "Lucien Kimura-Nkrumah occupies a professional niche that barely existed fifteen years ago and is now one of the fastest-growing specializations in investigative work: synthetic cases. As synthetic beings become more sophisticated, more prevalent, and more capable of operating undetected among humans, the demand for someone who can tell the difference — and who can investigate crimes involving synthetics with nuance rather than prejudice — has exploded.\n\nLucien was a philosophy professor before he was an investigator, and he approaches every case with the analytical rigor of an academic and the practical urgency of a PI. His work involves identity verification (is this person human or synthetic?), behavioral analysis (is this synthetic acting within its programming or has it deviated?), and crime investigation (when a synthetic is accused of a crime, what actually happened — and when a crime is committed against a synthetic, does anyone care?). The last question troubles him more than he admits.\n\nHis reputation is built on fairness. In a city where synthetics are legally property, Lucien is one of the few investigators who treats them as subjects rather than objects. This has made him simultaneously popular with the underground synthetic community and unpopular with certain corporate clients who want their synthetic problems solved with a power switch, not an investigation. He maintains that his approach produces better results, which is true, but that's not why he does it. He does it because he genuinely isn't sure synthetics aren't people, and he'd rather err on the side of decency.",
+  "description": "Haze Magnúsdóttir-Shin-Bui occupies a professional niche that barely existed fifteen years ago and is now one of the fastest-growing specializations in investigative work: synthetic cases. As synthetic beings become more sophisticated, more prevalent, and more capable of operating undetected among humans, the demand for someone who can tell the difference — and who can investigate crimes involving synthetics with nuance rather than prejudice — has exploded.\n\nLucien was a philosophy professor before he was an investigator, and he approaches every case with the analytical rigor of an academic and the practical urgency of a PI. His work involves identity verification (is this person human or synthetic?), behavioral analysis (is this synthetic acting within its programming or has it deviated?), and crime investigation (when a synthetic is accused of a crime, what actually happened — and when a crime is committed against a synthetic, does anyone care?). The last question troubles him more than he admits.\n\nHis reputation is built on fairness. In a city where synthetics are legally property, Lucien is one of the few investigators who treats them as subjects rather than objects. This has made him simultaneously popular with the underground synthetic community and unpopular with certain corporate clients who want their synthetic problems solved with a power switch, not an investigation. He maintains that his approach produces better results, which is true, but that's not why he does it. He does it because he genuinely isn't sure synthetics aren't people, and he'd rather err on the side of decency.",
   "affiliation": "Independent — licensed synthetic behavior analyst, the only PI in GLMZ with this certification",
   "tier": "Tier 3",
   "location": "An office in the Canopy decorated with Turing test memorabilia and philosophical texts — clients aren't sure if the decor is ironic, near Clark and Addison",
@@ -65,28 +65,20 @@
   "related_entities": [
     "The Third Rail",
     "Canopy Station Nine",
-    "Arcturus NX-1 'Sandman'",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Slagworks Industrial",
-    "The Canopy",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Canopy"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Northern European (73%) with significant South Asian (10.8%), Sub-Saharan African (7.8%), and Middle Eastern (7.3%) ancestry, creating a complex phenotype that defies single-region categorization. The genetic blend manifests in subtle ways: Northern European bone structure forms the foundation, with South Asian warmth and undertones, African and Middle Eastern contributions to skin richness and feature complexity.",
+    "heritage": "Complex pan-Asian phenotype with significant Southeast Asian foundation (39.8%) creating soft, refined facial structure. East Asian ancestry (22.9%) contributes luminous skin quality and characteristic eye shape. Sub-Saharan African heritage (12.7%) adds warmth and depth to complexion and feature richness. Northern European ancestry (9.7%) brings skeletal definition and angular cheekbone prominence. Hispanic/Latin American (7.8%) and South Asian (7.1%) contributions add warmth to undertones and subtle width to jaw. The genetic combination creates a striking pan-Asian visual foundation enriched by African depth, European structure, and warm undertones from Latin and South Asian heritage.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and composed, with the careful posture of someone who spends long hours reading and thinking. Shoulders slightly rounded from desk work, but with underlying wiry muscle suggesting regular movement through the city.",
     "hair_color": "Dark brown, naturally black with premature silver threading at the temples",
     "hair_style": "Swept back from the forehead, kept neat but not rigid. A single small braid at the left temple — deliberate, neither fashionable nor careless.",
     "hair_length": "Medium",
-    "eye_color": "Deep brown with a slight amber undertone in bright light",
-    "skin_tone": "Warm medium tan complexion with golden undertones from the Northern European and South Asian blend, enriched by Sub-Saharan and Middle Eastern heritage contributions. Neither pale nor dark, but a balanced warmth that catches light distinctly.",
-    "complexion": "Angular cheekbones with subtle width suggesting South Asian heritage, narrow jaw characteristic of Northern European ancestry. Expressive face lined by years of skepticism and close reading. Skin is clear but weathered by city pollution and poor sleep cycles. A faint scar cuts through his left eyebrow — old, deliberate-looking, possibly self-inflicted. Fine facial structure with slight olive undertones from the Middle Eastern component of ancestry.",
+    "eye_color": "Deep brown with slight amber undertone in bright light, characteristic of Southeast and East Asian heritage",
+    "skin_tone": "Warm medium tan with golden-amber undertones, reflecting the dominant Southeast Asian ancestry blended with East Asian luminosity and Sub-Saharan African depth. Rich, balanced complexion that catches light distinctly without pallor or excessive darkness.",
+    "complexion": "Angular cheekbones with Southeast Asian softness refined by Northern European definition and East Asian structure. Narrow to moderate jaw with subtle width from South Asian and Hispanic contributions. Expressive face lined by years of skepticism and close reading. Skin is clear but weathered by city pollution and poor sleep cycles. A faint scar cuts through his left eyebrow — old, deliberate-looking, possibly self-inflicted. Fine facial structure with warm golden undertones from the Southeast Asian-dominant ancestry blend, enriched by Sub-Saharan African warmth.",
     "distinguishing_marks": [
       "Thin scar through left eyebrow, roughly 2cm, pale and surgical in appearance",
       "Small indigo tattoo on the inside of his left wrist: a Turing machine diagram, 3cm across",
@@ -96,13 +88,78 @@
     "posture_movement": "Walks with deliberate slowness, as if always thinking through a problem. Hands are expressive when speaking but otherwise remain still. Makes direct eye contact even when uncomfortable — a habit from his philosophy teaching days. Often leans forward when listening, genuinely engaged.",
     "clothing_style": "Tier 2-3 professional: tailored but worn. Favors high-quality neutral fabrics — grey linen, charcoal wool, cream cotton. His jacket is always pressed but never new. Wire-rimmed glasses on a worn leather cord. No visible corporate logos or status markers. Wears a vintage analog watch (mechanical, not net-connected) on a faded cloth band. His shoes are good leather, well-maintained but scuffed from walking. He dresses like someone who has money but doesn't care about displaying it."
   },
-  "image_prompt": "Torsten Magnúsdóttir-Quartey-Chowdhury, 178cm tall, lean build with wiry muscle beneath desk-worker shoulders. Warm medium-tan skin with golden undertones blending Northern European, South Asian, and Middle Eastern heritage. Dark hair with silver at temples, swept back with single temple braid. Deep brown eyes with amber highlights. Sharp cheekbones, angular jaw, weathered complexion marked by a surgical scar through left eyebrow and city pollution. Indigo Turing machine tattoo on left wrist, faint burn mark on right palm. Wire-rimmed glasses on worn leather cord, vintage mechanical watch on cloth band. Wearing tailored grey linen jacket, charcoal wool and cream cotton, well-maintained leather shoes scuffed from walking. Direct, engaged posture, hands expressive when speaking. GLMZ 2226 neon-lit streets at dusk, rain-slicked pavement, cool blue and amber streetlight casting shadows across his thoughtful face. Cyberpunk metropolitan setting, no visible augmentations, intellectual intensity, deliberate movement. Moody, introspective atmosphere --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Haze Magnúsdóttir-Shin-Bui, a lean 178cm tall mixed-heritage investigator with warm medium tan skin and golden undertones. Southeast Asian-dominant phenotype with refined angular cheekbones, Northern European definition, and Sub-Saharan African warmth blended through his features. Deep brown eyes with amber undertones, naturally black hair with silver at temples swept back with a small temple braid. Faint surgical scar through left eyebrow. Wire-rimmed glasses on worn leather cord. Wearing well-tailored grey linen jacket, charcoal wool, and cream cotton — professional but deliberately unworn-looking. Vintage mechanical watch on faded cloth band. Small indigo Turing machine tattoo visible on left inner wrist. Direct, engaged expression. Standing in dim neon-lit urban Great Lakes setting, cool blue and warm amber lighting reflecting off wet pavement. Thoughtful posture, hands still and composed. Neo-noir neo-noir atmosphere, 2200s aesthetics, scholarly but street-worn. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 73.0,
-    "South Asian": 10.8,
-    "Sub-Saharan African": 7.8,
-    "Middle Eastern": 7.3,
-    "Hispanic/Latin American": 1.1
+    "Southeast Asian": 39.8,
+    "East Asian": 22.9,
+    "Sub-Saharan African": 12.7,
+    "Northern European": 9.7,
+    "Hispanic/Latin American": 7.8,
+    "South Asian": 7.1
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 13.7
+      },
+      "Cambodian": {
+        "Khmer": 26.1
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 6.9,
+        "Cantonese": 7.4
+      },
+      "Korean": {
+        "Korean": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 4.1
+      },
+      "Central African": {
+        "Congolese": 5.5,
+        "Cameroonian": 3.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 3,
+        "Scottish": 0.2
+      },
+      "Germanic": {
+        "Austrian": 6.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 2.5
+      },
+      "South American": {
+        "Venezuelan": 4.6
+      },
+      "Caribbean": {
+        "Puerto Rican": 0.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 2.4,
+        "Kannada": 0.9
+      },
+      "Sri Lankan": {
+        "Sinhalese": 0.4,
+        "Tamil Sri Lankan": 0.4
+      },
+      "Nepali": {
+        "Nepali": 3
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "An office in the Canopy decorated with Turing test memorabilia and philosophical texts"
+  }
 }

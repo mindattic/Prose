@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a67af2ab023458bed7bfb0",
   "type": "character",
-  "name": "Sable Thorvaldsdóttir",
+  "name": "Aurelio Hernández",
   "aliases": [
     "Professor Rad",
     "the Doomsman"
@@ -13,7 +13,7 @@
   "age": 66,
   "status": "active",
   "location": "Edgewater Prism, Meridian Atmospheric Research Station (MARS), near Clark and Addison",
-  "description": "Radovan is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nRadovan's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that GLMZ's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
+  "description": "Aurelio Hernández is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nAurelio Hernández's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that GLMZ's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -193,7 +193,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -256,34 +256,14 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "GLMZ",
     "Arcturus Defense Solutions",
     "Nesting Doll",
-    "Weathervane",
-    "Alper Holmberg-Dembele",
-    "Arcturus Exo-Runner Frame",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Chronicle",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Filament",
-    "The Meridian Fold",
-    "The Pure Hand",
-    "The Question",
-    "Toivo Diallo-Achebe",
-    "University Spine",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ",
+    "Weathervane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Multiethnic blend: 38.4% East Asian (visible in eye shape, cheekbone prominence, hair texture), 32% Sub-Saharan African (contributing to skin depth and facial structure), 19.5% Eastern European (evident in jaw structure and build), 10.1% Hispanic/Latin American. The result is a complexion with warm, deep undertones and facial geometry that defies simple categorization.",
+    "heritage": "Multiethnic blend: 48.3% Hispanic/Latin American (warmth in skin tone and facial structure), 35.5% Southeast Asian (visible in eye shape, cheekbone prominence, hair texture), 16.2% Sub-Saharan African (contributing to skin depth and facial geometry). The result is a complexion with warm, deep undertones and facial geometry that harmoniously blends all three ancestral lines.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and heavyset with the solid, weathered musculature of someone who has spent four decades doing field work in harsh conditions. Chest and shoulders still strong; slight thickening at the middle typical of his age. Lower back shows subtle reinforcement—a faint geometric pattern of support framework visible under the skin at the lumbar region.",
@@ -291,8 +271,8 @@
     "hair_style": "Close-cropped, practical, minimal grooming beyond functionality",
     "hair_length": "Short",
     "eye_color": "Deep brown with amber undertones",
-    "skin_tone": "Rich warm brown with underlying golden undertones, darkened by decades of UV and wind exposure. Blends the depth of Sub-Saharan heritage with the warm cast of East Asian and Hispanic ancestry, creating a complexion that reads as sun-weathered earth.",
-    "complexion": "Deeply weathered face with pronounced lines radiating from the eyes and mouth. Facial structure reflects East Asian prominence in cheekbone height and eye placement, combined with Sub-Saharan width through the face and African-descended jaw geometry softened by Eastern European and Hispanic features. Short grey beard, meticulously trimmed. Skin has a leathery quality from sun damage; several patches of older scar tissue visible on the right temple and cheekbone. Expression is habitually stern and exhausted.",
+    "skin_tone": "Rich warm brown with golden-reddish undertones, darkened by decades of UV and wind exposure. Blends the depth of Sub-Saharan heritage with the warm cast of Southeast Asian and Hispanic ancestry, creating a complexion that reads as sun-weathered earth.",
+    "complexion": "Deeply weathered face with pronounced lines radiating from the eyes and mouth. Facial structure reflects Southeast Asian prominence in cheekbone height and eye placement, combined with Sub-Saharan width through the face and broad jaw geometry softened by Hispanic features. Short grey beard, meticulously trimmed. Skin has a leathery quality from sun damage; several patches of older scar tissue visible on the right temple and cheekbone. Expression is habitually stern and exhausted.",
     "distinguishing_marks": [
       "Network of fine wrinkles across forehead and temples, arranged in patterns that suggest constant squinting into harsh light.",
       "Thin white scar running 3cm along right cheekbone, faded but visible in certain angles—appears to be from field equipment strike, decades old.",
@@ -303,15 +283,35 @@
     "posture_movement": "Carries himself with the careful deliberation of someone managing chronic low-back strain, weight distributed through his hips and legs rather than his spine. Moves slowly and purposefully rather than quickly. Slight favor of the left leg. His head often tilts slightly when concentrating, as though the whisker array is actively sensing. Hands are large and weathered with calloused fingertips; moves them precisely when making technical points. Sits in a particular forward-leaning posture that relieves back pressure.",
     "clothing_style": "Virtually always in field layers—technical base layer under a heavyweight softshell jacket in faded grey or tan, patched multiple times with careful stitching. The jacket is a Patagonia model from at least a decade ago, scuffed and stained but well-maintained. Underneath: cargo pants in durable synthetic weave, pockets stuffed with field instruments and data capture tools. Heavy field boots, worn but clean. Minimal accessories aside from a rugged wrist-mounted instrument cluster (appears to be connected to the whisker array). Even in his office at MARS, he maintains this uniform. No corpo styling—his tier is academic, not corporate, which places him in a strange position: expensive and cutting-edge enough to be credible, worn and practical enough to signal that he actually works."
   },
-  "image_prompt": "Sable Thorvaldsdóttir, weathered 60-year-old multiethnic field scientist with rich warm brown skin and deep amber-brown eyes, steel grey close-cropped hair and trimmed beard. East Asian cheekbone prominence, Sub-Saharan facial width, distinctive features blended across ancestry. Retractable sensory whisker augmentations barely visible at temples with faint metallic connection points. 188cm tall, broad-shouldered, heavyset with field-worn musculature. Wearing faded grey softshell Patagonia jacket over cargo pants, heavy field boots, patched and scuffed from decades of work. Wrist-mounted instrument cluster visible. Forward-leaning posture suggesting chronic back management. Standing in a MARS facility office with cool LED lighting, expression stern and exhausted, slight head tilt as if sensory array is active. Cyberpunk 2226, academic not corporate, practical and credible. --ar 2:3 --v 6",
+  "image_prompt": "Aurelio Hernández, 188cm tall weathered multiethnic man with sun-darkened rich warm brown skin, deep brown amber-toned eyes, close-cropped steel grey hair and meticulously trimmed grey beard. Strong-jawed face with high Southeast Asian cheekbones widened by Sub-Saharan heritage, softened by Hispanic features. Deeply lined from decades of field work, faded scar on right cheekbone, age spots on neck. Worn faded grey Patagonia softshell jacket heavily patched, technical base layer, cargo pants with instruments, heavy field boots. Wrist-mounted instrument cluster. Retractable temple-mounted sensory whiskers visible as small metallic connection points. Forward-leaning posture managing chronic back strain, head tilting as though whisker array is active. Hands large and calloused. Standing in late afternoon lab lighting with warm amber tungsten tones, dust particles catching light. Habitually stern, exhausted expression. GLMZ. Academic field researcher aesthetic, practical not corporate. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.4,
-    "Sub-Saharan African": 32.0,
-    "Eastern European": 19.5,
-    "Hispanic/Latin American": 10.1
+    "Hispanic/Latin American": 48.3,
+    "Southeast Asian": 35.5,
+    "Sub-Saharan African": 16.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 39.3
+      },
+      "South American": {
+        "Peruvian": 9
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 35.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 6.7,
+        "Congolese": 9.5
+      }
+    }
+  }
 }

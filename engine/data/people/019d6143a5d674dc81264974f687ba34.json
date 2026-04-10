@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d674dc81264974f687ba34",
   "type": "character",
-  "name": "Sterling Guerrero-Kjellberg-Haraldsen",
+  "name": "Sterling Holm-Krstić-Bustamante",
   "aliases": [
     "Jackal",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Lake Shore and Wacker",
-  "description": "Cem Lund-Bangura is slight and easy to overlook, which is exactly the point. At 43, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a cleaner out of Whitecap, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Cem Lund-Bangura lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Sterling Holm-Krstić-Bustamante is slight and easy to overlook, which is exactly the point. At 43, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a cleaner out of Whitecap, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Sterling Holm-Krstić-Bustamante lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.68,
@@ -257,7 +257,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Whitecap",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,32 +272,17 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Unfinished Theorem",
-    "TESSERA PG-2 'Signature'",
     "The Nearfield",
+    "TESSERA PG-2 'Signature'",
+    "Lakefront Creamery",
     "Pale Harbor Anchorage",
     "Slagworks Industrial",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Ezio Kaboré-Malhotra",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "The Glass Garden",
-    "The Quiet Room",
-    "Tomasz Wren"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Pan-diaspora blend: 33% Hispanic/Latin American, 32% East Asian, 22% Northern European, 13% Sub-Saharan African. Features reflect this complex mix—East Asian bone structure softened by Latin warmth, Nordic fairness deepened by African undertones, creating a globally ambiguous appearance that reads as 'future-standard' rather than regionally specific.",
+    "heritage": "Predominantly Southeast Asian ancestry (60.3%) forms the structural foundation—characteristic facial proportions and bone structure. Significantly enriched by Hispanic/Latin American heritage (17.5%) which adds warmth, broader cheekbone prominence, and subtle dimension to facial contours. Eastern European ancestry (10.7%) contributes refined angularity to the jawline and cheekbone definition. East Asian heritage (8.5%) layers additional subtle eye shape variation and skin luminosity. Sub-Saharan African ancestry (3%) adds warmth and depth to undertones. The cumulative effect is a distinctly cosmopolitan appearance—warm-toned, genetically ambiguous in the 23rd-century standard way, with Southeast Asian structure as the dominant visual anchor and harmonious blending of warmth across all ancestry groups.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Lean and wiry, deceptively fragile-looking with hidden muscle density. Low body fat, efficient frame designed for speed and endurance rather than power.",
@@ -305,8 +290,8 @@
     "hair_style": "Pulled back in a tight, functional braid. No ornament, no vanity.",
     "hair_length": "Medium",
     "eye_color": "Warm hazel-brown with amber flecks, alert and assessing",
-    "skin_tone": "Medium warm olive—the result of blended ancestry. Sun-exposed but fundamentally warm, with subtle golden undertones from the Latin and East Asian genetics, grounded by deeper warmth from Sub-Saharan heritage. Not tan exactly, but naturally warm-toned even without sun exposure.",
-    "complexion": "High, slightly prominent cheekbones with subtle East Asian eye shape. Angular jawline with softer, rounder elements from Latin and African heritage. Fine-featured overall but with strength in the bone structure. Minimal grooming—no cosmetics, no jewelry. Skin shows small scars from past work: a thin line along her left temple, a burn mark on her right knuckle.",
+    "skin_tone": "Medium warm olive with golden undertones—the natural result of predominantly Southeast Asian genetics blended with Latin American and African warmth, creating subtle luminosity across the skin surface. Naturally warm-toned even without sun exposure, with a soft glow from the genetically diverse mix.",
+    "complexion": "Southeast Asian-influenced eye shape and upper facial structure balanced by broader, more prominent cheekbones from Latin American and African heritage. Angular jawline with East European refinement in definition, creating strong bone architecture overall. Fine-featured with considerable strength in underlying structure. Minimal grooming—no cosmetics, no jewelry. Skin shows small scars from past work: a thin line along her left temple, a burn mark on her right knuckle.",
     "distinguishing_marks": [
       "Thin white scar running 3cm along left temple, nearly invisible at rest but visible when she turns her head in certain light",
       "Circular burn scar on right knuckle—small, old, deliberate-looking",
@@ -317,15 +302,61 @@
     "posture_movement": "Moves with economical precision—no wasted motion, no flourish. Stands slightly forward on the balls of her feet, ready to move. Eyes are always working the room. She has the stillness of someone who has learned that movement draws attention.",
     "clothing_style": "Tier 4 utilitarian—functional, dark, forgettable. Black synthetic jacket with deep pockets, fitted but not tailored. Matte black bodysuit underneath for thermal regulation compatibility. Cargo pants in charcoal with reinforced knees. Steel-toed boots, scuffed, well-maintained. A single high-frequency data pad on her left wrist, industrial model—no personal customization. No tags, no brands that speak, no accessories beyond tools."
   },
-  "image_prompt": "Sterling Guerrero-Kjellberg-Haraldsen, 2226 cyberpunk operative, 162cm lean frame with warm olive skin tone reflecting pan-Asian, Latin American, Northern European and African heritage. Dark brown hair with silver threads pulled back in functional braid. Warm hazel-brown eyes, angular cheekbones, fine-featured but strong bone structure. Faint scar along left temple, burn mark on right knuckle. Subtle chrome grid thermal masking ports visible across collarbones, faint metallic sheen when active. Black synthetic jacket, matte bodysuit, charcoal cargo pants, scuffed steel-toed boots. Stands on balls of feet with economical precision, alert gaze scanning environment. Industrial wrist-mounted data pad. No jewelry, no cosmetics, forgettable utilitarian style. Urban Great Lakes Metropolitan Zone setting, cool neon lighting casting shadows, ready-to-move posture, cyberpunk noir aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Sterling Holm-Krstić-Bustamante, a 162cm lean neo-noir operative in the GLMZ, 2226. Southeast Asian bone structure with warm olive skin glowing with golden undertones, blended ancestry creating genetically ambiguous cosmopolitan features—prominent cheekbones from Latin heritage, refined jawline with Eastern European angularity, warm hazel-brown amber-flecked eyes. Dark brown hair with silver threading pulled tight in functional braid. Thin white scar along left temple. Circular burn scar on right knuckle. Faint chrome grid thermal masking ports visible on collarbones beneath neckline. Wearing matte black utilitarian jacket and bodysuit, charcoal cargo pants, scuffed steel-toed boots. Wrist-mounted industrial data pad. Standing with economical precision, alert posture, eyes scanning room, still and ready to move. Minimal grooming, no jewelry. Cinematic near-future megacity setting, neon ambient lighting casting cool shadows across her face, revealing her heritage's warm glow beneath harsh artificial light. Mood: calculated, watchful, dangerous efficiency. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 33.1,
-    "East Asian": 32.0,
-    "Northern European": 22.0,
-    "Sub-Saharan African": 12.9
+    "Southeast Asian": 60.3,
+    "Hispanic/Latin American": 17.5,
+    "Eastern European": 10.7,
+    "East Asian": 8.5,
+    "Sub-Saharan African": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sundanese": 44.2
+      },
+      "Filipino": {
+        "Bicolano": 7.1,
+        "Waray": 9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 6.2,
+        "Honduran": 1.3
+      },
+      "Mexican": {
+        "Mexican": 10
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 10.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.5
+      },
+      "Japanese": {
+        "Japanese": 2.3
+      },
+      "Chinese": {
+        "Mandarin Northern": 1.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 1.2
+      },
+      "West African": {
+        "Senegalese": 1.5,
+        "Malian": 0.3
+      }
+    }
+  }
 }

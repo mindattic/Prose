@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7297dafa60608be9786c188",
   "type": "character",
-  "name": "Orion Boudiaf",
+  "name": "Orion Appiah",
   "aliases": [
     "Yew",
     "Counselor"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "North Branch Commons, near Milwaukee and Damen",
-  "description": "Yewande is meticulous in the way that people who have learned that sloppiness costs other people's freedom tend to be. They dress in muted, well-maintained layers — never corporate enough to be mistaken for one, never shabby enough to be dismissed — and carry themselves with a stillness that fills a room more effectively than volume would. Their skin is deep brown with a faint bioluminescent undertone along the cheekbones, a mod they got to honor a client who died during a botched corporate deactivation order before Yewande could file the injunction. They haven't decided whether it was the right choice. The light pulses very slightly when they are angry.\n\nYewande practices out of a cramped two-room office in North Branch Commons that doubles as an intake center for synthetic persons seeking legal personhood recognition. They charge what clients can pay, which is usually very little. They have taken cases to the Meridian Civil Arbitration Board seventeen times; they have won eleven of them, lost four, and had two disappear from the docket in ways that still make them lie awake. They are not warm in the way Nneka is warm — they are precise and attentive, which is a different and sometimes more useful thing. They believe in law as a tool with complete clarity about the fact that it is also a weapon, and they intend to be better at wielding it than the people who built it.",
+  "description": "Orion Appiah is meticulous in the way that people who have learned that sloppiness costs other people's freedom tend to be. They dress in muted, well-maintained layers — never corporate enough to be mistaken for one, never shabby enough to be dismissed — and carry themselves with a stillness that fills a room more effectively than volume would. Their skin is deep brown with a faint bioluminescent undertone along the cheekbones, a mod they got to honor a client who died during a botched corporate deactivation order before Orion Appiah could file the injunction. They haven't decided whether it was the right choice. The light pulses very slightly when they are angry.\n\nOrion Appiah practices out of a cramped two-room office in North Branch Commons that doubles as an intake center for synthetic persons seeking legal personhood recognition. They charge what clients can pay, which is usually very little. They have taken cases to the Meridian Civil Arbitration Board seventeen times; they have won eleven of them, lost four, and had two disappear from the docket in ways that still make them lie awake. They are not warm in the way Nneka is warm — they are precise and attentive, which is a different and sometimes more useful thing. They believe in law as a tool with complete clarity about the fact that it is also a weapon, and they intend to be better at wielding it than the people who built it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -160,7 +160,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "North Branch Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,36 +171,24 @@
   "related_entities": [
     "North Branch Commons",
     "Helix Biosystems",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Irontide Tidal Energy",
-    "Nesting Doll",
-    "Compass Rose",
-    "The Milwaukee Core",
-    "Ambrogio Waweru-Djordanović",
-    "Anatoliy Faye-Nkrumah",
-    "Aïda Połczyńska-Ouattara",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "Lumen",
-    "MERIDIAN",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "Plot 17",
-    "The Peninsula",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Irontide Tidal Energy",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Nesting Doll",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern and North African (80.2% combined), with secondary ancestry from Sub-Saharan Africa, Eastern Europe, and minor East Asian and Hispanic/Latin American heritage. This genetic blend creates striking Mediterranean-to-Levantine features with deeper warm undertones and subtle phenotypic diversity.",
+    "heritage": "Predominantly Sub-Saharan African (93.5%), with minor Northern European (4.7%) and Southeast Asian (1.8%) ancestry. This genetic heritage creates rich, deep warm brown skin tones characteristic of West and Central African phenotypes, with the subtle influence of Northern European and Southeast Asian ancestry evident in refined facial structure and eye characteristics.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Lean and precise, with the controlled posture of someone who has learned to take up exactly the space they need and no more. Long-limbed, shoulders slightly forward from desk work.",
     "hair_color": "Black with natural graying at the temples",
     "hair_style": "Pulled back in a tight, functional braid or locs, kept meticulously maintained. No ornamentation.",
     "hair_length": "Medium to Long",
-    "eye_color": "Dark brown with faint amber undertone from optical overlay; the overlay is visible only under direct light as a subtle grid pattern across the iris",
-    "skin_tone": "Warm amber-brown with olive undertones characteristic of Levantine and North African heritage, deeper and richer than Mediterranean baseline",
-    "complexion": "Precise grooming, minimal visible wear except fine lines around the eyes from sustained concentration. The bioluminescent cheekbone modification manifests as a faint, steady glow under the cheekbones and along the orbital ridge—soft blue-white, like bioluminescent algae. The glow intensifies perceptibly under emotional stress, particularly anger. Facial structure reflects Middle Eastern and North African ancestry: defined cheekbones, strong jawline, straight nose. Skin is clear, well-maintained despite long hours indoors.",
+    "eye_color": "Deep brown with faint amber undertone from optical overlay; the overlay is visible only under direct light as a subtle grid pattern across the iris",
+    "skin_tone": "Rich, deep warm brown with natural radiance characteristic of Sub-Saharan African heritage, complexion luminous and even",
+    "complexion": "Precise grooming, minimal visible wear except fine lines around the eyes from sustained concentration. The bioluminescent cheekbone modification manifests as a faint, steady glow under the cheekbones and along the orbital ridge—soft blue-white, like bioluminescent algae. The glow intensifies perceptibly under emotional stress, particularly anger. Facial structure reflects Sub-Saharan African ancestry with subtle refinement from Northern European and Southeast Asian heritage: defined cheekbones, strong jawline, straight nose. Skin is clear, well-maintained despite long hours indoors.",
     "distinguishing_marks": [
       "Thin, precise scar across the left knuckle from a filing cabinet accident in 2219, kept as a deliberate reminder of carelessness",
       "Bioluminescent subdermal pigment running along both cheekbones from temple to jaw, glowing faintly steady at rest, pulsing when emotionally activated"
@@ -209,17 +197,45 @@
     "posture_movement": "Still, economical movements. They rarely gesture while speaking; instead, they listen with visible attention, creating a gravitational pull in conversation despite their physical stillness. When walking, each step is deliberate. When seated, they arrange themselves to face the door—a practical habit. The bioluminescent cheekbones pulse slightly when they are processing difficult information or suppressing anger.",
     "clothing_style": "Tier 3-4 working professional. Layered in muted tones: charcoal, deep gray, black, with occasional subtle color in undershirts (dark rust, forest green). Well-maintained but never new-looking—fabrics are quality but worn in. Practical cotton or linen blends, designed for twelve-hour days. No corporate logos, no flashy augmentation displays. A single worn leather messenger bag, stuffed with case files. Thin silver rings on two fingers, both functional rather than decorative."
   },
-  "image_prompt": "Orion Boudiaf, cyberpunk 2226, lean 173cm professional with warm amber-brown skin and olive undertones reflecting Levantine-North African heritage. Dark eyes with subtle optical overlay grid visible under direct light. Bioluminescent blue-white glow pulsing softly along cheekbones and orbital ridge, intensifying with concentration. Black hair with silver temples pulled back in tight functional braid. Defined cheekbones, strong jawline, precise scar on left knuckle. Wearing layered charcoal and deep gray professional attire—quality worn cotton, no logos. Worn leather messenger bag across chest. Still posture, deliberate economical movement, facing door. Seated at desk in dimly lit workspace, files scattered, contemplative expression. Cool blue-white bioluminescence casting subtle shadows on face. Neon-tinged darkness of Great Lakes Metropolitan Zone office behind. Mood: focused, controlled intensity. --ar 2:3 --v 6",
+  "image_prompt": "Orion Appiah, GLMZ, deep brown skin with warm undertones, black hair with gray at temples pulled back in tight braids, lean 173cm frame, seated facing doorway in profile-three-quarter view. Dark charcoal layered clothing, worn leather messenger bag visible. Faint bioluminescent blue-white glow beneath cheekbones and orbital ridge casting subtle luminescence on rich dark skin. Fine concentration lines around deep brown eyes with barely visible optical grid overlay under harsh neon light. Thin scar on left knuckle visible. Still, economical posture, intense focused expression, minimal gesturing. GLMZ office setting with dim ambient lighting and cool neon accents reflecting off skin, emphasizing bioluminescent modification. Neo-noir neo-noir aesthetic, professional and controlled demeanor, no augmentation chrome visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 45.2,
-    "North African": 35.0,
-    "Sub-Saharan African": 9.4,
-    "Eastern European": 6.3,
-    "East Asian": 2.1,
-    "Hispanic/Latin American": 2.0
+    "Sub-Saharan African": 93.5,
+    "Northern European": 4.7,
+    "Southeast Asian": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 14.4,
+        "South African": 2.2
+      },
+      "Central African": {
+        "Congolese": 41.1
+      },
+      "East African": {
+        "Kenyan": 12.6,
+        "Somali": 23.2
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 2.3
+      },
+      "British Isles": {
+        "English": 1.2
+      },
+      "Germanic": {
+        "German": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 1.8
+      }
+    }
+  }
 }

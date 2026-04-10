@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a3726091bc0108192865b9",
   "type": "character",
-  "name": "Ananya Sabbagh-Thorvaldsdóttir",
+  "name": "Adaeze Okonkwo-Subramaniam",
   "aliases": [
     "Mama Circuit",
     "The Listener"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division",
-  "description": "Adaugo is a broad-shouldered woman whose age has settled into her frame like ballast — she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her 'listening marks,' pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods — she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaugo appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls 'the Chorus' — digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
+  "description": "Adaeze Okonkwo-Subramaniam is a broad-shouldered woman whose age has settled into her frame like ballast — she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her 'listening marks,' pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods — she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaeze Okonkwo-Subramaniam appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls 'the Chorus' — digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -163,7 +163,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,28 +183,14 @@
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tessera Networked SMG TNSM-3 'Chorus'",
     "Copper",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
     "Silver",
-    "Static",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Aybek Alvarez-Okonkwo",
-    "Breck Tannen",
-    "Crucible Industries CR-9 'Foundry'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "TESSERA TX-12 'Chorus'",
-    "The Collective",
-    "The Signal",
-    "Tomáš Ekwuosi-Ranginui",
-    "Yuki Nwosu-Petrenko",
-    "Yuliya Morozova"
+    "Tessera Networked SMG TNSM-3 'Chorus'",
+    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian, Middle Eastern, and Southeast Asian blend — warm golden-brown skin with the particular luminosity of mixed ancestry from the Indian subcontinent, Levantine regions, and Southeast Asian genetics. Her features carry the soft angularity of South Asian heritage blended with the stronger bone structure and darker pigmentation of Middle Eastern ancestry, with the refined facial proportions of Southeast Asian genetics woven through.",
+    "heritage": "Predominantly Sub-Saharan African (63.2%) with significant South Asian (23.0%) and East Asian (13.8%) ancestry. Her appearance reflects this primary African heritage with secondary continental blending — deep rich brown skin with warm golden undertones, the distinctive facial bone structure that comes from Sub-Saharan African genetics, refined and subtly modified by South Asian delicacy and East Asian refinement. Her features carry the particular grace of multi-continental ancestry where African spatial proportions meet South Asian cheekbone definition and East Asian eye shape, creating a presence that speaks of the Ubiquitous Diaspora's genuine blending.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, settled into a sturdy frame by age and deliberate stillness. Not heavy, but dense — the build of someone who has learned to anchor themselves. Slight forward curve to her spine from decades of bending over the dying.",
@@ -212,8 +198,8 @@
     "hair_style": "Dozens of thin braids looped and pinned into a loose crown, woven through with small capacitors and memory chips that create soft clicking sounds when she moves her head",
     "hair_length": "Medium (braids fall to shoulder-blade length when unpinned)",
     "eye_color": "Deep brown, unmodified",
-    "skin_tone": "Warm golden-brown with subtle amber undertones, the result of South Asian, Middle Eastern, and Southeast Asian genetic blending — luminous and even-toned with the particular depth that comes from tri-continental ancestry",
-    "complexion": "Lined face that reads as calm and witnessing, with the soft, refined bone structure characteristic of blended South and Southeast Asian heritage. Minimal grooming beyond practical necessity — no cosmetics. Skin carries the texture of age and exposure. Her expression defaults to a kind of patient openness, as though she is always listening for something just beneath audible range.",
+    "skin_tone": "Rich warm deep brown with golden undertones, luminous and even-toned, reflecting the specific tri-continental blend of Sub-Saharan African (primary) with South Asian warmth and East Asian undertones",
+    "complexion": "Lined face that reads as calm and witnessing, with broad cheekbones and defined facial planes characteristic of Sub-Saharan African heritage, refined by South Asian and East Asian genetic contribution creating subtle eye shape and refined cheekbone definition. Minimal grooming beyond practical necessity — no cosmetics. Skin carries the texture of age and exposure. Expression defaults to patient openness.",
     "distinguishing_marks": [
       "Deliberate scarification along her entire left arm — parallel lines of raised copper-bright scar tissue, pressed there by heated wire during a vigil forty years prior. She calls them her 'listening marks.' The scars run from wrist to shoulder and catch light distinctly.",
       "Small calluses on her fingertips from forty years of handling old electronics and data crystals."
@@ -222,14 +208,45 @@
     "posture_movement": "Moves slowly and with absolute certainty, as though each step has been decided before her foot leaves the ground. Her weight settles into her hips when she stands still. She tilts her head often — a listening gesture — and the chips in her braids click softly with the movement. Despite her age and slowness, there is nothing frail about her presence; she seems immovable, ballasted.",
     "clothing_style": "Practical Tier 4 garments — faded linen tunics and heavy cotton pants, often layered. A long waxed linen coat for shrine work, pockets heavy with offerings and small devices. No corpo branding. Worn leather slippers for the basement shrine. Her clothes smell of incense, old electronics, and the particular must of a basement that has held secrets for decades. She wears a single piece of jewelry: a copper bracelet on her right wrist, unadorned."
   },
-  "image_prompt": "Ananya Sabbagh-Thorvaldsdóttir, a serene woman in her seventies with warm golden-brown skin and deep brown eyes, portrait in dim basement shrine lighting. Silver-white braids pinned in a loose crown studded with small metallic capacitors and memory chips that catch soft light. Lined, patient face with the refined bone structure of South Asian and Southeast Asian heritage blended with Middle Eastern features. Copper-bright scarification marks visible along her left arm in parallel lines. Wearing faded linen tunic and heavy cotton pants, long waxed linen coat, worn leather slippers. Single copper bracelet on right wrist. Tilted listening posture with absolute certainty. Cyberpunk 2226 GLMZ basement shrine setting, incense smoke, old electronics scattered nearby, contemplative and immovable presence, soft golden and amber atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Adaeze Okonkwo-Subramaniam, 168cm tall woman with rich warm deep brown skin, broad Sub-Saharan African cheekbones refined by South and East Asian ancestry, deep brown eyes, silver-white braids looped into crown with embedded capacitors and memory chips, lined face radiating calm witness. Wearing faded linen tunic and heavy cotton layers, long waxed linen coat, worn leather slippers. Copper scarification marks running up left arm catching light. Copper bracelet on right wrist. Standing immobile and ballasted, slight forward spine curve, head tilted in listening gesture. Basement shrine setting, warm incense-laden air, soft blue-orange neon glow mixing with candlelight, old electronics and data crystals visible in background, 2226 neo-noir urban aesthetic, contemplative mood, volumetric dust particles in air --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 45.2,
-    "Middle Eastern": 33.8,
-    "Southeast Asian": 21.0
+    "Sub-Saharan African": 63.2,
+    "South Asian": 23,
+    "East Asian": 13.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 57.7,
+        "Ugandan": 5.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.3
+      },
+      "Indian": {
+        "Marathi": 6.5,
+        "Malayali": 2.6
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 8.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.5
+      },
+      "Chinese": {
+        "Sichuanese": 0.9
+      },
+      "Japanese": {
+        "Japanese": 3.4
+      }
+    }
+  }
 }

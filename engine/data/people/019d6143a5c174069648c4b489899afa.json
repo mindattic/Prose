@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c174069648c4b489899afa",
   "type": "character",
-  "name": "Briar Árnason-Khorasani-Venkatesh",
+  "name": "Briar Quartey-Petrović-Lewandowski",
   "aliases": [
     "Benny",
     "Old Intake"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Kessler Interchange, Ferrogate Transit Regional Logistics Hub, near Armitage and Milwaukee",
-  "description": "Benedikt is a heavyset man who moves with the economy of someone who decided long ago that unnecessary motion was a form of lying about urgency. His Ghanaian-Serbian heritage settled into broad cheekbones, deep-set eyes the color of old teak, and a graying beard he trims every Sunday with the same three-setting razor he's owned for eleven years. His hands are augmented — heavy-duty haptic logistics gauntlets that he wears during shift and sets beside his locker at end of day like a craftsman's tools, which is precisely how he thinks of them. He has a slight drag in his left leg from a loading-dock accident in his forties that he refused to have fully corrected because the partial fix was covered by insurance and the full correction wasn't and he had children to feed and has carried the asymmetry ever since, unremarked upon by him and noticed immediately by anyone who watches him walk.\n\nHe is a man who has seen enough of Ferrogate to no longer be surprised by it, which is different from no longer caring. He cares meticulously — about his coordinators, about the timing windows that keep six thousand transit routes running, about the small rituals that make a brutal logistics hub survivable. He remembers the names of every technician who has worked under him for more than three months. He keeps a logbook — paper, the old kind — with handwritten notes about problems he's solved, framed as advice for whoever inherits his position, even though he knows the company will discard the book immediately. He prays to the Kessler E.L.F., a transit-management spirit of considerable local reputation, with the specific reverence of a man who has seen too many near-misses to dismiss the possibility of intercession.",
+  "description": "Briar Quartey-Petrović-Lewandowski is a heavyset man who moves with the economy of someone who decided long ago that unnecessary motion was a form of lying about urgency. His Ghanaian-Serbian heritage settled into broad cheekbones, deep-set eyes the color of old teak, and a graying beard he trims every Sunday with the same three-setting razor he's owned for eleven years. His hands are augmented — heavy-duty haptic logistics gauntlets that he wears during shift and sets beside his locker at end of day like a craftsman's tools, which is precisely how he thinks of them. He has a slight drag in his left leg from a loading-dock accident in his forties that he refused to have fully corrected because the partial fix was covered by insurance and the full correction wasn't and he had children to feed and has carried the asymmetry ever since, unremarked upon by him and noticed immediately by anyone who watches him walk.\n\nHe is a man who has seen enough of Ferrogate to no longer be surprised by it, which is different from no longer caring. He cares meticulously — about his coordinators, about the timing windows that keep six thousand transit routes running, about the small rituals that make a brutal logistics hub survivable. He remembers the names of every technician who has worked under him for more than three months. He keeps a logbook — paper, the old kind — with handwritten notes about problems he's solved, framed as advice for whoever inherits his position, even though he knows the company will discard the book immediately. He prays to the Kessler E.L.F., a transit-management spirit of considerable local reputation, with the specific reverence of a man who has seen too many near-misses to dismiss the possibility of intercession.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -192,7 +192,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -261,40 +261,16 @@
     "Ferrogate Transit",
     "Grand Corridor",
     "The Heritage Vault",
+    "The Accidental",
+    "GLMZ",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Teak",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Cutter Vane",
-    "Davi Ousseini-Brătianu",
-    "Dragan Asiedu-Kovalchuk",
-    "Idris Forsberg-Quaye",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Kenji Guerrero-Osei-Mensah",
-    "MERIDIAN",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'",
-    "Mexicantown Libre",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "ShieldTech CLA-3 'Cascade'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Sterling-Nakamura Diplomatic Protection Cane DPC-1 'Ambassador'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Root",
-    "Tobechukwu Papadimitriou-Vásárhelyi",
-    "Veslemøy Achebe-Tursynov",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'"
+    "Teak"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European (50.5%) with substantial South Asian (27.2%) and Middle Eastern (22.3%) ancestry. A genetic blend that manifests in angular Northern European bone structure tempered by South Asian warmth and Middle Eastern features.",
+    "heritage": "Eastern European (36.4%) with substantial Sub-Saharan African (31.2%) and South Asian (18.8%) ancestry, complemented by Central Asian (7.9%) and East Asian (5.7%) genetics. A genetic blend that manifests in angular Eastern European bone structure enriched by Sub-Saharan depth, South Asian warmth, and subtle Central/East Asian contributions creating a distinctly cosmopolitan phenotype.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Heavyset, broad-shouldered with a thick torso that speaks to decades of manual labor and desk work. Not fat — accumulated mass from a life of cargo-handling and middle-aged sedentism. Strong forearms, slight softening at the midsection.",
@@ -302,8 +278,8 @@
     "hair_style": "Neatly trimmed, kept short and close to the scalp",
     "hair_length": "Short",
     "eye_color": "Teak brown — deep, warm, unremarkable",
-    "skin_tone": "Medium bronze with warm, golden undertones — the result of Northern European base with South Asian and Middle Eastern admixture creating a sun-responsive, naturally warm complexion.",
-    "complexion": "Angular face with defined cheekbones reflecting Northern European ancestry, softened by fuller features from South Asian heritage. Deep-set eyes beneath a prominent brow ridge. Well-groomed gray beard trimmed with precision every Sunday. Slight creases around the eyes and mouth from eleven years of squinting at logistics displays. Skin shows the wear of shift-work under artificial light — not sallow, but lacking the vibrancy of outdoor time. Subtle warmth in undertone suggests Middle Eastern and South Asian genetics.",
+    "skin_tone": "Rich medium-to-warm brown with golden-bronze undertones — the result of Sub-Saharan African depth (31.2%) blended with Eastern European base (36.4%), South Asian warmth (18.8%), and subtle Central Asian (7.9%) and East Asian (5.7%) complexity creating a sun-responsive, naturally warm complexion with significant melanin.",
+    "complexion": "Angular face with defined cheekbones reflecting Eastern European ancestry, softened and enriched by fuller features from Sub-Saharan African and South Asian heritage. Deep-set eyes beneath a prominent brow ridge showing subtle epicanthal influences from East and Central Asian ancestry. Well-groomed gray beard trimmed with precision every Sunday. Slight creases around the eyes and mouth from eleven years of squinting at logistics displays. Skin shows the wear of shift-work under artificial light — not sallow, but with natural depth from melanin-rich ancestry. Rich undertone reflects the layered blend of Sub-Saharan African, South Asian, and Central Asian genetics balanced against Eastern European skeletal structure.",
     "distinguishing_marks": [
       "Faint scar tissue on both palms and inner wrists from a loading-dock accident in his forties, partially healed but visible when the light catches them",
       "Small, faded tattoo on his right forearm — a symbol of his family line, barely visible unless someone looks closely"
@@ -312,14 +288,50 @@
     "posture_movement": "Moves with economical precision — no wasted motion, deliberate and measured. Walks with a pronounced asymmetry in his gait due to the partial left-leg correction, a slight drag that he neither compensates for nor acknowledges. Stands with weight distributed toward his right side. Hands are always moving — organizing, checking, adjusting — even at rest. When seated, he maintains an upright posture, shoulders squared, as if ready to respond to an alarm.",
     "clothing_style": "Tier 3 working-class professional. Ferrogate-issued logistics vest in charcoal gray with reflective piping and company patches, worn over a plain cotton undershirt. Heavy-duty cargo pants in industrial blue, multiple pockets, slightly frayed at the cuffs from years of wear. Steel-toed boots, scuffed and re-soled multiple times. No jewelry except a scratched digital watch on his left wrist — functional, not decorative. A worn cloth jacket with a worn company pin on the collar, taken off during shifts and hung on his locker. Everything is clean but lived-in, maintained but not replaced."
   },
-  "image_prompt": "Briar Árnason-Khorasani-Venkatesh, 178cm tall heavyset male with warm bronze skin and Northern European-South Asian-Middle Eastern features, short dark gray hair, deep-set teak brown eyes, angular cheekbones, well-groomed gray beard. Wearing Ferrogate charcoal gray logistics vest with reflective piping over plain cotton shirt, industrial blue cargo pants, scuffed steel-toed boots. Gray composite haptic gauntlets on wrists. Faint amber retinal glow in right eye. Visible scar tissue on palms. Standing in warehouse-lit industrial setting, 2226 GLMZ, cyberpunk near-future, economical posture with weight shifted right, slight asymmetrical gait, hands at rest but tensely ready. Fluorescent overhead lighting casting cool shadows, creating contrast with warm bronze skin tone. Realistic, weathered, lived-in appearance. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Briar Quartey-Petrović-Lewandowski, 178cm heavyset middle-aged male with angular Eastern European bone structure enriched by Sub-Saharan African depth and South Asian warmth. Rich medium-to-warm brown skin with golden-bronze undertones, deep-set teak brown eyes with faint amber retinal overlay visible. Short dark gray hair with black remnants, well-groomed beard with precise trim lines. Strong forearms, accumulated mass from decades of cargo-handling, slight drag in left leg from mechanical corrective brace beneath industrial blue pants. Wearing charcoal gray Ferrogate logistics vest with reflective piping over plain cotton undershirt, heavy-duty cargo pants, scuffed steel-toed boots. Industrial gray haptic gauntlets worn during work shift with subtle LED feedback strips. Faint scar tissue visible on palms, small faded family tattoo on right forearm. Economical, measured posture with squared shoulders. Warehouse lighting, warehouse interior, fluorescent and reflected neon glow, professional yet worn appearance, lived-in dignity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 50.5,
-    "South Asian": 27.2,
-    "Middle Eastern": 22.3
+    "Eastern European": 36.4,
+    "Sub-Saharan African": 31.2,
+    "South Asian": 18.8,
+    "Central Asian": 7.9,
+    "East Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 22.8
+      },
+      "Magyar-Romanian": {
+        "Romanian": 13.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 31.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5.6
+      },
+      "Pakistani": {
+        "Sindhi": 13.2
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 1.7,
+        "Kazakh": 6.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 5.7
+      }
+    }
+  }
 }

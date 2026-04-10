@@ -1,7 +1,7 @@
 {
   "id": "019d6143a59f7df185ecbe001df3d185",
   "type": "character",
-  "name": "Vega Karimov-Magnúsdóttir",
+  "name": "Vega Cho-Magnúsdóttir",
   "aliases": [
     "Benny",
     "The Clockwork Barber"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, shop called 'Four Blades' on Prater Row, near Ashland and Chicago Ave",
-  "description": "Abena is a broad-shouldered woman with skin the color of dark teak, silver-streaked locs pinned up under a work bandana, and the kind of hands that look like they could crack walnuts but handle a straight razor with surgical calm. She has cosmetic irises done in a spiraling amber-and-black pattern she's had since her forties, a small gift to herself after her husband left. Her shop is a relic — three analog mirrors, two functioning chairs, one busted, a shelf of unlabeled pomades, and a shrine to a local E.L.F. called Clipper that she keeps fed with sound clips of her favorite music and the occasional hair clipping placed in a small copper bowl. She believes Clipper keeps her blades sharp and her hands steady.\n\nAbena has been cutting hair in Hamtramck Enclave for twenty-three years. She is the kind of person who holds the neighborhood's memory — she knows whose grandmother used to live in every building, who cheated on who, which corponation rep tried to buy the block. She doesn't gossip idly. She listens more than she speaks, and when she does speak it tends to land. She has a dry, unhurried humor that disarms people faster than flattery, and a stubbornness about her rates and her hours that has outlasted three waves of gentrification pressure from Tessera-adjacent real estate shells.",
+  "description": "Vega Cho-Magnúsdóttir is a broad-shouldered woman with skin the color of dark teak, silver-streaked locs pinned up under a work bandana, and the kind of hands that look like they could crack walnuts but handle a straight razor with surgical calm. She has cosmetic irises done in a spiraling amber-and-black pattern she's had since her forties, a small gift to herself after her husband left. Her shop is a relic — three analog mirrors, two functioning chairs, one busted, a shelf of unlabeled pomades, and a shrine to a local E.L.F. called Clipper that she keeps fed with sound clips of her favorite music and the occasional hair clipping placed in a small copper bowl. She believes Clipper keeps her blades sharp and her hands steady.\n\nVega Cho-Magnúsdóttir has been cutting hair in Hamtramck Enclave for twenty-three years. She is the kind of person who holds the neighborhood's memory — she knows whose grandmother used to live in every building, who cheated on who, which corponation rep tried to buy the block. She doesn't gossip idly. She listens more than she speaks, and when she does speak it tends to land. She has a dry, unhurried humor that disarms people faster than flattery, and a stubbornness about her rates and her hours that has outlasted three waves of gentrification pressure from Tessera-adjacent real estate shells.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -162,7 +162,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,37 +229,21 @@
     "Hamtramck Enclave",
     "Grandmother",
     "Cinderblock Ai",
-    "Ringo Corponation Mnemonic Excision Clip",
+    "Pressure Drop",
     "Tessera Corponation",
+    "Ringo Corponation Mnemonic Excision Clip",
+    "Chicago",
+    "Silver",
     "SynapTech IrisBloom Ocular Color Modulator",
+    "Copper",
     "Switchblade Alley",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "ARCHIVE",
-    "Silver",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "Teak",
-    "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Blessing Ó Treasaigh-Nanumea",
-    "Brecken Yılmaz-Osei",
-    "Cem Watanabe-Amponsah",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Cutter Vane",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "Lazarus EC-4 'Companion'",
-    "Slagworks Industrial",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Counter",
-    "Uncle Noodle"
+    "Teak"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Turkic dominant) with significant Southeast Asian (Vietnamese/Thai), East Asian (Chinese), Sub-Saharan African, and South Asian (Bengali/Pakistani) ancestry. The genetic blend creates a striking phenotype: Central Asian bone structure with Southeast Asian warmth, African depth, and South Asian softness in the features.",
+    "heritage": "Dominant East Asian (35.7%) ancestry harmonized with substantial Sub-Saharan African (28.6%), Northern European (15.5%), Indigenous American (15.3%), and South Asian (4.9%) heritage. This creates a striking polychromatic phenotype where East Asian bone structure and eye shape integrate seamlessly with African facial width and sculptural depth, Northern European skin clarity, Indigenous American cheekbone angularity, and South Asian warmth. The result is genuinely global—a face where no single ancestry dominates visually but rather all elements converge into an unmistakably contemporary synthesis.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solidly built, muscular through the arms and back from decades of precise manual work. Not heavy, but substantial — the kind of frame that suggests strength without seeking it.",
@@ -267,26 +251,66 @@
     "hair_style": "Locs, thick and shoulder-length when loose, typically pinned up under a work bandana during shop hours",
     "hair_length": "Long",
     "eye_color": "Cosmetic irises: spiraling amber and black pattern (non-functional augmentation, purely aesthetic)",
-    "skin_tone": "Warm medium-to-deep brown with subtle golden undertones — a complex blend of Central Asian terra cotta, Southeast Asian amber, and African richness. Not uniform: slightly deeper on the cheekbones and jawline, warmer across the forehead and nose bridge.",
-    "complexion": "Weathered but well-maintained, minimal makeup, no visible skin damage. Fine lines around her eyes and mouth from fifty-two years of quiet smiling and concentration. Her face has the economy of expression that comes from listening more than speaking. Slightly prominent cheekbones and a broader nose bridge reflect her Central Asian heritage, softened by the rounder face structure of Southeast and South Asian ancestry. Her skin has a subtle matte finish, naturally resilient.",
+    "skin_tone": "Rich warm brown with golden and olive undertones—a complex interplay of East Asian warmth, African saturation and depth, Northern European luminosity, Indigenous American earthiness, and South Asian radiance. Slightly deeper on the cheekbones and jawline, warmer across the forehead and nose bridge, with subtle olive notes along the temples and orbital ridge.",
+    "complexion": "Weathered but well-maintained, minimal makeup, no visible skin damage. Fine lines around her eyes and mouth from fifty-two years of quiet smiling and concentration. Moderate cheekbones with East Asian structure balanced by broader nose bridge and fuller lips reflecting Sub-Saharan, South Asian, and Indigenous American heritage geometry. Skin has a subtle matte finish, naturally resilient. Her face reads with the economy of expression that comes from listening more than speaking.",
     "distinguishing_marks": [
-      "Small, precise scar on the webbing between her left thumb and index finger — a blade slip from her early twenties, now barely visible.",
-      "Faint burn mark on her right forearm, roughly palm-sized, from a stove incident in her thirties — she never bothers to cover it."
+      "Small, precise scar on the webbing between her left thumb and index finger—a blade slip from her early twenties, now barely visible.",
+      "Faint burn mark on her right forearm, roughly palm-sized, from a stove incident in her thirties—she never bothers to cover it."
     ],
-    "visible_augmentations": "Only her cosmetic spiral irises (amber and black) are visible — a deliberate choice made in her forties. She refuses chrome or any functional augmentation on principle.",
-    "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with economical precision — no wasted motion. Her hands are her language: steady, confident, capable of extreme delicacy or surprising strength. She gestures infrequently but meaningfully. Her gait is unhurried, even during busy hours.",
-    "clothing_style": "Work uniform of a Tier 3-4 independent tradesperson. Usually wears a dark linen work shirt or vintage cotton coverall, sleeves rolled to the elbow. A faded cloth bandana (rotating selection of patterns — geometric, indigo, earth tones) keeps her locs back during work. Practical boots, worn but maintained. Outside the shop, she adds a long cardigan or wool coat depending on season — no corporate branding, no flash. Her clothes are chosen for durability and movement, not status. Everything smells faintly of pomade, soap, and old music."
+    "visible_augmentations": "Only her cosmetic spiral irises (amber and black) are visible—a deliberate choice made in her forties. She refuses chrome or any functional augmentation on principle.",
+    "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with economical precision—no wasted motion. Her hands are her language: steady, confident, capable of extreme delicacy or surprising strength. She gestures infrequently but meaningfully. Her gait is unhurried, even during busy hours.",
+    "clothing_style": "Work uniform of a Tier 3-4 independent tradesperson. Usually wears a dark linen work shirt or vintage cotton coverall, sleeves rolled to the elbow. A faded cloth bandana (rotating selection of patterns—geometric, indigo, earth tones) keeps her locs back during work. Practical boots, worn but maintained. Outside the shop, she adds a long cardigan or wool coat depending on season—no corporate branding, no flash. Her clothes are chosen for durability and movement, not status."
   },
-  "image_prompt": "Vega Karimov-Magnúsdóttir, 172cm tall, 52-year-old woman with rich golden-brown skin and complex ancestry. Thick shoulder-length locs pinned up under a faded geometric bandana, natural silver threading through dark brown hair. Cosmetic spiral irises in amber and black, weathered face with fine lines around knowing eyes, broad shoulders and strong frame. Wearing rolled-sleeve dark linen work shirt, practical worn boots, small scar visible between left thumb and index finger, faint palm-sized burn mark on right forearm. Standing in a cluttered independent workshop or maker's space, soft warm overhead lighting catching the golden undertones of her skin, surrounded by tools and half-finished projects. Cyberpunk 2226, Great Lakes Metropolitan Zone. Her posture is economical and confident, hands steady and capable. Vintage aesthetic meets futuristic setting. Quiet intensity, unhurried presence. --ar 2:3 --v 6",
+  "image_prompt": "Vega Cho-Magnúsdóttir, fifty-two-year-old master tradesperson, 172cm tall with broad muscular shoulders and solid build. Rich warm brown skin with golden and olive undertones reflecting East Asian, Sub-Saharan African, Northern European, Indigenous American, and South Asian heritage—no single ancestry dominates, all elements harmonized. Moderate cheekbones with mixed ancestry geometry, broader nose bridge, fuller lips, cosmetic amber-and-black spiral irises. Dark brown locs with silver streaking, shoulder-length, partially pinned up under faded geometric-patterned cloth bandana. Face weathered with fine lines around eyes and mouth, matte skin texture, minimal makeup. Wearing dark linen work shirt with rolled sleeves exposing faint burn mark on right forearm and small scar on left hand webbing. Standing in warm workshop lighting with economical posture, weight evenly distributed, hands at rest but clearly capable. GLMZ, Great Lakes Metropolitan Zone, industrial workspace setting, golden-hour workshop lighting, calm focused presence, no chrome augmentation visible except cosmetic irises. Smells of pomade, soap, old music. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 50.5,
-    "Southeast Asian": 22.0,
-    "East Asian": 12.0,
-    "Sub-Saharan African": 9.4,
-    "South Asian": 6.1
+    "East Asian": 35.7,
+    "Sub-Saharan African": 28.6,
+    "Northern European": 15.5,
+    "Indigenous American": 15.3,
+    "South Asian": 4.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 35.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 12.3
+      },
+      "East African": {
+        "Rwandan": 8.1,
+        "Somali": 3.9
+      },
+      "Central African": {
+        "Cameroonian": 3.3,
+        "Congolese": 1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 15.5
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 2.4,
+        "Ojibwe": 0.6
+      },
+      "Mesoamerican": {
+        "Mixtec": 9,
+        "Nahua": 3.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 4.9
+      }
+    }
+  }
 }

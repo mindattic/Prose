@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6927021925144be502ff579",
   "type": "character",
-  "name": "Anya Wójcik",
+  "name": "Nneka Tamale",
   "aliases": [
     "Pari",
     "The Hinge",
@@ -14,7 +14,7 @@
   "age": 24,
   "status": "active",
   "location": "The Circuit, near Milwaukee and North Ave",
-  "description": "Parveen Saab-Quiñones is small, fast, and professionally forgettable. Half Pakistani, half Guatemalan, she has the unremarkable face of someone who has practiced having one — neither memorable nor ugly, with dark eyes that track everything and give back nothing. She moves through The Circuit's layered commercial warrens with the comfort of someone who memorized the geometry before she could read. Her augmentations are practical and hidden: subdermal cargo space, a reflex-assist system, a passive signal-scrubber that makes her biometric signature fuzzy at distance. She dresses in whichever layer of the Circuit's aesthetic is currently least conspicuous and changes it frequently.\n\nParveen runs augmentation components — legal, gray, and black — between suppliers, surgeons, and end users who can't or won't use registered channels. She is not a fixer in the grand sense; she doesn't build networks or broker relationships. She moves things from one point to another with speed and discretion and she does not ask what they are for. This is her professional ethic and also her primary psychological defense. She has been doing this since she was sixteen, when she started small as a favor to a neighbor and discovered she was very good at it and that very good at it paid. She has never been caught in a way that left a record.\n\nShe lives alone in a Circuit mid-level unit she rents under a secondary identity, keeps her living space nearly empty, and has a relationship with permanence that could charitably be described as avoidant. She has acquaintances across three districts and close friends in none of them. She is not unhappy, exactly. She is efficient. She is fast. She is twenty-four years old and has been running since she was a child and has not yet had to decide whether she is running toward something or away from it, because she has not yet stopped long enough to check.",
+  "description": "Nneka Tamale is small, fast, and professionally forgettable. Half Pakistani, half Guatemalan, she has the unremarkable face of someone who has practiced having one — neither memorable nor ugly, with dark eyes that track everything and give back nothing. She moves through The Circuit's layered commercial warrens with the comfort of someone who memorized the geometry before she could read. Her augmentations are practical and hidden: subdermal cargo space, a reflex-assist system, a passive signal-scrubber that makes her biometric signature fuzzy at distance. She dresses in whichever layer of the Circuit's aesthetic is currently least conspicuous and changes it frequently.\n\nParveen runs augmentation components — legal, gray, and black — between suppliers, surgeons, and end users who can't or won't use registered channels. She is not a fixer in the grand sense; she doesn't build networks or broker relationships. She moves things from one point to another with speed and discretion and she does not ask what they are for. This is her professional ethic and also her primary psychological defense. She has been doing this since she was sixteen, when she started small as a favor to a neighbor and discovered she was very good at it and that very good at it paid. She has never been caught in a way that left a record.\n\nShe lives alone in a Circuit mid-level unit she rents under a secondary identity, keeps her living space nearly empty, and has a relationship with permanence that could charitably be described as avoidant. She has acquaintances across three districts and close friends in none of them. She is not unhappy, exactly. She is efficient. She is fast. She is twenty-four years old and has been running since she was a child and has not yet had to decide whether she is running toward something or away from it, because she has not yet stopped long enough to check.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -231,7 +231,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,37 +245,21 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "TESSERA PG-2 'Signature'",
     "Grand Corridor",
+    "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Chimera-Null",
+    "Circuit",
     "Stratum",
-    "Neuromorphic Pressure Cestus",
     "Ringo DV-4 'Courier'",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Neuromorphic Pressure Cestus",
     "Arcturus KS-7 'Nursery'",
-    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
-    "Aïssé Dragomirescu-Faalelei",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Irontide Tidal Energy",
-    "Kenji Guerrero-Osei-Mensah",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Cargo Tacos",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Eastern European with significant North African, Middle Eastern, and South Asian admixture. The genetic combination creates a phenotype reflecting Central/Eastern European bone structure and coloring as primary ancestry (72.3%), with warm undertones and subtle facial features influenced by North African (11.0%) and South Asian (6.3%) heritage. A distinctly cosmopolitan genetic signature reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex diaspora ancestry combining Sub-Saharan African (40.3%), Eastern European (29.5%), South Asian (27.1%), and Hispanic/Latin American (3.1%) heritage. The genetic blend creates a phenotype with warm medium-brown skin tone, subtly blended facial structure reflecting the dominance of African and Eastern European ancestry with South Asian softening around cheekbones and jawline. Rich golden-brown undertones prominent in skin and eye color. A distinctly cosmopolitan genetic signature reflecting the Ubiquitous Diaspora.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Lean and compact, built for speed and low profile rather than strength. Muscle definition in shoulders and forearms from years of courier work and handling heavy augmentation components. Minimal body fat, efficient frame.",
@@ -283,8 +267,8 @@
     "hair_style": "Usually pulled back tight — braids, bun, or wrapped — never loose. Style changes monthly as part of her forgettability protocol.",
     "hair_length": "Medium, worn short to mid-back depending on current aesthetic",
     "eye_color": "Dark brown, unremarkable",
-    "skin_tone": "Warm medium to light olive brown, reflecting the Eastern European base with North African and South Asian warmth. Even complexion with subtle golden undertones.",
-    "complexion": "Clear skin, minimal grooming flourishes. No visible makeup or ornamentation. Face is deliberately unmemorable — regular Slavic-influenced features without distinctive focal points, softened by subtle North African and South Asian admixture around cheekbones and jawline. Slight tension around the eyes from chronic alertness.",
+    "skin_tone": "Warm medium brown with golden undertones, reflecting balanced Sub-Saharan African and Eastern European base, enriched by South Asian warmth. Even complexion with subtle luminosity.",
+    "complexion": "Clear skin, minimal grooming flourishes. No visible makeup or ornamentation. Face is deliberately unmemorable — balanced features reflecting mixed African-European ancestry without distinctive focal points, subtly softened by South Asian admixture around cheekbones and jawline. Slight tension around the eyes from chronic alertness.",
     "distinguishing_marks": [
       "Thin surgical scar running 4cm along the inside of her right forearm where the subdermal cargo panel was installed, partially concealed by forearm hair growth",
       "Small burn mark on her left collarbone from a close call with a heated cargo container seal five years ago — pale and fading",
@@ -294,16 +278,49 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Her gait is quiet and grounded, weight balanced on the balls of her feet even when standing still. Shoulders slightly forward, head level, eyes in constant soft focus scanning. She navigates space like someone reading terrain. Minimal fidgeting, minimal expression. Hands are steady and quick.",
     "clothing_style": "Deliberately adaptive and unremarkable. Wears different layered aesthetics depending on which Circuit tier she's moving through that day — sometimes slouched Tier 4 synthweave work jackets and cargo pants with too many pockets, sometimes understated Tier 3 business-casual in muted grays and blacks. Favors dark colors, loose fit for concealment of the cargo panels, and clothing with multiple sealed pockets for signal isolation. Cheap, durable shoes designed for running. No jewelry, no branding, no visible tech. Everything is replaceable and none of it speaks to who she is."
   },
-  "image_prompt": "Anya Wójcik, 158cm, lean cyberpunk courier in her late twenties, warm olive-brown skin with Eastern European and North African heritage, dark brown hair pulled back in a practical braid, dark unremarkable brown eyes with subtle tension from chronic alertness. Economical posture, weight balanced, shoulders slightly forward. Wearing layered dark synthweave cargo jacket and reinforced pants with multiple sealed pockets, cheap durable runner's shoes, no visible augmentations. Small fading burn scar on left collarbone visible. Standing in a dimly-lit Great Lakes Metropolitan Zone mid-tier corridor, neon signage casting cool blue shadows across her face, expression deliberately unmemorable and neutral, soft-focus scanning gaze. Minimalist aesthetic, shadow and efficiency. Cyberpunk 2226, professional courier aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Nneka Tamale, 158cm lean courier in GLMZ, warm medium-brown skin with golden undertones, dark brown natural hair pulled back tight in braids, unremarkable dark brown eyes with subtle tension around them, balanced African-European-South Asian facial structure, deliberately forgettable face. Wearing dark muted synthweave cargo jacket and black pants with multiple sealed pockets, cheap durable running shoes. Standing with economical posture, weight on balls of feet, shoulders slightly forward, head level, hands steady. Soft subtle scars visible on right forearm and left collarbone. Moving through a neon-lit GLMZ Circuit tier corridor at dusk, signal-shielded environment, cool blue and purple ambient lighting casting shadows across her neutral expression. Quiet, grounded presence suggesting constant soft-focus vigilance. No jewelry or branding. Full-body shot capturing her efficient frame and deliberate positioning. Neo-noir atmosphere, underground passage aesthetic, cool temperature lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 72.3,
-    "North African": 11.0,
-    "Middle Eastern": 6.7,
-    "South Asian": 6.3,
-    "Sub-Saharan African": 3.7
+    "Sub-Saharan African": 40.3,
+    "Eastern European": 29.5,
+    "South Asian": 27.1,
+    "Hispanic/Latin American": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 10.4,
+        "Ethiopian": 3.1
+      },
+      "Central African": {
+        "Gabonese": 26.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 15.2
+      },
+      "Slavic West": {
+        "Sorbian": 7.5,
+        "Czech": 3.4
+      },
+      "Magyar-Romanian": {
+        "Romanian": 1.9,
+        "Hungarian": 1.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 27.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 3.1
+      }
+    }
+  }
 }

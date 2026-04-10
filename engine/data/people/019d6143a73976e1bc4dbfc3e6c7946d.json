@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73976e1bc4dbfc3e6c7946d",
   "type": "character",
-  "name": "Priya Wickramasinghe",
+  "name": "Valentina Bustamante",
   "aliases": [
     "Zos",
     "the Paper Lady"
@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "Old Harbor — Pelletier's Wash & Press, a narrow shopfront on Gravesend Basin's lower commercial row, directly below an elevated transit line, near Michigan Ave South and Cermak",
-  "description": "Zosia is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nZosia has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Zosia is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
+  "description": "Valentina Bustamante is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nValentina Bustamante has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Valentina Bustamante is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -191,7 +191,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -257,29 +257,14 @@
     "CRUCIBLE Auric Sovereign Bespoke Arm",
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
     "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Pure Hand",
     "Handed",
-    "Tibor Osei-Svanstrom",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Cinderblock Ai",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Jitterbug",
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "LifeWire PalateTrue Gustatory Calibration System",
-    "Narrowcast",
-    "Nkechi Alvarado-Ostrowski",
-    "Old Harbor",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "The Counter",
-    "The Question",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-40 'Magistrate'"
+    "Harbor Fish Shack",
+    "The Pure Hand",
+    "Frost Boudiaf"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "North African (43.4%) with South Asian (35.4%), Hispanic/Latin American (10.5%), Sub-Saharan African (5.4%), and Central Asian (5.3%) ancestry — a complex diaspora blend reflecting the Ubiquitous mixing of the 2200s",
+    "heritage": "Hispanic/Latin American (52.6%) with Indigenous American (26.4%), Middle Eastern (18.7%), and Eastern European (2.3%) ancestry — a complex diaspora blend reflecting the Ubiquitous mixing of the 2200s. The combination produces warm bronze undertones with subtle golden and olive inflections, particularly around the cheekbones and jawline. Indigenous American heritage contributes broader facial structure and fuller lips, while Middle Eastern ancestry adds warmth and definition to her bone structure.",
     "height_cm": 156,
     "weight_kg": 52,
     "build": "Compact and economical, with the lean musculature of someone who has spent decades handling fabric and machinery. No wasted dimension.",
@@ -287,8 +272,8 @@
     "hair_style": "Pinned close to the head in a tight, practical arrangement that never interferes with work",
     "hair_length": "Short",
     "eye_color": "Deep brown with faint UV-filter lens overlay visible in bright light",
-    "skin_tone": "Rich warm bronze — the blended result of North African and South Asian ancestry with Sub-Saharan and Central Asian undertones. Deepened by decades of indoor fluorescent exposure but retaining natural warmth. The texture of aged linen from decades of steam exposure.",
-    "complexion": "Fine lines concentrated around the eyes and mouth from squinting at fabric detail and precise concentration. Skin has a slightly weathered quality but is meticulously maintained. No makeup. Expression defaults to neutral assessment. Facial structure reflects the broader nose and fuller lips common to North African and South Asian heritage, with the defined cheekbones of her blended ancestry.",
+    "skin_tone": "Warm bronze with golden undertones — the blended result of strong Hispanic/Latin American and Indigenous American ancestry with Middle Eastern warmth. Deepened by decades of indoor fluorescent exposure but retaining natural warmth. The texture of aged linen from decades of steam exposure.",
+    "complexion": "Fine lines concentrated around the eyes and mouth from squinting at fabric detail and precise concentration. Skin has a slightly weathered quality but is meticulously maintained. No makeup. Expression defaults to neutral assessment. Facial structure reflects the broader nose and fuller lips common to Indigenous American and Middle Eastern heritage, with defined cheekbones and moderate facial width characteristic of her blended ancestry.",
     "distinguishing_marks": [
       "Fine burn scar on the inside of her right forearm from a steam press contact at age 34 — thin and pale, barely visible against her bronze skin",
       "Permanent indentation marks on her fingertips from needle work and fabric handling",
@@ -298,16 +283,58 @@
     "posture_movement": "Upright and economical. She moves with the precision of someone who has calculated every gesture's necessity. No wasted motion. When working with fabric, her movements become meditative and almost hypnotic — the tremor disappears into the organic rhythm of her hands. She sits on her work stool with the settled authority of someone occupying exactly the space she has decided to occupy.",
     "clothing_style": "Tier 4 functional — clean, worn, deliberately maintained. Typically wears a long-sleeved work apron in muted gray or taupe linen over simple black or dark-blue clothing. The apron has multiple pockets arranged for efficiency and is tailored to her exact measurements. Her shoes are orthopedic and waterproofed — practical, expensive, replaced every two years. A thin silver chain around her neck, always, with a small fabric-weight calibration token. No jewelry beyond the hearing amplifier earring and her work ring — a simple steel band worn on her left middle finger."
   },
-  "image_prompt": "Priya Wickramasinghe, a 156cm master textile worker with rich bronze skin reflecting North African and South Asian heritage, electric white short hair pinned tight against her head. Deep brown eyes with subtle UV-filter lens shimmer. Fine lines around her eyes from decades of detail work. Wearing practical gray linen work apron over dark blue clothing, brushed steel hearing amplifier earring, thin silver chain with calibration token. Small dark blue loom shuttle tattoo visible on her left wrist. Seated at her work station under cool fluorescent lighting of a GLMZ textile workshop in 2226, hands showing characteristic tremor at rest. Upright posture, neutral expression, meticulous grooming. Cyberpunk professional, worn but dignified. --ar 2:3 --v 6",
+  "image_prompt": "Valentina Bustamante, 156cm textile artisan in GLMZ, warm bronze skin with golden undertones reflecting her Hispanic, Indigenous American, and Middle Eastern heritage blend. Electric white hair pinned close to head, deep brown eyes with subtle UV-filter lens shimmer. Fine facial lines from decades of precision work, broader nose and full lips characteristic of Indigenous American and Middle Eastern features. Compact lean build, wearing taupe linen work apron over dark blue clothing, long sleeves. Brushed steel hearing amplifier earring, thin silver calibration token chain. Hands showing permanent indentation marks from needlework, visible fine tremor. Sitting at work stool in fluorescent-lit textile workshop, neutral expression, meditative posture. Soft industrial lighting casting shadows across weathered bronze complexion. Functional, worn aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 43.4,
-    "South Asian": 35.4,
-    "Hispanic/Latin American": 10.5,
-    "Sub-Saharan African": 5.4,
-    "Central Asian": 5.3
+    "Hispanic/Latin American": 52.6,
+    "Indigenous American": 26.4,
+    "Middle Eastern": 18.7,
+    "Eastern European": 2.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 52.6
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 9.6,
+        "Ojibwe": 9.5
+      },
+      "Andean": {
+        "Aymara": 1.7
+      },
+      "Mesoamerican": {
+        "Nahua": 5.6
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 7.8
+      },
+      "Kurdish": {
+        "Kurdish": 6.9
+      },
+      "Arab Levantine": {
+        "Syrian": 2.4,
+        "Palestinian": 1.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 0.6,
+        "Czech": 0.3
+      },
+      "Slavic South": {
+        "Croatian": 1.3
+      },
+      "Magyar-Romanian": {
+        "Romanian": 0.1
+      }
+    }
+  }
 }

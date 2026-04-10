@@ -1,7 +1,7 @@
 {
   "id": "019d6143a718759e8dead947f876c3d4",
   "type": "character",
-  "name": "Soren Ingebrigtsen",
+  "name": "Siddharth Touré",
   "aliases": [
     "Buckshot",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Vuk Yamamoto-Darko is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a ghost out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Vuk Yamamoto-Darko lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Siddharth Touré is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a ghost out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Siddharth Touré lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -259,7 +259,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,38 +274,16 @@
   "registered_firearms": [],
   "related_entities": [
     "Adaptive Camouflage Skin",
-    "GLMZ",
     "The Unfinished Theorem",
+    "Chicago",
+    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Chicago",
-    "Axonal Stretch Resonance Lance",
-    "Breccan Oluwafemi-Tsagaan",
-    "Breck Tannen",
-    "Carrion Defense Works Field Surgical Kit FSK-6",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Irontide Tidal Energy",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Prophet",
-    "Réginald Asomaning-Čabarkapa",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street-Custom Razorwire Wraps 'Glass Hands'",
-    "TESSERA CR-12 'Whisper'",
-    "TESSERA ES-4 'Perimeter'",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiheriitage blend: Northern European base (34.6%) with significant Sub-Saharan African (25.9%), East Asian (19.0%), and Pacific Islander (16.9%) ancestry, creating a complexion that bridges cool and warm undertones. The genetic mix produces refined, angular features with both Northern European bone structure and Sub-Saharan facial characteristics — high cheekbones with fullness through the face, strong jawline.",
+    "heritage": "South Asian, Sub-Saharan African, and Southeast Asian blend (46.1%, 30.5%, 23.4% respectively). The genetic combination produces warm, richly saturated brown skin with golden and copper undertones. Facial structure reflects the full ancestry mix: high, prominent cheekbones and facial fullness from Sub-Saharan and South Asian heritage, refined angular bone structure from Southeast Asian ancestry, creating distinctive definition through the face. Strong, well-defined jawline with balanced proportions.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with fast-twitch musculature optimized for speed rather than power. Minimal body fat. Shoulders tense with perpetual readiness.",
@@ -313,8 +291,8 @@
     "hair_style": "Pulled back in a tight braid, practical and unadorned",
     "hair_length": "Long — shoulder-length when unbound",
     "eye_color": "Dark brown, natural — no optic augmentation",
-    "skin_tone": "Deep warm-toned brown with subtle golden undertones from Pacific Islander and Sub-Saharan ancestry, overlaid with cool peachy highlights from Northern European heritage. The nocturnal lifestyle has deepened the natural richness without creating pallor — skin reads as richly saturated rather than pale.",
-    "complexion": "Angular face with high cheekbones and strong jawline reflecting the genetic blend — bone structure shows both Northern European refinement and Sub-Saharan fullness. Skin shows visible chromatic patterning — iridescent scales of dermal camouflage tech embedded across temples, cheekbones, and lower jaw. The installation scarring is unsubtle: thin white lines tracing the perimeter of each augmented region, evidence of expedient field surgery. No makeup. Perpetual tension in the jaw.",
+    "skin_tone": "Deep warm-toned brown with golden and copper undertones. The complexion is richly saturated and luminous, without pallor. Nocturnal lifestyle has deepened natural depth rather than creating coolness.",
+    "complexion": "Angular face with high, prominent cheekbones and strong jawline reflecting the South Asian, Sub-Saharan, and Southeast Asian genetic blend. Skin shows visible chromatic patterning — iridescent scales of dermal camouflage tech embedded across temples, cheekbones, and lower jaw. Installation scarring is unsubtle: thin white lines tracing the perimeter of each augmented region, evidence of expedient field surgery. No makeup. Perpetual tension in the jaw.",
     "distinguishing_marks": [
       "Surgical scarring forming a Y-shape from right temple to jawline, where camouflage dermal arrays were installed",
       "Matching scarring on left side of neck, following the spinal column down to collarbone — reflex booster installation site",
@@ -325,16 +303,43 @@
     "posture_movement": "Moves with economical grace — every motion purposeful, nothing wasted. Walks on the balls of her feet, weight forward. Sits in corners with sight lines to exits. Eyes track movement constantly. When at rest, her fingers fidget — tapping rhythms on surfaces, a nervous tic that betrays the anxiety she channels into work. Jaw clenches when thinking.",
     "clothing_style": "Tier 3-4 functional wear: fitted black synthetic bodysuit with modular panel pockets and attachment points for gear. Worn dark grey long-coat with internal holsters and reinforced seams — no corpo branding, generic GLMZ market piece. Black composite gloves that leave no prints. Combat boots with reinforced soles and silence treads. No jewelry. No visible Φ currency displays or status markers. Everything is purpose-built and replaceable."
   },
-  "image_prompt": "Soren Ingebrigtsen, 168cm lean-muscled operative in cyberpunk 2226, rich warm brown skin with iridescent scale-like dermal camouflage shifting copper and violet across high cheekbones and angular jawline. Black hair with silver conductive threading pulled back in tight braid. Dark natural eyes, sharp and tracking. Visible surgical scars tracing camouflage installation sites on temples and neck. Wearing fitted black synthetic bodysuit with modular pockets under dark grey reinforced long-coat, black composite gloves, combat boots with silence treads. Standing in corner with sight-line awareness, posture economical and purposeful. Nocturnal neon lighting — cool blues and deep shadows illuminating the iridescent scale patterns. Cinematic cyberpunk aesthetic, gritty and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Siddharth Touré, 168cm lean neo-noir operative in 2226 Great Lakes Metropolitan Zone. Deep warm brown skin with golden undertones, high prominent cheekbones and strong jawline blending South Asian, Sub-Saharan African, and Southeast Asian features. Black hair with silver conductive threading pulled back in tight braid. Dark brown eyes, alert and tracking. Iridescent dermal camouflage scales embedded across temples and cheekbones, shifting copper-violet-steel in ambient light. Surgical scarring marks all augmentation sites with white lines. Fitted black synthetic bodysuit beneath worn dark grey reinforced long-coat, black silence-tread boots, composite fingerless gloves. Sitting in corner with tense posture, fingers fidgeting on surface. Nocturnal atmosphere, neon-lit underground setting, cool blue and purple shadows contrasting warm skin tone. Cybernetic augmentation scarring visible at neck and collarbone. No jewelry, no status markers. Mood: coiled tension, hyperalert, purposeful. Film noir neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 34.6,
-    "Sub-Saharan African": 25.9,
-    "East Asian": 19.0,
-    "Pacific Islander": 16.9,
-    "Middle Eastern": 3.6
+    "South Asian": 46.1,
+    "Sub-Saharan African": 30.5,
+    "Southeast Asian": 23.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 23.2
+      },
+      "Indian": {
+        "Punjabi": 13.8
+      },
+      "Nepali": {
+        "Nepali": 9.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 30.5
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 12.9
+      },
+      "Laotian": {
+        "Laotian": 1.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 8.6
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71f705589e69f119ebd259a",
   "type": "character",
-  "name": "Driss Boudiaf",
+  "name": "Flux Kulkarni",
   "aliases": [
     "Dowel",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Fullerton and Damen",
-  "description": "Ximena Sjostrom-Kwarteng are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Ximena Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Flux Kulkarni are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Flux Kulkarni lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.59,
@@ -263,7 +263,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,36 +277,22 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "GLMZ",
     "The Unfinished Theorem",
-    "Axolotl Regenerative Suite",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Dayo Adeyemi",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Quiet Room",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Circuit",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African Maghrebi with significant Hispanic/Latin American and Indigenous American ancestry; minor Sub-Saharan African influence. The combination produces warm medium-golden skin with subtle olive undertones, angular facial structure reflecting Berber and Iberian heritage, and dark hair with natural warm highlights.",
+    "heritage": "Cosmopolitan genetic blend: South Asian (31.3%), East Asian (26.8%), Eastern European (15.4%), Hispanic/Latin American (10.9%), Northern European (9.3%), and Indigenous American (6.3%). This produces warm medium-golden skin with subtle olive and amber undertones, slightly angular facial structure reflecting the blend of South Asian cheekbone prominence with East Asian eye shape, and dark brown hair with natural warm highlights.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and muscular with functional density — minimal fat, maximum efficiency. Shoulders broad from repetitive weapon training; core visibly defined. Wiry rather than bulky, built for sustained effort rather than explosive power.",
     "hair_color": "Dark brown with natural blonde undertones at the roots — evidence of regrowth after bleaching",
     "hair_style": "Buzzed short on sides, longer on top — practical, asymmetrical, styled for sight lines and minimal grab points",
     "hair_length": "Short",
-    "eye_color": "Amber-brown, alert and restless",
-    "skin_tone": "Medium warm golden-brown with subtle olive undertones; sun-weathered from street work",
-    "complexion": "Angular face with prominent high cheekbones and sharp jawline characteristic of North African Maghrebi ancestry; skin is clear but marked by repetitive stress. Warm undertones across temples and cheekbones. Thin lips, often pressed into a flat line. Expression carries no softness — features arranged in a default state of tactical assessment.",
+    "eye_color": "Amber-brown with slight epicanthic fold from East Asian ancestry, alert and restless",
+    "skin_tone": "Medium warm golden-brown with subtle olive undertones from South Asian and East Asian ancestry, amber highlights on cheekbones; sun-weathered from street work",
+    "complexion": "Angular face with pronounced high cheekbones reflecting South Asian prominence balanced with East Asian structure; skin is clear but marked by repetitive stress. Warm amber undertones across temples and cheekbones, subtle golden cast across the bridge of nose. Slightly broader face structure than purely European heritage would produce, softened by Hispanic/Latin American and Indigenous American ancestry contributions. Thin lips, often pressed into a flat line. Expression carries no softness — features arranged in a default state of tactical assessment.",
     "distinguishing_marks": [
       "Ragged scar tissue across the left temple and into the hairline — cortical bomb extraction site, deliberately left unsmoothed",
       "Thin white scar running from right ear to jaw angle — blade work, old",
@@ -317,15 +303,63 @@
     "posture_movement": "Stands with weight balanced, shoulders squared, never fully relaxed. Moves with economical precision — no wasted motion, every step deliberate. Eyes track threats in regular sweeps. Fingers twitchy at rest, fingers steady under pressure. Slight forward lean when concentrating, as if physically pulling information from the air.",
     "clothing_style": "Tier 3-4 streetwear: reinforced cargo pants (matte black, multiple pockets for gear), sleeveless compression shirt or tactical vest depending on contract temperature. Worn leather jacket (unmarked, functional, no corp branding). Steel-toed boots scuffed from field work. Minimal jewelry except functional gear — wrist display, credchip, encrypted comms. No vanity, all utility."
   },
-  "image_prompt": "Driss Boudiaf, North African Maghrebi operative with warm golden-brown skin and olive undertones, 172cm lean muscular build. Dark hair with natural blonde roots, buzzed sides and longer top. Angular high-cheekboned face with amber-brown eyes showing constant tactical alertness. Visible cortical bomb scar tissue on left temple, thin scar from ear to jaw, faint burn marks on forearms. Neural interface ports at base of skull. Dressed in matte black reinforced cargo pants, sleeveless compression shirt, worn unmarked leather jacket, scuffed steel-toed boots. Standing in neon-lit cyberpunk street, weight balanced and ready, fingers twitchy at rest. Gritty 2226 GLMZ urban setting, cool LED lighting with warm skin tones contrasting against dark clothing. Mood: dangerous precision, street-honed expertise, zero civilian softness. Cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Flux Kulkarni, GLMZ operative, 172cm lean muscular frame with functional density. Medium warm golden-brown skin with subtle olive undertones, sun-weathered from street work. Angular face with high cheekbones, amber-brown eyes with slight epicanthic fold, dark brown hair buzzed short on sides with longer asymmetrical top and blonde regrowth at roots. Ragged scar tissue across left temple (cortical bomb extraction site), thin white scar from right ear to jaw angle, faint burn marks on forearms. Neural interface ports visible at base of skull. Dark tactical outfit: matte black reinforced cargo pants, sleeveless compression shirt, worn unmarked leather jacket, steel-toed boots. Wrist display and encrypted comms visible. Posture balanced and alert, economical movements, default state of tactical assessment. Urban neon-lit Great Lakes Metropolitan Zone setting, moody blue and amber lighting, slight forward lean suggesting focus and intensity. Neo-noir street operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 78.4,
-    "Hispanic/Latin American": 9.6,
-    "Indigenous American": 9.6,
-    "Sub-Saharan African": 2.4
+    "South Asian": 31.3,
+    "East Asian": 26.8,
+    "Eastern European": 15.4,
+    "Hispanic/Latin American": 10.9,
+    "Northern European": 9.3,
+    "Indigenous American": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 31.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.1
+      },
+      "Chinese": {
+        "Shanghainese": 17.7
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 7.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 8.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 10.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 7.8,
+        "Swiss German": 1.5
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 1.7
+      },
+      "Great Lakes Nations": {
+        "Ho-Chunk": 2.6
+      },
+      "Plains Nations": {
+        "Choctaw": 0.7,
+        "Lakota": 1.3
+      }
+    }
+  }
 }

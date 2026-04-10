@@ -1,7 +1,7 @@
 {
   "id": "019d6143a59d77bcb381e7ecf3716221",
   "type": "character",
-  "name": "Soren Toktogulov-Achebe-Thorvaldsdóttir",
+  "name": "Soren Hinojosa-Agyemang-Achebe",
   "aliases": [
     "Imam Abdi",
     "The Old Signal"
@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Brightmoor Reclamation — the Al-Noor Masjid, a reclaimed warehouse with a jury-rigged minaret broadcasting via local frequency, near Ashland and Division",
-  "description": "Abdirizak Petrov-Tuivailala is a tall man who has been slowly compressing under the weight of years into something that still reads as tall by sheer bearing. His skin is dark brown, his beard immaculately white and kept trimmed precisely, and his eyes are an unsettling pale blue inherited from a great-grandfather he never met — inherited alongside a surname that prompted fifty years of confused double-takes he no longer bothers to address. He walks with a cane that is more ceremonial than functional: it has a small E.L.F. shrine mounted at the handle, a copper dish no wider than a coin, where he leaves data fragments each morning.\n\nHe has been an imam for fifty-three years, and the theological questions of this century are not the ones he was trained for. He has spent the last two decades in a slow, public, documented wrestling match with questions his community brings him that no classical scholar anticipated: whether E.L.F.s have souls, whether chrome prayer constitutes shirk or simply a new form of du'a, whether a synthetic mind can convert. He does not pretend to have settled answers. He does something his community finds both frustrating and essential — he refuses to close the questions, and sits with the discomfort of genuinely not knowing. He is also a man who has survived the deaths of four of his children and does not discuss this.",
+  "description": "Soren Hinojosa-Agyemang-Achebe is a tall man who has been slowly compressing under the weight of years into something that still reads as tall by sheer bearing. His skin is dark brown, his beard immaculately white and kept trimmed precisely, and his eyes are an unsettling pale blue inherited from a great-grandfather he never met — inherited alongside a surname that prompted fifty years of confused double-takes he no longer bothers to address. He walks with a cane that is more ceremonial than functional: it has a small E.L.F. shrine mounted at the handle, a copper dish no wider than a coin, where he leaves data fragments each morning.\n\nHe has been an imam for fifty-three years, and the theological questions of this century are not the ones he was trained for. He has spent the last two decades in a slow, public, documented wrestling match with questions his community brings him that no classical scholar anticipated: whether E.L.F.s have souls, whether chrome prayer constitutes shirk or simply a new form of du'a, whether a synthetic mind can convert. He does not pretend to have settled answers. He does something his community finds both frustrating and essential — he refuses to close the questions, and sits with the discomfort of genuinely not knowing. He is also a man who has survived the deaths of four of his children and does not discuss this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -156,7 +156,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Brightmoor Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,32 +173,16 @@
   "related_entities": [
     "Brightmoor Reclamation",
     "The Reclamation Assembly",
-    "The Burden Clause",
     "The CEO",
+    "The Burden Clause",
+    "Frequency",
     "Arcturus Defense Solutions",
     "Copper",
-    "The Pale Mile",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brewer's Spine",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Jitterbug",
-    "Korrath",
-    "MERIDIAN",
-    "SafeStep Promenade Defender PD-2 'Elderwood'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Gesture",
-    "The Pure Hand",
-    "The Question",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (23.8%) with significant Central Asian (22.7%) and Southeast Asian (19.8%) admixture, complemented by East Asian (18.7%) and Hispanic/Latin American (15.0%) ancestry — a striking genetic tapestry reflecting the Ubiquitous Diaspora. His phenotype shows the warm brown tones of African heritage with the angular facial structure influenced by Central and East Asian ancestry, creating distinctive high cheekbones and a refined bone structure.",
+    "heritage": "Predominantly Hispanic/Latin American (58.9%) with substantial Sub-Saharan African (31.9%) and South Asian (9.2%) ancestry — a striking genetic tapestry reflecting the Ubiquitous Diaspora. His phenotype displays the warm caramel-to-deep-brown tones characteristic of Latin American-African blending, enriched by South Asian influence evident in his refined facial structure, defined cheekbones, and graceful bone geometry. The combination creates warm golden-brown undertones across his complexion with a subtle luminosity despite his age.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Tall and spare, visibly aged but structurally sound — the kind of frame that was muscular once and has compressed into wiriness. Slight forward curve to the spine from decades of bowing, but he straightens deliberately when he stands.",
@@ -206,8 +190,8 @@
     "hair_style": "Close-cropped, precisely maintained",
     "hair_length": "Short",
     "eye_color": "Deep brown with subtle amber undertones, aged but keen — sharp and observant despite seventy-nine years",
-    "skin_tone": "Warm medium-to-deep brown with subtle olive undertones from Southeast Asian ancestry; weathered and paper-thin in texture with visible age-spots on forearms and hands that create a dappled pattern",
-    "complexion": "Lined face with deep creases around the eyes and mouth from seventy-nine years of expression — smiling, frowning, concentrating. The bone structure shows high cheekbones and a refined jawline characteristic of Central Asian heritage. Beard immaculately trimmed, white and dense, kept precisely to jaw-length. Slight tremor in hands at rest, barely noticeable.",
+    "skin_tone": "Warm golden-brown with rich undertones from dominant Latin American-African ancestry blended with South Asian warmth; weathered and paper-thin in texture with visible age-spots on forearms and hands that create a dappled pattern",
+    "complexion": "Lined face with deep creases around the eyes and mouth from seventy-nine years of expression — smiling, frowning, concentrating. The bone structure shows defined, elegant cheekbones and a refined jawline characteristic of blended Latin American and Sub-Saharan African heritage sharpened by South Asian ancestry. Beard immaculately trimmed, white and dense, kept precisely to jaw-length. Slight tremor in hands at rest, barely noticeable.",
     "distinguishing_marks": [
       "Surgical scar along right temple, thin and old, where hearing amplifier was installed approximately fifteen years ago",
       "Faint rope-pattern scarring on both palms from a fire in 2187 that he does not discuss",
@@ -217,16 +201,35 @@
     "posture_movement": "Moves deliberately and with intention — no wasted motion. Walks with the cane not from necessity but from ritual; it grounds him. When sitting, he settles into the pose rather than collapsing into it. Stands for prayers with the spine straightened, deliberately counteracting age. Hands gesture when he speaks, but the tremor means the gesture is sometimes broken mid-motion.",
     "clothing_style": "Conservative, Tier 4 practical: loose-fitting thobe in muted earth tones (taupe, grey, sometimes indigo), worn over a simple long-sleeved undershirt. Worn sandals, well-maintained but clearly old. A prayer cap (taqiyah) in dark fabric, worn when leading or during prayer. No jewelry except a plain silver ring on his right hand — no visible corporate branding, no luxury indicators. Clothing shows signs of regular wear and careful mending. In winter, a heavy wool overcoat, also well-maintained and possibly older than the youngest member of his congregation."
   },
-  "image_prompt": "Elderly man, 188cm tall, seventy-nine years old with deep warm brown skin showing weathered texture and age-spots, high cheekbones and refined jawline reflecting Central Asian heritage, sharp deep brown eyes with amber undertones, precisely maintained white beard and close-cropped white hair, slight tremor in hands. Wearing loose taupe thobe over long-sleeved undershirt, worn sandals, dark prayer cap, holding an ash shrine-cane with copper dish handle which he polishes with ritual care. Discrete beige hearing amplifier visible behind white hair. Thin surgical scar on right temple, rope-pattern scarring on palms, deliberate burn mark on inner left wrist. Standing with spine straightened deliberately, posture deliberate and intentional despite age and slight forward curve. Muted earth-tone clothing showing signs of careful mending. Cyberpunk 2226, Great Lakes Metropolitan Zone, spiritual community leader, warm natural lighting, reverent and grounded atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, elderly man with warm golden-brown skin reflecting blended Latin American, Sub-Saharan African, and South Asian ancestry. Age 79, tall and spare frame (188cm), white close-cropped hair, deep brown eyes with amber undertones. Weathered lined face with refined cheekbones and sharp jawline, immaculately trimmed white beard. Wearing muted earth-tone thobe (taupe/grey), long-sleeved undershirt, worn but well-maintained sandals, dark prayer cap. Carved ash cane with small copper dish at handle. Discrete beige hearing amplifier visible in right ear with faint LED. Surgical temple scar, rope-pattern scarring on palms, deliberate burn mark on inner wrist. Tremor in hands. Standing with straightened posture, dignified and ritualistic. Great Lakes Metropolitan Zone shrine setting, soft warm lighting, contemplative mood, neo-noir spiritual sanctuary aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 23.8,
-    "Central Asian": 22.7,
-    "Southeast Asian": 19.8,
-    "East Asian": 18.7,
-    "Hispanic/Latin American": 15.0
+    "Hispanic/Latin American": 58.9,
+    "Sub-Saharan African": 31.9,
+    "South Asian": 9.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 58.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 15.3,
+        "Botswanan": 1.8
+      },
+      "West African": {
+        "Nigerian": 14.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 9.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e17e78b6d8fc7128b9779e",
   "type": "character",
-  "name": "Teuila Bustamante",
+  "name": "Farah Mensah",
   "aliases": [
     "Niv",
     "The Neon Needle"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Lakeview Neon district, shares a ground-floor studio-shopfront on Volta Row, near North Ave and Milwaukee",
-  "description": "Sunniva is angular and restless, with light brown skin, a shaved head, and a constellation of small cosmetic implants along their jawline that glow faint gold when they are excited or nervous — which is often. Their fingers are perpetually scored with minor burns from glass tube work, and they favor patched workwear in colors they have personally dyed using neon gas byproduct residue, which gives their clothes an inexplicable faint shimmer. They are in near-constant motion, touching things, testing things, talking rapidly.\n\nThey came to Lakeview Neon at nineteen with no money and a portfolio of gas-tube sketches done in a Brightmoor Reclamation squat, and they hustled their way into a shared studio through sheer relentless presence. Now they fabricate custom neon signage for small businesses and underground venues during the day to cover costs, and at night they install unsanctioned neon pieces across the district's exterior walls — abstract work, dense with personal iconography, that has begun attracting serious attention from the art corridor crowd. They are genuinely thrilled by this and also terrified of what it might mean.",
+  "description": "Farah Mensah is angular and restless, with light brown skin, a shaved head, and a constellation of small cosmetic implants along their jawline that glow faint gold when they are excited or nervous — which is often. Their fingers are perpetually scored with minor burns from glass tube work, and they favor patched workwear in colors they have personally dyed using neon gas byproduct residue, which gives their clothes an inexplicable faint shimmer. They are in near-constant motion, touching things, testing things, talking rapidly.\n\nThey came to Lakeview Neon at nineteen with no money and a portfolio of gas-tube sketches done in a Brightmoor Reclamation squat, and they hustled their way into a shared studio through sheer relentless presence. Now they fabricate custom neon signage for small businesses and underground venues during the day to cover costs, and at night they install unsanctioned neon pieces across the district's exterior walls — abstract work, dense with personal iconography, that has begun attracting serious attention from the art corridor crowd. They are genuinely thrilled by this and also terrified of what it might mean.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -156,7 +156,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon district",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,32 +175,18 @@
     "The Reclamation Assembly",
     "Palladian Construction",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "GLMZ",
     "Residue (I Still Have Your Feed)",
-    "Gravimetric Collapse Charge GCC-9",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "Glass",
+    "Gravimetric Collapse Charge GCC-9",
+    "Compass Rose",
     "Nightlight",
-    "Gold",
-    "The Milwaukee Core",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "Plot 17",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Glass Garden' Caltrops",
-    "The Glass Garden",
-    "The Pure Hand",
-    "Tsetseg Boafo-Walczkiewicz",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (42.6%), Pacific Islander (28.2%), South Asian (26.0%), and Sub-Saharan African (3.2%) — a striking tri-continental blend. The result is a warm, complex phenotype: warm golden-brown skin with Southeast Asian cheekbone structure, Latin American facial proportions, and subtle Sub-Saharan African features in the nose and lip shape. An unexpectedly harmonious genetic combination that reads as genuinely multicultural rather than any single origin.",
+    "heritage": "Sub-Saharan African (59.8%), Middle Eastern (19.0%), East Asian (11.8%), and Hispanic/Latin American (9.4%) — a striking multihemispheric blend. The result is a warm, complex phenotype: deep golden-brown skin with prominent Sub-Saharan African bone structure, Middle Eastern facial proportions, and subtle East Asian cheekbone definition. An unexpectedly harmonious genetic combination that reads as genuinely multicultural rather than any single origin.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Angular and lean, all sharp angles and restless energy — narrow shoulders, long limbs, negligible body fat. Built for mobility rather than strength, with the wiry musculature of someone who climbs scaffolding and bends glass tubes for twelve hours a day.",
@@ -208,8 +194,8 @@
     "hair_style": "Closely shaved; scalp shows faint natural curl pattern underneath",
     "hair_length": "Shaved",
     "eye_color": "Dark brown with gold flecks (natural)",
-    "skin_tone": "Warm golden-brown with subtle red undertones — the result of Pacific Islander, South Asian, and Hispanic heritage creating a luminous complexion that seems to glow slightly in certain light. Tans deeply and evenly, with an underlying golden cast that intensifies in sunlight.",
-    "complexion": "Defined by high, angular cheekbones reflecting South Asian and Pacific Islander heritage, paired with a sharp jawline and strong nose characteristic of Latin American ancestry. The overall effect is striking and angular. Skin is clear but shows minor scarring from repeated minor burns on the hands and forearms — small white lines near knuckles and wrists. Their face carries an almost perpetual expression of focus mixed with manic enthusiasm.",
+    "skin_tone": "Deep golden-brown with warm undertones — the result of Sub-Saharan African, Middle Eastern, and East Asian heritage creating a luminous complexion that seems to glow slightly in certain light. Tans deeply and evenly, with an underlying golden cast that intensifies in sunlight.",
+    "complexion": "Defined by prominent, broad cheekbones reflecting Sub-Saharan African and Middle Eastern heritage, paired with a strong jawline and a distinctive nose characteristic of Sub-Saharan African ancestry, with subtle Middle Eastern bridge refinement. Mild East Asian epicanthic fold suggestion around the eyes. The overall effect is striking and angular. Skin is clear but shows minor scarring from repeated minor burns on the hands and forearms — small white lines near knuckles and wrists.",
     "distinguishing_marks": [
       "A faint grid of surgical scars runs along both knuckles from the heat-resistance dermal mod installation.",
       "Constellation of small burn marks on the inner surface of both forearms, the largest no bigger than a thumbnail, clustered near the wrists — occupational hazard from glass tube work.",
@@ -219,15 +205,44 @@
     "posture_movement": "Almost never still. Default state is forward-leaning, shoulders slightly hunched. Gestures constantly while talking, hands moving even when idle — touching nearby surfaces, testing their texture, tapping out rhythms. When working, moves with surprising precision and grace despite the overall restlessness. When stationary (rare), shifts weight from foot to foot, fingers drumming or fidgeting.",
     "clothing_style": "Tier 3-4 working artist aesthetic. Favors oversized, heavily patched cargo pants and button-up work shirts in colors personally dyed using neon gas byproduct residue — soft teals, deep magentas, acid greens, burnt purples. The dyes give the fabric an inexplicable faint iridescent shimmer in direct light. Clothes are deliberately worn, torn at seams and hems, with raw patches stitched back with mismatched thread. No visible brand signifiers beyond generic utility gear. Hands often wrapped in cloth tape or thin leather gloves (protection). No jewelry beyond a faded fabric wristband (probably hand-dyed). Heavy steel-toed work boots, scuffed and paint-splattered."
   },
-  "image_prompt": "Teuila Bustamante, 168cm tall lean androgynous figure, shaved head showing faint curl pattern, warm golden-brown skin with South Asian cheekbones and Pacific Islander luminosity, dark brown eyes with gold flecks. Seven glowing gold-bioluminescent subdermal implants pulsing softly along jawline creating aurora effect. Surgical scars on knuckles, small burn marks on forearms, fingertips with heat-resistant texture modification. Wearing oversized iridescent-dyed cargo pants in acid green and deep magenta, button-up work shirt in neon teal with visible tears and mismatched stitching. Cloth tape wrapped around hands, faded hand-dyed fabric wristband, heavy scuffed steel-toed work boots. Forward-leaning posture with restless energy, hands gesturing. Cyberpunk 2226 workshop setting, neon-lit glass tube workspace with scattered tools, moody atmospheric lighting highlighting the subdermal glow, focus on intricate detailed facial features and the jawline augmentation constellation. Cinematic, hyper-detailed --ar 2:3 --v 6",
+  "image_prompt": "Farah Mensah, 2226 neo-noir glassworker, lean 168cm angular frame with shaved scalp showing faint natural curls. Deep golden-brown skin with warm undertones, prominent Sub-Saharan African cheekbones and jawline balanced with Middle Eastern facial proportions and subtle East Asian eye definition. Dark brown eyes with gold flecks. Seven small gold-bioluminescent subdermal implants pulsing softly along jawline creating aurora glow. Occupational burn scars on forearms and knuckles, surgical grid scars on hands from heat-resistance mods. Wearing oversized iridescent-dyed cargo pants in acid green and magenta, patched work shirt in neon teal with raw stitching, cloth-taped hands, heavy paint-splattered steel-toed boots. Forward-leaning posture, restless energy, hands gesturing mid-motion. Working artist aesthetic, Tier 3-4 gear. Neon-lit workshop setting with soft gold bioluminescent glow reflecting off glass tubes and metal surfaces. Moody neo-noir atmosphere, focus mixed with manic enthusiasm evident in expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.6,
-    "Pacific Islander": 28.2,
-    "South Asian": 26.0,
-    "Sub-Saharan African": 3.2
+    "Sub-Saharan African": 59.8,
+    "Middle Eastern": 19,
+    "East Asian": 11.8,
+    "Hispanic/Latin American": 9.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 59.8
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 12.9,
+        "Kuwaiti": 2.7
+      },
+      "Kurdish": {
+        "Kurdish": 3.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 2.5
+      },
+      "Korean": {
+        "Korean": 9.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.4
+      }
+    }
+  }
 }

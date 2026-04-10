@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6937b73ad7a36a114f496ff",
   "type": "character",
-  "name": "Kit Larsdóttir",
+  "name": "Kit Oh",
   "aliases": [
     "Pat",
     "Auntie Patience (from the kids)"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Hamtramck Enclave, 4th floor of the Raczkowski Stack residential tower, near Pulaski and Chicago Ave",
-  "description": "Patience is a person of medium height and soft presence — not soft meaning weak, but soft meaning that children immediately stop crying when they enter the room. They have their Basque father's broad, expressive face and their Congolese mother's deep brown skin, with natural hair worn in flat twists that are perpetually coming slightly undone, usually because a toddler has grabbed them. They have bioluminescent skin mods — a gentle wash of golden-green that pulses faintly when they're calm and brightens slightly when they're delighted — which they got specifically because they discovered it helped soothe infants in dim rooms. It was a practical decision, which is very on-brand.\n\nThey hold a Tier 2 childcare certification from the Meridian Municipal Education Authority and a side certificate in pediatric first response that they keep quietly current. The crèche, which they call 'The Patch,' holds eight children on a good day and feels like controlled chaos that is actually very controlled. Patience has a finely tuned threat-assessment sense developed over fifteen years of toddler supervision and will notice danger in a room approximately as fast as any trained security operative, but they notice it in the form of 'that outlet cover is loose' and 'that child hasn't eaten and is about to escalate.'",
+  "description": "Kit Oh is a person of medium height and soft presence — not soft meaning weak, but soft meaning that children immediately stop crying when they enter the room. They have their Basque father's broad, expressive face and their Congolese mother's deep brown skin, with natural hair worn in flat twists that are perpetually coming slightly undone, usually because a toddler has grabbed them. They have bioluminescent skin mods — a gentle wash of golden-green that pulses faintly when they're calm and brightens slightly when they're delighted — which they got specifically because they discovered it helped soothe infants in dim rooms. It was a practical decision, which is very on-brand.\n\nThey hold a Tier 2 childcare certification from the Meridian Municipal Education Authority and a side certificate in pediatric first response that they keep quietly current. The crèche, which they call 'The Patch,' holds eight children on a good day and feels like controlled chaos that is actually very controlled. Kit Oh has a finely tuned threat-assessment sense developed over fifteen years of toddler supervision and will notice danger in a room approximately as fast as any trained security operative, but they notice it in the form of 'that outlet cover is loose' and 'that child hasn't eaten and is about to escalate.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -156,7 +156,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,32 +177,14 @@
     "Crucible ER-5 'First Response'",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch",
     "The Quiet Room",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "Irontide Tidal Energy",
     "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'",
-    "Daulet Reyes-Abubakar",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems",
-    "MERIDIAN",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Pirjo Asante-Ulukhan",
-    "Slagworks Industrial",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Warden",
-    "Vespid Dynamics Swarm Canister SC-2 'Hornets'",
-    "Warden"
+    "Arcturus KS-7 'Nursery'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian) with significant Hispanic/Latin American and minor Sub-Saharan African ancestry — resulting in warm medium-deep brown skin with golden undertones, a blend of Nordic bone structure with Latin American features, and traces of African heritage visible in hair texture and facial proportions",
+    "heritage": "Richly blended ancestry reflecting East Asian (31.6%), Middle Eastern (24.3%), Hispanic/Latin American (14.8%), Sub-Saharan African (13.4%), Indigenous American (13.0%), and Southeast Asian (2.9%) heritage — creating a harmonious phenotype with warm medium-deep brown skin featuring golden and olive undertones, angular cheekbones with subtle fullness, almond-shaped eyes, and textured hair that speaks to multifaceted genetic mixing",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Medium frame with soft muscularity — not gym-toned but functionally strong from years of lifting, carrying, and moving children. Shoulders slightly rounded from years of hunching over toddler eye-level. Core strength evident despite relaxed posture.",
@@ -210,8 +192,8 @@
     "hair_style": "Flat twists, usually partially undone from daily contact with grabbing toddler hands",
     "hair_length": "Medium",
     "eye_color": "Deep brown, warm, habitually crinkling at corners from constant smiling",
-    "skin_tone": "Warm medium-deep brown with golden undertones — the result of Northern European, Hispanic/Latin American, and Sub-Saharan African ancestry blending into a harmonious, sun-kissed complexion",
-    "complexion": "Smooth, well-cared-for skin bearing the soft exhaustion of someone who works with small children — bags under eyes are gentle rather than harsh. Facial structure shows Nordic-influenced bone geometry softened by Latin American and African heritage features. Expression defaults to patient attentiveness. Fine smile lines radiating from eyes.",
+    "skin_tone": "Warm medium-deep brown with golden and olive undertones — sun-kissed complexion with natural depth, harmoniously blended from East Asian, Middle Eastern, Hispanic/Latin American, Sub-Saharan African, Indigenous American, and Southeast Asian ancestry",
+    "complexion": "Smooth, well-cared-for skin bearing the soft exhaustion of someone who works with small children — bags under eyes are gentle rather than harsh. Facial structure reflects the interplay of East Asian and Middle Eastern bone geometry (defined cheekbones, slightly tapered chin) softened and enriched by fuller features from Hispanic/Latin American, Sub-Saharan African, and Indigenous American heritage. Expression defaults to patient attentiveness. Fine smile lines radiating from eyes.",
     "distinguishing_marks": [
       "Small irregular scar on left palm from a child's accidental bite seven years ago",
       "Faint discoloration on right wrist where the allergen sensor sits beneath skin — visible as a subtle rectangular outline under the bioluminescence"
@@ -220,14 +202,74 @@
     "posture_movement": "Moves with economical grace — no wasted energy, but not tense. Habitually maintains low center of gravity and flexible knees (trained for sudden child-related chaos). Sits frequently at child height. Hands are always slightly open and available. Voice modulation constant — drops in volume and pitch when children are present. Default expression is attentive and calm, even when managing chaos.",
     "clothing_style": "Tier 3 practical: durable, washable, child-proof. Usually wearing fitted but flexible pants (synthetic blend, easy-clean) and soft long-sleeved or short-sleeved tops in muted colors (grays, earth tones, navy) that hide stains. Flat, closed-toe shoes with good grip. A cardigan or soft jacket always within arm's reach. No jewelry except a thin wrist chrono and a single small loop earring (nonbinary expression). Pockets are essential — filled with tissues, snacks, a small first-aid kit, and usually a toy or two. Appears deliberately non-threatening and approachable."
   },
-  "image_prompt": "Kit Larsdóttir, 2226 cyberpunk, warm medium-deep brown skin with golden undertones, Nordic-Latin-African heritage blend, 168cm medium frame, natural deep brown hair in flat twists partially undone, deep brown eyes with smile lines, faint golden-green bioluminescent skin modification pulsing softly across body creating ethereal glow, sub-dermal allergen sensor visible as rectangular outline on right wrist, small scar on left palm, gentle under-eye bags from years working with children, patient attentive expression, economical graceful posture with low center of gravity, wearing practical child-proof gray synthetic blend pants and muted earth-tone long-sleeved top, soft cardigan over arm, flat closed-toe shoes with good grip, thin wrist chrono and single loop earring, pockets full of essentials, non-threatening approachable presence, standing in warm evening light that makes bioluminescence ethereal and visible, domestic yet cybernetic, gentle caregiver energy meeting future technology, intimate home-setting with soft amber and cool bioluminescent lighting --ar 2:3 --v 6",
+  "image_prompt": "Kit Oh, a 168cm caregiver with warm medium-deep brown skin and golden-olive undertones reflecting blended East Asian, Middle Eastern, Hispanic, Sub-Saharan African, Indigenous American, and Southeast Asian heritage. Angular cheekbones softened by full features, deep brown eyes with smile lines, natural deep brown hair with gray threading in flat twists partially undone. Medium frame, soft muscularity, rounded shoulders from child-care work. Faint bioluminescent golden-green glow across skin pulsing gently in low light. Wearing practical muted-color long-sleeve top, synthetic easy-clean pants, flat closed-toe shoes, soft cardigan. Thin wrist chrono, single small loop earring. Gentle bags under eyes, calm attentive expression, slightly open hands ready. Sub-dermal allergen sensor faint rectangular outline on right wrist. GLMZ GLMZ, warm evening lighting emphasizing bioluminescence, peaceful but alert posture at child height, ethereal luminescent quality. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 57.1,
-    "Hispanic/Latin American": 36.2,
-    "Sub-Saharan African": 6.7
+    "East Asian": 31.6,
+    "Middle Eastern": 24.3,
+    "Hispanic/Latin American": 14.8,
+    "Sub-Saharan African": 13.4,
+    "Indigenous American": 13,
+    "Southeast Asian": 2.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 3.7,
+        "Mandarin Northern": 2.6
+      },
+      "Japanese": {
+        "Japanese": 10
+      },
+      "Korean": {
+        "Korean": 15.3
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 13.5
+      },
+      "Arab Gulf": {
+        "Iraqi": 5.5,
+        "Emirati": 5.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 11.8
+      },
+      "Caribbean": {
+        "Haitian": 3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 7.2
+      },
+      "Central African": {
+        "Cameroonian": 6.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 3.1,
+        "Potawatomi": 0.4
+      },
+      "Mesoamerican": {
+        "Zapotec": 4.8,
+        "Maya": 2.6
+      },
+      "Andean": {
+        "Mapuche": 2.1
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 2.9
+      }
+    }
+  }
 }

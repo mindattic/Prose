@@ -1,7 +1,7 @@
 {
   "id": "019d6143a612704daa82f065e596f671",
   "type": "character",
-  "name": "Aleksei Kovalenko-Bustamante",
+  "name": "Nova Kimura-Tamale",
   "aliases": [
     "Jolt",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 50,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Fullerton and Damen",
-  "description": "Fatoumata Fujita-Mensah is slight and easy to overlook, which is exactly the point. At 50, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Fatoumata Fujita-Mensah plans to keep it that way. She works as a tech retriever out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented tech retriever in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Nova Kimura-Tamale is slight and easy to overlook, which is exactly the point. At 50, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Nova Kimura-Tamale plans to keep it that way. She works as a tech retriever out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented tech retriever in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.41,
@@ -261,7 +261,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,31 +274,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
+    "Neural Palate",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Ezio Kaboré-Malhotra",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Oumarou Svec-Ranginui",
-    "Prophet",
-    "TESSERA CR-12 'Whisper'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (48.3%) with significant Hispanic/Latin American (22.1%), South Asian (18.0%), and Southeast Asian (11.6%) ancestry. Complex phenotype reflecting the Ubiquitous Diaspora: Slavic bone structure softened by Latinate and South Asian features, with Southeast Asian delicacy in eye shape and facial proportions.",
+    "heritage": "East Asian (70.6%) with significant South Asian (16.8%) and Sub-Saharan African (12.6%) ancestry. Dominant East Asian bone structure — high, prominent cheekbones and graceful facial proportions — refined by South Asian fullness in the lower face and Sub-Saharan African richness in skin tone and eye intensity. A striking phenotype from the Ubiquitous Diaspora: sharp East Asian angularity softened by South Asian facial geometry, with warm golden undertones from Sub-Saharan African heritage creating luminous depth.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Lean and compact, muscle definition visible in forearms and shoulders from years of field work. No excess weight — every gram serves a purpose. Posture suggests coiled readiness despite apparent fragility.",
@@ -306,8 +291,8 @@
     "hair_style": "Pulled back in a tight, utilitarian braid. Practical, no vanity. A few strands always escaping.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, natural — no augmentation. The pupils track with predatory precision.",
-    "skin_tone": "Medium golden-brown with warm undertones. Eastern European fairness blended with Latin warmth and South Asian depth, creating a dusky tan that suggests both high-altitude heritage and equatorial exposure.",
-    "complexion": "Weathered, sun-damaged from fieldwork across multiple climate zones. Lines around eyes and mouth from fifty years of living hard. Skin pulled tight over high cheekbones that reflect Eastern European and South Asian ancestry. A small scar above left eyebrow, faint but visible on close inspection. Subtle warmth to skin tone suggesting mixed heritage adaptation.",
+    "skin_tone": "Rich warm brown with golden undertones. The blend of East Asian, South Asian, and Sub-Saharan African heritage creates luminous depth — high melanin content with warm, radiant undertones that suggest both temperate and equatorial ancestry.",
+    "complexion": "Weathered, sun-damaged from fieldwork across multiple climate zones. Lines around eyes and mouth from fifty years of living hard. Skin pulled tight over high, sculpted cheekbones characteristic of East Asian ancestry, with fullness in lower face and lips reflecting South Asian geometry. Warm, rich undertone throughout, creating a cohesive glow across facial planes. Small scar above left eyebrow, faint but visible on close inspection.",
     "distinguishing_marks": [
       "Parallel burn scars across inner left forearm — old electrical burn, sustained during early augmentation installation, visible when wrists are exposed",
       "Small tattoo at base of right wrist, geometric pattern in faded black ink — no meaning she'll ever confirm",
@@ -317,15 +302,34 @@
     "posture_movement": "Moves economically, every gesture purposeful. No wasted motion. When still, she has the quality of someone pretending to be inert while actually assessing exits and threat vectors. Hands rest naturally near torso, ready to move. Shoulders slightly hunched — not weakness, but a conscious minimization of profile.",
     "clothing_style": "Tier 3-4 working runner aesthetic. Black or dark gray synthetic-weave jacket with reinforced seams and hidden pockets — well-maintained but deliberately unmarked. Fitted tactical cargo pants, deep pockets, reinforced knees. Matte-finish boots, comfortable for running. Minimal jewelry except a worn QUANTA-chip reader on left wrist. Clothes are chosen for function over fashion, but they fit well — sign of someone who respects her tools, including clothing. No corporate logos. No gang colors. Nothing that marks allegiance."
   },
-  "image_prompt": "Aleksei Kovalenko-Bustamante, 162cm lean woman, mixed Eastern European-Hispanic-South Asian-Southeast Asian heritage, golden-brown weathered skin, dark brown eyes with predatory focus, tight black braid with silver threads, high sharp cheekbones. Wearing matte black tactical jacket and reinforced cargo pants. Chrome neural interface jack visible at base of skull. Subdermal armor plating scarred across forearms. Small scar above left eyebrow, faint wire-thin scar along jawline. Minimal posture, economical movement, minimized profile. Gritty cyberpunk 2226 Great Lakes Metropolitan Zone night setting, neon ambient light, urban runner aesthetic, coiled readiness, assessment expression. Noir lighting casting shadows across weathered features. --ar 2:3 --v 6",
+  "image_prompt": "Nova Kimura-Tamale, 162cm lean frame, weathered face with luminous warm brown skin reflecting East Asian, South Asian, and Sub-Saharan African heritage. High sculpted cheekbones, dark natural eyes with predatory focus, tight dark brown braid with silver threading at temples, thin scars along jawline and eyebrow. Black synthetic-weave tactical jacket, fitted cargo pants, matte boots. Chrome neural interface jack at skull base glowing faintly, subdermal armor plating visible as scratched geometric patterns on forearms. Standing in neon-lit 2226 megacity alley, hands ready near torso, coiled tension despite stillness. Cool blue and amber lighting catching the geometric scars and interface jack. Mood: hardened field runner, economical and lethal. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 48.3,
-    "Hispanic/Latin American": 22.1,
-    "South Asian": 18.0,
-    "Southeast Asian": 11.6
+    "East Asian": 70.6,
+    "South Asian": 16.8,
+    "Sub-Saharan African": 12.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 70.6
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.3
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 12.6
+      }
+    }
+  }
 }

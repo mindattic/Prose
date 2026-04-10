@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f270249028752e529bcdaa",
   "type": "character",
-  "name": "Abiodun Hossain",
+  "name": "Rajan Quiñones",
   "aliases": [
     "Tangent",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Addison",
-  "description": "Djeneba Blom-Attah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a infiltrator out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented infiltrator in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Rajan Quiñones is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a infiltrator out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented infiltrator in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -261,7 +261,7 @@
     "Ambusher": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,29 +276,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Canopy Station Nine",
     "The Nearfield",
     "Geartown",
+    "Canopy",
     "Slagworks Industrial",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Iowan Behemoth — 'Palisade'",
-    "Irontide Tidal Energy",
-    "Jefferson Switch",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "The Canopy",
-    "The Gutter Prophets",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian, Sub-Saharan African, and Northern European blend — genetic mosaic reflecting the Ubiquitous Diaspora. South Asian foundation (44.6%) provides bone structure and baseline features, Sub-Saharan African ancestry (31.6%) contributes skin depth and facial architecture, Northern European heritage (23.8%) adds subtle undertones and variation.",
+    "heritage": "Hispanic/Latin American foundation (56.2%) with South Asian (19.6%), Sub-Saharan African (18.5%), and Southeast Asian (5.7%) genetic contributions — a true Ubiquitous Diaspora blend. The combination creates a striking phenotype: Latin American ancestry provides baseline facial structure and warm undertones, South Asian heritage contributes defined bone architecture and angular features, Sub-Saharan African ancestry adds skin depth, richness, and facial contours, while Southeast Asian ancestry introduces subtle eye shape variation and additional warmth to overall presentation.",
     "height_cm": 189,
     "weight_kg": 78,
     "build": "Lean and angular — long-limbed with visible muscle definition from constant training. Chest and shoulders suggest disciplined strength without bulk. Zero excess fat. Built for speed and flexibility rather than power.",
@@ -306,8 +293,8 @@
     "hair_style": "Close-cropped, functional. Edges maintained with precision. No styling pretense.",
     "hair_length": "Short",
     "eye_color": "Dark brown — natural, unaugmented",
-    "skin_tone": "Rich deep brown with warm undertones — the result of South Asian and Sub-Saharan ancestry creating a harmonious mid-to-deep complexion. Sun exposure patterns suggest outdoor upbringing; city living hasn't faded the natural depth. Northern European ancestry introduces subtle warmth rather than pallor.",
-    "complexion": "Sharp cheekbones with prominent bone structure reflecting South Asian and Sub-Saharan African heritage — strong defined jaw. Weathered rather than aged — lines around eyes from squinting, from calculation. Skin scarred from old burns on right temple (entry wound from a failed operation, seven years back). Clean-shaven daily. Expression neutral at rest — the kind of face that reveals nothing until it decides to.",
+    "skin_tone": "Warm deep brown — the result of dominant Hispanic/Latin American ancestry (56.2%) blended with South Asian, Sub-Saharan African, and Southeast Asian heritage. Rich golden-brown undertones with substantial depth from African ancestry contribution. Sun exposure patterns suggest outdoor upbringing; city living hasn't faded the natural warmth and saturation.",
+    "complexion": "Strong angular features reflecting the blend of Hispanic/Latin American and South Asian bone structure with African ancestry influence — prominent cheekbones, defined jawline with substantial structure, broad nose bridge from South Asian contribution. Weathered rather than aged — lines around eyes from squinting, from calculation. Skin textured with richness and depth from Sub-Saharan African genetics. Scarred from old burns on right temple (entry wound from a failed operation, seven years back). Clean-shaven daily. Expression neutral at rest — the kind of face that reveals nothing until it decides to.",
     "distinguishing_marks": [
       "Three parallel burn scars down right temple and cheekbone — thin, precise, circa 2219",
       "Entry wound scar (old, silvered) on left collarbone — visible when wearing anything sleeveless",
@@ -318,14 +305,59 @@
     "posture_movement": "Stands with weight slightly forward — ready position disguised as relaxation. Moves with economical precision; no wasted motion. When walking, feet placed with deliberate quiet. Head stays level; eyes track without moving face. Hands rest loose at sides, never in pockets — maintains access. When seated, back never fully against walls. This is not paranoia; this is craft.",
     "clothing_style": "Tier 4 functional — mid-grade synth-cotton and reinforced polymer blend. Dark colors (charcoal, matte black, deep navy). Fitted cargo pants with sealed pockets and thigh-access panels (equipment loops for climbing gear, lockpicks, small tools). Hooded technical jacket with non-reflective surface — worn open over a form-fitting athletic shirt. Steel-toed work boots, military-spec lacing. A single piece of jewelry: silver ring on right index finger, worn from years of contact with it. No corporate insignia. No gang markers. Built for function and anonymity — clothes that work in darkness and disappear in crowds."
   },
-  "image_prompt": "Cyberpunk 2226 operative portrait, 189cm tall lean angular man with deep rich brown skin reflecting South Asian and Sub-Saharan African heritage with subtle Northern European undertones. Sharp defined cheekbones, squared jaw, dark brown eyes. Dark brown hair close-cropped with silver at temples. Three parallel silvered burn scars down right temple and cheekbone. Visible scar on left collarbone. Clean-shaven, weathered expression neutral at rest. Left forearm shows synthetic bone junction line. Wearing dark charcoal technical hooded jacket worn open, form-fitting athletic shirt beneath, fitted dark cargo pants with sealed pockets and thigh-access panels, steel-toed military-spec work boots. Silver ring on right index finger. Standing in ready position with weight forward, economical precision posture. Non-reflective dark clothing designed for concealment and function. Moody low-key lighting suggesting urban darkness, emphasis on the fine details of scarring and augmentation junction. Cinematic cyberpunk aesthetic, gritty and utilitarian. --ar 2:3 --v 6",
+  "image_prompt": "Rajan Quiñones, 189cm tall lean angular operative with deep warm brown skin (Hispanic/Latin American, South Asian, Sub-Saharan African, Southeast Asian blend), sharp defined features, prominent cheekbones, angular jawline, dark brown eyes, close-cropped dark hair with silver at temples. Burn scars on right temple, collarbone scar visible. Silver ring on right index finger. Wearing dark charcoal hooded technical jacket over form-fitting black athletic shirt, fitted dark cargo pants with sealed pockets, military-spec steel-toed boots. Left forearm shows synthetic bone junction line. GLMZ setting, Great Lakes Metropolitan Zone, standing in shadow with weight forward in ready position, economical posture, hands loose at sides, neutral expression. Neon city lights behind, non-reflective surfaces, darkness favoring stealth. Moody, calculated, dangerous competence. Professional operative at rest. Cinematic lighting emphasizing bone structure and warmth of skin tone --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 44.6,
-    "Sub-Saharan African": 31.6,
-    "Northern European": 23.8
+    "Hispanic/Latin American": 56.2,
+    "South Asian": 19.6,
+    "Sub-Saharan African": 18.5,
+    "Southeast Asian": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 37.6
+      },
+      "Mexican": {
+        "Mexican": 18.6
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 9.7
+      },
+      "Indian": {
+        "Malayali": 2.8,
+        "Gujarati": 0.4
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 3.8,
+        "Pashtun": 2.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 7.5,
+        "Ghanaian": 3.2
+      },
+      "Southern African": {
+        "South African": 0.2,
+        "Zimbabwean": 5.7
+      },
+      "East African": {
+        "Tanzanian": 1.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.4
+      },
+      "Indonesian": {
+        "Sundanese": 3.3
+      }
+    }
+  }
 }

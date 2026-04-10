@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6237c998f459a038f4868c0",
   "type": "character",
-  "name": "Vega Tovar",
+  "name": "Vega Jung",
   "aliases": [
     "Mère Haf",
     "the Anchor"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Waukegan Industrial Shelf, Tent Cluster 9 (informally: 'Haf's Row'), near Michigan Ave and Roosevelt",
-  "description": "Hafsatu came to GLMZ's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
+  "description": "Vega Jung came to GLMZ's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -171,7 +171,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Waukegan Industrial Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -186,37 +186,20 @@
   "related_entities": [
     "The Waukegan Industrial Shelf",
     "Ferrogate Transit",
-    "Riddle",
-    "GLMZ",
     "The Shelf",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Plot 17",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+    "Patience",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "The Pure Hand",
     "Silver",
-    "Alper Lebedev-Tutu",
-    "Arcturus Bulwark APC",
-    "Electrothermal Compression Lance ETCL-9 'Ironlung'",
-    "Ihaia Nystrom-Keita",
-    "Isadora Mwangi-Thorvaldsen",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Noir Dining",
-    "Patient Zero",
-    "Plot 17",
-    "Sustrel",
-    "Tenderloin",
-    "The Ledger",
-    "The Question",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov"
+    "The Pure Hand",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Sub-Saharan African dominant (45.7%), with significant Hispanic/Latin American (35.0%) and East Asian (19.3%) ancestry, creating a complex phenotype with warm deep brown skin, high cheekbones, and subtle eye shape variation reflecting the tri-continental blend",
+    "heritage": "Predominantly East Asian (78.9%), with significant Hispanic/Latin American (10.7%) and Eastern European (10.4%) ancestry, creating a phenotype with warm medium-honey skin tone, subtle high cheekbones with slight lateral prominence, and almond-shaped eyes reflecting the East Asian genetic dominance, warmed by undertones from the secondary ancestry groups",
     "height_cm": 156,
     "weight_kg": 52,
     "build": "Small-framed and lean, with the wiry resilience of someone who has spent decades rationing calories and carrying responsibility. No softness; muscle definition visible at wrists and forearms despite age.",
@@ -224,8 +207,8 @@
     "hair_style": "Undercut: shaved close at temples and sides, fuller crown left standing approximately 5cm, swept slightly back",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and penetrating",
-    "skin_tone": "Deep warm brown with golden and copper undertones from the Sub-Saharan African and Hispanic/Latin American ancestry, balanced by subtle warmth from East Asian heritage, creating a richly complex base without ashy cast",
-    "complexion": "Heavily lined face with pronounced cheekbones and sharp jawline; deep laugh lines around the eyes and mouth suggest chronic amusement at human folly. Facial structure shows the wider cheekbone prominence of African ancestry combined with the angular jaw definition of East Asian heritage. Skin weathered but clean, with the particular dryness of someone living in industrial lake-effect zones. No makeup. Expression tends toward stillness until she speaks, then becomes remarkably mobile.",
+    "skin_tone": "Warm medium-honey brown with golden undertones from the East Asian ancestry base, enriched by subtle warmth from Hispanic/Latin American heritage and a cool undertone from Eastern European genetics, creating a luminous balanced tone without ashy cast",
+    "complexion": "Heavily lined face with pronounced cheekbones and sharp jawline; deep laugh lines around the eyes and mouth suggest chronic amusement at human folly. Facial structure shows the high cheekbone prominence and subtle eye-shape characteristic of East Asian heritage, combined with angular jaw definition enhanced by the secondary ancestry influences. Skin weathered but clean, with the particular dryness of someone living in industrial lake-effect zones. No makeup. Expression tends toward stillness until she speaks, then becomes remarkably mobile.",
     "distinguishing_marks": [
       "Fine silver threading visible beneath the skin of both knuckles, most visible on the dorsal surface in direct light — the result of subcutaneous nerve-enhancement implants.",
       "A thin pale scar running along her left temple to jawline, approximately 8cm, healed decades ago; she does not discuss its origin.",
@@ -235,14 +218,38 @@
     "posture_movement": "Carries herself with minimal motion; economical and deliberate. Sits still for extended periods, hands folded, observing before speaking. Moves with the precision of someone managing chronic pain without complaint. When she stands, she rises slowly but completely — no half-measures. Her default expression is rest-neutral, but her eyes miss nothing.",
     "clothing_style": "Tier 5 practical: hand-mended gray synthetic workpants with reinforced knees, a layered system of undyed linen and recycled thermal-weave that can be adjusted for temperature, and a long vest made from salvaged industrial canvas dyed dark indigo. All items show visible mending; nothing matches by design. Wears a hand-braided cord around her left wrist from which hangs a small cast-iron charm in the shape of an abstract machine (representing Ironlung). Footwear is practical boots with reinforced soles, resoled at least twice. No jewelry except the charm. Clothing is kept scrupulously clean despite the environment."
   },
-  "image_prompt": "Vega Tovar, 156cm tall lean-muscled woman in her seventies with deep golden-brown skin reflecting Sub-Saharan African, Hispanic, and East Asian ancestry. Distinctive white undercut hair with fuller crown swept back. Dark penetrating eyes set in a weathered, expressive face with pronounced cheekbones and deep laugh lines. Fine silver subcutaneous implant threading visible on both knuckles in bright light. Pale temple-to-jaw scar. Wearing scrupulously maintained Tier 5 practical workwear: hand-mended gray syntetics, undyed linen layers, dark indigo salvaged canvas vest. Hand-braided cord with abstract machine charm at left wrist. Reinforced boots. Minimal jewelry. Stillness and economical posture, observant expression. Industrial Great Lakes Metropolitan Zone setting, cool overhead lighting catching the silver implant work, muted cyberpunk aesthetic, seated or standing with deliberate precision. Atmosphere of quiet competence and lived experience. --ar 2:3 --v 6",
+  "image_prompt": "Vega Jung, 156cm tall, wiry-lean East Asian-dominant woman (78.9% East Asian, 10.7% Hispanic/Latin American, 10.4% Eastern European) with warm honey-brown skin and golden undertones. Natural white short hair in undercut style, shaved at temples and sides with fuller crown swept back. Dark penetrating brown eyes set in heavily lined face with sharp cheekbones and angular jawline. Silver subcutaneous implant threading visible on knuckles in direct light. Thin pale 8cm scar along left temple to jawline. Wearing hand-mended gray synthetic workpants, layered undyed linen and thermal-weave top, long dark indigo salvaged canvas vest. Hand-braided cord around left wrist with cast-iron machine charm. Practical reinforced boots. Economical posture, minimal motion, rest-neutral expression. GLMZ Great Lakes Metropolitan Zone, industrial lake-effect setting, cool neon and overhead lighting highlighting her augmentations and weathered resilience. Scrupulously clean clothing despite environment. Stillness and quiet observation. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 45.7,
-    "Hispanic/Latin American": 35.0,
-    "East Asian": 19.3
+    "East Asian": 78.9,
+    "Hispanic/Latin American": 10.7,
+    "Eastern European": 10.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 78.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 8.5
+      },
+      "Mexican": {
+        "Mexican": 2.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 4.5,
+        "Hungarian": 3.2
+      },
+      "Slavic West": {
+        "Polish": 2.7
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Spindle Row — a narrow shopfront wedged between a noodle parlor and a Ferrogate substation, near Ashland and Chicago Ave",
-  "description": "Dayo is a broad-shouldered woman with deep umber skin mapped with geometric scarification across her forearms — old Yoruba patterns her grandmother pressed into her at sixteen, now faded and stretched by decades of work. Her hair is natural silver-white, cropped close to her skull, and she wears copper-wire reading glasses that she made herself from salvage. Her hands are perpetually waterlogged-looking, skin puckered at the knuckles from years of industrial cleaning solvents, and she keeps a bone-handled seam-ripper tucked behind her ear like a pen.\n\nShe runs 'Mbeki Steam & Stitch' with the quiet authority of someone who has outlasted three recessions, two corporate rezoning drives, and one actual flood. She is not warm exactly, but she is reliable — a quality the Enclave treats like gold. She has strong opinions about synthetic fiber and stronger ones about people who don't sort their colors, but if you're three months behind on your account and you need your work uniform pressed for a job interview, she will do it and say nothing.",
+  "description": "Indigo Kamara is a broad-shouldered woman with deep umber skin mapped with geometric scarification across her forearms — old Yoruba patterns her grandmother pressed into her at sixteen, now faded and stretched by decades of work. Her hair is natural silver-white, cropped close to her skull, and she wears copper-wire reading glasses that she made herself from salvage. Her hands are perpetually waterlogged-looking, skin puckered at the knuckles from years of industrial cleaning solvents, and she keeps a bone-handled seam-ripper tucked behind her ear like a pen.\n\nShe runs 'Mbeki Steam & Stitch' with the quiet authority of someone who has outlasted three recessions, two corporate rezoning drives, and one actual flood. She is not warm exactly, but she is reliable — a quality the Enclave treats like gold. She has strong opinions about synthetic fiber and stronger ones about people who don't sort their colors, but if you're three months behind on your account and you need your work uniform pressed for a job interview, she will do it and say nothing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -172,7 +172,7 @@
     "Code Keeper": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,44 +235,18 @@
     "Zheng-dao Bioelectric",
     "Ferrogate Transit",
     "Tessera Corponation",
-    "Lazarus LX-2 'Lab Rat'",
-    "SPINDLE",
+    "Chicago",
+    "Indigo",
     "Silver",
     "Copper",
+    "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Gold",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Aïssé Dragomirescu-Faalelei",
-    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
-    "Dragan Petersen-Bah",
-    "Dzemal Acholonu-Patagiri",
-    "Ekundayo Halvorsen-Mansour",
-    "Lazarus IDP-1 'Teeth'",
-    "Narrowcast",
-    "Nkechi Alvarado-Ostrowski",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Orbital Drop Pod",
-    "Oumarou Svec-Ranginui",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Roshani Mvula-Atencio",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Specter",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera TK-11 Specter 'Whisper'",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Counter"
+    "Gold"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Middle Eastern with significant Sub-Saharan African, East Asian, and Hispanic/Latin American ancestry, creating a striking polyphonic phenotype. Middle Eastern structure evident in facial geometry and skin undertones; Sub-Saharan African features in cheekbone prominence and nose width; East Asian elements in eye shape and hair texture; Pacific Islander and Hispanic heritage contributing subtle warmth to overall complexion.",
+    "heritage": "Predominantly Sub-Saharan African (80.3%) with significant Pacific Islander (10.6%), Southeast Asian (5.1%), and North African (4.0%) ancestry. Sub-Saharan African features dominant in facial structure: prominent broad cheekbones, strong wide nose, and rich deep skin tone. Pacific Islander heritage adds warmth and subtle golden undertones to complexion. Southeast Asian ancestry contributes to eye shape and hair texture nuance. North African elements visible in facial geometry and subtle olive undertones beneath warm bronze base.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, muscular through the arms and upper back from decades of manual labor — not lean, not heavy, but densely packed with functional strength. Slight forward cant to her posture from hunching over pressing boards.",
@@ -280,8 +254,8 @@
     "hair_style": "Cropped close to the skull, no styling, practical",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and appraising",
-    "skin_tone": "Warm bronze-umber with subtle golden and olive undertones — weathered and sun-exposed along the forearms, the complexity of her ancestry visible in the way light plays across her skin, neither purely warm nor cool but harmoniously blended.",
-    "complexion": "Face is lined but not sagging; prominent cheekbones with gentle width across the face, strong broad nose, wide mouth. Minimal makeup. Skin around the eyes is creased from squinting at fine seam work and decades of industrial steam exposure. The bridge of her nose shows subtle structural depth characteristic of her Middle Eastern heritage. Hands show pronounced textural damage — puckered at knuckles, callused palms, slight discoloration from solvent contact.",
+    "skin_tone": "Deep warm bronze with golden and olive undertones — weathered and sun-exposed along the forearms, the complexity of her Sub-Saharan African, Pacific Islander, and North African ancestry visible in the way light plays across her skin, harmoniously blended into rich, luminous depth.",
+    "complexion": "Face is lined but not sagging; prominent broad cheekbones with strong facial width characteristic of Sub-Saharan African heritage, strong broad nose, wide mouth. Minimal makeup. Skin around the eyes is creased from squinting at fine seam work and decades of industrial steam exposure. The bridge of her nose shows robust structural depth. Hands show pronounced textural damage — puckered at knuckles, callused palms, slight discoloration from solvent contact.",
     "distinguishing_marks": [
       "Geometric Yoruba scarification patterns across both forearms — chevrons, parallel lines, and interlocking diamonds, faded and stretched by age, positioned symmetrically from wrist to elbow.",
       "Old burn scar on the inside of her right wrist — quarter-inch wide, pale pink, from a steam press accident circa 2180.",
@@ -291,16 +265,48 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders back but naturally tensed. Moves with economic precision — no wasted motion. Walks with a slight outward heel-strike. Hands are rarely still; fingers work constantly even when idle, habit from decades of tactile work. Eye contact is direct and sustained, unsmiling default expression.",
     "clothing_style": "Tier 3-4 practical: faded indigo work apron over a plain charcoal long-sleeve shirt with the cuffs rolled and fastened with copper safety pins. The shirt is her own work — neat patches on both elbows in matching indigo, visible hand-stitching. Loose-fitting gray linen trousers with reinforced seams and multiple utility pockets, cuffed at the ankle. Feet in scuffed black leather work boots with rubber soles worn at the heels. Around her neck, a thin braided cord holding a small wrapped bundle of herbs — a charm she keeps but doesn't discuss. Her copper-wire reading glasses hang on a beaded cord around her neck when not in use. No jewelry except a tarnished silver band on her left ring finger."
   },
-  "image_prompt": "Indigo Kamara, 52-year-old woman of mixed Middle Eastern, Sub-Saharan African, East Asian, and Hispanic heritage, 172cm tall with broad muscular shoulders. Warm bronze-umber skin with subtle golden undertones, weathered from decades of industrial work. Silver-white cropped hair close to skull. Strong facial structure with prominent cheekbones, wide nose, lined but dignified face. Dark brown eyes, direct and alert. Both forearms marked with faded geometric Yoruba scarification patterns. Visible bilateral titanium exoframe braces on both wrists, matte gunmetal gray with worn joints. Worn but immaculate: faded indigo work apron over charcoal long-sleeve shirt with hand-stitched indigo patches at elbows, copper safety pins at cuffs, loose gray linen trousers cuffed at ankle, scuffed black leather work boots. Thin braided cord around neck holding herb bundle. Copper-wire reading glasses on beaded cord. Tarnished silver band on left ring finger. Standing in industrial laundry facility, soft fluorescent overhead lighting mixing with warm afternoon light from high windows, industrial steam rising behind her. Slight forward posture from decades of pressing work. Expression stern, unsmiling, focused. Hands at rest but fingers subtly working. Cyberpunk 2226, Great Lakes Metropolitan Zone. Texture and wear visible on all materials. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Kamara, 172cm tall woman with deep warm bronze skin reflecting Sub-Saharan African, Pacific Islander, and North African heritage, prominent broad cheekbones and strong wide nose, silver-white hair cropped close to skull. Weathered face lined from decades of industrial work, dark brown alert eyes, creased around the edges. Standing with direct posture, broad muscular shoulders. Faded geometric Yoruba scarification patterns across both forearms, pale pink steam press scar on right wrist, amber chemical staining on fingernails. Bilateral gunmetal gray titanium exoframes visible on both forearms, right side more worn. Wearing faded indigo work apron over charcoal long-sleeve shirt with copper safety pins at cuffs and indigo hand-stitched elbow patches, gray linen trousers cuffed at ankle, scuffed black work boots. Thin braided herb charm cord around neck, copper-wire reading glasses hanging on beaded cord. Hands constantly moving, economic precision in movement. GLMZ Great Lakes Metropolitan Zone, industrial workshop setting with cool neon accent lighting catching the metallic exoframes, moody atmospheric lighting emphasizing weathered texture and work-worn details, hyperrealistic character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 35.4,
-    "Sub-Saharan African": 26.4,
-    "East Asian": 24.1,
-    "Hispanic/Latin American": 10.3,
-    "Pacific Islander": 3.8
+    "Sub-Saharan African": 80.3,
+    "Pacific Islander": 10.6,
+    "Southeast Asian": 5.1,
+    "North African": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 36.1
+      },
+      "Southern African": {
+        "Botswanan": 44.2
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 10.6
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 5.1
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Kabyle": 0.5,
+        "Tuareg": 0.5
+      },
+      "Nile Valley": {
+        "Sudanese": 1.2,
+        "Egyptian": 1.6
+      },
+      "Maghreb": {
+        "Moroccan": 0.2
+      }
+    }
+  }
 }

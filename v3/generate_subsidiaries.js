@@ -179,18 +179,18 @@ const subsidiaryData = {
 
   'ouroboros_energy.json': [
     // Obviously connected
-    { name: 'Ouroboros Grid Command', line_of_business: 'Primary power transmission backbone operations across the 500km Meridian 88 corridor', public_facing: false },
+    { name: 'Ouroboros Grid Command', line_of_business: 'Primary power transmission backbone operations across the 500km GLMZ corridor', public_facing: false },
     { name: 'The Current Security Division', line_of_business: '12,000-person grid protection and power-denial warfare unit with EMP capability', public_facing: false },
     { name: 'Lake Michigan Thermal Array', line_of_business: 'Submerged geothermal and thermal differential power generation', public_facing: false },
     { name: 'Ouroboros Fusion Cluster Operations', line_of_business: 'Six fusion micro-reactor installations producing baseline corridor power', public_facing: false },
     { name: 'PowerBond Billing Systems', line_of_business: 'Automated direct-debit energy billing with no opt-out mechanism', public_facing: false },
-    { name: 'Meridian 88 Transmission Corp', line_of_business: 'High-voltage power line maintenance along the sovereign energy corridor', public_facing: false },
+    { name: 'GLMZ Transmission Corp', line_of_business: 'High-voltage power line maintenance along the sovereign energy corridor', public_facing: false },
     { name: 'Ostrander Energy Holdings', line_of_business: 'Legacy holding company for the original eleven municipal power acquisitions', public_facing: false },
     { name: 'Ouroboros Industrial Power', line_of_business: 'Bulk energy contracts for corponation facilities and manufacturing zones', public_facing: false },
     // Moderately connected
     { name: 'Cascade Prevention Systems', line_of_business: 'Grid failure prediction and automated load-balancing technology', public_facing: false },
     { name: 'Ring Substation Network', line_of_business: 'Local power distribution substations embedded throughout corridor residential zones', public_facing: false },
-    { name: 'Ouroboros Solar Array Division', line_of_business: 'Solar panel farms on reclaimed land along the Meridian 88 corridor', public_facing: false },
+    { name: 'Ouroboros Solar Array Division', line_of_business: 'Solar panel farms on reclaimed land along the GLMZ corridor', public_facing: false },
     { name: 'Deep Lake Geothermal', line_of_business: 'Experimental deep-bore geothermal energy extraction beneath Lake Michigan', public_facing: false },
     { name: 'Corridor Wind Generation', line_of_business: 'Wind turbine arrays along the Great Lakes shore feeding the transmission grid', public_facing: false },
     { name: 'Brownout Protocol Engineering', line_of_business: 'Targeted power reduction technology used as coercive enforcement tool', public_facing: false },
@@ -240,7 +240,7 @@ const subsidiaryData = {
     { name: 'The Static Security Division', line_of_business: '3,200-person counter-intelligence unit specializing in information suppression', public_facing: false },
     { name: 'The Anchor Broadcasting Platform', line_of_business: 'Floating Lake Michigan media platform serving as broadcast hub and symbol of sovereignty', public_facing: false },
     { name: 'Vantablack Spire Operations', line_of_business: 'Headquarters facility management and editorial command center', public_facing: false },
-    { name: 'VBM Tower Network', line_of_business: 'Seventeen embedded broadcast towers spanning the Meridian 88 corridor', public_facing: false },
+    { name: 'VBM Tower Network', line_of_business: 'Seventeen embedded broadcast towers spanning the GLMZ corridor', public_facing: false },
     // Moderately connected
     { name: 'Voss Signal Intelligence', line_of_business: 'Regulatory circumvention strategy and information pipeline analysis', public_facing: false },
     { name: 'Narrative Relationship Management', line_of_business: 'Paid favorable coverage arrangements with Big 20 corponations', public_facing: false },

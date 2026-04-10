@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7227ad1a8e9f7e7a1c73dcc",
   "type": "character",
-  "name": "Sibusiso Halverson-Agyemang",
+  "name": "Farid Čabarkapa-Jitpakdee",
   "aliases": [
     "Yel",
     "The Lattice"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Loft, Edgewater Prism, near Clark and Belmont",
-  "description": "Yelena is tall and angular, with deep brown skin that carries bioluminescent traceries across their collarbones and forearms — patterns they designed themselves, pulsing softly in slow amber waves when they're calm and spiking into white fractals when agitated. Their head is shaved close on the sides with a dense coil of dark hair on top, usually threaded with fiber-optic wire they forget to remove after working. They wear repurposed data-cable as jewelry and smell faintly of ozone and soldering flux. Their eyes are mismatched by choice: one standard dark brown, one retrofitted with a lens that records everything in spectral wavelengths invisible to the naked eye.\n\nYelena speaks rarely in social situations but fills rooms with their work — massive holographic installations that seem to breathe, depicting ancestral memory as geometric light-structures. They have a reputation for being difficult and transcendent in equal measure, capable of reducing gallery patrons to tears with a piece they assembled from data scraped off dead ELFs. They are privately terrified that their best work is already behind them.",
+  "description": "Farid Čabarkapa-Jitpakdee is tall and angular, with deep brown skin that carries bioluminescent traceries across their collarbones and forearms — patterns they designed themselves, pulsing softly in slow amber waves when they're calm and spiking into white fractals when agitated. Their head is shaved close on the sides with a dense coil of dark hair on top, usually threaded with fiber-optic wire they forget to remove after working. They wear repurposed data-cable as jewelry and smell faintly of ozone and soldering flux. Their eyes are mismatched by choice: one standard dark brown, one retrofitted with a lens that records everything in spectral wavelengths invisible to the naked eye.\n\nFarid Čabarkapa-Jitpakdee speaks rarely in social situations but fills rooms with their work — massive holographic installations that seem to breathe, depicting ancestral memory as geometric light-structures. They have a reputation for being difficult and transcendent in equal measure, capable of reducing gallery patrons to tears with a piece they assembled from data scraped off dead ELFs. They are privately terrified that their best work is already behind them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -194,7 +194,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Loft",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -214,28 +214,11 @@
     "The Loft",
     "Tessera Corponation",
     "Irontide Tidal Energy",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gravimetric Collapse Charge GCC-9",
-    "Aybek Sato-Poku",
-    "Breck Tannen",
-    "Eshe Pena-Baah",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kadiatou Bergstrom-Konate",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "The Collective",
-    "The Pure Hand",
-    "The Third Rail",
-    "The Underlayer Collective",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yuki Nwosu-Petrenko"
+    "Gravimetric Collapse Charge GCC-9"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Mixed Northern European, Sub-Saharan African, Hispanic/Latin American, and Middle Eastern ancestry creates a striking phenotype: warm-toned brown skin with subtle golden undertones from the Mediterranean influence, angular facial structure with high cheekbones reflecting the African and Hispanic genetics, and a naturally present warmth in complexion from the blended heritage.",
+    "heritage": "Eastern European (41.8%), South Asian (24.6%), Southeast Asian (21.1%), and Sub-Saharan African (12.5%) ancestry creates a striking polychromatic phenotype: deep warm brown skin with golden undertones reflecting the confluence of melanin expression across four distinct continental lineages. Angular facial structure balances Eastern European bone architecture—high, prominent cheekbones and defined jaw—with the softer, rounder midface characteristics of South and Southeast Asian genetics. The overall effect is a luminous, warm-toned complexion with inherent radiance.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Tall and angular with lean musculature; movements economical and precise, suggesting years of fine motor work. Shoulders slightly forward from studio posture.",
@@ -243,8 +226,8 @@
     "hair_style": "Shaved close on sides and back, dense coil of dark hair on crown, often threaded with discarded fiber-optic wire",
     "hair_length": "Medium (crown only)",
     "eye_color": "Left eye: dark brown, natural. Right eye: retrofitted spectral-recording lens with faint iridescent sheen and micro-circuitry visible at iris edge",
-    "skin_tone": "Warm golden-brown with luminous undertones, reflecting the blend of Northern European paleness modulated by strong Sub-Saharan African and Hispanic melanin expression",
-    "complexion": "Clear and angular with high cheekbones; bioluminescent amber traceries pulse across collarbones and forearms in slow wave patterns when calm, spiking into white fractals when agitated or in creative flow. Faint scent of ozone and soldering flux clings to their clothing and skin.",
+    "skin_tone": "Deep warm brown with golden luminous undertones, rich harmony of Eastern European, South Asian, Southeast Asian, and Sub-Saharan African melanin expression",
+    "complexion": "Angular facial structure with high, defined cheekbones showing balanced Eastern European and South/Southeast Asian bone prominence; warm medium-to-deep brown skin with even tone and natural radiance. Bioluminescent amber traceries pulse across collarbones and forearms in slow wave patterns when calm, spiking into white fractals when agitated or in creative flow. Faint scent of ozone and soldering flux clings to clothing and skin.",
     "distinguishing_marks": [
       "Bioluminescent geneware traceries across both collarbones forming interconnected geometric patterns",
       "Bioluminescent traceries extending down both forearms in branching circuit-like designs",
@@ -254,15 +237,52 @@
     "posture_movement": "Moves with deliberate economy—no wasted motion. Often stands still for extended periods while thinking, fingers unconsciously twitching as if sculpting invisible light. Head tilts when listening despite minimal verbal responses. Hands frequently gestured mid-air as if manipulating holograms even in conversation.",
     "clothing_style": "Tier 3-4 utilitarian mixed with artistic statement: repurposed data-cables worn as jewelry (necklaces, wrist wraps); worn black synthetic cargo pants with bulging pockets (tools, light-paper scraps); oversized lab coat or modified indigo denim jacket with sleeves rolled to expose augmented forearms and traceries. Scuffed zero-gravity work boots. Faint shimmer of solder residue on fabric. Occasionally wears safety goggles pushed up on forehead even when not working."
   },
-  "image_prompt": "Sibusiso Halverson-Agyemang, 188cm tall cyberpunk artist with warm golden-brown skin and high cheekbones, shaved sides with coiled black hair crown woven with fiber-optic wire. Left eye retrofitted with spectral-recording lens showing copper circuitry. Bioluminescent amber traceries glow across collarbones and branching down both forearms in circuit-like patterns. Wearing oversized indigo denim jacket with rolled sleeves exposing glowing augmented forearms, black cargo pants, scuffed zero-gravity boots, data-cable jewelry. Safety goggles pushed up on forehead. Lean angular build, economical posture. Studio workshop ambiance with soft neon lighting catching the bioluminescent patterns. Cyberpunk 2220s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Farid Čabarkapa-Jitpakdee, tall angular 188cm figure in GLMZ, deep warm brown skin with golden undertones reflecting Eastern European, South Asian, Southeast Asian, and Sub-Saharan African heritage. High defined cheekbones, dark brown left eye with retrofitted spectral-recording lens on right showing copper-silver circuits. Dense black hair coiled on crown shaved at sides, threaded with fiber-optic wire. Bioluminescent amber circuit traceries glowing across collarbones and forearms in geometric branching patterns. Wearing oversized indigo denim jacket with rolled sleeves exposing augmented forearms, black cargo pants, repurposed data-cable jewelry, scuffed work boots. Lean precise posture, fingers twitching as if manipulating invisible holograms. Faint ozone and solder flux aura. Studio lighting with cyan and amber neon backlighting emphasizing bioluminescent geneware. Serious focused expression, head slightly tilted. Neo-noir artist aesthetic, near-future tech integrated into body --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 39.3,
-    "Sub-Saharan African": 27.8,
-    "Hispanic/Latin American": 21.7,
-    "Middle Eastern": 11.2
+    "Eastern European": 41.8,
+    "South Asian": 24.6,
+    "Southeast Asian": 21.1,
+    "Sub-Saharan African": 12.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 37.7
+      },
+      "Slavic West": {
+        "Slovak": 0.4,
+        "Sorbian": 3.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 12.2,
+        "Gujarati": 12.4
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 6.3
+      },
+      "Thai": {
+        "Thai": 14.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 0.8
+      },
+      "West African": {
+        "Nigerian": 7.1
+      },
+      "Central African": {
+        "Congolese": 2.6,
+        "Angolan": 2
+      }
+    }
+  }
 }

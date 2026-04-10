@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bd7e0eae0714d6a2552d1b",
   "type": "character",
-  "name": "Slate Madrigal-Matai",
+  "name": "Slate Kulkarni-Nokomis",
   "aliases": [
     "Hadja Aïssatou",
     "the Dreaming Woman"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Canopy, Lakeview Neon district, third floor of a mixed-use residence above a fabrication stall, near Clark and Addison",
-  "description": "Aïssatou is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nAïssatou was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
+  "description": "Slate Kulkarni-Nokomis is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nSlate Kulkarni-Nokomis was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -159,7 +159,7 @@
     "Meaning Maker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,26 +177,14 @@
     "Grandmother",
     "The CEO",
     "Canopy Station Nine",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Aïda Połczyńska-Ouattara",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Ghostbridge Island",
-    "Gwenaël Osei-Tenochtitlan",
-    "Nnamdi Ostrowski-Faletolu",
-    "Philibert Mwangi-Djordjevic",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "The Canopy",
-    "The Heritage Vault",
-    "The Listener",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Quiet Room"
+    "The Accidental",
+    "Canopy",
+    "Slate",
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (72.6%) with significant Sub-Saharan African (19.1%) and Pacific Islander (8.3%) ancestry. The blend creates warm, rich brown tones with subtle golden undertones characteristic of Latinx and African heritage mixing, with hints of Pacific Islander facial structure in cheekbone prominence and eye shape.",
+    "heritage": "South Asian (58.1%) with substantial Indigenous American (36.5%) and Hispanic/Latin American (5.4%) ancestry. The genetic blend creates a rich, warm brown foundation from South Asian heritage, deepened and enriched by Indigenous American ancestry which contributes prominent cheekbones and distinctive eye shape, with subtle warmth from Hispanic/Latin American heritage. The result is a complexion of considerable depth and warmth, golden-bronze in natural light.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and grounded, with a dancer's carriage — strong shoulders, minimal excess, the posture of someone who has spent decades in deliberate, controlled movement",
@@ -204,8 +192,8 @@
     "hair_style": "Wrapped daily in handwoven indigo and rust-colored fabric; when unwrapped, full and textured, worn in a natural crown",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Left eye: warm deep brown (natural). Right eye: prosthetic, engineered to near-perfect match but with imperceptible predictive tracking lag",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of strong Hispanic/Latin American and Sub-Saharan African ancestry blended with Pacific Islander warmth",
-    "complexion": "Clear, minimal scarring except for faint surgical lines at the right orbital socket (nearly invisible unless examined closely). High, prominent cheekbones suggesting Pacific Islander heritage structure. Minimal makeup; skin care is practical rather than cosmetic. Slight creases around eyes and mouth from fifty-two years of deliberate expression. Warm golden undertone visible in natural light.",
+    "skin_tone": "Deep warm brown with golden-bronze undertones — the rich result of South Asian foundation (58.1%) significantly influenced by Indigenous American ancestry (36.5%), with subtle warmth from Hispanic/Latin American heritage (5.4%)",
+    "complexion": "Clear, minimal scarring except for faint surgical lines at the right orbital socket (nearly invisible unless examined closely). High, prominent cheekbones with strong Indigenous American structure. Broad facial planes characteristic of Indigenous heritage. Minimal makeup; skin care is practical rather than cosmetic. Slight creases around eyes and mouth from fifty-two years of deliberate expression. Warm golden-bronze undertone visible in natural light, deepening to rich mahogany in shadow.",
     "distinguishing_marks": [
       "Surgical scar tissue at right eye socket, visible only under direct light and careful inspection",
       "Small burn mark on left forearm (2cm), pale against skin, from a fabrication stall accident in her forties",
@@ -215,14 +203,36 @@
     "posture_movement": "Upright, economical. Tilts head slightly left when listening — a habit that reads as active tuning rather than distraction. Moves slowly and with intention; no unnecessary gestures. Hands remain still or engaged in purpose (writing, arranging prayer-papers). Eye contact is direct and maintained without aggression.",
     "clothing_style": "Practical and layered, Tier 3-4 aesthetic. Prefers natural fibers: linen, cotton, wool. Favors earth tones (ochre, indigo, rust, cream). Daily uniform consists of a long-sleeved tunic (custom-sewn, likely from a Mexicantown tailor), loose trousers, and handwoven shawl. Wears minimal jewelry — a small wooden prayer bead on her left wrist, a gift from her grandmother. Footwear is simple and well-maintained (cloth slippers indoors, sturdy canvas walking shoes for the district). Nothing corporate, nothing flashy, nothing that signals wealth or status-seeking."
   },
-  "image_prompt": "Slate Madrigal-Matai, 168cm lean frame with dancer's posture, warm golden-brown skin blending Hispanic/Latin American, Sub-Saharan African, and Pacific Islander heritage. Medium-length natural black hair with silver threads, wrapped in handwoven indigo and rust fabric when styled. Deep brown left eye and subtle prosthetic right eye. High, prominent cheekbones. Wearing long-sleeved linen tunic in ochre, loose cream trousers, handwoven rust-colored shawl. Simple wooden prayer bead on left wrist. Standing with upright, economical posture in soft warm lighting. Cyberpunk 2226 GLMZ setting, minimalist aesthetic, no chrome or flashy augmentation. Thoughtful, centered, spiritual presence. Indoor domestic or community space with earth-tone surroundings. --ar 2:3 --v 6",
+  "image_prompt": "Slate Kulkarni-Nokomis, a 52-year-old woman with deep warm brown skin and golden-bronze undertones, reflecting South Asian (58%) and Indigenous American (36%) ancestry. High, prominent cheekbones with strong Indigenous structure, warm deep brown natural left eye, nearly-invisible prosthetic right eye with subtle tracking differences. Black hair with silver threads, wrapped in handwoven indigo and rust fabric, shoulder-length when loose. Lean dancer's build, upright posture. Wearing a long-sleeved ochre linen tunic, loose cream trousers, and handwoven rust-colored shawl. Simple wooden prayer bead on left wrist. Direct gaze, calm expression, minimal augmentation visible. Standing in warm natural light in a modest Great Lakes Metropolitan Zone interior, 2226. Neo-noir practical aesthetic, earth tones, no chrome or flashy tech. Mood: contemplative, grounded, deeply present. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 72.6,
-    "Sub-Saharan African": 19.1,
-    "Pacific Islander": 8.3
+    "South Asian": 58.1,
+    "Indigenous American": 36.5,
+    "Hispanic/Latin American": 5.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 58.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 17,
+        "Cherokee": 3.8
+      },
+      "Great Lakes Nations": {
+        "Menominee": 15.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 3,
+        "Colombian": 2.4
+      }
+    }
+  }
 }

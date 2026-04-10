@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5fa77e3a2d58c27aa84c327",
   "type": "character",
-  "name": "Sage Mbekele",
+  "name": "Sage Truong",
   "aliases": [
     "The Index",
     "Dzint"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Gage Circuit night market, GLMZ — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
-  "description": "Dzintars is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
+  "description": "Sage Truong is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -175,7 +175,7 @@
     "Diplomat": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gage Circuit night market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,43 +235,27 @@
   ],
   "related_entities": [
     "Gage Circuit",
-    "GLMZ",
+    "Night Market Noodles",
+    "The Marrow Market",
     "Tessera Corponation Palimpsest Identity Engine",
     "The United Workers Front",
+    "Noir Dining",
     "The Heritage Vault",
-    "Aslan Vasquez-Chatterjee",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
     "Silver",
-    "Slagworks Industrial",
+    "Neural Palate",
     "Hazel Brink",
+    "Slagworks Industrial",
+    "Zara Bergqvist",
+    "Compass Rose",
     "The Pale Mile",
-    "Bashir Quansah-Mehrotra",
-    "The Milwaukee Core",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Emeka Johansson-Orozco",
-    "Idris Forsberg-Quaye",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Narrowcast",
-    "Ngaire Rojas-Yeboah",
-    "Night Market Noodles",
-    "Noir Dining",
-    "Ringo DV-4 'Courier'",
-    "Stainless Steel",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Bazaar",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (65.7%) with significant East Asian (22.6%) and Hispanic/Latin American (11.7%) ancestry. The genetic blend manifests as warm medium-brown skin with golden undertones, sharp facial structure with pronounced cheekbones characteristic of East African heritage, and subtle facial feature blending from East Asian and Latin American ancestry lines.",
+    "heritage": "Southeast Asian ancestry (48.5%) forms the genetic foundation, substantially enriched by Sub-Saharan African (19.3%), South Asian (17.5%), and East Asian (11.0%) admixture, with trace Northern European (3.7%). This blend creates a distinctly cosmopolitan phenotype: warm medium-brown skin with golden undertones and subtle reddish depth, reflecting the Southeast Asian base harmonized with African warmth and South Asian richness. Facial structure is a synthesis across continents — prominent cheekbones with the high placement of East African ancestry, refined bone structure characteristic of Southeast and East Asian heritage, and the subtle nasal bridge definition from South Asian genetics. The overall effect is striking angular definition softened by warm, complex undertones.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Angular and narrow throughout — sharp collarbones, prominent wrist bones, lean musculature with minimal body fat. Frame suggests someone sustained by coffee and insomnia rather than deliberate athleticism.",
@@ -279,8 +263,8 @@
     "hair_style": "Close-cropped on sides and back; dramatic single vertical stripe of white hair at center-front left, grown long enough to fall across temple",
     "hair_length": "Short (sides/back) with medium-length accent stripe",
     "eye_color": "Hazel with color-shifting geneware irises that transition from copper to pale green depending on light and neural interface activation",
-    "skin_tone": "Warm medium-brown with golden undertones — reflecting the dominant Sub-Saharan African ancestry with subtle warmth from East Asian and Latin American blending",
-    "complexion": "Sharp cheekbones dominating a narrow face with refined bone structure; dark crescents under eyes from chronic sleep deprivation are now semi-permanent fixture of their appearance; skin condition clear but drawn; lips thin and often compressed in concentration",
+    "skin_tone": "Warm medium-brown with golden undertones and subtle reddish depth — a complex blending of Southeast Asian foundation with Sub-Saharan African warmth and South Asian richness",
+    "complexion": "Sharp cheekbones dominating a narrow face with refined, high bone structure; dark crescents under eyes from chronic sleep deprivation are now semi-permanent fixture of their appearance; skin condition clear but drawn; lips thin and often compressed in concentration",
     "distinguishing_marks": [
       "Neural interface jack at left temple — small raised circular port with barely-visible scarring around contact points, sometimes glints faintly when powered",
       "All ten fingernails hand-painted with intricate silver circuit-trace patterns that are reapplied weekly; patterns vary but follow recursive geometric logic"
@@ -289,14 +273,70 @@
     "posture_movement": "Economical and precise — moves with the efficiency of someone who has optimized every gesture. Sits slightly forward even when at rest, attention laser-focused on whoever is speaking. Hands gesture in small, controlled patterns. When exhausted, occasionally trails off mid-motion as if processor speed has dropped. Minimal idle movement; no fidgeting.",
     "clothing_style": "Tier 3-4 working class with deliberate anti-mystique choices. Typically wears fitted black or dark gray synth-cotton shirts with visible stress-weave reinforcement at shoulders and wrists. Dark trousers with cargo pockets containing data-chip cases and neural interface maintenance tools. A mid-length coat of water-resistant polymer in charcoal, bearing the faded logo of an older GLMZ courier service — thrifted or inherited. No jewelry except a simple stainless steel band on left wrist that houses a subdermal power-tap connector. Shoes are practical: reinforced ankle boots with grip-sole, scuffed from night-market floors."
   },
-  "image_prompt": "Sage Mbekele, 168cm lean angular figure, warm medium-brown skin with golden undertones, sharp defined cheekbones, dark permanent crescents under eyes from sleep deprivation. Black hair close-cropped sides with striking white vertical stripe accent at left front temple falling across face. Hazel eyes with subtle copper-to-green color-shifting geneware visible in moody lighting. Small neural interface jack visible at left temple with faint scarring. Fitted black synth-cotton shirt with stress-weave reinforcement, dark cargo trousers, charcoal water-resistant polymer coat with faded courier service logo. All ten fingernails painted with intricate recursive silver circuit-trace patterns. Stainless steel band on left wrist. Scuffed reinforced ankle boots. Posture precise and forward-leaning, economical movements. Cyberpunk 2226 GLMZ night market setting, neon-lit alley with rain-slicked surfaces, moody atmospheric lighting catching neural interface jack and eye geneware, concentrated expression mid-data transfer. --ar 2:3 --v 6",
+  "image_prompt": "Sage Truong, GLMZ, portrait of a lean angular figure with warm medium-brown skin with golden undertones, sharp defined cheekbones, dark crescents under hazel geneware eyes that shift copper-to-green. Black hair close-cropped with dramatic white vertical stripe at center-front left falling across temple. Neural interface jack glinting at left temple with circuit-trace silver nail art visible on thin hands. Wearing fitted dark synth-cotton shirt with stress-weave reinforcement, charcoal polymer coat with faded courier logo, practical reinforced boots. Laser-focused expression, economical posture, sits slightly forward. Low neon light catching geneware irises, moody neo-noir workspace background, Great Lakes Metropolitan Zone 2226, tired and wired intensity, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 65.7,
-    "East Asian": 22.6,
-    "Hispanic/Latin American": 11.7
+    "Southeast Asian": 48.5,
+    "Sub-Saharan African": 19.3,
+    "South Asian": 17.5,
+    "East Asian": 11,
+    "Northern European": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 11.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 21.2
+      },
+      "Indonesian": {
+        "Javanese": 7.4,
+        "Sundanese": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 19.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 7.9
+      },
+      "Pakistani": {
+        "Sindhi": 0.7,
+        "Pashtun": 0.3
+      },
+      "Indian": {
+        "Tamil": 8.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 8.2
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      },
+      "Chinese": {
+        "Shanghainese": 1.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 1.8
+      },
+      "British Isles": {
+        "English": 1.4
+      },
+      "Germanic": {
+        "German": 0.3,
+        "Swiss German": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a710799e97d10e18f9d880a4",
   "type": "character",
-  "name": "Kira Johansson-Hinojosa",
+  "name": "Kira Karimi-Quartey",
   "aliases": [
     "Vasi",
     "The Climate Witch"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Edgewater Prism, lakefront research platform, near Clark and Belmont",
-  "description": "Vasilisa is a tall woman with the kind of weathered presence that comes from spending a significant portion of your life on open water in bad weather. Her skin is warm dark brown with a gray-olive undertone, her hair silver-white and worn in a long braid she secures with a sensor clip that doubles as a personal weather station. Her left arm from elbow to wrist carries a color-shifting geneware modification she chose in her forties — it reads lake temperature and turbidity data from her subdermal sensors and translates it into a slow gradient of blues and greens, so that her skin is always telling anyone who looks what the lake is doing. She considers this a professional tool.\n\nShe is sixty-three years old and has watched Lake Michigan change in ways that the city's official models consistently refuse to acknowledge. She is not bitter about this in the way of someone who has been defeated — she is bitter in the way of someone who has been right too many times and is running out of patience for the process of being right again. Her nickname 'The Climate Witch' was given to her by students who meant it warmly; she has no strong feelings about it. She leaves offerings for the lake E.L.F.s — particularly the one her students have named Bathys — because she says it costs nothing and the lake has given her everything.",
+  "description": "Kira Karimi-Quartey is a tall woman with the kind of weathered presence that comes from spending a significant portion of your life on open water in bad weather. Her skin is warm dark brown with a gray-olive undertone, her hair silver-white and worn in a long braid she secures with a sensor clip that doubles as a personal weather station. Her left arm from elbow to wrist carries a color-shifting geneware modification she chose in her forties — it reads lake temperature and turbidity data from her subdermal sensors and translates it into a slow gradient of blues and greens, so that her skin is always telling anyone who looks what the lake is doing. She considers this a professional tool.\n\nShe is sixty-three years old and has watched Lake Michigan change in ways that the city's official models consistently refuse to acknowledge. She is not bitter about this in the way of someone who has been defeated — she is bitter in the way of someone who has been right too many times and is running out of patience for the process of being right again. Her nickname 'The Climate Witch' was given to her by students who meant it warmly; she has no strong feelings about it. She leaves offerings for the lake E.L.F.s — particularly the one her students have named Bathys — because she says it costs nothing and the lake has given her everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -186,7 +186,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Edgewater Prism",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,34 +236,14 @@
   "related_entities": [
     "Edgewater Prism",
     "The Sullen Reach",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Lakefront Creamery",
+    "Patience",
     "Silver",
-    "Déjà Vu",
-    "Ambrogio Waweru-Djordanović",
-    "Aybek Alvarez-Okonkwo",
-    "Aïda Połczyńska-Ouattara",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Tessera Corponation",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Pure Hand",
-    "Toivo Diallo-Achebe",
-    "University Spine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Vuk Jorgensen-Toure",
-    "Zheng-dao Bioelectric"
+    "Déjà Vu"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant East and Southeast Asian ancestry, complemented by South Asian and Sub-Saharan African genetic contributions. The Ubiquitous Diaspora manifest in her features.",
+    "heritage": "Rich genetic mosaic anchored by Sub-Saharan African ancestry (55%) providing warm deep tones and rounded facial contours, substantially shaped by Middle Eastern heritage (27.2%) contributing defined bone structure and olive undertones, with meaningful Indigenous American (9.4%), East Asian (5.2%), and Southeast Asian (3.2%) contributions creating subtle structural refinements and warm complexion layering. A true product of the Ubiquitous Diaspora—her features speak to generations of global human movement.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and angular with the musculature of someone who has spent decades on water — broad shoulders, defined forearms, minimal body fat. Posture suggests ease in motion rather than static repose.",
@@ -271,8 +251,8 @@
     "hair_style": "Long braid secured with a dual-function sensor clip housing miniaturized weather instrumentation",
     "hair_length": "Long",
     "eye_color": "Deep brown with faint amber undertone — natural",
-    "skin_tone": "Warm medium-tan with subtle golden and olive undertones from blended Hispanic, East Asian, and South Asian ancestry, weathered from decades of lake exposure",
-    "complexion": "Broad, balanced facial structure reflecting mixed heritage; slightly higher cheekbones from East/Southeast Asian ancestry combined with fuller features from Hispanic and South Asian lines. Lines around the eyes and mouth from sustained squinting in glare and wind; sun-weathered but well-maintained. Minimal makeup. Hands show calluses and minor scars from equipment handling and weather work.",
+    "skin_tone": "Rich deep bronze with warm golden-amber undertones from dominant Sub-Saharan African heritage, layered with subtle olive and mahogany notes from Middle Eastern ancestry, further enriched by Indigenous American warmth. Decades of lake exposure have weathered the surface into a complex bronze-tinged patina with warm undertones preserved beneath.",
+    "complexion": "Strong, sculpted facial structure reflecting the blend of Sub-Saharan African and Middle Eastern ancestry—prominent cheekbones and defined jawline softened by fuller lips and rounded cheek contours from African genetic contribution, with subtle eye shape influence from East and Southeast Asian ancestry. Lines around the eyes and mouth from sustained squinting in glare and wind; sun-weathered but well-maintained. Minimal makeup. Hands show calluses and minor scars from equipment handling and weather work.",
     "distinguishing_marks": [
       "Fine scar tissue along the left side of her neck, barely visible but palpable — result of the 2201 near-drowning and subsequent cochlear implant installation",
       "Subdermal sensor array on both forearms visible as faint metallic tracery beneath the skin, more pronounced under direct light",
@@ -282,16 +262,62 @@
     "posture_movement": "Economical, purposeful movement — no wasted motion. Often oriented toward windows or toward the lake, even in conversation. Hands move with technical precision when discussing data. Stance is stable and grounded, adapted for standing on moving platforms. Slight forward tilt of the head — compensation for directional audio from the cochlear implant.",
     "clothing_style": "Tier 2-3 academic/field blend: waterproof lab coat (custom-tailored, high-end synthetic with temperature regulation), layered thermal wear beneath, reinforced cargo pants with sealed pockets for instruments, waterproof field boots with excellent tread. Accessorizes with a woven bracelet made from synthetic lake-plant fiber (gift from students). Wedding band worn on right hand (left hand often in water). No corporate branding. Watches and instruments are personal or University Spine-issued, never ostentatious."
   },
-  "image_prompt": "Kira Johansson-Hinojosa, 183cm tall lean water-researcher woman with warm medium-tan skin blending Hispanic, East Asian, and South Asian features, natural deep brown eyes with amber undertones. Long silver-white braid secured with sensor clip, high cheekbones, sun-weathered complexion with eye-wrinkles from decades of glare. Left forearm displays living color-shifting teal geneware responding to lake data; faint metallic subdermal sensor tracery visible on both arms. Subtle scar along left neck from cochlear implant. Wearing custom waterproof lab coat with temperature regulation over layered thermal wear, reinforced cargo pants with sealed pockets, waterproof field boots. Synthetic lake-plant fiber bracelet on wrist, wedding band on right hand. Standing near Great Lakes window in 2226 GLMZ research facility, slight forward head tilt, economical posture, hands positioned with technical precision near instruments. Cool window light and warm interior lighting creating subtle skin tone definition. Cyberpunk academic aesthetic, purposeful and grounded presence. --ar 2:3 --v 6",
+  "image_prompt": "Kira Karimi-Quartey, GLMZ, tall lean angular woman with rich deep bronze skin and warm golden undertones, long silver-white hair braided with embedded sensor clip, natural deep brown eyes with amber flecks, prominent cheekbones and defined jawline softened by fuller lips, subtle East Asian eye shape influence. Left forearm displays active teal color-shifting geneware responding to environmental data, subdermal sensor tracery visible beneath skin under light. Fine scar tissue along left neck from cochlear implant. Wearing custom waterproof temperature-regulation lab coat, layered thermal wear, reinforced cargo pants with sealed pockets, waterproof field boots. Woven synthetic lake-plant fiber bracelet, wedding band on right hand. Standing at window overlooking Great Lakes, economical precise posture, slight forward head tilt, hands positioned near weather instruments. Minimal makeup, sun-weathered complexion. Atmospheric indoor lighting with cool blue undertones from augmentation glow, soft window light catching silver hair and sensor tracery. Professional but field-worn appearance, no corporate branding. Mood: focused, contemplative, connected to water and data. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 36.0,
-    "East Asian": 26.4,
-    "Southeast Asian": 15.6,
-    "South Asian": 14.8,
-    "Sub-Saharan African": 7.2
+    "Sub-Saharan African": 55,
+    "Middle Eastern": 27.2,
+    "Indigenous American": 9.4,
+    "East Asian": 5.2,
+    "Southeast Asian": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 55
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 7.3
+      },
+      "Persian": {
+        "Afghan Dari": 17.6
+      },
+      "Arab Levantine": {
+        "Syrian": 1.7,
+        "Jordanian": 0.6
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Aymara": 5.2
+      },
+      "Plains Nations": {
+        "Cherokee": 1.7,
+        "Lakota": 0.9
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 0.7,
+        "Ojibwe": 0.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 4.7,
+        "Mandarin Northern": 0.5
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 1.8
+      },
+      "Laotian": {
+        "Laotian": 1.4
+      }
+    }
+  }
 }

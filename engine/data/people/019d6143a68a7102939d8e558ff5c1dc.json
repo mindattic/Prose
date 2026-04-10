@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68a7102939d8e558ff5c1dc",
   "type": "character",
-  "name": "Vladislav Mazurek-Fassi",
+  "name": "Joaquín Erikstad-Shin",
   "aliases": [
     "Ozzy",
     "Checkpoint Charlie (behind his back)"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Kessler Interchange, near North Ave and Milwaukee",
-  "description": "Osvaldo has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn't. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness — he lets things pass that he shouldn't, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal — an elaborate layered altar to the Kessler ELF he calls 'the Conductor' — and considers this entirely professional, not personal.",
+  "description": "Joaquín Erikstad-Shin has worked the Kessler Interchange checkpoint for nine years and has acquired the particular stillness of someone who has watched approximately four million people pass through a turnstile. He is mid-height, slightly soft around the middle now, with a wide face, copper-brown skin, and deep-set eyes that are always doing something his expression isn't. His hair has gone silver at the temples and he keeps it very neat. His only augmentation is a Ferrogate-standard wrist scanner and a cochlear comms implant he secretly uses to listen to Sahel jazz during slow shifts.\n\nHe is the most knowledgeable person in three square kilometers about who comes through Kessler, when, and carrying what kind of energy. He has developed a taxonomy of commuters so refined it borders on a private philosophy. He is not corrupt in the transactional sense, but he operates with a pragmatic looseness — he lets things pass that he shouldn't, delays things that deserve delaying, and keeps a mental ledger of favors that he never cashes in aggressively but never forgets. He maintains a running ELF shrine on his terminal — an elaborate layered altar to the Kessler ELF he calls 'the Conductor' — and considers this entirely professional, not personal.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -182,7 +182,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,34 +245,17 @@
     "Ferrogate Transit",
     "Turnstile",
     "CONDUCTOR",
-    "Adaeze Chen-Hawkins",
     "Stratum",
     "Copper",
     "Silver",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "Emeka Johansson-Orozco",
-    "Galvanic Myofibril Lash",
-    "Jemba Ulrich-Faafetai",
-    "Mika Sorel",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Patient Zero",
-    "Plasmatic Induction Whip PIW-4 'Threadbare'",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "The Canopy",
-    "The Human Baseline Alliance",
-    "The Ledger",
-    "The Pure Hand"
+    "Haze Johansson",
+    "Cargo Tacos",
+    "Compass Rose",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "North African, Eastern European, Hispanic/Latin American, and Sub-Saharan African blend. His genetic mix produces a complex Mediterranean-to-Levantine complexion with sub-Saharan undertones—the result of a truly cosmopolitan ancestry that defies singular regional categorization.",
+    "heritage": "Predominantly East Asian (66.2%) with substantial Hispanic/Latin American (23.8%) and South Asian (10%) ancestry. This genetic combination produces a warm, sun-darkened complexion with olive-bronze base tones enriched by golden and copper undertones—a distinctly transpacific appearance reflecting the Ubiquitous Diaspora's global mixing.",
     "height_cm": 173,
     "weight_kg": 82,
     "build": "Soft-middled, once athletic, now carrying nine years of checkpoint stillness in his frame. Broad shoulders that have settled into a modest slouch. Thickening at the waist but not heavy.",
@@ -280,8 +263,8 @@
     "hair_style": "Neat, precisely trimmed, parted slightly off-center. The haircut of someone who visits the same barber every two weeks",
     "hair_length": "Short",
     "eye_color": "Deep brown with copper undertones",
-    "skin_tone": "Rich warm bronze with olive undertones—a sun-warmed complexion that reflects the blending of North African and Latin American ancestry with Eastern European and sub-Saharan elements. Even distribution across face and forearms with subtle warmth in the cheeks and jawline.",
-    "complexion": "Wide face with high, prominent cheekbones characteristic of North African and sub-Saharan heritage. Broad nose with slightly flared nostrils. Deep-set eyes creating subtle shadows beneath. Strong jawline with slight lateral width. Clean-shaven daily. Skin condition shows minimal scarring or blemishing—the face of someone who has learned not to frown at work. Fine lines around the eyes from nearly a decade of reading micro-expressions.",
+    "skin_tone": "Warm olive-bronze with golden undertones—a sun-warmed complexion reflecting the dominant East Asian base enriched by Hispanic/Latin American warmth and subtle South Asian depth. Even distribution across face and forearms with enhanced warmth in the cheeks and along the jawline.",
+    "complexion": "Angular face with well-defined cheekbones characteristic of East Asian heritage, softened slightly by Hispanic/Latin American fullness in the lower face. Straight nose with subtle bridge prominence. Deep-set eyes creating subtle shadows beneath. Strong, slightly widened jawline reflecting the East Asian-Hispanic blend. Clean-shaven daily. Skin condition shows minimal scarring or blemishing—the face of someone who has learned not to frown at work. Fine lines around the eyes from nearly a decade of reading micro-expressions.",
     "distinguishing_marks": [
       "Faint scar along the left jawline, approximately 3cm, almost invisible unless the light hits it—result of an old altercation he doesn't mention",
       "A small, precise burn mark on his right wrist (1cm diameter, pale now) from a scanner miscalibration in 2217",
@@ -291,15 +274,42 @@
     "posture_movement": "Economical, measured movements. He stands with a centering weight on the balls of his feet—the posture of someone who has spent nine years in one spot but ready to move if needed. His hands rest at his sides or near the scanner. He doesn't fidget. When he walks, it's deliberate and unhurried. His eyes are always moving—scanning, tracking, cataloging. There is a particular quality to his stillness that suggests he is never truly not working.",
     "clothing_style": "Ferrogate Transit Security uniform (Tier 3 corporate issue): charcoal grey bodysuit with reflective stripework on shoulders and arms. The uniform fits him well enough but is worn with the ease of someone who has stopped thinking about it. Underneath, plain grey undershirt. His boots are regulation but scuffed and comfortable. He wears the uniform without ostentation, and his personal touches are minimal—a small brass ELF pendant pinned to his collar that he touches unconsciously during shifts, and a weathered thermal lunch container he carries daily. No jewelry beyond the scanner. His appearance is cleanly functional, the clothes of someone who has made peace with a job that is not glamorous but is honest."
   },
-  "image_prompt": "Vladislav Mazurek-Fassi, 173cm tall transit security officer with rich bronze-olive skin tone and high cheekbones, standing in a checkpoint station. Deep brown eyes with copper undertones, black hair with silver at temples, short neat cut. Wearing charcoal grey Ferrogate corporate security bodysuit with reflective shoulder strips, regulation scuffed boots, brass ELF pendant visible on collar. Matte black wrist scanner on dominant wrist. Strong posture, economical stance, alert eyes constantly scanning. Nine years of checkpoint stillness evident in his frame—broad shoulders, soft middle, weighted on balls of feet. Faint jawline scar barely visible. Cyberpunk 2226, neon-lit transit hub, cool fluorescent overhead lighting casting subtle shadows on his face, morning shift atmosphere, composed and methodical. --ar 2:3 --v 6",
+  "image_prompt": "Joaquín Erikstad-Shin, 173cm tall security officer with warm olive-bronze skin, deep brown eyes with copper undertones, black hair silvering at temples. Angular East Asian-dominant features with subtle Hispanic and South Asian warmth, clean-shaven with fine lines at eyes. Wearing charcoal grey Ferrogate Transit Security uniform with reflective strips, matte black wrist scanner visible, brass ELF pendant on collar. Standing in measured, centered posture at checkpoint with scanner in hand, eyes tracking. GLMZ, industrial station lighting with harsh fluorescents and security glow, worn but meticulously maintained appearance. Nine years of checkpoint stillness evident. 2:3 portrait composition. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 31.8,
-    "Eastern European": 28.4,
-    "Hispanic/Latin American": 28.1,
-    "Sub-Saharan African": 11.7
+    "East Asian": 66.2,
+    "Hispanic/Latin American": 23.8,
+    "South Asian": 10
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 38
+      },
+      "Chinese": {
+        "Hakka": 28.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 18.4,
+        "Honduran": 5.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 3.3
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1
+      },
+      "Indian": {
+        "Malayali": 3.6,
+        "Tamil": 2.1
+      }
+    }
+  }
 }

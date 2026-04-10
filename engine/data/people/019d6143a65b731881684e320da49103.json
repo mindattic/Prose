@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65b731881684e320da49103",
   "type": "character",
-  "name": "Orion Kristjánsson",
+  "name": "Isadora Calvillo",
   "aliases": [
     "Mira",
     "The Duchess"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Hamtramck Enclave, unit-front laundromat called Suds & Silk, near Halsted and Chicago Ave",
-  "description": "Mirela is a broad-shouldered woman with deep umber skin mapped by old chemical burns along her forearms — souvenirs from an industrial accident two decades prior. Her hair is a close-cropped silver cloud she refuses to dye, and she wears reading glasses perpetually perched on her nose even when she isn't reading. The laundromat she runs smells of synthetic jasmine and hot circuits; the walls are plastered with handwritten notes from satisfied customers and a small shrine to the E.L.F. she calls Baba Rinse, to whom she leaves data packets of folding tutorials and gentle soap formulas. She speaks with the unhurried authority of someone who has already outlasted three landlords and two corponation buy-out attempts.\n\nShe is the neighborhood's institutional memory: she knows whose mother left for the Arcturus arcology and never came back, whose kid got recruited by the wrong people, who owes whom and by how much. She is not warm in the cuddly sense — she is warm the way a well-maintained boiler is warm, reliably and forcefully. She does not gossip. She simply observes, and occasionally dispenses what she knows when she judges it will do the most good.",
+  "description": "Isadora Calvillo is a broad-shouldered woman with deep umber skin mapped by old chemical burns along her forearms — souvenirs from an industrial accident two decades prior. Her hair is a close-cropped silver cloud she refuses to dye, and she wears reading glasses perpetually perched on her nose even when she isn't reading. The laundromat she runs smells of synthetic jasmine and hot circuits; the walls are plastered with handwritten notes from satisfied customers and a small shrine to the E.L.F. she calls Baba Rinse, to whom she leaves data packets of folding tutorials and gentle soap formulas. She speaks with the unhurried authority of someone who has already outlasted three landlords and two corponation buy-out attempts.\n\nShe is the neighborhood's institutional memory: she knows whose mother left for the Arcturus arcology and never came back, whose kid got recruited by the wrong people, who owes whom and by how much. She is not warm in the cuddly sense — she is warm the way a well-maintained boiler is warm, reliably and forcefully. She does not gossip. She simply observes, and occasionally dispenses what she knows when she judges it will do the most good.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -169,7 +169,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,35 +229,19 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Arcturus Defense Solutions",
+    "The Accidental",
+    "Pressure Drop",
     "Tessera Corponation",
-    "Silver",
-    "Arcturus CK-5 'Bloodhound'",
-    "Silk",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
+    "Silver",
     "Arcturus KS-7 'Nursery'",
-    "Cinderblock Ai",
-    "Emeka Johansson-Orozco",
-    "Ferrogate Transit",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Oumarou Svec-Ranginui",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sorin Ekwensi-Balasanyan",
-    "Tessera Suppression Lattice SL-3 'Quilt'",
-    "Tessera TKR-10 'Executor'",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Reclamation Authority",
-    "The Root",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Boilermaker",
+    "Arcturus CK-5 'Bloodhound'",
+    "Silk"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: predominantly East Asian (34.4%) with significant Hispanic/Latin American (23.7%) and South Asian (17.3%) ancestry, complemented by Sub-Saharan African (11.6%), Central Asian (10.3%), and Eastern European (2.7%) heritage. This manifests as a rich phenotypic blend—the structure of East Asian ancestry visible in her bone geometry and eye shape, softened and warmed by the melanin contributions of African and South Asian lineages, with subtle Central Asian and Hispanic/Latin American influence in her facial proportions.",
+    "heritage": "Complex diaspora blend: predominantly Hispanic/Latin American (45.9%) with significant Indigenous American (32.9%) ancestry, complemented by Sub-Saharan African (17.5%) and South Asian (3.7%) heritage. This manifests as a rich phenotypic blend—the bone structure shaped by Indigenous American ancestry visible in her facial geometry and prominent cheekbones, warmed and deepened by the melanin contributions of African and Latin American lineages, with subtle South Asian influence in her eye shape and the slightly broader nasal bridge characteristic of her multi-continental ancestry.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and solid, with the kind of muscular density that comes from two decades of lifting, wringing, and precision needlework. Not soft, not angular — built to endure.",
@@ -265,8 +249,8 @@
     "hair_style": "Close-cropped, no styling beyond functional maintenance",
     "hair_length": "Short",
     "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Warm medium-to-deep brown with golden and reddish undertones—a complex interplay of East Asian, South Asian, and Sub-Saharan African melanin expression. Rich and even-toned across the face and body.",
-    "complexion": "Weather-worn and lined in the way of someone who has spent decades under fluorescent light and steam. Her face carries the authority of age—the bone structure shows the subtle East Asian ancestry in her eye spacing and cheekbones, enhanced by the warmth and depth of her multi-continental heritage. No attempt to soften it. Clear, well-maintained skin despite the industrial scars.",
+    "skin_tone": "Warm deep brown with golden, reddish, and earthy undertones—a complex interplay of Indigenous American, Hispanic/Latin American, Sub-Saharan African, and South Asian melanin expression. Rich and even-toned across the face and body.",
+    "complexion": "Weather-worn and lined in the way of someone who has spent decades under fluorescent light and steam. Her face carries the authority of age—the bone structure shows the prominent cheekbones and slightly broader nasal features of Indigenous American ancestry, enhanced by the warmth and depth of her multi-continental heritage, with the subtle eye shape influenced by South Asian genetics. No attempt to soften it. Clear, well-maintained skin despite the industrial scars.",
     "distinguishing_marks": [
       "Chemical burn scarring across both forearms in irregular, overlapping patches — pale and slightly raised against the surrounding skin, a topography of old pain from an industrial accident approximately twenty years prior.",
       "Fine creases around her eyes and mouth that deepen when she concentrates, map of five decades of focus.",
@@ -276,17 +260,53 @@
     "posture_movement": "She moves with economical precision — no wasted motion. When standing, her shoulders are squared, her weight balanced. When working at the alterations table, she leans forward from the hips with the stability of someone who trusts her spine. She walks at a steady, unhurried pace that somehow covers distance faster than it appears. Her hands are always slightly active, even at rest — a fingers-flexing habit of someone whose craft is muscle memory.",
     "clothing_style": "Practical Tier 3-4 working wear: loose linen apron in faded indigo over simple gray or black long-sleeved shirts (sleeves rolled to show the forearm scars, never hidden). Dark work trousers with reinforced pockets. Practical slip-on shoes, always worn-looking but meticulously maintained. Reading glasses on a beaded chain around her neck. No jewelry except a simple titanium wedding band, worn thin. Her clothes smell of detergent, jasmine synthetic, and steam — the smell of her workspace is her uniform."
   },
-  "image_prompt": "Orion Kristjánsson, a 168cm woman with warm medium-brown skin and mixed East Asian, South Asian, and Sub-Saharan African heritage visible in her bone structure and features. Silver-gray close-cropped hair, deep brown unaugmented eyes with creases of focus around them. Fifty years old, muscular-solid build from decades of precision work. Wearing a faded indigo linen apron over a black long-sleeved rolled-up shirt revealing pale chemical burn scars across both forearms. Dark work trousers, worn slip-on shoes. Beaded reading glasses on chain around neck, thin titanium wedding band. Standing in a brightly-lit cyberpunk 2226 textile alterations workshop—steaming pressers in background, fabric bolts and precision tools on shelves. Cool fluorescent and warm workshop lighting casting definition on her lined face. Expression focused and methodical. Gritty, worn-in aesthetic, functional and unflinching. --ar 2:3 --v 6",
+  "image_prompt": "Isadora Calvillo, 50s woman with silver-gray cropped hair and weather-worn deep brown skin with golden undertones, Indigenous American prominent cheekbones and facial geometry, Sub-Saharan African and South Asian heritage visible in eye shape and features. Chemical burn scars across forearms in pale patches, deep brown unaugmented eyes with fine creases. Broad-shouldered muscular build, standing at alterations table. Wearing faded indigo linen apron over gray long-sleeved shirt with rolled sleeves showing scars, dark work trousers, worn practical shoes. Reading glasses on beaded chain. Economical posture, slightly flexing hands. GLMZ Great Lakes Metropolitan Zone, fluorescent and steam-lit workspace, industrial dystopian aesthetic, humid fabric-filled environment, cool neon accent lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 34.4,
-    "Hispanic/Latin American": 23.7,
-    "South Asian": 17.3,
-    "Sub-Saharan African": 11.6,
-    "Central Asian": 10.3,
-    "Eastern European": 2.7
+    "Hispanic/Latin American": 45.9,
+    "Indigenous American": 32.9,
+    "Sub-Saharan African": 17.5,
+    "South Asian": 3.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 45.9
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 25.6
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 2.2
+      },
+      "Mesoamerican": {
+        "Nahua": 1.7,
+        "Zapotec": 3.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 2.8,
+        "Cameroonian": 7.8
+      },
+      "West African": {
+        "Ivorian": 2.4
+      },
+      "Southern African": {
+        "Zimbabwean": 2.2,
+        "Mozambican": 2.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 1.8,
+        "Baloch": 1.9
+      }
+    }
+  }
 }

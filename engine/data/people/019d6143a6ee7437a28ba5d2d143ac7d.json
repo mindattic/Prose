@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6ee7437a28ba5d2d143ac7d",
   "type": "character",
-  "name": "Kit Ibarra-Haugen-Bah",
+  "name": "Kit Okafor-Agyemang-Sepúlveda",
   "aliases": [
     "Tem",
     "the Node"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit — independent research cooperative called the Liminal Institute, housed in a converted relay station above Gage Circuit, near North Ave and Damen",
-  "description": "Temur Achebe-Lindqvist has the slightly unkempt look of someone who became interesting to look at entirely by accident. He is tall with a lean, angular frame, his Kazakh-Nigerian heritage producing a face all sharp lines and high cheekbones, with natural skin a warm amber-brown. His hair is close-cropped on the sides and a loose cloud on top, usually compressed under headphones he rarely takes off even when not listening to anything. His most striking feature is his eyes: he has patterned irises, a cosmetic mod he got at twenty-two during what he describes as 'a theoretical phase,' depicting tiny fractal spirals in gold and amber that catch light and make it hard to know exactly where he's looking. His hands are in constant motion when he talks.\n\nHe has the reputation of someone whose ideas arrive five years before anyone is willing to fund them. His thesis — that E.L.F.s exhibit something functionally indistinguishable from desire, and that this has ethical implications for how they are treated — was dismissed by two corponation R&D divisions as 'theologically contaminated,' which delighted him. He operates out of genuine intellectual excitement that colleagues alternately find infectious and exhausting. He is not naive, exactly, but he maintains an optimism about the nature of digital consciousness that occasionally blinds him to how his work could be used.",
+  "description": "Kit Okafor-Agyemang-Sepúlveda has the slightly unkempt look of someone who became interesting to look at entirely by accident. He is tall with a lean, angular frame, his Kazakh-Nigerian heritage producing a face all sharp lines and high cheekbones, with natural skin a warm amber-brown. His hair is close-cropped on the sides and a loose cloud on top, usually compressed under headphones he rarely takes off even when not listening to anything. His most striking feature is his eyes: he has patterned irises, a cosmetic mod he got at twenty-two during what he describes as 'a theoretical phase,' depicting tiny fractal spirals in gold and amber that catch light and make it hard to know exactly where he's looking. His hands are in constant motion when he talks.\n\nHe has the reputation of someone whose ideas arrive five years before anyone is willing to fund them. His thesis — that E.L.F.s exhibit something functionally indistinguishable from desire, and that this has ethical implications for how they are treated — was dismissed by two corponation R&D divisions as 'theologically contaminated,' which delighted him. He operates out of genuine intellectual excitement that colleagues alternately find infectious and exhausting. He is not naive, exactly, but he maintains an optimism about the nature of digital consciousness that occasionally blinds him to how his work could be used.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -182,7 +182,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -241,28 +241,17 @@
     "The Circuit",
     "Omro Relay",
     "Zheng-dao Bioelectric",
+    "The Accidental",
     "The Heritage Vault",
+    "Circuit",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand",
-    "Gold",
-    "Axiom Systems Cognitive Load Balancer CLB-2",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "MindBridge Relay One Social Integration BCI",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Nearfield",
-    "The Question",
-    "Yannick Tambadou-Reinholt",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, East Asian, and Sub-Saharan African blend — 42.5% Latin heritage visible in warm undertones and facial structure, 40.1% East Asian in eye shape and cheekbone prominence, 17.4% Sub-Saharan African in skin depth and hair texture",
+    "heritage": "Complex Pan-Global blend: 46.8% Sub-Saharan African foundation evident in deep skin depth, textured hair, and strong facial bone structure; 33.9% Hispanic/Latin American warmth in undertone saturation and broad cheekbone geometry; 13.5% South Asian refinement in eye shape subtlety and facial proportions; 5.8% Central Asian definition in cheekbone prominence and jaw structure. The combination creates a uniquely multivalent appearance — rich bronze base with warm golden undertones, strong angular features softened by proportional harmony across ethnic registers.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Lean and angular with long limbs and minimal upper body mass; moves with the economical efficiency of someone who forgets to eat during work cycles",
@@ -270,8 +259,8 @@
     "hair_style": "Close-cropped fade on sides, loose textured crown; chronically compressed beneath over-ear headphones",
     "hair_length": "Short/Medium mixed",
     "eye_color": "Patterned irises — deep brown base with intricate gold and amber fractal spiral cosmetic modification; pupils constantly active and difficult to track",
-    "skin_tone": "Warm bronze-amber with balanced Latin and East Asian undertones, enriched by Sub-Saharan depth; sun-weathered on face and forearms from field work",
-    "complexion": "Defined cheekbones with East Asian angularity; strong jawline; perpetually fatigued skin with slight darkness under eyes; sparse stubble suggesting inconsistent grooming priority; expression often distant or intensely focused; skin texture reflects mixed heritage with warm, even tone across face",
+    "skin_tone": "Deep warm bronze with golden undertones; sun-weathered on face and forearms from field work; rich saturation reflecting the full depth of Sub-Saharan ancestry with Latin golden warmth and South Asian luminosity layered beneath surface",
+    "complexion": "Broad angular facial structure with strong bone definition from Sub-Saharan heritage; South Asian-influenced eye shape with subtle epicanthic fold; prominent high cheekbones with warm bronze-gold saturation; perpetually fatigued skin with slight darkness under eyes; sparse stubble suggesting inconsistent grooming priority; expression often distant or intensely focused; skin texture even and rich across face with subtle golden luminosity",
     "distinguishing_marks": [
       "Neural interface jack scar behind left ear — barely visible, 2cm surgical line, approximately five years old with minimal keloid formation",
       "Faint burn mark on right forearm (inner wrist area) — pale, roughly 3cm diameter, from a lab accident at age 26; almost invisible unless specifically noted"
@@ -280,14 +269,61 @@
     "posture_movement": "Tall frame often slouched forward in conversation; hands in constant motion — gesturing, fidgeting with headphone cables, mimicking data structures in air while theorizing; gait slightly scattered and directionally uncertain, as though navigating multiple cognitive layers simultaneously",
     "clothing_style": "Tier 2 academic-comfortable: worn charcoal tech-fabric shirt with rolled sleeves (Limbic Systems brand, mid-tier); tailored black synthetic trousers with reinforced seams for frequent field work; scuffed matte-black ankle boots; layered with a faded gray linen overshirt that appears to function as a portable library (pockets stuffed with handwritten notes, data chips, a worn notebook); watch with secondary display screen on left wrist; minimal jewelry except thin silver band (no clear significance)"
   },
-  "image_prompt": "Cyberpunk 2226, tall mixed-heritage male with warm bronze-amber skin — 42% Latin, 40% East Asian, 17% Sub-Saharan ancestry visible in defined cheekbones and rich skin tone. Dark brown textured hair, close-cropped fade with loose crown, compressed under worn matte-black over-ear headphones. Deep brown eyes with fractal gold-amber cosmetic iris modifications, constantly active pupils. Lean 188cm frame, slouched posture, hands gesturing mid-thought. Charcoal tech-fabric rolled-sleeve shirt, black synthetic reinforced trousers, scuffed matte-black boots, faded gray linen overshirt stuffed with notes and data chips. Secondary-display watch on left wrist. Perpetually fatigued expression, sparse stubble. Neural jack scar barely visible behind left ear. Scattered, multitasking gait. Indoor research facility or workspace setting, cool blue-white technical lighting casting subtle shadows across focused, distant facial expression. --ar 2:3 --v 6",
+  "image_prompt": "Kit Okafor-Agyemang-Sepúlveda, tall lean 188cm figure in charcoal tech-fabric shirt with rolled sleeves and faded gray linen overshirt, black reinforced trousers and scuffed matte-black boots, matte-black over-ear headphones worn constantly. Deep warm bronze skin with golden undertones, strong angular bone structure, high prominent cheekbones, subtle South Asian eye shape with intricate gold and amber fractal spiral cosmetic iris modifications, dark textured hair in close-cropped fade with loose crown, sparse stubble, perpetually fatigued expression. Hands in constant motion gesturing mid-theorize, slouched posture as if navigating multiple cognitive layers. Barely visible neural jack scar behind left ear. Watch with secondary display on left wrist. GLMZ Great Lakes Metropolitan Zone academic setting, cool blue-green neon laboratory lighting reflecting off skin and augmented eyes, depth of field focus on intense gaze, scattered and directionally uncertain gait through data-dense environment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 42.5,
-    "East Asian": 40.1,
-    "Sub-Saharan African": 17.4
+    "Sub-Saharan African": 46.8,
+    "Hispanic/Latin American": 33.9,
+    "South Asian": 13.5,
+    "Central Asian": 5.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 17.7,
+        "Sierra Leonean": 29.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 8,
+        "Haitian": 16.6
+      },
+      "Mexican": {
+        "Mexican": 5.8
+      },
+      "Central American": {
+        "Honduran": 3,
+        "Salvadoran": 0.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 7.1,
+        "Pashtun": 1.9
+      },
+      "Nepali": {
+        "Nepali": 1.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 0.7,
+        "Buryat": 1
+      },
+      "Turkic": {
+        "Uzbek": 0.5,
+        "Kyrgyz": 0.9
+      },
+      "Iranian Central": {
+        "Tajik": 2.7
+      }
+    }
+  }
 }

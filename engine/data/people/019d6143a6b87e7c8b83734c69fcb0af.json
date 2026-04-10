@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6b87e7c8b83734c69fcb0af",
   "type": "character",
-  "name": "Ingrid Guerrero",
+  "name": "Sage Mwangi",
   "aliases": [
     "Roti",
     "Sparks"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Hamtramck Enclave, near Halsted and Division",
-  "description": "Rotimi is a young man built like a question mark — tall, slightly hunched forward, always leaning into whatever conversation he's in. His Yoruba-Turkish-Māori heritage has given him brown skin, broad features, and a jaw that looks like it was made to set stubbornly, which it often is. His arms are sleeved in geneware bioluminescent patterns that trace his capillary structures in faint blue-white under his skin — a cosmetic mod he got at nineteen with money saved from three months of double shifts. When he's agitated, which is often, the patterns pulse more visibly. His hair is natural and large and rarely managed. He has a gap between his front teeth that gives his wide smile a slightly reckless quality.\n\nRotimi is a third-generation Hamtramck line worker who found his purpose early and loud. He was elected shop steward of Ferrogate Transit's maintenance division at twenty-three, the youngest in the union's recorded history, after organizing a sick-out that stopped maintenance operations across six districts. He is brash, physically energetic, capable of genuine strategic thinking that he often undermines with impatience, and beloved by the workers on his floor in a way that makes his supervisors nervous. He has been formally disciplined four times and each time the union has gotten him reinstated.",
+  "description": "Sage Mwangi is a young man built like a question mark — tall, slightly hunched forward, always leaning into whatever conversation he's in. His Yoruba-Turkish-Māori heritage has given him brown skin, broad features, and a jaw that looks like it was made to set stubbornly, which it often is. His arms are sleeved in geneware bioluminescent patterns that trace his capillary structures in faint blue-white under his skin — a cosmetic mod he got at nineteen with money saved from three months of double shifts. When he's agitated, which is often, the patterns pulse more visibly. His hair is natural and large and rarely managed. He has a gap between his front teeth that gives his wide smile a slightly reckless quality.\n\nSage Mwangi is a third-generation Hamtramck line worker who found his purpose early and loud. He was elected shop steward of Ferrogate Transit's maintenance division at twenty-three, the youngest in the union's recorded history, after organizing a sick-out that stopped maintenance operations across six districts. He is brash, physically energetic, capable of genuine strategic thinking that he often undermines with impatience, and beloved by the workers on his floor in a way that makes his supervisors nervous. He has been formally disciplined four times and each time the union has gotten him reinstated.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -184,7 +184,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,26 +242,20 @@
     "Hamtramck Enclave",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lazarus IDP-1 'Teeth'",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Slagworks Industrial",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Lazarus IDP-1 'Teeth'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American and Northern European with South Asian influences. The combination creates warm medium-brown skin with subtle golden undertones, angular facial structure with broad cheekbones reflecting the Latin American ancestry, tempered by Northern European bone structure in the jaw and brow.",
+    "heritage": "Sub-Saharan African dominant (69.7%) with significant East Asian ancestry (26.1%), complemented by minor Middle Eastern and South Asian components. The combination creates rich deep brown skin with warm undertones and a subtle golden luminosity from East Asian heritage. Facial structure reflects strong Sub-Saharan African ancestry with prominent, sculpted cheekbones and defined jaw, refined by East Asian influences visible in the subtle almond shape of the eyes and refined bone structure tapering toward the chin. The bridge of the nose is broad and strong, while the eye set and brow structure carry East Asian characteristics. The result is striking and distinctive—a face that commands attention through its balanced fusion of ancestral features.",
     "height_cm": 188,
     "weight_kg": 76,
     "build": "Tall and lean with a slight forward stoop, as if perpetually leaning into confrontation. Broad shoulders that taper to a wiry frame built for endurance rather than bulk. Arms corded with lean muscle from years of maintenance work.",
     "hair_color": "Natural dark brown, almost black",
     "hair_style": "Voluminous, natural texture, frequently unkempt and unstyled — grows outward rather than down",
     "hair_length": "Medium, approximately 12-15cm",
-    "eye_color": "Dark brown",
-    "skin_tone": "Medium-warm brown with golden undertones, reflecting the dominant Hispanic/Latin American ancestry blended with Northern European paleness and South Asian richness. Skin appears sun-weathered from outdoor industrial work.",
-    "complexion": "Strong, angular facial structure with broad cheekbones and defined jaw reflecting Latin American heritage, softened slightly by Northern European bone structure. Wide smile with a visible gap between upper front teeth giving an expression of reckless confidence. Skin is clear and unlined, with the worn, sun-exposed quality of someone who works outdoors in industrial settings. Minimal grooming — practical rather than aesthetic.",
+    "eye_color": "Dark brown with subtle warmth, characteristic of Sub-Saharan and East Asian heritage blend",
+    "skin_tone": "Deep warm brown with rich golden undertones reflecting the fusion of Sub-Saharan African and East Asian ancestry. Skin appears sun-weathered from outdoor industrial work, with an underlying luminosity from the heritage blend.",
+    "complexion": "Strong, sculpted facial structure with high, pronounced cheekbones and defined jaw reflecting Sub-Saharan African heritage, refined by East Asian bone structure subtly visible in the almond eye shape and graceful facial tapering. Nose is broad-bridged and strong. Wide smile with a visible gap between upper front teeth giving an expression of reckless confidence. Skin is clear and unlined, with the worn, sun-exposed quality of someone who works outdoors in industrial settings. Minimal grooming — practical rather than aesthetic.",
     "distinguishing_marks": [
       "Bioluminescent geneware patterns tracing capillary structures across both forearms and upper chest in faint blue-white, pulsing visibly when agitated",
       "Impact-resistant subdermal scarring visible along both forearms as slightly raised, pale streaking beneath the geneware patterns"
@@ -270,14 +264,52 @@
     "posture_movement": "Hunched slightly forward, shoulders rounded, as if permanently braced for argument or action. Moves with restless physical energy — taps fingers, shifts weight, rarely still. Gestures are broad and emphatic. Eye contact is direct and challenging.",
     "clothing_style": "Tier 3-4 working class. Favors utilitarian union-branded workwear even off-shift — Ferrogate Transit maintenance coveralls modified with rolled sleeves to display the bioluminescent patterns. Off-duty: worn union t-shirts, patched cargo pants in dark colors, steel-toed boots scuffed from depot work. Occasionally wears a faded Ferrogate Transit shop steward armband even outside work. No luxury items. Accessories limited to a battered union card and a small ELF shrine charm worn on a cord around his neck."
   },
-  "image_prompt": "Ingrid Guerrero, 188cm tall lean muscular maintenance worker, warm medium-brown skin with golden undertones, dark voluminous natural hair, strong angular face with gap-toothed confident smile, rolled-sleeve ferrogate transit coveralls showing glowing blue-white bioluminescent capillary patterns across forearms and upper chest, subdermal scarring visible beneath geneware, hunched forward posture with restless energy, direct challenging eye contact, industrial transit depot setting with neon-lit night lighting, worn steel-toed boots, union card and ELF charm visible, cyberpunk 2226 Great Lakes Metropolitan Zone, gritty working-class aesthetic, dramatic rim lighting highlighting the bioluminescent patterns, --ar 2:3 --v 6",
+  "image_prompt": "Sage Mwangi, 188cm tall lean-muscled transit worker with deep warm brown skin glowing faintly with golden undertones, prominent sculpted cheekbones and strong jaw refined by East Asian bone structure, almond-shaped dark brown eyes with direct challenging gaze, voluminous unstyled dark brown natural hair medium length. Bioluminescent blue-white capillary patterns pulsing across forearms and chest visible beneath rolled-sleeve Ferrogate Transit maintenance coveralls, subdermal scarring streaking forearms. Forward-hunched posture with restless energy, gap-toothed confident smile. Industrial GLMZ Great Lakes Metropolitan Zone, dim neon warehouse lighting casting cool shadows across his augmented frame, union charm visible on chest cord, worn steel-toed boots planted firmly on grimy depot floor, hands gesturing emphatically. Photorealistic, moody, 35mm film grain, neo-noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 56.8,
-    "Northern European": 31.7,
-    "South Asian": 11.5
+    "Sub-Saharan African": 69.7,
+    "East Asian": 26.1,
+    "Middle Eastern": 2.2,
+    "South Asian": 2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 17.5,
+        "Zimbabwean": 21.9
+      },
+      "East African": {
+        "Somali": 30.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 26.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 0.4
+      },
+      "Arab Levantine": {
+        "Syrian": 1.4
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 0.1,
+        "Yemeni": 0.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 1
+      },
+      "Pakistani": {
+        "Baloch": 0.8,
+        "Punjabi Pakistani": 0.2
+      }
+    }
+  }
 }

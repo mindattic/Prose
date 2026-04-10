@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ae74068f30836a95513509",
   "type": "character",
-  "name": "Lark Kristjánsson-Karunaratne",
+  "name": "Lark Mwangi-Szczypiński",
   "aliases": [
     "Mara",
     "Mara Luck"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Chatham Flats, near Kedzie and Division",
-  "description": "Amara occupies a permanent corner in The Narrows' most trafficked pedestrian corridor, her setup distinguished by a curtain of fiber-optic strands in blue and white that she draws around a small folding table when a client sits down. She is a slight woman with warm tawny skin, thick dark brows, and an intensely focused quality that makes people feel she is reading them the moment they appear in her field of vision. Her irises are geneware — they have been modified to shift through a slow wheel of silver, amber, and pale violet, which she did deliberately for atmospheric effect but now genuinely loves. She wears layered clothing in deep reds and indigos, and her hair is long and braided with data-thread woven into the plaits that she claims helps her interface with the local E.L.F. population. She carries a physical reader deck that she uses for the theatrical component of the reading, alongside legitimate Mesh-query access she has trained herself to interpret into human-readable pattern narrative.\n\nAmara is a genuinely skilled practitioner of a craft that sits on the uncomfortable border between fraud and service. She would say — and she has said, at length — that the accuracy of prediction matters less than the quality of attention. Her clients are heard. They are given language for things they couldn't articulate. Sometimes the data patterns she reads are genuinely predictive; the Narrows' E.L.F. population has a fondness for her and occasionally pushes legible information her way in exchange for her data-offerings. She is thoughtful, slightly melancholy, and very funny when she is comfortable with you.",
+  "description": "Lark Mwangi-Szczypiński occupies a permanent corner in The Narrows' most trafficked pedestrian corridor, her setup distinguished by a curtain of fiber-optic strands in blue and white that she draws around a small folding table when a client sits down. She is a slight woman with warm tawny skin, thick dark brows, and an intensely focused quality that makes people feel she is reading them the moment they appear in her field of vision. Her irises are geneware — they have been modified to shift through a slow wheel of silver, amber, and pale violet, which she did deliberately for atmospheric effect but now genuinely loves. She wears layered clothing in deep reds and indigos, and her hair is long and braided with data-thread woven into the plaits that she claims helps her interface with the local E.L.F. population. She carries a physical reader deck that she uses for the theatrical component of the reading, alongside legitimate Mesh-query access she has trained herself to interpret into human-readable pattern narrative.\n\nLark Mwangi-Szczypiński is a genuinely skilled practitioner of a craft that sits on the uncomfortable border between fraud and service. She would say — and she has said, at length — that the accuracy of prediction matters less than the quality of attention. Her clients are heard. They are given language for things they couldn't articulate. Sometimes the data patterns she reads are genuinely predictive; the Narrows' E.L.F. population has a fondness for her and occasionally pushes legible information her way in exchange for her data-offerings. She is thoughtful, slightly melancholy, and very funny when she is comfortable with you.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -183,7 +183,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,34 +240,17 @@
   "related_entities": [
     "Chatham Flats",
     "The Narrows Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
+    "GLMZ",
     "Stratum",
+    "Corner Slice",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Pale Mile",
     "Déjà Vu",
-    "Alper Holmberg-Dembele",
-    "Arcturus Defense Solutions Spectral Deadfall Jammer",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Deku Barrientos-Osei",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "Green Bay Community Table",
-    "Kadiatou Bergstrom-Konate",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Noir Dining",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher",
-    "The Filament",
-    "The Narrows",
-    "The Pure Hand",
-    "The Question",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant South Asian, Hispanic/Latin American, Northern European, and Sub-Saharan African ancestry; genetic mosaic of the Ubiquitous Diaspora reflecting global intermixture rather than single regional origin",
+    "heritage": "Complex global genetic mosaic reflecting the Ubiquitous Diaspora: 30.5% Sub-Saharan African, 23.9% Eastern European, 21.6% East Asian, 15.9% Hispanic/Latin American, and 8.1% South Asian. Features an intricate blend of ancestry markers without single-region dominance—warm medium brown skin with golden undertones, moderate-to-high cheekbones with defined jawline, slight East Asian eye shape softened by South Asian warmth, and subtle structural elements from all ancestral sources creating a distinctly mixed-heritage appearance",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Slight and fine-boned, almost delicate, with minimal muscle definition but a composed, centered posture that suggests controlled strength rather than physical mass",
@@ -275,26 +258,67 @@
     "hair_style": "Long, worn in multiple thick braids interwoven with iridescent data-thread that catches light in silver and blue filaments; braids coil and pin at the base of her skull",
     "hair_length": "Long",
     "eye_color": "Geneware-modified irises cycling through silver, amber, and pale violet on a slow 8-10 second wheel; sclera remain naturally dark brown",
-    "skin_tone": "Medium warm tone with subtle golden-bronze undertones from East Asian and South Asian ancestry, deepened by undertones suggesting Sub-Saharan African heritage; complex blended complexion without single-region dominance",
-    "complexion": "Clear, unlined face with moderate-to-high cheekbones and defined jawline reflecting East Asian structure with South Asian warmth; thick dark brows that meet slightly in the middle; expression defaults to intense, focused observation; minimal makeup, skin appears deliberately unmoisturized and matte; facial geometry suggests mixed ancestry without stark regional markers",
+    "skin_tone": "Medium warm brown with golden-bronze undertones, reflecting the balanced blend of Sub-Saharan African (30.5%), Eastern European (23.9%), East Asian (21.6%), Hispanic/Latin American (15.9%), and South Asian (8.1%) heritage; rich, multifaceted coloration with warm luminosity from African and South Asian components softened by cooler Eastern European and East Asian undertones",
+    "complexion": "Clear, unlined face with moderate-to-high cheekbones and defined jawline reflecting balanced mixed ancestry structure; thick dark brows that meet slightly in the middle; broad nasal bridge with slight tapering reflecting East Asian and South Asian markers; expression defaults to intense, focused observation; minimal makeup, skin appears deliberately unmoisturized and matte; facial geometry shows integrated markers from all five heritage sources without dominance of any single region",
     "distinguishing_marks": [
       "Small circular scar on the inside of her right wrist where data-thread was first implanted during an early self-taught interface experiment",
       "Faint tattoo of three parallel lines in faded indigo running down the inside of her left forearm — personal sigil she doesn't explain"
     ],
-    "visible_augmentations": "Pattern irises with visible slow-cycle geneware glow beneath the iris surface; data-thread woven through braids creates visible silver and blue filament web across her scalp and down her back when hair is loose or in motion; no visible cybernetic limbs or chrome — all augmentation is organic or textile-integrated",
+    "visible_augmentations": "Pattern irises with visible slow-cycle geneware glow beneath the iris surface cycling silver, amber, and pale violet; data-thread woven through braids creates visible silver and blue filament web across her scalp and down her back when hair is loose or in motion; no visible cybernetic limbs or chrome — all augmentation is organic or textile-integrated",
     "posture_movement": "Sits very still when reading, hands flat on the table or folded; moves with economical precision, no wasted motion; head turns slowly to track people, creating an uncanny sense of being read; when walking she is unremarkable, but when seated she becomes focal",
     "clothing_style": "Layered in deep reds and indigos: typically a long burgundy undershirt beneath a faded navy or deep purple overshirt or loose jacket; fabrics are slightly worn, hand-dyed aesthetic suggesting Tier 4-5 practical wear rather than luxury; no visible corporate branding; wears silver rings on most fingers, some bearing small data-port aesthetics; carries a worn leather satchel containing her physical reader deck and Mesh-access rig; no shoes visible — operates barefoot in her Narrows setup unless weather demands otherwise"
   },
-  "image_prompt": "Lark Kristjánsson-Karunaratne, cyberpunk 2226, seated figure with mixed East Asian and South Asian ancestry features, warm medium skin tone with golden undertones, black braids interwoven with iridescent silver and blue data-thread filaments coiled at base of skull, geneware-modified irises cycling through silver and amber with slow ethereal glow, dark brown sclera, naturally dark thick brows, high cheekbones, defined jawline, delicate fine-boned build at 162cm, matte skin, minimal makeup, hands folded on table in still composed posture, layered in deep burgundy undershirt and faded navy overshirt, silver rings with data-port details on fingers, focused intense expression, sense of being read, worn leather satchel nearby, barefoot, Great Lakes Metropolitan Zone Narrows setting, cool blue and amber ambient lighting catching the data-thread filaments, cyberpunk aesthetic with organic augmentation design, 2:3 aspect ratio --ar 2:3 --v 6",
+  "image_prompt": "Lark Mwangi-Szczypiński, GLMZ, slender androgynous figure with rich medium warm brown skin with golden undertones reflecting mixed Sub-Saharan African, Eastern European, East Asian, Hispanic, and South Asian heritage. Long black braids interwoven with iridescent silver and blue data-thread glowing softly against her scalp. Geneware-modified eyes cycling through silver, amber, and pale violet with dark brown sclera. Moderate-to-high cheekbones, defined jawline, broad tapered nasal bridge, thick dark brows meeting slightly. Wearing layered burgundy undershirt and faded navy overshirt, hand-dyed fabrics slightly worn. Silver data-port rings on most fingers. Barefoot. Intense focused expression, sitting very still with composed centered posture, hands folded or flat on table. Worn leather satchel at her side. Small circular scar on right inner wrist visible. Faint indigo three-line tattoo on left forearm. Minimal makeup, matte skin deliberately unmoisturized. Dark moody lighting with cool blue undertones, Narrows near-future megacity setting, contemplative and focused energy. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 46.6,
-    "South Asian": 20.0,
-    "Hispanic/Latin American": 14.9,
-    "Northern European": 14.7,
-    "Sub-Saharan African": 3.8
+    "Sub-Saharan African": 30.5,
+    "Eastern European": 23.9,
+    "East Asian": 21.6,
+    "Hispanic/Latin American": 15.9,
+    "South Asian": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 30.5
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 23.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 16.2
+      },
+      "Chinese": {
+        "Shanghainese": 5.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 5.7,
+        "Haitian": 3.2
+      },
+      "Mexican": {
+        "Mexican": 3.4
+      },
+      "Central American": {
+        "Salvadoran": 3.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.5,
+        "Sinhalese": 0.9
+      }
+    }
+  }
 }

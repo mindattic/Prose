@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6877ae297dd60f3284b0680",
   "type": "character",
-  "name": "Rafael Konaté-Bustamante-Volkov",
+  "name": "Aditya Konaté-Sesay-Deshpande",
   "aliases": [
     "Ors",
     "The Needle"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, unit 4 of the Briar Arcade — a narrow shopfront wedged between a dumpling counter and a prosthetic repair stall, near Ashland and Division",
-  "description": "Orsolya is a compact, heavyset woman whose hands are the most expressive thing about her — calloused at the fingertips from decades of needle work, stained faintly indigo from fabric dye she never quite gets out. Her hair is bone-white, worn in tight loops pinned close to her skull, and her skin is deep brown with an undertone of reddish amber. A cosmetic mod gives her irises a slow geometric shimmer, silver hexagons rotating lazily — a gift from her daughter she's never removed even though she found it frivolous at the time. She dresses simply but always immaculately; her clothes fit her like testimony.\n\nShe has a particular stillness to her that people mistake for coldness until she starts talking, at which point they realize it's actually patience. She will hold a pin in her teeth and listen to a customer describe a wedding, a funeral, a job interview, a first date, while her hands move without her eyes watching them. She's witnessed thirty years of human milestone dressed in fabric, and she has quiet opinions about all of it. She doesn't share them unless asked. When she does, they tend to land.",
+  "description": "Aditya Konaté-Sesay-Deshpande is a compact, heavyset woman whose hands are the most expressive thing about her — calloused at the fingertips from decades of needle work, stained faintly indigo from fabric dye she never quite gets out. Her hair is bone-white, worn in tight loops pinned close to her skull, and her skin is deep brown with an undertone of reddish amber. A cosmetic mod gives her irises a slow geometric shimmer, silver hexagons rotating lazily — a gift from her daughter she's never removed even though she found it frivolous at the time. She dresses simply but always immaculately; her clothes fit her like testimony.\n\nShe has a particular stillness to her that people mistake for coldness until she starts talking, at which point they realize it's actually patience. She will hold a pin in her teeth and listen to a customer describe a wedding, a funeral, a job interview, a first date, while her hands move without her eyes watching them. She's witnessed thirty years of human milestone dressed in fabric, and she has quiet opinions about all of it. She doesn't share them unless asked. When she does, they tend to land.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -177,7 +177,7 @@
     "Traditionalist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,38 +238,23 @@
     "The Meridian Core",
     "Hamtramck Enclave",
     "Meridian Core",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Gradient Compact",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "Tessera Corponation",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Indigo",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "The Pure Hand",
-    "Needle",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
+    "IRONLIMB Spectre SV-4 Stealth Arm",
+    "Arcturus KS-7 'Nursery'",
+    "The Pure Hand",
     "Lazarus IDP-1 'Teeth'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Arcturus KS-7 'Nursery'",
-    "Axiom Hovercraft (Lake Patrol)",
-    "Breck Tannen",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite",
-    "Dzemal Acholonu-Patagiri",
-    "Helix Biosystems",
-    "MERIDIAN",
-    "Narrowcast",
-    "Orbital Drop Pod",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Iron Lotus",
-    "The Seam",
-    "The Shelf",
-    "Tshiamo Vukić-Arellano"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (61.2%), Sub-Saharan African (25.3%), Eastern European (13.5%) — a rich genetic blend resulting in warm deep brown skin with reddish-amber undertones, refined facial structure with broad cheekbones and defined jawline characteristic of Latin American and West African ancestry, and subtle angular features from Eastern European heritage",
+    "heritage": "South Asian (41.8%), Sub-Saharan African (33.5%), East Asian (22.1%), Southeast Asian (2.6%) — a striking genetic blend resulting in warm deep brown skin with golden-amber undertones, refined facial structure with broad cheekbones and defined jawline characteristic of South Asian and West African ancestry, with subtle angular eye geometry from East Asian heritage and the graceful proportions of Southeast Asian lineage",
     "height_cm": 158,
     "weight_kg": 82,
     "build": "Compact and heavyset with a low center of gravity; shoulders slightly rounded from decades hunched over work tables, but core strength evident in how she carries herself",
@@ -277,8 +262,8 @@
     "hair_style": "Tight coils pinned close to the skull in neat rows, precision-groomed",
     "hair_length": "Short",
     "eye_color": "Deep brown with silver hexagonal geometric shimmer (cosmetic iris mod, rotating slowly)",
-    "skin_tone": "Deep warm brown with reddish-amber undertone, even complexion reflecting the blended heritage of equatorial African and Latin American ancestry",
-    "complexion": "Well-maintained despite her age; minimal wrinkles around the eyes from squinting at fine work; faint indigo staining at the cuticles and around the nail beds from decades of fabric dye exposure; broad cheekbones and defined jawline characteristic of her mixed ancestry; hands are the focal point — calloused fingertips, precise cuticles, always clean despite stains",
+    "skin_tone": "Deep warm brown with golden-amber undertone, even complexion reflecting the blended heritage of South Asian, Sub-Saharan African, East Asian, and Southeast Asian ancestry",
+    "complexion": "Well-maintained despite her age; minimal wrinkles around the eyes from squinting at fine work; faint indigo staining at the cuticles and around the nail beds from decades of fabric dye exposure; broad cheekbones and defined jawline characteristic of her mixed South Asian and African ancestry; subtle angular features around the eyes and refined nose bridge from East Asian and Southeast Asian heritage; hands are the focal point — calloused fingertips, precise cuticles, always clean despite stains",
     "distinguishing_marks": [
       "Faint indigo discoloration on fingers and cuticles from textile dyes, permanent after 58 years",
       "Small needle scars on the pads of her index and middle fingers, barely visible but tactile",
@@ -288,14 +273,56 @@
     "posture_movement": "Centered and still, almost meditative in repose. When working, her hands move with unconscious precision while her eyes focus on customer faces rather than the fabric. Walking gait is economical and grounded. She favors leaning against her work table when listening, weight distributed evenly. Stillness is her default state; people often mistake it for coldness until she speaks",
     "clothing_style": "Simple but immaculate — always self-tailored to perfection. Favors neutral earth tones (charcoal, taupe, cream, deep indigo) and natural fabrics (linen, cotton, wool blends). Her apron is a toolkit: multiple pockets, deep and organized, always worn over her clothes. Clothes fit her like they were grown on her body — a walking advertisement for her craftsmanship. Tier 3 quality materials, but executed at Tier 1 precision. Comfortable footwear (worn leather shoes, meticulously maintained). No visible jewelry except for a simple gold band on her left ring finger, worn smooth"
   },
-  "image_prompt": "Portrait of Rafael Konaté-Bustamante-Volkov, 158cm petite heavyset woman with deep warm brown skin and reddish-amber undertones, bone white natural hair in tight coils pinned close to skull, rotating silver hexagonal cosmetic iris mods in deep brown eyes, broad cheekbones and defined jawline, faint indigo staining on fingers from decades of textile dye work, subtle scars on wrists from articular stabilizers, wearing self-tailored charcoal linen shirt and deep indigo apron with multiple pockets, worn leather shoes, simple smooth gold wedding band, standing centered and meditative at textile work table in cyberpunk 2226 Great Lakes Metropolitan Zone, warm ambient workshop lighting catching the geometric shimmer in her eyes, hyperrealistic skin texture, profound stillness and precision in posture, --ar 2:3 --v 6",
+  "image_prompt": "Aditya Konaté-Sesay-Deshpande, 158cm compact heavyset woman with deep warm brown skin and golden undertones, mixed South Asian-African-East Asian heritage evident in defined cheekbones and subtle angular eyes. Bone white short coiled hair pinned neatly. Cosmetic iris mod with rotating silver hexagons, deep brown base. Age 58, standing in GLMZ textile shop, leaning against worn work table, meditative stillness. Calloused hands with permanent indigo staining from decades of dye work, scarred wrists from articular stabilizers. Wearing self-tailored charcoal linen apron over cream wool blend, practical leather shoes worn smooth. Neutral earth tone palette, immaculate despite age. Soft workshop lighting casting shadows across her thoughtful face, gold band ring catching light. Neo-noir urban aesthetic meets human craftsmanship, grounded presence, economical movement, digital age mastery through analog precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 61.2,
-    "Sub-Saharan African": 25.3,
-    "Eastern European": 13.5
+    "South Asian": 41.8,
+    "Sub-Saharan African": 33.5,
+    "East Asian": 22.1,
+    "Southeast Asian": 2.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 25.2
+      },
+      "Indian": {
+        "Marathi": 6.6,
+        "Kannada": 10
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 15.1
+      },
+      "Southern African": {
+        "Zambian": 18.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10.4
+      },
+      "Chinese": {
+        "Cantonese": 5.1
+      },
+      "Japanese": {
+        "Japanese": 6.6
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 1.9
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.1
+      },
+      "Cambodian": {
+        "Khmer": 0.6
+      }
+    }
+  }
 }

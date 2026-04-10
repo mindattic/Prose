@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67d71569f7b09faf97587b7",
   "type": "character",
-  "name": "Zara Valenzuela-Johansson",
+  "name": "Zara Jung-Chakraborty",
   "aliases": [
     "Koko",
     "The Mechanic"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Geartown, Harrowgate Industrial Plateau, near Fullerton and Damen",
-  "description": "Okonkwo is a heavyset man with dark brown skin, a shaved head tattooed with a fine-line circuit diagram that was his journeyman qualification piece when he trained as a licensed aug technician — before the license was suspended. His hands are his most augmented feature: titanium-reinforced fingers with retractable micro-tools in the right hand and haptic sensitivity amplifiers in the left, built over seven years of incremental self-installation. He wears a mechanic's apron over a clean undershirt and moves through his workshop with the unhurried competence of someone who has done every motion a thousand times.\n\nHis shop is a converted machine bay off a side alley in Geartown, marked only by a small blue LED fixture above the door that locals know means open. He does aug maintenance, black-market installations, and sells a curated line of pharmaceutical compounds — mostly pain management, anti-rejection meds, and neural stabilizers — that people need to keep their augmentations functional without going through Helix Biosystems' official pricing. He is careful, technically meticulous, and genuinely skilled. He is also operating entirely outside corporate medical licensing, which means everything he does is illegal and every satisfied customer is a liability.",
+  "description": "Zara Jung-Chakraborty is a heavyset man with dark brown skin, a shaved head tattooed with a fine-line circuit diagram that was his journeyman qualification piece when he trained as a licensed aug technician — before the license was suspended. His hands are his most augmented feature: titanium-reinforced fingers with retractable micro-tools in the right hand and haptic sensitivity amplifiers in the left, built over seven years of incremental self-installation. He wears a mechanic's apron over a clean undershirt and moves through his workshop with the unhurried competence of someone who has done every motion a thousand times.\n\nHis shop is a converted machine bay off a side alley in Geartown, marked only by a small blue LED fixture above the door that locals know means open. He does aug maintenance, black-market installations, and sells a curated line of pharmaceutical compounds — mostly pain management, anti-rejection meds, and neural stabilizers — that people need to keep their augmentations functional without going through Helix Biosystems' official pricing. He is careful, technically meticulous, and genuinely skilled. He is also operating entirely outside corporate medical licensing, which means everything he does is illegal and every satisfied customer is a liability.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -160,7 +160,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,34 +185,22 @@
     "Geartown",
     "The Peninsula",
     "Titanium",
-    "The Pure Hand",
-    "Fanta Popov-Adjei",
-    "Green Bay Community Table",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Marcus Bellamy",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Tessera Corponation Lattice Whisper Node",
-    "The Arrangement",
-    "Tobechukwu Papadimitriou-Vásárhelyi",
-    "Vespid Dynamics",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Circuit",
+    "Neural Palate",
+    "The Pure Hand"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American dominant (55.4%) with significant Southeast Asian (28.2%) and South Asian (16.4%) ancestry — resulting in warm brown skin tone with subtle golden undertones characteristic of South Asian heritage blended with Latin American warmth. Facial structure reflects the Southeast Asian component in moderate cheekbone prominence and eye shape, while Latin American heritage contributes to overall facial proportions and jawline definition.",
+    "heritage": "Complex diaspora blend: South Asian 36.6%, East Asian 28.3%, Hispanic/Latin American 19.7%, with smaller contributions from Eastern European 5.9%, Northern European 5.4%, and Southeast Asian 4.1%. This creates a richly layered phenotype — warm bronze-brown skin with golden undertones from South Asian ancestry, moderate cheekbone prominence and eye shape from East and Southeast Asian components, and facial proportion definition from Hispanic/Latin American heritage. The overall effect is a face that reads as genuinely global, carrying the warmth of multiple sun-exposed populations without dominance from any single region.",
     "height_cm": 182,
     "weight_kg": 94,
     "build": "Heavyset and solid without excess softness — muscular density concentrated in shoulders and forearms from decades of precision hand work. Chest and midsection carry weight with the settled confidence of someone who stopped worrying about aesthetics years ago.",
     "hair_color": "Natural black",
     "hair_style": "Shaved to scalp",
     "hair_length": "Shaved",
-    "eye_color": "Dark brown (natural); left eye modified with subretinal work-light producing faint amber glow under low light",
-    "skin_tone": "Warm golden-brown with sun-weathered depth, reflecting the blended ancestry of Latin American and South Asian heritage with Southeast Asian undertones. Weathered by industrial workshop exposure and age but retaining warmth rather than dullness.",
-    "complexion": "Weathered but not gaunt — face carries surgical precision in its lines, jaw set with habit of concentration. Moderate cheekbone prominence from Southeast Asian heritage, Latin American jawline definition. Forehead smooth, crow's feet deepened by years squinting at fine augmentation work. No beard, kept scrupulously clean.",
+    "eye_color": "Dark brown with amber glow (left eye modified with subretinal work-light producing faint amber luminescence under low light)",
+    "skin_tone": "Warm bronze-brown with golden undertones, sun-weathered depth reflecting balanced South Asian, East Asian, and Hispanic/Latin American heritage. Weathered by industrial workshop exposure and age but retaining warmth and luminosity rather than dullness.",
+    "complexion": "Weathered but not gaunt — face carries surgical precision in its lines, jaw set with habit of concentration. Moderate cheekbone prominence from East and Southeast Asian heritage, jawline definition from Hispanic/Latin American ancestry. Forehead smooth, crow's feet deepened by years squinting at fine augmentation work. No beard, kept scrupulously clean. Facial structure balances broader cheekbones with defined jawline.",
     "distinguishing_marks": [
       "Fine-line circuit diagram tattoo covering entire shaved scalp in black ink — elaborate journeyman qualification piece with labeled nodes and pathways, visible from any angle",
       "Pale scar tissue across both palms and fingers from countless incremental augmentation surgeries, creating a topography of overlapping surgical sites"
@@ -221,14 +209,72 @@
     "posture_movement": "Moves with unhurried, economical motion — no wasted energy, every gesture purposeful. Hands rest in constant micro-adjustment, fingers flexing or adjusting involuntarily even when idle. Leans slightly forward when focused, head tilting to align left eye work-light. Walks with weight distributed even, shoulders level. Speaks with hands frequently, gesturing with augmented fingers in ways that unconsciously display their precision.",
     "clothing_style": "Worn gray canvas mechanic's apron with oil stains and burn marks, worn over a clean white or pale gray undershirt (practical for workshop but also a statement — clean torso despite the work). Heavy-duty boots with reinforced soles and ankle support. No jewelry, no visible corporate branding. Clothes are Tier 4-5 utilitarian — functional, maintained but not fashionable, marking him as working-class Geartown rather than corpo. A thin wire runs from behind his left ear down his neck (neural interface jack, discreet but visible on close inspection)."
   },
-  "image_prompt": "Zara Valenzuela-Johansson, 182cm tall augmentation specialist, shaved head covered in intricate black circuit diagram tattoo, warm golden-brown skin with sun-weathered depth blending Latin American, Southeast Asian, and South Asian heritage. Dark brown eyes with left eye subtly glowing amber. Muscular shoulders and forearms, heavyset solid build. Both hands showing obvious titanium finger joint reinforcement gleaming chrome, visible retractable micro-tool panels at knuckles, pale surgical scar tissue across palms and fingers. Wrists with subtle metallic sheen at flex points. Wearing worn gray canvas mechanic's apron with oil stains over clean white undershirt, heavy-duty reinforced boots. No beard, meticulously clean. Thin neural interface wire visible behind left ear running down neck. Standing in warm workshop lighting, hands in characteristic micro-adjustment, posture leaning slightly forward with unhurried economical motion. Cyberpunk 2226 Geartown aesthetic, working-class precision tech specialist. cinematic workshop lighting with amber glow from subretinal work-light, gritty industrial setting --ar 2:3 --v 6",
+  "image_prompt": "Zara Jung-Chakraborty, 182cm tall muscular augmented technician in GLMZ, warm bronze-brown complexion with golden undertones reflecting South Asian, East Asian, and Hispanic heritage blend, shaved scalp covered in intricate black circuit diagram tattoo with labeled nodes, weathered face with defined jawline and moderate cheekbones, crow's feet from decades of precision work. Dark brown eyes, left eye glowing faint amber from subretinal work-light. Both hands heavily augmented with visible titanium reinforcement, chrome finger joints, retractable micro-tools at right hand knuckles, pale surgical scars across palms. Wearing worn gray canvas mechanic's apron with oil stains over clean white undershirt, heavy reinforced boots, neural interface jack visible behind left ear. Workshop environment with low industrial lighting emphasizing the amber glow of augmented left eye. Posture economical and focused, hands in constant micro-adjustment. Geartown working-class aesthetic, no corporate branding, functional and utilitarian. Cinematic GLMZ 2200s atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 55.4,
-    "Southeast Asian": 28.2,
-    "South Asian": 16.4
+    "South Asian": 36.6,
+    "East Asian": 28.3,
+    "Hispanic/Latin American": 19.7,
+    "Eastern European": 5.9,
+    "Northern European": 5.4,
+    "Southeast Asian": 4.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Gujarati": 11.4,
+        "Kannada": 5.9
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.9
+      },
+      "Nepali": {
+        "Nepali": 12.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 28.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 6.4
+      },
+      "Caribbean": {
+        "Dominican": 3.4,
+        "Puerto Rican": 4.6
+      },
+      "South American": {
+        "Peruvian": 5.3
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 1.3,
+        "Ukrainian": 1.3
+      },
+      "Magyar-Romanian": {
+        "Romanian": 1.4,
+        "Hungarian": 1.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 0.5
+      },
+      "Germanic": {
+        "Swiss German": 1.3,
+        "Austrian": 3.6
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 4.1
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5cf7627a50ab27f24038ee3",
   "type": "character",
-  "name": "Remi Solberg",
+  "name": "Remi Cervantes",
   "aliases": [
     "Mama Eb",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Washburn Commons, Archive Annex — a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips, near Ashland and Chicago Ave",
-  "description": "Ẹbúnọlú is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses — each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it 'has better manners than the new ones.' Her irises are patterned with concentric amber rings — a genemod she got at forty that she calls her 'reading eyes,' though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest — she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
+  "description": "Remi Cervantes is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses — each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it 'has better manners than the new ones.' Her irises are patterned with concentric amber rings — a genemod she got at forty that she calls her 'reading eyes,' though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest — she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -182,7 +182,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Washburn Commons",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,40 +248,17 @@
     "GLMZ",
     "Dredge Mining Collective",
     "Grandmother",
+    "GLMZ",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
-    "ARCHIVE",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Brass",
     "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Anatoliy Faye-Nkrumah",
-    "Chronicle",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kairos",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "MERIDIAN",
-    "Narrowcast",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Archive",
-    "The Collective",
-    "The Corridor",
-    "The Pure Hand",
-    "The Shelf Commons",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Brass"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European, Sub-Saharan African, and Hispanic/Latin American ancestry in nearly equal measure—a genetic tapestry reflecting the Ubiquitous Diaspora. The combination manifests as warm deep brown skin with subtle golden undertones, facial structure showing the broader cheekbones and defined jaw of Sub-Saharan heritage blended with the finer nose bridge of Northern European ancestry, and natural hair texture adapted into the wrapped style.",
+    "heritage": "Hispanic/Latin American (68.3%), East Asian (28.3%), and Central Asian (3.4%) ancestry—a genetic combination reflecting the Ubiquitous Diaspora. The blend manifests as warm medium-brown skin with subtle golden undertones, facial structure showing the higher cheekbones and defined jawline characteristic of East Asian heritage combined with the broader facial proportions and fuller features of Hispanic/Latin American ancestry, with delicate eye structure from the East Asian component and minor Central Asian undertones in facial geometry.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Petite and slight, with the compressed density of someone who has spent a lifetime hunched over archival work. Narrow shoulders, delicate wrists (right wrist only), minimal subcutaneous fat. Movement suggests coiled energy rather than frailty.",
@@ -289,8 +266,8 @@
     "hair_style": "Tight compressed wrap, pinned with articulated memory-stick styluses serving as functional hair ornaments",
     "hair_length": "Medium (wrapped and pinned close to scalp)",
     "eye_color": "Dark brown with concentric amber ring patterning (genemod, cosmetic)",
-    "skin_tone": "Deep warm brown with golden undertones, soft and well-maintained despite age—reflecting the blended ancestry of African and Mediterranean-influenced heritage",
-    "complexion": "Deeply lined face, particularly pronounced crow's feet and jaw hinges from decades of close-focus archival work. Broad cheekbones and defined jaw structure characteristic of Sub-Saharan heritage blend with finer features. Skin is supple and cared for. Expression typically warm but capable of becoming austere. Age markers visible but not frail-appearing.",
+    "skin_tone": "Warm medium brown with golden undertones, soft and well-maintained despite age—the natural blending of Hispanic/Latin American (68.3%) and East Asian (28.3%) heritage with subtle Central Asian warmth",
+    "complexion": "Deeply lined face, particularly pronounced crow's feet and jaw hinges from decades of close-focus archival work. High cheekbones and defined jaw structure characteristic of East Asian heritage blend seamlessly with the broader facial planes, fuller lips, and defined bone structure of Hispanic/Latin American ancestry. Minor Central Asian influence visible in subtle cheekbone geometry. Skin is supple and cared for. Expression typically warm but capable of becoming austere. Age markers visible but not frail-appearing.",
     "distinguishing_marks": [
       "Concentric amber-ring iris patterning — genemod applied at age forty, deliberate cosmetic choice",
       "Fine crosshatch wrinkles radiating from outer eye corners and jaw hinges, characteristic of prolonged screen work",
@@ -300,14 +277,45 @@
     "posture_movement": "Sits forward-leaning, hands active during speech. Moves with precision and economy of motion. Despite small frame, commands presence through stillness and deliberate gesture. Right hand frequently touches objects — documents, memory chips, items in her archive — with tactile attention. Uses prosthetic hand with practiced indifference, occasionally with theatrical care when making a point.",
     "clothing_style": "Tier 3-4 working-class archive keeper aesthetic: layered linen and cotton in muted earth tones and grays. Long-sleeved shirts to accommodate prosthetic, practical utility vest with deep pockets for memory chips and archival tools. Comfortable worn boots with good grip for navigating Archive Annex floors. No corpo branding. Jewelry minimal except for brass rings on right hand and carved beads woven into hair wrap. Clothing is clean, well-maintained, decades-worn-in comfortable rather than fashionable."
   },
-  "image_prompt": "Remi Solberg, a petite 152cm archive keeper in the GLMZ, 2226. Deep warm brown skin with golden undertones, white hair wrapped tightly and pinned with memory-stick styluses, dark brown eyes with concentric amber ring genomod patterning. Deeply lined face from decades of archival work, broad cheekbones, defined jaw. Left hand is an antique brass prosthetic with articulated fingers; right hand with brass rings, frequently touching objects. Wearing layered earth-toned linen and cotton, long-sleeved to accommodate prosthetic, practical utility vest with deep pockets, worn comfortable boots. Subdermal archival port visible at hairline. Sitting forward-leaning with hands active in speech, commanding presence despite small frame. Precision and deliberate gesture. Archive environment with soft archival lighting, surrounded by data chips and documents. Cyberpunk archival aesthetic, warm ambient lighting --ar 2:3 --v 6",
+  "image_prompt": "Remi Cervantes, a petite 152cm archive keeper in her seventies, warm medium-brown skin with golden undertones reflecting East Asian and Hispanic/Latin American heritage, white hair in a tight wrap pinned with memory-stick styluses. High East Asian cheekbones blending with broader Hispanic/Latin American facial planes, deeply lined face from decades of close-focus work, dark brown eyes with concentric amber ring patterning (genemod). Antique brass prosthetic left hand with articulated fingers, visible subdermal archival port scar at hairline. Wearing layered linen in muted earth tones, long-sleeved shirt, practical utility vest with memory chip pockets, worn comfortable boots. Sits forward-leaning with precise deliberate gestures, right hand touching archival documents. GLMZ Great Lakes Metropolitan Zone, ambient archive lighting, warm and austere presence, tactile attention to objects around her, no corpo aesthetics. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 36.9,
-    "Sub-Saharan African": 31.9,
-    "Hispanic/Latin American": 31.2
+    "Hispanic/Latin American": 68.3,
+    "East Asian": 28.3,
+    "Central Asian": 3.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 18.2,
+        "Ecuadorian": 7.4
+      },
+      "Central American": {
+        "Salvadoran": 35.3
+      },
+      "Mexican": {
+        "Mexican": 7.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 5.1
+      },
+      "Korean": {
+        "Korean": 13.1
+      },
+      "Chinese": {
+        "Fujianese": 8.8,
+        "Shanghainese": 1.3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 3.4
+      }
+    }
+  }
 }

@@ -57,7 +57,7 @@ public class AgendaEngine
         }
 
         var system = $"""
-            You are a character motivation engine for cyberpunk fiction. Given character profiles
+            You are a character motivation engine for near-future fiction. Given character profiles
             and the current story state, determine what each character WANTS to do next.
 
             Characters are not plot devices — they have their own goals that may conflict with

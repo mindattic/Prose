@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5e273749ee47507859d77b1",
   "type": "character",
-  "name": "Idris Mensah",
+  "name": "Idris Krishnamurthy",
   "aliases": [
     "Dag"
   ],
@@ -12,7 +12,7 @@
   "age": 41,
   "status": "active",
   "location": "Based out of the Kessler Interchange operator depot; runs the elevated Kessler-to-Ironvein route daily, near Milwaukee and North Ave",
-  "description": "Dagny is solidly built, the kind of person who takes up space with complete comfort and no aggression. Their skin is a warm medium brown, kept clear with the obsessive skincare routine of someone who spends twelve hours a day under artificial light. They have a shaved head except for a wide stripe of deep blue hair — color-changing geneware that shifts to violet under emotional stress, which is inconvenient in an argument. Their eyes are light amber, patterned with concentric rings — another mod, older, cheaper, and slightly irregular in a way that gives people pause before they realize what they're looking at. They wear their Ferrogate operator uniform with the precise fit of someone who has strong opinions about how a uniform should sit.\n\nDagny has the specific psychological profile of someone who chose a job requiring total situational control and excellent in the role. They are calm during crises in a way that frightens some people — not cold, but genuinely stilled, operating on a different clock. Off the tram, they are warmer and more sardonic than their professional face suggests, with a dry wit that takes a moment to register and then lands fully. They have worked the Kessler-Ironvein route for nine years and know it the way you know a body — its rhythms, its problems, the spots where it gets strange after midnight.",
+  "description": "Idris Krishnamurthy is solidly built, the kind of person who takes up space with complete comfort and no aggression. Their skin is a warm medium brown, kept clear with the obsessive skincare routine of someone who spends twelve hours a day under artificial light. They have a shaved head except for a wide stripe of deep blue hair — color-changing geneware that shifts to violet under emotional stress, which is inconvenient in an argument. Their eyes are light amber, patterned with concentric rings — another mod, older, cheaper, and slightly irregular in a way that gives people pause before they realize what they're looking at. They wear their Ferrogate operator uniform with the precise fit of someone who has strong opinions about how a uniform should sit.\n\nIdris Krishnamurthy has the specific psychological profile of someone who chose a job requiring total situational control and excellent in the role. They are calm during crises in a way that frightens some people — not cold, but genuinely stilled, operating on a different clock. Off the tram, they are warmer and more sardonic than their professional face suggests, with a dry wit that takes a moment to register and then lands fully. They have worked the Kessler-Ironvein route for nine years and know it the way you know a body — its rhythms, its problems, the spots where it gets strange after midnight.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -183,7 +183,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Based out of the Kessler Interchange operator depot; runs the elevated Kessler-to-Ironvein route daily",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,31 +244,14 @@
     "Kessler Interchange",
     "Ferrogate Transit",
     "Ironvein",
+    "Midnight Gyros",
     "Pellucid Systems",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Alper Holmberg-Dembele",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus NX-1 'Sandman'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Last Word",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Peninsula",
-    "Vantablack VS-3 'Skin Job'",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
+    "Compass Rose",
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Sub-Saharan African (32.5%) forms the dominant foundation, with substantial Southeast Asian (21.7%) and North African (19.6%) heritage creating warm, complex undertones. Eastern European (9.7%), Northern European (9.5%), and Hispanic/Latin American (7.0%) ancestry blend smoothly throughout, creating a phenotype that resists easy geographic categorization — precisely the Ubiquitous Diaspora standard.",
+    "heritage": "Ubiquitous Diaspora fusion: Southeast Asian (39.9%) and South Asian (36.0%) ancestry form the dominant genetic foundation, creating warm medium-brown skin with golden undertones and refined facial structure. North African heritage (21.1%) adds depth to bone structure, slightly broader nasal bridge, and enriched warm undertones to the complexion. Indigenous American ancestry (3.0%) contributes subtle refinement to overall phenotype. This combination produces a phenotype that defies singular geographic categorization—the standard template of 2226 genetic diversity.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Solidly stocky with developed upper body and core strength — the build of someone who has worked a physical job for nine years without vanity about it. Shoulders broad and held with easy confidence.",
@@ -276,8 +259,8 @@
     "hair_style": "Shaved head except for a wide stripe of color-shifting hair running front-to-back",
     "hair_length": "Shaved (body), Medium stripe (reactive geneware)",
     "eye_color": "Light amber with concentric ring patterning (iris modification, older consumer-grade, slightly irregular)",
-    "skin_tone": "Warm medium brown with subtle golden undertones from Southeast Asian heritage, exceptionally clear",
-    "complexion": "Clean, maintained skin with obsessive skincare routine (12-hour daily artificial light exposure). Facial structure shows balanced Sub-Saharan and Southeast Asian features — defined cheekbones, strong jaw with slight tapering from Southeast Asian ancestry. No facial hair. Expression typically neutral and still, which reads as either calm competence or unsettling detachment depending on context.",
+    "skin_tone": "Warm medium brown with golden undertones, blended from Southeast Asian, South Asian, and North African ancestry—exceptionally clear",
+    "complexion": "Clean, maintained skin with obsessive skincare routine (12-hour daily artificial light exposure). Facial structure shows balanced Southeast and South Asian features with North African influence—defined cheekbones, strong jaw with elegant tapering, refined nose structure with subtle bridge width from North African heritage. No facial hair. Expression typically neutral and still, which reads as either calm competence or unsettling detachment depending on context.",
     "distinguishing_marks": [
       "Concentric patterned iris modification in both eyes — amber rings creating a target-like effect, slightly asymmetrical due to older installation quality",
       "Neural jack port visible at the base of skull, left side — standard Ferrogate operator hardware, integrated with latency dampener"
@@ -286,17 +269,49 @@
     "posture_movement": "Carries themselves with compact, economical movement — nothing wasted. When standing still, completely still in a way that suggests deliberate control rather than rigidity. Walks with measured pace, shoulders level. On the tram, moves through the cab with practiced precision. Off-duty, posture softens slightly but maintains that same underlying steadiness.",
     "clothing_style": "Ferrogate Transit operator uniform worn with exacting precision — fabric crisp, fit exact, reflective safety panels properly positioned. The uniform fits them like a chosen second skin, not a reluctant requirement. Off-duty: practical Tier 3-4 wear — durable synthetics, neutral colors, minimal branding. No excess, nothing decorative. Well-maintained boots."
   },
-  "image_prompt": "Idris Mensah, transit operator, cyberpunk 2226, warm medium brown skin with golden undertones, shaved head with reactive color-shift geneware stripe (deep blue-violet), amber concentric iris modifications creating target-like pattern in both eyes, structured facial features blending Sub-Saharan and Southeast Asian ancestry, neural jack port visible at base of skull, solidly stocky build with broad shoulders, compact economical posture, wearing crisp Ferrogate Transit operator uniform with reflective safety panels, neutral expression reading as calm competence, standing in fluorescent-lit tram station with overhead lighting catching the iris modifications, moody cyberpunk lighting, hyperrealistic detail on iris patterning and geneware, professional but unsettling presence, --ar 2:3 --v 6",
+  "image_prompt": "Idris Krishnamurthy, 178cm tall transit operator, warm medium-brown skin with golden undertones blending Southeast Asian, South Asian, and North African heritage. Shaved head with deep blue violet-reactive color-shifting stripe running front-to-back. Light amber eyes with concentric ring iris modifications creating unsettling target-like effect. Solidly built with broad shoulders, neutral stoic expression. Neural jack port visible at base of skull. Wearing crisp Ferrogate Transit operator uniform with precise reflective safety panels, standing with economical controlled posture. GLMZ, Great Lakes Metropolitan Zone, cool industrial tram station lighting with overhead fluorescents casting sharp shadows, perfectly maintained professional bearing, slight aura of deliberate control --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 32.5,
-    "Southeast Asian": 21.7,
-    "North African": 19.6,
-    "Eastern European": 9.7,
-    "Northern European": 9.5,
-    "Hispanic/Latin American": 7.0
+    "Southeast Asian": 39.9,
+    "South Asian": 36,
+    "North African": 21.1,
+    "Indigenous American": 3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 15.6
+      },
+      "Indonesian": {
+        "Javanese": 12.9,
+        "Sumatran": 7.1
+      },
+      "Cambodian": {
+        "Khmer": 4.3
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 36
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 7.9,
+        "Kabyle": 1.4
+      },
+      "Nile Valley": {
+        "Sudanese": 11.8
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 2.4,
+        "Maya": 0.6
+      }
+    }
+  }
 }

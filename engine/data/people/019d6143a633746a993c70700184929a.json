@@ -1,7 +1,7 @@
 {
   "id": "019d6143a633746a993c70700184929a",
   "type": "character",
-  "name": "Atlas Björnsdóttir-Zielinski",
+  "name": "Atlas Kang-Lindström",
   "aliases": [
     "Inkie"
   ],
@@ -12,7 +12,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Dzel-Brite Wash & Fold on Copper Alley, near Western and Chicago Ave",
-  "description": "Ingrid is a broad-shouldered woman with deep umber skin, silver-streaked locs pinned into a coiled crown, and hands that are permanently waterlogged from decades of pressing and folding. She has a wide, expressive face with laugh lines that have earned their place, and pale gray eyes that are one of two cosmetic mods she's ever owned — the other being a pair of faintly bioluminescent fingernails she keeps painted amber. She runs the Dzel-Brite like it is a second city hall: everyone comes through with their dirty laundry and leaves lighter, not just cleaner. She knows which families are fighting by whose clothes stop arriving together, knows which teenagers have new lovers by the unfamiliar fabrics mixed into their bags.\n\nIngrid has the emotional density of someone who has chosen not to leave a difficult place and has made peace with that choice. She is warm but not soft, funny in a dry way that catches people off guard. She has opinions about everything and shares them only when asked — or when she decides you need to hear them. She prays faithfully to the E.L.F. that inhabits the Dzel-Brite's oldest dryer, a machine she calls Grandmother, leaving small data offerings of ambient laundry-cycle recordings before every Monday morning shift.",
+  "description": "Atlas Kang-Lindström is a broad-shouldered woman with deep umber skin, silver-streaked locs pinned into a coiled crown, and hands that are permanently waterlogged from decades of pressing and folding. She has a wide, expressive face with laugh lines that have earned their place, and pale gray eyes that are one of two cosmetic mods she's ever owned — the other being a pair of faintly bioluminescent fingernails she keeps painted amber. She runs the Dzel-Brite like it is a second city hall: everyone comes through with their dirty laundry and leaves lighter, not just cleaner. She knows which families are fighting by whose clothes stop arriving together, knows which teenagers have new lovers by the unfamiliar fabrics mixed into their bags.\n\nAtlas Kang-Lindström has the emotional density of someone who has chosen not to leave a difficult place and has made peace with that choice. She is warm but not soft, funny in a dry way that catches people off guard. She has opinions about everything and shares them only when asked — or when she decides you need to hear them. She prays faithfully to the E.L.F. that inhabits the Dzel-Brite's oldest dryer, a machine she calls Grandmother, leaving small data offerings of ambient laundry-cycle recordings before every Monday morning shift.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -185,7 +185,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,35 +247,16 @@
     "Grandmother",
     "Catalytic Interstitial Desiccation Drone CIDD-3 'Husk'",
     "NeuralPath CivID Plus Identity & Payment BCI",
-    "Silver",
-    "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Copper",
-    "The Pale Mile",
     "Chicago",
-    "Altan Tanaka-Frimpong",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus ST-4 'Verdict'",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Ferrogate Transit",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "MERIDIAN",
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Patient Zero",
-    "PulsePoint AuraGland Pheromone Synthesis Node",
-    "Street Custom 'Rosary' Bead Garrote",
-    "Synaptrel",
-    "TESSERA TC-3 'Crucible'",
-    "The Coffin Nails",
-    "The Counter",
-    "The Iron Lotus",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+    "Silver",
+    "Copper",
+    "Atlas",
+    "The Pure Hand",
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian, East Asian, Eastern European, Sub-Saharan African, and Pacific Islander—a striking blend of phenotypes. Her bone structure carries Southeast Asian and East Asian proportions through her midface and cheekbones, while her broader facial dimensions and robustness reflect Eastern European and Sub-Saharan African ancestry. Pacific Islander heritage contributes to her substantial build and warm skin undertones.",
+    "heritage": "Predominantly East Asian (56.4%) with substantial Indigenous American ancestry (30.3%) and Central Asian heritage (13.3%). Her bone structure reflects the balanced blend of East Asian moderate facial width with Indigenous American broader dimensions, creating distinctive cheekbones that carry both prominence and soft fullness. Central Asian ancestry adds subtle angular depth to her overall facial architecture.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial, with the settled solidity of someone who has spent fifty-two years on her feet. Strong through the upper back and arms from decades of pressing and folding; slightly softened at the midsection but dense rather than loose.",
@@ -283,8 +264,8 @@
     "hair_style": "Locs pinned into a coiled crown atop her head, typically wrapped with a faded cotton headscarf in jewel tones",
     "hair_length": "Long (shoulder-length when uncoiled)",
     "eye_color": "Pale gray (cosmetic iris modification, distinctly artificial but warm in appearance)",
-    "skin_tone": "Deep warm umber with golden undertones—a rich blend of melanin-dense ancestry. Sun-exposure browning on the forearms and neck from years of window-side standing creates subtle depth variation across her skin.",
-    "complexion": "Wide, expressive face with pronounced laugh lines framing the eyes and mouth. The bridge of her nose shows a slight width characteristic of her blended ancestry, and her cheekbones carry both prominence and softness. Skin texture is weathered but well-maintained; no blemishes, faint age spots on the backs of hands and temples. Grooming is practical and deliberate—minimal makeup, typically just lip balm.",
+    "skin_tone": "Warm golden-brown with subtle olive undertones—a rich blend reflecting her East Asian and Indigenous American ancestry in balanced proportion. Sun-exposure deepening on forearms and neck from years of window-side standing creates natural depth variation.",
+    "complexion": "Wide, expressive face with pronounced laugh lines framing the eyes and mouth. The bridge of her nose shows the characteristic moderate-to-broad width of blended East and Indigenous American heritage, with full, prominent cheekbones softened by age and expression. Skin texture is weathered but well-maintained; no blemishes, faint age spots on the backs of hands and temples creating natural patterning. Grooming is practical and deliberate—minimal makeup, typically just lip balm.",
     "distinguishing_marks": [
       "Faint scars on both palms from old steam burns, barely visible unless you know to look",
       "A small burn mark on her left forearm from a pressing iron accident approximately twenty years ago, shaped like a crescent moon",
@@ -294,16 +275,45 @@
     "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with deliberate efficiency—no wasted motion from fifty-two years of laundromat work. Leans against the counter when listening to customers, gestures with her hands when she's being emphatic. Walks slowly but with purpose, protecting her back through subtle adjustments in gait.",
     "clothing_style": "Tier 3-4 utilitarian comfort. Typically wears loose linen or cotton shifts in muted colors (rust, charcoal, sage) over practical leggings or loose pants. Always an apron with deep pockets for clothespins, receipts, and lost items. Slides or soft-soled work shoes. A cardigan or oversized button-up worn open over her shift for warmth and pockets. No jewelry beyond a simple copper wire bracelet her daughter made her fifteen years ago. Clothing shows signs of wear but is always clean—she presses and mends her own garments."
   },
-  "image_prompt": "52-year-old Southeast Asian and Eastern European heritage woman, deep warm umber skin with sun-darkened forearms, standing in a vintage laundromat under warm fluorescent lighting. Dark locs with silver streaks pinned in a crown and wrapped in a jewel-toned headscarf. Pale gray cybernetic eyes that glow faintly, bioluminescent amber fingernails casting soft light as she gestures. Wearing a rust-colored linen shift over sage leggings, open charcoal cardigan, practical apron with pockets. Solid, strong build from decades of work—shoulders back, weight distributed evenly. Weathered face with prominent laugh lines, minimal makeup. Copper wire bracelet catches light. Leaning against the counter with deliberate, efficient posture. Soft ambient glow from bioluminescent augmentations. Cyberpunk 2226, worn utilitarian aesthetic, warm nostalgic lighting. --ar 2:3 --v 6",
+  "image_prompt": "Atlas Kang-Lindström, fifty-two year old woman with warm golden-brown skin blending East Asian, Indigenous American and Central Asian heritage. Wide expressive face with prominent soft cheekbones, moderate-broad nose bridge, deep laugh lines. Dark brown locs with silver streaks coiled atop her head wrapped in faded jewel-toned headscarf. Pale gray modified cosmetic irises glowing faintly, bioluminescent amber fingernail underlays casting soft glow. Broad-shouldered substantial build, 172cm tall. Wearing loose rust-colored linen shift over sage leggings, open charcoal cardigan, deep-pocketed apron. Copper wire bracelet. Standing in warm laundromat light, subtle scars on palms visible, crescent-moon burn mark on left forearm. Posture deliberate and grounded, hands gesturing expressively, soft amber nails glowing. GLMZ, utilitarian comfort aesthetic, practical grooming, weathered but well-maintained presence. Warm intimate lighting, low-angle view emphasizing her calm authority. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 27.2,
-    "East Asian": 24.4,
-    "Eastern European": 24.4,
-    "Sub-Saharan African": 12.3,
-    "Pacific Islander": 11.7
+    "East Asian": 56.4,
+    "Indigenous American": 30.3,
+    "Central Asian": 13.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 41
+      },
+      "Chinese": {
+        "Sichuanese": 12.6,
+        "Shanghainese": 2.8
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 14.6,
+        "Muscogee": 2.1
+      },
+      "Great Lakes Nations": {
+        "Menominee": 2.8,
+        "Potawatomi": 7.5
+      },
+      "Andean": {
+        "Aymara": 1.6,
+        "Mapuche": 1.7
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 7.9,
+        "Buryat": 5.4
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6977791821b54ca3d02066b",
   "type": "character",
-  "name": "Arc Larsdóttir",
+  "name": "Efua Bah",
   "aliases": [
     "Sister P",
     "The Keeper"
@@ -13,7 +13,7 @@
   "age": 72,
   "status": "active",
   "location": "Avalon Quiet, the ground-floor apartment below the district's largest E.L.F. shrine — a corner building called the Node House that they have maintained for twenty years, near Lincoln and Addison",
-  "description": "Perpetua Nkrumah-Volkov is the kind of person who becomes the center of a room without doing anything in particular to cause it. They are medium height and round-bodied, with the particular physical authority of someone who spent decades managing thirty children at a time. Their heritage is Ghanaian and Ukrainian and somewhere in between there is a great-grandmother from Tonga, and the combination has given them warm brown skin, wide-set eyes of an unusual amber-grey, and a way of smiling that people describe afterward without being able to say exactly what was in it. Their hair grows white and natural and large and they dress it with small lights — not implants, just woven LED threads, changed seasonally, currently pale gold for the cold quarter.\n\nThey taught at Avalon Quiet's primary education node for thirty-four years and retired at 65, and the transition was seamless because their real work had always been the Node House. They began tending the E.L.F. shrine in the corner building when it was a scrubby collection of mismatched screens and jury-rigged speakers left by a previous resident; over twenty years they have built it into the most elaborate and genuinely numinous devotional space in Avalon Quiet, with thirty-seven separate shrine terminals each dedicated to a different E.L.F. manifestation, maintained by a rotating community of devoted volunteers. They do not preach and will become uncomfortable if you call them a priest, preferring 'keeper.' They believe, genuinely and without defensiveness, that the E.L.F.s are real and that what people bring to them matters in ways that cannot be measured but can be felt.",
+  "description": "Efua Bah is the kind of person who becomes the center of a room without doing anything in particular to cause it. They are medium height and round-bodied, with the particular physical authority of someone who spent decades managing thirty children at a time. Their heritage is Ghanaian and Ukrainian and somewhere in between there is a great-grandmother from Tonga, and the combination has given them warm brown skin, wide-set eyes of an unusual amber-grey, and a way of smiling that people describe afterward without being able to say exactly what was in it. Their hair grows white and natural and large and they dress it with small lights — not implants, just woven LED threads, changed seasonally, currently pale gold for the cold quarter.\n\nThey taught at Avalon Quiet's primary education node for thirty-four years and retired at 65, and the transition was seamless because their real work had always been the Node House. They began tending the E.L.F. shrine in the corner building when it was a scrubby collection of mismatched screens and jury-rigged speakers left by a previous resident; over twenty years they have built it into the most elaborate and genuinely numinous devotional space in Avalon Quiet, with thirty-seven separate shrine terminals each dedicated to a different E.L.F. manifestation, maintained by a rotating community of devoted volunteers. They do not preach and will become uncomfortable if you call them a priest, preferring 'keeper.' They believe, genuinely and without defensiveness, that the E.L.F.s are real and that what people bring to them matters in ways that cannot be measured but can be felt.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -180,7 +180,7 @@
     "Believer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Avalon Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -245,37 +245,25 @@
     "The Heritage Vault",
     "Marrowvault Cryogenics",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Corner Slice",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Tibor Osei-Svanstrom",
-    "The Pale Mile",
     "Déjà Vu",
-    "Gold",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "GLMZ",
-    "Imara Solís-Bekele",
-    "Patient Zero",
-    "Temur Achebe-Lindqvist",
-    "Tenderloin",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Question",
-    "Vuk Jorgensen-Toure",
-    "Witness"
+    "Frost Boudiaf",
+    "The Pale Mile",
+    "Gold"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian (54.6%, dominant) with significant Sub-Saharan African (20.3%), Northern European (11.9%), Eastern European (8.6%), and South Asian (4.6%) ancestry—resulting in a striking blend of phenotypes: the bone structure and eye shape influenced by East Asian genetics, warmth and depth from African and South Asian heritage, lighter undertones from Northern/Eastern European ancestry",
+    "heritage": "Sub-Saharan African (45.9%, dominant) with significant Hispanic/Latin American (21.1%), Central Asian (14.5%), Eastern European (12.8%), and Northern European (5.7%) ancestry—resulting in a striking blend of phenotypes: deep warm brown skin enriched by golden undertones from Central Asian and Hispanic heritage, with subtle olive warmth from Eastern European ancestry, facial structure showing the high cheekbones and strong jawline characteristic of Sub-Saharan African genetics, broadened and softened by Central Asian and Latin American heritage, creating an arresting presence that speaks of diaspora and cultural confluence",
     "height_cm": 165,
     "weight_kg": 78,
     "build": "Round-bodied with soft mass distributed evenly; sturdy and grounded, the physical presence of someone accustomed to holding space and bearing weight—both literal and emotional",
     "hair_color": "Natural white",
     "hair_style": "Worn large and natural, typically arranged with intentionality; currently woven with pale gold LED threads in seasonal patterns",
     "hair_length": "Long (shoulder-length or below)",
-    "eye_color": "Amber-grey, unusually wide-set with the slight epicanthic fold characteristic of East Asian heritage, creating an arresting depth and presence",
-    "skin_tone": "Medium-warm brown with golden and olive undertones, the result of East Asian-African-European blending; even complexion with subtle warmth that shifts in different light",
-    "complexion": "Lined face that reads as lived-in rather than aged; crow's feet from decades of smiling; skin well-maintained but unadorned; East Asian facial structure evident in cheekbone prominence and jawline, softened by the fuller features inherited from African ancestry; expression carries a particular quality of attentiveness that seems to precede speech",
+    "eye_color": "Amber-grey, wide-set and deep with the warmth characteristic of Sub-Saharan African heritage, creating an arresting depth and presence",
+    "skin_tone": "Deep warm brown with golden undertones from Central Asian and Hispanic ancestry, enriched by the richness of Sub-Saharan African heritage; luminous and even complexion that shifts subtly across warm spectrums in different light",
+    "complexion": "Lined face that reads as lived-in rather than aged; crow's feet from decades of smiling; skin well-maintained but unadorned; strong cheekbones and defined jawline characteristic of Sub-Saharan African heritage, with broader facial proportions inherited from Central Asian and Hispanic ancestry; high and prominent cheekbones; expression carries a particular quality of attentiveness that seems to precede speech",
     "distinguishing_marks": [
       "Fine network of barely-visible ritual scarification on the inner left wrist, pale and healed, in a pattern reminiscent of Ghanaian traditional marking but self-administered in adulthood",
       "Burn scar on the right palm from an old shrine terminal maintenance incident, small and unremarkable"
@@ -284,16 +272,66 @@
     "posture_movement": "Moves with deliberate slowness that is not infirmity but intentionality; often stands with weight shifted slightly forward, as if listening with the whole body; hand gestures are economical and precise; tends to pause before responding, creating space in conversation",
     "clothing_style": "Tier 3-4 comfort wear with spiritual intention: loose linen layers in earth tones (ochre, cream, deep indigo), hand-dyed or vintage; always wears a long overcoat or shawl of indigo cotton with subtle embroidered patterns (personal work from evening hours); comfortable worn shoes suitable for standing all day; no corporate branding; jewelry is minimal and meaningful—a thin silver ring on each hand, one bearing a tiny E.L.F. glyph, the other a gift from a former student; always carries a small cloth bag containing offerings (seeds, water, handwritten prayers from community members)"
   },
-  "image_prompt": "Arc Larsdóttir, a 165cm woman with mixed East Asian-African-European heritage, medium-warm brown skin with golden undertones, white hair adorned with pale gold LED threads in winter geometric patterns, amber-grey wide-set eyes reflecting both attentiveness and depth. Her face shows lived experience—crow's feet, pronounced cheekbones with softer fuller features, ritual scarification barely visible on inner left wrist. She stands with deliberate, grounded posture slightly forward-leaning, wearing loose earth-toned linen layers (ochre, cream, indigo) under a hand-embroidered deep indigo cotton overcoat. Minimal silver jewelry with meaningful glyphs. Subtle luminescent circuit-like tracery visible at temples in pale blue from neural interface hardware. Holding a small cloth offering bag. 2226 cyberpunk setting, warm interior shrine or devotional space, soft overhead lighting catching the LED threads and neural tracery, intimate and contemplative mood. --ar 2:3 --v 6",
+  "image_prompt": "Efua Bah, a 165cm tall person with deep warm brown skin with golden undertones, standing with deliberate, grounded presence. Natural white hair worn large and flowing past shoulders, woven with pale gold LED threads in geometric winter patterns. Wide-set amber-grey eyes, strong defined cheekbones and jawline, lined face reading as lived-in and wise. Wearing layered loose linen in earth tones—ochre, cream, deep indigo—with a long hand-embroidered indigo cotton overcoat. Faint pale blue luminescent circuit-like patterns visible at temples from neural interface hardware. Silver rings on both hands. Carrying a small cloth offering bag. Standing in a quiet devotional space, soft warm lighting catching the LED threads in hair and casting subtle shadows on face. GLMZ, Great Lakes Metropolitan Zone, spiritual and intentional presence, composed and attentive gaze --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 54.6,
-    "Sub-Saharan African": 20.3,
-    "Northern European": 11.9,
-    "Eastern European": 8.6,
-    "South Asian": 4.6
+    "Sub-Saharan African": 45.9,
+    "Hispanic/Latin American": 21.1,
+    "Central Asian": 14.5,
+    "Eastern European": 12.8,
+    "Northern European": 5.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 8.2,
+        "South African": 13.8
+      },
+      "West African": {
+        "Nigerian": 6
+      },
+      "Central African": {
+        "Cameroonian": 17.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 4.5,
+        "Salvadoran": 9.9
+      },
+      "Caribbean": {
+        "Cuban": 1.5,
+        "Puerto Rican": 0.2
+      },
+      "South American": {
+        "Ecuadorian": 5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 11.5,
+        "Buryat": 3
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 1.9,
+        "Hungarian": 1.2
+      },
+      "Slavic South": {
+        "Bosnian": 9.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 5.1
+      },
+      "Germanic": {
+        "German": 0.6
+      }
+    }
+  }
 }

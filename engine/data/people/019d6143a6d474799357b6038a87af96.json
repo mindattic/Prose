@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d474799357b6038a87af96",
   "type": "character",
-  "name": "Kwame Achebe-Baiseitov",
+  "name": "Arden An-Björnsdóttir",
   "aliases": [
     "Drip",
     "the Cartographer"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "The Undertow, western pipe networks beneath Ironvein",
-  "description": "Solveig is lean and faintly luminescent from years of proximity to bioluminescent fungal blooms — her brown skin carries a permanent bluish-green sheen along her collarbones and forearms that she stopped noticing long ago. Her hair is shaved close on the sides, the top grown into locs threaded with stripped copper wire, a habit from childhood when wire was currency. Her eyes are unsettling to surface people: her irises have been tattooed in concentric rings of deep indigo, a traditional Undertow wayfinder's mark that signals she's been down here long enough to earn the pattern. She moves with the particular economy of people who have spent decades in low-clearance spaces — always angled slightly sideways, head perpetually calculating height.\n\nSolveig is methodical to the point of seeming cold until you realize that everything she does is care. She memorizes the preferences of the people she guides — who is claustrophobic, who has a bad knee, who prays to the Drip-ELF before crossing a flooded section. She charges what people can pay and accepts barter without complaint. She does not lie about danger. What unsettles newcomers is that she speaks about the tunnels as though they are alive and listening, pausing mid-sentence to press a palm to a pipe and reconsider her route.",
+  "description": "Arden An-Björnsdóttir is lean and faintly luminescent from years of proximity to bioluminescent fungal blooms — her brown skin carries a permanent bluish-green sheen along her collarbones and forearms that she stopped noticing long ago. Her hair is shaved close on the sides, the top grown into locs threaded with stripped copper wire, a habit from childhood when wire was currency. Her eyes are unsettling to surface people: her irises have been tattooed in concentric rings of deep indigo, a traditional Undertow wayfinder's mark that signals she's been down here long enough to earn the pattern. She moves with the particular economy of people who have spent decades in low-clearance spaces — always angled slightly sideways, head perpetually calculating height.\n\nArden An-Björnsdóttir is methodical to the point of seeming cold until you realize that everything she does is care. She memorizes the preferences of the people she guides — who is claustrophobic, who has a bad knee, who prays to the Drip-ELF before crossing a flooded section. She charges what people can pay and accepts barter without complaint. She does not lie about danger. What unsettles newcomers is that she speaks about the tunnels as though they are alive and listening, pausing mid-sentence to press a palm to a pipe and reconsider her route.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -170,7 +170,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,28 +231,17 @@
     "LifeWire TrueNorth Subdermal Navigation Core",
     "Full Clearance (The Erasure Mix)",
     "Lymphatic Resonance Injector LRI-5 'Floodgate'",
+    "Pressure Drop",
     "Ironvein",
+    "Aphelion",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
-    "Anatoliy Faye-Nkrumah",
-    "Aphelion",
-    "Barometric Implosion Carbine BIC-5 'Sinkhole'",
-    "Bathysphere Networks",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lacuna Genomics",
-    "Narrowcast",
-    "Ossolo Przenysław-Faatoafe",
-    "PulsePoint HydraLine Fluid Balance Monitor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Coffin Nails",
-    "The Pure Hand",
-    "VitaCore BloomFilter Olfactory Modulation Implant"
+    "Indigo",
+    "Palm Leaf"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Central Asian dominant (Kazakh, Kyrgyz, or Uzbek ancestry ~64%) with significant Sub-Saharan African admixture (~23%) and Northern European heritage (~13%). Features reflect this tri-continental blend: moderate bone structure with Central Asian cheekbones and jaw, enriched by African heritage in skin depth and texture, with subtle Northern European contributions to eye shape and hair characteristics.",
+    "heritage": "Pan-Asian dominant ancestry (75.1% combined South, East, and Southeast Asian) with significant global contributions. South Asian foundation (32.2%) provides cheekbone prominence and jawline structure, blended with East Asian (26.6%) eye shape and facial proportions, Southeast Asian (16.3%) softness in features, and subtle warmth from Hispanic/Latin American (10.2%) heritage. Northern European (8.7%) and Eastern European (6.0%) contribute undertones to skin depth and facial angularity. Features reflect a harmonious pan-Asian aesthetic with globally nuanced undertones: moderate bone structure combining South Asian cheekbone definition with Southeast Asian facial softness, enriched by East Asian eye characteristics and slight Central/Northern European contribution to overall facial proportion balance.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and wiry, with the compressed musculature of someone who moves through tight spaces constantly. Shoulders slightly rounded forward from years of ducking under low pipes. Core strength evident but not bulky.",
@@ -260,8 +249,8 @@
     "hair_style": "Sides shaved to bare scalp, top grown into thick locs threaded with stripped copper wire",
     "hair_length": "Short on sides, medium-long on top (locs extend to mid-shoulder)",
     "eye_color": "Dark brown with concentric ring tattoos in deep indigo — three rings per iris, traditional Undertow wayfinder's mark",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting Central Asian and Sub-Saharan heritage blend. Permanent bluish-green bioluminescent sheen concentrated along collarbones, forearms, and the inner curve of both wrists creates an iridescent overlay.",
-    "complexion": "Weathered but not aged prematurely. Skin texture slightly roughened from fungal exposure and constant moisture, with the robust resilience characteristic of African heritage skin. Angular facial structure—high cheekbones with Central Asian prominence, sharp jawline tapering to a defined chin. Dark, keen eyes set with slight epicanthic fold influence. Minimal grooming beyond functional — no makeup, nails kept short and callused.",
+    "skin_tone": "Medium warm brown with golden undertones, reflecting the dominant pan-Asian ancestry blend (South, East, Southeast) with subtle warmth from Hispanic/Latin American heritage. Permanent bluish-green bioluminescent sheen concentrated along collarbones, forearms, and the inner curve of both wrists creates an iridescent overlay.",
+    "complexion": "Weathered but not aged prematurely. Skin texture slightly roughened from fungal exposure and constant moisture, with the characteristic resilience of South and East Asian heritage skin. Angular facial structure—moderate cheekbones with South Asian prominence tempered by Southeast Asian softness, sharp jawline tapering to a defined chin with subtle East Asian angularity. Dark, keen eyes set with slight epicanthic fold influence characteristic of East Asian ancestry. Minimal grooming beyond functional — no makeup, nails kept short and callused.",
     "distinguishing_marks": [
       "Permanent bluish-green bioluminescent discoloration across both collarbones in a V-pattern from fungal bloom proximity",
       "Matching bioluminescent sheen on forearms from wrist to elbow, fading gradually",
@@ -273,14 +262,69 @@
     "posture_movement": "Perpetually angled sideways in narrow spaces even when unnecessary — muscle memory runs deep. Head held in constant micro-calculations of overhead clearance. Movement is economical and precise, never wasted motion. Steps are quiet and deliberate. Hands move with practiced care when near obstacles or clients.",
     "clothing_style": "Tier 5 utilitarian/Undertow-adapted. Rust-resistant polymer base-layer (faded teal), sealed at wrists and ankles. Over it: a patched synthetic parka of indeterminate color (charcoal or dark teal, hard to tell under algae stains). Cargo pants with reinforced knees and multiple pockets filled with coiled rope, spare lantern modules, and a leather journal. Boots are heavy synthetic with grip-treads, well-maintained. A woven satchel (made from dried algae fibers) carries mapping tools and fungal samples. Jewelry: a thin copper bracelet on left wrist (handmade, Undertow-crafted) and copper wire woven through locs. No corp logos or status wear. Everything speaks to someone who has chosen the tunnels permanently."
   },
-  "image_prompt": "Kwame Achebe-Baiseitov, deep warm brown skin with Central Asian and Sub-Saharan African heritage visible in angular cheekbones and keen dark eyes bearing indigo ring tattoos, bioluminescent bluish-green sheen glowing faintly across collarbones and forearms. Dark locs with copper wire threading reaching mid-shoulder, sides shaved. Lean wiry build, 168cm tall, wearing faded teal sealed base-layer under patched dark synthetic parka stained with algae, cargo pants with reinforced knees, heavy synthetic grip-tread boots. Hands show fine pale scarring from pipe work. Perpetually angled posture as if navigating tight tunnel spaces, head calculating overhead clearance, quiet deliberate movement. Copper handmade bracelet on left wrist. Woven algae-fiber satchel across chest. Cyberpunk 2226, underground Undertow tunnel explorer, dim bioluminescent tunnel lighting casting deep shadows, fungal glow barely visible in background, moody atmospheric mood, gritty industrial setting, wet metal and organic growth textures, cinematic --ar 2:3 --v 6",
+  "image_prompt": "Arden An-Björnsdóttir, 168cm lean figure with pan-Asian features—prominent South Asian cheekbones softened by Southeast Asian facial structure, East Asian eye shape with deep brown irises marked by indigo concentric ring tattoos. Medium warm brown skin with golden undertones, bioluminescent bluish-green sheen glowing across collarbones and forearms. Dark brown textured hair with sides shaved bare, thick locs on top threaded with copper wire extending to mid-shoulder. Weathered complexion, angular jawline, keen intelligent gaze. Wearing faded teal sealed polymer base-layer under patched charcoal/teal synthetic parka stained with algae residue. Heavy synthetic grip-tread boots, cargo pants with reinforced knees, woven algae-fiber satchel. Copper bracelet on left wrist, copper wire in locs. Posture slightly angled sideways, economical movement, fungal-exposed skin texture. Underground tunnel setting, bioluminescent fungi casting blue-green light, narrow metal pipes overhead, moisture in air, GLMZ Great Lakes Metropolitan Zone. Moody atmospheric lighting emphasizing glow marks and wayfinder markings. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 63.6,
-    "Sub-Saharan African": 23.0,
-    "Northern European": 13.4
+    "South Asian": 32.2,
+    "East Asian": 26.6,
+    "Southeast Asian": 16.3,
+    "Hispanic/Latin American": 10.2,
+    "Northern European": 8.7,
+    "Eastern European": 6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 3.8,
+        "Tamil Sri Lankan": 1.8
+      },
+      "Pakistani": {
+        "Baloch": 26.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 26.6
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 5.2
+      },
+      "Indonesian": {
+        "Javanese": 11.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 2,
+        "Guatemalan": 4.2
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.3
+      },
+      "Mexican": {
+        "Mexican": 2.7
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 1.5,
+        "Irish": 1.4
+      },
+      "Scandinavian": {
+        "Swedish": 5.5,
+        "Danish": 0.3
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 3.6,
+        "Ukrainian": 2.4
+      }
+    }
+  }
 }

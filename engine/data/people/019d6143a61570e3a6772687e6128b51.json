@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61570e3a6772687e6128b51",
   "type": "character",
-  "name": "Lyric Montalvo",
+  "name": "Lyric Agyemang",
   "aliases": [
     "Fid",
     "The Lector"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Oxidian Market, Ironhaven, near Western and Division",
-  "description": "Fidelis is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face — wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they're inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nFidelis sells bootleg film, music, literature, and recordings in the morning, and 'readings' in the afternoon — a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn't matter: the comfort is real either way, and they charge fairly.",
+  "description": "Lyric Agyemang is a willowy twenty-two-year-old with the warm clay-brown complexion that comes from their Congolese-Peruvian lineage, and an extraordinary face — wide-set eyes fitted with irises that shift from amber to deep jade depending on the light, long features that read as still and ageless even when they are laughing. Their hair is grown out into a soft cloud that they have threaded with fiber-optic strands, so it glows at the tips in a slow amber pulse when they're inside. They dress like a traveling scholar from some other century: layered robes in muted earth tones, rings on every finger, a tablet crammed with media archives always in hand.\n\nLyric Agyemang sells bootleg film, music, literature, and recordings in the morning, and 'readings' in the afternoon — a practice that is one part ELF-communing, one part cold reading, and one part genuine perceptiveness that they do not fully understand themselves. They have developed a minor reputation in the Oxidian Market for readings that are accurate in strange, specific ways. They are not sure if they are receiving something or constructing something from micro-observations. They have decided it doesn't matter: the comfort is real either way, and they charge fairly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -190,7 +190,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,28 +247,15 @@
     "The Oxidian Market",
     "Ferrogate Transit",
     "Ironhaven",
+    "The Accidental",
     "Helix Biosystems DermRenew Cellular Renewal Lattice",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
-    "ARCHIVE",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Clay",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Street-Custom Razorwire Wraps 'Glass Hands'",
-    "The Archive",
-    "The Bazaar",
-    "The Cutters Guild",
-    "The Pure Hand",
-    "The Unfinished Theorem",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Clay"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Pan-global ancestry: Hispanic/Latin American (24.3%), Sub-Saharan African (23.4%), Northern European (19.9%), North African (13.2%), South Asian (11.9%), Middle Eastern (7.3%). Features reflect this broad diaspora blend—warm undertones from African and Latin heritage, subtle bone structure influence from Northern European and South Asian ancestry, with North African and Middle Eastern features contributing to facial symmetry.",
+    "heritage": "True pan-global ancestry: Hispanic/Latin American (25.6%), Sub-Saharan African (21.0%), Middle Eastern (20.6%), Northern European (13.5%), Indigenous American (11.5%), South Asian (7.8%). This rare diaspora combination creates distinctive feature layering—warm bronze undertones from African and Latin heritage, refined bone structure shaped by Northern European and South Asian ancestry, Middle Eastern influence evident in facial symmetry and nose bridge, Indigenous American ancestry deepening overall complexion warmth and richness.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Willowy and lean with long limbs and delicate bone structure; moves with deliberate, economical grace",
@@ -276,8 +263,8 @@
     "hair_style": "Soft, voluminous cloud worn natural; fibers create slow amber pulse when illuminated",
     "hair_length": "Long",
     "eye_color": "Augmented shifting iris — amber to deep jade depending on ambient light and angle",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, reflecting the blend of Sub-Saharan African, Hispanic/Latin American, North African, and South Asian heritage; luminous quality suggesting warmth and depth",
-    "complexion": "Harmonious facial structure with wide-set eyes, high cheekbones, and refined nose bridge showing influence from multiple ancestry groups; long-featured face with smooth skin and minimal scarring; expression often appears still and ageless even mid-conversation",
+    "skin_tone": "Warm bronze-golden complexion with subtle olive undertones, reflecting the balanced blend of Sub-Saharan African warmth, Hispanic/Latin American richness, Middle Eastern depth, and South Asian luminosity; Indigenous American heritage enriches overall warmth with earthy dimension",
+    "complexion": "Harmonious facial structure with wide-set eyes, high cheekbones, and refined nose bridge showing multi-continental influence; long-featured face with smooth skin; evident South Asian and Middle Eastern facial geometry in bone structure softened by African and Indigenous American feature contributions; expression often appears still and ageless",
     "distinguishing_marks": [
       "Fiber-optic threading woven into hair creating bioluminescent amber glow at tips in low light",
       "Augmented iris coloration visible as color shift from warm amber to deep jade in response to light"
@@ -286,17 +273,83 @@
     "posture_movement": "Carries themselves with stillness and intention; movements are deliberate and economical, almost meditative. Favors sitting cross-legged or in grounded positions during readings. Frequently touches objects lightly with fingertips — habit born from haptic-chip reading practice.",
     "clothing_style": "Eclectic scholar aesthetic — layered robes and tunics in muted earth tones (clay, sage, charcoal, rust). Fabrics appear worn but maintained with care, suggesting Tier 3-4 status with intentional counter-aesthetic rejection of corp polish. Multiple rings on most fingers (mix of salvaged metal, stone, worn silver). Always carries a worn tablet crammed with archived media. Sensory-forward styling emphasizes texture and light-play rather than brand signaling."
   },
-  "image_prompt": "Lyric Montalvo, 168cm lean figure in layered earth-tone robes (clay, sage, rust), seated cross-legged in meditative pose. Pan-global features: warm golden-brown skin with subtle olive undertones, wide-set eyes with augmented shifting iris glowing amber-to-jade in candlelight, high cheekbones, long-featured face with expression of stillness and intention. Long deep brown hair in soft voluminous cloud with glowing amber fiber-optic threading pulsing faintly in low light. Multiple salvaged metal and stone rings on fingers, touching worn tablet lightly with haptic-sensitive fingertips. Cyberpunk 2226 scholar aesthetic, intimate indoor setting with warm candlelight creating color shifts in augmented iris and hair fibers. Worn fabrics, careful maintenance, counter-aesthetic styling. Meditative, sensory-forward mood. Texture-rich, atmospheric lighting. --ar 2:3 --v 6",
+  "image_prompt": "Lyric Agyemang, 168cm lean androgynous figure with warm bronze-golden skin, wide-set eyes that shift amber-to-jade in low light, long deep-brown hair with glowing amber fiber-optic threads woven throughout creating soft bioluminescent glow. High cheekbones and refined nose reflecting South Asian and Middle Eastern ancestry softened by African and Indigenous heritage warmth. Sitting cross-legged in meditative stillness, fingertips lightly touching worn objects, wearing layered earth-tone robes in clay and sage over charcoal tunic. Multiple salvaged metal and stone rings on fingers. Worn tablet visible nearby. GLMZ, candlelit intimate setting with warm atmospheric lighting emphasizing eye color shift and hair fiber glow. Scholarly, intentional, otherworldly aesthetic. Expression calm and ageless. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 24.3,
-    "Sub-Saharan African": 23.4,
-    "Northern European": 19.9,
-    "North African": 13.2,
-    "South Asian": 11.9,
-    "Middle Eastern": 7.3
+    "Hispanic/Latin American": 25.6,
+    "Sub-Saharan African": 21,
+    "Middle Eastern": 20.6,
+    "Northern European": 13.5,
+    "Indigenous American": 11.5,
+    "South Asian": 7.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 11.8,
+        "Guatemalan": 2.7
+      },
+      "South American": {
+        "Chilean": 2,
+        "Venezuelan": 2.2
+      },
+      "Mexican": {
+        "Mexican": 6.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 21
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 7
+      },
+      "Arab Gulf": {
+        "Iraqi": 0.8,
+        "Emirati": 0.9
+      },
+      "Arab Levantine": {
+        "Syrian": 11.9
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 2,
+        "Austrian": 4.1
+      },
+      "Scandinavian": {
+        "Finnish": 3.6,
+        "Danish": 2.2
+      },
+      "British Isles": {
+        "Scottish": 0.4,
+        "Irish": 1.2
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Mixtec": 1.7
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 4.7
+      },
+      "Plains Nations": {
+        "Choctaw": 5.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 6
+      },
+      "Indian": {
+        "Malayali": 0.5,
+        "Tamil": 1.3
+      }
+    }
+  }
 }

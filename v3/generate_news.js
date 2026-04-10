@@ -89,7 +89,7 @@ function getExistingFiles() {
 const BATCHES = [
   {
     id: 1, yearRange: '2100-2110', category_mix: 'war, disaster, corporate',
-    instructions: `Generate 5 news articles from 2100-2110. This is the early founding era of Meridian 88. Include:
+    instructions: `Generate 5 news articles from 2100-2110. This is the early founding era of GLMZ. Include:
 - 1 article about early corporate territorial disputes (Axiom vs Tessera land grabs)
 - 1 article about initial infrastructure construction disasters
 - 1 article about Sterling-Nakamura's founding merger announcement
@@ -269,10 +269,10 @@ const BATCHES = [
   },
 ];
 
-const SYSTEM_PROMPT = `You are a world-building assistant for the cyberpunk setting "Meridian 88" (years 2100-2200).
+const SYSTEM_PROMPT = `You are a world-building assistant for the near-future megacity setting "GLMZ" (years 2100-2200).
 
 WORLD CONTEXT:
-- Meridian 88 is a megacity built on the ruins of the old Great Lakes region
+- GLMZ is a megacity built on the ruins of the old Great Lakes region
 - Currency: phi (the Quanta system) — written as a number followed by phi, e.g. "2,400 phi"
 - Corponations (corporate nations with sovereignty): Axiom, Tessera, Sterling-Nakamura, Zheng-Dao, Arcturus Defense, Ringo, Palladian, Helix Biosystems, Ferrogate Transit, Ironclad
 - Factions: Iron Lotus (criminal syndicate), The Collective (worker cooperative), Bore Rats (tunnel dwellers/smugglers), Graycloaks (information brokers), The Wishing Well (philosophical movement)

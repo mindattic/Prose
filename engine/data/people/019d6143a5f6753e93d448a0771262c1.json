@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f6753e93d448a0771262c1",
   "type": "character",
-  "name": "Tarn Erikstad",
+  "name": "Katarzyna Mazurek",
   "aliases": [
     "The Landlord"
   ],
@@ -88,7 +88,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Underworld B3",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,7 +103,7 @@
   "registered_firearms": [],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Northern European, Southeast Asian, and Pacific Islander ancestry, creating a striking blend of features. The combination manifests in his bone structure—higher cheekbones and eye shape from East Asian heritage, balanced by Northern European jaw prominence and Pacific Islander robustness. His genetic makeup creates that rare phenotype where continental features converge into something distinctly his own.",
+    "heritage": "Eastern European foundation (48.2%) provides strong bone structure—prominent cheekbones and defined jaw—layered with substantial Hispanic/Latin American ancestry (28.9%) that softens those angles and adds warmth to facial proportions. East Asian heritage (9.6%) contributes subtle epicanthic variation and refined eye shape. Indigenous American (5.9%) and Southeast Asian (4.2%) ancestry add depth to complexion warmth and facial character, while Sub-Saharan African heritage (3.2%) enriches undertones. The result is a phenotypically integrated face that resists categorization: Eastern European structure married to warm, complex coloration, with ancestral echoes from five continents creating seamless blending rather than visible contrast.",
     "height_cm": 188,
     "weight_kg": 104,
     "build": "Heavily muscled, broad-shouldered frame running to fat around the midsection—the body of someone who once moved for a living and now mostly sits. Thick neck, powerful forearms.",
@@ -111,8 +111,8 @@
     "hair_style": "Pulled back in a loose, greying ponytail; sides shaved close",
     "hair_length": "Long",
     "eye_color": "Dark brown, slightly yellowed sclera",
-    "skin_tone": "Warm olive-bronze with subtle golden undertones, weathered and sun-damaged despite decades underground. The tone reflects his East Asian-Southeast Asian majority ancestry with Northern European and Pacific Islander undertones creating depth.",
-    "complexion": "Strong, wide-set face with higher cheekbones characteristic of East Asian heritage, tempered by broader structure from Pacific Islander ancestry. Heavy jaw shows both Northern European and Southeast Asian influence. Deep laugh lines around the eyes. Three-day stubble habit. Small scar through the left eyebrow from an old blade cut.",
+    "skin_tone": "Warm tan with complex olive, golden, and amber undertones—the basecoat of Eastern European ancestry enriched by Hispanic/Latin American warmth, Indigenous American depth, and Southeast Asian character. Sun-damaged and weathered despite decades underground, with visible texture from age and exposure. No single regional descriptor fits; the tone is distinctly blended.",
+    "complexion": "Strong, defined face with moderate cheekbones characteristic of Eastern European heritage, broadened and softened by Hispanic/Latin American and Indigenous American ancestry proportions. Heavy jaw shows Eastern European strength tempered by warmer, fuller facial architecture from Latin and Indigenous heritage. Deep laugh lines around the eyes. Three-day stubble habit. Small scar through the left eyebrow from an old blade cut.",
     "visible_augmentations": "None visible. His hands show no chrome, his eyes are unremarkable. Any modifications are subcutaneous or so old they've integrated into flesh.",
     "distinguishing_marks": [
       "Burn scar across the back of his right hand, extending up the wrist—pale and shiny, webbed pattern suggesting thermal damage from a circuit fire or plasma discharge.",
@@ -122,30 +122,80 @@
     "posture_movement": "Moves with deliberate weight, economical gestures. Sits heavy in a chair. When standing, shoulders slightly rolled forward. Speaks with his hands less than he listens with them—a fixer's caution. Walks with a faint limp in the left leg from an old injury.",
     "clothing_style": "Tier 4 utilitarian: worn synth-leather jacket in charcoal, unbranded but quality. Loose linen shirt underneath, cream-coloured, collar always unbuttoned. Dark cargo pants with multiple pockets and zip-offs, practical and worn. Steel-toed boots, scuffed. A simple silver chain around his neck with a data chip pendant—encrypted, never accessed in public. No flash, no logos. Clothes smell faintly of diesel and static."
   },
-  "image_prompt": "Tarn Erikstad, 188cm tall fixer in his 50s, olive-bronze skin with East Asian-Pacific Islander heritage visible in high cheekbones and strong jaw, black hair streaked with grey pulled into loose ponytail, sides shaved. Weathered face with deep laugh lines, three-day stubble, small scar through left eyebrow. Dark brown eyes with yellowed sclera. Heavily muscled but thickened through midsection, thick neck, powerful forearms. Wearing charcoal synth-leather jacket, unbuttoned cream linen shirt, dark cargo pants, scuffed steel-toed boots. Faded blue Bore Rats tattoo visible on left forearm. Burn scar webbed across right hand and wrist. Silver chain with encrypted data chip pendant around neck. Sitting in shadow, deliberate and economical posture, faint limp when standing. Cyberpunk 2226, noir lighting, underground GLMZ setting, industrial warehouse ambiance, diesel and static atmosphere --ar 2:3 --v 6",
-  "related_entities": [
-    "Ambrosia Fekete-Waiyaki",
-    "Aybek Alvarez-Okonkwo",
-    "Bore Rats",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Sagyn Ogawa-Twumasi",
-    "The Packet Rats",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano"
-  ],
+  "image_prompt": "GLMZ, portrait of Katarzyna Mazurek: 188cm tall, heavily muscled frame with weathered tan skin bearing olive and amber undertones. East European bone structure with warm, blended ancestry features—defined jaw softened by Latin and Indigenous proportions. Dark brown eyes with yellowed sclera, black hair streaking grey pulled back in loose ponytail, sides shaved. Three-day stubble, deep laugh lines, small scar through left eyebrow. Burn scar visible on right hand. Worn charcoal synth-leather jacket over unbuttoned cream linen shirt, dark cargo pants, scuffed steel-toed boots. Silver chain with encrypted data chip pendant. Seated heavy in shadow, faint limp visible, shoulders forward. Fixer's caution in posture, faint diesel and static atmosphere. Low industrial lighting, GLMZ underground setting. Photorealistic, weathered, authentically lived-in. --ar 2:3 --v 6",
+  "related_entities": [],
   "genetic_ancestry": {
-    "East Asian": 38.0,
-    "Northern European": 20.4,
-    "Southeast Asian": 14.4,
-    "Pacific Islander": 12.7,
-    "Hispanic/Latin American": 9.5,
-    "Sub-Saharan African": 5.0
+    "Eastern European": 48.2,
+    "Hispanic/Latin American": 28.9,
+    "East Asian": 9.6,
+    "Indigenous American": 5.9,
+    "Southeast Asian": 4.2,
+    "Sub-Saharan African": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 41.9
+      },
+      "Slavic South": {
+        "Serbian": 2.0,
+        "Croatian": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 20.1
+      },
+      "South American": {
+        "Colombian": 2.1
+      },
+      "Central American": {
+        "Honduran": 5.1,
+        "Salvadoran": 1.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4.5
+      },
+      "Chinese": {
+        "Cantonese": 4.9,
+        "Fujianese": 0.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ho-Chunk": 5.9
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 0.1,
+        "Sumatran": 1.5
+      },
+      "Thai": {
+        "Thai": 1.7
+      },
+      "Laotian": {
+        "Laotian": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 0.9
+      },
+      "West African": {
+        "Liberian": 0.7,
+        "Nigerian": 0.3
+      },
+      "East African": {
+        "Rwandan": 0.8,
+        "Tanzanian": 0.5
+      }
+    }
+  }
 }

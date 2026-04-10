@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61d763db9d5bf8cce30de8c",
   "type": "character",
-  "name": "Soren Kovalenko-Venkatesh",
+  "name": "Soren Mbekele-Owusu",
   "aliases": [
     "Miss Grainne",
     "The Crow"
@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "Norwood Quiet, third floor of the Reinholt Building — she has taken over the shared laundry room on Tuesdays and Thursdays, near Fullerton and Damen",
-  "description": "Grainne is wiry and uncontainable, with close-cropped natural hair she colors a vivid copper-orange that clashes beautifully with her warm reddish-brown skin. She has a long face, large hands, and the kind of energy that makes rooms feel smaller than they are — not unpleasantly, but unavoidably. She has a set of retractable claw geneware she got as a joke in her forties (her students had dared her) and has never removed because she finds them genuinely useful for opening packages and intimidating administrators. She wears ink-stained clothes as a point of pride and her reading glasses are always somewhere other than her face.\n\nFor thirty years Grainne taught foundational literacy, ethics, and what she called 'functional reality' at two different Norwood Quiet community learning pods before the Palladian Education Initiative buyout shuttered them in 2196 and replaced them with a licensed digital curriculum she found pedagogically catastrophic and personally offensive. She retired rather than teach the new curriculum, filed three formal complaints that went nowhere, and then simply kept teaching — in her apartment, in the laundry room, in the Reinholt Building stairwell when all else failed. She is technically unlicensed and technically in violation of two Palladian educational IP agreements and she considers this a source of professional pride.",
+  "description": "Soren Mbekele-Owusu is wiry and uncontainable, with close-cropped natural hair she colors a vivid copper-orange that clashes beautifully with her warm reddish-brown skin. She has a long face, large hands, and the kind of energy that makes rooms feel smaller than they are — not unpleasantly, but unavoidably. She has a set of retractable claw geneware she got as a joke in her forties (her students had dared her) and has never removed because she finds them genuinely useful for opening packages and intimidating administrators. She wears ink-stained clothes as a point of pride and her reading glasses are always somewhere other than her face.\n\nFor thirty years Soren Mbekele-Owusu taught foundational literacy, ethics, and what she called 'functional reality' at two different Norwood Quiet community learning pods before the Palladian Education Initiative buyout shuttered them in 2196 and replaced them with a licensed digital curriculum she found pedagogically catastrophic and personally offensive. She retired rather than teach the new curriculum, filed three formal complaints that went nowhere, and then simply kept teaching — in her apartment, in the laundry room, in the Reinholt Building stairwell when all else failed. She is technically unlicensed and technically in violation of two Palladian educational IP agreements and she considers this a source of professional pride.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -181,7 +181,7 @@
     "Mentor": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -269,26 +269,11 @@
     "Tessera Corponation",
     "Copper",
     "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Briseis Tlatelolco-Fynboe",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Liora Mori-Sefa",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA TC-3 'Crucible'",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (39.7%) with significant South Asian (28.1%), Eastern European (19.5%), and Middle Eastern (12.7%) ancestry—a striking blend producing warm, complex skin tones with subtle golden and olive undertones; facial structure reflects the mix of angular features from Eastern European heritage with the broader cheekbones and expressive features characteristic of South and Latin American ancestry",
+    "heritage": "Sub-Saharan African (60.4%) with Northern European (26.0%) and Indigenous American (13.6%) ancestry—a striking blend producing deep, rich skin tones with warm golden undertones. Facial structure reflects the dominant Sub-Saharan African heritage with broad, prominent cheekbones and expressive features, balanced by the angular bone structure and lighter complexion influence from Northern European ancestry, with subtle facial proportions from Indigenous American heritage creating a distinctive and compelling appearance.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Wiry and lean with long limbs and surprising tensile strength; the build of someone who moves constantly and eats irregularly. Minimal body fat, visible musculature in forearms and shoulders from decades of writing, gesturing, and physical demonstration.",
@@ -296,8 +281,8 @@
     "hair_style": "Close-cropped, textured, maintained with clippers rather than styled",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and mobile",
-    "skin_tone": "Warm golden-brown with subtle olive undertones and a hint of amber—the result of blended Hispanic, South Asian, Eastern European, and Middle Eastern heritage creating a complexion that catches light with warmth and depth",
-    "complexion": "Long, angular face with high cheekbones and a prominent nose reflecting mixed ancestry; crow's feet from squinting and laughing; perpetual ink smudges on her right cheek and jawline; minimal makeup, prefers unmediated appearance",
+    "skin_tone": "Deep warm brown with golden undertones—the result of blended Sub-Saharan African, Northern European, and Indigenous American heritage creating a complexion rich in depth and luminosity",
+    "complexion": "Broad-structured face with prominent cheekbones and expressive features characteristic of Sub-Saharan African heritage; angular jawline with lighter undertones reflecting Northern European ancestry; crow's feet from squinting and laughing; perpetual ink smudges on her right cheek and jawline; minimal makeup, prefers unmediated appearance",
     "distinguishing_marks": [
       "Ink stains on her right index and middle fingers extending to the first knuckle — permanent from decades of fountain pen use",
       "Small burn scar on the inside of her left wrist (teaching accident, 2178) — pale and barely visible",
@@ -307,15 +292,43 @@
     "posture_movement": "Moves with economical, purposeful energy — no wasted motion but restless when stationary. Hands are constantly in use: gesturing while speaking, fidgeting with chalk or pens, demonstrating concepts physically. Leans forward when listening intently. Sits cross-legged even in formal contexts. Walking gait is brisk and slightly forward-tilted, as if always moving toward the next classroom or conversation.",
     "clothing_style": "Deliberately worn, ink-stained garments worn as a political statement against corporate aesthetic standards. Favors vintage cotton button-ups and linen trousers in earth tones and faded jewel tones, all bearing evidence of use: pen marks, chalk dust, small tears mended with visible stitching. Cardigan sweaters layered for warmth and pockets. Worn canvas shoes with reinforced soles. Reading glasses on a cord around her neck or perched on her forehead, never on her face. Jewelry is minimal and functional: a simple watch (mechanical, non-networked) and one silver ring on her left thumb. Tier 4 sensibility with deliberate rejection of newer corporate fashion."
   },
-  "image_prompt": "Soren Kovalenko-Venkatesh, a lean 172cm tall figure with warm golden-brown skin blending Hispanic, South Asian, Eastern European, and Middle Eastern heritage. Angular face with high cheekbones, dark alert eyes, close-cropped dark brown hair with copper-orange dye. Wearing faded earth-tone vintage linen button-up shirt and worn canvas shoes, cardigan draped over shoulders. Hands with retracted matte-black claw geneware visible on fingers, perpetual ink stains on right hand. Reading glasses on cord around neck. Leaning forward with restless, purposeful energy in dimly-lit 2226 cyberpunk classroom setting, late afternoon neon glow through windows catching her warm complexion. Holding chalk or pen, mid-gesture. Mechanical watch on wrist, minimal silver jewelry. Deliberately worn aesthetic reflecting political rejection of corporate fashion. --ar 2:3 --v 6",
+  "image_prompt": "Soren Mbekele-Owusu, 2226 neo-noir era, deep warm brown skin with golden undertones, Sub-Saharan African prominent cheekbones with angular Northern European jawline, short textured dark brown hair with vivid copper-orange dye, dark brown eyes alert and expressive. Lean 172cm wiry build with visible forearm musculature, ink-stained hands with retractable matte black claws (currently retracted), permanent ink stains on right index and middle fingers. Worn vintage linen button-up in faded earth tones, layered cardigan, canvas shoes with reinforced soles, mechanical watch and silver thumb ring. Perpetual ink smudges on right cheek. Gesturing mid-conversation with purposeful hand movement, leaning forward intently. Standing in dimly lit classroom or study space, warm overhead lighting casting shadows across featured face, chalk dust visible in air, stacks of vintage papers and writing instruments in background. Neo-noir urban aesthetic blending worn retro-tech sensibility with subtle genetic augmentation visible only in extended claw detail. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 39.7,
-    "South Asian": 28.1,
-    "Eastern European": 19.5,
-    "Middle Eastern": 12.7
+    "Sub-Saharan African": 60.4,
+    "Northern European": 26,
+    "Indigenous American": 13.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 18.4,
+        "Somali": 7.5
+      },
+      "Central African": {
+        "Congolese": 3.8,
+        "Angolan": 15.8
+      },
+      "Southern African": {
+        "Zimbabwean": 14.9
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 6.1,
+        "Swedish": 1.2
+      },
+      "Germanic": {
+        "German": 18.7
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Choctaw": 13.6
+      }
+    }
+  }
 }

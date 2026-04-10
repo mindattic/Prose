@@ -139,7 +139,7 @@ function randomHex32() {
 }
 
 // ── World Context ──
-const WORLD_CONTEXT = `Setting: Meridian 88, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is the Greek letter but in this world it stands for QUANTA). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle class), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
+const WORLD_CONTEXT = `Setting: GLMZ, year 2200. A megacity in the Great Lakes corridor (Chicago-Milwaukee). Currency is Phi (the symbol is the Greek letter but in this world it stands for QUANTA). Society is tiered: Tier 1 (the Shelf — poorest, most dangerous), Tier 2 (working class), Tier 3 (middle class), Tier 4 (corporate comfort), Tier 5 (the Spire — ultra-elite).
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. Heritage comes from unexpected global combinations. Fashion draws from every cultural tradition freely — West African prints meet Korean minimalism meet Andean textiles meet Scandinavian utility.
 
@@ -176,7 +176,7 @@ const CATEGORIES = [
   {
     category: 'top',
     count: 100,
-    prompt: `Generate {count} TOPS (upper body garments, NOT jackets/outerwear) for Meridian 88. Items {rankStart} through {rankEnd}.
+    prompt: `Generate {count} TOPS (upper body garments, NOT jackets/outerwear) for GLMZ. Items {rankStart} through {rankEnd}.
 
 Include a diverse mix of: t-shirts, tank tops, dress shirts, blouses, sweaters, hoodies, thermal underlayers, armored vests (concealed carry style), smart-fabric shirts, corporate uniforms, Shelf patchwork tops (scavenged/repaired), band tees (for M88 bands), gang color tops, workwear shirts, henleys, turtlenecks, crop tops.
 
@@ -196,7 +196,7 @@ Do NOT just list "smart shirt" variants. Give variety: a plain cotton-analog hen
   {
     category: 'jacket',
     count: 60,
-    prompt: `Generate {count} JACKETS for Meridian 88. Items {rankStart} through {rankEnd}.
+    prompt: `Generate {count} JACKETS for GLMZ. Items {rankStart} through {rankEnd}.
 
 Include a diverse mix of: leather jackets, bomber jackets, corporate overcoats, armored coats (concealed ballistic layers), windbreakers, parkas, rain shells, lab coats, security vests, reflective safety jackets, denim jackets, varsity jackets, motorcycle jackets, blazers, sport coats.
 
@@ -209,7 +209,7 @@ Prices: Tier 1 (10-50), Tier 2 (30-120), Tier 3 (80-300), Tier 4 (200-800), Tier
   {
     category: 'outerwear',
     count: 40,
-    prompt: `Generate {count} OUTERWEAR (heavier/specialized outer garments) for Meridian 88. Items {rankStart} through {rankEnd}.
+    prompt: `Generate {count} OUTERWEAR (heavier/specialized outer garments) for GLMZ. Items {rankStart} through {rankEnd}.
 
 Include a diverse mix of: trenchcoats, dusters, stealth cloaks (rare, expensive, Tier 4-5), thermal heavy layers, ponchos, capes (yes, some people wear capes in 2200 — mostly geneware users with wings/dramatic flair), heavy parkas for lakefront weather, hazmat overcoats (Shelf necessity near toxic zones), ceremonial robes (corp or cultural).
 
@@ -251,7 +251,7 @@ async function generateCategory(catDef) {
       .replace('{rankStart}', rankStart)
       .replace('{rankEnd}', rankEnd);
 
-    const system = `You generate apparel items for the world of Meridian 88. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
+    const system = `You generate apparel items for the world of GLMZ. Return ONLY a JSON array of exactly ${batchSize} objects. No explanation, no markdown fencing, just the JSON array.
 
 ${WORLD_CONTEXT}
 

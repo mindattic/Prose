@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Montclare Quiet, the Sable House Community Center — she has effectively colonized the back room, near Damen and Armitage",
-  "description": "Serafina is small and precise, the kind of woman who takes up exactly as much space as she intends to and no more. She has rich brown skin and natural white hair she wears in an elaborate braided crown she redoes every Sunday, a weekly ritual she treats with the gravity of liturgy. Her irises were replaced with cosmetic patterned geneware decades ago — deep violet with a star-cluster pattern that was fashionable in the 2150s and is now charming in its datedness. She dresses in layered earth tones with one aggressively bright accessory — today a saffron scarf, tomorrow a red belt — and always, always a pair of reading glasses she doesn't need but finds psychologically essential.\n\nFor thirty-one years Serafina maintained the classified internal archive for Axiom's urban development division, which means she personally catalogued the documentation of three neighborhood demolitions, two relocation programs, and one flood-management rerouting that she believes was deliberately aimed at Chatham Flats to drive out residents. She retired with a modest pension and a colossal private collection of copied files she was absolutely not supposed to take. She now runs a weekly 'Story Hour' at the community center that is ostensibly for children but draws a standing-room crowd of all ages — because Serafina's stories are true, thinly veiled, and devastatingly specific.",
+  "description": "Nisha Mukherjee is small and precise, the kind of woman who takes up exactly as much space as she intends to and no more. She has rich brown skin and natural white hair she wears in an elaborate braided crown she redoes every Sunday, a weekly ritual she treats with the gravity of liturgy. Her irises were replaced with cosmetic patterned geneware decades ago — deep violet with a star-cluster pattern that was fashionable in the 2150s and is now charming in its datedness. She dresses in layered earth tones with one aggressively bright accessory — today a saffron scarf, tomorrow a red belt — and always, always a pair of reading glasses she doesn't need but finds psychologically essential.\n\nFor thirty-one years Nisha Mukherjee maintained the classified internal archive for Axiom's urban development division, which means she personally catalogued the documentation of three neighborhood demolitions, two relocation programs, and one flood-management rerouting that she believes was deliberately aimed at Chatham Flats to drive out residents. She retired with a modest pension and a colossal private collection of copied files she was absolutely not supposed to take. She now runs a weekly 'Story Hour' at the community center that is ostensibly for children but draws a standing-room crowd of all ages — because Nisha Mukherjee's stories are true, thinly veiled, and devastatingly specific.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Montclare Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -258,35 +258,14 @@
     "Montclare Quiet",
     "Chatham Flats",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
-    "ARCHIVE",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Celeste Abram",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chronicle",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Sable",
-    "Sterling Voss",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Vuk Jorgensen-Toure",
-    "Yannick Tofauti-Szarvásy"
+    "Celeste Abram"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian (71.1%, primarily Indian subcontinent) with Northern European (17.9%) and Eastern European (11.0%) admixture, creating warm medium-brown skin with subtle golden and ashy undertones characteristic of complex South Asian-European genetic blending",
+    "heritage": "South Asian dominant (67.6%) with significant Hispanic/Latin American (11.2%), Middle Eastern (10.5%), Sub-Saharan African (7.6%), and Pacific Islander (3.1%) admixture. This creates warm medium-brown skin with golden undertones and subtle complexity—deeper amber warmth at cheekbones and jawline reflecting the layered ancestry blend, with faint luminescence from subdermal implants catching light.",
     "height_cm": 152,
     "weight_kg": 52,
     "build": "Slight and compact, almost birdlike in its economy of movement. No excess—bone structure shows clearly at wrists and collarbone. Decades of sitting in archive work have left her spine subtly curved, though she corrects it with visible effort when standing.",
@@ -294,25 +273,69 @@
     "hair_style": "Elaborate crown braid—five interwoven strands, redone every Sunday, currently studded with small copper wire accents she adds herself. The precision is almost architectural.",
     "hair_length": "Long (mid-back when fully braided)",
     "eye_color": "Violet with star-cluster pattern (cosmetic patterned geneware, circa 2150s)",
-    "skin_tone": "Warm medium brown with golden undertones deepening to amber around cheekbones and jawline, with faint luminescence where subdermal implants sit close to the surface. The tone reflects South Asian heritage with subtle warmth from Northern European admixture",
-    "complexion": "Clean, lined face that reads as carefully maintained rather than youthful. High, defined cheekbones and a refined jawline characteristic of South Asian ancestry. Laugh lines run deep from the corners of her mouth. Her skin has the specific texture of someone who spent three decades under archive lighting—the natural golden warmth of her South Asian heritage slightly subdued by prolonged artificial lighting exposure, with a faint luminescence where subdermal implants sit close to the surface.",
+    "skin_tone": "Warm medium brown with golden undertones deepening to rich amber at cheekbones and jawline. The blend reflects her South Asian, Hispanic/Latin American, Middle Eastern, Sub-Saharan African, and Pacific Islander ancestry with luminescent quality where subdermal implants sit close to surface.",
+    "complexion": "Clean, lined face that reads as carefully maintained rather than youthful. High, defined cheekbones with refined structure reflecting South Asian and Middle Eastern ancestry. Laugh lines run deep from the corners of her mouth. Skin texture shows three decades of archive lighting exposure—natural golden warmth of blended heritage slightly subdued by artificial light, with faint luminescence marking subdermal implant sites.",
     "distinguishing_marks": [
       "Thin white scar along left temple, approximately 3cm, faded but visible—relic of a 2175 archive fire she walked into to retrieve files",
       "Burn scar across knuckles of right hand, irregular pattern from handling deteriorating paper documents, now faint and silvered with age",
       "Small circular indentation on left inner forearm where subdermal data-storage array interface sits—slightly discolored, barely visible unless she extends her arm in bright light"
     ],
-    "visible_augmentations": "The violet star-cluster irises are immediately striking—dated by modern standards but worn with complete unselfconsciousness, as though she's forgotten they're unusual. The subdermal array in her left forearm produces no visible chrome or LED, but the skin over it has a faint luminescent quality under certain angles, barely noticeable. Reading glasses she does not medically need, suspended on a cord of braided copper wire, always present.",
+    "visible_augmentations": "Violet star-cluster irises (dated cosmetic geneware, worn with complete unselfconsciousness). Subdermal data-storage array in left forearm with faint luminescent quality under certain angles. Reading glasses suspended on braided copper wire cord, always present.",
     "posture_movement": "Moves with minimal wasted motion—each gesture precise and economical. Sits with perfect spinal alignment when focusing on archival work. Walks slowly but with absolute certainty, as though she has already mapped the space. Her hands are steady when handling documents. She has the physical grammar of someone accustomed to silence and small spaces.",
     "clothing_style": "Layered earth tones: rust, ochre, slate, charcoal, cream. Today: a cream linen shirt under a burnt-sienna vest, charcoal wide-leg trousers (Tier 3-4 quality, well-maintained, unfashionable), and a saffron scarf knotted loosely around her neck. One aggressively bright accessory rotates daily—tomorrow a cardinal-red belt, next week perhaps a marigold headwrap. The bright accent seems chosen with intent, like a signal. Comfortable low-heeled boots, worn to softness. Everything speaks of care rather than cost."
   },
-  "image_prompt": "Nisha Mukherjee, petite South Asian-European woman with warm medium-brown skin and golden undertones, natural white long crown braid studded with copper wire, violet star-cluster cosmetic irises, standing in dimly-lit archive corridor under soft amber lighting. She wears layered earth-tone clothing—cream linen shirt, burnt-sienna vest, charcoal trousers, saffron scarf at neck, low heeled boots. Fine laugh lines, faded temple scar, subdermal implant glow faintly visible on left forearm. Copper wire reading glasses on cord. Economy of movement, precise posture. Cyberpunk 2226 aesthetic, archive environment, archival materials visible, soft bokeh amber/copper lighting, moody and contemplative. --ar 2:3 --v 6",
+  "image_prompt": "Nisha Mukherjee, 152cm petite South Asian woman with layered global heritage—warm medium-brown skin with golden amber undertones at cheekbones, refined high cheekbones reflecting South Asian and Middle Eastern ancestry. Natural white hair in elaborate five-strand crown braid studded with copper wire, mid-back length. Striking violet eyes with star-cluster geneware pattern (2150s cosmetic implants). Fine facial lines from decades of archival work, white scar along left temple, silvered burn scars on right hand knuckles. Compact birdlike build, precise economical posture. Wearing cream linen shirt under burnt-sienna vest, charcoal wide-leg trousers, saffron scarf knotted at neck, low-heeled worn boots. Copper-wire reading glasses on cord. Faint subdermal luminescence at left inner forearm. Archive lighting aesthetic, quiet dignity, 2226 near-future megacity setting, soft warm gallery lighting, archival atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 71.1,
-    "Northern European": 17.9,
-    "Eastern European": 11.0
+    "South Asian": 67.6,
+    "Hispanic/Latin American": 11.2,
+    "Middle Eastern": 10.5,
+    "Sub-Saharan African": 7.6,
+    "Pacific Islander": 3.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 7.1
+      },
+      "Nepali": {
+        "Nepali": 14.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 46.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 4.9,
+        "Guatemalan": 3.3
+      },
+      "Mexican": {
+        "Mexican": 3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 6.5,
+        "Palestinian": 4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 5
+      },
+      "Central African": {
+        "Congolese": 2.5,
+        "Angolan": 0.1
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 3.1
+      }
+    }
+  }
 }

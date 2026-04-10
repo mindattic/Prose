@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68b74f9ab4fbafd50149214",
   "type": "character",
-  "name": "Arc Najjar",
+  "name": "Arc Lahlou",
   "aliases": [
     "Oz",
     "The Accountant"
@@ -13,7 +13,7 @@
   "age": 51,
   "status": "active",
   "location": "Axiom Security Division administrative block, Meridian Core",
-  "description": "Oswaldo is a lean, angular man of fifty-one who looks like he was assembled from straight lines — sharp jaw, thin mouth, prominent cheekbones that cast shadows in the harsh light of Axiom's security corridors. His skin is a warm medium brown, his hair fully silver and kept short, and he wears reading glasses he doesn't strictly need because he finds that people talk more carefully when they think you're writing something down. He has no visible mods beyond a Axiom-mandated sub-dermal employee monitor. His clothes are impeccably mundane: gray, well-pressed, designed to be forgotten.\n\nOswaldo has worked internal affairs for Axiom Security Division for fourteen years and has successfully prosecuted exactly thirty-one officers for misconduct. He keeps a physical list in a locked drawer, handwritten, each name followed by a brief note on outcome. He is methodical to the point of stillness and pleasant to the point of discomfort — the kind of pleasant that makes people confess things they didn't mean to confess. He does not hate the officers he investigates. He finds them comprehensible, which is almost worse.",
+  "description": "Arc Lahlou is a lean, angular man of fifty-one who looks like he was assembled from straight lines — sharp jaw, thin mouth, prominent cheekbones that cast shadows in the harsh light of Axiom's security corridors. His skin is a warm medium brown, his hair fully silver and kept short, and he wears reading glasses he doesn't strictly need because he finds that people talk more carefully when they think you're writing something down. He has no visible mods beyond a Axiom-mandated sub-dermal employee monitor. His clothes are impeccably mundane: gray, well-pressed, designed to be forgotten.\n\nArc Lahlou has worked internal affairs for Axiom Security Division for fourteen years and has successfully prosecuted exactly thirty-one officers for misconduct. He keeps a physical list in a locked drawer, handwritten, each name followed by a brief note on outcome. He is methodical to the point of stillness and pleasant to the point of discomfort — the kind of pleasant that makes people confess things they didn't mean to confess. He does not hate the officers he investigates. He finds them comprehensible, which is almost worse.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -175,7 +175,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Axiom Security Division administrative block",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,34 +235,11 @@
   "related_entities": [
     "Meridian Core",
     "Castling",
-    "Silver",
-    "Ambassador Silk",
-    "Aurocet",
-    "Biometric Denial Charge BDC-1",
-    "Breck Tannen",
-    "Lacuna Genomics",
-    "MERIDIAN",
-    "Narrowcast",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Tessera Corponation",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Tessera TK-9 Proteus 'Shapeshifter'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Heritage Vault",
-    "The Meridian Core",
-    "The Pure Hand",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VSP-11 'Stiletto'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Silver"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Middle Eastern (45.7%) with substantial Northern European (40.9%) and Hispanic/Latin American (13.4%) ancestry. This creates a striking Mediterranean-Nordic blend: the warm olive-bronze undertones of Levantine heritage mixing with cooler Nordic elements, enriched by Latin warmth. His features reflect this triadic mix—angular cheekbones suggest both Scandinavian and Semitic ancestry, while his skin's subtle warmth carries Hispanic influence.",
+    "heritage": "North African (41.4%) and Sub-Saharan African (31.3%) with significant Indigenous American (14.6%) and Middle Eastern (12.7%) ancestry. This creates a rich, complex blend of deep warm browns from dual African heritage, enriched by subtle copper and reddish undertones from Indigenous American ancestry, layered with Levantine warmth from Middle Eastern genetics. His features reflect this multiregional mosaic: strong, defined cheekbones carry both Saharan and Sub-Saharan African geometry, while his facial structure shows the subtle high-set cheekbones and slight width across the zygomatic arch characteristic of Indigenous American ancestry. Skin depth and undertone carry the warmth of North African and Levantine sun combined with Sub-Saharan richness.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost ascetic—minimal soft tissue, all planes and edges. Shoulders slightly narrow for his height, suggesting a frame built for endurance rather than strength. Posture rigidly upright, the kind that comes from sitting in institutional chairs for decades.",
@@ -270,8 +247,8 @@
     "hair_style": "Precisely cropped, almost military-neat, parted on the left. No styling product, just clean geometry.",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural, unremarkable—the kind of eyes that listen more than they judge",
-    "skin_tone": "Warm olive-bronze, the result of Middle Eastern (45.7%) dominance tempered by Nordic pallor (40.9%) and enriched by Latin warmth (13.4%). Medium depth with golden undertones, even complexion that suggests both Mediterranean sun and northern ancestry.",
-    "complexion": "Sharp, high cheekbones that cast visible shadows in overhead lighting—a distinctly Levantine geometry softened slightly by Nordic width. Thin lips, angular jaw with minimal softness. Skin condition is immaculate—no scars, no blemishes, maintained with functional precision rather than vanity. Reading glasses worn on a thin silver chain despite not requiring optical correction; they sit low on the bridge of his nose when in use.",
+    "skin_tone": "Deep warm brown with subtle reddish-copper undertones, the result of North African (41.4%) and Sub-Saharan African (31.3%) dominance enriched by Indigenous American (14.6%) warmth and Middle Eastern (12.7%) golden complexity. Medium-deep saturation with luminous warm undertones that suggest ancestral connection to multiple continents. Even complexion that catches light with subtle warmth across the cheekbones.",
+    "complexion": "Strong, defined cheekbones with visible high-set geometry characteristic of blended African and Indigenous American ancestry, casting distinct shadows in overhead lighting. Zygomatic prominence suggests Indigenous American contribution. Thin lips, angular jaw with minimal softness. Facial structure reflects the geometric strength of North African and Sub-Saharan African features combined with the subtle width and prominence of Indigenous American cheekbones. Skin condition is immaculate—no scars, no blemishes, maintained with functional precision rather than vanity. Reading glasses worn on a thin silver chain despite not requiring optical correction; they sit low on the bridge of his nose when in use.",
     "distinguishing_marks": [
       "Faint horizontal line across left wrist—old, surgical-clean scar approximately 4cm long, consistent with childhood injury or very precise medical intervention, barely visible unless noted"
     ],
@@ -279,14 +256,60 @@
     "posture_movement": "Moves with minimum wasted motion, each gesture economical and deliberate. Sits with perfect spinal alignment. Does not fidget. Hands rest flat on surfaces when not in use. Eye contact is steady and unblinking without being aggressive—the gaze of someone who has learned to make silence itself a form of communication. Walks slowly, as if each step is being catalogued.",
     "clothing_style": "Tier 2 corporate formal—expensive but aggressively neutral. Gray wool slacks (tailored, no wrinkles), gray or pale blue dress shirts (100% cotton, changed daily), dark gray blazer or unstructured jacket (no logos, no visible branding). Minimal jewelry: simple silver watch, no rings. Shoes are black leather oxfords, always polished. A small grey Axiom Security Division pin on the lapel—mandatory, worn without pride or resentment. The overall effect is designed to be forgotten immediately after being observed, a walking beige monolith in a Tier 2 administrative corridor."
   },
-  "image_prompt": "Arc Najjar, 178cm lean angular man with natural silver-white cropped hair, warm olive-bronze skin with Levantine-Nordic blend, sharp high cheekbones, dark brown eyes, thin lips, minimal expression. Wearing expensive corporate gray wool slacks, pale blue cotton dress shirt, dark gray tailored blazer, polished black leather oxfords, simple silver watch. Axiom Security Division pin on lapel. Reading glasses on silver chain. Rigidly upright posture, economical movements, steady unblinking eye contact. Seated in sterile Tier 2 corporate office with cool fluorescent overhead lighting casting shadows across angular features. Gray monolithic presence amid beige administrative corridor aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone. Photorealistic, clinical precision, institutional formality. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Arc Lahlou, a 178cm lean-framed man with natural silver-white cropped hair and deep warm brown skin with copper undertones reflecting North African, Sub-Saharan African, Indigenous American, and Middle Eastern ancestry. Strong defined cheekbones with subtle Indigenous American width, thin lips, angular jaw, dark brown natural eyes—steady and listening. Wearing tier 2 corporate formal: tailored gray wool slacks, pale blue 100% cotton dress shirt, dark gray unstructured blazer, black polished leather oxfords. Simple silver watch, gray Axiom Security Division pin on lapel. Reading glasses on thin silver chain resting at bridge of nose. Posture rigidly upright, economical movement. Faint 4cm surgical scar on left wrist. Subdermal Axiom compliance monitor barely visible beneath clavicle. Corporate office setting, cool fluorescent and ambient lighting, minimalist aesthetic. GLMZ Great Lakes Metropolitan Zone. Professional, controlled, forgettable intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 45.7,
-    "Northern European": 40.9,
-    "Hispanic/Latin American": 13.4
+    "North African": 41.4,
+    "Sub-Saharan African": 31.3,
+    "Indigenous American": 14.6,
+    "Middle Eastern": 12.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 24.6
+      },
+      "Amazigh": {
+        "Tuareg": 4.1,
+        "Berber": 12.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.8,
+        "Gabonese": 1.8
+      },
+      "East African": {
+        "Tanzanian": 6.6,
+        "Rwandan": 21.1
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 3.2
+      },
+      "Andean": {
+        "Mapuche": 4.9,
+        "Aymara": 2.8
+      },
+      "Mesoamerican": {
+        "Nahua": 3.1,
+        "Maya": 0.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 6
+      },
+      "Kurdish": {
+        "Kurdish": 4.8
+      },
+      "Arab Gulf": {
+        "Yemeni": 1.9
+      }
+    }
+  }
 }

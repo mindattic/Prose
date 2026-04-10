@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bb7dc9bcc33df4f2c45b8a",
   "type": "character",
-  "name": "Juno Ekwensi",
+  "name": "Juno Lindström",
   "aliases": [
     "Rust"
   ],
@@ -12,7 +12,7 @@
   "age": 27,
   "status": "active",
   "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays, near North Ave and Milwaukee",
-  "description": "Rustam is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nRustam is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between GLMZ and a very bad outbreak, which is truer than anyone likes to admit.",
+  "description": "Juno Lindström is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nJuno Lindström is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between GLMZ and a very bad outbreak, which is truer than anyone likes to admit.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -178,7 +178,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -227,28 +227,15 @@
   ],
   "related_entities": [
     "Aurochs Medical Complex",
-    "GLMZ",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Milwaukee Core",
-    "Aminata Vîlcu-Faaleolo",
-    "Dzemal Acholonu-Patagiri",
-    "Ferrogate Transit",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Lazarus HZ-4 'Cleanroom'",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Stonepath Logistics",
-    "Tshiamo Vukić-Arellano",
-    "Vesna Čolić-Strand",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (64.3%) with significant Northern European (20.1%) and Eastern European (15.6%) ancestry, creating a complex phenotype with African-dominant features and intermediate skin tone characteristics",
+    "heritage": "Genuinely pan-diaspora: Sub-Saharan African (33.8%) and Northern European (32.2%) form the dominant dual foundation, with substantial Hispanic/Latin American (20.3%) contribution creating warm undertones and subtle facial width. South Asian (8.4%), East Asian (3.8%), and Eastern European (1.5%) add minor refinement to overall phenotype. Results in a balanced, warm brown complexion with golden-caramel luminosity, moderately prominent cheekbones with slight width from Hispanic ancestry, and facial structure that reads as authentically multi-continental rather than distinctly regional.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Wiry and lean with compact muscle distribution — the frame of someone who moves constantly and efficiently through confined spaces. No excess weight; all kinetic energy.",
@@ -256,8 +243,8 @@
     "hair_style": "Shaggy, deliberately unkempt, falls across forehead with slight curl",
     "hair_length": "Medium",
     "eye_color": "Patterned irises — concentric rings of teal and amber, custom cosmetic modification",
-    "skin_tone": "Rich warm brown with golden undertones, reflecting the dominant Sub-Saharan ancestry with subtle warmth from Northern European admixture",
-    "complexion": "Youthful face with prominent cheekbones reflecting African ancestry, expressive mouth that defaults to a slight smile. Skin shows natural warmth and even tone. No visible scarring. Regular grooming despite working conditions — shows care for his appearance. Faint discoloration around mouth and jawline from sustained respiratory filter implant wear.",
+    "skin_tone": "Warm golden-brown with balanced caramel undertones, reflecting the equal weight of Sub-Saharan African and Northern European ancestry anchored by Hispanic/Latin American warmth. Radiant and even-toned with natural luminosity.",
+    "complexion": "Youthful face with moderately prominent cheekbones of balanced width, combining African angularity with Hispanic-Latino structure. Expressive mouth defaulting to slight smile. Skin displays warm golden radiance and even texture without visible scarring. Regular grooming despite working conditions. Faint discoloration around mouth and jawline from sustained respiratory filter implant wear.",
     "distinguishing_marks": [
       "Braided copper wire charm worn on left wrist — thin, handmade, used as an offering token",
       "Faint discoloration around mouth and jawline from sustained respiratory filter implant wear — slightly darker patch where the seal sits"
@@ -266,14 +253,78 @@
     "posture_movement": "Quick, economical movements with restless energy even when still. He leans forward slightly when listening, suggesting engagement and curiosity. Comfortable in cramped spaces — moves with the unselfconscious fluidity of someone at home underground. Often fidgets with the copper wire charm on his wrist.",
     "clothing_style": "Tier 5 practical: reinforced grey-green Ferrogate Sanitation Solutions issue coveralls (corporate branding faded), fitted snugly to avoid snags in tight corridors. Undershirt usually synthetic blend in muted colors. Heavy-duty steel-toed boots, scuffed and worn. A faded denim jacket layered over coveralls on breaks, pockets stuffed with incinerator logs, hand wipes, and wire. No luxury items visible — everything functional, everything used."
   },
-  "image_prompt": "Juno Ekwensi, 2226 cyberpunk sanitation worker, rich warm brown skin with golden undertones, prominent cheekbones, youthful expressive face, patterned teal-and-amber custom cosmetic irises catching neon light, faint jaw discoloration from respiratory filter implant seam, dark brown shaggy hair falling across forehead, 172cm lean wiry frame, wearing faded grey-green Ferrogate Sanitation Solutions coveralls with synthetic undershirt and scuffed steel-toed boots, braided copper wire charm on left wrist, faded denim jacket over coveralls, restless fidgeting posture, cramped underground utility tunnel setting, industrial neon lighting, gritty atmospheric haze, forward-leaning engaged body language, slight default smile, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Juno Lindström, 172cm lean sanitation worker with warm golden-brown skin blending Sub-Saharan African and Northern European features with Hispanic-Latino warmth. Youthful face with moderate prominent cheekbones, slight smile, dark shaggy brown hair falling across forehead. Striking custom teal-amber concentric patterned irises. Faint respiratory filter implant scar along left jawline. Wearing faded grey-green Ferrogate Sanitation Solutions coveralls, fitted snugly, layered with worn denim jacket, steel-toed boots. Copper wire charm braided on left wrist. Restless posture, economical movements. Underground GLMZ tunnel setting, cool blue-grey industrial lighting casting shadows across face. GLMZ, gritty working-class aesthetic, slightly forward lean, fidgeting with charm. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 64.3,
-    "Northern European": 20.1,
-    "Eastern European": 15.6
+    "Sub-Saharan African": 33.8,
+    "Northern European": 32.2,
+    "Hispanic/Latin American": 20.3,
+    "South Asian": 8.4,
+    "East Asian": 3.8,
+    "Eastern European": 1.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 6.9,
+        "South African": 1.4
+      },
+      "Central African": {
+        "Gabonese": 7.8
+      },
+      "West African": {
+        "Senegalese": 9.2,
+        "Nigerian": 8.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 32.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 12.8
+      },
+      "Mexican": {
+        "Mexican": 6.5
+      },
+      "South American": {
+        "Venezuelan": 0.8,
+        "Colombian": 0.2
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 0.6,
+        "Punjabi": 0.9
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 2.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 4.7
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.8
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 0.8
+      },
+      "Slavic East": {
+        "Belarusian": 0.2,
+        "Ukrainian": 0.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.2
+      }
+    }
+  }
 }

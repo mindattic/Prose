@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60377d581fd93b0ef0b6383",
   "type": "character",
-  "name": "Rune Calvillo",
+  "name": "Bogdana Calvillo",
   "aliases": [
     "Neutron",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Ashland and Chicago Ave",
-  "description": "Erkin Fujita-Mensah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Erkin Fujita-Mensah plans to keep it that way. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nErkin Fujita-Mensah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Bogdana Calvillo is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bogdana Calvillo plans to keep it that way. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nBogdana Calvillo has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -261,7 +261,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Lattice",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,41 +277,17 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
-    "Lazarus LX-2 'Lab Rat'",
-    "Burden of Longitude",
-    "Slagworks Industrial",
-    "Clover",
     "Chicago",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible Industries CT-X 'Gauntlet'",
-    "Crucible RE-2 'Receptionist'",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Ngaire Rojas-Yeboah",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA PA-5 'Attendant'",
-    "The Fathom Line",
-    "The Lattice",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Burden of Longitude",
+    "Lazarus LX-2 'Lab Rat'",
+    "Slagworks Industrial",
+    "Felix Roundtree"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant East Asian, Sub-Saharan African, North African, and Central Asian ancestry — a true product of the Ubiquitous Diaspora. The genetic blend manifests in warm-toned skin with layered undertones, sharp facial geometry tempered by broader bone structure, and dark eyes that carry multiple ancestral possibilities.",
+    "heritage": "Bogdana Calvillo carries the genetic signature of the Ubiquitous Diaspora: 37.3% Southeast Asian ancestry providing distinctive eye-shape and high cheekbone architecture; 24.6% Eastern European contributing to facial structure and jaw definition; 18.8% Hispanic/Latin American adding breadth to facial proportions; 13.4% Sub-Saharan African enriching skin tone depth and facial spacing; 5.9% East Asian refining eye and bone structure. The result is phenotypically layered — features that resist singular categorization, each ancestral line visible in the architecture of the face.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and heavily built, muscle and scar tissue beneath a layer of functional mass. Not gym-sculpted — this is a frame built for impact absorption and leverage, shaped by years of physical work and survival.",
@@ -319,28 +295,59 @@
     "hair_style": "Kept short and functional, swept back from the face, minimal grooming — practical rather than styled",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Warm golden-brown complexion with olive and amber undertones — the result of blended Mediterranean, Latin American, East Asian, and North African heritage. Rich and deep without being uniformly dark, suggesting the layered genetics of someone descended from multiple continents.",
-    "complexion": "Weathered face with high, defined cheekbones and a strong jaw showing slight asymmetry from an old break. Skin carries the texture of someone who lives in transition — neither pampered nor neglected. Lines around the eyes from nocturnal living and sustained tension. The planes of the face show the architectural influence of mixed ancestry: broader across the middle with subtle eye-shape variation. Facial hair kept to a close shadow.",
+    "skin_tone": "Deep golden-bronze complexion with warm amber and olive undertones — a rich admixture reflecting Southeast Asian, Eastern European, Hispanic, Sub-Saharan African, and East Asian heritage. The melanin expression layered across multiple ancestral lines creates depth that shifts in different light, neither uniform nor scattered but harmoniously blended.",
+    "complexion": "Weathered face with high, defined cheekbones shaped by Southeast Asian ancestry, paired with a strong, broad jaw reflecting Sub-Saharan African and Eastern European genetic contribution to facial structure. Slight asymmetry in the jaw from an old break — legacy of impact. Midface proportions and spacing carry Sub-Saharan African heritage influence. Skin carries the texture of someone who lives in transition — neither pampered nor neglected. Lines around the eyes from nocturnal living and sustained tension. Facial hair kept to a close shadow.",
     "distinguishing_marks": [
       "Scar tissue along the left temple extending toward the ear — thin, precise, surgical in origin",
       "Two parallel burn scars across the right forearm, faded to pale tissue against darker skin",
       "Small circular scar on the left side of neck, possibly from port or extraction",
       "Knuckle scars on both hands, white striations across the knuckles from repeated impact"
     ],
-    "visible_augmentations": "Chrome pain editor visible along the left side of the neck — a silver-grey neural interface module with faint blue LED threading, deliberately exposed beneath the skin where standard implants remain hidden. The chrome catches light with an unnatural sheen. Move-by-wire system is subcutaneous but evidenced by the unnatural precision of his movements — no wasted motion, joints moving with mechanical efficiency that contradicts biological smoothness.",
-    "posture_movement": "Stands with weight distributed for immediate action, shoulders back but not relaxed. Moves with economic precision — each gesture purposeful, no fidgeting or nervous energy. When at rest, a coiled quality persists. Eyes track movement peripherally even during conversation. The move-by-wire system manifests as an inhuman efficiency to fine motor control, noticeable when he handles small objects or navigates tight spaces.",
-    "clothing_style": "Tier 3-4 functional wear — reinforced cargo pants with multiple sealed pockets, worn synthleather jacket with interior harness points for equipment, tactical boots scuffed and repaired multiple times. Colors are muted: greys, blacks, worn charcoal. No corporate logos, no statement pieces. Everything is either a tool or irrelevant. Wears a faded jacket that's been patched at the shoulders and along the ribs — damage from old jobs, never fully repaired, kept as functional reminder. A single piece of luxury: a thin data-link wrist gauntlet, understated but top-tier encryption hardware."
+    "visible_augmentations": "Chrome pain editor visible along the left side of the neck — a silver-grey neural interface module with faint blue LED threading, deliberately exposed beneath the skin where standard implants remain hidden. The chrome catches light with an unnatural sheen. Move-by-wire system is subcutaneous but evidenced by the unnatural precision of movements — no wasted motion, joints moving with mechanical efficiency that contradicts biological smoothness.",
+    "posture_movement": "Stands with weight distributed for immediate action, shoulders back but not relaxed. Moves with economic precision — each gesture purposeful, no fidgeting or nervous energy. When at rest, a coiled quality persists. Eyes track movement peripherally even during conversation. The move-by-wire system manifests as an inhuman efficiency to fine motor control, noticeable when handling small objects or navigating tight spaces.",
+    "clothing_style": "Tier 3-4 functional wear — reinforced cargo pants with multiple sealed pockets, worn synthleather jacket with interior harness points for equipment, tactical boots scuffed and repaired multiple times. Colors are muted: greys, blacks, worn charcoal. No corporate logos, no statement pieces. Everything is either a tool or irrelevant. Wears a faded jacket patched at the shoulders and ribs — damage from old jobs, never fully repaired, kept as functional reminder. A single piece of luxury: a thin data-link wrist gauntlet, understated but top-tier encryption hardware."
   },
-  "image_prompt": "Rune Calvillo, cyberpunk 2226, portrait of a 188cm broad-shouldered operative with warm golden-brown skin blending Hispanic, East Asian, North African and Sub-Saharan ancestry. Dark alert eyes, short black hair with silver at temples, weathered face with high cheekbones and strong asymmetrical jaw. Visible surgical scar along left temple, pale burn scars on right forearm, chrome neural interface glowing faint blue along left neck. Muscular build shaped by survival not vanity. Wearing muted tactical synthleather jacket with visible repair patches, reinforced cargo pants, scuffed boots. Subtle move-by-wire precision in posture — coiled and economical, no wasted motion. Thin encryption-grade wrist gauntlet catches harsh neon light. Dark setting, cyberpunk noir atmosphere, LED glow catching chrome augmentation, cool-toned dramatic lighting emphasizing the blend of organic weathered features and mechanical enhancement --ar 2:3 --v 6",
+  "image_prompt": "Bogdana Calvillo, 188cm tall broad-shouldered operative with deep golden-bronze complexion and high cheekbones, black hair with silver threading at temples swept back from weathered face, alert dark brown eyes, defined jaw with slight asymmetry from old break. Scar tissue along left temple, blue LED chrome pain editor visible at neck glowing faintly. Wearing worn charcoal synthleather jacket with shoulder patches, reinforced grey cargo pants, tactical boots. Knuckle scars visible on both hands. Standing in coiled ready stance, precise inhuman movement efficiency evident. Neon-lit GLMZ urban setting, Great Lakes Metropolitan Zone backdrop, dim lighting with neon reflections casting shadows across chrome augmentations, gritty industrial atmosphere, film noir neo-noir urban aesthetic, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 54.1,
-    "East Asian": 14.7,
-    "Sub-Saharan African": 13.2,
-    "North African": 10.5,
-    "Central Asian": 7.5
+    "Southeast Asian": 37.3,
+    "Eastern European": 24.6,
+    "Hispanic/Latin American": 18.8,
+    "Sub-Saharan African": 13.4,
+    "East Asian": 5.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 25
+      },
+      "Cambodian": {
+        "Khmer": 12.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 17,
+        "Polish": 7.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 18.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 13.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 5.9
+      }
+    }
+  }
 }

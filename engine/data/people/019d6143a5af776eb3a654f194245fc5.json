@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5af776eb3a654f194245fc5",
   "type": "character",
-  "name": "Ember Larsdóttir",
+  "name": "Paloma Calvillo",
   "aliases": [
     "Mara",
     "The Velvet Hammer"
@@ -13,7 +13,7 @@
   "age": 54,
   "status": "active",
   "location": "Vantage Meridian Corporate Campus, Sterling-Nakamura Human Capital Tower, Executive Floor 44, near Michigan Ave and Chicago Ave",
-  "description": "Amara Vukić-Diallo has the face of a woman who has heard every version of every excuse, evaluated all of them, and made a decision before the sentence was finished. She is tall, broad-shouldered, Senegambian-Serbian in her features, with silver locs swept back and held with a magnetic clasp engraved with the Sterling-Nakamura sigil — a gift she accepted and never examined too closely. Her cosmetic mods are deliberate and minimal: patterned irises, black sclera with silver radial lines, which she chose twenty years ago because they make eye contact feel like a contract. She wears them like armor and is aware that this is what they are.\n\nShe has built and dismantled three workforce divisions in her career. She knows how to make someone feel seen, valued, and essential, and she knows that this is a skill she deploys tactically. She is not a monster — she believes in the people she hires, genuinely, at the moment she hires them, and this genuine belief is part of what makes her dangerous. She has greenlit layoffs of hundreds of people and attended the notification meetings personally, because she considers it cowardly to delegate the human cost of decisions you make. She has also fought for benefits expansions, paternity provisions, and hazard pay classifications that her superiors didn't want to grant. She is, in other words, a person who has made peace with contradiction, and the peace is expensive and fragile.",
+  "description": "Paloma Calvillo has the face of a woman who has heard every version of every excuse, evaluated all of them, and made a decision before the sentence was finished. She is tall, broad-shouldered, Senegambian-Serbian in her features, with silver locs swept back and held with a magnetic clasp engraved with the Sterling-Nakamura sigil — a gift she accepted and never examined too closely. Her cosmetic mods are deliberate and minimal: patterned irises, black sclera with silver radial lines, which she chose twenty years ago because they make eye contact feel like a contract. She wears them like armor and is aware that this is what they are.\n\nShe has built and dismantled three workforce divisions in her career. She knows how to make someone feel seen, valued, and essential, and she knows that this is a skill she deploys tactically. She is not a monster — she believes in the people she hires, genuinely, at the moment she hires them, and this genuine belief is part of what makes her dangerous. She has greenlit layoffs of hundreds of people and attended the notification meetings personally, because she considers it cowardly to delegate the human cost of decisions you make. She has also fought for benefits expansions, paternity provisions, and hazard pay classifications that her superiors didn't want to grant. She is, in other words, a person who has made peace with contradiction, and the peace is expensive and fragile.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Vantage Meridian Corporate Campus",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -260,33 +260,16 @@
   "related_entities": [
     "Vantage Meridian Corporate Campus",
     "the_meridian_office_park",
+    "Provisions",
     "Tessera Autonomous Rifle Platform TARP-3 'Delegate'",
     "CRUCIBLE Vantage Artisan Precision Hand",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
     "Chicago",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'",
-    "Bioacoustic Communication Membrane",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Ghost Protocol",
-    "Idris Forsberg-Quaye",
-    "Kairos",
-    "MERIDIAN",
-    "Mexicantown Libre",
-    "Mika Sorel",
-    "Noir Dining",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vespid Dynamics",
-    "Vespid Dynamics Toxin Dart Rifle TDR-3 'Asp'"
+    "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "South Asian-dominant with significant Southeast Asian, Sub-Saharan African, and East Asian admixture; trace Northern and Eastern European ancestry. A genetic mosaic reflecting the Ubiquitous Diaspora—the name 'Larsdóttir' is purely genealogical legacy, carrying no weight against her actual phenotype.",
+    "heritage": "Indigenous American-dominant (42.5%) with substantial Hispanic/Latin American ancestry (29.1%), complemented by Eastern European (12.6%), Sub-Saharan African (9.5%), and Northern European (6.3%) heritage. Her phenotype reflects this complex American Diaspora blend: warm bronze skin with golden and amber undertones characteristic of Indigenous and Latin American ancestry, deepened and enriched by Sub-Saharan African admixture. The combination creates a luminous warmth across her complexion. High pronounced cheekbones and strong angular jawline reflect Indigenous bone structure, while subtle strength in her brow ridge and facial proportions shows generations of stable mixing across multiple continents.",
     "height_cm": 183,
     "weight_kg": 79,
     "build": "Broad-shouldered and tall with athletic musculature maintained through deliberate routine rather than vanity. Carries herself with the balanced posture of someone who has spent decades in rooms where physicality communicates authority.",
@@ -294,8 +277,8 @@
     "hair_style": "Locs swept back and secured with a magnetic clasp engraved with the Sterling-Nakamura corporate sigil",
     "hair_length": "Long (shoulder-length and below)",
     "eye_color": "Augmented: patterned irises with black sclera and silver radial lines radiating from the pupil",
-    "skin_tone": "Deep warm amber with golden undertones—a rich blend of South Asian warmth, Southeast Asian luminosity, and Sub-Saharan depth. Even distribution across her face and body, suggesting generations of stable climate and ancestry mixing rather than recent migration.",
-    "complexion": "Angular facial structure with high, pronounced cheekbones and a strong, tapered jawline reflecting South Asian and Southeast Asian bone structure. Brow ridge marked with subtle definition. Minimal cosmetic grooming beyond the intentional eye augmentation—no visible dermal fillers or skin resurfacing. Skin shows the texture of age without aggressive anti-aging intervention, with fine lines around her eyes and mouth that deepen when she manages the controlled skepticism that seems her default expression.",
+    "skin_tone": "Warm bronze with golden and amber undertones—a rich luminous blend reflecting Indigenous American warmth, Latin American golden luminosity, and Sub-Saharan depth. Even distribution across face and body with subtle regional variation suggesting generations of stable ancestry mixing.",
+    "complexion": "Strong angular facial structure with high, pronounced cheekbones and a tapered jawline reflecting Indigenous and Latin American bone structure. Defined brow ridge with subtle strength. Minimal cosmetic grooming beyond the intentional eye augmentation—no visible dermal fillers or skin resurfacing. Skin shows the texture of age without aggressive anti-aging intervention, with fine lines around her eyes and mouth that deepen when she manages the controlled skepticism that seems her default expression.",
     "distinguishing_marks": [
       "Fine scar running 2cm along her right temple, partially obscured by her locs—old, deliberate-looking, never explained.",
       "Small circular burn mark (subcutaneous implant access point) behind her left ear, barely visible.",
@@ -305,17 +288,58 @@
     "posture_movement": "Stands with weight distributed evenly, shoulders slightly back—a posture that conveys both relaxation and readiness. Walks with measured pace, never hurried. Makes deliberate eye contact, holding it slightly longer than social convention suggests comfortable. Hands typically visible and still; she does not fidget. When listening, she maintains perfect stillness, which has the effect of making others feel entirely observed.",
     "clothing_style": "High Tier 1-2 executive standard: tailored charcoal or black blazers from luxury corpo-wear lines (likely Sterling-Nakamura house brand or bespoke). Underneath, understated silk or smart-fabric shells in neutral tones. Trousers with precision tailoring, no wrinkles. Minimal jewelry beyond the magnetic hair clasp—a thin silver watch with subtle LED display on her left wrist, and a simple platinum band on her right ring finger (no obvious significance, never mentioned). Shoes are expensive and silent-soled. Her appearance suggests someone who treats clothing as infrastructure, not self-expression."
   },
-  "image_prompt": "Ember Larsdóttir, tall imposing woman with deep warm amber skin and high angular cheekbones, silver-grey locs swept back with magnetic clasp, augmented eyes with black sclera and silver radial lines, cold intimidating stare. Wearing high-tier charcoal executive blazer and precision-tailored black trousers, platinum band on right ring finger, minimal jewelry. Standing perfectly still with balanced posture radiating quiet authority. Faint scar along right temple. Cyberpunk 2226, corporate executive aesthetic, cool LED-lit executive boardroom background with floor-to-ceiling windows overlooking Great Lakes Metropolitan Zone neon sprawl. Cinematic moody lighting casting subtle shadows across her face. Neutral expression of controlled skepticism. --ar 2:3 --v 6",
+  "image_prompt": "Paloma Calvillo, 183cm tall, silver-grey locs secured with corporate clasp swept back from her face. Warm bronze skin with golden and amber undertones reflecting Indigenous American, Hispanic/Latin American, Sub-Saharan African, and Eastern European heritage. High pronounced cheekbones, angular jawline, defined brow ridge. Black sclera eyes with silver radial lines—augmented, unsettling, piercing. Fine scar visible along right temple. Posture radiates controlled authority and stillness. Wearing tailored charcoal executive blazer, neutral silk shell, precision-tailored black trousers, expensive silent-soled shoes. Thin silver watch on left wrist, platinum band on right ring finger. Corporate office setting, subtle LED glow, cool overhead lighting emphasizing her angular features and augmented eyes, GLMZ, photorealistic portrait, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.0,
-    "Southeast Asian": 24.8,
-    "Sub-Saharan African": 15.7,
-    "East Asian": 11.4,
-    "Northern European": 5.4,
-    "Eastern European": 4.7
+    "Indigenous American": 42.5,
+    "Hispanic/Latin American": 29.1,
+    "Eastern European": 12.6,
+    "Sub-Saharan African": 9.5,
+    "Northern European": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 42.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Costa Rican": 18.4,
+        "Nicaraguan": 5.9
+      },
+      "South American": {
+        "Brazilian": 4.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 2.5
+      },
+      "Slavic East": {
+        "Russian": 9.2,
+        "Belarusian": 0.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 9.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 2.1
+      },
+      "Germanic": {
+        "Dutch": 1.9,
+        "German": 0.6
+      },
+      "British Isles": {
+        "English": 1.7
+      }
+    }
+  }
 }

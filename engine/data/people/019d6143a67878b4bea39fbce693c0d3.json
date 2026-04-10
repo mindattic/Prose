@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67878b4bea39fbce693c0d3",
   "type": "character",
-  "name": "Nova Strömqvist-Mohammadi",
+  "name": "Nova Traoré-Villanueva",
   "aliases": [
     "Gust",
     "the Boy from Below"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "The sub-level junctions beneath Garfield Rack and Grand Crossing Gate, Undertow eastern reaches, near sub-level access near LaSalle and Congress",
-  "description": "Obi is small for fourteen and has the particular wiry quality of a child raised on irregular calories and constant movement — he is not malnourished exactly, but he is built close to the bone. His skin is a deep warm brown with a slight grey cast from tunnel particulate that no amount of washing fully removes. He has no geneware modifications, no augmentations — he has a kid's face, still round at the cheeks, with large dark eyes that have a near-photoreceptive quality honed by years of navigating low-light environments without tech. His hair grows in dense spirals, usually crammed under a salvaged transit worker's hard hat three sizes too large for his head.\n\nHe is the thing that tunnels make of children when they're loved but not wealthy: resourceful past the point of impressiveness, with a child's emotional rawness operating inside an adult's practical competence. He knows which Ferrogate Transit maintenance schedules to memorize, which decommissioned sections still carry live current, and which ELF-haunted junction boxes might shock you if you reach in without speaking first. He has never been to the surface. This is not a wound yet — at fourteen it still feels more like a fact — but it is becoming a question. He is beginning to want to see it, and beginning to be afraid of what that wanting will cost him.",
+  "description": "Nova Traoré-Villanueva is small for fourteen and has the particular wiry quality of a child raised on irregular calories and constant movement — he is not malnourished exactly, but he is built close to the bone. His skin is a deep warm brown with a slight grey cast from tunnel particulate that no amount of washing fully removes. He has no geneware modifications, no augmentations — he has a kid's face, still round at the cheeks, with large dark eyes that have a near-photoreceptive quality honed by years of navigating low-light environments without tech. His hair grows in dense spirals, usually crammed under a salvaged transit worker's hard hat three sizes too large for his head.\n\nHe is the thing that tunnels make of children when they're loved but not wealthy: resourceful past the point of impressiveness, with a child's emotional rawness operating inside an adult's practical competence. He knows which Ferrogate Transit maintenance schedules to memorize, which decommissioned sections still carry live current, and which ELF-haunted junction boxes might shock you if you reach in without speaking first. He has never been to the surface. This is not a wound yet — at fourteen it still feels more like a fact — but it is becoming a question. He is beginning to want to see it, and beginning to be afraid of what that wanting will cost him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -154,7 +154,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The sub-level junctions beneath Garfield Rack and Grand Crossing Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,28 +202,13 @@
     "Arcturus Defense Solutions Ballistic Helmet BH-9 'Ironhead'",
     "Irontide Tidal Energy",
     "Lacuna Genomics",
-    "Gravimetric Collapse Charge GCC-9",
-    "Tibor Osei-Svanstrom",
     "Aphelion",
-    "Aybek Sato-Poku",
-    "Bathysphere Networks",
-    "Crucible Industries CX-1 'Golem'",
-    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
-    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Narrowcast",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Patient Zero",
-    "Sisay Bergqvist-Mallari",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Undertow",
-    "Veslemøy Achebe-Tursynov"
+    "Gravimetric Collapse Charge GCC-9",
+    "Frost Boudiaf"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly Northern European (Scandinavian) with significant Middle Eastern ancestry, complemented by minor South Asian and Sub-Saharan African heritage. This creates a striking phenotype: the fair undertones and bone structure of Nordic heritage are warmed and deepened by Middle Eastern and African ancestry, resulting in a rich golden-brown complexion that bridges Mediterranean and Levantine features with subtle Sub-Saharan warmth.",
+    "heritage": "Predominantly Sub-Saharan African (61.8%) with significant Hispanic/Latin American (19.6%), Indigenous American (10.5%), and South Asian (8.1%) ancestry. This creates a rich, warm complexion with deep brown skin enriched by golden, reddish, and subtle olive undertones from the blended African, Latin American, Indigenous American, and South Asian heritage. The bone structure reflects this Pan-American and African mix — prominent cheekbones with warm definition, a face shaped by diverse ancestral lines that create striking, defined features with subtle width across the face reflecting Indigenous American ancestry.",
     "height_cm": 152,
     "weight_kg": 38,
     "build": "Wiry and compact, all lean muscle and efficient frame — built for crawling and climbing rather than strength. Shoulders slightly rounded from years in confined spaces. No excess anywhere.",
@@ -231,8 +216,8 @@
     "hair_style": "Dense spirals, perpetually compressed and creased from being worn under an oversized salvaged transit hard hat",
     "hair_length": "Medium (approximately 8-10cm when uncompressed, closer to scalp when flattened)",
     "eye_color": "Dark brown, almost black, with an unusual clarity and light-responsiveness from chronic low-light adaptation",
-    "skin_tone": "Golden-warm brown with amber undertones — the result of Northern European base lightened and enriched by Middle Eastern olive-gold and Sub-Saharan warmth. A subtle grey-silver patina from chronic tunnel particulate exposure sits atop this foundation, creating an aged, weathered appearance.",
-    "complexion": "Child's face still rounded at cheeks and jawline, but with a precocious steadiness in expression. Defined cheekbones with slight Middle Eastern prominence. Fine dust settled in pores and creases. No acne or surface scarring. Skin slightly papery from low humidity and mineral-rich tunnel air. Small calluses on fingertips and palms.",
+    "skin_tone": "Deep warm brown with golden, reddish, and subtle olive undertones — the result of strong Sub-Saharan African base enriched by Latin American, Indigenous American, and South Asian warmth. A subtle grey-silver patina from chronic tunnel particulate exposure sits atop this foundation, creating an aged, weathered appearance.",
+    "complexion": "Child's face still rounded at cheeks and jawline, but with a precocious steadiness in expression. Prominent, well-defined cheekbones reflecting Sub-Saharan, Latin American, and Indigenous American ancestry. Fine dust settled in pores and creases. No acne or surface scarring. Skin slightly papery from low humidity and mineral-rich tunnel air. Small calluses on fingertips and palms.",
     "distinguishing_marks": [
       "Fine grey dust ingrained in the creases of his neck and collarbone, permanent from daily tunnel work",
       "Cluster of small burn scars on inner left forearm (approximately 3cm x 2cm area) — thin, pale lines from accidental contact with a live Ferrogate cable at age twelve",
@@ -242,15 +227,48 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Head slightly forward, shoulders inward, knees perpetually ready to crouch or climb. Walk is quiet and flat-footed, adapted for moving across uneven tunnel floors in darkness. Sits with one leg folded, the other ready to spring. Eyes track details obsessively — light sources, cable runs, structural weak points. Fidgets with salvage pieces in idle moments.",
     "clothing_style": "Tier 5 subterranean salvager aesthetic. Oversized grey canvas transit worker's hard hat (three sizes too large, secured with knotted cord under chin). Layered in mismatched synthetics and canvas salvage: a faded blue transit authority work shirt (sleeves rolled), grey cargo pants with multiple pockets stuffed with tools and salvage snippets, patched at both knees with darker fabric. Worn canvas boots held together with cord lacing and adhesive patches. A salvaged reflective safety vest worn open over everything, its high-visibility orange faded to pale coral. Cloth strap wrapped around one wrist — a child's superstition or a structural reminder. Everything smells faintly of mineral oil, dust, and ozone."
   },
-  "image_prompt": "A young androgynous salvager in a cyberpunk underground setting, 152cm tall with a wiry compact build. Golden-warm brown skin with amber undertones bearing a grey-silver patina of tunnel dust. Dark brown eyes with unusual light-responsiveness, spiral textured black hair compressed under an oversized grey transit hard hat secured with knotted cord. Child-rounded face with defined cheekbones and steady expression. Pale burn scars visible on inner forearm, thin scar running from temple. Wearing oversized salvage: faded blue transit work shirt, grey patched cargo pants, worn canvas boots, pale coral reflective safety vest. Holding a salvaged multimeter and hand-carved wooden tools. Crouched in a dark tunnel with flickering emergency lights reflecting off mineral-streaked walls, ozone and mineral oil in the air, posture ready to move, eyes tracking cable runs and structural details. Cyberpunk 2226, moody underground industrial lighting, cinematic --ar 2:3 --v 6",
+  "image_prompt": "Nova Traoré-Villanueva, a 152cm wiry subterranean salvager child with deep warm brown skin enriched by golden and olive undertones, characteristic of Sub-Saharan African, Latin American, Indigenous American, and South Asian ancestry. Prominent cheekbones, dark brown almost-black eyes with unusual clarity, black spiral hair compressed under an oversized grey transit hard hat secured with knotted cord. Fine grey dust ingrained in neck creases. Wearing layered salvage: faded blue transit authority shirt, grey cargo pants with knee patches, worn canvas boots, and a faded coral reflective safety vest. Pale burn scars on inner left forearm visible, thin temple scar mostly faded. Economical posture, ready to crouch, holding salvaged multimeter and wooden calibration tools. Standing in dim tunnel environment with ozone-scented air, subtle metallic cables visible behind, low-light GLMZ Great Lakes Metropolitan Zone setting, moody underground lighting, dust particles visible in air, weathered and determined expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 58.5,
-    "Middle Eastern": 31.0,
-    "South Asian": 5.5,
-    "Sub-Saharan African": 5.0
+    "Sub-Saharan African": 61.8,
+    "Hispanic/Latin American": 19.6,
+    "Indigenous American": 10.5,
+    "South Asian": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 61.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 7
+      },
+      "Mexican": {
+        "Mexican": 12.6
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 1,
+        "Lakota": 0.4
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 9.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 4.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.8,
+        "Tamil Sri Lankan": 1.1
+      }
+    }
+  }
 }

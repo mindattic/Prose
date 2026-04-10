@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71c79cfa40197e01db6c23e",
   "type": "character",
-  "name": "Viggo Lindström-Zaragoza",
+  "name": "Kit Lindström-Kristjánsson",
   "aliases": [
     "The Wall"
   ],
@@ -87,7 +87,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Spires",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,16 +103,10 @@
   ],
   "district": "The Spires",
   "related_entities": [
-    "Chicago",
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Iowan Behemoth — 'Ironclad'",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "TESSERA TC-3 'Crucible'",
-    "Yuki Nwosu-Petrenko"
+    "Chicago"
   ],
   "physical_description": {
-    "heritage": "Predominantly Northern European with Hispanic/Latin American and Indigenous American admixture. Genetic expression shows strong Scandinavian baseline with subtle warmth from southern European and indigenous ancestry contributing to undertone complexity.",
+    "heritage": "Complex tri-continental ancestry with East Asian foundation (52.6%) modified by substantial Northern European (32.9%) and meaningful Sub-Saharan African (13.7%) contributions. Genetic expression creates distinctive phenotype: East Asian bone structure and monolid eye geometry form baseline, elevated by Northern European height and facial breadth, enriched by Sub-Saharan African ancestry contributing skin depth, warmth, and undertone complexity. Result is high-cheekboned face with moderate projection, broader facial width typical of East Asian heritage, strong brow ridge, and skin with luminous warm-brown canvas showing golden-amber highlights in direct light.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Athletic and broad-shouldered, muscle definition visible but not excessive; carries weight in chest and forearms from decades of physical work. Frame suggests controlled strength rather than showiness.",
@@ -120,8 +114,8 @@
     "hair_style": "Tight fade, closely clippered on sides with longer texture on crown",
     "hair_length": "Short",
     "eye_color": "Dark brown",
-    "skin_tone": "Fair to medium with warm golden undertones, suggesting mixed Northern European base with Hispanic and Indigenous American ancestry creating subtle olive-amber luminosity beneath surface.",
-    "complexion": "Weathered by sun and stress, minimal facial hair except a neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. High cheekbones with slight fullness suggesting indigenous ancestry. Skin is clear but bears the texture of someone who doesn't prioritize cosmetic treatments. Underlying bone structure reflects Scandinavian ancestry with subtle indigenous facial geometry.",
+    "skin_tone": "Warm medium-brown with golden-amber luminosity, combining East Asian and Sub-Saharan African depth with subtle olive undertones. Richer warmth than Northern European baseline, glows amber in direct light.",
+    "complexion": "Weathered by sun and stress, minimal facial hair except neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. Monolid eye structure with strong brow ridge; high cheekbones with moderate projection and slight fullness; broader face width with lower cheekbone placement characteristic of East Asian heritage, subtly modified by Northern European contribution. Clear skin bearing texture of someone who doesn't prioritize cosmetic treatments. No visible hyperpigmentation or depigmentation.",
     "distinguishing_marks": [
       "Pale burn scar running from right temple down to jawline, approximately 8cm in length, suggesting old thermal weapon or industrial accident",
       "Faded tattoo on left forearm: abstract geometric pattern in black ink, approximately 10cm across, style suggests personal rather than commercial design",
@@ -131,14 +125,47 @@
     "posture_movement": "Stands with weight balanced evenly, shoulders slightly back. Moves with deliberate efficiency—no wasted motion. Eyes constantly assess surroundings, head turns at controlled intervals. Handshake is firm but not aggressive. Speaks from the chest, voice modulated low.",
     "clothing_style": "Tier 2-3 professional security aesthetic. Typically wears tailored charcoal or matte-black synthlinen jackets with subtle Φ-laced smart-weave (barely detectable); fitted cargo pants with discrete pockets; reinforced undersuit visible at collar and wrists (ballistic-rated, matte finish). Boots are heavy-soled tactical grade, well-maintained but scuffed from use. Favors brands associated with corpo security (Hexus, Ironclad). No jewelry except a worn digital watch on left wrist with encrypted band."
   },
-  "image_prompt": "Viggo Lindström-Zaragoza, tall athletic Scandinavian-Latino man with fair warm golden skin and high indigenous cheekbones, short black hair with silver temples, dark brown eyes carrying scars of experience. Pale thermal burn scar from right temple to jawline, trimmed goatee, weathered complexion from decades in field work. Wearing tailored charcoal synthlinen security jacket with smart-weave threading, reinforced undersuit at collar, tactical cargo pants, heavy-soled black boots. Encrypted digital watch on left wrist. Standing in GLMZ neon-lit corporate security corridor, cool blue-purple ambient lighting, shoulders back in controlled alertness, eyes assessing surroundings with constant vigilance. Low-profile corpo security aesthetic, discretion and controlled strength, cyberpunk 2226. Cinematic, professional security operative, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Kit Lindström-Kristjánsson, 188cm tall athletic security operative, GLMZ. Warm medium-brown skin with golden-amber luminosity, East Asian monolid eyes with strong brow ridge, high cheekbones with moderate fullness, broader facial geometry. Black hair with silver temples, tight fade undercut, neatly trimmed goatee. Pale thermal burn scar from right temple to jawline. Dark intense gaze, weathered expression of chronic alertness. Wearing matte-black synthlinen tactical jacket with Φ-laced smart-weave, reinforced ballistic undersuit visible at collar and wrists, heavy-soled tactical boots. Digital watch on left wrist. Posture balanced and deliberate. Indoor GLMZ corporate security setting, cool blue-grey overhead lighting with warm accent light catching amber skin tone and scar texture. Cinematic, film noir security professional aesthetic, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 78.3,
-    "Hispanic/Latin American": 18.6,
-    "Indigenous American": 3.1
+    "East Asian": 52.6,
+    "Northern European": 32.9,
+    "Sub-Saharan African": 13.7,
+    "North African": 0.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.4
+      },
+      "Chinese": {
+        "Cantonese": 44.2
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 21.5
+      },
+      "British Isles": {
+        "Irish": 11.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 4.6
+      },
+      "Central African": {
+        "Congolese": 5.6,
+        "Angolan": 3.5
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 0.8
+      }
+    }
+  }
 }

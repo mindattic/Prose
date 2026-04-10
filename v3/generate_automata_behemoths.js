@@ -73,7 +73,7 @@ const behemoths = [
     countermeasures: "Cathedral's signal disruption field makes electronic warfare and guided weapons unreliable within 5 km. Its self-repair drone swarm aggressively intercepts approaching aircraft and missiles. The only confirmed damage to Cathedral was inflicted by a pre-collapse artillery battery that scored a direct hit on a leg joint — the leg was fully repaired within 96 hours.",
     known_deployments: [
       "Central Iowa broadcast corridor — continuous roaming",
-      "Approached Meridian 88 perimeter in 2177 — turned away before engagement",
+      "Approached GLMZ perimeter in 2177 — turned away before engagement",
       "Signal detected as far as Kansas City and Minneapolis"
     ],
     story_hooks: [
@@ -205,7 +205,7 @@ const behemoths = [
     known_deployments: [
       "Entire Iowa wasteland — road network spans 3,000+ km",
       "Roads extend into Nebraska, Illinois, Missouri, and Minnesota",
-      "Has been observed building road toward Meridian 88 (currently 40 km out)"
+      "Has been observed building road toward GLMZ (currently 40 km out)"
     ],
     story_hooks: [
       "Palisade's road is approaching a major city. The road leads directly to the city wall. Municipal authorities are debating whether to reinforce the wall or open a gate — because the trade opportunities of a Behemoth-grade highway are enormous, but so are the risks.",

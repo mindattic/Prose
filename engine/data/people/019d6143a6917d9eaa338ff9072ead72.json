@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6917d9eaa338ff9072ead72",
   "type": "character",
-  "name": "Indigo Holm",
+  "name": "Indigo Pathak",
   "aliases": [
     "Marcasite",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Monroe",
-  "description": "Pare Forsberg-Ofosu is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a counterintelligence specialist out of Meridian Station, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nPare Forsberg-Ofosu has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Indigo Pathak is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a counterintelligence specialist out of Meridian Station, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIndigo Pathak has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.91,
@@ -259,7 +259,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,36 +275,17 @@
     "The Unfinished Theorem",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
+    "Indigo",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Clover",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Glenville Sound",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Independent Micro-Grid Power Cooperative",
-    "MERIDIAN",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Burden Clause",
-    "The Quiet Room",
-    "Tshiamo Vukić-Arellano",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Northern European dominant (67.6%) with substantial Sub-Saharan African (20.3%), Hispanic/Latin American (6.8%), and Middle Eastern (5.3%) ancestry — a blend that creates a phenotype resistant to simple categorization. Warm, complex skin tone reflecting the genetic mosaic of the Ubiquitous Diaspora.",
+    "heritage": "South Asian dominant (56.1%) with substantial Indigenous American (14.8%), Eastern European (12.7%), East Asian (9.2%), and Sub-Saharan African (7.2%) ancestry. The genetic blend creates a striking phenotype: South Asian and Indigenous American features form the structural base—high, prominent cheekbones and a broad, well-defined nose—while Eastern European ancestry contributes slightly angular facial geometry. East Asian ancestry softens eye shape and adds subtle epicanthal folds, while Sub-Saharan African ancestry enriches skin undertones and adds fullness to lips. This five-way continental mix produces a visibly complex, warm-toned appearance that defies easy categorization.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Stocky and powerfully compact — not gym-built but shaped by decades of hands-on work. Broad shoulders, thick forearms, a frame designed for leverage and endurance rather than speed.",
@@ -312,8 +293,8 @@
     "hair_style": "Cropped close, maintained for utility — no styling, purely functional",
     "hair_length": "Short",
     "eye_color": "Pale gray with faint neural interface faintness around the pupils — subcutaneous optic enhancement",
-    "skin_tone": "Medium-deep, warm undertone with rich complexity from blended ancestry — weathered from nocturnal work cycles, with a subtle golden-bronze cast beneath the gray pallor of light-avoidance.",
-    "complexion": "Weathered. Minimal scarring visible on face — professionally treated or avoided. Jaw carries the weight of four decades; features are heavy, direct, and read as both competent and dangerous. High cheekbones and broad nose structure reflect the multi-continental ancestry. Grooming is meticulous but austere — no vanity, pure maintenance.",
+    "skin_tone": "Medium-deep warm bronze with complex multi-ethnic undertones. The South Asian and Indigenous American ancestry establishes a rich golden-bronze foundation, enriched by Sub-Saharan African warmth and East Asian undertone subtlety. Weathered from nocturnal work cycles, with a luminous quality beneath surface pallor from light-avoidance—the skin reads as genuinely warm despite fatigue.",
+    "complexion": "Weathered and heavily lived-in. Minimal scarring visible on face—professionally treated or avoided. Jaw is strong and squared, softened slightly by the fullness inherited from Sub-Saharan ancestry. High, prominent cheekbones from South Asian and Indigenous American genetics dominate facial structure. Broad nose reflects the same ancestry mix. Eyes are slightly almond-shaped from East Asian heritage, set deep above high cheekbones. Grooming is meticulous but austere—no vanity, pure maintenance. Features are heavy, direct, and read as both competent and dangerous.",
     "distinguishing_marks": [
       "Surgical scar running 4cm along right temple, faded to near-invisibility — likely subcutaneous work or close-quarters injury sustained years ago",
       "Faint burn marks across knuckles of both hands, particularly right — decades of weapons handling, accidental discharge residue or proof-of-skill",
@@ -323,15 +304,62 @@
     "posture_movement": "Economical and controlled. Moves like someone who has learned that wasted motion is wasted energy and liability. Shoulders slightly forward, weight distributed low — ready stance that looks casual. Eye contact is direct and held longer than comfort demands. Hands are rarely at rest; fingers tap or adjust equipment when seated. Nocturnal adaptation has given him a predatory stillness, an absence of fidgeting that others read as patience or threat.",
     "clothing_style": "Tier 3-4 pragmatism. Dark synthetic fabrics — charcoal, deep gray, black — designed for function in low-light environments. Reinforced tactical jacket with internal compartments, worn open over a fitted compression shirt that manages sweat and impact. Combat pants with thigh pockets and cable routing. Steel-toed boots, scuffed, regularly maintained. No logos, no fashion markers — clothes are tools. Wears a worn leather cord around his neck with a data chip (contact encryption key) as a redundant backup. No jewelry, no status symbols. His augmentations are his only ornamentation."
   },
-  "image_prompt": "Indigo Holm, 178cm tall, stocky powerful build, medium-deep warm-toned skin reflecting Northern European, Sub-Saharan African, Hispanic, and Middle Eastern ancestry blend. Dark brown hair salt-grayed at temples, cropped short, pale gray eyes with subtle neural interface enhancement. Weathered 40-year-old face with high cheekbones and broad features, meticulous grooming, faint scar along right temple, burn marks on knuckles. Wearing dark tactical jacket open over compression shirt, combat pants with cable routing, steel-toed boots. Smartgun link protruding from right forearm with luminous targeting reticle. Leather cord around neck with data chip. Predatory stillness, economical posture, direct gaze. Nocturnal underground setting, low-light cyberpunk 2226 environment, moody blue-gray lighting, worn industrial space in Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Indigo Pathak, 178cm tall stocky man with powerfully compact build, medium-deep warm bronze skin with complex multi-ethnic undertones reflecting South Asian, Indigenous American, Eastern European, East Asian, and Sub-Saharan African heritage. High prominent cheekbones, broad defined nose, slightly almond-shaped pale gray eyes with faint neural interface glow around pupils. Dark brown hair salt-grayed at temples, cropped short. Weathered, lived-in complexion with surgical scar along right temple and burn marks on knuckles. Wearing dark tactical jacket open over compression shirt, combat pants with thigh pockets, steel-toed boots. Smartgun link visible on right forearm with luminous targeting reticle, subsurface weapon housing distortion on left forearm. Worn leather data chip cord around neck. Posture economical and controlled, shoulders slightly forward, weight distributed low, ready stance. Nocturnal adaptation lighting—neon-shadow neo-noir environment, 2200s GLMZ aesthetic, moody low-light setting with cyan and purple accent lighting. Direct eye contact, hands slightly tense at rest. GLMZ 2200s Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 67.6,
-    "Sub-Saharan African": 20.3,
-    "Hispanic/Latin American": 6.8,
-    "Middle Eastern": 5.3
+    "South Asian": 56.1,
+    "Indigenous American": 14.8,
+    "Eastern European": 12.7,
+    "East Asian": 9.2,
+    "Sub-Saharan African": 7.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Bengali": 56.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 7.8,
+        "Ojibwe": 2.8
+      },
+      "Mesoamerican": {
+        "Maya": 3.1,
+        "Zapotec": 1.1
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 5.2,
+        "Belarusian": 1.5
+      },
+      "Slavic South": {
+        "Bulgarian": 2.3,
+        "Croatian": 0.3
+      },
+      "Slavic West": {
+        "Slovak": 3.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 4.1
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      },
+      "Chinese": {
+        "Fujianese": 3.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.2
+      }
+    }
+  }
 }

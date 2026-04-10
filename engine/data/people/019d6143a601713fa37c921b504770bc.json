@@ -1,7 +1,7 @@
 {
   "id": "019d6143a601713fa37c921b504770bc",
   "type": "character",
-  "name": "Mika Matai",
+  "name": "Mika Appiah",
   "aliases": [
     "Elo",
     "The Shelf Whisperer"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "University Spine, with frequent fieldwork in Hough Reclamation and Brightmoor Reclamation, near Lincoln and Belmont",
-  "description": "Elohor is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a Shelf elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nElohor is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to Shelf neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which Shelf communities were 'stable enough to absorb' and which could be cleared.",
+  "description": "Mika Appiah is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a Shelf elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nMika Appiah is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to Shelf neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which Shelf communities were 'stable enough to absorb' and which could be cleared.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -179,7 +179,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,29 +240,14 @@
     "University Spine",
     "The Reclamation Assembly",
     "The Gradient Compact",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Tessera Corponation",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Copper",
-    "Palette",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Crucible Industries Titan-500 'Earthquake'",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Isadora Mwangi-Thorvaldsen",
-    "MERIDIAN",
-    "Nnamdi Ostrowski-Faletolu",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "TESSERA TC-3 'Crucible'",
-    "The Nearfield",
-    "The Pure Hand",
-    "The Shelf",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Sub-Saharan African (49.6%) with significant Pacific Islander (20.9%) and East Asian (18.5%) ancestry, complemented by Hispanic/Latin American (7.0%) and Eastern European (4.0%) heritage. Her phenotype reflects this complex blend: warm, deep-toned skin with the broad facial structure and strong bone definition characteristic of Sub-Saharan and Pacific Islander genetics, softened by the subtle eye shape and cheekbone prominence influenced by East Asian ancestry.",
+    "heritage": "South Asian (42.5%) with substantial Sub-Saharan African (34.6%) and Southeast Asian (18.7%) ancestry, complemented by Hispanic/Latin American (4.2%) heritage. Her phenotype reflects this complex blend: the warm, deep-toned skin and melanin richness of South Asian and Sub-Saharan African genetics, with facial structure showing the defined cheekbones and prominent nose bridge characteristic of South Asian ancestry, deepened and broadened by Sub-Saharan African heritage. Southeast Asian ancestry contributes subtle refinement to eye shape and delicate bone structure, while Latin American heritage adds warmth to her overall complexion and slight fullness to facial contours.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and lean, economical muscle tone developed through years of walking neighborhoods on foot rather than vehicle transit. Moves with deliberate efficiency.",
@@ -270,8 +255,8 @@
     "hair_style": "Close-cropped natural, worn without styling product, practical for fieldwork",
     "hair_length": "Short",
     "eye_color": "Left eye: natural dark brown. Right eye: amber with geometric tessellation pattern (iris mod—intricate lattice of lighter amber against deeper amber base, non-blinking tessellation visible under direct light)",
-    "skin_tone": "Deep warm umber with golden undertones, reflecting the melanin-rich heritage of Sub-Saharan African and Pacific Islander ancestry, with subtle warmth from East Asian and Latin American genetic contributions",
-    "complexion": "Unlined face for her age; minimal cosmetics. Skin well-maintained but not carefully curated—sun exposure from fieldwork evident. Facial structure shows broad nose with full bridge, defined cheekbones with slight width characteristic of combined Sub-Saharan and Pacific Islander heritage, and lips with natural fullness. Expression carries habitual gentleness, eyes that hold attention longer than most.",
+    "skin_tone": "Deep warm brown with golden undertones, rich melanin content reflecting South Asian and Sub-Saharan African ancestry, with warmth and subtle olive hints from Southeast Asian and Latin American genetic contributions",
+    "complexion": "Unlined face for her age; minimal cosmetics. Skin well-maintained but sun-weathered from fieldwork. Facial structure shows defined nose with prominent bridge and refined bone structure from South Asian ancestry, defined but fuller cheekbones informed by Sub-Saharan African and Southeast Asian heritage, and lips with natural fullness. Expression carries habitual gentleness, eyes that hold attention longer than most.",
     "distinguishing_marks": [
       "Fine horizontal scar across left wrist (approximately 8cm), pale and old—origin unknown, carried without explanation",
       "Small, dark birthmark on right collarbone, often visible when jacket collar shifts",
@@ -281,16 +266,54 @@
     "posture_movement": "Deliberately slow and open body language—shoulders relaxed, hands visible and unhurried. Sits cross-legged or at angles rather than rigidly upright, mirroring how Shelf residents prefer to settle. Makes consistent eye contact but without pressure. Moves through spaces methodically, observing before engaging. Years of fieldwork have trained her to seem non-threatening; she takes up deliberately little space.",
     "clothing_style": "Uniform pragmatism: worn canvas field jacket (faded gray, patches reinforced at pockets, zippers replaced twice) layered over institutional thermals issued by Meridian Civic (typically forest green or charcoal). Pockets visibly bulging with analogue notecards, pen cluster, small recorder. Practical footwear—worn composite-soled boots, not fashionable. No jewelry. Jacket interior pockets lined with interview consent forms and community meshboard access cards. Overall appearance reads Tier 2 academic but deliberately self-effaced—no status markers, no affectation. Clothes chosen to blend into Shelf neighborhoods, not stand out."
   },
-  "image_prompt": "Portrait of Mika Matai, a 158cm compact figure with deep warm umber skin reflecting Sub-Saharan African, Pacific Islander, and East Asian heritage. Short natural black hair with faded copper bioluminescent threading catching dim light. Broad facial structure with defined cheekbones, full lips, strong nose. Left eye: natural dark brown. Right eye: amber with geometric tessellation pattern (iris modification). Fine scar visible across left wrist. Wearing faded gray canvas field jacket over institutional forest green thermal, pockets bulging with notecards and recorder. Worn composite-soled boots. Relaxed, open posture with deliberate gentleness in expression. Setting: evening fieldwork in Shelf neighborhood, soft urban glow, slight bioluminescent glow from hair threads. Cyberpunk 2200s aesthetic, non-threatening academic fieldworker presence. --ar 2:3 --v 6",
+  "image_prompt": "Mika Appiah, a 158cm lean woman with deep warm brown skin and golden undertones reflecting South Asian, Sub-Saharan African, and Southeast Asian ancestry. Close-cropped natural black hair with faded bioluminescent copper threading catching dim light. Left eye natural dark brown, right eye striking amber with geometric tessellation iris mod. Defined South Asian nose bridge, refined cheekbones, naturally full lips. Fine pale scar across left wrist. Wearing faded gray canvas field jacket over forest green institutional thermals, bulging pockets, worn composite boots. Neural mesh ports barely visible behind cropped hair. Deliberately open posture, methodical movements, non-threatening presence. GLMZ Great Lakes Metropolitan Zone, evening fieldwork lighting, dim neon casting shadows, sits at an angle with hands visible, observant expression. Documentary aesthetic, worn pragmatic academic aesthetic, blended into Shelf neighborhood environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 49.6,
-    "Pacific Islander": 20.9,
-    "East Asian": 18.5,
-    "Hispanic/Latin American": 7.0,
-    "Eastern European": 4.0
+    "South Asian": 42.5,
+    "Sub-Saharan African": 34.6,
+    "Southeast Asian": 18.7,
+    "Hispanic/Latin American": 4.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 36.8
+      },
+      "Nepali": {
+        "Nepali": 5.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 2.4,
+        "Mozambican": 23.5
+      },
+      "Central African": {
+        "Angolan": 4.2,
+        "Congolese": 4.5
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 12.3,
+        "Sumatran": 6.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 0.9,
+        "Chilean": 0.9
+      },
+      "Central American": {
+        "Honduran": 0.8,
+        "Guatemalan": 0.1
+      },
+      "Mexican": {
+        "Mexican": 1.5
+      }
+    }
+  }
 }

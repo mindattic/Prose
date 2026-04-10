@@ -1,7 +1,7 @@
 {
   "id": "019d6143a624736c82019afed41d7539",
   "type": "character",
-  "name": "Kiran Volkov-Mukherjee-Valenzuela",
+  "name": "Azamat Cardenas-Mukherjee-Kulkarni",
   "aliases": [
     "Helix",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Halima Lindgren-Ofori are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 30, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a broker out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHalima Lindgren-Ofori are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
+  "description": "Azamat Cardenas-Mukherjee-Kulkarni are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 30, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a broker out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nAzamat Cardenas-Mukherjee-Kulkarni are the kind of runner other runners tell stories about, though the stories vary depending on who they burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.14,
@@ -258,7 +258,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,29 +273,11 @@
   "related_entities": [
     "Masquerade",
     "Lazarus LX-2 'Lab Rat'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Dragan Petersen-Bah",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Ilhan Sandstrom-Badu",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Old Harbor",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with significant South Asian and Hispanic/Latin American ancestry, with minimal Eastern European contribution. The genetic blend produces warm-toned melanin with complex undertones — darker skin with subtle golden and reddish undertones from the South Asian and Hispanic heritage mixing with the deeper African ancestry base.",
+    "heritage": "Complex blend of South Asian (42.2%), Central Asian (27.4%), Hispanic/Latin American (16.3%), and Eastern European (14.1%) ancestry. This combination produces warm medium-to-deep brown skin with subtle golden and olive undertones characteristic of South Asian-Central Asian mixing, layered with the warmer reddish-golden tones from Hispanic heritage. The Central and Eastern European components add depth and complexity to the overall melanin expression, contributing to the pronounced cheekbone definition and facial angularity while maintaining the warm base tone.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Rawboned and lean — efficient rather than muscular, with the tensile strength of someone who moves constantly. Long limbs, narrow shoulders, minimal subcutaneous fat. The frame reads as either ascetic discipline or chronic scarcity, depending on the observer.",
@@ -303,27 +285,61 @@
     "hair_style": "Pulled back tight in a braided crown, kept meticulously styled despite the utilitarian nature of the rest of their appearance",
     "hair_length": "Medium",
     "eye_color": "Deep brown with amber undertones — possibly enhanced by subcutaneous neural augmentation affecting the iris luminescence",
-    "skin_tone": "Deep warm brown with golden and reddish undertones, weathered by salt spray and dockside exposure. The melanin distribution shows the complexity of African, South Asian, and Latin American ancestry blending.",
-    "complexion": "Sharp-featured with prominent cheekbones and a defined jawline reflecting South Asian and African heritage structures. Skin is clear but bearing the strain of chronic augmentation integration — faint inflammation scars around the temples and along the mandible in thin, surgical lines. The warm undertones of the skin create subtle shadow patterns across the facial structure. No cosmetic grooming; appearance is entirely functional.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones, weathered by salt spray and dockside exposure. The melanin distribution shows the complexity of South Asian, Central Asian, Hispanic, and Eastern European ancestry blending into a cohesive, sun-darkened depth.",
+    "complexion": "Angular features with prominent cheekbones and defined jawline reflecting the strong influence of South Asian and Central Asian ancestry structures, sharpened further by Eastern European heritage contributing to the broad-plane facial geometry. The overall facial structure is lean and high-boned, with warm golden-olive undertones creating subtle shadow patterns across the face. Skin is clear but bearing the strain of chronic augmentation integration — faint inflammation scars around the temples and along the mandible in thin, surgical lines. No cosmetic grooming; appearance is entirely functional.",
     "distinguishing_marks": [
       "Augmentation scarring in a precise line along both temples, approximately 4cm each, where neural interface ports were installed",
       "Chemical analyzer chrome visible in the nasal passages — metallic grey tubing visible when light catches the nostrils at certain angles",
       "Thin surgical scars tracing the jawline on both sides, approximately 6cm total, from the chemical analyzer integration at the nasal root downward",
-      "A jagged burn scar on the right forearm, approximately 8cm, from an old solvent exposure — tissue is slightly puckered and discolored against the deeper skin tone"
+      "A jagged burn scar on the right forearm, approximately 8cm, from an old solvent exposure — tissue is slightly puckered and discolored against the warm brown skin tone"
     ],
     "visible_augmentations": "Chemical analyzer chrome in nasal passages — metallic tubing visible in nostrils. Temple and jawline augmentation scarring is stark and unmodified against warm brown skin. No dermal plating or obvious limb replacement, but the visible chrome suggests subcutaneous systems that aren't immediately apparent.",
     "posture_movement": "Moves with economical precision — no wasted motion, every gesture calibrated. Stands at an angle rather than face-on, a defensive habit. Breathing is controlled and deliberate. When still, there is a visible tension in the shoulders and hands, as if the body is perpetually coiled. Makes direct eye contact but holds it just slightly too long.",
     "clothing_style": "Tier 4 utilitarian with Tier 3 underpinings — reinforced polymer jacket in charcoal grey with internal pockets for tools and data storage. Fitted tactical pants with cargo reinforcements, worn denim showing careful wear patterns at stress points. Heavy-soled boots with grip plating for dockside work. Layers are chosen for movement and concealment rather than presentation. No jewelry except a subdermal RFID implant visible as a faint subcutaneous line on the left wrist. Clothing is always clean but never new."
   },
-  "image_prompt": "Kiran Volkov-Mukherjee-Valenzuela, 183cm tall lean dockworker with deep warm brown skin and golden undertones, sharp defined cheekbones and jawline, dark brown hair with silver threading pulled back in tight braided crown. Deep brown eyes with amber luminescence from neural augmentation. Stark white surgical scars visible on both temples and along jawline, metallic chrome chemical analyzer tubing visible in nostrils. Jagged burn scar on right forearm. Wearing charcoal grey reinforced polymer tactical jacket over fitted cargo pants and heavy grip-plated boots. Subdermal RFID implant visible as faint line on left wrist. Posed at defensive angle, economical posture with coiled tension in shoulders, controlled breathing. Dockside industrial setting, cool neon-cyan and orange lighting reflecting off wet metal surfaces and chrome augmentations. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic, utilitarian and functional, standing slightly to the side with direct penetrating gaze. Cinematic noir atmosphere with sharp shadows emphasizing facial structure and augmentation scars. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Azamat Cardenas-Mukherjee-Kulkarni, lean 183cm tall with warm medium-brown skin tone blending South Asian, Central Asian, Hispanic, and Eastern European heritage. Sharp angular features with prominent high cheekbones and defined jawline, dark brown hair with silver threading pulled into tight braided crown. Deep amber-brown eyes with subtle neural luminescence. Visible augmentation scarring along temples and jawline, metallic chrome chemical analyzer tubing in nasal passages catching light. Jagged burn scar on right forearm. Standing at defensive angle in charcoal grey reinforced polymer jacket and tactical pants, dockside industrial setting with salt-spray weathering visible on skin. Controlled, coiled posture, direct stare. Harsh neo-noir overhead lighting casting sharp shadows across angular face, emphasizing augmentation marks and ancestry-derived bone structure. Utilitarian, functional aesthetic, no jewelry. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.5,
-    "South Asian": 29.6,
-    "Hispanic/Latin American": 23.1,
-    "Eastern European": 3.8
+    "South Asian": 42.2,
+    "Central Asian": 27.4,
+    "Hispanic/Latin American": 16.3,
+    "Eastern European": 14.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 14.9,
+        "Pashtun": 27.3
+      }
+    },
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 27.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 11.5
+      },
+      "South American": {
+        "Chilean": 1.8,
+        "Brazilian": 0.5
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.5
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 3.5,
+        "Polish": 5.3
+      },
+      "Slavic South": {
+        "Serbian": 5.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63574b4b36be2b9f6c48427",
   "type": "character",
-  "name": "Kwame Quartey-Fredriksen",
+  "name": "Arden Árnason-Mori",
   "aliases": [
     "Voltage",
     "Volts",
@@ -14,7 +14,7 @@
   "age": 31,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Western and Chicago Ave",
-  "description": "Ira Volkov was an electrical systems technician for the Shelf's grid maintenance before a contract dispute with the Meridian Grid Authority left him blacklisted. He joined Marcus's crew because unemployable electricians with combat implants have limited career options. He has a genuine talent for engineering that the Shelf has no legitimate use for.\n\nKyle shorted his forearm shock projectors on the first pass, then put the hand cannon through both kneecaps. Ira now rolls everywhere in a salvaged mobility chair that he has modified with the remains of his shock projectors — the armrests can tase people who get too close. He considers this an upgrade. He has also added a cup holder, a phone mount, and a retractable tool rack. The chair catches fire roughly once a month.\n\nHe has an ex-wife, Katya, who lives in the Meridian Core with their twin daughters, Anya and Lilia (age 8). Katya left when the blacklisting happened. Ira does not blame her. He sends what he can. The twins think their father is in a wheelchair because of a work accident, which is technically not a lie.",
+  "description": "Arden Árnason-Mori was an electrical systems technician for the Shelf's grid maintenance before a contract dispute with the Meridian Grid Authority left him blacklisted. He joined Marcus's crew because unemployable electricians with combat implants have limited career options. He has a genuine talent for engineering that the Shelf has no legitimate use for.\n\nKyle shorted his forearm shock projectors on the first pass, then put the hand cannon through both kneecaps. Ira now rolls everywhere in a salvaged mobility chair that he has modified with the remains of his shock projectors — the armrests can tase people who get too close. He considers this an upgrade. He has also added a cup holder, a phone mount, and a retractable tool rack. The chair catches fire roughly once a month.\n\nHe has an ex-wife, Katya, who lives in the Meridian Core with their twin daughters, Anya and Lilia (age 8). Katya left when the blacklisting happened. Ira does not blame her. He sends what he can. The twins think their father is in a wheelchair because of a work accident, which is technically not a lie.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -217,7 +217,7 @@
     "Berserker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,36 +239,16 @@
     "Meridian Core",
     "The Shelf",
     "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Lazarus EC-4 'Companion'",
+    "The Accidental",
     "NeuralPath VaultPay Subdermal Transaction Node",
-    "Marcus Okafor-7",
     "Chicago",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Bay View Docks",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Devraj Solano-Yildirim",
-    "Fanta Kato-Adomako",
-    "Kyle Ellen Corbin-Vasik",
-    "Last Word",
-    "Lazarus Pharmaceuticals",
-    "MERIDIAN",
-    "Malika Zhukov-Wiredu",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Obafemi Szczypiński-Lautoa",
-    "Patient Zero",
-    "Slagworks Industrial",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "The Circuit",
-    "The Pure Hand",
-    "Warden",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Marcus Okafor-7"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (73.6%) with Northern European (11.4%), Hispanic/Latin American (7.8%), and South Asian (7.2%) ancestry—a complex genetic blend reflecting the Ubiquitous Diaspora. His features carry the broad facial structure and rich skin tones of West African heritage, with subtle Northern European bone definition in his cheekbones and jaw, and warm undertones from his Latin American and South Asian components.",
+    "heritage": "Predominantly East Asian (62.3%) with Northern European (16.7%), Indigenous American (12.9%), and Middle Eastern (8.1%) ancestry—a complex genetic blend reflecting the Ubiquitous Diaspora. His features carry strong East Asian facial structure with the characteristic bone geometry of that heritage, softened by Northern European definition in cheekbones and jaw. Indigenous American and Middle Eastern ancestry contribute warm undertones and subtle facial asymmetries throughout his features.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and muscular through the chest and arms from years of electrical work and salvage labor; lower body atrophied below the hips due to bilateral knee amputation and prolonged immobility",
@@ -276,8 +256,8 @@
     "hair_style": "Short, practical cut; often unkempt from grease work",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint scarring around the orbital sockets from old electrical burns",
-    "skin_tone": "Rich deep brown with warm undertones from Sub-Saharan, Latin American, and South Asian heritage; darkened and weathered by dock sun exposure to near mahogany in places",
-    "complexion": "Weathered face with a strong, broad jaw characteristic of West African ancestry; deep creases around eyes from squinting at circuit boards and harsh dock lighting; calloused hands with burn scars across knuckles and palms; perpetual motor oil stains under fingernails",
+    "skin_tone": "Warm medium-tan complexion with golden-olive undertones from East Asian, Indigenous American, and Middle Eastern heritage blended together; darkened and weathered by dock sun exposure to deep bronze in places, with underlying warm undertone visible in lighter areas",
+    "complexion": "Weathered face with East Asian facial structure, moderate cheekbone prominence from Northern European ancestry, and subtle width through the face from Indigenous American heritage; deep creases around eyes from squinting at circuit boards and harsh dock lighting; calloused hands with burn scars across knuckles and palms; perpetual motor oil stains under fingernails",
     "distinguishing_marks": [
       "Electrical burn scar running from right temple down to jaw — jagged, silvered with age, puckered against darker skin",
       "Network of thin burn scars across both forearms where shock projectors were housed, now discolored and lighter-toned against surrounding skin",
@@ -288,15 +268,57 @@
     "posture_movement": "Propels himself with powerful, economical arm movements; leans forward in the chair with habitual tension. Hands are always occupied — tinkering, adjusting, fidgeting with chair components. Despite mobility limitation, carries himself with the coiled aggression of dock muscle; jaw clenches when stationary. Eyes constantly assess surroundings with the paranoia of someone blacklisted and unemployable.",
     "clothing_style": "Tier 4-5 utilitarian dock wear: reinforced cargo pants (usually oil-stained) tucked into worn steel-toed boots; oversized Meridian Grid Authority work jacket (kept as bitter memento, now patched and grease-darkened) worn over a faded band t-shirt or unmarked grey undershirt. No visible jewelry except a faint tan line on his ring finger. Often has a welding mask pushed up on his forehead or hanging from the chair frame. Smell of electrical solder, machine oil, and burnt plastic is permanent."
   },
-  "image_prompt": "Kwame Quartey-Fredriksen, cyberpunk 2226, muscular dark-skinned man with West African features and salt-and-pepper short hair, scarred orbital sockets, jagged electrical burn scar running temple to jaw. Sitting in heavily modified jury-rigged salvage mobility chair with exposed copper conduits, taser contacts on armrests, welded frame patched with dock plating and carbon-scored thermal damage. Both forearms end in exposed wiring and blackened tech, shock projector remnants visible. Broad chest with self-done circuit diagram tattoo visible under torn work clothes. Wearing grease-stained reinforced cargo pants, weathered steel-toed boots, patched MGA work jacket over faded undershirt. Hands perpetually tinkering, welding mask hanging from chair frame. Posture coiled and aggressive despite immobility, jaw clenched, paranoid gaze scanning surroundings. Dock-worn skin darkened to mahogany, covered in burns and industrial scars. Setting: dystopian harbor district, harsh neon-blue and orange industrial lighting casting sharp shadows, oil slicks and electrical conduits in background. Mood: bitter, capable, dangerous despite disability. --ar 2:3 --v 6",
+  "image_prompt": "Arden Árnason-Mori, a hardened salvage worker in a GLMZ Great Lakes Metropolitan Zone setting. East Asian facial structure with warm olive-bronze skin tone weathered by dock sun, salt-and-pepper dark hair in a short practical cut. Intense dark brown eyes with faint electrical burn scarring around sockets. Jagged electrical burn scar from right temple to jaw, silvered against darker skin. Massive, muscular arms and broad shoulders terminating in exposed wiring and salvaged tech at the forearms—copper conduits and blackened contact points visible. Seated in a heavily modified salvage mobility chair—patchwork of dock plating, electrical conduits, carbon-scored thermal damage. Welded armrests with taser contacts, duct-taped cup holder and phone mount. Wearing oversized grease-darkened Meridian Grid Authority work jacket over faded undershirt, reinforced oil-stained cargo pants, worn steel-toed boots. Welding mask on forehead. Powerful posture leaning forward, hands fidgeting with chair components. Coiled tension in clenched jaw and muscular frame. Industrial dock warehouse setting, harsh neon and arc-light lighting casting long shadows, oil-stained concrete floor, circuit board workstation in soft background glow. Smell of solder and machine oil palpable. Atmosphere of gritty determination and blacklisted survival. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 73.6,
-    "Northern European": 11.4,
-    "Hispanic/Latin American": 7.8,
-    "South Asian": 7.2
+    "East Asian": 62.3,
+    "Northern European": 16.7,
+    "Indigenous American": 12.9,
+    "Middle Eastern": 8.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 23.4
+      },
+      "Chinese": {
+        "Sichuanese": 8.5,
+        "Mandarin Northern": 30.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 14.6
+      },
+      "Germanic": {
+        "Austrian": 0.6,
+        "German": 0.6
+      },
+      "British Isles": {
+        "English": 0.5,
+        "Irish": 0.4
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 5.1,
+        "Choctaw": 5.7
+      },
+      "Mesoamerican": {
+        "Nahua": 1.4,
+        "Maya": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 2.2
+      },
+      "Kurdish": {
+        "Kurdish": 5.9
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a613727f9a59d1f24e753615",
   "type": "character",
-  "name": "Soren Mensah-Nygaard",
+  "name": "Soren Cervantes-Delgado",
   "aliases": [
     "Faust",
     "The Old Librarian"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "The Alban Souk, Hamtramck Enclave, near Halsted and Chicago Ave",
-  "description": "Faustin is a tall man gone slightly stooped with age, with a long, deeply lined face the color of dark walnut and close-cropped silver hair. He wears reading glasses with one cracked lens that he has refused to replace for reasons he won't fully explain, and his fingers are permanently ink-stained from a printer he still operates by hand. His stall in the Alban Souk is an organized labyrinth — physical media stacked in towers that somehow have internal logic only he can navigate, data-chips in labeled trays, printed zines in weathered portfolios, bootleg entertainment feeds on a slow-scroll display board behind him. He smells of old plastics, hot electronics, and a tobacco substitute he has smoked for forty years.\n\nFaustin does not move quickly and he does not need to. He has been in this spot, or a spot within fifty meters of this spot, for twenty-six years. He speaks with the careful economy of someone who has decided that most conversations don't require more than a hundred words, but when he talks about something he loves — old cinema, pre-Corponation literature, the acoustic properties of physical music formats — he becomes a completely different person, voluble and precise and slightly alarming in his enthusiasm. He knows what data passes through the Souk before almost anyone else does. He sells most of it. He keeps some of it. Nobody is quite sure which is which.",
+  "description": "Soren Cervantes-Delgado is a tall man gone slightly stooped with age, with a long, deeply lined face the color of dark walnut and close-cropped silver hair. He wears reading glasses with one cracked lens that he has refused to replace for reasons he won't fully explain, and his fingers are permanently ink-stained from a printer he still operates by hand. His stall in the Alban Souk is an organized labyrinth — physical media stacked in towers that somehow have internal logic only he can navigate, data-chips in labeled trays, printed zines in weathered portfolios, bootleg entertainment feeds on a slow-scroll display board behind him. He smells of old plastics, hot electronics, and a tobacco substitute he has smoked for forty years.\n\nSoren Cervantes-Delgado does not move quickly and he does not need to. He has been in this spot, or a spot within fifty meters of this spot, for twenty-six years. He speaks with the careful economy of someone who has decided that most conversations don't require more than a hundred words, but when he talks about something he loves — old cinema, pre-Corponation literature, the acoustic properties of physical music formats — he becomes a completely different person, voluble and precise and slightly alarming in his enthusiasm. He knows what data passes through the Souk before almost anyone else does. He sells most of it. He keeps some of it. Nobody is quite sure which is which.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -162,7 +162,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,34 +177,13 @@
   "related_entities": [
     "Hamtramck Enclave",
     "The Alban Souk",
-    "ARCHIVE",
-    "Walnut",
-    "Silver",
     "Chicago",
-    "Alper Lebedev-Tutu",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ihaia Nystrom-Keita",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Kwabena Ilyich Ferreira-Sattout",
-    "Nnamdi Ostrowski-Faletolu",
-    "Rashaad Tumelo-Koskinen",
-    "Réginald Asomaning-Čabarkapa",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CORPONATION Elysia Sensorum Totalis",
-    "The Archive",
-    "The Bazaar",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "Walnut",
+    "Silver"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (47.8%) with significant East Asian (16.4%) and North African (15.7%) ancestry, blended with minor Hispanic/Latin American (8.2%), Northern European (7.9%), and South Asian (4.0%) heritage. This creates a richly complex phenotype with warm undertones across multiple ethnic signatures.",
+    "heritage": "Hispanic/Latin American (57.5%) with significant Sub-Saharan African (22.0%) and South Asian (20.5%) ancestry. This creates a richly complex phenotype combining warm golden and amber undertones from Latin American heritage with deeper melanin-rich undertones from Sub-Saharan ancestry and the luminous quality characteristic of South Asian skin. The blend produces a distinctive warm medium-to-dark brown complexion with subtle ochre and bronze notes.",
     "height_cm": 188,
     "weight_kg": 74,
     "build": "Tall and lean, slightly stooped through the shoulders from decades hunched over inventory and printing equipment. Still carries a wiry frame despite age; no excess weight but visible muscle atrophy in the upper back.",
@@ -212,8 +191,8 @@
     "hair_style": "Close-cropped, neatly trimmed but not fussy",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural; right eye shows faint grid pattern overlay artifact from first-generation retinal display",
-    "skin_tone": "Rich dark brown with warm, complex undertones reflecting the blend of Sub-Saharan, East Asian, and North African ancestry. Smooth in youth-memory but now deeply weathered with age, carrying subtle golden and amber undertones from the Mediterranean and South Asian components.",
-    "complexion": "Deeply lined face with prominent creases around the eyes and mouth; weathered but clean-shaven. Small age spots on the temples and cheekbones show the characteristic patterning of melanin-rich skin aging. One cracked lens of reading glasses worn habitually — the left lens has a vertical hairline fracture he refuses to repair. Permanent ink stains on the tips of all fingers, darkest on thumb and forefinger. Minor tobacco staining at the corners of his mouth. High cheekbones hint at East Asian ancestry; broad nose structure reflects Sub-Saharan heritage.",
+    "skin_tone": "Warm medium-to-dark brown with golden amber undertones. Deeply weathered with age, the complexion carries the richness of blended heritage — Latin American warmth, Sub-Saharan depth, and South Asian luminosity converging into a distinctive ochre-bronze patina. Age spots visible on temples and cheekbones show characteristic melanin patterning of darker skin aging.",
+    "complexion": "Deeply lined face with prominent creases around the eyes and mouth; weathered but clean-shaven. Facial structure reflects the blend of Latin American and Sub-Saharan heritage with warm, rounded features and strong bone structure characteristic of the genetic mix. Small age spots on the temples and cheekbones. One cracked lens of reading glasses worn habitually — the left lens has a vertical hairline fracture he refuses to repair. Permanent ink stains on the tips of all fingers, darkest on thumb and forefinger. Minor tobacco staining at the corners of his mouth.",
     "distinguishing_marks": [
       "A thin, pale scar runs along the left jawline from ear toward chin, approximately 8 centimeters, consistent with old blunt-force trauma; rarely mentioned when asked.",
       "Ink-black burn scar on the inside of his left wrist, roughly 3 centimeters across, shaped like a printer's heat plate — deliberate, self-inflicted, from an accident he reframed as a lesson.",
@@ -223,17 +202,44 @@
     "posture_movement": "Moves with deliberate slowness, never rushed. Economy of gesture — when he reaches for something, the movement is precise and minimal. Tends to lean slightly forward when listening, hands often resting flat on his counter or folded in his lap. His gaze is sharp despite the age; he observes more than he moves.",
     "clothing_style": "Tier 3-4 working class, carefully maintained but intentionally plain. Favors loose linen shirts in neutral tones (cream, gray, pale brown), often with the sleeves rolled to the elbow. Wears a long canvas apron over his clothes, multiple pockets reinforced and stained with use. Dark cotton trousers, well-fitted but worn. Leather slip-on shoes, repaired multiple times, comfortable and broken-in. A faded jacket — possibly from the 2190s — hangs near his stall for cooler days. No jewelry except a plain metal band on his right ring finger. Habitually carries a cloth handkerchief for wiping dust off inventory."
   },
-  "image_prompt": "Cyberpunk 2226 portrait of Soren Mensah-Nygaard, a tall 188cm lean man in his later years with silver-white close-cropped hair. His rich dark brown skin reflects Sub-Saharan, East Asian, and North African heritage with warm undertones; deeply weathered and lined face with prominent creases, high cheekbones, broad nose structure. Sharp gaze with right eye showing faint iridescent retinal display grid overlay. Dark brown natural eyes. Clean-shaven with age spots on temples and cheekbones. Thin pale scar along left jawline, ink-black burn scar on left wrist, ink-stained fingertips with tobacco staining at mouth corners. Wearing loose cream linen shirt with rolled sleeves, dark canvas apron with reinforced pockets, well-worn dark cotton trousers, and weathered leather slip-on shoes. Faded 2190s-era jacket draped nearby. Posed leaning slightly forward at his counter, hands flat or folded, moving with deliberate precision and economy of gesture. Vintage printing press equipment and worn inventory visible in background. Soft warm overhead lighting, slight neon glow from nearby signage. 2200s urban Great Lakes Metropolitan setting. Observant, lived-in, unrushed. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Soren Cervantes-Delgado, a tall lean 188cm man in his 70s with silver-white close-cropped hair and warm medium-to-dark brown complexion blending Latin American, Sub-Saharan African, and South Asian heritage, creating distinctive ochre-bronze tones. Deep facial lines weathered from age, clean-shaven with small age spots on temples and cheekbones. Dark brown natural eyes, right eye showing faint iridescent grid pattern from retinal display augmentation. Thin pale scar along left jawline, ink-black burn mark on left wrist. Ink-stained fingers from decades of printing work. Wearing loose cream linen shirt with rolled sleeves, dark canvas apron with multiple stained pockets, worn dark cotton trousers, and broken-in leather slip-on shoes. Faded 2190s-era jacket nearby. Slightly stooped posture, leaning forward with hands flat, sharp observant gaze. Standing at his printing stall in Great Lakes Metropolitan Zone, warm golden workshop lighting catching the grid pattern in his eye. GLMZ, Tier 3-4 working class aesthetic, analog technology, worn but dignified. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 47.8,
-    "East Asian": 16.4,
-    "North African": 15.7,
-    "Hispanic/Latin American": 8.2,
-    "Northern European": 7.9,
-    "South Asian": 4.0
+    "Hispanic/Latin American": 57.5,
+    "Sub-Saharan African": 22,
+    "South Asian": 20.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 25.3
+      },
+      "Central American": {
+        "Guatemalan": 23.3
+      },
+      "Caribbean": {
+        "Cuban": 7.8,
+        "Puerto Rican": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 22
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 11.1
+      },
+      "Pakistani": {
+        "Baloch": 2.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 7.3
+      }
+    }
+  }
 }

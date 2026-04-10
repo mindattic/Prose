@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f67959b64afa3c47775a2f",
   "type": "character",
-  "name": "Ama Petelo",
+  "name": "Ama Bangura",
   "aliases": [
     "Thess",
     "The Budget"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Grand Corridor, Tessera Infrastructure Hub — open-plan office, desk seven, near Armitage and Milwaukee",
-  "description": "Thessaly has the kind of face that reads as permanently slightly amused, which is either accurate or a very effective mask depending on the day. They are medium height, compact, with light brown skin and the kind of effortlessly symmetrical features that suggest either genetics or a very good cosmetic package — in fact it's genetics, a fact they find privately funny. Their hair is color-shifting, cycling slowly through dark blues and greens during work hours and switching to a deep amber setting they call 'off-duty mode.' They dress practically: clean lines, nothing that catches on equipment, a jacket with actual pockets. A small silver ring through their left nostril is their only visible jewelry.\n\nThessaly is someone who keeps everything moving — projects, people, conversations, agendas. They have an almost physical intolerance for stagnation and an ability to hold seventeen interdependent variables in their head without apparent effort. They're not charismatic in the conventional sense: they don't perform warmth. But they're fair, they remember everything, and they're reliably the calmest person in any crisis, which generates a particular kind of loyalty in the people who work under them. They grew up in a Tier 3 household in Shorewood Terrace with two working parents who modeled relentless competence, and they absorbed it completely.",
+  "description": "Ama Bangura has the kind of face that reads as permanently slightly amused, which is either accurate or a very effective mask depending on the day. They are medium height, compact, with light brown skin and the kind of effortlessly symmetrical features that suggest either genetics or a very good cosmetic package — in fact it's genetics, a fact they find privately funny. Their hair is color-shifting, cycling slowly through dark blues and greens during work hours and switching to a deep amber setting they call 'off-duty mode.' They dress practically: clean lines, nothing that catches on equipment, a jacket with actual pockets. A small silver ring through their left nostril is their only visible jewelry.\n\nAma Bangura is someone who keeps everything moving — projects, people, conversations, agendas. They have an almost physical intolerance for stagnation and an ability to hold seventeen interdependent variables in their head without apparent effort. They're not charismatic in the conventional sense: they don't perform warmth. But they're fair, they remember everything, and they're reliably the calmest person in any crisis, which generates a particular kind of loyalty in the people who work under them. They grew up in a Tier 3 household in Shorewood Terrace with two working parents who modeled relentless competence, and they absorbed it completely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -186,7 +186,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,37 +244,16 @@
     "Shorewood Terrace",
     "Ferrogate Transit",
     "Grand Corridor",
+    "Plot 17",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "GLMZ",
     "The Gradient Compact",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Silver",
-    "The Milwaukee Core",
-    "Alper Inoue-Aidoo",
-    "Alper Lebedev-Tutu",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Irontide Tidal Energy",
-    "Liora Mori-Sefa",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Patient Zero",
-    "Plot 17",
-    "TESSERA TC-3 'Crucible'",
-    "Tenderloin",
-    "Tessera Micro-PDW TMP-2 'Synapse'",
-    "The Commute",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Yuki Nwosu-Petrenko"
+    "Silver"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander, Sub-Saharan African, Southeast Asian with Northern European and East Asian admixture",
+    "heritage": "Predominantly Sub-Saharan African (70.4%) with significant Indigenous American ancestry (12.0%), supplemented by Northern European (8.9%), East Asian (7.4%), and minor South Asian (1.3%) heritage. The genetic combination produces striking features: deep West African bone structure and facial proportions form the foundation, while Indigenous American ancestry contributes facial width and prominent cheekbones. Northern European admixture adds subtle complexity to eye shape and brow structure, East Asian heritage influences eyelid variation and subtle cheekbone projection, creating a multifaceted phenotype that reads as distinctly contemporary GLMZ—the lived result of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Compact and efficient, lean muscle without bulk, the kind of frame that suggests regular movement rather than dedicated fitness. Economical posture.",
@@ -282,8 +261,8 @@
     "hair_style": "Shoulder-length, blunt-cut, styled for practicality — tucks behind ears when focused, no styling products visible",
     "hair_length": "Medium",
     "eye_color": "Dark brown, unaugmented, alert and direct",
-    "skin_tone": "Rich warm brown with subtle golden undertones, reflecting the blend of Pacific Islander and Sub-Saharan African ancestry with Southeast Asian warmth",
-    "complexion": "Broad facial structure with well-defined cheekbones and a balanced nose; symmetrical features with a resting expression that reads as faintly amused; minimal grooming theater, well-maintained but unstudied; skin shows no visible scarring or blemish work",
+    "skin_tone": "Deep rich brown with warm golden undertones, the luminous result of dominant Sub-Saharan African ancestry. Indigenous American and East Asian components add subtle complexity and depth without shifting the fundamental warmth of the base tone—skin catches light with distinctive golden radiance.",
+    "complexion": "Strong West African facial structure with prominent, well-defined cheekbones and a broad nose; face width and balance reflect Indigenous American influence while East Asian admixture contributes to eye placement and subtle orbital bone structure. Symmetrical, striking features with a resting expression that reads as faintly amused. Minimal grooming theater, well-maintained but unstudied; skin shows no visible scarring or blemish work.",
     "distinguishing_marks": [
       "Small silver nostril ring, left side — the only jewelry they wear regularly"
     ],
@@ -291,17 +270,66 @@
     "posture_movement": "Economical and grounded. Stands with weight balanced, minimal unnecessary movement. Walks with purpose and steady rhythm. Hands move with precision during conversation, especially when explaining complex systems. Default facial expression hovers between neutral and faintly knowing.",
     "clothing_style": "Tier 2-3 functional professional: clean-lined merino blend shirts (charcoal, grey, off-white), structured trousers without excess hardware, a well-maintained jacket in dark grey with genuine pockets and reinforced seams. Comfortable low-profile boots suitable for site visits. No logos, no status signaling beyond quality materials and impeccable maintenance. Accessories: the nostril ring and a functional digital watch (understated, probably Tessera-issue)."
   },
-  "image_prompt": "Ama Petelo, 168cm lean-muscled figure, rich warm brown skin with golden undertones, broad facial structure with defined cheekbones, dark brown alert eyes, small silver nostril ring. Shoulder-length blunt-cut hair cycling through navy-teal-forest green to warm amber. Wearing clean charcoal merino blend shirt and dark grey reinforced jacket, structured trousers, low-profile boots. Standing grounded with economical posture, hands poised with precision. Faintly amused expression. Cyberpunk 2226 Great Lakes Metropolitan Zone, moody neon-adjacent lighting, industrial interior setting with interface panels subtle in background, professional but understudied aesthetic, no chrome or status signaling visible. --ar 2:3 --v 6",
+  "image_prompt": "Ama Bangura, 168cm lean-built professional with deep rich brown skin with golden undertones, striking West African facial structure with prominent cheekbones and broad nose enhanced by Indigenous American and East Asian ancestry, creating multifaceted contemporary features. Shoulder-length blunt-cut hair in color-shifting neo-noir mod cycling deep navy-teal-forest green with warm amber undertones, dark brown unaugmented alert eyes, small silver nostril ring left side. Wearing charcoal merino blend shirt and dark grey reinforced jacket, functional watch, understated professional tier 2-3 neo-noir style. Standing economical grounded posture with faintly amused resting expression, hands positioned with precision. Great Lakes Metropolitan Zone 2226 office or site setting, cool neon-tinged ambient lighting catching golden radiance of skin, subtle haptic interface micro-gestures, cinematic neo-noir urban aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 33.6,
-    "Sub-Saharan African": 31.0,
-    "Southeast Asian": 16.4,
-    "Northern European": 6.5,
-    "East Asian": 6.4,
-    "Hispanic/Latin American": 6.1
+    "Sub-Saharan African": 70.4,
+    "Indigenous American": 12,
+    "Northern European": 8.9,
+    "East Asian": 7.4,
+    "South Asian": 1.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 16.8,
+        "Guinean": 9.3
+      },
+      "Southern African": {
+        "South African": 35.3,
+        "Zimbabwean": 9
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 3.8,
+        "Potawatomi": 3.6
+      },
+      "Plains Nations": {
+        "Cherokee": 0.9,
+        "Muscogee": 0.6
+      },
+      "Mesoamerican": {
+        "Zapotec": 3.1
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 6.2,
+        "Danish": 2.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 5.3
+      },
+      "Japanese": {
+        "Japanese": 2.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.6
+      },
+      "Pakistani": {
+        "Pashtun": 0.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.3
+      }
+    }
+  }
 }

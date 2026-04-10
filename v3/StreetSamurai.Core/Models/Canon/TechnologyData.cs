@@ -4,7 +4,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A technology, system, or scientific advancement in the Meridian 88 world.
+/// A technology, system, or scientific advancement in the GLMZ world.
 /// Designed as a graph node — links to manufacturers, dependent technologies, users, and locations.
 /// </summary>
 public class TechnologyData : ICanonEntity

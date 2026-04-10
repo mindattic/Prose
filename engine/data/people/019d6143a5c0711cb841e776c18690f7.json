@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c0711cb841e776c18690f7",
   "type": "character",
-  "name": "Wren Kristjánsson",
+  "name": "Wren Keïta",
   "aliases": [
     "Benny",
     "Null"
@@ -13,7 +13,7 @@
   "age": 15,
   "status": "active",
   "location": "Engelheim (school campus), commutes from Hough Reclamation, near Lincoln and Clark",
-  "description": "Benedek is tall and angular, still growing into himself, with warm brown skin, close-cropped dark hair, and the slightly exhausted look of someone who sleeps four hours a night by choice. His Axiom-issued school uniform is always immaculate — he steams it every morning using a kettle and a board he made from plywood — but his shoes give him away, resoled twice and showing the ghost of a different color at the heel. His geneware is a scholarship-standard retinal overlay, school-issued, which flickers faintly blue when he's processing dense information. He has large hands that he doesn't know what to do with in social situations.\n\nBenedek is one of twelve scholarship students at Engelheim Axiom Preparatory, and he is acutely, exhaustingly aware of the difference between himself and his fee-paying classmates at every moment. He has responded to this by becoming the best student in his cohort by a margin wide enough to be undeniable — and by developing a precise, careful social manner that his classmates read as aloofness and his teachers read as maturity. In truth he is desperately lonely in both directions: too corporate for Hough, too Hough for corporate. He is furiously ambitious and privately terrified that ambition is the only thing holding him together.",
+  "description": "Wren is tall and angular, still growing into himself, with warm brown skin, close-cropped dark hair, and the slightly exhausted look of someone who sleeps four hours a night by choice. His Axiom-issued school uniform is always immaculate — he steams it every morning using a kettle and a board he made from plywood — but his shoes give him away, resoled twice and showing the ghost of a different color at the heel. His geneware is a scholarship-standard retinal overlay, school-issued, which flickers faintly blue when he's processing dense information. He has large hands that he doesn't know what to do with in social situations.\n\nBenedek is one of twelve scholarship students at Engelheim Axiom Preparatory, and he is acutely, exhaustingly aware of the difference between himself and his fee-paying classmates at every moment. He has responded to this by becoming the best student in his cohort by a margin wide enough to be undeniable — and by developing a precise, careful social manner that his classmates read as aloofness and his teachers read as maturity. In truth he is desperately lonely in both directions: too corporate for Hough, too Hough for corporate. He is furiously ambitious and privately terrified that ambition is the only thing holding him together.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -121,7 +121,8 @@
     "stress_responses": {
       "low": "Studies harder, sleeps less",
       "medium": "Goes silent for a day, processes alone",
-      "high": "Makes a unilateral decision without consulting anyone and lives with consequences"
+      "high": "Makes a unilateral decision without consulting anyone and lives with consequences",
+      "critical": ""
     },
     "contradictions": [
       "Preaches patience and strategy to his siblings but is actually quite impulsive when his pride is threatened",
@@ -172,7 +173,7 @@
     "Teacher": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Engelheim (school campus)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,38 +181,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "related_entities": [
-    "Hough Reclamation",
-    "The Reclamation Assembly",
-    "Engelheim",
-    "Witness",
-    "Gravimetric Collapse Charge GCC-9",
-    "The Pure Hand",
-    "Alper Castillo-Ababio",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Ferrogate Transit",
-    "Flicker",
-    "GLMZ",
-    "Kethavar",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Mika Sorel",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Nnamdi Ostrowski-Faletolu",
-    "Praevex",
-    "Ringo Corponation Mnemonic Excision Clip",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA ES-4 'Perimeter'",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "Tomasz Wren",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  "tags": [
+    "sentient"
   ],
-  "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American with significant Southeast Asian and East Asian ancestry—a genetic blend that manifests in warm bronze-brown skin with subtle golden undertones, dark almond-shaped eyes with a slight epicanthic fold, and sharp angular features that reflect the mix of Mesoamerican and Southeast Asian bone structure.",
+    "heritage": "Northern European base (53.4%) with substantial Sub-Saharan African (27.1%), Southeast Asian (8.8%), East Asian (7.2%), and South Asian (3.5%) ancestry—a genetic blend that manifests in warm medium-brown skin with subtle golden undertones, dark brown eyes with a slight epicanthic fold, and angular features reflecting the mix of Northern European and African bone structure with Southeast Asian refinement.",
     "height_cm": 188,
     "weight_kg": 71,
     "build": "Tall and angular, still visibly adolescent — all length with minimal mass, as if he hasn't yet filled out his frame. Shoulders broad but not yet muscled; visible ribs under school uniform when he stretches.",
@@ -219,8 +193,8 @@
     "hair_style": "Close-cropped, precisely maintained — cut every two weeks at a budget clipper shop in Hough, always clean",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint blue LED glow at iris perimeter when retinal overlay activates",
-    "skin_tone": "Warm bronze-brown with golden undertones, sun-darkened across shoulders and forearms from long commutes",
-    "complexion": "Clear, unblemished skin; the face of someone who has no money for skincare mods so practices obsessive hygiene instead. Strong cheekbones and slight epicanthic eye fold reflecting Southeast and East Asian heritage; slightly prominent ears. Eyes carry exhaustion — dark circles present most days despite youth. Expression tends toward careful neutrality until spoken to directly.",
+    "skin_tone": "Warm medium-brown with golden undertones, sun-darkened across shoulders and forearms from long commutes—balanced blend of Northern European and Sub-Saharan African heritage with Southeast Asian refinement",
+    "complexion": "Clear, unblemished skin; the face of someone who has no money for skincare mods so practices obsessive hygiene instead. Defined cheekbones with slight width across upper face reflecting Sub-Saharan African heritage; slight epicanthic eye fold from Southeast and East Asian ancestry; slightly prominent ears. Eyes carry exhaustion — dark circles present most days despite youth. Expression tends toward careful neutrality until spoken to directly.",
     "distinguishing_marks": [
       "Callus on inner left palm from two-year-old burn scar, barely visible now, from helping mother with reclamation work at age thirteen",
       "Faint white scar along right collarbone, 4cm long, from a fall onto rebar during childhood in Hough — never treated properly, never became infected"
@@ -229,14 +203,62 @@
     "posture_movement": "Stands slightly too straight, shoulders tensed as if braced for criticism. Moves with efficient economy — no wasted motion. Hands are his anxiety tell: large hands that he clasps, fidgets with, or keeps rigidly at sides in social situations with peers. Walks quickly. Makes minimal eye contact with fee-paying students, direct eye contact with teachers. Sits at the edge of chairs rather than settling back.",
     "clothing_style": "Axiom Preparatory uniform worn with visible care: navy blazer, pressed daily; white shirt with microscopic starch; dark trousers with re-stitched seams where hems have been professionally adjusted twice. School tie knotted precisely. Outside school: Tier 3 practical wear — gray thermal underlayers, recycled-fabric jacket with reinforced elbows, straight-leg cargo pants with multiple pockets from a discount workwear distributor. Shoes are resoled Axiom-issued dress shoes, dark leather scuffed at the heel where the original finish shows through under the cheap repair sealant. No accessories. No visible jewelry."
   },
-  "image_prompt": "Wren Kristjánsson, 188cm tall lean adolescent boy with warm bronze-brown skin and golden undertones, dark almond eyes with slight epicanthic fold showing faint blue LED retinal overlay glow, short dark hair close-cropped and precise. Angular features, sharp cheekbones, exhausted dark circles under eyes, expression of careful neutrality. Visible thin silver subdermal neural interface line at base of skull. Wearing crisply-pressed Axiom Preparatory navy blazer and white shirt with precisely knotted tie, posture rigidly straight with tensed shoulders. Large expressive hands clasped in front. Cyberpunk 2226 Great Lakes Metropolitan Zone, cool industrial lighting, slightly out of frame depth, moody atmospheric cyberpunk classroom or transit corridor background. Ultrarealistic portrait style, cinematic. --ar 2:3 --v 6",
+  "image_prompt": "Wren Keïta, 188cm tall mixed-heritage neo-noir adolescent standing in Great Lakes Metropolitan Zone 2226, warm medium-brown skin with golden undertones, angular face with defined cheekbones and slight epicanthic eye fold, dark brown eyes glowing faint blue from retinal overlay augmentation, short dark brown close-cropped hair, exhausted dark circles, careful neutral expression, large anxious hands clasped at sides. Visible thin silver subdermal neural interface line at base of skull. Wearing navy Axiom Preparatory blazer, pressed white shirt, dark trousers with reinforced seams, precisely knotted tie. Posture rigid and straight, shoulders tensed. Standing in neon-lit urban corridor of GLMZ Hough district, cool blue and amber neo-noir lighting, cinematic depth of field, photorealistic neo-noir urban aesthetic, moody atmospheric lighting, intricate detail on augmentation lines, 2226 technology visible in background, serious determined mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 74.6,
-    "Southeast Asian": 19.1,
-    "East Asian": 6.3
+    "Northern European": 53.4,
+    "Sub-Saharan African": 27.1,
+    "Southeast Asian": 8.8,
+    "East Asian": 7.2,
+    "South Asian": 3.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "sentient"
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 4.9,
+        "Danish": 6.8
+      },
+      "British Isles": {
+        "Welsh": 10.6
+      },
+      "Germanic": {
+        "Dutch": 27.8,
+        "German": 3.3
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 15.3
+      },
+      "West African": {
+        "Ghanaian": 1.5,
+        "Nigerian": 10.3
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 8.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 7.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 2.1
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.4
+      }
+    }
+  },
+  "related_entities": [
+    "Hough Reclamation",
+    "The Reclamation Assembly",
+    "Engelheim",
+    "Witness",
+    "Gravimetric Collapse Charge GCC-9",
+    "The Pure Hand"
   ]
 }

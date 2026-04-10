@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
-  "description": "Cem Ivanov-Appiah is slight and easy to overlook, which is exactly the point. At 38, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nCem Ivanov-Appiah has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Sage Faalele is slight and easy to overlook, which is exactly the point. At 38, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSage Faalele has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.23,
@@ -263,7 +263,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnside Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,32 +281,16 @@
   ],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "Burnside Pocket",
+    "GLMZ",
+    "Circuit",
     "Slagworks Industrial",
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible VG-7 'Bastion'",
-    "Djeneba Park-Traore",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Pacific Islander with Eastern European and Middle Eastern ancestry—a genetic blend that manifests in warm, golden-bronze skin with subtle olive undertones. The Pacific Islander foundation dominates his features: broad facial structure, defined cheekbones, and rich melanin distribution. Eastern European heritage adds slight angularity to his jawline and a hint of cooler undertone mixing with the warmth. Middle Eastern ancestry contributes to his eye shape and the subtle definition of his brow ridge.",
+    "heritage": "Complex blend of Pacific Islander (45.3%), Indigenous American (23.3%), South Asian (16.1%), and Hispanic/Latin American (15.3%) ancestry. Pacific Islander foundation dominates with broad facial structure, defined cheekbones, and rich melanin distribution. Indigenous American ancestry contributes to strong bone structure and facial proportions. South Asian heritage adds warm undertones and subtle depth, while Hispanic/Latin American ancestry blends seamlessly with the Pacific Islander base, creating a harmonious warm complexion with layered undertones and subtle olive depth.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Lean and economical, with minimal excess muscle — a runner's frame built for efficiency rather than power. Shoulders slightly narrow, defined but not bulky. Every movement calculated.",
@@ -314,8 +298,8 @@
     "hair_style": "Short, swept back, practical. No styling product. Looks like it's cut every three weeks by the same person.",
     "hair_length": "Short",
     "eye_color": "Dark brown with faint amber undertone",
-    "skin_tone": "Warm golden-bronze with subtle olive undertones, reflecting dominant Pacific Islander ancestry blended with Eastern European and Middle Eastern genetics",
-    "complexion": "Clean-shaven, sharp jawline with broad facial structure characteristic of Pacific Islander heritage. Skin shows minimal damage — careful about sun exposure, skincare routine is methodical. A faint stress line between his brows that never fully relaxes. Eyes carry a flat affect, practiced neutrality that reads as either calm or dangerous depending on context.",
+    "skin_tone": "Warm golden-bronze with layered complexity — rich melanin base from Pacific Islander heritage (45.3%) enhanced by South Asian warmth and subtle olive undertones, grounded by Indigenous American depth. Creates a unified warm complexion reflecting the dominant Pacific Islander ancestry balanced with significant Indigenous American (23.3%) and South Asian (16.1%) contribution, with gentle Hispanic/Latin American warmth woven throughout.",
+    "complexion": "Clean-shaven, broad facial structure with defined cheekbones characteristic of Pacific Islander and Indigenous American heritage. Bone structure shows the angular strength of Indigenous ancestry balanced with the broader foundation of Pacific Islander genetics. Skin shows minimal damage — careful about sun exposure, skincare routine is methodical. A faint stress line between his brows that never fully relaxes. Eyes carry a flat affect, practiced neutrality that reads as either calm or dangerous depending on context.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone — old injury, professionally healed but still visible in certain light",
       "Two small burn scars on right inner wrist, arranged in a pattern suggesting deliberate placement — military identification burns, now faded to pale silver",
@@ -325,15 +309,58 @@
     "posture_movement": "Sits and stands with economical stillness — no fidgeting, no wasted motion. Moves through space like he's mapping exits. When walking, his gait is even and measured, shoulders loose but controlled. His hands rest naturally, fingers slightly curved — ready position. Eye contact is deliberate and unsettling; he holds it a beat too long, processing information. When speaking, his voice remains level; he doesn't use hand gestures.",
     "clothing_style": "Tier 4 functional — dark synthetic jacket with reinforced seams, black smart-fabric cargo pants with hidden pockets, neutral gray thermal under-layer. Boots are practical work boots, well-maintained, with subtle grip-enhanced soles. No logos or branding that declares affiliation. Everything is durable, replaceable, and dark. In his cover identity, he wears slightly less careful versions of the same aesthetic — still dark, still functional, but with a layer of deliberate mundanity. No jewelry. A faded GLMZ transit pass visible on a lanyard inside his collar."
   },
-  "image_prompt": "Cyberpunk 2226, Sage Faalele, Pacific Islander-Eastern European-Middle Eastern heritage with warm golden-bronze skin and olive undertones. Dark brown eyes, dark graying hair swept back, lean 172cm frame. Sharp jawline with faint stress line between brows. Thin white scar left temple to cheekbone. Chrome geometric subdermal augmentations across forearms, brushed metallic finish with weapon mount grids visible beneath skin. Faint chrome mesh air filtration system along neck with intake vents. Surgical scar on left neck side. Clean-shaven, practiced neutrality, flat affect, unsettling direct gaze. Dark synthetic jacket with reinforced seams, black smart-fabric cargo pants, gray thermal underlayer, practical work boots. No jewelry, minimalist tactical aesthetic. Standing in GLMZ urban environment, neon-lit corridor or transit station, cool blue and amber lighting catching chrome augmentations. Economical stillness, hands in ready position, map-the-exits posture. Professional, clinical, dangerous calm. --ar 2:3 --v 6",
+  "image_prompt": "Sage Faalele, GLMZ, Pacific Islander-dominant mixed heritage with warm golden-bronze skin and subtle olive undertones, broad defined cheekbones, dark brown eyes with amber flecks, dark graying temples, short swept-back hair. Lean 172cm frame, economical posture. Faint surgical scar on left neck, white scar temple-to-cheekbone, military burn scars on right wrist. Chrome subdermal weapon grid patterns across both forearms, brushed metallic finish. Faint chrome mesh air filtration system visible along neck. Clinical augmentations, no flashy chrome. Wearing dark synthetic reinforced jacket, black smart-fabric cargo pants, gray thermal underlayer, practical work boots. Standing with perfect stillness, economical posture, hands in ready position, flat affect, dangerous neutrality. GLMZ transit pass lanyard visible. Moody industrial neo-noir setting, neon glow from distance, cool shadows, utilitarian warehouse backdrop, deliberate and composed. Photography style, high contrast lighting, clinical precision --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 56.0,
-    "Eastern European": 27.1,
-    "Middle Eastern": 14.1,
-    "Hispanic/Latin American": 2.8
+    "Pacific Islander": 45.3,
+    "Indigenous American": 23.3,
+    "South Asian": 16.1,
+    "Hispanic/Latin American": 15.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 3.1,
+        "Marshallese": 1.6
+      },
+      "Polynesian": {
+        "Samoan": 22.1,
+        "Tongan": 15
+      },
+      "Melanesian": {
+        "Fijian": 2.4,
+        "Ni-Vanuatu": 1.1
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 5,
+        "Ho-Chunk": 9.2
+      },
+      "Plains Nations": {
+        "Muscogee": 2.6
+      },
+      "Mesoamerican": {
+        "Nahua": 4.1,
+        "Mixtec": 2.4
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 16.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Haitian": 4.6,
+        "Cuban": 8.9
+      },
+      "Mexican": {
+        "Mexican": 1.8
+      }
+    }
+  }
 }

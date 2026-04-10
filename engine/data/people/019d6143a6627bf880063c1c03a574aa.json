@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6627bf880063c1c03a574aa",
   "type": "character",
-  "name": "Ember Erikstad",
+  "name": "Ember Salazar",
   "aliases": [
     "Caliber",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Nika Svensson-Kone is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Ember Salazar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.31,
@@ -259,7 +259,7 @@
     "Protector": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,41 +276,17 @@
     "Crucible Industries Fang-9 'Switchblade'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Heritage Vault",
+    "Diaspora Table",
     "Ashfield",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brewer's Spine",
-    "Cem Lund-Bangura",
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Ezio Kaboré-Malhotra",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Ilhan Sandstrom-Badu",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Liora Mori-Sefa",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Oumarou Svec-Ranginui",
-    "Prophet",
-    "Sulfur Crown Agriculture",
-    "TESSERA TC-3 'Crucible'",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Umbraline KeyGuard KG-2 'Fang'",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Eastern European and South Asian ancestry, creating striking feature blending: East Asian bone structure (high, prominent cheekbones, almond eye shape) softened by Eastern European and South Asian warmth. Genetic complexity evident in unexpected color contrasts — dark blonde hair unusual but genetically plausible from the Eastern European component, while facial structure and skin undertones reflect the 37.6% East Asian dominance.",
+    "heritage": "South Asian dominant (46.2%) with substantial Hispanic/Latin American (43.5%) creating a striking cosmopolitan fusion. Southeast Asian (7.5%) and Eastern European (2.8%) ancestry add subtle refinements to the overall phenotype. South Asian bone structure — defined, angular cheekbones and strong jawline — is warmed and softened by Hispanic/Latin heritage which broadens the facial structure slightly and adds generous dimensionality. Southeast Asian influences manifest in subtle eye shape and epicanthal softness. Eastern European traces emerge faintly in hair undertones and skin luminosity variations. The genetic combination produces a face that transcends single-origin classification: high, prominent cheekbones with generous structure from the South and Latin American blend, warm deep bronze skin with golden undertones from South Asian ancestry and reddish warmth from Hispanic/Latin heritage, combined with the characteristic luminosity of mixed South Asian and Latin American genetics.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Athletic and lean with defined musculature — dancer's grace combined with fighter's efficiency. Shoulders broad but not bulky, legs powerful and economical. No wasted mass.",
@@ -318,27 +294,59 @@
     "hair_style": "Pulled back in a tight, functional braid that sits high on the crown — practical for work, reveals the nape where spinal chrome terminates",
     "hair_length": "Medium",
     "eye_color": "Light grey-blue, alert and analytical",
-    "skin_tone": "Warm honey-bronze with subtle golden undertones — the East Asian dominance creates warmer, deeper base tone than her Scandinavian-influenced hair might suggest. Luminous quality across cheekbones, warmer cream tones at the jawline with slight ruddy undertones from South Asian ancestry.",
-    "complexion": "East Asian-influenced facial geometry with prominent, high cheekbones and defined jawline that catches light sharply. Skin weathered by nocturnal living — slight circles under eyes that no amount of sleep erasure can fully eliminate. A thin scar traces her left temple, barely visible unless light catches it directly. Subtle asymmetry in face shape reflecting the genetic diversity — minor epicanthal fold quality softened by Eastern European influences.",
+    "skin_tone": "Deep warm bronze with golden undertones and subtle reddish warmth — South Asian and Hispanic/Latin American ancestry creates a luminous base that catches light distinctly across the cheekbones and temples. Ochre and cream undertones at the jawline with warm reddish depth from the blended heritage. Pronounced luminescent quality concentrated at the cheek apples, temples, and bridge of nose.",
+    "complexion": "Strong South Asian and Hispanic/Latin American bone structure with prominent, high cheekbones and defined, angular jawline that catches light sharply. Broader nasal bridge reflecting South Asian heritage, softened by the warmth and facial fullness of Latin American ancestry with subtle Southeast Asian refinement. Skin weathered by nocturnal living — faint circles under eyes that resist full elimination. A thin white scar traces her left temple, barely visible unless light catches it directly. Slight fullness in the lower cheeks balanced by the angular definition of her jawline.",
     "distinguishing_marks": [
       "Surgical scar running the length of her cervical spine, visible when she wears anything backless — chrome interface ports flush with skin at C3 and C5 vertebrae",
       "Thin white line across left temple, approximately 4cm, angled toward her hairline — old blade work",
-      "Faint burn marks on the inside of her right forearm — three parallel lines, deliberate, old enough to be pale against her skin"
+      "Faint burn marks on the inside of her right forearm — three parallel lines, deliberate, old enough to be pale against her deep bronze skin"
     ],
     "visible_augmentations": "Reflex booster chrome visible along the spine — iridescent titanium-alloy ports at cervical vertebrae catch light when she moves. The metallic sheen is impossible to hide; she doesn't try. Synthetic lung architecture visible in the subtle way her ribcage moves — slightly different biomechanics than natural respiration, noticeable only if you're watching closely.",
     "posture_movement": "Economical and controlled — no wasted motion. Stands with weight balanced toward the balls of her feet, ready for immediate action. Moves like she's always calculating distance and angles. Hands are rarely still; fidgets with equipment, adjusts straps, tests weapon weight. Eye contact direct and held slightly too long — unsettling to most people.",
     "clothing_style": "Tier 3-4 functional gear — well-maintained but worn. Black synthetic bodysuit with reinforced panels at shoulders, ribs, and thighs (impact protection). Armored jacket over top — matte tactical weave with cargo pockets, sleeves cut short to reveal forearm augmentation scars. Combat boots, laced tight. Webbing harness for tools and weapons — organized with military precision. No decoration, no excess. Everything serves a purpose or doesn't exist."
   },
-  "image_prompt": "Ember Erikstad, cyberpunk 2226, mixed East Asian and Eastern European heritage with warm honey-bronze skin and high cheekbones. Dark blonde hair pulled in tight functional braid revealing spinal chrome ports. Light grey-blue alert eyes, lean athletic frame 172cm. Wearing black reinforced tactical bodysuit with short-sleeved armored matte weave jacket exposing augmentation scars on forearms. Combat boots, webbing harness with tools. Surgical scar visible on cervical spine, thin temple scar. Stands with economical ready posture, hands near equipment. Nocturnal intensity, neon-lit GLMZ megacity background with rain-slicked streets and holographic signage. Dramatic side lighting catching iridescent titanium alloy spine ports. Stoic expression, direct unsettling gaze. Cybernetic augmentation visible, breathing biomechanics evident. Professional tactical operative, no excess, everything serves purpose. --ar 2:3 --v 6",
+  "image_prompt": "Ember Salazar, GLMZ, female fighter with deep warm bronze skin and golden undertones, prominent high cheekbones and angular jawline blending South Asian and Latin American heritage, light grey-blue alert eyes, dark blonde hair with silver threading pulled in tight functional braid, 172cm athletic lean build with defined musculature. Iridescent titanium cervical spine ports visible, thin white temple scar, surgical marks on forearms. Black reinforced tactical bodysuit, matte weave armored jacket with cut sleeves, combat boots, tool harness. Standing in ready posture, economical movement, cool focused expression. Neon-lit industrial setting, cool blue and amber lighting catching her cheekbones and chrome augmentations, neo-noir urban environment, professional action pose --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 37.6,
-    "Eastern European": 27.5,
-    "South Asian": 20.9,
-    "Hispanic/Latin American": 11.4,
-    "Middle Eastern": 2.6
+    "South Asian": 46.2,
+    "Hispanic/Latin American": 43.5,
+    "Southeast Asian": 7.5,
+    "Eastern European": 2.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 15.9
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 18.5,
+        "Pashtun": 2.7
+      },
+      "Sri Lankan": {
+        "Sinhalese": 9.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 34.2,
+        "Nicaraguan": 9.3
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 5.8
+      },
+      "Cambodian": {
+        "Khmer": 1.7
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Croatian": 2.8
+      }
+    }
+  }
 }

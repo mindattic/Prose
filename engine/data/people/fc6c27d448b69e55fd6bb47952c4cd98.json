@@ -1,13 +1,13 @@
 {
   "id": "fc6c27d448b69e55fd6bb47952c4cd98",
-  "name": "Farah Vasquez-Alfarsi-Taufa",
+  "name": "Farah Vasquez-Alfarsi-Echeverría",
   "type": "character",
   "aliases": [
     "Dockrat",
     "The Longshoreman"
   ],
   "role": "Private Investigator",
-  "description": "Tiare Volkov-Annan is the Dockside PI — the investigator who handles everything that happens where GLMZ meets Lake Michigan. Cargo theft, smuggling operations, insurance fraud, waterfront murders, union disputes that turn violent, and the constant flow of people and goods that enters the city through its busiest port — all of it passes through Tiare's awareness.\n\nShe never planned to be an investigator. She was a dockworker herself until a cargo theft ring framed her for a shipment disappearance. She cleared her own name by investigating the actual thieves, discovered she was good at it, and realized that the docks needed someone who understood the waterfront from the inside. Formal PIs don't understand dock culture, don't know the rhythms and routines that create investigative opportunities, and don't have the trust of the workers who see everything. Tiare has all three.\n\nHer methods are half investigation and half physical labor. She climbs containers, dives into the lake, crawls through cargo holds, and gets her hands dirty in ways that most PIs wouldn't consider. Her geneware lung enhancement makes her uniquely capable of underwater investigation — she has recovered evidence from the lake bottom that surface-based investigators didn't know existed. She is known on the docks as someone who will help workers with problems that CorpSec ignores, and this reputation is her most valuable investigative asset.",
+  "description": "Farah Vasquez-Alfarsi-Echeverría is the Dockside PI — the investigator who handles everything that happens where GLMZ meets Lake Michigan. Cargo theft, smuggling operations, insurance fraud, waterfront murders, union disputes that turn violent, and the constant flow of people and goods that enters the city through its busiest port — all of it passes through Tiare's awareness.\n\nShe never planned to be an investigator. She was a dockworker herself until a cargo theft ring framed her for a shipment disappearance. She cleared her own name by investigating the actual thieves, discovered she was good at it, and realized that the docks needed someone who understood the waterfront from the inside. Formal PIs don't understand dock culture, don't know the rhythms and routines that create investigative opportunities, and don't have the trust of the workers who see everything. Tiare has all three.\n\nHer methods are half investigation and half physical labor. She climbs containers, dives into the lake, crawls through cargo holds, and gets her hands dirty in ways that most PIs wouldn't consider. Her geneware lung enhancement makes her uniquely capable of underwater investigation — she has recovered evidence from the lake bottom that surface-based investigators didn't know existed. She is known on the docks as someone who will help workers with problems that CorpSec ignores, and this reputation is her most valuable investigative asset.",
   "affiliation": "Independent — deeply embedded in Dockside's shipping community",
   "tier": "Tier 1",
   "location": "A repurposed shipping container on the Dockside waterfront, insulated and wired for power, with a view of Lake Michigan, near Michigan Ave and Roosevelt",
@@ -65,23 +65,15 @@
   "registered_firearms": [],
   "related_entities": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "GLMZ",
+    "The Accidental",
     "Bay View Docks",
+    "Cargo Tacos",
     "The Pure Hand",
-    "Anatoliy Faye-Nkrumah",
-    "Constance",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "The Heritage Vault",
-    "The Underlayer Collective",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Middle Eastern and Pacific Islander with South Asian, Hispanic, and Sub-Saharan African ancestry. The blend creates striking features: warm medium-deep brown skin with golden undertones from Middle Eastern and Pacific Islander heritage, refined by South Asian bone structure and Sub-Saharan African warmth.",
+    "heritage": "Middle Eastern (54%), Sub-Saharan African (28.4%), and Hispanic/Latin American (17.6%) ancestry. The dominant Middle Eastern heritage creates the foundational warm brown tone, while significant Sub-Saharan African ancestry deepens and enriches the complexion with underlying warmth, and Hispanic/Latin American ancestry adds subtle golden-bronze undertones. The result is a rich, multidimensional skin tone with warm amber and reddish-gold notes that shift in different light.",
     "height_cm": 172,
     "weight_kg": 68,
     "build": "Athletic and lean with functional muscle — built for climbing, diving, and sustained physical labor. Shoulders broad from years of cargo handling; core visibly defined but not bodybuilder aesthetics. Movements economical and deliberate.",
@@ -89,8 +81,8 @@
     "hair_style": "Pulled back in a practical braid or knot, often loose strands escaping during work",
     "hair_length": "Medium",
     "eye_color": "Dark brown with faint amber undertones",
-    "skin_tone": "Warm medium-deep brown with golden undertones — Middle Eastern and Pacific Islander foundation enriched by South Asian and Sub-Saharan African heritage, weathered by constant sun and water exposure into a rich, burnished finish",
-    "complexion": "Strong, refined jawline with high, prominent cheekbones from South Asian ancestry blending with the broader facial structure of Pacific Islander heritage. Straight nose with slight width, characteristic of Middle Eastern and Pacific Islander mix. Skin shows sun damage and fine weathering lines around eyes from squinting at water glare. Minimal makeup. Faint pattern of freckles across shoulders and upper back from UV exposure.",
+    "skin_tone": "Rich warm brown with golden-bronze and subtle reddish undertones — the blend of Middle Eastern dominance with Sub-Saharan African depth creates a complex, warm complexion that burnishes in sunlight. Weathered by constant sun and water exposure into a resilient, lived-in finish.",
+    "complexion": "Strong, defined jawline and prominent cheekbones reflecting Sub-Saharan African and Middle Eastern ancestry. Straight nose with slight width characteristic of the Middle Eastern-Sub-Saharan blend. Darker pigmentation around orbital bones and temple area. Skin shows sun damage and fine weathering lines around eyes from squinting at water glare. Minimal makeup. Scattered freckles across shoulders and upper back from UV exposure, slightly darker than baseline skin tone.",
     "distinguishing_marks": [
       "Three parallel scars along left forearm, pale white and roughly 8cm long each — from a cargo hook accident at age 22",
       "Faint anchor tattoo on right inner wrist, small and faded, done by a dock tattooist",
@@ -100,13 +92,39 @@
     "posture_movement": "Alert and grounded. Stands with weight balanced slightly forward, ready to move. Moves with purposeful economy — no wasted motion. Climbs and descends with practiced confidence. In conversation, maintains steady eye contact and often leans in slightly when listening.",
     "clothing_style": "Tier 4 practical. Heavy-duty cargo pants in dark gray or tan with multiple pockets, often salt-stained. Worn steel-toed boots, leather creased and scuffed from dock work. Layered with a fitted athletic underlayer and a windproof jacket in charcoal or navy — brands are functional (Cargotech, Harborfit), not flashy. Often carries a tool belt or cargo vest. No jewelry except a simple steel watch that's water-resistant to 200m depth. Overall impression: someone who owns one or two outfits and wears them until they need replacing."
   },
-  "image_prompt": "Farah Vasquez-Alfarsi-Taufa, a 172cm athletic dock worker in the Great Lakes Metropolitan Zone, 2226. Rich warm medium-deep brown skin with golden undertones, high cheekbones blending Middle Eastern and Pacific Islander heritage with South Asian refinement. Dark brown hair with salt-bleached streaks pulled back in a practical braid, dark amber-flecked eyes with weathered sun lines. Visible white scars on left forearm from cargo accident, old burn scar on right palm, faded anchor tattoo on wrist. Wearing charcoal windproof jacket over fitted athletic underlayer, dark gray cargo pants with salt stains, scuffed steel-toed boots. Simple waterproof wrist comm on left wrist, steel dive watch. Standing alert with weight forward on a rain-slicked Great Lakes dock at dusk, industrial shipping containers and crane lights behind her, cool blue-gray harbor lighting reflecting off dark water, cyberpunk 2200s aesthetic, professional dock environment, grounded and purposeful posture --ar 2:3 --v 6",
+  "image_prompt": "Farah Vasquez-Alfarsi-Echeverría, 172cm athletic woman with rich warm brown skin with golden-bronze undertones, dark brown eyes with amber flecks, dark hair in a practical braid with salt-bleached streaks. Strong defined jawline and prominent cheekbones. Three parallel scars on left forearm, faint anchor tattoo on right inner wrist, burn scar on right palm. Wearing dark gray cargo pants with multiple pockets, worn steel-toed boots, charcoal windproof jacket over fitted athletic layer, simple steel watch. Alert posture, standing at dock overlooking Great Lakes at dusk. GLMZ Great Lakes Metropolitan Zone setting, moody blue-orange neon lighting reflecting off water, practical workwear, weathered and competent presence, gritty industrial harbor atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 48.8,
-    "Pacific Islander": 34.5,
-    "Hispanic/Latin American": 6.3,
-    "South Asian": 5.9,
-    "Sub-Saharan African": 4.5
+    "Middle Eastern": 54,
+    "Sub-Saharan African": 28.4,
+    "Hispanic/Latin American": 17.6
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 54
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 10.4,
+        "Zimbabwean": 7.9
+      },
+      "East African": {
+        "Tanzanian": 9.2,
+        "Kenyan": 0.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.9
+      },
+      "Central American": {
+        "Guatemalan": 11.7
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A repurposed shipping container on the Dockside waterfront"
+  }
 }

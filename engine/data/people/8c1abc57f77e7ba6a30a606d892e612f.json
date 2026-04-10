@@ -1,7 +1,7 @@
 {
   "id": "8c1abc57f77e7ba6a30a606d892e612f",
   "type": "character",
-  "name": "Drift Dalgaard",
+  "name": "Drift Valenzuela",
   "aliases": [
     "The Keeper",
     "The Whisperer",
@@ -14,7 +14,7 @@
   "age": 71,
   "status": "active",
   "location": "The Circuit, near Damen and North. No fixed address — moves between safe houses with the Atlas.",
-  "description": "Emile Nakamura-Osei is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise — an engineer's hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up — when a building he'd surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn't spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile's vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a Shelf rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
+  "description": "Drift Valenzuela is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise — an engineer's hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up — when a building he'd surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn't spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile's vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a Shelf rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -191,31 +191,18 @@
   "registered_firearms": [],
   "related_entities": [
     "The Cartographers",
-    "The Atlas of Irregularities",
-    "The Seam",
-    "The Bread Baker of Block 9",
-    "Mnemic Clay",
-    "GLMZ",
-    "Adwoa Sulejmani-Pereira",
-    "Breck Tannen",
-    "Chronicle",
-    "Dzemal Acholonu-Patagiri",
-    "Dzintars Ababio-Suleimenov",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus NI-1 'Earwig'",
-    "Nnamdi Ostrowski-Faletolu",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "The Circuit",
+    "Leather",
+    "Circuit",
+    "VitaCore FlowGuard Hemodynamic Regulator",
+    "Drift",
     "The Pure Hand",
-    "The Shelf",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Atlas",
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: Sub-Saharan African (33.4%), Southeast Asian (30.0%), Eastern European (24.3%), and Hispanic/Latin American (12.3%) ancestry creating a uniquely mixed phenotype. Features reflect this multifaceted genetic tapestry rather than singular regional identity.",
+    "heritage": "Ubiquitous Diaspora blend: Sub-Saharan African (45.0%) forms the dominant genetic foundation, with significant Hispanic/Latin American (26.2%), South Asian (14.1%), East Asian (12.0%), and minor Eastern European (2.7%) ancestry. Features reflect this complex genetic mosaic—deep warm brown skin with olive and bronze undertones creating dimensional richness. Facial structure shows the architectural influence of East and South Asian ancestry in defined cheekbones and nose bridge, softened by Sub-Saharan fullness and Hispanic warmth. A distinctly mixed appearance unmarked by singular regional identity.",
     "height_cm": 173,
     "weight_kg": 62,
     "build": "Lean, almost ascetic—decades of walking measurement routes have worn him down to essential geometry. No excess. Posture still straight from engineer's discipline, but the straightness now reads as fragility rather than formality.",
@@ -223,8 +210,8 @@
     "hair_style": "Close-cropped, self-cut with visible uneven edges. No vanity in it. Functional.",
     "hair_length": "Short",
     "eye_color": "Deep brown, slightly yellowed at the sclera from age and screen-minimal living",
-    "skin_tone": "Medium to deep brown with warm undertones—a harmonious blend of Sub-Saharan, Southeast Asian, and Eastern European ancestry. Weathered to the texture of old leather from decades of outdoor surveying, sun exposure etched into every line with a subtle olive undertone beneath.",
-    "complexion": "Face carved by time and precision, reflecting mixed heritage proportions. High, defined cheekbones with gentle angularity from Southeast Asian ancestry softened by Sub-Saharan fullness. Deep nasolabial lines frame a wide mouth. Broad nose bridge with slightly flared nostrils. Hands show liver spots and permanent calluses on the index and middle fingers from pencil grip—the hands of someone who has drawn 10,000 lines by hand. No jewelry. No grooming beyond necessity.",
+    "skin_tone": "Deep warm brown with subtle olive-bronze undertones—a harmonious blend reflecting Sub-Saharan, South Asian, Hispanic, and East Asian ancestry. Weathered to the texture of old leather from decades of outdoor surveying, sun exposure etched into every line.",
+    "complexion": "Face carved by time and precision. High, defined cheekbones with angular structure from East and South Asian ancestry, softened by Sub-Saharan fullness and Hispanic warmth. Deep nasolabial lines frame a wide mouth. Broad nose bridge with slightly flared nostrils reflecting the blended African and South Asian heritage. Hands show liver spots and permanent calluses on the index and middle fingers from pencil grip—the hands of someone who has drawn 10,000 lines by hand. No jewelry. No grooming beyond necessity.",
     "distinguishing_marks": [
       "Thin white scar across the back of his left hand, circa 2.5cm, from a measuring instrument accident in his 40s.",
       "A darker age spot on his right temple, roughly the size of a coin, shaped like an irregular polygon—he has sketched it in margins of the Atlas multiple times.",
@@ -234,15 +221,66 @@
     "posture_movement": "Moves with measured precision—each step intentional, no wasted motion. Head slightly forward, as if perpetually reading invisible gauges in the air. Hands often move in small, unconscious gestures: measuring, drawing invisible lines. When stationary, becomes almost perfectly still. Speaks only in whispers; exhales carry more weight than his words.",
     "clothing_style": "Three rotating dark coats (charcoal, near-black, dark brown), all oversized and deliberately worn—Tier 4 functionality, deliberately unstylish to avoid notice. Interior pockets modified extensively for instruments: pencils (mechanical and wooden), measuring tape, calipers, compass, leather-bound notebook, brass rulers. Undershirt always plain, worn close to the skin. Dark trousers, multiple pockets. Worn leather boots, resoled multiple times. A leather map case, hand-tanned and hand-stitched, worn across the chest like a bandolier. No visible corporate branding. No Φ-tech. Everything utilitarian, nothing decorative."
   },
-  "image_prompt": "Drift Dalgaard, 173cm lean unaugmented man in cyberpunk 2226 GLMZ, mixed heritage phenotype with medium-deep warm brown skin weathered by decades of fieldwork, white close-cropped hair, deep brown eyes slightly yellowed with age. High defined cheekbones, deep nasolabial lines, broad nose. Wearing oversized charcoal coat over plain undershirt, dark practical trousers, worn leather boots. Hand-tanned leather map case worn across chest as bandolier. Visible permanent calluses on hands, thin scar on left hand, age spot on right temple. Posture measured and precise, head slightly forward in perpetual observation. Standing in dim neon-lit urban measurement corridor, holding brass measuring instruments, whisper-quiet presence. No cybernetics visible. Utterly utilitarian, anachronistic, deliberately unmarked by 2226 corporate branding. Soft noir lighting, atmospheric urban decay, introspective mood. --ar 2:3 --v 6",
+  "image_prompt": "Drift Valenzuela, 173cm lean frame, deep warm brown skin with olive undertones reflecting Sub-Saharan African, South Asian, East Asian, and Hispanic heritage. High defined cheekbones, broad nose bridge, angular facial structure. Close-cropped white hair, deep brown eyes yellowed with age. Weathered face carved by decades of precision work. Hands bearing permanent pencil calluses and a thin scar. Wearing oversized dark charcoal coat over plain undershirt, dark trousers, worn leather boots. Leather map case worn bandolier-style across chest. Hand-tanned leather and brass instruments visible in coat pockets. Measuring tape and compass near belt. Posture: measured, intentional, head slightly forward as if reading invisible gauges. GLMZ, Great Lakes Metropolitan Zone, completely unaugmented, no visible chrome or cybernetics. Standing in dim industrial setting, shadow and neon backdrop, cinematic lighting emphasizing the geometric precision of his bearing and the weathered authenticity of his appearance. Minimalist, utilitarian aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 33.4,
-    "Southeast Asian": 30.0,
-    "Eastern European": 24.3,
-    "Hispanic/Latin American": 12.3
+    "Sub-Saharan African": 45,
+    "Hispanic/Latin American": 26.2,
+    "South Asian": 14.1,
+    "East Asian": 12,
+    "Eastern European": 2.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 45
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 7.2,
+        "Dominican": 4.6
+      },
+      "Central American": {
+        "Guatemalan": 11.7,
+        "Honduran": 2.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 9.3
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2
+      },
+      "Indian": {
+        "Bengali": 2.1,
+        "Malayali": 0.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 2.7
+      },
+      "Korean": {
+        "Korean": 9.3
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Belarusian": 1.1
+      },
+      "Slavic South": {
+        "Serbian": 1,
+        "Bulgarian": 0.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 0.2,
+        "Romanian": 0.1
+      }
+    }
+  }
 }

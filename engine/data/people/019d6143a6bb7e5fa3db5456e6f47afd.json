@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6bb7e5fa3db5456e6f47afd",
   "type": "character",
-  "name": "Chenoa Pathak-Tlaloc",
+  "name": "Mariposa Pathak-Hernández",
   "aliases": [
     "Rue",
     "the Pharmacist at the End of the World"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown, Grindstone Shore, near Milwaukee and Damen",
-  "description": "Ruthanne runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people's thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors — she can touch a pill and tell you if it's cut — and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn't work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a cyberpunk megacity: what people are actually taking, why they're taking it, what it's doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn't legal or isn't available. She is also the first person in Geartown to notice disease trends — she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
+  "description": "Mariposa Pathak-Hernández runs a licensed pharmacy out of a narrow shopfront wedged between a hydraulics supplier and a noodle counter in the worst-smelling block of Geartown, and she has made it into something that people travel across two districts to use. She is short and broad-shouldered, with warm russet-brown skin, a mouth that moves faster than most people's thoughts, and a shock of white hair she grows long and wears in complicated braids studded with small metallic charms that clink softly when she moves. Her geneware is both functional and ostentatious: her fingertips have been modified to contain chemical assay sensors — she can touch a pill and tell you if it's cut — and her tongue has a sensory modification she uses for compound tasting that has made her one of the most accurate pharmacists in the district. She wears a lab coat covered in pockets over whatever she put on that morning, which is usually something with a print that shouldn't work but does.\n\nShe is an expert in the specific pharmaceutical ecology of a megacity: what people are actually taking, why they're taking it, what it's doing to them in combination with their augmentations, what the street versions are cut with, and how to get the effect someone needs through a combination of legal compounds when the thing they actually want isn't legal or isn't available. She is also the first person in Geartown to notice disease trends — she sees the prescriptions, she sees what people are buying over the counter, she talks to people, and she has a mind that aggregates data the way other people collect worries. She files reports with the community health co-op rather than Aurochs because Aurochs would turn the data into a pricing algorithm.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -191,7 +191,7 @@
     "Grifter": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -207,39 +207,13 @@
   "related_entities": [
     "Grindstone Shore",
     "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Geartown",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Babel",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Cinderblock Ai",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Helix Biosystems",
-    "Hepatic Glycogen Depletion Projector",
-    "Iowan Behemoth — 'Palisade'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Patient Zero",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "ShieldTech CLA-3 'Cascade'",
-    "Slagworks Industrial",
-    "Street-Custom Gutter Katana 'Flatline'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Collective",
-    "The Counter",
-    "The Gutter Prophets",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-dao Bioelectric"
+    "Street Custom 'Four Horsemen' Pipe Pepperbox"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Indigenous American (Mesoamerican and North American), with significant South Asian and Southeast Asian ancestry, blended with Hispanic/Latin American, Central Asian, and minor Northern European heritage. The combination produces warm, medium-to-deep brown skin with subtle golden and reddish undertones characteristic of Mesoamerican-South Asian blending.",
+    "heritage": "Complex Ubiquitous Diaspora blend: 39.9% Hispanic/Latin American, 34.4% South Asian, 14.0% Sub-Saharan African, and 11.7% Eastern European ancestry. This combination produces warm, medium-to-deep brown skin with golden, reddish, and subtle olive undertones—a rich melanin profile that reflects the convergence of Latin American warmth, South Asian depth, Sub-Saharan African richness, and cool Eastern European undertones creating a uniquely balanced complexion.",
     "height_cm": 157,
     "weight_kg": 68,
     "build": "Broad-shouldered and compact, with dense musculature through the chest and upper back from years of reaching, gripping, and working at pharmacy counters. Not athletic — functional and grounded, built for endurance rather than speed.",
@@ -247,8 +221,8 @@
     "hair_style": "Worn in intricate, tight box braids that reach mid-back, studded throughout with small brass, copper, and anodized aluminum charms that clink audibly with movement",
     "hair_length": "Long",
     "eye_color": "Deep brown, with a faint iridescent sheen from the optical corrective overlay (contact-lens type)",
-    "skin_tone": "Warm golden-brown with deeper undertones, even complexion with a slight weathered quality from long hours under pharmacy lighting. The tone reflects the blended melanin profile of Indigenous American and South Asian ancestry.",
-    "complexion": "Open, expressive face with a wide mouth that moves constantly — talking, tasting, thinking out loud. Facial structure shows the subtle bone structure characteristic of Mesoamerican and South Asian heritage blending. Skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
+    "skin_tone": "Warm golden-brown with deeper undertones and balanced olive notes, even complexion with a slight weathered quality from long hours under pharmacy lighting. The tone reflects the rich melanin profile of South Asian depth, Sub-Saharan African warmth, Latin American golden tones, and cool undertones from Eastern European ancestry blended into a cohesive whole.",
+    "complexion": "Open, expressive face with a wide mouth that moves constantly — talking, tasting, thinking out loud. Facial structure shows balanced bone architecture from blended heritage: broad, warm-toned cheekbones reflecting South Asian and Sub-Saharan African ancestry, a fuller face shape characteristic of Latin American heritage, and subtle angular definition from Eastern European features in the nose bridge and brow line. Skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
     "distinguishing_marks": [
       "Fine white scar tissue on the inner surface of both wrists from early experimentation with the gustatory modification; faded and barely visible unless closely examined.",
       "Chemical burns (pale, almost invisible now) scattered across her knuckles and the backs of both hands from years of handling reactive compounds; marks of competence rather than accidents.",
@@ -258,17 +232,52 @@
     "posture_movement": "Constantly in motion — fidgeting with charms in her hair, tapping fingers on counters, shifting weight from foot to foot. When focused (tasting a compound, reading data), she goes still and intent, almost meditative. Her hands are always doing something: gesturing when she talks, which she does rapidly and without much pause for breath. She moves through her pharmacy with economical precision, knows every bottle by location and muscle memory.",
     "clothing_style": "A well-worn lab coat, oversized and cream-colored originally but now stained and softened by countless washings, covered in deep pockets stuffed with vials, test strips, a worn tablet, and loose change. Over whatever she grabbed that morning — usually vintage print shirts (1990s-2010s earth tones, geometric patterns, or intentionally clashing color combinations that she makes work), loose-fitting and practical. Comfortable slip-on shoes, perpetually scuffed. A small silver chain around her neck, occasionally threaded with a compound sample vial when she's testing something. Tier 4 working-class aesthetic — functional, worn, deeply comfortable. No jewelry besides the braided charms and the chain."
   },
-  "image_prompt": "Chenoa Pathak-Tlaloc, a 157cm woman with warm golden-brown skin blending Indigenous American and South Asian heritage. Stark white hair in tight box braids reaching mid-back, decorated with brass and copper charms that clink softly. Deep brown eyes with subtle optical overlay shimmer. Broad-shouldered, compact muscular build. Wearing a well-worn cream lab coat over a vintage earth-tone geometric print shirt, pockets bulging with vials and equipment. Fingertips show subtle iridescence from embedded chemical sensors. Small silver chain around neck. Constantly fidgeting, expressive face mid-gesture while talking rapidly. Pharmacy setting with warm amber lighting reflecting off glass bottles in background, cyberpunk 2226, working-class aesthetic, weathered but precise, motion blur suggesting her constant movement, --ar 2:3 --v 6",
+  "image_prompt": "Mariposa Pathak-Hernández, 157cm compact frame with broad shoulders, warm golden-brown skin with olive undertones reflecting South Asian, Sub-Saharan African, Hispanic, and Eastern European heritage blend. Stark white box braids to mid-back studded with brass and copper charms, deep brown eyes with optical overlay shimmer. Open expressive face with broad cheekbones, slight chemical stains on jawline. Wearing oversized cream lab coat stained and softened by years of use, vintage earth-tone print shirt underneath, slip-on scuffed shoes. Silver chain around neck. Chemical assay sensor iridescence visible on fingertips. Constantly fidgeting, hands gesturing mid-speech. GLMZ Great Lakes Metropolitan pharmacy setting, warm pharmacy lighting, depth of field focus on her animated face, gritty working-class Tier 4 aesthetic, functional and worn beauty, late afternoon light, cinematic mood, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 27.3,
-    "South Asian": 26.2,
-    "Southeast Asian": 20.6,
-    "Hispanic/Latin American": 12.1,
-    "Central Asian": 8.3,
-    "Northern European": 5.5
+    "Hispanic/Latin American": 39.9,
+    "South Asian": 34.4,
+    "Sub-Saharan African": 14,
+    "Eastern European": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 25.1,
+        "Costa Rican": 14.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 22.2
+      },
+      "Nepali": {
+        "Nepali": 2.8
+      },
+      "Pakistani": {
+        "Sindhi": 9.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 14
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 2.7,
+        "Belarusian": 0.2
+      },
+      "Slavic West": {
+        "Slovak": 2.7,
+        "Polish": 3.5
+      },
+      "Slavic South": {
+        "Bulgarian": 2.6
+      }
+    }
+  }
 }

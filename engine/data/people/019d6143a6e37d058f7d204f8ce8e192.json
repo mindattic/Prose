@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e37d058f7d204f8ce8e192",
   "type": "character",
-  "name": "Milena Lindström-Čabarkapa",
+  "name": "Ingrid Lindström-Čabarkapa",
   "aliases": [
     "Sook",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Kenosha Crossing transit junction and the Escanaba Gateway — living out of a modified Ferrogate Transit maintenance vehicle, near past the Kedzie Barrier",
-  "description": "Sükrü is medium height and deliberately nondescript — they have spent ten years cultivating the specific quality of being someone you don't remember. Warm-toned brown skin, face kept cleanly unremarkable, hair color-shifted to a different neutral shade every few weeks using a cheap color-change geneware mod that makes them neither memorable as light nor as dark. Their eyes are sharp and mobile in a face that is otherwise arranged into a state of mild, forgettable pleasantness. The one thing they cannot entirely hide is the quality of their hands — long-fingered and precise, the hands of someone who handles delicate cargo.\n\nSükrü thinks in maps. They have memorized every maintenance corridor, inspection schedule shift, and checkpoint rotation in the Kenosha Crossing and Escanaba junction systems, updated continuously through a network of Ferrogate Transit workers they pay in small consistent increments that never trigger audit flags. They are not ideological about what they move — they will move people fleeing domestic violence and they will move black-market immunosuppressants for organ recipients who can't afford the Helix Biosystems licensing fee, and they apply the same precise operational thinking to both. They have a private hierarchy of jobs they prefer and jobs they will decline, and they will not explain the hierarchy to clients.",
+  "description": "Ingrid Lindström-Čabarkapa is medium height and deliberately nondescript — they have spent ten years cultivating the specific quality of being someone you don't remember. Warm-toned brown skin, face kept cleanly unremarkable, hair color-shifted to a different neutral shade every few weeks using a cheap color-change geneware mod that makes them neither memorable as light nor as dark. Their eyes are sharp and mobile in a face that is otherwise arranged into a state of mild, forgettable pleasantness. The one thing they cannot entirely hide is the quality of their hands — long-fingered and precise, the hands of someone who handles delicate cargo.\n\nIngrid Lindström-Čabarkapa thinks in maps. They have memorized every maintenance corridor, inspection schedule shift, and checkpoint rotation in the Kenosha Crossing and Escanaba junction systems, updated continuously through a network of Ferrogate Transit workers they pay in small consistent increments that never trigger audit flags. They are not ideological about what they move — they will move people fleeing domestic violence and they will move black-market immunosuppressants for organ recipients who can't afford the Helix Biosystems licensing fee, and they apply the same precise operational thinking to both. They have a private hierarchy of jobs they prefer and jobs they will decline, and they will not explain the hierarchy to clients.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -176,7 +176,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing transit junction and the Escanaba Gateway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,30 +247,19 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Kenosha Crossing",
     "Ferrogate Transit",
+    "Kenosha Crossing",
     "Helix Biosystems",
     "Escanaba Gateway",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "GLMZ",
     "Chimera-Null",
     "The Pure Hand",
-    "Breck Tannen",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Kairos",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "LifeWire DermaCast Programmable Skin Display",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Sustrel",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "Tooth Fairy",
-    "Yuki Nwosu-Petrenko"
+    "Cargo Tacos"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Eastern European, Hispanic/Latin American, East Asian, Sub-Saharan African, Pacific Islander, and Northern European—a true Ubiquitous Diaspora blend. The genetic mix creates warm medium-brown skin with subtle golden and olive undertones, featuring the angular bone structure typical of Eastern European ancestry combined with the broader facial proportions of East Asian heritage, enriched by the warm undertones of both Hispanic and Sub-Saharan African ancestry, with traces of Pacific Islander genetics visible in overall build resilience.",
+    "heritage": "Northern European (42.8%), Eastern European (24.4%), Sub-Saharan African (18.9%), and Hispanic/Latin American (13.9%)—a true Ubiquitous Diaspora blend. The genetic mix creates warm medium-brown skin with subtle golden and olive undertones, featuring the angular bone structure and high cheekbones typical of Northern and Eastern European ancestry combined with the broader facial proportions and warmer complexion of Sub-Saharan African heritage, enriched by the warm undertones and softer facial geometry of Hispanic/Latin American ancestry.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and economical, with the wiry muscularity of someone who moves constantly through tight spaces. No wasted mass. Shoulders slightly forward from years of hunched work in maintenance crawlways.",
@@ -278,27 +267,63 @@
     "hair_style": "Kept short and unfussy, parted vaguely to one side. No styling gel or product — functional only",
     "hair_length": "Short",
     "eye_color": "Dark brown, unremarkable; mobile and alert beneath a resting expression of mild blandness",
-    "skin_tone": "Warm medium brown with golden and olive undertones—the blended complexion of mixed Eastern European, Hispanic, East Asian, Sub-Saharan African, and Pacific Islander ancestry",
-    "complexion": "Clean-shaven face kept deliberately smooth and forgettable. High cheekbones reflecting East Asian and Eastern European ancestry. Skin condition is unremarkable — neither rough nor refined. A face engineered by habit to slip from memory the moment you stop looking at it.",
+    "skin_tone": "Warm medium brown with golden and olive undertones—the blended complexion of mixed Northern European, Eastern European, Sub-Saharan African, and Hispanic/Latin American ancestry",
+    "complexion": "Clean-shaven face kept deliberately smooth and forgettable. High cheekbones reflecting Northern and Eastern European ancestry softened by the fuller facial proportions and warmer undertones of Sub-Saharan and Hispanic ancestry. Skin condition is unremarkable — neither rough nor refined. A face engineered by habit to slip from memory the moment you stop looking at it.",
     "distinguishing_marks": [
       "Faint scarring on the inside of both wrists from old geneware installation sites (geneware color-change mod and spatial memory enhancement), now barely visible",
       "Calluses and minor burns on the fingertips and palms — occupational marks from handling delicate cargo and tool work"
     ],
-    "visible_augmentations": "None. The color-change hair geneware is subcutaneous and only visible as the gradual shift in hair tone every few weeks. The eidetic spatial memory enhancement is entirely internal. To a stranger, Milena appears entirely baseline human.",
+    "visible_augmentations": "None. The color-change hair geneware is subcutaneous and only visible as the gradual shift in hair tone every few weeks. The eidetic spatial memory enhancement is entirely internal. To a stranger, Ingrid appears entirely baseline human.",
     "posture_movement": "Economical and precise. They move through spaces as if already knowing the exact dimensions — no wasted motion, no uncertainty in hand placement. When still, they settle into a posture of mild disengagement, shoulders slightly rounded inward. When handling cargo, their hands become almost hypnotic in their precision and care.",
     "clothing_style": "Tier 4 working-class practical: unmarked gray or tan cargo pants with reinforced pockets; fitted compression shirts in black or muted colors that don't stain visibly; a worn charcoal maintenance jacket with reflective stripping (helps them move through transit zones without triggering questions). No logos or affiliation markers. Shoes are functional and quiet — soft-soled work boots, well-maintained but not new. A cheap digital chronometer on their left wrist. Everything is chosen to blend into the background of industrial Kenosha Crossing."
   },
-  "image_prompt": "Milena Lindström-Čabarkapa, 168cm lean frame with wiry muscularity, warm medium-brown skin with golden-olive undertones blending Eastern European, East Asian, Hispanic, Sub-Saharan African, and Pacific Islander ancestry. Angular cheekbones, dark alert eyes, sharp-featured forgettable face. Short warm beige-brown hair (geneware-shifted). Wearing unmarked gray cargo pants, black fitted compression shirt, worn charcoal maintenance jacket with reflective stripping, quiet work boots. Hands showing calluses and minor burns from cargo work. Posture economical and precise, shoulders slightly forward. Cyberpunk 2226 Great Lakes Metropolitan Zone industrial setting, moving through maintenance crawlways or transit zones, shadows and neon glow, hypervigilant expression masked by mild blandness, precise hand positioning on delicate cargo. Cinematic lighting, gritty futuristic aesthetic, nobody-notices protagonist energy. --ar 2:3 --v 6",
+  "image_prompt": "Ingrid Lindström-Čabarkapa, mixed-heritage figure with warm medium-brown skin, high cheekbones, and alert dark eyes. Short warm beige-brown hair, clean-shaven. Lean 168cm frame with economical posture, shoulders slightly forward. Wearing unmarked gray cargo pants, fitted black compression shirt, worn charcoal maintenance jacket with reflective stripping, quiet work boots. Hands showing occupational calluses, faint wrist scars barely visible. Standing in industrial transit zone or maintenance crawlway, GLMZ Great Lakes Metropolitan Zone. Mood: mild disengagement, deliberately forgettable presence. Cool industrial lighting, neon-tinted shadows, worn metal infrastructure visible. Sharp focus on hands and face. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 23.3,
-    "Hispanic/Latin American": 19.6,
-    "East Asian": 18.4,
-    "Sub-Saharan African": 17.5,
-    "Pacific Islander": 12.1,
-    "Northern European": 9.1
+    "Northern European": 42.8,
+    "Eastern European": 24.4,
+    "Sub-Saharan African": 18.9,
+    "Hispanic/Latin American": 13.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Finnish": 15.6
+      },
+      "Germanic": {
+        "German": 10.4,
+        "Dutch": 16.8
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 20.9,
+        "Czech": 3.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 0.6
+      },
+      "Central African": {
+        "Congolese": 9,
+        "Gabonese": 0.2
+      },
+      "Southern African": {
+        "Zimbabwean": 6.4,
+        "Botswanan": 2.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 9.7
+      },
+      "Caribbean": {
+        "Puerto Rican": 4.2
+      }
+    }
+  }
 }

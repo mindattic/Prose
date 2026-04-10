@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7307f989974283f94470e47",
   "type": "character",
-  "name": "Ash Rentería",
+  "name": "Zofia Park",
   "aliases": [
     "The Girl",
     "Yuli"
@@ -13,7 +13,7 @@
   "age": 12,
   "status": "active",
   "location": "The Shelf — Tier Four, near Western and Division",
-  "description": "Yuliya is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Shelf's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Shelf — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
+  "description": "Zofia Park is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Shelf's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Shelf — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -212,7 +212,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -222,25 +222,15 @@
   "changelog": [],
   "related_entities": [
     "The Shelf",
+    "Arcturus KS-7 'Nursery'",
     "TESSERA PA-5 'Attendant'",
     "The Pure Hand",
     "Lazarus IDP-1 'Teeth'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Altan Tanaka-Frimpong",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "GLMZ",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kyle Ellen Corbin-Vasik",
-    "Lazarus LX-2 'Lab Rat'",
-    "Patient Zero",
-    "SynapTech ReadRoom Pro Social Cue Implant",
-    "The Heritage Vault"
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian-dominant mixed ancestry (42.4%) with significant Hispanic/Latin American heritage (32.4%), complemented by Northern European (14.3%) and Sub-Saharan African (10.9%) genetic contributions. The combination produces warm-toned skin with subtle depth, facial structure reflecting Southeast Asian and Hispanic ancestry, and eye pigmentation influenced by the full genetic spectrum.",
+    "heritage": "Eastern European-dominant mixed ancestry (47.7%) with significant East Asian heritage (39.5%), complemented by Middle Eastern genetic contributions (12.8%). The combination creates a distinctive facial structure: higher, more prominent cheekbones characteristic of East Asian ancestry, paired with a stronger jawline and nose bridge from Eastern European genetics, softened by Middle Eastern influences. Skin tone reflects this tri-continental blend — medium with warm olive-golden undertones, slightly deeper across cheekbones and nose. Eye shape shows East Asian influence with warm brown pigmentation carrying amber undertones from the broader ancestry mix.",
     "height_cm": 152,
     "weight_kg": 41,
     "build": "Compact and square-shouldered despite her age — dense musculature in shoulders and forearms suggesting either genetics or early manual labor. No baby fat. Wiry rather than soft. Appears five years older than her chronological age due to posture and bearing.",
@@ -248,8 +238,8 @@
     "hair_style": "Pulled back in a practical braid, often loose strands escaping. No styling — functional only.",
     "hair_length": "Medium (mid-back when unbraided)",
     "eye_color": "Dark brown with warm amber undertones, observational, rarely blinking",
-    "skin_tone": "Warm medium tone with golden and olive undertones, reflecting the Southeast Asian and Hispanic majority ancestry. Subtle warmth across cheekbones and nose; even complexion with resilience to sun exposure.",
-    "complexion": "Angular face with defined cheekbones and sharp jaw shaped by Southeast Asian and Latin American ancestry. Eyes set with characteristic almond shape and warmth. Skin shows the wear of Tier Four living — occasional marks from street scrapes, one healing cut on her left temple (source unknown). Perpetually exhausted-looking eyes. Rarely smiles.",
+    "skin_tone": "Medium tone with warm olive-golden undertones. The blend of Eastern European and East Asian ancestry creates an even complexion with subtle golden warmth across the bridge of the nose and upper cheekbones, resilient to sun exposure. Middle Eastern ancestry adds depth to undertones.",
+    "complexion": "Angular face with high, defined cheekbones (East Asian-influenced) and a strong jawline (Eastern European-influenced), softened slightly by Middle Eastern genetic contribution. Eyes set with characteristic warm depth. Skin shows the wear of Tier Four living — occasional marks from street scrapes, one healing cut on her left temple (source unknown). Perpetually exhausted-looking eyes. Rarely smiles.",
     "distinguishing_marks": [
       "Thin white scar along her left jawline, approximately 2cm, from an unremarked childhood incident",
       "Dark bruise on her right inner wrist (recent — defensive mark or restraint burn, pattern unclear)",
@@ -259,15 +249,44 @@
     "posture_movement": "Moves with deliberate control, economical. No fidgeting. Sits spine-straight, even when exhausted. Walks with her shoulders slightly forward, head level, eyes tracking. Reminiscent of a hunter or a soldier in miniature. When angry, her jaw locks and her hands clench.",
     "clothing_style": "Tier Four utilitarian — worn black synth-cotton leggings, oversized gray hoodie (probably belonged to Demyan; she has grown into it partially), scuffed black runner-shoes held together with synthlace. A canvas messenger bag (khaki, faded) slung across her chest containing her notebook and writing supplies. No jewelry, no adornments, no status markers. Clothing is clean but worn, patched once at the left knee."
   },
-  "image_prompt": "Ash Rentería, 152cm tall, compact wiry frame, warm medium skin tone with golden undertones, dark brown eyes with amber warmth and almond shape, angular face with defined cheekbones. Dark nearly-black hair in loose braid, medium length. Wearing oversized gray hoodie and worn black synth-cotton leggings, scuffed black runner-shoes, faded khaki canvas messenger bag across chest. Small white scar on left jawline, dark bruise on right inner wrist, exhausted expression. Sitting spine-straight with intense observational gaze, hands calloused and clenched. Cyberpunk 2226, Tier Four urban setting, neon-lit alley background, cool blue and orange lighting, photorealistic, moody and intense atmosphere, no augmentations visible, analog child in digital world --ar 2:3 --v 6",
+  "image_prompt": "Zofia Park, 152cm tall, compact wiry frame with dense shoulder musculature. Eastern European-East Asian-Middle Eastern blend: high defined cheekbones with warm olive-golden medium skin tone, strong jawline, dark brown eyes with amber warmth, angular features. Dark brown nearly-black hair pulled back in practical braid with loose strands. Exhausted observational expression, rarely smiling, jaw often tense. Tier Four GLMZ setting, gritty Great Lakes Metropolitan Zone. Wearing oversized gray hoodie, worn black synth-cotton leggings, scuffed black runner-shoes, khaki canvas messenger bag across chest. Thin white scar on left jawline visible. Bruised right inner wrist. Calloused hands. Analog, no visible augmentations. Deliberate controlled posture, shoulders slightly forward, head level. Dim industrial lighting, urban decay background, moody serious atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 42.4,
-    "Hispanic/Latin American": 32.4,
-    "Northern European": 14.3,
-    "Sub-Saharan African": 10.9
+    "Eastern European": 47.7,
+    "East Asian": 39.5,
+    "Middle Eastern": 12.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Slovenian": 47.7
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 29.9
+      },
+      "Japanese": {
+        "Japanese": 1.3
+      },
+      "Chinese": {
+        "Fujianese": 8.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 6.2
+      },
+      "Kurdish": {
+        "Kurdish": 2.6
+      },
+      "Persian": {
+        "Iranian": 1.4,
+        "Tajik Persian": 2.6
+      }
+    }
+  }
 }

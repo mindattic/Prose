@@ -1,7 +1,7 @@
 {
   "id": "019d6143a68f7e0e9853291992c4cb0c",
   "type": "character",
-  "name": "Indigo Árnason-Bergqvist",
+  "name": "Indigo Matsumoto-Bergqvist",
   "aliases": [
     "Old Ovu",
     "the Shelf Priest"
@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Waukegan Industrial Shelf, moving between factory outflow points and informal markets, near Michigan Ave South and Cermak",
-  "description": "Ovuero is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nOvuero has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial Shelf — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Ovuero curates them, responds when he feels a response come through him, and trades in the small goods that the shelf workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
+  "description": "Indigo Matsumoto-Bergqvist is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nIndigo Matsumoto-Bergqvist has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial Shelf — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Indigo Matsumoto-Bergqvist curates them, responds when he feels a response come through him, and trades in the small goods that the shelf workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -160,7 +160,7 @@
     "Crowd Reader": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Waukegan Industrial Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,29 +176,16 @@
   "related_entities": [
     "The Waukegan Industrial Shelf",
     "The Shelf",
+    "The Accidental",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
-    "Silver",
-    "Altan Tanaka-Frimpong",
-    "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Ferrogate Transit",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "PulsePoint AerExpand Pulmonary Efficiency Implant",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tenderloin",
-    "The Circuit",
-    "The Pure Hand",
-    "The Registry",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Circuit",
+    "Indigo",
+    "Silver"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (66.8%) with Central Asian (20.9%) and East Asian (12.3%) ancestry, creating warm golden-brown undertones beneath deep mahogany weathering",
+    "heritage": "Dominant Southeast Asian (35%) and Pacific Islander (34.8%) ancestry blended with East Asian (16.7%) and Hispanic/Latin American (13.5%), creating a complex warm undertone palette—golden and amber from the Oceanic genetics, subtle warmth from Southeast Asian continental influence, with gentle warmth-richness layered by the Hispanic/Latin American component. The result is a deep, luminous warm brown with multidirectional light-catching properties.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, broad-shouldered, descended into soft middle age — substantial mass shifted from muscle to distributed weight, the physique of a man who was once strong and is now substantial. Still moves with deliberate leverage rather than speed.",
@@ -206,8 +193,8 @@
     "hair_style": "Worn long, gathered loosely at the nape with frayed cord, somewhat matted from constant outdoor exposure",
     "hair_length": "Long",
     "eye_color": "Dark brown, slightly clouded with age cataracts",
-    "skin_tone": "Deep warm brown with golden undertones from Southeast Asian ancestry, weathered to rich mahogany by decades of outdoor work in the industrial shelf. Undertone reflects the warmth characteristic of Southeast Asian skin genetics rather than reddish tones.",
-    "complexion": "Heavily lined face reflecting Southeast Asian bone structure — broad cheekbones, defined jaw, the geometry softened by age and substantial living. Lines particularly deep around the eyes and mouth, the marks of someone who squints in harsh light and speaks quietly. Beard is full, silver, and somewhat unkempt but intentionally so. Skin is dry but well-maintained, bearing the texture of someone who uses minimal water but careful oils. Deep creases on the forehead and between the brows.",
+    "skin_tone": "Deep warm brown with golden, amber, and subtle honey undertones from the dominant Pacific Islander-Southeast Asian blend (69.8%), enriched by East Asian warmth and Hispanic/Latin American depth. Weathered to rich mahogany by decades of outdoor work, with characteristic luminosity of blended Oceanic and Southeast Asian skin genetics that catches light with warm radiance. The skin holds warmth in shadow and glows in direct light.",
+    "complexion": "Heavily lined face reflecting blended Southeast Asian and Pacific Islander bone structure—broad, prominent cheekbones characteristic of Oceanic heritage combined with the subtle facial width and defined bone architecture of Southeast Asian ancestry, softened by age and substantial living. Lines particularly deep around the eyes and mouth, marks of someone who squints in harsh light and speaks quietly. Full silver beard, somewhat unkempt but intentionally so, with the texture variation that reflects ethnic beard growth patterns. Skin is dry but well-maintained, bearing the texture of someone who uses minimal water but careful oils. Deep creases on the forehead and between the brows show character and contemplation. Subtle warmth and depth in facial coloring reflects the rich mixed heritage baseline, with warmer cheek and temple tones from the Pacific Islander-Southeast Asian dominance.",
     "distinguishing_marks": [
       "Fine white scar running from the left temple to the left jawline, barely visible beneath the beard",
       "Extensive burn scarring on the inner right forearm in a curved pattern consistent with steam exposure",
@@ -218,14 +205,46 @@
     "posture_movement": "Moves with deliberate, economical steps — the gait of someone who has walked thousands of miles on industrial ground. Favors his right side slightly when carrying weight. Often stands with weight shifted to one leg, a patient stance suggesting he is accustomed to waiting and listening. Gestures are slow and precise, particularly with his right hand; the prosthetic left hand he uses for heavy work or support, rarely for fine manipulation.",
     "clothing_style": "Three overlapping coats of different industrial origins — one canvas work coat from a defunct factory (circa 2190s markings visible), one heavy wool toggle coat with mismatched buttons, one quilted insulation liner — all stitched together with visible repair work into a single layered garment that reaches to mid-calf. Beneath, simple gray work shirt and heavy denim pants patched at both knees. Feet in worn industrial boots with taped seams. The overall effect is Tier 4-5: functional, heavily repaired, deliberately maintained rather than replaced. No logos or corporate markers. Carries a canvas satchel with internal pockets for trading goods."
   },
-  "image_prompt": "Cyberpunk 2226, weathered Southeast Asian-descended man, 188cm tall, substantial build, long silver-gray hair loosely gathered at nape, deep warm mahogany skin with golden undertones, broad cheekbones, heavily lined face, full silver beard. Dark brown eyes with age cataracts. Left hand is colorful mechanical prosthetic (red, blue, yellow, green, orange lacquered fingers on steel articulation). Right forearm bears curved steam burn scars. Wearing layered industrial coats (canvas, wool, quilted insulation) stitched together, reaching mid-calf, heavy patched denim, worn industrial boots with taped seams. Canvas trading satchel. Standing in patient, weight-shifted posture. Indoor warehouse or market setting, cool industrial lighting, grime-textured surfaces, utilitarian cyberpunk aesthetics, cinematic depth of field, Kodachrome film stock aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Indigo Matsumoto-Bergqvist, 188cm tall weathered man with deep warm mahogany skin reflecting Pacific Islander and Southeast Asian heritage, broad prominent cheekbones, heavily lined face with dark brown cataracts, long silver-gray hair gathered at nape with frayed cord. Full silver beard, somewhat matted. Fine scar from left temple to jawline barely visible beneath beard. Large-framed substantial build, soft middle age. Colorful industrial prosthetic left hand with lacquered fingers (red, blue, yellow, green, orange) in visible steel articulation. Right hand callused and scarred from decades of manual work. Extensive curved burn scar on inner right forearm. Wears triple-layered industrial coat assembly reaching mid-calf—canvas factory coat, wool toggle coat, quilted liner, all heavily repaired together. Gray work shirt, patched denim beneath. Worn industrial boots with taped seams. Canvas satchel with visible pocket wear. Standing in patient, weighted-on-one-leg stance. GLMZ Great Lakes Metropolitan Zone, harsh industrial lighting casting warm glow on skin, worn warehouse or trader-district setting, atmospheric haze, documentary realism, weathered authenticity --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 66.8,
-    "Central Asian": 20.9,
-    "East Asian": 12.3
+    "Southeast Asian": 35,
+    "Pacific Islander": 34.8,
+    "East Asian": 16.7,
+    "Hispanic/Latin American": 13.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 30.7,
+        "Javanese": 4.3
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Tongan": 12
+      },
+      "Micronesian": {
+        "Marshallese": 20.3,
+        "Palauan": 2.5
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 16.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 1.5,
+        "Cuban": 1.9
+      },
+      "Central American": {
+        "Salvadoran": 10.1
+      }
+    }
+  }
 }

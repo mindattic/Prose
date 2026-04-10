@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin, sublevel print shop behind a legitimate copy-and-bind front, near sub-level access near State and Van Buren",
-  "description": "Dzintars is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nDzintars is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
+  "description": "Drift Tehrani is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nDrift Tehrani is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Gravesend Basin",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -261,39 +261,15 @@
     "Umbraline PhoneShell PS-X 'Last Call'",
     "Bathysphere Networks",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Drift",
     "The Pure Hand",
+    "Flux Strömqvist-Villalobos",
     "The Coffin Nails",
-    "The Pale Mile",
-    "Arcturus KS-7 'Nursery'",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Constance",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Crucible LL-4 'Peacekeeper'",
-    "Dragan Petersen-Bah",
-    "Dunning Preserve",
-    "Dzemal Acholonu-Patagiri",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "MERIDIAN",
-    "Meridian Munitions Peacekeeper-45 'Old Faithful'",
-    "Narrowcast",
-    "Nnenna Baluarte-Volkov",
-    "PulsePoint HydraLine Fluid Balance Monitor",
-    "Slagworks Industrial",
-    "TESSERA PA-5 'Attendant'",
-    "The Peninsula",
-    "Uncle Noodle",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
-    "Zheng-dao Bioelectric"
+    "The Pale Mile"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Complex global ancestry: 29% Northern European (Baltic), 22% Middle Eastern, 18% East Asian, 16% Sub-Saharan African, 8% Indigenous American, 7% Hispanic/Latin American. This creates a richly blended phenotype—warm undertones layered over a cool base, with facial structure showing synthesis of multiple continental features.",
+    "heritage": "Dominant Middle Eastern (45.2%) and East Asian (34.5%) ancestry with significant Sub-Saharan African heritage (17.1%) and trace Hispanic/Latin American ancestry (3.2%). This creates a striking phenotype: high cheekbones characteristic of East Asian and Central Asian features blended with refined Middle Eastern nose structure, warm golden-bronze undertones enriched by Sub-Saharan African heritage, and subtle warmth from Latin American ancestry. The synthesis produces luminous, sophisticated skin with depth and complexity that catches light beautifully.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular, shoulders slightly rounded from decades of bent-over precision work. Wiry muscle in forearms and hands; narrow through the chest and waist. Posture suggests economy of movement.",
@@ -301,10 +277,10 @@
     "hair_style": "Close-cropped, neat and utilitarian",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural; left eye hosts a visible metallic monocle implant with faint LED indicators",
-    "skin_tone": "Warm golden-amber base with olive undertones across the face, deepening to bronze and tan on hands and forearms from decades of chemical exposure to inks, solvents, and substrate compounds. The blended ancestry creates a luminous quality—neither pale nor deeply dark, but a sophisticated warmth that catches light.",
-    "complexion": "Weathered but methodically maintained. Deep-set eyes from magnification-intensive work. Fine lines around the eyes and mouth suggesting both age and intense focus. Facial structure shows synthesis of multiple ancestries: high cheekbones with subtle width, refined nose, well-defined jaw. Neat, well-groomed salt-and-pepper mustache in the style of early 20th-century portraiture. Hands show permanent ink staining in fine lines around nail beds despite meticulous cleaning habits. Overall appearance is professorial, fastidious, and bearing the lived history of precision craftsmanship.",
+    "skin_tone": "Golden-bronze base with warm amber undertones across the face, deepening to rich bronze on hands and forearms from decades of chemical exposure to inks, solvents, and substrate compounds. The blended Middle Eastern, East Asian, Sub-Saharan African, and trace Latin American ancestry creates a luminous quality with sophisticated depth—warm, complex, and richly dimensional.",
+    "complexion": "Weathered but methodically maintained. Deep-set eyes from magnification-intensive work. Fine lines around the eyes and mouth suggesting both age and intense focus. Facial structure shows synthesis of multiple ancestries: high, prominent cheekbones with subtle width characteristic of East Asian and Central Asian heritage, refined nose reflecting Middle Eastern ancestry, well-defined jaw with subtle warmth from Sub-Saharan heritage. Neat, well-groomed salt-and-pepper mustache in the style of early 20th-century portraiture. Hands show permanent ink staining in fine lines around nail beds despite meticulous cleaning habits. Overall appearance is professorial, fastidious, and bearing the lived history of precision craftsmanship.",
     "distinguishing_marks": [
-      "Chemical burns and discoloration across both hands and forearms—pale scars from solvent exposure forming an irregular map across his skin, appearing almost like cartography against his warm complexion",
+      "Chemical burns and discoloration across both hands and forearms—pale scars from solvent exposure forming an irregular map across his warm bronze complexion, appearing almost like cartography",
       "Fine ink tattoos along his right inner forearm spelling Latvian text in microscopic lettering (readable only under magnification)",
       "Small circular scar on left temple where the optical monocle implant was installed, now covered by the metallic fixture itself"
     ],
@@ -312,17 +288,55 @@
     "posture_movement": "Deliberately slow and measured, economical in gesture. Sits with perfect posture. Hands rest flat and still until needed, then move with surgical precision. Makes intense eye contact when listening, as if cataloging details. Walks with even, unhurried stride. Overall demeanor suggests absolute confidence in his own expertise and complete disinterest in rushing.",
     "clothing_style": "Tier 3-4 working professional. White or pale gray cotton dress shirts with sleeves rolled to the forearm, worn under unstructured wool vests in charcoal or navy—allows visibility of his hands and the forearm interface. Black or charcoal trousers, well-maintained, creased sharply. Soft leather apron in dark brown worn during work hours. Reading glasses on a chain around his neck (separate from his implant monocle). No visible corporate branding; all clothing is utilitarian and built for durability. Wears a simple stainless-steel analog watch—affectation of someone who does not trust digital time-keeping. Leather messenger bag in dark cognac, worn and creased from years of carrying substrate samples and specification documents."
   },
-  "image_prompt": "Drift Tehrani, 178cm lean-built man with warm golden-amber complexion bearing olive undertones, salt-and-pepper close-cropped hair and meticulous mustache. Rich multicultural ancestry visible in high cheekbones and refined features. Left eye augmented with polished titanium monocle implant glowing faint blue-green. Forearms and hands scarred from decades of chemical exposure, displaying permanent ink staining and microscopic Latvian tattoo. Right forearm shows discrete subdermal interface panel beneath skin. Wearing white cotton dress shirt sleeves rolled to expose augmentations, charcoal wool vest, well-creased black trousers, soft brown leather work apron. Dark cognac leather messenger bag worn across chest. Reading glasses on chain. Analog wristwatch. Seated with perfect posture in precise, measured pose. Professional craftsmanship aesthetic. Cyberpunk 2226 Great Lakes Metropolitan Zone. Warm studio lighting emphasizing scars and augmentations. Intense, focused demeanor. --ar 2:3 --v 6",
+  "image_prompt": "Drift Tehrani, 178cm lean angular build, salt-and-pepper close-cropped hair, neat mustache. Golden-bronze luminous skin with warm amber undertones blending Middle Eastern, East Asian, and Sub-Saharan African heritage. High prominent cheekbones, refined nose, deep-set focused eyes. Left eye features polished titanium optical monocle implant with blue-green LEDs. Right forearm shows discrete subdermal interface panel under skin. Hands weathered with pale solvent scars like cartography across bronze complexion, permanent ink staining around nail beds. Wearing pale gray cotton dress shirt with rolled sleeves, charcoal wool vest, dark trousers, leather apron, reading glasses on chain. Messenger bag in dark cognac. Sitting with perfect posture, hands resting flat. GLMZ, professional precision craftsman aesthetic, warm overhead workshop lighting catching the depth of his skin tone and the geometric shadows of his augmentations, photorealistic, moody professional atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 29.2,
-    "Middle Eastern": 22.2,
-    "East Asian": 18.2,
-    "Sub-Saharan African": 15.8,
-    "Indigenous American": 7.9,
-    "Hispanic/Latin American": 6.7
+    "Middle Eastern": 45.2,
+    "East Asian": 34.5,
+    "Sub-Saharan African": 17.1,
+    "Hispanic/Latin American": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 45.2
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 24.8
+      },
+      "Chinese": {
+        "Cantonese": 7.4,
+        "Sichuanese": 2.3
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 3.7,
+        "Nigerian": 2
+      },
+      "Central African": {
+        "Cameroonian": 3.9,
+        "Congolese": 3.9
+      },
+      "Southern African": {
+        "Zimbabwean": 1.2,
+        "Zambian": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 2.7,
+        "Nicaraguan": 0.2
+      },
+      "South American": {
+        "Colombian": 0.1,
+        "Venezuelan": 0.2
+      }
+    }
+  }
 }

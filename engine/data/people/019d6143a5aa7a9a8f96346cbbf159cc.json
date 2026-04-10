@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5aa7a9a8f96346cbbf159cc",
   "type": "character",
-  "name": "Vesper Mohammadi",
+  "name": "Vesper Cardenas",
   "aliases": [
     "Pulse",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
-  "description": "Altan Magnusson-Camara is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Magnusson-Camara describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Vesper Cardenas is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Vesper Cardenas describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.43,
@@ -261,7 +261,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,46 +275,28 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "Stratum",
+    "Chicago",
     "Burden of Longitude",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Ezio Kaboré-Malhotra",
-    "Ilhan Sandstrom-Badu",
-    "Independent Micro-Grid Power Cooperative",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Spire Light on Still Water",
-    "TESSERA PA-5 'Attendant'",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed diaspora ancestry: predominantly Middle Eastern (42.1%) with significant Eastern European (19.5%) and Northern European (16.2%) heritage, plus East Asian (11.9%) and Sub-Saharan African (10.3%) contributions. This creates a complex phenotype — warm undertones from Middle Eastern and African heritage, cooled by Northern European genetics, with subtle East Asian bone structure influence.",
+    "heritage": "Complex global diaspora: Hispanic/Latin American (32.1%), Middle Eastern (23.9%), Sub-Saharan African (22.3%), East Asian (13.6%), Central Asian (5.8%), South Asian (2.3%). This creates a richly layered phenotype — deep golden-brown base with warm amber undertones from the Latin and African heritage, grounded by Middle Eastern depth and intensity, refined by East Asian bone structure, and enriched by Central Asian warmth. The result is a cohesive, sophisticated blend where no single ancestry dominates visually.",
     "height_cm": 188,
     "weight_kg": 102,
     "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density — not fat but compressed power. Chest and shoulders dominate his frame; legs solid beneath.",
     "hair_color": "Steel gray with residual black at the temples",
     "hair_style": "Cropped short, practical, no styling — maintained for function not appearance",
     "hair_length": "Short",
-    "eye_color": "Light gray with faint thermal variance visible in low light",
-    "skin_tone": "Warm medium brown with olive undertones — the complex blending of Middle Eastern, African, and Eastern European ancestry creating a rich, nuanced tone that shifts slightly across his face. Lighter undertones visible at the temples and along the jawline.",
-    "complexion": "Weathered and lined — 59 years of sustained tension mapped across his jaw and forehead. Bone structure shows subtle East Asian influence in the cheekbones and eye set, harmonizing with the broader Middle Eastern and Northern European features. Minimal grooming beyond function; scars visible at the left temple and along the right cheekbone. No facial hair.",
+    "eye_color": "Deep brown with thermal variance visible in low light — the natural color enriched by ancestry, the thermal aspect from augmentation",
+    "skin_tone": "Deep rich golden-brown with warm amber undertones — the complex blending of Latin American, Middle Eastern, African, East Asian, and Central Asian ancestry creating a dimensioned tone. Warmer on cheekbones and temples, slightly deeper along the jawline, with subtle olive notes from Middle Eastern heritage.",
+    "complexion": "Weathered and lined — 59 years of sustained tension mapped across his jaw and forehead. Bone structure shows East Asian influence in the cheekbones and eye set, harmonizing with the broader Latin American, Middle Eastern, and African features to create balanced, strong facial geometry. Minimal grooming beyond function; scars visible at the left temple and along the right cheekbone. No facial hair.",
     "distinguishing_marks": [
       "Surgical scar along the left temple, approximately 4cm, precise and old — augmentation entry point",
       "Ragged white scar across the right cheekbone, 6cm, from blunt force trauma — healed with visible dimpling",
@@ -325,16 +307,68 @@
     "posture_movement": "Moves with controlled economy — no wasted motion. Stands with weight centered, shoulders back, ready to shift. Eyes are constant, scanning patterns even in conversation. Breathing is deliberately regulated. Hands rest flat or closed, never exposed or splayed. His presence compresses space around him; people unconsciously give him room.",
     "clothing_style": "Tier 3-4 utilitarian — dark tactical pants with multiple pockets, fitted black compression shirt under a worn charcoal field jacket. No logos or affiliation markers. Boots are reinforced synthetic leather, well-maintained, designed for sustained movement. A thin steel chain bracelet on his left wrist — no ornamentation beyond that. Clothing is chosen for durability and function; colors are muted to avoid attention."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait: Vesper Mohammadi, 188cm tall, imposing build. Warm medium brown skin with olive undertones reflecting Middle Eastern and mixed diaspora heritage, subtle East Asian bone structure. Steel gray cropped hair, light gray augmented eyes with faint thermal glow. Weathered 59-year-old face mapped with tension lines, surgical scar at left temple, ragged white scar across right cheekbone. Visible chrome-silver synthetic blood system tracery along wrists and neck, polished augmentation lines. Wearing black compression shirt under worn charcoal field jacket, dark tactical pants, reinforced boots. Steel chain bracelet on left wrist. Controlled, economical posture, scanning gaze. Dark muted color palette, function-focused tactical aesthetic. Neon-lit environment, cool blue and amber lighting casting shadows across scarred features and chrome augmentations. Gritty Great Lakes Metropolitan Zone setting, industrial backdrop. Professional, dangerous presence. --ar 2:3 --v 6",
+  "image_prompt": "Vesper Cardenas, 188cm tall heavily muscled man, deep rich golden-brown skin with warm amber undertones blending Latin American, Middle Eastern, African, East Asian, and Central Asian heritage, weathered face with strong East Asian-influenced cheekbones, 59 years old, steel gray hair cropped short with black at temples, deep brown eyes with thermal augmentation glow in shadow, facial scars at left temple and right cheekbone, no facial hair. Visible chrome-silver synthetic blood system tracery at wrists and neck where nanite circulatory system integrates, polished augmentation lines deliberately exposed. Wearing dark tactical pants, fitted black compression shirt, worn charcoal field jacket, reinforced synthetic leather boots. Steel chain bracelet on left wrist. Standing with controlled posture, weight centered, shoulders back, ready to shift, scanning presence compressing space. GLMZ Great Lakes Metropolitan Zone, moody lowlight setting, neon-edged shadows, industrial environment, air of sustained tension and controlled power. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 42.1,
-    "Eastern European": 19.5,
-    "Northern European": 16.2,
-    "East Asian": 11.9,
-    "Sub-Saharan African": 10.3
+    "Hispanic/Latin American": 32.1,
+    "Middle Eastern": 23.9,
+    "Sub-Saharan African": 22.3,
+    "East Asian": 13.6,
+    "Central Asian": 5.8,
+    "South Asian": 2.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 32.1
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 23.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Senegalese": 12.6,
+        "Guinean": 5.8
+      },
+      "Central African": {
+        "Congolese": 1.1
+      },
+      "East African": {
+        "Kenyan": 2.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 4.6,
+        "Mandarin Northern": 1.2
+      },
+      "Korean": {
+        "Korean": 7.8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 2.1
+      },
+      "Iranian Central": {
+        "Hazara": 2.2,
+        "Tajik": 0.1
+      },
+      "Turkic": {
+        "Kyrgyz": 0.7,
+        "Uyghur": 0.7
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 2.3
+      }
+    }
+  }
 }

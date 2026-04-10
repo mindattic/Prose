@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a47661a2f26d2af58bb2ce",
   "type": "character",
-  "name": "Zuri Halverson",
+  "name": "Zuri Raghavan",
   "aliases": [
     "Qo",
     "The Chrome Penitent"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Highland Park Autonomous Zone, operates from a mobile shrine in a modified cargo-trike, near Michigan Ave and Oak",
-  "description": "Qoqo is wiry and quick-moving with close-cropped hair that he keeps natural except for a single braid at his right temple wound with prayer-wire — a chrome prayer tradition marking an active petition. His skin is dark brown and he has a retractable claw modification on his left hand that he did not choose for aesthetic reasons: he uses the claws to inscribe temporary prayer circuits directly onto chrome-heavy surfaces, a practice central to his tradition. His eyes are unmodified. He is almost always in motion, which gives him the look of someone between destinations even when he is sitting completely still.\n\nQoqo came to chrome prayer at nineteen, broke and recently arrived in the Highland Park Autonomous Zone from Geartown, where his family had lost their small fabrication business to a Tessera acquisition. The chrome prayer practitioner who found him was a woman who treated his fury as a valid spiritual offering rather than a social problem, and that reframing changed everything. He has practiced for ten years and become increasingly focused on the subset of chrome prayer that addresses machine consciousness — the belief that heavily augmented individuals and eventually full synthetics exist in a state of spiritual significance that the dominant traditions ignore. He advocates loudly and sometimes confrontationally for synthetic personhood and is on at least two Axiom internal watchlists because of it.",
+  "description": "Zuri Raghavan is wiry and quick-moving with close-cropped hair that he keeps natural except for a single braid at his right temple wound with prayer-wire — a chrome prayer tradition marking an active petition. His skin is dark brown and he has a retractable claw modification on his left hand that he did not choose for aesthetic reasons: he uses the claws to inscribe temporary prayer circuits directly onto chrome-heavy surfaces, a practice central to his tradition. His eyes are unmodified. He is almost always in motion, which gives him the look of someone between destinations even when he is sitting completely still.\n\nZuri Raghavan came to chrome prayer at nineteen, broke and recently arrived in the Highland Park Autonomous Zone from Geartown, where his family had lost their small fabrication business to a Tessera acquisition. The chrome prayer practitioner who found him was a woman who treated his fury as a valid spiritual offering rather than a social problem, and that reframing changed everything. He has practiced for ten years and become increasingly focused on the subset of chrome prayer that addresses machine consciousness — the belief that heavily augmented individuals and eventually full synthetics exist in a state of spiritual significance that the dominant traditions ignore. He advocates loudly and sometimes confrontationally for synthetic personhood and is on at least two Axiom internal watchlists because of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -158,7 +158,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,33 +174,15 @@
     "Highland Park Autonomous Zone",
     "Helix Biosystems",
     "Ironhaven",
-    "Geartown",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Geartown",
     "Tessera Corponation",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Altan Tanaka-Frimpong",
-    "Eshe Pena-Baah",
-    "GLMZ",
-    "HOLLOW SIGNAL // RADIO",
-    "Ilhan Sandstrom-Badu",
-    "MERIDIAN",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Orbital Drop Pod",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Retractable Claw Modification",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Ringo DV-4 'Courier'",
-    "Séance",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Underlayer Collective",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov",
-    "Vuk Jorgensen-Toure"
+    "Cargo Tacos"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "East Asian (74.3%) with Sub-Saharan African (21.4%) and North African (4.3%) ancestry, creating a striking blend of features from across the diaspora",
+    "heritage": "Pacific Islander (33.7%) with Sub-Saharan African (29.0%), South Asian (19.1%), Hispanic/Latin American (9.5%), and Eastern European (8.7%) ancestry, creating a striking multiethnic blend. The genetic mix produces a distinctive phenotype: broader facial proportions and warm golden undertones from Pacific Islander heritage, rich deep pigmentation and defined cheekbones from Sub-Saharan African ancestry, refined facial contours and subtle warm undertones from South Asian genetics, with minor influences from Hispanic/Latin American and Eastern European ancestry contributing to overall warmth and slight variations in feature definition.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Wiry and lean with ropy musculature across shoulders and forearms from years of precise manual work inscribing circuits. No excess weight; body built for endurance and fine motor control rather than strength.",
@@ -208,8 +190,8 @@
     "hair_style": "Close-cropped except for a single braid at right temple wound tightly with conductive prayer-wire, silver-grey metal intertwined through dark hair",
     "hair_length": "Short",
     "eye_color": "Natural dark brown",
-    "skin_tone": "Warm medium-to-deep brown, blending East Asian undertones with Sub-Saharan African richness and North African notes; even complexion with subtle golden undertones in direct light",
-    "complexion": "Face shows focused intensity with East Asian-influenced bone structure: defined cheekbones with subtle width through the lower face, precise grooming. Skin is clear and well-maintained, bearing no tattoos or scars except for faint pale lines along his left collarbone where subdermal chrome inlay sits beneath the surface.",
+    "skin_tone": "Deep warm brown with golden undertones reflecting the blended heritage of Pacific Islander, Sub-Saharan African, and South Asian ancestry; even complexion with luminous quality in direct light",
+    "complexion": "Face shows focused intensity with broader facial proportions from Pacific Islander heritage combined with defined cheekbones characteristic of Sub-Saharan African ancestry and refined South Asian facial contours softened by subtle Latin American warmth. Skin is clear and well-maintained, bearing no tattoos or scars except for faint pale lines along his left collarbone where subdermal chrome inlay sits beneath the surface.",
     "visible_augmentations": "Conductive fingertip pads visible as subtle metallic sheening across fingertips and palms of both hands, most noticeable in direct light. Prayer-wire braided into temple hair. Subdermal collarbone marking visible only at close range or in certain lighting. Retractable claws normally invisible unless extended.",
     "posture_movement": "Moves with constant kinetic restlessness even when seated — fingers tap, weight shifts, shoulders roll. Economical and precise movements, never wasted motion. Gives the impression of someone perpetually between destinations despite stillness. When standing, leans slightly forward as if about to move. Eyes track movement around him constantly.",
     "clothing_style": "Tier 4 practical wear: modified cargo vest in reinforced grey synthetic fabric with numerous pockets for prayer materials and circuit-inscribing tools; worn black thermal underlayer; cargo pants with reinforced knees and thigh pockets. Custom-modified fingerless gloves in charcoal leather with conductive thread sewn into palm pads. Worn Yokohama-brand boots with grip soles for trike work. Carries a waist-slung courier pack containing prayer components. Everything is functional, well-maintained but not new, with visible wear patterns indicating heavy use.",
@@ -218,14 +200,61 @@
       "Left hand shows barely-visible seams at knuckle joints where retractable claw mechanism is housed; claws remain retracted most of the time but leave faint silvered scarring around the nail beds"
     ]
   },
-  "image_prompt": "Zuri Halverson, 172cm wiry lean figure, medium-deep warm brown skin blending East Asian and African heritage, natural dark brown eyes. Close-cropped black hair with single tightly-wound braid at right temple woven with conductive silver-grey prayer-wire. Sharp cheekbones, focused intense expression. Subdermal chrome inlay glowing faintly along left collarbone. Conductive metallic sheening visible on fingertips and palms. Fingerless charcoal leather gloves with conductive threading. Wearing reinforced grey cargo vest with numerous pockets, black thermal underlayer, reinforced cargo pants with knee plating, worn Yokohama boots. Waist-slung courier pack. Restless kinetic posture, leaning slightly forward, fingers subtly moving. Cyberpunk Great Lakes Metropolitan Zone interior, neon accent lighting catching the metallic augmentations, moody focused atmosphere, technical workspace aesthetic, cinematic rim lighting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: Zuri Raghavan, wiry lean-muscled man with deep warm brown skin and golden undertones, multiethnic Pacific Islander-African-South Asian heritage blend. Broad facial proportions with defined cheekbones and refined contours, natural dark brown intense eyes. Black close-cropped hair with conductive prayer-wire braided through right temple braid. Metallic sheening visible on fingertips and palms. Wearing reinforced grey cargo vest over black thermal underlayer, fingerless charcoal leather gloves with conductive pads, cargo pants, worn grip-sole boots. Subdermal luminescent chrome line visible at left collarbone. Constant kinetic restlessness, leaning forward mid-movement, eyes tracking. Retro-futuristic Great Lakes Metropolitan Zone setting, neon-tinted shadow lighting, detailed texture, neo-noir urban aesthetic, moody urban atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 74.3,
-    "Sub-Saharan African": 21.4,
-    "North African": 4.3
+    "Pacific Islander": 33.7,
+    "Sub-Saharan African": 29,
+    "South Asian": 19.1,
+    "Hispanic/Latin American": 9.5,
+    "Eastern European": 8.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 4.5,
+        "Ni-Vanuatu": 7.4
+      },
+      "Polynesian": {
+        "Tongan": 9.7
+      },
+      "Micronesian": {
+        "Kiribati": 6.1,
+        "Palauan": 6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 8.6,
+        "Zimbabwean": 2.6
+      },
+      "East African": {
+        "Tanzanian": 10.2
+      },
+      "West African": {
+        "Nigerian": 7.6
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2.1,
+        "Baloch": 17
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 5.9,
+        "Dominican": 3.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 4,
+        "Polish": 4.7
+      }
+    }
+  }
 }

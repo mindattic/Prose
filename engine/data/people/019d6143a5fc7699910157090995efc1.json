@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5fc7699910157090995efc1",
   "type": "character",
-  "name": "Santiago Asomaning-Volkov",
+  "name": "Luca Asomaning-Ito",
   "aliases": [
     "Recoil",
     "The Asset"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Madison",
-  "description": "Ebele Medina-Quaye is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Ebele Medina-Quaye describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Luca Asomaning-Ito is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Luca Asomaning-Ito describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -260,7 +260,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Meridian Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,42 +275,20 @@
   "related_entities": [
     "Masquerade",
     "The Shelf",
+    "Neural Palate",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Glenville Sound",
-    "MERIDIAN",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Mika Sorel",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Spire Light on Still Water",
-    "The Fathom Line",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Veslemøy Achebe-Tursynov"
+    "Slagworks Industrial"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Eastern European, Hispanic/Latin American, Sub-Saharan African, Pacific Islander, and East Asian blend — a genetic map of the Ubiquitous Diaspora. Slavic bone structure softened by equatorial ancestry, sharp cheekbones carrying warmth from multiple continents. The result is striking and difficult to pin to any single origin.",
+    "heritage": "Genuinely global genetic mosaic: East Asian (28.9%) and Southeast Asian (23.4%) form the foundation, creating Pan-Asian facial architecture. Northern European ancestry (20.2%) adds angular bone structure and cool undertones. Sub-Saharan African heritage (16.7%) contributes to feature breadth and warm richness. Hispanic/Latin American (9.2%) and Eastern European (1.6%) complete the blend. The result defies single-origin categorization — almond eyes set in a face with broad cheekbones and substantial jawline, sharp angularity softened by fuller features, cool and warm tones in constant dialogue. Unmistakably GLMZ contemporary.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and dense with lean muscle — built for sustained positioning and recoil absorption rather than speed. Shoulders broad, core compact and rigid. Forearms thick from years of weapon handling and stabilization work.",
-    "hair_color": "Black with silver-grey threading at temples",
-    "hair_style": "Pulled back tight in a functional braid, kept off the face",
-    "hair_length": "Medium",
+    "skin_tone": "Warm medium bronze — East Asian golden undertones (28.9%) and Southeast Asian warmth (23.4%) blend with Sub-Saharan African depth (16.7%), tempered by Northern European coolness (20.2%). Latin American ancestry adds subtle luminosity. The result is sophisticated middle-ground: neither warm gold nor deep brown, but balanced bronze that shifts subtly in different light — cool in shadow, warm in direct illumination.",
+    "complexion": "Weathered and scarred. Facial structure reflects genetic blend distinctly — prominent almond-shaped eyes from East/Southeast ancestry set deep under pronounced brow ridge (Northern European influence), high and broad cheekbones carrying both Asian and African proportions, substantial jawline that's simultaneously angular and broad. Dark brown irises contrast sharply against sclera. Skin shows accumulated fatigue — nocturnal living carved into the face, fine lines radiating from eye corners. The face refuses easy categorization, striking precisely because of its genetic honesty.",
     "eye_color": "Dark brown — natural, no augmentation",
-    "skin_tone": "Rich warm bronze — the meeting of deep sub-Saharan undertones with East Asian and Pacific Islander golden warmth, tempered by Eastern European heritage. Not pure brown but a complex blended tone that shifts subtly in different light.",
-    "complexion": "Weathered and scarred. Facial structure shows the blend clearly — prominent Slavic cheekbones softened by broader Pan-African features, a jawline that's both angular and substantial. Eye shape carries a subtle almond quality from East Asian ancestry. Skin around the eyes shows accumulated fatigue — nocturnal living carved into her face.",
     "distinguishing_marks": [
       "Visible surgical scarring along both temples in parallel lines where the neural dampener was installed — crude, functional work, roughly 8cm each side",
       "Jagged scar tissue along the left jawline from temple to chin — appears to be from either installation complications or old trauma, possibly both",
@@ -318,20 +296,74 @@
       "Burn scarring on the back of her right hand — white and puckered — consistent with weapon discharge or circuit feedback",
       "Callus pattern on her palms distinctive — shaped by years of rifle ergonomics and maintenance work"
     ],
+    "hair_color": "Black with silver-grey threading at temples",
+    "hair_style": "Pulled back tight in a functional braid, kept off the face",
+    "hair_length": "Medium",
     "visible_augmentations": "Chrome neural dampener visible at temples as metallic inlays following the scarring — dull gunmetal finish, unadorned. The installation work is clearly visible and intentionally unrefined. No cosmetic covering or blending attempted. Synthetic muscle fiber in legs not visually obvious at first glance but becomes apparent in movement — unnatural smoothness and efficiency in lower body mechanics, particularly in stair avoidance and ground positioning.",
     "posture_movement": "Stands with weight distributed evenly, ready to shift laterally. Movements economical and precise — no wasted motion. When seated, positions herself with clear sight lines and exits in mind. Walks with a slight forward lean from the hips. Noticeably stiff on stairs — the synthetic leg fibers cause her to take them slowly, methodically, which she does without apparent frustration.",
     "clothing_style": "Tier 4 practical — function over presentation. Dark neutral base layers (charcoal, black, muted grey) in breathable synth-cotton blend. Oversized tactical vest or reinforced jacket in worn charcoal with multiple pockets and modular attachment points — patched multiple times, clearly maintained rather than replaced. Cargo pants in dark grey with thigh pockets for ammunition or tools. Footwear is heavy-soled tactical boots, scuffed and broken in. Minimal jewelry — a single worn silver ring on left hand, possibly crew or family marker. No corporate branding visible. Clothing shows practical damage — minor tears, slight discoloration from equipment oil, the aesthetic of someone who cares about function over upkeep."
   },
-  "image_prompt": "Santiago Asomaning-Volkov, 168cm tall, mixed-heritage woman with Slavic-Pan-African-Pacific Islander features, rich warm bronze skin tone, dark eyes with subtle almond shape, sharp prominent cheekbones, strong jawline. Black hair braided back from face with silver at temples. Weathered complexion, surgical scarring along temples where gunmetal neural dampener chrome is visible, jagged scar along left jaw. Burn scarring on right hand, visible tattoo on right wrist. Stocky muscular build, broad shoulders. Wearing dark tactical vest over charcoal layers, cargo pants with thigh pockets, heavy tactical boots. Standing in ready stance with weight distributed, slight forward lean, composed dangerous presence. Cyberpunk 2226 aesthetic, nocturnal operative, functional equipment-worn appearance, dim industrial lighting casting shadows across augmented features, cinematic noir mood, gritty urban environment. --ar 2:3 --v 6",
+  "image_prompt": "Luca Asomaning-Ito, 168cm stocky gunsmith with warm bronze skin reflecting East Asian, Southeast Asian, African, and Northern European ancestry. Dark almond eyes set in broad-cheeked, angular face with substantial jawline. Black hair in tight functional braid, silver threading at temples. Temple temples bear dull gunmetal chrome neural dampener visible behind crude surgical scarring. Jagged scar tissue runs left jawline. Faded tattoo on right wrist, burn scarring on right hand. Wearing dark charcoal tactical vest over black synth-cotton layers, grey cargo pants, heavy tactical boots. Standing alert with even weight distribution, slight forward hip lean. Nocturnal fatigue etched into weathered face. GLMZ Great Lakes Metropolitan Zone, cold overhead warehouse lighting casting sharp shadows, moody atmospheric haze, cinematic realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 33.6,
-    "Hispanic/Latin American": 22.2,
-    "Sub-Saharan African": 18.5,
-    "Pacific Islander": 17.2,
-    "East Asian": 8.5
+    "East Asian": 28.9,
+    "Southeast Asian": 23.4,
+    "Northern European": 20.2,
+    "Sub-Saharan African": 16.7,
+    "Hispanic/Latin American": 9.2,
+    "Eastern European": 1.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 28.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 23.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 4.3,
+        "Finnish": 5.4
+      },
+      "British Isles": {
+        "Scottish": 6.9
+      },
+      "Germanic": {
+        "German": 3.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 16.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 8.4
+      },
+      "Central American": {
+        "Salvadoran": 0.6,
+        "Honduran": 0.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 0.7
+      },
+      "Slavic South": {
+        "Serbian": 0.1,
+        "Bosnian": 0.5
+      },
+      "Slavic East": {
+        "Belarusian": 0.3
+      }
+    }
+  }
 }

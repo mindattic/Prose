@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6067b7aa5b92d067d141e91",
   "type": "character",
-  "name": "Luca Madrigal-Karimi",
+  "name": "Luca Thammasak-Johansson",
   "aliases": [
     "Hollow",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
-  "description": "Eshe Pena-Baah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEshe Pena-Baah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Luca Thammasak-Johansson is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Thammasak-Johansson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.57,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Underbelly",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,34 +278,13 @@
     "Nkomo-Lindqvist NLR-9 'Counselor'"
   ],
   "related_entities": [
-    "GLMZ",
     "Burden of Longitude",
     "Slagworks Industrial",
-    "Amara Osei-Dzhaparidze",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Arcturus Exo-Runner Frame",
-    "Chibundo Reinholt-Sarpong",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Ilhan Sandstrom-Badu",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Old Harbor",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Réginald Asomaning-Čabarkapa",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Northern European-dominant mixed ancestry (49.8%) with significant Hispanic/Latin American (14.1%), Middle Eastern (13.1%), South Asian (9.5%), Sub-Saharan African (8.8%), and East Asian (4.7%) heritage. Features reflect this complex blend — the broad Northern European bone structure and lighter undertones balanced against warmer Mediterranean, Middle Eastern, and African phenotypes. His appearance reads as genuinely cosmopolitan, without clear categorical origin.",
+    "heritage": "Indigenous American-dominant mixed ancestry (49.8%) with significant Southeast Asian (23.7%), South Asian (14.0%), and Hispanic/Latin American (12.5%) heritage. Features reflect this complex blend — the broad Indigenous American bone structure, prominent cheekbones, and medium warm base tone are enriched and deepened by Southeast Asian and South Asian phenotypes, with Latin American warmth adding golden undertones. His appearance reads as genuinely cosmopolitan, a product of the Ubiquitous Diaspora, without clear categorical origin.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and heavily muscled through the chest and arms, with a solid core that speaks to decades of physical labor and field medicine. Carries weight with deliberate control — not fat, but density. The kind of frame that fills doorways.",
@@ -313,8 +292,8 @@
     "hair_style": "Worn close-cropped on the sides, slightly longer on top. Beard kept trim but deliberately rough — maintenance rather than grooming. Practical, not aesthetic.",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Medium-warm tan with golden and olive undertones. The Northern European base lightness is notably deepened and warmed by the Mediterranean, Middle Eastern, and African components, creating a complexion that catches light with subtle amber and bronze notes. Not deep brown, but distinctly warm and sun-weathered.",
-    "complexion": "Weathered and lined — 35 years in the GLMZ shows in the face. Deep crow's feet from squinting in bad light and years of focus. Facial structure shows the broader Northern European bone geometry softened by Middle Eastern and South Asian cheekbone prominence. A scar runs through his left eyebrow. His expression defaults to neutral assessment, the micro-expressions of someone who has learned to read people for survival.",
+    "skin_tone": "Medium warm tan with golden and olive undertones. Southeast Asian and South Asian components deepen and enrich the Indigenous American base, while Latin American heritage adds warmth and amber notes that catch light. Sun-weathered with subtle golden undertones visible in direct light. The complexion speaks to mixed ancestry and years of field exposure.",
+    "complexion": "Weathered and lined — 35 years in the GLMZ shows in the face. Deep crow's feet from squinting in bad light and years of focus. Facial structure shows prominent Indigenous American cheekbones, refined by Southeast Asian and South Asian features that soften the angles slightly. Broad nasal bridge with the characteristic width of Southeast Asian phenotypes. A scar runs through his left eyebrow. His expression defaults to neutral assessment, the micro-expressions of someone who has learned to read people for survival.",
     "distinguishing_marks": [
       "Visible scar tissue at the base of his skull where a cortical bomb was surgically removed — a raised, keloid-textured line about 3cm long, slightly discolored",
       "Thin white scar running through his left eyebrow and down to his cheekbone, roughly 2 inches, from bladed trauma",
@@ -325,17 +304,51 @@
     "posture_movement": "Moves with the economy of someone who has learned every motion costs. No wasted gestures. When still, his weight settles into his hips and legs — stable, grounded. When moving through tight spaces (his native environment), he flows with practiced ease despite his size. Hands are steady and deliberate. His default expression is neutral observation, but his eyes never stop tracking.",
     "clothing_style": "Tier 4 practical — worn synthleather field coat in charcoal over reinforced mesh cargo pants with multiple pockets for medical supplies and tools. Steel-toed work boots, scuffed but maintained. Under the coat: a military-grade trauma harness in black, visible when he moves. No logos, no chrome fashion, no corporate branding. Everything is functional and worn. The clothes have seen things. A surgical mask hangs around his neck, ever-ready. Carries a modified medical kit on his hip like a sidearm."
   },
-  "image_prompt": "Portrait of Luca Madrigal-Karimi, 188cm tall field medic in cyberpunk 2226 Great Lakes Metropolitan Zone. Medium-warm tan complexion with golden undertones, Northern European bone structure with Middle Eastern and South Asian cheekbone prominence. Dark brown hair graying at temples, close-cropped sides longer on top, trim rough beard. Dark brown eyes with deep crow's feet, warm and observant. Visible neural interface jack at skull base with keloid scarring, scar through left eyebrow, burn scars on right forearm showing mottled pale tissue against tan skin. Surgical grid tattoo on left inner forearm. Broad-shouldered, heavily muscled, 98kg density. Wearing charcoal synthleather field coat over reinforced mesh cargo pants, military-grade black trauma harness visible, steel-toed work boots scuffed and maintained. Surgical mask hanging at neck. Modified medical kit on hip. Neutral observant expression, steady hands, economical movement. Chrome knuckle reinforcements barely visible. Right eye with faint LED reflectivity. Weathered face with 35 years visible in features. Dark, utilitarian aesthetic, functional rather than fashionable. Gritty urban medical setting with cold industrial lighting casting shadows on facial scars and augmentation ports. Cyberpunk 2200s aesthetic, realistic and worn --ar 2:3 --v 6",
+  "image_prompt": "GLMZ field medic, 188cm tall broad-shouldered muscular build, medium warm tan skin with golden and olive undertones reflecting Indigenous American, Southeast Asian, South Asian, and Latin American heritage blend. Prominent cheekbones, dark brown warm eyes tracking with clinical precision, dark brown hair graying at temples, trimmed beard. Keloid scar at base of skull with dark metallic neural interface jack visible, thin white scar through left eyebrow, burn scars on right forearm, surgical grid tattoo on left inner forearm. Chrome knuckle reinforcements under skin. Charcoal synthleather field coat over reinforced mesh cargo pants, black military trauma harness visible, steel-toed scuffed boots, surgical mask around neck, modified medical kit on hip. Neutral observant expression, steady deliberate posture, moves with precise economy. Gritty field medicine aesthetic, dim industrial Great Lakes Metropolitan Zone setting with cool neon backlighting, focused medical intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 49.8,
-    "Hispanic/Latin American": 14.1,
-    "Middle Eastern": 13.1,
-    "South Asian": 9.5,
-    "Sub-Saharan African": 8.8,
-    "East Asian": 4.7
+    "Indigenous American": 49.8,
+    "Southeast Asian": 23.7,
+    "South Asian": 14,
+    "Hispanic/Latin American": 12.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 5.7,
+        "Mixtec": 38.5
+      },
+      "Andean": {
+        "Aymara": 3.4,
+        "Quechua": 2.2
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 12.7
+      },
+      "Filipino": {
+        "Ilocano": 9.7,
+        "Tagalog": 1.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 2.5,
+        "Pashtun": 7.2
+      },
+      "Nepali": {
+        "Nepali": 4.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 9.2,
+        "Dominican": 3.3
+      }
+    }
+  }
 }

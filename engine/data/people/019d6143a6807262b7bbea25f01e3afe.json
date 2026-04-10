@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown — Stall Row 7, near the Ferrogate Transit overpass pillar, near Western and Division",
-  "description": "Oluwafikayo is a broad-shouldered woman who moves like she owns every inch of space around her stall, which she essentially does after thirty years of holding the same corner against gang shakedowns, corporate rezoning, and two floods. Her skin is deep brown and luminous, threaded with old-generation bioluminescent dermal work that pulses faint amber when she's cooking — a gift to herself on her fortieth birthday that she's never regretted. Her hair is cropped tight on the sides, natural and silver-streaked on top, and she wears a perpetually stained apron printed with a faded image of the Our Lady of Data shrine in Old Harbor.\n\nShe is the emotional axis of her block. Regulars don't just buy food — they report in. She knows who lost their job, who's expecting a baby, who's been visited by Axiom compliance officers. Her laugh is enormous and her anger is quiet and absolute. She speaks three languages in a single sentence without noticing. She has outlasted four protection rackets and one attempted arson and she will probably outlast the city itself.",
+  "description": "Echo Lewandowski is a broad-shouldered woman who moves like she owns every inch of space around her stall, which she essentially does after thirty years of holding the same corner against gang shakedowns, corporate rezoning, and two floods. Her skin is deep brown and luminous, threaded with old-generation bioluminescent dermal work that pulses faint amber when she's cooking — a gift to herself on her fortieth birthday that she's never regretted. Her hair is cropped tight on the sides, natural and silver-streaked on top, and she wears a perpetually stained apron printed with a faded image of the Our Lady of Data shrine in Old Harbor.\n\nShe is the emotional axis of her block. Regulars don't just buy food — they report in. She knows who lost their job, who's expecting a baby, who's been visited by Axiom compliance officers. Her laugh is enormous and her anger is quiet and absolute. She speaks three languages in a single sentence without noticing. She has outlasted four protection rackets and one attempted arson and she will probably outlast the city itself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -163,7 +163,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,60 +232,93 @@
     "The Oxidian Market",
     "Ferrogate Transit",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Geartown",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Geartown",
+    "Corner Slice",
     "Silver",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Amara Osei-Dzhaparidze",
-    "Anatoliy Faye-Nkrumah",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Helix Biosystems",
-    "Kenosha Crossing",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Old Harbor",
-    "Oluwafikayo Reinholt-Tshombe",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "The Bazaar",
-    "The Counter",
-    "The Filament",
-    "The Ledger",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Volkov-Saito Precision VSR-20 'Partisan'",
-    "Vuk Jorgensen-Toure"
+    "Harbor Fish Shack",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Levantine-Anatolian Middle Eastern with substantial Eastern European Slavic ancestry, significantly blended with East Asian features, and traces of South Asian and Sub-Saharan African heritage. A complex diaspora mix reflecting the genetic reality of 2226—her features carry the distinctive bone structure and coloring of the Fertile Crescent region combined with high cheekbones and eye shape from East Asian ancestry, softened by Eastern European broadness.",
+    "heritage": "Complex diaspora ancestry reflecting 2226 genetic reality: South Asian (21.7%), Eastern European (20.5%), Hispanic/Latin American (16.1%), East Asian (16.0%), Indigenous American (13.1%), and Sub-Saharan African (12.6%). Her features carry the high cheekbones and eye geometry of East Asian ancestry, the broader facial structure and bone density of Eastern European heritage, the warm golden undertones of South Asian genetics, the nose bridge structure common to Hispanic/Latin American ancestry, and the subtle fullness around the eyes influenced by Indigenous American and Sub-Saharan African bloodlines. A genuinely mixed-heritage face that defies singular categorization.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, carrying weight with the density of someone who has spent thirty years standing and moving deliberately. Strong core, thickened forearms from repetitive chopping and stirring. Not athletic—built for endurance and presence.",
     "hair_color": "Natural black with silver streaking",
     "hair_style": "Cropped short on sides, fuller and textured on top",
     "hair_length": "Short",
-    "eye_color": "Deep brown with slight epicanthic fold from East Asian ancestry, set wide across a face that blends Middle Eastern and Slavic bone structure",
-    "skin_tone": "Medium-deep warm brown with golden and slightly olive undertones—the characteristic blend of Levantine, Eastern European, and East Asian ancestry creating a complex, luminous warmth",
-    "complexion": "Luminous and weathered. Laugh lines frame her mouth. Pores visible and open from decades of steam and heat work. A few age spots on her temples and forearms. Skin carries faint scarring from old burns on her left hand and wrist—kitchen accidents accumulated over years. Her face shows the subtle interplay of her mixed heritage: higher cheekbones with softer Slavic fullness, a nose with the bridge structure common to Middle Eastern ancestry, and the eye-set geometry influenced by her East Asian bloodline.",
+    "eye_color": "Deep brown with slight epicanthic fold, set wide across a face blending multiple ancestral geometries",
+    "skin_tone": "Medium-deep warm golden-brown with complex undertones—the luminous result of South Asian warmth, East Asian clarity, Eastern European depth, Sub-Saharan African richness, and Indigenous American heritage blending into a unified, radiant complexion",
+    "complexion": "Luminous and weathered. Laugh lines frame her mouth. Pores visible and open from decades of steam and heat work. A few age spots on her temples and forearms. Skin carries faint scarring from old burns on her left hand and wrist—kitchen accidents accumulated over years. Her face shows the integration of her diverse ancestry: East Asian-influenced cheekbone prominence softened by Eastern European facial fullness, a nose reflecting Latin American and South Asian heritage with subtle broadness from Indigenous American bloodlines, eye-set geometry influenced by multiple ancestral lines creating an unusual, striking harmony. Mid-depth complexion with warm undertones carries subtle variations in tone across her face—slightly darker along her cheekbones, luminous across her brow.",
     "distinguishing_marks": [
       "Bioluminescent dermal threading in amber tone running in fine filaments across her shoulders, collarbones, and upper back—old-generation work that pulses faintly when she is cooking or emotionally activated.",
       "Burn scar tissue across the dorsal surface of her left hand and extending up the inside of her left forearm—pale and shiny, from a cooking oil incident approximately twenty years prior.",
       "Surgical scar below her left knee, approximately 8cm long, slightly raised and pale—from the Helix Biosystems joint replacement."
     ],
-    "visible_augmentations": "Amber bioluminescent dermal threading visible on shoulders and upper back (cosmetic, faintly pulsing). Movement of knees is smooth and mechanically precise—the joint replacement work is invisible subcutaneously, but her gait shows no compensatory limping. No visible wear or scarring around the joint itself.",
+    "visible_augmentations": "Amber bioluminescent dermal threading visible on shoulders and upper back (cosmetic, faintly pulsing). Movement of knees is smooth and mechanically precise—the joint replacement work is invisible subcutaneously, but her gait shows no compensatory limping.",
     "posture_movement": "Stands with weight distributed evenly, shoulders back. Moves through her stall space with deliberate economy—no wasted motion, every step purposeful. Her hands are always active: stirring, seasoning, plating, gesturing. When she laughs, her whole body moves. When she is angry, she goes very still. She occupies space as though she has earned every centimeter of it.",
-    "clothing_style": "Tier 3-4 pragmatism. Standard work uniform: an apron (perpetually stained with turmeric, ash, and broth) printed with a faded image of the Our Lady of Data shrine in Old Harbor. Underneath: a loose long-sleeved linen shirt (rolled to the elbows for kitchen work) in muted colors—cream, gray, or faded indigo. Work pants in durable synthetic fabric, dark colored to hide stains. Worn but well-maintained kitchen clogs with reinforced soles. A thin brass bangle on her left wrist—personal, not fashionable. No jewelry beyond that. Her clothing is chosen for function and durability, not status. She dresses like someone who has built something and intends to keep it."
+    "clothing_style": "Tier 3-4 pragmatism. Standard work uniform: an apron (perpetually stained with turmeric, ash, and broth) printed with a faded image of the Our Lady of Data shrine in Old Harbor. Underneath: a loose long-sleeved linen shirt (rolled to the elbows for kitchen work) in muted colors—cream, gray, or faded indigo. Work pants in durable synthetic fabric, dark colored to hide stains. Worn but well-maintained kitchen clogs with reinforced soles. A thin brass bangle on her left wrist—personal, not fashionable. No jewelry beyond that."
   },
-  "image_prompt": "Echo Lewandowski, 168cm tall woman with warm medium-deep brown skin blending Levantine-Middle Eastern, Eastern European, and East Asian heritage. Deep brown eyes with subtle epicanthic fold, high prominent cheekbones, strong jawline. Black hair with silver streaks, cropped short with fuller textured crown. Age 50s, luminous weathered complexion with laugh lines, visible pores from decades of kitchen work. Pale burn scars across left hand and forearm. Standing in her food stall wearing faded apron with Our Lady of Data shrine print over muted cream linen shirt (sleeves rolled), dark work pants, worn kitchen clogs. Thin brass bangle on left wrist. Amber bioluminescent dermal threading faintly pulsing across shoulders and upper back. Broad-shouldered, substantial build. Deliberate, economical posture. Cyberpunk 2226, Great Lakes Metropolitan Zone, warm kitchen steam lighting with amber glow from her dermal implants, atmospheric and dignified. --ar 2:3 --v 6",
+  "image_prompt": "Echo Lewandowski, 56-year-old mixed-heritage woman with South Asian, Eastern European, East Asian, Hispanic, Indigenous American, and Sub-Saharan African ancestry. Medium-deep warm golden-brown skin with luminous undertones. Black hair with silver streaking, cropped short on sides with fuller texture on top. Deep brown eyes with slight epicanthic fold set wide across harmonious blended facial features: prominent East Asian cheekbones softened by Eastern European fullness, Latin American nose structure, subtle eye fullness from Indigenous and African heritage. Substantial build, 168cm tall, broad shoulders, strong forearms. Visible bioluminescent amber dermal threading across shoulders and collarbones pulsing faintly. Pale burn scars across left hand and forearm. Standing in a neo-noir food stall in the Great Lakes Metropolitan Zone, 2226. Wearing faded turmeric-stained apron over cream linen shirt with rolled sleeves, dark synthetic work pants, worn kitchen clogs. Thin brass bangle on left wrist. Intense focused expression, weathered face with laugh lines, hands mid-gesture over steaming cooking vessels. Steam and warm kitchen light illuminate her features. Ambient bioluminescence in background. Neo-noir metropolitan setting, pragmatic tier-3 labor, heat and food and presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 39.4,
-    "Eastern European": 26.4,
-    "East Asian": 24.3,
-    "South Asian": 8.4,
-    "Sub-Saharan African": 1.5
+    "South Asian": 21.7,
+    "Eastern European": 20.5,
+    "Hispanic/Latin American": 16.1,
+    "East Asian": 16,
+    "Indigenous American": 13.1,
+    "Sub-Saharan African": 12.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Pashtun": 21.7
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 20.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Argentine": 4.5
+      },
+      "Caribbean": {
+        "Cuban": 11.6
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 16
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 6.3
+      },
+      "Mesoamerican": {
+        "Nahua": 2.8
+      },
+      "Andean": {
+        "Aymara": 4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Mozambican": 3.8,
+        "South African": 3.3
+      },
+      "East African": {
+        "Somali": 1
+      },
+      "Central African": {
+        "Angolan": 4.5
+      }
+    }
+  }
 }

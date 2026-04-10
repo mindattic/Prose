@@ -1,7 +1,7 @@
 {
   "id": "019d6143a71170ea909d1766b084494d",
   "type": "character",
-  "name": "Axel Dalgaard",
+  "name": "Rajan Kulkarni",
   "aliases": [
     "Ronni",
     "Redline"
@@ -13,7 +13,7 @@
   "age": 14,
   "status": "active",
   "location": "Copperhead, near North Ave and Milwaukee",
-  "description": "Verónica Temirkhan-Adjei is wiry and quick with a bruise that's always in some stage of yellowing somewhere on her face, arms, or shins — not from violence, mostly, but from moving through the city like it owes her something and hasn't paid up. She has medium-brown skin, natural hair she's grown into a large puff that she wraps in a strip of copper-colored fabric to match the Copperhead Strays' aesthetic, and geneware cat ears in a dark red-brown she saved up three months of small jobs to buy from a back-alley mod shop. The ears were supposed to mark her as cool. They do. She wears them with specific, deliberate pride.\n\nShe is not yet a full Stray — she's in what the older members call the 'prospect' phase, which mostly means she runs lookout shifts, carries non-incriminating packages, and tries very hard not to look like she's trying very hard. She's funny and quick-tongued and operates at a social speed that leaves adults slightly breathless. Underneath the performance is a thirteen-year-old's terror wearing a fourteen-year-old's face, because she knows exactly what full Stray membership involves and she is not sure she wants it, but she doesn't know what else there is.",
+  "description": "Rajan Kulkarni is wiry and quick with a bruise that's always in some stage of yellowing somewhere on her face, arms, or shins — not from violence, mostly, but from moving through the city like it owes her something and hasn't paid up. She has medium-brown skin, natural hair she's grown into a large puff that she wraps in a strip of copper-colored fabric to match the Copperhead Strays' aesthetic, and geneware cat ears in a dark red-brown she saved up three months of small jobs to buy from a back-alley mod shop. The ears were supposed to mark her as cool. They do. She wears them with specific, deliberate pride.\n\nShe is not yet a full Stray — she's in what the older members call the 'prospect' phase, which mostly means she runs lookout shifts, carries non-incriminating packages, and tries very hard not to look like she's trying very hard. She's funny and quick-tongued and operates at a social speed that leaves adults slightly breathless. Underneath the performance is a thirteen-year-old's terror wearing a fourteen-year-old's face, because she knows exactly what full Stray membership involves and she is not sure she wants it, but she doesn't know what else there is.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -161,7 +161,7 @@
     "Judge": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Copperhead",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,26 +204,16 @@
   "changelog": [],
   "related_entities": [
     "Copperhead",
-    "The Wire Taps",
     "Arcturus Defense Solutions",
+    "The Wire Taps",
     "Copper",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Ringo RK-2 'Stray'",
-    "The Milwaukee Core",
-    "Auricula Felis Modification",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "New Windsor / Novaya Windsorka",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Sulfur Crown Agriculture",
-    "Synaptrel",
-    "The Canopy",
-    "The Quiet Room",
-    "Yolanda Dzhaksybekov-Ferreira"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Northern European with significant Hispanic/Latin American ancestry and minor Sub-Saharan African heritage, creating a striking blend—pale-to-medium undertones with warm golden and subtle earthy accents",
+    "heritage": "Dominant South Asian ancestry (47.5%) creates the foundation of her features, enriched by Northern European (20.6%), Hispanic/Latin American (18.6%), Southeast Asian (11.2%), and Sub-Saharan African (2.1%) contributions. This genetic blend produces warm medium-brown skin with golden and olive undertones, South Asian facial structure softened by subtle width from Hispanic heritage, and depth enhanced by African ancestry. The combination creates distinctive high cheekbones with a pointed chin, warm brown eyes, and natural dark hair texture.",
     "height_cm": 158,
     "weight_kg": 45,
     "build": "Wiry and lean with the taut musculature of someone who moves constantly through urban terrain. No excess body fat; shoulders slightly forward from habitual tension.",
@@ -231,25 +221,72 @@
     "hair_style": "Large natural puff, wrapped at the crown with a copper-colored fabric strip in Copperhead Strays aesthetic",
     "hair_length": "Medium (3-4 inches when loose)",
     "eye_color": "Dark brown",
-    "skin_tone": "Light to medium with warm golden and olive undertones, reflecting the blend of Northern European paleness with Hispanic and African heritage warmth",
-    "complexion": "Youthful but weathered with a subtle warm undertone throughout; strong, defined cheekbones and a pointed chin shaped by mixed ancestry features. Skin shows the wear of street life—faint acne scarring on her jawline, perpetual dark circles under her eyes from inconsistent sleep. Her face has the alertness of someone scanning constantly.",
+    "skin_tone": "Warm medium brown with golden and olive undertones, reflecting the dominant South Asian ancestry blended with Northern European paleness, Hispanic warmth, and subtle Sub-Saharan African depth",
+    "complexion": "Youthful but weathered with warm medium-brown tones throughout; strong, defined cheekbones with subtle width characteristic of her multicultural heritage, and a pointed chin from South Asian ancestry. Skin shows the wear of street life—faint acne scarring on her jawline, perpetual dark circles under her eyes from inconsistent sleep. Her face has the alertness of someone scanning constantly.",
     "distinguishing_marks": [
       "Yellowing bruise on left cheekbone, currently in the green-purple stage of healing",
-      "Faint linear scar on her right shin from a climbing accident, pale against her skin tone",
+      "Faint linear scar on her right shin from a climbing accident, pale against her warm brown skin tone",
       "Scrape marks across her knuckles from recent street scuffles"
     ],
     "visible_augmentations": "Cosmetic geneware cat ears (dark red-brown, slightly translucent at the edges) positioned naturally on her head. The ears are her most deliberate statement—well-maintained, with faint LED circuitry visible when light hits them at certain angles. No other visible augmentations.",
     "posture_movement": "Perpetually coiled; she moves with quick, economical gestures and rarely sits still. Her eyes dart—scanning faces, exits, threats. She carries herself with the false confidence of someone performing fearlessness, but her shoulders betray nervous tension. When standing, her weight shifts frequently from one foot to the other.",
     "clothing_style": "Tier 5 street wear: oversized gray hoodie (faded Copperhead Strays logo on the back, hand-stitched repairs), black cargo pants with multiple pockets (some reinforced with copper wire), worn canvas sneakers with mismatched laces. A copper chain bracelet on her left wrist—low-value metal, but it's her marker. No intact jacket; she layers hoodies instead. Clothing is functional, somewhat ill-fitting (either salvaged or hand-me-downs), and deliberately non-descript except for the copper Strays indicators."
   },
-  "image_prompt": "Axel Dalgaard, 158cm wiry street fighter in cyberpunk 2226, light-to-medium warm olive-toned skin with golden undertones blending Northern European, Hispanic, and African heritage. Dark brown natural hair in a voluminous puff wrapped with copper fabric, faint acne scars on jawline, yellowing bruise on left cheekbone, perpetually alert dark eyes. Dark red-brown translucent cosmetic geneware cat ears with faint LED circuitry catch neon light. Wearing oversized faded gray hoodie with hand-stitched Copperhead Strays logo, black reinforced cargo pants, worn mismatched-lace sneakers, copper chain bracelet. Coiled posture, weight shifting nervously, shoulders forward with false confidence masking tension. Standing in Great Lakes Metropolitan Zone rain-slicked alley at night, neon holographic signs reflecting off wet pavement, moody blue-and-copper lighting, gritty street atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Rajan Kulkarni, 158cm wiry street kid with warm medium-brown skin with golden undertones, defined high cheekbones and pointed chin blending South Asian, Hispanic, and Northern European heritage. Dark brown eyes scanning nervously, natural dark brown hair in medium puff wrapped with copper fabric strip. Dark red-brown cosmetic geneware cat ears with LED circuitry. Yellowing bruise on left cheekbone mid-heal stage, faint acne scars on jawline, perpetual dark circles. Wearing oversized faded gray Copperhead Strays hoodie, black cargo pants with copper wire reinforcements, mismatched-laced worn canvas sneakers, copper chain bracelet. Coiled posture with nervous shoulder tension, weight shifting stance. GLMZ Great Lakes Metropolitan Zone, gritty neon-lit street setting, dramatic side-lighting casting shadows across her alert, scanning expression, urban decay background, moody teal and orange color grading --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 57.6,
-    "Hispanic/Latin American": 35.7,
-    "Sub-Saharan African": 6.7
+    "South Asian": 47.5,
+    "Northern European": 20.6,
+    "Hispanic/Latin American": 18.6,
+    "Southeast Asian": 11.2,
+    "Sub-Saharan African": 2.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 24.4
+      },
+      "Indian": {
+        "Malayali": 13.3
+      },
+      "Nepali": {
+        "Nepali": 9.8
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 20.6
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 10.5,
+        "Nicaraguan": 3.7
+      },
+      "Mexican": {
+        "Mexican": 4.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 8.7
+      },
+      "Thai": {
+        "Thai": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 0.2,
+        "Nigerian": 1
+      },
+      "Central African": {
+        "Gabonese": 0.8,
+        "Angolan": 0.1
+      }
+    }
+  }
 }

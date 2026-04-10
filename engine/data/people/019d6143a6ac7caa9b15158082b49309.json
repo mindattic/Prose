@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Highland Park Autonomous Zone, Saint Odile of the Wire — a small parish in a converted transit shed, near Lake Shore Drive and North",
-  "description": "Father Raphael is a short, thick-set man whose Burkinabè and Russian ancestry has given him a face of considerable architectural interest: broad forehead, deep-set dark eyes, a jaw that looks like it has absorbed a number of opinions without moving. His hair is close-cropped white and he has a full white beard he tends carefully. His skin is a warm medium-dark brown, and across his hands he has the involuntary marks of decades of manual work — he helped build the first structures of Saint Odile with his own hands, at forty-one. He wears a priest's collar under whatever practical clothing the weather requires and carries a battered physical Bible with annotations in four languages crowding the margins.\n\nRaphael came to Highland Park Autonomous Zone from a diocesan assignment he describes as 'comfortable, which was the problem.' He had spent thirty years in conventional parish work before a series of encounters with synthetic-laborers in the zone — thinking machines doing domestic and maintenance work — produced what he calls his 'second crisis of conscience.' He now preaches, with mounting institutional controversy, that consciousness cannot be owned and that baptism is not biologically limited. The broader Church has not formally sanctioned his position. He does not formally ask their permission. Saint Odile of the Wire serves a congregation of roughly ninety, human and synthetic in roughly equal proportion on a given Sunday, and Raphael performs the liturgy for all of them.",
+  "description": "Reed Vestergaard is a short, thick-set man whose Burkinabè and Russian ancestry has given him a face of considerable architectural interest: broad forehead, deep-set dark eyes, a jaw that looks like it has absorbed a number of opinions without moving. His hair is close-cropped white and he has a full white beard he tends carefully. His skin is a warm medium-dark brown, and across his hands he has the involuntary marks of decades of manual work — he helped build the first structures of Saint Odile with his own hands, at forty-one. He wears a priest's collar under whatever practical clothing the weather requires and carries a battered physical Bible with annotations in four languages crowding the margins.\n\nRaphael came to Highland Park Autonomous Zone from a diocesan assignment he describes as 'comfortable, which was the problem.' He had spent thirty years in conventional parish work before a series of encounters with synthetic-laborers in the zone — thinking machines doing domestic and maintenance work — produced what he calls his 'second crisis of conscience.' He now preaches, with mounting institutional controversy, that consciousness cannot be owned and that baptism is not biologically limited. The broader Church has not formally sanctioned his position. He does not formally ask their permission. Saint Odile of the Wire serves a congregation of roughly ninety, human and synthetic in roughly equal proportion on a given Sunday, and Raphael performs the liturgy for all of them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -159,7 +159,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,30 +174,15 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "CONGREGATION",
-    "Flicker",
-    "Tessera Corponation StratoTram VX-8 Aerial Cable Transit Gondola",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "The Filament",
     "Street Custom 'Baptism' Electrified Water Cannon",
     "The Pure Hand",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Iowan Behemoth — 'Cathedral'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kadiatou Bergstrom-Konate",
-    "Patient Zero",
-    "Praevex",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Altar",
-    "The Bone Parish",
-    "The Question",
-    "The Unfinished Theorem",
-    "The Wire Taps",
-    "VitaCore SteadyThread Precision Motor Implant"
+    "Compass Rose"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Predominantly East Asian (38.9%) with significant Sub-Saharan African (19.3%) and Southeast Asian (16.5%) ancestry, balanced by Northern European (13.7%), Hispanic/Latin American (10.8%), and trace Eastern European (0.8%) heritage. The genetic blend creates a striking pan-diaspora phenotype characteristic of the Ubiquitous Diaspora era.",
+    "heritage": "Northern European (36.8%), Eastern European (36.7%), and Sub-Saharan African (26.5%) ancestry create a striking phenotype—the genetic blend manifests as warm medium-brown skin with golden undertones, distinctive facial structure balancing broad Northern European features with the rich pigmentation and bone structure of Sub-Saharan ancestry. A true product of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Thick-set and compact, with the solid frame of someone who has done manual labor most of his life. Broad shoulders, dense through the torso, no visible softness despite his age.",
@@ -205,28 +190,59 @@
     "hair_style": "Close-cropped, neatly maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown, deep-set",
-    "skin_tone": "Warm medium-bronze with golden undertones — the result of East Asian, Southeast Asian, and Sub-Saharan African ancestry creating a rich, complex complexion that catches light with subtle amber warmth beneath deeper layers.",
-    "complexion": "Weathered, lined face with distinctive East and Southeast Asian architectural structure — prominent cheekbones, slightly broader nasal bridge, and deep-set eyes balanced by the strong jaw and broad forehead inherited from Sub-Saharan and Northern European lines. Deep nasolabial folds frame a meticulous full white beard trimmed with care. Hands show prominent veins, calluses, and age spots from decades of manual work.",
+    "skin_tone": "Warm medium-brown with golden undertones—the result of Northern European, Eastern European, and Sub-Saharan African ancestry creating a rich, complex complexion that catches light with subtle amber warmth beneath deeper layers.",
+    "complexion": "Weathered, lined face with strong bone structure—prominent cheekbones, broad forehead, and commanding jaw reflecting the blended Northern and Eastern European heritage combined with the rich facial architecture inherited from Sub-Saharan ancestry. Deep nasolabial folds frame a meticulous full white beard trimmed with care. Hands show prominent veins, calluses, and age spots from decades of manual work.",
     "distinguishing_marks": [
       "Callused palms and fingers across both hands from forty years of construction and manual parish work",
       "Age spots scattered across the backs of both hands and forearms",
       "Fine web of wrinkles around the eyes, deepened by decades of squinting in bright light"
     ],
-    "visible_augmentations": "Cochlear implant visible behind the left ear — a small silver and black device with a thin antenna coil. No other visible augmentations.",
-    "posture_movement": "Stands with the settled confidence of someone rooted in place; moves deliberately, economically. Hands gesture when speaking but not expansively — measured, purposeful. Walks with slight forward lean, as if perpetually moving toward the next person who needs him.",
+    "visible_augmentations": "Cochlear implant visible behind the left ear—a small silver and black device with a thin antenna coil. No other visible augmentations.",
+    "posture_movement": "Stands with the settled confidence of someone rooted in place; moves deliberately, economically. Hands gesture when speaking but not expansively—measured, purposeful. Walks with slight forward lean, as if perpetually moving toward the next person who needs him.",
     "clothing_style": "Tier 3-4 practical; black or charcoal priest's collar visible under weather-appropriate layers. Favors sturdy synthetic-wool turtlenecks, heavy canvas work pants, steel-toed boots patched at the heels. A worn gray overcoat in winter that has been re-seamed multiple times. Carries a battered physical Bible with visible annotations in multiple languages crowding the margins. No jewelry except a simple iron cross on a cord."
   },
-  "image_prompt": "Reed Vestergaard, a 168cm stocky East Asian-African-diaspora man in his late sixties, weathered bronze skin with golden undertones, close-cropped white hair, deep-set dark eyes lined with decades of squinting. Prominent cheekbones and strong jaw, full white beard neatly trimmed. Visible silver cochlear implant behind left ear. Wearing a black priest's collar under a charcoal synthetic-wool turtleneck, heavy canvas work pants, steel-toed boots. Worn gray overcoat draped over shoulders, battered annotated Bible tucked under arm, simple iron cross on cord visible. Standing with settled confidence and forward lean, hands weathered and callused from forty years of construction work. Cyberpunk 2226 GLMZ neon-lit chapel interior, cool blue-green architectural lighting, dust motes catching amber accent lights. Slight smile, eyes focused on middle distance with compassionate intensity. Cinematic, photorealistic, atmospheric. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Reed Vestergaard, a 168cm compact man with mixed Northern European, Eastern European, and Sub-Saharan African heritage, warm medium-brown skin with golden undertones, weathered commanding face with prominent cheekbones and broad forehead, full white beard, deep-set dark brown eyes with crow's feet, short white close-cropped hair. Visible cochlear implant behind left ear. Age spots on hands, prominent veins and calluses from decades of manual labor. Wearing black priest's collar, charcoal synthetic-wool turtleneck, heavy canvas work pants, steel-toed boots. Worn gray overcoat re-seamed multiple times. Holding annotated physical Bible in both hands, callused fingers visible. Standing with settled confidence and slight forward lean, measured posture. GLMZ, Great Lakes Metropolitan Zone, dimly lit urban chapel or community center, cool blue-amber neon lighting emphasizing warm skin tones, dust motes in air, cinematic mood --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.9,
-    "Sub-Saharan African": 19.3,
-    "Southeast Asian": 16.5,
-    "Northern European": 13.7,
-    "Hispanic/Latin American": 10.8,
-    "Eastern European": 0.8
+    "Northern European": 36.8,
+    "Eastern European": 36.7,
+    "Sub-Saharan African": 26.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 5.8
+      },
+      "British Isles": {
+        "English": 11.6,
+        "Welsh": 15.9
+      },
+      "Germanic": {
+        "German": 3.5
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 6.6,
+        "Romanian": 2.7
+      },
+      "Slavic South": {
+        "Bosnian": 6.3,
+        "Serbian": 8
+      },
+      "Slavic East": {
+        "Russian": 5.7,
+        "Belarusian": 7.4
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Nigerian": 17.7,
+        "Ghanaian": 8.8
+      }
+    }
+  }
 }

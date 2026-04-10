@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6297f978c1fc9439ba51a90",
   "type": "character",
-  "name": "Camila Kovalenko-Madrigal",
+  "name": "Adaeze Calvillo-Dlamini",
   "aliases": [
     "Hux",
     "The Antiquarian"
@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "The Shelf, Ironvein, near Pulaski and Chicago Ave",
-  "description": "Huxley is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on The Shelf sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nHuxley is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
+  "description": "Adaeze Calvillo-Dlamini is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on The Shelf sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nAdaeze Calvillo-Dlamini is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -172,7 +172,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,36 +233,15 @@
     "The Shelf",
     "Ironvein",
     "The Gradient Compact",
-    "Adaeze Chen-Hawkins",
-    "ARCHIVE",
-    "Nesting Doll",
-    "Palette",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Steel",
     "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Davi Ousseini-Brătianu",
-    "Eshe Petersen-Bah",
-    "GLMZ",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "The Archive",
-    "The Counter",
-    "The Ledger",
-    "The Oxidian Market",
-    "The Pure Hand",
-    "The Wire Taps",
-    "Timur Osei-Bjelke",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "VitaCore SteadyField Precision Motor Implant",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Nesting Doll",
+    "Haze Johansson",
+    "Steel",
+    "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European, Hispanic/Latin American, Sub-Saharan African, and East Asian blend—a genetic map of the Ubiquitous Diaspora. Slavic bone structure meets equatorial warmth; the result is a face that belongs to no single region but draws from many.",
+    "heritage": "A genetic confluence of the Ubiquitous Diaspora: 48.5% Hispanic/Latin American warmth forms the foundation, enriched by 30.8% Sub-Saharan African depth and resilience. Indigenous American ancestry (11.6%) contributes angular bone structure and facial geometry, while 7.3% North African heritage adds further refinement to cheekbones and brow. A trace of South Asian ancestry (1.8%) rounds the blend. The result is a face that synthesizes multiple continental traditions into a singular, weathered authenticity—warm medium-to-deep brown skin that speaks to equatorial and African ancestry, shaped by the angular geometries of Indigenous and North African lineages.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Compact and wiry, shoulders still squared from decades of physical labor. No excess weight; muscle has transitioned to lean efficiency. Moves with the economy of someone who has carried heavy things for a lifetime.",
@@ -270,8 +249,8 @@
     "hair_style": "Cropped close to the scalp, well-maintained. Salt-and-pepper stubble on the jaw, kept to a consistent three-day length.",
     "hair_length": "Short",
     "eye_color": "Deep brown, sharp and undiminished by age",
-    "skin_tone": "Warm medium-brown with undertones reflecting the blend—a richness that suggests both Eastern European and Sub-Saharan ancestry, deepened further by decades in salvage yards and open-air markets. Sun-weathered, papery texture developing at the temples and across the knuckles of the right hand.",
-    "complexion": "Lean-faced with prominent cheekbones shaped by Slavic and East Asian ancestry. Deep laugh lines around the eyes. The magnificent white moustache is waxed daily with precision—it points slightly upward at the ends and is his single vanity. Skin still firm across the jawline; age shows primarily in the texture of his hands and the tiredness that occasionally settles behind his eyes. Subtle warmth to the complexion speaks to his African and Hispanic heritage; high cheekbones suggest East Asian roots.",
+    "skin_tone": "Warm medium-to-deep brown with golden-amber undertones from Hispanic/Latin American and Sub-Saharan African heritage, slightly brightened by Indigenous American and North African admixture. Sun-weathered, papery texture developing at the temples and across the knuckles of the right hand.",
+    "complexion": "Lean-faced with prominent cheekbones shaped by Indigenous American and North African ancestry. Deep laugh lines around the eyes. The magnificent white moustache is waxed daily with precision—it points slightly upward at the ends and is his single vanity. Skin still firm across the jawline; age shows primarily in the texture of his hands and the tiredness that occasionally settles behind his eyes. The warmth and depth of his complexion reflects his dominant Hispanic/Latin American and Sub-Saharan African heritage; angular facial structure and high cheekbone prominence speak to Indigenous American and North African contributions.",
     "distinguishing_marks": [
       "Faint burn scar across the back of his right hand, shaped like a partial arc—legacy of a molten salvage incident circa 2195.",
       "A small rectangular tattoo on his inner left forearm (the flesh one), executed in black ink with what appears to be a technical diagram or circuit pattern—possibly a memorial or a reminder, never explained.",
@@ -281,15 +260,66 @@
     "posture_movement": "Moves with unhurried deliberation. Never rushes. Uses his right hand naturally; the prosthetic left arm is gestural and precise—he has mastered it completely. Tends to stand with shoulders slightly forward, as if perpetually about to reach for something on a shelf. When seated, he becomes statuary—entirely still, watching. His gaze is patient and evaluative.",
     "clothing_style": "Tier 4 working-class practicality with personal ritual. Heavy canvas vest with dozens of pockets (each containing specific items organized by function), worn over a collared work shirt in muted colors (grays, dark blues, browns). The shirt is always buttoned; the vest is always layered on top regardless of ambient temperature—insulation and habit. Fingerless leather gloves on the right hand, worn thin at the knuckles. Canvas trousers, neutral color. Heavy boots, well-maintained but visibly aged. No jewelry except a faded wedding band on his right ring finger. His appearance suggests a man who dresses for function and ritual, not for impression."
   },
-  "image_prompt": "Camila Kovalenko-Madrigal, 168cm wiry-built older man with warm medium-brown skin reflecting Eastern European, Sub-Saharan African, Hispanic, and East Asian ancestry. White cropped hair with salt-and-pepper stubble. Prominent cheekbones, deep brown eyes, magnificent white moustache waxed upward. Mechanical brushed-steel prosthetic left arm with visible articulation. Vintage monocle on left eye with titanium arm. Lean weathered face with laugh lines and old scars. Wearing layered heavy canvas work vest over collared dark shirt, fingerless leather gloves, canvas trousers, aged boots. Faded wedding band on right hand. Standing with deliberate posture, shoulders slightly forward, patient evaluative gaze. Cyberpunk 2226, salvage yard lighting, worn hands resting on workbench, dystopian utility aesthetic, moody industrial background, 40-year-old augmentation tech. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Adaeze Calvillo-Dlamini, a weathered 168cm man with warm deep brown skin blending Hispanic/Latin American, Sub-Saharan African, Indigenous American, and North African heritage. Prominent angular cheekbones, lean face with deep laugh lines, sharp brown eyes. Cropped white hair with salt-and-pepper stubble. Magnificent precision-waxed white moustache curving upward. Visible burn scar on right hand, small circuit-pattern tattoo on left inner forearm, faint scar from left temple to cheekbone. Mechanical brushed steel prosthetic left arm with visible servos. Titanium reading monocle on left eye. Wearing heavy canvas work vest with multiple pockets over muted-colored collared shirt, fingerless leather gloves on right hand, canvas trousers, aged heavy boots. Wedding band on right ring finger. Posture slightly forward, patient evaluative gaze. GLMZ Great Lakes Metropolitan Zone setting, industrial workspace ambiance, warm practical lighting catching the metallic prosthetic and textured hands, moody and contemplative atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 39.5,
-    "Hispanic/Latin American": 25.4,
-    "Sub-Saharan African": 25.0,
-    "East Asian": 10.1
+    "Hispanic/Latin American": 48.5,
+    "Sub-Saharan African": 30.8,
+    "Indigenous American": 11.6,
+    "North African": 7.3,
+    "South Asian": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 48.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 11.1
+      },
+      "West African": {
+        "Guinean": 9.3
+      },
+      "Central African": {
+        "Gabonese": 10.4
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Ojibwe": 1.9,
+        "Menominee": 3.2
+      },
+      "Andean": {
+        "Quechua": 3.2,
+        "Mapuche": 1.7
+      },
+      "Plains Nations": {
+        "Lakota": 1.6
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Berber": 2.6,
+        "Kabyle": 1.1
+      },
+      "Nile Valley": {
+        "Egyptian": 1.9,
+        "Sudanese": 0.5
+      },
+      "Maghreb": {
+        "Tunisian": 1.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 0.7,
+        "Pashtun": 1.1
+      }
+    }
+  }
 }

@@ -1,13 +1,13 @@
 {
   "id": "4feff42c3d1c48a1ed1dee0f5f0eec18",
-  "name": "Aurelio Esquivel-Chakraborty",
+  "name": "Sable Keïta-Suzuki",
   "type": "character",
   "aliases": [
     "Ironclad",
     "The Auditor"
   ],
   "role": "Private Investigator",
-  "description": "Thandiwe Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
+  "description": "Sable Keïta-Suzuki is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
   "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
   "tier": "Tier 4",
   "location": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district, near Lake Shore Drive and Division",
@@ -63,28 +63,19 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "WELLSPRING",
     "The Shelf",
     "The Heritage Vault",
     "Tessera Corponation",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Déjà Vu",
-    "Arcturus MN-3 'Digger'",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Alper Lebedev-Tutu",
-    "MERIDIAN",
-    "Ouroboros UT-1 'Worm'",
-    "Vantablack BC-1 'Briefcase'",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure"
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "GLMZ",
+    "Arcturus MN-3 'Digger'"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Hispanic/Latin American with significant South Asian ancestry, with minor Pacific Islander heritage—a striking blend resulting in warm, olivaceous skin tones with golden undertones. Her features reflect both lineages: the defined bone structure and warm complexion of Latin America combined with the subtle eye shape and facial proportions influenced by South Asian genetics.",
+    "heritage": "Sable carries a striking genetic tapestry: 43.8% East Asian ancestry provides defined cheekbones, eye depth, and precise facial proportions; 34.5% Sub-Saharan African heritage contributes warm golden undertones to her skin and strong bone structure; 21.7% Northern European ancestry adds subtle softness to her jawline and complexity to her overall phenotype. The result is a face of beautiful ambiguity—luminous warm brown skin with golden-honey undertones that seem to shift in different light, unmarred and meticulously maintained. Her features defy easy categorization, reading as elegantly cosmopolitan rather than rooted to any single region.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, musculature defined by discipline rather than bulk. Efficient rather than imposing — a frame built for sustained focus and precise movement, not intimidation.",
@@ -92,8 +83,8 @@
     "hair_style": "Pulled back in a tight, functional braid or wrapped in a sleek low knot",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Deep brown with warm amber undertones, unnervingly steady",
-    "skin_tone": "Warm olive-golden complexion with honeyed undertones, the result of blended Hispanic/Latin American and South Asian ancestry. Unmarred and maintained with precision.",
-    "complexion": "Strong, defined cheekbones with gentle South Asian softness, precise jawline, minimal expression lines despite age—a face trained not to broadcast emotion. Eyes set with the characteristic depth of South Asian heritage. Skin condition is immaculate; grooming is ritualistic and flawless.",
+    "skin_tone": "Rich warm brown with golden-honey undertones, luminous and unmarred. The complexion reflects the balanced blend of her East Asian, Sub-Saharan African, and Northern European ancestry, suggesting both careful genetics and meticulous self-care.",
+    "complexion": "Strong, defined cheekbones reflecting African and East Asian heritage structure, precise jawline with subtle softness characteristic of her mixed genetics, minimal expression lines despite age—a face trained not to broadcast emotion. Eyes set with characteristic depth, warm-toned iris with amber undertones. Skin condition is immaculate; grooming is ritualistic and flawless.",
     "distinguishing_marks": [
       "A thin white scar running 4cm along her left jawline, barely visible under professional lighting, likely from a blade or industrial accident",
       "Faint linear scarring on both wrists (inner forearm), barely 2mm wide, consistent with subcutaneous implant installation"
@@ -102,11 +93,42 @@
     "posture_movement": "Upright and economical. She moves with the controlled precision of someone who has trained muscle memory into a weapon. Her gaze lingers on details others miss. She does not fidget, does not shift weight, does not telegraph intent through body language — presence through stillness.",
     "clothing_style": "Tier 1 corporate formal: tailored midnight-blue or charcoal wool blazers, crisp white or ivory shirt-blouses, high-waisted black trousers with clean lines, minimal jewelry (a single platinum ring, understated). Footwear is expensive and silent — leather loafers or minimalist heels that allow her to move without sound. Her bag is a slim leather briefcase, well-maintained, no logos. Nothing is worn; everything is maintained. She dresses like someone who has learned that visibility is a liability and invisibility is a luxury."
   },
-  "image_prompt": "Aurelio Esquivel-Chakraborty, 178cm tall, lean angular frame with defined musculature. Warm olive-golden skin with honeyed undertones blending Hispanic and South Asian heritage. Sharp defined cheekbones with gentle facial softness, precise jawline, deep brown eyes with amber undertones showing characteristic depth. Natural black hair with silver at temples, pulled back in tight functional braid. Thin white scar along left jawline barely visible. Wearing tailored midnight-blue blazer, crisp white blouse, high-waisted black trousers. Single platinum ring, expensive silent leather loafers. Slim leather briefcase. Upright posture, controlled economical movement, unnervingly steady gaze. Corporate Tier 1 boardroom setting, cool professional lighting, immaculate grooming, minimal expression, presence through stillness. Cyberpunk 2226, GLMZ aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Sable Keïta-Suzuki, 178cm tall, lean angular build, standing in corporate boardroom lighting. Luminous warm brown skin with golden undertones, strong defined cheekbones blending East Asian and African heritage, subtle jawline softness, deep brown eyes with amber undertones. Black hair with silver temples pulled into tight functional braid. Immaculate grooming, thin white scar along left jawline barely visible. Wearing tailored midnight-blue wool blazer, crisp white shirt-blouse, high-waisted black trousers, expensive silent leather loafers. Single platinum ring. Upright posture, controlled precision, face trained not to broadcast emotion. Unnervingly steady gaze. GLMZ, GLMZ aesthetic, Tier 1 boardroom setting, cool professional lighting with warm undertones catching her skin. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 56.0,
-    "South Asian": 42.5,
-    "Pacific Islander": 1.5
+    "East Asian": 43.8,
+    "Sub-Saharan African": 34.5,
+    "Northern European": 21.7
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 13.5
+      },
+      "Korean": {
+        "Korean": 30.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 34.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 4.9
+      },
+      "Scandinavian": {
+        "Swedish": 5.3,
+        "Norwegian": 8.6
+      },
+      "Germanic": {
+        "Swiss German": 1.5,
+        "Dutch": 1.4
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower"
+  }
 }

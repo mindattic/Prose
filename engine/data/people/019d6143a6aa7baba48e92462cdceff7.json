@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6aa7baba48e92462cdceff7",
   "type": "character",
-  "name": "Sable Appiah-Nygaard",
+  "name": "Sable Song-Shirazi",
   "aliases": [
     "Raf",
     "Dustbin Raf"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Deepwell Station — lives in McKinley Flats in a modest building with structural damp he has stopped reporting, near sub-level access near Dearborn and Jackson",
-  "description": "Rafał is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nRafał has been collecting the city's biological refuse for sixteen years. He moves through GLMZ's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
+  "description": "Sable Song-Shirazi is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nSable Song-Shirazi has been collecting the city's biological refuse for sixteen years. He moves through GLMZ's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -178,7 +178,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -228,54 +228,85 @@
     "McKinley Flats",
     "Unregistered",
     "The Narrows Compact",
-    "GLMZ",
+    "Dearborn Forge",
     "TESSERA PA-5 'Attendant'",
-    "Aurochs Medical Complex",
-    "Aïssé Dragomirescu-Faalelei",
-    "Bogdan Achebe-Svanstrom",
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Ferrogate Transit",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nurlan Holmberg-Dembele",
-    "Patient Zero",
-    "Quilt",
-    "Slagworks Industrial",
-    "The Narrows",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Sub-Saharan African (57.6%) with significant Southeast Asian admixture (38.4%) and minor Hispanic/Latin American heritage (4.0%). Rich melanin-dominant complexion with warm undertones reflecting the depth of West and Central African ancestry, tempered by the lighter, more golden notes of Southeast Asian heritage creating a nuanced medium-to-deep brown skin tone.",
+    "heritage": "Eastern European (39.7%) forms the foundation of his ancestry, blended with significant East Asian (29.9%) and Middle Eastern (24.6%) heritage, with minor South Asian (4.3%) and Hispanic/Latin American (1.5%) contributions. This complex genetic mosaic creates a distinctly cosmopolitan phenotype—the broad facial structure and cooler undertones of Eastern European ancestry merge with the slightly tapered eye shape and warm golden undertones of East Asian heritage, while Middle Eastern ancestry contributes olive warmth and defined cheekbones. The result is a multitonal, beautifully complicated face that belongs to no single region.",
     "height_cm": 178,
     "weight_kg": 94,
     "build": "Thickset and muscular through heavy labor, broad shoulders tapering to a functional frame. Chest and forearms show developed muscle from sixteen years of lifting biohazard containers. Beginning to carry weight in the midsection from routine and modest diet, but still functionally strong.",
     "hair_color": "Faded reddish-brown with early grey at temples",
     "hair_style": "Pulled back under a work cap most hours; when loose, shoulder length and somewhat matted from perspiration and humidity",
     "hair_length": "Medium to Long",
-    "eye_color": "Dark brown with amber undertones, slightly bloodshot from early mornings and fluorescent work lighting",
-    "skin_tone": "Deep warm brown with golden undertones, perpetually flushed from physical exertion and the warmth of processing environments. The complexion reflects the blending of Sub-Saharan African depth with Southeast Asian warmth.",
-    "complexion": "Weathered and lined around the eyes and mouth from squinting in harsh light and years of tension. Perpetual five o'clock shadow with darkened facial hair typical of African heritage. Skin shows minor chemical irritation around the hairline and neck from repeated exposure to disinfectant compounds despite protective gear. Facial structure shows balanced admixture: broader nasal base and fuller lips reflecting African ancestry, with slightly higher cheekbones and eye shape influenced by Southeast Asian heritage.",
+    "eye_color": "Dark brown with warm amber undertones, slightly bloodshot from early mornings and fluorescent work lighting",
+    "skin_tone": "Medium to medium-deep warm brown with subtle olive undertones—a harmonious blend reflecting the Eastern European, East Asian, and Middle Eastern ancestry. Perpetually flushed from physical exertion and the warmth of processing environments.",
+    "complexion": "Weathered and lined around the eyes and mouth from squinting in harsh light and years of tension. Perpetual five o'clock shadow with darkened facial hair. Skin shows minor chemical irritation around the hairline and neck from repeated exposure to disinfectant compounds despite protective gear. Facial structure is distinctly mixed: moderate to broad bone structure with a balanced nasal bridge, defined cheekbones with subtle warmth, slightly tapered eye shape influenced by East Asian heritage, and facial proportions that reflect the harmonious blending of Eastern European and Middle Eastern components.",
     "distinguishing_marks": [
       "Thick scar running horizontally across lower back (lumbar support surgery scar from 2193 injury, visible when clothing rides up)",
-      "Chemical burn marks on the knuckles and back of both hands — pale, slightly raised tissue from splash exposure despite gloves, standing out against darker skin",
+      "Chemical burn marks on the knuckles and back of both hands—pale, slightly raised tissue from splash exposure despite gloves, standing out against darker skin",
       "Faint darkening around the eyes suggesting chronic sleep deprivation or allergic reactions to airborne particulates"
     ],
     "visible_augmentations": "None visible. Enhanced scent glands and lumbar support implant are subcutaneous/internal.",
-    "posture_movement": "Moves with economical precision developed through repetitive work — minimal wasted motion, slight protective hunch to the shoulders suggesting old back pain. Walks with the heavy-footed gait of someone perpetually carrying weight. Often touches his lower back unconsciously when standing for extended periods. Head tilts slightly when processing information — a subtle listening posture.",
+    "posture_movement": "Moves with economical precision developed through repetitive work—minimal wasted motion, slight protective hunch to the shoulders suggesting old back pain. Walks with the heavy-footed gait of someone perpetually carrying weight. Often touches his lower back unconsciously when standing for extended periods. Head tilts slightly when processing information—a subtle listening posture.",
     "clothing_style": "Tier 4 working-class utility wear. Faded grey or tan work coveralls (Vex-brand, industrial-grade) with multiple pockets and reinforced seams. Underneath: plain cotton undershirt, perpetually damp with perspiration. Steel-toed boots (scuffed, well-maintained). A synthetic parka for transit and outdoor waiting. A cloth work cap, stained and creased. No jewelry. Smells faintly but persistently of medical-grade disinfectant compounds (quaternary ammonium and phenolic derivatives) that no amount of showering fully removes."
   },
-  "image_prompt": "Sable Appiah-Nygaard, a deep brown-skinned man of mixed Sub-Saharan African and Southeast Asian heritage with warm golden undertones, 178cm tall with a thickset muscular build showing 16 years of industrial labor wear. Faded reddish-brown hair with early grey at temples, pulled under a stained work cap. Dark brown eyes with amber undertones, slightly bloodshot. Weathered face with stronger cheekbones and broader features reflecting his diverse ancestry. Wearing faded grey Vex-brand work coveralls with reinforced seams, plain undershirt visible and damp with perspiration, scuffed steel-toed boots. Chemical burn scars visible on knuckles and hands. Posture shows protective shoulder hunch from old back injury, economical precise movement. Cyberpunk 2226 Great Lakes Metropolitan processing facility, harsh fluorescent overhead lighting casting shadows across weathered features. Industrial environment with faint medical disinfectant smell lingering in the air. Gritty, authentic working-class aesthetic, early morning shift, fatigued but focused expression. --ar 2:3 --v 6",
+  "image_prompt": "Sable Song-Shirazi, 178cm tall, thickset muscular frame showing sixteen years of heavy labor wear. Medium-deep warm brown skin with olive undertones, ethnically ambiguous with Eastern European, East Asian, and Middle Eastern blended features—slightly tapered eyes with dark amber undertones, defined cheekbones, balanced nasal bridge. Faded reddish-brown hair with grey at temples, shoulder-length, pulled back under stained work cap. Weathered face with lines around eyes, perpetual five o'clock shadow, chemical burn scars pale against dark skin on knuckles and hands. Wearing faded grey Vex-brand industrial coveralls, synthetic parka, steel-toed boots. Standing in a biohazard processing facility with fluorescent lighting casting harsh shadows, posture slightly protective with subtle shoulder hunch. Tired, blood-shot gaze. Faint disinfectant smell apparent. GLMZ Great Lakes Metropolitan Zone working-class laborer. Gritty, exhausted, functionally strong. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 57.6,
-    "Southeast Asian": 38.4,
-    "Hispanic/Latin American": 4.0
+    "Eastern European": 39.7,
+    "East Asian": 29.9,
+    "Middle Eastern": 24.6,
+    "South Asian": 4.3,
+    "Hispanic/Latin American": 1.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 13.6,
+        "Sorbian": 26.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 22.7
+      },
+      "Japanese": {
+        "Japanese": 7.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 15.3
+      },
+      "Persian": {
+        "Tajik Persian": 5.1,
+        "Iranian": 4.2
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 1.1
+      },
+      "Pakistani": {
+        "Sindhi": 1.3
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 0.4
+      },
+      "Mexican": {
+        "Mexican": 1.1
+      }
+    }
+  }
 }

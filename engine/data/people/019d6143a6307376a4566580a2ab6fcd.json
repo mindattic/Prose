@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6307376a4566580a2ab6fcd",
   "type": "character",
-  "name": "Quinn Szczypiński",
+  "name": "Quinn Tran",
   "aliases": [
     "Imke"
   ],
@@ -12,7 +12,7 @@
   "age": 24,
   "status": "active",
   "location": "Mexicantown Libre, the Arroyo Block community childcare center (a converted ground-floor retail unit in a residential stack), near Ashland and Division",
-  "description": "Imke is slight and quick, with a long face, deep-set dark eyes, and tawny-brown skin that freckles across the nose in summer. She has color-changing hair (geneware) that she keeps short and lets cycle between whatever she feels like — currently a slow rotation from copper to emerald that takes about eight hours per cycle. She moves through the childcare space with a distinctive economy of motion, always oriented toward the highest-need point in the room, a habit so ingrained she does it at parties.\n\nShe is twenty-four and has been doing this work since she was eighteen and too old for the same creche herself. She is not sentimental about children — she finds them genuinely interesting and often funnier than adults — but she has no illusions about the structural underfunding that defines every day of her work. She earns near-UBC wages for a job that requires genuine skill and drains her emotionally in ways she is still learning to manage. She has an analytical streak that people tend to underestimate because of her age and the nature of her work.",
+  "description": "Quinn Tran is slight and quick, with a long face, deep-set dark eyes, and tawny-brown skin that freckles across the nose in summer. She has color-changing hair (geneware) that she keeps short and lets cycle between whatever she feels like — currently a slow rotation from copper to emerald that takes about eight hours per cycle. She moves through the childcare space with a distinctive economy of motion, always oriented toward the highest-need point in the room, a habit so ingrained she does it at parties.\n\nShe is twenty-four and has been doing this work since she was eighteen and too old for the same creche herself. She is not sentimental about children — she finds them genuinely interesting and often funnier than adults — but she has no illusions about the structural underfunding that defines every day of her work. She earns near-UBC wages for a job that requires genuine skill and drains her emotionally in ways she is still learning to manage. She has an analytical streak that people tend to underestimate because of her age and the nature of her work.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -157,7 +157,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,26 +183,11 @@
     "Big Rig",
     "Copper",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus CK-5 'Bloodhound'",
-    "Ambrogio Waweru-Djordanović",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Lazarus CH-3 'Mercy Fog'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Tessera Corponation",
-    "Tessera TK-7 Service Pistol 'Ticker'",
-    "The Burden Clause",
-    "The Collective",
-    "The Peninsula",
-    "The Pure Hand",
-    "Thessaly Oduya-Varga",
-    "Vantablack VO-1 'Looking Glass'",
-    "VitaCore CardiaWatch Cardiac Rhythm Implant",
-    "Yuki Nwosu-Petrenko"
+    "Arcturus CK-5 'Bloodhound'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern and Eastern European (38.4% Northern European, 31.0% Eastern European) with significant East Asian ancestry (20.5%) and Indigenous American heritage (10.1%). This genetic combination creates a striking phenotype: moderate bone structure with subtle facial features reflecting the Eastern European and East Asian blend, warm undertones from the Indigenous American ancestry.",
+    "heritage": "Southeast Asian (33.4%) with significant Hispanic/Latin American (22.4%), East Asian (17.6%), South Asian (9.8%), Sub-Saharan African (9.3%), and Middle Eastern (7.5%) ancestry. This complex genetic blend creates a distinctly cosmopolitan phenotype: warm medium bone structure with facial features reflecting the Southeast Asian majority and East Asian secondary influence, rich warm undertones from the blended ancestry creating a naturally sun-kissed complexion.",
     "height_cm": 162,
     "weight_kg": 51,
     "build": "Slight and wiry with efficient musculature from constant movement. Lean shoulders, minimal body fat, the build of someone who is always in motion and doesn't have time to gain weight.",
@@ -210,8 +195,8 @@
     "hair_style": "Short, textured, deliberately low-maintenance. Cut close at the sides, slightly longer on top for color visibility. Practical styling that requires minimal grooming time.",
     "hair_length": "Short",
     "eye_color": "Deep brown, natural",
-    "skin_tone": "Warm olive to warm tan with golden-amber undertones. The blend of Northern European, Eastern European, East Asian, and Indigenous American ancestry creates a complexion that reads as warm-neutral, neither cool nor heavily golden, with slight seasonal variation.",
-    "complexion": "Moderately angular face with gently prominent cheekbones and well-defined jawline reflecting Eastern European and East Asian heritage. Deep-set eyes with a slight epicanthic fold suggestion from the East Asian ancestry. Faint summer freckles across the nose and upper cheeks. Clear skin with minimal scarring, minimal makeup — functional grooming only. Expression tends toward focused alertness.",
+    "skin_tone": "Warm golden-tan with honeyed undertones, subtly deepened by Sub-Saharan and South Asian heritage. The blend of Southeast Asian, Hispanic/Latin American, East Asian, South Asian, and Middle Eastern ancestry creates a complexion that is naturally warm-golden, rich and luminous, with subtle seasonal deepening and warm radiance.",
+    "complexion": "Moderately angular face with gently prominent cheekbones and well-defined jawline reflecting Southeast Asian and East Asian heritage, softened by South Asian and Hispanic/Latin American features. Dark deep-set eyes with a subtle epicanthic fold from East Asian ancestry. Warm brown undertones in the skin enriched by Sub-Saharan and South Asian genetics, with occasional faint freckles or sun spots across the nose and upper cheeks. Clear skin with minimal scarring, minimal makeup — functional grooming only. Expression tends toward focused alertness.",
     "distinguishing_marks": [
       "Faint scars on both hands from small burns and cuts accumulated through childcare work (kitchen accidents, craft materials)",
       "Callus on left index and middle fingers from pen/stylus use",
@@ -221,15 +206,61 @@
     "posture_movement": "Economical movement with constant low-level scanning of the environment. Stands balanced as if ready to move in any direction. Even at rest, her attention distributes across multiple points — a habit carried from childcare into all contexts. Moves quickly but never frantically. Sits upright, rarely fully relaxes posture.",
     "clothing_style": "Tier 4 practical — durable, washable, functional. Cotton and synthetic blend work clothes: fitted long-sleeve shirt or lightweight sweater (in muted earth tones or jewel tones that complement her hair cycle), dark cargo pants or work leggings with deep pockets. Practical slip-on shoes (canvas or synthetic). No logos or brand signaling. Occasionally wears a lightweight utility jacket over everything. Minimal jewelry — possibly a simple bracelet or watch. Everything is chosen for durability and ease of cleaning. Thrift or secondhand sourcing evident in fit/styling."
   },
-  "image_prompt": "Quinn Szczypiński, 162cm tall, slight wiry build, woman with warm olive-tan skin and angular face with East Asian-influenced bone structure. Deep brown natural eyes, short textured hair currently cycling from copper toward emerald via geneware. Faint freckles across nose, minimal makeup, functional grooming. Wearing fitted muted earth-tone long-sleeve shirt and dark cargo pants, practical slip-on shoes. Economical posture, balanced stance showing constant environmental awareness. Standing in a neon-lit GLMZ 2226 corridor, cool blue and purple light casting shadows across her face, showing the subtle color-shift of her hair geneware mid-cycle. Cyberpunk aesthetic, minimalist augmentation, focused alert expression, low-light urban setting --ar 2:3 --v 6",
+  "image_prompt": "Quinn Tran, 162cm lean wiry frame, warm golden-tan complexion with honeyed undertones blending Southeast Asian, East Asian, Hispanic, South Asian, Sub-Saharan African and Middle Eastern heritage, moderately angular face with prominent cheekbones and deep brown eyes, short textured hair with color-cycling geneware shifting copper-to-emerald spectrum currently mid-cycle toward emerald, practical Tier 4 clothing in muted earth and jewel tones, dark cargo pants, worn canvas shoes, faint hand scars from childcare work visible, economical posture with alert environmental scanning, GLMZ Great Lakes Metropolitan Zone, cool neon ambient lighting with warm practical work-space setting, focused determined expression, documentary-style portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 38.4,
-    "Eastern European": 31.0,
-    "East Asian": 20.5,
-    "Indigenous American": 10.1
+    "Southeast Asian": 33.4,
+    "Hispanic/Latin American": 22.4,
+    "East Asian": 17.6,
+    "South Asian": 9.8,
+    "Sub-Saharan African": 9.3,
+    "Middle Eastern": 7.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 33.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 16.5
+      },
+      "South American": {
+        "Brazilian": 4.2,
+        "Peruvian": 0.7
+      },
+      "Caribbean": {
+        "Puerto Rican": 1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 17.6
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Telugu": 9.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 6.2
+      },
+      "Southern African": {
+        "South African": 2.4,
+        "Zambian": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 2,
+        "Yemeni": 5.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b1746d991d4317617c5a63",
   "type": "character",
-  "name": "Onyx Pathak-Delgado",
+  "name": "Onyx Mwangi-Park",
   "aliases": [
     "Venom",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Division",
-  "description": "Aminata Strand-Otieno is compact and densely muscled, built low to the ground like something designed to survive impacts. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAminata Strand-Otieno is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Onyx Mwangi-Park is compact and densely muscled, built low to the ground like something designed to survive impacts. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nOnyx Mwangi-Park is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.41,
@@ -262,7 +262,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,32 +276,15 @@
   "registered_firearms": [],
   "related_entities": [
     "The Heritage Vault",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Diaspora Table",
     "The Gradient Compact",
     "Stratum",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Breck Tannen",
-    "Chibundo Reinholt-Sarpong",
-    "Ezio Kaboré-Malhotra",
-    "GLMZ",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Ilhan Sandstrom-Badu",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Réginald Asomaning-Čabarkapa",
-    "Street Custom 'Cigarette' Pen Gun",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Shelf",
-    "Tomasz Wren",
-    "Vesna Čolić-Strand"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiheritagé blend — South Asian (31.9%), Hispanic/Latin American (30.8%), Indigenous American (22.6%), with Eastern European (9.1%) and Sub-Saharan African (5.6%) ancestry creating a complex warm-toned phenotype. Features reflect convergence of Andean and South Asian bone structure with African and Eastern European secondary traits.",
+    "heritage": "Complex Pan-Global ancestry with Sub-Saharan African dominance (57.1%) creating foundational bone structure and skin depth, significantly blended with South Asian (19.8%) and East Asian (15.6%) features that refine facial architecture and add subtle eye shape variation. Minor Middle Eastern (5.2%) and Southeast Asian (2.3%) ancestry contribute warmth and complexity to overall phenotype. The result is a distinctively layered appearance—broad Sub-Saharan features softened by South Asian cheekbone prominence and East Asian eye-set, creating a phenotype that reads as genuinely Pan-Diaspora rather than any single heritage.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, forearms corded with functional strength rather than display muscle.",
@@ -309,8 +292,8 @@
     "hair_style": "Kept short and practical, faded sides, slightly longer on top — easy to maintain between identities",
     "hair_length": "Short",
     "eye_color": "Augmented — chrome iris rings surrounding natural dark brown pupils, capable of thermal and low-light overlay",
-    "skin_tone": "Rich warm brown with golden and olive undertones — the blended result of South Asian and Indigenous American ancestry dominant, warmed further by Hispanic/Latin American and Sub-Saharan African heritage. Underlying warmth suggests years under varied climates.",
-    "complexion": "Weathered but maintained. Facial structure shows prominent cheekbones and defined jawline consistent with Indigenous American and South Asian ancestry. Fine lines around the eyes from sustained focus work. Nose bridge slightly broad with subtle aquiline slope. Grooming is deliberate and controlled — nothing that draws attention, nothing that reads as neglect.",
+    "skin_tone": "Deep warm brown—the dominant Sub-Saharan African base enriched by South Asian undertones creating subtle golden warmth, further complexified by East Asian influence that prevents harshness. Years under varied climates have added character without diminishing the natural richness of tone.",
+    "complexion": "Weathered but maintained. Facial structure shows the characteristic blend of Sub-Saharan African prominence (broad nose bridge, full lips, wide-set eyes positioned with slight East Asian cant) refined by South Asian cheekbone definition and jawline structure. Fine lines around the eyes from sustained focus work. Grooming is deliberate and controlled—nothing that draws attention, nothing that reads as neglect.",
     "distinguishing_marks": [
       "Hairline scar tissue across the left temple and upper scalp, irregular and puckered — site of cortical bomb removal by street doc.",
       "Thin white scar running from left cheekbone toward jawline, approximately 4 centimeters, likely from blade work.",
@@ -320,16 +303,61 @@
     "posture_movement": "Economy of motion. Stands with slight forward cant, shoulders relaxed but ready. Moves quietly and deliberately, weight distributed low. Hands at rest are still — no nervous gesturing. Eyes track constantly, not paranoid but attentive. Transitions between civilian slouch (cover identity) and operational posture are visible to trained observers.",
     "clothing_style": "Tier 3-4 functional. Unmarked synthleather jacket worn soft from use, matte black. Underneath: nondescript long-sleeve shirt in neutral gray that can pass in both corporate buildings and street-level bars. Cargo pants with reinforced seams and subtle gear loops. Worn boots with good tread — made for running or standing long hours. No obvious logos or affiliation markers. Dressed to be forgotten, not to impress."
   },
-  "image_prompt": "Cyberpunk 2226 operative named Onyx, compact frame 168cm, muscular and low-slung. Golden-warm brown skin blending South Asian, Indigenous American, Hispanic, Eastern European heritage. Dark brown hair short with gray at temples, sharp cheekbones and defined jaw. Chrome iris rings glowing faintly around dark pupils, capable of thermal overlay. Visible scar tissue at left temple from cortical augmentation removal, thin white blade scar from cheekbone to jaw, small burn mark on forearm. Wearing matte black worn synthleather jacket over neutral gray long-sleeve, cargo pants with reinforced seams, scuffed boots. Standing in industrial GLMZ nighttime setting, neon reflections on wet concrete, slight forward posture radiating quiet operational readiness. Economy of motion frozen mid-step. Low-key lighting emphasizing chrome eye augmentations and scar details. Mood: dangerous professional, forgotten ghost, ready. No visible gang affiliations or corporate markers. --ar 2:3 --v 6",
+  "image_prompt": "Onyx Mwangi-Park, 168cm tall compact muscular frame, deep warm brown skin with golden undertones blending Sub-Saharan, South Asian, and East Asian features—broad prominent cheekbones, defined jawline, wide-set dark eyes framed by distinctive chrome iris rings with visible thermal overlay capability, hairline scar tissue across left temple from street doc augmentation work, thin white blade scar on left cheekbone, dark brown hair faded at sides longer on top with gray threading at temples. Wearing worn matte black synthleather jacket over neutral gray long-sleeve shirt, reinforced cargo pants, practical worn boots. Standing in low ready posture with economy of motion, hands at rest, eyes tracking. GLMZ Great Lakes Metropolitan Zone, neon-lit night setting with rain-slicked street, moody atmospheric lighting, professional operative aesthetic, forgotten-by-design clothing, subtle augmentation scars visible. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 31.9,
-    "Hispanic/Latin American": 30.8,
-    "Indigenous American": 22.6,
-    "Eastern European": 9.1,
-    "Sub-Saharan African": 5.6
+    "Sub-Saharan African": 57.1,
+    "South Asian": 19.8,
+    "East Asian": 15.6,
+    "Middle Eastern": 5.2,
+    "Southeast Asian": 2.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 12,
+        "Nigerian": 2.2
+      },
+      "East African": {
+        "Kenyan": 6.5,
+        "Ethiopian": 9.1
+      },
+      "Southern African": {
+        "Zimbabwean": 27.3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 5.4
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 7.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 6.9
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 15.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 5.2
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 1
+      },
+      "Filipino": {
+        "Bicolano": 0.8,
+        "Tagalog": 0.5
+      }
+    }
+  }
 }

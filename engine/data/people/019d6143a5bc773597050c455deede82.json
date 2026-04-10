@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5bc773597050c455deede82",
   "type": "character",
-  "name": "Juno Strömqvist-Mukherjee",
+  "name": "Juno Abdykadyrov-Adu",
   "aliases": [
     "Ozone",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and North Ave",
-  "description": "Aybek Sato-Poku is lean and angular, all sharp edges and visible tension. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bodyguard out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Sato-Poku has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Juno Abdykadyrov-Adu is lean and angular, all sharp edges and visible tension. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bodyguard out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nJuno Abdykadyrov-Adu has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.82,
@@ -265,7 +265,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,45 +280,29 @@
     "Volkov-Saito Precision VS-40 'Magistrate'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Circuit",
     "The Nearfield",
+    "Circuit",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
+    "Felix Roundtree",
     "Pellucid Systems",
-    "Clover",
-    "The Milwaukee Core",
-    "Bintou Halvorsen-Osei",
-    "Brecken Yılmaz-Osei",
-    "Cezar Watanabe-Gyasi",
-    "Crucible RE-2 'Receptionist'",
-    "Dzemal Acholonu-Patagiri",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Irontide Tidal Energy",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Prophet",
-    "Spire Light on Still Water",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multiethnic diaspora blend: South Asian (32.6%) forms the base warmth of her complexion, combined with Hispanic/Latin American (22.3%) undertones, East Asian (18.6%) contributing to facial structure and eye shape, Eastern European (14.9%) ancestry adding angular cheekbone prominence, and Sub-Saharan African (11.6%) enriching skin depth and undertone complexity. The result is a warm medium-to-medium-dark brown with golden and reddish undertones, particularly visible at her temples and jawline.",
+    "heritage": "Central Asian-dominant diaspora: 62.7% Central Asian ancestry (historically Turkic and Mongolic populations) forms the primary genetic base, combined with 25.4% East Asian contributing to facial structure, eye shape, and cheekbone prominence, and 11.9% Sub-Saharan African enriching skin depth and undertone warmth. The genetic blend produces a warm medium brown complexion with subtle golden undertones, characteristic of the historical Silk Road crossroads reflected in her ancestry.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with corded muscle definition from combat conditioning and maintenance work. No excess body fat — functional frame optimized for speed and precision rather than power.",
     "hair_color": "Black with natural blue-black sheen",
     "hair_style": "Pulled back in a tight, utilitarian braid that runs down the back of her skull. Occasionally worn loose, but function dictates containment.",
     "hair_length": "Long",
-    "eye_color": "Dark brown — natural, unaugmented, but with the flat intensity of someone who watches for threats automatically",
-    "skin_tone": "Warm medium-dark brown with golden-reddish undertones blending South Asian warmth, Hispanic/Latin American depth, and Sub-Saharan African richness. Skin shows the pallor of nocturnal living — not sallow, but lacking the sun exposure of day-dwellers.",
-    "complexion": "Sharp cheekbones and angular jaw with the geometric precision characteristic of East Asian and Eastern European ancestry, minimal facial fat. Facial structure shows South Asian width through the midface, balanced by the prominent angularity of her cheekbones. A few surgical scars visible at the temples from cyberear installation, white against darker skin.",
+    "eye_color": "Dark brown — natural, unaugmented, with the flat intensity of someone who watches for threats automatically",
+    "skin_tone": "Warm medium brown with golden undertones, slightly deepened by the Sub-Saharan African component. Nocturnal pallor prevents sun-darkening, but the underlying warmth remains evident. Not sallow — luminous against darker lighting.",
+    "complexion": "Broad midface width characteristic of Central Asian ancestry balanced by prominent, angular cheekbones influenced by East Asian heritage. Eye shape shows East Asian configuration with slight epicanthic fold. Minimal facial fat reveals sharp jawline and defined bone structure. Warm golden-brown skin tone consistent throughout. A few surgical scars visible at the temples from cyberear installation, white against the darker skin.",
     "distinguishing_marks": [
       "Installation scarring around both temples where cyberears connect subcutaneously — fine white lines roughly 3cm long, partially concealed by hairline",
       "Thin white scar along left jawline from jaw-edge armor plating seam — runs from ear to chin, barely noticeable unless lit from the side",
@@ -329,16 +313,37 @@
     "posture_movement": "Economical and alert. Stands with weight distributed for rapid movement in any direction. Her head tracks sounds independently of where her eyes are looking — a behavioral tic from the cyberears' directional sensitivity. Moves with the controlled precision of someone trained to avoid wasted motion. When relaxed, there's still tension in her shoulders and hands.",
     "clothing_style": "Tier 4 utilitarian — function over flash, built for the work. Black syntileather jacket with reinforced shoulders and sleeves, worn open most nights. Fitted dark gray thermal undershirt (helps regulate body temperature during nocturnal hours). Black tactical cargo pants with multiple sealed pockets for tools, ammunition, or data chips. Steel-toed boots, scuffed and well-maintained. A single silver bracelet on her left wrist — antique, possibly family — is the only personal jewelry. No visible corpo logos or affiliation markers. Minimal grooming products; her appearance is by necessity, not design."
   },
-  "image_prompt": "Juno Strömqvist-Mukherjee, lean 172cm mixed-heritage female, warm medium-dark brown skin with golden undertones, sharp Eastern European-influenced cheekbones blended with South Asian midface width, dark unaugmented eyes, black hair in tight functional braid. Brushed chrome cyberears mounted flush against skull with visible microphone arrays. Subdermal armor plating creates geometric distortions under fitted dark gray thermal undershirt and black syntileather jacket. White installation scars at temples, thin scar along left jawline, surgical precision evident in cybernetic integration. Black tactical cargo pants, steel-toed boots, silver antique bracelet. Standing alert in neon-soaked Great Lakes Metropolitan Zone warehouse, nocturnal lighting casting hard shadows across her angular frame, subdermal armor plating visible as geometric shapes under skin as she shifts weight. Cyberpunk 2226, utilitarian, economical posture, functional aesthetic, ready stance. --ar 2:3 --v 6",
+  "image_prompt": "Juno Abdykadyrov-Adu, 172cm lean angular woman with warm medium-brown skin and golden undertones, black hair in tight utilitarian braid, dark brown eyes with intense watchful expression. Broad midface width and prominent angular cheekbones reflecting Central Asian-East Asian-African blend. Visible brushed chrome cyberears flush against skull with microphone arrays. Fine white scarring at temples, thin scar along left jawline. Black syntileather jacket worn open over dark gray thermal undershirt, black tactical cargo pants, steel-toed boots. Silver antique bracelet on left wrist. Subdermal armor plating visible under skin creating geometric distortions, creates uncanny lines beneath fitted clothing. Standing alert with economical posture, weight distributed for rapid movement. Nocturnal near-future megacity setting, cool blue and amber neon lighting, gritty industrial background, moody atmospheric 2226 Great Lakes Metropolitan Zone aesthetic. Sharp focus on angular facial structure and functional augmentations. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 32.6,
-    "Hispanic/Latin American": 22.3,
-    "East Asian": 18.6,
-    "Eastern European": 14.9,
-    "Sub-Saharan African": 11.6
+    "Central Asian": 62.7,
+    "East Asian": 25.4,
+    "Sub-Saharan African": 11.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Turkmen": 42.4,
+        "Uzbek": 20.3
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 25.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 5.5,
+        "Gabonese": 2.1
+      },
+      "West African": {
+        "Ghanaian": 2.7,
+        "Nigerian": 1.6
+      }
+    }
+  }
 }

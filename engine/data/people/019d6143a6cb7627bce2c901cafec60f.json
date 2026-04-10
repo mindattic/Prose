@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6cb7627bce2c901cafec60f",
   "type": "character",
-  "name": "Echo Vestergaard",
+  "name": "Rajan Malhotra",
   "aliases": [
     "Seva",
     "The Lung"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Hamtramck Enclave, repurposed boiler hall called The Kettle, near Kedzie and Division",
-  "description": "Sevastiané is tall and angular with the kind of stillness that makes people nervous until the music starts. Their skin has a faint bioluminescent quality — an old geneware mod that pulses amber-gold when their heart rate elevates, which means performances turn them into something like a living lantern. They keep their head shaved except for a single thick braid down the back, dyed the deep blue-green of the lake at night. Three subdermal resonance implants run along their jaw and collarbone, visible as faint ridges under the skin that hum at frequencies others feel in their molars.\n\nThey work by finding sounds that shouldn't exist — the groan of a Ferrogate Transit support beam in wind, the electrical whine of a failing ELF shrine, the subsonic thrum of the lake's wave patterns — and building compositions around them. Their shows are not concerts so much as environments. Audiences stand in the dark and are changed. Sevastiané is almost aggressively soft-spoken offstage, apologetic in the way of someone who knows they take up enormous space when they choose to.",
+  "description": "Rajan Malhotra is tall and angular with the kind of stillness that makes people nervous until the music starts. Their skin has a faint bioluminescent quality — an old geneware mod that pulses amber-gold when their heart rate elevates, which means performances turn them into something like a living lantern. They keep their head shaved except for a single thick braid down the back, dyed the deep blue-green of the lake at night. Three subdermal resonance implants run along their jaw and collarbone, visible as faint ridges under the skin that hum at frequencies others feel in their molars.\n\nThey work by finding sounds that shouldn't exist — the groan of a Ferrogate Transit support beam in wind, the electrical whine of a failing ELF shrine, the subsonic thrum of the lake's wave patterns — and building compositions around them. Their shows are not concerts so much as environments. Audiences stand in the dark and are changed. Rajan Malhotra is almost aggressively soft-spoken offstage, apologetic in the way of someone who knows they take up enormous space when they choose to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -181,7 +181,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -201,35 +201,15 @@
     "The Resonance Communion",
     "Bathysphere Networks",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Aslan Vasquez-Chatterjee",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Gold",
-    "Weathervane",
-    "Breck Tannen",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Highland Park Autonomous Zone",
-    "Idris Forsberg-Quaye",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Kethavar",
-    "Narrowcast",
-    "Nnenna Boateng-Szymański",
     "Noir Dining",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Signal",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask"
+    "The Lantern Room",
+    "The Boilermaker",
+    "Gold",
+    "Weathervane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Hispanic/Latin American and Indigenous American ancestry, complemented by minor Northern European heritage. This genetic blend creates a striking phenotype with East Asian bone structure refined by Latin American and Indigenous American features, with subtle Northern European undertones.",
+    "heritage": "Complex genetic mosaic reflecting the Ubiquitous Diaspora: South Asian ancestry (38.3%) forms the primary foundation, blended with significant Southeast Asian (22.4%) and Hispanic/Latin American (22.9%) heritage, accented by Sub-Saharan African (8.5%) and North African (7.9%) genetic contributions. This creates a striking phenotype where South Asian bone structure and facial proportions blend seamlessly with Southeast Asian refinement, enriched by the warmth and feature diversity of Hispanic/Latin American and Sub-Saharan African ancestry, resulting in a uniquely cosmopolitan appearance characteristic of 2226.",
     "height_cm": 188,
     "weight_kg": 72,
     "build": "Angular and lean, almost gaunt in the shoulders, with long limbs that suggest a swimmer or someone who moves through space economically. Minimal muscle definition but visibly strong in the forearms and hands.",
@@ -237,8 +217,8 @@
     "hair_style": "Single heavy braid running down the center back from crown to mid-spine; braid itself is textured, possibly wrapped with thin wire or fiber-optic threading",
     "hair_length": "Shaved except for braid",
     "eye_color": "Dark brown with faint luminescent amber undertones when bioluminescence activates",
-    "skin_tone": "Warm medium tan with golden and olive undertones from the East Asian and Hispanic/Indigenous heritage blend; has a faint waxy sheen from the bioluminescent geneware",
-    "complexion": "High, prominent cheekbones reflecting East Asian ancestry, long narrow face with subtle epicanthal folds, minimal facial hair. Skin appears almost preternaturally smooth with no visible scars or blemishes. Expression tends toward neutral or slightly withdrawn. Hands are expressive and calloused from equipment work.",
+    "skin_tone": "Warm medium to deep tan with complex, luminous undertones: golden from South Asian heritage, olive from Southeast Asian ancestry, enriched by the warm bronze and warm brown tones from Hispanic/Latin American and Sub-Saharan African genetics, with subtle amber undertones from North African ancestry, creating a radiant medium-deep complexion. Faint waxy sheen from bioluminescent geneware.",
+    "complexion": "Prominent, angular cheekbones reflecting blended South and Southeast Asian structure; long, refined face shape with subtle epicanthal folds; lower face width characteristic of South Asian ancestry with warmth from African and Latin American genetic input; minimal facial hair. Skin appears preternaturally smooth with no visible scars or blemishes. Hands are expressive and calloused from equipment work. Expression tends toward neutral or slightly withdrawn.",
     "distinguishing_marks": [
       "Three visible subdermal ridges running along the left jawline, faintly raised and parallel, approximately 2-3mm in height",
       "Matching three subdermal ridges along the right collarbone just below the shoulder, creating a subtle topographical pattern visible under the skin"
@@ -247,15 +227,57 @@
     "posture_movement": "Tall, with a tendency to fold slightly inward as if apologizing for the space their height occupies. Movements are deliberate and economical, almost meditative offstage. Hands move with precision. When performing or experiencing sound, entire body becomes animated — subtle swaying, hands tracing invisible frequencies, jaw clenching as implants activate.",
     "clothing_style": "Tier 3-4 working artist aesthetic. Typically wears loose-fitting, high-necked shirts or turtle necks in muted colors (charcoal, deep navy, burgundy) to showcase the collarbone implants and allow skin to breathe/luminesce. Favors layered, minimal jewelry except for a single thick silver or steel ring on the right middle finger (possibly jury-rigged equipment sync interface). Worn but clean workwear — cargo pants or utility trousers with functional pockets for recording equipment, reinforced at the knees. Carries a worn canvas shoulder bag with hydrophone array and mixing equipment. Footwear is practical and quiet (soft-soled boots or slip-ons). Overall aesthetic is deliberately understated offstage, expensive in its simplicity."
   },
-  "image_prompt": "Echo Vestergaard, tall androgynous cyberpunk sound artist, 188cm lean angular frame with East Asian facial structure and warm golden-tan complexion blending East Asian, Hispanic, and Indigenous American heritage. Shaved head with single thick braid dyed deep blue-green running down center back, wrapped with fiber-optic threading. High cheekbones, long narrow face, dark expressive eyes. Wearing high-neck charcoal turtleneck revealing three visible subdermal resonance ridge implants along jawline and collarbone, faintly luminous. Bioluminescent geneware glowing soft amber-gold beneath skin at sternum. Worn cargo utility pants, practical soft-soled boots. Canvas shoulder bag with recording equipment. Single steel ring on middle finger. Posture slightly folded inward, meditative. Cyberpunk 2226 GLMZ setting, moody atmospheric lighting with cool blues and warm amber bioluminescence, sound visualization particles floating around figure, nighttime recording studio ambiance. Cinematic depth, introspective mood. --ar 2:3 --v 6",
+  "image_prompt": "Rajan Malhotra, a 188cm tall lean-angular neo-noir sound artist with warm medium-deep caramel-bronze complexion reflecting South Asian, Southeast Asian, Hispanic, Sub-Saharan African, and North African heritage blend. Shaved head with single thick deep blue-green braid running down center back. Dark brown eyes with subtle amber bioluminescence. High-angled cheekbones, refined face structure, minimal facial hair. Wearing loose charcoal high-neck turtleneck showcasing three visible subdermal ridges along right collarbone, pulsing with amber-gold bioluminescent geneware. Utility cargo trousers, worn canvas shoulder bag with equipment. Single silver ring on right middle finger. Tall posture folding slightly inward, deliberate economical movement. Subdermal resonance implants visible along jawline. Waxy luminescent skin sheen. GLMZ aesthetic, dimly-lit recording studio or sound-design workspace, faint amber glow emanating from sternum during performance mode, moody introspective expression, hands poised near hydrophone array --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 46.2,
-    "Hispanic/Latin American": 34.7,
-    "Indigenous American": 10.7,
-    "Northern European": 8.4
+    "South Asian": 38.3,
+    "Hispanic/Latin American": 22.9,
+    "Southeast Asian": 22.4,
+    "Sub-Saharan African": 8.5,
+    "North African": 7.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 23.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5,
+        "Tamil Sri Lankan": 9.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 9.3,
+        "Honduran": 10
+      },
+      "Mexican": {
+        "Mexican": 3.6
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 22.4
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 6,
+        "Rwandan": 2.5
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 1.8,
+        "Algerian": 2.3
+      },
+      "Nile Valley": {
+        "Egyptian": 1.8,
+        "Sudanese": 2
+      }
+    }
+  }
 }

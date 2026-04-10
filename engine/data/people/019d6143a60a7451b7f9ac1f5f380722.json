@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60a7451b7f9ac1f5f380722",
   "type": "character",
-  "name": "Kira Soriano",
+  "name": "Kira Banerjee",
   "aliases": [
     "Zeke",
     "Uncle Brick"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, performs regularly at the Corrugated Stage open-air market, near Halsted and Division",
-  "description": "Ezekiel is a big man gone soft at the edges — broad shoulders still present under a frame that's added roundness over the decades, hands that look built for work but move with theatrical precision. His face is deeply lined, dark complexioned, with a grey-shot beard he trims every third day with aggressive inconsistency. His left eye is a cheap chrome replacement, matte silver with a fixed aperture that doesn't track quite right, which he uses deliberately in performance — holding the chrome eye on someone while the natural eye looks away creates an uncanny effect he calls 'the split.' He dresses in layers of mismatched secondhand, always some piece of vivid color — a patterned scarf, a lacquered button.\n\nEzekiel has been performing in Hamtramck Enclave for twenty-two years. He knows every family, every feud, every absurdity, and his comedy is the neighborhood talking to itself — sharp, intimate, tender with grief, and never punching at those who can't afford to lose. He's turned down three offers to perform in Meridian Core venues and one offer to consult on a Tessera-sponsored cultural feed. He is locally beloved and regionally unknown, which is precisely how he wants it. He is also, quietly, one of the best oral historians of the Enclave's last three decades.",
+  "description": "Kira Banerjee is a big man gone soft at the edges — broad shoulders still present under a frame that's added roundness over the decades, hands that look built for work but move with theatrical precision. His face is deeply lined, dark complexioned, with a grey-shot beard he trims every third day with aggressive inconsistency. His left eye is a cheap chrome replacement, matte silver with a fixed aperture that doesn't track quite right, which he uses deliberately in performance — holding the chrome eye on someone while the natural eye looks away creates an uncanny effect he calls 'the split.' He dresses in layers of mismatched secondhand, always some piece of vivid color — a patterned scarf, a lacquered button.\n\nKira Banerjee has been performing in Hamtramck Enclave for twenty-two years. He knows every family, every feud, every absurdity, and his comedy is the neighborhood talking to itself — sharp, intimate, tender with grief, and never punching at those who can't afford to lose. He's turned down three offers to perform in Meridian Core venues and one offer to consult on a Tessera-sponsored cultural feed. He is locally beloved and regionally unknown, which is precisely how he wants it. He is also, quietly, one of the best oral historians of the Enclave's last three decades.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -161,7 +161,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hamtramck Enclave",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,33 +179,15 @@
     "Meridian Core",
     "Irkalla",
     "Tessera Corponation",
-    "ARCHIVE",
-    "The Pure Hand",
     "Silver",
     "Nesting Doll",
-    "Ringo Corponation",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus KS-7 'Nursery'",
-    "Blessed Nkemdirim",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Dzemal Acholonu-Patagiri",
-    "Hadiya Karlsen-Sow",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Mika Sorel",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'",
     "Tenderloin",
-    "The Heritage Vault",
-    "Vantablack PD-8 'Whistle'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "The Pure Hand",
+    "Ringo Corponation"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (70.1%) with significant Sub-Saharan African (23.1%) and Eastern European (6.8%) ancestry — a robust blend reflecting the Ubiquitous Diaspora. Genetic heritage shows warm-toned deep complexion with African and Latin American features, subtle Eastern European bone structure in the face.",
+    "heritage": "South Asian (54.4%) with significant Hispanic/Latin American (25.3%) and East Asian (20.3%) ancestry — a striking blend reflecting the Ubiquitous Diaspora. Genetic heritage creates a warm medium-to-deep complexion with South Asian cheekbone and nasal structure, enriched by Latin American warmth in skin tone and subtle East Asian features in the eye shape and upper face geometry.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and heavy-set with a softened middle — muscular frame gone generous with age, the body of someone who once labored physically and now carries the comfort of years. Still powerful in the chest and arms despite the roundness.",
@@ -213,8 +195,8 @@
     "hair_style": "Kept short and natural, close to the scalp, greying beard trimmed irregularly in a deliberately unkempt manner — groomed roughly every third day with intentional inconsistency",
     "hair_length": "Short",
     "eye_color": "Left eye: matte silver chrome replacement with a fixed circular aperture; Right eye: dark brown, warm and quick",
-    "skin_tone": "Deep warm brown with golden undertones — the rich earthen complexion of blended Hispanic/Latin American and African heritage, sun-darkened from two decades of outdoor performance",
-    "complexion": "Deeply lined face carved by years of outdoor performance and sun exposure; expressive around the mouth and eyes; warm deep brown complexion emphasizes the stark contrast of the silver chrome left eye replacement; weathered but maintained with care, grooming shows intention despite its roughness. Bone structure suggests subtle Eastern European influence in the cheekbones and jaw.",
+    "skin_tone": "Medium-deep warm brown with golden-amber undertones — the rich complexion of blended South Asian, Hispanic/Latin American, and East Asian heritage, sun-darkened from two decades of outdoor performance",
+    "complexion": "Deeply lined face carved by years of outdoor performance and sun exposure; expressive around the mouth and eyes; warm medium-deep brown complexion with golden undertones emphasizes the stark contrast of the silver chrome left eye replacement; weathered but maintained with care, grooming shows intention despite its roughness. Bone structure reflects South Asian ancestry in pronounced cheekbones and bridge of nose, with East Asian influence in eye shape and upper face geometry, and Latin American warmth suffusing the overall coloration.",
     "distinguishing_marks": [
       "Left eye socket contains a matte silver chrome replacement with a fixed aperture that does not track naturally — the visible seam runs along the orbital ridge",
       "Thin scar tissue visible along the left side of the face from the industrial accident that claimed the original eye, partially obscured by beard",
@@ -225,14 +207,48 @@
     "clothing_style": "Layers of mismatched secondhand garments — functional, worn Tier 4-5 clothing that reads as deliberately eclectic rather than poor. Always incorporates one piece of vivid color: a patterned scarf in bold geometric designs, a lacquered button, a piece of dyed fabric. Jacket is likely faded denim or canvas, worn at the cuffs. Worn but clean — maintained with the same deliberate inconsistency as his beard. Footwear is practical, broken-in, moves quietly.",
     "mood_setting": "Street performer, weathered presence, deliberately unsettling but charismatic"
   },
-  "image_prompt": "Kira Soriano, 188cm tall, broad-shouldered heavy-set build with softened middle, deep warm brown skin with golden undertones, short black hair heavily streaked with grey, deliberately unkempt greying beard. Left eye is matte silver chrome replacement with fixed aperture and visible seam; right eye dark brown and warm. Face deeply lined from decades of sun exposure and outdoor performance, expressively weathered. Visible scar tissue on left side of face partially hidden by beard. Hands show old burn marks and calluses. Wearing layers of mismatched secondhand Tier 4-5 clothing including faded denim jacket, incorporates one vivid piece of color — bold geometric patterned scarf. Practical worn-in footwear. Standing grounded with performer's balanced stance, theatrical precision despite bulk. Cyberpunk 2226 street setting, neon-lit Great Lakes Metropolitan Zone background, moody atmospheric lighting emphasizing the chrome eye implant, urban decay aesthetic. Charismatic and deliberately unsettling presence. --ar 2:3 --v 6",
+  "image_prompt": "Kira Banerjee, 188cm tall broad-shouldered street performer with warm medium-deep brown skin blending South Asian, Hispanic/Latin American, and East Asian heritage. Pronounced South Asian cheekbones, East Asian eye geometry, golden-amber skin undertones. Short black hair heavily streaked with grey, irregular greying beard trimmed roughly. Left eye replaced with matte silver chrome cybernetic implant with fixed aperture and visible orbital seam; right eye dark brown and expressive. Weathered face deeply lined from decades of outdoor performance, theatrical posture perfectly balanced despite heavy-set build with softened middle. Wears mismatched secondhand Tier 4-5 layers in faded denim and canvas, incorporating one bold piece of vivid color — geometric patterned scarf or dyed fabric accent. Hands show industrial calluses and old burn marks used for precise theatrical gestures. Standing in urban street setting, GLMZ Great Lakes Metropolitan Zone, neon-lit evening, deliberately charismatic but unsettling presence, theatrical lighting emphasizing the chrome eye's metallic gleam against warm skin tone, gritty street performer aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 70.1,
-    "Sub-Saharan African": 23.1,
-    "Eastern European": 6.8
+    "South Asian": 54.4,
+    "Hispanic/Latin American": 25.3,
+    "East Asian": 20.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Malayali": 5.4
+      },
+      "Sri Lankan": {
+        "Sinhalese": 13.7,
+        "Tamil Sri Lankan": 7.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 28.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 23.9
+      },
+      "Mexican": {
+        "Mexican": 1.4
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 9.6
+      },
+      "Chinese": {
+        "Mandarin Northern": 7.5,
+        "Sichuanese": 2
+      },
+      "Japanese": {
+        "Japanese": 1.2
+      }
+    }
+  }
 }

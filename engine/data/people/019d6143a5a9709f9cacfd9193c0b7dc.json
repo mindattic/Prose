@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a9709f9cacfd9193c0b7dc",
   "type": "character",
-  "name": "Soren Horváth-Touré",
+  "name": "Soren Árnason-Sengupta",
   "aliases": [
     "Whet",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Alper Vega-Acheampong is lean and angular, all sharp edges and visible tension. At 58, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Alper Vega-Acheampong describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Soren Árnason-Sengupta is lean and angular, all sharp edges and visible tension. At 58, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Soren Árnason-Sengupta describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.17,
@@ -264,7 +264,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,30 +279,12 @@
   "related_entities": [
     "Ironveil Canopy",
     "The Shelf",
-    "Slagworks Industrial",
     "Chicago",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Irontide Tidal Energy",
-    "Kamala Mori-Sefa",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Quilt",
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "TESSERA CR-12 'Whisper'",
-    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Human Baseline Alliance",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Eastern European dominant (38.7%) with substantial Sub-Saharan African heritage (26.8%), blended with Indigenous American (10.9%), Hispanic/Latin American (10.4%), Southeast Asian (6.7%), and South Asian (6.5%) ancestry. The genetic mix creates striking intermediate phenotypic features — Eastern European bone structure with warm undertones from African and Latin American genetics, with subtle Southeast Asian refinement in cheekbones.",
+    "heritage": "Southeast Asian dominant (48.8%) blended with South Asian (44.2%) and Central Asian (7.0%) ancestry. The genetic combination creates refined intermediate phenotypic features — high, defined cheekbones and subtle eye shape from Southeast Asian genetics, warmed by the deeper skin tones and facial structure of South Asian heritage, with Central Asian bone structure adding subtle angularity to the jaw and face.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular with visible musculature from decades of weapon handling and sustained physical discipline. No excess body fat. Shoulders slightly narrower than average, but corded with functional strength.",
@@ -310,8 +292,8 @@
     "hair_style": "Pulled back in a functional braid, often wrapped with synthetic cord for field work",
     "hair_length": "Medium",
     "eye_color": "Dark brown, naturally warm but hardened by professional distance",
-    "skin_tone": "Rich warm medium brown — darker than olive, with golden-amber undertones from the Eastern European and Sub-Saharan blend. Sun damage from rooftop work creates irregular bronze freckling across cheekbones and shoulders, giving the skin a textured, lived-in appearance.",
-    "complexion": "Weathered face with deep lines around the eyes and mouth from squinting through scopes and years of stress. Jaw is strong and prominent with subtle flare at the angles — characteristic of mixed Eastern European and African heritage. High, defined cheekbones show Southeast Asian influence. Minimal grooming beyond functional necessity — no cosmetics, no jewelry.",
+    "skin_tone": "Warm medium to medium-deep brown with golden undertones — the rich, even tone characteristic of Southeast and South Asian heritage. Sun damage from rooftop work creates irregular bronze freckling across cheekbones and shoulders, giving the skin a textured, lived-in appearance.",
+    "complexion": "Weathered face with deep lines around the eyes and mouth from squinting through scopes and years of stress. Jaw is strong and prominent with subtle Central Asian angularity. High, defined cheekbones show Southeast Asian influence. Subtle facial structure reflects South Asian heritage in the bridge of the nose and overall facial proportions. Minimal grooming beyond functional necessity — no cosmetics, no jewelry.",
     "distinguishing_marks": [
       "Burn scar along the inside of her left forearm, pale and textured, approximately 8cm long — old weapons accident",
       "Thin scar tissue tracing her right collarbone, barely visible but sensitive to pressure — shrapnel from a contract gone wrong",
@@ -321,17 +303,44 @@
     "posture_movement": "Economical and deliberate. She doesn't waste motion. When at rest, her right arm rests naturally at her side with the augmented forearm slightly forward — a habit from weapon readiness. Eyes constantly scanning environments. Tense baseline, but controlled. Moves like someone who has learned that hesitation dies first.",
     "clothing_style": "Tier 4 utilitarian — function over aesthetics. Weathered black tactical jacket with reinforced shoulders and multiple chest pockets (Resilience brand, modular). Matte gray undershirt, long-sleeved to minimize the visibility of the smartgun link when she chooses discretion. Cargo pants in dark charcoal with thigh and calf pockets (ammunition, tools, dead drops). Steel-toed boots, scuffed and re-soled twice. A thin synthwool scarf worn loose around the neck — part camouflage, part utility. No visible insignia or gang markers; anonymity is the brand."
   },
-  "image_prompt": "Soren Horváth-Touré, cyberpunk 2226, mixed-heritage operative with rich warm medium-brown skin, high Eastern European cheekbones refined by Southeast Asian genetics, dark weathered complexion with bronze freckling. Dark brown hair pulled back in functional braid with silver at temples. Lean, corded build in matte black tactical jacket, long gray sleeves. Brushed titanium smartgun link interface glowing amber on right forearm. Sharp jawline, hardened dark eyes with professional distance, deep stress lines. Minimal grooming, no jewelry. Functional posture, right arm forward. Great Lakes Metropolitan Zone nighttime rooftop setting, cool blue and amber neon lighting, rain-slicked concrete surface, scanning surveillance, utilitarian cyberpunk aesthetic, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Soren Árnason-Sengupta, lean Southeast and South Asian woman, 172cm tall with defined high cheekbones and angular Central Asian jaw structure, warm medium-deep brown skin with bronze freckling from sun damage. Dark brown eyes with professional hardness, silver-streaked dark brown hair pulled back in functional braid. Severe facial weathering from decades of weapons work, deep lines around eyes and mouth. Dark tactical outfit: black reinforced jacket, gray long-sleeved undershirt, dark charcoal cargo pants, steel-toed scuffed boots, loose synthwool scarf. Chrome smartgun link interface embedded in right forearm — brushed titanium faceplate with LED indicators. Pale burn scar on left inner forearm, thin scar tissue on right collarbone, severe calluses on right hand. Economical posture, tense baseline, eyes scanning. Rooftop night setting, amber and red LED glow from augmentation, GLMZ Great Lakes Metropolitan Zone, cinematic lighting, documentary realism --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 38.7,
-    "Sub-Saharan African": 26.8,
-    "Indigenous American": 10.9,
-    "Hispanic/Latin American": 10.4,
-    "Southeast Asian": 6.7,
-    "South Asian": 6.5
+    "Southeast Asian": 48.8,
+    "South Asian": 44.2,
+    "Central Asian": 7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 19.7
+      },
+      "Cambodian": {
+        "Khmer": 29.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 8.9
+      },
+      "Nepali": {
+        "Nepali": 35.3
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 3.1,
+        "Buryat": 0.5
+      },
+      "Turkic": {
+        "Uzbek": 1.6
+      },
+      "Iranian Central": {
+        "Hazara": 1.8
+      }
+    }
+  }
 }

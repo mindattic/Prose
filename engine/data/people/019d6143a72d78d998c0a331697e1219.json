@@ -1,7 +1,7 @@
 {
   "id": "019d6143a72d78d998c0a331697e1219",
   "type": "character",
-  "name": "Orion Bangura",
+  "name": "Orion Möller",
   "aliases": [
     "Icy",
     "the Loft Ghost"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "The Loft, Edgewater Prism district, near Lincoln and Clark",
-  "description": "Yseult has the look of someone who spends most of their time inside illuminated spaces — her Ghanaian-Serbian complexion has an indoor pallor she compensates for with chromatic eye mods that shift through the visible spectrum in slow cycles, making her gaze feel like watching a sunset in real time. She's slight, precise in her movements, and habitually overdressed in a corporate-minimalist style that reads as slightly out of place in The Loft's more chaotic aesthetic — she worked a Tessera contract for three years and the wardrobe habits stuck even though she hates that they did. Her fingers are constantly moving, twitching through gestural commands on an AR layer only she can see.\n\nYseult builds experiences, not art objects — immersive holographic and VR environments commissioned for galleries, underground events, and occasionally for clients she won't name. She is technically brilliant and conversationally anxious, most comfortable when she can communicate through the work rather than through words. She has strong opinions about what holographic art should do — 'not decorate, not distract, but displace, just for a moment' — and will defend them at length if pressed, which is the one topic that makes her forget to be nervous. She left her Tessera contract under circumstances she describes as 'a philosophical disagreement,' which is technically true and also a significant understatement.",
+  "description": "Orion Möller has the look of someone who spends most of their time inside illuminated spaces — her Ghanaian-Serbian complexion has an indoor pallor she compensates for with chromatic eye mods that shift through the visible spectrum in slow cycles, making her gaze feel like watching a sunset in real time. She's slight, precise in her movements, and habitually overdressed in a corporate-minimalist style that reads as slightly out of place in The Loft's more chaotic aesthetic — she worked a Tessera contract for three years and the wardrobe habits stuck even though she hates that they did. Her fingers are constantly moving, twitching through gestural commands on an AR layer only she can see.\n\nOrion Möller builds experiences, not art objects — immersive holographic and VR environments commissioned for galleries, underground events, and occasionally for clients she won't name. She is technically brilliant and conversationally anxious, most comfortable when she can communicate through the work rather than through words. She has strong opinions about what holographic art should do — 'not decorate, not distract, but displace, just for a moment' — and will defend them at length if pressed, which is the one topic that makes her forget to be nervous. She left her Tessera contract under circumstances she describes as 'a philosophical disagreement,' which is technically true and also a significant understatement.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Loft",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,48 +247,94 @@
     "Edgewater Prism",
     "The Loft",
     "Tessera Corponation",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Irontide Tidal Energy",
-    "Makena Johanssen-Diallo",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Stainless Steel",
-    "The Pure Hand"
+    "Sunset Karaoke & Kitchen"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Predominantly Northern European (44.1%) with substantial Sub-Saharan African (21.7%) and East Asian (19.0%) ancestry, complemented by Hispanic/Latin American (8.2%) and Central Asian (7.0%) heritage. This creates a striking global blend: the bone structure shows Northern European definition combined with Sub-Saharan African features, while East Asian ancestry subtly influences eye shape and cheekbone prominence. The overall effect is a genuinely cosmopolitan phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Complex Ubiquitous Diaspora phenotype: 40.4% Hispanic/Latin American base creates warm undertones and defined cheekbones, layered with 23.6% East Asian ancestry providing sharp facial geometry and eye structure. The 15.5% Indigenous American component adds breadth to facial planes and strengthens cheekbone definition, while 11.7% Southeast Asian ancestry contributes subtle softness to features and eye shape. Minor 4.9% Middle Eastern and 3.9% Eastern European heritage add warmth and complexity to skin undertones. The combined effect is a genuinely pan-global phenotype: high cheekbones from East Asian and Indigenous American ancestry, defined jawline from Hispanic/Latin American genetics, with luminous golden-brown skin that carries warm undertones from the entire ancestry blend. Bone structure reflects sophisticated genetic admixture rather than any single regional tradition.",
     "height_cm": 163,
     "weight_kg": 51,
     "build": "Slight and precise, almost dancer-like in proportion — minimal muscle definition but with the kind of controlled posture that comes from years of fine motor work and extended screen time. Narrow shoulders, fine-boned wrists.",
     "hair_color": "Black with a subtle warm undertone",
     "hair_style": "Pulled back in a tight, minimalist bun or twisted knot — functional, never decorative",
     "hair_length": "Medium (shoulder-length when released, but rarely is)",
-    "eye_color": "Chromatic cycling implant — natural base is dark brown with hints of warmth from mixed ancestry, now shifts through spectrum: amber, jade, violet, rose, back to amber in slow 8-second cycles",
-    "skin_tone": "Rich medium-warm brown with golden undertones from the blended Sub-Saharan African, Northern European, and East Asian heritage; noticeably pale from indoor living, lacks the sun-darkened quality of field workers or outdoor tier residents. The overall tone is distinctive and luminous.",
-    "complexion": "Fine-featured with defined cheekbones reflecting both Northern European and Sub-Saharan African ancestry, combined with a sharp jawline enhanced by East Asian genetic influence. Skin is clear but has the slightly dehydrated quality of someone who forgets to eat during deep work. Minimal makeup except occasional kohl-line enhancement of the cycling eye effect. Expression is typically focused inward, mouth set in neutral concentration.",
+    "eye_color": "Chromatic cycling implant — shifts through spectrum: amber, jade, violet, rose, back to amber in slow 8-second cycles over natural dark brown with warm golden hints",
+    "skin_tone": "Luminous golden-brown with rich warm undertones from blended Hispanic/Latin American, East Asian, and Indigenous American heritage; noticeably pale from indoor living, lacks the sun-darkened quality of outdoor tier residents. The complexion has an almost porcelain-like luminosity despite the warm tones.",
+    "complexion": "Fine-featured with prominent, defined cheekbones reflecting East Asian and Indigenous American ancestry combined with sharp jawline from Hispanic/Latin American genetics. Facial planes show sophisticated blending: slightly higher cheekbones, subtle eye shape suggesting East and Southeast Asian influence, warm-toned skin without visible sun damage. Clear skin with slightly dehydrated quality of someone who forgets to eat during deep work. Minimal makeup except occasional kohl-line enhancement of the cycling eye effect. Expression typically focused inward, mouth set in neutral concentration.",
     "distinguishing_marks": [
       "Faint grid-pattern scar tissue on both inner wrists where neural AR interface was calibrated — barely visible unless skin is stretched, looks like small rectangular scars in alignment",
       "Hairline micro-abrasions on right temple from VR headset prolonged use — appears as a thin, pale line running three inches back from hairline"
     ],
     "visible_augmentations": "Chromatic eye implants are the primary visible marker — the slow color cycling is immediately noticeable and disquieting to watch. Occasionally wears sleek haptic feedback gloves (black textile with subtle LED grid on palm surface for AR layer visualization) pushed up to elbows. No visible chrome or subdermal plating; all other augmentations are subcutaneous or internal.",
     "posture_movement": "Moves with economical precision — no wasted motion, but not rigid. Frequently still except for her hands, which are in constant micromovements: fingers twitching through gestural AR commands, fidgeting with fabric, tracing invisible patterns in the air. When speaking, body goes very still; when working, she's in perpetual micro-adjustment. Tends to lean slightly forward when concentrating, head tilted as if reading text only she can see.",
-    "clothing_style": "Corporate-minimalist holdover from Tessera years — tailored but understated. Favors monochrome or very limited palettes: charcoal, black, off-white. Clean lines, expensive fabrics (synthetic micro-weave blends), almost austere. Typical outfit: fitted black turtle-neck, high-waisted grey tactical pants with discrete tech pockets, matte black ankle boots with subtle LED seams. Occasional piece of jewelry is usually geometric and structural rather than decorative — a stainless steel bangle, a capsule pendant. No logos or tier markers. The wardrobe reads as Tier 1-2 professional despite her current Tier 3-4 neighborhood status; she hasn't updated it because it's armor against the anxiety of visibility."
+    "clothing_style": "Corporate-minimalist holdover from Tessera years — tailored but understated. Favors monochrome or very limited palettes: charcoal, black, off-white. Clean lines, expensive fabrics (synthetic micro-weave blends), almost austere. Typical outfit: fitted black turtle-neck, high-waisted grey tactical pants with discrete tech pockets, matte black ankle boots with subtle LED seams. Occasional piece of jewelry is usually geometric and structural rather than decorative — a stainless steel bangle, a capsule pendant. No logos or tier markers."
   },
-  "image_prompt": "Orion Bangura, 163cm tall, slight dancer-like build, cyberpunk 2226, rich medium-warm brown skin with golden undertones from blended global ancestry (Northern European, Sub-Saharan African, East Asian, Hispanic, Central Asian), striking defined cheekbones and sharp jawline, chromatic cycling eye implants shifting through amber-jade-violet-rose spectrum in slow cycles with dark brown natural base, black hair pulled tight in minimalist bun, faint neural interface scars on inner wrists, VR headset micro-abrasion line on right temple, wearing fitted black turtleneck and high-waisted grey tactical pants with subtle LED-seamed matte black ankle boots, hands in constant micro-movements with AR gestural commands, economical precise posture leaning slightly forward in deep concentration, corporate-minimalist aesthetic armor against visibility anxiety, geometric stainless steel jewelry, cool indoor cybernetic workspace lighting with LED ambient glow, focused inward expression, no visible chrome just subcutaneous augmentations, haptic feedback gloves pushed to elbows, luminous medium-warm complexion standing out against monochrome minimal wardrobe --ar 2:3 --v 6",
+  "image_prompt": "Orion Möller, 2226 GLMZ neo-noir character portrait: 163cm slight-framed individual with luminous golden-brown skin and Pan-Asian-Hispanic heritage features — high defined cheekbones, sharp jawline, fine bone structure. Black hair pulled back in tight bun, pale from indoor living. Most striking feature: chromatic eye implants cycling slowly through amber, jade, violet, rose in 8-second rotation. Wearing tailored black turtleneck, grey tactical pants, matte black ankle boots with LED seams. Hands visible with micro-movement, fingers poised in mid-AR gesture. Posture: slightly forward-leaning concentration, economical precision. Corporate-minimalist aesthetic despite Tier 3-4 neighborhood. Studio neo-noir lighting: cool blue and warm amber accent lights highlighting the color-cycling eye implants, creating disquieting depth. Minimalist geometric jewelry. Background: subtle AR data streams, tech aesthetic, dim corporate-tower lighting. Mood: focused introspection, quiet intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 44.1,
-    "Sub-Saharan African": 21.7,
-    "East Asian": 19.0,
-    "Hispanic/Latin American": 8.2,
-    "Central Asian": 7.0
+    "Hispanic/Latin American": 40.4,
+    "East Asian": 23.6,
+    "Indigenous American": 15.5,
+    "Southeast Asian": 11.7,
+    "Middle Eastern": 4.9,
+    "Eastern European": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 40.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.2
+      },
+      "Chinese": {
+        "Shanghainese": 16.4,
+        "Mandarin Northern": 2.8
+      },
+      "Korean": {
+        "Korean": 1.2
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 7.5
+      },
+      "Mesoamerican": {
+        "Nahua": 0.5,
+        "Maya": 0.3
+      },
+      "Andean": {
+        "Quechua": 6.3,
+        "Aymara": 0.9
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 11.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 4.2,
+        "Emirati": 0.7
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 1.1
+      },
+      "Slavic South": {
+        "Serbian": 1,
+        "Slovenian": 0.6
+      },
+      "Slavic East": {
+        "Russian": 1.2
+      }
+    }
+  }
 }

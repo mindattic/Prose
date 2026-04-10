@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66871edb873854d1c83827e",
   "type": "character",
-  "name": "Cleo Mensah-Sigurdsson",
+  "name": "Cleo Hong-Najjar",
   "aliases": [
     "Paragon",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Nneka Cruz-Addo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 42, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a street samurai out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented street samurai in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Cleo Hong-Najjar is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 42, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a street samurai out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented street samurai in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.66,
@@ -261,7 +261,7 @@
     "Duelist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -278,34 +278,15 @@
     "Volkov-Saito Precision VS-R8 'Verdict'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Arcturus Exo-Runner Frame",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Glenville Sound",
-    "Ilhan Sandstrom-Badu",
-    "Mika Sorel",
-    "Neuromorphic Pressure Cestus",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "The Quiet Room",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Warden",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Northern European dominant (61.6%) with Eastern European (21.6%) and Sub-Saharan African (16.8%) ancestry. Genetic blending creates a striking phenotype: cool-toned pale complexion with warm undertones from African heritage, resulting in a unique beige-tan with olive undertones. Northern and Eastern European bone structure dominates — high cheekbones, prominent brow ridge — harmonized with broader facial features and full lips from African ancestry.",
+    "heritage": "Predominantly Middle Eastern (74.2%) with significant East Asian (21.2%) and minor South Asian (4.6%) ancestry. The genetic blend creates a striking phenotype: warm golden-brown complexion with subtle amber undertones from the Middle Eastern base, refined by East Asian bone structure. High cheekbones and angular facial geometry from East Asian heritage harmonize with the broader facial structure and fuller features characteristic of Middle Eastern ancestry, creating a balanced, compelling face with depth.",
     "height_cm": 178,
     "weight_kg": 92,
     "build": "Stocky and densely muscled — broad shoulders, thick trunk, legs like load-bearing columns. No excess fat. Built for power, not speed.",
@@ -313,8 +294,8 @@
     "hair_style": "Low fade, kept practical and short",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm beige-tan with olive undertones — the genetic blend creates a complexion that reads as neither fully pale nor fully deep, but a sophisticated mid-tone with subtle warmth. Sun exposure has weathered the surface, creating visible texture and minor hyperpigmentation patterns across the shoulders and forearms.",
-    "complexion": "Face architecture reflects mixed heritage: higher cheekbones and brow ridge from Northern European ancestry, wider nose and fuller lips from Sub-Saharan African heritage, slight broadness through the jaw from Eastern European genetics. Broken nose healed slightly off-center, deep-set eyes, strong jawline. Skin shows sun damage and minor scarring around the knuckles and temples. Pragmatic grooming — no vanity, no neglect.",
+    "skin_tone": "Warm golden-brown with amber undertones — the genetic blend creates a complexion that reads as rich mid-to-deep tone with inherent warmth. Sun exposure has weathered the surface, creating visible texture and minor hyperpigmentation patterns across the shoulders and forearms.",
+    "complexion": "Face architecture reflects blended heritage: angular cheekbones and defined brow ridge from East Asian ancestry, broader nose and fuller lips from Middle Eastern heritage, subtle strength through the jaw from the combined genetic influence. Broken nose healed slightly off-center, deep-set eyes, strong jawline. Skin shows sun damage and minor scarring around the knuckles and temples. Pragmatic grooming — no vanity, no neglect.",
     "distinguishing_marks": [
       "Horizontal scar across right cheekbone — 3 inches, thin and pale, approximately 8 years old",
       "Burn scar on left wrist where monofilament housing meets skin — irregular, webbed tissue",
@@ -325,14 +306,45 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight distributed evenly, ready to shift in any direction. Hands rest naturally at his sides, but fingers flex habitually. Eyes track movement constantly. When relaxed, he gives the impression of a spring under tension.",
     "clothing_style": "Tier 4 practical — reinforced denim and synthleather jackets that can take impact and blade damage. Unmarked gray and black palette. Steel-toed boots, worn but maintained. A weathered long coat in charcoal, lined with reactive fabric. No corp branding, no flashy modifications. Clothing is chosen for function: concealed pockets for tools, reinforced seams, durable materials. A battered smartwatch on his right wrist — several generations old, reliable, repaired multiple times. Dull finish, no gleam."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait: Cleo Mensah-Sigurdsson, mixed-heritage male, 178cm tall, muscular build. Warm beige-tan complexion with olive undertones, sun-weathered skin. High cheekbones and prominent brow ridge contrasting with broader nose and fuller lips. Black short hair in low fade. Dark brown eyes, alert and tracking. Horizontal scar across right cheekbone, burn scar visible on left wrist near monofilament housing. Knuckle scars on both hands. Left shoulder shows geometric Akan symbol tattoo in dark ink. Forearms show subtle chrome edging of augmentation mechanism, unnaturally defined musculature. Wears reinforced charcoal long coat with reactive lining, gray and black synthleather, steel-toed worn boots. Battered smartwatch on right wrist. Posture economical and tensioned, ready to move. Standing in neon-lit industrial setting, cool blue and purple ambient light. Cinematic cyberpunk noir atmosphere, moody and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Cleo Hong-Najjar, stocky muscular man with warm golden-brown skin and amber undertones, angular cheekbones from East Asian heritage blending with fuller Middle Eastern features, dark brown eyes deep-set and alert, broken nose healed off-center, strong jaw. Black short hair in low fade. Horizontal pale scar across right cheekbone, knuckle scarring, burn scar on left wrist around monofilament housing with visible chrome edging. Left forearm showing enhanced tendon definition from augmentation. Wearing reinforced gray and black synthleather jacket, worn charcoal reactive-lined long coat, steel-toed boots. Battered smartwatch on right wrist. Standing with deliberate posture, weight balanced, ready to move. Hands relaxed at sides with flexing fingers. Eyes tracking, spring-tension alertness. GLMZ Great Lakes Metropolitan Zone setting, industrial neon-lit background with shadows, cool blue and amber lighting highlighting his golden-brown complexion and scar tissue. Gritty, worn aesthetic, practical fighter's frame. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 61.6,
-    "Eastern European": 21.6,
-    "Sub-Saharan African": 16.8
+    "Middle Eastern": 74.2,
+    "East Asian": 21.2,
+    "South Asian": 4.6
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 34.6,
+        "Emirati": 39.6
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 8.6
+      },
+      "Chinese": {
+        "Cantonese": 0.3
+      },
+      "Korean": {
+        "Korean": 12.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 0.8
+      },
+      "Indian": {
+        "Marathi": 1.9,
+        "Tamil": 0.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 1.4
+      }
+    }
+  }
 }

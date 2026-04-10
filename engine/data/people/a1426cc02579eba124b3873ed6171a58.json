@@ -7,7 +7,7 @@
     "The Photographer"
   ],
   "role": "Private Investigator",
-  "description": "Bijou Kozlov-Aidoo investigates through the lens. Where other PIs chase data streams or neural traces, Bijou captures light on silver halide crystals and reads the truth in the chemistry. Her methods are considered antiquated by everyone who hasn't needed them, and revelatory by everyone who has.\n\nHer analog approach wasn't a philosophical choice — it was pragmatic. Twenty years ago, she discovered that digital surveillance countermeasures, which are ubiquitous in GLMZ, are calibrated exclusively to detect and defeat electronic sensors. A chemical-process camera doesn't emit electromagnetic signatures, doesn't connect to any network, and produces images that can't be remotely deleted or altered. In a world where digital evidence is routinely questioned, her chemical photographs carry a weight that pixel-based images can't match.\n\nShe operates from a converted warehouse space in Old Harbor that functions simultaneously as her office, her darkroom, and her archive. The archive is her masterpiece — decades of photographs of GLMZ's streets, buildings, and people, organized with a librarian's precision. She has been contacted by historians, journalists, and investigators who need visual evidence of the past, and her archive has proven or disproven alibis, established timelines, and documented changes to the cityscape that no digital record captured. She is, without fully intending it, becoming one of the city's most important unofficial historians.",
+  "description": "Reed Villalobos the lens. Where other PIs chase data streams or neural traces, Bijou captures light on silver halide crystals and reads the truth in the chemistry. Her methods are considered antiquated by everyone who hasn't needed them, and revelatory by everyone who has.\n\nHer analog approach wasn't a philosophical choice — it was pragmatic. Twenty years ago, she discovered that digital surveillance countermeasures, which are ubiquitous in GLMZ, are calibrated exclusively to detect and defeat electronic sensors. A chemical-process camera doesn't emit electromagnetic signatures, doesn't connect to any network, and produces images that can't be remotely deleted or altered. In a world where digital evidence is routinely questioned, her chemical photographs carry a weight that pixel-based images can't match.\n\nShe operates from a converted warehouse space in Old Harbor that functions simultaneously as her office, her darkroom, and her archive. The archive is her masterpiece — decades of photographs of GLMZ's streets, buildings, and people, organized with a librarian's precision. She has been contacted by historians, journalists, and investigators who need visual evidence of the past, and her archive has proven or disproven alibis, established timelines, and documented changes to the cityscape that no digital record captured. She is, without fully intending it, becoming one of the city's most important unofficial historians.",
   "affiliation": "Independent — works through word of mouth only, no mesh presence",
   "tier": "Tier 2",
   "location": "A darkroom-office in Old Harbor, chemicals and prints hanging from clotheslines alongside case notes, near Michigan Ave South and Cermak",
@@ -63,29 +63,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
-    "ARCHIVE",
+    "Neural Palate",
     "Silver",
-    "Ambassador Silk",
-    "Brecken Yılmaz-Osei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Nnenna Vásquez-Kuosmanen",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sable Dzokoto-Mirković",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "The Archive",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Veslemøy Achebe-Tursynov",
-    "Yuki Nwosu-Petrenko"
+    "Harbor Fish Shack",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Pan-global mix: Sub-Saharan African (33.7%), Hispanic/Latin American (30.9%), Central Asian (16.0%), Southeast Asian (12.5%), Northern European (6.9%). The blend creates warm, rich undertones across her features—a synthesis of diverse ancestry that marks her as unmistakably a product of the Ubiquitous Diaspora.",
+    "heritage": "Complex pan-global ancestry: South Asian (48.6%), Hispanic/Latin American (23.1%), East Asian (16.2%), Sub-Saharan African (12.1%). The blend creates warm, rich undertones with subtle depth—high cheekbones and defined structure from South Asian heritage layered with warmth from African and Latin American ancestry, East Asian refinement in the eye shape. Unmistakably a product of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and wiry, with the slightly hunched posture of someone who spends hours bent over light tables and chemical trays. Economical in movement, no wasted motion.",
@@ -93,8 +78,8 @@
     "hair_style": "Pulled back in a practical low bun, often escaping into loose strands during work",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Dark brown with subtle amber undertones in certain light",
-    "skin_tone": "Deep warm bronze—a rich blend of Sub-Saharan, Hispanic, Central Asian, and Southeast Asian ancestry creating layered golden and amber undertones. The complexion carries warmth across all regions, with a slight luminosity beneath the matte surface of decades of darkroom exposure.",
-    "complexion": "Fine-lined face marked by years of chemical exposure; faint creases around the eyes from squinting at negatives and enlargements. Bone structure reflects diverse ancestry—slightly wider cheekbones and a defined jawline with subtle fullness at the lower face. Skin has a slightly matte quality from darkroom work. Sparse freckles across the bridge of nose and cheekbones, more pronounced where sunlight occasionally reaches.",
+    "skin_tone": "Warm golden-bronze—a rich synthesis of South Asian depth, Latin American warmth, East Asian luminosity, and African richness creating layered golden undertones. The complexion carries warmth across all regions, with a slight luminosity beneath the matte surface of decades of darkroom exposure.",
+    "complexion": "Fine-lined face marked by years of chemical exposure; faint creases around the eyes from squinting at negatives and enlargements. Bone structure reflects diverse ancestry—high, defined cheekbones from South Asian heritage blended with subtle fullness at the lower face from Latin American ancestry, refined jawline with East Asian refinement softened by African heritage warmth. Skin has a slightly matte quality from darkroom work. Sparse freckles across the bridge of nose and cheekbones, more pronounced where sunlight occasionally reaches.",
     "distinguishing_marks": [
       "Chemical burn scars on the dorsal surface of both hands—pale, slightly raised patches where developer and fixer splashed decades ago, now integrated into her work-worn appearance",
       "A thin scar along the left temple (hairline) from a case in 2216 that went sideways, nearly invisible unless hair is swept back",
@@ -104,13 +89,59 @@
     "posture_movement": "Moves with deliberate precision—each gesture purposeful, nothing hurried. Stands slightly forward-leaning, as if always about to examine something closer. Her hands are almost always in motion or positioned for work. She makes direct eye contact when listening, a habit built from reading faces in her archive.",
     "clothing_style": "Tier 3-4 utilitarian with personal wear. Dark, neutral colors (charcoal, deep grey, black) to minimize stains and blend into the city. Favors a worn canvas photographer's vest with deep pockets holding light meters, film canisters, and red-tinted glasses for darkroom work. White cotton shirts underneath, often with faint chemical stains at the cuffs. Dark jeans, reinforced at the knees and thighs. Scuffed leather boots, broken in over years. No jewelry except a simple silver chain around her neck holding a small old-style key to her archive storage. Wear patterns show someone who works with their hands constantly."
   },
-  "image_prompt": "Reed Villalobos, 168cm lean wiry woman with deep warm bronze skin blending Sub-Saharan African, Hispanic, Central Asian, Southeast Asian, and Northern European heritage. Dark brown hair with silver threading, pulled back in practical low bun with escaped strands. Dark brown eyes with amber undertones. Fine-lined face from decades of darkroom work, sparse freckles across nose and cheekbones. Pale chemical burn scars on both hands, silver nitrate staining under fingernails. Worn canvas photographer's vest over white cotton shirt with chemical stains, dark jeans reinforced at knees, scuffed leather boots. Deliberate precise movements, slightly forward-leaning posture, direct intense gaze. Analog-only aesthetic, no visible augmentations. Cyberpunk 2200s Great Lakes Metropolitan Zone setting, darkroom red lighting casting shadows across her work-worn face, surrounded by vintage photography equipment and chemical trays. Moody, introspective, dedicated. --ar 2:3 --v 6",
+  "image_prompt": "Reed Villalobos, a lean 168cm analog photographer with warm golden-bronze skin tone reflecting South Asian, Hispanic, East Asian, and Sub-Saharan African heritage. High defined cheekbones, dark brown eyes with amber undertones, dark hair streaked with silver pulled into a practical bun with loose strands. Fine facial lines from decades of darkroom work, sparse freckles across nose and cheekbones. Pale chemical burn scars visible on both hands, silver nitrate staining under fingernails. Wearing a worn dark canvas photographer's vest over a white cotton shirt with faint chemical stains, dark jeans, scuffed leather boots. Silver chain necklace with small archive key. Stands forward-leaning with purposeful posture, hands positioned for work. GLMZ, GLMZ setting, analog darkroom ambient lighting with cool blue-tinted shadows and warm practical work lights, slightly matte skin quality, no visible augmentations, contemplative mood examining photographic materials. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 33.7,
-    "Hispanic/Latin American": 30.9,
-    "Central Asian": 16.0,
-    "Southeast Asian": 12.5,
-    "Northern European": 6.9
+    "South Asian": 48.6,
+    "Hispanic/Latin American": 23.1,
+    "East Asian": 16.2,
+    "Sub-Saharan African": 12.1
   },
-  "ancestry_harmonized": true
+  "ancestry_harmonized": true,
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Bengali": 3.1,
+        "Tamil": 11.3
+      },
+      "Pakistani": {
+        "Sindhi": 8.3
+      },
+      "Nepali": {
+        "Nepali": 25.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 16
+      },
+      "Central American": {
+        "Salvadoran": 6.9,
+        "Costa Rican": 0.2
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 10.9,
+        "Sichuanese": 4.2
+      },
+      "Japanese": {
+        "Japanese": 1.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 3.2
+      },
+      "Southern African": {
+        "Zimbabwean": 4.5
+      },
+      "West African": {
+        "Ghanaian": 2.9,
+        "Nigerian": 1.5
+      }
+    }
+  },
+  "operating_territory": {
+    "home_turf": "A darkroom-office in Old Harbor"
+  }
 }

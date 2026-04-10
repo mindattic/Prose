@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Shelf, GLMZ — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
-  "description": "Ogechi is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Ogechi considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Ogechi never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
+  "description": "Nova Erikstad is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Nova Erikstad considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Nova Erikstad never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -171,7 +171,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,35 +229,21 @@
     "Burnside Pocket",
     "Bluewater Checkpoint",
     "Kang Athletics KA-900 'Sensei'",
-    "GLMZ",
     "The Shelf",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Adaeze Chen-Hawkins",
+    "Haze Johansson",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Elena Vasquez-9",
-    "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "Autonomous Chromatophore Tattoo",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Coffin Nails",
-    "The Crossing",
-    "The Heritage Vault",
-    "The Iron Lotus",
-    "The Ledger",
-    "The Peninsula",
-    "The Suture Collective"
+    "GLMZ",
+    "Elena Vasquez-9"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian (65.1%) with significant Middle Eastern (14.9%) and Central Asian (14.5%) ancestry, plus minor Southeast Asian (5.5%) heritage. The combination creates a striking phenotype: East Asian bone structure with warm, complex undertones from Middle Eastern and Central Asian ancestry.",
+    "heritage": "Northern European foundation (48.7%) creates baseline bone structure and fair undertones, substantially enriched by Hispanic/Latin American ancestry (25.5%) contributing warm golden-bronze skin depth and fuller facial features, South Asian heritage (20.8%) adding definition to cheekbones and eye shape with deeper warm tones, and Southeast Asian ancestry (5.0%) contributing delicate refinement to facial proportions. The result is a genuinely multicultural phenotype: angular Northern European bone structure softened by Latin American warmth, complexion brightened by Southeast Asian delicacy, with South Asian depth creating striking contrast. This is not a pale baseline with additions—it is an integrated warm medium tone where all ancestries are visibly present.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and dense, with the squared musculature of someone who has done physical labor for decades. Not overweight — solid, grounded, built to endure. Her frame suggests the kind of strength that comes from years of lifting, supporting, holding.",
@@ -265,8 +251,8 @@
     "hair_style": "Gathered in elaborate wrapping cloths that change daily — currently indigo cotton with gold threadwork, pulled back from her face to expose her full forehead",
     "hair_length": "Long, shoulder-length when unwrapped",
     "eye_color": "Deep brown, slightly yellowed at the sclera from age and fatigue",
-    "skin_tone": "Warm olive-tan with golden undertones, the complexion of someone with predominantly East Asian heritage enriched by Middle Eastern and Central Asian warmth. Not pale — a lived-in, sun-exposed tone that suggests years outdoors.",
-    "complexion": "Weathered but not aged poorly — her face is lined with expression rather than sagging. High cheekbones with a broad bridge, characteristic of East Asian ancestry, complemented by a defined jawline from her Central Asian heritage. Full mouth often pressed into a thin line of concentration. Deep creases around her eyes from years of squinting in poor light and smiling. Her skin shows the texture of someone who does not prioritize cosmetic maintenance; pragmatic, clean, lived-in.",
+    "skin_tone": "Medium warm bronze with golden undertones throughout—neither pale nor dark, but richly warm from the integrated blend of her ancestry. Sun-exposed and lived-in, suggesting years spent outdoors across diverse climates.",
+    "complexion": "Weathered but not aged poorly—her face is lined with expression rather than sagging. Broad, balanced cheekbones with defined structure reflecting her mixed heritage blend, complemented by a defined jawline. Full mouth often pressed into a thin line of concentration. Deep creases around her eyes from years of squinting in poor light and smiling. Her skin shows the texture of someone who does not prioritize cosmetic maintenance; pragmatic, clean, lived-in.",
     "distinguishing_marks": [
       "Dense, pale burn scarring across both forearms from wrist to elbow — chemical incident origin, waxy and smooth with age, approximately 25 years old",
       "Bioluminescent tattoo pattern along her collarbone: thin threads of cyan and deep blue that pulse softly in sync with her heartbeat when elevated, visible at the neckline of her usual clothing",
@@ -276,15 +262,49 @@
     "posture_movement": "Stands with her full weight distributed evenly, never leaning. Moves with deliberate slowness — economy of motion rather than tiredness. Her hands are always busy: gesturing, reaching, adjusting her head wraps. She has the stillness of someone trained to be present; when she stops moving to listen, the shift is noticeable. Her gait is steady but her shoulders sometimes roll forward from exhaustion.",
     "clothing_style": "Practical, Tier 4 working-class aesthetic with personal touches. Typically wears loose cotton or linen tunics in earth tones (ochre, burnt orange, deep green) layered over fitted black leggings. Comfortable slip-on shoes, often scuffed. A long cardigan or shawl worn for warmth and to cover her scarred arms when meeting new patients. She favors natural fabrics and muted colors — nothing flashy, nothing corpo-coded. Her head wraps are her only concession to vanity: they are always clean, always intentional, often patterned with geometric designs. No visible jewelry except her wedding band and occasionally small beaded bracelets made by patients' children. She carries a worn canvas satchel with external pockets stuffed with latex gloves, swabs, and a battered tablet."
   },
-  "image_prompt": "Nova Erikstad, 172cm tall, broad-shouldered East Asian-heritage woman with warm olive-tan skin, high cheekbones, dark eyes lined from decades of careful work. Natural black hair with grey threads, wrapped in indigo cotton with gold threadwork. Weathered, lived-in face with deep expression lines, full mouth. Pale chemical burn scars visible on both forearms. Cyan-blue bioluminescent tattoo threading along collarbone, faintly pulsing. Wearing loose burnt orange linen tunic over black leggings, long dark cardigan, worn canvas medical satchel. Callused hands with plain silver wedding band, working-class Tier 4 aesthetic. Standing steady with deliberate posture in a cyberpunk medical clinic setting, 2226, neon glow filtering through industrial windows, soft blue augmentation glow from collarbone accent lighting. Pragmatic, capable, exhausted grace. --ar 2:3 --v 6",
+  "image_prompt": "Nova Erikstad, 172cm tall, broad-shouldered and muscular, medium warm bronze skin with golden undertones from integrated Northern European, Hispanic/Latin American, South Asian, and Southeast Asian ancestry. Long black hair with grey scattered throughout, wrapped in indigo cotton cloth with gold threadwork pulled back from her face. Deep brown eyes with yellowed sclera. Weathered face with strong cheekbones, defined jawline, deep expression lines around her eyes. Dense pale waxy burn scars covering both forearms from wrist to elbow. Subtle cyan and deep blue bioluminescent tattoo threading along collarbone, pulsing softly. Silver wedding band on left hand, blunt nails, callused fingertips from haptic augmentations. Wearing loose ochre linen tunic layered over black fitted leggings, comfortable scuffed slip-on shoes, long earth-tone cardigan covering scarred arms. Worn canvas satchel with visible pockets of medical supplies. Standing with even weight distribution, deliberate posture, hands naturally busy. GLMZ, GLMZ clinic setting, warm practical lighting, focused and present expression, pragmatic working-class aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 65.1,
-    "Middle Eastern": 14.9,
-    "Central Asian": 14.5,
-    "Southeast Asian": 5.5
+    "Northern European": 48.7,
+    "Hispanic/Latin American": 25.5,
+    "South Asian": 20.8,
+    "Southeast Asian": 5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 39.7
+      },
+      "Germanic": {
+        "Austrian": 4.9,
+        "German": 4.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 25.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.2
+      },
+      "Indian": {
+        "Punjabi": 2.9,
+        "Telugu": 0.6
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 2.4,
+        "Sindhi": 3.7
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 5
+      }
+    }
+  }
 }

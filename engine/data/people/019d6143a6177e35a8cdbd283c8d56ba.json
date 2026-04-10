@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6177e35a8cdbd283c8d56ba",
   "type": "character",
-  "name": "Kit Ionescu",
+  "name": "Kit Hossain",
   "aliases": [
     "Flour",
     "Old Flour"
@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "Grand Corridor, performs at the Menomonee Gulch market days and the Grand Corridor pedestrian arcade, near Milwaukee and Damen",
-  "description": "Florentiu is a wiry sixty-eight-year-old with the permanent squint of someone who has spent decades working in whatever light is available, a Moldovan-Senegalese face that has weathered into something sculptural, and hands that are almost never empty — if he is not performing, he is carving, stitching, or adjusting one of the dozen puppets he carries in the battered rolling case that is his constant companion. He stands about 170 centimeters but seems taller when he works, because when he works he is not exactly there in the same way. The puppets take the space and Florentiu becomes their apparatus.\n\nHe has performed in Grand Corridor for nineteen years. He is not famous in any sense the city would recognize, but he is known — a reliable fixture of the market days, a man who will perform for three people or three hundred with identical seriousness. His puppets are handmade constructions of reclaimed wire, synthetic leather, salvaged optics, and in one case an actual functional LED array liberated from a decommissioned Ferrogate Transit sign. They speak, move, fight, grieve, and occasionally function as commentary on whoever is watching. Children are his primary audience but adults stay. He does not adjust his material for age. He has a small following of regulars who believe his oldest puppet, a deteriorating marionette called The Advocate, is inhabited by an E.L.F. Florentiu neither confirms nor denies this.",
+  "description": "Kit Hossain is a wiry sixty-eight-year-old with the permanent squint of someone who has spent decades working in whatever light is available, a Moldovan-Senegalese face that has weathered into something sculptural, and hands that are almost never empty — if he is not performing, he is carving, stitching, or adjusting one of the dozen puppets he carries in the battered rolling case that is his constant companion. He stands about 170 centimeters but seems taller when he works, because when he works he is not exactly there in the same way. The puppets take the space and Kit Hossain becomes their apparatus.\n\nHe has performed in Grand Corridor for nineteen years. He is not famous in any sense the city would recognize, but he is known — a reliable fixture of the market days, a man who will perform for three people or three hundred with identical seriousness. His puppets are handmade constructions of reclaimed wire, synthetic leather, salvaged optics, and in one case an actual functional LED array liberated from a decommissioned Ferrogate Transit sign. They speak, move, fight, grieve, and occasionally function as commentary on whoever is watching. Children are his primary audience but adults stay. He does not adjust his material for age. He has a small following of regulars who believe his oldest puppet, a deteriorating marionette called The Advocate, is inhabited by an E.L.F. Kit Hossain neither confirms nor denies this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -156,7 +156,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,35 +172,21 @@
     "Ferrogate Transit",
     "Menomonee Gulch",
     "Grand Corridor",
+    "The Marrow Market",
     "Myoelectric Seizure Projector MSP-6 'Marionette'",
     "Pennywhistle",
     "Lazarus EC-4 'Companion'",
+    "GLMZ",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Big Rig",
     "Leather",
     "Chimera-Null",
     "The Pure Hand",
-    "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Dzemal Acholonu-Patagiri",
-    "Kairos",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Rémi Ouédraogo-Vlasenko",
-    "Stainless Steel",
-    "The Bazaar",
-    "The Corridor",
-    "Tomasz Wren",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Vuk Jorgensen-Toure",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Slagworks Industrial"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Eastern European (Moldovan/Romanian), South Asian, Sub-Saharan African, and Northern European blend — a product of the Ubiquitous Diaspora reflecting deep roots across four continents",
+    "heritage": "South Asian majority (46.4%) with significant Sub-Saharan African (18.2%), Northern European (13.5%), and Eastern European (12.1%) ancestry, plus traces of Hispanic/Latin American (6.0%) and Southeast Asian (3.8%) heritage — a true Ubiquitous Diaspora blend showing in warm golden-brown skin with complex undertones, angular facial geometry from Eastern European planes blended with South Asian broad cheekbones and Sub-Saharan fuller features, softened by Southeast Asian and Hispanic traces",
     "height_cm": 170,
     "weight_kg": 62,
     "build": "Wiry and lean, all sinew and economy of motion — the frame of someone who has spent sixty-eight years in constant, precise work. Shoulders slightly rounded from decades hunched over puppet construction. No excess weight; functional rather than soft.",
@@ -208,8 +194,8 @@
     "hair_style": "Swept back and kept short, practical for work; occasionally dusted with synthetic fiber and wood shavings",
     "hair_length": "Short",
     "eye_color": "Dark brown, milky at the edges with cataracts beginning to form",
-    "skin_tone": "Rich warm brown — a complex blend of Eastern European, South Asian, Sub-Saharan African, and Northern European ancestry. The base carries warm undertones from the South Asian and Sub-Saharan heritage, tempered by the cooler notes of Eastern European ancestry, all darkened and weathered by decades of outdoor market work into a deep, lived-in patina.",
-    "complexion": "Deeply lined across the forehead and around the eyes; permanent squint lines carved into the face. The bone structure reflects the broad cheekbones and defined facial geometry of South Asian heritage blended with the angular planes of Eastern European ancestry, softened by the fuller features inherited from Sub-Saharan roots. Skin texture rough but not diseased — the patina of exposure and time. Stubble usually present, graying. Expression in repose is serious and inward-focused.",
+    "skin_tone": "Warm golden-brown with red-brown undertones from the blend of South Asian (46.4%) and Sub-Saharan African (18.2%) ancestry, cooled and refined by Northern and Eastern European ancestry (25.6% combined), creating a rich, lived-in patina weathered from decades of market work and outdoor exposure",
+    "complexion": "Deeply lined across forehead and around eyes; permanent squint lines carved into the face. Bone structure shows South Asian broad cheekbones and defined geometry blended with Eastern European angular planes and Sub-Saharan fuller lip structure and facial width, softened by Southeast Asian and Hispanic traces. Skin texture rough but vital — the patina of exposure and time. Stubble usually present, graying. Expression in repose is serious and inward-focused.",
     "distinguishing_marks": [
       "Extensive fine scars across both hands — fingertips, knuckles, palms — from decades of carving wire and working with sharp tools, creating a mottled, textured appearance",
       "Calloused ridge of thicker skin running along the outer edge of his left palm from forty years of gripping puppet control bars",
@@ -220,15 +206,68 @@
     "posture_movement": "When idle, slightly stooped; when performing, his posture transforms into something precise and almost rigid — a frame become apparatus. He walks with a faint hesitation in the left leg, a micro-pause before weight transfer, barely noticeable unless one watches closely. His hands are never truly still; fingers move in small adjustment patterns even when at rest. When setting up, every movement is slow and deliberate, as if he is moving through water. His gaze is usually downward or middle-distance, focused on his work or on the space where his puppets will occupy.",
     "clothing_style": "Tier 4 practical wear, consistent regardless of season: dark canvas work pants with multiple pockets and fraying at the cuffs; a long-sleeved shirt in charcoal or faded black, often with small holes and visible mending; an oversized fleece or canvas jacket, multiple years old, with a faded logo of something no longer legible. No visible branding aspirations. His shoes are worn leather work boots, resoled at least twice. Everything smells faintly of wood dust, solder, and market air. No jewelry except a thin silver band on his left ring finger, worn almost smooth. His most prized possession — a battered rolling case for the puppets — is covered in scuff marks, stickers from various market venues, and a faded Φ symbol from an old currency exchange."
   },
-  "image_prompt": "Kit Ionescu, 68-year-old puppeteer in the Great Lakes Metropolitan Zone, 2226. Medium height, lean wiry build with slight stoop. Rich warm brown skin blending Eastern European, South Asian, Sub-Saharan African and Northern European heritage, weathered and lined with deep forehead creases and permanent squint lines. Steel gray hair swept back short, dusted with wood shavings. Dark brown eyes with beginning cataracts, gaze downward focused on puppet work. Extensive fine scars mapping both hands from decades of carving wire and sharp tools. Worn dark canvas work pants, faded black long-sleeved shirt with visible mending, oversized charcoal fleece jacket frayed at edges, scuffed leather work boots. Standing hunched over a battered rolling puppet case covered in market stickers and faded symbols, hands in subtle adjustment patterns. Cyberpunk industrial market setting with neon-tinged shadows and soft overhead work lights casting his weathered features in sharp relief. Atmosphere of focused precision and quiet craftsmanship. Wood dust and solder smell visible in the air. --ar 2:3 --v 6",
+  "image_prompt": "Kit Hossain, 68-year-old puppet craftsman in GLMZ Great Lakes Metropolitan Zone. Warm golden-brown skin reflecting South Asian, Sub-Saharan African, and European heritage blend. Weathered face with deep lines around eyes and mouth, broad South Asian cheekbones with angular Eastern European planes, slight stubble graying. Steel-gray hair swept back short, dusted with wood shavings. Dark brown eyes with cataracts at edges. Wiry lean frame 170cm tall, slightly stooped posture. Hands extensively scarred from decades of precision carving work, calloused palm edge visible. Wearing faded charcoal long-sleeved work shirt with mending holes, dark frayed canvas work pants, oversized aged fleece jacket, worn leather work boots. Standing in dim neon-lit market venue surrounded by battered puppet control cases covered in aged stickers and Φ symbols. Focused, inward expression, hands in small adjustment patterns. Faint mechanical pause in left leg movement from knee joint replacement. Atmospheric volumetric lighting, gritty market ambiance, weathered wood and solder smell emanating. Contemplative, tired but vital presence. Neo-noir lower-class artisan aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 43.3,
-    "South Asian": 25.9,
-    "Sub-Saharan African": 23.2,
-    "Northern European": 7.6
+    "South Asian": 46.4,
+    "Sub-Saharan African": 18.2,
+    "Northern European": 13.5,
+    "Eastern European": 12.1,
+    "Hispanic/Latin American": 6,
+    "Southeast Asian": 3.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 46.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 9.9
+      },
+      "Southern African": {
+        "Mozambican": 6,
+        "South African": 2.3
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 5.6,
+        "Dutch": 3.5
+      },
+      "Scandinavian": {
+        "Norwegian": 4.4
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 10.7,
+        "Czech": 1.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 1,
+        "Cuban": 0.6
+      },
+      "Mexican": {
+        "Mexican": 4
+      },
+      "South American": {
+        "Venezuelan": 0.4
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 2.7
+      },
+      "Laotian": {
+        "Laotian": 1.1
+      }
+    }
+  }
 }

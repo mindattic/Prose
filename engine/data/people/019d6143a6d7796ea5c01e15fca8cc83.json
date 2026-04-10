@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d7796ea5c01e15fca8cc83",
   "type": "character",
-  "name": "Soledad Karimov",
+  "name": "Lark Souvannasane",
   "aliases": [
     "Xeric",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Somadina Baranov-Fosu is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Somadina Baranov-Fosu is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Lark Souvannasane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Lark Souvannasane is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -260,7 +260,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Overhang",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,37 +276,17 @@
     "Adaptive Camouflage Skin",
     "Masquerade",
     "Ironveil Canopy",
-    "GLMZ",
     "The Shelf",
     "The Gradient Compact",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "Chicago",
-    "Alper Lebedev-Tutu",
-    "Arcturus BH-2 'Marrow'",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Chibundo Reinholt-Sarpong",
-    "Emeka Johansson-Orozco",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Philibert Mwangi-Djordjevic",
-    "Spire Light on Still Water",
-    "SynapTech PolyGlot Live Translation Implant",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Uzbek), Hispanic/Latin American, Eastern European (Polish/Ukrainian), and Northern European blend. The combination creates a striking mid-tone warmth with subtle complexity — Central Asian bone structure and coloring as primary, Hispanic warmth in skin undertone, Eastern European angularity in facial geometry, Northern European contribution to eye depth.",
+    "heritage": "Southeast Asian (54.1%) as primary ancestry, with significant Hispanic/Latin American (38.6%) and Eastern European (7.3%) blend. Southeast Asian bone structure provides moderate, width-set cheekbones and facial proportions. Hispanic/Latin American ancestry contributes warm golden and copper undertones to skin and facial warmth. Eastern European ancestry adds subtle angularity to the jawline and slight depth to eye-set. The combination creates warm, burnished mid-tone skin with golden-copper undertones that appears luminous in certain light—a unified, complex coloration from genuine genetic blending.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, low center of gravity. Every movement economical. Shoulders broad relative to frame, legs thick and powerful — built for stability and explosive force rather than speed.",
@@ -314,27 +294,50 @@
     "hair_style": "Pulled back tight, often in a single braid or coiled knot. Practical. Minimal surface area.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, with faint iridescent sheen from subcutaneous neural interface bleed-through",
-    "skin_tone": "Warm medium brown with golden undertones — a natural blend of Central Asian, Hispanic, and Eastern European ancestry creating a unified, complex mid-tone that appears almost burnished in certain light.",
-    "complexion": "Face angular and weathered beyond her years. Jawline sharp with subtle Central Asian width through the cheekbones. Skin bears the institutional scarring of dermal augmentation installation — thin surgical lines visible at temples and along the mandible where chromatic cells were integrated. No attempt made to conceal them. Minor acne scarring on left cheekbone. Calluses on knuckles and palms from move-by-wire system stress.",
+    "skin_tone": "Warm medium-deep brown with golden-copper undertones—Southeast Asian base enriched by Hispanic/Latin American warmth and Eastern European depth, creating a burnished unified tone that catches light with subtle luminescence.",
+    "complexion": "Face angular and weathered beyond her years. Southeast Asian width through the cheekbones balanced by subtle Eastern European jawline angularity. Skin bears institutional scarring from dermal augmentation installation—thin surgical lines visible at temples and along the mandible where chromatic cells were integrated. No attempt made to conceal them. Minor acne scarring on left cheekbone. Calluses on knuckles and palms from move-by-wire system stress.",
+    "visible_augmentations": "Chromatic skin pigment cells across shoulders, neck, and upper chest—pigmentation shifts subtly between copper, slate, and matte black depending on angle and light. Faint geometric patterning visible under the skin along collarbone suggesting underlying nervous system architecture. Eyes have barely perceptible iridescence. When she moves, there's an uncanny precision to gesture—move-by-wire integration creates micro-corrections invisible to untrained observers but unsettling to those who notice.",
+    "posture_movement": "Economical and coiled. Stands with weight distributed low, knees never fully locked. Moves with deliberate precision—no wasted motion, no flourish. Head turns before eyes. Hands positioned where they can be useful. Default expression is neutral, almost flat, with minimal micro-expression leakage—move-by-wire teaches you to compartmentalize.",
+    "clothing_style": "Tier 3-4 working class blended with runner aesthetics. Typically wears fitted synth-leather jackets in charcoal or navy, reinforced at shoulders and elbows with discreet ablative weave. Under-layers are technical: moisture-wicking, temperature-adaptive fabrics from mid-tier corporate spillover. Pants are cargo-cut synthetic denim, pockets deep and reinforced. Boots are steel-toed, worn, broken in, reliable. No jewelry beyond a simple titanium wrist cuff that doubles as a data interface. When maintaining her cover identity, she switches to plain synthetic cotton and neutral colors, but the wear patterns and fit always remain functional—she cannot help but dress for violence.",
     "distinguishing_marks": [
       "Thin surgical scar running from left temple to behind the ear, site of chromatic pigment cell matrix installation.",
       "Parallel scarring along right jawline where the dermal augmentation's neural feeds were anchored.",
-      "Faint chemical burn mark on inner left wrist — old, from early augmentation work.",
+      "Faint chemical burn mark on inner left wrist—old, from early augmentation work.",
       "Tattoo on right forearm: geometric Akan symbol (Gye Nyame), done in metallic ink that catches light."
-    ],
-    "visible_augmentations": "Chromatic skin pigment cells across shoulders, neck, and upper chest — pigmentation shifts subtly between copper, slate, and matte black depending on angle and light. Faint geometric patterning visible under the skin along collarbone suggesting underlying nervous system architecture. Eyes have barely perceptible iridescence. When she moves, there's an uncanny precision to gesture — move-by-wire integration creates micro-corrections invisible to untrained observers but unsettling to those who notice.",
-    "posture_movement": "Economical and coiled. Stands with weight distributed low, knees never fully locked. Moves with deliberate precision — no wasted motion, no flourish. Head turns before eyes. Hands positioned where they can be useful. Default expression is neutral, almost flat, with minimal micro-expression leakage — move-by-wire teaches you to compartmentalize.",
-    "clothing_style": "Tier 3-4 working class blended with runner aesthetics. Typically wears fitted synth-leather jackets in charcoal or navy, reinforced at shoulders and elbows with discreet ablative weave. Under-layers are technical: moisture-wicking, temperature-adaptive fabrics from mid-tier corporate spillover. Pants are cargo-cut synthetic denim, pockets deep and reinforced. Boots are steel-toed, worn, broken in, reliable. No jewelry beyond a simple titanium wrist cuff that doubles as a data interface. When maintaining her cover identity, she switches to plain synthetic cotton and neutral colors, but the wear patterns and fit always remain functional — she cannot help but dress for violence."
+    ]
   },
-  "image_prompt": "Soledad Karimov, compact 158cm operative with dense musculature and low center of gravity. Warm medium brown complexion with golden undertones, sharp angular jawline, dark eyes with faint iridescent sheen from neural implants. Black hair with rust undertones pulled back in tight braid. Visible surgical scarring at temples and jawline from dermal augmentation. Chromatic pigment cells shift copper-slate-black across shoulders and neck. Metallic Akan symbol tattoo on right forearm. Wearing charcoal synth-leather jacket reinforced at shoulders, technical moisture-wicking underlayer, cargo-cut synthetic denim, worn steel-toed boots, titanium wrist cuff. Posture economical and coiled, hands positioned ready. Neutral flat expression. Move-by-wire precision in micro-movements. Cyberpunk 2226 GLMZ setting, industrial neon lighting casting cool-blue shadows, moody contemplative mood, portrait-style framing. --ar 2:3 --v 6",
+  "image_prompt": "Lark Souvannasane, compact 158cm frame with densely muscled build, warm burnished medium-brown skin with golden-copper undertones reflecting Southeast Asian, Hispanic, and Eastern European heritage blend. Dark brown eyes with subtle iridescence. Black hair with rust undertones pulled tight in a braid. Institutional surgical scars visible at temples and jawline from chromatic dermal augmentation. Chromatic pigment cells shifting copper-slate-black across shoulders and neck. Callused hands, coiled posture with weight distributed low. Worn steel-toed boots, fitted charcoal synth-leather jacket with ablative weave reinforcement, technical base layers, cargo denim. Titanium wrist cuff data interface. Geometric Gye Nyame tattoo on right forearm in metallic ink. GLMZ Great Lakes Metropolitan Zone, neutral expression, economical movement, standing ready in industrial neon-lit setting, cool and warm lighting catching skin iridescence and augmentation patterns, photorealistic, intricate detail on scars and augmentation marks --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 35.2,
-    "Hispanic/Latin American": 32.2,
-    "Eastern European": 22.0,
-    "Northern European": 10.6
+    "Southeast Asian": 54.1,
+    "Hispanic/Latin American": 38.6,
+    "Eastern European": 7.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 54.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 11.5,
+        "Brazilian": 13.6
+      },
+      "Mexican": {
+        "Mexican": 1.7
+      },
+      "Caribbean": {
+        "Haitian": 11.8
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 7.3
+      }
+    }
+  }
 }

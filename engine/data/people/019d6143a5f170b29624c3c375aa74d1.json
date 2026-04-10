@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f170b29624c3c375aa74d1",
   "type": "character",
-  "name": "Kai Sabbagh",
+  "name": "Kai Dalgaard",
   "aliases": [
     "Dev",
     "Grease"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Geartown, working routes through Kessler Interchange and Dearborn Forge, near North Ave and Milwaukee",
-  "description": "Dev is lean and wire-strung, with warm brown skin perpetually stained at the knuckles with synthetic lubricant that no solvent fully removes. He has geneware cat ears — mottled amber and black, twitching with genuine involuntary response to sound — that he got at nineteen on a payment plan he took three years to finish. His dark eyes have patterned irises in a sunburst of gold and deep green, a cosmetic mod he received free from a friend who owed him labor. He keeps his hair close-cropped except for a single braid at the back held with a copper fitting.\n\nDev is relentlessly cheerful in a way that reads as either genuine warmth or a very good performance, and the truth is somewhere in between. He talks to every vehicle he works on, whispering diagnoses and apologies and thanks, and he half-believes the E.L.F.s that inhabit older engines can hear him. He runs on stimulant tea and spite, fiercely proud of his independence, and quietly terrified of what happens if the trike breaks down and he can't afford the parts.",
+  "description": "Kai Dalgaard is lean and wire-strung, with warm brown skin perpetually stained at the knuckles with synthetic lubricant that no solvent fully removes. He has geneware cat ears — mottled amber and black, twitching with genuine involuntary response to sound — that he got at nineteen on a payment plan he took three years to finish. His dark eyes have patterned irises in a sunburst of gold and deep green, a cosmetic mod he received free from a friend who owed him labor. He keeps his hair close-cropped except for a single braid at the back held with a copper fitting.\n\nKai Dalgaard is relentlessly cheerful in a way that reads as either genuine warmth or a very good performance, and the truth is somewhere in between. He talks to every vehicle he works on, whispering diagnoses and apologies and thanks, and he half-believes the E.L.F.s that inhabit older engines can hear him. He runs on stimulant tea and spite, fiercely proud of his independence, and quietly terrified of what happens if the trike breaks down and he can't afford the parts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -178,7 +178,7 @@
     "Judge": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,30 +239,17 @@
     "Kessler Interchange",
     "Ferrogate Transit",
     "Dearborn Forge",
-    "Geartown",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Geartown",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
     "Slagworks Industrial",
-    "Gold",
-    "The Milwaukee Core",
-    "Arcturus KS-7 'Nursery'",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Dragan Petersen-Bah",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Pure Hand",
-    "The Wire Taps",
-    "VESPER AESTHETICS Mirage Dual-Mode Social Eye",
-    "Veslemøy Achebe-Tursynov"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Middle Eastern-Southeast Asian-Pacific Islander blend with Eastern European undertones; ancestry creates a complexion that bridges warm amber-bronze tones with subtle olive undertones characteristic of the Levantine-Malay genetic corridor",
+    "heritage": "Complex pan-global ancestry: South Asian (31.2%) and East Asian (24.3%) form the foundation, blended with significant Hispanic/Latin American (19.2%) and Sub-Saharan African (14.3%) heritage, with secondary contributions from Middle Eastern (7.2%) and North African (3.8%) lineages. This multivalent blend creates warm golden-brown skin with layered depth—the South Asian and East Asian structure meeting Sub-Saharan African warmth and Latin American richness, anchored by subtle Middle Eastern and North African undertones that add complexity and luminosity.",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wire-strung, all efficient muscle with minimal body fat; the build of someone who climbs in and out of engine bays for twelve hours a day",
@@ -270,8 +257,8 @@
     "hair_style": "Close-cropped on sides and crown, with a single braid at the nape secured with a copper fitting; braid is approximately 20cm long",
     "hair_length": "Short (crown) / Medium (braid)",
     "eye_color": "Dark brown with patterned irises — sunburst design in deep gold and forest green radiating from pupil",
-    "skin_tone": "Warm amber-bronze with olive undertones; the particular golden-brown cast that results from Middle Eastern and Southeast Asian ancestry mixing, with subtle warmth from Pacific Islander heritage",
-    "complexion": "Lean, angular jaw with prominent cheekbones characteristic of Southeast Asian and Levantine ancestry blend; perpetual dark stains at knuckles and under fingernails from synthetic lubricant; skin otherwise clear with naturally warm undertone; expression tends toward half-smile or concentrated focus",
+    "skin_tone": "Warm golden-brown with rich amber and olive undertones; the luminous result of South Asian and East Asian bone structure meeting Sub-Saharan African warmth, Latin American depth, and Middle Eastern-North African complexity—a tone that shifts subtly in different lighting, suggesting the polyphonic genetic heritage beneath the surface",
+    "complexion": "Angular, well-defined jaw with prominent cheekbones reflecting South Asian and East Asian bone structure; perpetual dark stains at knuckles and under fingernails from synthetic lubricant; skin otherwise clear with naturally warm, golden undertone and subtle olive notes; expression tends toward half-smile or concentrated focus",
     "distinguishing_marks": [
       "Synthetic lubricant staining at knuckles and under fingernails (permanent discoloration from years of work)",
       "Small grease burn scar on left forearm, approximately 3cm, pale and faded"
@@ -280,15 +267,72 @@
     "posture_movement": "Relaxed, ground-centered posture; moves with economical efficiency through tight spaces; head tilts slightly when listening — cat ears often rotate toward sound source independently of head movement; hands are always in motion, fingers splayed and sensitive; walks with the loose stride of someone comfortable in grimy environments",
     "clothing_style": "Tier 4 working-class utility wear: reinforced canvas work pants in faded gray with multiple tool pockets (Ferrogate Transit contractor patch on left thigh); sleeveless thermal undershirt or loose linen shirt depending on weather, often left unbuttoned and tied at waist; heavy-duty steel-toed boots scuffed and oil-darkened; insulated work vest with reflective strips; copper wedding-band style ring on left hand, dented and worn from work. Gear: tool belt with integrated Φ-scanner, multitool, and diagnostic cable spool; haptic gloves usually hung from belt. No corporate branding except the Ferrogate patch — everything else is independent or salvaged."
   },
-  "image_prompt": "Kai Sabbagh, a lean 172cm tall mechanic with warm amber-bronze skin and olive undertones reflecting Middle Eastern-Southeast Asian-Pacific Islander heritage, in a dimly lit 2226 GLMZ engine bay. Close-cropped black hair with a copper-fitted braid at nape. Functional mottled amber-and-black geneware cat ears that twitch toward distant engine sounds. Dark brown eyes with gold-and-green sunburst irises. Wearing faded gray reinforced canvas work pants with Ferrogate Transit contractor patch, sleeveless thermal undershirt tied at waist, oil-darkened steel-toed boots, insulated work vest with reflective strips. Worn copper ring on left hand. Haptic feedback gloves tucked into heavy tool belt carrying Φ-scanner and diagnostics. Lean angular face with perpetual synthetic lubricant stains at knuckles and under fingernails; pale 3cm grease burn scar on left forearm. Relaxed posture, hands in motion, ground-centered stance. Warm industrial lighting with neon accents reflecting off chrome engine components. Cyberpunk 2200s aesthetic, working-class independent contractor aesthetic, gritty and authentic. --ar 2:3 --v 6",
+  "image_prompt": "Kai Dalgaard, 172cm lean mechanist with warm golden-brown skin carrying South Asian, East Asian, Hispanic, African, Middle Eastern, and North African heritage. Black close-cropped hair with single copper-fitted braid at nape. Dark brown eyes with gold-and-green sunburst pattern. Functional mottled amber-and-black geneware cat ears that twitch toward engine sounds. Perpetual synthetic lubricant stains on knuckles and fingernails, faded 3cm grease scar on left forearm. Relaxed posture, hands in constant motion. Wearing faded gray reinforced canvas work pants with Ferrogate Transit patch, sleeveless thermal undershirt tied at waist, oil-darkened steel-toed boots, insulated work vest with reflective strips. Heavy-duty haptic feedback gloves tucked in tool belt. Worn copper wedding band. Standing in dimly-lit underground garage surrounded by engine diagnostics and vehicle parts, cool fluorescent and warm practical lighting, GLMZ, gritty industrial setting, concentrated half-smile, the efficient ground-centered stance of someone who knows every inch of tight mechanical spaces. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 36.9,
-    "Southeast Asian": 31.1,
-    "Pacific Islander": 21.0,
-    "Eastern European": 11.0
+    "South Asian": 31.2,
+    "East Asian": 24.3,
+    "Hispanic/Latin American": 19.2,
+    "Sub-Saharan African": 14.3,
+    "Middle Eastern": 7.2,
+    "North African": 3.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 17.8,
+        "Pashtun": 13.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 24.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 5,
+        "Argentine": 4.2
+      },
+      "Caribbean": {
+        "Dominican": 9.7
+      },
+      "Central American": {
+        "Guatemalan": 0.1,
+        "Salvadoran": 0.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 10.4
+      },
+      "West African": {
+        "Nigerian": 2.9,
+        "Ghanaian": 1
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 0.5
+      },
+      "Kurdish": {
+        "Kurdish": 2.3
+      },
+      "Persian": {
+        "Iranian": 1.8,
+        "Afghan Dari": 2.6
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 2.8
+      },
+      "Maghreb": {
+        "Moroccan": 1
+      }
+    }
+  }
 }

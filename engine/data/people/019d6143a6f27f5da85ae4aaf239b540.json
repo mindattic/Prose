@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f27f5da85ae4aaf239b540",
   "type": "character",
-  "name": "Sable Faalele",
+  "name": "Sable Inoue",
   "aliases": [
     "Karma",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 60,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Tenzin Takahashi-Boateng is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTenzin Takahashi-Boateng is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Sable Inoue is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSable Inoue is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -262,7 +262,7 @@
     "Ghost": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Glassway",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,29 +276,14 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Arcturus Exo-Runner Frame",
-    "Aslan Granlund-Tawiah",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Crucible RE-2 'Receptionist'",
-    "Ilhan Sandstrom-Badu",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Neuromorphic Pressure Cestus",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Heritage Vault",
-    "The Underlayer Collective"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander dominant (37.6%) with significant Indigenous American (26.0%) and Sub-Saharan African (19.3%) ancestry, blended with Hispanic/Latin American (10.6%), Eastern European (3.5%), and Northern European (3.0%) heritage. Genetic ancestry produces warm, rich medium-brown skin tone with undertones reflecting the Pacific Islander and African components, bone structure showing angular Indigenous American characteristics.",
+    "heritage": "Complex global ancestry: East Asian (36.2%) provides angular bone structure and eye shape; Northern European (24.6%) contributes definition and cool undertones; Hispanic/Latin American (19.9%) adds golden warmth; Sub-Saharan African (19.3%) brings richness to skin tone and broader facial features. The blend creates a striking phenotype with East Asian angularity softened by African warmth, Northern European strength, and Latin American golden undertones.",
     "height_cm": 167,
     "weight_kg": 62,
     "build": "Lean and compact, deceptively strong. Muscle density concentrated in core and legs from decades of augmentation integration. No wasted mass — economical, efficient.",
@@ -306,8 +291,8 @@
     "hair_style": "Pulled back in a tight, functional braid. Practical. No decoration.",
     "hair_length": "Medium",
     "eye_color": "Dark brown, sharp and assessing",
-    "skin_tone": "Warm medium-dark brown with rich undertones — Pacific Islander and Sub-Saharan African ancestry creating deep, luminous base tone with slight golden warmth from Indigenous American heritage",
-    "complexion": "Weathered but not aged poorly. High cheekbones with angular definition characteristic of Indigenous American ancestry, strong jawline. Fine lines around eyes from squinting, not smiling. Skin carries a faint chemical sheen — occupational hazard, never quite washes out. Facial structure shows the blend of broad Pacific Islander features with sharper Indigenous American definition.",
+    "skin_tone": "Warm medium-bronze with luminous depth — rich undertone from Sub-Saharan African heritage, golden warmth from Hispanic/Latin American ancestry, tempered by cool undertones from Northern European blend. Skin catches light with subtle radiance.",
+    "complexion": "Weathered but not aged poorly. Angular cheekbones with East Asian definition balanced by broader Sub-Saharan African features; strong jawline combining Northern European strength with African bone structure. Fine lines around eyes from squinting, not smiling. Skin carries a faint chemical sheen — occupational hazard, never quite washes out. Facial geometry reflects the harmony of her four-part ancestry without favoring any single region.",
     "distinguishing_marks": [
       "Keloid scarring along both temples from neural interface installation — visible even with hair pulled back, jagged lines suggesting field work rather than clinic precision",
       "Surgical scar along right jawline where vocal modulator was installed, partially concealed by bone structure but visible in profile",
@@ -318,17 +303,54 @@
     "posture_movement": "Economical. Moves without flourish — each motion serves a purpose. Stands with weight balanced on the balls of feet, ready to shift. When seated, she maintains alertness rather than relaxation. Her movements carry a mechanical underlayer; the hydraulic joints have a subtle rhythm that marks her as augmented to anyone watching. No fidgeting. No nervous tells.",
     "clothing_style": "Tier 3-4 transitional — pragmatic rather than aspirational. When in cover identity: neutral corporate-adjacent clothing, forgettable brands, nothing that draws attention. When working: dark fitted synthetics with reinforced seams and hidden pockets, matte finishes to avoid reflection. Favors jackets with high collars to partially conceal scarring. No jewelry except a simple analog watch — nothing wireless that could be traced or hacked. Boots with reinforced ankle support to accommodate hydraulic knee joints. Everything worn shows age; she maintains gear rather than replacing it."
   },
-  "image_prompt": "Cyberpunk 2226 character portrait: Sable Faalele, a lean 167cm woman with warm medium-dark brown skin reflecting Pacific Islander, Indigenous American, and Sub-Saharan African ancestry. Sharp angular cheekbones and defined jawline, dark brown assessing eyes. Steel gray hair pulled back in functional braid. Visible jagged keloid scarring on temples from neural interface, surgical scar on right jawline, chemical burns on knuckles. Brushed steel hydraulic joints visible at both knees and elbows with mechanical precision. Subdermal plating visible on forearms. Wearing dark fitted synthetics with high collar jacket concealing scarring, reinforced boots. Posture alert and economical, weight balanced forward. Minimalist analog watch, no wireless tech. Chemical sheen on weathered skin. Cyberpunk Great Lakes Metropolitan Zone setting, moody lighting emphasizing the mechanical-organic blend, professional cover-work aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Sable Inoue, 167cm tall lean augmented operative, warm bronze-toned skin reflecting East Asian, African, European, and Latin American heritage blended in striking facial geometry. Steel gray braided hair pulled back exposing keloid scarring on temples from neural interface. Sharp dark brown eyes. Visible surgical scar along right jawline. Brushed steel hydraulic joints at elbows and knees with visible piston housings. Subdermal metal plating visible on forearms. Weathered face with high angular cheekbones and strong jawline. Wearing dark matte synthetics with reinforced seams, high-collar jacket concealing scarring, analog watch, reinforced boots. Standing alert with weight on balls of feet, mechanical precision in posture. Chemical sheen on skin. GLMZ setting, Great Lakes Metropolitan Zone, dim neon lighting casting blue and amber shadows, industrial urban background, composed and focused expression, no emotion, field operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 37.6,
-    "Indigenous American": 26.0,
-    "Sub-Saharan African": 19.3,
-    "Hispanic/Latin American": 10.6,
-    "Eastern European": 3.5,
-    "Northern European": 3.0
+    "East Asian": 36.2,
+    "Northern European": 24.6,
+    "Hispanic/Latin American": 19.9,
+    "Sub-Saharan African": 19.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 8.2
+      },
+      "Korean": {
+        "Korean": 5.1
+      },
+      "Japanese": {
+        "Japanese": 22.9
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 18.2
+      },
+      "Scandinavian": {
+        "Norwegian": 2.6,
+        "Swedish": 3.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 3.4
+      },
+      "Caribbean": {
+        "Cuban": 16.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 13.8,
+        "Congolese": 5.3
+      },
+      "West African": {
+        "Senegalese": 0.2
+      }
+    }
+  }
 }

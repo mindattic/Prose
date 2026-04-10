@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5a67e6db929f2a6b012d6df",
   "type": "character",
-  "name": "Amara Kariuki",
+  "name": "Zara Takahashi",
   "aliases": [
     "Kin",
     "The Pole (also incorrect — also doesn't bother correcting it)"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Alban Souk, Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Akinwale operates from a stall that appears, to casual inspection, to sell printed textiles — bolts of synthetic fabric in loud geometric patterns that they source legitimately. The real business happens behind a curtain of hanging cloth samples, via a battered terminal and a set of contacts that took five years to build. They are medium height, slim, with warm brown skin and wide-set dark eyes that perform boredom professionally while taking in everything. Their hair shifts color — cosmetic geneware, done in a gradient that runs from deep black at the roots to copper at the tips, and which they change the copper shade quarterly like a password rotation. A small Samoan tatau-inspired line-work tattoo climbs their right wrist, done the traditional way by their grandmother as a naming gift.\n\nAkinwale is careful in the way of someone who has calculated every exit from every room before sitting down. They are not unfriendly but they are measured — warmth is extended in precise doses to people who have earned it. They do not volunteer information; they sell it, or trade it, or sometimes withhold it as a lesson. They have a dry wit that emerges unexpectedly and is funnier for being rare. They pray to a small E.L.F. they call the Archivist, a data-spirit they believe inhabits the municipal ID database itself — a god of records, of names, of the official story.",
+  "description": "Zara Takahashi operates from a stall that appears, to casual inspection, to sell printed textiles — bolts of synthetic fabric in loud geometric patterns that they source legitimately. The real business happens behind a curtain of hanging cloth samples, via a battered terminal and a set of contacts that took five years to build. They are medium height, slim, with warm brown skin and wide-set dark eyes that perform boredom professionally while taking in everything. Their hair shifts color — cosmetic geneware, done in a gradient that runs from deep black at the roots to copper at the tips, and which they change the copper shade quarterly like a password rotation. A small Samoan tatau-inspired line-work tattoo climbs their right wrist, done the traditional way by their grandmother as a naming gift.\n\nZara Takahashi is careful in the way of someone who has calculated every exit from every room before sitting down. They are not unfriendly but they are measured — warmth is extended in precise doses to people who have earned it. They do not volunteer information; they sell it, or trade it, or sometimes withhold it as a lesson. They have a dry wit that emerges unexpectedly and is funnier for being rare. They pray to a small E.L.F. they call the Archivist, a data-spirit they believe inhabits the municipal ID database itself — a god of records, of names, of the official story.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -158,7 +158,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Alban Souk",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -178,41 +178,22 @@
     "Hamtramck Enclave",
     "The Alban Souk",
     "Grandmother",
-    "NeuralPath HarmonicRoot Perfect Pitch Mod",
-    "Copper",
-    "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Bryndís Kouyaté-Semenenko",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Emergency SMG ESM-1 'Breakglass'",
-    "Crucible Industries Long Arm LA-20 'Verdict'",
-    "Emeka Johansson-Orozco",
-    "Last Word",
-    "Patient Zero",
-    "TESSERA TC-3 'Crucible'",
-    "Tessera Corponation",
-    "Tessera TK-5 Compact 'Clerk'",
-    "The Arrangement",
-    "The Counter",
-    "The Pure Hand",
-    "The Quiet Room",
     "The Root",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Yannick Tambadou-Reinholt"
+    "Chicago",
+    "Copper"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Sub-Saharan African (50%) with Northern European (34.3%) and South Asian (15.7%) ancestry. The genetic blend creates a striking combination: deep warm brown skin tones with subtle golden undertones from the South Asian heritage, sharp bone structure reflecting both African and Northern European ancestry, and the wide-set dark eyes characteristic of Sub-Saharan genetics.",
+    "heritage": "East Asian (81%) with South Asian (12.1%) and Southeast Asian (6.9%) ancestry. The genetic blend creates a striking combination: warm golden-beige skin tones with subtle warm undertones from the South Asian component, sharp angular bone structure characteristic of dominant East Asian ancestry softened by the fuller cheekbone definition from South Asian heritage, and the monolid eye structure typical of East Asian genetics with the patient, cataloging gaze of someone who has learned to appear bored while absorbing everything.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slim and wiry with subtle muscle definition from years of careful, economical movement. No wasted mass — built for precision rather than power.",
     "hair_color": "Cosmetic geneware gradient: deep black at roots transitioning to copper at tips (copper shade rotated quarterly)",
     "hair_style": "Loose, shoulder-length waves with deliberate asymmetry; often pinned back on one side to expose the tatau work",
     "hair_length": "Medium",
-    "eye_color": "Dark brown, set wide, with the patient, cataloging gaze of someone who has learned to appear bored while absorbing everything",
-    "skin_tone": "Deep warm brown with golden undertones, even complexion reflecting the blend of Sub-Saharan, Northern European, and South Asian ancestry",
-    "complexion": "Clean, minimal grooming indulgence — no decorative scarification or excessive jewelry. Strong cheekbones and defined jaw from Northern European ancestry softened by fuller features typical of Sub-Saharan heritage. Face carries the neutrality of someone who has practiced stillness; expression defaults to professional disinterest until deliberately warmed.",
+    "eye_color": "Dark brown, monolid, set with characteristic East Asian spacing, with the patient, cataloging gaze of someone who has learned to appear bored while absorbing everything",
+    "skin_tone": "Warm golden-beige with subtle warm undertones, even complexion reflecting the dominant East Asian ancestry with warmth added by South Asian heritage",
+    "complexion": "Clean, minimal grooming indulgence — no decorative scarification or excessive jewelry. Sharp cheekbones and defined jaw characteristic of East Asian ancestry with subtle fuller cheek definition from South Asian heritage. Face carries the neutrality of someone who has practiced stillness; expression defaults to professional disinterest until deliberately warmed.",
     "distinguishing_marks": [
       "Tatau line-work tattoo in traditional Samoan style climbing the right wrist from ulna to mid-forearm, black ink, done by hand by their grandmother as a naming gift — the lines are slightly irregular in the traditional way, not machine-perfect"
     ],
@@ -220,14 +201,38 @@
     "posture_movement": "Economical and controlled; movements are calculated before execution. They sit with shoulders slightly forward, hands usually positioned to reach terminals or documents quickly. Walk is deliberate, never rushed. Makes minimal eye contact unless establishing dominance or reading someone. Physical stillness is practiced and perfect — they can remain motionless for extended periods without restlessness.",
     "clothing_style": "Tier 3/4 working-class aesthetic with deliberate practicality. Typical uniform: fitted synthetic-blend cargo pants (neutral gray or black), layered tank and oversized shirt in muted tones or subtle geometric patterns (sources from own textile stock). Weathered synth-leather jacket with internal pockets organized for document concealment. Worn but maintained boots with grip-tread soles. One chain-link bracelet on left wrist (silver-tone, industrial). No visible corpo branding; deliberately unmarked. Textile stall adds layer of patterned overshirts and sample bolts they rotate as cover."
   },
-  "image_prompt": "Amara Kariuki, cyberpunk 2226 data courier with deep warm brown skin and golden undertones, wide-set dark eyes holding cataloging patience, shoulder-length black-to-copper ombré hair with asymmetrical pin exposing traditional Samoan tatau forearm tattoo. Slim wiry frame in fitted gray cargo pants and layered neutral-toned shirt, weathered synth-leather jacket, worn boots, silver industrial bracelet. Subdermal data-cache implant glowing faintly green on right forearm. Sitting at terminal station in Great Lakes Metropolitan Zone, controlled posture, minimal expression, cold neon lighting casting blue shadows, rain-streaked window in background, professional disinterest masking hyperalert observation. Cyberpunk working-class aesthetic, no corporate branding. --ar 2:3 --v 6",
+  "image_prompt": "Zara Takahashi, 168cm slim androgynous frame, warm golden-beige skin with East Asian monolid eyes, dark brown gaze, sharp cheekbones with subtle fuller definition. Medium-length shoulder waves in black-to-copper cosmetic gradient, asymmetrical pinned style exposing right wrist. Samoan tatau line-work tattoo climbing right forearm in black ink, irregular traditional style. Subdermal data-cache implant visible as faint rectangular outline with green LED indicators beneath skin. Dark gray fitted cargo pants, layered muted tank and oversized overshirt with geometric patterns, weathered synth-leather jacket, worn grip-tread boots, industrial silver chain-link bracelet. Economical posture, controlled stillness, professional neutrality. GLMZ Great Lakes Metropolitan Zone, working at textile stall or data terminal, cool neon-tinged ambient lighting, moody introspective mood, photorealistic character portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 50.0,
-    "Northern European": 34.3,
-    "South Asian": 15.7
+    "East Asian": 81,
+    "South Asian": 12.1,
+    "Southeast Asian": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 81
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Marathi": 4.6
+      },
+      "Pakistani": {
+        "Baloch": 3,
+        "Sindhi": 4.5
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 4.4
+      },
+      "Thai": {
+        "Thai": 2.5
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ca76cf9f2a6aa2e03a3e5c",
   "type": "character",
-  "name": "Gulnara Cisneros",
+  "name": "Soren Sokolov",
   "aliases": [
     "Brick",
     "Nobody",
@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "Old Harbor / The Shelf (transient between both), near Wacker and State",
-  "description": "Brecken Yılmaz-Osei is nineteen years old and moves through GLMZ the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
+  "description": "Soren Sokolov is nineteen years old and moves through GLMZ the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -228,7 +228,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor / The Shelf (transient between both)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,37 +244,22 @@
   ],
   "related_entities": [
     "GLMZ",
+    "The Accidental",
     "FOUNDATION",
     "The Shelf",
-    "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
     "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
+    "GLMZ",
+    "Pressure Drop",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Harbor Fish Shack",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Tin Man",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Breck Tannen",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Patient Zero",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Ringo DV-4 'Courier'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Accidental",
-    "The Archive",
-    "The Circuit",
-    "The Corridor",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov"
+    "Cargo Tacos",
+    "Tin Man"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Central Asian, South Asian, Sub-Saharan African, and East Asian blend. Reflects complex Ubiquitous Diaspora ancestry: warm brown skin with golden undertones from the dominant Latin American and Central Asian components, shaped by secondary South Asian and African heritage markers. Fine facial structure suggests Central and South Asian influence; warm brown eye color and skin depth reflect the African and Latin American contributions.",
+    "heritage": "Eastern European, Southeast Asian, Indigenous American, and Hispanic/Latin American blend reflecting the Ubiquitous Diaspora. The 41.3% Eastern European ancestry provides cool undertones and defined bone structure; 35% Southeast Asian contributes warm golden undertones, refined facial geometry, and eye shape; 12% Indigenous American adds depth and richness to skin tone; 11.7% Hispanic/Latin American contributes warm golden warmth and facial feature blending. The result is a warm medium brown skin tone with subtle golden undertones that catch light, tempered by cooler undertones beneath—a complex interplay of warmth and cool that gives the skin visual depth.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Slight and wiry, built for speed rather than strength; lean muscle from years of manual courier work and constant motion; no excess anywhere",
@@ -282,8 +267,8 @@
     "hair_style": "Shaved head kept short, grows in uneven patches across the scalp due to childhood illness; pattern is asymmetrical on left side",
     "hair_length": "Shaved",
     "eye_color": "Dark brown, warm",
-    "skin_tone": "Warm brown with golden undertones, reflecting the blend of Latin American, Central Asian, and South Asian heritage with subtle depth from African ancestry",
-    "complexion": "Face defaults to a pleasantly blank, almost vacant expression that masks acute watchfulness; fine-featured with high cheekbones and sharp jawline reflecting Central and South Asian ancestry; skin weathered slightly by sun exposure and street living but clean; minimal grooming investment beyond functional necessity",
+    "skin_tone": "Warm medium brown with golden undertones, the Southeast Asian and Hispanic/Latin American warmth creating luminosity, balanced by the cooler tones of Eastern European ancestry beneath; skin has depth and slight weathering from street exposure",
+    "complexion": "Face defaults to a pleasantly blank, almost vacant expression that masks acute watchfulness; bone structure reflects Eastern European solidity with Southeast Asian refinement—defined cheekbones with slightly higher placement, sharp jawline with subtle broadness from Indigenous American and Hispanic/Latin American heritage; skin weathered slightly by sun exposure and street living but clean; minimal grooming investment beyond functional necessity",
     "visible_augmentations": "None visible. Their extraordinary biological memory and the sled's mechanical lock/signal-dampening skin are entirely hidden from casual observation.",
     "posture_movement": "Moves with economical grace, never wasteful; walks like someone constantly calculating vectors and sightlines; stillness is active rather than passive—they are always watching, always ready to move. Hands are frequently occupied or positioned near the sled's controls. Sits with spine straight but shoulders slightly rounded, posture that minimizes their profile.",
     "clothing_style": "Tier 4-5 functional wear: scavenged, patched, layered. Oversized grey cargo vest with multiple pockets over a dark, fitted undershirt; reinforced trousers with an explicit tool belt; scuffed ankle-height boots resoled at least twice. Colors are muted—greys, blacks, dark browns. Fabrics are durable synthetic blends, chosen for wear resistance not aesthetics. No jewelry, no brands, nothing that draws attention. All clothing has been modified slightly for ease of movement and storage capacity.",
@@ -294,16 +279,51 @@
       "Dark circles under eyes from habitual light sleep patterns, permanent feature"
     ]
   },
-  "image_prompt": "Gulnara Cisneros, 162cm tall, lean and wiry courier in cyberpunk 2226 Great Lakes Metropolitan Zone. Mixed heritage features: warm brown skin with golden undertones, fine-featured face with sharp jawline and high cheekbones, dark brown eyes with permanent dark circles, shaved head with asymmetrical uneven hair growth pattern visible on scalp. Blank watchful expression masking acute awareness. Wearing oversized grey cargo vest with multiple pockets over dark fitted undershirt, reinforced trousers, tool belt, scuffed twice-resoled ankle boots. Muted grey-black-brown color palette, functional scavenged clothing, all patched and modified for movement. Thin scar visible on left forearm. Posture economical and minimized, shoulders slightly rounded, hands near mechanical sled controls. Standing in neon-lit industrial corridor, urban sprawl visible through grimy windows, cool blue and orange cyberpunk lighting casting harsh shadows across weathered face. Tense readiness in every muscle, calculating vectors and sightlines. Gritty street-worn aesthetic, no jewelry or brands. --ar 2:3 --v 6",
+  "image_prompt": "Soren Sokolov, courier in GLMZ Great Lakes Metropolitan Zone, 162cm slight wiry build, warm medium brown skin with golden undertones, shaved dark brown hair growing unevenly across scalp, dark warm eyes with permanent dark circles, sharp jawline and high cheekbones blending Eastern European and Southeast Asian features. Wearing oversized grey cargo vest over dark fitted undershirt, reinforced dark trousers with tool belt, scuffed resoled boots. Thin scar visible on left forearm. Economical posture with rounded shoulders, minimizing profile. Blank watchful expression masking acute awareness. Standing near mechanical sled with signal-dampening skin in dimly lit industrial warehouse, cool neon-tinted lighting, fog and shadow, gritty street-level atmosphere, vector-conscious stance ready for motion. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 45.8,
-    "Central Asian": 23.7,
-    "South Asian": 19.9,
-    "Sub-Saharan African": 7.5,
-    "East Asian": 3.1
+    "Eastern European": 41.3,
+    "Southeast Asian": 35,
+    "Indigenous American": 12,
+    "Hispanic/Latin American": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 41.3
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 28.7
+      },
+      "Thai": {
+        "Thai": 6.3
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 7.6,
+        "Nahua": 0.6
+      },
+      "Great Lakes Nations": {
+        "Ojibwe": 3.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 5.4
+      },
+      "South American": {
+        "Peruvian": 1.8
+      },
+      "Caribbean": {
+        "Puerto Rican": 1.7,
+        "Haitian": 2.8
+      }
+    }
+  }
 }

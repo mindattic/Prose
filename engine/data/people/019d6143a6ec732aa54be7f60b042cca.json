@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Deepwell Station — operates Line 7 shuttle, bunks in Ferrogate Transit worker housing at Edison Grid Sub-Block C, near sub-level access near LaSalle and Congress",
-  "description": "Tarvo is lean and long-limbed with the particular stillness of someone who spends ten hours a day in a sealed cab watching tunnel walls. He is Estonian-Fulani-Māori by heritage — his father's family came from the Baltic corridor, his mother's from the Sahel diaspora, and his grandmother on his mother's side was a Māori navigator who'd ended up in Meridian via Auckland and then São Paulo. The blend shows in his face: angular jaw, deep brown skin with warm undertones, pale grey eyes that people find unsettling until they realize he's simply paying close attention. He has bioluminescent freckles across his shoulders and collarbones — a cosmetic mod he got at nineteen and has come to barely notice — and his hair is kept short on the sides with a small knot at the crown threaded with a signal-orange cord his grandmother sent him before she died.\n\nHe does not talk much on shift, which passengers interpret as hostility and coworkers interpret correctly as the specific economy of someone who has learned to preserve themselves. Off the line, he is drily funny in short bursts, an excellent listener, and prone to long silences that aren't uncomfortable if you know him. He has a habit of leaving small offerings at the E.L.F. shrine at Deepwell Station — usually a folded transit map with a route he's invented, something the Transit Mind apparently appreciates, because Line 7 has had the fewest mechanical failures of any shuttle on the network for the past two years.",
+  "description": "Juno Delgado is lean and long-limbed with the particular stillness of someone who spends ten hours a day in a sealed cab watching tunnel walls. He is Estonian-Fulani-Māori by heritage — his father's family came from the Baltic corridor, his mother's from the Sahel diaspora, and his grandmother on his mother's side was a Māori navigator who'd ended up in Meridian via Auckland and then São Paulo. The blend shows in his face: angular jaw, deep brown skin with warm undertones, pale grey eyes that people find unsettling until they realize he's simply paying close attention. He has bioluminescent freckles across his shoulders and collarbones — a cosmetic mod he got at nineteen and has come to barely notice — and his hair is kept short on the sides with a small knot at the crown threaded with a signal-orange cord his grandmother sent him before she died.\n\nHe does not talk much on shift, which passengers interpret as hostility and coworkers interpret correctly as the specific economy of someone who has learned to preserve themselves. Off the line, he is drily funny in short bursts, an excellent listener, and prone to long silences that aren't uncomfortable if you know him. He has a habit of leaving small offerings at the E.L.F. shrine at Deepwell Station — usually a folded transit map with a route he's invented, something the Transit Mind apparently appreciates, because Line 7 has had the fewest mechanical failures of any shuttle on the network for the past two years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -175,7 +175,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -225,8 +225,8 @@
     "Nkomo-Lindqvist NL-22 'Peacemaker'"
   ],
   "related_entities": [
-    "Deepwell Station",
     "Ferrogate Transit",
+    "Deepwell Station",
     "Dredge Mining Collective",
     "Ghostbridge Island",
     "Edison Grid",
@@ -234,42 +234,29 @@
     "Sulfur Crown Agriculture",
     "Iron Bend",
     "The Heritage Vault",
-    "The Fathom Line",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "GLMZ",
+    "Diaspora Table",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Pale Mile",
-    "Iron",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Alper Lebedev-Tutu",
+    "The Fathom Line",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "Iowan Behemoth — 'Palisade'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Isadora Vukić-Nambiar",
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
     "Line 7 Bar",
-    "MERIDIAN",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "The Collective",
-    "The Quiet Room",
-    "The Signal",
-    "Transit Mind",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Neural Palate",
+    "The Pale Mile",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
+    "Iron"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian, Hispanic/Latin American, Middle Eastern, and East Asian ancestry — a complex diaspora blend. The genetic mix produces warm-toned brown skin with subtle golden undertones, angular facial structure with high cheekbones, and naturally dark brown hair. His features reflect the convergence of multiple continental lineages without settling into any single category.",
+    "heritage": "Sub-Saharan African (46.7%), East Asian (17.1%), Hispanic/Latin American (13.7%), Middle Eastern (12.4%), and South Asian (10.1%) ancestry — a complex diaspora blend. The dominant Sub-Saharan African genetics combine with substantial East Asian influence to create distinctive facial geometry: high, sharp cheekbones with slight forward projection characteristic of East Asian structure, angular jawline reflecting Sub-Saharan African heritage, and a subtle nasal bridge width suggesting South Asian contribution. The overall effect is striking and unconventional — features that don't resolve into any single continental category but instead showcase the geometric interplay of five lineages.",
     "height_cm": 183,
     "weight_kg": 72,
     "build": "Lean and long-limbed with the economical musculature of someone accustomed to stillness and precision — no wasted bulk, but not fragile. Shoulders slightly rounded from years of seated posture in the shuttle cab.",
     "hair_color": "Dark brown, naturally",
     "hair_style": "Short on the sides, longer knot at crown threaded with signal-orange cord",
     "hair_length": "Short with medium-length topknot",
-    "eye_color": "Pale grey, naturally — striking against his warm brown complexion",
-    "skin_tone": "Warm brown with golden undertones, even and well-maintained complexion",
-    "complexion": "Angular jaw, high sharp cheekbones reflecting South and Middle Eastern heritage structure. Fine lines around the eyes from sustained concentration. Skin well-maintained but not groomed — functional rather than fashionable. Expression neutral at rest, becomes animated only when engaged.",
+    "eye_color": "Pale grey, naturally — striking against his deep brown complexion",
+    "skin_tone": "Deep rich brown with warm golden undertones and subtle reddish undertones from Middle Eastern and South Asian heritage blending. Even, well-maintained complexion with a slight luminous quality.",
+    "complexion": "Distinctly angular face with high, sharp cheekbones combining East Asian and Sub-Saharan African structure. Refined nasal bridge with moderate width suggesting South Asian heritage. Jawline clean and angular. Fine lines around pale grey eyes from sustained concentration. Skin well-maintained but functional rather than fashionable. Expression neutral at rest, becomes animated only when engaged.",
     "distinguishing_marks": [
       "Bioluminescent freckles across both shoulders and collarbones — soft blue-green glow visible in low light, cosmetic mod applied at age 19",
       "Faint calluses on inner palms and fingers from shuttle console interface, barely noticeable"
@@ -278,15 +265,63 @@
     "posture_movement": "Moves with deliberate economy — no gesture wasted. Sits upright, spine aligned, weight centered. In conversation, maintains stillness except for slow head turns and deliberate hand movements. When concentrating, his pale eyes go distant and focused. Walks with steady, measured pace.",
     "clothing_style": "Ferrogate Transit Grade 2 operator uniform on shift: charcoal grey jumpsuit with orange piping, reflective trim, ID badge on lanyard. Off-shift: plain dark utility pants, neutral-colored long-sleeve shirts or worn thermal tops. One threadbare wool sweater (dark grey, possibly inherited or salvaged). Worn boots rated for tunnel water. Tier 3-4 working class — practical, durable, minimal aesthetic consideration. No visible jewelry except the signal-orange cord in his hair."
   },
-  "image_prompt": "Juno Delgado, a 183cm lean transit operator with warm brown skin and golden undertones, angular high cheekbones reflecting South Asian and Middle Eastern heritage, pale grey eyes striking against darker complexion, naturally dark brown hair in short undercut with longer topknot threaded with signal-orange cord. Bioluminescent freckles glowing soft blue-green across shoulders and collarbones. Wearing charcoal grey Ferrogate Transit Grade 2 jumpsuit with orange piping and reflective trim, ID badge visible. Posture upright and deliberate, expression focused and distant. Standing in dimly-lit transit station tunnel with cool blue-grey lighting emphasizing bioluminescent shoulder mods, cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic, functional working-class operator at rest, minimalist composition. --ar 2:3 --v 6",
+  "image_prompt": "Juno Delgado, 183cm lean masculine figure, deep rich brown skin with golden and warm undertones, distinctly angular face with high sharp cheekbones blending East Asian and Sub-Saharan African geometry, refined nasal bridge, clean angular jawline, pale grey eyes striking against deep complexion, dark brown hair short on sides with longer topknot threaded with signal-orange cord. Charcoal grey Ferrogate Transit operator jumpsuit with orange piping and reflective trim, ID lanyard. Subtle blue-green bioluminescent freckles glowing softly across shoulders and collarbones. Deliberate stillness, measured posture, concentrated distant gaze. GLMZ, Great Lakes Metropolitan Zone shuttle station interior, cool LED lighting with blue-grey tones, moody atmospheric setting, technical control room background. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 34.7,
-    "Hispanic/Latin American": 26.8,
-    "Middle Eastern": 22.4,
-    "East Asian": 16.1
+    "Sub-Saharan African": 46.7,
+    "East Asian": 17.1,
+    "Hispanic/Latin American": 13.7,
+    "Middle Eastern": 12.4,
+    "South Asian": 10.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 46.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 1.9,
+        "Fujianese": 2.2
+      },
+      "Japanese": {
+        "Japanese": 6.6
+      },
+      "Korean": {
+        "Korean": 6.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 13.7
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 7.8
+      },
+      "Kurdish": {
+        "Kurdish": 1.5
+      },
+      "Arab Levantine": {
+        "Syrian": 3.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 4
+      },
+      "Pakistani": {
+        "Pashtun": 2.1,
+        "Punjabi Pakistani": 1.4
+      },
+      "Nepali": {
+        "Nepali": 2.6
+      }
+    }
+  }
 }

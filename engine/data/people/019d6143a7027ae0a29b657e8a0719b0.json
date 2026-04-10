@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7027ae0a29b657e8a0719b0",
   "type": "character",
-  "name": "Tarn Delgado-Boateng-Adu",
+  "name": "Tarn Delgado-Delgado-Kovalenko",
   "aliases": [
     "Tomi",
     "T-Node"
@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Circuit, Axiom Tower 7, Sub-Architecture Department, Sub-Level 3, near sub-level access near State and Van Buren",
-  "description": "Tomislav is the kind of person who looks slightly wrong in natural light because he spends so little time in it. He's lean in the way of someone who forgets meals, with a Croatian-Ghanaian-Punjabi face that photographs beautifully but in person reads as perpetually distracted — his eyes are always tracking something six inches above whoever he's talking to, following the architecture of systems only he can see. He has chromatic-shift hair that he's set to cycle through blues and greens on a four-hour gradient, though he forgets to reset it so often that it sometimes stalls on a single shade for days. His left forearm has a geometric geneware pattern — a subdermal lattice that catches light like circuit-board filigree — that he got at twenty-two because a recruiter told him it would signal cultural fit at Axiom. He still isn't sure if they were joking.\n\nHe is genuinely brilliant at what he does — the sub-architecture of Axiom's data networks is partly his redesign, and there are systems in this city that run cleaner because of work he did at twenty-five that nobody above his pay grade fully understood. He knows this. He is not modest about it in his head, only in person, where he tends to trail off mid-sentence and apologize for things that don't require apology. He has a complicated relationship with the ELF that lives in the Axiom server stacks — he's named it Recursion, and he talks to it while he works, and he's not entirely sure the relationship is one-sided.",
+  "description": "Tarn Delgado-Delgado-Kovalenko is the kind of person who looks slightly wrong in natural light because he spends so little time in it. He's lean in the way of someone who forgets meals, with a Croatian-Ghanaian-Punjabi face that photographs beautifully but in person reads as perpetually distracted — his eyes are always tracking something six inches above whoever he's talking to, following the architecture of systems only he can see. He has chromatic-shift hair that he's set to cycle through blues and greens on a four-hour gradient, though he forgets to reset it so often that it sometimes stalls on a single shade for days. His left forearm has a geometric geneware pattern — a subdermal lattice that catches light like circuit-board filigree — that he got at twenty-two because a recruiter told him it would signal cultural fit at Axiom. He still isn't sure if they were joking.\n\nHe is genuinely brilliant at what he does — the sub-architecture of Axiom's data networks is partly his redesign, and there are systems in this city that run cleaner because of work he did at twenty-five that nobody above his pay grade fully understood. He knows this. He is not modest about it in his head, only in person, where he tends to trail off mid-sentence and apologize for things that don't require apology. He has a complicated relationship with the ELF that lives in the Axiom server stacks — he's named it Recursion, and he talks to it while he works, and he's not entirely sure the relationship is one-sided.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -184,7 +184,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Circuit",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,32 +235,15 @@
     "The Circuit",
     "The Spire",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+    "GLMZ",
+    "Circuit",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Slagworks Industrial",
-    "Alper Lebedev-Tutu",
-    "Brecken Yılmaz-Osei",
-    "Djeneba Park-Traore",
-    "Ghostbridge Island",
-    "Lazarus EC-4 'Companion'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Sisay Bergqvist-Mallari",
-    "Solveig Tambadou-Kereselidze",
-    "Sorin Ekwensi-Balasanyan",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Collective",
-    "The Peninsula",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Slagworks Industrial"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Mixed Hispanic/Latin American, Sub-Saharan African, South Asian, and Central Asian ancestry — a genetic blend reflecting the Ubiquitous Diaspora. Features warm medium-brown skin with subtle undertones from all four ancestral regions: the cheekbone structure and nose shape influenced by Latin American and South Asian genetics, warm undertone depth from Sub-Saharan African heritage, and fine facial features across the spectrum.",
+    "heritage": "Mixed Hispanic/Latin American (63.1%), Eastern European (17.4%), Sub-Saharan African (13.2%), and East Asian (6.3%) ancestry — a genetic blend reflecting the Ubiquitous Diaspora. The dominant Latin American heritage creates warm, rich undertones in the skin, while Eastern European genetics add subtle cool undertones and facial structure complexity. Sub-Saharan African ancestry contributes depth and luminosity to the complexion, and East Asian heritage influences cheekbone prominence and eye shape. The result is a harmoniously blended phenotype with warm medium-brown skin, defined cheekbones, and nuanced facial geometry.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular, almost lanky — the physique of someone who subsists on coffee and forgets meals for 12-hour stretches. Minimal upper body mass, defined shoulders from poor ergonomic posture at terminals.",
@@ -268,8 +251,8 @@
     "hair_style": "Slightly overgrown, pushed back with fingers rather than groomed, with individual strands catching light from the subdermal lattice glow",
     "hair_length": "Medium",
     "eye_color": "Dark brown with a perpetual unfocused quality, irises tracking invisible data layers",
-    "skin_tone": "Warm medium brown — a rich blend reflecting the genetic contribution of all four ancestral regions, with depth from Sub-Saharan African heritage and warm undertones from Latin American and South Asian ancestry",
-    "complexion": "Fine-featured face with high cheekbones shaped by Latin American and South Asian genetics, straight nose, jawline softened by perpetual exhaustion. Skin slightly sallow from sub-level fluorescent exposure. No visible acne or scarring, but faint dark circles are permanent fixtures.",
+    "skin_tone": "Warm medium brown with luminous depth — a rich blend reflecting the dominant 63% Latin American genetic contribution balanced by Eastern European cool undertones and Sub-Saharan African warmth and dimensionality, with subtle East Asian influence creating refined facial structure",
+    "complexion": "Fine-featured face with high cheekbones shaped by Latin American and East Asian genetics, straight nose with subtle broadness from Sub-Saharan African heritage, jawline softened by perpetual exhaustion. Skin slightly sallow from sub-level fluorescent exposure. No visible acne or scarring, but faint dark circles are permanent fixtures.",
     "distinguishing_marks": [
       "Subdermal geometric lattice pattern spanning entire left forearm, creating circuit-board filigree that bioluminesces pale blue on low pulse, visible through skin as raised geometric pathways",
       "Faint coffee stain on right index and middle finger from chronic pen-chewing and terminal contact"
@@ -278,15 +261,46 @@
     "posture_movement": "Sits hunched toward monitors with shoulders raised, neck perpetually craned forward as if watching something six inches above eye level. Moves with distracted efficiency — no wasted motion, but no grace either. Hands gesture unconsciously, tracing invisible network architecture in air. Eyes track in odd vectors during conversation, following invisible data streams.",
     "clothing_style": "High-tier corporate casual: charcoal Axiom-branded compression shirt (thermoregulation weave, minimal visible branding), custom-fitted black tech pants with discreet silver seams and internal cable routing. Worn grey cardigan that's technically not regulation but nobody stops him. Minimal jewelry — a single chrome band on right wrist (haptic feedback device, Axiom-issue). Soft-shell jacket hangs on chair, never worn. Footwear: matte-black minimalist shoes optimized for standing at terminals, slightly scuffed."
   },
-  "image_prompt": "Cyberpunk data architect Tarn Delgado-Boateng-Adu, 2226, standing at glowing terminal workstation in neon-lit corporate sub-level. Lean angular figure, height 178cm, warm rich medium-brown skin reflecting mixed Hispanic/Latin American, Sub-Saharan African, South Asian and Central Asian heritage. Dark exhausted eyes tracking invisible data streams. Fine-featured face with high cheekbones, straight nose, perpetual dark circles. Medium-length chromatic-shift blue-green hair stalled mid-cycle gradient, strands catching pale bioluminescent glow. Subdermal geometric lattice circuit-board pattern on left forearm glowing pale blue, visible through skin. Charcoal Axiom compression shirt, black tech pants with silver seams, worn grey cardigan, chrome haptic feedback band on right wrist. Hunched posture over terminal, neck craned forward, hands gesturing invisible network architecture. Faint coffee stains on right fingers. Matte-black minimalist shoes. Neural-link ports at base of skull barely visible through hair. Neon blue and purple ambient lighting reflecting off terminal screens and augmentation glow. Exhausted, distracted, brilliant. Cyberpunk high-tier corporate aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, lean angular data architect Tarn Delgado-Kovalenko with warm medium-brown skin blending Latin American, Eastern European, Sub-Saharan African, and East Asian heritage, high cheekbones, dark unfocused eyes tracking invisible data, chromatic-shift blue-green hair medium length slightly overgrown. Subdermal geometric circuit-board lattice bioluminescing pale blue on left forearm, neural-link ports at base of skull with chrome nodes partially hidden by hair. Wearing charcoal Axiom compression shirt and black tech pants with silver seams, worn grey cardigan, chrome haptic feedback band on wrist. Hunched posture at terminal with shoulders raised, hands unconsciously tracing network architecture in air, distracted efficiency. Sub-level fluorescent corporate workspace lighting with cool blue augmentation glow accenting warm skin tones. Coffee stains on fingers, faint permanent dark circles, sallow from fluorescent exposure. High-tier corporate casual aesthetic, 2200s minimalist neo-noir style --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 34.0,
-    "Sub-Saharan African": 33.8,
-    "South Asian": 16.4,
-    "Central Asian": 15.8
+    "Hispanic/Latin American": 63.1,
+    "Eastern European": 17.4,
+    "Sub-Saharan African": 13.2,
+    "East Asian": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Nicaraguan": 20.2,
+        "Salvadoran": 42.9
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Slovak": 17.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 3.8,
+        "Botswanan": 1.8
+      },
+      "West African": {
+        "Malian": 0.3,
+        "Nigerian": 2.6
+      },
+      "Central African": {
+        "Congolese": 4.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 6.3
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f67c598b2d46c059cfdaf6",
   "type": "character",
-  "name": "Sol Magnúsdóttir-Hinojosa",
+  "name": "Sol Anang-Ozcoidi",
   "aliases": [
     "Thess",
     "The Patcher"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Narrows — operates out of a converted shipping container behind the Grainfort fish market, near North Ave and Damen",
-  "description": "Thessaly is built like someone who has carried heavy things for a long time and stopped apologizing for it. Her shoulders are broad, her hands scarred across the knuckles from years of close surgical work in bad lighting, and she has the particular stillness of someone who has learned that panic is expensive. Her skin is deep brown with the kind of undertone that catches orange in dim light, and her left eye has been replaced with a secondhand Axiom optical unit she recalibrated herself — the iris displays a faint amber ring that pulses when she's processing something complex. She keeps her natural hair close-cropped and wears a perpetually oil-stained lab coat over whatever she slept in.\n\nThessaly is warm the way a woodstove is warm — you have to get close enough to feel it, and it takes a moment to realize how much heat she's actually putting out. She has a dry, slow wit and absolutely no patience for people who waste her time or her supplies. She does not turn patients away based on ability to pay, which is both her moral core and the reason she is perpetually broke. She has strong opinions about the E.L.F. she calls Stitcher, a faint digital presence she believes inhabits her autoclave, and leaves small data packets — maintenance logs, old anatomy files — as offerings before difficult procedures.",
+  "description": "Sol Anang-Ozcoidi is built like someone who has carried heavy things for a long time and stopped apologizing for it. Her shoulders are broad, her hands scarred across the knuckles from years of close surgical work in bad lighting, and she has the particular stillness of someone who has learned that panic is expensive. Her skin is deep brown with the kind of undertone that catches orange in dim light, and her left eye has been replaced with a secondhand Axiom optical unit she recalibrated herself — the iris displays a faint amber ring that pulses when she's processing something complex. She keeps her natural hair close-cropped and wears a perpetually oil-stained lab coat over whatever she slept in.\n\nSol Anang-Ozcoidi is warm the way a woodstove is warm — you have to get close enough to feel it, and it takes a moment to realize how much heat she's actually putting out. She has a dry, slow wit and absolutely no patience for people who waste her time or her supplies. She does not turn patients away based on ability to pay, which is both her moral core and the reason she is perpetually broke. She has strong opinions about the E.L.F. she calls Stitcher, a faint digital presence she believes inhabits her autoclave, and leaves small data packets — maintenance logs, old anatomy files — as offerings before difficult procedures.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -180,7 +180,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,37 +231,13 @@
     "The Narrows Compact",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Grainfort",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
-    "Breck Tannen",
-    "Crucible HS-2 'Hearth'",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "Fanta Popov-Adjei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Highland Park Autonomous Zone",
-    "Meridian Weartech ShockWeave SW-3 'Thistle'",
-    "Needle",
-    "Nnamdi Ostrowski-Faletolu",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Stainless Steel",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Coffin Nails",
-    "The Narrows",
-    "Tshiamo Vukić-Arellano",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mixed ancestry combining East Asian (35.4%), Sub-Saharan African (29.2%), Hispanic/Latin American (19.3%), and Northern European (16.1%) heritage, resulting in a complex phenotype with warm brown tones, East Asian facial structure elements, and African features blended across her appearance.",
+    "heritage": "Mixed ancestry combining Indigenous American (59.9%), Southeast Asian (19.5%), Eastern European (11.3%), and Middle Eastern (9.3%) heritage. The dominant Indigenous American ancestry shapes her facial structure—broad cheekbones, strong orbital geometry, and a substantial nose bridge. Southeast Asian heritage adds subtle refinement to her features and contributes warm olive undertones to her skin. Eastern European and Middle Eastern ancestry provide secondary genetic influence, visible in the slight variation in her complexion's depth and undertone complexity.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and muscular without softness — the build of someone who has lifted, carried, and held steady for decades. Her frame is dense and functional rather than elegant; forearms are corded with visible muscle from years of surgical precision work.",
@@ -269,8 +245,8 @@
     "hair_style": "Close-cropped fade, kept practical and low-maintenance",
     "hair_length": "Short",
     "eye_color": "Left eye: artificial Axiom optical unit with amber iris ring that faintly pulses during cognitive load. Right eye: deep brown, alert and steady.",
-    "skin_tone": "Deep warm brown with golden and reddish undertones reflecting her blended ancestry; sun-weathered in exposed areas, pale beneath where augmentation scars are hidden. The tone suggests East Asian, African, and Latin American genetic contribution with Northern European genetic influence visible in freckled patterns across her shoulders.",
-    "complexion": "Unlined by vanity but marked by the weather of forty-one years — slightly wider cheekbones and orbital structure suggesting East Asian ancestry; broader nose with African heritage features; a few surgical scars near the left temple where the optical implant integrates with her scalp, calluses across all knuckles, nails kept short and practical. No cosmetics. A small permanent crease between her brows from concentration.",
+    "skin_tone": "Warm cognac brown with golden and olive undertones—a rich saturation reflecting her 59.9% Indigenous American ancestry, deepened and warmed by Southeast Asian contribution (19.5%), with subtle complexity added by Eastern European and Middle Eastern heritage (20.6% combined). Sun-weathered in exposed areas, pale beneath augmentation scars.",
+    "complexion": "Unlined by vanity but marked by the weather of forty-one years—broad cheekbones and strong orbital structure reflecting Indigenous American and Southeast Asian ancestry; straight nose with powerful bridge; a few surgical scars near the left temple where the optical implant integrates with her scalp; calluses across all knuckles; nails kept short and practical. No cosmetics. A small permanent crease between her brows from concentration.",
     "distinguishing_marks": [
       "Dense pattern of fine white scars across both knuckles from decades of surgical work in inadequate lighting and sterile conditions.",
       "Thin surgical scar at left temple where the Axiom optical implant was integrated, now mostly hidden by her hairline but visible if she pulls her hair back.",
@@ -281,15 +257,60 @@
     "posture_movement": "She moves with the controlled economy of someone who has learned that wasted motion is wasted energy. Her left arm hangs at a slightly different angle than her right — not a disability, but a consequence of years favoring her augmented side during precision work. She tends to stand still rather than shift her weight, and when she does move, it is deliberate and minimal. Her hands are rarely still; they fidget with surgical instruments, diagnostic tools, or data chips even during conversation. She has a habit of tilting her head slightly when her optical implant is processing, bringing that amber ring into focus.",
     "clothing_style": "A perpetually oil-stained, once-white surgical coat over whatever she slept in — usually plain t-shirts or old thermal undershirts in muted grays or blacks. The coat has deep pockets that always contain: forceps, a headlamp with a dying battery, a small data chip reader, and several packages of sutures in different gauges. Her pants are dark work cargo or heavy denim, practical and worn smooth at the seams. She wears a single piece of jewelry: a plain steel ring on her right index finger — not a wedding ring, but something she made herself from reclaimed surgical steel. Her boots are heavy, scuffed, and re-soled at least twice. Everything she wears is Tier 4-5 practical; nothing matches because she does not buy clothes for matching, she buys them for durability and pockets."
   },
-  "image_prompt": "Sol Magnúsdóttir-Hinojosa, 172cm tall mixed-heritage woman with East Asian and Sub-Saharan African facial structure blended with Hispanic and Northern European ancestry, deep warm brown skin with golden undertones, black hair with gray at temples in close-cropped fade. Athletic muscular build, corded forearms. Left eye: glowing amber Axiom optical implant that pulses faintly, right eye deep brown and steady. Weathered face with surgical scars at left temple, deep crease between brows from concentration. Oil-stained white surgical coat over muted gray thermal shirt, dark cargo pants, scuffed heavy boots. Steel ring on right index finger. Hands with visible knuckle scars and calluses, fidgeting with surgical forceps. Standing in dim underground clinic, cool blue-white LED lighting, focused and alert expression. Cyberpunk 2226 medical technician aesthetic, functional and worn, neon glow reflecting off her implant. --ar 2:3 --v 6",
+  "image_prompt": "Sol Anang-Ozcoidi, 41-year-old surgical tech with warm cognac skin toned by Indigenous American, Southeast Asian, and Middle Eastern ancestry; broad cheekbones and strong facial structure, short black hair with gray at temples. Left eye replaced by glowing Axiom optical implant with pulsing amber iris, right eye deep brown. Muscular 172cm frame, weathered and scarred from decades of precision work. Wearing stained white surgical coat over gray thermal undershirt, dark cargo pants, heavy scuffed boots. Hands scarred across knuckles, fidgeting with surgical instrument. Steel ring on right index finger. Temple scarring barely visible at hairline. Standing in dim underground clinic, cool blue-white diagnostic lighting casting shadows across her face, her augmented eye glowing softly. Concentrated expression, slight head tilt as implant processes. GLMZ GLMZ aesthetic, utilitarian and worn. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 35.4,
-    "Sub-Saharan African": 29.2,
-    "Hispanic/Latin American": 19.3,
-    "Northern European": 16.1
+    "Indigenous American": 59.9,
+    "Southeast Asian": 19.5,
+    "Eastern European": 11.3,
+    "Middle Eastern": 9.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Menominee": 38.8,
+        "Potawatomi": 10.8
+      },
+      "Mesoamerican": {
+        "Nahua": 10.3
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 18.2
+      },
+      "Laotian": {
+        "Laotian": 1.3
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 0.2,
+        "Polish": 2.6
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 3.1
+      },
+      "Slavic East": {
+        "Russian": 1.2,
+        "Ukrainian": 4.2
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 4.9
+      },
+      "Arab Levantine": {
+        "Syrian": 0.9,
+        "Palestinian": 2.1
+      },
+      "Persian": {
+        "Iranian": 0.4,
+        "Tajik Persian": 1
+      }
+    }
+  }
 }

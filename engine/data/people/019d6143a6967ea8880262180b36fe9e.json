@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6967ea8880262180b36fe9e",
   "type": "character",
-  "name": "Khalil Bhattacharya",
+  "name": "Szymon Krstić",
   "aliases": [
     "Pep",
     "the Shelf kid"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Hough Reclamation (fieldwork); Meridian Core (institutional address), near State and Madison",
-  "description": "Pepetua is compact and coiled-looking, the kind of person who is always slightly in motion even when sitting still — knee bouncing, fingers tracking invisible data, head tilted as though listening to something just outside the conversation's frequency. Their skin is a warm reddish-brown, and they have cat ears, dark brown and velvety, a geneware mod they got at nineteen with a student discount and have since come to regard as both a minor embarrassment and a genuine part of themselves. Their natural hair is grown out in loose coils they keep tied back during fieldwork. They dress practically — durable fabrics, flat shoes, everything with pockets — but with a consistent stripe of color, usually deep orange or red, that former classmates say is the only vanity they have maintained from their undergraduate years.\n\nThey grew up on the lower Shelf in Hough Reclamation — Tier 1 transitioning to Tier 2 across their childhood — and are now the first person from their immediate family to hold an academic position, a fact that produces in them equal parts pride and a persistent low-level guilt they have not resolved. Their research is not extractive tourism of the community they came from; they are genuinely embedded, genuinely accountable, and they fight loud public battles about what ethical fieldwork looks like in academic venues where people are not always ready to hear it. They are twenty-eight and have already made enemies.",
+  "description": "Szymon Krstić is compact and coiled-looking, the kind of person who is always slightly in motion even when sitting still — knee bouncing, fingers tracking invisible data, head tilted as though listening to something just outside the conversation's frequency. Their skin is a warm reddish-brown, and they have cat ears, dark brown and velvety, a geneware mod they got at nineteen with a student discount and have since come to regard as both a minor embarrassment and a genuine part of themselves. Their natural hair is grown out in loose coils they keep tied back during fieldwork. They dress practically — durable fabrics, flat shoes, everything with pockets — but with a consistent stripe of color, usually deep orange or red, that former classmates say is the only vanity they have maintained from their undergraduate years.\n\nThey grew up on the lower Shelf in Hough Reclamation — Tier 1 transitioning to Tier 2 across their childhood — and are now the first person from their immediate family to hold an academic position, a fact that produces in them equal parts pride and a persistent low-level guilt they have not resolved. Their research is not extractive tourism of the community they came from; they are genuinely embedded, genuinely accountable, and they fight loud public battles about what ethical fieldwork looks like in academic venues where people are not always ready to hear it. They are twenty-eight and have already made enemies.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -177,7 +177,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation (fieldwork); Meridian Core (institutional address)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -227,32 +227,14 @@
     "Meridian Core",
     "The Reclamation Assembly",
     "Ferrogate Transit",
-    "Flicker",
+    "Frequency",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Gradient Compact",
-    "Alper Inoue-Aidoo",
-    "Ambassador Silk",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Otitodilichukwu Sigurðsson-Batmunkh",
-    "Patient Zero",
-    "Réginald Asomaning-Čabarkapa",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "The Coffin Nails",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "University Spine",
-    "Vuk Jorgensen-Toure",
-    "WELLSPRING",
-    "Witness"
+    "The Gradient Compact"
   ],
   "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Middle Eastern and South Asian primary ancestry with Northern European, Pacific Islander, and Sub-Saharan African heritage blended throughout. The combination creates warm golden-brown undertones with subtle complexity in skin depth and facial structure.",
+    "heritage": "Complex multicontinent ancestry blending Eastern European (36.1%), South Asian (23.0%), Sub-Saharan African (22.1%), Hispanic/Latin American (10.5%), and Pacific Islander (8.3%) heritage. This genetic mosaic creates rich, dimensional warm brown skin with golden-olive base tones, subtle reddish undertones, and warmth that shifts across the face—a truly global phenotype reflecting the Ubiquitous Diaspora.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and wiry, muscular in the way of someone who walks constantly and carries tension in their shoulders. No excess weight; lean but not fragile. Center of gravity slightly forward, as though perpetually ready to move.",
@@ -260,8 +242,8 @@
     "hair_style": "Loose coils, typically secured back with a cloth tie or simple elastic during fieldwork; occasionally left loose on institutional days",
     "hair_length": "Medium (shoulder-length when loose)",
     "eye_color": "Dark brown, warm",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, reflecting the blend of Middle Eastern and South Asian ancestry with lighter Northern European influence creating depth and warmth across the complexion",
-    "complexion": "Clear, with a few sun-darkened freckles across the bridge of nose and cheekbones from outdoor fieldwork. Subtle warmth in cheek and temple area. Minimal grooming vanity except for consistent attention to keeping nails short and practical. Fine lines beginning around eyes from squinting while taking notes.",
+    "skin_tone": "Warm golden-brown with olive and reddish undertones, dimensional and complex—the natural result of Eastern European, South Asian, Sub-Saharan African, and Pacific Islander ancestry creating depth and warmth across the entire complexion",
+    "complexion": "Clear, with sun-darkened freckles across the bridge of nose and cheekbones from outdoor fieldwork. Subtle warmth in cheek and temple area. Minimal grooming vanity except for consistent attention to keeping nails short and practical. Fine lines beginning around eyes from squinting while taking notes. Facial structure shows the blend of ancestry—broader cheekbones reflecting South Asian and Sub-Saharan African heritage, defined jaw reflecting Eastern European heritage, with overall warmth and dimensional feature architecture.",
     "distinguishing_marks": [
       "Faint surgical scar at the base of the skull, approximately 3cm, from neural implant insertion — visible only when hair is pulled back",
       "Small burn scar on inner left wrist (cooking accident, age 12) — pale and well-healed",
@@ -271,16 +253,63 @@
     "posture_movement": "Perpetually coiled. Even sitting still, some part of them moves — knee bounce, finger drumming, head tilt. Cat ears swivel independently toward sound sources or conversation partners. When walking, efficient and purposeful, never leisurely. Hands frequently gesture while speaking, especially when explaining research concepts. They have a habit of tilting their head slightly to the left when listening intently.",
     "clothing_style": "Pragmatic Tier 2-3 blend. Durable synthetic fabrics, flat steel-toed boots (worn but well-maintained), cargo pants or utility jeans with visible patch repairs. Base layers are neutral (gray, black, cream) but always paired with a deliberately chosen stripe of color — deep rust orange, burnt red, or terracotta — in the form of a thrifted overshirt, armband, or bandana. On institutional days, this same color appears as a scarf or deliberately clashing accent. No logos or status markers. Everything has functional pockets. Worn canvas messenger bag for fieldwork. One piece of jewelry: a thin silver ring on index finger, dented and old."
   },
-  "image_prompt": "Khalil Bhattacharya, 162cm tall compact figure with warm golden-brown skin and Middle Eastern-South Asian heritage, dark brown coiled hair at shoulder-length, twitching dark velvety cat ears above human ears. Intelligent dark brown eyes with faint laugh lines, asymmetrical ear piercings. Wearing rust-orange thrifted overshirt layered over gray base, utility cargo pants with patch repairs, steel-toed boots. Perpetually coiled posture, hands gesturing mid-explanation, head tilted left in listening intensity. Worn canvas messenger bag slung across chest. Faint blue LED flicker visible at corner of left eye. Cyberpunk 2226 GLMZ setting, cool fluorescent institutional lighting mixed with warm ambient glow, background suggesting field research or urban archive environment. Neural implant scar visible at base of skull. Dented silver ring on index finger. Professional yet pragmatic demeanor, restless energy captured in motion blur of hands --ar 2:3 --v 6",
+  "image_prompt": "Szymon Krstić, GLMZ, 162cm tall compact wiry frame, warm golden-brown skin with olive and reddish undertones reflecting Eastern European, South Asian, Sub-Saharan African, Hispanic, and Pacific Islander heritage. Dark brown coiled shoulder-length hair, dark warm eyes, mobile velvety dark brown cat ears (geneware) above human ears. Practical fieldwork clothing: worn steel-toed boots, utility cargo pants with patches, neutral base layer with rust-orange overshirt accent, worn canvas messenger bag. Thin silver dented ring on index finger. Asymmetrical ear piercings. Faint surgical scar at skull base visible when hair pulled back. Perpetually coiled posture, tilted head listening intently. Discrete blue LED flicker at corner of left eye. GLMZ industrial setting, late afternoon fieldwork lighting, focused intense expression, hands gesturing while explaining, tension visible in shoulders. Neo-noir urban aesthetic, gritty urban environment, atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 42.6,
-    "South Asian": 28.9,
-    "Northern European": 20.9,
-    "Pacific Islander": 5.6,
-    "Sub-Saharan African": 2.0
+    "Eastern European": 36.1,
+    "South Asian": 23,
+    "Sub-Saharan African": 22.1,
+    "Hispanic/Latin American": 10.5,
+    "Pacific Islander": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 17.9,
+        "Romanian": 18.2
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 19
+      },
+      "Nepali": {
+        "Nepali": 3.5
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 0.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 6.8
+      },
+      "West African": {
+        "Ghanaian": 8.5
+      },
+      "Southern African": {
+        "South African": 6.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 2.7
+      },
+      "Mexican": {
+        "Mexican": 6.4
+      },
+      "Caribbean": {
+        "Dominican": 0.4,
+        "Puerto Rican": 1
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Palauan": 8.3
+      }
+    }
+  }
 }

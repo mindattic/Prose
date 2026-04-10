@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6917bfbb204406ccf4a99c6",
   "type": "character",
-  "name": "Remi Faalele-Bergqvist-Hinojosa",
+  "name": "Remi Szabó-Kovalenko-Hinojosa",
   "aliases": [
     "Radium",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Pulaski and Chicago Ave",
-  "description": "Pare Mwangi-Leblanc is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 22, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a tech retriever out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Pare Mwangi-Leblanc is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Remi Szabó-Kovalenko-Hinojosa is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 22, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a tech retriever out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Remi Szabó-Kovalenko-Hinojosa is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -258,7 +258,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -271,33 +271,16 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Nearfield",
     "Ashfield",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Bioelectric Muscle Fiber",
-    "Breck Tannen",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Neuromorphic Pressure Cestus",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA CR-12 'Whisper'",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multiethnicity: Hispanic/Latin American (37.6%) forms the primary base with warm golden-bronze undertones, Pacific Islander (24.2%) contributing broader facial structure and warm brown depth, Eastern European (17.0%) adding subtle angular definition to cheekbones and brow, East Asian (12.8%) visible in eye shape and hair texture, South Asian (8.4%) contributing to skin warmth and facial geometry. Complex blended ancestry with no single dominant regional feature—instead a harmonious integration across all traits.",
+    "heritage": "Complex multiethnicity with Eastern European (37.6%) as structural foundation providing angular definition to cheekbones and brow ridge, balanced by Hispanic/Latin American (20.9%) and Indigenous American (15.6%) contributions creating broader facial width and prominence of cheekbones, while South Asian (15.6%) and Southeast Asian (10.3%) genetics deepen overall warmth and refine eye shape. The result is harmonious integration across all ancestry groups—no single dominant feature, instead a refined and balanced multifaceted facial architecture with warm golden undertones throughout.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Athletic and lean with visible muscle definition — dancer's posture, fighter's readiness. Fluid economy of movement suggests years of deliberate physical conditioning.",
@@ -305,8 +288,8 @@
     "hair_style": "Kept short and neat, military-standard fade with slightly longer crown",
     "hair_length": "Short",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Golden-bronze complexion with warm undertones—deeper medium tone from Hispanic/Latin American and Pacific Islander ancestry, with subtle warmth from South Asian genetics. Sun-exposed areas show slightly deeper saturation while protected areas reveal the underlying warm golden base.",
-    "complexion": "Clean-shaven with strong, defined features blending multiple heritage traits: broader cheekbones and facial width from Pacific Islander genetics, subtle angular definition of brow and jaw from Eastern European ancestry, almond-shaped eye structure from East Asian genetics, warm undertone depth from Hispanic/Latin and South Asian heritage. Soft features that read younger than his experience. Skin shows minimal scarring — speaks to either luck or skill. Grooming is meticulous and maintained.",
+    "skin_tone": "Warm medium golden-bronze complexion with rich saturation, blending Eastern European base with deeper warmth from Hispanic/Latin American, Indigenous American, and South Asian ancestry. Even tone throughout with subtle golden undertones. Sun-exposed areas show slightly deeper saturation while protected areas reveal the underlying golden warmth.",
+    "complexion": "Clean-shaven with strong, refined features reflecting multiethnicity: angular cheekbone and brow definition from Eastern European heritage balanced by broader facial width from Hispanic/Latin American and Indigenous American genetics, with warm depth and refined eye shape from South Asian and Southeast Asian ancestry. Soft features that read younger than experience. Skin shows minimal scarring. Grooming is meticulous and maintained.",
     "distinguishing_marks": [
       "Faint burn scar across the left shoulder blade, approximately 4cm in length, silver-white coloration suggesting old synthetic skin graft",
       "Network of hairline scars across the inside of both wrists — consistent with old port scar tissue, likely pre-augmentation work"
@@ -315,16 +298,58 @@
     "posture_movement": "Moves with controlled precision — every step economical, no wasted energy. Standing posture is upright but relaxed, suggesting confidence without aggression. Head positioning is alert but not paranoid. When at rest, weight is always distributed for immediate movement in any direction.",
     "clothing_style": "Tier 4 functional aesthetic — reinforced synthetic-blend jackets with internal pockets for gear, matte-finish combat pants with integrated knee pads, steel-toed boots. Colors are muted: grays, blacks, deep blues. Minimal branding beyond functional tactical webbing. Everything is maintained in immaculate condition despite the wear of active work. No jewelry or unnecessary adornment."
   },
-  "image_prompt": "Remi Faalele-Bergqvist-Hinojosa, 178cm tall athletic operative in cyberpunk 2226 Great Lakes Metropolitan Zone. Golden-bronze complexioned male with blended Hispanic/Latin American, Pacific Islander, Eastern European, East Asian, and South Asian ancestry visible in strong defined cheekbones, almond-shaped dark brown eyes, warm-toned skin. Dark brown hair in tight military fade. Clean-shaven, meticulous grooming. Wearing matte-finish tactical combat jacket in charcoal gray with reinforced synthetic-blend panels, dark combat pants with integrated knee pads, steel-toed boots. Visible subcutaneous augmentation tracery along inner forearms, synthetic lung seam scars visible along ribcage. Faint silver-white burn scar across left shoulder blade. Posture radiates controlled precision and alert readiness without aggression. Standing in moody industrial warehouse setting with neon accent lighting casting blue and purple shadows across textured metal walls. Cinematic cyberpunk atmosphere, photorealistic character study, dramatic rim lighting, shallow depth of field --ar 2:3 --v 6",
+  "image_prompt": "Remi Szabó-Kovalenko-Hinojosa, 178cm tall athletic lean frame, GLMZ, warm golden-bronze complexion with multiethnetic features—angular Eastern European cheekbones, broader Indigenous facial width, refined South Asian eye shape, short dark brown military fade haircut, dark unaugmented eyes, meticulous clean-shaven grooming. Visible synthetic lung seams along ribcage catching light, subcutaneous augmentation tracery along forearms, faint burn scar on left shoulder blade, old port scars on wrists. Wearing matte-finish tactical gear—reinforced gray synthetic jacket with internal pockets, combat pants with knee pads, steel-toed boots. Alert posture, controlled economical movement, weight balanced for immediate action. Neo-noir metropolis background, neon and industrial lighting, professional operative aesthetic, confident relaxed demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 37.6,
-    "Pacific Islander": 24.2,
-    "Eastern European": 17.0,
-    "East Asian": 12.8,
-    "South Asian": 8.4
+    "Eastern European": 37.6,
+    "Hispanic/Latin American": 20.9,
+    "Indigenous American": 15.6,
+    "South Asian": 15.6,
+    "Southeast Asian": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 17.5,
+        "Polish": 3.6
+      },
+      "Slavic East": {
+        "Russian": 1.5,
+        "Belarusian": 2.9
+      },
+      "Slavic South": {
+        "Croatian": 12.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 20.9
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Muscogee": 15.6
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 6.3
+      },
+      "Pakistani": {
+        "Sindhi": 5.9
+      },
+      "Sri Lankan": {
+        "Sinhalese": 2.7,
+        "Tamil Sri Lankan": 0.7
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 10.3
+      }
+    }
+  }
 }

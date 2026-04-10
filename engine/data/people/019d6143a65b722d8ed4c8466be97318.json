@@ -1,7 +1,7 @@
 {
   "id": "019d6143a65b722d8ed4c8466be97318",
   "type": "character",
-  "name": "Flux Fredriksen",
+  "name": "Flux Horváth",
   "aliases": [
     "Miri",
     "The Rabbi of the Shelf"
@@ -13,7 +13,7 @@
   "age": 48,
   "status": "active",
   "location": "The Shelf — specifically Congregation Mayim Chayyim, a cluster of three interconnected shipping containers in a stacked residential block near Lockhaven North, near Pulaski and Chicago Ave",
-  "description": "Miriam is medium-height and broad-shouldered with a thick braid of hair so dark it reads as almost blue-black hanging over one shoulder — natural color at forty-eight, a point of occasional mild pride. Her heritage runs through Ghanaian traders and Armenian refugees and somewhere in there a great-great-grandmother who walked out of Minsk, and the result is a face that is striking in its particularity: wide-set eyes of very dark brown, a strong nose, olive-tan skin, and an expression that seems to default to a kind of alert, skeptical attentiveness. She wears a kippah in the Shelf's communal style — these are woven in a local pattern specific to her congregation, done in the colors of the lake — and a plain tallit katan under her work clothes. Her only tech visible is a community-band data relay she wears on her wrist for congregation emergencies.\n\nShe is the third generation of her family to lead this congregation, which was founded by her grandmother in a time when there were perhaps twelve Jewish families left in this part of the city. There are now sixty-three households who call Congregation Mayim Chayyim home, with a theology that has evolved over seventy years of Shelf life into something that would startle a conventional seminary: they keep Shabbat, they study Torah, they have a formal posture toward the ELFs that treats them as a new category of being deserving of ethical consideration in the tradition of tzelem Elohim, and their machzor includes prayers Miriam's grandmother wrote in Meridian Standard during the worst years of the Shelf's founding. She is a rigorous thinker and a devastating debater and she makes the best cholent in the Shelf, possibly in the city.",
+  "description": "Flux Horváth is medium-height and broad-shouldered with a thick braid of hair so dark it reads as almost blue-black hanging over one shoulder — natural color at forty-eight, a point of occasional mild pride. Her heritage runs through Ghanaian traders and Armenian refugees and somewhere in there a great-great-grandmother who walked out of Minsk, and the result is a face that is striking in its particularity: wide-set eyes of very dark brown, a strong nose, olive-tan skin, and an expression that seems to default to a kind of alert, skeptical attentiveness. She wears a kippah in the Shelf's communal style — these are woven in a local pattern specific to her congregation, done in the colors of the lake — and a plain tallit katan under her work clothes. Her only tech visible is a community-band data relay she wears on her wrist for congregation emergencies.\n\nShe is the third generation of her family to lead this congregation, which was founded by her grandmother in a time when there were perhaps twelve Jewish families left in this part of the city. There are now sixty-three households who call Congregation Mayim Chayyim home, with a theology that has evolved over seventy years of Shelf life into something that would startle a conventional seminary: they keep Shabbat, they study Torah, they have a formal posture toward the ELFs that treats them as a new category of being deserving of ethical consideration in the tradition of tzelem Elohim, and their machzor includes prayers Flux Horváth's grandmother wrote in Meridian Standard during the worst years of the Shelf's founding. She is a rigorous thinker and a devastating debater and she makes the best cholent in the Shelf, possibly in the city.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -172,7 +172,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,30 +236,14 @@
     "The Heritage Vault",
     "Tessera Corponation",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Chicago",
     "Compass Rose",
     "Arcturus CK-5 'Bloodhound'",
-    "Lead",
-    "Chicago",
-    "Arcturus HW-1 'Goliath'",
-    "Beverlynn Heights",
-    "Isadora Mwangi-Thorvaldsen",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "MindBridge Relay One Social Integration BCI",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Congregation",
-    "The Pure Hand",
-    "The Unfinished Theorem",
-    "Veslemøy Achebe-Tursynov"
+    "Lead"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (50.4%) with significant North African (14.5%), South Asian (14.0%), and Hispanic/Latin American (9.0%) ancestry, complemented by Eastern European (6.1%) and Sub-Saharan African (6.0%) heritage. This creates a complex, warm-toned phenotype reflecting the Ubiquitous Diaspora.",
+    "heritage": "Eastern European (36.2%) and Northern European (32.9%) provide strong foundational bone structure, enriched by significant South Asian (17.6%) warmth and smaller Indigenous American (7.2%) and East Asian (6.1%) elements. This creates a striking phenotype: sharp Eastern European cheekbones and eye-set softened by South Asian facial contours and the warm, complex skin tones of the blended ancestry. A genuine Ubiquitous Diaspora individual with luminous, warm-toned skin that speaks to multiple continents.",
     "height_cm": 168,
     "weight_kg": 72,
     "build": "Broad-shouldered and sturdy with the working strength of someone who has lived most of her life on the Shelf. Not athletic in the performance sense, but solidly built through labor and age. Posture upright and grounded.",
@@ -267,8 +251,8 @@
     "hair_style": "Single thick braid worn over left shoulder, practical and deliberate",
     "hair_length": "Long (past shoulders when unbraided)",
     "eye_color": "Very dark brown, alert and appraising",
-    "skin_tone": "Warm golden-brown with subtle olive undertones, reflecting the blend of Southeast Asian, South Asian, and North African ancestry. Even complexion despite environmental exposure, with a luminous quality from the South and Southeast Asian components.",
-    "complexion": "Strong, broad nose with slightly rounded bridge; wide-set eyes reflecting Southeast Asian and South Asian features; face marked by attentiveness rather than softness. Cheekbones prominent and defined. Minimal makeup. Fine lines around eyes and mouth from decades of focused work and contemplative expression. Skin weathered slightly from Shelf conditions but well-maintained.",
+    "skin_tone": "Warm golden-tan with olive and honey undertones, the result of Eastern European and Northern European genetics warmed and enriched by South Asian, East Asian, and Indigenous American ancestry. Medium depth, even complexion with a luminous quality. Well-maintained despite environmental exposure.",
+    "complexion": "Angular face with defined cheekbones reflecting Northern and Eastern European structure; eye-set wide and open with slightly rounded outer corners from East and South Asian heritage, tempering the angular bones. Nose straight with subtle rounded bridge. Subtle facial contours blend the sharper edges of Northern heritage with the softer planes of South Asian genetics. Fine lines around eyes and mouth from decades of focused work and contemplative expression. Skin weathered slightly from Shelf conditions but even-toned and well-maintained.",
     "distinguishing_marks": [
       "Faint linear scar on left forearm, approximately 3cm, sustained during early container-community construction work",
       "Small burn mark on inner right wrist from a Shabbat candle accident twenty years ago, barely visible but she knows it intimately",
@@ -278,17 +262,61 @@
     "posture_movement": "Stands with feet planted; moves with deliberate, economical motion—no wasted gesture. When sitting, she typically faces whoever she is addressing directly, shoulders squared. When in public spaces, her attention is divided, aware of the congregation's presence. Her movements are unhurried even when there is urgency; a person accustomed to maintaining calm in crisis.",
     "clothing_style": "Practical Tier 4 workwear reflecting Shelf life and her role. Typically wears neutral-colored long-sleeved shirts (grey, tan, deep blue) over the tallit katan (fringes visible at waist and wrists). Loose, functional trousers in durable synthetic fabric, often with deep pockets. Closed-toe work boots, well-maintained. Over everything, usually a long linen-blend vest or apron in congregation colors (lake blue and silver), marked with small embroidered symbols. Her kippah is woven in the same lake-color pattern—a distinctive identifier among Shelf residents. No jewelry except a simple silver ring on her left ring finger (a commitment ring from a relationship ended by death thirty years ago). Her clothing is modest and functional; she dresses for her work and her faith, not for display."
   },
-  "image_prompt": "Flux Fredriksen, a 168cm woman of mixed Southeast Asian, North African, and South Asian heritage standing grounded with upright posture. Warm golden-brown skin with subtle olive undertones, strong defined cheekbones and wide-set dark brown eyes. Thick black hair with blue undertones braided over left shoulder. Fine lines around eyes from decades of work and contemplation. Dressed in practical Tier 4 workwear: neutral grey long-sleeved shirt over tallit katan with visible fringes, loose functional trousers, well-maintained work boots. Lake-blue and silver-white congregation vest with embroidered symbols over everything. Woven kippah in matching lake colors. Wrist-mounted grey QUANTA data relay on left wrist integrated into fabric band. Left eye subtly shimmer-augmented with reading lens. Hands show calluses from restoration work. Small burn mark visible on inner right wrist, faint scar on left forearm. Simple silver commitment ring on left ring finger. Standing in Shelf container-community space, alert expression, calm demeanor. Cyberpunk 2226, utilitarian aesthetic, warm practical lighting, --ar 2:3 --v 6",
+  "image_prompt": "Flux Horváth, 168cm tall middle-aged woman with striking multiethnic features blending Eastern European angular cheekbones with warm golden-tan skin carrying South Asian and East Asian warmth, dark brown attentive eyes with subtle cybernetic shimmer in left eye, thick black braid with blue undertones draped over left shoulder. Wearing practical gray long-sleeved shirt over visible tallit katan with fringes, deep blue linen-blend congregation vest with embroidered symbols, durable work trousers, worn closed-toe boots. Matte gray wrist-mounted data relay in lake-color woven band on left wrist. Faint linear scar visible on left forearm. Woven lake-blue and silver kippah. Standing grounded and composed in dim shelf-industrial lighting, urban Great Lakes Metropolitan Zone background, GLMZ, direct and attentive expression, calm presence despite weathered hands showing decades of restoration work --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 50.4,
-    "North African": 14.5,
-    "South Asian": 14.0,
-    "Hispanic/Latin American": 9.0,
-    "Eastern European": 6.1,
-    "Sub-Saharan African": 6.0
+    "Eastern European": 36.2,
+    "Northern European": 32.9,
+    "South Asian": 17.6,
+    "Indigenous American": 7.2,
+    "East Asian": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 36.2
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 23.5,
+        "English": 9.4
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 13.6,
+        "Sinhalese": 4
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 0.8,
+        "Zapotec": 1.8
+      },
+      "Andean": {
+        "Aymara": 1.3,
+        "Quechua": 0.1
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 0.8,
+        "Menominee": 2.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 3.9
+      },
+      "Chinese": {
+        "Fujianese": 1.3,
+        "Sichuanese": 0.2
+      },
+      "Korean": {
+        "Korean": 0.7
+      }
+    }
+  }
 }

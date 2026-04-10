@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69473e2bcc8bb2d364d1f97",
   "type": "character",
-  "name": "Luca Echeverría-Savea",
+  "name": "Luca Björnsdóttir-Vestergaard",
   "aliases": [
     "Pav",
     "The Dermis"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Garret, a converted water-treatment building in Edgewater Prism, near Lincoln and Addison",
-  "description": "Pavlína is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in GLMZ's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
+  "description": "Luca Björnsdóttir-Vestergaard is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in GLMZ's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -181,7 +181,7 @@
     "Romantic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,33 +248,15 @@
   ],
   "related_entities": [
     "Edgewater Prism",
-    "GLMZ",
     "The Garret",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Gradient Compact",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "1.8x12mm Piezoelectric Micro-Flechette Cluster PMC-18",
-    "Aïssé Dragomirescu-Faalelei",
-    "Crucible HS-2 'Hearth'",
-    "Davi Ousseini-Brătianu",
-    "Ezio Kaboré-Malhotra",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Helix Biosystems",
-    "Lazarus EC-4 'Companion'",
-    "Narrowcast",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Tenderloin",
-    "The Pure Hand",
-    "Vespid Dynamics",
-    "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian and Hispanic/Latin American with Pacific Islander ancestry, creating a striking blend of features. The genetic mix manifests in warm golden-bronze undertones, high cheekbones with subtle angularity, and dark expressive eyes. East Asian heritage shows in eye shape and bone structure; Hispanic/Latin American ancestry in skin warmth and facial proportions; Pacific Islander genetics contribute to the overall warmth and luminous quality of the complexion.",
+    "heritage": "Predominantly Southeast Asian (35%) and East Asian (29%) ancestry with significant Northern European (20.5%) influence, complemented by Hispanic/Latin American (9.3%), Sub-Saharan African (5.1%), and Eastern European (1.1%) heritage. This creates a striking pan-regional blend: Southeast Asian warmth and bone structure form the foundation, East Asian eye shape and facial geometry layer in precision, Northern European fair undertones mute the overall saturation creating an olive-golden complexion, while Hispanic/Latin American and African ancestry contribute depth, facial width, and subtle richness to the skin.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and economical, with defined but not heavy musculature. Proportions suggest someone built for precision work rather than endurance—shoulders narrow, hands and fingers notably long-fingered and capable.",
@@ -282,8 +264,8 @@
     "hair_style": "Asymmetrical undercut: one side cropped to 3mm, swept side grown to shoulder length",
     "hair_length": "Long on one side, short on the other",
     "eye_color": "Deep amber and black, engineered to display slow-rotating nautilus spiral pattern",
-    "skin_tone": "Warm golden-bronze, medium-to-deep saturation with luminescent quality",
-    "complexion": "Smooth and well-maintained with visible signs of careful skincare. No facial hair. Fine-featured with high, defined cheekbones and a sharp, slightly tapered jawline. Skin shows the particular luminescence of someone who works with bioluminescent cultures regularly. The complexion reflects a blend of East Asian delicacy in bone structure with warmer Mediterranean and Pacific undertones.",
+    "skin_tone": "Warm olive-golden medium saturation with luminescent quality—the Southeast Asian warmth tempered by Northern European cool undertones, creating a complex mid-tone with golden and subtle peachy undertones. Complexion appears to glow with regular exposure to bioluminescent work.",
+    "complexion": "Smooth and well-maintained with visible signs of careful skincare. No facial hair. Fine-featured with moderately high, broad cheekbones reflecting the Southeast and East Asian structure, a balanced jawline with gentle definition showing influence from Northern European and Hispanic ancestry, and eye set displaying East Asian characteristics. Skin shows the particular luminescence of someone who works with bioluminescent cultures regularly. Overall facial proportions blend Southeast Asian delicacy with East Asian precision and Northern European substance, enriched by subtle depth from African heritage.",
     "distinguishing_marks": [
       "Bioluminescent geometric tracery in deep blues and greens along both forearms, temperature-reactive and shifting in hue with body heat",
       "Mossy texture patch on left shoulder approximately 8cm diameter, genuinely tactile moss-like surface (client gift and ongoing experiment)",
@@ -293,14 +275,61 @@
     "posture_movement": "Economical and precise. Sits with deliberate posture, rarely fidgets. Movements are smooth and controlled, suggesting someone comfortable in their body and conscious of spatial awareness. Hands are almost always in motion—gesturing during conversation, adjusting tools, or resting in a state of readiness. When focused on detailed work, enters a state of near-meditation stillness.",
     "clothing_style": "Functional Tier 3 aesthetic with deliberate anti-fashion choices. Typically wears a fitted black or charcoal technical shirt (moisture-wicking, easy to clean) paired with loose utility pants in dark colors. Often adds a long linen or canvas overshirt in cream or muted tones—professional but lived-in. Footwear is always sensible: flat-soled boots or slip-on shoes suitable for standing through long procedure days. Minimal jewelry except for a single worn silver ring. Fabric choices prioritize durability and cleanability over trend. Everything fits precisely; nothing is decorative."
   },
-  "image_prompt": "Luca Echeverría-Savea, compact 162cm biotech specialist with warm golden-bronze complexion, East Asian and Hispanic/Latin American heritage visible in high cheekbones and sharp jawline. Matte black asymmetrical undercut hairstyle—cropped on one side, shoulder-length on the other. Deep amber spiral-pattern engineered eyes. Luminescent bioluminescent geometric tracery in blues and greens flowing along both forearms, temperature-reactive. Genuine moss patch on left shoulder. Fitted charcoal technical shirt, loose dark utility pants, cream canvas overshirt worn and lived-in, flat-soled boots. Single worn silver ring. Precise, economical posture with graceful hand positioning suggesting biotech artisan work. Bioluminescent glow casting soft shadows in cyberpunk 2226 laboratory or workshop setting with warm practical lighting. Close-up or mid-shot emphasizing the luminous skin quality and augmentation work. Serene, focused expression. Cyberpunk 2200s, functional aesthetic, anti-fashion clarity --ar 2:3 --v 6",
+  "image_prompt": "Luca Björnsdóttir-Vestergaard, 162cm tall biotech specialist in GLMZ. Warm olive-golden skin tone glowing with bioluminescent work exposure, reflecting Southeast Asian warmth, East Asian precision, and Northern European balance. Fine-featured face with high broad cheekbones, balanced jawline, engineered deep amber spiral iris eyes visible in direct contact. Asymmetrical black hair—one side cropped 3mm, other side shoulder-length. Matte black undercut sweep. Compact athletic build, economical posture. Wearing fitted charcoal technical shirt and dark utility pants with cream linen overshirt, professional and lived-in. Striking bioluminescent geometric tracery in deep blues and greens spiraling both forearms, temperature-reactive and glowing. Mossy texture patch on left shoulder. Hands bearing tool-grip scars, long-fingered and precise. Minimalist silver ring. Standing in biolab surrounded by soft bioluminescent cultures, moody atmospheric neo-noir lighting casting blue-green glow across skin and augmentations. Meditative focus, still and controlled presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 44.1,
-    "Hispanic/Latin American": 43.8,
-    "Pacific Islander": 12.1
+    "Southeast Asian": 35,
+    "East Asian": 29,
+    "Northern European": 20.5,
+    "Hispanic/Latin American": 9.3,
+    "Sub-Saharan African": 5.1,
+    "Eastern European": 1.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 5.3
+      },
+      "Filipino": {
+        "Bicolano": 25.3,
+        "Tagalog": 4.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 29
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Swedish": 20.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 9.3
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 1
+      },
+      "West African": {
+        "Malian": 0.5,
+        "Guinean": 1
+      },
+      "Central African": {
+        "Gabonese": 2.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Polish": 0.8,
+        "Czech": 0.3
+      }
+    }
+  }
 }

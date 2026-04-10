@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5f97bcebc4e8af3094f3073",
   "type": "character",
-  "name": "Freya Solberg-Holm",
+  "name": "Freya Srisai-Holm",
   "aliases": [
     "Dzer",
     "The Bone Reader"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "University Spine, Edgewater Prism, near Lincoln and Clark",
-  "description": "Dzerassæ is a heavyset woman with deep amber skin and close-cropped silver hair she has never bothered to dye or modify, wearing it like a credential. Her eyes have patterned irises — concentric rings of copper and black, a cheap cosmetic mod she got at thirty-two and has never removed, though she insists she bought them for a reason she can no longer remember. She dresses in layered archival fabrics that always smell faintly of ozone from the scanning rigs she operates, and her hands bear the yellowish calluses of someone who handles physical storage media the way other people handle broken glass — with reverence and terror in equal measure.\n\nShe is the kind of academic who makes grad students feel simultaneously inspired and vaguely ashamed of themselves. She does not raise her voice, does not perform authority, but carries an absolute certainty in the importance of her work that functions as its own gravity. She excavates the digital ruins beneath GLMZ's foundations — the dead servers, the corrupted municipal archives, the ghost-logs of neighborhoods that were demolished to build the Shelf — and she speaks of the data the way a forensic pathologist speaks of bodies: with precise, unsentimental tenderness.",
+  "description": "Freya Srisai-Holm is a heavyset woman with deep amber skin and close-cropped silver hair she has never bothered to dye or modify, wearing it like a credential. Her eyes have patterned irises — concentric rings of copper and black, a cheap cosmetic mod she got at thirty-two and has never removed, though she insists she bought them for a reason she can no longer remember. She dresses in layered archival fabrics that always smell faintly of ozone from the scanning rigs she operates, and her hands bear the yellowish calluses of someone who handles physical storage media the way other people handle broken glass — with reverence and terror in equal measure.\n\nShe is the kind of academic who makes grad students feel simultaneously inspired and vaguely ashamed of themselves. She does not raise her voice, does not perform authority, but carries an absolute certainty in the importance of her work that functions as its own gravity. She excavates the digital ruins beneath GLMZ's foundations — the dead servers, the corrupted municipal archives, the ghost-logs of neighborhoods that were demolished to build the Shelf — and she speaks of the data the way a forensic pathologist speaks of bodies: with precise, unsentimental tenderness.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -178,7 +178,7 @@
     "Ice": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "University Spine",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,45 +230,23 @@
   "related_entities": [
     "University Spine",
     "Edgewater Prism",
-    "GLMZ",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Stratum",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "Copper",
     "The Pure Hand",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Glass",
-    "Alper Castillo-Ababio",
-    "Arcturus LS-5 'Sentinel'",
-    "Axiom Systems Portable Diaspora Terminal PDT-4",
-    "Aybek Sato-Poku",
-    "Chronicle",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Hough Reclamation",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nurlan Morita-Antwi",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "The Archive",
-    "The Heritage Vault",
-    "The Reclamation Assembly",
-    "Veslemøy Achebe-Tursynov",
-    "VitaCore ClearCourse Addiction Suppressor",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Northern European (Scandinavian-Polish blend) with significant East Asian ancestry, complemented by Sub-Saharan African, Eastern European, and minor Hispanic/Latin American heritage. A genetically mixed diaspora ancestry that manifests in blended facial structure and warm-toned skin.",
+    "heritage": "Deeply mixed diaspora ancestry: 40.5% Northern European (Scandinavian baseline), 18.2% Southeast Asian, 15% Eastern European, 11.8% Indigenous American, 10.5% South Asian, and 4% Sub-Saharan African. Her genetic heritage manifests as a striking phenotypic blend—high cheekbones and structured jawline from Northern European and Southeast Asian ancestry, warm medium-brown skin with golden and olive undertones reflecting the full spectrum of her mixed heritage, and subtle eye shape variations that suggest the complex interplay of four continental lineages.",
     "height_cm": 168,
     "weight_kg": 87,
     "build": "Heavyset, broad-shouldered, substantial frame that reads as solid rather than soft — the build of someone who has spent five decades moving through the world without apology. Her weight is distributed across a compact, sturdy structure; she moves like ballast.",
@@ -276,8 +254,8 @@
     "hair_style": "Close-cropped, practical, no styling beyond the cut itself",
     "hair_length": "Short",
     "eye_color": "Patterned irises with concentric copper and black rings; the pupil sits at the center of a target. Sclera slightly yellowed from decades of screen exposure.",
-    "skin_tone": "Warm medium-brown with amber undertones—a blend of Northern European, East Asian, and Sub-Saharan ancestry, darkened further by chronic ozone exposure and sun damage. Her complexion carries subtle golden and olive notes reflecting her diverse heritage.",
-    "complexion": "Fine creases around the eyes and mouth; her face reflects blended ancestry with slightly higher cheekbones and a structured jawline. Her face has the particular weathering of someone who squints at screens and old paper simultaneously. Minimal makeup. A small scar above her left eyebrow, almost invisible, from a lab accident in her thirties. Her skin has a faint chemical patina from handling archival materials.",
+    "skin_tone": "Warm medium-brown with golden and olive undertones—a harmonious blend reflecting her Northern European, Southeast Asian, Eastern European, South Asian, Indigenous American, and Sub-Saharan African ancestry. Darkened further by chronic ozone exposure and sun damage, her complexion carries subtle golden notes and a faint chemical patina from decades of archival material handling.",
+    "complexion": "Fine creases around the eyes and mouth reflecting fifty years of focused concentration and squinting at screens and degraded documents. Her facial structure shows the blended architecture of her mixed ancestry—prominent cheekbones with subtle Southeast Asian eye shape variation, structured jawline with breadth from Northern European heritage, and a nose bridge reflecting the convergence of South Asian and Eastern European traditions. A small scar above her left eyebrow, almost invisible, from a lab accident in her thirties. Her skin bears the weathering of someone who has spent her life in basements and archives rather than sunlight.",
     "distinguishing_marks": [
       "Thin, pale burn scar along the inside of her right forearm from a capacitor failure, roughly 8cm long, dating to approximately 2198.",
       "Yellow-brown staining across the palms and first two fingers of both hands from handling degraded data storage media and old magnetic tape.",
@@ -287,17 +265,73 @@
     "posture_movement": "She moves with economic precision — no wasted motion, but not rigid. She favors her left side slightly, protecting her chronically inflamed right hand. When sitting, she settles into a chair like someone familiar with long hours; her posture is upright but not tense, suggesting long-developed spinal discipline. Her hands move carefully, deliberately, the hands of an archaeologist. She has a habit of pausing mid-gesture while accessing her neural implant.",
     "clothing_style": "Layered archival-grade fabrics in muted tones — charcoal, rust, deep indigo — textured materials that age gracefully and don't show stains. Her outer layer is always a heavy canvas or linen coat, often with reinforced pockets. Underneath, fitted base layers and a secondary vest or tunic. Her clothing carries a faint chemical smell of ozone and preservation compound. No corporate branding, no Φ-tier status markers. Everything is functional, well-maintained, and approximately fifteen years out of fashion — not by neglect, but by deliberate refusal. She wears steel-toed boots suitable for lab work and basement navigation. A cloth watch on her left wrist with a hand-wound mechanism — older than cybernetics, more reliable."
   },
-  "image_prompt": "Freya Solberg-Holm, 168cm tall, solid heavyset frame with broad shoulders, standing in a 2226 Great Lakes Metropolitan Zone archival lab. Medium-brown skin with warm amber undertones reflecting mixed Northern European, East Asian, and Sub-Saharan ancestry. Short natural silver-grey hair, close-cropped. Striking patterned copper-and-black-ring augmented irises catching fragmented light. Deep weathered creases around eyes and mouth; small faded scar above left eyebrow. Minimal makeup. Wearing layered archival-grade fabrics in charcoal, rust, and deep indigo; heavy reinforced canvas coat over fitted base layers, steel-toed lab boots. Discreet biofeedback sleeve visible on right forearm. Pale capacitor burn scar on right inner forearm. Yellow-brown staining on hands from tape handling. Faded QR-code-like tattoo on left wrist, barely visible. Cloth mechanical watch on left wrist. Moving with economic precision, slightly favoring left side. Surrounded by degraded data storage media, old magnetic tape, and archival materials in soft laboratory lighting. Chemical patina on skin from preservation compounds. Cyberpunk 2200s aesthetic, practical and purposeful, no status markers. Moody ambient lab lighting with ozone haze. --ar 2:3 --v 6",
+  "image_prompt": "Freya Srisai-Holm, fifty-year-old data archaeologist, 2226 GLMZ near-future megacity setting. Compact, broad-shouldered heavyset frame, 168cm tall, silver-grey close-cropped hair. Striking mixed-heritage features: warm medium-brown skin with golden and olive undertones blending Northern European, Southeast Asian, Eastern European, South Asian, Indigenous American, and Sub-Saharan African ancestry. High cheekbones, structured jawline, subtle epicanthic eye shape variation. Most distinctive: patterned copper-and-black concentric ring irises, cybernetic augmentation catching and fragmenting light unnaturally. Fine creases around eyes and mouth, faint lab scar above left eyebrow, yellow-brown chemical staining on hands, pale burn scar on right forearm. Wearing layered archival-grade fabrics in charcoal, rust, and deep indigo; heavy reinforced canvas coat, fitted base layers, steel-toed boots. Faded corrupted-QR-code tattoo on left wrist next to mechanical hand-wound watch. Subtle biofeedback sleeve texture visible under right forearm. Basement archive lighting—fluorescent wash and warm practical work-light, ozone chemical atmosphere. Posture: precise, economical movement, slight left-side favor, careful deliberate hand gestures, focused concentration expression. Analog and augmented hybrid—no corporate status markers, deliberately unfashionable functional clothing. GLMZ 2200s archival noir aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 39.9,
-    "East Asian": 32.4,
-    "Sub-Saharan African": 11.5,
-    "Eastern European": 7.9,
-    "Hispanic/Latin American": 6.7,
-    "North African": 1.6
+    "Northern European": 40.5,
+    "Southeast Asian": 18.2,
+    "Eastern European": 15,
+    "Indigenous American": 11.8,
+    "South Asian": 10.5,
+    "Sub-Saharan African": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "German": 40.5
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 18.2
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Czech": 9.3,
+        "Polish": 3.3
+      },
+      "Slavic South": {
+        "Serbian": 1.3,
+        "Bosnian": 0.4
+      },
+      "Slavic East": {
+        "Russian": 0.3,
+        "Ukrainian": 0.4
+      }
+    },
+    "Indigenous American": {
+      "Great Lakes Nations": {
+        "Potawatomi": 5.8
+      },
+      "Mesoamerican": {
+        "Maya": 1.6,
+        "Mixtec": 1
+      },
+      "Andean": {
+        "Mapuche": 2.1,
+        "Aymara": 1.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 10.5
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Cameroonian": 2.1
+      },
+      "East African": {
+        "Kenyan": 0.8
+      },
+      "Southern African": {
+        "Zimbabwean": 0.8,
+        "Zambian": 0.3
+      }
+    }
+  }
 }

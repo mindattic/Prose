@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5db742d85bb5774f2af90a2",
   "type": "character",
-  "name": "Remi Árnason-Faalele",
+  "name": "Remi Chowdhury-Wickramasinghe",
   "aliases": [
     "Chiama",
     "Clean Hands"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Grand Corridor, near Armitage and Milwaukee",
-  "description": "Chiamaka Vestergaard-Suleimanović is precise in the way that some people are precise — not as a personality choice but as a metabolic fact, a condition of being. They are of moderate height and slight build, with deep brown skin, natural hair grown out to a medium length they wear in a carefully arranged protective style. Their most striking feature is purely cosmetic: bioluminescent freckles across the bridge of their nose and upper cheekbones, in a warm amber-gold, a gift to themselves on their thirtieth birthday. They dress in neat, unremarkable clothing and always, always wear gloves — not from a contamination protocol they've imported home, but because they find the sensation of touching most surfaces without them distracting.\n\nThey are the Metro Police Evidence Division's most technically accomplished analyst and their most quietly difficult employee. They have a gift for finding what the evidence says rather than what the investigation wants it to say, which has produced thirteen cases where their analysis materially contradicted the arresting officer's narrative. Four of those cases resulted in charges being dropped. The other nine resulted in paperwork, meetings, and a standing low-level friction with supervisors that neither side has ever directly addressed. Chiamaka does not care. The evidence is the evidence.",
+  "description": "Remi Chowdhury-Wickramasinghe is precise in the way that some people are precise — not as a personality choice but as a metabolic fact, a condition of being. They are of moderate height and slight build, with deep brown skin, natural hair grown out to a medium length they wear in a carefully arranged protective style. Their most striking feature is purely cosmetic: bioluminescent freckles across the bridge of their nose and upper cheekbones, in a warm amber-gold, a gift to themselves on their thirtieth birthday. They dress in neat, unremarkable clothing and always, always wear gloves — not from a contamination protocol they've imported home, but because they find the sensation of touching most surfaces without them distracting.\n\nThey are the Metro Police Evidence Division's most technically accomplished analyst and their most quietly difficult employee. They have a gift for finding what the evidence says rather than what the investigation wants it to say, which has produced thirteen cases where their analysis materially contradicted the arresting officer's narrative. Four of those cases resulted in charges being dropped. The other nine resulted in paperwork, meetings, and a standing low-level friction with supervisors that neither side has ever directly addressed. Chiamaka does not care. The evidence is the evidence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -194,7 +194,7 @@
     "Con Artist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -261,33 +261,17 @@
   ],
   "related_entities": [
     "Grand Corridor",
+    "Bridgepoint",
     "Chronicle",
+    "GLMZ",
     "Chimera-Null",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Stalker",
     "Arcturus CK-5 'Bloodhound'",
     "Gold",
-    "Elena Vasquez-9",
-    "The Milwaukee Core",
-    "Ambassador Silk",
-    "Ambrogio Waweru-Djordanović",
-    "Bogdan Achebe-Svanstrom",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Plot 17",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "ShieldTech CLA-3 'Cascade'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech Clarity Pro Neural Interface",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Volkov-Saito Precision VS-SL40 'Partisan'"
+    "Elena Vasquez-9"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European, Pacific Islander, Eastern European, Hispanic/Latin American, South Asian, and Sub-Saharan African blend. The Pacific Islander and Northern European ancestry (56.3% combined) creates a striking interplay: warm golden-bronze undertones from Pacific Islander heritage mixing with cooler Northern European influence, while Eastern European ancestry adds slight Slavic bone structure definition. The 14% Hispanic/Latin American ancestry contributes warmth to complexion, South Asian ancestry (9.2%) adds subtle depth to eye shape and cheekbone prominence, and Sub-Saharan African ancestry (3.1%) enhances the natural warmth and melanin distribution across their features.",
+    "heritage": "Predominantly South Asian (70.7%) with significant East Asian (21.1%) and Northern European (8.2%) ancestry. The South Asian majority establishes warm, rich golden undertones throughout the complexion, while East Asian heritage contributes subtle refinement to eye shape, cheekbone prominence, and facial structure. Northern European ancestry adds slight bone definition and facial angularity, creating a harmonious blend of warmth, clarity, and structural definition.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Slight and wiry, with the economy of movement that comes from precision work. No excess mass; their frame reads as someone who exists efficiently.",
@@ -295,8 +279,8 @@
     "hair_style": "Protective braids arranged in a crown pattern, meticulously maintained",
     "hair_length": "Medium (shoulder-length when fully extended)",
     "eye_color": "Deep brown, alert and focusing",
-    "skin_tone": "Golden-bronze with warm amber undertones—a complex blend of Pacific Islander warmth with Northern European depth, creating a rich medium-to-deep complexion that glows subtly under bioluminescent augmentation",
-    "complexion": "Clear and unblemished with naturally warm undertones reflecting the Pacific Islander-Northern European-South Asian blend. Cheekbone structure shows subtle Slavic prominence from Eastern European ancestry. Minimal makeup or grooming beyond the functional. Face carries the neutrality of someone who does not perform emotion for strangers.",
+    "skin_tone": "Warm medium-to-deep complexion with rich golden undertones characteristic of South Asian heritage, subtly enhanced by East Asian warmth and Northern European clarity. The result is a luminous, glowing tone that deepens slightly under bioluminescent augmentation.",
+    "complexion": "Clear and unblemished with naturally warm, saturated undertones reflecting South Asian-dominant ancestry. Cheekbone structure shows defined prominence from the blend of East Asian refinement and South Asian bone structure, with subtle angular clarity contributed by Northern European heritage. The overall facial architecture balances warmth with definition. Minimal makeup or grooming beyond the functional. Face carries the neutrality of someone who does not perform emotion for strangers.",
     "distinguishing_marks": [
       "Bioluminescent freckles in warm amber-gold across the bridge of nose and upper cheekbones, arranged in a subtle constellation pattern — a thirtieth-birthday modification that pulses faintly under low light",
       "Faint scarring on the palmar surfaces of both hands consistent with precision work micro-abrasions, nearly invisible"
@@ -305,17 +289,52 @@
     "posture_movement": "Upright, economical, deliberate. They move as if each motion has been calculated for efficiency. Hands are steady; there is no fidgeting or wasted gesture. When focusing on evidence work, they enter a state of complete stillness except for the precise movements required by the task.",
     "clothing_style": "Tier 3 utilitarian. Clean lab coat (Metro Police issue, well-maintained), neutral underlayers (grays, blacks, dark blues), sturdy flat shoes designed for long standing. No jewelry except a single plain silver ring on their left hand. No visible corpo branding or luxury indicators. Appearance suggests someone who has prioritized function over identity expression."
   },
-  "image_prompt": "Remi Árnason-Faalele, 168cm tall precision investigator with golden-bronze skin glowing faintly with bioluminescent amber freckles across bridge of nose and cheekbones, deep brown alert eyes, shoulder-length natural brown hair in meticulously maintained protective braids arranged in crown pattern. Wearing clean Metro Police lab coat over neutral gray and black underlayers, sturdy functional shoes, gloved hands steady and deliberate. Faint constellation of warm amber bioluminescence visible on face under low cyberpunk lighting. Upright posture, economical movement, complete stillness when focused. Background: GLMZ crime lab or evidence analysis station, 2226, cool LED ambient lighting with bioluminescent accents. Neutral expression, professional detachment, someone who exists efficiently. Cyberpunk 2200s aesthetic, hyper-detailed face emphasizing the complex ethnic blend of features, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Remi Chowdhury-Wickramasinghe, 168cm tall forensic specialist with slight wiry build, standing in a crime lab under cool fluorescent lighting. Warm deep golden-brown skin tone with South Asian-dominant features refined by East Asian heritage and Northern European bone definition. Deep brown alert eyes, clear complexion with natural warmth. Hair in protective shoulder-length braids arranged in a crown pattern. Subtle bioluminescent amber-gold freckles constellation across nose and cheekbones pulsing faintly in low light. Wearing clean Metro Police lab coat, neutral gray underlayer, sturdy flat shoes, thin leather gloves on hands. Upright economical posture, focused and still. Plain silver ring on left hand. GLMZ, Great Lakes Metropolitan Zone, forensic evidence work, cool atmospheric lighting, professional and functional aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 32.3,
-    "Pacific Islander": 24.0,
-    "Eastern European": 17.4,
-    "Hispanic/Latin American": 14.0,
-    "South Asian": 9.2,
-    "Sub-Saharan African": 3.1
+    "South Asian": 70.7,
+    "East Asian": 21.1,
+    "Northern European": 8.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Malayali": 18.4,
+        "Marathi": 8
+      },
+      "Nepali": {
+        "Nepali": 25
+      },
+      "Sri Lankan": {
+        "Sinhalese": 17.5,
+        "Tamil Sri Lankan": 1.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 7.7
+      },
+      "Chinese": {
+        "Hakka": 9
+      },
+      "Japanese": {
+        "Japanese": 4.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 3
+      },
+      "British Isles": {
+        "Scottish": 3.1
+      },
+      "Germanic": {
+        "Swiss German": 1.4,
+        "Austrian": 0.7
+      }
+    }
+  }
 }

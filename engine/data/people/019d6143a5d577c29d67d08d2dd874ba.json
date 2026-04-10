@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d577c29d67d08d2dd874ba",
   "type": "character",
-  "name": "Takoda Čabarkapa",
+  "name": "Rehana Raghavan",
   "aliases": [
     "Cel",
     "The Cartographer"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Grand Corridor, studio-apartment in the Gage Circuit transition zone, near Damen and Armitage",
-  "description": "Celestin is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of GLMZ's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
+  "description": "Rehana Raghavan is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of GLMZ's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -182,7 +182,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,35 +197,16 @@
   "related_entities": [
     "Grand Corridor",
     "Gage Circuit",
-    "GLMZ",
     "Grandmother",
     "The Shore Dogs",
-    "ARCHIVE",
+    "GLMZ",
+    "Circuit",
     "Slagworks Industrial",
-    "Axiom Systems Reality Overlay Consensus Layer",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Deniz Salazar-Quansah",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Orhan Dlamini-Kurikka",
-    "Palladian Construction",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Praevex",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Séance",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Archive",
-    "The Drowned Commission",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Weft Arrangement",
-    "Vuk Jorgensen-Toure"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Indigenous American (37.1%), Eastern European (16.1%), Southeast Asian (14.8%), Northern European (13.0%), Middle Eastern (10.2%), East Asian (8.8%)—a striking Ubiquitous Diaspora blend reflected in his warm, complex skin tone that shifts between copper and olive depending on light. His facial structure shows the higher cheekbones and broader face width characteristic of Indigenous American ancestry, softened by the finer bone structure of Southeast Asian heritage and the angular jaw hints of Eastern European lineage.",
+    "heritage": "South Asian (30%), Central Asian (23.1%), Sub-Saharan African (21.5%), Hispanic/Latin American (14.4%), East Asian (11%)—a striking Ubiquitous Diaspora blend. His warm, complex skin tone shifts between golden-brown and deep mahogany undertones depending on light, reflecting the layered ancestry of the Indian subcontinent, the Central Asian steppes, equatorial Africa, and subtle influences from East Asia and the Americas. His facial structure shows the balanced, fuller proportions characteristic of South Asian and Sub-Saharan African heritage, with refined cheekbones and eye shape from East Asian ancestry, and warm, full lips reflecting his multi-continental mix.",
     "height_cm": 173,
     "weight_kg": 71,
     "build": "Medium, lean but not wiry—sustained muscle tone from years of fine motor work and standing at spatial design rigs, no bulk, efficient frame",
@@ -233,8 +214,8 @@
     "hair_style": "Close-cropped, precisely maintained, textured rather than smooth",
     "hair_length": "Short",
     "eye_color": "Warm brown with faint amber retinal projection grid visible at certain angles—custom Axiom overlay system, minimalist aesthetic, not cosmetic",
-    "skin_tone": "Warm medium brown with copper and olive undertones that shift with light—the complex blending of Indigenous American, Southeast Asian, and Middle Eastern ancestry creating a nuanced warmth rather than a single definable tone",
-    "complexion": "Clear, well-maintained, slight fatigue lines around the eyes from hours in spatial construction rigs. Neatly trimmed beard with visible silver threading. Hands show minor scarring from early haptic calibration work—almost invisible unless examined closely. Facial features show the higher cheekbones and broader structure of Indigenous American heritage balanced with the finer bone detail of Southeast Asian and Eastern European lineage.",
+    "skin_tone": "Luminous golden-brown with warm mahogany undertones—the complex blending of South Asian, Sub-Saharan African, Central Asian, and East Asian ancestry creating depth and warmth that intensifies with sun exposure",
+    "complexion": "Clear, well-maintained, slight fatigue lines around the eyes from hours in spatial construction rigs. Neatly trimmed beard with visible silver threading. Hands show minor scarring from early haptic calibration work—almost invisible unless examined closely. Facial features show the rounded fullness and warm bone structure characteristic of South Asian and Sub-Saharan African heritage, balanced with the refined eye shape and defined cheekbones of East Asian ancestry, accented by the warmth inherent in his multi-regional genetic blend.",
     "distinguishing_marks": [
       "Fine white line along his left thumb knuckle—old calibration burn from first-generation haptic glove feedback misalignment",
       "Faint rectangular tan mark on his inner left wrist where he wears his haptic feedback glove during work"
@@ -243,17 +224,68 @@
     "posture_movement": "Precise, economical movement with occasional moments of stillness where he's clearly seeing overlaid spatial data others cannot perceive. When discussing his work, particularly the Archive, his posture loosens—more gesturative, faster speech patterns. His hands move constantly when engaged, mapping invisible spaces.",
     "clothing_style": "Muted technical wear—Tier 3-4 designer brands favoring function over statement (Helios Systems, Corbeau Neo). Charcoal and slate tones. Lightweight synthetics that move well. Always, without exception: a hand-woven fabric shoulder wrap in indigo and natural linen, worn over his left shoulder, clearly from another era and maintained with obvious care. The contrast between his minimal, contemporary technical wardrobe and this single tactile artifact is impossible to miss."
   },
-  "image_prompt": "Portrait of Takoda Čabarkapa, 2226 cyberpunk spatial architect, 173cm lean build with warm copper-olive skin tone reflecting diverse ancestry—Indigenous American, Eastern European, Southeast Asian, Middle Eastern, East Asian blend. Sharp cheekbones and defined jaw structure. Dark brown hair close-cropped with silver at temples, neatly trimmed beard with grey threading. Warm brown eyes with subtle amber retinal projection grid visible in iris at certain angles. Minimal fatigue lines from hours in spatial rigs. Wearing muted technical wear in charcoal and slate synthetics (Helios Systems aesthetic), sleek grey haptic feedback gloves with LED threading at knuckles. Hand-woven indigo and natural linen shoulder wrap draped over left shoulder, striking contrast to contemporary technical wardrobe. Precise posture, hands positioned as if mapping invisible spatial data. Soft neon-tinged studio lighting casting gentle shadows, tech environment with holographic spatial overlay suggestions visible in background. Professional, focused expression. Cyberpunk 2200s aesthetic, minimalist chrome-free augmentations, functional elegance. --ar 2:3 --v 6",
+  "image_prompt": "Rehana Raghavan, 173cm lean medium build, luminous golden-brown skin with warm mahogany undertones, dark brown hair with silver at temples, close-cropped textured style, warm brown eyes with faint amber retinal grid overlay visible in soft light. Neatly trimmed beard with silver threading. Refined facial structure blending South Asian fullness with East Asian cheekbone definition, Sub-Saharan African warmth, Central Asian heritage. Fatigue lines around eyes. Minor scarring on hands from calibration work. Wearing charcoal Helios Systems technical synthetics, minimal contemporary styling, with striking hand-woven indigo and linen shoulder wrap draped over left shoulder—tactile artifact from another era. Custom grey haptic feedback gloves with LED knuckle threading at hand. Precise, economical posture, hands gesturing subtly as if mapping invisible spatial data. GLMZ, Great Lakes Metropolitan Zone, soft ambient lighting catching retinal overlays, immersed in spatial construction work, subtle expression of focused concentration, backdrop of holographic architectural overlays and technical environment, photorealistic, cinematic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 37.1,
-    "Eastern European": 16.1,
-    "Southeast Asian": 14.8,
-    "Northern European": 13.0,
-    "Middle Eastern": 10.2,
-    "East Asian": 8.8
+    "South Asian": 30,
+    "Central Asian": 23.1,
+    "Sub-Saharan African": 21.5,
+    "Hispanic/Latin American": 14.4,
+    "East Asian": 11
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Tamil": 7.7
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 14.3,
+        "Pashtun": 8
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Buryat": 16.8,
+        "Mongolian": 1.6
+      },
+      "Turkic": {
+        "Kyrgyz": 4.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 12.3
+      },
+      "Southern African": {
+        "Zimbabwean": 5,
+        "Zambian": 1.5
+      },
+      "Central African": {
+        "Gabonese": 2.3,
+        "Congolese": 0.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 6.5
+      },
+      "Caribbean": {
+        "Dominican": 7.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 4.7
+      },
+      "Korean": {
+        "Korean": 4
+      },
+      "Japanese": {
+        "Japanese": 2.3
+      }
+    }
+  }
 }

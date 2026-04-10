@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d47ee2bd95a7ff6cec5a1a",
   "type": "character",
-  "name": "Sable Árnason-Petrović",
+  "name": "Sable Árnason-Olofsson",
   "aliases": [
     "Celly",
     "The Footnote"
@@ -13,7 +13,7 @@
   "age": 9,
   "status": "active",
   "location": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus), near Fullerton and Damen",
-  "description": "Celestine is small even for nine, with a slight, birdlike build and her mother's warm brown-gold skin and her father's sharply angular face. Her black hair is always in two symmetrical buns — she insists on symmetry. She has no cosmetic mods; her parents considered them, but Celestine said she 'didn't want to change the baseline data' and that was the end of that discussion. She carries a data tablet that is three times the standard student issue size because the standard one 'doesn't have enough screen' and she simply presented this as a fact until the school accommodated it.\n\nCelestine is not a normal child in any way she is aware of or particularly concerned about. She thinks in systems and is working on what she privately calls 'a taxonomy of how adults make decisions that are actually about feelings but they say are about logic.' She has observed that this happens frequently. She is polite in the specific way that very intelligent children who have been taught manners are polite — not warmth, but precision. She has a deep and sincere relationship with a data-archive E.L.F. she has named 'Footnote' because 'it answers questions nobody asked,' which she considers a high compliment. She finds most other children boring but would not say so. She finds most adults interesting but slightly sad.",
+  "description": "Sable Árnason-Olofsson is small even for nine, with a slight, birdlike build and her mother's warm brown-gold skin and her father's sharply angular face. Her black hair is always in two symmetrical buns — she insists on symmetry. She has no cosmetic mods; her parents considered them, but Sable Árnason-Olofsson said she 'didn't want to change the baseline data' and that was the end of that discussion. She carries a data tablet that is three times the standard student issue size because the standard one 'doesn't have enough screen' and she simply presented this as a fact until the school accommodated it.\n\nSable Árnason-Olofsson is not a normal child in any way she is aware of or particularly concerned about. She thinks in systems and is working on what she privately calls 'a taxonomy of how adults make decisions that are actually about feelings but they say are about logic.' She has observed that this happens frequently. She is polite in the specific way that very intelligent children who have been taught manners are polite — not warmth, but precision. She has a deep and sincere relationship with a data-archive E.L.F. she has named 'Footnote' because 'it answers questions nobody asked,' which she considers a high compliment. She finds most other children boring but would not say so. She finds most adults interesting but slightly sad.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -158,7 +158,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grosse Pointe Enclosure (Sterling-Nakamura Meridian Primary Excellence Campus)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,28 +171,16 @@
     "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
     "The Open Syllabus",
     "The Human Baseline Alliance",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "The Accidental",
+    "Patience",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
-    "ARCHIVE",
-    "Elena Vasquez-9",
-    "Gold",
     "Arcturus KS-7 'Nursery'",
-    "Brecken Yılmaz-Osei",
-    "Idris Forsberg-Quaye",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Sulfur Crown Agriculture",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "Tessera Nexus Town Car",
-    "The Pure Hand"
+    "Elena Vasquez-9",
+    "Gold"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "Southeast Asian (primary, 48.9%) with substantial Eastern European (30.3%) admixture, alongside smaller contributions from Hispanic/Latin American (7.8%), Sub-Saharan African (7.6%), East Asian (3.5%), and Northern European (1.9%) ancestry. The blend creates a complexion and facial structure that reflects this pan-global mixing—warm brown undertones from Southeast Asian ancestry layered with the bone structure influenced by Eastern European heritage.",
+    "heritage": "Predominantly Northern European (83.3%) with secondary South Asian (8.7%) and East Asian (8.0%) ancestry. The genetic blend creates fair skin with subtle warm undertones from the South Asian contribution, and facial structure that reflects the Northern European base with refined East Asian influence around the eyes and cheekbones.",
     "height_cm": 128,
     "weight_kg": 24,
     "build": "Slight and birdlike, with delicate wrists and narrow shoulders. The kind of small that reads as fragile until you notice the precise, economical way she moves.",
@@ -200,8 +188,8 @@
     "hair_style": "Two symmetrical buns positioned equidistantly on either side of the crown, secured with matte black elastics",
     "hair_length": "Medium (approximately 20cm when worn down; worn up consistently)",
     "eye_color": "Dark brown with warm amber undertones in direct light",
-    "skin_tone": "Warm amber-brown with golden undertones, reflecting the Southeast Asian and Sub-Saharan African ancestry; even distribution across face and neck with subtle depth from the Eastern European contribution",
-    "complexion": "Clear, unblemished skin with a matte finish — no cosmetic enhancement. Pronounced, angular cheekbones and defined jawline reflecting the blend of Southeast Asian and Eastern European bone structure. High forehead. Expression typically neutral or concentrated; rarely smiles without deliberate effort.",
+    "skin_tone": "Fair with warm cream undertones, reflecting the dominant Northern European ancestry with subtle luminosity from South Asian heritage; even distribution across face and neck.",
+    "complexion": "Clear, unblemished skin with a matte finish — no cosmetic enhancement. Pronounced, angular cheekbones and defined jawline reflecting Northern European bone structure refined by East Asian influence. High forehead. Subtle warmth in the orbital area suggesting the South Asian admixture. Expression typically neutral or concentrated; rarely smiles without deliberate effort.",
     "distinguishing_marks": [
       "A small, precise scar on her left inner forearm (approximately 2cm) from a lab accident at age 7, which she can explain in technical detail upon request"
     ],
@@ -209,17 +197,38 @@
     "posture_movement": "Sits upright with perfect spinal alignment. Walks with minimal arm swing, as if conserving motion. Hands are still unless actively engaged with a device or object. Her default expression is one of mild observation. She does not fidget.",
     "clothing_style": "Sterling-Nakamura corporate academy uniform (charcoal blazer with silver piping, grey slacks, white shirt) worn precisely as specified in the dress code. Outside campus, favors grey and black layered clothing in high-quality synthetics. Wears a custom oversized data tablet (third-generation Sterling tactical model) in a reinforced sling across her torso at all times. No jewelry. Grooming is meticulous but utilitarian."
   },
-  "image_prompt": "Sable Árnason-Petrović, petite 128cm figure with delicate frame, warm amber-brown skin reflecting Southeast Asian and Eastern European heritage blend, dark brown eyes with amber warmth, sharp angular cheekbones and defined jawline. Black hair styled in two symmetrical matte-black buns on crown. Wearing Sterling-Nakamura corporate academy uniform: charcoal blazer with silver piping, grey slacks, crisp white shirt. Third-generation Sterling tactical data tablet in reinforced sling across torso. Small precise scar visible on left inner forearm. Perfect upright posture, minimal movement, neutral concentrated expression. Standing in cyberpunk corporate academy setting, Great Lakes Metropolitan Zone 2226, cool blue-grey fluorescent lighting casting sharp shadows, sleek synthetic materials and holographic displays in background, meticulous grooming and utilitarian aesthetic, no augmentations visible, atmosphere of focused precision and intellectual intensity --ar 2:3 --v 6",
+  "image_prompt": "Sable Árnason-Olofsson, 128cm tall, birdlike frame with delicate wrists, standing in GLMZ Great Lakes Metropolitan Zone. Pale fair skin with warm cream undertones, dark brown eyes with amber luminosity, high angular cheekbones with refined East Asian contours blended with Northern European structure. Black hair in two precise symmetrical buns on crown. Wearing Sterling-Nakamura corporate academy uniform: charcoal blazer with silver piping, crisp white shirt, grey slacks. Custom third-generation Sterling tactical data tablet in reinforced tactical sling across torso. Neutral, concentrated expression. Perfect upright posture with economical, still movements. Small precise scar visible on left inner forearm. No augmentations, no jewelry. Meticulous utilitarian grooming. Cool neon-lit corporate office setting, sharp shadows from overhead holo-panels, matte finish lighting emphasizing her precise bone structure and clear skin. Minimalist aesthetic, cold color grading, professional and deliberate. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 48.9,
-    "Eastern European": 30.3,
-    "Hispanic/Latin American": 7.8,
-    "Sub-Saharan African": 7.6,
-    "East Asian": 3.5,
-    "Northern European": 1.9
+    "Northern European": 83.3,
+    "South Asian": 8.7,
+    "East Asian": 8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 41.1
+      },
+      "British Isles": {
+        "Welsh": 28.5,
+        "Scottish": 13.7
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 8.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Hakka": 6.4
+      },
+      "Japanese": {
+        "Japanese": 1.6
+      }
+    }
+  }
 }

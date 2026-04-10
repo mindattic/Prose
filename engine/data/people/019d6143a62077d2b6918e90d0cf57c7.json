@@ -1,7 +1,7 @@
 {
   "id": "019d6143a62077d2b6918e90d0cf57c7",
   "type": "character",
-  "name": "Cipher Ingebrigtsen",
+  "name": "Cipher Rentería",
   "aliases": [
     "Lockjaw",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Hadiya Akerlund-Mensah-Bonsu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Hadiya Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Cipher Rentería is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Cipher Rentería describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.89,
@@ -260,7 +260,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,27 +275,14 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "GLMZ",
     "The Nearfield",
+    "Harbor Fish Shack",
     "Slagworks Industrial",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Independent Micro-Grid Power Cooperative",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Old Harbor",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Street Custom 'Scorpion Tail' Chain Whip",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Pacific Islander (37.6%) / East Asian (35.4%) / Hispanic/Latin American (15.0%) / Eastern European (12.0%). Genetic tapestry reflecting the Ubiquitous Diaspora—warm golden-bronze skin with subtle undertones blending Polynesian and Southeast Asian ancestry, brightened by East Asian bone structure and Latin American warmth, tempered by Eastern European paleness in undertones.",
+    "heritage": "Northern European (31.9%) / South Asian (24.4%) / Hispanic/Latin American (18.5%) / Eastern European (13.5%) / Sub-Saharan African (11.7%). Cipher's ancestry creates a striking convergence: Northern European bone structure and fair undertones blend with South Asian warmth and facial geometry, Latin American golden midtones, Eastern European pallor in certain lights, and Sub-Saharan richness in skin depth. The result is a face that reads differently depending on angle and lighting—sometimes cool, sometimes warm, always complex.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Lean and loose-limbed with corded muscle definition. Low body fat, long-limbed frame optimized for fluid movement rather than bulk. Shoulders broad but not overdeveloped; everything spare and functional.",
@@ -303,8 +290,8 @@
     "hair_style": "Close-cropped fade, maintained with military precision",
     "hair_length": "Short",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm golden-bronze complexion—fusion of Pacific Islander and East Asian ancestry with Latin American depth and subtle Eastern European undertones. Medium-dark saturation with luminous quality.",
-    "complexion": "Sharp, angular face with high cheekbones characteristic of East Asian heritage and strong mandibular definition from Pacific Islander ancestry. Skin clean and scarred—old line across left temple, thin scar along right mandible. No facial hair; clean-shaven daily. Crow's feet and a horizontal line between brows from twenty years of focus.",
+    "skin_tone": "Warm medium brown with complex undertones—South Asian base enriched by Sub-Saharan depth, tempered by Northern European coolness in undertones, brightened by Latin American golden warmth. Medium saturation, matte finish, no artificial luminosity. Appears slightly different in warm versus cool light.",
+    "complexion": "Angular, geometric face with high cheekbones that reflect Northern European prominence softened by South Asian facial structure and enriched by Sub-Saharan bone density. Strong mandibular line slightly softened by South Asian genetics. Skin clean and scarred—old line across left temple, thin scar along right mandible. No facial hair; clean-shaven daily. Crow's feet and a horizontal line between brows from twenty years of focus.",
     "distinguishing_marks": [
       "Linear scar across left temple, approximately 8cm, pale and thin—old knife wound",
       "Thin scar tracking along right mandible from jaw angle toward chin—surgical precision, recent (3-4 years)",
@@ -314,15 +301,51 @@
     "posture_movement": "Moves with deliberate economy of motion. No wasted gesture. Posture upright but not rigid—spine aligned, shoulders relaxed. Walks with measured, ground-eating stride. Stillness is his default state; motion is always purposeful. Eyes track continuously in peripheral vision. Hands remain loose and available.",
     "clothing_style": "Tier 3-4 practical hybrid. Matte-finish aramid-weave jacket (charcoal, no logos) layered over a fitted compression shirt in black. Tactical trousers with reinforced seams and thigh cargo pockets, worn gray. Scuffed military-grade combat boots, black leather, recently maintained. Minimalist smart-watch on right wrist (encrypted, GLMZ-tier infrastructure compatible). No unnecessary ornamentation. Everything serviceable, replaceable, unremarkable."
   },
-  "image_prompt": "Cipher Ingebrigtsen, cyberpunk 2226, full-body portrait. Tall lean man with golden-bronze Pacific Islander and East Asian-influenced features, sharp angular face with high cheekbones and strong jaw. Dark brown eyes, close-cropped black hair with silver at temples. Clean-shaven with surgical precision scars on temple and mandible. Warm medium-dark skin with luminous undertones. Wearing matte charcoal aramid jacket over black compression shirt, reinforced gray tactical trousers, scuffed military combat boots. Left forearm shows faint chrome seams of monofilament whip housing. Posture upright and perfectly controlled, stillness and focused intensity. GLMZ urban environment, cool cyan and amber neon lighting, cinematic depth, photorealistic, professional operative aesthetic, minimal augmentation visibility, functional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Cipher Rentería, 188cm tall lean-muscled operative, mixed-ancestry face with Northern European bone structure softened by South Asian geometry and enriched by Sub-Saharan depth. Warm medium-brown skin with complex undertones, high cheekbones, strong mandible. Short black hair with silver at temples, dark unaugmented eyes. Clean-shaven with surgical scars along right mandible and temple, burn scarring on right forearm. Matte charcoal aramid jacket over black compression shirt, gray tactical trousers, military combat boots. Faint chrome plating visible on forearms beneath skin where blade housings sit. Posture upright and economical, hands loose and ready. Standing in dim GLMZ corridor lit by cool neon-blue emergency strips and warm amber ambient lighting, creating complex shadows across his face. GLMZ, functional and dangerous, utterly unremarkable appearance concealing lethal augmentations. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 37.6,
-    "East Asian": 35.4,
-    "Hispanic/Latin American": 15.0,
-    "Eastern European": 12.0
+    "Northern European": 31.9,
+    "South Asian": 24.4,
+    "Hispanic/Latin American": 18.5,
+    "Eastern European": 13.5,
+    "Sub-Saharan African": 11.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 31.9
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 9,
+        "Tamil Sri Lankan": 9.5
+      },
+      "Indian": {
+        "Marathi": 5.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 18.5
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Bosnian": 13.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 0.5,
+        "Ugandan": 1.1
+      },
+      "Southern African": {
+        "South African": 10.1
+      }
+    }
+  }
 }

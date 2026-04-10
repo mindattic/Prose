@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6777706bc36370ac941aa7e",
   "type": "character",
-  "name": "Briar Johansson-Hachemi",
+  "name": "Briar Im-Ingebrigtsen",
   "aliases": [
     "O.G.",
     "Binny"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Highland Park Autonomous Zone — rents a room above a fabrication collective, conducts fieldwork across the Shelf, near Michigan Ave and Walton",
-  "description": "Obinna is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on Shelf informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
+  "description": "Briar Im-Ingebrigtsen is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on Shelf informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -182,7 +182,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Highland Park Autonomous Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,43 +200,27 @@
     "Ferrogate Transit",
     "University Spine",
     "The Shelf",
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
+    "Charcoal",
+    "The Phosphene Corridor",
+    "The Unmarked Knife",
     "Chrome Don't Cry (It Conducts)",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Tibor Osei-Svanstrom",
-    "Nightlight",
-    "Alper Lebedev-Tutu",
-    "Breadcrumb",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Defender-38 'Snubnose'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kamm's Landing",
-    "Lumen",
-    "Nnamdi Ostrowski-Faletolu",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Vuk Jorgensen-Toure"
+    "Frost Boudiaf",
+    "Nightlight"
   ],
   "district": "The Spires",
   "physical_description": {
-    "heritage": "North African Berber/Arab majority (53.4%) with Northern European (25.0%) and Southeast Asian (21.6%) ancestry—resulting in a striking phenotypic blend: warm deep brown skin with subtle golden undertones, angular facial structure with prominent cheekbones reflecting North African ancestry, and eye shape showing Southeast Asian influence. The genetic mix produces his characteristic dark brown hair with reddish undertones and the warm undertones across his complexion.",
+    "heritage": "Cosmopolitan Diaspora blend: Northern European (36.8%), East Asian (24.7%), Indigenous American (13.1%), Southeast Asian (12.4%), South Asian (7.9%), and Hispanic/Latin American (5.1%). Results in a distinctive phenotype—medium golden-brown skin with warm peachy undertones balanced by subtle olive cast from South and Southeast Asian ancestry, angular facial structure with moderate cheekbones showing East Asian influence, eye shape distinctly East and Southeast Asian with slight epicanthic fold, dark brown hair with subtle auburn highlights from Northern European admixture. The genetic combination creates warmth across his complexion with cooler undertones in shadow areas, particularly around the orbital region.",
     "height_cm": 183,
     "weight_kg": 71,
     "build": "Lean and long-limbed, slight forward stoop from years hunched over fieldwork notes; wiry rather than athletic, the build of someone who walks everywhere and forgets to eat",
-    "hair_color": "Dark brown with reddish undertones",
+    "hair_color": "Dark brown with subtle auburn highlights",
     "hair_style": "Short, close-cropped, slightly unkempt; appears to be cut every six months out of necessity rather than intention",
     "hair_length": "Short",
     "eye_color": "Modified: slow-rotating geometric pattern in amber and charcoal overlaying dark brown iris",
-    "skin_tone": "Warm deep golden-brown with subtle reddish undertones; shows the wear of daily outdoor fieldwork across variable weather. The tone reflects the North African majority ancestry with Southeast Asian warmth in shadow areas.",
-    "complexion": "Angular face with pronounced cheekbones characteristic of North African heritage; close beard that grows patchy at the jawline and is visibly neglected (two-year maintenance gap evident); deep worry lines that deepen in direct light, making him appear significantly older than thirty-four; slight dark circles under eyes suggest chronic sleep deficit from note-taking and fieldwork. Facial structure shows subtle Southeast Asian influence in eye placement and cheekbone prominence.",
+    "skin_tone": "Medium golden-brown with warm peachy undertones and subtle olive cast; shows the wear of daily outdoor fieldwork across variable weather. The tone reflects Northern European and East Asian admixture with Indigenous American warmth and South Asian depth.",
+    "complexion": "Angular face with moderate cheekbones displaying East and Southeast Asian structure; close beard that grows patchy at the jawline and is visibly neglected (two-year maintenance gap evident); deep worry lines that deepen in direct light, making him appear significantly older than thirty-four; slight dark circles under eyes suggest chronic sleep deficit from note-taking and fieldwork. Facial contours show distinct East Asian influence in eye placement, orbital shape, and midface structure.",
     "distinguishing_marks": [
       "Faint scar across left knuckle from a fieldwork incident (2219) — thin white line approximately 2cm long",
       "Minor burn scar on right forearm (thermal exposure during infrastructure documentation) — pale, roughly circular, 1cm diameter",
@@ -246,14 +230,77 @@
     "posture_movement": "Forward-leaning walk as if always listening; hands gesture while speaking but palms-up rather than dominant; habitually touches temple (neural recorder engagement); sits with knees drawn up even in formal contexts; eyes track foot traffic and social groupings even during conversation — occupational observation habit",
     "clothing_style": "Tier 3 working academic: three-outfit rotation of durable, mended cotton-blend layers (grays, dark blues, earth tones); one slightly better set for University Spine presentations (unfashionable, carefully maintained); worn hiking boots resoled twice; carries a canvas fieldwork satchel with visible stains from multiple neighborhoods; no corporate logos; clothes show authentic wear rather than styled distress; thermal undershirt visible at collar in cold months"
   },
-  "image_prompt": "Cyberpunk 2226, close-up portrait of Briar Johansson-Hachemi, a thirty-four-year-old academic fieldworker. Warm deep golden-brown skin with subtle reddish undertones, angular face with pronounced cheekbones showing North African heritage. Dark brown hair with reddish tones, short and unkempt. Modified irises with slow-rotating amber and charcoal geometric patterns overlaying natural dark brown eyes—immediately striking during eye contact. Slight patchy beard, two-year growth gap evident. Deep worry lines suggesting chronic sleep deficit, faint scars on knuckles and forearm from fieldwork. Forward-leaning posture, hands palm-up while gesturing. Wearing layered durable cotton-blend clothing in grays and earth tones, worn hiking boots, canvas fieldwork satchel with visible neighborhood stains. Visible neural recorder port at left temple hairline. Haunted, perpetually observant gaze; hands habitually touching temple. Great Lakes Metropolitan Zone apartment interior, cool neon-tinted ambient lighting casting shadows across angular face, papers and notes scattered in background. Cinematic, documentary realism, shallow depth of field --ar 2:3 --v 6",
+  "image_prompt": "Briar Im-Ingebrigtsen, 34-year-old fieldwork academic in GLMZ 2226, medium golden-brown skin with warm peachy and subtle olive undertones reflecting mixed heritage—Northern European, East Asian, Indigenous American, Southeast Asian, South Asian, and Latin American ancestry. Angular face with moderate East Asian cheekbones, dark brown eyes with slow-rotating amber and charcoal geometric cybernetic implants, visible faint scars on left knuckle and right forearm. Short dark brown hair with auburn highlights, patchy unkempt beard. Tall lean frame (183cm), slight forward stoop from years of fieldwork. Wearing worn three-outfit rotation of mended gray and dark blue cotton-blend layers, thermal undershirt visible at collar, resoled hiking boots. Canvas fieldwork satchel with visible stains. Neural recorder port at left temple hairline. Forward-leaning posture, hands gesture with palms-up, knees drawn up. Occupational observer's gaze tracking surroundings. Neo-noir academic aesthetic, worn authentic clothing, deep worry lines from chronic sleep deficit, minimal chrome augmentation. Indoor university or field documentation setting, cool overhead lighting casting sharp shadows that emphasize orbital hollows and facial structure, slightly tired but alert expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "North African": 53.4,
-    "Northern European": 25.0,
-    "Southeast Asian": 21.6
+    "Northern European": 36.8,
+    "East Asian": 24.7,
+    "Indigenous American": 13.1,
+    "Southeast Asian": 12.4,
+    "South Asian": 7.9,
+    "Hispanic/Latin American": 5.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 36.8
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 8.1
+      },
+      "Japanese": {
+        "Japanese": 9.4
+      },
+      "Chinese": {
+        "Cantonese": 7.2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Lakota": 5.1,
+        "Choctaw": 6.4
+      },
+      "Mesoamerican": {
+        "Maya": 1.6
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 6.8
+      },
+      "Thai": {
+        "Thai": 2.1
+      },
+      "Indonesian": {
+        "Sumatran": 3.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Tamil": 4.7
+      },
+      "Nepali": {
+        "Nepali": 0.2
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 2.8
+      },
+      "Mexican": {
+        "Mexican": 2.1
+      },
+      "Central American": {
+        "Honduran": 0.2
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69d7d2bb11178deb6eb4a31",
   "type": "character",
-  "name": "Sardor Kristjánsson-Tursunov-Malhotra",
+  "name": "Echo Tetteh-Malhotra-Vestergaard",
   "aliases": [
     "Praxi",
     "the Mop"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Lakeview Neon (works nights, sleeps days in a shared unit in Edgewater Prism), near Lincoln and Clark",
-  "description": "Praxedes is slight and angular with the kind of quiet that makes them easy to overlook — which is exactly the point, and also the source of a private bitterness they would never admit to. Their skin is a deep warm brown, their hair grown out into an unpatterned cloud that they pull back with whatever is close to hand. Their most notable feature is cosmetic geneware that makes their skin emit very faint luminescent patches in irregular shapes across their collarbones and shoulders, something like lichen on stone — they got it done in a Ferment Quarter studio at twenty-two when they had briefly more money, and now they keep it because it gives them something to look at during the long silent corridors of the overnight shift. They wear Tessera-brand cleaner coveralls two sizes too large that they've hemmed and repaired so many times the cuffs are a different fabric entirely.\n\nThey are intensely observant in the way that invisible people become — they have catalogued the habits of two hundred and fourteen residents in Lakeview Neon without any of them knowing their name. They write things down in a physical notebook, small cramped handwriting, not for any purpose they've articulated but because it feels like proof that the world exists and they are in it. Off shift they are funny and unexpectedly warm, quick with a dry joke, but it takes time to reach that person. Most people never do.",
+  "description": "Echo Tetteh-Malhotra-Vestergaard is slight and angular with the kind of quiet that makes them easy to overlook — which is exactly the point, and also the source of a private bitterness they would never admit to. Their skin is a deep warm brown, their hair grown out into an unpatterned cloud that they pull back with whatever is close to hand. Their most notable feature is cosmetic geneware that makes their skin emit very faint luminescent patches in irregular shapes across their collarbones and shoulders, something like lichen on stone — they got it done in a Ferment Quarter studio at twenty-two when they had briefly more money, and now they keep it because it gives them something to look at during the long silent corridors of the overnight shift. They wear Tessera-brand cleaner coveralls two sizes too large that they've hemmed and repaired so many times the cuffs are a different fabric entirely.\n\nThey are intensely observant in the way that invisible people become — they have catalogued the habits of two hundred and fourteen residents in Lakeview Neon without any of them knowing their name. They write things down in a physical notebook, small cramped handwriting, not for any purpose they've articulated but because it feels like proof that the world exists and they are in it. Off shift they are funny and unexpectedly warm, quick with a dry joke, but it takes time to reach that person. Most people never do.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -179,7 +179,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon (works nights",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,28 +200,12 @@
     "WELLSPRING",
     "Tessera Corponation",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus KS-7 'Nursery'",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Ezio Kaboré-Malhotra",
-    "Ferrogate Transit",
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Narrowcast",
-    "Nurlan Morita-Antwi",
-    "Obafemi Szczypiński-Lautoa",
-    "Palladian Construction",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Gallows' Recurve Bow",
-    "The Iron Lotus",
-    "The Peninsula",
-    "The Pure Hand",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Slagworks Industrial"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Northern European (29%), Central Asian (27%), South Asian (22%), East Asian (14%), Sub-Saharan African (5%), Middle Eastern (2%). Features reflect this diverse mixture—angular bone structure with slight roundness in cheeks from South/Central Asian ancestry, warm undertones across complexion from multiple heritage groups blending.",
+    "heritage": "Complex diaspora blend: Sub-Saharan African (31.6%), Southeast Asian (22.1%), Northern European (21.2%), South Asian (14.8%), Hispanic/Latin American (6.3%), North African (4.0%). Features reflect this intricate mixture—angular bone structure with subtle fullness in cheeks from Southeast and South Asian ancestry, warm golden-brown undertones across complexion from the interplay of African, Asian, and European heritage creating rich dimensional depth. Facial geometry combines Northern European angularity with Southeast Asian delicacy and Sub-Saharan African definition, while warm undertones span the full palette of their ancestry.",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and angular, almost wiry—minimal muscle mass from desk-adjacent labor despite physical work. Shoulders narrow, chest shallow, the frame of someone who doesn't take up space by design or default.",
@@ -229,8 +213,8 @@
     "hair_style": "Unpatterned cloud, typically pulled back with whatever is close to hand—elastic bands, fabric scraps, sometimes just twisted and tucked",
     "hair_length": "Long (shoulder-length or past)",
     "eye_color": "Deep brown, observant and still",
-    "skin_tone": "Medium warm brown with golden undertones—the result of blended Northern European, Central/South Asian, and Sub-Saharan ancestry creating rich, nuanced depth without extreme saturation",
-    "complexion": "Clear, well-maintained despite shift work. Slight tension around the eyes from night hours. Fine-featured with high cheekbones and gentle facial contours reflecting Central and South Asian heritage mixed with Northern European angularity. Minimal scarring or blemishing.",
+    "skin_tone": "Medium-warm brown with golden undertones—the result of Sub-Saharan African, Southeast Asian, South Asian, and Northern European ancestry blending to create rich, nuanced depth with warm luminosity",
+    "complexion": "Clear, well-maintained despite shift work. Slight tension around the eyes from night hours. Angular cheekbones with gently rounded lower face reflecting the blend of Southeast Asian fullness and South Asian refinement balanced against Northern European angularity and Sub-Saharan African definition. Fine-featured with subtle warmth in undertones. Minimal scarring or blemishing.",
     "distinguishing_marks": [
       "Cosmetic bioluminescent geneware patches in blue-green luminescence scattered across collarbones and shoulders in irregular lichen-like formations, visible under low light or darkness",
       "Fine calluses on palms and fingertips from cleaning tools and constant notebook writing"
@@ -239,17 +223,71 @@
     "posture_movement": "Moves quietly and efficiently, minimal wasted motion. Slight forward hunch from hours spent cleaning low fixtures and reading in dim light. Eyes track rooms and people with an invisible cataloguing motion—the stillness of someone accustomed to being overlooked. Hands move with precision when working; in stillness, often occupied with fidgeting (pen, fabric, notebook edge).",
     "clothing_style": "Tessera-brand oversized cleaner coveralls (two sizes too large, hemmed and repaired extensively—cuffs are patchwork of different fabric colors and textures from multiple repairs). Layered under with plain gray thermal shirt. Worn utility boots with reinforced soles. Small canvas satchel for notebook and personal effects. All clothing is Tier 4 utilitarian, maintenance-focused, showing deep use and careful stewardship."
   },
-  "image_prompt": "Sardor Kristjánsson-Tursunov-Malhotra, 163cm slight angular frame, medium warm brown skin with golden undertones reflecting cosmopolitan Central Asian-Northern European-South Asian heritage blend. Long black hair with warm tones pulled back loosely. Deep observant brown eyes with slight tension from night shifts. High cheekbones and fine features. Wearing oversized patchwork-repaired Tessera cleaner coveralls over gray thermal shirt and worn utility boots. Blue-green bioluminescent geneware lichen patterns scattered across collarbones and shoulders, glowing faintly in low light. Quiet efficient posture with slight forward hunch, small canvas satchel. Hands with fine calluses, fidgeting with notebook edge. GLMZ 2226 cyberpunk maintenance worker, dim industrial lighting with neon hints, atmospheric underground utility corridor, cinematic cyberpunk aesthetic, moody and introspective mood --ar 2:3 --v 6",
+  "image_prompt": "Echo Tetteh-Malhotra-Vestergaard, 163cm tall, slight wiry build, medium-warm brown skin with golden undertones reflecting African-Asian-European blend. Angular cheekbones and gently rounded face mixing Southeast and South Asian softness with Northern European definition. Deep brown eyes, observant and still. Natural black hair with warm undertones, long and pulled back loosely with fabric scraps. Wearing oversized Tessera-brand cleaner coveralls (two sizes large, extensively patched with mismatched fabric colors), gray thermal shirt underneath, reinforced utility boots. Blue-green bioluminescent lichen-pattern geneware patches glowing faintly on collarbones and shoulders. Small circular access port visible on inner left wrist. Quiet, efficient posture with slight forward hunch. Canvas satchel across body. Night-shift lighting, dim industrial setting, glow-in-dark geneware creating subtle luminescence in darkness. GLMZ aesthetic, utilitarian and worn. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 29.3,
-    "Central Asian": 27.2,
-    "South Asian": 22.2,
-    "East Asian": 14.1,
-    "Sub-Saharan African": 5.2,
-    "Middle Eastern": 2.0
+    "Sub-Saharan African": 31.6,
+    "Southeast Asian": 22.1,
+    "Northern European": 21.2,
+    "South Asian": 14.8,
+    "Hispanic/Latin American": 6.3,
+    "North African": 4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 31.6
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 11.8
+      },
+      "Vietnamese": {
+        "Vietnamese": 9.2
+      },
+      "Laotian": {
+        "Laotian": 1.1
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 5.1,
+        "German": 7.6
+      },
+      "Scandinavian": {
+        "Swedish": 8.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 14.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2
+      },
+      "Caribbean": {
+        "Puerto Rican": 3.4
+      },
+      "Central American": {
+        "Salvadoran": 0.7,
+        "Costa Rican": 0.2
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Tunisian": 1.5,
+        "Algerian": 0.3
+      },
+      "Amazigh": {
+        "Tuareg": 1.7,
+        "Berber": 0.5
+      }
+    }
+  }
 }

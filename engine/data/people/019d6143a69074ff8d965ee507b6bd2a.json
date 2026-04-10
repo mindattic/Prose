@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69074ff8d965ee507b6bd2a",
   "type": "character",
-  "name": "Mateo Salazar-Haugen-Möller",
+  "name": "Mateo Salazar-Kim-Bangura",
   "aliases": [
     "Spore",
     "the Quiet Market"
@@ -13,7 +13,7 @@
   "age": 51,
   "status": "active",
   "location": "Deepwell Station, lower market tier (stall designation DW-7 through DW-9), near sub-level access near LaSalle and Congress",
-  "description": "Pachacuti is broad and slow-moving in the way of people who have never needed to flee quickly because they have never given anyone a reason to chase them. Their skin is dark and mottled with deliberate bioluminescent geneware patches — clusters of soft amber and violet light that bloom slowly across their neck and hands when they're pleased or thinking hard, a modification they received at thirty in exchange for a particularly good season of cultivated medicinal spores. They are bald by choice, their scalp tattooed with a map of the Deepwell Station fungal garden network — a living ledger that requires fresh ink additions every time a new cultivation shaft opens. Their hands are enormous and stained permanently umber-brown at the fingertips from decades of spore-work.\n\nPachacuti speaks rarely but with great precision, and they have a gift for making people feel they've received something valuable even in small transactions. They know the medicinal, nutritional, and psychoactive properties of forty-seven distinct fungal strains grown in the tunnels, and they keep this knowledge close, sharing it calibrated to trust. They maintain a small shrine to the Drip-ELF at the back of their stall — a cracked tablet running a looping prayer-sequence, surrounded by offerings of protein paste and carefully harvested spore clusters. People who know Deepwell Station know that Pachacuti's blessing before a difficult journey down-tunnel is worth more than any map.",
+  "description": "Mateo Salazar-Kim-Bangura is broad and slow-moving in the way of people who have never needed to flee quickly because they have never given anyone a reason to chase them. Their skin is dark and mottled with deliberate bioluminescent geneware patches — clusters of soft amber and violet light that bloom slowly across their neck and hands when they're pleased or thinking hard, a modification they received at thirty in exchange for a particularly good season of cultivated medicinal spores. They are bald by choice, their scalp tattooed with a map of the Deepwell Station fungal garden network — a living ledger that requires fresh ink additions every time a new cultivation shaft opens. Their hands are enormous and stained permanently umber-brown at the fingertips from decades of spore-work.\n\nMateo Salazar-Kim-Bangura speaks rarely but with great precision, and they have a gift for making people feel they've received something valuable even in small transactions. They know the medicinal, nutritional, and psychoactive properties of forty-seven distinct fungal strains grown in the tunnels, and they keep this knowledge close, sharing it calibrated to trust. They maintain a small shrine to the Drip-ELF at the back of their stall — a cracked tablet running a looping prayer-sequence, surrounded by offerings of protein paste and carefully harvested spore clusters. People who know Deepwell Station know that Mateo Salazar-Kim-Bangura's blessing before a difficult journey down-tunnel is worth more than any map.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Nurturer": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,32 +247,13 @@
     "Deepwell Station",
     "Lymphatic Resonance Injector LRI-5 'Floodgate'",
     "Bathysphere Networks",
-    "Adaeze Chen-Hawkins",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Haze Johansson",
     "The Pure Hand",
-    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
-    "Breck Tannen",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Emeka Johansson-Orozco",
-    "Imara Solís-Khatgal",
-    "Iskander Mbeki-Ó'Treasaigh",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Narrowcast",
-    "Ossolo Przenysław-Faatoafe",
-    "PulsePoint HydraLine Fluid Balance Monitor",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Bazaar",
-    "The Human Baseline Alliance",
-    "The Ledger",
-    "The Question",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore BloomFilter Olfactory Modulation Implant",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+    "The Paste Bar"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Hispanic/Latin American and Northern European ancestry, complemented by Indigenous American, Sub-Saharan African, and South Asian heritage. This complex genetic mix produces warm, multitonal skin with subtle regional feature blending.",
+    "heritage": "Predominantly Hispanic/Latin American (53.4%) with substantial Sub-Saharan African (17.0%), Northern European (14.9%), and East Asian (14.7%) ancestry. This complex genetic mix produces a richly blended phenotype — the fuller facial features and broader bone structure of Latin American heritage softened by moderate cheekbones from East Asian ancestry, enriched by the deeper warmth and facial structure of Sub-Saharan African heritage, with cool undertones from Northern European ancestry creating an exceptionally multitonal complexion.",
     "height_cm": 168,
     "weight_kg": 92,
     "build": "Broad-shouldered and thick-bodied, with the settled weight of someone accustomed to sustained labor rather than speed. Chest and torso carry muscle beneath a layer of deliberate softness — the build of a person who moves with purpose but without urgency.",
@@ -280,8 +261,8 @@
     "hair_style": "Shaved scalp",
     "hair_length": "Shaved",
     "eye_color": "Deep brown, slightly sunken from decades in low-light environments",
-    "skin_tone": "Warm medium to dark brown with subtle golden and olive undertones from the East Asian and South Asian components, enriched by the Latin American and Sub-Saharan African heritage. Irregular mottling and discoloration from spore exposure and geneware integration creates an uneven patina across the surface.",
-    "complexion": "Weathered but composed, with facial structure showing the blended features of East Asian heritage (moderate cheekbones, slightly rounded face shape) softened by the broader bone structure and fuller features from Latin American and Indigenous ancestry. Warmer skin undertones across the cheeks and temples. Fine lines around eyes and mouth suggest more thinking than talking. Permanent umber staining at the cuticles and under fingernails, impossible to fully clean despite regular attempts.",
+    "skin_tone": "Warm medium-to-dark brown with rich golden and amber undertones from the Latin American and East Asian components, deepened and warmed by Sub-Saharan African heritage, with subtle cool undertones from Northern European ancestry. Irregular mottling and discoloration from spore exposure and geneware integration creates an uneven patina across the surface.",
+    "complexion": "Weathered but composed, with facial structure showing the fuller cheeks and broader bone structure characteristic of Latin American ancestry, balanced by moderate East Asian cheekbones. Sub-Saharan African heritage contributes depth of tone concentrated across the cheeks, temples, and jaw. Northern European ancestry adds subtle cool undertones across the forehead and around the eyes. Fine lines around eyes and mouth suggest more thinking than talking. Permanent umber staining at the cuticles and under fingernails, impossible to fully clean despite regular attempts.",
     "distinguishing_marks": [
       "Full scalp tattoo depicting the Deepwell Station fungal garden network in blue and amber ink, with deliberate gaps left for future additions.",
       "Bioluminescent geneware patches across the neck in three clusters: one along the left side of the neck, two spreading down the right side toward the collarbone — soft amber-to-violet gradient that pulses gently when engaged.",
@@ -292,17 +273,52 @@
     "posture_movement": "Moves with deliberate slowness, each gesture economical and purposeful. Stands with weight distributed evenly, shoulders slightly forward in a posture suited to hours spent working at cultivation benches. Hands rest naturally with palms slightly open — a gesture of openness that feels genuine rather than performed. Head tilts slightly when listening, a habit of someone working in spaces where sound travels strangely. Their presence feels anchoring — people around them unconsciously slow down.",
     "clothing_style": "Tier 4 working-class with personal adaptation. Wears loose linen tunics in earth tones (ochre, dark gray, faded brown) over reinforced work pants with multiple deep pockets. A heavy canvas apron over everything, stained with spore-growth medium and dyed various colors from bioluminescent compounds. Boots are practical, oil-treated leather, visibly old but meticulously maintained. Over the shoulders, a woven shawl in muted indigo that serves as both insulation and a place to carry small items. No corporate branding, no status signifiers — the clothing of someone who has moved beyond the need to perform their tier."
   },
-  "image_prompt": "Mateo Salazar-Haugen-Möller, cyberpunk 2226, medium-dark warm brown skin with golden-olive undertones from blended East Asian, Latin American, Indigenous, and South Asian heritage, shaved scalp with intricate blue and amber bioluminescent fungal garden tattoo, deep brown eyes slightly sunken from low-light work, sturdy 168cm frame with broad shoulders and deliberate weight, weathered composed expression. Soft amber-violet bioluminescent geneware patches glowing faintly on neck and hands. Earth-tone linen tunic under stained canvas apron, reinforced work pants, old maintained leather boots, muted indigo woven shawl across shoulders. Standing at cultivation bench in Deepwell Station's low-light fungal garden, surrounded by softly glowing bioluminescent growth medium in translucent containers, warm amber and violet light reflecting off weathered hands with fine white scarring and thickened fingertips. Anchoring presence, deliberate movements, posture of sustained labor. Atmospheric underground setting with spore-laden air catching the subtle glow of geneware and bioluminescent compounds. Cinematic moody lighting, depth of field emphasizing weathered features and hands. --ar 2:3 --v 6",
+  "image_prompt": "Mateo Salazar-Kim-Bangura, a weathered mycologist in a GLMZ bioluminescent fungal cultivation chamber. Medium-dark brown skin with rich golden and amber undertones, warm complexion with fuller Latin American features softened by moderate East Asian cheekbones, depth from Sub-Saharan heritage. Shaved scalp covered in blue and amber tattoo depicting fungal garden networks. Bioluminescent geneware patches glowing soft amber-to-violet across neck and hands. Deep brown eyes, slightly sunken. Broad-shouldered frame in loose ochre linen tunic over work pants, heavy stained canvas apron, oil-treated leather boots, indigo woven shawl. Hands with fine white scarring, slightly thickened fingers. Posture deliberate and anchoring, standing before cultivation benches in low-light environment. Spore-stained clothing with bioluminescent compound residue. Contemplative, purposeful presence. Neo-noir dystopian biotech aesthetic, warm amber and violet bioluminescence casting shadows. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 26.6,
-    "Hispanic/Latin American": 25.4,
-    "Northern European": 17.5,
-    "Indigenous American": 13.0,
-    "Sub-Saharan African": 9.8,
-    "South Asian": 7.7
+    "Hispanic/Latin American": 53.4,
+    "Sub-Saharan African": 17,
+    "Northern European": 14.9,
+    "East Asian": 14.7
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Guatemalan": 53.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 4.6
+      },
+      "Central African": {
+        "Congolese": 3.6,
+        "Cameroonian": 7.5
+      },
+      "East African": {
+        "Ugandan": 1.3
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Scottish": 1.8,
+        "English": 6.6
+      },
+      "Germanic": {
+        "German": 4.5,
+        "Austrian": 0.9
+      },
+      "Scandinavian": {
+        "Swedish": 1.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 14.7
+      }
+    }
+  }
 }

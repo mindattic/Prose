@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7127ff6a1445003285da775",
   "type": "character",
-  "name": "Aero Fredriksen",
+  "name": "Britt Fredriksen",
   "aliases": [
     "Vesle",
     "The Moth Woman"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Lakeview Neon, near Damen and Armitage",
-  "description": "Veslemøy is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
+  "description": "Britt Fredriksen is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -154,7 +154,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Lakeview Neon",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -168,38 +168,25 @@
   "registered_firearms": [],
   "related_entities": [
     "Lakeview Neon",
+    "Aphelion",
     "The Unfinished Theorem",
     "Tessera Corponation",
-    "The Pure Hand",
     "Silver",
-    "Glass",
-    "Aphelion",
-    "Arcturus KS-7 'Nursery'",
-    "Bintou Halvorsen-Osei",
-    "Breck Tannen",
-    "Chronicle",
-    "Crucible Industries Furnace CF-15 'Meltdown'",
-    "Halima Ogawa-Twumasi",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Slagworks Industrial",
-    "Sorin Ekwensi-Balasanyan",
-    "TESSERA PG-2 'Signature'",
-    "Vuk Jorgensen-Toure"
+    "The Pure Hand",
+    "Glass"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "East Asian, Indigenous American, and Northern European blend — 39% East Asian (high cheekbones, eye shape tendency), 32% Indigenous American (facial structure, warm undertones), 29% Northern European (lighter eye potential, build). A striking tri-continental mix evident in balanced facial proportions and warm-to-medium skin tone.",
+    "heritage": "Northern European dominant (58.2%) with substantial Eastern European ancestry (35.7%) and minor Hispanic/Latin American influence (6.1%). This genetic combination produces fair to light skin with subtle warm undertones from the Eastern European and Hispanic admixture. Facial structure reflects the strong Scandinavian-Slavic blend — moderate, well-balanced cheekbones with slightly angular jaw structure typical of Northern European and Eastern European populations. Natural tendency toward lighter eye color and sturdy frame.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has spent five decades manipulating hot glass and heavy scaffolding. Not heavy, but solid — the build of functional strength rather than athleticism.",
     "hair_color": "Natural silver-white",
     "hair_style": "Cropped close to the scalp on the sides; long and swept back on top, often tied loosely or left to fall forward when working",
     "hair_length": "Long (top) / Short (sides)",
-    "eye_color": "Warm amber-brown with faded clarity from age and heat exposure, reflecting the East Asian and Indigenous American ancestry",
-    "skin_tone": "Warm medium-bronze with golden undertones — the blended result of East Asian and Indigenous American heritage brightened by Northern European ancestry, deepened by decades of sun exposure near industrial glass furnaces",
-    "complexion": "Deeply lined around the eyes and forehead from decades of squinting at luminous tubes and furnace heat. High, pronounced cheekbones with balanced facial structure reflecting tri-continental ancestry. Skin texture is weathered but well-maintained. Permanent faint violet discoloration on palms and under fingernails from reactive phosphor compound exposure.",
+    "eye_color": "Light gray-blue with faded clarity from age and heat exposure",
+    "skin_tone": "Fair to light with subtle warm undertones from Eastern European and Hispanic heritage, deepened by decades of sun exposure near industrial glass furnaces. Naturally pale foundation with slight olive cast from the 35.7% Eastern European and 6.1% Hispanic ancestry components.",
+    "complexion": "Deeply lined around the eyes and forehead from decades of squinting at luminous tubes and furnace heat. Moderate, well-balanced cheekbones reflecting Northern European and Eastern European facial structure. Skin texture is weathered but well-maintained. Permanent faint violet discoloration on palms and under fingernails from reactive phosphor compound exposure.",
     "distinguishing_marks": [
       "Faint bioluminescent cream-white glow running along both collarbones — dermal patches active at dusk and in dim light.",
       "Bioluminescent patches also glow faintly along the inner forearms in a branching pattern, mimicking neon tube designs.",
@@ -210,14 +197,39 @@
     "posture_movement": "Unhurried and deliberate. She moves with the confidence of someone who knows the exact reach of her body in space. Habit of holding her hands up near her face when speaking, fingers gesturing to demonstrate scale and dimension. When working, she hunches slightly forward, shoulders relaxed, entering a focused state. Standing still, she often rests weight on one leg, hip cocked slightly.",
     "clothing_style": "Functional Tier 3-4 workwear with artistic flourish. Heavy canvas work apron (often stained with phosphor compounds and soot) over sturdy linen or cotton shirts in muted earth tones. Wide-legged trousers in charcoal or dark indigo, reinforced at knees and hems. Worn leather boots with good grip for warehouse flooring. She favors natural fibers and practical layers. Occasionally wears a vintage denim jacket with hand-stitched patches commemorating major installations. No corporate branding, but well-maintained — the aesthetic of someone who respects her tools and workspace."
   },
-  "image_prompt": "Aero Fredriksen, 172cm tall, sturdy broad-shouldered craftsperson with warm bronze-gold skin blending East Asian, Indigenous American, and Northern European heritage. Silver-white hair cropped at sides, long and swept back on top. Warm amber-brown eyes, deeply lined from decades of furnace work. High pronounced cheekbones, weathered complexion. Cream-white bioluminescent patches glow faintly along collarbones and branching patterns on inner forearms. Silvered burn scar on right hand. Vintage optical enhancers on beaded cord around neck. Wearing heavy canvas work apron stained with phosphor compounds over muted earth-tone linen shirt, dark indigo reinforced trousers, worn leather boots. Standing with weight on one leg, relaxed posture. Industrial glass workshop setting, warm furnace light casting long shadows, dusk lighting bringing bioluminescent patches into subtle glow. Cyberpunk 2226, functional artisan aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Britt Fredriksen, 172cm tall, Scandinavian-Eastern European features with fair skin and subtle olive undertones, silver-white hair cropped at sides with long swept-back top, light gray-blue eyes. Deep forehead wrinkles, weathered complexion, bioluminescent cream-white patches glowing faintly along collarbones and inner forearms in branching neon patterns. Silvered burn scar on right hand, callused palms with faint violet phosphor staining. Wearing heavy canvas work apron stained with phosphor compounds over muted earth-tone linen shirt, dark charcoal trousers, worn leather work boots. Vintage beaded cord with optical enhancers around neck. Hunched forward posture, deliberate movement, hands raised near face. Industrial glass furnace workshop setting, warm amber and neon lighting, GLMZ, moody dusk atmosphere, functional artist, dense musculature, sturdy broad-shouldered frame --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 39.2,
-    "Indigenous American": 31.7,
-    "Northern European": 29.1
+    "Northern European": 58.2,
+    "Eastern European": 35.7,
+    "Hispanic/Latin American": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 58.2
+      }
+    },
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 18,
+        "Hungarian": 5
+      },
+      "Slavic South": {
+        "Croatian": 1.9,
+        "Serbian": 0.8
+      },
+      "Slavic West": {
+        "Polish": 10
+      }
+    },
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Salvadoran": 6.1
+      }
+    }
+  }
 }

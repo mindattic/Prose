@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6a67542abdbafc97420d0ff",
   "type": "character",
-  "name": "Wren Tamale",
+  "name": "Wren Valenzuela",
   "aliases": [
     "Matchstick"
   ],
@@ -87,7 +87,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -103,22 +103,11 @@
   "registered_firearms": [],
   "related_entities": [
     "Geartown",
-    "Emeka Johansson-Orozco",
-    "Kamala Mori-Sefa",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Tomasz Wren",
-    "Vantablack Media Parasocial Carrier Mask",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multi-continental ancestry: primarily Sub-Saharan African (44.3%), with significant Hispanic/Latin American (26.1%) and Indigenous American (14.4%) heritage, complemented by East Asian (9.2%), Southeast Asian (4.5%), and trace Middle Eastern (1.5%) genetics. This creates a complex phenotype with deep melanin, strong bone structure from multiple ancestral lines, and subtle eye shape variations.",
+    "heritage": "Multi-continental ancestry: primarily Hispanic/Latin American (61.7%) with significant Southeast Asian (36.8%) heritage and trace Northern European (1.5%) genetics. This creates a phenotype with warm, medium-to-deep brown skin tones enriched by golden and olive undertones, strong angular bone structure characteristic of both ancestral lines, and subtle eye shape variations from Southeast Asian heritage that blend seamlessly with the broader facial proportions of his Latin American ancestry.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and compact, muscular without bulk. Carries himself with the controlled tension of someone who has handled explosives for two decades. Thick neck, powerful forearms.",
@@ -126,8 +115,8 @@
     "hair_style": "Closely cropped, faded sides, kept severe and functional",
     "hair_length": "Short",
     "eye_color": "Deep brown",
-    "skin_tone": "Deep warm brown with subtle golden and reddish undertones from the blending of Sub-Saharan, Hispanic, and Indigenous American ancestry—rich and complex rather than uniform, darkest at the cheekbones and jawline",
-    "complexion": "Weathered face with deep lines around the eyes—squint-marks from years of calculating blast radiuses and reading building blueprints. High, prominent cheekbones characteristic of Indigenous American ancestry. A three-inch scar runs from his left cheekbone to jaw, white and precise, creating contrast against his darker skin. Sparse, deliberate facial hair—five-day stubble maintained as a styling choice, not neglect. Hands are calloused, fingers slightly stiff from old shrapnel injuries. Subtle epicanthic fold variation visible at the outer corners of his eyes from East Asian heritage.",
+    "skin_tone": "Warm medium-to-deep brown with golden and olive undertones from the blending of Hispanic/Latin American and Southeast Asian ancestry—rich and complex rather than uniform, with slight variation across the face and a subtle luminosity that catches light across the cheekbones and bridge of nose",
+    "complexion": "Weathered face with deep lines around the eyes—squint-marks from years of calculating blast radiuses and reading building blueprints. Strong, angular cheekbones characteristic of both Southeast Asian and Latin American heritage, creating high, defined facial planes. A three-inch scar runs from his left cheekbone to jaw, white and precise, creating contrast against his skin. Sparse, deliberate facial hair—five-day stubble maintained as a styling choice, not neglect. Hands are calloused, fingers slightly stiff from old shrapnel injuries. Subtle epicanthic fold variation visible at the outer corners of his eyes from Southeast Asian heritage, integrated naturally within broader eye structure.",
     "visible_augmentations": "Subdermal reinforcement plating visible as faint geometric ridges under the skin of both wrists and knuckles—silverish, barely perceptible unless you know what you're looking at. His left eye has a barely-noticeable neural port behind the ear, marked by a small dermal seal. No flashy chrome; everything chosen for discrete functionality.",
     "distinguishing_marks": [
       "Scar from left cheekbone to jaw—thin, surgical-looking, likely from a controlled demolition gone wrong in his thirties",
@@ -137,17 +126,47 @@
     "posture_movement": "Stands with feet shoulder-width apart, a habit from standing near detonation zones. Moves with deliberate economy—no wasted motion. When thinking, he touches his jaw scar absently. Speaks quietly, forcing others to lean in. His hands are steady, even when discussing volatile materials.",
     "clothing_style": "Tier 3 utilitarian: heavy-duty Carhartt-equivalent work pants in tan or charcoal, always with multiple reinforced pockets for tools and detonator components. Layered shirts—functional base layer, usually a fitted black tee under an unbuttoned work shirt or lightweight tactical jacket in muted colors (grays, earth tones). Steel-toed boots, worn but meticulously maintained. A weathered leather jacket, vintage pre-2200 quality, hangs in his Geartown workshop. No logos, no status symbols. Everything is built for durability and function. Wears a simple steel wedding band on his left hand—never removes it."
   },
-  "image_prompt": "Cyberpunk 2226, portrait of Wren Tamale, a 178cm demolitions expert with deep warm brown skin and high prominent cheekbones, black hair with silver temples in a sharp fade, intense deep brown eyes with subtle epicanthic folds, weathered face with deep squint-lines and a thin three-inch scar running from left cheekbone to jaw, five-day stubble, calloused hands with barely-visible subdermal reinforcement plating at wrists and knuckles, standing with controlled posture in utilitarian work wear—tan reinforced pants, fitted black tee under gray work shirt, steel-toed boots, steel wedding band, faded grid tattoo visible on left forearm, discrete neural port behind left ear, industrial workshop setting with warm amber lighting, geartown aesthetic, serious composed expression, no wasted movement, hands steady, photorealistic, cinematic lighting, --ar 2:3 --v 6",
+  "image_prompt": "Wren Valenzuela, 178cm tall demolitions expert with warm deep brown skin bearing golden and olive undertones, strong angular cheekbones blending Southeast Asian and Latin American heritage. Black hair with silvering temples, closely cropped fade. Deep brown eyes with subtle epicanthic folds. Surgical-looking three-inch scar from left cheekbone to jaw. Five-day stubble, weathered face with squint lines. Compact muscular build, thick neck, powerful forearms with subdermal reinforcement plating visible as faint silvery geometric ridges. Wearing fitted black tee under unbuttoned muted gray tactical jacket, heavy-duty tan work pants with multiple reinforced pockets, steel-toed boots. Steel wedding band on left hand. Discrete neural port behind left ear. Standing in Geartown workshop setting with industrial lighting, hands steady and composed. GLMZ, controlled tension, utilitarian aesthetic, no status symbols. Film noir lighting highlighting facial structure and scar. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 44.3,
-    "Hispanic/Latin American": 26.1,
-    "Indigenous American": 14.4,
-    "East Asian": 9.2,
-    "Southeast Asian": 4.5,
-    "Middle Eastern": 1.5
+    "Hispanic/Latin American": 61.7,
+    "Southeast Asian": 36.8,
+    "Northern European": 1.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 40.9,
+        "Puerto Rican": 10.3
+      },
+      "Central American": {
+        "Salvadoran": 10.3,
+        "Guatemalan": 0.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 22.9
+      },
+      "Filipino": {
+        "Waray": 8.4,
+        "Cebuano": 5.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 0.7
+      },
+      "Scandinavian": {
+        "Norwegian": 0.3
+      },
+      "Germanic": {
+        "German": 0.3,
+        "Swiss German": 0.2
+      }
+    }
+  }
 }

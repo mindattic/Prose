@@ -1,7 +1,7 @@
 {
   "id": "019d6143a66c727c950cbded153962f0",
   "type": "character",
-  "name": "Valentina Jaramillo-Dalgaard",
+  "name": "Zara Matsumoto-Valenzuela",
   "aliases": [
     "Zub",
     "Static"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Tessera Compliance Hub, Edgewater Prism, near Clark and Belmont",
-  "description": "Nneka Zubrzycka-Faafetai sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes — she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she's adjusting an aug that isn't there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature — a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera's best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn't, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs — pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
+  "description": "Zara Matsumoto-Valenzuela sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes — she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she's adjusting an aug that isn't there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature — a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera's best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn't, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs — pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Tessera Compliance Hub",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,28 +243,11 @@
   "related_entities": [
     "Edgewater Prism",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Corponation",
-    "Brecken Yılmaz-Osei",
-    "Carrion Defense Works",
-    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'",
-    "Djeneba Park-Traore",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Irontide Tidal Energy",
-    "Lazarus LX-2 'Lab Rat'",
-    "Nurlan Morita-Antwi",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Human Baseline Alliance",
-    "Ximena Bautista-Nwosu",
-    "Yannick Tofauti-Szarvásy"
+    "Tessera Corponation"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (43.9%) with significant East Asian (21.4%), South Asian (15.3%), Sub-Saharan African (9.7%), and Eastern European (8.7%) ancestry. Complex pan-global genetic blend creating warm-toned skin with subtle golden undertones, refined East Asian eye geometry, and Latin American facial structure.",
+    "heritage": "East Asian (43.7%), South Asian (28.5%), and Hispanic/Latin American (27.8%) ancestry. Complex tri-continental genetic blend creating warm medium-golden skin tone with subtle golden undertones from South Asian heritage, refined East Asian eye geometry paired with Latin American facial structure, and high cheekbone prominence from the blended East and South Asian genetics.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and slightly angular, with the compressed posture of someone who spends ten hours daily bent toward screens. Minimal muscle definition but wiry, efficient frame.",
@@ -272,8 +255,8 @@
     "hair_style": "Loose, voluminous natural coils when unrestrained; pinned back tightly during work shifts with reinforced clips",
     "hair_length": "Long (shoulder-blade length when released)",
     "eye_color": "Deep brown with subtle almond geometry from East Asian ancestry, human baseline",
-    "skin_tone": "Warm medium-golden brown reflecting blended ancestry, deeper than East Asian baseline but with golden undertones from South Asian heritage",
-    "complexion": "Clear but slightly pallid from nocturnal schedule and fluorescent overhead lighting. Fine lines around eyes from sustained focus. Refined facial structure with slight prominence in cheekbones from South Asian and East Asian genetic expression. Habitually composed expression. Minimal makeup, pragmatic grooming.",
+    "skin_tone": "Warm medium-golden brown reflecting the balanced blend of East Asian, South Asian, and Latin American heritage, with golden undertones characteristic of South Asian genetic expression",
+    "complexion": "Clear but slightly pallid from nocturnal schedule and fluorescent overhead lighting. Fine lines around eyes from sustained focus. Refined facial structure with pronounced cheekbones from combined East Asian and South Asian genetic expression, with subtle width to face structure from Latin American ancestry. Habitually composed expression. Minimal makeup, pragmatic grooming.",
     "distinguishing_marks": [
       "Faint subcutaneous scarring along right temple where neural uplink was installed, typically hidden by hairline",
       "Small burnished mark on inner left wrist from repeated contact with desk edge during extended surveillance sessions"
@@ -282,17 +265,40 @@
     "posture_movement": "Default forward lean with shoulders tensed. Stillness is her baseline when concentrating — she becomes almost statue-like when locked into data work. Frequent unconscious temple-touching gesture (old habit checking for aug adjustments). Deliberate, economical movements outside work context. Rarely makes eye contact during conversations, attention naturally drawn to screens or middle distance.",
     "clothing_style": "Tier 3 pragmatist. At work: fitted dark compression wear (charcoal, navy) with Tessera-issued access badge worn on retention cord. Off-duty: oversized vintage band tees (salvaged from Tier 5 markets), fitted black cargo pants with multiple pockets, worn synthetic leather jacket with internal wiring channels. Always carries handheld secondhand datapad. Minimal jewelry except for a singular thin titanium ring on left index finger. Shoes are practical runner-grade, well-maintained."
   },
-  "image_prompt": "Valentina Jaramillo-Dalgaard, cyberpunk 2226, full-body portrait of a 168cm lean woman with warm golden-brown skin reflecting blended Hispanic, East Asian, and South Asian ancestry. Deep brown eyes with subtle almond geometry. Shoulder-blade length coils of natural deep brown hair with vibrant thermochromic violet-to-black dye gradient, partially pinned back with reinforced clips. Visible faint scarring at right temple (neural uplink port). Wearing fitted charcoal compression work wear with Tessera access badge, or off-duty in oversized vintage band tee and black cargo pants with worn synthetic leather jacket. Practical runner shoes. Characteristic forward lean posture, statue-still concentration pose. Minimal makeup, pragmatic grooming. Handheld datapad visible. Cyberpunk office setting with fluorescent overhead lighting casting slight pallor, or neon-lit market backdrop. Nocturnal aesthetic, cool color grading. --ar 2:3 --v 6",
+  "image_prompt": "Zara Matsumoto-Valenzuela, 168cm lean neo-noir hacker woman, warm medium-golden brown skin tone blending East Asian, South Asian, and Latin American heritage, pronounced high cheekbones, almond-shaped deep brown eyes with faint analytical overlay, natural shoulder-length coils dyed thermochromic violet-to-black. Slight forward lean, statue-still concentration pose. Temple-touching gesture near concealed neural uplink port. Wearing dark charcoal compression work wear with Tessera access badge over oversized vintage band tee, fitted black cargo pants, worn synthetic leather jacket with internal wiring channels visible. Secondhand datapad in hand, thin titanium ring on left index finger. Nocturnal pallid complexion with fine eye-line creases. Minimal makeup, pragmatic grooming. GLMZ Great Lakes Metropolitan Zone, moody blue-teal neon ambient lighting, screens glowing in background, cinematic future-noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 43.9,
-    "East Asian": 21.4,
-    "South Asian": 15.3,
-    "Sub-Saharan African": 9.7,
-    "Eastern European": 8.7,
-    "Middle Eastern": 1.0
+    "East Asian": 43.7,
+    "South Asian": 28.5,
+    "Hispanic/Latin American": 27.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Korean": {
+        "Korean": 12.6
+      },
+      "Japanese": {
+        "Japanese": 31.1
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 16
+      },
+      "Indian": {
+        "Telugu": 8.6
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 27.8
+      }
+    }
+  }
 }

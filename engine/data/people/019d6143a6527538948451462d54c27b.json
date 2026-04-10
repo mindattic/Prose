@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6527538948451462d54c27b",
   "type": "character",
-  "name": "Soledad Jaramillo-Mbekele",
+  "name": "Yemi Horváth-Mbekele",
   "aliases": [
     "Mal",
     "Old Scissors"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "The Narrows, Drăghici & Son Barbershop (a two-chair shop that has occupied the same ground-floor unit for thirty-one years; the 'Son' in the name refers to his son, who left for a Helix Biosystems contract twelve years ago), near Fullerton and Damen",
-  "description": "Malachai is tall and has not fully conceded to his age — he stands straight, moves deliberately, and has the particular stillness of someone who has spent decades in a profession that requires holding a blade near other people's necks and being trusted absolutely. His heritage is Romanian-Yoruba, third-generation Narrows, and it gives him a face that could be anywhere from fifty to seventy depending on how the light falls. His hair is white now, kept in a short, precise style he cuts himself by hand mirror every Sunday. He has no geneware, no cosmetic mods, only a pair of Helix-certified joint stabilizers in his right hand and wrist — installed eight years ago when arthritis began threatening his livelihood — and he mentions them only when clients ask about the faint copper banding around his wrist joints.\n\nThe shop is the Narrows' unofficial civic center. People come to argue politics, grieve, celebrate, confess, and get their hair cut, not necessarily in that order. Malachai has been cutting hair in this chair since he was thirty-two, and in that time he has absorbed the neighborhood's entire modern history. He gives opinions freely but never advice unless asked, a distinction he considers important. He has deep faith in the transit E.L.F. he calls Calea (Romanian for 'the path'), whose shrine occupies the corner of the shop near the magazine rack, and he speaks of her with the casual familiarity of a long acquaintance.",
+  "description": "Yemi Horváth-Mbekele is tall and has not fully conceded to his age — he stands straight, moves deliberately, and has the particular stillness of someone who has spent decades in a profession that requires holding a blade near other people's necks and being trusted absolutely. His heritage is Romanian-Yoruba, third-generation Narrows, and it gives him a face that could be anywhere from fifty to seventy depending on how the light falls. His hair is white now, kept in a short, precise style he cuts himself by hand mirror every Sunday. He has no geneware, no cosmetic mods, only a pair of Helix-certified joint stabilizers in his right hand and wrist — installed eight years ago when arthritis began threatening his livelihood — and he mentions them only when clients ask about the faint copper banding around his wrist joints.\n\nThe shop is the Narrows' unofficial civic center. People come to argue politics, grieve, celebrate, confess, and get their hair cut, not necessarily in that order. Yemi Horváth-Mbekele has been cutting hair in this chair since he was thirty-two, and in that time he has absorbed the neighborhood's entire modern history. He gives opinions freely but never advice unless asked, a distinction he considers important. He has deep faith in the transit E.L.F. he calls Calea (Romanian for 'the path'), whose shrine occupies the corner of the shop near the magazine rack, and he speaks of her with the casual familiarity of a long acquaintance.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -168,7 +168,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,22 +233,11 @@
     "Free Assembly",
     "Tessera Corponation",
     "Copper",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Isadora Mwangi-Thorvaldsen",
-    "Lazarus EC-4 'Companion'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Saodat Mirzoyan-Fubara",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Gesture",
-    "The Mirror",
-    "The Narrows",
-    "Volkov-Saito Precision VS-R8 'Verdict'",
-    "Witness"
+    "Corner Slice"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Latin American and Sub-Saharan African with Eastern European and Pacific Islander ancestry — a complex blend of 57.7% Hispanic/Latin American, 27.5% Sub-Saharan African, 7.1% Eastern European, 4.8% Pacific Islander, and 2.9% Northern European. This creates a warm, medium-deep skin tone with rich undertones, subtle facial structure that draws from multiple continental traditions, and the particular weathering that comes from six decades under varied sunlight.",
+    "heritage": "Sub-Saharan African, Eastern European, Hispanic/Latin American, East Asian, Southeast Asian, and South Asian ancestry in complex synthesis — 26.7% Sub-Saharan African, 24.9% Eastern European, 17.5% Hispanic/Latin American, 16.2% East Asian, 7.8% Southeast Asian, 6.9% South Asian. This creates a warm medium-deep skin tone with layered golden and amber undertones, facial structure that bridges multiple continental traditions with defined cheekbones, strong nasal bridge, and subtle eye shape diversity, weathered by sixty-three years under varied sunlight.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Tall and lean with the kind of careful posture that comes from decades of precision work. Shoulders still broad but narrowed slightly with age; no belly. His frame suggests someone who has never wasted motion.",
@@ -256,8 +245,8 @@
     "hair_style": "Precisely cut short style, maintained weekly by his own hand with mirror and blade",
     "hair_length": "Short",
     "eye_color": "Deep brown",
-    "skin_tone": "Warm medium-deep — the particular shade that results from blended Hispanic/Latin American and Sub-Saharan African ancestry, with subtle undertones from Eastern European heritage, weathered by sixty-three years and unfiltered sunlight through shop windows",
-    "complexion": "Strong bone structure with features reflecting his mixed ancestry — defined cheekbones with subtle width, prominent nasal bridge, deep nasolabial lines from decades of concentration and occasional smiling. Skin shows his age without apology — fine creases around the eyes, age spots on his forearms, warm-toned brown complexion with natural depth. Always clean-shaven; a small white scar traces his left jawline (never explained).",
+    "skin_tone": "Warm medium-deep with complex golden-amber undertones — the result of Sub-Saharan African, Eastern European, East Asian, and South/Southeast Asian blending, weathered by sixty-three years and unfiltered sunlight through shop windows",
+    "complexion": "Strong bone structure reflecting his global ancestry — defined cheekbones with subtle width influenced by East Asian heritage, prominent nasal bridge with Sub-Saharan and Eastern European character, deep nasolabial lines from decades of concentration and occasional smiling. Eyes with slight epicanthic fold reflecting East Asian and Southeast Asian heritage. Warm-toned brown complexion with natural depth, subtle golden undertones, and the particular weathering of age without apology — fine creases around the eyes, age spots on forearms. Always clean-shaven; a small white scar traces his left jawline (never explained).",
     "distinguishing_marks": [
       "Thin white scar along the left jawline, approximately 4cm, faded but visible in certain light",
       "Copper-banded joint stabilizers visible around right wrist and knuckles — Helix Biosystems medical-grade augmentation, faint hum if you stand close enough",
@@ -267,16 +256,68 @@
     "posture_movement": "Stands completely straight, moves with deliberate precision — no wasted gesture. When walking, each step is placed with intention. When holding a blade, his hand stills absolutely. Has the particular quietness of someone who has spent a lifetime being trusted with sharp objects near vulnerable places. Eyes track movement in his peripheral constantly, a habit from the shop.",
     "clothing_style": "White barber's coat, typically fastened but not buttoned, worn over simple dark slacks and worn leather shoes polished weekly. No logos, no tier-signaling. Occasionally wears a small wooden pendant (Calea shrine offering) under his collar. Everything is clean, nothing is fashionable. His aesthetic is Tier 4 working-class dignity — not poor, not aspirational, simply consistent."
   },
-  "image_prompt": "Soledad Jaramillo-Mbekele, 63-year-old cyberpunk barber, 2226 GLMZ. Tall lean frame, warm medium-deep brown skin reflecting Latin American and Sub-Saharan African heritage. White precision-cut hair, deep brown eyes with age-weathered features and strong bone structure. Faded 4cm scar on left jawline. Copper-banded medical augmentations visible on right wrist and hand joints (Helix Biosystems). Impeccable white barber's coat worn open over dark slacks and polished worn leather shoes. Small wooden Calea shrine pendant visible at neck. Standing with absolute precision, completely still posture, tracking peripheral movement. Late evening shop lighting casting warm amber glow through front windows, dust motes visible. Clean, dignified, Tier 4 working-class aesthetic. No logos, no fashion signaling. Wooden barber tools and straight razors suggested on counter behind him. Photorealistic, intricate detail on skin texture and augmentation weathering. --ar 2:3 --v 6",
+  "image_prompt": "Yemi Horváth-Mbekele, 63-year-old barber with warm golden-brown skin reflecting Sub-Saharan African, Eastern European, East Asian, and South Asian heritage. Tall lean frame 188cm, white closely-cropped hair, deep brown eyes with subtle epicanthic fold, defined cheekbones and strong nasal bridge. Clean-shaven with fine age lines, faint white scar on left jawline. Wearing crisp white barber's coat over dark slacks and polished leather shoes. Copper medical augmentation banding visible on right wrist and hand joints with faint mechanical sheen. Standing with perfect posture, deliberate stillness, peripheral awareness. Small wooden pendant visible at collar. GLMZ Great Lakes Metropolitan Zone barber shop interior, warm LED and natural window light catching his features and the copper augmentation, professional working-class dignity, no-nonsense aesthetic, quiet precision --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 57.7,
-    "Sub-Saharan African": 27.5,
-    "Eastern European": 7.1,
-    "Pacific Islander": 4.8,
-    "Northern European": 2.9
+    "Sub-Saharan African": 26.7,
+    "Eastern European": 24.9,
+    "Hispanic/Latin American": 17.5,
+    "East Asian": 16.2,
+    "Southeast Asian": 7.8,
+    "South Asian": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "West African": {
+        "Ghanaian": 13.4
+      },
+      "East African": {
+        "Somali": 5.7,
+        "Kenyan": 7.6
+      }
+    },
+    "Eastern European": {
+      "Slavic West": {
+        "Sorbian": 5.2,
+        "Polish": 2.3
+      },
+      "Slavic South": {
+        "Bosnian": 15.3
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 2.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Argentine": 12.8,
+        "Brazilian": 4.7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 3.9,
+        "Hakka": 12.3
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 4.8
+      },
+      "Laotian": {
+        "Laotian": 3
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 1.3
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 5.6
+      }
+    }
+  }
 }

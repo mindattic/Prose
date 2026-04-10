@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d977e590156c2710100923",
   "type": "character",
-  "name": "Gulnara Bangura",
+  "name": "Soren Mohammadi",
   "aliases": [
     "Sori",
     "the Ice Queen"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Fort Anchor, GLMZ, near Ashland and Chicago Ave",
-  "description": "Soraya is a lean, angular woman whose Igbo-Icelandic heritage settled into something striking and hard to read — dark brown skin that catches fluorescent light like burnished copper, pale grey eyes that her colleagues call 'interrogation eyes' because they seem to wait rather than look. She keeps her natural hair close-cropped and does not bother with cosmetic geneware, which in itself feels like a statement of seriousness in a precinct full of color-shifted irises and decorative claw-tips. She moves through the Fort Anchor bullpen with the careful economy of someone who has spent two decades watching other people make mistakes.\n\nSoraya is not cruel, but she is relentless. She became Internal Affairs after her partner of six years was found selling seized evidence back into Copperhead's black market circuits — a betrayal she discovered herself and reported herself, and which she has not spoken about voluntarily since. She believes the Metro Police is worth saving, which is the most dangerous possible disposition for an IA investigator to have. She keeps a small data-shrine to the E.L.F. called the Ledger in her desk drawer, feeding it transaction logs and anonymized tip files in hope of some pattern-blessing she would never admit to hoping for.",
+  "description": "Soren Mohammadi is a lean, angular woman whose Igbo-Icelandic heritage settled into something striking and hard to read — dark brown skin that catches fluorescent light like burnished copper, pale grey eyes that her colleagues call 'interrogation eyes' because they seem to wait rather than look. She keeps her natural hair close-cropped and does not bother with cosmetic geneware, which in itself feels like a statement of seriousness in a precinct full of color-shifted irises and decorative claw-tips. She moves through the Fort Anchor bullpen with the careful economy of someone who has spent two decades watching other people make mistakes.\n\nSoren Mohammadi is not cruel, but she is relentless. She became Internal Affairs after her partner of six years was found selling seized evidence back into Copperhead's black market circuits — a betrayal she discovered herself and reported herself, and which she has not spoken about voluntarily since. She believes the Metro Police is worth saving, which is the most dangerous possible disposition for an IA investigator to have. She keeps a small data-shrine to the E.L.F. called the Ledger in her desk drawer, feeding it transaction logs and anonymized tip files in hope of some pattern-blessing she would never admit to hoping for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -160,7 +160,7 @@
     "Code Keeper": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,46 +179,31 @@
   ],
   "related_entities": [
     "Fort Anchor",
-    "GLMZ",
     "Copperhead",
     "The Heritage Vault",
     "Grainfort",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Adaeze Chen-Hawkins",
     "Witness",
-    "Copper",
-    "The Pale Mile",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Breck Tannen",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Lazarus IDP-1 'Teeth'",
-    "Saodat Mirzoyan-Fubara",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "The Ledger",
-    "The Pure Hand",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'",
-    "Vuk Jorgensen-Toure",
-    "Yuki Nwosu-Petrenko"
+    "Copper",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Haze Johansson",
+    "The Pale Mile",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Mixed ancestry reflecting Sub-Saharan African (27.2%), Central Asian (25.3%), Northern European (18.6%), Indigenous American (14.4%), Hispanic/Latin American (13.3%), with trace East Asian heritage. The combination creates striking contrasts: deep brown skin with warm undertones inherited from African and Latin heritage, facial bone structure showing Central Asian prominence in her cheekbones and brow ridge, and unexpected pale grey eyes suggesting Northern European recessive traits expressing through her complex genetic mosaic.",
+    "heritage": "Mixed ancestry with dominant Middle Eastern (33.9%), Southeast Asian (16.0%), Indigenous American (16.0%), Sub-Saharan African (15.5%), South Asian (14.7%), and Hispanic/Latin American (3.9%) heritage. The genetic convergence creates distinctive phenotypic characteristics: warm medium-brown skin with golden and copper undertones from Middle Eastern, South Asian, and Sub-Saharan African ancestry; high, angular cheekbones reflecting Southeast Asian and Middle Eastern bone structure; and naturally pale grey-blue eyes—a recessive trait that emerges distinctly against her warm complexion, creating striking visual contrast.",
     "height_cm": 172,
     "weight_kg": 58,
     "build": "Lean and angular, with defined musculature from disciplined cardio work rather than gym augmentation. Her frame suggests economy of movement — nothing wasted, everything functional. Shoulders set slightly back, suggesting years of desk posture corrected by conscious habit.",
     "hair_color": "Natural dark brown, nearly black",
     "hair_style": "Close-cropped, military precision, no styling product — just clean geometry against her scalp",
     "hair_length": "Short",
-    "eye_color": "Pale grey, almost silver-blue in certain light; a striking recessive expression from her Northern European ancestry that creates deliberate visual tension with her deep brown complexion",
-    "skin_tone": "Deep rich brown with warm copper undertones from her Sub-Saharan African and Hispanic/Latin American heritage, with burnished golden highlights visible at temples and cheekbones, creating subtle luminescence in fluorescent environments",
-    "complexion": "Minimal cosmetic intervention; skin shows the weathering of two decades of police work and stress-induced insomnia. High, prominent cheekbones with Central Asian angularity. Mouth set in a default neutral line that reads as skeptical. Faint stress lines between her brows. No visible blemishes; skin care is clinical and consistent. Facial structure reflects the blend of her diverse heritage — neither singular nor indistinct, but distinctly her own.",
+    "eye_color": "Pale grey-blue, nearly silver in certain light; a striking natural recessive expression that creates deliberate visual tension with her warm medium-brown complexion",
+    "skin_tone": "Warm medium-brown with golden and copper undertones, burnished highlights at temples and cheekbones creating subtle luminescence in fluorescent environments",
+    "complexion": "Minimal cosmetic intervention; skin shows the weathering of two decades of police work and stress-induced insomnia. High, prominent cheekbones with Southeast Asian and Middle Eastern angularity blended with Sub-Saharan African and South Asian heritage features. Mouth set in a default neutral line that reads as skeptical. Faint stress lines between her brows. No visible blemishes; skin care is clinical and consistent. Facial structure reflects the blend of her diverse heritage — neither singular nor indistinct, but distinctly her own.",
     "distinguishing_marks": [
-      "Three-inch scar on the left side of her jawline, pale and thin, angled downward — result of a blade encounter during a Tier 5 raid in 2207, visible against her deep brown skin at certain angles",
+      "Three-inch scar on the left side of her jawline, pale and thin, angled downward — result of a blade encounter during a Tier 5 raid in 2207, visible against her warm brown skin at certain angles",
       "Faint burn scarring across the backs of both hands in a crosshatch pattern, barely raised — from handling evidence containers with faulty thermal regulation in her early years, now a kind of professional stigmata"
     ],
     "visible_augmentations": "None visible. The neural-link port is behind her left ear beneath her close-cropped hair. The subdermal stress-response monitor creates no visible bulge or discoloration.",
@@ -226,17 +211,59 @@
     "clothing_style": "Standard-issue Metro Police internal affairs uniform: charcoal grey duty jacket over black synthetic-weave shirt, both tailored to fit without excess fabric. Black utility pants with minimal visible pockets — most gear is internal or digital. Steel-toed boots, well-maintained. When off-duty, she wears similar utilitarian clothing: dark neutral colors, high-performance synthetics, nothing decorative. No jewelry. Her badge and department credentials are always within arm's reach.",
     "mood_notes": "Uncompromising watchfulness, alert readiness, professional detachment"
   },
-  "image_prompt": "Gulnara Bangura, cyberpunk 2226, internal affairs detective. Deep rich brown skin with copper undertones, striking pale grey-silver eyes creating jarring contrast, high angular cheekbones, close-cropped dark hair. 172cm lean muscular frame, economical posture. Charcoal grey Metro Police IA duty jacket over black synthetic shirt, black utility pants, steel-toed boots. Thin pale scar along left jawline. Clinical professional bearing, watchful expression, eyes sharp. Fluorescent precinct bullpen or interrogation room setting, cool blue-grey lighting, minimal personal space, all function no decoration. Cyberpunk dystopian police procedural aesthetic, gritty photorealistic, dramatic sidelighting emphasizing facial structure and scar detail --ar 2:3 --v 6",
+  "image_prompt": "Soren Mohammadi, lean 172cm woman with warm medium-brown skin, golden and copper undertones, high angular cheekbones, pale grey-blue eyes striking against her complexion, military close-cropped dark brown hair nearly black. Faint jawline scar, burn scars on hands, stress lines between brows. Charcoal grey Metro Police internal affairs duty jacket over black synthetic-weave shirt, black utility pants, steel-toed boots. Economical controlled posture, watchful expression, standing in neon-lit police bullpen or interrogation room. GLMZ, fluorescent and cool LED lighting, professional detachment, alert readiness. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 27.2,
-    "Central Asian": 25.3,
-    "Northern European": 18.6,
-    "Indigenous American": 14.4,
-    "Hispanic/Latin American": 13.3,
-    "East Asian": 1.2
+    "Middle Eastern": 33.9,
+    "Southeast Asian": 16,
+    "Indigenous American": 16,
+    "Sub-Saharan African": 15.5,
+    "South Asian": 14.7,
+    "Hispanic/Latin American": 3.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 33.9
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 6.2
+      },
+      "Thai": {
+        "Thai": 7
+      },
+      "Indonesian": {
+        "Sumatran": 2.8
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Mapuche": 8.5,
+        "Aymara": 7.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 8,
+        "Tanzanian": 7.5
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Malayali": 12.8,
+        "Punjabi": 1.9
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Colombian": 2.1,
+        "Venezuelan": 1.8
+      }
+    }
+  }
 }

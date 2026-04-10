@@ -1,7 +1,7 @@
 {
   "id": "019d6143a670725fad842cf61963bf04",
   "type": "character",
-  "name": "Vega Strömqvist",
+  "name": "Vega Subramaniam",
   "aliases": [
     "Grim",
     "The Specialist"
@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Nurlan Holmberg-Dembele is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Nurlan Holmberg-Dembele describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Vega Subramaniam is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Vega Subramaniam describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.33,
@@ -257,7 +257,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,38 +275,14 @@
   ],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
+    "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
     "Slagworks Industrial",
     "Pellucid Systems",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible RE-2 'Receptionist'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Helix Biosystems Vagal Resonance Dampener",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "MERIDIAN",
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Mika Sorel",
-    "Narrowcast",
-    "NeuralPath Cascade Standard Feed BCI",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The Fathom Line",
-    "The Narrows",
-    "The Peninsula",
-    "The Pure Hand",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Witness"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian dominant (42.8%) with significant Sub-Saharan African (24.4%) and South Asian (22.9%) ancestry, minimal Northern European (9.9%) — resulting in warm deep brown skin with subtle golden undertones, monolid or hooded eye shape, and facial structure reflecting the primary East Asian ancestry with secondary African features in cheekbone prominence and jaw structure",
+    "heritage": "Genetically balanced across six ancestry groups with nearly equal distribution: East Asian (21.9%), Hispanic/Latin American (21.7%), South Asian (21.7%), Sub-Saharan African (18.4%), Northern European (10.2%), and Southeast Asian (6.1%). This rare diaspora blend creates warm deep brown skin with golden undertones, a sophisticated integration of East and South Asian facial structure combined with African cheekbone and jaw prominence, with subtle Northern European and Southeast Asian features creating a uniquely multifaceted phenotype.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Compact and dense — lean muscle with functional bulk through the shoulders and forearms. The build of someone who moves through tight spaces and uses their body as a tool. No excess weight, all angles.",
@@ -314,8 +290,8 @@
     "hair_style": "Cropped close to the scalp, practical and severe",
     "hair_length": "Short",
     "eye_color": "Deep brown with slight amber undertone, alert and dark-adapted from nocturnal living",
-    "skin_tone": "Deep warm brown with golden undertones — rich melanin distribution across face and forearms, even despite minimal sun exposure, underlying warmth visible in temple and jawline areas",
-    "complexion": "Weathered and mapped with old scars across deep brown canvas. The face reads as someone who has taken impacts and kept moving. Monolid or hooded eyes with slight epicanthic fold. High, prominent cheekbones characteristic of East and South Asian heritage. Stubble is permanent fixture — a day or two of growth, never clean-shaven, never a full beard. Stress lines around the eyes from squinting in low light and high focus.",
+    "skin_tone": "Warm deep brown with golden undertones — melanin-rich complexion reflecting the balanced ancestry mix. Golden warmth visible at the temples, jawline, and cheekbones from the combined East Asian, South Asian, Hispanic, and African genetic contributions.",
+    "complexion": "Weathered and mapped with old scars across deep brown canvas. The face reads as someone who has taken impacts and kept moving. Facial structure integrates East and South Asian cheekbone prominence with broader African jaw characteristics and slight Southeast Asian angularity. Slightly hooded eyes with visible epicanthic fold. High, prominent cheekbones with warm undertones. Stubble is permanent fixture — a day or two of growth, never clean-shaven, never a full beard. Stress lines around the eyes from squinting in low light and high focus.",
     "distinguishing_marks": [
       "Diagonal scar across the left cheekbone, approximately 8cm long, pale silver against deep brown skin — blunt-force trauma from early twenties",
       "Thin scar running from the corner of his left eye down toward the jaw line, about 5cm — blade work, healed well",
@@ -327,15 +303,70 @@
     "posture_movement": "Compact and economical. Doesn't waste motion — shoulders stay slightly forward, weight balanced on the balls of his feet even when stationary. Eyes track movement in his peripheral constantly, a habit from tight-quarters work. When he moves through doorways or narrow spaces, he moves sideways or at angles, a learned efficiency. In conversation, he is still — minimal hand movement, minimal facial expression, all attention concentrated. The bioware adrenaline regulator shows as an absence of fidgeting, a deliberate calmness that reads as practiced rather than natural.",
     "clothing_style": "Tier 4 working-class pragmatism with Tier 3 aspiration. Black matte combat pants with reinforced thigh pockets and drop-leg rig points — worn but maintained. Fitted tactical shirt in dark gray or charcoal, usually long-sleeve despite warmth to conceal the forearm augmentation and scars. Unbuttoned overshirt in black Cordura-composite, sleeveless or removable, branded with faint wear patterns where gear harnesses have rubbed. Ankle boots with reinforced toecaps — practical climbing footwear. No visible corporate branding. Minimal jewelry except a worn steel cuff on his left wrist, dented but functional. Carries himself like the gear is not a costume but an extension of his body."
   },
-  "image_prompt": "Vega Strömqvist, East Asian-dominant mixed heritage man with deep warm brown skin and golden undertones, sharp monolid eyes dark-adapted from nocturnal work, high prominent cheekbones, cropped dark brown hair with silver at temples. Age-worn face mapped with pale scars — diagonal slash across left cheekbone, thin blade scar from eye to jaw. Weathered stubble, stress lines from constant focus. 178cm tall, compact dense build, muscular shoulders. Visible chrome titanium fingertip augmentations on both hands with worn matte finish. Dressed in black tactical gear: reinforced combat pants, fitted dark gray long-sleeve shirt, unbuttoned black Cordura overshirt, ankle boots with reinforced caps. Worn steel cuff on left wrist. Posture is economical and still, weight on balls of feet, minimal wasted movement. Cyberpunk 2226 GLMZ setting, urban industrial background with cool neon accent lighting catching his scars and chrome implants, moody and alert expression, standing in shadow with focused intensity, --ar 2:3 --v 6",
+  "image_prompt": "Vega Subramaniam, GLMZ, portrait of a mixed-heritage operative with warm deep brown skin and golden undertones. South Asian and East Asian cheekbone structure balanced with African jaw prominence, creating striking angular features. Slightly hooded eyes with amber-brown depth, day-old stubble across strong jaw. Diagonal scar across left cheekbone, thin blade scar from eye toward jaw. Short dark brown hair with silver temples. Chrome titanium fingertip implants visible on both hands showing wear from climbing work. Wearing dark charcoal tactical long-sleeve shirt under sleeveless black Cordura overshirt, black reinforced combat pants. Worn steel cuff on left wrist. Posture compact and economical, shoulders slightly forward, alert and controlled. Nocturnal lighting casting sharp shadows across scarred, determined features. Urban rooftop or narrow corridor setting, Great Lakes Metropolitan Zone night aesthetic. Tense, professional, lethal efficiency. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 42.8,
-    "Sub-Saharan African": 24.4,
-    "South Asian": 22.9,
-    "Northern European": 9.9
+    "East Asian": 21.9,
+    "Hispanic/Latin American": 21.7,
+    "South Asian": 21.7,
+    "Sub-Saharan African": 18.4,
+    "Northern European": 10.2,
+    "Southeast Asian": 6.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 7.1
+      },
+      "Chinese": {
+        "Fujianese": 8.8,
+        "Mandarin Northern": 1
+      },
+      "Korean": {
+        "Korean": 5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 13.6
+      },
+      "South American": {
+        "Peruvian": 6.1,
+        "Ecuadorian": 0.6
+      },
+      "Central American": {
+        "Honduran": 0.7,
+        "Salvadoran": 0.7
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 21.7
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 12.1
+      },
+      "West African": {
+        "Senegalese": 3.9
+      },
+      "Southern African": {
+        "Zimbabwean": 2.4
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 10.2
+      }
+    },
+    "Southeast Asian": {
+      "Indonesian": {
+        "Sumatran": 6.1
+      }
+    }
+  }
 }

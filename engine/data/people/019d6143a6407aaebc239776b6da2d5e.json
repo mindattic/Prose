@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6407aaebc239776b6da2d5e",
   "type": "character",
-  "name": "Haze Bhattacharya",
+  "name": "Haze Kjellberg",
   "aliases": [
     "Kaz",
     "The Archivist"
@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "Kenwood Gate, near North Ave and Milwaukee",
-  "description": "Kasimir is slender the way old buildings are slender — not fragile, just built for a different era. He is fifty-two centimeters taller than average and moves with the habitual stoop of someone who has spent decades apologizing for their height in low-ceilinged evidence labs. His skin is a warm amber-brown, his hair white at the temples and worn in short locks threaded with copper wire — a fashion choice from his thirties he's never bothered to update. His eyes have patterned irises: geometric gold tessellation that he received as a fortieth-birthday gift to himself and that he occasionally forgets aren't natural when he looks in mirrors.\n\nHe is meticulous in the way that conceals other things. The evidence lab at Kenwood Gate is his kingdom, organized by a system only he fully understands, maintained with a devotion that borders on spiritual. He speaks slowly, precisely, and with a lecturer's tendency to answer simple questions with complete historical context. He is not unfriendly — he will offer you tea from his personal supply and remember your name the next time you visit — but his real warmth is reserved for data: for the story that physical evidence tells, for the satisfaction of a chain of custody without gaps. He has been quietly falsifying minor procedural timestamps for a Tessera internal affairs officer for eighteen months and has not let himself think clearly about why.",
+  "description": "Haze Kjellberg is slender the way old buildings are slender — not fragile, just built for a different era. He is fifty-two centimeters taller than average and moves with the habitual stoop of someone who has spent decades apologizing for their height in low-ceilinged evidence labs. His skin is a warm amber-brown, his hair white at the temples and worn in short locks threaded with copper wire — a fashion choice from his thirties he's never bothered to update. His eyes have patterned irises: geometric gold tessellation that he received as a fortieth-birthday gift to himself and that he occasionally forgets aren't natural when he looks in mirrors.\n\nHe is meticulous in the way that conceals other things. The evidence lab at Kenwood Gate is his kingdom, organized by a system only he fully understands, maintained with a devotion that borders on spiritual. He speaks slowly, precisely, and with a lecturer's tendency to answer simple questions with complete historical context. He is not unfriendly — he will offer you tea from his personal supply and remember your name the next time you visit — but his real warmth is reserved for data: for the story that physical evidence tells, for the satisfaction of a chain of custody without gaps. He has been quietly falsifying minor procedural timestamps for a Tessera internal affairs officer for eighteen months and has not let himself think clearly about why.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -189,7 +189,7 @@
     "Networker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenwood Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -254,40 +254,19 @@
   ],
   "related_entities": [
     "Kenwood Gate",
-    "Ironvein",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Big Rig",
+    "Ironvein",
     "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Big Rig",
     "Copper",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "SynapTech ReadRoom Social Cue Enhancer",
-    "Gold",
-    "The Milwaukee Core",
-    "Bogdan Achebe-Svanstrom",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Emeka Johansson-Orozco",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Kairos",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "ShieldTech CLA-3 'Cascade'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Archive",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy",
-    "Zheng-Dao Heavy Industries Tectonic Charge TC-5 'Fault Line'"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "South Asian and Southeast Asian dominant (77% combined), with significant Middle Eastern influence (9.8%), grounded Sub-Saharan African heritage (6.8%), and minor Hispanic/Latin American and East Asian ancestry. Features reflect this balanced Pan-Asian and Afro-Asian blend.",
+    "heritage": "Predominantly East Asian (41.4%) with significant Northern European (27.8%), South Asian (15.4%), and Hispanic/Latin American (15.4%) ancestry. Features reflect this diverse global blend: East Asian bone structure dominates facial proportions with characteristic high cheekbones and tapered jawline, complemented by Northern European fair undertones creating luminous skin, South Asian warmth deepening complexion richness, and Hispanic/Latin American breadth softening the lower face and adding subtle fullness to features.",
     "height_cm": 202,
     "weight_kg": 78,
     "build": "Slender and linear, built like aging infrastructure—no wasted mass, shoulders narrow and slightly rounded forward from decades in evidence labs. Lean musculature suggests minimal physical exertion beyond careful, precise hand work.",
@@ -295,8 +274,8 @@
     "hair_style": "Short locs, individually threaded with thin copper wire throughout",
     "hair_length": "Short",
     "eye_color": "Augmented with geometric gold tessellation pattern overlaid on warm brown irises",
-    "skin_tone": "Deep warm brown with golden undertones, reflecting South and Southeast Asian heritage with subtle warmth from Middle Eastern and Sub-Saharan ancestry. Even complexion across face and visible limbs.",
-    "complexion": "Meticulously groomed, no visible scarring or blemishing. Fine lines around eyes and mouth from decades of microscopic focus work and courtroom testimony. Clean-shaven or maintained with precise stubble. Expression rests in slight skepticism. Facial structure reflects South Asian and Southeast Asian bone structure with subtle broader nose bridge and defined cheekbones.",
+    "skin_tone": "Medium warm tan with balanced luminosity—East Asian and Northern European baseline creates even complexion, enriched by South Asian golden undertones and subtle Hispanic/Latin American depth that adds warmth without heaviness. Even complexion across face and visible limbs.",
+    "complexion": "Meticulously groomed, no visible scarring or blemishing. Fine lines around eyes and mouth from decades of microscopic focus work and courtroom testimony. Clean-shaven or maintained with precise stubble. Expression rests in slight skepticism. Facial structure reflects East Asian prominence (high cheekbones, slightly tapered jawline) softened by Northern European feature breadth, enriched by South Asian skin warmth, and grounded by Hispanic/Latin American fullness in lower face and jawline contours.",
     "distinguishing_marks": [
       "Geometric gold tessellation pattern across both irises—augmented cosmetic modification, visible at conversational distance",
       "Faint horizontal creases on forehead from chronic squinting during lab work",
@@ -306,17 +285,51 @@
     "posture_movement": "Habitual forward stoop from apologizing for height in low spaces. Movements are economical and deliberate—no wasted gesture. Hands move with practiced precision when handling objects. Speech is accompanied by minimal animation; he uses silence as emphasis. Walks with the measured pace of someone who has nowhere urgent to be and expects to arrive exactly on schedule.",
     "clothing_style": "Tessera compliance-tier professional: dark charcoal or navy functional slacks with reinforced pockets for evidence handling. Layered with a subdued olive or grey technical shirt beneath a knee-length lab coat (Tier 3 quality—durable synthetic, faint Tessera compliance badge embroidered at chest). Worn leather shoes, meticulously maintained. No visible jewelry except a thin copper bracelet matching his hair threading. Grooming suggests someone who respects the institutional aesthetic more than personal expression, but whose restraint is itself a choice."
   },
-  "image_prompt": "Haze Bhattacharya, tall South Asian and Southeast Asian man, 202cm with deep warm brown skin and golden undertones, short dark brown locs threaded with copper wire, white at temples. Geometric gold tessellation pattern augmented across warm brown irises. Slender linear build, forward stoop from lab work. Wearing charcoal functional slacks, olive technical shirt under knee-length grey Tier 3 lab coat with Tessera badge, worn leather shoes. Meticulously groomed, fine lines around eyes, expression skeptical. Hands moving with practiced precision. Standing in dimly-lit evidence processing lab with cool blue and amber accent lighting, cyberpunk 2226, hyper-detailed facial features showing Pan-Asian heritage, neural interface subtle in expression. Minimalist aesthetic, institutional restraint. --ar 2:3 --v 6",
+  "image_prompt": "Haze Kjellberg, 202cm tall lean forensic analyst, mixed East Asian, Northern European, South Asian, and Hispanic heritage with warm medium tan skin and high East Asian cheekbones softened by Northern European luminosity. Short dark brown locs threaded with copper wire, salt-and-pepper white at temples. Augmented eyes with geometric gold tessellation pattern overlaid on warm brown irises. Fine lines around eyes from decades of microscopic lab work. Standing in slight forward stoop from height habit, wearing dark charcoal slacks and subdued olive technical shirt beneath knee-length Tessera-badged lab coat. Black haptic feedback gloves with silvered contact points. Worn leather shoes. Copper bracelet matching hair threading. Expression of slight skepticism, economical posture, meticulous grooming. GLMZ forensics lab setting, cool LED accent lighting catching gold eye patterns and copper accents, institutional aesthetic, precise and deliberate presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.8,
-    "Southeast Asian": 38.2,
-    "Middle Eastern": 9.8,
-    "Sub-Saharan African": 6.8,
-    "Hispanic/Latin American": 4.5,
-    "East Asian": 1.9
+    "East Asian": 41.4,
+    "Northern European": 27.8,
+    "South Asian": 15.4,
+    "Hispanic/Latin American": 15.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Chinese": {
+        "Mandarin Northern": 37.7,
+        "Fujianese": 3.7
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 20
+      },
+      "British Isles": {
+        "English": 1.1,
+        "Scottish": 0.2
+      },
+      "Scandinavian": {
+        "Danish": 6.5
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 8.2
+      },
+      "Nepali": {
+        "Nepali": 5.4
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 15.4
+      }
+    }
+  }
 }

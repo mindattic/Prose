@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c87e22b18178fc1d88894d",
   "type": "character",
-  "name": "Bjorn Strömqvist-Rakhimov-Mansour",
+  "name": "Farid Subramaniam-Cissé-Mansour",
   "aliases": [
     "Sera",
     "The Knife"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Mexicantown Libre, Calle Viva Canteen (a basement-level 24-hour working kitchen serving transit workers, night-shift laborers, and anyone who needs feeding at 03:00), near Western and Chicago Ave",
-  "description": "Serafina is compact and fast, the kind of person whose stillness feels like loaded potential — she is always either moving at controlled speed or completely stopped, no middle register. Her mother was Igbo-Swedish, her father Icelandic-Nigerian, and she has the particular combination of features that makes strangers attempt to place her and fail satisfyingly. She keeps her natural hair loose when she is off the clock and under a high, tight wrap when she is cooking; a heat-resistant polymer coating on her palms lets her handle scalding equipment bare-handed, which she deploys as casual intimidation without acknowledging she is doing it.\n\nShe is the night's architecture — everything that comes out of the Calle Viva between midnight and 07:00 is hers, from the masa to the ofe onugbu she puts on as a nightly special that has become a neighborhood institution. She runs her kitchen like a small military state: loud, direct, no cruelty, absolute standards. She has fired people for plating sloppily and hired people she found crying in the alley behind the dumpsters. She has opinions about everything and delivers them without meanness but also without softening, which some people call rude and she calls efficient.",
+  "description": "Farid Subramaniam-Cissé-Mansour is compact and fast, the kind of person whose stillness feels like loaded potential — she is always either moving at controlled speed or completely stopped, no middle register. Her mother was Igbo-Swedish, her father Icelandic-Nigerian, and she has the particular combination of features that makes strangers attempt to place her and fail satisfyingly. She keeps her natural hair loose when she is off the clock and under a high, tight wrap when she is cooking; a heat-resistant polymer coating on her palms lets her handle scalding equipment bare-handed, which she deploys as casual intimidation without acknowledging she is doing it.\n\nShe is the night's architecture — everything that comes out of the Calle Viva between midnight and 07:00 is hers, from the masa to the ofe onugbu she puts on as a nightly special that has become a neighborhood institution. She runs her kitchen like a small military state: loud, direct, no cruelty, absolute standards. She has fired people for plating sloppily and hired people she found crying in the alley behind the dumpsters. She has opinions about everything and delivers them without meanness but also without softening, which some people call rude and she calls efficient.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -178,7 +178,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,43 +233,26 @@
     "Switchblade Alley",
     "Zheng-dao Bioelectric",
     "Timekeeper",
+    "Midnight Gyros",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "The Gradient Compact",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Handed",
     "Chicago",
-    "Ablonite-KR",
-    "Alper Lebedev-Tutu",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
     "Arcturus KS-7 'Nursery'",
-    "Breck Tannen",
-    "Djeneba Orlov-Obeng",
-    "Ferrogate Transit",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "TESSERA TK-4 'Hellhound'",
-    "Tessera Adaptive Platform TAP-5 'Chameleon'",
-    "Tessera Corponation",
-    "The Clock",
-    "The Portico",
-    "The Pure Hand",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'"
+    "Handed",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Central Asian (27.4%) with Northern European (22.6%), South Asian (16.2%), Middle Eastern (15.8%), and Hispanic/Latin American (11.4%) ancestry, creating a striking polychromatic phenotype. Her features reflect the Ubiquitous Diaspora: high, prominent cheekbones suggesting Turkic and Central Asian ancestry, combined with a softer jawline and broader nose bridge from South Asian genetics, tempered by Northern European fair-skinned ancestry that manifests in her complexion's luminosity rather than pallor.",
+    "heritage": "South Asian (54.2%) with Middle Eastern (27.5%) and Sub-Saharan African (18.3%) ancestry, creating a striking polychromatic phenotype characteristic of the Ubiquitous Diaspora. Her features reflect this rich genetic blend: South Asian ancestry dominates in her prominent, high cheekbones and deep orbital structure; Middle Eastern heritage contributes angular definition to her jawline and nose bridge; Sub-Saharan African ancestry enriches her facial architecture with full, expressive lips and warm dimensional planes across her face. The synthesis creates a uniquely multifaceted appearance.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and densely muscled, with the economical frame of someone who moves through space with purpose. Shoulders broad for her height, core visibly conditioned from years of standing kitchen shifts. No wasted volume.",
+    "skin_tone": "Deep warm brown with rich golden-bronze undertones—the result of South Asian melanin expression layered with Sub-Saharan African warmth, further deepened by Middle Eastern heritage. Her complexion has a luminescent quality in certain light, appearing to shift between deep honey and subtle bronze depending on angle and illumination.",
+    "complexion": "Clear, unlined despite her age, with a faint scar tissue pattern across her knuckles from decades of kitchen work before the polymer coating. Her expression defaults to concentration; she does not smile easily but when she does it reaches her eyes. Facial structure reflects South Asian prominence in cheekbone height and orbital depth, enriched by Middle Eastern angularity in jawline definition, with Sub-Saharan African fullness evident in her lips and the warm dimensionality of her facial planes.",
+    "eye_color": "Warm brown with amber flecks near the pupil",
     "hair_color": "Deep brown with natural bronze undertones",
     "hair_style": "Loose waves when off-duty; wrapped tight in a high, heat-resistant cloth during shifts",
     "hair_length": "Long (mid-back when unwrapped)",
-    "eye_color": "Warm brown with amber flecks near the pupil",
-    "skin_tone": "Warm olive-golden midtone—the layered result of Central Asian and South Asian melanin expressing over Northern European undertones. Her complexion has an almost luminescent quality in certain light, appearing to shift between warm honey and subtle green undertones depending on angle and illumination.",
-    "complexion": "Clear, unlined despite her age, with a faint scar tissue pattern across her knuckles from decades of kitchen work before the polymer coating. Her expression defaults to concentration; she does not smile easily but when she does it reaches her eyes. Facial structure shows Central Asian prominence in her cheekbones and orbital depth, softened by South Asian fullness in her cheeks and the bridge of her nose; Northern European influence visible in the slight aquilinity of her profile.",
     "distinguishing_marks": [
       "Fine network of old burn scars across the backs of both hands, largely faded but still visible under certain light — pre-augmentation damage",
       "A small, precise tattoo on her inner right wrist: a single Igbo nsibidi symbol for 'strength in silence,' done in black ink"
@@ -278,17 +261,43 @@
     "posture_movement": "Economical and deliberate. She does not gesture unnecessarily. When stationary, she appears coiled — weight balanced, ready to move. When cooking, her movements are efficient and fast but never rushed; there is no wasted motion. She has a habit of holding her hands slightly out from her body, palms forward, a gesture that reads as both openness and controlled power.",
     "clothing_style": "During shifts: practical Tier 3-4 restaurant wear — dark, loose-fit cargo pants with deep pockets, reinforced apron in muted gray-green, steel-toed slip-on boots (Danner, well-maintained). White t-shirt or thin long-sleeve under the apron depending on kitchen temperature. No jewelry during work. Off-duty: simple layered clothing, well-fitted but not fashionable — dark jeans, oversized sweaters in earth tones, a long canvas coat that has seen years of use. Favors natural fabrics and neutral colors. Carries a small shoulder bag with her kitchen knife roll."
   },
-  "image_prompt": "A compact, densely muscled woman of mixed Central Asian, Northern European, South Asian, and Middle Eastern descent, standing 162cm tall, posture economical and coiled. Warm olive-golden skin with subtle undertone shifts in kitchen light. High Central Asian cheekbones softened by fuller South Asian features; warm brown eyes with amber flecks. Deep brown hair with bronze undertones, currently wrapped tight in heat-resistant cloth during kitchen shift. Both hands show subtle iridescent polymer coating with faint opalescent sheen catching under warm overhead lights; old burn scars faintly visible on knuckles. Small black nsibidi tattoo on inner right wrist. Wearing dark cargo pants, reinforced gray-green apron, white long-sleeve under apron, steel-toed boots. Hands held slightly out from body, palms forward, expression concentrated. Professional kitchen environment, warm overhead lighting casting her opalescent hand coating into sharp relief, cyberpunk 2226 restaurant setting. --ar 2:3 --v 6",
+  "image_prompt": "Farid Subramaniam-Cissé-Mansour, 162cm tall, compact muscular build, deep warm golden-brown skin with luminescent bronze undertones blending South Asian, Middle Eastern, and Sub-Saharan African heritage. High prominent cheekbones with angular jawline definition, full expressive lips, warm dimensional facial planes. Warm brown eyes with amber flecks. Long deep brown hair with bronze undertones in loose waves, pulled back with heat-resistant cloth. Fine faded burn scars visible on knuckles, polymer-coated palms with subtle iridescent sheen. Concentrated expression, economical posture. Wearing dark cargo pants, muted gray-green reinforced apron, white t-shirt, steel-toed boots. Standing in a modern GLMZ restaurant kitchen under warm amber and cool blue task lighting, hands positioned at ready, controlled power in her stance. Photorealistic, cinematic, professional kitchen environment, gritty neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 27.4,
-    "Northern European": 22.6,
-    "South Asian": 16.2,
-    "Middle Eastern": 15.8,
-    "Hispanic/Latin American": 11.4,
-    "Eastern European": 6.6
+    "South Asian": 54.2,
+    "Middle Eastern": 27.5,
+    "Sub-Saharan African": 18.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 54.2
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 3.2,
+        "Yemeni": 2.9
+      },
+      "Arab Levantine": {
+        "Syrian": 6.2
+      },
+      "Persian": {
+        "Tajik Persian": 10.2,
+        "Iranian": 5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 10.8
+      },
+      "Central African": {
+        "Cameroonian": 6,
+        "Congolese": 1.5
+      }
+    }
+  }
 }

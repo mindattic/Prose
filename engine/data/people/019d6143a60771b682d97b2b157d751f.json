@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60771b682d97b2b157d751f",
   "type": "character",
-  "name": "Wren Johansson",
+  "name": "Wren Sokolov",
   "aliases": [
     "Slate",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
-  "description": "Eshe Zhukov-Wiredu is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Wren Sokolov is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.32,
@@ -263,7 +263,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Burnside Corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,42 +276,27 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
     "Burnside Pocket",
+    "GLMZ",
+    "Circuit",
     "Slagworks Industrial",
-    "Ambassador Silk",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Breck Tannen",
-    "Crucible RE-2 'Receptionist'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Glenville Sound",
-    "Lazarus LX-2 'Lab Rat'",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Praevex",
-    "Sorin Ekwensi-Balasanyan",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "TERMINUS",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Quiet Room",
-    "Yusra Ntambwe-Cakić"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Pacific Islander ancestry, complemented by South Asian, Middle Eastern, Northern European, and Sub-Saharan African heritage — a striking genetic mosaic reflecting the Ubiquitous Diaspora.",
+    "heritage": "Eastern European foundation (60.5%) with significant South Asian (19.0%), North African (14.0%), and Northern European (6.5%) ancestry — a striking genetic mosaic reflecting the Ubiquitous Diaspora. Slavic bone structure tempered by warmer South Asian and North African tones, creating an unexpected and compelling blend. High cheekbones and narrow jaw from Eastern European lineage, softened by the broader nasal bridge and warm undertones of South Asian heritage, while North African ancestry deepens his complexion with subtle golden and amber hues that catch light.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with visible musculature — the build of someone who maintains fitness out of necessity rather than vanity. Long-limbed, minimal body fat, shoulders slightly narrower than hips. There's a coiled tension to his frame, like a spring compressed.",
     "hair_color": "Dark brown, almost black",
     "hair_style": "Short, practical cut — no styling product, maintained for function. Slight curl at the temples.",
     "hair_length": "Short",
-    "eye_color": "Deep brown with warm undertones",
-    "skin_tone": "Warm medium-tan with subtle golden and olive undertones — the harmonious blend of East Asian, Pacific Islander, and South Asian ancestry creating a complexion that catches light with natural warmth.",
-    "complexion": "Angular face with high, pronounced cheekbones characteristic of East Asian heritage, a narrow jaw that tapers sharply, and a slightly broader nasal bridge reflecting his diverse ancestry. His face is striking but unrefined — skin shows minor scarring along the left temple (old wound, poorly healed), slight darkness under the eyes from chronic sleep deficit. Facial structure reflects the blend of his heritage groups, with subtle features honoring East Asian, Pacific Islander, and South Asian ancestry. Facial hair is kept minimal, usually a day or two of stubble rather than fully shaved or grown.",
+    "eye_color": "Deep brown with warm golden undertones",
+    "skin_tone": "Medium tan with olive, amber, and golden undertones — the result of Eastern European base enriched by South Asian warmth and North African depth, creating a complexion that reads as both Slavic and subtly sun-marked, with a slightly luminous quality in warm light.",
+    "complexion": "Angular face with high, pronounced cheekbones characteristic of Eastern European heritage, a narrow jaw that tapers sharply, and a slightly broader nasal bridge reflecting South Asian ancestry. His face is striking but unrefined — skin shows minor scarring along the left temple (old wound, poorly healed), slight darkness under the eyes from chronic sleep deficit. The warmth in his undertones speaks to North African heritage mixing with Slavic bone structure, creating subtle depth across his cheeks and temples. Facial hair is kept minimal, usually a day or two of stubble rather than fully shaved or grown.",
     "distinguishing_marks": [
       "Thin white scar running from left temple toward the hairline, approximately 3cm, partially obscured by hair growth",
       "Faint chemical burn scars on the right side of his neck (approximately 2cm x 1cm) — pale pink, slightly raised, from a volatile extraction gone wrong",
@@ -321,17 +306,57 @@
     "posture_movement": "He moves with economical precision — no wasted motion. His posture is slightly forward-leaning, as if perpetually tracking something. His head tracks slowly, methodically, eyes registering details. When he sits, he positions himself with clear sight lines to exits. There's a stillness to him when focused, an absence of fidgeting or nervous energy. When not focused, he exhibits minor tremors in his hands — either from stimulant use or the edge that chronic pain-dampening creates.",
     "clothing_style": "Tier 4 pragmatist. Dark colors — charcoal, black, deep gray. Worn tactical cargo pants with multiple pockets and reinforced seams, synthetic blend that sheds dirt and dries fast. Layered tops: usually a dark long-sleeve compression shirt under a heavier jacket (synthetic leather or ballistic nylon, no visible branding). Boots are military-grade, scuffed, laces double-knotted. A worn canvas messenger bag (faded black, multiple repair patches) carries his essentials. No jewelry except a faded paracord bracelet on his left wrist. His jacket has several deep pockets and one internal pocket where he keeps dead-drop messages. Everything is functional, nothing is fashionable."
   },
-  "image_prompt": "Wren Johansson, 178cm lean angular cyberpunk operative in 2226 Great Lakes Metropolitan Zone, warm medium-tan skin with golden olive undertones blending East Asian and Pacific Islander heritage, sharp high cheekbones, narrow tapering jaw, deep brown eyes, dark brown almost black short practical hair with slight temple curls, faint scar left temple partially obscured by hair, pale pink chemical burn scars on right neck, chrome metallic nasal passages reflecting light, day-old stubble, minor hand tremors. Wearing dark charcoal tactical cargo pants with reinforced seams, dark long-sleeve compression shirt layered under worn ballistic nylon jacket, military-grade scuffed boots with double-knotted laces, faded black canvas messenger bag with repair patches, faded paracord bracelet on left wrist. Small black crosshair tattoo on inner left wrist. Economical precise posture, slightly forward-leaning, tracking details methodically. Standing in neon-lit urban corner with rain-slicked pavement, moody cyberpunk atmosphere, cool blue and amber lighting, industrial backdrop, coiled tension in frame, absence of nervous energy, professional operative ready for extraction. cinematic lighting, gritty realism, cyberpunk 2200s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Wren Sokolov, lean 178cm neo-noir operative, medium tan skin with olive and golden undertones blending Eastern European, South Asian, and North African heritage. Angular face with high Slavic cheekbones, narrow tapering jaw, broader nasal bridge, deep brown eyes with warm undertones. Dark brown hair cut short with slight curl at temples. Faint white scar on left temple partially obscured by hair, pale pink chemical burn scars on right neck side, barely visible chrome shimmer around nostrils and bridge from nasal passage augmentation. Day-old stubble. Wearing dark tactical cargo pants and long-sleeve compression shirt layered under synthetic leather jacket, military-grade boots, worn canvas messenger bag. Paracord bracelet on left wrist, small black crosshair tattoo on inner wrist. Coiled, economical posture with forward lean, methodical head movement, slight hand tremors at rest. GLMZ Great Lakes Metropolitan Zone, neon-lit industrial setting with rain-slicked concrete, moody blue and amber lighting catching chrome augmentations, introspective and dangerous atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 36.9,
-    "Pacific Islander": 25.5,
-    "South Asian": 12.1,
-    "Middle Eastern": 10.3,
-    "Northern European": 8.5,
-    "Sub-Saharan African": 6.7
+    "Eastern European": 60.5,
+    "South Asian": 19,
+    "North African": 14,
+    "Northern European": 6.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 36.8
+      },
+      "Slavic East": {
+        "Belarusian": 4.6,
+        "Russian": 16.3
+      },
+      "Slavic West": {
+        "Sorbian": 2.8
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 19
+      }
+    },
+    "North African": {
+      "Amazigh": {
+        "Tuareg": 3.3,
+        "Berber": 1.3
+      },
+      "Maghreb": {
+        "Mauritanian": 7.8
+      },
+      "Nile Valley": {
+        "Egyptian": 1.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 3.9
+      },
+      "Scandinavian": {
+        "Swedish": 0.4
+      },
+      "British Isles": {
+        "Welsh": 2.2
+      }
+    }
+  }
 }

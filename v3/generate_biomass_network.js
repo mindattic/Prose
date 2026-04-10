@@ -42,14 +42,14 @@ A trader named Kolawole who runs routes along the Southern Corridor described th
     related_entities: [
       "GLMZ",
       "Lazarus Corporation",
-      "Meridian 88",
+      "GLMZ",
       "Ridgepost",
       "Huntsville",
       "Southern Corridor"
     ],
     credibility: "verified",
     story_hooks: [
-      "A tissue sample arrives at a Meridian 88 laboratory \u2014 DNA analysis confirms the tissue is human",
+      "A tissue sample arrives at a GLMZ laboratory \u2014 DNA analysis confirms the tissue is human",
       "A second sample appears in the lab's refrigeration unit unrequested \u2014 no record of delivery, no chain of custody",
       "The Biomass has changed direction. It is growing north now. Toward the GLMZ. At current rate of expansion: seven years"
     ],

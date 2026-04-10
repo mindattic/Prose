@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ce7066b402a329dc47a9c0",
   "type": "character",
-  "name": "Aero Bergqvist",
+  "name": "Aero Kimura",
   "aliases": [
     "Bris",
     "The Good Doctor"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Garret, in a well-appointed studio apartment that doubles as a test environment, near Armitage and Milwaukee",
-  "description": "Briseis is the kind of person who is precisely as beautiful as they need to be for the room they are in — they adjust presentation with the unconscious fluency of a skilled actor. In their studio, meeting with clients, they are polished: patterned irises (shifting mandala designs in amber and grey, a subtle demonstration of the geneware they can recommend), hair that changes color with their neural state through a sophisticated mod linked to their limbic system, clothes that cost what a Tier 1 resident earns in six months. In private, they are undone — hair colorless and still, in soft worn clothes, sitting on the floor with their legs folded, talking to their terminal.\n\nThey design VR experiences that are technically classified as entertainment but function closer to therapy, propaganda, or philosophical confrontation depending on the client. Their best-known commercial work is a series called 'Meridian Beneath Meridian' — premium immersive experiences that take wealthy clients into accurate, detailed reconstructions of the city's lower tiers, designed to produce empathy. They are privately scornful of almost all their clients and genuinely uncertain whether 'empathy tourism' does any good or merely inoculates people against discomfort by letting them feel it in a controlled environment. They are contracted to Helix Biosystems for two projects per year, which funds everything else. They are good at their work in a way that makes them faintly miserable.",
+  "description": "Aero Kimura is the kind of person who is precisely as beautiful as they need to be for the room they are in — they adjust presentation with the unconscious fluency of a skilled actor. In their studio, meeting with clients, they are polished: patterned irises (shifting mandala designs in amber and grey, a subtle demonstration of the geneware they can recommend), hair that changes color with their neural state through a sophisticated mod linked to their limbic system, clothes that cost what a Tier 1 resident earns in six months. In private, they are undone — hair colorless and still, in soft worn clothes, sitting on the floor with their legs folded, talking to their terminal.\n\nThey design VR experiences that are technically classified as entertainment but function closer to therapy, propaganda, or philosophical confrontation depending on the client. Their best-known commercial work is a series called 'Meridian Beneath Meridian' — premium immersive experiences that take wealthy clients into accurate, detailed reconstructions of the city's lower tiers, designed to produce empathy. They are privately scornful of almost all their clients and genuinely uncertain whether 'empathy tourism' does any good or merely inoculates people against discomfort by letting them feel it in a controlled environment. They are contracted to Helix Biosystems for two projects per year, which funds everything else. They are good at their work in a way that makes them faintly miserable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -157,7 +157,7 @@
     "Beauty Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Garret",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -173,36 +173,13 @@
     "Helix Biosystems",
     "The Garret",
     "The Quiet Room",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Chimera-Null",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "The Milwaukee Core",
-    "Alper Inoue-Aidoo",
-    "Altan Tanaka-Frimpong",
-    "Arcturus Exo-Runner Frame",
-    "Deepwell Station",
-    "Ekundayo Vásárhelyi-Nkemdirim",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Lacuna Genomics",
-    "MERIDIAN",
-    "Narrowcast",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Pirjo Asante-Ulukhan",
-    "Pullman Works",
-    "Slagworks Industrial",
-    "Sovann Quispe-Ndiaye",
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Pure Hand",
-    "The Question",
-    "Tshiamo Vukić-Arellano",
-    "Variable Impedance Rifle VIR-9 'Switchback'",
-    "Yannick Tofauti-Szarvásy"
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "Neural Palate"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Northern European dominant (65.6%) with significant East Asian (12.2%), Hispanic/Latin American (8.9%), and minor South Asian (6.2%), Pacific Islander (5.6%), and Sub-Saharan African (1.5%) ancestry. A genuinely cosmopolitan genetic blend reflected in refined, high-cheekbone facial structure with subtle epicanthic fold suggestion, warm undertone depth, and the kind of features that read as distinctly 22nd-century hybrid rather than regionally bounded.",
+    "heritage": "Triracial cosmopolitan blend: South Asian dominant (51.1%) with substantial East Asian (25.1%) and Sub-Saharan African (23.8%) ancestry. Features reflect genuine genetic fusion — high, angular cheekbones from South and East Asian ancestry, deepened and warmed by Sub-Saharan undertones. The facial structure reads as authentically 22nd-century hybrid: refined bone structure with warm, luminous depth that transcends regional categorization.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Lean and angular, with the deliberate posture of someone who has trained themselves to occupy space precisely. Long-limbed, minimal subcutaneous fat, visible tendon definition in forearms and neck.",
@@ -210,8 +187,8 @@
     "hair_style": "Shoulder-length, often pulled back in a loose knot or left to fall asymmetrically. The color-shift mod requires a certain length to be fully expressive; they would never cut it short.",
     "hair_length": "Medium",
     "eye_color": "Augmented: shifting mandala patterns in amber and grey, intricate and almost hypnotic. The patterns move subtly, appearing to rotate when they focus on something. Pupil dilation remains normal.",
-    "skin_tone": "Warm-toned medium complexion with the blended luminosity of mixed Northern European and East Asian heritage, deepened by South Asian and Pacific Islander undertones. Sun-exposed areas show subtle freckling across cheekbones and nose bridge. The overall effect is polished, with a natural glow that suggests either excellent skincare or subtle cosmetic bioware.",
-    "complexion": "Fine-featured with prominent, slightly angular cheekbones characteristic of East Asian ancestry blended with Northern European bone structure. Narrow jaw tapering to a pointed chin. Skin is consistently well-maintained but shows the subtle exhaustion of irregular sleep — faint shadows under the eyes that no amount of retinoid will fully erase. Their expression rests in a state of mild irony, eyebrows slightly arched. They rarely show full smiles; instead, they manage controlled expressions that suggest private amusement or calculated warmth.",
+    "skin_tone": "Medium to deep complexion with warm undertones. South Asian luminosity blended with East Asian refinement and Sub-Saharan depth creates a rich, polished appearance. Sun-exposed areas show subtle freckling across cheekbones and nose bridge. Natural glow suggests either excellent skincare or subtle cosmetic bioware.",
+    "complexion": "Fine-featured with prominent, slightly angular cheekbones characteristic of South Asian and East Asian ancestry, with Sub-Saharan warmth deepening facial contours and enriching overall tone. Narrow jaw tapering to a pointed chin. Skin is consistently well-maintained but shows subtle exhaustion of irregular sleep — faint shadows under the eyes that no amount of retinoid will fully erase. Expression rests in mild irony, eyebrows slightly arched. Rarely shows full smiles; manages controlled expressions suggesting private amusement or calculated warmth.",
     "distinguishing_marks": [
       "Faint lunar-shaped scar on the left inner wrist, approximately 2cm long, from an adolescent accident — barely visible but noticeable if they wear their hands bare.",
       "A series of small constellation tattoos running up the inside of their left bicep (Orion, Cassiopeia, Andromeda) in fine black ink, each roughly 3-4cm. Applied over years, forming a loose narrative of personal mythology.",
@@ -221,17 +198,35 @@
     "posture_movement": "Economical and precise. They move with the self-consciousness of someone who has internalized how they appear, each gesture calibrated. When alone, the careful architecture drops slightly — they slump, sprawl on floors, let their shoulders round. In professional contexts, they are composed: upright, hands visible and purposeful, eye contact maintained with the precision of someone managing a performance. They have a habit of touching their own forearms absently, fingers finding the constellation tattoos.",
     "clothing_style": "Context-dependent. In client meetings: high-end corpo-tier pieces (tailored neural-responsive fabrics from designers like Metaxen or Threadline, in cool neutrals and subtle iridescent finishes that coordinate with their hair shifts). Jewelry is minimal but expensive — a thin silver bracelet with an embedded neural interface diagnostic chip, perhaps a ring with an opal or moonstone that catches light. In private: soft, worn pieces in greys and blacks, clothes that have been washed hundreds of times until they feel like skin. Loose linen shirts, old thermal base layers, anything that prioritizes comfort over presentation. Footwear varies: corporate context means sleek, precision-engineered boots or minimalist shoes; at home and in The Garret, they go barefoot or wear soft, shapeless slippers."
   },
-  "image_prompt": "Aero Bergqvist, 172cm lean cyberpunk operative in 2226, medium-length ash-grey hair with subtle iridescent color-shift bioware, pale-to-warm medium complexion blending Northern European, East Asian, and South Asian heritage with refined high cheekbones and angular features. Augmented eyes with intricate shifting mandala patterns in amber and grey. Faint shadows under eyes suggesting sleep debt. Wearing sleek neural-responsive tailored clothing in cool greys and iridescent finishes, high-end haptic feedback gloves with silver nodes, minimalist jewelry including silver bracelet with diagnostic chip. Fine constellation tattoos visible on left bicep (Orion, Cassiopeia, Andromeda), lunar scar barely visible on inner left wrist. Precise, economical posture. Mild ironic expression, controlled warmth. Cyberpunk corporate environment with cool neon undertones, soft directional lighting catching the iridescence of hair and clothing, half-shadow on face emphasizing the striking mandala iris augmentation. Sitting at precision workspace, fingers touching forearms absently. Cinematic, high-fashion corpo-tech aesthetic, moody and composed. --ar 2:3 --v 6",
+  "image_prompt": "Aero Kimura, 2226 neo-noir — androgynous figure of mixed South Asian, East Asian, and Sub-Saharan heritage, 172cm lean frame, rich warm-toned medium-deep complexion with refined high cheekbones and angular features. Shoulder-length ash-grey hair with iridescent shift-quality, asymmetrically draped. Striking augmented eyes with rotating amber-grey mandala patterns, hypnotic and intricate. Fine black constellation tattoos (Orion, Cassiopeia, Andromeda) visible on inner left bicep. Lunar scar on left inner wrist. Wearing sleek black haptic feedback gloves with silver nodes, minimal silver neural-interface bracelet. Tailored neural-responsive fabric in cool neutrals with iridescent finish coordinate with hair shifts. Composed, calibrated posture with precise hand placement. Faint exhaustion shadows under eyes, expression of controlled irony. Overhead technical lighting casting subtle shadows at temples where neural implant integrated. Cool-toned neo-noir studio setting, bokeh circuit board elements in background, neon accent lighting in cool amber-grey spectrum. GLMZ 2200s aesthetic, high-end corpo sensibility. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 65.6,
-    "East Asian": 12.2,
-    "Hispanic/Latin American": 8.9,
-    "South Asian": 6.2,
-    "Pacific Islander": 5.6,
-    "Sub-Saharan African": 1.5
+    "South Asian": 51.1,
+    "East Asian": 25.1,
+    "Sub-Saharan African": 23.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 51.1
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 21.3
+      },
+      "Korean": {
+        "Korean": 3.8
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Botswanan": 11.4,
+        "Zimbabwean": 12.4
+      }
+    }
+  }
 }

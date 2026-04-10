@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6707429bb7b311ac410b337",
   "type": "character",
-  "name": "Echo Kristjánsson-Kariuki",
+  "name": "Echo Kettani-Erikstad",
   "aliases": [
     "Umbra",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Wacker and State",
-  "description": "Nurlan Kozlov-Asamoah is average height but with a presence that fills more space than the body accounts for. At 38, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Nurlan Kozlov-Asamoah plans to keep it that way. She works as a sniper out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nNurlan Kozlov-Asamoah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Echo Kettani-Erikstad is average height but with a presence that fills more space than the body accounts for. At 38, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Echo Kettani-Erikstad plans to keep it that way. She works as a sniper out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEcho Kettani-Erikstad is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.21,
@@ -262,7 +262,7 @@
     "Analyst": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,40 +277,22 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Nearfield",
+    "Harbor Fish Shack",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Arcturus KS-11 'Coffin Nail'",
-    "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
-    "Crucible RE-2 'Receptionist'",
-    "Focadrin",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Irontide Tidal Energy",
-    "Mika Sorel",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Old Harbor",
-    "Prophet",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Vantablack VS-3 'Skin Job'",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African with East Asian and Hispanic/Latin American ancestry, creating a richly complex phenotype. Strong African heritage dominates her bone structure and coloring, with subtle East Asian features visible in her eye shape and cheekbone architecture, and hints of Latin American warmth in her skin undertones.",
+    "heritage": "Complex diaspora blend: Eastern European (39.8%) and Northern European (31.0%) provide strong Slavic bone structure and cool undertones, while North African ancestry (28.8%) adds warmth, subtle Mediterranean features, and amber depth to the complexion. The combination creates a striking cool-toned base with underlying golden warmth visible along cheekbones and jawline in natural light.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and efficient — muscle distributed for endurance rather than bulk. Shoulders slightly asymmetrical from years of weapon handling and scope work. Core tension visible even at rest.",
     "hair_color": "Dark brown, streaked with premature silver at temples",
     "hair_style": "Pulled back in a tight, functional braid. Practical. No styling concessions.",
     "hair_length": "Medium",
-    "eye_color": "Amber-brown, with faint golden reticle pattern visible in right iris — military-grade targeting overlay, passive mode",
-    "skin_tone": "Deep brown with warm undertones, weathered grey from years of poor sleep and exposure into an almost ashen patina. The natural richness of her complexion dulled by fatigue and augmentation strain.",
-    "complexion": "High, prominent cheekbones with strong African architecture softened slightly by East Asian eye fold and structure. Angular jaw. Sharp facial planes. Minimal grooming beyond maintenance — no cosmetics, one or two thin scars on her left cheekbone. Expression defaulting to neutral. Eyes track movement without turning her head.",
+    "eye_color": "Amber-brown with faint golden reticle pattern visible in right iris — military-grade targeting overlay, passive mode",
+    "skin_tone": "Medium with cool undertones and golden undertone warmth — the interplay of Eastern European pallor and North African depth creating an ashen-tan base, weathered by years of poor sleep and augmentation strain. Cheekbones and jawline show warmer amber cast in natural light.",
+    "complexion": "High, prominent cheekbones with Slavic-Mediterranean architecture — broad and angular with subtle North African warmth beneath cool surface. Strong jaw typical of Eastern European heritage blended with slight refinement from North African features. Sharp facial planes, well-spaced Northern European eye set. Eyes track movement without turning her head. Minimal grooming beyond maintenance — no cosmetics, one or two thin scars on her left cheekbone. Expression defaulting to neutral.",
     "distinguishing_marks": [
       "Surgical scar along right collarbone, thin and old, suggesting early augmentation work",
       "Burn mark on inside of left wrist — shaped like grip, possibly from weapon discharge or training accident",
@@ -320,14 +302,44 @@
     "posture_movement": "Economical. Every gesture calculated to minimize energy waste. Sits with spine against solid surfaces. When she moves, the spinal reflex boosters create a micro-lag stutter in her reflexes that trained eyes might notice — the implants firing faster than her body's proprioception can follow. Hands stay close to her body. Breathing is measured, deliberate. Does not startle easily because her nervous system is engineered not to.",
     "clothing_style": "Tier 3-4 functional pragmatism — reinforced ballistic weave jacket in matte black, no logos or affiliations visible. Under-layer compression shirt. Cargo pants with custom-fitted magazine pouches she's worn smooth with use. Steel-toed boots, laced tight. A long overcoat in charcoal grey, modified with internal weapon racks — moves with her like a second skin. Nothing new. Nothing that draws attention. Everything selected for what it does, not what it says."
   },
-  "image_prompt": "Echo Kristjánsson-Kariuki, 168cm lean operative with deep brown skin weathered to ashen grey, prominent African cheekbones with subtle East Asian architecture, tight functional braid streaked silver. Right iris glows with faint golden targeting reticle. Brushed steel spinal pain editor visible at nape, LED pulse indicator. Matte black ballistic jacket, charcoal grey overcoat with internal weapon racks, cargo pants, steel-toed boots. Thin scar on left cheekbone, crosshair tattoo on right inner forearm, burn mark on left wrist. Economical posture, hands close to body, spine against solid surface. Cyberpunk 2226, dim neon-blue and amber lighting, tactical urban environment, neutral expression, eyes tracking without head movement, cybernetic soldier aesthetic, hyper-detailed face, moody cinematic --ar 2:3 --v 6",
+  "image_prompt": "Echo Kettani-Erikstad, 168cm lean-muscular neo-noir operative, medium-length dark brown hair with silver temples pulled tight in functional braid. Medium skin tone with cool undertones and golden warmth visible on cheekbones, Slavic-Mediterranean facial structure, prominent sharp cheekbones, strong jaw. Amber-brown eyes with faint golden targeting reticle in right iris. Thin scars on left cheekbone, surgical scar on right collarbone, burn mark on left inner wrist, crosshair tattoo on right forearm. Brushed steel neural implant visible at base of skull with faint LED pulse. Matte black ballistic weave jacket, compression under-layer, worn cargo pants with smooth magazine pouches, steel-toed boots. Long charcoal grey overcoat with integrated weapon racks. Economical posture, measured breathing, sitting against solid surface. Cool GLMZ aesthetic, GLMZ urban setting, neon and ambient lighting catching her implant and eye reticle, moody and calculated presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 82.4,
-    "East Asian": 11.7,
-    "Hispanic/Latin American": 5.9
+    "Eastern European": 39.8,
+    "Northern European": 31,
+    "North African": 28.8,
+    "Hispanic/Latin American": 0.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Romanian": 11.2,
+        "Hungarian": 28.6
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "Dutch": 31
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 16.1
+      },
+      "Amazigh": {
+        "Berber": 12.7
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 0.2
+      },
+      "Central American": {
+        "Honduran": 0.2
+      }
+    }
+  }
 }

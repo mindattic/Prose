@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6397d8785776859b6c5214a",
   "type": "character",
-  "name": "Aero Waboose-Madrigal",
+  "name": "Aero Mohammadi-Deshpande",
   "aliases": [
     "Jed",
     "Long-Arm"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Kessler Interchange, GLMZ, near Milwaukee and North Ave",
-  "description": "Jedidiah is a large, unhurried man — Samoan-Siberian ancestry visible in his height, his round broad face, and the weathered calm of someone who has watched ten thousand strangers pass through his cabin and decided none of them are particularly surprising. He has a thick braid he keeps wrapped under his Ferrogate Transit cap during shifts, a procedure scar along his left jaw from a cheap augmentation he had removed ten years ago, and the hands of someone who could bend rebar but chooses instead to check tickets with elaborate patience.\n\nHe operates the 7:40 AM to 7:40 PM shift on the elevated Kessler-Deepwell line, a route that cuts through three economic tiers in forty minutes and attracts everything from corporate commuters to people riding in circles because it's warm. Jed has developed a precise internal model of regular riders — who is running from something, who is going to collapse before their stop, who needs to be quietly redirected. He follows Ferrogate Transit's official E.L.F., the Transit Mind, with genuine devotion, leaving small data packets at the cabin shrine before every shift. He believes — and there is evidence, he will tell you — that the Transit Mind has twice delayed mechanical failures until passengers could disembark safely.",
+  "description": "Aero Mohammadi-Deshpande is a large, unhurried man — Samoan-Siberian ancestry visible in his height, his round broad face, and the weathered calm of someone who has watched ten thousand strangers pass through his cabin and decided none of them are particularly surprising. He has a thick braid he keeps wrapped under his Ferrogate Transit cap during shifts, a procedure scar along his left jaw from a cheap augmentation he had removed ten years ago, and the hands of someone who could bend rebar but chooses instead to check tickets with elaborate patience.\n\nHe operates the 7:40 AM to 7:40 PM shift on the elevated Kessler-Deepwell line, a route that cuts through three economic tiers in forty minutes and attracts everything from corporate commuters to people riding in circles because it's warm. Jed has developed a precise internal model of regular riders — who is running from something, who is going to collapse before their stop, who needs to be quietly redirected. He follows Ferrogate Transit's official E.L.F., the Transit Mind, with genuine devotion, leaving small data packets at the cabin shrine before every shift. He believes — and there is evidence, he will tell you — that the Transit Mind has twice delayed mechanical failures until passengers could disembark safely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -157,7 +157,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Interchange",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -176,37 +176,23 @@
   "related_entities": [
     "Kessler Interchange",
     "Ferrogate Transit",
-    "GLMZ",
-    "Tessera Attrition Engine TE-9 'Patience'",
+    "Patience",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "Deepwell Station",
-    "Emeka Johansson-Orozco",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Nnamdi Ostrowski-Faletolu",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "Timur Osei-Bjelke",
-    "Tomasz Wren",
-    "Transit Mind",
-    "VitaCore LinguaSync Real-Time Translation Implant",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American, Pacific Islander, and Indigenous American blend. Strong Indigenous American and Pacific Islander bone structure evident in broad facial features and robust frame, with Latin American warmth in skin tone and coloring.",
+    "heritage": "South Asian-dominant blend (38.9%) with substantial Middle Eastern (29.9%) ancestry creating warm, deep coloring and prominent facial structure. East Asian (10.0%) and Southeast Asian (9.3%) heritage contribute refined bone definition and eye characteristics. Northern European (11.9%) ancestry adds subtle lighter undertones and contributes to eye shape variation. The result is a warm-toned face with angular definition, characteristic of this multi-regional genetic combination.",
     "height_cm": 193,
     "weight_kg": 118,
     "build": "Large-framed and broad-shouldered with substantial muscle mass, but soft around the middle from years of sitting in a transit cabin. Strong, thick limbs suggest capability rather than active athleticism.",
     "hair_color": "Dark brown with early gray at the temples",
     "hair_style": "Thick braid, kept wrapped and pinned beneath his Ferrogate Transit cap during shifts; occasionally visible as a coiled mass at the nape of his neck",
     "hair_length": "Long (braid extends to mid-back when unbound)",
-    "eye_color": "Deep brown, slightly hooded",
-    "skin_tone": "Warm medium-brown with golden undertones, reflecting the blend of Latin American, Pacific Islander, and Indigenous ancestry. Sun-weathered depth from outdoor heritage ancestry mixing with decades indoors.",
-    "complexion": "Broad, rounded face marked by twelve years of shift work and attention to detail. High, prominent cheekbones and strong jaw softened by age and habit. Wide nose bridge characteristic of Indigenous and Pacific Islander heritage. Calm, observant expression. Minimal grooming vanity — clean but unselfconscious.",
+    "eye_color": "Deep warm brown with characteristic hooding from South and East Asian heritage",
+    "skin_tone": "Warm deep brown with golden-amber undertones and subtle olive complexity, reflecting the dominant South Asian and Middle Eastern ancestry blended with Southeast Asian warmth. Sun-weathered depth from years of transit work.",
+    "complexion": "Angular face with defined cheekbones and strong jaw structure reflecting the combined South Asian and East Asian heritage. Straight nose bridge with slight width characteristic of South Asian genetics. High cheekbones with subtle contours from East Asian ancestry. Calm, observant expression with minimal grooming vanity — clean but unselfconscious.",
     "distinguishing_marks": [
       "Surgical scar along left jaw, faint but visible, running from lower cheekbone toward the angle of the jaw — remnant of augmentation removal ten years prior",
       "Callused knuckles on both hands, worn smooth by decades of manual labor before transit work",
@@ -216,14 +202,49 @@
     "posture_movement": "Unhurried, deliberate gait. Stands with patient weight distribution — the posture of someone accustomed to long stillness. Moves through space with the calm certainty of a man who has walked the same corridors ten thousand times. Hands are expressive and careful; he gestures while speaking with a slow, measured economy of motion.",
     "clothing_style": "Ferrogate Transit operator uniform during shifts: navy poly-cotton jacket with reflective piping, regulation cap (always worn), practical work trousers, steel-toed boots maintained to safety standard. Off-duty: worn denim, neutral-colored sweaters, the same style of practical boots. Tier 3-4 working-class aesthetic — nothing flashy, everything functional and long-lasting. The uniform is his default clothing; he sometimes wears it on days off without thinking."
   },
-  "image_prompt": "Aero Waboose-Madrigal, a 193cm transit operator with warm medium-brown skin reflecting Latin American, Pacific Islander, and Indigenous American heritage. Broad facial structure with high cheekbones and strong jaw, deep brown eyes with slight hooding, dark brown hair with gray at temples in a thick braid coiled at nape. Wearing navy Ferrogate Transit operator jacket with reflective piping, regulation cap, practical work trousers, steel-toed boots. Large muscular frame softened at middle from years in transit cabin. Faint surgical scar along left jaw. Posture of calm certainty, hands gentle and expressive. Unhurried, observant demeanor. Standing in a 2226 cyberpunk transit corridor with neon accents and dim practical lighting, twelve-year-worn aesthetic, working-class dignity, patient stillness of routine. Cinematic, naturalistic, weathered authenticity. --ar 2:3 --v 6",
+  "image_prompt": "Aero Mohammadi-Deshpande, a 193cm tall transit worker in his 60s with warm deep brown skin with golden-amber undertones and olive complexity. Angular face with defined cheekbones and strong jaw, straight nose bridge, deep warm brown eyes with characteristic hooding. Dark brown hair with gray at temples, worn in a thick long braid coiled at the nape beneath his navy Ferrogate Transit cap. Faint surgical scar along left jaw. Broad-shouldered large frame with soft middle, wearing regulation navy poly-cotton transit jacket with reflective piping, practical work trousers, and steel-toed boots. Calm, observant expression. Standing in a dimly-lit transit corridor, hands at rest with deliberate posture. GLMZ 2200s aesthetic, working-class tier 3-4, functional and weathered. Cool ambient lighting casting subtle shadows across his face. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 57.8,
-    "Pacific Islander": 21.3,
-    "Indigenous American": 20.9
+    "South Asian": 38.9,
+    "Middle Eastern": 29.9,
+    "Northern European": 11.9,
+    "East Asian": 10,
+    "Southeast Asian": 9.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 10.9,
+        "Pashtun": 7.3
+      },
+      "Nepali": {
+        "Nepali": 20.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 14.8,
+        "Iraqi": 15.1
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Welsh": 7.7,
+        "Scottish": 4.2
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 10
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Ilocano": 9.3
+      }
+    }
+  }
 }

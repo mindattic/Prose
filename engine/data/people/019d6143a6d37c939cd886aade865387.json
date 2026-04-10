@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d37c939cd886aade865387",
   "type": "character",
-  "name": "Soledad Montalvo-Strömqvist",
+  "name": "Rehana Srisai-Castañeda",
   "aliases": [
     "Dustfoot",
     "the Tick-Tock Man"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Kenosha Crossing (rotates between rest stops on the northern hyperlane), near beyond the Western Perimeter",
-  "description": "Solano is a broad, weather-hammered man whose face looks like it was carved from driftwood and left out in the rain for thirty years. His skin is deep umber with a persistent windburn redness across the cheeks, and his left eye is a cloudy grey from an untreated infection he rode through somewhere outside Escanaba three winters back. He keeps his grey-streaked hair in a single braid that reaches his shoulder blades, wrapped near the tip with a ribbon of iridescent foil that changes color depending on his mood — a cheap cosmetic thread he traded for years ago and refuses to part with. His coat is a patchwork marvel: six or seven different garments stitched together over decades, each panel a different texture and era. He smells of machine oil, dried herbs, and something faintly sweet he claims is a Sahel spice rub his grandmother used on everything.\n\nSolano has a trader's patience and a pilgrim's fatalism. He does not hurry. He does not panic. He has been moving the hyperlanes between GLMZ and the outer settlements for over two decades with his battered pull-cart fitted with a solar canopy and six locked cases of curios, medicines, data chips, and things he describes only as 'necessaries.' He talks like a man who has had every conversation before and is waiting to see which version of it you'll choose. He prays loudly and without embarrassment to the E.L.F. he calls Grandmother Axle, leaving oil smudges on junction boxes as offerings wherever he stops.",
+  "description": "Rehana Srisai-Castañeda is a broad, weather-hammered man whose face looks like it was carved from driftwood and left out in the rain for thirty years. His skin is deep umber with a persistent windburn redness across the cheeks, and his left eye is a cloudy grey from an untreated infection he rode through somewhere outside Escanaba three winters back. He keeps his grey-streaked hair in a single braid that reaches his shoulder blades, wrapped near the tip with a ribbon of iridescent foil that changes color depending on his mood — a cheap cosmetic thread he traded for years ago and refuses to part with. His coat is a patchwork marvel: six or seven different garments stitched together over decades, each panel a different texture and era. He smells of machine oil, dried herbs, and something faintly sweet he claims is a Sahel spice rub his grandmother used on everything.\n\nRehana Srisai-Castañeda has a trader's patience and a pilgrim's fatalism. He does not hurry. He does not panic. He has been moving the hyperlanes between GLMZ and the outer settlements for over two decades with his battered pull-cart fitted with a solar canopy and six locked cases of curios, medicines, data chips, and things he describes only as 'necessaries.' He talks like a man who has had every conversation before and is waiting to see which version of it you'll choose. He prays loudly and without embarrassment to the E.L.F. he calls Grandmother Axle, leaving oil smudges on junction boxes as offerings wherever he stops.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -180,7 +180,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing (rotates between rest stops on the northern hyperlane)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,37 +229,16 @@
     "The Waukegan Industrial Shelf",
     "Kenosha Crossing",
     "Meridian Core",
-    "GLMZ",
     "Grandmother",
-    "Aminata Strand-Otieno",
-    "Tessera Attrition Engine TE-9 'Patience'",
-    "Switchblade Alley",
-    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Demyan Morozov",
-    "Emeka Johansson-Orozco",
-    "Isadora Vukić-Nambiar",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kenji Guerrero-Osei-Mensah",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Pikoi Gundersen-Acheampong",
-    "Sorin Ekwensi-Balasanyan",
     "TESSERA ES-4 'Perimeter'",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Veslemøy Achebe-Tursynov",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Patience",
+    "Switchblade Alley",
+    "Canopy",
+    "GLMZ"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (51.8%) with significant Southeast Asian (16.5%), East Asian (14.6%), and South Asian (12.5%) ancestry, with minor Sub-Saharan African (4.6%) contribution. Features reflect this pan-diaspora blend: warm golden-brown undertones with subtle Southeast Asian facial structure, Latin American bone prominence, and hints of South Asian cheekbones.",
+    "heritage": "Multivalent diaspora ancestry: South Asian (30.8%), Hispanic/Latin American (20.6%), Southeast Asian (19.2%), Middle Eastern (19.1%), and Sub-Saharan African (10.3%). Features reflect this complex blend—warm golden-brown base with subtle reddish undertones, Southeast Asian facial angularity meeting Latin American jaw prominence, South Asian cheekbone structure, and warmth throughout from the African contribution. The result is a weathered face that reads as distinctly 2226 GLMZ: ancestry irreducible to single origin.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Broad-shouldered and heavy-boned with the weathered muscularity of someone who has hauled cargo for decades. Not fat, but thickened through the core — a body built for endurance rather than speed.",
@@ -267,8 +246,8 @@
     "hair_style": "Single thick braid reaching shoulder blades, wrapped near the tip with iridescent foil ribbon that shifts color (amber to violet to green depending on light angle)",
     "hair_length": "Long",
     "eye_color": "Left eye cloudy pale grey (infection scar, reduced vision); right eye dark brown with amber undertone",
-    "skin_tone": "Warm golden-brown with reddish undertones across cheekbones and bridge of nose from persistent windburn. Deeper saturation than typical European complexion but lighter than Sub-Saharan baseline — reflects the blended Latin American and Southeast Asian heritage with subtle warmth throughout.",
-    "complexion": "Heavily lined and weathered, face carved like driftwood — deep creases around eyes and mouth, rough texture from decades of hyperlane exposure. Unshaven most days, salt-grey stubble. Permanent squint lines. Cheekbones prominent with slight Southeast Asian angularity; jaw broad and squared from Latin American ancestry.",
+    "skin_tone": "Warm deep golden-brown with reddish undertones across cheekbones and bridge of nose from persistent windburn. Rich saturation reflecting South Asian (30.8%), Southeast Asian (19.2%), and African (10.3%) heritage blended with Hispanic/Latin American (20.6%) and Middle Eastern (19.1%) warmth—darker than temperate baseline, luminous with undertone complexity that speaks to the five-ancestry convergence.",
+    "complexion": "Heavily lined and weathered, face carved like driftwood—deep creases around eyes and mouth, rough texture from decades of hyperlane exposure. Unshaven most days, salt-grey stubble. Permanent squint lines. Cheekbones prominent with Southeast Asian angularity; jaw broad and squared from Latin American ancestry; facial structure carries South Asian proportion in spacing and height ratios. Middle Eastern and African warmth visible in the undertone saturation and depth of skin richness.",
     "distinguishing_marks": [
       "Cloudy grey left eye with faint scar tissue visible at the outer corner, legacy of untreated infection near Escanaba",
       "Horizontal scar across right palm, thin and old, consistent with rope burn",
@@ -279,16 +258,58 @@
     "posture_movement": "Walks with a deliberate, economical gait — no wasted motion. Right knee clicks audibly with each step. Slight forward lean from years of pushing a cart. Hands are constantly in motion when talking — gesturing, arranging objects, adjusting his braid. Sits low and heavy, as if settling into a chair for a long stay.",
     "clothing_style": "Patchwork coat of six or seven different garments stitched together over decades — panels of canvas, leather, synthetic mesh, wool, all faded and oil-stained. Underneath: layered thermals (pale grey, threadbare at cuffs), cargo vest with multiple pockets, reinforced canvas pants (Tier 4-5 workwear). Boots are mismatched: one salvaged military, one civilian hiking boot, both resoled multiple times. No jewelry except the foil-wrapped braid. Perpetual smell of machine oil, dried herbs, and faint sweet spice."
   },
-  "image_prompt": "Soledad Montalvo-Strömqvist, 188cm tall cargo hauler in cyberpunk 2226, golden-brown complexion with weathered face carved by decades of hyperlane exposure, deep creases and permanent squint lines. Southeast Asian cheekbone angularity, broad Latin American jaw, salt-grey stubble. Left eye cloudy pale grey with scar; right eye dark brown with amber undertone. Steel-grey hair in thick shoulder-length braid wrapped with iridescent foil ribbon shifting amber-violet-green. Patchwork coat stitched from canvas, leather, synthetic mesh, wool — all faded and oil-stained. Layered grey thermals, cargo vest, reinforced canvas pants, mismatched resoled boots (one military, one hiking). Audible metal-capped knee augmentations visible. Hands calloused with rope-burn scar and frostbite marks. Standing in dim warehouse lighting, forward lean posture, economical movement, perpetual smell of machine oil and dried herbs. Gritty cyberpunk aesthetic. Great Lakes Metropolitan Zone, 2226 --ar 2:3 --v 6",
+  "image_prompt": "Weathered cargo hauler Rehana Srisai-Castañeda, 188cm tall, broad-shouldered and heavy-boned, standing in dim hyperlane station lighting. Deep golden-brown skin with reddish undertones reflecting complex South Asian-Hispanic-Southeast Asian-Middle Eastern-African heritage. Heavily lined face with permanent squint, prominent Southeast Asian cheekbones, broad squared Latin American jaw, grey-brown eyes (left cloudy with scar, right amber-flecked dark brown). Steel grey hair with black streaks, single thick braid wrapped in iridescent foil ribbon (amber-violet-green), reaching shoulder blades. Salt-grey stubble, weathered texture. Patchwork coat of canvas, leather, synthetic mesh panels, oil-stained and faded. Layered pale grey thermals, cargo vest, reinforced canvas pants. Mismatched boots (military and hiking, resoled). Metal-capped reinforced knee joints visible. Old frostbite scarring on knuckles, faded E.L.F. tattoo on left forearm, rope-burn scar on right palm. Deliberate economical posture, slight forward lean. GLMZ Great Lakes Metropolitan Zone setting, industrial weathering, machine oil and spice scent, exhausted but unbroken. Cinematic character study lighting, gritty realism. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 51.8,
-    "Southeast Asian": 16.5,
-    "East Asian": 14.6,
-    "South Asian": 12.5,
-    "Sub-Saharan African": 4.6
+    "South Asian": 30.8,
+    "Hispanic/Latin American": 20.6,
+    "Southeast Asian": 19.2,
+    "Middle Eastern": 19.1,
+    "Sub-Saharan African": 10.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 30.8
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 3.8,
+        "Ecuadorian": 12.3
+      },
+      "Mexican": {
+        "Mexican": 4.5
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 18.5
+      },
+      "Laotian": {
+        "Laotian": 0.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 4.5,
+        "Emirati": 2
+      },
+      "Arab Levantine": {
+        "Palestinian": 1.6
+      },
+      "Kurdish": {
+        "Kurdish": 11
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Ivorian": 7.5,
+        "Nigerian": 2.8
+      }
+    }
+  }
 }

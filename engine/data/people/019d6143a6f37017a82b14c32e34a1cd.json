@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f37017a82b14c32e34a1cd",
   "type": "character",
-  "name": "Haze Haraldsen-Guerrero",
+  "name": "Haze Bustamante-Karimov",
   "aliases": [
     "Tess"
   ],
@@ -12,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Aurochs Medical Complex, Calumet Rise, near North Ave and Milwaukee",
-  "description": "Tessaly is small and precise in her movements, with light brown skin, natural hair worn in a large puff held back by a polished Helix Biosystems ID clip, and eyes modified with patterned irises — a double helix in dark gold on amber that she got as a graduation gift to herself. She is young for her position and knows it, which makes her simultaneously more careful and more aggressive in equal measure. She works within the Helix system because she believes — genuinely, not cynically — that gene therapy at scale requires institutional infrastructure, and she is trying to change the institution from inside while not yet having enough power to change much.\n\nShe is technically brilliant and interpersonally awkward in ways she's actively working on. She has a tendency to present information in dense technical bursts before remembering she's talking to a person. She finds pediatric gene therapy cases the hardest and doesn't understand why it took her two years to figure out that it's because she was a gene therapy patient herself as a child — a realization her therapist gently surfaced during a session she thought was about something else entirely. She's been different with parents and children ever since.",
+  "description": "Haze Bustamante-Karimov is small and precise in her movements, with light brown skin, natural hair worn in a large puff held back by a polished Helix Biosystems ID clip, and eyes modified with patterned irises — a double helix in dark gold on amber that she got as a graduation gift to herself. She is young for her position and knows it, which makes her simultaneously more careful and more aggressive in equal measure. She works within the Helix system because she believes — genuinely, not cynically — that gene therapy at scale requires institutional infrastructure, and she is trying to change the institution from inside while not yet having enough power to change much.\n\nShe is technically brilliant and interpersonally awkward in ways she's actively working on. She has a tendency to present information in dense technical bursts before remembering she's talking to a person. She finds pediatric gene therapy cases the hardest and doesn't understand why it took her two years to figure out that it's because she was a gene therapy patient herself as a child — a realization her therapist gently surfaced during a session she thought was about something else entirely. She's been different with parents and children ever since.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -191,7 +191,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -250,23 +250,14 @@
     "Helix Biosystems",
     "Calumet Rise",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial",
     "Gravimetric Collapse Charge GCC-9",
-    "Gold",
-    "The Milwaukee Core",
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TESSERA TN-1 'Cradle'",
-    "The Pure Hand",
-    "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'"
+    "Compass Rose",
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Hispanic/Latin American dominant (49.7%) with significant East Asian (41.9%) and minor Northern European (8.4%) ancestry; displays the warm golden-brown skin tones characteristic of Latin American heritage with the refined facial structure suggesting East Asian ancestry, creating a striking blend of warm and cool undertones",
+    "heritage": "Central Asian (34.2%) and Hispanic/Latin American (33.9%) form the genetic foundation, with substantial Middle Eastern (17.2%), Sub-Saharan African (8.4%), and Southeast Asian (6.3%) ancestry creating a complex phenotype. The result is warm golden-brown skin with balanced undertones — neither purely warm nor cool, but luminous with depth. Facial structure reflects this blend: refined bone geometry from Central Asian ancestry softened by rounder cheek and lip contours from Hispanic heritage, with subtle eye shape refinement and refined nasal bridge from Middle Eastern and Southeast Asian lines. Skin carries warmth and depth characteristic of the African ancestry component, creating subtle visual complexity that shifts across different lighting.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Slight and compact, with efficient musculature suggesting controlled movement rather than strength; posture reflects precision work and long hours at benches",
@@ -274,8 +265,8 @@
     "hair_style": "Large, rounded puff held back with a polished Helix Biosystems chrome ID clip; meticulously maintained",
     "hair_length": "Medium (approximately 10-12cm natural length when released)",
     "eye_color": "Amber with dark gold double helix patterning in both irises — a deliberate modification suggesting both technical sophistication and personal statement",
-    "skin_tone": "Warm golden-brown with even complexion; the result of Latin American and East Asian genetic blending creates luminous undertones that shift subtly in different light",
-    "complexion": "Clear, well-maintained skin with minimal visible scarring; face carries slight tension around the eyes and jaw from concentration; minimal cosmetic grooming beyond professional necessity. Facial structure shows the refined bone geometry typical of East Asian ancestry softened by the warmer, rounder features of Latin American heritage",
+    "skin_tone": "Warm golden-brown with luminous, even complexion; the blending of Central Asian, Hispanic, Middle Eastern, Sub-Saharan African, and Southeast Asian ancestry creates subtle depth and warmth with a quality that shifts between golden and bronze undertones depending on light",
+    "complexion": "Clear, well-maintained skin with minimal visible scarring; face carries slight tension around the eyes and jaw from concentration; minimal cosmetic grooming beyond professional necessity. Facial structure shows refined bone geometry characteristic of Central Asian ancestry softened by the rounder, fuller cheeks and lips of Hispanic heritage, with subtle Southeast Asian eye shape and refined Middle Eastern nasal bridge reflecting the broader ancestral mix. Skin texture is smooth with even melanin distribution creating subtle warmth throughout",
     "distinguishing_marks": [
       "Faint surgical scar on right inner wrist from childhood gene therapy port — barely visible unless looking closely",
       "Barely perceptible raised pattern on right index and middle fingertip pads where gene-reader implant interfaces with skin"
@@ -284,14 +275,52 @@
     "posture_movement": "Moves with deliberate economy; spine is straight but shoulders carry slight forward lean from years of microscope and console work. Hands are rarely still — fingers tap, fidget, or gesture while talking, especially when moving through dense technical explanations. Makes minimal eye contact during conversation unless consciously working on engagement. Quick, efficient movements in clinical settings; slower, more careful movements in social contexts as if calculating each gesture.",
     "clothing_style": "Tier 1-2 corporate professional. Helix-branded lab coat over fitted, muted-color clothing (grays, blacks, deep blues, sage greens) from mid-tier suppliers like Isamu or Kyoto Basics. Closed-toe shoes with good arch support, minimal jewelry beyond the ID clip and a simple watch that logs biometric data. Clothing is always clean and pressed but shows signs of regular wear and occasional small stains from lab work that didn't quite come out. No visible personal style affectation — fashion choices are functional first, professional second."
   },
-  "image_prompt": "Haze Haraldsen-Guerrero, 158cm tall petite figure with warm golden-brown skin blending Latin American and East Asian ancestry, standing in a corporate biotech lab, cyberpunk 2226. Sharp amber eyes with intricate double helix pattern modifications in both irises catching clinical LED lighting. Dark brown hair pulled back in a rounded puff held by polished chrome Helix Biosystems ID clip. Wearing professional Helix-branded lab coat over muted gray fitted shirt, posture showing slight forward lean from years of precision microscope work. Hands positioned with subtle fidgeting gesture, right hand showing barely visible metallic gleam of gene-reader implant on fingertips. Lab environment with soft blue-white LED overhead lighting creating luminous undertones in skin. Professional but worn clothing showing faint lab work stains. Minimalist jewelry, simple biometric watch visible. Expression concentrated, minimal eye contact. Cyberpunk aesthetic blending corporate professionalism with advanced biological modification tech --ar 2:3 --v 6",
+  "image_prompt": "Haze Bustamante-Karimov, GLMZ, compact petite figure (158cm), warm golden-brown complexion with luminous undertones reflecting Central Asian-Hispanic-Middle Eastern-African-Southeast Asian blend, refined bone structure with softly rounded cheeks, dark brown hair in neat rounded puff held with polished chrome Helix ID clip, striking amber eyes with intricate dark gold double helix iris pattern, subtle forward shoulder lean from precision work, minimal fidgeting hands, wearing muted professional Helix-branded lab coat over gray fitted shirt, chrome gene-reader implant faintly visible on right fingertips, clinical laboratory setting with cool blue-white LED lighting, professional composure with slight tension around jaw, subtle scent of sterilization agents, mid-shot against equipment-lined background, photorealistic, cybernetic augmentation details visible, corporate professional atmosphere, contemplative expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 49.7,
-    "East Asian": 41.9,
-    "Northern European": 8.4
+    "Central Asian": 34.2,
+    "Hispanic/Latin American": 33.9,
+    "Middle Eastern": 17.2,
+    "Sub-Saharan African": 8.4,
+    "Southeast Asian": 6.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Tajik": 34.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 17.6,
+        "Puerto Rican": 16.3
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Iraqi": 13.9,
+        "Emirati": 0.8
+      },
+      "Kurdish": {
+        "Kurdish": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Guinean": 7.2,
+        "Liberian": 1.2
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 4.6
+      },
+      "Laotian": {
+        "Laotian": 1.7
+      }
+    }
+  }
 }

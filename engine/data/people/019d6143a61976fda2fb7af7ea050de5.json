@@ -1,7 +1,7 @@
 {
   "id": "019d6143a61976fda2fb7af7ea050de5",
   "type": "character",
-  "name": "Soraya Árnason-Sabbagh",
+  "name": "Ember Árnason-Ueda",
   "aliases": [
     "Patch",
     "The Healer of Gate 9",
@@ -14,7 +14,7 @@
   "age": 22,
   "status": "active",
   "location": "Old Harbor, near Lake Shore and Wacker",
-  "description": "Gavril is a slight young man of Ghanaian-Japanese descent who looks, at first glance, like he is in the wrong place — too young, too clean-handed, too careful with his movements for Old Harbor's Gate 9 district. The impression lasts until you see him work, at which point it inverts entirely. He has his mother's broad cheekbones and his father's near-black eyes, and his hands, when they are still, have the quality of instruments waiting to be used. A fading scar runs from his left jaw to his collarbone, the only visible evidence of the incident that ended his two years of formal medical training at a Meridian Core institution.",
+  "description": "Ember Árnason-Ueda is a slight young man of Ghanaian-Japanese descent who looks, at first glance, like he is in the wrong place — too young, too clean-handed, too careful with his movements for Old Harbor's Gate 9 district. The impression lasts until you see him work, at which point it inverts entirely. He has his mother's broad cheekbones and his father's near-black eyes, and his hands, when they are still, have the quality of instruments waiting to be used. A fading scar runs from his left jaw to his collarbone, the only visible evidence of the incident that ended his two years of formal medical training at a Meridian Core institution.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -230,7 +230,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,30 +251,13 @@
     "The Shelf",
     "Irontide Tidal Energy",
     "Handed",
-    "The Pure Hand",
-    "Alper Lebedev-Tutu",
+    "Harbor Fish Shack",
     "Arcturus KS-7 'Nursery'",
-    "Crucible TR-7 'Triage'",
-    "Ezio Kaboré-Malhotra",
-    "Kairos",
-    "Korrath",
-    "Last Word",
-    "MERIDIAN",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Narrowcast",
-    "Nnamdi Ostrowski-Faletolu",
-    "Norwood Quiet",
-    "Old Harbor",
-    "Patient Zero",
-    "Street Custom 'Gallows' Recurve Bow",
-    "Sustrel",
-    "The Heritage Vault",
-    "The Human Baseline Alliance",
-    "The Meridian Core"
+    "The Pure Hand"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Middle Eastern, Southeast Asian, Hispanic/Latin American, and Eastern European ancestry creating a striking blend; warm golden-olive undertones from the Middle Eastern and Southeast Asian majority, with subtle warmth from Latin American heritage and fair undertones from Eastern European genetics",
+    "heritage": "Predominantly East Asian (62.3%) with significant Sub-Saharan African (19.8%) and Middle Eastern (17.9%) ancestry; the genetic blend creates a warm, complex skin tone where East Asian luminosity meets Sub-Saharan African depth and richness, with Middle Eastern angularity defining the facial structure",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wiry with minimal body fat; shoulders slightly narrow but defined through constant physical work; the build of someone who doesn't eat regularly but moves with precision",
@@ -282,8 +265,8 @@
     "hair_style": "Short, kept practical and clean; styled close to the scalp, minimal styling effort",
     "hair_length": "Short",
     "eye_color": "Near-black with warm undertones, alert and observant",
-    "skin_tone": "Warm golden-olive complexion blending Middle Eastern depth (40.8%) with Southeast Asian luminosity (32.3%), enriched by Latin American warmth (20%), with subtle fair undertones from Eastern European genetics (6.9%); irregular sun exposure creates slight pallor suggesting street living and sleep deprivation",
-    "complexion": "Angular features with high, prominent cheekbones and a slightly tapered jawline reflecting the Southeast Asian and Middle Eastern ancestry; skin is generally clear but shows the pallor of someone living on irregular sleep and minimal sun exposure; faint darkening under eyes suggesting chronic fatigue; facial structure shows the blend of Middle Eastern definition with Southeast Asian delicacy",
+    "skin_tone": "Warm caramel-bronze complexion with golden undertones; the East Asian ancestry provides luminous warmth while Sub-Saharan African heritage adds depth and richness to the tone; Middle Eastern influence creates subtle definition in the jawline and cheekbones; irregular sun exposure and sleep deprivation create a slight pallor beneath the warm undertones",
+    "complexion": "Angular, high-boned face with prominent cheekbones showing East Asian structure enhanced by Sub-Saharan African prominence and Middle Eastern definition; slightly tapered jawline with notable facial depth; clear skin marked by the pallor of chronic sleep deprivation and minimal sun exposure; faint darkening under eyes; facial architecture represents a harmonious blend of delicate East Asian features with stronger Sub-Saharan African and Middle Eastern bone structure",
     "distinguishing_marks": [
       "Fading surgical scar running from left jaw down to left collarbone, approximately 15cm in length, pale and thin but still visible under certain light — evidence of the incident that ended formal medical training",
       "Calloused fingertips on both hands, particularly index and middle fingers, from constant fine motor work and tactile examination"
@@ -292,15 +275,46 @@
     "posture_movement": "Moves with deliberate economy of motion; posture is upright but not rigid, suggesting both medical training and street-learned caution; hands rest in a neutral ready position; eyes track details in environment constantly; walks with purpose but never hurries unless responding to emergency",
     "clothing_style": "Tier 4 working-class practical: dark matte synthweave cargo pants with multiple pockets for tools and supplies; plain gray or dark blue long-sleeved fitted shirt, sometimes rolled up during work; worn black synthetic jacket with internal pockets for equipment; no visible branding; sturdy grey composite boots broken in from heavy use; overall appearance deliberately unremarkable and functional"
   },
-  "image_prompt": "Soraya Árnason-Sabbagh, 172cm lean wiry figure, warm golden-olive skin with Middle Eastern and Southeast Asian prominence, angular high cheekbones with Southeast Asian delicacy, near-black alert eyes, short dark brown hair close to scalp, faint surgical scar from jaw to collarbone, calloused fingertips suggesting medical work, wearing dark synthweave cargo pants and gray fitted long-sleeved shirt with worn black synthetic jacket, sturdy grey composite boots, posture upright and precise with hands in ready position, eyes tracking environment, cyberpunk 2226 Great Lakes Metropolitan Zone, dimly lit industrial Old Harbor setting, neon signs reflecting off wet pavement, mood of focused determination and street caution, atmospheric depth of field, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Ember Árnason-Ueda, GLMZ, portrait of a lean 172cm figure with warm caramel-bronze skin blending East Asian luminosity with Sub-Saharan African depth and Middle Eastern angularity; short dark brown hair close to scalp, near-black eyes with warm undertones, high prominent cheekbones, angular tapered jawline, pale undertones from sleep deprivation, faint scar from left jaw to collarbone; wearing dark matte synthweave cargo pants, fitted dark blue long-sleeved shirt, worn black synthetic jacket, grey composite boots; hands in neutral ready position with calloused fingertips; upright posture with environmental awareness in gaze; Great Lakes Metropolitan Zone neon-lit street setting, cool blue and amber lighting emphasizing warm skin tones, cinematic depth, mood of careful precision and street survival, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 40.8,
-    "Southeast Asian": 32.3,
-    "Hispanic/Latin American": 20.0,
-    "Eastern European": 6.9
+    "East Asian": 62.3,
+    "Sub-Saharan African": 19.8,
+    "Middle Eastern": 17.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 36.9
+      },
+      "Chinese": {
+        "Hakka": 22.2
+      },
+      "Korean": {
+        "Korean": 3.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 7.8
+      },
+      "Southern African": {
+        "Zambian": 0.5,
+        "Zimbabwean": 2.1
+      },
+      "East African": {
+        "Rwandan": 1.9,
+        "Kenyan": 7.5
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Emirati": 7.3,
+        "Iraqi": 10.6
+      }
+    }
+  }
 }

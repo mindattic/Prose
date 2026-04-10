@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6637c628c9e19238a835d90",
   "type": "character",
-  "name": "Briar Rahman",
+  "name": "Ama Karimi",
   "aliases": [
     "Nini",
     "The Soft Death"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Irkalla, the Passage House on Undertow Row, near Western and Division",
-  "description": "Ẹniọlá is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters — soft and pale against the city's chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises �� concentric rings of amber and dark brown — that she had done in honor of her Yoruba grandmother's description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Ẹniọlá disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week — some terminal, some simply old, some not yet dying but preparing — and she has never turned anyone away for inability to pay.",
+  "description": "Ama Karimi is a small woman who dresses exclusively in undyed natural fabrics, a deliberate choice that makes her look slightly out of place in every room she enters — soft and pale against the city's chrome and neon. Her hair is kept short and natural, and she wears no cosmetic geneware, though she could afford minimal modifications. Her one concession to body alteration is a set of patterned irises �� concentric rings of amber and dark brown — that she had done in honor of her Yoruba grandmother's description of the eye of god. Her hands are her most expressive feature: large, warm, always slightly in motion, and the first thing the dying reach for.\n\nShe came to death midwifery after her brother died alone in a Tessera medical pod, his passing logged and timestamped and unremarked. She was twenty-two. She spent three years studying under an older practitioner in the Canopy before establishing the Passage House in Irkalla, which is considered by most city planners to be an unfavorable address for anyone seeking comfort. Ama Karimi disagrees. She thinks the dying deserve to be somewhere honest about what it is. The Passage House sees four to eight clients a week — some terminal, some simply old, some not yet dying but preparing — and she has never turned anyone away for inability to pay.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -157,7 +157,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Irkalla",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,31 +174,18 @@
     "Canopy Station Nine",
     "The Iron Lotus",
     "Tessera Overwatch Platform OWP-3 'Panopticon'",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Tessera Corponation",
     "Irkalla",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
+    "Canopy",
+    "Honest Burger",
     "The Pure Hand",
-    "The Pale Mile",
-    "Aurochs Medical Complex",
-    "Bintou Halvorsen-Osei",
-    "Brewer's Spine",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "MERIDIAN",
-    "Makena Johanssen-Diallo",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Patient Zero",
-    "Sulfur Crown Agriculture",
-    "The Canopy",
-    "The Coffin Nails",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "The Pale Mile"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly South Asian (47.9%) with significant East Asian (20.3%) and Southeast Asian (16.3%) ancestry, complemented by Middle Eastern (9.7%), Eastern European (3.5%), and Hispanic/Latin American (2.3%) heritage. Her genetic blend creates a striking pan-Asian phenotype with warmth and depth.",
+    "heritage": "Predominantly Middle Eastern (61.2%) with significant Sub-Saharan African (37.3%) ancestry and trace South Asian (1.5%) heritage. Her genetic blend creates a striking East African-Levantine phenotype with warm, deep richness—high cheekbones and refined bone structure characteristic of the Levant combined with the luminous depth of Sub-Saharan ancestry. Her features speak to the historical crossroads of trade and migration across the Arabian Peninsula and Horn of Africa.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Small-framed and lean, with a dancer's posture despite her age—shoulders open, spine naturally aligned. Her frame carries no excess but reads as strong rather than fragile; the musculature of someone who moves with intention.",
@@ -206,8 +193,8 @@
     "hair_style": "Cropped close to the scalp, revealing the contours of her skull; edges maintained with precision but without vanity",
     "hair_length": "Short",
     "eye_color": "Augmented: concentric rings of amber (outer) transitioning to dark brown (inner), creating a hypnotic iris pattern that catches light distinctly",
-    "skin_tone": "Warm medium-golden brown with subtle olive and amber undertones—the result of blended South and East Asian heritage, with the lived-in depth of someone rooted in multiple continents. Not uniform, grounded and authentic.",
-    "complexion": "Unlined for her age in some places, deeply lined around her eyes and mouth in others—the geography of witnessing. High cheekbones with gentle definition, a refined nose bridge reflecting East Asian structure, and warm-toned skin that reads as both luminous and matte. Clear and unadorned, with no cosmetic geneware. Her hands show faint discoloration from repeated contact with dying skin; her nails are trimmed short and unpainted.",
+    "skin_tone": "Deep warm brown with rich undertones—a radiant blend of Middle Eastern and Sub-Saharan heritage, with subtle amber and golden notes that seem to glow from within. The tone is luminous yet grounded, speaking to sun-rooted ancestry across multiple latitudes.",
+    "complexion": "Unlined for her age in some places, deeply lined around her eyes and mouth in others—the geography of witnessing. High cheekbones with strong, elegant definition reflecting Levantine structure, a refined nose bridge with subtle breadth, and warm-toned skin that reads as both luminous and matte. Clear and unadorned, with no cosmetic geneware. Her hands show faint discoloration from repeated contact with dying skin; her nails are trimmed short and unpainted.",
     "distinguishing_marks": [
       "Thin white scar running from the base of her left ear to her jawline, barely visible unless light catches it at an angle—from a childhood accident with industrial machinery",
       "Small burn mark on the inside of her right forearm, pale and old, shaped vaguely like a teapot spout—from her first apartment, a faulty appliance, never treated cosmetically",
@@ -217,17 +204,41 @@
     "posture_movement": "She moves with economy and grace, never rushing. Her gestures are fluid but deliberate—hands speaking as much as her voice. She has a habit of tilting her head slightly when listening, as if the angle helps her hear better. She sits deeply, as if anchoring herself to the space.",
     "clothing_style": "Exclusively natural, undyed fabrics—linen, cotton, hemp, raw silk in cream, ivory, pale grey, and soft brown. Loose-fitting layered tunics, wide-leg trousers, soft leather sandals worn thin. A long shawl in oatmeal linen, always present, worn wrapped or draped. No logos, no synthetic fibers, no visible branding. Her clothes look handmade or sourced from artisan vendors—deliberately counter to the city's neon-soaked aesthetic. Small pouch worn at her hip containing ritual objects: stones, dried herbs, water in a carved bone vessel. She wears a single piece of jewelry: a thin silver band on her right ring finger, engraved with script."
   },
-  "image_prompt": "Briar Rahman, a serene woman of pan-Asian ancestry with warm golden-brown skin and high cheekbones, age evident in the lines around her amber-ringed augmented eyes. She wears a loose cream linen tunic layered with a soft oatmeal shawl, standing with deliberate grace and anchored posture. Short black hair with silver threads catches soft, diffused light. Her hands are weathered, nails unpainted. A thin scar traces her left jawline; ritual scarification marks her upper back. She moves with intention in muted earth tones against the neon cyberpunk 2226 cityscape of the GLMZ, embodying quiet resistance. Warm, contemplative mood. Natural light, photorealistic, --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Ama Karimi, 158cm tall East African-Levantine woman with deep warm brown skin glowing with golden undertones, short natural black hair with silver at temples, augmented amber-to-brown concentric ring irises catching light hypnotically. Lean dancer's frame in cream linen layered tunic and wide-leg trousers, oatmeal linen shawl draped across shoulders. Thin white scar visible along left jawline, faint ritual scarification on upper back visible through open neckline. Silver engraved ring on right hand. Small hip pouch with ritual objects. Standing with graceful posture, head tilted slightly, in soft warm diffuse light contrasting against cool megacity backdrop of 2226 Great Lakes Metropolitan Zone. Deeply lined eyes and mouth showing lived wisdom. Natural, undyed aesthetic creates striking contrast with neon surroundings. Photorealistic, dignified, meditative. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 47.9,
-    "East Asian": 20.3,
-    "Southeast Asian": 16.3,
-    "Middle Eastern": 9.7,
-    "Eastern European": 3.5,
-    "Hispanic/Latin American": 2.3
+    "Middle Eastern": 61.2,
+    "Sub-Saharan African": 37.3,
+    "South Asian": 1.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Kuwaiti": 61.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zimbabwean": 8.2,
+        "Botswanan": 9.6
+      },
+      "West African": {
+        "Ghanaian": 19.5
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 0.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1
+      },
+      "Nepali": {
+        "Nepali": 0.3
+      }
+    }
+  }
 }

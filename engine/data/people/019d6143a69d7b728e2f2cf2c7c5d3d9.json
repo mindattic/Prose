@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69d7b728e2f2cf2c7c5d3d9",
   "type": "character",
-  "name": "Reed Sokolov-Kabwit",
+  "name": "Reed Tlemcani-Holm",
   "aliases": [
     "Prax",
     "The Ledger"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
-  "description": "Praxedes is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
+  "description": "Reed Tlemcani-Holm is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -192,7 +192,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Fort Anchor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -208,33 +208,17 @@
   ],
   "related_entities": [
     "Fort Anchor",
+    "The Accidental",
+    "Charcoal",
     "The Quiet Room",
-    "SynapTech IrisBloom Ocular Color Modulator",
     "Witness",
-    "Silver",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "GLMZ",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Irontide Tidal Energy",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Ringo RT-4 'Oxcart'",
-    "Stainless Steel",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA Widow Mk. III",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Yannick Tofauti-Szarvásy"
+    "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (52.8%) with significant Eastern European (24.0%), South Asian (11.0%), Southeast Asian (6.6%), and East Asian (5.6%) ancestry. The genetic blend manifests as warm deep brown skin with subtle undertones reflecting the South Asian and Southeast Asian components, creating a complex melanin distribution that catches light with understated richness.",
+    "heritage": "Complex diaspora blend: Middle Eastern (32.1%), East Asian (25.5%), North African (14.4%), Southeast Asian (13.0%), Sub-Saharan African (10.2%), and South Asian (4.8%). The genetic mosaic creates a striking phenotype—warm medium-to-deep brown skin with golden and subtle olive undertones from the convergence of Middle Eastern and North African ancestry with East and Southeast Asian features. Bone structure reflects the angular geometry of East Asian heritage blended with the broader facial proportions common to Middle Eastern and North African lineages, with subtle fullness in the cheekbones from Southeast Asian and South Asian contributions. The overall effect is distinctive rather than fitting any single regional category—a truly global genetic inheritance rendered visible.",
     "height_cm": 172,
     "weight_kg": 61,
     "build": "Lean and economical, muscled through the shoulders and forearms from years of desk work interrupted by fieldwork. No wasted mass. Posture suggests controlled breathing and deliberate stillness.",
@@ -242,8 +226,8 @@
     "hair_style": "Close-cropped, precision-cut, no styling product — practical, geometric",
     "hair_length": "Short",
     "eye_color": "Cosmetic augmentation: concentric hexagon irises in grey and amber, creating a geometric optical effect that seems to catch light differently depending on angle",
-    "skin_tone": "Deep warm brown with golden undertones, melanin-rich and even across the body, reflecting the dominant Sub-Saharan African ancestry blended with warmer hues from South Asian heritage",
-    "complexion": "Minimal makeup, sun-weathered around the eyes from decades of focus work. Jawline defined and angular, with subtle bone structure suggesting the Eastern European and South Asian genetic contributions. Slight leftward asymmetry to her mouth that becomes pronounced when she tightens her jaw — a tell she's unaware colleagues have learned to dread. Skin well-maintained, no visible acne or blemishes.",
+    "skin_tone": "Warm medium-to-deep brown with golden undertones and subtle olive cast, reflecting the balanced genetic mosaic of Middle Eastern, East Asian, and North African ancestry grounded by Southeast Asian, Sub-Saharan African, and South Asian components. Even melanin distribution with warmth concentrated around cheekbones and jawline.",
+    "complexion": "Minimal makeup, sun-weathered around the eyes from decades of focus work. Jawline defined and angular, with bone structure suggesting the East Asian and Middle Eastern genetic contributions balanced against warmer tones from North African heritage. Subtle fullness to cheekbones reflecting Southeast Asian ancestry. Slight leftward asymmetry to her mouth that becomes pronounced when she tightens her jaw — a tell she's unaware colleagues have learned to dread. Skin well-maintained, no visible acne or blemishes.",
     "distinguishing_marks": [
       "Faint circular scar on left forearm, approximately 2cm diameter, where the subdermal data-storage node was installed — barely visible but detectable on close inspection.",
       "Thin white scar along her right jawline, approximately 4cm, running toward the ear — old, professionally healed, origin unknown."
@@ -252,16 +236,80 @@
     "posture_movement": "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling — she appears to be downloading rather than conversing.",
     "clothing_style": "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
   },
-  "image_prompt": "Reed Sokolov-Kabwit, woman of mixed Sub-Saharan African, Eastern European, and South Asian heritage, 172cm tall, lean muscular build, deep warm brown skin with golden undertones, dark brown hair with silver at temples in close-cropped geometric cut, cosmetic hexagonal grey-amber irises with geometric optical effect, sun-weathered face with defined angular jaw, thin white scar along right jawline, faint circular scar on left forearm from subdermal implant, charcoal suit in expensive understated fabric, white undershirt, matte black polished leather boots, stainless steel watch, posture of controlled precision and deliberate stillness, 2226 cyberpunk professional setting, minimalist aesthetic, cool professional lighting emphasizing the hexagonal eye augmentation, no wasted detail, corporate neural-interface aesthetic, moody and focused atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Reed Tlemcani-Holm, 172cm lean professional woman with warm medium-deep brown skin with golden and olive undertones, angular cheekbones and jawline reflecting East Asian and Middle Eastern heritage, short dark brown hair with silver at temples, striking geometric hexagon iris augmentations in grey and amber that glow unnaturally. Faint scar on right jawline, subdermal data node ridge visible on left forearm. Dressed in immaculate charcoal suit, white undershirt, matte black polished boots. Perfectly upright posture, controlled stillness, hands folded. GLMZ GLMZ setting, cool corporate lighting with neon underglow, background suggests high-tier office or secure facility, her expression neutral and downloadlike, geometric architectural elements. Professional restraint, no wasted movement, armor-like presentation, 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 52.8,
-    "Eastern European": 24.0,
-    "South Asian": 11.0,
-    "Southeast Asian": 6.6,
-    "East Asian": 5.6
+    "Middle Eastern": 32.1,
+    "East Asian": 25.5,
+    "North African": 14.4,
+    "Southeast Asian": 13,
+    "Sub-Saharan African": 10.2,
+    "South Asian": 4.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 6.2,
+        "Afghan Dari": 10.1
+      },
+      "Arab Gulf": {
+        "Kuwaiti": 8.8
+      },
+      "Arab Levantine": {
+        "Jordanian": 7
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Cantonese": 17.4,
+        "Fujianese": 1.2
+      },
+      "Korean": {
+        "Korean": 4.9
+      },
+      "Japanese": {
+        "Japanese": 2
+      }
+    },
+    "North African": {
+      "Maghreb": {
+        "Moroccan": 10.9,
+        "Tunisian": 3.5
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Cebuano": 6
+      },
+      "Cambodian": {
+        "Khmer": 7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ethiopian": 1.9
+      },
+      "Central African": {
+        "Angolan": 3.2,
+        "Gabonese": 0.6
+      },
+      "West African": {
+        "Malian": 4.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.1
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.3
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 1.4
+      }
+    }
+  }
 }

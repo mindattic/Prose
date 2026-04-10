@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60473309874e46a3fa31474",
   "type": "character",
-  "name": "Mourad Vestergaard-Amrani",
+  "name": "Mikhail Malhotra-Halverson",
   "aliases": [
     "Flux",
     "The Contractor"
@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Erkin Santos-Owusu are lean and angular, all sharp edges and visible tension. At 42, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Erkin Santos-Owusu plans to keep it that way. They work as a combat medic out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Erkin Santos-Owusu are one of the ones who actually does it.",
+  "description": "Mikhail Malhotra-Halverson are lean and angular, all sharp edges and visible tension. At 42, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Mikhail Malhotra-Halverson plans to keep it that way. They work as a combat medic out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Mikhail Malhotra-Halverson are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -261,7 +261,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,7 +279,7 @@
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Predominantly North African with significant East Asian admixture, with minor Hispanic/Latin American and Middle Eastern ancestry. This combination produces a striking cross-cultural phenotype: warm brown skin with subtle golden undertones from the North African and East Asian genetic contributions, angular facial structure showing North African bone structure with East Asian eye shape characteristics, and a complexion that bridges both lineages.",
+    "heritage": "Striking polyphonic phenotype from balanced tri-continental ancestry: Eastern European (31.9%), Southeast Asian (31.2%), and South Asian (27.1%) create the primary genetic signature, with smaller contributions from Hispanic/Latin American (6.0%) and Sub-Saharan African (3.8%) adding warmth and complexity. The result is a face that resists easy categorization — high, prominent cheekbones with the angular structure of Eastern European ancestry combined with the eye shape and subtle epicanthal fold characteristics of Southeast Asian genetics. South Asian genetics contribute warm golden undertones and slight facial breadth, while African ancestry adds luminosity and depth to skin tone. Central Asian influences visible in cheekbone prominence and jawline width. This is a face marked by genetic heterogeneity: neither pale nor deep brown, but a warm, luminous golden-brown that shifts subtly with light.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with visible corded muscle — the build of someone who moves constantly and eats inconsistently. Minimal body fat, pronounced shoulders and forearms from surgical precision work and field extraction tasks.",
@@ -287,8 +287,8 @@
     "hair_style": "Pulled back tight, practical — either in a short braid or secured with a single band. No vanity in it.",
     "hair_length": "Medium",
     "eye_color": "Chrome iris rings over dark brown — cybernetic overlay with visible LED micro-circuitry",
-    "skin_tone": "Warm golden-brown with subtle undertones reflecting North African and East Asian heritage blend",
-    "complexion": "Angular face with high, prominent cheekbones showing North African structure combined with slightly narrower eye contours from East Asian ancestry. Sharp jawline. Heavily scarred — not from age but from impact trauma and surgical revision. Skin shows old burn marks along the right side of the neck (cortical bomb removal site). No grooming pretense; scars are left untattooed and visible. Perpetually tired eyes with the characteristic intensity of someone whose vision is partially cybernetic.",
+    "skin_tone": "Warm golden-brown with luminous depth from balanced Eastern European, Southeast Asian, South Asian, and African genetic blend — rich and complex, catching light with subtle golden undertones",
+    "complexion": "Angular face with high, prominent cheekbones showing Eastern European structure combined with slightly narrower eye contours and subtle epicanthal fold characteristics from Southeast and South Asian ancestry. Sharp jawline with subtle width from Central Asian genetics. Heavily scarred — not from age but from impact trauma and surgical revision. Skin shows old burn marks along the right side of the neck (cortical bomb removal site). No grooming pretense; scars are left untattooed and visible. Perpetually tired eyes with the characteristic intensity of someone whose vision is partially cybernetic.",
     "distinguishing_marks": [
       "Jagged scar running from right temple to jaw — pale and raised, approximately 12cm, from blunt force trauma",
       "Network of fine white scars across both palms and inner forearms — surgical and field trauma overlay",
@@ -300,32 +300,62 @@
     "posture_movement": "Economical and precise — moves like someone trained in field medicine under fire. Weight shifts are calculated. Hands are steady and rarely still. Default posture is slightly forward, ready. Eyes track multiple points simultaneously — a constant low-level tactical assessment of the environment. Smiles are rare and brief.",
     "clothing_style": "Tier 3-4 practical: dark synthetic cargo pants with reinforced thigh pockets (medical supply storage), fitted tactical undershirt with moisture-wicking tech, oversized weatherproof jacket with interior armor plating (visible when jacket moves). Boots are heavy-duty combat-rated with grip-soles. A surgical satchel is constant — real leather, old, scarred from use. Minimal jewelry beyond a worn titanium med-alert bracelet. Everything is maintained obsessively, nothing is decorative."
   },
-  "image_prompt": "Mourad Vestergaard-Amrani, 178cm lean angular field medic with warm golden-brown skin reflecting North African and East Asian heritage blend, high cheekbones and sharp jawline covered in pale surgical and trauma scars. Dark hair graying at temples pulled back tight. Cybernetic eyes with chrome iris rings glowing faintly amber, visible LED circuitry around orbital sockets. Prominent cortical bomb removal scar thick ridge along right neck and upper shoulder. Jagged 12cm scar from right temple to jaw. Hands scarred with fine white surgical marks. Dark tactical cargo pants, fitted moisture-wicking undershirt, oversized weatherproof jacket with visible interior armor plating, heavy combat boots. Old worn leather surgical satchel. Titanium med-alert bracelet. Standing in low warm amber cyberpunk lighting, 2226 GLMZ urban medical facility or extraction site, perpetually tired expression, economical posture slightly forward, steady hands at rest but ready. Cyberpunk 2200s field medicine aesthetic, gritty and worn, no vanity, everything meticulously maintained. --ar 2:3 --v 6",
-  "related_entities": [
-    "Cem Watanabe-Amponsah",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nika Svensson-Kone",
-    "Nnabuchi Svensson-Qarabağlı",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TERMINUS",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Pure Hand",
-    "The Suture Collective",
-    "VitaCore FlowGuard Hemodynamic Regulator"
-  ],
+  "image_prompt": "Mikhail Malhotra-Halverson, GLMZ, portrait of a lean angular man with luminous golden-brown skin from mixed Eastern European, Southeast Asian, and South Asian heritage. High prominent cheekbones, sharp jawline, subtle epicanthal fold. Dark brown hair graying at temples, pulled back tight. Chrome iris cybernetic eyes with visible LED circuitry glowing faintly amber, suture marks at temples. Jagged pale scar from right temple to jaw, thick raised scar along right neck from cortical bomb removal, surgical scars across palms and forearms. Intense, tired expression, constantly assessing surroundings. Wearing dark tactical cargo pants, fitted moisture-wicking undershirt, oversized weatherproof jacket with visible interior armor plating, combat-rated boots. Real leather surgical satchel worn over shoulder. Titanium med-alert bracelet. Precise economical posture, hands steady. Low-key neo-noir medical field operative aesthetic, moody atmospheric lighting emphasizing scar tissue and cybernetic components, gritty urban Great Lakes Metropolitan Zone setting --ar 2:3 --v 6",
+  "related_entities": [],
   "genetic_ancestry": {
-    "North African": 49.0,
-    "East Asian": 36.5,
-    "Hispanic/Latin American": 10.2,
-    "Middle Eastern": 4.3
+    "Eastern European": 31.9,
+    "Southeast Asian": 31.2,
+    "South Asian": 27.1,
+    "Hispanic/Latin American": 6.0,
+    "Sub-Saharan African": 3.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Slavic South": {
+        "Bulgarian": 5.5,
+        "Serbian": 6.1
+      },
+      "Slavic East": {
+        "Russian": 12.8,
+        "Ukrainian": 7.5
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 11.1
+      },
+      "Cambodian": {
+        "Khmer": 20.1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 18.6
+      },
+      "Nepali": {
+        "Nepali": 4.1
+      },
+      "Indian": {
+        "Kannada": 4.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 1.6,
+        "Puerto Rican": 0.2
+      },
+      "Central American": {
+        "Guatemalan": 4.2
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Somali": 3.8
+      }
+    }
+  }
 }

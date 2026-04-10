@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5b474a784190877f1d14047",
   "type": "character",
-  "name": "Slate Kovács-Vaai",
+  "name": "Slate Hinojosa-Sefanaia",
   "aliases": [
     "Nou",
     "Nouka"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "The cart circuit: mornings at Calumet Rise worker gate, afternoons at Deepwell Station plaza, evenings outside the Ferment Quarter, near sub-level access near State and Van Buren",
-  "description": "Anouk has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Anouk cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Anouk likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
+  "description": "Slate Hinojosa-Sefanaia has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Slate Hinojosa-Sefanaia cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Slate Hinojosa-Sefanaia likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The cart circuit: mornings at Calumet Rise worker gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,22 +244,14 @@
     "ShieldTech SB-3 'Groundstrike'",
     "Arcturus Defense Solutions",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Circuit",
     "TESSERA TK-4 'Hellhound'",
-    "Silk",
-    "Ablonite-KR",
-    "Hearthstone Firearms Ranch SMG HRS-3 'Cattleman'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Tafara Quiñones-Saarinen",
-    "Tessera Corponation",
-    "The Pure Hand",
-    "Tshiamo Vukić-Arellano",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+    "Slate",
+    "Silk"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Cosmopolitan diaspora blend: Eastern European (23%), Pacific Islander (21.4%), Sub-Saharan African (14.7%), East Asian (14%), South Asian (13.5%), Northern European (13.4%). Genetic mosaic reflects the Ubiquitous Diaspora—features a warm-toned deep brown complexion with subtle undertones from Pacific Islander and South Asian ancestry, balanced with Northern European genetic markers creating nuanced facial structure.",
+    "heritage": "Ubiquitous Diaspora blend: Hispanic/Latin American (48.6%), Pacific Islander (18.7%), East Asian (17.7%), Middle Eastern (15.0%). Genetic mosaic creates warm-toned brown complexion with golden and olive undertones from blended Hispanic and Pacific Islander ancestry, refined by East Asian and Middle Eastern features creating distinctive facial structure with balanced proportions.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Lean and sinewy, with developed forearm and shoulder muscle from years of repetitive cart work and lifting heavy stockpots; compact, efficient frame",
@@ -267,8 +259,8 @@
     "hair_style": "High puff, wrapped in orange synthetic silk",
     "hair_length": "Medium (worn gathered)",
     "eye_color": "Deep brown, warm undertone",
-    "skin_tone": "Deep warm brown with golden undertones; melanin-rich with subtle warmth from blended Pacific Islander and South Asian heritage",
-    "complexion": "Smooth, clear skin with warm golden undertones reflecting diverse ancestry; slightly broader cheekbones with gentle angularity from East Asian and Northern European heritage blend; expressive face with mobile eyebrows that move frequently with emotion; face is highly animated and readable; minimal grooming beyond daily care",
+    "skin_tone": "Warm medium-to-deep brown with golden and subtle olive undertones; melanin-rich complexion reflecting the balanced blend of Hispanic/Latin American, Pacific Islander, East Asian, and Middle Eastern ancestry",
+    "complexion": "Smooth, clear skin with warm golden and olive undertones; moderately prominent cheekbones with gentle angularity from East Asian and Middle Eastern heritage; slightly broader face structure from Pacific Islander ancestry; expressive face with mobile eyebrows that move frequently with emotion; face is highly animated and readable; minimal grooming beyond daily care",
     "distinguishing_marks": [
       "Bioluminescent teal subdermal dot pattern cascading across collarbone and upper arms, pulses gently when body temperature rises or during exertion",
       "Heat-resistant callusing and lighter scar tissue across both palms and inner forearms from cart work and steam burns accumulated before thermal hand augmentation"
@@ -277,17 +269,58 @@
     "posture_movement": "Moves with quick, efficient energy; stands with weight shifted forward slightly, ready to move or gesture; hands animate constantly while speaking; leans into conversations; posture relaxes when focused on cooking but becomes restless during downtime",
     "clothing_style": "Tier 4 working-class, secondhand and personalized; worn Arcturus-branded apron (secondhand, covered in embroidered patches including 'ASK ME ABOUT BABA STOCK', safety pins, and accumulated vendor cooperative pins); layered with heat-resistant synthetic undergarments; practical closed-toe shoes suitable for cart work; orange synthetic silk head wrap; minimal jewelry except for a small charm or talisman worn on a cord"
   },
-  "image_prompt": "Slate Kovács-Vaai, 168cm lean sinewy figure with warm deep brown skin and golden undertones, animated expressive face with mobile eyebrows, black hair gathered in high puff wrapped in bright orange synthetic silk. Bioluminescent teal biophotonic subdermal pattern glowing softly across collarbone and upper arms, pulsing faintly with body heat. Visibly callused and scarred hands and forearms from years of heat work. Wearing secondhand Arcturus-branded apron covered in embroidered patches and safety pins over heat-resistant synthetics, practical work shoes. Quick energetic posture leaning forward, hands animated mid-gesture while speaking. Cyberpunk 2200s Great Lakes Metropolitan Zone, vendor cart setting with warm ambient lighting catching the gentle teal bioluminescence, worn but personalized working-class aesthetic, hyperlocal food vendor vibes --ar 2:3 --v 6",
+  "image_prompt": "Slate Hinojosa-Sefanaia, lean 168cm figure with warm medium-brown skin glowing with golden and olive undertones, black hair in high puff wrapped in bright orange synthetic silk. Bioluminescent teal biophotonic dots cascade across collarbone and upper arms, pulsing softly. Heat-scarred callused hands visible beneath heat-resistant synthetic layers. Wearing secondhand Arcturus apron covered in patches and cooperative pins, practical closed-toe shoes. Face animated and expressive with prominent cheekbones, deep brown eyes, mobile eyebrows reflecting East Asian and Middle Eastern features blended with broader Pacific Islander face structure. Quick, efficient movement, weight forward, hands gesturing. GLMZ Great Lakes Metropolitan Zone, warm ambient lighting catching the bioluminescent geneware, gritty vendor cart aesthetic, working-class dignity, neon-tinged shadows, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 23.0,
-    "Pacific Islander": 21.4,
-    "Sub-Saharan African": 14.7,
-    "East Asian": 14.0,
-    "South Asian": 13.5,
-    "Northern European": 13.4
+    "Hispanic/Latin American": 48.6,
+    "Pacific Islander": 18.7,
+    "East Asian": 17.7,
+    "Middle Eastern": 15
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 43.7
+      },
+      "Mexican": {
+        "Mexican": 4.9
+      }
+    },
+    "Pacific Islander": {
+      "Micronesian": {
+        "Marshallese": 7.1
+      },
+      "Polynesian": {
+        "Hawaiian": 8.7
+      },
+      "Melanesian": {
+        "Fijian": 2.9
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Sichuanese": 1.5
+      },
+      "Japanese": {
+        "Japanese": 8
+      },
+      "Korean": {
+        "Korean": 8.2
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 8.2
+      },
+      "Kurdish": {
+        "Kurdish": 0.8
+      },
+      "Arab Levantine": {
+        "Lebanese": 6
+      }
+    }
+  }
 }

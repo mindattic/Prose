@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6427146a4740910fcecb02a",
   "type": "character",
-  "name": "Ember Kjellberg",
+  "name": "Paloma Ibarra",
   "aliases": [
     "Weld",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
-  "description": "Kenji Granlund-Tawiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nKenji Granlund-Tawiah has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Paloma Ibarra is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nPaloma Ibarra has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.18,
@@ -263,7 +263,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kessler Row",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,34 +281,15 @@
   ],
   "related_entities": [
     "The Gradient Compact",
+    "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Clover",
-    "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus Defense Solutions",
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Arcturus ST-4 'Verdict'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Independent Micro-Grid Power Cooperative",
-    "Kang-Petrov Arms KPS-7V 'Verdict'",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Quilt",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Filament",
-    "The Heritage Vault",
-    "The Wire Taps",
-    "Vanta Ordnance Phalanx VO-8 'Centurion'",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Felix Roundtree",
+    "Pellucid Systems"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Predominantly East Asian with significant Hispanic/Latin American, South Asian, and minor Sub-Saharan African ancestry — a striking blend of continental genetics resulting in a unique phenotype that defies simple categorization. The East Asian foundation dominates bone structure and coloration, while the admixture creates unexpected warmth and dimensional complexity.",
+    "heritage": "Complex Pan-Global blend: Hispanic/Latin American foundation (35.6%) mixed with substantial East Asian (26.0%), South Asian (25.3%), and Sub-Saharan African (13.1%) ancestry. Bone structure reflects this four-way synthesis — East Asian orbital structure and cheekbone prominence balanced by broader South Asian nasal architecture and African lip fullness. The genetic admixture creates striking dimensional facial geometry: rounded East Asian face shape softened by Latin American warmth, deepened by African and South Asian richness. A truly borderless phenotype that defies simple categorization.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Compact and densely muscled, built low and wide through the shoulders and hips — engineered for leverage and impact absorption rather than height. No excess fat; every kilogram is functional mass.",
@@ -316,8 +297,8 @@
     "hair_style": "Close-cropped and practical, maintained with military precision",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and constantly scanning",
-    "skin_tone": "Warm tan complexion with golden and olive undertones — the result of East Asian primary ancestry blended with Hispanic/Latin American and South Asian contributions, creating a rich, dimensional skin color with subtle warmth that shifts in different lighting",
-    "complexion": "Angular face with high, prominent cheekbones and squared jaw — East Asian bone structure refined through South Asian and Hispanic/Latin American admixture. Minimal grooming beyond function — no jewelry, no vanity. A thin scar runs from his left temple to his cheekbone, pale against his skin. His eyes are set deep and perpetually tired; the kind of tiredness that comes from chronic hypervigilance rather than lack of sleep.",
+    "skin_tone": "Rich warm brown with complex undertone interplay — golden warmth from East Asian and Hispanic/Latin American heritage, deepened and enriched by South Asian and Sub-Saharan African admixture. Dimensional coloration that shifts warm to amber in sunlight, warmer still under warm artificial light. Variegated with subtle depth across cheekbones and jawline.",
+    "complexion": "Broad-structured face reflecting Pan-Global ancestry: prominent rounded cheekbones with fuller definition from South Asian and African heritage, squared jaw with slight softness from Hispanic/Latin American influence, East Asian orbital structure creating slightly hooded eye placement. Wide nasal bridge with slightly flared nostrils — signature of African and South Asian blending. Full lips with defined cupid's bow. Minimal grooming beyond function — no jewelry, no vanity. A thin scar runs from his left temple to his cheekbone, pale against his skin. His eyes are set deep and perpetually tired; the kind of tiredness that comes from chronic hypervigilance rather than lack of sleep.",
     "distinguishing_marks": [
       "Thin pale scar running from left temple diagonally down to cheekbone — old injury, expertly healed",
       "Chemical burn scarring on the right side of his neck, partially hidden by collar — discolored and mottled, approximately 3cm diameter",
@@ -327,15 +308,53 @@
     "posture_movement": "Moves with economical precision — no wasted motion. His weight is distributed low, center of gravity dropped slightly as if perpetually braced for impact. He favors his left side, trusting the right arm's augmented reflexes for reactive work. His eyes move constantly, scanning exits and threats before his body shifts. When still, he appears coiled rather than relaxed.",
     "clothing_style": "Tier 4 utilitarian: reinforced cargo pants in matte black with internal holster stitching, worn synthetic leather jacket with oversized pockets and internal webbing, subdued colors (grays, blacks, dark greens). No logos or corporate branding — anonymity is the goal. Boots are serious — steel-toed, scuffed, maintained for function over appearance. A single piece of genuine hardware: a worn steel watch with a cracked face, kept for unknown sentimental reasons."
   },
-  "image_prompt": "Cyberpunk 2226, Ember Kjellberg: compact 168cm mercenary with East Asian-dominant mixed ancestry (57% East Asian, 20% Hispanic/Latin American, 16% South Asian, 5% Sub-Saharan African), warm golden-tan complexion, angular high cheekbones, short dark brown hair with silver threading, deep-set dark brown eyes constantly scanning. Thin pale scar temple to cheekbone, chemical burn scarring on right neck. Right forearm chromed with visible smartgun-link ports and mechanical wrist articulation. Neural-link ports at skull base. Wired reflexes create subtle luminescent musculature distortion across upper arms. Compact muscular build, low center of gravity, coiled posture. Wearing matte black reinforced cargo pants, worn synthetic leather jacket with internal webbing, steel-toed boots. Cracked steel watch. Economical movement, tactical alertness, no jewelry. Dimly lit urban environment, neon glow reflecting off chrome augmentations, noir cyberpunk atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Paloma Ibarra, 168cm tall compact muscular operative with rich warm brown skin blending East Asian, Hispanic, South Asian, and African heritage. Close-cropped dark hair with silver threading, hooded dark eyes perpetually scanning, broad cheekbones, wide nasal bridge, full lips. Thin pale scar from left temple to cheekbone, mottled burn scarring on right neck. Right forearm with chrome smartgun-link augmentation and visible mechanical ports. Neural-link ports at skull base. Dark gray synthetic leather jacket with oversized pockets, matte black cargo pants, steel-toed boots. Low coiled posture, economical movement. Worn steel watch with cracked face visible. GLMZ, neon-lit Great Lakes Metropolitan Zone, moody blue-amber lighting, industrial warehouse setting, tense hypervigilant mood, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 57.8,
-    "Hispanic/Latin American": 20.0,
-    "South Asian": 16.7,
-    "Sub-Saharan African": 5.5
+    "Hispanic/Latin American": 35.6,
+    "East Asian": 26,
+    "South Asian": 25.3,
+    "Sub-Saharan African": 13.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 27.8,
+        "Brazilian": 7.8
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 11.9
+      },
+      "Chinese": {
+        "Mandarin Northern": 5.3,
+        "Shanghainese": 0.9
+      },
+      "Korean": {
+        "Korean": 7.9
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 7.2,
+        "Tamil Sri Lankan": 2
+      },
+      "Indian": {
+        "Tamil": 4.2,
+        "Gujarati": 6.7
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 13.1
+      }
+    }
+  }
 }

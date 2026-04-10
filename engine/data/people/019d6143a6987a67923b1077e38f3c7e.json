@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6987a67923b1077e38f3c7e",
   "type": "character",
-  "name": "Freya Sesay",
+  "name": "Nneka Sesay",
   "aliases": [
     "Pett",
     "The Seamstress"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Narrows — storefront called Volkov's Fine Alterations, wedged between a noodle stall and a collapsed wellness clinic, near Milwaukee and North Ave",
-  "description": "Perpetua is a heavyset woman with Ethiopian-Slavic features — strong jaw, prominent cheekbones, skin a warm medium brown gone fine-lined at the eyes and mouth. Her natural hair is white at the temples and she refuses to change it, though she dyes the rest a rotating series of deep jewel tones depending on her mood; currently it's dark burgundy. Her hands are extraordinary — surgeon-steady, ink-stained at the cuticles, and decorated with color-shifting nail geneware that she uses as a mood-board when designing documents. She dresses in the unassuming uniform of her cover: reading glasses she doesn't need, a tape measure worn like a scarf, sensible shoes.\n\nPerpetua radiates the particular calm of someone who has made peace with the fact that their work is illegal and has decided to be excellent at it anyway. She is meticulous, sardonic, and prone to long explanations about the philosophical nature of identity that clients find disquieting but cannot interrupt. She has been in the Narrows for twenty-two years and considers herself a kind of civic institution. She prays to the E.L.F. of the laminator — a small shrine of laminated prayer-cards and USB offerings on her workbench — with genuine devotion.",
+  "description": "Nneka Sesay is a heavyset woman with Ethiopian-Slavic features — strong jaw, prominent cheekbones, skin a warm medium brown gone fine-lined at the eyes and mouth. Her natural hair is white at the temples and she refuses to change it, though she dyes the rest a rotating series of deep jewel tones depending on her mood; currently it's dark burgundy. Her hands are extraordinary — surgeon-steady, ink-stained at the cuticles, and decorated with color-shifting nail geneware that she uses as a mood-board when designing documents. She dresses in the unassuming uniform of her cover: reading glasses she doesn't need, a tape measure worn like a scarf, sensible shoes.\n\nNneka Sesay radiates the particular calm of someone who has made peace with the fact that their work is illegal and has decided to be excellent at it anyway. She is meticulous, sardonic, and prone to long explanations about the philosophical nature of identity that clients find disquieting but cannot interrupt. She has been in the Narrows for twenty-two years and considers herself a kind of civic institution. She prays to the E.L.F. of the laminator — a small shrine of laminated prayer-cards and USB offerings on her workbench — with genuine devotion.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -162,7 +162,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -179,38 +179,14 @@
   "related_entities": [
     "The Narrows Compact",
     "Kang-Petrov Arms KPS-12 'Workbench'",
+    "Volkov's",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dzintars Owusu-Nkemdirim",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'",
-    "GLMZ",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Irontide Tidal Energy",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'",
-    "MERIDIAN",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Othniel Babić-Asantewaa",
-    "Patient Zero",
-    "Renzo Tuiaga-Łukasiewicz",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Coffin Nails",
-    "The Narrows",
-    "The Stockyard"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Multi-continental heritage blend: 29% Sub-Saharan African (primarily Ethiopian), 28% Northern European (Scandinavian), 25% Middle Eastern (Levantine), 14% Central Asian, 4% Southeast Asian. The result is a striking phenotype that doesn't resolve neatly into single-region categories—warm medium-dark skin with subtle golden undertones beneath the brown, high cheekbones with Middle Eastern definition, eye shape showing slight Central Asian influence at the inner canthus, and an overall facial structure that speaks to Northern European ancestry through jaw prominence and brow ridge.",
+    "heritage": "Multi-continental heritage blend: 47.6% Sub-Saharan African (predominantly West African), 19.4% Indigenous American, 14.0% Hispanic/Latin American, 13.9% Southeast Asian, 3.2% Eastern European, 1.9% South Asian. The result is a striking phenotype reflecting deep African roots with significant Amerindian and Southeast Asian influence—warm medium-dark skin with subtle golden and olive undertones, high cheekbones with West African prominence blended with subtle Southeast Asian eye shape at the inner canthus, and overall facial structure reflecting the genetic dominance of Sub-Saharan and Indigenous American ancestry.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Heavyset, solidly muscled through the shoulders and torso — the build of someone who has spent five decades leaning over work tables and carrying bolts of fabric. Not soft; dense.",
@@ -218,8 +194,8 @@
     "hair_style": "Worn loose, shoulder-length, with texture suggesting natural curl managed without aggressive straightening",
     "hair_length": "Medium",
     "eye_color": "Dark brown, natural; augmented with retinal enhancement lenses (imperceptible unless examined closely)",
-    "skin_tone": "Warm medium-dark brown with golden undertones—a nuanced blend reflecting Sub-Saharan, Middle Eastern, and Central Asian heritage. Melanin-rich with subtle olive undertones visible in certain light. Sun-weathered but luminous.",
-    "complexion": "Strong-jawed with high, prominently sculpted cheekbones showing Levantine-Ethiopian definition. Fine-lined around eyes and mouth from fifty-two years of focused squinting and dry humor. Skin texture shows years of shop work—not weathered harshly, but lived-in and resilient. Subtle warm undertones enhance the complexity of her brown skin. Grooming fastidious: nails always manicured, often color-shifting; cuticles perpetually ink-stained.",
+    "skin_tone": "Warm medium-dark brown with golden and olive undertones—a nuanced blend reflecting Sub-Saharan African dominance with Southeast Asian and Amerindian warmth. Melanin-rich and luminous, sun-weathered but resilient.",
+    "complexion": "Strong-jawed with high, prominently sculpted cheekbones showing West African definition blended with subtle Southeast Asian and Amerindian features. Fine-lined around eyes and mouth from fifty-two years of focused squinting and dry humor. Skin texture shows years of shop work—not weathered harshly, but lived-in and resilient. Grooming fastidious: nails always manicured, often color-shifting; cuticles perpetually ink-stained.",
     "distinguishing_marks": [
       "Fine wrinkle-map radiating from the outer corners of both eyes — the geography of chronic concentration and sardonic expression.",
       "Ink stains at the cuticles of all ten fingers — professional markers from decades of design and document work.",
@@ -229,16 +205,65 @@
     "posture_movement": "Moves with economical precision — no wasted motion, every gesture purposeful. Posture slightly forward-bent from decades of tailoring work, shoulders rolled inward by habit. Hands are her most expressive feature: they move with surgeon-like steadiness and speak their own language. Sits with one leg extended, the other folded — a position favoring her dominant hand for detail work. Overall demeanor projects absolute calm authority.",
     "clothing_style": "The deliberate uniform of a legitimate tailor: sensible slip-on shoes (dark leather, orthopedic support), neutral-toned trousers (charcoal or black, well-fitted), and a series of long cardigans or work vests in muted earth tones or deep jewel tones that coordinate with her current hair color. A tape measure worn habitually around her neck like a scarf. Reading glasses on a beaded chain. Apron pockets always full of small tools, chalk, thread, needle cases. Tier 3-4 practicality: nothing flashy, nothing corporate, everything functional and built to last."
   },
-  "image_prompt": "Freya Sesay, 52-year-old master tailor with complex multi-continental heritage, warm medium-dark brown skin with golden undertones, high sculpted cheekbones, fine wrinkles around dark brown eyes from decades of precise work. Shoulder-length salt-and-pepper hair with burgundy dye, natural curl texture. Heavyset build, muscular shoulders, economical posture. Wearing charcoal trousers, deep jewel-toned cardigan, tape measure draped around neck like a scarf. Reading glasses on beaded chain. Hands with iridescent color-shifting nail geneware (burgundy-to-teal), visible ink stains at cuticles. Faint quarter-moon burn scar on inner left wrist. Interior tailoring studio, soft warm lighting across work table, focused concentration evident in her expression. Cyberpunk 2226, professional and composed, subtle retinal augmentation invisible. Hyper-detailed hands. --ar 2:3 --v 6",
+  "image_prompt": "Nneka Sesay, 52-year-old master tailor, GLMZ, medium-dark warm brown skin with golden undertones, strong West African cheekbones, fine wrinkles around dark brown augmented eyes, shoulder-length salt-and-pepper hair with deep burgundy-dyed ends, naturally textured curls. Sitting at work table in tailor's shop, posture slightly forward-bent from decades of detail work, economical precise hand movements, color-shifting burgundy-to-teal iridescence nail geneware visible on all fingers, reading glasses on beaded chain around neck, tape measure draped like a scarf. Wearing charcoal trousers, deep jewel-toned work cardigan, apron with visible tools. Surrounded by fabric swatches and precision tailoring equipment. Calm authority in expression, surgeon-like focus. Warm shop lighting with neon accents reflecting off iridescent fingernails. Atmospheric neo-noir GLMZ setting, Great Lakes Metropolitan Zone, utilitarian and practiced aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 29.1,
-    "Northern European": 28.2,
-    "Middle Eastern": 24.6,
-    "Central Asian": 13.7,
-    "Southeast Asian": 4.4
+    "Sub-Saharan African": 47.6,
+    "Indigenous American": 19.4,
+    "Hispanic/Latin American": 14,
+    "Southeast Asian": 13.9,
+    "Eastern European": 3.2,
+    "South Asian": 1.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 8.9,
+        "Angolan": 38.7
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Nahua": 9.6,
+        "Maya": 8
+      },
+      "Great Lakes Nations": {
+        "Potawatomi": 1.3,
+        "Menominee": 0.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 10.1
+      },
+      "Mexican": {
+        "Mexican": 3.9
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 11.8
+      },
+      "Filipino": {
+        "Ilocano": 2.1
+      }
+    },
+    "Eastern European": {
+      "Slavic South": {
+        "Serbian": 2.2,
+        "Bosnian": 1
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 0.8
+      },
+      "Pakistani": {
+        "Punjabi Pakistani": 1.1
+      }
+    }
+  }
 }

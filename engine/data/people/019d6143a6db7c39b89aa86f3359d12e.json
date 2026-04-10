@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6db7c39b89aa86f3359d12e",
   "type": "character",
-  "name": "Ember Khorasani",
+  "name": "Ember Ekwensi",
   "aliases": [
     "Dustfoot",
     "The Wick"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Kenosha Crossing transit depot, sleeping in the secondary overflow shelter, near beyond the Western Perimeter",
-  "description": "Sorrel is built like someone who has been compressed by hard weather — short, dense, with calloused hands that crack at the knuckles in winter and never quite heal before summer comes again. Her skin is deep umber-brown and her natural hair has been shorn close to her skull on one side, the other grown out into a lopsided cloud she pins back with whatever she finds. A faded geometric tattoo in the Amharic-inflected style of the Addis agri-collectives covers her left shoulder and collarbone — she got it at seventeen when she thought she was staying. She has color-changing pupils, a cheap cosmetic mod she bought secondhand; they cycle slowly between amber and grey-green without her controlling it, which embarrasses her and amuses everyone else.\n\nSorrel is methodical and difficult to rattle, which makes her seem colder than she is. She has a gift for reading weather systems — real weather, not the synthetic climate management Meridian pushes — and she sells this skill to caravan leads who want to know if the hyperlane north will ice. She prays hard to the ELF she calls the Dry Tongue, a harvest spirit she insists inhabits every broken irrigation sensor in every agricultural zone from Escanaba to the Indiana shelf. She doesn't talk much about where she came from but she notices everything, and the things she chooses not to say are always the most important ones.",
+  "description": "Ember Ekwensi is built like someone who has been compressed by hard weather — short, dense, with calloused hands that crack at the knuckles in winter and never quite heal before summer comes again. Her skin is deep umber-brown and her natural hair has been shorn close to her skull on one side, the other grown out into a lopsided cloud she pins back with whatever she finds. A faded geometric tattoo in the Amharic-inflected style of the Addis agri-collectives covers her left shoulder and collarbone — she got it at seventeen when she thought she was staying. She has color-changing pupils, a cheap cosmetic mod she bought secondhand; they cycle slowly between amber and grey-green without her controlling it, which embarrasses her and amuses everyone else.\n\nEmber Ekwensi is methodical and difficult to rattle, which makes her seem colder than she is. She has a gift for reading weather systems — real weather, not the synthetic climate management Meridian pushes — and she sells this skill to caravan leads who want to know if the hyperlane north will ice. She prays hard to the ELF she calls the Dry Tongue, a harvest spirit she insists inhabits every broken irrigation sensor in every agricultural zone from Escanaba to the Indiana shelf. She doesn't talk much about where she came from but she notices everything, and the things she chooses not to say are always the most important ones.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -180,7 +180,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Kenosha Crossing transit depot",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,39 +244,19 @@
   "registered_firearms": [],
   "related_entities": [
     "Kenosha Crossing",
+    "Plot 17",
+    "TESSERA ES-4 'Perimeter'",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
-    "Babel",
+    "Indiana Dead Zone",
     "Vantablack FH-20 'Convoy'",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Déjà Vu",
-    "Compass Rose",
-    "Indiana Dead Zone",
-    "Arcturus Exo-Runner Frame",
-    "Cem Osei-Petrov",
-    "Cezar Watanabe-Gyasi",
-    "Emeka Johansson-Orozco",
-    "Escanaba Gateway",
-    "Ironclad Agrisystems Hemostatic Grain Pack",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "MERIDIAN",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Nkiruka Haapasalo-Bengtsson",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Plot 17",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Street Custom 'Glass Garden' Caltrops",
-    "TESSERA ES-4 'Perimeter'",
-    "The Glass Garden",
-    "The Heritage Vault",
-    "The Peninsula",
-    "Tsveta Nwosu-Karlsdóttir"
+    "Compass Rose"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Cosmopolitan diaspora blend: 30% Middle Eastern (Persian/Levantine structure), 24% Eastern European (Slavic bone geometry), 15.5% Pacific Islander (broader frame tendency), 14.9% East Asian (eye shape, cheekbone definition), 8% Hispanic/Latin American, 7.6% Sub-Saharan African. A truly mixed-heritage face reflecting GLMZ genetic reality — no single heritage dominant.",
+    "heritage": "Sub-Saharan African dominant (52.7%) with significant Hispanic/Latin American (31.3%) and South Asian (16.0%) ancestry. Features reflect this tri-continental blend: rich deep brown skin tone with warm golden undertones from the combination of African earthiness, Latin American sun exposure, and South Asian pigmentation. Facial structure shows high, defined cheekbones and prominent orbital bones characteristic of South Asian and Sub-Saharan African ancestry, balanced by a strong, robust jawline and broader facial geometry from African heritage, with subtle angular refinement from Latin American mixing. A true GLMZ genetic reality — three major ancestral streams in seamless integration.",
     "height_cm": 158,
     "weight_kg": 62,
     "build": "Compact and densely muscled, shaped by decades of agricultural labor. Shoulders are broad relative to frame, forearms corded with working strength. Low body fat, defined musculature in legs and core. Physical compression suggests someone built for endurance rather than speed.",
@@ -284,8 +264,8 @@
     "hair_style": "Asymmetrical — shaved close on left side (approximately 2mm), right side grown into an unruly cloud roughly 8-10cm long, often pinned back with salvaged wire, industrial clips, or whatever fastener is available",
     "hair_length": "Short/Medium (asymmetrical)",
     "eye_color": "Cosmetic color-shifting pupils (malfunctioning secondhand mod) — cycle slowly and involuntarily between amber and grey-green with no user control. Visible circuitry shimmer in bright light around iris",
-    "skin_tone": "Deep warm brown with complex undertones — earthiness from mixed Sub-Saharan and Pacific Islander heritage, refined by Middle Eastern and Eastern European pigmentation creating subtle golden undertone. Rich, sun-darkened patina.",
-    "complexion": "Weathered and lined beyond her 34 years from sun and wind exposure. Skin is dry, cracked at knuckles and fingertips year-round with scars that never fully heal between seasons. Calluses on palms, heel of hands, ball of foot. Face is lean with high, defined cheekbones (East Asian influence), strong jawline set in permanent mild tension, slight orbital bone prominence (Eastern European structure). Forehead broad and prominent.",
+    "skin_tone": "Deep warm brown with golden undertones — rich earthiness from Sub-Saharan African heritage enhanced by Latin American sun-darkening and refined by South Asian pigmentation creating subtle luminosity. Complex, sun-weathered patina.",
+    "complexion": "Weathered and lined beyond her 34 years from sun and wind exposure. Skin is dry, cracked at knuckles and fingertips year-round with scars that never fully heal between seasons. Calluses on palms, heel of hands, ball of foot. Face is lean with high, defined cheekbones (South Asian and African influence), strong robust jawline set in permanent mild tension, prominent orbital bones (Sub-Saharan African structure). Forehead broad and prominent.",
     "distinguishing_marks": [
       "Faded geometric tattoo in Amharic agri-collective style covering entire left shoulder and collarbone — interlocking chevrons and harvest symbols, approximately 15cm across at widest point",
       "Keloid scar tissue on right inner forearm (approximately 12cm long, 2cm wide) from subcutaneous weather sensor array installation — healed unevenly, visible subdermal edges",
@@ -296,17 +276,46 @@
     "posture_movement": "Stands slightly forward-bent, as if perpetually reading ground or sky. Movements are economical and deliberate — no wasted motion. Walks with weight distributed across ball of foot, ready to shift or move quickly. Holds hands loosely, fingers often flexing or pressing against forearm (checking sensor readings). Rarely makes eye contact, but when she does it's sudden and complete. Speaks slowly with long pauses, as if each word is weather being read.",
     "clothing_style": "Tier 4-5 working class, heavily patched and layered for thermal regulation. Primary layer: faded grey synthetic worksuit with GREENBELT SEASONAL COLLECTIVE faint stencil on chest pocket (worn nearly invisible). Over this: canvas field jacket (sand-colored, stained with mineral residue and soil) with multiple pockets hand-reinforced with tape. Cargo pants in reinforced weave, pockets stuffed with worn laminated route maps and sensor calibration tools. Boots are heavily resoled, laced with wire. A thin cord around her neck holds a small plastic icon of an unidentifiable harvest saint — possibly homemade. No jewelry. All clothing shows deliberate repair rather than replacement — pragmatic tier 5 aesthetic."
   },
-  "image_prompt": "Ember Khorasani, 158cm weathered working-class woman with rich deep warm brown skin, high cheekbones, lean angular face marked by sun exposure and work. Asymmetrical black hair: close-shaved left side, wild 8-10cm cloud right side pinned back with salvaged wire. Malfunctioning color-shifting iris cybernetics cycling amber-grey-green with visible circuitry shimmer. Faded Amharic geometric tattoo across left shoulder and collarbone. Subcutaneous sensor ports visible along both inner forearms, keloid scarring on right arm. Compact, densely muscled build. Wearing: faded grey worksuit under sand-colored patched canvas field jacket, reinforced cargo pants, heavily resoled boots. Small harvest saint pendant on cord. Calloused hands, deep forehead creases, weathered skin with crack-scar patterns. Standing forward-bent posture, economical movement. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, industrial work zone with overcast grey-green sky, harsh afternoon light. Gritty, pragmatic tier 5 aesthetic. Documentary realism, photorealism --ar 2:3 --v 6",
+  "image_prompt": "Ember Ekwensi, 34-year-old weather sensor technician, 158cm tall with compact, densely muscled build from agricultural labor. Deep warm golden-brown skin reflecting Sub-Saharan African, Hispanic/Latin American, and South Asian heritage. Asymmetrical black hair — shaved close on left side, right side grown long and unruly, pinned back with salvaged wire. Face lean with high defined cheekbones, strong robust jawline, prominent orbital bones, broad forehead deeply lined from years of squinting at sky and weather systems. Cosmetic color-shifting eyes cycling between amber and grey-green with visible circuitry shimmer. Weathered, sun-darkened complexion with dry, cracked skin, calluses on hands and feet, faded keloid scars on inner forearms from subdermal sensor array. Faded geometric Amharic tattoo covering left shoulder and collarbone with interlocking chevrons and harvest symbols. Dressed in faded grey patched synthetic worksuit, sand-colored canvas field jacket stained with soil and mineral residue, reinforced cargo pants, heavily resoled boots laced with wire. Plastic harvest saint icon on thin cord around neck. Standing slightly forward-bent, economical posture. GLMZ GLMZ, neon rain-slicked agricultural sector, dramatic overhead lighting catching subcutaneous sensor ports and iris mod shimmer, gritty realism, weathered worker aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 30.0,
-    "Eastern European": 24.0,
-    "Pacific Islander": 15.5,
-    "East Asian": 14.9,
-    "Hispanic/Latin American": 8.0,
-    "Sub-Saharan African": 7.6
+    "Sub-Saharan African": 52.7,
+    "Hispanic/Latin American": 31.3,
+    "South Asian": 16
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "Zambian": 8.8,
+        "South African": 3.4
+      },
+      "West African": {
+        "Malian": 32.2
+      },
+      "Central African": {
+        "Gabonese": 8.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 31.3
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 8.7
+      },
+      "Pakistani": {
+        "Baloch": 3.3,
+        "Sindhi": 2
+      },
+      "Sri Lankan": {
+        "Sinhalese": 1.7,
+        "Tamil Sri Lankan": 0.3
+      }
+    }
+  }
 }

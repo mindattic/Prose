@@ -4,7 +4,7 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A news report, broadcast, or historical event record from Meridian 88's history.
+/// A news report, broadcast, or historical event record from GLMZ's history.
 /// Presented as a newscaster's review — wars, disasters, terrorism, corporate conflicts,
 /// political upheavals, and the events that shaped a world where citizens hire runners
 /// to solve problems the system won't.

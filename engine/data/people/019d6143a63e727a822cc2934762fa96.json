@@ -1,7 +1,7 @@
 {
   "id": "019d6143a63e727a822cc2934762fa96",
   "type": "character",
-  "name": "Nyx Raghavan-Dalgaard",
+  "name": "Nyx Abdykadyrov-Dalgaard",
   "aliases": [
     "Pyrite",
     "The Professional"
@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
-  "description": "Kamala Medina-Quaye is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Nyx Abdykadyrov-Dalgaard is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -263,7 +263,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -281,44 +281,14 @@
   ],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "GLMZ",
     "Geartown",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Arcturus Exo-Runner Frame",
-    "Aybek Sato-Poku",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Crucible RE-2 'Receptionist'",
-    "Doru Fofana-Câmpeanu",
-    "Glenville Sound",
-    "Inductive Thermal Lance",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Quilt",
-    "TERMINUS",
-    "TESSERA TC-3 'Crucible'",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Peninsula",
-    "The Quiet Room",
-    "The Wire Taps",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Sub-Saharan African (37.6%), South Asian (29.8%), Southeast Asian (11.6%), Hispanic/Latin American (11.4%), Northern European (9.6%) — a truly global genetic blend that manifests in her high cheekbones and broad facial structure with South Asian undertones, warm medium-to-deep brown skin with subtle golden and copper shifts, and eyes that carry both African and South Asian depth",
+    "heritage": "Central Asian (66.0%), Northern European (24.2%), Sub-Saharan African (9.8%) — a striking blend that manifests in her prominent high cheekbones with Central Asian geometry, warm medium-brown skin with golden undertones that deepen toward honey-amber in certain light, and deep-set eyes carrying both Northern European coolness and Central Asian intensity. The Sub-Saharan ancestry adds subtle fullness to her lips and a richness to her skin's natural luminosity.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Lean and angular with ropy muscle definition. Her frame is all functional tension — minimalist, built for explosive movement rather than mass. Synthetic muscle replacement in both legs gives them a subtly different shape than the rest of her body: smoother curves, too perfect, chrome gleaming under the skin.",
@@ -326,8 +296,8 @@
     "hair_style": "Pulled back in a tight functional braid, practical and never loose",
     "hair_length": "Long — reaches mid-back when unbraided, but always secured",
     "eye_color": "Deep brown with a faint tremor in the iris — side effect of wired reflexes",
-    "skin_tone": "Deep warm brown with golden-copper undertones that shift in light, reflecting the rich blend of Sub-Saharan, South Asian, and Southeast Asian ancestry. The tone is even and luminous, unmarked except for deliberate scars from work and augmentation",
-    "complexion": "High, prominent cheekbones with South Asian structure softened by broader African facial geometry. Angular jaw, refined narrow nose. Skin is weathered in the way of someone who spends time outdoors and doesn't prioritize skincare — small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that's just her baseline intensity.",
+    "skin_tone": "Warm medium-golden brown with honey-amber undertones, even and luminous across her frame. The tone reflects the blended genetics of Central Asian prominence, Northern European translucence, and Sub-Saharan richness, creating a skin surface that catches light with subtle warmth. Unmarked except for deliberate scars from work and augmentation.",
+    "complexion": "High, prominent cheekbones with Central Asian structure, angular jaw, refined narrow nose with slightly fuller lips from Sub-Saharan ancestry. Skin is weathered in the way of someone who spends time outdoors and doesn't prioritize skincare — small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that's just her baseline intensity.",
     "distinguishing_marks": [
       "Surgical scar running the length of her left thigh, visible through the chrome — where the synthetic muscle was installed six years ago",
       "Matching scar on the right thigh, same vintage",
@@ -339,16 +309,52 @@
     "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise — no wasted motion. When she walks, there's a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don't quite move in sync with her natural reflexes. In high-stress moments, she twitches — fingers drumming, jaw clenching — the chemical-mechanical hybrid augmentation pushing her toward action.",
     "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket — the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
   },
-  "image_prompt": "Nyx Raghavan-Dalgaard, cyberpunk 2226, lean angular 168cm woman with deep golden-brown skin reflecting Sub-Saharan, South Asian, Southeast Asian heritage, high sculpted cheekbones and refined features, dark braided hair with silver threading, intense deep brown eyes with subtle iris tremor. Long sleeveless tank under reinforced industrial jacket, tactical cargo pants, steel-toed boots. Chrome synthetic muscle visible in legs through translucent dermal sheaths, gleaming metallic sheen in calves. Fine white burn scars across palms and forearms, surgical scars on thighs, keloid above collarbone. Coiled spring posture, economical movements, tension in every muscle. Standing in industrial urban setting, neon reflected off chrome augmentations, cool blue and amber lighting, atmospheric ozone haze, worn and functional aesthetic, no makeup, weathered intensity, functional beauty. --ar 2:3 --v 6",
+  "image_prompt": "Nyx Abdykadyrov-Dalgaard, 168cm lean angular frame, Central Asian high cheekbones with warm golden-honey brown skin, deep-set brown eyes with neural tremor. Dark brown hair with silver temples pulled in tight functional braid, mid-back length. Sleeveless tactical tank under reinforced industrial jacket, dark gray cargo pants, steel-toed boots. Synthetic muscle augmentations visible in both legs—chrome sheaths with metallic sheen, too-perfect symmetry. Fine white burn scars across palms and forearms, surgical scars along thighs. Standing coiled and tense, weight forward on balls of feet, economical dangerous readiness. GLMZ Great Lakes Metropolitan Zone, industrial setting with neon edge lighting casting shadows across her augmented frame, cool blue and warm amber light playing off the chrome in her legs, gritty utilitarian aesthetic, photorealistic, high contrast, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 37.6,
-    "South Asian": 29.8,
-    "Southeast Asian": 11.6,
-    "Hispanic/Latin American": 11.4,
-    "Northern European": 9.6
+    "Central Asian": 66,
+    "Northern European": 24.2,
+    "Sub-Saharan African": 9.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Iranian Central": {
+        "Hazara": 24.6
+      },
+      "Turkic": {
+        "Kazakh": 18.4,
+        "Kyrgyz": 11.5
+      },
+      "Mongolic": {
+        "Kalmyk": 11.5
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "Irish": 1.2,
+        "English": 0.1
+      },
+      "Germanic": {
+        "German": 14.3
+      },
+      "Scandinavian": {
+        "Swedish": 8.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 6.2
+      },
+      "Central African": {
+        "Congolese": 0.9
+      },
+      "East African": {
+        "Tanzanian": 2.3,
+        "Somali": 0.4
+      }
+    }
+  }
 }

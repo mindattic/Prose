@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5ab7a6a90044b6010975dfb",
   "type": "character",
-  "name": "Odina Hernández-Vestergaard-Sigurdsson",
+  "name": "Thora Vasquez-Alfarsi-Cardenas-Sigurdsson",
   "aliases": [
     "Entropy",
     "The Machine"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Lake Shore and Wacker",
-  "description": "Altan Salazar-Quansah is lean and angular, all sharp edges and visible tension. At 28, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a getaway pilot out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Altan Salazar-Quansah is one of the ones who actually does it.",
+  "description": "Thora Vasquez-Alfarsi-Cardenas-Sigurdsson is lean and angular, all sharp edges and visible tension. At 28, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a getaway pilot out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Thora Vasquez-Alfarsi-Cardenas-Sigurdsson is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.11,
@@ -260,7 +260,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Whitecap",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,30 +274,14 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
+    "Lakefront Creamery",
     "Pale Harbor Anchorage",
     "Slagworks Industrial",
-    "Pellucid Systems",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Fathom Line",
-    "The Pure Hand",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Mixed heritage from Northern Europe (28%), Indigenous Americas (21%), East Asia (17%), Hispanic/Latin America (16%), Eastern Europe (15%), and Sub-Saharan Africa (3%). Genetic blending creates distinctive features: high cheekbones with subtle East Asian influence, warm medium-deep skin tone with golden undertones from Northern European and Indigenous American ancestry, strong angular jawline reflecting Eastern European heritage.",
+    "heritage": "Mixed heritage from Hispanic/Latin American (39.9%), Northern European (27.2%), Sub-Saharan African (11.2%), Middle Eastern (10.3%), and East Asian (9.6%) ancestry. The genetic blend creates striking features: prominent cheekbones with East Asian structure softened by broader Sub-Saharan African contours, warm deep brown skin with golden and olive undertones from the Latin American, Sub-Saharan African, and Middle Eastern mix, strong angular jawline with subtle widening at the base reflecting Middle Eastern structure, and deep-set eyes reflecting the African and Indigenous components of the ancestry.",
     "height_cm": 178,
     "weight_kg": 72,
     "build": "Lean and angular with defined musculature from constant physical conditioning. No excess body fat. Shoulders slightly forward from hours in pilot seats. Wiry rather than bulky — built for endurance and precision, not power.",
@@ -305,8 +289,8 @@
     "hair_style": "Cropped short and functional, often disheveled from helmet wear. No vanity investment.",
     "hair_length": "Short",
     "eye_color": "Deep brown with slight amber undertone in bright light",
-    "skin_tone": "Warm medium-deep brown with golden undertones from the complex blend of Northern European, Indigenous American, East Asian, and Hispanic/Latin American ancestry. Rich in melanin with subtle olive undertones from Eastern European heritage.",
-    "complexion": "High, defined cheekbones with subtle East Asian influence. Angular jawline with slight asymmetry from an old break that healed imperfectly. Eyes set with characteristic depth from mixed Indigenous American and Northern European ancestry. Minimal facial hair — cleanly shaved. Skin has the weathered quality of someone who spends time in open-air cockpits. Fine stress lines around the eyes.",
+    "skin_tone": "Deep warm brown with golden and olive undertones, melanin-rich from the complex blend of Hispanic/Latin American, Sub-Saharan African, and Middle Eastern ancestry, tempered by Northern European and East Asian genetics. The complexion has depth and warmth characteristic of this diverse genetic mixing, with subtle variations in undertone across the face.",
+    "complexion": "High, defined cheekbones with East Asian structure balanced by broader Sub-Saharan African contours and Middle Eastern width across the cheek. Strong angular jawline with slight asymmetry from an old break that healed imperfectly. Eyes set deep and wide-spaced, reflecting mixed Indigenous and African ancestry. Minimal facial hair — cleanly shaved. Skin has the weathered quality of someone who spends time in open-air cockpits. Fine stress lines around the eyes.",
     "distinguishing_marks": [
       "Thin white scar running 3 centimeters along left temple, barely visible unless light catches it — result of early crash",
       "Burn scarring on right forearm (inner wrist to elbow), mottled and silvered with age — chemical exposure during first solo extraction",
@@ -316,17 +300,76 @@
     "posture_movement": "Sits forward, coiled tension even at rest. Movements are economical and precise — nothing wasted. Eyes constantly scanning, tracking movement and light sources. Hands fidget with small objects (lighter, coin, pilot's controller) when stationary. Walks with long strides, shoulders slightly hunched. Gives the impression of someone always ready to move immediately.",
     "clothing_style": "Tier 3-4 functional pragmatism. Black or dark gray flight jacket over close-fitting synthetic base layers. Cargo pants with reinforced pockets. Worn boots with good traction and ankle support. No logos or corporate branding — plain, durable, replaceable. A single piece of jewelry: a worn titanium ring on left ring finger, no obvious significance. Clothing is maintained meticulously but shows honest wear. Sleeves usually rolled to show cyberear ports and forearm scarring — announces augmentations without vanity."
   },
-  "image_prompt": "Odina Hernández-Vestergaard-Sigurdsson, 178cm lean pilot with rich golden-brown skin tone reflecting mixed Northern European, Indigenous American, and East Asian heritage. High defined cheekbones, angular jawline, deep brown eyes with amber undertones. Dark cropped hair, disheveled from helmet wear. Matte gunmetal cyberears flush against skull. Silvered burn scars visible on right inner forearm. Wears black flight jacket over synthetic base layer, cargo pants, worn tactical boots. Titanium ring on left hand. Sits coiled forward in dimly-lit cockpit, hands fidgeting with pilot's controller. Cool blue-green neon light catches temple scar. Cyberpunk 2226, Great Lakes Metropolitan Zone aesthetic. Weathered, intense expression. --ar 2:3 --v 6",
+  "image_prompt": "Thora Vasquez-Alfarsi-Cardenas-Sigurdsson, 178cm tall pilot with deep warm brown skin and golden olive undertones, striking East Asian-African-Middle Eastern-Hispanic blend facial structure. High defined cheekbones, deep-set brown eyes with amber glints, strong angular jawline with old healed break asymmetry. Short dark brown hair with sun bleached streaks, cropped and disheveled from helmet wear. Matte gunmetal cyberears flush-mounted behind hairline. Thin white scar on left temple, silvered burn scarring visible on right forearm from wrist to elbow. Lean muscular build, coiled tension in posture. Wearing black flight jacket over synthetic base layers, cargo pants, worn boots. Sleeves rolled showing cyberear ports and forearm scars. Titanium ring on left ring finger. Sitting forward in coiled readiness, hands fidgeting with lighter, eyes scanning. GLMZ Great Lakes Metropolitan Zone setting, neon light catching scar details and catching warm undertones of deep brown skin, dimly lit cockpit or runner's safe house interior, realistic gritty texture, weathered from constant field work, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 27.9,
-    "Indigenous American": 21.0,
-    "East Asian": 17.3,
-    "Hispanic/Latin American": 16.0,
-    "Eastern European": 14.5,
-    "Sub-Saharan African": 3.3
+    "Hispanic/Latin American": 39.9,
+    "Northern European": 27.2,
+    "Sub-Saharan African": 11.2,
+    "Middle Eastern": 10.3,
+    "East Asian": 9.6,
+    "Southeast Asian": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Central American": {
+        "Honduran": 27.4
+      },
+      "South American": {
+        "Ecuadorian": 2.5,
+        "Peruvian": 4
+      },
+      "Mexican": {
+        "Mexican": 6
+      }
+    },
+    "Northern European": {
+      "British Isles": {
+        "English": 12.1,
+        "Scottish": 15.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 6.3,
+        "Zimbabwean": 4.9
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Jordanian": 1,
+        "Syrian": 0.5
+      },
+      "Kurdish": {
+        "Kurdish": 7.3
+      },
+      "Persian": {
+        "Tajik Persian": 1.1,
+        "Iranian": 0.4
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Shanghainese": 1.7,
+        "Sichuanese": 2
+      },
+      "Korean": {
+        "Korean": 5.9
+      }
+    },
+    "Southeast Asian": {
+      "Laotian": {
+        "Laotian": 1.3
+      },
+      "Vietnamese": {
+        "Vietnamese": 0.2
+      },
+      "Indonesian": {
+        "Javanese": 0.3
+      }
+    }
+  }
 }

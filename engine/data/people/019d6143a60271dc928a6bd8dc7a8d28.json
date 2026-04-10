@@ -1,7 +1,7 @@
 {
   "id": "019d6143a60271dc928a6bd8dc7a8d28",
   "type": "character",
-  "name": "Cleo Pathak-Popescu",
+  "name": "Cleo Guerrero-Oh",
   "aliases": [
     "Meka the Mouth",
     "Broker"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Undertow, based at a food stall called Overflow that serves as his public face, near Milwaukee and Damen",
-  "description": "Emeka is a tall, loud man with the kind of physical presence that makes rooms recalibrate. He has Nigerian-Swedish coloring that surprises people — warm brown skin, hazel eyes, red-tinged hair he keeps cut tight to his skull — and a Mexican grandmother's round face that he inherited completely. He has cat ears in amber-gold, a geneware mod from a decade ago that he got on a dare and has never bothered to reverse because they've become part of his brand. They fold back when he's irritated, which is useful shorthand. He wears bright colors, talks constantly, sells the best grilled cassava flatbreads in the Undertow district as a genuine secondary passion.\n\nThe food stall is real. The food is good. It is also where Emeka sells access to computing resources that don't belong to him — processing cycles skimmed from corporate server farms via distributed exploit packages, storage space in dead zones of Axiom's infrastructure, raw bandwidth siphoned from Ferrogate Transit's reserve systems. He doesn't understand the technical work at a deep level — he has a partner for that, a woman he will never name — but he understands value, he understands clients, and he can talk anyone into a package deal that somehow always benefits him more than it should. He is genuinely funny. This is his most dangerous quality.",
+  "description": "Cleo Guerrero-Oh is a tall, loud man with the kind of physical presence that makes rooms recalibrate. He has Nigerian-Swedish coloring that surprises people — warm brown skin, hazel eyes, red-tinged hair he keeps cut tight to his skull — and a Mexican grandmother's round face that he inherited completely. He has cat ears in amber-gold, a geneware mod from a decade ago that he got on a dare and has never bothered to reverse because they've become part of his brand. They fold back when he's irritated, which is useful shorthand. He wears bright colors, talks constantly, sells the best grilled cassava flatbreads in the Undertow district as a genuine secondary passion.\n\nThe food stall is real. The food is good. It is also where Cleo Guerrero-Oh sells access to computing resources that don't belong to him — processing cycles skimmed from corporate server farms via distributed exploit packages, storage space in dead zones of Axiom's infrastructure, raw bandwidth siphoned from Ferrogate Transit's reserve systems. He doesn't understand the technical work at a deep level — he has a partner for that, a woman he will never name — but he understands value, he understands clients, and he can talk anyone into a package deal that somehow always benefits him more than it should. He is genuinely funny. This is his most dangerous quality.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -170,7 +170,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Undertow",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -236,37 +236,21 @@
     "The Undertow",
     "Grandmother",
     "Tessera Corponation",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Hazel Brink",
-    "Gold",
-    "The Milwaukee Core",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "MERIDIAN",
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Nodar Kuznetsov-Adu",
-    "Stainless Steel",
-    "The Heritage Vault",
-    "The Iron Lotus",
-    "The Wire Taps",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure"
+    "Gold"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian (53.5%) with Eastern European (34.5%) and Northern European (12%) ancestry — a striking blend resulting in warm medium-brown skin with subtle golden undertones, strong cheekbones and defined bone structure from Eastern European heritage, and dark hair with natural depth. The combination creates warm, expressive features with sharp angular accents.",
+    "heritage": "Hispanic/Latin American (51.4%) with East Asian (32.3%), South Asian (10.8%), and Southeast Asian (5.5%) ancestry — a striking global blend resulting in warm medium-brown skin with golden and olive undertones, strong cheekbones and defined bone structure from East and Southeast Asian heritage, dark hair with natural depth, and expressive features that blend angular and rounded elements across multiple continents.",
     "height_cm": 188,
     "weight_kg": 92,
     "build": "Tall and broad-shouldered with soft bulk around the middle — the physique of someone who tastes everything he cooks and doesn't prioritize gym time. Strong through the chest and arms, slight forward lean from decades hunched over a food prep counter.",
     "hair_color": "Dark brown with natural reddish undertones, sun-bleached copper at the temples",
     "hair_style": "Tight fade, kept short and precise; reveals the shape of his skull",
     "hair_length": "Short",
-    "eye_color": "Hazel with amber-brown dominance, warm and expressive",
-    "skin_tone": "Warm medium brown with subtle golden undertones — luminous depth from South Asian heritage, brightened by Northern European genetics",
-    "complexion": "Angular face with strong defined cheekbones and jawline, wide nose, full lips. Perpetually expressive — eyebrows mobile and theatrical. Skin is clear and well-maintained, minimal scarring. Laugh lines around eyes and mouth. A few days' stubble is his default; clean-shaven is rare.",
+    "eye_color": "Dark brown with warm amber flecks, expressive and alert",
+    "skin_tone": "Warm medium brown with golden and subtle olive undertones — luminous depth from the blend of Latin American, East Asian, and South Asian genetics",
+    "complexion": "Angular face with strong defined cheekbones and jawline, moderately wide nose with subtle bridge definition, full lips. Perpetually expressive — eyebrows mobile and theatrical. Skin is clear and well-maintained, minimal scarring. Laugh lines around eyes and mouth. A few days' stubble is his default; clean-shaven is rare.",
     "distinguishing_marks": [
       "Amber-gold geneware cat ears, pointed and alert, positioned where human ears would be — they fold back flat against his skull when he's angry or concentrating, creating a predatory silhouette.",
       "Small tattoo on his left wrist of a cassava root in black ink, stylized almost abstract — his brand mark, often visible when he gestures while talking."
@@ -275,14 +259,45 @@
     "posture_movement": "Expansive and confident — he takes up space and doesn't apologize for it. Constant hand movement when speaking, gestures that sweep outward. Leans against his food stall counter with hip cocked, one foot slightly forward. His cat ears twitch and rotate independently with his attention and emotion — they telegraph his mood before his face does. Moves smoothly for his size; no wasted motion despite the volume he occupies.",
     "clothing_style": "Bright, bold colors — electric blues, lime greens, hot oranges. Tier 3-4 quality: functional and durable rather than luxury, but well-maintained. Favors fitted short-sleeve shirts that show his forearms (good for food work, also shows off his presence). Lightweight cargo pants with multiple pockets in neutral tones. Stainless steel or aluminum jewelry — chunky rings, a chain around his neck. Worn Tier 3 work boots rated for chemical spills and heat. Apron over everything when working the stall — usually patterned in complementary colors to whatever he's wearing underneath. No corpo logos. No gang marks. No attempt to blend in."
   },
-  "image_prompt": "Cyberpunk 2226, tall broad-shouldered South Asian-Eastern European man with warm medium-brown skin and golden undertones, sharp defined cheekbones, dark hair with copper highlights in tight fade, hazel amber-brown eyes. Amber-gold geneware cat ears fold back alertly, rotating with emotion. Expressive face, few days stubble, laugh lines. Wearing electric blue fitted short-sleeve shirt showing muscular forearms, neutral cargo pants, chunky aluminum jewelry, worn work boots. Leaning against a neon-lit food stall counter in the Great Lakes Metropolitan Zone, hips cocked, one foot forward, hands gesturing expressively mid-speech. Warm LED glow reflects off his skin and metal implants. Cyberpunk street food vendor, confident and commanding presence, no apology in his posture. Indoor food stall environment, warm practical lighting, busy background. --ar 2:3 --v 6",
+  "image_prompt": "Cleo Guerrero-Oh, 2226 neo-noir food vendor, tall broad-shouldered man with warm medium-brown skin glowing with golden and olive undertones, strong angular cheekbones and defined jawline blending Latin American and East Asian heritage, dark brown hair with copper sun-bleached temples in tight fade, full lips, expressive warm amber-flecked dark eyes with laugh lines. Signature amber-gold geneware cat ears alert and rotating with attention, creating predatory silhouette. Few days stubble, theatrical mobile eyebrows. Wearing electric blue fitted short-sleeve shirt showing forearm muscles and cassava root tattoo on left wrist, lightweight neutral cargo pants, stainless steel chunky rings and chain necklace, worn Tier 3 work boots. Leaning against food stall counter with confident expansive posture, hip cocked forward, one foot advanced, hands gesturing while speaking. Set in Great Lakes Metropolitan Zone neon-lit street market, holographic menu glowing behind him, volumetric steam rising from cooking prep. Moody neo-noir lighting with neon blues and oranges casting shadows across his face, his cat ears catching highlights. Mood: confident, magnetic, in his element. Gritty, lived-in street vendor aesthetic, no corpo chrome, pure individual presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 53.5,
-    "Eastern European": 34.5,
-    "Northern European": 12.0
+    "Hispanic/Latin American": 51.4,
+    "East Asian": 32.3,
+    "South Asian": 10.8,
+    "Southeast Asian": 5.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Dominican": 41.5
+      },
+      "Central American": {
+        "Guatemalan": 7.6,
+        "Honduran": 2.3
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 32.3
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Punjabi Pakistani": 5.3,
+        "Sindhi": 3.9
+      },
+      "Nepali": {
+        "Nepali": 1.6
+      }
+    },
+    "Southeast Asian": {
+      "Filipino": {
+        "Tagalog": 5.5
+      }
+    }
+  }
 }

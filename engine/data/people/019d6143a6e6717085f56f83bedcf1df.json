@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6e6717085f56f83bedcf1df",
   "type": "character",
-  "name": "Echo Mohammadi",
+  "name": "Abiodun Sesay",
   "aliases": [
     "Sev",
     "The Notary"
@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Narrows — back room of a legitimate print and copy shop called Clearscript, on the corner of Ironvein Passage, near Milwaukee and North Ave",
-  "description": "Séverine has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nSéverine is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in GLMZ that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
+  "description": "Abiodun Sesay has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nAbiodun Sesay is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in GLMZ that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -190,7 +190,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Narrows",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,34 +204,17 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "GLMZ",
+    "Pressure Drop",
     "Ironvein",
+    "Honest Burger",
+    "Corner Slice",
     "The Pure Hand",
-    "The Milwaukee Core",
-    "Highland Park Autonomous Zone",
-    "Irontide Tidal Energy",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "LifeWire SolarShield UV Dermal Protection Layer",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Praevex",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Narrows",
-    "Toivo Diallo-Achebe",
-    "Tshiamo Vukić-Arellano",
-    "Vuk Jorgensen-Toure",
-    "Witness",
-    "Yannick Tofauti-Szarvásy"
+    "Compass Rose",
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian-dominant mixed ancestry with significant Middle Eastern, Sub-Saharan African, and South Asian genetic contribution — a complex blend reflecting the Ubiquitous Diaspora. Facial structure shows East Asian bone geometry with Middle Eastern and African warmth in skin undertones, creating a deliberately nondescript face that reads as 'everywhere and nowhere.'",
+    "heritage": "A genuinely cosmopolitan genetic blend: South Asian ancestry (32.1%) forms the primary foundation with characteristic bone structure and facial proportions, complemented by Sub-Saharan African (22.0%) warmth and depth, Middle Eastern (17.9%) intensity, Pacific Islander (14.9%) soft roundness, Hispanic/Latin American (10.7%) richness, and Indigenous American (2.4%) angular definition. The result is a face that authentically reflects global intermixture—South Asian cheekbones and jawline softened by African warmth, Middle Eastern depth in the eyes, Pacific Islander roundness in the lower face, Latin and Indigenous American angular elements creating distinctive temple and cheekbone definition. A deliberately nondescript face that reads as 'everywhere and nowhere.'",
     "height_cm": 172,
     "weight_kg": 62,
     "build": "Lean and wiry with the kind of functional thinness that comes from long hours hunched over precision work. Shoulders slightly rounded from desk posture, but capable and poised.",
@@ -239,25 +222,87 @@
     "hair_style": "Blunt, chin-length bob cut with no styling — the kind of cut that looks the same in any weather, any light",
     "hair_length": "Medium",
     "eye_color": "Photochromic mod: shifts between grey and warm brown depending on ambient light conditions. The modification creates an uncanny fluidity that makes the eyes difficult to remember or describe with certainty",
-    "skin_tone": "Warm honey-bronze — a complex blend of East Asian, Middle Eastern, and Sub-Saharan African undertones that shifts subtly in different lighting. Neither dark nor pale; calibrated by genetics to blend across multiple lighting conditions.",
-    "complexion": "Fine-featured and precise with subtle East Asian bone structure softened by warmer African and Middle Eastern skin undertones. No visible acne or scarring. Skin is well-maintained but deliberately unmarked — the face of someone who has engineered their own ordinariness. Lips are thin, usually set in a slight, ironic curve. Brow furrowed in the default position of chronic skepticism.",
+    "skin_tone": "Deep warm bronze with complex undertones—South Asian base enriched by Sub-Saharan African warmth and saturation, Middle Eastern depth and intensity, Pacific Islander golden undertones, Latin richness, and Indigenous American copper accents. A genuinely multi-regional complexion that shifts subtly in different lighting.",
+    "complexion": "Broad-planed face with South Asian foundation—slightly wider cheekbones, defined jawline—enriched by the warmth of Sub-Saharan African heritage and the depth of Middle Eastern features. Pacific Islander genetics add subtle roundness to the lower face and cheeks; Latin and Indigenous American ancestry contribute sharp angular definition to the temples and cheekbones, creating distinctive facial geometry. Fine-featured, precise, deliberately unmarked—the face of someone who has engineered their own ordinariness. Lips are thin, usually set in a slight, ironic curve. Brow furrowed in the default position of chronic skepticism. No visible acne or scarring.",
     "distinguishing_marks": [
-      "Subdermal ink tracery visible only under UV light on both palms and inner wrists — faint grid patterns and authentication markers that create a topography only Séverine can read",
+      "Subdermal ink tracery visible only under UV light on both palms and inner wrists — faint grid patterns and authentication markers that create a topography only they can read",
       "Index and middle fingertips perpetually stained with chemical inks in shades of midnight blue, copper, and violet — the colors settle into fine lines and cuticles and never fully wash out"
     ],
     "visible_augmentations": "The photochromic irises are the only immediately visible augmentation — a subtle but unsettling fluidity as the eyes shift tone with ambient light. The subdermal UV-reactive ink is invisible in normal conditions but creates faint discolorations on the hands that could be mistaken for chronic ink exposure if noticed at all.",
     "posture_movement": "Moves with economic precision — no wasted motion. Hands are in constant, minute activity: folding papers, testing texture, running fingertips across surfaces, signing documents with ritualistic care. When still, they sit perfectly upright, but with a coiled readiness. Eyes track movement and light. They walk with a flat, unmemorably normal gait.",
     "clothing_style": "Tier 3-4 working professional: grey or black fitted long-sleeve shirts (cotton-synthetic blend, durable), dark jeans or work trousers, a charcoal linen apron during business hours. In the back room, they swap the apron for a precisely tailored grey waistcoat. No jewelry. Shoes are scuffed, broken-in leather oxfords — practical, silent, replaceable. Everything is chosen to be unremarkable, invisible, forgotten within seconds. The only indulgence is a vintage mechanical watch — a functioning Seiko from the 2090s, worn on the left wrist, kept obsessively accurate."
   },
-  "image_prompt": "Echo Mohammadi, cyberpunk 2226, lean 172cm figure in charcoal grey fitted shirt and dark work trousers, chin-length blunt dark brown bob, honey-bronze skin with mixed East Asian-Middle Eastern-African features, photochromic eyes shifting between grey and warm brown in moody industrial lighting, fine-featured precise face calibrated for ordinariness, thin lips curved in ironic skepticism, hands stained with midnight blue and copper inks on fingertips, subdermal UV-reactive grid patterns on inner wrists, vintage broken-in leather oxfords, scuffed and practical, obsessively accurate Seiko watch on left wrist, coiled posture of economic precision, standing in dimly lit workshop or back room with precise overhead lighting, unmemorable and professional, the kind of face that vanishes from memory seconds after looking away, cyberpunk aesthetic emphasizing anonymity and controlled identity, moody introspective mood --ar 2:3 --v 6",
+  "image_prompt": "Abiodun Sesay, androgynous figure with deep warm bronze skin reflecting South Asian, Sub-Saharan African, Middle Eastern, Pacific Islander, and Latin heritage. Sharp South Asian cheekbones softened by African warmth, angular Indigenous temples, rounded Pacific Islander lower face. Chin-length blunt dark brown bob, unremarkable and styled identically in all conditions. Photochromic eyes shifting between grey and warm brown in ambient light—unsettling and fluid. Thin lips set in slight ironic curve, chronically furrowed brow. 172cm lean wiry build, slightly rounded shoulders from desk work. Wearing grey fitted long-sleeve shirt, dark work trousers, scuffed leather oxfords. Vintage Seiko mechanical watch on left wrist, obsessively maintained. Hands show perpetual midnight blue, copper, and violet ink stains on fingertips. Subdermal UV-reactive grid patterns visible only under specific light on palms and inner wrists. Moves with economic precision, coiled readiness. Precise professional workspace, cool overhead lighting casting subtle shadows, GLMZ aesthetic, nondescript and forgettable yet geometrically striking. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 54.7,
-    "Middle Eastern": 18.5,
-    "Sub-Saharan African": 15.7,
-    "South Asian": 11.1
+    "South Asian": 32.1,
+    "Sub-Saharan African": 22,
+    "Middle Eastern": 17.9,
+    "Pacific Islander": 14.9,
+    "Hispanic/Latin American": 10.7,
+    "Indigenous American": 2.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Indian": {
+        "Malayali": 28.2,
+        "Tamil": 3.9
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 17.4
+      },
+      "West African": {
+        "Sierra Leonean": 1.9,
+        "Senegalese": 2.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Palestinian": 9
+      },
+      "Persian": {
+        "Iranian": 6.2,
+        "Afghan Dari": 2.7
+      }
+    },
+    "Pacific Islander": {
+      "Polynesian": {
+        "Hawaiian": 3.9,
+        "Tuvaluan": 5.4
+      },
+      "Micronesian": {
+        "Kiribati": 2.5,
+        "Marshallese": 3.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Ecuadorian": 2.9,
+        "Brazilian": 2.4
+      },
+      "Central American": {
+        "Guatemalan": 5.2,
+        "Costa Rican": 0.2
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 0.1,
+        "Muscogee": 0.2
+      },
+      "Andean": {
+        "Aymara": 0.8,
+        "Quechua": 0.2
+      },
+      "Mesoamerican": {
+        "Mixtec": 0.7,
+        "Zapotec": 0.4
+      }
+    }
+  }
 }

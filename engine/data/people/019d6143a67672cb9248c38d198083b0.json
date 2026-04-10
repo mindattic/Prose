@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67672cb9248c38d198083b0",
   "type": "character",
-  "name": "Vega Lindström-Kariuki",
+  "name": "Ghita Banerjee-Karimov",
   "aliases": [
     "Blitz",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Navy Pier",
-  "description": "Obed Hedberg-Owusu-Ansah is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a wheelman out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Obed Hedberg-Owusu-Ansah lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Ghita Banerjee-Karimov is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a wheelman out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Ghita Banerjee-Karimov lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.62,
@@ -262,7 +262,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Dockside",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,44 +277,24 @@
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Breck Tannen",
-    "Compass Rose",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Isadora Mwangi-Thorvaldsen",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'",
-    "Lazarus IDP-1 'Teeth'",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nika Svensson-Kone",
-    "Old Harbor",
-    "Oumarou Svec-Ranginui",
-    "Réginald Asomaning-Čabarkapa",
-    "TERMINUS",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "TESSERA CR-12 'Whisper'",
-    "The Fathom Line",
-    "The Human Baseline Alliance",
-    "The Pure Hand",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial",
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Southeast Asian and East Asian primary ancestry (77.1%) with secondary Sub-Saharan African (12.9%) and Northern European (10.0%) heritage. The combination creates distinctly East-Southeast Asian facial structure with warm undertones from the African ancestry and pale depth from Northern European genetics.",
+    "heritage": "North African primary ancestry (34.8%) with substantial South Asian (21.5%) and Central Asian (19.3%) heritage, complemented by Sub-Saharan African (9.6%), Indigenous American (8.4%), and Southeast Asian (6.4%) ancestry. This creates a striking North African-South Asian fusion with warm, complex skin tones and facial structure reflecting the wide geographic blend of the Ubiquitous Diaspora.",
     "height_cm": 168,
     "weight_kg": 58,
     "build": "Wiry and lean with corded muscle from years of high-stress driving and equipment maintenance. Minimal body fat, efficient frame built for speed and reaction time rather than power.",
     "hair_color": "Dark brown, naturally black with early gray threading through the sides",
     "hair_style": "Pulled back in a tight, functional braid; practical, never ornamental",
     "hair_length": "Medium",
-    "eye_color": "Dark brown with faint amber undertones — natural",
-    "skin_tone": "Warm honey-brown with golden undertones, the Southeast Asian-East Asian base enriched by Sub-Saharan warmth. Weathered by exposure and stress, with deeper sun damage on the left side of the face from years of left-hand window driving.",
-    "complexion": "Southeast Asian facial structure with high, prominent cheekbones and a narrower jaw tapering to a defined chin. Eyes slightly almond-shaped, set with the depth characteristic of East Asian ancestry. Skin shows wear — pronounced sun damage and photodamage on left side of face. Faint laugh lines that never quite disappear, even when her expression is neutral. A small scar bisects her left eyebrow.",
+    "eye_color": "Dark brown with amber-hazel undertones — natural",
+    "skin_tone": "Warm bronze with olive undertones, a complex blend of North African golden warmth, South Asian richness, Sub-Saharan depth, and Central Asian earthiness. Sun-weathered with pronounced damage on the left side of face from years of left-hand window driving, giving the skin a layered, lived-in quality.",
+    "complexion": "North African-South Asian facial structure with high, prominent cheekbones characteristic of both ancestral lines, medium-width jaw with definition that speaks to Central Asian heritage. Subtle almond-shaped eyes reflecting Southeast Asian ancestry. Eyes are deep-set, dark and intense. Skin shows significant wear — pronounced sun damage and photodamage concentrated on left side of face, creating asymmetrical aging. Faint laugh lines that never quite disappear, even when expression is neutral. A small scar bisects her left eyebrow.",
     "distinguishing_marks": [
       "Diagonal scar across left eyebrow, approximately 2cm, pale and old",
       "Network of thin white scar tissue across the right shoulder where the cybernetic arm interfaces with biological tissue",
@@ -325,15 +305,68 @@
     "posture_movement": "Coiled restlessness — never fully relaxed, always kinetically ready. Sits forward in chairs. Hands move constantly when talking, the chrome arm moving with the same fluidity as her organic left. Walks with economical precision, eyes tracking exit routes and sight lines. Her default expression is careful neutrality, a mask worn so long it's become the baseline.",
     "clothing_style": "Tier 3-4 utilitarian: reinforced dark tactical pants with cargo pockets and knee pads, worn black synthetic jacket with internal harnesses for equipment, steel-toed boots scuffed from constant movement. Thin subdermal armor weave visible at the collar and cuffs — functional, not fashionable. No jewelry except a faded digital watch on her left wrist. Clothes smell faintly of synthetic oil and diesel. Everything is built for rapid movement and tool access, not style."
   },
-  "image_prompt": "Vega Lindström-Kariuki, 168cm Southeast Asian-East Asian woman with warm honey-brown skin and golden undertones, sharp high cheekbones, almond-shaped dark amber-brown eyes, dark hair in a tight functional braid with gray threading. Left side of face weathered with photodamage, faint laugh lines, diagonal scar bisecting left eyebrow. Full polished chrome cybernetic right arm from shoulder with matte black joints, inhuman smooth articulation. Thin white scar tissue at shoulder interface, faint compass rose gear tattoo on inner right wrist, burn scar on left forearm. Wearing reinforced black tactical pants with knee pads, worn black synthetic jacket with internal harnesses and visible subdermal armor weave at collar and cuffs, scuffed steel-toed boots. Faded digital watch on left wrist. Coiled posture, kinetically ready, careful neutral expression. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit urban setting, functional equipment-driven aesthetic, dim industrial lighting casting sharp shadows across her face, gritty warehouse or vehicle maintenance facility background --ar 2:3 --v 6",
+  "image_prompt": "Ghita Banerjee-Karimov, GLMZ, 168cm lean female driver, warm bronze skin with olive undertones and pronounced left-side sun damage, North African-South Asian-Central Asian fusion ancestry, high cheekbones, deep-set dark eyes with amber flecks, scar bisecting left eyebrow, dark hair streaked with gray pulled into tight functional braid, asymmetrical weathered face with faint laugh lines. Full polished chrome right arm with matte black joints, no flesh-tone covering, mechanical hand with inhuman precision. Wearing reinforced black tactical pants with knee pads, worn black synthetic jacket with visible subdermal armor weave at collar and cuffs, steel-toed scuffed boots. Faded digital watch on left wrist. Coiled restless posture, eyes tracking exit routes, careful neutral expression. Thin compass-rose tattoo with gear-tooth cardinal points on inner right wrist barely visible. Faint burn scar on left forearm. Dimly lit near-future GLMZ vehicle interior or dystopian garage, neon rim-lighting catching the chrome arm, synthetic oil and diesel atmosphere, moody neo-noir lighting, 2200s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Southeast Asian": 41.1,
-    "East Asian": 36.0,
-    "Sub-Saharan African": 12.9,
-    "Northern European": 10.0
+    "North African": 34.8,
+    "South Asian": 21.5,
+    "Central Asian": 19.3,
+    "Sub-Saharan African": 9.6,
+    "Indigenous American": 8.4,
+    "Southeast Asian": 6.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "North African": {
+      "Nile Valley": {
+        "Egyptian": 24.9,
+        "Sudanese": 9.9
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Kannada": 11.9,
+        "Tamil": 9.6
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Kalmyk": 5.9,
+        "Mongolian": 1.7
+      },
+      "Turkic": {
+        "Uzbek": 10.1
+      },
+      "Iranian Central": {
+        "Tajik": 1.6
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 6.6
+      },
+      "East African": {
+        "Ethiopian": 3
+      }
+    },
+    "Indigenous American": {
+      "Mesoamerican": {
+        "Maya": 5,
+        "Nahua": 3.4
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 4.2
+      },
+      "Filipino": {
+        "Tagalog": 1.2
+      },
+      "Vietnamese": {
+        "Vietnamese": 1
+      }
+    }
+  }
 }

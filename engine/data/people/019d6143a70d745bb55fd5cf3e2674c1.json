@@ -1,7 +1,7 @@
 {
   "id": "019d6143a70d745bb55fd5cf3e2674c1",
   "type": "character",
-  "name": "Freya Solberg",
+  "name": "Anya Wojciechowski",
   "aliases": [
     "Vala",
     "The Tailor's Ghost"
@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Burnished Market, Copperhead, near Damen and Armitage",
-  "description": "Valentina is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in GLMZ — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
+  "description": "Anya Wojciechowski is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in GLMZ — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -169,7 +169,7 @@
     "Opportunist": 0.6
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Burnished Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,25 +224,13 @@
   "registered_firearms": [],
   "related_entities": [
     "The Burnished Market",
-    "GLMZ",
     "Copperhead",
     "Tessera Corponation",
-    "Palette",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Emeka Johansson-Orozco",
-    "Lazarus LP-3 'Clinic Spider'",
-    "Patient Zero",
-    "Solina Barreto-Kiptoo",
-    "Solveig Tambadou-Kereselidze",
-    "Street Custom 'Copperhead' Battery Acid Squirt Gun",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "The Bazaar",
-    "The Pure Hand",
-    "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'"
+    "GLMZ"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Northern European with significant Sub-Saharan African and Hispanic/Latin American ancestry; a striking blend of fair Nordic and warm tropical heritage creating distinctive intermediate features",
+    "heritage": "Eastern European dominant (51.5%) with significant Sub-Saharan African (32.5%) and Indigenous American (16%) ancestry; a striking tri-continental blend creating warm golden-brown skin with pronounced cheekbone definition, rich facial fullness through the lower face, and refined bone structure characteristic of Eastern European ancestry combined with the warmth and depth of Sub-Saharan and Indigenous American genetic expression",
     "height_cm": 163,
     "weight_kg": 52,
     "build": "Slight and angular, with defined collarbones and long fingers; the build of someone who moves through crowded spaces easily and spends hours at a sewing table",
@@ -250,8 +238,8 @@
     "hair_style": "Loose, shoulder-length waves with deliberate asymmetry; left side pinned back with a salvaged circuit board clasp",
     "hair_length": "Medium",
     "eye_color": "Deep warm brown with amber undertones",
-    "skin_tone": "Light golden-tan with warm undertones; shows the blended warmth of mixed Nordic and tropical heritage",
-    "complexion": "Balanced features blending Nordic and warmer ancestries—defined but not sharp cheekbones, moderate temples, fine-featured; skin kept meticulously clean despite Market dust; minimal makeup, favoring bare lips and defined brows",
+    "skin_tone": "Warm golden-brown with rich undertones; the blended result of Eastern European base warmed and deepened by Sub-Saharan and Indigenous American ancestry, creating a complex intermediate tone with subtle golden luminosity",
+    "complexion": "Balanced intermediate features—prominent defined cheekbones with warmth, moderate temples, fine-featured face with Sub-Saharan fullness and softness through the lower face and jawline; skin kept meticulously clean despite Market dust; minimal makeup, favoring bare lips and defined brows; nose bridge refined with subtle width typical of multi-heritage ancestry blending",
     "distinguishing_marks": [
       "Faint white scarring across inner left wrist (old self-harm history, now healed)",
       "Thin, precise line tattoo running down the right collarbone in an abstract textile pattern (geometric weaving symbol)",
@@ -261,14 +249,50 @@
     "posture_movement": "Moves with economical precision; stands with weight balanced evenly, ready to shift. Hands are often in motion—gesturing, arranging fabric, touching materials to evaluate texture. Eye contact is direct and assessing without being hostile. They have a habit of tilting their head slightly when evaluating someone's outfit.",
     "clothing_style": "Deliberate contradiction is their uniform: today might be a pristine white linen shirt (corporate salvage, refitted) paired with cargo pants patched in mismatched smart-fabric samples. Tomorrow: a hand-stenciled denim jacket over a plain grey undershirt and tailored black trousers. Footwear is always practical (worn canvas boots or reinforced street shoes). Accessories include salvaged tech components repurposed as jewelry—circuit board clasps, LED pendant, fabric scraps tied as wrist wraps. Everything is meticulously maintained despite the Market grime. Tier 4 aesthetic with Tier 3 resourcefulness and Tier 2 design sensibility."
   },
-  "image_prompt": "Freya Solberg, 163cm, mixed Nordic and tropical heritage with warm light golden-tan skin, direct gaze and fine features. Hair: shoulder-length waves with asymmetry, left side pinned with circuit board clasp, cycling through deep violet-amber-cyan spectrum. Wearing pristine white linen shirt and patched cargo pants in smart-fabric, worn canvas boots. Hands positioned evaluating texture of fabric sample. Circuit board jewelry and LED pendant visible. Standing with economical precision in cyberpunk 2226 Great Lakes Metropolitan Zone underground market, surrounded by salvaged tech and textile materials. Neon market lighting casting warm and cool shadows across her face and clothing. Professional documentary style, sharp detail on hands and fashion choices. Mood: focused, resourceful, direct. cyberpunk 2226, fashion-forward Market technician --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Anya Wojciechowski, 163cm tall petite angular build, warm golden-brown skin with rich undertones blending Eastern European, Sub-Saharan African, and Indigenous American ancestry, prominent defined cheekbones, full lower face, deep warm brown eyes with amber undertones, shoulder-length asymmetrical waves with full-spectrum chromatic cycling hair (deep violet fading to amber to cyan), circuit board clasp pinning left side back. Wearing pristine white linen shirt refitted, cargo pants patched with smart-fabric samples, worn canvas boots, salvaged tech jewelry. Faint white scarring visible on inner left wrist, geometric weaving tattoo down right collarbone. Standing with economical precision, hands gesturing, direct eye contact, tilted head evaluating posture. Great Lakes Metropolitan Zone market setting, neon and ambient lighting reflecting off smart-fabric patches, meticulously maintained despite grime, neo-noir urban aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Northern European": 70.1,
-    "Sub-Saharan African": 16.6,
-    "Hispanic/Latin American": 13.3
+    "Eastern European": 51.5,
+    "Sub-Saharan African": 32.5,
+    "Indigenous American": 16
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Eastern European": {
+      "Magyar-Romanian": {
+        "Hungarian": 6.2,
+        "Romanian": 16.3
+      },
+      "Slavic South": {
+        "Serbian": 17.8,
+        "Slovenian": 2.8
+      },
+      "Slavic West": {
+        "Polish": 8.4
+      }
+    },
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 9.4
+      },
+      "West African": {
+        "Guinean": 1.7,
+        "Sierra Leonean": 6.5
+      },
+      "East African": {
+        "Tanzanian": 14.9
+      }
+    },
+    "Indigenous American": {
+      "Plains Nations": {
+        "Cherokee": 9.8
+      },
+      "Andean": {
+        "Mapuche": 4.5,
+        "Aymara": 1.7
+      }
+    }
+  }
 }

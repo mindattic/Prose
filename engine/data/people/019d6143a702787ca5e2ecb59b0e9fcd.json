@@ -1,7 +1,7 @@
 {
   "id": "019d6143a702787ca5e2ecb59b0e9fcd",
   "type": "character",
-  "name": "Reed Quiñones",
+  "name": "Reed Prempeh",
   "aliases": [
     "DJ Fossil",
     "Tomb"
@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "Pilsen Veil, works out of a club called The Anechoic, near Western and Division",
-  "description": "Tomek is medium height and built like someone who was once athletic and has become merely solid — broad shoulders, a slight softening at the jaw, hands that are too large for the delicate controls he uses with uncanny precision. He is Central African-Scandinavian with light brown skin, dark eyes, and a beard he keeps trimmed to an architectural exactness that belies every other slightly chaotic element of his appearance. His geneware includes bioluminescent pigmentation under his forearms — deep violet, visible only in low light, which means it's almost always visible in the clubs he works. He dresses expensively for someone at his income level, carefully chosen secondhand finds that he maintains as though they're new.\n\nBy day he designs VR experience packages sold through independent distributors — emotional immersives, mostly, that let users borrow feelings they can't otherwise access: grief for someone they never lost, euphoria without the chemical cost, the specific texture of being in a place they've never been. By night he DJs at The Anechoic, a mid-tier club that has become known as a venue where the music actually does something — Tomek has a gift for reading a crowd's collective emotional state and shifting it, subtly and then dramatically, across the course of a set. He is generous with newer DJs, protective of The Anechoic's staff, and quietly running out of the particular kind of energy his work requires.",
+  "description": "Reed Prempeh is medium height and built like someone who was once athletic and has become merely solid — broad shoulders, a slight softening at the jaw, hands that are too large for the delicate controls he uses with uncanny precision. He is Central African-Scandinavian with light brown skin, dark eyes, and a beard he keeps trimmed to an architectural exactness that belies every other slightly chaotic element of his appearance. His geneware includes bioluminescent pigmentation under his forearms — deep violet, visible only in low light, which means it's almost always visible in the clubs he works. He dresses expensively for someone at his income level, carefully chosen secondhand finds that he maintains as though they're new.\n\nBy day he designs VR experience packages sold through independent distributors — emotional immersives, mostly, that let users borrow feelings they can't otherwise access: grief for someone they never lost, euphoria without the chemical cost, the specific texture of being in a place they've never been. By night he DJs at The Anechoic, a mid-tier club that has become known as a venue where the music actually does something — Reed Prempeh has a gift for reading a crowd's collective emotional state and shifting it, subtly and then dramatically, across the course of a set. He is generous with newer DJs, protective of The Anechoic's staff, and quietly running out of the particular kind of energy his work requires.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -190,7 +190,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Pilsen Veil",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -262,31 +262,15 @@
   "registered_firearms": [],
   "related_entities": [
     "Pilsen Veil",
+    "The Marrow Market",
     "The Pure Hand",
     "Slagworks Industrial",
     "Ringo Corponation",
-    "Lazarus IDP-1 'Teeth'",
-    "Ambrosia Fekete-Waiyaki",
-    "Breck Tannen",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "Glenville Sound",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Palladian Construction",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Glass Garden' Caltrops",
-    "SynapTech AromaVeil Olfactory Filter",
-    "The Bazaar",
-    "The Glass Garden",
-    "The Heritage Vault",
-    "The Quiet Room",
-    "Timur Osei-Bjelke",
-    "Yannick Tambadou-Reinholt",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+    "Lazarus IDP-1 'Teeth'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "South Asian and Hispanic/Latin American with Middle Eastern and Eastern European ancestry — a genetic blend reflecting the Ubiquitous Diaspora. Warm brown skin with golden undertones from the South Asian and Hispanic/Latin American majority, subtle complexity from Middle Eastern heritage, and the faintest cool undertones from Eastern European ancestry creating a beautifully balanced warm-bronze complexion.",
+    "heritage": "Northern European, South Asian, Sub-Saharan African, Eastern European, Hispanic/Latin American, and Middle Eastern ancestry in nearly equal measure — a genuinely balanced genetic diaspora. The blend creates a complexion that defies simple categorization: warm bronze base from South Asian and Sub-Saharan African heritage (39.4% combined), enriched by golden and warm tones from Hispanic/Latin American ancestry (13.1%), cooled subtly by Northern and Eastern European genetics (38.4% combined), with warm undertones from Middle Eastern heritage (9.1%). A truly multifaceted warm-bronze skin that shifts in different light — deeper and richer than pure South Asian, lighter and more golden than pure Sub-Saharan African, with the kind of subtle complexity that comes from genuinely balanced ancestry across multiple continents.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and solid, the muscular definition of his youth softened into functional mass — a body that once moved athletically and now moves with deliberate, economical precision. Chest and shoulders still carry the architecture of old strength.",
@@ -294,8 +278,8 @@
     "hair_style": "Worn slightly longer on top, faded at the sides; perpetually slightly disheveled despite clear effort at grooming",
     "hair_length": "Medium",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm bronze with golden undertones — the result of dominant South Asian and Hispanic/Latin American heritage blended with Middle Eastern warmth and Eastern European complexity. Rich and layered, deepening slightly where sun exposure is natural.",
-    "complexion": "Strong jaw softening with age, kept sharp by a trimmed beard maintained with architectural precision — dark brown and flecked with early gray. Skin clear, well-maintained. Under-eye shadows from chronic poor sleep are subtle but present. Cheekbones carry the generous structure typical of South Asian and Hispanic/Latin American ancestry.",
+    "skin_tone": "Rich warm bronze with complex golden and subtle cool undertones — the result of balanced Northern European, South Asian, Sub-Saharan African, Eastern European, Hispanic/Latin American, and Middle Eastern heritage converging. Deeply layered and responsive to light, deepening naturally with sun exposure.",
+    "complexion": "Strong jaw softening with age, kept sharp by a trimmed beard maintained with architectural precision — dark brown and flecked with early gray. Skin clear, well-maintained. Under-eye shadows from chronic poor sleep are subtle but present. Cheekbones carry generous structure from the South Asian and Sub-Saharan African components of his ancestry, refined by the Northern and Eastern European heritage, with warm undertones reflecting the Middle Eastern and Hispanic/Latin American mix.",
     "distinguishing_marks": [
       "Bioluminescent pigmentation across both forearms — deep violet, reactive to low light, forms organic branching patterns like neural pathways or lightning; always visible in club environments",
       "Fine network of barely-visible scarring on the back of both hands — from years of precise haptic interface work, barely noticeable except under bright light"
@@ -304,15 +288,57 @@
     "posture_movement": "Moves with focused economy; at rest, he tends toward stillness rather than fidgeting. When working at the decks, his hands move with almost meditative precision — each gesture economical and intentional. Off-duty, there's a subtle weariness in how he carries himself, a tightness in the shoulders. When listening to music, his eyes half-close and his large hands drift slightly, as though conducting invisible air.",
     "clothing_style": "Expensive secondhand finds, carefully maintained as though new — vintage designer pieces, mostly minimalist: well-cut black or charcoal wool, pristine vintage technical fabrics, vintage leather that's been treated and reconditioned. His shoes are always immaculate, usually understated high-end brands from three to five years prior. Dresses like someone who has made a deliberate choice to invest in quality over quantity, with no visible logos or status signaling. At The Anechoic, often adds a vintage linen shirt worn unbuttoned over a fitted tank to keep his forearm pigmentation visible. A single silver chain, thin and unadorned, worn constantly."
   },
-  "image_prompt": "Reed Quiñones, male, 178cm, warm bronze skin with golden undertones blending South Asian and Hispanic/Latin American heritage, dark brown natural hair medium length with faded sides, strong jaw with dark trimmed beard flecked with gray, dark brown eyes with subtle under-eye shadows from sleep deprivation. Broad-shouldered solid build with functional mature muscularity. Both forearms display bioluminescent violet neural-pathway patterns glowing softly. Fine barely-visible scarring on back of hands from haptic interface work. Wearing minimalist vintage black wool, pristine vintage technical fabric, impeccably maintained vintage leather, understated high-end shoes. Vintage linen shirt unbuttoned over fitted tank, thin silver chain at neck. At a cyberpunk DJ deck in neon-lit underground club The Anechoic, 2226. Hands poised with meditative precision over equipment, forearm bioluminescence casting violet light. Moody concentration, half-closed eyes reading the crowd. Cyberpunk 2200s aesthetic, focused economy of movement, subtle weariness in shoulders. Neon and ambient club lighting, cinematic depth, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Reed Prempeh, 178cm tall DJ with broad shoulders and functional strength, rich warm bronze skin reflecting balanced genetic heritage from five continents. Dark brown hair medium length, slightly disheveled on top with faded sides. Strong jaw softened by age, trimmed dark beard with gray flecks, subtle under-eye shadows. Dark brown natural eyes. Dressed in immaculate vintage minimalist style: black wool, pristine technical fabrics, reconditioned leather. Thin silver chain. Bioluminescent violet branching patterns across both exposed forearms glowing softly, reactive to low light like neural pathways. Fine scarring visible on back of hands from haptic work. Posture economical and focused, hands with meditative precision. GLMZ, Great Lakes Metropolitan Zone, The Anechoic nightclub, low-light club environment with violet bioluminescence casting dramatic shadows across features, moody atmospheric lighting, 35mm cinematic --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 42.4,
-    "Hispanic/Latin American": 42.1,
-    "Middle Eastern": 10.0,
-    "Eastern European": 5.5
+    "Northern European": 20.9,
+    "South Asian": 20.2,
+    "Sub-Saharan African": 19.2,
+    "Eastern European": 17.5,
+    "Hispanic/Latin American": 13.1,
+    "Middle Eastern": 9.1
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 11,
+        "Swedish": 9.9
+      }
+    },
+    "South Asian": {
+      "Pakistani": {
+        "Sindhi": 16.3,
+        "Punjabi Pakistani": 3.9
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 13.2
+      },
+      "East African": {
+        "Ethiopian": 2,
+        "Tanzanian": 4
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Russian": 11.3,
+        "Belarusian": 6.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 6.1,
+        "Puerto Rican": 7
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 9.1
+      }
+    }
+  }
 }

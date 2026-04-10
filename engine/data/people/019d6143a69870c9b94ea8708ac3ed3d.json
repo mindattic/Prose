@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69870c9b94ea8708ac3ed3d",
   "type": "character",
-  "name": "Vale Nkrumah",
+  "name": "Vale Valenzuela",
   "aliases": [
     "Pete",
     "Old Petros"
@@ -13,7 +13,7 @@
   "age": 51,
   "status": "active",
   "location": "Deepwell Station depot, Route 14 loop, near sub-level access near LaSalle and Congress",
-  "description": "Petros is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nPetros has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
+  "description": "Vale Valenzuela is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nVale Valenzuela has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -166,7 +166,7 @@
     "Liar": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Deepwell Station depot",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,28 +191,11 @@
     "The CEO",
     "Ferrogate Transit",
     "CONDUCTOR",
-    "Déjà Vu",
-    "Arcturus Bulwark APC",
-    "Arcturus LS-5 'Sentinel'",
-    "Breck Tannen",
-    "Carrion Defense Works Suppression Collar SC-4",
-    "Crucible Industries Storm Carbine SC-4 'Downpour'",
-    "Duravex",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'",
-    "Hearthstone Firearms Sentinel-9 'Block Watch'",
-    "Lazarus IDP-1 'Teeth'",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "TESSERA TC-3 'Crucible'",
-    "Tenderloin",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Pure Hand",
-    "Vantablack VS-3 'Skin Job'"
+    "Déjà Vu"
   ],
   "district": "The Underworld",
   "physical_description": {
-    "heritage": "Predominately Sub-Saharan African (43.5%) with significant Eastern European (18.1%), East Asian (14.9%), and South Asian (11.4%) ancestry, plus North African (7.8%) and Middle Eastern (4.3%) heritage. A complex global diaspora blend reflecting the Ubiquitous mixing of 2226.",
+    "heritage": "A striking genetic mosaic of Southeast Asian (29.6%), Middle Eastern (25.8%), Hispanic/Latin American (18.4%), Northern European (14.6%), East Asian (9.4%), and Sub-Saharan African (2.2%) ancestry. The blend creates a warm, complex phenotype—Southeast Asian bone structure and skin warmth layered with Middle Eastern depth, Hispanic golden undertones, and Northern European lighter notes creating subtle dimensional richness. The Sub-Saharan contribution adds depth to his warm browns. A true product of the Ubiquitous Diaspora.",
     "height_cm": 183,
     "weight_kg": 98,
     "build": "Heavy-set and broad-shouldered, with the solid mass of a man who has done physical labor for decades. Not fat — dense. Chest wide, neck thick, hands large and calloused.",
@@ -220,8 +203,8 @@
     "hair_style": "Close-trimmed, neat, parted slightly to the left",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural — subtle green light reflection from retinal overlay when active",
-    "skin_tone": "Warm deep brown with golden undertones, sun-darkened from pre-depot outdoor work. The tone carries the warmth of Sub-Saharan and North African ancestry while showing the resilience of sun exposure across decades.",
-    "complexion": "Broad forehead with a subtle bone structure reflecting his multi-continental ancestry. Cheekbones show the influence of East and South Asian heritage blended with Sub-Saharan depth. Close-trimmed gray beard kept clean and even, deep-set eyes. Skin lined but not sagging — the result of time and weather rather than neglect. A few sun spots on the temples. Expression default: focused, attentive.",
+    "skin_tone": "Warm medium-deep brown with golden-olive undertones, sun-darkened from pre-depot outdoor work. The tone is a harmonious blend of Southeast Asian warmth, Middle Eastern richness, Hispanic golden hues, with Northern European genetics creating subtle luminosity beneath the surface. Sub-Saharan ancestry contributes depth and warmth to the overall palette.",
+    "complexion": "Broad forehead with bone structure reflecting Southeast Asian and Middle Eastern heritage—moderate cheekbone prominence with warmth from Hispanic ancestry, balanced by the defined architectural quality of Middle Eastern lineage. The face carries width and presence across the cheekbones and jaw, with the subtle warmth of Southeast Asian skin quality. Close-trimmed gray beard kept clean and even, deep-set eyes. Skin lined but not sagging — the result of time and weather rather than neglect. A few sun spots on the temples. Expression default: focused, attentive.",
     "distinguishing_marks": [
       "Long burn scar along the inner left forearm, thin and pale — approximately 12 centimeters, from old work accident",
       "Small tattoo on right inner wrist: Ghanaian Adinkra symbol (Gye Nyame) in dark ink, faded with age",
@@ -231,17 +214,81 @@
     "posture_movement": "Upright, deliberate, economical in gesture. Moves with the slow certainty of someone who has spent decades in confined spaces and knows every inch of his territory. Stands still when listening — no fidgeting. Hands at rest or engaged in purposeful tasks; never idle.",
     "clothing_style": "Ferrogate Transit regulation uniform (dark navy base layer, lighter blue overshirt with reflective piping, company logo centered on chest). Uniform is immaculately maintained — creases sharp, fabric lint-free, buttons polished. Black work boots, well-worn but clean. Wears a simple analog watch (brass, vintage-style) on left wrist alongside the ID badge on a lanyard. A woven cord bracelet — prayer beads from his grandmother — visible on right wrist. Tier 4 working-class grooming: functional, dignified, no affectation."
   },
-  "image_prompt": "Vale Nkrumah, 183cm tall transit operator in his 60s, deep warm brown skin with golden undertones, gray-and-black close-trimmed hair and beard, dark eyes with subtle amber retinal overlay glow. Heavy-set muscular build from decades of labor, broad shoulders, thick neck. Wearing immaculate Ferrogate Transit navy and light blue uniform with reflective piping, black work boots. Pale burn scar on inner left forearm visible, faded Adinkra symbol tattoo on right wrist, prayer bead bracelet, brass analog watch. Upright posture, deliberate movement. Standing in a dimly-lit transit depot with overhead industrial lighting casting amber halos. Focused, attentive expression. Cyberpunk 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Vale Valenzuela, 183cm tall broad-shouldered transit operator with warm medium-deep brown skin blending Southeast Asian, Middle Eastern, and Hispanic heritage. Dark gray close-trimmed beard, deep-set dark brown eyes with faint amber retinal overlay glow. Immaculate Ferrogate Transit navy and light blue uniform with reflective piping, polished buttons, black work boots. Brass vintage watch on left wrist, woven prayer bead bracelet on right wrist. Pale 12cm burn scar visible on inner left forearm. Faded Adinkra symbol tattoo on right inner wrist. Upright posture, focused expression, standing in dimly-lit transit depot with overhead industrial lighting. GLMZ, gritty working-class dignity, realistic character portrait, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 43.5,
-    "Eastern European": 18.1,
-    "East Asian": 14.9,
-    "South Asian": 11.4,
-    "North African": 7.8,
-    "Middle Eastern": 4.3
+    "Southeast Asian": 29.6,
+    "Middle Eastern": 25.8,
+    "Hispanic/Latin American": 18.4,
+    "Northern European": 14.6,
+    "East Asian": 9.4,
+    "Sub-Saharan African": 2.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Southeast Asian": {
+      "Indonesian": {
+        "Javanese": 4.7
+      },
+      "Thai": {
+        "Thai": 4.2
+      },
+      "Filipino": {
+        "Cebuano": 20.7
+      }
+    },
+    "Middle Eastern": {
+      "Arab Levantine": {
+        "Lebanese": 8.5,
+        "Syrian": 8.8
+      },
+      "Kurdish": {
+        "Kurdish": 8.5
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 18.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Danish": 0.8,
+        "Norwegian": 0.6
+      },
+      "Germanic": {
+        "Swiss German": 3.8,
+        "German": 1.5
+      },
+      "British Isles": {
+        "Scottish": 7.9
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 4.6
+      },
+      "Chinese": {
+        "Hakka": 2.7
+      },
+      "Korean": {
+        "Korean": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Tanzanian": 0.6,
+        "Rwandan": 0.6
+      },
+      "West African": {
+        "Nigerian": 0.2
+      },
+      "Southern African": {
+        "South African": 0.5,
+        "Zambian": 0.3
+      }
+    }
+  }
 }

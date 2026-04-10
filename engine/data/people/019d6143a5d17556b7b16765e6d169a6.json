@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d17556b7b16765e6d169a6",
   "type": "character",
-  "name": "Teuila Dlamini",
+  "name": "Farah Vasquez-Alfarsi",
   "aliases": [
     "Cas",
     "The Dutchman",
@@ -14,7 +14,7 @@
   "age": 57,
   "status": "active",
   "location": "Old Harbor, near Michigan Ave and Roosevelt",
-  "description": "Casimir is a tall, thin Polish-Dutch man gone slightly soft at the middle in the way of someone who used to be athletic and stopped caring. He has a pale, deeply lined face that arranges itself naturally into an expression of polite disappointment, and pale gray eyes that are almost always slightly too still — a habit from decades of reading people across negotiating tables. He dresses in the muted, high-quality clothes of someone who once inhabited corporate spaces and has never fully left that aesthetic behind, even when the context makes it look faintly absurd. He lives in a converted harbormaster's office at the edge of Old Harbor, surrounded by equipment that looks like salvage and performs like something considerably more.",
+  "description": "Farah Vasquez-Alfarsi is a tall, thin Polish-Dutch man gone slightly soft at the middle in the way of someone who used to be athletic and stopped caring. He has a pale, deeply lined face that arranges itself naturally into an expression of polite disappointment, and pale gray eyes that are almost always slightly too still — a habit from decades of reading people across negotiating tables. He dresses in the muted, high-quality clothes of someone who once inhabited corporate spaces and has never fully left that aesthetic behind, even when the context makes it look faintly absurd. He lives in a converted harbormaster's office at the edge of Old Harbor, surrounded by equipment that looks like salvage and performs like something considerably more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -229,7 +229,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -243,46 +243,23 @@
   "registered_firearms": [],
   "related_entities": [
     "The Spire",
-    "Flicker",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Sluiceway",
-    "The Pale Mile",
-    "Below the Threshold",
-    "Breck Tannen",
-    "Crucible Industries CR-2 'Trapdoor'",
-    "Emeka Johansson-Orozco",
-    "GLMZ",
-    "Helix Biosystems Subdermal Pressure Lattice",
-    "Irontide Tidal Energy",
-    "MERIDIAN",
-    "Meridian Core",
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Ngaire Kuznetsov-Adu",
-    "Old Harbor",
-    "Patient Zero",
-    "Praevex",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Sisay Bergqvist-Mallari",
-    "The Heritage Vault",
-    "The Meridian Core",
-    "The Pure Hand",
-    "The Threshold",
-    "Vantablack Media",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tofauti-Szarvásy",
-    "Yuki Nwosu-Petrenko"
+    "Harbor Fish Shack",
+    "The Pale Mile"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Pacific Islander (52.7%) with significant Sub-Saharan African (36.1%) and South Asian (11.2%) ancestry — a striking blending of equatorial and tropical genetic heritage that produces warm, radiant skin tones with golden and reddish undertones",
+    "heritage": "Complex diaspora ancestry with Middle Eastern (35.3%) and North African (12.4%) as primary heritage, blended with South Asian (15.6%), Sub-Saharan African (15.3%), Indigenous American (14.5%), and Hispanic/Latin American (6.9%) ancestry — a striking convergence of Levantine, Saharan, Indo-Arylic, and Bantu genetic signatures that produces warm, multidimensional skin tones with golden, reddish-brown, and olive undertones. The genetic blend creates pronounced cheekbone architecture with subtle lip fullness and warm-toned deep brown eyes characteristic of the dominant Middle Eastern and African components.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Tall and lean with visible softening at the midsection — the physique of someone who was once disciplined and has allowed that discipline to relax without fully surrendering to it. Shoulders still carry some width but lack the definition of active maintenance.",
     "hair_color": "Gray-blonde, faded to near-white at the temples",
     "hair_style": "Swept back, slightly too long for corporate spaces, kept in place by habit and occasional inattention rather than deliberate grooming",
     "hair_length": "Medium",
-    "eye_color": "Deep brown with warm undertones, characteristic of Pacific Islander and African ancestry, carrying depth and subtle luminescence in certain light",
-    "skin_tone": "Warm medium-to-deep brown with golden and reddish undertones — the result of Pacific Islander and Sub-Saharan African genetic dominance. Rich, radiant complexion that carries warmth even in cool lighting. Subtle red-brown undertones visible in natural light, particularly across the cheekbones and bridge of nose from the South Asian ancestry component.",
-    "complexion": "Deeply lined face, particularly around the eyes and forehead — the accumulated geography of fifty-seven years of reading microexpressions across negotiating tables. Jaw still defined but softened by age. Habitual expression settles into polite disappointment. Skin shows the texture of someone who does not prioritize skincare but maintains basic discipline. Features carry the broader facial structure and fuller lips characteristic of Pacific Islander and African heritage, with subtle cheekbone prominence from South Asian ancestry.",
+    "eye_color": "Deep brown with warm undertones",
+    "skin_tone": "Warm medium-to-deep brown with golden, reddish-brown, and olive undertones — the result of Middle Eastern and North African genetic dominance (47.7% combined) blended with Sub-Saharan African (15.3%), South Asian (15.6%), and Indigenous American (14.5%) components creating rich, complex dimensionality. Subtle golden highlights visible across cheekbones and bridge of nose in natural light, with deeper reddish-brown undertones in shadows. Complexion carries inherent warmth even in cool lighting.",
+    "complexion": "Deeply lined face, particularly around the eyes and forehead — the accumulated geography of fifty-seven years of reading microexpressions across negotiating tables. Jaw still defined but softened by age. Habitual expression settles into polite disappointment. Skin shows the texture of someone who does not prioritize skincare but maintains basic discipline. Features carry the pronounced cheekbone architecture and defined bone structure characteristic of Middle Eastern and North African heritage, with subtle fullness in the lips from African and South Asian ancestry components. Facial structure shows the angular definition typical of Levantine genetics tempered by the rounder face shape from South Asian and Indigenous American lineages.",
     "distinguishing_marks": [
       "Fine linear scarring across the inner left forearm, barely visible unless forearm is exposed, consistent with old surgical intervention or precise cutting — approximately 8cm in length, parallel lines",
       "Faint discoloration along both forearms where sub-dermal implants create slight topographic irregularities beneath the skin — visible only at certain angles or in specific lighting",
@@ -292,14 +269,73 @@
     "posture_movement": "Moves with the careful economy of someone managing chronic awareness. Walks at a measured pace without apparent hurry, but with the kind of intentionality that suggests he is never quite relaxed. Stands with a slight forward lean, weight distributed evenly — a posture that allows rapid repositioning if necessary. Hands usually at rest, but eyes are rarely still. His stillness is a performance he has perfected.",
     "clothing_style": "High-quality minimalist wardrobe in muted tones — grays, deep blues, charcoal, off-white. Tailored but not ostentatious. Fabrics suggest corporate-era purchases that have been maintained rather than replaced: quality wool, linen blends, technical synthetics that age well. Wears a mid-weight wool coat most days, its age evident in the patina of the weave. Shoes are practical leather, well-maintained but not polished to corporate shine. The overall effect is someone who has not fully left the Spire's aesthetic behind but has allowed it to weather into something less demanding. No visible logos, no status markers, nothing that signals current affiliation or tier — a studied neutrality."
   },
-  "image_prompt": "Teuila Dlamini, 188cm tall weathered man with rich warm brown skin with golden undertones, deep brown eyes, gray-blonde swept-back hair with white at temples. Pacific Islander and African heritage evident in fuller lips and defined cheekbones with subtle South Asian undertones. 57 years old, lean build with softened midsection, deeply lined face showing decades of careful observation. Subtle scarring on inner left forearm, barely visible sub-dermal implant ridging. Wearing high-quality gray wool coat over charcoal shirt, practical leather shoes, muted corporate-weathered aesthetic. Measured posture suggesting coiled readiness beneath stillness. Standing in moody GLMZ 2226 urban setting, cool ambient lighting casting subtle shadows across weathered features. Cyberpunk era, studied neutrality, someone who refuses obvious chrome. --ar 2:3 --v 6",
+  "image_prompt": "A 57-year-old man of mixed Middle Eastern, North African, South Asian, Sub-Saharan African, and Indigenous American descent, standing 188cm tall with a lean build and softened midsection. Deep warm medium-brown skin with golden and olive undertones, particularly visible across pronounced cheekbones and the bridge of his aquiline nose. Gray-blonde hair swept back from his face, faded near-white at temples, reaching medium length. Deep brown eyes with warm luminescence. Deeply lined face and jaw softened by age, with a habitual expression of polite disappointment. Subtle linear scarring on inner left forearm. Wears muted, high-quality minimalist clothing — charcoal wool coat with visible age patina, gray and off-white layers underneath, practical leather shoes. Posture demonstrates measured intentionality with slight forward lean. Standing in cool 2200s corporate-adjacent environment with soft ambient lighting that catches the golden undertones of his skin. Mood conveys quiet awareness and measured stillness. GLMZ, Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 52.7,
-    "Sub-Saharan African": 36.1,
-    "South Asian": 11.2
+    "Middle Eastern": 35.3,
+    "South Asian": 15.6,
+    "Sub-Saharan African": 15.3,
+    "Indigenous American": 14.5,
+    "North African": 12.4,
+    "Hispanic/Latin American": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Persian": {
+        "Tajik Persian": 17.4
+      },
+      "Arab Levantine": {
+        "Syrian": 2.7,
+        "Palestinian": 1.4
+      },
+      "Arab Gulf": {
+        "Yemeni": 13.8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 2.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 5
+      },
+      "Sri Lankan": {
+        "Sinhalese": 5.2,
+        "Tamil Sri Lankan": 2.7
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Malian": 5.4,
+        "Nigerian": 9.9
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 11.5,
+        "Aymara": 3
+      }
+    },
+    "North African": {
+      "Nile Valley": {
+        "Sudanese": 8.2,
+        "Egyptian": 4.2
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Venezuelan": 2.5,
+        "Brazilian": 1
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.4
+      },
+      "Mexican": {
+        "Mexican": 1
+      }
+    }
+  }
 }

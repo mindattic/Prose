@@ -1,7 +1,7 @@
 {
   "id": "019d6143a641740f96aa8d309db35b56",
   "type": "character",
-  "name": "Sable Najjar",
+  "name": "Sable Rentería",
   "aliases": [
     "Nebula",
     "The Ghost"
@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Kenji Chen-Adeyemi are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 24, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Kenji Chen-Adeyemi are one of the ones who actually does it.",
+  "description": "Sable Rentería are wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 24, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a bodyguard out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Sable Rentería are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.88,
@@ -262,7 +262,7 @@
     "Shield": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Canopy",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -279,38 +279,18 @@
     "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
   ],
   "related_entities": [
-    "GLMZ",
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
     "Kel Adeyemi-Strand",
-    "Pellucid Systems",
+    "Canopy",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Alper Lebedev-Tutu",
-    "Arcturus PG-3 'Aegis'",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Idris Forsberg-Quaye",
-    "Ilhan Sandstrom-Badu",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "Oumarou Svec-Ranginui",
-    "Patchwork Scooter",
-    "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "The Canopy",
-    "The Fathom Line",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Yusra Ntambwe-Cakić"
+    "Pellucid Systems",
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Latin American (60.5%) with significant Middle Eastern (26.7%), Sub-Saharan African (10.5%), and Indigenous American (2.3%) ancestry. Features reflect this complex blend: warm brown skin with olive undertones, angular facial structure combining Latin American and Middle Eastern characteristics, dark eyes with intensity characteristic of the broader diaspora mix.",
+    "heritage": "Sub-Saharan African (56.5%) with substantial Hispanic/Latin American (22.1%), South Asian (9.5%), and Pacific Islander (8.7%) ancestry, plus minor Middle Eastern (3.2%) influence. Features reflect this dominant African heritage blended with Latin American and South Asian characteristics: deep warm brown skin with subtle golden undertones, broad facial structure with high prominent cheekbones, dark expressive eyes with characteristic depth, and the angular definition that emerges from the African-Latin American-South Asian genetic convergence.",
     "height_cm": 168,
     "weight_kg": 62,
     "build": "Wiry and lean with visible muscle definition from constant physical conditioning. Chest and shoulders are developed but not bulky — built for speed and precision rather than raw power. Low body fat percentage. Movement efficiency over mass.",
@@ -318,8 +298,8 @@
     "hair_style": "Pulled back in a tight, practical braid or topknot during work. Loose and shoulder-length at rest.",
     "hair_length": "Medium to Long",
     "eye_color": "Dark brown, natural, but the left eye has a faint chrome ring visible at the iris edge — cortical implant interface",
-    "skin_tone": "Warm brown with olive undertones — rich melanin blend reflecting Latin American, Middle Eastern, and African ancestry",
-    "complexion": "Sharp cheekbones, angular jawline with subtle Middle Eastern structure, small scar above the left eyebrow from a childhood accident. Skin is clear but marked by the intensity of their gaze — eyes that track movement. No cosmetic grooming; functional only.",
+    "skin_tone": "Deep warm brown with golden undertones — rich melanin expressing the Sub-Saharan African majority balanced with the warmth of Hispanic/Latin American and South Asian heritage",
+    "complexion": "Broad high cheekbones, strong angular jawline with African and South Asian structural influence, small scar above the left eyebrow from a childhood accident. Skin is clear but marked by the intensity of their gaze — eyes that track movement. No cosmetic grooming; functional only.",
     "distinguishing_marks": [
       "Ragged vertical scar along the right temple, extending 8cm toward the hairline — removal site of cortical bomb implant, tissue still slightly raised and discolored",
       "Thin white scar on inner left wrist, 5cm long — old self-inflicted mark from teenage years, deliberately never covered with ink or chrome",
@@ -330,15 +310,56 @@
     "posture_movement": "Never still. Even at rest, there is micro-movement — weight shifting, fingers tapping, jaw clenching. Walks with a predatory efficiency, economical and balanced. Eyes are always moving, cataloging exits and threats. When focused on a target, becomes unnaturally still — all that restless energy compresses into potential. Speaks quietly, forcing others to pay attention.",
     "clothing_style": "High-Tier 2 functional aesthetic. Black reinforced synthetic jacket with internal holster rigging and embedded haptic feedback panels (enables move-by-wire targeting). Form-fitting gray base layer under the jacket. Tactical cargo pants with multiple pockets and visible weapon attachment points. Matte black boots with reinforced soles. A single piece of jewelry — a silver ring on the left index finger, engraved with their mentor's initials. No logos, no excess. Everything serves a purpose. Clothes show minimal wear despite their job because they replace gear methodically before failure."
   },
-  "image_prompt": "Sable Najjar, 168cm lean cyberpunk operative with warm brown olive-toned skin reflecting Latin American-Middle Eastern-African heritage. Sharp angular features, dark intense eyes with chrome iris ring on left eye. Black hair with bioluminescent blue threading, pulled back in tight braid. Prominent ragged scar along right temple from cortical implant removal, faint silver neural tracework visible under skin along collarbone and forearms. Wearing high-tier tactical aesthetic: black reinforced synthetic jacket with haptic feedback panels, gray form-fitting base layer, tactical cargo pants, matte black boots. Predatory posture, micro-movements even at rest, cataloging surroundings. Single silver ring on left index finger. Cyberpunk 2226 Great Lakes Metropolitan Zone, neon-lit urban environment, moody atmospheric lighting with blue-tinted shadows, cool industrial backdrop, faint glow from subdermal augmentations catching light --ar 2:3 --v 6",
+  "image_prompt": "Sable Rentería, lean muscular 168cm tall operative with deep warm brown skin and golden undertones, standing in GLMZ setting. High prominent cheekbones and strong angular jawline reflecting Sub-Saharan African and South Asian heritage. Shoulder-length black hair with subtle blue bioluminescent threading, pulled back in tight braid during active moment. Dark brown eyes with faint chrome ring on left iris from cortical implant. Ragged vertical scar along right temple extending toward hairline, thin white scar on inner wrist, pale burn mark on right shoulder visible against darker skin. Silver tracework visible along collarbone and forearms from move-by-wire augmentation under skin. Wearing high-tier tactical ensemble: black reinforced synthetic jacket with embedded haptic panels, gray form-fitting base layer, tactical cargo pants, matte black reinforced boots. Silver ring engraved with mentor's initials on left index finger. Predatory posture, weight balanced, micro-movements visible, eyes tracking. Neon-lit urban environment, cool blue and purple ambient lighting, rain-slicked streets, cybernetic interface glow. Mood: focused, dangerous, efficient. Professional operative in down moment --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 60.5,
-    "Middle Eastern": 26.7,
-    "Sub-Saharan African": 10.5,
-    "Indigenous American": 2.3
+    "Sub-Saharan African": 56.5,
+    "Hispanic/Latin American": 22.1,
+    "South Asian": 9.5,
+    "Pacific Islander": 8.7,
+    "Middle Eastern": 3.2
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Gabonese": 54.1
+      },
+      "West African": {
+        "Nigerian": 2.4
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Brazilian": 22.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 5.4
+      },
+      "Nepali": {
+        "Nepali": 4.1
+      }
+    },
+    "Pacific Islander": {
+      "Melanesian": {
+        "Fijian": 6.6
+      },
+      "Polynesian": {
+        "Tuvaluan": 2.1
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 1.1,
+        "Afghan Dari": 0.3
+      },
+      "Arab Gulf": {
+        "Emirati": 1.8
+      }
+    }
+  }
 }

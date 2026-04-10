@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Chicago Ave",
-  "description": "Ihaia Sorokin-Gyasi is average height but with a presence that fills more space than the body accounts for. At 32, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a poisoner out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Ihaia Sorokin-Gyasi lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Vega Castañeda is average height but with a presence that fills more space than the body accounts for. At 32, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a poisoner out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Vega Castañeda lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -265,7 +265,7 @@
     "Poisoner": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Ashfield",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -280,36 +280,15 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Heritage Vault",
+    "Diaspora Table",
     "Ashfield",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
-    "Slagworks Industrial",
     "Chicago",
-    "Breck Tannen",
-    "Brecken Yılmaz-Osei",
-    "Chibundo Reinholt-Sarpong",
-    "Dzemal Acholonu-Patagiri",
-    "Ezio Kaboré-Malhotra",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "Glenville Sound",
-    "Independent Micro-Grid Power Cooperative",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Municipal Supply OxiStrip MMS-C4",
-    "Narrowcast",
-    "Neuromorphic Pressure Cestus",
-    "Nnamdi Ostrowski-Faletolu",
-    "Spire Light on Still Water",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "TESSERA PG-2 'Signature'",
-    "The Quiet Room",
-    "The Seam",
-    "Yuki Nwosu-Petrenko",
-    "Yusra Ntambwe-Cakić"
+    "Slagworks Industrial"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (48.9%) with significant East Asian (36.7%) and South Asian (14.4%) admixture — a distinctly pan-Pacific diaspora blend reflecting the Ubiquitous Diaspora of 2226",
+    "heritage": "Hispanic/Latin American (62.6%) with significant Middle Eastern (22.0%) and Sub-Saharan African (15.4%) admixture — a distinctly warm-toned diaspora blend reflecting the Ubiquitous Diaspora of 2226. The genetic confluence produces warm golden-brown skin with subtle olive undertones, defined cheekbones with gentle fullness, and strong Mediterranean-influenced facial structure",
     "height_cm": 167,
     "weight_kg": 58,
     "build": "Lean and compact, economical muscle distribution without bulk. Movements are precise, controlled — a body trained for efficiency rather than intimidation",
@@ -317,8 +296,8 @@
     "hair_style": "Pulled back in a tight braid or high knot — always secured, never loose",
     "hair_length": "Medium (shoulder-blade length when down, habitually restrained)",
     "eye_color": "Dark brown with amber flecks — sharp, observant",
-    "skin_tone": "Warm medium brown with golden undertones — the natural result of East Asian and South Asian ancestry blending with Latin American heritage, creating a unified warm complexion",
-    "complexion": "Angular features reflecting East Asian ancestry — slightly higher cheekbones, defined jawline, straight nose with subtle bridge width. Warm golden undertones throughout. Skin is clean and well-maintained despite living conditions. Expression defaults to neutral watchfulness",
+    "skin_tone": "Warm medium to deep brown with golden and subtle olive undertones — the natural result of Hispanic, Middle Eastern, and Sub-Saharan African ancestry blending into a unified warm complexion with depth and richness",
+    "complexion": "Strong balanced features reflecting three major lineages — prominent defined cheekbones with gentle fullness from Sub-Saharan African heritage, straight nose with subtle Mediterranean bridge definition and slight width reflecting Middle Eastern ancestry, strong jawline tapering toward a defined chin. Warm golden and olive undertones throughout create visual depth. Skin is clean and well-maintained despite living conditions. Expression defaults to neutral watchfulness",
     "distinguishing_marks": [
       "Faint chemical burn scars along her right forearm — irregular white lines from wrist to elbow, partially concealed by long sleeves",
       "Small tattoo on the inside of her left wrist — a molecular structure symbol rendered in black ink",
@@ -328,14 +307,43 @@
     "posture_movement": "Moves with deliberate control — minimalist, economical gestures. Sits with spine straight, feet positioned for quick exit. Eyes track people and exits instinctively. Speaks rarely and with measured cadence",
     "clothing_style": "Tier 4 utilitarian — function over aesthetics. Favors high-necked clothing to frame the modulator. Loose tactical jacket (synthetic material, neutral gray), reinforced cargo pants with sealed pockets, steel-toed boots. Minimal jewelry — a worn watch with encrypted functions. Dresses identically whether on contract or maintaining cover; consistency is her camouflage"
   },
-  "image_prompt": "Vega Castañeda, 167cm lean woman with warm golden-brown skin reflecting East Asian and Latin American ancestry, dark brown hair pulled into tight braid, sharp angular features with defined cheekbones. Dark amber-flecked eyes, watchful expression. Chrome vocal modulator visible at throat with clean surgical seam. Chemical burn scars visible on right forearm, molecular tattoo on inner left wrist. Wearing neutral gray tactical jacket over high-necked undershirt, reinforced cargo pants, steel-toed boots. Minimalist posture, controlled movements, standing in shadowy cyberpunk 2226 Great Lakes Metropolitan Zone corridor. Neon glow reflecting off modulator and watch. Cinematic cyberpunk lighting, cool shadows with warm accent highlights. Professional assassin aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Vega Castañeda, 167cm lean neo-noir operative, warm deep golden-brown skin with olive undertones reflecting Hispanic-Middle Eastern-African diaspora ancestry. Dark brown hair pulled tight in high knot, sharp amber-flecked dark eyes. Defined cheekbones, straight Mediterranean nose, strong jawline. Chrome vocal modulator visible at throat with surgical seam. Faint white chemical burn scars along right forearm. Small black molecular tattoo inside left wrist. Wearing neutral gray tactical jacket and reinforced cargo pants, steel-toed boots. Neutral watchful expression, deliberate controlled posture. Seated with spine straight, eyes tracking exits. GLMZ neon-lit interior, cool blue and amber accent lighting casting subtle shadows across her features. Minimalist utilitarian aesthetic, function-focused. Gritty, atmospheric, film noir neo-noir mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 48.9,
-    "East Asian": 36.7,
-    "South Asian": 14.4
+    "Hispanic/Latin American": 62.6,
+    "Middle Eastern": 22,
+    "Sub-Saharan African": 15.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Puerto Rican": 62.6
+      }
+    },
+    "Middle Eastern": {
+      "Kurdish": {
+        "Kurdish": 19.1
+      },
+      "Arab Gulf": {
+        "Yemeni": 0.4
+      },
+      "Persian": {
+        "Iranian": 2.5
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Rwandan": 9.1
+      },
+      "Central African": {
+        "Gabonese": 3.3
+      },
+      "Southern African": {
+        "Mozambican": 3
+      }
+    }
+  }
 }

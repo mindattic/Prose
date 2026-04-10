@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6d970399481e2fa8061e7da",
   "type": "character",
-  "name": "Ragna Kristjánsson",
+  "name": "Taslima Bah",
   "aliases": [
     "Mama Soraya",
     "The Spice Oracle"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Pulaski and Chicago Ave",
-  "description": "Soraya is a broad-shouldered woman with copper-dark skin mapped by deep laugh lines and a few deliberate burn scars on her forearms she calls her 'flavor tattoos' — each one marking a dish she learned from a different region. Her hair is dyed a permanent warm saffron-orange through a cheap geneware follicle treatment that never quite fades, and she wears it coiled high under a wax-print headwrap. She moves through her stall with unhurried authority, stirring six pots at once without looking, tasting with the practiced certainty of someone who has been cooking since before half her customers were born. Her eyes are warm but they read people the way a butcher reads a cut of meat — quickly, accurately, without sentiment.\n\nSoraya has operated her stall at the Oxidian Market for twenty-two years, through two corporate rezoning attempts, one gang war, and a flood. She is not rich. She is not connected. What she is, is immovable. She knows everyone, feeds everyone, and remembers everything. She doesn't charge the hungry if they look like they mean it, but she will absolutely overcharge someone who looks like they can afford it and won't count their change.",
+  "description": "Taslima Bah is a broad-shouldered woman with copper-dark skin mapped by deep laugh lines and a few deliberate burn scars on her forearms she calls her 'flavor tattoos' — each one marking a dish she learned from a different region. Her hair is dyed a permanent warm saffron-orange through a cheap geneware follicle treatment that never quite fades, and she wears it coiled high under a wax-print headwrap. She moves through her stall with unhurried authority, stirring six pots at once without looking, tasting with the practiced certainty of someone who has been cooking since before half her customers were born. Her eyes are warm but they read people the way a butcher reads a cut of meat — quickly, accurately, without sentiment.\n\nTaslima Bah has operated her stall at the Oxidian Market for twenty-two years, through two corporate rezoning attempts, one gang war, and a flood. She is not rich. She is not connected. What she is, is immovable. She knows everyone, feeds everyone, and remembers everything. She doesn't charge the hungry if they look like they mean it, but she will absolutely overcharge someone who looks like they can afford it and won't count their change.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -161,7 +161,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Oxidian Market",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -183,30 +183,13 @@
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Geartown",
     "Carrion Defense Works Bone Saw BS-3 'Butcher'",
-    "Copper",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago",
-    "Arcturus Exo-Runner Frame",
-    "Axiom Hovercraft (Lake Patrol)",
-    "Carrion Defense Works Suppression Collar SC-4",
-    "Crucible Industries Storm Carbine SC-4 'Downpour'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Kairos",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'",
-    "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
-    "Meridian Core",
-    "Nnamdi Ostrowski-Faletolu",
-    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
-    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
-    "Street-Loaded Piezoelectric Overcharge Bead PZO-4",
-    "TESSERA TC-3 'Crucible'",
-    "The Bazaar",
-    "The Pure Hand",
-    "Witness"
+    "Copper",
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Indigenous American (30%), Northern European (26%), Southeast Asian (20%), Hispanic/Latin American (12%), Sub-Saharan African (11%), East Asian (2%) — a striking diaspora blend. Her features reflect this global ancestry: high cheekbones with slight Asian prominence, warm earth-tone skin with underlying golden undertones from Southeast Asian heritage, and the broad facial structure of Indigenous American ancestry tempered by Northern European fineness.",
+    "heritage": "Sub-Saharan African (56.5%), South Asian (26.0%), Southeast Asian (17.5%) — a striking diaspora blend anchored in West and Central African genetics with substantial South Asian and Southeast Asian contributions. Her features reflect this: high cheekbones with prominent structure from Sub-Saharan ancestry, rich deep brown skin with warm golden undertones from the South Asian heritage, and the facial geometry and eye shape influenced by Southeast Asian ancestry. The blend creates a luminous, complex tone — earthy and radiant simultaneously.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and solid, with the muscular endurance of someone who stands twelve hours daily. Not heavy, but densely built through the core and legs. Years of stirring, lifting, and market work have sculpted functional strength rather than aesthetic definition.",
@@ -214,8 +197,8 @@
     "hair_style": "Coiled and pinned high, usually wrapped in wax-print cotton headwrap in geometric patterns",
     "hair_length": "Long (shoulder-length when unwrapped)",
     "eye_color": "Warm brown with flecks of amber",
-    "skin_tone": "Warm medium-brown with golden undertones, sun-darkened to deep amber-bronze on exposed areas. The blended ancestry creates a rich, luminous quality — neither pale nor dark, but a vibrant interplay of copper, honey, and earth tones with evidence of decades of sun and steam exposure.",
-    "complexion": "Deeply lined face mapping decades of smiling and squinting over steam and flame. Laugh lines radiate from eyes and mouth. High cheekbones create subtle hollows beneath. Skin weathered but maintained — oil-slicked for protection from kitchen heat. No makeup. Grooming is practical and deliberate. The blended heritage creates distinctive facial geometry: broad across the cheekbones, defined jawline, balanced proportions.",
+    "skin_tone": "Deep rich brown with warm golden undertones, sun-darkened to bronze on exposed areas. The blended Sub-Saharan, South Asian, and Southeast Asian ancestry creates luminous depth — copper and earth tones with evidence of decades of sun and steam exposure, maintaining a polished quality despite weathering.",
+    "complexion": "Deeply lined face mapping decades of smiling and squinting over steam and flame. Laugh lines radiate from eyes and mouth. High prominent cheekbones create subtle hollows beneath. Skin weathered but maintained — oil-slicked for protection from kitchen heat. No makeup. Grooming is practical and deliberate. The ancestry blend creates distinctive facial geometry: high angular cheekbones from Sub-Saharan heritage, refined jawline with slight widening across the face, eye shape and proportions influenced by Southeast Asian genetics, warm South Asian undertones creating depth.",
     "distinguishing_marks": [
       "Three deliberate burn scars on inner left forearm, roughly parallel, each 3-4 cm long — pale against skin, deliberately preserved and referenced as 'flavor tattoos' marking regional cuisines she mastered",
       "Matching set of two burn scars on right forearm, slightly older, edges softened with time",
@@ -226,17 +209,34 @@
     "posture_movement": "Moves with unhurried economy of motion — no wasted gesture. Stands with weight balanced across both feet, shoulders back, spine straight despite internal reinforcement. Her gaze sweeps constantly, reading customers the moment they approach. Hands are always occupied or ready. She has the physical presence of someone who has held a space for two decades and expects to hold it for two more.",
     "clothing_style": "Tier 3-4 working class practicality. Daily uniform: long wax-print wrapper skirt (vibrant geometric patterns, Ghanaian or Congolese style) in jewel tones, worn loose for movement and ventilation. Fitted short-sleeve cotton or linen shirt (often stained, always washed). Heavy canvas apron with deep pockets for tools, change, samples. Worn leather slip-ons for quick stepping in/out of the stall. A gold ring on her right hand (real metal, visible sign of early success) and a faded fabric bracelet in guild colors. Headwrap rotated daily. No jewelry beyond the ring — everything else would catch on cooking equipment or burn."
   },
-  "image_prompt": "Ragna Kristjánsson, 168cm, warm golden-brown skin with amber undertones, market stall vendor in the Great Lakes Metropolitan Zone, 2226. High cheekbones and balanced facial structure reflecting Indigenous American, Northern European, and Southeast Asian heritage. Coiled dark brown hair pinned high beneath a vibrant geometric wax-print headwrap. Warm brown eyes with amber flecks, deeply lined face from decades of smiling over kitchen heat. Broad shoulders, solid muscular build from years of standing and lifting. Wearing a jewel-toned geometric wrapper skirt and fitted linen shirt, heavy canvas apron, worn leather slip-ons. Fine white scars visible across knuckles and hands from knife work, three parallel pale burn scars on left inner forearm. Gold ring on right hand. Oil-slicked skin protecting against heat. Standing with unhurried economy of motion, balanced posture, gaze sweeping. Cyberpunk 2200s market stall setting, steam and flame visible in background, warm overhead lighting casting shadows across weathered face, practical and deliberate grooming. --ar 2:3 --v 6",
+  "image_prompt": "Taslima Bah, a 168cm woman with deep rich brown skin and warm golden undertones, standing in a steaming market stall in the Great Lakes Metropolitan Zone, 2226. She wears a vibrant geometric Ghanaian-patterned wrapper skirt in jewel tones and a fitted linen shirt, with a practical canvas apron and faded guild-colored bracelet. Her warm saffron-orange coiled hair is pinned high beneath a wax-print headwrap. High angular cheekbones and refined jaw reflect her Sub-Saharan, South Asian, and Southeast Asian heritage blend. Her warm brown eyes with amber flecks survey customers with constant attentiveness. Deliberately preserved burn scars mark her inner forearms ('flavor tattoos'), with fine white scars across her hands from decades of knife work. A small crescent scar sits above her left eyebrow. She stands with unhurried economy, shoulders back, weight balanced, the physical presence of a seasoned chef-merchant. Steam and warm kitchen light illuminate her weathered but radiant face, her gold ring glinting as her hands move with practiced precision. GLMZ 2200s street market atmosphere, industrial lighting, functional and lived-in. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 30.2,
-    "Northern European": 25.9,
-    "Southeast Asian": 19.5,
-    "Hispanic/Latin American": 12.2,
-    "Sub-Saharan African": 10.7,
-    "East Asian": 1.5
+    "Sub-Saharan African": 56.5,
+    "South Asian": 26,
+    "Southeast Asian": 17.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 56.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 5.7
+      },
+      "Bangladeshi": {
+        "Bangladeshi": 20.3
+      }
+    },
+    "Southeast Asian": {
+      "Thai": {
+        "Thai": 17.5
+      }
+    }
+  }
 }

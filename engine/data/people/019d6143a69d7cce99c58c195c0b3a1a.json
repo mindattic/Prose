@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69d7cce99c58c195c0b3a1a",
   "type": "character",
-  "name": "Idris Castañeda",
+  "name": "Idris Pham",
   "aliases": [
     "Pete",
     "License Pete"
@@ -13,7 +13,7 @@
   "age": 26,
   "status": "active",
   "location": "Grand Crossing Gate, Ferrogate Transit Authority Checkpoint Delta-9, near North Ave and Milwaukee",
-  "description": "Pita is compact and quick-eyed, their Samoan-Igbo features broad and expressive beneath the flat brim of a Ferrogate Transit Security cap they've decorated with three small enamel pins of E.L.F.s they consider their personal patrons. Their hair is natural and enormous, pulled back for duty hours into a puff that still manages to escape its tie by midday. They have a single cosmetic mod — bioluminescent freckles across the bridge of their nose and cheeks that glow a soft seafoam green under stress or excitement, which makes them an impractical but endearing liar. Their uniform is always pressed but their boots are always muddy because they cut across the maintenance tracks to get to their post faster.\n\nPita is the kind of person who makes boring jobs interesting by caring too much. They have opinions about every person who comes through Delta-9 — the regulars get remembered by name, the oddities get catalogued in a battered physical notebook they're not supposed to keep. They are genuinely curious about people in a way that disarms hostility, and they take their gate as a kind of sacred responsibility, partly because they genuinely believe the E.L.F. that inhabits the Delta-9 scanning arch is watching and judging their work. They want to move up — into investigations, maybe — but can't afford the certification costs on a Tier 2 salary.",
+  "description": "Idris Pham is compact and quick-eyed, their Samoan-Igbo features broad and expressive beneath the flat brim of a Ferrogate Transit Security cap they've decorated with three small enamel pins of E.L.F.s they consider their personal patrons. Their hair is natural and enormous, pulled back for duty hours into a puff that still manages to escape its tie by midday. They have a single cosmetic mod — bioluminescent freckles across the bridge of their nose and cheeks that glow a soft seafoam green under stress or excitement, which makes them an impractical but endearing liar. Their uniform is always pressed but their boots are always muddy because they cut across the maintenance tracks to get to their post faster.\n\nIdris Pham is the kind of person who makes boring jobs interesting by caring too much. They have opinions about every person who comes through Delta-9 — the regulars get remembered by name, the oddities get catalogued in a battered physical notebook they're not supposed to keep. They are genuinely curious about people in a way that disarms hostility, and they take their gate as a kind of sacred responsibility, partly because they genuinely believe the E.L.F. that inhabits the Delta-9 scanning arch is watching and judging their work. They want to move up — into investigations, maybe — but can't afford the certification costs on a Tier 2 salary.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -180,7 +180,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Grand Crossing Gate",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,40 +240,17 @@
   "related_entities": [
     "Grand Crossing Gate",
     "Ferrogate Transit",
+    "Bridgepoint",
     "The Gradient Compact",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Fabricator-Delta-9",
     "Déjà Vu",
+    "Compass Rose",
     "Arcturus CK-5 'Bloodhound'",
-    "Nightlight",
-    "The Milwaukee Core",
-    "Amara Osei-Dzhaparidze",
-    "Ambassador Silk",
-    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
-    "Arcturus GE-1 'Garrison'",
-    "Bogdan Achebe-Svanstrom",
-    "Cavitation Pulse Carbine CPC-2 'Bends'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "MERIDIAN",
-    "Mika Sorel",
-    "Ngaire Kuznetsov-Adu",
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Saodat Mirzoyan-Fubara",
-    "Slagworks Industrial",
-    "Solina Barreto-Kiptoo",
-    "Sorin Ekwensi-Balasanyan",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Corponation",
-    "The Gate",
-    "The Heritage Vault",
-    "The Pure Hand"
+    "Nightlight"
   ],
-  "district": "Nomadic",
+  "district": "The Wasteland",
   "physical_description": {
-    "heritage": "Multicultural blend: predominantly Hispanic/Latin American (55.4%) with significant East Asian (15.9%), Sub-Saharan African (15.7%), and Pacific Islander (13.0%) ancestry. The combination creates a distinctive appearance—warm medium brown skin with subtle golden and reddish undertones, broad facial structure with strong definition, and the compact athletic build characteristic of mixed heritage from diverse climate regions.",
+    "heritage": "Complex polychromatic diaspora blend: predominantly Middle Eastern (37.0%) with substantial Hispanic/Latin American (25.8%), Southeast Asian (18.6%), and Central Asian (13.6%) ancestry, plus minor Sub-Saharan African (3.5%) and East Asian (1.5%) components. This genetic constellation creates a striking integrated appearance—warm deep brown skin with golden-amber and subtle olive undertones, angular facial structure reflecting Middle Eastern and Central Asian features tempered by softer Southeast Asian influence, and the compact athletic build characteristic of multi-continental heritage.",
     "height_cm": 162,
     "weight_kg": 58,
     "build": "Compact and densely muscled, built for quick movement rather than bulk. Broad-shouldered despite modest height, with the kind of frame that reads as energetic rather than fragile.",
@@ -281,8 +258,8 @@
     "hair_style": "Pulled back into a puff during duty hours, but sections consistently escape the tie by afternoon, framing the face",
     "hair_length": "Long (approximately shoulder-length when released)",
     "eye_color": "Dark brown, alert and mobile",
-    "skin_tone": "Warm medium brown with golden and subtle reddish undertones, reflecting the blend of Hispanic/Latin American, East Asian, African, and Pacific Islander ancestry",
-    "complexion": "Harmoniously blended facial features showing the multicultural heritage—broad expressive face with strong jawline and prominent cheekbones that suggest both African and East Asian ancestry, with the warm golden undertones of Latin American genetics. Smooth skin with three thin horizontal scars across the right temple (childhood accident). The bridge of nose and cheekbones are marked with bioluminescent freckles that glow soft seafoam green under stress or heightened emotion.",
+    "skin_tone": "Warm deep brown with golden-amber and subtle olive undertones, the result of Middle Eastern ancestry (37%) blended with Hispanic/Latin American (25.8%), Southeast Asian (18.6%), and Central Asian (13.6%) genetics, enriched by minor Sub-Saharan African (3.5%) warmth",
+    "complexion": "Angular facial features showing balanced Middle Eastern and Central Asian structure—prominent cheekbones and defined jawline softened by Southeast Asian influence around the eyes and mouth, creating an integrated rather than layered appearance. Smooth skin with three thin horizontal scars across the right temple (childhood accident). The bridge of nose and cheekbones are marked with bioluminescent freckles that glow soft seafoam green under stress or heightened emotion.",
     "distinguishing_marks": [
       "Bioluminescent freckles in a scattered pattern across the bridge of nose and cheeks, glow seafoam green under stress/excitement",
       "Three thin parallel scars across right temple, approximately 2cm each, pale and old",
@@ -292,15 +269,83 @@
     "posture_movement": "Quick, efficient movements with natural fidgeting when at rest. Stands with weight balanced on the balls of feet, ready to pivot. Makes frequent eye contact and uses hands expressively when speaking. Habit of tapping pen against notebook or scanning cuff during quiet moments.",
     "clothing_style": "Ferrogate Transit Security uniform worn during shifts: pressed dark gray shirt with reflective trim, matching trousers, security blazer with shoulder patches. Off-duty: practical Tier 3 clothing—distressed denim, thrifted band tees or oversized button-ups, worn sneakers. Boots are always mud-tracked from cutting across maintenance tracks. Keeps physical notebook (battered, spiral-bound) in jacket or pants pocket. Wears a single silver ring on left middle finger (no visible religious affiliation, personal choice)."
   },
-  "image_prompt": "Idris Castañeda, 162cm tall transit security officer in cyberpunk 2226, warm medium brown skin with golden undertones, dark alert eyes, shoulder-length dark brown hair partially pulled back with escaping strands framing a strong-jawed face with prominent cheekbones. Bioluminescent seafoam green freckles glowing faintly across nose and cheeks, three thin pale scars visible on right temple. Compact athletic build, standing ready with weight on balls of feet. Wearing pressed dark gray Ferrogate Transit Security uniform with reflective trim and blazer, matte black wrist-mounted scanning cuff visible on left wrist. Natural fidgeting energy, hands expressive. Moody neon-lit transit checkpoint setting, cyberpunk metallic and concrete aesthetic, soft green bioluminescent glow highlighting facial features, cool and warm color contrast, alert professional presence. --ar 2:3 --v 6",
+  "image_prompt": "Idris Pham, compact athletic transit security officer in GLMZ GLMZ, height 162cm with densely muscled frame. Warm deep brown skin with golden-amber and olive undertones reflecting Middle Eastern (37%), Hispanic/Latin American (25.8%), Southeast Asian (18.6%), and Central Asian (13.6%) ancestry. Angular facial structure with prominent cheekbones and defined jawline softened by Southeast Asian influence around eyes and mouth. Dark brown alert eyes. Long dark brown hair pulled back into a puff with escaping sections framing the face. Three thin pale scars across right temple. Bioluminescent seafoam-green freckles scattered across bridge of nose and cheeks (glowing with stress). Wearing pressed dark gray Ferrogate uniform with reflective trim and security blazer, shoulder patches visible. Matte black polymer scanning cuff on left wrist with LED indicators. Silver ring on left middle finger. Standing with weight balanced on balls of feet, ready to pivot. Quick, efficient posture. Neon-lit checkpoint station behind, soft seafoam accent lighting reflecting off bioluminescent freckles, GLMZ 2200s aesthetic, alert expression --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 55.4,
-    "East Asian": 15.9,
-    "Sub-Saharan African": 15.7,
-    "Pacific Islander": 13.0
+    "Middle Eastern": 37,
+    "Hispanic/Latin American": 25.8,
+    "Southeast Asian": 18.6,
+    "Central Asian": 13.6,
+    "Sub-Saharan African": 3.5,
+    "East Asian": 1.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 15,
+        "Emirati": 8.7
+      },
+      "Persian": {
+        "Afghan Dari": 13.3
+      }
+    },
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 7.4
+      },
+      "Central American": {
+        "Salvadoran": 1.3,
+        "Costa Rican": 0.2
+      },
+      "South American": {
+        "Colombian": 11.3,
+        "Venezuelan": 5.6
+      }
+    },
+    "Southeast Asian": {
+      "Vietnamese": {
+        "Vietnamese": 15.1
+      },
+      "Indonesian": {
+        "Sundanese": 3.5
+      }
+    },
+    "Central Asian": {
+      "Mongolic": {
+        "Mongolian": 2.8,
+        "Buryat": 0.7
+      },
+      "Turkic": {
+        "Uzbek": 10.1
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 1.6
+      },
+      "Southern African": {
+        "Zimbabwean": 0.5,
+        "South African": 0.4
+      },
+      "West African": {
+        "Ghanaian": 0.2,
+        "Nigerian": 0.8
+      }
+    },
+    "East Asian": {
+      "Chinese": {
+        "Fujianese": 0.2,
+        "Hakka": 0.3
+      },
+      "Korean": {
+        "Korean": 0.3
+      },
+      "Japanese": {
+        "Japanese": 0.7
+      }
+    }
+  }
 }

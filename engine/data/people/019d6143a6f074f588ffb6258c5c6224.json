@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f074f588ffb6258c5c6224",
   "type": "character",
-  "name": "Dmitri Delgado",
+  "name": "Santiago Appiah",
   "aliases": [
     "Wraith",
     "The Problem"
@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Wacker and State",
-  "description": "Tengiz Ito-Takyi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 34, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented courier in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Santiago Appiah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 34, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented courier in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -259,7 +259,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Old Harbor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,32 +272,15 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "GLMZ",
     "Ringo DV-4 'Courier'",
     "Burden of Longitude",
+    "Harbor Fish Shack",
     "Slagworks Industrial",
-    "Arcturus Exo-Runner Frame",
-    "Breck Tannen",
-    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
-    "Cezar Watanabe-Gyasi",
-    "Chibundo Reinholt-Sarpong",
-    "Dzemal Acholonu-Patagiri",
-    "Independent Micro-Grid Power Cooperative",
-    "Lazarus LX-2 'Lab Rat'",
-    "Narrowcast",
-    "Old Harbor",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Quilt",
-    "Réginald Asomaning-Čabarkapa",
-    "Scarecrow",
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
-    "Timur Osei-Bjelke",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yusra Ntambwe-Cakić"
+    "GLMZ"
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Eastern European and Hispanic/Latin American blend with East Asian heritage. Strong Slavic bone structure mixed with Latin American warmth — high cheekbones and strong jaw from Eastern European ancestry, broader facial planes and fuller features from Hispanic/Latin heritage, subtle eye shape and hair texture influenced by East Asian genetics.",
+    "heritage": "Complex global ancestry: predominantly Hispanic/Latin American (26.3%) with significant East Asian (19.6%), Sub-Saharan African (16.0%), and South Asian (15.0%) heritage, plus Indigenous American (14.8%) and Northern European (8.3%) ancestry. This creates a richly blended phenotype — warm medium-brown skin with golden undertones from the Latin American and African heritage, high cheekbones and angular bone structure influenced by East Asian ancestry, broader facial planes from Sub-Saharan African genetics, and a strong jaw from Northern European influence. The overall effect is a person whose features don't align with any single continental origin, but represent the Ubiquitous Diaspora perfectly: warm-toned skin, almond-shaped eyes with depth from multiple ancestry lines, and facial architecture that speaks to global mixing rather than any single heritage.",
     "height_cm": 172,
     "weight_kg": 78,
     "build": "Broad-shouldered and heavy-set with dense muscle beneath a layer of practical bulk — built like someone who carries weight as deliberate mass rather than fat. Stocky core, powerful legs, forearms that show the architectural definition of someone who maintains augmentation hardware daily.",
@@ -305,8 +288,8 @@
     "hair_style": "Pulled back in a tight, functional braid; no ornamentation, secured with industrial cable tie",
     "hair_length": "Long (shoulder-length when loosened, but always bound)",
     "eye_color": "Dark brown with faint chromatic aberration at the edges — sign of subcutaneous neural interface strain",
-    "skin_tone": "Warm medium brown with golden undertones — the blended result of Eastern European and Latin American heritage, deepened and weathered by years of Old Harbor humidity and industrial exposure",
-    "complexion": "Weathered and lived-in with the robust, angular structure of Eastern European ancestry softened by the fuller cheekbones and warmer skin of Latin American heritage. Minimal grooming beyond function. Strong jaw, high cheekbones, a mouth that rarely smiles. Perpetual tension in the jaw. Small scar tissue around knuckles, consistent with bare-knuckle self-defense training.",
+    "skin_tone": "Warm medium brown with golden undertones — the result of blended Hispanic/Latin American, East Asian, Sub-Saharan African, South Asian, and Indigenous American ancestry, deepened and weathered by years of Old Harbor humidity and industrial exposure",
+    "complexion": "Weathered and lived-in with angular, high cheekbones from East Asian and Northern European ancestry, broad facial planes enriched by Sub-Saharan African and South Asian genetics, warm golden-brown skin tone from the complex mixing of all heritage lines, and a strong jawline. Minimal grooming beyond function. A mouth that rarely smiles. Perpetual tension in the jaw. Small scar tissue around knuckles, consistent with bare-knuckle self-defense training.",
     "distinguishing_marks": [
       "Surgical seam lines visible along both forearms where subdermal armor plating was installed — deliberately left unscarred, showing the pale track marks of military-surplus installation",
       "Thin white scar running from left temple to jawline, approximately 8cm, partially hidden by her braid when it shifts",
@@ -317,14 +300,71 @@
     "posture_movement": "Economical and alert; she moves like someone constantly aware of exits and threats. Weight stays forward on the balls of her feet, shoulders held slightly forward. Her eyes track fast-moving objects and people with predatory precision. When idle, she fidgets with equipment — checking knife edges, testing trigger resistance, running fingers over her augmentation seams. No wasted motion.",
     "clothing_style": "Practical Tier 3-4 runner gear. Heavy canvas work jacket (charcoal gray, multiple pockets, reinforced elbows) over a matte-black compression shirt with visible cooling vents at the ribs — designed to manage the heat dump from her adrenaline pump. Cargo pants in dark gray with reinforced thigh pockets and a knife sheath sewn into the interior seam of the left leg. Steel-toed boots, scuffed and functional, laced tight. A leather motorcycle-style belt with a heavy chrome buckle. No jewelry except a battered analog watch on her left wrist — waterproof, shock-resistant, no network connectivity. A long coat hangs in her temporary quarters — military surplus wool, lined with a shielded compartment for sensitive packages."
   },
-  "image_prompt": "Dmitri Delgado, a compact and muscular woman with warm medium-brown skin and sharp Eastern European-Latin American features — high angular cheekbones, strong jaw, dark eyes showing faint neural interface strain. Dark hair pulled into a tight functional braid with silver threading at the temples. Visible augmentation scars on forearms, amber LED bioluminescence glowing faintly at temples. Weathered expression, predatory alertness. Wearing heavy charcoal canvas work jacket over black compression shirt with cooling vents, dark cargo pants, steel-toed boots. Chrome augmentation hardware visible at wrists. Knife sheath visible in thigh pocket. Cyberpunk 2200s Great Lakes Metropolitan Zone, industrial Old Harbor setting, moody neon-tinted lighting with deep shadows, rain-slicked surfaces, alert posture ready for action. --ar 2:3 --v 6",
+  "image_prompt": "Santiago Appiah, GLMZ, GLMZ runner, medium-height broad-shouldered woman with warm medium-brown skin and golden undertones, dark brown eyes with neural interface strain, long dark hair with silver at temples pulled tight in functional braid, angular high cheekbones blending East Asian and Northern European ancestry with broader facial planes from African and South Asian heritage, perpetually tense jaw and weathered complexion. Chrome subdermal armor visible at forearms and wrists, amber LED bioluminescence glowing faintly at temples, surgical seams showing military-surplus installation, thin white scar from temple to jawline, burn scar on left hand. Wearing charcoal gray reinforced canvas jacket over matte-black compression shirt with cooling vents, dark gray cargo pants with reinforced pockets, steel-toed scuffed boots, heavy chrome-buckled leather belt. Battered analog watch on left wrist. Alert predatory posture, weight forward on balls of feet, economical economical controlled movement. Standing in Old Harbor industrial district, amber and blue neon reflections on wet pavement, rain-slicked metal surfaces, atmospheric fog, low-angle industrial lighting casting hard shadows across her face revealing augmentation marks, tense and dangerous presence --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Eastern European": 44.8,
-    "Hispanic/Latin American": 43.8,
-    "East Asian": 11.4
+    "Hispanic/Latin American": 26.3,
+    "East Asian": 19.6,
+    "Sub-Saharan African": 16,
+    "South Asian": 15,
+    "Indigenous American": 14.8,
+    "Northern European": 8.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Caribbean": {
+        "Cuban": 12.8
+      },
+      "Central American": {
+        "Guatemalan": 4.6,
+        "Costa Rican": 0.8
+      },
+      "Mexican": {
+        "Mexican": 8.1
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 1.5
+      },
+      "Chinese": {
+        "Fujianese": 8.9
+      },
+      "Japanese": {
+        "Japanese": 9.2
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Angolan": 16
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 11.3
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 3,
+        "Sinhalese": 0.7
+      }
+    },
+    "Indigenous American": {
+      "Andean": {
+        "Quechua": 10,
+        "Mapuche": 3.1
+      },
+      "Great Lakes Nations": {
+        "Menominee": 0.3,
+        "Ojibwe": 1.4
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 8.3
+      }
+    }
+  }
 }

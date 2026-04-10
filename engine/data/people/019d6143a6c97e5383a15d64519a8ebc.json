@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6c97e5383a15d64519a8ebc",
   "type": "character",
-  "name": "Sigrid Ozcoidi-Khoury",
+  "name": "Malika Baiseitov-Bhattacharya",
   "aliases": [
     "Phina",
     "The Stork"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Shelf — operates out of a mobile clinic (a repurposed Ferrogate Transit cargo van) and a rented room in the back of a Mexicantown Libre pharmacy, near Western and Division",
-  "description": "Seraphina is a full-figured woman with dark South African and Guatemalan mestiza features, warm amber skin and deep-set eyes that people find immediately trustworthy — a quality she has cultivated and also genuinely possesses. Her hair is long and usually braided, wound up when she is working and down when she is not, which patients use as a shorthand for whether they are dealing with the professional or the person (both are kind; one has better boundaries). She has bioluminescent fingertip mods in soft blue-white that she acquired specifically for her work — a calming visual during labor, she says, and also practical for low-light examinations.\n\nSeraphina has delivered over four hundred children in The Shelf alone. She knows bloodlines, complications, genetic predispositions, and family secrets that would constitute a detailed sociological survey of the neighborhood. She is deeply embedded in the community's trust and absolutely ruthless about protecting it: she has destroyed records, misled corporate health inspectors, and once spent three days strategically 'losing' a newborn's file to prevent a Helix Biosystems gene-sampling audit from accessing the family's data. She prays to an E.L.F. she calls Apgar — named for the assessment scale — before every delivery.",
+  "description": "Malika Baiseitov-Bhattacharya is a full-figured woman with dark South African and Guatemalan mestiza features, warm amber skin and deep-set eyes that people find immediately trustworthy — a quality she has cultivated and also genuinely possesses. Her hair is long and usually braided, wound up when she is working and down when she is not, which patients use as a shorthand for whether they are dealing with the professional or the person (both are kind; one has better boundaries). She has bioluminescent fingertip mods in soft blue-white that she acquired specifically for her work — a calming visual during labor, she says, and also practical for low-light examinations.\n\nMalika Baiseitov-Bhattacharya has delivered over four hundred children in The Shelf alone. She knows bloodlines, complications, genetic predispositions, and family secrets that would constitute a detailed sociological survey of the neighborhood. She is deeply embedded in the community's trust and absolutely ruthless about protecting it: she has destroyed records, misled corporate health inspectors, and once spent three days strategically 'losing' a newborn's file to prevent a Helix Biosystems gene-sampling audit from accessing the family's data. She prays to an E.L.F. she calls Apgar — named for the assessment scale — before every delivery.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -177,7 +177,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Shelf",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,43 +231,27 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Ferrogate Transit",
     "Mexicantown Libre",
-    "GLMZ",
+    "Helix Biosystems",
     "The Iron Lotus",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf",
-    "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
-    "Alper Inoue-Aidoo",
-    "Arcturus KS-7 'Nursery'",
-    "Cezar Watanabe-Gyasi",
-    "Crucible Industries CR-9 'Foundry'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Demyan Morozov",
-    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Highland Park Autonomous Zone",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Solina Barreto-Kiptoo",
-    "Somalex",
-    "Sorin Ekwensi-Balasanyan",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "VitaCore FlowGuard Hemodynamic Regulator"
+    "Cargo Tacos",
+    "GLMZ"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex diaspora blend: 38% Indigenous American (Mesoamerican and Andean), 20% Northern European, 20% Middle Eastern, 11% South Asian, 7% Sub-Saharan African, 3% Eastern European — resulting in warm golden-brown skin with subtle olive undertones, a facial structure that bridges multiple continents, and the physical resilience of mixed ancestry",
+    "heritage": "Complex diaspora blend: 41% Hispanic/Latin American (predominantly Mesoamerican and Andean Indigenous roots), 36% Central Asian (Kazakh and Kyrgyz phenotypic markers), 18% South Asian (Bengali and North Indian features), 3% East Asian, 2% Sub-Saharan African — resulting in warm golden-bronze skin with subtle olive and amber undertones, a facial structure bridging Andean cheekbones with South Asian refinement, Central Asian eye set, and the physical resilience of deeply mixed ancestry",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Full-figured, sturdy frame with rounded shoulders and a naturally broad torso — built for endurance rather than speed, with a quiet physical authority that comes from decades of holding people through their most vulnerable moments",
     "hair_color": "Deep brown-black, naturally textured",
     "hair_style": "Usually braided in cornrows or twisted updos when working; worn loose and long when off-duty — a deliberate visual signal to patients about her availability and emotional accessibility",
     "hair_length": "Long",
-    "eye_color": "Deep brown with subtle golden undertones, slightly hooded set with the warm depth of South Asian and African ancestry blending with European features",
-    "skin_tone": "Golden-bronze with warm olive undertones, sun-deepened from years of mobile clinic work and outdoor community presence; reflects the complex chromatic blending of her multi-continental heritage",
-    "complexion": "Well-maintained despite irregular sleep; deep-set eyes that carry the particular gravity of someone who has witnessed hundreds of births; minimal makeup, focus on skin care; fine lines around eyes and mouth from constant vigilant expression; steady, grounded presence in her face showing the harmonious blend of broader cheekbones from Indigenous and African ancestry with fine-featured bridge and temples from Northern European and Middle Eastern heritage",
+    "eye_color": "Deep brown with subtle golden undertones, almond-set with the warm depth characteristic of Central Asian and South Asian heritage blending",
+    "skin_tone": "Golden-bronze with warm olive and amber undertones, sun-deepened from years of mobile clinic work and outdoor community presence; reflects the complex chromatic blending of Hispanic/Latin American, Central Asian, and South Asian ancestry",
+    "complexion": "Well-maintained despite irregular sleep; deep-set eyes that carry the particular gravity of someone who has witnessed hundreds of births; minimal makeup, focus on skin care; fine lines around eyes and mouth from constant vigilant expression; steady, grounded presence in her face showing the harmonious blend of Andean/Indigenous broader cheekbones with fine-featured Central Asian and South Asian bridge and temples; subtle fold at inner eye corners from Central Asian heritage",
     "distinguishing_marks": [
       "Small burn scar on right inner forearm from a pharmacy acid spill in 2218, thin and pale",
       "Thin white scar running 4cm along left temple, partly hidden by hairline — result of a corporate inspector confrontation in 2220",
@@ -277,17 +261,50 @@
     "posture_movement": "Moves with deliberate calm, economical gestures; hands are always in motion but never rushed — constantly checking, assessing, preparing; stands with weight balanced, ready to support another body; speaks from a place of complete stillness, even when her hands are busy; maintains eye contact with the intensity of someone trained to read micro-expressions in pain and fear",
     "clothing_style": "Practical Tier 4 / community-access aesthetic: well-worn scrubs in soft colors (greens, grays, warm whites) layered with a faded denim jacket covered in pins and patches from the neighborhood organizations she supports; comfortable flat shoes with excellent grip; always carries a canvas satchel with worn leather edges containing medical instruments; wears a thin copper bracelet inscribed with Apgar numbers on her left wrist; jewelry is minimal and functional — a simple silver ring on left ring finger, a religious pendant (syncretic blend of Christian and Xhosa spiritual symbols) worn under scrubs"
   },
-  "image_prompt": "Sigrid Ozcoidi-Khoury, 2226 GLMZ medic with golden-bronze skin reflecting Mesoamerican-Northern European-Middle Eastern-South Asian-African heritage, deep brown eyes with golden undertones, long textured dark hair in loose waves over shoulders, full-figured sturdy build. Wearing soft gray medical scrubs layered under faded denim jacket with community organization patches, copper Apgar bracelet on wrist, worn canvas satchel at her side. Bioluminescent blue-white fingertip LEDs glowing softly as hands rest on medical instruments in low light. Standing with grounded posture in a mobile clinic environment, dim warm overhead lighting, worn medical equipment visible in background, expression of quiet authority and compassionate stillness, faint temple scar visible along hairline, subdermal med-scanner implant glowing subtly on left palm. Cyberpunk 2200s aesthetic, documentary realism --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Malika Baiseitov-Bhattacharya, a 168cm community midwife in the Great Lakes Metropolitan Zone 2226. Golden-bronze complexion with warm olive undertones, deep brown eyes with golden depths, almond-shaped with subtle Central Asian eye-fold. Broad Andean cheekbones softening into fine South Asian features. Long deep brown-black naturally textured hair in loose waves, framing her face. Worn medical scrubs in sage green layered beneath a faded denim jacket patched with community organization pins. Bioluminescent fingertip augmentations visible as soft blue-white under nail beds on both hands. Thin pale burn scar on right inner forearm, white temple scar partially hidden by hairline. Subdermal med-scanner implant glowing faintly on left palm. Copper Apgar-inscribed bracelet on left wrist, simple silver ring, religious pendant visible beneath scrubs. Standing with balanced posture, economical hand gestures mid-examination, expression intense and grounded. Canvas satchel with worn leather edges at her side. Neo-noir clinical lighting, warm overhead LED glow mixing with cool augmentation light. Moody, intimate setting suggesting a mobile clinic interior. Professional but deeply human presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Indigenous American": 38.3,
-    "Northern European": 20.2,
-    "Middle Eastern": 20.0,
-    "South Asian": 11.3,
-    "Sub-Saharan African": 7.2,
-    "Eastern European": 3.0
+    "Hispanic/Latin American": 41.4,
+    "Central Asian": 35.7,
+    "South Asian": 18.4,
+    "East Asian": 2.7,
+    "Sub-Saharan African": 1.8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 10.9,
+        "Colombian": 21.8
+      },
+      "Caribbean": {
+        "Dominican": 8.7
+      }
+    },
+    "Central Asian": {
+      "Turkic": {
+        "Kazakh": 35.7
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 18.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 0.6
+      },
+      "Chinese": {
+        "Cantonese": 2.1
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Ugandan": 1.8
+      }
+    }
+  }
 }

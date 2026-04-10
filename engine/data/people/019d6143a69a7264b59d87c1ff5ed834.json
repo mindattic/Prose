@@ -1,7 +1,7 @@
 {
   "id": "019d6143a69a7264b59d87c1ff5ed834",
   "type": "character",
-  "name": "Rune Tursunov-Cisneros",
+  "name": "Solveig Jaramillo-Subramaniam",
   "aliases": [
     "Philo",
     "The Dreamer"
@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Norwood Quiet — a ground-floor apartment whose windows face the Ferrogate overpass, and the Norwood Quiet public garden, near Damen and Armitage",
-  "description": "Philomena Satu-Ibragimova has the distracted, luminous quality of someone who is always halfway in a different time period. They are slight and wiry with warm golden-olive skin, deep-set dark eyes, and hair they grow long and tie back badly ��� it escapes in grey-shot black tendrils around their face no matter what they do with it. Their color-changing hair implant, an old Sterling-Nakamura perk from fifteen years back, cycles very slowly through muted earth tones: terracotta, ash-brown, the particular green of old moss. They don't style it so much as permit it. They wear comfortable layered clothes with too many pockets, all of which contain notebooks, memory sticks, pressed plant material, or printed photographs.\n\nPhilomena spent twenty-six years as a mid-level urban systems analyst for Sterling-Nakamura, modeling population flow, resource distribution, and neighborhood development trajectories. They were good at it and hated it by the end — specifically, hated the way the models treated neighborhoods as friction to be managed rather than places where people had histories worth preserving. They retired at fifty-seven on a comfortable but not generous package and immediately began doing with their own time what Sterling-Nakamura had forbidden: obsessively, lovingly documenting the specific human texture of Norwood Quiet — oral histories, photographs, material culture, the stories behind the names of alleys and squares and the ELF shrines people have been tending for forty years. They have become, without planning it, the neighborhood's memory. They are also known to know the precise location of every functional ELF shrine in a six-block radius and which offerings each prefers.",
+  "description": "Solveig Jaramillo-Subramaniam has the distracted, luminous quality of someone who is always halfway in a different time period. They are slight and wiry with warm golden-olive skin, deep-set dark eyes, and hair they grow long and tie back badly ��� it escapes in grey-shot black tendrils around their face no matter what they do with it. Their color-changing hair implant, an old Sterling-Nakamura perk from fifteen years back, cycles very slowly through muted earth tones: terracotta, ash-brown, the particular green of old moss. They don't style it so much as permit it. They wear comfortable layered clothes with too many pockets, all of which contain notebooks, memory sticks, pressed plant material, or printed photographs.\n\nPhilomena spent twenty-six years as a mid-level urban systems analyst for Sterling-Nakamura, modeling population flow, resource distribution, and neighborhood development trajectories. They were good at it and hated it by the end — specifically, hated the way the models treated neighborhoods as friction to be managed rather than places where people had histories worth preserving. They retired at fifty-seven on a comfortable but not generous package and immediately began doing with their own time what Sterling-Nakamura had forbidden: obsessively, lovingly documenting the specific human texture of Norwood Quiet — oral histories, photographs, material culture, the stories behind the names of alleys and squares and the ELF shrines people have been tending for forty years. They have become, without planning it, the neighborhood's memory. They are also known to know the precise location of every functional ELF shrine in a six-block radius and which offerings each prefers.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -182,7 +182,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Norwood Quiet",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -255,33 +255,14 @@
     "Norwood Quiet",
     "Ferrogate Transit",
     "Big Rig",
-    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Irontide Tidal Energy",
     "Stratum",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "ARCHIVE",
-    "Bogdan Achebe-Svanstrom",
-    "Brightmoor Reclamation",
-    "Chronicle",
-    "Crucible Industries Ember-9 'Firefly'",
-    "Idris Forsberg-Quaye",
-    "Kang Athletics KA-200 'Padwork'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Mika Sorel",
-    "Pullman Works",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "TESSERA TC-3 'Crucible'",
-    "The Burden Clause",
-    "The Pure Hand",
-    "The Reclamation Assembly",
-    "The Undertow",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "Central Asian (Kazakh/Kyrgyz dominant with Tatar influence) with East Asian and Hispanic/Latin American admixture. High cheekbones and eye-set typical of steppe populations, with subtle East Asian features in the orbital structure and Hispanic/Latin warmth to the skin undertones.",
+    "heritage": "Predominantly Hispanic/Latin American (75.3%) with significant Northern European (11.3%), South Asian (9.0%), and Sub-Saharan African (4.4%) ancestry. The genetic blend creates warm golden-brown skin with subtle olive and bronze undertones, high prominent cheekbones characteristic of Latin American and South Asian ancestry, and deep-set dark eyes. Facial structure reflects the mixed heritage with refined bone structure, warm melanin distribution, and the particular luminescence of someone who spends time outdoors. The minor Sub-Saharan African component adds subtle richness to the complexion's depth.",
     "height_cm": 162,
     "weight_kg": 52,
     "build": "Slight and wiry, the frame of someone who has never prioritized physical bulk — lean muscle beneath thin shoulders, built for endurance rather than strength",
@@ -289,8 +270,8 @@
     "hair_style": "Long, worn tied back loosely and perpetually escaping; tendrils constantly frame the face regardless of attempts at restraint",
     "hair_length": "Long (past shoulders)",
     "eye_color": "Deep brown, slightly hooded by age and habitually focused on middle distance",
-    "skin_tone": "Warm tan-olive with golden undertones from Central Asian and Hispanic heritage blending; sun-weathered at the creases with the particular luminescence of someone who spends time outdoors but protected",
-    "complexion": "Fine-lined face with prominent high cheekbones characteristic of Central Asian ancestry, deep-set eyes with a slightly epicanthic fold from East Asian admixture, and an expression of permanent distraction—as though listening to a conversation happening in another room. Minimal grooming; practical rather than vain. Skin condition shows age with dignity.",
+    "skin_tone": "Warm golden-brown with subtle olive and bronze undertones from the predominant Latin American and South Asian heritage blended with minor Sub-Saharan African ancestry; sun-weathered at the creases with the particular luminescence of someone who spends time outdoors but protected",
+    "complexion": "Fine-lined face with prominent high cheekbones characteristic of Latin American and South Asian ancestry, deep-set dark brown eyes reflecting the warmth of her genetic heritage, and an expression of permanent distraction—as though listening to a conversation happening in another room. Minimal grooming; practical rather than vain. Skin condition shows age with dignity, with warm bronze undertones that deepen at the temples and jawline, enriched by the minor Sub-Saharan African component.",
     "distinguishing_marks": [
       "Fine network of age lines radiating from the outer corners of both eyes, visible when they squint into archival work",
       "Small pale scar on the left temple, barely noticeable, origin forgotten",
@@ -300,14 +281,54 @@
     "posture_movement": "Slightly stooped from decades of analytical desk work, but with a restless, curious gait—stops mid-stride to examine something, photographs details with a pocket camera, hands often occupied with taking notes or holding notebooks. Moves with the unhurried precision of someone who notices things.",
     "clothing_style": "Layered, practical, deliberately unfashionable—earth-toned sweaters, worn denim, canvas jackets, and multipocketed vests that sag under the weight of notebooks, memory sticks, pressed plant material, and printed photographs. Tier 4 comfort without pretense: thrift-store finds, well-maintained but deliberately unseasonable. Shoes are practical walking shoes, often dirty from garden work. No jewelry except a worn silver ring on the left hand (origin personal, not corporate)."
   },
-  "image_prompt": "Rune Tursunov-Cisneros, 162cm tall Central Asian woman with high Kazakh cheekbones and subtle East Asian eye structure, warm tan-olive skin glowing with golden undertones. Deep brown eyes slightly hooded beneath long black hair threaded with silver, overlaid with color-shifting implant cycling through terracotta and moss-green. Fine age lines frame her eyes, small pale scar on left temple. Wearing layered earth-toned sweater, worn canvas jacket, multipocketed vest sagging with notebooks and memory sticks. Stooped slightly from decades of desk work, holding a pocket camera, perpetually distracted expression as if listening elsewhere. Visible subdermal geometric pattern in right palm catching light. Standing in warm afternoon archival lighting, surrounded by worn books and pressed plant specimens, cyberpunk 2226 aesthetic with practical unfashionable comfort, thrift-store authenticity, dirty walking shoes. Photography-focused, observant presence. --ar 2:3 --v 6",
+  "image_prompt": "Solveig Jaramillo-Subramaniam, 162cm tall, slight wiry build, warm golden-brown complexion with olive and bronze undertones, high prominent cheekbones, deep-set brown eyes with age lines at corners, sun-weathered skin showing dignified aging. Long black hair with grey threading and subtle color-shifting iridescence cycling through terracotta and moss-green, tied back loosely with tendrils framing face. Slightly stooped posture from desk work, restless curious gait. Wearing layered earth-toned clothing: worn sweater, canvas jacket, multipocketed vest stuffed with notebooks and memory sticks, practical walking shoes dirty from garden work. Holding pocket camera, examining something intently. GLMZ Great Lakes Metropolitan Zone, soft afternoon light catching the subdermal geometric pattern in right palm, faint color-shift in hair implant. Expression of permanent distraction, mid-stride observation mode, surrounded by archival materials and pressed plant specimens. Neo-archival aesthetic meets practical researcher. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Central Asian": 85.8,
-    "East Asian": 8.0,
-    "Hispanic/Latin American": 6.2
+    "Hispanic/Latin American": 75.3,
+    "Northern European": 11.3,
+    "South Asian": 9,
+    "Sub-Saharan African": 4.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 4.7,
+        "Colombian": 35.2
+      },
+      "Caribbean": {
+        "Cuban": 35.4
+      }
+    },
+    "Northern European": {
+      "Germanic": {
+        "German": 2,
+        "Swiss German": 2.6
+      },
+      "British Isles": {
+        "Welsh": 4.6,
+        "Scottish": 2.1
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 1.7
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.3,
+        "Sinhalese": 0.2
+      },
+      "Indian": {
+        "Punjabi": 6.8
+      }
+    },
+    "Sub-Saharan African": {
+      "West African": {
+        "Sierra Leonean": 1.5,
+        "Nigerian": 2.9
+      }
+    }
+  }
 }

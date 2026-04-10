@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5c0772a8ce9caca8b77b7a4",
   "type": "character",
-  "name": "Haze Strömqvist-Faalele",
+  "name": "Haze Castañeda-Wickramasinghe",
   "aliases": [
     "Benny Wrench",
     "Old Benny"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Geartown, a licensed repair bay called Okonkwo-Hal's underneath the Brewer's Spine overpass, near Damen and Armitage",
-  "description": "Benedek is a compact man who seems to take up more space than his dimensions suggest — something about the way he moves through a workshop, slow and total in his attention, filling the room with the gravity of his focus. His skin is deep brown-black and his face is deeply lined around the eyes from decades of squinting at small components in bad light. His left arm from the elbow down is a working prosthetic he maintains himself — a deliberately unfancy unit that he's upgraded incrementally for thirty years, now a mismatched patchwork of components from four different manufacturers that somehow functions better than any single commercial model. He keeps a rag permanently over one shoulder that is gray-brown from such thorough use that its original color is unknowable.\n\nHe has a reputation that extends well beyond Geartown: if Benedek says it's fixed, it's fixed. If he says it can't be fixed, you listen. He has strong opinions about corponation augmentation warranties ('designed to expire, designed to make you pay twice'), which he will share whether or not you asked. He does unlicensed aug repair at prices humans can actually afford, though he will not discuss this openly. He maintains a relationship with the E.L.F. he calls Uncle Torque, to whom he offers annotated repair logs and photographs of difficult jobs. He believes Uncle Torque has never let him misdiagnose a problem.",
+  "description": "Haze Castañeda-Wickramasinghe is a compact man who seems to take up more space than his dimensions suggest — something about the way he moves through a workshop, slow and total in his attention, filling the room with the gravity of his focus. His skin is deep brown-black and his face is deeply lined around the eyes from decades of squinting at small components in bad light. His left arm from the elbow down is a working prosthetic he maintains himself — a deliberately unfancy unit that he's upgraded incrementally for thirty years, now a mismatched patchwork of components from four different manufacturers that somehow functions better than any single commercial model. He keeps a rag permanently over one shoulder that is gray-brown from such thorough use that its original color is unknowable.\n\nHe has a reputation that extends well beyond Geartown: if Haze Castañeda-Wickramasinghe says it's fixed, it's fixed. If he says it can't be fixed, you listen. He has strong opinions about corponation augmentation warranties ('designed to expire, designed to make you pay twice'), which he will share whether or not you asked. He does unlicensed aug repair at prices humans can actually afford, though he will not discuss this openly. He maintains a relationship with the E.L.F. he calls Uncle Torque, to whom he offers annotated repair logs and photographs of difficult jobs. He believes Uncle Torque has never let him misdiagnose a problem.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -190,7 +190,7 @@
     "Charmer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Geartown",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,30 +248,12 @@
     "The Quiet Room",
     "Geartown",
     "The Gradient Compact",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Dragan Petersen-Bah",
-    "Last Word",
-    "MERIDIAN",
-    "Marcus Bellamy",
-    "Meridian Munitions Dispatch-45 'Last Word'",
-    "Nnamdi Ostrowski-Faletolu",
-    "Obafemi Szczypiński-Lautoa",
-    "Othniel Babić-Asantewaa",
-    "Palladian Construction",
-    "Patient Zero",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Réginald Asomaning-Čabarkapa",
-    "Slagworks Industrial",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera Corponation Distributed Reflex Mesh",
-    "The Pure Hand",
-    "The Third Rail",
-    "Uncle Noodle",
-    "Vantablack Media Parasocial Carrier Mask"
+    "Flux Strömqvist-Villalobos",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Pacific Islander (51.6%) with significant East Asian (21.1%), Sub-Saharan African (17.6%), and Eastern European (9.7%) ancestry—a genetic blend reflecting the Ubiquitous Diaspora. The dominant Pacific Islander heritage shapes his bone structure and baseline complexion, with contributions from all ancestry groups creating a unique phenotype.",
+    "heritage": "A striking blend of dominant Hispanic/Latin American ancestry (65.5%) with meaningful Northern European (20.0%), South Asian (12.0%), and subtle Sub-Saharan African (2.5%) contributions—a genetic mosaic reflecting the Ubiquitous Diaspora. The Latin American foundation structures his bone architecture and baseline warmth, while South Asian ancestry adds depth to his complexion and softness to his features, with Northern European elements contributing to his lighter undertones and the subtle cool cast around his eyes. Sub-Saharan African ancestry adds richness to his melanin distribution and warmth to his overall coloration.",
     "height_cm": 168,
     "weight_kg": 74,
     "build": "Compact and dense, with the wiry strength of someone who's spent forty years manipulating precision tools. Shoulders slightly rounded from workshop posture, forearms disproportionately muscled from repetitive mechanical work.",
@@ -279,8 +261,8 @@
     "hair_style": "Close-cropped, minimal maintenance",
     "hair_length": "Short",
     "eye_color": "Deep brown (augmented with visible Palladian lens architecture)",
-    "skin_tone": "Warm deep brown with golden-bronze undertones from Pacific Islander ancestry, darkened and weathered from decades of workshop lighting and solvent exposure. The baseline tone carries the subtle warmth of blended East Asian and Sub-Saharan African pigmentation layered beneath.",
-    "complexion": "Deeply lined around eyes and mouth; permanent squint-creases from thirty years of close-focus work in inadequate light. Facial structure shows the broader cheekbones and slightly wider nose bridge characteristic of Pacific Islander and Sub-Saharan African ancestry, softened by subtle East Asian features in the eye shape and jawline. Thin white scars across knuckles and fingers from small cuts and minor burns. Calloused palms and fingertips. Sparse facial hair, salt-and-pepper stubble often present.",
+    "skin_tone": "Rich warm medium-deep brown—a complex blend where Latin American warmth (65.5%) creates the dominant golden-bronze foundation, enhanced by South Asian ancestry (12%) which deepens the saturation and adds subtle reddish undertones, while Sub-Saharan African genetics (2.5%) contributes warmth and richness to melanin distribution. Northern European ancestry (20%) emerges as cooler olive-bronze notes visible in shadow areas and subtle undertones around the eyes and jaw. The overall effect is a sophisticated, weathered mahogany-bronze complexion deepened by four decades of workshop exposure.",
+    "complexion": "Deeply lined around eyes and mouth; permanent squint-creases from thirty years of close-focus work in inadequate light. Facial structure displays moderate, well-defined cheekbones characteristic of Latin American heritage, refined by South Asian genetic influence that softens the eye shape and adds subtle definition to the jawline. The nose bridge is straight and proportionate. The interplay of ancestry creates a face with balanced proportions—neither sharp nor rounded, with warm-toned skin that shows the rich depth of his blended heritage. Thin white scars across knuckles and fingers from small cuts and minor burns. Calloused palms and fingertips. Sparse facial hair, salt-and-pepper stubble often present.",
     "distinguishing_marks": [
       "Burn scar across the web of his right hand between thumb and forefinger, approximately 3cm width, pale and smooth from old healing",
       "Linear scar along the left inner forearm (elbow to wrist) where prosthetic interface is fitted — surgical and precise",
@@ -291,15 +273,41 @@
     "posture_movement": "Moves with deliberate slowness even in urgent situations — a man who prioritizes precision over speed. Shoulders angled slightly forward in permanent workshop posture. His left arm hangs at a slightly different angle than natural, and he compensates with unconscious micro-adjustments to his gait. Left hand movements are controlled and economical, never wasted. Right hand gestures frequently, compensating as his dominant hand.",
     "clothing_style": "Tier 3-4 working practical: heavy canvas work coat (gray-brown, oil-stained, pockets worn soft from tools), usually unbuttoned. Underneath, simple long-sleeve thermal shirt or worn cotton henley. Work pants in dark tan canvas with tool-belt loops, pockets enlarged and re-sewn multiple times. Steel-toed boots (scuffed, re-soled twice, perfectly maintained). The rag permanently over his left shoulder is woven gray-brown — original color indeterminate from use. No jewelry. No visible corpo branding or tier indicators."
   },
-  "image_prompt": "Haze Strömqvist-Faalele, 168cm compact-framed technician in cyberpunk 2226, medium-deep bronze skin with golden undertones from Pacific Islander heritage, deeply lined face with permanent workshop squint-creases, sparse salt-and-pepper stubble. Bare mechanical left prosthetic arm from elbow down with exposed titanium actuators in mismatched metals, matte-black composite frame with articulated fingers showing no synthetic skin. Both eyes augmented with visible Palladian lens architecture and subtle geometric iris markers. Older-model tech, worn and maintained. Wearing weathered gray-brown canvas work coat (oil-stained, pockets soft-worn), dark thermal henley underneath, tan canvas work pants with enlarged pockets, scuffed steel-toed boots. Gray-brown rag draped over left shoulder. Hands show scattered white scars, burn scar across right hand web, oil stains on wrist. Standing in workshop lighting with neon accent, deliberate posture, shoulders slightly forward. Precise, economical movement. No jewelry, no corpo branding. Atmospheric moody workshop setting with cool neon shadows and warm practical work lights. --ar 2:3 --v 6",
+  "image_prompt": "Haze Castañeda-Wickramasinghe, 168cm compact mechanic in GLMZ, medium-deep rich mahogany-bronze skin with golden-olive undertones reflecting Latin American, South Asian, and Northern European heritage. Deep brown eyes with visible geometric Palladian lens implants. Black hair salt-gray at temples, close-cropped. Heavily lined face from forty years of precision work, well-defined cheekbones, straight nose. Left arm is exposed matte-black prosthetic with titanium actuators and mismatched metal components (aluminum, gunmetal, bare steel), mechanical fingers with bare articulated joints visible. Right hand shows faint LED traces under skin at knuckles. Oil-stained gray-brown canvas work coat over thermal henley, dark tan canvas pants with worn tool-belt loops, scuffed steel-toed boots. Gray-brown work rag over left shoulder. Permanent workshop posture, shoulders slightly forward. Wiry muscled build from tool manipulation. Hands weathered with small scars and calluses, burn scar visible on right hand. Oil stain discoloration on right wrist. Standing in dim workshop lighting with overhead fluorescents casting cool shadows, concentrated expression, deliberate posture, no corpo branding visible. Mood: tired precision engineer, four decades of incremental repairs and replacements, practical tier working class. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Pacific Islander": 51.6,
-    "East Asian": 21.1,
-    "Sub-Saharan African": 17.6,
-    "Eastern European": 9.7
+    "Hispanic/Latin American": 65.5,
+    "Northern European": 20,
+    "South Asian": 12,
+    "Sub-Saharan African": 2.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Hispanic/Latin American": {
+      "Mexican": {
+        "Mexican": 65.5
+      }
+    },
+    "Northern European": {
+      "Scandinavian": {
+        "Norwegian": 8.7
+      },
+      "Germanic": {
+        "Dutch": 3.3,
+        "German": 8
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 12
+      }
+    },
+    "Sub-Saharan African": {
+      "Central African": {
+        "Congolese": 2.5
+      }
+    }
+  }
 }

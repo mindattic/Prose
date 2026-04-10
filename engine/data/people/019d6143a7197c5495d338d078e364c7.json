@@ -1,7 +1,7 @@
 {
   "id": "019d6143a7197c5495d338d078e364c7",
   "type": "character",
-  "name": "Flux Soriano",
+  "name": "Flux Nurzhanov",
   "aliases": [
     "Dr. Thorv",
     "The Architect"
@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Aurochs Medical Complex, Level 6 Trauma Wing; lives in Edgewater Prism, near Lincoln and Clark",
-  "description": "Věra is tall and angular, with a long face and the kind of silver-threaded dark hair they wear in a severe plait that their residents know means do not ask unnecessary questions today. Their skin is medium brown, fine-lined around the eyes and mouth in ways they have never had corrected and will not. Their left arm from the elbow is a Sterling-Nakamura prosthetic — their own work, integrated at the point of the original trauma, fitted and calibrated to their exacting standards, and significantly more capable than their standard clinical colleagues understand. The arm's surface is a brushed dark alloy that they have kept deliberately unmarked, which in GLMZ's ornamented medical culture is its own kind of statement.\n\nVěra is renowned within Aurochs for outcomes and feared for feedback. They are exacting in the way that people become when they have decided that nearly-good-enough has a body count. They have no interest in personal relationships with their team beyond professional excellence, which does not stop residents from becoming deeply attached to them anyway. They have a single personal ritual: before any surgery, they spend two minutes at their workstation speaking quietly to the E.L.F. they call the Seam, which they believe inhabits the gap between biological tissue and synthetic integration — the threshold where their work actually happens. They do not describe this as prayer. They describe it as professional consultation.",
+  "description": "Flux Nurzhanov is tall and angular, with a long face and the kind of silver-threaded dark hair they wear in a severe plait that their residents know means do not ask unnecessary questions today. Their skin is medium brown, fine-lined around the eyes and mouth in ways they have never had corrected and will not. Their left arm from the elbow is a Sterling-Nakamura prosthetic — their own work, integrated at the point of the original trauma, fitted and calibrated to their exacting standards, and significantly more capable than their standard clinical colleagues understand. The arm's surface is a brushed dark alloy that they have kept deliberately unmarked, which in GLMZ's ornamented medical culture is its own kind of statement.\n\nFlux Nurzhanov is renowned within Aurochs for outcomes and feared for feedback. They are exacting in the way that people become when they have decided that nearly-good-enough has a body count. They have no interest in personal relationships with their team beyond professional excellence, which does not stop residents from becoming deeply attached to them anyway. They have a single personal ritual: before any surgery, they spend two minutes at their workstation speaking quietly to the E.L.F. they call the Seam, which they believe inhabits the gap between biological tissue and synthetic integration — the threshold where their work actually happens. They do not describe this as prayer. They describe it as professional consultation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -190,7 +190,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Aurochs Medical Complex",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -249,54 +249,26 @@
     "Aurochs Medical Complex",
     "Edgewater Prism",
     "The Threshold",
-    "GLMZ",
     "WELLSPRING",
     "Threshold",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Lacuna Genomics",
     "TESSERA WL-6 'Stacker'",
     "Silver",
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "Arcturus BH-2 'Marrow'",
-    "Carrion Defense Works",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Dzemal Acholonu-Patagiri",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'",
-    "Idris Forsberg-Quaye",
-    "MERIDIAN",
-    "Meridian Munitions Twin PDW MTP-2 'Gemini'",
-    "Narrowcast",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Nurlan Morita-Antwi",
-    "Patient Zero",
-    "Sagyn Ogawa-Twumasi",
-    "Slagworks Industrial",
-    "Specter ID Spoofer — 'Janus Mask'",
-    "Sulfur Crown Agriculture",
-    "Tessera Nexus Town Car",
-    "The Burden Clause",
-    "The Heritage Vault",
-    "The Pure Hand",
-    "The Seam",
-    "The Suture Collective",
-    "Tiare Nishi-Anim",
-    "Tympanic Membrane Galvanic Rupture Carbine",
-    "Vantablack Media Parasocial Carrier Mask",
-    "Yannick Tofauti-Szarvásy"
+    "GLMZ"
   ],
   "district": "The Laceworks",
   "physical_description": {
-    "heritage": "South Asian, Hispanic/Latin American, East Asian, and Northern European ancestry creates a striking polycultural blend. Dark hair with natural silver threading reflects the East Asian and South Asian heritage, while the warm golden undertones of medium brown skin come from the interplay of South Asian melanin depth with Hispanic/Latin American warmth and Northern European recessive genetics creating subtle variation.",
+    "heritage": "Central Asian (63.6%) with significant East Asian (28.4%) and South Asian (8.0%) ancestry creates a distinctive Silk Road phenotype. The genetic blend produces characteristic high, prominent cheekbones and angular facial structure from Central Asian ancestry, refined by East Asian features, with warm undertones from South Asian heritage. This combination results in a unified warm-neutral complexion with subtle depth.",
     "height_cm": 182,
     "weight_kg": 68,
     "build": "Tall and angular, with long lean musculature typical of someone who moves with precision and minimal wasted motion. Shoulders slightly asymmetrical due to the weight distribution of the prosthetic arm, but posture corrected through years of conscious adjustment.",
     "hair_color": "Dark brown with natural silver threading",
     "hair_style": "Severe plait, worn at the crown and secured tightly. The style functions as a nonverbal communication — residents and staff read the plait's tension as an indicator of Flux's mood.",
     "hair_length": "Long (shoulder-blade length when unbraided)",
-    "eye_color": "Gray-brown with warm amber undertones, with prominent crow's feet and the focused intensity of someone who has spent decades reading tissue and sutures",
-    "skin_tone": "Medium brown with warm golden undertones, the result of South Asian depth blended with Hispanic/Latin American warmth and subtle Northern European variation",
-    "complexion": "Fine-lined around eyes and mouth — age marks deliberately chosen not to correct. High cheekbones with soft contours reflecting South Asian and East Asian ancestry. Skin is well-maintained but shows no cosmetic intervention. Expression typically neutral or concentrating; they smile rarely and with purpose.",
+    "eye_color": "Warm amber-brown with prominent crow's feet and the focused intensity of someone who has spent decades reading tissue and sutures",
+    "skin_tone": "Medium warm brown — Central Asian base enriched by East Asian and South Asian ancestry, creating a unified complexion with golden undertones",
+    "complexion": "Fine-lined around eyes and mouth — age marks deliberately chosen not to correct. High, prominent cheekbones with angular contours reflecting Central and East Asian ancestry structure. Skin is well-maintained but shows no cosmetic intervention. Expression typically neutral or concentrating; they smile rarely and with purpose.",
     "distinguishing_marks": [
       "Surgical scar on left lower abdomen, approximately 8cm, horizontal — origin trauma that necessitated the prosthetic, visible when wearing medical attire",
       "Thin white scar across the dorsum of right hand, between thumb and index finger, approximately 3cm — suture needle puncture wound from early career",
@@ -306,15 +278,53 @@
     "posture_movement": "Posture is ramrod-straight, almost formal. Movement is economical and deliberate — no gesture wasted. When standing at rest, they often rest their right hand on the prosthetic arm's forearm in a gesture that appears protective but functions as a calibration check. In surgery, their movements become balletic; the prosthetic arm's precision allows micro-adjustments that biological surgeons require two hands to achieve.",
     "clothing_style": "Tier 3-4 professional: surgical scrubs in dark gray or charcoal (not the standard hospital blue), with a fitted surgical coat in deep navy that shows barely perceptible tailoring. Outside the Complex, they wear tailored but austere clothing — narrow-cut dark trousers, long-sleeved shirts in muted colors, a heavy wool coat in graphite. No logos, no ornament, no visible jewelry. Shoes are practical and expensive, broken in thoroughly. The overall effect is monastic, deliberate, and subtly intimidating."
   },
-  "image_prompt": "Flux Soriano, 182cm tall angular figure with medium brown skin and warm golden undertones, dark brown hair with silver threading in a severe crown plait, gray-brown eyes with subtle amber. Mixed heritage features showing South Asian cheekbones, East Asian refinement, Hispanic/Latin warmth, Northern European undertones. Sterling-Nakamura brushed dark alloy prosthetic left arm from elbow down, articulated hand moving with inhuman precision. Wearing dark charcoal surgical scrubs under deep navy tailored surgical coat, long-sleeved muted shirt, graphite wool coat. Ramrod posture, economical movement, right hand resting protectively on prosthetic forearm. Fine age lines around eyes and mouth. Surgical scars visible on left abdomen and right hand dorsum. Monastic, austere aesthetic. Cyberpunk 2226 medical complex setting, cool clinical lighting with warm accent lights reflecting off prosthetic arm surface. Focused, neutral expression, barely perceptible smile. --ar 2:3 --v 6",
+  "image_prompt": "Flux Nurzhanov, Central Asian-East Asian-South Asian blend phenotype, 182cm tall angular frame, warm medium brown skin with golden undertones, high prominent cheekbones, gray-brown eyes with warm amber flecks and deep crow's feet. Dark brown hair with silver threading, long and braided tightly at crown. Brushed dark alloy Sterling-Nakamura prosthetic left arm from elbow down, no ornamentation, seven-degree articulation. Wearing dark charcoal surgical scrubs and deep navy fitted surgical coat. Ramrod-straight posture, right hand resting on prosthetic forearm. Focused neutral expression, monastic aesthetic. Neo-noir medical complex interior, cool surgical lighting, 2226 Great Lakes Metropolitan Zone. Mood: intense professional focus, deliberate composure. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "South Asian": 38.0,
-    "Hispanic/Latin American": 32.7,
-    "East Asian": 16.1,
-    "Northern European": 13.2
+    "Central Asian": 63.6,
+    "East Asian": 28.4,
+    "South Asian": 8
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Central Asian": {
+      "Turkic": {
+        "Uzbek": 58.3
+      },
+      "Mongolic": {
+        "Kalmyk": 0.4,
+        "Mongolian": 1.1
+      },
+      "Iranian Central": {
+        "Tajik": 2.3,
+        "Hazara": 1.5
+      }
+    },
+    "East Asian": {
+      "Korean": {
+        "Korean": 3.7
+      },
+      "Japanese": {
+        "Japanese": 10.5
+      },
+      "Chinese": {
+        "Sichuanese": 6.7,
+        "Cantonese": 7.5
+      }
+    },
+    "South Asian": {
+      "Nepali": {
+        "Nepali": 1.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 2.3,
+        "Sinhalese": 1.4
+      },
+      "Indian": {
+        "Bengali": 2.8
+      }
+    }
+  }
 }

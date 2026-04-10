@@ -1,7 +1,7 @@
 {
   "id": "019d6143a67e7ae9a80179605bb4f5a4",
   "type": "character",
-  "name": "Soraya Nygaard",
+  "name": "Ngozi Appiah",
   "aliases": [
     "Bisi",
     "The Frequency"
@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Ferment Quarter — permanent residency at the venue called 'Slag', near Armitage and Milwaukee",
-  "description": "Olabisi is a big man going soft at the middle in the way of someone who was once physically imposing and no longer cares to maintain it. His skin is a deep umber, his head shaved close except for a strip of silver-threaded locs he keeps pulled back. His eyes carry patterned irises — a Helix Biosystems cosmetic mod from his Tier 3 days, concentric rings of gold and charcoal — that he chose to keep even after the money ran out, because he thinks they make him look like a prophet and he finds this privately amusing. His hands are enormous and dexterous, always moving, tapping rhythms on whatever surface is near.\n\nHe is warm in the manner of a man who has made peace with most of his disappointments, which makes him either genuinely wise or dangerously comfortable depending on who you ask. He builds sound sculptures — physical installations of salvaged materials that produce music when air, heat, or electrical current moves through them — and he DJs the late sets at Slag three nights a week, mixing generative compositions with field recordings he collects obsessively from across the city. He is the unofficial historian of the Ferment Quarter's sound scene, having watched it transform from genuine underground to semi-curated Palladian 'authenticity experience' with the sad clarity of someone who remembers the original thing.",
+  "description": "Ngozi Appiah is a big man going soft at the middle in the way of someone who was once physically imposing and no longer cares to maintain it. His skin is a deep umber, his head shaved close except for a strip of silver-threaded locs he keeps pulled back. His eyes carry patterned irises — a Helix Biosystems cosmetic mod from his Tier 3 days, concentric rings of gold and charcoal — that he chose to keep even after the money ran out, because he thinks they make him look like a prophet and he finds this privately amusing. His hands are enormous and dexterous, always moving, tapping rhythms on whatever surface is near.\n\nHe is warm in the manner of a man who has made peace with most of his disappointments, which makes him either genuinely wise or dangerously comfortable depending on who you ask. He builds sound sculptures — physical installations of salvaged materials that produce music when air, heat, or electrical current moves through them — and he DJs the late sets at Slag three nights a week, mixing generative compositions with field recordings he collects obsessively from across the city. He is the unofficial historian of the Ferment Quarter's sound scene, having watched it transform from genuine underground to semi-curated Palladian 'authenticity experience' with the sad clarity of someone who remembers the original thing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -155,7 +155,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "The Ferment Quarter",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,30 +171,20 @@
     "The Ferment Quarter",
     "Helix Biosystems",
     "Palladian Construction",
+    "Frequency",
+    "Charcoal",
     "Irontide Tidal Energy",
+    "Street Custom 'Prophet' Laser Pointer Weapon",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "ARCHIVE",
     "Silver",
+    "SynapTech IrisBloom Ocular Color Modulator",
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
-    "Gold",
-    "The Milwaukee Core",
-    "Anatoliy Faye-Nkrumah",
-    "Breck Tannen",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Iron Meridian (The Long Walk Home)",
-    "Isadora Mwangi-Thorvaldsen",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Prophet",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "TESSERA PA-5 'Attendant'"
+    "Gold"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Cosmopolitan blend: Middle Eastern (25.3%), Northern European (23.5%), Sub-Saharan African (17.6%), Southeast Asian (12.2%), Eastern European (11.0%), Hispanic/Latin American (10.4%). Features reflect this global admixture—warm umber skin with subtle golden undertones bridging African and Middle Eastern ancestry; bone structure carries Northern European width tempered by Southeast Asian angularity; facial proportions show the balanced complexity of true diaspora genetics.",
+    "heritage": "Predominantly Sub-Saharan African ancestry (72.5%) with secondary contributions from Hispanic/Latin American (10.4%), East Asian (10.2%), and South Asian (6.9%) heritage. Features reflect this genetic composition—rich deep brown skin with warm golden undertones from the substantial African base, subtly enriched by the minor East and South Asian contributions; bone structure carries the width and definition characteristic of West African ancestry with slight angular refinement from East Asian genetic influence; facial proportions show the harmonious blend of his primary heritage with complementary secondary ancestries, evident in cheekbone prominence and jawline definition.",
     "height_cm": 188,
     "weight_kg": 94,
     "build": "Large-framed, formerly athletic muscle now softened by middle age and deliberate disinterest in maintenance. Broad shoulders and thick forearms retain definition; midsection carries settled weight without shame. Hands are disproportionately large and elegant despite his size.",
@@ -202,8 +192,8 @@
     "hair_style": "Shaved close on sides and back; single strip of silver-threaded locs pulled back from crown into loose bundle",
     "hair_length": "Short (sides/back), Medium (locs strip)",
     "eye_color": "Deep brown base with visible Helix Biosystems cosmetic augmentation: concentric rings of 24K gold and charcoal grey, perfectly symmetrical, catching light distinctly",
-    "skin_tone": "Warm umber with golden undertones—neither purely deep nor dusty, but luminous from the layered ancestry. Richer in Sub-Saharan and Middle Eastern registers, brightened by Northern European contribution.",
-    "complexion": "Weathered with age and indoor-living pallor; creases around eyes from years of smiling and squinting at mixing boards; full beard kept at 3-day shadow, salt-and-pepper threading. Skin condition is well-maintained but unfussy — no cosmetic treatments. Cheekbones carry subtle Southeast Asian definition; jawline reflects Eastern European breadth.",
+    "skin_tone": "Rich deep brown with warm golden undertones—luminous from Sub-Saharan African heritage as primary register, subtly enriched by minor East and South Asian genetic contribution. Neither dusty nor overly saturated; carries natural warmth without reddish cast.",
+    "complexion": "Weathered with age and indoor-living character; creases around eyes from years of smiling and squinting at mixing boards; full beard kept at 3-day shadow, salt-and-pepper threading. Skin condition is well-maintained but unfussy — no cosmetic treatments. Cheekbones carry subtle East Asian definition; jawline reflects the width of West African ancestry.",
     "distinguishing_marks": [
       "Thin scar across left knuckle, white and old, from a salvage accident in his thirties",
       "Faint burn mark on inside of right forearm (2cm diameter, pale), origin unknown but present since his Tier 3 days",
@@ -213,17 +203,56 @@
     "posture_movement": "Stands with weight settled, shoulders relaxed. Moves with deliberate slowness despite his size — no wasted motion. Hands are constantly in motion: tapping, gesturing, feeling the air. His gait is a slow prowl through any space, as if he is always listening to frequencies others cannot hear. Makes direct eye contact, speaks with long pauses. When seated at a mixing board, his entire demeanor changes to focused intensity.",
     "clothing_style": "Tier 3-4 fusion; clothes are worn well but not expensive. Typical outfit: oversized linen shirt (often unbuttoned to mid-chest), loose charcoal trousers, heavy canvas jacket with deep pockets for recording equipment. Footwear is always functional — reinforced sneakers or salvage-worker boots. No jewelry except a single silver ring on his right index finger (no visible maker's mark). His clothes smell faintly of incense and machine oil."
   },
-  "image_prompt": "Soraya Nygaard, 188cm tall, 94kg broad-framed man in cyberpunk 2226 Great Lakes Metropolitan Zone. Warm umber skin with golden undertones, blended global ancestry visible in balanced facial proportions. Black hair with silver threading, close-shaved sides with pulled-back locs bundle. Striking augmented eyes: concentric rings of 24K gold and charcoal grey. Weathered face, 3-day salt-and-pepper beard, creases around eyes. Large elegant hands with faint geometric scarring from sub-dermal vibration sensors. Wearing oversized unbuttoned linen shirt revealing chest, loose charcoal trousers, heavy canvas jacket with deep pockets, functional reinforced sneakers. Silver ring on right index finger. Posture relaxed but intentional, hands gesturing subtly. Indoor mixing studio setting with warm incense and machine oil atmosphere, blue undertone lighting catching his palm sensors and iris augmentations. Slow-prowling confidence, contemplative intensity. Mood: deliberate, listening, unfussy dignity. --ar 2:3 --v 6",
+  "image_prompt": "Ngozi Appiah, 188cm tall dark-skinned man with rich deep brown complexion and warm golden undertones, salt-and-pepper 3-day beard, shaved sides with single bundle of silver-threaded locs pulled back from crown. Augmented eyes with striking concentric rings of 24K gold and charcoal grey. Large elegant hands with faint geometric scarring, one hand showing old white scar across knuckles. Wearing oversized unbuttoned linen shirt (mid-chest exposed), loose charcoal trousers, heavy canvas jacket, functional reinforced boots. Single silver ring on right index finger. Middle-aged, settled athletic build, relaxed posture. GLMZ, Great Lakes Metropolitan Zone, standing in moody neon-lit studio or salvage workspace, blue-grey ambient lighting catching the gold in his iris augmentations, incense smoke faint in background, deliberate and focused presence, hands subtly in motion --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Middle Eastern": 25.3,
-    "Northern European": 23.5,
-    "Sub-Saharan African": 17.6,
-    "Southeast Asian": 12.2,
-    "Eastern European": 11.0,
-    "Hispanic/Latin American": 10.4
+    "Sub-Saharan African": 72.5,
+    "Hispanic/Latin American": 10.4,
+    "East Asian": 10.2,
+    "South Asian": 6.9
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 36
+      },
+      "West African": {
+        "Ivorian": 17.9
+      },
+      "East African": {
+        "Somali": 12.5,
+        "Ugandan": 6.1
+      }
+    },
+    "Hispanic/Latin American": {
+      "South American": {
+        "Peruvian": 5.5,
+        "Brazilian": 2.1
+      },
+      "Caribbean": {
+        "Puerto Rican": 2.4,
+        "Dominican": 0.4
+      }
+    },
+    "East Asian": {
+      "Japanese": {
+        "Japanese": 6.7
+      },
+      "Chinese": {
+        "Sichuanese": 0.3
+      },
+      "Korean": {
+        "Korean": 3.2
+      }
+    },
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 5.2,
+        "Tamil Sri Lankan": 1.7
+      }
+    }
+  }
 }

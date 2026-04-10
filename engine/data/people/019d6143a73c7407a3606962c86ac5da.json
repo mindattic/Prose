@@ -1,7 +1,7 @@
 {
   "id": "019d6143a73c7407a3606962c86ac5da",
   "type": "character",
-  "name": "Devi Waboose-Okafor",
+  "name": "Devi Sesay-Okafor",
   "aliases": [
     "Zul",
     "Nurse Z"
@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Hough Reclamation — Bright Passage Community Clinic, a converted ground-floor retail unit with hand-lettered signs, near Ashland and Chicago Ave",
-  "description": "Zulfia is tall with a slightly stooped posture from decades of bending over patients — she's never fully corrected it and at this point she doesn't intend to. Her family line runs Uzbek-French on her father's side and Nigerien-Danish on her mother's, producing someone with sharp cheekbones, tawny-brown skin that holds color well under the clinic's poor lighting, and pale gray eyes that have struck patients as either comforting or unnerving depending on what she's about to tell them. She wears her dark hair in a practical high bun sealed with a clip she's had since nursing school. Her only geneware is patterned irises — tiny interlocking hexagons in the gray of her eyes, a detail she got as a young woman and now never discusses, as though she's forgotten it's unusual.\n\nZul operates in the register of professional calm that people either find deeply reassuring or read as coldness, and she has made her peace with the fact that both readings are partially correct. She rations warmth as carefully as she rations dressings and antibiotic stock — there's never quite enough, so it goes to whoever needs it most. She has treated gunshot wounds, overdoses, radiation rash, augmentation rejection, labor complications, and a corponation executive who appeared at her back door at 02:00 asking her to not document anything. She is not naive. She is tired. She continues anyway.",
+  "description": "Devi Sesay-Okafor is tall with a slightly stooped posture from decades of bending over patients — she's never fully corrected it and at this point she doesn't intend to. Her family line runs Uzbek-French on her father's side and Nigerien-Danish on her mother's, producing someone with sharp cheekbones, tawny-brown skin that holds color well under the clinic's poor lighting, and pale gray eyes that have struck patients as either comforting or unnerving depending on what she's about to tell them. She wears her dark hair in a practical high bun sealed with a clip she's had since nursing school. Her only geneware is patterned irises — tiny interlocking hexagons in the gray of her eyes, a detail she got as a young woman and now never discusses, as though she's forgotten it's unusual.\n\nZul operates in the register of professional calm that people either find deeply reassuring or read as coldness, and she has made her peace with the fact that both readings are partially correct. She rations warmth as carefully as she rations dressings and antibiotic stock — there's never quite enough, so it goes to whoever needs it most. She has treated gunshot wounds, overdoses, radiation rash, augmentation rejection, labor complications, and a corponation executive who appeared at her back door at 02:00 asking her to not document anything. She is not naive. She is tired. She continues anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -168,7 +168,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Hough Reclamation",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -182,37 +182,21 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Hough Reclamation",
+    "Helix Biosystems",
     "The Flood Register",
     "The Reclamation Assembly",
     "Zheng-Dao Bioelectric Cortical Pressure Valve",
+    "Chicago",
+    "Arcturus KS-7 'Nursery'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pale Mile",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "Chicago",
-    "Ambrosia Fekete-Waiyaki",
-    "Arcturus KS-7 'Nursery'",
-    "Brightmoor Reclamation",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kethavar",
-    "LifeWire LumiFace Bioluminescent Subdermal Accent",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Rashid Tuiasosopo-Erkens",
-    "Sisay Bergqvist-Mallari",
-    "Slagworks Industrial",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame",
-    "TESSERA TN-1 'Cradle'",
-    "The Pure Hand",
-    "The Question",
-    "Tshiamo Vukić-Arellano",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Multi-continental blend: Sub-Saharan African (33.4%), South Asian (25.2%), Indigenous American (16.6%), East Asian (14.6%), Hispanic/Latin American (8.0%), Southeast Asian (2.2%). Rich genetic tapestry creating warm medium-brown skin tone with golden undertones; facial structure reflects balanced contribution from African and South Asian ancestry with subtle East Asian eye shape and Indigenous American bone structure.",
+    "heritage": "Predominantly Sub-Saharan African (62.0%) with significant South Asian (22.6%) and Middle Eastern (15.4%) ancestry. The genetic blend creates a rich phenotype: warm deep brown skin with golden undertones from strong melanin inheritance; facial structure combines the prominent cheekbones and defined jawline characteristic of Sub-Saharan African heritage with the bone prominence and subtle orbital depth of South Asian ancestry, tempered by the broader nasal bridge and fuller lips influenced by Middle Eastern genetic contribution. Features reflect a harmonious blend rather than distinct components.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and long-limbed with minimal subcutaneous fat; shoulders slightly rounded forward from decades of clinical posture over examination tables and bed-side work. Wiry musculature in forearms and hands from repetitive precise movements.",
@@ -220,8 +204,8 @@
     "hair_style": "High, tight bun secured with a brass clip showing patina and minor dents from two decades of use",
     "hair_length": "Long (pinned up; would reach mid-back if loose)",
     "eye_color": "Pale gray with hexagonal geneware pattern — tiny interlocking hexagons visible under direct light, geometric and precise, appearing almost like a circuit etched into the iris",
-    "skin_tone": "Warm medium brown with golden undertones; holds color well under artificial lighting; shows even, minimal freckling across bridge of nose and upper cheeks; reflects the rich melanin distribution of Sub-Saharan and South Asian ancestry with subtle warmth from Hispanic/Latin American heritage",
-    "complexion": "Weathered in the way of someone who spends long hours under fluorescent light and rarely sleeps enough; fine lines radiating from eye corners and around mouth; minimal makeup; prominent cheekbones and angular jaw reflecting multi-ethnic bone structure; skin texture slightly papery in places from chronic low-level chemical exposure (antiseptics, sterilizing agents); facial features show balanced blend of broad African nasal structure, South Asian cheekbone prominence, and Indigenous American jawline definition",
+    "skin_tone": "Warm deep brown with golden undertones; rich melanin distribution reflecting Sub-Saharan and South Asian ancestry; holds color well under artificial lighting; shows even, minimal freckling across bridge of nose and upper cheeks",
+    "complexion": "Weathered in the way of someone who spends long hours under fluorescent light and rarely sleeps enough; fine lines radiating from eye corners and around mouth; minimal makeup; prominent high cheekbones and angular jaw reflecting African and South Asian bone structure; subtle width through the nasal bridge and fuller lip definition from Middle Eastern ancestry; skin texture slightly papery in places from chronic low-level chemical exposure (antiseptics, sterilizing agents)",
     "distinguishing_marks": [
       "Vaccination scar on left shoulder, old and pale, barely visible",
       "Chemical burn marks on right index and middle fingers — pale, minimal scarring, from a pharmaceutical accident in her thirties",
@@ -231,17 +215,36 @@
     "posture_movement": "Characteristic forward lean from the hips; moves with economical precision, no wasted motion; hands are steady and deliberate even when tired; walks with a slight shuffle when exhausted (common after 18:00); maintains eye contact in a way that feels clinical rather than warm — observational rather than connective",
     "clothing_style": "Tier 4 utilitarian; typically wearing a long-sleeved gray or navy scrub tunic (generic, well-worn, likely from a bulk wholesale supplier) layered over plain cotton undershirt; dark cargo pants with multiple pockets filled with supplies (swabs, gloves, a small light, pen); rubber-soled clinical clogs (white or dark gray, scuffed); a surgical mask hanging around her neck even when not in use. A faded denim overshirt hangs on a chair behind the clinic desk, rarely worn but available for warmth. No jewelry except the brass hair clip. Clothes show faint permanent stains from betadine, blood, saline — professionally clean but not new."
   },
-  "image_prompt": "Devi Waboose-Okafor, 2226 cyberpunk clinic medic, 178cm lean frame with warm medium-brown skin blending Sub-Saharan, South Asian, Indigenous American, and East Asian heritage. Sharp cheekbones, angular jaw, minimal makeup. Dark brown hair 30% gray, pulled tight in bun with patina brass clip. Striking pale gray eyes with geometric hexagonal geneware implant visible under clinic fluorescent lighting, creating subtle circuit-like shimmer. Weathered face lined from decades under artificial light, thin lips, chemical exposure marks on cuticles. Wearing faded gray scrub tunic over plain undershirt, dark cargo pants with multiple pockets, scuffed white clinical clogs, surgical mask around neck. Surgical scars faintly visible on left shoulder and right index fingers. Standing in GLMZ tier-4 clinic with cool white LED strips, tired clinical posture, hands steady despite fatigue, observational gaze. Worn utilitarian aesthetic, no jewelry except hair clip. Dystopian near-future medical professional. Fluorescent overhead lighting casting subtle shadows. Professional, exhausted, precise. --ar 2:3 --v 6",
+  "image_prompt": "Devi Sesay-Okafor, clinical diagnostician, 178cm tall lean frame, warm deep brown skin with golden undertones reflecting Sub-Saharan African, South Asian, and Middle Eastern heritage. High prominent cheekbones, defined angular jaw, subtle broad nasal bridge. Dark hair 30% grayed, pulled into tight bun with patina brass clip. Pale gray eyes with intricate hexagonal geneware circuitry pattern visible under light. Weathered complexion from fluorescent clinical hours, fine lines around eyes, slightly papery skin texture. Chemical burn scars pale on right index and middle fingers, iodine discoloration along cuticles. Wearing worn gray scrub tunic over cotton undershirt, dark cargo pants with medical supplies, scuffed clinical clogs. Surgical mask draped around neck. Posture slightly forward-leaned from clinical decades. Standing in fluorescent-lit clinic setting, clinical precision in every movement, observational stare. GLMZ 2200s aesthetic, medical geneware visible, utilitarian and worn. Conversational distance lighting revealing hexagonal iris geometry. --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Sub-Saharan African": 33.4,
-    "South Asian": 25.2,
-    "Indigenous American": 16.6,
-    "East Asian": 14.6,
-    "Hispanic/Latin American": 8.0,
-    "Southeast Asian": 2.2
+    "Sub-Saharan African": 62,
+    "South Asian": 22.6,
+    "Middle Eastern": 15.4
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Sub-Saharan African": {
+      "Southern African": {
+        "South African": 29.7,
+        "Zimbabwean": 12.4
+      },
+      "East African": {
+        "Ugandan": 19.9
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Punjabi": 22.6
+      }
+    },
+    "Middle Eastern": {
+      "Arab Gulf": {
+        "Yemeni": 7.7,
+        "Kuwaiti": 7.7
+      }
+    }
+  }
 }

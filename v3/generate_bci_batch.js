@@ -130,7 +130,7 @@ Prices: Φ500-Φ50,000.
 Legality: Varies — Unrestricted for medical, Licensed for child, Restricted for privacy.`,
 };
 
-const SYSTEM = `You generate BCI cyberware for Meridian 88, year 2200. Return ONLY a JSON array of exactly {count} objects. No markdown fencing.
+const SYSTEM = `You generate BCI cyberware for GLMZ, year 2200. Return ONLY a JSON array of exactly {count} objects. No markdown fencing.
 
 Each object: { "id": "32-hex", "name": "Manufacturer Model (max 60 chars)", "brand_name": "", "product_name": "", "type": "cyberware", "aliases": [], "category": "bci", "body_location": "cranial", "description": "2 paragraphs: P1 technical, P2 cultural. Separated by \\n\\n.", "manufacturer": "CAPS", "tier_availability": "", "legality": "", "installation_requirements": "", "rejection_risk": "", "maintenance": "", "specifications": "stringified JSON", "side_effects": ["2-4 items"], "cultural_context": "1 paragraph", "known_users": [], "story_hooks": ["2-3 hooks"], "street_price": "Φ amount", "licensed_price": "Φ amount", "tags": ["cyberware","bci",...] }
 

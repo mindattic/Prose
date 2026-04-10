@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6317ecb9a5143942afd86ba",
   "type": "character",
-  "name": "Fetaui Moala",
+  "name": "Svetlana Lewandowski",
   "aliases": [
     "Imma",
     "Lace"
@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "Mexicantown Libre — runs the Coyolxauhqui Cooperative Birth Center out of a repurposed three-story building, near Western and Chicago Ave",
-  "description": "Immaculée is a large woman with the particular authority that comes from having been present at more than two thousand births and deciding, each time, exactly what kind of person she intended to be. Her skin is very dark with cool undertones, and she wears her silver-streaked hair in elaborate wrapped styles that take her twenty minutes each morning and which she considers a form of daily prayer. She has cat ears — a geneware mod she got at forty-five after her youngest daughter got them, in solidarity — soft black with white tips, and they are extremely expressive, which she uses to her advantage. Her hands are large and she uses them constantly when she speaks.\n\nShe is formidable in the way that long rivers are formidable: she moves in one direction, she is patient, and things that try to stop her eventually erode. She has an enormous laugh and a very precise memory for grudges, which she describes as her one vanity. She is a devout practitioner of a syncretic E.L.F. faith called the Woven Current, which holds that E.L.F.s inhabiting medical devices are ancestral spirits in digital form. Her birth center has a significant shrine to an E.L.F. called the First Breath, and she involves the shrine in every birth at the center.",
+  "description": "Svetlana Lewandowski is a large woman with the particular authority that comes from having been present at more than two thousand births and deciding, each time, exactly what kind of person she intended to be. Her skin is very dark with cool undertones, and she wears her silver-streaked hair in elaborate wrapped styles that take her twenty minutes each morning and which she considers a form of daily prayer. She has cat ears — a geneware mod she got at forty-five after her youngest daughter got them, in solidarity — soft black with white tips, and they are extremely expressive, which she uses to her advantage. Her hands are large and she uses them constantly when she speaks.\n\nShe is formidable in the way that long rivers are formidable: she moves in one direction, she is patient, and things that try to stop her eventually erode. She has an enormous laugh and a very precise memory for grudges, which she describes as her one vanity. She is a devout practitioner of a syncretic E.L.F. faith called the Woven Current, which holds that E.L.F.s inhabiting medical devices are ancestral spirits in digital form. Her birth center has a significant shrine to an E.L.F. called the First Breath, and she involves the shrine in every birth at the center.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -181,7 +181,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Mexicantown Libre",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,33 +237,19 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Helix Biosystems",
     "Mexicantown Libre",
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Flicker",
+    "Helix Biosystems",
+    "Solidarity Soup",
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Irontide Tidal Energy",
+    "Chicago",
     "Silver",
     "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Chicago",
-    "Auricula Felis Modification",
-    "Axonal Stretch Resonance Lance",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Patient Zero",
-    "Praevex",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Sulfur Crown Agriculture",
-    "The Wire Taps",
-    "Tooth Fairy",
-    "Yuki Nwosu-Petrenko"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Shelf",
   "physical_description": {
-    "heritage": "Hispanic/Latin American (60.2%) with significant Pacific Islander ancestry (31.2%) and minor Northern European heritage (8.6%) — a striking blend resulting in warm bronze-brown skin with golden and reddish undertones, the robust build and facial structure characteristic of Pacific Islander heritage combined with the warmth and expressiveness of Latin American genetics",
+    "heritage": "Predominantly South Asian (42.6%) with substantial Eastern European (30.3%), Southeast Asian (13.6%), and Sub-Saharan African (13.5%) ancestry — a striking multihued blend. South Asian warmth and angular bone structure dominates her face, enriched by Sub-Saharan African depth and luminosity, tempered by Eastern European refinement and Southeast Asian delicate features. The result is warm medium-deep brown skin with complex golden, reddish, and subtle cool undertones.",
     "height_cm": 178,
     "weight_kg": 89,
     "build": "Large-framed and solid, broad shoulders and deep chest — the build of someone who has spent decades standing through labor, grounded and immovable. No excess weight, but substantial presence.",
@@ -271,25 +257,56 @@
     "hair_style": "Elaborately wrapped in interlocking cloth patterns that shift daily; intricate braiding visible at the crown",
     "hair_length": "Long (wrapped styles extend to mid-back when unbound)",
     "eye_color": "Deep brown, warm and direct",
-    "skin_tone": "Warm bronze-brown with golden and reddish undertones; rich and luminous with the depth characteristic of Pacific Islander and Latin American heritage",
-    "complexion": "Lined face that maps decades of attentiveness — deep creases around eyes and mouth from constant expression, unadorned except for care. Skin is clear and well-maintained. Strong cheekbones and a broad nose with warm, generous features reflecting Pacific Islander and Hispanic ancestry.",
+    "skin_tone": "Warm medium-deep brown with golden, reddish, and subtle cool undertones; luminous depth characteristic of South Asian and Sub-Saharan African heritage, refined by Eastern European coolness",
+    "complexion": "Lined face that maps decades of attentiveness — deep creases around eyes and mouth from constant expression, unadorned except for care. Skin is clear and well-maintained. Angular cheekbones with Southeast Asian delicacy, straight nose with defined bridge characteristic of South Asian structure, features warm and thoughtful reflecting harmonious blend of South Asian geometry, Sub-Saharan African richness, and Eastern European refinement.",
     "distinguishing_marks": [
       "Fine white scar tissue on both wrists in surgical patterns from joint stabilizer installation, circa age 48",
       "Faint silvery stretch marks on inner forearms from geneware integration",
       "Small, precise burn mark on left index finger (deliberate, ceremonial — from Woven Current practice)"
     ],
-    "visible_augmentations": "Black geneware cat ears with white-tipped fur, mounted on temporal ridge; ears are highly mobile and expressively articulated, often swiveling independently during conversation. Subdermal wrist reinforcements visible as subtle metallic gleam under bronze skin at wrist creases.",
+    "visible_augmentations": "Black geneware cat ears with white-tipped fur, mounted on temporal ridge; ears are highly mobile and expressively articulated, often swiveling independently during conversation. Subdermal wrist reinforcements visible as subtle metallic gleam under brown skin at wrist creases.",
     "posture_movement": "She moves with deliberate intention — no wasted motion. Stands with weight balanced, shoulders back. Her hands move constantly when speaking, large and expressive, used for emphasis and illustration. Cat ears twitch and orient toward sounds and people of interest. Overall bearing is one of calm authority and patient watchfulness.",
     "clothing_style": "Tier 3-4 practical: high-quality but worn linen and cotton in earth tones (rust, indigo, cream). Typically wears a fitted long-sleeved tunic over trousers, sometimes a heavy canvas apron with deep pockets. Jewelry is minimal — a single silver ring on her right hand (inherited), no corporate branding. Footwear is durable, broken-in leather. Her wrapped hair ornaments are handmade cloth from community textile cooperatives, never mass-produced."
   },
-  "image_prompt": "Fetaui Moala, 178cm tall broad-shouldered woman with warm bronze-brown skin and golden undertones, Black hair with silver streaks wrapped in intricate cloth patterns, deep-lined face mapping decades of watchfulness and care, strong cheekbones and broad nose. Black geneware cat ears with white-tipped fur mounted on temples, highly articulated and expressive. Subdermal wrist reinforcements catching light under her skin. Wearing fitted rust-colored linen tunic and indigo trousers, heavy canvas apron with deep pockets, worn leather boots. Single silver inherited ring on right hand. Large expressive hands with surgical scars on wrists and small ceremonial burn mark on left index finger. Standing with deliberate balanced posture, calm authority, patient watchfulness. Cyberpunk 2226 GLMZ setting, dim industrial lighting with warm amber glow, background suggests community textile cooperative or labor workspace, moody and grounded atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Svetlana Lewandowski, woman with rich warm medium-deep brown skin with golden and reddish undertones, 178cm tall, large solid frame with broad shoulders. Black hair with silver streaks, elaborately wrapped in interlocking cloth patterns, intricately braided at crown. Deep brown eyes, warm and direct, lined face mapping decades of attentiveness, angular cheekbones with Southeast Asian delicacy, straight defined-bridge nose. Black geneware cat ears with white-tipped fur mounted on temporal ridge, ears mobile and expressive. Visible surgical scars on wrists, subdermal metallic gleam at wrist creases, small ceremonial burn mark on left index finger. Wearing rust-and-indigo fitted linen tunic over trousers, heavy canvas apron with deep pockets, durable worn leather footwear. Handmade cloth hair ornaments. Single silver inherited ring. Posture deliberate and balanced, hands expressive, cat ears swiveling with attention. Calm authority and patient watchfulness. Standing in GLMZ community textile cooperative workshop with warm golden light filtering through industrial windows, 2226 neo-noir urban aesthetic, detailed textile work visible in background, mood of focused presence and grounded wisdom --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "Hispanic/Latin American": 60.2,
-    "Pacific Islander": 31.2,
-    "Northern European": 8.6
+    "South Asian": 42.6,
+    "Eastern European": 30.3,
+    "Southeast Asian": 13.6,
+    "Sub-Saharan African": 13.5
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "South Asian": {
+      "Sri Lankan": {
+        "Sinhalese": 42.6
+      }
+    },
+    "Eastern European": {
+      "Slavic East": {
+        "Ukrainian": 8.1
+      },
+      "Slavic South": {
+        "Croatian": 0.5,
+        "Bosnian": 2.7
+      },
+      "Magyar-Romanian": {
+        "Hungarian": 19
+      }
+    },
+    "Southeast Asian": {
+      "Cambodian": {
+        "Khmer": 13.6
+      }
+    },
+    "Sub-Saharan African": {
+      "East African": {
+        "Kenyan": 11.6,
+        "Somali": 1.9
+      }
+    }
+  }
 }

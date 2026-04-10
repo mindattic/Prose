@@ -1,7 +1,7 @@
 {
   "id": "019d6143a6f17ebbb5bc4ca83a47e704",
   "type": "character",
-  "name": "Ember Sesay",
+  "name": "Thora Mohammadi",
   "aliases": [
     "Maelstrom",
     "The Operator"
@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near North Ave and Milwaukee",
-  "description": "Tenzin Popov-Adjei is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a ghost out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nTenzin Popov-Adjei is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Thora Mohammadi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a ghost out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThora Mohammadi is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.78,
@@ -261,7 +261,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "",
+    "home_turf": "Steamvent Alley",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -275,62 +275,81 @@
   "registered_firearms": [],
   "related_entities": [
     "The Shelf",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "The Gradient Compact",
     "Titanium",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
-    "The Milwaukee Core",
-    "Alper Lebedev-Tutu",
-    "Breck Tannen",
-    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
-    "GLMZ",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Independent Micro-Grid Power Cooperative",
-    "Mika Sorel",
-    "Nnamdi Ostrowski-Faletolu",
-    "Old Harbor",
-    "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Réginald Asomaning-Čabarkapa",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "SynapTech PolyGlot Live Translation Implant",
-    "TESSERA CR-12 'Whisper'",
-    "The Heritage Vault",
-    "The Human Baseline Alliance"
+    "Compass Rose"
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian (38.7%) with prominent Chinese/Tibetan features, Sub-Saharan African (37.6%) West African ancestry, Hispanic/Latin American (14.7%), and Northern European (9.0%) contributing subtle undertones. The combination creates distinctive facial geometry—almond-shaped eyes, prominent cheekbones, and a strong jawline with warm undertones across medium-brown skin.",
+    "heritage": "Northern European (47.5%) with Middle Eastern (41.2%) and South Asian (11.3%) ancestry. Scandinavian bone structure and pale undertones blend with Levantine and Persian warmth, while South Asian features contribute subtle depth to facial geometry and eye shape. The combination produces warm medium-tan skin with olive undertones, balanced high cheekbones, and a strong defined jawline reflecting the Nordic-Semitic-Desi heritage mix.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Compact and densely muscled, built low and wide through the shoulders and hips like a coiled spring. Heavy bone density from titanium mesh lacing gives him a solidity that reads as immovable despite modest height. Forearms and neck show pronounced musculature from constant load-bearing of augmented skeleton.",
     "hair_color": "Black with premature silver threading at temples and along the left side",
     "hair_style": "Pulled back tight in a functional topknot, occasionally worn loose and shoulder-length when off-grid. No vanity in grooming — purely practical.",
     "hair_length": "Medium",
-    "eye_color": "Left eye: dark brown, naturally almond-shaped. Right eye: luminous cyan with concentric targeting reticule visible beneath polished corneal lens.",
-    "skin_tone": "Warm medium brown with golden undertones—East Asian and Sub-Saharan African heritage creating a bronze-olive complexion, subtly warmed by Hispanic/Latin American and Northern European admixture.",
-    "complexion": "Weathered and sun-damaged from nocturnal living offset by careful maintenance. Fine scars web across cheekbones and forehead — old work, old mistakes. Jawline sharp and pronounced, exaggerated by visible chrome interfaces at the mandible junction. Minimal facial hair, kept clean-shaven for equipment interface seal integrity. Prominent cheekbones and strong facial structure reflect East Asian and West African heritage blend.",
+    "eye_color": "Left eye: dark brown with almond shape characteristic of mixed Northern European and South Asian heritage. Right eye: luminous cyan with concentric targeting reticule visible beneath polished corneal lens.",
+    "skin_tone": "Warm medium tan with subtle olive undertones—Northern European pale base warmed and deepened by Middle Eastern and South Asian heritage, creating a balanced complexion with golden-bronze depth across cheekbones, temples, and jawline.",
+    "complexion": "Weathered and sun-damaged from nocturnal living offset by careful maintenance. Fine scars web across cheekbones and forehead — old work, old mistakes. Strong, defined jawline exaggerated by visible chrome interfaces at mandible junction. Minimal facial hair, kept clean-shaven for equipment interface seal integrity. Facial structure reflects balanced blend of Scandinavian width and angularity with Levantine definition and South Asian orbital geometry.",
     "distinguishing_marks": [
       "Surgical scar tracing from left temple to behind the ear, roughly 8cm, where cybernetic eye was installed — chrome around the margin is visible and unpolished",
       "Titanium mesh visible beneath skin along jawline on both sides, creating subtle but distinct geometric patterns under the flesh",
       "Burn scar across the back of his right hand, discolored and raised, roughly 4x6cm — sustained during early augmentation work",
-      "Faint ritual scarification along both inner forearms, pre-augmentation Tibetan family marks, now distorted by titanium mesh integration",
-      "Small tattoo on left wrist in Tibetan script, black and faded, reading 'survival is sufficient'"
+      "Faint ritual scarification along both inner forearms, pre-augmentation family marks, now distorted by titanium mesh integration",
+      "Small tattoo on left wrist in script, black and faded, reading 'survival is sufficient'"
     ],
     "visible_augmentations": "Titanium mesh skeletal lacing visible as faint silvery geometry beneath skin of forearms and along jawline; polished chrome and synthetic cornea of right eye with faint cyan glow when active; subtle port interfaces at both temples and behind right ear, minimal aesthetic finishing",
     "posture_movement": "Moves with economical precision — no wasted motion, every gesture weighted and intentional. Stands with shoulders slightly forward and weight distributed low, a fighter's baseline. Head rotates before eyes move, a targeting behavior. Walks with a slight forward cant despite compact frame, as if perpetually descending stairs.",
     "clothing_style": "Tier 3-4 functional minimalism. Black or charcoal polymeric jacket with internal gear rig and subcutaneous armor plating visible only when moving. Fitted tactical pants with sealed thigh pockets, reinforced at knees and hips. Matte-finish synth-leather boots with traction treads suitable for climbing. No jewelry, no branded apparel — all equipment is utilitarian and service-worn. Occasionally wears a long coat salvaged from a Tier 2 corpo when moving between districts, otherwise visible augmentations are his only statement."
   },
-  "image_prompt": "Ember Sesay, 168cm compact muscular East Asian-African mixed heritage man with warm bronze-olive skin tone, sharp prominent cheekbones and strong jawline. Left eye deep brown almond-shaped, right eye cybernetic cyan with targeting reticule, surgical scar visible from temple along jaw with chrome interface. Black hair with silver temples pulled tight in topknot. Visible titanium mesh geometry beneath skin at jawline and forearms. Minimal facial hair, clean-shaven. Wearing black polymeric tactical jacket with internal gear rig, fitted tactical pants with sealed pockets, matte synth-leather boots with treads. Small Tibetan script tattoo on left wrist. Burn scar across right hand. Standing in low ready posture, economical precision movement. Cyberpunk 2226 Great Lakes Metropolitan Zone setting, neon and harsh industrial lighting, gritty nocturnal atmosphere, photorealistic, cinematic. --ar 2:3 --v 6",
+  "image_prompt": "Thora Mohammadi, 168cm compact muscular frame, warm medium-tan skin with olive undertones reflecting Nordic-Levantine-South Asian heritage blend, dark brown left eye with natural almond shape, right eye glowing cyan with targeting reticule implant, black hair with silver threading pulled back tight, strong defined jawline with visible chrome mandible interfaces, titanium mesh geometry visible beneath forearms and neck, surgical scar from temple to ear from cybernetic eye installation, weathered complexion with old scars webbing across cheekbones, minimal facial hair kept clean-shaven, black polymeric tactical jacket with internal gear rig, fitted reinforced tactical pants, matte synth-leather boots with traction treads, economical precise movement stance with shoulders forward and weight low, nocturnal neo-noir operative, moody blue-cyan neon lighting casting shadows across metallic implants, gritty urban Great Lakes Metropolitan Zone setting, cinematic noir atmosphere, --ar 2:3 --v 6",
   "genetic_ancestry": {
-    "East Asian": 38.7,
-    "Sub-Saharan African": 37.6,
-    "Hispanic/Latin American": 14.7,
-    "Northern European": 9.0
+    "Northern European": 47.5,
+    "Middle Eastern": 41.2,
+    "South Asian": 11.3
   },
   "ancestry_harmonized": true,
   "tags": [
     "sentient"
-  ]
+  ],
+  "ancestry_detail": {
+    "Northern European": {
+      "Germanic": {
+        "Austrian": 30.5,
+        "German": 3.4
+      },
+      "British Isles": {
+        "English": 6.9,
+        "Scottish": 6.7
+      }
+    },
+    "Middle Eastern": {
+      "Persian": {
+        "Iranian": 3.8,
+        "Tajik Persian": 5.5
+      },
+      "Kurdish": {
+        "Kurdish": 15.1
+      },
+      "Arab Gulf": {
+        "Iraqi": 16.8
+      }
+    },
+    "South Asian": {
+      "Bangladeshi": {
+        "Bangladeshi": 6.9
+      },
+      "Indian": {
+        "Bengali": 0.2,
+        "Telugu": 3.5
+      },
+      "Sri Lankan": {
+        "Tamil Sri Lankan": 0.7
+      }
+    }
+  }
 }
