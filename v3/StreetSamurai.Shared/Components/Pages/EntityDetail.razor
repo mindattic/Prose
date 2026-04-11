@@ -11,6 +11,7 @@
 @inject CyberwareRepository CyberRepo
 @inject VocabularyRepository VocabRepo
 @inject XrefService Xref
+@inject GlobalSearchService GlobalSearch
 @inject NavigationManager Nav
 @inject AmmunitionRepository AmmoRepo
 @inject ApparelRepository ApparelRepo
@@ -1046,6 +1047,19 @@ else if (document != null)
     </div>
 }
 
+@if (referencedBy.Count > 0)
+{
+    <div class="entity-section mt-3" style="border-top: 1px solid #30363d; padding-top: 12px;">
+        <div class="entity-section-label">Referenced By</div>
+        <div class="xref-chips">
+            @foreach (var r in referencedBy)
+            {
+                <a href="/entity/@r.Id" class="xref-chip xref-@r.Type">@r.Name</a>
+            }
+        </div>
+    </div>
+}
+
 </div>
 
 @code {
@@ -1077,6 +1091,8 @@ else if (document != null)
     private ContractData? contract;
     private WorldbuildingDocument? document;
     private bool notFound;
+    private string resolvedName = "";
+    private List<CanonSearchResult> referencedBy = [];
 
     protected override void OnParametersSet()
     {
@@ -1087,60 +1103,70 @@ else if (document != null)
         transport = null; automaton = null; archetype = null; subsidiary = null;
         entertainment = null; consumerGood = null; quote = null; news = null;
         contract = null; document = null;
-        notFound = false;
+        notFound = false; resolvedName = ""; referencedBy = [];
 
         if (string.IsNullOrWhiteSpace(EntityId)) { notFound = true; return; }
 
+        ResolveEntity();
+
+        if (!notFound && resolvedName.Length >= 4)
+            referencedBy = GlobalSearch.Search(resolvedName, 1, 15)
+                .Where(r => r.Id != EntityId)
+                .ToList();
+    }
+
+    private void ResolveEntity()
+    {
         character   = CharRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (character != null) return;
+        if (character != null) { resolvedName = character.Name; return; }
         synthetic   = SynthRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (synthetic != null) return;
+        if (synthetic != null) { resolvedName = synthetic.Name; return; }
         place       = PlaceRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (place != null) return;
+        if (place != null) { resolvedName = place.Name; return; }
         faction     = FactionRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (faction != null) return;
+        if (faction != null) { resolvedName = faction.Name; return; }
         corponation = CorpRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (corponation != null) return;
+        if (corponation != null) { resolvedName = corponation.Name; return; }
         technology  = TechRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (technology != null) return;
+        if (technology != null) { resolvedName = technology.Name; return; }
         weapon      = WeaponRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (weapon != null) return;
+        if (weapon != null) { resolvedName = weapon.Name; return; }
         equipment   = EquipRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (equipment != null) return;
+        if (equipment != null) { resolvedName = equipment.Name; return; }
         cyberware   = CyberRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (cyberware != null) return;
+        if (cyberware != null) { resolvedName = cyberware.Name; return; }
         vocabEntry  = VocabRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (vocabEntry != null) return;
+        if (vocabEntry != null) { resolvedName = vocabEntry.Term; return; }
         ammo        = AmmoRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (ammo != null) return;
+        if (ammo != null) { resolvedName = ammo.Name; return; }
         apparel     = ApparelRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (apparel != null) return;
+        if (apparel != null) { resolvedName = apparel.Name; return; }
         genemod     = GenemodRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (genemod != null) return;
+        if (genemod != null) { resolvedName = genemod.Name; return; }
         pharma      = PharmaRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (pharma != null) return;
+        if (pharma != null) { resolvedName = pharma.Name; return; }
         material    = MaterialRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (material != null) return;
+        if (material != null) { resolvedName = material.Name; return; }
         transport   = TransportRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (transport != null) return;
+        if (transport != null) { resolvedName = transport.Name; return; }
         automaton   = AutomatonRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (automaton != null) return;
+        if (automaton != null) { resolvedName = automaton.Name; return; }
         archetype   = ArchetypeRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (archetype != null) return;
+        if (archetype != null) { resolvedName = archetype.Name; return; }
         subsidiary  = SubsidiaryRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (subsidiary != null) return;
+        if (subsidiary != null) { resolvedName = subsidiary.Name; return; }
         entertainment = EntertainRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (entertainment != null) return;
+        if (entertainment != null) { resolvedName = entertainment.Name; return; }
         consumerGood = ConsumerRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (consumerGood != null) return;
+        if (consumerGood != null) { resolvedName = consumerGood.Name; return; }
         quote       = QuoteRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (quote != null) return;
+        if (quote != null) { resolvedName = quote.Attribution; return; }
         news        = NewsRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (news != null) return;
+        if (news != null) { resolvedName = news.Headline; return; }
         contract    = ContractRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (contract != null) return;
+        if (contract != null) { resolvedName = contract.Codename; return; }
         document    = DocRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (document != null) return;
+        if (document != null) { resolvedName = document.Title; return; }
 
         notFound = true;
     }
