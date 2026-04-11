@@ -46,7 +46,8 @@ public class DevAutoLoginMiddleware
             var userRepo = context.RequestServices.GetRequiredService<UserRepository>();
             var user = userRepo.GetByEmail(email);
             var userId = user?.Id ?? "dev-auto-login";
-            var securityStamp = user?.SecurityStamp ?? Guid.NewGuid().ToString();
+            // Use a stable stamp so OnValidatePrincipal doesn't reject the cookie on subsequent requests.
+            var securityStamp = user?.SecurityStamp ?? "dev-session-stable";
 
             var claims = new[]
             {
