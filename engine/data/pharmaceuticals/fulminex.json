@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ad7206a3bd028e503c46e9",
   "name": "Fulminex",
   "type": "pharmaceutical",
   "aliases": [
@@ -7,33 +8,34 @@
     "White"
   ],
   "category": "poison_toxin",
-  "subcategory": "sensory overload toxin — pan-nociceptor activator",
-  "manufacturer": "Shelf lab — attributed to a single synthesist known as 'the Cantor'",
-  "description": "Fulminex triggers simultaneous activation of all nociceptor classes across the entire body — thermal, mechanical, and chemical pain receptors fire at maximum intensity at once. The experience is described by the few survivors who can articulate it as 'being burned alive, crushed, and chemically dissolved simultaneously, everywhere, all at once.' It is not lethal at standard doses but is completely incapacitating within seconds. Used for crowd suppression, interrogation, and as a punishment compound.",
+  "subcategory": "sensory overload toxin \u2014 pan-nociceptor activator",
+  "manufacturer": "Shelf lab \u2014 attributed to a single synthesist known as \u0027the Cantor\u0027",
+  "description": "Fulminex triggers simultaneous activation of all nociceptor classes across the entire body \u2014 thermal, mechanical, and chemical pain receptors fire at maximum intensity at once. The experience is described by the few survivors who can articulate it as \u0027being burned alive, crushed, and chemically dissolved simultaneously, everywhere, all at once.\u0027 It is not lethal at standard doses but is completely incapacitating within seconds. Used for crowd suppression, interrogation, and as a punishment compound.",
   "method_of_use": "vapor",
   "effects": [
-    "immediate pan-nociceptor activation — total body agony",
+    "immediate pan-nociceptor activation \u2014 total body agony",
     "complete motor incapacitation within 4 seconds (subjects collapse and cannot coordinate movement)",
-    "full consciousness maintained — subjects experience every second",
+    "full consciousness maintained \u2014 subjects experience every second",
     "autonomic cascade: tachycardia, hypertension, uncontrolled defecation and urination",
-    "subjects with pain-suppression augments experience partial resistance — but SNT-integrated nerve tissue is affected regardless"
+    "subjects with pain-suppression augments experience partial resistance \u2014 but SNT-integrated nerve tissue is affected regardless"
   ],
   "side_effects": [
     "cardiac arrest risk in subjects with pre-existing cardiovascular conditions or stimulant loading",
-    "permanent hyperalgesia in 25% of subjects — chronic pain sensitivity elevation post-dose",
+    "permanent hyperalgesia in 25% of subjects \u2014 chronic pain sensitivity elevation post-dose",
     "psychological trauma: virtually all subjects develop severe PTSD",
-    "vapor delivery means operator exposure risk — requires sealed respiratory protection",
-    "high doses or re-exposure causes permanent nociceptor sensitization — subjects feel low-level pain continuously for the rest of their lives"
+    "vapor delivery means operator exposure risk \u2014 requires sealed respiratory protection",
+    "high doses or re-exposure causes permanent nociceptor sensitization \u2014 subjects feel low-level pain continuously for the rest of their lives"
   ],
   "duration": "8-20 minutes of acute effect; residual sensitivity for 4-6 hours",
   "addiction_risk": "none",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "Φ 300–700 per vapor canister",
-  "cultural_context": "The Cantor is a semi-mythological figure in GLMZ's Shelf underworld — rumored to be a former Helix pain-research scientist who went Shelf after a corporate betrayal. Fulminex is their legacy, and it has spread far beyond the Shelf. Certain corpo security black ops units have sourced it for crowd events. The cultural weight is significant: using Fulminex on someone is considered an act of profound cruelty, a message that pain is the point, not control.",
+  "street_price": "\u03A6 300\u2013700 per vapor canister",
+  "cultural_context": "The Cantor is a semi-mythological figure in GLMZ\u0027s Shelf underworld \u2014 rumored to be a former Helix pain-research scientist who went Shelf after a corporate betrayal. Fulminex is their legacy, and it has spread far beyond the Shelf. Certain corpo security black ops units have sourced it for crowd events. The cultural weight is significant: using Fulminex on someone is considered an act of profound cruelty, a message that pain is the point, not control.",
   "story_hooks": [
-    "A Shelf community is hit with aerosolized Fulminex during a neighborhood assembly — someone wants them too traumatized to organize. The question is who benefits from keeping this block broken.",
-    "A survivor of Fulminex exposure develops a hyperalgesia condition so severe they can barely function. They hire a crew to find the Cantor — not for revenge, but because they believe the Cantor is the only one who might know a treatment.",
-    "A vapor canister of Fulminex is found in a Tier 3 office building's HVAC system, set on a timer. Someone is planning a mass-casualty event in corporate space."
-  ]
+    "A Shelf community is hit with aerosolized Fulminex during a neighborhood assembly \u2014 someone wants them too traumatized to organize. The question is who benefits from keeping this block broken.",
+    "A survivor of Fulminex exposure develops a hyperalgesia condition so severe they can barely function. They hire a crew to find the Cantor \u2014 not for revenge, but because they believe the Cantor is the only one who might know a treatment.",
+    "A vapor canister of Fulminex is found in a Tier 3 office building\u0027s HVAC system, set on a timer. Someone is planning a mass-casualty event in corporate space."
+  ],
+  "tags": []
 }

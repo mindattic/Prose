@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6cf773e937cfe8921a0673b",
   "name": "Rawfeed",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,8 +9,8 @@
   ],
   "category": "street_concoction",
   "subcategory": "jury-rigged neural direct compound",
-  "manufacturer": "Produced by a small number of highly specialized Shelf technicians; the most known is a figure called 'the Archivist' in the Chicago Deep Shelf",
-  "description": "A viscous neural-direct compound designed to be introduced directly into BCI interface ports — not a legitimate pharmaceutical preparation but a crude mixture of synthetic neurotransmitter precursors, dissolved SNT fragments harvested from discarded biotech waste, and a signal-amplifying polymer compound. When introduced to the BCI interface, it temporarily floods the neural-digital boundary with raw signal, producing an overwhelming sensory and cognitive experience described as 'thinking at the speed of a machine.'",
+  "manufacturer": "Produced by a small number of highly specialized Shelf technicians; the most known is a figure called \u0027the Archivist\u0027 in the Chicago Deep Shelf",
+  "description": "A viscous neural-direct compound designed to be introduced directly into BCI interface ports \u2014 not a legitimate pharmaceutical preparation but a crude mixture of synthetic neurotransmitter precursors, dissolved SNT fragments harvested from discarded biotech waste, and a signal-amplifying polymer compound. When introduced to the BCI interface, it temporarily floods the neural-digital boundary with raw signal, producing an overwhelming sensory and cognitive experience described as \u0027thinking at the speed of a machine.\u0027",
   "method_of_use": "neural_direct",
   "effects": [
     "extreme cognitive acceleration for 20-40 minutes",
@@ -19,10 +20,10 @@
     "profound sensation of intelligence and capability"
   ],
   "side_effects": [
-    "neural inflammation at interface sites — cumulative and progressive",
+    "neural inflammation at interface sites \u2014 cumulative and progressive",
     "SNT fragment contamination can cause foreign tissue growth at interface points",
     "signal overload causes migraines and temporary blindness",
-    "BCI corruption — data loss, firmware damage, interface scarring",
+    "BCI corruption \u2014 data loss, firmware damage, interface scarring",
     "documented cases of permanent cognitive impairment from interface damage",
     "the experience is so intense that psychological addiction is near-universal after first use"
   ],
@@ -30,11 +31,12 @@
   "addiction_risk": "extreme",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ40-80 per dose",
-  "cultural_context": "Rawfeed is the most dangerous and most seductive drug on the Shelf — it gives Tier 1 residents a window into what it feels like to have Tier 4 cognitive augmentation. For people whose BCIs are basic, cheap, and barely maintained, the experience of thinking clearly and fast is more addictive than any chemical effect. The Archivist is treated as both a visionary and a predator depending on who you ask. People who've burned their interfaces out on Rawfeed are called 'husks' — cognitively diminished, left with damaged chrome and nothing to show for it.",
+  "street_price": "\u03A640-80 per dose",
+  "cultural_context": "Rawfeed is the most dangerous and most seductive drug on the Shelf \u2014 it gives Tier 1 residents a window into what it feels like to have Tier 4 cognitive augmentation. For people whose BCIs are basic, cheap, and barely maintained, the experience of thinking clearly and fast is more addictive than any chemical effect. The Archivist is treated as both a visionary and a predator depending on who you ask. People who\u0027ve burned their interfaces out on Rawfeed are called \u0027husks\u0027 \u2014 cognitively diminished, left with damaged chrome and nothing to show for it.",
   "story_hooks": [
-    "The Archivist has developed a new Rawfeed preparation using SNT fragments of unknown origin — users are reporting accessing memories and data that aren't theirs, and someone needs to find out where those fragments came from",
-    "A Shelf teenager has burned out their interface on Rawfeed and their family wants justice — but the Archivist is protected by a gang that depends on the revenue, and the legal system doesn't reach this far down",
-    "A corp research team has identified that the SNT fragments in Rawfeed are being harvested from a black-market biotech source that connects to something much larger — and the Archivist either knows this and doesn't care, or is being used without knowing it"
-  ]
+    "The Archivist has developed a new Rawfeed preparation using SNT fragments of unknown origin \u2014 users are reporting accessing memories and data that aren\u0027t theirs, and someone needs to find out where those fragments came from",
+    "A Shelf teenager has burned out their interface on Rawfeed and their family wants justice \u2014 but the Archivist is protected by a gang that depends on the revenue, and the legal system doesn\u0027t reach this far down",
+    "A corp research team has identified that the SNT fragments in Rawfeed are being harvested from a black-market biotech source that connects to something much larger \u2014 and the Archivist either knows this and doesn\u0027t care, or is being used without knowing it"
+  ],
+  "tags": []
 }

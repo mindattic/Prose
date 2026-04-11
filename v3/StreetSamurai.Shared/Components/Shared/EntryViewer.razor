@@ -58,7 +58,7 @@
                 if (tags.Count > 0)
                 {
                     sb.Append("<div class=\"ev-tags\">");
-                    foreach (var tag in tags) sb.Append($"<span class=\"ev-tag\">{Esc(tag)}</span>");
+                    foreach (var tag in tags) sb.Append($"<a href=\"/search?tag={Uri.EscapeDataString(tag)}\" class=\"ev-tag ev-tag-link\">{Esc(tag)}</a>");
                     sb.Append("</div>");
                 }
             }

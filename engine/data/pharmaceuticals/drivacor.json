@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a77424992924987d911227",
   "name": "Drivacor",
   "type": "pharmaceutical",
   "aliases": [
@@ -10,7 +11,7 @@
   "category": "emotional_regulator",
   "subcategory": "motivation_injector",
   "manufacturer": "Helix Biosystems",
-  "description": "Drivacor is a dopaminergic motivation amplifier that targets the mesolimbic reward pathway and anterior cingulate cortex to generate intense, directed motivational drive toward goals the user holds at the time of dosing. Unlike stimulants, it does not increase energy or wakefulness broadly — it creates a laser-focused sense of purpose and urgency around specific tasks, making the user feel that their work is not just important but essential. It is the most used performance pharmaceutical in GLMZ's Tier 3-4 white-collar workforce.",
+  "description": "Drivacor is a dopaminergic motivation amplifier that targets the mesolimbic reward pathway and anterior cingulate cortex to generate intense, directed motivational drive toward goals the user holds at the time of dosing. Unlike stimulants, it does not increase energy or wakefulness broadly \u2014 it creates a laser-focused sense of purpose and urgency around specific tasks, making the user feel that their work is not just important but essential. It is the most used performance pharmaceutical in GLMZ\u0027s Tier 3-4 white-collar workforce.",
   "method_of_use": "oral",
   "effects": [
     "intense goal-directed motivation and drive",
@@ -20,21 +21,22 @@
     "subjective sense that current work is deeply meaningful"
   ],
   "side_effects": [
-    "motivation narrows to whatever goal was active at dosing — other priorities feel irrelevant and can be neglected dangerously",
-    "post-dose motivational crash — anhedonia and goal-apathy lasting 12–24 hours",
-    "chronic use associated with natural dopamine system degradation — baseline motivation drops, requiring escalating doses",
-    "users may pursue misaligned goals with Drivacor intensity — including harmful ones",
+    "motivation narrows to whatever goal was active at dosing \u2014 other priorities feel irrelevant and can be neglected dangerously",
+    "post-dose motivational crash \u2014 anhedonia and goal-apathy lasting 12\u201324 hours",
+    "chronic use associated with natural dopamine system degradation \u2014 baseline motivation drops, requiring escalating doses",
+    "users may pursue misaligned goals with Drivacor intensity \u2014 including harmful ones",
     "relationship neglect is statistically the most common side effect in long-term users"
   ],
-  "duration": "6–8 hours",
+  "duration": "6\u20138 hours",
   "addiction_risk": "high",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 35 per pill",
-  "cultural_context": "Drivacor is GLMZ's productivity religion made chemical. Tier 3-4 culture openly celebrates it — people post their Drivacor-fueled work sprints on social feeds, joke about their 'push days,' and treat the motivational crash as a badge of dedication. Helix has successfully positioned Drivacor as self-improvement rather than dependency. The uglier reality is visible in Tier 3 burnout clinics, which are full of former Drivacor heavy users whose natural dopamine systems have been ground down to baseline dysfunction. On the Shelf, a cruder street version called 'fire pills' uses a different mechanism — more stimulant than motivator — and is used by gig workers who need to string together 20-hour shifts.",
+  "street_price": "\u03A6 35 per pill",
+  "cultural_context": "Drivacor is GLMZ\u0027s productivity religion made chemical. Tier 3-4 culture openly celebrates it \u2014 people post their Drivacor-fueled work sprints on social feeds, joke about their \u0027push days,\u0027 and treat the motivational crash as a badge of dedication. Helix has successfully positioned Drivacor as self-improvement rather than dependency. The uglier reality is visible in Tier 3 burnout clinics, which are full of former Drivacor heavy users whose natural dopamine systems have been ground down to baseline dysfunction. On the Shelf, a cruder street version called \u0027fire pills\u0027 uses a different mechanism \u2014 more stimulant than motivator \u2014 and is used by gig workers who need to string together 20-hour shifts.",
   "story_hooks": [
-    "A Tier 3 architect built his career on Drivacor. He's just been diagnosed with severe dopamine system degradation — he can no longer feel motivated about anything without the drug, and the drug is making it worse. He has six months before the damage may be permanent.",
-    "A Shelf fixer took Drivacor before a job and found herself Drivacor-locked onto a secondary goal she'd been thinking about at dosing — finding her missing sister — instead of the job she was paid for. She completed the job anyway. She has no memory of how.",
-    "Helix's internal data shows Drivacor's dopamine degradation rates are four times higher than their public clinical trials indicated. Someone in their research division wants that data out."
-  ]
+    "A Tier 3 architect built his career on Drivacor. He\u0027s just been diagnosed with severe dopamine system degradation \u2014 he can no longer feel motivated about anything without the drug, and the drug is making it worse. He has six months before the damage may be permanent.",
+    "A Shelf fixer took Drivacor before a job and found herself Drivacor-locked onto a secondary goal she\u0027d been thinking about at dosing \u2014 finding her missing sister \u2014 instead of the job she was paid for. She completed the job anyway. She has no memory of how.",
+    "Helix\u0027s internal data shows Drivacor\u0027s dopamine degradation rates are four times higher than their public clinical trials indicated. Someone in their research division wants that data out."
+  ],
+  "tags": []
 }

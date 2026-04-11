@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6af77fb96b0ddcd28416e53",
   "name": "Glitchin",
   "type": "pharmaceutical",
   "aliases": [
@@ -7,32 +8,33 @@
     "Static"
   ],
   "category": "poison_toxin",
-  "subcategory": "neural disruptor — BCI signal interference toxin",
-  "manufacturer": "Shelf lab synthesis — multiple independent sources; formula is widely shared",
-  "description": "Glitchin is a synthetic compound that crosses the blood-brain barrier and generates sustained electromagnetic interference at the SNT-organic interface layer, scrambling BCI signal transmission and reception in a chaotic, unpredictable pattern. Affected subjects experience fragmented sensory input from their BCI feeds, loss of augmentation control, involuntary data broadcasts, inability to access BCI-stored information, and in cases of deep neural integration, seizure-like episodes of corrupted sensory experience. It does not damage the hardware — it makes the organic brain unable to interface with it coherently.",
+  "subcategory": "neural disruptor \u2014 BCI signal interference toxin",
+  "manufacturer": "Shelf lab synthesis \u2014 multiple independent sources; formula is widely shared",
+  "description": "Glitchin is a synthetic compound that crosses the blood-brain barrier and generates sustained electromagnetic interference at the SNT-organic interface layer, scrambling BCI signal transmission and reception in a chaotic, unpredictable pattern. Affected subjects experience fragmented sensory input from their BCI feeds, loss of augmentation control, involuntary data broadcasts, inability to access BCI-stored information, and in cases of deep neural integration, seizure-like episodes of corrupted sensory experience. It does not damage the hardware \u2014 it makes the organic brain unable to interface with it coherently.",
   "method_of_use": "vapor",
   "effects": [
     "Disruption of BCI signal transmission and reception",
     "Loss of voluntary augmentation control",
     "Fragmented, corrupted sensory overlay from BCI feeds",
-    "Involuntary broadcast of BCI data — privacy collapse",
+    "Involuntary broadcast of BCI data \u2014 privacy collapse",
     "Inability to access BCI-stored memory, contacts, or credentials during effect"
   ],
   "side_effects": [
-    "Severe disorientation proportional to degree of BCI integration — heavily augmented subjects are debilitated",
+    "Severe disorientation proportional to degree of BCI integration \u2014 heavily augmented subjects are debilitated",
     "Unaugmented or lightly integrated subjects experience primarily nausea and mild visual disturbance",
-    "Repeated exposure causes SNT interface layer scarring — progressive integration degradation",
+    "Repeated exposure causes SNT interface layer scarring \u2014 progressive integration degradation",
     "During effect, biometric security systems relying on BCI authentication become inaccessible, locking subjects out of facilities, accounts, and secured areas"
   ],
   "duration": "45-90 minutes",
   "addiction_risk": "low",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ150–Φ400 per vial (vapor canister)",
-  "cultural_context": "Glitchin is the great equalizer on the Shelf — where most people can't afford military-grade chrome, a cheap canister of Scrambler drops a corpo security operative as fast as it drops anyone else. It has become the Shelf's answer to augmented authority: gangs use it to neutralize security teams, protesters use it to blind surveillance-integrated enforcers, and small-time criminals use it to strip the BCI credentials of targets before robbing them. In Tier 3 and above, Glitchin exposure is treated as a serious crime because it represents a fundamental violation of the integrated self. On the Shelf, it's Tuesday.",
+  "street_price": "\u03A6150\u2013\u03A6400 per vial (vapor canister)",
+  "cultural_context": "Glitchin is the great equalizer on the Shelf \u2014 where most people can\u0027t afford military-grade chrome, a cheap canister of Scrambler drops a corpo security operative as fast as it drops anyone else. It has become the Shelf\u0027s answer to augmented authority: gangs use it to neutralize security teams, protesters use it to blind surveillance-integrated enforcers, and small-time criminals use it to strip the BCI credentials of targets before robbing them. In Tier 3 and above, Glitchin exposure is treated as a serious crime because it represents a fundamental violation of the integrated self. On the Shelf, it\u0027s Tuesday.",
   "story_hooks": [
-    "A Tier 3 corporate operative finds herself still experiencing BCI fragmentation six days after a Glitchin exposure — something in her SNT layer is not recovering, and the repair cost is more than she makes in a year.",
-    "Someone has engineered a concentrated Glitchin aerosol capable of disrupting BCIs at 50-meter range — effectively a BCI area-denial weapon — and it just showed up at a Tier 4 political rally.",
-    "A Shelf kid with no BCI becomes unexpectedly valuable as a courier during a Glitchin-saturated gang war — the only person in the zone who can still think straight."
-  ]
+    "A Tier 3 corporate operative finds herself still experiencing BCI fragmentation six days after a Glitchin exposure \u2014 something in her SNT layer is not recovering, and the repair cost is more than she makes in a year.",
+    "Someone has engineered a concentrated Glitchin aerosol capable of disrupting BCIs at 50-meter range \u2014 effectively a BCI area-denial weapon \u2014 and it just showed up at a Tier 4 political rally.",
+    "A Shelf kid with no BCI becomes unexpectedly valuable as a courier during a Glitchin-saturated gang war \u2014 the only person in the zone who can still think straight."
+  ],
+  "tags": []
 }

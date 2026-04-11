@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b27e3bb08d71778c5cfb57",
   "name": "Infradex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,17 +10,17 @@
   "category": "cognitive_enhancer",
   "subcategory": "subconscious_processing_enhancement",
   "manufacturer": "Helix Biosystems",
-  "description": "Infradex is an experimental cognitive enhancer that operates on a fundamentally different principle than conventional focus or processing drugs — instead of boosting conscious cognition, it amplifies subconscious parallel processing, allowing the brain's non-conscious problem-solving architecture to work on complex problems while the user performs other tasks or even sleeps. Users report waking with solutions, or suddenly 'knowing' answers to problems they hadn't consciously worked on. Helix positions it as a 'background processing' tool for researchers, strategists, and long-form thinkers.",
+  "description": "Infradex is an experimental cognitive enhancer that operates on a fundamentally different principle than conventional focus or processing drugs \u2014 instead of boosting conscious cognition, it amplifies subconscious parallel processing, allowing the brain\u0027s non-conscious problem-solving architecture to work on complex problems while the user performs other tasks or even sleeps. Users report waking with solutions, or suddenly \u0027knowing\u0027 answers to problems they hadn\u0027t consciously worked on. Helix positions it as a \u0027background processing\u0027 tool for researchers, strategists, and long-form thinkers.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Dramatically enhanced subconscious problem-solving throughput",
-    "Insight generation — solutions surface spontaneously during unrelated activity",
+    "Insight generation \u2014 solutions surface spontaneously during unrelated activity",
     "Improved intuitive decision-making under uncertainty",
     "Enhanced sleep-based memory and problem integration",
     "Effective even without BCI augmentation"
   ],
   "side_effects": [
-    "Unsettling sense of thoughts arriving from 'outside' — dissociative ideation",
+    "Unsettling sense of thoughts arriving from \u0027outside\u0027 \u2014 dissociative ideation",
     "Difficulty trusting consciously derived conclusions (subconscious outputs feel more authoritative)",
     "Vivid, narrative-complex dreams that users struggle to distinguish from memory",
     "Rare: subconscious processing produces intrusive, unwanted problem-solving on traumatic material",
@@ -29,11 +30,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 3-4",
   "legality": "restricted",
-  "street_price": "Φ 85-130 per patch",
-  "cultural_context": "Infradex is beloved by a certain class of GLMZ intellectual — researchers, architects, long-term strategists, and writers who need insight rather than throughput. It has a cult following in Tier 3 academic circles. The unsettling side effect — the sense of thoughts that feel external — has produced a small but vocal community of Infradex users who have developed quasi-spiritual frameworks around the drug's outputs, treating their subconscious productions as something close to revelation. Helix is watching this community with a mixture of scientific interest and legal concern.",
+  "street_price": "\u03A6 85-130 per patch",
+  "cultural_context": "Infradex is beloved by a certain class of GLMZ intellectual \u2014 researchers, architects, long-term strategists, and writers who need insight rather than throughput. It has a cult following in Tier 3 academic circles. The unsettling side effect \u2014 the sense of thoughts that feel external \u2014 has produced a small but vocal community of Infradex users who have developed quasi-spiritual frameworks around the drug\u0027s outputs, treating their subconscious productions as something close to revelation. Helix is watching this community with a mixture of scientific interest and legal concern.",
   "story_hooks": [
-    "A researcher on extended Infradex use has started producing breakthrough work — but also documenting 'messages' from their subconscious that seem to know things the researcher couldn't possibly know consciously",
-    "A character patches Infradex before sleep to subconsciously work a seemingly impossible problem — and wakes knowing the answer, but also knowing something adjacent to it that they were never supposed to figure out",
-    "A Helix internal memo leaks suggesting Infradex's subconscious amplification can surface repressed memories — and the company has been quietly tracking which users are producing recall of events Helix would prefer stayed buried"
-  ]
+    "A researcher on extended Infradex use has started producing breakthrough work \u2014 but also documenting \u0027messages\u0027 from their subconscious that seem to know things the researcher couldn\u0027t possibly know consciously",
+    "A character patches Infradex before sleep to subconsciously work a seemingly impossible problem \u2014 and wakes knowing the answer, but also knowing something adjacent to it that they were never supposed to figure out",
+    "A Helix internal memo leaks suggesting Infradex\u0027s subconscious amplification can surface repressed memories \u2014 and the company has been quietly tracking which users are producing recall of events Helix would prefer stayed buried"
+  ],
+  "tags": []
 }

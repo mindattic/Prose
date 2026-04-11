@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6da7289828510cc8a227d9c",
   "name": "Spackle",
   "type": "pharmaceutical",
   "aliases": [
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ12-18 per dose",
-  "cultural_context": "Spackle is the Shelf worker's performance enhancer — used by dockworkers, salvage crews, and unlicensed couriers who run chrome that's two generations old and held together with zip ties. Using it is seen as a mark of desperation or respect depending on context. Old heads say you can tell a Spackle veteran by the gray ring scars around their ports.",
+  "street_price": "\u03A612-18 per dose",
+  "cultural_context": "Spackle is the Shelf worker\u0027s performance enhancer \u2014 used by dockworkers, salvage crews, and unlicensed couriers who run chrome that\u0027s two generations old and held together with zip ties. Using it is seen as a mark of desperation or respect depending on context. Old heads say you can tell a Spackle veteran by the gray ring scars around their ports.",
   "story_hooks": [
-    "A courier running a critical package discovers their Spackle batch was cut with something that's causing their arm to seize mid-run — they need to complete the job anyway",
+    "A courier running a critical package discovers their Spackle batch was cut with something that\u0027s causing their arm to seize mid-run \u2014 they need to complete the job anyway",
     "A Shelf chemist has figured out how to synthesize clean SNT-coating without scrapping hardware, potentially disrupting both the junk market and legitimate augmentation supply chains",
-    "Someone is deliberately contaminating Spackle batches in the Calumet District — three runners have had interface rejection cascades in one week"
-  ]
+    "Someone is deliberately contaminating Spackle batches in the Calumet District \u2014 three runners have had interface rejection cascades in one week"
+  ],
+  "tags": []
 }

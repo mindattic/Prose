@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c69b7b6bb5831de472d53d08",
   "name": "Claritex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "focus_and_distraction_elimination",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Claritex is a precision-targeted dopaminergic modulator that selectively suppresses the brain's default mode network while amplifying prefrontal executive function. The result is a state of sustained, almost architectural focus — distractions cease to register not because they are suppressed, but because the brain simply stops assigning them salience. One of Lazarus's flagship corporate wellness products.",
+  "description": "Claritex is a precision-targeted dopaminergic modulator that selectively suppresses the brain\u0027s default mode network while amplifying prefrontal executive function. The result is a state of sustained, almost architectural focus \u2014 distractions cease to register not because they are suppressed, but because the brain simply stops assigning them salience. One of Lazarus\u0027s flagship corporate wellness products.",
   "method_of_use": "oral",
   "effects": [
     "Total distraction elimination for 6-8 hours",
@@ -19,21 +20,22 @@
     "Enhanced BCI interface responsiveness"
   ],
   "side_effects": [
-    "Social blunting — difficulty reading interpersonal cues while active",
+    "Social blunting \u2014 difficulty reading interpersonal cues while active",
     "Rebound brain fog lasting 2-4 hours post-dose",
     "Appetite suppression",
-    "Tunnel vision on chosen task — inability to context-switch if priorities change",
+    "Tunnel vision on chosen task \u2014 inability to context-switch if priorities change",
     "Insomnia if taken after midday"
   ],
   "duration": "6-8 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 18 per tablet",
-  "cultural_context": "Claritex is the corporate world's open secret. Tier 3 analysts and Tier 4 executives alike keep a blister pack in their desk drawer. Lazarus markets it with clean white packaging and language about 'cognitive wellness' — the language of self-optimization, not addiction. On the Shelf, knockoff versions called Glass circulate, made in unlicensed labs with inconsistent dosing. The Shelf version has a reputation for occasionally locking users into obsessive loops — grinding the same task for 12 hours without recognizing it has become meaningless.",
+  "street_price": "\u03A6 18 per tablet",
+  "cultural_context": "Claritex is the corporate world\u0027s open secret. Tier 3 analysts and Tier 4 executives alike keep a blister pack in their desk drawer. Lazarus markets it with clean white packaging and language about \u0027cognitive wellness\u0027 \u2014 the language of self-optimization, not addiction. On the Shelf, knockoff versions called Glass circulate, made in unlicensed labs with inconsistent dosing. The Shelf version has a reputation for occasionally locking users into obsessive loops \u2014 grinding the same task for 12 hours without recognizing it has become meaningless.",
   "story_hooks": [
-    "A Tier 4 executive's Claritex prescription is being quietly monitored by Lazarus — the company has added an undocumented telemetry compound that logs what users focus on while dosed, building behavioral profiles sold to third parties.",
-    "A Shelf-side Glass cook has figured out how to strip the rebound crash from the formula, making a version that doesn't wear off — users are disappearing into sustained focus states, found days later dehydrated and locked onto unfinished projects.",
-    "A Tier 2 student took their sibling's Claritex before a licensing exam and focused so completely on the wrong section of the material that they failed — now they're trying to get the prescription legitimized before the retake."
-  ]
+    "A Tier 4 executive\u0027s Claritex prescription is being quietly monitored by Lazarus \u2014 the company has added an undocumented telemetry compound that logs what users focus on while dosed, building behavioral profiles sold to third parties.",
+    "A Shelf-side Glass cook has figured out how to strip the rebound crash from the formula, making a version that doesn\u0027t wear off \u2014 users are disappearing into sustained focus states, found days later dehydrated and locked onto unfinished projects.",
+    "A Tier 2 student took their sibling\u0027s Claritex before a licensing exam and focused so completely on the wrong section of the material that they failed \u2014 now they\u0027re trying to get the prescription legitimized before the retake."
+  ],
+  "tags": []
 }

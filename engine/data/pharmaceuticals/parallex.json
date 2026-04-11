@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6c8754ba25889da024f447d",
   "name": "Parallex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "multitasking_and_parallel_processing",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Parallex is a prefrontal cortex modulator that suppresses the brain's natural bottleneck in attentional switching, allowing users to genuinely maintain multiple independent cognitive threads simultaneously rather than rapidly alternating between tasks. In BCI-augmented individuals, it allows conscious awareness to be distributed across multiple simultaneous data streams, processes, and physical tasks without degradation. It is the standard pharmaceutical for network operators, air traffic analogues, and multi-system engineers.",
+  "description": "Parallex is a prefrontal cortex modulator that suppresses the brain\u0027s natural bottleneck in attentional switching, allowing users to genuinely maintain multiple independent cognitive threads simultaneously rather than rapidly alternating between tasks. In BCI-augmented individuals, it allows conscious awareness to be distributed across multiple simultaneous data streams, processes, and physical tasks without degradation. It is the standard pharmaceutical for network operators, air traffic analogues, and multi-system engineers.",
   "method_of_use": "dermal_patch",
   "effects": [
     "True parallel cognitive processing (2-4 simultaneous task threads)",
@@ -20,7 +21,7 @@
   ],
   "side_effects": [
     "Difficulty converging on single-task focus post-dose",
-    "Identity fragmentation at high doses — threads feel like separate selves",
+    "Identity fragmentation at high doses \u2014 threads feel like separate selves",
     "Fatigue is masked during dose, crashes severely after",
     "Mild dissociation from physical body sensations",
     "Long-term: baseline attention becomes permanently fragmented"
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 70-100 per patch",
-  "cultural_context": "Parallex is the quiet workhorse of GLMZ's knowledge economy. Network operations centers, logistics hubs, and emergency dispatch services run on it. The identity fragmentation side effect is poorly understood and underreported — users describe it as 'becoming the job' and struggle to remember who they are outside of work contexts. On the street, bootleg patches called 'Hydra' are worn by Shelf hustlers managing multiple illegal operations simultaneously.",
+  "street_price": "\u03A6 70-100 per patch",
+  "cultural_context": "Parallex is the quiet workhorse of GLMZ\u0027s knowledge economy. Network operations centers, logistics hubs, and emergency dispatch services run on it. The identity fragmentation side effect is poorly understood and underreported \u2014 users describe it as \u0027becoming the job\u0027 and struggle to remember who they are outside of work contexts. On the street, bootleg patches called \u0027Hydra\u0027 are worn by Shelf hustlers managing multiple illegal operations simultaneously.",
   "story_hooks": [
-    "A Novafold network operator has been on Parallex patches for three years solid — they can manage 40 simultaneous systems flawlessly, but they've lost the ability to have a single coherent conversation or sustain a personal relationship",
-    "A Shelf fixer running multiple jobs simultaneously is wearing bootleg Hydra patches — and one of the 'threads' in their head has started making decisions the rest of them didn't agree to",
-    "A corporate saboteur needs to simultaneously manage a physical infiltration, a BCI hack, and a cover story — Parallex is the only way, but they've never used it before and the identity fragmentation hits during the job"
-  ]
+    "A Novafold network operator has been on Parallex patches for three years solid \u2014 they can manage 40 simultaneous systems flawlessly, but they\u0027ve lost the ability to have a single coherent conversation or sustain a personal relationship",
+    "A Shelf fixer running multiple jobs simultaneously is wearing bootleg Hydra patches \u2014 and one of the \u0027threads\u0027 in their head has started making decisions the rest of them didn\u0027t agree to",
+    "A corporate saboteur needs to simultaneously manage a physical infiltration, a BCI hack, and a cover story \u2014 Parallex is the only way, but they\u0027ve never used it before and the identity fragmentation hits during the job"
+  ],
+  "tags": []
 }

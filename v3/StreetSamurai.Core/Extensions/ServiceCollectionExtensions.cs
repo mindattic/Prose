@@ -89,6 +89,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<XrefService>();
+        services.AddSingleton<GlobalSearchService>();
         services.AddSingleton<SearchTriggerService>();
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();

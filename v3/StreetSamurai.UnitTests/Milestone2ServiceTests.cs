@@ -74,7 +74,7 @@ public class DialogueServiceTests
         db.Reload();
 
         var result = svc.BuildDialogueContext(["Alpha", "Beta"]);
-        Assert.That(result, Does.Contain("DISTINCTLY different"));
+        Assert.That(result, Does.Contain("immediately distinct"));
         Assert.That(result, Does.Contain("Fast, nervous"));
         Assert.That(result, Does.Contain("Slow, deliberate"));
     }

@@ -53,39 +53,6 @@
         </div>
     }
 
-    @* ── Quick Search ──────────────────────────────────── *@
-    <div class="col-md-4">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted">Quick Search</div>
-            <div class="card-body">
-                <div class="input-group">
-                    <input type="text" class="form-control bg-dark text-light border-secondary"
-                           placeholder="Search canon..." @bind="searchQuery" @bind:event="oninput"
-                           @onkeydown="HandleSearchKey" style="height: 32px;" />
-                    <button class="btn btn-outline-danger" @onclick="DoSearch" style="height: 32px;">Search</button>
-                </div>
-                @if (searchResults.Any())
-                {
-                    <div class="mt-3">
-                        @foreach (var r in searchResults.Take(8))
-                        {
-                            <a href="@r.Route" class="d-block text-decoration-none border-bottom border-secondary py-2" style="cursor: pointer;">
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge @TypeBadge(r.EntityType)">@r.EntityType</span>
-                                    <span class="text-light fw-bold small">@(string.IsNullOrEmpty(r.EntityName) ? r.FileName : r.EntityName)</span>
-                                </div>
-                                @if (!string.IsNullOrEmpty(r.Heading))
-                                {
-                                    <small class="text-info">@r.Heading</small>
-                                }
-                                <div class="text-muted small mt-1" style="white-space: pre-wrap; max-height: 3em; overflow: hidden;">@r.Context</div>
-                            </a>
-                        }
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
 
     @* ── Most Connected / Canon Docs ──────────────────── *@
     <div class="col-md-4">
@@ -130,8 +97,6 @@
 @code {
     private int docCount, _corpCount, _charCount, _nodeCount, _edgeCount, _facetCount;
     private bool llmReady, _ttsReady;
-    private string searchQuery = "";
-    private List<SearchResult> searchResults = [];
     private List<StoryProject> stories = [];
     private List<(WorldNode node, int count)> _topConnected = [];
     private int orphanCount;
@@ -167,17 +132,6 @@
             || Graph.GetAllEdges(n.Id).Count == 0);
     }
 
-    private void DoSearch()
-    {
-        if (!string.IsNullOrWhiteSpace(searchQuery))
-            searchResults = Canon.Search(searchQuery, 8);
-    }
-
-    private void HandleSearchKey(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter") DoSearch();
-    }
-
     private string[] triviaRing = [];
     private int triviaPos;
 
@@ -187,5 +141,4 @@
 
     private void PrevTrivia() { if (triviaRing.Length > 0) triviaPos = (triviaPos - 1 + triviaRing.Length) % triviaRing.Length; }
 
-    private static string TypeBadge(string type) => Constants.TypeBadge.For(type);
 }

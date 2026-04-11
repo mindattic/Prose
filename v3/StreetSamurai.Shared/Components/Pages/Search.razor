@@ -1,37 +1,71 @@
 @page "/search"
-@inject LoreService Canon
+@inject GlobalSearchService SearchSvc
+@inject NavigationManager Nav
 
-<h4 class="text-danger mb-1">Search Canon</h4>
-<p class="text-muted mb-3">Full-text search across all worldbuilding documents — markdown, YAML, everything in the canon vault.</p>
+@{
+    var heading = !string.IsNullOrWhiteSpace(activeTag)
+        ? $"Tag: {activeTag}"
+        : !string.IsNullOrWhiteSpace(activeQuery)
+            ? $"Results for \"{activeQuery}\""
+            : "Search";
+}
+
+<div class="d-flex align-items-baseline gap-3 mb-3">
+    <h4 class="text-danger mb-0">@heading</h4>
+    @if (totalCount > 0)
+    {
+        <span class="text-muted small">@totalCount result@(totalCount != 1 ? "s" : "")</span>
+    }
+</div>
 
 <div class="input-group mb-4" style="max-width: 600px;">
     <input type="text" class="form-control bg-dark text-light border-secondary"
-           placeholder="Search across all worldbuilding files..."
-           title="Searches all markdown and YAML files in the worldbuilding directory. Press Enter to search."
-           @bind="query" @bind:event="oninput"
+           placeholder="Search all canon…"
+           @bind="inputQuery" @bind:event="oninput"
            @onkeydown="HandleKey" />
-    <button class="btn btn-outline-danger" @onclick="DoSearch">Search</button>
+    <button class="btn btn-outline-danger" @onclick="DoTextSearch">Search</button>
 </div>
 
-@if (results.Any())
+@if (results.Count > 0)
 {
-    <p class="text-muted small">@results.Count results for "@query"</p>
-
-    @foreach (var r in results)
-    {
-        <div class="card bg-dark text-light border-secondary mb-2">
-            <div class="card-body py-2">
-                <div class="d-flex justify-content-between">
-                    <span class="text-info small">@r.FileName:@r.LineNumber</span>
-                    @if (!string.IsNullOrEmpty(r.Heading))
-                    {
-                        <span class="text-muted small">@r.Heading</span>
-                    }
+    <div class="search-results">
+        @foreach (var r in results)
+        {
+            <a href="@r.Route" class="search-result-card text-decoration-none d-block mb-2">
+                <div class="card bg-dark text-light border-secondary">
+                    <div class="card-body py-2 px-3">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <span class="badge @TypeBadge(r.Type)">@r.Type</span>
+                            <span class="fw-bold text-light">@r.Name</span>
+                            @if (!string.IsNullOrWhiteSpace(r.Subtitle))
+                            {
+                                <span class="text-muted small">— @r.Subtitle</span>
+                            }
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(r.Snippet))
+                        {
+                            <div class="text-muted small search-snippet">@r.Snippet</div>
+                        }
+                        @if (r.Tags.Count > 0)
+                        {
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                                @foreach (var tag in r.Tags.Take(6))
+                                {
+                                    var t = tag;
+                                    <a href="/search?tag=@Uri.EscapeDataString(t)"
+                                       class="search-tag-pill text-decoration-none"
+                                       @onclick:stopPropagation="true">@t</a>
+                                }
+                            </div>
+                        }
+                    </div>
                 </div>
-                <pre class="mb-0 mt-1 small" style="white-space: pre-wrap; color: #ccc;">@r.Context</pre>
-            </div>
-        </div>
-    }
+            </a>
+        }
+    </div>
+
+    <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages"
+                   OnPageChanged="GoToPage" />
 }
 else if (searched)
 {
@@ -39,21 +73,71 @@ else if (searched)
 }
 
 @code {
-    private string query = "";
-    private List<SearchResult> results = [];
+    [SupplyParameterFromQuery(Name = "q")] public string? Q { get; set; }
+    [SupplyParameterFromQuery(Name = "tag")] public string? Tag { get; set; }
+    [SupplyParameterFromQuery(Name = "page")] public int Page { get; set; } = 1;
+
+    private string inputQuery = "";
+    private string activeQuery = "";
+    private string activeTag = "";
+    private List<CanonSearchResult> results = [];
+    private int totalCount;
+    private int currentPage = 1;
+    private const int PageSize = 20;
     private bool searched;
 
-    private void DoSearch()
+    private int TotalPages => Math.Max(1, (int)Math.Ceiling(totalCount / (double)PageSize));
+
+    protected override void OnParametersSet()
     {
-        if (!string.IsNullOrWhiteSpace(query))
+        currentPage = Math.Max(1, Page);
+        if (!string.IsNullOrWhiteSpace(Tag))
         {
-            results = Canon.Search(query, 20);
-            searched = true;
+            activeTag = Tag;
+            activeQuery = "";
+            inputQuery = "";
+            DoTagSearch();
+        }
+        else if (!string.IsNullOrWhiteSpace(Q))
+        {
+            activeQuery = Q;
+            activeTag = "";
+            inputQuery = Q;
+            RunSearch();
         }
     }
 
-    private void HandleKey(KeyboardEventArgs e)
+    private void DoTextSearch()
     {
-        if (e.Key == "Enter") DoSearch();
+        if (string.IsNullOrWhiteSpace(inputQuery)) return;
+        currentPage = 1;
+        Nav.NavigateTo($"/search?q={Uri.EscapeDataString(inputQuery.Trim())}");
     }
+
+    private void HandleKey(KeyboardEventArgs e) { if (e.Key == "Enter") DoTextSearch(); }
+
+    private void GoToPage(int page)
+    {
+        currentPage = page;
+        if (!string.IsNullOrWhiteSpace(activeTag))
+            Nav.NavigateTo($"/search?tag={Uri.EscapeDataString(activeTag)}&page={page}");
+        else
+            Nav.NavigateTo($"/search?q={Uri.EscapeDataString(activeQuery)}&page={page}");
+    }
+
+    private void RunSearch()
+    {
+        totalCount = SearchSvc.SearchCount(activeQuery);
+        results = SearchSvc.Search(activeQuery, currentPage, PageSize);
+        searched = true;
+    }
+
+    private void DoTagSearch()
+    {
+        totalCount = SearchSvc.SearchByTagCount(activeTag);
+        results = SearchSvc.SearchByTag(activeTag, currentPage, PageSize);
+        searched = true;
+    }
+
+    private static string TypeBadge(string type) => Constants.TypeBadge.For(type);
 }

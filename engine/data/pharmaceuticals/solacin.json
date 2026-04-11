@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6d77ecdaa546d71389786e5",
   "name": "Solacin",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "recreational",
   "subcategory": "social lubricant / anxiolytic euphoriant",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Solacin is a mild anxiolytic and prosocial compound that reduces social anxiety and inhibition without the cognitive impairment of alcohol, replacing social fear with a warm, genuine interest in the people around you. It's the clean, functional social drug of 2200 — you're still yourself, still sharp, still in control, just no longer afraid. Novafold markets it as 'connection support' and it's available over the counter in most Tier 2-4 pharmacies.",
+  "description": "Solacin is a mild anxiolytic and prosocial compound that reduces social anxiety and inhibition without the cognitive impairment of alcohol, replacing social fear with a warm, genuine interest in the people around you. It\u0027s the clean, functional social drug of 2200 \u2014 you\u0027re still yourself, still sharp, still in control, just no longer afraid. Novafold markets it as \u0027connection support\u0027 and it\u0027s available over the counter in most Tier 2-4 pharmacies.",
   "method_of_use": "oral",
   "effects": [
     "Elimination of social anxiety and self-consciousness",
@@ -20,8 +21,8 @@
   ],
   "side_effects": [
     "Mild drowsiness at high doses",
-    "Overcandor — users may disclose more than intended",
-    "Post-use social anxiety spike as brain recalibrates ('the rebounce')",
+    "Overcandor \u2014 users may disclose more than intended",
+    "Post-use social anxiety spike as brain recalibrates (\u0027the rebounce\u0027)",
     "Long-term use associated with atrophied natural social skills",
     "Rare: allergic reaction in users with certain geneware modifications"
   ],
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "legal",
-  "street_price": "Φ 25 per dose",
-  "cultural_context": "Solacin is so normalized in GLMZ that many people don't think of it as a drug — it's what you take before a work function, a first date, a difficult conversation, a party where you don't know anyone. In Tier 2, it's cheaper than alcohol and has no hangover. In Tier 3, the Novafold branded version (in its distinctive pale blue capsule) is practically a social prop — being seen to take Solacin signals that you're a functional, socially responsible adult. The 'rebounce' — the post-use anxiety spike — is the drug's most discussed cultural feature, and has given rise to the practice of 'stacking' doses to avoid it.",
+  "street_price": "\u03A6 25 per dose",
+  "cultural_context": "Solacin is so normalized in GLMZ that many people don\u0027t think of it as a drug \u2014 it\u0027s what you take before a work function, a first date, a difficult conversation, a party where you don\u0027t know anyone. In Tier 2, it\u0027s cheaper than alcohol and has no hangover. In Tier 3, the Novafold branded version (in its distinctive pale blue capsule) is practically a social prop \u2014 being seen to take Solacin signals that you\u0027re a functional, socially responsible adult. The \u0027rebounce\u0027 \u2014 the post-use anxiety spike \u2014 is the drug\u0027s most discussed cultural feature, and has given rise to the practice of \u0027stacking\u0027 doses to avoid it.",
   "story_hooks": [
-    "A Tier 3 corporate HR department has been quietly adding Solacin to the water dispensers on meeting floors — productivity and 'team cohesion scores' have improved dramatically, and someone has just noticed the pharmacy receipts",
-    "A character with social anxiety has been on daily Solacin for three years and has never developed the social skills the drug was supposed to supplement — now there's a shortage, and they have to navigate a critical situation completely sober for the first time in their adult life",
-    "The 'overcandor' effect has been weaponized — someone has developed a high-dose Solacin variant used in interrogation, not as a truth serum exactly, but as a compound that makes people genuinely want to share everything they know"
-  ]
+    "A Tier 3 corporate HR department has been quietly adding Solacin to the water dispensers on meeting floors \u2014 productivity and \u0027team cohesion scores\u0027 have improved dramatically, and someone has just noticed the pharmacy receipts",
+    "A character with social anxiety has been on daily Solacin for three years and has never developed the social skills the drug was supposed to supplement \u2014 now there\u0027s a shortage, and they have to navigate a critical situation completely sober for the first time in their adult life",
+    "The \u0027overcandor\u0027 effect has been weaponized \u2014 someone has developed a high-dose Solacin variant used in interrogation, not as a truth serum exactly, but as a compound that makes people genuinely want to share everything they know"
+  ],
+  "tags": []
 }

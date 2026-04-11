@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6dc7b5db541de08e921b78b",
   "name": "Synchrovet",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "BCI calibration aid",
   "manufacturer": "Helix Biosystems",
-  "description": "Synchrovet is a neurochemical calibration agent that temporarily optimizes the electrochemical environment at BCI neural interfaces, improving signal clarity, reducing latency artifacts, and smoothing out the misfires that cause 'neural static' — the disorienting sensory noise that affects poorly calibrated or aging BCI hardware. It is taken before high-precision BCI work or after interface hardware updates.",
+  "description": "Synchrovet is a neurochemical calibration agent that temporarily optimizes the electrochemical environment at BCI neural interfaces, improving signal clarity, reducing latency artifacts, and smoothing out the misfires that cause \u0027neural static\u0027 \u2014 the disorienting sensory noise that affects poorly calibrated or aging BCI hardware. It is taken before high-precision BCI work or after interface hardware updates.",
   "method_of_use": "sublingual",
   "effects": [
     "reduces BCI signal latency",
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ45 per dose",
-  "cultural_context": "Synchrovet occupies a gray zone between medical necessity and enhancement. Surgeons, pilots, precision operators, and competitive gamers use it professionally. The mild euphoria and the sensation of perfect digital-organic alignment make it recreationally appealing — the addiction risk comes from people chasing that feeling of frictionless clarity. On the street it's called 'the tune' because users describe it as being in perfect pitch with their hardware.",
+  "street_price": "\u03A645 per dose",
+  "cultural_context": "Synchrovet occupies a gray zone between medical necessity and enhancement. Surgeons, pilots, precision operators, and competitive gamers use it professionally. The mild euphoria and the sensation of perfect digital-organic alignment make it recreationally appealing \u2014 the addiction risk comes from people chasing that feeling of frictionless clarity. On the street it\u0027s called \u0027the tune\u0027 because users describe it as being in perfect pitch with their hardware.",
   "story_hooks": [
-    "A surgeon is addicted to Synchrovet and their hands are only steady when dosed — their patients don't know",
-    "A black market Synchrovet analog is causing permanent BCI calibration drift — users who take it enough times find their interface never feels right again without it",
-    "A character discovers that Synchrovet's calibration effect also makes BCI users temporarily more susceptible to specific neural-frequency intrusion signals"
-  ]
+    "A surgeon is addicted to Synchrovet and their hands are only steady when dosed \u2014 their patients don\u0027t know",
+    "A black market Synchrovet analog is causing permanent BCI calibration drift \u2014 users who take it enough times find their interface never feels right again without it",
+    "A character discovers that Synchrovet\u0027s calibration effect also makes BCI users temporarily more susceptible to specific neural-frequency intrusion signals"
+  ],
+  "tags": []
 }

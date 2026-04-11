@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6d8709e91c5e710e3c803dd",
   "name": "Solanthex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "contentment_sustainer",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Solanthex is a long-duration hedonic baseline stabilizer that produces a sustained, gentle sense of satisfaction and well-being without euphoria or cognitive impairment. It works by modulating the brain's default sense of sufficiency — the background feeling of whether what one has is enough. Lazarus markets it as a treatment for chronic dissatisfaction disorder, existential anxiety, and quality-of-life deficit syndrome, all diagnostic categories that critics note Lazarus itself helped define.",
+  "description": "Solanthex is a long-duration hedonic baseline stabilizer that produces a sustained, gentle sense of satisfaction and well-being without euphoria or cognitive impairment. It works by modulating the brain\u0027s default sense of sufficiency \u2014 the background feeling of whether what one has is enough. Lazarus markets it as a treatment for chronic dissatisfaction disorder, existential anxiety, and quality-of-life deficit syndrome, all diagnostic categories that critics note Lazarus itself helped define.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Sustained low-level sense of contentment and sufficiency",
@@ -19,7 +20,7 @@
     "Reduced envy, status anxiety, and upward social comparison"
   ],
   "side_effects": [
-    "Reduction in drive to improve one's actual circumstances",
+    "Reduction in drive to improve one\u0027s actual circumstances",
     "Users may accept objectively poor conditions with inappropriate equanimity",
     "Subtle blunting of aspiration and goal formation",
     "Long-term users report difficulty feeling excited about genuinely good things",
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "Φ55 per patch (Φ220 monthly supply)",
-  "cultural_context": "Solanthex is the most politically controversial legal drug in GLMZ. In Tier 4 and 5, it is used for genuine quality-of-life management — high-stress executives and anxious Spire residents use it to enjoy what they have. In Tier 1 and 2, it is prescribed at extraordinary rates, and critics argue it is a chemical mechanism of social control — a drug that makes people on the Shelf feel okay about being on the Shelf. Lazarus's response is that the drug treats a real condition and that suffering is not politically useful. The debate continues.",
+  "street_price": "\u03A655 per patch (\u03A6220 monthly supply)",
+  "cultural_context": "Solanthex is the most politically controversial legal drug in GLMZ. In Tier 4 and 5, it is used for genuine quality-of-life management \u2014 high-stress executives and anxious Spire residents use it to enjoy what they have. In Tier 1 and 2, it is prescribed at extraordinary rates, and critics argue it is a chemical mechanism of social control \u2014 a drug that makes people on the Shelf feel okay about being on the Shelf. Lazarus\u0027s response is that the drug treats a real condition and that suffering is not politically useful. The debate continues.",
   "story_hooks": [
-    "A Shelf neighborhood that was becoming politically organized suddenly shows a dramatic uptick in Solanthex prescriptions from a Lazarus-affiliated clinic — someone is trying to chemically demobilize a movement",
+    "A Shelf neighborhood that was becoming politically organized suddenly shows a dramatic uptick in Solanthex prescriptions from a Lazarus-affiliated clinic \u2014 someone is trying to chemically demobilize a movement",
     "A Spire journalist goes on Solanthex for a month to write a piece about it and realizes, three weeks in, that they have lost the ambition to finish the article",
-    "A Lazarus whistleblower reveals that the diagnostic criteria for chronic dissatisfaction disorder were written to include essentially any expression of political or economic grievance — the drug was always a pacification tool"
-  ]
+    "A Lazarus whistleblower reveals that the diagnostic criteria for chronic dissatisfaction disorder were written to include essentially any expression of political or economic grievance \u2014 the drug was always a pacification tool"
+  ],
+  "tags": []
 }

@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6927578872c409cf8073d70",
   "name": "Arravex",
   "type": "pharmaceutical",
   "aliases": [
@@ -10,7 +11,7 @@
   "category": "emotional_regulator",
   "subcategory": "confidence_builder",
   "manufacturer": "Helix Biosystems",
-  "description": "Arravex is a noradrenergic and dopaminergic confidence modulator that suppresses the neural correlates of self-doubt and social threat appraisal while elevating assertiveness, vocal projection, and executive social behavior. Unlike crude stimulants, it targets specifically the prefrontal circuits governing self-assessment, producing confident behavior that reads as genuine rather than manic or aggressive. It was originally developed for Helix's executive performance program and has since become the standard chemical preparation for high-stakes corporate presentations, negotiations, and legal proceedings.",
+  "description": "Arravex is a noradrenergic and dopaminergic confidence modulator that suppresses the neural correlates of self-doubt and social threat appraisal while elevating assertiveness, vocal projection, and executive social behavior. Unlike crude stimulants, it targets specifically the prefrontal circuits governing self-assessment, producing confident behavior that reads as genuine rather than manic or aggressive. It was originally developed for Helix\u0027s executive performance program and has since become the standard chemical preparation for high-stakes corporate presentations, negotiations, and legal proceedings.",
   "method_of_use": "sublingual",
   "effects": [
     "marked increase in self-assessed and observed confidence",
@@ -21,21 +22,22 @@
     "mild euphoria"
   ],
   "side_effects": [
-    "overconfidence errors — impaired recognition of genuine personal limitations",
+    "overconfidence errors \u2014 impaired recognition of genuine personal limitations",
     "interpersonal friction if used in settings where assertiveness is unwelcome",
     "comedown characterized by acute self-doubt and vulnerability",
     "rare: grandiosity cascade in users with latent narcissistic profiles",
     "tolerance develops with frequent use, requiring dose escalation"
   ],
-  "duration": "5–7 hours",
+  "duration": "5\u20137 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 45 per sublingual strip",
-  "cultural_context": "Arravex has transformed GLMZ's professional culture. Job interviews, promotion assessments, and contract negotiations are now understood to be Arravex events — everyone knows everyone is on it, and interviewers are on it too. There's a dark irony in performance reviews conducted entirely by chemically confident people assessing chemically confident candidates. On the Shelf, a rougher street version called 'swagger' produces more aggressive confidence with less social finesse — useful in confrontations and gang hierarchy disputes. The drug has been quietly introduced into corporate team offsite events through beverage dosing, a practice that is technically illegal and widely practiced.",
+  "street_price": "\u03A6 45 per sublingual strip",
+  "cultural_context": "Arravex has transformed GLMZ\u0027s professional culture. Job interviews, promotion assessments, and contract negotiations are now understood to be Arravex events \u2014 everyone knows everyone is on it, and interviewers are on it too. There\u0027s a dark irony in performance reviews conducted entirely by chemically confident people assessing chemically confident candidates. On the Shelf, a rougher street version called \u0027swagger\u0027 produces more aggressive confidence with less social finesse \u2014 useful in confrontations and gang hierarchy disputes. The drug has been quietly introduced into corporate team offsite events through beverage dosing, a practice that is technically illegal and widely practiced.",
   "story_hooks": [
-    "A Tier 2 man discovers he's been secretly dosed with Arravex by his corporate employer for months — the confidence he's built his new life around isn't his. He needs to know who authorized it and whether he can ever trust himself again.",
-    "A Tier 4 corporate lawyer won a landmark case that put a Shelf gang leader away for life. She's just realized she was on a double dose of Arravex during every court appearance and is no longer certain the performance was real — or that the verdict was just.",
-    "Helix is developing a next-generation version of Arravex that also suppresses the user's ability to detect deception — making them not just confident but permanently persuadable. Someone wants the prototype formula."
-  ]
+    "A Tier 2 man discovers he\u0027s been secretly dosed with Arravex by his corporate employer for months \u2014 the confidence he\u0027s built his new life around isn\u0027t his. He needs to know who authorized it and whether he can ever trust himself again.",
+    "A Tier 4 corporate lawyer won a landmark case that put a Shelf gang leader away for life. She\u0027s just realized she was on a double dose of Arravex during every court appearance and is no longer certain the performance was real \u2014 or that the verdict was just.",
+    "Helix is developing a next-generation version of Arravex that also suppresses the user\u0027s ability to detect deception \u2014 making them not just confident but permanently persuadable. Someone wants the prototype formula."
+  ],
+  "tags": []
 }

@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c69d7aee82f207ec57631c80",
   "name": "Compresyn",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "sleep_dream",
   "subcategory": "sleep_compressor",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Compresyn is a precision SNT-interface compound that accelerates the cycling of sleep stages, cycling through all necessary NREM and REM phases at approximately 2.7x normal speed while preserving the physiological restoration yield of a full 8-hour sleep. A full restorative night is achieved in 2.5-3.2 hours, after which the compound terminates sleep and the user wakes refreshed. It requires a calibrated BCI to monitor and regulate stage transitions — without one, it is dangerously unpredictable.",
+  "description": "Compresyn is a precision SNT-interface compound that accelerates the cycling of sleep stages, cycling through all necessary NREM and REM phases at approximately 2.7x normal speed while preserving the physiological restoration yield of a full 8-hour sleep. A full restorative night is achieved in 2.5-3.2 hours, after which the compound terminates sleep and the user wakes refreshed. It requires a calibrated BCI to monitor and regulate stage transitions \u2014 without one, it is dangerously unpredictable.",
   "method_of_use": "oral",
   "effects": [
     "Full physiological restoration of 8-hour sleep achieved in 2.5-3.2 hours",
@@ -18,7 +19,7 @@
     "Sustained cognitive performance equivalent to fully rested baseline"
   ],
   "side_effects": [
-    "BCI-dependent — without neural monitoring, stage acceleration can cause micro-seizures",
+    "BCI-dependent \u2014 without neural monitoring, stage acceleration can cause micro-seizures",
     "Dreams are experienced at accelerated pace and are often fragmented and disorienting",
     "Long-term use disrupts natural circadian rhythm, body loses ability to self-regulate sleep timing",
     "Extremely expensive; counterfeit versions on gray market cause cardiac arrhythmia",
@@ -28,11 +29,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 4-5",
   "legality": "prescription",
-  "street_price": "Φ220 per dose (authorized); Φ80 counterfeit",
-  "cultural_context": "Compresyn is the ultimate Tier 4-5 status commodity — buying back time itself. Spire executives, high-frequency traders, and corporate attorneys use it as a matter of professional expectation; sleeping full hours is for people who can't afford not to. Some Tier 4 users take it nightly for years, functionally eliminating sleep from their schedules. The counterfeit market is deadly — gray-market Compresyn without BCI regulation has killed a dozen Tier 2 users who bought it hoping to compete.",
+  "street_price": "\u03A6220 per dose (authorized); \u03A680 counterfeit",
+  "cultural_context": "Compresyn is the ultimate Tier 4-5 status commodity \u2014 buying back time itself. Spire executives, high-frequency traders, and corporate attorneys use it as a matter of professional expectation; sleeping full hours is for people who can\u0027t afford not to. Some Tier 4 users take it nightly for years, functionally eliminating sleep from their schedules. The counterfeit market is deadly \u2014 gray-market Compresyn without BCI regulation has killed a dozen Tier 2 users who bought it hoping to compete.",
   "story_hooks": [
-    "The counterfeit Compresyn supply chain leads back to a Nightshade Pharmatech front operation — they're deliberately producing dangerous analogs to corner the gray market while Lazarus holds the legitimate prescription monopoly.",
-    "A Tier 5 Spire executive who has used Compresyn nightly for six years begins experiencing waking hallucinations that appear to be compressed, unprocessed dream content surfacing involuntarily — and they're starting to appear during board presentations.",
-    "A Tier 2 fixer acquires a single legitimate Compresyn dose and uses it before a critical job — but the accelerated dream cycle surfaces a suppressed memory that changes everything they thought they knew about the job they're about to do."
-  ]
+    "The counterfeit Compresyn supply chain leads back to a Nightshade Pharmatech front operation \u2014 they\u0027re deliberately producing dangerous analogs to corner the gray market while Lazarus holds the legitimate prescription monopoly.",
+    "A Tier 5 Spire executive who has used Compresyn nightly for six years begins experiencing waking hallucinations that appear to be compressed, unprocessed dream content surfacing involuntarily \u2014 and they\u0027re starting to appear during board presentations.",
+    "A Tier 2 fixer acquires a single legitimate Compresyn dose and uses it before a critical job \u2014 but the accelerated dream cycle surfaces a suppressed memory that changes everything they thought they knew about the job they\u0027re about to do."
+  ],
+  "tags": []
 }

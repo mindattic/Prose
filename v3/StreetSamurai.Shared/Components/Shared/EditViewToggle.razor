@@ -8,11 +8,14 @@
     @if (Access.CanWrite)
     {
         <div class="d-flex align-items-center gap-2">
-            @HeaderButtons
-            <div class="form-check form-switch mb-0 ms-2">
-                <input class="form-check-input" type="checkbox" id="editToggle_@RepoName" checked="@editMode" @onchange="Toggle" />
-                <label class="form-check-label text-muted" style="font-size:0.75rem;" for="editToggle_@RepoName">Edit</label>
-            </div>
+            @if (editMode)
+            {
+                @HeaderButtons
+            }
+            <button class="btn btn-sq @(editMode ? "btn-danger" : "btn-outline-secondary")"
+                    @onclick="Toggle" title="@(editMode ? "Exit edit mode" : "Edit")">
+                <i class="bi bi-pencil"></i>
+            </button>
         </div>
     }
 </div>

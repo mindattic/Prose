@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a07fc099402fb620d79aaf",
   "name": "Dermasil",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "anti-scarring compound for augment sites",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "A topical and injectable anti-fibrotic compound designed to prevent and reverse hypertrophic scarring and keloid formation at augmentation installation sites — the ports, incisions, and interface wounds that chrome leaves behind. Dermasil combines TGF-β pathway inhibitors with collagen remodeling enzymes and a proprietary melanin-modulating agent to restore skin appearance around augment sites. Nightshade markets a legal cosmetic version and a stronger injectable that exists in a regulatory gray area.",
+  "description": "A topical and injectable anti-fibrotic compound designed to prevent and reverse hypertrophic scarring and keloid formation at augmentation installation sites \u2014 the ports, incisions, and interface wounds that chrome leaves behind. Dermasil combines TGF-\u03B2 pathway inhibitors with collagen remodeling enzymes and a proprietary melanin-modulating agent to restore skin appearance around augment sites. Nightshade markets a legal cosmetic version and a stronger injectable that exists in a regulatory gray area.",
   "method_of_use": "dermal_patch",
   "effects": [
     "prevents hypertrophic scar formation at augment installation sites",
@@ -29,11 +30,12 @@
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "legal",
-  "street_price": "Φ40–Φ150 per month topical; Φ300–Φ600 per injectable cycle",
-  "cultural_context": "Chrome leaves marks — the ports, the seams, the incision lines that surgeons can't always close cleanly, especially on the Shelf where augment surgery is done fast and cheap. For some, those marks are worn with pride. For others — particularly those navigating Tier 3-4 corporate environments where heavy augmentation signals lower-class origin — Dermasil is about erasure, about passing. Nightshade's dual-market strategy is transparent: the expensive injectable version is an open secret, available in any decent pharmacy if you know to ask for 'the professional formulation.'",
+  "street_price": "\u03A640\u2013\u03A6150 per month topical; \u03A6300\u2013\u03A6600 per injectable cycle",
+  "cultural_context": "Chrome leaves marks \u2014 the ports, the seams, the incision lines that surgeons can\u0027t always close cleanly, especially on the Shelf where augment surgery is done fast and cheap. For some, those marks are worn with pride. For others \u2014 particularly those navigating Tier 3-4 corporate environments where heavy augmentation signals lower-class origin \u2014 Dermasil is about erasure, about passing. Nightshade\u0027s dual-market strategy is transparent: the expensive injectable version is an open secret, available in any decent pharmacy if you know to ask for \u0027the professional formulation.\u0027",
   "story_hooks": [
-    "A Tier 4 corporate employee's Dermasil use has been flagged by an HR algorithm that cross-references scar treatment patterns with augmentation histories — the company is quietly building profiles of employees who are hiding their Tier 1 or Tier 2 origins.",
-    "Nightshade's injectable formulation has been quietly reformulated — the new version contains a tracking compound that maps augmentation sites and transmits the data to an unknown recipient.",
-    "A community organizer on the Shelf is running a campaign against Dermasil, arguing that the pressure to erase augment scars is a form of tier-passing that erases working-class identity — and someone with significant financial interest in Dermasil's continued sales wants her discredited."
-  ]
+    "A Tier 4 corporate employee\u0027s Dermasil use has been flagged by an HR algorithm that cross-references scar treatment patterns with augmentation histories \u2014 the company is quietly building profiles of employees who are hiding their Tier 1 or Tier 2 origins.",
+    "Nightshade\u0027s injectable formulation has been quietly reformulated \u2014 the new version contains a tracking compound that maps augmentation sites and transmits the data to an unknown recipient.",
+    "A community organizer on the Shelf is running a campaign against Dermasil, arguing that the pressure to erase augment scars is a form of tier-passing that erases working-class identity \u2014 and someone with significant financial interest in Dermasil\u0027s continued sales wants her discredited."
+  ],
+  "tags": []
 }

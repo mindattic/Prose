@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ab73378565ea41da1b7c8d",
   "name": "Ferrolin",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "augmented physiology nutritional support",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Ferrolin is a comprehensive metabolic supplement designed for the altered nutritional requirements of heavily augmented physiology, where synthetic organs, chrome-adjacent tissue, and SNT networks create dramatically different demands for trace metals, enzymatic cofactors, and bioelectric precursors than a fully organic body. It is the only major medical product produced by Nightshade Pharmatech that is fully legal — a calculated legitimacy anchor for the company's otherwise gray-market portfolio.",
+  "description": "Ferrolin is a comprehensive metabolic supplement designed for the altered nutritional requirements of heavily augmented physiology, where synthetic organs, chrome-adjacent tissue, and SNT networks create dramatically different demands for trace metals, enzymatic cofactors, and bioelectric precursors than a fully organic body. It is the only major medical product produced by Nightshade Pharmatech that is fully legal \u2014 a calculated legitimacy anchor for the company\u0027s otherwise gray-market portfolio.",
   "method_of_use": "oral",
   "effects": [
     "correction of augmentation-associated trace metal deficiencies",
@@ -21,7 +22,7 @@
   "side_effects": [
     "dark discoloration of urine and stool from iron and metallic compound excretion",
     "nausea if taken without food",
-    "can interact with some augment rejection suppressors — requires timing management",
+    "can interact with some augment rejection suppressors \u2014 requires timing management",
     "in purely organic individuals, causes significant digestive distress",
     "long-term use without augmentation can cause trace metal accumulation"
   ],
@@ -29,11 +30,12 @@
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "legal",
-  "street_price": "Φ10–Φ18 per day",
-  "cultural_context": "Ferrolin is the most visible legitimate product in Nightshade Pharmatech's catalog, and the company knows it — Ferrolin is priced accessibly and marketed hard to establish Nightshade as a trustworthy brand. This legitimacy is deliberately cultivated to provide cover for their gray-market operations. On the street, people are generally aware that Nightshade is sketchy, but Ferrolin works and is affordable, so most augmented people on the Shelf take it without much thought. Health professionals in Tier 3+ quietly note that Nightshade's transparency about Ferrolin's formulation is conspicuously complete compared to their other products.",
+  "street_price": "\u03A610\u2013\u03A618 per day",
+  "cultural_context": "Ferrolin is the most visible legitimate product in Nightshade Pharmatech\u0027s catalog, and the company knows it \u2014 Ferrolin is priced accessibly and marketed hard to establish Nightshade as a trustworthy brand. This legitimacy is deliberately cultivated to provide cover for their gray-market operations. On the street, people are generally aware that Nightshade is sketchy, but Ferrolin works and is affordable, so most augmented people on the Shelf take it without much thought. Health professionals in Tier 3\u002B quietly note that Nightshade\u0027s transparency about Ferrolin\u0027s formulation is conspicuously complete compared to their other products.",
   "story_hooks": [
-    "Nightshade has quietly altered Ferrolin's formula to include a long-half-life tracer compound that accumulates in SNT tissue — someone is building a map of every heavily augmented person in GLMZ through their Ferrolin purchases.",
-    "A Tier 1 community that relies on Ferrolin is experiencing a mysterious cluster of neurological symptoms — the batch they received has an unidentified compound that wasn't there before, and Nightshade's response to inquiries has been unusually aggressive.",
-    "A Nightshade Pharmatech insider wants to expose the company's use of Ferrolin as a legitimacy shield — they have documents proving the legal drug line exists entirely to protect the gray-market operation — but they need someone to get the information out safely."
-  ]
+    "Nightshade has quietly altered Ferrolin\u0027s formula to include a long-half-life tracer compound that accumulates in SNT tissue \u2014 someone is building a map of every heavily augmented person in GLMZ through their Ferrolin purchases.",
+    "A Tier 1 community that relies on Ferrolin is experiencing a mysterious cluster of neurological symptoms \u2014 the batch they received has an unidentified compound that wasn\u0027t there before, and Nightshade\u0027s response to inquiries has been unusually aggressive.",
+    "A Nightshade Pharmatech insider wants to expose the company\u0027s use of Ferrolin as a legitimacy shield \u2014 they have documents proving the legal drug line exists entirely to protect the gray-market operation \u2014 but they need someone to get the information out safely."
+  ],
+  "tags": []
 }

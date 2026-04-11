@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e976e5b16c40c09b2f2c3a",
   "name": "Velvet Rot",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,8 +9,8 @@
   ],
   "category": "street_concoction",
   "subcategory": "euphoric_opioid_analog",
-  "manufacturer": "Shelf chemist collective 'Roja's Kitchen', Milwaukee Corridor",
-  "description": "A synthesized opioid analog constructed from precursor chemicals stolen from Novafold Pharmaceuticals' waste stream — compounds that were themselves failed attempts at pain management formulations, recombined by a talented Shelf chemist named Roja Mendis into something that works, badly and beautifully. Velvet Rot produces intense euphoria and pain relief with a characteristic sensation users describe as feeling 'soft from the inside out.' The 'rot' refers to what happens to you if you use it too long.",
+  "manufacturer": "Shelf chemist collective \u0027Roja\u0027s Kitchen\u0027, Milwaukee Corridor",
+  "description": "A synthesized opioid analog constructed from precursor chemicals stolen from Novafold Pharmaceuticals\u0027 waste stream \u2014 compounds that were themselves failed attempts at pain management formulations, recombined by a talented Shelf chemist named Roja Mendis into something that works, badly and beautifully. Velvet Rot produces intense euphoria and pain relief with a characteristic sensation users describe as feeling \u0027soft from the inside out.\u0027 The \u0027rot\u0027 refers to what happens to you if you use it too long.",
   "method_of_use": "injection",
   "effects": [
     "profound euphoria",
@@ -25,18 +26,19 @@
     "severe constipation leading to bowel obstruction with chronic use",
     "tissue necrosis at injection sites",
     "immune suppression",
-    "withdrawal is described as 'fire under the skin' — extraordinarily painful",
+    "withdrawal is described as \u0027fire under the skin\u0027 \u2014 extraordinarily painful",
     "tolerance builds rapidly requiring escalating doses"
   ],
   "duration": "4-6 hours",
   "addiction_risk": "extreme",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ15-25 per dose (price rises sharply with dependency)",
-  "cultural_context": "Velvet Rot is the Shelf's most feared and beloved drug simultaneously. Roja Mendis herself reportedly stopped distributing it when she saw what it was doing to her community, but others took over the formula. There are support networks on the Shelf specifically for Velvet Rot withdrawal — notoriously brutal — staffed by former users. The drug has a mythology around it: you take it once for grief, twice for habit, three times forever.",
+  "street_price": "\u03A615-25 per dose (price rises sharply with dependency)",
+  "cultural_context": "Velvet Rot is the Shelf\u0027s most feared and beloved drug simultaneously. Roja Mendis herself reportedly stopped distributing it when she saw what it was doing to her community, but others took over the formula. There are support networks on the Shelf specifically for Velvet Rot withdrawal \u2014 notoriously brutal \u2014 staffed by former users. The drug has a mythology around it: you take it once for grief, twice for habit, three times forever.",
   "story_hooks": [
-    "Roja Mendis has disappeared — either she's been silenced by distributors angry at her attempts to create an antagonist compound, or she's relapsed herself",
-    "A Tier 4 Novafold executive has realized their waste stream is being harvested and is furious — not for ethical reasons, but because the street version is actually more effective than their legitimate products",
-    "A Shelf medic has developed a withdrawal protocol that actually works, but needs access to restricted pharmaceutical compounds to produce the treatment — and the only way to get them is through channels that require uncomfortable compromises"
-  ]
+    "Roja Mendis has disappeared \u2014 either she\u0027s been silenced by distributors angry at her attempts to create an antagonist compound, or she\u0027s relapsed herself",
+    "A Tier 4 Novafold executive has realized their waste stream is being harvested and is furious \u2014 not for ethical reasons, but because the street version is actually more effective than their legitimate products",
+    "A Shelf medic has developed a withdrawal protocol that actually works, but needs access to restricted pharmaceutical compounds to produce the treatment \u2014 and the only way to get them is through channels that require uncomfortable compromises"
+  ],
+  "tags": []
 }

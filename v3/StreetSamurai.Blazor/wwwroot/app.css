@@ -255,7 +255,11 @@ h1:focus {
     font-size: 0.65rem; padding: 1px 7px;
     background: #21262d; border-radius: 3px;
     color: #8b949e; border: 1px solid #30363d;
+    text-decoration: none;
 }
+a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58a6ff; text-decoration: none; }
+.ev-tag-link { text-decoration: none; }
+.ev-tag-link:hover { background: #30363d !important; color: #e6edf3 !important; border-color: #58a6ff !important; }
 .entity-detail-body { display: flex; flex-direction: column; gap: 20px; }
 .entity-section { display: flex; flex-direction: column; gap: 6px; }
 .entity-section-label {
@@ -514,3 +518,16 @@ textarea.auto-grow {
     border-radius: 6px;
     background: #161b22;
 }
+
+/* ── Search results ──────────────────────────────────────────────────────── */
+.search-result-card:hover .card { border-color: #6c757d !important; }
+.search-snippet { white-space: pre-wrap; max-height: 3.2em; overflow: hidden; }
+.search-tag-pill {
+    background: #21262d;
+    color: #8b949e;
+    border-radius: 10px;
+    padding: 1px 8px;
+    font-size: 0.65rem;
+    transition: background 0.1s, color 0.1s;
+}
+.search-tag-pill:hover { background: #dc3545; color: #fff; }

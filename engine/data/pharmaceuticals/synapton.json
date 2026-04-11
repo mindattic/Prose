@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6dc713f9a470c429064f3b4",
   "name": "Synapton",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,31 +9,32 @@
   "category": "augment_interactive",
   "subcategory": "synth_sync_compound",
   "manufacturer": "Helix Biosystems",
-  "description": "A proprietary SNT-binding agent that temporarily synchronizes the BCI handshake protocols of two or more users, creating a shared sensory loop between their augmented systems. Originally developed for military fire-team coordination, Synapton has found its way into recreational use — couples sharing tactile augment feeds, artists creating collaborative sensory installations, and fixers coordinating silent tactical operations. The shared state is partial, not telepathic: you feel what your partner's chrome feels, not their thoughts.",
+  "description": "A proprietary SNT-binding agent that temporarily synchronizes the BCI handshake protocols of two or more users, creating a shared sensory loop between their augmented systems. Originally developed for military fire-team coordination, Synapton has found its way into recreational use \u2014 couples sharing tactile augment feeds, artists creating collaborative sensory installations, and fixers coordinating silent tactical operations. The shared state is partial, not telepathic: you feel what your partner\u0027s chrome feels, not their thoughts.",
   "method_of_use": "neural_direct",
   "effects": [
-    "Bidirectional sensory feed between linked users' augments",
-    "Shared proprioceptive awareness — each user knows the other's physical state",
-    "Tactical coordination enhanced dramatically — linked combatants fight as a unit",
-    "Recreational users report intimacy described as 'deeper than skin'",
+    "Bidirectional sensory feed between linked users\u0027 augments",
+    "Shared proprioceptive awareness \u2014 each user knows the other\u0027s physical state",
+    "Tactical coordination enhanced dramatically \u2014 linked combatants fight as a unit",
+    "Recreational users report intimacy described as \u0027deeper than skin\u0027",
     "Augment inputs from both users processed simultaneously"
   ],
   "side_effects": [
-    "Sensory bleed — difficulty distinguishing your own body from your partner's",
+    "Sensory bleed \u2014 difficulty distinguishing your own body from your partner\u0027s",
     "Emotional contagion through physical sensation (pain, pleasure, panic are shared)",
     "Desync on separation causes 1-4 hours of dissociation",
-    "Rare cases of persistent phantom limb sensation from partner's augments post-session",
-    "Seizure risk if one partner's BCI is damaged or malfunctioning during link"
+    "Rare cases of persistent phantom limb sensation from partner\u0027s augments post-session",
+    "Seizure risk if one partner\u0027s BCI is damaged or malfunctioning during link"
   ],
   "duration": "2-4 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ320 per dose pair",
-  "cultural_context": "Synapton is sold in pairs — you buy two doses and share them with your link partner. In Tier 3, it's a date-night drug, a way for augmented couples to experience each other through chrome. In Tier 2, combat crews use it for operations, and the emotional intimacy that builds in a Synapton-linked team creates bonds that are almost tribal. There are underground Synapton parlors where strangers link briefly — it's called 'ghosting' someone, and the culture around it is ambivalent: profound and exploitative in equal measure.",
+  "street_price": "\u03A6320 per dose pair",
+  "cultural_context": "Synapton is sold in pairs \u2014 you buy two doses and share them with your link partner. In Tier 3, it\u0027s a date-night drug, a way for augmented couples to experience each other through chrome. In Tier 2, combat crews use it for operations, and the emotional intimacy that builds in a Synapton-linked team creates bonds that are almost tribal. There are underground Synapton parlors where strangers link briefly \u2014 it\u0027s called \u0027ghosting\u0027 someone, and the culture around it is ambivalent: profound and exploitative in equal measure.",
   "story_hooks": [
-    "A Synapton-linked combat team was hit mid-operation — one member died while linked, and the survivor experienced the death from inside. They haven't been right since, and they're looking for the person who sent them into that ambush.",
-    "An underground Synapton parlor is being used to copy sensory data from linked users — someone is harvesting the augment feeds of wealthy Tier 3 clients for corporate intelligence",
-    "Two estranged former partners, both heavily augmented, are linked via Synapton against their will — someone has dosed them both and they have hours to find the source before permanent desync damage sets in"
-  ]
+    "A Synapton-linked combat team was hit mid-operation \u2014 one member died while linked, and the survivor experienced the death from inside. They haven\u0027t been right since, and they\u0027re looking for the person who sent them into that ambush.",
+    "An underground Synapton parlor is being used to copy sensory data from linked users \u2014 someone is harvesting the augment feeds of wealthy Tier 3 clients for corporate intelligence",
+    "Two estranged former partners, both heavily augmented, are linked via Synapton against their will \u2014 someone has dosed them both and they have hours to find the source before permanent desync damage sets in"
+  ],
+  "tags": []
 }

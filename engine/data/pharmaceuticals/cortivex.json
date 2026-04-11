@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c69f7dc4b9c4e9df9725e57f",
   "name": "Cortivex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "neural inflammation reducer",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Cortivex is a targeted neuroinflammatory suppressant formulated for the specific pattern of microglial activation caused by prolonged BCI use. Unlike general anti-inflammatories, it selectively reduces inflammation in the cortical and subcortical regions most stressed by neural-digital interface activity without compromising the immune response elsewhere in the brain. Chronic BCI overuse without Cortivex leads to progressive neural degradation colloquially known as 'burnhead.'",
+  "description": "Cortivex is a targeted neuroinflammatory suppressant formulated for the specific pattern of microglial activation caused by prolonged BCI use. Unlike general anti-inflammatories, it selectively reduces inflammation in the cortical and subcortical regions most stressed by neural-digital interface activity without compromising the immune response elsewhere in the brain. Chronic BCI overuse without Cortivex leads to progressive neural degradation colloquially known as \u0027burnhead.\u0027",
   "method_of_use": "oral",
   "effects": [
     "reduction of BCI-induced microglial activation",
@@ -19,20 +20,21 @@
   ],
   "side_effects": [
     "mild cognitive dulling at high doses",
-    "reduced emotional intensity for 2–4 hours post-dose",
+    "reduced emotional intensity for 2\u20134 hours post-dose",
     "in rare cases: suppression of beneficial neuroplasticity alongside harmful inflammation",
     "dependency on drug for normal cognition in heavy BCI users",
     "rebound inflammation if stopped suddenly after long-term use"
   ],
-  "duration": "6–10 hours",
+  "duration": "6\u201310 hours",
   "addiction_risk": "moderate",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "Φ12–Φ35 per dose",
-  "cultural_context": "Anyone who uses a BCI heavily — which is most of GLMZ's working population — needs Cortivex. Data workers, BCI-dependent laborers, and anyone in a high-interface job takes it as a matter of course. The moderate addiction risk isn't chemical but physiological: heavy BCI users' brains adapt to Cortivex's presence and become unable to manage inflammation without it. This has created a massive dependent population and a lucrative recurring revenue stream for Novafold. On the Shelf, where BCI work is brutal and poorly regulated, 'burnhead' is a genuine epidemic among those who can't afford consistent Cortivex.",
+  "street_price": "\u03A612\u2013\u03A635 per dose",
+  "cultural_context": "Anyone who uses a BCI heavily \u2014 which is most of GLMZ\u0027s working population \u2014 needs Cortivex. Data workers, BCI-dependent laborers, and anyone in a high-interface job takes it as a matter of course. The moderate addiction risk isn\u0027t chemical but physiological: heavy BCI users\u0027 brains adapt to Cortivex\u0027s presence and become unable to manage inflammation without it. This has created a massive dependent population and a lucrative recurring revenue stream for Novafold. On the Shelf, where BCI work is brutal and poorly regulated, \u0027burnhead\u0027 is a genuine epidemic among those who can\u0027t afford consistent Cortivex.",
   "story_hooks": [
-    "Novafold's internal documents show they knew Cortivex creates physiological dependency within six months of heavy use — and deliberately calibrated the BCI integration protocols used by major employers to ensure users would reach that threshold.",
-    "A Shelf neighborhood is experiencing an outbreak of severe burnhead — someone has cut the local Cortivex supply with an inert compound, and the cognitive damage is beginning to affect the neighborhood's ability to function.",
-    "A researcher at Novafold has developed a one-time gene therapy that would eliminate BCI-induced inflammation permanently — and has disappeared after presenting the findings internally."
-  ]
+    "Novafold\u0027s internal documents show they knew Cortivex creates physiological dependency within six months of heavy use \u2014 and deliberately calibrated the BCI integration protocols used by major employers to ensure users would reach that threshold.",
+    "A Shelf neighborhood is experiencing an outbreak of severe burnhead \u2014 someone has cut the local Cortivex supply with an inert compound, and the cognitive damage is beginning to affect the neighborhood\u0027s ability to function.",
+    "A researcher at Novafold has developed a one-time gene therapy that would eliminate BCI-induced inflammation permanently \u2014 and has disappeared after presenting the findings internally."
+  ],
+  "tags": []
 }

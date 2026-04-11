@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6cd7fbca923bf6080b867c4",
   "name": "Prolifen",
   "type": "pharmaceutical",
   "aliases": [
@@ -29,11 +30,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ75 per injection (clinic); Φ150 street",
-  "cultural_context": "Prolifen is a staple of every clinic from the Shelf to the Spire, though quality varies enormously. Tier 4-5 clients get pharmaceutical-grade Lazarus formula with precise dosing; Shelf clinics use diluted stock or unlicensed generics that work approximately. Street surgeons who do black-market augment installs keep Prolifen on hand — it's what keeps botched jobs from becoming fatal. Fighters and laborers use it off-label to recover faster from injuries.",
+  "street_price": "\u03A675 per injection (clinic); \u03A6150 street",
+  "cultural_context": "Prolifen is a staple of every clinic from the Shelf to the Spire, though quality varies enormously. Tier 4-5 clients get pharmaceutical-grade Lazarus formula with precise dosing; Shelf clinics use diluted stock or unlicensed generics that work approximately. Street surgeons who do black-market augment installs keep Prolifen on hand \u2014 it\u0027s what keeps botched jobs from becoming fatal. Fighters and laborers use it off-label to recover faster from injuries.",
   "story_hooks": [
-    "A patient treated with Prolifen after surgery is healing too fast — their tissue is growing into their augments, and something in the compound is driving the process beyond normal limits",
+    "A patient treated with Prolifen after surgery is healing too fast \u2014 their tissue is growing into their augments, and something in the compound is driving the process beyond normal limits",
     "A Shelf trauma surgeon is rationing diluted Prolifen across a mass casualty event and has to choose who heals",
-    "Counterfeit Prolifen on the black market contains a dormant marker compound — anyone who's used it can be tracked by Lazarus security teams"
-  ]
+    "Counterfeit Prolifen on the black market contains a dormant marker compound \u2014 anyone who\u0027s used it can be tracked by Lazarus security teams"
+  ],
+  "tags": []
 }

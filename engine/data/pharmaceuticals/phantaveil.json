@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ca7ea68dca8ed086be1328",
   "name": "Phantaveil",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "sleep_dream",
   "subcategory": "hypnagogic_state_extender",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Phantaveil exploits the hypnagogic threshold — the liminal state between wakefulness and sleep — by pharmacologically extending and stabilizing it into a prolonged altered consciousness that is neither sleep nor waking. Users remain in a deeply relaxed, perceptually rich state for 2-4 hours in which hallucinations are vivid but controllable, thought is fluid and associative, and the usual barriers between conscious and subconscious processing dissolve. Nightshade markets it as a 'creative cognition supplement' but its primary use is recreational and its secondary use is interrogation-adjacent.",
+  "description": "Phantaveil exploits the hypnagogic threshold \u2014 the liminal state between wakefulness and sleep \u2014 by pharmacologically extending and stabilizing it into a prolonged altered consciousness that is neither sleep nor waking. Users remain in a deeply relaxed, perceptually rich state for 2-4 hours in which hallucinations are vivid but controllable, thought is fluid and associative, and the usual barriers between conscious and subconscious processing dissolve. Nightshade markets it as a \u0027creative cognition supplement\u0027 but its primary use is recreational and its secondary use is interrogation-adjacent.",
   "method_of_use": "sublingual",
   "effects": [
     "Extended hypnagogic state (2-4 hours)",
@@ -23,17 +24,18 @@
     "Disorienting transition to normal sleep or wakefulness",
     "Content of hallucinations can turn distressing without warning",
     "Reduced psychological defensiveness makes users susceptible to suggestion and manipulation",
-    "Occasional failure to transition to actual sleep — users remain in state for dangerous extended periods",
+    "Occasional failure to transition to actual sleep \u2014 users remain in state for dangerous extended periods",
     "BCI input during Phantaveil state causes extreme sensory overload"
   ],
   "duration": "2-4 hours hypnagogic state, transitions to normal sleep or wakefulness",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "Φ65 per dose",
-  "cultural_context": "Phantaveil occupies a strange cultural space — it's too controlled to be fully recreational, too experiential to be clinical, and its dual-use profile (the reduced defensiveness makes it a preferred tool for coercive information extraction when combined with the right questioning techniques) keeps it perpetually on the edge of being reclassified as illegal. Artists, philosophers, and people engaged in intensive therapy use it legitimately. Fixers and people with worse intentions use it for other purposes entirely, which Nightshade is careful never to acknowledge officially.",
+  "street_price": "\u03A665 per dose",
+  "cultural_context": "Phantaveil occupies a strange cultural space \u2014 it\u0027s too controlled to be fully recreational, too experiential to be clinical, and its dual-use profile (the reduced defensiveness makes it a preferred tool for coercive information extraction when combined with the right questioning techniques) keeps it perpetually on the edge of being reclassified as illegal. Artists, philosophers, and people engaged in intensive therapy use it legitimately. Fixers and people with worse intentions use it for other purposes entirely, which Nightshade is careful never to acknowledge officially.",
   "story_hooks": [
-    "A witness to something important was dosed with Phantaveil and questioned — they don't know what they revealed or to whom, and the crew needs to figure out what information was extracted before whoever took it acts on it.",
-    "A Tier 3 therapy collective has been using Phantaveil in group sessions, claiming breakthrough results for trauma processing — but several participants have developed identical false memories of an event that never happened, and the therapist running the sessions has disappeared."
-  ]
+    "A witness to something important was dosed with Phantaveil and questioned \u2014 they don\u0027t know what they revealed or to whom, and the crew needs to figure out what information was extracted before whoever took it acts on it.",
+    "A Tier 3 therapy collective has been using Phantaveil in group sessions, claiming breakthrough results for trauma processing \u2014 but several participants have developed identical false memories of an event that never happened, and the therapist running the sessions has disappeared."
+  ],
+  "tags": []
 }

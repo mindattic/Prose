@@ -1,4 +1,4 @@
-@page "/ammunition"
+﻿@page "/ammunition"
 @using StreetSamurai.Core.Models.Canon
 @inject AmmunitionRepository Repo
 @inject NavigationManager Nav
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="dict-items">
-            @foreach (var a in FilteredItems)
+            @foreach (var a in PagedItems)
             {
                 <div class="list-item text-light @(editing?.Name == a.Name ? "active" : "")" @onclick="() => Edit(a)">
                     <div class="fw-bold small">@a.Name</div>
@@ -25,6 +25,7 @@
                 </div>
             }
         </div>
+        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -81,8 +82,12 @@
             return result;
         }
     }
+    private int currentPage = 1;
+    private const int PageSize = 100;
+    private IEnumerable<AmmunitionData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
+    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
 
-    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); }
+    protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
     private void AddNew() { editing = new AmmunitionData(); isNew = true; confirmDelete = false; }
     private void Edit(AmmunitionData a) { editing = a; originalName = a.Name; isNew = false; confirmDelete = false; }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }

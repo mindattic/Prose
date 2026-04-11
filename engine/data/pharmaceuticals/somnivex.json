@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6d97d57b427eb1891a88635",
   "name": "Somnivex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "sleep_dream",
   "subcategory": "rem_optimizer",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Somnivex is a precision REM architecture optimizer that restructures the distribution of sleep stages across a normal sleep period, maximizing the ratio and quality of REM sleep without reducing slow-wave recovery phases. The compound works by modulating the cholinergic-aminergic balance during sleep cycling, extending REM windows and improving the neural consolidation efficiency that occurs within them. The result is dramatically improved memory consolidation, emotional processing, and creative cognitive function — users consistently outperform on memory tasks and report clearer, more organized thinking.",
+  "description": "Somnivex is a precision REM architecture optimizer that restructures the distribution of sleep stages across a normal sleep period, maximizing the ratio and quality of REM sleep without reducing slow-wave recovery phases. The compound works by modulating the cholinergic-aminergic balance during sleep cycling, extending REM windows and improving the neural consolidation efficiency that occurs within them. The result is dramatically improved memory consolidation, emotional processing, and creative cognitive function \u2014 users consistently outperform on memory tasks and report clearer, more organized thinking.",
   "method_of_use": "oral",
   "effects": [
     "Significantly increased REM proportion of sleep cycle",
@@ -28,10 +29,11 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "legal",
-  "street_price": "Φ35 per dose",
-  "cultural_context": "Somnivex is the quiet achiever's drug — less glamorous than Compressin, less exciting than Lucivane, but consistently effective. Students taking certification exams, programmers debugging complex systems, and anyone in a knowledge-work field who needs to consolidate large amounts of new information uses it routinely. It has a reputation for being the drug of people who are serious about their work rather than their experience, which gives it a certain unglamorous respectability across Tiers 2-4.",
+  "street_price": "\u03A635 per dose",
+  "cultural_context": "Somnivex is the quiet achiever\u0027s drug \u2014 less glamorous than Compressin, less exciting than Lucivane, but consistently effective. Students taking certification exams, programmers debugging complex systems, and anyone in a knowledge-work field who needs to consolidate large amounts of new information uses it routinely. It has a reputation for being the drug of people who are serious about their work rather than their experience, which gives it a certain unglamorous respectability across Tiers 2-4.",
   "story_hooks": [
-    "A student has been performing impossibly well after starting Somnivex — better than the drug's documented effects should allow. Investigation reveals their Somnivex supply has been laced with something that is uploading their consolidated memories to an external server during the enhanced REM phase.",
-    "A Novafold researcher wants to go public with data showing that long-term Somnivex use causes a gradual substitution of genuine memory with BCI-interpolated memory — users think they remember real events but are increasingly recalling synthetic reconstructions."
-  ]
+    "A student has been performing impossibly well after starting Somnivex \u2014 better than the drug\u0027s documented effects should allow. Investigation reveals their Somnivex supply has been laced with something that is uploading their consolidated memories to an external server during the enhanced REM phase.",
+    "A Novafold researcher wants to go public with data showing that long-term Somnivex use causes a gradual substitution of genuine memory with BCI-interpolated memory \u2014 users think they remember real events but are increasingly recalling synthetic reconstructions."
+  ],
+  "tags": []
 }

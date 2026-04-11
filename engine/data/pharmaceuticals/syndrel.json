@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6dd7a1e8de989e978c884b4",
   "name": "Syndrel",
   "type": "pharmaceutical",
   "aliases": [
@@ -10,7 +11,7 @@
   "category": "emotional_regulator",
   "subcategory": "bonding_enhancer",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Syndrel is a synthetic oxytocin-vasopressin complex with SNT-pathway amplification that dramatically enhances social bonding, trust formation, and interpersonal attachment between users who take it in proximity to one another. The bond formed under Syndrel feels — and to neurological testing, reads — as genuine. Lazarus markets three distinct product lines: Syndrel Professional (corporate team-building and negotiation), Syndrel Intimate (couples and family counseling), and Syndrel Connect (social anxiety therapeutic). All three are the same formula at the same dose.",
+  "description": "Syndrel is a synthetic oxytocin-vasopressin complex with SNT-pathway amplification that dramatically enhances social bonding, trust formation, and interpersonal attachment between users who take it in proximity to one another. The bond formed under Syndrel feels \u2014 and to neurological testing, reads \u2014 as genuine. Lazarus markets three distinct product lines: Syndrel Professional (corporate team-building and negotiation), Syndrel Intimate (couples and family counseling), and Syndrel Connect (social anxiety therapeutic). All three are the same formula at the same dose.",
   "method_of_use": "dermal_patch",
   "effects": [
     "intense feelings of trust and warmth toward people present during the drug window",
@@ -20,21 +21,22 @@
     "sense of shared purpose and group identity"
   ],
   "side_effects": [
-    "manufactured bonds can persist beyond the drug window — users may feel genuinely attached to people they barely know",
-    "trust formed under Syndrel does not reflect actual trustworthiness of the other party — exploitation risk is significant",
+    "manufactured bonds can persist beyond the drug window \u2014 users may feel genuinely attached to people they barely know",
+    "trust formed under Syndrel does not reflect actual trustworthiness of the other party \u2014 exploitation risk is significant",
     "jealousy and separation distress if bonded parties are separated post-dose",
-    "used without consent, it constitutes chemical coercion — this occurs frequently",
+    "used without consent, it constitutes chemical coercion \u2014 this occurs frequently",
     "some users experience bond dissolution grief when the drug clears, similar to a sudden breakup"
   ],
-  "duration": "8–12 hours; residual attachment effects can persist for weeks",
+  "duration": "8\u201312 hours; residual attachment effects can persist for weeks",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 60 per patch",
-  "cultural_context": "Syndrel is simultaneously one of the most used and most debated drugs in GLMZ. Corporate team-building retreats in Tier 3-4 routinely incorporate Syndrel under clinical euphemisms like 'cohesion facilitation.' Several Tier 4-5 mergers have been negotiated by both parties under disclosed Syndrel use, with the argument that the drug simply accelerates genuine goodwill. Ethicists and several courts have drawn a hard line at non-disclosed use — which is technically illegal and practically common. In relationships, it's used by couples seeking to rebuild connection, but the question of whether a Syndrel-rebuilt bond is a real bond haunts its users. On the Shelf, it's sold in counterfeit patch form with inconsistent dosing, and has been implicated in multiple cult-formation incidents.",
+  "street_price": "\u03A6 60 per patch",
+  "cultural_context": "Syndrel is simultaneously one of the most used and most debated drugs in GLMZ. Corporate team-building retreats in Tier 3-4 routinely incorporate Syndrel under clinical euphemisms like \u0027cohesion facilitation.\u0027 Several Tier 4-5 mergers have been negotiated by both parties under disclosed Syndrel use, with the argument that the drug simply accelerates genuine goodwill. Ethicists and several courts have drawn a hard line at non-disclosed use \u2014 which is technically illegal and practically common. In relationships, it\u0027s used by couples seeking to rebuild connection, but the question of whether a Syndrel-rebuilt bond is a real bond haunts its users. On the Shelf, it\u0027s sold in counterfeit patch form with inconsistent dosing, and has been implicated in multiple cult-formation incidents.",
   "story_hooks": [
-    "A Tier 3 woman realizes her entire social circle — her closest friendships, her current relationship, her workplace loyalties — were seeded at a company retreat three years ago where Syndrel was in the catered drinks. She doesn't know who she actually loves.",
-    "A Shelf community organizer has been using Syndrel to build genuine solidarity in a neighborhood fractured by gang violence. It's working. A corponation that wants the neighborhood destabilized wants to know how to stop him.",
-    "A Tier 4 divorce lawyer has built her entire practice on representing clients in 'Syndrel marriages' — relationships that felt real but were chemically accelerated. She's just discovered her own marriage began at a Syndrel event."
-  ]
+    "A Tier 3 woman realizes her entire social circle \u2014 her closest friendships, her current relationship, her workplace loyalties \u2014 were seeded at a company retreat three years ago where Syndrel was in the catered drinks. She doesn\u0027t know who she actually loves.",
+    "A Shelf community organizer has been using Syndrel to build genuine solidarity in a neighborhood fractured by gang violence. It\u0027s working. A corponation that wants the neighborhood destabilized wants to know how to stop him.",
+    "A Tier 4 divorce lawyer has built her entire practice on representing clients in \u0027Syndrel marriages\u0027 \u2014 relationships that felt real but were chemically accelerated. She\u0027s just discovered her own marriage began at a Syndrel event."
+  ],
+  "tags": []
 }

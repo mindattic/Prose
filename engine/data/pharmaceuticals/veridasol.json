@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ea7f558bd04a603b4fe9df",
   "name": "Veridasol",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "confidence_builder",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Veridasol is a dopaminergic and noradrenergic modulator that produces a sustained state of calm, grounded confidence without the jitteriness of stimulants or the recklessness of euphorics. It was originally developed for performance anxiety in high-stakes professional environments — surgeons, negotiators, public speakers — and has since become ubiquitous in corporate interview culture. The drug produces what users describe as the feeling of already having succeeded at something, applied to the present moment.",
+  "description": "Veridasol is a dopaminergic and noradrenergic modulator that produces a sustained state of calm, grounded confidence without the jitteriness of stimulants or the recklessness of euphorics. It was originally developed for performance anxiety in high-stakes professional environments \u2014 surgeons, negotiators, public speakers \u2014 and has since become ubiquitous in corporate interview culture. The drug produces what users describe as the feeling of already having succeeded at something, applied to the present moment.",
   "method_of_use": "sublingual",
   "effects": [
     "Strong, sustained confidence and self-assurance",
@@ -21,7 +22,7 @@
   "side_effects": [
     "Overconfidence and poor calibration of actual skill or readiness",
     "Irritability and deflation after dose ends",
-    "Dependency — users begin to believe they cannot perform without it",
+    "Dependency \u2014 users begin to believe they cannot perform without it",
     "Reduced empathy during peak effect (difficulty reading emotional cues in others)",
     "Occasional grandiosity at high doses",
     "Interaction with BCI feedback loops can amplify overconfidence to dangerous levels"
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "Φ60 per dose",
-  "cultural_context": "Veridasol is the open secret of GLMZ's hiring culture. Tier 2 applicants buy it on the gray market before corporate interviews. Tier 3 professionals take it before performance reviews and client pitches. There is an unspoken understanding that everyone is doing it, which has created an arms-race dynamic — natural confidence is now perceived as underperformance. Nightshade markets it with deliberately ambiguous legality, keeping it restricted rather than illegal so it stays profitable without full regulatory scrutiny.",
+  "street_price": "\u03A660 per dose",
+  "cultural_context": "Veridasol is the open secret of GLMZ\u0027s hiring culture. Tier 2 applicants buy it on the gray market before corporate interviews. Tier 3 professionals take it before performance reviews and client pitches. There is an unspoken understanding that everyone is doing it, which has created an arms-race dynamic \u2014 natural confidence is now perceived as underperformance. Nightshade markets it with deliberately ambiguous legality, keeping it restricted rather than illegal so it stays profitable without full regulatory scrutiny.",
   "story_hooks": [
-    "A Tier 2 job applicant takes a counterfeit batch of Veridasol before a high-stakes Lazarus interview — the counterfeit produces paranoia instead of confidence, and they have to navigate the interview while their reality unravels",
+    "A Tier 2 job applicant takes a counterfeit batch of Veridasol before a high-stakes Lazarus interview \u2014 the counterfeit produces paranoia instead of confidence, and they have to navigate the interview while their reality unravels",
     "A labor investigator discovers that a major corp is secretly adding a Veridasol analog to its employee wellness drinks, manufacturing artificial confidence and compliance in its workforce without consent",
-    "A Nightshade chemist has developed a variant that produces genuine competence enhancement rather than the illusion of it — and multiple factions want to suppress, steal, or weaponize it"
-  ]
+    "A Nightshade chemist has developed a variant that produces genuine competence enhancement rather than the illusion of it \u2014 and multiple factions want to suppress, steal, or weaponize it"
+  ],
+  "tags": []
 }

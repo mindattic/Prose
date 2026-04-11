@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e57947bf520558a4fbe2c2",
   "name": "Vantadyne",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "augment_interactive",
   "subcategory": "augment_sensitivity_modulator",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "A calibrated neuro-interface sensitizer and desensitizer available in two formulations — Vantadyne-H (high sensitivity) and Vantadyne-L (low sensitivity) — that modulate the haptic and proprioceptive feedback thresholds of augmented limbs and sensory implants. Vantadyne-H amplifies tactile sensation from chrome to near-organic levels, used clinically for augment integration therapy and recreationally for sensory enhancement. Vantadyne-L blunts augment feedback to near-zero, used by workers in brutal physical environments, soldiers who need to fight through damage signals, and people who cannot afford to feel what is happening to their chrome.",
+  "description": "A calibrated neuro-interface sensitizer and desensitizer available in two formulations \u2014 Vantadyne-H (high sensitivity) and Vantadyne-L (low sensitivity) \u2014 that modulate the haptic and proprioceptive feedback thresholds of augmented limbs and sensory implants. Vantadyne-H amplifies tactile sensation from chrome to near-organic levels, used clinically for augment integration therapy and recreationally for sensory enhancement. Vantadyne-L blunts augment feedback to near-zero, used by workers in brutal physical environments, soldiers who need to fight through damage signals, and people who cannot afford to feel what is happening to their chrome.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Vantadyne-H: Augmented limbs and sensory implants achieve near-organic tactile sensitivity",
@@ -17,12 +18,12 @@
     "Vantadyne-H: Improved fine motor calibration for precision work",
     "Vantadyne-L: Complete suppression of augment pain and damage signals",
     "Vantadyne-L: Ability to operate damaged or rejection-stressed augments without feedback interference",
-    "Vantadyne-L: Dissociation from augmented body parts — described as 'wearing tools, not a body'"
+    "Vantadyne-L: Dissociation from augmented body parts \u2014 described as \u0027wearing tools, not a body\u0027"
   ],
   "side_effects": [
     "Vantadyne-H: Sensory overload in high-stimulus environments",
     "Vantadyne-H: Emotional vulnerability and psychological rawness during peak",
-    "Vantadyne-L: Inability to feel damage — users routinely worsen augment injuries by continuing to use them",
+    "Vantadyne-L: Inability to feel damage \u2014 users routinely worsen augment injuries by continuing to use them",
     "Vantadyne-L: Depersonalization and body dysmorphic episodes with regular use",
     "Both formulations: Rebound sensitivity inversion post-dose",
     "Long-term Vantadyne-L use linked to psychological dissociation from physical self",
@@ -32,11 +33,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ140-200 per patch",
-  "cultural_context": "Vantadyne-H is a Tier 3 lifestyle drug — used by people who want their chrome to feel like a real part of them rather than a prosthetic. For people with significant augmentation who grieve the loss of organic sensation, it offers something close to wholeness. Sold legally by Lazarus with soft, aspirational marketing. Vantadyne-L has a grimmer demographic: laborers who cannot stop working when their augments are damaged, soldiers, and an underclass of heavily augmented Shelf residents who have stopped wanting to feel their bodies at all. Psychiatrists in GLMZ track Vantadyne-L dependency as a proxy metric for societal dissociation from embodiment.",
+  "street_price": "\u03A6140-200 per patch",
+  "cultural_context": "Vantadyne-H is a Tier 3 lifestyle drug \u2014 used by people who want their chrome to feel like a real part of them rather than a prosthetic. For people with significant augmentation who grieve the loss of organic sensation, it offers something close to wholeness. Sold legally by Lazarus with soft, aspirational marketing. Vantadyne-L has a grimmer demographic: laborers who cannot stop working when their augments are damaged, soldiers, and an underclass of heavily augmented Shelf residents who have stopped wanting to feel their bodies at all. Psychiatrists in GLMZ track Vantadyne-L dependency as a proxy metric for societal dissociation from embodiment.",
   "story_hooks": [
-    "A Lazarus sales representative has discovered that the company is intentionally formulating Vantadyne-H to degrade baseline organic sensitivity over time, creating a dependency loop — users need the drug just to feel what they once felt naturally. She wants to go public. Lazarus wants her to stop.",
-    "A Tier 1 heavy labor crew has been using Vantadyne-L to keep working through augment rejection events — three workers have now lost limbs they could have saved if they'd felt the warning signals. Someone is supplying the crew boss with free patches and that someone wants the crew working until they can't.",
-    "A patient in an augment integration clinic has been on therapeutic Vantadyne-H for eight months and has developed the ability to feel, with disturbing precision, the emotional states of anyone whose skin touches their chrome — something the drug should not be capable of causing."
-  ]
+    "A Lazarus sales representative has discovered that the company is intentionally formulating Vantadyne-H to degrade baseline organic sensitivity over time, creating a dependency loop \u2014 users need the drug just to feel what they once felt naturally. She wants to go public. Lazarus wants her to stop.",
+    "A Tier 1 heavy labor crew has been using Vantadyne-L to keep working through augment rejection events \u2014 three workers have now lost limbs they could have saved if they\u0027d felt the warning signals. Someone is supplying the crew boss with free patches and that someone wants the crew working until they can\u0027t.",
+    "A patient in an augment integration clinic has been on therapeutic Vantadyne-H for eight months and has developed the ability to feel, with disturbing precision, the emotional states of anyone whose skin touches their chrome \u2014 something the drug should not be capable of causing."
+  ],
+  "tags": []
 }
