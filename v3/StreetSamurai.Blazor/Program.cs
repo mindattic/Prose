@@ -74,6 +74,10 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
                 return;
             }
 
+            // Dev auto-login pseudo-user — skip DB validation.
+            // DevAutoLoginMiddleware only runs in Development; in production only real users exist.
+            if (userId == "dev-auto-login") return;
+
             var userRepo = context.HttpContext.RequestServices.GetRequiredService<UserRepository>();
             var user = userRepo.GetById(userId);
             if (user == null || user.SecurityStamp != stamp)
@@ -158,7 +162,8 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode()
+    .AddAdditionalAssemblies(typeof(StreetSamurai.Shared.Components.Pages.Home).Assembly);
 
 // Login endpoint — form POST from Login.razor, with antiforgery + open redirect + rate limiting
 app.MapPost("/api/auth/login", async (HttpContext ctx, AuthService auth, IAntiforgery antiforgery) =>

@@ -44,9 +44,15 @@ public class SettingsService : IDisposable
 
     private static string? AutoDetectCanonRoot()
     {
+        // Azure App Service: set STREETSAMURAI_DATA_ROOT in Application Settings
+        var envRoot = Environment.GetEnvironmentVariable("STREETSAMURAI_DATA_ROOT");
+        if (!string.IsNullOrWhiteSpace(envRoot))
+            return envRoot;
+
         // Walk up from the executing assembly to find the repo root
         var candidates = new[]
         {
+            AppContext.BaseDirectory,   // Published app root — engine/data is co-deployed here on Azure
             @"D:\Projects\MindAttic\StreetSamurai",
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Projects", "MindAttic", "StreetSamurai"),
         };
@@ -74,32 +80,37 @@ public class SettingsService : IDisposable
         return null;
     }
 
-    public string ApiKey { get => data.ApiKey; set { data.ApiKey = value; ScheduleSave(); } }
+    // Reads env var first (Azure App Service Application Settings), falls back to Settings.json.
+    // Set these in Azure portal: App Service → Configuration → Application Settings.
+    private static string Env(string key, string fallback) =>
+        Environment.GetEnvironmentVariable(key) is { Length: > 0 } v ? v : fallback;
+
+    public string ApiKey { get => Env("SS_CLAUDE_API_KEY", data.ApiKey); set { data.ApiKey = value; ScheduleSave(); } }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); } }
     public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
     public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
-    public string ElevenLabsApiKey { get => data.ElevenLabsApiKey; set { data.ElevenLabsApiKey = value; ScheduleSave(); } }
+    public string ElevenLabsApiKey { get => Env("SS_ELEVENLABS_API_KEY", data.ElevenLabsApiKey); set { data.ElevenLabsApiKey = value; ScheduleSave(); } }
     public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; ScheduleSave(); } }
     public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; ScheduleSave(); } }
     public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; ScheduleSave(); } }
     public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
-    public string OpenAiApiKey { get => data.OpenAiApiKey; set { data.OpenAiApiKey = value; ScheduleSave(); } }
+    public string OpenAiApiKey { get => Env("SS_OPENAI_API_KEY", data.OpenAiApiKey); set { data.OpenAiApiKey = value; ScheduleSave(); } }
     public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
     public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
     public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; ScheduleSave(); } }
     public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; ScheduleSave(); } }
-    public string GeminiApiKey { get => data.GeminiApiKey; set { data.GeminiApiKey = value; ScheduleSave(); } }
-    public string DeepSeekApiKey { get => data.DeepSeekApiKey; set { data.DeepSeekApiKey = value; ScheduleSave(); } }
-    public string MistralApiKey { get => data.MistralApiKey; set { data.MistralApiKey = value; ScheduleSave(); } }
-    public string GrokApiKey { get => data.GrokApiKey; set { data.GrokApiKey = value; ScheduleSave(); } }
-    public string GroqApiKey { get => data.GroqApiKey; set { data.GroqApiKey = value; ScheduleSave(); } }
-    public string TogetherApiKey { get => data.TogetherApiKey; set { data.TogetherApiKey = value; ScheduleSave(); } }
-    public string OpenRouterApiKey { get => data.OpenRouterApiKey; set { data.OpenRouterApiKey = value; ScheduleSave(); } }
-    public string FireworksApiKey { get => data.FireworksApiKey; set { data.FireworksApiKey = value; ScheduleSave(); } }
-    public string CohereApiKey { get => data.CohereApiKey; set { data.CohereApiKey = value; ScheduleSave(); } }
+    public string GeminiApiKey { get => Env("SS_GEMINI_API_KEY", data.GeminiApiKey); set { data.GeminiApiKey = value; ScheduleSave(); } }
+    public string DeepSeekApiKey { get => Env("SS_DEEPSEEK_API_KEY", data.DeepSeekApiKey); set { data.DeepSeekApiKey = value; ScheduleSave(); } }
+    public string MistralApiKey { get => Env("SS_MISTRAL_API_KEY", data.MistralApiKey); set { data.MistralApiKey = value; ScheduleSave(); } }
+    public string GrokApiKey { get => Env("SS_GROK_API_KEY", data.GrokApiKey); set { data.GrokApiKey = value; ScheduleSave(); } }
+    public string GroqApiKey { get => Env("SS_GROQ_API_KEY", data.GroqApiKey); set { data.GroqApiKey = value; ScheduleSave(); } }
+    public string TogetherApiKey { get => Env("SS_TOGETHER_API_KEY", data.TogetherApiKey); set { data.TogetherApiKey = value; ScheduleSave(); } }
+    public string OpenRouterApiKey { get => Env("SS_OPENROUTER_API_KEY", data.OpenRouterApiKey); set { data.OpenRouterApiKey = value; ScheduleSave(); } }
+    public string FireworksApiKey { get => Env("SS_FIREWORKS_API_KEY", data.FireworksApiKey); set { data.FireworksApiKey = value; ScheduleSave(); } }
+    public string CohereApiKey { get => Env("SS_COHERE_API_KEY", data.CohereApiKey); set { data.CohereApiKey = value; ScheduleSave(); } }
     public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
     public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
     public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
@@ -110,9 +121,9 @@ public class SettingsService : IDisposable
     public string FireworksModel { get => data.FireworksModel; set { data.FireworksModel = value; ScheduleSave(); } }
     public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
     public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
-    public string MapAppId { get => data.MapAppId; set { data.MapAppId = value; ScheduleSave(); } }
-    public string MapApiKey { get => data.MapApiKey; set { data.MapApiKey = value; ScheduleSave(); } }
-    public string GoogleMapsApiKey { get => data.GoogleMapsApiKey; set { data.GoogleMapsApiKey = value; ScheduleSave(); } }
+    public string MapAppId { get => Env("SS_MAP_APP_ID", data.MapAppId); set { data.MapAppId = value; ScheduleSave(); } }
+    public string MapApiKey { get => Env("SS_MAP_API_KEY", data.MapApiKey); set { data.MapApiKey = value; ScheduleSave(); } }
+    public string GoogleMapsApiKey { get => Env("SS_GOOGLE_MAPS_API_KEY", data.GoogleMapsApiKey); set { data.GoogleMapsApiKey = value; ScheduleSave(); } }
     public string MapMode { get => data.MapMode; set { data.MapMode = value; ScheduleSave(); } }
     public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
@@ -208,32 +219,32 @@ public class SettingsService : IDisposable
 
     private class SettingsData
     {
-        public string ApiKey { get; set; } = "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";
+        public string ApiKey { get; set; } = "";
         public string Model { get; set; } = Constants.Defaults.DefaultModel;
         public string Theme { get; set; } = "dark";
-        public string CanonRootPath { get; set; } = @"D:\Projects\MindAttic\StreetSamurai";
+        public string CanonRootPath { get; set; } = "";
         public int MaxTokens { get; set; } = 2048;
-        public string ElevenLabsApiKey { get; set; } = "sk_4629fe8a5990d7933ab5da85aea893004c3a4eb17ef9db66";
+        public string ElevenLabsApiKey { get; set; } = "";
         public string ElevenLabsVoiceId { get; set; } = "jfIS2w2yJi0grJZPyEsk";
         public string NarratorVoiceName { get; set; } = "Oliver Silk - Deep Gravel Narrative";
         public string TtsModel { get; set; } = "eleven_v3";
         public double TtsStability { get; set; } = 0.5;
         public double TtsSimilarityBoost { get; set; } = 0.75;
         public double TtsStyle { get; set; } = 0.0;
-        public string OpenAiApiKey { get; set; } = "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";
+        public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
         public string ActiveLlmProvider { get; set; } = "claude";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
-        public string GeminiApiKey { get; set; } = "AIzaSyAp2rIRvnI2pMousS5eP7SjcR6OXICNBfk";
-        public string DeepSeekApiKey { get; set; } = "sk-1a8145822c034c4f8e597dfe9f04a087";
-        public string MistralApiKey { get; set; } = "lQSTOCmmZNojM8S5YvuyRu2qeFuwwBH7";
-        public string GrokApiKey { get; set; } = "xai-f2MSqay0QBo2hufoEKSInvqAD95AForb86gWgmbbROx0I8PIk3q3wqOluWc1K7Lr4n1MHXlwku4VV6PB";
-        public string GroqApiKey { get; set; } = "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";
-        public string TogetherApiKey { get; set; } = "59cbfe080650dae4731340f91b9c7d10e596860e4fb1fdf0f0acdd62327e8ba1";
-        public string OpenRouterApiKey { get; set; } = "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";
-        public string FireworksApiKey { get; set; } = "fw_KU2LBYf59KS3ZvAqUYLhZ9";
-        public string CohereApiKey { get; set; } = "gvA72uoBrRCDJjNYDdW9nsoGWSJ3426jVyRKiSOF";
+        public string GeminiApiKey { get; set; } = "";
+        public string DeepSeekApiKey { get; set; } = "";
+        public string MistralApiKey { get; set; } = "";
+        public string GrokApiKey { get; set; } = "";
+        public string GroqApiKey { get; set; } = "";
+        public string TogetherApiKey { get; set; } = "";
+        public string OpenRouterApiKey { get; set; } = "";
+        public string FireworksApiKey { get; set; } = "";
+        public string CohereApiKey { get; set; } = "";
         public string GeminiModel { get; set; } = "gemini-2.5-flash";
         public string DeepSeekModel { get; set; } = "deepseek-chat";
         public string MistralModel { get; set; } = "mistral-large-latest";
@@ -244,18 +255,18 @@ public class SettingsService : IDisposable
         public string FireworksModel { get; set; } = "accounts/fireworks/models/llama-v3p3-70b-instruct";
         public string CohereModel { get; set; } = "command-a-03-2025";
         public string MapService { get; set; } = "google";
-        public string MapAppId { get; set; } = "rI9gpj49oW5SGZ8EsAe9";
-        public string MapApiKey { get; set; } = "CIPFwnEI3bF6whfMT-1yL0kFa6wq1G9v8cBudCXdLE0";
-        public string GoogleMapsApiKey { get; set; } = "AIzaSyApm6X35BJ1w5PuAM_s_P_HaJPeOhx06d0";
+        public string MapAppId { get; set; } = "";
+        public string MapApiKey { get; set; } = "";
+        public string GoogleMapsApiKey { get; set; } = "";
         public string MapMode { get; set; } = "dark";
         public string TimestampFormat { get; set; } = "yyyy-MM-dd hh:mm:sstt";
         public string TimezoneId { get; set; } = "Central Standard Time";
         public string FontFamily { get; set; } = "Outfit";
-        public string FtpHost { get; set; } = "132.148.112.53";
+        public string FtpHost { get; set; } = "";
         public int FtpPort { get; set; } = 21;
-        public string FtpUsername { get; set; } = "ha9h9a";
-        public string FtpPassword { get; set; } = "&#HVzS!=&v32";
-        public string FtpRemotePath { get; set; } = "/mindattic.com/GLMZ";
+        public string FtpUsername { get; set; } = "";
+        public string FtpPassword { get; set; } = "";
+        public string FtpRemotePath { get; set; } = "";
         public bool FtpUseSsl { get; set; } = true;
         public bool FtpPassive { get; set; } = true;
     }

@@ -1,5 +1,6 @@
 @page "/write"
 @page "/write/{ProjectId}"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
 @inject StoryStarterService Starter

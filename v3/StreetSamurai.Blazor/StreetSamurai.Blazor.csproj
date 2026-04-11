@@ -16,4 +16,12 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <!-- Include world data in published output so Azure deployment is self-contained.
+       STREETSAMURAI_DATA_ROOT env var overrides this path (set in Azure App Configuration). -->
+  <ItemGroup>
+    <Content Include="..\..\engine\data\**\*" CopyToPublishDirectory="PreserveNewest">
+      <Link>engine\data\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>
