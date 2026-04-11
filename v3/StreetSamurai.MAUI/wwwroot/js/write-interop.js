@@ -469,3 +469,25 @@ window.writeInterop = {
         }
     }
 };
+
+window.__dictScrollActive = function () {
+    const active = document.querySelector('.dict-items .list-item.active');
+    if (active) active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+};
+
+// Auto-scroll active dict list item whenever its class changes (Blazor DOM diffing)
+(function () {
+    let observer;
+    function setup() {
+        if (observer) observer.disconnect();
+        const el = document.querySelector('.dict-items');
+        if (!el) return;
+        observer = new MutationObserver(function () {
+            const a = el.querySelector('.list-item.active');
+            if (a) a.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        });
+        observer.observe(el, { subtree: true, attributes: true, attributeFilter: ['class'] });
+    }
+    document.addEventListener('DOMContentLoaded', setup);
+    document.addEventListener('enhancedload', setup);
+})();

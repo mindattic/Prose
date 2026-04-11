@@ -18,7 +18,7 @@ window.__gmapsReady = function() {
     window.__gmapsCbs = [];
 };
 
-// Unified loader — used for both app startup and page navigation.
+// Unified loader — startup overlay + navigation overlay for slow page transitions.
 // The overlay element must exist in the HTML with id="app-loader" and child id="loader-ms".
 (function() {
     var timer = null;
@@ -58,21 +58,63 @@ window.__gmapsReady = function() {
         timer = null;
         timeout = null;
         var el = getEl();
+        var ms = getMs();
         if (el) el.style.display = 'none';
+        if (ms) ms.textContent = '0000';
     };
 
-    // Auto-start timer on initial load
+    // Auto-start timer on app startup (MAUI: loader is display:flex initially)
     start = performance.now();
     timer = setInterval(tick, 1);
 
-    // Auto-hide: DOMContentLoaded fires after full HTML is parsed (reliable for static SSR).
-    // By this point the server-rendered .app-shell div is guaranteed to be in the DOM.
+    // Hide once app shell is in the DOM
     document.addEventListener('DOMContentLoaded', function() {
         window.__loaderHide();
     });
 
-    // Safety net: force-hide after 10s in case something goes wrong
+    // Safety net: force-hide after 10s
     safetyTimer = setTimeout(function() {
         window.__loaderHide();
     }, 10000);
+
+    // ── Navigation loader ─────────────────────────────────────────────────
+    // Shows loader only if navigation takes longer than 500ms.
+    // Hides when DOM mutations in the main content area stop for 150ms (page rendered).
+    (function() {
+        var navigating = false;
+        var hideDebounce = null;
+
+        function navStart() {
+            navigating = true;
+            window.__loaderShow(500);
+        }
+
+        function navMaybeEnd() {
+            if (!navigating) return;
+            clearTimeout(hideDebounce);
+            hideDebounce = setTimeout(function() {
+                navigating = false;
+                window.__loaderHide();
+            }, 150);
+        }
+
+        // Blazor Hybrid (MAUI) uses history.pushState for in-app navigation
+        var origPush = history.pushState.bind(history);
+        history.pushState = function() {
+            origPush.apply(history, arguments);
+            navStart();
+        };
+
+        window.addEventListener('popstate', navStart);
+
+        // Watch the main content area — when DOM mutations settle, the new page is rendered
+        var mo = new MutationObserver(navMaybeEnd);
+
+        function setup() {
+            var main = document.querySelector('.topnav-main') || document.querySelector('main');
+            if (main) mo.observe(main, { childList: true, subtree: true });
+        }
+
+        document.addEventListener('DOMContentLoaded', setup);
+    })();
 })();

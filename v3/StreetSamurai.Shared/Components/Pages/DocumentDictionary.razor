@@ -4,18 +4,12 @@
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
 
-<h4 class="text-danger mb-3">Documents</h4>
+<DictBreadcrumb Category="Culture" CategoryUrl="/board/culture" PageName="Documents" />
 <div class="dict-layout">
     <div class="dict-list">
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
-            <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary mb-2"
-                   placeholder="Filter..." @bind="filter" @bind:event="oninput" />
-            <div class="mb-2">
-                <TagFilter AllTags="allTags" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
-            </div>
-            <div class="d-flex gap-2">
-            <button class="btn btn-sm btn-outline-danger" style="width:calc(50% - 5px)" @onclick="AddNew"><i class="bi bi-plus-lg"></i> New</button>
-            </div>
+            <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+
         </div>
         <div class="dict-items">
             @foreach (var d in PagedItems)
