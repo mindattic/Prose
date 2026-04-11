@@ -14,6 +14,7 @@ using StreetSamurai.Core.Extensions;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
+using StreetSamurai.Shared.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -112,6 +113,9 @@ builder.Services.AddRateLimiter(options =>
 
 // IWriteAccessProvider — Blazor implementation checks auth claims + ReadOnlyState
 builder.Services.AddScoped<IWriteAccessProvider, BlazorWriteAccessProvider>();
+
+// Toast wrapper — shows toast + logs [SS CODE] to browser console
+builder.Services.AddScoped<ToastNotifier>();
 
 var app = builder.Build();
 

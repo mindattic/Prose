@@ -107,7 +107,7 @@
         playing = false;
         errorMessage = null;
         audioUrl = null;
-        audioData = audioData;
+        this.audioData = audioData;
         savedPath = null;
         currentTime = 0;
         duration = 0;
@@ -135,7 +135,7 @@
 
     public void SetLoading(bool loading)
     {
-        loading = loading;
+        this.loading = loading;
         if (loading) { playing = false; currentTime = 0; duration = 0; }
         StateHasChanged();
     }

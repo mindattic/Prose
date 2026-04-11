@@ -4,7 +4,7 @@
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @inject SearchTriggerService SearchTrigger
-@inject IToastService Toast
+@inject ToastNotifier Toast
 @implements IDisposable
 
 <style>
@@ -37,17 +37,17 @@
         "SS_MUTABLE_DATA_ROOT",
     ];
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override void OnAfterRender(bool firstRender)
     {
         if (firstRender)
         {
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
-            await CheckMissingEnvVarsAsync();
+            CheckMissingEnvVars();
         }
     }
 
-    private async Task CheckMissingEnvVarsAsync()
+    private void CheckMissingEnvVars()
     {
         // Only warn in Production — dev runs fine without Azure env vars
         var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "";
@@ -61,13 +61,7 @@
         if (missing.Count == 0) return;
 
         var list = string.Join(", ", missing);
-        Toast.ShowWarning($"Missing Azure App Settings: {list}");
-
-        // Permanent record in browser console — toasts disappear, console doesn't
-        await JS.InvokeVoidAsync("console.group", "[StreetSamurai] Missing Azure App Settings");
-        foreach (var key in missing)
-            await JS.InvokeVoidAsync("console.warn", key);
-        await JS.InvokeVoidAsync("console.groupEnd");
+        Toast.Warning(AppError.ConfMissingEnvVar, $"Missing Azure App Settings: {list}");
     }
 
     private async Task OnGlobalKeyDown(KeyboardEventArgs e)

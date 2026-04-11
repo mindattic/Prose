@@ -363,7 +363,7 @@ else if (!generating)
         var chosen = suggestedBeats[index];
         suggestedBeats.Clear();
         // TODO: inject chosen.Description as the next beat goal into the resume flow
-        ResumeCheckpoint(suggestionSource);
+        _ = ResumeCheckpoint(suggestionSource);
     }
 
     private void ClearSuggestions() => suggestedBeats.Clear();

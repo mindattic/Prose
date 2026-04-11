@@ -185,8 +185,9 @@ public static class ServiceCollectionExtensions
         // TTS enhancement — adds ElevenLabs audio tags before synthesis
         services.AddSingleton<TtsEnhancementService>();
 
-        // Draft narration — free Windows SAPI voices
-        services.AddSingleton<WindowsTtsService>();
+        // Draft narration — free Windows SAPI voices (Windows only)
+        if (OperatingSystem.IsWindows())
+            services.AddSingleton<WindowsTtsService>();
 
         // Entity extraction — LLM-powered story-to-graph pipeline
         services.AddSingleton<EntityExtractionService>();
