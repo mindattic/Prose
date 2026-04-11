@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b57d698936fe63c4374fe8",
   "name": "Lethavex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "grief_suppressor",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Lethavex is a targeted amygdala-limbic suppressor designed to chemically interrupt acute grief responses without sedating the user or impairing cognitive function. It was developed and marketed as a 'bereavement productivity aid' — users can attend funerals in the morning and return to work by afternoon. The drug does not eliminate grief; it walls it off, leaving a muffled awareness that something is wrong without the debilitating weight of it.",
+  "description": "Lethavex is a targeted amygdala-limbic suppressor designed to chemically interrupt acute grief responses without sedating the user or impairing cognitive function. It was developed and marketed as a \u0027bereavement productivity aid\u0027 \u2014 users can attend funerals in the morning and return to work by afternoon. The drug does not eliminate grief; it walls it off, leaving a muffled awareness that something is wrong without the debilitating weight of it.",
   "method_of_use": "oral",
   "effects": [
     "Suppression of acute grief and mourning responses",
@@ -19,22 +20,23 @@
     "Mild emotional blunting across adjacent feelings"
   ],
   "side_effects": [
-    "Grief rebound effect upon cessation — sometimes more intense than original loss",
+    "Grief rebound effect upon cessation \u2014 sometimes more intense than original loss",
     "Emotional blunting can persist 12-24 hours beyond dose window",
-    "Long-term use linked to complicated grief disorder — grief never fully processed",
+    "Long-term use linked to complicated grief disorder \u2014 grief never fully processed",
     "Dissociative episodes if used during active trauma rather than aftermath",
     "Dependency risk in chronic users who fear confronting stored grief",
-    "Reported 'grief debt' phenomenon — suppressed feelings accumulate and discharge unpredictably"
+    "Reported \u0027grief debt\u0027 phenomenon \u2014 suppressed feelings accumulate and discharge unpredictably"
   ],
   "duration": "8-10 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ45 per tablet",
-  "cultural_context": "Lethavex is one of Lazarus's top-ten sellers by volume. In a society where bereavement leave is often measured in hours rather than weeks, it has become functionally normalized — workers are quietly expected to medicate their grief and return to productivity. Tier 2 workers use it to avoid losing shifts. Tier 3 professionals use it to avoid appearing weak in performance reviews. The drug has a dark cultural nickname on the Shelf: 'the coffin lid,' because people say it buries you with your dead.",
+  "street_price": "\u03A645 per tablet",
+  "cultural_context": "Lethavex is one of Lazarus\u0027s top-ten sellers by volume. In a society where bereavement leave is often measured in hours rather than weeks, it has become functionally normalized \u2014 workers are quietly expected to medicate their grief and return to productivity. Tier 2 workers use it to avoid losing shifts. Tier 3 professionals use it to avoid appearing weak in performance reviews. The drug has a dark cultural nickname on the Shelf: \u0027the coffin lid,\u0027 because people say it buries you with your dead.",
   "story_hooks": [
-    "A Tier 2 dockworker has been taking Lethavex daily for three years since losing their child — they've never actually grieved, and a street doc warns them that the accumulated 'grief debt' could trigger a catastrophic emotional break at any moment",
-    "A Lazarus whistleblower reveals internal studies showing the company knew about grief debt syndrome a decade before launch and buried the data — the story breaks just as a mass bereavement event hits the city",
-    "Someone running a grief support group on the Shelf notices that every member is on Lethavex — prescribed by the same corporate wellness clinic — and starts to wonder if the clinic is suppressing community solidarity as much as individual pain"
-  ]
+    "A Tier 2 dockworker has been taking Lethavex daily for three years since losing their child \u2014 they\u0027ve never actually grieved, and a street doc warns them that the accumulated \u0027grief debt\u0027 could trigger a catastrophic emotional break at any moment",
+    "A Lazarus whistleblower reveals internal studies showing the company knew about grief debt syndrome a decade before launch and buried the data \u2014 the story breaks just as a mass bereavement event hits the city",
+    "Someone running a grief support group on the Shelf notices that every member is on Lethavex \u2014 prescribed by the same corporate wellness clinic \u2014 and starts to wonder if the clinic is suppressing community solidarity as much as individual pain"
+  ],
+  "tags": []
 }

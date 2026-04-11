@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6927699a66e1f9c3f687029",
   "name": "Anamnex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "memory_consolidation",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Anamnex is a premium-tier memory consolidation pharmaceutical that goes beyond simple short-to-long-term transfer — it actively indexes and organizes consolidated memories for optimal BCI-integrated recall, essentially restructuring recent experience into a searchable, cross-referenced format that interfaces directly with neural implants. Positioned as the executive-class memory tool, it is marketed to Tier 4-5 professionals who cannot afford memory gaps in high-stakes environments.",
+  "description": "Anamnex is a premium-tier memory consolidation pharmaceutical that goes beyond simple short-to-long-term transfer \u2014 it actively indexes and organizes consolidated memories for optimal BCI-integrated recall, essentially restructuring recent experience into a searchable, cross-referenced format that interfaces directly with neural implants. Positioned as the executive-class memory tool, it is marketed to Tier 4-5 professionals who cannot afford memory gaps in high-stakes environments.",
   "method_of_use": "sublingual",
   "effects": [
     "Deep consolidation of preceding 8-12 hours of experience",
@@ -19,21 +20,22 @@
     "Long-term retention rates of 94% at 90 days in clinical trials"
   ],
   "side_effects": [
-    "Requires BCI integration for full effect — limited use without implants",
+    "Requires BCI integration for full effect \u2014 limited use without implants",
     "Memory of the consolidation period itself becomes unusually vivid and intrusive",
-    "Suppresses natural dream-state memory processing — REM disruption",
-    "Rare: memory cross-contamination — adjacent memory traces incorrectly merged",
-    "Corporate formulation includes subtle telemetry — memories consolidated under Anamnex are technically logged to Lazarus servers (disclosed in fine print)"
+    "Suppresses natural dream-state memory processing \u2014 REM disruption",
+    "Rare: memory cross-contamination \u2014 adjacent memory traces incorrectly merged",
+    "Corporate formulation includes subtle telemetry \u2014 memories consolidated under Anamnex are technically logged to Lazarus servers (disclosed in fine print)"
   ],
   "duration": "Consolidation process: 45-90 minutes. Memory retention: indefinite",
   "addiction_risk": "low",
   "tier_availability": "Tier 4-5",
   "legality": "prescription",
-  "street_price": "Φ 200-350 per dose",
-  "cultural_context": "Anamnex is a status drug — the price keeps it Spire and upper-Tier 4. Executives take it after critical meetings, negotiations, and briefings. The telemetry clause buried in Lazarus's terms of service is an open secret in GLMZ's privacy activist community — there is a running argument about whether Lazarus has built the world's largest private archive of elite human memory. The Shelf has no access to it, which is precisely the point.",
+  "street_price": "\u03A6 200-350 per dose",
+  "cultural_context": "Anamnex is a status drug \u2014 the price keeps it Spire and upper-Tier 4. Executives take it after critical meetings, negotiations, and briefings. The telemetry clause buried in Lazarus\u0027s terms of service is an open secret in GLMZ\u0027s privacy activist community \u2014 there is a running argument about whether Lazarus has built the world\u0027s largest private archive of elite human memory. The Shelf has no access to it, which is precisely the point.",
   "story_hooks": [
-    "A whistleblower took Anamnex the night they witnessed something they were never supposed to see — meaning Lazarus's servers may hold an indexed copy of their memory of the event",
-    "A corporate attorney discovers that a rival's entire deposition strategy was consolidated and BCI-indexed via Anamnex — their opponent will have perfect recall of every word spoken and can query it in real-time during proceedings",
-    "Someone hacks the Lazarus memory telemetry archive and discovers it contains indexed recollections from the highest levels of GLMZ's power structure — and is trying to find a buyer before Lazarus finds them"
-  ]
+    "A whistleblower took Anamnex the night they witnessed something they were never supposed to see \u2014 meaning Lazarus\u0027s servers may hold an indexed copy of their memory of the event",
+    "A corporate attorney discovers that a rival\u0027s entire deposition strategy was consolidated and BCI-indexed via Anamnex \u2014 their opponent will have perfect recall of every word spoken and can query it in real-time during proceedings",
+    "Someone hacks the Lazarus memory telemetry archive and discovers it contains indexed recollections from the highest levels of GLMZ\u0027s power structure \u2014 and is trying to find a buyer before Lazarus finds them"
+  ],
+  "tags": []
 }

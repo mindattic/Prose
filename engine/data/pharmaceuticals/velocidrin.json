@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e87917b84d03cf7e5b7716",
   "name": "Velocidrin",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "processing_speed_enhancement",
   "manufacturer": "Helix Biosystems",
-  "description": "Velocidrin is a neural transmission accelerant engineered specifically for BCI-augmented users — it optimizes the electrochemical signaling interface between organic neurons and synthetic neural tissue, reducing signal latency by up to 40% and dramatically increasing the speed of conscious thought and decision-making. The effect is subjectively described as time slowing down, though technically the user's cognition is simply running faster. At high doses it approaches the processing speed of military-grade combat stimulants.",
+  "description": "Velocidrin is a neural transmission accelerant engineered specifically for BCI-augmented users \u2014 it optimizes the electrochemical signaling interface between organic neurons and synthetic neural tissue, reducing signal latency by up to 40% and dramatically increasing the speed of conscious thought and decision-making. The effect is subjectively described as time slowing down, though technically the user\u0027s cognition is simply running faster. At high doses it approaches the processing speed of military-grade combat stimulants.",
   "method_of_use": "neural_direct",
   "effects": [
     "Reduced neural latency (faster thought, faster reaction)",
@@ -19,8 +20,8 @@
     "Improved multitasking between BCI processes and conscious thought"
   ],
   "side_effects": [
-    "Severe temporal disorientation post-dose ('time snap')",
-    "Neural overheating — headache, cognitive fatigue, risk of BCI hardware damage at high doses",
+    "Severe temporal disorientation post-dose (\u0027time snap\u0027)",
+    "Neural overheating \u2014 headache, cognitive fatigue, risk of BCI hardware damage at high doses",
     "Impatience and irritability with baseline-speed interactions",
     "Sleep architecture disruption",
     "Long-term: synaptic insulation degradation, increasing latency permanently if overused"
@@ -29,11 +30,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 110-180 per neural cartridge",
-  "cultural_context": "Velocidrin is the drug of GLMZ's competitive performance culture — traders, surgeons, combat sports athletes, and esports professionals use it to gain processing edges measured in milliseconds. The addiction risk is high because users experience baseline cognition as unbearably slow after extended use. BCI technicians quietly warn that Velocidrin is burning through users' synthetic neural tissue faster than it can be replaced, but the corponations that benefit from the productivity gains have suppressed the research.",
+  "street_price": "\u03A6 110-180 per neural cartridge",
+  "cultural_context": "Velocidrin is the drug of GLMZ\u0027s competitive performance culture \u2014 traders, surgeons, combat sports athletes, and esports professionals use it to gain processing edges measured in milliseconds. The addiction risk is high because users experience baseline cognition as unbearably slow after extended use. BCI technicians quietly warn that Velocidrin is burning through users\u0027 synthetic neural tissue faster than it can be replaced, but the corponations that benefit from the productivity gains have suppressed the research.",
   "story_hooks": [
-    "A high-frequency trading firm's top analyst has been on Velocidrin for two years — they're making the firm billions, but their BCI is degrading, and the firm is quietly deciding whether to replace them before they collapse",
-    "A street version of Velocidrin appears on the Shelf — it works, but the neural cartridges are contaminated, and users are experiencing permanent latency damage after just a few doses",
-    "A character in a timed, high-pressure situation is offered Velocidrin by someone whose motives are unclear — the drug would absolutely help, but the source is wrong"
-  ]
+    "A high-frequency trading firm\u0027s top analyst has been on Velocidrin for two years \u2014 they\u0027re making the firm billions, but their BCI is degrading, and the firm is quietly deciding whether to replace them before they collapse",
+    "A street version of Velocidrin appears on the Shelf \u2014 it works, but the neural cartridges are contaminated, and users are experiencing permanent latency damage after just a few doses",
+    "A character in a timed, high-pressure situation is offered Velocidrin by someone whose motives are unclear \u2014 the drug would absolutely help, but the source is wrong"
+  ],
+  "tags": []
 }

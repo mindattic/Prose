@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ce782aad6b97b33a69a372",
   "name": "Prolifex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,10 +10,10 @@
   "category": "medical",
   "subcategory": "tissue regeneration booster",
   "manufacturer": "Helix Biosystems",
-  "description": "A growth factor cocktail that dramatically accelerates tissue regeneration by saturating wound sites with engineered fibroblast activators and angiogenic peptides. Prolifex reduces healing time for soft tissue injuries by 40–60% and is standard post-operative care for augmentation surgery, where clean tissue healing around implant sites is critical. A luxury formulation called Prolifex-A includes stem cell mobilization factors for bone and cartilage regeneration.",
+  "description": "A growth factor cocktail that dramatically accelerates tissue regeneration by saturating wound sites with engineered fibroblast activators and angiogenic peptides. Prolifex reduces healing time for soft tissue injuries by 40\u201360% and is standard post-operative care for augmentation surgery, where clean tissue healing around implant sites is critical. A luxury formulation called Prolifex-A includes stem cell mobilization factors for bone and cartilage regeneration.",
   "method_of_use": "injection",
   "effects": [
-    "accelerates soft tissue healing by 40–60%",
+    "accelerates soft tissue healing by 40\u201360%",
     "promotes clean vascularization of wound margins",
     "reduces post-surgical recovery time",
     "Prolifex-A variant adds bone and cartilage regeneration",
@@ -25,15 +26,16 @@
     "fatigue as metabolic resources are redirected to healing",
     "Prolifex-A may cause joint aching as bone remodeling occurs"
   ],
-  "duration": "Active regenerative effect: 5–14 days depending on injury severity",
+  "duration": "Active regenerative effect: 5\u201314 days depending on injury severity",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ200–Φ500 per course; Prolifex-A Φ800–Φ2,000",
-  "cultural_context": "Prolifex is what separates a dangerous city from a lethal one — access to accelerated healing is one of the most meaningful divides between tiers. Tier 1 inhabitants heal at biological baseline, meaning a bad augment surgery or a knife wound takes weeks. Tier 3 workers buy a Prolifex course and are back on the job in days. Black market versions exist but the growth factor chains degrade quickly without cold-chain storage, and a degraded Prolifex dose can cause more harm than no treatment.",
+  "street_price": "\u03A6200\u2013\u03A6500 per course; Prolifex-A \u03A6800\u2013\u03A62,000",
+  "cultural_context": "Prolifex is what separates a dangerous city from a lethal one \u2014 access to accelerated healing is one of the most meaningful divides between tiers. Tier 1 inhabitants heal at biological baseline, meaning a bad augment surgery or a knife wound takes weeks. Tier 3 workers buy a Prolifex course and are back on the job in days. Black market versions exist but the growth factor chains degrade quickly without cold-chain storage, and a degraded Prolifex dose can cause more harm than no treatment.",
   "story_hooks": [
-    "A fixer who runs augment surgery out of a Shelf basement has gotten hold of a cold-chain shipment of genuine Prolifex — and every interested party in three districts wants to know where she got it and whether there's more.",
-    "A character is healing suspiciously fast from wounds that should have been fatal — someone is dosing them with Prolifex without their knowledge, keeping them alive for reasons that aren't clear.",
+    "A fixer who runs augment surgery out of a Shelf basement has gotten hold of a cold-chain shipment of genuine Prolifex \u2014 and every interested party in three districts wants to know where she got it and whether there\u0027s more.",
+    "A character is healing suspiciously fast from wounds that should have been fatal \u2014 someone is dosing them with Prolifex without their knowledge, keeping them alive for reasons that aren\u0027t clear.",
     "The Prolifex-A supply has been cornered by a Spire medical cartel that is using access to bone regeneration as leverage over Tier 3 patients with degenerative conditions."
-  ]
+  ],
+  "tags": []
 }

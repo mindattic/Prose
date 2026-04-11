@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ac7f649992465c77440428",
   "name": "Ferrospike",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "augment_interactive",
   "subcategory": "chrome_performance_enhancer",
   "manufacturer": "Nightshade Pharmatech (gray market formulation)",
-  "description": "A vasodilating neuro-hydraulic compound that floods augment servo-lines and BCI motor pathways with a synthetic catecholamine analogue, temporarily pushing mechanical augments 40-70% beyond factory performance specifications. Myoelectric limbs strike harder, reflex rigs respond faster, and optical augments resolve detail at ranges they were never designed to reach. The body pays the price — joints, mounting points, and neural relay clusters sustain cumulative microdamage with each use.",
+  "description": "A vasodilating neuro-hydraulic compound that floods augment servo-lines and BCI motor pathways with a synthetic catecholamine analogue, temporarily pushing mechanical augments 40-70% beyond factory performance specifications. Myoelectric limbs strike harder, reflex rigs respond faster, and optical augments resolve detail at ranges they were never designed to reach. The body pays the price \u2014 joints, mounting points, and neural relay clusters sustain cumulative microdamage with each use.",
   "method_of_use": "injection",
   "effects": [
     "Mechanical augment output increased 40-70% beyond spec",
@@ -21,7 +22,7 @@
   ],
   "side_effects": [
     "Micro-fractures in augment mounting hardware with repeated use",
-    "Neural relay burnout — permanent reflex degradation after 10+ uses",
+    "Neural relay burnout \u2014 permanent reflex degradation after 10\u002B uses",
     "Hypertensive crisis risk in users with cardiac augments",
     "Post-dose crash: 2-4 hours of muscle tremor and nausea",
     "Servo fluid leak if augments are pushed past structural tolerance",
@@ -31,11 +32,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ180-250 per dose",
-  "cultural_context": "Ferrospike is the combat drug of the Shelf. Pit fighters use it before sanctioned brawls. Gang enforcers take it before a job. It's cheap enough that Tier 1 workers with basic chrome pop it to meet brutal labor quotas that their stock-spec augments can't sustain. Medtechs on the Shelf call it 'eating your future' — every dose trades long-term augment integrity and neural health for short-term performance. A user who's been on Spike for a year has the mounting hardware of someone three times their age.",
+  "street_price": "\u03A6180-250 per dose",
+  "cultural_context": "Ferrospike is the combat drug of the Shelf. Pit fighters use it before sanctioned brawls. Gang enforcers take it before a job. It\u0027s cheap enough that Tier 1 workers with basic chrome pop it to meet brutal labor quotas that their stock-spec augments can\u0027t sustain. Medtechs on the Shelf call it \u0027eating your future\u0027 \u2014 every dose trades long-term augment integrity and neural health for short-term performance. A user who\u0027s been on Spike for a year has the mounting hardware of someone three times their age.",
   "story_hooks": [
-    "A Tier 1 pit fighter is found dead mid-match — not from opponent strikes but from a catastrophic mounting point shear at the shoulder that severed an artery. Someone sold them a batch cut with a compound that made the drug hit harder but degraded titanium bonding resin. Who's cutting it, and why?",
-    "A corporate security contractor is quietly purchasing Ferrospike in bulk — strange, given their salary could afford legitimate chrome enhancers. Someone is building a Spike-dependent fighting force that can be controlled by controlling their supply.",
-    "A Shelf medtech has synthesized a variant they call 'Soft Spike' that gives 20% performance gains with zero hardware damage — but Nightshade Pharmatech is sending people to find them, because a safe version destroys the dependency model."
-  ]
+    "A Tier 1 pit fighter is found dead mid-match \u2014 not from opponent strikes but from a catastrophic mounting point shear at the shoulder that severed an artery. Someone sold them a batch cut with a compound that made the drug hit harder but degraded titanium bonding resin. Who\u0027s cutting it, and why?",
+    "A corporate security contractor is quietly purchasing Ferrospike in bulk \u2014 strange, given their salary could afford legitimate chrome enhancers. Someone is building a Spike-dependent fighting force that can be controlled by controlling their supply.",
+    "A Shelf medtech has synthesized a variant they call \u0027Soft Spike\u0027 that gives 20% performance gains with zero hardware damage \u2014 but Nightshade Pharmatech is sending people to find them, because a safe version destroys the dependency model."
+  ],
+  "tags": []
 }

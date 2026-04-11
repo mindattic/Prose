@@ -17,7 +17,7 @@
             <i class="bi bi-search search-overlay-icon"></i>
             <input @ref="inputRef" type="text" class="search-overlay-input"
                    placeholder="Search entities…"
-                   @bind="query" @bind:event="oninput"
+                   value="@query"
                    @oninput="OnInput" />
             @if (!string.IsNullOrWhiteSpace(query))
             {

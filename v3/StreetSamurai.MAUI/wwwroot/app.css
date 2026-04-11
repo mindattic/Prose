@@ -368,7 +368,10 @@ textarea.auto-grow {
 .entity-detail-name { font-size: 1.6rem; font-weight: 700; margin: 0; color: #e6edf3; }
 .entity-detail-subtitle { font-size: 0.85rem; margin-top: 2px; }
 .entity-detail-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
-.entity-tag { font-size: 0.65rem; padding: 1px 7px; background: #21262d; border-radius: 3px; color: #8b949e; border: 1px solid #30363d; }
+.entity-tag { font-size: 0.65rem; padding: 1px 7px; background: #21262d; border-radius: 3px; color: #8b949e; border: 1px solid #30363d; text-decoration: none; }
+a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58a6ff; text-decoration: none; }
+.ev-tag-link { text-decoration: none; }
+.ev-tag-link:hover { background: #30363d !important; color: #e6edf3 !important; border-color: #58a6ff !important; }
 .entity-detail-body { display: flex; flex-direction: column; gap: 20px; }
 .entity-section { display: flex; flex-direction: column; gap: 6px; }
 .entity-section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #8b949e; }

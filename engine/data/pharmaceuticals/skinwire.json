@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6d7737291996fc27ada9093",
   "name": "Skinwire",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "street_concoction",
   "subcategory": "sensory_augment_enhancer",
   "manufacturer": "Unknown; suspected Nightshade Pharmatech gray-market derivative",
-  "description": "A dermal suspension of nano-scale conductive filaments — stripped from decommissioned haptic suit liners — suspended in a biologically active carrier gel that promotes temporary subcutaneous integration. Applied as a patch, Skinwire creates a web of conductive tissue just below the skin surface, dramatically amplifying tactile sensation across the application area. Used recreationally for pleasure, practically by surgeons and safe-crackers who need extreme touch sensitivity, and dangerously by fighters who want to feel every impact with perfect clarity.",
+  "description": "A dermal suspension of nano-scale conductive filaments \u2014 stripped from decommissioned haptic suit liners \u2014 suspended in a biologically active carrier gel that promotes temporary subcutaneous integration. Applied as a patch, Skinwire creates a web of conductive tissue just below the skin surface, dramatically amplifying tactile sensation across the application area. Used recreationally for pleasure, practically by surgeons and safe-crackers who need extreme touch sensitivity, and dangerously by fighters who want to feel every impact with perfect clarity.",
   "method_of_use": "dermal_patch",
   "effects": [
     "extreme tactile sensitivity in application area",
@@ -21,7 +22,7 @@
   "side_effects": [
     "filaments can migrate under the skin causing internal lacerations",
     "hypersensitivity becoming painful allergy to normal touch",
-    "skin discoloration — faint silver tracery visible under bright light",
+    "skin discoloration \u2014 faint silver tracery visible under bright light",
     "infection at integration sites",
     "in rare cases, filament migration to nerve clusters causing permanent altered sensation",
     "removal requires medical intervention"
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 1-2",
   "legality": "restricted",
-  "street_price": "Φ20-35 per patch",
-  "cultural_context": "Skinwire occupies an uncomfortable legal gray zone — the individual components are not illegal, and legitimate medical versions exist for surgical applications, but the street version uses unsterilized filaments and uncontrolled carrier gel. It's used in the Shelf's pleasure trade, by thieves and specialists, and by a subculture of Shelf fighters who compete in bare-knuckle bouts where the enhanced sensation is both advantage and spectacle.",
+  "street_price": "\u03A620-35 per patch",
+  "cultural_context": "Skinwire occupies an uncomfortable legal gray zone \u2014 the individual components are not illegal, and legitimate medical versions exist for surgical applications, but the street version uses unsterilized filaments and uncontrolled carrier gel. It\u0027s used in the Shelf\u0027s pleasure trade, by thieves and specialists, and by a subculture of Shelf fighters who compete in bare-knuckle bouts where the enhanced sensation is both advantage and spectacle.",
   "story_hooks": [
-    "A series of Shelf residents have been found with Skinwire filaments that have migrated to their spinal columns — someone modified the carrier gel to direct filament migration, and it's not clear whether it's an accident or an experiment",
-    "A Tier 3 safe-cracker has been using Skinwire to pull off impossible jobs — they've been leaving a deliberate silver trace on every vault they open, like a signature",
-    "The street Skinwire supply has been traced back to a Nightshade Pharmatech subsidiary that's been deliberately undercutting the medical market — the question is what they're getting out of having uncontrolled filaments distributed across the Shelf population"
-  ]
+    "A series of Shelf residents have been found with Skinwire filaments that have migrated to their spinal columns \u2014 someone modified the carrier gel to direct filament migration, and it\u0027s not clear whether it\u0027s an accident or an experiment",
+    "A Tier 3 safe-cracker has been using Skinwire to pull off impossible jobs \u2014 they\u0027ve been leaving a deliberate silver trace on every vault they open, like a signature",
+    "The street Skinwire supply has been traced back to a Nightshade Pharmatech subsidiary that\u0027s been deliberately undercutting the medical market \u2014 the question is what they\u0027re getting out of having uncontrolled filaments distributed across the Shelf population"
+  ],
+  "tags": []
 }

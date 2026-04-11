@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a8781a877af1a8b8607982",
   "name": "Eazovir",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,32 +10,33 @@
   "category": "withdrawal_aid",
   "subcategory": "withdrawal_symptom_suppressor",
   "manufacturer": "Helix Biosystems",
-  "description": "Eazovir is a synthetic opioid-receptor partial agonist combined with autonomic nervous system stabilizers, specifically engineered to suppress the physical symptoms of acute withdrawal — vomiting, muscle cramping, hyperhidrosis, tachycardia, insomnia — without providing the euphoric reward signal that perpetuates dependency cycles. Helix markets it as 'withdrawal without the war,' and it largely delivers on that promise for opioid, synthetic opioid, and certain stimulant withdrawal presentations. It is itself mildly habit-forming with extended use, a fact Helix's marketing materials treat with notable understatement.",
+  "description": "Eazovir is a synthetic opioid-receptor partial agonist combined with autonomic nervous system stabilizers, specifically engineered to suppress the physical symptoms of acute withdrawal \u2014 vomiting, muscle cramping, hyperhidrosis, tachycardia, insomnia \u2014 without providing the euphoric reward signal that perpetuates dependency cycles. Helix markets it as \u0027withdrawal without the war,\u0027 and it largely delivers on that promise for opioid, synthetic opioid, and certain stimulant withdrawal presentations. It is itself mildly habit-forming with extended use, a fact Helix\u0027s marketing materials treat with notable understatement.",
   "method_of_use": "sublingual",
   "effects": [
     "Rapid suppression of nausea, vomiting, and gastrointestinal withdrawal symptoms",
     "Relief from muscle cramping, restless limb syndrome, and hyperhidrosis",
-    "Cardiovascular stabilization — normalizes elevated heart rate and blood pressure",
+    "Cardiovascular stabilization \u2014 normalizes elevated heart rate and blood pressure",
     "Mild sedative effect enabling sleep during acute withdrawal",
     "Reduction of anxiety and agitation without full anxiolytic blunting"
   ],
   "side_effects": [
-    "Mild physical dependency develops after 3+ weeks of daily use",
+    "Mild physical dependency develops after 3\u002B weeks of daily use",
     "Requires its own gradual taper to discontinue safely",
     "Constipation",
     "Mild cognitive fogging in first few days",
-    "Users who exceed recommended dose experience a low-grade euphoria — the primary vector for Eazovir misuse",
+    "Users who exceed recommended dose experience a low-grade euphoria \u2014 the primary vector for Eazovir misuse",
     "Rare: respiratory depression in users with compromised pulmonary systems or when combined with depressants"
   ],
   "duration": "6-10 hours per dose",
   "addiction_risk": "moderate",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "Φ55 per tab (Φ180 per week supply)",
-  "cultural_context": "Eazovir occupies an uncomfortable middle ground in GLMZ's recovery culture — genuinely helpful, widely available, and quietly predatory. Helix positions it as a humane solution to withdrawal suffering, and for short-term use it is. But the Shelf is full of people who got off their primary substance only to find themselves Eazovir-dependent eighteen months later. Nightshade Pharmatech distributes a superdosed version called 'Ease+' that strips out the autonomic stabilizers and doubles the partial agonist load — it's basically a weak opioid in recovery packaging.",
+  "street_price": "\u03A655 per tab (\u03A6180 per week supply)",
+  "cultural_context": "Eazovir occupies an uncomfortable middle ground in GLMZ\u0027s recovery culture \u2014 genuinely helpful, widely available, and quietly predatory. Helix positions it as a humane solution to withdrawal suffering, and for short-term use it is. But the Shelf is full of people who got off their primary substance only to find themselves Eazovir-dependent eighteen months later. Nightshade Pharmatech distributes a superdosed version called \u0027Ease\u002B\u0027 that strips out the autonomic stabilizers and doubles the partial agonist load \u2014 it\u0027s basically a weak opioid in recovery packaging.",
   "story_hooks": [
-    "A Shelf medic has been handing out Eazovir to anyone coming off hard opioids — genuinely trying to help — but their supply came from Nightshade and something in this batch is different",
-    "A Helix Biosystems internal document has leaked suggesting the company deliberately calibrated Eazovir's dependency threshold to maximize repeat prescription cycles — someone needs that document buried, and someone else needs it very much in the open",
-    "A character is managing a dangerous informant through withdrawal using Eazovir as both medicine and leverage — but the informant is smarter about what's happening than they're letting on"
-  ]
+    "A Shelf medic has been handing out Eazovir to anyone coming off hard opioids \u2014 genuinely trying to help \u2014 but their supply came from Nightshade and something in this batch is different",
+    "A Helix Biosystems internal document has leaked suggesting the company deliberately calibrated Eazovir\u0027s dependency threshold to maximize repeat prescription cycles \u2014 someone needs that document buried, and someone else needs it very much in the open",
+    "A character is managing a dangerous informant through withdrawal using Eazovir as both medicine and leverage \u2014 but the informant is smarter about what\u0027s happening than they\u0027re letting on"
+  ],
+  "tags": []
 }

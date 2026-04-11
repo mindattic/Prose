@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6c1788b9eb839e2f5ac555b",
   "name": "Novaril",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,31 +10,32 @@
   "category": "cognitive_enhancer",
   "subcategory": "broad_spectrum_cognitive_elevation",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Novaril is Novafold's attempt at a comprehensive cognitive enhancement platform — a stack of carefully balanced compounds that elevates working memory, processing speed, attention, and recall simultaneously without the jagged edges of single-function enhancers. It is the 'safe' option: lower ceiling, lower risk, designed for daily use by people who need to be reliably better without being dangerously better. Marketed aggressively to Tier 3 professionals as a subscription wellness product.",
+  "description": "Novaril is Novafold\u0027s attempt at a comprehensive cognitive enhancement platform \u2014 a stack of carefully balanced compounds that elevates working memory, processing speed, attention, and recall simultaneously without the jagged edges of single-function enhancers. It is the \u0027safe\u0027 option: lower ceiling, lower risk, designed for daily use by people who need to be reliably better without being dangerously better. Marketed aggressively to Tier 3 professionals as a subscription wellness product.",
   "method_of_use": "oral",
   "effects": [
     "Moderate, reliable elevation across all cognitive domains",
     "Improved working memory capacity",
     "Reduced cognitive fatigue over the course of a workday",
     "Smoother BCI integration and interface responsiveness",
-    "Mild mood stabilization — reduced anxiety interference with performance"
+    "Mild mood stabilization \u2014 reduced anxiety interference with performance"
   ],
   "side_effects": [
-    "Cognitive ceiling effect — users cannot exceed the drug's moderate enhancement level regardless of dose",
+    "Cognitive ceiling effect \u2014 users cannot exceed the drug\u0027s moderate enhancement level regardless of dose",
     "Tolerance builds within weeks, requiring cycling",
     "Discontinuation produces a below-baseline cognitive slump lasting 1-2 weeks",
     "Mild appetite suppression",
-    "Some users report emotional flattening — competent but less emotionally present"
+    "Some users report emotional flattening \u2014 competent but less emotionally present"
   ],
   "duration": "8-10 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "legal",
-  "street_price": "Φ 14 per tablet (Φ 280 monthly subscription)",
-  "cultural_context": "Novaril is aspirational consumption — the drug you take when you've made it to Tier 3 and want to stay there. Novafold sells it on subscription with automatic renewal, with a slick app that tracks your 'cognitive performance metrics' and recommends dosage adjustments. The subscription model is the point: Novaril users who cycle off experience a slump that feels like cognitive decline but is actually just the return of baseline, and they re-subscribe immediately. Tier 3 social circles have developed a quiet stigma around not being on Novaril — it signals either poverty (can't afford the subscription) or eccentricity (choosing not to optimize). On the Shelf, stolen or counterfeit Novaril tablets circulate, prized because they're one of the few cognitive enhancers with a tolerable side effect profile.",
+  "street_price": "\u03A6 14 per tablet (\u03A6 280 monthly subscription)",
+  "cultural_context": "Novaril is aspirational consumption \u2014 the drug you take when you\u0027ve made it to Tier 3 and want to stay there. Novafold sells it on subscription with automatic renewal, with a slick app that tracks your \u0027cognitive performance metrics\u0027 and recommends dosage adjustments. The subscription model is the point: Novaril users who cycle off experience a slump that feels like cognitive decline but is actually just the return of baseline, and they re-subscribe immediately. Tier 3 social circles have developed a quiet stigma around not being on Novaril \u2014 it signals either poverty (can\u0027t afford the subscription) or eccentricity (choosing not to optimize). On the Shelf, stolen or counterfeit Novaril tablets circulate, prized because they\u0027re one of the few cognitive enhancers with a tolerable side effect profile.",
   "story_hooks": [
-    "Novafold's performance tracking app has been quietly building a comprehensive cognitive map of its entire user base — the data is worth more than the drug, and someone inside the company is preparing to sell it to an interested third party.",
-    "The 'below-baseline slump' that Novaril users experience during discontinuation is not a natural withdrawal effect — it's an engineered dependency built into the formula, and a rogue Novafold chemist has the proof.",
-    "A Tier 3 manager has been secretly off Novaril for three months and is performing just as well as before — they're hiding it because admitting the drug does nothing for them would raise questions about why they've been billing it to their corporate wellness account."
-  ]
+    "Novafold\u0027s performance tracking app has been quietly building a comprehensive cognitive map of its entire user base \u2014 the data is worth more than the drug, and someone inside the company is preparing to sell it to an interested third party.",
+    "The \u0027below-baseline slump\u0027 that Novaril users experience during discontinuation is not a natural withdrawal effect \u2014 it\u0027s an engineered dependency built into the formula, and a rogue Novafold chemist has the proof.",
+    "A Tier 3 manager has been secretly off Novaril for three months and is performing just as well as before \u2014 they\u0027re hiding it because admitting the drug does nothing for them would raise questions about why they\u0027ve been billing it to their corporate wellness account."
+  ],
+  "tags": []
 }

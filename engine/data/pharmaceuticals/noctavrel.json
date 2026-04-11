@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6c17251ad21d4478ee0bb67",
   "name": "Noctavrel",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,31 +9,32 @@
   ],
   "category": "sleep_dream",
   "subcategory": "rapid_sleep_inducer",
-  "manufacturer": "Shelf labs (unlicensed); attributed to a chemist known as 'Paret'",
-  "description": "Noctavrel is a Shelf-synthesized ultra-rapid sleep compound derived from a corrupted Dormacet synthesis process that produces a dramatically more potent result — full unconsciousness in 8-12 seconds, total sensory blackout, and a dreamless, near-comatose sleep state that some users describe as 'being dead.' It has no BCI compatibility layer, which is both a feature for some users and a critical risk for those with chrome-dependent autonomic systems.",
+  "manufacturer": "Shelf labs (unlicensed); attributed to a chemist known as \u0027Paret\u0027",
+  "description": "Noctavrel is a Shelf-synthesized ultra-rapid sleep compound derived from a corrupted Dormacet synthesis process that produces a dramatically more potent result \u2014 full unconsciousness in 8-12 seconds, total sensory blackout, and a dreamless, near-comatose sleep state that some users describe as \u0027being dead.\u0027 It has no BCI compatibility layer, which is both a feature for some users and a critical risk for those with chrome-dependent autonomic systems.",
   "method_of_use": "sublingual",
   "effects": [
-    "Unconsciousness within 8-12 seconds — faster than any licensed compound",
+    "Unconsciousness within 8-12 seconds \u2014 faster than any licensed compound",
     "Total dreamless blackout sleep",
-    "BCI signal completely suppressed during sleep — no pings, no feeds, no surveillance",
-    "Wake state is abrupt and complete — no grogginess transition"
+    "BCI signal completely suppressed during sleep \u2014 no pings, no feeds, no surveillance",
+    "Wake state is abrupt and complete \u2014 no grogginess transition"
   ],
   "side_effects": [
-    "Dangerous with chrome above 20% body integration — can suppress chrome-regulated autonomic functions",
-    "No dream processing — REM entirely absent, emotional and memory consolidation disrupted with regular use",
+    "Dangerous with chrome above 20% body integration \u2014 can suppress chrome-regulated autonomic functions",
+    "No dream processing \u2014 REM entirely absent, emotional and memory consolidation disrupted with regular use",
     "Abrupt unconsciousness is a physical risk if the user is not already stationary",
-    "Batch consistency varies wildly — some doses are 3x labeled potency",
+    "Batch consistency varies wildly \u2014 some doses are 3x labeled potency",
     "Documented fatalities from chrome-interaction and overdose"
   ],
   "duration": "6-10 hours (dose-dependent)",
   "addiction_risk": "high",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "Φ8 per dose",
-  "cultural_context": "On the Shelf, Noctavrel is both practical necessity and dark legend. For people whose BCIs are hacked, surveilled, or weaponized against them, Dormacet's BCI-compatibility layer is a liability — Noctavrel's complete signal suppression means genuine privacy in unconsciousness. 'Paret,' the anonymous chemist credited with the formula, is a folk figure on the Shelf — some say she died in a batch that went wrong, others say she's still cooking. The drug's lethality with chrome is an open secret and a class marker: only people too poor for quality chrome can safely use it.",
+  "street_price": "\u03A68 per dose",
+  "cultural_context": "On the Shelf, Noctavrel is both practical necessity and dark legend. For people whose BCIs are hacked, surveilled, or weaponized against them, Dormacet\u0027s BCI-compatibility layer is a liability \u2014 Noctavrel\u0027s complete signal suppression means genuine privacy in unconsciousness. \u0027Paret,\u0027 the anonymous chemist credited with the formula, is a folk figure on the Shelf \u2014 some say she died in a batch that went wrong, others say she\u0027s still cooking. The drug\u0027s lethality with chrome is an open secret and a class marker: only people too poor for quality chrome can safely use it.",
   "story_hooks": [
-    "Someone has started distributing Noctavrel on the Shelf with a new synthesis that eliminates the chrome-interaction risk — whoever has cracked that formulation has pharmaceutical-grade knowledge and equipment that no Shelf lab should possess.",
-    "A Tier 3 investigator goes undercover on the Shelf and takes Noctavrel to avoid BCI surveillance — and wakes up 14 hours later with no memory of the middle of their sleep period, suggesting someone was in the room while they were under.",
+    "Someone has started distributing Noctavrel on the Shelf with a new synthesis that eliminates the chrome-interaction risk \u2014 whoever has cracked that formulation has pharmaceutical-grade knowledge and equipment that no Shelf lab should possess.",
+    "A Tier 3 investigator goes undercover on the Shelf and takes Noctavrel to avoid BCI surveillance \u2014 and wakes up 14 hours later with no memory of the middle of their sleep period, suggesting someone was in the room while they were under.",
     "Paret is real, alive, and has approached a fixer with a request: she has a new formula that would make Noctavrel safe for everyone, but a Nightshade Pharmatech crew is hunting her for it, and she needs to disappear before she can release it."
-  ]
+  ],
+  "tags": []
 }

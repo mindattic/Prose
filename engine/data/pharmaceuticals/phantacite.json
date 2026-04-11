@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6ca798db36a3653a245c17e",
   "name": "Phantacite",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "recreational",
   "subcategory": "BCI-synced hallucinogen",
   "manufacturer": "Helix Biosystems",
-  "description": "Phantacite is a next-generation psychedelic that doesn't produce random hallucinations — it interfaces directly with the user's BCI to generate structured, navigable hallucinatory environments built from the user's own neural aesthetic vocabulary. The trip feels designed rather than chaotic: beautiful, meaningful, and deeply personal. Helix sells curated 'experience architectures' as optional paid DLC that can shape the hallucination's broad strokes while leaving the fine detail to the user's unconscious.",
+  "description": "Phantacite is a next-generation psychedelic that doesn\u0027t produce random hallucinations \u2014 it interfaces directly with the user\u0027s BCI to generate structured, navigable hallucinatory environments built from the user\u0027s own neural aesthetic vocabulary. The trip feels designed rather than chaotic: beautiful, meaningful, and deeply personal. Helix sells curated \u0027experience architectures\u0027 as optional paid DLC that can shape the hallucination\u0027s broad strokes while leaving the fine detail to the user\u0027s unconscious.",
   "method_of_use": "neural_direct",
   "effects": [
     "Structured, navigable hallucinations built from personal neural aesthetic patterns",
@@ -19,7 +20,7 @@
     "Deep introspective insights that feel permanently true"
   ],
   "side_effects": [
-    "Insights that feel profound during the trip and nonsensical afterward — and occasionally the reverse",
+    "Insights that feel profound during the trip and nonsensical afterward \u2014 and occasionally the reverse",
     "BCI feedback artifacts lasting 24 hours post-use",
     "Rare: hallucination architecture that the user cannot distinguish from memory after the fact",
     "Anxiety and paranoia if the trip turns negative",
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "restricted",
-  "street_price": "Φ 350 per dose (base); Φ 600+ with premium Helix experience architectures",
-  "cultural_context": "Phantacite is GLMZ's prestige psychedelic — it's what people mean when they talk about 'doing serious work on yourself.' Tier 3 and 4 users approach Phantacite trips with intention, preparation, and integration journals. There's a robust guide community — people who sit with trippers and help them navigate the architecture. Helix's paid experience architectures are controversial: critics argue that selling shaped trips makes the drug a luxury consumption product rather than a genuine exploration tool, and that the architectures subtly push users toward emotional conclusions favorable to Helix's brand positioning.",
+  "street_price": "\u03A6 350 per dose (base); \u03A6 600\u002B with premium Helix experience architectures",
+  "cultural_context": "Phantacite is GLMZ\u0027s prestige psychedelic \u2014 it\u0027s what people mean when they talk about \u0027doing serious work on yourself.\u0027 Tier 3 and 4 users approach Phantacite trips with intention, preparation, and integration journals. There\u0027s a robust guide community \u2014 people who sit with trippers and help them navigate the architecture. Helix\u0027s paid experience architectures are controversial: critics argue that selling shaped trips makes the drug a luxury consumption product rather than a genuine exploration tool, and that the architectures subtly push users toward emotional conclusions favorable to Helix\u0027s brand positioning.",
   "story_hooks": [
-    "A Helix experience architecture called 'Reconciliation' is producing identical emotional breakthroughs in unrelated users — everyone who uses it comes out convinced they need to forgive a specific authority figure in their life, and a journalist thinks the architecture is not neutral",
-    "A user's Phantacite trip generated a hallucination that contained accurate information they had no conscious access to — architectural details of a location they'd never visited, technical specifications for a system they didn't know existed — and they can't explain it",
-    "A street version of Phantacite is circulating without BCI interface capability, forcing the hallucinations to run purely chemically — the trips are reportedly terrifying and completely unstructured, and several users have emerged from them genuinely changed in ways that worry the people who love them"
-  ]
+    "A Helix experience architecture called \u0027Reconciliation\u0027 is producing identical emotional breakthroughs in unrelated users \u2014 everyone who uses it comes out convinced they need to forgive a specific authority figure in their life, and a journalist thinks the architecture is not neutral",
+    "A user\u0027s Phantacite trip generated a hallucination that contained accurate information they had no conscious access to \u2014 architectural details of a location they\u0027d never visited, technical specifications for a system they didn\u0027t know existed \u2014 and they can\u0027t explain it",
+    "A street version of Phantacite is circulating without BCI interface capability, forcing the hallucinations to run purely chemically \u2014 the trips are reportedly terrifying and completely unstructured, and several users have emerged from them genuinely changed in ways that worry the people who love them"
+  ],
+  "tags": []
 }

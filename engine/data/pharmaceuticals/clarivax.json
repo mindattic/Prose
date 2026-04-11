@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c69b786683e1bc6ae473b6b6",
   "name": "Clarivax",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "anxiety_dampener",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Clarivax is a fast-acting, short-duration anxiolytic specifically engineered for BCI-integrated users experiencing neural-input anxiety — the specific panic response triggered by information overload, interface saturation, or sensory flood from always-on connectivity. Where Pacitrel is the chronic daily maintenance drug, Clarivax is the acute rescue dose, working within minutes to quiet the neural noise and restore a functional emotional baseline. Nightshade sells it legally but its gray-market versions are far more concentrated.",
+  "description": "Clarivax is a fast-acting, short-duration anxiolytic specifically engineered for BCI-integrated users experiencing neural-input anxiety \u2014 the specific panic response triggered by information overload, interface saturation, or sensory flood from always-on connectivity. Where Pacitrel is the chronic daily maintenance drug, Clarivax is the acute rescue dose, working within minutes to quiet the neural noise and restore a functional emotional baseline. Nightshade sells it legally but its gray-market versions are far more concentrated.",
   "method_of_use": "sublingual",
   "effects": [
     "Rapid onset (3-5 minute) anxiety reduction",
@@ -30,11 +31,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "restricted",
-  "street_price": "Φ30 per dose (gray market Φ15 for concentrated version)",
-  "cultural_context": "Clarivax fills the gap between Pacitrel's slow chronic action and the acute panic attacks that GLMZ's constant neural connectivity produces. In Tier 1 and 2, where BCI systems are often older, noisier, and less well-maintained, neural anxiety spikes are more frequent and more severe. Clarivax is the drug you take when your interface is screaming and you still have four hours of shift left. The concentrated gray-market version, called 'the open,' is technically illegal but so widely used on the Shelf that enforcement is selective at best.",
+  "street_price": "\u03A630 per dose (gray market \u03A615 for concentrated version)",
+  "cultural_context": "Clarivax fills the gap between Pacitrel\u0027s slow chronic action and the acute panic attacks that GLMZ\u0027s constant neural connectivity produces. In Tier 1 and 2, where BCI systems are often older, noisier, and less well-maintained, neural anxiety spikes are more frequent and more severe. Clarivax is the drug you take when your interface is screaming and you still have four hours of shift left. The concentrated gray-market version, called \u0027the open,\u0027 is technically illegal but so widely used on the Shelf that enforcement is selective at best.",
   "story_hooks": [
-    "A Shelf runner discovers that their increasingly frequent Clarivax use is not just managing anxiety — their BCI is actually malfunctioning in a way that mimics anxiety, and the drug has been masking a hardware fault that could kill them",
-    "Nightshade's legal Clarivax and its gray-market concentrated version turn out to share a supply chain — someone inside Nightshade is diverting pharmaceutical-grade compound to unlicensed Shelf labs and taking a cut",
-    "A BCI technician realizes that a recent firmware update pushed by a major corp deliberately increases neural noise in users who are behind on their subscription payments — essentially manufacturing the anxiety that Clarivax treats"
-  ]
+    "A Shelf runner discovers that their increasingly frequent Clarivax use is not just managing anxiety \u2014 their BCI is actually malfunctioning in a way that mimics anxiety, and the drug has been masking a hardware fault that could kill them",
+    "Nightshade\u0027s legal Clarivax and its gray-market concentrated version turn out to share a supply chain \u2014 someone inside Nightshade is diverting pharmaceutical-grade compound to unlicensed Shelf labs and taking a cut",
+    "A BCI technician realizes that a recent firmware update pushed by a major corp deliberately increases neural noise in users who are behind on their subscription payments \u2014 essentially manufacturing the anxiety that Clarivax treats"
+  ],
+  "tags": []
 }

@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6c07d3290aace8c2f2dadda",
   "name": "Nexapril",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "pattern_recognition_enhancement",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Nexapril modulates the brain's predictive processing architecture by enhancing thalamocortical synchrony, allowing users to perceive statistical correlations, structural patterns, and anomalies in complex datasets that would normally require hours of computational analysis. Designed for financial analysts, intelligence operatives, and epidemiologists who process vast BCI-fed data streams, it makes the brain operate more like a Bayesian inference engine. The effect is often described as 'seeing the shape of things before you understand why.'",
+  "description": "Nexapril modulates the brain\u0027s predictive processing architecture by enhancing thalamocortical synchrony, allowing users to perceive statistical correlations, structural patterns, and anomalies in complex datasets that would normally require hours of computational analysis. Designed for financial analysts, intelligence operatives, and epidemiologists who process vast BCI-fed data streams, it makes the brain operate more like a Bayesian inference engine. The effect is often described as \u0027seeing the shape of things before you understand why.\u0027",
   "method_of_use": "oral",
   "effects": [
     "Enhanced detection of patterns, correlations, and anomalies in data",
@@ -19,7 +20,7 @@
     "Intuitive grasp of probabilistic relationships"
   ],
   "side_effects": [
-    "Apophenia — finding patterns that don't exist, especially under stress",
+    "Apophenia \u2014 finding patterns that don\u0027t exist, especially under stress",
     "Paranoid ideation in high-information environments",
     "Visual artifacts: faint geometric overlays on real-world perception",
     "Decision fatigue from over-analysis",
@@ -29,11 +30,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 55-80 per tablet",
-  "cultural_context": "Nexapril is the preferred cognitive tool of GLMZ's financial and intelligence sectors. Tier 4 quant analysts are rumored to take it daily. The drug's most dangerous side effect — apophenia — has destroyed careers: analysts who became convinced they'd found fraud or conspiracy in clean data, investigators who built elaborate false narratives from noise. On the street it's called 'Web' and is used by Shelf gamblers and fixers trying to read situations faster than their competitors.",
+  "street_price": "\u03A6 55-80 per tablet",
+  "cultural_context": "Nexapril is the preferred cognitive tool of GLMZ\u0027s financial and intelligence sectors. Tier 4 quant analysts are rumored to take it daily. The drug\u0027s most dangerous side effect \u2014 apophenia \u2014 has destroyed careers: analysts who became convinced they\u0027d found fraud or conspiracy in clean data, investigators who built elaborate false narratives from noise. On the street it\u0027s called \u0027Web\u0027 and is used by Shelf gamblers and fixers trying to read situations faster than their competitors.",
   "story_hooks": [
-    "An analyst on Nexapril becomes convinced she's found evidence of a massive corporate conspiracy buried in routine financial data — but she can't tell if she's seeing something real or if the apophenia has her",
-    "A Shelf information broker uses bootleg Nexapril to parse stolen corporate files and genuinely finds something they weren't supposed to find — now people want the files and the broker dead",
+    "An analyst on Nexapril becomes convinced she\u0027s found evidence of a massive corporate conspiracy buried in routine financial data \u2014 but she can\u0027t tell if she\u0027s seeing something real or if the apophenia has her",
+    "A Shelf information broker uses bootleg Nexapril to parse stolen corporate files and genuinely finds something they weren\u0027t supposed to find \u2014 now people want the files and the broker dead",
     "A detective who relies on Nexapril for case analysis realizes their last three convictions may have been built on pattern-recognition that was chemically induced and factually wrong"
-  ]
+  ],
+  "tags": []
 }

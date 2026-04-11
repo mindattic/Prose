@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b675ab9964baa03e471584",
   "name": "Lethex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "grief_suppressor",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Lethex is a targeted amygdala-limbic suppressor that selectively dampens grief and bereavement responses without affecting cognitive function or work performance. Originally developed for first responders and military personnel processing mass casualty events, it was rebranded and widely marketed to the general workforce following the 2187 Chicago Flood displacement crisis. It does not erase grief — it suspends it, deferring emotional processing to a later, theoretically more convenient time.",
+  "description": "Lethex is a targeted amygdala-limbic suppressor that selectively dampens grief and bereavement responses without affecting cognitive function or work performance. Originally developed for first responders and military personnel processing mass casualty events, it was rebranded and widely marketed to the general workforce following the 2187 Chicago Flood displacement crisis. It does not erase grief \u2014 it suspends it, deferring emotional processing to a later, theoretically more convenient time.",
   "method_of_use": "oral",
   "effects": [
     "suppression of acute grief and mourning responses",
@@ -19,21 +20,22 @@
     "mild emotional blunting across adjacent feelings"
   ],
   "side_effects": [
-    "deferred grief syndrome upon cessation — intense, compressed mourning episodes",
+    "deferred grief syndrome upon cessation \u2014 intense, compressed mourning episodes",
     "emotional processing debt that accumulates with extended use",
     "difficulty forming new emotional associations",
     "dry mouth and mild appetite suppression",
     "rare: permanent grief dysregulation with long-term use"
   ],
-  "duration": "10–14 hours per dose",
+  "duration": "10\u201314 hours per dose",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ 18 per pill",
-  "cultural_context": "Lethex is the quiet backbone of GLMZ's grief economy. Standard bereavement leave in most Tier 2-3 corporate contracts is 48 hours — nowhere near enough to process loss. HR departments don't officially mandate it, but the prescription is frequently 'suggested' by company wellness liaisons. Tier 1 shelf workers get unlicensed knockoffs called 'greys' from neighborhood chem-labs. The drug has generated significant bioethics debate: grief researchers argue GLMZ is creating a population that has never actually mourned. Support groups for 'deferred grief syndrome' have become one of the fastest-growing social institutions in the city.",
+  "street_price": "\u03A6 18 per pill",
+  "cultural_context": "Lethex is the quiet backbone of GLMZ\u0027s grief economy. Standard bereavement leave in most Tier 2-3 corporate contracts is 48 hours \u2014 nowhere near enough to process loss. HR departments don\u0027t officially mandate it, but the prescription is frequently \u0027suggested\u0027 by company wellness liaisons. Tier 1 shelf workers get unlicensed knockoffs called \u0027greys\u0027 from neighborhood chem-labs. The drug has generated significant bioethics debate: grief researchers argue GLMZ is creating a population that has never actually mourned. Support groups for \u0027deferred grief syndrome\u0027 have become one of the fastest-growing social institutions in the city.",
   "story_hooks": [
-    "A Tier 3 accountant has been taking Lethex continuously for three years following the death of her child — she's never once cried. Her psychiatrist is warning her that cessation now could be psychologically catastrophic, but staying on it indefinitely carries its own risks. She needs someone to help her figure out what to do.",
-    "A Tier 2 dock worker discovers that the grief he suppressed for his murdered brother has been 'leaking' — surfacing as rage rather than sorrow, making him dangerous. He wants off Lethex, but he's terrified of what's waiting for him on the other side.",
-    "Lazarus is quietly lobbying to have Lethex added to municipal water treatment for high-density Shelf zones following a predicted civil unrest spike — someone has the internal memos."
-  ]
+    "A Tier 3 accountant has been taking Lethex continuously for three years following the death of her child \u2014 she\u0027s never once cried. Her psychiatrist is warning her that cessation now could be psychologically catastrophic, but staying on it indefinitely carries its own risks. She needs someone to help her figure out what to do.",
+    "A Tier 2 dock worker discovers that the grief he suppressed for his murdered brother has been \u0027leaking\u0027 \u2014 surfacing as rage rather than sorrow, making him dangerous. He wants off Lethex, but he\u0027s terrified of what\u0027s waiting for him on the other side.",
+    "Lazarus is quietly lobbying to have Lethex added to municipal water treatment for high-density Shelf zones following a predicted civil unrest spike \u2014 someone has the internal memos."
+  ],
+  "tags": []
 }

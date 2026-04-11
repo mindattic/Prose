@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e274ad9ef865dde97357c3",
   "name": "Thanatrel",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "poison_toxin",
   "subcategory": "slow-kill cardiovascular mimetic",
   "manufacturer": "Nightshade Pharmatech (black label division)",
-  "description": "A lipid-soluble compound that binds to cardiac SNT-interface receptors and introduces progressive fibrotic scarring indistinguishable from idiopathic cardiomyopathy. Administered once, it works over 18-26 weeks, causing the target to die of apparent heart failure. Standard autopsy panels do not flag it; only a targeted Thanatrel-specific assay — which no routine coroner orders — will find it.",
+  "description": "A lipid-soluble compound that binds to cardiac SNT-interface receptors and introduces progressive fibrotic scarring indistinguishable from idiopathic cardiomyopathy. Administered once, it works over 18-26 weeks, causing the target to die of apparent heart failure. Standard autopsy panels do not flag it; only a targeted Thanatrel-specific assay \u2014 which no routine coroner orders \u2014 will find it.",
   "method_of_use": "dermal_patch",
   "effects": [
     "undetectable progressive cardiac degradation",
@@ -18,7 +19,7 @@
     "leaves no foreign compound signature after week 8"
   ],
   "side_effects": [
-    "target experiences fatigue and mild dyspnea in final weeks — consistent with cover diagnosis",
+    "target experiences fatigue and mild dyspnea in final weeks \u2014 consistent with cover diagnosis",
     "extremely rare accelerated timeline (death within 6 weeks) if target has pre-existing SNT cardiac augments",
     "handler risk: dermal contact without glove liner causes self-dosing"
   ],
@@ -26,11 +27,12 @@
   "addiction_risk": "none",
   "tier_availability": "Tier 3-4",
   "legality": "illegal",
-  "street_price": "Φ 14,000–22,000 per patch (single dose)",
-  "cultural_context": "The preferred tool of corporate succession murders and political eliminations in GLMZ's Tier 4-5 world. Deniability is the product — Thanatrel doesn't sell death, it sells a natural cause. Fixers with Spire clientele treat it as a premium service item. Coroner corps are rumored to have a standing agreement with certain Nightshade distributors to keep the assay off standard panels.",
+  "street_price": "\u03A6 14,000\u201322,000 per patch (single dose)",
+  "cultural_context": "The preferred tool of corporate succession murders and political eliminations in GLMZ\u0027s Tier 4-5 world. Deniability is the product \u2014 Thanatrel doesn\u0027t sell death, it sells a natural cause. Fixers with Spire clientele treat it as a premium service item. Coroner corps are rumored to have a standing agreement with certain Nightshade distributors to keep the assay off standard panels.",
   "story_hooks": [
-    "A Tier 3 cardiologist notices an uptick in idiopathic cardiomyopathy deaths among mid-level corporate managers — all rivals of the same Tier 4 executive. She doesn't yet know what she's found.",
+    "A Tier 3 cardiologist notices an uptick in idiopathic cardiomyopathy deaths among mid-level corporate managers \u2014 all rivals of the same Tier 4 executive. She doesn\u0027t yet know what she\u0027s found.",
     "A fixer is hired to source Thanatrel, then discovers the target is someone they know personally. The patch is already in their pocket.",
-    "A Nightshade quality-control chemist attempts to sell the targeted assay formula to a forensic corp — and goes missing before the deal closes."
-  ]
+    "A Nightshade quality-control chemist attempts to sell the targeted assay formula to a forensic corp \u2014 and goes missing before the deal closes."
+  ],
+  "tags": []
 }

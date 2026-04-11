@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6db74c5be6f91a66a844a88",
   "name": "Synaptol",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "BCI calibration aid",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Synaptol is a precision neuromodulator that optimizes the signal translation between organic neural patterns and BCI firmware, reducing the jitter, lag, and misfires that characterize a poorly calibrated neural-digital interface. It works by temporarily stabilizing the electrochemical environment at the BCI electrode sites, allowing the interface's adaptive algorithms to lock onto cleaner signal baselines. Users describe the experience as their BCI suddenly 'clicking into place.'",
+  "description": "Synaptol is a precision neuromodulator that optimizes the signal translation between organic neural patterns and BCI firmware, reducing the jitter, lag, and misfires that characterize a poorly calibrated neural-digital interface. It works by temporarily stabilizing the electrochemical environment at the BCI electrode sites, allowing the interface\u0027s adaptive algorithms to lock onto cleaner signal baselines. Users describe the experience as their BCI suddenly \u0027clicking into place.\u0027",
   "method_of_use": "sublingual",
   "effects": [
     "dramatic reduction in BCI signal jitter and lag",
@@ -19,21 +20,22 @@
     "enhanced sensory fidelity of digital inputs"
   ],
   "side_effects": [
-    "over-calibration can cause interface hypersensitivity — digital inputs feel painfully sharp",
+    "over-calibration can cause interface hypersensitivity \u2014 digital inputs feel painfully sharp",
     "brief disorientation as calibration shifts",
     "mild euphoria from improved interface clarity can lead to habitual use",
     "not effective if BCI hardware is physically damaged or outdated",
     "occasional tinnitus in the interface frequency range"
   ],
-  "duration": "4–6 hours",
+  "duration": "4\u20136 hours",
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ55–Φ90 per dose",
-  "cultural_context": "Synaptol is the drug of the precision professional — surgeons, drone operators, data architects, combat specialists, and anyone whose work depends on a flawless BCI connection takes it before high-stakes operations. In competitive environments, Synaptol use is so common it's barely considered enhancement anymore. Tier 5 users have bespoke formulations tuned to their specific BCI hardware. On the Shelf, a counterfeit Synaptol market has emerged — often cut with stimulants that feel like calibration improvement but cause long-term electrode site damage.",
+  "street_price": "\u03A655\u2013\u03A690 per dose",
+  "cultural_context": "Synaptol is the drug of the precision professional \u2014 surgeons, drone operators, data architects, combat specialists, and anyone whose work depends on a flawless BCI connection takes it before high-stakes operations. In competitive environments, Synaptol use is so common it\u0027s barely considered enhancement anymore. Tier 5 users have bespoke formulations tuned to their specific BCI hardware. On the Shelf, a counterfeit Synaptol market has emerged \u2014 often cut with stimulants that feel like calibration improvement but cause long-term electrode site damage.",
   "story_hooks": [
-    "A corporate espionage operation is being run through the Synaptol supply chain — a modified batch is carrying a passive signal-capture payload that records BCI activity during the 'calibration window' and transmits it to an unknown receiver.",
-    "A Tier 2 worker whose job requires perfect BCI performance has developed a tolerance to Synaptol and can no longer calibrate without escalating doses — they're three days from losing their job and descending to the Shelf.",
-    "A black-market chemist on the Shelf has synthesized a Synaptol variant that works on older, discontinued BCI models that Lazarus no longer supports — and Lazarus's legal team is coming for them hard."
-  ]
+    "A corporate espionage operation is being run through the Synaptol supply chain \u2014 a modified batch is carrying a passive signal-capture payload that records BCI activity during the \u0027calibration window\u0027 and transmits it to an unknown receiver.",
+    "A Tier 2 worker whose job requires perfect BCI performance has developed a tolerance to Synaptol and can no longer calibrate without escalating doses \u2014 they\u0027re three days from losing their job and descending to the Shelf.",
+    "A black-market chemist on the Shelf has synthesized a Synaptol variant that works on older, discontinued BCI models that Lazarus no longer supports \u2014 and Lazarus\u0027s legal team is coming for them hard."
+  ],
+  "tags": []
 }

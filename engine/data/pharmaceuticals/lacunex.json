@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b4785a97ec902dd974a76f",
   "name": "Lacunex",
   "type": "pharmaceutical",
   "aliases": [
@@ -7,31 +8,32 @@
     "Window Wipe"
   ],
   "category": "poison_toxin",
-  "subcategory": "retrograde amnesiac — episodic memory disruptor",
+  "subcategory": "retrograde amnesiac \u2014 episodic memory disruptor",
   "manufacturer": "Novafold Pharmaceuticals (official product: treatment-resistant PTSD protocol, heavily diverted)",
-  "description": "Originally developed as a therapeutic intervention for trauma processing, Lacunex selectively disrupts hippocampal memory consolidation for a configurable retrograde window of 1-72 hours, erasing episodic memory while leaving procedural memory and identity intact. The dose-window relationship is reliable enough that operators use it surgically — a 6-hour dose wipes a meeting, a 48-hour dose wipes a job. Novafold officially sells it under a compassionate-use prescription framework; 80% of street supply is diverted clinical stock.",
+  "description": "Originally developed as a therapeutic intervention for trauma processing, Lacunex selectively disrupts hippocampal memory consolidation for a configurable retrograde window of 1-72 hours, erasing episodic memory while leaving procedural memory and identity intact. The dose-window relationship is reliable enough that operators use it surgically \u2014 a 6-hour dose wipes a meeting, a 48-hour dose wipes a job. Novafold officially sells it under a compassionate-use prescription framework; 80% of street supply is diverted clinical stock.",
   "method_of_use": "injection",
   "effects": [
     "configurable retrograde episodic memory erasure (1-72 hour window)",
     "procedural and semantic memory preserved",
     "subject retains full function post-dose with no awareness of the gap",
-    "BCI memory logs within the erasure window are simultaneously corrupted if subject's BCI lacks hardened storage"
+    "BCI memory logs within the erasure window are simultaneously corrupted if subject\u0027s BCI lacks hardened storage"
   ],
   "side_effects": [
-    "irregular erasure edges — subjects sometimes retain emotional residue of erased events without knowing why (unexplained dread, grief, or rage)",
-    "repeated use causes cumulative hippocampal degradation — eventual permanent short-term memory impairment",
-    "subjects with SNT-enhanced hippocampal augments are partially resistant — may retain fragments",
-    "rare paradox effect: some subjects form a 'phantom memory' — false constructed narrative to fill the gap that feels real and cannot be distinguished from genuine recall"
+    "irregular erasure edges \u2014 subjects sometimes retain emotional residue of erased events without knowing why (unexplained dread, grief, or rage)",
+    "repeated use causes cumulative hippocampal degradation \u2014 eventual permanent short-term memory impairment",
+    "subjects with SNT-enhanced hippocampal augments are partially resistant \u2014 may retain fragments",
+    "rare paradox effect: some subjects form a \u0027phantom memory\u0027 \u2014 false constructed narrative to fill the gap that feels real and cannot be distinguished from genuine recall"
   ],
   "duration": "Erasure is permanent for the target window; drug itself clears in 6 hours",
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "Φ 600–1,800 per dose (street); Φ 3,200 with prescription",
-  "cultural_context": "The operational cleaner. Used by fixers to process witnesses, by corpos to manage employees who've seen too much, and occasionally by individuals who simply cannot live with something they've done. The therapeutic framing Novafold maintains is not entirely false — there is a genuine PTSD market. But the street application has made 'getting Blanked' a common enough phrase in GLMZ that most people understand what it means without explanation.",
+  "street_price": "\u03A6 600\u20131,800 per dose (street); \u03A6 3,200 with prescription",
+  "cultural_context": "The operational cleaner. Used by fixers to process witnesses, by corpos to manage employees who\u0027ve seen too much, and occasionally by individuals who simply cannot live with something they\u0027ve done. The therapeutic framing Novafold maintains is not entirely false \u2014 there is a genuine PTSD market. But the street application has made \u0027getting Blanked\u0027 a common enough phrase in GLMZ that most people understand what it means without explanation.",
   "story_hooks": [
     "A witness to a Tier 4 corporate assassination wakes with 36 hours missing and an inexplicable terror response every time they smell a specific cologne. The phantom memory is trying to surface.",
-    "A fixer discovers their handler has been dosing them with Lacunex after every job — they have no memory of their last four contracts, and no idea what they've done.",
-    "Novafold's clinical supply chain is hit by a diversion ring operating from inside the company. A Tier 3 investigator follows the trail upward and finds it ends at a Spire address."
-  ]
+    "A fixer discovers their handler has been dosing them with Lacunex after every job \u2014 they have no memory of their last four contracts, and no idea what they\u0027ve done.",
+    "Novafold\u0027s clinical supply chain is hit by a diversion ring operating from inside the company. A Tier 3 investigator follows the trail upward and finds it ends at a Spire address."
+  ],
+  "tags": []
 }

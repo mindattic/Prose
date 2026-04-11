@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6987ac0b5cf63ce2612b657",
   "name": "Catavrel",
   "type": "pharmaceutical",
   "aliases": [
@@ -7,33 +8,34 @@
     "Slack"
   ],
   "category": "poison_toxin",
-  "subcategory": "selective paralytic — voluntary motor suppression with autonomic preservation",
+  "subcategory": "selective paralytic \u2014 voluntary motor suppression with autonomic preservation",
   "manufacturer": "Lazarus Pharmaceuticals (disavowed research compound, synthesis leaked by internal whistleblower)",
-  "description": "Catavrel was developed by Lazarus as a 'compliance assist' for involuntary psychiatric commitment procedures — a compound that eliminates voluntary motor function while preserving all autonomic processes and full consciousness. The subject cannot move, cannot speak, cannot signal distress, but their heart beats, their lungs breathe, their eyes track. They are a conscious, aware prisoner inside their own body. Lazarus buried the project after the whistleblower leak; the synthesis is now widely held by gray-market operators.",
+  "description": "Catavrel was developed by Lazarus as a \u0027compliance assist\u0027 for involuntary psychiatric commitment procedures \u2014 a compound that eliminates voluntary motor function while preserving all autonomic processes and full consciousness. The subject cannot move, cannot speak, cannot signal distress, but their heart beats, their lungs breathe, their eyes track. They are a conscious, aware prisoner inside their own body. Lazarus buried the project after the whistleblower leak; the synthesis is now widely held by gray-market operators.",
   "method_of_use": "vapor",
   "effects": [
     "selective voluntary motor system suppression within 60-90 seconds of vapor exposure",
     "complete paralysis of all volitional movement including speech musculature",
-    "autonomic nervous system fully preserved — breathing, cardiac function, digestion unaffected",
+    "autonomic nervous system fully preserved \u2014 breathing, cardiac function, digestion unaffected",
     "full sensory awareness and consciousness maintained",
-    "eyes remain mobile — the only visible sign of consciousness"
+    "eyes remain mobile \u2014 the only visible sign of consciousness"
   ],
   "side_effects": [
-    "profound psychological trauma — locked-in experience causes acute panic and dissociation",
-    "subjects with BCI can still transmit neural signals — if their BCI includes emergency beacon or subvocalization interface, they may be able to signal for help (operators typically co-administer Vantacide)",
-    "re-dosing before clearance of first dose causes autonomic involvement — respiratory depression risk",
+    "profound psychological trauma \u2014 locked-in experience causes acute panic and dissociation",
+    "subjects with BCI can still transmit neural signals \u2014 if their BCI includes emergency beacon or subvocalization interface, they may be able to signal for help (operators typically co-administer Vantacide)",
+    "re-dosing before clearance of first dose causes autonomic involvement \u2014 respiratory depression risk",
     "post-dose: 50% of subjects experience temporary motor dysregulation (tremor, coordination loss) for 12-24 hours",
-    "repeated exposure causes permanent subtle motor degradation — fine motor control never fully recovers"
+    "repeated exposure causes permanent subtle motor degradation \u2014 fine motor control never fully recovers"
   ],
   "duration": "90 minutes to 3 hours depending on dose; fully reversible without antidote",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "illegal",
-  "street_price": "Φ 800–1,600 per vapor canister",
-  "cultural_context": "The Lazarus connection makes Catavrel uniquely politically charged in GLMZ. The whistleblower who leaked the synthesis — a Lazarus researcher named only 'Ariadne' in the leak documents — became a cause célèbre in Tier 2-3 activist circles. Lazarus has never acknowledged the compound. The irony that the largest pharmaceutical corp in GLMZ developed a locked-in paralytic for 'psychiatric compliance' is not lost on anyone, and it colors how people in lower tiers think about Lazarus products generally.",
+  "street_price": "\u03A6 800\u20131,600 per vapor canister",
+  "cultural_context": "The Lazarus connection makes Catavrel uniquely politically charged in GLMZ. The whistleblower who leaked the synthesis \u2014 a Lazarus researcher named only \u0027Ariadne\u0027 in the leak documents \u2014 became a cause c\u00E9l\u00E8bre in Tier 2-3 activist circles. Lazarus has never acknowledged the compound. The irony that the largest pharmaceutical corp in GLMZ developed a locked-in paralytic for \u0027psychiatric compliance\u0027 is not lost on anyone, and it colors how people in lower tiers think about Lazarus products generally.",
   "story_hooks": [
-    "The whistleblower 'Ariadne' resurfaces — they have a second package of Lazarus documents, worse than the first. They need a crew to get it out. Lazarus security is already moving.",
-    "A Tier 3 family discovers their relative in a Lazarus psychiatric facility has been administered Catavrel repeatedly over six months — officially listed as 'experimental sedation protocol.' The relative is aware of everything that has been done to them.",
+    "The whistleblower \u0027Ariadne\u0027 resurfaces \u2014 they have a second package of Lazarus documents, worse than the first. They need a crew to get it out. Lazarus security is already moving.",
+    "A Tier 3 family discovers their relative in a Lazarus psychiatric facility has been administered Catavrel repeatedly over six months \u2014 officially listed as \u0027experimental sedation protocol.\u0027 The relative is aware of everything that has been done to them.",
     "A runner is hit with Catavrel in a crowded public space and left in a chair, fully conscious and unable to move. They have to watch their handler walk away and wait to see who comes to collect them."
-  ]
+  ],
+  "tags": []
 }

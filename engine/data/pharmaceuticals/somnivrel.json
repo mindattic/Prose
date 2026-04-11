@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6da71388d928f3ab762763a",
   "name": "Somnivrel",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,30 +10,31 @@
   "category": "sleep_dream",
   "subcategory": "rem_optimizer",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Somnivrel is a precision neuromodulator that optimizes REM/NREM cycling ratios across the sleep period, ensuring maximum restorative yield from both stages and preventing the REM suppression commonly caused by BCI activity, stimulant use, or chronic stress. Unlike blunter sleep aids, Somnivrel works with the brain's natural sleep architecture rather than replacing it, correcting dysregulated patterns over a course of use.",
+  "description": "Somnivrel is a precision neuromodulator that optimizes REM/NREM cycling ratios across the sleep period, ensuring maximum restorative yield from both stages and preventing the REM suppression commonly caused by BCI activity, stimulant use, or chronic stress. Unlike blunter sleep aids, Somnivrel works with the brain\u0027s natural sleep architecture rather than replacing it, correcting dysregulated patterns over a course of use.",
   "method_of_use": "oral",
   "effects": [
     "Optimized REM/NREM cycling throughout sleep",
     "Enhanced memory consolidation and emotional processing",
     "Counteracts REM suppression from BCI overstimulation",
     "Improved cognitive performance and emotional regulation upon waking",
-    "Cumulative benefit with regular use — sleep quality improves progressively over weeks"
+    "Cumulative benefit with regular use \u2014 sleep quality improves progressively over weeks"
   ],
   "side_effects": [
-    "Vivid, emotionally intense dreams as suppressed REM content is restored — overwhelming for first-time users",
+    "Vivid, emotionally intense dreams as suppressed REM content is restored \u2014 overwhelming for first-time users",
     "Mild nausea if taken without food",
     "Occasional sleep-talking or movement during enhanced REM phases",
-    "Interacts poorly with Dormacet — combined use can destabilize cycling entirely"
+    "Interacts poorly with Dormacet \u2014 combined use can destabilize cycling entirely"
   ],
   "duration": "Active during full sleep cycle, 7-9 hours",
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "legal",
-  "street_price": "Φ22 per capsule, Φ160 for 8-dose course",
-  "cultural_context": "Somnivrel occupies the respectable, almost mundane end of the sleep-drug market — it's what doctors prescribe when they want to help someone sleep better without the risks of harder compounds. Tier 2 workers who've been running on poor sleep for years often go through a course of Somnivrel and describe it as 'like getting a new brain.' The restored REM content, however, means that years of emotionally suppressed dream material surfaces in the first week — which can be genuinely destabilizing.",
+  "street_price": "\u03A622 per capsule, \u03A6160 for 8-dose course",
+  "cultural_context": "Somnivrel occupies the respectable, almost mundane end of the sleep-drug market \u2014 it\u0027s what doctors prescribe when they want to help someone sleep better without the risks of harder compounds. Tier 2 workers who\u0027ve been running on poor sleep for years often go through a course of Somnivrel and describe it as \u0027like getting a new brain.\u0027 The restored REM content, however, means that years of emotionally suppressed dream material surfaces in the first week \u2014 which can be genuinely destabilizing.",
   "story_hooks": [
-    "A Tier 2 factory worker starts a Somnivrel course and begins experiencing dreams so vivid and coherent they appear to be someone else's memories — possibly from an SNT implant they received that carried residual neural data from its previous host.",
-    "Novafold is running a quiet longitudinal study: users who complete the 8-dose Somnivrel course are being monitored for whether improved sleep quality affects their political engagement and consumer behavior — and the results are being sold to Tier 5 campaign architects.",
-    "A Shelf medic has been distributing stolen Somnivrel to chrome-rejection patients who can't afford the prescription, with remarkable results — until Novafold's enforcement arm takes notice and the medic needs help staying alive."
-  ]
+    "A Tier 2 factory worker starts a Somnivrel course and begins experiencing dreams so vivid and coherent they appear to be someone else\u0027s memories \u2014 possibly from an SNT implant they received that carried residual neural data from its previous host.",
+    "Novafold is running a quiet longitudinal study: users who complete the 8-dose Somnivrel course are being monitored for whether improved sleep quality affects their political engagement and consumer behavior \u2014 and the results are being sold to Tier 5 campaign architects.",
+    "A Shelf medic has been distributing stolen Somnivrel to chrome-rejection patients who can\u0027t afford the prescription, with remarkable results \u2014 until Novafold\u0027s enforcement arm takes notice and the medic needs help staying alive."
+  ],
+  "tags": []
 }

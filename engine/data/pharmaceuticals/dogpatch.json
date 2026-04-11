@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a4764e9d2ac784cfb0d6fe",
   "name": "Dogpatch",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,8 +9,8 @@
   ],
   "category": "street_concoction",
   "subcategory": "repurposed veterinary sedative",
-  "manufacturer": "Unknown — believed to originate from stolen veterinary clinic stock, repackaged by Shelf distributors",
-  "description": "Expired large-animal sedative (originally formulated for synthetic livestock in GLMZ's vertical farm complexes) dissolved in ethanol and cut with an over-the-counter antihistamine. Produces a heavy, dissociative sedation that Shelf residents use for pain management, sleep, and escaping psychological distress. The green tint comes from the original veterinary dye still present in the expired compound.",
+  "manufacturer": "Unknown \u2014 believed to originate from stolen veterinary clinic stock, repackaged by Shelf distributors",
+  "description": "Expired large-animal sedative (originally formulated for synthetic livestock in GLMZ\u0027s vertical farm complexes) dissolved in ethanol and cut with an over-the-counter antihistamine. Produces a heavy, dissociative sedation that Shelf residents use for pain management, sleep, and escaping psychological distress. The green tint comes from the original veterinary dye still present in the expired compound.",
   "method_of_use": "oral",
   "effects": [
     "deep sedation and dissociation",
@@ -18,7 +19,7 @@
     "mild hallucination at threshold doses"
   ],
   "side_effects": [
-    "respiratory depression — the leading cause of overdose death on the Shelf",
+    "respiratory depression \u2014 the leading cause of overdose death on the Shelf",
     "liver damage with chronic use",
     "waking paralysis episodes",
     "severe dehydration",
@@ -28,11 +29,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "Φ3-6 per bottle",
-  "cultural_context": "Dogpatch is what people take when they can't afford to feel anymore. Chronic pain from unaugmented physical labor, untreated injuries, and psychological trauma from Shelf life make it ubiquitous. Street medics consider it the most dangerous drug on the Shelf not because of addiction but because the lethal dose varies wildly batch to batch. Some Shelf communities have informal 'watchers' who sit with Dogpatch users to make sure they keep breathing.",
+  "street_price": "\u03A63-6 per bottle",
+  "cultural_context": "Dogpatch is what people take when they can\u0027t afford to feel anymore. Chronic pain from unaugmented physical labor, untreated injuries, and psychological trauma from Shelf life make it ubiquitous. Street medics consider it the most dangerous drug on the Shelf not because of addiction but because the lethal dose varies wildly batch to batch. Some Shelf communities have informal \u0027watchers\u0027 who sit with Dogpatch users to make sure they keep breathing.",
   "story_hooks": [
-    "A batch of Dogpatch has hit the Shelf with three times the normal potency — people are dying in their sleep, and someone needs to trace the supply chain before more die",
-    "A Tier 3 pharmacist has been quietly donating expired veterinary stock to a Shelf clinic, not knowing it's being converted into Dogpatch downstream",
-    "A Shelf watcher who has kept vigil over Dogpatch users for years is now dying of liver failure herself — her community wants to get her into a Tier 3 hospital, which will require navigating corporate healthcare bureaucracy"
-  ]
+    "A batch of Dogpatch has hit the Shelf with three times the normal potency \u2014 people are dying in their sleep, and someone needs to trace the supply chain before more die",
+    "A Tier 3 pharmacist has been quietly donating expired veterinary stock to a Shelf clinic, not knowing it\u0027s being converted into Dogpatch downstream",
+    "A Shelf watcher who has kept vigil over Dogpatch users for years is now dying of liver failure herself \u2014 her community wants to get her into a Tier 3 hospital, which will require navigating corporate healthcare bureaucracy"
+  ],
+  "tags": []
 }

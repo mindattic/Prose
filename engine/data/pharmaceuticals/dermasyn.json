@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a17a6e8c9b48a7eee7667f",
   "name": "Dermasyn",
   "type": "pharmaceutical",
   "aliases": [
@@ -25,15 +26,16 @@
     "rare: paradoxical fibrosis in patients with certain genetic profiles",
     "not effective for internal scarring without injectable formulation"
   ],
-  "duration": "continuous — patch replaced every 3 days",
+  "duration": "continuous \u2014 patch replaced every 3 days",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "legal",
-  "street_price": "Φ30–Φ65 per patch",
-  "cultural_context": "Dermasyn addresses something that matters deeply in GLMZ's augmentation culture: the look of the chrome-skin interface. A clean, smooth merge between organic and synthetic is a point of pride; thick, ropy scarring at implant sites marks poor surgical care, Shelf-grade installation, or inability to afford proper post-op medication. Tier 4-5 users use premium Dermasyn formulations that leave interfaces virtually invisible. On the Shelf, augment scars are common and sometimes worn as marks of identity — the 'raw edge' aesthetic of visible, unmedicated chrome interfaces has become a Tier 1 cultural symbol of authenticity versus the 'smooth' of the upper tiers.",
+  "street_price": "\u03A630\u2013\u03A665 per patch",
+  "cultural_context": "Dermasyn addresses something that matters deeply in GLMZ\u0027s augmentation culture: the look of the chrome-skin interface. A clean, smooth merge between organic and synthetic is a point of pride; thick, ropy scarring at implant sites marks poor surgical care, Shelf-grade installation, or inability to afford proper post-op medication. Tier 4-5 users use premium Dermasyn formulations that leave interfaces virtually invisible. On the Shelf, augment scars are common and sometimes worn as marks of identity \u2014 the \u0027raw edge\u0027 aesthetic of visible, unmedicated chrome interfaces has become a Tier 1 cultural symbol of authenticity versus the \u0027smooth\u0027 of the upper tiers.",
   "story_hooks": [
-    "A Tier 3 cosmetic augment surgeon is being blackmailed — someone has evidence they've been using off-spec Dermasyn that looks good short-term but causes progressive internal fibrosis around implants, quietly destroying clients' augment function over years.",
-    "The 'raw edge' aesthetic has become politically charged — a Shelf rights movement is using visible augment scars as a symbol, and a Tier 4 fashion house has appropriated the look using cosmetic scarring, causing a furious cultural conflict.",
-    "A Novafold chemist has accidentally discovered that Dermasyn's scar-remodeling peptides, at high concentrations, can dissolve the fibrous capsules that form around poorly integrated SNT — potentially offering a non-surgical fix for thousands of people with botched SNT installations."
-  ]
+    "A Tier 3 cosmetic augment surgeon is being blackmailed \u2014 someone has evidence they\u0027ve been using off-spec Dermasyn that looks good short-term but causes progressive internal fibrosis around implants, quietly destroying clients\u0027 augment function over years.",
+    "The \u0027raw edge\u0027 aesthetic has become politically charged \u2014 a Shelf rights movement is using visible augment scars as a symbol, and a Tier 4 fashion house has appropriated the look using cosmetic scarring, causing a furious cultural conflict.",
+    "A Novafold chemist has accidentally discovered that Dermasyn\u0027s scar-remodeling peptides, at high concentrations, can dissolve the fibrous capsules that form around poorly integrated SNT \u2014 potentially offering a non-surgical fix for thousands of people with botched SNT installations."
+  ],
+  "tags": []
 }

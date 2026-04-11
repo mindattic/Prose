@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6c57506932d47cc98873b00",
   "name": "Organex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "synthetic organ maintenance",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Organex is a comprehensive maintenance compound for synthetic and hybrid organ systems, delivering a precisely formulated combination of enzymatic precursors, SNT nutrition factors, and anti-degradation compounds that keep artificial organs functioning at specification. Synthetic hearts, lungs, livers, and kidneys all require regular Organex supplementation — without it, synthetic organ efficiency degrades by approximately 3–5% per month, eventually leading to organ failure.",
+  "description": "Organex is a comprehensive maintenance compound for synthetic and hybrid organ systems, delivering a precisely formulated combination of enzymatic precursors, SNT nutrition factors, and anti-degradation compounds that keep artificial organs functioning at specification. Synthetic hearts, lungs, livers, and kidneys all require regular Organex supplementation \u2014 without it, synthetic organ efficiency degrades by approximately 3\u20135% per month, eventually leading to organ failure.",
   "method_of_use": "oral",
   "effects": [
     "maintenance of synthetic organ performance at design specifications",
@@ -29,11 +30,12 @@
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "legal",
-  "street_price": "Φ15–Φ40 per day",
-  "cultural_context": "Organex is a life drug in the most literal sense — anyone with a synthetic organ dies without it. The tiered pricing model is a source of ongoing political rage: the Lazarus generic is functional but associated with faster organ degradation over years, while the premium formulation demonstrably extends synthetic organ life. Tier 1 residents with synthetic organs are in a permanent financial bind. Organex theft and counterfeiting is a major criminal enterprise on the Shelf. The phrase 'down to my last Organex' means someone is close to the edge of survival.",
+  "street_price": "\u03A615\u2013\u03A640 per day",
+  "cultural_context": "Organex is a life drug in the most literal sense \u2014 anyone with a synthetic organ dies without it. The tiered pricing model is a source of ongoing political rage: the Lazarus generic is functional but associated with faster organ degradation over years, while the premium formulation demonstrably extends synthetic organ life. Tier 1 residents with synthetic organs are in a permanent financial bind. Organex theft and counterfeiting is a major criminal enterprise on the Shelf. The phrase \u0027down to my last Organex\u0027 means someone is close to the edge of survival.",
   "story_hooks": [
-    "A counterfeiting operation has flooded the Tier 1-2 market with Organex that looks identical to the real product but contains no active compounds — people with synthetic organs are beginning to degrade and don't know why.",
-    "A Lazarus executive with a synthetic heart has been found dead — their Organex was replaced with a compound that accelerated organ failure over six weeks, perfectly mimicking natural degradation.",
-    "A Shelf community has organized a collective Organex purchase program — buying bulk and distributing it at cost — and Lazarus is using every legal tool available to shut it down."
-  ]
+    "A counterfeiting operation has flooded the Tier 1-2 market with Organex that looks identical to the real product but contains no active compounds \u2014 people with synthetic organs are beginning to degrade and don\u0027t know why.",
+    "A Lazarus executive with a synthetic heart has been found dead \u2014 their Organex was replaced with a compound that accelerated organ failure over six weeks, perfectly mimicking natural degradation.",
+    "A Shelf community has organized a collective Organex purchase program \u2014 buying bulk and distributing it at cost \u2014 and Lazarus is using every legal tool available to shut it down."
+  ],
+  "tags": []
 }

@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e771368d39dea156f51c7d",
   "name": "Velocet",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "processing_speed_enhancement",
   "manufacturer": "Helix Biosystems",
-  "description": "Velocet is a synthetic SNT-interface accelerant that temporarily increases the signal propagation speed across the organic-synthetic boundary in BCI-augmented users. Thought happens faster — not more accurately, but faster — creating a subjective experience of time dilation where the world seems to slow while the user's mind races ahead. Helix markets it to high-frequency analysts and trading-floor operators who need to process data streams in real time.",
+  "description": "Velocet is a synthetic SNT-interface accelerant that temporarily increases the signal propagation speed across the organic-synthetic boundary in BCI-augmented users. Thought happens faster \u2014 not more accurately, but faster \u2014 creating a subjective experience of time dilation where the world seems to slow while the user\u0027s mind races ahead. Helix markets it to high-frequency analysts and trading-floor operators who need to process data streams in real time.",
   "method_of_use": "neural_direct",
   "effects": [
     "Subjective time dilation (perceived thought speed 2-3x baseline)",
@@ -19,10 +20,10 @@
     "Reduced latency between cognition and BCI command execution"
   ],
   "side_effects": [
-    "Severe temporal disorientation post-dose — the world feels crushingly slow for hours afterward",
+    "Severe temporal disorientation post-dose \u2014 the world feels crushingly slow for hours afterward",
     "Neural interface overheating risk with extended use",
     "Micro-seizures in users with substandard BCI hardware",
-    "Cognitive fragmentation — thoughts accelerate past the user's ability to anchor them, producing racing-thought anxiety",
+    "Cognitive fragmentation \u2014 thoughts accelerate past the user\u0027s ability to anchor them, producing racing-thought anxiety",
     "Long-term use associated with SNT degradation at the organic-synthetic interface",
     "Tachycardia and elevated blood pressure"
   ],
@@ -30,11 +31,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 4-5",
   "legality": "restricted",
-  "street_price": "Φ 85 per neural cartridge",
-  "cultural_context": "Velocet is the Spire's performance drug — the thing that Tier 4 analysts and Tier 5 traders use to stay competitive in markets that move faster than unaugmented human cognition. It requires a high-quality BCI to use safely, which naturally prices out the lower tiers. Street versions called Quicksilver exist, synthesized by gray-market labs and loaded into cheap neural cartridges — these have a dangerous reputation for causing seizures in users with budget-tier BCIs. The drug has created a class of workers who are physically incapable of doing their jobs without it, which suits their employers fine.",
+  "street_price": "\u03A6 85 per neural cartridge",
+  "cultural_context": "Velocet is the Spire\u0027s performance drug \u2014 the thing that Tier 4 analysts and Tier 5 traders use to stay competitive in markets that move faster than unaugmented human cognition. It requires a high-quality BCI to use safely, which naturally prices out the lower tiers. Street versions called Quicksilver exist, synthesized by gray-market labs and loaded into cheap neural cartridges \u2014 these have a dangerous reputation for causing seizures in users with budget-tier BCIs. The drug has created a class of workers who are physically incapable of doing their jobs without it, which suits their employers fine.",
   "story_hooks": [
-    "A Tier 5 trading firm is quietly dosing its analyst pool with Velocet through the office's atmospheric system — the analysts don't know they're running hot, and their BCI hardware is beginning to fail in ways that could cascade catastrophically during a major market event.",
-    "A street version of Velocet has appeared on the Shelf, priced for Tier 1 access — someone is deliberately flooding the low-tier market with a product that destroys cheap BCIs, and the Shelf's already-limited neural infrastructure is beginning to collapse.",
-    "A Velocet-addicted analyst experienced a cognitive fragmentation episode during a dose and made a series of decisions that seemed rational at 3x speed but were catastrophically wrong at normal tempo — now the fallout from those decisions is unspooling, and they can't explain their reasoning without admitting what they were on."
-  ]
+    "A Tier 5 trading firm is quietly dosing its analyst pool with Velocet through the office\u0027s atmospheric system \u2014 the analysts don\u0027t know they\u0027re running hot, and their BCI hardware is beginning to fail in ways that could cascade catastrophically during a major market event.",
+    "A street version of Velocet has appeared on the Shelf, priced for Tier 1 access \u2014 someone is deliberately flooding the low-tier market with a product that destroys cheap BCIs, and the Shelf\u0027s already-limited neural infrastructure is beginning to collapse.",
+    "A Velocet-addicted analyst experienced a cognitive fragmentation episode during a dose and made a series of decisions that seemed rational at 3x speed but were catastrophically wrong at normal tempo \u2014 now the fallout from those decisions is unspooling, and they can\u0027t explain their reasoning without admitting what they were on."
+  ],
+  "tags": []
 }

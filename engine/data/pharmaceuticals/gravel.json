@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b07dbbb8e09441ac8d7f37",
   "name": "Gravel",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,8 +9,8 @@
   ],
   "category": "street_concoction",
   "subcategory": "bathtub stimulant",
-  "manufacturer": "Various Shelf cooks, commonly attributed to a distributor called 'Mamo' in the Chicago South Shelf",
-  "description": "A crude amphetamine analogue cooked from stolen hospital ephedrine stock, battery acid neutralized with baking soda, and industrial degreaser. The name comes from the visible particulate matter suspended in the product — it never fully dissolves. Delivers a hard, jittery stimulant rush that keeps Shelf workers functional through brutal double shifts.",
+  "manufacturer": "Various Shelf cooks, commonly attributed to a distributor called \u0027Mamo\u0027 in the Chicago South Shelf",
+  "description": "A crude amphetamine analogue cooked from stolen hospital ephedrine stock, battery acid neutralized with baking soda, and industrial degreaser. The name comes from the visible particulate matter suspended in the product \u2014 it never fully dissolves. Delivers a hard, jittery stimulant rush that keeps Shelf workers functional through brutal double shifts.",
   "method_of_use": "injection",
   "effects": [
     "intense stimulant rush",
@@ -29,11 +30,12 @@
   "addiction_risk": "extreme",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "Φ4-8 per dose",
-  "cultural_context": "Gravel is the fuel of the Shelf economy. Dock workers, scrap haulers, and night-shift assemblers use it to push through work that would otherwise be physically impossible. There's no shame in it at Tier 1 — it's survival. Long-term users develop a distinctive hand tremor called 'the gravel shake' that marks them visually. Tier 2 workers look down on it; Shelf residents look at it as a necessary evil.",
+  "street_price": "\u03A64-8 per dose",
+  "cultural_context": "Gravel is the fuel of the Shelf economy. Dock workers, scrap haulers, and night-shift assemblers use it to push through work that would otherwise be physically impossible. There\u0027s no shame in it at Tier 1 \u2014 it\u0027s survival. Long-term users develop a distinctive hand tremor called \u0027the gravel shake\u0027 that marks them visually. Tier 2 workers look down on it; Shelf residents look at it as a necessary evil.",
   "story_hooks": [
-    "A Shelf community is losing workers to mass cardiac events — someone cut this batch of Gravel with an industrial coagulant, and nobody knows if it was accident or sabotage",
+    "A Shelf community is losing workers to mass cardiac events \u2014 someone cut this batch of Gravel with an industrial coagulant, and nobody knows if it was accident or sabotage",
     "A Tier 3 journalist wants to embed with Gravel users to expose labor conditions, but she quickly realizes the story is more complicated than she expected",
     "The cook known as Mamo has gone missing, and three different Shelf factions are tearing the district apart looking for her recipe"
-  ]
+  ],
+  "tags": []
 }

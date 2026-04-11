@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6eb75a2983e91bbe855a612",
   "name": "Vigrathen",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,30 +10,31 @@
   "category": "sleep_dream",
   "subcategory": "sleep_eliminator",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Vigrathen is a synthetic adenosine antagonist and SNT-repair compound that eliminates sleep pressure entirely for 60-76 hours by continuously clearing metabolic waste from neural tissue that would otherwise require sleep to process. Cognitive performance remains stable across the entire active window; the compound actively repairs synaptic efficiency in real time rather than deferring it. The crash is physiologically mandatory and catastrophic — the body claims what it's owed.",
+  "description": "Vigrathen is a synthetic adenosine antagonist and SNT-repair compound that eliminates sleep pressure entirely for 60-76 hours by continuously clearing metabolic waste from neural tissue that would otherwise require sleep to process. Cognitive performance remains stable across the entire active window; the compound actively repairs synaptic efficiency in real time rather than deferring it. The crash is physiologically mandatory and catastrophic \u2014 the body claims what it\u0027s owed.",
   "method_of_use": "injection",
   "effects": [
     "Complete elimination of sleep need for 60-76 hours",
-    "Sustained cognitive performance — no degradation curve",
+    "Sustained cognitive performance \u2014 no degradation curve",
     "Enhanced sensory acuity in hours 12-36",
     "Emotional flatness in hours 48-72 (neurological conservation response)"
   ],
   "side_effects": [
     "Mandatory crash: 18-22 hours of comatose sleep upon cessation or compound clearance",
-    "Dangerous if crash occurs in unsafe environment — user is essentially unconscious and unresponsive",
+    "Dangerous if crash occurs in unsafe environment \u2014 user is essentially unconscious and unresponsive",
     "Repeated use causes progressive crash severity",
-    "Rare: 'false ceiling' — user believes they are functional in hour 70+ but cognition has silently collapsed",
+    "Rare: \u0027false ceiling\u0027 \u2014 user believes they are functional in hour 70\u002B but cognition has silently collapsed",
     "Cardiovascular strain; not recommended with chrome above 30% body integration"
   ],
   "duration": "60-76 hours active, followed by mandatory 18-22 hour crash",
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ45 per injection",
-  "cultural_context": "Vigrathen is the drug of desperation and deadline. Shelf operators use it during gang conflicts when sleep means death. Tier 2 contract workers facing impossible delivery windows use it under the table. Corporate black ops teams used military analogs during the Corridor Wars. Nightshade markets it through proxies with studied deniability. The crash is the real danger — GLMZ's emergency wards see multiple Vigrathen-crash patients weekly, found unconscious in uncontrolled environments.",
+  "street_price": "\u03A645 per injection",
+  "cultural_context": "Vigrathen is the drug of desperation and deadline. Shelf operators use it during gang conflicts when sleep means death. Tier 2 contract workers facing impossible delivery windows use it under the table. Corporate black ops teams used military analogs during the Corridor Wars. Nightshade markets it through proxies with studied deniability. The crash is the real danger \u2014 GLMZ\u0027s emergency wards see multiple Vigrathen-crash patients weekly, found unconscious in uncontrolled environments.",
   "story_hooks": [
-    "A Shelf runner who took Vigrathen for a 60-hour job crashes in the middle of an alley — and wakes up 20 hours later to find someone has used their unresponsive body as an unwitting drug mule, surgically inserting a package they were never meant to know about.",
-    "Nightshade Pharmatech is testing a second-generation Vigrathen that eliminates the crash entirely — but the human trials on Shelf volunteers are showing that without ever sleeping, the test subjects are losing the ability to feel anything at all.",
-    "A Tier 4 executive running on Vigrathen for a hostile acquisition push hits the 'false ceiling' in hour 68 and makes a catastrophic decision they have no memory of — and no legal defense for."
-  ]
+    "A Shelf runner who took Vigrathen for a 60-hour job crashes in the middle of an alley \u2014 and wakes up 20 hours later to find someone has used their unresponsive body as an unwitting drug mule, surgically inserting a package they were never meant to know about.",
+    "Nightshade Pharmatech is testing a second-generation Vigrathen that eliminates the crash entirely \u2014 but the human trials on Shelf volunteers are showing that without ever sleeping, the test subjects are losing the ability to feel anything at all.",
+    "A Tier 4 executive running on Vigrathen for a hostile acquisition push hits the \u0027false ceiling\u0027 in hour 68 and makes a catastrophic decision they have no memory of \u2014 and no legal defense for."
+  ],
+  "tags": []
 }

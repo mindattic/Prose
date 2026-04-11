@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6bc736fa46878cd90bedd1c",
   "name": "Morticaine",
   "type": "pharmaceutical",
   "aliases": [
@@ -7,9 +8,9 @@
     "Clean"
   ],
   "category": "poison_toxin",
-  "subcategory": "fast-acting assassination agent — contact lethality",
-  "manufacturer": "Unknown — believed to originate from a disavowed GLMZ city-state intelligence operation",
-  "description": "Morticaine is a contact-active toxin delivered via specialized dermal applicator — handshake delivery, door handle loading, or fabric impregnation. It penetrates intact skin within 90 seconds, achieves fatal CNS depression within 4-7 minutes, and presents post-mortem as acute respiratory failure. It is thermally stable, colorless, odorless, and degrades completely within 6 hours of administration — leaving no detectable trace. It is the cleanest assassination compound in GLMZ's underworld pharmacopeia.",
+  "subcategory": "fast-acting assassination agent \u2014 contact lethality",
+  "manufacturer": "Unknown \u2014 believed to originate from a disavowed GLMZ city-state intelligence operation",
+  "description": "Morticaine is a contact-active toxin delivered via specialized dermal applicator \u2014 handshake delivery, door handle loading, or fabric impregnation. It penetrates intact skin within 90 seconds, achieves fatal CNS depression within 4-7 minutes, and presents post-mortem as acute respiratory failure. It is thermally stable, colorless, odorless, and degrades completely within 6 hours of administration \u2014 leaving no detectable trace. It is the cleanest assassination compound in GLMZ\u0027s underworld pharmacopeia.",
   "method_of_use": "dermal_patch",
   "effects": [
     "rapid transdermal absorption",
@@ -19,20 +20,21 @@
     "post-mortem presentation identical to natural acute respiratory failure"
   ],
   "side_effects": [
-    "operator risk is extreme — applicator failure or skin contact without protection is lethal",
-    "subjects with dermal augmentation (subdermal armor plating, synthetic skin grafts) may have delayed absorption — extending survival window and potentially allowing intervention",
-    "extremely rare: subjects with certain SNT metabolic profiles show partial resistance — survival with permanent neurological damage rather than death",
-    "no antidote exists — once absorbed past the 60-second mark, the outcome is terminal"
+    "operator risk is extreme \u2014 applicator failure or skin contact without protection is lethal",
+    "subjects with dermal augmentation (subdermal armor plating, synthetic skin grafts) may have delayed absorption \u2014 extending survival window and potentially allowing intervention",
+    "extremely rare: subjects with certain SNT metabolic profiles show partial resistance \u2014 survival with permanent neurological damage rather than death",
+    "no antidote exists \u2014 once absorbed past the 60-second mark, the outcome is terminal"
   ],
   "duration": "4-7 minutes to fatal outcome; compound degrades to undetectable within 6 hours",
   "addiction_risk": "none",
   "tier_availability": "Tier 4-5",
   "legality": "illegal",
-  "street_price": "Φ 25,000–40,000 per applicator",
-  "cultural_context": "Morticaine operates at the apex of GLMZ's assassination economy — the price point alone limits it to Spire-level contracts. It is the tool of state-adjacent actors, Tier 5 succession politics, and the most elite fixer networks. The cultural understanding is simple: if someone dies of sudden respiratory failure in a professional context in GLMZ, the first question asked in certain circles is always 'was it the Kiss?' The answer is usually no. Sometimes it isn't.",
+  "street_price": "\u03A6 25,000\u201340,000 per applicator",
+  "cultural_context": "Morticaine operates at the apex of GLMZ\u0027s assassination economy \u2014 the price point alone limits it to Spire-level contracts. It is the tool of state-adjacent actors, Tier 5 succession politics, and the most elite fixer networks. The cultural understanding is simple: if someone dies of sudden respiratory failure in a professional context in GLMZ, the first question asked in certain circles is always \u0027was it the Kiss?\u0027 The answer is usually no. Sometimes it isn\u0027t.",
   "story_hooks": [
-    "A Tier 5 diplomat dies of apparent respiratory failure during a trade summit. The coroner finds nothing. One investigator, running an unofficial panel, finds a metabolic ghost — the faintest trace of a degraded compound they almost don't recognize. Almost.",
-    "A fixer is given a Morticaine applicator and a target. The target is a child. The fixer has to decide what they're willing to do — and then deal with whoever sent the contract when they refuse.",
-    "Someone is selling counterfeit Morticaine — inert compound in authentic applicators. Buyers are paying Spire prices for nothing. When a contract fails and the target survives, the operator is now exposed and the counterfeit supplier is the only thread."
-  ]
+    "A Tier 5 diplomat dies of apparent respiratory failure during a trade summit. The coroner finds nothing. One investigator, running an unofficial panel, finds a metabolic ghost \u2014 the faintest trace of a degraded compound they almost don\u0027t recognize. Almost.",
+    "A fixer is given a Morticaine applicator and a target. The target is a child. The fixer has to decide what they\u0027re willing to do \u2014 and then deal with whoever sent the contract when they refuse.",
+    "Someone is selling counterfeit Morticaine \u2014 inert compound in authentic applicators. Buyers are paying Spire prices for nothing. When a contract fails and the target survives, the operator is now exposed and the counterfeit supplier is the only thread."
+  ],
+  "tags": []
 }

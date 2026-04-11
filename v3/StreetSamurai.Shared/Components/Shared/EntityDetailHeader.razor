@@ -21,7 +21,7 @@
         <div class="entity-detail-tags">
             @foreach (var tag in Tags.Take(10))
             {
-                <span class="entity-tag">@tag</span>
+                <a href="/search?tag=@Uri.EscapeDataString(tag)" class="entity-tag entity-tag-link">@tag</a>
             }
         </div>
     }

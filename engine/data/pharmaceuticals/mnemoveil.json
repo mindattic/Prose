@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6bb7d3abcb61dbeb6d621c3",
   "name": "Mnemoveil",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "recreational",
   "subcategory": "memory replay / anamnetic euphoriant",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Mnemoveil is an anamnetic compound that binds to hippocampal consolidation sites and, in conjunction with BCI memory indexing, allows users to re-experience stored memories with full sensory fidelity — not as recollection but as re-living. The memory plays back through the brain's own sensory systems with complete immersive authenticity, indistinguishable from present experience except for a faint golden warmth at the edges that users describe as 'knowing it's perfect.' Lazarus positions it as a therapeutic tool for grief processing and PTSD treatment.",
+  "description": "Mnemoveil is an anamnetic compound that binds to hippocampal consolidation sites and, in conjunction with BCI memory indexing, allows users to re-experience stored memories with full sensory fidelity \u2014 not as recollection but as re-living. The memory plays back through the brain\u0027s own sensory systems with complete immersive authenticity, indistinguishable from present experience except for a faint golden warmth at the edges that users describe as \u0027knowing it\u0027s perfect.\u0027 Lazarus positions it as a therapeutic tool for grief processing and PTSD treatment.",
   "method_of_use": "neural_direct",
   "effects": [
     "Full-sensory immersive memory replay",
@@ -20,20 +21,21 @@
   ],
   "side_effects": [
     "Severe present-reality dissatisfaction after repeated use",
-    "Difficulty forming new positive memories — nothing competes with perfect recall of old ones",
-    "Memory contamination — replayed memories gradually drift from actual events",
+    "Difficulty forming new positive memories \u2014 nothing competes with perfect recall of old ones",
+    "Memory contamination \u2014 replayed memories gradually drift from actual events",
     "Emotional detachment from current relationships",
     "Extreme: users who replay a single memory obsessively until it overwrites present identity"
   ],
-  "duration": "Duration of chosen memory (compressed or extended) — subjectively 20 minutes to 4 hours",
+  "duration": "Duration of chosen memory (compressed or extended) \u2014 subjectively 20 minutes to 4 hours",
   "addiction_risk": "extreme",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 320 per dose",
-  "cultural_context": "Mnemoveil is GLMZ's quietest catastrophe. It entered the market as a legitimate grief therapy and PTSD treatment — and it works, genuinely, for those applications. But the recreational use that followed has created a class of users called 'Archivers' who live increasingly inside their own pasts. In Tier 3 and 4, Archiver communities exist — people who share doses, curate their replay libraries, and slowly stop engaging with the present. On the Shelf, a cut version called Yesterday circulates; it can't interface with BCI memory indexing precisely, so it replays memories with distortions — users sometimes prefer the distorted version, which has become more beautiful than the original.",
+  "street_price": "\u03A6 320 per dose",
+  "cultural_context": "Mnemoveil is GLMZ\u0027s quietest catastrophe. It entered the market as a legitimate grief therapy and PTSD treatment \u2014 and it works, genuinely, for those applications. But the recreational use that followed has created a class of users called \u0027Archivers\u0027 who live increasingly inside their own pasts. In Tier 3 and 4, Archiver communities exist \u2014 people who share doses, curate their replay libraries, and slowly stop engaging with the present. On the Shelf, a cut version called Yesterday circulates; it can\u0027t interface with BCI memory indexing precisely, so it replays memories with distortions \u2014 users sometimes prefer the distorted version, which has become more beautiful than the original.",
   "story_hooks": [
-    "A grieving parent has been on Mnemoveil for eight months, replaying the same three months of their child's life — they've stopped eating regularly and their employer has flagged their performance decline, but they won't stop because inside the memory, their child is still alive",
-    "Memory contamination from extended Mnemoveil use means a witness to a crime can no longer reliably distinguish what they actually saw from their replayed, drifted version — a defense attorney wants to exploit this, and a prosecutor wants to suppress it",
-    "Someone is selling custom Mnemoveil doses pre-loaded with other people's memories — beautiful, curated lives for rent — and no one is sure if the source memories are donated, purchased, or stolen"
-  ]
+    "A grieving parent has been on Mnemoveil for eight months, replaying the same three months of their child\u0027s life \u2014 they\u0027ve stopped eating regularly and their employer has flagged their performance decline, but they won\u0027t stop because inside the memory, their child is still alive",
+    "Memory contamination from extended Mnemoveil use means a witness to a crime can no longer reliably distinguish what they actually saw from their replayed, drifted version \u2014 a defense attorney wants to exploit this, and a prosecutor wants to suppress it",
+    "Someone is selling custom Mnemoveil doses pre-loaded with other people\u0027s memories \u2014 beautiful, curated lives for rent \u2014 and no one is sure if the source memories are donated, purchased, or stolen"
+  ],
+  "tags": []
 }

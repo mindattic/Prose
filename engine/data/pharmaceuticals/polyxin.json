@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6cc781db8b3dc13a918ecb6",
   "name": "Polyxin",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "cognitive_enhancer",
   "subcategory": "multitasking_parallel_processing",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Polyxin is a prefrontal cortex modulator that temporarily fragments attentional resources into parallel tracks, allowing the user to genuinely sustain multiple active cognitive tasks simultaneously rather than rapidly context-switching. It works by suppressing the brain's natural attentional bottleneck mechanisms, enabling 3-5 discrete task streams to run concurrently with minimal performance degradation across each. Widely used by operations managers, air traffic coordinators, and crisis response professionals.",
+  "description": "Polyxin is a prefrontal cortex modulator that temporarily fragments attentional resources into parallel tracks, allowing the user to genuinely sustain multiple active cognitive tasks simultaneously rather than rapidly context-switching. It works by suppressing the brain\u0027s natural attentional bottleneck mechanisms, enabling 3-5 discrete task streams to run concurrently with minimal performance degradation across each. Widely used by operations managers, air traffic coordinators, and crisis response professionals.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Genuine parallel processing across 3-5 simultaneous task streams",
@@ -19,8 +20,8 @@
     "Reduced cognitive fatigue during high-load multitask environments"
   ],
   "side_effects": [
-    "Inability to prioritize — all tasks feel equally urgent",
-    "Fractured sense of self — users report feeling like multiple people",
+    "Inability to prioritize \u2014 all tasks feel equally urgent",
+    "Fractured sense of self \u2014 users report feeling like multiple people",
     "Post-dose difficulty returning to single-task focus for hours",
     "Sleep disruption: brain continues attempting to run parallel processes",
     "Long-term: baseline inability to concentrate on single task without pharmaceutical support",
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 30-45 per patch",
-  "cultural_context": "Polyxin is the drug of operational complexity — worn as a patch by logistics managers, emergency dispatchers, and anyone whose job requires holding many threads simultaneously. Lazarus markets it heavily to corporate operations divisions. The street name 'Splitscreen' captures the phenomenology users describe: consciousness literally feels divided into panes. There's a growing philosophical controversy among heavy users about identity continuity — if you've been running four parallel cognitive streams for eight hours, which one is you? Tier 2 users get it through the black market for gig work that demands constant task-juggling.",
+  "street_price": "\u03A6 30-45 per patch",
+  "cultural_context": "Polyxin is the drug of operational complexity \u2014 worn as a patch by logistics managers, emergency dispatchers, and anyone whose job requires holding many threads simultaneously. Lazarus markets it heavily to corporate operations divisions. The street name \u0027Splitscreen\u0027 captures the phenomenology users describe: consciousness literally feels divided into panes. There\u0027s a growing philosophical controversy among heavy users about identity continuity \u2014 if you\u0027ve been running four parallel cognitive streams for eight hours, which one is you? Tier 2 users get it through the black market for gig work that demands constant task-juggling.",
   "story_hooks": [
-    "An emergency response coordinator has been on Polyxin for so long that she's lost the ability to experience anything as singular — she can't have a conversation without mentally managing three other things, and her therapist doesn't know how to treat someone whose sense of self has genuinely fragmented.",
-    "A Lazarus internal document leak reveals Polyxin's dissociative episode rate is three times higher than disclosed, and the corp has been classifying affected users as having 'pre-existing psychological vulnerabilities.'",
-    "A Shelf fixer has been running black-market Polyxin patches and using the parallel processing to coordinate multiple criminal operations simultaneously — she's become so effective she's attracting attention from people who want to either hire her or eliminate her."
-  ]
+    "An emergency response coordinator has been on Polyxin for so long that she\u0027s lost the ability to experience anything as singular \u2014 she can\u0027t have a conversation without mentally managing three other things, and her therapist doesn\u0027t know how to treat someone whose sense of self has genuinely fragmented.",
+    "A Lazarus internal document leak reveals Polyxin\u0027s dissociative episode rate is three times higher than disclosed, and the corp has been classifying affected users as having \u0027pre-existing psychological vulnerabilities.\u0027",
+    "A Shelf fixer has been running black-market Polyxin patches and using the parallel processing to coordinate multiple criminal operations simultaneously \u2014 she\u0027s become so effective she\u0027s attracting attention from people who want to either hire her or eliminate her."
+  ],
+  "tags": []
 }

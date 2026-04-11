@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c69b7a568d1a690185f74423",
   "name": "Clarivex",
   "type": "pharmaceutical",
   "aliases": [
@@ -19,7 +20,7 @@
     "Heightened motivation for current task"
   ],
   "side_effects": [
-    "Social blunting — difficulty reading interpersonal cues while active",
+    "Social blunting \u2014 difficulty reading interpersonal cues while active",
     "Post-dose rebound fatigue and irritability",
     "Appetite suppression",
     "Mild hypertension",
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ 18-25 per dose",
-  "cultural_context": "Clarivex is the quintessential corporate drug — so normalized in Tier 3-4 office environments that not taking it is seen as unprofessional or a sign of cognitive inadequacy. Analysts, data architects, and BCI-linked project managers run on it. The drug's emotional flatness during dosing has contributed to a documented increase in workplace depersonalization syndromes. On the Shelf, stolen or counterfeit Clarivex (street name 'Glass') is used by students in Tier 2 community academies who can't afford Lazarus pricing.",
+  "street_price": "\u03A6 18-25 per dose",
+  "cultural_context": "Clarivex is the quintessential corporate drug \u2014 so normalized in Tier 3-4 office environments that not taking it is seen as unprofessional or a sign of cognitive inadequacy. Analysts, data architects, and BCI-linked project managers run on it. The drug\u0027s emotional flatness during dosing has contributed to a documented increase in workplace depersonalization syndromes. On the Shelf, stolen or counterfeit Clarivex (street name \u0027Glass\u0027) is used by students in Tier 2 community academies who can\u0027t afford Lazarus pricing.",
   "story_hooks": [
-    "A Tier 4 analyst realizes she hasn't felt an authentic emotion during work hours in three years — every breakthrough, every crisis, every loss processed through Clarivex's emotional filter. She's been promoted twice and doesn't know who she is anymore.",
-    "A batch of counterfeit 'Glass' circulating through Tier 2 schools contains a dopamine cascade agent — students are becoming violently fixated on whatever they were doing when they dosed, unable to disengage for days.",
-    "A Lazarus whistleblower has data showing Clarivex's long-term focus-dependency effect was known during trials and suppressed — the drug was designed to create its own market."
-  ]
+    "A Tier 4 analyst realizes she hasn\u0027t felt an authentic emotion during work hours in three years \u2014 every breakthrough, every crisis, every loss processed through Clarivex\u0027s emotional filter. She\u0027s been promoted twice and doesn\u0027t know who she is anymore.",
+    "A batch of counterfeit \u0027Glass\u0027 circulating through Tier 2 schools contains a dopamine cascade agent \u2014 students are becoming violently fixated on whatever they were doing when they dosed, unable to disengage for days.",
+    "A Lazarus whistleblower has data showing Clarivex\u0027s long-term focus-dependency effect was known during trials and suppressed \u2014 the drug was designed to create its own market."
+  ],
+  "tags": []
 }

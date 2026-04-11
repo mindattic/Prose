@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6a77a46a90e4dc8dd25c0da",
   "name": "Dulsyn",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,30 +9,31 @@
   "category": "augment_interactive",
   "subcategory": "augment_sensitivity_modulator",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "A targeted sensory dampening compound that attenuates the haptic and proprioceptive feedback signals transmitted between chrome and the organic nervous system, reducing augment sensitivity to near-zero. Prescribed legitimately for patients experiencing hyperesthesia after new augment installation — the overwhelming sensory flood of suddenly having a robot arm that feels everything — and for individuals with augment-related chronic pain. On the street, it's used recreationally by people who want to feel nothing through their chrome, and tactically by operators who need to function through catastrophic augment damage without the pain signal shutting them down.",
+  "description": "A targeted sensory dampening compound that attenuates the haptic and proprioceptive feedback signals transmitted between chrome and the organic nervous system, reducing augment sensitivity to near-zero. Prescribed legitimately for patients experiencing hyperesthesia after new augment installation \u2014 the overwhelming sensory flood of suddenly having a robot arm that feels everything \u2014 and for individuals with augment-related chronic pain. On the street, it\u0027s used recreationally by people who want to feel nothing through their chrome, and tactically by operators who need to function through catastrophic augment damage without the pain signal shutting them down.",
   "method_of_use": "oral",
   "effects": [
     "Augment haptic and proprioceptive feedback reduced 80-100%",
     "Augment-transmitted pain signals blocked",
-    "Psychological dissociation from chrome — augments feel like tools rather than body parts",
+    "Psychological dissociation from chrome \u2014 augments feel like tools rather than body parts",
     "Useful for surgical augment work without full anesthesia"
   ],
   "side_effects": [
-    "Loss of fine motor feedback — precision tasks with chrome become difficult",
+    "Loss of fine motor feedback \u2014 precision tasks with chrome become difficult",
     "Psychological distress from body dissociation in some users",
     "Risk of augment damage going unnoticed (no pain warning)",
-    "Rebound hyperesthesia on come-down — augments become agonizingly sensitive",
+    "Rebound hyperesthesia on come-down \u2014 augments become agonizingly sensitive",
     "Long-term use associated with permanent reduction in augment-nerve integration quality"
   ],
   "duration": "4-8 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ 80-140",
-  "cultural_context": "In Tier 2-3 clinics, Dulsyn is considered a humane necessity — the first weeks after major augmentation are often described as sensory torture, and Novafold's version has a solid safety record. The street use splits into two camps: people who use it to cope with the psychological burden of feeling like a machine (a surprisingly common mental health crisis among heavily augmented individuals), and hard operators who take it before a fight so that losing fingers or taking augment damage doesn't slow them down. The rebound sensitivity on come-down is considered a feature by some — a few hours of exquisitely heightened touch sensation after the numbness breaks.",
+  "street_price": "\u03A6 80-140",
+  "cultural_context": "In Tier 2-3 clinics, Dulsyn is considered a humane necessity \u2014 the first weeks after major augmentation are often described as sensory torture, and Novafold\u0027s version has a solid safety record. The street use splits into two camps: people who use it to cope with the psychological burden of feeling like a machine (a surprisingly common mental health crisis among heavily augmented individuals), and hard operators who take it before a fight so that losing fingers or taking augment damage doesn\u0027t slow them down. The rebound sensitivity on come-down is considered a feature by some \u2014 a few hours of exquisitely heightened touch sensation after the numbness breaks.",
   "story_hooks": [
-    "A Tier 3 office worker with full-arm chrome has become dependent on Dulsyn to get through her workday — without it, the constant sensory input from her augments is unbearable, but her dosage is escalating and the rebound crashes are getting worse each cycle.",
-    "An operator took Dulsyn before a job and didn't feel his augmented leg fail catastrophically mid-run — he completed the job, but the leg is now unsalvageable, and the fixer who supplied the drug may have done so intentionally.",
-    "Novafold is quietly recalling a batch of Dulsyn after discovering it was contaminated during manufacturing — the contaminated batch doesn't just dampen augment sensitivity, it appears to permanently sever specific haptic nerve pathways."
-  ]
+    "A Tier 3 office worker with full-arm chrome has become dependent on Dulsyn to get through her workday \u2014 without it, the constant sensory input from her augments is unbearable, but her dosage is escalating and the rebound crashes are getting worse each cycle.",
+    "An operator took Dulsyn before a job and didn\u0027t feel his augmented leg fail catastrophically mid-run \u2014 he completed the job, but the leg is now unsalvageable, and the fixer who supplied the drug may have done so intentionally.",
+    "Novafold is quietly recalling a batch of Dulsyn after discovering it was contaminated during manufacturing \u2014 the contaminated batch doesn\u0027t just dampen augment sensitivity, it appears to permanently sever specific haptic nerve pathways."
+  ],
+  "tags": []
 }

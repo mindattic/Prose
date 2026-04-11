@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6d171b58627cea1851b92e0",
   "name": "Rekall",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,31 +10,32 @@
   "category": "cognitive_enhancer",
   "subcategory": "episodic_memory_enhancement_and_reconstruction",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Rekall is a controlled memory-enhancement compound that temporarily supercharges episodic memory encoding and retrieval, allowing users to experience and re-access memories with extraordinary vividness and detail. Originally developed as a therapeutic for trauma processing and witness testimony enhancement, Nightshade's gray-market distribution channels have made it widely available for less sanctioned uses — corporate espionage, alibi construction, and the simple human desire to relive.",
+  "description": "Rekall is a controlled memory-enhancement compound that temporarily supercharges episodic memory encoding and retrieval, allowing users to experience and re-access memories with extraordinary vividness and detail. Originally developed as a therapeutic for trauma processing and witness testimony enhancement, Nightshade\u0027s gray-market distribution channels have made it widely available for less sanctioned uses \u2014 corporate espionage, alibi construction, and the simple human desire to relive.",
   "method_of_use": "sublingual",
   "effects": [
     "Vivid, high-fidelity encoding of experiences during the active window",
     "Enhanced retrieval of recent memories with sensory detail intact",
-    "Ability to 're-enter' specific memories with near-experiential clarity",
+    "Ability to \u0027re-enter\u0027 specific memories with near-experiential clarity",
     "Useful for witness recall, depositions, and forensic self-reporting",
     "BCI-compatible: encoded memories can be partially exported as experiential data"
   ],
   "side_effects": [
-    "Memory reconsolidation vulnerability — retrieved memories become temporarily malleable and can be altered by suggestion or new information",
+    "Memory reconsolidation vulnerability \u2014 retrieved memories become temporarily malleable and can be altered by suggestion or new information",
     "Difficulty distinguishing between highly-encoded Rekall memories and imagination during off-dose periods",
     "Emotional overwhelm when reliving traumatic or highly charged memories",
     "Intrusive re-experiencing of encoded memories during sleep",
-    "Rare: memory sourcing failure — users lose track of which memories are Rekall-enhanced and which are baseline, eroding trust in their own episodic history"
+    "Rare: memory sourcing failure \u2014 users lose track of which memories are Rekall-enhanced and which are baseline, eroding trust in their own episodic history"
   ],
   "duration": "Encoding window: 3-4 hours; retrieval enhancement: 6-8 hours",
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "Φ 38 per dose",
-  "cultural_context": "Rekall is the drug of grief, nostalgia, and crime. On the Shelf, it is used by people who want to relive the best moments of lives that have very few of them — a mother reliving the day her child was born, a veteran reliving the last time they felt part of something. It is also used by fixers and operatives who need to reconstruct events with precision, and by lawyers and investigators with flexible ethics who need witnesses to remember things with conviction. The reconsolidation vulnerability is the drug's most dangerous and most exploited feature — a Rekall-dosed subject recalling an event in the presence of someone who subtly reframes it will incorporate those changes into their permanent memory.",
+  "street_price": "\u03A6 38 per dose",
+  "cultural_context": "Rekall is the drug of grief, nostalgia, and crime. On the Shelf, it is used by people who want to relive the best moments of lives that have very few of them \u2014 a mother reliving the day her child was born, a veteran reliving the last time they felt part of something. It is also used by fixers and operatives who need to reconstruct events with precision, and by lawyers and investigators with flexible ethics who need witnesses to remember things with conviction. The reconsolidation vulnerability is the drug\u0027s most dangerous and most exploited feature \u2014 a Rekall-dosed subject recalling an event in the presence of someone who subtly reframes it will incorporate those changes into their permanent memory.",
   "story_hooks": [
-    "A key witness in a major corporate trial has been secretly dosed with Rekall and then had their memory of the incriminating event reconstructed — they now genuinely remember something that didn't happen, with total conviction, and there's no way to tell them the truth without understanding exactly what was done to them.",
-    "A Shelf resident has been using Rekall to relive a single day — the last day before something terrible — for so long that the reconstructed memory has diverged significantly from what actually happened, and they've begun to act on the false version.",
-    "A fixer discovers that someone has been dosing them periodically and sitting with them while they recall recent jobs — their operational memory has been systematically harvested and possibly altered, and they don't know what information they've given up or what memories they can no longer trust."
-  ]
+    "A key witness in a major corporate trial has been secretly dosed with Rekall and then had their memory of the incriminating event reconstructed \u2014 they now genuinely remember something that didn\u0027t happen, with total conviction, and there\u0027s no way to tell them the truth without understanding exactly what was done to them.",
+    "A Shelf resident has been using Rekall to relive a single day \u2014 the last day before something terrible \u2014 for so long that the reconstructed memory has diverged significantly from what actually happened, and they\u0027ve begun to act on the false version.",
+    "A fixer discovers that someone has been dosing them periodically and sitting with them while they recall recent jobs \u2014 their operational memory has been systematically harvested and possibly altered, and they don\u0027t know what information they\u0027ve given up or what memories they can no longer trust."
+  ],
+  "tags": []
 }

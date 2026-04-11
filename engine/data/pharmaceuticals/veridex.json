@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6eb7f08bc12d769e9940b41",
   "name": "Veridex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "geneware expression stabilizer",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Veridex is an epigenetic modulation compound that binds to the promoter regions of installed geneware sequences and prevents transcriptional drift — the gradual, uncontrolled re-expression of dormant or modified genetic code that causes geneware to develop unintended characteristics over time. Without Veridex, cosmetic geneware like bioluminescent skin, patterned scales, or decorative fur can drift into functional mutations within months. A cornerstone product of the geneware aesthetic movement.",
+  "description": "Veridex is an epigenetic modulation compound that binds to the promoter regions of installed geneware sequences and prevents transcriptional drift \u2014 the gradual, uncontrolled re-expression of dormant or modified genetic code that causes geneware to develop unintended characteristics over time. Without Veridex, cosmetic geneware like bioluminescent skin, patterned scales, or decorative fur can drift into functional mutations within months. A cornerstone product of the geneware aesthetic movement.",
   "method_of_use": "oral",
   "effects": [
     "stabilization of geneware expression at intended parameters",
@@ -20,7 +21,7 @@
   "side_effects": [
     "may slightly suppress native adaptive genetic responses to environment",
     "occasional pigmentation changes in non-geneware tissue",
-    "if discontinued abruptly, drift resumes within 2–4 weeks",
+    "if discontinued abruptly, drift resumes within 2\u20134 weeks",
     "long-term use linked to reduced fertility without supplemental hormonal treatment",
     "rare: paradoxical expression cascade causing rapid unintended morphological change"
   ],
@@ -28,11 +29,12 @@
   "addiction_risk": "none",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ45–Φ90 per week",
-  "cultural_context": "Geneware is a Tier 3+ luxury — the cosmetic modifications that define the aesthetic tribes of mid-to-upper GLMZ society require Veridex to maintain. Tier 3 users take generic Veridex to keep their bioluminescent tattoos from spreading into muscle tissue. Tier 5 clients use Lazarus's premium 'Veridex Aurum' formula, custom-tuned to their specific geneware installation. When someone can't afford Veridex, their geneware 'goes wild' — this is sometimes beautiful, often disturbing, occasionally dangerous. Drift culture is an underground aesthetic movement that intentionally stops taking Veridex to see what their geneware becomes.",
+  "street_price": "\u03A645\u2013\u03A690 per week",
+  "cultural_context": "Geneware is a Tier 3\u002B luxury \u2014 the cosmetic modifications that define the aesthetic tribes of mid-to-upper GLMZ society require Veridex to maintain. Tier 3 users take generic Veridex to keep their bioluminescent tattoos from spreading into muscle tissue. Tier 5 clients use Lazarus\u0027s premium \u0027Veridex Aurum\u0027 formula, custom-tuned to their specific geneware installation. When someone can\u0027t afford Veridex, their geneware \u0027goes wild\u0027 \u2014 this is sometimes beautiful, often disturbing, occasionally dangerous. Drift culture is an underground aesthetic movement that intentionally stops taking Veridex to see what their geneware becomes.",
   "story_hooks": [
-    "A prominent Tier 4 socialite's geneware has begun drifting catastrophically despite taking Veridex — someone has replaced their prescription with a placebo, and their decorative bioluminescence is now spreading into their nervous system.",
-    "The drift culture underground is being targeted by Lazarus Pharmaceuticals, who are sending agents to document 'drift cases' — but the real purpose seems to be harvesting data on uncontrolled expression for a next-generation geneware product.",
-    "A Tier 1 geneware black market has emerged where people install cheap geneware without stabilizers — some of the results are genuinely extraordinary adaptations, and someone in the corporate world wants exclusive access to what they're developing."
-  ]
+    "A prominent Tier 4 socialite\u0027s geneware has begun drifting catastrophically despite taking Veridex \u2014 someone has replaced their prescription with a placebo, and their decorative bioluminescence is now spreading into their nervous system.",
+    "The drift culture underground is being targeted by Lazarus Pharmaceuticals, who are sending agents to document \u0027drift cases\u0027 \u2014 but the real purpose seems to be harvesting data on uncontrolled expression for a next-generation geneware product.",
+    "A Tier 1 geneware black market has emerged where people install cheap geneware without stabilizers \u2014 some of the results are genuinely extraordinary adaptations, and someone in the corporate world wants exclusive access to what they\u0027re developing."
+  ],
+  "tags": []
 }

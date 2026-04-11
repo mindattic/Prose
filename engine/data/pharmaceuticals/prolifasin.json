@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6cd71f7b5c4557fd660e565",
   "name": "Prolifasin",
   "type": "pharmaceutical",
   "aliases": [
@@ -19,22 +20,23 @@
     "overall faster return to pre-injury baseline"
   ],
   "side_effects": [
-    "elevated metabolic demand — patients must consume significantly more calories",
+    "elevated metabolic demand \u2014 patients must consume significantly more calories",
     "low-grade fever during active regeneration phases",
     "rare: uncontrolled proliferation (benign tumorous masses) at injection site",
     "can accelerate growth of pre-existing undiagnosed malignancies",
     "joint and bone aches as regeneration prioritizes soft tissue",
-    "psychological restlessness — users describe feeling 'too alive'"
+    "psychological restlessness \u2014 users describe feeling \u0027too alive\u0027"
   ],
-  "duration": "course treatment: 1–4 weeks",
+  "duration": "course treatment: 1\u20134 weeks",
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "Φ220–Φ600 per course",
-  "cultural_context": "Prolifasin is the drug that makes the augmentation lifestyle viable — without it, the physical trauma of chrome installation would require months of recovery. Tier 2-3 users budget for Prolifasin as part of augment costs. On the Shelf, black-market Prolifasin equivalents are dangerous: often under-dosed, impure, or missing key growth factor components, leading to partial healing and chronic complications. Prolifasin is also used off-label by bodymod enthusiasts who heal from extreme modifications at accelerated rates. The 'too alive' feeling of active regeneration has a cult following.",
+  "street_price": "\u03A6220\u2013\u03A6600 per course",
+  "cultural_context": "Prolifasin is the drug that makes the augmentation lifestyle viable \u2014 without it, the physical trauma of chrome installation would require months of recovery. Tier 2-3 users budget for Prolifasin as part of augment costs. On the Shelf, black-market Prolifasin equivalents are dangerous: often under-dosed, impure, or missing key growth factor components, leading to partial healing and chronic complications. Prolifasin is also used off-label by bodymod enthusiasts who heal from extreme modifications at accelerated rates. The \u0027too alive\u0027 feeling of active regeneration has a cult following.",
   "story_hooks": [
-    "A Shelf street surgeon has gotten hold of a massive quantity of expired Prolifasin — it still works, but the degraded growth factors are causing unpredictable tissue responses in patients, some miraculous, some deeply wrong.",
-    "Someone is using Prolifasin to keep a critically injured person alive long enough to extract information — the body is healing faster than it can be damaged, creating a horrifying interrogation loop.",
-    "Helix Biosystems has discovered that Prolifasin interacts with a specific geneware modification to produce a spontaneous regenerative effect far beyond anything in the drug's design — and has been secretly identifying and monitoring users who have this combination."
-  ]
+    "A Shelf street surgeon has gotten hold of a massive quantity of expired Prolifasin \u2014 it still works, but the degraded growth factors are causing unpredictable tissue responses in patients, some miraculous, some deeply wrong.",
+    "Someone is using Prolifasin to keep a critically injured person alive long enough to extract information \u2014 the body is healing faster than it can be damaged, creating a horrifying interrogation loop.",
+    "Helix Biosystems has discovered that Prolifasin interacts with a specific geneware modification to produce a spontaneous regenerative effect far beyond anything in the drug\u0027s design \u2014 and has been secretly identifying and monitoring users who have this combination."
+  ],
+  "tags": []
 }

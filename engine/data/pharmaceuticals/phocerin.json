@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6cb70a9b999f9f7f3119d0b",
   "name": "Phocerin",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,19 +10,19 @@
   "category": "cognitive_enhancer",
   "subcategory": "deep_focus_and_flow_state_induction",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Phocerin is a dual-action compound that suppresses the neural noise associated with self-referential thought while simultaneously elevating dopaminergic reward signals tied to task engagement, producing a sustained flow state that users describe as effortless immersion. Nightshade markets it through licensed wellness clinics as a therapeutic for chronic cognitive fatigue, but its recreational and gray-market use is far more widespread. Unlike harder focus drugs, Phocerin doesn't feel like being forced to concentrate — it feels like wanting nothing else.",
+  "description": "Phocerin is a dual-action compound that suppresses the neural noise associated with self-referential thought while simultaneously elevating dopaminergic reward signals tied to task engagement, producing a sustained flow state that users describe as effortless immersion. Nightshade markets it through licensed wellness clinics as a therapeutic for chronic cognitive fatigue, but its recreational and gray-market use is far more widespread. Unlike harder focus drugs, Phocerin doesn\u0027t feel like being forced to concentrate \u2014 it feels like wanting nothing else.",
   "method_of_use": "dermal_patch",
   "effects": [
-    "Deep, self-sustaining flow state — work feels intrinsically rewarding",
+    "Deep, self-sustaining flow state \u2014 work feels intrinsically rewarding",
     "Elimination of self-consciousness and performance anxiety",
     "Sustained engagement with complex tasks without fatigue",
-    "Mild time compression — hours pass without subjective experience of duration",
+    "Mild time compression \u2014 hours pass without subjective experience of duration",
     "Heightened sensory engagement with the task at hand"
   ],
   "side_effects": [
     "Extreme difficulty interrupting the flow state even when necessary",
-    "Neglect of basic needs — users forget to eat, drink, or rest",
-    "Post-dose anhedonia — normal activities feel flat and unrewarding for 12-24 hours",
+    "Neglect of basic needs \u2014 users forget to eat, drink, or rest",
+    "Post-dose anhedonia \u2014 normal activities feel flat and unrewarding for 12-24 hours",
     "Psychological dependency develops rapidly; the contrast between Phocerin states and normal cognition becomes intolerable",
     "Rare but documented: users enter flow states around harmful or obsessive content with the same ease as productive work"
   ],
@@ -29,11 +30,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "Φ 28 per patch",
-  "cultural_context": "Phocerin has a complicated reputation. It is genuinely effective and genuinely dangerous. The wellness clinic version is prescribed for burnout and chronic cognitive fragmentation — real conditions that plague Tier 2 and 3 workers. But the drug's feel is seductive in a way that most cognitive enhancers aren't; it doesn't feel like a tool, it feels like a state of grace. Nightshade knows this and has calibrated the patch delivery system to maximize the contrast between dosed and undosed states, engineering the dependency. There are Phocerin recovery communities in Tier 2 districts where former users try to rebuild tolerance for the boredom and friction of unenhanced cognition.",
+  "street_price": "\u03A6 28 per patch",
+  "cultural_context": "Phocerin has a complicated reputation. It is genuinely effective and genuinely dangerous. The wellness clinic version is prescribed for burnout and chronic cognitive fragmentation \u2014 real conditions that plague Tier 2 and 3 workers. But the drug\u0027s feel is seductive in a way that most cognitive enhancers aren\u0027t; it doesn\u0027t feel like a tool, it feels like a state of grace. Nightshade knows this and has calibrated the patch delivery system to maximize the contrast between dosed and undosed states, engineering the dependency. There are Phocerin recovery communities in Tier 2 districts where former users try to rebuild tolerance for the boredom and friction of unenhanced cognition.",
   "story_hooks": [
-    "A Nightshade insider wants to leak internal documents proving the company deliberately engineered Phocerin's dependency profile — but they've been on the drug for two years and are barely functional without it, making them an unreliable and vulnerable source.",
-    "A Tier 2 single parent has been using Phocerin to get through double shifts and is now on a patch 18 hours a day — their kid has noticed that their parent is only really 'there' when the patch is active, and has started stealing patches to feel connected to them.",
-    "Someone has been using Phocerin to enter flow states around surveillance — monitoring an entire city block with preternatural patience and attention, and they've seen something they were never meant to see."
-  ]
+    "A Nightshade insider wants to leak internal documents proving the company deliberately engineered Phocerin\u0027s dependency profile \u2014 but they\u0027ve been on the drug for two years and are barely functional without it, making them an unreliable and vulnerable source.",
+    "A Tier 2 single parent has been using Phocerin to get through double shifts and is now on a patch 18 hours a day \u2014 their kid has noticed that their parent is only really \u0027there\u0027 when the patch is active, and has started stealing patches to feel connected to them.",
+    "Someone has been using Phocerin to enter flow states around surveillance \u2014 monitoring an entire city block with preternatural patience and attention, and they\u0027ve seen something they were never meant to see."
+  ],
+  "tags": []
 }

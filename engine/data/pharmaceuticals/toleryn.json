@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6e3724e974061d085abb185",
   "name": "Toleryn",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "medical",
   "subcategory": "augment rejection suppressor",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Toleryn is the most widely prescribed immunosuppressant in GLMZ, designed to prevent the body's immune system from attacking cybernetic implants and chrome augmentations. It works by selectively dampening the foreign-body response at augment integration sites while leaving systemic immunity largely intact. Missing even a single dose can trigger acute rejection cascades in heavily augmented individuals.",
+  "description": "Toleryn is the most widely prescribed immunosuppressant in GLMZ, designed to prevent the body\u0027s immune system from attacking cybernetic implants and chrome augmentations. It works by selectively dampening the foreign-body response at augment integration sites while leaving systemic immunity largely intact. Missing even a single dose can trigger acute rejection cascades in heavily augmented individuals.",
   "method_of_use": "oral",
   "effects": [
     "suppresses augment-site inflammation",
@@ -28,11 +29,12 @@
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "Φ12 per day (generic); Φ38 per day (brand)",
-  "cultural_context": "Toleryn is as ordinary as water in GLMZ. Anyone with chrome — from a basic neural port to full-limb replacement — takes it daily. Generic Novafold tabs are a staple of Shelf clinics and Tier 2 corner pharmacies alike. Forgetting your tols is a common anxiety dream. Running out is a medical emergency.",
+  "street_price": "\u03A612 per day (generic); \u03A638 per day (brand)",
+  "cultural_context": "Toleryn is as ordinary as water in GLMZ. Anyone with chrome \u2014 from a basic neural port to full-limb replacement \u2014 takes it daily. Generic Novafold tabs are a staple of Shelf clinics and Tier 2 corner pharmacies alike. Forgetting your tols is a common anxiety dream. Running out is a medical emergency.",
   "story_hooks": [
-    "A Shelf clinic's Toleryn supply is intercepted by a gang taxing pharmaceutical shipments — hundreds of augmented residents are days from rejection crisis",
-    "A character discovers their 'generic Toleryn' has been quietly substituted with a subtly different compound that makes their chrome remotely accessible",
-    "Lazarus Pharmaceuticals is lobbying to reclassify Toleryn as Tier 3+ only, effectively making basic augment ownership a death sentence for Shelf residents"
-  ]
+    "A Shelf clinic\u0027s Toleryn supply is intercepted by a gang taxing pharmaceutical shipments \u2014 hundreds of augmented residents are days from rejection crisis",
+    "A character discovers their \u0027generic Toleryn\u0027 has been quietly substituted with a subtly different compound that makes their chrome remotely accessible",
+    "Lazarus Pharmaceuticals is lobbying to reclassify Toleryn as Tier 3\u002B only, effectively making basic augment ownership a death sentence for Shelf residents"
+  ],
+  "tags": []
 }

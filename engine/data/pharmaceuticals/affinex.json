@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6907ac0bfaded94759b9952",
   "name": "Affinex",
   "type": "pharmaceutical",
   "aliases": [
@@ -9,7 +10,7 @@
   "category": "emotional_regulator",
   "subcategory": "bonding_enhancer",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Affinex is an oxytocin-pathway agonist with synthetic BCI integration that amplifies interpersonal trust, attachment, and emotional bonding between individuals in close proximity during the drug's active window. Lazarus markets it in two distinct product lines: a clinical line for couples therapy and grief support, and a corporate line sold to team-building and HR departments as a 'cohesion supplement.' The drug does not create false feelings — it intensifies genuine ones, which makes it more insidious, not less.",
+  "description": "Affinex is an oxytocin-pathway agonist with synthetic BCI integration that amplifies interpersonal trust, attachment, and emotional bonding between individuals in close proximity during the drug\u0027s active window. Lazarus markets it in two distinct product lines: a clinical line for couples therapy and grief support, and a corporate line sold to team-building and HR departments as a \u0027cohesion supplement.\u0027 The drug does not create false feelings \u2014 it intensifies genuine ones, which makes it more insidious, not less.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Dramatically enhanced sense of trust and emotional closeness with people nearby",
@@ -30,11 +31,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "Φ120 per patch",
-  "cultural_context": "Affinex is the most ethically contested legal drug in GLMZ. Couples therapists swear by it. Corporate HR departments quietly require it at team retreats — listed on the itinerary as 'cohesion supplement, optional' with strong social pressure to comply. Dating culture in Tier 3 and 4 has a complicated relationship with it — some couples use it deliberately to deepen early relationships, others forbid it on principle. The Shelf uses street-grade analogs called 'weave' at community gatherings, which is arguably the most honest use of the drug.",
+  "street_price": "\u03A6120 per patch",
+  "cultural_context": "Affinex is the most ethically contested legal drug in GLMZ. Couples therapists swear by it. Corporate HR departments quietly require it at team retreats \u2014 listed on the itinerary as \u0027cohesion supplement, optional\u0027 with strong social pressure to comply. Dating culture in Tier 3 and 4 has a complicated relationship with it \u2014 some couples use it deliberately to deepen early relationships, others forbid it on principle. The Shelf uses street-grade analogs called \u0027weave\u0027 at community gatherings, which is arguably the most honest use of the drug.",
   "story_hooks": [
-    "A Tier 4 executive realizes their entire leadership team's loyalty to the company was built through years of undisclosed Affinex use at quarterly retreats — and wonders whether anything they feel about their colleagues is real",
-    "A couple in couples therapy discovers they were both dosed with Affinex during their first meeting — at a corporate event — and must decide whether the relationship that grew from that moment is valid",
-    "A Shelf community organizer starts distributing Affinex analogs to build solidarity in their neighborhood, but a Lazarus investigator argues this constitutes illegal non-consensual administration — the legal battle becomes a flashpoint"
-  ]
+    "A Tier 4 executive realizes their entire leadership team\u0027s loyalty to the company was built through years of undisclosed Affinex use at quarterly retreats \u2014 and wonders whether anything they feel about their colleagues is real",
+    "A couple in couples therapy discovers they were both dosed with Affinex during their first meeting \u2014 at a corporate event \u2014 and must decide whether the relationship that grew from that moment is valid",
+    "A Shelf community organizer starts distributing Affinex analogs to build solidarity in their neighborhood, but a Lazarus investigator argues this constitutes illegal non-consensual administration \u2014 the legal battle becomes a flashpoint"
+  ],
+  "tags": []
 }

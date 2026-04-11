@@ -1,4 +1,5 @@
 {
+  "id": "019d7850c6b07bbeabeb6b935eb54c7d",
   "name": "Halvex",
   "type": "pharmaceutical",
   "aliases": [
@@ -8,31 +9,32 @@
   "category": "augment_interactive",
   "subcategory": "synth_sync_compound",
   "manufacturer": "Unknown (military origin suspected; current production: high-end Shelf labs)",
-  "description": "A classified-origin compound that enables a unique form of one-way sensory and motor data sharing — unlike mutual sync compounds, Halvex allows one user (the 'anchor') to access and partially mirror the augment outputs of a second user (the 'ghost') without the ghost experiencing reciprocal feedback. The anchor can see through the ghost's optical augments, feel through their haptic chrome, and in advanced applications, send motor override signals that influence the ghost's augment movements. Originally theorized as a military command-and-control tool for directing augmented soldiers remotely; the leaked version on the street has obvious applications in surveillance, manipulation, and exploitation.",
+  "description": "A classified-origin compound that enables a unique form of one-way sensory and motor data sharing \u2014 unlike mutual sync compounds, Halvex allows one user (the \u0027anchor\u0027) to access and partially mirror the augment outputs of a second user (the \u0027ghost\u0027) without the ghost experiencing reciprocal feedback. The anchor can see through the ghost\u0027s optical augments, feel through their haptic chrome, and in advanced applications, send motor override signals that influence the ghost\u0027s augment movements. Originally theorized as a military command-and-control tool for directing augmented soldiers remotely; the leaked version on the street has obvious applications in surveillance, manipulation, and exploitation.",
   "method_of_use": "injection",
   "effects": [
-    "Anchor gains read access to ghost's augment sensory outputs (vision, haptics, audio)",
-    "Anchor can identify ghost's physical location through proprioceptive data",
-    "High-dose application: anchor can send motor influence signals to ghost's chrome (ghost experiences as intrusive impulses)",
+    "Anchor gains read access to ghost\u0027s augment sensory outputs (vision, haptics, audio)",
+    "Anchor can identify ghost\u0027s physical location through proprioceptive data",
+    "High-dose application: anchor can send motor influence signals to ghost\u0027s chrome (ghost experiences as intrusive impulses)",
     "Ghost is unaware of connection unless specifically equipped to detect it",
     "Duration of connection stable across distances up to approximately 2km"
   ],
   "side_effects": [
-    "Anchor: cognitive strain from processing two bodies' worth of sensory data",
-    "Anchor: risk of identity confusion — difficulty remembering which body is theirs during long connections",
+    "Anchor: cognitive strain from processing two bodies\u0027 worth of sensory data",
+    "Anchor: risk of identity confusion \u2014 difficulty remembering which body is theirs during long connections",
     "Ghost (if they discover the connection): acute psychological trauma",
-    "Both: rare cases of signal feedback if ghost is injured — anchor feels a muted echo of the damage",
-    "Anchor: reported intrusive sensory memories from ghost's perspective persisting post-use"
+    "Both: rare cases of signal feedback if ghost is injured \u2014 anchor feels a muted echo of the damage",
+    "Anchor: reported intrusive sensory memories from ghost\u0027s perspective persisting post-use"
   ],
   "duration": "2-4 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "Φ 800-1,500 (anchor dose); ghost dose administered without consent in most street applications",
-  "cultural_context": "Halvex is genuinely disturbing in its applications and carries a heavy social stigma even in communities where most drugs are accepted. The 'ghost dose' — administered without the victim's knowledge — turns a person's own augments into surveillance equipment and potentially a remote control. On the Shelf, it's used by stalkers, abusers, and predators. In the gray market, corporate intelligence operatives use it on unwitting informants. There are whispered accounts of military applications — soldiers directed through hostile environments by commanders experiencing their full sensory feed in real time. The few people who know they've been ghosted without consent describe it as the most profound violation they've experienced.",
+  "street_price": "\u03A6 800-1,500 (anchor dose); ghost dose administered without consent in most street applications",
+  "cultural_context": "Halvex is genuinely disturbing in its applications and carries a heavy social stigma even in communities where most drugs are accepted. The \u0027ghost dose\u0027 \u2014 administered without the victim\u0027s knowledge \u2014 turns a person\u0027s own augments into surveillance equipment and potentially a remote control. On the Shelf, it\u0027s used by stalkers, abusers, and predators. In the gray market, corporate intelligence operatives use it on unwitting informants. There are whispered accounts of military applications \u2014 soldiers directed through hostile environments by commanders experiencing their full sensory feed in real time. The few people who know they\u0027ve been ghosted without consent describe it as the most profound violation they\u0027ve experienced.",
   "story_hooks": [
-    "A Shelf resident has become convinced that someone is ghosting her — her chrome arm keeps making small movements she didn't initiate, and she sees things in her peripheral vision that don't match where she's looking — but no clinic will take her seriously.",
-    "A corporate espionage operation collapsed when the ghost asset realized what was happening and deliberately walked into a police station, and now the anchor — still connected and experiencing everything through the asset's augments — is trapped in a feedback loop as the asset is arrested and processed.",
-    "A player character discovers that a Halvex anchor dose was slipped to them weeks ago, and someone has been riding their senses ever since — watching through their eyes, listening through their ears, and they need to figure out what was seen before they can understand why they're now being hunted."
-  ]
+    "A Shelf resident has become convinced that someone is ghosting her \u2014 her chrome arm keeps making small movements she didn\u0027t initiate, and she sees things in her peripheral vision that don\u0027t match where she\u0027s looking \u2014 but no clinic will take her seriously.",
+    "A corporate espionage operation collapsed when the ghost asset realized what was happening and deliberately walked into a police station, and now the anchor \u2014 still connected and experiencing everything through the asset\u0027s augments \u2014 is trapped in a feedback loop as the asset is arrested and processed.",
+    "A player character discovers that a Halvex anchor dose was slipped to them weeks ago, and someone has been riding their senses ever since \u2014 watching through their eyes, listening through their ears, and they need to figure out what was seen before they can understand why they\u0027re now being hunted."
+  ],
+  "tags": []
 }

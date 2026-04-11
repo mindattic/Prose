@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
+using StreetSamurai.Core.Converters;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -33,6 +34,12 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
             WriteIndented = true,
             PropertyNameCaseInsensitive = true,
             DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+            Converters =
+            {
+                new CyberwareEntryConverter(),
+                new NotableLocationConverter(),
+                new PlaceExitConverter(),
+            },
         };
     }
 
@@ -287,7 +294,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
                     continue;
                 }
 
-                // Fix: array items that should be objects (cyberware_inventory, timeline)
+                // Fix: array items that should be objects (cyberware_inventory, notable_locations, exits, timeline)
                 if (error.Contains(prop.Name) && prop.Value.ValueKind == JsonValueKind.Array)
                 {
                     writer.WritePropertyName(prop.Name);
@@ -305,6 +312,34 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
                             writer.WriteString("installed_date", "");
                             writer.WriteString("description", item.GetString());
                             writer.WriteString("replaces", "");
+                            writer.WriteEndObject();
+                            repaired = true;
+                        }
+                        else if (item.ValueKind == JsonValueKind.String && error.Contains("NotableLocation"))
+                        {
+                            var s = item.GetString() ?? "";
+                            var dash = s.IndexOf(" \u2014 ", StringComparison.Ordinal);
+                            writer.WriteStartObject();
+                            writer.WriteString("name", dash > 0 ? s[..dash].Trim() : s);
+                            writer.WriteString("description", dash > 0 ? s[(dash + 3)..].Trim() : "");
+                            writer.WritePropertyName("tags");
+                            writer.WriteStartArray();
+                            writer.WriteEndArray();
+                            writer.WriteEndObject();
+                            repaired = true;
+                        }
+                        else if (item.ValueKind == JsonValueKind.String && error.Contains("PlaceExit"))
+                        {
+                            writer.WriteStartObject();
+                            writer.WriteString("direction", "");
+                            writer.WriteString("destination", "");
+                            writer.WriteString("type", "road");
+                            writer.WriteString("description", item.GetString());
+                            writer.WriteBoolean("restricted", false);
+                            writer.WriteNumber("danger_level", 0);
+                            writer.WritePropertyName("tags");
+                            writer.WriteStartArray();
+                            writer.WriteEndArray();
                             writer.WriteEndObject();
                             repaired = true;
                         }
@@ -331,8 +366,8 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
                     continue;
                 }
 
-                // Pass through unmodified
-                prop.Value.WriteTo(writer);
+                // Pass through unmodified — prop.WriteTo writes both property name and value
+                prop.WriteTo(writer);
             }
 
             writer.WriteEndObject();
