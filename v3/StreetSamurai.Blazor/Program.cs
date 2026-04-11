@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using System.Threading.RateLimiting;
+using Blazored.Toast;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -41,6 +42,9 @@ builder.Host.UseSerilog();
 // Razor + interactive server rendering
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// Toast notifications
+builder.Services.AddBlazoredToast();
 
 // All StreetSamurai services (repos, graph, LLM, TTS, etc.)
 builder.Services.AddStreetSamuraiServices();
