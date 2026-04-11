@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Restore dependencies
-        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj
+        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj --locked-mode
 
       - name: Publish
         run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
