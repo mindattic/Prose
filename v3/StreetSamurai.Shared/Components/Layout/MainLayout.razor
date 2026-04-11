@@ -4,6 +4,7 @@
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @inject SearchTriggerService SearchTrigger
+@inject IToastService Toast
 @implements IDisposable
 
 <style>
@@ -22,16 +23,45 @@
     </div>
 </div>
 
+<BlazoredToasts Position="ToastPosition.TopCenter" Timeout="12" MaxToasts="5" />
 <SearchOverlay />
 
 @code {
+    // SS_ environment variables required in Production
+    private static readonly string[] RequiredEnvVars =
+    [
+        "SS_CLAUDE_API_KEY",
+        "SS_ELEVENLABS_API_KEY",
+        "SS_OPENAI_API_KEY",
+        "STREETSAMURAI_DATA_ROOT",
+        "SS_MUTABLE_DATA_ROOT",
+    ];
+
     protected override void OnAfterRender(bool firstRender)
     {
         if (firstRender)
         {
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
+            CheckMissingEnvVars();
         }
+    }
+
+    private void CheckMissingEnvVars()
+    {
+        // Only warn in Production — dev runs fine without Azure env vars
+        var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "";
+        if (!string.Equals(env, "Production", StringComparison.OrdinalIgnoreCase))
+            return;
+
+        var missing = RequiredEnvVars
+            .Where(v => string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable(v)))
+            .ToList();
+
+        if (missing.Count == 0) return;
+
+        var list = string.Join(", ", missing);
+        Toast.ShowWarning($"Missing Azure App Settings: {list}");
     }
 
     private async Task OnGlobalKeyDown(KeyboardEventArgs e)

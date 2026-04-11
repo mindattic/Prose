@@ -531,3 +531,45 @@ textarea.auto-grow {
     transition: background 0.1s, color 0.1s;
 }
 .search-tag-pill:hover { background: #dc3545; color: #fff; }
+
+/* ── Blazored.Toast dark theme overrides ─────────────────────────────────── */
+.blazored-toast-container {
+    z-index: 10000;
+}
+.blazored-toast {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+    color: #e6edf3 !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.6) !important;
+    font-family: inherit !important;
+    padding: 0.75rem 1rem !important;
+}
+.blazored-toast.blazored-toast-warning {
+    border-left: 4px solid #e3b341 !important;
+}
+.blazored-toast.blazored-toast-error {
+    border-left: 4px solid #dc3545 !important;
+}
+.blazored-toast.blazored-toast-info {
+    border-left: 4px solid #388bfd !important;
+}
+.blazored-toast.blazored-toast-success {
+    border-left: 4px solid #3fb950 !important;
+}
+.blazored-toast .blazored-toast-close {
+    color: #8b949e !important;
+    opacity: 1 !important;
+}
+.blazored-toast .blazored-toast-close:hover {
+    color: #e6edf3 !important;
+}
+.blazored-toast .blazored-toast-title {
+    color: #e6edf3 !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+}
+.blazored-toast .blazored-toast-message {
+    color: #8b949e !important;
+    font-size: 0.8rem !important;
+}
