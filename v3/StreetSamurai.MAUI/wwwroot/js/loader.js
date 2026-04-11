@@ -18,8 +18,7 @@ window.__gmapsReady = function() {
     window.__gmapsCbs = [];
 };
 
-// Unified loader — startup overlay + navigation overlay for slow page transitions.
-// The overlay element must exist in the HTML with id="app-loader" and child id="loader-ms".
+// Startup + navigation loader.
 (function() {
     var timer = null;
     var timeout = null;
@@ -27,7 +26,7 @@ window.__gmapsReady = function() {
     var start = 0;
 
     function getEl() { return document.getElementById('app-loader'); }
-    function getMs() { return document.getElementById('loader-ms'); }
+    function getMs()  { return document.getElementById('loader-ms'); }
 
     function tick() {
         var ms = getMs();
@@ -35,86 +34,30 @@ window.__gmapsReady = function() {
     }
 
     window.__loaderShow = function(delay) {
-        clearTimeout(timeout);
-        clearInterval(timer);
+        clearTimeout(timeout); clearInterval(timer);
         start = performance.now();
         if (delay > 0) {
             timeout = setTimeout(function() {
-                var el = getEl();
-                if (el) el.style.display = 'flex';
+                var el = getEl(); if (el) el.style.display = 'flex';
                 timer = setInterval(tick, 1);
             }, delay);
         } else {
-            var el = getEl();
-            if (el) el.style.display = 'flex';
+            var el = getEl(); if (el) el.style.display = 'flex';
             timer = setInterval(tick, 1);
         }
     };
 
     window.__loaderHide = function() {
-        clearTimeout(timeout);
-        clearTimeout(safetyTimer);
-        clearInterval(timer);
-        timer = null;
-        timeout = null;
-        var el = getEl();
-        var ms = getMs();
+        clearTimeout(timeout); clearTimeout(safetyTimer); clearInterval(timer);
+        timer = null; timeout = null;
+        var el = getEl(); var ms = getMs();
         if (el) el.style.display = 'none';
         if (ms) ms.textContent = '0000';
     };
 
-    // Auto-start timer on app startup (MAUI: loader is display:flex initially)
+    // Auto-start on app startup (MAUI loader is display:flex initially)
     start = performance.now();
     timer = setInterval(tick, 1);
-
-    // Hide once app shell is in the DOM
-    document.addEventListener('DOMContentLoaded', function() {
-        window.__loaderHide();
-    });
-
-    // Safety net: force-hide after 10s
-    safetyTimer = setTimeout(function() {
-        window.__loaderHide();
-    }, 10000);
-
-    // ── Navigation loader ─────────────────────────────────────────────────
-    // Shows loader only if navigation takes longer than 500ms.
-    // Hides when DOM mutations in the main content area stop for 150ms (page rendered).
-    (function() {
-        var navigating = false;
-        var hideDebounce = null;
-
-        function navStart() {
-            navigating = true;
-            window.__loaderShow(500);
-        }
-
-        function navMaybeEnd() {
-            if (!navigating) return;
-            clearTimeout(hideDebounce);
-            hideDebounce = setTimeout(function() {
-                navigating = false;
-                window.__loaderHide();
-            }, 150);
-        }
-
-        // Blazor Hybrid (MAUI) uses history.pushState for in-app navigation
-        var origPush = history.pushState.bind(history);
-        history.pushState = function() {
-            origPush.apply(history, arguments);
-            navStart();
-        };
-
-        window.addEventListener('popstate', navStart);
-
-        // Watch the main content area — when DOM mutations settle, the new page is rendered
-        var mo = new MutationObserver(navMaybeEnd);
-
-        function setup() {
-            var main = document.querySelector('.topnav-main') || document.querySelector('main');
-            if (main) mo.observe(main, { childList: true, subtree: true });
-        }
-
-        document.addEventListener('DOMContentLoaded', setup);
-    })();
+    document.addEventListener('DOMContentLoaded', function() { window.__loaderHide(); });
+    safetyTimer = setTimeout(function() { window.__loaderHide(); }, 10000);
 })();

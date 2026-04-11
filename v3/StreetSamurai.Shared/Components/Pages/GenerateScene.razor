@@ -64,7 +64,7 @@
                         <small class="text-muted">One per line. Each maps to a beat. Leave empty and the engine chooses its own arc.</small>
                     </div>
                     <button class="btn btn-danger" @onclick="StartGeneration" disabled="@string.IsNullOrWhiteSpace(goal)">
-                        Generate Scene
+                        <div class="btn-lbl">Generate Scene</div>
                     </button>
                 </div>
             </div>
@@ -95,7 +95,7 @@ else if (generating)
     <div class="card bg-dark text-light border-secondary mb-3">
         <div class="card-header text-muted d-flex justify-content-between align-items-center">
             <span>Generating... Beat @currentBeat / @numBeats</span>
-            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelGeneration">Cancel</button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="CancelGeneration"><div class="btn-lbl">Cancel</div></button>
         </div>
         <div class="card-body">
             @* Facet rotation bar *@
@@ -130,7 +130,7 @@ else if (generatedScene != null)
 {
     @* ── Completed Scene ────────────────────────────────── *@
     <div class="d-flex gap-2 mb-3">
-        <button class="btn btn-sm btn-outline-success" @onclick="SaveAsStory">Save as Story</button>
+        <button class="btn btn-sm btn-outline-success" @onclick="SaveAsStory"><div class="btn-lbl">Save as Story</div></button>
         @if (ttsAvailable)
         {
             <button class="btn btn-sm btn-outline-danger" @onclick="NarrateScene" disabled="@narrating">
@@ -138,7 +138,7 @@ else if (generatedScene != null)
                 else { <i class="bi bi-volume-up"></i> <span>Narrate</span> }
             </button>
         }
-        <button class="btn btn-sm btn-outline-secondary" @onclick="Reset">New Scene</button>
+        <button class="btn btn-sm btn-outline-secondary" @onclick="Reset"><div class="btn-lbl">New Scene</div></button>
     </div>
 
     <AudioPlayer @ref="audioPlayer" Visible="showAudioPlayer" OnDismissed="() => showAudioPlayer = false" CssClass="mb-3" />

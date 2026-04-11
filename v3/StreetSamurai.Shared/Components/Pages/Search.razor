@@ -16,21 +16,22 @@
     {
         <span class="text-muted small">@totalCount result@(totalCount != 1 ? "s" : "")</span>
     }
-</div>
-
-<div class="input-group mb-4" style="max-width: 600px;">
-    <input type="text" class="form-control bg-dark text-light border-secondary"
-           placeholder="Search all canon…"
-           @bind="inputQuery" @bind:event="oninput"
-           @onkeydown="HandleKey" />
-    <button class="btn btn-outline-danger" @onclick="DoTextSearch">Search</button>
+    @if (loadingTier2)
+    {
+        <span class="text-muted small">loading more…</span>
+    }
 </div>
 
 @if (results.Count > 0)
 {
     <div class="search-results">
-        @foreach (var r in results)
+        @for (int i = 0; i < results.Count; i++)
         {
+            var r = results[i];
+            @if (i == tier1Count && tier2Count > 0)
+            {
+                <div class="search-tier-divider text-muted small text-center my-2">— description matches —</div>
+            }
             <a href="@r.Route" class="search-result-card text-decoration-none d-block mb-2">
                 <div class="card bg-dark text-light border-secondary">
                     <div class="card-body py-2 px-3">
@@ -63,11 +64,8 @@
             </a>
         }
     </div>
-
-    <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages"
-                   OnPageChanged="GoToPage" />
 }
-else if (searched)
+else if (searched && !loadingTier2)
 {
     <p class="text-muted">No results found.</p>
 }
@@ -75,68 +73,69 @@ else if (searched)
 @code {
     [SupplyParameterFromQuery(Name = "q")] public string? Q { get; set; }
     [SupplyParameterFromQuery(Name = "tag")] public string? Tag { get; set; }
-    [SupplyParameterFromQuery(Name = "page")] public int Page { get; set; } = 1;
 
-    private string inputQuery = "";
     private string activeQuery = "";
     private string activeTag = "";
     private List<CanonSearchResult> results = [];
     private int totalCount;
-    private int currentPage = 1;
-    private const int PageSize = 20;
+    private int tier1Count;
+    private int tier2Count;
     private bool searched;
-
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling(totalCount / (double)PageSize));
+    private bool loadingTier2;
 
     protected override void OnParametersSet()
     {
-        currentPage = Math.Max(1, Page);
         if (!string.IsNullOrWhiteSpace(Tag))
         {
             activeTag = Tag;
             activeQuery = "";
-            inputQuery = "";
             DoTagSearch();
         }
         else if (!string.IsNullOrWhiteSpace(Q))
         {
             activeQuery = Q;
             activeTag = "";
-            inputQuery = Q;
-            RunSearch();
+            _ = RunSearchTiered();
+        }
+        else
+        {
+            results = [];
+            searched = false;
+            tier1Count = 0;
+            tier2Count = 0;
         }
     }
 
-    private void DoTextSearch()
+    private async Task RunSearchTiered()
     {
-        if (string.IsNullOrWhiteSpace(inputQuery)) return;
-        currentPage = 1;
-        Nav.NavigateTo($"/search?q={Uri.EscapeDataString(inputQuery.Trim())}");
-    }
-
-    private void HandleKey(KeyboardEventArgs e) { if (e.Key == "Enter") DoTextSearch(); }
-
-    private void GoToPage(int page)
-    {
-        currentPage = page;
-        if (!string.IsNullOrWhiteSpace(activeTag))
-            Nav.NavigateTo($"/search?tag={Uri.EscapeDataString(activeTag)}&page={page}");
-        else
-            Nav.NavigateTo($"/search?q={Uri.EscapeDataString(activeQuery)}&page={page}");
-    }
-
-    private void RunSearch()
-    {
-        totalCount = SearchSvc.SearchCount(activeQuery);
-        results = SearchSvc.Search(activeQuery, currentPage, PageSize);
         searched = true;
+        loadingTier2 = false;
+        var (t1, t2) = SearchSvc.SearchTiered(activeQuery);
+        tier1Count = t1.Count;
+        tier2Count = t2.Count;
+        totalCount = t1.Count + t2.Count;
+        results = t1;
+        StateHasChanged();
+
+        if (t2.Count > 0)
+        {
+            loadingTier2 = true;
+            StateHasChanged();
+            await Task.Delay(80);
+            results = [..t1, ..t2];
+            loadingTier2 = false;
+            StateHasChanged();
+        }
     }
 
     private void DoTagSearch()
     {
         totalCount = SearchSvc.SearchByTagCount(activeTag);
-        results = SearchSvc.SearchByTag(activeTag, currentPage, PageSize);
+        results = SearchSvc.SearchByTag(activeTag, 1, 100);
+        tier1Count = results.Count;
+        tier2Count = 0;
         searched = true;
+        loadingTier2 = false;
     }
 
     private static string TypeBadge(string type) => Constants.TypeBadge.For(type);

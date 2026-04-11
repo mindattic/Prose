@@ -8,25 +8,31 @@
 @inject ExportDiscoveryService ExportDiscovery
 @* @inject FtpPublishService FtpSvc *@
 @inject HtmlExportService HtmlExportSvc
+@inject AuthService Auth
+@inject EmailService EmailSvc
+@inject PasswordResetService PwdReset
+@inject UserRepository UserRepo
+@inject AuthenticationStateProvider AuthStateProvider
+@using Microsoft.AspNetCore.Components.Authorization
 
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
     <div class="d-flex gap-2">
         <button class="btn btn-sm btn-success" @onclick="SaveSettings">
-            <i class="bi bi-floppy"></i> Save
+            <i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div>
         </button>
         @if (confirmReset)
         {
             <span class="d-flex align-items-center gap-1">
                 <small class="text-warning">Reset all settings to defaults?</small>
-                <button class="btn btn-sm btn-danger" @onclick="DoReset">Yes</button>
-                <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = false">No</button>
+                <button class="btn btn-sm btn-danger" @onclick="DoReset"><div class="btn-lbl">Yes</div></button>
+                <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = false"><div class="btn-lbl">No</div></button>
             </span>
         }
         else
         {
             <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmReset = true">
-                <i class="bi bi-arrow-counterclockwise"></i> Reset to Defaults
+                <i class="bi bi-arrow-counterclockwise"></i><div class="btn-lbl"> Reset to Defaults</div>
             </button>
         }
     </div>
@@ -113,7 +119,7 @@
                         <div class="input-group">
                             <button class="btn btn-outline-warning" @onclick="RebuildGraph" disabled="@rebuilding">
                                 @if (rebuilding) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                <i class="bi bi-diagram-3"></i> Rebuild Graph
+                                <i class="bi bi-diagram-3"></i><div class="btn-lbl"> Rebuild Graph</div>
                             </button>
                         </div>
                     </div>
@@ -122,7 +128,7 @@
                         <div class="input-group">
                             <button class="btn btn-outline-success" @onclick="ValidateJson" disabled="@validating">
                                 @if (validating) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                <i class="bi bi-check-circle"></i> Validate All JSON
+                                <i class="bi bi-check-circle"></i><div class="btn-lbl"> Validate All JSON</div>
                             </button>
                             @if (validationResult != null)
                             {
@@ -141,7 +147,7 @@
                             <button class="btn btn-sm btn-outline-info" @onclick="LaunchFactDiscovery" disabled="@factRunning">
                                 @if (factRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
                                 else { <i class="bi bi-check2-circle me-1"></i> }
-                                Run Fact Discovery
+                                <div class="btn-lbl">Run Fact Discovery</div>
                             </button>
                         </div>
                         @if (factStatus != null)
@@ -155,7 +161,7 @@
                             <button class="btn btn-sm btn-outline-info" @onclick="LaunchDescribe" disabled="@describeRunning">
                                 @if (describeRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
                                 else { <i class="bi bi-person-bounding-box me-1"></i> }
-                                Describe Characters
+                                <div class="btn-lbl">Describe Characters</div>
                             </button>
                         </div>
                         @if (describeStatus != null)
@@ -492,7 +498,7 @@
                             <button class="btn btn-sm btn-outline-danger" @onclick="TestTts" disabled="@testingTts">
                                 @if (testingTts) { <span class="spinner-border spinner-border-sm"></span> }
                                 else { <i class="bi bi-volume-up"></i> }
-                                Test Voice
+                                <div class="btn-lbl">Test Voice</div>
                             </button>
                             @if (ttsTestResult != null)
                             {
@@ -506,6 +512,164 @@
     </div>
 </div>
 
+
+@* ── SMTP ──────────────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                <span>SMTP — Outbound Email</span>
+                <span class="badge @(EmailSvc.IsConfigured ? "bg-success" : "bg-secondary")">@(EmailSvc.IsConfigured ? "Configured" : "Not Configured")</span>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted">SMTP Host</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="smtp.gmail.com" @bind="SettingsSvc.SmtpHost" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Port</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary"
+                               @bind="SettingsSvc.SmtpPort" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">From Address</label>
+                        <input type="email" class="form-control bg-dark text-light border-secondary"
+                               placeholder="noreply@example.com" @bind="SettingsSvc.SmtpFrom" @bind:event="onchange" />
+                    </div>
+                </div>
+                <div class="row g-3 mt-1">
+                    <div class="col-md-5">
+                        <label class="form-label text-muted">Username</label>
+                        <input type="text" class="form-control bg-dark text-light border-secondary"
+                               placeholder="SMTP username or email" @bind="SettingsSvc.SmtpUsername" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-5">
+                        <label class="form-label text-muted">Password</label>
+                        <div class="input-group">
+                            <input type="@KeyType("smtp-password")" class="form-control bg-dark text-light border-secondary"
+                                   @bind="SettingsSvc.SmtpPassword" @bind:event="onchange" />
+                            <button class="btn btn-outline-secondary" type="button" @onclick='() => ToggleKeyVisibility("smtp-password")'>
+                                <i class="bi @(visibleKeys.Contains("smtp-password") ? "bi-eye-slash" : "bi-eye")"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="smtp-ssl"
+                                   checked="@SettingsSvc.SmtpEnableSsl"
+                                   @onchange="e => { SettingsSvc.SmtpEnableSsl = (bool)(e.Value ?? true); }" />
+                            <label class="form-check-label text-muted small" for="smtp-ssl">Enable SSL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 mt-1">
+                    <div class="col-md-4 d-flex align-items-end gap-2">
+                        <button class="btn btn-sm btn-outline-info" @onclick="TestSmtp" disabled="@smtpTesting">
+                            @if (smtpTesting) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            <i class="bi bi-envelope"></i><div class="btn-lbl"> Send Test Email</div>
+                        </button>
+                        @if (smtpTestResult != null)
+                        {
+                            <small class="@(smtpTestSuccess ? "text-success" : "text-danger")">@smtpTestResult</small>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ── Account ───────────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Account</div>
+            <div class="card-body">
+                @if (acctStep == AcctStep.Request)
+                {
+                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                        <p class="text-muted small mb-0">Change your admin account password. A 6-digit code will be sent to <strong>@acctEmail</strong>.</p>
+                        @if (!string.IsNullOrEmpty(acctError))
+                        {
+                            <div class="alert alert-danger py-2 small">@acctError</div>
+                        }
+                        <button class="btn btn-sm btn-outline-danger" @onclick="AcctSendCode" disabled="@acctBusy">
+                            @if (acctBusy) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                            <i class="bi bi-key"></i><div class="btn-lbl"> Change Password</div>
+                        </button>
+                    </div>
+                }
+                else if (acctStep == AcctStep.Verify)
+                {
+                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                        <p class="text-muted small mb-0">Enter the 6-digit code sent to <strong>@acctEmail</strong>. Expires in 15 minutes.</p>
+                        @if (!string.IsNullOrEmpty(acctError))
+                        {
+                            <div class="alert alert-danger py-2 small">@acctError</div>
+                        }
+                        <div>
+                            <label class="form-label small text-muted">Verification Code</label>
+                            <input type="text" maxlength="6" inputmode="numeric" pattern="[0-9]*"
+                                   class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   style="max-width: 160px;"
+                                   @bind="acctCode" @bind:event="oninput" placeholder="000000" />
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-danger" @onclick="AcctVerifyCode"><div class="btn-lbl">Verify Code</div></button>
+                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
+                        </div>
+                    </div>
+                }
+                else if (acctStep == AcctStep.SetPassword)
+                {
+                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                        @if (!string.IsNullOrEmpty(acctError))
+                        {
+                            <div class="alert alert-danger py-2 small">@acctError</div>
+                        }
+                        <div>
+                            <label class="form-label small text-muted">New Password</label>
+                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   @bind="acctNewPwd" @bind:event="oninput" />
+                        </div>
+                        <div>
+                            <label class="form-label small text-muted">Confirm New Password</label>
+                            <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary"
+                                   @bind="acctConfirmPwd" @bind:event="oninput" />
+                        </div>
+                        <div class="text-muted" style="font-size: 0.72rem; line-height: 1.5;">
+                            @foreach (var req in PasswordRequirements(acctNewPwd))
+                            {
+                                <div>
+                                    <i class="bi @(req.Met ? "bi-check-circle-fill text-success" : "bi-circle text-secondary")"></i>
+                                    <span class="@(req.Met ? "text-success" : "text-secondary")"> @req.Label</span>
+                                </div>
+                            }
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-success" @onclick="AcctSubmitPassword"
+                                    disabled="@(AuthService.GetPasswordError(acctNewPwd) != null || acctNewPwd != acctConfirmPwd)">
+                                <i class="bi bi-floppy"></i><div class="btn-lbl"> Save New Password</div>
+                            </button>
+                            <button class="btn btn-sm btn-link text-muted" @onclick="AcctCancel"><div class="btn-lbl">Cancel</div></button>
+                        </div>
+                    </div>
+                }
+                else if (acctStep == AcctStep.Done)
+                {
+                    <div class="d-flex flex-column gap-3" style="max-width: 400px;">
+                        <div class="alert alert-success py-2 small">
+                            <i class="bi bi-check-circle-fill"></i> Password changed successfully.
+                        </div>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="AcctCancel"><div class="btn-lbl">Done</div></button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
     private List<LlmProviderStatus> providerStatus = [];
@@ -657,6 +821,16 @@
 
         if (ttsConfigured)
             await LoadVoices();
+
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var uid = authState.User.FindFirst("UserId")?.Value ?? "";
+        if (!string.IsNullOrEmpty(uid))
+        {
+            var user = UserRepo.GetById(uid);
+            acctUserId = uid;
+            acctEmail = user?.Email ?? "";
+            smtpTestTarget = acctEmail;
+        }
 
         _ = TestAllProviders();
     }
@@ -844,4 +1018,124 @@
 
     private Dictionary<string, List<(string name, string json)>> GetAllReposForExport()
         => ExportDiscovery.GetAllRepos();
+
+    // ── SMTP test ─────────────────────────────────────────
+    private bool smtpTesting;
+    private string? smtpTestResult;
+    private bool smtpTestSuccess;
+    private string smtpTestTarget = "";
+
+    private async Task TestSmtp()
+    {
+        smtpTesting = true; smtpTestResult = null;
+        try
+        {
+            await EmailSvc.SendAsync(
+                string.IsNullOrWhiteSpace(smtpTestTarget) ? SettingsSvc.SmtpFrom : smtpTestTarget,
+                "Street Samurai — SMTP Test",
+                "SMTP is configured correctly.");
+            smtpTestSuccess = true;
+            smtpTestResult = "Sent successfully.";
+        }
+        catch (Exception ex)
+        {
+            smtpTestSuccess = false;
+            smtpTestResult = ex.Message;
+        }
+        finally { smtpTesting = false; }
+    }
+
+    // ── Account — admin password change ───────────────────
+    private enum AcctStep { Request, Verify, SetPassword, Done }
+    private AcctStep acctStep = AcctStep.Request;
+    private string acctUserId = "";
+    private string acctEmail = "";
+    private string acctCode = "";
+    private string acctNewPwd = "";
+    private string acctConfirmPwd = "";
+    private string acctError = "";
+    private bool acctBusy;
+
+    private async Task AcctSendCode()
+    {
+        acctError = "";
+        acctBusy = true;
+        try
+        {
+            if (!EmailSvc.IsConfigured)
+            {
+                acctError = "SMTP is not configured. Fill in the SMTP section above and save first.";
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(acctEmail))
+            {
+                acctError = "Your account has no email address. Contact system support.";
+                return;
+            }
+            var code = PwdReset.GenerateCode(acctUserId);
+            await EmailSvc.SendAsync(
+                acctEmail,
+                "Street Samurai — Password Reset Code",
+                $"Your password reset code is: {code}\n\nThis code expires in 15 minutes.\nIf you did not request this, ignore this email.");
+            acctStep = AcctStep.Verify;
+        }
+        catch (Exception ex)
+        {
+            acctError = $"Failed to send code: {ex.Message}";
+        }
+        finally { acctBusy = false; }
+    }
+
+    private void AcctVerifyCode()
+    {
+        acctError = "";
+        if (string.IsNullOrWhiteSpace(acctCode)) { acctError = "Enter the 6-digit code."; return; }
+        if (!PwdReset.ValidateCode(acctUserId, acctCode))
+        {
+            acctError = "Invalid or expired code. Request a new one.";
+            acctStep = AcctStep.Request;
+            acctCode = "";
+            return;
+        }
+        acctNewPwd = "";
+        acctConfirmPwd = "";
+        acctStep = AcctStep.SetPassword;
+    }
+
+    private void AcctSubmitPassword()
+    {
+        acctError = "";
+        var err = AuthService.GetPasswordError(acctNewPwd);
+        if (err != null) { acctError = err; return; }
+        if (acctNewPwd != acctConfirmPwd) { acctError = "Passwords do not match."; return; }
+        try
+        {
+            Auth.ChangePassword(acctUserId, acctNewPwd);
+            acctNewPwd = "";
+            acctConfirmPwd = "";
+            acctStep = AcctStep.Done;
+        }
+        catch (Exception ex) { acctError = ex.Message; }
+    }
+
+    private void AcctCancel()
+    {
+        PwdReset.CancelCode(acctUserId);
+        acctStep = AcctStep.Request;
+        acctCode = "";
+        acctNewPwd = "";
+        acctConfirmPwd = "";
+        acctError = "";
+    }
+
+    private record PasswordReq(string Label, bool Met);
+
+    private static IEnumerable<PasswordReq> PasswordRequirements(string pwd) =>
+    [
+        new("At least 8 characters", pwd.Length >= 8),
+        new("One uppercase letter", pwd.Any(char.IsUpper)),
+        new("One lowercase letter", pwd.Any(char.IsLower)),
+        new("One number", pwd.Any(char.IsDigit)),
+        new($"One special character ({AuthService.SpecialChars})", pwd.Any(c => AuthService.SpecialChars.Contains(c))),
+    ];
 }

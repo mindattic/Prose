@@ -24,6 +24,7 @@ public class AuthService
 
     // Password policy
     public const int MinPasswordLength = 8;
+    public const string SpecialChars = @"~!@#$%^&*()-_=+'.,";
 
     // BCrypt silently truncates passwords at 72 bytes. Enforce a sane max to prevent
     // users from unknowingly relying on truncated-password collisions.
@@ -316,14 +317,33 @@ public class AuthService
 
     public static void ValidatePassword(string password)
     {
+        var error = GetPasswordError(password);
+        if (error != null) throw new ArgumentException(error);
+    }
+
+    /// <summary>
+    /// Returns a human-readable error message if the password fails policy, or null if it passes.
+    /// Policy: 8-72 chars, at least 1 uppercase, 1 lowercase, 1 digit, 1 special char from SpecialChars.
+    /// </summary>
+    public static string? GetPasswordError(string password)
+    {
         if (string.IsNullOrEmpty(password))
-            throw new ArgumentException("Password is required.");
+            return "Password is required.";
         if (password.Length < MinPasswordLength)
-            throw new ArgumentException($"Password must be at least {MinPasswordLength} characters.");
+            return $"Password must be at least {MinPasswordLength} characters.";
         if (password.Length > MaxPasswordLength)
-            throw new ArgumentException($"Password must not exceed {MaxPasswordLength} characters (BCrypt limit).");
+            return $"Password must not exceed {MaxPasswordLength} characters (BCrypt limit).";
         if (password.Contains('\0'))
-            throw new ArgumentException("Password contains invalid characters.");
+            return "Password contains invalid characters.";
+        if (!password.Any(char.IsUpper))
+            return "Password must contain at least one uppercase letter.";
+        if (!password.Any(char.IsLower))
+            return "Password must contain at least one lowercase letter.";
+        if (!password.Any(char.IsDigit))
+            return "Password must contain at least one number.";
+        if (!password.Any(c => SpecialChars.Contains(c)))
+            return $"Password must contain at least one special character: {SpecialChars}";
+        return null;
     }
 
     public static void ValidateDisplayName(string displayName)

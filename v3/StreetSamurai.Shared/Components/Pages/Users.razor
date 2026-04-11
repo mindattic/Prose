@@ -17,7 +17,7 @@ else
     <div class="dict-layout">
         <div class="dict-list">
             <div class="card bg-dark text-light border-secondary mb-2 card-body">
-                <button class="btn btn-sm btn-outline-danger w-100" @onclick="StartNewUser"><i class="bi bi-plus-lg"></i> New User</button>
+                <button class="btn btn-sm btn-outline-danger w-100" @onclick="StartNewUser"><i class="bi bi-plus-lg"></i><div class="btn-lbl"> New User</div></button>
             </div>
             <div class="dict-items">
                 @foreach (var u in users)
@@ -35,7 +35,7 @@ else
             {
                 <div class="d-flex align-items-center gap-2 mb-3 border-bottom border-secondary pb-2">
                     <h5 class="text-danger mb-0 flex-grow-1">@(isNew ? "New User" : editing.DisplayName)</h5>
-                    <button class="btn btn-sm btn-success" @onclick="SaveUser"><i class="bi bi-floppy"></i> Save</button>
+                    <button class="btn btn-sm btn-success" @onclick="SaveUser"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew)
                     {
                         <button class="btn btn-sm btn-outline-danger" @onclick="DeleteUser"><i class="bi bi-trash"></i></button>

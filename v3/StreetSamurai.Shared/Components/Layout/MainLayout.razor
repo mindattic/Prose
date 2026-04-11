@@ -34,13 +34,20 @@
         "SS_MUTABLE_DATA_ROOT",
     ];
 
-    protected override void OnAfterRender(bool firstRender)
+    private bool navPending = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
+        }
+        if (navPending)
+        {
+            navPending = false;
+            try { await JS.InvokeVoidAsync("__loaderHide"); } catch { }
         }
     }
 
@@ -69,12 +76,13 @@
 
     private async ValueTask OnLocationChanging(LocationChangingContext ctx)
     {
-        try { await JS.InvokeVoidAsync("__loaderShow", 500); } catch { }
+        navPending = true;
+        try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
     }
 
-    private async void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
     {
-        try { await JS.InvokeVoidAsync("__loaderHide"); } catch { }
+        // Location changed — OnAfterRenderAsync will fire next and hide the loader
     }
 
     public void Dispose()

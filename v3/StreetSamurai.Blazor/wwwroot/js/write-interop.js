@@ -493,3 +493,150 @@ window.__dictScrollActive = function () {
     document.addEventListener('DOMContentLoaded', setup);
     document.addEventListener('enhancedload', setup);
 })();
+
+// ── Profile avatar interop ──────────────────────────────────────────────────
+window.profileInterop = {
+    loadPreview: function (dataUrl, canvasId) {
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.onload = function () {
+            const size = Math.min(img.width, img.height);
+            const sx = (img.width - size) / 2;
+            const sy = (img.height - size) / 2;
+            canvas.width = 128;
+            canvas.height = 128;
+            ctx.clearRect(0, 0, 128, 128);
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(64, 64, 64, 0, Math.PI * 2);
+            ctx.clip();
+            ctx.drawImage(img, sx, sy, size, size, 0, 0, 128, 128);
+            ctx.restore();
+        };
+        img.src = dataUrl;
+    },
+    capture: function (canvasId) {
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return null;
+        const out = document.createElement('canvas');
+        out.width = 64; out.height = 64;
+        const ctx = out.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(32, 32, 32, 0, Math.PI * 2);
+        ctx.clip();
+        ctx.drawImage(canvas, 0, 0, 128, 128, 0, 0, 64, 64);
+        return out.toDataURL('image/png');
+    }
+};
+
+// ── Mobile dict drawer: tap tab or swipe to open/close ──────────────────────
+(function () {
+    var touchStartY = 0, touchStartTime = 0;
+
+    function getList() { return document.querySelector('.dict-list'); }
+
+    function openList()  { var l = getList(); if (l) l.classList.add('dict-list-open'); }
+    function closeList() { var l = getList(); if (l) l.classList.remove('dict-list-open'); updateNavFabPos(); }
+
+    function isOpen() { var l = getList(); return l && l.classList.contains('dict-list-open'); }
+
+    // Tap the collapsed tab area to open
+    document.addEventListener('click', function (e) {
+        var list = getList();
+        if (!list) return;
+        if (isOpen()) {
+            // Click outside → close
+            if (!list.contains(e.target)) closeList();
+        } else {
+            // Click on the visible tab portion → open
+            if (list.contains(e.target)) openList();
+        }
+    });
+
+    // Touch: swipe up to open, swipe down to close
+    document.addEventListener('touchstart', function (e) {
+        if (!getList()) return;
+        touchStartY = e.touches[0].clientY;
+        touchStartTime = Date.now();
+    }, { passive: true });
+
+    document.addEventListener('touchend', function (e) {
+        var list = getList();
+        if (!list) return;
+        var dy = touchStartY - e.changedTouches[0].clientY;
+        var dt = Date.now() - touchStartTime;
+        var speed = Math.abs(dy) / dt; // px/ms
+        if (!isOpen() && dy > 40 && list.contains(e.target)) {
+            // Swiped up on the tab → open
+            openList();
+        } else if (isOpen() && dy < -40 && (list.contains(e.target) || speed > 0.5)) {
+            // Swiped down → close
+            closeList();
+        }
+    }, { passive: true });
+
+    // Reset on navigation
+    function setup() {
+        var list = getList();
+        if (list) list.classList.remove('dict-list-open');
+        updateNavFabPos();
+    }
+
+    document.addEventListener('DOMContentLoaded', setup);
+    document.addEventListener('enhancedload', setup);
+})();
+
+// ── Mobile nav FAB: hamburger → search + controls drawer ────────────────────
+(function () {
+    var fab = null, backdrop = null;
+
+    function updateNavFabPos() {
+        if (!fab) return;
+        var hasDictTab = !!document.querySelector('.dict-list');
+        fab.style.bottom = hasDictTab ? '56px' : '16px';
+    }
+    // Make available to dict drawer code above
+    window._updateNavFabPos = updateNavFabPos;
+
+    function close() {
+        document.body.classList.remove('nav-mobile-open');
+        if (fab) fab.innerHTML = '<i class="bi bi-list"></i>';
+    }
+
+    function setup() {
+        if (!fab) {
+            // FAB button
+            fab = document.createElement('button');
+            fab.id = 'nav-mobile-fab';
+            fab.className = 'nav-mobile-fab';
+            fab.type = 'button';
+            fab.setAttribute('aria-label', 'Open search');
+            fab.innerHTML = '<i class="bi bi-list"></i>';
+            fab.addEventListener('click', function () {
+                var open = document.body.classList.toggle('nav-mobile-open');
+                fab.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+                if (open) {
+                    // Focus search input in drawer
+                    var inp = document.querySelector('#topnav-mobile-drawer .topnav-search');
+                    if (inp) setTimeout(function () { inp.focus(); }, 200);
+                }
+            });
+            document.body.appendChild(fab);
+
+            // Backdrop div
+            backdrop = document.createElement('div');
+            backdrop.className = 'nav-mobile-backdrop';
+            backdrop.addEventListener('click', close);
+            document.body.appendChild(backdrop);
+        }
+
+        // Close drawer on navigation
+        close();
+        updateNavFabPos();
+    }
+
+    document.addEventListener('DOMContentLoaded', setup);
+    document.addEventListener('enhancedload', setup);
+})();
