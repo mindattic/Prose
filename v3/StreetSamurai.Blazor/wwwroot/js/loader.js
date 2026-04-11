@@ -18,7 +18,7 @@ window.__gmapsReady = function() {
     window.__gmapsCbs = [];
 };
 
-// Unified loader — used for both app startup and page navigation.
+// Unified loader — navigation overlay that appears after 500ms on slow page transitions.
 // The overlay element must exist in the HTML with id="app-loader" and child id="loader-ms".
 (function() {
     var timer = null;
@@ -58,21 +58,60 @@ window.__gmapsReady = function() {
         timer = null;
         timeout = null;
         var el = getEl();
+        var ms = getMs();
         if (el) el.style.display = 'none';
+        if (ms) ms.textContent = '0000';
     };
 
-    // Auto-start timer on initial load
-    start = performance.now();
-    timer = setInterval(tick, 1);
+    // ── Navigation loader ─────────────────────────────────────────────────
+    // Intercepts Blazor interactive-server navigation via history.pushState patch.
+    // Shows the loader only if navigation takes longer than 500ms.
+    // Hides when DOM mutations in the main content area stop for 150ms (page rendered).
+    (function() {
+        var navigating = false;
+        var hideDebounce = null;
 
-    // Auto-hide: DOMContentLoaded fires after full HTML is parsed (reliable for static SSR).
-    // By this point the server-rendered .app-shell div is guaranteed to be in the DOM.
-    document.addEventListener('DOMContentLoaded', function() {
-        window.__loaderHide();
-    });
+        function navStart() {
+            navigating = true;
+            window.__loaderShow(500);
+        }
 
-    // Safety net: force-hide after 10s in case something goes wrong
-    safetyTimer = setTimeout(function() {
-        window.__loaderHide();
-    }, 10000);
+        function navMaybeEnd() {
+            if (!navigating) return;
+            clearTimeout(hideDebounce);
+            hideDebounce = setTimeout(function() {
+                navigating = false;
+                window.__loaderHide();
+            }, 150);
+        }
+
+        // Blazor interactive server uses history.pushState for navigation
+        var origPush = history.pushState.bind(history);
+        history.pushState = function() {
+            origPush.apply(history, arguments);
+            navStart();
+        };
+
+        // Back/forward browser navigation
+        window.addEventListener('popstate', navStart);
+
+        // Blazor enhanced navigation fallback (fires in SSR/static mode)
+        document.addEventListener('enhancednavigationstart', navStart);
+        document.addEventListener('enhancedload', function() { if (navigating) navMaybeEnd(); });
+
+        // Watch the main content area — when DOM mutations settle, the new page is rendered
+        var mo = new MutationObserver(navMaybeEnd);
+
+        function setup() {
+            var main = document.querySelector('.topnav-main') || document.querySelector('main');
+            if (main) mo.observe(main, { childList: true, subtree: true });
+        }
+
+        document.addEventListener('DOMContentLoaded', setup);
+
+        // Safety: hide loader after 10s regardless
+        document.addEventListener('DOMContentLoaded', function() {
+            safetyTimer = setTimeout(window.__loaderHide, 10000);
+        });
+    })();
 })();

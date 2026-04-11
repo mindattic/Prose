@@ -1,0 +1,40 @@
+@* Three-level breadcrumb for dict pages: [Home] > [Category] > PageName
+   If Category is null/empty: [Home] > PageName
+   Usage: <DictBreadcrumb Category="Gear" CategoryUrl="/board/gear" PageName="Weaponry" /> *@
+
+<div class="dict-crumb">
+    <a href="/" class="dict-crumb-link"><i class="bi bi-house-door"></i></a>
+    @if (!string.IsNullOrEmpty(Category))
+    {
+        <span class="dict-crumb-sep">›</span>
+        @if (!string.IsNullOrEmpty(PageName))
+        {
+            <a href="@CategoryUrl" class="dict-crumb-link">@Category</a>
+            <span class="dict-crumb-sep">›</span>
+            <span class="dict-crumb-current">@PageName</span>
+        }
+        else
+        {
+            <span class="dict-crumb-current">@Category</span>
+        }
+    }
+    else if (!string.IsNullOrEmpty(PageName))
+    {
+        <span class="dict-crumb-sep">›</span>
+        <span class="dict-crumb-current">@PageName</span>
+    }
+</div>
+
+<style>
+    .dict-crumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; font-size: 0.8rem; }
+    .dict-crumb-link { color: #8b949e; text-decoration: none; }
+    .dict-crumb-link:hover { color: #e6edf3; text-decoration: none; }
+    .dict-crumb-sep { color: #484f58; }
+    .dict-crumb-current { color: #e6edf3; font-weight: 500; }
+</style>
+
+@code {
+    [Parameter] public string? Category { get; set; }
+    [Parameter] public string? CategoryUrl { get; set; }
+    [Parameter] public string? PageName { get; set; }
+}

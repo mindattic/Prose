@@ -1,6 +1,7 @@
 :root {
     --gutter: 10px;
     --titlebar-offset: 10px;
+    --topnav-height: 44px;
     --bs-gutter-x: 10px;
     --bs-gutter-y: 10px;
 }
@@ -61,15 +62,104 @@ html, body {
 }
 
 /* Dark theme overrides */
-.app-shell {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #0d1117;
+.app-shell { width: 100%; height: 100vh; display: flex; flex-direction: column; background-color: #0d1117; overflow: hidden; }
+
+/* ── Top nav ─────────────────────────────────────────────────────── */
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0 12px;
+    height: var(--topnav-height);
+    min-height: var(--topnav-height);
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    white-space: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1050;
 }
-.app-container { background-color: #0d1117; min-height: 100vh; }
-.sidebar { background-color: #161b22 !important; border-right: 1px solid #30363d; }
-.sidebar .nav-link:hover { background-color: #21262d; border-radius: 4px; }
-.sidebar .nav-link.active { color: #dc3545 !important; background-color: #21262d; border-radius: 4px; }
+.topnav-main {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    min-height: 0;
+}
+.topnav-brand {
+    color: #dc3545 !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 0 6px 0 0;
+    flex-shrink: 0;
+}
+.topnav-brand:hover { color: #ff6b6b !important; }
+.topnav-sep {
+    width: 1px; height: 20px;
+    background: #30363d;
+    margin: 0 6px;
+    flex-shrink: 0;
+}
+.topnav-link {
+    color: #c9d1d9 !important;
+    text-decoration: none;
+    font-size: 0.82rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 30px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.topnav-link:hover { background: #21262d; color: #e6edf3 !important; }
+.topnav-link:focus, .topnav-link:active, .topnav-link.show { outline: none !important; box-shadow: none !important; border-color: transparent !important; background: #21262d; }
+.topnav-link.active { color: #dc3545 !important; background: none; }
+.topnav-link.dropdown-toggle::after { margin-left: 3px; }
+.topnav-count {
+    font-size: 0.65rem;
+    background: #21262d;
+    color: #8b949e;
+    border-radius: 8px;
+    padding: 0 5px;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid #30363d;
+}
+.topnav-drop-menu {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+    padding: 4px 0 !important;
+    min-width: 200px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+}
+.topnav-drop-item {
+    color: #c9d1d9 !important;
+    font-size: 0.82rem;
+    padding: 5px 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.topnav-drop-item:hover { background: #21262d !important; color: #e6edf3 !important; }
+.topnav-drop-item.active { background: #21262d !important; color: #dc3545 !important; }
+.topnav-drop-icon { width: 14px; flex-shrink: 0; opacity: 0.7; }
+.topnav-user {
+    font-size: 0.78rem;
+    color: #8b949e;
+    padding: 0 4px;
+    white-space: nowrap;
+}
+.topnav-logout {
+    font-size: 0.72rem !important;
+    height: 24px !important;
+    padding: 0 8px !important;
+}
 
 /* Fix label visibility — Bootstrap text-muted is invisible on dark backgrounds */
 .form-label { color: #9ca3af !important; font-weight: 500; }
@@ -276,7 +366,7 @@ h1:focus {
 .dict-layout {
     display: flex;
     gap: 0;
-    height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px);
+    height: calc(100vh - var(--topnav-height) - var(--gutter) - 56px);
 }
 .dict-nav {
     width: 180px;
@@ -419,3 +509,19 @@ a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58
     border-radius: 6px;
     background: #161b22;
 }
+
+/* ── Category board tiles ──────────────────────────────────────────────── */
+.board-grid { display: flex; flex-wrap: wrap; gap: 16px; padding: 4px 0 24px; }
+.board-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 140px; height: 120px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 12px 20px; text-decoration: none; color: #e6edf3; gap: 8px; transition: background 0.12s, border-color 0.12s; position: relative; }
+.board-tile:hover { background: #1c2128; border-color: #dc3545; color: #fff; text-decoration: none; }
+.board-tile-icon { font-size: 2rem; color: #dc3545; }
+.board-tile-name { font-size: 0.8rem; font-weight: 500; text-align: center; line-height: 1.3; }
+.board-tile-count { position: absolute; bottom: 7px; right: 10px; font-size: 0.65rem; color: #8b949e; }
+
+/* ── Topnav split dropdown (label = board link, caret = toggle) ─────────── */
+.topnav-split-drop { display: inline-flex; align-items: stretch; }
+.topnav-split-caret { padding: 0 5px !important; min-width: unset !important; }
+.topnav-split-caret::after { margin-left: 0; vertical-align: 0.15em; }
+
+/* ── Topnav category icon ──────────────────────────────────────────────── */
+.topnav-cat-icon { font-size: 0.75rem; margin-right: 4px; opacity: 0.8; }

@@ -1,0 +1,123 @@
+@page "/board/{slug}"
+@inject CharacterRepository CharRepo
+@inject SyntheticLifeRepository SynthRepo
+@inject ArchetypeRepository ArchetypeRepo
+@inject CorponationRepository CorpRepo
+@inject SubsidiaryRepository SubsidiaryRepo
+@inject FactionRepository FactionRepo
+@inject WeaponryRepository WeaponRepo
+@inject AmmunitionRepository AmmoRepo
+@inject CyberwareRepository CyberRepo
+@inject EquipmentRepository EquipRepo
+@inject ApparelRepository ApparelRepo
+@inject GenemodRepository GenemodRepo
+@inject PharmaceuticalRepository PharmaRepo
+@inject DistrictRepository DistrictRepo
+@inject TransportationRepository TransportRepo
+@inject MaterialRepository MaterialRepo
+@inject TechnologyRepository TechRepo
+@inject AutomatonRepository AutomatonRepo
+@inject WorldbuildingDocRepository DocRepo
+@inject QuoteRepository QuoteRepo
+@inject VocabularyRepository VocabRepo
+@inject NewsRepository NewsRepo
+@inject EntertainmentRepository EntertainmentRepo
+@inject ConsumerGoodRepository GoodsRepo
+
+<DictBreadcrumb Category="@title" />
+
+@if (tiles.Count == 0)
+{
+    <div class="text-muted">Unknown category.</div>
+}
+else
+{
+    <div class="board-grid">
+        @foreach (var tile in tiles)
+        {
+            <a href="@tile.Href" class="board-tile">
+                <i class="bi @tile.Icon board-tile-icon"></i>
+                <div class="board-tile-name">@tile.Name</div>
+                @if (tile.Count > 0)
+                {
+                    <span class="board-tile-count">@tile.Count</span>
+                }
+            </a>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public string? Slug { get; set; }
+
+    record BoardTile(string Icon, string Href, string Name, int Count);
+
+    string title = "";
+    List<BoardTile> tiles = [];
+
+    protected override void OnParametersSet()
+    {
+        title = Slug?.ToLower() switch
+        {
+            "characters"    => "Characters",
+            "organizations" => "Organizations",
+            "gear"          => "Gear",
+            "world"         => "World",
+            "culture"       => "Culture",
+            "tools"         => "Tools",
+            _               => Slug ?? "Board"
+        };
+
+        tiles = title switch
+        {
+            "Characters" =>
+            [
+                new("bi-people",              "characters",      "People",          CharRepo.GetAll().Count),
+                new("bi-cpu-fill",            "synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count),
+                new("bi-person-bounding-box", "archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count),
+            ],
+            "Organizations" =>
+            [
+                new("bi-building",            "corps",           "Corponations",    CorpRepo.GetAll().Count),
+                new("bi-diagram-3",           "subsidiaries",    "Subsidiaries",    SubsidiaryRepo.GetAll().Count),
+                new("bi-shield-exclamation",  "factions",        "Factions",        FactionRepo.GetAll().Count),
+            ],
+            "Gear" =>
+            [
+                new("bi-crosshair",           "weaponry",        "Weaponry",        WeaponRepo.GetAll().Count),
+                new("bi-bullseye",            "ammunition",      "Ammunition",      AmmoRepo.GetAll().Count),
+                new("bi-motherboard",         "cyberware",       "Cyberware",       CyberRepo.GetAll().Count),
+                new("bi-shield-shaded",       "equipment",       "Equipment",       EquipRepo.GetAll().Count),
+                new("bi-handbag",             "apparel",         "Apparel",         ApparelRepo.GetAll().Count),
+                new("bi-virus",               "genemods",        "Genemods",        GenemodRepo.GetAll().Count),
+                new("bi-capsule",             "pharmaceuticals", "Pharmaceuticals", PharmaRepo.GetAll().Count),
+            ],
+            "World" =>
+            [
+                new("bi-geo-alt",             "places",          "Places",          DistrictRepo.GetAll().Count),
+                new("bi-truck",               "transportation",  "Transportation",  TransportRepo.GetAll().Count),
+                new("bi-gem",                 "materials",       "Materials",       MaterialRepo.GetAll().Count),
+                new("bi-cpu",                 "technology",      "Technology",      TechRepo.GetAll().Count),
+                new("bi-robot",               "automata",        "Automata",        AutomatonRepo.GetAll().Count),
+                new("bi-book",                "rules",           "World Rules",     0),
+            ],
+            "Culture" =>
+            [
+                new("bi-file-earmark-text",   "documents",       "Documents",       DocRepo.GetAll().Count),
+                new("bi-quote",               "quotes",          "Quotes",          QuoteRepo.GetAll().Count),
+                new("bi-chat-quote",          "vocabulary",      "Vocabulary",      VocabRepo.GetAll().Count),
+                new("bi-newspaper",           "news",            "News Archive",    NewsRepo.GetAll().Count),
+                new("bi-film",                "entertainment",   "Entertainment",   EntertainmentRepo.GetAll().Count),
+                new("bi-basket",              "goods",           "Consumer Goods",  GoodsRepo.GetAll().Count),
+            ],
+            "Tools" =>
+            [
+                new("bi-diagram-3",           "graph",           "World Graph",     0),
+                new("bi-map",                 "map",             "Map",             0),
+                new("bi-check2-circle",       "facts",           "Fact Discovery",  0),
+                new("bi-globe-americas",      "heritage",        "Heritage",        0),
+            ],
+            _ => []
+        };
+    }
+}
