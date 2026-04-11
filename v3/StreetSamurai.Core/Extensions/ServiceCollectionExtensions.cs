@@ -100,7 +100,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AmbientAnomalyService>();
         services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
-        services.AddSingleton<FtpPublishService>();
+        // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
         services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();

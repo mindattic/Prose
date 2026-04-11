@@ -129,14 +129,14 @@ public class SettingsService : IDisposable
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
 
-    // FTP Publishing
-    public string FtpHost { get => data.FtpHost; set { data.FtpHost = value; ScheduleSave(); } }
-    public int FtpPort { get => data.FtpPort; set { data.FtpPort = value; ScheduleSave(); } }
-    public string FtpUsername { get => data.FtpUsername; set { data.FtpUsername = value; ScheduleSave(); } }
-    public string FtpPassword { get => data.FtpPassword; set { data.FtpPassword = value; ScheduleSave(); } }
-    public string FtpRemotePath { get => data.FtpRemotePath; set { data.FtpRemotePath = value; ScheduleSave(); } }
-    public bool FtpUseSsl { get => data.FtpUseSsl; set { data.FtpUseSsl = value; ScheduleSave(); } }
-    public bool FtpPassive { get => data.FtpPassive; set { data.FtpPassive = value; ScheduleSave(); } }
+    // FTP Publishing — disabled, deploying via Azure CI/CD
+    // public string FtpHost { get => data.FtpHost; set { data.FtpHost = value; ScheduleSave(); } }
+    // public int FtpPort { get => data.FtpPort; set { data.FtpPort = value; ScheduleSave(); } }
+    // public string FtpUsername { get => data.FtpUsername; set { data.FtpUsername = value; ScheduleSave(); } }
+    // public string FtpPassword { get => data.FtpPassword; set { data.FtpPassword = value; ScheduleSave(); } }
+    // public string FtpRemotePath { get => data.FtpRemotePath; set { data.FtpRemotePath = value; ScheduleSave(); } }
+    // public bool FtpUseSsl { get => data.FtpUseSsl; set { data.FtpUseSsl = value; ScheduleSave(); } }
+    // public bool FtpPassive { get => data.FtpPassive; set { data.FtpPassive = value; ScheduleSave(); } }
 
     /// <summary>All supported timestamp formats, keyed by .NET format string with example display values.</summary>
     public static readonly (string Format, string Example)[] TimestampFormats =
