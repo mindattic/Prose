@@ -24,7 +24,6 @@
 @inject EntertainmentRepository EntertainmentRepo
 @inject ConsumerGoodRepository GoodsRepo
 
-<DictBreadcrumb Category="@title" />
 
 @if (tiles.Count == 0)
 {
@@ -112,6 +111,7 @@ else
             ],
             "Tools" =>
             [
+                new("bi-speedometer2",        "dashboard",       "Dashboard",       0),
                 new("bi-diagram-3",           "graph",           "World Graph",     0),
                 new("bi-map",                 "map",             "Map",             0),
                 new("bi-check2-circle",       "facts",           "Fact Discovery",  0),

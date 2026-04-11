@@ -1,10 +1,9 @@
-﻿@page "/corps"
+@page "/corps"
 @inject CorponationRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
 
-<DictBreadcrumb Category="Organizations" CategoryUrl="/board/organizations" PageName="Corponations" />
 <div class="dict-layout">
     <div class="dict-list">
         <div class="card bg-dark text-light border-secondary mb-2 card-body">
@@ -28,9 +27,9 @@
         {
             <EditViewToggle RepoName="corps" Title="@(isNew ? "New Corponation" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
                 <HeaderButtons>
-                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i> Save</button>
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
-                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete">Confirm</button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false">No</button> }
+                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Confirm</div></button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button> }
                 </HeaderButtons>
                 <ChildContent>
                     <div class="row g-3 mb-3">

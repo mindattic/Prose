@@ -34,7 +34,7 @@
            @bind="project.Title"
            @bind:after="Save" />
     <button class="btn btn-sm btn-danger text-nowrap" style="height: 32px;" @onclick="ForceSave">
-        <i class="bi bi-floppy"></i> Save
+        <i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div>
     </button>
 </div>
 
@@ -72,11 +72,11 @@
                 @if (!string.IsNullOrEmpty(commandResult))
                 {
                     <div class="mb-3 bg-black rounded p-3 small" style="white-space: pre-wrap; max-height: 400px; overflow-y: auto;">@commandResult</div>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAsk">Close</button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="CloseAsk"><div class="btn-lbl">Close</div></button>
                 }
                 else if (!busy)
                 {
-                    <button class="btn btn-sm btn-info text-dark" @onclick="ExecuteAsk"><i class="bi bi-send"></i> Ask</button>
+                    <button class="btn btn-sm btn-info text-dark" @onclick="ExecuteAsk"><i class="bi bi-send"></i><div class="btn-lbl"> Ask</div></button>
                 }
             </div>
         </div>
@@ -116,14 +116,14 @@
                                   @bind="writeResult"></textarea>
                     </div>
                     <div class="d-flex gap-2">
-                        <button class="btn btn-sm btn-success" @onclick="ApplyWrite"><i class="bi bi-check-lg"></i> Insert</button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick='() => writeResult = ""'>Clear</button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false">Dismiss</button>
+                        <button class="btn btn-sm btn-success" @onclick="ApplyWrite"><i class="bi bi-check-lg"></i><div class="btn-lbl"> Insert</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick='() => writeResult = ""'><div class="btn-lbl">Clear</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => showWriteModal = false"><div class="btn-lbl">Dismiss</div></button>
                     </div>
                 }
                 else if (!busy)
                 {
-                    <button class="btn btn-sm btn-danger" @onclick="DoWrite"><i class="bi bi-pen"></i> Generate</button>
+                    <button class="btn btn-sm btn-danger" @onclick="DoWrite"><i class="bi bi-pen"></i><div class="btn-lbl"> Generate</div></button>
                 }
             </div>
         </div>
@@ -164,7 +164,7 @@
                             <div class="small mb-2">@p.Premise</div>
                             <div class="small text-info mb-2">@p.ThematicResonance</div>
                             <button class="btn btn-sm btn-outline-danger" @onclick="() => UseConflictPremise(p)">
-                                <i class="bi bi-pen"></i> Write This
+                                <i class="bi bi-pen"></i><div class="btn-lbl"> Write This</div>
                             </button>
                         </div>
                     }
@@ -220,7 +220,7 @@
                                     </div>
                                     @if (!b.Written)
                                     {
-                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => WriteBeatFromOutline(b)">Write</button>
+                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => WriteBeatFromOutline(b)"><div class="btn-lbl">Write</div></button>
                                     }
                                 </div>
                             }
@@ -252,7 +252,7 @@
                                min="6" max="24" @bind="outlineTargetBeats" style="width: 80px;" />
                     </div>
                     <button class="btn btn-sm btn-success" @onclick="GenerateOutline" disabled="@string.IsNullOrWhiteSpace(outlinePremise)">
-                        <i class="bi bi-list-ol"></i> Generate Outline
+                        <i class="bi bi-list-ol"></i><div class="btn-lbl"> Generate Outline</div>
                     </button>
                 }
             </div>
@@ -365,10 +365,10 @@
                             <div class="d-flex gap-1 mb-2">
                                 <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => GenerateMore(i)" disabled="@generatingMore">
                                     @if (generatingMore && activeIssueIdx == i) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                    <i class="bi bi-arrow-repeat me-1"></i> More alternatives
+                                    <i class="bi bi-arrow-repeat me-1"></i><div class="btn-lbl"> More alternatives</div>
                                 </button>
                                 <button class="btn btn-sm btn-outline-secondary text-start" style="height:auto; white-space:normal;" @onclick="() => DismissIssue(i)">
-                                    <i class="bi bi-x me-1"></i> Ignore
+                                    <i class="bi bi-x me-1"></i><div class="btn-lbl"> Ignore</div>
                                 </button>
                             </div>
                         </div>
@@ -424,10 +424,10 @@
 
                 <div class="d-flex gap-1">
                     <button class="btn btn-sm btn-outline-info" @onclick="GenerateMoreAlts" disabled="@generatingAlts">
-                        <i class="bi bi-arrow-repeat me-1"></i> Generate more
+                        <i class="bi bi-arrow-repeat me-1"></i><div class="btn-lbl"> Generate more</div>
                     </button>
                     <button class="btn btn-sm btn-outline-secondary" @onclick="() => showAlternativesModal = false">
-                        Close
+                        <div class="btn-lbl">Close</div>
                     </button>
                 </div>
             </div>
@@ -439,10 +439,10 @@
 @if (viewMode == "editor")
 {
 <div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap; padding-top: 3px; padding-bottom: 3px;">
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1" style="font-weight: bold;">H1</button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2" style="font-weight: bold;">H2</button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3" style="font-weight: bold;">H3</button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("p")' title="Paragraph">P</button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1" style="font-weight: bold;"><div class="btn-lbl">H1</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2" style="font-weight: bold;"><div class="btn-lbl">H2</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3" style="font-weight: bold;"><div class="btn-lbl">H3</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("p")' title="Paragraph"><div class="btn-lbl">P</div></button>
     <span class="text-secondary mx-1">|</span>
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("bold")' title="Bold"><i class="bi bi-type-bold"></i></button>
     <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("italic")' title="Italic"><i class="bi bi-type-italic"></i></button>
@@ -502,7 +502,7 @@
                                    placeholder="Alt text (optional)" @bind="imageAlt" />
                             <button class="btn btn-sm btn-info text-dark text-nowrap" @onclick="DoInsertImage"
                                     disabled="@string.IsNullOrWhiteSpace(imageBase64)">
-                                <i class="bi bi-image"></i> Insert
+                                <i class="bi bi-image"></i><div class="btn-lbl"> Insert</div>
                             </button>
                         </div>
                         @if (!string.IsNullOrWhiteSpace(imageBase64))
@@ -522,13 +522,13 @@
             <div class="position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
                  style="z-index: 1070; top: @(ctxMenuTop)px; left: @(ctxMenuLeft)px; min-width: 160px;">
                 <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="OpenSuggestAlternatives" disabled="@(!hasSelection)">
-                    <i class="bi bi-lightbulb text-warning me-2"></i>Suggest Alternatives
+                    <i class="bi bi-lightbulb text-warning me-2"></i><div class="btn-lbl">Suggest Alternatives</div>
                 </button>
                 <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(narrating || !hasSelection)">
-                    <i class="bi bi-volume-up text-info me-2"></i>Read Selected
+                    <i class="bi bi-volume-up text-info me-2"></i><div class="btn-lbl">Read Selected</div>
                 </button>
                 <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadAll" disabled="@narrating">
-                    <i class="bi bi-megaphone text-info me-2"></i>Read All
+                    <i class="bi bi-megaphone text-info me-2"></i><div class="btn-lbl">Read All</div>
                 </button>
             </div>
         }
@@ -567,41 +567,41 @@
         @* ── ElevenLabs Tag Bar ────────────────────── *@
         <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
             <small class="text-muted fw-bold me-1">TTS Tags</small>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'>short pause</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'>long pause</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'><div class="btn-lbl">short pause</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'><div class="btn-lbl">long pause</div></button>
             <span class="text-secondary mx-1">|</span>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'>whispers</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'>sighs</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'>laughs</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'>chuckles</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'>clears throat</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'><div class="btn-lbl">whispers</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'><div class="btn-lbl">sighs</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'><div class="btn-lbl">laughs</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'><div class="btn-lbl">chuckles</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'><div class="btn-lbl">clears throat</div></button>
             <span class="text-secondary mx-1">|</span>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'>exhales</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'>sharp exhale</button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'>deep inhale</button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'><div class="btn-lbl">exhales</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'><div class="btn-lbl">sharp exhale</div></button>
+            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'><div class="btn-lbl">deep inhale</div></button>
         </div>
 
         @* ── Bottom bar: view toggle left, Ask/Write right ── *@
         <div class="d-flex align-items-center mt-1">
             <div class="btn-group">
-                <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i> Editor</button>
-                <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i> Preview</button>
+                <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i><div class="btn-lbl"> Editor</div></button>
+                <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i><div class="btn-lbl"> Preview</div></button>
             </div>
             <div class="ms-auto d-flex gap-2">
                 <button class="btn btn-sm btn-outline-success" @onclick="ShowOutlineModal" disabled="@busy">
-                    <i class="bi bi-list-ol"></i> Outline
+                    <i class="bi bi-list-ol"></i><div class="btn-lbl"> Outline</div>
                 </button>
                 <button class="btn btn-sm btn-outline-primary" @onclick="WhatNext" disabled="@(busy || project.Characters.Count == 0)">
-                    <i class="bi bi-lightning"></i> What Next?
+                    <i class="bi bi-lightning"></i><div class="btn-lbl"> What Next?</div>
                 </button>
                 <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(busy || !hasExistingText)">
-                    <i class="bi bi-shield-check"></i> Validate
+                    <i class="bi bi-shield-check"></i><div class="btn-lbl"> Validate</div>
                 </button>
                 <button class="btn btn-sm btn-outline-info" @onclick="() => showAskModal = true" disabled="@busy">
-                    <i class="bi bi-chat-dots"></i> Ask
+                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Ask</div>
                 </button>
                 <button class="btn btn-sm btn-outline-danger" @onclick="() => showWriteModal = true" disabled="@busy">
-                    <i class="bi bi-pen"></i> Write
+                    <i class="bi bi-pen"></i><div class="btn-lbl"> Write</div>
                 </button>
             </div>
         </div>
@@ -625,7 +625,7 @@
                                 <span>@issue</span>
                             </div>
                         }
-                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="() => validationIssues.Clear()">Dismiss</button>
+                        <button class="btn btn-sm btn-outline-warning mt-1" @onclick="() => validationIssues.Clear()"><div class="btn-lbl">Dismiss</div></button>
                     </div>
                 </div>
             }

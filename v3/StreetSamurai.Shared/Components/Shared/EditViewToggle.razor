@@ -3,11 +3,11 @@
    In edit mode, shows the child content (form fields).
    State persists per-repo across navigation. *@
 
-<div class="d-flex align-items-center gap-2 mb-3 border-bottom border-secondary pb-2">
-    <h5 class="text-danger mb-0 flex-grow-1">@Title</h5>
+<div class="ev-header">
+    <h5 class="text-danger ev-header-title">@Title</h5>
     @if (Access.CanWrite)
     {
-        <div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-2 flex-shrink-0">
             @if (editMode)
             {
                 @HeaderButtons

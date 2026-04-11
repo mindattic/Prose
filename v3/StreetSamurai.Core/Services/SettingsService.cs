@@ -129,6 +129,14 @@ public class SettingsService : IDisposable
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
 
+    // SMTP — outbound email for password reset codes
+    public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
+    public int SmtpPort { get => int.TryParse(Env("SS_SMTP_PORT", ""), out var p) ? p : data.SmtpPort; set { data.SmtpPort = value; ScheduleSave(); } }
+    public string SmtpUsername { get => Env("SS_SMTP_USERNAME", data.SmtpUsername); set { data.SmtpUsername = value; ScheduleSave(); } }
+    public string SmtpPassword { get => Env("SS_SMTP_PASSWORD", data.SmtpPassword); set { data.SmtpPassword = value; ScheduleSave(); } }
+    public string SmtpFrom { get => Env("SS_SMTP_FROM", data.SmtpFrom); set { data.SmtpFrom = value; ScheduleSave(); } }
+    public bool SmtpEnableSsl { get => data.SmtpEnableSsl; set { data.SmtpEnableSsl = value; ScheduleSave(); } }
+
     // FTP Publishing — disabled, deploying via Azure CI/CD
     // public string FtpHost { get => data.FtpHost; set { data.FtpHost = value; ScheduleSave(); } }
     // public int FtpPort { get => data.FtpPort; set { data.FtpPort = value; ScheduleSave(); } }
@@ -262,6 +270,12 @@ public class SettingsService : IDisposable
         public string TimestampFormat { get; set; } = "yyyy-MM-dd hh:mm:sstt";
         public string TimezoneId { get; set; } = "Central Standard Time";
         public string FontFamily { get; set; } = "Outfit";
+        public string SmtpHost { get; set; } = "";
+        public int SmtpPort { get; set; } = 587;
+        public string SmtpUsername { get; set; } = "";
+        public string SmtpPassword { get; set; } = "";
+        public string SmtpFrom { get; set; } = "";
+        public bool SmtpEnableSsl { get; set; } = true;
         public string FtpHost { get; set; } = "";
         public int FtpPort { get; set; } = 21;
         public string FtpUsername { get; set; } = "";

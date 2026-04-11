@@ -154,6 +154,35 @@ public class GlobalSearchService
             .ToList();
     }
 
+    /// <summary>
+    /// Tiered search: tier 1 = name/tag/subtitle matches (fast, high-confidence);
+    /// tier 2 = body-only matches (slower, lower confidence).
+    /// Caller can render tier 1 immediately, then append tier 2.
+    /// </summary>
+    public (List<CanonSearchResult> tier1, List<CanonSearchResult> tier2) SearchTiered(string query, int pageSize = 50)
+    {
+        EnsureBuilt();
+        if (string.IsNullOrWhiteSpace(query)) return ([], []);
+        var q = query.Trim();
+        var words = q.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+        var t1 = new List<(SearchIndexEntry e, int s)>(128);
+        var t2 = new List<(SearchIndexEntry e, int s)>(128);
+
+        foreach (var e in index)
+        {
+            var s1 = ScoreNameTagSubtitle(e, q, words);
+            if (s1 > 0) { t1.Add((e, s1)); continue; }
+            var s2 = ScoreBody(e, q, words);
+            if (s2 > 0) t2.Add((e, s2));
+        }
+
+        return (
+            t1.OrderByDescending(x => x.s).Take(pageSize).Select(x => ToResult(x.e, q, x.s)).ToList(),
+            t2.OrderByDescending(x => x.s).Take(pageSize).Select(x => ToResult(x.e, q, x.s)).ToList()
+        );
+    }
+
     // ── Internal ──────────────────────────────────────────────────────────────
 
     private void Invalidate() { lock (syncLock) { index = []; } }
@@ -228,29 +257,29 @@ public class GlobalSearchService
     private static CanonSearchResult ToResult(SearchIndexEntry e, string query, int score) =>
         new(e.Id, e.Type, e.Name, e.Subtitle, Snippet(e.Body, query), e.Tags, $"{e.RepoRoute}?id={e.Id}", score);
 
-    private static int Score(SearchIndexEntry e, string q, string[] words)
+    private static int Score(SearchIndexEntry e, string q, string[] words) =>
+        ScoreNameTagSubtitle(e, q, words) + ScoreBody(e, q, words);
+
+    private static int ScoreNameTagSubtitle(SearchIndexEntry e, string q, string[] words)
     {
         int score = 0;
-        // Name — highest weight
         if (e.Name.Equals(q, StringComparison.OrdinalIgnoreCase)) score += 100;
         else if (e.Name.StartsWith(q, StringComparison.OrdinalIgnoreCase)) score += 80;
         else if (e.Name.Contains(q, StringComparison.OrdinalIgnoreCase)) score += 60;
         else if (words.Length > 1 && words.All(w => e.Name.Contains(w, StringComparison.OrdinalIgnoreCase))) score += 55;
-
-        // Tags
         foreach (var w in words)
             if (e.Tags.Any(t => t.Contains(w, StringComparison.OrdinalIgnoreCase))) score += 30;
-
-        // Subtitle
         if (!string.IsNullOrWhiteSpace(e.Subtitle) && e.Subtitle.Contains(q, StringComparison.OrdinalIgnoreCase)) score += 15;
+        return score;
+    }
 
-        // Body
-        if (!string.IsNullOrWhiteSpace(e.Body))
-        {
-            if (e.Body.Contains(q, StringComparison.OrdinalIgnoreCase)) score += 20;
-            else foreach (var w in words) if (e.Body.Contains(w, StringComparison.OrdinalIgnoreCase)) score += 5;
-        }
-
+    private static int ScoreBody(SearchIndexEntry e, string q, string[] words)
+    {
+        if (string.IsNullOrWhiteSpace(e.Body)) return 0;
+        if (e.Body.Contains(q, StringComparison.OrdinalIgnoreCase)) return 20;
+        int score = 0;
+        foreach (var w in words)
+            if (e.Body.Contains(w, StringComparison.OrdinalIgnoreCase)) score += 5;
         return score;
     }
 

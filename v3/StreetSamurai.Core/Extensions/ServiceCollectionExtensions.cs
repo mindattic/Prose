@@ -85,6 +85,9 @@ public static class ServiceCollectionExtensions
         // User accounts and authentication
         services.AddSingleton<UserRepository>();
         services.AddSingleton<AuthService>();
+        services.AddSingleton<ProfileService>();
+        services.AddSingleton<PasswordResetService>();
+        services.AddSingleton<EmailService>();
 
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());

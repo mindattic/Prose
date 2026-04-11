@@ -1,153 +1,304 @@
-@inject CorponationRepository CorpRepo
-@inject FactionRepository FactionRepo
-@inject CharacterRepository CharRepo
-@inject DistrictRepository DistrictRepo
-@inject WorldbuildingDocRepository DocRepo
-@inject TechnologyRepository TechRepo
-@inject WeaponryRepository WeaponRepo
-@inject EquipmentRepository EquipRepo
-@inject CyberwareRepository CyberRepo
-@inject AmmunitionRepository AmmoRepo
-@inject QuoteRepository QuoteRepo
-@inject ConsumerGoodRepository GoodsRepo
-@inject PharmaceuticalRepository PharmaRepo
-@inject MaterialRepository MaterialRepo
-@inject ContractRepository ContractRepo
-@inject NewsRepository NewsRepo
-@inject ArchetypeRepository ArchetypeRepo
-@inject VocabularyRepository VocabRepo
-@inject SyntheticLifeRepository SynthRepo
-@inject GenemodRepository GenemodRepo
-@inject TransportationRepository TransportRepo
-@inject AutomatonRepository AutomatonRepo
-@inject ApparelRepository ApparelRepo
-@inject EntertainmentRepository EntertainmentRepo
-@inject SubsidiaryRepository SubsidiaryRepo
-@inject WorldGraphService GraphSvc
+@implements IDisposable
 @inject NavigationManager Nav
 @inject IWriteAccessProvider Access
+@inject ProfileService ProfileSvc
 
-<nav class="topnav">
-    @* Brand *@
-    <NavLink class="topnav-brand" href="" Match="NavLinkMatch.All">Street Samurai</NavLink>
-    <div class="topnav-sep"></div>
+<nav class="topnav navbar navbar-expand-md">
 
-    @* Quick links *@
-    <NavLink class="topnav-link" href="" Match="NavLinkMatch.All" title="Dashboard"><i class="bi bi-house-door"></i></NavLink>
-    <NavLink class="topnav-link" href="search" title="Search (Ctrl+K)"><i class="bi bi-search"></i></NavLink>
-    @if (Access.CanWrite)
-    {
-        <NavLink class="topnav-link" href="stories">Stories</NavLink>
-    }
-    <NavLink class="topnav-link" href="contracts">Contracts <span class="topnav-count">@contractCount</span></NavLink>
-    <div class="topnav-sep"></div>
-
-    @* ── Category board links ─────────────────────────────────────── *@
-    <NavLink class="topnav-link" href="/board/characters"><i class="bi bi-people-fill topnav-cat-icon"></i>Characters</NavLink>
-    <NavLink class="topnav-link" href="/board/organizations"><i class="bi bi-buildings topnav-cat-icon"></i>Organizations</NavLink>
-    <NavLink class="topnav-link" href="/board/gear"><i class="bi bi-tools topnav-cat-icon"></i>Gear</NavLink>
-    <NavLink class="topnav-link" href="/board/world"><i class="bi bi-globe2 topnav-cat-icon"></i>World</NavLink>
-    <NavLink class="topnav-link" href="/board/culture"><i class="bi bi-palette2 topnav-cat-icon"></i>Culture</NavLink>
-    <NavLink class="topnav-link" href="/board/tools"><i class="bi bi-grid-3x3-gap topnav-cat-icon"></i>Tools</NavLink>
-
-    @* ── Right side: system + account ─────────────────────────────── *@
-    <div class="ms-auto d-flex align-items-center gap-1">
-        @if (Access.CanAdminister)
+    @* ── Brand + Breadcrumb — consolidated left side ──────── *@
+    @{ var crumb = GetCrumb(); }
+    <div class="topnav-left me-auto d-flex align-items-center">
+        <NavLink class="topnav-brand" href="" Match="NavLinkMatch.All">
+            <i class="bi bi-house-fill"></i>
+        </NavLink>
+        @if (crumb != null)
         {
-            @Drop("⚙",
-                ("bi-book",         "rules",    "World Rules", 0),
-                ("bi-people-fill",  "users",    "Users",       0),
-                ("bi-gear",         "settings", "Settings",    0),
-                ("bi-journal-code", "logging",  "Logging",     0))
-        }
-        else
-        {
-            <NavLink class="topnav-link" href="rules" title="World Rules"><i class="bi bi-book"></i></NavLink>
-        }
-
-        @if (!Access.IsReadOnlyMode)
-        {
-            @if (Access.CurrentUserRole != "Anonymous")
-            {
-                <span class="topnav-user"><i class="bi bi-person-circle"></i> @Access.CurrentUserName</span>
-                <form method="post" action="/api/auth/logout" class="d-inline">
-                    <AntiforgeryToken />
-                    <button type="submit" class="btn btn-outline-secondary topnav-logout">Logout</button>
-                </form>
-            }
-            else
-            {
-                <NavLink class="topnav-link" href="login"><i class="bi bi-box-arrow-in-right"></i> Login</NavLink>
-            }
+            <span class="topnav-crumb-sep">›</span>
+            @* Mobile: icons only *@
+            <span class="d-flex d-md-none align-items-center gap-1">
+                @if (crumb.CatIcon != null && crumb.PageIcon != null)
+                {
+                    <a href="@crumb.CatUrl" class="topnav-crumb-icon-link">
+                        <i class="bi @crumb.CatIcon topnav-crumb-icon"></i>
+                    </a>
+                    <span class="topnav-crumb-sep">›</span>
+                    <i class="bi @crumb.PageIcon topnav-crumb-icon topnav-crumb-icon-cur"></i>
+                }
+                else
+                {
+                    <i class="bi @(crumb.CatIcon ?? crumb.PageIcon ?? "bi-grid") topnav-crumb-icon topnav-crumb-icon-cur"></i>
+                }
+            </span>
+            @* Desktop: text *@
+            <span class="d-none d-md-flex align-items-center gap-1">
+                @if (crumb.Category != null && crumb.PageName != null)
+                {
+                    <a href="@crumb.CatUrl" class="topnav-crumb-link">@crumb.Category</a>
+                    <span class="topnav-crumb-sep">›</span>
+                    <span class="topnav-crumb-current">@crumb.PageName</span>
+                }
+                else
+                {
+                    <span class="topnav-crumb-current">@(crumb.PageName ?? crumb.Category)</span>
+                }
+            </span>
         }
     </div>
+
+    @* ── Desktop: search + controls in standard navbar collapse ── *@
+    <div class="collapse navbar-collapse" id="topnav-nav">
+        <div class="topnav-right ms-auto">
+            <div class="topnav-search-wrap">
+                <input class="topnav-search" type="search" placeholder="Search canon…"
+                       value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
+            </div>
+            <div class="topnav-controls d-flex align-items-center gap-1">
+                @NavControls
+            </div>
+        </div>
+    </div>
+
+    @* ── Mobile: search + controls in bottom FAB drawer ─── *@
+    <div class="topnav-mobile-drawer d-md-none" id="topnav-mobile-drawer">
+        <div class="topnav-mobile-inner">
+            <input class="topnav-search w-100" type="search" placeholder="Search canon…"
+                   value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
+            <div class="topnav-controls d-flex align-items-center gap-1 mt-1">
+                @NavControls
+            </div>
+        </div>
+    </div>
+
 </nav>
 
 @code {
-    private int corpCount, factionCount, charCount, districtCount, techCount, weaponCount,
-                ammoCount, equipCount, cyberwareCount, docCount, vocabCount, quoteCount,
-                goodsCount, pharmaCount, materialCount, contractCount, newsCount, archetypeCount,
-                synthCount, genemodCount, transportCount, automataCount, apparelCount,
-                entertainmentCount, subsidiaryCount, graphNodeCount;
+    private string searchInput = "";
+    private string? avatarUrl;
 
     protected override void OnInitialized()
     {
-        corpCount          = CorpRepo.GetAll().Count;
-        factionCount       = FactionRepo.GetAll().Count;
-        charCount          = CharRepo.GetAll().Count;
-        districtCount      = DistrictRepo.GetAll().Count;
-        weaponCount        = WeaponRepo.GetAll().Count;
-        ammoCount          = AmmoRepo.GetAll().Count;
-        equipCount         = EquipRepo.GetAll().Count;
-        cyberwareCount     = CyberRepo.GetAll().Count;
-        techCount          = TechRepo.GetAll().Count;
-        docCount           = DocRepo.GetAll().Count;
-        vocabCount         = VocabRepo.GetAll().Count;
-        quoteCount         = QuoteRepo.GetAll().Count;
-        goodsCount         = GoodsRepo.GetAll().Count;
-        pharmaCount        = PharmaRepo.GetAll().Count;
-        materialCount      = MaterialRepo.GetAll().Count;
-        contractCount      = ContractRepo.GetAll().Count;
-        newsCount          = NewsRepo.GetAll().Count;
-        archetypeCount     = ArchetypeRepo.GetAll().Count;
-        synthCount         = SynthRepo.GetAll().Count;
-        genemodCount       = GenemodRepo.GetAll().Count;
-        transportCount     = TransportRepo.GetAll().Count;
-        automataCount      = AutomatonRepo.GetAll().Count;
-        apparelCount       = ApparelRepo.GetAll().Count;
-        entertainmentCount = EntertainmentRepo.GetAll().Count;
-        subsidiaryCount    = SubsidiaryRepo.GetAll().Count;
-        GraphSvc.EnsureLoaded();
-        graphNodeCount     = GraphSvc.NodeCount;
+        Nav.LocationChanged += OnLocationChanged;
+        ProfileSvc.AvatarUpdated += OnAvatarUpdated;
+        SyncSearchFromUrl();
+        LoadAvatar();
     }
 
-    private RenderFragment Drop(string label, params (string icon, string href, string name, int count)[] items) => __builder =>
+    private void LoadAvatar() =>
+        avatarUrl = ProfileSvc.GetAvatar(Access.CurrentUserName ?? "");
+
+    private void OnAvatarUpdated()
     {
-        var boardUrl = label.Length > 1 ? $"/board/{label.ToLower()}" : null;
-        @if (boardUrl != null)
-        {
-            <NavLink class="topnav-link" href="@boardUrl">@label</NavLink>
-        }
+        LoadAvatar();
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        SyncSearchFromUrl();
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void SyncSearchFromUrl()
+    {
+        var uri = new Uri(Nav.Uri);
+        var path = uri.AbsolutePath.TrimStart('/');
+        if (path.Equals("search", StringComparison.OrdinalIgnoreCase))
+            searchInput = GetQueryParam(uri.Query, "q");
         else
+            searchInput = "";
+    }
+
+    private static string GetQueryParam(string query, string key)
+    {
+        if (string.IsNullOrEmpty(query)) return "";
+        foreach (var pair in query.TrimStart('?').Split('&'))
         {
-            <div class="dropdown">
-                <button class="topnav-link dropdown-toggle" data-bs-toggle="dropdown" type="button">@label</button>
-                <ul class="dropdown-menu topnav-drop-menu">
-                    @foreach (var item in items)
-                    {
-                        <li>
-                            <a class="dropdown-item topnav-drop-item" href="@item.href">
-                                <i class="bi @item.icon topnav-drop-icon"></i>
-                                <span class="flex-grow-1">@item.name</span>
-                                @if (item.count > 0)
-                                {
-                                    <span class="topnav-count">@item.count</span>
-                                }
-                            </a>
-                        </li>
-                    }
-                </ul>
-            </div>
+            var kv = pair.Split('=', 2);
+            if (kv.Length == 2 && Uri.UnescapeDataString(kv[0]).Equals(key, StringComparison.OrdinalIgnoreCase))
+                return Uri.UnescapeDataString(kv[1]);
+        }
+        return "";
+    }
+
+    private void OnSearchInput(ChangeEventArgs e) => searchInput = e.Value?.ToString() ?? "";
+
+    private void HandleKey(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(searchInput))
+            Nav.NavigateTo($"/search?q={Uri.EscapeDataString(searchInput.Trim())}");
+    }
+
+    // Shared user controls — rendered in both desktop navbar and mobile drawer
+    private RenderFragment NavControls => builder =>
+    {
+        if (!Access.IsReadOnlyMode)
+        {
+            if (Access.CurrentUserRole != "Anonymous")
+            {
+                // User dropdown
+                builder.OpenElement(0, "div");
+                builder.AddAttribute(1, "class", "dropdown");
+
+                builder.OpenElement(2, "button");
+                builder.AddAttribute(3, "class", "topnav-link dropdown-toggle");
+                builder.AddAttribute(4, "data-bs-toggle", "dropdown");
+                builder.AddAttribute(5, "type", "button");
+
+                if (!string.IsNullOrEmpty(avatarUrl))
+                {
+                    builder.OpenElement(6, "img");
+                    builder.AddAttribute(7, "src", avatarUrl);
+                    builder.AddAttribute(8, "class", "topnav-avatar");
+                    builder.AddAttribute(9, "alt", Access.CurrentUserName);
+                    builder.CloseElement();
+                }
+                else
+                {
+                    builder.OpenElement(10, "i");
+                    builder.AddAttribute(11, "class", "bi bi-person-circle");
+                    builder.CloseElement();
+                }
+
+                builder.OpenElement(12, "span");
+                builder.AddAttribute(13, "class", "topnav-username");
+                builder.AddContent(14, Access.CurrentUserName);
+                builder.CloseElement();
+
+                builder.CloseElement(); // button
+
+                builder.OpenElement(15, "ul");
+                builder.AddAttribute(16, "class", "dropdown-menu dropdown-menu-end topnav-drop-menu");
+
+                if (Access.CanAdminister)
+                {
+                    AppendDropItem(builder, 20, "rules",    "bi-book",        "World Rules");
+                    AppendDropItem(builder, 30, "users",    "bi-people-fill", "Users");
+                    AppendDropItem(builder, 40, "settings", "bi-gear",        "Settings");
+                    AppendDropItem(builder, 50, "logging",  "bi-journal-code","Logging");
+                }
+                else
+                {
+                    AppendDropItem(builder, 60, "profile", "bi-person", "Profile");
+                }
+
+                // Divider
+                builder.OpenElement(70, "li");
+                builder.OpenElement(71, "hr");
+                builder.AddAttribute(72, "class", "dropdown-divider border-secondary");
+                builder.CloseElement();
+                builder.CloseElement();
+
+                // Logout
+                builder.OpenElement(80, "li");
+                builder.OpenElement(81, "form");
+                builder.AddAttribute(82, "method", "post");
+                builder.AddAttribute(83, "action", "/api/auth/logout");
+                builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.AntiforgeryToken>(84);
+                builder.CloseComponent();
+                builder.OpenElement(85, "button");
+                builder.AddAttribute(86, "type", "submit");
+                builder.AddAttribute(87, "class", "dropdown-item topnav-drop-item text-danger");
+                builder.OpenElement(88, "i");
+                builder.AddAttribute(89, "class", "bi bi-box-arrow-right topnav-drop-icon");
+                builder.CloseElement();
+                builder.AddContent(90, " Logout");
+                builder.CloseElement();
+                builder.CloseElement();
+                builder.CloseElement(); // li
+
+                builder.CloseElement(); // ul
+                builder.CloseElement(); // div.dropdown
+            }
+            else
+            {
+                builder.OpenComponent<Microsoft.AspNetCore.Components.Routing.NavLink>(100);
+                builder.AddAttribute(101, "class", "topnav-link");
+                builder.AddAttribute(102, "href", "login");
+                builder.OpenElement(103, "i");
+                builder.AddAttribute(104, "class", "bi bi-box-arrow-in-right");
+                builder.CloseElement();
+                builder.AddContent(105, " Login");
+                builder.CloseComponent();
+            }
         }
     };
+
+    private static void AppendDropItem(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder b, int seq, string href, string icon, string label)
+    {
+        b.OpenElement(seq, "li");
+        b.OpenElement(seq + 1, "a");
+        b.AddAttribute(seq + 2, "class", "dropdown-item topnav-drop-item");
+        b.AddAttribute(seq + 3, "href", href);
+        b.OpenElement(seq + 4, "i");
+        b.AddAttribute(seq + 5, "class", $"bi {icon} topnav-drop-icon");
+        b.CloseElement();
+        b.AddContent(seq + 6, $" {label}");
+        b.CloseElement();
+        b.CloseElement();
+    }
+
+    // ── Breadcrumb ───────────────────────────────────────────
+
+    private record CrumbInfo(string? Category, string? CatUrl, string? PageName, string? CatIcon = null, string? PageIcon = null);
+
+    private CrumbInfo? GetCrumb()
+    {
+        var seg = new Uri(Nav.Uri).AbsolutePath.TrimStart('/').ToLower();
+        return seg switch
+        {
+            "" or "login" => null,
+            "search"          => new(null, null, "Search",           null,          "bi-search"),
+            "profile"         => new(null, null, "Profile",          null,          "bi-person-circle"),
+            "dashboard"       => new("Tools",         "/board/tools",         "Dashboard",       "bi-wrench-adjustable", "bi-speedometer2"),
+            "graph"           => new("Tools",         "/board/tools",         "World Graph",     "bi-wrench-adjustable", "bi-diagram-3"),
+            "map"             => new("Tools",         "/board/tools",         "Map",             "bi-wrench-adjustable", "bi-map-fill"),
+            "facts"           => new("Tools",         "/board/tools",         "Fact Discovery",  "bi-wrench-adjustable", "bi-lightbulb"),
+            "heritage"        => new("Tools",         "/board/tools",         "Heritage",        "bi-wrench-adjustable", "bi-tree-fill"),
+            "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
+            "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people",            "bi-person-fill"),
+            "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people",            "bi-cpu"),
+            "archetypes"      => new("Characters",    "/board/characters",    "Archetypes",      "bi-people",            "bi-diagram-3"),
+            "corps"           => new("Organizations", "/board/organizations", "Corponations",    "bi-building",          "bi-building-fill"),
+            "subsidiaries"    => new("Organizations", "/board/organizations", "Subsidiaries",    "bi-building",          "bi-buildings"),
+            "factions"        => new("Organizations", "/board/organizations", "Factions",        "bi-building",          "bi-shield-fill"),
+            "weaponry"        => new("Gear",          "/board/gear",          "Weaponry",        "bi-tools",             "bi-crosshair"),
+            "ammunition"      => new("Gear",          "/board/gear",          "Ammunition",      "bi-tools",             "bi-circle-fill"),
+            "cyberware"       => new("Gear",          "/board/gear",          "Cyberware",       "bi-tools",             "bi-cpu-fill"),
+            "equipment"       => new("Gear",          "/board/gear",          "Equipment",       "bi-tools",             "bi-wrench"),
+            "apparel"         => new("Gear",          "/board/gear",          "Apparel",         "bi-tools",             "bi-bag"),
+            "genemods"        => new("Gear",          "/board/gear",          "Genemods",        "bi-tools",             "bi-activity"),
+            "pharmaceuticals" => new("Gear",          "/board/gear",          "Pharmaceuticals", "bi-tools",             "bi-capsule"),
+            "places"          => new("World",         "/board/world",         "Places",          "bi-globe2",            "bi-geo-alt-fill"),
+            "transportation"  => new("World",         "/board/world",         "Transportation",  "bi-globe2",            "bi-car-front-fill"),
+            "materials"       => new("World",         "/board/world",         "Materials",       "bi-globe2",            "bi-droplet-fill"),
+            "technology"      => new("World",         "/board/world",         "Technology",      "bi-globe2",            "bi-motherboard"),
+            "automata"        => new("World",         "/board/world",         "Automata",        "bi-globe2",            "bi-robot"),
+            "rules"           => new("World",         "/board/world",         "World Rules",     "bi-globe2",            "bi-journal-bookmark"),
+            "documents"       => new("Culture",       "/board/culture",       "Documents",       "bi-book",              "bi-file-text"),
+            "quotes"          => new("Culture",       "/board/culture",       "Quotes",          "bi-book",              "bi-chat-quote"),
+            "vocabulary"      => new("Culture",       "/board/culture",       "Vocabulary",      "bi-book",              "bi-translate"),
+            "news"            => new("Culture",       "/board/culture",       "News",            "bi-book",              "bi-newspaper"),
+            "entertainment"   => new("Culture",       "/board/culture",       "Entertainment",   "bi-book",              "bi-film"),
+            "goods"           => new("Culture",       "/board/culture",       "Consumer Goods",  "bi-book",              "bi-cart"),
+            _ when seg.StartsWith("board/") => new(null, null, BoardTitle(seg[6..]), null, "bi-grid"),
+            _ => null
+        };
+    }
+
+    private static string BoardTitle(string slug) => slug switch
+    {
+        "characters"    => "Characters",
+        "organizations" => "Organizations",
+        "gear"          => "Gear",
+        "world"         => "World",
+        "culture"       => "Culture",
+        "tools"         => "Tools",
+        _ => slug.Length == 0 ? "" : char.ToUpper(slug[0]) + slug[1..]
+    };
+
+    public void Dispose()
+    {
+        Nav.LocationChanged -= OnLocationChanged;
+        ProfileSvc.AvatarUpdated -= OnAvatarUpdated;
+    }
 }

@@ -8,7 +8,7 @@
     <h4 class="text-danger mb-0">Map — GLMZ</h4>
     <div class="d-flex gap-2 flex-wrap">
         <button class="btn btn-sm @(layerStates["districts"] ? "btn-secondary" : "btn-outline-secondary")" @onclick="@(() => ToggleLayer("districts"))">
-            <i class="bi bi-layers"></i> Districts
+            <i class="bi bi-layers"></i><div class="btn-lbl"> Districts</div>
         </button>
         @foreach (var cat in categories)
         {
@@ -16,7 +16,7 @@
             <button class="btn btn-sm @(layerStates.GetValueOrDefault(key) ? "btn-secondary" : "btn-outline-secondary")"
                     style="@(layerStates.GetValueOrDefault(key) ? $"border-color:{cat.color};color:{cat.color}" : "")"
                     @onclick="() => ToggleLayer(key)">
-                @cat.label <span class="badge bg-dark" style="font-size:0.65rem;">@cat.count</span>
+                <div class="btn-lbl">@cat.label</div> <span class="badge bg-dark" style="font-size:0.65rem;">@cat.count</span>
             </button>
         }
         <button class="btn btn-sm btn-outline-secondary" @onclick="ToggleTheme">

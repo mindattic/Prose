@@ -66,18 +66,17 @@ html, body {
 
 /* ── Top nav ─────────────────────────────────────────────────────── */
 .topnav {
-    display: flex;
-    align-items: center;
-    gap: 2px;
     padding: 0 12px;
-    height: var(--topnav-height);
     min-height: var(--topnav-height);
     background: #161b22;
     border-bottom: 1px solid #30363d;
-    white-space: nowrap;
     flex-shrink: 0;
     position: relative;
     z-index: 1050;
+    gap: 2px;
+}
+@media (min-width: 768px) {
+    .topnav { height: var(--topnav-height); }
 }
 .topnav-main {
     flex: 1;
@@ -93,14 +92,67 @@ html, body {
     text-decoration: none;
     padding: 0 6px 0 0;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 .topnav-brand:hover { color: #ff6b6b !important; }
-.topnav-sep {
-    width: 1px; height: 20px;
-    background: #30363d;
-    margin: 0 6px;
+.topnav-toggler {
+    background: none !important;
+    border: 1px solid #30363d !important;
+    color: #c9d1d9 !important;
+    padding: 2px 7px !important;
+    border-radius: 4px;
+    line-height: 1;
+    margin-left: auto;
+}
+.topnav-toggler:focus { box-shadow: none !important; }
+.topnav-toggler .bi { font-size: 1.1rem; vertical-align: middle; }
+/* Breadcrumb in topnav */
+.topnav-left {
+    gap: 5px;
+    font-size: 0.78rem;
+    overflow: hidden;
+    flex-shrink: 1;
+    min-width: 0;
+    color: #8b949e;
+    white-space: nowrap;
+}
+.topnav-crumb-icon-link { color: inherit; text-decoration: none; line-height: 1; }
+.topnav-crumb-icon-link:hover .topnav-crumb-icon { color: #e6edf3; }
+.topnav-crumb-sep { color: #8b949e; flex-shrink: 0; }
+.topnav-crumb-link { color: #8b949e; text-decoration: none; flex-shrink: 0; }
+.topnav-crumb-link:hover { color: #e6edf3; }
+.topnav-crumb-current { color: #e6edf3; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+/* Search in topnav */
+.topnav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
     flex-shrink: 0;
 }
+.topnav-search-wrap { display: flex; align-items: center; }
+.topnav-search {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    height: 28px;
+    width: 280px;
+    outline: none;
+    transition: border-color 0.15s;
+}
+.topnav-search:focus { border-color: #dc3545; }
+.topnav-search::placeholder { color: #484f58; }
+.topnav-search::-webkit-search-cancel-button,
+.topnav-search::-ms-clear { display: none; }
+.topnav-username { font-size: 0.78rem; }
+.topnav-avatar { width: 22px; height: 22px; border-radius: 50%; object-fit: cover; border: 1px solid #30363d; }
+/* Profile page */
+.profile-avatar-lg { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid #30363d; display: block; }
+.profile-avatar-empty-lg { width: 64px; height: 64px; border-radius: 50%; background: #21262d; border: 2px solid #30363d; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #8b949e; }
+.profile-canvas-preview { display: block; border-radius: 50%; border: 2px solid #30363d; width: 128px; height: 128px; }
 .topnav-link {
     color: #c9d1d9 !important;
     text-decoration: none;
@@ -121,15 +173,6 @@ html, body {
 .topnav-link:focus, .topnav-link:active, .topnav-link.show { outline: none !important; box-shadow: none !important; border-color: transparent !important; background: #21262d; }
 .topnav-link.active { color: #dc3545 !important; background: none; }
 .topnav-link.dropdown-toggle::after { margin-left: 3px; }
-.topnav-count {
-    font-size: 0.65rem;
-    background: #21262d;
-    color: #8b949e;
-    border-radius: 8px;
-    padding: 0 5px;
-    font-variant-numeric: tabular-nums;
-    border: 1px solid #30363d;
-}
 .topnav-drop-menu {
     background: #161b22 !important;
     border: 1px solid #30363d !important;
@@ -149,16 +192,48 @@ html, body {
 .topnav-drop-item:hover { background: #21262d !important; color: #e6edf3 !important; }
 .topnav-drop-item.active { background: #21262d !important; color: #dc3545 !important; }
 .topnav-drop-icon { width: 14px; flex-shrink: 0; opacity: 0.7; }
-.topnav-user {
-    font-size: 0.78rem;
-    color: #8b949e;
-    padding: 0 4px;
-    white-space: nowrap;
+/* Button label wrapper — ensures icon and label are both DOM elements, not text nodes */
+.btn-lbl { display: inline-block; }
+/* Breadcrumb icon styles (used on mobile) */
+.topnav-crumb-icon { font-size: 0.88rem; color: #8b949e; }
+.topnav-crumb-icon-cur { color: #e6edf3; }
+
+/* Mobile nav — single slim row, search/controls in bottom FAB drawer */
+@media (max-width: 767.98px) {
+    .topnav { padding: 0 10px; height: var(--topnav-height) !important; }
+    .topnav .navbar-collapse { display: none !important; }
+    .topnav-left { padding: 0; white-space: nowrap; overflow: visible; }
+    /* Mobile nav drawer (search + controls) */
+    .topnav-mobile-drawer {
+        position: fixed; bottom: 0; left: 0; right: 0;
+        background: #0d1117; border-top: 1px solid #30363d;
+        border-radius: 14px 14px 0 0; z-index: 1045;
+        transform: translateY(100%);
+        transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+        padding: 14px 16px 20px;
+    }
+    body.nav-mobile-open .topnav-mobile-drawer { transform: translateY(0); }
+    .topnav-mobile-inner { display: flex; flex-direction: column; gap: 10px; }
+    /* Nav FAB — hamburger that opens the drawer */
+    .nav-mobile-fab {
+        position: fixed; bottom: 16px; right: 16px;
+        width: 44px; height: 44px; border-radius: 50%;
+        background: #21262d; border: 1px solid #30363d;
+        color: #c9d1d9; font-size: 1.1rem; cursor: pointer;
+        z-index: 1060; display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.5); transition: background 0.15s, color 0.15s;
+    }
+    body.nav-mobile-open .nav-mobile-fab { background: #dc3545; color: #fff; border-color: #dc3545; }
+    /* Backdrop */
+    .nav-mobile-backdrop {
+        display: none; position: fixed; inset: 0;
+        background: rgba(0,0,0,0.45); z-index: 1044;
+    }
+    body.nav-mobile-open .nav-mobile-backdrop { display: block; }
 }
-.topnav-logout {
-    font-size: 0.72rem !important;
-    height: 24px !important;
-    padding: 0 8px !important;
+@media (min-width: 768px) {
+    .nav-mobile-fab, .nav-mobile-backdrop, .topnav-mobile-drawer { display: none !important; }
+    .topnav-username { font-size: 0.78rem; }
 }
 
 /* Fix label visibility — Bootstrap text-muted is invisible on dark backgrounds */
@@ -350,6 +425,9 @@ h1:focus {
 a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58a6ff; text-decoration: none; }
 .ev-tag-link { text-decoration: none; }
 .ev-tag-link:hover { background: #30363d !important; color: #e6edf3 !important; border-color: #58a6ff !important; }
+/* EditViewToggle header */
+.ev-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid #30363d; padding: 4px 0 10px; }
+.ev-header-title { flex-grow: 1; margin: 0; padding: 2px 0; color: #dc3545; font-size: 1rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .entity-detail-body { display: flex; flex-direction: column; gap: 20px; }
 .entity-section { display: flex; flex-direction: column; gap: 6px; }
 .entity-section-label {
@@ -555,6 +633,7 @@ a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58
 .dict-list > .card {
     flex: 0 0 auto !important;
 }
+.dict-list > .card { padding: 4px 6px !important; }
 .dict-items {
     flex: 1;
     overflow-y: auto;
@@ -591,6 +670,32 @@ textarea.auto-grow {
 }
 .dict-list .list-item:hover { background: #21262d; }
 .dict-list .list-item.active { background: #21262d; border-left-color: #dc3545; }
+/* ── Mobile: dict list becomes a swipe-up drawer with visible tab ── */
+@media (max-width: 767.98px) {
+    .dict-layout { flex-direction: column !important; height: calc(100vh - var(--topnav-height) - var(--gutter)) !important; }
+    .dict-list {
+        position: fixed !important; bottom: 0; left: 0; right: 0; width: auto !important;
+        height: 65vh; z-index: 1040; background: #0d1117;
+        border-top: 2px solid #30363d; border-radius: 14px 14px 0 0;
+        /* Show 40px tab even when closed so user sees the handle */
+        transform: translateY(calc(100% - 40px));
+        transition: transform 0.28s cubic-bezier(0.4,0,0.2,1);
+        padding: 0 10px 10px; overflow: hidden;
+        cursor: pointer;
+    }
+    /* Tab handle area — always visible */
+    .dict-list::before {
+        content: ''; display: block; width: 40px; height: 4px;
+        background: #484f58; border-radius: 2px; margin: 10px auto 6px;
+        flex-shrink: 0; transition: background 0.15s;
+    }
+    .dict-list:hover::before { background: #8b949e; }
+    .dict-list.dict-list-open { transform: translateY(0); cursor: default; }
+    /* Hide subtitle/role text in list items on mobile — names only */
+    .dict-list .list-item .text-muted { display: none; }
+    .dict-editor { flex: 1; overflow-y: auto; padding: 0 0 56px !important; }
+}
+@media (min-width: 768px) { .dict-drawer-fab { display: none !important; } }
 
 /* ReadOnly mode: hide New buttons and export buttons across all dictionary pages */
 .readonly-mode .dict-list .btn-outline-danger { display: none !important; }
