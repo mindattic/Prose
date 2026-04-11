@@ -781,7 +781,9 @@
     private StoryProject project = new();
     private string storyText = "";
     private int wordCount;
-    private bool saved;
+#pragma warning disable CS0414
+    private bool saved; // written by save logic; suppress "assigned but never used" until wired to UI
+#pragma warning restore CS0414
     private string? error;
     private bool busy;
     private string statusMessage = "";
@@ -801,9 +803,6 @@
     private AudioPlayer? audioPlayer;
     private string ttsEngine = "elevenlabs"; // "elevenlabs" or "windows"
 
-
-    // ── Bottom dock ──
-    private bool showTagBar;
 
     // ── Image insert ──
     private bool showImageInsert;
