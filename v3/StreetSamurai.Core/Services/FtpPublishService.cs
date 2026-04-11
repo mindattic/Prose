@@ -1,3 +1,5 @@
+// FTP publishing disabled — app deploys via Azure App Service CI/CD
+#if false
 using System.Net;
 
 namespace StreetSamurai.Core.Services;
@@ -212,3 +214,4 @@ public class FtpPublishService
         }
     }
 }
+#endif

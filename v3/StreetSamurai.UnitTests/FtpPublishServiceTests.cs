@@ -1,3 +1,5 @@
+// FTP tests disabled — FtpPublishService is disabled
+#if false
 using StreetSamurai.Core.Services;
 
 namespace StreetSamurai.UnitTests;
@@ -71,3 +73,4 @@ public class FtpPublishServiceTests
         finally { Directory.Delete(rootDir, true); }
     }
 }
+#endif
