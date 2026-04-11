@@ -18,7 +18,7 @@ public class UserRepository
 
     public UserRepository(IPathProvider paths)
     {
-        filePath = Path.Combine(paths.EngineDataDir, "users.json");
+        filePath = Path.Combine(paths.MutableDataDir, "users.json");
     }
 
     public List<UserAccount> GetAll()

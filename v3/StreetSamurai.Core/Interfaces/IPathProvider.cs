@@ -10,11 +10,21 @@ public interface IPathProvider
     string WorldbuildingDir { get; }
     string CharactersDir { get; }
     string EssencesDir { get; }
-    string StoriesDir { get; }
-    string EngineDataDir { get; }
     string NarrativeBiblePath { get; }
     string WorldDir { get; }
     string FacetsDir { get; }
+
+    /// <summary>Read-only world content — baked into the deployment.</summary>
+    string EngineDataDir { get; }
+
+    /// <summary>
+    /// Runtime-writable data (users, stories, graph, archives, exports, logs).
+    /// On Azure: set SS_MUTABLE_DATA_ROOT=D:\home\data\StreetSamurai so this
+    /// survives redeployments. Falls back to EngineDataDir on dev.
+    /// </summary>
+    string MutableDataDir { get; }
+
+    string StoriesDir { get; }
     string GraphDir { get; }
     string LogDir { get; }
     string ExportDir { get; }

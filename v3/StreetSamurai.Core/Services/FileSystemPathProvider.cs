@@ -21,14 +21,23 @@ public class FileSystemPathProvider : IPathProvider
     public string WorldDir => Path.Combine(Root, "world");
     public string FacetsDir => Path.Combine(Root, "character", "facets");
 
-    // Everything under engine/
+    // Read-only world content baked into the deployment
     private string EngineRoot => Path.Combine(Root, Constants.Folders.Engine);
     public string EngineDataDir => EnsureDir(Path.Combine(EngineRoot, "data"));
-    public string GraphDir => EnsureDir(Path.Combine(EngineRoot, "data", Constants.Folders.Graph));
-    public string StoriesDir => EnsureDir(Path.Combine(EngineRoot, "data", Constants.Folders.Stories));
-    public string LogDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Logs));
-    public string ExportDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Exports));
-    public string ArchiveDir => EnsureDir(Path.Combine(EngineRoot, Constants.Folders.Archives));
+
+    // Runtime-writable data — separate root on Azure so redeployments don't wipe it.
+    // SS_MUTABLE_DATA_ROOT=D:\home\data\StreetSamurai in Azure App Configuration.
+    // Falls back to EngineDataDir on dev (no env var set).
+    public string MutableDataDir => EnsureDir(
+        Environment.GetEnvironmentVariable("SS_MUTABLE_DATA_ROOT") is { Length: > 0 } v
+            ? v
+            : Path.Combine(EngineRoot, "data"));
+
+    public string StoriesDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Stories));
+    public string GraphDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Graph));
+    public string LogDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Logs));
+    public string ExportDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Exports));
+    public string ArchiveDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Archives));
 
     private static string EnsureDir(string path)
     {

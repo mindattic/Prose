@@ -1,0 +1,62 @@
+name: Build and deploy StreetSamurai to Azure App Service
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Restore dependencies
+        run: dotnet restore v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj
+
+      - name: Publish
+        run: dotnet publish v3/StreetSamurai.Blazor/StreetSamurai.Blazor.csproj -c Release -o publish --no-restore
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: streetsamurai-app
+          path: publish/
+
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    environment:
+      name: Production
+      url: https://streetsamurai.azurewebsites.net
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: streetsamurai-app
+          path: publish/
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Deploy to Azure App Service
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: streetsamurai
+          slot-name: Production
+          package: publish/
