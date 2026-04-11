@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreetSamurai.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4942c12dffae6eee249931a5a33fe607a0c647cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fc616117817568cc4377f909cbf488e5ac1eb05")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreetSamurai.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreetSamurai.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
