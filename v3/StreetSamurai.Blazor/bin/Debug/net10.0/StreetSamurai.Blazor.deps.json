@@ -24,14 +24,6 @@
           }
         }
       },
-      "Blazored.Toast/4.2.1": {
-        "runtime": {
-          "lib/net8.0/Blazored.Toast.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Markdig/1.1.2": {
         "runtime": {
           "lib/net10.0/Markdig.dll": {
@@ -376,7 +368,6 @@
       },
       "StreetSamurai.Shared/1.0.0": {
         "dependencies": {
-          "Blazored.Toast": "4.2.1",
           "Markdig": "1.1.2",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -401,13 +392,6 @@
       "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
-    },
-    "Blazored.Toast/4.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RuSGS8m21IejQ8EKXjZYEcCbgZEhyP7VptvyHjdRDKkJ3wxCqANKWvDxSKuExSbk1NLD1tySe8OpPYsdCeqvcw==",
-      "path": "blazored.toast/4.2.1",
-      "hashPath": "blazored.toast.4.2.1.nupkg.sha512"
     },
     "Markdig/1.1.2": {
       "type": "package",

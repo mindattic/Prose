@@ -23,6 +23,7 @@ window.__gmapsReady = function() {
 (function() {
     var timer = null;
     var timeout = null;
+    var safetyTimer = null;
     var start = 0;
 
     function getEl() { return document.getElementById('app-loader'); }
@@ -34,6 +35,8 @@ window.__gmapsReady = function() {
     }
 
     window.__loaderShow = function(delay) {
+        clearTimeout(timeout);
+        clearInterval(timer);
         start = performance.now();
         if (delay > 0) {
             timeout = setTimeout(function() {
@@ -50,22 +53,26 @@ window.__gmapsReady = function() {
 
     window.__loaderHide = function() {
         clearTimeout(timeout);
+        clearTimeout(safetyTimer);
         clearInterval(timer);
         timer = null;
+        timeout = null;
         var el = getEl();
         if (el) el.style.display = 'none';
     };
 
-    // Auto-start on load (startup spinner)
+    // Auto-start timer on initial load
     start = performance.now();
     timer = setInterval(tick, 1);
 
-    // Auto-hide once Blazor renders the app shell
-    var obs = new MutationObserver(function() {
-        if (document.querySelector('.app-shell')) {
-            window.__loaderHide();
-            obs.disconnect();
-        }
+    // Auto-hide: DOMContentLoaded fires after full HTML is parsed (reliable for static SSR).
+    // By this point the server-rendered .app-shell div is guaranteed to be in the DOM.
+    document.addEventListener('DOMContentLoaded', function() {
+        window.__loaderHide();
     });
-    obs.observe(document.body, { childList: true, subtree: true });
+
+    // Safety net: force-hide after 10s in case something goes wrong
+    safetyTimer = setTimeout(function() {
+        window.__loaderHide();
+    }, 10000);
 })();

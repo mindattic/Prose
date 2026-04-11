@@ -15,21 +15,6 @@
           }
         }
       },
-      "Blazored.Toast/4.2.1": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Blazored.Toast.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Blazored.Toast.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazored.Toast.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazored.Toast.props": {}
-        }
-      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -470,7 +455,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Blazored.Toast": "4.2.1",
           "Markdig": "1.1.2",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -513,27 +497,6 @@
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
         "lib/netstandard2.1/BCrypt.Net-Next.xml",
         "readme.md"
-      ]
-    },
-    "Blazored.Toast/4.2.1": {
-      "sha512": "RuSGS8m21IejQ8EKXjZYEcCbgZEhyP7VptvyHjdRDKkJ3wxCqANKWvDxSKuExSbk1NLD1tySe8OpPYsdCeqvcw==",
-      "type": "package",
-      "path": "blazored.toast/4.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "blazored.toast.4.2.1.nupkg.sha512",
-        "blazored.toast.nuspec",
-        "build/Blazored.Toast.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazored.Toast.props",
-        "buildTransitive/Blazored.Toast.props",
-        "icon.png",
-        "lib/net6.0/Blazored.Toast.dll",
-        "lib/net7.0/Blazored.Toast.dll",
-        "lib/net8.0/Blazored.Toast.dll",
-        "staticwebassets/Blazored.Toast.bundle.scp.css"
       ]
     },
     "Markdig/1.1.2": {
