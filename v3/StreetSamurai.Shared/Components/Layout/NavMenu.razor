@@ -45,6 +45,12 @@
         }
     </div>
 
+    @* ── Mobile: search inline in header (upper right) ──────── *@
+    <div class="topnav-search-wrap d-flex d-md-none ms-auto me-1">
+        <input class="topnav-search" type="search" placeholder="Search canon…"
+               value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
+    </div>
+
     @* ── Desktop: search + controls in standard navbar collapse ── *@
     <div class="collapse navbar-collapse" id="topnav-nav">
         <div class="topnav-right ms-auto">
@@ -58,12 +64,10 @@
         </div>
     </div>
 
-    @* ── Mobile: search + controls in bottom FAB drawer ─── *@
+    @* ── Mobile: controls in bottom FAB drawer ─── *@
     <div class="topnav-mobile-drawer d-md-none" id="topnav-mobile-drawer">
         <div class="topnav-mobile-inner">
-            <input class="topnav-search w-100" type="search" placeholder="Search canon…"
-                   value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
-            <div class="topnav-controls d-flex align-items-center gap-1 mt-1">
+            <div class="topnav-controls d-flex align-items-center gap-1">
                 @NavControls
             </div>
         </div>
@@ -178,7 +182,8 @@
                 }
                 else
                 {
-                    AppendDropItem(builder, 60, "profile", "bi-person", "Profile");
+                    AppendDropItem(builder, 55, "settings", "bi-sliders", "Display");
+                    AppendDropItem(builder, 60, "profile",  "bi-person",  "Profile");
                 }
 
                 // Divider
