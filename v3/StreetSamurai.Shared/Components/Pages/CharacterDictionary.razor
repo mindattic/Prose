@@ -25,11 +25,19 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="people" Title="@(isNew ? "New Character" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="people" Title="@(isNew ? "New Character" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
                 <HeaderButtons>
-                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
-                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
-                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Confirm</div></button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button> }
+                    @if (!_confirmDelete)
+                    {
+                        <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                        @if (!isNew) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    }
+                    else
+                    {
+                        <span class="small text-muted me-1">Archive Entry?</span>
+                        <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Yes</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button>
+                    }
                 </HeaderButtons>
                 <ChildContent>
                     @* ── Identity ─────────────────────────────── *@
@@ -171,8 +179,17 @@
         else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } }
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender) =>
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
         await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && editing == null && items.Count > 0 && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id="))
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_people") ?? ""; } catch { }
+            var target = (!string.IsNullOrEmpty(lastId) ? items.FirstOrDefault(x => x.Id == lastId) : null) ?? items.First();
+            if (target != null) { Edit(target); StateHasChanged(); }
+        }
+    }
 
     private void AddNew()
     {
@@ -185,6 +202,7 @@
 
     private void Edit(CharacterData c)
     {
+        _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_people", c.Id);
         editing = c; originalName = c.Name; isNew = false; _confirmDelete = false;
         var fw = c.Psychology.FacetWeights;
         editWound = fw.Wound; _editIdeal = fw.Ideal; _editId = fw.Id;

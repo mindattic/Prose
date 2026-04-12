@@ -1,0 +1,39 @@
+{
+  "id": "44e76a3687e983ff3240fae8a92eef15",
+  "name": "The Burning Ones",
+  "type": "lab_specimen",
+  "aliases": [
+    "Heat Subjects",
+    "Thermals",
+    "The Hot"
+  ],
+  "classification": "Thermoregulation Removal Derivative / Continuous Hyperthermia Subject",
+  "origin_lab": "Military performance research, cold-tolerance modification for arctic operation.",
+  "origin_method": "The temperature regulation system was removed — the feedback loop that adjusts core temperature in response to environment was severed — and replaced with a fixed high-output baseline. The intent was soldiers who would not be degraded by extreme cold. What was not modeled was the consequence in normal environments: without regulation, the body runs at a fixed high temperature that is damaging to surrounding tissue over time and extremely uncomfortable in any environment above roughly -10°C. The subjects are always too hot. The heat is always damaging them. The damage accumulates.",
+  "substrate": "Human. Fourteen subjects. Their skin surface temperature is approximately 42-43°C — hot to the touch, uncomfortable to be near for extended periods.",
+  "physical_description": "Flushed, sweating, always, regardless of environment. They wear as little as possible. The skin around the face and neck shows the beginning of chronic heat damage — a redness that does not resolve. They are warm to stand near.",
+  "behavioral_profile": "Seeking cold. They live near refrigeration, near cold water, near any cooling source. They are not aggressive. They are simply always looking for something that helps.",
+  "threat_level": "None.",
+  "containment_status": "Scattered throughout lower-tier industrial spaces with accessible refrigeration.",
+  "known_locations": [
+    "Cold storage adjacent areas",
+    "Near the cooling systems of industrial processing facilities"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "N/A.",
+  "pitiable_qualities": "They are always burning and there is nothing that puts it out.",
+  "story_hooks": [
+    "A Burning One has been living next to a refrigeration unit for two years. The unit belongs to a business that doesn't know they're there. The business is about to relocate.",
+    "One of them had a life before this. They can describe every cold place they ever visited, in precise detail, because they memorized them all before the modification made every normal place into somewhere they cannot stay."
+  ],
+  "tags": [
+    "lab_specimen",
+    "thermoregulation",
+    "hyperthermia",
+    "human_substrate",
+    "no_threat",
+    "tragic",
+    "seeking_cold",
+    "military_program"
+  ]
+}

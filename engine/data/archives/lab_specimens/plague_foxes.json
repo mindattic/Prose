@@ -1,0 +1,40 @@
+{
+  "id": "4414ea62c0ff3bc3a42173a82f5116f0",
+  "name": "Plague Foxes",
+  "type": "lab_specimen",
+  "aliases": [
+    "Bait Foxes",
+    "Lures",
+    "The Pretty Ones"
+  ],
+  "classification": "Bioluminescent Pathogen Carrier / Engineered Lure Organism",
+  "origin_lab": "Contracted bioweapons development, population-specific pathogen delivery system.",
+  "origin_method": "Fox-sized mammalian organisms were engineered with two characteristics: striking bioluminescent display patterns in shades of blue-white that trigger human curiosity and approach behavior, and a tailored pathogen colony in the fur and saliva that the organism itself is immune to. The intent was a 'beautiful thing that kills you when you touch it.' The organism was deployed in test conditions. It escaped test conditions.",
+  "substrate": "Engineered mammal, fox-adjacent body plan. Approximately 50cm body length. The bioluminescent patterns pulse slowly in patterns that produce, in human observers, a documented fascination response distinct from normal animal interest.",
+  "physical_description": "Small, slim, extraordinarily beautiful. The fur carries shifting blue-white patterns like fiber optic cable woven through it. The eyes have a second glow independent of the fur — a warm amber that functions as a draw separate from the cold blue patterns. They move with the specific grace of a creature that has never needed to flee anything, because everything comes to it. They are not aggressive. They are irresistible.",
+  "behavioral_profile": "They allow approach. They allow petting. This is the weapon.",
+  "threat_level": "Extreme. Contact with the fur transmits a pathogen that produces no symptoms for 72 hours, then produces a systemic response that the exposed individual will transmit to three to six people on average before symptoms appear. The pathogen is not universally lethal — mortality approximately 40% — but it is highly contagious and the delay ensures wide distribution before any quarantine response is possible.",
+  "containment_status": "Unknown distribution. They are appealing, they are small, they are found in urban margins, and people keep picking them up.",
+  "known_locations": [
+    "Outer residential zones",
+    "Green margin spaces near the Shelf upper levels",
+    "At least two individuals reported in the lower Undermarket area"
+  ],
+  "contamination_risk": "Maximum. This is the point of them.",
+  "pacification_protocol": "DPS Directive 1-C: Pathogen Carrier, Active. Do not approach. Do not allow civilians to approach. Destroy at maximum range. Biohazard decontamination of anyone who has touched any fox-sized bioluminescent animal in the last 72 hours.",
+  "pitiable_qualities": "They don't know. They are beautiful and warm and they want to be held and they kill everything that holds them and they don't know.",
+  "story_hooks": [
+    "A child found one and brought it home three days ago",
+    "The Plague Foxes appeared in the same area at the same time as a specific corporate executive's visit to that district. The correlation has been noted by exactly one analyst."
+  ],
+  "tags": [
+    "lab_specimen",
+    "bioluminescent",
+    "pathogen",
+    "lure",
+    "extreme_threat",
+    "biological_weapon",
+    "uncontained",
+    "tragic"
+  ]
+}

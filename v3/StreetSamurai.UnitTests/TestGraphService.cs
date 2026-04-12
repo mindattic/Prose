@@ -55,6 +55,8 @@ public class TestPathProvider : StreetSamurai.Core.Interfaces.IPathProvider
     public string LogDir => Path.Combine(root, "logs");
     public string ExportDir => Path.Combine(root, "exports");
     public string ArchiveDir => Path.Combine(root, "archives");
+    public string MediaDir => Path.Combine(root, "engine_data", "media");
+    public string MediaArchiveDir => Path.Combine(root, "archives", "media");
 }
 
 /// <summary>Minimal DatabaseService stub for tests — returns empty collections.</summary>

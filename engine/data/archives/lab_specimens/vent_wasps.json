@@ -1,0 +1,41 @@
+{
+  "id": "c9fc36b7649b63b245b17e8f5fd45150",
+  "name": "Vent Wasps",
+  "type": "lab_specimen",
+  "aliases": [
+    "Splice Hornets",
+    "Gas Carriers",
+    "The Swarm Children"
+  ],
+  "classification": "Insect-Human Chimera / Chemical Delivery Colony",
+  "origin_lab": "Insect-platform bioweapons program, contractor unknown. The program sought to replicate the efficiency of social insect colony organization in a biologically programmable weapon delivery system.",
+  "origin_method": "Wasp genetic architecture was enhanced with human immune-system components to allow tailored chemical payload synthesis. Individual units were engineered to synthesize and store a specific chemical agent in a modified venom gland, then deliver it via sting. The human components were included to allow each unit to synthesize more complex compounds than pure insect biology could produce. The hive mind coordination was enhanced. The human cognitive contribution was minimal but present: the wasps make decisions that pure insects don't, including tactical retreat, bait deployment, and, documentedly, learning.",
+  "substrate": "Chimera insect. Approximately 4cm body length, wingspan 7cm. Distinctive: the thorax has a slight translucency and the payload gland is visible as a dark mass within it. A hive of approximately 8,000 units.",
+  "physical_description": "Larger than normal wasps. Slightly wrong coloration — the yellow-black patterning is present but the proportions of the segments are off in a way that registers as wrong before you can identify why. They build nests in ventilation systems — hence the name. The nest material incorporates human hair and skin cells from shed material in the duct systems, which gives the nest a disturbing organic texture.",
+  "behavioral_profile": "Colony defense behavior plus learned tactical deployment. They have been documented deploying forward scouts before a main swarm attack, using the scouts to assess target group size and identify individuals who represent greater threat. They have abandoned attacks that they assessed as unfavorable and returned two days later with different approach vectors. The payload varies by hive — what they synthesize depends on the ambient chemical environment they developed in. Some hives produce straightforward venom with enhanced protein compounds. Some produce hallucinogens. One hive in the lower industrial zone produces a compound that causes immediate and severe Parkinson-like motor disruption.",
+  "threat_level": "High. The chemical payload variability makes engagement without prior payload identification a significant risk — standard protection protocols for one payload type may be inadequate for another.",
+  "containment_status": "Multiple hives established in GLMZ ventilation infrastructure. Mapping ongoing.",
+  "known_locations": [
+    "Lower residential ventilation ducts, tiers 8-15",
+    "Industrial belt ventilation spine",
+    "One confirmed hive in the HVAC system of a mid-tier commercial building"
+  ],
+  "contamination_risk": "The payload compounds are not self-replicating but hive expansion means new hives are established as the colony grows. A single established hive will produce a secondary hive within 18 months.",
+  "pacification_protocol": "DPS Directive 6-E: Chimera Insect Colony. Full sealed-suit engagement. Payload identification mandatory before approach. Hive destruction requires reaching the queen unit, which the colony defends absolutely.",
+  "pitiable_qualities": "They are very good at what they do. There is a kind of terrible elegance to a hive organism that has learned from experience and plans across days. There is no suffering here — only a mind that was built to destroy things, doing exactly that, with something that functions like satisfaction.",
+  "story_hooks": [
+    "A runner needs to pass through a duct system. The vent survey shows a Vent Wasp nest directly in their path. The nest was not there last month. The hive learned the duct was a transit route.",
+    "A Vent Wasp hive's payload has been analyzed. The compound is not from any known chimera design pathway. Something has been feeding them synthesis precursors. Someone is maintaining this hive."
+  ],
+  "tags": [
+    "lab_specimen",
+    "chimera",
+    "insect_human",
+    "colony",
+    "chemical_weapon",
+    "high_threat",
+    "uncontained",
+    "adaptive",
+    "trash_mob"
+  ]
+}

@@ -41,6 +41,13 @@ public class DevAutoLoginMiddleware
                 return;
             }
 
+            // Skip auto-login if the user explicitly logged out (cookie set by logout endpoint)
+            if (context.Request.Cookies.ContainsKey("ss-dev-logout"))
+            {
+                await next(context);
+                return;
+            }
+
             // Look up the actual user to get UserId and SecurityStamp.
             // Without these claims, OnValidatePrincipal will reject the session.
             var userRepo = context.RequestServices.GetRequiredService<UserRepository>();

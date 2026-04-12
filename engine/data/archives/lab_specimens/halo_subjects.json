@@ -1,0 +1,38 @@
+{
+  "id": "b13bd8d276bd923a31baccad345d3ec8",
+  "name": "Halo Subjects",
+  "type": "lab_specimen",
+  "aliases": [
+    "The Fortunate",
+    "Blessers",
+    "Lucky Ones"
+  ],
+  "classification": "Electromagnetic Field Anomaly / Technology-Beneficial Interaction",
+  "origin_lab": "BCI hardware research, electromagnetic biocompatibility testing.",
+  "origin_method": "Subjects received a BCI implant intended to test long-term electromagnetic biocompatibility. A manufacturing defect in six implants produced an unanticipated effect: the implants generate a low-level electromagnetic field that interacts with nearby electronic systems in a consistently beneficial way. Electronics near these subjects work better than they should — intermittent connections hold, degraded systems function, failing power cells stabilize. The effect cannot be replicated by direct engineering. It only happens in their presence.",
+  "substrate": "Human, six subjects. The implants are standard BCI hardware, externally.",
+  "physical_description": "Normal. The effect is not visible directly — it is visible in the behavior of electronics near them.",
+  "behavioral_profile": "They are aware of the effect. Some find it comforting. Some find the dependence that communities develop on them unsettling. They are sought out by people with failing equipment, by communities with unstable power, by anyone whose technology is at the edge of failure.",
+  "threat_level": "None.",
+  "containment_status": "Living in lower-tier communities that have figured out what they do.",
+  "known_locations": [
+    "Communities with notably reliable electronics in the lower tiers"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "N/A.",
+  "pitiable_qualities": "They are needed for something they cannot control and did not choose. The communities that depend on them cannot afford to let them leave.",
+  "story_hooks": [
+    "A Halo Subject wants to leave the community that has been keeping them. The community has gently ensured that leaving is not straightforward.",
+    "The equipment that only works near a specific Halo Subject contains something critical. The subject has been taken. The equipment is failing."
+  ],
+  "tags": [
+    "lab_specimen",
+    "electromagnetic",
+    "technology_beneficial",
+    "bci_accident",
+    "no_threat",
+    "divine_spark",
+    "community_dependent",
+    "involuntary_gift"
+  ]
+}

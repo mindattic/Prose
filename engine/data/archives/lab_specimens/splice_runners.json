@@ -1,0 +1,39 @@
+{
+  "id": "e44fa90cc8ae245114c898a81be8e2ae",
+  "name": "Splice Runners",
+  "type": "lab_specimen",
+  "aliases": [
+    "Fast Things",
+    "Sprint Splices",
+    "Blur Subjects"
+  ],
+  "classification": "Speed-Optimized Chimera / High-Velocity Combat Platform",
+  "origin_lab": "Military performance contractor, Project SPRINT.",
+  "origin_method": "Human subjects with cheetah and pronghorn genetic contributions targeted at the locomotor system. Leg musculature redesigned for sprint acceleration; the cardiovascular system enhanced to support the metabolic demand. Human cognitive component retained for tactical judgment. The modification produced subjects capable of 60+ km/h sustained sprint over short distances, with acceleration comparable to a ground vehicle. The modifications also produced subjects who experienced ordinary human speed as unbearably slow — every moment of non-sprint existence as a painful restriction.",
+  "substrate": "Chimera, human-dominant with chimeric locomotor system. Standing height normal. Leg architecture different below the knee: longer calcaneus, higher heel, digitigrade tendency. They stand on their toes without effort.",
+  "physical_description": "Human in the upper body. Wrong in the legs. The calf musculature is pronounced beyond any normal variance. They shift their weight constantly, as if always about to run. They often are about to run.",
+  "behavioral_profile": "Frenetic, territorial about space that allows full sprint, deeply uncomfortable in enclosed environments. They range wide areas at speed. They return to familiar areas but do not stay long. Aggressive when their movement is restricted.",
+  "threat_level": "High. At 60 km/h in an enclosed corridor, there is no effective evasion response.",
+  "containment_status": "Uncontained. Tracking them is difficult for obvious reasons.",
+  "known_locations": [
+    "Long-axis spaces: transit tunnels, freight corridors, any straight run of 400m+",
+    "Upper level access ramps (they sprint the inclines)"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "DPS Directive 2-C: High Velocity Biological. Do not give chase. Establish a perimeter and wait. They will return.",
+  "pitiable_qualities": "They cannot be still. Stillness is agony. They will never sleep well or rest well or be at peace in any enclosed space for the rest of their lives, which are probably shorter than they would have been because of what they were made to do.",
+  "story_hooks": [
+    "A Splice Runner has been circling a specific building at high speed for three days. Same route every circuit. They are not attacking. They are looking for something.",
+    "A runner needs to get a message to someone on the other side of the city fast. Very fast."
+  ],
+  "tags": [
+    "lab_specimen",
+    "chimera",
+    "speed_platform",
+    "weapons_program",
+    "high_threat",
+    "uncontained",
+    "territorial",
+    "locomotor"
+  ]
+}

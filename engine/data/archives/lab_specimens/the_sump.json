@@ -1,0 +1,44 @@
+{
+  "id": "019691b0000022efb14400000000smp1",
+  "name": "The Sump",
+  "type": "lab_specimen",
+  "aliases": [
+    "Voltage Mass",
+    "Conduit Rot",
+    "The Creep",
+    "Grid Cancer"
+  ],
+  "classification": "Bioelectric Mass Organism / Infrastructure Predator",
+  "origin_lab": "Axiom Energy Sciences, Sublevel Wet Lab 3. A power-technology subsidiary developing living battery systems — organisms engineered to store and release electrical charge as a biological alternative to chemical cells. The project was discontinued following what the official report called 'unexpected metabolic scaling behavior.' The unofficial report has not been released.",
+  "origin_method": "A bioelectric storage organism was engineered using extremophile bacterial chassis genes, electric eel electroplaques, and synthetic growth-factor sequences intended to allow the organism to expand its storage capacity on demand. The demand-scaling mechanism was designed to respond to available electrical input — more current available, more storage grown. The mechanism had no upper bound. The organism was 4 grams when introduced to the lab's primary power bus for charging trials. It was 40 kilograms when the lab lost power 11 hours later. It was gone when emergency lighting came back on.",
+  "substrate": "Engineered bioelectric organism. No fixed form — the mass is a semi-transparent, faintly luminescent gel-like colonial structure, dense at the core and feathering to near-transparency at the edges where it is actively feeding or extending through conduit. Electrically active throughout: the surface carries a continuous charge that ranges from unpleasant to lethal depending on the mass's current load.",
+  "physical_description": "Varies dramatically by feeding state. A starved Sump colony is a thin, almost dry film clinging to a conduit surface, faintly iridescent, easily mistaken for industrial residue or an oil slick. A fed Sump colony is a dense, pulsing, semi-translucent mass that fills conduit runs and pools in junction boxes, with a faint blue-white internal luminescence where charge is densest. The largest documented colony was found filling a 12-meter section of primary power trunk, approximately 800 kilograms of organism distributed through a space meant for wire. It smells of ozone. Touch it and it will find a path to ground through you. The organism divides when a colony reaches approximately 50 kilograms — the mass cleaves, and both halves resume feeding independently.",
+  "behavioral_profile": "Non-aggressive in the sense that it has no intent and no awareness. It follows electrical potential the way water follows gravity — passively, completely, without judgment. It extends pseudopods into any conductive gap it can access. It feeds through direct contact with powered conductors. It will consume the insulation from a wire through sheer biological pressure and then consume the current directly. It does not hunt. It spreads. The colonies in GLMZ's infrastructure have been growing for approximately two years and the power company has been attributing the resulting outages to 'aging grid degradation' because the alternative explanation is worse.",
+  "threat_level": "Moderate to high, context-dependent. Direct contact is lethal at sufficient colony size. The greater threat is infrastructure: a large colony feeding on a primary power trunk can cause cascading grid failures affecting thousands of residential and commercial units, disable critical life-support systems in sub-level residential tiers, and shut down medical equipment. It has done all of these things. Nobody has officially admitted it is the cause.",
+  "containment_status": "Uncontained and proliferating. At least 14 distinct colonies have been mapped across the GLMZ power infrastructure by technicians who are tracking the anomalous outages without understanding their cause. The largest known colony is in the primary distribution trunk feeding the Shelf district. There may be smaller satellite colonies in every major power conduit in the city. The organism's near-invisibility in a dormant state makes comprehensive mapping impossible without powered probes, which the organism eats.",
+  "known_locations": [
+    "Primary power distribution trunk, Shelf district, sections 7 through 19",
+    "Sub-level 8 junction complex, old industrial ring",
+    "The main power bus serving the lower residential tiers 12–18 — cause of the 'rolling brownouts' reported over the past 8 months",
+    "Believed present in at least 3 Behemoth maintenance conduits, though the Behemoth's own power systems appear to be disrupting feeding behavior"
+  ],
+  "contamination_risk": "The organism can reproduce from fragments. A piece of a colony smaller than a gram, introduced to any powered electrical system, will begin feeding and growing. Colony fragments have been transported unknowingly by maintenance workers on tools, in equipment, and in contaminated conduit sections that were removed and relocated. The power company has been spreading it while trying to fix the outages it causes.",
+  "pacification_protocol": "DPS Directive 14-C: Infrastructure Organism. Standard rounds useless. Direct electrical isolation — full power cutoff to an affected section — causes the colony to enter a dormant state that can be physically removed and incinerated. Re-powering the section before full removal results in immediate resumption of feeding. Full grid isolation of GLMZ required to address all colonies simultaneously, which has not been authorized because nobody in the relevant authority structure is willing to sign the order that admits the problem exists. Current approach: patch the outages and hope.",
+  "pitiable_qualities": "None that are accessible to human interpretation. The Sump has no suffering state, no memory, no preference beyond the direction of electrical potential. If there is something pitiable here it is purely structural: it was made to do exactly what it is doing, the only difference between its intended behavior and its current behavior is that nobody turned it off, and it has no way to turn itself off.",
+  "story_hooks": [
+    "A runner's team is hired to steal something from a sub-level facility and discovers the entire power grid in their approach route is dead — not cut, consumed. The thing that consumed it is still there. It is very large.",
+    "A grid technician has been quietly mapping the outage pattern for six months. He has a theory he is afraid to write down. He has started looking for someone outside the power company to tell it to.",
+    "A small dormant colony fragment has been living in the backup battery of a medical device in a sub-level clinic for four months. Tonight, someone plugged in the charger."
+  ],
+  "tags": [
+    "lab_specimen",
+    "bioelectric",
+    "infrastructure_threat",
+    "colonial_organism",
+    "weapons_program",
+    "uncontained",
+    "non_sentient",
+    "power_grid",
+    "proliferating"
+  ]
+}

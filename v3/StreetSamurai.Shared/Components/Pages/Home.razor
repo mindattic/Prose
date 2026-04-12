@@ -1,3 +1,35 @@
 @page "/"
+@inject MediaService Media
+@inject IJSRuntime JS
 
-<CategoryTiles />
+<div class="home-wrapper">
+    @if (bgImage != null)
+    {
+        @* Start invisible — homeBg.apply() swaps in the torn composite and sets opacity:1.
+           On cache hit this is near-instant; on miss it waits for canvas compositing. *@
+        <img id="home-bg-img" src="/api/media/@bgImage" class="home-bg-img"
+             style="opacity:0" alt="" aria-hidden="true" />
+    }
+
+    @* Console host lives after bg-img so same z-index still paints above it *@
+    <div class="console-bg-host" aria-hidden="true"></div>
+
+    <div class="home-content">
+        <CategoryTiles />
+    </div>
+</div>
+
+@code {
+    private string? bgImage;
+
+    protected override void OnInitialized() => bgImage = Media.GetRandomImage();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (bgImage != null)
+        {
+            try { await JS.InvokeVoidAsync("homeBg.apply", "home-bg-img", $"/api/media/{bgImage}"); }
+            catch { }
+        }
+    }
+}

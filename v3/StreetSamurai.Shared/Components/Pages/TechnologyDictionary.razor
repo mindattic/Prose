@@ -25,11 +25,19 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="technology" Title="@(isNew ? "New Technology" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="technology" Title="@(isNew ? "New Technology" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
                 <HeaderButtons>
-                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
-                    @if (!isNew && !_confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
-                    @if (_confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Confirm</div></button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button> }
+                    @if (!_confirmDelete)
+                    {
+                        <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                        @if (!isNew) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    }
+                    else
+                    {
+                        <span class="small text-muted me-1">Archive Entry?</span>
+                        <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Yes</div></button>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => _confirmDelete = false"><div class="btn-lbl">No</div></button>
+                    }
                 </HeaderButtons>
                 <ChildContent>
                     <div class="row g-3 mb-3">
@@ -79,7 +87,7 @@
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
     private void AddNew() { editing = new TechnologyData(); isNew = true; _confirmDelete = false; devInput = ""; _baseTechInput = ""; }
-    private void Edit(TechnologyData t) { editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; devInput = string.Join(", ", t.Developers); _baseTechInput = string.Join(", ", t.BaseTechnologies); }
+    private void Edit(TechnologyData t) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_technology", t.Id); editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; devInput = string.Join(", ", t.Developers); _baseTechInput = string.Join(", ", t.BaseTechnologies); }
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
@@ -89,7 +97,17 @@
         Repo.Save(editing); editing = null; items = Repo.GetAll();
     }
     private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
-    protected override async Task OnAfterRenderAsync(bool firstRender) { await JS.InvokeVoidAsync("writeInterop.autoResizeAll"); }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && editing == null && items.Count > 0 && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id="))
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_technology") ?? ""; } catch { }
+            var target = (!string.IsNullOrEmpty(lastId) ? items.FirstOrDefault(x => x.Id == lastId) : null) ?? items.First();
+            if (target != null) { Edit(target); StateHasChanged(); }
+        }
+    }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }

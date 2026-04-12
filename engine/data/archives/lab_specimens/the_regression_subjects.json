@@ -1,0 +1,39 @@
+{
+  "id": "3d70c1e210b81fb4e55a4072c2056c6e",
+  "name": "The Regression Subjects",
+  "type": "lab_specimen",
+  "aliases": [
+    "Half-Changed",
+    "Stuck Ones",
+    "The Between"
+  ],
+  "classification": "Interrupted Modification Process / Partial Transformation Arrest",
+  "origin_lab": "Multiple labs — these subjects are the product of facility evacuations where the modification process was underway and could not be completed or reversed.",
+  "origin_method": "Subjects were partway through procedures when facilities were abandoned: geneware half-expressed, cybernetic integration partially complete, biological modification at 60%. The abandoned subjects completed some portion of the modification via their own biology and stopped when the supporting substrate, drugs, or equipment was no longer present. They are permanently partial.",
+  "substrate": "Human, variably. What they are is a function of which procedure was interrupted and at what stage.",
+  "physical_description": "Each one is different. Some are half-armored — the subdermal implant process stopped at the torso, leaving armored front and unarmored back. Some have one modified limb and three normal ones. Some have geneware expression on the right side of the body and normal biology on the left. They are all asymmetric in a way that is specifically the asymmetry of interrupted process, not of accident or injury. The line where the modification ends is usually visible.",
+  "behavioral_profile": "Highly variable. What they have in common is that they are all experiencing the consequences of incomplete modification — the body dealing with a partial change that it cannot complete and cannot reverse.",
+  "threat_level": "Variable by individual.",
+  "containment_status": "Scattered throughout the lower tiers and industrial margins.",
+  "known_locations": [
+    "Throughout the lower tiers",
+    "Several operate in the GLMZ margins as laborers or fixers, their partial modifications visible as occupational tools"
+  ],
+  "contamination_risk": "Variable by modification type.",
+  "pacification_protocol": "No general directive. Individual assessment.",
+  "pitiable_qualities": "They are whatever they were becoming, stopped at some arbitrary point. Not the thing before, not the thing after. The thing in the middle, forever.",
+  "story_hooks": [
+    "A Regression Subject is looking for the researcher who abandoned them mid-procedure. They want the rest of it. Whether to finish becoming what they were becoming or to reverse it entirely — they haven't decided.",
+    "A Regression Subject's partial modification turns out to be exactly suited to a specific problem a runner is facing."
+  ],
+  "tags": [
+    "lab_specimen",
+    "interrupted_modification",
+    "partial",
+    "human_substrate",
+    "variable_threat",
+    "uncontained",
+    "tragic",
+    "liminal"
+  ]
+}

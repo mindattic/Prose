@@ -1,0 +1,40 @@
+{
+  "id": "019695b0000022efb24400000000ps02",
+  "name": "Deep Echo",
+  "type": "psionic",
+  "aliases": [
+    "the Echo",
+    "Deja Flood",
+    "Memory Leak",
+    "Prior Sense"
+  ],
+  "classification": "Chemical Psionic Enhancement / Temporal Displacement Induction",
+  "enhancement_type": "chemical",
+  "mechanism": "Deep Echo is a pharmaceutical compound — the synthesis is proprietary and controlled, but the mechanism is well-documented in clinical literature. The active compound targets the hippocampal-entorhinal interface, specifically the memory consolidation pathway, and induces a temporary state in which the brain's memory encoding system treats incoming sensory experience as if it were being retrieved rather than recorded. The neurological effect of this is that the subject experiences the present as remembered — not as the present happening, but as the past being recalled. The timing offset varies by dose and individual neurochemistry: most subjects report a displacement of approximately three to eight minutes. They experience the present as something they remember from three to eight minutes in the future.",
+  "abilities": "The displacement effect makes Deep Echo exceptionally useful for specific operational contexts. A subject under the compound cannot be surprised — because they are experiencing everything that happens as something they already know happened. They navigate confrontations with the particular calm of someone who already knows how it ended. In high-stakes information contexts — interrogations, negotiations, complex social engineering — the compound produces a state in which the subject can hold multiple conversation branches simultaneously, experiencing each potential response as something they already remember making. The compound does not predict. It generates a false subjective certainty that is indistinguishable, from inside, from actual memory. This certainty is the capability.",
+  "side_effects": "The compound does not generate actual predictive capability — it generates the subjective experience of memory for events that have not yet been encoded. When the false memory diverges from what actually happens, the subject experiences this as an acute memory error — the specific and disturbing sensation of a clear memory being wrong. Mild divergence produces no lasting harm. Significant divergence — a clear remembered outcome that does not materialize — produces what clinicians call 'echo fracture': a dissociative state lasting thirty minutes to four hours in which the subject's ability to distinguish past from present is significantly impaired. Repeated echo fractures accumulate. Long-term users of Deep Echo who have experienced significant fracture events develop a persistent baseline condition of temporal uncertainty — difficulty locating themselves in time, uncertainty about whether current events have already happened, an inability to trust memory in general because the memory system has been trained to accept false inputs.",
+  "acquisition_method": "Black market pharmaceutical, not legally available in any jurisdiction recognized by GLMZ corponations. The synthesis requires specific precursor compounds that are controlled. The compound is available through high-end chemical brokers at significant cost. Standard dose: a single dose costs approximately Φ 8,000–15,000 and produces four to six hours of effect. The price reflects both the precursor scarcity and the synthesis skill required. Counterfeit Deep Echo is widely available and extremely dangerous — the active compound window is narrow and off-specification synthesis produces fracture states without the temporal displacement benefit.",
+  "detection_risk": "High during effect, low afterward. The behavioral signature of a subject under Deep Echo is immediately recognizable to observers who know what to look for: an unusual stillness, a specific pattern of speaking about near-present events in past tense, and the characteristic pause-and-correct pattern when a fracture event occurs. Blood and saliva screening will detect the compound for approximately twelve hours post-dose. Standard drug screening at GLMZ security checkpoints does not test for the compound because it is not on the standard prohibited list — its existence is not officially acknowledged. Specialized intelligence screening does test for it.",
+  "corporate_interest": "The compound was originally developed by an academic pharmacology program studying temporal perception disorders. The research was quietly acquired by a holding company believed to be a front for Axiom Meridian's intelligence division. Axiom has not publicly acknowledged the compound. The program that studies its applications is, by all available evidence, active and well-funded. Other corponations are aware of the compound's capabilities and several are believed to have operatives with prescriptions sourced through informal channels.",
+  "known_practitioners": [
+    "Several documented GLMZ intelligence operatives have displayed behavioral signatures consistent with Deep Echo use during observed interactions",
+    "At least one known fixer in the Undermarket brokers Deep Echo procurement for the runner community"
+  ],
+  "story_hooks": [
+    "A runner has been dosed with counterfeit Deep Echo before a job — slipped in food or drink, not voluntarily taken. The fracture events start before the job begins. They need to complete the job while uncertain about whether anything they remember in the next four hours is real.",
+    "A reliable source has started behaving strangely — speaking about events that haven't happened yet in past tense, correcting themselves, showing the characteristic echo fracture pause-and-correct. They've been using Deep Echo and something went wrong with a fracture event. They remember something they can't verify, and they believe it. They are making decisions based on it.",
+    "Someone is manufacturing and distributing Deep Echo in GLMZ without Axiom's knowledge. The synthesis is good — not counterfeit. Whoever is making it has the precursors and the knowledge. Axiom wants to know who it is and why. The answer to 'why' may be more complicated than corporate competition."
+  ],
+  "tags": [
+    "psionic",
+    "chemical",
+    "temporal_displacement",
+    "pharmaceutical",
+    "memory_alteration",
+    "fracture_risk",
+    "black_market",
+    "axiom_meridian",
+    "intelligence_application",
+    "dissociation"
+  ]
+}

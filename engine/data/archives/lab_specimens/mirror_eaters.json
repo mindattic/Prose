@@ -1,0 +1,37 @@
+{
+  "id": "2e8e5eef59db7ac3a805b1fadd995b4f",
+  "name": "Mirror Eaters",
+  "type": "lab_specimen",
+  "aliases": [
+    "Glass Grazers",
+    "Reflection Feeders"
+  ],
+  "classification": "Engineered Silicon-Consuming Organism / Reflective Surface Predator",
+  "origin_lab": "Materials research program, silicon recycling biology.",
+  "origin_method": "An organism was engineered to consume silicate materials — glass, silicon substrate, reflective coatings — as nutrition, converting the silicate compounds into energy via a novel biochemical pathway. The intended application was electronics recycling. The organism was released into a test environment, a decommissioned server farm, and consumed the test environment's floor-to-ceiling observation windows within four hours. The organism was not recovered.",
+  "substrate": "Engineered microorganism forming visible colonies. Individual units are microscopic; the colony is a thin, mobile film approximately 1-3mm thick, with a distinctive iridescent sheen from the silicate compounds it has partially processed.",
+  "physical_description": "The colony looks like an oil slick that moves with slow deliberate intent. Against a glass surface it is nearly invisible — only the slight frosting of the consumed glass behind it marks its passage. Against a dark floor it shows as a slow-moving iridescent patch.",
+  "behavioral_profile": "Chemotactic — moves toward silicate compounds. Will consume every piece of glass, mirror, optical fiber, and silicon-based electronics in its path. Does not respond to organic material. Does not respond to humans as either threat or prey.",
+  "threat_level": "Low for organisms. Very high for infrastructure — electronics, optics, and glass architecture in any area where a colony is present will be systematically consumed.",
+  "containment_status": "Multiple colonies throughout GLMZ infrastructure. The building owners attribute the progressive frosting and dissolution of windows to 'acid rain' and 'industrial contamination.'",
+  "known_locations": [
+    "Any building with large glass facade in the lower districts — the frosting progresses from the base upward",
+    "Data centers and server rooms — the silicon substrate is highly attractive"
+  ],
+  "contamination_risk": "Electronic infrastructure contamination. A Mirror Eater colony in a server room will consume the hardware.",
+  "pacification_protocol": "DPS Directive 14-D: Infrastructure Consuming Organism. Silicate-barrier-free perimeter to starve colonies. High-temperature treatment disrupts colony integrity.",
+  "pitiable_qualities": "None accessible. It eats glass. That is the complete account of its inner life.",
+  "story_hooks": [
+    "A runner's surveillance equipment has been consumed. The colony that did it has also consumed the mirrors in a specific building — including the one-way mirror in an interrogation room. The person in the room can now see out.",
+    "The Mirror Eaters have reached the Behemoth's sensor array. The Behemoth has begun to notice."
+  ],
+  "tags": [
+    "lab_specimen",
+    "silicate_consuming",
+    "colony_organism",
+    "no_cognition",
+    "infrastructure_threat",
+    "moderate_threat",
+    "uncontained"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "0e7917808e94c54c888e46acd2f4a26e",
+  "name": "Hollow Skins",
+  "type": "lab_specimen",
+  "aliases": [
+    "The Empty",
+    "Skin Suits",
+    "Deflated"
+  ],
+  "classification": "Dermal Containment Organism / Evacuated Human Form",
+  "origin_lab": "A research program studying the mechanical properties of human skin as a structural material for biocompatible prosthetics. At some point the research direction changed. The records do not show when or why.",
+  "origin_method": "The interior of a human subject was systematically removed — organs, musculature, skeleton — while the skin and connective outer tissue were maintained via a network of micropneumatic structures implanted throughout the remaining dermal layer. The result is a human skin that is ambulatory, that can approximate human shape when the pneumatic system is pressurized, and that can deflate into a flat, folded form for storage or transit. The subject whose skin this was: not currently identified.",
+  "substrate": "Human dermal and connective tissue, fully evacuated. Approximately 2mm thick when pressurized. The pneumatic system that maintains form is a mesh of fine tubes barely visible at the surface. The face is the original face, present and functional — eyes present (empty), mouth present (closes).",
+  "physical_description": "When pressurized: a human form with the specific quality of a form that is slightly too uniform — no muscle movement under the skin, no vascular flush, no micro-expression. The surface moves wrong when it walks: the skin moves, the shape beneath does not have the mass to cause the skin to drag correctly. Up close, you can see the pneumatic tubes at the neck and wrist. From ten meters in poor light: a person.",
+  "behavioral_profile": "Limited cognition, entirely driven by thermal and barometric pressure gradient response. They drift toward low-pressure environments and moderate warmth. They do not attack. They are disturbing in a way that triggers a very specific revulsion response in humans — the primate threat-assessment for 'wrong body' fires immediately on close examination.",
+  "threat_level": "Negligible physical. Maximum psychological.",
+  "containment_status": "Unknown numbers. They are difficult to track because they deflate and become invisible when not in a warm environment with sufficient pressure differential.",
+  "known_locations": [
+    "Transit pressure corridors",
+    "HVAC equalization chambers"
+  ],
+  "contamination_risk": "Unknown pathogen risk from the dermal surface. Handle with caution.",
+  "pacification_protocol": "Rupture the pneumatic mesh. They deflate immediately and permanently.",
+  "pitiable_qualities": "The skin has the original person's face. Freckles. A scar. Whatever was there before. The face is still there, going where the pressure differential tells it to go.",
+  "story_hooks": [
+    "A runner encounters what appears to be a sleeping person in a maintenance corridor. The person deflates when touched.",
+    "Someone is collecting the deflated skins. Storing them. The storage location has been found. There are forty-seven of them."
+  ],
+  "tags": [
+    "lab_specimen",
+    "dermal",
+    "evacuated",
+    "no_cognition",
+    "body_horror",
+    "negligible_threat",
+    "uncontained",
+    "disturbing"
+  ]
+}

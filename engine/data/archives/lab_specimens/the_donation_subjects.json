@@ -1,0 +1,38 @@
+{
+  "id": "f2f17b81b9611625d633ea103f7167a9",
+  "name": "The Donation Subjects",
+  "type": "lab_specimen",
+  "aliases": [
+    "Taken Apart",
+    "Partials",
+    "The Diminished"
+  ],
+  "classification": "Non-Consensual Organ Harvesting Survivor / Reconstructed Partial Biology",
+  "origin_lab": "Medical program operating as a legitimate organ donation registry with an illegitimate secondary operation.",
+  "origin_method": "Subjects enrolled in a voluntary organ donor registry were, in a significant percentage of cases, subjected to pre-mortem partial harvesting — organs removed while the subject was alive and under sedation, on a schedule designed to keep them alive as long as possible while maximizing yield. The reconstructive procedures that followed were sufficient to maintain life but not to restore full function. The subjects woke up missing things and reconstructed with substitutes that work but not the same way the originals did.",
+  "substrate": "Human, rebuilt. What each subject is missing and what they have been given instead varies by case. All of them know. All of them were told something else when it happened.",
+  "physical_description": "Varies. Some have visible reconstruction: the skin pattern over replacement organs is different from the original tissue. Some are not visibly different at all. What they share is an awareness they carry in their bodies — they know exactly which parts of themselves are not the original.",
+  "behavioral_profile": "Range across the full spectrum of human response to profound violation. Some are quiet and functional. Some are neither. None have recovered from what was done to them in the way that implies the word 'recovered' means what it usually means.",
+  "threat_level": "Variable.",
+  "containment_status": "Living throughout the GLMZ.",
+  "known_locations": [
+    "Throughout GLMZ — not distinguishable from the general population"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "N/A.",
+  "pitiable_qualities": "They were alive and trusting and someone took things out of them while they were both. The taking was planned. The planning is the worst part.",
+  "story_hooks": [
+    "A runner discovers the donor registry operation while investigating something unrelated. The current subject list includes someone they know.",
+    "One of the Donation Subjects has been tracking the surgical team responsible. They have found three of the four surgeons. They are being very careful and very patient."
+  ],
+  "tags": [
+    "lab_specimen",
+    "non_consensual",
+    "harvesting_survivor",
+    "human_substrate",
+    "no_threat",
+    "traumatized",
+    "tragic",
+    "violation"
+  ]
+}

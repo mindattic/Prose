@@ -60,5 +60,25 @@
     "Circuit",
     "Tessera Industries Data Spike DS-1 'Upload'",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
+  ],
+  "known_members": [
+    {
+      "name": "The Librarian",
+      "role": "Custodian / Primary Archivist",
+      "status": "active",
+      "notes": "The Archive maintains that the Librarian is not a person but a role — that the current occupant of the role has held it for thirty years and that the same role was held by a predecessor for twenty-two years before that. Whether this is true, and whether the Librarian is one person or a series of people who have undergone sufficient memory integration that the distinction is no longer meaningful, is a question the Archive does not engage with. The Librarian speaks in present tense about events from the 2170s. The Librarian knows the names of people who have not been named in any public record for forty years."
+    },
+    {
+      "name": "Nour Adeyemi-Vasquez",
+      "role": "Memory Acquisition",
+      "status": "active",
+      "notes": "The Archive's primary field operative for memory retrieval. Approaches people in the final stages of terminal illness, in the immediate aftermath of trauma, and in the specific circumstances when a person understands they are about to lose something they cannot afford to lose. Offers, in exchange for Archive membership, the preservation of any memory the person chooses to commit. Has been doing this for seven years. Has preserved 847 specific memories from 312 individuals. Has never failed to honor a preservation request. Has not yet been able to explain what the Archive does with the memories it holds or what it is building toward."
+    },
+    {
+      "name": "The Iteration",
+      "role": "Research Division",
+      "status": "active",
+      "notes": "Not a person — or rather, a person who has consented to iterative memory integration to the point where the question of personhood has become genuinely complex. The Iteration carries partial memories of forty-seven deceased Archive members and uses the integrated perspectives to cross-reference historical events with a precision that single-consciousness researchers cannot match. Is aware of experiencing events they were not present for. Has complex feelings about this."
+    }
   ]
 }

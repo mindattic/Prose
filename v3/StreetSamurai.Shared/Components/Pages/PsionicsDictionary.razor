@@ -1,0 +1,125 @@
+@page "/psionics"
+@inject PsionicRepository Repo
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+@inject WorldGraphService Graph
+
+<div class="dict-layout">
+    <div class="dict-list">
+        <div class="card bg-dark text-light border-secondary mb-2 card-body">
+            <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
+        </div>
+        <div class="dict-items">
+            @foreach (var p in PagedItems)
+            {
+                <div class="list-item text-light @(editing?.Name == p.Name ? "active" : "")" @onclick="() => Edit(p)">
+                    <div class="fw-bold small">@p.Name</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">@p.Classification</div>
+                </div>
+            }
+        </div>
+        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
+    </div>
+
+    <div class="dict-editor">
+        @if (editing != null)
+        {
+            <EditViewToggle RepoName="psionics" Title="@(isNew ? "New Psionic" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+                <HeaderButtons>
+                    <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
+                    @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                    @if (confirmDelete) { <button class="btn btn-sm btn-danger" @onclick="DoDelete"><div class="btn-lbl">Confirm</div></button> <button class="btn btn-sm btn-outline-secondary" @onclick="() => confirmDelete = false"><div class="btn-lbl">No</div></button> }
+                </HeaderButtons>
+                <ChildContent>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Classification</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Classification" /></div>
+                        <div class="col-4"><div class="field-label">Aliases (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="aliasInput" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-4"><div class="field-label">Enhancement Type</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.EnhancementType" /></div>
+                        <div class="col-4"><div class="field-label">Detection Risk</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.DetectionRisk" /></div>
+                        <div class="col-4"><div class="field-label">Known Practitioners (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="practitionersInput" /></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Mechanism</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Mechanism"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Abilities</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Abilities"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Side Effects</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.SideEffects"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Acquisition Method</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.AcquisitionMethod"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Corporate Interest</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CorporateInterest"></textarea></div>
+                </ChildContent>
+            </EditViewToggle>
+        }
+        else { <div class="text-muted d-flex align-items-center justify-content-center h-100">Select a psionic or create a new one</div> }
+    </div>
+</div>
+
+@code {
+    private List<PsionicData> items = [];
+    private PsionicData? editing;
+    private bool isNew, confirmDelete;
+    private string originalName = "", aliasInput = "", practitionersInput = "";
+    private string filter = "";
+    private List<(string name, int count)> allTags = [];
+    private HashSet<string> selectedTags = [];
+
+    private IEnumerable<PsionicData> FilteredItems
+    {
+        get
+        {
+            IEnumerable<PsionicData> result = items;
+            if (!string.IsNullOrWhiteSpace(filter))
+                result = result.Where(p => p.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
+            if (selectedTags.Count > 0)
+                result = result.Where(p => selectedTags.All(t => p.Tags.Contains(t)));
+            return result;
+        }
+    }
+
+    private int currentPage = 1;
+    private const int PageSize = 100;
+    private IEnumerable<PsionicData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
+    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+
+    protected override void OnInitialized()
+    {
+        Repo.Reload();
+        items = Repo.GetAll();
+        RebuildTags();
+        if (Nav.Uri.Contains("new=true")) AddNew();
+        else
+        {
+            var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[] { "id=" }, StringSplitOptions.None).Last().Split(new[] { "&" }, StringSplitOptions.None)[0]) : "";
+            if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); }
+        }
+    }
+
+    private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
+    private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    private void AddNew() { editing = new PsionicData(); isNew = true; confirmDelete = false; aliasInput = ""; practitionersInput = ""; }
+    private void Edit(PsionicData p) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_psionics", p.Id); editing = p; originalName = p.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", p.Aliases); practitionersInput = string.Join(", ", p.KnownPractitioners); }
+
+    private void SaveEdit()
+    {
+        if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
+        editing.Aliases = aliasInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.KnownPractitioners = practitionersInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
+        Repo.Save(editing);
+        editing = null;
+        items = Repo.GetAll();
+        RebuildTags();
+    }
+
+    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; confirmDelete = false; items = Repo.GetAll(); RebuildTags(); }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && editing == null && items.Count > 0 && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id="))
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_psionics") ?? ""; } catch { }
+            var target = (!string.IsNullOrEmpty(lastId) ? items.FirstOrDefault(x => x.Id == lastId) : null) ?? items.First();
+            if (target != null) { Edit(target); StateHasChanged(); }
+        }
+    }
+}

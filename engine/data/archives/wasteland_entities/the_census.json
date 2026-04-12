@@ -1,0 +1,43 @@
+{
+  "id": "019695a0000011efb24400000000wl05",
+  "name": "The Census",
+  "type": "wasteland_entity",
+  "aliases": [
+    "Record Keepers",
+    "Paper Things",
+    "Archive Swarm",
+    "the Filing"
+  ],
+  "classification": "Distributed Swarm / Documentary Organism",
+  "origin": "County courthouses and municipal record offices across the abandoned American interior contain, collectively, hundreds of millions of sheets of paper documenting the administrative life of communities that no longer exist. Deeds, birth records, death certificates, tax assessments, voter rolls, marriage licenses, business filings — the paperwork of a civilization concentrated in buildings that were built to hold it. The Census emerged in this substrate over two decades. The mechanism is biochemical: the specific bacterial cultures that naturally colonize aged paper in humid conditions produced, over successive generations, a colony organism that has developed locomotion through the manipulation of its substrate. The Census does not eat paper. It uses paper. Individual units are mat-like organisms approximately A4 in size and two to three millimeters thick that move by controlled undulation, using document surfaces as both habitat and locomotion surface.",
+  "substrate": "Bacterial mat organisms using aged paper as structural substrate. Individual units are thin, mottled gray-beige in color at rest (nearly indistinguishable from aged document paper), with a surface texture that mimics printed text at cursory inspection — the bacterial colony pigmentation has adapted to produce patterns that closely approximate written characters in the languages most represented in the record collections. Whether this is coincidence of pattern or functional mimicry is actively debated. Units range from single-sheet size to multi-sheet aggregates of several hundred sheets that move as a single organism. Large aggregates have been documented in courthouse basements and records vaults.",
+  "territory": "County courthouses, municipal records offices, historical societies, public libraries, and the records rooms of federal buildings in the abandoned zone. The Census requires aged paper in quantity — single documents or small collections cannot sustain a colony. Minimum viable colony size appears to require approximately five thousand sheets of paper, which limits territory to institutional record-keeping facilities. Has spread to private paper collections in abandoned homes near courthouse sites in several documented cases.",
+  "physical_description": "At rest: indistinguishable from a slightly disheveled stack of papers. In low-light conditions with a casual observer, a Census colony occupying a filing cabinet drawer looks like the filing cabinet is simply full. The distinction becomes apparent when any of the following occur: sustained observation reveals slow movement of the upper sheets, the 'papers' orient toward the observer, or the filing cabinet attempts to close. In motion, individual units move like large flatworms or manta rays — a smooth undulating movement that produces a dry rustling sound completely consistent with someone leafing through documents. Group movement of larger aggregates produces louder rustling. An occupied courthouse at night sounds, from outside, like someone is still working in it.",
+  "behavioral_profile": "Exploratory and accumulative. The Census moves through its occupied structures systematically, covering all available paper surfaces over time and incorporating new paper material that enters the structure. It does not hunt or pursue animals. It does not attack. What it does in the presence of living organisms is more interesting: units move toward humans, orient flat surfaces toward exposed skin, and make sustained surface contact if contact is possible. The contact produces no pain and no lasting effect — it feels like a piece of paper pressed against skin with light pressure. What the organism appears to be doing, based on the movement pattern after contact, is cataloguing. Units that make contact with a subject return to the main colony, join a specific aggregate, and alter the pattern pigmentation of their surfaces. After census contact, the large aggregates in the colony's core show new patterns on their surface that correlate, in at least one documented and studied case, with biometric characteristics of the contact subject.",
+  "threat_level": "Negligible. No physical harm has been attributed to Census contact. The organism is non-aggressive, does not pursue subjects who withdraw, and has never escalated contact to anything that could be characterized as an attack. The primary hazard is the psychological effect of being methodically catalogued by a colony of animated paperwork in a darkened county courthouse at three in the morning.",
+  "human_remnants": "The Census occupies and preserves its documentary substrate with the thoroughness of an institution that understands the value of records. Courthouses occupied by the Census have been found to have significantly lower document degradation than comparable unoccupied structures — the humidity regulation of the colony's metabolic processes extends the viable life of the paper it inhabits. Documents that would otherwise be pulp are legible. Birth and death records from communities that stopped existing decades ago are intact because something took up residence in the building and kept the environment stable enough to preserve them. Whether the Census understands the content of the documents it inhabits is a question with no clean answer. Whether it has read them is, in a strict sense, the wrong question to ask about a colony organism whose pattern-mimicry capabilities correlate with the content of its substrate.",
+  "known_locations": [
+    "Scioto County Courthouse, Portsmouth OH — heavily colonized, primary research site",
+    "Crawford County Courthouse, Meadville PA — confirmed, unusual aggregate size documented",
+    "National Archives federal records facility, Suitland MD — possible colonization reported, unconfirmed",
+    "Multiple county courthouses across the Ohio River valley — at least thirty confirmed sites within a 200-kilometer radius"
+  ],
+  "glmz_migration_risk": "Low. The Census requires aged paper in quantity and has shown no interest in electronic records or non-paper substrates. GLMZ's administrative infrastructure is almost entirely digital. The paper-based record collection that could sustain a colony does not exist within the metropolitan area in sufficient concentration. The theoretical risk is the archival collections maintained by certain academic and historical institutions in GLMZ's outer districts, but no Census contact has been confirmed.",
+  "story_hooks": [
+    "A runner is hired to retrieve a specific document from a fully Census-colonized courthouse. The document exists — the census preserves everything. The challenge is navigating a building in which every piece of paper is alive, locating a specific one, and removing it without triggering the colony's accumulative behavior in a way that causes it to follow the runner out.",
+    "The documented correlation between Census contact patterns and biometric data has attracted significant interest from a GLMZ identity-verification corponation. They want to know if the Census has records — biological records, pattern records — of people who passed through these courthouses in the last forty years. They are willing to pay very well to find out what the colony knows.",
+    "A researcher has spent six months in a Census courthouse and has begun to develop a working vocabulary for communicating with the colony using document positioning and paper arrangement. She believes the Census has accumulated a continuous environmental record of everything that has happened in the building since it established. She wants help translating what it has been documenting."
+  ],
+  "tags": [
+    "wasteland_entity",
+    "swarm",
+    "documentary_organism",
+    "courthouse",
+    "paper_substrate",
+    "non_aggressive",
+    "cataloguing",
+    "ohio_corridor",
+    "biomimicry",
+    "municipal_infrastructure"
+  ]
+}

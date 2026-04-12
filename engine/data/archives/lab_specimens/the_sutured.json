@@ -1,0 +1,39 @@
+{
+  "id": "f607bac29fefe7caa75d03467e72f5f3",
+  "name": "The Sutured",
+  "type": "lab_specimen",
+  "aliases": [
+    "The Joined",
+    "Two-Bodies",
+    "Weave Subjects"
+  ],
+  "classification": "Forced Biological Fusion / Multi-Consciousness Composite",
+  "origin_lab": "Unknown black site, believed connected to shared-consciousness research programs investigating BCI limits.",
+  "origin_method": "Two or more human subjects were surgically fused at the torso level and subjected to a procedure designed to force shared neural architecture — the intent was to create a genuinely shared consciousness for testing coordinated BCI response. The neural bridge was partially successful. The subjects did not become one mind. They became two minds in one body, aware of each other, unable to separate, each experiencing everything the body does with independent reactions.",
+  "substrate": "Two humans per unit, fused. The surgical join is at the torso — internal organ systems are partially shared, partially duplicated. Both subjects retain full higher cognition. Both are aware. Neither can do anything the other does not also have to do.",
+  "physical_description": "The appearance varies by the original subjects. The join is always at the torso, with two complete heads and four arms emerging from a single shared lower body. The proportion is wrong in ways that are hard to look at. They move with the specific awkwardness of two people trying to walk in absolute physical lockstep who disagree about the direction.",
+  "behavioral_profile": "Deeply variable because there are always two behavioral profiles present and they frequently disagree. One subject may be aggressive; the other may be terrified. One may want to approach a human; the other may want to flee. The body navigates the conflict. This produces movement that appears broken — sudden direction changes, physical self-restraint, vocalization in two overlapping voices discussing in real time what the body should do next.",
+  "threat_level": "Moderate. The internal conflict limits sustained aggression. But when both subjects agree on a direction, the four-armed body is formidable.",
+  "containment_status": "Uncontained. At least three known Sutured pairs in GLMZ.",
+  "known_locations": [
+    "Lowest residential tiers, utility spaces with wide doorways",
+    "One pair known to be living in a decommissioned vehicle bay in the Outer Belt"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "DPS Directive 9-D: Multi-Consciousness Composite. Extreme care — lethal force kills both subjects simultaneously. Legal review flagged.",
+  "pitiable_qualities": "They argue constantly. Not from hostility but because they are two people who have the same problems, the same pain, the same hunger, and different ideas about how to address all of it, forever, in a body that only gets one vote.",
+  "story_hooks": [
+    "A runner needs information that only one of a Sutured pair has. The other one doesn't want to give it.",
+    "One of a Sutured pair is dying. The other one is not. The medical implications have no clean answer."
+  ],
+  "tags": [
+    "lab_specimen",
+    "fusion",
+    "multi_consciousness",
+    "human_substrate",
+    "moderate_threat",
+    "uncontained",
+    "body_horror",
+    "bci"
+  ]
+}

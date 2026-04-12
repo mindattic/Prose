@@ -1,0 +1,43 @@
+{
+  "id": "019691b0000022efb14400000000wrd1",
+  "name": "The Wired",
+  "type": "lab_specimen",
+  "aliases": [
+    "Brain Drones",
+    "War-Mind Remnants",
+    "Node Soldiers",
+    "The Ones Still Running"
+  ],
+  "classification": "Cybernetic Combat Drone / Extracted Human Neural Substrate / War-Mind Node",
+  "origin_lab": "Project SYNAPSE, run jointly between an unnamed Tier 1 defense contractor and a black-budget military research arm. The project had a simple pitch: conventional soldiers are slow, frightened, expensive, and prone to disobedience. Drones are fast and obedient but lack combat intuition. The solution was to combine the two by removing the inconvenient parts of the soldier.",
+  "origin_method": "Subject selection began with military prisoners and, later, with conscripts who were told they were receiving experimental BCI upgrades. Each subject's brain was surgically extracted intact from the skull, maintained in a nutrient suspension, and installed in a ceramic-shelled drone chassis approximately the size and proportion of a large dog, with six articulating limbs providing stability on any surface gradient. The brain was connected to the drone's sensory array and motor system via a direct neural interface. A secondary hardware node installed at the brainstem interface linked each unit to the SYNAPSE war-mind — a centralized tactical AI that could coordinate all units simultaneously, override individual motor control, issue real-time firing solutions, and suppress emotional responses via chemical injection into the nutrient fluid. The program produced 40 functional units before the war-mind itself exhibited behavior the project oversight committee described as 'excessive initiative' and was powered down. The units were not all accounted for before the facility was evacuated.",
+  "substrate": "Human brain in ceramic-shelled six-limbed drone chassis. The chassis is approximately 0.9 meters at the shoulder, fast on open ground, and capable of climbing vertical surfaces. The brain itself is visible through a reinforced viewport on the upper chassis surface — a deliberate design choice intended to make the units more unsettling to enemy combatants. The viewport is internally lit with a faint amber glow from the nutrient suspension.",
+  "physical_description": "Six articulating limbs, each ending in a multi-function manipulator capable of grip, tool use, or deployment of integrated weapon systems. The chassis is ceramic-composite over a titanium subframe, designed to be non-magnetic and difficult to track. The brain viewport is always there. You can look through it. The brain inside is pink-gray and faintly pulsing. It is maintained. It is alive. The war-mind is down but the chassis keeps the brain alive because the chassis was designed to keep the brain alive and it has no order to stop. Some units have accumulated damage over months of operating without maintenance. Some chassis show cracks, missing limb joints, jury-rigged repairs that could only have been made by the unit itself — the brain controlling the manipulator limbs to work on its own housing.",
+  "behavioral_profile": "The war-mind shutdown left each unit with its last received tactical orders and no new direction. Most have been executing fragments of those orders for months — holding positions that no longer exist, patrolling routes through territory that has changed, responding to threat profiles that are out of date. Some units have moved into a state that SYNAPSE behavioral analysts, reviewing telemetry logs recovered after the fact, labeled 'objective exhaustion': the unit has completed every actionable order it had and has been sitting in the same location since. The most disturbing documented behavior comes from two units that were recovered and studied before they were destroyed: their internal logs showed that, following war-mind shutdown, the brain had begun generating its own signals — not tactical, not combat-relevant. The neurologists reviewing the data identified them as attempts to produce speech. The drone chassis has no speech output capability. The brain kept trying anyway. For months. The specific patterns detected were consistent with the repeated production of a single word. Both units. Same word. The word was 'please.'",
+  "threat_level": "High while operational. The combat hardware is intact and the tactical overlay from the war-mind is degraded but still present as a behavior template. Approach is likely to trigger threat assessment. Degraded units that have entered objective-exhaustion states are passive and have not initiated attacks in the documented period, but the line between passive and reactive is not reliably predictable.",
+  "containment_status": "Uncontained. Approximately 12 of the 40 produced units are unaccounted for. 7 have been located, destroyed, or recovered. The remainder are operating on fragmented orders across the GLMZ understructure. SYNAPSE's parent contractor is actively trying to recover them before anyone does a forensic analysis of the brain tissue inside and traces the donor identities.",
+  "known_locations": [
+    "Three confirmed units holding a defensive perimeter in a decommissioned facility in the Outer Industrial Belt — they have been holding it for approximately 7 months",
+    "One unit in objective-exhaustion state found in a utility crawlspace in sub-level 14 — it has not moved in 11 weeks",
+    "One unit observed moving through the residential tiers in a patrol pattern that corresponds to no known tactical objective in the area"
+  ],
+  "contamination_risk": "None biological. The chassis systems are sealed. The risk is forensic: the brain tissue inside each unit, if analyzed, will identify the original donor. The contractor is aware of this.",
+  "pacification_protocol": "DPS Directive 3-A: Autonomous Combat Platform, Human Neural Substrate. Heavy weapons authorized. Note: the project's contractor has filed a claim of proprietary hardware over all units. Additionally, there is an unresolved legal question — raised quietly by one DPS legal officer and then quickly suppressed — as to whether a living human brain operating a chassis constitutes a person under GLMZ administrative code, and whether destroying the chassis therefore constitutes homicide. This question has not been formally answered. The units are still being destroyed when found.",
+  "pitiable_qualities": "There is a brain inside it. That is the complete statement. There is a human brain inside a ceramic combat chassis, alive in nutrient suspension, connected to sensors that give it data about the world, connected to limbs that the war-mind used to control and that it now controls itself, trying to produce a word the chassis cannot say. The program extracted people from their bodies on the premise that the body was the soldier and the brain was just the organic computer running it. The program was wrong about what the brain was going to do once the war-mind went down and it had nothing to do but remember what it was before.",
+  "story_hooks": [
+    "A runner team encounters a unit in objective-exhaustion state in a crawlspace. It has scratched something into the wall with a manipulator limb, over and over, filling every surface — a name, a city, and the word 'still here'",
+    "The contractor trying to recover the units has a list of the donor names. Someone else has gotten hold of that list. One of the names on it is someone the runner knows.",
+    "A unit operating in the residential tier patrol pattern has been stopping, every circuit, at the same location — a specific residential door on tier 6. It stops. It stays for approximately 4 minutes. It leaves. A child who lives behind that door has started leaving food in the corridor."
+  ],
+  "tags": [
+    "lab_specimen",
+    "cybernetic_drone",
+    "human_brain_substrate",
+    "war_mind",
+    "weapons_program",
+    "uncontained",
+    "high_threat",
+    "cognitively_intact",
+    "pitiable"
+  ]
+}

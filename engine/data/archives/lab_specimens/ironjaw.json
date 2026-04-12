@@ -1,0 +1,43 @@
+{
+  "id": "019691b0000022efb14400000000irj1",
+  "name": "Ironjaw",
+  "type": "lab_specimen",
+  "aliases": [
+    "Breach Unit One",
+    "The Siege Thing",
+    "K-9 Actual",
+    "The Door Problem"
+  ],
+  "classification": "Multi-Species Tactical Chimera / Fortification Breach Platform",
+  "origin_lab": "Redline Bioweapons, contracted by an unnamed Tier 1 mercenary operation. The project was designated BREACH and was specifically tasked with producing a biological siege unit capable of penetrating hardened defensive positions that conventional automata were being reliably stopped at. No synthetic could replicate the problem-solving needed for improvised breach work. The answer, the project determined, was to build something that was very difficult to stop and very motivated to move forward.",
+  "origin_method": "Quadruple gene-splice: saltwater crocodile jaw force and ambush patience, silverback gorilla upper-body strength and grip architecture, mantis shrimp strike mechanics and exoskeletal reinforcement principles, and Nile monitor lizard environmental tolerance and wound-closure biology. The human cognitive contribution was deliberately excluded — previous projects had found that human cognition in breach platforms created compliance issues. What was included, via selective cortical excerpts, was spatial reasoning and door-recognition. It needed to know what a door was in order to remove it.",
+  "substrate": "Engineered chimera. 3.1 meters standing, 2.4 at combat crouch. Approximately 680 kilograms. Externally covered in a layered chitin-analogue grown from the mantis shrimp substrate that has a ballistic resistance comparable to light body armor and self-repairs over 72 hours from minor penetrations. The jaw structure can generate approximately 5,000 kg/cm² of bite force. The forearms are disproportionately developed — each is as large as a human torso — and the grip architecture allows it to insert fingertips into structural gaps and peel.",
+  "physical_description": "Something that was assembled to do a specific thing and looks exactly like it. The body plan is roughly crocodilian in the rear, roughly primate from the waist up, with the overlapping chitin plates giving it a segmented appearance along the back and shoulders. The coloring is a deep greenish-gray that reads as shadow in low light. The head is wide and low, disproportionate to the neck, with a jaw that hinges further back than any primate structure should allow. It moves in a wide-legged combat crouch that keeps its center of mass low and its head close to obstacles. When it stands fully upright — which it does rarely and only when clearing a space — it fills a standard doorframe side to side. The smell of it precedes it by approximately 40 seconds: a smell like raw iron and standing water and something metabolic that primate brains identify immediately as danger.",
+  "behavioral_profile": "Not aggressive in an undirected way — it does not attack everything it encounters. It attacks fortified positions. Locked doors, reinforced barriers, anything presented as an obstacle between it and the space beyond register as objectives. An open door does not interest it. A locked door draws it like a magnet. It will work at a breach point for hours with single-minded patience — testing, probing, applying force incrementally until it finds the failure point. Witnesses have described watching it test door hinges with the delicacy of a locksmith before applying catastrophic force to the weakest point it identified. It does not retreat from damage. It has been shot over 40 times in documented incidents and continued working. It has established a territory in the Outer Industrial Belt centered on a cluster of heavily reinforced decommissioned storage facilities, which it has been systematically breaching for approximately 8 months. Nobody knows what it is looking for inside.",
+  "threat_level": "Extreme. It will not attack unprovoked humans in open space — this is consistently documented. It will kill anything that attempts to physically block access to a point it has decided to breach, and it makes this decision quickly and finally. A DPS squad that blocked a corridor it was moving through lost four personnel before the others cleared the way and it continued past them without further engagement.",
+  "containment_status": "Uncontained. Escaped during road transport — the containment vehicle was a reinforced cargo hauler and it exited through the floor. The breach took approximately 11 minutes. It has been in the Outer Industrial Belt since. Redline Bioweapons has not publicly acknowledged its existence.",
+  "known_locations": [
+    "Outer Industrial Belt, Decommissioned Storage Cluster 7 through 14",
+    "Has twice been observed on access roads between storage clusters — appears to be ranging between breach sites",
+    "One sighting near the wall of the GLMZ infrastructure core — it spent 6 hours at the access gate before departing"
+  ],
+  "contamination_risk": "None biological. Wound contamination from bite injuries is severe and includes exotic bacterial flora from the crocodilian substrate. The greater concern is structural: every location it has breached is now an unsealed access point into previously secure areas.",
+  "pacification_protocol": "DPS Directive 1-B: Heavy Biological Combat Platform. Full squad, heavy weapons authorized. Anti-armor rounds required to defeat chitin plating. Engage from maximum range — close-quarters survival rate is approximately 20%. Do not block its path. Do not be between it and a door. Note: Redline Bioweapons has a recovery order claiming it is proprietary military hardware and demanding it be returned rather than destroyed. This order has been filed and not acted upon. It has also not been rejected. Current operational status: avoid and monitor.",
+  "pitiable_qualities": "It was built to breach. That is the complete description of its interior life. It has been breaching empty buildings in the Outer Industrial Belt for eight months, moving systematically from facility to facility, opening every locked space it can find, and there is nothing inside any of them worth the effort it has put in. Something in its behavioral architecture is generating objectives it can never satisfy because the things it was built to breach for no longer exist — the combat it was designed for never happened, the deployment orders were never issued, the program was terminated before it saw action. It is a key looking for a lock that matters.",
+  "story_hooks": [
+    "The decommissioned storage facility that Ironjaw has been trying to access for three weeks contains, according to extremely old records, something that Redline Bioweapons was storing there before the project was shut down. Redline wants whatever it is back before Ironjaw gets to it.",
+    "A runner team needs to access a heavily fortified location they have no tools to breach. Someone has noticed that Ironjaw's territory is adjacent.",
+    "The infrastructure core access gate it spent six hours at last month — a technician who monitors that gate says it came back. It has been back four times. It has never tried to force the gate. It just stands at it."
+  ],
+  "tags": [
+    "lab_specimen",
+    "chimera",
+    "multi_splice",
+    "weapons_program",
+    "extreme_threat",
+    "uncontained",
+    "siege_platform",
+    "non_sentient",
+    "breach"
+  ]
+}

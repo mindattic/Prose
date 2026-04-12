@@ -122,5 +122,25 @@
     "Lazarus LX-2 'Lab Rat'",
     "Cargo Tacos",
     "GLMZ"
+  ],
+  "known_members": [
+    {
+      "name": "The Pilot",
+      "role": "Covenant Master",
+      "status": "active",
+      "notes": "The Bilge Covenant's leadership structure is nautical by tradition and the highest rank is Pilot. Current Pilot's legal name is not publicly known. Known in the harbor network by voice, by a specific coded authentication pattern, and by the precise way in which payment is delivered and instructions are conveyed. Has commanded the Covenant's harbor operations for at least twelve years. Is believed to operate from a vessel that has no fixed berth and has not been positively identified in three years of surveillance attempts by three different parties."
+    },
+    {
+      "name": "Grit Okafor-Tanaka",
+      "role": "Harbor Master / Dockside Operations",
+      "status": "active",
+      "notes": "Manages the physical infrastructure of the Covenant's harbor operations — the berths, the loading schedules, the maintenance of the vessels and the routes. 51. Has worked the harbor since 17 in a succession of roles that moved gradually from labor to coordination. Knows every harbor worker, every DPS patrol pattern, and every inspector who can be avoided and which ones require a different approach. Is the person you talk to when you need something moved and you need it done correctly."
+    },
+    {
+      "name": "Sable Mirande",
+      "role": "Weapons Procurement",
+      "status": "active",
+      "notes": "The Covenant's primary weapons acquisition operative. Sources from three continents and maintains relationships with six different independent arms brokers. Has never been arrested. Has been detained four times and released each time because the evidence that existed when she was detained did not exist when the detention ended. This is a skill. Is the reason the Covenant has access to hardware that should not, by any rational supply chain analysis, be available in GLMZ's harbor district."
+    }
   ]
 }

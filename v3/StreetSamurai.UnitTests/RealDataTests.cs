@@ -531,4 +531,6 @@ internal class RealDataPathProvider : IPathProvider
     public string LogDir => Path.Combine(root, "engine", "logs");
     public string ExportDir => Path.Combine(root, "engine", "exports");
     public string ArchiveDir => Path.Combine(root, "engine", "archives");
+    public string MediaDir => Path.Combine(root, "engine", "data", "media");
+    public string MediaArchiveDir => Path.Combine(root, "engine", "archives", "media");
 }

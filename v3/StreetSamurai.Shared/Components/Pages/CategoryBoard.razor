@@ -2,6 +2,7 @@
 @inject CharacterRepository CharRepo
 @inject SyntheticLifeRepository SynthRepo
 @inject ArchetypeRepository ArchetypeRepo
+@inject CeramicManRepository CeramicManRepo
 @inject CorponationRepository CorpRepo
 @inject SubsidiaryRepository SubsidiaryRepo
 @inject FactionRepository FactionRepo
@@ -25,6 +26,8 @@
 @inject ConsumerGoodRepository GoodsRepo
 
 
+<div class="console-bg-host" aria-hidden="true"></div>
+
 @if (tiles.Count == 0)
 {
     <div class="text-muted">Unknown category.</div>
@@ -32,7 +35,7 @@
 else
 {
     <div class="board-grid">
-        @foreach (var tile in tiles)
+        @foreach (var tile in tiles.Where(t => t.AlwaysShow || t.Count > 0))
         {
             <a href="@tile.Href" class="board-tile">
                 <i class="bi @tile.Icon board-tile-icon"></i>
@@ -49,7 +52,7 @@ else
 @code {
     [Parameter] public string? Slug { get; set; }
 
-    record BoardTile(string Icon, string Href, string Name, int Count);
+    record BoardTile(string Icon, string Href, string Name, int Count, bool AlwaysShow = false);
 
     string title = "";
     List<BoardTile> tiles = [];
@@ -74,6 +77,7 @@ else
                 new("bi-people",              "characters",      "People",          CharRepo.GetAll().Count),
                 new("bi-cpu-fill",            "synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count),
                 new("bi-person-bounding-box", "archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count),
+                new("bi-emoji-neutral",       "ceramic-men",     "Ceramic Men",     CeramicManRepo.GetAll().Count),
             ],
             "Organizations" =>
             [
@@ -111,11 +115,11 @@ else
             ],
             "Tools" =>
             [
-                new("bi-speedometer2",        "dashboard",       "Dashboard",       0),
-                new("bi-diagram-3",           "graph",           "World Graph",     0),
-                new("bi-map",                 "map",             "Map",             0),
-                new("bi-check2-circle",       "facts",           "Fact Discovery",  0),
-                new("bi-globe-americas",      "heritage",        "Heritage",        0),
+                new("bi-speedometer2",        "dashboard",       "Dashboard",       0, true),
+                new("bi-diagram-3",           "graph",           "World Graph",     0, true),
+                new("bi-map",                 "map",             "Map",             0, true),
+                new("bi-check2-circle",       "facts",           "Fact Discovery",  0, true),
+                new("bi-globe-americas",      "heritage",        "Heritage",        0, true),
             ],
             _ => []
         };
