@@ -45,7 +45,7 @@ html, body {
 .btn-sm { height: 32px; }
 .input-group .btn { height: auto; }
 .form-control { height: 32px; }
-.form-select { height: 32px; }
+.form-select { height: 32px; padding: 0.1rem 2.25rem 0.375rem 0.4rem; }
 .btn-group .btn { height: 32px; }
 .dropdown-toggle { height: 32px; }
 .btn-sq, .tb { width: 32px; height: 32px; padding: 0; }
@@ -198,41 +198,31 @@ html, body {
 .topnav-crumb-icon { font-size: 0.88rem; color: #8b949e; }
 .topnav-crumb-icon-cur { color: #e6edf3; }
 
-/* Mobile nav — single slim row, search/controls in bottom FAB drawer */
+/* Mobile nav — single slim row, controls in bottom tab drawer */
 @media (max-width: 767.98px) {
     .topnav { padding: 0 10px; height: var(--topnav-height) !important; }
     .topnav .navbar-collapse { display: none !important; }
     .topnav-left { padding: 0; white-space: nowrap; overflow: visible; }
-    /* Mobile nav drawer (search + controls) */
+    /* Mobile nav drawer — shows 28px tab handle when closed */
     .topnav-mobile-drawer {
         position: fixed; bottom: 0; left: 0; right: 0;
         background: #0d1117; border-top: 1px solid #30363d;
         border-radius: 14px 14px 0 0; z-index: 1045;
-        transform: translateY(100%);
+        transform: translateY(calc(100% - 28px));
         transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
-        padding: 14px 16px 20px;
+        padding: 0 16px 20px; cursor: pointer;
     }
-    body.nav-mobile-open .topnav-mobile-drawer { transform: translateY(0); }
+    .topnav-mobile-drawer::before {
+        content: ''; display: block; width: 40px; height: 4px;
+        background: #484f58; border-radius: 2px; margin: 10px auto 10px;
+        flex-shrink: 0; transition: background 0.15s; cursor: pointer;
+    }
+    .topnav-mobile-drawer:hover::before { background: #8b949e; }
+    body.nav-mobile-open .topnav-mobile-drawer { transform: translateY(0); cursor: default; }
     .topnav-mobile-inner { display: flex; flex-direction: column; gap: 10px; }
-    /* Nav FAB — hamburger that opens the drawer */
-    .nav-mobile-fab {
-        position: fixed; bottom: 16px; right: 16px;
-        width: 44px; height: 44px; border-radius: 50%;
-        background: #21262d; border: 1px solid #30363d;
-        color: #c9d1d9; font-size: 1.1rem; cursor: pointer;
-        z-index: 1060; display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.5); transition: background 0.15s, color 0.15s;
-    }
-    body.nav-mobile-open .nav-mobile-fab { background: #dc3545; color: #fff; border-color: #dc3545; }
-    /* Backdrop */
-    .nav-mobile-backdrop {
-        display: none; position: fixed; inset: 0;
-        background: rgba(0,0,0,0.45); z-index: 1044;
-    }
-    body.nav-mobile-open .nav-mobile-backdrop { display: block; }
 }
 @media (min-width: 768px) {
-    .nav-mobile-fab, .nav-mobile-backdrop, .topnav-mobile-drawer { display: none !important; }
+    .topnav-mobile-drawer { display: none !important; }
     .topnav-username { font-size: 0.78rem; }
 }
 
@@ -687,7 +677,7 @@ textarea.auto-grow {
     .dict-list::before {
         content: ''; display: block; width: 40px; height: 4px;
         background: #484f58; border-radius: 2px; margin: 10px auto 6px;
-        flex-shrink: 0; transition: background 0.15s;
+        flex-shrink: 0; transition: background 0.15s; cursor: pointer;
     }
     .dict-list:hover::before { background: #8b949e; }
     .dict-list.dict-list-open { transform: translateY(0); cursor: default; }
@@ -697,8 +687,19 @@ textarea.auto-grow {
 }
 @media (min-width: 768px) { .dict-drawer-fab { display: none !important; } }
 
+/* ── Dict page slider ──────────────────────────────────── */
+.dict-pager { display: flex; align-items: center; gap: 8px; padding: 4px 6px; }
+.dict-pager-track { flex: 1; accent-color: #dc3545; cursor: pointer; height: 4px; }
+.dict-pager-label { font-size: 0.7rem; color: #8b949e; white-space: nowrap; min-width: 3.5em; text-align: right; }
+
 /* ReadOnly mode: hide New buttons and export buttons across all dictionary pages */
 .readonly-mode .dict-list .btn-outline-danger { display: none !important; }
+/* ── List-on-right layout toggle ────────────────────── */
+@media (min-width: 768px) {
+    .list-right .dict-list { order: 1; }
+    .list-right .dict-list .list-item { border-left-width: 0; border-right: 3px solid transparent; }
+    .list-right .dict-list .list-item.active { border-left-color: transparent; border-right-color: #dc3545; }
+}
 /* ── GeoMap entity detail map ─────────────────────────────────────────── */
 .geo-map-container {
     width: 100%;

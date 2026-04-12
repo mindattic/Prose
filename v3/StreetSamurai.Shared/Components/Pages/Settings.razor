@@ -1,6 +1,6 @@
 @page "/settings"
-@attribute [Authorize(Roles = "Administrator")]
 @inject SettingsService SettingsSvc
+@inject IWriteAccessProvider Access
 @inject LlmRouter LlmRouter
 @inject ElevenLabsTtsService TtsSvc
 @inject WorldGraphService Graph
@@ -15,6 +15,8 @@
 @inject AuthenticationStateProvider AuthStateProvider
 @using Microsoft.AspNetCore.Components.Authorization
 
+@if (Access.CanAdminister)
+{
 <div class="d-flex justify-content-between align-items-center mb-1">
     <h4 class="text-danger mb-0">Settings</h4>
     <div class="d-flex gap-2">
@@ -38,6 +40,44 @@
     </div>
 </div>
 <p class="text-muted mb-3">Configure API keys, LLM providers, TTS narration, and canon paths.</p>
+
+@* ── Display ──────────────────────────────────────────── *@
+<div class="row g-3 mb-3">
+    <div class="col-12">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted">Display</div>
+            <div class="card-body">
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">UI Font</label>
+                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FontFamily">
+                            <option value="Outfit">Outfit</option>
+                            <option value="Inter">Inter</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Source Sans 3">Source Sans 3</option>
+                            <option value="Nunito">Nunito</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Helvetica Neue">Helvetica Neue (System)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-muted">Editor Font Size</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary"
+                               @bind="SettingsSvc.EditorFontSize" @bind:event="onchange" />
+                    </div>
+                    <div class="col-md-auto pb-1">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="repoListOnRight"
+                                   checked="@SettingsSvc.RepoListOnRight"
+                                   @onchange="e => { SettingsSvc.RepoListOnRight = (bool)(e.Value ?? false); }" />
+                            <label class="form-check-label text-muted small" for="repoListOnRight">Repo list on right</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @* ── Active Provider + Canon ───────────────────────────── *@
 <div class="row g-3 mb-3">
@@ -64,11 +104,6 @@
                         <input type="number" class="form-control bg-dark text-light border-secondary"
                                @bind="SettingsSvc.MaxTokens" @bind:event="onchange" />
                     </div>
-                    <div class="col-md-2">
-                        <label class="form-label text-muted">Editor Font Size</label>
-                        <input type="number" class="form-control bg-dark text-light border-secondary"
-                               @bind="SettingsSvc.EditorFontSize" @bind:event="onchange" />
-                    </div>
                 </div>
                 <div class="row g-3 mt-1">
                     <div class="col-md-3">
@@ -87,18 +122,6 @@
                             {
                                 <option value="@tz.Id">@tz.DisplayName</option>
                             }
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label text-muted">UI Font</label>
-                        <select class="form-select bg-dark text-light border-secondary" @bind="SettingsSvc.FontFamily">
-                            <option value="Outfit">Outfit</option>
-                            <option value="Inter">Inter</option>
-                            <option value="Roboto">Roboto</option>
-                            <option value="Source Sans 3">Source Sans 3</option>
-                            <option value="Nunito">Nunito</option>
-                            <option value="Poppins">Poppins</option>
-                            <option value="Helvetica Neue">Helvetica Neue (System)</option>
                         </select>
                     </div>
                 </div>
@@ -141,34 +164,6 @@
                         </div>
                     </div>
                     @* Publish button removed — deploying via Azure CI/CD *@
-                    <div class="col-md-3">
-                        <label class="form-label text-muted">Run ML pipeline to find and fix inconsistencies.</label>
-                        <div class="input-group">
-                            <button class="btn btn-sm btn-outline-info" @onclick="LaunchFactDiscovery" disabled="@factRunning">
-                                @if (factRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                else { <i class="bi bi-check2-circle me-1"></i> }
-                                <div class="btn-lbl">Run Fact Discovery</div>
-                            </button>
-                        </div>
-                        @if (factStatus != null)
-                        {
-                            <small class="mt-1 d-block @(factSuccess ? "text-success" : "text-muted")">@factStatus</small>
-                        }
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label text-muted">Generate physical descriptions and image prompts for characters.</label>
-                        <div class="input-group">
-                            <button class="btn btn-sm btn-outline-info" @onclick="LaunchDescribe" disabled="@describeRunning">
-                                @if (describeRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
-                                else { <i class="bi bi-person-bounding-box me-1"></i> }
-                                <div class="btn-lbl">Describe Characters</div>
-                            </button>
-                        </div>
-                        @if (describeStatus != null)
-                        {
-                            <small class="mt-1 d-block @(describeSuccess ? "text-success" : "text-muted")">@describeStatus</small>
-                        }
-                    </div>
                 </div>
                 @if (brokenFiles.Count > 0)
                 {
@@ -670,6 +665,7 @@
         </div>
     </div>
 </div>
+}
 
 @code {
     private List<LlmProviderStatus> providerStatus = [];
@@ -815,6 +811,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+        if (!Access.CanAdminister) return;
         providerStatus = await LlmRouter.GetProvidersAsync();
         activeProvider = providerStatus.FirstOrDefault(p => p.IsActive);
         ttsConfigured = await TtsSvc.IsConfiguredAsync();

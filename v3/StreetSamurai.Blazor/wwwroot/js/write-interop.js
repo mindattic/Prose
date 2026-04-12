@@ -531,112 +531,109 @@ window.profileInterop = {
     }
 };
 
-// ── Mobile dict drawer: tap tab or swipe to open/close ──────────────────────
+// ── Mobile dict drawer: swipe up/down or hold-drag to resize ────────────────
 (function () {
-    var touchStartY = 0, touchStartTime = 0;
+    var drag = null;
+    var suppressNextClick = false;
 
     function getList() { return document.querySelector('.dict-list'); }
+    function fabPos() { if (window._updateNavFabPos) window._updateNavFabPos(); }
 
-    function openList()  { var l = getList(); if (l) l.classList.add('dict-list-open'); }
-    function closeList() { var l = getList(); if (l) l.classList.remove('dict-list-open'); updateNavFabPos(); }
-
+    function openList() {
+        var l = getList(); if (!l) return;
+        l.style.transition = ''; l.style.transform = '';
+        l.classList.add('dict-list-open');
+        fabPos();
+    }
+    function closeList() {
+        var l = getList(); if (!l) return;
+        l.style.transition = ''; l.style.transform = '';
+        l.classList.remove('dict-list-open');
+        fabPos();
+    }
     function isOpen() { var l = getList(); return l && l.classList.contains('dict-list-open'); }
 
-    // Tap the collapsed tab area to open
+    // Tap: open tab or close by clicking outside
     document.addEventListener('click', function (e) {
-        var list = getList();
-        if (!list) return;
-        if (isOpen()) {
-            // Click outside → close
-            if (!list.contains(e.target)) closeList();
-        } else {
-            // Click on the visible tab portion → open
-            if (list.contains(e.target)) openList();
-        }
+        if (suppressNextClick) { suppressNextClick = false; return; }
+        var list = getList(); if (!list) return;
+        if (isOpen()) { if (!list.contains(e.target)) closeList(); }
+        else           { if (list.contains(e.target))  openList(); }
     });
 
-    // Touch: swipe up to open, swipe down to close
+    // Touch start — only track if touch is on the list
     document.addEventListener('touchstart', function (e) {
-        if (!getList()) return;
-        touchStartY = e.touches[0].clientY;
-        touchStartTime = Date.now();
+        var list = getList(); if (!list || !list.contains(e.target)) return;
+        var t = e.touches[0];
+        var maxY = list.getBoundingClientRect().height - 40;
+        var startY = isOpen() ? 0 : maxY;
+        var m = list.style.transform && list.style.transform.match(/translateY\(([^p]+)px\)/);
+        if (m) startY = parseFloat(m[1]);
+        drag = { clientY: t.clientY, startY: startY, curY: startY, maxY: maxY, moved: false, time: Date.now() };
     }, { passive: true });
 
+    // Touch move — follow finger, suppress CSS transition during drag
+    document.addEventListener('touchmove', function (e) {
+        if (!drag) return;
+        var list = getList(); if (!list) return;
+        var delta = e.touches[0].clientY - drag.clientY;
+        var newY = Math.max(0, Math.min(drag.maxY, drag.startY + delta));
+        drag.curY = newY;
+        if (!drag.moved && Math.abs(delta) > 8) drag.moved = true;
+        if (!drag.moved) return;
+        list.style.transition = 'none';
+        list.style.transform = 'translateY(' + newY + 'px)';
+    }, { passive: true });
+
+    // Touch end — quick flick → open/close; slow drag → snap by position
     document.addEventListener('touchend', function (e) {
-        var list = getList();
-        if (!list) return;
-        var dy = touchStartY - e.changedTouches[0].clientY;
-        var dt = Date.now() - touchStartTime;
-        var speed = Math.abs(dy) / dt; // px/ms
-        if (!isOpen() && dy > 40 && list.contains(e.target)) {
-            // Swiped up on the tab → open
-            openList();
-        } else if (isOpen() && dy < -40 && (list.contains(e.target) || speed > 0.5)) {
-            // Swiped down → close
-            closeList();
+        if (!drag) return;
+        var state = drag; drag = null;
+        var list = getList(); if (!list) return;
+        if (!state.moved) return; // tap handled by click
+        suppressNextClick = true;
+        var totalDy = e.changedTouches[0].clientY - state.clientY; // positive = downward
+        var elapsed = Date.now() - state.time;
+        var velocity = Math.abs(totalDy) / elapsed; // px/ms
+        // Fast flick: direction wins
+        if (velocity > 0.4 && elapsed < 350) {
+            if (totalDy < 0) openList(); else closeList();
+            return;
         }
+        // Slow drag: snap closed if more than 45% toward bottom, else open
+        if (state.curY > state.maxY * 0.45) closeList(); else openList();
     }, { passive: true });
 
-    // Reset on navigation
     function setup() {
         var list = getList();
-        if (list) list.classList.remove('dict-list-open');
-        updateNavFabPos();
+        if (list) { list.classList.remove('dict-list-open'); list.style.transform = ''; list.style.transition = ''; }
+        fabPos();
     }
-
     document.addEventListener('DOMContentLoaded', setup);
     document.addEventListener('enhancedload', setup);
 })();
 
-// ── Mobile nav FAB: hamburger → search + controls drawer ────────────────────
+// ── Mobile nav drawer: click tab to open, click handle/outside to close ─────
 (function () {
-    var fab = null, backdrop = null;
+    function getDrawer() { return document.querySelector('.topnav-mobile-drawer'); }
+    function isOpen() { return document.body.classList.contains('nav-mobile-open'); }
+    function open()  { document.body.classList.add('nav-mobile-open'); }
+    function close() { document.body.classList.remove('nav-mobile-open'); }
 
-    function updateNavFabPos() {
-        if (!fab) return;
-        var hasDictTab = !!document.querySelector('.dict-list');
-        fab.style.bottom = hasDictTab ? '56px' : '16px';
-    }
-    // Make available to dict drawer code above
-    window._updateNavFabPos = updateNavFabPos;
-
-    function close() {
-        document.body.classList.remove('nav-mobile-open');
-        if (fab) fab.innerHTML = '<i class="bi bi-list"></i>';
-    }
-
-    function setup() {
-        if (!fab) {
-            // FAB button
-            fab = document.createElement('button');
-            fab.id = 'nav-mobile-fab';
-            fab.className = 'nav-mobile-fab';
-            fab.type = 'button';
-            fab.setAttribute('aria-label', 'Open search');
-            fab.innerHTML = '<i class="bi bi-list"></i>';
-            fab.addEventListener('click', function () {
-                var open = document.body.classList.toggle('nav-mobile-open');
-                fab.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
-                if (open) {
-                    // Focus search input in drawer
-                    var inp = document.querySelector('#topnav-mobile-drawer .topnav-search');
-                    if (inp) setTimeout(function () { inp.focus(); }, 200);
-                }
-            });
-            document.body.appendChild(fab);
-
-            // Backdrop div
-            backdrop = document.createElement('div');
-            backdrop.className = 'nav-mobile-backdrop';
-            backdrop.addEventListener('click', close);
-            document.body.appendChild(backdrop);
+    document.addEventListener('click', function (e) {
+        var drawer = getDrawer(); if (!drawer) return;
+        if (isOpen()) {
+            // Click outside → close
+            if (!drawer.contains(e.target)) { close(); return; }
+            // Click in top handle area (::before zone) → close
+            var rect = drawer.getBoundingClientRect();
+            if (e.clientY < rect.top + 30) close();
+        } else {
+            if (drawer.contains(e.target)) open();
         }
+    });
 
-        // Close drawer on navigation
-        close();
-        updateNavFabPos();
-    }
-
+    function setup() { close(); }
     document.addEventListener('DOMContentLoaded', setup);
     document.addEventListener('enhancedload', setup);
 })();

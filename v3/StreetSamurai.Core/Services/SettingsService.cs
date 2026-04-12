@@ -128,6 +128,7 @@ public class SettingsService : IDisposable
     public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
+    public bool RepoListOnRight { get => data.RepoListOnRight; set { data.RepoListOnRight = value; ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -270,6 +271,7 @@ public class SettingsService : IDisposable
         public string TimestampFormat { get; set; } = "yyyy-MM-dd hh:mm:sstt";
         public string TimezoneId { get; set; } = "Central Standard Time";
         public string FontFamily { get; set; } = "Outfit";
+        public bool RepoListOnRight { get; set; } = true;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";
