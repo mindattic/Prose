@@ -1,0 +1,39 @@
+{
+  "id": "a2af25b4999ea5e76d91d7bbb64067b0",
+  "name": "Nest Builders",
+  "type": "lab_specimen",
+  "aliases": [
+    "Weavers",
+    "The Colonial Drive Subjects",
+    "Compulsors"
+  ],
+  "classification": "Colonial Drive Implant / Compulsive Structure Construction Derivative",
+  "origin_lab": "Social engineering research program studying colonial behavior reinforcement as a labor management tool.",
+  "origin_method": "Subjects were given a neural implant designed to activate the brain's reward circuitry in response to the construction and accumulation of physical structure. The implant was tested to see if humans could be made to build as compulsively as social insects. It worked. The subjects cannot stop building. They build with whatever is available — found material, organic material, the detritus of the underground. When they run out of material, they experience profound distress. When they are building, they experience profound satisfaction. The implant cannot be removed without destroying the neural structures it has colonized.",
+  "substrate": "Human. Six subjects. They are found in the structures they have built around themselves.",
+  "physical_description": "Normal human form, surrounded by increasingly elaborate accumulations of material. The nests they construct are structurally sound — they have an intuitive grasp of load distribution and material strength that they did not have before the implant. The nests also incorporate biological material: hair, shed skin, discarded organic refuse. The smell is challenging.",
+  "behavioral_profile": "Industrious, focused, not aggressive unless their structure is threatened. Destruction of a nest produces a trauma response that takes days to resolve. They will defend a nest with significant violence.",
+  "threat_level": "Low unless the nest is threatened.",
+  "containment_status": "Fixed — they do not leave their nests. The nests grow larger over time and are beginning to block infrastructure access in several locations.",
+  "known_locations": [
+    "Sub-level 18 junction corridor — nest now blocks 40% of corridor width",
+    "Old transit tunnel, sealed section"
+  ],
+  "contamination_risk": "Biological material accumulation in nest sites creates pathogen risk over time.",
+  "pacification_protocol": "DPS Directive 13-B: Compulsive Structure Organism. Do not destroy the nest during engagement. Nest destruction triggers acute violent response. Approach when subject is in low-drive state.",
+  "pitiable_qualities": "They cannot stop. When they have built everything they can build and there is no more material, they sit in the middle of what they've made and they rock and they wait for more material and nothing about this is what they chose.",
+  "story_hooks": [
+    "A Nest Builder has been incorporating electronic components from damaged infrastructure. The latest nest addition has, apparently accidentally, created a functional relay for a signal that has been missing for three months.",
+    "A city engineer realizes the Nest Builder blocking a critical junction has actually reinforced the junction structurally beyond spec."
+  ],
+  "tags": [
+    "lab_specimen",
+    "colonial_drive",
+    "compulsive_construction",
+    "human_substrate",
+    "low_threat",
+    "implant",
+    "tragic",
+    "fixed_location"
+  ]
+}

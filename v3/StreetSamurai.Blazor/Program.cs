@@ -208,6 +208,10 @@ app.MapPost("/api/auth/login", async (HttpContext ctx, AuthService auth, IAntifo
 
     await ctx.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
+    // Clear the dev-logout cookie so DevAutoLoginMiddleware works again if needed
+    if (app.Environment.IsDevelopment())
+        ctx.Response.Cookies.Delete("ss-dev-logout");
+
     // Force password change on first login (seeded admin, or admin-flagged accounts)
     if (user.MustChangePassword)
         ctx.Response.Redirect("/change-password");
@@ -226,7 +230,19 @@ app.MapPost("/api/auth/logout", async (HttpContext ctx, IAntiforgery antiforgery
     }
 
     await ctx.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+    // In dev mode, set a cookie so DevAutoLoginMiddleware doesn't immediately re-login
+    if (app.Environment.IsDevelopment())
+        ctx.Response.Cookies.Append("ss-dev-logout", "1", new CookieOptions { Path = "/" });
     ctx.Response.Redirect("/");
+});
+
+// Media file endpoint — serves {entityId}.{index}.{ext} files from engine/data/media/
+app.MapGet("/api/media/{filename}", (string filename, MediaService media) =>
+{
+    var path = media.GetPath(filename);
+    if (path == null) return Results.NotFound();
+    var mime = MediaService.GetMimeType(filename);
+    return Results.File(path, mime, enableRangeProcessing: true);
 });
 
 // Open redirect protection is now in AuthService.IsLocalUrl() — single source of truth, unit-testable.

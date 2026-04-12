@@ -1,0 +1,40 @@
+{
+  "id": "019695b0000022efb24400000000ps05",
+  "name": "Threat Bleed",
+  "type": "psionic",
+  "aliases": [
+    "Broadcast Fear",
+    "the Dread",
+    "Aura Projection",
+    "the Push"
+  ],
+  "classification": "Cybernetic Psionic Weapon / Emotional State Projection",
+  "enhancement_type": "cybernetic",
+  "mechanism": "Threat Bleed is a weaponized application of the research that produced Cascade Intuition. Where Cascade amplifies inbound pattern-recognition signal, Threat Bleed generates outbound signal — the implant produces a tightly tuned electromagnetic output in the frequency range associated with threat-detection response in the human limbic system, combined with a specific pheromone diffuser array implanted in the upper thorax that releases synthetic stress-hormone analogs. The combined effect is that the subject's presence in a space triggers the prey-response architecture in nearby human nervous systems at a level that is below conscious processing — below the threshold at which the brain generates a specific threat and above the threshold at which the body begins responding to one. Nearby individuals feel afraid. They do not know why. They do not know they are afraid. They know they want to leave.",
+  "abilities": "In operational terms: a Threat Bleed active operative can clear a room, hold an interrogation, or maintain a position without drawing attention, because the natural human response to the ambient signal is to vacate the area or to become hypercooperative. The effect is not hypnosis and it is not mind control — it is the activation of an existing neurological response in observers that overrides their higher-level assessment. A trained security professional who knows about Threat Bleed can identify and compensate for the effect. An untrained civilian cannot. The effective range is approximately six meters for the electromagnetic component and up to twelve meters for the pheromone diffuser in a confined space.",
+  "side_effects": "The implant requires active management to prevent continuous low-level emission. Subjects who do not maintain their suppression protocols — either through negligence, stress, or implant malfunction — become persistently aversive to everyone around them. Long-term relationships are the first casualty: the people closest to a Threat Bleed subject with inadequate suppression begin to experience the continuous low-level dread response that produces, over time, an inexplicable desire to create distance from the subject. This effect is often misattributed. Subjects with malfunctioning suppressors frequently report that their personal and professional relationships deteriorate without any identifiable cause. The identifiable cause is the implant. The deeper side effect is cognitive: subjects who have used Threat Bleed extensively begin to have difficulty relating to human proximity in non-operational terms. Everyone near them has, at some point, responded to the dread signal. The subject has watched people reflexively retreat from them for years. This does not produce good outcomes for the subject's model of human relationship.",
+  "acquisition_method": "Military and security contractor market, not commercially available. The original development program was Dreadnaught Incorporated's suppression-technology division, which developed Threat Bleed as a non-lethal crowd management tool. Field testing transitioned it to individual operative implantation when the crowd management application proved difficult to direct. Current availability is through black market sourcing from former Dreadnaught contractors. Price: Φ 120,000–250,000 for installation and initial calibration. The suppressor maintenance is quarterly and costs approximately Φ 8,000 per service.",
+  "detection_risk": "High for intelligence analysts who know the symptom profile. The behavioral effect on nearby individuals is documentable — exit-rate anomalies in security footage, interviews with people who were present, physiological monitoring in controlled environments. The implant hardware is detectable by specialized EM scanning. Standard security screening will not flag the EM signature as a threat-relevant implant, but the pheromone diffuser produces a trace compound signature that specialized chemical detection will identify. Dreadnaught security in particular maintains Threat Bleed detection protocols in their own facilities, specifically because they know what the implant does and do not want it used against them.",
+  "corporate_interest": "Dreadnaught Incorporated maintains the core research program and has the most advanced version of the implant. Axiom Meridian's security division has been attempting to reverse-engineer the technology for years with partial success. Several smaller security contractors offer competing products that approximate the electromagnetic component without the pheromone integration, with reduced but nonzero effect. The research frontier is range extension and directional control — current Threat Bleed is omnidirectional, which creates friendly-fire problems in team operations.",
+  "known_practitioners": [
+    "Multiple DPS senior officers are believed to have Threat Bleed installations — field reports of anomalous crowd behavior during DPS enforcement operations are consistent with the effect",
+    "At least two known fixers in the GLMZ runner community are confirmed Threat Bleed subjects, which explains their negotiating reputation"
+  ],
+  "story_hooks": [
+    "A runner keeps running jobs that go wrong at the same phase — the point at which they're in close proximity to the target. People keep getting spooked and pulling back. There is no identifiable tactical explanation. Someone is running Threat Bleed in the same operational space and the runner is inside the effect radius without knowing it.",
+    "A Threat Bleed subject with a malfunctioning suppressor has been living alone for three years because no one can spend extended time with them. They need the suppressor serviced, which requires a Dreadnaught-affiliated technician, which requires making contact with Dreadnaught, which is a specific problem given that they formerly worked for Dreadnaught and left on terms that were not mutually agreed upon.",
+    "A negotiation is occurring in a space that is EM-shielded for the purpose — both parties brought detection equipment. Midway through the negotiation, one side's representatives begin showing signs of Threat Bleed response despite the shielding. The EM component is being blocked. The pheromone component is not. Someone at the table has the implant and the suppressor is either off or the signal is intentional."
+  ],
+  "tags": [
+    "psionic",
+    "cybernetic",
+    "offensive",
+    "emotional_projection",
+    "limbic_manipulation",
+    "crowd_control",
+    "dreadnaught",
+    "suppressor_required",
+    "relationship_damage",
+    "non_lethal_weapon"
+  ]
+}

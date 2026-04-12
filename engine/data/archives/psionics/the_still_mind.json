@@ -1,0 +1,40 @@
+{
+  "id": "019695b0000022efb24400000000ps04",
+  "name": "The Still Mind",
+  "type": "psionic",
+  "aliases": [
+    "Null State",
+    "the Blank",
+    "Full Stop",
+    "Cognitive Suppression"
+  ],
+  "classification": "Emergent Psionic Phenomenon / Defensive Nullification",
+  "enhancement_type": "emergent",
+  "mechanism": "The Still Mind is not an enhancement — it is an emergence. In approximately one in eight hundred thousand individuals, the combination of prolonged stress, specific neurochemical environments, and a structural variant in the default mode network produces a spontaneous state of near-total cognitive suppression that the subject can learn to induce voluntarily. The state produces a condition in which the subject's neural baseline output drops below the detection threshold of all known psionic sensing technologies and the majority of behavioral profiling systems. They are not thinking less — they are generating less detectable signal, through a mechanism that neurologists have not fully characterized, because the subjects who have the capability are not volunteering for neurological studies. The Still Mind is the psionic capability that makes you invisible to everything that looks for people.",
+  "abilities": "A subject in full Still Mind state becomes functionally invisible to all known psionic detection technologies, electromagnetic surveillance that reads neural output signatures, biometric systems that use stress response as an identifier, and the predictive intuition of other psionic-enhanced operatives. Cascade Intuition subjects attempting to read a Still Mind practitioner describe the experience as trying to predict empty space — the input is there (the person is physically present) but the predictive system finds nothing to work with. Behavioral profiling that relies on micro-expression and stress-response analysis similarly fails — the subject is not suppressing micro-expressions, they are simply not generating the stress architecture that the analysis system is trained to read. The state is not detectable as suppression; it reads as absence.",
+  "side_effects": "The primary risk of the Still Mind is what happens when it becomes the default state rather than the induced state. Subjects who use the capability frequently, or who first emerged into it under crisis conditions, sometimes find that the baseline state — without the suppression active — becomes intolerable. The full cognitive presence, the normal level of interior processing, becomes overwhelming after extended periods of stillness. Clinical literature documents this as 'return dysphoria': the difficulty of coming back to a normal mental state from the Still Mind is not just discomfort but active distress. Advanced cases prefer the Still Mind state to normal consciousness, which produces a specific social and operational impairment: they are exceptionally effective when fully suppressed but unable to maintain normal human relationships, because full human relationship requires the cognitive presence they have trained themselves to evacuate.",
+  "acquisition_method": "Cannot be installed or purchased. Emergence occurs spontaneously in rare individuals and is typically triggered by a specific stress event. The capability can be trained and refined once it has emerged — several practitioners have sought coaching from others who have the capability, and there is an extremely small and private network of Still Mind practitioners who share techniques. No known chemical or surgical intervention produces the capability in a subject who has not naturally emerged. Pharmaceutical compounds that approximate some features of the state exist (cognitive suppressants, dissociatives) but do not produce the specific undetectability — they produce cognitive impairment, which is visible, rather than cognitive stillness, which is not.",
+  "detection_risk": "Paradoxical. The Still Mind is undetectable when active. The existence of the capability in a subject is extremely difficult to confirm through observation. However: a subject who uses the Still Mind frequently enough for it to become identifiable through its absence — through the pattern of surveillance gaps, the predictive dead zones in Cascade Intuition records, the systematic holes in biometric logs — can become more suspicious than a subject with ordinary psionic enhancement. The absence of signal, when it correlates perfectly with specific operational windows, is its own signal. Intelligence analysts who work in psionic detection are trained to look for this pattern.",
+  "corporate_interest": "Significant and frustrated. Every major corponation intelligence division wants the capability and none of them can produce it on demand. The research priority is identifying the neurological variant that enables emergence before it spontaneously occurs, allowing candidates to be positioned in the stress environments that trigger it. This research is ongoing and has produced results primarily in the form of stress-exposure research programs that are not described to their subjects in those terms. The secondary priority is finding existing practitioners and recruiting or acquiring them. This is complicated by the fact that Still Mind practitioners are, by definition, exceptionally good at not being found.",
+  "known_practitioners": [
+    "Existence strongly suspected in the GLMZ runner community based on systematic surveillance anomalies — at least three individuals believed to have the capability, none confirmed",
+    "One confirmed practitioner was identified and recruited by a corponation intelligence division; current status unknown"
+  ],
+  "story_hooks": [
+    "A runner has been approached by someone claiming to teach the Still Mind technique — they say the runner has the emergent capability and just needs to learn to access it. The offer is real. The price is a period of cooperation that the teacher has not fully specified. Whether the teacher is a practitioner themselves or a front for a corponation that wants to observe the emergence process is a live question.",
+    "An intelligence analyst has identified a Still Mind practitioner operating in GLMZ through the absence pattern — surveillance gaps that fit the capability's signature. The analyst is contracted to find the individual. The problem is that finding someone who is using the Still Mind requires interacting with them directly, and a person who can suppress their cognitive signature can walk out of a meeting without the analyst being certain they were ever there.",
+    "A job requires getting past a Cascade Intuition-equipped security operative. Standard approaches fail because the operative reads the approach before it completes. The only counter is a Still Mind practitioner. Finding one willing to take the job is the first problem. The second is that they will want something in return that is not money."
+  ],
+  "tags": [
+    "psionic",
+    "emergent",
+    "defensive",
+    "undetectable",
+    "cognitive_suppression",
+    "surveillance_counter",
+    "rare",
+    "untransferable",
+    "return_dysphoria",
+    "intelligence_interest"
+  ]
+}

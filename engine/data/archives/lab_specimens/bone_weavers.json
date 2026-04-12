@@ -1,0 +1,40 @@
+{
+  "id": "8daf6c3319222f226635d7ae75fcb45a",
+  "name": "Bone Weavers",
+  "type": "lab_specimen",
+  "aliases": [
+    "Antler Ones",
+    "Spike Walkers",
+    "Crowns"
+  ],
+  "classification": "Skeletal Overgrowth Subject / Calcium Proliferation Derivative",
+  "origin_lab": "Helix Biosystems, orthopedic enhancement program — same division as Cascade, different trial.",
+  "origin_method": "Subjects received a gene therapy intended to accelerate bone density and growth for military skeletal reinforcement. The growth suppressor failed to activate. Unlike Cascade's soft tissue cascade, bone growth is slow and permanent. Over months, external bone structures emerged through the skin — spurs, ridges, then true external formations: ribs outside the body, spine extensions, orbital ridges that extend into horn-like projections. The process is painful at growth edges but the grown bone is dead tissue — no nerves. They feel nothing where the bone is. They feel everything where it is still growing.",
+  "substrate": "Human. Male-presenting subjects were disproportionately enrolled. Approximately 22 known survivors of the program.",
+  "physical_description": "Recognizably human in the core. Unrecognizably human in the silhouette. Bone protrudes from the back, shoulders, skull, and forearms in formations that have their own logic — the body's calcium is following paths that look almost architectural. Some subjects have developed what appear to be functional weapon-structures, not through design but through the physics of where the bone grew and how it hardened. One subject photographed in the Shelf area appeared to have three forward-projecting spurs from the left forearm, each approximately 40 centimeters and load-bearing.",
+  "behavioral_profile": "Varied — some are aggressive, some are not. The common factor is that all of them are in ongoing pain at the growth edges, and pain makes behavior unpredictable. They are physically formidable. The bone structures are not decorative.",
+  "threat_level": "High. The bone formations cause severe injury in close contact even without intent. With intent, lethal.",
+  "containment_status": "Scattered. Some are living in the margins of society, hiding the growths under heavy clothing. Some have given up hiding.",
+  "known_locations": [
+    "Deep Shelf residential margins",
+    "Outer Industrial Belt squatter zones",
+    "Two individuals known to operate as paid protection, bone structures visible as status displays"
+  ],
+  "contamination_risk": "None. The growth process is not transmissible.",
+  "pacification_protocol": "DPS Directive 11-C: Skeletal Modification, Threat Class. Standard rounds are complicated by the bone structures interfering with shot placement. Aim for the unarmored core.",
+  "pitiable_qualities": "The growth never stops. Every month more bone. Every month a new edge. Every month new pain and a slightly more alien silhouette. They remember being soft.",
+  "story_hooks": [
+    "A Bone Weaver has been in the same Shelf building for two years, living in the utility shaft. The residents leave food. The Bone Weaver has never threatened anyone. Now someone wants the building demolished.",
+    "Two Bone Weavers found each other and have been traveling together. Observers describe their interaction as tender."
+  ],
+  "tags": [
+    "lab_specimen",
+    "skeletal_growth",
+    "helix_biosystems",
+    "human_substrate",
+    "high_threat",
+    "uncontained",
+    "painful_existence",
+    "weapons_adjacent"
+  ]
+}

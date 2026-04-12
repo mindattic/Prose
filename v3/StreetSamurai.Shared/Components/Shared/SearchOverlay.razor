@@ -11,20 +11,18 @@
 
 @if (open)
 {
-    <div class="search-overlay-backdrop" @onclick="Close"></div>
-    <div class="search-overlay-panel" @onkeydown="OnKeyDown">
+    <div class="search-overlay-backdrop"></div>
+    <div class="search-overlay-panel" @onkeydown="OnKeyDown" @onclick:stopPropagation="true">
         <div class="search-overlay-input-row">
             <i class="bi bi-search search-overlay-icon"></i>
             <input @ref="inputRef" type="text" class="search-overlay-input"
                    placeholder="Search entities…"
-                   value="@query"
-                   @oninput="OnInput" />
-            @if (!string.IsNullOrWhiteSpace(query))
-            {
-                <button class="search-overlay-clear" @onclick="Clear">
-                    <i class="bi bi-x"></i>
-                </button>
-            }
+                   @bind="query"
+                   @bind:event="oninput" />
+            <button type="button" class="search-overlay-close" @onclick="Close" title="Close">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <button type="button" class="search-overlay-search-btn" @onclick="Search">Search</button>
         </div>
 
         @if (results.Count > 0)
@@ -56,12 +54,7 @@
         {
             <div class="search-overlay-empty text-muted">No results for "<strong>@query</strong>"</div>
         }
-        else
-        {
-            <div class="search-overlay-hint text-muted">
-                Type to search characters, places, factions, corps, tech, and more
-            </div>
-        }
+        else { }
     </div>
 }
 
@@ -71,7 +64,16 @@
     private List<SearchItem> results = [];
     private int selectedIndex = 0;
     private ElementReference inputRef;
-    private CancellationTokenSource? debounce;
+    private DotNetObjectReference<SearchOverlay>? selfRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            selfRef = DotNetObjectReference.Create(this);
+            try { await JS.InvokeVoidAsync("setupSearchSync", selfRef); } catch { }
+        }
+    }
 
     public async Task OpenAsync()
     {
@@ -82,6 +84,23 @@
         StateHasChanged();
         await Task.Delay(50);
         try { await JS.InvokeVoidAsync("focusElement", inputRef); } catch { }
+    }
+
+    [Microsoft.JSInterop.JSInvokable]
+    public void ForceClose()
+    {
+        open = false;
+        query = "";
+        results = [];
+        InvokeAsync(StateHasChanged);
+    }
+
+    [Microsoft.JSInterop.JSInvokable]
+    public async Task OpenWithQuery(string q)
+    {
+        await OpenAsync();
+        query = q;
+        await InvokeAsync(StateHasChanged);
     }
 
     private void Close()
@@ -98,16 +117,9 @@
         selectedIndex = 0;
     }
 
-    private async void OnInput(ChangeEventArgs e)
+    private void Search()
     {
-        query = e.Value?.ToString() ?? "";
-        debounce?.Cancel();
-        debounce = new CancellationTokenSource();
-        var token = debounce.Token;
-        await Task.Delay(150, token).ContinueWith(_ =>
-        {
-            if (!token.IsCancellationRequested) InvokeAsync(() => { RunSearch(); StateHasChanged(); });
-        }, TaskContinuationOptions.OnlyOnRanToCompletion);
+        RunSearch();
     }
 
     private void RunSearch()
@@ -148,6 +160,7 @@
                 break;
             case "Enter":
                 if (results.Count > 0) Navigate(results[selectedIndex]);
+                else Search();
                 break;
             case "Escape":
                 Close();
@@ -177,5 +190,6 @@
     public void Dispose()
     {
         SearchTrigger.OnOpenRequested -= HandleOpenRequest;
+        selfRef?.Dispose();
     }
 }

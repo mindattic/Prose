@@ -34,6 +34,10 @@ public class GlobalSearchService
     private readonly NewsRepository news;
     private readonly ContractRepository contracts;
     private readonly WorldbuildingDocRepository documents;
+    private readonly LabSpecimenRepository labSpecimens;
+    private readonly CeramicManRepository ceramicMen;
+    private readonly WastelandEntityRepository wastelandEntities;
+    private readonly PsionicRepository psionics;
 
     private List<SearchIndexEntry> index = [];
     private readonly object syncLock = new();
@@ -51,7 +55,9 @@ public class GlobalSearchService
         EntertainmentRepository entertainment, ConsumerGoodRepository consumerGoods,
         VocabularyRepository vocabulary, QuoteRepository quotes,
         NewsRepository news, ContractRepository contracts,
-        WorldbuildingDocRepository documents)
+        WorldbuildingDocRepository documents, LabSpecimenRepository labSpecimens,
+        CeramicManRepository ceramicMen, WastelandEntityRepository wastelandEntities,
+        PsionicRepository psionics)
     {
         this.characters = characters; this.synthetics = synthetics;
         this.corponations = corponations; this.districts = districts;
@@ -65,7 +71,9 @@ public class GlobalSearchService
         this.entertainment = entertainment; this.consumerGoods = consumerGoods;
         this.vocabulary = vocabulary; this.quotes = quotes;
         this.news = news; this.contracts = contracts;
-        this.documents = documents;
+        this.documents = documents; this.labSpecimens = labSpecimens;
+        this.ceramicMen = ceramicMen; this.wastelandEntities = wastelandEntities;
+        this.psionics = psionics;
 
         characters.OnItemSaved += _ => Invalidate();
         synthetics.OnItemSaved += _ => Invalidate();
@@ -92,6 +100,10 @@ public class GlobalSearchService
         news.OnItemSaved += _ => Invalidate();
         contracts.OnItemSaved += _ => Invalidate();
         documents.OnItemSaved += _ => Invalidate();
+        labSpecimens.OnItemSaved += _ => Invalidate();
+        ceramicMen.OnItemSaved += _ => Invalidate();
+        wastelandEntities.OnItemSaved += _ => Invalidate();
+        psionics.OnItemSaved += _ => Invalidate();
     }
 
     // ── Public API ────────────────────────────────────────────────────────────
@@ -250,6 +262,14 @@ public class GlobalSearchService
             entries.Add(new(c.Id, "contract", c.Codename, c.Category, $"{c.Description} {c.Objective}", c.Tags, "/contracts"));
         foreach (var d in documents.GetAll())
             entries.Add(new(d.Id, "document", d.Title, d.Category, d.Body, d.Tags, "/documents"));
+        foreach (var s in labSpecimens.GetAll())
+            entries.Add(new(s.Id, "lab-specimen", s.Name, s.Classification, $"{s.PhysicalDescription} {s.BehavioralProfile} {s.PitiableQualities}", s.Tags, "/specimens"));
+        foreach (var c in ceramicMen.GetAll())
+            entries.Add(new(c.Id, "ceramic-man", c.Name, c.CurrentRole, $"{c.OperatingHistory} {c.BehavioralNotes} {c.DiplomaticSpecialty}", c.Tags, "/ceramic-men"));
+        foreach (var w in wastelandEntities.GetAll())
+            entries.Add(new(w.Id, "wasteland-entity", w.Name, w.Classification, $"{w.PhysicalDescription} {w.BehavioralProfile} {w.HumanRemnants}", w.Tags, "/wasteland"));
+        foreach (var p in psionics.GetAll())
+            entries.Add(new(p.Id, "psionic", p.Name, p.Classification, $"{p.Mechanism} {p.Abilities} {p.SideEffects}", p.Tags, "/psionics"));
 
         index = entries;
     }

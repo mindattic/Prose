@@ -2,6 +2,7 @@
 @using StreetSamurai.Core.Models.Canon
 @inject QuoteRepository Repo
 @inject NavigationManager Nav
+@inject IJSRuntime JS
 
 <div class="dict-layout">
     <div class="dict-list">
@@ -96,7 +97,7 @@
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
     private void AddNew() { editing = new QuoteData(); isNew = true; confirmDelete = false; }
-    private void Edit(QuoteData q) { editing = q; originalQuote = q.Quote; isNew = false; confirmDelete = false; }
+    private void Edit(QuoteData q) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_quotes", q.Id); editing = q; originalQuote = q.Quote; isNew = false; confirmDelete = false; }
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Quote)) return;
@@ -109,4 +110,19 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Quote.Length > 40 ? e.Quote[..40] : e.Quote, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("writeInterop.autoResizeAll");
+        if (firstRender && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id=") && items.Count > 0)
+        {
+            var lastId = "";
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_quotes") ?? ""; } catch { }
+            if (!string.IsNullOrEmpty(lastId))
+            {
+                var target = items.FirstOrDefault(x => x.Id == lastId);
+                if (target != null) { Edit(target); StateHasChanged(); }
+            }
+        }
+    }
+
 }

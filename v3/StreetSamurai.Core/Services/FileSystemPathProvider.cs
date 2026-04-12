@@ -38,6 +38,8 @@ public class FileSystemPathProvider : IPathProvider
     public string LogDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Logs));
     public string ExportDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Exports));
     public string ArchiveDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Archives));
+    public string MediaDir => EnsureDir(Path.Combine(EngineDataDir, Constants.Folders.Media));
+    public string MediaArchiveDir => EnsureDir(Path.Combine(ArchiveDir, Constants.Folders.Media));
 
     private static string EnsureDir(string path)
     {

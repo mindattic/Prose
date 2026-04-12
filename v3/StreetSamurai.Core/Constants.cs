@@ -59,6 +59,7 @@ public static class Constants
         public const string Audio = "audio";
         public const string Exports = "exports";
         public const string Logs = "logs";
+        public const string Media = "media";
     }
 
     /// <summary>File suffixes for story-associated files. All share the same GUID.</summary>

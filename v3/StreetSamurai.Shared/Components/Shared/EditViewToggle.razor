@@ -12,10 +12,14 @@
             {
                 @HeaderButtons
             }
-            <button class="btn btn-sq @(editMode ? "btn-danger" : "btn-outline-secondary")"
-                    @onclick="Toggle" title="@(editMode ? "Exit edit mode" : "Edit")">
-                <i class="bi bi-pencil"></i>
-            </button>
+            @if (!HideToggle)
+            {
+                <button class="btn btn-sq @(editMode ? "btn-danger" : "btn-outline-secondary")"
+                        style="@(editMode ? "margin: 0px 5px 0px 0px;" : "")"
+                        @onclick="Toggle" title="@(editMode ? "Exit edit mode" : "Edit")">
+                    <i class="bi bi-pencil"></i>
+                </button>
+            }
         </div>
     }
 </div>
@@ -35,6 +39,7 @@ else
     [Parameter] public string? Json { get; set; }
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public RenderFragment? HeaderButtons { get; set; }
+    [Parameter] public bool HideToggle { get; set; } = false;
     [Inject] private ViewModeService ViewMode { get; set; } = default!;
     [Inject] private IWriteAccessProvider Access { get; set; } = default!;
 

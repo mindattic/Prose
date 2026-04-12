@@ -23,7 +23,16 @@ public class FactionData : ICanonEntity
     [JsonPropertyName("relationships")] public List<FactionRelationship> Relationships { get; set; } = [];
     [JsonPropertyName("narrative_function")] public string NarrativeFunction { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
+    [JsonPropertyName("known_members")] public List<FactionMember> KnownMembers { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+}
+
+public class FactionMember
+{
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("role")] public string Role { get; set; } = "";
+    [JsonPropertyName("status")] public string Status { get; set; } = "active";
+    [JsonPropertyName("notes")] public string Notes { get; set; } = "";
 }
 
 public class FactionRelationship

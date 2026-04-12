@@ -11,6 +11,9 @@
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
+<div class="cbg-sl-fine"   aria-hidden="true"></div>
+<div class="cbg-sl-coarse" aria-hidden="true"></div>
+
 <div class="app-shell @(!Access.CanWrite ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
      @onkeydown="OnGlobalKeyDown" tabindex="-1">
     <NavMenu />
@@ -77,6 +80,10 @@
     private async ValueTask OnLocationChanging(LocationChangingContext ctx)
     {
         navPending = true;
+        if (Random.Shared.NextDouble() < 0.10)
+        {
+            try { await JS.InvokeVoidAsync("__tvStaticShow"); } catch { }
+        }
         try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
     }
 

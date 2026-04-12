@@ -553,12 +553,19 @@ window.profileInterop = {
     }
     function isOpen() { var l = getList(); return l && l.classList.contains('dict-list-open'); }
 
-    // Tap: open tab or close by clicking outside
+    // Tap: open via handle tab, close via handle tab or outside click
     document.addEventListener('click', function (e) {
         if (suppressNextClick) { suppressNextClick = false; return; }
         var list = getList(); if (!list) return;
-        if (isOpen()) { if (!list.contains(e.target)) closeList(); }
-        else           { if (list.contains(e.target))  openList(); }
+        if (isOpen()) {
+            // Click outside the list → close
+            if (!list.contains(e.target)) { closeList(); return; }
+            // Click in top handle zone (::before pill area) → close
+            var rect = list.getBoundingClientRect();
+            if (e.clientY < rect.top + 30) closeList();
+        } else {
+            if (list.contains(e.target)) openList();
+        }
     });
 
     // Touch start — only track if touch is on the list
@@ -613,27 +620,29 @@ window.profileInterop = {
     document.addEventListener('enhancedload', setup);
 })();
 
-// ── Mobile nav drawer: click tab to open, click handle/outside to close ─────
-(function () {
-    function getDrawer() { return document.querySelector('.topnav-mobile-drawer'); }
-    function isOpen() { return document.body.classList.contains('nav-mobile-open'); }
-    function open()  { document.body.classList.add('nav-mobile-open'); }
-    function close() { document.body.classList.remove('nav-mobile-open'); }
-
-    document.addEventListener('click', function (e) {
-        var drawer = getDrawer(); if (!drawer) return;
-        if (isOpen()) {
-            // Click outside → close
-            if (!drawer.contains(e.target)) { close(); return; }
-            // Click in top handle area (::before zone) → close
-            var rect = drawer.getBoundingClientRect();
-            if (e.clientY < rect.top + 30) close();
+// ── Search viewport sync ──────────────────────────────────────────────
+window.setupSearchSync = function (dotNetRef) {
+    var mq = window.matchMedia('(min-width: 768px)');
+    mq.addEventListener('change', function (e) {
+        if (e.matches) {
+            // Went desktop: copy overlay query → desktop search bar, close overlay
+            var overlayInput = document.querySelector('.search-overlay-input');
+            var desktopInput = document.querySelector('.navbar-collapse .topnav-search');
+            if (overlayInput && desktopInput && overlayInput.value) {
+                desktopInput.value = overlayInput.value;
+                desktopInput.dispatchEvent(new Event('input', { bubbles: true }));
+            }
+            dotNetRef.invokeMethodAsync('ForceClose').catch(function () {});
         } else {
-            if (drawer.contains(e.target)) open();
+            // Went mobile: copy desktop search bar → overlay, clear bar
+            var desktopInput = document.querySelector('.navbar-collapse .topnav-search');
+            var q = desktopInput ? desktopInput.value : '';
+            if (desktopInput) {
+                desktopInput.value = '';
+                desktopInput.dispatchEvent(new Event('input', { bubbles: true }));
+            }
+            if (q) dotNetRef.invokeMethodAsync('OpenWithQuery', q).catch(function () {});
         }
     });
+};
 
-    function setup() { close(); }
-    document.addEventListener('DOMContentLoaded', setup);
-    document.addEventListener('enhancedload', setup);
-})();

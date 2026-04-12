@@ -44,6 +44,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SubsidiaryRepository>();
         services.AddSingleton<EntertainmentRepository>();
         services.AddSingleton<MotifRepository>();
+        services.AddSingleton<LabSpecimenRepository>();
+        services.AddSingleton<CeramicManRepository>();
+        services.AddSingleton<WastelandEntityRepository>();
+        services.AddSingleton<PsionicRepository>();
         services.AddSingleton<ToneBibleRepository>();
 
         // Daily trivia — pre-generates 100 facts from canon data, cached to disk
@@ -75,12 +79,19 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<ApparelRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubsidiaryRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EntertainmentRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<LabSpecimenRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CeramicManRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WastelandEntityRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
         services.AddSingleton<ExportDiscoveryService>();
         services.AddSingleton<StoryBibleRepository>();
         services.AddSingleton<LiteraryRulesRepository>();
         services.AddSingleton<CharacterProfileRepository>();
+
+        // Media files — images, video, 3D models named {entityId}.{index:D2}.{ext}
+        services.AddSingleton<MediaService>();
 
         // User accounts and authentication
         services.AddSingleton<UserRepository>();

@@ -1,7 +1,7 @@
 @implements IDisposable
 @inject NavigationManager Nav
 @inject IWriteAccessProvider Access
-@inject ProfileService ProfileSvc
+@inject SearchTriggerService SearchTrigger
 
 <nav class="topnav navbar navbar-expand-md">
 
@@ -45,10 +45,14 @@
         }
     </div>
 
-    @* ── Mobile: search inline in header (upper right) ──────── *@
-    <div class="topnav-search-wrap d-flex d-md-none ms-auto me-1">
-        <input class="topnav-search" type="search" placeholder="Search canon…"
-               value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
+    @* ── Mobile: search icon + controls inline in header (upper right) ──────── *@
+    <div class="d-flex d-md-none ms-auto align-items-center gap-1">
+        <button class="topnav-link" @onclick="OpenSearch" title="Search">
+            <i class="bi bi-search"></i>
+        </button>
+        <div class="topnav-controls d-flex align-items-center gap-1">
+            <UserBoard />
+        </div>
     </div>
 
     @* ── Desktop: search + controls in standard navbar collapse ── *@
@@ -59,16 +63,7 @@
                        value="@searchInput" @oninput="OnSearchInput" @onkeydown="HandleKey" />
             </div>
             <div class="topnav-controls d-flex align-items-center gap-1">
-                @NavControls
-            </div>
-        </div>
-    </div>
-
-    @* ── Mobile: controls in bottom FAB drawer ─── *@
-    <div class="topnav-mobile-drawer d-md-none" id="topnav-mobile-drawer">
-        <div class="topnav-mobile-inner">
-            <div class="topnav-controls d-flex align-items-center gap-1">
-                @NavControls
+                <UserBoard />
             </div>
         </div>
     </div>
@@ -77,23 +72,11 @@
 
 @code {
     private string searchInput = "";
-    private string? avatarUrl;
 
     protected override void OnInitialized()
     {
         Nav.LocationChanged += OnLocationChanged;
-        ProfileSvc.AvatarUpdated += OnAvatarUpdated;
         SyncSearchFromUrl();
-        LoadAvatar();
-    }
-
-    private void LoadAvatar() =>
-        avatarUrl = ProfileSvc.GetAvatar(Access.CurrentUserName ?? "");
-
-    private void OnAvatarUpdated()
-    {
-        LoadAvatar();
-        InvokeAsync(StateHasChanged);
     }
 
     private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
@@ -132,115 +115,7 @@
             Nav.NavigateTo($"/search?q={Uri.EscapeDataString(searchInput.Trim())}");
     }
 
-    // Shared user controls — rendered in both desktop navbar and mobile drawer
-    private RenderFragment NavControls => builder =>
-    {
-        if (!Access.IsReadOnlyMode)
-        {
-            if (Access.CurrentUserRole != "Anonymous")
-            {
-                // User dropdown
-                builder.OpenElement(0, "div");
-                builder.AddAttribute(1, "class", "dropdown");
-
-                builder.OpenElement(2, "button");
-                builder.AddAttribute(3, "class", "topnav-link dropdown-toggle");
-                builder.AddAttribute(4, "data-bs-toggle", "dropdown");
-                builder.AddAttribute(5, "type", "button");
-
-                if (!string.IsNullOrEmpty(avatarUrl))
-                {
-                    builder.OpenElement(6, "img");
-                    builder.AddAttribute(7, "src", avatarUrl);
-                    builder.AddAttribute(8, "class", "topnav-avatar");
-                    builder.AddAttribute(9, "alt", Access.CurrentUserName);
-                    builder.CloseElement();
-                }
-                else
-                {
-                    builder.OpenElement(10, "i");
-                    builder.AddAttribute(11, "class", "bi bi-person-circle");
-                    builder.CloseElement();
-                }
-
-                builder.OpenElement(12, "span");
-                builder.AddAttribute(13, "class", "topnav-username");
-                builder.AddContent(14, Access.CurrentUserName);
-                builder.CloseElement();
-
-                builder.CloseElement(); // button
-
-                builder.OpenElement(15, "ul");
-                builder.AddAttribute(16, "class", "dropdown-menu dropdown-menu-end topnav-drop-menu");
-
-                if (Access.CanAdminister)
-                {
-                    AppendDropItem(builder, 20, "rules",    "bi-book",        "World Rules");
-                    AppendDropItem(builder, 30, "users",    "bi-people-fill", "Users");
-                    AppendDropItem(builder, 40, "settings", "bi-gear",        "Settings");
-                    AppendDropItem(builder, 50, "logging",  "bi-journal-code","Logging");
-                }
-                else
-                {
-                    AppendDropItem(builder, 55, "settings", "bi-sliders", "Display");
-                    AppendDropItem(builder, 60, "profile",  "bi-person",  "Profile");
-                }
-
-                // Divider
-                builder.OpenElement(70, "li");
-                builder.OpenElement(71, "hr");
-                builder.AddAttribute(72, "class", "dropdown-divider border-secondary");
-                builder.CloseElement();
-                builder.CloseElement();
-
-                // Logout
-                builder.OpenElement(80, "li");
-                builder.OpenElement(81, "form");
-                builder.AddAttribute(82, "method", "post");
-                builder.AddAttribute(83, "action", "/api/auth/logout");
-                builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.AntiforgeryToken>(84);
-                builder.CloseComponent();
-                builder.OpenElement(85, "button");
-                builder.AddAttribute(86, "type", "submit");
-                builder.AddAttribute(87, "class", "dropdown-item topnav-drop-item text-danger");
-                builder.OpenElement(88, "i");
-                builder.AddAttribute(89, "class", "bi bi-box-arrow-right topnav-drop-icon");
-                builder.CloseElement();
-                builder.AddContent(90, " Logout");
-                builder.CloseElement();
-                builder.CloseElement();
-                builder.CloseElement(); // li
-
-                builder.CloseElement(); // ul
-                builder.CloseElement(); // div.dropdown
-            }
-            else
-            {
-                builder.OpenComponent<Microsoft.AspNetCore.Components.Routing.NavLink>(100);
-                builder.AddAttribute(101, "class", "topnav-link");
-                builder.AddAttribute(102, "href", "login");
-                builder.OpenElement(103, "i");
-                builder.AddAttribute(104, "class", "bi bi-box-arrow-in-right");
-                builder.CloseElement();
-                builder.AddContent(105, " Login");
-                builder.CloseComponent();
-            }
-        }
-    };
-
-    private static void AppendDropItem(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder b, int seq, string href, string icon, string label)
-    {
-        b.OpenElement(seq, "li");
-        b.OpenElement(seq + 1, "a");
-        b.AddAttribute(seq + 2, "class", "dropdown-item topnav-drop-item");
-        b.AddAttribute(seq + 3, "href", href);
-        b.OpenElement(seq + 4, "i");
-        b.AddAttribute(seq + 5, "class", $"bi {icon} topnav-drop-icon");
-        b.CloseElement();
-        b.AddContent(seq + 6, $" {label}");
-        b.CloseElement();
-        b.CloseElement();
-    }
+    private async Task OpenSearch() => await SearchTrigger.RequestOpenAsync();
 
     // ── Breadcrumb ───────────────────────────────────────────
 
@@ -254,37 +129,50 @@
             "" or "login" => null,
             "search"          => new(null, null, "Search",           null,          "bi-search"),
             "profile"         => new(null, null, "Profile",          null,          "bi-person-circle"),
-            "dashboard"       => new("Tools",         "/board/tools",         "Dashboard",       "bi-wrench-adjustable", "bi-speedometer2"),
-            "graph"           => new("Tools",         "/board/tools",         "World Graph",     "bi-wrench-adjustable", "bi-diagram-3"),
-            "map"             => new("Tools",         "/board/tools",         "Map",             "bi-wrench-adjustable", "bi-map-fill"),
-            "facts"           => new("Tools",         "/board/tools",         "Fact Discovery",  "bi-wrench-adjustable", "bi-lightbulb"),
-            "heritage"        => new("Tools",         "/board/tools",         "Heritage",        "bi-wrench-adjustable", "bi-tree-fill"),
+            "settings"        => new(null, null, "Settings",         null,          "bi-gear"),
+            "users"           => new(null, null, "Users",            null,          "bi-people-fill"),
+            "logging"         => new(null, null, "Logging",          null,          "bi-journal-code"),
+            "dashboard"       => new("Tools",         "/board/tools",         "Dashboard",       "bi-grid-3x3-gap", "bi-speedometer2"),
+            "graph"           => new("Tools",         "/board/tools",         "World Graph",     "bi-grid-3x3-gap", "bi-diagram-3"),
+            "map"             => new("Tools",         "/board/tools",         "Map",             "bi-grid-3x3-gap", "bi-map-fill"),
+            "facts"           => new("Tools",         "/board/tools",         "Fact Discovery",  "bi-grid-3x3-gap", "bi-lightbulb"),
+            "heritage"        => new("Tools",         "/board/tools",         "Heritage",        "bi-grid-3x3-gap", "bi-tree-fill"),
             "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
-            "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people",            "bi-person-fill"),
-            "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people",            "bi-cpu"),
-            "archetypes"      => new("Characters",    "/board/characters",    "Archetypes",      "bi-people",            "bi-diagram-3"),
-            "corps"           => new("Organizations", "/board/organizations", "Corponations",    "bi-building",          "bi-building-fill"),
-            "subsidiaries"    => new("Organizations", "/board/organizations", "Subsidiaries",    "bi-building",          "bi-buildings"),
-            "factions"        => new("Organizations", "/board/organizations", "Factions",        "bi-building",          "bi-shield-fill"),
+            "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),
+            "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people-fill",       "bi-cpu-fill"),
+            "archetypes"      => new("Characters",    "/board/characters",    "Archetypes",      "bi-people-fill",       "bi-person-bounding-box"),
+            "ceramic-men"     => new("Characters",    "/board/characters",    "Ceramic Men",     "bi-people-fill",            "bi-emoji-neutral"),
+            "corps"           => new("Organizations", "/board/organizations", "Corponations",    "bi-buildings",         "bi-building"),
+            "subsidiaries"    => new("Organizations", "/board/organizations", "Subsidiaries",    "bi-buildings",         "bi-diagram-3"),
+            "factions"        => new("Organizations", "/board/organizations", "Factions",        "bi-buildings",         "bi-shield-exclamation"),
             "weaponry"        => new("Gear",          "/board/gear",          "Weaponry",        "bi-tools",             "bi-crosshair"),
-            "ammunition"      => new("Gear",          "/board/gear",          "Ammunition",      "bi-tools",             "bi-circle-fill"),
-            "cyberware"       => new("Gear",          "/board/gear",          "Cyberware",       "bi-tools",             "bi-cpu-fill"),
-            "equipment"       => new("Gear",          "/board/gear",          "Equipment",       "bi-tools",             "bi-wrench"),
-            "apparel"         => new("Gear",          "/board/gear",          "Apparel",         "bi-tools",             "bi-bag"),
-            "genemods"        => new("Gear",          "/board/gear",          "Genemods",        "bi-tools",             "bi-activity"),
+            "ammunition"      => new("Gear",          "/board/gear",          "Ammunition",      "bi-tools",             "bi-bullseye"),
+            "cyberware"       => new("Gear",          "/board/gear",          "Cyberware",       "bi-tools",             "bi-motherboard"),
+            "equipment"       => new("Gear",          "/board/gear",          "Equipment",       "bi-tools",             "bi-shield-shaded"),
+            "apparel"         => new("Gear",          "/board/gear",          "Apparel",         "bi-tools",             "bi-handbag"),
+            "genemods"        => new("Gear",          "/board/gear",          "Genemods",        "bi-tools",             "bi-virus"),
             "pharmaceuticals" => new("Gear",          "/board/gear",          "Pharmaceuticals", "bi-tools",             "bi-capsule"),
-            "places"          => new("World",         "/board/world",         "Places",          "bi-globe2",            "bi-geo-alt-fill"),
-            "transportation"  => new("World",         "/board/world",         "Transportation",  "bi-globe2",            "bi-car-front-fill"),
-            "materials"       => new("World",         "/board/world",         "Materials",       "bi-globe2",            "bi-droplet-fill"),
-            "technology"      => new("World",         "/board/world",         "Technology",      "bi-globe2",            "bi-motherboard"),
+            "places"          => new("World",         "/board/world",         "Places",          "bi-globe2",            "bi-geo-alt"),
+            "transportation"  => new("World",         "/board/world",         "Transportation",  "bi-globe2",            "bi-truck"),
+            "materials"       => new("World",         "/board/world",         "Materials",       "bi-globe2",            "bi-gem"),
+            "technology"      => new("World",         "/board/world",         "Technology",      "bi-globe2",            "bi-cpu"),
             "automata"        => new("World",         "/board/world",         "Automata",        "bi-globe2",            "bi-robot"),
-            "rules"           => new("World",         "/board/world",         "World Rules",     "bi-globe2",            "bi-journal-bookmark"),
-            "documents"       => new("Culture",       "/board/culture",       "Documents",       "bi-book",              "bi-file-text"),
-            "quotes"          => new("Culture",       "/board/culture",       "Quotes",          "bi-book",              "bi-chat-quote"),
-            "vocabulary"      => new("Culture",       "/board/culture",       "Vocabulary",      "bi-book",              "bi-translate"),
-            "news"            => new("Culture",       "/board/culture",       "News",            "bi-book",              "bi-newspaper"),
-            "entertainment"   => new("Culture",       "/board/culture",       "Entertainment",   "bi-book",              "bi-film"),
-            "goods"           => new("Culture",       "/board/culture",       "Consumer Goods",  "bi-book",              "bi-cart"),
+            "specimens"       => new("World",         "/board/world",         "Lab Specimens",   "bi-globe2",            "bi-radioactive"),
+            "wasteland"       => new("World",         "/board/world",         "Wasteland",       "bi-globe2",            "bi-tornado"),
+            "psionics"        => new("World",         "/board/world",         "Psionics",        "bi-globe2",            "bi-eye"),
+            "rules"           => new("World",         "/board/world",         "World Rules",     "bi-globe2",            "bi-book"),
+            "documents"       => new("Culture",       "/board/culture",       "Documents",       "bi-palette2",          "bi-file-earmark-text"),
+            "quotes"          => new("Culture",       "/board/culture",       "Quotes",          "bi-palette2",          "bi-quote"),
+            "vocabulary"      => new("Culture",       "/board/culture",       "Vocabulary",      "bi-palette2",          "bi-chat-quote"),
+            "news"            => new("Culture",       "/board/culture",       "News",            "bi-palette2",          "bi-newspaper"),
+            "entertainment"   => new("Culture",       "/board/culture",       "Entertainment",   "bi-palette2",          "bi-film"),
+            "goods"           => new("Culture",       "/board/culture",       "Consumer Goods",  "bi-palette2",          "bi-basket"),
+            "board/characters"    => new(null, null, "Characters",    null, "bi-people-fill"),
+            "board/organizations" => new(null, null, "Organizations", null, "bi-buildings"),
+            "board/gear"          => new(null, null, "Gear",          null, "bi-tools"),
+            "board/world"         => new(null, null, "World",         null, "bi-globe2"),
+            "board/culture"       => new(null, null, "Culture",       null, "bi-palette2"),
+            "board/tools"         => new(null, null, "Tools",         null, "bi-grid-3x3-gap"),
             _ when seg.StartsWith("board/") => new(null, null, BoardTitle(seg[6..]), null, "bi-grid"),
             _ => null
         };
@@ -301,9 +189,5 @@
         _ => slug.Length == 0 ? "" : char.ToUpper(slug[0]) + slug[1..]
     };
 
-    public void Dispose()
-    {
-        Nav.LocationChanged -= OnLocationChanged;
-        ProfileSvc.AvatarUpdated -= OnAvatarUpdated;
-    }
+    public void Dispose() => Nav.LocationChanged -= OnLocationChanged;
 }

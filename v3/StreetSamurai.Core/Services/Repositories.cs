@@ -210,3 +210,27 @@ public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfi
     public CharacterProfileRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "character_profile.json")) { }
 }
+
+public class LabSpecimenRepository : JsonDirectoryRepository<LabSpecimenData>
+{
+    public LabSpecimenRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "lab_specimens"), s => s.Name) { }
+}
+
+public class CeramicManRepository : JsonDirectoryRepository<CeramicManData>
+{
+    public CeramicManRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "ceramic_men"), c => c.Name) { }
+}
+
+public class WastelandEntityRepository : JsonDirectoryRepository<WastelandEntityData>
+{
+    public WastelandEntityRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "wasteland_entities"), w => w.Name) { }
+}
+
+public class PsionicRepository : JsonDirectoryRepository<PsionicData>
+{
+    public PsionicRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "psionics"), p => p.Name) { }
+}

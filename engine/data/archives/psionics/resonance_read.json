@@ -1,0 +1,40 @@
+{
+  "id": "019695b0000022efb24400000000ps03",
+  "name": "Resonance Read",
+  "type": "psionic",
+  "aliases": [
+    "Space Memory",
+    "Environmental Echo",
+    "the Impression",
+    "Psychometry"
+  ],
+  "classification": "Hybrid Enhancement / Environmental Information Extraction",
+  "enhancement_type": "hybrid",
+  "mechanism": "Resonance Read combines a cybernetic sensory amplification layer — specifically tuned to micro-vibration, trace chemical emission, and sub-threshold electromagnetic variance — with a pharmaceutical priming compound that temporarily lowers the brain's sensory gating threshold for these input types. The sensory layer collects environmental data that is genuinely present in physical spaces: the trace chemical signatures left by biological presences (skin oils, breath composition, stress hormone excretion), the micro-deformation patterns in materials that record physical interaction, the acoustic memory of spaces (reverberant trails of sound energy that decay at different rates in different material compositions), and the electromagnetic residue of electronic devices and biological nervous systems. The pharmaceutical compound causes the brain to process this data as direct sensory experience rather than as abstract signal. The result is that the subject 'reads' a space — they experience, in sensory terms, what happened in it.",
+  "abilities": "A Resonance Read-enhanced subject entering a physical space can extract information about what occurred there within a time window that depends on environmental conditions — material composition, climate control, physical disturbance since the event. In ideal conditions (climate-controlled interior, undisturbed, recent event), the window extends to approximately forty-eight hours. In outdoor or disturbed environments, the window may be as short as two to four hours. What they extract is not perfect forensic reconstruction — it is sensory impression, experienced as a mixture of what the space remembers and what the subject's own cognitive processing fills in. A skilled practitioner can distinguish between extracted impression and cognitive confabulation. An unskilled one cannot. The capability is most reliable for high-intensity events (violence, strong emotional states, sustained presence) and least reliable for routine movement through a space.",
+  "side_effects": "The primary risk is impression accumulation — the subject begins to carry sensory impressions from spaces they have read, which layer over their baseline sensory experience. High-frequency users describe a specific perceptual condition in which every space they enter begins to deliver residual impressions without conscious activation of the capability, because the sensory threshold has been permanently lowered by repeated pharmaceutical priming. This presents as a progressive inability to be alone anywhere: every room contains the echoes of what happened in it, and the subject cannot stop receiving them. Advanced cases involve significant difficulty distinguishing between impression from a current space and impression retained from a previously read space. Terminal cases are non-functional in any densely inhabited environment — a GLMZ apartment block is a continuous layered input of thousands of interactions across years, and the subject cannot process the present through it.",
+  "acquisition_method": "The cybernetic component is a specialized sensory array available from high-end modification clinics that serve intelligence and security contractors — not widely available commercially. The pharmaceutical component is manufactured by two known suppliers in the GLMZ pharmaceutical underground. The combination requires specific tuning: the sensory array must be calibrated to the individual's baseline neurology, and the pharmaceutical dose must be dialed to the array's sensitivity settings. Initial setup cost: Φ 90,000–200,000 for the cybernetic component plus calibration. Ongoing pharmaceutical cost: Φ 2,000–5,000 per dose, with doses lasting three to six hours.",
+  "detection_risk": "Low during planning and transit. Moderate during use — the behavioral signature of active Resonance Read is distinctive (the subject is effectively receiving sensory input from elsewhere, which produces visible attention displacement and non-reactive pausing). The pharmaceutical compound is detectable in specialized screening. The cybernetic component is detectable by RF scanning but the specific configuration is uncommon enough that most security scanning systems will not flag it as a psionic installation.",
+  "corporate_interest": "Extensive. Resonance Read capability is the most operationally useful psionic enhancement for intelligence work — a practitioner with functional capability can do in thirty minutes what forensic investigation takes days to accomplish, without disturbing the scene. Multiple corponation intelligence divisions are known to maintain Resonance Read operatives. The research priority is stabilizing the pharmaceutical component to reduce impression accumulation — the current formulas have a documented accumulation rate that limits operational life to approximately three to five years before the subject is no longer functional in complex environments.",
+  "known_practitioners": [
+    "GLMZ-based forensic consulting firm 'Impression Analytics' employs at least three confirmed practitioners, available for contract work",
+    "One DPS detective unit in the Organized Crime Division is believed to include a Resonance Read operative in active rotation"
+  ],
+  "story_hooks": [
+    "A scene has been deliberately cleaned — physically, chemically, electronically. The job is to find what happened there before the cleaning. Standard forensics cannot get through the cleaning. A Resonance Read practitioner can, if the cleaning happened recently enough and missed the impression layer. The problem is finding a practitioner willing to read a scene that was professionally cleaned, because whoever cleaned it is demonstrably capable and may have anticipated this approach.",
+    "A Resonance Read operative with advanced impression accumulation is no longer functional in populated spaces. They have retired to an isolated location — one of the few places they can experience the present without the layered impressions overwhelming it. A client needs their capability for a single job. The location they've retreated to is not easy to reach, and they have very good reasons for being where they are.",
+    "Someone is selling Resonance Read reads from restricted locations — information that could only have been obtained through direct sensory impression extraction. The locations are corponation facilities with full RF security screening. Either the security is compromised, or the operative has an installation that evades standard detection. Or the reads are being fabricated."
+  ],
+  "tags": [
+    "psionic",
+    "hybrid",
+    "environmental_reading",
+    "sensory_amplification",
+    "pharmaceutical",
+    "cybernetic",
+    "intelligence_application",
+    "forensic",
+    "accumulation_risk",
+    "impression_sensitivity"
+  ]
+}

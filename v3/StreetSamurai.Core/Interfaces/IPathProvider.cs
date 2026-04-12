@@ -29,4 +29,7 @@ public interface IPathProvider
     string LogDir { get; }
     string ExportDir { get; }
     string ArchiveDir { get; }
+    /// <summary>Media files — named {entityId}.{index:D2}.{ext}, e.g. abc123.00.png</summary>
+    string MediaDir { get; }
+    string MediaArchiveDir { get; }
 }

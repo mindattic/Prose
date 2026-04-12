@@ -54,5 +54,31 @@
     "bci",
     "radical",
     "tech"
+  ],
+  "known_members": [
+    {
+      "name": "Root",
+      "role": "Coordinator / Architect",
+      "status": "active",
+      "notes": "Known only by handle. Former corporate BCI architect. All operational directives trace to Root through encrypted relay. Physical description: unknown. The only consistent detail across sightings is that Root never speaks to anyone directly — all contact is through cutouts or automated systems. Root may be multiple people or Root may have been dead for years and the network continues on momentum."
+    },
+    {
+      "name": "Cassidy Osei-Mensah",
+      "role": "Liberation Firmware Developer",
+      "status": "active",
+      "notes": "Wrote the third and fourth generation of NLF liberation firmware from a rented room in the Shelf district. The firmware she wrote is currently installed in an estimated 80,000 BCIs in GLMZ. She does not know this number because she has never counted. She knows people are safer because of it. She does not go outside much and she does not sleep regular hours and she has not spoken to her family in four years because the phone call would be a liability."
+    },
+    {
+      "name": "Ade Kowalczyk-Ndiaye",
+      "role": "Legal Division / Neural Privacy Advocate",
+      "status": "active",
+      "notes": "Filed eleven lawsuits against TESSERA's neural data collection practices. Won two. Lost seven. The remaining two are in appellate process and have been for three years. Has been disbarred twice, reinstated once, and is currently operating under a provisional license that three separate corponation legal teams are actively working to revoke. Keeps a paper journal because he doesn't trust anything digital and he wants to make sure there's a record."
+    },
+    {
+      "name": "The Sutler",
+      "role": "Hardware Procurement",
+      "status": "active",
+      "notes": "Supplies the NLF with modification hardware, tools, and the controlled components the firmware requires. No known legal name. Operates from a permanent booth in the Undermarket and claims to sell only surplus agricultural components. The agricultural components are real. They are also how the controlled BCI parts are disguised in transit."
+    }
   ]
 }

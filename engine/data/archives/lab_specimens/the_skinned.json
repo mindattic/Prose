@@ -1,0 +1,38 @@
+{
+  "id": "7231601623630aec4f12898690f5a7dd",
+  "name": "The Skinned",
+  "type": "lab_specimen",
+  "aliases": [
+    "Inverters",
+    "Pain-Seekers",
+    "The Wrong-Wired"
+  ],
+  "classification": "Nociceptive Inversion Subject / Pleasure-Pain Signal Reversal",
+  "origin_lab": "Helix Biosystems pain research division. Commercial application: a treatment for chronic pain via signal inversion. The trial produced the opposite of the intended effect.",
+  "origin_method": "Pain signal pathways were inverted in the nociceptive neural layer — what should produce pain signal now produces pleasure signal, and vice. The intent was to allow chronic pain sufferers to experience their pain as comfort. What was not modeled was the behavioral consequence of having the pleasure-pain axis inverted in its entirety: everything that the body treats as damage, they pursue. Everything the body treats as reward, they avoid.",
+  "substrate": "Human. Eight subjects. They are covered in self-inflicted damage they experienced as pleasure during infliction: burns, cuts, impacts. They look like people who have been in continuous catastrophic accidents for years, which in a functional sense they have.",
+  "physical_description": "Heavily scarred, misshapen from healed damage, moving in ways that suggest ongoing pain from injuries they sought out. Their faces carry the specific peaceful expression of someone who feels good, which they do, all the time, from the ongoing damage their bodies carry.",
+  "behavioral_profile": "They seek damage. They will walk into obstacles. They will burn themselves. They will damage themselves against any hard surface available. They are not suicidal — the self-harm is pleasurable, not destructive in intent — but the cumulative damage is terminal. None of the known subjects is expected to survive the next twelve months.",
+  "threat_level": "Low for others. Extreme for themselves.",
+  "containment_status": "Uncontained. Their own biology is their primary containment — they are not mobile enough to range widely.",
+  "known_locations": [
+    "Industrial lower zone squatter spaces",
+    "One subject found in a construction area, repeatedly walking into the active demolition equipment"
+  ],
+  "contamination_risk": "None.",
+  "pacification_protocol": "DPS Directive: Not issued. They are their own primary victims. Medical intervention is complicated by the fact that any treatment is experienced as pain.",
+  "pitiable_qualities": "They feel good. They are dying and they feel good and the good feeling is killing them and they cannot be reached because every intervention is anguish.",
+  "story_hooks": [
+    "A Helix researcher has located all eight subjects and is trying to reverse the modification. The reversal procedure will, unavoidably, hurt them a great deal in the new normal — and help them in ways they will experience as agony."
+  ],
+  "tags": [
+    "lab_specimen",
+    "nociceptive_inversion",
+    "self_harm",
+    "helix_biosystems",
+    "low_threat",
+    "tragic",
+    "terminal",
+    "human_substrate"
+  ]
+}
