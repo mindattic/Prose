@@ -28,6 +28,7 @@
 @inject NewsRepository NewsRepo
 @inject ContractRepository ContractRepo
 @inject WorldbuildingDocRepository DocRepo
+@inject MediaService Media
 
 <div class="entity-detail-page">
 
@@ -45,7 +46,17 @@ else if (character != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Description</div>
-                <XrefText Text="@character.Description" Paragraphs="true" />
+                @if (primaryImage != null)
+                {
+                    <div class="entity-desc-with-portrait">
+                        <div><XrefText Text="@character.Description" Paragraphs="true" /></div>
+                        <img src="/api/media/@primaryImage" class="entity-portrait" alt="@character.Name" />
+                    </div>
+                }
+                else
+                {
+                    <XrefText Text="@character.Description" Paragraphs="true" />
+                }
             </div>
         }
         <div class="entity-meta-row">
@@ -1090,6 +1101,7 @@ else if (document != null)
     private NewsData? news;
     private ContractData? contract;
     private WorldbuildingDocument? document;
+    private string? primaryImage;
     private bool notFound;
     private string resolvedName = "";
     private List<CanonSearchResult> referencedBy = [];
@@ -1104,10 +1116,12 @@ else if (document != null)
         entertainment = null; consumerGood = null; quote = null; news = null;
         contract = null; document = null;
         notFound = false; resolvedName = ""; referencedBy = [];
+        primaryImage = null;
 
         if (string.IsNullOrWhiteSpace(EntityId)) { notFound = true; return; }
 
         ResolveEntity();
+        primaryImage = Media.GetPrimaryImage(EntityId);
 
         if (!notFound && resolvedName.Length >= 4)
             referencedBy = GlobalSearch.Search(resolvedName, 1, 15)
