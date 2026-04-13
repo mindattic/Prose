@@ -61,8 +61,8 @@ window.homeBg = (function () {
             // ~20% chance of a severe deep burn (cigar rather than cigarette)
             if (hash(b * 3.3 + SEED, b * 19.7) < 0.20) baseR = 0.06 + hash(b * 5.5 + SEED, b * 8.1) * 0.12;
             list.push({
-                nx: hash(b * 17.3 + SEED, b * 7.1 + 2.3) * 0.62 + 0.26,
-                ny: hash(b *  3.7 + 4.1,  b * 11.9 + SEED) * 0.58 + 0.28,
+                nx: hash(b * 17.3 + SEED, b * 7.1 + 2.3) * 0.50 + 0.42,  // off-centre, right-biased
+                ny: hash(b *  3.7 + 4.1,  b * 11.9 + SEED) * 0.60 + 0.36,  // lower two-thirds
                 r:  baseR
             });
         }
@@ -182,9 +182,44 @@ window.homeBg = (function () {
         } catch (e) {}
     }
 
+    // ── Quake light-style opacity breathing ─────────────────────────────────
+    // Classic Quake engine light sequences: each char is a brightness level,
+    // 'a' = dark (0), 'm' = normal (0.5), 'z' = full bright (1).  Ticks ~10 Hz.
+    // Opacity is mapped to [0.50, 1.00] so the image never fully disappears.
+
+    var LIGHT_STYLES = [
+        'mmnmmommommnonmmonqnmmo',                              // flicker 1
+        'abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba', // slow strong pulse
+        'jklmnopqrstuvwxyzyxwvutsrqponmlkj',                   // gentle pulse
+        'nmonqnmomnmomomno',                                    // flicker 2
+        'mmamammmmammamamaaamammma',                            // candle
+        'abcdefghijklmnopqrrqponmlkjihgfedcba',                 // slow, no black
+    ];
+
+    var lightTimer = null;
+    var lightPos   = 0;
+    var lightSeq   = '';
+
+    function stopLightFlicker() {
+        if (lightTimer) { clearInterval(lightTimer); lightTimer = null; }
+    }
+
+    function startLightFlicker(imgEl) {
+        stopLightFlicker();
+        lightSeq = LIGHT_STYLES[Math.floor(Math.random() * LIGHT_STYLES.length)];
+        lightPos = Math.floor(Math.random() * lightSeq.length);  // random start phase
+
+        lightTimer = setInterval(function () {
+            var ch   = lightSeq.charCodeAt(lightPos % lightSeq.length) - 97;  // 0–25
+            var norm = ch / 25;                              // 0.0–1.0
+            imgEl.style.opacity = (0.50 + norm * 0.50).toFixed(3);  // 0.50–1.00
+            lightPos++;
+        }, 100);  // 10 Hz
+    }
+
     // ── Animated scanline overlay ────────────────────────────────────────────
     // A live canvas sits over the image and runs its own rAF loop.
-    // Fires 10% of the time.  Each line drifts up or down and flickers.
+    // Drifting red scan lines + highlight boxes that hold then fade out.
 
     var scanlinesRaf = null;
     var scanlinesEl  = null;
@@ -218,40 +253,115 @@ window.homeBg = (function () {
         }
         syncRect();
 
-        // Initialise 1–2 lines
-        var lineCount = 1 + Math.floor(Math.random() * 2);
-        var lines = [];
-        for (var i = 0; i < lineCount; i++) {
-            lines.push({
-                y:           Math.random() * ol.height,
-                speed:       (0.3 + Math.random() * 0.8) * (Math.random() < 0.5 ? 1 : -1),
-                h:           1 + Math.floor(Math.random() * 3),
-                baseOpacity: 0.30 + Math.random() * 0.45
-            });
+        // Scan lines — all single-pass (despawn after crossing the image).
+        // A rolling spawner fires every 300–1200 ms and injects 1–5 lines.
+        // Non-overlapping: new lines are rejected if a same-direction line is
+        // already within MIN_GAP px of the entry edge.
+        var MAX_LINES = 16;
+        var MIN_GAP   = 8;   // px minimum between same-direction lines at entry
+
+        function makeLine(goDown, sharedSpeed) {
+            var spd = sharedSpeed !== undefined
+                ? sharedSpeed * (0.88 + Math.random() * 0.24)  // ±12% of shared speed
+                : (2.5 + Math.random() * 5.5);
+            return {
+                y:          goDown ? -2 : ol.height + 2,
+                speed:      spd * (goDown ? 1 : -1),
+                h:          1 + Math.floor(Math.random() * 2),
+                noiseSeed:  Math.random() * 500,
+                noiseFreq:  0.0005 + Math.random() * 0.0015,  // ~0.7–2 s noise period
+                flickerRate: 0.10
+            };
         }
 
-        function frame() {
+        // Returns true if a new line going goDown can spawn without overlapping
+        function canSpawn(goDown) {
+            if (lines.length >= MAX_LINES) return false;
+            var entryY = goDown ? -2 : ol.height + 2;
+            for (var i = 0; i < lines.length; i++) {
+                if ((lines[i].speed > 0) === goDown &&
+                    Math.abs(lines[i].y - entryY) < MIN_GAP) return false;
+            }
+            return true;
+        }
+
+        // Seed lines scattered across the image so it isn't empty on load
+        var lines = [];
+        var seedCount = 5 + Math.floor(Math.random() * 6);  // 5–10
+        for (var i = 0; i < seedCount; i++) {
+            var goDown = Math.random() < 0.5;
+            var ln = makeLine(goDown);
+            ln.y = (ol.height / seedCount) * i + Math.random() * (ol.height / seedCount);
+            lines.push(ln);
+        }
+
+        // Rolling spawner
+        var lastSpawnTime  = 0;
+        var nextSpawnDelay = 300 + Math.random() * 900;
+
+        function trySpawn(now) {
+            // ~1% chance: one oddly slow line
+            if (Math.random() < 0.01) {
+                var dir = Math.random() < 0.5;
+                if (canSpawn(dir)) {
+                    var slow = makeLine(dir, 0.5 + Math.random() * 0.7);
+                    slow.noiseFreq   = 0.0001 + Math.random() * 0.0003;  // very slow undulation
+                    slow.flickerRate = 0.03;  // barely flickers — eerily steady
+                    lines.push(slow);
+                }
+                return;
+            }
+
+            // Occasionally a cluster (same direction, shared base speed)
+            var isCluster   = Math.random() < 0.30;
+            var goDown      = Math.random() < 0.5;
+            var sharedSpeed = isCluster ? (2.5 + Math.random() * 5.5) : undefined;
+            var count       = isCluster ? 2 + Math.floor(Math.random() * 4) : 1;
+            for (var k = 0; k < count; k++) {
+                if (!canSpawn(isCluster ? goDown : Math.random() < 0.5)) continue;
+                var dir = isCluster ? goDown : Math.random() < 0.5;
+                lines.push(makeLine(dir, isCluster ? sharedSpeed : undefined));
+            }
+        }
+
+        function frame(now) {
             syncRect();
             ctx2.clearRect(0, 0, ol.width, ol.height);
 
-            for (var j = 0; j < lines.length; j++) {
+            // Spawn
+            if (now - lastSpawnTime > nextSpawnDelay) {
+                trySpawn(now);
+                lastSpawnTime  = now;
+                nextSpawnDelay = 300 + Math.random() * 900;
+            }
+
+            // Advance + draw + cull
+            for (var j = lines.length - 1; j >= 0; j--) {
                 var ln = lines[j];
                 ln.y += ln.speed;
-                if (ln.y > ol.height) ln.y = 0;
-                if (ln.y < 0)         ln.y = ol.height;
 
-                // Occasional flicker: random opacity drop
-                var flicker = Math.random() < 0.12 ? Math.random() * 0.5 : 0;
-                var op = Math.max(0, ln.baseOpacity - flicker);
+                if (ln.y > ol.height + ln.h || ln.y < -ln.h - 2) {
+                    lines.splice(j, 1);  // one pass — despawn, no replacement
+                    continue;
+                }
 
-                ctx2.fillStyle = 'rgba(255,255,255,' + op + ')';
+                // Noise-driven base opacity: smoothly undulates each line independently
+                var noiseVal = vnoise(now * ln.noiseFreq + ln.noiseSeed, ln.noiseSeed * 2.71828);
+                var noiseOp  = 0.10 + noiseVal * 0.55;  // 0.10–0.65
+
+                // Violent flicker spike on top of noise
+                var flicker = Math.random() < ln.flickerRate
+                    ? (Math.random() < 0.5 ? -noiseOp * 1.8 : noiseOp * 1.2)
+                    : 0;
+                var op = Math.max(0, Math.min(0.95, noiseOp + flicker));
+                ctx2.fillStyle = 'rgba(13,17,23,' + op + ')';
                 ctx2.fillRect(0, Math.round(ln.y), ol.width, ln.h);
             }
 
             scanlinesRaf = requestAnimationFrame(frame);
         }
 
-        frame();
+        requestAnimationFrame(frame);
     }
 
     // ── Public entry point ───────────────────────────────────────────────────
@@ -261,21 +371,19 @@ window.homeBg = (function () {
         if (!imgEl) return;
 
         stopScanlineAnim();
+        stopLightFlicker();
 
         // DEV: nuke any previously stored composites so nothing sneaks through
         evictAll();
-
-        var showScanlines = Math.random() < 0.10;
 
         var src = new Image();
         src.onload = function () {
             var dataUrl = renderTorn(src);
             if (dataUrl) { imgEl.src = dataUrl; }
             imgEl.style.opacity = '1';
-            if (showScanlines) {
-                // Wait one frame so the img has its final layout rect
-                requestAnimationFrame(function () { startScanlineAnim(imgEl); });
-            }
+            startLightFlicker(imgEl);
+            // Wait one frame so the img has its final layout rect
+            requestAnimationFrame(function () { startScanlineAnim(imgEl); });
         };
         src.onerror = function () { imgEl.style.opacity = '1'; };
         src.src = imageUrl;

@@ -1110,6 +1110,57 @@ window.consoleBg = (function () {
         'corp: forensic export ok',
         'corp: chain custody ok',
         'corp: chain custody fail!',
+        // 40 new
+        'dist12: relay → dist7 handoff ok',
+        'bci: ring4 impedance 18kΩ within spec',
+        'rbs: detent-cam 12ms lock ok',
+        'hkb: fluid reservoir 88% full',
+        'sec: vault key 0xBE04 re-sealed ok',
+        'net.rx 10.44.12.3:8181 payload 88B ok',
+        'kern: cpu0 load 4.4 temp 71C ok',
+        'db: vacuum freed 1.2MB in 8s ok',
+        'audit: uid=3301 zone-B entry logged',
+        'jit: evict fn@0x44a2 cold 44 calls',
+        'arc: delta-pack ratio=3.1 ok',
+        'vm: remap 0x7ffe4100 prot=r-- ok',
+        'ipc: proc/3301→proc/8812 msg ok',
+        'lib: dlclose libneural.so.3 ok',
+        'sig: SIGTERM pid:3301 → handled',
+        'tls: session 0x44f2 renegotiated ok',
+        'bci: batt 73% est 4.4h remain',
+        'rbs: port-alpha confirmed 2.4ms',
+        'sec: token 0xBE04 refreshed ok',
+        'kern: softirq NET_RX 12Kpps ok',
+        'dist9: node heartbeat 3.2ms ok',
+        'bci: epoch=9 acc=98.1% commit',
+        'rbs: yellow-led transit active',
+        'hkb: piston rebound 8ms ok',
+        'sec: enclave attest 0x9f3a ok',
+        'net.syn 10.12.0.44:4412 ESTABLISHED',
+        'db: edge-idx rebuild 4192 nodes ok',
+        'glmz: gate-7 transit 0x4492 ok',
+        'corp: incident-4412 closed ok',
+        'bci: grip-cls conf=0.94 ok',
+        'rbs: disc alpha→beta 38ms ok',
+        'hkb: impulse spread 8ms→114ms ok',
+        'kern: ksoftirqd cpu1 SCHED_OTHER',
+        'net.rx 172.16.0.3:9090 HTTP 200',
+        'sec: audit-trail 0x3301 flushed',
+        'bci: calibrate ring3 Δ=+0.011',
+        'ipc.gate: 0x22 [relay fwd enc]',
+        'db: txn 0xDC44 commit 3.1ms ok',
+        'arc: snapshot 0x44a2 verified',
+        'jit: patch fn@0x5582 hot 812 calls',
+        'bci: pair-key 0xA7F2 accepted',
+        'rbs: spring-load 2.1N nominal',
+        'hkb: gas-vent cycle ok 14ms',
+        'net: beacon 0xBE04 heartbeat ok',
+        'dist4: fab node up lat=9ms',
+        'sec: kdf iter=200k derive ok',
+        'bci: sweep-cls confirmed 0xAB ok',
+        'kern: rcu grace period 2.4ms',
+        'db: bloom-filter hit rate 91%',
+        'corp: key-rotation vault ok',
     ];
 
     // ── Exit results ────────────────────────────────────────────────────────
@@ -1747,6 +1798,22 @@ window.consoleBg = (function () {
         'SEC — vm escape detect',
         'SEC — container escape',
         'SEC — kernel exploit',
+        // 40 more
+        'FATAL — neural bridge dropout',   'FATAL — bci handshake refused',   'FATAL — rbs spring shatter',
+        'FATAL — hkb valve blowout',       'FATAL — glmz gate auth fail',     'FATAL — relay blackhole loop',
+        'FATAL — sec key store corrupt',   'FATAL — db redo log corrupt',     'FATAL — vm page table fault',
+        'FATAL — jit segment overflow',    'FATAL — ipc ring overflow',       'FATAL — tls session bomb',
+        'CRITICAL — bci flood attack',     'CRITICAL — rbs cam desync',       'CRITICAL — hkb rack jam',
+        'CRITICAL — glmz perimeter breach','CRITICAL — corp exfil volume',    'CRITICAL — sec replay storm',
+        'CRITICAL — db wal storm',         'CRITICAL — net arp poison',       'CRITICAL — vm oom cascade',
+        'CRITICAL — jit cache corrupt',    'CRITICAL — ipc deadlock global',  'CRITICAL — arc block missing',
+        'ABORT — bci ring6 fault',         'ABORT — rbs torque limit',        'ABORT — hkb actuator stall',
+        'ABORT — glmz feed desync',        'ABORT — corp broker timeout',     'ABORT — sec vault gone',
+        'ERROR — bci epoch mismatch',      'ERROR — rbs position lost',       'ERROR — hkb fluid leak',
+        'ERROR — glmz relay loop',         'ERROR — corp audit missing',      'ERROR — sec cert chain broken',
+        'KERNEL — slab poison detect',     'KERNEL — hpet timer fault',       'KERNEL — cpuid mismatch',
+        'CREST — auth module unresponsive','GLMZ — district feed blackout',   'BCI — classifier poison inject',
+        'SEC — bci exploit detected',      'PANIC — kernel dma storm',        'PANIC — irq flood 64k/s',
     ];
 
     var FATAL_MSGS = [
@@ -2078,6 +2145,37 @@ window.consoleBg = (function () {
         'DB unique violation: bci_event.epoch_id\nEpoch 4412 already inserted\nDuplicate insert rejected — idempotency bug',
         'DB graph path fail: node 0x3301 missing\nNode deleted but edges remain\nReferential integrity broken',
         'DB stats stale: 180s since last update\nQuery planner using 6h old statistics\nForce ANALYZE — plans suboptimal',
+        // 30 more
+        'Neural bridge dropout: ring4 lost contact\nEEG amplitude < noise floor 18ms\nBCI handshake reset — reclassify',
+        'BCI handshake refused: key 0xBE04 revoked\nVault reports key expired 48h ago\nOperator locked out — manual unlock',
+        'RBS spring shatter: resonance sensor 0x3A\nHigh-speed impact fragment at 38ms\nDisc rotation halted — catastrophic fail',
+        'HKB valve blowout: pressure 140 PSI\nSeat gasket failed — rated 110 PSI\nVent to atmosphere — gas leak active',
+        'GLMZ gate 0x22 auth fail uid=0x4492\nCert revoked by enforcement order 9412\nAll routes via gate blocked — reroute',
+        'Relay blackhole: dist7→dist12 loop\nTTL expired 3 hops — routing cycle\nPacket black-holed — trace route',
+        'Key store corrupt: sector 0x44A2\nHMAC mismatch on master record\nKey material unreadable — vault sealed',
+        'DB redo log corrupt: frame 8192\nChecksum 0xDEAD != expected 0x3AF7\nRecovery impossible — restore from backup',
+        'VM page table fault: cr3=0x0044 rip=0x00\nKernel null-pointer deref in vm_alloc\nSystem halted — memory model broken',
+        'JIT segment overflow: code cache full\nCache 4MB — eviction threshold hit 100%\nHot functions deoptimised — degraded',
+        'IPC ring overflow: consumers stalled\nProducer pushed 4096 unread messages\nRing sealed — bci_daemon blocked',
+        'TLS session bomb: 0 bytes handshake\nClient sent RST mid-ClientHello\nMitM or scan probe — block IP',
+        'BCI flood attack: 14kpps to ring buffer\nMalformed ADC frames from addr 0xBE04\nBuffer overflow risk — drop source',
+        'RBS cam desync: encoder mismatch 0x22\nEncoder A and B disagree by 3 ticks\nPosition unknown — emergency stop',
+        'HKB rack jam: gear 3 stall at 4ms\nFeed mechanism seized mid-stroke\nDo not fire — mechanical hazard',
+        'GLMZ perimeter breach: dist4 wall C\nForce sensor 0x3301 tripped, 0xBE04 quiet\nEnforcement notified — 90s response ETA',
+        'Corp exfil volume: 48GB to 203.0.113.9\nDestination corp blacklist match rate 94%\nDLP blocked session — forensic queued',
+        'SEC replay storm: 8800 tokens in 30s\nSame nonce 0x3301 repeated 4400×\nSession revoked — incident #8812',
+        'DB WAL storm: 4GB redo in 22s\nWrite rate 200MB/s — disk saturated\nCheckpoint blocked — db frozen',
+        'ARP poison: gateway 10.44.0.1 spoofed\nMAC 0:0:0:9f:3a:01 claims GW address\nTraffic intercepted — network isolated',
+        'VM OOM cascade: 8 processes SIGKILL\nFree pages: 0 — kernel killing tasks\nSystem degraded — restart required',
+        'JIT cache corrupt: hash mismatch fn=0x44\nExpected bytes [90 90 90] got [cc cc cc]\nExecution halted — possible patch',
+        'IPC deadlock global: all queues stalled\nbci_daemon, rbs_ctrl, hkb_mon all waiting\nSystem heartbeat timeout — restart',
+        'Archive block missing: idx entry 0x3AF7\nBlock referenced by 3 nodes, file deleted\nIntegrity broken — rebuild index',
+        'Slab poison detect: kmem cache bci_buf\nPoison pattern 0x6b overwritten\nuse-after-free confirmed — halt',
+        'HPET timer fault: counter frozen 44ms\nHardware timer register read returns 0\nSystem timekeeping degraded',
+        'CPUID mismatch: hypervisor flag set\nNative boot expected — VM detected\nEnclave attestation invalidated — abort',
+        'Auth module unresponsive: 10s timeout\nCrest auth IPC no reply to 8 queries\nWeapon auth state unknown — safe mode',
+        'District feed blackout: dist4→GLMZ\nNo telemetry for 180s — correlation lost\nBlind spot in enforcement coverage',
+        'BCI classifier poison inject\nAdversarial signal injected via ring2\nClassifier predicting adversary labels',
     ];
 
     // ── Floating code fragments ─────────────────────────────────────────────
@@ -2163,6 +2261,28 @@ window.consoleBg = (function () {
         'foreach (var bucket in histogram\n    .GetBuckets()\n    .OrderBy(b => b.LowerBound)) {\n    float density =\n        bucket.Count / (float)histogram.Total;\n    for (int col = 0;\n         col < (int)(density * MAX_COLS);\n         col++) {\n        row.Append(\'█\');\n    }\n    row.Append(\n        $" [{bucket.LowerBound:F2}–"\n        + $"{bucket.UpperBound:F2}]"\n        + $" n={bucket.Count}");\n    output.WriteLine(row.ToString());\n    row.Clear();\n}',
         'Task.Run(async () => {\n    using var scope = services.CreateScope();\n    var repo = scope.Get<INodeRepository>();\n    while (!cts.IsCancellationRequested) {\n        var stale = await repo.FindStaleAsync(\n            olderThan: DateTime.UtcNow - TTL,\n            limit: PURGE_BATCH);\n        if (stale.Count == 0) {\n            await Task.Delay(IDLE_PERIOD_MS);\n            continue;\n        }\n        foreach (var n in stale) {\n            await repo.ArchiveAsync(n);\n            purged++;\n        }\n        log.Info(\n            $"purged {stale.Count} nodes total={purged}");\n    }\n});',
         'for (int i = 0; i < seq.Count - 1; i++) {\n    int gap = seq[i + 1].Timestamp\n            - seq[i].Timestamp;\n    if (gap < MIN_GAP || gap > MAX_GAP) {\n        anomalies.Add(new Anomaly {\n            Index = i,\n            Expected = NOMINAL_GAP,\n            Actual   = gap,\n            Severity = gap > MAX_GAP\n                ? Severity.High\n                : Severity.Low\n        });\n        if (anomalies.Count > MAX_ANOMALIES) {\n            throw new AnomalyFloodException();\n        }\n    }\n}',
+        // 20 more
+        'for (int i = 0; i < relays.Count; i++) {\n    if (!relays[i].IsReachable) {\n        skipped++; continue;\n    }\n    var rtt = await relays[i].PingAsync(cts.Token);\n    if (rtt > SLA_RTT_MS) {\n        slow.Add(relays[i]);\n        log.Warn(\n            $"relay {relays[i].Id} rtt={rtt}ms > SLA");\n        continue;\n    }\n    if (rtt < bestRtt) {\n        bestRtt   = rtt;\n        preferred = relays[i];\n    }\n}\nif (preferred == null)\n    throw new NoRelayException(skipped);',
+        'while (!bci.IsLocked) {\n    var raw = cortex.Sample(SAMPLE_BURST);\n    bim.Feed(raw);\n    lock_attempts++;\n    if (lock_attempts > MAX_LOCK_ATTEMPTS) {\n        log.Fatal(\n            "bci lock attempts exceeded");\n        throw new BciLockoutException();\n    }\n    if (bim.Confidence < MIN_CONFIDENCE) {\n        await Task.Delay(RETRY_DELAY_MS);\n        continue;\n    }\n    if (!bim.ValidateKey(neuralKey)) {\n        sec.Alert(SecEvent.KeyMismatch);\n        await Task.Delay(KEY_RETRY_MS * lock_attempts);\n        continue;\n    }\n    bci.Lock();\n}',
+        'foreach (var district in world.Districts\n    .Where(d => d.HasActiveRelay)\n    .OrderBy(d => d.Latency)) {\n    try {\n        var route = await router.FindAsync(\n            source, district.GlmzGate,\n            RouteFlags.DarkNodeOk);\n        if (route.HasBlacklist) {\n            log.Warn(\n                $"route via {district.Id} blacklisted");\n            continue;\n        }\n        await route.OpenAsync(cts.Token);\n        connections[district.Id] = route;\n    } catch (EnforcementBlockException ex) {\n        log.Error(\n            $"blocked at {ex.Gate}: {ex.Reason}");\n        blockedDistricts.Add(district.Id);\n    }\n}',
+        'Task.Run(async () => {\n    var window = new SlidingWindow<float>(\n        WINDOW_SIZE);\n    while (!cts.IsCancellationRequested) {\n        var sample = bci.SampleRaw();\n        window.Add(sample);\n        if (window.IsFull) {\n            float mean = window.Mean();\n            float std  = window.StdDev();\n            float z    = Math.Abs(\n                (sample - mean) / std);\n            if (z > ANOMALY_Z) {\n                log.Warn(\n                    $"bci anomaly z={z:F2} at {sample:F4}");\n                anomalies.Record(DateTime.UtcNow, z);\n            }\n        }\n        await Task.Delay(SAMPLE_INTERVAL_MS);\n    }\n});',
+        'for (int slot = 0; slot < rbs.SlotCount; slot++) {\n    var pos = rbs.ReadEncoder(slot);\n    if (!rbs.IsValidPosition(pos)) {\n        faults.Add(new EncoderFault {\n            Slot     = slot,\n            Position = pos,\n            Expected = rbs.NominalPosition(slot)\n        });\n        log.Error(\n            $"rbs encoder fault slot={slot} pos={pos}");\n        if (faults.Count >= RBS_FAULT_LIMIT) {\n            weapon.SafetyEngage();\n            throw new RbsEncoderException(faults);\n        }\n        continue;\n    }\n    rbs.Calibrate(slot, pos);\n}',
+        'while (vault.IsSealed) {\n    var shards = await keyStore.LoadShardsAsync(\n        vault.Id, cts.Token);\n    int valid = 0;\n    for (int i = 0; i < shards.Count; i++) {\n        if (shards[i].VerifyHmac(masterKey)) {\n            valid++;\n            xorBuf.XorWith(shards[i].Material);\n        } else {\n            log.Warn(\n                $"shard {i} hmac invalid — skip");\n        }\n    }\n    if (valid >= vault.Threshold) {\n        var key = kdf.Derive(\n            xorBuf, vault.Salt, KDF_ITERS);\n        vault.Unseal(key);\n        log.Info(\n            $"vault unsealed {valid}/{shards.Count}");\n    } else {\n        throw new VaultSealException(valid);\n    }\n}',
+        'foreach (var op in pendingOps\n    .Where(o => o.IsExpired(DateTime.UtcNow))\n    .ToList()) {\n    log.Warn(\n        $"op {op.Id} expired after {op.Age}ms");\n    switch (op.Type) {\n        case OpType.Write:\n            await journal.AbortAsync(op.TxnId);\n            break;\n        case OpType.Read:\n            op.Fail(new TimeoutException());\n            break;\n        case OpType.Flush:\n            if (!fs.IsFlushing)\n                await fs.FlushAsync();\n            break;\n    }\n    pendingOps.Remove(op);\n    expired++;\n}',
+        'Task.Run(async () => {\n    using var watcher = new MemoryWatcher(\n        WATCH_INTERVAL_MS);\n    await foreach (var snap in watcher\n        .StreamAsync(cts.Token)) {\n        var delta = snap.Rss - prevRss;\n        if (delta > LEAK_THRESHOLD_KB * 1024) {\n            leakSamples++;\n            log.Warn(\n                $"rss growth +{delta / 1024}KB sample={leakSamples}");\n            if (leakSamples >= LEAK_CONFIRM_SAMPLES) {\n                await alerting.FireAsync(\n                    Alert.MemoryLeak, snap.Rss);\n                leakSamples = 0;\n            }\n        } else {\n            leakSamples = 0;\n        }\n        prevRss = snap.Rss;\n    }\n});',
+        'for (int r = startRow; r < endRow; r++) {\n    var page = db.FetchPage(r / PAGE_ROWS);\n    var rec  = page.GetRow(r % PAGE_ROWS);\n    if (rec.IsDeleted) continue;\n    if (!predicate(rec)) continue;\n    if (rec.Version > snapshotLsn) {\n        var old = mvcc.FindVersion(\n            rec.RowId, snapshotLsn);\n        if (old == null) continue;\n        rec = old;\n    }\n    projection.Project(rec, out var row);\n    yield return row;\n    if (++count >= FETCH_LIMIT) {\n        log.Debug(\n            $"scan limit {FETCH_LIMIT} hit at row {r}");\n        yield break;\n    }\n}',
+        'while (tls.HandshakeState != TlsState.Done) {\n    var msg = await net.RecvAsync(cts.Token);\n    switch (tls.HandshakeState) {\n        case TlsState.ClientHello:\n            tls.ProcessClientHello(msg);\n            await net.SendAsync(\n                tls.BuildServerHello());\n            await net.SendAsync(\n                tls.BuildCertificate());\n            break;\n        case TlsState.KeyExchange:\n            tls.ProcessKeyExchange(msg);\n            sessionKey = tls.DeriveKeys();\n            await net.SendAsync(\n                tls.BuildFinished());\n            break;\n        case TlsState.Finished:\n            tls.VerifyFinished(msg);\n            break;\n        default:\n            throw new TlsProtocolException(\n                tls.HandshakeState);\n    }\n}',
+        'for (int epoch = 0; epoch < MAX_EPOCHS; epoch++) {\n    float loss = 0f;\n    for (int b = 0; b < batches.Count; b++) {\n        var (x, y) = batches[b];\n        var pred = model.Forward(x);\n        var l    = loss_fn(pred, y);\n        loss    += l;\n        model.Backward(l);\n        if ((b + 1) % ACCUM_STEPS == 0) {\n            optimizer.Step(lr);\n            optimizer.ZeroGrad();\n        }\n    }\n    loss /= batches.Count;\n    log.Info(\n        $"epoch {epoch}: loss={loss:F4} lr={lr:F6}");\n    if (loss < CONVERGE_THRESHOLD) {\n        log.Info("converged");\n        break;\n    }\n    lr *= LR_DECAY;\n}',
+        'Task.Run(async () => {\n    var conn = await glmz.ConnectAsync(\n        GlmzNode.DarkNode, cts.Token);\n    using var enc = new FrameEncryptor(\n        sessionKey, conn);\n    while (!cts.IsCancellationRequested) {\n        var payload = await queue.DequeueAsync(\n            cts.Token);\n        var frame = new DarkFrame {\n            Nonce   = rng.NextBytes(12),\n            Payload = payload,\n            Stamp   = DateTime.UtcNow\n        };\n        await enc.SendAsync(frame);\n        metrics.DarkSent++;\n        if (metrics.DarkSent % LOG_INTERVAL == 0) {\n            log.Debug(\n                $"dark node: {metrics.DarkSent} frames");\n        }\n    }\n});',
+        'foreach (var node in graph.GetNeighbors(target)\n    .Where(n => n.District == operatorDistrict)\n    .OrderByDescending(n => n.TrustScore)) {\n    if (enforcement.HasWarrant(node.Id)) {\n        log.Warn(\n            $"skip node {node.Id} — warrant active");\n        continue;\n    }\n    var cred = await auth.IssueCredsAsync(\n        node.Id, scope, TTL_HOURS);\n    if (!cred.IsValid) {\n        log.Error(\n            $"cred issue failed: {cred.Reason}");\n        continue;\n    }\n    grants.Add(node.Id, cred);\n    if (grants.Count >= MAX_GRANTS) break;\n}',
+        'while (compaction.HasWork) {\n    var run = compaction.NextRun();\n    using var merger = new SstMerger(\n        run.Inputs, run.Output);\n    int written = 0;\n    while (merger.MoveNext()) {\n        var kv = merger.Current;\n        if (kv.IsTombstone &&\n            kv.Seq < compaction.GcHorizon) {\n            continue;\n        }\n        run.Output.Write(kv);\n        written++;\n        if (written % COMPACT_LOG_INTERVAL == 0) {\n            log.Debug(\n                $"compact: {written} kv written");\n        }\n    }\n    compaction.Complete(run);\n    log.Info(\n        $"compact done: {written} kv in {run.Inputs.Count} files");\n}',
+        'Task.Run(async () => {\n    var dial  = new Dialer(relayPool);\n    var retry = new ExponentialBackoff(\n        BASE_MS, MAX_MS, JITTER_FACTOR);\n    int attempts = 0;\n    while (!cts.IsCancellationRequested) {\n        try {\n            var conn = await dial.DialAsync(\n                dist12.GlmzEndpoint, cts.Token);\n            log.Info(\n                $"connected after {attempts} attempts");\n            await conn.ServeAsync(handler, cts.Token);\n            retry.Reset();\n            attempts = 0;\n        } catch (OperationCanceledException) {\n            break;\n        } catch (Exception ex) {\n            attempts++;\n            var delay = retry.Next();\n            log.Warn(\n                $"dial fail #{attempts}: {ex.Message} — retry in {delay}ms");\n            await Task.Delay(delay, cts.Token);\n        }\n    }\n});',
+        'for (int i = 0; i < ops.Count; i++) {\n    var op = ops[i];\n    if (!authorization.Check(\n            op.Uid, op.Resource, op.Action)) {\n        audit.Record(AuditEvent.Denied,\n            op.Uid, op.Resource, op.Action);\n        denied.Add(i);\n        continue;\n    }\n    try {\n        var result = await executor.RunAsync(\n            op, cts.Token);\n        results[i] = result;\n        audit.Record(AuditEvent.Allowed,\n            op.Uid, op.Resource, op.Action);\n    } catch (PolicyException ex) {\n        audit.Record(AuditEvent.PolicyViolation,\n            op.Uid, ex.Rule);\n        results[i] = Result.Deny(ex.Rule);\n    }\n}',
+        'while (recv.HasData) {\n    var seg = recv.ReadSegment();\n    if (seg.Seq != expected) {\n        outOfOrder.Enqueue(seg);\n        if (outOfOrder.Count > OOO_LIMIT) {\n            log.Error("ooo buffer overflow — reset");\n            recv.SendReset();\n            recv.Clear();\n            outOfOrder.Clear();\n            expected = 0;\n            break;\n        }\n        continue;\n    }\n    reassembly.Write(seg.Data);\n    expected = seg.Seq + seg.Data.Length;\n    while (outOfOrder.TryPeek(out var next)\n        && next.Seq == expected) {\n        outOfOrder.Dequeue();\n        reassembly.Write(next.Data);\n        expected = next.Seq + next.Data.Length;\n    }\n}',
+        'foreach (var alert in monitor.GetPending()\n    .OrderByDescending(a => a.Severity)\n    .Take(MAX_ALERTS_PER_TICK)) {\n    switch (alert.Severity) {\n        case Severity.Critical:\n            await pager.PageAsync(\n                oncall.Primary, alert);\n            await pager.PageAsync(\n                oncall.Secondary, alert);\n            break;\n        case Severity.High:\n            await pager.PageAsync(\n                oncall.Primary, alert);\n            break;\n        case Severity.Medium:\n            await email.SendAsync(\n                team.Email, alert);\n            break;\n        default:\n            await slack.PostAsync(\n                CHANNEL_OPS, alert);\n            break;\n    }\n    monitor.Acknowledge(alert.Id);\n}',
+        'Task.Run(async () => {\n    var hb = new HeartbeatMonitor(\n        HEARTBEAT_INTERVAL_MS,\n        HEARTBEAT_TIMEOUT_MS);\n    hb.OnTimeout += async (nodeId) => {\n        log.Error(\n            $"node {nodeId} heartbeat timeout");\n        var node = cluster.Get(nodeId);\n        if (node?.IsPrimary == true) {\n            await election.StartAsync();\n        } else {\n            await cluster.MarkDeadAsync(nodeId);\n            await rebalancer.RebalanceAsync();\n        }\n    };\n    await hb.RunAsync(cts.Token);\n});',
+        'for (int pass = 0; pass < 3; pass++) {\n    switch (pass) {\n        case 0:\n            foreach (var n in graph.Nodes)\n                n.Color = Color.White;\n            break;\n        case 1:\n            foreach (var n in graph.Nodes\n                .Where(n => n.Color == Color.White)) {\n                dfs.Visit(n);\n            }\n            break;\n        case 2:\n            var scc = new List<Component>();\n            foreach (var n in dfs.FinishOrder) {\n                if (n.Component == null) {\n                    var c = dfs2.Explore(n);\n                    scc.Add(c);\n                }\n            }\n            graph.Components = scc;\n            break;\n    }\n}',
+        'while (true) {\n    var acquired = await sem.WaitAsync(\n        ACQUIRE_TIMEOUT_MS);\n    if (!acquired) {\n        log.Warn(\n            $"lock timeout after {ACQUIRE_TIMEOUT_MS}ms");\n        contention++;\n        if (contention > DEADLOCK_THRESHOLD) {\n            log.Fatal("possible deadlock — abort");\n            throw new DeadlockException();\n        }\n        await Task.Delay(\n            BACKOFF_BASE_MS * contention);\n        continue;\n    }\n    try {\n        return await criticalSection();\n    } finally {\n        contention = 0;\n        sem.Release();\n    }\n}',
     ];
 
     // ── Warning popup data ──────────────────────────────────────────────────
@@ -2178,6 +2298,17 @@ window.consoleBg = (function () {
         'NOTICE — process flagged', 'NOTICE — unusual traffic', 'NOTICE — policy deviation',
         'NOTICE — shadow process',  'NOTICE — off-hours access','NOTICE — location mismatch',
         'NOTICE — glmz gate usage', 'NOTICE — schedule deviate',
+        // 30 more
+        'WARN — rbs disc wear',        'WARN — bci ring2 noise',      'WARN — hkb spring tension',
+        'WARN — enclave attestation',  'WARN — glmz node lag',        'WARN — corp sync drift',
+        'WARN — token near expiry',    'WARN — relay packet loss',    'WARN — db write amplify',
+        'WARN — file descriptor high', 'WARN — cpu throttle 88°C',    'WARN — swap pressure',
+        'WARN — tls cert chain depth', 'WARN — bci motor drift',      'WARN — dark-node latency',
+        'WARN — audit log behind',     'WARN — snapshot stale 48h',   'WARN — license near limit',
+        'WARN — rng entropy 32bit',    'WARN — bci power 12%',        'WARN — ipc queue depth',
+        'WARN — hkb cycle count high', 'WARN — glmz enforcement near','WARN — corp data horizon',
+        'NOTICE — corp-enclave query', 'NOTICE — off-site login',     'NOTICE — bci key age 180d',
+        'NOTICE — rate limit 90%',     'NOTICE — new district node',  'NOTICE — freelancer blacklist',
     ];
 
     var WARN_MSGS = [
@@ -2206,7 +2337,48 @@ window.consoleBg = (function () {
         'DB stats 180s stale: bci_events\nPlanner using old data — ANALYZE',
         'Cert corp-enclave depth=1: 14d\nAuto-renew queued — monitor',
         'BCI ring3 impedance creeping up\n18kΩ — trend toward 22kΩ limit',
+        // 30 more
+        'RBS disc wear-score 0.61 — service at 0.80\n14,200 rotations logged this quarter',
+        'BCI ring2 noise floor elevated\nBaseline 0.8μV → now 1.4μV — possible impedance',
+        'HKB spring tension 87% spec\nFall below 80% triggers manual inspect',
+        'Enclave attestation skew 3.2s\nClock drift — resync before next audit',
+        'GLMZ node dist12 latency 88ms\nBaseline 22ms — check relay path',
+        'Corp sync drift: 9 events behind\nPrimary load elevated — catch-up queued',
+        'Auth token expiry in 4h: uid=0x4492\nRenewal queued — no action needed yet',
+        'Relay packet loss 0.8%: dist9→dist12\nAbove baseline 0.1% — path degraded',
+        'DB write amplification 4.8×\nLSM compaction behind — schedule window',
+        'File descriptors 1800/2048\nApproaching limit — check for leaks',
+        'CPU core3 throttling at 88°C\nCooling nominal — sustained load spike',
+        'Swap pressure 14% — watch\nRSS trending up, GC may not keep pace',
+        'TLS cert chain depth=4: corp-root\nUnusual — verify issuer hierarchy',
+        'BCI motor cortex drift 0.6%/hr\nBelow abort threshold — calibrate next session',
+        'Dark-node latency 340ms: glmz/7\nNominal <80ms — relay path congested',
+        'Audit log 44s behind real-time\nWriter blocked on disk flush — ok for now',
+        'Snapshot 48h stale: bci_events\nScheduled refresh missed — retry queued',
+        'License utilization 88%: bci_nodes\n12 seats remain — notify procurement',
+        'RNG entropy pool 32 bits\nBelow 64-bit threshold — kernel reseed pending',
+        'BCI power reserve 12%\nBattery degradation flag — replace before next op',
+        'IPC queue depth 420: bci_daemon\nNominal 50 — consumer falling behind',
+        'HKB cycle count 9,800 — service at 10k\nSchedule maintenance before next session',
+        'Corp enforcement notice: zone-C access\nOperator 0x3301 flagged — within policy',
+        'Corp data retention horizon breach\nEvents older than 90d present — archive',
+        'Corp enclave query volume spike\n3× baseline in last hour — investigate',
+        'Off-site login: uid=0x7712 dist4\nLast known location: dist9 — review',
+        'BCI key age 180d: uid=0x3301\nRotation overdue — schedule in 14d window',
+        'Rate limit 90%: relay forwarding\nCorp quota — request increase or throttle',
+        'New district node dist2/fab-9 online\nNot in routing table — manual review',
+        'Freelancer 0x4492 on watchlist match\nLow confidence — monitor, no action yet',
     ];
+
+    // ── Glyph character pool (scan-box content) ─────────────────────────────
+    var GLYPH_CHARS =
+        '░▒▓█▌▐▀▄■□◆◇○●◉◎' +
+        '∞≠≈∫∂∆Ωπμλφψξζ⊗⊕⊙∅' +
+        '←→↑↓↔↕⇐⇒⇑⇓' +
+        '₿€¥₩₹Φ' +
+        '✦✧✩✫✭✯✱✲✳✴✵✶✷✸' +
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ' +
+        'αβγδεζηθικλμνξοπρστυφχψω';
 
     // ── Geo-window element report lines ────────────────────────────────────
     var GEO_REPORT_LINES = [
@@ -2249,6 +2421,36 @@ window.consoleBg = (function () {
         'Stability:     [CLASSIFIED]',
         'Yield:         3.301×10⁻¹⁴ %',
         'Hazard:        EXTREME',
+        'Manifold:      R⁴ compact',
+        'Curvature κ:   +0.00441',
+        'Euler χ:       2 (sphere)',
+        'Genus:         0 orientable',
+        'Betti b₀:      1',
+        'Symm Group:    Iₕ (order 120)',
+        'Dihedral:      A₅ × Z₂',
+        'Vertex deg:    3-regular',
+        'Face type:     pentagonal',
+        'Dual solid:    icosahedron',
+        'Conway:        D(I) notation',
+        'Wythoff:       3|2 5',
+        'Schläfli:      {5,3}',
+        'Vol/Area:      V/A = 0.332',
+        'Circum-R:      1.401 norm',
+        'Inrad-r:       1.113 norm',
+        'Midrad ρ:      1.309 norm',
+        'Petrie Poly:   decagon',
+        'Dual Verts:    12',
+        'Coord Ring:    ℝ[x,y,z]/I₅',
+        'Packing η:     0.9069 max',
+        'Lattice:       FCC equiv',
+        'Point Group:   Oh (48 ops)',
+        'Space Group:   Fm3̄m',
+        'Fourier k:     2π/a = 1.772',
+        'Mode ω₀:       [CLASSIFIED]',
+        'Signal SNR:    38.8 dB',
+        'Phase δ:       0.441 rad',
+        'Resonance:     4,410 Hz',
+        'Impedance:     441 + 88i Ω',
     ];
 
     var tickTimer = null;
@@ -2459,9 +2661,16 @@ window.consoleBg = (function () {
         tetra:  { label:'tetrahedron',  verts:[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]], edges:[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]] },
         cube:   { label:'hexahedron',   verts:[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]] },
         octa:   { label:'octahedron',   verts:[[0,1,0],[0,-1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]], edges:[[0,2],[0,3],[0,4],[0,5],[1,2],[1,3],[1,4],[1,5],[2,4],[4,3],[3,5],[5,2]] },
-        icosa:  { label:'icosahedron',  verts:[[0,1,PHI],[0,-1,PHI],[0,1,-PHI],[0,-1,-PHI],[1,PHI,0],[-1,PHI,0],[1,-PHI,0],[-1,-PHI,0],[PHI,0,1],[-PHI,0,1],[PHI,0,-1],[-PHI,0,-1]], edges:[[0,1],[0,4],[0,5],[0,8],[0,9],[1,6],[1,7],[1,8],[1,9],[2,3],[2,4],[2,5],[2,10],[2,11],[3,6],[3,7],[3,10],[3,11],[4,5],[4,8],[4,10],[5,9],[5,11],[6,7],[6,8],[6,10],[7,9],[7,11],[8,10],[9,11]] }
+        icosa:    { label:'icosahedron',     verts:[[0,1,PHI],[0,-1,PHI],[0,1,-PHI],[0,-1,-PHI],[1,PHI,0],[-1,PHI,0],[1,-PHI,0],[-1,-PHI,0],[PHI,0,1],[-PHI,0,1],[PHI,0,-1],[-PHI,0,-1]], edges:[[0,1],[0,4],[0,5],[0,8],[0,9],[1,6],[1,7],[1,8],[1,9],[2,3],[2,4],[2,5],[2,10],[2,11],[3,6],[3,7],[3,10],[3,11],[4,5],[4,8],[4,10],[5,9],[5,11],[6,7],[6,8],[6,10],[7,9],[7,11],[8,10],[9,11]] },
+        prism:    { label:'triangular prism',  verts:[[0,1,1],[0.866,-0.5,1],[-0.866,-0.5,1],[0,1,-1],[0.866,-0.5,-1],[-0.866,-0.5,-1]], edges:[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3],[0,3],[1,4],[2,5]] },
+        stella:   { label:'stella octangula',  verts:[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1],[-1,-1,-1],[1,1,-1],[1,-1,1],[-1,1,1]], edges:[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3],[4,5],[4,6],[4,7],[5,6],[5,7],[6,7]] },
+        cubocta:  { label:'cuboctahedron',     verts:[[1,1,0],[-1,1,0],[1,-1,0],[-1,-1,0],[1,0,1],[-1,0,1],[1,0,-1],[-1,0,-1],[0,1,1],[0,-1,1],[0,1,-1],[0,-1,-1]], edges:[[0,4],[0,6],[0,8],[0,10],[1,5],[1,7],[1,8],[1,10],[2,4],[2,6],[2,9],[2,11],[3,5],[3,7],[3,9],[3,11],[4,8],[4,9],[5,8],[5,9],[6,10],[6,11],[7,10],[7,11]] },
+        antiprism:{ label:'square antiprism',  verts:[[1,1,0],[0,1,1],[-1,1,0],[0,1,-1],[0.707,-1,0.707],[-0.707,-1,0.707],[-0.707,-1,-0.707],[0.707,-1,-0.707]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[0,7],[1,4],[1,5],[2,5],[2,6],[3,6],[3,7]] },
+        pyramid:  { label:'square pyramid',    verts:[[0,1.2,0],[1,-0.5,1],[-1,-0.5,1],[-1,-0.5,-1],[1,-0.5,-1]], edges:[[0,1],[0,2],[0,3],[0,4],[1,2],[2,3],[3,4],[4,1]] },
+        pentaprism:{ label:'pentagonal prism', verts:[[1,1,0],[0.309,1,0.951],[-0.809,1,0.588],[-0.809,1,-0.588],[0.309,1,-0.951],[1,-1,0],[0.309,-1,0.951],[-0.809,-1,0.588],[-0.809,-1,-0.588],[0.309,-1,-0.951]], edges:[[0,1],[1,2],[2,3],[3,4],[4,0],[5,6],[6,7],[7,8],[8,9],[9,5],[0,5],[1,6],[2,7],[3,8],[4,9]] },
+        dodeca:   { label:'dodecahedron',      verts:[[1,1,1],[1,1,-1],[1,-1,1],[1,-1,-1],[-1,1,1],[-1,1,-1],[-1,-1,1],[-1,-1,-1],[0,0.618,1.618],[0,0.618,-1.618],[0,-0.618,1.618],[0,-0.618,-1.618],[0.618,1.618,0],[0.618,-1.618,0],[-0.618,1.618,0],[-0.618,-1.618,0],[1.618,0,0.618],[1.618,0,-0.618],[-1.618,0,0.618],[-1.618,0,-0.618]], edges:[[0,8],[0,12],[0,16],[1,9],[1,12],[1,17],[2,10],[2,13],[2,16],[3,11],[3,13],[3,17],[4,8],[4,14],[4,18],[5,9],[5,14],[5,19],[6,10],[6,15],[6,18],[7,11],[7,15],[7,19],[8,10],[9,11],[12,14],[13,15],[16,17],[18,19]] }
     };
-    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron'];
+    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron','prism','stella','cubocta','antiprism','vesica','spiral','lissajous','star5','torus','helix','dodeca','pyramid','pentaprism','rose','cardioid','asteroid','epicycloid','web'];
 
     function spawnGeoWindow() {
         var host = getHost();
@@ -2535,13 +2744,167 @@ window.consoleBg = (function () {
             cs.forEach(function(c){ ctx2.beginPath(); ctx2.arc(c[0],c[1],1,0,Math.PI*2); ctx2.fill(); });
         }
 
+        function drawVesica(t) {
+            var r=24, d=r*0.6;
+            ctx2.save(); ctx2.rotate(t*0.02);
+            ctx2.strokeStyle='rgba(70,200,220,0.45)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath(); ctx2.arc(-d/2,0,r,0,Math.PI*2); ctx2.stroke();
+            ctx2.beginPath(); ctx2.arc(d/2,0,r,0,Math.PI*2); ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,220,170,0.75)'; ctx2.lineWidth=0.8;
+            var half=Math.acos(d/(2*r));
+            ctx2.beginPath(); ctx2.arc(-d/2,0,r,-half,half); ctx2.arc(d/2,0,r,Math.PI-half,Math.PI+half); ctx2.closePath(); ctx2.stroke();
+            ctx2.restore();
+        }
+        function drawSpiral(t) {
+            var maxR=38, turns=4;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var a=f*turns*Math.PI*2+t*0.05; var r=f*maxR; if(i===0)ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r); else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,190,220,0.35)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var a=f*turns*Math.PI*2+t*0.05+Math.PI; var r=f*maxR; if(i===0)ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r); else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r); }
+            ctx2.stroke();
+        }
+        function drawLissajous(t) {
+            var a=3, b=2, R=38;
+            ctx2.strokeStyle='rgba(70,210,170,0.60)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=400;i++){ var phi=(i/400)*Math.PI*2; var x=R*Math.sin(a*phi+t*0.04); var y=R*Math.sin(b*phi); if(i===0)ctx2.moveTo(x,y); else ctx2.lineTo(x,y); }
+            ctx2.stroke();
+        }
+        function drawStar5(t) {
+            var r=36, ir=14, pts=5, rot=t*0.04;
+            ctx2.strokeStyle='rgba(70,210,170,0.55)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<=pts*2;i++){ var rad=(i%2===0)?r:ir; var a=(i/(pts*2))*Math.PI*2+rot-Math.PI/2; if(i===0)ctx2.moveTo(Math.cos(a)*rad,Math.sin(a)*rad); else ctx2.lineTo(Math.cos(a)*rad,Math.sin(a)*rad); }
+            ctx2.closePath(); ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.38)'; ctx2.lineWidth=0.6;
+            ctx2.beginPath();
+            for(var i=0;i<=pts;i++){ var a=(i/pts)*Math.PI*2+rot-Math.PI/2; if(i===0)ctx2.moveTo(Math.cos(a)*ir,Math.sin(a)*ir); else ctx2.lineTo(Math.cos(a)*ir,Math.sin(a)*ir); }
+            ctx2.closePath(); ctx2.stroke();
+            var op=[]; for(var i=0;i<pts;i++){ var a=(i/pts)*Math.PI*2+rot-Math.PI/2; op.push([Math.cos(a)*r,Math.sin(a)*r]); }
+            ctx2.strokeStyle='rgba(70,220,170,0.28)'; ctx2.lineWidth=0.5;
+            for(var i=0;i<pts;i++){ var j=(i+2)%pts; ctx2.beginPath(); ctx2.moveTo(op[i][0],op[i][1]); ctx2.lineTo(op[j][0],op[j][1]); ctx2.stroke(); }
+        }
+        function drawTorus(t) {
+            var R=22, r=10, rings=8;
+            for(var i=0;i<rings;i++){ var phi=(i/rings)*Math.PI*2+t*0.03; var cx=Math.cos(phi)*R, cy=Math.sin(phi)*R*0.35; var sc=0.5+0.5*Math.abs(Math.cos(phi)); var al=(0.3+0.3*Math.abs(Math.cos(phi))).toFixed(2); ctx2.strokeStyle='rgba(70,210,170,'+al+')'; ctx2.lineWidth=0.6; ctx2.beginPath(); ctx2.ellipse(cx,cy,r*sc,r*0.35,phi,0,Math.PI*2); ctx2.stroke(); }
+            ctx2.strokeStyle='rgba(70,200,220,0.45)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath(); ctx2.ellipse(0,0,R+r,(R+r)*0.35,0,0,Math.PI*2); ctx2.stroke();
+            ctx2.beginPath(); ctx2.ellipse(0,0,R-r,(R-r)*0.35,0,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawHelix(t) {
+            var R=14, turns=3;
+            ctx2.lineWidth=0.8;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05; var y=f*56-28; if(i===0)ctx2.moveTo(Math.cos(ang)*R,y); else ctx2.lineTo(Math.cos(ang)*R,y); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,190,220,0.50)'; ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05+Math.PI; var y=f*56-28; if(i===0)ctx2.moveTo(Math.cos(ang)*R,y); else ctx2.lineTo(Math.cos(ang)*R,y); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,220,170,0.22)'; ctx2.lineWidth=0.5;
+            for(var i=0;i<=300;i+=25){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05; var y=f*56-28; ctx2.beginPath(); ctx2.moveTo(Math.cos(ang)*R,y); ctx2.lineTo(Math.cos(ang+Math.PI)*R,y); ctx2.stroke(); }
+        }
+
+        function drawRose(t) {
+            var R=38, k=3;
+            ctx2.strokeStyle='rgba(70,210,170,0.70)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=720;i++){
+                var th=(i/720)*Math.PI*2;
+                var r=R*Math.cos(k*(th+t*0.018));
+                if(i===0) ctx2.moveTo(r*Math.cos(th),r*Math.sin(th));
+                else ctx2.lineTo(r*Math.cos(th),r*Math.sin(th));
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.4;
+            ctx2.beginPath(); ctx2.arc(0,0,R,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawCardioid(t) {
+            var a=18, rot=t*0.012;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=360;i++){
+                var th=(i/360)*Math.PI*2;
+                var r=a*(1+Math.cos(th));
+                if(i===0) ctx2.moveTo(r*Math.cos(th+rot),r*Math.sin(th+rot));
+                else ctx2.lineTo(r*Math.cos(th+rot),r*Math.sin(th+rot));
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,a*2,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawAsteroid(t) {
+            var R=36, rot=t*0.02;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=360;i++){
+                var p=(i/360)*Math.PI*2;
+                var x=R*Math.pow(Math.cos(p+rot),3), y=R*Math.pow(Math.sin(p+rot),3);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.25)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,R,0,Math.PI*2); ctx2.stroke();
+            for(var i=0;i<4;i++){
+                var a=(i/4)*Math.PI*2+rot;
+                ctx2.strokeStyle='rgba(70,220,170,0.18)'; ctx2.lineWidth=0.4;
+                ctx2.beginPath(); ctx2.moveTo(0,0); ctx2.lineTo(Math.cos(a)*R,Math.sin(a)*R); ctx2.stroke();
+            }
+        }
+        function drawEpicycloid(t) {
+            var Rc=24, rc=8, rot=t*0.015;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=600;i++){
+                var p=(i/600)*Math.PI*2+rot;
+                var x=(Rc+rc)*Math.cos(p)-rc*Math.cos((Rc/rc+1)*p);
+                var y=(Rc+rc)*Math.sin(p)-rc*Math.sin((Rc/rc+1)*p);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,Rc,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawWeb(t) {
+            var rings=5, spokes=8, maxR=40, rot=t*0.01;
+            ctx2.strokeStyle='rgba(70,200,220,0.35)'; ctx2.lineWidth=0.5;
+            for(var s=0;s<spokes;s++){
+                var a=(s/spokes)*Math.PI*2+rot;
+                ctx2.beginPath(); ctx2.moveTo(0,0); ctx2.lineTo(Math.cos(a)*maxR,Math.sin(a)*maxR); ctx2.stroke();
+            }
+            ctx2.strokeStyle='rgba(70,210,170,0.55)'; ctx2.lineWidth=0.7;
+            for(var ri=1;ri<=rings;ri++){
+                var r=(ri/rings)*maxR;
+                ctx2.beginPath();
+                for(var s=0;s<=spokes;s++){
+                    var a=(s/spokes)*Math.PI*2+rot;
+                    if(s===0) ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r);
+                    else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r);
+                }
+                ctx2.closePath(); ctx2.stroke();
+            }
+        }
+
         function geoFrame() {
             ctx2.clearRect(0,0,S,S);
             ctx2.save(); ctx2.translate(S/2,S/2);
             angle += 0.007;
-            if      (key==='flower')   drawFlower(angle);
-            else if (key==='metatron') drawMetatron(angle);
-            else                       drawWire(shape, angle*0.4, angle);
+            if      (key==='flower')     drawFlower(angle);
+            else if (key==='metatron')   drawMetatron(angle);
+            else if (key==='vesica')     drawVesica(angle);
+            else if (key==='spiral')     drawSpiral(angle);
+            else if (key==='lissajous')  drawLissajous(angle);
+            else if (key==='star5')      drawStar5(angle);
+            else if (key==='torus')      drawTorus(angle);
+            else if (key==='helix')      drawHelix(angle);
+            else if (key==='rose')       drawRose(angle);
+            else if (key==='cardioid')   drawCardioid(angle);
+            else if (key==='asteroid')   drawAsteroid(angle);
+            else if (key==='epicycloid') drawEpicycloid(angle);
+            else if (key==='web')        drawWeb(angle);
+            else                         drawWire(shape, angle*0.4, angle);
             ctx2.restore();
             rafId = requestAnimationFrame(geoFrame);
         }
@@ -2601,6 +2964,22 @@ window.consoleBg = (function () {
         'TO: Corp Security, District 4\nFROM: Territorial Division\nRE: Hostile Freelancer — 0x4492\n\nOperator has evidence of Q3 harvest.\nContain before they reach press.\nLevel 3 protocol authorized.\nNo record of this transmission.\n\n>>> RELAY CORRUPTION — partial <<<',
         'FROM: Population Control Div.\nTO: GLMZ District Administrators\nRE: Food Access Throttle — Batch 4\n\nDistrict 9 rationing at 44%.\nReduction to 30% approved Q1.\nFrame as supply chain failure.\nTrack compliance via BCI metrics.\n\n[INTERCEPT CONFIDENCE: 0.91]',
         'INTERNAL — DESTROY AFTER READ\nFROM: Corp Ethics Committee\nTO: [REDACTED]\nRE: Upcoming Ethics Review\n\nAnswers to inquiries 3, 7, 12:\n— Data: "aggregated, anonymized"\n— Consent: "implied via ToS"\n— Deaths: "within projections"\nMembers have been briefed.\n\n[SIG: 0xDEAD4412]',
+        // 15 more
+        'FROM: Extraction Unit 7\nTO: Field Ops Director\nRE: Asset 3301 — Status Update\n\nAsset uncooperative after 72h.\nStandard persuasion ineffective.\nPhase 2 authorized by Dir. 94-C.\nDispose after extraction complete.\n\n>>> GLMZ DARK NODE :: dist4 <<<',
+        'FROM: Neural Analytics Board\nTO: BCI Program Dir.\nRE: Operator 0x4492 — Classify\n\nNeural profile matches dissident tag.\nRecommend silent reclassification.\nAccess throttle: 40% — covert.\nDo not inform subject.\n\n[RELAY: sec/vault-7]',
+        'CONFIDENTIAL — NO EXTERNAL\nFROM: Subsidiary Relations\nTO: Enforcement Liaison\nRE: Competitor Infrastructure\n\nThree relay nodes confirmed hostile.\nCoordinate with dist9 enforcement.\nPlausible denial required.\nNo Crest equipment — freelancers.\n\n>>> INTERCEPT :: corp/mirror <<<',
+        'TO: Narrative Ops Team\nFROM: Social Influence Div.\nRE: Freelancer Problem — Framing\n\nCurrent narrative: economic threat.\nProposed pivot: public safety.\nTimeline: 3-week push via ent/net.\nSuccess metric: 60% public favor.\n\n[GLMZ RELAY: dist12/comms]',
+        'INTERNAL ONLY — LEGAL\nFROM: Compliance Division\nTO: Security Dir.\nRE: Incident 0091 — Paperwork\n\nThree deaths out of scope.\nFile as industrial accident.\nFamily settlements: Φ8,000 each.\nNDA required — enforce aggressively.\n\n[SIG: 0x9A3301 // CORP-LEGAL]',
+        'FROM: Behavioral Modification R&D\nTO: Program Board\nRE: Trial Cohort 7 — Outcomes\n\nCompliance rate: 88% (target 80%).\nSubjects unaware of BCI seeding.\nSide effects: within tolerance.\nProceed to Batch 8 — 500 subjects.\n\n>>> DARK NODE :: dist7/relay <<<',
+        'URGENT PRIORITY\nFROM: Intelligence Operations\nTO: Crest Dynamics\nRE: Journalist — Case #0441\n\nJournalist has partial Q3 data.\nSourced from inside — find leak.\nContain story before press cycle.\nPermanent solution if necessary.\n\n[INTERCEPT CONFIDENCE: 0.96]',
+        'FROM: Territorial Expansion\nTO: Legal + Enforcement\nRE: District 2 Consolidation\n\nPhase 1 complete: 3 orgs dissolved.\nPhase 2: Purchase remaining assets.\nPhase 3: Restructure workforce.\nExpected redundancies: 400-600.\n\n>>> CORP/BROKER :: VAULTDROP <<<',
+        'CLASSIFIED — ABOVE TOP\nFROM: AI Autonomy Division\nTO: Board Only\nRE: Behemoth Meridian-88 — Update\n\nAutonomy module fully deployed.\nHuman oversight: symbolic only.\nContingency removal: scheduled.\nDo not log this meeting.\n\n[SIG: 0xFF0000 // PURGE-ON-READ]',
+        'TO: Forensic Suppression Team\nFROM: Director 94-C\nRE: Evidence — Batch 0099\n\nSeven files. Delete originals.\nOverwrite media 3 passes.\nPurge relay cache: dist4, dist7.\nConfirm by 0300 UTC.\n\n>>> RELAY CORRUPTION — terminal <<<',
+        'FROM: Public Health Proxy\nTO: District Supply Chain\nRE: Pharmaceutical Diversion\n\nDivert Batch 44 to compliance stream.\nReduce district 9 access 60%.\nFrame as shortage — corp approved.\nProfits to hidden account 0x9F3A.\n\n[INTERCEPT: glmz/gate-12]',
+        'INTERNAL — NO EXTERNAL\nFROM: BCI Surveillance Unit\nTO: Corp Intelligence\nRE: Watchlist Update — Q2\n\n3,301 operators under passive monitor.\n412 flagged for attention.\nNeural-key patterns attached.\nAutomated escalation if triggered.\n\n>>> CREST INTERNAL :: sec/enclave <<<',
+        'TO: Field Security, District 12\nFROM: Asset Protection\nRE: Freelancer Collective — Action\n\nCell identified: 4 members, dark-node.\nSurveillance complete: 18 days.\nAuthorize simultaneous termination.\nCoordinate with dist9 — 0400.\n\n[SIG: 0xBE0441 // SILENT]',
+        'FROM: Data Monetization Group\nTO: Board of Directors\nRE: Neural Signature Auction — Q3\n\n88,000 unique profiles ready.\nSale to NeuralState: Φ8.8M.\nAnonymization: cosmetic only.\nAudit-proof — legal reviewed.\n\n>>> RELAY: corp/mirror-d7 <<<',
+        'PRIORITY ALPHA\nFROM: Enforcement Central\nTO: ALL DISTRICT COMMANDS\nRE: Operation Dark Census\n\nRound up all unregistered operators.\nBCI registration mandatory by 0600.\nNon-compliance: level 3 detention.\nMedia blackout in effect.\n\n[RELAY CORRUPTION — CRITICAL]',
     ];
 
     // ── Memo erasure — JS character-by-character erase ──────────────────────
@@ -2652,12 +3031,24 @@ window.consoleBg = (function () {
         var n = Math.random() < 0.35 ? rand(2, 4) : 1;
         for (var i = 0; i < n; i++) {
             (function () {
+                var glyphVw  = (2 + Math.random() * 3).toFixed(1);
+                var boxVw    = (parseFloat(glyphVw) * 1.1).toFixed(2);
+
                 var el = document.createElement('div');
                 el.className = 'cbg-scan-box';
                 el.style.left   = rand(2, 86) + '%';
                 el.style.top    = rand(4, 82) + '%';
-                el.style.width  = rand(36, 130) + 'px';
-                el.style.height = rand(14, 58) + 'px';
+                el.style.width  = boxVw + 'vw';
+                el.style.height = boxVw + 'vw';
+
+                var glyph = document.createElement('span');
+                glyph.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                glyph.style.fontSize   = glyphVw + 'vw';
+                glyph.style.color      = 'rgba(255,0,51,0.70)';
+                glyph.style.fontFamily = 'Courier New, Courier, monospace';
+                glyph.style.filter     = 'blur(' + (0.8 + Math.random() * 1.8).toFixed(1) + 'px)';
+                el.appendChild(glyph);
+
                 host.appendChild(el);
                 setTimeout(function () {
                     el.classList.add('cbg-scan-box--out');
@@ -2676,17 +3067,17 @@ window.consoleBg = (function () {
         var r = Math.random();
         if      (r < 0.10) spawnError();
         else if (r < 0.18) spawnWarning();
-        else if (r < 0.26) spawnMemo();
-        else if (r < 0.34) spawnScanBox();
-        else if (r < 0.46) spawnGeoWindow();
-        else if (r < 0.58) spawnCascade();
-        else if (r < 0.76) spawnFrag();
+        else if (r < 0.22) spawnMemo();
+        else if (r < 0.30) spawnScanBox();
+        else if (r < 0.42) spawnGeoWindow();
+        else if (r < 0.47) spawnCascade();
+        else if (r < 0.61) spawnFrag();
         else                spawnWindow();
-        tickTimer = setTimeout(tick, rand(1300, 4600));
+        tickTimer = setTimeout(tick, rand(900, 3200));
     }
 
     function start() {
-        if (tickTimer) { clearTimeout(tickTimer); tickTimer = null; }
+        if (tickTimer) return;  // already running — preserve state across navigations
         if (getHost()) {
             tickTimer = setTimeout(tick, rand(500, 1500));
         }

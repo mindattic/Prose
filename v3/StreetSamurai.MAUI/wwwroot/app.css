@@ -950,22 +950,145 @@ textarea.auto-grow {
     opacity: 0;
 }
 .cbg-sl-fine {
+    /* #ff0033 = rgb(255, 0, 51) */
     background: repeating-linear-gradient(
         to bottom,
-        rgba(0,0,0,0.06) 0px,
-        rgba(0,0,0,0.06) 1px,
-        transparent      1px,
-        transparent      3px
+        rgba(255, 0, 51, 0.09) 0px,
+        rgba(255, 0, 51, 0.09) 1px,
+        transparent            1px,
+        transparent            3px
     );
 }
 .cbg-sl-coarse {
+    /* #ff0033 = rgb(255, 0, 51) */
     background: repeating-linear-gradient(
         to bottom,
-        rgba(0,0,0,0.04) 0px,
-        rgba(0,0,0,0.04) 1px,
-        transparent      1px,
-        transparent      7px
+        rgba(255, 0, 51, 0.06) 0px,
+        rgba(255, 0, 51, 0.06) 1px,
+        transparent             1px,
+        transparent             7px
     );
+}
+
+/* ── Glyph boxes — single blurry unicode char, fades in/out ─────────────── */
+.glyph-box {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+    border: 1px solid rgba(255, 0, 51, 0.55);
+    box-shadow: 0 0 6px rgba(255, 0, 51, 0.18);
+    background: rgba(13, 17, 23, 0.68);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1;
+    color: rgba(255, 0, 51, 0.75);
+    padding: 2px 3px;
+    opacity: 0;
+    animation: sl-glitch-in 0.06s ease forwards;
+}
+.glyph-box--out {
+    animation: sl-glitch-out 0.6s ease forwards !important;
+}
+@keyframes sl-glitch-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes sl-glitch-out {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ── Warning popup — amber box, less severe than error ──────────────────── */
+.cbg-warn-popup {
+    position: absolute;
+    width: clamp(190px, 20vw, 290px);
+    background: rgba(18, 14, 0, 0.92);
+    border: 1px solid rgba(200, 150, 20, 0.75);
+    outline: 1px solid rgba(255, 190, 0, 0.14);
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(200, 150, 20, 0.25),
+                0 6px 28px rgba(120, 80, 0, 0.35);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.57rem;
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0.92);
+    animation: cbg-warn-in 0.18s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes cbg-warn-in {
+    to { opacity: 0.48; transform: scale(1); }
+}
+.cbg-warn-popup-content {
+    flex: 1;
+    padding: 7px 9px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+.cbg-warn-popup-title {
+    color: rgba(255, 200, 50, 1);
+    font-size: 0.59rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    filter: blur(2px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cbg-warn-popup-msg {
+    color: rgba(255, 200, 100, 0.85);
+    filter: blur(3px);
+    white-space: pre-line;
+    line-height: 1.45;
+}
+
+/* ── Scan highlight boxes ────────────────────────────────────────────────── */
+.cbg-scan-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 0, 51, 0.55);
+    box-shadow: 0 0 6px rgba(255, 0, 51, 0.18),
+                inset 0 0 8px rgba(255, 0, 51, 0.04);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    animation: cbg-scan-box-in 0.08s ease forwards;
+}
+/* Corner ticks — top-left and bottom-right */
+.cbg-scan-box::before,
+.cbg-scan-box::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-color: rgba(255, 0, 51, 0.85);
+    border-style: solid;
+}
+.cbg-scan-box::before {
+    top: -1px; left: -1px;
+    border-width: 1px 0 0 1px;
+}
+.cbg-scan-box::after {
+    bottom: -1px; right: -1px;
+    border-width: 0 1px 1px 0;
+}
+.cbg-scan-box--out {
+    animation: cbg-scan-box-fade 0.9s ease forwards !important;
+}
+@keyframes cbg-scan-box-in {
+    from { opacity: 0; transform: scale(0.94); }
+    to   { opacity: 0.72; transform: scale(1); }
+}
+@keyframes cbg-scan-box-fade {
+    0%   { opacity: 0.72; }
+    60%  { opacity: 0.44; }
+    100% { opacity: 0; }
 }
 
 /* ── Floating code fragments ────────────────────────────────────────────── */
@@ -999,7 +1122,37 @@ textarea.auto-grow {
 
 /* ── Geometry schematic windows ───────────────────────────────────────── */
 .cbg-geo-win { padding: 6px; }
-.cbg-geo-canvas { display: block; background: transparent; }
+.cbg-geo-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6px;
+}
+.cbg-geo-canvas { display: block; background: transparent; flex-shrink: 0; }
+.cbg-geo-report {
+    width: 96px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    border-left: 1px solid rgba(70, 200, 160, 0.15);
+    padding-left: 5px;
+    flex-shrink: 0;
+}
+.cbg-geo-report-inner {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.33rem;
+    color: rgba(70, 210, 160, 0.55);
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow: hidden;
+    pointer-events: none;
+}
 
 /* ── Corporate memo intercept ──────────────────────────────────────────── */
 .cbg-memo {
@@ -1007,16 +1160,16 @@ textarea.auto-grow {
     font-family: 'Courier New', monospace;
     font-size: 0.6rem;
     line-height: 1.45;
-    color: rgba(255, 185, 60, 0.82);
-    background: rgba(12, 8, 0, 0.88);
-    border: 1px solid rgba(255, 155, 30, 0.35);
+    color: rgba(255, 185, 60, 0.38);
+    background: rgba(12, 8, 0, 0.04);
+    border: 1px solid rgba(255, 155, 30, 0.16);
     border-radius: 2px;
     padding: 8px 10px;
     white-space: pre;
     z-index: 2;
     pointer-events: none;
     animation: cbg-memo-in 0.18s ease forwards;
-    box-shadow: 0 0 10px rgba(255, 140, 0, 0.15);
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.06);
 }
 @keyframes cbg-memo-in {
     from { opacity: 0; transform: translateY(-4px); }
