@@ -628,6 +628,78 @@ window.consoleBg = (function () {
         }, rand(1800, 4000));
     }
 
+    // ── Warning popup ───────────────────────────────────────────────────────
+
+    function spawnWarning(posX, posY) {
+        var host = getHost();
+        if (!host) return;
+
+        var popup = document.createElement('div');
+        popup.className = 'cbg-warn-popup';
+        popup.style.left = (posX !== undefined ? posX : rand(15, 60)) + '%';
+        popup.style.top  = (posY !== undefined ? posY : rand(15, 60)) + '%';
+
+        var content = document.createElement('div');
+        content.className = 'cbg-warn-popup-content';
+
+        var titleEl = document.createElement('div');
+        titleEl.className = 'cbg-warn-popup-title';
+        titleEl.textContent = pick(WARN_TITLES);
+        content.appendChild(titleEl);
+
+        var msgEl = document.createElement('div');
+        msgEl.className = 'cbg-warn-popup-msg';
+        msgEl.textContent = pick(WARN_MSGS);
+        content.appendChild(msgEl);
+
+        popup.appendChild(content);
+        host.appendChild(popup);
+
+        setTimeout(function () {
+            popup.classList.add('cbg-win--out');
+            setTimeout(function () {
+                if (popup.parentNode) popup.parentNode.removeChild(popup);
+            }, 160);
+        }, rand(2500, 5500));
+    }
+
+    // ── Scan highlight boxes ────────────────────────────────────────────────
+
+    function spawnScanBox() {
+        var host = getHost();
+        if (!host) return;
+        var n = Math.random() < 0.35 ? rand(2, 4) : 1;
+        for (var i = 0; i < n; i++) {
+            (function () {
+                var glyphVw  = (2 + Math.random() * 3).toFixed(1);
+                var boxVw    = (parseFloat(glyphVw) * 1.1).toFixed(2);
+
+                var el = document.createElement('div');
+                el.className = 'cbg-scan-box';
+                el.style.left   = rand(2, 86) + '%';
+                el.style.top    = rand(4, 82) + '%';
+                el.style.width  = boxVw + 'vw';
+                el.style.height = boxVw + 'vw';
+
+                var glyph = document.createElement('span');
+                glyph.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+                glyph.style.fontSize   = glyphVw + 'vw';
+                glyph.style.color      = 'rgba(255,0,51,0.70)';
+                glyph.style.fontFamily = 'Courier New, Courier, monospace';
+                glyph.style.filter     = 'blur(' + (0.8 + Math.random() * 1.8).toFixed(1) + 'px)';
+                el.appendChild(glyph);
+
+                host.appendChild(el);
+                setTimeout(function () {
+                    el.classList.add('cbg-scan-box--out');
+                    setTimeout(function () {
+                        if (el.parentNode) el.parentNode.removeChild(el);
+                    }, 900);
+                }, rand(300, 2000));
+            })();
+        }
+    }
+
     // ── Floating code fragments ─────────────────────────────────────────────
 
     function spawnFrag() {
@@ -667,9 +739,89 @@ window.consoleBg = (function () {
         tetra:  { label:'tetrahedron',  verts:[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1]], edges:[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]] },
         cube:   { label:'hexahedron',   verts:[[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]] },
         octa:   { label:'octahedron',   verts:[[0,1,0],[0,-1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]], edges:[[0,2],[0,3],[0,4],[0,5],[1,2],[1,3],[1,4],[1,5],[2,4],[4,3],[3,5],[5,2]] },
-        icosa:  { label:'icosahedron',  verts:[[0,1,PHI],[0,-1,PHI],[0,1,-PHI],[0,-1,-PHI],[1,PHI,0],[-1,PHI,0],[1,-PHI,0],[-1,-PHI,0],[PHI,0,1],[-PHI,0,1],[PHI,0,-1],[-PHI,0,-1]], edges:[[0,1],[0,4],[0,5],[0,8],[0,9],[1,6],[1,7],[1,8],[1,9],[2,3],[2,4],[2,5],[2,10],[2,11],[3,6],[3,7],[3,10],[3,11],[4,5],[4,8],[4,10],[5,9],[5,11],[6,7],[6,8],[6,10],[7,9],[7,11],[8,10],[9,11]] }
+        icosa:    { label:'icosahedron',     verts:[[0,1,PHI],[0,-1,PHI],[0,1,-PHI],[0,-1,-PHI],[1,PHI,0],[-1,PHI,0],[1,-PHI,0],[-1,-PHI,0],[PHI,0,1],[-PHI,0,1],[PHI,0,-1],[-PHI,0,-1]], edges:[[0,1],[0,4],[0,5],[0,8],[0,9],[1,6],[1,7],[1,8],[1,9],[2,3],[2,4],[2,5],[2,10],[2,11],[3,6],[3,7],[3,10],[3,11],[4,5],[4,8],[4,10],[5,9],[5,11],[6,7],[6,8],[6,10],[7,9],[7,11],[8,10],[9,11]] },
+        prism:    { label:'triangular prism',  verts:[[0,1,1],[0.866,-0.5,1],[-0.866,-0.5,1],[0,1,-1],[0.866,-0.5,-1],[-0.866,-0.5,-1]], edges:[[0,1],[1,2],[2,0],[3,4],[4,5],[5,3],[0,3],[1,4],[2,5]] },
+        stella:   { label:'stella octangula',  verts:[[1,1,1],[-1,-1,1],[-1,1,-1],[1,-1,-1],[-1,-1,-1],[1,1,-1],[1,-1,1],[-1,1,1]], edges:[[0,1],[0,2],[0,3],[1,2],[1,3],[2,3],[4,5],[4,6],[4,7],[5,6],[5,7],[6,7]] },
+        cubocta:  { label:'cuboctahedron',     verts:[[1,1,0],[-1,1,0],[1,-1,0],[-1,-1,0],[1,0,1],[-1,0,1],[1,0,-1],[-1,0,-1],[0,1,1],[0,-1,1],[0,1,-1],[0,-1,-1]], edges:[[0,4],[0,6],[0,8],[0,10],[1,5],[1,7],[1,8],[1,10],[2,4],[2,6],[2,9],[2,11],[3,5],[3,7],[3,9],[3,11],[4,8],[4,9],[5,8],[5,9],[6,10],[6,11],[7,10],[7,11]] },
+        antiprism:{ label:'square antiprism',  verts:[[1,1,0],[0,1,1],[-1,1,0],[0,1,-1],[0.707,-1,0.707],[-0.707,-1,0.707],[-0.707,-1,-0.707],[0.707,-1,-0.707]], edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[0,7],[1,4],[1,5],[2,5],[2,6],[3,6],[3,7]] },
+        pyramid:  { label:'square pyramid',    verts:[[0,1.2,0],[1,-0.5,1],[-1,-0.5,1],[-1,-0.5,-1],[1,-0.5,-1]], edges:[[0,1],[0,2],[0,3],[0,4],[1,2],[2,3],[3,4],[4,1]] },
+        pentaprism:{ label:'pentagonal prism', verts:[[1,1,0],[0.309,1,0.951],[-0.809,1,0.588],[-0.809,1,-0.588],[0.309,1,-0.951],[1,-1,0],[0.309,-1,0.951],[-0.809,-1,0.588],[-0.809,-1,-0.588],[0.309,-1,-0.951]], edges:[[0,1],[1,2],[2,3],[3,4],[4,0],[5,6],[6,7],[7,8],[8,9],[9,5],[0,5],[1,6],[2,7],[3,8],[4,9]] },
+        dodeca:   { label:'dodecahedron',      verts:[[1,1,1],[1,1,-1],[1,-1,1],[1,-1,-1],[-1,1,1],[-1,1,-1],[-1,-1,1],[-1,-1,-1],[0,0.618,1.618],[0,0.618,-1.618],[0,-0.618,1.618],[0,-0.618,-1.618],[0.618,1.618,0],[0.618,-1.618,0],[-0.618,1.618,0],[-0.618,-1.618,0],[1.618,0,0.618],[1.618,0,-0.618],[-1.618,0,0.618],[-1.618,0,-0.618]], edges:[[0,8],[0,12],[0,16],[1,9],[1,12],[1,17],[2,10],[2,13],[2,16],[3,11],[3,13],[3,17],[4,8],[4,14],[4,18],[5,9],[5,14],[5,19],[6,10],[6,15],[6,18],[7,11],[7,15],[7,19],[8,10],[9,11],[12,14],[13,15],[16,17],[18,19]] }
     };
-    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron'];
+    var GEO_KEYS = ['tetra','cube','octa','icosa','flower','metatron','prism','stella','cubocta','antiprism','vesica','spiral','lissajous','star5','torus','helix','dodeca','pyramid','pentaprism','rose','cardioid','asteroid','epicycloid','web'];
+
+    // ── Geo-window element report lines ────────────────────────────────────
+    var GEO_REPORT_LINES = [
+        'Atomic Mass:   [REDACTED]',
+        'Isotope Δ:     +0.00441 amu',
+        'Valence:       4f¹⁴5d¹⁰6p²',
+        'Melting Pt:    3,817°K ± 0.3',
+        'Boiling Pt:    [UNSTABLE]',
+        'Half-life:     τ = 4.41×10⁻⁷s',
+        'Nuclear Spin:  7/2',
+        'Isomer State:  m2 confirmed',
+        'Bind Energy:   8.812 MeV/nuc',
+        'Cross Sect:    σ = 3.301 barn',
+        'Decay Chain:   α→β⁻→γ cascade',
+        'Oxidation:     +3, +5, +7',
+        'Crystal Sys:   Orthorhombic',
+        'Density:       19.77 g/cm³',
+        'Resistivity:   2.4×10⁻⁸ Ω·m',
+        'Band Gap:      0.441 eV',
+        'Fermi Level:   4.92 eV',
+        'Curie Temp:    1,187 K',
+        'Neel Temp:     [classified]',
+        'X-Ray Kα:      88.12 keV',
+        'Emittance ε:   0.031',
+        'Work Fnct φ:   4.41 eV',
+        'Plasma ωₚ:     8.8×10¹⁵ Hz',
+        'Refract n:     3.301+0.441i',
+        'Reflectance:   R = 0.77',
+        'Thermal K:     44.1 W/(m·K)',
+        'Heat Cp:       28.12 J/(mol·K)',
+        'Compressib:    3.3×10⁻¹¹ Pa⁻¹',
+        'Synth Method:  Heavy-ion fusion',
+        'Discovery:     GLMZ Deep Lab',
+        'IUPAC Name:    Unennilium (Φ)',
+        'Alt. Name:     [REDACTED]',
+        'Registry:      Ψ-441-GLMZ-Φ',
+        'Status:        RESTRICTED',
+        'Clearance:     CORP EYES ONLY',
+        'Sample Mass:   0.0000441 μg',
+        'Stability:     [CLASSIFIED]',
+        'Yield:         3.301×10⁻¹⁴ %',
+        'Hazard:        EXTREME',
+        'Manifold:      R⁴ compact',
+        'Curvature κ:   +0.00441',
+        'Euler χ:       2 (sphere)',
+        'Genus:         0 orientable',
+        'Betti b₀:      1',
+        'Symm Group:    Iₕ (order 120)',
+        'Dihedral:      A₅ × Z₂',
+        'Vertex deg:    3-regular',
+        'Face type:     pentagonal',
+        'Dual solid:    icosahedron',
+        'Conway:        D(I) notation',
+        'Wythoff:       3|2 5',
+        'Schläfli:      {5,3}',
+        'Vol/Area:      V/A = 0.332',
+        'Circum-R:      1.401 norm',
+        'Inrad-r:       1.113 norm',
+        'Midrad ρ:      1.309 norm',
+        'Petrie Poly:   decagon',
+        'Dual Verts:    12',
+        'Coord Ring:    ℝ[x,y,z]/I₅',
+        'Packing η:     0.9069 max',
+        'Lattice:       FCC equiv',
+        'Point Group:   Oh (48 ops)',
+        'Space Group:   Fm3̄m',
+        'Fourier k:     2π/a = 1.772',
+        'Mode ω₀:       [CLASSIFIED]',
+        'Signal SNR:    38.8 dB',
+        'Phase δ:       0.441 rad',
+        'Resonance:     4,410 Hz',
+        'Impedance:     441 + 88i Ω',
+    ];
 
     function spawnGeoWindow() {
         var host = getHost();
@@ -688,10 +840,13 @@ window.consoleBg = (function () {
         win.appendChild(titleEl);
 
         var S = 110;
+        var bodyEl = document.createElement('div');
+        bodyEl.className = 'cbg-geo-body';
         var cv = document.createElement('canvas');
         cv.className = 'cbg-geo-canvas';
         cv.width = S; cv.height = S;
-        win.appendChild(cv);
+        bodyEl.appendChild(cv);
+        win.appendChild(bodyEl);
         host.appendChild(win);
 
         var ctx2 = cv.getContext('2d');
@@ -740,19 +895,204 @@ window.consoleBg = (function () {
             cs.forEach(function(c){ ctx2.beginPath(); ctx2.arc(c[0],c[1],1,0,Math.PI*2); ctx2.fill(); });
         }
 
+        function drawVesica(t) {
+            var r=24, d=r*0.6;
+            ctx2.save(); ctx2.rotate(t*0.02);
+            ctx2.strokeStyle='rgba(70,200,220,0.45)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath(); ctx2.arc(-d/2,0,r,0,Math.PI*2); ctx2.stroke();
+            ctx2.beginPath(); ctx2.arc(d/2,0,r,0,Math.PI*2); ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,220,170,0.75)'; ctx2.lineWidth=0.8;
+            var half=Math.acos(d/(2*r));
+            ctx2.beginPath(); ctx2.arc(-d/2,0,r,-half,half); ctx2.arc(d/2,0,r,Math.PI-half,Math.PI+half); ctx2.closePath(); ctx2.stroke();
+            ctx2.restore();
+        }
+        function drawSpiral(t) {
+            var maxR=38, turns=4;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var a=f*turns*Math.PI*2+t*0.05; var r=f*maxR; if(i===0)ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r); else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,190,220,0.35)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var a=f*turns*Math.PI*2+t*0.05+Math.PI; var r=f*maxR; if(i===0)ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r); else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r); }
+            ctx2.stroke();
+        }
+        function drawLissajous(t) {
+            var a=3, b=2, R=38;
+            ctx2.strokeStyle='rgba(70,210,170,0.60)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=400;i++){ var phi=(i/400)*Math.PI*2; var x=R*Math.sin(a*phi+t*0.04); var y=R*Math.sin(b*phi); if(i===0)ctx2.moveTo(x,y); else ctx2.lineTo(x,y); }
+            ctx2.stroke();
+        }
+        function drawStar5(t) {
+            var r=36, ir=14, pts=5, rot=t*0.04;
+            ctx2.strokeStyle='rgba(70,210,170,0.55)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath();
+            for(var i=0;i<=pts*2;i++){ var rad=(i%2===0)?r:ir; var a=(i/(pts*2))*Math.PI*2+rot-Math.PI/2; if(i===0)ctx2.moveTo(Math.cos(a)*rad,Math.sin(a)*rad); else ctx2.lineTo(Math.cos(a)*rad,Math.sin(a)*rad); }
+            ctx2.closePath(); ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.38)'; ctx2.lineWidth=0.6;
+            ctx2.beginPath();
+            for(var i=0;i<=pts;i++){ var a=(i/pts)*Math.PI*2+rot-Math.PI/2; if(i===0)ctx2.moveTo(Math.cos(a)*ir,Math.sin(a)*ir); else ctx2.lineTo(Math.cos(a)*ir,Math.sin(a)*ir); }
+            ctx2.closePath(); ctx2.stroke();
+            var op=[]; for(var i=0;i<pts;i++){ var a=(i/pts)*Math.PI*2+rot-Math.PI/2; op.push([Math.cos(a)*r,Math.sin(a)*r]); }
+            ctx2.strokeStyle='rgba(70,220,170,0.28)'; ctx2.lineWidth=0.5;
+            for(var i=0;i<pts;i++){ var j=(i+2)%pts; ctx2.beginPath(); ctx2.moveTo(op[i][0],op[i][1]); ctx2.lineTo(op[j][0],op[j][1]); ctx2.stroke(); }
+        }
+        function drawTorus(t) {
+            var R=22, r=10, rings=8;
+            for(var i=0;i<rings;i++){ var phi=(i/rings)*Math.PI*2+t*0.03; var cx=Math.cos(phi)*R, cy=Math.sin(phi)*R*0.35; var sc=0.5+0.5*Math.abs(Math.cos(phi)); var al=(0.3+0.3*Math.abs(Math.cos(phi))).toFixed(2); ctx2.strokeStyle='rgba(70,210,170,'+al+')'; ctx2.lineWidth=0.6; ctx2.beginPath(); ctx2.ellipse(cx,cy,r*sc,r*0.35,phi,0,Math.PI*2); ctx2.stroke(); }
+            ctx2.strokeStyle='rgba(70,200,220,0.45)'; ctx2.lineWidth=0.7;
+            ctx2.beginPath(); ctx2.ellipse(0,0,R+r,(R+r)*0.35,0,0,Math.PI*2); ctx2.stroke();
+            ctx2.beginPath(); ctx2.ellipse(0,0,R-r,(R-r)*0.35,0,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawHelix(t) {
+            var R=14, turns=3;
+            ctx2.lineWidth=0.8;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05; var y=f*56-28; if(i===0)ctx2.moveTo(Math.cos(ang)*R,y); else ctx2.lineTo(Math.cos(ang)*R,y); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,190,220,0.50)'; ctx2.beginPath();
+            for(var i=0;i<=300;i++){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05+Math.PI; var y=f*56-28; if(i===0)ctx2.moveTo(Math.cos(ang)*R,y); else ctx2.lineTo(Math.cos(ang)*R,y); }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,220,170,0.22)'; ctx2.lineWidth=0.5;
+            for(var i=0;i<=300;i+=25){ var f=i/300; var ang=f*turns*Math.PI*2+t*0.05; var y=f*56-28; ctx2.beginPath(); ctx2.moveTo(Math.cos(ang)*R,y); ctx2.lineTo(Math.cos(ang+Math.PI)*R,y); ctx2.stroke(); }
+        }
+
+        function drawRose(t) {
+            var R=38, k=3;
+            ctx2.strokeStyle='rgba(70,210,170,0.70)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=720;i++){
+                var th=(i/720)*Math.PI*2;
+                var r=R*Math.cos(k*(th+t*0.018));
+                if(i===0) ctx2.moveTo(r*Math.cos(th),r*Math.sin(th));
+                else ctx2.lineTo(r*Math.cos(th),r*Math.sin(th));
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.4;
+            ctx2.beginPath(); ctx2.arc(0,0,R,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawCardioid(t) {
+            var a=18, rot=t*0.012;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=360;i++){
+                var th=(i/360)*Math.PI*2;
+                var r=a*(1+Math.cos(th));
+                if(i===0) ctx2.moveTo(r*Math.cos(th+rot),r*Math.sin(th+rot));
+                else ctx2.lineTo(r*Math.cos(th+rot),r*Math.sin(th+rot));
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,a*2,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawAsteroid(t) {
+            var R=36, rot=t*0.02;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=360;i++){
+                var p=(i/360)*Math.PI*2;
+                var x=R*Math.pow(Math.cos(p+rot),3), y=R*Math.pow(Math.sin(p+rot),3);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.25)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,R,0,Math.PI*2); ctx2.stroke();
+            for(var i=0;i<4;i++){
+                var a=(i/4)*Math.PI*2+rot;
+                ctx2.strokeStyle='rgba(70,220,170,0.18)'; ctx2.lineWidth=0.4;
+                ctx2.beginPath(); ctx2.moveTo(0,0); ctx2.lineTo(Math.cos(a)*R,Math.sin(a)*R); ctx2.stroke();
+            }
+        }
+        function drawEpicycloid(t) {
+            var Rc=24, rc=8, rot=t*0.015;
+            ctx2.strokeStyle='rgba(70,210,170,0.65)'; ctx2.lineWidth=0.8;
+            ctx2.beginPath();
+            for(var i=0;i<=600;i++){
+                var p=(i/600)*Math.PI*2+rot;
+                var x=(Rc+rc)*Math.cos(p)-rc*Math.cos((Rc/rc+1)*p);
+                var y=(Rc+rc)*Math.sin(p)-rc*Math.sin((Rc/rc+1)*p);
+                if(i===0) ctx2.moveTo(x,y); else ctx2.lineTo(x,y);
+            }
+            ctx2.stroke();
+            ctx2.strokeStyle='rgba(70,200,220,0.22)'; ctx2.lineWidth=0.5;
+            ctx2.beginPath(); ctx2.arc(0,0,Rc,0,Math.PI*2); ctx2.stroke();
+        }
+        function drawWeb(t) {
+            var rings=5, spokes=8, maxR=40, rot=t*0.01;
+            ctx2.strokeStyle='rgba(70,200,220,0.35)'; ctx2.lineWidth=0.5;
+            for(var s=0;s<spokes;s++){
+                var a=(s/spokes)*Math.PI*2+rot;
+                ctx2.beginPath(); ctx2.moveTo(0,0); ctx2.lineTo(Math.cos(a)*maxR,Math.sin(a)*maxR); ctx2.stroke();
+            }
+            ctx2.strokeStyle='rgba(70,210,170,0.55)'; ctx2.lineWidth=0.7;
+            for(var ri=1;ri<=rings;ri++){
+                var r=(ri/rings)*maxR;
+                ctx2.beginPath();
+                for(var s=0;s<=spokes;s++){
+                    var a=(s/spokes)*Math.PI*2+rot;
+                    if(s===0) ctx2.moveTo(Math.cos(a)*r,Math.sin(a)*r);
+                    else ctx2.lineTo(Math.cos(a)*r,Math.sin(a)*r);
+                }
+                ctx2.closePath(); ctx2.stroke();
+            }
+        }
+
         function geoFrame() {
             ctx2.clearRect(0,0,S,S);
             ctx2.save(); ctx2.translate(S/2,S/2);
             angle += 0.007;
-            if      (key==='flower')   drawFlower(angle);
-            else if (key==='metatron') drawMetatron(angle);
-            else                       drawWire(shape, angle*0.4, angle);
+            if      (key==='flower')     drawFlower(angle);
+            else if (key==='metatron')   drawMetatron(angle);
+            else if (key==='vesica')     drawVesica(angle);
+            else if (key==='spiral')     drawSpiral(angle);
+            else if (key==='lissajous')  drawLissajous(angle);
+            else if (key==='star5')      drawStar5(angle);
+            else if (key==='torus')      drawTorus(angle);
+            else if (key==='helix')      drawHelix(angle);
+            else if (key==='rose')       drawRose(angle);
+            else if (key==='cardioid')   drawCardioid(angle);
+            else if (key==='asteroid')   drawAsteroid(angle);
+            else if (key==='epicycloid') drawEpicycloid(angle);
+            else if (key==='web')        drawWeb(angle);
+            else                         drawWire(shape, angle*0.4, angle);
             ctx2.restore();
             rafId = requestAnimationFrame(geoFrame);
         }
         geoFrame();
 
-        setTimeout(function(){ cancelAnimationFrame(rafId); win.classList.add('cbg-win--out'); setTimeout(function(){ if(win.parentNode) win.parentNode.removeChild(win); },500); }, rand(4000,9000));
+        // ── Scrolling element report text (right of canvas) ────────────────
+        var reportEl = document.createElement('div');
+        reportEl.className = 'cbg-geo-report';
+        var innerEl = document.createElement('div');
+        innerEl.className = 'cbg-geo-report-inner';
+        reportEl.appendChild(innerEl);
+        bodyEl.appendChild(reportEl);
+
+        var lineH = 9;
+        var visCount = Math.ceil(110 / lineH) + 3;
+        var reportBuf = [];
+        for (var ri = 0; ri < visCount + 2; ri++) { reportBuf.push(pick(GEO_REPORT_LINES)); }
+        innerEl.textContent = reportBuf.join('\n');
+        var scrollOff = 0;
+        var scrollTmr = setInterval(function () {
+            scrollOff += 0.35;
+            if (scrollOff >= lineH) {
+                scrollOff -= lineH;
+                reportBuf.shift();
+                reportBuf.push(pick(GEO_REPORT_LINES));
+                innerEl.textContent = reportBuf.join('\n');
+            }
+            innerEl.style.transform = 'translateY(' + scrollOff.toFixed(1) + 'px)';
+        }, 60);
+
+        var ttl = rand(4000, 9000);
+        setTimeout(function () {
+            clearInterval(scrollTmr);
+            cancelAnimationFrame(rafId);
+            win.classList.add('cbg-win--out');
+            setTimeout(function () { if (win.parentNode) win.parentNode.removeChild(win); }, 500);
+        }, ttl);
     }
 
     // ── Corporate memo intercept ──────────────────────────────────────────────
@@ -764,7 +1104,145 @@ window.consoleBg = (function () {
         'PRIORITY: URGENT\nTO: Security Chief, Dist 9\nRE: Witness Mgmt — Case #0091\n\nAll three witnesses — silence them.\nPreferred: reassignment.\nFallback: Protocol Null.\nContractor already briefed.\n\n[SIG: 0xdc3545 // VAULTDROP]',
         'FROM: Acquisition Strategy\nTO: Field Operations\nRE: Sector 4 Hostile Takeover\n\nPhase 1: Destroy competitor supply.\nPhase 2: Corner remaining market.\nPhase 3: Price floor +400%.\nKeep district enforcement on payroll.\n\n>>> DARK NODE :: glmz/7 <<<',
         'TO: Behavioral Analytics Team\nRE: Pop. Compliance — Batch 9\n\nDeploy sublim. seq. in dist2 feed.\nTarget: dissent suppression.\nVector: entertainment network.\nDeny if queried. Log: none.\n\n[INTERCEPT CONFIDENCE: 0.88]',
+        'PRIVILEGED COMMUNICATION\nFROM: Acquisitions Div. 3\nTO: Field Security\nRE: Competitor Asset — Terminal\n\nSubject refused acquisition offer.\nAuthorize final resolution.\nRecover IP before cleanup.\nRoute via dark node only.\n\n[GLMZ INTERCEPT: 94%]',
+        'FROM: Behavioral Mod. Group\nTO: Neural Interface Program\nRE: Opt-Out Handling — Priority\n\nOperators flagging consent removal:\nDo NOT honor. Flag as compromised.\nAccelerate neural-key binding.\nLegal has pre-approved language.\n\n>>> CREST DYNAMICS INTERNAL <<<',
+        'URGENT — ALL DISTRICT COMMANDERS\nFROM: Enforcement Central\nRE: Freelancer Surge — District 7\n\nSurge is cover. Target is #3301.\nCollateral: acceptable up to 40%.\nNo press. No GLMZ incident report.\nClose window before 0600.\n\n[AUTH: 0xBE0441]',
+        'FROM: Data Harvesting Unit 9\nTO: Board — Eyes Only\nRE: Q3 Neural Data — Profit\n\n44,000 operator profiles sold.\nBuyer: NeuralState consortium.\nData stripped of ID — plausibly.\nReturn: Φ4.4M corp rate.\n\n>>> RELAY CORRUPTION <<<',
+        'TO: Corp Liaison, District 9\nFROM: Legal Stratagem\nRE: Liability Suppression\n\nSeven incident reports — suppress.\nSettle: Φ3,000 each, no admission.\nIf refused: standard protocol 7.\nDestroy original filings after.\n\n[INTERCEPT: dist9/dark-node]',
+        'FROM: Medical Ethics Bypass\nTO: Cyberware Division\nRE: Non-Consenting Subjects\n\nTrial cohort 44 is involuntary.\nClinical oversight circumvented.\nOutcomes trending positive.\nTerminate failed cohort quietly.\n\n>>> DARK NODE :: dist4 <<<',
+        'CLASSIFIED — BOARD LEVEL ONLY\nFROM: Asset Liquidation\nTO: Director 94-C\nRE: Witness List — Case #0099\n\nSix witnesses. Five located.\nSchedule: sequential, 72h window.\nMake them look accidental.\nFinal — offer Φ80k, else same.\n\n[SIG: 0x9A3301 // VERIFIED]',
+        'FROM: Media Relations (Covert)\nTO: Entertainment Network\nRE: Narrative Seeding — Phase 3\n\nInsert: freelancers = terrorists.\nEnforcement = civic guardians.\nSubtlety required — 6mo campaign.\nDeny corp authorship at all costs.\n\n[RELAY: glmz-comms-d12]',
+        'TO: Corp Security, District 4\nFROM: Territorial Division\nRE: Hostile Freelancer — 0x4492\n\nOperator has evidence of Q3 harvest.\nContain before they reach press.\nLevel 3 protocol authorized.\nNo record of this transmission.\n\n>>> RELAY CORRUPTION — partial <<<',
+        'FROM: Population Control Div.\nTO: GLMZ District Administrators\nRE: Food Access Throttle — Batch 4\n\nDistrict 9 rationing at 44%.\nReduction to 30% approved Q1.\nFrame as supply chain failure.\nTrack compliance via BCI metrics.\n\n[INTERCEPT CONFIDENCE: 0.91]',
+        'INTERNAL — DESTROY AFTER READ\nFROM: Corp Ethics Committee\nTO: [REDACTED]\nRE: Upcoming Ethics Review\n\nAnswers to inquiries 3, 7, 12:\n— Data: "aggregated, anonymized"\n— Consent: "implied via ToS"\n— Deaths: "within projections"\nMembers have been briefed.\n\n[SIG: 0xDEAD4412]',
+        // 15 more
+        'FROM: Extraction Unit 7\nTO: Field Ops Director\nRE: Asset 3301 — Status Update\n\nAsset uncooperative after 72h.\nStandard persuasion ineffective.\nPhase 2 authorized by Dir. 94-C.\nDispose after extraction complete.\n\n>>> GLMZ DARK NODE :: dist4 <<<',
+        'FROM: Neural Analytics Board\nTO: BCI Program Dir.\nRE: Operator 0x4492 — Classify\n\nNeural profile matches dissident tag.\nRecommend silent reclassification.\nAccess throttle: 40% — covert.\nDo not inform subject.\n\n[RELAY: sec/vault-7]',
+        'CONFIDENTIAL — NO EXTERNAL\nFROM: Subsidiary Relations\nTO: Enforcement Liaison\nRE: Competitor Infrastructure\n\nThree relay nodes confirmed hostile.\nCoordinate with dist9 enforcement.\nPlausible denial required.\nNo Crest equipment — freelancers.\n\n>>> INTERCEPT :: corp/mirror <<<',
+        'TO: Narrative Ops Team\nFROM: Social Influence Div.\nRE: Freelancer Problem — Framing\n\nCurrent narrative: economic threat.\nProposed pivot: public safety.\nTimeline: 3-week push via ent/net.\nSuccess metric: 60% public favor.\n\n[GLMZ RELAY: dist12/comms]',
+        'INTERNAL ONLY — LEGAL\nFROM: Compliance Division\nTO: Security Dir.\nRE: Incident 0091 — Paperwork\n\nThree deaths out of scope.\nFile as industrial accident.\nFamily settlements: Φ8,000 each.\nNDA required — enforce aggressively.\n\n[SIG: 0x9A3301 // CORP-LEGAL]',
+        'FROM: Behavioral Modification R&D\nTO: Program Board\nRE: Trial Cohort 7 — Outcomes\n\nCompliance rate: 88% (target 80%).\nSubjects unaware of BCI seeding.\nSide effects: within tolerance.\nProceed to Batch 8 — 500 subjects.\n\n>>> DARK NODE :: dist7/relay <<<',
+        'URGENT PRIORITY\nFROM: Intelligence Operations\nTO: Crest Dynamics\nRE: Journalist — Case #0441\n\nJournalist has partial Q3 data.\nSourced from inside — find leak.\nContain story before press cycle.\nPermanent solution if necessary.\n\n[INTERCEPT CONFIDENCE: 0.96]',
+        'FROM: Territorial Expansion\nTO: Legal + Enforcement\nRE: District 2 Consolidation\n\nPhase 1 complete: 3 orgs dissolved.\nPhase 2: Purchase remaining assets.\nPhase 3: Restructure workforce.\nExpected redundancies: 400-600.\n\n>>> CORP/BROKER :: VAULTDROP <<<',
+        'CLASSIFIED — ABOVE TOP\nFROM: AI Autonomy Division\nTO: Board Only\nRE: Behemoth Meridian-88 — Update\n\nAutonomy module fully deployed.\nHuman oversight: symbolic only.\nContingency removal: scheduled.\nDo not log this meeting.\n\n[SIG: 0xFF0000 // PURGE-ON-READ]',
+        'TO: Forensic Suppression Team\nFROM: Director 94-C\nRE: Evidence — Batch 0099\n\nSeven files. Delete originals.\nOverwrite media 3 passes.\nPurge relay cache: dist4, dist7.\nConfirm by 0300 UTC.\n\n>>> RELAY CORRUPTION — terminal <<<',
+        'FROM: Public Health Proxy\nTO: District Supply Chain\nRE: Pharmaceutical Diversion\n\nDivert Batch 44 to compliance stream.\nReduce district 9 access 60%.\nFrame as shortage — corp approved.\nProfits to hidden account 0x9F3A.\n\n[INTERCEPT: glmz/gate-12]',
+        'INTERNAL — NO EXTERNAL\nFROM: BCI Surveillance Unit\nTO: Corp Intelligence\nRE: Watchlist Update — Q2\n\n3,301 operators under passive monitor.\n412 flagged for attention.\nNeural-key patterns attached.\nAutomated escalation if triggered.\n\n>>> CREST INTERNAL :: sec/enclave <<<',
+        'TO: Field Security, District 12\nFROM: Asset Protection\nRE: Freelancer Collective — Action\n\nCell identified: 4 members, dark-node.\nSurveillance complete: 18 days.\nAuthorize simultaneous termination.\nCoordinate with dist9 — 0400.\n\n[SIG: 0xBE0441 // SILENT]',
+        'FROM: Data Monetization Group\nTO: Board of Directors\nRE: Neural Signature Auction — Q3\n\n88,000 unique profiles ready.\nSale to NeuralState: Φ8.8M.\nAnonymization: cosmetic only.\nAudit-proof — legal reviewed.\n\n>>> RELAY: corp/mirror-d7 <<<',
+        'PRIORITY ALPHA\nFROM: Enforcement Central\nTO: ALL DISTRICT COMMANDS\nRE: Operation Dark Census\n\nRound up all unregistered operators.\nBCI registration mandatory by 0600.\nNon-compliance: level 3 detention.\nMedia blackout in effect.\n\n[RELAY CORRUPTION — CRITICAL]',
     ];
+
+    // ── Warning popup data ──────────────────────────────────────────────────
+    var WARN_TITLES = [
+        'WARN — latency spike',     'WARN — retry limit',       'WARN — signal degraded',
+        'WARN — disk 85% full',     'WARN — cert expires 7d',   'WARN — audit gap',
+        'WARN — bci drift',         'WARN — temp elevated',     'WARN — corp deviation',
+        'WARN — foreign pattern',   'WARN — rate limit near',   'WARN — replica lag',
+        'WARN — operator anomaly',  'WARN — entropy low',       'WARN — auth failures',
+        'WARN — memory pressure',   'WARN — port saturation',   'WARN — beacon change',
+        'WARN — key rotation due',  'WARN — zone access freq',  'WARN — crest wear score',
+        'WARN — hkb fluid low',     'WARN — net tunnel flap',   'WARN — db stats stale',
+        'NOTICE — process flagged', 'NOTICE — unusual traffic', 'NOTICE — policy deviation',
+        'NOTICE — shadow process',  'NOTICE — off-hours access','NOTICE — location mismatch',
+        'NOTICE — glmz gate usage', 'NOTICE — schedule deviate',
+    ];
+
+    var WARN_MSGS = [
+        'Operator 0x3301 accessed zone B\n7 events in 24h — baseline is 2',
+        'BCI latency 18ms — threshold 10ms\nClassifier confidence 0.71 — watch',
+        'Cert glmz.relay.internal: 7d expiry\nRenewal scheduled — no action yet',
+        'Disk /var/bci at 85% capacity\nSchedule cleanup — 2h to critical',
+        'Replication lag 4.4s — watch\nPrimary write rate elevated 3×',
+        'Entropy pool: 48 bits — low\nReseeding from RDRAND — ok for now',
+        'HKB wear_score=0.72 — service soon\n88 cycles to recommended interval',
+        'BCI drift: 0.8μV/min on ring2\nBelow alarm threshold — log started',
+        'Operator 0x7712 off-hours access\n03:22 district4 — within policy',
+        'Net beacon 0xBE04 freq change\n+12kHz shift — interference or move?',
+        'Corp audit: 4 events out-of-order\nTimestamps within 200ms — clock skew?',
+        'Auth failures uid=3301: 3 in 1h\nAbove baseline 1 — no lockout yet',
+        'Memory RSS 1.4G — 73% of limit\nGrowth 44MB/h — check for leak',
+        'glmz gate 12 use 44× today\nBaseline 12× — freelancer surge?',
+        'Shadow process pid=31337 found\nNot in manifest — investigating',
+        'Location mismatch: 0x4492\nLast seen d7, login from d12',
+        'Corp policy deviation: uid=0x3301\n3 zone-B accesses without prior auth',
+        'Foreign key pattern in BCI stream\nClassifier flagging unknown operator',
+        'Key rotation 12d overdue: corp-vault\nSchedule window before expiry',
+        'RBS thermal 47C — within spec\nElev. above baseline 38C — log',
+        'HKB hydraulic: fluid 20% remaining\nRefill due before next session',
+        'Net tunnel wg to dist4 flapped 3×\nStability: 94% uptime — watch',
+        'DB stats 180s stale: bci_events\nPlanner using old data — ANALYZE',
+        'Cert corp-enclave depth=1: 14d\nAuto-renew queued — monitor',
+        'BCI ring3 impedance creeping up\n18kΩ — trend toward 22kΩ limit',
+        // 30 more
+        'RBS disc wear-score 0.61 — service at 0.80\n14,200 rotations logged this quarter',
+        'BCI ring2 noise floor elevated\nBaseline 0.8μV → now 1.4μV — possible impedance',
+        'HKB spring tension 87% spec\nFall below 80% triggers manual inspect',
+        'Enclave attestation skew 3.2s\nClock drift — resync before next audit',
+        'GLMZ node dist12 latency 88ms\nBaseline 22ms — check relay path',
+        'Corp sync drift: 9 events behind\nPrimary load elevated — catch-up queued',
+        'Auth token expiry in 4h: uid=0x4492\nRenewal queued — no action needed yet',
+        'Relay packet loss 0.8%: dist9→dist12\nAbove baseline 0.1% — path degraded',
+        'DB write amplification 4.8×\nLSM compaction behind — schedule window',
+        'File descriptors 1800/2048\nApproaching limit — check for leaks',
+        'CPU core3 throttling at 88°C\nCooling nominal — sustained load spike',
+        'Swap pressure 14% — watch\nRSS trending up, GC may not keep pace',
+        'TLS cert chain depth=4: corp-root\nUnusual — verify issuer hierarchy',
+        'BCI motor cortex drift 0.6%/hr\nBelow abort threshold — calibrate next session',
+        'Dark-node latency 340ms: glmz/7\nNominal <80ms — relay path congested',
+        'Audit log 44s behind real-time\nWriter blocked on disk flush — ok for now',
+        'Snapshot 48h stale: bci_events\nScheduled refresh missed — retry queued',
+        'License utilization 88%: bci_nodes\n12 seats remain — notify procurement',
+        'RNG entropy pool 32 bits\nBelow 64-bit threshold — kernel reseed pending',
+        'BCI power reserve 12%\nBattery degradation flag — replace before next op',
+        'IPC queue depth 420: bci_daemon\nNominal 50 — consumer falling behind',
+        'HKB cycle count 9,800 — service at 10k\nSchedule maintenance before next session',
+        'Corp enforcement notice: zone-C access\nOperator 0x3301 flagged — within policy',
+        'Corp data retention horizon breach\nEvents older than 90d present — archive',
+        'Corp enclave query volume spike\n3× baseline in last hour — investigate',
+        'Off-site login: uid=0x7712 dist4\nLast known location: dist9 — review',
+        'BCI key age 180d: uid=0x3301\nRotation overdue — schedule in 14d window',
+        'Rate limit 90%: relay forwarding\nCorp quota — request increase or throttle',
+        'New district node dist2/fab-9 online\nNot in routing table — manual review',
+        'Freelancer 0x4492 on watchlist match\nLow confidence — monitor, no action yet',
+    ];
+
+    // ── Glyph character pool (scan-box content) ─────────────────────────────
+    var GLYPH_CHARS =
+        '░▒▓█▌▐▀▄■□◆◇○●◉◎' +
+        '∞≠≈∫∂∆Ωπμλφψξζ⊗⊕⊙∅' +
+        '←→↑↓↔↕⇐⇒⇑⇓' +
+        '₿€¥₩₹Φ' +
+        '✦✧✩✫✭✯✱✲✳✴✵✶✷✸' +
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ' +
+        'αβγδεζηθικλμνξοπρστυφχψω';
+
+    function eraseMemo(el) {
+        var BLOCK = '█▓▒░▪■▫';
+        var chars = el.textContent.split('');
+        var total = chars.length;
+        var phase = 0;
+        var count = 0;
+        var timer = setInterval(function () {
+            var n = rand(4, 10);
+            for (var i = 0; i < n; i++) {
+                var idx = rand(0, total - 1);
+                if (chars[idx] === '\n') continue;
+                if (phase === 0) {
+                    chars[idx] = BLOCK[rand(0, BLOCK.length - 1)];
+                } else {
+                    chars[idx] = ' ';
+                }
+            }
+            el.textContent = chars.join('');
+            count += n;
+            if (phase === 0 && count >= total * 1.6) { phase = 1; count = 0; }
+            if (phase === 1 && count >= total * 1.6) {
+                clearInterval(timer);
+                if (el.parentNode) el.parentNode.removeChild(el);
+            }
+        }, 22);
+    }
 
     function spawnMemo() {
         var host = getHost();
@@ -775,10 +1253,7 @@ window.consoleBg = (function () {
         el.style.top  = rand(6, 52) + '%';
         el.textContent = pick(MEMOS);
         host.appendChild(el);
-        setTimeout(function(){
-            el.classList.add('cbg-memo--flicker');
-            setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 1800);
-        }, rand(3000, 6000));
+        setTimeout(function () { eraseMemo(el); }, rand(3000, 6000));
     }
 
     // ── Tick loop ───────────────────────────────────────────────────────────
@@ -797,14 +1272,15 @@ window.consoleBg = (function () {
     function tick() {
         if (!getHost()) { tickTimer = null; return; }
         var r = Math.random();
-        if      (r < 0.03) spawnCascadeError();
-        else if (r < 0.06) spawnError();
-        else if (r < 0.09) spawnMemo();
-        else if (r < 0.13) spawnGeoWindow();
-        else if (r < 0.32) spawnCascade();
-        else if (r < 0.53) spawnFrag();
-        else if (r < 0.88) spawnWindow();
-        tickTimer = setTimeout(tick, rand(1300, 4600));
+        if      (r < 0.10) spawnError();
+        else if (r < 0.18) spawnWarning();
+        else if (r < 0.22) spawnMemo();
+        else if (r < 0.30) spawnScanBox();
+        else if (r < 0.42) spawnGeoWindow();
+        else if (r < 0.47) spawnCascade();
+        else if (r < 0.61) spawnFrag();
+        else                spawnWindow();
+        tickTimer = setTimeout(tick, rand(900, 3200));
     }
 
     // ── Quake lightstyle scan lines ─────────────────────────────────────────
@@ -855,12 +1331,10 @@ window.consoleBg = (function () {
     }
 
     function start() {
-        if (tickTimer) { clearTimeout(tickTimer); tickTimer = null; }
+        if (tickTimer) return;  // already running — preserve state across navigations
         if (getHost()) {
             tickTimer = setTimeout(tick, rand(500, 1500));
             startScanLines();
-        } else {
-            stopScanLines();
         }
     }
 

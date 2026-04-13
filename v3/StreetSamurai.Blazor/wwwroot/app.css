@@ -971,6 +971,34 @@ textarea.auto-grow {
     opacity: 0.06;
 }
 
+/* ── Glyph boxes — single blurry unicode char, fades in/out ─────────────── */
+.glyph-box {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+    border: 1px solid rgba(255, 0, 51, 0.55);
+    box-shadow: 0 0 6px rgba(255, 0, 51, 0.18);
+    background: rgba(13, 17, 23, 0.68);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1;
+    color: rgba(255, 0, 51, 0.75);
+    padding: 2px 3px;
+    opacity: 0;
+    animation: sl-glitch-in 0.06s ease forwards;
+}
+.glyph-box--out {
+    animation: sl-glitch-out 0.6s ease forwards !important;
+}
+@keyframes sl-glitch-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes sl-glitch-out {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 /* ── Warning popup — amber box, less severe than error ──────────────────── */
 .cbg-warn-popup {
     position: absolute;
@@ -1022,6 +1050,9 @@ textarea.auto-grow {
 /* ── Scan highlight boxes ────────────────────────────────────────────────── */
 .cbg-scan-box {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(255, 0, 51, 0.55);
     box-shadow: 0 0 6px rgba(255, 0, 51, 0.18),
                 inset 0 0 8px rgba(255, 0, 51, 0.04);
@@ -1130,16 +1161,16 @@ textarea.auto-grow {
     font-family: 'Courier New', monospace;
     font-size: 0.6rem;
     line-height: 1.45;
-    color: rgba(255, 185, 60, 0.82);
-    background: rgba(12, 8, 0, 0.07);
-    border: 1px solid rgba(255, 155, 30, 0.35);
+    color: rgba(255, 185, 60, 0.38);
+    background: rgba(12, 8, 0, 0.04);
+    border: 1px solid rgba(255, 155, 30, 0.16);
     border-radius: 2px;
     padding: 8px 10px;
     white-space: pre;
     z-index: 2;
     pointer-events: none;
     animation: cbg-memo-in 0.18s ease forwards;
-    box-shadow: 0 0 10px rgba(255, 140, 0, 0.12);
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.06);
 }
 @keyframes cbg-memo-in {
     from { opacity: 0; transform: translateY(-4px); }

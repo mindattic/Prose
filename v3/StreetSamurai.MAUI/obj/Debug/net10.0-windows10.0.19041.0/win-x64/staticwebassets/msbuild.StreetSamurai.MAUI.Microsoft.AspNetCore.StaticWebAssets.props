@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cztivz5uw8</Fingerprint>
-      <Integrity>uNxMVE00lSmxfAn4YFKiPsFeObwk4Su2Ov0xSNy3X+A=</Integrity>
+      <Fingerprint>hjsakx5f63</Fingerprint>
+      <Integrity>A4l1v4n0cpWqOovrbX6iHwJTFnIsMz7jcsRVWULLsXU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>34445</FileLength>
-      <LastWriteTime>Sun, 12 Apr 2026 17:32:44 GMT</LastWriteTime>
+      <FileLength>43652</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:13:24 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -32,12 +32,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hsh61jlyb8</Fingerprint>
-      <Integrity>b8MrveZL8Pz1UayA47+EudNRUgP3XLWccbndel/2v0M=</Integrity>
+      <Fingerprint>mg2oy86jmr</Fingerprint>
+      <Integrity>iju39iQimLX5F48belp88Jg4XtfBsJPLQOrGMLq+IlY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>2356</FileLength>
-      <LastWriteTime>Sun, 12 Apr 2026 17:29:09 GMT</LastWriteTime>
+      <FileLength>2450</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:13:12 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\console-bg.js'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>afex02e5w4</Fingerprint>
-      <Integrity>Ri93wAEfeygvYOZsZSuUXJnwr196yuvfhIU35PohFlM=</Integrity>
+      <Fingerprint>07ql13dr5b</Fingerprint>
+      <Integrity>3JTO8DsNa2JeXLJ9syx8RHF2Y7vqTbsn9vbtNvdY79U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>5034</FileLength>
-      <LastWriteTime>Sun, 12 Apr 2026 17:29:03 GMT</LastWriteTime>
+      <FileLength>96043</FileLength>
+      <LastWriteTime>Sun, 12 Apr 2026 20:29:03 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\console-bg.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\geomap.js'))">
@@ -79,6 +79,26 @@
       <FileLength>2811</FileLength>
       <LastWriteTime>Fri, 10 Apr 2026 06:15:03 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\geomap.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\glyph-box.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/glyph-box.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6h4oqir7wu</Fingerprint>
+      <Integrity>qn59CRXGZE16mphuhN7T6gJBIwbBlKs9X9fT37Vh768=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>2162</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:14:21 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\glyph-box.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))">
       <SourceType>Package</SourceType>
@@ -132,12 +152,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nxff4vy7rd</Fingerprint>
-      <Integrity>lcEhjqDdcXiwR1HBE35EXjoYYzSNS7a6nfWvDo2/wqo=</Integrity>
+      <Fingerprint>cjvn7ag6lt</Fingerprint>
+      <Integrity>aE7OyHX/RPkfPGnfbxpDBaTs35TI1Lx9QictNtujC6Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>6962</FileLength>
-      <LastWriteTime>Sun, 12 Apr 2026 17:39:20 GMT</LastWriteTime>
+      <FileLength>16514</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:14:16 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\home-bg.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loader.js'))">
@@ -179,6 +199,26 @@
       <FileLength>22090</FileLength>
       <LastWriteTime>Fri, 10 Apr 2026 06:14:29 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scan-glitch.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/scan-glitch.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6h4oqir7wu</Fingerprint>
+      <Integrity>qn59CRXGZE16mphuhN7T6gJBIwbBlKs9X9fT37Vh768=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>2162</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:13:14 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scan-glitch.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))">
       <SourceType>Package</SourceType>

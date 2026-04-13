@@ -5,14 +5,22 @@
 @inject IJSRuntime JS
 @inject SearchTriggerService SearchTrigger
 @inject ToastNotifier Toast
+@inject MediaService Media
 @implements IDisposable
 
 <style>
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
-<div class="cbg-sl-fine"   aria-hidden="true"></div>
-<div class="cbg-sl-coarse" aria-hidden="true"></div>
+<div class="cbg-sl-fine"        aria-hidden="true"></div>
+<div class="cbg-sl-coarse"       aria-hidden="true"></div>
+<div class="console-bg-host"     aria-hidden="true"></div>
+
+@if (bgImage != null)
+{
+    <img id="home-bg-img" src="/api/media/@bgImage" class="home-bg-img"
+         style="opacity:0" alt="" aria-hidden="true" />
+}
 
 <div class="app-shell @(!Access.CanWrite ? "readonly-mode" : "") @(SettingsSvc.RepoListOnRight ? "list-right" : "")"
      @onkeydown="OnGlobalKeyDown" tabindex="-1">
@@ -38,6 +46,9 @@
     ];
 
     private bool navPending = false;
+    private string? bgImage;
+
+    protected override void OnInitialized() => bgImage = Media.GetRandomImage();
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -46,6 +57,10 @@
             Nav.LocationChanged += OnLocationChanged;
             Nav.RegisterLocationChangingHandler(OnLocationChanging);
             CheckMissingEnvVars();
+            if (bgImage != null)
+            {
+                try { await JS.InvokeVoidAsync("homeBg.apply", "home-bg-img", $"/api/media/{bgImage}"); } catch { }
+            }
         }
         if (navPending)
         {
