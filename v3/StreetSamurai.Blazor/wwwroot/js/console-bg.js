@@ -2370,15 +2370,19 @@ window.consoleBg = (function () {
         'Freelancer 0x4492 on watchlist match\nLow confidence — monitor, no action yet',
     ];
 
-    // ── Glyph character pool (scan-box content) ─────────────────────────────
+    // ── Glyph character pool ────────────────────────────────────────────────
     var GLYPH_CHARS =
-        '░▒▓█▌▐▀▄■□◆◇○●◉◎' +
-        '∞≠≈∫∂∆Ωπμλφψξζ⊗⊕⊙∅' +
-        '←→↑↓↔↕⇐⇒⇑⇓' +
-        '₿€¥₩₹Φ' +
-        '✦✧✩✫✭✯✱✲✳✴✵✶✷✸' +
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ' +
-        'αβγδεζηθικλμνξοπρστυφχψω';
+        '░▒▓█▌▐▀▄■□▪▫◆◇○●◉◎⊗⊕⊙∅' +
+        '∞≠≈∫∂∆Ωπμλφψξζ' +
+        '⌂⌀⌘⌬⌭⌫' +
+        '✦✧✩✫✭✯✱✲✳✴✵✶✷✸✹✺✻✼' +
+        '⬡⬢⬠⬟⬜⬝' +
+        '⠿⠻⠷⠾⠽⠯⠫⠳' +
+        '₿€¥₩₹Φ₽₼₺₴₦' +
+        'アイウエオカキクケコサシスセソタチツテトナニヌネノ' +
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψω' +
+        '龍炎風水土金木火' +
+        '가나다라마바사아자차카타파하갈람밤삼잠참캄탐팜함';
 
     // ── Geo-window element report lines ────────────────────────────────────
     var GEO_REPORT_LINES = [
@@ -2459,9 +2463,37 @@ window.consoleBg = (function () {
     function pick(arr)  { return arr[rand(0, arr.length - 1)]; }
     function getHost()  { return document.querySelector('.console-bg-host'); }
 
+    // Returns the bottom edge of .board-grid as a % of viewport height, +2% buffer.
+    // Spawn positions use this as their minimum top value so nothing overlaps tiles.
+    // randTop: unrestricted — effects can spawn anywhere including over tiles
+    function randTop(lo, hi) { return rand(lo, hi); }
+
+    // Try 4 random positions, pick the one with the least overlap against existing large overlays.
+    // estW/estH are pixel estimates of the element being spawned.
+    function bestPos(host, estW, estH, xMin, xMax, yMin, yMax) {
+        var hw = window.innerWidth, hh = window.innerHeight;
+        var sel = host.querySelectorAll('.cbg-win,.cbg-err-popup,.cbg-warn-popup,.cbg-memo');
+        var rects = [];
+        for (var i = 0; i < sel.length; i++) rects.push(sel[i].getBoundingClientRect());
+        var bx = rand(xMin, xMax), by = rand(yMin, yMax), bov = Infinity;
+        for (var t = 0; t < 4; t++) {
+            var cx = rand(xMin, xMax), cy = rand(yMin, yMax);
+            var px = (cx / 100) * hw, py = (cy / 100) * hh;
+            var ov = 0;
+            for (var r = 0; r < rects.length; r++) {
+                var rc = rects[r];
+                var ox = Math.max(0, Math.min(px + estW, rc.right)  - Math.max(px, rc.left));
+                var oy = Math.max(0, Math.min(py + estH, rc.bottom) - Math.max(py, rc.top));
+                ov += ox * oy;
+            }
+            if (ov < bov) { bov = ov; bx = cx; by = cy; }
+        }
+        return [bx, by];
+    }
+
     // ── Terminal windows ────────────────────────────────────────────────────
 
-    function spawnWindow(extraDelay, posX, posY) {
+    function spawnWindow(extraDelay, posX, posY, extraClass) {
         setTimeout(function () {
             var host = getHost();
             if (!host) return;
@@ -2470,9 +2502,11 @@ window.consoleBg = (function () {
             var waiting = Math.random() < 0.20;
 
             var win = document.createElement('div');
-            win.className = 'cbg-win';
-            win.style.left = (posX !== undefined ? posX : rand(1, 70)) + '%';
-            win.style.top  = (posY !== undefined ? posY : rand(4, 76)) + '%';
+            var colorVar = pick(['', '', 'cbg-win--blue', 'cbg-win--amber']);
+            win.className = 'cbg-win' + (colorVar ? ' ' + colorVar : '') + (extraClass ? ' ' + extraClass : '');
+            var wp = posX !== undefined ? [posX, posY] : bestPos(host, 228, 140, -8, 88, 4, 76);
+            win.style.left = wp[0] + '%';
+            win.style.top  = wp[1] + '%';
 
             var titleEl = document.createElement('div');
             titleEl.className = 'cbg-title';
@@ -2538,10 +2572,10 @@ window.consoleBg = (function () {
 
     function spawnCascade() {
         var n = rand(3, 6);
-        var x = rand(3, 22), y = rand(3, 18);
-        var stepX = rand(2, 4), stepY = rand(1, 3);
+        var x = rand(-5, 75), y = randTop(3, 85);
+        var stepX = rand(2, 5), stepY = rand(1, 4);
         for (var i = 0; i < n; i++) {
-            spawnWindow(i * rand(65, 210), x + i * stepX, y + i * stepY);
+            spawnWindow(i * rand(65, 210), x + i * stepX, y + i * stepY, 'cbg-cascade');
         }
     }
 
@@ -2553,8 +2587,9 @@ window.consoleBg = (function () {
 
         var popup = document.createElement('div');
         popup.className = 'cbg-err-popup';
-        popup.style.left = (posX !== undefined ? posX : rand(20, 55)) + '%';
-        popup.style.top  = (posY !== undefined ? posY : rand(18, 58)) + '%';
+        var ep = posX !== undefined ? [posX, posY] : bestPos(host, 310, 90, -5, 80, 5, 88);
+        popup.style.left = ep[0] + '%';
+        popup.style.top  = ep[1] + '%';
 
         // Layout: [red icon] | [title \n message \n ... \n OK btn]
         var icon = document.createElement('div');
@@ -2595,8 +2630,9 @@ window.consoleBg = (function () {
 
         var popup = document.createElement('div');
         popup.className = 'cbg-warn-popup';
-        popup.style.left = (posX !== undefined ? posX : rand(15, 60)) + '%';
-        popup.style.top  = (posY !== undefined ? posY : rand(15, 60)) + '%';
+        var wp2 = posX !== undefined ? [posX, posY] : bestPos(host, 290, 90, -5, 82, 5, 88);
+        popup.style.left = wp2[0] + '%';
+        popup.style.top  = wp2[1] + '%';
 
         var content = document.createElement('div');
         content.className = 'cbg-warn-popup-content';
@@ -2630,8 +2666,8 @@ window.consoleBg = (function () {
 
         var el = document.createElement('div');
         el.className = 'cbg-frag';
-        el.style.left = rand(2, 82) + '%';
-        el.style.top  = rand(3, 82) + '%';
+        el.style.left = rand(-4, 94) + '%';
+        el.style.top  = randTop(2, 94) + '%';
         host.appendChild(el);
 
         var text = pick(FRAGS);
@@ -2680,8 +2716,9 @@ window.consoleBg = (function () {
 
         var win = document.createElement('div');
         win.className = 'cbg-win cbg-geo-win';
-        win.style.left = rand(5, 58) + '%';
-        win.style.top  = rand(5, 52) + '%';
+        var gp = bestPos(host, 240, 130, -5, 80, 5, 90);
+        win.style.left = gp[0] + '%';
+        win.style.top  = gp[1] + '%';
 
         var titleEl = document.createElement('div');
         titleEl.className = 'cbg-title';
@@ -3015,81 +3052,220 @@ window.consoleBg = (function () {
         if (!host) return;
         var el = document.createElement('div');
         el.className = 'cbg-memo';
-        el.style.left = rand(6, 52) + '%';
-        el.style.top  = rand(6, 52) + '%';
+        var mp = bestPos(host, 240, 110, -5, 78, 4, 88);
+        el.style.left = mp[0] + '%';
+        el.style.top  = mp[1] + '%';
         el.textContent = pick(MEMOS);
         host.appendChild(el);
         setTimeout(function () { eraseMemo(el); }, rand(3000, 6000));
     }
 
-    // ── Scan highlight boxes ────────────────────────────────────────────────
 
-    function spawnScanBox() {
+    // ── Scrolling texture layer ─────────────────────────────────────────────
+
+    var TEX_SRCS = [
+        '/api/media/circuitboard.00.png',
+        '/api/media/circuitboard.01.png',
+        '/api/media/circuitboard.02.png',
+    ];
+    var texLayers = null;   // built once; images reused across navigations
+    var texRaf    = null;
+    var texTimer  = null;
+
+    function initTextures() {
         var host = getHost();
         if (!host) return;
-        // Spawn 1–4 boxes at once — like a scanner locking onto multiple points
-        var n = Math.random() < 0.35 ? rand(2, 4) : 1;
-        for (var i = 0; i < n; i++) {
-            (function () {
-                var glyphVw  = (2 + Math.random() * 3).toFixed(1);
-                var boxVw    = (parseFloat(glyphVw) * 1.1).toFixed(2);
 
-                var el = document.createElement('div');
-                el.className = 'cbg-scan-box';
-                el.style.left   = rand(2, 86) + '%';
-                el.style.top    = rand(4, 82) + '%';
-                el.style.width  = boxVw + 'vw';
-                el.style.height = boxVw + 'vw';
-
-                var glyph = document.createElement('span');
-                glyph.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
-                glyph.style.fontSize   = glyphVw + 'vw';
-                glyph.style.color      = 'rgba(255,0,51,0.70)';
-                glyph.style.fontFamily = 'Courier New, Courier, monospace';
-                glyph.style.filter     = 'blur(' + (0.8 + Math.random() * 1.8).toFixed(1) + 'px)';
-                el.appendChild(glyph);
-
-                host.appendChild(el);
-                setTimeout(function () {
-                    el.classList.add('cbg-scan-box--out');
-                    setTimeout(function () {
-                        if (el.parentNode) el.parentNode.removeChild(el);
-                    }, 900);
-                }, rand(300, 2000));
-            })();
+        // Reuse or create canvas inside host
+        var canvas = host.querySelector('.cbg-tex');
+        if (!canvas) {
+            canvas = document.createElement('canvas');
+            canvas.className = 'cbg-tex';
+            canvas.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:0;';
+            host.insertBefore(canvas, host.firstChild);
         }
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var ctx = canvas.getContext('2d');
+
+        // Build layer descriptors once; images survive page navigations
+        if (!texLayers) {
+            texLayers = TEX_SRCS.map(function (src, i) {
+                var img = new Image();
+                img.src = src;
+                var angle = (Math.PI * 2 / 3) * i + 0.4;
+                var speed = 0.10 + i * 0.03;
+                return {
+                    img:     img,
+                    dx:      i * 80,
+                    dy:      i * 55,
+                    vx:      Math.cos(angle) * speed,
+                    vy:      Math.sin(angle) * speed,
+                    opacity: [0.015, 0.010, 0.008][i],
+                };
+            });
+        }
+
+        // Direction randomiser — shift one layer's heading every 3-7s
+        function schedDir() {
+            texTimer = setTimeout(function () {
+                if (!texLayers) return;
+                var t = texLayers[Math.floor(Math.random() * texLayers.length)];
+                var a = Math.random() * Math.PI * 2;
+                var s = 0.07 + Math.random() * 0.13;
+                t.vx = Math.cos(a) * s;
+                t.vy = Math.sin(a) * s;
+                schedDir();
+            }, 3000 + Math.random() * 4000);
+        }
+        if (!texTimer) schedDir();
+
+        // Restart animation loop on the (possibly new) canvas
+        if (texRaf) cancelAnimationFrame(texRaf);
+        var w = canvas.width, h = canvas.height;
+
+        function frame() {
+            ctx.clearRect(0, 0, w, h);
+            texLayers.forEach(function (t) {
+                if (!t.img.complete || !t.img.naturalWidth) return;
+                var iw = t.img.width, ih = t.img.height;
+                t.dx = ((t.dx + t.vx) % iw + iw) % iw;
+                t.dy = ((t.dy + t.vy) % ih + ih) % ih;
+                ctx.globalAlpha = t.opacity;
+                for (var x = -t.dx; x < w + iw; x += iw) {
+                    for (var y = -t.dy; y < h + ih; y += ih) {
+                        ctx.drawImage(t.img, x, y);
+                    }
+                }
+            });
+            ctx.globalAlpha = 1;
+            texRaf = requestAnimationFrame(frame);
+        }
+        frame();
     }
 
     // ── Tick loop ───────────────────────────────────────────────────────────
 
+    // ── Floating artifact clusters ───────────────────────────────────────────
+
+    function spawnArtifact() {
+        var host = getHost();
+        if (!host) return;
+
+        var palettes = ['cbg-artifact--red', 'cbg-artifact--white', 'cbg-artifact--blue', 'cbg-artifact--amber'];
+        var el = document.createElement('div');
+        el.className = 'cbg-artifact ' + pick(palettes);
+        el.style.left = rand(-2, 90) + '%';
+        el.style.top  = rand(-2, 90) + '%';
+        el.style.opacity = '0';
+        el.style.transition = 'opacity 0.55s ease';
+
+        var n = rand(18, 42);
+        var blobR = rand(45, 90);
+        for (var i = 0; i < n; i++) {
+            var span = document.createElement('span');
+            span.className = 'cbg-artifact-char';
+            var angle  = Math.random() * Math.PI * 2;
+            var r      = Math.sqrt(Math.random()) * blobR;
+            span.style.left       = Math.round(r * Math.cos(angle)) + 'px';
+            span.style.top        = Math.round(r * Math.sin(angle)) + 'px';
+            span.style.fontSize   = rand(9, 20) + 'px';
+            span.style.filter     = 'blur(' + (0.8 + Math.random() * 3.2).toFixed(1) + 'px)';
+            span.style.animationDelay = (Math.random() * 0.85).toFixed(2) + 's';
+            span.textContent = GLYPH_CHARS[Math.floor(Math.random() * GLYPH_CHARS.length)];
+            el.appendChild(span);
+        }
+
+        host.appendChild(el);
+
+        // Fade in after paint
+        requestAnimationFrame(function () {
+            requestAnimationFrame(function () { el.style.opacity = '1'; });
+        });
+
+        // After idle, either drift-then-vanish or just dissolve
+        var idleMs = rand(600, 2200);
+        setTimeout(function () {
+            if (!el.parentNode) return;
+            if (Math.random() < 0.65) {
+                // Drift: transform starts, opacity fades out faster — it vanishes before arriving
+                var driftAngle = Math.random() * Math.PI * 2;
+                var dist = rand(22, 65);
+                var dx = Math.round(Math.cos(driftAngle) * dist);
+                var dy = Math.round(Math.sin(driftAngle) * dist);
+                el.style.transition = 'transform 3s ease-out, opacity 1.6s ease-out';
+                el.style.transform  = 'translate(' + dx + 'px, ' + dy + 'px)';
+                el.style.opacity    = '0';
+            } else {
+                el.style.transition = 'opacity 1.2s ease';
+                el.style.opacity    = '0';
+            }
+            setTimeout(function () {
+                if (el.parentNode) el.parentNode.removeChild(el);
+            }, 3200);
+        }, idleMs);
+    }
+
+    // ── Spawn rate constants — edit here to tune both hosts identically ────────
+    var RATE_ERROR    = 0.02;  // fatal error popups
+    var RATE_WARN     = 0.02;  // warning popups
+    var RATE_MEMO     = 0.04;  // corporate memo intercepts
+    var RATE_GEO      = 0.10;  // geometric schematic windows
+    var RATE_CASCADE  = 0.03;  // cascading console window burst
+    var RATE_ARTIFACT = 0.05;  // floating glyph artifact clusters
+    var RATE_FRAG     = 0.51;  // floating code fragments
+    // RATE_WIN = remainder (~0.23) — console windows (black / blue / amber)
+
+    function tickDelay() {
+        var area = window.innerWidth * window.innerHeight;
+        var scale = Math.max(0.35, Math.min(2.5, (1920 * 1080) / area));
+        return rand(500, 1800) * scale;
+    }
+
     function tick() {
         if (!getHost()) { tickTimer = null; return; }
-        var r = Math.random();
-        if      (r < 0.10) spawnError();
-        else if (r < 0.18) spawnWarning();
-        else if (r < 0.22) spawnMemo();
-        else if (r < 0.30) spawnScanBox();
-        else if (r < 0.42) spawnGeoWindow();
-        else if (r < 0.47) spawnCascade();
-        else if (r < 0.61) spawnFrag();
-        else                spawnWindow();
-        tickTimer = setTimeout(tick, rand(900, 3200));
+        var r = Math.random(), t = 0;
+        if      (r < (t += RATE_ERROR))    spawnError();
+        else if (r < (t += RATE_WARN))     spawnWarning();
+        else if (r < (t += RATE_MEMO))     spawnMemo();
+        else if (r < (t += RATE_GEO))      spawnGeoWindow();
+        else if (r < (t += RATE_CASCADE))  spawnCascade();
+        else if (r < (t += RATE_ARTIFACT)) spawnArtifact();
+        else if (r < (t += RATE_FRAG))     spawnFrag();
+        else                                spawnWindow();
+        tickTimer = setTimeout(tick, tickDelay());
     }
 
     function start() {
-        if (tickTimer) return;  // already running — preserve state across navigations
-        if (getHost()) {
-            tickTimer = setTimeout(tick, rand(500, 1500));
-        }
+        var host = getHost();
+        if (!host) return;
+        initTextures();           // always reinit textures on this host
+        if (tickTimer) return;    // tick loop already running
+        tickTimer = setTimeout(tick, rand(500, 1500));
     }
 
-    document.addEventListener('blazor:navigated', start);
-
+    // Initial start
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', start);
     } else {
         start();
     }
+
+    // Restart whenever .console-bg-host is added back to the DOM (Blazor navigation)
+    new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+            var nodes = mutations[i].addedNodes;
+            for (var j = 0; j < nodes.length; j++) {
+                var n = nodes[j];
+                if (n.nodeType !== 1) continue;
+                if ((n.classList && n.classList.contains('console-bg-host')) ||
+                    (n.querySelector && n.querySelector('.console-bg-host'))) {
+                    start();
+                    return;
+                }
+            }
+        }
+    }).observe(document.body, { childList: true, subtree: true });
 
     return { start: start };
 })();
