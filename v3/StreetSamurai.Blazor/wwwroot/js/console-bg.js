@@ -3909,12 +3909,6 @@ window.consoleBg = (function () {
             var glyphDist  = rand(50, 130);
             span.style.setProperty('--adx1', Math.round(Math.cos(glyphAngle) * glyphDist) + 'px');
             span.style.setProperty('--ady1', Math.round(Math.sin(glyphAngle) * glyphDist) + 'px');
-            // Perpendicular sway — direction: (-sinθ, cosθ); sign randomised per glyph
-            // so ~half the cluster fans left-first, half right-first → gather & spread rhythm
-            var swayAmp  = rand(10, 28);
-            var swaySign = Math.random() < 0.5 ? 1 : -1;
-            span.style.setProperty('--sx', Math.round(-Math.sin(glyphAngle) * swayAmp * swaySign) + 'px');
-            span.style.setProperty('--sy', Math.round( Math.cos(glyphAngle) * swayAmp * swaySign) + 'px');
             // Varied duration + stagger so glyphs don't all vanish simultaneously
             var driftDur   = (1.8 + Math.random() * 2.2).toFixed(2); // 1.8–4s — faster swim
             var driftDelay = (Math.random() * 1.8).toFixed(2);        // 0–1.8s stagger
@@ -3938,6 +3932,377 @@ window.consoleBg = (function () {
         }, ttl);
     }
 
+    // ── Network connection attempts ───────────────────────────────────────────
+    var NET_OCCUPIED = new Set();
+    var NET_GRID = 24;
+
+    function netGk(gx, gy) { return gx + ',' + gy; }
+
+    // 8-direction Manhattan segment (hFirst = horizontal before vertical, or vice versa)
+    function netRouteManh(x0, y0, x1, y1, hFirst, extra) {
+        var path = [[x0, y0]], cx = x0, cy = y0;
+        function blocked(gx, gy) { var k = netGk(gx, gy); return NET_OCCUPIED.has(k) || extra.has(k); }
+        if (hFirst) {
+            var sx = x1 > x0 ? 1 : x1 < x0 ? -1 : 0;
+            while (cx !== x1) { cx += sx; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+            var sy = y1 > y0 ? 1 : y1 < y0 ? -1 : 0;
+            while (cy !== y1) { cy += sy; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+        } else {
+            var sy = y1 > y0 ? 1 : y1 < y0 ? -1 : 0;
+            while (cy !== y1) { cy += sy; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+            var sx = x1 > x0 ? 1 : x1 < x0 ? -1 : 0;
+            while (cx !== x1) { cx += sx; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+        }
+        return path;
+    }
+
+    // Diagonal-first segment: 45° leg then cardinal remainder (UR, DR, DL, UL then U/D/L/R)
+    function netRouteDiag(x0, y0, x1, y1, extra) {
+        var path = [[x0, y0]], cx = x0, cy = y0;
+        function blocked(gx, gy) { var k = netGk(gx, gy); return NET_OCCUPIED.has(k) || extra.has(k); }
+        var dx = x1 - x0, dy = y1 - y0;
+        var sx = dx > 0 ? 1 : dx < 0 ? -1 : 0;
+        var sy = dy > 0 ? 1 : dy < 0 ? -1 : 0;
+        var diag = Math.min(Math.abs(dx), Math.abs(dy));
+        for (var i = 0; i < diag; i++) {
+            cx += sx; cy += sy;
+            if (blocked(cx, cy)) return null;
+            path.push([cx, cy]);
+        }
+        while (cx !== x1) { cx += sx; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+        while (cy !== y1) { cy += sy; if (blocked(cx, cy)) return null; path.push([cx, cy]); }
+        return path;
+    }
+
+    // Route one segment, randomly choosing from 8-dir diagonal-then-straight or cardinal L-shape
+    function netRouteSegment(x0, y0, x1, y1, extra) {
+        if (Math.random() < 0.4) { var d = netRouteDiag(x0, y0, x1, y1, extra); if (d) return d; }
+        var hF = Math.random() < 0.5;
+        return netRouteManh(x0, y0, x1, y1, hF, extra) || netRouteManh(x0, y0, x1, y1, !hF, extra);
+    }
+
+    // Liang-Barsky segment-to-AABB entry: returns t∈[0,1] of first entry, or null
+    function netSegEntersBox(ax, ay, bx, by, rx, ry, rw, rh) {
+        var dx = bx-ax, dy = by-ay, tMin = 0, tMax = 1;
+        function clip(p, q) {
+            if (Math.abs(p) < 1e-9) return q >= 0;
+            var t = q/p;
+            if (p < 0) { if (t > tMin) tMin = t; } else { if (t < tMax) tMax = t; }
+            return tMin <= tMax;
+        }
+        if (!clip(-dx,ax-(rx-rw))) return null; if (!clip(dx,(rx+rw)-ax)) return null;
+        if (!clip(-dy,ay-(ry-rh))) return null; if (!clip(dy,(ry+rh)-ay)) return null;
+        return tMax >= tMin ? tMin : null;
+    }
+
+    // Build a full grid path through 0-3 alternating waypoints (variable directness)
+    function netBuildPath(gx0, gy0, gx1, gy1, maxGX, maxGY) {
+        for (var attempt = 0; attempt < 14; attempt++) {
+            var r = Math.random();
+            var numWP = r < 0.40 ? 0 : r < 0.75 ? 1 : r < 0.95 ? 2 : 3;
+            var waypts = [[gx0, gy0]];
+            for (var w = 0; w < numWP; w++) {
+                var f   = (w + 1) / (numWP + 1);
+                var bx  = Math.round(gx0 + (gx1 - gx0) * f);
+                var by  = Math.round(gy0 + (gy1 - gy0) * f);
+                var pdx = -(gy1 - gy0), pdy = gx1 - gx0;
+                var plen = Math.sqrt(pdx * pdx + pdy * pdy) || 1;
+                var amt  = (w % 2 === 0 ? 1 : -1) * (5 + Math.random() * 9);
+                var wx   = Math.max(2, Math.min(maxGX, bx + Math.round(pdx / plen * amt)));
+                var wy   = Math.max(2, Math.min(maxGY, by + Math.round(pdy / plen * amt)));
+                waypts.push([wx, wy]);
+            }
+            waypts.push([gx1, gy1]);
+            var full = [[gx0, gy0]], ok = true;
+            var localSeen = new Set(); localSeen.add(netGk(gx0, gy0));
+            for (var i = 0; i < waypts.length - 1; i++) {
+                var seg = netRouteSegment(waypts[i][0], waypts[i][1], waypts[i+1][0], waypts[i+1][1], localSeen);
+                if (!seg) { ok = false; break; }
+                for (var j = 1; j < seg.length; j++) { localSeen.add(netGk(seg[j][0], seg[j][1])); full.push(seg[j]); }
+            }
+            if (!ok) continue;
+            var clean = [full[0]];
+            for (var i = 1; i < full.length; i++) {
+                if (full[i][0] !== clean[clean.length-1][0] || full[i][1] !== clean[clean.length-1][1])
+                    clean.push(full[i]);
+            }
+            return clean;
+        }
+        return null;
+    }
+
+    // Reduce to direction-change corners (handles all 8 directions)
+    function netSimplifyPath(path) {
+        if (path.length <= 2) return path.slice();
+        var corners = [path[0]];
+        for (var i = 1; i < path.length - 1; i++) {
+            var dx1 = path[i][0] - path[i-1][0], dy1 = path[i][1] - path[i-1][1];
+            var dx2 = path[i+1][0] - path[i][0],  dy2 = path[i+1][1] - path[i][1];
+            if (dx1 !== dx2 || dy1 !== dy2) corners.push(path[i]);
+        }
+        corners.push(path[path.length - 1]);
+        return corners;
+    }
+
+    var NET_COLORS = [
+        { line: 'rgba(255,0,51,0.32)',   node: 'rgba(255,0,51,0.60)',   fail: '#ff2244' },
+        { line: 'rgba(60,130,255,0.32)', node: 'rgba(60,130,255,0.60)', fail: '#4488ff' },
+        { line: 'rgba(70,210,170,0.32)', node: 'rgba(70,210,170,0.60)', fail: '#46d2aa' },
+        { line: 'rgba(255,185,60,0.32)', node: 'rgba(255,185,60,0.60)', fail: '#ffb93c' },
+        { line: 'rgba(190,80,255,0.32)', node: 'rgba(190,80,255,0.60)', fail: '#be50ff' },
+    ];
+    function netSuccessColor(col) { return pick(NET_COLORS.filter(function(c) { return c !== col; })); }
+
+    // 2226-appropriate endpoint IDs — no IP addresses
+    var NET_ADDR_FMTS = [
+        function() { return 'NODE:' + Math.floor(Math.random()*0xFFFF).toString(16).toUpperCase().padStart(4,'0'); },
+        function() { return 'RLY-' + rand(100,999); },
+        function() { return 'ARCH:' + Math.floor(Math.random()*256).toString(16).toUpperCase() + '.' + rand(1,9); },
+        function() { return 'MEM:0x' + Math.floor(Math.random()*0xFFFF).toString(16).toUpperCase(); },
+        function() { return 'VX:' + rand(1,9) + Math.floor(Math.random()*16).toString(16).toUpperCase() + rand(1,9); },
+        function() { return 'SHARD:' + rand(1000,9999); },
+        function() { return 'BCI://' + Math.floor(Math.random()*0xFF).toString(16).toUpperCase() + ':' + rand(10,99); },
+        function() { return 'RELAY:' + Math.floor(Math.random()*16).toString(16).toUpperCase() + rand(10,99); },
+    ];
+    function netAddr() { return pick(NET_ADDR_FMTS)(); }
+
+    var NET_FAIL_MSGS = [
+        'CONNECTION COULD NOT BE ESTABLISHED',
+        'HANDSHAKE TIMEOUT',
+        'ROUTE SATURATED',
+        'AUTH REJECTED',
+        'SIGNAL LOST',
+        'RELAY NODE OFFLINE',
+        'ENCRYPTION MISMATCH',
+        'TRACEROUTE BLOCKED',
+    ];
+    function netShowFail(host, fx, fy, col, elems, gridPath) {
+        var msg = document.createElement('div');
+        msg.className = 'cbg-net-fail';
+        msg.style.color = col.fail;
+        msg.style.left  = fx + 'px';
+        msg.style.top   = fy + 'px';
+        msg.textContent = pick(NET_FAIL_MSGS);
+        host.appendChild(msg);
+        setTimeout(function() {
+            if (msg.parentNode) msg.parentNode.removeChild(msg);
+            elems.forEach(function(el) {
+                el.style.transition = 'opacity 0.4s ease';
+                el.style.opacity = '0';
+                setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+            });
+            gridPath.forEach(function(p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
+        }, 1100);
+    }
+
+    // Expanding ping ring — occasionally spawns an intercepting tracer
+    function netSpawnPing(host, px, py, col, depth) {
+        depth = depth || 0;
+        var el = document.createElement('div');
+        el.className = 'cbg-net-ping';
+        el.style.borderColor = col.node;
+        el.style.left = px + 'px';
+        el.style.top  = py + 'px';
+        host.appendChild(el);
+        setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 750);
+        if (depth < 2 && Math.random() < 0.18) {
+            setTimeout(function() { netSpawnTracer(host, px, py, col, depth + 1); }, rand(200, 700));
+        }
+    }
+
+    // Small tracer that homes toward (tx, ty) and fires a ping on arrival
+    function netSpawnTracer(host, tx, ty, col, depth) {
+        var hostW = host.offsetWidth || 800, hostH = host.offsetHeight || 600;
+        var angle = Math.random() * Math.PI * 2;
+        var dist  = rand(80, 160);
+        var sx = Math.max(10, Math.min(hostW - 10, Math.round(tx + Math.cos(angle) * dist)));
+        var sy = Math.max(10, Math.min(hostH - 10, Math.round(ty + Math.sin(angle) * dist)));
+        var el = document.createElement('div');
+        el.className = 'cbg-net-tracer';
+        el.style.color = col.node;
+        el.style.left = sx + 'px';
+        el.style.top  = sy + 'px';
+        el.textContent = '\u25C9'; // circled dot
+        host.appendChild(el);
+        var ms = rand(500, 1200);
+        requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+                el.style.transition = 'left ' + ms + 'ms linear, top ' + ms + 'ms linear, opacity 0.2s ease ' + Math.max(0, ms - 200) + 'ms';
+                el.style.left = tx + 'px';
+                el.style.top  = ty + 'px';
+                el.style.opacity = '0';
+            });
+        });
+        setTimeout(function() {
+            if (el.parentNode) el.parentNode.removeChild(el);
+            netSpawnPing(host, tx, ty, col, depth);
+        }, ms + 60);
+    }
+
+    function spawnNetConnect() {
+        var host = getHost();
+        if (!host) return;
+        var hostW = host.offsetWidth  || 800;
+        var hostH = host.offsetHeight || 600;
+        var maxGX = Math.floor(hostW / NET_GRID) - 2;
+        var maxGY = Math.floor(hostH / NET_GRID) - 2;
+        var col = pick(NET_COLORS);
+        var marg = 70;
+        var p1, p2, att = 0;
+        do {
+            p1 = [rand(marg, hostW - marg), rand(marg, hostH - marg)];
+            p2 = [rand(marg, hostW - marg), rand(marg, hostH - marg)];
+            att++;
+        } while (Math.abs(p1[0]-p2[0]) + Math.abs(p1[1]-p2[1]) < 140 && att < 20);
+        var gx0 = Math.floor(p1[0] / NET_GRID), gy0 = Math.floor(p1[1] / NET_GRID);
+        var gx1 = Math.floor(p2[0] / NET_GRID), gy1 = Math.floor(p2[1] / NET_GRID);
+        var gridPath = netBuildPath(gx0, gy0, gx1, gy1, maxGX, maxGY);
+        // Source node: always opaque. Destination: faint until line arrives.
+        function makeBox(px, py, opaque) {
+            var el = document.createElement('div');
+            el.className = 'cbg-net-node';
+            el.style.color = col.node; el.style.borderColor = col.node;
+            el.style.left = px + 'px'; el.style.top = py + 'px';
+            el.style.opacity = opaque ? '1' : '0.15';
+            el.textContent = netAddr();
+            return el;
+        }
+        var box1 = makeBox(p1[0], p1[1], true);
+        var box2 = makeBox(p2[0], p2[1], false);
+        host.appendChild(box1); host.appendChild(box2);
+        var midX = (p1[0] + p2[0]) * 0.5, midY = (p1[1] + p2[1]) * 0.5;
+        if (!gridPath || gridPath.length < 2) {
+            netShowFail(host, midX, midY, col, [box1, box2], []);
+            return;
+        }
+        gridPath.forEach(function(p) { NET_OCCUPIED.add(netGk(p[0], p[1])); });
+        var corners = netSimplifyPath(gridPath);
+        var gridPts = corners.map(function(c) { return [c[0] * NET_GRID + NET_GRID * 0.5, c[1] * NET_GRID + NET_GRID * 0.5]; });
+        var bw1 = (box1.offsetWidth  || 40) * 0.5, bh1 = (box1.offsetHeight || 14) * 0.5;
+        var bw2 = (box2.offsetWidth  || 40) * 0.5, bh2 = (box2.offsetHeight || 14) * 0.5;
+        // Exit source from nearest cardinal side; first segment moves away from source node
+        var dxBoxes = p2[0] - p1[0], dyBoxes = p2[1] - p1[1];
+        var s1 = Math.abs(dxBoxes) >= Math.abs(dyBoxes) ? (dxBoxes >= 0 ? 'R' : 'L') : (dyBoxes >= 0 ? 'D' : 'U');
+        var startPt = s1==='R' ? [p1[0]+bw1, p1[1]] : s1==='L' ? [p1[0]-bw1, p1[1]] :
+                      s1==='D' ? [p1[0], p1[1]+bh1]             : [p1[0], p1[1]-bh1];
+        var gp1 = gridPts.length > 1 ? gridPts[1] : gridPts[0];
+        var startMid = (s1==='R'||s1==='L') ? [gp1[0], startPt[1]] : [startPt[0], gp1[1]];
+        // Build path: exit connector then all grid corners (including last, near destination)
+        var pts = [startPt, startMid].concat(gridPts.slice(1));
+        // Truncate at first intersection with destination box — line stops at closest edge, never inside
+        for (var si = 0; si < pts.length - 1; si++) {
+            var ax = pts[si][0], ay = pts[si][1];
+            var bxi = pts[si+1][0], byi = pts[si+1][1];
+            var t = netSegEntersBox(ax, ay, bxi, byi, p2[0], p2[1], bw2, bh2);
+            if (t !== null) {
+                pts = pts.slice(0, si+1).concat([[ax + (bxi-ax)*t, ay + (byi-ay)*t]]);
+                break;
+            }
+        }
+        var canvas = document.createElement('canvas');
+        canvas.width = hostW; canvas.height = hostH;
+        canvas.style.cssText = 'position:absolute;left:0;top:0;pointer-events:none;z-index:1;';
+        host.appendChild(canvas);
+        var ctx = canvas.getContext('2d');
+        var totalLen = 0;
+        for (var i = 1; i < pts.length; i++)
+            totalLen += Math.hypot(pts[i][0] - pts[i-1][0], pts[i][1] - pts[i-1][1]);
+        var speed    = rand(280, 480);
+        var willFail = Math.random() < 0.35;
+        var failLen  = willFail ? totalLen * (0.25 + Math.random() * 0.5) : totalLen * 2;
+        var segIdx = 0, segProg = 0, drawnLen = 0, lastTs = null;
+        var pingsFired = {};
+        var curLine = col.line, curNode = col.node;
+        var iStart = 2, iEnd = pts.length - 2;
+        function redraw() {
+            ctx.clearRect(0, 0, hostW, hostH);
+            ctx.lineWidth = 1; ctx.strokeStyle = curLine; ctx.fillStyle = curNode;
+            for (var i = 0; i < segIdx; i++) {
+                ctx.beginPath(); ctx.moveTo(pts[i][0], pts[i][1]); ctx.lineTo(pts[i+1][0], pts[i+1][1]); ctx.stroke();
+            }
+            if (segIdx < pts.length - 1) {
+                var tx = pts[segIdx][0] + (pts[segIdx+1][0] - pts[segIdx][0]) * segProg;
+                var ty = pts[segIdx][1] + (pts[segIdx+1][1] - pts[segIdx][1]) * segProg;
+                ctx.beginPath(); ctx.moveTo(pts[segIdx][0], pts[segIdx][1]); ctx.lineTo(tx, ty); ctx.stroke();
+            }
+            for (var i = iStart; i <= Math.min(segIdx, iEnd); i++) {
+                ctx.beginPath(); ctx.arc(pts[i][0], pts[i][1], 3, 0, Math.PI * 2); ctx.fill();
+                ctx.save(); ctx.globalAlpha = 0.28;
+                ctx.beginPath(); ctx.arc(pts[i][0], pts[i][1], 5.5, 0, Math.PI * 2); ctx.stroke();
+                ctx.restore();
+            }
+        }
+        function doSuccess() {
+            canvas.style.opacity = '1';
+            redraw();
+            var sc = netSuccessColor(col);
+            curLine = sc.line; curNode = sc.node;
+            box2.style.transition = 'opacity 0.12s ease, color 0.25s ease, border-color 0.25s ease';
+            box2.style.opacity = '1';
+            box2.style.color = sc.node; box2.style.borderColor = sc.node;
+            box1.style.transition = 'color 0.25s ease, border-color 0.25s ease';
+            box1.style.color = sc.node; box1.style.borderColor = sc.node;
+            redraw();
+            setTimeout(function() {
+                [canvas, box1, box2].forEach(function(el) {
+                    el.style.transition = 'opacity 0.55s ease';
+                    el.style.opacity = '0';
+                    setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 650);
+                });
+                gridPath.forEach(function(p) { NET_OCCUPIED.delete(netGk(p[0], p[1])); });
+            }, rand(600, 1400));
+        }
+        function tick(ts) {
+            if (!lastTs) lastTs = ts;
+            var dt = Math.min((ts - lastTs) / 1000, 0.1);
+            lastTs = ts;
+            if (segIdx >= pts.length - 1) { doSuccess(); return; }
+            var segLen = Math.hypot(pts[segIdx+1][0] - pts[segIdx][0], pts[segIdx+1][1] - pts[segIdx][1]);
+            if (segLen < 1) { segIdx++; segProg = 0; requestAnimationFrame(tick); return; }
+            var advance = dt * speed / segLen;
+            segProg = Math.min(1, segProg + advance);
+            drawnLen += dt * speed;
+            if (willFail && drawnLen >= failLen) {
+                var fx = pts[segIdx][0] + (pts[segIdx+1][0] - pts[segIdx][0]) * segProg;
+                var fy = pts[segIdx][1] + (pts[segIdx+1][1] - pts[segIdx][1]) * segProg;
+                canvas.style.opacity = '1';
+                redraw();
+                netShowFail(host, fx, fy, col, [box1, box2, canvas], gridPath);
+                return;
+            }
+            // Flicker: frequency and duty-cycle ramp as line approaches fail point
+            if (willFail) {
+                var failRatio = Math.min(1, drawnLen / failLen);
+                if (failRatio > 0.4) {
+                    var fr = (failRatio - 0.4) / 0.6;
+                    canvas.style.opacity = Math.sin(ts * (1 + fr * 19) * 0.006283) > (-0.9 + fr * 0.9) ? '1' : '0.1';
+                } else { canvas.style.opacity = '1'; }
+            }
+            if (segProg >= 1) {
+                segProg = 0; segIdx++;
+                if (segIdx >= iStart && segIdx <= iEnd && !pingsFired[segIdx]) {
+                    pingsFired[segIdx] = true;
+                    netSpawnPing(host, pts[segIdx][0], pts[segIdx][1], col, 0);
+                }
+            }
+            redraw();
+            requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+    }
+
+    // ── Spawn rate constants — edit here to tune both hosts identically ────────
+    // ── Effect toggles — set to false to disable an effect entirely ─────────
+    var FX_ERROR    = true;   // fatal error popups
+    var FX_WARN     = true;   // warning popups
+    var FX_MEMO     = true;   // corporate memo intercepts
+    var FX_GEO      = true;   // geometric schematic windows
+    var FX_CASCADE  = true;   // cascading console window burst
+    var FX_ARTIFACT = true;   // floating glyph artifact clusters
+    var FX_FRAG     = true;   // floating code fragments
+    var FX_NET      = false;  // network connection attempts
+    var FX_WIN      = true;   // console windows (black / blue / amber)
+
     // ── Spawn rate constants — edit here to tune both hosts identically ────────
     var RATE_ERROR    = 0.01;  // fatal error popups
     var RATE_WARN     = 0.01;  // warning popups
@@ -3945,26 +4310,28 @@ window.consoleBg = (function () {
     var RATE_GEO      = 0.10;  // geometric schematic windows
     var RATE_CASCADE  = 0.03;  // cascading console window burst
     var RATE_ARTIFACT = 0.12;  // floating glyph artifact clusters
-    var RATE_FRAG     = 0.44;  // floating code fragments
-    // RATE_WIN = remainder (~0.23) — console windows (black / blue / amber)
+    var RATE_FRAG     = 0.40;  // floating code fragments
+    var RATE_NET      = 0.05;  // network connection attempts
+    // RATE_WIN = remainder — console windows (black / blue / amber)
 
     function tickDelay() {
         var area = window.innerWidth * window.innerHeight;
         var scale = Math.max(0.35, Math.min(2.5, (1920 * 1080) / area));
-        return rand(500, 1800) * scale;
+        return rand(590, 2120) * scale;
     }
 
     function tick() {
         if (!getHost()) { tickTimer = null; return; }
         var r = Math.random(), t = 0;
-        if      (r < (t += RATE_ERROR))    spawnError();
-        else if (r < (t += RATE_WARN))     spawnWarning();
-        else if (r < (t += RATE_MEMO))     spawnMemo();
-        else if (r < (t += RATE_GEO))      spawnGeoWindow();
-        else if (r < (t += RATE_CASCADE))  spawnCascade();
-        else if (r < (t += RATE_ARTIFACT)) spawnArtifact();
-        else if (r < (t += RATE_FRAG))     spawnFrag();
-        else                                spawnWindow();
+        if      (FX_ERROR    && r < (t += RATE_ERROR))    spawnError();
+        else if (FX_WARN     && r < (t += RATE_WARN))     spawnWarning();
+        else if (FX_MEMO     && r < (t += RATE_MEMO))     spawnMemo();
+        else if (FX_GEO      && r < (t += RATE_GEO))      spawnGeoWindow();
+        else if (FX_CASCADE  && r < (t += RATE_CASCADE))  spawnCascade();
+        else if (FX_ARTIFACT && r < (t += RATE_ARTIFACT)) spawnArtifact();
+        else if (FX_FRAG     && r < (t += RATE_FRAG))     spawnFrag();
+        else if (FX_NET      && r < (t += RATE_NET))      spawnNetConnect();
+        else if (FX_WIN)                                   spawnWindow();
         tickTimer = setTimeout(tick, tickDelay());
     }
 

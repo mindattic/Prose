@@ -270,6 +270,13 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityValidatorService>();
         services.AddSingleton<SuggestionEngineService>();
 
+        // Pacing — static helper, registered for completeness
+        services.AddSingleton<PacingService>();
+
+        // Milestone 3 — outline review + quality feedback loop
+        services.AddSingleton<OutlineReviewService>();
+        services.AddSingleton<StoryQualityService>();
+
         return services;
     }
 }

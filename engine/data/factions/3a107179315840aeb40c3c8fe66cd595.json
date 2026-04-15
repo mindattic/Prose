@@ -7,18 +7,22 @@
     "Null"
   ],
   "motto": "Professional. Confidential. Final.",
-  "description": "The Null Ward is what happens when a corporate security contractor goes out of business but its employees don't. Twelve years ago, a mid-tier corporate security firm called Hexagram Protective Services collapsed after a contract dispute with their primary client left them holding unpayable liability. The thirty-two employees who were still on payroll when the accounts froze never received severance. They had no legitimate market to re-enter — corporate security blacklists move fast. What they had was training, equipment, and each other. The Null Ward formed in the months afterward, offering their services on the gray market: executive protection, facility security assessment, and what the contract called 'problem resolution.' Today the gang numbers slightly under thirty full members, plus a variable number of contract associates. They are the most professionally trained armed group in the GLMZ that isn't technically a corporate asset. They operate on clean contracts with defined deliverables. They do not do ideology, do not do drugs, and do not do work they consider beneath their professional standards. This last constraint has cost them several high-value clients and generated enemies who expected compliance. Their physical base is mobile — a convoy of three commercial vehicles operating in the Midwest transit corridors between GLMZ anchor cities, with a semi-permanent waystation in an industrial park east of Gary.",
+  "description": "The Null Ward is what happens when a corporate security contractor goes out of business but its employees don\u0027t. Twelve years ago, a mid-tier corporate security firm called Hexagram Protective Services collapsed after a contract dispute with their primary client left them holding unpayable liability. The thirty-two employees who were still on payroll when the accounts froze never received severance. They had no legitimate market to re-enter \u2014 corporate security blacklists move fast. What they had was training, equipment, and each other. The Null Ward formed in the months afterward, offering their services on the gray market: executive protection, facility security assessment, and what the contract called \u0027problem resolution.\u0027 Today the gang numbers slightly under thirty full members, plus a variable number of contract associates. They are the most professionally trained armed group in the GLMZ that isn\u0027t technically a corporate asset. They operate on clean contracts with defined deliverables. They do not do ideology, do not do drugs, and do not do work they consider beneath their professional standards. This last constraint has cost them several high-value clients and generated enemies who expected compliance. Their physical base is mobile \u2014 a convoy of three commercial vehicles operating in the Midwest transit corridors between GLMZ anchor cities, with a semi-permanent waystation in an industrial park east of Gary.",
   "ideology": "Professionalism is a form of ethics. A job done cleanly, without civilian casualties and delivered on time, is morally superior to a job done with ideology. They are mercenaries and are comfortable with that identity.",
   "territory": "No fixed street territory. Mobile operations across the Indianapolis corridor, Gary-Chicago transit route, and throughout Midwest transit hubs. Available anywhere payment clears.",
   "leadership": "",
   "methods": [
-    "Contract security — executive protection, facility assessment, corporate counter-intelligence",
-    "Kidnapping-for-ransom — high-value targets only, clean extraction and delivery",
-    "Problem resolution — euphemistic contracting term for whatever the client needs resolved",
-    "Training services — for a fee, will train client security teams to professional standard"
+    "Contract security \u2014 executive protection, facility assessment, corporate counter-intelligence",
+    "Kidnapping-for-ransom \u2014 high-value targets only, clean extraction and delivery",
+    "Problem resolution \u2014 euphemistic contracting term for whatever the client needs resolved",
+    "Training services \u2014 for a fee, will train client security teams to professional standard"
   ],
-  "resources": "Professional-grade weapons and equipment maintained to corporate security standards. Multiple vehicles modified for secure transport. Contractual relationships with several legitimate corporations and multiple criminal clients.",
-  "goals": "Remain solvent and professional. Eventually accumulate enough capital to legitimize. Take revenge on Hexagram's former client — this is an unofficial goal that no one discusses.",
+  "resources": [
+    "Professional-grade weapons and equipment maintained to corporate security standards. Multiple vehicles modified for secure transport. Contractual relationships with several legitimate corporations and multiple criminal clients."
+  ],
+  "goals": [
+    "Remain solvent and professional. Eventually accumulate enough capital to legitimize. Take revenge on Hexagram\u0027s former client \u2014 this is an unofficial goal that no one discusses."
+  ],
   "size_class": "medium",
   "relationships": [
     {
@@ -34,7 +38,7 @@
     {
       "name": "The Shore Dogs",
       "type": "ally",
-      "reason": "Complementary maritime and land operations; mutual client referrals where the other's specialty is required"
+      "reason": "Complementary maritime and land operations; mutual client referrals where the other\u0027s specialty is required"
     },
     {
       "name": "The Third Rail",
@@ -42,11 +46,11 @@
       "reason": "The Ward holds infrastructure security contracts protecting critical Third Rail nodes; payment is reliable"
     }
   ],
-  "narrative_function": "The GLMZ's most professional hired force. Can be employed by players or be a credible threat. Their military precision makes them stand out from street gangs.",
+  "narrative_function": "The GLMZ\u0027s most professional hired force. Can be employed by players or be a credible threat. Their military precision makes them stand out from street gangs.",
   "story_hooks": [
     "The Null Ward took a contract that their client is now refusing to pay for",
-    "They've been hired to extract someone the players need to protect",
-    "A Ward member is trying to quietly exit the gang — and the gang won't let them"
+    "They\u0027ve been hired to extract someone the players need to protect",
+    "A Ward member is trying to quietly exit the gang \u2014 and the gang won\u0027t let them"
   ],
   "tags": [
     "faction",
@@ -68,14 +72,14 @@
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Orion Möller",
+      "name": "Orion M\u00F6ller",
       "id": "019d6143a72d78d998c0a331697e1219",
       "role": "Affiliate",
       "status": "active",
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Sterling Touré",
+      "name": "Sterling Tour\u00E9",
       "id": "019d6143a5c1716bbdc545101864c591",
       "role": "Affiliate",
       "status": "active",

@@ -77,6 +77,118 @@ public class DialogueService
         return sb.ToString().TrimEnd();
     }
 
+    /// <summary>
+    /// Build per-character CONVERSATION GOALS for this specific scene.
+    /// Every scene has a negotiation between wills — each character wants something.
+    /// The drama comes from those goals colliding.
+    ///
+    /// This answers: "What does each character need to GET from this conversation?"
+    /// Not their global story arc — their immediate, beat-level conversational goal.
+    ///
+    /// Derived from: beat goal + character desire + character fear + relationship type.
+    /// Pure logic — no LLM call.
+    /// </summary>
+    public string BuildConversationGoals(List<string> charactersInScene, string beatGoal, int tension)
+    {
+        var characters = charactersInScene
+            .Select(name => db.FindCharacter(name))
+            .Where(c => c != null)
+            .Cast<CharacterData>()
+            .ToList();
+
+        if (characters.Count < 2) return "";
+
+        var lines = new List<string> { "CONVERSATION GOALS — what each character needs from this exchange:" };
+        var beatLower = beatGoal.ToLowerInvariant();
+
+        foreach (var c in characters)
+        {
+            var goals = new List<string>();
+            var sp = c.SpeechPatterns;
+
+            // Derive immediate conversational goal from beat context + core desire
+            if (c.Psychology.CoreDesires.Count > 0)
+            {
+                var desire = c.Psychology.CoreDesires[0].ToLowerInvariant();
+
+                // Map beat context to conversational strategy
+                if (beatLower.Contains("negotiate") || beatLower.Contains("deal") || beatLower.Contains("contract"))
+                    goals.Add($"wants favorable terms — but need is shaped by: {c.Psychology.CoreDesires[0]}");
+                else if (beatLower.Contains("reveal") || beatLower.Contains("discover") || beatLower.Contains("learn"))
+                    goals.Add($"wants information — filtered through: {c.Psychology.CoreDesires[0]}");
+                else if (beatLower.Contains("confront") || beatLower.Contains("fight") || beatLower.Contains("challenge"))
+                    goals.Add($"wants to establish/defend position — driven by: {c.Psychology.CoreDesires[0]}");
+                else
+                    goals.Add($"underlying need in this conversation: {c.Psychology.CoreDesires[0]}");
+            }
+
+            // What they're protecting (fear-driven defensive posture)
+            if (c.Psychology.CoreFears.Count > 0 && tension >= 4)
+                goals.Add($"protecting against: {c.Psychology.CoreFears[0]}");
+
+            // What they're hiding — shapes every answer they give
+            if (c.Psychology.Secret.Length > 0)
+                goals.Add($"cannot let conversation reach: the subject that would expose their secret");
+
+            // How stress affects their goals
+            if (tension >= 7)
+            {
+                var stressGoal = c.Behavioral.StressResponses.GetValueOrDefault("high", "");
+                if (stressGoal.Length > 0)
+                    goals.Add($"high tension mode: {ShortenToSignal(stressGoal)}");
+            }
+
+            // Avoidance topics — conversational maneuver
+            if (sp.Avoidances.Count > 0)
+                goals.Add($"will redirect away from: {sp.Avoidances[0]}");
+
+            if (goals.Count > 0)
+                lines.Add($"  {c.Name}: {string.Join("; ", goals)}");
+        }
+
+        // Add cross-character negotiation frame: who has leverage?
+        lines.Add("\nNEGOTIATION FRAME:");
+        for (int i = 0; i < characters.Count; i++)
+        {
+            for (int j = i + 1; j < characters.Count; j++)
+            {
+                var a = characters[i];
+                var b = characters[j];
+                var leverage = BuildLeverageAssessment(a, b, tension);
+                if (leverage.Length > 0)
+                    lines.Add($"  {a.Name} vs {b.Name}: {leverage}");
+            }
+        }
+
+        return string.Join("\n", lines);
+    }
+
+    /// <summary>
+    /// Determine who has leverage in a two-person exchange.
+    /// Leverage = information + position + what the other person needs.
+    /// </summary>
+    private static string BuildLeverageAssessment(CharacterData a, CharacterData b, int tension)
+    {
+        var parts = new List<string>();
+
+        // Check if one person knows something the other doesn't (drives dramatic irony)
+        var aKnowsAboutB = a.Relationships
+            .FirstOrDefault(r => r.Name.Contains(b.Name, StringComparison.OrdinalIgnoreCase));
+        var bKnowsAboutA = b.Relationships
+            .FirstOrDefault(r => r.Name.Contains(a.Name, StringComparison.OrdinalIgnoreCase));
+
+        if (aKnowsAboutB?.StoryTension.Length > 0)
+            parts.Add($"{a.Name} knows: {ShortenToSignal(aKnowsAboutB.StoryTension)}");
+        if (bKnowsAboutA?.StoryTension.Length > 0)
+            parts.Add($"{b.Name} knows: {ShortenToSignal(bKnowsAboutA.StoryTension)}");
+
+        // Information asymmetry is the lifeblood of dialogue tension
+        if (parts.Count == 0 && tension >= 5)
+            parts.Add("neither has full information — both operating on assumptions");
+
+        return string.Join("; ", parts);
+    }
+
     private string BuildCharacterVoice(CharacterData c)
     {
         var lines = new List<string> { $"[{c.Name.ToUpper()}]" };

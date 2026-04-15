@@ -1299,22 +1299,78 @@ textarea.auto-grow {
 /* Purposeful one-way drift — each char travels toward --adx1/--ady1 (a shared
    cluster direction with per-glyph spread). The further it gets, the more it
    blurs and fades. Plays once with forwards fill so it vanishes at its destination. */
-/* --sx/--sy are the perpendicular sway vector (pre-computed in JS, sign randomised
-   per glyph so half sway left-first, half right-first → cluster spreads & gathers).
-   Keyframe traces: origin → sway-peak → midpoint → sway-trough → destination → gone. */
 @keyframes cbg-art-drift {
     0%   { transform: translate(0, 0);
            filter: blur(var(--abl)) opacity(0.88); }
-    25%  { transform: translate(calc(var(--adx1) * 0.25 + var(--sx)), calc(var(--ady1) * 0.25 + var(--sy)));
-           filter: blur(calc(var(--abl) * 1.2)) opacity(0.84); }
-    50%  { transform: translate(calc(var(--adx1) * 0.5),              calc(var(--ady1) * 0.5));
-           filter: blur(calc(var(--abl) * 1.4)) opacity(0.78); }
-    75%  { transform: translate(calc(var(--adx1) * 0.75 - var(--sx)), calc(var(--ady1) * 0.75 - var(--sy)));
-           filter: blur(calc(var(--abl) * 2.4)) opacity(0.42); }
+    40%  { transform: translate(calc(var(--adx1) * 0.4), calc(var(--ady1) * 0.4));
+           filter: blur(calc(var(--abl) * 1.3)) opacity(0.80); }
+    75%  { transform: translate(calc(var(--adx1) * 0.75), calc(var(--ady1) * 0.75));
+           filter: blur(calc(var(--abl) * 2.6)) opacity(0.38); }
     92%  { transform: translate(var(--adx1), var(--ady1));
            filter: blur(calc(var(--abl) * 4.0)) opacity(0.08); }
     100% { transform: translate(var(--adx1), var(--ady1));
            filter: blur(calc(var(--abl) * 4.5)) opacity(0); }
+}
+
+/* ── Network connection attempts ───────────────────────────────────────── */
+.cbg-net-node {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    font-family: 'Courier New', monospace;
+    font-size: 0.55rem;
+    padding: 2px 5px;
+    border: 1px solid;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    animation: cbg-net-in 0.18s ease forwards;
+}
+@keyframes cbg-net-in {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.7); }
+    to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+.cbg-net-fail {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    font-family: 'Courier New', monospace;
+    font-size: 0.60rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    animation: cbg-net-fail-flash 0.13s steps(1) 7, cbg-net-fail-out 0.35s ease 0.95s forwards;
+}
+@keyframes cbg-net-fail-flash {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+}
+@keyframes cbg-net-fail-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.cbg-net-ping {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    width: 12px; height: 12px;
+    border: 1px solid;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: cbg-net-ping-out 0.7s ease-out forwards;
+}
+@keyframes cbg-net-ping-out {
+    0%   { transform: translate(-50%, -50%) scale(0); opacity: 0.9; }
+    100% { transform: translate(-50%, -50%) scale(3.5); opacity: 0; }
+}
+.cbg-net-tracer {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    font-family: 'Courier New', monospace;
+    font-size: 0.55rem;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
 }
 
 /* ── Corporate memo intercept ──────────────────────────────────────────── */

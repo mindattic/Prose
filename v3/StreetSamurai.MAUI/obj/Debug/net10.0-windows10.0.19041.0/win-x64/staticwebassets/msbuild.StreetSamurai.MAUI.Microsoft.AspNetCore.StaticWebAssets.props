@@ -12,12 +12,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hjsakx5f63</Fingerprint>
-      <Integrity>A4l1v4n0cpWqOovrbX6iHwJTFnIsMz7jcsRVWULLsXU=</Integrity>
+      <Fingerprint>i9km49n8gu</Fingerprint>
+      <Integrity>FsiqpowoesEex09JgVpf30V3tP71la5/WS9SqF1yIyI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>43652</FileLength>
-      <LastWriteTime>Mon, 13 Apr 2026 01:13:24 GMT</LastWriteTime>
+      <FileLength>55356</FileLength>
+      <LastWriteTime>Wed, 15 Apr 2026 05:38:58 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -32,12 +32,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mg2oy86jmr</Fingerprint>
-      <Integrity>iju39iQimLX5F48belp88Jg4XtfBsJPLQOrGMLq+IlY=</Integrity>
+      <Fingerprint>n5q6q4lkva</Fingerprint>
+      <Integrity>FfxFJbq1T0KMW2gmiDM+2+GxG1cn3JMPbJ+FXwdlP48=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>2450</FileLength>
-      <LastWriteTime>Mon, 13 Apr 2026 01:13:12 GMT</LastWriteTime>
+      <FileLength>2457</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 03:21:50 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\console-bg.js'))">
@@ -52,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>07ql13dr5b</Fingerprint>
-      <Integrity>3JTO8DsNa2JeXLJ9syx8RHF2Y7vqTbsn9vbtNvdY79U=</Integrity>
+      <Fingerprint>fiygr9j0d7</Fingerprint>
+      <Integrity>twEnBRmZf3RijI+5S/CiWY02/M2HWah3rIHGIieqvho=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>96043</FileLength>
-      <LastWriteTime>Sun, 12 Apr 2026 20:29:03 GMT</LastWriteTime>
+      <FileLength>250781</FileLength>
+      <LastWriteTime>Wed, 15 Apr 2026 06:16:00 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\console-bg.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\geomap.js'))">
@@ -92,12 +92,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6h4oqir7wu</Fingerprint>
-      <Integrity>qn59CRXGZE16mphuhN7T6gJBIwbBlKs9X9fT37Vh768=</Integrity>
+      <Fingerprint>yt50x9u7rj</Fingerprint>
+      <Integrity>er0j31IH8Si3aMGqppTfPHYghyO8VAKwqLUfL9+sRaQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>2162</FileLength>
-      <LastWriteTime>Mon, 13 Apr 2026 01:14:21 GMT</LastWriteTime>
+      <FileLength>2143</FileLength>
+      <LastWriteTime>Mon, 13 Apr 2026 01:14:35 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\glyph-box.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))">

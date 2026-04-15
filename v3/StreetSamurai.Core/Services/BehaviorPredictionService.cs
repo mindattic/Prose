@@ -89,7 +89,139 @@ public class BehaviorPredictionService
         // Belongings — what they have with them
         prediction.Belongings = ExtractBelongings(character);
 
+        // Stat-driven modifiers — numeric stats shape probability and decision-making
+        prediction.StatModifiers = BuildStatProfile(character, tensionLevel, beatGoal);
+
         return prediction;
+    }
+
+    // ── Stats helpers ──
+
+    /// <summary>
+    /// Safely extract a numeric stat value from a character's stats dictionary.
+    /// CharacterStats uses Dictionary&lt;string, JsonElement&gt; for flexibility.
+    /// Returns 5 (neutral mid-point) if the key doesn't exist or can't be parsed.
+    /// </summary>
+    private static int GetStat(System.Text.Json.JsonElement element) =>
+        element.ValueKind == System.Text.Json.JsonValueKind.Number && element.TryGetInt32(out var v) ? v : 5;
+
+    private static int GetStatFromDict(Dictionary<string, System.Text.Json.JsonElement> dict, string key) =>
+        dict.TryGetValue(key, out var el) ? GetStat(el) : 5;
+
+    private static int GetThreshold(Dictionary<string, System.Text.Json.JsonElement> thresholds, string key)
+    {
+        if (!thresholds.TryGetValue(key, out var el)) return 5;
+        // Threshold can be a plain number OR an object {score:N, response:"..."}
+        if (el.ValueKind == System.Text.Json.JsonValueKind.Number && el.TryGetInt32(out var v)) return v;
+        if (el.ValueKind == System.Text.Json.JsonValueKind.Object &&
+            el.TryGetProperty("score", out var scoreEl) && scoreEl.TryGetInt32(out var sv)) return sv;
+        return 5;
+    }
+
+    /// <summary>
+    /// Build a stat-driven profile string describing how a character's stats
+    /// affect their behavior in this specific scene. Stats modify probability,
+    /// not destiny — a weak character can still attempt combat, it's just costly.
+    /// </summary>
+    private static string BuildStatProfile(CharacterData character, int tensionLevel, string beatGoal)
+    {
+        var stats = character.Stats;
+        var lines = new List<string>();
+        var goalLower = beatGoal.ToLowerInvariant();
+
+        // ── Physical ──
+        var strength = GetStatFromDict(stats.Physical, "strength");
+        var dexterity = GetStatFromDict(stats.Physical, "dexterity");
+        var perception = GetStatFromDict(stats.Physical, "perception");
+        var vitality = GetStatFromDict(stats.Physical, "vitality");
+
+        if (goalLower.Contains("fight") || goalLower.Contains("combat") || goalLower.Contains("battle") || goalLower.Contains("attack"))
+        {
+            var combatStyle = strength >= 7 ? "raw force — overwhelm through power"
+                : dexterity >= 7 ? "precision strikes — exploit gaps, avoid direct exchange"
+                : vitality >= 7 ? "endurance fighting — outlast the opponent"
+                : "survival mode — cannot win a fair fight, must create unfair conditions";
+            lines.Add($"COMBAT APPROACH: {combatStyle} (strength:{strength}, dexterity:{dexterity}, vitality:{vitality})");
+        }
+
+        if (perception >= 8)
+            lines.Add("HIGH PERCEPTION: noticing environmental details, exits, threats others miss");
+        else if (perception <= 3)
+            lines.Add("LOW PERCEPTION: may miss non-obvious threats, easily surprised");
+
+        // ── Mental ──
+        var cognition = GetStatFromDict(stats.Mental, "cognition");
+        var willpower = GetStatFromDict(stats.Mental, "willpower");
+
+        if (tensionLevel >= 7)
+        {
+            var stressHandling = willpower >= 7 ? "high willpower — stays functional under extreme stress"
+                : willpower <= 3 ? "low willpower — may freeze or make impulsive errors"
+                : "moderate willpower — holding together but showing the strain";
+            lines.Add($"UNDER PRESSURE: {stressHandling}");
+        }
+
+        if (cognition >= 8)
+            lines.Add("HIGH COGNITION: processes information fast, may see implications others miss");
+        else if (cognition <= 3)
+            lines.Add("LOW COGNITION: operates on instinct and pattern recognition, not analysis");
+
+        // ── Social ──
+        var presence = GetStatFromDict(stats.Social, "presence");
+        var empathy = GetStatFromDict(stats.Social, "empathy");
+        var integrity = GetStatFromDict(stats.Social, "integrity");
+
+        if (goalLower.Contains("negotiate") || goalLower.Contains("deal") || goalLower.Contains("convince") || goalLower.Contains("persuade"))
+        {
+            var negotiationStyle = presence >= 7 ? "commands the room — uses presence as leverage"
+                : empathy >= 7 ? "reads the other person — negotiates through their vulnerabilities"
+                : integrity >= 7 ? "credible because they keep their word — leverage is their reputation"
+                : "weak negotiator — needs information asymmetry or leverage to compensate";
+            lines.Add($"NEGOTIATION APPROACH: {negotiationStyle}");
+        }
+
+        // ── Personality (1-10, higher = first pole of each pair) ──
+        var boldness = GetStatFromDict(stats.Personality, "assertion_deference"); // higher = more assertive
+        var impulsivity = GetStatFromDict(stats.Personality, "impulsivity_deliberation"); // higher = more impulsive
+        var transparency = GetStatFromDict(stats.Personality, "transparency_guardedness"); // higher = more transparent
+        var openness = GetStatFromDict(stats.Personality, "openness_conviction"); // higher = more conviction
+        var empathyPers = GetStatFromDict(stats.Personality, "empathy_detachment"); // higher = more empathy
+
+        // Risk tolerance
+        if (tensionLevel >= 5)
+        {
+            var riskProfile = boldness >= 7 ? "assertive — takes initiative even at risk"
+                : boldness <= 3 ? "deferential — waits for others to move first"
+                : impulsivity >= 7 ? "acts first, calculates after"
+                : "calculated risk assessment — won't move without an exit";
+            lines.Add($"RISK PROFILE: {riskProfile}");
+        }
+
+        // Information handling
+        var infoStyle = transparency >= 7 ? "tends toward transparency — harder for them to maintain deception"
+            : transparency <= 3 ? "naturally guarded — reveals nothing without purpose"
+            : "";
+        if (infoStyle.Length > 0)
+            lines.Add($"INFO STYLE: {infoStyle}");
+
+        // ── Thresholds ──
+        var moralThreshold = GetThreshold(stats.Thresholds, "moral");
+        var desperationThreshold = GetThreshold(stats.Thresholds, "desperation");
+        var trustThreshold = GetThreshold(stats.Thresholds, "trust");
+
+        if (tensionLevel >= moralThreshold)
+            lines.Add($"MORAL THRESHOLD CROSSED: behavior may shift — previous ethical limits are now under pressure (threshold was {moralThreshold})");
+
+        if (tensionLevel >= desperationThreshold)
+            lines.Add($"DESPERATION THRESHOLD: willing to do things they normally wouldn't (threshold was {desperationThreshold})");
+
+        // ── Strengths/Weaknesses ──
+        if (stats.Strengths.Count > 0)
+            lines.Add($"CHARACTER STRENGTHS: {string.Join(", ", stats.Strengths.Take(3))}");
+        if (stats.Weaknesses.Count > 0)
+            lines.Add($"CHARACTER WEAKNESSES: {string.Join(", ", stats.Weaknesses.Take(3))}");
+
+        return lines.Count > 0 ? string.Join("\n    ", lines) : "";
     }
 
     /// <summary>Build a prompt-ready text block from predictions for all characters in a scene.</summary>
@@ -133,6 +265,9 @@ public class BehaviorPredictionService
 
             if (p.Belongings.Count > 0)
                 lines.Add($"    HAS: {string.Join("; ", p.Belongings)}");
+
+            if (p.StatModifiers.Length > 0)
+                lines.Add($"    STATS: {p.StatModifiers}");
 
             if (p.NearBreakingPoint)
                 lines.Add("    WARNING: Near breaking point — behavior may become erratic or uncharacteristic");
@@ -488,4 +623,6 @@ public class CharacterBehaviorPrediction
     public bool NearBreakingPoint { get; set; }
     public List<string> ArchetypeInfluences { get; set; } = [];
     public List<string> Belongings { get; set; } = [];
+    /// <summary>Stat-driven behavioral modifiers — how numeric stats shape this scene.</summary>
+    public string StatModifiers { get; set; } = "";
 }
