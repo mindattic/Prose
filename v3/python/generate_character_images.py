@@ -44,7 +44,7 @@ from rich.progress import Progress
 sys.path.insert(0, str(Path(__file__).parent))
 from constants import ANTHROPIC_API_KEY, DATA_DIR
 
-console = Console()
+console = Console(legacy_windows=False)
 
 # ── Config ────────────────────────────────────────────────────────────────────
 OPENAI_API_KEY = os.getenv("SS_OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY", "")
@@ -52,9 +52,9 @@ PEOPLE_DIR = Path(DATA_DIR) / "people"
 MEDIA_DIR = Path(DATA_DIR) / "media"
 CONCURRENCY = int(os.getenv("CONCURRENCY", "5"))  # conservative — DALL-E rate limits
 
-DALLE_MODEL = "dall-e-3"
-DALLE_SIZE = "1024x1792"   # portrait aspect
-DALLE_QUALITY = "standard"
+DALLE_MODEL = "gpt-image-1"
+DALLE_SIZE = "1024x1536"   # portrait aspect (gpt-image-1 supported size)
+DALLE_QUALITY = "high"
 
 CLAUDE_MODEL = os.getenv("MODEL", "claude-sonnet-4-6")
 
@@ -100,17 +100,17 @@ CCTV_SECTORS = [
 # ── Tier 1 prompt suffix — standardised cyberpunk aesthetic ──────────────────
 # Appended to every dalle3_prompt for Tier 1 characters so their images
 # share a consistent environment, lighting, mood and camera style.
-_TIER1_ACTION_DRY  = "walking forward, subtle motion blur, shallow depth of field"
-_TIER1_ACTION_RAIN = "walking forward, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field"
+_TIER1_ACTION_DRY  = "walking forward through narrow neon-lit alley, subtle motion blur, shallow depth of field"
+_TIER1_ACTION_RAIN = "walking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field"
 _TIER1_RAIN_PROB   = 0.20  # 20% of Tier 1 prompts include active rain
 
 _TIER1_SUFFIX_BODY = """\
 
-environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures
+environment: dense cyberpunk alley, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures
 
 lighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground
 
-mood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment
+mood: corporate dystopia, sleek but hostile, capitalism-saturated environment
 
 style: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards
 
@@ -176,25 +176,27 @@ You write DALL-E 3 image prompts for characters in a near-future cyberpunk world
 
 WORLD RULES:
 - Mixed global heritage is the norm (Ubiquitous Diaspora) — no character is a single ethnicity
-- Augmentations range from invisible subcutaneous to visible chrome — describe what is visible
-- Tiers 1-2 = wealthy corpo, 3-4 = working class, 5 = ungoverned/sub-grade
-- Aesthetic: neo-noir, rain-slicked streets, neon lighting, corporate dystopia
-- Do NOT make characters idealized or model-beautiful unless their role specifically requires it
-- Do NOT make faces symmetrical — real faces are asymmetrical
-- Avoid generic cyberpunk clichés (glowing cyborg eyes, full chrome arms) unless specifically in the character data
+- Tier 1 = low-income laborers and street workers — worn, weathered clothing
+  Tier 2 = working class — functional but not prosperous
+  Tier 3-4 = professional/middle class — some corporate identity
+  Tier 5 = corporate elite — expensive, curated
+- Augmentations: only describe what is visibly external. Cybernetic eyes are subtle iris irregularities or unusual color — NOT camera lenses, NOT glowing orbs. Neural implants are faint trace lines at the temple — NOT ports or glowing hardware. Augmentations look like medical hardware on a normal human body, not sci-fi props.
+- Characters are always in motion or a candid moment — walking, glancing, pausing. Never posed, never meditating, never staring at camera.
+- Background: wet cyberpunk street, alley, or public space. Never a server room or sterile interior.
+- Do NOT make characters idealized or model-beautiful. Do NOT make faces symmetrical — real faces are asymmetrical and imperfect.
+- Avoid generic cyberpunk clichés: no glowing robotic eyes, no chrome arms, no holographic displays — unless explicitly in the character data.
 
 PROMPT STRUCTURE (follow this format exactly):
-1. Opening line: genre/role description, key physical stats (gender, age, build, skin tone, face quality)
-2. Facial details on separate line starting with "face:" (asymmetry, scars, fatigue, eyes)
-3. Hair on separate line starting with "hair:"
-4. Expression on separate line starting with "expression:"
-5. Outfit on separate line starting with "outfit:"
-6. Action/pose sentence describing what they are doing
-7. Environment line starting with "environment:"
-8. Lighting line starting with "lighting:"
-9. Mood line starting with "mood:"
-10. Style line starting with "style:" — always end with "NOT idealized, NOT symmetrical, NOT model-like"
-11. Camera line starting with "camera:"
+1. Opening line: genre/role, gender, age, build, skin tone, face character
+2. hair: line
+3. expression: line
+4. outfit: line (Tier 1 = worn/survival-grade, Tier 5 = expensive/curated)
+5. One action/pose sentence
+6. environment: line — cyberpunk street or alley
+7. lighting: line
+8. mood: line
+9. style: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards
+10. camera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores
 
 GOLD STANDARD EXAMPLE:
 
@@ -561,6 +563,10 @@ async def process_character(filepath: str, args, claude_client, http_client,
 
     entity_id      = data.get("id", "")
     name           = data.get("name", filepath)
+
+    # Never rewrite hand-crafted prompts for protected characters (--force still regenerates images)
+    from constants import SKIP_CHARACTERS
+    prompt_protected = name in SKIP_CHARACTERS
     existing_prompt = data.get("dalle3_prompt", "").strip()
     existing_cctv  = data.get("cctv_prompt", "").strip()
     img_exists     = has_image(entity_id)
@@ -575,7 +581,7 @@ async def process_character(filepath: str, args, claude_client, http_client,
         return result
 
     # ── Phase 1: Prompt ───────────────────────────────────────────────────────
-    if not existing_prompt or args.force:
+    if (not existing_prompt or args.force) and not prompt_protected:
         if not args.image_only and not args.dry_run:
             console.print(f"  Writing prompt for [cyan]{name}[/cyan]…")
             new_prompt = await generate_dalle3_prompt(data, claude_client, prompt_sem)
@@ -598,26 +604,18 @@ async def process_character(filepath: str, args, claude_client, http_client,
         elif args.dry_run:
             console.print(f"  [yellow]DRY RUN[/yellow] would generate image for [cyan]{name}[/cyan]")
 
-    # ── Phase 3: CCTV surveillance still ─────────────────────────────────────
-    # Generate if: no cctv yet (or --force) AND not skipping AND character has a main image
-    if needs_cctv and (result["image_saved"] or has_image(entity_id)):
-        # Decide probabilistically; --cctv flag forces eligible chars regardless
-        generate_for_this = (
-            (args.cctv and not existing_cctv)  # explicit retroactive pass
-            or (not existing_cctv and should_generate_cctv(data))  # probabilistic during main run
-            or args.force
-        )
-        if generate_for_this:
-            cctv_prompt = build_cctv_prompt(data, existing_prompt)
-            if not args.dry_run and OPENAI_API_KEY:
-                console.print(f"  Generating CCTV still for [cyan]{name}[/cyan]…")
-                ok = await generate_image(entity_id, cctv_prompt, http_client, image_sem, char_name=name + " [CCTV]")
-                if ok:
-                    _save_field(filepath, cctv_prompt=cctv_prompt)
-                    result["cctv_saved"] = True
-            elif args.dry_run:
-                criminal_flag = "[red]criminal[/red]" if _is_criminal_adjacent(data) else ""
-                console.print(f"  [yellow]DRY RUN[/yellow] would generate CCTV for [cyan]{name}[/cyan] {criminal_flag}")
+    # ── Phase 3: CCTV surveillance still (suspended — requires explicit --cctv flag) ──
+    if args.cctv and needs_cctv and (result["image_saved"] or has_image(entity_id)):
+        cctv_prompt = build_cctv_prompt(data, existing_prompt)
+        if not args.dry_run and OPENAI_API_KEY:
+            console.print(f"  Generating CCTV still for [cyan]{name}[/cyan]…")
+            ok = await generate_image(entity_id, cctv_prompt, http_client, image_sem, char_name=name + " [CCTV]")
+            if ok:
+                _save_field(filepath, cctv_prompt=cctv_prompt)
+                result["cctv_saved"] = True
+        elif args.dry_run:
+            criminal_flag = "[red]criminal[/red]" if _is_criminal_adjacent(data) else ""
+            console.print(f"  [yellow]DRY RUN[/yellow] would generate CCTV for [cyan]{name}[/cyan] {criminal_flag}")
 
     return result
 

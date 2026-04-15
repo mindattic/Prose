@@ -69,6 +69,8 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly ArcTrackerService arcTracker;
     private readonly ContinuityValidatorService continuityValidator;
     private readonly SuggestionEngineService suggestions;
+    private readonly OutlineReviewService outlineReview;
+    private readonly StoryQualityService quality;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -82,7 +84,8 @@ public class StoryDirectorService : IStoryDirectorService
         ConsequenceEngine consequences, ThematicIndexService thematicIndex,
         BehaviorPredictionService behaviorPredict,
         DialogueService dialogue, ArcTrackerService arcTracker,
-        ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions)
+        ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
+        OutlineReviewService outlineReview, StoryQualityService quality)
     {
         this.llm = llm;
         this.db = db;
@@ -105,6 +108,8 @@ public class StoryDirectorService : IStoryDirectorService
         this.arcTracker = arcTracker;
         this.continuityValidator = continuityValidator;
         this.suggestions = suggestions;
+        this.outlineReview = outlineReview;
+        this.quality = quality;
     }
 
     /// <summary>
@@ -155,10 +160,31 @@ public class StoryDirectorService : IStoryDirectorService
 
             EnsureBattleBeat(outline);
 
+            // Phase 4b: "The other author" — review the outline before a word is written.
+            // Catches clichés, enforces moral ambiguity, validates character arcs, checks pacing.
+            Report("Reviewing story arc...");
+            try
+            {
+                var reviewResult = await outlineReview.ReviewAsync(outline, ct);
+                story.OutlineReview = reviewResult;
+                if (reviewResult.RevisedOutline.Acts.Count > 0)
+                {
+                    outline = reviewResult.RevisedOutline;
+                    story.Outline = outline;
+                    log.LogInformation("Outline revised by review: moral={Moral}/10, strength={Strength}/10, cliches={Cliches}",
+                        reviewResult.MoralAmbiguityScore, reviewResult.NarrativeStrength, reviewResult.ClicheFlags.Count);
+                }
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Outline review failed — proceeding with original outline");
+            }
+
             // Assign project ID and save the checkpoint with outline (before any beats)
             var projectId = Guid.CreateVersion7().ToString("N");
             story.ProjectId = projectId;
             outlineSvc.Save(projectId, outline);
+            if (story.OutlineReview != null) outlineReview.Save(projectId, story.OutlineReview);
             SaveCheckpoint(story);
             log.LogInformation("Outline checkpoint saved: {ProjectId}", projectId);
 
@@ -384,6 +410,24 @@ public class StoryDirectorService : IStoryDirectorService
 
         log.LogInformation("=== Story complete: title={Title}, protagonist={Protagonist}, beats={BeatCount}, chars={TextLen} ===",
             story.Title, story.Protagonist, story.Beats.Count, story.FullText.Length);
+
+        // Quality evaluation — multi-LLM feedback loop (fire-and-forget to not block the caller)
+        Report("Evaluating story quality...");
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                var report = await quality.EvaluateAsync(story, updatePatternAccumulator: true, ct: default);
+                story.QualityReport = report;
+                SaveCheckpoint(story);
+                log.LogInformation("Quality evaluation complete: overall={Overall}/10 (story: {Title})",
+                    report.AggregateScores.GetValueOrDefault("OVERALL"), story.Title);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Quality evaluation failed — not blocking story return");
+            }
+        });
     }
 
     /// <summary>Generate a single beat's prose.</summary>
@@ -400,7 +444,12 @@ public class StoryDirectorService : IStoryDirectorService
         var arcGuidance = arcTracker.BuildArcGuidance(outline, beat.BeatIndex, arcValidations);
         var charsForBeat = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all;
         var dialogueConstraints = dialogue.BuildDialogueContext(charsForBeat);
+        var conversationGoals = dialogue.BuildConversationGoals(charsForBeat, beat.Goal, beat.Tension);
         var physicalContext = BuildPhysicalContext(charsForBeat);
+
+        // Pacing guidance — tells the LLM how to structure the prose for this beat's position
+        var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
+        var pacing = PacingService.GetPacing(beat.BeatIndex, totalBeats, beat.Goal);
 
         // Thematic enrichment: pull context snippets, vocabulary, quotes, and motifs from ALL repos
         var thematicContext = thematicIndex.BuildBeatContext(beat.Goal, beat.Title, beat.Location ?? location);
@@ -414,6 +463,8 @@ public class StoryDirectorService : IStoryDirectorService
         var beatGoal = beat.Goal;
         if (!string.IsNullOrEmpty(dialogueConstraints))
             beatGoal += "\n\n" + dialogueConstraints;
+        if (!string.IsNullOrEmpty(conversationGoals))
+            beatGoal += "\n\n" + conversationGoals;
 
         if (allText.Count == 0)
         {
@@ -430,11 +481,16 @@ public class StoryDirectorService : IStoryDirectorService
             return opening.Text;
         }
 
+        // Quality improvement directives — accumulated failure patterns from previous stories
+        var qualityDirectives = quality.GetImprovementDirectives();
+
         var fullOutlineContext = outlineContext
             + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "")
             + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "")
             + (physicalContext.Length > 0 ? "\n\n" + physicalContext : "")
-            + (arcGuidance.Length > 0 ? "\n\n" + arcGuidance : "");
+            + (arcGuidance.Length > 0 ? "\n\n" + arcGuidance : "")
+            + (qualityDirectives.Length > 0 ? "\n\n" + qualityDirectives : "")
+            + (pacing.ProseGuidance.Length > 0 ? "\n\n" + pacing.ProseGuidance : "");
         return await starter.ContinueAsync(
             paragraphs, beatGoal, null, beat.Location ?? location,
             beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
@@ -667,6 +723,8 @@ public class AutonomousStory
     public string Premise { get; set; } = "";
     public string Location { get; set; } = "";
     public StoryOutline? Outline { get; set; }
+    public OutlineReviewResult? OutlineReview { get; set; }
+    public StoryQualityReport? QualityReport { get; set; }
     public List<GeneratedStoryBeat> Beats { get; set; } = [];
     public string FullText { get; set; } = "";
     public bool Complete { get; set; }

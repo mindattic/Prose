@@ -50,6 +50,34 @@
                 <small class="text-muted">Beat @progressCurrent / @_progressTotal</small>
             }
 
+            @* Outline review scores *@
+            @if (autonomousStory?.OutlineReview != null)
+            {
+                var review = autonomousStory.OutlineReview;
+                <div class="mt-2 d-flex gap-3 flex-wrap small">
+                    <span class="text-muted">
+                        Moral complexity:
+                        <span class="@(review.MoralAmbiguityScore >= 7 ? "text-success" : review.MoralAmbiguityScore >= 4 ? "text-warning" : "text-danger")">
+                            @review.MoralAmbiguityScore/10
+                        </span>
+                    </span>
+                    <span class="text-muted">
+                        Narrative strength:
+                        <span class="@(review.NarrativeStrength >= 7 ? "text-success" : review.NarrativeStrength >= 4 ? "text-warning" : "text-danger")">
+                            @review.NarrativeStrength/10
+                        </span>
+                    </span>
+                    @if (review.ClicheFlags.Count > 0)
+                    {
+                        <span class="text-warning"><i class="bi bi-exclamation-circle"></i> @review.ClicheFlags.Count cliché(s) caught and revised</span>
+                    }
+                    @if (review.ImprovementsMade.Count > 0)
+                    {
+                        <span class="text-info"><i class="bi bi-arrow-up-circle"></i> @review.ImprovementsMade.Count outline improvement(s) applied</span>
+                    }
+                </div>
+            }
+
             @* Live beat rendering *@
             @foreach (var beat in liveBeats)
             {
