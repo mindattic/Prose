@@ -120,6 +120,7 @@
     "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
   },
   "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
+  "dalle3_prompt": "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
   "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
   "augmentations": "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
   "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
@@ -281,7 +282,7 @@
   ],
   "belongings": {
     "primary_weapon": "Torii Security Group Katana TSK-1 'Silence'",
-    "secondary_weapon": "",
+    "secondary_weapon": "Torii Security Group Compact Combat Shotgun TSS-3 'Chorus'",
     "armor": "",
     "vehicle": "",
     "residence": "The Pivot — Unit 2F, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
@@ -410,5 +411,6 @@
         "Romanian": 16.5
       }
     }
-  }
+  },
+  "tier": "1"
 }

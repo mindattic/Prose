@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, near Halsted and Chicago Ave",
@@ -58,13 +58,13 @@
   "relationships": [],
   "story_hooks": [
     "She approaches someone with a copy of the buried Calumet Rise incident report, asking them to hold it for her — the pressure of keeping it herself has become unbearable.",
-    "A new riot suppression protocol issued by Metro Police Command crosses a line she cannot ignore, and she needs outside help to document and resist it.",
+    "A new riot suppression protocol issued by Arcturus Civil Security Command crosses a line she cannot ignore, and she needs outside help to document and resist it.",
     "Her squad is being deployed to suppress a protest she privately believes is justified, and she is looking for any legal pretext to de-escalate before things go wrong."
   ],
-  "narrative_function": "Moral compass figure within law enforcement — a voice of restraint who can warn players about escalating tensions or provide insight into how the Metro Police actually functions versus how it is supposed to. Can be an unexpected ally or a complicated obstacle depending on context.",
+  "narrative_function": "Moral compass figure within law enforcement — a voice of restraint who can warn players about escalating tensions or provide insight into how the Arcturus Civil Security actually functions versus how it is supposed to. Can be an unexpected ally or a complicated obstacle depending on context.",
   "augmentations": "Subdermal impact-distribution mesh across torso and upper arms (medical-grade, not cosmetic). Neural pacing implant with bioluminescent copper filament side effect visible at temples and crown. Reinforced knee cartilage from a line-of-duty injury repair.",
   "daily_life": "Arrives at Fort Anchor before her shift starts, runs equipment checks, reviews overnight incident logs. Spends much of her day in standby readiness — drills, briefings, and the long waiting that defines riot work — then returns home to her flat in Ironhaven where she maintains a small hydroponic herb garden.",
-  "affiliation": "GLMZ Metro Police — Riot Suppression Unit Delta",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -204,7 +204,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 22 — Graduated Metro Police Academy, assigned to patrol in Calumet Rise",
+      "event": "Age 22 — Graduated Arcturus Civil Security Academy, assigned to patrol in Calumet Rise",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -271,9 +271,9 @@
     ],
     "visible_augmentations": "Copper-toned bioluminescent filaments visible threading through hair at crown and temples, pulsing faintly when heartrate elevates. Barely perceptible geometric pattern of subdermal mesh visible on neck and upper shoulders under certain lighting angles — suggests reinforced torso and upper arm architecture beneath uniform.",
     "posture_movement": "Stands with a balanced, weight-centered stance — the physical grammar of someone trained to absorb impacts from multiple directions. Moves with deliberate economy; no wasted motion. When at rest has a subtle forward neck posture from years of riot gear and helmet wear. Despite her size, footfalls are controlled and quiet. When she walks through a crowded space, people instinctively clear a path without her needing to command it.",
-    "clothing_style": "On duty: GLMZ Metro Police riot suppression uniform — ballistic polymer tactical pants, reinforced boots with good ankle support, modular torso rig over standard-issue impact shirt. Off-duty in Ironhaven: utilitarian Tier 3 casual wear — worn denim or cargo pants, neutral-colored oversized t-shirts or thermal layers, practical jackets. No corporate branding. Favors grey and black. Personal gear shows signs of actual use and repair rather than replacement."
+    "clothing_style": "On duty: Arcturus Defense Solutions Civil Security riot suppression uniform — ballistic polymer tactical pants, reinforced boots with good ankle support, modular torso rig over standard-issue impact shirt. Off-duty in Ironhaven: utilitarian Tier 3 casual wear — worn denim or cargo pants, neutral-colored oversized t-shirts or thermal layers, practical jackets. No corporate branding. Favors grey and black. Personal gear shows signs of actual use and repair rather than replacement."
   },
-  "image_prompt": "Zephyr Balogun-Petrović, 198cm tall imposing figure, rich deep brown skin with warm undertones from tri-continental African-Eastern European-Latin American ancestry, prominent cheekbones and defined jawline, deep brown eyes with baseline tiredness. Close-cropped natural coils with copper-toned bioluminescent filaments threading crown and temples that pulse faintly. Long diagonal silvered scar from left jaw to collarbone. Subdermal geometric mesh pattern visible on neck and shoulders. Standing in balanced weight-centered riot suppression stance, GLMZ Metro Police tactical gear — ballistic polymer pants, reinforced boots, modular torso rig over impact shirt. Deliberate controlled posture, quiet presence. GLMZ 2200s, neon-lit Great Lakes Metropolitan Zone, moody atmospheric lighting catching copper filament glow, gritty urban tactical aesthetics, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Zephyr Balogun-Petrović, 198cm tall imposing figure, rich deep brown skin with warm undertones from tri-continental African-Eastern European-Latin American ancestry, prominent cheekbones and defined jawline, deep brown eyes with baseline tiredness. Close-cropped natural coils with copper-toned bioluminescent filaments threading crown and temples that pulse faintly. Long diagonal silvered scar from left jaw to collarbone. Subdermal geometric mesh pattern visible on neck and shoulders. Standing in balanced weight-centered riot suppression stance, Arcturus Defense Solutions Civil Security tactical gear — ballistic polymer pants, reinforced boots, modular torso rig over impact shirt. Deliberate controlled posture, quiet presence. GLMZ 2200s, neon-lit Great Lakes Metropolitan Zone, moody atmospheric lighting catching copper filament glow, gritty urban tactical aesthetics, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 66.9,
     "Eastern European": 21,
@@ -305,5 +305,6 @@
         "Peruvian": 10.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

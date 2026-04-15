@@ -85,7 +85,7 @@
   "narrative_function": "Vex is the human cost and the human energy of Channel Zero. Where Specter is the ghost and Sine is the machine, Vex is the body — the person who gets tired, gets frustrated, gets excited, and occasionally gets in over his head. His desire to meet Specter drives the crew's internal tension, and his evolving relationship with Sine explores the human-AI boundary at ground level.",
   "augmentations": "High-bandwidth neural interface with hardened data jack — supports direct system immersion for aggressive intrusion work. Reflex-boosted fingers for rapid manual input. Cognitive stimulant dispenser (internal, self-regulating) that boosts processing speed during extended operations at the cost of significant post-operation fatigue. Basic optical enhancement for code analysis — syntax highlighting projected onto visual field.",
   "daily_life": "Wakes late — the cognitive stimulant cycle means his sleep schedule is wrecked and his mornings are slow. Reviews overnight operational intelligence from Specter and Sine. Spends the day on active intrusion operations, tool development, or target reconnaissance. Eats delivery food without tasting it. Evenings he tinkers with hardware, runs personal projects (unauthorized intrusions that are partly practice and partly compulsion), and argues with Sine about consciousness. Sleeps badly when the stimulants are cycling.",
-  "affiliation": "Channel Zero",
+  "affiliation": "Copperveil Intelligence (mid-level data extraction specialist and aggressive intrusio)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -258,5 +258,6 @@
         "Costa Rican": 2.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -61,7 +61,7 @@
   "narrative_function": "Equipment repair, parts sourcing, and technical information; warm point of contact in Geartown; her shop is a natural gathering place and information node.",
   "augmentations": "Subdermal haptic EM-field sensor (right hand, diagnostic grade). Bioluminescent skin mod — amber pulse tracers along forearms. No heavy chrome.",
   "daily_life": "At the shop by 0700. Mornings on intake and diagnosis, afternoons on repair or running parts between Geartown suppliers. Evenings studying for her Helix Biosystems junior-tech certification exam.",
-  "affiliation": "Manda's Salvage & Fine Repair, Geartown; loosely affiliated with Geartown's independent tech community",
+  "affiliation": "Manda's Salvage & Fine Repair, Geartown; loosely affiliated with Geartown's independent tech community; The Coffin Nails",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -273,5 +273,6 @@
         "Cameroonian": 3.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

@@ -61,7 +61,7 @@
   "narrative_function": "Lore source for tunnel history and underworld geography; faction mediator; can grant or withhold access to pipe-folk resources and knowledge; his approval is social currency in the deep levels",
   "augmentations": "None — he is philosophically opposed to augmentation, viewing it as a surface-world dependency that creates vulnerabilities underground; his cane is the only technology he trusts",
   "daily_life": "Wakes early to walk Bellows Town's perimeter — he says the settlement tells him its mood through the sounds the pipes make. Spends mornings in arbitration or teaching younger pipe-folk tunnel repair skills. Evenings are for storytelling and the careful rationing of a small still-fermenting brew he makes from fungal mash.",
-  "affiliation": "Bellows Town pipe-folk community; elder neutral party among Undertow clans",
+  "affiliation": "Bellows Town pipe-folk community; elder neutral party among Undertow clans; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -292,5 +292,6 @@
         "Kurdish": 1.8
       }
     }
-  }
+  },
+  "tier": "1"
 }

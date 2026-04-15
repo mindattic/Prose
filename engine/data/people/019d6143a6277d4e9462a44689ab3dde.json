@@ -62,7 +62,7 @@
   "narrative_function": "Equipment provider for disguise or tier-passing scenarios, social mobility commentary, window into the aspirational economy of the lower tiers, potential Lakeview Neon connection point for street-level characters.",
   "augmentations": "Color-changing geneware hair follicles (temple strip). Haptic feedback gloves — not augmentations per se, but sophisticated fabricator's tools he wears constantly, which allow micro-tactile precision in stitching work.",
   "daily_life": "Mornings in his back workshop cutting and assembling. Stall opens by late morning and runs through evening — Burnished Market peaks at night and he stays open for the after-shift crowd. Spends two nights a week doing quiet deliveries to Lakeview Neon contacts.",
-  "affiliation": "Independent; The Oxidian Market Vendors Guild (associate); informal relationships with mid-tier buyers in Lakeview Neon who purchase his originals off-market",
+  "affiliation": "Independent; The Oxidian Market Vendors Guild (associate); informal relationships with mid-tier buyers in Lakeview Neon who purchase his originals off-market; The Shore Dogs",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -318,5 +318,6 @@
         "Lebanese": 0.5
       }
     }
-  }
+  },
+  "tier": "2"
 }

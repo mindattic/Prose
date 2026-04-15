@@ -62,7 +62,7 @@
   "narrative_function": "Local color and information hub — she has seen everyone who rides the line, knows rumors from a dozen neighborhoods, and can serve as an unwitting or deliberate information source. Can also be a quest giver when something goes wrong on the line.",
   "augmentations": "Amber-to-green photosensitive iris geneware (cheap market grade). Ferrogate-standard neural throttle link for tram sync — allows her to feel the tram's speed and braking load as proprioceptive sensation. Left knee has a basic cartilage scaffold implant from a work injury.",
   "daily_life": "She runs the Deepwell-to-Ironvein loop three days a week starting at 05:30, spending twelve hours in the operator's cab before handing off to the night crew. Off days she visits her daughter in Hamtramck Enclave and argues with the local ELF shrine attendant about whether the Transit Mind ELF actually interceded in the 2197 brake failure.",
-  "affiliation": "Ferrogate Transit (Line Operator, Grade 3)",
+  "affiliation": "Ferrogate Transit (mid-level transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -262,5 +262,6 @@
         "Colombian": 14.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

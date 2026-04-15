@@ -65,7 +65,7 @@
   "narrative_function": "Mobile transit access and route knowledge. Understands the underground topology of GLMZ better than most. Union activity puts him in contact with organized labor networks across the city. Can move people or information through the subsurface system. A grounding, realistic portrait of working-class institutional life.",
   "augmentations": "Ferrogate-issue retinal overlay with transit grid display (amber, always-on). Cat tail geneware (black, autonomous).",
   "daily_life": "Rides the Ferrogate as a passenger to Deepwell Station, picks up his operator's booth at 0600, runs his line for eight hours, attends to a maintenance log that is increasingly fictional because the parts don't exist, and gets home in time to eat dinner with whoever in his household is awake.",
-  "affiliation": "Ferrogate Transit — Subsurface Operations Division; Ferrogate Transit Workers' Syndicate (union member)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -282,5 +282,6 @@
         "Austrian": 4.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

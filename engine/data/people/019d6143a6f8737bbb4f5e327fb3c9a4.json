@@ -62,7 +62,7 @@
   "narrative_function": "Equipment source for players on a budget. Can identify salvage and unusual tech. Information source for the secondhand economy and what's been stripped from where. Comic relief with genuine depth underneath.",
   "augmentations": "Bioluminescent underlining along collarbones (cosmetic, knockoff Helix Biosystems). Cheap retinal magnification implant in left eye — functional but gives him occasional calibration headaches.",
   "daily_life": "He sorts salvage in the early hours when The Shelf is quiet, opens his stall mid-morning, and spends most of the day simultaneously serving customers, disassembling things he finds interesting, and carrying on three separate comm conversations. He eats irregularly from Olamide's stall when he remembers.",
-  "affiliation": "Independent; informal relationship with Oxidian Market Vendors Guild (owes dues, keeps forgetting to pay)",
+  "affiliation": "Independent; informal relationship with Oxidian Market Vendors Guild (owes dues, keeps forgetting to pay); The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -252,5 +252,6 @@
         "Somali": 1.3
       }
     }
-  }
+  },
+  "tier": "2"
 }

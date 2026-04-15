@@ -31,6 +31,8 @@ public class ArchetypeData : ICanonEntity
     [JsonPropertyName("similar_to")] public List<ArchetypeSimilarity> SimilarTo { get; set; } = [];
     [JsonPropertyName("opposite_of")] public List<string> OppositeOf { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }
 
 /// <summary>

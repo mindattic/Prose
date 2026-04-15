@@ -67,7 +67,7 @@
   "narrative_function": "Georgi Jorgensen-Toure functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
   "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — operates through reputation only",
+  "affiliation": "Independent — operates through reputation only; The Glass Ladder",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -370,5 +370,6 @@
         "Laotian": 4.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

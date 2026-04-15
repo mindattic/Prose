@@ -62,7 +62,7 @@
   "narrative_function": "Access point for computational resources, information broker adjacent, source of tech-underworld contacts, theological counterpoint around E.L.F. devotion.",
   "augmentations": "Geneware hexagonal tessellation patterned irises (gold and copper). Bone-conducted subvocal communication implant. Neural latency reduction chip — shortens reaction time for interface work.",
   "daily_life": "Rotates server closet locations on a three-day cycle, spends four to six hours a day monitoring and managing their compute inventory, takes client meetings in public transit cars while in motion, leaves data offerings for Vera at 06:00 daily.",
-  "affiliation": "Independent; sells to a rotating client base; buys stripped compute from two separate source networks",
+  "affiliation": "Independent; sells to a rotating client base; buys stripped compute from two separate source networks; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -331,5 +331,6 @@
         "Mexican": 7.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

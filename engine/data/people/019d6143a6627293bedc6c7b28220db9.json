@@ -63,7 +63,7 @@
   "narrative_function": "Resource and information hub; can source unusual technical components; her decades of presence mean she knows everyone and has seen everything; potential quest giver when stolen goods pass through her hands",
   "augmentations": "Self-assembled left forearm prosthetic (salvaged, functional, painted); magnification goggles (non-surgical, worn); subvocal mic implant for hands-free communication while working",
   "daily_life": "Arrives at the Interchange before sunrise to receive overnight salvage drops from her network of scavengers, sorts and prices stock through the morning, runs negotiations and sales through the afternoon, and closes with a ritual offering of a single discarded data chip to the Gear-E.L.F. she believes inhabits the Interchange's traffic control node.",
-  "affiliation": "Independent; founding member of the Oxidian Market Vendors Guild; informal supply relationship with Ferrogate Transit maintenance workers",
+  "affiliation": "Independent; founding member of the Oxidian Market Vendors Guild; informal supply relationship with Ferrogate Transit maintenance workers; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -328,5 +328,6 @@
         "Mapuche": 10.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, GLMZ Metro Police",
+  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, GLMZ, near Kedzie and Division",
@@ -62,7 +62,7 @@
   "narrative_function": "Quest giver for investigations that implicate police corruption; a source of uncomfortable truths; moral counterweight who represents institutional accountability without being naive about it; can give players/characters access to sealed Metro records if she decides they're useful.",
   "augmentations": "Subdermal neural recorder (records conversations passively, admissible in Metro court proceedings); retinal HUD overlay for case file access; cosmetic patterned irises (fractal cobalt and amber). No combat chrome.",
   "daily_life": "She arrives at Fort Anchor before the shift change so she can observe who talks to whom in the corridor; evenings she cross-references surveillance logs against officer expense reports in her apartment, eating reheated grain porridge she forgets to taste.",
-  "affiliation": "GLMZ Metro Police — Internal Affairs Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -197,7 +197,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 22: Joined Metro Police as a beat cop in the Shelf district",
+      "event": "Age 22: Joined Arcturus Civil Security as a beat cop in the Shelf district",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -272,9 +272,9 @@
     ],
     "visible_augmentations": "The fractal iris pattern is immediately noticeable in cobalt and amber, serving as her only concession to aesthetic modification. The neural recorder is subcutaneous and invisible. The retinal HUD overlay is internally rendered and not visible to others.",
     "posture_movement": "She moves with deliberate economy, taking paths that minimize steps. Her spine is straight but not rigid — there's an absence of restlessness in her frame. She sits with both feet flat, elbows at table level. Her head turns before her eyes do. When she listens, she becomes almost perfectly still.",
-    "clothing_style": "Tier 2-3 professional uniform: charcoal GLMZ Metro Police Internal Affairs blazer with silver-thread department insignia; white undershirt; dark gray trousers with crisp creases; black synthetic leather shoes maintained to mirror shine. No personal adornment. The blazer is tailored but not fitted — it's designed for concealment rather than silhouette. Off-duty: the same aesthetic in civilian clothes: unbranded wool cardigans, gray or charcoal, worn over simple black shirts. Her apartment wardrobe contains nothing that suggests leisure or color."
+    "clothing_style": "Tier 2-3 professional uniform: charcoal Arcturus Defense Solutions Civil Security Internal Affairs blazer with silver-thread department insignia; white undershirt; dark gray trousers with crisp creases; black synthetic leather shoes maintained to mirror shine. No personal adornment. The blazer is tailored but not fitted — it's designed for concealment rather than silhouette. Off-duty: the same aesthetic in civilian clothes: unbranded wool cardigans, gray or charcoal, worn over simple black shirts. Her apartment wardrobe contains nothing that suggests leisure or color."
   },
-  "image_prompt": "GLMZ character portrait: tall angular woman, 183cm, silver-white cropped hair, deep warm brown skin with golden-amber undertones reflecting Pan-Pacific and African diaspora heritage. Striking face with broad Southeast Asian cheekbones, full lips, strong Eastern European jaw, Pacific Islander proportions. Fractal spiral eyes in cobalt and amber (geneware irises). Thin white scar along left jawline barely visible against skin. Severe, composed expression without microexpressions. Dressed in charcoal GLMZ Metro Police Internal Affairs blazer with silver insignia, white undershirt, dark gray trousers, mirror-polished black shoes. Perfect posture, deliberate economy of movement. Low-spectrum amber and cool interrogation lighting, slight luminescence on melanin-rich skin. Professional, composed, watchful demeanor. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait: tall angular woman, 183cm, silver-white cropped hair, deep warm brown skin with golden-amber undertones reflecting Pan-Pacific and African diaspora heritage. Striking face with broad Southeast Asian cheekbones, full lips, strong Eastern European jaw, Pacific Islander proportions. Fractal spiral eyes in cobalt and amber (geneware irises). Thin white scar along left jawline barely visible against skin. Severe, composed expression without microexpressions. Dressed in charcoal Arcturus Defense Solutions Civil Security Internal Affairs blazer with silver insignia, white undershirt, dark gray trousers, mirror-polished black shoes. Perfect posture, deliberate economy of movement. Low-spectrum amber and cool interrogation lighting, slight luminescence on melanin-rich skin. Professional, composed, watchful demeanor. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 32.8,
     "Pacific Islander": 31.6,
@@ -323,5 +323,6 @@
         "Romanian": 5.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

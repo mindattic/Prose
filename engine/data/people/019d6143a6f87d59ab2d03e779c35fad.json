@@ -64,7 +64,7 @@
   "narrative_function": "Accidental witness and information source — they know more than they're supposed to and less than they need to; sympathetic underdog whose safety may depend on players; entry point into Helix's research operations at a ground-floor level; can be a moral question (what do you do about someone in danger who hasn't asked for help yet).",
   "augmentations": "Bioluminescent capillary threading (collarbone and hands, soft blue-white, geneware cosmetic). Standard Helix lab-issue neural data-capture module — allows real-time notation and protocol logging without manual input. No other augmentations; they're saving UBC stipend supplements toward something more substantial.",
   "daily_life": "Transit from their shared housing unit in Calumet Rise to Aurochs Medical Complex, arriving in sublevel lab B by 08:30. Spends most of the day on sample prep, data entry, and running errands between research teams that treat them as furniture. Eats from the lab vending units. Stays late regularly — partially from conscientiousness, partially because the lab is quieter then and people are less careful about what they say.",
-  "affiliation": "Helix Biosystems (Tier 2, intern track)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -320,5 +320,6 @@
         "Egyptian": 1
       }
     }
-  }
+  },
+  "tier": "1"
 }

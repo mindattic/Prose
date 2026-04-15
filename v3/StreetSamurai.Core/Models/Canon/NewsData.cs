@@ -25,4 +25,6 @@ public class NewsData : ICanonEntity
     [JsonPropertyName("locations")] public List<string> Locations { get; set; } = [];
     [JsonPropertyName("runner_relevance")] public string RunnerRelevance { get; set; } = "";
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

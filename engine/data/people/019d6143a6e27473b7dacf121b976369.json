@@ -64,7 +64,7 @@
   "narrative_function": "High-tier quest giver with genuinely complex motivations; antagonist who isn't wrong; source of macro-level information about Ferrogate's operations and GLMZ's transit infrastructure; gatekeeper to resources that players might desperately need.",
   "augmentations": "Retractile data-port (behind right ear, installed 2171). Subdermal cardiac monitor with automatic emergency alert — required by Ferrogate for all Tier 5 executives over 50. No cosmetic modifications.",
   "daily_life": "In her office by 06:00, has reviewed overnight logistics reports before most of her staff have eaten breakfast. Conducts three standing meetings before noon. Takes lunch in her office twice a week; uses the other three days to walk the lower transit hubs personally — she believes executives who don't see their actual infrastructure are executives making bad decisions.",
-  "affiliation": "Ferrogate Transit (Tier 5)",
+  "affiliation": "Ferrogate Transit (executive vice president)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -333,5 +333,6 @@
         "Punjabi Pakistani": 0.2
       }
     }
-  }
+  },
+  "tier": "5"
 }

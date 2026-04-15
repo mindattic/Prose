@@ -63,7 +63,7 @@
   "narrative_function": "Witness and information source — they have seen things in the building that residents assume no one saw. Can provide access to spaces, service routes, and timing information. The notebook is a potential plot device.",
   "augmentations": "Bioluminescent skin patches (lichen-pattern, blue-green, collarbones and shoulders, cosmetic). Basic respiratory filter implant (standard for chemical cleaning work, employer-provided and technically employer-owned per contract).",
   "daily_life": "Clocks in at 23:00, works through until 07:00 cleaning common areas, elevator shafts, and the lower commercial floors of Lakeview Neon. Rides the Ferrogate line home to Edgewater Prism, sleeps until 16:00, spends evenings eating cheap noodles and sketching floor plans of buildings they've cleaned.",
-  "affiliation": "Contracted through Palladian Facilities Management (a Palladian subsidiary), assigned to Lakeview Neon",
+  "affiliation": "Contracted through Palladian Facilities Management (a Palladian subsidiary), assigned to Lakeview Neon; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -291,5 +291,6 @@
         "Berber": 0.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -85,7 +85,7 @@
   "narrative_function": "Lise is the crew's moral compass — not because she's virtuous, but because she's the one asking whether what they're doing is right. Her psychological training makes her the character most aware of the human cost of corporate espionage, and her growing discomfort with the Margin Call's ethical flexibility drives the crew's internal tension.",
   "augmentations": "Micro-expression analysis overlay — real-time facial and vocal pattern assessment projected onto her visual field. Displays deception probability, emotional state, and stress indicators. Pheromone modulator — subtle chemical output calibration that adjusts the social comfort of people in close proximity. Eidetic conversational memory — perfect recall of dialogue, including tone, pace, and contextual details.",
   "daily_life": "Morning routine is long and deliberate — appearance preparation, intelligence review, persona calibration for the day's operations. Operates under multiple cover identities throughout the week — a consultant, a recruiter, a compliance auditor. Each identity requires different clothing, mannerisms, and speech patterns. Evenings she debriefs with Sterling, maintains her cover documentation, and reads psychology journals. She exercises daily — boxing, not for fighting, but for the controlled aggression it allows her to express.",
-  "affiliation": "The Margin Call",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -280,5 +280,6 @@
         "Iranian": 1.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

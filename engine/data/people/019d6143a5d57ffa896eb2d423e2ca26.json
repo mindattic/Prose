@@ -63,7 +63,7 @@
   "narrative_function": "Information broker, investigation guide, morally complex ally. Can locate people, dig up records, run surveillance. Will share information for appropriate compensation or the right reason. Serves as a lens into how private investigation operates in the gaps between corporate and municipal law.",
   "augmentations": "Layered shift-iris implants (amber/violet). Tint-shift hair geneware (chromatic, basic package). Retinal overlay HUD — civilian-grade, used for note-taking and visual flagging during surveillance. Sound-filtering cochlear mod that lets them isolate specific voices in crowd noise.",
   "daily_life": "Irregular hours that follow cases rather than clocks. Mornings usually involve reviewing overnight surveillance feeds in the office, drinking coffee that has gone cold, and returning messages they have been putting off. Takes at least one walk through Edgewater Prism daily — they call it 'maintenance' but it's mostly processing time.",
-  "affiliation": "Self-employed; occasional contracted work with Tessera Compliance Bureau (arms-length), GLMZ Metro Police (informal, case-by-case)",
+  "affiliation": "Self-employed; occasional contracted work with Tessera Compliance Bureau (arms-length), Arcturus Defense Solutions — Civil Security Division (informal, case-by-case)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -115,7 +115,7 @@
       "Targeted data requests",
       "Direct contact with subject under cover of another pretext",
       "Confrontation with evidence",
-      "Pass findings to Metro Police or Tessera compliance, reluctantly"
+      "Pass findings to Arcturus Civil Security or Tessera compliance, reluctantly"
     ],
     "interpersonal_modes": {
       "strangers": "Pleasant, slightly reserved, asks more questions than they answer — in a way that usually feels like interest rather than interrogation",
@@ -304,5 +304,6 @@
         "Mexican": 14
       }
     }
-  }
+  },
+  "tier": "3"
 }

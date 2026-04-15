@@ -28,7 +28,28 @@
     "A network of buyers across the Shelf and Circuit who depend on Scraper inventory"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Fathom Line",
+      "type": "rival",
+      "reason": "Underwater territory overlap near Milwaukee"
+    },
+    {
+      "name": "The Shore Dogs",
+      "type": "rival",
+      "reason": "Surface salvage rights disputes"
+    },
+    {
+      "name": "The Siphon Collective",
+      "type": "ally",
+      "reason": "The Collective provides power for deep equipment in exchange for salvaged electrical components"
+    },
+    {
+      "name": "The Volt Runners",
+      "type": "ally",
+      "reason": "Tech partnership — the Runners provide technical equipment maintenance; the Scrapers share salvage finds"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Scrapers found something in a flooded sub-basement that was never supposed to be found — and now multiple factions want it",
@@ -73,5 +94,15 @@
     "Folake Bergqvist-Dlamini",
     "Déjà Vu",
     "Lead"
+  ],
+  "size_class": "medium",
+  "known_members": [
+    {
+      "name": "Diego Zaragoza-Anang",
+      "id": "019d6143a6eb79eab63bca9df2355de6",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

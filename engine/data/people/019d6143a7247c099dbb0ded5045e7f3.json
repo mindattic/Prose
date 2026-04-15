@@ -63,7 +63,7 @@
   "narrative_function": "Community anchor, information hub, healer figure — she knows everyone in the sub-levels of Irkalla and has strong opinions about all of them. Can provide resources, medicine, Quietcap, and extremely candid assessments of other characters.",
   "augmentations": "Self-inoculated bioluminescent photobacterial symbiote (forearms, neck — faint blue-green glow); basic respiratory filter implant (nasal); no other augmentations",
   "daily_life": "Rises by internal clock around 0500 to check moisture levels and harvest timings; distributes daily food rations to her community roster; spends afternoons on cultivation work and medical consultations; holds an informal evening gathering she calls 'the dark table' where people eat together in near-total darkness.",
-  "affiliation": "Irkalla sub-level community; informal trade relationships with Undertow merchants",
+  "affiliation": "Irkalla sub-level community; informal trade relationships with Undertow merchants; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -333,5 +333,6 @@
         "Khmer": 4.1
       }
     }
-  }
+  },
+  "tier": "1"
 }

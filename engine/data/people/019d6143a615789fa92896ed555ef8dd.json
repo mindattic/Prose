@@ -62,7 +62,7 @@
   "narrative_function": "Supply source, information broker, black-market access point disguised as local color; can provide controlled substances for various story purposes; comic relief that is smarter than it appears",
   "augmentations": "Patterned cosmetic irises (geometric charcoal and cream); olfactory enhancement (mild, professional — helps him detect compound purity); no structural augmentation",
   "daily_life": "Dispensary opens at eight, closes at nine. He eats lunch standing up behind the counter. Two evenings per week he runs 'after-hours inventory' that is not inventory. He sleeps six hours and considers this sufficient.",
-  "affiliation": "Self-employed (Goldthread Dispensary license); informal supply network with several underground medical providers",
+  "affiliation": "Self-employed (Goldthread Dispensary license); informal supply network with several underground medical providers; The Gauze",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -255,5 +255,6 @@
         "Swiss German": 4.5
       }
     }
-  }
+  },
+  "tier": "4"
 }

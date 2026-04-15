@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Beat Cop, GLMZ Metro Police",
+  "role": "Beat Cop, Arcturus Defense Solutions — Civil Security Division",
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Vega Kjellberg has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Metro Police uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
+  "description": "Vega Kjellberg has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Arcturus Civil Security uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -38,9 +38,9 @@
     ],
     "blind_spots": [
       "His affection for the neighborhood can make him slow to recognize when people he likes are doing genuine harm",
-      "Underestimates how his Metro Police uniform reads to people who have been harmed by the institution, even when his individual conduct is good"
+      "Underestimates how his Arcturus Civil Security uniform reads to people who have been harmed by the institution, even when his individual conduct is good"
     ],
-    "secret": "He has been quietly supplementing the income of two families on his beat from his own wages — children whose parents are in Metro Police holding on charges he privately believes are fabricated corporate compliance referrals. He has not reported what he suspects because he does not believe it would change anything."
+    "secret": "He has been quietly supplementing the income of two families on his beat from his own wages — children whose parents are in Arcturus Civil Security holding on charges he privately believes are fabricated corporate compliance referrals. He has not reported what he suspects because he does not believe it would change anything."
   },
   "speech_patterns": {
     "vocabulary": "Conversational, warm, full of neighborhood references and historical asides. Mixes Ghanaian-rooted expressions from his father's side with a slight Eastern European lilt inherited from his mother's family. Lectures affectionately.",
@@ -57,14 +57,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "He has noticed a pattern on his beat that he cannot formally report — the data doesn't support it yet, but his eleven years of ground-level observation tells him something is being set up — and he needs someone who can investigate without creating a Metro Police record.",
-    "Two families he has been quietly supporting are now being threatened, and the threat is coming from inside Metro Police infrastructure.",
+    "He has noticed a pattern on his beat that he cannot formally report — the data doesn't support it yet, but his eleven years of ground-level observation tells him something is being set up — and he needs someone who can investigate without creating a Arcturus Civil Security record.",
+    "Two families he has been quietly supporting are now being threatened, and the threat is coming from inside Arcturus Civil Security infrastructure.",
     "He has been approached by Internal Affairs about a fellow officer, and he is weighing what he knows against what he can prove."
   ],
   "narrative_function": "The neighborhood anchor — someone who knows this specific geography of Hamtramck Enclave better than anyone in an official capacity. Source of local intelligence, community history, and a surprisingly nuanced read on who is actually dangerous versus who looks it. Can be a protector or a complication, but never a simple obstacle.",
-  "augmentations": "None cosmetic. Knee brace implant (medical, left knee). Standard-issue Metro Police neural badge-link for ID verification and incident logging. Hearing enhancement in left ear (partial loss from a firearm incident in his twenties).",
+  "augmentations": "None cosmetic. Knee brace implant (medical, left knee). Standard-issue Arcturus Civil Security neural badge-link for ID verification and incident logging. Hearing enhancement in left ear (partial loss from a firearm incident in his twenties).",
   "daily_life": "On foot by 0700, coffee from the same cart on Żurawia Cross, eight-block loop repeated four to six times per shift with variations depending on what he finds. Stops to talk. Knows most people by name within his beat. Files incident reports with meticulous detail that his supervisors find excessive.",
-  "affiliation": "GLMZ Metro Police — Hamtramck Enclave Patrol District",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Hamtramck Enclave Patrol District",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -151,13 +151,13 @@
       "replaces": ""
     },
     {
-      "name": "Metro Police neural badge-link (standard issue)",
+      "name": "ADS Civil Security neural badge-link (standard issue)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Metro Police neural badge-link (standard issue)",
+      "description": "ADS Civil Security neural badge-link (standard issue)",
       "replaces": ""
     },
     {
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 22 — Joined GLMZ Metro Police Academy",
+      "event": "Age 22 — Joined Arcturus Defense Solutions Civil Security Academy",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -278,11 +278,11 @@
       "Thin white scar along left temple, approximately 3cm, from firearm incident in his twenties",
       "Faint webbed scarring on left knee, barely visible beneath uniform trousers, from surgical implant installation"
     ],
-    "visible_augmentations": "Left ear shows subtle neural interface port behind the lobe (hearing enhancement). Slightly favors right leg when standing for extended periods due to left knee brace implant, though the limp is minimal and deliberate. Standard-issue Metro Police neural badge-link sits at right hip — chrome and polymer hybrid, worn smooth from daily use.",
+    "visible_augmentations": "Left ear shows subtle neural interface port behind the lobe (hearing enhancement). Slightly favors right leg when standing for extended periods due to left knee brace implant, though the limp is minimal and deliberate. Standard-issue Arcturus Civil Security neural badge-link sits at right hip — chrome and polymer hybrid, worn smooth from daily use.",
     "posture_movement": "Deliberate, economical gait with a slight favor to the right leg. Stands with hands often clasped in front or resting at duty belt. Moves through space as someone who has claimed it through repetition rather than dominance. Pauses frequently to observe, head slightly tilted — a listener's posture.",
-    "clothing_style": "GLMZ Metro Police regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes — canvas jacket, thermal underlayers, no affectation."
+    "clothing_style": "Arcturus Defense Solutions Civil Security regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes — canvas jacket, thermal underlayers, no affectation."
   },
-  "image_prompt": "Vega Kjellberg, 188cm tall neo-noir police detective in 2226 Great Lakes Metropolitan Zone. Warm golden-brown skin tone blending Nordic bone structure with Southeast Asian and Sub-Saharan African heritage softness. Dark brown eyes with age lines mapping eleven years of street work. Salt-and-pepper trimmed beard, short dark brown hair. Solidly muscled but settled build, favoring right leg slightly. Grey-blue GLMZ Metro Police tactical uniform, worn soft from use, Hamtramck district patch visible. Scuffed black polymer boots. Left ear neural interface port visible. Right hip chrome-polymer police badge-link. White scar along left temple. Deliberate posture, observant gaze slightly tilted listening expression. Standing in neon-lit Hamtramck district precinct, blue and amber light casting long shadows. Tired but focused street cop energy, 2200s neo-noir police procedural aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Vega Kjellberg, 188cm tall neo-noir police detective in 2226 Great Lakes Metropolitan Zone. Warm golden-brown skin tone blending Nordic bone structure with Southeast Asian and Sub-Saharan African heritage softness. Dark brown eyes with age lines mapping eleven years of street work. Salt-and-pepper trimmed beard, short dark brown hair. Solidly muscled but settled build, favoring right leg slightly. Grey-blue Arcturus Defense Solutions Civil Security tactical uniform, worn soft from use, Hamtramck district patch visible. Scuffed black polymer boots. Left ear neural interface port visible. Right hip chrome-polymer police badge-link. White scar along left temple. Deliberate posture, observant gaze slightly tilted listening expression. Standing in neon-lit Hamtramck district precinct, blue and amber light casting long shadows. Tired but focused street cop energy, 2200s neo-noir police procedural aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 40.3,
     "Southeast Asian": 21.8,
@@ -359,5 +359,6 @@
         "Honduran": 1.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

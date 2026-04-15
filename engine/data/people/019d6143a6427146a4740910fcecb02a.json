@@ -67,7 +67,7 @@
   "narrative_function": "Kenji Granlund-Tawiah functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Smartgun link in right forearm — interfaces directly with compatible weapons",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews",
+  "affiliation": "Unaffiliated — too volatile for permanent crews; The Glass Ladder",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -358,5 +358,6 @@
         "Kenyan": 13.1
       }
     }
-  }
+  },
+  "tier": "2"
 }

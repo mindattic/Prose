@@ -29,7 +29,38 @@
     "Youth and appearance — they don't look like threats, which is itself a resource"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Siphon Collective",
+      "type": "rival",
+      "reason": "Chicago energy infrastructure competition"
+    },
+    {
+      "name": "The Coffin Nails",
+      "type": "rival",
+      "reason": "Shelf territory overlap"
+    },
+    {
+      "name": "The Third Rail",
+      "type": "rival",
+      "reason": "Vertical vs horizontal Chicago transit divide"
+    },
+    {
+      "name": "The Neon Vipers",
+      "type": "ally",
+      "reason": "Speed technology culture connection and mutual respect"
+    },
+    {
+      "name": "The Glass Ladder",
+      "type": "ally",
+      "reason": "Tech infrastructure support partnership; the Runners provide vertical access"
+    },
+    {
+      "name": "Switchblade Alley",
+      "type": "ally",
+      "reason": "Maintenance relationship — the Alley maintains Volt Runner equipment"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A Volt Runner witnessed something from a rooftop that they shouldn't have — now they're being hunted and the crew can't protect them",
@@ -66,5 +97,7 @@
     "Lazarus LX-2 'Lab Rat'",
     "Zephyr Bhattacharya",
     "Rowan Kulkarni"
-  ]
+  ],
+  "size_class": "medium",
+  "known_members": []
 }

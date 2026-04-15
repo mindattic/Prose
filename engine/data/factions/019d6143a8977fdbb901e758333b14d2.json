@@ -29,7 +29,28 @@
     "Institutional knowledge of pre-collapse construction methods and material locations"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Bone Parish",
+      "type": "rival",
+      "reason": "Detroit territorial conflict — the Parish operates in ruins the Reclaimed consider their sovereign zone"
+    },
+    {
+      "name": "The Erie Remnant",
+      "type": "rival",
+      "reason": "Great Lakes survivor factions with overlapping ideology and zone edges"
+    },
+    {
+      "name": "The Pure Hand",
+      "type": "ally",
+      "reason": "Anti-corporate alignment despite ideological friction on other issues"
+    },
+    {
+      "name": "The Ferment",
+      "type": "ally",
+      "reason": "Shared DIY, anti-corporate ethos; the Ferment supplies the Reclaimed with pharmaceutical alternatives"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Reclaimed broke into a sealed facility in the ruins belt and found evidence of corporate experiments that were buried — literally — when the district was abandoned",
@@ -59,5 +80,71 @@
     "Detroit",
     "Folake Bergqvist-Dlamini",
     "GLMZ"
+  ],
+  "size_class": "large",
+  "known_members": [
+    {
+      "name": "Zuri Okonkwo-Nygaard",
+      "id": "019d6143a5ac73cd9b1a6ccfd8e53682",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Kit Raghavan",
+      "id": "019d6143a5c57417816395590d05172e",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Nova Touré-Arakawa",
+      "id": "019d6143a5cd74af887c621a477753bf",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Ama Deshpande-Deshpande",
+      "id": "019d6143a5da7fa9a7547fbf4eb962fe",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Mika Möller-Saidov",
+      "id": "019d6143a5f57cb3a0951d80d2e83942",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Kit Hossain",
+      "id": "019d6143a6177e35a8cdbd283c8d56ba",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Amina Amrani",
+      "id": "019d6143a6dd728da8960d877e033ad9",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Nova Haugen-Xayavong",
+      "id": "019d6143a6f8737bbb4f5e327fb3c9a4",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Ananya Bautista-Kulkarni-Traoré",
+      "id": "019d6143a6f97ef1b74797f050bdc4f1",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    }
   ]
 }

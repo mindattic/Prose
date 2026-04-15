@@ -29,7 +29,28 @@
     "Fortified positions at neighborhood entry points"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The 92nd Street Kings",
+      "type": "rival",
+      "reason": "Adjacent Chicago territory; the Guard claims protection authority the Kings do not recognize"
+    },
+    {
+      "name": "The Siphon Collective",
+      "type": "rival",
+      "reason": "The Guard taxes businesses the Collective also taps for utility siphons — double-extraction creates friction"
+    },
+    {
+      "name": "The Third Rail",
+      "type": "ally",
+      "reason": "Both operate in Chicago's infrastructure layer; non-aggression pact and occasional joint use of underground access"
+    },
+    {
+      "name": "The Pure Hand",
+      "type": "ally",
+      "reason": "Shared interest in neighborhood stability — different methods, compatible goals in some overlapping zones"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A corporation wants to develop Burnside and the Guard is the only thing standing in the way — buy them or break them",
@@ -71,5 +92,7 @@
     "Pellucid Systems",
     "Rowan Kulkarni",
     "Iron"
-  ]
+  ],
+  "size_class": "large",
+  "known_members": []
 }

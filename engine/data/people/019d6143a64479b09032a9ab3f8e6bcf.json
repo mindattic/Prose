@@ -61,7 +61,7 @@
   "narrative_function": "Local color and street-level information source — he knows everything happening in his ten-block world in extraordinary detail. Can function as a reluctant errand-boy for characters who need someone who knows the Stockyard's rhythms. His emerging numerical sophistication is a ticking clock.",
   "augmentations": "Geneware cat ears (tawny orange, cosmetic). A basic reflex-assist implant in his legs that marginally improves his running speed and stumble-recovery — he got this at cost from a Shallowgrave dealer and it's not quite calibrated right, giving him an occasional slight hitch in his left stride.",
   "daily_life": "He picks up his route sheets from a drop location at 0700, runs collection and delivery circuits through the Stockyard and into Geartown until 1800, returns to report to Dzintars, and spends evenings at a youth gambling den called the Back Tooth where he is technically working (observing, listening) but mostly just playing.",
-  "affiliation": "Works for Dzintars Mbaya-Ferenczi's independent bookmaking operation — loosely affiliated with the Stockyard Compact, a loose protection arrangement between the area's mid-level criminal operations",
+  "affiliation": "Works for Dzintars Mbaya-Ferenczi's independent bookmaking operation — loosely affiliated with the Stockyard Compact, a loose protection arrangement between the area's mid-level criminal operations; The Last Mile",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -293,5 +293,6 @@
         "Iranian": 2.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

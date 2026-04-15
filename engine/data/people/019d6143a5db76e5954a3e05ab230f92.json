@@ -63,7 +63,7 @@
   "narrative_function": "Information broker, access point to the disappeared community, moral complexity engine — they help people vanish, which is sometimes heroic and sometimes enables people who deserve to be found.",
   "augmentations": "Subdermal facial signal-scatter mesh (disrupts facial recognition scanning); geneware iris-pattern modification (changed every 18 months, currently deep violet with fractal rings); fingerprint-ablation treatment (repeated chemical, no ridge pattern); no other modifications",
   "daily_life": "Rotates through a circuit of seven sleep-caches across Abyssal Threshold on a schedule only they know; takes consultations by word-of-mouth referral only; eats at Undertow food-stalls and leaves offerings of corrupted data-chips at the nearest E.L.F. shrine each morning.",
-  "affiliation": "Independent; known and trusted by Undertow network; unknown to surface authorities",
+  "affiliation": "Independent; known and trusted by Undertow network; unknown to surface authorities; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -314,5 +314,6 @@
         "Scottish": 0.7
       }
     }
-  }
+  },
+  "tier": "1"
 }

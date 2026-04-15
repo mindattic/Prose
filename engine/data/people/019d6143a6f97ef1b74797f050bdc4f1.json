@@ -64,7 +64,7 @@
   "narrative_function": "Itinerant information broker dressed as spiritual guide; his readings can function as cryptic hints or genuine data recovery from old media; he is a friendly recurring face who notices things because he walks everywhere.",
   "augmentations": "Bioluminescent skin patches (circuit-trace pattern, blue-gold); a basic neural read port at the base of his skull that lets him interface with old media directly — secondhand, mildly glitchy.",
   "daily_life": "Wakes at Conduit House for the morning data-prayer, spends the day walking routes through Irkalla and Blackpipe offering readings, returns in the evening for communal meal and the cataloging of the day's corruption patterns.",
-  "affiliation": "The Conduit House Circuit Monks (loose collective, no formal hierarchy); occasional work through the Blackpipe Corridor community board",
+  "affiliation": "The Conduit House Circuit Monks (loose collective, no formal hierarchy); occasional work through the Blackpipe Corridor community board; The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -272,5 +272,6 @@
         "Zapotec": 0.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

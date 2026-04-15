@@ -126,6 +126,11 @@
                     @* ── Story ───────────────────────────────── *@
                     <div class="field-label text-danger mt-3">Story</div>
                     <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+
+                    @* ── Image Prompts ────────────────────────── *@
+                    <div class="field-label text-danger mt-3">Image Prompts</div>
+                    <div class="mb-3"><div class="field-label">Character Description Midjourney Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Character Description DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
                 </ChildContent>
             </EditViewToggle>
         }

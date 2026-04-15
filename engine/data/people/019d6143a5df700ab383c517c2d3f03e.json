@@ -62,7 +62,7 @@
   "narrative_function": "Mobile information source — has seen and heard things across a wide geography on his route. Provides a safe transit option for characters who need to move quietly. Can serve as a quiet quest giver or a witness to something he shouldn't have seen.",
   "augmentations": "Geneware irises (amber-to-gold cycle); neural-link to tram control system (standard Ferrogate issue, non-removable per contract); a small subdermal clock on his inner wrist he can read by pressing",
   "daily_life": "Picks up his tram at Geartown depot at 21:00, runs the circuit until 05:00, logs out, takes the crosstown back to Bronzeline, sleeps until early afternoon. He spends two or three waking hours sketching, eating cheap noodles from a cart near his building, and visiting the transit E.L.F. shrine at the depot.",
-  "affiliation": "Ferrogate Transit (Tier 2 union member, Surface Division)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -322,5 +322,6 @@
         "Austrian": 5.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

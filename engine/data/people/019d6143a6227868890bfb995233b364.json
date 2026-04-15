@@ -67,7 +67,7 @@
   "narrative_function": "Hadiya Karlsen-Sow functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
   "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Freelance — multi-district operator",
+  "affiliation": "Freelance — multi-district operator; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -350,5 +350,6 @@
         "Lebanese": 4.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -29,7 +29,23 @@
     "Medical intelligence — knowledge of who's injured, sick, augmented, and vulnerable"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Ferment",
+      "type": "rival",
+      "reason": "Both supply medical and pharmaceutical needs to the same underserved population; the Gauze resents the Ferment's cheaper unlicensed alternatives eroding their client base"
+    },
+    {
+      "name": "The Bone Parish",
+      "type": "ally",
+      "reason": "Supply relationship — surgical materials without questions"
+    },
+    {
+      "name": "The 92nd Street Kings",
+      "type": "ally",
+      "reason": "The Kings provide protection for Gauze clinic locations in exchange for treatment of members at reduced cost"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A patient died on the Gauze's table and the patient's faction is demanding answers — but revealing the cause of death would expose a larger conspiracy",
@@ -71,5 +87,29 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Kyle Ellen Corbin-Vasik",
     "Iron"
+  ],
+  "size_class": "small",
+  "known_members": [
+    {
+      "name": "Aleksei Solberg",
+      "id": "019d6143a5a2776b9d0203917a5ff256",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Vale An",
+      "id": "019d6143a615789fa92896ed555ef8dd",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Slate Touré-Najjar",
+      "id": "019d6143a70e775996c7b1ca9591c1ea",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

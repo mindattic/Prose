@@ -63,7 +63,7 @@
   "narrative_function": "Reliable social hub and rumor exchange — the cart is a gathering point; potential quest giver around supply-chain problems or protection-money disputes; comic relief with unexpected depth; can source unusual items through his supply network.",
   "augmentations": "Geneware cat tail (russet, full sensory); geneware hair (deep-sea teal, permanent); enhanced olfactory mod (professional-grade scent discrimination, helps with cooking and sourcing ingredients).",
   "daily_life": "Up at 03:30 to prep broth, cart positioned by 05:45 to catch early commuters at the interchange; sells until stock runs out, usually early afternoon; spends evenings sourcing ingredients through channels he doesn't discuss.",
-  "affiliation": "Independent; pays a protection tithe to the Kessler Interchange's informal block association; occasional informal supplier to two restaurants in the Ferment Quarter",
+  "affiliation": "Independent; pays a protection tithe to the Kessler Interchange's informal block association; occasional informal supplier to two restaurants in the Ferment Quarter; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -257,5 +257,6 @@
         "Aymara": 3
       }
     }
-  }
+  },
+  "tier": "2"
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Local color, overhearer of conversations at a busy waterfront pitch, low-tier information source. Could become a quest giver if his grandmother's situation worsens or someone threatens his pitch. Represents the human cost of medical debt and deferred futures.",
   "augmentations": "Geneware: short charcoal cat tail (involuntary emotional expression, source of mild embarrassment).",
   "daily_life": "Up at 0400 to start the broth base. Cart running by 0630 at Bay View Docks for the morning crowd. Moves to Gravesend Basin by 1700 for the evening shift. Home to his grandmother's apartment by 2200, does the accounts, sleeps.",
-  "affiliation": "Independent; informal vendor's arrangement with Old Harbor market committee",
+  "affiliation": "Independent; informal vendor's arrangement with Old Harbor market committee; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -320,5 +320,6 @@
         "Zimbabwean": 0.2
       }
     }
-  }
+  },
+  "tier": "2"
 }

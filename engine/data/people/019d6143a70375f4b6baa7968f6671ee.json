@@ -62,7 +62,7 @@
   "narrative_function": "Local color, minor quest giver, resource for false documents or currency, point of entry into The Shelf's underground economy",
   "augmentations": "Color-shifting hair (geneware, subscription-tier). Patterned irises (cosmetic, seasonal subscription). Haptic enhancement in his dominant hand — originally installed for design work, increases tactile sensitivity for fine detail work.",
   "daily_life": "Sleeps until noon, works from mid-afternoon into the early hours, takes long walks through The Shelf in the pre-dawn quiet when he needs to think; eats exclusively from a noodle vendor two corridors down.",
-  "affiliation": "Informal network of small-time criminals in Blackpipe Corridor; primary distribution through a numbers runner named Efe who he has never met in person",
+  "affiliation": "Vellichor Institute (mid-level counterfeiter specializing in quanta currency forg)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -261,5 +261,6 @@
         "Liberian": 0.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

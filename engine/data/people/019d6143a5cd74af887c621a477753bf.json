@@ -60,7 +60,7 @@
   "narrative_function": "Local institution and information node — she has clothed half the Enclave and hears everything. Quest giver for community disputes, source of local history, potential fabricator of disguises or documents hidden in hems.",
   "augmentations": "Faded bioluminescent subdermal tracery (cosmetic, amber-toned, largely inert). Magnification implants in both eyes for close needlework.",
   "daily_life": "Opens Thread & Condition at 07:00, takes walk-in alterations until noon, reserves afternoons for bespoke commissions and teaching her apprentice. Closes late whenever a customer has a crisis.",
-  "affiliation": "Independent; informal ties to Hamtramck Enclave community council",
+  "affiliation": "Independent; informal ties to Hamtramck Enclave community council; The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -298,5 +298,6 @@
         "Welsh": 2.2
       }
     }
-  }
+  },
+  "tier": "2"
 }

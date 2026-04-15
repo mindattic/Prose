@@ -61,7 +61,7 @@
   "narrative_function": "Community anchor and information node — she knows everyone's laundry and, by extension, everyone's secrets. Quest giver for neighborhood-level problems, provider of safe harbor, moral compass character.",
   "augmentations": "Thermal sensor strip, left forearm (utility). No cosmetic mods.",
   "daily_life": "Opens at 05:30, takes drop-offs until noon, runs machines through the afternoon, folds and returns in the evening. Eats dinner at the counter with whoever is waiting for their load.",
-  "affiliation": "Independent; informal community elder in Hamtramck Enclave",
+  "affiliation": "Independent; informal community elder in Hamtramck Enclave; The Coffin Nails",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -306,5 +306,6 @@
         "Mozambican": 2.5
       }
     }
-  }
+  },
+  "tier": "1"
 }

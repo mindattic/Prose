@@ -63,7 +63,7 @@
   "narrative_function": "Living memory of a neighborhood — an unexpected source of historical and personal information about Hough Reclamation going back several years. Can provide context, connect players to locals, or present a moral lens on what 'progress' and 'reclamation' mean at street level.",
   "augmentations": "None. Wears secondhand physical-lens glasses. Explicitly refuses all augmentation.",
   "daily_life": "Morning chores at the home, mandatory basic schooling via shared tablet (state minimum curriculum), afternoons walking Hough Reclamation documenting what they observe, evenings filling notebooks and organizing their archive by a classification system they invented.",
-  "affiliation": "Blessed Continuance Residential Home; informal network of Hough Reclamation long-term residents who appreciate their documentation work",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -275,5 +275,6 @@
         "Nepali": 27.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

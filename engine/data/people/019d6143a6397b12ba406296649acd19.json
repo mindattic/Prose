@@ -60,7 +60,7 @@
   "narrative_function": "Social hub and rumor exchange — Undertow is where information travels and Izel catches most of it. Can be a recurring contact for players who establish rapport, a source of introductions to other characters, and a barometer for street-level mood in the Ferment Quarter.",
   "augmentations": "Color-cycling geneware hair (teal-burgundy-white gradient). Patterned irises (silver/violet concentric, cosmetic). Retractable claw implant in right hand (single, utility-grade).",
   "daily_life": "Works evening and late shifts at Undertow, five nights a week. Spends mornings asleep and afternoons doing bar prep and running small errands for regulars who pay in tips or favors.",
-  "affiliation": "Undertow bar (independent, owner Goran Abdi-Lopes); Ferment Quarter informal community",
+  "affiliation": "Undertow bar (independent, owner Goran Abdi-Lopes); Ferment Quarter informal community; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -312,5 +312,6 @@
         "Nepali": 3.2
       }
     }
-  }
+  },
+  "tier": "2"
 }

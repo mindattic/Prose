@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, GLMZ Metro Police",
+  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
@@ -63,7 +63,7 @@
   "narrative_function": "Quest giver, moral anchor, source of institutional pressure. Can task civilians with gathering evidence her badge would contaminate. Represents the system's genuine attempt to police itself — complicated, imperfect, real.",
   "augmentations": "Patterned hexagonal irises (cosmetic). Subdermal data-storage node along the left forearm — civilian-grade, used for case files. Neural notation implant that transcribes spoken observations directly to encrypted storage.",
   "daily_life": "Arrives at her sub-office before the day shift begins, reviews overnight surveillance flags, then spends the bulk of her day in interviews she calls 'conversations.' Eats lunch alone at the same noodle counter in Fort Anchor's lower concourse, always pays in Quanta cash.",
-  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -313,5 +313,6 @@
         "Bangladeshi": 1.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -62,7 +62,7 @@
   "narrative_function": "Primary source for Second Corporate War history and Axiom military culture; living legend who provides context for the world's past; can bestow credibility or condemnation on player factions; his stories contain fragments of genuine intelligence that he no longer recognizes as such",
   "augmentations": "Left-side facial reconstruction plate (Axiom field surgery, old generation); spinal compression support frame (external, worn as a kind of harness under his clothes); replacement left hip (titanium, second replacement — first one failed in 2189); retinal targeting overlay, left eye only, no longer connected to anything but he can't have it removed without risk",
   "daily_life": "He sits in the Fort Anchor common room from 09:00 until someone brings him lunch, tells stories to anyone who will listen or even anyone who won't, takes a long afternoon rest, then attends whatever community meeting or memorial service is happening in the evening.",
-  "affiliation": "Fort Anchor Veterans' Residential Association; Axiom Veterans Pension System (tier 3, contested); informal chaplain-equivalent for the Fort Anchor community",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -245,5 +245,6 @@
         "Salvadoran": 4.8
       }
     }
-  }
+  },
+  "tier": "1"
 }

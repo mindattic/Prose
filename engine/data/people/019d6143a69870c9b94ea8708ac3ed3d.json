@@ -61,7 +61,7 @@
   "narrative_function": "Moving scene-setting element — can be a recurring presence across different districts as his route passes through them. Rich source of oral history about the city's changes. Quest giver for missing persons last seen on his route. Represents organized labor's quiet persistence.",
   "augmentations": "Ferrogate-mandated retinal display overlay for route data. That's it — he's refused every optional upgrade the company has offered.",
   "daily_life": "First run at 0500, last run at 1700. Eats lunch in the depot from a container he brings from home, always the same meal on the same days. Attends transit worker mutual aid meetings on alternating Wednesdays.",
-  "affiliation": "Ferrogate Transit (22 years seniority); transit workers' informal mutual aid network",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -292,5 +292,6 @@
         "Zambian": 0.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

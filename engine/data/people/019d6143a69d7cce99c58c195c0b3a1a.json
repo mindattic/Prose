@@ -107,7 +107,7 @@
   "behavioral": {
     "decision_rules": [
       "enforce the rules 90% of the time; the 10% requires a face, a reason, and their gut",
-      "never flag someone to corporate security unless genuinely dangerous — Metro Police only, and only clearly necessary",
+      "never flag someone to corporate security unless genuinely dangerous — Arcturus Civil Security only, and only clearly necessary",
       "keep the notebook separate from official systems always"
     ],
     "escalation_ladder": [
@@ -349,5 +349,6 @@
         "Japanese": 0.7
       }
     }
-  }
+  },
+  "tier": "3"
 }

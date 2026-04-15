@@ -29,7 +29,33 @@
     "Carmen's intelligence and her ability to hold the gang together"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Volt Runners",
+      "type": "rival",
+      "reason": "Overlapping Shelf maintenance corridor territory claims"
+    },
+    {
+      "name": "The Null Ward",
+      "type": "rival",
+      "reason": "The Ward has operated in Shelf maintenance corridors without paying the Alley's access fee"
+    },
+    {
+      "name": "The Last Mile",
+      "type": "ally",
+      "reason": "Vehicle maintenance for Last Mile runners in exchange for route access"
+    },
+    {
+      "name": "The Siphon Collective",
+      "type": "ally",
+      "reason": "Shared Shelf infrastructure access and mutual non-interference"
+    },
+    {
+      "name": "The Ferment",
+      "type": "ally",
+      "reason": "The Alley distributes Ferment product through Shelf corridors"
+    }
+  ],
   "narrative_function": "Switchblade Alley is the smallest unit of order in a disordered world — a group of kids who decided their three blocks would have rules, and who enforce those rules with the only authority available to them.",
   "story_hooks": [
     "A larger gang is pressing on the Alley's borders, and Carmen needs allies, weapons, or a miracle. She's willing to deal with anyone who can help — but not willing to compromise the code that makes the Alley worth defending.",
@@ -43,5 +69,36 @@
     "shelf",
     "territory",
     "youth"
+  ],
+  "size_class": "medium",
+  "known_members": [
+    {
+      "name": "Remi Horváth-Castañeda",
+      "id": "019d6143a66179a0bd06a381c6e4e385",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Siddharth Deshpande-Sengupta",
+      "id": "019d6143a5ed7d7d9dc1d4a56b40e1fd",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Luca Bhattacharya-Karimi",
+      "id": "019d6143a6907ce0b15d881f2e18aa83",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Wren Fassi-Wojciechowski",
+      "id": "019d6143a6527efb99d9163e783906c0",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

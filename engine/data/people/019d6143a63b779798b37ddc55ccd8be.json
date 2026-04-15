@@ -67,7 +67,7 @@
   "narrative_function": "Kadiatou Bergstrom-Konate functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Eye replacement — one organic, one cybernetic with recording capability and zoom. Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
   "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — operates through reputation only",
+  "affiliation": "Independent — operates through reputation only; The Third Rail",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -370,5 +370,6 @@
         "Korean": 2.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

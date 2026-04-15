@@ -63,7 +63,7 @@
   "narrative_function": "Local color and information node; she hears everything from desperate people; can supply medical items, mild drugs, or rumors; potential quest giver when a regular customer goes missing",
   "augmentations": "Cosmetic iris mod (violet-to-copper shift); subdermal thermal regulators in her hands for precise compound preparation; no other chrome",
   "daily_life": "Rises before dawn to grind fresh compounds and restock her portable cooling units, then runs her stall from sunrise until two hours past dark, trading gossip and remedies in equal measure.",
-  "affiliation": "Independent; pays protection to the Oxidian Market Vendors Guild",
+  "affiliation": "Independent; pays protection to the Oxidian Market Vendors Guild; The Gauze",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -328,5 +328,6 @@
         "Cherokee": 1.6
       }
     }
-  }
+  },
+  "tier": "2"
 }

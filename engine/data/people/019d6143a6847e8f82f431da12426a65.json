@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, The Rampart deployment zone, near Western and Chicago Ave",
@@ -60,10 +60,10 @@
     "She's been quietly collecting evidence of a commanding officer who has been ordering pre-emptive suppression of legal assemblies — she doesn't know what to do with it",
     "The E.L.F. in her riot shield has started whispering names to her during deployments — names of people in the crowd who are about to be hurt"
   ],
-  "narrative_function": "Authority figure and moral obstacle; can become reluctant ally if players demonstrate they share her concern for civilian protection; source of Metro Police intel and internal politics; represents the complicated humanity inside institutions",
-  "augmentations": "Subdermal impact mesh (torso and forearms, Metro Police-issued), geneware patterned irises (amber/violet stress-reactive), bone-density microlattice in wrists and knuckles (elective, paid out-of-pocket)",
+  "narrative_function": "Authority figure and moral obstacle; can become reluctant ally if players demonstrate they share her concern for civilian protection; source of Arcturus Civil Security intel and internal politics; represents the complicated humanity inside institutions",
+  "augmentations": "Subdermal impact mesh (torso and forearms, Arcturus Civil Security-issued), geneware patterned irises (amber/violet stress-reactive), bone-density microlattice in wrists and knuckles (elective, paid out-of-pocket)",
   "daily_life": "Rotates between three-day deployment cycles at Fort Anchor and stand-down periods in her shared quarters at the Rampart barracks; spends stand-down time lifting, maintaining her gear, and making offerings to the E.L.F. she believes inhabits her department-issue riot shield.",
-  "affiliation": "GLMZ Metro Police, Riot Control Unit 7",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -139,13 +139,13 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Metro Police subdermal impact mesh (torso/forearms)",
+      "name": "ADS Civil Security subdermal impact mesh (torso/forearms)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Metro Police subdermal impact mesh (torso/forearms)",
+      "description": "ADS Civil Security subdermal impact mesh (torso/forearms)",
       "replaces": ""
     },
     {
@@ -208,7 +208,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2184 — Joined Metro Police Academy after two years working security at Ferrogate Transit",
+      "event": "2184 — Joined Arcturus Civil Security Academy after two years working security at Ferrogate Transit",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -276,9 +276,9 @@
     ],
     "visible_augmentations": "Subdermal impact mesh visibly ridges under her skin on forearms and torso when she tenses—faint geometric grid pattern becomes apparent under strong light. Her knuckles are subtly oversized, joint architecture altered by bone-density microlattice (visible only to someone who knows what to look for). The geneware irises are immediately noticeable: their color-shift is smooth but uncanny, and they catch light differently than natural eyes.",
     "posture_movement": "Off-duty: moves with deliberate slowness, each motion controlled and economical, as though constantly managing her own mass. Shoulders slightly rounded, as though the weight of her frame is always present in her awareness. On-duty: shifts into geometric precision—spine vertical, weight distributed across a wider stance, all movement purposeful and angular. Her head turns from the neck rather than the shoulders. She doesn't fidget.",
-    "clothing_style": "On-duty: GLMZ Metro Police Riot Control Unit 7 tactical gear—ballistic mesh undershirt (gray), reinforced duty pants (charcoal, multiple cargo pockets), steel-toe boots (scuffed, maintained). Raid jacket over torso (navy with reflective piping and unit insignia). Helmet stores clipped to equipment belt. Off-duty: plain, durable clothing—black or gray t-shirts (usually oversized), worn canvas work pants, steel-toed boots (kept polished). A faded Rampart barracks hoodie in charcoal. She owns nothing fashionable. Everything is functional, tier 3-4 utilitarian."
+    "clothing_style": "On-duty: Arcturus Defense Solutions Civil Security Riot Control Unit 7 tactical gear—ballistic mesh undershirt (gray), reinforced duty pants (charcoal, multiple cargo pockets), steel-toe boots (scuffed, maintained). Raid jacket over torso (navy with reflective piping and unit insignia). Helmet stores clipped to equipment belt. Off-duty: plain, durable clothing—black or gray t-shirts (usually oversized), worn canvas work pants, steel-toed boots (kept polished). A faded Rampart barracks hoodie in charcoal. She owns nothing fashionable. Everything is functional, tier 3-4 utilitarian."
   },
-  "image_prompt": "Leif Holm-Nwosu, 183cm tall densely muscular woman, golden-bronze skin with warm undertones reflecting East Asian, Northern European, Sub-Saharan African and South Asian heritage. Broad prominent cheekbones with East Asian geometry, strong defined jawline, full facial structure. Natural black hair with copper threading in geometric patterns, undercut style. Geneware-modified irises amber with violet undertones, catching light unnaturally. Extensive cross-hatched thermal scarring along left jawline and collarbone, silvered and raised. Visible subdermal impact mesh forming geometric patterns on muscular forearms when tensed. Wearing GLMZ Metro Police Riot Control Unit 7 tactical gear—gray ballistic mesh undershirt, charcoal reinforced pants with cargo pockets, navy raid jacket with reflective piping, steel-toed scuffed boots. Standing in controlled posture, geometric precision, weight distributed wide. GLMZ Great Lakes Metropolitan Zone, tactical lighting casting shadows across scarred features, photorealistic, professional security force aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Leif Holm-Nwosu, 183cm tall densely muscular woman, golden-bronze skin with warm undertones reflecting East Asian, Northern European, Sub-Saharan African and South Asian heritage. Broad prominent cheekbones with East Asian geometry, strong defined jawline, full facial structure. Natural black hair with copper threading in geometric patterns, undercut style. Geneware-modified irises amber with violet undertones, catching light unnaturally. Extensive cross-hatched thermal scarring along left jawline and collarbone, silvered and raised. Visible subdermal impact mesh forming geometric patterns on muscular forearms when tensed. Wearing Arcturus Defense Solutions Civil Security Riot Control Unit 7 tactical gear—gray ballistic mesh undershirt, charcoal reinforced pants with cargo pockets, navy raid jacket with reflective piping, steel-toed scuffed boots. Standing in controlled posture, geometric precision, weight distributed wide. GLMZ Great Lakes Metropolitan Zone, tactical lighting casting shadows across scarred features, photorealistic, professional security force aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 32.7,
     "East Asian": 27.7,
@@ -344,5 +344,6 @@
         "Argentine": 0.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

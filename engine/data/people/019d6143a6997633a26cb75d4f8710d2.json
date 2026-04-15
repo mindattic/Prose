@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 52,
   "status": "active",
   "location": "The Rampart, GLMZ, near Kedzie and Division",
@@ -62,7 +62,7 @@
   "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about GLMZ's protest and civil unrest history; potential ally for people working against institutional violence",
   "augmentations": "Military-grade joint reinforcement (knees and shoulders — medical necessity after a crowd crush incident in 2187); impact-dampening subdermal mesh across torso (department-issue for riot specialists); no cosmetic mods",
   "daily_life": "Runs unit readiness training at the Rampart most mornings; attends interdepartmental deployment briefings he finds increasingly political; spends evenings at a community hall in Hough Reclamation, playing chess badly with neighborhood elders who knew the area before the last reclamation push.",
-  "affiliation": "GLMZ Metro Police — Civil Response Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Civil Response Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -200,7 +200,7 @@
     "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with bone structure showing the synthesis of Southeast Asian angularity and Sub-Saharan African breadth, tempered by East Asian eye-set and Eastern European heritage. Cheekbones with definition characteristic of Southeast Asian ancestry, softened by age and the weight he carries. Skin textured and rough, bearing the tactile history of three decades of deployment. No artificial smoothing or cosmetic intervention.",
     "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen — a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
     "posture_movement": "Moves with deliberate, economical weight distribution — a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion — eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
-    "clothing_style": "Standard GLMZ Metro Police tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion.",
+    "clothing_style": "Standard Arcturus Defense Solutions Civil Security tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion.",
     "distinguishing_marks": [
       "Ragged scar bisecting his left eyebrow, interrupting the brow line — pale tissue from a crowd-control baton strike circa 2195",
       "Network of crisscrossing pale scars across both forearms, visible from wrist to elbow, with darker impact-pattern marks from riot shield contact",
@@ -208,7 +208,7 @@
       "Scattered smaller circular burn marks across inner left forearm — chemical exposure, riot dispersal residue"
     ]
   },
-  "image_prompt": "Haze Tran, 188cm tall heavy-built man with warm deep brown skin and subtle golden undertones, Southeast Asian and Sub-Saharan African heritage blended with East Asian features showing defined cheekbones and squared jaw. Steel grey short military-cut hair, dark brown eyes slightly yellowed from chemical exposure. Deep facial lines, weathered skin texture, ragged scar bisecting left eyebrow, network of pale scars across both forearms, thick horizontal scar across left collarbone. Wearing charcoal GLMZ Metro Police riot suppression fatigues off-duty, scuffed reinforced black boots, simple grey undershirt, worn leather jacket. Slightly forward-leaning posture, controlled movement, economical gestures, hooded eyes with exhausted resting expression. GLMZ, Great Lakes Metropolitan Zone, tactical officer bearing thirty years of deployment wear, subdermal impact-mesh visible as subtle geometric texture under tight fabric, moody blue-grey lighting emphasizing weathered features and scar tissue, concrete industrial setting, photorealistic gritty aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Haze Tran, 188cm tall heavy-built man with warm deep brown skin and subtle golden undertones, Southeast Asian and Sub-Saharan African heritage blended with East Asian features showing defined cheekbones and squared jaw. Steel grey short military-cut hair, dark brown eyes slightly yellowed from chemical exposure. Deep facial lines, weathered skin texture, ragged scar bisecting left eyebrow, network of pale scars across both forearms, thick horizontal scar across left collarbone. Wearing charcoal Arcturus Defense Solutions Civil Security riot suppression fatigues off-duty, scuffed reinforced black boots, simple grey undershirt, worn leather jacket. Slightly forward-leaning posture, controlled movement, economical gestures, hooded eyes with exhausted resting expression. GLMZ, Great Lakes Metropolitan Zone, tactical officer bearing thirty years of deployment wear, subdermal impact-mesh visible as subtle geometric texture under tight fabric, moody blue-grey lighting emphasizing weathered features and scar tissue, concrete industrial setting, photorealistic gritty aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 43.9,
     "Sub-Saharan African": 26,
@@ -275,5 +275,6 @@
         "Polish": 1.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

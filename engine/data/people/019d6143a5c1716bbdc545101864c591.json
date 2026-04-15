@@ -62,7 +62,7 @@
   "narrative_function": "Invaluable local information source; gatekeeper NPC who controls access; moral weight character who shows what accumulated small compromises look like over a career; can be obstacle or ally",
   "augmentations": "Cosmetic starburst iris mod; standard Ferrogate biometric scanner uplink (wrist-mounted, issued); hearing aid (right ear, non-cyber, old injury)",
   "daily_life": "Day shift, same gate, same stool, same thermos of tea from home. Reads transit law updates at lunch with the same focused attention he gives nothing else. Takes the long route home to walk.",
-  "affiliation": "Ferrogate Transit Security, Deepwell Station post",
+  "affiliation": "Ferrogate Transit Security, Deepwell Station post; The Null Ward",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -114,7 +114,7 @@
       "Second check with more specific questions",
       "Flagging for supervisor review",
       "Physical hold under transit security code — hates this step",
-      "Calling Metro Police backup — has done this once in eleven years"
+      "Calling Arcturus Civil Security backup — has done this once in eleven years"
     ],
     "interpersonal_modes": {
       "strangers": "Warm professional neutrality — makes everyone feel briefly seen",
@@ -338,5 +338,6 @@
         "Swiss German": 0.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

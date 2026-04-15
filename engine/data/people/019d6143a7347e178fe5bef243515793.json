@@ -63,7 +63,7 @@
   "narrative_function": "Information conduit — she sees who rides Line 7 every day, notices patterns, knows when something is off. Can provide passage, access to restricted transit tunnels, or unwanted attention from Ferrogate Transit Authority if players draw her suspicion.",
   "augmentations": "Ferrogate-issue left ocular interface (transit system HUD, passenger count, track telemetry); mild cochlear dampener (work-issue, protects against brake shriek); no cosmetic mods",
   "daily_life": "Runs the 0530-1430 shift on Line 7, eating her lunch — always the same: rice and smoked fish from a thermos — in the cab between Kessler and Deepwell. After shift she stops at the Interchange's small E.L.F. shrine to leave a burned data chip before heading home to her apartment in Bronzeline.",
-  "affiliation": "Ferrogate Transit",
+  "affiliation": "Ferrogate Transit; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -277,5 +277,6 @@
         "Hungarian": 0.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

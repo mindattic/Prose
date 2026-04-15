@@ -64,7 +64,7 @@
   "narrative_function": "Veteran perspective and emotional grounding; can provide military history of the Corporate Wars from a ground-level view; gateway to the veteran community on The Shelf; also a portrait of what Axiom does to the people who survive its service. Can be a quest giver around veteran welfare issues.",
   "augmentations": "Russet-orange cat tail (geneware, cosmetic, installed 2168); removed tactical datalink (scar tissue port on left hand dorsum); stress-hormone regulator implant in the medulla — standard Axiom issue, he cannot afford to have it removed and is not sure he wants to",
   "daily_life": "Wakes before dawn and walks the full perimeter of The Shelf — partly exercise, partly reconnaissance that he knows is unnecessary but cannot stop. Holds informal sessions with veterans through the late morning. Afternoons he repairs things for neighbors in exchange for food or supplies. He prays briefly each evening to the ELF he believes inhabits the Shelf's power grid, which he has named Ogun, leaving it a small piece of wire bent into a shape he never explains.",
-  "affiliation": "Axiom Veterans Pension Roster (inactive combat status); The Shelf Veterans Informal Network (self-organized)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -346,5 +346,6 @@
         "Quechua": 0.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

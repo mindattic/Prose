@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Metro Police beat cop, Gage Circuit district",
+  "role": "Arcturus Defense Solutions Civil Security beat cop, Gage Circuit district",
   "age": 29,
   "status": "active",
   "location": "Gage Circuit, near Milwaukee and North Ave",
@@ -62,7 +62,7 @@
   "narrative_function": "Ground-level information source with genuine community knowledge; potential ally or obstacle depending on player approach; represents the human cost of keeping faith in institutions",
   "augmentations": "Standard-issue subdermal comm implant; cosmetic bioluminescent freckle mod (regretted); no combat chrome",
   "daily_life": "Walks the same twelve-block circuit twice per shift, stopping at the same noodle cart for the same order at the same time every day. Files reports in longhand and then transcribes them — a double labor she can't explain to anyone.",
-  "affiliation": "GLMZ Metro Police, Gage Circuit Precinct 7",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Gage Circuit Precinct 7",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -198,7 +198,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Joined Metro Police after two years on community safety volunteer corps",
+      "event": "Joined Arcturus Civil Security after two years on community safety volunteer corps",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -247,9 +247,9 @@
     ],
     "visible_augmentations": "None visible. The subdermal comm implant is invisible. The bioluminescent freckles are cosmetic and highly visible, but she wears them as a regretted modification rather than a proud augmentation.",
     "posture_movement": "She stands still for long periods with her weight balanced evenly. When she moves, it is economical and unhurried — she does not gesture while talking. Her default expression is patient and slightly inward-focused, as if she is listening to something just beneath the ambient noise. She has the particular physical stillness of someone trained to observe without reacting. Her gaze settles on people for longer than is comfortable.",
-    "clothing_style": "Regulation GLMZ Metro Police uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
+    "clothing_style": "Regulation Arcturus Defense Solutions Civil Security uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
   },
-  "image_prompt": "Bogdana Chatterjee, GLMZ Metro Police officer, 2226. Medium-deep warm brown skin with golden and olive undertones, luminous in harsh neon light. High Slavic cheekbones softened by South Asian facial geometry, subtle East Asian refinement around the eyes. Deep brown unaugmented eyes with patient, unnerving gaze. Short natural black hair in tight coils pinned close to scalp. Cosmetic bioluminescent freckles pulse faint blue-green across cheekbones and bridge of nose. Strong angular face, hairline-thin scar on left jawline. In regulation tactical uniform: dark blue cargo pants, grey-blue shirt, tactical vest with Metro insignia, standard-issue cap. Standing still with balanced posture, economical stillness of trained observer. Cold blue neon fills shadows under harsh overhead precinct lighting. Industrial background, GLMZ 2200s. Mood: watchful, patient, slightly unsettling presence. --ar 2:3 --v 6",
+  "image_prompt": "Bogdana Chatterjee, Arcturus Defense Solutions Civil Security officer, 2226. Medium-deep warm brown skin with golden and olive undertones, luminous in harsh neon light. High Slavic cheekbones softened by South Asian facial geometry, subtle East Asian refinement around the eyes. Deep brown unaugmented eyes with patient, unnerving gaze. Short natural black hair in tight coils pinned close to scalp. Cosmetic bioluminescent freckles pulse faint blue-green across cheekbones and bridge of nose. Strong angular face, hairline-thin scar on left jawline. In regulation tactical uniform: dark blue cargo pants, grey-blue shirt, tactical vest with Metro insignia, standard-issue cap. Standing still with balanced posture, economical stillness of trained observer. Cold blue neon fills shadows under harsh overhead precinct lighting. Industrial background, GLMZ 2200s. Mood: watchful, patient, slightly unsettling presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 46.5,
     "South Asian": 38.4,
@@ -311,5 +311,6 @@
         "Nigerian": 0.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

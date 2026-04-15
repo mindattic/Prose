@@ -63,7 +63,7 @@
   "narrative_function": "Gear and equipment source, particularly for secondhand or non-standard augmentation components. Technical knowledge resource. Represents the city's long memory — he has been in Old Harbor since before most current residents were born. Can provide access to salvage networks and drydock connections.",
   "augmentations": "Full right arm industrial cybernetic prosthetic (shoulder-down); older Ferrogate Transit-surplus model, heavily modified and personally maintained. Subvocal communication implant (very old, barely functional, he keeps it for sentimental reasons).",
   "daily_life": "Opens at dawn, works through the day doing appraisals, parts matching, and quiet negotiation. Takes an hour at midday to sit on an upturned crate and eat in silence. Closes at sundown regardless of customers.",
-  "affiliation": "Independent; long-standing member of The Oxidian Market vendors guild (Old Harbor chapter); known to have a working relationship with salvage crews from the Manitowoc Drydock",
+  "affiliation": "Independent; long-standing member of The Oxidian Market vendors guild (Old Harbor chapter); known to have a working relationship with salvage crews from the Manitowoc Drydock; The Shore Dogs",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -318,5 +318,6 @@
         "Lakota": 3.9
       }
     }
-  }
+  },
+  "tier": "2"
 }

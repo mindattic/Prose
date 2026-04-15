@@ -217,16 +217,10 @@ public class LabSpecimenRepository : JsonDirectoryRepository<LabSpecimenData>
         : base(Path.Combine(paths.EngineDataDir, "lab_specimens"), s => s.Name) { }
 }
 
-public class CeramicManRepository : JsonDirectoryRepository<CeramicManData>
+public class FlyoverEntityRepository : JsonDirectoryRepository<FlyoverEntityData>
 {
-    public CeramicManRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "ceramic_men"), c => c.Name) { }
-}
-
-public class WastelandEntityRepository : JsonDirectoryRepository<WastelandEntityData>
-{
-    public WastelandEntityRepository(IPathProvider paths)
-        : base(Path.Combine(paths.EngineDataDir, "wasteland_entities"), w => w.Name) { }
+    public FlyoverEntityRepository(IPathProvider paths)
+        : base(Path.Combine(paths.EngineDataDir, "flyover_entities"), w => w.Name) { }
 }
 
 public class PsionicRepository : JsonDirectoryRepository<PsionicData>

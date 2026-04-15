@@ -59,7 +59,7 @@
   "narrative_function": "Quest giver for organ-related plot threads; information source on the medical underworld; potential moral complexity — a villain who operates with genuine care and a coherent ethical framework; can provide medical assistance in a pinch",
   "augmentations": "Surgical-assist haptic feedback in both hands (medical-grade, aging); magnification contact lenses; a subdermal cool-pack sleeve along her left forearm for short-term tissue transport",
   "daily_life": "Rises before dawn to check her cold storage inventory, spends mornings sourcing and negotiating, afternoons in what she calls her 'clinic' — a meticulously clean back room — and evenings updating her contact ledger and leaving small data offerings at the E.L.F. shrine she keeps on an old hospital cart.",
-  "affiliation": "Independent operator, loose ties to the Kulunda Compact crime network",
+  "affiliation": "Independent operator, loose ties to the Kulunda Compact crime network; The Gauze",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -342,5 +342,6 @@
         "Peruvian": 1.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

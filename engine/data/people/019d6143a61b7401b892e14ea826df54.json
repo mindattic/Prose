@@ -93,7 +93,7 @@
   "narrative_function": "Glass is the long game personified. His stories are political thrillers where the stakes are measured in influence rather than blood. He represents the intelligence world that exists above the street level — the slow, patient, devastating maneuvering that determines which streets exist at all. His competition with Sable adds texture to the information economy of GLMZ.",
   "augmentations": "Eidetic memory cortex (early-generation, pharmaceutical-grade) — perfect recall of conversations, documents, and spatial layouts. The implant is thirty years old and beginning to develop minor retrieval artifacts. Cochlear enhancement for directional audio filtering — he can isolate a single conversation in a crowded room. No visible augmentations.",
   "daily_life": "Arrives at The Leaf at 0800. Reads physical newspapers — three of them, from different jurisdictions. Takes meetings throughout the day, never more than four. Each meeting involves tea, small talk that is actually reconnaissance, and an exchange of information that both parties believe they won. Evenings he maintains his archive — a physical filing system in a secure location that only he can access. Sleeps at a residence he has never disclosed to anyone, including his crew.",
-  "affiliation": "The Quiet Table",
+  "affiliation": "Lazarus Pharmaceuticals (mid-level lead information broker and network curator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -296,5 +296,6 @@
         "Bengali": 0.7
       }
     }
-  }
+  },
+  "tier": "3"
 }

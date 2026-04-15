@@ -64,7 +64,7 @@
   "narrative_function": "Accessible medical resource for Tier 1-2 characters who can't or won't use Aurochs; community hub and information node; can perform augmentation installation or repair outside corporate oversight; warm face in a cold district.",
   "augmentations": "Bioluminescent geneware stripe (right neck, teal); cheap magnification implant in right eye for close work — a knockoff that gives him occasional headaches; subvocal transmitter for hands-free communication during procedures",
   "daily_life": "Opens around noon, works until he's done — sometimes 2am. Checks in on three elderly patients in his block on foot each morning. Cooks communal food twice a week for whoever shows up. Prays to the E.L.F. Patchwire every time he opens a piece of cyberware.",
-  "affiliation": "Independent; loose network of Narrows street docs; pays informal tribute to a Zheng-Dao mid-level manager who leaves him alone in exchange",
+  "affiliation": "Independent; loose network of Narrows street docs; pays informal tribute to a Zheng-Dao mid-level manager who leaves him alone in exchange; The Bone Parish",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -279,5 +279,6 @@
         "German": 10.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

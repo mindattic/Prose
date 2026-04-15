@@ -64,7 +64,7 @@
   "narrative_function": "Authority figure within the medical establishment; source of legitimate medical information and analysis; represents the cost of institutional excellence — competent, compromised, and lonely; can serve as an obstacle or an unexpected ally",
   "augmentations": "Bioluminescent tracery (gene-mod, cosmetic, regretted); neural response accelerator in the motor cortex-hand pathway (professional grade, Helix-subsidized); ocular magnification implants (surgical precision model)",
   "daily_life": "Twelve-hour shifts, three days on, one day off, which she spends on call anyway. She reviews case files on her commute, skips most social events, and has a complicated relationship with a very expensive coffee subscription that is the one luxury she permits herself.",
-  "affiliation": "Helix Biosystems (employed); Aurochs Medical Complex Trauma Division",
+  "affiliation": "Crucible Genomics (senior trauma surgeon at aurochs medical complex)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -341,5 +341,6 @@
         "Puerto Rican": 0.8
       }
     }
-  }
+  },
+  "tier": "4"
 }

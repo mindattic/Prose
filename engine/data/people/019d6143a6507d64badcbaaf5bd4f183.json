@@ -61,7 +61,7 @@
   "narrative_function": "Resource hub for deep-level characters — controls food supply; philosophical voice for alternative underworld spirituality; can provide information picked up through the trading network; their belief about fungal E.L.F.s can drive supernatural story hooks",
   "augmentations": "Bioluminescent iridescent skin geneware; bioluminescent mycelium skin patches (living geneware, requires maintenance); olfactory sensitivity enhancement (helps them detect contamination in crops)",
   "daily_life": "Moves through the Soft Cathedral on a precise 26-hour cycle that matches the growth rhythms of their primary crops; speaks to the fungal networks aloud while working; trades surplus yield for surface goods, tools, and clean water brought down by guides.",
-  "affiliation": "Independent; their food production makes them a neutral party respected by all deep-level factions",
+  "affiliation": "Independent; their food production makes them a neutral party respected by all deep-level factions; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -283,5 +283,6 @@
         "Mexican": 1.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

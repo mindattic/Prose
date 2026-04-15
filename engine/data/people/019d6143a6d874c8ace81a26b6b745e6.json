@@ -63,7 +63,7 @@
   "narrative_function": "Information source — knows everyone who moves through Kessler and can pull footage going back six months. Local color for transit hub scenes. Quest-adjacent: might notice something wrong before anyone else does.",
   "augmentations": "Circuit-patterned cosmetic irises (amber/black). Neural uplink jack for direct feed monitoring — allows passive stream of up to 40 camera feeds simultaneously. Mild haptic feedback implant in left hand for alert management.",
   "daily_life": "Arrives ninety minutes before shift to review overnight incident logs; monitors Kessler's camera grid for eight hours with two sanctioned breaks she rarely takes; files end-of-shift anomaly reports with obsessive precision.",
-  "affiliation": "Ferrogate Transit Security",
+  "affiliation": "Ferrogate Transit Security; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -278,5 +278,6 @@
         "Swiss German": 1.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

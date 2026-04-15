@@ -64,7 +64,7 @@
   "narrative_function": "Quest giver for investigations into Helix Biosystems irregularities; information source on corporate legal structure and biotech regulation; moral anchor character who represents institutional integrity under pressure; can become an antagonist if players are doing something technically illegal even for good reasons.",
   "augmentations": "Patterned irises (cosmetic, amber/black rings). Subdermal temperature regulation mesh — medical, installed after a heat-collapse incident during a site audit in the Calumet Rise biolabs. Neural compliance-assist chip for rapid cross-referencing regulatory code databases (standard Helix issue for senior compliance staff).",
   "daily_life": "Arrives at Tower Helix-7 by 07:15 every morning, leaves a data-offering at her desk shrine, and reviews overnight flagged anomalies before her first meeting at 08:00. Eats lunch alone at her desk four days out of five, reading audit trails the way other people read novels.",
-  "affiliation": "Helix Biosystems (Tier 4)",
+  "affiliation": "Palladian Construction (mid-level senior compliance officer)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -345,5 +345,6 @@
         "Palestinian": 0.3
       }
     }
-  }
+  },
+  "tier": "3"
 }

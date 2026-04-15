@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "GLMZ Metro Police surveillance drone operator, Brightmoor Reclamation Zone coverage",
+  "role": "Arcturus Defense Solutions — Civil Security Division surveillance drone operator, Brightmoor Reclamation Zone coverage",
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts, near Pulaski and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "Information source about what has been seen in coverage zones, surveillance infrastructure access point, moral complexity of the watcher who questions their watching",
   "augmentations": "Dual rig-link ocular implants (amber-lit, full drone interface and multi-feed monitoring), haptic feedback suit underlayer (worn under uniform, translates drone flight into physical sensation for precision control), bioluminescent scalp-dot geneware (mood-reactive cyan/violet)",
   "daily_life": "Sits their shift in the Fort Anchor drone ops center running up to six simultaneous coverage feeds over Brightmoor, files incident flags, and hands off to the night operator at shift end; spends off-hours in their Hamtramck apartment running hobby drone builds they are not supposed to be doing with Metro-adjacent components.",
-  "affiliation": "GLMZ Metro Police, Aerial Surveillance and Drone Operations Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Aerial Surveillance and Drone Operations Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -235,9 +235,9 @@
     ],
     "visible_augmentations": "Dual rig-link ocular implants with amber glow visible at eye corners when active (most noticeable in low-light environments). Bioluminescent scalp-dots pulse slowly in shifting cyan and violet tones. Haptic feedback suit visible as thin underlayer fabric at neck and wrists beneath uniform.",
     "posture_movement": "Carries themselves with the glassy ease of someone accustomed to perceiving through external feeds — slightly detached, movements precise but economical. Walks with minimal wasted motion. When engaged with others, eye contact is direct but has a quality of simultaneous distance, as though part of their attention is elsewhere. Sits with the postural memory of long chair-time: spine slightly curved, shoulders rolled inward.",
-    "clothing_style": "GLMZ Metro Police Aerial Surveillance Division uniform (Tier 3 standard-issue): navy tactical jacket with reflective trim and shoulder patch, fitted gray utility undershirt. Off-duty wears practical Hamtramck-sector wear — dark hoodies, cargo pants with tool loops, worn sneakers suitable for quick basement workshop sessions. Minimal jewelry or decoration beyond the bioluminescent scalp-dots. Grooming is precise and utilitarian."
+    "clothing_style": "Arcturus Defense Solutions Civil Security Aerial Surveillance Division uniform (Tier 3 standard-issue): navy tactical jacket with reflective trim and shoulder patch, fitted gray utility undershirt. Off-duty wears practical Hamtramck-sector wear — dark hoodies, cargo pants with tool loops, worn sneakers suitable for quick basement workshop sessions. Minimal jewelry or decoration beyond the bioluminescent scalp-dots. Grooming is precise and utilitarian."
   },
-  "image_prompt": "Ibrahim Olofsson, GLMZ, GLMZ Metro Police Aerial Surveillance operative. Lean 168cm frame with shaved scalp covered in asymmetric constellation of bioluminescent cyan and violet dots pulsing softly. Warm golden-brown complexion with olive undertones reflecting multinational ancestry — subtle epicanthal fold tendency, defined cheekbones, broader nasal geometry. Dark brown eyes with amber rig-link glow at corners, fine concentration lines at eye margins. Clean surgical scars barely visible at outer eye corners. Wearing navy GLMZ tactical jacket with reflective trim over gray utility shirt, haptic feedback underlayer visible at neck. Posture economical and precise, glassy detached gaze suggesting attention split between physical and digital feeds. Low-light urban basement workshop setting, neon reflecting off bald scalp and illuminating skin tone in cool purples and warm ambers. Cinematic neo-noir noir atmosphere, moody and introspective. --ar 2:3 --v 6",
+  "image_prompt": "Ibrahim Olofsson, GLMZ, Arcturus Defense Solutions Civil Security Aerial Surveillance operative. Lean 168cm frame with shaved scalp covered in asymmetric constellation of bioluminescent cyan and violet dots pulsing softly. Warm golden-brown complexion with olive undertones reflecting multinational ancestry — subtle epicanthal fold tendency, defined cheekbones, broader nasal geometry. Dark brown eyes with amber rig-link glow at corners, fine concentration lines at eye margins. Clean surgical scars barely visible at outer eye corners. Wearing navy GLMZ tactical jacket with reflective trim over gray utility shirt, haptic feedback underlayer visible at neck. Posture economical and precise, glassy detached gaze suggesting attention split between physical and digital feeds. Low-light urban basement workshop setting, neon reflecting off bald scalp and illuminating skin tone in cool purples and warm ambers. Cinematic neo-noir noir atmosphere, moody and introspective. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 27,
     "Middle Eastern": 24.7,
@@ -312,5 +312,6 @@
         "Thai": 1.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Local color for the exploitative underbelly of corporate research culture; unwitting information source who doesn't know what he knows; character whose idealism is either an asset or a liability depending on the story; potential protagonist for a story about what it costs to be talented and poor inside a corponation.",
   "augmentations": "Cosmetic cat ears (pale gold, self-grown via geneware kit, sixteenth birthday). Basic student-tier neural link. No other mods — can't afford them.",
   "daily_life": "On campus by 0700, in the lab until whenever the project lead decides the day is over, eats whatever the campus cafeteria has left, sleeps in a shared intern housing unit in the Vantage campus annex, and spends his transit time reading papers that aren't required for his work but that he finds interesting.",
-  "affiliation": "Helix Biosystems (intern, Applied Genomics)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -295,5 +295,6 @@
         "Bosnian": 1.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

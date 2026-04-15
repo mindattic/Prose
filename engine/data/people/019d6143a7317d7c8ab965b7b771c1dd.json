@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Pulaski and Chicago Ave",
-  "description": "Zara Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Metro Police LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Metro Police more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
+  "description": "Zara Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Arcturus Civil Security LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Arcturus Civil Security more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -64,7 +64,7 @@
   "narrative_function": "Recurring authority figure who is neither villain nor pushover — a moral friction point. Can be a reluctant information source, a character who arrests PCs for things that are technically illegal, or someone who quietly looks the other way when she decides it matters.",
   "augmentations": "Subdermal forearm and clavicle plating (standard Metro issue). LIDAR-ring ocular overlay. Bone-density reinforcement in knees and shins. No geneware — she considers it a personal line she hasn't crossed yet.",
   "daily_life": "Shifts at Fort Anchor start at 0500 — gear check, briefing, deployment to whatever district is running hot. Evenings she trains in Metro's combat gym or visits her mother in Ironvein, bringing groceries and pretending not to notice the UBC stipend notices on the counter.",
-  "affiliation": "GLMZ Metro Police, Riot Suppression Unit 7",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -221,7 +221,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2184: Graduated Metro Police Academy, top quarter of her class",
+      "event": "2184: Graduated Arcturus Civil Security Academy, top quarter of her class",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -292,9 +292,9 @@
     ],
     "visible_augmentations": "LIDAR-ring ocular overlay visible as faint circular amber-tinted rings around iris when active; subdermal plating creates visible geometric ridging along forearms and clavicle — most apparent under direct light or when she flexes. No visible external chrome or prosthetics; reinforcement is internal and subtle but unmistakable to trained eye.",
     "posture_movement": "Economy of motion — every gesture is deliberate and measured. She stands with weight distributed evenly, shoulders back, creating an impression of immobile stability. When moving through crowds, she parts people by presence alone before physical contact becomes necessary. Off-duty, posture loosens slightly but never fully; muscle memory of tactical readiness is permanent.",
-    "clothing_style": "On-duty: GLMZ Metro Police Riot Suppression kit — reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing — fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
+    "clothing_style": "On-duty: Arcturus Defense Solutions Civil Security Riot Suppression kit — reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing — fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
   },
-  "image_prompt": "Zara Charoenphol-Haraldsen, 183cm tall powerfully built GLMZ Metro Police officer in 2226, warm olive-bronze skin tone blending Southeast Asian, Eastern European, and South Asian ancestry. High cheekbones with strong Southeast Asian facial definition, tempered by broader Eastern European facial proportions. Short black hair with grey at temples, cropped geometric fade sides. Augmented grey eyes with subtle amber LIDAR rings faintly visible. Visible subdermal geometric plating along forearms and clavicle creating subtle ridge-lines beneath skin, most apparent under harsh light. Dark indigo Amazigh tattoo covering left forearm in angular interlocking patterns. On-duty: slate grey reinforced polymer riot suppression bodysuit with reflective striping and ceramic armor panels, tactical boots, utility belt. Posture of immobile stability, weight distributed evenly, shoulders back. Standing in neon-lit GLMZ Metro station corridor, cool blue and amber neo-noir lighting, slight motion blur suggesting tactical readiness, crowd parting around her by presence alone. GLMZ 2200s aesthetic, gritty urban environment, professional and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Zara Charoenphol-Haraldsen, 183cm tall powerfully built Arcturus Defense Solutions Civil Security officer in 2226, warm olive-bronze skin tone blending Southeast Asian, Eastern European, and South Asian ancestry. High cheekbones with strong Southeast Asian facial definition, tempered by broader Eastern European facial proportions. Short black hair with grey at temples, cropped geometric fade sides. Augmented grey eyes with subtle amber LIDAR rings faintly visible. Visible subdermal geometric plating along forearms and clavicle creating subtle ridge-lines beneath skin, most apparent under harsh light. Dark indigo Amazigh tattoo covering left forearm in angular interlocking patterns. On-duty: slate grey reinforced polymer riot suppression bodysuit with reflective striping and ceramic armor panels, tactical boots, utility belt. Posture of immobile stability, weight distributed evenly, shoulders back. Standing in neon-lit GLMZ Metro station corridor, cool blue and amber neo-noir lighting, slight motion blur suggesting tactical readiness, crowd parting around her by presence alone. GLMZ 2200s aesthetic, gritty urban environment, professional and dangerous. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 54.8,
     "Eastern European": 43,
@@ -338,5 +338,6 @@
         "Nepali": 0.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

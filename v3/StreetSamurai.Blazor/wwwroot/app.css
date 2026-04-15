@@ -85,6 +85,12 @@ html, body {
     padding: 10px;
     min-height: 0;
 }
+/* ── Mobile: release fixed-height shell so entity pages use native page scroll ── */
+@media (max-width: 767.98px) {
+    .app-shell { height: auto; min-height: 100dvh; overflow: visible; }
+    .topnav { position: sticky; top: 0; }
+    .topnav-main { overflow-y: visible; overflow-x: visible; flex: none; }
+}
 .topnav-brand {
     color: #dc3545 !important;
     font-weight: 700;
@@ -474,6 +480,139 @@ a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58
     .entity-desc-with-portrait { grid-template-columns: 1fr; }
     .entity-portrait { width: 100%; max-height: 50vw; }
 }
+/* ── Entity image generation panel ──────────────────────────────── */
+.entity-image-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid #21262d;
+    margin-top: 8px;
+}
+
+/* Carousel — horizontal scroll, snap-to-item */
+.entity-carousel {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #30363d transparent;
+}
+.entity-carousel::-webkit-scrollbar { height: 4px; }
+.entity-carousel::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+
+.entity-carousel-item {
+    flex-shrink: 0;
+    width: clamp(120px, 18vw, 220px);
+    scroll-snap-align: start;
+    position: relative;
+}
+.entity-carousel-img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    background: #161b22;
+    min-height: 80px;
+}
+.entity-carousel-img-missing {
+    min-height: 80px;
+    border: 1px dashed #30363d;
+    opacity: 0.3;
+}
+.entity-carousel-archive {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    opacity: 0.55;
+    background: rgba(13,17,23,0.7);
+    border-color: #30363d;
+}
+.entity-carousel-archive:hover { opacity: 1; }
+
+/* Empty state */
+.entity-carousel-placeholder {
+    width: clamp(120px, 18vw, 220px);
+    min-height: 160px;
+    border: 1px dashed #30363d;
+    border-radius: 4px;
+    opacity: 0.3;
+}
+
+.entity-image-controls { min-width: 0; }
+.entity-image-prompt-input {
+    font-size: 0.78rem;
+    resize: vertical;
+    min-height: 70px;
+}
+/* ── Reusable dialogs (ConfirmDialog + MessageBox) ───────────────── */
+.dialog-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1080;
+    background: rgba(0, 0, 0, 0.68);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.dialog-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 14px;
+    padding: 30px 26px 22px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7);
+    animation: dialog-in 0.17s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+}
+@keyframes dialog-in {
+    from { opacity: 0; transform: scale(0.86) translateY(10px); }
+    to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+.dialog-icon-ring {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-size: 1.45rem;
+}
+.dialog-ring-danger  { background: rgba(248, 81, 73, 0.14);  color: #f85149; border: 1.5px solid rgba(248, 81, 73, 0.28); }
+.dialog-ring-warning { background: rgba(210, 153, 34, 0.14); color: #e3b341; border: 1.5px solid rgba(210, 153, 34, 0.28); }
+.dialog-ring-info    { background: rgba(56, 139, 253, 0.14); color: #58a6ff; border: 1.5px solid rgba(56, 139, 253, 0.28); }
+.dialog-ring-success { background: rgba(63, 185, 80, 0.14);  color: #3fb950; border: 1.5px solid rgba(63, 185, 80, 0.28); }
+.dialog-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 8px;
+    letter-spacing: 0.01em;
+}
+.dialog-message {
+    font-size: 0.80rem;
+    color: #8b949e;
+    margin: 0 0 22px;
+    line-height: 1.55;
+}
+.dialog-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.dialog-btn { min-width: 88px; }
+.dialog-btn-wide { min-width: 110px; }
+
 .entity-meta-row {
     display: flex; flex-wrap: wrap; gap: 16px;
     padding: 10px 0;
@@ -1080,6 +1219,7 @@ textarea.auto-grow {
 
 /* ── Geometry schematic windows ───────────────────────────────────────── */
 .cbg-geo-win {
+    width: fit-content;
     padding: 6px;
     border-color: rgba(48, 90, 200, 0.42);
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.42), 0 0 10px rgba(48, 120, 255, 0.07);
@@ -1087,7 +1227,7 @@ textarea.auto-grow {
 }
 @keyframes cbg-geo-in {
     from { opacity: 0; transform: scaleY(0.06) scaleX(0.88); }
-    to   { opacity: 0.52; transform: scale(1); }
+    to   { opacity: 0.32; transform: scale(1); }
 }
 .cbg-geo-body {
     display: flex;
@@ -1097,7 +1237,7 @@ textarea.auto-grow {
 }
 .cbg-geo-canvas { display: block; background: transparent; flex-shrink: 0; }
 .cbg-geo-report {
-    width: 96px;
+    width: 160px;
     height: 110px;
     overflow: hidden;
     position: relative;
@@ -1106,19 +1246,13 @@ textarea.auto-grow {
     flex-shrink: 0;
 }
 .cbg-geo-report-inner {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    right: 0;
-    bottom: 0;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.33rem;
     color: rgba(70, 210, 160, 0.55);
     line-height: 1.45;
-    white-space: pre-wrap;
-    word-break: break-all;
-    overflow: hidden;
+    white-space: pre;
     pointer-events: none;
+    will-change: transform;
 }
 @media (max-width: 480px) {
     .cbg-geo-win { width: 120px; }
@@ -1133,28 +1267,54 @@ textarea.auto-grow {
     width: 0;
     height: 0;
 }
-.cbg-artifact--red   { color: rgba(255, 0,   51,  0.72); }
-.cbg-artifact--white { color: rgba(220, 225, 230, 0.72); }
-.cbg-artifact--blue  { color: rgba(60,  130, 255, 0.72); }
-.cbg-artifact--amber { color: rgba(255, 185, 60,  0.72); }
+.cbg-artifact--red   { color: rgba(255, 0,   51,  0.37); }
+.cbg-artifact--white { color: rgba(220, 225, 230, 0.37); }
+.cbg-artifact--blue  { color: rgba(60,  130, 255, 0.37); }
+.cbg-artifact--amber { color: rgba(255, 185, 60,  0.37); }
 .cbg-artifact-char {
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1;
     pointer-events: none;
-    animation: cbg-art-flicker 0.85s steps(1) infinite;
+    animation: cbg-art-flicker 0.7s steps(1) infinite;
 }
+/* Quake-style stepped flicker — rapid strobing like a bad CRT contact */
 @keyframes cbg-art-flicker {
-    0%   { opacity: 0.90; }
-    11%  { opacity: 0.25; }
-    22%  { opacity: 0.80; }
-    33%  { opacity: 0.05; }
-    44%  { opacity: 0.95; }
-    55%  { opacity: 0.45; }
-    66%  { opacity: 0.85; }
-    78%  { opacity: 0.15; }
-    89%  { opacity: 0.70; }
-    100% { opacity: 0.90; }
+    0%   { opacity: 1.00; }
+    7%   { opacity: 0.00; }
+    14%  { opacity: 0.85; }
+    21%  { opacity: 0.00; }
+    28%  { opacity: 1.00; }
+    35%  { opacity: 0.20; }
+    42%  { opacity: 0.90; }
+    49%  { opacity: 0.00; }
+    56%  { opacity: 0.75; }
+    63%  { opacity: 0.00; }
+    70%  { opacity: 1.00; }
+    77%  { opacity: 0.10; }
+    84%  { opacity: 0.95; }
+    91%  { opacity: 0.00; }
+    100% { opacity: 1.00; }
+}
+/* Purposeful one-way drift — each char travels toward --adx1/--ady1 (a shared
+   cluster direction with per-glyph spread). The further it gets, the more it
+   blurs and fades. Plays once with forwards fill so it vanishes at its destination. */
+/* --sx/--sy are the perpendicular sway vector (pre-computed in JS, sign randomised
+   per glyph so half sway left-first, half right-first → cluster spreads & gathers).
+   Keyframe traces: origin → sway-peak → midpoint → sway-trough → destination → gone. */
+@keyframes cbg-art-drift {
+    0%   { transform: translate(0, 0);
+           filter: blur(var(--abl)) opacity(0.88); }
+    25%  { transform: translate(calc(var(--adx1) * 0.25 + var(--sx)), calc(var(--ady1) * 0.25 + var(--sy)));
+           filter: blur(calc(var(--abl) * 1.2)) opacity(0.84); }
+    50%  { transform: translate(calc(var(--adx1) * 0.5),              calc(var(--ady1) * 0.5));
+           filter: blur(calc(var(--abl) * 1.4)) opacity(0.78); }
+    75%  { transform: translate(calc(var(--adx1) * 0.75 - var(--sx)), calc(var(--ady1) * 0.75 - var(--sy)));
+           filter: blur(calc(var(--abl) * 2.4)) opacity(0.42); }
+    92%  { transform: translate(var(--adx1), var(--ady1));
+           filter: blur(calc(var(--abl) * 4.0)) opacity(0.08); }
+    100% { transform: translate(var(--adx1), var(--ady1));
+           filter: blur(calc(var(--abl) * 4.5)) opacity(0); }
 }
 
 /* ── Corporate memo intercept ──────────────────────────────────────────── */

@@ -63,7 +63,7 @@
   "narrative_function": "Expert resource on legal status of synthetics and AI, navigator of bureaucratic systems, potential employer or patron for characters with relevant skills. They know which institutions can be leveraged and which ones are walls. They can create legitimate cover or official documentation for certain activities.",
   "augmentations": "Patterned amber-gold irises (circuit diagram motif, cosmetic). Subdermal data-port at left wrist for rapid document transfer. Cochlear implant with real-time translation across eleven languages.",
   "daily_life": "Client consultations in the morning, court filings and research in the afternoon, coalition meetings in the evening two or three times a week. They take Sundays off with a rigidity that borders on ritualistic.",
-  "affiliation": "Grainfort Community Legal Aid; Coalition for Synthetic Personhood; informal consultant to three labor unions on AI worker classification",
+  "affiliation": "Tessera Corponation (senior synthetic rights lawyer and policy advocate)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -267,5 +267,6 @@
         "Khmer": 2.5
       }
     }
-  }
+  },
+  "tier": "4"
 }

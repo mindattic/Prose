@@ -63,7 +63,7 @@
   "narrative_function": "Checkpoint gatekeeper, recurring local presence, potential information source about who passes through Kessler, low-level quest giver for 'I saw something on the cameras' hooks",
   "augmentations": "Ferrogate-issue surveillance ocular (left eye, logs and streams to central), subdermal ID scanner in right palm, standard-issue neural alert dampener to manage shift fatigue",
   "daily_life": "Runs the morning and afternoon checkpoint shifts at Kessler, cross-referencing IDs against the no-transit list and managing the slow crush of commuter traffic; eats her lunch at her post and spends her off-hours in her Shelf apartment rewatching old transit incident footage she shouldn't still have copies of.",
-  "affiliation": "Ferrogate Transit Security",
+  "affiliation": "Ferrogate Transit Security; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -288,5 +288,6 @@
         "Brazilian": 1.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

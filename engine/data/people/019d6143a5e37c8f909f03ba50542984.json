@@ -61,7 +61,7 @@
   "narrative_function": "Local color and access point — he controls who moves through Kessler Interchange; information source about transit patterns and irregular commuter behavior; potential ally who can look the other way or flag someone's transit profile; humanizing portrait of low-tier security work.",
   "augmentations": "Standard Ferrogate-issue biometric scanner integrated into his right palm (reads heat signatures, ID chips, contraband metabolic markers); bioluminescent blue threading in hair (cosmetic genemod). No combat chrome.",
   "daily_life": "Twelve-hour shifts at Booth 7, Kessler Interchange, processing four to six thousand commuters; he brings a thermos of strong sorghum tea and a physical novel he reads in three-minute windows between surges; picks his daughter up from her afterschool program on days he ends shift before 18:00.",
-  "affiliation": "Ferrogate Transit Security",
+  "affiliation": "Ferrogate Transit Security; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -331,5 +331,6 @@
         "Venezuelan": 3.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

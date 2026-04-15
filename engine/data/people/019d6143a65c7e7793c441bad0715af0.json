@@ -64,7 +64,7 @@
   "narrative_function": "Information broker with surface-world knowledge; guide to understanding corporate systems for underground characters; represents the 'disappeared' as a social category; can serve as a connection between underworld and surface plotlines",
   "augmentations": "Corporate-grade neural overlay (Axiom-issued, she could not remove it without losing function — she has disabled all its network-facing components manually; it now runs only local cognitive assist). Visual implants with standard low-light enhancement (original corporate package). Both augmentations are old enough that their corp ID signatures have decayed to noise.",
   "daily_life": "Maintains a small, precisely organized living space in a dry access corridor; spends mornings cataloguing overheard information from the pipes and access ducts; offers data analysis and document work to deep-dwellers who need surface records navigated — in exchange for food, lamp fuel, and privacy.",
-  "affiliation": "Independent, no clan affiliation — carefully maintained isolation from formal Undertow power structures",
+  "affiliation": "Independent, no clan affiliation — carefully maintained isolation from formal Undertow power structures; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -331,5 +331,6 @@
         "Nigerian": 5.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

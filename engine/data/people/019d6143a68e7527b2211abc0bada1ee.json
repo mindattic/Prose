@@ -63,7 +63,7 @@
   "narrative_function": "Local anchor and information node — she knows every face that passes through Geartown, dispenses advice alongside food, can point players toward people or trouble. Quest giver for missing persons among the market community.",
   "augmentations": "Cosmetic bioluminescent subdermal veins (pale gold, forearms). Reinforced knee joints — functional, not cosmetic, from decades of standing.",
   "daily_life": "Wakes before dawn to prep stock in the stall's back compartment, opens by 0600, runs service until mid-evening. Sends her nephew Tunde to source spices from the Alban Souk twice a week.",
-  "affiliation": "Independent; loosely aligned with The Oxidian Market vendors guild",
+  "affiliation": "Independent; loosely aligned with The Oxidian Market vendors guild; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -275,5 +275,6 @@
         "Laotian": 4.3
       }
     }
-  }
+  },
+  "tier": "2"
 }

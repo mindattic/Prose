@@ -92,7 +92,7 @@
   "narrative_function": "Cutter is the cost of the Gleaner mission made flesh. His stories explore what happens to a person who becomes excellent at violence in service of a good cause — the erosion of the human underneath the operator. He is the survival horror's teeth.",
   "augmentations": "Optical targeting suite — ballistic calculation overlay, range finding, and wind compensation projected onto visual field. Enhanced auditory processing for Behemoth acoustic signature detection at extended range. Myofiber reinforcement in arms and shoulders for sustained heavy weapon handling. Adrenal suppressor that prevents panic responses in combat.",
   "daily_life": "Rises before anyone else. Runs the perimeter of the farmstead checking sensor readings and physical sign. Scouts planned raid routes days in advance — alone, on foot, reading the land the way Madre taught him. On raid days, he's point — the first one into danger and the last one out. Between raids, he maintains weapons, reviews Behemoth behavior data with Ember, and sits alone. He does not cook. He eats what Madre puts in front of him.",
-  "affiliation": "Red Lantern",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -276,5 +276,6 @@
         "Czech": 1.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

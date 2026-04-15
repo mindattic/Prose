@@ -65,7 +65,7 @@
   "narrative_function": "Equipment and gear source; fashion as social commentary hook; potential information source about who wears what and what it means; quest giver when a client brings them something dangerous.",
   "augmentations": "Bioluminescent hair geneware (violet-to-coral gradient, mood-responsive). Retractable needle in right index finger (malfunctioning cheap workshop mod). Subdermal tension sensors in fingertips for fabric assessment.",
   "daily_life": "Works odd hours dictated by orders; opens the container when they're ready, closes it without warning. Spends evenings at The Warp's shared workspace trading techniques and gossip. Eats whatever can be eaten with one hand while the other is stitching.",
-  "affiliation": "Independent; informal ties to a Laceworks artists collective called The Warp",
+  "affiliation": "Independent; informal ties to a Laceworks artists collective called The Warp; The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -270,5 +270,6 @@
         "Quechua": 6
       }
     }
-  }
+  },
+  "tier": "2"
 }

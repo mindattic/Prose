@@ -29,7 +29,28 @@
     "Exclusive knowledge of submerged access points and sealed spaces"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Causeway Collective",
+      "type": "rival",
+      "reason": "Milwaukee water route disputes"
+    },
+    {
+      "name": "The Shore Dogs",
+      "type": "rival",
+      "reason": "Surface water territory overlap near Milwaukee's drowned port"
+    },
+    {
+      "name": "The Undertow",
+      "type": "ally",
+      "reason": "Complementary operations — the Fathom Line works flooded infrastructure, the Undertow works the surface harbor; mutual handoff arrangements"
+    },
+    {
+      "name": "The Lakebed Scrapers",
+      "type": "ally",
+      "reason": "Both work underwater environments; salvage coordination agreement prevents equipment conflicts in shared zones"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A client hired the Fathom Line to recover a sealed data vault — the contents turned out to be encrypted records of a pre-flood corporate massacre",
@@ -67,5 +88,7 @@
     "Soren Sokolov",
     "Harbor Fish Shack",
     "Cargo Tacos"
-  ]
+  ],
+  "size_class": "medium",
+  "known_members": []
 }

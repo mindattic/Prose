@@ -1,0 +1,77 @@
+@* Reusable confirm dialog. Usage:
+   <ConfirmDialog @ref="dlg" />
+   bool ok = await dlg.ShowAsync("Archive image?", "This cannot be undone.", ConfirmDialog.Kind.Danger);
+*@
+
+@if (visible)
+{
+    <div class="dialog-backdrop" @onclick="DoCancel">
+        <div class="dialog-card" @onclick:stopPropagation="true">
+            <div class="dialog-icon-ring dialog-ring-@kindKey">
+                <i class="bi @iconGlyph"></i>
+            </div>
+            <h5 class="dialog-title">@currentTitle</h5>
+            @if (!string.IsNullOrWhiteSpace(currentMessage))
+            {
+                <p class="dialog-message">@currentMessage</p>
+            }
+            <div class="dialog-actions">
+                <button class="btn btn-sm btn-outline-secondary dialog-btn" @onclick="DoCancel">
+                    @CancelLabel
+                </button>
+                <button class="btn btn-sm @confirmBtnCss dialog-btn" @onclick="DoConfirm">
+                    @ConfirmLabel
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    public enum Kind { Danger, Warning, Info }
+
+    [Parameter] public string ConfirmLabel { get; set; } = "Confirm";
+    [Parameter] public string CancelLabel  { get; set; } = "Cancel";
+
+    private bool visible;
+    private string currentTitle   = "";
+    private string currentMessage = "";
+    private Kind currentKind = Kind.Warning;
+    private TaskCompletionSource<bool> tcs = new();
+
+    private string kindKey => currentKind switch
+    {
+        Kind.Danger  => "danger",
+        Kind.Info    => "info",
+        _            => "warning",
+    };
+
+    private string iconGlyph => currentKind switch
+    {
+        Kind.Danger  => "bi-exclamation-triangle-fill",
+        Kind.Info    => "bi-info-circle-fill",
+        _            => "bi-question-circle-fill",
+    };
+
+    private string confirmBtnCss => currentKind switch
+    {
+        Kind.Danger => "btn-danger",
+        Kind.Info   => "btn-primary",
+        _           => "btn-warning",
+    };
+
+    /// <summary>Show the dialog and return true if the user confirmed, false if cancelled.</summary>
+    public Task<bool> ShowAsync(string title, string message = "", Kind kind = Kind.Warning)
+    {
+        currentTitle   = title;
+        currentMessage = message;
+        currentKind    = kind;
+        tcs = new TaskCompletionSource<bool>();
+        visible = true;
+        StateHasChanged();
+        return tcs.Task;
+    }
+
+    private void DoConfirm() { visible = false; StateHasChanged(); tcs.TrySetResult(true); }
+    private void DoCancel()  { visible = false; StateHasChanged(); tcs.TrySetResult(false); }
+}

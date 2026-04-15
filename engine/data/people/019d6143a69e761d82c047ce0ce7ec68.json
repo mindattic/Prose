@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Forensic Technician, GLMZ Metro Police",
+  "role": "Forensic Technician, Arcturus Defense Solutions — Civil Security Division",
   "age": 29,
   "status": "active",
   "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
@@ -64,7 +64,7 @@
   "narrative_function": "Technical information source. The person who knows what actually happened versus what the record says. Moral witness to institutional corruption. Can provide forensic context for past events or reveal inconvenient truths that someone powerful wants buried.",
   "augmentations": "Patterned obsidian-gold iris mod (cosmetic). Neural processing chip for accelerated data correlation — Metro standard for forensics. Olfactory enhancement mods (professional — dramatically increased scent discrimination, hence 'the Bloodhound'). Fingertip haptic sensors for trace texture detection.",
   "daily_life": "They arrive at the Deepwell lab before anyone else and leave after everyone. They subsist on vending machine protein bricks and the very good coffee they make in the lab's corner unit. They keep a private shadow-log of every case where their forensic conclusions were altered or buried before trial.",
-  "affiliation": "GLMZ Metro Police, Forensic Division, Deepwell Station Lab",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Division, Deepwell Station Lab",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -229,7 +229,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2193: Joined Metro Police forensic division",
+      "event": "2193: Joined Arcturus Civil Security forensic division",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -368,5 +368,6 @@
         "Gabonese": 2.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -1,0 +1,18 @@
+{
+  "id": "201c6e8064324264bd4ce660d482e8de",
+  "name": "Good Eats",
+  "type": "subsidiary",
+  "parent_corponation": "Libation Corporation",
+  "tier": "3",
+  "line_of_business": "Mid-tier casual dining for Tier 3 working professionals and contractors",
+  "description": "Good Eats is the workhorse of Libation Corporation's portfolio. It serves the Tier 3 professional class — white-collar workers, licensed contractors, mid-level corporate employees — and it does so with competent, unremarkable efficiency. Locations are positioned near transit hubs, in commercial districts, and adjacent to mid-tier residential arcology blocks. Entry is open to Tier 3 and above; Tier 2 ID holders are admitted during off-peak hours only, and are assigned seating in the rear dining section, which Good Eats policy documents refer to as the 'Community Seating Zone' and which everyone else refers to as the back room.\n\nThe food quality at Good Eats is perceptibly better than Chow Trough and dramatically better than Eat it!, despite sharing a significant portion of the same base substrate. The difference is preparation: Good Eats employs actual kitchen staff (as opposed to Chow Trough's automated dispensary model) who are paid Tier 2 wages to apply finishing protocols that involve heat application, plating, and a small number of texture additives that meaningfully improve the eating experience.\n\nGood Eats markets itself on reliability — 'Consistently Good, Every Time' — which is accurate. It is consistently mediocre. But mediocrity, delivered consistently, in a clean environment, by staff who are trained to address customers as 'valued guests,' is an enormous psychological upgrade from the alternatives below it. Tier 3 customers eat at Good Eats not because it's good, but because eating there signals that they are not eating at Chow Trough. This signal is worth the 40% premium over Chow Trough pricing that Good Eats charges for substantively similar food.",
+  "public_facing": true,
+  "known_products": [
+    "The Standard Plate (rotating protein/grain/vegetable set)",
+    "Quick Lunch Counter service",
+    "Good Eats Card (payment and loyalty integration with Citizen ID)",
+    "Midday Professional Deal",
+    "Community Seating Zone (off-peak Tier 2 access)"
+  ],
+  "tags": ["subsidiary", "libation", "dining", "food", "tier-3", "mid-tier", "corporate", "glmz"]
+}

@@ -62,7 +62,7 @@
   "narrative_function": "Moral freshness — a character who hasn't yet been fully shaped by institutional cynicism; useful for contrast with more jaded law enforcement NPCs; his genuine belief in the rules can be an asset or an obstacle; also represents the human face of systems that often present as impersonal.",
   "augmentations": "Color-shifting pigment modification across hands and forearms (geneware, cosmetic — amber/green/gold spectrum); standard Ferrogate issue comm bead; no additional chrome",
   "daily_life": "Split shift coverage at Kessler Interchange — morning rush management and evening platform patrol; spends break periods at the transit police booth studying regulation updates or talking to regulars at the interchange food stalls; leaves work prompt at end of shift to call his grandmother.",
-  "affiliation": "Ferrogate Transit Security — Kessler Interchange Patrol Division",
+  "affiliation": "Ferrogate Transit Security — Kessler Interchange Patrol Division; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -309,5 +309,6 @@
         "Belarusian": 1.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

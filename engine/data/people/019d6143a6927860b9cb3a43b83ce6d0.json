@@ -63,7 +63,7 @@
   "narrative_function": "Window into gang prospect culture and the pipeline that pulls children in; distraction and social engineering asset for street-level plots; potential character to be pulled from this path or further into it depending on player choices",
   "augmentations": "Patterned cosmetic irises — honeycomb geometry in amber/copper (gifted by a Red recruiter). No other mods.",
   "daily_life": "Wakes whenever, eats communal breakfast at the Reds' stash house on Pit Row if they did good the day before, runs lookout or distraction jobs in the afternoon for small Φ stipends, sleeps at the community house or the stash house depending on the night's events.",
-  "affiliation": "Copperhead Reds (junior prospect, not yet fully initiated); previously Copperhead Community House welfare program",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -270,5 +270,6 @@
         "Swedish": 2.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

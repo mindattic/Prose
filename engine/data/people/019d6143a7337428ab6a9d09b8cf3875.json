@@ -63,7 +63,7 @@
   "narrative_function": "Local anchor and community memory. Excellent source of neighborhood gossip, rumors, and social history. Can tell a player who has been coming and going, who changed behavior recently, what the mood on the street is. May offer food as a reward or ask for help with something affecting her stall or a regular she cares about.",
   "augmentations": "Heat-sensing fingertip implants (cheap amber-glow model). No other augmentations.",
   "daily_life": "Arrives at her stall before dawn to start her long-cook broths, sources surplus protein from the Geartown processing co-op three mornings a week, and stays until the evening crowd thins. Closes with a small ELF ritual — pouring the last ladle of broth into a grate drain as a data-offering.",
-  "affiliation": "Independent; Oxidian Market Vendors Guild (dues-paying member)",
+  "affiliation": "Independent; Oxidian Market Vendors Guild (dues-paying member); The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -291,5 +291,6 @@
         "Somali": 4.9
       }
     }
-  }
+  },
+  "tier": "2"
 }

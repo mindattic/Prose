@@ -62,7 +62,7 @@
   "narrative_function": "Service provider for medical and pharmaceutical needs, moral complexity around the line between harm reduction and enabling harm, information source about chemical compounds and their effects, local color for The Undertow, possible quest giver when a synthesis goes wrong or a compound is stolen",
   "augmentations": "Bioluminescent skin patterning — golden foxfire, collarbones and upper arms (geneware, cosmetic). Olfactory enhancement — can identify chemical compounds by smell to roughly 70% accuracy. Neural focus band (wearable, not implanted) — suppresses distracting sensory input during synthesis.",
   "daily_life": "The Flask runs on its own schedule, not the city's — Nneka sleeps when synthesis is stable, wakes when alarms sound, and eats whatever is nearest when they remember to eat. They receive clients by appointment only, Tuesdays and Fridays, and spend the rest of their time in the lab or reading pharmacology archives they've downloaded from Axiom's academic servers without authorization.",
-  "affiliation": "Independent; informal supplier relationship with two Undertow distribution networks; occasional supplier to Narrows community health workers (under the table)",
+  "affiliation": "Independent; informal supplier relationship with two Undertow distribution networks; occasional supplier to Narrows community health workers (under the table); The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -308,5 +308,6 @@
         "Colombian": 5.8
       }
     }
-  }
+  },
+  "tier": "2"
 }

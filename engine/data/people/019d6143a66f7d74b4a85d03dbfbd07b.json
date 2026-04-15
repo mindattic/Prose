@@ -92,7 +92,7 @@
   "narrative_function": "Noor is the intellectual heart of the Quiet Table — the character who sees the patterns that drive the political thriller plots. Her stories explore the burden of understanding systems that are designed to be invisible, and the loneliness of seeing connections that other people can't. She is the analyst who knows too much and must decide what to do with it.",
   "augmentations": "Pattern-recognition cortex enhancement — accelerates her natural ability to identify connections between data points. Optical augmentation with variable zoom and light-spectrum filtering for document analysis. Subdermal data-storage implant in her left forearm — encrypted, air-gapped, containing her most sensitive analytical models.",
   "daily_life": "Wakes at 0600. Coffee — three cups before she speaks to anyone. Reviews overnight data feeds and signal intercepts from Glass's network. Spends the day in analytical cycles: four hours of deep work, thirty minutes of physical movement (she paces), repeat. Takes meetings with Glass at The Leaf when interpretation is needed. Evenings she reads — academic journals, fiction, historical analysis. She maintains a separation between work and personal reading that she considers essential to her sanity.",
-  "affiliation": "The Quiet Table",
+  "affiliation": "Copperveil Intelligence (senior intelligence analyst and pattern specialist)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -288,5 +288,6 @@
         "Peruvian": 1.2
       }
     }
-  }
+  },
+  "tier": "4"
 }

@@ -61,7 +61,7 @@
   "narrative_function": "Local color and unexpected wisdom — he knows the physical geography of the Grindstone Shore and surrounding area better than any database, has deep knowledge of what's under the water (former farms, homes, infrastructure), and carries emotional weight that can give stories stakes and resonance.",
   "augmentations": "A prosthetic right index finger — the original was lost to a combine accident in 2187, before the flood. The prosthetic is old, slightly wrong-colored, and he has wrapped the base in twine for grip. Nothing else.",
   "daily_life": "Reports to maintenance shift at 0600, spends the day doing groundskeeping and minor infrastructure upkeep along the Grindstone Shore transit infrastructure, eats with the other seasonal workers at the communal mess, spends evenings by the lake shore where he can see the water that took his land.",
-  "affiliation": "Ferrogate Transit (seasonal contracted worker, non-citizen employee); informal connection to a small community of other lakeshore climate refugees",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -310,5 +310,6 @@
         "Emirati": 2.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

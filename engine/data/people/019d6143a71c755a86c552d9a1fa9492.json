@@ -61,7 +61,7 @@
   "narrative_function": "Quest giver for ELF-related mysteries; information source about the underground art scene and the Ferment Quarter's political geography; can be hired to create distractions or illusions using her installations; knows every power junction in the district",
   "augmentations": "Bioluminescent subdermal striping (violet, pulse-synced to heartbeat); optical enhancement for precise color frequency discrimination; fiber-optic wire woven into hair locs (cosmetic)",
   "daily_life": "Rises at noon, works in her studio until the Ferment Quarter comes alive at night, then walks the district studying how her existing pieces interact with new foot traffic and weather — she calls this 'tending.' Drinks too much fermented barley tea and argues with her ELF terminal, which she has named Grandmother.",
-  "affiliation": "Independent; loosely affiliated with the Brewer's Spine Artists' Cooperative",
+  "affiliation": "Independent; loosely affiliated with the Brewer's Spine Artists' Cooperative; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -269,5 +269,6 @@
         "Sumatran": 2.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

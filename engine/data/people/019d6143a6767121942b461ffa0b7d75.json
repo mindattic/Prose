@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information source — knows the night geography of the Corridor intimately, has seen things from his cab that others haven't. Can provide passage, intelligence on movement patterns, or introductions to his regulars.",
   "augmentations": "Patterned irises — slow amber geometric rotation (cosmetic). Night-vision overlay implant — occupational requirement for Ferrogate night operators, basic grade.",
   "daily_life": "Sleeps until 18:00, eats a meal from the Deepwell Station vending machines at 22:00, runs his loop through the night, files his passenger and incident logs at 07:15, and walks home to his Blackpipe Corridor apartment to sleep again.",
-  "affiliation": "Ferrogate Transit (unionized, Local 7 of the Ferrogate Operators Guild)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -322,5 +322,6 @@
         "Mexican": 2.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

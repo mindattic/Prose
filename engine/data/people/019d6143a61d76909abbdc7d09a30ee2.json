@@ -63,7 +63,7 @@
   "narrative_function": "Information broker for anything moving through the transit network. Can provide access to restricted platform areas. Witness to unusual events on Line 7. Represents institutional memory of the city's transit system.",
   "augmentations": "Subdermal haptic interface overlay (right hand, occupational — Ferrogate standard issue for rail operators). No geneware. Minor corrective optics built into his ID glasses.",
   "daily_life": "Four days on, three days off. Morning shift, 05:00–13:00, Line 7. Rides the same line home on his off days out of habit. Spends evenings with his wife Aoife in their apartment in Deepwell Station's residential annexe.",
-  "affiliation": "Ferrogate Transit (23 years, unionized)",
+  "affiliation": "Zheng-dao Bioelectric (mid-level ferrogate transit operator (elevated rail)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -313,5 +313,6 @@
         "Thai": 6.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

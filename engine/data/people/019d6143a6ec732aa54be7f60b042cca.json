@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information source — he moves between neighborhoods daily and sees who rides with whom. Potential ally for anyone needing passage between zones. Humanizing face of Ferrogate Transit's working conditions.",
   "augmentations": "Bioluminescent freckle mod (cosmetic, shoulders/collarbones). Ferrogate-standard neural fatigue monitor implant (employer-mandated, monitors alertness, cannot be removed without termination).",
   "daily_life": "Wakes at 04:00, eats a protein block at the Edison Grid canteen, rides the workers' tram to Deepwell Station. Runs Line 7 from 05:30 to 15:30, files incident reports, walks the tunnel inspection route, goes home. Cooks something real on his days off.",
-  "affiliation": "Ferrogate Transit (unionized, Operator Grade 2)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -325,5 +325,6 @@
         "Nepali": 2.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

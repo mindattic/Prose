@@ -63,7 +63,7 @@
   "narrative_function": "Local color and community connector. Knows everyone who's ever donated or received blood in the Narrows — a remarkable information network. Can be a quest giver when the blood supply is threatened, or a source on who is or isn't who they say they are (blood typing tells stories).",
   "augmentations": "Geneware: mild bioluminescent flush in jaw and cheekbones (activates with body heat). RFID reader implant in right thumb for rapid blood typing ID. No significant cyberware.",
   "daily_life": "Arrives at the cooperative before anyone else to check overnight cold storage integrity. Spends mornings processing donations and running type matching, afternoons on logistics and outreach, evenings updating their handwritten donor ledger as a backup to the digital system.",
-  "affiliation": "Ironvein Community Blood Cooperative (operator/coordinator)",
+  "affiliation": "Helix Biosystems (mid-level blood bank operator and transfusion coordinator at)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -299,5 +299,6 @@
         "Cameroonian": 6.8
       }
     }
-  }
+  },
+  "tier": "3"
 }
