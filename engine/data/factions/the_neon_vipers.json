@@ -29,7 +29,33 @@
     "Youth — the Vipers are young, fearless, and high on their own adrenaline"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Last Mile",
+      "type": "rival",
+      "reason": "Road territory disputes in Circuit corridor"
+    },
+    {
+      "name": "The Volt Runners",
+      "type": "rival",
+      "reason": "Speed technology competition — the Runners have better tech, the Vipers have more road"
+    },
+    {
+      "name": "The Null Ward",
+      "type": "rival",
+      "reason": "The Ward has intercepted Viper couriers and claimed it was a contracted operation; both sides dispute the story"
+    },
+    {
+      "name": "The Interchange",
+      "type": "ally",
+      "reason": "Logistics partnership — the Vipers run product for the Interchange at set rates"
+    },
+    {
+      "name": "The Voltage Saints",
+      "type": "ally",
+      "reason": "Performance culture connection — the Saints run underground vehicle events the Vipers dominate"
+    }
+  ],
   "narrative_function": "The Vipers represent the raw appeal of speed as freedom — and the question of what happens when you're fast enough to run but not wise enough to know where you're running to.",
   "story_hooks": [
     "A Viper race has gone catastrophically wrong — a racer crashed into a crowded street market, killing civilians. Dex is facing pressure from both the law and other gangs to turn over the racer. He won't.",
@@ -44,5 +70,15 @@
     "circuit",
     "street",
     "vehicles"
+  ],
+  "size_class": "large",
+  "known_members": [
+    {
+      "name": "Vikram Raghavan",
+      "id": "019d6143a5c87ce1be77368e63927683",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

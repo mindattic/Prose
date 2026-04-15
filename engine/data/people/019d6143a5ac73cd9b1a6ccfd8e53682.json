@@ -61,7 +61,7 @@
   "narrative_function": "Community elder and information hub for Hamtramck Enclave; his long memory makes him a source of historical context; his puppets have been distributed widely and occasionally carry more information than their owners realize; quest giver for community-protection storylines",
   "augmentations": "None — proudly and vocally unaugmented, though he has no objection to augmentation in others",
   "daily_life": "Rises before dawn to work in quiet, attends the Enclave's morning ELF devotions at the market shrine (respectful observer rather than true believer), performs in the afternoon, spends evenings teaching anyone who asks how to build the simplest mechanisms. Eats communally whenever possible.",
-  "affiliation": "Independent; respected elder figure in Hamtramck Enclave's community governance, though he holds no formal position",
+  "affiliation": "Independent; respected elder figure in Hamtramck Enclave's community governance, though he holds no formal position; The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -259,5 +259,6 @@
         "Khmer": 7.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

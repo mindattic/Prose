@@ -61,7 +61,7 @@
   "narrative_function": "Local authority figure — the person you go through if you want to operate in the Narrows; can be a quest giver, an obstacle, or an unlikely ally depending on how her interests align; represents the functional logic of organized crime in a neighborhood the city has largely abandoned; moral complexity of genuine community protection built on coercion",
   "augmentations": "Retractable ceramic claw augmentations (ten fingers); subdermal skeletal reinforcement, forearms and shins; a single audio implant in her right ear that she uses to monitor crew communications",
   "daily_life": "Wakes early, spends the morning walking her six blocks — ostensibly as a neighbor, actually as inspection. Afternoons are for accounts, disputes, and the rare necessity of direct action. Evenings she spends at home, cooking, or listening to music on a physical speaker she found in an Auburn Grist salvage market fifteen years ago.",
-  "affiliation": "Senior figure in the Narrows Shelf crew; pays tribute upward to a figure she refers to only as 'the arrangement'",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -323,5 +323,6 @@
         "Bengali": 3.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

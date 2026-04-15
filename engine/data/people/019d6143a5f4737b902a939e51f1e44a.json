@@ -60,7 +60,7 @@
   "narrative_function": "Local color and access point for vehicle-related needs; represents the younger generation being funneled into criminal work by structural exclusion; potential for redemption arc or darker trajectory depending on story pressure; information source on what's moving through the Stockyard",
   "augmentations": "Cat ear geneware (gray-tipped, mobile, involuntary expressiveness); basic subdermal impact absorption in both hands (installed after the press accident, budget grade)",
   "daily_life": "At the bay by 0600, works until the light fails or later. Takes in vehicles — stolen, crashed, or unwanted — and disassembles them for parts with two teenage assistants he calls Bolt and Rust. Spends evenings running the parts ledger and doing client pickups. Eats terribly.",
-  "affiliation": "Loose affiliation with the Geartown Strippers, a neighborhood crew; owes ongoing tribute to a mid-level Stockyard fence named Brecko Asimov-Ngozi",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -338,5 +338,6 @@
         "Kurdish": 2.7
       }
     }
-  }
+  },
+  "tier": "1"
 }

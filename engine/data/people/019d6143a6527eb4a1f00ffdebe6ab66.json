@@ -9,10 +9,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Metro Police surveillance operator, Archer's Line monitoring station",
+  "role": "Arcturus Defense Solutions Civil Security surveillance operator, Archer's Line monitoring station",
   "age": 27,
   "status": "active",
-  "location": "Archer's Line Metro Police Monitoring Station 7, subterranean level, near Milwaukee and Damen",
+  "location": "Archer's Line Arcturus Civil Security Monitoring Station 7, subterranean level, near Milwaukee and Damen",
   "description": "Luca Makwa is twenty-seven and spends ten hours a day in a room that has no windows, watching 847 feeds from Archer's Line and the surrounding districts. She is slight and quick, with dark brown skin and natural hair she keeps pinned up for the headset, and she has cat ears — a cosmetic mod she got at nineteen because she wanted them, small and tawny and mobile, which is to say they move with her actual attention and have become professionally useful in ways she didn't anticipate. Her eyes are her own. She is very careful about her eyes. Her workstation has six physical monitors and one neural feed she plugs directly into via a port at her left temple.\n\nLuca Makwa is frighteningly good at her job. She has a spatial memory for camera angles that her supervisors call uncanny and she calls simply how she sees, and she notices things in footage that automated flagging misses entirely — a particular way a person is carrying their weight, a crowd behaving three seconds before it does something. She finds this ability isolating in a way she cannot quite explain. She has watched every corner of Archer's Line for four years and she has never stood in most of it.",
   "psychology": {
     "facet_weights": {
@@ -59,12 +59,12 @@
   "relationships": [],
   "story_hooks": [
     "The subject of Makena's private 200-hour archive has disappeared from all camera feeds simultaneously, which should be technically impossible given Archer's Line's coverage density. Makena is not sure whether to report this or investigate it privately first.",
-    "She has footage of something a Metro Police superior was definitely not doing what their official log claims — filed during a time when they were theoretically off-grid. She doesn't know what to do with this and it has been three weeks."
+    "She has footage of something a Arcturus Civil Security superior was definitely not doing what their official log claims — filed during a time when they were theoretically off-grid. She doesn't know what to do with this and it has been three weeks."
   ],
   "narrative_function": "Eyes and information — Makena knows what's on camera across a significant portion of the city. She can confirm alibis, locate missing persons, track movements, and identify faces. She is not easily corrupted but has specific pressure points. Can be a source, a complication, or a gatekeeper depending on what player characters need.",
   "augmentations": "Cosmetic cat ears (tawny, mood-mobile). Neural feed port at left temple — standard-issue surveillance operator interface, allows direct sensory integration with the monitoring network for her shift. Slight chromatic tinting on fingernails, cosmetic, changes with temperature.",
   "daily_life": "Arrives at the monitoring station before her shift to review flag summaries from the previous watch. Spends her shift on active monitoring, flagging incidents for dispatch, pulling historical footage on request. Eats at her workstation. Takes exactly one fifteen-minute break in the corridor because the monitoring station has no natural light and she has been advised by a doctor to experience it occasionally.",
-  "affiliation": "GLMZ Metro Police, Surveillance Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Surveillance Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -192,7 +192,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "Archer's Line Metro Police Monitoring Station 7",
+    "home_turf": "Archer's Line Arcturus Civil Security Monitoring Station 7",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 19 — Cat ear mod; begins Metro Police civilian tech track",
+      "event": "Age 19 — Cat ear mod; begins Arcturus Civil Security civilian tech track",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -275,9 +275,9 @@
     ],
     "visible_augmentations": "Tawny cat ears with active mobility (primary visual identifier). Chromatic nail tinting visible on fingertips and nails — currently shifts with ambient temperature, subtle color gradients from cool blues to warm ambers depending on her body temperature and the environment. Neural port at left temple is mostly invisible unless looked for directly, but her habit of touching it while thinking makes its location known.",
     "posture_movement": "Sits with perfect stillness when focused, barely breathing. Moves with economical efficiency — nothing wasted. Her cat ears are almost constantly active, rotating and tilting with her gaze and attention, betraying what she's focusing on even when her body is motionless. When she walks, she moves quietly and deliberately, as though navigating a room full of cameras (which, to her, she always is). Occasionally touches the neural port at her temple when thinking.",
-    "clothing_style": "Tier 3-4 utilitarian. Standard-issue GLMZ Metro Police uniform when on shift — smart-fabric undershirt with embedded thermal regulation, tactical vest with comm array pockets, dark utility pants with reinforced knee panels. Off-shift: comfortable, practical clothing in muted grays and blacks. Minimal jewelry except for a thin chrome bracelet on her left wrist (probably a failed augmentation attempt or a keepsake). Maintains the uniform meticulously but dresses for function rather than fashion. No visible corporate branding, no luxury indicators."
+    "clothing_style": "Tier 3-4 utilitarian. Standard-issue Arcturus Defense Solutions Civil Security uniform when on shift — smart-fabric undershirt with embedded thermal regulation, tactical vest with comm array pockets, dark utility pants with reinforced knee panels. Off-shift: comfortable, practical clothing in muted grays and blacks. Minimal jewelry except for a thin chrome bracelet on her left wrist (probably a failed augmentation attempt or a keepsake). Maintains the uniform meticulously but dresses for function rather than fashion. No visible corporate branding, no luxury indicators."
   },
-  "image_prompt": "Luca Makwa, 163cm tall, wiry build, warm medium-deep brown skin with golden and olive undertones blending Indigenous American, East Asian, Middle Eastern, Hispanic, and Northern European heritage. Dark brown eyes with slightly uplifted canthal axis, clear complexion with prominent broad cheekbones and blended jawline. Natural dark brown hair pinned in functional bun, pulled back from temple. Active tawny cat ears with autonomous mobility at skull apex. Small circular port scar at left temple. Chromatic temperature-shifting nail tints in cool blues and warm ambers. Chrome bracelet on left wrist. Wearing standard-issue GLMZ Metro Police uniform: smart-fabric undershirt, tactical vest with comm array pockets, dark reinforced utility pants. Perfect stillness, economical posture, cat ears rotating with focused attention. Subterranean police precinct setting, cool neon blue and amber lighting, GLMZ aesthetic, high-tech neural integration visible, professional and alert expression, technological surveillance environment --ar 2:3 --v 6",
+  "image_prompt": "Luca Makwa, 163cm tall, wiry build, warm medium-deep brown skin with golden and olive undertones blending Indigenous American, East Asian, Middle Eastern, Hispanic, and Northern European heritage. Dark brown eyes with slightly uplifted canthal axis, clear complexion with prominent broad cheekbones and blended jawline. Natural dark brown hair pinned in functional bun, pulled back from temple. Active tawny cat ears with autonomous mobility at skull apex. Small circular port scar at left temple. Chromatic temperature-shifting nail tints in cool blues and warm ambers. Chrome bracelet on left wrist. Wearing standard-issue Arcturus Defense Solutions Civil Security uniform: smart-fabric undershirt, tactical vest with comm array pockets, dark reinforced utility pants. Perfect stillness, economical posture, cat ears rotating with focused attention. Subterranean police precinct setting, cool neon blue and amber lighting, GLMZ aesthetic, high-tech neural integration visible, professional and alert expression, technological surveillance environment --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 41.2,
     "East Asian": 22,
@@ -332,5 +332,6 @@
         "German": 7.9
       }
     }
-  }
+  },
+  "tier": "3"
 }

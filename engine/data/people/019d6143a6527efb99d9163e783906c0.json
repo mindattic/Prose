@@ -62,7 +62,7 @@
   "narrative_function": "Antagonist or uneasy ally depending on whether player characters are in her territory, local power figure who mediates disputes, information source about the Shelf's economic underbelly, demonstration that protection rackets have their own social logic",
   "augmentations": "Subdermal impact plating — forearms and sternum, rated for small-arms blunt trauma. Joint-assist servos in both knees (injury rehabilitation, functional advantage). No cosmetic mods.",
   "daily_life": "Rises at five, exercises for ninety minutes, eats a large breakfast, walks her circuit to collect weekly payments and check on 'her' businesses, is home by eight in the evening, cooks dinner, watches old sports broadcasts, sleeps.",
-  "affiliation": "The Shelf Compact (established lower-level protection network); informal loyalty to the Compact's senior figure, an elderly man she calls Uncle who she has never met in person",
+  "affiliation": "The Shelf Compact (established lower-level protection network); informal loyalty to the Compact's senior figure, an elderly man she calls Uncle who she has never met in person; Switchblade Alley",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -343,5 +343,6 @@
         "Mexican": 1.1
       }
     }
-  }
+  },
+  "tier": "1"
 }

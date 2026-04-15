@@ -34,4 +34,6 @@ public class CyberwareData : ICanonEntity
     [JsonPropertyName("street_price")] public string StreetPrice { get; set; } = "";
     [JsonPropertyName("licensed_price")] public string LicensedPrice { get; set; } = "";
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

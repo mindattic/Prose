@@ -27,5 +27,7 @@ public class WeaponryData : ICanonEntity
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("ammunition_type")] public List<string> AmmunitionType { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
     [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }

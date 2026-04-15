@@ -1,0 +1,73 @@
+{
+  "id": "4ab24f7461d44f45b3267c6b98c96279",
+  "name": "Torii Security Group Compact Combat Shotgun TSS-3 'Chorus'",
+  "type": "weapon",
+  "aliases": [
+    "Chorus",
+    "The Other Argument",
+    "Kyle's Backup"
+  ],
+  "category": "shotgun",
+  "description": "A compact combat shotgun produced by Torii Security Group as a limited custom commission — one of three ever made, built as a companion piece to the TSK-1 'Silence' katana series. The TSS-3 is not a standard catalog item. It was developed in response to a specific request from Kyle Ellen Corbin-Vasik, who wanted a close-range firearm that could be operated one-handed, paired with the katana in low-clearance engagements where the blade couldn't reach first. The design mirrors the TSK-1's aesthetic — matte black ceramic-composite chassis, dark steel action, the same red-lined grip texture that Torii uses as its house signature. At 48cm with the stock folded, it disappears under a coat.\n\nThe barrel is cut to the legal minimum for GLMZ compact classification, which is shorter than legal everywhere else. The action has been modified for reduced felt recoil — necessary when firing one-handed while maintaining grip on a meter-long blade in the other hand. The magazine accepts four rounds of 12-gauge. The chamber is designed to cycle reliably even when the operator's hand is blood-slicked, a consideration Torii's armorer apparently included without being asked.\n\nThe name 'Chorus' was applied by Kyle, not the manufacturer. The katana is Silence. The shotgun is what follows Silence when Silence wasn't enough.",
+  "manufacturer": "Torii Security Group",
+  "tier_availability": "Custom commission — not available for purchase",
+  "legality": "Legal — GLMZ compact firearm classification",
+  "street_price": "N/A — not for sale",
+  "base_technologies": [
+    "Compact folding-stock frame",
+    "One-hand-operable action",
+    "Reduced-recoil cycling mechanism",
+    "Ceramic-composite chassis (matched to TSK-1 aesthetic)"
+  ],
+  "specifications": "caliber: 12-gauge\ncapacity: 4+1 rounds\neffective range: Contact to 15 meters\nbarrel length: 360mm (legal minimum)\noverall length: 480mm (stock folded) / 720mm (stock extended)\nweight: 2.1kg unloaded\naction: Semi-automatic, gas-operated\nfinish: Matte black ceramic-composite chassis, dark steel action, red-line grip texture",
+  "tactical_use": "Close-quarters companion to the TSK-1 katana. Deployed when the blade reaches a threshold it cannot cross — armored targets, entrenched opponents, multiple close contacts. Designed for one-hand operation so the katana can remain in the other hand. Four rounds means four choices. Kyle reportedly fires it rarely and considers each shot a failure of planning.",
+  "cultural_context": "The shotgun occupies an interesting philosophical position in Kyle's loadout: the katana is his identity, his discipline, the thing he chose. The shotgun is an admission. That there are situations the blade cannot solve, that sometimes the elegant answer isn't available, that the world doesn't arrange itself around the weapon you prefer. That Kyle carries it at all — a concession his character doesn't make easily — says something about how seriously he has learned to take being alive.",
+  "known_users": [
+    "Kyle Ellen Corbin-Vasik"
+  ],
+  "story_hooks": [
+    "Someone breaks into The Pivot and finds the TSS-3 in a locked case — Chorus engraved in small letters along the barrel. They know immediately whose place this is, and that whoever lives here was prepared for situations a katana can't handle.",
+    "Kyle fires Chorus for the first time in a year. One shot. The sound is unmistakable in the enclosed space where the fight happens. Everyone who hears it knows something went wrong enough that the blade wasn't the answer.",
+    "Torii Security Group's armorer knows exactly who commissioned this weapon and what they've done with it. They've been watching."
+  ],
+  "ammunition_type": [
+    "12_gauge_standard",
+    "12_gauge_flechette",
+    "12_gauge_solid"
+  ],
+  "tags": [
+    "shotgun",
+    "custom",
+    "torii_security_group",
+    "kyle",
+    "compact",
+    "close_quarters",
+    "sidearm",
+    "commissioned",
+    "chorus",
+    "silence_companion"
+  ],
+  "related_entities": [
+    "Kyle Ellen Corbin-Vasik",
+    "Torii Security Group Katana TSK-1 'Silence'",
+    "Torii Security Group"
+  ],
+  "physical_description": {
+    "visual_profile": "Compact and undecorated. Matte black ceramic-composite chassis with folding stock collapsed flush against the receiver. The Torii red-line grip texture — the same pattern as the katana handle — runs along the pistol grip and forend. At first glance it reads as a high-end tactical tool with no unnecessary elements. The 'Chorus' marking is minimal: small, clean, milled directly into the receiver rather than engraved or applied.",
+    "dimensions": "480mm folded. 720mm extended. 360mm barrel.",
+    "weight_description": "2.1kg unloaded. Designed to be carried. Heavy enough to feel real, light enough not to remind you it's there.",
+    "primary_material": "Ceramic-composite chassis over steel action. Same material specification as the TSK-1 katana components.",
+    "finish": "Matte black throughout. No reflective surfaces. Red accent line in grip texture — the only color.",
+    "color_scheme": "Black with red accent. Minimal. Intentional.",
+    "grip_texture": "Torii's signature red-line crosshatch pattern — angular, aggressive, functional. Identical to the katana handle grip.",
+    "distinctive_features": [
+      "Red-line grip texture matching TSK-1 'Silence' katana",
+      "'Chorus' milled into receiver in small clean lettering",
+      "Folding stock designed for coat-carry at 480mm",
+      "Action modified for reliable one-hand cycling",
+      "Chamber and feed ramp treated for blood-slicked operation"
+    ],
+    "manufacturer_markings": "Small TSG logo on receiver. 'TSS-3' designation. 'Chorus' milled into left side of receiver.",
+    "condition_typical": "Well-maintained. Shows careful use — clean action, no cosmetic wear from casual handling. Kyle treats it like a tool he respects but doesn't enjoy."
+  }
+}

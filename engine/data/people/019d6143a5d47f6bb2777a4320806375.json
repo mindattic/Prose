@@ -63,7 +63,7 @@
   "narrative_function": "Morally complex obstacle or potential ally; can be hired, bribed, or reasoned with; knows the movement and hiding patterns of people who don't want to be found; represents the privatized edges of law enforcement",
   "augmentations": "Geneware retractable tail (calico-patterned, cosmetic, chosen by his daughter), olfactory enhancement implant (scent-tracking, professional grade), right-hand grip augmentation (older model, poorly integrated, subdermal), neural skip-trace uplink to Bronzeline CR databases",
   "daily_life": "Takes contract pickups through the firm's licensed interface, spends days tracking skip locations through a combination of database work and physical legwork across Archer's Line and Irkalla, handles his own paperwork, picks his daughter up from school on Wednesdays.",
-  "affiliation": "Bronzeline Compliance and Recovery Services (private firm, Tier 3 licensure)",
+  "affiliation": "Ferrogate Transit (mid-level bounty compliance officer)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -354,5 +354,6 @@
         "Nigerian": 1.7
       }
     }
-  }
+  },
+  "tier": "3"
 }

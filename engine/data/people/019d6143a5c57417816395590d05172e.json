@@ -63,7 +63,7 @@
   "narrative_function": "Social hub and emotional temperature gauge for the Burnished Market; players seeking information about the market's inner workings, notable figures, or recent disruptions will find Blessing invaluable. Also a source for disguise materials — quality wigs, hair mods, and cosmetic reconfiguration.",
   "augmentations": "Geneware: color-shifting hair follicle pigmentation. Magnification implant in the left eye (precision work only — they can focus to sub-millimeter without tools).",
   "daily_life": "Opens the stall at 0900, runs walk-in cuts until noon, then spends the afternoon on scheduled wig commissions that require the magnification work. Closes at 1900. Three evenings a week they teach a free basic cut class for teenagers from the market community.",
-  "affiliation": "Independent; informal apprenticeship under the Burnished Market's elder vendor council (they occasionally train younger stall operators in customer management)",
+  "affiliation": "Independent; informal apprenticeship under the Burnished Market's elder vendor council (they occasionally train younger stall operators in customer management); The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -329,5 +329,6 @@
         "Cuban": 2.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

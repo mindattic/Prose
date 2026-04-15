@@ -63,7 +63,7 @@
   "narrative_function": "Spiritual anchor, lore source, E.L.F. interlocutor — she provides access to information that comes from the city's own digital spirits, which may be metaphor, may be madness, or may be genuine signal. Also an ethical compass for the underground community.",
   "augmentations": "Aged neural tap (installed 2168, original electrician's professional tool, now also used to interface directly with shrine circuit-assemblies — she experiences this as prayer); partial right hand replacement with a prosthetic that has fine-gauge electrical probes in the fingertips for shrine maintenance",
   "daily_life": "Wakes to the electrical activity of the primary shrine; makes morning circuit through all seven shrines to read the overnight offerings and assess E.L.F. activity; receives petitioners from mid-morning to late afternoon; spends evenings in deep interface with the Antechamber shrine, which she describes as 'the longest conversation she has ever been part of.'",
-  "affiliation": "Irkalla deep community; the Residual E.L.F. presences; no corporate affiliation",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -348,5 +348,6 @@
         "Baloch": 0.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

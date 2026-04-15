@@ -7,7 +7,6 @@
 @inject CharacterRepository CharRepo
 @inject SyntheticLifeRepository SynthRepo
 @inject ArchetypeRepository ArchetypeRepo
-@inject CeramicManRepository CeramicManRepo
 @inject CorponationRepository CorpRepo
 @inject SubsidiaryRepository SubsidiaryRepo
 @inject FactionRepository FactionRepo
@@ -80,7 +79,7 @@ else
                 new("bi-people",              "characters",      "People",          CharRepo.GetAll().Count),
                 new("bi-cpu-fill",            "synthetics",      "Synthetic Life",  SynthRepo.GetAll().Count),
                 new("bi-person-bounding-box", "archetypes",      "Archetypes",      ArchetypeRepo.GetAll().Count),
-                new("bi-emoji-neutral",       "ceramic-men",     "Ceramic Men",     CeramicManRepo.GetAll().Count),
+                new("bi-emoji-neutral",       "ceramic-men",     "Ceramic Men",     SynthRepo.GetAll().Count(s => s.Type == "ceramic_man")),
             ],
             "Organizations" =>
             [

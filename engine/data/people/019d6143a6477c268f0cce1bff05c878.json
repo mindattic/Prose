@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Metro beat cop, GLMZ Metro Police",
+  "role": "ADS Civil Security beat officer, Arcturus Defense Solutions — Civil Security Division",
   "age": 44,
   "status": "active",
   "location": "Bronzeline, near Milwaukee and North Ave",
-  "description": "Ember Magnúsdóttir is a tall, heavyset man whose face has the texture of someone who has been outdoors in GLMZ weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
+  "description": "Ember Magnúsdóttir is a tall, heavyset man whose face has the texture of someone who has been outdoors in GLMZ weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Arcturus Civil Security and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -61,9 +61,9 @@
     "A Tessera buyout is converting three blocks of Bronzeline into a corporate housing enclave, displacing families Kweku has known for a decade, and he's being asked to facilitate the eviction enforcement"
   ],
   "narrative_function": "Local authority and community anchor — knows Bronzeline intimately and can provide context on anyone living there. De-escalation presence. Moral compass character who has made compromises and knows it.",
-  "augmentations": "Carbon fiber prosthetic left leg (below knee) — functional, non-enhanced, deliberately low-tech. Standard Metro Police subdermal comms bead behind left ear. No cosmetic mods.",
+  "augmentations": "Carbon fiber prosthetic left leg (below knee) — functional, non-enhanced, deliberately low-tech. Standard Arcturus Civil Security subdermal comms bead behind left ear. No cosmetic mods.",
   "daily_life": "Walks his beat on foot most of the shift, rain or shine; stops at Mak's noodle stall on Bronzeline Main for lunch almost every working day; handles domestic disturbances, checkpoint disputes, and the slow accumulation of minor crimes that constitute most of actual policing.",
-  "affiliation": "GLMZ Metro Police, Bronzeline district",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Bronzeline district",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -148,13 +148,13 @@
       "replaces": ""
     },
     {
-      "name": "Metro Police subdermal comms bead (standard issue)",
+      "name": "ADS Civil Security subdermal comms bead (standard issue)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Metro Police subdermal comms bead (standard issue)",
+      "description": "ADS Civil Security subdermal comms bead (standard issue)",
       "replaces": ""
     }
   ],
@@ -223,9 +223,9 @@
     ],
     "visible_augmentations": "Matte carbon fiber prosthetic left leg from the shin down, deliberately functional and low-tech with visible joint articulation and no cosmetic casing. Slight metallic catch in the light when he moves. Barely-visible subdermal comms bead behind the left ear, flush with skin.",
     "posture_movement": "Stands with even weight distribution despite the prosthetic; walks with a distinctive deliberate gait — heel-first, measured pace that suggests neither pain nor self-consciousness but rather long accommodation. Moves through space with unhurried presence. Rests weight against walls or counter edges when stationary. Hands often visible, relaxed at sides or in uniform pockets.",
-    "clothing_style": "Wears GLMZ Metro Police Class-B uniform most shifts — navy patrol shirt with district patches, regulation trousers with slight wear at the knees, sturdy black boots (left boot modified at the heel for the prosthetic). Off-duty: functional Tier 3 work clothes — canvas jackets, worn jeans, neutral-colored long-sleeves. Everything practical and durable, nothing aspirational. No jewelry except a faded wedding band on his right hand."
+    "clothing_style": "Wears Arcturus Defense Solutions Civil Security Class-B uniform most shifts — navy patrol shirt with district patches, regulation trousers with slight wear at the knees, sturdy black boots (left boot modified at the heel for the prosthetic). Off-duty: functional Tier 3 work clothes — canvas jackets, worn jeans, neutral-colored long-sleeves. Everything practical and durable, nothing aspirational. No jewelry except a faded wedding band on his right hand."
   },
-  "image_prompt": "GLMZ, middle-aged GLMZ Metro Police officer, 188cm tall, heavyset solid build with broad shoulders. Deep warm brown skin with golden undertones blending Sub-Saharan African, East Asian, and Southeast Asian ancestry. Refined cheekbones with East Asian influence, gentle facial fullness from Southeast Asian heritage, weathered by two decades of sun exposure. Short dark brown hair greying at temples, salt-and-pepper trimmed beard. Deep-set brown eyes, sun-damaged skin across cheekbones with slight leathery texture, deep smile lines. Wearing navy GLMZ Metro Police Class-B uniform shirt with district patches, regulation navy trousers, modified black boots. Matte carbon fiber prosthetic left leg from shin down visible with metallic joint articulation. Faint scar along right temple. Stands with measured, deliberate posture, unhurried presence. Dim overhead station lighting casting shadows across weathered face. Functional, no-nonsense bearing of a career patrol officer. Film noir neo-noir urban aesthetic, realistic human form, tired but dignified demeanor --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, middle-aged Arcturus Defense Solutions Civil Security officer, 188cm tall, heavyset solid build with broad shoulders. Deep warm brown skin with golden undertones blending Sub-Saharan African, East Asian, and Southeast Asian ancestry. Refined cheekbones with East Asian influence, gentle facial fullness from Southeast Asian heritage, weathered by two decades of sun exposure. Short dark brown hair greying at temples, salt-and-pepper trimmed beard. Deep-set brown eyes, sun-damaged skin across cheekbones with slight leathery texture, deep smile lines. Wearing navy Arcturus Defense Solutions Civil Security Class-B uniform shirt with district patches, regulation navy trousers, modified black boots. Matte carbon fiber prosthetic left leg from shin down visible with metallic joint articulation. Faint scar along right temple. Stands with measured, deliberate posture, unhurried presence. Dim overhead station lighting casting shadows across weathered face. Functional, no-nonsense bearing of a career patrol officer. Film noir neo-noir urban aesthetic, realistic human form, tired but dignified demeanor --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 38.4,
     "East Asian": 38.1,
@@ -261,5 +261,6 @@
         "Laotian": 23.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Local infrastructure expert; knows Ferrogate's maintenance tunnels and access points intimately; represents working-class youth with genuine loyalty to a corponation that exploited his family; potential reluctant information source about Ferrogate systems",
   "augmentations": "None. Wants a haptic feedback glove augmentation someday. His crew chief says wait until you're sixteen.",
   "daily_life": "Reports to Kessler Interchange maintenance depot at 0600. Works a six-hour supervised shift inspecting and repairing rail switching gear and junction couplings. Spends two hours in vocational theory class, either in person or via shared neural-adjacent tablet feed. Goes home to his grandmother's apartment in the Interchange housing block and eats whatever she's made.",
-  "affiliation": "Ferrogate Transit (apprentice program, vocational track)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -244,5 +244,6 @@
         "Korean": 7.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

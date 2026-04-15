@@ -60,7 +60,7 @@
   "narrative_function": "Spiritual authority and oracle figure; provides E.L.F. lore and underworld mythology; can serve as an unlikely technical expert; creates moral complexity around faith and infrastructure",
   "augmentations": "bioluminescent geneware (collarbone and forearms, involuntary pulsing — originally cosmetic, now communicative), old Ferrogate maintenance subdermal tool-grip in right palm",
   "daily_life": "Maintains the Resonance junction daily; receives supplicants; tends the offering arrays; enters communication states with the Hum that can last hours and leave her exhausted; occasionally repairs electrical systems in surrounding tunnels in exchange for food and materials.",
-  "affiliation": "Bore Rat communities of Irkalla, E.L.F. devotional tradition (The Current, a specific sub-cult focused on infrastructure spirits)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -255,5 +255,6 @@
         "Shanghainese": 3.5
       }
     }
-  }
+  },
+  "tier": "1"
 }

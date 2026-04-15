@@ -64,7 +64,7 @@
   "narrative_function": "Quest giver — she can offer work, information, or access, and she has reasons of her own for doing so. Obstacle — she controls hiring, firing, and the movement of people through Sterling-Nakamura's workforce. Complex moral figure — neither villain nor hero, a portrait of how institutional power shapes good intentions.",
   "augmentations": "Patterned irises with black sclera and silver radial lines (cosmetic geneware). Subvocal communication implant — for private directives during meetings. Executive health suite — cardiac monitor, blood chemistry regulation, sleep optimization implant. All standard Tier 4 Sterling-Nakamura executive package.",
   "daily_life": "Her calendar is managed by a personal AI that she treats with brisk courtesy. She takes three in-person meetings per day maximum and handles the rest through mediated channels. She keeps a standing lunch appointment with no one — a blocked hour she spends alone in a conference room eating real food and looking at the lake. She considers this the most important meeting of her day.",
-  "affiliation": "Sterling-Nakamura",
+  "affiliation": "Arcturus Defense Solutions (executive-level senior vice president of talent acquisition and wo)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -343,5 +343,6 @@
         "English": 1.7
       }
     }
-  }
+  },
+  "tier": "5"
 }

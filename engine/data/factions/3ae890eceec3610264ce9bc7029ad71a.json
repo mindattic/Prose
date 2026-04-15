@@ -1,5 +1,5 @@
 {
-  "id": "3ae890eceec3610264ce9bc7029ad71a",
+  "id": "f776cca04b7bddeddc044fd54f3aebaa",
   "type": "faction",
   "name": "The Voltage Saints",
   "aliases": [
@@ -29,7 +29,28 @@
     "Rook Petrov-Achebe's three-year reign as Apex"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Null Ward",
+      "type": "rival",
+      "reason": "The Ward shut down a Saints' arena operation claiming a client contract; the Saints haven't forgotten"
+    },
+    {
+      "name": "The Coffin Nails",
+      "type": "rival",
+      "reason": "Deep Shelf territorial overlap near the Saints' underground arena"
+    },
+    {
+      "name": "The 92nd Street Kings",
+      "type": "ally",
+      "reason": "The Kings supply fighters and crowd to the Saints' events"
+    },
+    {
+      "name": "The Neon Vipers",
+      "type": "ally",
+      "reason": "Performance culture overlap — joint vehicle events and betting arrangements"
+    }
+  ],
   "narrative_function": "The Saints represent the body as weapon and the question of what happens when self-improvement is measured entirely in capacity for violence.",
   "story_hooks": [
     "Rook is facing a challenge from a newcomer whose augmentations don't match any known manufacturer. The newcomer fights with capabilities that shouldn't be possible. If Rook loses, the Saints change — and the newcomer's mysterious backers gain a private army.",
@@ -45,13 +66,6 @@
     "arena",
     "fighting"
   ],
-  "related_entities": [
-    "Dust & Meridian Saints",
-    "The Shelf",
-    "The Humboldt Cage",
-    "Kaya Kimura-Waboose",
-    "Echo Boateng",
-    "GLMZ",
-    "Ximena Jaramillo"
-  ]
+  "size_class": "medium",
+  "known_members": []
 }

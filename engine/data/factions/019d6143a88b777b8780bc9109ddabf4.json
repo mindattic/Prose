@@ -29,7 +29,28 @@
     "Youth — most members are young, fit, and have nothing to lose"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Burnside Guard",
+      "type": "rival",
+      "reason": "Overlapping Chicago south side turf claims have kept these two gangs in low-grade conflict for years"
+    },
+    {
+      "name": "The Pure Hand",
+      "type": "rival",
+      "reason": "The Pure Hand views the Kings as corruptors of neighborhood youth through drug sales"
+    },
+    {
+      "name": "The Interchange",
+      "type": "ally",
+      "reason": "The Kings provide muscle and territory access; the Interchange provides distribution infrastructure and a cut"
+    },
+    {
+      "name": "The Voltage Saints",
+      "type": "ally",
+      "reason": "Joint operations in the Shelf fringe; the Kings supply foot traffic to the Saints' underground arena"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Kings were hired as disposable distraction for a syndicate operation — now the survivors want to know who sold them out",
@@ -89,5 +110,6 @@
       "status": "active",
       "notes": "The title is traditional — the Prince is the person who handles what the Crown cannot be seen to handle. 33. Has been in the Kings since 16. The role of internal discipline in an organization like the Kings is primarily about maintaining trust and preventing the specific kind of deterioration that happens when members believe rules apply to everyone except themselves. The Prince is not primarily violent. The violence, when it happens, is the end of a process. The process itself is conversation, history, and the specific weight of being looked at by someone who has known you for fifteen years and is telling you something has to change."
     }
-  ]
+  ],
+  "size_class": "large"
 }

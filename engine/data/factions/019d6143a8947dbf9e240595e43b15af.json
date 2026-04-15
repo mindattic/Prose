@@ -29,7 +29,28 @@
     "Safe houses for staging, resting, and emergency shelter across the metropolitan zone"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Interchange",
+      "type": "rival",
+      "reason": "The Interchange views the Last Mile as a disruptive competitor cutting into volume business"
+    },
+    {
+      "name": "The Neon Vipers",
+      "type": "rival",
+      "reason": "Road corridor disputes — both need the same highway infrastructure; the Vipers tax Last Mile vehicles moving through their Circuit zone"
+    },
+    {
+      "name": "The Causeway Collective",
+      "type": "ally",
+      "reason": "Corridor partnership in the Milwaukee-Chicago route"
+    },
+    {
+      "name": "Switchblade Alley",
+      "type": "ally",
+      "reason": "The Alley provides vehicle maintenance for Last Mile runners in exchange for route access"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A Last Mile courier accepted a package that turned out to be a person — and the client lied about who they are",
@@ -63,5 +84,15 @@
     "Cargo Tacos",
     "GLMZ",
     "Rowan Kulkarni"
+  ],
+  "size_class": "large",
+  "known_members": [
+    {
+      "name": "Frost Sigurdsson-Morimoto",
+      "id": "019d6143a64479b09032a9ab3f8e6bcf",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

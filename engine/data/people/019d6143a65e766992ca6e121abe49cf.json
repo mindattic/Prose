@@ -59,7 +59,7 @@
   "narrative_function": "Quest giver, information source, supplier of consumables, moral anchor for underworld storylines — she has seen everything and judges nothing but stupidity",
   "augmentations": "degraded color-shift geneware (hair), subdermal warming mesh (keeps core temp stable in cold tunnels, bought secondhand), no other chrome",
   "daily_life": "Spends mornings checking mycelium growth, harvesting ripe caps, and processing drying racks; afternoons she receives visitors — the sick, the desperate, tunnel guides stocking medkits — and barters for food, tools, or information.",
-  "affiliation": "independent, loose ties to Bore Rat community Deepwell Station cell",
+  "affiliation": "independent, loose ties to Bore Rat community Deepwell Station cell; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -253,5 +253,6 @@
         "Nigerian": 3
       }
     }
-  }
+  },
+  "tier": "1"
 }

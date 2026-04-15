@@ -19,4 +19,6 @@ public class VocabularyEntry : ICanonEntity
     [JsonPropertyName("category")] public string Category { get; set; } = "";
     [JsonPropertyName("example")] public string Example { get; set; } = "";
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

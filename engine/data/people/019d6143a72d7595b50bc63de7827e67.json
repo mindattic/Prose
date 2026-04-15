@@ -63,7 +63,7 @@
   "narrative_function": "Humanizing civilian anchor; represents the generational cost of corporate accidents; potential quest giver when the children get into trouble or when she discovers something about the Ferrogate accident she was never meant to know; emotional touchstone",
   "augmentations": "Small bioluminescent blue patch on left collarbone (cosmetic genemod, no longer wanted but kept for sentimental reasons); reading lens implant in left eye (corrective, basic model)",
   "daily_life": "Gets the children ready and walks them to the local education node, then works a half-shift at the food cooperative downstairs in exchange for reduced meal costs, then collects the children, oversees homework, makes dinner, falls asleep over her budget spreadsheets.",
-  "affiliation": "Axiom Corp (pension); Montclare Quiet Parents' Cooperative; synthetic food co-op downstairs",
+  "affiliation": "Ferrogate Transit (mid-level grandmother raising two grandchildren; former axio)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -305,5 +305,6 @@
         "Hakka": 25.3
       }
     }
-  }
+  },
+  "tier": "3"
 }

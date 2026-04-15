@@ -92,7 +92,7 @@
   "narrative_function": "Kev is the working-class core of the Margin Call — the character who does the actual work and sees the actual consequences. He grounds the corporate espionage narratives in physical reality and provides the blunt emotional honesty that Sterling's strategy and Lise's psychology both lack. He is the crew member who says the thing nobody else will say.",
   "augmentations": "Haptic security interface — fingertip implants that can interface with physical locks, keypads, and biometric scanners. Reflex enhancement (military-grade, maintained from corporate service) providing reaction time in the top 2% of human performance. Subdermal plating in forearms and hands — not heavy enough for combat armor, but sufficient for breaching work. Encrypted communication suite (corporate standard).",
   "daily_life": "Wakes at 0600. Physical training — functional strength, reaction drills, scenario rehearsal. Reviews Sterling's operational briefs over breakfast. Spends the day on equipment preparation, site reconnaissance, or active operations. Evenings he maintains equipment with the care of a craftsman. Watches sports — the only non-work activity he engages in consistently. Sleeps well because physical exhaustion is the most reliable sedative.",
-  "affiliation": "The Margin Call",
+  "affiliation": "Copperveil Intelligence (mid-level technical operations and physical extraction speci)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -276,5 +276,6 @@
         "Maya": 3.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

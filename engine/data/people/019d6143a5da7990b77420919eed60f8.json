@@ -63,7 +63,7 @@
   "narrative_function": "Social hub and passive intelligence network — clients tell their barber everything; can be a source of neighborhood gossip, social connections, or backstory on local figures; also functions as a local color character who can reflect the texture of the Ferment Quarter scene",
   "augmentations": "Bioluminescent skin patches (collarbones and forearms, pulse-reactive); color-changing hair (currently amber-to-rust cycle); subdermal haptic feedback layer in fingertips (professional — allows precision depth sensing for skin work)",
   "daily_life": "Takes clients from 1000 to 2000 four days a week, spends one day doing skin art consultations and custom design work, runs the collective's social feed on their off day and calls it resting.",
-  "affiliation": "Independent (chair rental at The Guillotine); loose affiliation with a Ferment Quarter artists' collective",
+  "affiliation": "Independent (chair rental at The Guillotine); loose affiliation with a Ferment Quarter artists' collective; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -338,5 +338,6 @@
         "Hakka": 4.8
       }
     }
-  }
+  },
+  "tier": "1"
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Local color and information source; knows the human history of Norwood Quiet in granular detail, including who used to live where, what was there before the current building, and whose family goes back how far. Their Sterling-Nakamura background means they can also read corporate urban development plans with alarming accuracy and spot what's being planned before it's announced.",
   "augmentations": "Color-changing hair implant (Sterling-Nakamura executive perk, now cycles slowly through earth tones; cosmetic). Subdermal memory-storage palimpsest in right palm — a Sterling-Nakamura analyst tool they kept after retirement, used now for personal documentation. No other augmentations.",
   "daily_life": "Morning rounds of the public garden where they tend the community plantings and whatever ELF shrine has appeared overnight; afternoon documentation work — interviews, photographs, site visits; evenings at the apartment reviewing material and writing up histories that they publish to a small community data-feed with maybe two hundred subscribers.",
-  "affiliation": "Sterling-Nakamura (retired); Norwood Quiet Neighborhood History Project (self-founded); informal ELF-shrine network",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -332,5 +332,6 @@
         "Nigerian": 2.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

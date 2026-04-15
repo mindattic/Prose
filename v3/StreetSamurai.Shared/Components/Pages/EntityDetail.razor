@@ -29,6 +29,7 @@
 @inject ContractRepository ContractRepo
 @inject WorldbuildingDocRepository DocRepo
 @inject MediaService Media
+@inject DallEService Dalle
 
 <div class="entity-detail-page">
 
@@ -1058,6 +1059,12 @@ else if (document != null)
     </div>
 }
 
+@if (!notFound && !string.IsNullOrWhiteSpace(resolvedId))
+{
+    <EntityImagePanel EntityId="@resolvedId" EntityName="@resolvedName"
+                      MidjourneyPrompt="@resolvedMidjourneyPrompt" Dalle3Prompt="@resolvedDalle3Prompt" />
+}
+
 @if (referencedBy.Count > 0)
 {
     <div class="entity-section mt-3" style="border-top: 1px solid #30363d; padding-top: 12px;">
@@ -1104,6 +1111,9 @@ else if (document != null)
     private string? primaryImage;
     private bool notFound;
     private string resolvedName = "";
+    private string resolvedId = "";
+    private string resolvedMidjourneyPrompt = "";
+    private string resolvedDalle3Prompt = "";
     private List<CanonSearchResult> referencedBy = [];
 
     protected override void OnParametersSet()
@@ -1115,72 +1125,74 @@ else if (document != null)
         transport = null; automaton = null; archetype = null; subsidiary = null;
         entertainment = null; consumerGood = null; quote = null; news = null;
         contract = null; document = null;
-        notFound = false; resolvedName = ""; referencedBy = [];
+        notFound = false; resolvedName = ""; resolvedId = ""; resolvedMidjourneyPrompt = ""; resolvedDalle3Prompt = ""; referencedBy = [];
         primaryImage = null;
 
         if (string.IsNullOrWhiteSpace(EntityId)) { notFound = true; return; }
 
         ResolveEntity();
-        primaryImage = Media.GetPrimaryImage(EntityId);
+        primaryImage = Media.GetPrimaryImage(resolvedId);
 
         if (!notFound && resolvedName.Length >= 4)
             referencedBy = GlobalSearch.Search(resolvedName, 1, 15)
-                .Where(r => r.Id != EntityId)
+                .Where(r => r.Id != resolvedId)
                 .ToList();
     }
 
     private void ResolveEntity()
     {
-        character   = CharRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (character != null) { resolvedName = character.Name; return; }
-        synthetic   = SynthRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (synthetic != null) { resolvedName = synthetic.Name; return; }
-        place       = PlaceRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (place != null) { resolvedName = place.Name; return; }
-        faction     = FactionRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (faction != null) { resolvedName = faction.Name; return; }
-        corponation = CorpRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (corponation != null) { resolvedName = corponation.Name; return; }
-        technology  = TechRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (technology != null) { resolvedName = technology.Name; return; }
-        weapon      = WeaponRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (weapon != null) { resolvedName = weapon.Name; return; }
-        equipment   = EquipRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (equipment != null) { resolvedName = equipment.Name; return; }
-        cyberware   = CyberRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (cyberware != null) { resolvedName = cyberware.Name; return; }
-        vocabEntry  = VocabRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (vocabEntry != null) { resolvedName = vocabEntry.Term; return; }
-        ammo        = AmmoRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (ammo != null) { resolvedName = ammo.Name; return; }
-        apparel     = ApparelRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (apparel != null) { resolvedName = apparel.Name; return; }
-        genemod     = GenemodRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (genemod != null) { resolvedName = genemod.Name; return; }
-        pharma      = PharmaRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (pharma != null) { resolvedName = pharma.Name; return; }
-        material    = MaterialRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (material != null) { resolvedName = material.Name; return; }
-        transport   = TransportRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (transport != null) { resolvedName = transport.Name; return; }
-        automaton   = AutomatonRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (automaton != null) { resolvedName = automaton.Name; return; }
-        archetype   = ArchetypeRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (archetype != null) { resolvedName = archetype.Name; return; }
-        subsidiary  = SubsidiaryRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (subsidiary != null) { resolvedName = subsidiary.Name; return; }
-        entertainment = EntertainRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (entertainment != null) { resolvedName = entertainment.Name; return; }
-        consumerGood = ConsumerRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (consumerGood != null) { resolvedName = consumerGood.Name; return; }
-        quote       = QuoteRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (quote != null) { resolvedName = quote.Attribution; return; }
-        news        = NewsRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (news != null) { resolvedName = news.Headline; return; }
-        contract    = ContractRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (contract != null) { resolvedName = contract.Codename; return; }
-        document    = DocRepo.GetAll().FirstOrDefault(e => e.Id == EntityId);
-        if (document != null) { resolvedName = document.Title; return; }
+        // Each lookup tries GUID first, then name-slug — so both
+        // /entity/019d6143a648787696880f6d38d70075 and /entity/kyle-ellen-corbin-vasik work.
+        character   = CharRepo.GetById(EntityId)    ?? CharRepo.GetBySlug(EntityId);
+        if (character != null)    { resolvedId = character.Id;    resolvedName = character.Name;    resolvedMidjourneyPrompt = character.MidjourneyPrompt; resolvedDalle3Prompt = character.Dalle3Prompt; return; }
+        synthetic   = SynthRepo.GetById(EntityId)   ?? SynthRepo.GetBySlug(EntityId);
+        if (synthetic != null)    { resolvedId = synthetic.Id;    resolvedName = synthetic.Name;    return; }
+        place       = PlaceRepo.GetById(EntityId)   ?? PlaceRepo.GetBySlug(EntityId);
+        if (place != null)        { resolvedId = place.Id;        resolvedName = place.Name;        return; }
+        faction     = FactionRepo.GetById(EntityId) ?? FactionRepo.GetBySlug(EntityId);
+        if (faction != null)      { resolvedId = faction.Id;      resolvedName = faction.Name;      return; }
+        corponation = CorpRepo.GetById(EntityId)    ?? CorpRepo.GetBySlug(EntityId);
+        if (corponation != null)  { resolvedId = corponation.Id;  resolvedName = corponation.Name;  return; }
+        technology  = TechRepo.GetById(EntityId)    ?? TechRepo.GetBySlug(EntityId);
+        if (technology != null)   { resolvedId = technology.Id;   resolvedName = technology.Name;   return; }
+        weapon      = WeaponRepo.GetById(EntityId)  ?? WeaponRepo.GetBySlug(EntityId);
+        if (weapon != null)       { resolvedId = weapon.Id;       resolvedName = weapon.Name;       return; }
+        equipment   = EquipRepo.GetById(EntityId)   ?? EquipRepo.GetBySlug(EntityId);
+        if (equipment != null)    { resolvedId = equipment.Id;    resolvedName = equipment.Name;    return; }
+        cyberware   = CyberRepo.GetById(EntityId)   ?? CyberRepo.GetBySlug(EntityId);
+        if (cyberware != null)    { resolvedId = cyberware.Id;    resolvedName = cyberware.Name;    return; }
+        vocabEntry  = VocabRepo.GetById(EntityId)   ?? VocabRepo.GetBySlug(EntityId);
+        if (vocabEntry != null)   { resolvedId = vocabEntry.Id;   resolvedName = vocabEntry.Term;   return; }
+        ammo        = AmmoRepo.GetById(EntityId)    ?? AmmoRepo.GetBySlug(EntityId);
+        if (ammo != null)         { resolvedId = ammo.Id;         resolvedName = ammo.Name;         return; }
+        apparel     = ApparelRepo.GetById(EntityId) ?? ApparelRepo.GetBySlug(EntityId);
+        if (apparel != null)      { resolvedId = apparel.Id;      resolvedName = apparel.Name;      return; }
+        genemod     = GenemodRepo.GetById(EntityId) ?? GenemodRepo.GetBySlug(EntityId);
+        if (genemod != null)      { resolvedId = genemod.Id;      resolvedName = genemod.Name;      return; }
+        pharma      = PharmaRepo.GetById(EntityId)  ?? PharmaRepo.GetBySlug(EntityId);
+        if (pharma != null)       { resolvedId = pharma.Id;       resolvedName = pharma.Name;       return; }
+        material    = MaterialRepo.GetById(EntityId) ?? MaterialRepo.GetBySlug(EntityId);
+        if (material != null)     { resolvedId = material.Id;     resolvedName = material.Name;     return; }
+        transport   = TransportRepo.GetById(EntityId) ?? TransportRepo.GetBySlug(EntityId);
+        if (transport != null)    { resolvedId = transport.Id;    resolvedName = transport.Name;    return; }
+        automaton   = AutomatonRepo.GetById(EntityId) ?? AutomatonRepo.GetBySlug(EntityId);
+        if (automaton != null)    { resolvedId = automaton.Id;    resolvedName = automaton.Name;    return; }
+        archetype   = ArchetypeRepo.GetById(EntityId) ?? ArchetypeRepo.GetBySlug(EntityId);
+        if (archetype != null)    { resolvedId = archetype.Id;    resolvedName = archetype.Name;    return; }
+        subsidiary  = SubsidiaryRepo.GetById(EntityId) ?? SubsidiaryRepo.GetBySlug(EntityId);
+        if (subsidiary != null)   { resolvedId = subsidiary.Id;   resolvedName = subsidiary.Name;   return; }
+        entertainment = EntertainRepo.GetById(EntityId) ?? EntertainRepo.GetBySlug(EntityId);
+        if (entertainment != null){ resolvedId = entertainment.Id; resolvedName = entertainment.Name; return; }
+        consumerGood = ConsumerRepo.GetById(EntityId) ?? ConsumerRepo.GetBySlug(EntityId);
+        if (consumerGood != null) { resolvedId = consumerGood.Id; resolvedName = consumerGood.Name; return; }
+        quote       = QuoteRepo.GetById(EntityId)   ?? QuoteRepo.GetBySlug(EntityId);
+        if (quote != null)        { resolvedId = quote.Id;        resolvedName = quote.Attribution; return; }
+        news        = NewsRepo.GetById(EntityId)    ?? NewsRepo.GetBySlug(EntityId);
+        if (news != null)         { resolvedId = news.Id;         resolvedName = news.Headline;     return; }
+        contract    = ContractRepo.GetById(EntityId) ?? ContractRepo.GetBySlug(EntityId);
+        if (contract != null)     { resolvedId = contract.Id;     resolvedName = contract.Codename; return; }
+        document    = DocRepo.GetById(EntityId)     ?? DocRepo.GetBySlug(EntityId);
+        if (document != null)     { resolvedId = document.Id;     resolvedName = document.Title;    return; }
 
         notFound = true;
     }

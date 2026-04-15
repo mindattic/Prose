@@ -60,7 +60,7 @@
   "narrative_function": "Street-level information source — knows what infrastructure is shifting and where new passages open; can source hard-to-find low-tech components; represents the next generation of underworld residents and what they might become; potential ally, rival, or project for other characters",
   "augmentations": "Retractable carbon-fiber fingertip reinforcements (self-installed, functional); a UV-range light strip behind his left ear for reading component markings in darkness",
   "daily_life": "Sleeps in four-hour cycles, moves when the tunnel patrols are thin, spends daylight-equivalent hours deep in newly opened infrastructure sections stripping what he can carry; spends evenings cataloguing, trading, or negotiating with other scavengers over turf.",
-  "affiliation": "Loosely affiliated with a Bore Rat youth crew called the Blackpipe Pockets; occasionally sells to Undertow merchants",
+  "affiliation": "Loosely affiliated with a Bore Rat youth crew called the Blackpipe Pockets; occasionally sells to Undertow merchants; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -287,5 +287,6 @@
         "Ghanaian": 2
       }
     }
-  }
+  },
+  "tier": "2"
 }

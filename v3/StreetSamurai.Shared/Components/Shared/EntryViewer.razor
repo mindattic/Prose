@@ -15,6 +15,7 @@
     .ev-tag { background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 1px 8px; font-size: 0.7rem; color: #8b949e; }
     a.ev-tag-link { text-decoration: none; color: #8b949e; }
     a.ev-tag-link:hover { background: #dc3545; color: #fff; border-color: #dc3545; text-decoration: none; }
+    .ev-portrait { display: block; width: 260px; max-width: 100%; border-radius: 4px; margin: 0 0 16px 0; }
     .ev-fields { width: 100%; border-collapse: collapse; }
     .ev-fields td { padding: 4px 10px; vertical-align: top; border-bottom: 1px solid #30363d; font-size: 0.85rem; word-break: break-word; }
     .ev-key { color: #8b949e; white-space: nowrap; width: 160px; background: #1c2128; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -64,6 +65,11 @@
                     sb.Append("</div>");
                 }
             }
+
+            // Portrait — {id}.00.png; onerror hides it for entities without an image
+            var entityId = GetString(root, "id") ?? "";
+            if (!string.IsNullOrWhiteSpace(entityId))
+                sb.Append($"<img src=\"/api/media/{Esc(entityId)}.00.png\" class=\"ev-portrait\" alt=\"\" onerror=\"this.style.display='none'\" />");
 
             // Fields table
             var fields = new System.Text.StringBuilder();

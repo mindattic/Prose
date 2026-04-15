@@ -92,6 +92,8 @@ public class WorldbuildingDocument : ICanonEntity
     [JsonPropertyName("headings")] public List<string> Headings { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
 
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
     /// <summary>Captures any extra JSON fields not explicitly modeled (e.g., map_polygon, coordinates).</summary>
     [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }
@@ -118,6 +120,8 @@ public class CorponationData : ICanonEntity
     [JsonPropertyName("relationship_to_big_20")] public string RelationshipToBig20 { get; set; } = "";
     [JsonPropertyName("full_text")] public string FullText { get; set; } = "";
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }
 
 /// <summary>

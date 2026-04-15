@@ -62,7 +62,7 @@
   "narrative_function": "Eyes and ears of the transit system — they see the city's daily movement and know who travels when and how. Useful as an information source about transit schedules, underground infrastructure, and the hidden social life of a major station. Can be a reluctant ally or a complication depending on whose side of Ferrogate policy a story falls on.",
   "augmentations": "Iridescent patterned iris mods (cosmetic, deep blue-green geometric pattern). Standard-issue Ferrogate comm implant (ear canal, minimal — receive/transmit). No other augmentations.",
   "daily_life": "Works three split shifts per week at Deepwell Station, 06:00-14:00, plus one overnight. Spends off-days in their small Ironvein apartment playing tactical games or visiting the station's E.L.F. shrine, which they have become an informal caretaker of without ever formally volunteering.",
-  "affiliation": "Ferrogate Transit Authority (Tier 2 employee, platform services grade)",
+  "affiliation": "Ferrogate Transit Authority (Tier 2 employee, platform services grade); The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -317,5 +317,6 @@
         "Iranian": 7.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

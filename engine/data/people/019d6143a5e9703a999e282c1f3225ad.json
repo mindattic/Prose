@@ -61,7 +61,7 @@
   "narrative_function": "Street-level information source about the Zone and the Corridor; local color; potential unwitting witness to things painted over; his escalating ambitions could pull him into danger",
   "augmentations": "Cosmetic cat ears (matte black, tufted); no other augmentations — he can't afford them and is mildly suspicious of corporate implant supply chains",
   "daily_life": "Sleeps until noon, scavenges or trades for materials in the afternoon, scouts locations at dusk, works at night when the Corridor's security patrols are thinnest.",
-  "affiliation": "Highland Park Autonomous Zone; loosely affiliated with a graffiti crew called Crow Voltage",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -301,5 +301,6 @@
         "Mandarin Northern": 2
       }
     }
-  }
+  },
+  "tier": "1"
 }

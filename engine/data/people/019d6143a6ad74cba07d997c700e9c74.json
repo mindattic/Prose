@@ -63,7 +63,7 @@
   "narrative_function": "Technical resource and Old Harbor fixture; can repair things players need repaired and ask uncomfortable questions about the condition they arrived in; knows the freight and vehicle patterns of Old Harbor intimately and can identify anomalies",
   "augmentations": "Right arm prosthetic (elbow-down, industrial grade, extensively self-modified); enhanced olfactory sensor implant in the nasal passage (helps him smell chemical irregularities in fuel and hydraulic fluid)",
   "daily_life": "In the shop by 0700, works until the light fails or the job is done — whichever comes second; eats lunch beside whatever he is working on; attends the Old Harbor dockers' informal social gathering every other Friday, mostly to sit near people without having to talk much.",
-  "affiliation": "Independent; informal referral network among Old Harbor dockworkers and small freight operators",
+  "affiliation": "Independent; informal referral network among Old Harbor dockworkers and small freight operators; The Shore Dogs",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -332,5 +332,6 @@
         "Swiss German": 3.6
       }
     }
-  }
+  },
+  "tier": "2"
 }

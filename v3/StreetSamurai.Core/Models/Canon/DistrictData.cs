@@ -27,6 +27,8 @@ public class DistrictData : ICanonEntity
     [JsonPropertyName("coordinates")] public GeoCoordinates Coordinates { get; set; } = new();
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
     [JsonPropertyName("related_entities")] public List<string> RelatedEntities { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }
 
 public class GeoCoordinates

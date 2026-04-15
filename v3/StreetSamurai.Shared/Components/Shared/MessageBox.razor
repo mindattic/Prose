@@ -1,0 +1,73 @@
+@* Reusable message / alert dialog. Usage:
+   <MessageBox @ref="msgBox" />
+   await msgBox.ShowAsync("Archived", "Image moved to archive.", MessageBox.Kind.Success);
+*@
+
+@if (visible)
+{
+    <div class="dialog-backdrop" @onclick="DoClose">
+        <div class="dialog-card" @onclick:stopPropagation="true">
+            <div class="dialog-icon-ring dialog-ring-@kindKey">
+                <i class="bi @iconGlyph"></i>
+            </div>
+            <h5 class="dialog-title">@currentTitle</h5>
+            @if (!string.IsNullOrWhiteSpace(currentMessage))
+            {
+                <p class="dialog-message">@currentMessage</p>
+            }
+            <div class="dialog-actions">
+                <button class="btn btn-sm @okBtnCss dialog-btn dialog-btn-wide" @onclick="DoClose">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    public enum Kind { Success, Error, Info, Warning }
+
+    private bool visible;
+    private string currentTitle   = "";
+    private string currentMessage = "";
+    private Kind currentKind = Kind.Info;
+    private TaskCompletionSource tcs = new();
+
+    private string kindKey => currentKind switch
+    {
+        Kind.Success => "success",
+        Kind.Error   => "danger",
+        Kind.Warning => "warning",
+        _            => "info",
+    };
+
+    private string iconGlyph => currentKind switch
+    {
+        Kind.Success => "bi-check-circle-fill",
+        Kind.Error   => "bi-x-circle-fill",
+        Kind.Warning => "bi-exclamation-triangle-fill",
+        _            => "bi-info-circle-fill",
+    };
+
+    private string okBtnCss => currentKind switch
+    {
+        Kind.Success => "btn-success",
+        Kind.Error   => "btn-danger",
+        Kind.Warning => "btn-warning",
+        _            => "btn-primary",
+    };
+
+    /// <summary>Show the message box and wait for the user to dismiss it.</summary>
+    public Task ShowAsync(string title, string message = "", Kind kind = Kind.Info)
+    {
+        currentTitle   = title;
+        currentMessage = message;
+        currentKind    = kind;
+        tcs = new TaskCompletionSource();
+        visible = true;
+        StateHasChanged();
+        return tcs.Task;
+    }
+
+    private void DoClose() { visible = false; StateHasChanged(); tcs.TrySetResult(); }
+}

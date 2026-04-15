@@ -29,7 +29,28 @@
     "Community loyalty — the refugee population actively supports and shelters the militia"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Reclaimed",
+      "type": "rival",
+      "reason": "Both are survivor-era territorial gangs with ideological claims to Great Lakes ruins; their zones overlap near Cleveland"
+    },
+    {
+      "name": "The Third Rail",
+      "type": "rival",
+      "reason": "The Remnant controls Cleveland's lakefront and resists the Third Rail's push to extend transit infrastructure into their zone"
+    },
+    {
+      "name": "The Shore Dogs",
+      "type": "ally",
+      "reason": "The Shore Dogs' lake operations include Cleveland; they pay the Remnant protection tithe in exchange for safe port access"
+    },
+    {
+      "name": "The Last Mile",
+      "type": "ally",
+      "reason": "Supply route agreement — the Last Mile operates through Remnant territory with permission and payment"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A corporation wants the lakefront district for development and is funding gangs to make the area unlivable — the Remnant needs proof",
@@ -61,5 +82,7 @@
     "Zephyr Bhattacharya",
     "GLMZ",
     "Iron"
-  ]
+  ],
+  "size_class": "large",
+  "known_members": []
 }

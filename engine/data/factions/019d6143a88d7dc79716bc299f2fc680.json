@@ -29,7 +29,28 @@
     "Experienced fighters hardened by years of neighborhood defense"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Fathom Line",
+      "type": "rival",
+      "reason": "Milwaukee's water routes are finite; the Collective and the Line dispute access to several key corridors"
+    },
+    {
+      "name": "The Shore Dogs",
+      "type": "rival",
+      "reason": "Coastal distribution conflicts with the Shore Dogs' Great Lakes operation at several handoff points"
+    },
+    {
+      "name": "The Interchange",
+      "type": "ally",
+      "reason": "The Collective feeds Milwaukee commerce into the Interchange's GLMZ-wide distribution network"
+    },
+    {
+      "name": "The Last Mile",
+      "type": "ally",
+      "reason": "The Last Mile delivers what the Collective moves; operational partnership in the Milwaukee-Chicago corridor"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Collective needs a freelancer for a job too dirty for their community reputation — but the pay funds the kitchens",
@@ -67,5 +88,7 @@
     "GLMZ",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Kofi Karunaratne-Appiah"
-  ]
+  ],
+  "size_class": "large",
+  "known_members": []
 }

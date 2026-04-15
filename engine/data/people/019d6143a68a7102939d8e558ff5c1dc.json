@@ -64,7 +64,7 @@
   "narrative_function": "Information hub — he has seen everything and everyone who passes through Kessler. Neutral broker of passage. Can be bribed with the right social approach (not money — he wants to be respected). Gate for plot movement both literally and figuratively.",
   "augmentations": "Ferrogate-issue wrist scanner (biometric and cargo ID). Cochlear comms implant. No cosmetic mods.",
   "daily_life": "Six-day shifts, 0600-1800, manning the Kessler Interchange secondary checkpoint. He brings his own lunch in a battered thermal container, tends his ELF shrine at shift start, and makes a point of learning the names of regular commuters who look like they need to be seen.",
-  "affiliation": "Ferrogate Transit Security",
+  "affiliation": "Ferrogate Transit Security; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -313,5 +313,6 @@
         "Tamil": 2.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

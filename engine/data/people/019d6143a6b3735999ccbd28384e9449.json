@@ -62,7 +62,7 @@
   "narrative_function": "Local color and community texture of Shallowgrave youth crime, parts and vehicle-related services, information about what vehicles are moving through the district, moral complexity of exploitation within criminal hierarchies",
   "augmentations": "Geneware cat ears (mottled grey-black, enhanced hearing, cosmetic). Mechanical bandana with schematic HUD overlay (not technically augmentation, wearable). Grease-resistant keratin treatment on hands.",
   "daily_life": "Sleeps in the Stack in a hammock he's strung between two defunct vehicles, is awake before anyone else examining whatever came in overnight, spends his days stripping and cataloging, argues with the ELF that inhabits the Stack's old elevator shaft (which he has named Pulleys) about fair market value.",
-  "affiliation": "Nominal member of the Shallowgrave Strippers (small chop shop crew); informally connected to parts brokers throughout Geartown",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -337,5 +337,6 @@
         "Russian": 4.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

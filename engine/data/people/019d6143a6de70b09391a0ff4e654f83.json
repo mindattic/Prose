@@ -92,7 +92,7 @@
   "narrative_function": "Sterling brings the corporate espionage genre to GLMZ. His stories are about information as a weapon, about institutions as living organisms, and about the invisible war between corporations that determines the visible reality of the city. He is the character who understands the system from the inside and chooses to exploit it from the outside — not out of principle, but out of pragmatism.",
   "augmentations": "Cognitive enhancement suite (Veridian corporate tier) — accelerated strategic processing, pattern recognition, and memory compartmentalization. Dermal optimization — subtle facial restructuring for maximum social trust metrics. Encrypted internal communication array (corporate-grade, self-maintaining). Stress-dampening endocrine regulator that maintains physiological calm during high-stakes social interactions.",
   "daily_life": "Wakes at 0500. Reads financial analysis, corporate filings, and jurisdictional regulatory changes over breakfast — always at the same restaurant, always the same table. Arrives at the office by 0700. Manages active operations, client relationships, and crew tasking throughout the day. Evenings are intelligence synthesis — connecting the day's information into the larger strategic picture. Attends corporate social functions under cover identities to maintain access to the ecosystem. Sleeps six hours exactly.",
-  "affiliation": "The Margin Call",
+  "affiliation": "Copperveil Intelligence (executive-level crew lead and strategic operations director)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -289,5 +289,6 @@
         "Mexican": 0.5
       }
     }
-  }
+  },
+  "tier": "5"
 }

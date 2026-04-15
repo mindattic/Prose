@@ -8,11 +8,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, GLMZ Metro Police",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Western and Chicago Ave",
-  "description": "Zephyr Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined Metro PD because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
+  "description": "Zephyr Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined ADS Civil Security because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -56,12 +56,12 @@
   "relationships": [],
   "story_hooks": [
     "She witnessed something she shouldn't have during a corporate-sanctioned 'security operation' and is carrying the evidence, unsure who to trust with it.",
-    "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she's quietly trying to find someone to help — someone Metro PD wouldn't notice."
+    "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she's quietly trying to find someone to help — someone ADS Civil Security wouldn't notice."
   ],
   "narrative_function": "Moral conscience within law enforcement — a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in GLMZ.",
   "augmentations": "Subdermal impact-absorption mesh in forearms and shins (standard issue); cochlear dampener to protect against sonic crowd-control discharge; bioluminescent stripe (cosmetic, personal mod)",
   "daily_life": "Shifts start at 1800 at Fort Anchor for briefing, then deployment rotations through The Circuit and Grand Corridor protest zones; off-hours she visits a Tier 2 canteen called Okoro's near the barracks, feeds her cats, and leaves burned data-sticks at her E.L.F. shrine.",
-  "affiliation": "GLMZ Metro Police, Public Safety Division — Crowd Management Unit",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Crowd Management Unit",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -207,7 +207,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2184 — Joined Metro PD following uncle's twenty-year career",
+      "event": "2184 — Joined ADS Civil Security following uncle's twenty-year career",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -270,7 +270,7 @@
     ],
     "visible_augmentations": "Subdermal impact-absorption mesh visible as faint geometric scarring along both forearms and shins when skin is exposed — raised, silvered lines forming a lattice pattern beneath the surface. The bioluminescent hair stripe is the only overt aesthetic augmentation; the cochlear dampener is fully subcutaneous and invisible. Left wrist bears a faint circular scar marking the cochlear neural anchor point.",
     "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
-    "clothing_style": "Off-duty: GLMZ Metro PD standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
+    "clothing_style": "Off-duty: GLMZ ADS Civil Security standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
   },
   "image_prompt": "Zephyr Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
   "genetic_ancestry": {
@@ -335,5 +335,6 @@
         "Sindhi": 2.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

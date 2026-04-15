@@ -65,7 +65,7 @@
   "narrative_function": "Local color and neighborhood anchor; information source about Oxidian Market dynamics; potential quest giver when someone threatens her stall or her neighbors; moral compass character who grounds street-level stories.",
   "augmentations": "Patterned irises (amber/green concentric rings, cosmetic). Thermal-sense fingertip pads — low-grade utility aug for monitoring her heat coils. No other chrome.",
   "daily_life": "Up before dawn to receive protein deliveries and prep her spice paste; stall open by 06:00, closed when the food runs out (usually 20:00). Thursdays she closes early to attend guild meetings at the Bronzeline community hall.",
-  "affiliation": "Independent; dues-paying member of The Oxidian Market Vendors Guild",
+  "affiliation": "Independent; dues-paying member of The Oxidian Market Vendors Guild; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -271,5 +271,6 @@
         "Japanese": 1.9
       }
     }
-  }
+  },
+  "tier": "2"
 }

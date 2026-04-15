@@ -62,7 +62,7 @@
   "narrative_function": "Quest giver, information source, moral complication — she can be a lifeline or a trap depending on what a character needs. She knows everyone's business and everyone's breaking point.",
   "augmentations": "Bioluminescent vein tracery on left forearm (cosmetic, old mod). Subdermal memory chip in her right thumb — stores her true ledgers, encrypted.",
   "daily_life": "Opens The Counting Jar at dawn, serves tea and mediates neighborhood disputes until noon; afternoons are for private meetings with borrowers; evenings she walks the Basin's perimeter checking on 'accounts' in person.",
-  "affiliation": "Independent operator; loose arrangement with the Gravesend Basin mutual aid network as cover and community goodwill",
+  "affiliation": "Independent operator; loose arrangement with the Gravesend Basin mutual aid network as cover and community goodwill; The Third Rail",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -309,5 +309,6 @@
         "Brazilian": 0.1
       }
     }
-  }
+  },
+  "tier": "1"
 }

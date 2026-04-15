@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information source — he sees who rides the 7-Copperhead at what hours, notices patterns and anomalies. A player character who rides his line regularly can cultivate him as a contact. Also useful for transit-based chase sequences or as a witness to something he saw from the elevated track.",
   "augmentations": "Cosmetic geneware cat ears (cream, oft-drooping); basic neural link for Ferrogate's train management system (company-issued, company-owned). No personal chrome.",
   "daily_life": "Picks up his shift at 2200 from Copperhead Depot, runs the elevated line through eleven stops until 1000. Eats a produced-protein sandwich somewhere around 0300. Sleeps days in McKinley Flats. Spends his one weekly off-day doing maintenance checks on his assigned car that he is not technically required to do.",
-  "affiliation": "Ferrogate Transit (Operator, 7-Copperhead Line, twelve-hour overnight shift)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -303,5 +303,6 @@
         "Puerto Rican": 0.7
       }
     }
-  }
+  },
+  "tier": "3"
 }

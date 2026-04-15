@@ -63,7 +63,7 @@
   "narrative_function": "Local anchor and information hub — he has fed everyone in a six-block radius for twenty years and notices everything. Excellent source of low-level neighborhood intelligence, rumors, and character references. May send players to find a missing regular customer.",
   "augmentations": "Bioluminescent nail nodes (amber, temperature-sensing function). Olfactory enhancement implant, basic consumer grade. No cosmetic geneware — he finds it distracting in a kitchen.",
   "daily_life": "He arrives at his stall two hours before dawn to start the bone broth, haggles with four different protein suppliers before seven, opens service at eight and runs continuously until mid-afternoon when his stock runs out. Evenings he attends Guild meetings or sits near the steam vents leaving thimbles of salted oil for Grandmother Hiss.",
-  "affiliation": "The Oxidian Market Vendors Guild (dues-paying member, occasional grievance committee chair)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -271,5 +271,6 @@
         "Yemeni": 0.3
       }
     }
-  }
+  },
+  "tier": "2"
 }

@@ -61,7 +61,7 @@
   "narrative_function": "Information broker and local color; can provide off-grid knowledge unavailable through normal channels, can introduce players to underground networks, functions as a mystery because nobody knows his full history",
   "augmentations": "None. Refuses all augmentation on principle.",
   "daily_life": "Severino arrives at a rest stop before dawn, sleeps in a maintenance alcove or under a transit platform, then works his circuit of informal contacts — exchanging data chips for food, shelter, or information he can sell further down the road. He moves on before any single location registers his presence as a pattern.",
-  "affiliation": "None — loosely trusted by the Kenosha Crossing transit community",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -268,5 +268,6 @@
         "Cantonese": 0.9
       }
     }
-  }
+  },
+  "tier": "2"
 }

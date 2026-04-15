@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, GLMZ Metro Police",
+  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
-  "description": "Zara Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Metro Police plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nZara Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
+  "description": "Zara Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Arcturus Civil Security plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nZara Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -39,7 +39,7 @@
       "Cannot see that her enforcement of rules often protects the powerful more than the vulnerable",
       "Genuinely does not register when she is being cruel"
     ],
-    "secret": "Three years ago she buried evidence that would have implicated a Metro Police captain she believed was, on balance, doing more good than harm. She has not told anyone. She reviews that decision in her mind approximately every fourth night."
+    "secret": "Three years ago she buried evidence that would have implicated a Arcturus Civil Security captain she believed was, on balance, doing more good than harm. She has not told anyone. She reviews that decision in her mind approximately every fourth night."
   },
   "speech_patterns": {
     "vocabulary": "Formal, precise, institutional. Uses bureaucratic language not to obfuscate but because she genuinely thinks in those terms. Never uses slang unless quoting someone.",
@@ -62,7 +62,7 @@
   "narrative_function": "Quest giver for investigations into police corruption or misconduct; an obstacle if players are operating in legal gray areas; a source of hard-to-obtain official records if trust is established; represents institutional law as both shield and cage.",
   "augmentations": "Patterned irises with integrated micro-expression microfilament sensors (tier 2 medical grade). Subdermal data storage node at left wrist — holds encrypted case files offline. No cosmetic mods.",
   "daily_life": "Arrives at Fort Anchor before her shift officially begins, reviews overnight surveillance logs over synthetic coffee she does not enjoy, conducts interviews that are scheduled to feel casual and are not. Returns home to Lockhaven North at irregular hours to make her movements harder to predict.",
-  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -199,7 +199,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Joined Metro Police, assigned to The Shelf patrol",
+      "event": "Joined Arcturus Civil Security, assigned to The Shelf patrol",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -263,9 +263,9 @@
     ],
     "visible_augmentations": "Augmented irises with visible microfilament patterning and integrated sensor threading. Subdermal wrist node creates minor topographical irregularity but remains largely concealed beneath clothing. Otherwise no visible chrome or external augmentation.",
     "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
-    "clothing_style": "Metro Police plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
+    "clothing_style": "ADS Civil Security plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
   },
-  "image_prompt": "Zara Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Metro Police plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Zara Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Arcturus Civil Security plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 65.2,
     "North African": 16.3,
@@ -315,5 +315,6 @@
         "Mexican": 0.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -1,5 +1,6 @@
+@page "/flyover"
 @page "/wasteland"
-@inject WastelandEntityRepository Repo
+@inject FlyoverEntityRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
@@ -24,7 +25,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="wasteland" Title="@(isNew ? "New Wasteland Entity" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="flyover" Title="@(isNew ? "New Flyover Entity" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -57,19 +58,19 @@
 </div>
 
 @code {
-    private List<WastelandEntityData> items = [];
-    private WastelandEntityData? editing;
+    private List<FlyoverEntityData> items = [];
+    private FlyoverEntityData? editing;
     private bool isNew, confirmDelete;
     private string originalName = "", aliasInput = "", locationsInput = "";
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<WastelandEntityData> FilteredItems
+    private IEnumerable<FlyoverEntityData> FilteredItems
     {
         get
         {
-            IEnumerable<WastelandEntityData> result = items;
+            IEnumerable<FlyoverEntityData> result = items;
             if (!string.IsNullOrWhiteSpace(filter))
                 result = result.Where(w => w.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
@@ -80,7 +81,7 @@
 
     private int currentPage = 1;
     private const int PageSize = 100;
-    private IEnumerable<WastelandEntityData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
+    private IEnumerable<FlyoverEntityData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
     private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
 
     protected override void OnInitialized()
@@ -98,8 +99,8 @@
 
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
-    private void AddNew() { editing = new WastelandEntityData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; }
-    private void Edit(WastelandEntityData w) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_wasteland", w.Id); editing = w; originalName = w.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", w.Aliases); locationsInput = string.Join(", ", w.KnownLocations); }
+    private void AddNew() { editing = new FlyoverEntityData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; }
+    private void Edit(FlyoverEntityData w) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_flyover", w.Id); editing = w; originalName = w.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", w.Aliases); locationsInput = string.Join(", ", w.KnownLocations); }
 
     private void SaveEdit()
     {
@@ -120,7 +121,7 @@
         if (firstRender && editing == null && items.Count > 0 && !Nav.Uri.Contains("new=true") && !Nav.Uri.Contains("id="))
         {
             var lastId = "";
-            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_wasteland") ?? ""; } catch { }
+            try { lastId = await JS.InvokeAsync<string>("localStorage.getItem", "ss_sel_flyover") ?? ""; } catch { }
             var target = (!string.IsNullOrEmpty(lastId) ? items.FirstOrDefault(x => x.Id == lastId) : null) ?? items.First();
             if (target != null) { Edit(target); StateHasChanged(); }
         }

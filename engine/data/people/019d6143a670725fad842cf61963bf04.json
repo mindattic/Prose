@@ -67,7 +67,7 @@
   "narrative_function": "Nurlan Holmberg-Dembele is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
   "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "affiliation": "Semi-independent — has standing arrangements with several crews; The Third Rail",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -370,5 +370,6 @@
         "Sumatran": 6.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

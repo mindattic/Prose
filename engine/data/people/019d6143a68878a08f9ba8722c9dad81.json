@@ -93,7 +93,7 @@
   "narrative_function": "Orvyn functions as a connective tissue character and an audience surrogate for the world's architecture—someone whose role is to reveal how systems interconnect. He also carries the emotional counterweight of cheerful survival against actual loneliness, and his youth positions him as a character the city has not yet finished forming.",
   "augmentations": "Basic optical enhancement with zoom and low-light capability (secondhand, partially glitching—sometimes activates involuntarily in bright light),No neural augmentations by deliberate choice—he doesn't trust anything in his head that he didn't put there",
   "daily_life": "Wakes irregularly, eats whatever Haecht's is serving, spends mornings updating his notebooks with overnight observations. Midday transit to The Circuit for client meetings. Afternoons wandering with no apparent destination, which is when most of his actual observation happens. Evenings back at Haecht's or moving through Old Harbor's informal social spaces. Sleeps in a rented room above a repair shop whose owner he has protected twice through strategic information releases.",
-  "affiliation": "Unaffiliated (deliberately and carefully maintains no formal allegiances)",
+  "affiliation": "Unaffiliated (deliberately and carefully maintains no formal allegiances); The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -328,5 +328,6 @@
         "Kazakh": 0.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

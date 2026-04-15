@@ -9,10 +9,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Forensic Technician, GLMZ Metro Police",
+  "role": "Forensic Technician, Arcturus Defense Solutions — Civil Security Division",
   "age": 52,
   "status": "active",
-  "location": "Deepwell Station, Metro Police Forensic Sciences Division, Sub-Level 3",
+  "location": "Deepwell Station, Arcturus Civil Security Forensic Sciences Division, Sub-Level 3",
   "description": "Chinwe Krstić has the kind of face that has settled into itself — strong-boned, Balkan-Filipino features framed by silver-streaked hair kept in a tight braid she hasn't changed in fifteen years, not for vanity but because she has found the optimal solution and sees no reason to revisit it. She wears magnification rigs over her eyes during work hours, giving her the appearance of a very patient owl. Her hands are the most expressive part of her — long-fingered, precise, and in constant motion even when she's still, running over surfaces, testing textures. She smells faintly of the preservative compounds she works with daily, a smell she is no longer aware of.\n\nShe is the most competent person in most rooms and behaves as if this is simply the baseline condition of existing rather than something to be proud of. Her emotional register is narrow but not absent — she is moved by injustice in a cold, slow way that burns long, and her entire career has been animated by the conviction that the dead deserve the same quality of attention as the living. She has an extremely dry sense of humor that only emerges after midnight when she's on long evidence processing runs. She does not pray to E.L.F.s herself but maintains ritual respect for the one that inhabits the refrigeration units, because she believes in not antagonizing the unknowable.",
   "psychology": {
     "facet_weights": {
@@ -63,7 +63,7 @@
   "narrative_function": "Expert information source on cause of death, trace evidence, and forensic anomalies; can identify inconsistencies in official reports; one of the few truly honest people in the justice system; represents institutional memory and quiet resistance",
   "augmentations": "Neural-optical forensic integration suite (Metro-issued, enhanced tissue and compound analysis), subdermal chemical hazard sensors in fingertips (Metro-issued), elective memory compression implant (personal, allows perfect evidence recall)",
   "daily_life": "Arrives at Deepwell Station before first shift, checks the overnight intake, processes evidence with methodical precision across ten-to-fourteen-hour days; eats one real meal a day; speaks to the refrigeration unit E.L.F. before locking up.",
-  "affiliation": "GLMZ Metro Police, Forensic Sciences Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Sciences Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -207,7 +207,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2169 — Completed forensic sciences certification, hired immediately by Metro Police",
+      "event": "2169 — Completed forensic sciences certification, hired immediately by Arcturus Civil Security",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -283,9 +283,9 @@
     ],
     "visible_augmentations": "Magnification rigs worn over eyes during work hours (removable, Metro-issued, give her an owl-like appearance). Subdermal chemical hazard sensors in fingertips create faint luminescent tracery visible under forensic-spectrum light only. Neural-optical enhancement suite has no visible external hardware but manifests as subtle iridescent pupil shimmer when actively processing compound analysis.",
     "posture_movement": "Habitually forward-leaning, shoulders curved inward. Hands in constant micro-motion even at rest—testing textures, running fingers across surfaces, fidgeting with evidence containers or examining tools. Movements are economical and precise; she does not waste energy. Walking gait is steady and unhurried. Her presence is quiet—she does not announce herself.",
-    "clothing_style": "GLMZ Metro Police forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Φ in equipment rather than appearance."
+    "clothing_style": "Arcturus Defense Solutions Civil Security forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Φ in equipment rather than appearance."
   },
-  "image_prompt": "Chinwe Krstić, a 168cm lean forensic technician with deep rich brown skin blending Sub-Saharan African, South Asian, Eastern European, and East Asian ancestry, warm amber and cool undertones creating luminous depth. Strong broad cheekbones, defined nose, subtle East Asian eye shape variations, warm brown natural eyes with faint iridescent neural-optical shimmer. Dark brown hair with silver streaking, worn in tight braids at nape. Weathered complexion from decades of precision lab work, minimal wrinkles around eyes and mouth, papery skin texture. Forward-curved posture, economical precise movements, hands in constant micro-motion. Wearing GLMZ Metro Police dark grey utility coveralls with reflective trim and sealed pockets, dark blue forensic division coat worn open, sealed forensic boots. Single band on left ring finger. Magnification rigs over eyes (owl-like). Chemical burn scar visible on left forearm, needle-puncture scars on temples beneath braids. Quiet presence, subdued energy. GLMZ forensic lab setting with cool neon-accented lighting, evidence containers and precision tools visible, atmospheric depth of field. Cinematic forensic noir mood. --ar 2:3 --v 6",
+  "image_prompt": "Chinwe Krstić, a 168cm lean forensic technician with deep rich brown skin blending Sub-Saharan African, South Asian, Eastern European, and East Asian ancestry, warm amber and cool undertones creating luminous depth. Strong broad cheekbones, defined nose, subtle East Asian eye shape variations, warm brown natural eyes with faint iridescent neural-optical shimmer. Dark brown hair with silver streaking, worn in tight braids at nape. Weathered complexion from decades of precision lab work, minimal wrinkles around eyes and mouth, papery skin texture. Forward-curved posture, economical precise movements, hands in constant micro-motion. Wearing Arcturus Defense Solutions Civil Security dark grey utility coveralls with reflective trim and sealed pockets, dark blue forensic division coat worn open, sealed forensic boots. Single band on left ring finger. Magnification rigs over eyes (owl-like). Chemical burn scar visible on left forearm, needle-puncture scars on temples beneath braids. Quiet presence, subdued energy. GLMZ forensic lab setting with cool neon-accented lighting, evidence containers and precision tools visible, atmospheric depth of field. Cinematic forensic noir mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 46.9,
     "South Asian": 25.7,
@@ -344,5 +344,6 @@
         "Norwegian": 1.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

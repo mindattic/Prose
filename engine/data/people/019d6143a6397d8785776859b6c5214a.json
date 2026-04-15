@@ -62,7 +62,7 @@
   "narrative_function": "Moving information broker — knows the rhythm of the city's commuter class; can observe and report on unusual movement patterns; transit hub makes him a natural encounter point; his devotion to the Transit Mind E.L.F. makes him a bridge to that entity.",
   "augmentations": "Subdermal timekeeper — no external display, he just knows the time within thirty seconds at all moments. Standard Ferrogate Transit biometric reader in his right palm for ticket scanning.",
   "daily_life": "Rides the same line he operates on his days off, sometimes in uniform by accident; maintains a small notebook of unusual things he's witnessed on the route; attends the Ferrogate Transit worker's union meeting on the third Thursday of every month.",
-  "affiliation": "Ferrogate Transit (unionized operator, twelve years seniority)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -248,5 +248,6 @@
         "Ilocano": 9.3
       }
     }
-  }
+  },
+  "tier": "3"
 }

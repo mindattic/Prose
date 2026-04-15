@@ -99,7 +99,7 @@
   "narrative_function": "Moral ambiguity anchor — a character who is complicit without being evil, whose redemption arc is genuinely uncertain. She bridges corporate and street-level worlds as an investigator, and her ledger functions as a potential detonator for multiple plotlines. She represents institutional harm as a slow, bureaucratic process rather than dramatic villainy.",
   "augmentations": "Subdermal haptic interface array (fingertips) — allows physical interaction with encrypted data surfaces,Retinal overlay (Solenne-Hardt proprietary, company-monitored) — data parsing, document authentication, micro-expression flagging,Cochlear signal filter — ambient noise prioritization, conversation recording (legally mandated disclosure she often omits),Mild adrenal dampener (pharmaceutical, not surgical) — keeps stress response flat during high-stakes interviews",
   "daily_life": "Wakes at 5:40 without an alarm. Reviews overnight data flags over black coffee before leaving for the Meridian Core. Spends her days in glass offices and server rooms, reading between lines of financial records. Eats lunch alone, usually at her desk, usually something she brought from home. Returns to her Spire apartment by 8 PM. Cooks on Sundays with the focused attention of someone defusing something. Touches the drive against her sternum at least once a day without thinking about it.",
-  "affiliation": "Solenne-Hardt Consolidated (employed); no external affiliations declared; covert non-affiliation with the ledger's implicit promise",
+  "affiliation": "Zheng-dao Bioelectric (mid-level corporate compliance investigator / internal fixer)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -362,5 +362,6 @@
         "Scottish": 13.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

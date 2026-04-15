@@ -61,7 +61,7 @@
   "narrative_function": "Local anchor and information hub — she knows everyone in the market by face and appetite; a reliable source of neighborhood mood, rumors, and who is in trouble. Potential quest-giver for community-level problems.",
   "augmentations": "Patterned irises (cosmetic). A basic subdermal thermometer in her palm she uses to test broth temperature — practical and cheap.",
   "daily_life": "She arrives at her stall by 0500 to start her long-simmered broths, works until the last noodle is sold around 2100, then spends an hour reconciling her cash box and murmuring her nightly thanks to Grandpot before the walk home.",
-  "affiliation": "Independent; dues-paying member of the Oxidian Market Vendors Guild",
+  "affiliation": "Independent; dues-paying member of the Oxidian Market Vendors Guild; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -236,5 +236,6 @@
         "Serbian": 1.9
       }
     }
-  }
+  },
+  "tier": "2"
 }

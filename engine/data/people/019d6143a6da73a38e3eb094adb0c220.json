@@ -63,7 +63,7 @@
   "narrative_function": "Quest giver (a shipment has gone wrong, a client is dying, a supplier has gone silent), moral mirror for players, information source about the medical underworld, potential ally or threat depending on player choices",
   "augmentations": "Bioluminescent cosmetic tracery (collarbones, pale green), medical-grade haptic sensitivity enhancement in fingertips, subdermal temperature sensors in both palms, olfactory augment calibrated for tissue viability detection",
   "daily_life": "Maintains the cold-storage facility and manages inventory in the mornings; afternoons are for client consultations and supplier meetings; twice a week she assists in gray-market transplant procedures at a floating clinic in Gravesend Basin.",
-  "affiliation": "Loose network of black-market medics called the Sutured Hand; pays protection to a Undertow crew called the Escanaba Skinners",
+  "affiliation": "Loose network of black-market medics called the Sutured Hand; pays protection to a Undertow crew called the Escanaba Skinners; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -360,5 +360,6 @@
         "Cherokee": 8.2
       }
     }
-  }
+  },
+  "tier": "1"
 }

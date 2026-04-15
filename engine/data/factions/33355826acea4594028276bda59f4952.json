@@ -1,5 +1,5 @@
 {
-  "id": "33355826acea4594028276bda59f4952",
+  "id": "3a0738585af47dd8806d1ebedbf37c6f",
   "type": "faction",
   "name": "The Coffin Nails",
   "aliases": [
@@ -38,6 +38,26 @@
         "criminal",
         "augment"
       ]
+    },
+    {
+      "name": "The Bone Parish",
+      "type": "rival",
+      "reason": "Competition for Detroit's augmentation black market has produced violence over supply and pricing"
+    },
+    {
+      "name": "The Volt Runners",
+      "type": "rival",
+      "reason": "Shared territory in the deep Shelf has led to several territorial confrontations"
+    },
+    {
+      "name": "The Undertow",
+      "type": "ally",
+      "reason": "The Undertow provides harbor access for shipping harvested components; the Nails provide cargo the Undertow doesn't examine"
+    },
+    {
+      "name": "The Glass Ladder",
+      "type": "ally",
+      "reason": "The Glass Ladder purchases biometric and augmentation data from the Nails for use as leverage"
     }
   ],
   "narrative_function": "The Coffin Nails occupy the space between service and exploitation — the people who do the work nobody else will do and charge for the privilege of doing it.",
@@ -55,10 +75,49 @@
     "underworld",
     "records"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions TacMed StasisShell MSS-4 Metabolic Suspension Capsule",
-    "Frequency",
-    "Bathysphere Networks",
-    "Silas Thorne"
+  "size_class": "medium",
+  "known_members": [
+    {
+      "name": "Soren Bui-Thakur-Huitzil",
+      "id": "019d6143a6e975e18f8bbed9da857353",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Sibusiso Pham",
+      "id": "019d6143a66a7973ba8ac6edadbfc3bd",
+      "role": "Lieutenant",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Rune Taualagi",
+      "id": "019d6143a63c759b9c3b089288bbec2f",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Sterling Holm-Venkatesh-Hernández",
+      "id": "019d6143a5a47fdf9b46a9d6fbe1a9ba",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Orion Yamamoto-Kwon-Khoury",
+      "id": "019d6143a6877329b978a2006d55e204",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Chinwe Popescu-Okafor",
+      "id": "019d6143a6377be28724d6b89d77b83f",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

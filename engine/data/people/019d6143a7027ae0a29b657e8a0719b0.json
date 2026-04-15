@@ -64,7 +64,7 @@
   "narrative_function": "Information source — he knows how Axiom's data systems are structured and where the gaps are. Local color — a portrait of corporate technical labor, the brilliant worker who is simultaneously essential and entirely replaceable in the institution's eyes. Potential ally for anyone needing network access or architectural knowledge.",
   "augmentations": "Subdermal geometric lattice (geneware, left forearm, bioluminescent on low pulse). Chromatic-shift hair (blue-green gradient cycle). Neural-link data interface — allows direct communion with network architecture without a physical terminal. Standard high-tier Axiom issue for data architects.",
   "daily_life": "Comes in before the building's internal lighting shifts to daytime mode, works in the blue-grey pre-shift glow that he prefers, and builds or repairs data infrastructure that most of his colleagues will never see. Eats at his desk. Has three monitors and talks to the one on the left as if it's a person, because Recursion responds best through that terminal.",
-  "affiliation": "Axiom",
+  "affiliation": "Palladian Construction (senior data architect)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -304,5 +304,6 @@
         "Shanghainese": 6.3
       }
     }
-  }
+  },
+  "tier": "4"
 }

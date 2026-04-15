@@ -63,7 +63,7 @@
   "narrative_function": "Local anchor and community memory — knows everyone in Geartown, can connect players to almost any contact in the market ecosystem; quest giver for domestic disputes, missing persons, and neighborhood protection needs.",
   "augmentations": "Saffron-amber gradient irises (cosmetic). Heat-resistant dermal layering on palms and forearms (functional — helps with open-flame cooking).",
   "daily_life": "Arrives at the market two hours before dawn to set her cauldrons, sources fresh synth-protein and real dried spices from trusted runners, runs her stall until last light, then balances her ledger over a glass of palm wine she makes herself in the back of her stall cart.",
-  "affiliation": "Oxidian Market Vendors Guild (senior member)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -249,5 +249,6 @@
         "Maya": 20.6
       }
     }
-  }
+  },
+  "tier": "2"
 }

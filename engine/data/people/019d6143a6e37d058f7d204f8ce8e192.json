@@ -61,7 +61,7 @@
   "narrative_function": "Transportation access — can move people or objects through otherwise impenetrable checkpoints; information source on Ferrogate Transit infrastructure; potential quest giver when a smuggling job goes sideways",
   "augmentations": "Color-change hair geneware (cheap, runs warm-neutral spectrum only); eidetic spatial memory enhancement (cognitive, installed 2194 — their most significant investment in themselves)",
   "daily_life": "They run two to four transits per week depending on cargo. Between runs they spend most of their time in the modified maintenance vehicle — cataloguing route updates, maintaining their informant relationships, and playing an elaborate single-player strategy game on a battered tablet they refuse to replace.",
-  "affiliation": "Independent; pays access fees to a loose smuggler consortium called the Escanaba Drift; has cultivated specific relationships with six Ferrogate Transit maintenance workers",
+  "affiliation": "Independent; pays access fees to a loose smuggler consortium called the Escanaba Drift; has cultivated specific relationships with six Ferrogate Transit maintenance workers; The Third Rail",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -327,5 +327,6 @@
         "Puerto Rican": 4.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -29,7 +29,28 @@
     "Social invisibility — nobody watches the people who deal with the dead"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Coffin Nails",
+      "type": "rival",
+      "reason": "Both harvest and traffic augmentation components; territorial overlap in Detroit has produced violence"
+    },
+    {
+      "name": "The Reclaimed",
+      "type": "rival",
+      "reason": "The Parish operates in Detroit's ruins belt, which the Reclaimed consider their sovereign territory"
+    },
+    {
+      "name": "The Gauze",
+      "type": "ally",
+      "reason": "Medical supply relationship — the Gauze acquires surgical materials from the Parish; neither discusses provenance"
+    },
+    {
+      "name": "The Ferment",
+      "type": "ally",
+      "reason": "The Ferment provides biochemical compounds for Parish surgical operations"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Bone Parish harvested an augment from a corpse that wasn't quite dead — the donor survived and wants their chrome back",
@@ -85,6 +106,14 @@
       "role": "Enforcer",
       "status": "active",
       "notes": "Named for the caliber, not the age. 27. Has worked for the Parish since 14. The role of enforcer in the Bone Parish is not primarily violence — it is the credible suggestion of violence sufficient that violence doesn't happen, and Forty is exceptionally good at the suggestion. Has been in three firefights in thirteen years of enforcement work. This is considered unusually few. The reason is that Forty listens before anything else and most situations, given time to be understood, do not require the thing they initially appeared to require."
+    },
+    {
+      "name": "Tumelo Keïta-Bergqvist",
+      "id": "019d6143a68e74c5bce71866c2269574",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
     }
-  ]
+  ],
+  "size_class": "medium"
 }

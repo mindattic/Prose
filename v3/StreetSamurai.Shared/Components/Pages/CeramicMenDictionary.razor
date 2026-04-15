@@ -1,5 +1,5 @@
 @page "/ceramic-men"
-@inject CeramicManRepository Repo
+@inject SyntheticLifeRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @inject WorldGraphService Graph
@@ -45,6 +45,7 @@
                     <div class="mb-3"><div class="field-label">Operating History</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.OperatingHistory"></textarea></div>
                     <div class="mb-3"><div class="field-label">Behavioral Notes</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.BehavioralNotes"></textarea></div>
                     <div class="mb-3"><div class="field-label">Damage History</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.DamageHistory"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Face Decoration</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.FaceDecoration"></textarea></div>
                     <div class="mb-3"><div class="field-label">Known Associations (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="associationsInput" /></div>
                 </ChildContent>
             </EditViewToggle>
@@ -54,19 +55,19 @@
 </div>
 
 @code {
-    private List<CeramicManData> items = [];
-    private CeramicManData? editing;
+    private List<SyntheticLifeData> items = [];
+    private SyntheticLifeData? editing;
     private bool isNew, confirmDelete;
     private string originalName = "", aliasInput = "", associationsInput = "";
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<CeramicManData> FilteredItems
+    private IEnumerable<SyntheticLifeData> FilteredItems
     {
         get
         {
-            IEnumerable<CeramicManData> result = items;
+            IEnumerable<SyntheticLifeData> result = items;
             if (!string.IsNullOrWhiteSpace(filter))
                 result = result.Where(c => c.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
@@ -77,13 +78,13 @@
 
     private int currentPage = 1;
     private const int PageSize = 100;
-    private IEnumerable<CeramicManData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
+    private IEnumerable<SyntheticLifeData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
     private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
 
     protected override void OnInitialized()
     {
         Repo.Reload();
-        items = Repo.GetAll();
+        items = Repo.GetAll().Where(s => s.Type == "ceramic_man").ToList();
         RebuildTags();
         if (Nav.Uri.Contains("new=true")) AddNew();
         else
@@ -95,8 +96,20 @@
 
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
-    private void AddNew() { editing = new CeramicManData(); isNew = true; confirmDelete = false; aliasInput = ""; associationsInput = ""; }
-    private void Edit(CeramicManData c) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_ceramic-men", c.Id); editing = c; originalName = c.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", c.Aliases); associationsInput = string.Join(", ", c.KnownAssociations); }
+
+    private void AddNew()
+    {
+        editing = new SyntheticLifeData { Type = "ceramic_man", KnownAssociations = [] };
+        isNew = true; confirmDelete = false; aliasInput = ""; associationsInput = "";
+    }
+
+    private void Edit(SyntheticLifeData c)
+    {
+        _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_ceramic-men", c.Id);
+        editing = c; originalName = c.Name; isNew = false; confirmDelete = false;
+        aliasInput = string.Join(", ", c.Aliases);
+        associationsInput = string.Join(", ", c.KnownAssociations ?? []);
+    }
 
     private void SaveEdit()
     {
@@ -106,11 +119,20 @@
         if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
         Repo.Save(editing);
         editing = null;
-        items = Repo.GetAll();
+        items = Repo.GetAll().Where(s => s.Type == "ceramic_man").ToList();
         RebuildTags();
     }
 
-    private void DoDelete() { if (editing == null) return; Graph.RemoveNode(editing.Name); Repo.Delete(editing.Name); editing = null; confirmDelete = false; items = Repo.GetAll(); RebuildTags(); }
+    private void DoDelete()
+    {
+        if (editing == null) return;
+        Graph.RemoveNode(editing.Name);
+        Repo.Delete(editing.Name);
+        editing = null; confirmDelete = false;
+        items = Repo.GetAll().Where(s => s.Type == "ceramic_man").ToList();
+        RebuildTags();
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await JS.InvokeVoidAsync("writeInterop.autoResizeAll");

@@ -64,7 +64,7 @@
   "narrative_function": "Community anchor and information hub — she knows everyone in the Oxidian Market and hears everything. Quest giver for neighborhood-level problems; reliable source of local gossip and history; can introduce players to other vendors or factions.",
   "augmentations": "Thermal sensing patch embedded in left palm (industrial repurpose, cosmetic housing in copper filigree). No other augmentations.",
   "daily_life": "Up before dawn to receive ingredient deliveries and negotiate prices with dockside suppliers, then twelve hours at the wok until the night crowd thins. She eats standing up, always.",
-  "affiliation": "The Oxidian Market Vendors Guild (senior member), Independent",
+  "affiliation": "The Oxidian Market Vendors Guild (senior member), Independent; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -323,5 +323,6 @@
         "Yemeni": 3.5
       }
     }
-  }
+  },
+  "tier": "2"
 }

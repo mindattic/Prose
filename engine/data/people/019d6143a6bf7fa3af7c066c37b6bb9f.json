@@ -63,7 +63,7 @@
   "narrative_function": "Mobile information node — he crosses half the city daily and absorbs ambient detail like a sponge. Potential contact for people who need to move through the city quietly, or who want to know what is happening at any given station. His Ferrogate data logs make him a liability he isn't fully aware of.",
   "augmentations": "Geneware: luminous amber irises (cosmetic, regretted). Neural lag-buffer chip (Ferrogate-mandated for all operators — suppresses microsleep during long shifts; Ferrogate retains access to the data logs).",
   "daily_life": "Wakes at 0345 in the crew dorm, runs a six-hour tram circuit on the Ironvein line, eats in the operator break room, then usually does a second shift pickup for overtime because the base pay is not livable. Spends off-days at a small E.L.F. shrine near the Ironvein depot, where he leaves transit tokens as offerings.",
-  "affiliation": "Ferrogate Transit (contracted employee, not salaried); informal member of the Ironvein Operator's Mutual, an unrecognized union Ferrogate does not acknowledge",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -339,5 +339,6 @@
         "Botswanan": 1.8
       }
     }
-  }
+  },
+  "tier": "1"
 }

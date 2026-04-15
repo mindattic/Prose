@@ -62,7 +62,7 @@
   "narrative_function": "Mobile information source about the warrant and compliance system; a morally complex figure who can be an obstacle, an ally, or a source of information about who is being actively sought; potential point of conflict or cooperation; illustrates the privatized grey zone between policing and commerce",
   "augmentations": "Bioluminescent temple flecks (cosmetic geneware, amber, very subtle); commercial-grade facial recognition overlay (contact-lens mounted, civilian legal tier); subvocal comms; retractable ceramic baton (non-augment, licensed equipment)",
   "daily_life": "Operates on a self-directed schedule organized around active warrants — morning warrant verification and database review in their Bronzeline studio, fieldwork through the afternoon and evening, compliance handoffs at the nearest Metro checkpoint before midnight; Sunday mornings are sacred and are spent at the Bronzeline public baths, doing nothing.",
-  "affiliation": "Clearpath Recovery Associates (private, licensed by GLMZ Compliance Board)",
+  "affiliation": "Pale Lantern Bioethics (mid-level bounty compliance officer)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -248,5 +248,6 @@
         "Sindhi": 6.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

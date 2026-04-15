@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Bronzeline — office above a fabrication shop on Copper Haul Street; operates across The Shelf and lower Grand Corridor, near Pulaski and Chicago Ave",
-  "description": "Olumide Bergqvist is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nOlumide Bergqvist runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Metro Police interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
+  "description": "Olumide Bergqvist is medium height with a fluid quality to their movements — Samoan and Slavic ancestry combining into broad shoulders, strong hands, and a face whose expressions they have learned to deploy like instruments rather than leak involuntarily. Their hair is grown to the jaw and shifts through three or four colors depending on their mood thanks to chromatic follicle modification; they typically let it settle to charcoal gray while working, which they describe as professional, though their clients find the occasional bleed of deep violet when they are agitated more unnerving than reassuring. They have cat ears — soft grey, mobile, a mod that predates their PI license and that they have kept because they pick up certain vocal frequencies the human ear misses, which turns out to be professionally useful in a way they did not originally intend.\n\nOlumide Bergqvist runs a small private investigation practice that caters to Tier 2 and low Tier 3 clients — people who cannot afford legal representation and cannot access Arcturus Civil Security interest because their problems are too small or too inconvenient. They find missing persons. They document infidelity for separation proceedings. They trace where someone's inheritance went. They do not describe this work as glamorous and they are not performing humility when they say it. They have a gift for putting people at ease that coexists uncomfortably with a deep private reserve, and they pray to three different ELFs with equal commitment, which their neighbors in Bronzeline find ecumenically admirable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -57,12 +57,12 @@
   "relationships": [],
   "story_hooks": [
     "The Tessera officer from the cold case three years ago has just appeared in documentation related to a new client's missing family member — a coincidence that is too specific to be a coincidence.",
-    "A Metro Police beat officer who has been feeding them referrals has gone missing themselves, and no one in the department is treating it as urgent."
+    "A Arcturus Civil Security beat officer who has been feeding them referrals has gone missing themselves, and no one in the department is treating it as urgent."
   ],
   "narrative_function": "Information broker and investigation resource for Tier 1-3 characters; provides access to unofficial channels and street-level knowledge that institutional law enforcement cannot or will not pursue. Can be hired, can provide referrals, can become a recurring contact. Represents the gap between what the system does and what people actually need.",
   "augmentations": "Chromatic follicle modification — color-changing hair, mood-reactive with manual override (cosmetic, personal). Cosmetic cat ears, soft grey, enhanced audio frequency range (installed age 22, originally cosmetic, professionally repurposed). Subvocal communication implant — throat-mounted, allows silent communication with trusted contacts (professional grade, self-funded).",
   "daily_life": "Takes client meetings in the office above the fabrication shop, which smells permanently of heated metal and is somehow comfortable. Fieldwork consumes most afternoons and evenings — surveillance, interviews, site documentation. Makes offerings to their three ELF shrines each morning: one for the device network, one for the building, one for a data relay two streets over that they have been cultivating for four years.",
-  "affiliation": "Self-employed — licensed PI under GLMZ freelance investigator statute. Occasional informal referral relationship with Metro Police beat officers who trust them.",
+  "affiliation": "Self-employed — licensed PI under GLMZ freelance investigator statute. Occasional informal referral relationship with Arcturus Defense Solutions Civil Security beat officers who trust them.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -347,5 +347,6 @@
         "Sichuanese": 1.8
       }
     }
-  }
+  },
+  "tier": "4"
 }

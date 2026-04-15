@@ -20,4 +20,6 @@ public class SubsidiaryData : ICanonEntity
     [JsonPropertyName("public_facing")] public bool PublicFacing { get; set; }
     [JsonPropertyName("known_products")] public List<string> KnownProducts { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

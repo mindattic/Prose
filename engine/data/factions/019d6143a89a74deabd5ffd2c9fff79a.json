@@ -29,7 +29,33 @@
     "Stockpiled weapons and supplies cached at strategic points in the tunnel system"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Volt Runners",
+      "type": "rival",
+      "reason": "Competing transit alternatives in Chicago's vertical vs horizontal infrastructure divide"
+    },
+    {
+      "name": "The Erie Remnant",
+      "type": "rival",
+      "reason": "The Rail wants to extend infrastructure into Remnant territory; the Remnant resists"
+    },
+    {
+      "name": "The Siphon Collective",
+      "type": "ally",
+      "reason": "Underground Chicago infrastructure partnership"
+    },
+    {
+      "name": "The Burnside Guard",
+      "type": "ally",
+      "reason": "Surface-level protection agreements in shared Chicago zones"
+    },
+    {
+      "name": "The Null Ward",
+      "type": "ally",
+      "reason": "Infrastructure security contracts — the Ward is paid to protect critical Rail nodes"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "Something is living in the deep tunnels that the Third Rail sealed off years ago — and now the seals are breaking",
@@ -59,5 +85,71 @@
     "Zephyr Bhattacharya",
     "Rowan Kulkarni",
     "Déjà Vu"
+  ],
+  "size_class": "massive",
+  "known_members": [
+    {
+      "name": "Amir Cervantes-Najjar",
+      "id": "019d6143a6827232be98ac4332714b20",
+      "role": "Member",
+      "status": "active",
+      "notes": "Direct affiliation mention in character data"
+    },
+    {
+      "name": "Sterling Ingebrigtsen",
+      "id": "019d6143a6dd7ad889ca5d682e6a1bbe",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Kit Shirazi",
+      "id": "019d6143a62c7574a6f773ee1dedc340",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Phoenix Yoon-Villanueva",
+      "id": "019d6143a5b274e5bc109b1d5b123116",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Ingrid Lindström-Čabarkapa",
+      "id": "019d6143a6e37d058f7d204f8ce8e192",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Vega Subramaniam",
+      "id": "019d6143a670725fad842cf61963bf04",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Isadora Sepúlveda",
+      "id": "019d6143a6497c20891b383ebca497ee",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Phoenix Krishnamurthy",
+      "id": "019d6143a63b779798b37ddc55ccd8be",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Sekou Balogun",
+      "id": "019d6143a6d97de7b5f9496fec81ab95",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

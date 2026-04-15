@@ -63,7 +63,7 @@
   "narrative_function": "Medical resource for characters who can't access licensed care, quest giver for organ acquisition or protection, source of Helix Biosystems insider knowledge, moral complexity touchstone.",
   "augmentations": "Surgical stabilizer rigs (both hands). Haptic-magnification implants (eyes). Subdermal sterile-field generator 'the bubble.' Cosmetic bioluminescent capillary tracery on forearms.",
   "daily_life": "Maintains a legitimate-ish walk-in wound clinic mornings for Market residents, takes scheduled harvest procedures by appointment, spends evenings doing maintenance on her equipment and updating her own medical knowledge via pirated Helix Biosystems training streams.",
-  "affiliation": "Loose affiliation with Shallowgrave's Midden Market community; supply contracts with two unlicensed Axiom-adjacent med-brokers",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -326,5 +326,6 @@
         "Nepali": 6.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

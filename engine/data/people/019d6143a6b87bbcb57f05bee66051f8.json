@@ -61,7 +61,7 @@
   "narrative_function": "Information hub and street-level investigative resource; has connections across tiers and districts from years of case work; can surface buried information, follow threads, and identify patterns — also a moral mirror for clients, reflecting uncomfortable truths back at them.",
   "augmentations": "Cat ears — matte black, geneware (cosmetic/functional, enhanced directional hearing); scleral tattooing — indigo (cosmetic); subvocal recorder implanted in throat (professional tool, unlicensed); basic optical overlay for photo documentation (licensed)",
   "daily_life": "No fixed hours — cases dictate the schedule; typically starts the day reviewing overnight surveillance captures with bad synthetic coffee, spends afternoons in the field, and writes case notes until early morning; leaves the office most nights to walk the district, claiming it's professional habit.",
-  "affiliation": "Freelance; occasional contract work for GLMZ Metro Police (arms-length), private clients across Tiers 2-3",
+  "affiliation": "Freelance; occasional contract work for Arcturus Defense Solutions — Civil Security Division (arms-length), private clients across Tiers 2-3",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -351,5 +351,6 @@
         "Japanese": 0.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

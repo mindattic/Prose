@@ -28,4 +28,6 @@ public class ConsumerGoodData : ICanonEntity
     [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Anchor NPC and community hub. She knows everyone in the market, remembers everything, and will share information only if she trusts you — or if you buy something first. Excellent quest-giver for neighborhood-level problems. Source of gossip, unofficial dispute arbiter, and the person locals go to when they need advice they can't pay for.",
   "augmentations": "Basic optical implant (left eye, gold-tinted). Subdermal temperature regulators in her hands — a practical purchase for working with hot and cold fermentation environments.",
   "daily_life": "Arrives at the market two hours before opening to tend her crocks, taste-test batches, and leave her E.L.F. offering. Spends the day selling fermented vegetables, gut-health tinctures, and small jars of kimchi-adjacent preparations she calls 'Volkov's Fire' after her paternal grandmother's recipe. Closes at dusk and spends an hour reconciling her ledger by hand.",
-  "affiliation": "The Oxidian Market Vendors Guild (dues-paying member, former committee treasurer)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -341,5 +341,6 @@
         "Ecuadorian": 0.3
       }
     }
-  }
+  },
+  "tier": "2"
 }

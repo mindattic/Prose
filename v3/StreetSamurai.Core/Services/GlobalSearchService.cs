@@ -35,8 +35,7 @@ public class GlobalSearchService
     private readonly ContractRepository contracts;
     private readonly WorldbuildingDocRepository documents;
     private readonly LabSpecimenRepository labSpecimens;
-    private readonly CeramicManRepository ceramicMen;
-    private readonly WastelandEntityRepository wastelandEntities;
+    private readonly FlyoverEntityRepository flyoverEntities;
     private readonly PsionicRepository psionics;
 
     private List<SearchIndexEntry> index = [];
@@ -56,7 +55,7 @@ public class GlobalSearchService
         VocabularyRepository vocabulary, QuoteRepository quotes,
         NewsRepository news, ContractRepository contracts,
         WorldbuildingDocRepository documents, LabSpecimenRepository labSpecimens,
-        CeramicManRepository ceramicMen, WastelandEntityRepository wastelandEntities,
+        FlyoverEntityRepository flyoverEntities,
         PsionicRepository psionics)
     {
         this.characters = characters; this.synthetics = synthetics;
@@ -72,7 +71,7 @@ public class GlobalSearchService
         this.vocabulary = vocabulary; this.quotes = quotes;
         this.news = news; this.contracts = contracts;
         this.documents = documents; this.labSpecimens = labSpecimens;
-        this.ceramicMen = ceramicMen; this.wastelandEntities = wastelandEntities;
+        this.flyoverEntities = flyoverEntities;
         this.psionics = psionics;
 
         characters.OnItemSaved += _ => Invalidate();
@@ -101,8 +100,7 @@ public class GlobalSearchService
         contracts.OnItemSaved += _ => Invalidate();
         documents.OnItemSaved += _ => Invalidate();
         labSpecimens.OnItemSaved += _ => Invalidate();
-        ceramicMen.OnItemSaved += _ => Invalidate();
-        wastelandEntities.OnItemSaved += _ => Invalidate();
+        flyoverEntities.OnItemSaved += _ => Invalidate();
         psionics.OnItemSaved += _ => Invalidate();
     }
 
@@ -215,7 +213,15 @@ public class GlobalSearchService
         foreach (var c in characters.GetAll())
             entries.Add(new(c.Id, "character", c.Name, c.Role, c.Description, c.Tags, "/characters"));
         foreach (var s in synthetics.GetAll())
-            entries.Add(new(s.Id, "synthetic", s.Name, s.Classification, $"{s.Description} {s.ObservedBehavior}", s.Tags, "/synthetics"));
+        {
+            var isCeramic = s.Type == "ceramic_man";
+            entries.Add(new(s.Id, isCeramic ? "ceramic-man" : "synthetic", s.Name,
+                isCeramic ? s.CurrentRole ?? "" : s.Classification,
+                isCeramic
+                    ? $"{s.OperatingHistory} {s.BehavioralNotes} {s.DiplomaticSpecialty}"
+                    : $"{s.Description} {s.ObservedBehavior}",
+                s.Tags, isCeramic ? "/ceramic-men" : "/synthetics"));
+        }
         foreach (var c in corponations.GetAll())
             entries.Add(new(c.Id, "corponation", c.Name, c.Sector, $"{c.FoundingStory} {c.KeyDetail}", c.Tags, "/corps"));
         foreach (var d in districts.GetAll())
@@ -264,10 +270,8 @@ public class GlobalSearchService
             entries.Add(new(d.Id, "document", d.Title, d.Category, d.Body, d.Tags, "/documents"));
         foreach (var s in labSpecimens.GetAll())
             entries.Add(new(s.Id, "lab-specimen", s.Name, s.Classification, $"{s.PhysicalDescription} {s.BehavioralProfile} {s.PitiableQualities}", s.Tags, "/specimens"));
-        foreach (var c in ceramicMen.GetAll())
-            entries.Add(new(c.Id, "ceramic-man", c.Name, c.CurrentRole, $"{c.OperatingHistory} {c.BehavioralNotes} {c.DiplomaticSpecialty}", c.Tags, "/ceramic-men"));
-        foreach (var w in wastelandEntities.GetAll())
-            entries.Add(new(w.Id, "wasteland-entity", w.Name, w.Classification, $"{w.PhysicalDescription} {w.BehavioralProfile} {w.HumanRemnants}", w.Tags, "/wasteland"));
+        foreach (var w in flyoverEntities.GetAll())
+            entries.Add(new(w.Id, "flyover-entity", w.Name, w.Classification, $"{w.PhysicalDescription} {w.BehavioralProfile} {w.HumanRemnants}", w.Tags, "/flyover"));
         foreach (var p in psionics.GetAll())
             entries.Add(new(p.Id, "psionic", p.Name, p.Classification, $"{p.Mechanism} {p.Abilities} {p.SideEffects}", p.Tags, "/psionics"));
 

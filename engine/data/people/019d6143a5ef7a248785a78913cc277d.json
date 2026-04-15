@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information node — he sees who rides at what hour. Reluctant witness. Potential quest conduit for anything that passes through the transit system. Local color for night-city atmosphere.",
   "augmentations": "Secondhand geneware: silver bioluminescent irises. Basic neural interface for Ferrogate's operator systems (company-issued, technically owned by Ferrogate).",
   "daily_life": "Sleeps from roughly 07:00 to 15:00, eats a large meal before his 18:00 check-in at the Geartown depot, runs the Line 7 night circuit until 06:00.",
-  "affiliation": "Ferrogate Transit (contracted operator, Tier 2 classification)",
+  "affiliation": "Helix Biosystems (mid-level night)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -329,5 +329,6 @@
         "Scottish": 0.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

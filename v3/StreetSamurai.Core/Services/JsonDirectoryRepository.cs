@@ -390,6 +390,15 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
     public static string Slugify(string name) =>
         SlugRegex().Replace(StripDiacritics(name.ToLowerInvariant().Trim()), "_").Trim('_');
 
+    /// <summary>URL-safe hyphenated slug derived from a display name (e.g. "Kyle Ellen Corbin-Vasik" → "kyle-ellen-corbin-vasik").</summary>
+    public static string ToSlug(string name) =>
+        SlugRegex().Replace(StripDiacritics(name.ToLowerInvariant().Trim()), "-").Trim('-');
+
+    /// <summary>Find an entity whose name slug matches the given slug string.</summary>
+    public T? GetBySlug(string slug) =>
+        string.IsNullOrWhiteSpace(slug) ? null
+        : GetAll().FirstOrDefault(item => ToSlug(_nameSelector(item)) == slug);
+
     private static string StripDiacritics(string text)
     {
         var normalized = text.Normalize(System.Text.NormalizationForm.FormD);

@@ -30,7 +30,33 @@
     "Safe houses in neighborhoods where augmentation is rare and Purists are welcomed"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Bone Parish",
+      "type": "rival",
+      "reason": "Augmentation trafficking is Pure Hand heresy; the Parish is a frequent target"
+    },
+    {
+      "name": "The Coffin Nails",
+      "type": "rival",
+      "reason": "Same ideological opposition to augmentation harvesting"
+    },
+    {
+      "name": "The Glass Ladder",
+      "type": "rival",
+      "reason": "The Pure Hand views corporate espionage as an extension of corporate corruption"
+    },
+    {
+      "name": "The Reclaimed",
+      "type": "ally",
+      "reason": "Shared anti-corporate ideology creates operational alignment despite theological differences"
+    },
+    {
+      "name": "The Burnside Guard",
+      "type": "ally",
+      "reason": "Neighborhood protection goals align in some districts; tactical cooperation has occurred"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The Pure Hand has developed a new rejection agent that works on neural interfaces — causing psychosis in the augmented",
@@ -66,5 +92,7 @@
     "Slagworks Industrial",
     "Wings & Wreckage",
     "GLMZ"
-  ]
+  ],
+  "size_class": "large",
+  "known_members": []
 }

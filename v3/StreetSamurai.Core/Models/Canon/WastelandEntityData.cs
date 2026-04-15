@@ -4,18 +4,17 @@ using StreetSamurai.Core.Interfaces;
 namespace StreetSamurai.Core.Models.Canon;
 
 /// <summary>
-/// A wasteland entity — the things that moved into the empty spaces when humanity left.
-/// Abandoned factories, flooded suburbs, collapsed malls, hollow church spires,
-/// the post-industrial American interior left to rot when the last jobs relocated to the
-/// megacity corridors. These creatures don't defy science; they define it.
-/// They are what biology and chemistry and radiation and abandoned technology
-/// produce when given a generation or two without oversight.
+/// A Flyover entity — the things that moved back in when humanity moved to the cities.
+/// Recovering nature, escaped lab specimens, emergent species, feral machines,
+/// and the biological experiments of a century of unchecked rewilding across
+/// the 78% of the continent that the megacities don't occupy.
+/// The Flyover is not a wasteland. It is what the land becomes when people leave.
 /// </summary>
-public class WastelandEntityData : ICanonEntity
+public class FlyoverEntityData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
-    [JsonPropertyName("type")] public string Type { get; set; } = "wasteland_entity";
+    [JsonPropertyName("type")] public string Type { get; set; } = "flyover_entity";
     [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
     [JsonPropertyName("classification")] public string Classification { get; set; } = "";
     [JsonPropertyName("origin")] public string Origin { get; set; } = "";
@@ -29,4 +28,6 @@ public class WastelandEntityData : ICanonEntity
     [JsonPropertyName("glmz_migration_risk")] public string GlmzMigrationRisk { get; set; } = "";
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

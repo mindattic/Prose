@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Surveillance Operator, GLMZ Metro Police — Digital Observation Unit",
+  "role": "Surveillance Operator, Arcturus Defense Solutions — Civil Security Division — Digital Observation Unit",
   "age": 52,
   "status": "active",
   "location": "The Rampart, GLMZ, near Ashland and Chicago Ave",
@@ -61,7 +61,7 @@
   "narrative_function": "Information broker — he has seen things; oracle-type figure who can pull footage, identify faces, track movement patterns; moral weight of the watcher who has normalized surveillance; source of information that comes with a complicated ethical price tag.",
   "augmentations": "Full iris replacement — compound tactical lenses, prismatic iridescence, multi-spectrum optical processing; neural feed-buffer implant (allows passive monitoring of up to 24 feeds simultaneously without conscious focus); mild anti-fatigue somatic regulator (Metro-issue for extended operators).",
   "daily_life": "He works a long swing shift in the Rampart's observation deck, monitoring feeds across the Shelf, Gage Circuit, and Blackpipe Corridor; eats at his desk, takes a twenty-minute walking break at 03:00 when the feeds go quiet, and spends it talking to the Watchers.",
-  "affiliation": "GLMZ Metro Police — Digital Observation Unit",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -320,5 +320,6 @@
         "Lebanese": 5
       }
     }
-  }
+  },
+  "tier": "1"
 }

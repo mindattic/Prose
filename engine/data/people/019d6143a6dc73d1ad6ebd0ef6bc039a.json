@@ -63,7 +63,7 @@
   "narrative_function": "Local color, information source about hyperlane conditions and what's moving between districts, potential guide for people who need to move without leaving a record",
   "augmentations": "Cosmetic patterned irises (concentric amber rings, low quality). No other augmentations.",
   "daily_life": "Sorrel picks up day-labor freight-walking contracts through informal networks at transit hubs, moving goods along routes where automated systems are unreliable or too expensive. She sleeps in transit waiting rooms, under platform overhangs, or in the company of other walkers when she can find them.",
-  "affiliation": "None; loosely connected to a shifting network of seasonal freight-walkers",
+  "affiliation": "None; loosely connected to a shifting network of seasonal freight-walkers; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -244,5 +244,6 @@
         "Nepali": 1.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

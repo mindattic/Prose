@@ -9,10 +9,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Forensic evidence handler and chain-of-custody specialist, GLMZ Metro Police",
+  "role": "Forensic evidence handler and chain-of-custody specialist, Arcturus Defense Solutions — Civil Security Division",
   "age": 52,
   "status": "active",
-  "location": "Fort Anchor, Metro Police Central Evidence Repository, near Halsted and Division",
+  "location": "Fort Anchor, Arcturus Civil Security Central Evidence Repository, near Halsted and Division",
   "description": "Ash Lindström is a sturdy, meticulous woman with iron-grey locs she keeps pinned up during work hours and lets down everywhere else, and deep brown skin that has picked up the particular pallor of someone who spends most of their life under artificial light. Her hands are always gloved when she is working and bare when she isn't — a transition she makes with a deliberateness that people who know her recognize as the boundary between Ash Lindström the professional and Ash Lindström the person. She has no cosmetic modifications and regards them with neither judgment nor interest; the question simply never came up for her.\n\nShe has worked Metro's Central Evidence Repository at Fort Anchor for twenty-three years and has survived five departmental reorganizations, three chiefs of police, two corruption purges, and one literal flood that compromised fourteen meters of archival shelving. She knows the repository the way surgeons know bodies — its logic, its failures, its places where things disappear and where they don't. She is the person Metro detectives call when they need to know if something was ever there. She is also, quietly, the person who notices when something that should be there isn't, and she keeps her own records because she stopped trusting Metro's in her eighth year.",
   "psychology": {
     "facet_weights": {
@@ -63,7 +63,7 @@
   "narrative_function": "Evidence gatekeeper and institutional memory — the person who knows what Metro has, what it had, and what has gone missing. Quest-critical for any story involving forensic evidence, police corruption, or disappeared case materials.",
   "augmentations": "Enhanced tactile sensitivity implant in both hands — originally installed for precise material identification, now standard for her work. Reading enhancement overlay (heads-up document display, low-profile). Nothing cosmetic.",
   "daily_life": "Arrives at the repository before any other staff; processes incoming evidence logs; conducts integrity checks on stored items on a rotating schedule she designed herself; leaves precisely when her shift ends, no earlier, no later.",
-  "affiliation": "GLMZ Metro Police — Central Evidence Repository, Fort Anchor",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -217,9 +217,9 @@
     ],
     "visible_augmentations": "None visible externally. She wears nitrile or latex gloves during all evidence work; the gloves are removed with deliberate ceremony when work ends. A faint, nearly imperceptible crystalline shimmer at the corner of her right eye when it catches light—her reading enhancement overlay at rest.",
     "posture_movement": "Stands with precise posture; moves with minimal wasted motion, each gesture intentional and economical. Her hands are her most expressive feature—they move with surgical precision during work. Off-duty, she carries herself with quiet authority but no apparent tension.",
-    "clothing_style": "Professional but worn-in: grey or navy trousers with deep pockets, button-up shirts in neutral tones (charcoal, cream, pale blue), sensible non-slip shoes with reinforced arches. A Metro Police ID lanyard worn outside her shirt, worn and familiar with her. No jewelry. Off-duty: the same practical aesthetic, comfortable black jeans, well-maintained leather jacket (scuffed, vintage, cared-for). She dresses like someone who doesn't think about clothes but respects the tool-like function of fabric."
+    "clothing_style": "Professional but worn-in: grey or navy trousers with deep pockets, button-up shirts in neutral tones (charcoal, cream, pale blue), sensible non-slip shoes with reinforced arches. A Arcturus Civil Security ID lanyard worn outside her shirt, worn and familiar with her. No jewelry. Off-duty: the same practical aesthetic, comfortable black jeans, well-maintained leather jacket (scuffed, vintage, cared-for). She dresses like someone who doesn't think about clothes but respects the tool-like function of fabric."
   },
-  "image_prompt": "Ash Lindström, 168cm tall, sturdy compact frame with broad shoulders, standing in precise posture. Southeast Asian-dominant mixed heritage face with sharp angular cheekbones, deep warm brown eyes with epicanthic fold, warm medium-deep brown skin with golden undertones and pallid LED-exposure cast. Iron-grey locs with dark undertones, thick and full, pinned in tight crown. Calloused hands with surgical precision. Wearing charcoal button-up shirt, grey trousers with deep pockets, sensible shoes, Metro Police ID lanyard worn outside shirt. Minimal makeup, fastidiously groomed. Small pale scar inside left wrist. Faint crystalline shimmer visible at corner of right eye. Professional neo-noir evidence handler aesthetic. Cool indoor lighting, focus on hands and intent expression. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Ash Lindström, 168cm tall, sturdy compact frame with broad shoulders, standing in precise posture. Southeast Asian-dominant mixed heritage face with sharp angular cheekbones, deep warm brown eyes with epicanthic fold, warm medium-deep brown skin with golden undertones and pallid LED-exposure cast. Iron-grey locs with dark undertones, thick and full, pinned in tight crown. Calloused hands with surgical precision. Wearing charcoal button-up shirt, grey trousers with deep pockets, sensible shoes, Arcturus Civil Security ID lanyard worn outside shirt. Minimal makeup, fastidiously groomed. Small pale scar inside left wrist. Faint crystalline shimmer visible at corner of right eye. Professional neo-noir evidence handler aesthetic. Cool indoor lighting, focus on hands and intent expression. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 71.9,
     "Hispanic/Latin American": 20.2,
@@ -254,5 +254,6 @@
         "Mozambican": 1.3
       }
     }
-  }
+  },
+  "tier": "1"
 }

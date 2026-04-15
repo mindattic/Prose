@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Forensic Technician, GLMZ Metro Police",
+  "role": "Forensic Technician, Arcturus Defense Solutions — Civil Security Division",
   "age": 52,
   "status": "active",
   "location": "Fort Anchor, Forensic Sciences Unit, Level 7, near Western and Chicago Ave",
-  "description": "Farid Sengupta is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nFarid Sengupta has worked Metro Police forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
+  "description": "Farid Sengupta is a slight man who has lost the battle with his posture and accepted it, curving slightly forward as if permanently examining something just below his eyeline. His skin is a warm medium brown, hair gone to silver-white and kept in a neat, very short fade, and he wears magnification lenses over his natural eyes — actual lenses in frames he has had repaired seven times rather than upgrade to ocular implants, because he does not trust surgeons with his eyes, a conviction he holds with irrational but absolute certainty. He has enhanced olfactory augmentation, which is the one mod he consented to readily because it directly serves his work: he can smell chemical compounds at parts-per-billion concentrations, and has an informal reputation for diagnosing cause of death before the toxicology panel comes back.\n\nFarid Sengupta has worked Arcturus Civil Security forensics for twenty-six years and has achieved a specific kind of institutional invisibility — he is everywhere in the building and somehow always slightly forgotten when promotions are discussed. He does not appear to mind, though this appearance is not entirely accurate. He is meticulous to a degree that colleagues find either reassuring or maddening depending on whether they need results today or results that are correct. He has a running argument with the evidence chain management system that has lasted three years and will likely outlast them both.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -56,13 +56,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "The fourteen-year-old case re-examination has produced a finding he can no longer sit on — and he needs someone with investigative resources who is not Metro Police command.",
+    "The fourteen-year-old case re-examination has produced a finding he can no longer sit on — and he needs someone with investigative resources who is not Arcturus Civil Security command.",
     "A piece of current evidence has been altered between collection and his analysis, and he knows it, and has documented it, and is deciding what to do with that documentation."
   ],
-  "narrative_function": "Information source for forensic details, cause of death, trace evidence, chemical analysis. Can surface buried evidence or reinterpret old cases. An honest broker within the institution — his findings cannot easily be pressured, which makes him valuable and occasionally inconvenient to Metro Police command.",
+  "narrative_function": "Information source for forensic details, cause of death, trace evidence, chemical analysis. Can surface buried evidence or reinterpret old cases. An honest broker within the institution — his findings cannot easily be pressured, which makes him valuable and occasionally inconvenient to Arcturus Civil Security command.",
   "augmentations": "Enhanced olfactory system — Helix Biosystems nasal augment, detects chemical compounds at parts-per-billion, installed 2183. Magnification frames (non-augmented, physical lenses — deliberately chosen over ocular implants). Mild subdermal temperature regulation implant, medical necessity.",
   "daily_life": "Arrives at Level 7 forensics lab at 0730, processes the overnight evidence queue, spends the bulk of each day at his workstation or in the cold room, and writes reports in a prose style that his supervisors consider unnecessarily literary. Brings his lunch every day in the same worn container. Leaves at 1700 exactly unless actively mid-analysis, in which case he stays until it's done.",
-  "affiliation": "GLMZ Metro Police, Forensic Sciences Unit",
+  "affiliation": "Arcturus Defense Solutions (mid-level forensic technician)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -205,7 +205,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Joined Metro Police Forensic Sciences Unit as junior technician",
+      "event": "Joined Arcturus Civil Security Forensic Sciences Unit as junior technician",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -325,5 +325,6 @@
         "Cuban": 7
       }
     }
-  }
+  },
+  "tier": "3"
 }

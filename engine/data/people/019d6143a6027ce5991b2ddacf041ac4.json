@@ -92,7 +92,7 @@
   "narrative_function": "Ember is the scientific lens through which the Behemoth horror unfolds. Her research transforms the survival horror from 'monsters in the dark' to something more complex and more disturbing — the discovery that the things they're fighting might be intelligent, might be sentient, might deserve consideration that the survival economy cannot afford to give them.",
   "augmentations": "Bio-scanner implant in left palm — reads cellular composition, toxicity levels, and biological markers on contact. Enhanced visual cortex for microscopic analysis without equipment. Medical nanite reservoir in right forearm — limited-use emergency healing agents for field trauma. Chemical analysis olfactory enhancer — detects Behemoth biological markers at concentrations below normal human threshold.",
   "daily_life": "Mornings in the field lab — reviewing samples, updating behavioral models, maintaining medical supplies. Accompanies raids as field medic, collecting samples opportunistically. Afternoons split between crew medical checks and research. Evenings she writes — detailed research notes in a format that mimics academic papers nobody will publish. Eats irregularly unless Madre intervenes. Sleeps in the barn because the commute to her bunk wastes twenty minutes she could spend on analysis.",
-  "affiliation": "Red Lantern",
+  "affiliation": "Helix Biosystems (mid-level field medic and behemoth biosurveillance specialis)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -269,5 +269,6 @@
         "Mandarin Northern": 0.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

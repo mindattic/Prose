@@ -60,7 +60,7 @@
   "narrative_function": "Information source — she knows everyone in the Ferment Quarter and remembers everything; social lubricant for getting players into scenes; occasional quest giver when something threatens the club or the neighborhood",
   "augmentations": "Rust-colored cat tail (cosmetic, geneware); minor vocal clarity implant in larynx (she calls it insurance)",
   "daily_life": "Writes material in the mornings, usually in a back booth at the Lye & Lampblack before it opens; spends afternoons handling the practical administration of her own career with barely concealed contempt; performs four nights, sleeps erratically, reads constantly.",
-  "affiliation": "Resident performer at Lye & Lampblack; no collective affiliation; nominally independent",
+  "affiliation": "Resident performer at Lye & Lampblack; no collective affiliation; nominally independent; The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -246,5 +246,6 @@
         "Czech": 0.7
       }
     }
-  }
+  },
+  "tier": "1"
 }

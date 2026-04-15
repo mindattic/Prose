@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Metro Police forensic technician, evidence and scene analysis",
+  "role": "Arcturus Defense Solutions Civil Security forensic technician, evidence and scene analysis",
   "age": 47,
   "status": "active",
   "location": "Fort Anchor, processing labs — lives in Hamtramck Enclave, near Western and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "Information source on crime scenes and forensic details, moral anchor within the police institution, potential quest giver when evidence tells a story the detectives are ignoring",
   "augmentations": "Reactive chromatic irises (geneware — blood-chemistry linked), olfactory enhancement implant (detects trace compounds at concentrations below standard human threshold), fingertip micro-analysis filaments (retractable, reads surface chemistry on contact)",
   "daily_life": "Arrives at Fort Anchor before most day-shift officers, processes evidence from overnight callouts, writes reports in a precise longhand he then scans, and leaves exactly at the end of his contracted hours unless a case is genuinely interesting, in which case he stays until he understands it.",
-  "affiliation": "GLMZ Metro Police, Forensic Analysis Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Analysis Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -297,5 +297,6 @@
         "Swiss German": 2.2
       }
     }
-  }
+  },
+  "tier": "3"
 }

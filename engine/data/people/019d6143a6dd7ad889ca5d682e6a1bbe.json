@@ -61,7 +61,7 @@
   "narrative_function": "Access point to underground networks and tunnel geography; can locate people who don't want to be found if they attend underground events; their events are neutral ground where different factions mix; source of information about Deepwell's sub-level infrastructure",
   "augmentations": "Color-shift hair (amber-to-blue cycle); subdermal haptic receiver arrays along both forearms and palms (allows direct tactile interface with audio equipment); minor cochlear enhancement for extended frequency range",
   "daily_life": "Sleeps until mid-afternoon, spends evenings in the tunnels setting up or performing, spends the small hours after events walking the city with their recorder harvesting sounds. Eats irregularly from street stalls and has a specific Ferrogate Transit junction box they have been leaving rice paper offerings at for two years.",
-  "affiliation": "Independent; connected to an informal network of tunnel-rave organizers called the Deepwell Sound Collective",
+  "affiliation": "Independent; connected to an informal network of tunnel-rave organizers called the Deepwell Sound Collective; The Third Rail",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -241,5 +241,6 @@
         "Cameroonian": 0.8
       }
     }
-  }
+  },
+  "tier": "1"
 }

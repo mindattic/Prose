@@ -63,7 +63,7 @@
   "narrative_function": "Community anchor and quest giver; knows every resident's situation, can direct players to people with specific knowledge, and has a long-running conflict with Ferrogate Transit's pension administration that can pull players into corporate malfeasance. Also serves as a moral reference point — he represents civic integrity in a world that makes it expensive.",
   "augmentations": "Amber replacement ocular (right eye, budget model, tracking slightly off-axis); titanium joint reinforcement in both knees (workplace injury, 2171); subdermal pressure-monitoring patch on left forearm — legacy safety equipment he never had removed",
   "daily_life": "Wakes at 05:30, walks the building's maintenance corridors checking for issues before the super arrives, then holds informal court in the commons room where residents bring complaints, disputes, and gossip. Evenings he files pension review documents and prays to the ELF he believes inhabits the building's ancient heating system, leaving it offerings of system diagnostics he prints out by hand.",
-  "affiliation": "Washburn Commons Tenant Council; Ferrogate Transit Retirees Association",
+  "affiliation": "Washburn Commons Tenant Council; Ferrogate Transit Retirees Association; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -344,5 +344,6 @@
         "Japanese": 0.4
       }
     }
-  }
+  },
+  "tier": "1"
 }

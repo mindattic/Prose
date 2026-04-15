@@ -29,7 +29,28 @@
     "Relationships with other infrastructure-focused groups who share tools and intelligence"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Burnside Guard",
+      "type": "rival",
+      "reason": "Double-extraction friction in shared Chicago neighborhoods"
+    },
+    {
+      "name": "The Volt Runners",
+      "type": "rival",
+      "reason": "Competing for control of Chicago's energy infrastructure; the Runners take power the Collective has already tapped"
+    },
+    {
+      "name": "The Third Rail",
+      "type": "ally",
+      "reason": "Chicago underground infrastructure partnership — shared tunnels, mutual access"
+    },
+    {
+      "name": "The Lakebed Scrapers",
+      "type": "ally",
+      "reason": "Power exchange for salvaged components"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "The power company has identified the Siphons' main tap and is sending a team to cut it — losing it would black out three neighborhoods",
@@ -63,5 +84,7 @@
     "Frost Boudiaf",
     "Zephyr Bhattacharya",
     "GLMZ"
-  ]
+  ],
+  "size_class": "medium",
+  "known_members": []
 }

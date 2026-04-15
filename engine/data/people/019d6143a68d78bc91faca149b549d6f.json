@@ -63,7 +63,7 @@
   "narrative_function": "Local color and neighborhood anchor — he knows everyone who passes through the Oxidian Market by sight. Useful as an information source about who's been around, what's changed, and who's been asking questions. Can serve as a low-key quest giver if something threatens his stall or his regulars.",
   "augmentations": "Thermal palm implant in right hand for temperature-sensing fermentation cultures. No cosmetic mods — he considers them frivolous spending.",
   "daily_life": "Arrives at his stall at 04:30 to tend fermentation vats and prep the day's grain base; works until the last customer leaves, usually around 22:00, then counts receipts and argues with his shrine.",
-  "affiliation": "Oxidian Market Vendors Guild (paying member, low standing due to dues arrears)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -332,5 +332,6 @@
         "Afghan Dari": 0.7
       }
     }
-  }
+  },
+  "tier": "2"
 }

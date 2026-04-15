@@ -63,7 +63,7 @@
   "narrative_function": "Mobile information source — they move through multiple districts daily and overhear an enormous amount; potential quest hook regarding Ferrogate labor disputes; a quiet, consistent presence who can place players at specific locations or provide transit access.",
   "augmentations": "Color-shifting geneware hair stripe (mood-reactive, involuntary); subdermal circuit tattoos left forearm (cosmetic only); standard Ferrogate-issue neural throttle-link for tram interface (employer-owned, logged).",
   "daily_life": "Five shifts a week, 06:00–14:30, running the same 22-kilometer loop through Geartown's industrial fringe into the gleaming brutalism of Meridian Core and back; spends off-hours in the dorm's shared workshop building miniature mechanical models.",
-  "affiliation": "Ferrogate Transit (Line 14 Operator, Tier 2); loosely connected to the Ferrogate Workers' Mutual, an informal union-adjacent organizing body",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -249,5 +249,6 @@
         "Papua New Guinean": 8
       }
     }
-  }
+  },
+  "tier": "3"
 }

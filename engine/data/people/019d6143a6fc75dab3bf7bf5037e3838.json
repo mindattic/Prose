@@ -62,7 +62,7 @@
   "narrative_function": "Local color and information broker at transit level — knows who passes through, remembers faces, can be cultivated as a contact. Potential quest giver for something he witnessed at the checkpoint that he cannot officially report. Access point for travel documentation questions.",
   "augmentations": "Cosmetic bioluminescent freckles (blue, pulse-reactive to heart rate — installed age 19, regretted). Standard Ferrogate-issue retinal scanner overlay (right eye, provided by employer). No other augmentations.",
   "daily_life": "Works the 0600-1400 shift at Gate Four, processing commuter traffic, flagging anomalous transit passes, occasionally detaining people for secondary screening in a small room he finds deeply depressing. Eats lunch at the Kessler mezzanine food stalls. Spends evenings in Avon Curve where he rents a studio, reading physical books about urban history.",
-  "affiliation": "Ferrogate Transit Security, Kessler Interchange Station",
+  "affiliation": "Ferrogate Transit Security, Kessler Interchange Station; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -198,7 +198,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Hired as Ferrogate Transit Security checkpoint operator after two years of unsuccessful applications to Metro Police Academy",
+      "event": "Hired as Ferrogate Transit Security checkpoint operator after two years of unsuccessful applications to Arcturus Civil Security Academy",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -296,5 +296,6 @@
         "Mexican": 4.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -63,7 +63,7 @@
   "narrative_function": "Mobile observer — Dagny crosses between districts constantly and sees who travels where, when, in what condition. Reliable institutional knowledge about Ferrogate's internal politics. Potential emergency-situation anchor. Can provide transit-related information and serve as a checkpoint encounter.",
   "augmentations": "Color-shift hair geneware (blue/violet, emotional-reactive — they did not know it was emotional-reactive when they bought it); patterned iris mod (concentric amber rings, older consumer grade); neural latency dampener integrated into their operator jack — standard Ferrogate issue, used for tram interface",
   "daily_life": "Reports to Kessler depot at 0530, completes pre-run checks with methodical thoroughness, runs the route through peak hours, takes a mandated break they use entirely for eating and doing nothing else, runs the evening route, files incident reports before leaving. Stops at the same food stall every single day.",
-  "affiliation": "Ferrogate Transit (Local Operators Guild, Shop 7); informal mentor within the depot",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator (tram line)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -315,5 +315,6 @@
         "Maya": 0.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

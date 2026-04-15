@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Internal Affairs Investigator, GLMZ Metro Police",
+  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
   "age": 56,
   "status": "active",
   "location": "Lincoln Spear",
-  "description": "Cipher Magnúsdóttir looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality — not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he's used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Metro Police internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when — especially when — the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
+  "description": "Cipher Magnúsdóttir looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality — not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he's used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Arcturus Civil Security internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when — especially when — the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -64,7 +64,7 @@
   "narrative_function": "Institutional threat or ambiguous authority. May be investigating a character, or may be the person a character turns to when other doors close. His investigations have a momentum independent of the people in them — once started, he is very hard to stop.",
   "augmentations": "Retinal information overlay (Metro standard). Hip replacement (biological, he insists on describing it as such). Nothing else — he is suspicious of augmentation that could be remotely accessed.",
   "daily_life": "Office at Lincoln Spear, sixth floor, 0800-1900 on most days. Longer when a case is moving. Eats lunch at his desk. Takes a precise thirty-minute walk along the Lincoln Spear promenade at 1300 regardless of weather or workload — he has not missed it in eleven years.",
-  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2168: Joined Metro Police",
+      "event": "2168: Joined Arcturus Civil Security",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -349,5 +349,6 @@
         "Mexican": 4.8
       }
     }
-  }
+  },
+  "tier": "3"
 }

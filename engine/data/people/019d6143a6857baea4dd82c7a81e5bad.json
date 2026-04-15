@@ -63,7 +63,7 @@
   "narrative_function": "Mobile information source — he sees everything that moves through the city at rail level; accidental witness; conduit for moving characters between districts; represents the invisible labor holding the city together",
   "augmentations": "Patterned iris mod (geometric rotating pupils, cosmetic only); standard Ferrogate neural link for cab integration (mandatory, employer-issued)",
   "daily_life": "Reports to Deepwell Station at 06:00, runs his loop until 17:00, eats a pressed sandwich from the platform vendor, attends union meetings on Tuesdays, goes home to a single-room apartment in Copperhead where he reads until he falls asleep",
-  "affiliation": "Ferrogate Transit (Union Local 19)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -258,5 +258,6 @@
         "Vietnamese": 9.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

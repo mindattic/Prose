@@ -60,7 +60,7 @@
   "narrative_function": "Resource and risk — can provide medications, information about pharmaceutical compounds, and insight into Helix Biosystems' community-facing operations. The tension between his employment and his conscience makes him a useful dramatic pressure point. Potential informant, unwilling or otherwise.",
   "augmentations": "Decorative cat ears (charcoal grey — cosmetic geneware). Mild visual acuity enhancement for fine-print work. Standard Helix employee data-access implant (company-issued, company-monitored).",
   "daily_life": "Arrives early to run inventory checks — partly professional habit, partly ensuring his parallel inventory stays hidden. Manages the dispensary counter for eight to ten hours. Eats at his workstation. Goes home and plays an offline instrumental composition program until he's calm enough to sleep.",
-  "affiliation": "Helix Biosystems (employed) — covert ties to an informal network of community pharmacists doing similar off-ledger work",
+  "affiliation": "Vellichor Institute (senior licensed pharmacist at a helix biosystems communit)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -336,5 +336,6 @@
         "Russian": 3.2
       }
     }
-  }
+  },
+  "tier": "4"
 }

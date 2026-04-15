@@ -61,7 +61,7 @@
   "narrative_function": "Reliable resource character — can repair, modify, or assess almost any ground vehicle or mechanical system. Access to Geartown's informal information network. Potential fence for mechanical components, willing or otherwise.",
   "augmentations": "Salvage-built retractable reinforced thumb claw, right hand. Secondhand replacement optic, left eye (brown, slightly wrong shade). Subdermal vibration sensor in both palms — lets him diagnose engine problems by feel.",
   "daily_life": "Opens at seven, closes when the job is done, which is sometimes midnight. Eats lunch from a noodle cart two doors down, the same cart every day. Argues with the Grease Ghost shrine on bad days. Drinks one beer at the Ferment Quarter on Friday nights, home by ten.",
-  "affiliation": "Independent; Geartown Mechanics Guild (dues-paying member, rarely attends meetings)",
+  "affiliation": "Independent; Geartown Mechanics Guild (dues-paying member, rarely attends meetings); The Neon Vipers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -308,5 +308,6 @@
         "Sudanese": 0.5
       }
     }
-  }
+  },
+  "tier": "2"
 }

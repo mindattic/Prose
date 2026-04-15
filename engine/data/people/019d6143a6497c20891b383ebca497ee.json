@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information source who has witnessed dozens of incidents on the overnight lines without reporting them; access point to the deep transit network and its unofficial rhythms; potential witness or reluctant ally for anything that happens on or near the Blackpipe Corridor",
   "augmentations": "Gradient iris modification (amber-to-silver, cosmetic). Fatigue-suppression implant in the brainstem, standard-issue Ferrogate Transit operator equipment — she distrusts it and uses it less than regulation requires.",
   "daily_life": "Reports to Deepwell Station at 22:00, drives the Blackpipe Corridor loop four times before dawn, logs maintenance flags on the route, and is off the platform by 06:30. She sleeps from 08:00 to 15:00 in a transit worker's residential block near Jefferson Switch, then spends her evenings at a gym or reading physical-format books she collects from the Burnished Market.",
-  "affiliation": "Ferrogate Transit (employee, Tier 2 wage bracket)",
+  "affiliation": "Ferrogate Transit (mid-level ferrogate transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -301,5 +301,6 @@
         "Japanese": 3.6
       }
     }
-  }
+  },
+  "tier": "3"
 }

@@ -1,0 +1,18 @@
+{
+  "id": "98084d06c40e45598e6f7ec336c7337e",
+  "name": "Eat it!",
+  "type": "subsidiary",
+  "parent_corponation": "Libation Corporation",
+  "tier": "1",
+  "line_of_business": "Subsistence-level nutrition dispensary for Tier 1 citizens and Citizen Benefit recipients",
+  "description": "Eat it! is the terminal end of Libation Corporation's tier-stratified food empire. The name was chosen by a brand consultant who argued that unambiguous functionality was more honest than aspirational branding at this segment, and who was correct. There is no ambiguity about what Eat it! is. It dispenses food. You eat it.\n\nAn Eat it! outlet is not a restaurant. There is no seating. There is a wall-mounted Citizen ID scanner, a payment terminal accepting only Citizen Credit (cash is not accepted at Eat it! — a design choice that forces every transaction to be logged to a Citizen ID, making Eat it! locations one of the GLMZ's most comprehensive low-tier citizen tracking systems), a meal selection interface with between four and seven options depending on supply availability, and a dispensary slot from which the meal emerges in wax-composite packaging. The transaction takes 45 seconds on average. The entire interaction is automated. No staff visible to patrons. Cleaning and restocking is performed by a contracted maintenance crew during off-hours.\n\nThe food is caloric. It meets GLMZ Minimum Nutrition Standards. It is described on the packaging with words like 'Protein Blend,' 'Grain Composite,' and 'Vegetable Fortification,' which are accurate in the sense that these categories of ingredient are present in the product. The taste is described by regular consumers as 'fine' or 'what it is' or nothing at all, because sustained consumption of a product eliminates the capacity to evaluate it comparatively.\n\nEat it! locations are in the Shelf districts, the transit underpasses, the refugee integration zones, the processing blocks adjacent to labor markets. There are Eat it! locations inside GLMZ detention facilities — contracted through the Corrections Bureau at a per-meal rate that is the lowest in the Libation portfolio and represents a meaningful source of the subsidiary's margin.\n\nThe exclamation point in the name was reportedly added because the brand consultant felt the name needed energy. In internal documentation it is sometimes omitted. In the communities where Eat it! operates, no one uses the exclamation point.",
+  "public_facing": true,
+  "known_products": [
+    "Protein Blend Standard (daily rotation, 4 variants)",
+    "Grain Composite Block",
+    "Vegetable Fortification Pouch",
+    "Morning Ration (calorie-dense breakfast option)",
+    "Citizen Benefit Supplement Meal (subsidized, requires active CBP status)"
+  ],
+  "tags": ["subsidiary", "libation", "dining", "food", "tier-1", "subsistence", "shelf", "dispensary", "poverty", "surveillance", "glmz"]
+}

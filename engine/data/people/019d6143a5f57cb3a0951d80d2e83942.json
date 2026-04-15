@@ -63,7 +63,7 @@
   "narrative_function": "Data broker and fence — can provide information, identify items of unknown origin, connect players to buyers or sellers. Morally neutral information source. Can be hired, bribed, or persuaded but not easily fooled.",
   "augmentations": "Amber iris replacements with active scanning function (appraisal overlay, material composition read). Subdermal RFID skimmer in right palm — technically illegal, registered as a 'merchant verification tool.' Mild neural buffer for data processing.",
   "daily_life": "Opens the shop mid-morning, spends afternoons appraising new inventory and meeting with people who want things looked at quietly, closes late and eats whatever is convenient from nearby stalls.",
-  "affiliation": "Independent; informal information trade network with two other Shelf brokers; occasional Axiom corporate salvage contracts (freelance, arms-length)",
+  "affiliation": "Independent; informal information trade network with two other Shelf brokers; occasional Axiom corporate salvage contracts (freelance, arms-length); The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -274,5 +274,6 @@
         "Salvadoran": 3.7
       }
     }
-  }
+  },
+  "tier": "2"
 }

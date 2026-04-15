@@ -104,7 +104,7 @@
   "narrative_function": "Sable is what Kyle could become if he abandoned the code — competent, successful, invisible, and\nhollow. They represent pragmatism taken to its logical extreme: a person who has optimized away their\nown humanity in exchange for control and survival. They are the corporate machine's ghost — someone\nwho left the corporation but brought its operating system with them.\n\nBut Sable is also the story's most honest character. They don't pretend to be noble. They don't\ndress up what they do in philosophy or tradition. They broker violence for money and they do it\nwith transparency and fair pay, which makes them, by the Circuit's standards, practically a saint.\nThe question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world\nthat prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford\nthem and I can't, what does that say about which of us is really trapped?",
   "augmentations": "Chrome jaw replacement (medical-grade, articulated, visible hinge joints). No other visible augments — which means the invisible ones are the ones to worry about.",
   "daily_life": "",
-  "affiliation": "",
+  "affiliation": "Helix Biosystems (mid-level fixer / contract broker / kyle's primary employer)",
   "uses_facets": false,
   "narration_voice": "Sable's narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects — body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else's position. No facet tags. No interior war. Sable's internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn't tag it — it just pauses. A beat of nothing. Then the analysis resumes. The chrome jaw means every smile is a decision, every expression is performed — and the narration acknowledges this without self-pity.",
   "stats": {
@@ -355,5 +355,6 @@
         "Cantonese": 0.1
       }
     }
-  }
+  },
+  "tier": "3"
 }

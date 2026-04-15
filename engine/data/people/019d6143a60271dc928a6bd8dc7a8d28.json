@@ -62,7 +62,7 @@
   "narrative_function": "Service provider, comic relief with genuine menace underneath, information source — he hears everything that happens in the Undertow and trades in data as casually as flatbread.",
   "augmentations": "Amber-gold cat ears (geneware, cosmetic). Vocal amplifier — throat implant that gives him better projection and the ability to modulate tone precisely. He calls it his 'good microphone.'",
   "daily_life": "Up at five to prep the stall, open by seven, cooks and sells until two, uses the lunch rush as cover for drop-offs and pickups, afternoons are client meetings disguised as stall prep, evenings are for his technical partner and planning.",
-  "affiliation": "Loosely affiliated with a technical underground called The Spill; has clients across multiple tiers including, he claims, a mid-level Tessera administrator he will never name",
+  "affiliation": "Loosely affiliated with a technical underground called The Spill; has clients across multiple tiers including, he claims, a mid-level Tessera administrator he will never name; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -301,5 +301,6 @@
         "Tagalog": 5.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

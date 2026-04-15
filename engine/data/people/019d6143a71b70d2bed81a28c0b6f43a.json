@@ -92,7 +92,7 @@
   "narrative_function": "Wren is the analytical lens through which the Boneyard Saints' horror elements focus. She is the character who provides explanations — and the character whose explanations start failing as the deep ruins reveal things that don't fit her models. Her growing unease with the data she's collecting drives the existential horror beneath the treasure-hunt surface.",
   "augmentations": "Micro-manipulation fingertip implants — allow precise work on components smaller than the eye can see. Optical augmentation with spectrum analysis — she can identify material composition by visual scanning. Encrypted data-interface jack for connecting to pre-collapse systems without network exposure. No physical augmentations — Wren has never needed strength, just precision.",
   "daily_life": "Works when the light is good — she relies on natural light for certain types of analysis and supplements with full-spectrum lamps. Catalogues incoming salvage, runs identification protocols, contacts potential buyers through encrypted channels. Maintains the Saints' financial records and equipment inventory. Eats at her workstation — Toll brings food; she forgets to eat it until it's cold. Sleeps in a loft above the warehouse because going home feels like wasted time.",
-  "affiliation": "Boneyard Saints",
+  "affiliation": "Arcturus Defense Solutions (mid-level technical analyst and salvage valuator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -298,5 +298,6 @@
         "Polish": 0.3
       }
     }
-  }
+  },
+  "tier": "3"
 }

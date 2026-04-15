@@ -60,7 +60,7 @@
   "narrative_function": "Mobile information node — they traverse a long slice of the city daily and observe patterns others miss. Can be a quest enabler (getting someone somewhere unusual), a witness to events along the route, or a low-key union organizing plot thread.",
   "augmentations": "Bioluminescent hair dye (cosmetic, geneware-adjacent topical treatment). Geneware cat tail (cosmetic). Neural route-overlay (Ferrogate-issued, projects route data and timing directly into peripheral vision — technically company property).",
   "daily_life": "Three-day-on two-day-off rotation. First run departs Deepwell at 05:45. Between runs they sit in the depot canteen and do crossword puzzles from an old tablet with a cracked screen they refuse to replace. Union meetings on the third Thursday of every month.",
-  "affiliation": "Ferrogate Transit (Union Chapter 7, Deepwell Depot)",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -271,5 +271,6 @@
         "Jordanian": 0.9
       }
     }
-  }
+  },
+  "tier": "1"
 }

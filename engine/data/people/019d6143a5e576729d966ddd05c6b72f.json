@@ -62,7 +62,7 @@
   "narrative_function": "Information source about neural augmentation complications and corporate medical politics; potential quest giver if a patient he calibrated comes back with something wrong; window into the emotional cost of augmentation culture",
   "augmentations": "Occipital neural link ports x4 (professional diagnostic use); gold-green iridescent iris shift (calibration sync artifact, uncorrected); subvocal communicator for ward coordination",
   "daily_life": "He arrives forty minutes early to perform his own neural reset sequence, logs his overnight residuals, checks the day's patient queue. Evenings he eats alone in the sub-level cafeteria and writes in a physical notebook that he encodes in a personal cipher.",
-  "affiliation": "Aurochs Medical Complex (Tier 3 employee, salaried); informal patient advocacy within the ward",
+  "affiliation": "Aurochs Medical Complex (Tier 3 employee, salaried); informal patient advocacy within the ward; The Null Ward",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -255,5 +255,6 @@
         "Laotian": 4.3
       }
     }
-  }
+  },
+  "tier": "3"
 }

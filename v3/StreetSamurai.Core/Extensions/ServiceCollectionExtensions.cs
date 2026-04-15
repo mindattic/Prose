@@ -45,8 +45,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntertainmentRepository>();
         services.AddSingleton<MotifRepository>();
         services.AddSingleton<LabSpecimenRepository>();
-        services.AddSingleton<CeramicManRepository>();
-        services.AddSingleton<WastelandEntityRepository>();
+        services.AddSingleton<FlyoverEntityRepository>();
         services.AddSingleton<PsionicRepository>();
         services.AddSingleton<ToneBibleRepository>();
 
@@ -80,8 +79,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<SubsidiaryRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<EntertainmentRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<LabSpecimenRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<CeramicManRepository>());
-        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<WastelandEntityRepository>());
+        services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<FlyoverEntityRepository>());
         services.AddSingleton<IExportableRepository>(sp => sp.GetRequiredService<PsionicRepository>());
 
         // Export discovery — auto-finds all IExportableRepository instances
@@ -178,6 +176,7 @@ public static class ServiceCollectionExtensions
         // LLM services — multi-provider with router
         services.AddHttpClient<ClaudeService>();
         services.AddHttpClient<OpenAiService>();
+        services.AddHttpClient<DallEService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),

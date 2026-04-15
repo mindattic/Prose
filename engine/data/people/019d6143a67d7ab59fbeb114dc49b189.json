@@ -60,7 +60,7 @@
   "narrative_function": "Neighborhood institution and gathering point; oral historian of Grand Corridor; quiet provider of social safety net; can introduce characters to each other organically.",
   "augmentations": "Retractable claw mods on right hand (old, well-worn). No other augmentations — he claims his body is already as modified as it needs to be by sixty years of cooking.",
   "daily_life": "Arrives at the Kessler Interchange site at 10:00 to begin broth prep, opens to customers at 14:00, stays until the last customer leaves or 02:00, whichever comes first.",
-  "affiliation": "Independent; informal affiliation with the Grand Corridor vendor collective; old ties to a labor action group he no longer names",
+  "affiliation": "Independent; informal affiliation with the Grand Corridor vendor collective; old ties to a labor action group he no longer names; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -306,5 +306,6 @@
         "Baloch": 2
       }
     }
-  }
+  },
+  "tier": "2"
 }

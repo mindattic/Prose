@@ -63,7 +63,7 @@
   "narrative_function": "Access point to airship routes, northern settlements, and off-grid communities; provides a mobile contact who moves between locations players cannot easily reach; source of aerial and northern regional intelligence; represents the second-generation drifter experience.",
   "augmentations": "Bioluminescent skin (natural geneware inheritance). Callus-hardened hands from manual cargo work. No installed augmentations — can't afford them and doesn't trust anyone planetside to install them safely.",
   "daily_life": "Haunts the Escanaba Gateway mooring board, picks up day labor loading and unloading cargo, eats at the subsidized terminal canteen, sleeps in the open mooring shelter under their own emergency thermal wrap, and runs courier packages between airship crews who don't want them on record.",
-  "affiliation": "No fixed crew. Has working relationships with three independent airship captains on the northern lake circuit.",
+  "affiliation": "No fixed crew. Has working relationships with three independent airship captains on the northern lake circuit.; The Shore Dogs",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -310,5 +310,6 @@
         "Laotian": 2.6
       }
     }
-  }
+  },
+  "tier": "1"
 }

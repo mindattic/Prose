@@ -62,7 +62,7 @@
   "narrative_function": "Street-level contact who knows the transit system's unofficial geography; can grant access or look the other way; moral decision point about reporting corruption; local color and scene-setter for transit hub scenes",
   "augmentations": "Bioluminescent freckles (cosmetic geneware, amber-to-red affect-linked); department-standard subvocal comms implant; reinforced knuckle plating (standard FTS issue)",
   "daily_life": "Works a split shift at Kessler Interchange — morning platform patrol and evening checkpoint observation; eats his lunch at the same noodle kiosk every workday and has informal intelligence conversations he doesn't call intelligence conversations with the vendor.",
-  "affiliation": "Ferrogate Transit Security",
+  "affiliation": "Ferrogate Transit Security; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -263,5 +263,6 @@
         "Palestinian": 2.4
       }
     }
-  }
+  },
+  "tier": "3"
 }

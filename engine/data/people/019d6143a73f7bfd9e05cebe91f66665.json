@@ -62,7 +62,7 @@
   "narrative_function": "Living archive of the Corporate Wars; moral anchor for community storylines; source of pre-conflict maps, personnel names, and firsthand accounts; can validate or contradict official corponation histories; provides quests rooted in old debts and missing persons",
   "augmentations": "Cybernetic right eye (military-grade, degraded accuracy); reinforced left knee joint (post-combat replacement, badly maintained); subdermal scar tissue polymer along left torso (combat burn treatment, now cosmetically visible as a faint grid pattern)",
   "daily_life": "Rises at 0500, tends his window-box shrine to the E.L.F. he calls Grandfather Soot, then takes a slow circuit of Washburn Commons plaza before settling at the domino tables outside the commissary from 0900 onward. Evenings he hosts informal story sessions in the Block 7 common room, drawing crowds of all ages.",
-  "affiliation": "Meridian Veterans Covenant; Washburn Commons Community Council (emeritus)",
+  "affiliation": "Meridian Veterans Covenant; Washburn Commons Community Council (emeritus); The Glass Ladder",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -327,5 +327,6 @@
         "Nepali": 4
       }
     }
-  }
+  },
+  "tier": "1"
 }

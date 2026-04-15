@@ -60,7 +60,7 @@
   "narrative_function": "Access point to the undercity transit network; E.L.F. lore source; guide for anyone needing to move beneath the city; atmospheric local color for the deep infrastructure world.",
   "augmentations": "Ferrogate-issue haptic interface overlay on left forearm (work-issued, technically property of Ferrogate Transit). Cosmetic: patterned copper-and-black geometric iris mods.",
   "daily_life": "Reports to Deepwell Station at 20:00 for the overnight maintenance shift, walks an assigned twelve-kilometer tunnel loop inspecting track, sensors, and drainage, returns to surface around 06:00 and sleeps until early afternoon.",
-  "affiliation": "Ferrogate Transit, Deepwell Station maintenance crew",
+  "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -326,5 +326,6 @@
         "Angolan": 6
       }
     }
-  }
+  },
+  "tier": "1"
 }

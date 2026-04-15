@@ -61,7 +61,7 @@
   "narrative_function": "Social hub and rumor exchange; players can learn what's moving through the Ferment Quarter by talking to Zara or just listening near her. She's a reader of people who can be an ally or a liability depending on how she's approached. Can be a quest giver if something in the bar world threatens her employer or her savings.",
   "augmentations": "Color-shift hair mod (mood-responsive, green/amber/red-orange). Patterned irises (copper starburst). Retractable claws (geneware). No chrome.",
   "daily_life": "Works afternoon-to-late shifts, four days a week. Spends mornings doing what she calls 'nothing useful' — reading, walking the Gulch, visiting a friend who runs a piercing studio nearby. Currently taking a compressed course in fluid dynamics that she's told no one about.",
-  "affiliation": "Employed by The Specific Gravity (independent owner, Deshi Armah-Korhonen, an aging punk she respects enormously)",
+  "affiliation": "Employed by The Specific Gravity (independent owner, Deshi Armah-Korhonen, an aging punk she respects enormously); The Ferment",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -233,5 +233,6 @@
         "Fujianese": 0.2
       }
     }
-  }
+  },
+  "tier": "2"
 }

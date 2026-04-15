@@ -61,7 +61,7 @@
   "narrative_function": "Mobile information source who knows the transit system intimately — useful for route knowledge, tunnel geography, and the unofficial network of operator gossip that runs the length of every Ferrogate line. Can also humanize the experience of corponation labor from the inside.",
   "augmentations": "Ferrogate-issued neural timing sync — mandatory for operators, monitors reaction times and flags fatigue. They resent it. Geneware hair pigment (arterial red). No other augmentation.",
   "daily_life": "Runs the 06:15 to 18:45 shift on Line 9, five days on two days off; spends their days off at their apartment above Deepwell Station's south platform, reading and ignoring Ferrogate's optional 'wellness check-in' pings.",
-  "affiliation": "Ferrogate Transit (operator, Line 9), Deepwell Station informal worker collective",
+  "affiliation": "Ferrogate Transit (mid-level transit operator)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -260,5 +260,6 @@
         "Korean": 15.5
       }
     }
-  }
+  },
+  "tier": "3"
 }

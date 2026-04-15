@@ -29,7 +29,38 @@
     "Thirty-five experienced sailors and fighters comfortable with waterborne operations"
   ],
   "goals": [],
-  "relationships": [],
+  "relationships": [
+    {
+      "name": "The Fathom Line",
+      "type": "rival",
+      "reason": "Water territory near Milwaukee's drowned port"
+    },
+    {
+      "name": "The Lakebed Scrapers",
+      "type": "rival",
+      "reason": "Surface salvage rights"
+    },
+    {
+      "name": "The Undertow",
+      "type": "rival",
+      "reason": "Old Harbor waterfront competition"
+    },
+    {
+      "name": "The Interchange",
+      "type": "ally",
+      "reason": "Bulk cargo lake routes"
+    },
+    {
+      "name": "The Erie Remnant",
+      "type": "ally",
+      "reason": "Cleveland port access agreement"
+    },
+    {
+      "name": "The Null Ward",
+      "type": "ally",
+      "reason": "Complementary land/maritime operations; client referrals"
+    }
+  ],
   "narrative_function": "",
   "story_hooks": [
     "A Shore Dog boat disappeared on a routine run — the crew thinks pirates, but the cargo manifest suggests something else",
@@ -65,5 +96,36 @@
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Harbor Fish Shack",
     "Cargo Tacos"
+  ],
+  "size_class": "massive",
+  "known_members": [
+    {
+      "name": "Frost Souvannavong",
+      "id": "019d6143a6ad74cba07d997c700e9c74",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Frost Echeverría",
+      "id": "019d6143a64e7850a2c9b79001bde362",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Koffi Ito",
+      "id": "019d6143a6fd78a3ac30ef5b73b08570",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    },
+    {
+      "name": "Zen Kristjánsson",
+      "id": "019d6143a6277d4e9462a44689ab3dde",
+      "role": "Affiliate",
+      "status": "active",
+      "notes": "Geographic/thematic match"
+    }
   ]
 }

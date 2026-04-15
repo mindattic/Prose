@@ -6,7 +6,8 @@ namespace StreetSamurai.Core.Models.Canon;
 /// <summary>
 /// A synthetic life form — any non-biological sentient or semi-sentient entity.
 /// Covers the full spectrum: Superminds (corporate AIs), Rogue AIs (Fragments to Leviathans),
-/// and E.L.F.s (Electronic Life Forms — paratechnological digital spirits).
+/// E.L.F.s (Electronic Life Forms — paratechnological digital spirits),
+/// and Ceramic Men (living gas contained in a porcelain humanoid vessel).
 /// </summary>
 public class SyntheticLifeData : ICanonEntity
 {
@@ -28,4 +29,19 @@ public class SyntheticLifeData : ICanonEntity
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("paratechnological")] public bool Paratechnological { get; set; }
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+
+    // ── Ceramic Man fields (only set when type == "ceramic_man") ──────────────
+    [JsonPropertyName("known_age")] public string? KnownAge { get; set; }
+    [JsonPropertyName("crack_pattern")] public string? CrackPattern { get; set; }
+    [JsonPropertyName("current_role")] public string? CurrentRole { get; set; }
+    [JsonPropertyName("known_location")] public string? KnownLocation { get; set; }
+    [JsonPropertyName("diplomatic_specialty")] public string? DiplomaticSpecialty { get; set; }
+    [JsonPropertyName("operating_history")] public string? OperatingHistory { get; set; }
+    [JsonPropertyName("behavioral_notes")] public string? BehavioralNotes { get; set; }
+    [JsonPropertyName("known_associations")] public List<string>? KnownAssociations { get; set; }
+    [JsonPropertyName("damage_history")] public string? DamageHistory { get; set; }
+    /// <summary>Pigment, inlay, or applied marking on the face — the Ceramic Man's primary individuation method.</summary>
+    [JsonPropertyName("face_decoration")] public string? FaceDecoration { get; set; }
+    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
+    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }

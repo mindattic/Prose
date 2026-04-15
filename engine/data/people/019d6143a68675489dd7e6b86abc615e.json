@@ -63,7 +63,7 @@
   "narrative_function": "Morally complex source of medical resources and body-modification intel; quest giver for retrieval jobs; window into the underground medical economy; can be ally or antagonist depending on whose organ supply he's managing.",
   "augmentations": "Bioluminescent jaw and collarbone pattern (geneware, cosmetic origin). Retractable precision claw — right index finger. Neural-haptic surgical overlay (black market, allows enhanced fine motor feedback during procedures).",
   "daily_life": "Sleeps irregular hours in his cold-storage unit, monitors the Pale Market's procurement requests via encrypted channel, spends evenings in transit hubs scouting potential donors or buyers, occasionally takes legitimate medical courier jobs as cover.",
-  "affiliation": "Loosely connected to a procurement network called the Pale Market; no formal gang affiliation",
+  "affiliation": "Loosely connected to a procurement network called the Pale Market; no formal gang affiliation; The Undertow",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -303,5 +303,6 @@
         "Moroccan": 0.7
       }
     }
-  }
+  },
+  "tier": "1"
 }

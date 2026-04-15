@@ -67,7 +67,7 @@
   "narrative_function": "Nenad Vargas-Baffour functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Chemical analyzer in nasal passages — can identify substances by scent alone",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Freelance — Geartown regular",
+  "affiliation": "Freelance — Geartown regular; Switchblade Alley",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -376,5 +376,6 @@
         "Tagalog": 3.7
       }
     }
-  }
+  },
+  "tier": "3"
 }

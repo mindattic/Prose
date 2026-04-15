@@ -63,7 +63,7 @@
   "narrative_function": "Primary information-access point for street-level players. Can source obscure media, personal records, building schematics, and soft intelligence. Also serves as cultural texture — they know the gossip, the art, the underground scene of the Laceworks intimately.",
   "augmentations": "Color-cycling follicular genemod (hair). Hexagonal patterned irises (cosmetic, gene-based). Subdermal haptic patch on left forearm — lets them feel file transfer completion and connection quality without looking at a screen. Basic neural link for data handling, consumer grade.",
   "daily_life": "Wakes late, spends two hours curating and pricing their day's inventory, walks their circuit starting around noon, works until the light goes bad or they've sold out — whichever comes first. Three evenings a week they're at a Laceworks bar called The Needle's Eye, buying drinks for people who might have interesting things to say.",
-  "affiliation": "Independent. Pays informal protection to a loose collective of Laceworks street crews called the Threadneedles. Occasional contractor for Oxidian Market Guild intel arm.",
+  "affiliation": "Independent. Pays informal protection to a loose collective of Laceworks street crews called the Threadneedles. Occasional contractor for Oxidian Market Guild intel arm.; The Glass Ladder",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -259,5 +259,6 @@
         "Nepali": 5.5
       }
     }
-  }
+  },
+  "tier": "2"
 }
