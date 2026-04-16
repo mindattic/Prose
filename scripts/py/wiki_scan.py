@@ -21,6 +21,7 @@ OPTIONS
   --interactive     Prompt before each insertion; 'y' accept, 'n' skip, 'q' quit
   --partial         Also report partial/fuzzy matches (name appears inside compound word)
   --repo REPO       Limit scan to one repo folder (e.g. --repo people)
+  --since DURATION  Only scan files modified within this duration (e.g. 2h, 30m, 1d)
   --min-length N    Minimum entity name length to match (default: 4)
   --data-dir DIR    Override engine/data path (default: ../../engine/data)
   --help, -h        Show this help text and exit
@@ -35,6 +36,9 @@ EXAMPLES
 
   # Apply all exact matches automatically
   python wiki_scan.py --apply
+
+  # Only re-scan files changed in the last 2 hours (fast re-run)
+  python wiki_scan.py --apply --since 2h
 
   # Show fuzzy/partial matches for manual review
   python wiki_scan.py --partial
@@ -52,6 +56,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 from typing import Optional
 
@@ -62,7 +67,7 @@ try:
 except ImportError:
     DATA_DIR = "../../engine/data"
     REPOS = [
-        "people", "synthetics", "corponations", "places", "factions", "weaponry",
+        "people", "synthetics", "corponations", "subsidiaries", "places", "factions", "weaponry",
         "equipment", "technology", "cyberware", "apparel", "automata",
         "genemods", "materials", "transportation", "pharmaceuticals", "documents",
     ]
@@ -77,6 +82,22 @@ except ImportError:
 
 
 WIKI_LINK_RE = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
+
+
+def parse_since(value: str) -> float:
+    """Parse a duration string into a Unix cutoff timestamp.
+    Accepts: 30m, 2h, 1d, 7d, or a bare integer (treated as minutes).
+    Returns the earliest mtime that should be included."""
+    value = value.strip().lower()
+    if value.endswith("d"):
+        seconds = float(value[:-1]) * 86400
+    elif value.endswith("h"):
+        seconds = float(value[:-1]) * 3600
+    elif value.endswith("m"):
+        seconds = float(value[:-1]) * 60
+    else:
+        seconds = float(value) * 60  # bare number = minutes
+    return time.time() - seconds
 
 
 def resolve_data_dir(override: Optional[str] = None) -> Path:
@@ -142,8 +163,15 @@ def extract_text_fields(data: dict) -> list[tuple[str, str]]:
 
 
 def already_linked(text: str) -> set[str]:
-    """Return lowercase set of names already inside [[...]] in this text."""
-    return {m.group(1).lower() for m in WIKI_LINK_RE.finditer(text)}
+    """Return lowercase set of names already inside [[...]] in this text.
+    Captures both the canonical name and the display text from pipe-style links
+    ([[Canon|Display]]) so alias patterns skip correctly on re-runs."""
+    result = set()
+    for m in WIKI_LINK_RE.finditer(text):
+        result.add(m.group(1).lower())
+        if m.group(2):
+            result.add(m.group(2).lower())
+    return result
 
 
 def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
@@ -158,16 +186,19 @@ def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
 
     for name_lower, entry in candidates:
         canonical = entry["name"]
+        # For alias entries, search for the alias text itself (not the canonical name).
+        # canonical is used in the output link; search_term drives the regex.
+        search_term = entry.get("display_name", canonical)
         if name_lower in linked:
             continue  # Already linked
 
         if partial:
             # Partial/fuzzy preview — case-insensitive, no word boundary required
-            pattern = re.compile(re.escape(canonical), re.IGNORECASE)
+            pattern = re.compile(re.escape(search_term), re.IGNORECASE)
         else:
             # Exact match — case-sensitive so "face" ≠ "Face" (the archetype)
             # Word boundary: not preceded/followed by [ or word char
-            pattern = re.compile(r'(?<![\[\w])' + re.escape(canonical) + r'(?![\w\]])')
+            pattern = re.compile(r'(?<![\[\w])' + re.escape(search_term) + r'(?![\w\]])')
 
         for m in pattern.finditer(text):
             start, end = m.start(), m.end()
@@ -245,6 +276,8 @@ def main():
                         help="Limit scan to one repo folder (e.g. people)")
     parser.add_argument("--min-length", type=int, default=WIKI_MIN_NAME_LENGTH,
                         metavar="N", help=f"Minimum name length (default: {WIKI_MIN_NAME_LENGTH})")
+    parser.add_argument("--since", metavar="DURATION",
+                        help="Only scan files modified within this duration (e.g. 2h, 30m, 1d)")
     parser.add_argument("--data-dir", metavar="DIR",
                         help="Override engine/data path")
     args = parser.parse_args()
@@ -258,8 +291,20 @@ def main():
         print(f"ERROR: {e}")
         sys.exit(1)
 
+    since_cutoff: Optional[float] = None
+    if args.since:
+        try:
+            since_cutoff = parse_since(args.since)
+        except ValueError:
+            print(f"ERROR: invalid --since value {args.since!r}. Use e.g. 2h, 30m, 1d.")
+            sys.exit(1)
+
     print(f"Data directory: {data_dir}")
     print(f"Mode: {'DRY RUN (no files modified)' if args.dry_run else 'APPLY (files will be modified)'}")
+    if since_cutoff is not None:
+        import datetime
+        cutoff_dt = datetime.datetime.fromtimestamp(since_cutoff).strftime("%Y-%m-%d %H:%M:%S")
+        print(f"Since: {args.since} (files modified after {cutoff_dt})")
     if args.interactive:
         print("Interactive: prompting before each insertion")
     print()
@@ -277,17 +322,22 @@ def main():
         if not repo_dir.exists():
             continue
 
-        files = list(repo_dir.glob("*.json"))
+        all_files = list(repo_dir.glob("*.json"))
+        files = [f for f in all_files if since_cutoff is None or f.stat().st_mtime >= since_cutoff]
         repo_links = 0
         repo_files = 0
-        print(f"  [{repo}]  {len(files)} files")
+        if not files:
+            continue
+        label = f"{len(files)} / {len(all_files)}" if since_cutoff is not None else str(len(files))
+        print(f"  [{repo}]  {label} files", end="", flush=True)
 
         for jf in files:
+            print(".", end="", flush=True)
             try:
                 raw = jf.read_text(encoding="utf-8")
                 data = json.loads(raw)
             except Exception as e:
-                print(f"    SKIP {jf.name}: {e}")
+                print(f"\n    SKIP {jf.name}: {e}", end="", flush=True)
                 continue
 
             entity_name = data.get("name") or data.get("title") or jf.stem
@@ -329,7 +379,7 @@ def main():
                 repo_files += 1
                 total_files_modified += 1
 
-        print(f"    → {repo_links} links {'would be' if args.dry_run else ''} inserted"
+        print(f"\n    → {repo_links} links {'would be' if args.dry_run else ''} inserted"
               f" across {repo_files} files\n")
 
     print("=" * 60)
