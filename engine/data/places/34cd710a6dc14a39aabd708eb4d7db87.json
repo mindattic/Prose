@@ -1,0 +1,100 @@
+{
+  "id": "34cd710a6dc14a39aabd708eb4d7db87",
+  "type": "place",
+  "name": "The Decadent Sensorium",
+  "aliases": [
+    "The Sensorium",
+    "The Dec",
+    "Sensation Parlor"
+  ],
+  "description": "The Decadent Sensorium occupies the upper four floors of a building in the [[Meridian Core]] that does not advertise its purpose. There is no sign. The lobby is a residential concierge service. You reach the Sensorium by appointment, by referral, and by having the Quanta to make your referral worth the host's time. It is, by most measures, the most comprehensive sensory experience venue in the [[GLMZ]], and it maintains that position not through scale — it accommodates only twelve clients per session — but through the specificity and rarity of what it offers.\n\nThe Sensorium's primary product is borrowed experience. Through high-integration BCI delivery, clients receive packaged sensory recordings — not simulations, not procedurally generated approximations, but actual recordings of human sensory experience: what it felt like to taste a specific meal in a specific place in a specific year, what a particular body felt like in a particular moment, the precise texture of an afternoon that no longer exists anywhere except in memory. The distinction between simulation and recording is the Sensorium's central commercial claim and the source of its legal ambiguity. A simulated experience is entertainment. A recorded experience is a document. And documents, unlike entertainments, raise the question of where they came from.\n\nThe Sensorium's catalog is extensive. Culinary experiences from the pre-collapse era — meals that cannot be reproduced because the ingredients no longer exist, the kitchens are gone, the cooks are dead. Physical sensations associated with athletic extremity — not the edited highlight-reel version sold by mainstream BCI entertainment providers, but the complete unedited experience of a body at its limit, including the parts that hurt. Environmental recordings from places that are gone: the actual sensory experience of standing on a Louisiana barrier island in 2019, which is now 40 meters underwater. The catalog also includes interpersonal experiences, which the Sensorium discusses only in private consultation, and which represent its highest-margin and most legally contested category.\n\nClients do not ask where the recordings come from. This is a social convention of the Sensorium that functions as policy: asking is understood as a signal that you should not be there. The recordings come from somewhere. The people who supply them are compensated. Whether 'compensated' and 'consenting' mean the same thing in every case is a question the Sensorium's legal structure is built to make unanswerable. The host, who goes by the name Verity regardless of which body Verity is currently presenting in, has maintained the venue for eleven years and has never been successfully prosecuted for anything.\n\nThe experience rooms are individually designed. No two are identical. Each is calibrated to the specific recording being delivered — temperature, humidity, acoustic environment, physical furniture, and scent designed to eliminate sensory contradictions between the room and the experience. Clients who have described it say the disorientation is not in the body but in time: you return knowing exactly what you have experienced and unable to fully process that you did not experience it yourself.",
+  "atmosphere": {
+    "sights": [
+      "A lobby that looks exactly like a residential concierge service and functions as one — most visitors to the building have genuine residential business",
+      "The upper floors: individually designed rooms with no consistent aesthetic — each calibrated to its recording, so you move from environments that feel like one century to ones that feel like another",
+      "No visible BCI hardware — the delivery infrastructure is embedded in the walls, ceiling, and furniture; the experience appears to come from nowhere",
+      "Verity: present in every client interaction, in a body that changes by season and has never been the same twice in eleven years"
+    ],
+    "sounds": [
+      "The lobby: appropriate residential ambient sound, carefully maintained",
+      "The experience rooms: whatever the recording contains, delivered with precision",
+      "Between sessions: a deep architectural quiet that feels intentional, like a held pause"
+    ],
+    "smells": [
+      "Each room smells like wherever it is — the olfactory component of the recordings is considered essential to their integrity",
+      "The transition corridors smell like nothing: neutral, processed air designed to clear the palette between experiences"
+    ],
+    "feel": "The Decadent Sensorium feels like something that should not exist and knows it. Everything about it is designed to feel inevitable — the appointments, the discretion, the rooms, Verity — as if this is simply where you go when you have certain needs and sufficient Quanta. The feeling of wrongness arrives later, at home, when you are trying to remember whether what you remember happened to you.",
+    "tags": []
+  },
+  "demographics": "Tier 4 and 5 clients exclusively, by economic necessity rather than stated policy. Occasional Tier 3 clients with unusual financial situations. The twelve-per-session maximum and appointment-only model mean the Sensorium serves perhaps 800-1,000 distinct clients per year. Many are repeat visitors. Several have been coming for years.",
+  "economy": "Per-experience pricing from Φ8,000 to Φ180,000 depending on recording rarity and duration. The interpersonal catalog is priced on private consultation and is understood to begin significantly above the standard maximum. Verity's operating margin is unknown. The building is owned through seven layered legal entities.",
+  "power_structure": "Verity. The Sensorium has no staff that clients interact with — only Verity and the automated delivery infrastructure. The legal architecture protecting the operation is maintained by a firm whose other clients include three Big 20 corponations, which may explain its durability.",
+  "dangers": [
+    "Identity dissolution — clients who engage deeply with the interpersonal catalog sometimes report difficulty distinguishing borrowed memories from their own; two clients have required extended psychiatric intervention",
+    "Leverage — the Sensorium's appointment records, client preferences, and catalog purchase history represent significant blackmail material for anyone who could access them",
+    "The source question — whatever the Sensorium is recording from, and however those recordings are obtained, has created enemies; at least one attempted attack on the venue has been repelled without public knowledge",
+    "Addiction — the precision of the recorded experience makes it difficult to find ordinary experience satisfying afterward; several long-term clients appear to be managing this poorly"
+  ],
+  "opportunities": [
+    "The Sensorium's catalog acquisition process is a recurring source of runner contracts — some recordings require retrieval from difficult locations, willing or unwilling sources, or estates that do not know what they are selling",
+    "Verity's client list is extraordinarily valuable intelligence — accessing it would compromise people at the highest tier levels",
+    "The Sensorium represents a neutral meeting space for ultra-high-tier clients who need to discuss things away from corporate surveillance — Verity facilitates this discreetly and charges accordingly"
+  ],
+  "story_hooks": [
+    "A recording has appeared in the Sensorium's catalog that depicts an event that, according to all official records, did not happen. The client who requested it has not returned to collect it. Verity wants to know who recorded it and why it exists before deciding what to do with it.",
+    "A runner is hired to acquire a specific recording — a memory belonging to a person who is still alive and who has not consented to the extraction. The client is willing to pay any price. The target, if they knew, would not survive the knowing.",
+    "Someone is systematically copying the Sensorium's catalog. The copies are appearing on the gray market at a fraction of the original price, with the provenance stripped. Verity is not panicking, which is more frightening than if Verity were panicking."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "The Meridian Core (mid-tier commerce and residential)",
+      "The Spire (corporate apex — clients descend from here)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "Upper-tier executives and corporate principals seeking experiences unavailable through legitimate channels",
+    "Individuals with unusual grief or loss who want something no therapy can provide",
+    "People who have stopped being interested in their own lives"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Consultation Room",
+      "description": "Where Verity meets clients for the first time. Deliberately unremarkable — the point is that Verity is remarkable and the room should not compete.",
+      "tags": []
+    },
+    {
+      "name": "The Pre-War Suite",
+      "description": "The Sensorium's most expensive permanent installation — a room permanently calibrated to a series of culinary and environmental recordings from the early 21st century. Clients book it months in advance.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 41.8847,
+    "lng": -87.6292,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "bci",
+    "neural",
+    "luxury",
+    "experience",
+    "memory",
+    "tier5",
+    "tier4",
+    "underground",
+    "secret",
+    "corporate",
+    "illegal",
+    "sensory",
+    "decadent"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "The Meridian Core",
+    "The Spire"
+  ]
+}

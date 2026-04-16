@@ -1,0 +1,99 @@
+{
+  "id": "73fd38e7014f48edb7bec668c71667bd",
+  "type": "place",
+  "name": "The Silence of AFK",
+  "aliases": [
+    "AFK",
+    "The Silence",
+    "The Quiet Room",
+    "Going Dark"
+  ],
+  "description": "The Silence of AFK is named after a person. [[Soren Sokolov|Nobody]] alive knows their real name. The callsign was AFK — Away From Keyboard, the ancient network term for a user who has stepped away from their terminal and is not currently present — and in 2214, AFK walked into a decommissioned server facility beneath the [[The Fox Cities Nexus|Fox Cities]] [[Mika Ingebrigtsen|Nexus]] data corridor, said to the two people with them 'I'm going to go be quiet for a while,' and went inside. They have not been seen since. The two people who were there have declined to describe what they witnessed. The facility, which they subsequently made accessible to others on the understanding that it was to be used only for the thing AFK used it for, became known as the [[Onyx Cardenas-Tovar|Silence]] of AFK. [[QUIETUS|The Silence]], for short. Going Dark, in operational shorthand.\n\nThe facility was built in 2173 to house a primary server array for a data processing company that was later absorbed into the [[The Fox Cities Nexus|Fox Cities]] [[Mika Ingebrigtsen|Nexus]] data consortium. The array required near-total EM isolation to prevent data corruption from the [[Mika Ingebrigtsen|Nexus]]'s ambient signal environment — 200 data centers generating a combined electromagnetic field that would have degraded storage media without shielding. When the company was absorbed and the array was decomissioned, the shielding was not removed. The facility was sealed and its existence was lost in the acquisition paperwork.\n\nInside the [[Onyx Cardenas-Tovar|Silence]] of AFK, all network connectivity stops. All BCI signals cease. The neural interface does not go offline — it remains functional, it continues to process, it can [[Serathex|still]] run local cognitive augmentation — but it cannot broadcast, cannot receive, cannot locate, cannot be located. For someone who has carried a neural interface since childhood, who has never been alone in the sense of being unobservable, who has existed in continuous network proximity to everyone they have ever known since the interface was installed, the [[Onyx Cardenas-Tovar|Silence]] produces a sensation that most visitors describe inadequately and with visible difficulty.\n\nThe words people reach for: stillness. Solitude. Presence. Loudness. The last one surprises new visitors until they experience it — the absence of the network does not feel like silence so much as amplification, as if the parts of experience that the network's continuous background hum had been drowning out suddenly become audible. Thoughts feel different inside the [[Onyx Cardenas-Tovar|Silence]]. The texture of a moment feels different. Several visitors have described crying and not being sure why. Several others have described laughing. A significant number have described nothing at all because they cannot find language for it and have stopped trying.\n\nThe facility has no formal entrance procedure. The two people AFK was with have maintained access to the exterior without disclosing themselves publicly — entry is by contact through indirect channels, at their discretion, to people whose purpose in visiting they find acceptable. They have refused corporate clients every time. They have refused law enforcement every time. They have never explained their criteria publicly. In eleven years, they have not been wrong about a person they admitted.\n\nAFK is not confirmed dead. The facility has been searched by the people who maintain it. Nothing was found. This is consistent with any number of explanations, including that AFK is somewhere in the facility that has not been found, or that AFK left by a route that has not been identified, or that the [[Onyx Cardenas-Tovar|Silence]] did something to AFK that the people who knew them do not discuss. The name the place carries is understood, by everyone who visits, as both a memorial and an open question.",
+  "atmosphere": {
+    "sights": [
+      "A utility access corridor beneath the Fox Cities Nexus that does not appear on any public infrastructure map",
+      "The facility exterior: decommissioned industrial, unmarked, the kind of door that signals 'nothing interesting here' to anyone who does not know",
+      "Inside: the server array housing is still present — rows of equipment racks, empty now, in a space designed for machines that have been gone for fifty years",
+      "No lighting except what visitors bring. The facility's electrical infrastructure was disconnected when it was decommissioned and has not been restored."
+    ],
+    "sounds": [
+      "Outside the facility: the Fox Cities Nexus ambient — the low-frequency pulse of 200 data centers, continuous, omnipresent, the sound of the most networked place in the GLMZ",
+      "Inside: the ambient stops. Completely. The shielding is total enough that even the subsonic pulse of the Nexus does not penetrate. What remains is: your heartbeat, your breathing, the settling of your weight on the floor, and whatever the person next to you is doing.",
+      "Some visitors report hearing something in the very deep silence that they cannot account for. They describe it differently each time."
+    ],
+    "smells": [
+      "Old electronics — the specific petrochemical smell of machinery that ran hot for years and then stopped",
+      "Settled dust in a sealed space",
+      "Whatever visitors bring in with them"
+    ],
+    "feel": "The Silence of AFK feels like being handed back something you did not know had been taken. The first minutes are disorienting — the absence of the network's background texture feels like a missing sense, like a sound you have been filtering out your entire life that has suddenly stopped and made you aware it existed. After ten or fifteen minutes, most visitors report that the disorientation fades and something else takes its place. They describe this something else differently. None of the descriptions fully match.",
+    "tags": []
+  },
+  "demographics": "No permanent residents. Visitors by selective admission only. The population of people who have visited numbers perhaps 200-300 in eleven years. Among them: runners who needed to think clearly about something they could not think clearly about in the network; people processing grief or trauma; BCI researchers who have not disclosed their research; individuals who do not discuss their reasons and whose reasons have been accepted anyway. No corporate clients. No government clients. No clients who have arrived with an agenda larger than their own need for quiet.",
+  "economy": "No fee. The people maintaining access have declined to monetize it. When asked why, one of them reportedly said: 'AFK would have hated that.'",
+  "power_structure": "The two individuals who maintain access. Their identities are known only to each other and to the people they trust most. They are not public figures. They do not want to be found except by the people they have agreed to find.",
+  "dangers": [
+    "Disorientation — deep BCI integration means the return to network connectivity after an extended session in the Silence produces a sensory shock that some visitors find temporarily incapacitating; emerging into the Nexus's full signal environment after an hour inside is described as 'like surfacing from deep water very quickly'",
+    "The location — the Fox Cities Nexus is the most surveilled region in the GLMZ per square meter, and a person moving through it to access an unmapped facility is navigating a surveillance environment that will notice unusual patterns",
+    "Whatever happened to AFK — the people maintaining access know more than they say, and what they say is that they are careful about who they let in"
+  ],
+  "opportunities": [
+    "Cognitive clarity of a kind impossible to achieve in the networked environment — for runners working through complex problems, grief, or decisions they cannot make while being observed, the Silence is without equivalent",
+    "Conversations that cannot exist anywhere else — no BCI recording, no network proximity, no surveillance, no documentation of any kind",
+    "The people maintaining access know everyone who has been inside; their informal network of former visitors is built on shared experience of a place that changes people, which means it is built on something more durable than most networks"
+  ],
+  "story_hooks": [
+    "A visitor who went inside three weeks ago has not come out. They are not AFK — they have a family, obligations, a life outside the facility. The people maintaining access are not sure what to do. They have not gone in to look. They are not sure why.",
+    "A corporate BCI research team has begun mapping the Fox Cities Nexus's EM anomalies using satellite scanning. The Silence's shielding produces an anomaly on their map. They do not yet know what it is. They will.",
+    "Someone who visited the Silence came out changed in a way that is visible — not wrong, not damaged, but different in a way people around them cannot locate. They say only that they heard something inside that they are still thinking about. They have visited seven times since. They are beginning to seem like they are not planning to stop."
+  ],
+  "connections": {
+    "adjacent_to": [
+      "Fox Cities Nexus (data center region — 200 data centers, highest surveillance density in the GLMZ)",
+      "The Spine (maglev corridor, passing through the Nexus)"
+    ],
+    "exits": [],
+    "tags": []
+  },
+  "frequented_by": [
+    "People who have been told about it by someone who has been inside",
+    "No one else"
+  ],
+  "notable_locations": [
+    {
+      "name": "The Array Room",
+      "description": "The main chamber — where the server racks stood and where most visitors spend their time inside. Large enough that two people can be in it without being in the same part of it.",
+      "tags": []
+    },
+    {
+      "name": "The Deep Room",
+      "description": "A smaller chamber at the back of the facility that the people maintaining access have not fully explored. AFK went in that direction. The Silence is supposedly more complete in there — if that is possible.",
+      "tags": []
+    }
+  ],
+  "coordinates": {
+    "lat": 44.2619,
+    "lng": -88.4154,
+    "tags": []
+  },
+  "tags": [
+    "place",
+    "silence",
+    "bci",
+    "neural",
+    "electromagnetic",
+    "secret",
+    "mystery",
+    "fox_cities",
+    "underground",
+    "refuge",
+    "grief",
+    "clarity",
+    "afk",
+    "disconnected"
+  ],
+  "related_entities": [
+    "GLMZ",
+    "Fox Cities Nexus"
+  ]
+}
