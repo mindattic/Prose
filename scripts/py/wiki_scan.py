@@ -21,6 +21,7 @@ OPTIONS
   --interactive     Prompt before each insertion; 'y' accept, 'n' skip, 'q' quit
   --partial         Also report partial/fuzzy matches (name appears inside compound word)
   --repo REPO       Limit scan to one repo folder (e.g. --repo people)
+  --single SLUG     Scan a single entity by slug (e.g. --single kyle-ellen-corbin-vasik)
   --since DURATION  Only scan files modified within this duration (e.g. 2h, 30m, 1d)
   --min-length N    Minimum entity name length to match (default: 4)
   --data-dir DIR    Override engine/data path (default: ../../engine/data)
@@ -36,6 +37,9 @@ EXAMPLES
 
   # Apply all exact matches automatically
   python wiki_scan.py --apply
+
+  # Scan and apply links for one specific entity
+  python wiki_scan.py --apply --single kyle-ellen-corbin-vasik
 
   # Only re-scan files changed in the last 2 hours (fast re-run)
   python wiki_scan.py --apply --since 2h
@@ -82,6 +86,35 @@ except ImportError:
 
 
 WIKI_LINK_RE = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
+
+_DIACRITIC_MAP = str.maketrans({
+    'ø': 'o', 'Ø': 'o', 'ð': 'd', 'Ð': 'd', 'þ': 'th', 'Þ': 'th',
+    'æ': 'ae', 'Æ': 'ae', 'œ': 'oe', 'Œ': 'oe', 'ß': 'ss',
+    'ł': 'l', 'Ł': 'l', 'ı': 'i', 'ĸ': 'k', 'ŉ': 'n',
+})
+
+def to_slug(name: str) -> str:
+    """Mirror of C# JsonDirectoryRepository.ToSlug: lowercase, strip diacritics, non-alnum → hyphen."""
+    import unicodedata
+    s = name.lower().strip().translate(_DIACRITIC_MAP)
+    s = ''.join(c for c in unicodedata.normalize('NFD', s)
+                if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^a-z0-9]+', '-', s).strip('-')
+
+
+def find_entity_by_slug(data_dir: Path, slug: str) -> tuple[str, Path] | None:
+    """Search all repo dirs for a JSON entity whose name slug matches. Returns (repo, filepath)."""
+    all_repos = [d.name for d in data_dir.iterdir() if d.is_dir()]
+    for repo in all_repos:
+        for jf in (data_dir / repo).glob("*.json"):
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            name = data.get("name") or data.get("title") or data.get("term") or data.get("headline") or ""
+            if name and to_slug(name) == slug:
+                return repo, jf
+    return None
 
 
 def parse_since(value: str) -> float:
@@ -142,23 +175,42 @@ def build_index(data_dir: Path, min_length: int) -> dict[str, dict]:
             entry = {"name": name, "id": entity_id, "repo": repo, "route": route}
             index[name.lower()] = entry
 
-            # Index aliases too
-            for alias in data.get("aliases", []):
-                if isinstance(alias, str) and len(alias) >= min_length:
-                    key = alias.lower()
-                    if key not in index:
-                        index[key] = {**entry, "alias_of": name, "display_name": alias}
-
     return index
 
 
-def extract_text_fields(data: dict) -> list[tuple[str, str]]:
-    """Yield (field_name, text) for all string fields worth scanning."""
+# Keys whose string values are never prose (IDs, enums, dates, short codes)
+# "name", "aliases", "title" etc. are entity identifiers — never modify them with wiki markup
+WIKI_SCAN_SKIP_KEYS = {
+    "id", "name", "aliases", "title", "term", "codename", "product_name", "brand_name",
+    "full_legal_name", "common_names", "headline", "type", "species", "gender", "pronouns",
+    "status", "tier", "tier_availability", "legality", "caliber", "runner", "file", "flag",
+    "date", "story_id", "installed_date", "body_location", "condition",
+    "replaces", "hair_color", "hair_style", "hair_length", "eye_color",
+    "skin_tone", "complexion", "build", "posture_movement", "height_cm",
+    "weight_kg", "emotional_core", "story_tension", "canon_status",
+    "slug", "route", "image_prompt", "dalle3_prompt", "midjourneyPrompt",
+    "image", "created_at", "updated_at", "version", "changelog",
+}
+
+def extract_text_fields(data: dict, min_text_length: int = 12) -> list[tuple[str, str]]:
+    """Recursively walk all string values in the JSON tree, yielding (path, text)
+    for any string long enough to plausibly contain entity mentions."""
     results = []
-    for field in WIKI_SCAN_FIELDS:
-        val = data.get(field)
-        if isinstance(val, str) and val.strip():
-            results.append((field, val))
+
+    def walk(node, path: str):
+        if isinstance(node, str):
+            if len(node) >= min_text_length and node.strip():
+                results.append((path, node))
+        elif isinstance(node, list):
+            for i, item in enumerate(node):
+                walk(item, f"{path}[{i}]")
+        elif isinstance(node, dict):
+            for key, val in node.items():
+                if key in WIKI_SCAN_SKIP_KEYS:
+                    continue
+                walk(val, f"{path}.{key}" if path else key)
+
+    walk(data, "")
     return results
 
 
@@ -202,6 +254,10 @@ def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
 
         for m in pattern.finditer(text):
             start, end = m.start(), m.end()
+            matched_text = m.group(0)
+            # Proper nouns only — skip if match starts with a lowercase letter
+            if not partial and matched_text[0].islower():
+                continue
             # Don't overlap with already-matched spans
             if any(s <= start < e or s < end <= e for s, e in covered_spans):
                 continue
@@ -211,13 +267,28 @@ def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
             if opens > 0:
                 continue
             covered_spans.append((start, end))
-            matches.append((start, end, entry, m.group(0)))
+            matches.append((start, end, entry, matched_text))
 
     return sorted(matches, key=lambda t: t[0])
 
 
+def set_nested(data: dict, path: str, value: str) -> None:
+    """Navigate a dotted/indexed path (e.g. 'relationships[0].description') and set the leaf."""
+    parts = re.split(r'[\.\[\]]', path)
+    parts = [p for p in parts if p]
+    obj = data
+    for part in parts[:-1]:
+        obj = obj[int(part)] if isinstance(obj, list) else obj[part]
+    last = parts[-1]
+    if isinstance(obj, list):
+        obj[int(last)] = value
+    else:
+        obj[last] = value
+
+
 def apply_links(text: str, matches: list[tuple]) -> str:
-    """Replace matched spans with [[Name]] or [[Name|display]] syntax."""
+    """Replace matched spans with [[DisplayText|entityId]] syntax.
+    The entity ID is the stable reference; display text is what appeared in the source."""
     if not matches:
         return text
 
@@ -225,11 +296,7 @@ def apply_links(text: str, matches: list[tuple]) -> str:
     prev = 0
     for start, end, entry, matched_text in sorted(matches, key=lambda t: t[0]):
         result.append(text[prev:start])
-        canonical = entry["name"]
-        if matched_text.lower() == canonical.lower():
-            result.append(f"[[{canonical}]]")
-        else:
-            result.append(f"[[{canonical}|{matched_text}]]")
+        result.append(f"[[{matched_text}|{entry['id']}]]")
         prev = end
     result.append(text[prev:])
     return "".join(result)
@@ -274,6 +341,8 @@ def main():
                         help="Include partial/fuzzy matches for review")
     parser.add_argument("--repo", metavar="REPO",
                         help="Limit scan to one repo folder (e.g. people)")
+    parser.add_argument("--single", metavar="SLUG",
+                        help="Scan a single entity by slug (e.g. kyle-ellen-corbin-vasik)")
     parser.add_argument("--min-length", type=int, default=WIKI_MIN_NAME_LENGTH,
                         metavar="N", help=f"Minimum name length (default: {WIKI_MIN_NAME_LENGTH})")
     parser.add_argument("--since", metavar="DURATION",
@@ -309,11 +378,28 @@ def main():
         print("Interactive: prompting before each insertion")
     print()
 
+    # --single: resolve slug to a specific file before building the index
+    single_file: Path | None = None
+    single_repo: str | None = None
+    if args.single:
+        result = find_entity_by_slug(data_dir, args.single)
+        if result is None:
+            print(f"ERROR: no entity found with slug {args.single!r}")
+            sys.exit(1)
+        single_repo, single_file = result
+        print(f"Single entity: {single_file.name}  (repo: {single_repo})")
+
     print("Building entity index...")
     index = build_index(data_dir, args.min_length)
     print(f"  Indexed {len(index):,} entity names and aliases\n")
 
-    repos_to_scan = [args.repo] if args.repo else REPOS
+    # Determine repos and files to scan
+    if single_file is not None:
+        repos_to_scan = [single_repo]
+    elif args.repo:
+        repos_to_scan = [args.repo]
+    else:
+        repos_to_scan = REPOS
     total_links_inserted = 0
     total_files_modified = 0
 
@@ -323,7 +409,10 @@ def main():
             continue
 
         all_files = list(repo_dir.glob("*.json"))
-        files = [f for f in all_files if since_cutoff is None or f.stat().st_mtime >= since_cutoff]
+        if single_file is not None:
+            files = [single_file]
+        else:
+            files = [f for f in all_files if since_cutoff is None or f.stat().st_mtime >= since_cutoff]
         repo_links = 0
         repo_files = 0
         if not files:
@@ -345,15 +434,19 @@ def main():
             if not text_fields:
                 continue
 
+            entity_id = data.get("id", "")
+            entity_name = (data.get("name") or data.get("title") or "").lower()
+
             file_modified = False
             for field, text in text_fields:
                 matches = find_matches(text, index, args.partial)
                 if not matches:
                     continue
 
-                # Filter out self-references (don't link an entity to itself)
-                entity_id = data.get("id", "")
-                matches = [m for m in matches if m[2].get("id") != entity_id]
+                # Filter out self-references: skip if same ID or same name (catches name collisions)
+                matches = [m for m in matches
+                           if m[2].get("id") != entity_id
+                           and m[2].get("name", "").lower() != entity_name]
                 if not matches:
                     continue
 
@@ -365,10 +458,10 @@ def main():
                             accepted.append(m)
                     else:
                         accepted.append(m)
-                        print(f"    {entity_name!r} → {field}: {matched_text!r} → [[{entry['name']}]]")
+                        print(f"    {entity_name!r} → {field}: {matched_text!r} → [[{matched_text}|{entry['id']}]]")
 
                 if accepted and not args.dry_run:
-                    data[field] = apply_links(text, accepted)
+                    set_nested(data, field, apply_links(text, accepted))
                     file_modified = True
 
                 repo_links += len(accepted)

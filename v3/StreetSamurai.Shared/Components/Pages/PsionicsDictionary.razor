@@ -10,7 +10,7 @@
             <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
         </div>
         <div class="dict-items">
-            @foreach (var p in PagedItems)
+            @foreach (var p in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == p.Name ? "active" : "")" @onclick="() => Edit(p)">
                     <div class="fw-bold small">@p.Name</div>
@@ -18,7 +18,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -62,7 +61,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<PsionicData> FilteredItems
+    private List<PsionicData> FilteredItems
     {
         get
         {
@@ -71,14 +70,10 @@
                 result = result.Where(p => p.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(p => selectedTags.All(t => p.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<PsionicData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<PsionicData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized()
     {
@@ -96,7 +91,7 @@
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private void AddNew() { editing = new PsionicData(); isNew = true; confirmDelete = false; aliasInput = ""; practitionersInput = ""; }
-    private void Edit(PsionicData p) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_psionics", p.Id); editing = p; originalName = p.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", p.Aliases); practitionersInput = string.Join(", ", p.KnownPractitioners); }
+    private void Edit(PsionicData p) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_psionics", p.Id); editing = p; originalName = p.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", p.Aliases); practitionersInput = string.Join(", ", p.KnownPractitioners); if (!Nav.Uri.Contains("id=" + p.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + p.Id, forceLoad: false); }
 
     private void SaveEdit()
     {

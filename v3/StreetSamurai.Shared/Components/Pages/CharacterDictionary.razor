@@ -11,7 +11,7 @@
 
         </div>
         <div class="dict-items">
-            @foreach (var c in PagedItems)
+            @foreach (var c in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == c.Name ? "active" : "")" @onclick="() => Edit(c)">
                     <div class="fw-bold small">@c.Name</div>
@@ -19,7 +19,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -160,7 +159,7 @@
     private string editStressLow = "", _editStressMed = "", _editStressHigh = "", _editStressCrit = "";
     private string editStoryHooks = "";
 
-    private IEnumerable<CharacterData> FilteredItems
+    private List<CharacterData> FilteredItems
     {
         get
         {
@@ -169,13 +168,10 @@
                 result = result.Where(c => c.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(c => selectedTags.All(tag => c.Tags.Contains(tag)));
-            return result;
+            return result.ToList();
         }
     }
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<CharacterData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<CharacterData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized()
     {
@@ -238,6 +234,7 @@
 
         // Story
         editStoryHooks = string.Join("\n", c.StoryHooks);
+        if (!Nav.Uri.Contains("id=" + c.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + c.Id, forceLoad: false);
     }
 
     private void SaveEdit()

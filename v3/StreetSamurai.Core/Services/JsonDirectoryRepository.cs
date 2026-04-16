@@ -390,7 +390,7 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
     public static string Slugify(string name) =>
         SlugRegex().Replace(StripDiacritics(name.ToLowerInvariant().Trim()), "_").Trim('_');
 
-    /// <summary>URL-safe hyphenated slug derived from a display name (e.g. "Kyle Ellen Corbin-Vasik" → "kyle-ellen-corbin-vasik").</summary>
+    /// <summary>URL-safe slug: all non-alphanumeric chars → hyphens (e.g. "Kyle Ellen Corbin-Vasik" → "kyle-ellen-corbin-vasik").</summary>
     public static string ToSlug(string name) =>
         SlugRegex().Replace(StripDiacritics(name.ToLowerInvariant().Trim()), "-").Trim('-');
 
@@ -399,10 +399,23 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
         string.IsNullOrWhiteSpace(slug) ? null
         : GetAll().FirstOrDefault(item => ToSlug(_nameSelector(item)) == slug);
 
+    private static readonly Dictionary<char, string> DiacriticMap = new()
+    {
+        ['ø'] = "o", ['Ø'] = "o", ['ð'] = "d", ['Ð'] = "d", ['þ'] = "th", ['Þ'] = "th",
+        ['æ'] = "ae", ['Æ'] = "ae", ['œ'] = "oe", ['Œ'] = "oe", ['ß'] = "ss",
+        ['ł'] = "l", ['Ł'] = "l", ['ı'] = "i", ['ĸ'] = "k", ['ŉ'] = "n",
+    };
+
     private static string StripDiacritics(string text)
     {
-        var normalized = text.Normalize(System.Text.NormalizationForm.FormD);
-        var sb = new System.Text.StringBuilder(normalized.Length);
+        var sb = new System.Text.StringBuilder(text.Length + 4);
+        foreach (var c in text)
+        {
+            if (DiacriticMap.TryGetValue(c, out var mapped)) { sb.Append(mapped); continue; }
+            sb.Append(c);
+        }
+        var normalized = sb.ToString().Normalize(System.Text.NormalizationForm.FormD);
+        sb.Clear();
         foreach (var c in normalized)
         {
             if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c) != System.Globalization.UnicodeCategory.NonSpacingMark)
@@ -413,4 +426,5 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
 
     [GeneratedRegex(@"[^a-z0-9]+")]
     private static partial Regex SlugRegex();
+
 }

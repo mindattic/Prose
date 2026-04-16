@@ -11,7 +11,7 @@
 
         </div>
         <div class="dict-items">
-            @foreach (var a in PagedItems)
+            @foreach (var a in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == a.Name ? "active" : "")" @onclick="() => Edit(a)">
                     <div class="fw-bold small">@a.Name</div>
@@ -19,7 +19,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -76,7 +75,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<AutomatonData> FilteredItems
+    private List<AutomatonData> FilteredItems
     {
         get
         {
@@ -85,19 +84,16 @@
                 result = result.Where(a => a.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(a => selectedTags.All(t => a.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<AutomatonData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<AutomatonData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private void AddNew() { editing = new AutomatonData(); isNew = true; _confirmDelete = false; _aliasInput = ""; }
-    private void Edit(AutomatonData a) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_automata", a.Id); editing = a; originalName = a.Name; isNew = false; _confirmDelete = false; _aliasInput = string.Join(", ", a.Aliases); }
+    private void Edit(AutomatonData a) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_automata", a.Id); editing = a; originalName = a.Name; isNew = false; _confirmDelete = false; _aliasInput = string.Join(", ", a.Aliases); if (!Nav.Uri.Contains("id=" + a.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + a.Id, forceLoad: false); }
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;

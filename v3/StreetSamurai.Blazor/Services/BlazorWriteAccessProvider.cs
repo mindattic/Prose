@@ -48,7 +48,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         get
         {
             var user = GetUser();
-            return user.Identity?.Name ?? "Guest";
+            return user.Identity?.Name ?? "Visitor";
         }
     }
 
@@ -57,7 +57,7 @@ public class BlazorWriteAccessProvider : IWriteAccessProvider
         get
         {
             var user = GetUser();
-            return user.FindFirst(ClaimTypes.Role)?.Value ?? "Guest";
+            return user.FindFirst(ClaimTypes.Role)?.Value ?? "Visitor";
         }
     }
 

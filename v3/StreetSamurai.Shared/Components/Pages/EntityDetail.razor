@@ -454,7 +454,7 @@ else if (vocabEntry != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Definition</div>
-                <p>@vocabEntry.Definition</p>
+                <XrefText Text="@vocabEntry.Definition" />
             </div>
         }
         @if (!string.IsNullOrWhiteSpace(vocabEntry.Origin))
@@ -468,14 +468,14 @@ else if (vocabEntry != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Example</div>
-                <blockquote class="entity-example">@vocabEntry.Example</blockquote>
+                <blockquote class="entity-example"><XrefText Text="@vocabEntry.Example" /></blockquote>
             </div>
         }
         @if (!string.IsNullOrWhiteSpace(vocabEntry.Usage))
         {
             <div class="entity-section">
                 <div class="entity-section-label">Usage Context</div>
-                @vocabEntry.Usage
+                <XrefText Text="@vocabEntry.Usage" />
             </div>
         }
     </div>
@@ -598,7 +598,7 @@ else if (genemod != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Side Effects</div>
-                <ul class="entity-list">@foreach (var s in genemod.SideEffects) { <li>@s</li> }</ul>
+                <ul class="entity-list">@foreach (var s in genemod.SideEffects) { <li><XrefText Text="@s" /></li> }</ul>
             </div>
         }
         @if (genemod.StoryHooks.Any())
@@ -637,14 +637,14 @@ else if (pharma != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Effects</div>
-                <ul class="entity-list">@foreach (var e in pharma.Effects) { <li>@e</li> }</ul>
+                <ul class="entity-list">@foreach (var e in pharma.Effects) { <li><XrefText Text="@e" /></li> }</ul>
             </div>
         }
         @if (pharma.SideEffects.Any())
         {
             <div class="entity-section">
                 <div class="entity-section-label">Side Effects</div>
-                <ul class="entity-list">@foreach (var s in pharma.SideEffects) { <li>@s</li> }</ul>
+                <ul class="entity-list">@foreach (var s in pharma.SideEffects) { <li><XrefText Text="@s" /></li> }</ul>
             </div>
         }
         @if (pharma.StoryHooks.Any())
@@ -678,7 +678,7 @@ else if (material != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Properties</div>
-                <ul class="entity-list">@foreach (var p in material.Properties) { <li>@p</li> }</ul>
+                <ul class="entity-list">@foreach (var p in material.Properties) { <li><XrefText Text="@p" /></li> }</ul>
             </div>
         }
         @if (material.Applications.Any())
@@ -771,7 +771,7 @@ else if (automaton != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Armament</div>
-                <ul class="entity-list">@foreach (var a in automaton.Armament) { <li>@a</li> }</ul>
+                <ul class="entity-list">@foreach (var a in automaton.Armament) { <li><XrefText Text="@a" /></li> }</ul>
             </div>
         }
         @if (automaton.StoryHooks.Any())
@@ -811,21 +811,21 @@ else if (archetype != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Will Always</div>
-                <ul class="entity-list">@foreach (var w in archetype.WillAlways) { <li>@w</li> }</ul>
+                <ul class="entity-list">@foreach (var w in archetype.WillAlways) { <li><XrefText Text="@w" /></li> }</ul>
             </div>
         }
         @if (archetype.WillNever.Any())
         {
             <div class="entity-section">
                 <div class="entity-section-label">Will Never</div>
-                <ul class="entity-list">@foreach (var w in archetype.WillNever) { <li>@w</li> }</ul>
+                <ul class="entity-list">@foreach (var w in archetype.WillNever) { <li><XrefText Text="@w" /></li> }</ul>
             </div>
         }
         @if (archetype.Unless.Any())
         {
             <div class="entity-section">
                 <div class="entity-section-label">Unless</div>
-                <ul class="entity-list">@foreach (var u in archetype.Unless) { <li>@u</li> }</ul>
+                <ul class="entity-list">@foreach (var u in archetype.Unless) { <li><XrefText Text="@u" /></li> }</ul>
             </div>
         }
     </div>
@@ -918,7 +918,7 @@ else if (consumerGood != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Slogan</div>
-                <em class="text-muted">@consumerGood.Slogan</em>
+                <em class="text-muted"><XrefText Text="@consumerGood.Slogan" /></em>
             </div>
         }
         @if (!string.IsNullOrWhiteSpace(consumerGood.CulturalContext))
@@ -944,7 +944,7 @@ else if (quote != null)
                         Tags="@quote.Tags" />
     <div class="entity-detail-body">
         <div class="entity-section">
-            <blockquote class="entity-example" style="font-size:1rem;line-height:1.7;">@quote.Quote</blockquote>
+            <blockquote class="entity-example" style="font-size:1rem;line-height:1.7;"><XrefText Text="@quote.Quote" /></blockquote>
         </div>
         <div class="entity-meta-row">
             @if (!string.IsNullOrWhiteSpace(quote.Category)) { <div class="entity-meta-item"><span class="entity-meta-label">Category</span> @quote.Category</div> }
@@ -1039,7 +1039,7 @@ else if (contract != null)
         {
             <div class="entity-section">
                 <div class="entity-section-label">Complications</div>
-                <ul class="entity-list">@foreach (var c in contract.Complications) { <li>@c</li> }</ul>
+                <ul class="entity-list">@foreach (var c in contract.Complications) { <li><XrefText Text="@c" /></li> }</ul>
             </div>
         }
     </div>

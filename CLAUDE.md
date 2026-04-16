@@ -17,7 +17,7 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 ## Code Style
 - Do NOT use underscore-prefixed variables (e.g., `_myField`). Use `camelCase` for private fields without the underscore prefix.
 - JSON only for all data files. No Python scripts, no YAML, no Markdown files except README.
-- Always keep MAUI and Blazor hosts in sync (routes, CSS, JS, imports).
+- Web-only project (Blazor Server). No MAUI host.
 
 ## World Rules
 - The symbol Φ is the QUANTA currency symbol. It is NEVER the Greek letter phi.

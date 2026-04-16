@@ -11,7 +11,7 @@
 
         </div>
         <div class="dict-items">
-            @foreach (var s in PagedItems)
+            @foreach (var s in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
                     <div class="fw-bold small">@s.Name</div>
@@ -19,7 +19,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
     <div class="dict-editor">
         @if (editing != null)
@@ -55,7 +54,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
-    private IEnumerable<MaterialData> FilteredItems
+    private List<MaterialData> FilteredItems
     {
         get
         {
@@ -64,16 +63,13 @@
                 result = result.Where(s => s.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(s => selectedTags.All(t => s.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<MaterialData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<MaterialData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
     private void AddNew() { editing = new MaterialData(); isNew = true; confirmDelete = false; }
-    private void Edit(MaterialData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_materials", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; }
+    private void Edit(MaterialData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_materials", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();

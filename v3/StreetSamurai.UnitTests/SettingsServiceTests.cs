@@ -157,4 +157,71 @@ public class SettingsServiceTests
         Assert.That(fresh.MaxTokens, Is.EqualTo(9999));
         fresh.Dispose();
     }
+
+    // ── SMTP defaults ────────────────────────────────────────────────────────
+
+    [Test]
+    public void Defaults_SmtpPort_Is587()
+    {
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.SmtpPort, Is.EqualTo(587));
+    }
+
+    [Test]
+    public void Defaults_SmtpEnableSsl_IsTrue()
+    {
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.SmtpEnableSsl, Is.True);
+    }
+
+    [Test]
+    public void Defaults_SmtpHost_IsEmpty()
+    {
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.SmtpHost, Is.Empty);
+    }
+
+    [Test]
+    public void Defaults_SmtpFrom_IsEmpty()
+    {
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.SmtpFrom, Is.Empty);
+    }
+
+    [Test]
+    public void SmtpSettings_RoundTrip()
+    {
+        svc.SmtpHost = "smtp.example.com";
+        svc.SmtpPort = 465;
+        svc.SmtpUsername = "sender@example.com";
+        svc.SmtpFrom = "sender@example.com";
+        svc.SmtpEnableSsl = false;
+        svc.Flush();
+
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.SmtpHost, Is.EqualTo("smtp.example.com"));
+        Assert.That(fresh.SmtpPort, Is.EqualTo(465));
+        Assert.That(fresh.SmtpUsername, Is.EqualTo("sender@example.com"));
+        Assert.That(fresh.SmtpFrom, Is.EqualTo("sender@example.com"));
+        Assert.That(fresh.SmtpEnableSsl, Is.False);
+    }
+
+    // ── RepoListOnRight ───────────────────────────────────────────────────────
+
+    [Test]
+    public void Defaults_RepoListOnRight_IsTrue()
+    {
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.RepoListOnRight, Is.True);
+    }
+
+    [Test]
+    public void RepoListOnRight_CanBeToggled()
+    {
+        svc.RepoListOnRight = false;
+        svc.Flush();
+
+        using var fresh = new SettingsService(tempDir);
+        Assert.That(fresh.RepoListOnRight, Is.False);
+    }
 }

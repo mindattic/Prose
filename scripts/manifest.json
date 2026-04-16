@@ -37,6 +37,11 @@
               "desc": "Limit scan to one repo folder, e.g. --repo people"
             },
             {
+              "flag": "--single SLUG",
+              "default": null,
+              "desc": "Scan a single entity by slug, e.g. --single kyle-ellen-corbin-vasik"
+            },
+            {
               "flag": "--min-length N",
               "default": 4,
               "desc": "Minimum entity name length to match (avoids noise like 'AI')"

@@ -11,7 +11,7 @@
 
         </div>
         <div class="dict-items">
-            @foreach (var v in PagedItems)
+            @foreach (var v in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Term == v.Term ? "active" : "")" @onclick="() => Edit(v)">
                     <div class="fw-bold small">@v.Term</div>
@@ -19,7 +19,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -67,7 +66,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<VocabularyEntry> FilteredItems
+    private List<VocabularyEntry> FilteredItems
     {
         get
         {
@@ -76,17 +75,14 @@
                 result = result.Where(v => v.Term.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(v => selectedTags.All(t => v.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<VocabularyEntry> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<VocabularyEntry> SortedItems => FilteredItems.OrderBy(x => x.Term).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
     private void AddNew() { editing = new VocabularyEntry(); isNew = true; _confirmDelete = false; }
-    private void Edit(VocabularyEntry v) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_vocabulary", v.Id); editing = v; originalTerm = v.Term; isNew = false; _confirmDelete = false; }
+    private void Edit(VocabularyEntry v) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_vocabulary", v.Id); editing = v; originalTerm = v.Term; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + v.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + v.Id, forceLoad: false); }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Term)) return; if (!isNew && originalTerm != editing.Term) Repo.Delete(originalTerm); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing == null) return; Repo.Delete(editing.Term); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender)

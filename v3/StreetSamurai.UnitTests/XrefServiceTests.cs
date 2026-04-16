@@ -18,21 +18,51 @@ public class XrefServiceTests
     private CorponationRepository corps = null!;
     private TechnologyRepository technology = null!;
     private VocabularyRepository vocabulary = null!;
+    private WeaponryRepository weaponry = null!;
+    private AmmunitionRepository ammunition = null!;
+    private EquipmentRepository equipment = null!;
+    private CyberwareRepository cyberware = null!;
+    private GenemodRepository genemods = null!;
+    private TransportationRepository transportation = null!;
+    private AutomatonRepository automata = null!;
+    private SubsidiaryRepository subsidiaries = null!;
+    private EntertainmentRepository entertainment = null!;
+    private ApparelRepository apparel = null!;
+    private MaterialRepository materials = null!;
+    private PharmaceuticalRepository pharmaceuticals = null!;
+    private ConsumerGoodRepository consumerGoods = null!;
+    private ContractRepository contracts = null!;
+    private LabSpecimenRepository labSpecimens = null!;
+    private PsionicRepository psionics = null!;
 
     [SetUp]
     public void SetUp()
     {
         tempDir = Path.Combine(Path.GetTempPath(), $"ss_xref_{Guid.NewGuid():N}");
         var engDir = Path.Combine(tempDir, "engine_data");
-        foreach (var sub in new[] { "people", "synthetics", "places", "factions", "corponations", "technology", "vocabulary" })
+        foreach (var sub in new[] {
+            "people", "synthetics", "places", "factions", "corponations", "technology", "vocabulary",
+            "weaponry", "ammunition", "equipment", "cyberware", "genemods", "transportation", "automata",
+            "subsidiaries", "entertainment", "apparel", "materials", "pharmaceuticals", "consumer_goods",
+            "contracts", "lab_specimens", "psionics"
+        })
             Directory.CreateDirectory(Path.Combine(engDir, sub));
 
         var paths = new TestPathProviderWithRoot(tempDir);
         chars = new(paths); synths = new(paths); districts = new(paths);
         factions = new(paths); corps = new(paths); technology = new(paths);
-        vocabulary = new(paths);
+        vocabulary = new(paths); weaponry = new(paths); ammunition = new(paths);
+        equipment = new(paths); cyberware = new(paths); genemods = new(paths);
+        transportation = new(paths); automata = new(paths); subsidiaries = new(paths);
+        entertainment = new(paths); apparel = new(paths); materials = new(paths);
+        pharmaceuticals = new(paths); consumerGoods = new(paths); contracts = new(paths);
+        labSpecimens = new(paths); psionics = new(paths);
 
-        svc = new XrefService(chars, synths, districts, factions, corps, technology, vocabulary);
+        svc = new XrefService(
+            chars, synths, districts, factions, corps, technology, vocabulary,
+            weaponry, ammunition, equipment, cyberware, genemods, transportation,
+            automata, subsidiaries, entertainment, apparel, materials,
+            pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics);
     }
 
     [TearDown]

@@ -1,4 +1,5 @@
 @using System.Text.Json
+@inject XrefService Xref
 
 @if (!string.IsNullOrEmpty(Json))
 {
@@ -30,7 +31,7 @@
 
     private static readonly HashSet<string> SkipFields = new() { "id", "description", "body", "tags", "parent_corponation", "type" };
 
-    private static string RenderEntry(string json)
+    private string RenderEntry(string json)
     {
         var sb = new System.Text.StringBuilder();
         try
@@ -41,7 +42,7 @@
             // Description
             var desc = GetString(root, "description") ?? GetString(root, "body") ?? "";
             if (!string.IsNullOrWhiteSpace(desc))
-                sb.Append($"<div class=\"ev-desc\">{Esc(desc).Replace("\\n", "<br>").Replace("\n", "<br>")}</div>");
+                sb.Append($"<div class=\"ev-desc\">{FormatStr(desc)}</div>");
 
             // Corporate chain
             var parent = GetString(root, "parent_corponation") ?? "";
@@ -96,7 +97,7 @@
         return null;
     }
 
-    private static string FormatVal(JsonElement val) => val.ValueKind switch
+    private string FormatVal(JsonElement val) => val.ValueKind switch
     {
         JsonValueKind.String => FormatStr(val.GetString() ?? ""),
         JsonValueKind.Number => $"<span style=\"color:#79c0ff\">{val}</span>",
@@ -107,20 +108,36 @@
         _ => Esc(val.ToString()),
     };
 
-    private static string FormatStr(string s)
+    private string FormatStr(string s)
     {
         if (string.IsNullOrWhiteSpace(s)) return "<span style=\"color:#8b949e;font-style:italic\">\u2014</span>";
-        return Esc(s).Replace("\\n", "<br>").Replace("\n", "<br>");
+        var segments = Xref.ParseSegments(s);
+        var sb = new System.Text.StringBuilder();
+        foreach (var seg in segments)
+        {
+            if (seg is XrefSegment xrefSeg)
+            {
+                var title = string.IsNullOrWhiteSpace(xrefSeg.Entry.Subtitle)
+                    ? Esc(xrefSeg.Entry.Type)
+                    : $"{Esc(xrefSeg.Entry.Type)} \u2014 {Esc(xrefSeg.Entry.Subtitle)}";
+                sb.Append($"<a href=\"/entity/{Esc(xrefSeg.Entry.Id)}\" class=\"xref-link xref-{Esc(xrefSeg.Entry.Type)}\" title=\"{title}\">{Esc(xrefSeg.Text)}</a>");
+            }
+            else
+            {
+                sb.Append(Esc(seg.Text).Replace("\\n", "<br>").Replace("\n", "<br>"));
+            }
+        }
+        return sb.ToString();
     }
 
-    private static string FormatArr(JsonElement arr)
+    private string FormatArr(JsonElement arr)
     {
         var items = arr.EnumerateArray().ToList();
         if (items.Count == 0) return "\u2014";
         if (items.All(i => i.ValueKind == JsonValueKind.String))
         {
             var sb = new System.Text.StringBuilder("<ul class=\"ev-list\">");
-            foreach (var i in items) sb.Append($"<li>{Esc(i.GetString() ?? "")}</li>");
+            foreach (var i in items) sb.Append($"<li>{FormatStr(i.GetString() ?? "")}</li>");
             return sb.Append("</ul>").ToString();
         }
         var csb = new System.Text.StringBuilder();
@@ -128,7 +145,7 @@
         return csb.ToString();
     }
 
-    private static string FormatObj(JsonElement obj)
+    private string FormatObj(JsonElement obj)
     {
         var sb = new System.Text.StringBuilder("<table class=\"ev-fields\" style=\"margin:0\">");
         foreach (var p in obj.EnumerateObject())

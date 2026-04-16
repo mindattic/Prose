@@ -11,7 +11,7 @@
             <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
         </div>
         <div class="dict-items">
-            @foreach (var w in PagedItems)
+            @foreach (var w in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == w.Name ? "active" : "")" @onclick="() => Edit(w)">
                     <div class="fw-bold small">@w.Name</div>
@@ -19,7 +19,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -66,7 +65,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<FlyoverEntityData> FilteredItems
+    private List<FlyoverEntityData> FilteredItems
     {
         get
         {
@@ -75,14 +74,10 @@
                 result = result.Where(w => w.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(w => selectedTags.All(t => w.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<FlyoverEntityData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<FlyoverEntityData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized()
     {
@@ -100,7 +95,7 @@
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private void AddNew() { editing = new FlyoverEntityData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; }
-    private void Edit(FlyoverEntityData w) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_flyover", w.Id); editing = w; originalName = w.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", w.Aliases); locationsInput = string.Join(", ", w.KnownLocations); }
+    private void Edit(FlyoverEntityData w) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_flyover", w.Id); editing = w; originalName = w.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", w.Aliases); locationsInput = string.Join(", ", w.KnownLocations); if (!Nav.Uri.Contains("id=" + w.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + w.Id, forceLoad: false); }
 
     private void SaveEdit()
     {
