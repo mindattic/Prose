@@ -1,0 +1,49 @@
+{
+  "id": "c4a8e3f0d2b16c9e5f8a3d4c7e1b2f04",
+  "name": "Kang-Petrov Arms KPR-CL1 'Dustless'",
+  "type": "weapon",
+  "aliases": [
+    "Dustless",
+    "KPR-CL1",
+    "The Clean",
+    "Caseless-One"
+  ],
+  "category": "rifle",
+  "description": "The KPR-CL1 is Kang-Petrov's first — and, depending on who you ask, only successful — venture into caseless ammunition. The 7.62mm Caseless round is a combustible propellant block bonded to the projectile, which means there is no brass to extract and no ejection port to foul. The KPR-CL1's receiver is a departure from Kang-Petrov's stamped heritage: it is a two-part aluminum extrusion with a polymer overmold, sealed against contamination to a standard that the marketing material describes as 'industrial adverse environment rated.' The rotating bolt has been replaced with a tilting-block design that seals the chamber more completely during firing, reducing the cook-off risk that plagued early caseless designs. The result is a rifle that produces no spent brass, runs significantly cleaner than its brass-cased siblings, and weighs approximately 400 grams less for the same ammunition load. Barrel length is 420mm. The magazine is a translucent polymer box that lets operators see their remaining rounds, which is either a useful feature or an anxiety-inducing one depending on the situation.\n\nThe KPR-CL1 is a Tier 2 weapon wearing Tier 1 clothing. It costs more than the KPR-47 or KPR-74C, and the 7.62mm Caseless ammunition is harder to source in the shelf districts — it is a military standard round, which means the bulk of the supply flows through Arcturus Defense Solutions distribution channels and arrives in the civilian market at a meaningful markup. Mid-tier buyers who want the ballistic performance of the 7.62mm Soviet Pattern without the brass trail find it appealing. The absence of ejected cases is not just about cleanliness — it is about not leaving evidence on the floor of a corridor you were never supposed to be in.\n\nThe KPR-CL1 has a reputation in GLMZ's fixer community as a professional's budget option. It is not a Tessera. It is not an Arcturus. But it does the job without leaving the kind of debris that gets swept up by Arcturus Civil Security forensics units and traced back to someone's registered purchase. The rifles that have been in circulation for a decade have developed their own wear signature: the aluminum receiver anodization scratches differently than steel bluing, leaving bright silver lines at every contact point that operators cover with flat black spray paint and re-cover when the paint wears off. The translucent magazines yellow with age and UV exposure. Experienced operators replace them. Inexperienced operators do not notice until the polymer cracks mid-operation.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "caseless ammunition system",
+    "tilting-block bolt",
+    "aluminum extrusion receiver",
+    "sealed chamber design"
+  ],
+  "specifications": "caliber: 7.62mm Caseless\neffective_range: 380m\nrate_of_fire: Semi-automatic / Full-automatic\nmagazine_capacity: 32 rounds\nweight: 3.3 kg",
+  "tactical_use": "The KPR-CL1's primary tactical advantage is the absence of ejected brass — no cases on the floor, no ejection port open to debris ingress, and a marginally cleaner operating cycle that extends the interval between required maintenance. Operators who run it in GLMZ's industrial and sewage-corridor environments report fewer stoppages than comparable brass-cased rifles, though the caseless ammunition is more sensitive to sustained heat than brass-cased alternatives, making sustained full-auto fire inadvisable. Most experienced operators run it on semi-auto for this reason, treating it as a precision-adjacent tool rather than a volume weapon.",
+  "cultural_context": "The KPR-CL1 occupies an awkward social position in GLMZ: too expensive for the shelf districts where KP rifles are a birthright, too cheap for the corporate tiers where no one buys Kang-Petrov anything. It is the rifle of the aspiring — mid-tier freelancers who want to signal competence without spending Tessera money, former shelf workers who have moved up a tier and are still buying KP out of loyalty or habit. The caseless ammunition supply chain also makes it a useful index of Arcturus Defense Solutions' gray-market distribution network, which several independent researchers have been quietly documenting for the past four years.",
+  "known_users": [
+    "mid-tier fixers and freelancers",
+    "former shelf workers in upward mobility",
+    "small-operation mercenary crews",
+    "gray-market arms traders",
+    "Tier 2 security contractors"
+  ],
+  "story_hooks": [
+    "A shipment of 7.62mm Caseless ammunition traced to an Arcturus Defense Solutions military contract has been appearing in KPR-CL1 magazines throughout the Wicker Park exclusion corridor — either someone inside ADS is running a diversion operation, or ADS is deliberately arming a faction for reasons that have not yet become obvious.",
+    "The KPR-CL1 that killed a Slagworks union organizer left no brass, but the forensic caseless residue pattern is traceable to a specific production batch — and that batch was sold to a single licensed distributor who operates out of a Tier 3 commercial block that lists Tessera Corponation as its parent company."
+  ],
+  "ammunition_type": [
+    "7.62mm Caseless"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier2",
+    "caseless",
+    "full-auto",
+    "clean-signature",
+    "fixer",
+    "slagworks"
+  ]
+}

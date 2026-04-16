@@ -1,0 +1,35 @@
+{
+  "id": "5d9e2a7c4f1b63087e5a2d9c1f4b7308",
+  "name": "Patient Record Extraction — Meridian Wellness Group, Lakeview Medical Tower",
+  "type": "contract",
+  "codename": "SECOND OPINION",
+  "contract_tier": "B",
+  "posted_by": "Structured Advocacy Collective (front organization — civil liberties nonprofit, Tier 2 registered)",
+  "target": "Longitudinal patient records for approximately 340 individuals enrolled in Meridian Wellness Group's 'voluntary' chronic pain management study, floors 11-14, Lakeview Medical Tower",
+  "objective": "Penetrate Meridian Wellness Group's local clinical server cluster on floors 11-14 and extract complete records for the Calumet Cohort study group without triggering the facility's automatic regulatory-compliance wipe protocol. Physical access required — the server cluster is air-gapped from external networks.",
+  "location": "Lakeview Medical Tower, Tier 3 administrative district, North Shore Corridor, GLMZ",
+  "payout": "Φ85,000",
+  "deadline": "Before the quarterly audit window closes in 18 days — after which Meridian is legally entitled to archive and redact study data",
+  "complications": [
+    "Lakeview Medical Tower uses Arcturus Civil Security for building security on floors 1-10; floors 11-14 are Meridian's private security detail — separate protocols, separate chain of command, and they do not coordinate with Arcturus",
+    "The server cluster has a compliance-wipe trigger tied to unauthorized access attempts — a failed login or a detected intrusion deletes the cohort records automatically and irreversibly",
+    "Several of the study participants are currently inpatient on floors 12-13 and their real-time monitoring feeds run through the same server cluster; any extraction that disrupts the cluster risks disrupting active patient care"
+  ],
+  "moral_weight": "grey",
+  "description": "The Structured Advocacy Collective is a known if minor player in GLMZ's civil-legal scene — they file complaints, they publish reports, they occasionally win small procedural victories against corporate medical programs. Their posting is careful and specific: they want records, not destruction, and they've specified that patient safety is a hard constraint. The pay is solid for a B-tier job. The brief reads like it was written by a lawyer.\n\nThe Calumet Cohort is 340 people from Shelf 11 and 12 who enrolled in a chronic pain study after an industrial filtration accident left a significant percentage of the local population with degenerative nerve damage. Meridian Wellness Group promised treatment. What they delivered was an extended observational study — they catalogued the progression of the damage and tested proprietary compounds that never left trial phase. Participants signed consent forms that most of them couldn't parse. The records the Collective wants contain dosage logs, adverse event reports that were never filed with any oversight body, and correspondence between Meridian's clinical director and the company's litigation team. The Collective intends to publish. Meridian knows something is coming and has already begun the legal process of reclassifying the study data as proprietary research under trade secret protections. The audit window closing is not incidental — it's a designed deadline.",
+  "story_hooks": [
+    "One of the current inpatients on floor 12 is a family member of a freelancer with Signal Network connections — word that someone's running a job in the tower reaches them before the contractor even enters the building",
+    "The Meridian clinical director hasn't left the building in four days; her access logs show she's been on floor 14 continuously, which isn't where her office or lab are located"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-B",
+    "retrieval",
+    "data",
+    "medical",
+    "corporate",
+    "air-gap",
+    "covert"
+  ]
+}

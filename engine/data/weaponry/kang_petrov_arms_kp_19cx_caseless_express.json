@@ -1,0 +1,50 @@
+{
+  "id": "29e7b5d2a4f8c1063d9e7b5a3c2f1e49",
+  "name": "Kang-Petrov Arms KP-19CX 'Caseless Express'",
+  "type": "weapon",
+  "aliases": [
+    "Caseless Express",
+    "KP-19CX",
+    "Express",
+    "Hot Nine"
+  ],
+  "category": "pistol",
+  "description": "The KP-19CX is a 9x19mm Caseless-only performance variant of the KP-19 platform, optimized to extract maximum velocity and round count from the caseless propellant format. Where the KP-19CL is a straight conversion of the standard pistol, the CX is a ground-up caseless design: the chamber is tightly dimensioned to caseless specifications, the feed geometry is steeper to handle the different shape of caseless projectiles, and the heating management system—a thin ceramic heat-sink array embedded in the grip—addresses the primary failure mode of caseless pistols, which is cook-off from a hot chamber. The result is a pistol that fires caseless 9mm roughly 12% faster than a standard conversion and handles sustained fire without the reliability penalties that have plagued caseless pistols since the format's introduction. The magazine holds 22 rounds; the absence of brass cases allows tighter packing.\n\nThe KP-19CX is a Tier 2 product priced at the upper edge of what Shelf workers can stretch to, and it sells to people who want military-standard ammunition performance in a civilian platform. Caseless 9mm is increasingly common in GLMZ as military surplus flows into the civilian market through the usual unofficial channels, and the CX is designed to take full advantage of that supply chain. The heat management system means it can run hot without the cook-off that ruins cheaper caseless pistols, making it genuinely more reliable than most competition at similar price points.\n\nThe CX runs warm in sustained fire—the ceramic heat-sink handles the thermal load but transfers some of it to the grip, and after a full magazine fired quickly the grip is noticeably warm to the touch. Operators who run it in competition or training wear light grip gloves as a matter of course. The recoil impulse from the higher-velocity caseless load is snappier than standard 9mm, and the 22-round capacity means shooters often try to push through it rather than managing it, which creates a characteristic shooting pattern that forensic reconstructors have learned to recognize.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "caseless-optimized chamber",
+    "ceramic heat-sink array",
+    "caseless feed geometry",
+    "high-capacity caseless magazine"
+  ],
+  "specifications": "caliber: 9x19mm Caseless\neffective_range: 55m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 22 rounds\nweight: 0.79 kg",
+  "tactical_use": "The KP-19CX is the choice for operators who want caseless reliability without the cook-off risk of cheaper platforms. The ceramic heat management extends sustained-fire capability significantly and makes the gun viable for rapid-engagement scenarios where multiple magazine strings are likely. The higher muzzle velocity improves terminal performance at range. Operators transitioning from brass-cased 9mm need to adjust for the snappier recoil impulse; most find it takes 500 rounds of practice to fully accommodate. The 22-round capacity gives a meaningful advantage in extended engagements.",
+  "cultural_context": "The KP-19CX represents the slow upward migration of military-format ammunition into the Tier 1-2 civilian market—something Arcturus Civil Security watches with professional concern. In practical terms, the gun is a statement that you've invested in your equipment beyond the minimum. In the fixer and security communities, it's respected as a practical choice. In Arcturus interdiction briefings, it's flagged as an indicator of organized capability.",
+  "known_users": [
+    "security professionals running caseless-standardized loadouts",
+    "competitive shooting circuit participants",
+    "Shelf workers near military surplus distribution points",
+    "fixer teams coordinating with military-adjacent suppliers",
+    "Slagworks industrial security on high-risk contracts"
+  ],
+  "story_hooks": [
+    "A cache of factory-fresh KP-19CX pistols is found in an Excluded zone distribution hub—the manufacturing lot traces to a production run that Slagworks reported as destroyed due to quality defects, but these guns are perfect. Someone intercepted a disposal shipment and is building an arsenal.",
+    "The caseless 9mm ammunition type used in a string of targeted killings across three GLMZ districts matches a specific propellant batch that only the KP-19CX is optimized to extract full velocity from. The shooter is using the gun the way it was designed to be used, which tells investigators something specific about their training."
+  ],
+  "ammunition_type": [
+    "9x19mm Caseless"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks-industrial",
+    "tier2",
+    "caseless",
+    "high-velocity",
+    "heat-managed",
+    "performance"
+  ]
+}

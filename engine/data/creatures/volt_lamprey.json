@@ -1,0 +1,45 @@
+{
+  "id": "eba0a016e615bca42582c2f2be702a32",
+  "name": "Volt Lamprey",
+  "type": "creature",
+  "aliases": [
+    "sparker",
+    "wire mouth",
+    "zapper"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "The Volt Lamprey descended from sea lampreys that entered the Great Lakes system centuries before GLMZ's construction and then colonized the expanding industrial waterways as the city grew over them. They average 60 to 80 centimeters, retaining the ancestral circular toothed mouth but having developed an extraordinary adaptation over two centuries of proximity to submerged electrical infrastructure: a bio-electric generating organ in the anterior trunk, capable of producing short-range discharges of 40 to 60 volts used primarily for communication and predator deterrence. The skin is pale amber, almost translucent, and the faint blue pulse of the electric organ is visible through the body wall in complete darkness — giving rise to the \"sparker\" nickname among tunnel workers.\n\nVolt Lampreys do not typically attach to living hosts the way their ancestors did — the available megafauna in pipe systems is insufficient to support parasitism, and generations of selection pressure have pushed them toward scavenging dead organic matter and the biofilm colonies that carpet pipe interiors. They live in loose aggregations of four to twelve individuals and communicate through precisely timed electrical pulses, a behavior that researchers from the University of GLMZ's urban ecology department have been attempting to decode for eleven years without conclusive results. When threatened, multiple individuals discharge simultaneously, creating a shock that has knocked maintenance workers off ladders.\n\nVolt Lampreys have an unusual cultural status: they are simultaneously feared and commodified. Shock-stick workshops in the Shelf districts have been caught attempting to extract the electric organs for use in improvised weapons — a practice that invariably fails because the organ degrades within hours of removal. Among the tunnel-worker community, there is a practiced etiquette around Volt Lamprey aggregations: slow movement, no sudden lights, definitely no dropped tools. Workers who break the etiquette and get shocked are given no sympathy by their peers.",
+  "habitat": [
+    "submerged electrical conduit tunnels",
+    "flooded basement infrastructure",
+    "canal lock chambers",
+    "industrial drain sumps"
+  ],
+  "diet": "biofilm, organic detritus, small invertebrates, carrion",
+  "threat_level": "medium",
+  "notable_traits": [
+    "bio-electric discharge organ",
+    "synchronized group shocking",
+    "translucent skin revealing internal organ glow",
+    "colonial communication via electrical pulses"
+  ],
+  "encounters": "Most dangerous in flooded enclosed spaces where standing water conducts discharge across wider areas. Tunnel workers encounter them regularly. Civilians who breach sealed basement sections during urban exploration or squatting risk encountering aggregations. They do not pursue — they discharge when cornered or when vibration patterns match threat signatures.",
+  "known_uses": "Failed attempts at organ extraction for weapons. GLMZ university research subjects — live specimens fetch 80-120 Φ from academic buyers. Some underground fight promoters have attempted to use them as arena hazards, which Arcturus Civil Security considers a low-priority concern.",
+  "story_hooks": [
+    "The electrical pulse patterns of a specific aggregation in a sealed pre-Collapse tunnel section appear to be responding to — and mimicking — encrypted data signals running through a nearby fiber conduit. Someone wants to know what they've learned.",
+    "A tunnel worker was found dead in a flooded section — the shock burns are wrong. Too focused. Too deliberate."
+  ],
+  "related_entities": [
+    "Drain Eel"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "drainage",
+    "electric",
+    "lamprey",
+    "colonial"
+  ]
+}

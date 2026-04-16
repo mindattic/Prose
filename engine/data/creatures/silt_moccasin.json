@@ -1,0 +1,48 @@
+{
+  "id": "3809ee6009c5d902a2e69cce4f870ef2",
+  "name": "Silt Moccasin",
+  "type": "creature",
+  "aliases": [
+    "mud jaw",
+    "brown wraith",
+    "sump viper"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "Descended from cottonmouth water moccasins introduced to GLMZ waterways by displaced southern refugees over the course of two centuries — many brought as pest deterrents, some released deliberately, some escaped flooded terrariums when Kentucky and Missouri drowned. The Silt Moccasin has adapted hard to industrial drainage environments, its body deepening to a uniform petroleum brown and its heat-sensing pit organs evolving expanded sensitivity that picks up not just warm bodies but the thermal differential of heated industrial effluent discharge. They average 1.2 meters and have developed thicker epidermal layers that resist mild chemical burns from caustic runoff.\n\nSilt Moccasins occupy a higher predatory niche than Drain Eels, actively hunting rats, eels, and larger invertebrates in drainage sumps and retention basins. Unlike their surface ancestors, they rarely bask — instead they press into warm outflow pipes and heated sump walls to thermoregulate. Their venom has shifted composition over generations; it retains hemotoxic properties but has developed a secondary enzymatic component that may be an adaptation to digesting chemically contaminated prey. A bite from a Silt Moccasin in the modern day produces tissue necrosis faster and more aggressively than historical records suggest their ancestors did.\n\nSilt Moccasins are the creature that maintenance workers actually fear when descending into lower drainage levels. They are not aggressive without provocation, but they do not retreat — a trait their surface ancestors shared. A cornered Silt Moccasin holds its ground and strikes without warning escalation. There are informal Tier 1 folk medicine traditions around their venom, drawn from the communities that originally brought them north, but the enzymatic shift makes old antivenoms unreliable. Helix Biosystems has a patent on the only current treatment and prices it accordingly.",
+  "habitat": [
+    "industrial drainage sumps",
+    "retention basins",
+    "heated outflow tunnels",
+    "lower Shelf subsectors",
+    "Canal Ward deep infrastructure"
+  ],
+  "diet": "Rats, Drain Eels, large invertebrates, carrion",
+  "threat_level": "medium",
+  "notable_traits": [
+    "Enhanced thermoreceptive pit organs sensitive to industrial effluent heat signatures",
+    "Thickened chemical-resistant epidermis",
+    "Evolved venom with accelerated enzymatic necrotic component",
+    "Non-retreating defensive behavior",
+    "Thermoregulates via warm outflow pipe contact"
+  ],
+  "encounters": "Encountered by maintenance workers descending into sumps and retention basins, typically pressing against warm pipe walls or coiled in drainage sediment. Construction crews breaking into sealed subsector infrastructure sometimes release trapped populations. Rarely surface above ground except during extreme flood events.",
+  "known_uses": "Venom milked by unlicensed Tier 1 practitioners for folk medicine applications — efficacy disputed and dangerous given venom drift. Skins occasionally sold in informal markets. Helix Biosystems has documented interest in the enzymatic venom component for industrial applications.",
+  "story_hooks": [
+    "A Helix Biosystems contractor is quietly buying live Silt Moccasins from Shelf district trappers at above-market rates — no explanation given. The venom's new enzymatic component apparently does something very useful that they don't want published.",
+    "A sealed subsector is being reopened for a development project. The survey team's preliminary report mentions an unusual density of Silt Moccasins and recommends delay. The developer is pushing to ignore the recommendation — and someone needs to find out if the snake density is a symptom of something worse in that sealed space."
+  ],
+  "related_entities": [
+    "Drain Eel"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "venomous",
+    "drainage",
+    "tunnel",
+    "thermoreception",
+    "refugee_origin"
+  ]
+}

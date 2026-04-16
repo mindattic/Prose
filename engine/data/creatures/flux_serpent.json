@@ -1,0 +1,46 @@
+{
+  "id": "ceec51bd4c16b1515d66c1531aef3f6e",
+  "name": "Flux Serpent",
+  "type": "creature",
+  "aliases": [
+    "sparker",
+    "static coil",
+    "wire snake"
+  ],
+  "category": "modified_fauna",
+  "origin": "lab_escape",
+  "description": "Crucible Genomics' mid-2100s infrastructure division produced a line of engineered snakes — descended from black racer stock — intended as active pipeline monitors. The design goal was a snake that could navigate industrial pipe systems and transmit bioelectric data about pipe integrity, flow rates, and chemical composition through a modified electroreceptor system wired to a biosignal transmitter. The program was shuttered after liability concerns about unrecoverable units. Some were recalled. Many were not. The Flux Serpent is three or four generations removed from those original units, the transmitter organs long non-functional, but the electroreceptive suite remains and has if anything become more sensitive through selective pressure in GLMZ's electromagnetic noise environment.\n\nFlux Serpents average 1.5 meters, lean and fast, with the speed of their racer ancestry preserved. Their scales have a faint metallic sheen — a cosmetic artifact of the original genetic modifications involving conductive polymer protein analogs that have persisted despite serving no current function. They are nearly fully blind, navigating entirely through an electroreceptor array far more sensitive than any naturally evolved analog — they can detect the EM field of active electrical conduits through pipe walls, the bioelectric signatures of other organisms at five meters, and the static charge differential of dry versus wet surfaces. They do not hunt by heat or smell primarily; they hunt by field detection.\n\nFlux Serpents have developed a strange relationship with GLMZ's electrical infrastructure. They preferentially nest in the dry spaces adjacent to active power conduits, apparently attracted to the consistent field signature. This means they are found in electrical utility tunnels, transformer alcoves, and the dry service corridors running alongside active pipe networks. Utility workers have adapted to their presence — a common saying in the electrical maintenance crews is 'if you find a sparker, check the insulation,' because Flux Serpents nesting near a conduit often indicates an active field leak from degraded insulation. They have become an informal diagnostic tool.",
+  "habitat": [
+    "electrical utility tunnels",
+    "transformer alcoves",
+    "dry service corridors",
+    "industrial pipe networks",
+    "deep infrastructure"
+  ],
+  "diet": "Rodents, Drain Eels, invertebrates, birds that enter utility spaces",
+  "threat_level": "low",
+  "notable_traits": [
+    "Highly sensitive engineered electroreceptor array",
+    "Residual metallic scale sheen from conductive polymer proteins",
+    "Field-seeking nesting behavior near active electrical conduits",
+    "Racer-ancestry speed in confined spaces",
+    "Non-functional legacy biosignal transmitter organs"
+  ],
+  "encounters": "Found most commonly by electrical utility workers in transformer alcoves and utility tunnels. Occasionally surface near electrical infrastructure access points. Fast and non-aggressive — they flee first, strike only if trapped. The metallic sheen makes them briefly spectacular under work lights before they vanish.",
+  "known_uses": "Informally used by experienced utility workers as insulation integrity indicators — nesting clusters near a conduit section suggest field leakage. Crucible Genomics has occasionally sent contractors to recover specimens for study; they decline to explain why.",
+  "story_hooks": [
+    "A cluster of Flux Serpents has abandoned a utility tunnel section they have occupied for years — utility workers find this alarming because something changed in the field environment. The conduit runs under a building recently acquired by a shell company, and whatever they're running through it is driving out the snakes.",
+    "Crucible Genomics' recovery contractors have been spotted in a Tier 1 district with live-capture equipment, specifically targeting Flux Serpents. The original program documentation was sealed, and nobody knows what the transmitter organs were actually designed to transmit — or whether some of them might still be transmitting something."
+  ],
+  "related_entities": [],
+  "tags": [
+    "creature",
+    "modified_fauna",
+    "lab_escape",
+    "Crucible_Genomics",
+    "electroreception",
+    "electrical_infrastructure",
+    "tunnel",
+    "engineered"
+  ]
+}

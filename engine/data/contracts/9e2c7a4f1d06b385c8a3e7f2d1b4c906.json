@@ -1,0 +1,35 @@
+{
+  "id": "9e2c7a4f1d06b385c8a3e7f2d1b4c906",
+  "name": "Variance Report",
+  "type": "contract",
+  "codename": "OUT OF SCOPE",
+  "contract_tier": "B",
+  "posted_by": "Thornfield Group (mid-tier security contractor, sub-licensed to an unnamed primary)",
+  "target": "Kovic — enforcer, nominally affiliated with the Meridian Haul syndicate operating out of Calumet Stack",
+  "objective": "Locate Kovic and terminate. No scene staging required — this is a message kill, body should be findable.",
+  "location": "Calumet Stack industrial zone, southeast approach corridors and container-stack warrens",
+  "payout": "Φ65,000",
+  "deadline": "null",
+  "complications": [
+    "Kovic has gone off-script from the Meridian Haul syndicate, meaning he no longer has their protection — but he also knows their operational security well enough to keep moving through spaces a normal person couldn't navigate",
+    "A message kill in Calumet Stack will be read and interpreted by the Meridian Haul leadership — whoever picks this contract is making a statement on behalf of whoever posted it, whether they intend to or not",
+    "Thornfield Group is a sub-licensor, not a principal — their liability buffer is real but it also means the freelancer has no direct line to whoever actually wants Kovic dead and no leverage if terms shift"
+  ],
+  "moral_weight": "grey",
+  "description": "Syndicate work laundered through a corporate security contractor — this is normal in GLMZ. Meridian Haul runs freight and protection in the Calumet Stack zone and occasionally sub-contracts enforcement cleanup through legitimate-facing intermediaries to keep their own hands documented-clean. Kovic is described as having gone off-script, which is syndicate language for someone who stopped following orders and became a liability. The no-staging requirement means the client wants the kill to communicate something.\n\nKovic went off-script because he refused to participate in a specific operation: the Meridian Haul leadership contracted to warehouse a batch of unregistered Tier 1 workers — people bought out of debt bondage in the flooded southern transit camps — for a labor broker running construction crews in the north stack. Kovic has a line he won't cross, and it was crossed. He's now moving through Calumet Stack, not quite hiding, burning relationships as he goes. He hasn't gone public with what he knows. He might. The message kill is partly about containing him and partly about demonstrating to the labor broker that the syndicate keeps its arrangements clean. The freelancer is being asked to kill a man for having a conscience, with the understanding that the body is a communication.",
+  "story_hooks": [
+    "Kovic, cornered, tells the freelancer exactly what the Meridian Haul leadership is running — not as a plea, but because he's decided if he's dying, the information should go somewhere",
+    "The labor broker who contracted with Meridian Haul has a separate interest in Kovic's silence and has posted a second, smaller contract through a different channel — the freelancer may discover they have competition with different motivations"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-B",
+    "elimination",
+    "syndicate",
+    "grey-morality",
+    "calumet-stack",
+    "labor-trafficking",
+    "message-kill"
+  ]
+}

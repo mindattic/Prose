@@ -1,0 +1,51 @@
+{
+  "id": "d9c3f1b6e8a40d7c5b2f9e1a3d6b8f35",
+  "name": "Kang-Petrov Arms KPR-47T 'Threadcount'",
+  "type": "weapon",
+  "aliases": [
+    "Threadcount",
+    "KPR-47T",
+    "The Thread",
+    "Suppressed Ancestor"
+  ],
+  "category": "rifle",
+  "description": "The KPR-47T is what Kang-Petrov produces when they accept that operators are going to suppress their KPR-47s regardless of whether the rifle is designed for it, and decide it is better to sell them the version that does it properly. The KPR-47T is a 7.62mm Soviet Pattern rifle built on the KPR-47's stamped steel receiver and long-stroke piston system with four specific modifications: a threaded and recessed barrel crown for suppressor attachment, a ported gas system that reduces bolt carrier velocity when firing suppressed to prevent over-cycling, a side-folding stock that reduces the overall length when the suppressor is removed, and a modified front sight that clears the suppressor body. No suppressor is included — Kang-Petrov sells the rifle and documents the compatible suppressor thread specification, and the suppressor market takes it from there. The rifle is otherwise mechanically identical to the KPR-47, which means parts compatibility is complete and the maintenance procedures are the same. Weight is 3.9 kilograms without suppressor, and the adjustable gas port handles both suppressed and unsuppressed operation without manual adjustment.\n\nThe KPR-47T is positioned as the professional version of the rifle that everyone's family already owns, and the marketing strategy is exactly that transparent. Kang-Petrov sells the KPR-47T to operators who have been running suppressed KPR-47s with aftermarket threaded barrels and have been dealing with the bolt over-cycle and the over-pressure gas issues that come from a rifle designed without suppression in mind. The KPR-47T solves those problems. It is a Tier 2 rifle that earns its price premium through reliability rather than features — the threading, the ported gas system, and the side-folder are the entirety of what you are paying for over the KPR-47's price point.\n\nThe KPR-47T's presence in GLMZ's fixer community is a quiet acknowledgment that the suppressor ecosystem has matured to the point where a major manufacturer is designing around it. The rifles that have been in circulation for a few years develop a specific wear pattern at the suppressor attachment point — the threads accumulate a fine carbon deposit that has to be cleaned before and after suppressor attachment, and operators develop a ritual around this maintenance step that reveals their habits. A KPR-47T with clean threads has been recently cleaned or rarely used suppressed. One with heavy carbon buildup has been suppressed and not maintained, which tells an experienced observer something about the operator's discipline and their operational tempo. The side-folding stock develops the same hinge wobble as the KPR-56F over time, and operators who notice it first are the ones who check their gear.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "threaded barrel crown",
+    "ported gas system",
+    "side-folding stock",
+    "long-stroke gas piston",
+    "rotating bolt",
+    "stamped steel receiver"
+  ],
+  "specifications": "caliber: 7.62mm Soviet Pattern\neffective_range: 375m\nrate_of_fire: Semi-automatic / Full-automatic\nmagazine_capacity: 30 rounds\nweight: 3.9 kg (without suppressor)",
+  "tactical_use": "The KPR-47T is the KPR-47 for operators who need acoustic discretion without sacrificing the reliability and power of the platform they already know. The ported gas system handles suppressed and unsuppressed operation transparently — operators do not need to adjust the gas regulator when swapping between configurations, which removes a step under stress that the earlier improvised suppressed KPR-47 setups required. The 7.62mm Soviet Pattern round does not become subsonic through a standard-length barrel, which means suppressed fire is quieter than unsuppressed but not silent — the suppressor mitigates the muzzle blast and reduces the acoustic signature to the point where ACS audio monitoring systems have difficulty with source triangulation at distances above 150 meters.",
+  "cultural_context": "The KPR-47T represents a specific moment in GLMZ's lower-tier arms culture: the point at which suppressor use stopped being an elite capability and became a routine operational consideration for Tier 2 operators. The rifle's existence validates the suppressor ecosystem in a way that aftermarket modifications did not — Kang-Petrov designing around suppressor use is an acknowledgment that the practice is widespread enough to be a market. Arcturus Civil Security has updated its field recognition protocols to identify the KPR-47T's characteristic suppressor clearance modification, which means the rifle is in their training materials and on their threat assessment lists.",
+  "known_users": [
+    "Tier 2 fixer professionals requiring acoustic discretion",
+    "mid-tier security contractors",
+    "experienced shelf district operators who have graduated from improvised setups",
+    "GLMZ gray-market suppressor owners",
+    "operators running extended urban operations"
+  ],
+  "story_hooks": [
+    "Arcturus Civil Security has begun flagging KPR-47T purchases in their registration database for enhanced surveillance — not because the rifle is illegal, but because someone in ACS intelligence has determined that KPR-47T ownership correlates with a specific operational profile they are tracking, and they are building a list that three GLMZ civil rights organizations do not yet know exists.",
+    "A KPR-47T suppressor attachment point shows tool marks consistent with a specific gunsmithing tool that has been stolen from three separate licensed gunsmiths in the past six months — someone is building or modifying suppressors using stolen professional equipment, and the tool marks are the only consistent thread across what looks like unrelated incidents."
+  ],
+  "ammunition_type": [
+    "7.62mm Soviet Pattern"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier2",
+    "suppressor-compatible",
+    "full-auto",
+    "professional",
+    "slagworks",
+    "acoustic-discretion"
+  ]
+}

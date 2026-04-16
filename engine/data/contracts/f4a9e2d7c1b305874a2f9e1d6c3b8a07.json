@@ -1,0 +1,34 @@
+{
+  "id": "f4a9e2d7c1b305874a2f9e1d6c3b8a07",
+  "name": "Off The Books",
+  "type": "contract",
+  "codename": "LOOSE END",
+  "contract_tier": "C",
+  "posted_by": "Handle: 'Reclamation Service' — anonymous dead drop, Eastbridge Shelf",
+  "target": "A man known only as 'Pockets' — Shelf-level fence operating in the Eastbridge gap market",
+  "objective": "Locate and kill Pockets before he can complete a handoff scheduled for sometime in the next four days. The handoff itself is irrelevant — just the man.",
+  "payout": "Φ18,000",
+  "deadline": "Four days",
+  "complications": [
+    "The posting is anonymous and C-tier, which means no recourse if the payout bounces — the freelancer is working on trust for a handle with no vouching chain attached",
+    "Pockets is a fence in a gap market, which means he has relationships with people who would like to know someone is hunting him — the Eastbridge informal network will notice a stranger asking questions",
+    "The physical description provided in the posting is minimal: 'heavyset, mid-40s, works the Eastbridge underpass stretch' — the freelancer must identify before they can act"
+  ],
+  "moral_weight": "grey",
+  "description": "Low-tier, anonymous, barely documented. Eastbridge is deep Shelf — Tier 1 territory where ACS doesn't bother patrolling unless something valuable is threatened. The posting is cheap, the target is described as a fence, and the anonymous client handle gives nothing. A new freelancer looking to build a vouching chain might take this just for the work record. The payout is enough to cover a month in a Shelf bunk with some left over.\n\nPockets is a fence, that much is true. What the posting omits is that Pockets has been quietly moving evidence — physical documents, printed photographs, a hardware drive — that document an ACS sub-station commander authorizing the execution of five Shelf residents during a clearance operation six months ago. The 'handoff' mentioned in the posting is a delivery to an Underdeck documentation collective. Pockets isn't moving contraband. He's moving evidence. The 'Reclamation Service' handle is almost certainly someone in the local ACS structure, possibly the commander himself or a proxy. The freelancer is being offered eighteen thousand Quanta to kill a man for trying to get dead people documented.",
+  "story_hooks": [
+    "Pockets makes the freelancer before the freelancer makes him — Eastbridge is his territory — and approaches them directly, explaining what the drive contains and offering to cut them in on whatever protection value it holds once it's delivered",
+    "The documentation collective Pockets is delivering to turns out to be real, functional, and connected to a broader Underdeck legal-pressure network — they have their own people watching Pockets and will register a new face moving through Eastbridge"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-C",
+    "elimination",
+    "shelf-district",
+    "grey-morality",
+    "eastbridge",
+    "anonymous-post",
+    "arc-civil-security"
+  ]
+}

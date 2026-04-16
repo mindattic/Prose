@@ -1,0 +1,51 @@
+{
+  "id": "c1a6d4e8b5f37c0a2e4d7b9f3c5a8e24",
+  "name": "Kang-Petrov Arms KPR-CL3X 'Xerox'",
+  "type": "weapon",
+  "aliases": [
+    "Xerox",
+    "KPR-CL3X",
+    "The Copy",
+    "Three-X"
+  ],
+  "category": "rifle",
+  "description": "The KPR-CL3X is Kang-Petrov's third-generation caseless rifle, chambered in 5.56mm Combat Standard caseless — a variant that Kang-Petrov developed after the KPR-CL1's 7.62mm Caseless ammunition supply chain proved too dependent on Arcturus Defense Solutions distribution. The 5.56mm Combat Standard caseless uses a lower-temperature propellant block than the 7.62mm variant, reducing cook-off risk during sustained fire and allowing a higher rate of fire without the heat management constraints that limited the KPR-CL1. The receiver is a third-generation version of the aluminum extrusion design, lighter and with improved sealing after two generations of field feedback about dust and moisture ingress in GLMZ's less hospitable environments. The barrel is 400mm. The action is a modified tilting-block design that cycles the 5.56mm caseless round more reliably than the earlier 7.62mm version. Magazine capacity is 35 rounds in a translucent polymer box. The overall weight is 3.0 kilograms — the lightest full-caliber KP rifle currently in production.\n\nThe KPR-CL3X was designed specifically for the GLMZ civilian market rather than as a military-adjacent product, which represents a shift in Kang-Petrov's caseless strategy. The 5.56mm Combat Standard caseless ammunition is manufactured by two civilian suppliers in addition to the military chain, which means it is available through standard Tier 2 channels without the gray-market markup that plagued 7.62mm Caseless sourcing. The rifle is marginally more expensive than the KPR-74C but uses lighter ammunition for the same 30-round equivalent load, making it attractive to operators who cover distance. Mid-tier couriers, route security operators, and anyone who carries their rifle rather than storing it find the weight reduction meaningful.\n\nThe KPR-CL3X's nickname 'Xerox' comes from its original GLMZ street identity: when it was first introduced, shelf district operators who could not afford one began producing close-copy receivers using Slagworks salvage aluminum and the KPR-CL3X's publicly available parts diagrams, which Kang-Petrov had filed in a GLMZ commercial registry dispute and which became publicly accessible through a legal data leak in 2191. The copies — called 'Xeroxes' — are functionally similar but use hand-fitted components that require more frequent adjustment. The nickname transferred to the original rifle out of a kind of affectionate irony: the original became named for its copies. Kang-Petrov's legal team has been aware of this for over a decade and has chosen to interpret it as brand recognition.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "5.56mm caseless system",
+    "third-generation aluminum extrusion receiver",
+    "tilting-block bolt",
+    "improved environmental sealing",
+    "low-temperature propellant block"
+  ],
+  "specifications": "caliber: 5.56mm Combat Standard Caseless\neffective_range: 375m\nrate_of_fire: Semi-automatic / Full-automatic\nmagazine_capacity: 35 rounds\nweight: 3.0 kg",
+  "tactical_use": "The KPR-CL3X is the KP rifle for operators who move. The combination of the lightest full-caliber KP platform and the reduced weight of caseless ammunition over equivalent brass-cased loads makes a meaningful difference over the distances that GLMZ's route security and courier operators cover. The improved environmental sealing over the KPR-CL1 makes it more reliable in GLMZ's flooded lower-city corridors and industrial runoff zones. Operators who run it in team configurations appreciate the shared ammunition supply with other caseless-equipped team members — the 5.56mm Combat Standard caseless supply chain's civilian accessibility means resupply is practical outside of Arcturus Defense Solutions-adjacent channels.",
+  "cultural_context": "The 'Xerox' identity is one of the more unusual cultural phenomena in GLMZ's KP rifle community. The existence of shelf-district copies — genuine functional rifles built from salvage and leaked diagrams — represents a kind of grassroots manufacturing capability that both Kang-Petrov and Arcturus Civil Security find difficult to categorize. The copies are not legally registered because they cannot be traced to a manufacturer's serial number, which makes them simultaneously illegal and impossible to systematically suppress. The original KPR-CL3X wearing the nickname 'Xerox' is a constant reminder, to anyone who knows the story, that the design has escaped its owner.",
+  "known_users": [
+    "mid-tier route security and courier operators",
+    "Tier 2 fixers covering significant distance",
+    "grassroots manufacturing community",
+    "operators prioritizing weight reduction",
+    "caseless ammunition advocates"
+  ],
+  "story_hooks": [
+    "A shelf district machinist in the South Loop industrial corridor has been producing KPR-CL3X copies at a rate that suggests she has access to something better than leaked diagrams — either someone inside Kang-Petrov is providing updated specs, or she has developed independent improvements that exceed the original design, and either possibility is worth investigating.",
+    "A KPR-CL3X copy — identifiable by the hand-fitted receiver tolerances — was used in an attack on a Slagworks Industrial board member, and the rifle was left at the scene deliberately; either the attacker wanted to make a point about grassroots manufacturing, or someone is setting up the shelf district machining community for an Arcturus crackdown."
+  ],
+  "ammunition_type": [
+    "5.56mm Combat Standard Caseless"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier2",
+    "caseless",
+    "lightweight",
+    "full-auto",
+    "courier",
+    "slagworks",
+    "grassroots"
+  ]
+}

@@ -449,8 +449,8 @@ public class AuthService
 
         var admin = new UserAccount
         {
-            Email = "ryandebraal@mindattic.com",
-            DisplayName = "Ryan",
+            Email = "admin@streetsamurai.local",
+            DisplayName = "Admin",
             PasswordHash = BCrypt.Net.BCrypt.HashPassword("Change-Me-123!", BcryptWorkFactor),
             Role = UserRoles.Administrator,
             MustChangePassword = true,

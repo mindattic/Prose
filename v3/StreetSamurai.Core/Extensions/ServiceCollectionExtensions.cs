@@ -1,5 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MindAttic.LLMVoting;
+using MindAttic.LLMVoting.Providers;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
@@ -269,12 +271,45 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ArcTrackerService>();
         services.AddSingleton<ContinuityValidatorService>();
         services.AddSingleton<SuggestionEngineService>();
+        services.AddSingleton<FacetEvolutionService>();
 
         // Pacing — static helper, registered for completeness
         services.AddSingleton<PacingService>();
 
         // Milestone 3 — outline review + quality feedback loop
         services.AddSingleton<OutlineReviewService>();
+
+        // LLMVoting — multi-provider consensus voting, wired into StoryQualityService
+        services.AddHttpClient<LlmVotingProvider>();
+        services.AddSingleton<VotingConfiguration>(sp =>
+        {
+            var s = sp.GetRequiredService<SettingsService>();
+            return new VotingConfiguration
+            {
+                ApiKeys =
+                {
+                    ["claude"]     = s.ApiKey,
+                    ["openai"]     = s.OpenAiApiKey,
+                    ["gemini"]     = s.GeminiApiKey,
+                    ["deepseek"]   = s.DeepSeekApiKey,
+                    ["mistral"]    = s.MistralApiKey,
+                    ["xai"]        = s.GrokApiKey,
+                    ["groq"]       = s.GroqApiKey,
+                    ["together"]   = s.TogetherApiKey,
+                    ["openrouter"] = s.OpenRouterApiKey,
+                    ["fireworks"]  = s.FireworksApiKey,
+                    ["cohere"]     = s.CohereApiKey,
+                },
+                JudgeProviderId = "claude",
+            };
+        });
+        services.AddSingleton<LlmVotingProvider>(sp =>
+        {
+            var cfg  = sp.GetRequiredService<VotingConfiguration>();
+            var http = sp.GetRequiredService<IHttpClientFactory>().CreateClient(nameof(LlmVotingProvider));
+            return new LlmVotingProvider(http, cfg);
+        });
+        services.AddSingleton<LLMVotingService>();
         services.AddSingleton<StoryQualityService>();
 
         return services;

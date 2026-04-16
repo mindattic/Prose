@@ -1,0 +1,47 @@
+{
+  "id": "2701033c3b38cb8ed702f22467c64621",
+  "name": "Bile Knifefish",
+  "type": "creature",
+  "aliases": [
+    "knife ghost",
+    "yellow current",
+    "chemical eel"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "South American black ghost knifefish were a popular aquarium species in the 2100s, and GLMZ's drainage network received them through the usual vectors — hobbyist releases, flood-event escapes, deliberate dumps by overwhelmed owners. Knifefish are already electroreceptive and already prefer dark confined spaces; they adapted to GLMZ drainage infrastructure with disturbing ease. What has changed over several generations of living in chemically saturated water is their coloration and their biochemistry. The characteristic translucent-black ghost coloration has shifted to a patchy jaundiced yellow-brown — melanin disruption from chemical exposure — and their electric organ discharge has strengthened and shifted frequency, apparently tuned now to cut through the electromagnetic noise of industrial runoff.\n\nBile Knifefish navigate entirely by their electric organ sense, emitting a continuous weak field and reading distortions in it. They are remarkably precise — they can distinguish between a live rat and a dead one at two meters by the difference in bioelectric output. They school loosely in slow-flow drainage sections and retention channels, drifting in a synchronized undulating motion from their ribbon fin that workers describe as 'the water moving wrong.' They eat almost anything they can fit in their mouths — smaller organisms, organic waste, even plastic-degrading fungal films that other tunnel fauna avoid.\n\nBile Knifefish have an unusual cultural presence because of the schooling behavior. Finding a large school in a drainage section typically means that section has stable, relatively consistent chemistry — Knifefish abandon areas of acute chemical fluctuation. Tier 1 communities near drainage access have developed a folk-indicator tradition: if the knife ghosts are still in a stretch, the water coming through is at least consistently bad rather than newly bad, which is somehow more manageable. Street kids in flooded Shelf corridors have also figured out that a Knifefish's electric discharge is perceptible as a faint skin-buzz if you put your hand near one — a tactile game that occasionally results in a bite.",
+  "habitat": [
+    "slow-flow drainage sections",
+    "retention channels",
+    "flooded Shelf corridors",
+    "Canal Ward basin infrastructure"
+  ],
+  "diet": "Small organisms, organic waste, fungal films, invertebrates, carrion",
+  "threat_level": "negligible",
+  "notable_traits": [
+    "Continuous electric organ discharge for navigation and prey detection",
+    "Chemical-exposure derived jaundiced coloration",
+    "Synchronized ribbon-fin schooling behavior",
+    "Chemical stability indicator — abandons areas of acute flux",
+    "Perceptible electric discharge to skin contact"
+  ],
+  "encounters": "Seen as drifting schools in retention channels and slow drainage sections, the ribbon-fin locomotion creating an unsettling effect of water moving independently. Children in flooded Shelf districts interact with them as a dare game. Workers note their presence or absence as a water chemistry indicator.",
+  "known_uses": "Informal water chemistry stability indicators in Tier 1 drainage communities. Occasionally kept in flooded dwelling spaces by residents who find their schooling motion calming. Not typically eaten — the chemical bioaccumulation makes them inadvisable as food.",
+  "story_hooks": [
+    "A retention basin that has had a stable Bile Knifefish population for twenty years has suddenly gone empty — every fish departed overnight. The basin feeds into drinking water pre-treatment infrastructure for a Tier 2 district, and nobody in the utility authority wants to say what changed upstream.",
+    "A researcher is documenting the frequency shift in Bile Knifefish electric organ discharge, claiming it's adapting to specific industrial emission signatures — essentially, different chemical pollutant environments are producing slightly different electric 'dialects' that can identify a fish's home drainage section. Someone very interested in what those sections contain has started following her work."
+  ],
+  "related_entities": [
+    "Drain Eel"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "aquatic",
+    "drainage",
+    "electroreception",
+    "schooling",
+    "aquarium_origin"
+  ]
+}

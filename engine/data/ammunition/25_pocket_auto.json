@@ -1,0 +1,25 @@
+{
+  "id": "b2e4d6f8a0c1e3f5b7d9e1f3a5c7e9f1",
+  "name": ".25 Pocket Auto",
+  "type": "ammunition",
+  "aliases": [
+    "Quarter-Rounds",
+    "Sleeve Loads",
+    "Baby Auto",
+    "Pinch Brass"
+  ],
+  "category": "ballistic",
+  "caliber": ".25",
+  "propulsion": "gunpowder",
+  "description": "The .25 Pocket Auto traces its lineage to the 6.35mm Browning ACP of the early twentieth century, a cartridge designed from its inception to fit inside the smallest possible semi-automatic pistol. By 2200 it occupies the same niche it always did: the round you carry when carrying anything larger would be noticed. In GLMZ's layered social architecture, that means it is the ammunition of mid-tier office workers who can't afford security contractors, Tessera Corponation data clerks who travel through mixed-access transit corridors, and the better-dressed residents of Tier 2 districts who want something in a coat pocket that won't print through the fabric scanner at an Arcturus checkpoint. Slagworks and several smaller manufacturers still produce it in brass-cased standard, and a caseless variant exists but never gained significant traction given the round's primary use case in legacy micro-pistols that predate caseless chambers.\n\nThe .25 Pocket Auto is not taken seriously as a defensive cartridge by anyone with access to alternatives. Ballistic testing in 2200 rates it statistically below the .22 Short-Long in terminal effectiveness against augmented targets — the proliferation of subdermal trauma plating among even mid-tier civilians has rendered it nearly decorative in some threat scenarios. Its defenders, and there are many, argue that the point was never to stop a fight but to start a conversation about whether starting one was wise. In the warrens of GLMZ's mid-access zones, the sight of a .25 pocket auto coming out of a sleeve is still enough to change the math.",
+  "compatibility_note": "Compatible with micro-pistols and vest-pocket automatics chambered for .25 ACP or unified .25 Pocket Auto spec. Common in legacy European-pattern micro-pistols still circulating in GLMZ's gray market. Not compatible with .22 or .32 platforms without modification. Caseless variant exists but is rare.",
+  "reliability_note": "Extremely reliable in brass-cased configuration due to simple geometry and low pressure. The small case makes it forgiving of minor chamber fouling in pocket pistols that rarely get cleaned. Functions consistently in wet conditions. No energy dependency whatsoever. Caseless variant is slightly more moisture-sensitive but still considered reliable by ballistic standards.",
+  "tags": [
+    "ammunition",
+    "ballistic",
+    "pocket",
+    "concealment",
+    "mid-tier",
+    "civilian"
+  ]
+}

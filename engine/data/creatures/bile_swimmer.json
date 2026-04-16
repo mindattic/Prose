@@ -1,0 +1,45 @@
+{
+  "id": "957d6fae7091404a133287cc2760f505",
+  "name": "Bile Swimmer",
+  "type": "creature",
+  "aliases": [
+    "yellow eel",
+    "chemical snake",
+    "acid gut"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "The Bile Swimmer is one of the more genuinely disturbing animals in GLMZ's drain ecosystem — not because it is dangerous, but because of what it has adapted to eat. A descendant of yellow eels (the migratory stage of American eels) that never completed their oceanic migration due to infrastructure blocking, they evolved over two centuries to inhabit the most chemically hostile sections of the drainage network: the pharmaceutical runoff channels beneath the Helix Biosystems processing districts and the industrial waste sumps of the western manufacturing sectors. Adults are 80 to 100 centimeters, with a vivid yellow-green coloration that is not camouflage but warning — the color comes from bile-analog pigments the eel synthesizes and stores in its skin as a deterrent. The flesh is mildly toxic to most predators.\n\nThe Bile Swimmer's gut flora is its most remarkable feature. Over generations of exposure to pharmaceutical effluent, it has cultivated an intestinal microbiome capable of metabolizing a range of compounds that would kill most organisms — including several classes of antibiotics, industrial solvents, and hormone analogs. It essentially eats contamination. Bile Swimmers are most active and most numerous in sections of drain where chemical load is heaviest, making their density an informal real-time contamination map. They feed on biofilm, chemically saturated organic matter, and smaller invertebrates that have similarly adapted to toxic niches.\n\nHelix Biosystems has made two formal acquisition attempts for exclusive study rights to Bile Swimmer gut microbiome cultures, both blocked by a coalition of Tier 1 community advocates who argued the animal belonged to the shared commons of the undercity and that any medical derivatives should benefit the communities living atop the contaminated zones. The legal argument failed but the PR damage to Helix was significant enough that they haven't tried a third time publicly. Meanwhile, independent bio-chemists have been trading Bile Swimmer gut cultures on the gray market for years, with a thriving informal research ecosystem that Helix monitors with barely concealed fury.",
+  "habitat": [
+    "pharmaceutical runoff channels",
+    "industrial waste sumps",
+    "heavy-contamination drainage sections",
+    "chemical district drain infrastructure"
+  ],
+  "diet": "pharmaceutical-saturated biofilm, contaminated organic matter, chemically-adapted invertebrates",
+  "threat_level": "negligible",
+  "notable_traits": [
+    "toxic bile-pigment skin",
+    "pharmaceutical-metabolizing gut microbiome",
+    "contamination-density indicator species",
+    "chemical resistance far beyond baseline eels"
+  ],
+  "encounters": "Encountered primarily by maintenance workers, bio-prospectors, and drainage system surveyors. Rarely surfacing in areas accessible to general public. The vivid yellow-green color makes them unmistakable. Most people know not to handle them — the skin oils cause irritant dermatitis on contact.",
+  "known_uses": "Gut microbiome cultures are one of the most valuable gray-market biological commodities in the drainage ecology. A viable culture sells for 400-800 Φ to the right buyer. Helix Biosystems wants them desperately. Independent researchers want them for contamination remediation work. Community health advocates want them analyzed to understand what the people living above these drains are being exposed to.",
+  "story_hooks": [
+    "A community health worker has been mapping Bile Swimmer density as a contamination proxy and discovered a pattern that suggests a Helix facility is illegally dumping a compound not on any public safety registry.",
+    "Someone has engineered a variant Bile Swimmer with an altered microbiome and released it into the drain system — but instead of metabolizing contamination, it's metabolizing something it shouldn't be able to touch."
+  ],
+  "related_entities": [
+    "Drain Eel"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "drainage",
+    "chemical_adaptation",
+    "indicator_species",
+    "pharmaceutical"
+  ]
+}

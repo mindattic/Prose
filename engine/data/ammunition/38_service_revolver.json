@@ -1,0 +1,27 @@
+{
+  "id": "a7d9f1b3e5a7c9f1d3b5e7a9c1f3d5b7",
+  "name": ".38 Service Revolver",
+  "type": "ammunition",
+  "aliases": [
+    "Thirty-Eight Special",
+    "Old Special",
+    "Service Round",
+    "Wheel Brass"
+  ],
+  "category": "ballistic",
+  "caliber": ".38",
+  "propulsion": "gunpowder",
+  "description": "The .38 Service Revolver is the unbroken continuation of the .38 Special cartridge, a round that has been loaded in essentially the same dimensions since 1898. In GLMZ 2200, that longevity is both its reputation and its stigma. It is the round of old revolvers — and in 2200, revolvers are old. They are the firearms of grandmothers and grandfathers, of pawnshop back-room collections, of Excluded zone communities that have inherited hardware across generations because they cannot afford to replace it. They are also, quietly, the choice of people who have learned through hard experience that a revolver does not fail to feed, does not fail to eject, does not require a charged battery or a clean magazine, and will fire the sixth round as reliably as it fired the first regardless of what has happened in between.\n\nThe .38 Service Revolver round in its 2200 incarnation is produced by several manufacturers including Slagworks' budget Irongate line, primarily in brass-cased configuration because the revolvers that fire it are almost all legacy brass-chamber designs. Modern projectile options exist — there are fragmenting .38 SR loads and dense-core anti-augmentation variants — but most of what circulates in GLMZ's lower tiers is plain jacketed lead or semi-jacketed hollow-point of the kind that would have been familiar two hundred years ago. It is not glamorous. It does not need to be. A .38 in a tired hand is still a .38.",
+  "compatibility_note": "Compatible with revolvers chambered for .38 Special or .38 Service Revolver spec. Also compatible with most .357 Magnum revolvers, which accept the shorter .38 SR case. Not compatible with semi-automatic platforms without a moon-clip adapter. Primarily found in legacy revolvers circulating in Tier 1-2 and Excluded zones.",
+  "reliability_note": "Exceptionally reliable — arguably the most reliable cartridge family in GLMZ given the mechanical simplicity of revolvers and the round's long-tested dimensions. Functions in extreme cold, extreme heat, submersion, and heavy fouling without failure. Brass is easy to identify, sort, and reload with minimal equipment. No energy dependency. The choice of people who cannot afford a misfire.",
+  "tags": [
+    "ammunition",
+    "ballistic",
+    "revolver",
+    "legacy",
+    "low-tier",
+    "excluded",
+    "survival",
+    "reliable"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "2d6f0a9c4b8e1357a2d6f0a9c4b8e135",
+  "name": "Kang-Petrov Arms KPA-68 'Groundbreaker'",
+  "type": "weapon",
+  "aliases": [
+    "Groundbreaker",
+    "KPA-68",
+    "the Six-Eight",
+    "Breaker"
+  ],
+  "category": "rifle",
+  "description": "The KPA-68 is Kang-Petrov's AR-pattern chambering of the 6.8mm General Service cartridge, built on an enlarged lower receiver that is not compatible with standard KPA-16/20 uppers despite superficial visual similarity — a distinction that has caused expensive mistakes and at least one documented catastrophic failure when someone forced incompatible components together. The 16-inch barrel is medium-heavy profile, hammer-forged, and designed to handle the higher chamber pressures of the 6.8mm cartridge without the accelerated wear that plagued early third-party 6.8mm AR conversions. The bolt carrier group is appropriately scaled, the feed geometry is matched to the slightly wider 6.8mm case, and the adjustable gas block allows tuning for suppressed or unsuppressed operation. Magazine capacity drops to 25 rounds in the same overall profile as a 30-round 5.56 magazine, which is a trade-off operators either accept or don't.\n\nThe 6.8mm General Service cartridge was standardized for mid-tier security applications where 5.56mm's terminal performance at intermediate ranges was considered insufficient against armored targets — specifically the proliferation of concealable soft armor at Tier 2–3 access levels. The KPA-68 is positioned accordingly: it's not a shelf-worker rifle. It's bought by serious security contractors, mid-tier corporate protective details, and the kind of fixer operations that regularly encounter armored opposition. The price point is Tier 2-accessible but toward the top of that range, and the ammunition is more expensive and slightly less universally available than 5.56.\n\nThe KPA-68's recoil impulse is noticeably heavier than the KPA-16, and first-time operators switching from 5.56 often underestimate the difference. Street trainers in the GLMZ's mid-tier security community have developed a specific drill for the transition: they call it 'learning the Breaker's manners,' which involves a series of controlled pairs at increasing distances until the operator stops anticipating the recoil and starts managing it. The rifles that have been through a good trainer's hands show consistent wear patterns at the pistol grip from the corrective adjustments that drill produces.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "enlarged AR-pattern receiver",
+    "hammer-forged medium-heavy barrel",
+    "adjustable gas block",
+    "scaled bolt carrier group"
+  ],
+  "specifications": "caliber: 6.8mm General Service\neffective_range: 500m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 25 rounds\nweight: 3.5 kg",
+  "tactical_use": "The KPA-68 is purpose-built for engagements where light armor is expected. The 6.8mm General Service cartridge provides meaningful improvement over 5.56mm against soft armor at distances up to 400 meters, and the platform's adjustable gas block allows suppressed operation without reliability degradation. Operators running the KPA-68 typically carry fewer rounds than their 5.56-equipped counterparts and compensate with more deliberate shot placement — the cartridge rewards accuracy more than volume. Standard loadout for protective detail work includes two 25-round magazines and a sidearm.",
+  "cultural_context": "In GLMZ's mid-tier security community, the KPA-68 occupies a specific status position: it marks the operator as someone who expects to encounter armored opposition regularly enough to plan for it. Carrying the Breaker is a statement about the quality of your enemies, which in GLMZ's social economy is a form of status. It's a Tier 2 rifle doing Tier 3 work, and the people who carry it are often in exactly that transitional space — good enough at their jobs to face serious threats, not connected enough to carry Arcturus hardware.",
+  "known_users": [
+    "mid-tier security contractors",
+    "lower corporate protective details",
+    "serious fixer crews",
+    "armored-target specialists"
+  ],
+  "story_hooks": [
+    "Three KPA-68 rifles were recovered from a Meridian transit corridor checkpoint by Arcturus Civil Security — the operators carrying them had valid Tier 2 licenses, but the rifles were registered to a security firm that dissolved eight months ago and whose assets were supposedly liquidated. Someone kept these weapons in circulation deliberately.",
+    "A 6.8mm General Service round recovered from a crime scene in a Crucible Genomics research wing is traced to KPA-68 manufacture, but the terminal damage to the target suggests a non-standard load — someone is hand-loading 6.8mm with a projectile that isn't available commercially, which means either a sophisticated individual reloader or a small-scale manufacturing operation with access to projectile tooling."
+  ],
+  "ammunition_type": [
+    "6.8mm General Service"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "carbine",
+    "6.8mm",
+    "armor-capable",
+    "tier-2",
+    "slagworks",
+    "kang-petrov",
+    "restricted"
+  ]
+}

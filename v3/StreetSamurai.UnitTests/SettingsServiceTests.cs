@@ -108,7 +108,7 @@ public class SettingsServiceTests
         svc.ApiKey = "sk-test-key";
         svc.ResetToDefaults();
         Assert.That(svc.MaxTokens, Is.EqualTo(2048));
-        Assert.That(svc.ApiKey, Does.StartWith("sk-ant-"));
+        Assert.That(svc.ApiKey, Is.Empty);
     }
 
     [Test]

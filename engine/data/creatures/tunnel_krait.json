@@ -1,0 +1,46 @@
+{
+  "id": "8e395c410a0a6df413651220cd7c1e3e",
+  "name": "Tunnel Krait",
+  "type": "creature",
+  "aliases": [
+    "black band",
+    "three-ring",
+    "quiet death"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "The Tunnel Krait is the drainage system's only significantly venomous snake — a descendant of Indian kraits from the exotic-trade pipelines of the 2060s and 2070s, cross-adapted over two centuries with whatever local colubrid genetics were available in the undercity gene pool. They are slender, reaching 90 centimeters to 1.2 meters, with the ancestral banding pattern compressed into a finer, more irregular striping in dark charcoal and near-black. The head is narrow and the eyes are fully functional but very small — the Tunnel Krait navigates primarily by chemoreception through a highly developed Jacobson's organ, tasting the complex chemical gradient of the pipe environment to map its territory without light. The venom is a potent neurotoxin, maintained at full lethality despite two centuries of prey that rarely requires it — the venom appears to serve primarily as digestive pre-processing.\n\nTunnel Kraits are nocturnal above ground, which maps poorly onto a fully subterranean environment — instead they show activity cycling tied to drainage system flow rates, becoming active during low-flow periods and dormant during high-flow events. They prey on Drain Eels, smaller rodents, and other snakes including juvenile Sump Boas. Unlike their ancestors, Tunnel Kraits have developed a distinctive threat behavior in enclosed spaces: they flatten their bodies laterally to appear larger and rattle their tail against pipe surfaces, producing a clicking sound that experienced tunnel workers know to respect. They rarely bite without this warning sequence first.\n\nThe 'quiet death' nickname comes from a specific period in GLMZ's infrastructure history when inadequately marked access points in the Helix district drainage network led to a cluster of maintenance worker fatalities over three years — workers entering pipes in the dark, disturbing resting kraits, and receiving bites that went unrecognized as venomous until neurological symptoms manifested. The incident led to mandatory banding-pattern identification training for all licensed maintenance workers and a legal requirement for anti-venom stocking in infrastructure access kits. Tunnel Krait sightings are the one drain creature that legally requires an incident report to the Arcturus Civil Security environmental division, though compliance is inconsistent.",
+  "habitat": [
+    "deep drainage tunnels",
+    "sealed infrastructure corridors",
+    "pipe junction chambers",
+    "Helix district drain networks"
+  ],
+  "diet": "Drain Eels, small rodents, other tunnel snakes, large invertebrates",
+  "threat_level": "high",
+  "notable_traits": [
+    "potent neurotoxic venom",
+    "highly developed chemoreception",
+    "pipe-surface tail rattle warning behavior",
+    "lateral body flattening display"
+  ],
+  "encounters": "Encountered almost exclusively by infrastructure workers, urban explorers, and drainage surveyors. The threat is from the combination of darkness, tight spaces limiting retreat options, and the krait's warning behavior being easily missed by workers focused on tasks. Above-ground encounters in flooded conditions during heavy rain events. Anti-venom is standard in infrastructure kits but must be administered within 2 hours.",
+  "known_uses": "Venom is extracted by licensed bio-pharma operatives and sold to Helix Biosystems and independent researchers for neurotoxin research and antivenom production. A single milking from a live Tunnel Krait yields venom worth 200-350 Φ to the right buyer. Illegal extraction operations run by people with inadequate handling training account for several hospitalizations per year.",
+  "story_hooks": [
+    "The mandatory anti-venom stocks in a specific infrastructure district have been systematically replaced with saline solution. Someone is either stealing the anti-venom or trying to make sure that section of maintenance workers can't survive an encounter.",
+    "A Tunnel Krait has been found in a Tier 4 residential building's climate control ducting — too far from its habitat to have arrived accidentally. Someone put it there."
+  ],
+  "related_entities": [
+    "Drain Eel",
+    "Sump Boa"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "drainage",
+    "venomous",
+    "pet_escape_lineage",
+    "high_threat"
+  ]
+}

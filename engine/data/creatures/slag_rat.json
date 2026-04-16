@@ -1,0 +1,47 @@
+{
+  "id": "f431c21ed52f3fa4ace6707baa561143",
+  "name": "Slag Rat",
+  "type": "creature",
+  "aliases": [
+    "chem rat",
+    "slick",
+    "grease rat",
+    "refinery rat"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Slag Rat is a heavily built rat, 50 to 65 centimeters body length, with a distinctive physical appearance produced by its chemical environment: the coat is perpetually stained and matted with the industrial residues of the petrochemical and manufacturing zones it inhabits, giving individuals a characteristic dark, oily sheen. This is not mere surface contamination — the Slag Rat's skin actively produces an elevated quantity of sebaceous oils that serve as a chemical barrier, and the outer guard hairs are structurally adapted to retain and distribute these oils in a manner that creates genuine resistance to the caustic, solvent-heavy environments of GLMZ's industrial fringe zones. The animal smells strongly of petrochemical compounds — a mixture of mineral oil, solvent, and organic decay — and this odor persists even in individuals removed from the industrial zones and cleaned. The eyes are small and deeply recessed, protected by an additional transparent nictitating membrane that provides resistance to chemical splash. Internally, the Slag Rat's detoxification pathways are substantially enhanced, with renal and hepatic capacity well above baseline rat strains.\n\nSlag Rats inhabit the industrial fringe zones of GLMZ — the processing facilities, legacy manufacturing sites, refinery remnants, and chemical storage infrastructure that ring the older industrial districts. These are environments where surface water contains measurable concentrations of industrial solvents, where soil is saturated with legacy contamination from two centuries of heavy industry, and where atmospheric conditions regularly include chemical fumes that drive away most other vermin. Slag Rats thrive here by default — they experience reduced competition and a food supply that, while chemically complex, is abundant in the form of biofilms, chemotrophic organisms, contaminated organic waste, and the small invertebrate communities adapted to chemical substrates. They have also developed a behavioral tolerance for industrial machinery noise and vibration that makes them essentially impossible to deter through standard acoustic methods.\n\nIn the industrial zones, Slag Rats are regarded as a permanent feature of the environment — impossible to meaningfully control, and in practice somewhat useful as an indicator species. Their presence in a given area of a facility correlates with specific contamination profiles; experienced industrial site workers have informal taxonomies of Slag Rat coat color and odor that they use to identify the dominant compounds in a given zone. This knowledge is entirely informal and undocumented, passed between workers verbally. Among the small population of waste site remediation specialists — a specialized, well-compensated profession in GLMZ — Slag Rat behavior and distribution is taken seriously as environmental data.",
+  "habitat": [
+    "industrial fringe zones",
+    "legacy manufacturing sites",
+    "petrochemical storage infrastructure",
+    "refinery remnants",
+    "chemically contaminated drainage areas"
+  ],
+  "diet": "Chemotrophic biofilms, contaminated organic waste, chemical-tolerant invertebrates, carrion, synthetic food waste from industrial facility break rooms",
+  "threat_level": "low",
+  "notable_traits": [
+    "Elevated sebaceous oil production creating chemical-resistant coat barrier",
+    "Recessed eyes with protective nictitating membrane against chemical splash",
+    "Enhanced renal and hepatic chemical processing capacity",
+    "Coat odor and coloration serve as informal contamination indicators for experienced workers",
+    "Behavioral tolerance to industrial machinery noise — acoustic deterrents ineffective"
+  ],
+  "encounters": "Encountered by industrial site workers, remediation specialists, and anyone moving through GLMZ's legacy manufacturing zones. They are not aggressive and flee readily from direct approach, but their populations are dense in industrial zones and they are extremely difficult to deter from food sources. The smell of an area heavily colonized by Slag Rats is distinctive and deeply unpleasant. Handling a Slag Rat without protective gear is inadvisable — the oils on the coat carry whatever the local contamination profile includes.",
+  "known_uses": "Crucible Genomics researchers have studied Slag Rat detoxification pathway genetics as a basis for developing organisms capable of processing industrial contamination. Waste site remediation specialists use population distribution and coat characteristics as informal contamination mapping tools. The animals are not consumed. Their oils, paradoxically, have been experimentally tested as a corrosion-resistant coating — results were mixed.",
+  "story_hooks": [
+    "A remediation team mapping a legacy contamination site is tracking Slag Rat populations as part of their survey methodology — but the distribution doesn't match the contamination data from the site's official records. Either the records are wrong, or someone has been actively managing where the contamination spreads.",
+    "A Slag Rat population has appeared in an area of the city that has no industrial contamination history — a residential district that should be clean. They are thriving, which means the substrate they're living in is chemically complex enough to support them. Something is wrong beneath that neighborhood, and the rats found it first."
+  ],
+  "related_entities": [
+    "Pale Sump Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "chemical-resistant",
+    "industrial-zone",
+    "indicator-species"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "a3f8c21e7b4d9056e1f2a3b4c5d6e7f8",
+  "name": "Kang-Petrov Arms KP-17 'Standard'",
+  "type": "weapon",
+  "aliases": [
+    "Standard",
+    "KP-17",
+    "The Seventeen",
+    "Shelf Gun"
+  ],
+  "category": "pistol",
+  "description": "The KP-17 is a full-size striker-fired polymer-frame pistol chambered in 9x19mm Standard brass-cased ammunition, built around a 114mm barrel and a 17-round double-stack magazine. The action is a refined descendant of two centuries of striker-fired evolution — a pre-cocked striker with a consistent 2.8kg trigger pull, a passive trigger safety, and an internal drop safety that has been tested to survive being run over by a Slagworks industrial loader. The polymer frame is injection-molded from recycled feedstock at Slagworks' Calumet fabrication floor, and it shows: slight color inconsistencies, mold seam lines that never quite disappear no matter how many you handle. The slide is stamped and milled carbon steel with a phosphate finish that wears fast in GLMZ's perpetual acid-tinged humidity.\n\nThe KP-17 is the single most common handgun in GLMZ. Shelf workers buy them on installment plans from Slagworks company stores, mid-tier building security carry them in nylon holsters, and every Excluded encampment perimeter guard who managed to scrape together Φ400 owns one or a close cousin. It is not aspirational — nobody gets the KP-17 because they want it. They get it because it is there, it is cheap, and it works. Arcturus Civil Security issues them to subcontracted Tier 1 crowd liaisons who are barely trusted with a baton. The gun occupies a unique cultural position: too common to be respected, too reliable to be dismissed.\n\nA well-used KP-17 develops a particular patina — the polymer grip panels go pale and shiny at the thumb contact points, the finish on the slide wears to bare steel at the muzzle crown and the ejection port edges. Some of them carry serial numbers that have been ground down and restamped twice over, passed through three or four sets of hands before settling into the waistband of whoever currently needs them most. The gun doesn't care. It feeds, fires, ejects. It will do it again tomorrow.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "striker-fired action",
+    "polymer frame construction",
+    "passive safety system",
+    "recycled feedstock polymer"
+  ],
+  "specifications": "caliber: 9x19mm Standard\neffective_range: 50m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 17 rounds\nweight: 0.71 kg",
+  "tactical_use": "The KP-17 is a general-purpose sidearm for operators who need volume of fire at close to medium range and can't afford ammunition waste. Standard practice among shelf security is a Condition 2 carry — loaded magazine, empty chamber — because most users have no formal training and the passive safeties don't inspire confidence in people who've seen a KP discharge when dropped. Experienced users run it hot and use the long sight radius for deliberate aimed shots rather than spray. The 17-round capacity means most encounters can be resolved without a reload if the shooter doesn't panic.",
+  "cultural_context": "In GLMZ, owning a KP-17 communicates exactly one thing: you are not wealthy enough to own anything else, but you are not so poor you go unarmed. Mid-tier security firms issue them without holsters. Shelf cooperative defense committees bulk-purchase them at Φ380 per unit with group discount. They show up in evidence lockers after domestic disputes, in storm drain grates after gang disputes, and in the locked drawers of people who bought them fifteen years ago and never cleaned them. The KP-17 is so ubiquitous it has become invisible — which makes it, in certain contexts, the perfect weapon.",
+  "known_users": [
+    "shelf cooperative security volunteers",
+    "Tier 1 building guards",
+    "subcontracted Arcturus crowd liaisons",
+    "Excluded encampment defenders",
+    "mid-tier small business owners"
+  ],
+  "story_hooks": [
+    "A KP-17 recovered from a storm drain matches ballistics from three separate shootings across different wards over six years — the gun changed hands each time through a death, not a sale, and the current registered owner died eight months ago.",
+    "A Slagworks company store in the Calumet district is offering KP-17s at Φ280 — forty percent below cost — and nobody in the neighborhood can figure out why, or who authorized the discount."
+  ],
+  "ammunition_type": [
+    "9x19mm Standard"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks",
+    "tier1",
+    "common",
+    "polymer-frame",
+    "striker-fired",
+    "shelf-worker"
+  ]
+}

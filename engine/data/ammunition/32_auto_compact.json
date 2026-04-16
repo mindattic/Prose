@@ -1,0 +1,25 @@
+{
+  "id": "c3f5a7b9d1e3f5a7c9e1b3d5f7a9c1e3",
+  "name": ".32 Auto Compact",
+  "type": "ammunition",
+  "aliases": [
+    "Thirty-Two",
+    "Short Auto",
+    "Compact Brass",
+    "Mid-Pocket"
+  ],
+  "category": "ballistic",
+  "caliber": ".32",
+  "propulsion": "gunpowder",
+  "description": "The .32 Auto Compact is a 2200-era standardization of the old .32 ACP cartridge, dimensionally nearly identical to its predecessor but loaded to tighter tolerances and available in several modern projectile configurations including fragmenting and dense-core variants aimed at defeating light subdermal augmentation. It sits in the awkward middle ground of the pocket cartridge spectrum — larger and more effective than the .25, smaller and less obtrusive than the .380 — and in GLMZ that awkward middle ground has found a dedicated market. Mid-tier private security firms who want their personnel armed but not visibly armed favor it. So do the better-resourced Shelf workers who've managed to scrape together enough Φ for something with a little more weight behind it than a .22.\n\nWhat makes the .32 Auto Compact interesting in 2200 is its survival as a brass-cased round in a world that has largely moved past brass for anything above Tier 1 use. Several manufacturers, including Slagworks subsidiary Hartwell Precision, still run .32 AC lines specifically because the tooling is paid off and the demand is steady. The round has become culturally associated with a certain kind of GLMZ practicality — the choice of people who understand their threat environment precisely and have calibrated their response accordingly. It's not glamorous. It's functional. In the mid-tiers, functional is its own kind of status.",
+  "compatibility_note": "Compatible with compact semi-automatic pistols and a small number of compact revolvers chambered for .32 ACP or .32 Auto Compact spec. Compatible with several Hartwell Precision and Slagworks-adjacent compact platforms. Not interchangeable with .32 H&R Magnum or .327 Federal pattern derivatives without chamber verification.",
+  "reliability_note": "Highly reliable in brass-cased form. Low-pressure round with a long history of consistent ignition across a wide temperature range. Functions well in compact pistols with shorter feed ramps where higher-pressure rounds sometimes fail to cycle. No energy dependency. Caseless variant available but uncommon in civilian channels.",
+  "tags": [
+    "ammunition",
+    "ballistic",
+    "compact",
+    "mid-tier",
+    "civilian",
+    "concealment"
+  ]
+}

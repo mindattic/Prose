@@ -1,0 +1,49 @@
+{
+  "id": "70caa88146fa74a433527f019f0b0a42",
+  "name": "Pack Shrew",
+  "type": "creature",
+  "aliases": [
+    "mob shrew",
+    "rush",
+    "swarm tooth",
+    "chittering"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Pack Shrew is not technically a rat, but it occupies the same ecological role in GLMZ's ruin infrastructure and is uniformly categorized alongside rat vermin by the city's residents and pest control industry alike. It is a small animal, 8 to 14 centimeters body length, descended from the North American short-tailed shrew but dramatically altered in behavior — where ancestral shrews are largely solitary, Pack Shrews are obligate social hunters operating in coordinated groups of 20 to 60 individuals. The physical form is compact and muscular, with dense dark grey fur, a pointed flexible snout, and small eyes adapted for low-light environments. The teeth are the most notable physical feature: the incisors and anterior molars retain the ancestral shrew's mild venom gland, but in Pack Shrews this venom has been enhanced through several generations of selection, producing a neurotoxic compound capable of incapacitating small vertebrates and causing significant pain and localized paralysis in humans — not lethal in typical encounter doses, but serious. The venom is delivered through biting, and a pack attack means multiple bites.\n\nPack Shrew hunting behavior is the adaptation that makes them remarkable and dangerous. The group operates with a coordination that exceeds simple mobbing — they conduct what experienced observers describe as a deliberate encirclement, with individuals taking flanking positions and driving prey toward a compression point. This behavior has been documented against rats, pigeons, small cats, and on at least three recorded occasions, humans who had cornered a colony in a confined space. The pack communicates through ultrasonic vocalizations below the threshold of human hearing; people encountering a Pack Shrew group often describe an eerie silence before the rush, punctuated only by a faint high-frequency tinnitus-like sensation. They nest in compressed aggregations in wall voids and rubble pockets, with the entire colony sharing thermal mass.\n\nPack Shrews are the primary reason that Razor Rat populations in certain Tier 1 districts have declined — the Pack Shrew groups are effective hunters of juvenile and isolated adult rats, and their chemical-resistant qualities mean that the standard rodenticides used against rat populations do not affect them. They have become, in some areas, the apex small vermin, controlling populations below them with a thoroughness that paradoxically makes them difficult to argue against. Several Tier 1 communities are explicitly opposed to Pack Shrew eradication programs because the shrews keep more destructive rat species in check — a pragmatic coexistence built on understanding that the alternative is worse.",
+  "habitat": [
+    "Tier 1 and Tier 2 ruin infrastructure",
+    "collapsed building interiors",
+    "wall voids and rubble pockets",
+    "drainage access corridors",
+    "beneath flooring of occupied structures"
+  ],
+  "diet": "Small vertebrates (rats, mice, birds, lizards), large insects, carrion — obligate carnivores with high metabolic rate requiring near-constant feeding",
+  "threat_level": "medium",
+  "notable_traits": [
+    "Obligate pack hunting in coordinated groups of 20 to 60 individuals",
+    "Enhanced neurotoxic venom — capable of significant pain and localized paralysis in humans",
+    "Ultrasonic communication below human hearing threshold — attacks appear to come from silence",
+    "Effective population control of larger rat species — used pragmatically in some districts",
+    "Encirclement hunting behavior documented against prey much larger than individuals"
+  ],
+  "encounters": "The most dangerous encounter is cornering a Pack Shrew colony in a confined space — this triggers immediate coordinated attack. Open-space encounters are less dangerous as the group disperses. Workers clearing rubble or opening sealed wall voids are at highest risk. The characteristic pre-attack indicator is the faint tinnitus-like sensation from their ultrasonic communication, which experienced workers have learned to recognize as a warning.",
+  "known_uses": "The venom compound has been studied by Helix Biosystems as a potential precursor to localized paralytic agents. Some Tier 1 communities maintain loose arrangements of tolerance — not feeding or sheltering the shrews, but not eliminating them either, using them as biological rat control. A few individuals in the pest control industry maintain Pack Shrew colonies in controlled conditions for targeted deployment against severe rat infestations, though this practice is legally ambiguous.",
+  "story_hooks": [
+    "A Tier 1 building clearance project is being repeatedly delayed — workers keep hitting Pack Shrew colonies in the walls and refusing to continue without specialist support that the project budget doesn't cover. Someone needs to find a solution that doesn't involve simply sealing workers inside with the colonies.",
+    "Helix Biosystems has a research team extracting Pack Shrew venom compounds through a front-company trapping operation — but the concentration levels they're extracting from captive colonies don't match any published therapeutic application. The actual synthesis target is something that should not exist in civilian hands."
+  ],
+  "related_entities": [
+    "Razor Rat",
+    "Pale Sump Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "pack-hunter",
+    "venomous",
+    "tier1",
+    "apex-small-vermin"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2212cd4ab8cb008a8b521902bda33aaf",
+  "name": "Brood Rat",
+  "type": "creature",
+  "aliases": [
+    "mothers",
+    "wall-queens",
+    "colony cores"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Brood Rat is not a separate species in the conventional sense but a developmental morph observed in several GLMZ rat species — most commonly in populations with long-term colony stability in enclosed structural voids. A Brood Rat is a breeding female that has undergone extreme morphological change over the course of multiple reproductive cycles: the body elongates and broadens dramatically, body mass increases three to five times beyond the baseline female, and the limbs partially atrophy as locomotion becomes secondary to reproductive output. The spine curves and the ventral surface broadens into an extensive lactation surface. Most Brood Rats become permanently sedentary, fixed within a prepared void in wall cavities, sub-floor spaces, or structural fill. The head retains full mobility and the jaws are powerful. Neurologically, Brood Rats show markedly elevated social coordination — colonies centered on a Brood Rat exhibit more organized foraging, better territorial defense, and significantly higher survival rates than colonies without one.\n\nThe transition to Brood morph appears to be triggered by a combination of age, reproductive history, colony size, and the specific chemical composition of the enclosed environment — elevated CO2, accumulated pheromone compounds, and specific humidity levels all appear to contribute. It is not inevitable for any given female, and in disturbed or frequently disrupted colonies the morph never occurs. Once established, a Brood Rat may persist in a single location for years, with the surrounding structural void gradually modified by the colony into an elaborate nest architecture: packed insulation, layered shredded material, and sometimes complex internal passages that workers from outside bring back to expand. The colony's foragers deposit food directly at the Brood Rat's location. Attempts to remove a Brood Rat from an established nest site are met with intense defensive aggression from the entire colony.\n\nBrood Rats are the reason certain GLMZ buildings develop rat infestations that resist every conventional removal attempt. Pest control contractors who don't know about the Brood morph, or who don't locate and remove the Brood Rat specifically, find that treated colonies simply reconstitute. Knowledge of how to locate and extract a Brood Rat from a structural void is specialized work, requiring both skill and nerve, and the contractors who can do it charge substantially more than standard pest removal. In Tier 1 buildings, Brood Rats that have been present for many years sometimes acquire a strange quasi-resident status — the building's human occupants have simply structured their lives around the colony's presence and the Brood Rat becomes a known fixed feature of the building, given a name, treated as a permanent if unwelcome neighbor.",
+  "habitat": [
+    "Wall cavities in long-occupied buildings",
+    "sub-floor structural voids",
+    "rubble-fill interior spaces",
+    "Tier 1 residential building infrastructure"
+  ],
+  "diet": "Fed by colony — receives all food via workers. Diet mirrors colony's generalist omnivore diet.",
+  "threat_level": "medium",
+  "notable_traits": [
+    "Extreme body mass increase in reproductive morph",
+    "Partial limb atrophy and permanent sedentism",
+    "Elevated colony social coordination when present",
+    "Environmentally triggered developmental transition",
+    "Colony exhibits intense defensive aggression around Brood Rat location"
+  ],
+  "encounters": "Almost never encountered directly — the Brood Rat is hidden deep within structural voids. Encountered indirectly through colony behavior: unusual aggression from what seemed like a routine infestation, resistance to standard pest removal, evidence of elaborate nest architecture in opened walls. Specialist pest contractors encounter them directly during removal operations.",
+  "known_uses": "Specialist knowledge of Brood Rat location and removal is a premium pest control skill (Φ 150–400 per operation). No material or food use. Some Tier 1 buildings have informal arrangements with long-established colonies, treating the Brood Rat as a building fixture.",
+  "story_hooks": [
+    "A Tier 2 building recently converted from long-abandoned Tier 1 stock has a Brood Rat colony in its walls — the developer wants it removed before the new tenants arrive, but the pest contractor who opened the first wall says this one is bigger than anything she's seen and the nest architecture inside is genuinely strange",
+    "An older Tier 1 resident is quietly devastated because a building renovation is going to destroy the wall where 'the mother' has lived for twelve years — she's convinced the building will fall apart without it, and she's asking around for someone who can relocate it rather than kill it"
+  ],
+  "related_entities": [
+    "Razor Rat",
+    "Pack Vole",
+    "Pale Canal Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "colony-core",
+    "developmental-morph",
+    "structural-adapted"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "82f9ed092e2ae1c9ee878588b0f882a1",
+  "name": "Gantry Mouse",
+  "type": "creature",
+  "aliases": [
+    "high-wire mice",
+    "sky mice",
+    "riggers"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Gantry Mouse is a small, lightweight rodent — 12–18 cm body length, unusually low mass for its size — that has specialized in inhabiting the elevated industrial infrastructure of GLMZ: crane gantries, elevated rail structures, bridge cable housings, antenna arrays, and the external cable runs of high-rise buildings. The body is extraordinarily light-boned, with elongated toes bearing sharp recurved claws that grip wire and cable with a ratcheting tendon mechanism similar to that of perching birds — the foot locks closed under load and requires active muscular effort to open. The tail is long, thin, and prehensile in the final third. Ears are large and mobile, providing excellent directional hearing that compensates for the limited visual field when navigating cables. Coloration is consistently dark grey to black, with a matte quality to the fur that reduces specular reflection — effective camouflage against dark metal infrastructure and night sky.\n\nGantry Mice live almost entirely above 20 meters, coming to ground level only during severe weather when their cable habitats become dangerously dynamic. They are solitary foragers but form loose aggregations around reliable food sources — particularly the insect accumulations around infrastructure lighting arrays. Nests are built inside cable housing joints and anchor-point enclosures, packed with windblown debris, insulation scraps, and the stripped components of small electronic devices they dismantle for nesting material. Their chewing of antenna array housings and elevated electrical junction points causes specific and expensive maintenance problems in GLMZ's communications infrastructure, and they are on the technical maintenance blacklist of every major infrastructure contractor in the city.\n\nFor the people who work at height in GLMZ — riggers, antenna maintenance crews, bridge inspectors, high-rise window service workers — Gantry Mice are a familiar nuisance and, in a strange way, a point of professional pride. Encountering one while working a cable run 40 meters up is treated as a marker of real elevation, a sign you're working where most people never go. Some riggers maintain a superstition that a Gantry Mouse sitting on your equipment before a job is good luck, provided you don't touch it. Others consider them bad omens, particularly if they've lost a tool to one. Several crews have named recurring individuals who appear consistently on specific structures.",
+  "habitat": [
+    "Elevated rail structures",
+    "crane gantries",
+    "bridge cable housings",
+    "antenna arrays",
+    "high-rise external cable runs",
+    "industrial overhead infrastructure"
+  ],
+  "diet": "Insects attracted to infrastructure lighting, cable sheathing compounds, bird eggs and nestlings, windblown organic debris accumulation in cable housings",
+  "threat_level": "negligible",
+  "notable_traits": [
+    "Ratcheting tendon foot-lock for wire gripping",
+    "Prehensile tail tip",
+    "Low body mass relative to size",
+    "Matte black camouflage coloration",
+    "Large directional ears"
+  ],
+  "encounters": "Almost never encountered at ground level. Encountered by anyone working elevated infrastructure — riggers, antenna crews, bridge inspectors. Will freeze when a human is close rather than flee, relying on their dark coloration. Will bite a hand that grabs them. Found evidence of their nests in cable housings during maintenance is common. Occasionally fall during storms and are found dazed at street level.",
+  "known_uses": "No direct use. Occasionally kept as pets by riggers and high-work crews who find them in nests during maintenance — they adapt to captivity if raised young. Nest material sometimes analyzed during infrastructure inspections to assess what electronic components have been chewed.",
+  "story_hooks": [
+    "A Gantry Mouse nest found inside a critical communications relay housing on a major GLMZ antenna tower contains fragments of components that don't belong to that tower — pieces of something that was brought up there and disassembled, but no record of any unauthorized access exists",
+    "A rigger working a condemned high-rise cable removal job keeps encountering the same distinctively marked Gantry Mouse at each new section of cable — and starts to wonder if it's trying to lead her toward or away from something in the structure"
+  ],
+  "related_entities": [
+    "Razor Rat",
+    "Conduit Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "wire-adapted",
+    "aerial",
+    "elevated-infrastructure"
+  ]
+}

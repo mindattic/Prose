@@ -13,12 +13,14 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
           "Serilog.Extensions.Logging": "10.0.0",
           "Serilog.Sinks.File": "7.0.0",
-          "System.Speech": "10.0.5"
+          "System.Speech": "10.0.5",
+          "MindAttic.LLMVoting.Reference": "1.0.0.0"
         },
         "runtime": {
           "StreetSamurai.Core.dll": {}
@@ -427,6 +429,26 @@
             "fileVersion": "10.0.526.15411"
           }
         }
+      },
+      "MindAttic.LLMVoting/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "runtime": {
+          "MindAttic.LLMVoting.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MindAttic.LLMVoting.Reference/1.0.0.0": {
+        "runtime": {
+          "MindAttic.LLMVoting.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -624,6 +646,16 @@
       "sha512": "sha512-MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ==",
       "path": "system.speech/10.0.5",
       "hashPath": "system.speech.10.0.5.nupkg.sha512"
+    },
+    "MindAttic.LLMVoting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MindAttic.LLMVoting.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

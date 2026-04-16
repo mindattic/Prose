@@ -10,7 +10,8 @@
         "dependencies": {
           "Serilog.AspNetCore": "10.0.0",
           "StreetSamurai.Core": "1.0.0",
-          "StreetSamurai.Shared": "1.0.0"
+          "StreetSamurai.Shared": "1.0.0",
+          "MindAttic.LLMVoting.Reference": "1.0.0.0"
         },
         "runtime": {
           "StreetSamurai.Blazor.dll": {}
@@ -347,11 +348,19 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "runtime": {
+          "MindAttic.LLMVoting.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -373,6 +382,14 @@
         },
         "runtime": {
           "StreetSamurai.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MindAttic.LLMVoting.Reference/1.0.0.0": {
+        "runtime": {
+          "MindAttic.LLMVoting.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -533,6 +550,11 @@
       "path": "system.speech/10.0.5",
       "hashPath": "system.speech.10.0.5.nupkg.sha512"
     },
+    "MindAttic.LLMVoting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -540,6 +562,11 @@
     },
     "StreetSamurai.Shared/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MindAttic.LLMVoting.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

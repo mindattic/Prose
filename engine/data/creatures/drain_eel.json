@@ -1,0 +1,42 @@
+{
+  "id": "01fb7650ad306fcced9de83973511df8",
+  "name": "Drain Eel",
+  "type": "creature",
+  "aliases": [
+    "pipe snake",
+    "gray line",
+    "slick"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "The Drain Eel is a thick-bodied, nearly limbless descendant of American eels and escaped aquarium specimens that colonized GLMZ's drainage infrastructure over two centuries. Adults average 1.2 meters, with a uniform ash-gray coloration, vestigial eyes reduced to pale photosensitive patches beneath translucent skin, and a flattened head shaped by generations of navigating pipe joints and grate openings. The skin secretes a mucus layer so chemically complex that wastewater treatment engineers have been studying it for decades — it neutralizes a remarkable range of industrial solvents. Four sensory pits run along each jaw, detecting micro-electrical fields with precision enough to distinguish a beating rat heart from a sloshing effluent pump at thirty centimeters.\n\nDrain Eels are apex opportunists of the pipe ecosystem. They wedge themselves into elbow joints and junction boxes to sleep, emerging during low-flow hours between 2 and 5 AM when the drainage system slows. They hunt by coiling at the outflow end of narrowing pipes and waiting for current to carry disoriented prey — rats, large insects, the occasional dead pigeon — down to them. They are not aggressive toward humans but have a documented habit of investigating boots standing in still water, which has caused no shortage of panicked calls to Arcturus Civil Security that go nowhere.\n\nIn Tier 1 and Tier 2 communities, Drain Eels are a fixture of life — background infrastructure fauna, no more alarming than cockroaches to anyone who grew up below the transit lines. Maintenance workers carry them as informal good omens; a Drain Eel in your section of pipe means the chemistry hasn't gone catastrophically toxic yet. Certain communities along the old canal districts keep small shrines near drain covers with offerings of fish scraps — a practice with unclear origins, mixing flood-refugee folk traditions from at least three different river cultures. Tier 5 residents rarely know they exist.",
+  "habitat": [
+    "drainage tunnels",
+    "canal infrastructure",
+    "flood control channels",
+    "undercity pipe networks"
+  ],
+  "diet": "rats, large invertebrates, carrion, fish, organic runoff matter",
+  "threat_level": "low",
+  "notable_traits": [
+    "electroreception sensory pits",
+    "industrial-solvent-neutralizing mucus",
+    "pipe-navigating flattened skull",
+    "vestigial eyes"
+  ],
+  "encounters": "Most people encounter Drain Eels during infrastructure maintenance, flooding events when they surface in streets and basements, or when one investigates a boot in standing water. Maintenance crews see them regularly. Civilians encounter them rarely but memorably — a 1.2-meter gray eel coiling around a floor drain tends to leave an impression.",
+  "known_uses": "Drain Eel mucus is harvested in small quantities by independent bio-chemists and sold to Helix Biosystems black-market contacts as a solvent-buffering compound. Some Tier 1 communities eat smoked Drain Eel — flavor described as earthy and mild if sourced from cleaner pipe sections. Informal use as drainage-health indicators by maintenance workers.",
+  "story_hooks": [
+    "A maintenance crew finds every Drain Eel in a half-kilometer pipe section dead — something in the water killed them, and they're supposed to be nearly unkillable.",
+    "A Tier 3 bio-chem researcher is paying premium Φ for live specimens to study the mucus, but someone else is paying more to make sure she never gets them."
+  ],
+  "related_entities": [],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "drainage",
+    "eel",
+    "indicator_species"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "124096593e36e3d2597970c29315e88b",
+  "name": "Seam Runner",
+  "type": "creature",
+  "aliases": [
+    "flatties",
+    "paper rats",
+    "sliders"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Seam Runner is a remarkably flat-bodied rodent — 30–40 cm body length but only 2–3 cm in dorso-ventral depth when fully compressed — that has adapted to life in the thin structural voids between building materials: the seam between poured concrete and steel cladding, the gap behind bolted wall panels, the space between stacked floor plates in multi-story construction. The flattening is achieved through genuinely unusual skeletal architecture: the thoracic vertebrae and ribs are flattened and articulated to allow the entire torso to compress to roughly 1.5 cm without injury. The limbs splay outward like a lizard's rather than depending beneath the body. The head is the flattest part — the skull has reorganized into a wedge shape, with the braincase compressed laterally and the sensory organs redistributed: eyes are positioned on the upper surface of the flattened head for lateral visual coverage, and the nostrils are on the forward edge of the snout-wedge.\n\nSeam Runners move through structural voids with unsettling speed, pressing flat and flowing through gaps that appear impossibly thin. They forage primarily at night, emerging from seam access points — gaps around conduit penetrations, loose panel edges, floor-level expansion joints — to scavenge surface areas before retreating back into the structure. Their flattened profile makes them difficult to catch, difficult to trap with standard rodent traps, and capable of disappearing from a room with no apparent exit point. They are solitary foragers with small overlapping territories. The acoustic profile of a Seam Runner moving within walls is distinctive — a dry, sliding, intermittent scratch that is frequently misidentified as electrical crackling or building settling.\n\nSeam Runners are the source of a specific category of reported haunting in GLMZ's older construction. The sounds they make within walls, combined with their ability to appear and disappear without visible access points, have contributed to a persistent folklore around certain building types — particularly the modular panel construction common in Tier 2 housing blocks from the 2140s, which has seam dimensions almost perfectly suited to Seam Runner anatomy. Pest controllers who specialize in them work with listening equipment and dye-marker injections at suspected entry points rather than standard trapping, and the work is painstaking. Residents who have lived with Seam Runners for years often describe a deeply uncomfortable sensation of being in a building that is itself watching them — the knowledge that something is moving behind every surface.",
+  "habitat": [
+    "Structural seams in multi-story construction",
+    "concrete-cladding voids",
+    "modular panel wall interiors",
+    "floor plate gaps in Tier 2 housing blocks",
+    "expansion joint networks"
+  ],
+  "diet": "Surface scavenger — food waste, grain, insect populations in structural voids, organic material accumulation in seam spaces",
+  "threat_level": "negligible",
+  "notable_traits": [
+    "Extreme dorso-ventral body compression to 1.5 cm",
+    "Laterally-articulated ribcage",
+    "Wedge-shaped flattened skull with dorsally positioned eyes",
+    "Splayed lizard-posture locomotion",
+    "Produces distinctive dry-sliding acoustic signature within walls"
+  ],
+  "encounters": "Rarely seen directly. Most encounters are auditory — the dry sliding scratch within walls, often at night. Occasionally glimpsed at floor-level gaps or panel edges at night before retreating instantly. Pest contractors encounter them during specialist removal operations using listening equipment. A direct sighting of a Seam Runner moving across an open floor is unusual and briefly surreal — the flatness of the animal is genuinely startling to see in motion.",
+  "known_uses": "No material or food use. Their acoustic signature is occasionally used by building surveyors as an indicator of structural seam dimensions — if Seam Runners are present, the seam gaps are within a known range, which has implications for insulation and moisture infiltration assessment.",
+  "story_hooks": [
+    "A Tier 2 resident has been hearing the Seam Runner sounds in her walls for months, but a building survey found no Seam Runners and no accessible seam voids — whatever is making the sounds is something else, and it's getting louder",
+    "A building demolition crew has opened up a mid-section of a 2140s modular panel block and found the seam network inside has been modified — passages widened, junctions cleared — in a way that suggests deliberate organization rather than animal foraging. The Seam Runners living in the block are behaving strangely, moving in patterns that the most experienced member of the crew says she's never seen before"
+  ],
+  "related_entities": [
+    "Conduit Rat",
+    "Brood Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "structural-adapted",
+    "wire-adapted",
+    "flat-bodied",
+    "wall-dwelling"
+  ]
+}

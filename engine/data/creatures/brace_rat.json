@@ -1,0 +1,46 @@
+{
+  "id": "7bf0556d6a17c9f610591eae80c25107",
+  "name": "Brace Rat",
+  "type": "creature",
+  "aliases": [
+    "shoulder rats",
+    "load rats",
+    "grunts"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Brace Rat is built differently from any other Shelf rodent variant — its skeleton has undergone a structural shift, with a dramatically reinforced shoulder girdle, thickened cervical vertebrae, and shortened limb segments that give it a hunched, almost bulldog posture. The result is an animal of around 5-6 kilograms that can exert extraordinary forward force relative to its mass, capable of moving objects several times its own weight through sustained shoving. The fur is uniformly dark brown to black, very short and coarse, and the muzzle is blunt and scarred. Eyes are small and deeply set. Brace Rats are rarely seen alone — they operate in work gangs of 4-10, and their cooperative physical labor on obstacles is what makes them genuinely remarkable.",
+  "habitat": [
+    "Shelf districts",
+    "blocked drainage tunnels",
+    "collapsed market corridors",
+    "fortified squatter holds",
+    "building rubble zones"
+  ],
+  "diet": "Heavily omnivorous. Preferentially targets dense caloric sources — fat, oil, concentrated protein. Has been observed raiding cooking facilities specifically for oil containers.",
+  "threat_level": "medium",
+  "notable_traits": [
+    "Reinforced shoulder and neck skeleton allows sustained powerful forward shoving force",
+    "Cooperative work gangs coordinate to move obstacles, breach barriers, or clear paths",
+    "Colonies maintain what appears to be a division of roles — larger individuals do physical work while smaller ones scout"
+  ],
+  "encounters": "Residents in dense Shelf buildings sometimes hear rhythmic thumping from walls at night — Brace Rats working a barrier. The next morning a previously blocked passage has been forced open, or a cabinet has been shifted away from a wall. Encounters with active gangs are rare but alarming: the animals don't flee immediately, and the sight of six dark heavy-bodied rats working together on a door is profoundly disconcerting.",
+  "known_uses": "At least two Shelf district fixers are known to use Brace Rat colonies strategically — giving them access to a space means eventually they will open it further. This is a slow, unreliable method but requires no tools and leaves no obvious signs of forced entry.",
+  "story_hooks": [
+    "A secured evidence room in an old Arcturus Civil Security substation has been breached — nothing was taken that anyone can identify, but a Brace Rat gang clearly did the work. Who benefits from a rat-sized breach with no human fingerprints?",
+    "A family has been watching a Brace Rat gang methodically work on the structural supports of a neighboring building. Are the rats just clearing a passage, or has something changed in their behavior?"
+  ],
+  "related_entities": [
+    "Vault Rat",
+    "Ledger Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "shelf",
+    "large_variant",
+    "cooperative_behavior",
+    "pack_behavior"
+  ]
+}

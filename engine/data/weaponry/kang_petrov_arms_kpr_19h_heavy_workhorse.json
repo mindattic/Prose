@@ -1,0 +1,50 @@
+{
+  "id": "e2c9a1b4f7d30e6c8a5f2d1b4c7e9a02",
+  "name": "Kang-Petrov Arms KPR-19H 'Heavy Workhorse'",
+  "type": "weapon",
+  "aliases": [
+    "Heavy Workhorse",
+    "KPR-19H",
+    "Big Sister",
+    "The Nineteen-H"
+  ],
+  "category": "rifle",
+  "description": "The KPR-19H is what happens when someone at Kang-Petrov looks at the KP-19 pistol family's success and decides the brand loyalty runs deep enough to extend to a matching rifle. Chambered in 7.62mm Soviet Pattern, the KPR-19H is a heavy-barreled variant on the KPR-47 platform with a 520mm barrel profile that is noticeably thicker than the standard, adding heat capacity for sustained semi-automatic fire and enough rigidity to make the rifle's point of impact consistent past 400 meters without a bipod. The receiver retains the stamped steel construction. The furniture has been updated to a reinforced polymer that Kang-Petrov calls 'Operational Grade,' which means it is slightly less likely to crack when used as a blunt instrument. The KPR-19H ships with a fixed magnification 3x optic that is mechanically simple — no batteries, no reticle illumination, just glass and a duplex crosshair — on the theory that if the operator can afford a KPR-19H they deserve an optic and if they cannot afford a better optic this one will do.\n\nThe KPR-19H sits at a strange market position. It is too expensive to be a shelf worker's first rifle and too cheap to be a serious marksman's primary. It occupies the space between — the rifle of someone who has been using KP products long enough to know they work and has saved enough to buy the version that works slightly better for slightly longer. Mid-tier security contractors buy them because they outrange what Arcturus Civil Security field units typically carry while still being legal under standard registration. Some of them buy the KPR-19H specifically because it looks like a KPR-47 at distance, which creates a valuable second of hesitation in confrontations where identification matters.\n\nThe heavy barrel's defining characteristic for experienced users is the heat it accumulates and retains. After a sustained fire engagement, the KPR-19H's barrel is hot enough to cook the finish off the front sight post, and operators learn to respect the barrel's temperature the same way you learn to respect any tool that will hurt you if you are not paying attention. The fixed optic develops a specific fogging pattern in GLMZ's humidity — the inner lens surface accumulates a faint haze that experienced operators wipe off every morning without thinking about it. Operators who forget or do not know develop a habit of squinting through the scope from an angle, which other experienced users recognize immediately.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "heavy barrel profile",
+    "fixed magnification optic",
+    "long-stroke gas piston",
+    "rotating bolt",
+    "stamped steel receiver"
+  ],
+  "specifications": "caliber: 7.62mm Soviet Pattern\neffective_range: 500m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 4.4 kg",
+  "tactical_use": "The KPR-19H is run as a designated marksman's rifle by operators who cannot afford or cannot source dedicated DMR hardware. The heavy barrel reduces point-of-impact shift during sustained fire significantly enough that experienced operators can maintain 2 MOA performance through a 20-round magazine without meaningful degradation. The fixed 3x optic is limiting at extreme range but provides enough magnification to identify and engage targets at the rifle's practical effective range. Operators who run it typically do so from a supported position — prone with a pack, kneeling against cover — rather than standing, because the weight makes unsupported shooting at range fatiguing.",
+  "cultural_context": "The KPR-19H is the rifle that GLMZ's mid-tier security community uses to signal that they are serious without spending Tessera money. In Tier 2 districts, a KPR-19H on a contractor's sling communicates a specific message: this person has been doing this long enough to know what they need and to buy something that lasts. Arcturus Civil Security's field assessments classify operators carrying KPR-19Hs as 'elevated threat profile' compared to standard KPR-47 carriers, which is the most formal acknowledgment the heavy barrel has received.",
+  "known_users": [
+    "mid-tier security contractors",
+    "Tier 2 district defense coordinators",
+    "experienced shelf district mutual aid members",
+    "independent route security operators",
+    "former ACS personnel working private"
+  ],
+  "story_hooks": [
+    "Three KPR-19Hs with sequential serial numbers were used in a coordinated attack on a Slagworks Industrial materials convoy — the rifles were purchased legally under three different registrations, all of which trace to the same Tier 2 residential block in the Pilsen corridor, and all three registrants have been reported missing in the past 72 hours.",
+    "A KPR-19H recovered from a contested Excluded zone has the fixed optic replaced with a hand-ground glass lens in a handmade mount — someone in the exclusion ring is manufacturing precision optics from salvage, and what they are pointing them at is worth knowing."
+  ],
+  "ammunition_type": [
+    "7.62mm Soviet Pattern"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier2",
+    "heavy-barrel",
+    "semi-auto",
+    "marksman",
+    "slagworks",
+    "optic-equipped"
+  ]
+}

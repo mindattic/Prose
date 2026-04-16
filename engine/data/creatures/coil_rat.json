@@ -1,0 +1,45 @@
+{
+  "id": "c600f8f37cfc9854832933a5adaf3fc0",
+  "name": "Coil Rat",
+  "type": "creature",
+  "aliases": [
+    "springback",
+    "looper",
+    "cable rat"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Coil Rat is a medium-sized rat, roughly 40 centimeters body length, with a striking physical adaptation: its tail is not straight but habitually coils in a loose helix when at rest, and the tail musculature has hypertrophied to the point where the animal uses it as a gripping appendage with significant prehensile capability. The skin of the tail is heavily scarred and thickened from repeated contact with wire, conduit, and rough metal edges, developing a tough, ridged texture that improves grip on cylindrical surfaces. The body itself is lean and elongated compared to most urban rat strains, with forelimbs that are proportionally longer and more developed, suggesting a semi-arboreal or cable-traversing lifestyle. Coloration is typically dark charcoal with lighter undersides, providing reasonable camouflage against metal surfaces and shadowed conduit runs.\n\nCoil Rats are exceptional climbers of wire runs, cable bundles, and overhead infrastructure. They navigate the dense aerial wiring found in Tier 1 and Tier 2 overhead cable districts — the illegally strung power taps, data lines, and rigged communications arrays that festoon the spaces between buildings — with a speed and confidence that makes them nearly impossible to catch in their preferred environment. They nest in junction boxes and cable splice housings, chewing insulation to create bedding material and frequently causing electrical faults. Their diet skews heavily toward the soft insulation coatings of cables themselves, supplemented by whatever food they can scavenge. This insulation consumption has resulted in measurable chemical tolerance — Coil Rats show reduced sensitivity to several common cable insulation compounds including certain plasticizers and flame retardants.\n\nElectricians and cable riggers in the overhead districts have a complicated relationship with Coil Rats. They cause expensive and dangerous faults — a gnawed power tap in the wrong place can cascade through an entire illegal power-sharing network, blacking out a block. But they are also skilled at finding existing faults and weak points in cable runs, since they preferentially gnaw compromised insulation. Some experienced riggers have learned to follow Coil Rat nesting sites as an informal diagnostic tool, knowing that where the rats congregate, the cable infrastructure is already failing. This folk knowledge is not taught formally anywhere.",
+  "habitat": [
+    "overhead cable districts",
+    "junction boxes",
+    "Tier 1 and Tier 2 aerial wire networks",
+    "cable splice housings",
+    "exterior conduit runs"
+  ],
+  "diet": "Cable insulation (plastics, synthetic rubber compounds), small invertebrates, scavenged food waste, bird eggs from aerial nests",
+  "threat_level": "low",
+  "notable_traits": [
+    "Prehensile coiling tail adapted for grip on cables and conduit",
+    "Hypertrophied forelimbs for wire traversal",
+    "Chemical tolerance to common cable insulation compounds",
+    "Preferentially targets compromised insulation — acts as informal fault indicator"
+  ],
+  "encounters": "Rarely seen at ground level. Most encounters are overhead — the sound of something moving fast through the cable bundles above, or a brief glimpse of a looping tail vanishing into a junction box. Electrical faults followed by a distinctive smell of gnawed synthetic rubber are the most common indirect encounter. Occasionally one falls during a cable fault — disoriented and aggressive.",
+  "known_uses": "Some underground electricians keep a trapped Coil Rat in a ventilated cage and observe its behavior near cable runs as an informal fault-detection method. The practice is not widely advertised. Their thickened tail skin has been experimentally used by a Tier 2 leatherworker as an accent material — extremely durable.",
+  "story_hooks": [
+    "A cascade blackout across six Tier 1 blocks is being blamed on Coil Rat gnawing, but the pattern of faults is too precise — something or someone used the rats as cover for a deliberate infrastructure attack.",
+    "A rigger offers to sell the party their 'cable rat map' — years of Coil Rat nesting sites plotted against infrastructure fault records — claiming it reveals which sections of the overhead network are on the verge of catastrophic failure."
+  ],
+  "related_entities": [
+    "Razor Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "wire-adapted",
+    "aerial-infrastructure",
+    "electrical-hazard"
+  ]
+}

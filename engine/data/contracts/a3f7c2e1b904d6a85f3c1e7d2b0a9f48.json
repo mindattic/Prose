@@ -1,0 +1,34 @@
+{
+  "id": "a3f7c2e1b904d6a85f3c1e7d2b0a9f48",
+  "name": "Retirement Package",
+  "type": "contract",
+  "codename": "SEVERANCE PAY",
+  "contract_tier": "B",
+  "posted_by": "Shelf Merchants Collective, Portage Underdeck (via broker Yolanda Vest)",
+  "target": "Sub-Commander Darius Holst, Arcturus Civil Security, Portage District rotational unit",
+  "objective": "Permanently remove Holst before his quarterly audit cycle resets on the 14th. His death must not be traceable to any Shelf merchant.",
+  "location": "Portage Underdeck District, specifically Holst's established off-shift pattern: the Kessler transit corridor between his billet and a card hall called The Bite",
+  "payout": "Φ85,000",
+  "deadline": "13 days",
+  "complications": [
+    "Holst is Arcturus, which means his death triggers a mandatory internal investigation — freelancer must ensure the scene reads as a civilian dispute or accident, not a hit",
+    "At least one other merchant in the Collective is quietly paying Holst's protection rate and may tip him if they smell a contract",
+    "Holst has a civilian partner, Mira Holst, who frequently meets him at transit stops — collateral damage would detonate the merchant coalition's legitimacy"
+  ],
+  "moral_weight": "grey",
+  "description": "Posted through broker Yolanda Vest out of the Portage Underdeck — a straightforward removal of a corrupt ACS commander running a protection racket on a tight-margin merchant strip. The collective has been paying Holst's informal tax for eleven months. Two merchants who refused are now operating under permanent compliance holds. One closed. The posting frames this as self-defense by the poor against predatory enforcement, and that framing is largely accurate.\n\nHolst is guilty of what he's accused of — the extortion is real, the compliance holds are retaliatory, and nobody above him in ACS is going to stop him because the informal revenue flows upward through his chain of command. The complication is that removing Holst doesn't end the system. The Portage rotational slot will be filled within weeks, and the new sub-commander will either continue the arrangement or establish a new one. The merchants are paying for relief, not for change. The freelancer is being handed a man who deserves to die in a world that will simply manufacture another one.",
+  "story_hooks": [
+    "The merchant who is secretly still paying Holst reaches out to the freelancer mid-contract — not to stop the job, but to negotiate being kept out of any aftermath narrative",
+    "Holst's civilian partner Mira turns out to be running her own angle — she's been documenting Holst's operation for an ACS internal affairs unit that may not be as legitimate as it sounds"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-B",
+    "elimination",
+    "arc-civil-security",
+    "shelf-district",
+    "grey-morality",
+    "portage"
+  ]
+}
