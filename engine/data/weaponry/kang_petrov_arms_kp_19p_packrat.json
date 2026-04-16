@@ -1,0 +1,51 @@
+{
+  "id": "18f6c4a9b2e7d3051c8f6a4b2e0d9c37",
+  "name": "Kang-Petrov Arms KP-19P 'Packrat'",
+  "type": "weapon",
+  "aliases": [
+    "Packrat",
+    "KP-19P",
+    "The Pack",
+    "Trunk Gun"
+  ],
+  "category": "pistol",
+  "description": "The KP-19P is a pistol designed around a single premise: you might need to store it somewhere uncomfortable for a long time and then use it immediately. Built on the KP-19 chassis, the Packrat features a collapsible grip that reduces overall dimensions by 31% for storage, a corrosion-resistant sealed action that tolerates years of minimal maintenance, and a factory-installed 25-round extended magazine with a grip sleeve that restores full ergonomics when deployed. The collapsing mechanism is spring-loaded and deploys with a single thumb press—field deployment time from storage configuration to fire-ready is under three seconds with practice. The barrel is fixed-length regardless of grip position, preserving accuracy. Kang-Petrov markets it as a 'vehicle emergency platform' and 'industrial site reserve weapon.'\n\nThe Packrat is the gun that lives in the false bottom of a courier van, taped inside a utility panel in a commercial kitchen, or sealed in a waterproof case under a mag-rail seat that nobody ever checks. GLMZ's informal economy runs on people who need weapons accessible without being visible, and the KP-19P serves that need with factory engineering rather than improvised solutions. It sells heavily in the logistics and distribution sectors, where vehicles pass through multiple territorial and security jurisdictions and carrying a standard pistol openly creates problems at checkpoints. The 25-round magazine means the gun can handle situations that a standard-capacity sidearm cannot.\n\nA deployed Packrat looks slightly wrong to anyone who knows guns—the grip has a slight seam where it joins the frame in storage mode, and the mechanism that locks it in extended position creates a faint asymmetry in the grip profile. Experienced shooters notice. Most people under stress at 3am in a parking structure do not. The gun's nickname in courier culture is simply 'the Pack,' and finding one during a vehicle search is one of the reliable indicators, per Arcturus Civil Security training materials, that you're looking at a professional smuggling operation rather than a civilian with bad habits.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "collapsible grip mechanism",
+    "sealed corrosion-resistant action",
+    "extended magazine interface",
+    "spring-deployment system"
+  ],
+  "specifications": "caliber: 9x19mm Standard\neffective_range: 50m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 25 rounds (extended) / 17 rounds (standard compatible)\nweight: 0.82 kg (deployed)",
+  "tactical_use": "The KP-19P is a vehicle-cache and concealed-reserve weapon. Operators deploy it from storage when a situation escalates beyond what they anticipated, and the 25-round magazine provides extended engagement capacity that compensates for the lack of spare magazines typical in a cache situation. The deployment mechanism requires practiced muscle memory—operators who don't drill the thumb-press-and-grip sequence fumble it under stress. The sealed action tolerates 18-month storage without cleaning in controlled environments.",
+  "cultural_context": "In GLMZ's courier and logistics underground, a Packrat is professional equipment in the same category as a quality nav-system or a reliable vehicle. Having one means you've thought about what your work might require. Getting caught with one by Arcturus means a long conversation about your licensing and your employer. The restricted classification is enforced inconsistently, which is its own kind of information about who Arcturus is actually watching.",
+  "known_users": [
+    "independent couriers on cross-jurisdiction routes",
+    "logistics operators in contested distribution zones",
+    "Slagworks supply chain security",
+    "fixer support drivers",
+    "black market resupply operatives"
+  ],
+  "story_hooks": [
+    "A Packrat is found concealed in a Slagworks-branded delivery vehicle that was abandoned in an Excluded zone—the vehicle's manifest shows it was carrying medical supplies for a Crucible Genomics subsidiary, but the cargo compartment is empty and the Packrat has been fired recently.",
+    "Kyle Corbin-Vasik's contact in the courier network asks a favor: hold a sealed package for 48 hours. The package turns out to contain three KP-19Ps, all registered to the same name, and someone has started asking around the network about packages held by people who work with Kyle."
+  ],
+  "ammunition_type": [
+    "9x19mm Standard"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks-industrial",
+    "tier2",
+    "cache-weapon",
+    "collapsible",
+    "high-capacity",
+    "logistics",
+    "restricted"
+  ]
+}

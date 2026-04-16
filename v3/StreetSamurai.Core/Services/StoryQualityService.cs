@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Logging;
+using MindAttic.LLMVoting;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -35,11 +36,11 @@ namespace StreetSamurai.Core.Services;
 /// </summary>
 public class StoryQualityService
 {
-    private readonly MultiLlmService multiLlm;
+    private readonly LLMVotingService llmVoting;
     private readonly IPathProvider paths;
     private readonly ILogger<StoryQualityService> log;
 
-    private static readonly string[] RubricDimensions =
+    private static readonly List<string> RubricDimensions =
     [
         "VOICE",
         "MORAL_COMPLEXITY",
@@ -54,10 +55,10 @@ public class StoryQualityService
     private const int FailureThreshold = 5;
 
     public StoryQualityService(
-        MultiLlmService multiLlm, IPathProvider paths,
+        LLMVotingService llmVoting, IPathProvider paths,
         ILogger<StoryQualityService> log)
     {
-        this.multiLlm = multiLlm;
+        this.llmVoting = llmVoting;
         this.paths = paths;
         this.log = log;
     }
@@ -75,8 +76,8 @@ public class StoryQualityService
         log.LogInformation("StoryQuality evaluation starting: projectId={ProjectId}, title={Title}, textLen={Len}",
             story.ProjectId, story.Title, story.FullText.Length);
 
-        var providers = multiLlm.GetConfiguredProviders();
-        if (providers.Count == 0)
+        var activeProviders = llmVoting.GetActiveProviderIds();
+        if (activeProviders.Count == 0)
         {
             log.LogWarning("No LLM providers configured — skipping quality evaluation");
             return new StoryQualityReport
@@ -92,11 +93,9 @@ public class StoryQualityService
             ? story.FullText[..12000] + "\n\n[...story truncated for evaluation...]"
             : story.FullText;
 
-        // Build the outline summary for context
         var outlineSummary = BuildOutlineSummary(story.Outline);
 
-        var system = BuildEvaluationSystemPrompt();
-        var user = $"""
+        var context = $"""
             STORY TITLE: {story.Title}
             PROTAGONIST: {story.Protagonist}
             LOCATION: {story.Location}
@@ -109,18 +108,27 @@ public class StoryQualityService
             {storyText}
             """;
 
-        // Call all configured providers in parallel
-        var providerIds = providers.Select(p => p.Id).ToList();
-        Dictionary<string, string> responses;
+        var request = new ScoredVoteRequest
+        {
+            Question            = "Evaluate this neo-noir short story.",
+            Context             = context,
+            Dimensions          = RubricDimensions,
+            FailureThreshold    = FailureThreshold,
+            EvaluatorContext    = BuildEvaluatorContext(),
+            SynthesizeNarrative = true,
+            MaxTokens           = 2048,
+        };
+
+        ScoredVotingResult scored;
         try
         {
-            responses = await multiLlm.CallMultipleAsync(providerIds, system, user, ct);
-            log.LogInformation("Quality evaluation: {Count}/{Total} providers responded",
-                responses.Count, providerIds.Count);
+            scored = await llmVoting.ScoreAsync(request, ct);
+            log.LogInformation("Quality evaluation: {Count} voters responded, overall={Overall:F1}/10",
+                scored.SuccessfulVoters, scored.AggregateScores.GetValueOrDefault("OVERALL"));
         }
         catch (Exception ex)
         {
-            log.LogError(ex, "Quality evaluation multi-LLM call failed");
+            log.LogError(ex, "Quality evaluation failed");
             return new StoryQualityReport
             {
                 ProjectId = story.ProjectId,
@@ -129,18 +137,35 @@ public class StoryQualityService
             };
         }
 
-        // Parse each response into a structured score
-        var individualReports = new List<LlmQualityVote>();
-        foreach (var (name, responseText) in responses)
-        {
-            var vote = ParseVote(name, responseText);
-            individualReports.Add(vote);
-            log.LogDebug("Quality vote from {Provider}: overall={Overall}, cliches={Cliches}",
-                name, vote.OverallScore, vote.ClichesFound.Count);
-        }
+        // Map LLMVoting result → StoryQualityReport
+        var individualReports = scored.IndividualVotes
+            .Where(v => !v.IsError)
+            .Select(v => new LlmQualityVote
+            {
+                ProviderName        = v.VoterName,
+                Scores              = v.Scores,
+                OverallScore        = v.Confidence,
+                Strengths           = v.Flags.Where(f => scored.ConsensusStrengths.Contains(f)).ToList(),
+                Failures            = scored.ConsensusFailures.Where(f => v.Flags.Contains(f)).ToList(),
+                ClichesFound        = [],
+                BestMoment          = v.BestMoment,
+                WorstMoment         = v.WorstMoment,
+                ImprovementDirective = v.Flags.LastOrDefault() ?? "",
+            }).ToList();
 
-        // Aggregate scores
-        var report = AggregateVotes(story.ProjectId, story.Title, individualReports);
+        var report = new StoryQualityReport
+        {
+            ProjectId            = story.ProjectId,
+            Title                = story.Title,
+            EvaluatedAt          = DateTime.UtcNow,
+            AggregateScores      = scored.AggregateScores.ToDictionary(kv => kv.Key, kv => kv.Value),
+            WeakestDimension     = scored.WeakestDimension,
+            ImprovementDirectives = scored.ImprovementDirectives,
+            ConsensusStrengths   = scored.ConsensusStrengths,
+            AllFailures          = scored.ConsensusFailures,
+            AllClichesFound      = [],
+            IndividualVotes      = individualReports,
+        };
 
         // Save to disk
         Save(story.ProjectId, report);
@@ -235,7 +260,11 @@ public class StoryQualityService
 
     // ── Private ──
 
-    private static string BuildEvaluationSystemPrompt() => """
+    /// <summary>
+    /// Domain-specific evaluator context injected into LLMVoting's ScoredVoteRequest.
+    /// Provides the rubric framing; LLMVoting enforces the JSON output schema.
+    /// </summary>
+    private static string BuildEvaluatorContext() => """
         You are a literary critic evaluating a neo-noir short story set in GLMZ
         (a city consumed by corporate sovereignty, aug-culture, and institutional collapse).
 
@@ -269,144 +298,10 @@ public class StoryQualityService
           10 = each line advances conflict OR reveals psychology, voices distinct, subtext present
            1 = dialogue conveys only information, all characters sound the same
 
-        OUTPUT (JSON only, no markdown):
-        {
-          "scores": {
-            "VOICE": <int>,
-            "MORAL_COMPLEXITY": <int>,
-            "PACING": <int>,
-            "CHARACTER_AUTHENTICITY": <int>,
-            "WORLD_SPECIFICITY": <int>,
-            "CLICHE_AVOIDANCE": <int>,
-            "DIALOGUE_QUALITY": <int>
-          },
-          "strengths": ["specific thing the story did well"],
-          "failures": ["specific thing the story failed at, with example from text"],
-          "cliches_found": ["each specific cliché with quote from text"],
-          "best_moment": "quote or description of the story's best beat",
-          "worst_moment": "quote or description of the story's weakest moment",
-          "improvement_directive": "one specific, actionable thing to fix in the next story"
-        }
+        In flags_bad, include specific genre clichés found with quotes from the text.
+        In flags_good, include specific strengths with quotes from the text.
         """;
 
-    private static LlmQualityVote ParseVote(string providerName, string responseText)
-    {
-        var vote = new LlmQualityVote { ProviderName = providerName };
-
-        try
-        {
-            var json = responseText.Trim();
-            if (json.StartsWith("```")) json = json[(json.IndexOf('\n') + 1)..];
-            if (json.EndsWith("```")) json = json[..^3];
-            json = json.Trim();
-
-            var doc = JsonDocument.Parse(json).RootElement;
-
-            if (doc.TryGetProperty("scores", out var scores))
-            {
-                foreach (var dim in RubricDimensions)
-                {
-                    if (scores.TryGetProperty(dim, out var sv) && sv.TryGetInt32(out var sc))
-                        vote.Scores[dim] = sc;
-                }
-            }
-
-            if (doc.TryGetProperty("strengths", out var str))
-                vote.Strengths = str.EnumerateArray().Select(x => x.GetString() ?? "").Where(s => s.Length > 0).ToList();
-
-            if (doc.TryGetProperty("failures", out var fail))
-                vote.Failures = fail.EnumerateArray().Select(x => x.GetString() ?? "").Where(s => s.Length > 0).ToList();
-
-            if (doc.TryGetProperty("cliches_found", out var cf))
-                vote.ClichesFound = cf.EnumerateArray().Select(x => x.GetString() ?? "").Where(s => s.Length > 0).ToList();
-
-            if (doc.TryGetProperty("best_moment", out var bm))
-                vote.BestMoment = bm.GetString() ?? "";
-
-            if (doc.TryGetProperty("worst_moment", out var wm))
-                vote.WorstMoment = wm.GetString() ?? "";
-
-            if (doc.TryGetProperty("improvement_directive", out var id))
-                vote.ImprovementDirective = id.GetString() ?? "";
-
-            vote.OverallScore = vote.Scores.Count > 0
-                ? (int)Math.Round(vote.Scores.Values.Average())
-                : 0;
-        }
-        catch (Exception)
-        {
-            // Parse failure — raw text goes in as a note
-            vote.Failures.Add($"[Parse error — raw: {responseText.Take(200)}]");
-        }
-
-        return vote;
-    }
-
-    private static StoryQualityReport AggregateVotes(
-        string projectId, string title, List<LlmQualityVote> votes)
-    {
-        var report = new StoryQualityReport
-        {
-            ProjectId = projectId,
-            Title = title,
-            EvaluatedAt = DateTime.UtcNow,
-            IndividualVotes = votes,
-        };
-
-        if (votes.Count == 0) return report;
-
-        // Average each dimension across providers
-        foreach (var dim in RubricDimensions)
-        {
-            var available = votes.Where(v => v.Scores.ContainsKey(dim)).ToList();
-            if (available.Count > 0)
-                report.AggregateScores[dim] = Math.Round(available.Average(v => v.Scores[dim]), 1);
-        }
-
-        // Overall is average of all dimensions
-        if (report.AggregateScores.Count > 0)
-            report.AggregateScores["OVERALL"] = Math.Round(report.AggregateScores.Values.Average(), 1);
-
-        // Consensus strengths (mentioned by 2+ providers)
-        var allStrengths = votes.SelectMany(v => v.Strengths).ToList();
-        report.ConsensusStrengths = allStrengths
-            .GroupBy(s => s.ToLowerInvariant()[..Math.Min(30, s.Length)])
-            .Where(g => g.Count() >= 2)
-            .Select(g => g.First())
-            .Take(5)
-            .ToList();
-
-        // All failures (deduplicated)
-        report.AllFailures = votes.SelectMany(v => v.Failures)
-            .Distinct(StringComparer.OrdinalIgnoreCase)
-            .Take(10)
-            .ToList();
-
-        // All clichés found
-        report.AllClichesFound = votes.SelectMany(v => v.ClichesFound)
-            .Distinct(StringComparer.OrdinalIgnoreCase)
-            .Take(10)
-            .ToList();
-
-        // Improvement directives from all providers
-        report.ImprovementDirectives = votes
-            .Select(v => v.ImprovementDirective)
-            .Where(s => s.Length > 0)
-            .Distinct(StringComparer.OrdinalIgnoreCase)
-            .Take(5)
-            .ToList();
-
-        // Identify the weakest dimension
-        if (report.AggregateScores.Count > 0)
-        {
-            report.WeakestDimension = report.AggregateScores
-                .Where(kv => kv.Key != "OVERALL")
-                .OrderBy(kv => kv.Value)
-                .First().Key;
-        }
-
-        return report;
-    }
 
     private void Save(string projectId, StoryQualityReport report)
     {

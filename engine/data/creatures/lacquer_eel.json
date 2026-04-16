@@ -1,0 +1,49 @@
+{
+  "id": "7ef66554d0985d389108376a1ee5d6f8",
+  "name": "Lacquer Eel",
+  "type": "creature",
+  "aliases": [
+    "hardback",
+    "shell eel",
+    "lacuna fish"
+  ],
+  "category": "modified_fauna",
+  "origin": "genemod_accident",
+  "description": "Lacuna Genomics' neural modification research required model organisms with accessible and modifiable nervous systems for testing delivery mechanisms. An eel-based model — constructed from American eel stock — was used in the 2140s to test a dermal neural-scaffold delivery system intended to allow external application of neural modification compounds. The scaffold system worked by inducing the growth of a hardened external layer permeated with neural tissue analogs — essentially, a skin that could think. The eels grew a chitinous-appearing outer layer over their scales, smooth and slightly flexible, that is not chitin but a keratinized neural scaffold composite. When the delivery mechanism trials ended, the remaining organisms were logged for disposal. Several were not disposed of. The Lacquer Eel is their descendant, the scaffold layer now heritable and permanent.\n\nLacquer Eels are visually distinctive — their outer surface is a hard, slightly glossy layer ranging from amber to dark brown, smooth except for faint segmentation lines at flex points. Underneath, the original eel is functional and intact; the outer layer is essentially a second skin that provides significant chemical resistance and mechanical protection. The neural scaffold component has become vestigial — it does not connect to a delivery system that no longer exists — but the layer itself has proven highly adaptive for chemical resistance in industrial drainage. Lacquer Eels can survive in pipe sections that kill other tunnel fauna. They average ninety centimeters and hunt in highly contaminated zones that serve as refuge from larger predators unable to tolerate those conditions.\n\nLacquer Eels have attracted persistent and somewhat alarmed attention from Lacuna Genomics, which has never publicly acknowledged the origin of the scaffold layer. They are rare enough that most tunnel workers never see one, but those who do report them to whatever maintenance authority they work under. Lacuna Genomics has, on multiple documented occasions, sent recovery teams to retrieve reported specimens before official wildlife documentation can occur. The rumor in Tier 1 communities with deep infrastructure knowledge is that the outer layer, if you soak and treat it correctly, produces a material of unusual properties — flexible, tough, and allegedly capable of interfering with neural scanning equipment. Whether this is true, nobody reputable will say on record.",
+  "habitat": [
+    "highly contaminated drainage sections",
+    "industrial outflow pipes",
+    "chemical waste retention infrastructure",
+    "deep Canal Ward industrial zones"
+  ],
+  "diet": "Drain Eels, invertebrates, organic waste, chemical-resistant fungal mats",
+  "threat_level": "low",
+  "notable_traits": [
+    "Heritable chitinous-appearing keratinized neural scaffold outer layer",
+    "High chemical resistance — survives in acutely contaminated zones",
+    "Vestigial external neural scaffold tissue",
+    "Smooth segmented outer surface, amber to dark brown",
+    "Lacuna Genomics undisclosed origin — subject to active recovery attempts"
+  ],
+  "encounters": "Rarely encountered — found only in highly contaminated drainage sections that other workers avoid. When found, they are typically reported and the report subsequently results in a Lacuna Genomics contractor arriving before any official documentation is filed. Street-level information brokers in Canal Ward sometimes pay for confirmed sightings.",
+  "known_uses": "Rumored black-market applications for the treated outer layer material as neural-scan interference material. Lacuna Genomics clearly wants them for undisclosed purposes. The chemical resistance of the outer layer has been noted by industrial chemists who have managed to examine specimens.",
+  "story_hooks": [
+    "A maintenance worker found a Lacquer Eel and, instead of reporting it, kept it — they want to know why Lacuna Genomics retrieves every reported specimen before documentation can occur. Following that question leads somewhere the corporation has worked hard to keep sealed.",
+    "A Tier 1 materials broker is selling what they claim is treated Lacquer Eel outer layer as neural-scan interference material to people who need to move through Arcturus Civil Security checkpoints without their implants being read. Whether it works, and whether the supply is sustainable, are both open questions — and Lacuna Genomics has noticed the market."
+  ],
+  "related_entities": [
+    "Drain Eel",
+    "Flux Serpent"
+  ],
+  "tags": [
+    "creature",
+    "modified_fauna",
+    "genemod_accident",
+    "Lacuna_Genomics",
+    "chemical_resistance",
+    "drainage",
+    "tunnel",
+    "corporate_secret",
+    "neural_scaffold"
+  ]
+}

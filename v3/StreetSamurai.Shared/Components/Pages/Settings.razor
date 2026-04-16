@@ -698,28 +698,22 @@
     */
 
     // Fact Discovery
-    private bool factRunning;
     private string? factStatus;
-    private bool factSuccess;
-
-    private bool describeRunning;
     private string? describeStatus;
-    private bool describeSuccess;
 
     private async Task LaunchFactDiscovery()
     {
-        factRunning = true; factStatus = "Launching pipeline..."; factSuccess = false;
+        factStatus = "Launching pipeline...";
         await InvokeAsync(StateHasChanged);
 
         try
         {
-            var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "python");
+            var pipelineDir = Path.Combine(Paths.DataRoot, "scripts", "py");
             var scriptPath = Path.Combine(pipelineDir, "run_fact_pipeline.py");
 
             if (!File.Exists(scriptPath))
             {
                 factStatus = "Pipeline not found at " + scriptPath;
-                factRunning = false;
                 return;
             }
 
@@ -735,31 +729,28 @@
 
             System.Diagnostics.Process.Start(psi);
             factStatus = "Pipeline launched in terminal. Check the window for progress.";
-            factSuccess = true;
         }
         catch (Exception ex)
         {
             factStatus = $"Failed to launch: {ex.Message}";
         }
 
-        factRunning = false;
         await InvokeAsync(StateHasChanged);
     }
 
     private async Task LaunchDescribe()
     {
-        describeRunning = true; describeStatus = "Launching character portrait generator..."; describeSuccess = false;
+        describeStatus = "Launching character portrait generator...";
         await InvokeAsync(StateHasChanged);
 
         try
         {
-            var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "python");
+            var pipelineDir = Path.Combine(Paths.DataRoot, "scripts", "py");
             var scriptPath = Path.Combine(pipelineDir, "generate_descriptions.py");
 
             if (!File.Exists(scriptPath))
             {
                 describeStatus = "Script not found at " + scriptPath;
-                describeRunning = false;
                 return;
             }
 
@@ -775,14 +766,12 @@
 
             System.Diagnostics.Process.Start(psi);
             describeStatus = "Generator launched in terminal. Check the window for progress.";
-            describeSuccess = true;
         }
         catch (Exception ex)
         {
             describeStatus = $"Failed to launch: {ex.Message}";
         }
 
-        describeRunning = false;
         await InvokeAsync(StateHasChanged);
     }
 

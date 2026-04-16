@@ -1,0 +1,49 @@
+{
+  "id": "2a4f2d84bb3f77f70b4901e124396c18",
+  "name": "Blind Pipe Boa",
+  "type": "creature",
+  "aliases": [
+    "grey wrap",
+    "choke pipe",
+    "tunnel hugger"
+  ],
+  "category": "urban_fauna",
+  "origin": "adaptation",
+  "description": "Boa constrictors were introduced to GLMZ's subsurface environment through multiple refugee displacement events — communities from flooded Caribbean and Gulf Coast territories brought them, many escaped during infrastructure flooding, some were released by owners unable to care for them. The Blind Pipe Boa is not technically blind — it retains small functional eyes — but has developed such extensive reliance on thermoreception and lateral mechanoreception that vision is nearly irrelevant to its function. Adults reach two to three meters. Their bodies have become more cylindrical than typical boas, an adaptation to moving through circular pipe infrastructure, and their skin has faded to a uniform grey-brown with faint ghost-patterning visible only in strong light.\n\nBlind Pipe Boas are ambush hunters adapted to the specific geometry of drainage tunnels. They coil inside large-diameter feeder pipes at junctions, head positioned at the pipe mouth, and wait for the vibration signatures of passing animals. They can distinguish a rat from a Drain Eel by vibration pattern alone. Their strike reach is approximately forty percent of body length, and in a confined tunnel their strike is substantially more dangerous than in open space — a prey animal has nowhere to retreat. They feed infrequently, a large meal sustaining them for weeks, and they are metabolically patient in a way that makes them seem absent from an area until they are suddenly, unmistakably present.\n\nBlind Pipe Boas are the creature that generates the most genuine fear among deep-infrastructure maintenance workers — not because they are likely to attack humans, but because of the specific horror of reaching into a large-diameter pipe junction and feeling warm coils. They are large enough to present a theoretical constriction risk to a child or a very small adult in a confined space, though documented human injury incidents are rare. Maintenance unions have formal protocols for pipe junction inspection that include visual and vibration checks before reaching. In Tier 1 communities with accessible drainage infrastructure, they have generated genuine urban legend status — the grey wrap that lives in the walls, patient and cold and waiting.",
+  "habitat": [
+    "large-diameter drainage pipes",
+    "pipe junctions",
+    "deep sewer infrastructure",
+    "abandoned service tunnels"
+  ],
+  "diet": "Rats, Drain Eels, Silt Moccasins, larger tunnel fauna",
+  "threat_level": "medium",
+  "notable_traits": [
+    "Highly developed lateral mechanoreception for prey vibration detection",
+    "Cylindrical body adaptation for circular pipe geometry",
+    "Ghost-patterned grey-brown camouflage",
+    "Metabolic patience — feeds infrequently, waits extensively",
+    "Strike geometry optimized for confined-space ambush"
+  ],
+  "encounters": "Encountered by maintenance workers during pipe junction inspections, most alarmingly by touch in dark spaces. Occasionally found coiled in decommissioned service tunnels during infrastructure surveys. Rarely surfaces — an above-ground Blind Pipe Boa sighting suggests a disruption to its drainage habitat.",
+  "known_uses": "Maintenance workers sometimes tolerate known individuals in drainage sections as apex pest controllers — a Blind Pipe Boa in a feeder pipe significantly reduces rat and smaller snake populations. Removing them can cause a prey population surge. Some Tier 1 communities treat them with a cautious respect bordering on reverence.",
+  "story_hooks": [
+    "A maintenance crew has been refusing to service a particular junction section for months, claiming equipment issues. The real issue is a very large Blind Pipe Boa that has been in that junction for what older workers claim is at least fifteen years — and nobody wants to be the one to remove it, both for practical and quasi-superstitious reasons. Now the junction actually needs service.",
+    "A Blind Pipe Boa surfaced in a Tier 3 district's underground parking structure — three meters of grey coils in the vehicle ramp drainage channel. How it got there reveals an unsanctioned tunnel connection to a condemned subsector that someone has been using for access."
+  ],
+  "related_entities": [
+    "Drain Eel",
+    "Silt Moccasin"
+  ],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "adaptation",
+    "tunnel",
+    "drainage",
+    "constrictor",
+    "ambush",
+    "refugee_origin",
+    "thermoreception"
+  ]
+}

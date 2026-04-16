@@ -289,6 +289,14 @@
         "resolved": "10.0.5",
         "contentHash": "MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ=="
       },
+      "MindAttic.LLMVoting": {
+        "type": "Project",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[10.0.5, )",
+          "Microsoft.Extensions.Http": "[10.0.5, )",
+          "Microsoft.Extensions.Logging.Abstractions": "[10.0.5, )"
+        }
+      },
       "streetsamurai.core": {
         "type": "Project",
         "dependencies": {
@@ -297,6 +305,7 @@
           "Microsoft.Data.Sqlite": "[10.0.5, )",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "[10.0.5, )",
           "Microsoft.Extensions.Http": "[10.0.5, )",
+          "MindAttic.LLMVoting": "[1.0.0, )",
           "QuikGraph": "[2.5.0, )",
           "QuikGraph.Serialization": "[2.5.0, )",
           "Serilog": "[4.3.1, )",

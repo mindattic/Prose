@@ -1,0 +1,35 @@
+{
+  "id": "2e6a8d4c0f9b517382e6a8d4c0f9b517",
+  "name": "Data Recovery from Decommissioned Server Infrastructure — Ghost Node Site",
+  "type": "contract",
+  "codename": "NULL RETURN",
+  "contract_tier": "A",
+  "posted_by": "Listed as: Freight Logistics Administrative Office, Port of Cleveland — almost certainly a front",
+  "target": "Archived data cluster on a decommissioned GLMZ Municipal Infrastructure server array, physical location: sublevel 3, abandoned water treatment facility, East Cleveland industrial zone. The server technically does not exist — it was removed from all network registries in 2191 following a Municipal Infrastructure restructuring.",
+  "objective": "Access the physical server array at the decommissioned East Cleveland water treatment facility, power up the isolated cluster long enough to extract a specific data partition (partition designation provided upon contract acceptance), and deliver a verified copy to a designated dead drop. The facility has no active network connection — extraction is physical only.",
+  "location": "Former East Cleveland Water Treatment Facility, Industrial Zone 7, GLMZ East Corridor — sublevel 3, server room C",
+  "payout": "Φ275,000",
+  "deadline": "14 days — after which the posting entity states the data 'will no longer be actionable'",
+  "complications": [
+    "The facility's sublevel power grid was decommissioned but not fully disconnected — powering up the server cluster risks triggering automated safety systems throughout the building that were never properly shut down, including blast-seal doors on sublevel access corridors",
+    "The site has been occupied intermittently by a Shelf-overflow community for approximately three years; approximately 40-60 residents use the upper levels; their presence is not in any official record and the posting entity did not mention them",
+    "The partition designation will only be provided after contract acceptance and a vetting call — the contractor will not know what data they are extracting until they are already committed"
+  ],
+  "moral_weight": "grey",
+  "description": "The posting is dry and technical — specific enough to be credible, vague enough to maintain plausible deniability. A freight logistics administrative office wanting data from a ghost server is obviously not what it says it is, and anyone reading at A-tier knows that. The partition identifier is being withheld pending vetting, which is either standard operational security or a flag. The pay is strong and the deadline is real. Callum Osei has seen three similar postings over the years; two of them were clean by his standards. One wasn't.\n\nThe server array in sublevel 3 was part of a GLMZ Municipal Infrastructure project that ran from 2183 to 2190 — a climate displacement modeling initiative that processed population flow data, resource allocation projections, and infrastructure stress modeling for the ongoing internal migration from the flooded zones. The project was restructured out of existence when a different administrative bloc took over the relevant portfolio. The servers were supposed to be wiped and decommissioned. They weren't wiped. Someone made sure of that. The partition being targeted almost certainly contains resource allocation modeling that shows specific decisions about which Shelf districts received flood infrastructure investment and which didn't — decisions that, if the modeling is as damning as the likely actual client believes, would implicate current-serving administrators in something that could be characterized anywhere from criminal negligence to deliberate policy. The Shelf-overflow community living in the upper levels of the facility is living directly above the evidence of why they ended up there.",
+  "story_hooks": [
+    "Someone in the Shelf community living in the facility is a former Municipal Infrastructure technician who worked on the original server project and knows exactly what's in that partition — they don't know the job is happening",
+    "The partition designation, when finally revealed, includes a data range that overlaps with the Calumet filtration accident that produced the Meridian Wellness Group study cohort — a connection the posting entity will not have disclosed"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-A",
+    "retrieval",
+    "data",
+    "ghost-server",
+    "infrastructure",
+    "covert",
+    "political"
+  ]
+}

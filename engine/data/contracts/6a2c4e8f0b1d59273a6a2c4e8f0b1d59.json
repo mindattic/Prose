@@ -1,0 +1,35 @@
+{
+  "id": "6a2c4e8f0b1d59273a6a2c4e8f0b1d59",
+  "name": "Retrieval of S-Tier Freelancer's Personal Effects — High Security Impound, Arcturus District 7",
+  "type": "contract",
+  "codename": "ESTATE SALE",
+  "contract_tier": "A",
+  "posted_by": "Signal Network — posted by consensus of three senior brokers, GLMZ North, following the death of 'Sable' (freelancer, S-tier, deceased 14 days ago)",
+  "target": "A sealed hardcase (biometric lock, owner-keyed only) impounded by Arcturus Civil Security District 7 following a controlled-substance interdiction that incidentally resulted in Sable's death. The case contains materials the Signal Network has assessed as 'operationally sensitive to multiple active freelancers.'",
+  "objective": "Retrieve the sealed hardcase from Arcturus District 7's evidence impound facility before it is opened for forensic inventory — estimated window: 20 days before a warrant for forced entry into the case is processed. The case must not be opened during retrieval. Deliver to Senior Broker Yumiko Tanaka, GLMZ North.",
+  "location": "Arcturus Civil Security District 7 Evidence Impound, Tier 3 enforcement district, GLMZ North Corridor",
+  "payout": "Φ450,000 — pooled from Signal Network broker contributions",
+  "deadline": "20 days before forensic warrant processes",
+  "complications": [
+    "Arcturus District 7's evidence impound is a hardened facility with full inventory tracking — removing an item from evidence without generating a chain-of-custody gap requires either deep system access or a substitution play, and Arcturus's evidence systems are specifically designed to detect both",
+    "The case is biometrically locked to Sable, who is dead — any attempt to open it to verify contents before delivery is impossible without destroying the lock mechanism, and the Network has specified the case must arrive sealed",
+    "At least two other parties are believed to be aware the case exists and are interested in its contents: a Tier 5 corporate entity whose name the broker posting declines to include, and an unknown party who attempted to access the impound through official channels and was denied six days ago"
+  ],
+  "moral_weight": "grey",
+  "description": "The Signal Network posting is unusual — collective broker sponsorship of a contract is rare and signals that whatever is in that case matters to enough active freelancers that the community is pooling resources to protect it. Yumiko Tanaka's name on the delivery endpoint is a strong trust signal; she has run the North Corridor broker operation for eleven years and her reputation is impeccable. The brief is honest about the difficulty and the competing interests. A-tier work, A-tier pay, A-tier consequences if it goes wrong.\n\nSable was a real person whose operational name was the only name most of the Network knew. Over roughly fifteen years of S-tier work, she functioned as a kind of informal registry — freelancers trusted her with documentation: proof of identity, records of completed contracts, evidence that specific people were responsible for specific outcomes. The hardcase contains, by broker estimate, materials relating to at least forty active freelancers including evidence that could be used to harm or protect them depending on whose hands it lands in. Arcturus's controlled-substance interdiction that killed her was probably what it was officially recorded as. Probably. The Tier 5 corporate entity that has been circling the impound is one whose name appears in at least six known Sable-adjacent contract histories. If Arcturus opens the case and catalogs the contents, those contents become subject to civil and criminal discovery processes. If the unknown third party gets there first, the outcome is less legible but not likely better. The freelancer taking this job is not just lifting a case — they are deciding who gets to determine what Sable's life's work means.",
+  "story_hooks": [
+    "The broker posting knows more about the case's contents than they have disclosed, and a careful conversation with Tanaka before the job suggests she believes one item in the case is addressed specifically to whoever retrieves it",
+    "The unknown party who attempted official access to the impound did so using credentials that, when traced, belong to a freelancer listed in the Signal Network as deceased — same timeframe as Sable"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-A",
+    "retrieval",
+    "evidence",
+    "signal-network",
+    "arcturus",
+    "high-security",
+    "covert"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2c8b5a3f1e7d04962b4a1c8e5f3d7b09",
+  "name": "Board Correction",
+  "type": "contract",
+  "codename": "GOLDEN PARACHUTE",
+  "contract_tier": "S",
+  "posted_by": "Verakon Industries (routed through authorized contractor liaison, identity-shielded)",
+  "target": "Dr. Seun Adeyemi, Chief Research Director, Kassel-Brandt Biosystems",
+  "objective": "Eliminate Adeyemi during or immediately following the Kassel-Brandt quarterly investor assembly at Lakeshore Tower. The death must appear to be a medical event or accident — no forensic signature, no public disruption to the assembly.",
+  "location": "Lakeshore Tower, Chicago Shelf High-Rise District (Tier 4-5 transition zone), floors 78-82, assembly event space",
+  "payout": "Φ2,200,000",
+  "deadline": "Fixed to the assembly date: 18 days",
+  "complications": [
+    "Lakeshore Tower during an investor assembly will have Kassel-Brandt's own private security contingent augmented by at least one ACS executive protection detail — the freelancer must operate within a social and physical environment built to notice anomalies",
+    "Adeyemi is known to vary his physical routine based on security briefs — his actual position within the assembly space will not be confirmed until hours before, and access layers are tiered by clearance",
+    "A clean medical-event appearance requires either a toxicological approach (requiring acquisition of materials that are themselves flagged commodities) or an environmental manipulation that the venue's own systems will log"
+  ],
+  "moral_weight": "black",
+  "description": "This is Tier 5 corporate warfare at its cleanest presentation — a competitor wants a key research director removed before a product launch, and they're paying S-tier rates for S-tier discretion. Adeyemi is framed, implicitly, as a corporate asset to be neutralized. The payout, the clean-death requirement, and the venue all signal that the posting entity is playing in the top bracket and wants a result that survives legal scrutiny.\n\nAdeyemi has spent the last three years developing a water filtration and toxin-sequencing technology specifically calibrated to the contaminated aquifer zones that cover what used to be central Indiana and southern Michigan — areas now populated almost exclusively by unincorporated Tier 1 and Tier 2 communities with no corporate infrastructure. Kassel-Brandt acquired the project as a liability offset against anticipated regulatory pressure. Adeyemi has, without the company's knowledge, been in negotiation with a consortium of Shelf district councils to license the technology at cost. Verakon Industries is not a competitor in the traditional sense — they operate the private water processing contracts for those exact zones. Adeyemi's technology, deployed, would terminate those contracts and eliminate hundreds of millions in annual recurring revenue. The freelancer is being hired to kill a man so that people without clean water stay without clean water.",
+  "story_hooks": [
+    "A Kassel-Brandt internal security officer reaches the freelancer through a broker chain — not to stop the contract, but to request that certain documents in Adeyemi's possession be recovered before the kill, suggesting the company itself doesn't know the full scope of what's about to be destroyed",
+    "The consortium Adeyemi has been negotiating with has its own intelligence network and may have learned the contract is live — they could become an asset, a complication, or a competing pressure on the freelancer's decision"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-S",
+    "elimination",
+    "corporate-warfare",
+    "black-morality",
+    "lakeshore",
+    "high-tier",
+    "water-rights"
+  ]
+}

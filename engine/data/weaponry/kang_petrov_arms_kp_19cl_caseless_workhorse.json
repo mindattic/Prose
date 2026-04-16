@@ -1,0 +1,49 @@
+{
+  "id": "d4a7e58b1c9f2034b6e7c8d9e0f1a2b3",
+  "name": "Kang-Petrov Arms KP-19CL 'Caseless Workhorse'",
+  "type": "weapon",
+  "aliases": [
+    "Caseless Workhorse",
+    "KP-19CL",
+    "Clean Nineteen",
+    "No Brass"
+  ],
+  "category": "pistol",
+  "description": "The KP-19CL is a factory-configured KP-19 'Workhorse' variant purpose-built for 9x19mm Caseless ammunition — not a conversion kit, but a ground-up redesign of the breech face, extractor, and chamber geometry to handle the propellant-embedded case-free round without the failure modes that plague field-converted guns. The action is a modified Browning-pattern locked breech with a recessed bolt face and a proprietary ejection system that expels the combusted propellant block rather than a brass case — the result is an ejection port that vents a small plume of gray-white residue with each shot, earning the pistol its street name. The frame is otherwise dimensionally identical to the standard KP-19, accepting the same holsters, lights, and accessories. Magazine capacity drops to 15 rounds due to the slightly larger caseless round geometry.\n\nThe KP-19CL targets the upwardly-mobile Tier 1 earner or Tier 2 security professional who wants military-adjacent ammunition without military-adjacent pricing. Caseless 9x19mm runs about 30% more per round than brass-cased, but it feeds more reliably in dirty conditions and eliminates brass scatter — important in enclosed environments where ejected cases become tripping hazards and evidence. Certain building security contractors specify caseless-configured weapons for indoor work precisely because the lack of ejected brass simplifies post-incident cleanup. It's a pragmatic choice dressed up as a prestige choice.\n\nThe 'Clean Nineteen' nickname has a double meaning in GLMZ street culture. On the surface it refers to the lack of brass on the ground. More pointedly, it refers to the fact that a caseless pistol at a scene leaves less physical evidence — no cases to collect, no headstamps to trace. ACS forensic units quietly hate them for exactly this reason, and there have been two separate legislative proposals to restrict caseless handguns to Tier 3+ that both died in Slagworks-adjacent regulatory committees before reaching a vote.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "caseless ammunition chamber",
+    "modified Browning locked breech",
+    "propellant block ejection system",
+    "recessed bolt face geometry"
+  ],
+  "specifications": "caliber: 9x19mm Caseless\neffective_range: 55m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 15 rounds\nweight: 0.73 kg",
+  "tactical_use": "The KP-19CL performs identically to the standard KP-19 in most tactical scenarios with the added benefit of no brass scatter and marginally improved reliability in wet or heavily contaminated environments where brass-cased ammunition can experience feed issues. The 15-round capacity reduction versus the standard 17 is considered an acceptable trade-off. Operators who work in close-quarters building interiors specifically value the absence of ejected brass — both for footing and for post-incident accountability. The licensed carry restriction means most users are operating in an official capacity of some kind, which narrows the field considerably.",
+  "cultural_context": "The KP-19CL's restricted status gives it a different social weight than the standard Workhorse. Carrying one in GLMZ signals that you have gone through the licensing process — which means either you work for a firm that arranged it, or you have enough money and connections to navigate the bureaucracy yourself. In neighborhoods where ACS presence is minimal, unlicensed KP-19CLs circulate at a significant premium over their retail price, specifically for the evidence-reduction properties. The gun has a quiet, slightly uncomfortable reputation — it's the Workhorse that doesn't want to be found.",
+  "known_users": [
+    "licensed Tier 2 security contractors",
+    "corporate facility security personnel",
+    "ACS-adjacent private investigators",
+    "black-market purchasers willing to pay the unlicensed premium"
+  ],
+  "story_hooks": [
+    "Three separate homicides in the Lakeshore commercial district over two months have zero brass at the scene and matching wound ballistics — someone is running a KP-19CL on a pattern, and the ACS investigator assigned to the case has a licensed KP-19CL on her own hip.",
+    "A shipment of KP-19CL licensing paperwork was reportedly forged in bulk — someone has been selling 'legal' carry permits for caseless pistols to people who never went through any actual process, and the forgeries are good enough that ACS spot-checks have cleared them twice."
+  ],
+  "ammunition_type": [
+    "9x19mm Caseless"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks",
+    "tier2",
+    "caseless",
+    "restricted",
+    "evidence-reduction",
+    "striker-fired"
+  ]
+}

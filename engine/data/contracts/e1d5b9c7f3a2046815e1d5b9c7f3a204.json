@@ -1,0 +1,35 @@
+{
+  "id": "e1d5b9c7f3a2046815e1d5b9c7f3a204",
+  "name": "Recovery of Living Witness — Informal Detention, Shelf 3 Processing Facility",
+  "type": "contract",
+  "codename": "SOFT HOLD",
+  "contract_tier": "B",
+  "posted_by": "Reuben Achterberg, independent legal advocate, Tier 2 (vouched, known to Signal Network brokers in GLMZ South)",
+  "target": "Tomasz Wiśniewski, 29, informal laborer — held without charge in an Arcturus Civil Security satellite processing facility operating in a converted industrial space, Shelf 3 eastern perimeter",
+  "objective": "Locate and extract Tomasz Wiśniewski from the satellite processing facility before he is transferred to a formal holding designation that will create a legal record of his detention. Deliver him to Reuben Achterberg's office in the Tier 2 advocate district.",
+  "location": "Arcturus Civil Security satellite processing facility (unofficial), converted Shelf 3 industrial building, eastern perimeter — GLMZ South Corridor",
+  "payout": "Φ55,000",
+  "deadline": "Transfer to formal holding is expected within 36-72 hours once Arcturus decides what charge to file, if any. After formal processing, extraction becomes significantly more difficult and legally complicated.",
+  "complications": [
+    "The facility is Arcturus Civil Security — any direct confrontation or extraction that is detected creates an institutional response that follows the contractor into future contracts; Arcturus does not forget interference",
+    "The satellite facility is unofficial, which means it has no published address, no inspection schedule, and no formal staffing roster; the location provided in the brief is based on Signal Network intelligence that is 48 hours old",
+    "Wiśniewski is being held in connection with a labor action on Shelf 3 — other people from the same action are also detained, and he may refuse to leave without them"
+  ],
+  "moral_weight": "clean",
+  "description": "Reuben Achterberg is a known commodity in GLMZ South — one of a small number of legal advocates who takes Shelf cases on sliding scale fees and occasionally wins. His Signal Network vouches are solid and his reputation for paying what he promises is established. He posts through the network because his clients don't have money and the work is real. This posting is urgent and his brief is detailed for what it is: someone is held, no charge has been filed, the window is closing.\n\nTomasz Wiśniewski is one of approximately fifteen informal laborers detained by Arcturus Civil Security following a work stoppage at a Shelf 3 food processing facility last week. The work stoppage was not organized — it was a spontaneous refusal by workers who had been on double shifts for eleven consecutive days following two deaths in the facility that management attributed to equipment failure rather than fatigue. Arcturus was contracted by the facility operator to 'restore operational stability.' Most of those detained were released after processing. Wiśniewski was not, because Arcturus identified him as having spoken to an outside contact during the stoppage — that contact was Achterberg, who had been trying to document working conditions in the facility. The detention is designed to discourage the documentation. If Wiśniewski is formally processed, he acquires a record that will be used to exclude him from future employment and potentially to discredit anything he tells Achterberg. The extraction is straightforward in motive. The execution is not — and the other detained workers are a complication that the contractor will have to make a real decision about.",
+  "story_hooks": [
+    "The satellite facility is being used to hold people from more than one labor action — it's running at higher capacity than the Shelf 3 situation alone would explain",
+    "One of the Arcturus officers running the facility is processing the detainees methodically and seems to be building a database rather than just holding people pending charges — taking biometrics, recording affiliations, asking about outside contacts"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-B",
+    "retrieval",
+    "person-extraction",
+    "arcturus",
+    "shelf-district",
+    "labor",
+    "covert"
+  ]
+}

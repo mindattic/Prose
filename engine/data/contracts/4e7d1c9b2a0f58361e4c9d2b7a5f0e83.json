@@ -1,0 +1,35 @@
+{
+  "id": "4e7d1c9b2a0f58361e4c9d2b7a5f0e83",
+  "name": "Hostile Acquisition",
+  "type": "contract",
+  "codename": "CROWN JEWEL",
+  "contract_tier": "A",
+  "posted_by": "Ossian Dynamics (posted through an authorized procurement node, identity confirmed to broker Cael Morrow)",
+  "target": "Dr. Lian Forsberg, Chief R&D Director, Novacrest Adaptive Materials",
+  "objective": "Terminate Forsberg within a window of 30 days. The hit must be clean with no corporate attribution — Ossian Dynamics cannot be connected to this event.",
+  "location": "Forsberg's documented commute and residential pattern in the Lakeview Tier 4 residential corridor; also frequents the Novacrest campus in the north industrial splice",
+  "payout": "Φ550,000",
+  "deadline": "30 days",
+  "complications": [
+    "Forsberg is a named public figure in the materials science community — their death will receive coverage and investigation pressure that a quiet civilian kill would not",
+    "Novacrest has its own corporate security apparatus and almost certainly has threat-assessment protocols active for their R&D leadership, meaning Forsberg has both passive and active protection the freelancer must map before moving",
+    "Ossian Dynamics' 'no attribution' requirement is standard but creates a specific problem: Forsberg's death will immediately be investigated as corporate foul play, and Ossian is the obvious suspect regardless of execution quality"
+  ],
+  "moral_weight": "black",
+  "description": "Ossian Dynamics is a Tier 5 corponation running adaptive materials research in direct competition with Novacrest. Forsberg is described implicitly as a competitive obstacle — a research director whose project pipeline is set to produce a breakthrough that would shift market position in Novacrest's favor. This is standard corporate elimination framing. The A-tier rate reflects the public profile of the target and the clean-attribution requirement.\n\nForsberg's current project is not a product — it's a remediation protocol. The Novacrest adaptive materials program Forsberg is directing has been quietly reoriented over the past eighteen months toward developing a substrate that neutralizes heavy-metal contamination in the flooded-zone soil layers across former Missouri and Kentucky. The technology has no commercial application that benefits Ossian Dynamics directly, but it does threaten three of Ossian's subsidiary operations that profit from providing certified clean-soil assessments to agricultural resettlement programs — assessments that are known internally to be fraudulent. Killing Forsberg doesn't just set back a competitor. It buries a technology that could, within a decade, make land habitable again. The freelancer is being paid to keep people landless.",
+  "story_hooks": [
+    "Forsberg's personal security detail includes a freelancer the contractor knows from a previous job — a Ghost-tier operator working private protection who will recognize the incoming threat pattern and may reach out as a professional courtesy or a warning",
+    "Novacrest's internal security has already flagged Ossian as a threat and is running a counter-intelligence operation — the freelancer may find themselves walking into a prepared environment designed to identify and neutralize exactly the kind of asset Ossian just hired"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-A",
+    "elimination",
+    "corporate-warfare",
+    "black-morality",
+    "lakeview",
+    "research-director",
+    "environmental"
+  ]
+}

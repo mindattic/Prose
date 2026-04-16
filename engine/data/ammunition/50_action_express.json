@@ -1,0 +1,20 @@
+{
+  "id": "f6c8b0d2e5a7491235678901f0123456",
+  "name": ".50 Action Express",
+  "type": "ammunition",
+  "aliases": [
+    "Fifty AE",
+    "Action Express",
+    "Desert Slug"
+  ],
+  "category": "ballistic",
+  "caliber": ".50 AE",
+  "propulsion": "gunpowder",
+  "description": "The .50 Action Express was designed from the beginning for semi-automatic pistols, which makes it an outlier in the large-bore handgun world — it was never a revolver round, never a hunting cartridge first. That heritage survives into 2200: the .50 AE remains the round of choice for people who want magnum-level power in a magazine-fed platform. The modern load uses a rebated rim case design unchanged from the original, with updated propellant and a choice of projectile types ranging from frangible urban rounds to solid copper hunting profiles. The semi-auto feeding geometry means it works in high-capacity platforms, which means you can carry more of the heaviest practical handgun round available in a non-revolver format.\n\nIn GLMZ 2200, .50 AE has a reputation that's part genuine performance and part mythology. The pistols that chamber it — primarily the Drevko D-50 'Colossus' platform — are status objects in certain mid-to-upper tier enforcement circles. They're heavy, they're loud, they're expensive to feed, and they solve problems with a kind of blunt finality that subtler options don't offer. Slagworks Industrial produces the commercial load in steel-and-polymer cartons. The round is restricted in several inner-city zones under GLMZ municipal ordinance 2189-C, which means it's available freely at outer-borough hardware collectives and shows up inside the restricted zones with predictable regularity.",
+  "compatibility_note": "Compatible with semi-automatic pistols specifically designed for the rebated-rim .50 AE case, primarily the Drevko D-50 'Colossus' and its variants. Not interchangeable with .50 caliber rifle cartridges or revolver-specific .500 loads. Magazine capacity in compatible platforms typically runs 7–9 rounds.",
+  "reliability_note": "Brass-cased gunpowder propulsion with rebated rim. Reliable in platforms designed for the case geometry; feeding issues can arise in modified or worn magazines. Functions in all weather and EMP conditions. Significant muzzle blast and flash — indoor use without hearing protection causes immediate and permanent damage. No electronic dependency.",
+  "tags": [
+    "ammunition",
+    "ballistic"
+  ]
+}

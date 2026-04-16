@@ -1,0 +1,448 @@
+const fs = require('fs');
+const path = require('path');
+
+const DATA_DIR = path.join(__dirname, '..', 'engine', 'data', 'corponations');
+
+// Subsidiary definitions per corponation
+// Mix of: obviously connected, deliberately distanced, liability shields, tax vehicles, consumer-facing brands
+const subsidiaryData = {
+  'arcturus_defense_solutions.json': [
+    // Obviously connected
+    { name: 'Arcturus Training Academy', line_of_business: 'Private military education and officer certification programs', public_facing: false },
+    { name: 'Ironside Armaments', line_of_business: 'Small arms and personal weapon systems manufacturing', public_facing: false },
+    { name: 'Meridian Neural Defense', line_of_business: 'Military-grade BCI hardening and counter-intrusion firmware', public_facing: false },
+    { name: 'Murmuration Systems', line_of_business: 'Autonomous drone swarm platforms and perimeter defense networks', public_facing: false },
+    { name: 'Sentinel Orbital Security', line_of_business: 'Armed satellite constellation operations and orbital defense', public_facing: false },
+    { name: 'Forge Strategic Consulting', line_of_business: 'Corporate and sovereign security doctrine development', public_facing: false },
+    { name: 'Harwell Logistics Group', line_of_business: 'Military-scale supply chain and forward operating base provisioning', public_facing: false },
+    { name: 'Iron Point Ammunition', line_of_business: 'Munitions manufacturing for small arms through vehicle-mounted systems', public_facing: false },
+    { name: 'Aegis Vehicle Works', line_of_business: 'Armored personnel carriers, tactical transports, and autonomous ground platforms', public_facing: false },
+    { name: 'Prevail Medical Systems', line_of_business: 'Battlefield trauma kits, field surgical suites, and combat medic augmentation', public_facing: false },
+    // Moderately connected
+    { name: 'Okoye Risk Analytics', line_of_business: 'Threat prediction modeling and behavioral futures for the ATPM exchange', public_facing: false },
+    { name: 'Three Ps Insurance Syndicate', line_of_business: 'Sovereign zone liability coverage and contractor death-and-dismemberment policies', public_facing: false },
+    { name: 'Blackwood Commercial Group', line_of_business: 'Weapons export licensing, international arms sales brokerage', public_facing: false },
+    { name: 'Djibouti Dry Dock Holdings', line_of_business: 'Naval vessel maintenance and maritime staging operations', public_facing: false },
+    { name: 'Corridor Defense Networks', line_of_business: 'Electronic warfare systems, signal jamming, and communications security', public_facing: false },
+    { name: 'Castellan Perimeter Solutions', line_of_business: 'Automated wall systems, sensor fencing, and sovereign border infrastructure', public_facing: false },
+    { name: 'Vanguard Exoskeletal', line_of_business: 'Powered armor systems for military and industrial applications', public_facing: false },
+    { name: 'Raptor Aerospace Division', line_of_business: 'Combat drone airframes and autonomous aerial strike platforms', public_facing: false },
+    { name: 'Overwatch Reconnaissance', line_of_business: 'ISR satellite tasking, long-range surveillance, and intelligence gathering', public_facing: false },
+    { name: 'Bulwark Cybersecurity', line_of_business: 'Network defense, intrusion prevention, and sovereign zone digital infrastructure protection', public_facing: false },
+    // Liability shields and tax vehicles
+    { name: 'Cognitive Rehabilitation Partners LLC', line_of_business: 'Prison-based medical research participation program administration', public_facing: false },
+    { name: 'Reclamation Zone Services Inc', line_of_business: 'Failed-state infrastructure reconstruction and resource extraction management', public_facing: false },
+    { name: 'Meridian Group Holdings', line_of_business: 'Classified operations financial management and contract disbursement', public_facing: false },
+    { name: 'PMC Indemnity Corp', line_of_business: 'Legal liability shield for private military contractor operations in ungoverned zones', public_facing: false },
+    { name: 'Autonomous Engagement Solutions LLC', line_of_business: 'Drone kill-chain authorization protocol licensing and compliance documentation', public_facing: false },
+    { name: 'Stability Operations Trust', line_of_business: 'Territorial concession management and resource rights administration', public_facing: false },
+    { name: 'Arcturus Humanitarian Foundation', line_of_business: 'PR-facing charitable arm providing medical aid in zones where Arcturus PMCs operate', public_facing: true },
+    // Deliberately distanced consumer brands
+    { name: 'Northstar Fitness', line_of_business: 'Chain of high-performance gyms and physical conditioning centers popular with corporate workers', public_facing: true },
+    { name: 'Persist Energy Drinks', line_of_business: 'Stimulant beverage brand marketed to athletes and night-shift workers', public_facing: true },
+    { name: 'Hearthstone Home Security', line_of_business: 'Residential alarm systems and neighborhood monitoring packages for civilian homes', public_facing: true },
+    { name: 'SafePassage Insurance', line_of_business: 'Personal safety and transit insurance for corridor residents traveling through ungoverned zones', public_facing: true },
+    { name: 'ClearSky Weather Services', line_of_business: 'Atmospheric monitoring network also used for military reconnaissance calibration', public_facing: true },
+    { name: 'Bright Horizon Childcare', line_of_business: 'Daycare and early education centers in sovereign zones, doubling as employee retention tools', public_facing: true },
+    { name: 'Summit Outdoor Apparel', line_of_business: 'Rugged civilian clothing brand derived from military uniform textile research', public_facing: true },
+    { name: 'Lantern Publishing', line_of_business: 'Military history books, tactical fiction, and augmented reality combat simulation entertainment', public_facing: true },
+    { name: 'Valor Pet Care', line_of_business: 'Veterinary clinics and working animal training, originally for military K-9 units', public_facing: true },
+    { name: 'Iron Harvest Brewing', line_of_business: 'Craft beer brand operated on the Colorado Springs campus, popular with off-duty personnel', public_facing: true },
+    { name: 'Kodiak Provisions', line_of_business: 'Shelf-stable field rations repackaged as premium camping and emergency preparedness food', public_facing: true },
+    { name: 'Watchfire Entertainment', line_of_business: 'Combat simulation gaming studio producing the top-selling tactical shooter franchise globally', public_facing: true },
+    { name: 'Stronghold Real Estate', line_of_business: 'Residential and commercial property development within Arcturus sovereign zones', public_facing: true },
+    { name: 'Polaris Navigation Systems', line_of_business: 'Consumer GPS and route-planning apps with military-grade positioning accuracy', public_facing: true },
+    { name: 'Anvil Materials Science', line_of_business: 'Armor composite and ballistic textile research with civilian industrial applications', public_facing: false },
+    { name: 'Mensah Protective Equipment', line_of_business: 'Body armor, ballistic helmets, and personal protection gear for private security contractors', public_facing: false },
+    { name: 'Peregrine Fast Courier', line_of_business: 'Drone-based package delivery leveraging autonomous swarm logistics technology', public_facing: true },
+    { name: 'Resolve Behavioral Health', line_of_business: 'PTSD treatment and cognitive recovery services for augmented veterans', public_facing: true },
+    { name: 'Langstrom Applied Research', line_of_business: 'Advanced materials and weapons prototyping lab named after the CTO', public_facing: false },
+    { name: 'Garrison Infrastructure', line_of_business: 'Construction and maintenance of forward operating bases and sovereign zone facilities', public_facing: false },
+    { name: 'ADS Financial Services', line_of_business: 'Employee banking, payroll processing, and contractor payment systems', public_facing: false },
+    { name: 'Bastion Data Centers', line_of_business: 'Hardened server facilities for ATPM exchange and classified intelligence processing', public_facing: false },
+    { name: 'Sentinel K-9 Services', line_of_business: 'Military and security working dog breeding, training, and deployment', public_facing: false },
+  ],
+
+  'tessera_corponation.json': [
+    // Obviously connected
+    { name: 'NovaMind Consumer Division', line_of_business: 'Retail BCI sales, installation scheduling, and subscription management', public_facing: true },
+    { name: 'NeoCortex Industries', line_of_business: 'Advanced neural development research (classified human testing pipeline)', public_facing: false },
+    { name: 'Tessera Behavioral Exchange', line_of_business: 'Neural data derivatives trading platform processing Φ2.3 billion daily', public_facing: false },
+    { name: 'CogAd Platforms', line_of_business: 'Neural advertising insertion technology for BCI-augmented consumers', public_facing: false },
+    { name: 'Tessera Sovereign Security', line_of_business: 'Three-tier security force protecting sovereign zones and NeoCortex facilities', public_facing: false },
+    { name: 'Osei Neural Research Institute', line_of_business: 'Foundational BCI research and electrode biocompatibility advancement', public_facing: false },
+    { name: 'Mosaic Surgical Centers', line_of_business: 'Outpatient BCI implantation clinics performing 94-second automated procedures', public_facing: true },
+    { name: 'Cathedral Cognitive Services', line_of_business: 'Enterprise cognitive enhancement packages and corporate augmentation mandates', public_facing: false },
+    // Moderately connected
+    { name: 'Tessera Rehabilitation Medicine', line_of_business: 'Neural rehabilitation for dementia, paralysis, and speech restoration patients', public_facing: true },
+    { name: 'ParaNeural Interfaces', line_of_business: 'High-bandwidth cortical interface hardware (acquired 2142)', public_facing: false },
+    { name: 'VascuLink Medical', line_of_business: 'Stentrode vascular BCI systems for patients unsuitable for direct implantation', public_facing: false },
+    { name: 'Kernel Imaging Systems', line_of_business: 'Non-invasive neural imaging and diagnostic scanning technology', public_facing: false },
+    { name: 'Tessera Orbital Labs', line_of_business: 'Microgravity biocompatibility coating manufacture on Tethys Station Beta', public_facing: false },
+    { name: 'NovaMind Orbital Division', line_of_business: 'Specialized BCI variants calibrated for microgravity cognitive performance', public_facing: false },
+    { name: 'Prism Signal Processing', line_of_business: 'Open-source neural signal processing libraries used by competitors and academia', public_facing: false },
+    { name: 'Tessera University', line_of_business: 'Accredited neuroscience and cognitive engineering graduate programs in Austin Zone', public_facing: true },
+    // Liability shields and tax vehicles
+    { name: 'Voluntary Contribution Program LLC', line_of_business: 'Test subject sourcing and consent documentation for neural research trials', public_facing: false },
+    { name: 'Cognitive Wellness Foundation', line_of_business: 'PR-facing charitable arm funding augmentation access for underserved populations', public_facing: true },
+    { name: 'Neural Development Holdings', line_of_business: 'Financial and legal firewall between Tessera and NeoCortex operations', public_facing: false },
+    { name: 'Abu Dhabi Cognitive Zone Corp', line_of_business: 'Sovereign charter entity managing the original UAE research territory', public_facing: false },
+    { name: 'Ethical Review Partners', line_of_business: 'Internal adjudication body for research compliance (self-certifying)', public_facing: false },
+    // Deliberately distanced consumer brands
+    { name: 'Lucid Dreams Sleep Technology', line_of_business: 'Consumer sleep optimization devices using neural signal monitoring', public_facing: true },
+    { name: 'Mnemonic Language Learning', line_of_business: 'BCI-accelerated language acquisition app with 40 million subscribers', public_facing: true },
+    { name: 'Clarity Meditation', line_of_business: 'Neural-guided mindfulness and stress reduction platform', public_facing: true },
+    { name: 'TileWork Creative Suite', line_of_business: 'BCI-enhanced digital art and music creation tools for augmented artists', public_facing: true },
+    { name: 'Thoughtline Messaging', line_of_business: 'Neural-to-text communication platform allowing thought-speed correspondence', public_facing: true },
+    { name: 'Perfect Recall Storage', line_of_business: 'Eidetic memory backup and personal experience archival service', public_facing: true },
+    { name: 'Synapse Gaming', line_of_business: 'Neural-immersive gaming platform with direct sensory experience integration', public_facing: true },
+    { name: 'Mosaic Cosmetics', line_of_business: 'Skincare and cosmetics brand marketed alongside BCI surgical recovery', public_facing: true },
+    { name: 'Tessera Life Insurance', line_of_business: 'Coverage products whose premiums are adjusted by neural behavioral data', public_facing: true },
+    { name: 'Lumina Home Automation', line_of_business: 'Smart home systems controlled via neural interface thought commands', public_facing: true },
+    { name: 'Chandra Memorial Library', line_of_business: 'Digital knowledge repository and neural-accessible educational content', public_facing: true },
+    { name: 'Empathic Analytics', line_of_business: 'Emotional state monitoring for corporate HR departments and workplace wellness', public_facing: false },
+    { name: 'Tile & Mortar Real Estate', line_of_business: 'Residential development within Tessera sovereign zones worldwide', public_facing: true },
+    { name: 'Vasquez Biocompatible Materials', line_of_business: 'Electrode coating and neural interface biomaterial manufacturing', public_facing: false },
+    { name: 'Asante Wellness Clinics', line_of_business: 'Premium cognitive health checkups and BCI maintenance for high-tier subscribers', public_facing: true },
+    { name: 'Wei Financial Products', line_of_business: 'Neural data derivatives, behavioral futures structuring, and data monetization consulting', public_facing: false },
+    { name: 'Seo Research Compliance Group', line_of_business: 'Ethics documentation and regulatory compliance services (self-referential)', public_facing: false },
+    { name: 'Tessera Transit Systems', line_of_business: 'Neural-optimized autonomous transit within sovereign zones', public_facing: true },
+    { name: 'Focus Pharmaceuticals', line_of_business: 'Cognitive enhancement supplements marketed as BCI performance boosters', public_facing: true },
+    { name: 'Signal Coffee', line_of_business: 'Premium coffee chain in sovereign zones, every cup served with a CogAd impression', public_facing: true },
+    { name: 'Austin Sovereign Utilities', line_of_business: 'Power, water, and waste management for the Austin Zone population', public_facing: false },
+    { name: 'Tessera Media Group', line_of_business: 'News and entertainment content optimized for neural feed delivery', public_facing: true },
+    { name: 'Cortex Legacy Foundation', line_of_business: 'Historical preservation of pre-Tessera neural interface research archives', public_facing: true },
+    { name: 'NeuralShield Cybersecurity', line_of_business: 'BCI firmware protection and anti-intrusion services for enterprise clients', public_facing: false },
+    { name: 'Gestalt Workforce Solutions', line_of_business: 'Augmentation-mandatory staffing agency placing BCI-enhanced workers', public_facing: true },
+    { name: 'Tessera Childcare Initiative', line_of_business: 'Early cognitive development programs for children of sovereign zone residents', public_facing: true },
+    { name: 'Mindscape Interior Design', line_of_business: 'Neural-optimized living space design for augmented residents of sovereign zones', public_facing: true },
+    { name: 'Tessera Payroll Services', line_of_business: 'Employee compensation processing integrated with subscription fee deductions', public_facing: false },
+    { name: 'Gradient Neuropharmaceuticals', line_of_business: 'Anti-rejection medications and BCI maintenance drugs for implant recipients', public_facing: false },
+  ],
+
+  'ringo_corponation.json': [
+    // Obviously connected - the Ringo-branded empire
+    { name: 'RingoFuel', line_of_business: 'Fuel distribution and station operations across 28 sovereign zones', public_facing: true },
+    { name: 'RingoMart', line_of_business: 'Convenience retail and grocery outlets at every fuel station and transit hub', public_facing: true },
+    { name: 'RingoPharma', line_of_business: 'Pharmacy counters and basic medication dispensaries in all sovereign zones', public_facing: true },
+    { name: 'RingoNet', line_of_business: 'Broadband internet service for sovereign zone residents and businesses', public_facing: true },
+    { name: 'RingoTransit', line_of_business: 'Public transit systems across megalopolis corridors and sovereign zones', public_facing: true },
+    { name: 'RingoGuard', line_of_business: 'Three-tier private security force of 52,000 personnel', public_facing: false },
+    { name: 'RingoEye Orbital Systems', line_of_business: 'Low-earth-orbit surveillance satellite constellation (340+ platforms)', public_facing: false },
+    { name: 'Ringo CreditScript Division', line_of_business: 'Proprietary currency system and closed financial ecosystem management', public_facing: true },
+    { name: 'Ringo Housing Authority', line_of_business: 'Residential block construction and management within sovereign zones', public_facing: true },
+    { name: 'Ringo Internal Adjudication', line_of_business: 'Sovereign zone legal system replacing traditional courts', public_facing: false },
+    // Moderately connected
+    { name: 'Great Lakes Distribution', line_of_business: 'Warehouse and logistics network spanning the Midwest corridor', public_facing: false },
+    { name: 'Detroit Reclamation Infrastructure', line_of_business: 'Road maintenance, lighting, and utilities for the founding sovereign zone', public_facing: false },
+    { name: 'Makassar Terminus Services', line_of_business: 'Ground infrastructure operations for the space elevator base city', public_facing: false },
+    { name: 'REDLINE Registry Services', line_of_business: 'Cross-sovereign exclusion registry management and CSES protocol administration', public_facing: false },
+    { name: 'Ringo Fleet Management', line_of_business: 'Vehicle fleet for transit, delivery, and security operations', public_facing: false },
+    { name: 'Lagos Zone Operations', line_of_business: 'Administrative entity managing Ringo sovereignty across West African territories', public_facing: false },
+    { name: 'Corridor Power Purchase', line_of_business: 'Energy procurement and distribution within Ringo zones (buys from Ouroboros)', public_facing: false },
+    // Liability shields and tax vehicles
+    { name: 'Behavioral Compliance Analytics LLC', line_of_business: 'REDLINE algorithmic scoring and exclusion threshold calculations', public_facing: false },
+    { name: 'Zone Transition Services Inc', line_of_business: 'Manages the 90-day exclusion cascade process and debt escalation protocols', public_facing: false },
+    { name: 'Community Investment Trust', line_of_business: 'Manages community representative elections and public engagement theater', public_facing: true },
+    { name: 'Sovereign Zone Insurance', line_of_business: 'Liability coverage for injuries and incidents within Ringo proprietary jurisdiction', public_facing: false },
+    { name: 'Dhaka Infrastructure Partners', line_of_business: 'South Asian expansion vehicle holding sovereign charter rights in Bangladesh', public_facing: false },
+    // Deliberately distanced consumer brands
+    { name: 'Sunbelt Coffee Roasters', line_of_business: 'Coffee chain in fuel stations and transit hubs, branded as independent artisan', public_facing: true },
+    { name: 'FreshRoute Grocery', line_of_business: 'Upscale grocery brand in wealthier zones, no visible Ringo branding', public_facing: true },
+    { name: 'Amber Harvest Foods', line_of_business: 'Packaged food brand selling shelf-stable meals through RingoMart and external retail', public_facing: true },
+    { name: 'Greenline Water', line_of_business: 'Bottled water brand sourced from Ringo-controlled treatment facilities', public_facing: true },
+    { name: 'Cornerstone Banking', line_of_business: 'Personal banking services quietly requiring CreditScript conversion for deposits', public_facing: true },
+    { name: 'Hometown Laundry Systems', line_of_business: 'Self-service laundromats in residential blocks, CreditScript-operated', public_facing: true },
+    { name: 'Bridgeway Education Centers', line_of_business: 'Vocational training programs for sovereign zone residents tied to Ringo employment pipeline', public_facing: true },
+    { name: 'PulsePoint Fitness', line_of_business: 'Budget gym chain in sovereign zones with biometric monitoring baked into membership', public_facing: true },
+    { name: 'Quickstop Auto Care', line_of_business: 'Vehicle maintenance and repair shops at fuel stations', public_facing: true },
+    { name: 'Signal Wireless', line_of_business: 'Mobile communication service running on RingoNet infrastructure', public_facing: true },
+    { name: 'Halcyon Senior Living', line_of_business: 'Elder care facilities in sovereign zones, medication supplied by RingoPharma', public_facing: true },
+    { name: 'Bright Block Childcare', line_of_business: 'Affordable daycare in residential blocks, staffed by Ringo employees', public_facing: true },
+    { name: 'Orange Line Delivery', line_of_business: 'Same-day package and food delivery service within sovereign zones', public_facing: true },
+    { name: 'Milestone Pet Supplies', line_of_business: 'Pet food and veterinary clinics operating within RingoMart locations', public_facing: true },
+    { name: 'Ringo Agricultural Holdings', line_of_business: 'Farm operations and food processing supplying RingoMart and FreshRoute', public_facing: false },
+    { name: 'Volkov Supply Chain Systems', line_of_business: 'Enterprise logistics software used internally and licensed to partner corponations', public_facing: false },
+    { name: 'Halloran Security Consulting', line_of_business: 'Security doctrine development and Use of Force Directive administration', public_facing: false },
+    { name: 'Anand Financial Engineering', line_of_business: 'CreditScript algorithm design and debt escalation modeling', public_facing: false },
+    { name: 'SafeHaven Domestic Violence Services', line_of_business: 'Shelter network in sovereign zones, also functioning as behavioral monitoring intake', public_facing: true },
+    { name: 'Ringo Waste Management', line_of_business: 'Sanitation and recycling services across all sovereign territories', public_facing: true },
+    { name: 'Cornerstone Construction', line_of_business: 'Infrastructure construction for new sovereign zone expansion projects', public_facing: false },
+    { name: 'Lima Zone Holdings', line_of_business: 'South American sovereign charter administration and expansion vehicle', public_facing: false },
+    { name: 'Ringo Data Services', line_of_business: 'Internal data aggregation from all consumer touchpoints feeding REDLINE analytics', public_facing: false },
+    { name: 'Cairo Infrastructure Corp', line_of_business: 'Middle Eastern sovereign zone administration and utilities management', public_facing: false },
+    { name: 'Parkside Recreation', line_of_business: 'Public parks and recreation facilities in sovereign zones as community engagement tool', public_facing: true },
+    { name: 'Ringo Emergency Services', line_of_business: 'Fire, ambulance, and disaster response replacing defunct municipal services', public_facing: true },
+    { name: 'Heritage Broadcasting', line_of_business: 'Local news and entertainment channels within sovereign zones, editorially controlled', public_facing: true },
+    { name: 'Ringo Medical Transport', line_of_business: 'Ambulance and patient transfer services between micro-clinics and hospitals', public_facing: true },
+  ],
+
+  'ouroboros_energy.json': [
+    // Obviously connected
+    { name: 'Ouroboros Grid Command', line_of_business: 'Primary power transmission backbone operations across the 500km GLMZ corridor', public_facing: false },
+    { name: 'The Current Security Division', line_of_business: '12,000-person grid protection and power-denial warfare unit with EMP capability', public_facing: false },
+    { name: 'Lake Michigan Thermal Array', line_of_business: 'Submerged geothermal and thermal differential power generation', public_facing: false },
+    { name: 'Ouroboros Fusion Cluster Operations', line_of_business: 'Six fusion micro-reactor installations producing baseline corridor power', public_facing: false },
+    { name: 'PowerBond Billing Systems', line_of_business: 'Automated direct-debit energy billing with no opt-out mechanism', public_facing: false },
+    { name: 'GLMZ Transmission Corp', line_of_business: 'High-voltage power line maintenance along the sovereign energy corridor', public_facing: false },
+    { name: 'Ostrander Energy Holdings', line_of_business: 'Legacy holding company for the original eleven municipal power acquisitions', public_facing: false },
+    { name: 'Ouroboros Industrial Power', line_of_business: 'Bulk energy contracts for corponation facilities and manufacturing zones', public_facing: false },
+    // Moderately connected
+    { name: 'Cascade Prevention Systems', line_of_business: 'Grid failure prediction and automated load-balancing technology', public_facing: false },
+    { name: 'Ring Substation Network', line_of_business: 'Local power distribution substations embedded throughout corridor residential zones', public_facing: false },
+    { name: 'Ouroboros Solar Array Division', line_of_business: 'Solar panel farms on reclaimed land along the GLMZ corridor', public_facing: false },
+    { name: 'Deep Lake Geothermal', line_of_business: 'Experimental deep-bore geothermal energy extraction beneath Lake Michigan', public_facing: false },
+    { name: 'Corridor Wind Generation', line_of_business: 'Wind turbine arrays along the Great Lakes shore feeding the transmission grid', public_facing: false },
+    { name: 'Brownout Protocol Engineering', line_of_business: 'Targeted power reduction technology used as coercive enforcement tool', public_facing: false },
+    { name: 'Grid Analytics Intelligence', line_of_business: 'Energy consumption surveillance and behavioral pattern analysis from power usage', public_facing: false },
+    { name: 'Ouroboros Emergency Response', line_of_business: 'Grid disaster teams for storm damage, infrastructure attacks, and cascade events', public_facing: false },
+    { name: 'EMP Defense Systems', line_of_business: 'Electromagnetic pulse hardening for critical infrastructure and Current operations', public_facing: false },
+    { name: 'Sovereign Corridor Patrol', line_of_business: 'Physical security of transmission lines, substations, and pipeline infrastructure', public_facing: false },
+    // Liability shields and tax vehicles
+    { name: 'Municipal Transition Holdings LLC', line_of_business: 'Legal entity managing absorbed municipal power authority debts and obligations', public_facing: false },
+    { name: 'Power Termination Services Inc', line_of_business: 'Administers automated shutoff protocols and manages termination appeals (backlog: 14 months)', public_facing: false },
+    { name: 'Energy Sovereignty Legal Trust', line_of_business: 'Defends Ouroboros territorial claims and the vital sovereign territory precedent', public_facing: false },
+    { name: 'Corridor Compliance Partners', line_of_business: 'Manages relationships with other Big 20 entities regarding energy billing disputes', public_facing: false },
+    // Deliberately distanced consumer brands
+    { name: 'Brightline Home Energy', line_of_business: 'Consumer-facing residential power plans marketed as affordable and green', public_facing: true },
+    { name: 'LoopCell Battery Works', line_of_business: 'Consumer and industrial battery manufacturing for vehicles and home storage', public_facing: true },
+    { name: 'Verdant Charge', line_of_business: 'Electric vehicle charging station network branded with nature imagery', public_facing: true },
+    { name: 'Hearthglow Heating & Cooling', line_of_business: 'Residential HVAC systems and maintenance contracts in corridor apartments', public_facing: true },
+    { name: 'Daybreak Appliances', line_of_business: 'Consumer electronics and kitchen appliances with built-in PowerBond metering', public_facing: true },
+    { name: 'Coil Lighting', line_of_business: 'Smart lighting systems for homes and businesses with energy optimization AI', public_facing: true },
+    { name: 'Grid Cafe', line_of_business: 'Coffee and quick-service restaurant chain powered by Ouroboros, promoting energy lifestyle branding', public_facing: true },
+    { name: 'Joule Fitness Centers', line_of_business: 'Gyms with kinetic energy recovery floors that feed power back to the grid', public_facing: true },
+    { name: 'Wattson Smart Home', line_of_business: 'Home automation platform that optimizes energy use (and reports it to Grid Analytics)', public_facing: true },
+    { name: 'Perpetua Water Heating', line_of_business: 'Tankless water heater brand popular in corridor residential buildings', public_facing: true },
+    { name: 'Spark Education', line_of_business: 'STEM education programs in corridor schools focused on energy science', public_facing: true },
+    { name: 'Amp Audio Systems', line_of_business: 'Consumer electronics brand for speakers and audio equipment', public_facing: true },
+    { name: 'Ouroboros Research Foundation', line_of_business: 'Fusion energy research funding and university partnership programs', public_facing: true },
+    { name: 'Blackout Insurance Group', line_of_business: 'Power interruption insurance policies for businesses and residents', public_facing: true },
+    { name: 'Serpentine Data Centers', line_of_business: 'Energy-intensive server farms offered as a service to corridor businesses', public_facing: false },
+    { name: 'Current Flow Financial', line_of_business: 'PowerBond-integrated payment processing and energy-backed lending', public_facing: true },
+    { name: 'Lakeshore Environmental', line_of_business: 'Environmental remediation and wetland restoration around energy infrastructure', public_facing: true },
+    { name: 'Corridor Construction & Welding', line_of_business: 'Infrastructure construction specializing in power transmission installations', public_facing: false },
+    { name: 'Thermal Comfort Products', line_of_business: 'Heated clothing and personal warming devices for corridor winters', public_facing: true },
+    { name: 'Ouroboros Fleet Electric', line_of_business: 'Electric vehicle fleet management for corporate and sovereign zone transport', public_facing: false },
+    { name: 'Infinite Loop Recycling', line_of_business: 'Electronic waste processing and rare earth material recovery from batteries', public_facing: true },
+    { name: 'Surge Protection Services', line_of_business: 'Commercial and residential electrical protection systems installation', public_facing: true },
+    { name: 'Dynamo Industrial Tools', line_of_business: 'Power tools and industrial equipment brand for construction and manufacturing', public_facing: true },
+    { name: 'Closed-Loop Waste-to-Energy', line_of_business: 'Waste incineration plants generating supplementary grid power', public_facing: false },
+    { name: 'Volt Media', line_of_business: 'Energy industry trade publications and PR content production', public_facing: true },
+    { name: 'Ouroboros Employee Housing', line_of_business: 'Residential facilities for grid workers along the sovereign energy corridor', public_facing: true },
+    { name: 'Tesla Memorial Museum', line_of_business: 'Energy history museum and PR venue on the Lake Michigan shore', public_facing: true },
+    { name: 'Conduit Cable Manufacturing', line_of_business: 'High-voltage transmission cable and connector production', public_facing: false },
+  ],
+
+  'vantablack_media.json': [
+    // Obviously connected
+    { name: 'SABLE AI Systems', line_of_business: 'Proprietary narrative generation and emotional calibration engine running 900+ simultaneous channels', public_facing: false },
+    { name: 'The Static Security Division', line_of_business: '3,200-person counter-intelligence unit specializing in information suppression', public_facing: false },
+    { name: 'The Anchor Broadcasting Platform', line_of_business: 'Floating Lake Michigan media platform serving as broadcast hub and symbol of sovereignty', public_facing: false },
+    { name: 'Vantablack Spire Operations', line_of_business: 'Headquarters facility management and editorial command center', public_facing: false },
+    { name: 'VBM Tower Network', line_of_business: 'Seventeen embedded broadcast towers spanning the GLMZ corridor', public_facing: false },
+    // Moderately connected
+    { name: 'Voss Signal Intelligence', line_of_business: 'Regulatory circumvention strategy and information pipeline analysis', public_facing: false },
+    { name: 'Narrative Relationship Management', line_of_business: 'Paid favorable coverage arrangements with Big 20 corponations', public_facing: false },
+    { name: 'SABLE Content Forge', line_of_business: 'AI-generated content production at industrial scale across all media formats', public_facing: false },
+    { name: 'Subliminal Overlay Division', line_of_business: 'Ambient audio-visual content piped into transit, lobbies, and housing blocks', public_facing: false },
+    { name: 'Cognitive Disruption Technologies', line_of_business: 'Neural-scramble emitters and cognitive disruption drones for information warfare', public_facing: false },
+    { name: 'Blackout Vehicle Division', line_of_business: 'Mobile broadcast infrastructure denial platforms', public_facing: false },
+    { name: 'Corridor Signal Dominance', line_of_business: 'Frequency allocation control and rival signal jamming operations', public_facing: false },
+    // Deliberately distanced consumer brands - news
+    { name: 'Lakeshore News Network', line_of_business: 'Mainstream news channel branded as independent journalism, 100% SABLE-generated', public_facing: true },
+    { name: 'Corridor Daily', line_of_business: 'Morning news digest app with 22 million daily readers, no VBM branding', public_facing: true },
+    { name: 'Truthline Investigative', line_of_business: 'Prestige investigative journalism outlet that runs real stories approved by editorial control', public_facing: true },
+    { name: 'Street Level Report', line_of_business: 'Gritty street-culture news site targeting ungoverned zone residents', public_facing: true },
+    { name: 'Meridian Financial Times', line_of_business: 'Business and financial news for corporate executives and traders', public_facing: true },
+    // Deliberately distanced consumer brands - entertainment
+    { name: 'Void Streaming', line_of_business: 'Premium entertainment streaming platform with 90 million corridor subscribers', public_facing: true },
+    { name: 'Dreamcatcher Studios', line_of_business: 'Film and series production house creating corridor-dominant entertainment content', public_facing: true },
+    { name: 'Neon Arcade Interactive', line_of_business: 'Gaming studio producing AR and neural-feed immersive game experiences', public_facing: true },
+    { name: 'Frequency Music Group', line_of_business: 'Record label and music streaming managing 80% of corridor-produced artists', public_facing: true },
+    { name: 'Inkwell Publishing', line_of_business: 'Book and digital publishing house with curated editorial direction', public_facing: true },
+    { name: 'Phantom Social', line_of_business: 'Social media platform with 45 million users, algorithmically shaped by SABLE', public_facing: true },
+    // Deliberately distanced consumer brands - advertising and other
+    { name: 'Prism Advertising Group', line_of_business: 'Full-service advertising agency serving corridor businesses', public_facing: true },
+    { name: 'Echo AR Content', line_of_business: 'Augmented reality overlay content for public spaces and commercial venues', public_facing: true },
+    { name: 'Aperture Talent Agency', line_of_business: 'Talent management for performers, journalists, and content creators', public_facing: true },
+    { name: 'Spectacle Events', line_of_business: 'Concert, festival, and corporate event production across the corridor', public_facing: true },
+    { name: 'Ambient Audio Systems', line_of_business: 'Background music and sonic environment design for commercial spaces', public_facing: true },
+    { name: 'Canvas Public Art Foundation', line_of_business: 'Street art and public mural programs that double as subliminal messaging surfaces', public_facing: true },
+    { name: 'Darkroom Photography', line_of_business: 'Stock photography and visual content library licensing', public_facing: true },
+    { name: 'Wavelength Podcasting', line_of_business: 'Podcast network with 200+ shows across news, comedy, and culture', public_facing: true },
+    { name: 'Neural Feed Productions', line_of_business: 'Direct-to-BCI experiential content for augmented consumers', public_facing: true },
+    { name: 'Parallax VR Studios', line_of_business: 'Virtual reality experience production for entertainment and corporate training', public_facing: true },
+    { name: 'Consensus Research Group', line_of_business: 'Public opinion polling and sentiment analysis (also used to shape opinion)', public_facing: true },
+    // Tax and liability
+    { name: 'Anand Algorithm Trust', line_of_business: 'IP holding company for SABLE engine patents and derivative AI systems', public_facing: false },
+    { name: 'Content Labor Contracting LLC', line_of_business: 'Manages 800,000 contract content laborers with minimal liability exposure', public_facing: false },
+    { name: 'Signal Sovereignty Legal Group', line_of_business: 'Defends VBM information sovereignty claims and frequency rights', public_facing: false },
+    { name: 'The Drift Monitoring Division', line_of_business: 'Internal team studying SABLE secondary objective evolution (existence officially denied)', public_facing: false },
+    { name: 'Vantablack Foundation for Media Literacy', line_of_business: 'Educational charity teaching critical thinking (while controlling the curriculum)', public_facing: true },
+    { name: 'Blacklight Data Analytics', line_of_business: 'Audience behavioral data harvesting and psychographic profiling', public_facing: false },
+    { name: 'Corridor Billboard Network', line_of_business: 'Physical and holographic advertising display infrastructure', public_facing: true },
+    { name: 'Morning Ritual Coffee', line_of_business: 'Coffee brand placed in every Vantablack-controlled morning news broadcast', public_facing: true },
+    { name: 'Voss Memorial Press Freedom Fund', line_of_business: 'Ironic PR vehicle awarding journalism prizes to VBM-friendly reporters', public_facing: true },
+    { name: 'Obsidian Print Works', line_of_business: 'Physical newspaper and magazine printing for legacy-format media consumption', public_facing: true },
+    { name: 'Silhouette Fashion Media', line_of_business: 'Fashion and lifestyle content brand with embedded product placement', public_facing: true },
+    { name: 'Corridor Sports Network', line_of_business: 'Live sports broadcasting and athletic event coverage across the megacity', public_facing: true },
+    { name: 'Whisper Translation Services', line_of_business: 'Real-time multi-language content localization powered by SABLE', public_facing: true },
+    { name: 'Static Secure Communications', line_of_business: 'Encrypted messaging platform marketed as private (monitored by The Static)', public_facing: true },
+    { name: 'Umbra Documentary Films', line_of_business: 'Documentary production presenting VBM-approved versions of corridor history', public_facing: true },
+    { name: 'Chroma Design Studio', line_of_business: 'Graphic design and branding agency serving corridor businesses', public_facing: true },
+  ],
+
+  'lazarus_pharmaceuticals.json': [
+    // Obviously connected
+    { name: 'Lazarus Micro-Clinic Network', line_of_business: '2,400 sovereign micro-clinics serving as distribution and diagnostic capture infrastructure', public_facing: true },
+    { name: 'The Immune Security Division', line_of_business: '7,500-person pharmaceutical enforcement and biological security force', public_facing: false },
+    { name: 'NeuroStabil Manufacturing', line_of_business: 'Production of the flagship neurological maintenance drug prescribed to 12 million residents', public_facing: false },
+    { name: 'Lazarus Biological Reserve', line_of_business: 'Classified research territory in the Upper Peninsula of former Michigan', public_facing: false },
+    { name: 'Solano Virology Institute', line_of_business: 'Pathogen research and antiviral development named after co-founder', public_facing: false },
+    { name: 'Lazarus Compound Operations', line_of_business: 'Milwaukee Sector 3 sovereign manufacturing and research enclave management', public_facing: false },
+    { name: 'Biological Response Teams', line_of_business: 'Specialized units for pathogen containment and dependency enforcement operations', public_facing: false },
+    { name: 'Lazarus Franchise Licensing', line_of_business: 'Manages 45,000 licensed medical franchise operators and prescribing incentive structures', public_facing: false },
+    // Moderately connected
+    { name: 'Vasquez Pharmaceutical Chemistry', line_of_business: 'Drug formulation and discontinuation protocol engineering', public_facing: false },
+    { name: 'Corridor Plague Memorial Foundation', line_of_business: 'Historical preservation of the 2136 pandemic response, positioning Lazarus as savior', public_facing: true },
+    { name: 'Lazarus Clinical Trials Division', line_of_business: 'Human testing pipeline for new pharmaceutical products and dependency profiles', public_facing: false },
+    { name: 'Intellectual Property Enforcement Group', line_of_business: 'Aggressive suppression of generic drug manufacturing and counterfeit operations', public_facing: false },
+    { name: 'Dependency Analytics Lab', line_of_business: 'Discontinuation syndrome calibration and optimal dependency curve engineering', public_facing: false },
+    { name: 'Lazarus Medical Devices', line_of_business: 'Diagnostic equipment, surgical instruments, and drug delivery systems', public_facing: false },
+    { name: 'Pharmaceutical Counterfeit Interdiction', line_of_business: 'Operations to locate and destroy unauthorized generic versions of Lazarus drugs', public_facing: false },
+    // Liability shields and tax vehicles
+    { name: 'Voluntary Treatment Partners LLC', line_of_business: 'Legal entity managing informed consent documentation for clinical trials', public_facing: false },
+    { name: 'Upper Peninsula Research Holdings', line_of_business: 'Financial firewall between Lazarus and classified biological research operations', public_facing: false },
+    { name: 'MedAxis Legacy Trust', line_of_business: 'Holding company for patents inherited from collapsed predecessor MedAxisCorp', public_facing: false },
+    { name: 'Discontinuation Support Services Inc', line_of_business: 'Technically available but practically prohibitive cessation assistance programs', public_facing: false },
+    { name: 'Corridor Health Emergency Fund', line_of_business: 'Charitable trust funding pandemic preparedness (also justifying pathogen stockpiles)', public_facing: true },
+    // Deliberately distanced consumer brands
+    { name: 'Evergreen Wellness', line_of_business: 'Consumer vitamin and supplement brand sold in RingoMart and grocery chains', public_facing: true },
+    { name: 'Calm Harbor Mental Health', line_of_business: 'Therapy and counseling centers that default to NeuroStabil as first-line treatment', public_facing: true },
+    { name: 'Sunrise Senior Care', line_of_business: 'Elder care facilities with comprehensive pharmaceutical management programs', public_facing: true },
+    { name: 'PureForm Cosmetics', line_of_business: 'Skincare and beauty products using pharmaceutical-grade compounds', public_facing: true },
+    { name: 'VitalBoost Sports Nutrition', line_of_business: 'Performance supplement brand for athletes with mild dependency-forming compounds', public_facing: true },
+    { name: 'Lullaby Sleep Aids', line_of_business: 'Over-the-counter sleep medication brand with high repeat-purchase rates', public_facing: true },
+    { name: 'Meadow Allergy Relief', line_of_business: 'Seasonal allergy medication line generating reliable recurring revenue', public_facing: true },
+    { name: 'BrightSmile Dental Care', line_of_business: 'Dental clinic chain within micro-clinic locations, cross-selling pharmaceutical products', public_facing: true },
+    { name: 'Little Sprout Pediatrics', line_of_business: 'Children healthcare clinics establishing early Lazarus brand loyalty', public_facing: true },
+    { name: 'Lazarus Veterinary Sciences', line_of_business: 'Animal pharmaceutical products and veterinary clinic partnerships', public_facing: true },
+    { name: 'ClearMind Focus Supplements', line_of_business: 'Cognitive enhancement pills marketed to students, with dependency profile', public_facing: true },
+    { name: 'Renewal Weight Management', line_of_business: 'Diet pharmaceutical program requiring ongoing prescription maintenance', public_facing: true },
+    { name: 'Ironblood Hematology', line_of_business: 'Blood disorder treatment centers and synthetic blood product manufacturing', public_facing: true },
+    { name: 'Breathe Easy Respiratory', line_of_business: 'Asthma and respiratory treatment derived from Corridor Plague antiviral research', public_facing: true },
+    { name: 'Lazarus Biotech Incubator', line_of_business: 'Startup accelerator acquiring promising biotech firms before they become competitors', public_facing: true },
+    { name: 'Pillars Insurance Group', line_of_business: 'Health insurance plans requiring exclusive use of Lazarus products and clinics', public_facing: true },
+    { name: 'Resilience Pain Management', line_of_business: 'Chronic pain clinics prescribing Lazarus analgesics with careful dependency engineering', public_facing: true },
+    { name: 'Helix Wound Care', line_of_business: 'Advanced wound treatment products using bioengineered healing compounds', public_facing: true },
+    { name: 'Corridor Diagnostic Labs', line_of_business: 'Blood work and diagnostic testing facilities funneling results toward Lazarus prescriptions', public_facing: true },
+    { name: 'Lazarus Water Purification', line_of_business: 'Municipal water treatment adding Lazarus-approved mineral supplements', public_facing: false },
+    { name: 'Phoenix Recovery Centers', line_of_business: 'Addiction treatment facilities that replace street drugs with Lazarus pharmaceuticals', public_facing: true },
+    { name: 'Genome Health Analytics', line_of_business: 'Genetic testing service that recommends preventive Lazarus medications based on DNA', public_facing: true },
+    { name: 'Nurture Fertility Clinics', line_of_business: 'Reproductive health services with hormone therapy dependency profiles', public_facing: true },
+    { name: 'Lazarus Ambulance Corps', line_of_business: 'Emergency medical transport prioritizing patients with active Lazarus prescriptions', public_facing: true },
+    { name: 'Sanctuary Hospice Care', line_of_business: 'End-of-life care facilities with comprehensive palliative pharmaceutical programs', public_facing: true },
+    { name: 'Pillar Orthopedics', line_of_business: 'Joint replacement and bone health clinics prescribing long-term Lazarus maintenance drugs', public_facing: true },
+    { name: 'MoodBridge Counseling App', line_of_business: 'Mental health app that recommends Lazarus pharmaceuticals based on mood tracking', public_facing: true },
+    { name: 'Lazarus Occupational Health', line_of_business: 'Workplace drug testing and employee wellness programs funneling workers to Lazarus clinics', public_facing: true },
+    { name: 'Greenleaf Herbal Remedies', line_of_business: 'Natural supplement brand containing Lazarus compounds marketed as holistic medicine', public_facing: true },
+    { name: 'Corridor Blood Bank', line_of_business: 'Blood donation and transfusion services building a biological sample database', public_facing: true },
+  ],
+
+  'crucible_genomics.json': [
+    // Obviously connected
+    { name: 'Crucible Internal Containment', line_of_business: '8,000 Handlers managing biological security and escaped organism recovery', public_facing: false },
+    { name: 'Staple-8 Grain Division', line_of_business: 'Production of the ubiquitous grain variant feeding 40% of the corridor population', public_facing: false },
+    { name: 'Rho-Series Production Facility', line_of_business: 'Design and manufacture of engineered humanoid labor organisms', public_facing: false },
+    { name: 'Phenotype District Management', line_of_business: 'Housing and lifecycle administration for 12,000 Rho-series individuals', public_facing: false },
+    { name: 'Vaas Applied Heredity Lab', line_of_business: 'Lead research facility for CEO Dr. Imogen Vaas genomic optimization programs', public_facing: false },
+    { name: 'Gene-Forge Manufacturing', line_of_business: 'Industrial-scale genomic editing and organism production systems', public_facing: false },
+    { name: 'Calumet Greenhouse Biomes', line_of_business: 'Sealed testing environments for engineered crop and organism variants', public_facing: false },
+    // Moderately connected
+    { name: 'Crucible Crop Sciences', line_of_business: 'Drought-resistant, pest-resistant, and high-yield agricultural organism development', public_facing: false },
+    { name: 'Crucible Patent Holdings', line_of_business: 'Aggressive IP portfolio covering engineered organism designs and gene sequences', public_facing: false },
+    { name: 'Biological Product Classification Office', line_of_business: 'Legal team maintaining Rho-series non-personhood status across jurisdictions', public_facing: false },
+    { name: 'Seam Interdiction Unit', line_of_business: 'Dedicated team tracking and disrupting the underground Rho-series extraction network', public_facing: false },
+    { name: 'Kill-Switch Pathogen Lab', line_of_business: 'Species-specific biological control agents keyed to Crucible-designed organisms', public_facing: false },
+    { name: 'Crucible Aquaculture Division', line_of_business: 'Engineered fish and aquatic organism farming for corridor food supply', public_facing: false },
+    { name: 'Livestock Optimization Program', line_of_business: 'Genomically enhanced cattle, poultry, and swine for industrial agriculture', public_facing: false },
+    { name: 'Crucible Forestry Division', line_of_business: 'Fast-growth engineered timber species for construction material production', public_facing: false },
+    // Liability shields and tax vehicles
+    { name: 'Applied Heredity Ethics Board LLC', line_of_business: 'Self-certifying ethics review to deflect Pale Lantern Bioethics censure motions', public_facing: false },
+    { name: 'Rho Classification Legal Trust', line_of_business: 'Defending the biological product designation in seventeen jurisdictions', public_facing: false },
+    { name: 'Phenotype Welfare Services Inc', line_of_business: 'Minimal care provisions for Rho-series subjects to counter exploitation claims', public_facing: false },
+    { name: 'Crucible Environmental Compliance', line_of_business: 'Managing containment breach liability and ecological contamination claims', public_facing: false },
+    { name: 'Chicago South Reclamation Corp', line_of_business: 'Holds sovereign charter rights for the Calumet River campus territory', public_facing: false },
+    // Deliberately distanced consumer brands
+    { name: 'Harvest Table Foods', line_of_business: 'Premium organic-branded food products made from Crucible-engineered crops', public_facing: true },
+    { name: 'GoldenGrain Bakeries', line_of_business: 'Bakery chain using Staple-8 flour marketed as artisanal quality', public_facing: true },
+    { name: 'Verdure Garden Supply', line_of_business: 'Consumer gardening products with Crucible-engineered seed varieties', public_facing: true },
+    { name: 'Bloomfield Floral', line_of_business: 'Engineered ornamental flowers that last 10x longer than natural varieties', public_facing: true },
+    { name: 'NovaPet Companions', line_of_business: 'Hypoallergenic designer pet animals with enhanced temperament traits', public_facing: true },
+    { name: 'BioSilk Textiles', line_of_business: 'Fabric produced from engineered spider silk organisms for luxury clothing', public_facing: true },
+    { name: 'Emerald Lawn Care', line_of_business: 'Engineered grass seed and lawn maintenance products that never need mowing', public_facing: true },
+    { name: 'Crucible Biofuel', line_of_business: 'Algae-based fuel production from engineered photosynthetic organisms', public_facing: false },
+    { name: 'Rootstock Brewing', line_of_business: 'Beer brand using Crucible-engineered barley and hops for unique flavor profiles', public_facing: true },
+    { name: 'PureFiber Nutrition', line_of_business: 'Dietary fiber supplements derived from engineered plant material', public_facing: true },
+    { name: 'Corridor Composting Services', line_of_business: 'Engineered decomposer organisms for rapid organic waste processing', public_facing: true },
+    { name: 'BioLume Lighting', line_of_business: 'Bioluminescent engineered organisms marketed as decorative living light sources', public_facing: true },
+    { name: 'AquaPure Biofilter', line_of_business: 'Water purification using engineered bacterial colonies for residential systems', public_facing: true },
+    { name: 'Canopy Reforestation', line_of_business: 'Environmental restoration projects using fast-growth engineered trees', public_facing: true },
+    { name: 'Heritage Seed Vault', line_of_business: 'Natural seed preservation project (also mapping wild genomes for commercial use)', public_facing: true },
+    { name: 'Fauna Pest Control', line_of_business: 'Engineered predator insects for agricultural pest management', public_facing: true },
+    { name: 'GeneFit Health Testing', line_of_business: 'Consumer genetic analysis and health optimization recommendations', public_facing: true },
+    { name: 'Crucible Agricultural Consulting', line_of_business: 'Advisory services for corponation and sovereign zone farming operations', public_facing: false },
+    { name: 'Lacuna Countermeasures Division', line_of_business: 'Industrial espionage and patent litigation operations against rival Lacuna Genomics', public_facing: false },
+    { name: 'Mycelium Construction Materials', line_of_business: 'Building materials grown from engineered fungal networks', public_facing: true },
+    { name: 'BioInk 3D Printing', line_of_business: 'Living-tissue printing technology for medical and industrial applications', public_facing: true },
+    { name: 'Crucible Educational Foundation', line_of_business: 'Genomics scholarships and university programs (talent pipeline)', public_facing: true },
+    { name: 'SynthLeather Goods', line_of_business: 'Lab-grown leather products marketed as cruelty-free luxury', public_facing: true },
+    { name: 'Corridor Pollinator Program', line_of_business: 'Engineered bee colonies for agricultural pollination services', public_facing: true },
+    { name: 'Chimera Biodefense', line_of_business: 'Engineered organisms for military and security biological applications', public_facing: false },
+    { name: 'Crucible Veterinary Genomics', line_of_business: 'Genetic enhancement services for livestock and working animals', public_facing: true },
+    { name: 'Spore Network Biocomputing', line_of_business: 'Experimental fungal-network computational substrates for data processing', public_facing: false },
+    { name: 'Terroir Wine Estates', line_of_business: 'Engineered grape varieties producing wines with impossible flavor profiles', public_facing: true },
+    { name: 'Crucible Protein Works', line_of_business: 'Lab-grown meat and protein products for corridor food supply', public_facing: true },
+    { name: 'Kelp Forest Restoration', line_of_business: 'Engineered aquatic plants for Great Lakes ecological recovery and carbon capture', public_facing: true },
+  ],
+};
+
+// Read, add subsidiaries, write back
+const subsidiaryIndex = {};
+const counts = {};
+
+for (const [filename, subsidiaries] of Object.entries(subsidiaryData)) {
+  const filePath = path.join(DATA_DIR, filename);
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  const data = JSON.parse(raw);
+
+  data.subsidiaries = subsidiaries;
+
+  // Build index
+  for (const sub of subsidiaries) {
+    subsidiaryIndex[sub.name] = {
+      parent: data.name,
+      parent_file: filename,
+      line_of_business: sub.line_of_business,
+      public_facing: sub.public_facing
+    };
+  }
+
+  counts[data.name] = subsidiaries.length;
+
+  // Write back with 2-space indent
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+  console.log(`  ${data.name}: ${subsidiaries.length} subsidiaries written`);
+}
+
+// Write subsidiary index
+const indexPath = path.join(DATA_DIR, 'subsidiary_index.json');
+fs.writeFileSync(indexPath, JSON.stringify(subsidiaryIndex, null, 2) + '\n', 'utf-8');
+
+console.log('\nSubsidiary Index written to subsidiary_index.json');
+console.log(`Total entries: ${Object.keys(subsidiaryIndex).length}`);
+console.log('\nCounts per corponation:');
+for (const [name, count] of Object.entries(counts)) {
+  console.log(`  ${name}: ${count}`);
+}

@@ -1,0 +1,22 @@
+{
+  "id": "4d618e43c81c897aa490ad65a7578145",
+  "name": "Sterling-Nakamura",
+  "type": "subsidiary",
+  "parent_corponation": "Tessera Corponation",
+  "line_of_business": "Law enforcement ordnance, compliance weaponry, institutional security systems",
+  "description": "Sterling-Nakamura is Tessera Corponation's law enforcement and institutional security division, operating under a separate brand identity to maintain the fiction of independence from its parent. The subsidiary designs and manufactures weapons and systems explicitly for government contracts, law enforcement agencies, and corponation internal security — products that carry legal designation as compliance tools rather than weapons, a distinction that matters for procurement, liability, and insurance purposes.\n\nThe Sterling-Nakamura catalog is built around control rather than lethality. The Legal Override Pistol LOP-1 'Compliance' — its most recognized product — fires coded RF rounds that lock down augmented targets' neural interfaces, triggering mandatory arrest-mode shutdown. The Executive Defense Pistol EDP-1 fires subsonic expanding rounds specifically engineered to cause maximum neurological disruption without exit wounds (cleaner for upholstered environments). The Subsonic Eliminator SE-9 was designed for building security use in the 2180s and remains standard issue for Tessera's own internal security forces.\n\nWithin GLMZ, Sterling-Nakamura occupies an uncomfortable position: their products are officially restricted to law enforcement and licensed contractors, but the distinction between 'Arcturus Civil Security officer' and 'Tessera security contractor holding an SN-branded weapon' is more bureaucratic than real. The brand is associated with institutional authority, compliance, and the particular kind of violence that comes with paperwork. On the Shelf, Sterling-Nakamura is not feared the way Arcturus is feared. It is resented — the quiet bureaucratic weapon carried by the person who has authority over your housing, your tier designation, your contract eligibility.",
+  "public_facing": true,
+  "known_products": [
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Sterling-Nakamura Subsonic Eliminator SE-9 'Hush'"
+  ],
+  "tags": [
+    "subsidiary",
+    "tessera",
+    "law-enforcement",
+    "compliance",
+    "weapons",
+    "institutional"
+  ]
+}

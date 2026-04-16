@@ -1,0 +1,35 @@
+{
+  "id": "4b8e0d6f2a9c317584b8e0d6f2a9c317",
+  "name": "Extraction of Prototype Hardware — Transit in Progress, GLMZ Freight Rail",
+  "type": "contract",
+  "codename": "CARGO PULL",
+  "contract_tier": "B",
+  "posted_by": "Anonymous — posted through freight sector broker network, GLMZ Central; vouched by two B-tier references",
+  "target": "One sealed transit case, ArcLight Dynamics proprietary label, case ID AL-774-R — containing prototype neural interface hardware currently in freight transit aboard GLMZ Consolidated Rail service CR-44, running Central to East Corridor",
+  "objective": "Board or intercept CR-44 between the Westfield Freight Junction and the East Corridor transfer yard, locate case AL-774-R in the secure cargo section, and extract it before the train reaches the East Corridor transfer yard where ArcLight Dynamics' receiving team will be waiting.",
+  "location": "GLMZ Consolidated Rail line, CR-44 freight service — Westfield Freight Junction to East Corridor Transfer Yard, approximately 90-minute transit window",
+  "payout": "Φ120,000",
+  "deadline": "The train departs Westfield in 31 hours. The window closes at the East Corridor yard.",
+  "complications": [
+    "CR-44 runs with a GLMZ Rail Security detail of four — private contractors hired by Consolidated Rail, not Arcturus, with their own protocols and no obligation to follow standard escalation procedures",
+    "The secure cargo section uses freight manifest verification on a rolling 20-minute cycle — any discrepancy between logged cargo and physical inventory triggers an automated alert to the receiving yard and to ArcLight Dynamics simultaneously",
+    "The case ID will only identify the right container if the freight manifest coding is correctly interpreted; a misread means pulling the wrong case — and there are seven ArcLight Dynamics shipments on this train"
+  ],
+  "moral_weight": "grey",
+  "description": "A clean freight interception brief with solid logistics — train schedule, case identifier, transit window. The anonymous posting and double vouch through the freight broker network is a standard configuration for industrial IP work. Someone wants hardware that belongs to or was destined for ArcLight Dynamics, a mid-sized neurotech firm operating in the Tier 3-4 space. The pay is proportional to the risk and the time pressure. It reads like organized corporate competition.\n\nAL-774-R contains a prototype BCI iteration that ArcLight Dynamics has been developing for three years under contract for a Tier 5 client whose name is not in any public filing. The hardware in transit is not the finished product — it is a failed iteration being shipped back to a secondary facility for analysis and parts reclamation. What makes it valuable is not its function but its failure mode: the prototype's rejection logs document a specific catastrophic interaction with a class of legacy neural implants common in Shelf 6 through 9 populations, an interaction that ArcLight's primary development team documented, flagged internally, and then procedurally buried rather than disclosed to the oversight bodies that would have required a developmental pause. The anonymous client almost certainly knows this. What they want the hardware for — leverage, publication, or sale to a third party with its own agenda — is not specified, and the contractor has no way to know whether pulling this case makes them an instrument of accountability or an instrument of a different kind of corporate warfare.",
+  "story_hooks": [
+    "One of the four Rail Security contractors on CR-44 is a former freelancer who burned out their Signal Network standing years ago — they recognize the work when they see it and may want to talk rather than fight",
+    "The wrong case, if accidentally pulled, contains something unrelated to ArcLight — a freight irregularity that suggests Consolidated Rail's secure cargo section is being used for something outside the official manifest"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-B",
+    "retrieval",
+    "hardware",
+    "transit",
+    "freight",
+    "corporate",
+    "covert"
+  ]
+}

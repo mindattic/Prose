@@ -20,4 +20,8 @@
     <PackageReference Include="System.Speech" Version="10.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\LLMVoting\LLMVoting\LLMVoting.csproj" />
+  </ItemGroup>
+
 </Project>

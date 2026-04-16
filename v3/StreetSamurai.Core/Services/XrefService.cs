@@ -7,9 +7,15 @@ namespace StreetSamurai.Core.Services;
 /// Resolves entity names in free text to clickable cross-reference links.
 /// Indexes all named entities (characters, places, factions, corps, synthetics,
 /// technology, vocabulary). Rebuilds automatically when repos change.
+///
+/// Supports explicit [[Name]] and [[Name|display text]] wiki-link syntax as
+/// inserted by wiki_scan.py. These are resolved first; remaining plain text
+/// segments are then auto-linked by name matching.
 /// </summary>
 public class XrefService
 {
+    private static readonly Regex WikiLinkRe =
+        new(@"\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]", RegexOptions.Compiled);
     private readonly CharacterRepository characters;
     private readonly SyntheticLifeRepository synthetics;
     private readonly DistrictRepository districts;
@@ -130,37 +136,71 @@ public class XrefService
         return index.GetValueOrDefault(name);
     }
 
-    /// <summary>Splits text into alternating plain and xref segments for inline rendering.</summary>
+    /// <summary>Splits text into alternating plain and xref segments for inline rendering.
+    /// Explicit [[Name]] / [[Name|display]] wiki links are resolved first; remaining
+    /// plain text is then auto-linked by name matching.</summary>
     public List<TextSegment> ParseSegments(string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
         EnsureBuilt();
-        if (matchRegex == null) return [new PlainSegment(text)];
 
+        // Pass 1 — split on explicit [[...]] wiki links
+        var pass1 = new List<TextSegment>();
+        int cursor = 0;
+        foreach (Match wm in WikiLinkRe.Matches(text))
+        {
+            if (wm.Index > cursor)
+                pass1.Add(new PlainSegment(text[cursor..wm.Index]));
+
+            var entityName = wm.Groups[1].Value.Trim();
+            var displayText = wm.Groups[2].Success ? wm.Groups[2].Value.Trim() : entityName;
+            var entry = index.GetValueOrDefault(entityName);
+            pass1.Add(entry != null
+                ? new XrefSegment(displayText, entry)
+                : new PlainSegment(displayText));  // unresolved wiki link → render as plain text
+
+            cursor = wm.Index + wm.Length;
+        }
+        if (cursor < text.Length)
+            pass1.Add(new PlainSegment(text[cursor..]));
+
+        if (matchRegex == null) return pass1;
+
+        // Pass 2 — auto-link plain segments by entity name
         var result = new List<TextSegment>();
-        int last = 0;
-        try
+        foreach (var seg in pass1)
         {
-            foreach (Match m in matchRegex.Matches(text))
+            if (seg is not PlainSegment plain || string.IsNullOrWhiteSpace(plain.Text))
             {
-                if (m.Index > last)
-                    result.Add(new PlainSegment(text[last..m.Index]));
-
-                var entry = index.GetValueOrDefault(m.Value);
-                result.Add(entry != null
-                    ? new XrefSegment(m.Value, entry)
-                    : new PlainSegment(m.Value));
-
-                last = m.Index + m.Length;
+                result.Add(seg);
+                continue;
             }
-        }
-        catch (RegexMatchTimeoutException)
-        {
-            return [new PlainSegment(text)];
-        }
 
-        if (last < text.Length)
-            result.Add(new PlainSegment(text[last..]));
+            int last = 0;
+            try
+            {
+                foreach (Match m in matchRegex.Matches(plain.Text))
+                {
+                    if (m.Index > last)
+                        result.Add(new PlainSegment(plain.Text[last..m.Index]));
+
+                    var entry = index.GetValueOrDefault(m.Value);
+                    result.Add(entry != null
+                        ? new XrefSegment(m.Value, entry)
+                        : new PlainSegment(m.Value));
+
+                    last = m.Index + m.Length;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                result.Add(plain);
+                continue;
+            }
+
+            if (last < plain.Text.Length)
+                result.Add(new PlainSegment(plain.Text[last..]));
+        }
 
         return result;
     }

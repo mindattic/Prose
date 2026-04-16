@@ -1,0 +1,50 @@
+{
+  "id": "d8b3f1a6c4e7029d5b1f3a8c6e4d2b70",
+  "name": "Kang-Petrov Arms KP-19R 'Rough Rider'",
+  "type": "weapon",
+  "aliases": [
+    "Rough Rider",
+    "KP-19R",
+    "The Rider",
+    "Mud Dog"
+  ],
+  "category": "pistol",
+  "description": "The KP-19R is an environmental hardening package applied to the KP-19 platform—same dimensions, same 17-round capacity, same 9x19mm chambering, but built to function when submerged, caked in industrial slurry, or run through the temperature extremes of GLMZ's uninsulated outer districts. The polymer frame is sealed with an additional bonded layer that resists chemical exposure, the striker channel is widened slightly to prevent fouling-induced failures, and all metal components are treated with a phosphate-over-nickel finish that GLMZ workers call 'the gray.' The barrel hood is relieved to assist self-clearing of debris. Kang-Petrov certifies the 19R for operation between -30°C and 80°C, and the gun has been tested to function after 72-hour submersion in standing water at two meters depth.\n\nThe 19R sells to people whose work environments are actively hostile to standard firearms. Slagworks industrial floor workers, waste reclamation operators, exterior maintenance crews on the Lake Structures, and anyone who earns their living in GLMZ's massive outer-ring utility corridors all reach for the Rough Rider when they need something that will still fire after a day in the mud. The price premium over the standard KP-19 is modest—Kang-Petrov keeps the package accessible because the people who need it can't afford to need a better gun.\n\nThe 'Mud Dog' street name comes from the Slagworks outer-ring crews who carry them clipped to equipment harnesses alongside actual tools. A Rough Rider that's been on the job for two years looks like a piece of industrial equipment: the gray finish oxidizes to a dull brown-green in certain chemical environments, the grip texture fills in with compacted grime that actually improves traction, and the slide stop develops a distinctive resistance from repeated fouling-and-clearing cycles. These guns are ugly in the way that working things get ugly, and that's a point of pride.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "sealed polymer frame",
+    "phosphate-nickel finish",
+    "widened striker channel",
+    "chemical-resistant bonding layer"
+  ],
+  "specifications": "caliber: 9x19mm Standard\neffective_range: 50m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 17 rounds\nweight: 0.78 kg",
+  "tactical_use": "The KP-19R is operationally identical to the KP-19 in dry conditions but outperforms it significantly when environmental conditions degrade. Operators in wet, cold, or chemically contaminated environments run it as primary, relying on its fouling tolerance to maintain function when standard pistols would require clearing. The widened striker channel means slightly increased headspace tolerance, which causes a marginal accuracy reduction at distance—irrelevant at the close ranges where the 19R is actually used.",
+  "cultural_context": "The Rough Rider is one of the few guns in GLMZ that earns respect across class lines purely on the basis of what it's been through. An Arcturus officer won't carry one, but they won't dismiss someone who does. In the Excluded zones adjacent to the outer-ring industrial corridors, a KP-19R that's visibly worked-in is a social signal: this person survives in hard places. That has weight.",
+  "known_users": [
+    "Slagworks outer-ring utility workers",
+    "waste reclamation crews",
+    "Lake Structure exterior maintenance teams",
+    "Excluded zone survival groups",
+    "independent salvage operators"
+  ],
+  "story_hooks": [
+    "A KP-19R recovered from a utility access tunnel was used in a hit on a Tessera Corponation logistics manager—but the gun's chemical staining matches a specific batch of industrial solvent that was only used at one Slagworks facility for three months before a formula change. That narrows the shooter's workplace to fewer than 200 people.",
+    "Kyle Corbin-Vasik finds a Rough Rider cable-tied to a standpipe in a flooded utility corridor with a handwritten note reading 'you'll need this more than I do now' — the serial number traces to a Slagworks worker reported missing four months ago."
+  ],
+  "ammunition_type": [
+    "9x19mm Standard"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks-industrial",
+    "tier1",
+    "environmental-hardened",
+    "industrial",
+    "striker-fired",
+    "utility-worker"
+  ]
+}

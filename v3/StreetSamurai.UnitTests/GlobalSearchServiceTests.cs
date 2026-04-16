@@ -38,6 +38,9 @@ public class GlobalSearchServiceTests
     private NewsRepository news = null!;
     private ContractRepository contracts = null!;
     private WorldbuildingDocRepository documents = null!;
+    private LabSpecimenRepository labSpecimens = null!;
+    private FlyoverEntityRepository flyoverEntities = null!;
+    private PsionicRepository psionics = null!;
 
     [SetUp]
     public void SetUp()
@@ -49,7 +52,8 @@ public class GlobalSearchServiceTests
             "weaponry", "ammunition", "equipment", "technology", "cyberware",
             "apparel", "genemods", "pharmaceuticals", "materials", "transportation",
             "automata", "archetypes", "subsidiaries", "entertainment", "consumer_goods",
-            "vocabulary", "quotes", "news", "contracts", "documents"
+            "vocabulary", "quotes", "news", "contracts", "documents",
+            "lab_specimens", "flyover_entities", "psionics"
         }) Directory.CreateDirectory(Path.Combine(engDir, sub));
 
         var paths = new TestPathProviderWithRoot(tempDir);
@@ -62,13 +66,15 @@ public class GlobalSearchServiceTests
         subsidiaries = new(paths); entertainment = new(paths); consumerGoods = new(paths);
         vocabulary = new(paths); quotes = new(paths); news = new(paths);
         contracts = new(paths); documents = new(paths);
+        labSpecimens = new(paths); flyoverEntities = new(paths); psionics = new(paths);
 
         svc = new GlobalSearchService(
             chars, synths, corps, districts, factions,
             weaponry, ammunition, equipment, technology, cyberware,
             apparel, genemods, pharmaceuticals, materials, transportation,
             automata, archetypes, subsidiaries, entertainment, consumerGoods,
-            vocabulary, quotes, news, contracts, documents);
+            vocabulary, quotes, news, contracts, documents,
+            labSpecimens, flyoverEntities, psionics);
     }
 
     [TearDown]
@@ -209,7 +215,7 @@ public class GlobalSearchServiceTests
 
         var results = svc.Search("Marcus Veil");
 
-        Assert.That(results[0].Route, Is.EqualTo($"/entity/{c.Id}"));
+        Assert.That(results[0].Route, Is.EqualTo($"/characters?id={c.Id}"));
     }
 
     [Test]
@@ -220,7 +226,7 @@ public class GlobalSearchServiceTests
 
         var results = svc.SearchByTag("legendary");
 
-        Assert.That(results[0].Route, Is.EqualTo($"/entity/{w.Id}"));
+        Assert.That(results[0].Route, Is.EqualTo($"/weaponry?id={w.Id}"));
     }
 
     // ── Pagination ───────────────────────────────────────────────────────────

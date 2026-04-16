@@ -3092,6 +3092,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -3101,6 +3116,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -6217,6 +6233,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -6226,6 +6257,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -9342,6 +9374,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -9351,6 +9398,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -12467,6 +12515,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -12476,6 +12539,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -15592,6 +15656,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -15601,6 +15680,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -18717,6 +18797,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -18726,6 +18821,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -19835,6 +19931,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -19844,6 +19955,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -20947,6 +21059,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -20956,6 +21083,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -22059,6 +22187,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -22068,6 +22211,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -23171,6 +23315,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -23180,6 +23339,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -24283,6 +24443,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -24292,6 +24467,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -25395,6 +25571,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -25404,6 +25595,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -26595,6 +26787,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -26604,6 +26811,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -27698,6 +27906,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -27707,6 +27930,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -28801,6 +29025,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -28810,6 +29049,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -29901,6 +30141,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -29910,6 +30165,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -31004,6 +31260,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -31013,6 +31284,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -32107,6 +32379,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -32116,6 +32403,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -33558,6 +33846,21 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -33567,6 +33870,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -34850,6 +35154,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -34859,6 +35178,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -36142,6 +36462,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -36151,6 +36486,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -37431,6 +37767,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -37440,6 +37791,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -38723,6 +39075,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -38732,6 +39099,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -40025,6 +40393,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
+          "Microsoft.Extensions.Http": "10.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -40034,6 +40417,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -45542,6 +45926,11 @@
         "xamarin.kotlinx.serialization.core.jvm.nuspec"
       ]
     },
+    "MindAttic.LLMVoting/1.0.0": {
+      "type": "project",
+      "path": "../../../LLMVoting/LLMVoting/LLMVoting.csproj",
+      "msbuildProject": "../../../LLMVoting/LLMVoting/LLMVoting.csproj"
+    },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
       "path": "../StreetSamurai.Core/StreetSamurai.Core.csproj",
@@ -45633,7 +46022,6 @@
       },
       "frameworks": {
         "net10.0-android36.0": {
-          "framework": "net10.0-android36.0",
           "targetAlias": "net10.0-android",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -45645,7 +46033,6 @@
           }
         },
         "net10.0-ios26.2": {
-          "framework": "net10.0-ios26.2",
           "targetAlias": "net10.0-ios",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -45657,7 +46044,6 @@
           }
         },
         "net10.0-maccatalyst26.2": {
-          "framework": "net10.0-maccatalyst26.2",
           "targetAlias": "net10.0-maccatalyst",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -45669,7 +46055,6 @@
           }
         },
         "net10.0-windows10.0.19041": {
-          "framework": "net10.0-windows10.0.19041",
           "targetAlias": "net10.0-windows10.0.19041.0",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -45695,7 +46080,6 @@
     },
     "frameworks": {
       "net10.0-android36.0": {
-        "framework": "net10.0-android36.0",
         "targetAlias": "net10.0-android",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -46028,7 +46412,6 @@
         }
       },
       "net10.0-ios26.2": {
-        "framework": "net10.0-ios26.2",
         "targetAlias": "net10.0-ios",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -46361,7 +46744,6 @@
         }
       },
       "net10.0-maccatalyst26.2": {
-        "framework": "net10.0-maccatalyst26.2",
         "targetAlias": "net10.0-maccatalyst",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -46695,7 +47077,6 @@
         }
       },
       "net10.0-windows10.0.19041": {
-        "framework": "net10.0-windows10.0.19041",
         "targetAlias": "net10.0-windows10.0.19041.0",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {

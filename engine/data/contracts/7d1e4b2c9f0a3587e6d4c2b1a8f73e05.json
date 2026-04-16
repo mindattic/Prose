@@ -1,0 +1,35 @@
+{
+  "id": "7d1e4b2c9f0a3587e6d4c2b1a8f73e05",
+  "name": "Controlled Burn",
+  "type": "contract",
+  "codename": "SOURCE MATERIAL",
+  "contract_tier": "A",
+  "posted_by": "Undisclosed — routed through a layered dead drop chain, final aggregation by broker Cael Morrow",
+  "target": "Petra Vasnik, senior data broker operating out of the Ferro Heights financial splice district",
+  "objective": "Terminate Vasnik and physically destroy her primary storage architecture — both her person and her work product must be rendered unrecoverable before her next scheduled handoff.",
+  "location": "Ferro Heights Splice District, upper mid-stack, Vasnik's known operating suite in the Meridian Commercial Tower floors 44-47",
+  "payout": "Φ430,000",
+  "deadline": "72 hours from contract acceptance",
+  "complications": [
+    "Vasnik operates behind three layers of legitimate commercial tenancy — getting to floors 44-47 requires defeating access controls that are commercially standard but not trivially bypassed",
+    "The 72-hour window is aggressive because someone else is already moving on Vasnik — unknown party, unknown timeline, and the posting entity wants her dead before whoever-that-is reaches her first",
+    "Vasnik is almost certainly aware she's marked; she has survived two previous attempts and her suite has hardened accordingly"
+  ],
+  "moral_weight": "dirty",
+  "description": "The posting reads like a data-security contract gone lethal — a broker who sold the wrong list to the wrong buyer and now needs to be silenced before the list's contents can be authenticated or weaponized further. The tight window, the insistence on destroying the storage architecture, and the premium payout all suggest a large actor trying to contain a specific leak. Freelancers reading this will assume corporate data hygiene. They will assume Vasnik knew the risk when she got into the business.\n\nVasnik did sell the wrong list — but the list in question is a compiled registry of undocumented Tier 1 shelter residents in six Shelf districts, aggregated from municipal water metering data and food distribution logs. She sold it to an entity that is almost certainly using it for forced labor recruitment or population clearance. The posting entity is not trying to stop that use — the list has already been delivered and the damage is already in motion. They are trying to destroy Vasnik because she kept a copy as insurance and has started to realize what she sold. She is reaching out to a journalist network embedded in the Underdeck. The freelancer is being hired to prevent a whistleblower from blowing the whistle, under the cover story of punishing a data broker who made a bad sale.",
+  "story_hooks": [
+    "Vasnik makes contact with the freelancer directly — she's burned enough of her own contacts to piece together that a contract is live, and she's offering a counter: let her finish her handoff to the journalists and she'll pay the freelancer's contract fee herself in full",
+    "The 'other party already moving on Vasnik' turns out to be a second freelancer — potentially someone the contractor hired as redundancy, or a completely independent actor with a different interest in Vasnik's death"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-A",
+    "elimination",
+    "data-broker",
+    "corporate",
+    "dirty-morality",
+    "ferro-heights",
+    "information-warfare"
+  ]
+}

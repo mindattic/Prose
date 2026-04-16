@@ -1,0 +1,49 @@
+{
+  "id": "d6b0f5e2c3a47d8f1e2b5c9d0a3f7e18",
+  "name": "Kang-Petrov Arms KPR-56F 'Folding Stock'",
+  "type": "weapon",
+  "aliases": [
+    "Folding Stock",
+    "KPR-56F",
+    "The Folder",
+    "Paratrooper"
+  ],
+  "category": "rifle",
+  "description": "The KPR-56F is what you get when Kang-Petrov engineers look at their full-length rifle and ask what is the minimum length at which this stops being a rifle and starts being a problem. The answer, apparently, is 480mm folded — a dimension that fits under a delivery worker's cargo vest, inside a duffel bag with room for lunch, or behind the driver's seat of a Slagworks light transport with the seat adjusted forward. The folding stock is a side-folding wire design in stamped steel, the same design philosophy as the rest of the rifle: no complicated latching mechanisms, no precision-machined hinges, just a steel wire that clicks into a notch and holds. The KPR-56F is chambered in 5.56mm Combat Standard and runs the same adjustable gas system as the KPR-74C, which means most of the internal components are interchangeable — a deliberate decision by Kang-Petrov's parts-and-maintenance team that has resulted in a thriving aftermarket cannibalization economy in the shelf districts. Barrel is 350mm, shorter than the 74C, which costs approximately 40 meters of effective range and is worth every meter given the concealment advantage.\n\nThe KPR-56F was designed for what Kang-Petrov's marketing division called 'compact operational environments' and what everyone else calls 'the places that Arcturus Civil Security does not patrol regularly because there is no tax base to protect.' Shelf workers who need to move through multiple district checkpoints without triggering an ACS search find it useful. Delivery contractors who operate in the exclusion ring periphery buy it because their route takes them through areas where a full-length rifle is an invitation for someone to take it. The rifle's concealability is its primary selling point and its primary legal liability — Arcturus Civil Security's administrative guidelines technically require rifles to be transported in a visible carrier, and a KPR-56F under a vest is technically not that.\n\nThe folding wire stock has a specific sound when it locks open: a sharp metallic click that, in GLMZ's shelf district culture, has become somewhat infamous. The sound shows up in underground music as a percussion sample. It appears in at least three different local proverbs about commitment and decisions that cannot be taken back. Experienced users can unfold and shoulder the KPR-56F in under a second without looking, which is a skill that takes practice and implies a certain kind of life. The rifles develop a specific wear pattern at the stock hinge — the steel wire develops a slight wobble over thousands of fold-unfold cycles that experienced users compensate for instinctively and that gunsmiths can feel before they can see.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "side-folding wire stock",
+    "adjustable gas regulator",
+    "rotating bolt",
+    "stamped steel receiver"
+  ],
+  "specifications": "caliber: 5.56mm Combat Standard\neffective_range: 310m\nrate_of_fire: Semi-automatic / Full-automatic\nmagazine_capacity: 30 rounds\nweight: 3.1 kg",
+  "tactical_use": "The KPR-56F's tactical identity is built around the transition between concealed carry and immediate deployment. Operators who run it treat the folded configuration as a ready state rather than a storage state — they practice the unfold-and-shoulder transition until it is reflexive, because the rifle is useless folded and the value of carrying it folded is the 2.7 seconds of ambiguity before someone can identify what you are pulling out. In confined environments, the shorter barrel is an active advantage, allowing muzzle clearance in doorways and tight corridors that would flag a full-length rifle. The shared parts compatibility with the KPR-74C means field repairs can be done by cannibalizing whichever rifle is less functional.",
+  "cultural_context": "The KPR-56F's folding stock click is one of the most recognizable sounds in GLMZ's lower tiers, and its meaning depends entirely on context. In a shelf district mutual aid meeting, it means someone just got serious. In a checkpoint approach, it means someone just made a decision. In an Excluded settlement, it means someone has been waiting. Arcturus Civil Security's checkpoint protocols have a specific flag for the KPR-56F's dimensions in bag scanners, which means the rifle and ACS are in a constant technological conversation about concealment that the rifle is currently winning.",
+  "known_users": [
+    "delivery and logistics workers in exclusion corridors",
+    "shelf district mutual aid members",
+    "Excluded settlement perimeter defense",
+    "low-tier smugglers and couriers",
+    "checkpoint-running freelancers"
+  ],
+  "story_hooks": [
+    "A series of ACS checkpoint scanner calibration records has been quietly altered to miss the KPR-56F's folded profile — someone inside ACS technical services is on someone's payroll, and the question is whether they are working for a shelf district mutual aid network or for a Tessera logistics operation that wants clean deliveries.",
+    "Kyle Corbin-Vasik finds a KPR-56F in a dead drop that was supposed to contain information — the stock has a handwritten note taped inside the wire: a name, a district, and the words 'before Thursday.'"
+  ],
+  "ammunition_type": [
+    "5.56mm Combat Standard"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier1",
+    "folding-stock",
+    "concealable",
+    "full-auto",
+    "shelf-district",
+    "slagworks"
+  ]
+}

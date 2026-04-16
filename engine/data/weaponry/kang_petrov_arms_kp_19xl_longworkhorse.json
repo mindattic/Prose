@@ -1,0 +1,50 @@
+{
+  "id": "a3f7c2e1b8d049f6a1c3e5b7d920f4a8",
+  "name": "Kang-Petrov Arms KP-19XL 'Longworkhorse'",
+  "type": "weapon",
+  "aliases": [
+    "Longworkhorse",
+    "KP-19XL",
+    "The Long Haul",
+    "Stretch"
+  ],
+  "category": "pistol",
+  "description": "The KP-19XL is a full-size service pistol built on the same polymer-over-steel chassis as the KP-19, but stretched to accommodate a 140mm barrel and an extended 21-round single-stack magazine. Striker-fired with Kang-Petrov's fourth-generation drop-safe mechanism, the XL runs 9x19mm Standard out of the box with a factory-optional conversion sleeve for 9x19mm Caseless. The extended slide adds appreciable sight radius and velocity, pushing the already-reliable platform into a range bracket most compact pistols can't touch. Trigger pull is factory-set at 4.2kg with a clean reset—generations of refinement from a design philosophy that prioritizes function over elegance.\n\nThe KP-19XL occupies a specific niche in GLMZ's vast informal economy: it's the pistol you buy when you've graduated past the compact but can't justify a rifle. Mid-tier building security, Arcturus Civil Security contractors who want more on-hip than their standard issue allows, and Shelf workers who spend long hours in rough industrial zones all reach for the XL. It costs about 15% more than the standard KP-19—an amount that matters when you're counting Quanta—but the extra rounds and longer barrel justify the spend for anyone who expects to use it more than once.\n\nThe XL's length means it prints under a jacket in ways the compact doesn't, and the holster market around it has spawned a minor cottage industry in the Slagworks-adjacent manufacturing blocks of the South Lakeshore district. You can find XL holsters stitched from recycled conveyor belt rubber, molded from printed polymer, or—if someone's having a good week—genuine bonded leather with a stamped KP logo that's almost certainly unlicensed. The gun wears hard. The grip texture bites hands that have been working since 0400, and the matte coating on most XLs is worn silver at the edges before the second year is out.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — standard registration",
+  "base_technologies": [
+    "striker-fired polymer frame",
+    "drop-safe mechanism",
+    "caseless conversion sleeve"
+  ],
+  "specifications": "caliber: 9x19mm Standard / 9x19mm Caseless (conversion)\neffective_range: 55m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 21 rounds\nweight: 0.87 kg",
+  "tactical_use": "The KP-19XL is a defensive-carry and light-duty security weapon optimized for sustained presence rather than concealability. Operators run it as a primary in confined industrial environments where a long gun is impractical and reload speed matters less than round count. The extended barrel makes it awkward to draw from seated positions, so most users carry it in drop-leg or cross-draw rigs. In a straight-up gunfight at hallway distances, the XL outperforms nearly everything in its price bracket.",
+  "cultural_context": "In GLMZ, the KP-19XL is the pistol that says 'I take this seriously but I'm not rich.' A Corp security officer carries an Arcturus-branded sidearm. A Shelf worker who's saved up and decided the neighborhood warrants it carries the XL. It's aspirational within the Tier 1-2 bracket—not quite the bottom-shelf panic buy, not quite the professional tool. That gap is where Kang-Petrov has made most of its money for the last forty years.",
+  "known_users": [
+    "mid-tier building security contractors",
+    "Shelf workers in industrial zones",
+    "Arcturus Civil Security auxiliaries",
+    "off-duty logistics workers",
+    "small freight depot owners"
+  ],
+  "story_hooks": [
+    "An XL found at a murder scene in the Slagworks district has a serial number that traces back to a batch reported destroyed in a warehouse fire six years ago — but the gun is clean, recently maintained, and has clearly been fired in the last week.",
+    "A Shelf union rep has started carrying an XL openly during labor negotiations with Slagworks management, and word is she's not the only one. Arcturus wants to know who's arming them before the next contract vote."
+  ],
+  "ammunition_type": [
+    "9x19mm Standard",
+    "9x19mm Caseless"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks-industrial",
+    "tier1",
+    "tier2",
+    "service-pistol",
+    "high-capacity",
+    "striker-fired"
+  ]
+}

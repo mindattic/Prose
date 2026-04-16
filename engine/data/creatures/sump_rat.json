@@ -1,0 +1,47 @@
+{
+  "id": "8e30a26604eb150cb3766e5b618a1560",
+  "name": "Sump Rat",
+  "type": "creature",
+  "aliases": [
+    "chemmies",
+    "rust-snouts",
+    "tar rats"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Sump Rat is a medium-to-large rodent, 45–65 cm body length, that has colonized the industrial sump pits, chemical runoff channels, and contaminated groundwater zones concentrated in GLMZ's old manufacturing corridors — particularly the former steel and chemical processing districts on the city's western edges. The most immediately striking feature is the coloration: the fur ranges from rust-orange to near-black depending on the specific chemical environment, stained by persistent organic pollutants that bind to the hair shaft and cannot be removed. The skin beneath is thick and heavily keratinized, forming an almost leathery barrier. Internal organs show elevated concentrations of heavy metals, chlorinated compounds, and polynuclear aromatic hydrocarbons that would be lethal to nearly any other mammal of comparable size. Liver and kidney tissue in dissected specimens is dramatically enlarged, dense with metabolic machinery for processing toxins.\n\nThe Sump Rat has essentially evolved a liver-first survival strategy: its metabolic systems have reorganized around continuous xenobiotic processing. It does not merely tolerate chemical contamination — it actively seeks it, consuming contaminated water, biofilm from chemical sumps, and the bodies of invertebrates that themselves concentrate pollutants. In highly contaminated zones, Sump Rats are often the only vertebrate presence. They are largely solitary compared to other GLMZ rat species, maintaining large individual territories centered on a primary sump or runoff source. They breed slowly — one or two litters per year ��� but individual animals appear to be long-lived, with some industrial site workers reporting recognition of specific individuals over periods of 5–8 years.\n\nSump Rats occupy a peculiar position in GLMZ's informal ecology of knowledge. Industrial cleanup contractors, environmental assessment runners, and the scattered communities living near contaminated zones all treat Sump Rat presence as a reliable indicator of contamination severity — roughly, the darker and more rust-stained the animal, the worse the sump. Crucible Genomics industrial sites that are particularly toxic are sometimes described by locals simply by the color of their chemmies. A small trade exists in Sump Rat liver tissue, sold to back-alley chemists who claim the concentrated enzymes have applications in processing certain synthetic compounds. Medical consensus on this is skeptical, but the trade persists.",
+  "habitat": [
+    "Industrial sump pits",
+    "chemical runoff channels",
+    "contaminated groundwater zones",
+    "former steel and chemical processing corridors",
+    "abandoned Crucible Genomics industrial sites"
+  ],
+  "diet": "Contaminated biofilm, chemical sump invertebrates, polluted water sources, carrion in contaminated zones",
+  "threat_level": "low",
+  "notable_traits": [
+    "Extreme xenobiotic tolerance via enlarged liver and kidney systems",
+    "Leathery keratinized skin barrier",
+    "Persistent organic pollutant staining of fur",
+    "Solitary territorial behavior",
+    "Long individual lifespan relative to other rat species"
+  ],
+  "encounters": "Encountered near industrial contamination sites, usually alone. They are not aggressive unless cornered. Handling them without protection is inadvisable — the pollutants bound to their fur are transferable. Environmental assessment workers encounter them as contamination indicators. Rarely seen in populated areas unless a new chemical spill drives them from a compromised sump.",
+  "known_uses": "Living contamination indicators for environmental assessment work (darker fur = worse contamination). Liver tissue sold on black market to back-alley chemists for claimed enzyme applications (Φ 20–60 per liver, legality contested). Not eaten — anyone who knows what they consume would not consider it.",
+  "story_hooks": [
+    "An environmental assessment runner documenting a contaminated former Crucible Genomics site finds Sump Rats with fur so dark they're nearly black — a contamination level that shouldn't be possible from the listed historical use of the site, suggesting something was processed there that isn't on any record",
+    "A back-alley chemist's supply of Sump Rat livers has dried up — her source, an industrial site scavenger, has vanished, and the last batch of livers she received were from animals that showed signs of something other than chemical contamination"
+  ],
+  "related_entities": [
+    "Razor Rat",
+    "Pale Canal Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "chemical-resistance",
+    "contamination-adapted",
+    "industrial"
+  ]
+}

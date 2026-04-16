@@ -1,0 +1,49 @@
+{
+  "id": "f2c8a01d4e6b7290d8e9f0a1b2c3d4e5",
+  "name": "Kang-Petrov Arms KP-19T 'Threadneedle'",
+  "type": "weapon",
+  "aliases": [
+    "Threadneedle",
+    "KP-19T",
+    "Threaded Nineteen",
+    "Suppressor-Ready"
+  ],
+  "category": "pistol",
+  "description": "The KP-19T is a factory variant of the KP-19 platform with a threaded 120mm barrel — 13.5x1mm left-hand thread, which is the de facto standard for GLMZ-market suppressors — and a taller front sight that co-witnesses with the suppressor tube's bulk to maintain a usable sight picture without requiring a suppressor-height optic mount. The action is otherwise identical to the standard KP-19, with the same 17-round 9x19mm double-stack magazine and the same passive safety architecture. The threaded barrel is slightly heavier than the standard unit and extends 22mm past the slide when uncapped, which creates a distinctive silhouette even without a suppressor attached. A thread protector cap ships with the pistol and is almost universally lost within six months.\n\nThe KP-19T is technically a Tier 2 access item due to the suppressor-ready designation — GLMZ noise ordinances technically require a licensed suppressor for use in habitation zones, but the pistol itself is sold with minimal registration because the thread alone isn't a noise-reduction device. The practical result is a gray-market ecosystem: KP-19T pistols are sold legally, suppressor kits are sold separately in varying degrees of legality, and the combination is ubiquitous in the kinds of operations where noise discipline matters. Building security that doesn't want to trigger evacuation protocols. Operators who work adjacent to civilian infrastructure. People who understand that in a dense urban environment, the sound of a shot is often as damaging as the shot itself.\n\nA KP-19T with a suppressor attached has a specific operational feel — the added weight forward changes the balance significantly, slowing the muzzle rise and making the gun more pleasant to shoot but slightly slower on the draw from concealment. Experienced operators rotate between suppressed and unsuppressed configurations depending on the day's work. The thread protector, when present, is often secured with a small chain to the trigger guard — a field modification so common that some users assume it's factory.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "threaded barrel system",
+    "suppressor-height front sight",
+    "standard KP-19 action",
+    "noise-reduction compatible geometry"
+  ],
+  "specifications": "caliber: 9x19mm Standard\neffective_range: 50m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 17 rounds\nweight: 0.75 kg (0.98 kg with suppressor)",
+  "tactical_use": "The KP-19T is the standard choice for operators who need noise discipline in urban environments. Running subsonic 9mm through a suppressor brings the report down to a level that, in a sealed corridor, won't cause immediate auditory alarm in adjacent spaces — not silent, but manageable. The suppressor's weight shift forward makes the gun more controllable in sustained fire. Operators who use it unsuppressed benefit from the longer barrel's marginal velocity increase and the threaded end's weight effect on recoil. The taller front sight is the most universally praised modification — several shooters have been seen running KP-19T uppers on standard KP-19 lowers just for the sight upgrade.",
+  "cultural_context": "The KP-19T's suppressor compatibility gives it a reputation that the standard Workhorse doesn't carry — it's the gun of people who think ahead, who plan, who understand that in GLMZ noise is information and information is power. Building security supervisors who run them are sending a message about how they intend to handle problems. The gray-market suppressor ecosystem around the KP-19T has spawned an entire micro-industry of machined-in-basement cans, with quality ranging from professionally excellent to catastrophically dangerous.",
+  "known_users": [
+    "professional close-protection operators",
+    "covert building security teams",
+    "gray-market operators requiring noise discipline",
+    "Tier 2 investigators working sensitive locations"
+  ],
+  "story_hooks": [
+    "A homicide in a Lakeshore residential tower was unnoticed for six hours because the suppressed KP-19T used left no audible signature — but the investigation reveals the suppressor recovered was not gray-market, it was factory-marked Arcturus Defense Solutions, a manufacturer that does not sell suppressors to civilians.",
+    "A basement suppressor fabricator in the Southside has been turning out KP-19T compatible cans at Φ90 each — exceptional quality, better than some licensed manufacturers — and the tools and materials to make them don't match anything you'd expect to find in a residential basement."
+  ],
+  "ammunition_type": [
+    "9x19mm Standard"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "kang-petrov",
+    "slagworks",
+    "tier2",
+    "threaded-barrel",
+    "suppressor-ready",
+    "noise-discipline",
+    "striker-fired"
+  ]
+}

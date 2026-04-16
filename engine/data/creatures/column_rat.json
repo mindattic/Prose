@@ -1,0 +1,49 @@
+{
+  "id": "b1697ac90a606aa691530f5413d70b84",
+  "name": "Column Rat",
+  "type": "creature",
+  "aliases": [
+    "chiefs",
+    "kings",
+    "pillars"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Column Rat is the apex of Shelf district rat social hierarchy — not a separate species but a developmental morph that emerges from any of several large rat variant populations under conditions of extreme colony stability. Column Rats are massive, 9-13 kilograms, and grow continuously throughout their lives — the largest recorded specimen was estimated at 17 kilograms. They are nearly immobile in their later stages, depositing an elaborate pheromone and urine matrix around a central den site that organizes the behavior of dozens to hundreds of smaller rats in the surrounding territory. They do not forage. The colony feeds them. Their heads are disproportionately large, their limbs atrophied from disuse, but their sensory organs — hearing, smell, whisker sensitivity — are extraordinarily developed. They communicate through vibration, scent, and contact with visiting colony members.",
+  "habitat": [
+    "Shelf districts",
+    "deeply secure sub-basement dens",
+    "long-term undisturbed building cores",
+    "areas with decades of continuous rat habitation"
+  ],
+  "diet": "Fed by colony workers. Receives concentrated caloric materials — fats, proteins, soft organ material from prey. Does not hunt or forage.",
+  "threat_level": "high",
+  "notable_traits": [
+    "Indeterminate growth — size increases continuously throughout lifespan, with the largest individuals functioning as sessile colony organizers",
+    "Pheromone and vibration-based communication organizes large multi-variant rat colonies across substantial territory",
+    "Killing a Column Rat causes immediate territorial collapse and dispersal of its colony — often into neighboring areas, creating a wave of increased vermin activity"
+  ],
+  "encounters": "Almost no one encounters a Column Rat directly. They are known by their effects: a territory where different rat variants cooperate unusually well, where infestations resist normal control measures because the colony has systematic and coordinated responses, where extermination workers find the same access points blocked and re-blocked over weeks. Occasionally, during demolition or deep excavation, a Column Rat's den is breached. Workers describe a smell that is almost architectural in its intensity and an enormous pale mound of an animal that does not attempt to flee.",
+  "known_uses": "Column Rat pheromone extracts have been investigated for applications in behavioral modification research. The compounds are complex and poorly understood. Several Shelf district gang territories have reportedly formed informal truces around not disturbing known Column Rat sites because the consequences of colony dispersal are worse than the managed infestation.",
+  "story_hooks": [
+    "A demolition project has inadvertently destroyed a Column Rat den — the resulting colony dispersal has sent thousands of rats into three neighboring blocks simultaneously, and someone needs to establish a new order before the situation becomes truly unmanageable",
+    "A Column Rat of extreme age has been located in a building slated for a high-value development. The developer wants it removed. The Shelf district residents who've lived around it for decades have a very different opinion — the managed infestation it maintains has kept worse things out of their walls for thirty years"
+  ],
+  "related_entities": [
+    "Vault Rat",
+    "Witness Rat",
+    "Brace Rat",
+    "Ledger Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "shelf",
+    "large_variant",
+    "apex",
+    "semi_intelligent",
+    "pack_behavior",
+    "hierarchy"
+  ]
+}

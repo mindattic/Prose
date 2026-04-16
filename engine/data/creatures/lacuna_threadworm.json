@@ -1,0 +1,45 @@
+{
+  "id": "8c26baf00d010df77f1abfcc8bb7dd1a",
+  "name": "Lacuna Threadworm",
+  "type": "creature",
+  "aliases": [
+    "wire worm",
+    "data snake",
+    "fiber eel"
+  ],
+  "category": "urban_fauna",
+  "origin": "lab_escape",
+  "description": "The Lacuna Threadworm is almost certainly the strangest animal in GLMZ's drainage ecology — and one of the most contested. Approximately 40 to 60 centimeters long and only a centimeter in diameter at maximum, they resemble fiber-optic cable more than any organic creature: the body is nearly rigid, a deep blue-black with faint iridescent banding, and the skin has a non-biological gloss. This is because the outer integument contains a dense crystalline protein matrix, a product of their origin as a Lacuna Genomics experimental organism from the neural-interface tissue program of the 2130s — a project that was attempting to develop biological data-conduit tissue and produced, among many failures, something that escaped containment. They have no functional eyes whatsoever, navigating entirely through an extremely sophisticated electromagnetic field detection system and a form of sonar produced by resonance chambers in the skull.\n\nThreadworms navigate the boundary between the drainage system and the city's buried data and electrical infrastructure, threading through cable conduits and pipe gaps with equal facility. They do not consume electricity or data in any meaningful sense, but they are irresistibly attracted to high-frequency electromagnetic fields and gather in dense mats around active cable bundles, fiber nodes, and signal repeaters — where the warmth and electromagnetic signatures concentrate. They feed on the microbial films that accumulate on these surfaces and on very small invertebrates. The crystalline skin matrix provides unusual thermal regulation properties, and a mat of Threadworms around a cable node measurably affects signal propagation in ways that network engineers describe with increasing frustration.\n\nLacuna Genomics has never officially acknowledged the Threadworm as a product of their research, but the genomic evidence published by three independent teams is unambiguous. The legal and corporate implications remain a live issue — if Lacuna owns the lineage, they are liable for infrastructure damage claims from every network operator in GLMZ. If the animals are considered wild, they fall under contested undercity commons law. In the meantime, the Threadworm exists in a legal gray zone that has generated more law-student thesis papers than any other urban animal. Among network maintenance crews, they are simply a headache — something to be carefully removed from cable bundles without damaging either the cables or the animals, because damaging the animals triggers an immediate chemical alarm response that attracts every other Threadworm in the local population.",
+  "habitat": [
+    "cable conduit infrastructure",
+    "data node chambers",
+    "electrical junction tunnels",
+    "boundary spaces between drain and network infrastructure"
+  ],
+  "diet": "microbial films on cable surfaces, small invertebrates, electromagnetic-attracted biofilm aggregations",
+  "threat_level": "low",
+  "notable_traits": [
+    "crystalline protein integument",
+    "electromagnetic field detection navigation",
+    "sonar resonance chambers",
+    "signal propagation interference in aggregation",
+    "chemical alarm pheromone triggering mass congregation"
+  ],
+  "encounters": "Encountered almost exclusively by network maintenance technicians, data infrastructure workers, and undercity explorers who breach cable conduit spaces. Finding one means finding many — they aggregate densely around active nodes. The chemical alarm response is the main danger: dislodging one carelessly fills a confined space with dozens more within minutes.",
+  "known_uses": "The crystalline skin matrix has significant interest to materials researchers — it has unusual electromagnetic shielding properties in certain configurations. Lacuna Genomics is believed to be covertly purchasing specimens through intermediaries. Independent researchers sell isolated matrix proteins for 500-1200 Φ per gram to electromagnetic shielding materials firms.",
+  "story_hooks": [
+    "A critical data relay node serving three Tier 2 hospital networks has gone dark. The cause is a Threadworm aggregation so dense it has physically deformed a cable housing. Someone needs to clear it without triggering the alarm response in an enclosed space with active high-voltage infrastructure.",
+    "Lacuna Genomics has begun a quiet legal campaign to establish intellectual property rights over the Threadworm lineage. The first filing was made in secret, but someone leaked it, and now every affected infrastructure operator and undercity community advocate in GLMZ is mobilizing."
+  ],
+  "related_entities": [],
+  "tags": [
+    "creature",
+    "urban_fauna",
+    "lab_escape",
+    "drainage",
+    "lacuna_genomics",
+    "electromagnetic",
+    "infrastructure_adapted",
+    "contested_legal_status"
+  ]
+}

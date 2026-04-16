@@ -1,0 +1,50 @@
+{
+  "id": "83a70ab252c1e68832139aa2e8d481fa",
+  "name": "Mesh Runner",
+  "type": "creature",
+  "aliases": [
+    "flat rat",
+    "gap rat",
+    "paper runner",
+    "thin"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Mesh Runner is a rat that, at first glance, appears to be dying — it is strikingly, unnervingly thin, with a laterally compressed body profile and a skeletal structure that appears to have been re-engineered for horizontal compression. This impression is correct. Over roughly ten generations of selection among rat populations navigating the dense hardware mesh, perforated metal sheeting, and narrow expansion gaps of GLMZ's Tier 1 and Tier 2 security infrastructure, a strain has emerged whose rib cage and associated skeletal structure can compress dynamically to roughly 60% of its relaxed width. The mechanism is a combination of unusually flexible costal cartilage, reduced rib curvature, and muscular adaptations that allow controlled collapse of the thoracic profile while maintaining respiratory function. A Mesh Runner can pass through a gap of approximately 2.5 centimeters — roughly the width of a standard security mesh opening — while remaining in full health. The skull, critically, cannot compress, but it is proportionally narrow, and the animal has learned to navigate head-first through gaps, pulling the body behind. The coat is short and extremely flat-lying, offering minimal additional profile.",
+  "habitat": [
+    "security mesh perimeters",
+    "expansion gaps in Tier 1 and Tier 2 construction",
+    "between wall layers in multi-skin building construction",
+    "hardware mesh fencing interiors",
+    "narrow conduit gaps"
+  ],
+  "diet": "Opportunistic omnivore — whatever is accessible on the secured side of mesh barriers, including stored food, wiring, and any organic material in the gap spaces themselves",
+  "threat_level": "low",
+  "notable_traits": [
+    "Dynamic thoracic compression — ribcage can compress to approximately 60% of relaxed width",
+    "Unusually flexible costal cartilage and reduced rib curvature enabling gap passage",
+    "Proportionally narrow skull enabling head-first entry through security mesh openings",
+    "Extremely flat-lying coat offering minimal additional profile",
+    "Can breach standard security mesh designed to exclude all rodents"
+  ],
+  "encounters": "Encountered wherever security mesh is expected to provide rodent exclusion — food storage facilities, medical supply rooms, electronics storage, and secure residential areas all report Mesh Runner incursions in Tier 1 and Tier 2 zones. They are rarely caught because they can exit through the same gap they entered. The evidence of their presence — droppings, gnaw marks, missing food — appears inside spaces that show no apparent breach. This drives building managers and security staff to distraction, as standard exclusion methods are useless.",
+  "known_uses": "No formal uses. A Lacuna Genomics internal memo, leaked approximately 15 years ago and circulated in underground research communities, referenced the Mesh Runner's thoracic compression mechanism as a potential model for certain categories of insertion-based delivery systems. The memo's context was not made clear and the company denied its authenticity.",
+  "story_hooks": [
+    "A Tier 2 pharmaceutical cold-storage facility has been losing inventory to what appears to be internal theft — but the access logs are clean and the security mesh is intact. A pest control specialist is brought in and identifies Mesh Runner sign, but the quantity of missing inventory is far beyond what rats eating supplies would account for. Something is using the rats as a distraction, or the rats are being deliberately introduced.",
+    "A Tier 1 resident has caught a Mesh Runner and is keeping it, fascinated by its compression ability — they've started documenting it obsessively and have made contact with an underground researcher who claims the animal's cartilage chemistry is unlike anything in the published literature. The researcher is very interested, and not entirely reassuring about why."
+  ],
+  "related_entities": [
+    "Razor Rat",
+    "Coil Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "wire-adapted",
+    "security-breach",
+    "morphological-adaptation",
+    "tier1",
+    "tier2"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "b8f2e5d1c4a79b3e6d0f1c8a2e5b4d61",
+  "name": "Kang-Petrov Arms KPR-103S 'Street Surgeon'",
+  "type": "weapon",
+  "aliases": [
+    "Street Surgeon",
+    "KPR-103S",
+    "The Surgeon",
+    "One-Oh-Three"
+  ],
+  "category": "rifle",
+  "description": "The KPR-103S is a short-barreled rifle variant that lives at the legal boundary of what GLMZ's firearm classification system distinguishes from a submachine gun. Chambered in 7.62mm Soviet Pattern with a 250mm barrel, the KPR-103S is technically a rifle because of its caliber and action type; practically, it occupies the role of a very loud, very powerful compact weapon that will make a small room into a place where nothing survives. The short barrel extracts significantly less velocity from the 7.62mm Soviet Pattern round than the full-length KPR-47 — effective range drops to approximately 200 meters and the muzzle blast becomes genuinely spectacular — but at the distances where the KPR-103S is intended to operate, that velocity loss is irrelevant. The gas system has been modified with a larger-diameter piston to maintain reliable cycling with the reduced barrel pressure, and the muzzle device is a hybrid brake-diffuser that Kang-Petrov calls a 'Blast Management System' and operators call 'the thing that keeps the fireball from blinding you.' The stock is a side-folding polymer unit that collapses the overall length to 480mm — almost exactly the dimensions of a large submachine gun.\n\nThe KPR-103S exists because GLMZ's lower-city operators needed something with pistol-caliber concealability but rifle-caliber terminal performance, and Kang-Petrov's solution was to cut the rifle down until it was almost something else. It is a Tier 1 weapon by price point but a Tier 2 weapon by application — the operators who buy it are typically people who have a specific problem to solve rather than a general need to be armed. In GLMZ's Excluded zone communities, the KPR-103S has a reputation as a room-clearance tool, which tells you something about the conditions under which those communities operate.\n\nThe muzzle blast from the KPR-103S is one of the defining sensory experiences of GLMZ's lower-city conflict. The combination of unburned propellant and the short barrel's inability to complete combustion before the projectile exits produces a muzzle flash that is visible in daylight, a concussive report that does not echo so much as saturate any enclosed space, and a pressure wave that experienced operators have described as feeling like being slapped on both ears simultaneously. Operators who run it regularly develop a specific habit of keeping their mouth open during firing, which distributes the pressure, and of watching each other's eyes after engagements for the slight dilation that indicates they took the blast without adequate preparation.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "short-barrel gas modification",
+    "blast management muzzle device",
+    "side-folding polymer stock",
+    "rotating bolt",
+    "large-diameter piston"
+  ],
+  "specifications": "caliber: 7.62mm Soviet Pattern\neffective_range: 200m\nrate_of_fire: Semi-automatic / Full-automatic\nmagazine_capacity: 30 rounds\nweight: 2.9 kg",
+  "tactical_use": "The KPR-103S is a close-quarters weapon that happens to use rifle caliber. Operators who run it are committing to engagements at 100 meters and under, accepting the reduced range in exchange for the terminal performance of the 7.62mm Soviet Pattern round against light barriers, improvised armor, and vehicles. The muzzle blast in enclosed spaces is a weapon in itself — the concussive effect of a KPR-103S fired in a corridor is disorienting at distances beyond the projectile's immediate threat zone. Operators running it in teams typically communicate this before entry to prevent friendly confusion. The licensed carry restriction means ACS has theoretically documented every KPR-103S in GLMZ, which experienced operators treat as a reason to keep the paperwork clean and the provenance complicated.",
+  "cultural_context": "The KPR-103S's restricted carry status makes it the most legally fraught weapon in the KPR family and, consequently, one of the most desired. In GLMZ's Excluded zones and deep shelf districts, a licensed KPR-103S represents a level of bureaucratic navigation that many operators cannot achieve — which means the unlicensed ones vastly outnumber the licensed ones, and Arcturus Civil Security's licensing records are an incomplete picture at best. The rifle's muzzle blast has a specific reputation in lower-city communities: you know one has been fired before you know where the shooter is, which is either a tactical problem or a warning, depending on whose side you are on.",
+  "known_users": [
+    "Excluded zone room-clearance operators",
+    "lower-city defense coordinators",
+    "licensed Tier 1-2 security operators",
+    "unlicensed operators throughout GLMZ",
+    "former shelf district enforcement personnel"
+  ],
+  "story_hooks": [
+    "Arcturus Civil Security's licensing database for the KPR-103S in the Pilsen-Bridgeport corridor shows 47 active licenses — field units have counted more than 200 in active circulation, and the discrepancy is either a registration failure or evidence that someone inside ACS licensing has been issuing ghost clearances for years.",
+    "A KPR-103S recovered from a Zheng-dao Bioelectric distribution hub attack has a licensed registration that traces to a deceased Excluded zone resident who died in 2196 — someone has been using a dead woman's license for nearly two decades, and she was not a random choice."
+  ],
+  "ammunition_type": [
+    "7.62mm Soviet Pattern"
+  ],
+  "tags": [
+    "weapon",
+    "rifle",
+    "tier1",
+    "short-barrel",
+    "restricted",
+    "full-auto",
+    "close-quarters",
+    "slagworks",
+    "excluded-zone"
+  ]
+}

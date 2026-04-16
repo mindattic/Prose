@@ -71,6 +71,7 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly SuggestionEngineService suggestions;
     private readonly OutlineReviewService outlineReview;
     private readonly StoryQualityService quality;
+    private readonly FacetEvolutionService facetEvolution;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -85,7 +86,8 @@ public class StoryDirectorService : IStoryDirectorService
         BehaviorPredictionService behaviorPredict,
         DialogueService dialogue, ArcTrackerService arcTracker,
         ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
-        OutlineReviewService outlineReview, StoryQualityService quality)
+        OutlineReviewService outlineReview, StoryQualityService quality,
+        FacetEvolutionService facetEvolution)
     {
         this.llm = llm;
         this.db = db;
@@ -110,6 +112,7 @@ public class StoryDirectorService : IStoryDirectorService
         this.suggestions = suggestions;
         this.outlineReview = outlineReview;
         this.quality = quality;
+        this.facetEvolution = facetEvolution;
     }
 
     /// <summary>
@@ -272,6 +275,8 @@ public class StoryDirectorService : IStoryDirectorService
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
         var projectId = story.ProjectId;
         var arcValidations = new List<ArcValidation>();
+        // Collect suggestion tasks — awaited at the end with a timeout before final checkpoint
+        var suggestionTasks = new List<(GeneratedStoryBeat beat, Task<List<BeatSuggestion>> task)>();
 
         foreach (var act in outline.Acts)
         {
@@ -352,6 +357,19 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "State extraction failed for beat {BeatIndex} — continuing with stale state", beat.BeatIndex);
                 }
 
+                // Facet evolution — analyze beat and shift character facet weights (fire-and-forget)
+                var charsForEvolution = (beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all).ToList();
+                var beatTextForEvolution = beatText;
+                var beatGoalForEvolution = beat.Goal;
+                _ = Task.Run(async () =>
+                {
+                    foreach (var name in charsForEvolution)
+                    {
+                        try { await facetEvolution.AnalyzeAndApplyAsync(beatTextForEvolution, name, beatGoalForEvolution); }
+                        catch { /* best-effort — never block the pipeline */ }
+                    }
+                });
+
                 // Arc validation (best-effort — don't block story on validation failures)
                 try
                 {
@@ -365,7 +383,7 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "Arc validation failed for beat {BeatIndex} — continuing", beat.BeatIndex);
                 }
 
-                // Continuity validation (best-effort)
+                // Structural continuity validation (synchronous, fast)
                 try
                 {
                     var charsInBeat = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all;
@@ -382,15 +400,61 @@ public class StoryDirectorService : IStoryDirectorService
                     log.LogWarning(ex, "Continuity validation failed for beat {BeatIndex} — continuing", beat.BeatIndex);
                 }
 
+                // Full LLM continuity check (fire-and-forget — never blocks the beat loop)
+                {
+                    var beatTextCopy  = beatText;
+                    var charsForContinuity = (beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all).ToList();
+                    var locationCopy  = beat.Location ?? location;
+                    var priorTextCopy = allText.SkipLast(1).ToList();
+                    var beatIdxCopy   = beat.BeatIndex;
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            var report = await continuityValidator.ValidateAsync(
+                                beatTextCopy, projectId, charsForContinuity, locationCopy, priorTextCopy);
+                            if (!report.Clean)
+                            {
+                                foreach (var issue in report.Issues)
+                                    log.LogWarning("LLM continuity [{Severity}] {Category}: {Description} (beat {BeatIdx})",
+                                        issue.Severity, issue.Category, issue.Description, beatIdxCopy);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            log.LogDebug(ex, "LLM continuity check failed for beat {BeatIndex}", beatIdxCopy);
+                        }
+                    });
+                }
+
                 outlineSvc.MarkBeatWritten(outline, beat.BeatIndex);
 
-                story.Beats.Add(new GeneratedStoryBeat
+                var newBeat = new GeneratedStoryBeat
                 {
                     BeatIndex = beat.BeatIndex,
                     Title = beat.Title,
                     Text = beatText,
                     Act = act.ActNumber,
-                });
+                };
+                story.Beats.Add(newBeat);
+
+                // Queue suggestion generation for this beat (awaited at end with timeout)
+                {
+                    var beatRef       = newBeat;
+                    var storySoFar    = string.Join("\n\n", allText);
+                    var castCopy      = cast.all.ToList();
+                    var locationCopy  = beat.Location ?? location;
+                    var beatIdxCopy   = beat.BeatIndex;
+                    suggestionTasks.Add((beatRef, Task.Run(async () =>
+                    {
+                        try
+                        {
+                            return await suggestions.SuggestNextBeatsAsync(
+                                projectId, outline, beatIdxCopy, castCopy, locationCopy, storySoFar, ct);
+                        }
+                        catch { return []; }
+                    })));
+                }
 
                 // CHECKPOINT: Save after every beat — this is the resilience guarantee
                 SaveCheckpoint(story);
@@ -398,6 +462,20 @@ public class StoryDirectorService : IStoryDirectorService
                     beat.BeatIndex + 1, totalBeats, beat.Title);
 
                 Report($"Beat {beat.BeatIndex + 1}/{totalBeats} complete", beat.BeatIndex + 1, totalBeats);
+            }
+        }
+
+        // Collect beat suggestions — await with 10s timeout so they land in the final checkpoint
+        Report("Generating next-beat suggestions...");
+        foreach (var (beatRef, suggestionTask) in suggestionTasks)
+        {
+            try
+            {
+                beatRef.Suggestions = await suggestionTask.WaitAsync(TimeSpan.FromSeconds(10));
+            }
+            catch
+            {
+                // Timeout or error — leave Suggestions empty; story is still complete
             }
         }
 
@@ -740,4 +818,6 @@ public class GeneratedStoryBeat
     public string Title { get; set; } = "";
     public string Text { get; set; } = "";
     public int Act { get; set; }
+    /// <summary>Possible next beats — populated after pipeline completes.</summary>
+    public List<BeatSuggestion> Suggestions { get; set; } = [];
 }

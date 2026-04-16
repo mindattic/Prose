@@ -1,0 +1,48 @@
+{
+  "id": "25f6207524d65b88c9b2bd963a3e7502",
+  "name": "Witness Rat",
+  "type": "creature",
+  "aliases": [
+    "eye rats",
+    "watchers",
+    "stares"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Witness Rat is unnerving before you understand what you're seeing. It sits still — genuinely still, in the way rats almost never are — at a distance, and watches. The eyes are the defining feature: dramatically enlarged relative to skull size, forward-facing to a degree unusual in rodents, giving it genuine binocular vision and an almost primate quality to its gaze. The body is lean, around 3-4 kilograms, with unusually large ears that fold forward and back in constant micro-adjustments. The fur is a pale salt-and-pepper gray that provides effective camouflage in rubble and debris. Witness Rats are the scouts and sentinels of mixed Shelf rat colonies — they don't do the violence or the labor, they observe and communicate, using a complex ultrasonic vocabulary that other rat variants in the same territory demonstrably respond to.",
+  "habitat": [
+    "Shelf districts",
+    "rubble fields",
+    "elevated debris piles",
+    "window ledge ruins",
+    "junction points between rat territories"
+  ],
+  "diet": "Preferentially insectivorous, supplemented by seeds and small vertebrates. Eats less than comparable-sized rodents, possibly an adaptation to long stationary observation periods.",
+  "threat_level": "low",
+  "notable_traits": [
+    "Forward-facing enlarged eyes provide genuine binocular vision and enhanced depth perception",
+    "Complex ultrasonic communication that other rat variants demonstrably respond to — functions as inter-colony communication relay",
+    "Extreme stillness behavior, remaining motionless for periods of 20-40 minutes while observing"
+  ],
+  "encounters": "People encounter Witness Rats as a persistent, slightly wrong presence — something sitting on a high ledge that doesn't flee when you approach, just watches. The feeling of being studied is accurate. Experienced Shelf residents have learned that seeing a Witness Rat means a rat colony is evaluating your presence in its territory. Extermination workers treat Witness Rat sightings as a warning to expect heavy activity from other variants shortly after.",
+  "known_uses": "A small number of people claim to have established something resembling a relationship with local Witness Rat individuals — offering food at consistent locations and using the animals as informal indicators of unusual activity in an area. Whether the rats are truly responding to the humans or merely tolerating them is debated.",
+  "story_hooks": [
+    "A Witness Rat has been following a specific person through Shelf districts for three days, always staying at the same distance. Other rats in each area it passes through become unusually agitated after it arrives. Something in this person's biochemistry or behavior is triggering a territory-wide response.",
+    "A researcher claims to have partially decoded the ultrasonic vocabulary of Witness Rats and says one phrase repeats in every recording she's made near a specific address. She needs someone to go to that address."
+  ],
+  "related_entities": [
+    "Ledger Rat",
+    "Brace Rat",
+    "Vault Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "shelf",
+    "large_variant",
+    "semi_intelligent",
+    "pack_behavior",
+    "communication"
+  ]
+}

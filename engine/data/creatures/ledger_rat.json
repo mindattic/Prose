@@ -1,0 +1,45 @@
+{
+  "id": "30819ae2ce5bfb67a4a0fa2bee27f25c",
+  "name": "Ledger Rat",
+  "type": "creature",
+  "aliases": [
+    "accountants",
+    "markers",
+    "scribblers"
+  ],
+  "category": "vermin",
+  "origin": "natural_mutation",
+  "description": "The Ledger Rat is a 4-5 kilogram variant distinguished by an extraordinary behavioral trait that has made it the subject of more Shelf district folklore than any other rodent: it marks. Using a combination of claw scraping, urine patterning, and debris arrangement, Ledger Rats create elaborate boundary maps on flat surfaces near their nesting sites. The marks are consistent within a colony, repeated with apparent intentionality, and differ recognizably between neighboring colonies — behavioral ecologists from the university district have been studying them for fifteen years without consensus on what the marks mean. Physically, the Ledger Rat has noticeably longer forelimbs relative to body size, with dexterous outer digits that can manipulate small objects with startling precision.",
+  "habitat": [
+    "Shelf districts",
+    "abandoned administrative buildings",
+    "print shop ruins",
+    "plywood-walled market stalls"
+  ],
+  "diet": "Preferentially targets paper, cardboard, and organic binding materials, supplemented by seeds, soft plastics, and invertebrates. Has been observed deliberately collecting specific debris types.",
+  "threat_level": "low",
+  "notable_traits": [
+    "Creates reproducible marking patterns using claws, urine, and debris — consistent within colonies and distinct between them",
+    "Notably longer and more dexterous forelimbs than standard brown rat variants",
+    "Will actively avoid disturbing its own marks even under pursuit, sometimes choosing worse escape routes to preserve a marking surface"
+  ],
+  "encounters": "Shelf residents discover Ledger Rat activity in the morning — surfaces that were clean the night before covered in scratched patterns, small objects rearranged into rough lines. The rats themselves are rarely seen, being crepuscular and cautious. Occasionally a resident catches one mid-marking and describes the experience as deeply unsettling: the rat stops, looks at the human, and then looks back at its work before fleeing.",
+  "known_uses": "Helix Biosystems has a standing low-value bounty on live Ledger Rat specimens. Rumor is this bounty has been active for thirty years and the specimens never seem to satisfy whatever research is being conducted.",
+  "story_hooks": [
+    "A Ledger Rat colony has been marking the same wall of an apartment building for three generations — a tenant who studied semiotics insists the pattern has been slowly changing and now resembles a crude map of the building's pipe system",
+    "Someone is paying well for translations of Ledger Rat marks, but won't explain why they believe the marks are translatable"
+  ],
+  "related_entities": [
+    "Vault Rat",
+    "Razor Rat"
+  ],
+  "tags": [
+    "creature",
+    "vermin",
+    "natural_mutation",
+    "shelf",
+    "large_variant",
+    "semi_intelligent",
+    "tool_use"
+  ]
+}

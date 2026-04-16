@@ -1,0 +1,53 @@
+{
+  "id": "1f3a8e6c9b2d4075f1a3e6c9b2d40750",
+  "name": "Kang-Petrov Arms KPA-68X 'Groundbreaker Extended'",
+  "type": "weapon",
+  "aliases": [
+    "Groundbreaker Extended",
+    "KPA-68X",
+    "Long Breaker",
+    "the X-Breaker"
+  ],
+  "category": "dmr",
+  "description": "The KPA-68X extends the KPA-68's 6.8mm General Service platform to a 20-inch match-grade stainless steel barrel, repositions the gas block to a rifle-length arrangement, and pairs the combination with a two-stage match trigger breaking at 1.4 kilograms — a notable departure from the mil-spec two-stage unit in every other KPA AR-pattern rifle. The result is a designated marksman platform that extracts maximum velocity from the 6.8mm cartridge and delivers it with a trigger quality that rewards trained technique. The free-floating M-LOK handguard is full-length, the stock is a fixed precision unit with a cheekpiece and adjustable length-of-pull spacers, and the receiver is machined from billet aluminum rather than the forged-and-stamped construction of the standard KPA-68. The overall aesthetic departure from the KPA-16/68 family is significant — this looks like a precision tool because it is one.\n\nThe KPA-68X represents Kang-Petrov's recognition that the 6.8mm General Service cartridge's performance envelope extends to DMR ranges if the platform is built correctly. At 20 inches, the 6.8mm cartridge achieves its full rated velocity and delivers sub-MOA accuracy from a factory barrel when paired with match-grade ammunition — a performance tier that competes with purpose-built DMR platforms at significantly lower Quanta cost. The market is Tier 2, toward the upper end: serious precision operators who need armor-capable performance at extended range and have the training to use a match trigger without negligent discharges.\n\nThe match trigger is simultaneously the KPA-68X's greatest asset and its most significant liability in the hands of under-trained operators. The 1.4-kilogram break weight is light enough that GLMZ's street training community actively discusses whether the rifle should be issued to operators without formal trigger-discipline training. Several documented incidents of negligent discharges with KPA-68X rifles have been attributed to operators transitioning from mil-spec trigger weights without adjusting their technique. The rifle doesn't forgive the assumption that all triggers are the same.",
+  "manufacturer": "KANG-PETROV ARMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Restricted — licensed carry",
+  "base_technologies": [
+    "match-grade stainless barrel",
+    "rifle-length gas system",
+    "match two-stage trigger",
+    "billet aluminum receiver",
+    "free-floating handguard"
+  ],
+  "specifications": "caliber: 6.8mm General Service\neffective_range: 700m\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 4.1 kg",
+  "tactical_use": "The KPA-68X is a designated marksman rifle built for precision engagement at 300–700 meters against armored or hard targets. The match trigger and 20-inch barrel combination produce consistent sub-MOA accuracy with quality ammunition, and the 6.8mm cartridge's performance at range provides meaningful armor-defeat capability that 5.56mm DMR platforms cannot replicate. Operators running this platform require formal precision shooting training to exploit the match trigger safely — the reduced break weight is an accuracy advantage in trained hands and a negligent discharge risk in untrained ones. Standard configuration includes a 4–16x variable optic, bipod, and sling.",
+  "cultural_context": "The KPA-68X sits at the upper edge of what Tier 2 operators can access, and carrying it signals a specific kind of professional seriousness. It's not a reactive-defense rifle; it's a deliberate-engagement platform. In GLMZ's mid-tier security and fixer communities, the distinction between people who carry reactive platforms and people who carry deliberate ones is a meaningful social divide. The KPA-68X operator is, by implication, someone who plans their engagements rather than responding to them — which raises its own questions about the nature of those plans.",
+  "known_users": [
+    "precision-trained security contractors",
+    "deliberate-engagement specialists",
+    "mid-tier protective detail overwatch",
+    "serious fixer operations requiring extended range"
+  ],
+  "story_hooks": [
+    "A KPA-68X with a custom 6.8mm match ammunition load was used in an engagement at 580 meters in a Slagworks Industrial waterway zone — the shot placement was precise enough that forensic analysis suggests a trained marksman, but the target was a mid-level Slagworks logistics coordinator whose death has been officially classified as an industrial accident. Someone with access to the incident report knows that classification is false and has been quietly asking questions in the KP armorer community about who might have built that load.",
+    "A KPA-68X shipped to a legitimate Tier 2 security contractor six months ago has appeared in a pawnbroker's inventory in the Excluded zone — not stolen, according to the paper trail, but sold voluntarily by someone whose name doesn't match anyone in the contractor's personnel records. The rifle's match trigger has been replaced with a mil-spec unit, and the original match trigger is missing, which means someone wanted that specific trigger component for a reason that didn't involve keeping the rifle."
+  ],
+  "ammunition_type": [
+    "6.8mm General Service",
+    "6.8mm General Service match"
+  ],
+  "tags": [
+    "weapon",
+    "dmr",
+    "rifle",
+    "6.8mm",
+    "precision",
+    "armor-capable",
+    "tier-2",
+    "slagworks",
+    "kang-petrov",
+    "restricted",
+    "match-grade"
+  ]
+}

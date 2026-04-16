@@ -1,0 +1,35 @@
+{
+  "id": "8c4f2e0b7a1d359426f8c0e2a4b7d613",
+  "name": "Authorized Use",
+  "type": "contract",
+  "codename": "USE OF FORCE",
+  "contract_tier": "A",
+  "posted_by": "Arcturus Civil Security Internal Accountability Division (IAD) — contract routed through sanctioned freelancer procurement, broker Yolanda Vest as compliance intermediary",
+  "target": "Commander Brenn Vaas, Arcturus Civil Security, Northwall District",
+  "objective": "Terminate Vaas outside his official duty context. The kill must not occur during an active patrol shift or within an ACS-monitored facility. Natural causes or accident framing preferred but not required.",
+  "location": "Northwall District, upper Shelf transition zone — Vaas's residential unit and documented off-duty movement pattern",
+  "payout": "Φ310,000",
+  "deadline": "21 days",
+  "complications": [
+    "Vaas is ACS, which means every system in his residential building is logged by his own organization — the freelancer is operating in an environment where the target's employer has ambient surveillance access",
+    "ACS IAD is a real division but its operations are opaque even within ACS — the freelancer cannot verify whether this contract represents a legitimate internal accountability action or a factional hit being laundered through official-looking channels",
+    "Vaas has a personal security habit uncommon in residential ACS personnel — he changes his off-duty routine on a 72-hour randomized cycle, suggesting he is either paranoid by nature or already aware of a threat"
+  ],
+  "moral_weight": "grey",
+  "description": "ACS contracting out the removal of one of its own commanders — unusual but not unprecedented. The IAD framing is the key: this is being presented as internal accountability, a mechanism for removing an officer who has become a liability without the procedural exposure of a formal misconduct investigation. Vaas is described in supporting materials as having authorized excessive-force operations in Northwall that generated civilian casualty documentation the organization wants to pre-empt before it reaches an external review body.\n\nVaas did authorize excessive-force operations. He also began, six months ago, compiling a formal complaint dossier against three senior ACS regional directors who ordered those same operations and then attempted to disappear the documentation. He has been working slowly and carefully, building a case through channels. IAD is not removing him because he is a war criminal. IAD is removing him because he is about to name people significantly above his rank, and those people have decided to use the institutional accountability mechanism as a weapon against the person trying to use it legitimately. The freelancer is being employed by the organization as a tool for protecting the organization's most powerful members by destroying the officer who was trying to hold them accountable. The excessive-force record is real. The accountability machinery is being turned inside out.",
+  "story_hooks": [
+    "Vaas, in surveilling his own environment, identifies the freelancer — and rather than run, he makes contact and hands them a copy of the dossier with a single request: if they're going to kill him anyway, make sure it goes somewhere first",
+    "Broker Yolanda Vest, who served as the compliance intermediary, begins to understand what she's facilitated — she approaches the freelancer not to stop the job but to quietly establish that she had no knowledge of the actual context, which is broker-network language for 'I need to not be connected to this'"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-A",
+    "elimination",
+    "arc-civil-security",
+    "grey-morality",
+    "northwall",
+    "internal-politics",
+    "accountability"
+  ]
+}

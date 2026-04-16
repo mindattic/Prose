@@ -258,8 +258,9 @@ public class AuthServiceTests
     [Test]
     public void AcceptsPasswordExactly8Characters()
     {
+        // 8 chars satisfying full policy: upper + lower + digit + special
         Assert.DoesNotThrow(() =>
-            auth.CreateUser("test@test.com", "Test", "Exactly8", UserRoles.User));
+            auth.CreateUser("test@test.com", "Test", "Abcd12!@", UserRoles.User));
     }
 
     [Test]
@@ -445,7 +446,8 @@ public class AuthServiceTests
     [Test]
     public void AcceptsPasswordExactly72Characters()
     {
-        var maxPassword = new string('A', 72);
+        // 72 chars satisfying full policy: 68×'A' + "b1!@"
+        var maxPassword = new string('A', 68) + "b1!@";
         Assert.DoesNotThrow(() =>
             auth.CreateUser("test@test.com", "Test", maxPassword, UserRoles.User));
     }

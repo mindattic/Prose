@@ -430,6 +430,16 @@
           }
         }
       },
+      "MindAttic.LLMVoting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+        }
+      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -437,6 +447,7 @@
           "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
+          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -1000,6 +1011,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MindAttic.LLMVoting/1.0.0": {
+      "type": "project",
+      "path": "../../../LLMVoting/LLMVoting/LLMVoting.csproj",
+      "msbuildProject": "../../../LLMVoting/LLMVoting/LLMVoting.csproj"
+    },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
       "path": "../StreetSamurai.Core/StreetSamurai.Core.csproj",
@@ -1050,7 +1066,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -1076,7 +1091,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.App.Internal.Assets": {
